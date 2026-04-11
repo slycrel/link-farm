@@ -1,0 +1,7 @@
+*.db-wal
+*.db-shm
+*.db-journal
+*.db-journal.bak*
+__pycache__/
+*.pyc
+.DS_Store
