@@ -1,27 +1,36 @@
 # AI Links Collection
-**Total Posts**: 315  
-**Date Range**: 2024-06-11 – 2026-04-11  
-**Enriched**: 315/315 (100%)
+**Total Posts**: 324  
+**Date Range**: 2024-06-11 – 2026-04-13  
+**Enriched**: 315/324 (97%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 122 | 38.7% |
-| claude-code | 63 | 20.0% |
-| dev-practices | 75 | 23.8% |
-| skills-mcp | 35 | 11.1% |
-| prompting | 33 | 10.5% |
-| research | 39 | 12.4% |
-| industry | 24 | 7.6% |
-| management | 54 | 17.1% |
-| questionable | 18 | 5.7% |
-| general | 60 | 19.0% |
+| agent-design | 122 | 37.7% |
+| claude-code | 63 | 19.4% |
+| dev-practices | 75 | 23.1% |
+| skills-mcp | 35 | 10.8% |
+| prompting | 33 | 10.2% |
+| research | 39 | 12.0% |
+| industry | 24 | 7.4% |
+| management | 54 | 16.7% |
+| questionable | 18 | 5.6% |
+| general | 69 | 21.3% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-04-13 | Garry Tan | general | Post by Garry Tan (content not yet scraped) |
+| 2026-04-13 | Defileo🔮 | general | Post by Defileo🔮 (content not yet scraped) |
+| 2026-04-13 | Charly Wargnier | general | Post by Charly Wargnier (content not yet scraped) |
+| 2026-04-12 | Ahmad | general | Post by Ahmad (content not yet scraped) |
+| 2026-04-12 | Garry Tan | general | Post by Garry Tan (content not yet scraped) |
+| 2026-04-12 | Nav Toor | general | Post by Nav Toor (content not yet scraped) |
+| 2026-04-12 | Garry Tan | general | Post by Garry Tan (content not yet scraped) |
+| 2026-04-12 | Nick Spisak | general | Post by Nick Spisak (content not yet scraped) |
+| 2026-04-12 | Garry Tan | general | Post by Garry Tan (content not yet scraped) |
 | 2026-04-11 | Nav Toor | research | Covers Kronos, an open-source foundation model for financial markets t... |
 | 2026-04-10 | Veeral Patel | agent-design | Quote-tweets Ramp Labs article on "Latent Briefing" — a KV cache compa... |
 | 2026-04-10 | Alpha Batcher | agent-design | Distills architectural principles for production AI agents by quoting... |
@@ -63,15 +72,6 @@
 | 2026-03-30 | Tom Dörr | agent-design | Cisco open-sourced DefenseClaw (github.com/cisco-ai-defense/defensecla... |
 | 2026-03-30 | Viv | agent-design | Commentary on a writeup by @systematicls about solving problems in lon... |
 | 2026-03-30 | Erick | dev-practices | Tome — an open-source macOS app that transcribes Zoom/Meet/Teams meeti... |
-| 2026-03-30 | Daniel Miessler | agent-design | Daniel Miessler argues against over-engineering AI harnesses in a blog... |
-| 2026-03-29 | Meta Alchemist | claude-code | Detailed guide on turning Claude Code into a self-evolving system. The... |
-| 2026-03-29 | Tom Dörr | general | Hive (github.com/aden-hive/hive) is a self-improving agent swarm frame... |
-| 2026-03-29 | BuBBliK | general | TurboQuant — Google's algorithm for 3-bit KV cache compression that en... |
-| 2026-03-29 | Suryansh Tiwari | general | Cheat sheet mapping 21 real agent design patterns — prompt chaining, r... |
-| 2026-03-29 | Cheng Lou | general | Cheng Lou (React/ReasonML creator) released a foundational piece of UI... |
-| 2026-03-29 | Shann³ | skills-mcp | Karpathy's AutoResearch method applied to Claude skills optimization.... |
-| 2026-03-26 | Rohit | agent-design | Rohit argues top AI teams win not on model selection but on 'harness e... |
-| 2026-03-25 | Poonam Soni | agent-design | Teaser thread claiming Anthropic demonstrated a 3-agent system that bu... |
 
 ---
 ## Posts by Topic
@@ -1020,7 +1020,25 @@
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
 
-### General (64)
+### General (73)
+
+- [Garry Tan](https://x.com/garrytan/status/2043581361798500602) — 2026-04-13: Post by Garry Tan (content not yet scraped)
+
+- [Defileo🔮](https://x.com/defileo/status/2043437202190024912) — 2026-04-13: Post by Defileo🔮 (content not yet scraped)
+
+- [Charly Wargnier](https://x.com/datachaz/status/2043246635996807300) — 2026-04-13: Post by Charly Wargnier (content not yet scraped)
+
+- [Ahmad](https://x.com/theahmadosman/status/2043366810494337354) — 2026-04-12: Post by Ahmad (content not yet scraped)
+
+- [Garry Tan](https://x.com/garrytan/status/2043339811088699446) — 2026-04-12: Post by Garry Tan (content not yet scraped)
+
+- [Nav Toor](https://x.com/heynavtoor/status/2043321909971202403) — 2026-04-12: Post by Nav Toor (content not yet scraped)
+
+- [Garry Tan](https://x.com/garrytan/status/2043198780800197025) — 2026-04-12: Post by Garry Tan (content not yet scraped)
+
+- [Nick Spisak](https://x.com/nickspisak_/status/2043060265823146202) — 2026-04-12: Post by Nick Spisak (content not yet scraped)
+
+- [Garry Tan](https://x.com/garrytan/status/2042919242283258072) — 2026-04-12: Post by Garry Tan (content not yet scraped)
 
 - [Recogard](https://x.com/recogard/status/2042356576032358505) — 2026-04-10: 36 GB dataset of 72 million Polymarket trades available free on GitHub for prediction market analysis. Includes tools to build trading strategies from historical market data — analyze price behavior before resolution, compare category volatility, and find repeating patterns.
 
@@ -1154,6 +1172,33 @@
 ## Full Chronological List
 
 ### Apr 2026
+
+- **2026-04-13** | [Garry Tan](https://x.com/garrytan/status/2043581361798500602) | general
+  Post by Garry Tan (content not yet scraped)
+
+- **2026-04-13** | [Defileo🔮](https://x.com/defileo/status/2043437202190024912) | general
+  Post by Defileo🔮 (content not yet scraped)
+
+- **2026-04-13** | [Charly Wargnier](https://x.com/datachaz/status/2043246635996807300) | general
+  Post by Charly Wargnier (content not yet scraped)
+
+- **2026-04-12** | [Ahmad](https://x.com/theahmadosman/status/2043366810494337354) | general
+  Post by Ahmad (content not yet scraped)
+
+- **2026-04-12** | [Garry Tan](https://x.com/garrytan/status/2043339811088699446) | general
+  Post by Garry Tan (content not yet scraped)
+
+- **2026-04-12** | [Nav Toor](https://x.com/heynavtoor/status/2043321909971202403) | general
+  Post by Nav Toor (content not yet scraped)
+
+- **2026-04-12** | [Garry Tan](https://x.com/garrytan/status/2043198780800197025) | general
+  Post by Garry Tan (content not yet scraped)
+
+- **2026-04-12** | [Nick Spisak](https://x.com/nickspisak_/status/2043060265823146202) | general
+  Post by Nick Spisak (content not yet scraped)
+
+- **2026-04-12** | [Garry Tan](https://x.com/garrytan/status/2042919242283258072) | general
+  Post by Garry Tan (content not yet scraped)
 
 - **2026-04-11** | [Nav Toor](https://x.com/heynavtoor/status/2042879339256254689) | research, industry, questionable
   Covers Kronos, an open-source foundation model for financial markets trained on 12 billion candlestick records from 45 exchanges (Binance, NYSE, NASDAQ, LSE, and more). Claims 93% more accurate than leading time series models, zero-shot across any asset/timeframe. Built at Tsinghua University, accepted at AAAI 2026. Ships in 4 sizes from 4M to 499M params; live BTC demo running. Available on HuggingFace.
