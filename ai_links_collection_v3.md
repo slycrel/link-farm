@@ -1,27 +1,40 @@
 # AI Links Collection
-**Total Posts**: 324  
-**Date Range**: 2024-06-11 – 2026-04-13  
-**Enriched**: 315/324 (97%)
+**Total Posts**: 337  
+**Date Range**: 2024-06-11 – 2026-04-14  
+**Enriched**: 315/337 (93%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 122 | 37.7% |
-| claude-code | 63 | 19.4% |
-| dev-practices | 75 | 23.1% |
-| skills-mcp | 35 | 10.8% |
-| prompting | 33 | 10.2% |
-| research | 39 | 12.0% |
-| industry | 24 | 7.4% |
-| management | 54 | 16.7% |
-| questionable | 18 | 5.6% |
-| general | 69 | 21.3% |
+| agent-design | 122 | 36.2% |
+| claude-code | 63 | 18.7% |
+| dev-practices | 75 | 22.3% |
+| skills-mcp | 35 | 10.4% |
+| prompting | 33 | 9.8% |
+| research | 39 | 11.6% |
+| industry | 24 | 7.1% |
+| management | 54 | 16.0% |
+| questionable | 18 | 5.3% |
+| general | 82 | 24.3% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-04-14 | Alex Vacca | general | Post by Alex Vacca (content not yet scraped) |
+| 2026-04-14 | am.will | general | Post by am.will (content not yet scraped) |
+| 2026-04-14 | Phil Chen | general | Post by Phil Chen (content not yet scraped) |
+| 2026-04-14 | How To AI | general | Post by How To AI (content not yet scraped) |
+| 2026-04-14 | Kevin Simback 🍷 | general | Post by Kevin Simback 🍷 (content not yet scraped) |
+| 2026-04-14 | Akshay 🚀 | general | Post by Akshay 🚀 (content not yet scraped) |
+| 2026-04-14 | Alex Finn | general | Post by Alex Finn (content not yet scraped) |
+| 2026-04-14 | Philipp Schmid | general | Post by Philipp Schmid (content not yet scraped) |
+| 2026-04-14 | North@CreaoAI | general | Post by North@CreaoAI (content not yet scraped) |
+| 2026-04-14 | Tech with Mak | general | Post by Tech with Mak (content not yet scraped) |
+| 2026-04-14 | Lorenzo Rondan | general | Post by Lorenzo Rondan (content not yet scraped) |
+| 2026-04-14 | Vaishnavi | general | Post by Vaishnavi (content not yet scraped) |
+| 2026-04-14 | Noisy | general | Post by Noisy (content not yet scraped) |
 | 2026-04-13 | Garry Tan | general | Post by Garry Tan (content not yet scraped) |
 | 2026-04-13 | Defileo🔮 | general | Post by Defileo🔮 (content not yet scraped) |
 | 2026-04-13 | Charly Wargnier | general | Post by Charly Wargnier (content not yet scraped) |
@@ -59,19 +72,6 @@
 | 2026-04-06 | Dave Kline | management | Management advice on fixing broken 1:1 meetings — 4 tests to determine... |
 | 2026-04-06 | Alex Prompter | research | Google DeepMind published the largest empirical study of AI agent mani... |
 | 2026-04-06 | 0xMarioNawfal | claude-code | Comprehensive open-source Claude Code setup with 27 agents, 64 skills,... |
-| 2026-04-05 | Ejaaz | agent-design | Open-sourced self-improving AI agent framework: a meta-agent that auto... |
-| 2026-04-03 | Charly Wargnier | agent-design | Charly Wargnier breaks down Karpathy's new self-improving 'second brai... |
-| 2026-04-02 | Dmitriy Kovalenko | dev-practices | Dmitriy Kovalenko demos a blazing-fast, index-free code search tool th... |
-| 2026-04-02 | The Curious Tales | general | Self-help/life advice post recommending an article about being '3 deci... |
-| 2026-04-02 | Adam | agent-design | Adam shares his personal AI system architecture based on a dynamic dep... |
-| 2026-04-01 | Tom Dörr | agent-design | Tom Dörr shared an open source AI research agent called Feynman (githu... |
-| 2026-04-01 | Arnav Gupta | agent-design | Arnav Gupta highlights a set of extensions by @nicopreme (pi-subagents... |
-| 2026-03-31 | klöss | dev-practices | Critical supply chain attack on axios (100M+ weekly npm downloads). An... |
-| 2026-03-31 | ℏεsam | skills-mcp | Ole Lehmann built a Claude skill implementing Karpathy's LLM Council m... |
-| 2026-03-31 | Vox | agent-design | Parallel module development pattern using Codex: break a project into... |
-| 2026-03-30 | Tom Dörr | agent-design | Cisco open-sourced DefenseClaw (github.com/cisco-ai-defense/defensecla... |
-| 2026-03-30 | Viv | agent-design | Commentary on a writeup by @systematicls about solving problems in lon... |
-| 2026-03-30 | Erick | dev-practices | Tome — an open-source macOS app that transcribes Zoom/Meet/Teams meeti... |
 
 ---
 ## Posts by Topic
@@ -1020,7 +1020,33 @@
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
 
-### General (73)
+### General (86)
+
+- [Alex Vacca](https://x.com/itsalexvacca/status/2043834187095150673) — 2026-04-14: Post by Alex Vacca (content not yet scraped)
+
+- [am.will](https://x.com/llmjunky/status/2043817254152814785) — 2026-04-14: Post by am.will (content not yet scraped)
+
+- [Phil Chen](https://x.com/philhchen/status/2043759400121458922) — 2026-04-14: Post by Phil Chen (content not yet scraped)
+
+- [How To AI](https://x.com/howtoai_/status/2043753502850351525) — 2026-04-14: Post by How To AI (content not yet scraped)
+
+- [Kevin Simback 🍷](https://x.com/ksimback/status/2043745657748361476) — 2026-04-14: Post by Kevin Simback 🍷 (content not yet scraped)
+
+- [Akshay 🚀](https://x.com/akshay_pachaar/status/2043745099792953508) — 2026-04-14: Post by Akshay 🚀 (content not yet scraped)
+
+- [Alex Finn](https://x.com/alexfinn/status/2043719233213980922) — 2026-04-14: Post by Alex Finn (content not yet scraped)
+
+- [Philipp Schmid](https://x.com/_philschmid/status/2043705197030002904) — 2026-04-14: Post by Philipp Schmid (content not yet scraped)
+
+- [North@CreaoAI](https://x.com/anorth_chen/status/2043694726764003817) — 2026-04-14: Post by North@CreaoAI (content not yet scraped)
+
+- [Tech with Mak](https://x.com/technmak/status/2043683120319520806) — 2026-04-14: Post by Tech with Mak (content not yet scraped)
+
+- [Lorenzo Rondan](https://x.com/lorenrd/status/2043677918262395235) — 2026-04-14: Post by Lorenzo Rondan (content not yet scraped)
+
+- [Vaishnavi](https://x.com/_vmlops/status/2043624154646409708) — 2026-04-14: Post by Vaishnavi (content not yet scraped)
+
+- [Noisy](https://x.com/noisyb0y1/status/2043609541477044439) — 2026-04-14: Post by Noisy (content not yet scraped)
 
 - [Garry Tan](https://x.com/garrytan/status/2043581361798500602) — 2026-04-13: Post by Garry Tan (content not yet scraped)
 
@@ -1172,6 +1198,45 @@
 ## Full Chronological List
 
 ### Apr 2026
+
+- **2026-04-14** | [Alex Vacca](https://x.com/itsalexvacca/status/2043834187095150673) | general
+  Post by Alex Vacca (content not yet scraped)
+
+- **2026-04-14** | [am.will](https://x.com/llmjunky/status/2043817254152814785) | general
+  Post by am.will (content not yet scraped)
+
+- **2026-04-14** | [Phil Chen](https://x.com/philhchen/status/2043759400121458922) | general
+  Post by Phil Chen (content not yet scraped)
+
+- **2026-04-14** | [How To AI](https://x.com/howtoai_/status/2043753502850351525) | general
+  Post by How To AI (content not yet scraped)
+
+- **2026-04-14** | [Kevin Simback 🍷](https://x.com/ksimback/status/2043745657748361476) | general
+  Post by Kevin Simback 🍷 (content not yet scraped)
+
+- **2026-04-14** | [Akshay 🚀](https://x.com/akshay_pachaar/status/2043745099792953508) | general
+  Post by Akshay 🚀 (content not yet scraped)
+
+- **2026-04-14** | [Alex Finn](https://x.com/alexfinn/status/2043719233213980922) | general
+  Post by Alex Finn (content not yet scraped)
+
+- **2026-04-14** | [Philipp Schmid](https://x.com/_philschmid/status/2043705197030002904) | general
+  Post by Philipp Schmid (content not yet scraped)
+
+- **2026-04-14** | [North@CreaoAI](https://x.com/anorth_chen/status/2043694726764003817) | general
+  Post by North@CreaoAI (content not yet scraped)
+
+- **2026-04-14** | [Tech with Mak](https://x.com/technmak/status/2043683120319520806) | general
+  Post by Tech with Mak (content not yet scraped)
+
+- **2026-04-14** | [Lorenzo Rondan](https://x.com/lorenrd/status/2043677918262395235) | general
+  Post by Lorenzo Rondan (content not yet scraped)
+
+- **2026-04-14** | [Vaishnavi](https://x.com/_vmlops/status/2043624154646409708) | general
+  Post by Vaishnavi (content not yet scraped)
+
+- **2026-04-14** | [Noisy](https://x.com/noisyb0y1/status/2043609541477044439) | general
+  Post by Noisy (content not yet scraped)
 
 - **2026-04-13** | [Garry Tan](https://x.com/garrytan/status/2043581361798500602) | general
   Post by Garry Tan (content not yet scraped)
