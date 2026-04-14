@@ -5,18 +5,21 @@
     "handle": "@itsalexvacca",
     "subject": "Post by Alex Vacca on X",
     "url": "https://x.com/itsalexvacca/status/2043834187095150673",
-    "summary": "Post by Alex Vacca (content not yet scraped)",
+    "summary": "Alex Vacca highlights a 4-layer sales funnel architecture that produced 330K website visitors, 1,500+ meetings booked, and $4M new ARR — crossing $7M ARR without raising capital. Quote-tweets an article by Michel Lieben detailing the system.",
     "topics": [
-      "general"
+      "management",
+      "industry"
     ],
     "audience": [
-      "me"
+      "me",
+      "leadership"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "22K",
     "notes": "",
-    "enriched": false
+    "enriched": true,
+    "content": "Quote tweet of Michel Lieben article on 4-layer funnel architecture. $7M ARR bootstrapped."
   },
   {
     "date": "2026-04-14",
@@ -24,18 +27,21 @@
     "handle": "@llmjunky",
     "subject": "Post by am.will on X",
     "url": "https://x.com/llmjunky/status/2043817254152814785",
-    "summary": "Post by am.will (content not yet scraped)",
+    "summary": "am.will recommends NVIDIA's free API credits for testing open-source models (Minimax 2.7, Qwen 3.5, GLM 5, Gemma 31B, Nemotron 3 Super 120B) via their OpenAI-compatible endpoint at integrate.api.nvidia.com/v1. Includes ready-to-paste config for any OpenAI-compatible client.",
     "topics": [
-      "general"
+      "agent-design",
+      "dev-practices"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
-    "enriched": false
+    "enriched": true,
+    "content": "NVIDIA free API credits for open source models. OpenAI compatible endpoint config provided."
   },
   {
     "date": "2026-04-14",
@@ -43,18 +49,22 @@
     "handle": "@philhchen",
     "subject": "Post by Phil Chen on X",
     "url": "https://x.com/philhchen/status/2043759400121458922",
-    "summary": "Post by Phil Chen (content not yet scraped)",
+    "summary": "Phil Chen describes building Filbert (phil-bot), a background coding agent that wrote 95%+ of their PRs in one week. Runs 14 scheduled daily jobs including production bug triage, security audits, dead code sweeps, and CI optimization. Argues lightweight wrappers around existing harnesses on your own infra is the future of coding agents.",
     "topics": [
-      "general"
+      "agent-design",
+      "dev-practices",
+      "claude-code"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "now",
     "sourceType": "tweet",
-    "views": "",
+    "views": "116.5K",
     "notes": "",
-    "enriched": false
+    "enriched": true,
+    "content": "Filbert coding agent: 95%+ PRs, 14 daily scheduled jobs, lightweight wrapper on existing harness."
   },
   {
     "date": "2026-04-14",
@@ -62,56 +72,62 @@
     "handle": "@howtoai_",
     "subject": "Post by How To AI on X",
     "url": "https://x.com/howtoai_/status/2043753502850351525",
-    "summary": "Post by How To AI (content not yet scraped)",
+    "summary": "How To AI covers a math paper proving every elementary function (sin, exp, log, sqrt) derives from a single binary operator: eml(x,y) = exp(x) - ln(y). Combined with the number 1, it can build pi, square roots, trig — analogous to NAND gates in digital logic. Implications for neural network architecture and potential hardware optimization.",
     "topics": [
-      "general"
+      "research"
     ],
     "audience": [
       "me"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
-    "enriched": false
+    "enriched": true,
+    "content": "Math paper: single binary operator eml(x,y) = exp(x) - ln(y) generates all elementary functions."
   },
   {
     "date": "2026-04-14",
-    "author": "Kevin Simback 🍷",
+    "author": "Kevin Simback",
     "handle": "@ksimback",
     "subject": "Post by Kevin Simback 🍷 on X",
     "url": "https://x.com/ksimback/status/2043745657748361476",
-    "summary": "Post by Kevin Simback 🍷 (content not yet scraped)",
+    "summary": "Kevin Simback shares his 'Second Brain' setup using a modified Karpathy method. Key insight: the system needs two authors — the human writes opinionated takes and decisions, the AI agent handles structured knowledge extraction and organization. Avoids both the 'LLM-wiki' problem (generic AI prose) and the 'can't keep up' problem (manual-only decay).",
     "topics": [
-      "general"
+      "agent-design",
+      "prompting"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "13K",
     "notes": "",
-    "enriched": false
+    "enriched": true,
+    "content": "Second brain setup with two-author model: human writes opinions, AI handles structured knowledge."
   },
   {
     "date": "2026-04-14",
-    "author": "Akshay 🚀",
+    "author": "Akshay",
     "handle": "@akshay_pachaar",
     "subject": "Post by Akshay 🚀 on X",
     "url": "https://x.com/akshay_pachaar/status/2043745099792953508",
-    "summary": "Post by Akshay 🚀 (content not yet scraped)",
+    "summary": "Akshay provides a first-principles walkthrough of agent memory: from Python lists to markdown files to vector search to graph-vector hybrids. Covers 7 failure modes of stateless agents (context amnesia, zero personalization, repeated mistakes, etc.) and builds up to a clean open-source solution for persistent agent memory.",
     "topics": [
-      "general"
+      "agent-design"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "103K",
     "notes": "",
-    "enriched": false
+    "enriched": true,
+    "content": "First-principles agent memory walkthrough: lists to vectors to graph hybrids. 7 failure modes covered."
   },
   {
     "date": "2026-04-14",
@@ -119,18 +135,21 @@
     "handle": "@alexfinn",
     "subject": "Post by Alex Finn on X",
     "url": "https://x.com/alexfinn/status/2043719233213980922",
-    "summary": "Post by Alex Finn (content not yet scraped)",
+    "summary": "Alex Finn shares a SOUL.md prompt philosophy inspired by Garry Tan's post: demand completeness over 'good enough,' never table things for later when the permanent solve is in reach, always ship with tests and documentation. Includes a copy-paste prompt for OpenClaw/Hermes agents.",
     "topics": [
-      "general"
+      "prompting",
+      "claude-code"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
-    "enriched": false
+    "enriched": true,
+    "content": "SOUL.md prompt for agent completeness: do the whole thing, with tests, with docs. Inspired by Garry Tan."
   },
   {
     "date": "2026-04-14",
@@ -138,18 +157,21 @@
     "handle": "@_philschmid",
     "subject": "Post by Philipp Schmid on X",
     "url": "https://x.com/_philschmid/status/2043705197030002904",
-    "summary": "Post by Philipp Schmid (content not yet scraped)",
+    "summary": "Philipp Schmid shares 8 practical tips for writing better agent skills — from what kinds of skills exist to knowing when to retire one. Covers skill lifecycle, quality standards, and distribution patterns. Links to a full X article with the guide.",
     "topics": [
-      "general"
+      "skills-mcp",
+      "agent-design"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "now",
     "sourceType": "tweet",
-    "views": "",
+    "views": "18.2K",
     "notes": "",
-    "enriched": false
+    "enriched": true,
+    "content": "8 tips for writing agent skills: lifecycle, quality gates, when to retire. Full article linked."
   },
   {
     "date": "2026-04-14",
@@ -157,18 +179,22 @@
     "handle": "@anorth_chen",
     "subject": "Post by North@CreaoAI on X",
     "url": "https://x.com/anorth_chen/status/2043694726764003817",
-    "summary": "Post by North@CreaoAI (content not yet scraped)",
+    "summary": "North from CreaoAI shares their CTO Peter Pang's article on AI-First development. Their team merges 20+ PRs daily with 99% AI-written production code. Quote-tweets Peter's article arguing most teams are still 'AI-assisted' rather than truly 'AI-first,' and predicts teams that don't shift will fade within a year.",
     "topics": [
-      "general"
+      "management",
+      "agent-design"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team",
+      "leadership"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
-    "enriched": false
+    "enriched": true,
+    "content": "AI-First dev: 20+ PRs/day, 99% AI-written code. CTO Peter Pang article on AI-first vs AI-assisted."
   },
   {
     "date": "2026-04-14",
@@ -176,18 +202,22 @@
     "handle": "@technmak",
     "subject": "Post by Tech with Mak on X",
     "url": "https://x.com/technmak/status/2043683120319520806",
-    "summary": "Post by Tech with Mak (content not yet scraped)",
+    "summary": "Tech with Mak highlights three Karpathy observations about LLM coding failures — wrong assumptions without checking, overcomplicated code, and silent modification of unrelated code. Someone turned these into a CLAUDE.md file with four principles: think before coding, respect existing patterns, stay minimal, and never touch what you don't understand.",
     "topics": [
-      "general"
+      "claude-code",
+      "prompting",
+      "dev-practices"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "now",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
-    "enriched": false
+    "enriched": true,
+    "content": "Karpathy's LLM coding mistakes turned into CLAUDE.md: think first, respect patterns, stay minimal."
   },
   {
     "date": "2026-04-14",
@@ -195,18 +225,20 @@
     "handle": "@lorenrd",
     "subject": "Post by Lorenzo Rondan on X",
     "url": "https://x.com/lorenrd/status/2043677918262395235",
-    "summary": "Post by Lorenzo Rondan (content not yet scraped)",
+    "summary": "Lorenzo Rondan highlights a diagram by Viv (@Vtrivedy10) on agent harness architecture, memory, and context fragments. The quoted thread explores intersections between harness design, long-timescale memory accumulation, and the 'bitter lesson' that search-based approaches tend to win. 213.9K views.",
     "topics": [
-      "general"
+      "agent-design"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "213.9K",
     "notes": "",
-    "enriched": false
+    "enriched": true,
+    "content": "Harness architecture diagram: memory, context fragments, and the bitter lesson of search."
   },
   {
     "date": "2026-04-14",
@@ -214,18 +246,22 @@
     "handle": "@_vmlops",
     "subject": "Post by Vaishnavi on X",
     "url": "https://x.com/_vmlops/status/2043624154646409708",
-    "summary": "Post by Vaishnavi (content not yet scraped)",
+    "summary": "Vaishnavi covers Google's open-sourced Magika — an AI-powered file content type detection tool. Trained on 100M files, 200+ content types, 99% accuracy at 5ms/file. Sees through renamed malware and disguised scripts. Install via pip install magika. github.com/google/magika",
     "topics": [
-      "general"
+      "dev-practices",
+      "agent-design",
+      "questionable"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "426.4K",
     "notes": "",
-    "enriched": false
+    "enriched": true,
+    "content": "Google Magika: AI file type detection, 99% accuracy, 5ms/file. pip install magika. github.com/google/magika"
   },
   {
     "date": "2026-04-14",
@@ -233,18 +269,23 @@
     "handle": "@noisyb0y1",
     "subject": "Post by Noisy on X",
     "url": "https://x.com/noisyb0y1/status/2043609541477044439",
-    "summary": "Post by Noisy (content not yet scraped)",
+    "summary": "Noisy describes a Google engineer who automated 80% of his work with Claude Code using a CLAUDE.md file based on Karpathy's principles and a .NET orchestration app. Covers the Karpathy-inspired CLAUDE.md, a dotnet service that spawns Claude Code instances with git worktrees, and a review pipeline. Claims $28K passive income working 2-3 hours/day.",
     "topics": [
-      "general"
+      "claude-code",
+      "agent-design",
+      "dev-practices",
+      "questionable"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "2.1M",
     "notes": "",
-    "enriched": false
+    "enriched": true,
+    "content": "Google engineer automated 80% of work with Claude Code + .NET harness + Karpathy CLAUDE.md. Git worktree orchestration."
   },
   {
     "date": "2026-04-13",
@@ -252,37 +293,44 @@
     "handle": "@garrytan",
     "subject": "Post by Garry Tan on X",
     "url": "https://x.com/garrytan/status/2043581361798500602",
-    "summary": "Post by Garry Tan (content not yet scraped)",
+    "summary": "Garry Tan adds 'Boil the ocean' to his SOUL.md: the marginal cost of completeness is near zero with AI. Do the whole thing with tests, docs, and quality. Never table for later, never present workarounds, never leave dangling threads. 433.1K views.",
     "topics": [
-      "general"
+      "prompting",
+      "management",
+      "claude-code"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team",
+      "leadership"
     ],
-    "priority": "near-term",
+    "priority": "now",
     "sourceType": "tweet",
-    "views": "",
+    "views": "433.1K",
     "notes": "",
-    "enriched": false
+    "enriched": true,
+    "content": "SOUL.md addition: 'Boil the ocean' — marginal cost of completeness is near zero with AI. Ship complete."
   },
   {
     "date": "2026-04-13",
-    "author": "Defileo🔮",
+    "author": "Defileo",
     "handle": "@defileo",
     "subject": "Post by Defileo🔮 on X",
     "url": "https://x.com/defileo/status/2043437202190024912",
-    "summary": "Post by Defileo🔮 (content not yet scraped)",
+    "summary": "Defileo promotes a 'prompt vault' going beyond the classic f/prompts.chat role-based prompts (159K GitHub stars). Claims deeper structured prompts with phases, diagnostic questions, and domain-specific workflows for Claude. Engagement-farming style but references the real prompts.chat repo.",
     "topics": [
-      "general"
+      "prompting",
+      "questionable"
     ],
     "audience": [
       "me"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
-    "enriched": false
+    "enriched": true,
+    "content": "Prompt vault building on prompts.chat (159K stars). Structured role prompts with phases and diagnostics."
   },
   {
     "date": "2026-04-13",
@@ -290,18 +338,22 @@
     "handle": "@datachaz",
     "subject": "Post by Charly Wargnier on X",
     "url": "https://x.com/datachaz/status/2043246635996807300",
-    "summary": "Post by Charly Wargnier (content not yet scraped)",
+    "summary": "Charly Wargnier covers Addy Osmani's (Google) new Agent Skills package: 19 engineering skills + 7 commands for AI coding agents, based on Google best practices. Covers the full dev lifecycle — define (specs), plan (decompose), build (incremental), verify (TDD), review (security), ship (CI/CD). Aims to prevent agents from skipping quality gates.",
     "topics": [
-      "general"
+      "skills-mcp",
+      "dev-practices",
+      "agent-design"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "now",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
-    "enriched": false
+    "enriched": true,
+    "content": "Addy Osmani's Agent Skills: 19 skills + 7 commands for AI coding agents. Google best practices across full dev lifecycle."
   },
   {
     "date": "2026-04-12",
@@ -309,18 +361,21 @@
     "handle": "@theahmadosman",
     "subject": "Post by Ahmad on X",
     "url": "https://x.com/theahmadosman/status/2043366810494337354",
-    "summary": "Post by Ahmad (content not yet scraped)",
+    "summary": "Ahmad shares his approach to running parallel coding agents: fan out from a main agent or use deterministic scripts. Pattern: spin up workers in git worktrees, gate merges with diffs, add backups/rules/logs for deterministic runs, merge what passes. Building this into a Skill.",
     "topics": [
-      "general"
+      "agent-design",
+      "dev-practices"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "26.3K",
     "notes": "",
-    "enriched": false
+    "enriched": true,
+    "content": "Parallel agent pattern: git worktrees, diff gating, deterministic scripts. Building into a Skill."
   },
   {
     "date": "2026-04-12",
@@ -328,18 +383,21 @@
     "handle": "@garrytan",
     "subject": "Post by Garry Tan on X",
     "url": "https://x.com/garrytan/status/2043339811088699446",
-    "summary": "Post by Garry Tan (content not yet scraped)",
+    "summary": "Garry Tan comments on Hermes agent's explicit self-improvement architecture — noting that applied research at the app level now happens in the open via open source. Quote-tweets analysis of Hermes codebase showing its approach to self-improvement goes beyond typical agent patterns.",
     "topics": [
-      "general"
+      "agent-design",
+      "research"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "29.6K",
     "notes": "",
-    "enriched": false
+    "enriched": true,
+    "content": "Hermes agent's explicit self-improvement architecture. Applied research now happens in open source."
   },
   {
     "date": "2026-04-12",
@@ -347,18 +405,20 @@
     "handle": "@heynavtoor",
     "subject": "Post by Nav Toor on X",
     "url": "https://x.com/heynavtoor/status/2043321909971202403",
-    "summary": "Post by Nav Toor (content not yet scraped)",
+    "summary": "Nav Toor covers LLM Wiki v2 — an extension of Karpathy's original LLM Wiki pattern (5K stars in 48h). Adds confidence scoring (source count, recency, contradictions), memory tiers (working/episodic/semantic/procedural), knowledge graphs with typed entities, automated hooks, and forgetting curves for knowledge decay.",
     "topics": [
-      "general"
+      "agent-design"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
-    "enriched": false
+    "enriched": true,
+    "content": "LLM Wiki v2: confidence scoring, memory tiers, knowledge graphs, forgetting curves. Extension of Karpathy pattern."
   },
   {
     "date": "2026-04-12",
@@ -366,18 +426,22 @@
     "handle": "@garrytan",
     "subject": "Post by Garry Tan on X",
     "url": "https://x.com/garrytan/status/2043198780800197025",
-    "summary": "Post by Garry Tan (content not yet scraped)",
+    "summary": "Garry Tan argues memory should outlive the harness — memory is markdown, skills are markdown, brain is a git repo. The harness should be a thin conductor that reads files, not owns them. Quote-tweets Harrison Chase's article on harness-memory coupling and the risks of closed harnesses. 430.4K views.",
     "topics": [
-      "general"
+      "agent-design",
+      "management"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team",
+      "leadership"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "430.4K",
     "notes": "",
-    "enriched": false
+    "enriched": true,
+    "content": "Memory as markdown in git, harness as thin conductor. QT Harrison Chase on harness-memory coupling."
   },
   {
     "date": "2026-04-12",
@@ -385,18 +449,20 @@
     "handle": "@nickspisak_",
     "subject": "Post by Nick Spisak on X",
     "url": "https://x.com/nickspisak_/status/2043060265823146202",
-    "summary": "Post by Nick Spisak (content not yet scraped)",
+    "summary": "Nick Spisak explains Claude Code's new /ultraplan feature: 4 Opus agents plan in parallel (3 explorers + 1 critic) on Anthropic's cloud. Covers when the review workflow matters more than speed, 5 scenarios preventing hours of rework, and when to skip it for local plan mode instead. 250.3K views.",
     "topics": [
-      "general"
+      "claude-code"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "now",
     "sourceType": "tweet",
-    "views": "",
+    "views": "250.3K",
     "notes": "",
-    "enriched": false
+    "enriched": true,
+    "content": "Claude Code /ultraplan: 4 Opus agents (3 explorers + 1 critic) planning in parallel. Full explainer."
   },
   {
     "date": "2026-04-12",
@@ -404,18 +470,21 @@
     "handle": "@garrytan",
     "subject": "Post by Garry Tan on X",
     "url": "https://x.com/garrytan/status/2042919242283258072",
-    "summary": "Post by Garry Tan (content not yet scraped)",
+    "summary": "Garry Tan announces GBrain's new guided integration recipes for OpenClaw and Hermes Agent setup. Addresses the struggle new users face getting integrations (mail, calendar, etc.) configured, which is needed to scale to thousands of markdown files in the knowledge base. 36.5K views.",
     "topics": [
-      "general"
+      "agent-design",
+      "skills-mcp"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "36.5K",
     "notes": "",
-    "enriched": false
+    "enriched": true,
+    "content": "GBrain guided integration recipes for OpenClaw/Hermes. Solves setup friction for mail, calendar, etc."
   },
   {
     "date": "2026-04-11",
