@@ -1,6 +1,136 @@
 [
   {
     "date": "2026-04-15",
+    "author": "Garry Tan",
+    "handle": "@garrytan",
+    "subject": "Post by Garry Tan on X",
+    "url": "https://x.com/garrytan/status/2044479509874020852",
+    "summary": "X article: \"Resolvers: The Routing Table for Intelligence\" — argues resolvers (context-routing rules: when task X appears, load document Y first) are the most important but invisible component of agent systems. Follows up on \"Thin Harness, Fat Skills\" framework. 21K views.",
+    "topics": [
+      "agent-design",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "article",
+    "views": "21K",
+    "notes": "",
+    "enriched": true,
+    "content": "Resolvers: The Routing Table for Intelligence. A resolver is a routing table for context. When task type X appears, load document Y first. That's it. One sentence. But that one sentence is the difference between an agent that compounds intelligence vs one that starts from scratch every time. Built on the Thin Harness, Fat Skills framework introduced previously."
+  },
+  {
+    "date": "2026-04-15",
+    "author": "GitHub Projects Community",
+    "handle": "@GithubProjects",
+    "subject": "Post by GitHub Projects Community on X",
+    "url": "https://x.com/githubprojects/status/2044453433743458686",
+    "summary": "Promotes Graphify — a tool to turn any folder of code into a queryable knowledge graph instantly. Useful for codebase exploration and RAG-style queries. osp.fyi/graphify",
+    "topics": [
+      "dev-practices",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "5,935",
+    "notes": "",
+    "enriched": true,
+    "content": "Turn any folder of code into a queryable knowledge graph instantly. https://osp.fyi/graphify"
+  },
+  {
+    "date": "2026-04-15",
+    "author": "Yoonho Lee",
+    "handle": "@yoonholeee",
+    "subject": "Post by Yoonho Lee on X",
+    "url": "https://x.com/yoonholeee/status/2044442372864700510",
+    "summary": "Released code for Meta-Harness — a method to autonomously improve LLM evaluation harnesses on problems humans are actively working on, solving long-horizon credit assignment over code, traces, and scores. Repo at github.com/stanford-iris-lab/meta-harness with ONBOARDING.md for agent-guided setup.",
+    "topics": [
+      "research",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "35.2K",
+    "notes": "",
+    "enriched": true,
+    "content": "We just released code for Meta-Harness! https://github.com/stanford-iris-lab/meta-harness. Aside from replicating paper experiments, the repo is designed to help users implement good Meta-Harnesses in completely new domains! Just point your agent at ONBOARDING.md and have a conversation. How can we autonomously improve LLM harnesses on problems humans are actively working on? Doing so requires solving a hard, long-horizon credit-assignment problem over all prior code, traces, and scores."
+  },
+  {
+    "date": "2026-04-15",
+    "author": "Viv",
+    "handle": "@Vtrivedy10",
+    "subject": "Post by Viv on X",
+    "url": "https://x.com/vtrivedy10/status/2044430694458310870",
+    "summary": "Points to Hunter Leath's article \"Bash is the SQL for file systems\" — a deep dive on storage, filesystems, and egress fees from cloud providers. Framed as must-read alpha for anyone working at the storage/filesystem layer.",
+    "topics": [
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "12.5K",
+    "notes": "",
+    "enriched": true,
+    "content": "X is a crazy place because there'll be builders at the frontier of their domain just openly sharing stuff on X…and you can just ask them questions, learn, disagree, etc. Hunter's that for storage/filesystems, go scroll his profile and read the last few articles for alpha and fire mental models. Quoting Hunter Leath @jhleath: Bash is the SQL for file systems. Article about egress fees and cloud storage architecture."
+  },
+  {
+    "date": "2026-04-15",
+    "author": "Shann³",
+    "handle": "@shannholmberg",
+    "subject": "Post by Shann³ on X",
+    "url": "https://x.com/shannholmberg/status/2044413638388363272",
+    "summary": "Built a 230-page Obsidian knowledge base (tweets, bookmarks, articles, notes) and connected it to every AI agent project using qmd (Tobi Lütke's tool) with hybrid BM25+vector search and LLM re-ranking. Any agent in any project now searches this global wiki before brainstorming or planning.",
+    "topics": [
+      "agent-design",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "—",
+    "notes": "",
+    "enriched": true,
+    "content": "I connected my knowledge base to every project I work on. every agent reads my wiki before doing anything. I built a knowledge base in obsidian with 230+ pages. my tweets, bookmarks, articles, ideas, notes, all compiled into structured wiki pages with cross-references. The knowledge only worked when I was inside that folder. So I set up qmd (by tobi lutke) to index the wiki. hybrid BM25 + vector search with LLM re-ranking, runs locally. Then I wrote a global skill that any agent in any project can call."
+  },
+  {
+    "date": "2026-04-15",
+    "author": "Millie Marconi",
+    "handle": "@MillieMarconnni",
+    "subject": "Post by Millie Marconi on X",
+    "url": "https://x.com/milliemarconnni/status/2044358003714097601",
+    "summary": "Uses Claude as a full inversion engine running Charlie Munger's method — mapping every path to failure to make the path to success obvious by elimination. Shares 5 prompts for applying systematic inversion to any problem.",
+    "topics": [
+      "prompting",
+      "claude-code"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "37.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "Inversion is the most powerful thinking tool most people never use correctly. They invert the goal. They don't invert the system. I turned Claude into a full inversion engine that runs Charlie Munger's method on any problem mapping every path to failure so precisely that the path to success becomes obvious by elimination. Here are the 5 prompts:"
+  },
+  {
+    "date": "2026-04-15",
     "author": "Akshay",
     "handle": "@akshay_pachaar",
     "subject": "Post by Akshay 🚀 on X",
@@ -88,6 +218,47 @@
   },
   {
     "date": "2026-04-15",
+    "author": "Erick",
+    "handle": "@ericksky",
+    "subject": "Post by Erick on X",
+    "url": "https://x.com/ericksky/status/2044225008419922270",
+    "summary": "[Post unavailable — login wall or deleted]",
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-04-15",
+    "author": "mr-r0b0t",
+    "handle": "@mr_r0b0t",
+    "subject": "Post by mr-r0b0t on X",
+    "url": "https://x.com/mr_r0b0t/status/2044199154004472009",
+    "summary": "Amplifies a tip on a 3-tool agent web stack: SearXNG for candidate source discovery, Firecrawl for known-URL scraping, Camofox for JS/interaction browser fallback. Described as essential for any agent doing web search or scraping.",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "2,600",
+    "notes": "",
+    "enriched": true,
+    "content": "This is an amazingly informative post if you're running agents that are doing web search/scraping! That's basically everyone! Definitely worth the read and the infographic is 11/10! Quoting Ahmad @TheAhmadOsman: PRO TIP My Agent Web Stack - SearXNG: candidate source discovery - Firecrawl: known-URL scrape and crawl - Camofox: browser fallback for JS/interaction. Search -> Extract -> Interact"
+  },
+  {
+    "date": "2026-04-15",
     "author": "klöss",
     "handle": "@kloss_xyz",
     "subject": "Post by klöss on X",
@@ -107,6 +278,27 @@
     "views": "12.7K",
     "notes": "",
     "enriched": true
+  },
+  {
+    "date": "2026-04-15",
+    "author": "0xSero",
+    "handle": "@0xSero",
+    "subject": "Post by 0xSero on X",
+    "url": "https://x.com/0xsero/status/2044165332928213243",
+    "summary": "Guide to running large LLMs on limited hardware: use REAPs (50% savings), quantization (AWQ/GPTQ/W4A16/FP8 for fast inference; GGUF/EXL3 for compatibility; MLX for Apple silicon), and 8-bit KV cache (50-75% savings). Practical tips for local AI deployment.",
+    "topics": [
+      "research",
+      "dev-practices"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "12.1K",
+    "notes": "",
+    "enriched": true,
+    "content": "Guide to running BIG B0Is on your small hardware. 1. Use REAPs: up to 50% savings. 2. Use quantisations: 75% savings - AWQ / GPTQ / W4A16 / FP8 = FAST inference - GGUF / EXL3 = Slow but just works - MLX = Best for apple. 3. Use 8bit KV cache: 50-75% savings."
   },
   {
     "date": "2026-04-15",
