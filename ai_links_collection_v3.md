@@ -1,41 +1,41 @@
 # AI Links Collection
 **Total Posts**: 351  
 **Date Range**: 2024-06-11 – 2026-04-15  
-**Enriched**: 337/351 (96%)
+**Enriched**: 351/351 (100%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 137 | 39.0% |
-| claude-code | 69 | 19.7% |
-| dev-practices | 82 | 23.4% |
-| skills-mcp | 38 | 10.8% |
-| prompting | 38 | 10.8% |
-| research | 41 | 11.7% |
-| industry | 25 | 7.1% |
-| management | 58 | 16.5% |
-| questionable | 21 | 6.0% |
-| general | 74 | 21.1% |
+| agent-design | 143 | 40.7% |
+| claude-code | 75 | 21.4% |
+| dev-practices | 87 | 24.8% |
+| skills-mcp | 41 | 11.7% |
+| prompting | 40 | 11.4% |
+| research | 43 | 12.3% |
+| industry | 28 | 8.0% |
+| management | 60 | 17.1% |
+| questionable | 23 | 6.6% |
+| general | 62 | 17.7% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
-| 2026-04-15 | Akshay | general | Post by Akshay (content not yet scraped) |
-| 2026-04-15 | Europurr | general | Post by Europurr (content not yet scraped) |
-| 2026-04-15 | Garry Tan | general | Post by Garry Tan (content not yet scraped) |
-| 2026-04-15 | Shaw (spirit/acc) | general | Post by Shaw (spirit/acc) (content not yet scraped) |
-| 2026-04-15 | klöss | general | Post by klöss (content not yet scraped) |
-| 2026-04-15 | Paul Bakaus | general | Post by Paul Bakaus (content not yet scraped) |
-| 2026-04-15 | kwindla | general | Post by kwindla (content not yet scraped) |
-| 2026-04-15 | Punisher | general | Post by Punisher (content not yet scraped) |
-| 2026-04-15 | StacyOnChain | general | Post by StacyOnChain (content not yet scraped) |
-| 2026-04-15 | Garry Tan | general | Post by Garry Tan (content not yet scraped) |
-| 2026-04-15 | Ihtesham Ali | general | Post by Ihtesham Ali (content not yet scraped) |
-| 2026-04-15 | Amir Salihefendić | general | Post by Amir Salihefendić (content not yet scraped) |
-| 2026-04-15 | Indie Fox | general | Post by Indie Fox (content not yet scraped) |
-| 2026-04-15 | Mario Zechner | general | Post by Mario Zechner (content not yet scraped) |
+| 2026-04-15 | Akshay | agent-design | Akshay argues agent memory is three-dimensional, not just vector. Exam... |
+| 2026-04-15 | Europurr | agent-design | Europurr switched from 'OpenClaw' to Hermes and is setting up Hindsigh... |
+| 2026-04-15 | Garry Tan | claude-code | Garry Tan releases GBrain v0.10.0 — his personal 'OpenClaw' setup with... |
+| 2026-04-15 | Shaw (spirit/acc) | claude-code | Shaw (@shawmakesmagic) shares an 8-subagent codebase-cleanup prompt: (... |
+| 2026-04-15 | klöss | claude-code | klöss proposes a 4-folder repo layout to stop agents hallucinating con... |
+| 2026-04-15 | Paul Bakaus | claude-code | Paul Bakaus endorses Matthew Sims (@mbwsims) who is building in the op... |
+| 2026-04-15 | kwindla | agent-design | kwindla (Daily.co / Pipecat) ships Gradient Bang — claims first massiv... |
+| 2026-04-15 | Punisher | questionable | [Not AI] Polymarket 'sweeper bot' guide claiming $525/day passive inco... |
+| 2026-04-15 | StacyOnChain | questionable | [Not AI] StacyOnChain shares a Polymarket bot architecture article wit... |
+| 2026-04-15 | Garry Tan | management | Garry Tan endorses Alfred Lin's (Sequoia) article 'Heat Seeking Missil... |
+| 2026-04-15 | Ihtesham Ali | agent-design | Aurogen — MIT-licensed 'OpenClaw' fork with true multi-agent, multi-in... |
+| 2026-04-15 | Amir Salihefendić | management | Amir Salihefendić (Doist/Todoist founder) on org design when companies... |
+| 2026-04-15 | Indie Fox | skills-mcp | Architecture diagram generator skill — github.com/Cocoon-AI/architectu... |
+| 2026-04-15 | Mario Zechner | dev-practices | Mario Zechner recommends Alex Volkov's article 'The Z/L Continuum — Do... |
 | 2026-04-14 | Alex Vacca | management | Alex Vacca highlights a 4-layer sales funnel architecture that produce... |
 | 2026-04-14 | am.will | agent-design | am.will recommends NVIDIA's free API credits for testing open-source m... |
 | 2026-04-14 | Phil Chen | agent-design | Phil Chen describes building Filbert (phil-bot), a background coding a... |
@@ -76,7 +76,19 @@
 ---
 ## Posts by Topic
 
-### Agent Design (137)
+### Agent Design (143)
+
+- [Akshay](https://x.com/akshay_pachaar/status/2044329897603244093) — 2026-04-15: Akshay argues agent memory is three-dimensional, not just vector. Example: 'Was Alice's project affected by Tuesday's outage?' — vector search finds Alice + Tuesday facts but misses the bridging Project-Atlas-uses-PostgreSQL fact. Proper stack needs relational (provenance), vector (semantic), and graph (relationships) stores. Any multi-hop business question breaks flat retrieval.
+
+- [Europurr](https://x.com/vrloom/status/2044314974101877175) — 2026-04-15: Europurr switched from 'OpenClaw' to Hermes and is setting up Hindsight memory (@NousResearch) — says it's light-years ahead. Signal about Nous Research's memory/agent stack being viable alternative.
+
+- [Garry Tan](https://x.com/garrytan/status/2044291663213015491) — 2026-04-15: Garry Tan releases GBrain v0.10.0 — his personal 'OpenClaw' setup with RESOLVER.md, SOUL.md and ACLs for multi-user brain access. 24 distinct 'fat skills' with e2e tests, evals and unit tests.
+
+- [Shaw (spirit/acc)](https://x.com/shawmakesmagic/status/2044269097647779990) — 2026-04-15: Shaw (@shawmakesmagic) shares an 8-subagent codebase-cleanup prompt: (1) dedup/DRY, (2) consolidate shared type definitions, (3) find/remove unused code via knip, (4) untangle circular deps via madge, (5) replace weak types (any/unknown) with strong ones, (6) remove unnecessary try/catch defensive programming, plus two more. Practical agent-orchestration pattern for quality cleanup.
+
+- [kwindla](https://x.com/kwindla/status/2044106314612408437) — 2026-04-15: kwindla (Daily.co / Pipecat) ships Gradient Bang — claims first massively multiplayer, fully LLM-driven game. Retro space-trading (Factorio-style but cajoling ship AI to task other AIs). Explores sub-agent orchestration, partial context sharing between multiple LLM inference loops, long-context + episodic memory across sessions, and dynamic UI.
+
+- [Ihtesham Ali](https://x.com/ihtesham2005/status/2044056849272705246) — 2026-04-15: Aurogen — MIT-licensed 'OpenClaw' fork with true multi-agent, multi-instance orchestration in one deployment (github.com/UniRound-Tec/Aurogen). Modular agents/channels/providers/skills, web-panel setup (no config/CLI), ClaWHub integration, one-click installers, $50 Linux SBC minimum.
 
 - [am.will](https://x.com/llmjunky/status/2043817254152814785) — 2026-04-14: am.will recommends NVIDIA's free API credits for testing open-source models (Minimax 2.7, Qwen 3.5, GLM 5, Gemma 31B, Nemotron 3 Super 120B) via their OpenAI-compatible endpoint at integrate.api.nvidia.com/v1. Includes ready-to-paste config for any OpenAI-compatible client.
 
@@ -352,7 +364,19 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Claude Code (69)
+### Claude Code (75)
+
+- [Europurr](https://x.com/vrloom/status/2044314974101877175) — 2026-04-15: Europurr switched from 'OpenClaw' to Hermes and is setting up Hindsight memory (@NousResearch) — says it's light-years ahead. Signal about Nous Research's memory/agent stack being viable alternative.
+
+- [Garry Tan](https://x.com/garrytan/status/2044291663213015491) — 2026-04-15: Garry Tan releases GBrain v0.10.0 — his personal 'OpenClaw' setup with RESOLVER.md, SOUL.md and ACLs for multi-user brain access. 24 distinct 'fat skills' with e2e tests, evals and unit tests.
+
+- [Shaw (spirit/acc)](https://x.com/shawmakesmagic/status/2044269097647779990) — 2026-04-15: Shaw (@shawmakesmagic) shares an 8-subagent codebase-cleanup prompt: (1) dedup/DRY, (2) consolidate shared type definitions, (3) find/remove unused code via knip, (4) untangle circular deps via madge, (5) replace weak types (any/unknown) with strong ones, (6) remove unnecessary try/catch defensive programming, plus two more. Practical agent-orchestration pattern for quality cleanup.
+
+- [klöss](https://x.com/kloss_xyz/status/2044169678961234282) — 2026-04-15: klöss proposes a 4-folder repo layout to stop agents hallucinating context: /audits (proof/verify), /docs (description/describe), /plans (intent/plan), /specs (law/enforce). Separate intent from proof from law from descriptions and Claude Code / Codex / Cursor agents stop guessing what files mean.
+
+- [Paul Bakaus](https://x.com/pbakaus/status/2044118871326765541) — 2026-04-15: Paul Bakaus endorses Matthew Sims (@mbwsims) who is building in the open at the intersection of creativity, storytelling and AI (English PhD + ML/startup background). Quotes Matt's post on teaching Claude Code to think systematically — tired of repeating the same security/testing/pattern-review prompts with inconsistent answers.
+
+- [Ihtesham Ali](https://x.com/ihtesham2005/status/2044056849272705246) — 2026-04-15: Aurogen — MIT-licensed 'OpenClaw' fork with true multi-agent, multi-instance orchestration in one deployment (github.com/UniRound-Tec/Aurogen). Modular agents/channels/providers/skills, web-panel setup (no config/CLI), ClaWHub integration, one-click installers, $50 Linux SBC minimum.
 
 - [Phil Chen](https://x.com/philhchen/status/2043759400121458922) — 2026-04-14: Phil Chen describes building Filbert (phil-bot), a background coding agent that wrote 95%+ of their PRs in one week. Runs 14 scheduled daily jobs including production bug triage, security audits, dead code sweeps, and CI optimization. Argues lightweight wrappers around existing harnesses on your own infra is the future of coding agents.
 
@@ -492,7 +516,17 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (82)
+### Dev Practices (87)
+
+- [Shaw (spirit/acc)](https://x.com/shawmakesmagic/status/2044269097647779990) — 2026-04-15: Shaw (@shawmakesmagic) shares an 8-subagent codebase-cleanup prompt: (1) dedup/DRY, (2) consolidate shared type definitions, (3) find/remove unused code via knip, (4) untangle circular deps via madge, (5) replace weak types (any/unknown) with strong ones, (6) remove unnecessary try/catch defensive programming, plus two more. Practical agent-orchestration pattern for quality cleanup.
+
+- [klöss](https://x.com/kloss_xyz/status/2044169678961234282) — 2026-04-15: klöss proposes a 4-folder repo layout to stop agents hallucinating context: /audits (proof/verify), /docs (description/describe), /plans (intent/plan), /specs (law/enforce). Separate intent from proof from law from descriptions and Claude Code / Codex / Cursor agents stop guessing what files mean.
+
+- [Paul Bakaus](https://x.com/pbakaus/status/2044118871326765541) — 2026-04-15: Paul Bakaus endorses Matthew Sims (@mbwsims) who is building in the open at the intersection of creativity, storytelling and AI (English PhD + ML/startup background). Quotes Matt's post on teaching Claude Code to think systematically — tired of repeating the same security/testing/pattern-review prompts with inconsistent answers.
+
+- [Indie Fox](https://x.com/indie_maker_fox/status/2043857352282255829) — 2026-04-15: Architecture diagram generator skill — github.com/Cocoon-AI/architecture-diagram-generator. Indie Fox shares an auto-generated architecture diagram for 'OpenHarness' and praises the color scheme and diagram quality.
+
+- [Mario Zechner](https://x.com/badlogicgames/status/2043757216885256463) — 2026-04-15: Mario Zechner recommends Alex Volkov's article 'The Z/L Continuum — Do AI engineers even need to read code anymore?' (thursdai.news/zl) — examines whether reading code is still a core AI-engineer skill in 2026/2027.
 
 - [am.will](https://x.com/llmjunky/status/2043817254152814785) — 2026-04-14: am.will recommends NVIDIA's free API credits for testing open-source models (Minimax 2.7, Qwen 3.5, GLM 5, Gemma 31B, Nemotron 3 Super 120B) via their OpenAI-compatible endpoint at integrate.api.nvidia.com/v1. Includes ready-to-paste config for any OpenAI-compatible client.
 
@@ -658,7 +692,13 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (38)
+### Skills & MCP (41)
+
+- [Garry Tan](https://x.com/garrytan/status/2044291663213015491) — 2026-04-15: Garry Tan releases GBrain v0.10.0 — his personal 'OpenClaw' setup with RESOLVER.md, SOUL.md and ACLs for multi-user brain access. 24 distinct 'fat skills' with e2e tests, evals and unit tests.
+
+- [Ihtesham Ali](https://x.com/ihtesham2005/status/2044056849272705246) — 2026-04-15: Aurogen — MIT-licensed 'OpenClaw' fork with true multi-agent, multi-instance orchestration in one deployment (github.com/UniRound-Tec/Aurogen). Modular agents/channels/providers/skills, web-panel setup (no config/CLI), ClaWHub integration, one-click installers, $50 Linux SBC minimum.
+
+- [Indie Fox](https://x.com/indie_maker_fox/status/2043857352282255829) — 2026-04-15: Architecture diagram generator skill — github.com/Cocoon-AI/architecture-diagram-generator. Indie Fox shares an auto-generated architecture diagram for 'OpenHarness' and praises the color scheme and diagram quality.
 
 - [Philipp Schmid](https://x.com/_philschmid/status/2043705197030002904) — 2026-04-14: Philipp Schmid shares 8 practical tips for writing better agent skills — from what kinds of skills exist to knowing when to retire one. Covers skill lifecycle, quality standards, and distribution patterns. Links to a full X article with the guide.
 
@@ -736,7 +776,11 @@
 
 - [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Anthropic released a frontend-design plugin for Claude Code — demo shows Claude creating a music player app. Install via /plugin marketplace add anthropics/claude-code and /plugin install frontend-design@claude-code-plugins.
 
-### Prompting (38)
+### Prompting (40)
+
+- [Shaw (spirit/acc)](https://x.com/shawmakesmagic/status/2044269097647779990) — 2026-04-15: Shaw (@shawmakesmagic) shares an 8-subagent codebase-cleanup prompt: (1) dedup/DRY, (2) consolidate shared type definitions, (3) find/remove unused code via knip, (4) untangle circular deps via madge, (5) replace weak types (any/unknown) with strong ones, (6) remove unnecessary try/catch defensive programming, plus two more. Practical agent-orchestration pattern for quality cleanup.
+
+- [klöss](https://x.com/kloss_xyz/status/2044169678961234282) — 2026-04-15: klöss proposes a 4-folder repo layout to stop agents hallucinating context: /audits (proof/verify), /docs (description/describe), /plans (intent/plan), /specs (law/enforce). Separate intent from proof from law from descriptions and Claude Code / Codex / Cursor agents stop guessing what files mean.
 
 - [Kevin Simback](https://x.com/ksimback/status/2043745657748361476) — 2026-04-14: Kevin Simback shares his 'Second Brain' setup using a modified Karpathy method. Key insight: the system needs two authors — the human writes opinionated takes and decisions, the AI agent handles structured knowledge extraction and organization. Avoids both the 'LLM-wiki' problem (generic AI prose) and the 'can't keep up' problem (manual-only decay).
 
@@ -814,7 +858,11 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
 
-### Research (41)
+### Research (43)
+
+- [Akshay](https://x.com/akshay_pachaar/status/2044329897603244093) — 2026-04-15: Akshay argues agent memory is three-dimensional, not just vector. Example: 'Was Alice's project affected by Tuesday's outage?' — vector search finds Alice + Tuesday facts but misses the bridging Project-Atlas-uses-PostgreSQL fact. Proper stack needs relational (provenance), vector (semantic), and graph (relationships) stores. Any multi-hop business question breaks flat retrieval.
+
+- [kwindla](https://x.com/kwindla/status/2044106314612408437) — 2026-04-15: kwindla (Daily.co / Pipecat) ships Gradient Bang — claims first massively multiplayer, fully LLM-driven game. Retro space-trading (Factorio-style but cajoling ship AI to task other AIs). Explores sub-agent orchestration, partial context sharing between multiple LLM inference loops, long-context + episodic memory across sessions, and dynamic UI.
 
 - [How To AI](https://x.com/howtoai_/status/2043753502850351525) — 2026-04-14: How To AI covers a math paper proving every elementary function (sin, exp, log, sqrt) derives from a single binary operator: eml(x,y) = exp(x) - ln(y). Combined with the number 1, it can build pi, square roots, trig — analogous to NAND gates in digital logic. Implications for neural network architecture and potential hardware optimization.
 
@@ -898,7 +946,13 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: 15-part thread explaining the 'stunning, simple explanation behind matrix multiplication' — breaks down the most crucial idea behind modern machine learning. 1M views.
 
-### Industry (25)
+### Industry (28)
+
+- [Garry Tan](https://x.com/garrytan/status/2044059516497711522) — 2026-04-15: Garry Tan endorses Alfred Lin's (Sequoia) article 'Heat Seeking Missile for Pain' — on founders who actively seek out the hairiest, gnarliest problems and surgically blow them up. References Zipline's Keller.
+
+- [Amir Salihefendić](https://x.com/amix3k/status/2044046057315742146) — 2026-04-15: Amir Salihefendić (Doist/Todoist founder) on org design when companies include both human and machine intelligence. Riffs on Jack Dorsey's framing and Terence Tao's 'Copernican view of intelligence' — humans and machines have different strengths, not just different rungs on the same ladder. AI's role is connective tissue: context, trade-offs, cross-team information flow.
+
+- [Mario Zechner](https://x.com/badlogicgames/status/2043757216885256463) — 2026-04-15: Mario Zechner recommends Alex Volkov's article 'The Z/L Continuum — Do AI engineers even need to read code anymore?' (thursdai.news/zl) — examines whether reading code is still a core AI-engineer skill in 2026/2027.
 
 - [Alex Vacca](https://x.com/itsalexvacca/status/2043834187095150673) — 2026-04-14: Alex Vacca highlights a 4-layer sales funnel architecture that produced 330K website visitors, 1,500+ meetings booked, and $4M new ARR — crossing $7M ARR without raising capital. Quote-tweets an article by Michel Lieben detailing the system.
 
@@ -950,7 +1004,11 @@
 
 - [Dante O. Cuales](https://x.com/danteocualesjr/status/1957204427909321027) — 2025-08-18: Reply to a thread about AI engineering being easy to learn — argues the 'intimidation factor is mostly artificial' since most AI engineering is API orchestration, prompt optimization, and data pipeline work. The hard parts are already abstracted away.
 
-### Management (58)
+### Management (60)
+
+- [Garry Tan](https://x.com/garrytan/status/2044059516497711522) — 2026-04-15: Garry Tan endorses Alfred Lin's (Sequoia) article 'Heat Seeking Missile for Pain' — on founders who actively seek out the hairiest, gnarliest problems and surgically blow them up. References Zipline's Keller.
+
+- [Amir Salihefendić](https://x.com/amix3k/status/2044046057315742146) — 2026-04-15: Amir Salihefendić (Doist/Todoist founder) on org design when companies include both human and machine intelligence. Riffs on Jack Dorsey's framing and Terence Tao's 'Copernican view of intelligence' — humans and machines have different strengths, not just different rungs on the same ladder. AI's role is connective tissue: context, trade-offs, cross-team information flow.
 
 - [Alex Vacca](https://x.com/itsalexvacca/status/2043834187095150673) — 2026-04-14: Alex Vacca highlights a 4-layer sales funnel architecture that produced 330K website visitors, 1,500+ meetings booked, and $4M new ARR — crossing $7M ARR without raising capital. Quote-tweets an article by Michel Lieben detailing the system.
 
@@ -1068,7 +1126,11 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
 
-### Questionable (21)
+### Questionable (23)
+
+- [Punisher](https://x.com/0x_punisher/status/2044100729133019416) — 2026-04-15: [Not AI] Polymarket 'sweeper bot' guide claiming $525/day passive income by exploiting post-resolution market inefficiencies. Engagement-farming crypto content — no AI/dev relevance.
+
+- [StacyOnChain](https://x.com/stacyonchain/status/2044069002192847200) — 2026-04-15: [Not AI] StacyOnChain shares a Polymarket bot architecture article with fractional Kelly formula and latency optimizations. Crypto/arbitrage engagement-bait, no AI/dev relevance.
 
 - [Vaishnavi](https://x.com/_vmlops/status/2043624154646409708) — 2026-04-14: Vaishnavi covers Google's open-sourced Magika — an AI-powered file content type detection tool. Trained on 100M files, 200+ content types, 99% accuracy at 5ms/file. Sees through renamed malware and disguised scripts. Install via pip install magika. github.com/google/magika
 
@@ -1112,35 +1174,11 @@
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
 
-### General (78)
+### General (66)
 
-- [Akshay](https://x.com/akshay_pachaar/status/2044329897603244093) — 2026-04-15: Post by Akshay (content not yet scraped)
+- [Punisher](https://x.com/0x_punisher/status/2044100729133019416) — 2026-04-15: [Not AI] Polymarket 'sweeper bot' guide claiming $525/day passive income by exploiting post-resolution market inefficiencies. Engagement-farming crypto content — no AI/dev relevance.
 
-- [Europurr](https://x.com/vrloom/status/2044314974101877175) — 2026-04-15: Post by Europurr (content not yet scraped)
-
-- [Garry Tan](https://x.com/garrytan/status/2044291663213015491) — 2026-04-15: Post by Garry Tan (content not yet scraped)
-
-- [Shaw (spirit/acc)](https://x.com/shawmakesmagic/status/2044269097647779990) — 2026-04-15: Post by Shaw (spirit/acc) (content not yet scraped)
-
-- [klöss](https://x.com/kloss_xyz/status/2044169678961234282) — 2026-04-15: Post by klöss (content not yet scraped)
-
-- [Paul Bakaus](https://x.com/pbakaus/status/2044118871326765541) — 2026-04-15: Post by Paul Bakaus (content not yet scraped)
-
-- [kwindla](https://x.com/kwindla/status/2044106314612408437) — 2026-04-15: Post by kwindla (content not yet scraped)
-
-- [Punisher](https://x.com/0x_punisher/status/2044100729133019416) — 2026-04-15: Post by Punisher (content not yet scraped)
-
-- [StacyOnChain](https://x.com/stacyonchain/status/2044069002192847200) — 2026-04-15: Post by StacyOnChain (content not yet scraped)
-
-- [Garry Tan](https://x.com/garrytan/status/2044059516497711522) — 2026-04-15: Post by Garry Tan (content not yet scraped)
-
-- [Ihtesham Ali](https://x.com/ihtesham2005/status/2044056849272705246) — 2026-04-15: Post by Ihtesham Ali (content not yet scraped)
-
-- [Amir Salihefendić](https://x.com/amix3k/status/2044046057315742146) — 2026-04-15: Post by Amir Salihefendić (content not yet scraped)
-
-- [Indie Fox](https://x.com/indie_maker_fox/status/2043857352282255829) — 2026-04-15: Post by Indie Fox (content not yet scraped)
-
-- [Mario Zechner](https://x.com/badlogicgames/status/2043757216885256463) — 2026-04-15: Post by Mario Zechner (content not yet scraped)
+- [StacyOnChain](https://x.com/stacyonchain/status/2044069002192847200) — 2026-04-15: [Not AI] StacyOnChain shares a Polymarket bot architecture article with fractional Kelly formula and latency optimizations. Crypto/arbitrage engagement-bait, no AI/dev relevance.
 
 - [Recogard](https://x.com/recogard/status/2042356576032358505) — 2026-04-10: 36 GB dataset of 72 million Polymarket trades available free on GitHub for prediction market analysis. Includes tools to build trading strategies from historical market data — analyze price behavior before resolution, compare category volatility, and find repeating patterns.
 
@@ -1275,47 +1313,47 @@
 
 ### Apr 2026
 
-- **2026-04-15** | [Akshay](https://x.com/akshay_pachaar/status/2044329897603244093) | general
-  Post by Akshay (content not yet scraped)
+- **2026-04-15** | [Akshay](https://x.com/akshay_pachaar/status/2044329897603244093) | agent-design, research
+  Akshay argues agent memory is three-dimensional, not just vector. Example: 'Was Alice's project affected by Tuesday's outage?' — vector search finds Alice + Tuesday facts but misses the bridging Project-Atlas-uses-PostgreSQL fact. Proper stack needs relational (provenance), vector (semantic), and graph (relationships) stores. Any multi-hop business question breaks flat retrieval.
 
-- **2026-04-15** | [Europurr](https://x.com/vrloom/status/2044314974101877175) | general
-  Post by Europurr (content not yet scraped)
+- **2026-04-15** | [Europurr](https://x.com/vrloom/status/2044314974101877175) | agent-design, claude-code
+  Europurr switched from 'OpenClaw' to Hermes and is setting up Hindsight memory (@NousResearch) — says it's light-years ahead. Signal about Nous Research's memory/agent stack being viable alternative.
 
-- **2026-04-15** | [Garry Tan](https://x.com/garrytan/status/2044291663213015491) | general
-  Post by Garry Tan (content not yet scraped)
+- **2026-04-15** | [Garry Tan](https://x.com/garrytan/status/2044291663213015491) | claude-code, skills-mcp, agent-design
+  Garry Tan releases GBrain v0.10.0 — his personal 'OpenClaw' setup with RESOLVER.md, SOUL.md and ACLs for multi-user brain access. 24 distinct 'fat skills' with e2e tests, evals and unit tests.
 
-- **2026-04-15** | [Shaw (spirit/acc)](https://x.com/shawmakesmagic/status/2044269097647779990) | general
-  Post by Shaw (spirit/acc) (content not yet scraped)
+- **2026-04-15** | [Shaw (spirit/acc)](https://x.com/shawmakesmagic/status/2044269097647779990) | claude-code, agent-design, dev-practices, prompting
+  Shaw (@shawmakesmagic) shares an 8-subagent codebase-cleanup prompt: (1) dedup/DRY, (2) consolidate shared type definitions, (3) find/remove unused code via knip, (4) untangle circular deps via madge, (5) replace weak types (any/unknown) with strong ones, (6) remove unnecessary try/catch defensive programming, plus two more. Practical agent-orchestration pattern for quality cleanup.
 
-- **2026-04-15** | [klöss](https://x.com/kloss_xyz/status/2044169678961234282) | general
-  Post by klöss (content not yet scraped)
+- **2026-04-15** | [klöss](https://x.com/kloss_xyz/status/2044169678961234282) | claude-code, dev-practices, prompting
+  klöss proposes a 4-folder repo layout to stop agents hallucinating context: /audits (proof/verify), /docs (description/describe), /plans (intent/plan), /specs (law/enforce). Separate intent from proof from law from descriptions and Claude Code / Codex / Cursor agents stop guessing what files mean.
 
-- **2026-04-15** | [Paul Bakaus](https://x.com/pbakaus/status/2044118871326765541) | general
-  Post by Paul Bakaus (content not yet scraped)
+- **2026-04-15** | [Paul Bakaus](https://x.com/pbakaus/status/2044118871326765541) | claude-code, dev-practices
+  Paul Bakaus endorses Matthew Sims (@mbwsims) who is building in the open at the intersection of creativity, storytelling and AI (English PhD + ML/startup background). Quotes Matt's post on teaching Claude Code to think systematically — tired of repeating the same security/testing/pattern-review prompts with inconsistent answers.
 
-- **2026-04-15** | [kwindla](https://x.com/kwindla/status/2044106314612408437) | general
-  Post by kwindla (content not yet scraped)
+- **2026-04-15** | [kwindla](https://x.com/kwindla/status/2044106314612408437) | agent-design, research
+  kwindla (Daily.co / Pipecat) ships Gradient Bang — claims first massively multiplayer, fully LLM-driven game. Retro space-trading (Factorio-style but cajoling ship AI to task other AIs). Explores sub-agent orchestration, partial context sharing between multiple LLM inference loops, long-context + episodic memory across sessions, and dynamic UI.
 
-- **2026-04-15** | [Punisher](https://x.com/0x_punisher/status/2044100729133019416) | general
-  Post by Punisher (content not yet scraped)
+- **2026-04-15** | [Punisher](https://x.com/0x_punisher/status/2044100729133019416) | questionable, general
+  [Not AI] Polymarket 'sweeper bot' guide claiming $525/day passive income by exploiting post-resolution market inefficiencies. Engagement-farming crypto content — no AI/dev relevance.
 
-- **2026-04-15** | [StacyOnChain](https://x.com/stacyonchain/status/2044069002192847200) | general
-  Post by StacyOnChain (content not yet scraped)
+- **2026-04-15** | [StacyOnChain](https://x.com/stacyonchain/status/2044069002192847200) | questionable, general
+  [Not AI] StacyOnChain shares a Polymarket bot architecture article with fractional Kelly formula and latency optimizations. Crypto/arbitrage engagement-bait, no AI/dev relevance.
 
-- **2026-04-15** | [Garry Tan](https://x.com/garrytan/status/2044059516497711522) | general
-  Post by Garry Tan (content not yet scraped)
+- **2026-04-15** | [Garry Tan](https://x.com/garrytan/status/2044059516497711522) | management, industry
+  Garry Tan endorses Alfred Lin's (Sequoia) article 'Heat Seeking Missile for Pain' — on founders who actively seek out the hairiest, gnarliest problems and surgically blow them up. References Zipline's Keller.
 
-- **2026-04-15** | [Ihtesham Ali](https://x.com/ihtesham2005/status/2044056849272705246) | general
-  Post by Ihtesham Ali (content not yet scraped)
+- **2026-04-15** | [Ihtesham Ali](https://x.com/ihtesham2005/status/2044056849272705246) | agent-design, claude-code, skills-mcp
+  Aurogen — MIT-licensed 'OpenClaw' fork with true multi-agent, multi-instance orchestration in one deployment (github.com/UniRound-Tec/Aurogen). Modular agents/channels/providers/skills, web-panel setup (no config/CLI), ClaWHub integration, one-click installers, $50 Linux SBC minimum.
 
-- **2026-04-15** | [Amir Salihefendić](https://x.com/amix3k/status/2044046057315742146) | general
-  Post by Amir Salihefendić (content not yet scraped)
+- **2026-04-15** | [Amir Salihefendić](https://x.com/amix3k/status/2044046057315742146) | management, industry
+  Amir Salihefendić (Doist/Todoist founder) on org design when companies include both human and machine intelligence. Riffs on Jack Dorsey's framing and Terence Tao's 'Copernican view of intelligence' — humans and machines have different strengths, not just different rungs on the same ladder. AI's role is connective tissue: context, trade-offs, cross-team information flow.
 
-- **2026-04-15** | [Indie Fox](https://x.com/indie_maker_fox/status/2043857352282255829) | general
-  Post by Indie Fox (content not yet scraped)
+- **2026-04-15** | [Indie Fox](https://x.com/indie_maker_fox/status/2043857352282255829) | skills-mcp, dev-practices
+  Architecture diagram generator skill — github.com/Cocoon-AI/architecture-diagram-generator. Indie Fox shares an auto-generated architecture diagram for 'OpenHarness' and praises the color scheme and diagram quality.
 
-- **2026-04-15** | [Mario Zechner](https://x.com/badlogicgames/status/2043757216885256463) | general
-  Post by Mario Zechner (content not yet scraped)
+- **2026-04-15** | [Mario Zechner](https://x.com/badlogicgames/status/2043757216885256463) | dev-practices, industry
+  Mario Zechner recommends Alex Volkov's article 'The Z/L Continuum — Do AI engineers even need to read code anymore?' (thursdai.news/zl) — examines whether reading code is still a core AI-engineer skill in 2026/2027.
 
 - **2026-04-14** | [Alex Vacca](https://x.com/itsalexvacca/status/2043834187095150673) | management, industry
   Alex Vacca highlights a 4-layer sales funnel architecture that produced 330K website visitors, 1,500+ meetings booked, and $4M new ARR — crossing $7M ARR without raising capital. Quote-tweets an article by Michel Lieben detailing the system.
