@@ -1,27 +1,41 @@
 # AI Links Collection
-**Total Posts**: 337  
-**Date Range**: 2024-06-11 – 2026-04-14  
-**Enriched**: 337/337 (100%)
+**Total Posts**: 351  
+**Date Range**: 2024-06-11 – 2026-04-15  
+**Enriched**: 337/351 (96%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 137 | 40.7% |
-| claude-code | 69 | 20.5% |
-| dev-practices | 82 | 24.3% |
-| skills-mcp | 38 | 11.3% |
-| prompting | 38 | 11.3% |
-| research | 41 | 12.2% |
-| industry | 25 | 7.4% |
-| management | 58 | 17.2% |
-| questionable | 21 | 6.2% |
-| general | 60 | 17.8% |
+| agent-design | 137 | 39.0% |
+| claude-code | 69 | 19.7% |
+| dev-practices | 82 | 23.4% |
+| skills-mcp | 38 | 10.8% |
+| prompting | 38 | 10.8% |
+| research | 41 | 11.7% |
+| industry | 25 | 7.1% |
+| management | 58 | 16.5% |
+| questionable | 21 | 6.0% |
+| general | 74 | 21.1% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-04-15 | Akshay | general | Post by Akshay (content not yet scraped) |
+| 2026-04-15 | Europurr | general | Post by Europurr (content not yet scraped) |
+| 2026-04-15 | Garry Tan | general | Post by Garry Tan (content not yet scraped) |
+| 2026-04-15 | Shaw (spirit/acc) | general | Post by Shaw (spirit/acc) (content not yet scraped) |
+| 2026-04-15 | klöss | general | Post by klöss (content not yet scraped) |
+| 2026-04-15 | Paul Bakaus | general | Post by Paul Bakaus (content not yet scraped) |
+| 2026-04-15 | kwindla | general | Post by kwindla (content not yet scraped) |
+| 2026-04-15 | Punisher | general | Post by Punisher (content not yet scraped) |
+| 2026-04-15 | StacyOnChain | general | Post by StacyOnChain (content not yet scraped) |
+| 2026-04-15 | Garry Tan | general | Post by Garry Tan (content not yet scraped) |
+| 2026-04-15 | Ihtesham Ali | general | Post by Ihtesham Ali (content not yet scraped) |
+| 2026-04-15 | Amir Salihefendić | general | Post by Amir Salihefendić (content not yet scraped) |
+| 2026-04-15 | Indie Fox | general | Post by Indie Fox (content not yet scraped) |
+| 2026-04-15 | Mario Zechner | general | Post by Mario Zechner (content not yet scraped) |
 | 2026-04-14 | Alex Vacca | management | Alex Vacca highlights a 4-layer sales funnel architecture that produce... |
 | 2026-04-14 | am.will | agent-design | am.will recommends NVIDIA's free API credits for testing open-source m... |
 | 2026-04-14 | Phil Chen | agent-design | Phil Chen describes building Filbert (phil-bot), a background coding a... |
@@ -58,20 +72,6 @@
 | 2026-04-10 | Santiago | research | Engramme (engramme.com) — a startup building "Large Memory Models," a... |
 | 2026-04-10 | Avid | skills-mcp | Recommends a 16-minute talk by two Anthropic engineers who built Claud... |
 | 2026-04-09 | carsonfarmer | agent-design | Points out that Anthropic's new managed agents API closely mirrors the... |
-| 2026-04-09 | Aakash Gupta | management | Makes the case for "Team OS" — a shared GitHub repo that serves as a t... |
-| 2026-04-09 | Ashpreet Bedi | agent-design | Ashpreet highlights @Vtrivedy10's LangChain article on auto-improving... |
-| 2026-04-09 | mr-r0b0t | agent-design | Endorses the same LangChain article by @Vtrivedy10 on harness hill-cli... |
-| 2026-04-09 | Justin Brooke | agent-design | Introduces 7 markdown files for structuring AI agent systems: SOULS.md... |
-| 2026-04-09 | Vaishnavi | dev-practices | Microsoft open-sourced markitdown (github.com/microsoft/markitdown) —... |
-| 2026-04-08 | Sowmay Jain | agent-design | Describes using an AI agent (@laukiantonson) to fully analyze a 67GB r... |
-| 2026-04-08 | Ashpreet Bedi | agent-design | Ashpreet Bedi argues that building agentic software requires systems e... |
-| 2026-04-08 | cvxv666 | questionable | Engagement-farming thread about building a Polymarket prediction marke... |
-| 2026-04-08 | Ksenia Se | management | Ksenia from TuringPost on the enterprise AI adoption gap: despite SF h... |
-| 2026-04-07 | Allie K. Miller | management | Allie K. Miller shares a 5-level 'Proactive AI-First Team Member' fram... |
-| 2026-04-06 | Eric Siu | management | Practical guide to deploying Jack Dorsey's 'world intelligence' concep... |
-| 2026-04-06 | Dave Kline | management | Management advice on fixing broken 1:1 meetings — 4 tests to determine... |
-| 2026-04-06 | Alex Prompter | research | Google DeepMind published the largest empirical study of AI agent mani... |
-| 2026-04-06 | 0xMarioNawfal | claude-code | Comprehensive open-source Claude Code setup with 27 agents, 64 skills,... |
 
 ---
 ## Posts by Topic
@@ -1112,7 +1112,35 @@
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
 
-### General (64)
+### General (78)
+
+- [Akshay](https://x.com/akshay_pachaar/status/2044329897603244093) — 2026-04-15: Post by Akshay (content not yet scraped)
+
+- [Europurr](https://x.com/vrloom/status/2044314974101877175) — 2026-04-15: Post by Europurr (content not yet scraped)
+
+- [Garry Tan](https://x.com/garrytan/status/2044291663213015491) — 2026-04-15: Post by Garry Tan (content not yet scraped)
+
+- [Shaw (spirit/acc)](https://x.com/shawmakesmagic/status/2044269097647779990) — 2026-04-15: Post by Shaw (spirit/acc) (content not yet scraped)
+
+- [klöss](https://x.com/kloss_xyz/status/2044169678961234282) — 2026-04-15: Post by klöss (content not yet scraped)
+
+- [Paul Bakaus](https://x.com/pbakaus/status/2044118871326765541) — 2026-04-15: Post by Paul Bakaus (content not yet scraped)
+
+- [kwindla](https://x.com/kwindla/status/2044106314612408437) — 2026-04-15: Post by kwindla (content not yet scraped)
+
+- [Punisher](https://x.com/0x_punisher/status/2044100729133019416) — 2026-04-15: Post by Punisher (content not yet scraped)
+
+- [StacyOnChain](https://x.com/stacyonchain/status/2044069002192847200) — 2026-04-15: Post by StacyOnChain (content not yet scraped)
+
+- [Garry Tan](https://x.com/garrytan/status/2044059516497711522) — 2026-04-15: Post by Garry Tan (content not yet scraped)
+
+- [Ihtesham Ali](https://x.com/ihtesham2005/status/2044056849272705246) — 2026-04-15: Post by Ihtesham Ali (content not yet scraped)
+
+- [Amir Salihefendić](https://x.com/amix3k/status/2044046057315742146) — 2026-04-15: Post by Amir Salihefendić (content not yet scraped)
+
+- [Indie Fox](https://x.com/indie_maker_fox/status/2043857352282255829) — 2026-04-15: Post by Indie Fox (content not yet scraped)
+
+- [Mario Zechner](https://x.com/badlogicgames/status/2043757216885256463) — 2026-04-15: Post by Mario Zechner (content not yet scraped)
 
 - [Recogard](https://x.com/recogard/status/2042356576032358505) — 2026-04-10: 36 GB dataset of 72 million Polymarket trades available free on GitHub for prediction market analysis. Includes tools to build trading strategies from historical market data — analyze price behavior before resolution, compare category volatility, and find repeating patterns.
 
@@ -1246,6 +1274,48 @@
 ## Full Chronological List
 
 ### Apr 2026
+
+- **2026-04-15** | [Akshay](https://x.com/akshay_pachaar/status/2044329897603244093) | general
+  Post by Akshay (content not yet scraped)
+
+- **2026-04-15** | [Europurr](https://x.com/vrloom/status/2044314974101877175) | general
+  Post by Europurr (content not yet scraped)
+
+- **2026-04-15** | [Garry Tan](https://x.com/garrytan/status/2044291663213015491) | general
+  Post by Garry Tan (content not yet scraped)
+
+- **2026-04-15** | [Shaw (spirit/acc)](https://x.com/shawmakesmagic/status/2044269097647779990) | general
+  Post by Shaw (spirit/acc) (content not yet scraped)
+
+- **2026-04-15** | [klöss](https://x.com/kloss_xyz/status/2044169678961234282) | general
+  Post by klöss (content not yet scraped)
+
+- **2026-04-15** | [Paul Bakaus](https://x.com/pbakaus/status/2044118871326765541) | general
+  Post by Paul Bakaus (content not yet scraped)
+
+- **2026-04-15** | [kwindla](https://x.com/kwindla/status/2044106314612408437) | general
+  Post by kwindla (content not yet scraped)
+
+- **2026-04-15** | [Punisher](https://x.com/0x_punisher/status/2044100729133019416) | general
+  Post by Punisher (content not yet scraped)
+
+- **2026-04-15** | [StacyOnChain](https://x.com/stacyonchain/status/2044069002192847200) | general
+  Post by StacyOnChain (content not yet scraped)
+
+- **2026-04-15** | [Garry Tan](https://x.com/garrytan/status/2044059516497711522) | general
+  Post by Garry Tan (content not yet scraped)
+
+- **2026-04-15** | [Ihtesham Ali](https://x.com/ihtesham2005/status/2044056849272705246) | general
+  Post by Ihtesham Ali (content not yet scraped)
+
+- **2026-04-15** | [Amir Salihefendić](https://x.com/amix3k/status/2044046057315742146) | general
+  Post by Amir Salihefendić (content not yet scraped)
+
+- **2026-04-15** | [Indie Fox](https://x.com/indie_maker_fox/status/2043857352282255829) | general
+  Post by Indie Fox (content not yet scraped)
+
+- **2026-04-15** | [Mario Zechner](https://x.com/badlogicgames/status/2043757216885256463) | general
+  Post by Mario Zechner (content not yet scraped)
 
 - **2026-04-14** | [Alex Vacca](https://x.com/itsalexvacca/status/2043834187095150673) | management, industry
   Alex Vacca highlights a 4-layer sales funnel architecture that produced 330K website visitors, 1,500+ meetings booked, and $4M new ARR — crossing $7M ARR without raising capital. Quote-tweets an article by Michel Lieben detailing the system.
