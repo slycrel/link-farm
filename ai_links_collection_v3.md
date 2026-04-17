@@ -1,27 +1,28 @@
 # AI Links Collection
-**Total Posts**: 360  
-**Date Range**: 2024-06-11 – 2026-04-15  
-**Enriched**: 360/360 (100%)
+**Total Posts**: 361  
+**Date Range**: 2024-06-11 – 2026-04-17  
+**Enriched**: 360/361 (99%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 148 | 41.1% |
+| agent-design | 148 | 41.0% |
 | claude-code | 76 | 21.1% |
-| dev-practices | 91 | 25.3% |
+| dev-practices | 91 | 25.2% |
 | skills-mcp | 43 | 11.9% |
 | prompting | 41 | 11.4% |
 | research | 45 | 12.5% |
 | industry | 28 | 7.8% |
-| management | 60 | 16.7% |
+| management | 60 | 16.6% |
 | questionable | 23 | 6.4% |
-| general | 63 | 17.5% |
+| general | 64 | 17.7% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-04-17 | 0xSero | general | Post by 0xSero (content not yet scraped) |
 | 2026-04-15 | Garry Tan | agent-design | X article: "Resolvers: The Routing Table for Intelligence" — argues re... |
 | 2026-04-15 | GitHub Projects Community | dev-practices | Promotes Graphify — a tool to turn any folder of code into a queryable... |
 | 2026-04-15 | Yoonho Lee | research | Released code for Meta-Harness — a method to autonomously improve LLM... |
@@ -71,7 +72,6 @@
 | 2026-04-10 | Veeral Patel | agent-design | Quote-tweets Ramp Labs article on "Latent Briefing" — a KV cache compa... |
 | 2026-04-10 | Alpha Batcher | agent-design | Distills architectural principles for production AI agents by quoting... |
 | 2026-04-10 | Akshay | agent-design | Comparison of how Anthropic, OpenAI, CrewAI, and LangChain approach th... |
-| 2026-04-10 | Vaishnavi | skills-mcp | Google open-sourced MCP Toolbox (github.com/googleapis/mcp-toolbox) —... |
 
 ---
 ## Posts by Topic
@@ -1204,7 +1204,9 @@
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
 
-### General (67)
+### General (68)
+
+- [0xSero](https://x.com/0xsero/status/2044879665001595263) — 2026-04-17: Post by 0xSero (content not yet scraped)
 
 - [Erick](https://x.com/ericksky/status/2044225008419922270) — 2026-04-15: [Post unavailable — login wall or deleted]
 
@@ -1344,6 +1346,9 @@
 ## Full Chronological List
 
 ### Apr 2026
+
+- **2026-04-17** | [0xSero](https://x.com/0xsero/status/2044879665001595263) | general
+  Post by 0xSero (content not yet scraped)
 
 - **2026-04-15** | [Garry Tan](https://x.com/garrytan/status/2044479509874020852) | agent-design, skills-mcp
   X article: "Resolvers: The Routing Table for Intelligence" — argues resolvers (context-routing rules: when task X appears, load document Y first) are the most important but invisible component of agent systems. Follows up on "Thin Harness, Fat Skills" framework. 21K views.

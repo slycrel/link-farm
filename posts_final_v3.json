@@ -1,5 +1,24 @@
 [
   {
+    "date": "2026-04-17",
+    "author": "0xSero",
+    "handle": "@0xSero",
+    "subject": "Post by 0xSero on X",
+    "url": "https://x.com/0xsero/status/2044879665001595263",
+    "summary": "Post by 0xSero (content not yet scraped)",
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": false
+  },
+  {
     "date": "2026-04-15",
     "author": "Garry Tan",
     "handle": "@garrytan",
