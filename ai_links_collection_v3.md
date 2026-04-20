@@ -1,28 +1,40 @@
 # AI Links Collection
-**Total Posts**: 361  
-**Date Range**: 2024-06-11 – 2026-04-17  
-**Enriched**: 360/361 (99%)
+**Total Posts**: 373  
+**Date Range**: 2024-06-11 – 2026-04-20  
+**Enriched**: 360/373 (96%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 148 | 41.0% |
-| claude-code | 76 | 21.1% |
-| dev-practices | 91 | 25.2% |
-| skills-mcp | 43 | 11.9% |
-| prompting | 41 | 11.4% |
-| research | 45 | 12.5% |
-| industry | 28 | 7.8% |
-| management | 60 | 16.6% |
-| questionable | 23 | 6.4% |
-| general | 64 | 17.7% |
+| agent-design | 148 | 39.7% |
+| claude-code | 76 | 20.4% |
+| dev-practices | 91 | 24.4% |
+| skills-mcp | 43 | 11.5% |
+| prompting | 41 | 11.0% |
+| research | 45 | 12.1% |
+| industry | 28 | 7.5% |
+| management | 60 | 16.1% |
+| questionable | 23 | 6.2% |
+| general | 76 | 20.4% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-04-20 | Akshay | general | Post by Akshay (content not yet scraped) |
+| 2026-04-20 | Kenneth Auchenberg | general | Post by Kenneth Auchenberg (content not yet scraped) |
+| 2026-04-20 | 阿绎 AYi | general | Post by 阿绎 AYi (content not yet scraped) |
+| 2026-04-19 | Garry Tan | general | Post by Garry Tan (content not yet scraped) |
+| 2026-04-18 | Akshay | general | Post by Akshay (content not yet scraped) |
+| 2026-04-18 | Alex Ker | general | Post by Alex Ker (content not yet scraped) |
+| 2026-04-18 | Daniel Miessler | general | Post by Daniel Miessler (content not yet scraped) |
+| 2026-04-18 | Kevin Simback | general | Post by Kevin Simback (content not yet scraped) |
+| 2026-04-18 | PolyArb | general | Post by PolyArb (content not yet scraped) |
+| 2026-04-18 | Eric Hartford | general | Post by Eric Hartford (content not yet scraped) |
+| 2026-04-17 | Alter Ego | general | Post by Alter Ego (content not yet scraped) |
 | 2026-04-17 | 0xSero | general | Post by 0xSero (content not yet scraped) |
+| 2026-04-17 | Hamudi | general | Post by Hamudi (content not yet scraped) |
 | 2026-04-15 | Garry Tan | agent-design | X article: "Resolvers: The Routing Table for Intelligence" — argues re... |
 | 2026-04-15 | GitHub Projects Community | dev-practices | Promotes Graphify — a tool to turn any folder of code into a queryable... |
 | 2026-04-15 | Yoonho Lee | research | Released code for Meta-Harness — a method to autonomously improve LLM... |
@@ -60,18 +72,6 @@
 | 2026-04-14 | Vaishnavi | dev-practices | Vaishnavi covers Google's open-sourced Magika — an AI-powered file con... |
 | 2026-04-14 | Noisy | claude-code | Noisy describes a Google engineer who automated 80% of his work with C... |
 | 2026-04-13 | Garry Tan | prompting | Garry Tan adds 'Boil the ocean' to his SOUL.md: the marginal cost of c... |
-| 2026-04-13 | Defileo | prompting | Defileo promotes a 'prompt vault' going beyond the classic f/prompts.c... |
-| 2026-04-13 | Charly Wargnier | skills-mcp | Charly Wargnier covers Addy Osmani's (Google) new Agent Skills package... |
-| 2026-04-12 | Ahmad | agent-design | Ahmad shares his approach to running parallel coding agents: fan out f... |
-| 2026-04-12 | Garry Tan | agent-design | Garry Tan comments on Hermes agent's explicit self-improvement archite... |
-| 2026-04-12 | Nav Toor | agent-design | Nav Toor covers LLM Wiki v2 — an extension of Karpathy's original LLM... |
-| 2026-04-12 | Garry Tan | agent-design | Garry Tan argues memory should outlive the harness — memory is markdow... |
-| 2026-04-12 | Nick Spisak | claude-code | Nick Spisak explains Claude Code's new /ultraplan feature: 4 Opus agen... |
-| 2026-04-12 | Garry Tan | agent-design | Garry Tan announces GBrain's new guided integration recipes for OpenCl... |
-| 2026-04-11 | Nav Toor | research | Covers Kronos, an open-source foundation model for financial markets t... |
-| 2026-04-10 | Veeral Patel | agent-design | Quote-tweets Ramp Labs article on "Latent Briefing" — a KV cache compa... |
-| 2026-04-10 | Alpha Batcher | agent-design | Distills architectural principles for production AI agents by quoting... |
-| 2026-04-10 | Akshay | agent-design | Comparison of how Anthropic, OpenAI, CrewAI, and LangChain approach th... |
 
 ---
 ## Posts by Topic
@@ -1204,9 +1204,33 @@
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
 
-### General (68)
+### General (80)
+
+- [Akshay](https://x.com/akshay_pachaar/status/2046151867177308181) — 2026-04-20: Post by Akshay (content not yet scraped)
+
+- [Kenneth Auchenberg](https://x.com/auchenberg/status/2045940742678368570) — 2026-04-20: Post by Kenneth Auchenberg (content not yet scraped)
+
+- [阿绎 AYi](https://x.com/ayi_ainotes/status/2045874192155824616) — 2026-04-20: Post by 阿绎 AYi (content not yet scraped)
+
+- [Garry Tan](https://x.com/garrytan/status/2045427057656729985) — 2026-04-19: Post by Garry Tan (content not yet scraped)
+
+- [Akshay](https://x.com/akshay_pachaar/status/2045404494641733962) — 2026-04-18: Post by Akshay (content not yet scraped)
+
+- [Alex Ker](https://x.com/thealexker/status/2045203785304232162) — 2026-04-18: Post by Alex Ker (content not yet scraped)
+
+- [Daniel Miessler](https://x.com/danielmiessler/status/2045148852047827449) — 2026-04-18: Post by Daniel Miessler (content not yet scraped)
+
+- [Kevin Simback](https://x.com/ksimback/status/2045120939680038923) — 2026-04-18: Post by Kevin Simback (content not yet scraped)
+
+- [PolyArb](https://x.com/usepolyarb/status/2045109166599963026) — 2026-04-18: Post by PolyArb (content not yet scraped)
+
+- [Eric Hartford](https://x.com/quixiai/status/2044952124568527298) — 2026-04-18: Post by Eric Hartford (content not yet scraped)
+
+- [Alter Ego](https://x.com/alterego_eth/status/2045093809886020058) — 2026-04-17: Post by Alter Ego (content not yet scraped)
 
 - [0xSero](https://x.com/0xsero/status/2044879665001595263) — 2026-04-17: Post by 0xSero (content not yet scraped)
+
+- [Hamudi](https://x.com/hamudinaanaa/status/2044872907072164304) — 2026-04-17: Post by Hamudi (content not yet scraped)
 
 - [Erick](https://x.com/ericksky/status/2044225008419922270) — 2026-04-15: [Post unavailable — login wall or deleted]
 
@@ -1347,8 +1371,44 @@
 
 ### Apr 2026
 
+- **2026-04-20** | [Akshay](https://x.com/akshay_pachaar/status/2046151867177308181) | general
+  Post by Akshay (content not yet scraped)
+
+- **2026-04-20** | [Kenneth Auchenberg](https://x.com/auchenberg/status/2045940742678368570) | general
+  Post by Kenneth Auchenberg (content not yet scraped)
+
+- **2026-04-20** | [阿绎 AYi](https://x.com/ayi_ainotes/status/2045874192155824616) | general
+  Post by 阿绎 AYi (content not yet scraped)
+
+- **2026-04-19** | [Garry Tan](https://x.com/garrytan/status/2045427057656729985) | general
+  Post by Garry Tan (content not yet scraped)
+
+- **2026-04-18** | [Akshay](https://x.com/akshay_pachaar/status/2045404494641733962) | general
+  Post by Akshay (content not yet scraped)
+
+- **2026-04-18** | [Alex Ker](https://x.com/thealexker/status/2045203785304232162) | general
+  Post by Alex Ker (content not yet scraped)
+
+- **2026-04-18** | [Daniel Miessler](https://x.com/danielmiessler/status/2045148852047827449) | general
+  Post by Daniel Miessler (content not yet scraped)
+
+- **2026-04-18** | [Kevin Simback](https://x.com/ksimback/status/2045120939680038923) | general
+  Post by Kevin Simback (content not yet scraped)
+
+- **2026-04-18** | [PolyArb](https://x.com/usepolyarb/status/2045109166599963026) | general
+  Post by PolyArb (content not yet scraped)
+
+- **2026-04-18** | [Eric Hartford](https://x.com/quixiai/status/2044952124568527298) | general
+  Post by Eric Hartford (content not yet scraped)
+
+- **2026-04-17** | [Alter Ego](https://x.com/alterego_eth/status/2045093809886020058) | general
+  Post by Alter Ego (content not yet scraped)
+
 - **2026-04-17** | [0xSero](https://x.com/0xsero/status/2044879665001595263) | general
   Post by 0xSero (content not yet scraped)
+
+- **2026-04-17** | [Hamudi](https://x.com/hamudinaanaa/status/2044872907072164304) | general
+  Post by Hamudi (content not yet scraped)
 
 - **2026-04-15** | [Garry Tan](https://x.com/garrytan/status/2044479509874020852) | agent-design, skills-mcp
   X article: "Resolvers: The Routing Table for Intelligence" — argues resolvers (context-routing rules: when task X appears, load document Y first) are the most important but invisible component of agent systems. Follows up on "Thin Harness, Fat Skills" framework. 21K views.
