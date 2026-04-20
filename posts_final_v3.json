@@ -5,18 +5,22 @@
     "handle": "@akshay_pachaar",
     "subject": "Post by Akshay 🚀 on X",
     "url": "https://x.com/akshay_pachaar/status/2046151867177308181",
-    "summary": "Post by Akshay (content not yet scraped)",
+    "summary": "Summary of a Google DeepMind paper on 'AI Agent Traps' — first systematic framework for adversarial content engineered to hijack web-browsing agents. Six attack surfaces: (1) content injection (invisible CSS/HTML, steganography — 86% hijack in one study), (2) semantic manipulation via framing/priming, (3) cognitive state poisoning of RAG/long-term memory (>80% success with <0.1% poisoning), plus more. Training-time defenses can't fix an inference-time problem. References Strix (github.com/usestrix/strix) — open-source red-team agent, 24k stars, Apache 2.0 — for automated pentesting of web apps.",
     "topics": [
-      "general"
+      "agent-design",
+      "research",
+      "dev-practices"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team",
+      "leadership"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "29.5K",
     "notes": "",
-    "enriched": false
+    "enriched": true
   },
   {
     "date": "2026-04-20",
@@ -24,18 +28,19 @@
     "handle": "@auchenberg",
     "subject": "Post by Kenneth Auchenberg 🛠 on X",
     "url": "https://x.com/auchenberg/status/2045940742678368570",
-    "summary": "Post by Kenneth Auchenberg (content not yet scraped)",
+    "summary": "Short quote-tweet on Aparna Dhinakaran's article 'Sandboxes Are the Servers of the Harness Era' — Auchenberg frames swarms/multi-agent systems as 'harnesses managing harnesses.' The cited piece argues the harness is the application and the sandbox is the server (compute, filesystem, persistent state).",
     "topics": [
-      "general"
+      "agent-design"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "6,816",
     "notes": "",
-    "enriched": false
+    "enriched": true
   },
   {
     "date": "2026-04-20",
@@ -43,18 +48,21 @@
     "handle": "@ayi_ainotes",
     "subject": "Post by 阿绎 AYi on X",
     "url": "https://x.com/ayi_ainotes/status/2045874192155824616",
-    "summary": "Post by 阿绎 AYi (content not yet scraped)",
+    "summary": "Thread (translated from Chinese) hyping an open-source project 'OpenMythos' by a 22-year-old claimed to reverse-engineer Anthropic's Claude as a 'recurrent deep Transformer' — same weights loop through 16 forward passes, with thinking happening silently in hidden space instead of visible CoT tokens. Claims a 770B-param recurrent model matches a 1.3T plain model. Speculative architecture claim; treat as unverified.",
     "topics": [
-      "general"
+      "research",
+      "claude-code",
+      "questionable"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "410.6K",
     "notes": "",
-    "enriched": false
+    "enriched": true
   },
   {
     "date": "2026-04-19",
@@ -62,18 +70,21 @@
     "handle": "@garrytan",
     "subject": "Post by Garry Tan on X",
     "url": "https://x.com/garrytan/status/2045427057656729985",
-    "summary": "Post by Garry Tan (content not yet scraped)",
+    "summary": "Launch of GBrain v0.11 with 'Minions' — a BullMQ-based queue/jobs system running on GBrain's Postgres/PGLite, built to replace OpenClaw's subagents that kept timing out. Tan claims Minions are 10x faster and more reliable for OpenClaw/GBrain agent setups.",
     "topics": [
-      "general"
+      "agent-design",
+      "dev-practices",
+      "industry"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "226.4K",
     "notes": "",
-    "enriched": false
+    "enriched": true
   },
   {
     "date": "2026-04-18",
@@ -81,18 +92,21 @@
     "handle": "@akshay_pachaar",
     "subject": "Post by Akshay 🚀 on X",
     "url": "https://x.com/akshay_pachaar/status/2045404494641733962",
-    "summary": "Post by Akshay (content not yet scraped)",
+    "summary": "Summary of UCL paper 'Dive into Claude Code' (arXiv:2604.14228) reverse-engineering the leaked Claude Code source. Only 1.6% of the codebase is AI decision logic; 98.4% is operational infrastructure — permission gates, tool routing, context compaction, recovery logic, session persistence. Core loop is a simple while-true (call model, run tools, repeat). Permission system has 7 modes plus an ML classifier. Contrasts with LangGraph's explicit state machines and Devin's heavy planners — Claude Code invests engineering effort in the harness while giving the model maximum decision latitude. Punchline: the harness is the differentiator, not the model.",
     "topics": [
-      "general"
+      "agent-design",
+      "claude-code",
+      "research"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "157.1K",
     "notes": "",
-    "enriched": false
+    "enriched": true
   },
   {
     "date": "2026-04-18",
@@ -100,18 +114,21 @@
     "handle": "@thealexker",
     "subject": "Post by Alex Ker 🔭 on X",
     "url": "https://x.com/thealexker/status/2045203785304232162",
-    "summary": "Post by Alex Ker (content not yet scraped)",
+    "summary": "Guide on optimizing your agent harness. Three levers: (1) keep config files lean enough for the model to reason over, (2) structure prompts with the R.P.I. framework so the model approaches problems like a staff engineer, (3) use subagents to keep the main context window clean. Ker contributes to Roo Code, DeepAgent CLI, and HumanLayer. Core argument: harnesses that compound output vs. harnesses that compound mistakes — judgment lives at the harness layer.",
     "topics": [
-      "general"
+      "agent-design",
+      "prompting",
+      "dev-practices"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "now",
     "sourceType": "tweet",
-    "views": "",
+    "views": "100K",
     "notes": "",
-    "enriched": false
+    "enriched": true
   },
   {
     "date": "2026-04-18",
@@ -119,18 +136,20 @@
     "handle": "@danielmiessler",
     "subject": "Post by ᴅᴀɴɪᴇʟ ᴍɪᴇssʟᴇʀ 🛡️ on X",
     "url": "https://x.com/danielmiessler/status/2045148852047827449",
-    "summary": "Post by Daniel Miessler (content not yet scraped)",
+    "summary": "Miessler endorses 'Interceptor' by @ronaldeddings as the best Browser Control System he's used for agents (out of 100+ tools). He says it's added the most value to his PAI (Personal AI) harness recently. Short recommendation tweet — no link in the post body but the tool is attributed to Ronald Eddings.",
     "topics": [
-      "general"
+      "agent-design",
+      "claude-code"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "now",
     "sourceType": "tweet",
-    "views": "",
+    "views": "16.6K",
     "notes": "",
-    "enriched": false
+    "enriched": true
   },
   {
     "date": "2026-04-18",
@@ -138,18 +157,21 @@
     "handle": "@ksimback",
     "subject": "Post by Kevin Simback 🍷 on X",
     "url": "https://x.com/ksimback/status/2045120939680038923",
-    "summary": "Post by Kevin Simback (content not yet scraped)",
+    "summary": "Self-quote-tweet pointing back to Simback's Apr 16 article 'The AI Agent Moat Is Real, but Narrower Than You Think.' Thesis: moats in the agent space aren't in the harness itself. Simback has been looking at where to invest and build in agents over four months and is narrowing his view of where defensibility actually lives.",
     "topics": [
-      "general"
+      "agent-design",
+      "industry",
+      "management"
     ],
     "audience": [
-      "me"
+      "me",
+      "leadership"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "424",
     "notes": "",
-    "enriched": false
+    "enriched": true
   },
   {
     "date": "2026-04-18",
@@ -157,18 +179,19 @@
     "handle": "@usepolyarb",
     "subject": "Post by PolyArb on X",
     "url": "https://x.com/usepolyarb/status/2045109166599963026",
-    "summary": "Post by PolyArb (content not yet scraped)",
+    "summary": "Prediction-markets arbitrage infrastructure launch — not AI-focused. Six years of derivatives execution (FX arb → crypto perps → prop trading); now targeting prediction markets ($44B in 2025, projected $1T by 2027). Technical breakdown of multi-venue arb, unified oracle, and execution engine. Included because it landed in Jeremy's link stream.",
     "topics": [
+      "industry",
       "general"
     ],
     "audience": [
       "me"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "219K",
     "notes": "",
-    "enriched": false
+    "enriched": true
   },
   {
     "date": "2026-04-18",
@@ -176,18 +199,22 @@
     "handle": "@quixiai",
     "subject": "Post by Eric Hartford on X",
     "url": "https://x.com/quixiai/status/2044952124568527298",
-    "summary": "Post by Eric Hartford (content not yet scraped)",
+    "summary": "Response to Anthropic's Project Glasswing / Claude Mythos Preview announcement, where Anthropic claimed the model was too dangerous to release after finding thousands of zero-days (27-year-old OpenBSD bug, 16-year-old FFmpeg bug). Hartford argues the real innovation is the workflow, not the model: rank every file by attack surface, fan out hundreds of parallel agents each scoped to one file, use crash oracles (AddressSanitizer, UBSan) as ground truth. He open-sourced 'Clearwing' (MIT licensed) at github.com/Lazarus-AI/clearwing — Qwen3.5 finetuned to Western alignment — so defenders don't have to wait for access to a gated model.",
     "topics": [
-      "general"
+      "research",
+      "agent-design",
+      "industry"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team",
+      "leadership"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
-    "enriched": false
+    "enriched": true
   },
   {
     "date": "2026-04-17",
@@ -195,18 +222,19 @@
     "handle": "@alterego_eth",
     "subject": "Post by Alter Ego on X",
     "url": "https://x.com/alterego_eth/status/2045093809886020058",
-    "summary": "Post by Alter Ego (content not yet scraped)",
+    "summary": "Promo for Hermes Agent from Nous Research (team behind YaRN, Nomos, Psyche) — open, self-hosted agent pitched as a new standard for AI trading on Polymarket. Features: self-learns by writing itself skills after complex tasks, persistent memory (MEMORY.md + USER.md + SQLite), runs 24/7 on a VPS with Telegram alerts, closed learning loop that analyzes and improves every ~15 tool calls. Contrasted with 'static' OpenClaw. Example given: a weather-bot turned EV+Kelly Criterion trader scanning 20 cities.",
     "topics": [
-      "general"
+      "agent-design",
+      "skills-mcp"
     ],
     "audience": [
       "me"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
-    "enriched": false
+    "enriched": true
   },
   {
     "date": "2026-04-17",
@@ -233,18 +261,21 @@
     "handle": "@hamudinaanaa",
     "subject": "Post by Hamudi on X",
     "url": "https://x.com/hamudinaanaa/status/2044872907072164304",
-    "summary": "Post by Hamudi (content not yet scraped)",
+    "summary": "Quote-tweet on Sequoia's $1T 'sell work, not software' thesis. Hamudi announces a paper on measuring economic outcomes from AI agents — 'Outcome Primitives.' Tracked 1,300 agents over 21 days generating $32M of economic value: jobs secured, $200k grants won, e-commerce shops shipped. Framing: copilots compete on software margins (losing to labs), outcome-delivery products compete on services margins (transforming industries).",
     "topics": [
-      "general"
+      "industry",
+      "management",
+      "agent-design"
     ],
     "audience": [
-      "me"
+      "me",
+      "leadership"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
-    "enriched": false
+    "enriched": true
   },
   {
     "date": "2026-04-15",
