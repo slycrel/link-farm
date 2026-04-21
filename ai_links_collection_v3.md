@@ -1,27 +1,38 @@
 # AI Links Collection
-**Total Posts**: 373  
-**Date Range**: 2024-06-11 – 2026-04-20  
-**Enriched**: 372/373 (99%)
+**Total Posts**: 384  
+**Date Range**: 2024-06-11 – 2026-04-21  
+**Enriched**: 384/384 (100%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 158 | 42.4% |
-| claude-code | 79 | 21.2% |
-| dev-practices | 94 | 25.2% |
-| skills-mcp | 44 | 11.8% |
-| prompting | 42 | 11.3% |
-| research | 49 | 13.1% |
-| industry | 33 | 8.8% |
-| management | 62 | 16.6% |
-| questionable | 24 | 6.4% |
-| general | 65 | 17.4% |
+| agent-design | 166 | 43.2% |
+| claude-code | 81 | 21.1% |
+| dev-practices | 98 | 25.5% |
+| skills-mcp | 46 | 12.0% |
+| prompting | 45 | 11.7% |
+| research | 54 | 14.1% |
+| industry | 34 | 8.9% |
+| management | 64 | 16.7% |
+| questionable | 26 | 6.8% |
+| general | 64 | 16.7% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-04-21 | Shubham Saboo | agent-design | Shares agentic-stack — 'One brain, many harnesses. Portable .agent/ fo... |
+| 2026-04-21 | Tech with Mak | research | Summary of Meta's REFRAG paper: compresses retrieved RAG chunks into s... |
+| 2026-04-21 | Aakash Gupta | industry | Essay arguing Yann LeCun left Meta because Zuck wouldn't bet the compa... |
+| 2026-04-21 | Tom Dörr | agent-design | Recursive self-improving agent harness — a tool that lets an agent ite... |
+| 2026-04-21 | Sydney Runkle | agent-design | LangChain team piece on 'The runtime behind production deep agents' —... |
+| 2026-04-21 | Nav Toor | research | Intro to PoisonedRAG attack: researchers showed 5 malicious documents... |
+| 2026-04-21 | Simplifying AI | research | Summary of Microsoft's MEMENTO paper: instead of growing the KV cache... |
+| 2026-04-21 | Sigrid Jin | agent-design | Quote-tweet of Junghwan Na's writeup — Na got his GitHub banned after... |
+| 2026-04-21 | Raymond Weitekamp | research | Thoughtful long-form post on Recursive Language Models (RLMs) — 'the n... |
+| 2026-04-21 | Ihtesham Ali | prompting | Writeup of George Pólya's 1945 book 'How to Solve It' — the four-step... |
+| 2026-04-21 | Vox | claude-code | The #1 GitHub trending repo this week (44,465 stars) is a CLAUDE.md fi... |
 | 2026-04-20 | Akshay | agent-design | Summary of a Google DeepMind paper on 'AI Agent Traps' — first systema... |
 | 2026-04-20 | Kenneth Auchenberg | agent-design | Short quote-tweet on Aparna Dhinakaran's article 'Sandboxes Are the Se... |
 | 2026-04-20 | 阿绎 AYi | research | Thread (translated from Chinese) hyping an open-source project 'OpenMy... |
@@ -33,7 +44,7 @@
 | 2026-04-18 | PolyArb | industry | Prediction-markets arbitrage infrastructure launch — not AI-focused. S... |
 | 2026-04-18 | Eric Hartford | research | Response to Anthropic's Project Glasswing / Claude Mythos Preview anno... |
 | 2026-04-17 | Alter Ego | agent-design | Promo for Hermes Agent from Nous Research (team behind YaRN, Nomos, Ps... |
-| 2026-04-17 | 0xSero | general | Post by 0xSero (content not yet scraped) |
+| 2026-04-17 | 0xSero | agent-design | 0xSero (quote-tweeting Sarah Chieng's article 'Single-agent AI coding... |
 | 2026-04-17 | Hamudi | industry | Quote-tweet on Sequoia's $1T 'sell work, not software' thesis. Hamudi... |
 | 2026-04-15 | Garry Tan | agent-design | X article: "Resolvers: The Routing Table for Intelligence" — argues re... |
 | 2026-04-15 | GitHub Projects Community | dev-practices | Promotes Graphify — a tool to turn any folder of code into a queryable... |
@@ -61,22 +72,25 @@
 | 2026-04-14 | Alex Vacca | management | Alex Vacca highlights a 4-layer sales funnel architecture that produce... |
 | 2026-04-14 | am.will | agent-design | am.will recommends NVIDIA's free API credits for testing open-source m... |
 | 2026-04-14 | Phil Chen | agent-design | Phil Chen describes building Filbert (phil-bot), a background coding a... |
-| 2026-04-14 | How To AI | research | How To AI covers a math paper proving every elementary function (sin,... |
-| 2026-04-14 | Kevin Simback | agent-design | Kevin Simback shares his 'Second Brain' setup using a modified Karpath... |
-| 2026-04-14 | Akshay | agent-design | Akshay provides a first-principles walkthrough of agent memory: from P... |
-| 2026-04-14 | Alex Finn | prompting | Alex Finn shares a SOUL.md prompt philosophy inspired by Garry Tan's p... |
-| 2026-04-14 | Philipp Schmid | skills-mcp | Philipp Schmid shares 8 practical tips for writing better agent skills... |
-| 2026-04-14 | North@CreaoAI | management | North from CreaoAI shares their CTO Peter Pang's article on AI-First d... |
-| 2026-04-14 | Tech with Mak | claude-code | Tech with Mak highlights three Karpathy observations about LLM coding... |
-| 2026-04-14 | Lorenzo Rondan | agent-design | Lorenzo Rondan highlights a diagram by Viv (@Vtrivedy10) on agent harn... |
-| 2026-04-14 | Vaishnavi | dev-practices | Vaishnavi covers Google's open-sourced Magika — an AI-powered file con... |
-| 2026-04-14 | Noisy | claude-code | Noisy describes a Google engineer who automated 80% of his work with C... |
-| 2026-04-13 | Garry Tan | prompting | Garry Tan adds 'Boil the ocean' to his SOUL.md: the marginal cost of c... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (158)
+### Agent Design (166)
+
+- [Shubham Saboo](https://x.com/saboo_shubham_/status/2046473615118672325) — 2026-04-21: Shares agentic-stack — 'One brain, many harnesses. Portable .agent/ folder (memory + skills)' — a pattern for sharing a single memory/skill store across multiple agent harnesses. Repo: github.com/codejunkie99/agentic-stack.
+
+- [Tech with Mak](https://x.com/technmak/status/2046414820241760620) — 2026-04-21: Summary of Meta's REFRAG paper: compresses retrieved RAG chunks into single embeddings (16,384 tokens → 1,024 chunk embeddings), delivering 30.85x faster time-to-first-token, zero perplexity loss, 16x context extension (4K → 64K), and 3.75x better than prior SOTA. Exploits sparse attention patterns in RAG contexts via precomputable embeddings and RL-based compression policy.
+
+- [Tom Dörr](https://x.com/tom_doerr/status/2046369616411185635) — 2026-04-21: Recursive self-improving agent harness — a tool that lets an agent iterate on its own harness/context. Repo: github.com/greyhaven-ai/autocontext. Short announcement-style post.
+
+- [Sydney Runkle](https://x.com/sydneyrunkle/status/2046277232537256002) — 2026-04-21: LangChain team piece on 'The runtime behind production deep agents' — distinguishing the harness (prompts, tools, skills, model loop) from the runtime (durable execution, memory, multi-tenancy, observability). Walks through production requirements for agents and how LangSmith Deployment + Agent Server package those capabilities. Reference architecture for shipping agents in production.
+
+- [Sigrid Jin](https://x.com/realsigridjin/status/2046266374948069387) — 2026-04-21: Quote-tweet of Junghwan Na's writeup — Na got his GitHub banned after pushing 500+ commits across 100+ open-source repos in 72 hours using an AI harness. Sigrid pulls out the two highest-leverage principles from Na's method: (1) reproduce the bug locally or drop it, (2) read merge history instead of CONTRIBUTING.md. Jeremy flagged 'worth extracting a skill' — these are skill-worthy contribution-harness patterns.
+
+- [Raymond Weitekamp](https://x.com/raw_works/status/2046240194999755153) — 2026-04-21: Thoughtful long-form post on Recursive Language Models (RLMs) — 'the new reasoning models.' RLMs collapse reasoning and tool use into one abstraction: the model treats its own prompt as an environment it can inspect, slice, and recursively query via a REPL. Input size is no longer a hard ceiling; results show processing up to 2 orders of magnitude beyond base model's context, outperforming long-context scaffolds on four long-context tasks.
+
+- [Ihtesham Ali](https://x.com/ihtesham2005/status/2046197374855582157) — 2026-04-21: Writeup of George Pólya's 1945 book 'How to Solve It' — the four-step problem-solving framework (understand, plan, execute, look back). Central heuristic: if you can't solve the proposed problem, solve a simpler related one first. Jeremy's note 'important for planner?' — relevant for AI agent planning/decomposition patterns.
 
 - [Akshay](https://x.com/akshay_pachaar/status/2046151867177308181) — 2026-04-20: Summary of a Google DeepMind paper on 'AI Agent Traps' — first systematic framework for adversarial content engineered to hijack web-browsing agents. Six attack surfaces: (1) content injection (invisible CSS/HTML, steganography — 86% hijack in one study), (2) semantic manipulation via framing/priming, (3) cognitive state poisoning of RAG/long-term memory (>80% success with <0.1% poisoning), plus more. Training-time defenses can't fix an inference-time problem. References Strix (github.com/usestrix/strix) — open-source red-team agent, 24k stars, Apache 2.0 — for automated pentesting of web apps.
 
@@ -95,6 +109,8 @@
 - [Eric Hartford](https://x.com/quixiai/status/2044952124568527298) — 2026-04-18: Response to Anthropic's Project Glasswing / Claude Mythos Preview announcement, where Anthropic claimed the model was too dangerous to release after finding thousands of zero-days (27-year-old OpenBSD bug, 16-year-old FFmpeg bug). Hartford argues the real innovation is the workflow, not the model: rank every file by attack surface, fan out hundreds of parallel agents each scoped to one file, use crash oracles (AddressSanitizer, UBSan) as ground truth. He open-sourced 'Clearwing' (MIT licensed) at github.com/Lazarus-AI/clearwing — Qwen3.5 finetuned to Western alignment — so defenders don't have to wait for access to a gated model.
 
 - [Alter Ego](https://x.com/alterego_eth/status/2045093809886020058) — 2026-04-17: Promo for Hermes Agent from Nous Research (team behind YaRN, Nomos, Psyche) — open, self-hosted agent pitched as a new standard for AI trading on Polymarket. Features: self-learns by writing itself skills after complex tasks, persistent memory (MEMORY.md + USER.md + SQLite), runs 24/7 on a VPS with Telegram alerts, closed learning loop that analyzes and improves every ~15 tool calls. Contrasted with 'static' OpenClaw. Example given: a weather-bot turned EV+Kelly Criterion trader scanning 20 cities.
+
+- [0xSero](https://x.com/0xsero/status/2044879665001595263) — 2026-04-17: 0xSero (quote-tweeting Sarah Chieng's article 'Single-agent AI coding is a nightmare for engineers') says he's gone 180 on multi-agents/subagents after analyzing hundreds of AI coding agent sessions — they actually help a lot. Practitioner's change-of-mind about orchestration.
 
 - [Hamudi](https://x.com/hamudinaanaa/status/2044872907072164304) — 2026-04-17: Quote-tweet on Sequoia's $1T 'sell work, not software' thesis. Hamudi announces a paper on measuring economic outcomes from AI agents — 'Outcome Primitives.' Tracked 1,300 agents over 21 days generating $32M of economic value: jobs secured, $200k grants won, e-commerce shops shipped. Framing: copilots compete on software margins (losing to labs), outcome-delivery products compete on services margins (transforming industries).
 
@@ -394,13 +410,17 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Claude Code (79)
+### Claude Code (81)
+
+- [Vox](https://x.com/voxyz_ai/status/2045899539526148193) — 2026-04-21: The #1 GitHub trending repo this week (44,465 stars) is a CLAUDE.md file distilling Andrej Karpathy's LLM coding pitfalls into 4 principles: (1) think before coding — ask when unsure, (2) simplicity first — minimum code, (3) surgical edits — only touch what's required, (4) goal-driven — translate fuzzy instructions into verifiable targets. Directly actionable as a CLAUDE.md system prompt.
 
 - [阿绎 AYi](https://x.com/ayi_ainotes/status/2045874192155824616) — 2026-04-20: Thread (translated from Chinese) hyping an open-source project 'OpenMythos' by a 22-year-old claimed to reverse-engineer Anthropic's Claude as a 'recurrent deep Transformer' — same weights loop through 16 forward passes, with thinking happening silently in hidden space instead of visible CoT tokens. Claims a 770B-param recurrent model matches a 1.3T plain model. Speculative architecture claim; treat as unverified.
 
 - [Akshay](https://x.com/akshay_pachaar/status/2045404494641733962) — 2026-04-18: Summary of UCL paper 'Dive into Claude Code' (arXiv:2604.14228) reverse-engineering the leaked Claude Code source. Only 1.6% of the codebase is AI decision logic; 98.4% is operational infrastructure — permission gates, tool routing, context compaction, recovery logic, session persistence. Core loop is a simple while-true (call model, run tools, repeat). Permission system has 7 modes plus an ML classifier. Contrasts with LangGraph's explicit state machines and Devin's heavy planners — Claude Code invests engineering effort in the harness while giving the model maximum decision latitude. Punchline: the harness is the differentiator, not the model.
 
 - [Daniel Miessler](https://x.com/danielmiessler/status/2045148852047827449) — 2026-04-18: Miessler endorses 'Interceptor' by @ronaldeddings as the best Browser Control System he's used for agents (out of 100+ tools). He says it's added the most value to his PAI (Personal AI) harness recently. Short recommendation tweet — no link in the post body but the tool is attributed to Ronald Eddings.
+
+- [0xSero](https://x.com/0xsero/status/2044879665001595263) — 2026-04-17: 0xSero (quote-tweeting Sarah Chieng's article 'Single-agent AI coding is a nightmare for engineers') says he's gone 180 on multi-agents/subagents after analyzing hundreds of AI coding agent sessions — they actually help a lot. Practitioner's change-of-mind about orchestration.
 
 - [Millie Marconi](https://x.com/milliemarconnni/status/2044358003714097601) — 2026-04-15: Uses Claude as a full inversion engine running Charlie Munger's method — mapping every path to failure to make the path to success obvious by elimination. Shares 5 prompts for applying systematic inversion to any problem.
 
@@ -554,7 +574,15 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (94)
+### Dev Practices (98)
+
+- [Sydney Runkle](https://x.com/sydneyrunkle/status/2046277232537256002) — 2026-04-21: LangChain team piece on 'The runtime behind production deep agents' — distinguishing the harness (prompts, tools, skills, model loop) from the runtime (durable execution, memory, multi-tenancy, observability). Walks through production requirements for agents and how LangSmith Deployment + Agent Server package those capabilities. Reference architecture for shipping agents in production.
+
+- [Nav Toor](https://x.com/heynavtoor/status/2046276160930414976) — 2026-04-21: Intro to PoisonedRAG attack: researchers showed 5 malicious documents planted in a 2.6M-document corpus can hijack an LLM's answer 97% of the time. Attacker never touches the model or retriever — just writes documents. Important RAG security consideration.
+
+- [Sigrid Jin](https://x.com/realsigridjin/status/2046266374948069387) — 2026-04-21: Quote-tweet of Junghwan Na's writeup — Na got his GitHub banned after pushing 500+ commits across 100+ open-source repos in 72 hours using an AI harness. Sigrid pulls out the two highest-leverage principles from Na's method: (1) reproduce the bug locally or drop it, (2) read merge history instead of CONTRIBUTING.md. Jeremy flagged 'worth extracting a skill' — these are skill-worthy contribution-harness patterns.
+
+- [Vox](https://x.com/voxyz_ai/status/2045899539526148193) — 2026-04-21: The #1 GitHub trending repo this week (44,465 stars) is a CLAUDE.md file distilling Andrej Karpathy's LLM coding pitfalls into 4 principles: (1) think before coding — ask when unsure, (2) simplicity first — minimum code, (3) surgical edits — only touch what's required, (4) goal-driven — translate fuzzy instructions into verifiable targets. Directly actionable as a CLAUDE.md system prompt.
 
 - [Akshay](https://x.com/akshay_pachaar/status/2046151867177308181) — 2026-04-20: Summary of a Google DeepMind paper on 'AI Agent Traps' — first systematic framework for adversarial content engineered to hijack web-browsing agents. Six attack surfaces: (1) content injection (invisible CSS/HTML, steganography — 86% hijack in one study), (2) semantic manipulation via framing/priming, (3) cognitive state poisoning of RAG/long-term memory (>80% success with <0.1% poisoning), plus more. Training-time defenses can't fix an inference-time problem. References Strix (github.com/usestrix/strix) — open-source red-team agent, 24k stars, Apache 2.0 — for automated pentesting of web apps.
 
@@ -744,7 +772,11 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (44)
+### Skills & MCP (46)
+
+- [Shubham Saboo](https://x.com/saboo_shubham_/status/2046473615118672325) — 2026-04-21: Shares agentic-stack — 'One brain, many harnesses. Portable .agent/ folder (memory + skills)' — a pattern for sharing a single memory/skill store across multiple agent harnesses. Repo: github.com/codejunkie99/agentic-stack.
+
+- [Sigrid Jin](https://x.com/realsigridjin/status/2046266374948069387) — 2026-04-21: Quote-tweet of Junghwan Na's writeup — Na got his GitHub banned after pushing 500+ commits across 100+ open-source repos in 72 hours using an AI harness. Sigrid pulls out the two highest-leverage principles from Na's method: (1) reproduce the bug locally or drop it, (2) read merge history instead of CONTRIBUTING.md. Jeremy flagged 'worth extracting a skill' — these are skill-worthy contribution-harness patterns.
 
 - [Alter Ego](https://x.com/alterego_eth/status/2045093809886020058) — 2026-04-17: Promo for Hermes Agent from Nous Research (team behind YaRN, Nomos, Psyche) — open, self-hosted agent pitched as a new standard for AI trading on Polymarket. Features: self-learns by writing itself skills after complex tasks, persistent memory (MEMORY.md + USER.md + SQLite), runs 24/7 on a VPS with Telegram alerts, closed learning loop that analyzes and improves every ~15 tool calls. Contrasted with 'static' OpenClaw. Example given: a weather-bot turned EV+Kelly Criterion trader scanning 20 cities.
 
@@ -834,7 +866,13 @@
 
 - [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Anthropic released a frontend-design plugin for Claude Code — demo shows Claude creating a music player app. Install via /plugin marketplace add anthropics/claude-code and /plugin install frontend-design@claude-code-plugins.
 
-### Prompting (42)
+### Prompting (45)
+
+- [Raymond Weitekamp](https://x.com/raw_works/status/2046240194999755153) — 2026-04-21: Thoughtful long-form post on Recursive Language Models (RLMs) — 'the new reasoning models.' RLMs collapse reasoning and tool use into one abstraction: the model treats its own prompt as an environment it can inspect, slice, and recursively query via a REPL. Input size is no longer a hard ceiling; results show processing up to 2 orders of magnitude beyond base model's context, outperforming long-context scaffolds on four long-context tasks.
+
+- [Ihtesham Ali](https://x.com/ihtesham2005/status/2046197374855582157) — 2026-04-21: Writeup of George Pólya's 1945 book 'How to Solve It' — the four-step problem-solving framework (understand, plan, execute, look back). Central heuristic: if you can't solve the proposed problem, solve a simpler related one first. Jeremy's note 'important for planner?' — relevant for AI agent planning/decomposition patterns.
+
+- [Vox](https://x.com/voxyz_ai/status/2045899539526148193) — 2026-04-21: The #1 GitHub trending repo this week (44,465 stars) is a CLAUDE.md file distilling Andrej Karpathy's LLM coding pitfalls into 4 principles: (1) think before coding — ask when unsure, (2) simplicity first — minimum code, (3) surgical edits — only touch what's required, (4) goal-driven — translate fuzzy instructions into verifiable targets. Directly actionable as a CLAUDE.md system prompt.
 
 - [Alex Ker](https://x.com/thealexker/status/2045203785304232162) — 2026-04-18: Guide on optimizing your agent harness. Three levers: (1) keep config files lean enough for the model to reason over, (2) structure prompts with the R.P.I. framework so the model approaches problems like a staff engineer, (3) use subagents to keep the main context window clean. Ker contributes to Roo Code, DeepAgent CLI, and HumanLayer. Core argument: harnesses that compound output vs. harnesses that compound mistakes — judgment lives at the harness layer.
 
@@ -920,7 +958,17 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
 
-### Research (49)
+### Research (54)
+
+- [Tech with Mak](https://x.com/technmak/status/2046414820241760620) — 2026-04-21: Summary of Meta's REFRAG paper: compresses retrieved RAG chunks into single embeddings (16,384 tokens → 1,024 chunk embeddings), delivering 30.85x faster time-to-first-token, zero perplexity loss, 16x context extension (4K → 64K), and 3.75x better than prior SOTA. Exploits sparse attention patterns in RAG contexts via precomputable embeddings and RL-based compression policy.
+
+- [Aakash Gupta](https://x.com/aakashgupta/status/2046371351016161745) — 2026-04-21: Essay arguing Yann LeCun left Meta because Zuck wouldn't bet the company on JEPA, then his group shipped the first end-to-end JEPA trained from raw pixels — 15M parameters, single GPU, a few hours. Frames it as a Xerox PARC pattern: Meta had the architecture, dissolved the robotics team, and let the breakthrough walk out the door while humanoid robotics competitors (Figure AI, Tesla Optimus, World Labs) burn capital on expensive foundation-model pipelines. Jeremy flagged 'feels like correspondence' (thoughtful essay style).
+
+- [Nav Toor](https://x.com/heynavtoor/status/2046276160930414976) — 2026-04-21: Intro to PoisonedRAG attack: researchers showed 5 malicious documents planted in a 2.6M-document corpus can hijack an LLM's answer 97% of the time. Attacker never touches the model or retriever — just writes documents. Important RAG security consideration.
+
+- [Simplifying AI](https://x.com/simplifyinai/status/2046271932035645599) — 2026-04-21: Summary of Microsoft's MEMENTO paper: instead of growing the KV cache to fit long reasoning chains, train the model to break reasoning into blocks and emit dense compressed 'memento' summaries between them, then drop the raw tokens. Framed as 'the secret isn't remembering everything — it's knowing what to forget.' Engagement-farming tone but real underlying paper.
+
+- [Raymond Weitekamp](https://x.com/raw_works/status/2046240194999755153) — 2026-04-21: Thoughtful long-form post on Recursive Language Models (RLMs) — 'the new reasoning models.' RLMs collapse reasoning and tool use into one abstraction: the model treats its own prompt as an environment it can inspect, slice, and recursively query via a REPL. Input size is no longer a hard ceiling; results show processing up to 2 orders of magnitude beyond base model's context, outperforming long-context scaffolds on four long-context tasks.
 
 - [Akshay](https://x.com/akshay_pachaar/status/2046151867177308181) — 2026-04-20: Summary of a Google DeepMind paper on 'AI Agent Traps' — first systematic framework for adversarial content engineered to hijack web-browsing agents. Six attack surfaces: (1) content injection (invisible CSS/HTML, steganography — 86% hijack in one study), (2) semantic manipulation via framing/priming, (3) cognitive state poisoning of RAG/long-term memory (>80% success with <0.1% poisoning), plus more. Training-time defenses can't fix an inference-time problem. References Strix (github.com/usestrix/strix) — open-source red-team agent, 24k stars, Apache 2.0 — for automated pentesting of web apps.
 
@@ -1020,7 +1068,9 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: 15-part thread explaining the 'stunning, simple explanation behind matrix multiplication' — breaks down the most crucial idea behind modern machine learning. 1M views.
 
-### Industry (33)
+### Industry (34)
+
+- [Aakash Gupta](https://x.com/aakashgupta/status/2046371351016161745) — 2026-04-21: Essay arguing Yann LeCun left Meta because Zuck wouldn't bet the company on JEPA, then his group shipped the first end-to-end JEPA trained from raw pixels — 15M parameters, single GPU, a few hours. Frames it as a Xerox PARC pattern: Meta had the architecture, dissolved the robotics team, and let the breakthrough walk out the door while humanoid robotics competitors (Figure AI, Tesla Optimus, World Labs) burn capital on expensive foundation-model pipelines. Jeremy flagged 'feels like correspondence' (thoughtful essay style).
 
 - [Garry Tan](https://x.com/garrytan/status/2045427057656729985) — 2026-04-19: Launch of GBrain v0.11 with 'Minions' — a BullMQ-based queue/jobs system running on GBrain's Postgres/PGLite, built to replace OpenClaw's subagents that kept timing out. Tan claims Minions are 10x faster and more reliable for OpenClaw/GBrain agent setups.
 
@@ -1088,9 +1138,13 @@
 
 - [Dante O. Cuales](https://x.com/danteocualesjr/status/1957204427909321027) — 2025-08-18: Reply to a thread about AI engineering being easy to learn — argues the 'intimidation factor is mostly artificial' since most AI engineering is API orchestration, prompt optimization, and data pipeline work. The hard parts are already abstracted away.
 
-### Management (62)
+### Management (64)
+
+- [Ihtesham Ali](https://x.com/ihtesham2005/status/2046197374855582157) — 2026-04-21: Writeup of George Pólya's 1945 book 'How to Solve It' — the four-step problem-solving framework (understand, plan, execute, look back). Central heuristic: if you can't solve the proposed problem, solve a simpler related one first. Jeremy's note 'important for planner?' — relevant for AI agent planning/decomposition patterns.
 
 - [Kevin Simback](https://x.com/ksimback/status/2045120939680038923) — 2026-04-18: Self-quote-tweet pointing back to Simback's Apr 16 article 'The AI Agent Moat Is Real, but Narrower Than You Think.' Thesis: moats in the agent space aren't in the harness itself. Simback has been looking at where to invest and build in agents over four months and is narrowing his view of where defensibility actually lives.
+
+- [0xSero](https://x.com/0xsero/status/2044879665001595263) — 2026-04-17: 0xSero (quote-tweeting Sarah Chieng's article 'Single-agent AI coding is a nightmare for engineers') says he's gone 180 on multi-agents/subagents after analyzing hundreds of AI coding agent sessions — they actually help a lot. Practitioner's change-of-mind about orchestration.
 
 - [Hamudi](https://x.com/hamudinaanaa/status/2044872907072164304) — 2026-04-17: Quote-tweet on Sequoia's $1T 'sell work, not software' thesis. Hamudi announces a paper on measuring economic outcomes from AI agents — 'Outcome Primitives.' Tracked 1,300 agents over 21 days generating $32M of economic value: jobs secured, $200k grants won, e-commerce shops shipped. Framing: copilots compete on software margins (losing to labs), outcome-delivery products compete on services margins (transforming industries).
 
@@ -1214,7 +1268,11 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
 
-### Questionable (24)
+### Questionable (26)
+
+- [Tech with Mak](https://x.com/technmak/status/2046414820241760620) — 2026-04-21: Summary of Meta's REFRAG paper: compresses retrieved RAG chunks into single embeddings (16,384 tokens → 1,024 chunk embeddings), delivering 30.85x faster time-to-first-token, zero perplexity loss, 16x context extension (4K → 64K), and 3.75x better than prior SOTA. Exploits sparse attention patterns in RAG contexts via precomputable embeddings and RL-based compression policy.
+
+- [Simplifying AI](https://x.com/simplifyinai/status/2046271932035645599) — 2026-04-21: Summary of Microsoft's MEMENTO paper: instead of growing the KV cache to fit long reasoning chains, train the model to break reasoning into blocks and emit dense compressed 'memento' summaries between them, then drop the raw tokens. Framed as 'the secret isn't remembering everything — it's knowing what to forget.' Engagement-farming tone but real underlying paper.
 
 - [阿绎 AYi](https://x.com/ayi_ainotes/status/2045874192155824616) — 2026-04-20: Thread (translated from Chinese) hyping an open-source project 'OpenMythos' by a 22-year-old claimed to reverse-engineer Anthropic's Claude as a 'recurrent deep Transformer' — same weights loop through 16 forward passes, with thinking happening silently in hidden space instead of visible CoT tokens. Claims a 770B-param recurrent model matches a 1.3T plain model. Speculative architecture claim; treat as unverified.
 
@@ -1264,11 +1322,9 @@
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
 
-### General (69)
+### General (68)
 
 - [PolyArb](https://x.com/usepolyarb/status/2045109166599963026) — 2026-04-18: Prediction-markets arbitrage infrastructure launch — not AI-focused. Six years of derivatives execution (FX arb → crypto perps → prop trading); now targeting prediction markets ($44B in 2025, projected $1T by 2027). Technical breakdown of multi-venue arb, unified oracle, and execution engine. Included because it landed in Jeremy's link stream.
-
-- [0xSero](https://x.com/0xsero/status/2044879665001595263) — 2026-04-17: Post by 0xSero (content not yet scraped)
 
 - [Erick](https://x.com/ericksky/status/2044225008419922270) — 2026-04-15: [Post unavailable — login wall or deleted]
 
@@ -1409,6 +1465,39 @@
 
 ### Apr 2026
 
+- **2026-04-21** | [Shubham Saboo](https://x.com/saboo_shubham_/status/2046473615118672325) | agent-design, skills-mcp
+  Shares agentic-stack — 'One brain, many harnesses. Portable .agent/ folder (memory + skills)' — a pattern for sharing a single memory/skill store across multiple agent harnesses. Repo: github.com/codejunkie99/agentic-stack.
+
+- **2026-04-21** | [Tech with Mak](https://x.com/technmak/status/2046414820241760620) | research, agent-design, questionable
+  Summary of Meta's REFRAG paper: compresses retrieved RAG chunks into single embeddings (16,384 tokens → 1,024 chunk embeddings), delivering 30.85x faster time-to-first-token, zero perplexity loss, 16x context extension (4K → 64K), and 3.75x better than prior SOTA. Exploits sparse attention patterns in RAG contexts via precomputable embeddings and RL-based compression policy.
+
+- **2026-04-21** | [Aakash Gupta](https://x.com/aakashgupta/status/2046371351016161745) | industry, research
+  Essay arguing Yann LeCun left Meta because Zuck wouldn't bet the company on JEPA, then his group shipped the first end-to-end JEPA trained from raw pixels — 15M parameters, single GPU, a few hours. Frames it as a Xerox PARC pattern: Meta had the architecture, dissolved the robotics team, and let the breakthrough walk out the door while humanoid robotics competitors (Figure AI, Tesla Optimus, World Labs) burn capital on expensive foundation-model pipelines. Jeremy flagged 'feels like correspondence' (thoughtful essay style).
+
+- **2026-04-21** | [Tom Dörr](https://x.com/tom_doerr/status/2046369616411185635) | agent-design
+  Recursive self-improving agent harness — a tool that lets an agent iterate on its own harness/context. Repo: github.com/greyhaven-ai/autocontext. Short announcement-style post.
+
+- **2026-04-21** | [Sydney Runkle](https://x.com/sydneyrunkle/status/2046277232537256002) | agent-design, dev-practices
+  LangChain team piece on 'The runtime behind production deep agents' — distinguishing the harness (prompts, tools, skills, model loop) from the runtime (durable execution, memory, multi-tenancy, observability). Walks through production requirements for agents and how LangSmith Deployment + Agent Server package those capabilities. Reference architecture for shipping agents in production.
+
+- **2026-04-21** | [Nav Toor](https://x.com/heynavtoor/status/2046276160930414976) | research, dev-practices
+  Intro to PoisonedRAG attack: researchers showed 5 malicious documents planted in a 2.6M-document corpus can hijack an LLM's answer 97% of the time. Attacker never touches the model or retriever — just writes documents. Important RAG security consideration.
+
+- **2026-04-21** | [Simplifying AI](https://x.com/simplifyinai/status/2046271932035645599) | research, questionable
+  Summary of Microsoft's MEMENTO paper: instead of growing the KV cache to fit long reasoning chains, train the model to break reasoning into blocks and emit dense compressed 'memento' summaries between them, then drop the raw tokens. Framed as 'the secret isn't remembering everything — it's knowing what to forget.' Engagement-farming tone but real underlying paper.
+
+- **2026-04-21** | [Sigrid Jin](https://x.com/realsigridjin/status/2046266374948069387) | agent-design, skills-mcp, dev-practices
+  Quote-tweet of Junghwan Na's writeup — Na got his GitHub banned after pushing 500+ commits across 100+ open-source repos in 72 hours using an AI harness. Sigrid pulls out the two highest-leverage principles from Na's method: (1) reproduce the bug locally or drop it, (2) read merge history instead of CONTRIBUTING.md. Jeremy flagged 'worth extracting a skill' — these are skill-worthy contribution-harness patterns.
+
+- **2026-04-21** | [Raymond Weitekamp](https://x.com/raw_works/status/2046240194999755153) | research, agent-design, prompting
+  Thoughtful long-form post on Recursive Language Models (RLMs) — 'the new reasoning models.' RLMs collapse reasoning and tool use into one abstraction: the model treats its own prompt as an environment it can inspect, slice, and recursively query via a REPL. Input size is no longer a hard ceiling; results show processing up to 2 orders of magnitude beyond base model's context, outperforming long-context scaffolds on four long-context tasks.
+
+- **2026-04-21** | [Ihtesham Ali](https://x.com/ihtesham2005/status/2046197374855582157) | prompting, agent-design, management
+  Writeup of George Pólya's 1945 book 'How to Solve It' — the four-step problem-solving framework (understand, plan, execute, look back). Central heuristic: if you can't solve the proposed problem, solve a simpler related one first. Jeremy's note 'important for planner?' — relevant for AI agent planning/decomposition patterns.
+
+- **2026-04-21** | [Vox](https://x.com/voxyz_ai/status/2045899539526148193) | claude-code, prompting, dev-practices
+  The #1 GitHub trending repo this week (44,465 stars) is a CLAUDE.md file distilling Andrej Karpathy's LLM coding pitfalls into 4 principles: (1) think before coding — ask when unsure, (2) simplicity first — minimum code, (3) surgical edits — only touch what's required, (4) goal-driven — translate fuzzy instructions into verifiable targets. Directly actionable as a CLAUDE.md system prompt.
+
 - **2026-04-20** | [Akshay](https://x.com/akshay_pachaar/status/2046151867177308181) | agent-design, research, dev-practices
   Summary of a Google DeepMind paper on 'AI Agent Traps' — first systematic framework for adversarial content engineered to hijack web-browsing agents. Six attack surfaces: (1) content injection (invisible CSS/HTML, steganography — 86% hijack in one study), (2) semantic manipulation via framing/priming, (3) cognitive state poisoning of RAG/long-term memory (>80% success with <0.1% poisoning), plus more. Training-time defenses can't fix an inference-time problem. References Strix (github.com/usestrix/strix) — open-source red-team agent, 24k stars, Apache 2.0 — for automated pentesting of web apps.
 
@@ -1442,8 +1531,8 @@
 - **2026-04-17** | [Alter Ego](https://x.com/alterego_eth/status/2045093809886020058) | agent-design, skills-mcp
   Promo for Hermes Agent from Nous Research (team behind YaRN, Nomos, Psyche) — open, self-hosted agent pitched as a new standard for AI trading on Polymarket. Features: self-learns by writing itself skills after complex tasks, persistent memory (MEMORY.md + USER.md + SQLite), runs 24/7 on a VPS with Telegram alerts, closed learning loop that analyzes and improves every ~15 tool calls. Contrasted with 'static' OpenClaw. Example given: a weather-bot turned EV+Kelly Criterion trader scanning 20 cities.
 
-- **2026-04-17** | [0xSero](https://x.com/0xsero/status/2044879665001595263) | general
-  Post by 0xSero (content not yet scraped)
+- **2026-04-17** | [0xSero](https://x.com/0xsero/status/2044879665001595263) | agent-design, claude-code, management
+  0xSero (quote-tweeting Sarah Chieng's article 'Single-agent AI coding is a nightmare for engineers') says he's gone 180 on multi-agents/subagents after analyzing hundreds of AI coding agent sessions — they actually help a lot. Practitioner's change-of-mind about orchestration.
 
 - **2026-04-17** | [Hamudi](https://x.com/hamudinaanaa/status/2044872907072164304) | industry, management, agent-design
   Quote-tweet on Sequoia's $1T 'sell work, not software' thesis. Hamudi announces a paper on measuring economic outcomes from AI agents — 'Outcome Primitives.' Tracked 1,300 agents over 21 days generating $32M of economic value: jobs secured, $200k grants won, e-commerce shops shipped. Framing: copilots compete on software margins (losing to labs), outcome-delivery products compete on services margins (transforming industries).

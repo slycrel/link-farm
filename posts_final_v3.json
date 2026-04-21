@@ -1,5 +1,253 @@
 [
   {
+    "date": "2026-04-21",
+    "author": "Shubham Saboo",
+    "handle": "@saboo_shubham_",
+    "subject": "Post by Shubham Saboo on X",
+    "url": "https://x.com/saboo_shubham_/status/2046473615118672325",
+    "summary": "Shares agentic-stack — 'One brain, many harnesses. Portable .agent/ folder (memory + skills)' — a pattern for sharing a single memory/skill store across multiple agent harnesses. Repo: github.com/codejunkie99/agentic-stack.",
+    "topics": [
+      "agent-design",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "3,249",
+    "notes": "",
+    "enriched": true,
+    "content": "GitHub Repo: codejunkie99/agentic-stack. One brain, many harnesses. Portable .agent/ folder (memory + skills)"
+  },
+  {
+    "date": "2026-04-21",
+    "author": "Tech with Mak",
+    "handle": "@technmak",
+    "subject": "Post by Tech with Mak on X",
+    "url": "https://x.com/technmak/status/2046414820241760620",
+    "summary": "Summary of Meta's REFRAG paper: compresses retrieved RAG chunks into single embeddings (16,384 tokens → 1,024 chunk embeddings), delivering 30.85x faster time-to-first-token, zero perplexity loss, 16x context extension (4K → 64K), and 3.75x better than prior SOTA. Exploits sparse attention patterns in RAG contexts via precomputable embeddings and RL-based compression policy.",
+    "topics": [
+      "research",
+      "agent-design",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Meta REFRAG: 30x faster RAG via chunk embedding compression, zero accuracy loss, 16x context extension"
+  },
+  {
+    "date": "2026-04-21",
+    "author": "Aakash Gupta",
+    "handle": "@aakashgupta",
+    "subject": "Post by Aakash Gupta on X — feels like correspondence",
+    "url": "https://x.com/aakashgupta/status/2046371351016161745",
+    "summary": "Essay arguing Yann LeCun left Meta because Zuck wouldn't bet the company on JEPA, then his group shipped the first end-to-end JEPA trained from raw pixels — 15M parameters, single GPU, a few hours. Frames it as a Xerox PARC pattern: Meta had the architecture, dissolved the robotics team, and let the breakthrough walk out the door while humanoid robotics competitors (Figure AI, Tesla Optimus, World Labs) burn capital on expensive foundation-model pipelines. Jeremy flagged 'feels like correspondence' (thoughtful essay style).",
+    "topics": [
+      "industry",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "66.1K",
+    "notes": "Jeremy modified subject: 'feels like correspondence'",
+    "enriched": true,
+    "content": "LeCun's post-Meta JEPA breakthrough: 15M params, single GPU, end-to-end from raw pixels"
+  },
+  {
+    "date": "2026-04-21",
+    "author": "Tom Dörr",
+    "handle": "@tom_doerr",
+    "subject": "Post by Tom Dörr on X",
+    "url": "https://x.com/tom_doerr/status/2046369616411185635",
+    "summary": "Recursive self-improving agent harness — a tool that lets an agent iterate on its own harness/context. Repo: github.com/greyhaven-ai/autocontext. Short announcement-style post.",
+    "topics": [
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "7,189",
+    "notes": "",
+    "enriched": true,
+    "content": "Recursive self-improving agent harness github.com/greyhaven-ai/autocontext"
+  },
+  {
+    "date": "2026-04-21",
+    "author": "Sydney Runkle",
+    "handle": "@sydneyrunkle",
+    "subject": "Post by Sydney Runkle on X",
+    "url": "https://x.com/sydneyrunkle/status/2046277232537256002",
+    "summary": "LangChain team piece on 'The runtime behind production deep agents' — distinguishing the harness (prompts, tools, skills, model loop) from the runtime (durable execution, memory, multi-tenancy, observability). Walks through production requirements for agents and how LangSmith Deployment + Agent Server package those capabilities. Reference architecture for shipping agents in production.",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "118K",
+    "notes": "",
+    "enriched": true,
+    "content": "LangChain: harness vs runtime for production deep agents — durable execution, memory, multi-tenancy, observability via LangSmith Deployment"
+  },
+  {
+    "date": "2026-04-21",
+    "author": "Nav Toor",
+    "handle": "@heynavtoor",
+    "subject": "Post by Nav Toor on X",
+    "url": "https://x.com/heynavtoor/status/2046276160930414976",
+    "summary": "Intro to PoisonedRAG attack: researchers showed 5 malicious documents planted in a 2.6M-document corpus can hijack an LLM's answer 97% of the time. Attacker never touches the model or retriever — just writes documents. Important RAG security consideration.",
+    "topics": [
+      "research",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "31.6K",
+    "notes": "",
+    "enriched": true,
+    "content": "PoisonedRAG: 5 docs in 2.6M-doc corpus can hijack LLM answers 97% of the time without touching model or retriever"
+  },
+  {
+    "date": "2026-04-21",
+    "author": "Simplifying AI",
+    "handle": "@simplifyinai",
+    "subject": "Post by Simplifying AI on X",
+    "url": "https://x.com/simplifyinai/status/2046271932035645599",
+    "summary": "Summary of Microsoft's MEMENTO paper: instead of growing the KV cache to fit long reasoning chains, train the model to break reasoning into blocks and emit dense compressed 'memento' summaries between them, then drop the raw tokens. Framed as 'the secret isn't remembering everything — it's knowing what to forget.' Engagement-farming tone but real underlying paper.",
+    "topics": [
+      "research",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "31.6K",
+    "notes": "",
+    "enriched": true,
+    "content": "Microsoft MEMENTO: compress reasoning chains into summaries mid-inference to control KV cache growth"
+  },
+  {
+    "date": "2026-04-21",
+    "author": "Sigrid Jin",
+    "handle": "@realsigridjin",
+    "subject": "Post by Sigrid Jin on X (worth extracting a skill)",
+    "url": "https://x.com/realsigridjin/status/2046266374948069387",
+    "summary": "Quote-tweet of Junghwan Na's writeup — Na got his GitHub banned after pushing 500+ commits across 100+ open-source repos in 72 hours using an AI harness. Sigrid pulls out the two highest-leverage principles from Na's method: (1) reproduce the bug locally or drop it, (2) read merge history instead of CONTRIBUTING.md. Jeremy flagged 'worth extracting a skill' — these are skill-worthy contribution-harness patterns.",
+    "topics": [
+      "agent-design",
+      "skills-mcp",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "163K",
+    "notes": "Jeremy modified subject: 'worth extracting a skill'",
+    "enriched": true,
+    "content": "Junghwan Na's AI harness got him banned after 500+ commits in 72h. Two principles: reproduce bug locally or drop it; read merge history not CONTRIBUTING.md"
+  },
+  {
+    "date": "2026-04-21",
+    "author": "Raymond Weitekamp",
+    "handle": "@raw_works",
+    "subject": "Post by Raymond Weitekamp on X",
+    "url": "https://x.com/raw_works/status/2046240194999755153",
+    "summary": "Thoughtful long-form post on Recursive Language Models (RLMs) — 'the new reasoning models.' RLMs collapse reasoning and tool use into one abstraction: the model treats its own prompt as an environment it can inspect, slice, and recursively query via a REPL. Input size is no longer a hard ceiling; results show processing up to 2 orders of magnitude beyond base model's context, outperforming long-context scaffolds on four long-context tasks.",
+    "topics": [
+      "research",
+      "agent-design",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "49K",
+    "notes": "",
+    "enriched": true,
+    "content": "RLMs: recursive language models treat prompt as REPL environment, marrying reasoning and tool use"
+  },
+  {
+    "date": "2026-04-21",
+    "author": "Ihtesham Ali",
+    "handle": "@ihtesham2005",
+    "subject": "Post by Ihtesham Ali on X (important for planner?)",
+    "url": "https://x.com/ihtesham2005/status/2046197374855582157",
+    "summary": "Writeup of George Pólya's 1945 book 'How to Solve It' — the four-step problem-solving framework (understand, plan, execute, look back). Central heuristic: if you can't solve the proposed problem, solve a simpler related one first. Jeremy's note 'important for planner?' — relevant for AI agent planning/decomposition patterns.",
+    "topics": [
+      "prompting",
+      "agent-design",
+      "management"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "Jeremy modified subject: 'important for planner?'",
+    "enriched": true,
+    "content": "Pólya's How to Solve It 4-step framework: understand, plan (simpler related problem), execute, look back"
+  },
+  {
+    "date": "2026-04-21",
+    "author": "Vox",
+    "handle": "@voxyz_ai",
+    "subject": "Post by Vox on X",
+    "url": "https://x.com/voxyz_ai/status/2045899539526148193",
+    "summary": "The #1 GitHub trending repo this week (44,465 stars) is a CLAUDE.md file distilling Andrej Karpathy's LLM coding pitfalls into 4 principles: (1) think before coding — ask when unsure, (2) simplicity first — minimum code, (3) surgical edits — only touch what's required, (4) goal-driven — translate fuzzy instructions into verifiable targets. Directly actionable as a CLAUDE.md system prompt.",
+    "topics": [
+      "claude-code",
+      "prompting",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "824.4K",
+    "notes": "",
+    "enriched": true,
+    "content": "#1 GitHub trending repo: CLAUDE.md distilling Karpathy's 4 LLM coding principles — think before coding, simplicity, surgical edits, goal-driven"
+  },
+  {
     "date": "2026-04-20",
     "author": "Akshay",
     "handle": "@akshay_pachaar",
@@ -242,18 +490,22 @@
     "handle": "@0xSero",
     "subject": "Post by 0xSero on X",
     "url": "https://x.com/0xsero/status/2044879665001595263",
-    "summary": "Post by 0xSero (content not yet scraped)",
+    "summary": "0xSero (quote-tweeting Sarah Chieng's article 'Single-agent AI coding is a nightmare for engineers') says he's gone 180 on multi-agents/subagents after analyzing hundreds of AI coding agent sessions — they actually help a lot. Practitioner's change-of-mind about orchestration.",
     "topics": [
-      "general"
+      "agent-design",
+      "claude-code",
+      "management"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "103.6K",
     "notes": "",
-    "enriched": false
+    "enriched": true,
+    "content": "Multi-agents and subagents: changed mind after analyzing hundreds of AI coding agent sessions — actually helps a lot. Quote-tweeting Sarah Chieng's article: Single-agent AI coding is a nightmare for engineers"
   },
   {
     "date": "2026-04-17",
