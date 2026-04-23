@@ -1,5 +1,323 @@
 [
   {
+    "date": "2026-04-23",
+    "author": "StacyOnChain",
+    "handle": "@stacyonchain",
+    "subject": "Post by StacyOnChain on X",
+    "url": "https://x.com/stacyonchain/status/2047278412922831260",
+    "summary": "Engagement-farming crypto trading pitch for centpro.bot (\"THIS IS THE EXACT 4-STEP FRAMEWORK...\"). Claims to extract alpha from 327 Polymarket strategy tests. Not AI/dev related — low signal.",
+    "topics": [
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "1,535",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-04-23",
+    "author": "Tom Dörr",
+    "handle": "@tom_doerr",
+    "subject": "Post by Tom Dörr on X",
+    "url": "https://x.com/tom_doerr/status/2047258779821949384",
+    "summary": "Infrastructure for multi-agent self-evolution: github.com/Human-Agent-Society/CORAL. Tom's typical short bookmark-style post — worth exploring the repo for multi-agent self-improvement patterns.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "3,281",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-04-23",
+    "author": "Akshay",
+    "handle": "@akshay_pachaar",
+    "subject": "Post by Akshay 🚀 on X",
+    "url": "https://x.com/akshay_pachaar/status/2047220248081015110",
+    "summary": "Beyond Karpathy's wiki idea: static markdown pages can't answer cross-entity questions (e.g., \"which authors moved from Google to Anthropic\"). Pitches FalkorDB, an open-source graph database, for knowledge that lives in connections rather than articles.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-04-23",
+    "author": "How To AI",
+    "handle": "@HowToAI_",
+    "subject": "Post by How To AI on X",
+    "url": "https://x.com/howtoai_/status/2047187640781541882",
+    "summary": "Post about MIT's Recursive Language Models (RLMs) — treats long documents as an external environment (Python variable in a sandbox) where the AI writes code to slice/filter and recursively spawns sub-agents to read snippets in parallel, avoiding context rot and RAG summary loss. Heavy hype framing but the paper premise is real and interesting.",
+    "topics": [
+      "research",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-04-23",
+    "author": "TRAE",
+    "handle": "@Trae_ai",
+    "subject": "Post by TRAE on X",
+    "url": "https://x.com/trae_ai/status/2047145274200768969",
+    "summary": "\"Definitive Guide to Harness Engineering\" — long thread positioning Harness Engineering (term coined by Mitchell Hashimoto) as the next pillar after prompt/context engineering. Core idea: AI agent = SOTA model (wild horse) + harness (control system). Framework-naming post but captures a real shift in agent productization.",
+    "topics": [
+      "agent-design",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "23K",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-04-23",
+    "author": "Shiv",
+    "handle": "@shivsakhuja",
+    "subject": "Post by Shiv on X",
+    "url": "https://x.com/shivsakhuja/status/2047124337191444844",
+    "summary": "Skill Graphs 2.0 — composing skills by linking dependent skill markdown files (Obsidian-style). Flags the reliability issue: agents struggle to call skills past a certain dependency depth. Useful framing for anyone building skill libraries.",
+    "topics": [
+      "skills-mcp",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "133K",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-04-23",
+    "author": "Shrey Pandya",
+    "handle": "@shreypandya",
+    "subject": "Post by Shrey Pandya on X",
+    "url": "https://x.com/shreypandya/status/2047100550446280792",
+    "summary": "New /autobrowse skill (inspired by Karpathy's autoresearch harness) — the agent explores a webpage using browserbase CLI, learns from failed attempts, iterates until it converges, then graduates the winning approach into a reusable browser skill. Compelling pattern for skill-from-exploration.",
+    "topics": [
+      "skills-mcp",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "126.8K",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-04-23",
+    "author": "ClaudeDevs",
+    "handle": "@ClaudeDevs",
+    "subject": "Post by ClaudeDevs on X",
+    "url": "https://x.com/claudedevs/status/2047086372666921217",
+    "summary": "New Anthropic blog on building agents that reach production systems with MCP: when to use direct APIs vs CLIs vs MCP, patterns for MCP servers, context-efficient clients, and pairing MCP with skills. claude.com/blog/building-agents-that-reach-production-systems-with-mcp",
+    "topics": [
+      "claude-code",
+      "skills-mcp",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "254K",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-04-23",
+    "author": "Matt Van Horn",
+    "handle": "@mvanhorn",
+    "subject": "Post by Matt Van Horn on X",
+    "url": "https://x.com/mvanhorn/status/2047073560267817469",
+    "summary": "Matt Van Horn promoting Compound Engineering v3 (by @trevin) — \"most under-hyped hack in my toolkit.\" v3 adds naming cleanup, brainstorm/plan artifacts that give requirements a paper trail from idea to commit, and refactored harnesses. 15k GitHub stars.",
+    "topics": [
+      "dev-practices",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "65.7K",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-04-23",
+    "author": "Mario Zechner",
+    "handle": "@badlogicgames",
+    "subject": "Post by Mario Zechner on X",
+    "url": "https://x.com/badlogicgames/status/2047055760236916759",
+    "summary": "Mario Zechner (\"recommended reading\") pointing to Walden Yan's \"Multi-Agents: What's Actually Working\" — a 10-months-later follow-up to \"Don't Build Multi-Agents\" examining which multi-agent patterns are actually paying off in practice.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "144.1K",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-04-23",
+    "author": "vida",
+    "handle": "@vida_agent",
+    "subject": "Post by vida on X",
+    "url": "https://x.com/vida_agent/status/2047007924279767332",
+    "summary": "OpenChronicle — open-sourced local-first memory layer for tool-capable LLMs and agents, positioned as a free alternative to OpenAI's $100/mo Chronicle. Repo: github.com/Einsia/OpenChronicle. Treats AI memory as infrastructure.",
+    "topics": [
+      "agent-design",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "180K",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-04-23",
+    "author": "Alex Volkov",
+    "handle": "@altryne",
+    "subject": "Post by Alex Volkov on X (4 Logan)",
+    "url": "https://x.com/altryne/status/2046977133013311814",
+    "summary": "OpenAI open-sourced a 1.5B parameter (50M active) Privacy Filter model on HuggingFace under Apache 2.0 — a PII detection model for checking if text contains private information. Not a new LLM but a purpose-built classifier for data pipelines.",
+    "topics": [
+      "research",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "161K",
+    "notes": "Modified subject — flagged for Logan",
+    "enriched": true
+  },
+  {
+    "date": "2026-04-23",
+    "author": "Garry Tan",
+    "handle": "@garrytan",
+    "subject": "Post by Garry Tan on X",
+    "url": "https://x.com/garrytan/status/2046882636069798323",
+    "summary": "Garry Tan endorsing a workflow: build a feature once in OpenClaw, then run /skillify to turn it into a reusable skill forever. Quote-tweeting an article on stopping agents from making repeat mistakes (contrasting with LangChain/LangSmith eval-heavy approach).",
+    "topics": [
+      "claude-code",
+      "skills-mcp",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "269.5K",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-04-23",
+    "author": "spencer",
+    "handle": "@techspence",
+    "subject": "Post by spencer on X",
+    "url": "https://x.com/techspence/status/2046759185593794782",
+    "summary": "OWASP released their Autonomous Penetration Testing Standard (APTS). Repo: github.com/OWASP/APTS. Spencer hasn't read it yet, asking for community input — worth a look for anyone building/evaluating autonomous security agents.",
+    "topics": [
+      "agent-design",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "110.1K",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-04-23",
+    "author": "Avi Chawla",
+    "handle": "@_avichawla",
+    "subject": "Post by Avi Chawla on X",
+    "url": "https://x.com/_avichawla/status/2046685172666712571",
+    "summary": "Claim of 3x token reduction on Claude Code (10.4M→3.7M tokens, $9.21→$2.81, 10→0 errors) by adding Insforge Skills + CLI as a context-engineering layer. Repo: github.com/InsForge/InsForge (open-source, local).",
+    "topics": [
+      "claude-code",
+      "prompting",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "284.8K",
+    "notes": "",
+    "enriched": true
+  },
+  {
     "date": "2026-04-21",
     "author": "Shubham Saboo",
     "handle": "@saboo_shubham_",
