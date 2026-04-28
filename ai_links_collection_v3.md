@@ -1,27 +1,34 @@
 # AI Links Collection
-**Total Posts**: 399  
-**Date Range**: 2024-06-11 – 2026-04-23  
-**Enriched**: 399/399 (100%)
+**Total Posts**: 406  
+**Date Range**: 2024-06-11 – 2026-04-28  
+**Enriched**: 406/406 (100%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 179 | 44.9% |
-| claude-code | 84 | 21.1% |
-| dev-practices | 99 | 24.8% |
-| skills-mcp | 51 | 12.8% |
-| prompting | 47 | 11.8% |
-| research | 59 | 14.8% |
-| industry | 36 | 9.0% |
-| management | 64 | 16.0% |
-| questionable | 27 | 6.8% |
-| general | 64 | 16.0% |
+| agent-design | 185 | 45.6% |
+| claude-code | 86 | 21.2% |
+| dev-practices | 101 | 24.9% |
+| skills-mcp | 52 | 12.8% |
+| prompting | 47 | 11.6% |
+| research | 62 | 15.3% |
+| industry | 36 | 8.9% |
+| management | 65 | 16.0% |
+| questionable | 29 | 7.1% |
+| general | 64 | 15.8% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-04-28 | Aparna Dhinakaran | agent-design | Aparna riffs on Aran Komatsuzaki's note that Anthropic just shipped 'f... |
+| 2026-04-28 | Edouard Reinach | agent-design | Edouard promotes Predict-RLM (github.com/Trampoline-AI/predict-rlm) —... |
+| 2026-04-28 | Hasan Toor | agent-design | Hasan announces future-agi (github.com/future-agi/future-agi, cloud at... |
+| 2026-04-28 | Yasir Ai | skills-mcp | GitNexus — open-source code knowledge graph engine. Tree-sitter AST pa... |
+| 2026-04-25 | Eric Clemmons | agent-design | One-word 'Brilliant' reaction quoting Teddy Riker's article 'Designing... |
+| 2026-04-25 | Ethan Mollick | agent-design | Mollick reacting to rohit's essay 'Aligned Agents Still Build Misalign... |
+| 2026-04-25 | Atal | agent-design | Walkthrough of the 'Agent Behavioral Contracts' paper — applies Design... |
 | 2026-04-23 | StacyOnChain | questionable | Engagement-farming crypto trading pitch for centpro.bot ("THIS IS THE... |
 | 2026-04-23 | Tom Dörr | agent-design | Infrastructure for multi-agent self-evolution: github.com/Human-Agent-... |
 | 2026-04-23 | Akshay | agent-design | Beyond Karpathy's wiki idea: static markdown pages can't answer cross-... |
@@ -65,18 +72,23 @@
 | 2026-04-15 | GitHub Projects Community | dev-practices | Promotes Graphify — a tool to turn any folder of code into a queryable... |
 | 2026-04-15 | Yoonho Lee | research | Released code for Meta-Harness — a method to autonomously improve LLM... |
 | 2026-04-15 | Viv | dev-practices | Points to Hunter Leath's article "Bash is the SQL for file systems" —... |
-| 2026-04-15 | Shann³ | agent-design | Built a 230-page Obsidian knowledge base (tweets, bookmarks, articles,... |
-| 2026-04-15 | Millie Marconi | prompting | Uses Claude as a full inversion engine running Charlie Munger's method... |
-| 2026-04-15 | Akshay | agent-design | Akshay argues agent memory is three-dimensional, not just vector. Exam... |
-| 2026-04-15 | Europurr | agent-design | Europurr switched from 'OpenClaw' to Hermes and is setting up Hindsigh... |
-| 2026-04-15 | Garry Tan | claude-code | Garry Tan releases GBrain v0.10.0 — his personal 'OpenClaw' setup with... |
-| 2026-04-15 | Shaw (spirit/acc) | claude-code | Shaw (@shawmakesmagic) shares an 8-subagent codebase-cleanup prompt: (... |
-| 2026-04-15 | Erick | general | [Post unavailable — login wall or deleted] |
 
 ---
 ## Posts by Topic
 
-### Agent Design (179)
+### Agent Design (185)
+
+- [Aparna Dhinakaran](https://x.com/aparnadhinak/status/2047849364547420382) — 2026-04-28: Aparna riffs on Aran Komatsuzaki's note that Anthropic just shipped 'forked subagents' which inherit the main agent's context (vs. fresh-context regular subagents). Her take: harnesses are converging on the same context-passing problems and dynamic, agent-decided context is the direction.
+
+- [Edouard Reinach](https://x.com/ereinach/status/2047802558136058258) — 2026-04-28: Edouard promotes Predict-RLM (github.com/Trampoline-AI/predict-rlm) — a production-ready, 'batteries-included' implementation, riffing on a viral post about MIT CSAIL's Dec 2025 paper claiming to solve AI memory by teaching models to read instead of building bigger brains.
+
+- [Hasan Toor](https://x.com/hasantoxr/status/2047637109343928827) — 2026-04-28: Hasan announces future-agi (github.com/future-agi/future-agi, cloud at app.futureagi.com) — open-source end-to-end platform for evaluating, observing, and managing AI agents in production. Nightly releases, stable coming soon. Self-host or free cloud tier.
+
+- [Eric Clemmons](https://x.com/ericclemmons/status/2047838932369387914) — 2026-04-25: One-word 'Brilliant' reaction quoting Teddy Riker's article 'Designing for Agents' — a piece pushing back on the Obsidian/Anthropic-killer hype cycle and arguing for thoughtful agent UX design. Worth tracking down the linked article for the actual substance.
+
+- [Ethan Mollick](https://x.com/emollick/status/2047828327856030047) — 2026-04-25: Mollick reacting to rohit's essay 'Aligned Agents Still Build Misaligned Organisations' — argues that organizational design for agents and benchmarking multi-agent systems working in concert is the next critical frontier for making AI economically valuable, and we don't know much about it yet.
+
+- [Atal](https://x.com/zabihullahatal/status/2047692175019008019) — 2026-04-25: Walkthrough of the 'Agent Behavioral Contracts' paper — applies Design-by-Contract to AI agents with preconditions, invariants, governance rules, and recovery mechanisms enforced at runtime. Tested across 1,980 sessions; contract-bound agents catch violations that standard agents miss. 'BREAKING' framing is engagement-bait but the underlying paper is substantive.
 
 - [Tom Dörr](https://x.com/tom_doerr/status/2047258779821949384) — 2026-04-23: Infrastructure for multi-agent self-evolution: github.com/Human-Agent-Society/CORAL. Tom's typical short bookmark-style post — worth exploring the repo for multi-agent self-improvement patterns.
 
@@ -436,7 +448,11 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Claude Code (84)
+### Claude Code (86)
+
+- [Aparna Dhinakaran](https://x.com/aparnadhinak/status/2047849364547420382) — 2026-04-28: Aparna riffs on Aran Komatsuzaki's note that Anthropic just shipped 'forked subagents' which inherit the main agent's context (vs. fresh-context regular subagents). Her take: harnesses are converging on the same context-passing problems and dynamic, agent-decided context is the direction.
+
+- [Yasir Ai](https://x.com/aiwithyasir/status/2047589529650176333) — 2026-04-28: GitNexus — open-source code knowledge graph engine. Tree-sitter AST parsing maps every dependency, call chain, and execution flow in a repo, then plugs into Claude Code, Cursor, and Windsurf via MCP. Features: blast-radius analysis before edits, cross-file symbol renames, auto-generated wiki, functional-cluster grouping with cohesion scores. 'BREAKING' engagement-farming framing but real substance behind it.
 
 - [ClaudeDevs](https://x.com/claudedevs/status/2047086372666921217) — 2026-04-23: New Anthropic blog on building agents that reach production systems with MCP: when to use direct APIs vs CLIs vs MCP, patterns for MCP servers, context-efficient clients, and pairing MCP with skills. claude.com/blog/building-agents-that-reach-production-systems-with-mcp
 
@@ -606,7 +622,11 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (99)
+### Dev Practices (101)
+
+- [Hasan Toor](https://x.com/hasantoxr/status/2047637109343928827) — 2026-04-28: Hasan announces future-agi (github.com/future-agi/future-agi, cloud at app.futureagi.com) — open-source end-to-end platform for evaluating, observing, and managing AI agents in production. Nightly releases, stable coming soon. Self-host or free cloud tier.
+
+- [Yasir Ai](https://x.com/aiwithyasir/status/2047589529650176333) — 2026-04-28: GitNexus — open-source code knowledge graph engine. Tree-sitter AST parsing maps every dependency, call chain, and execution flow in a repo, then plugs into Claude Code, Cursor, and Windsurf via MCP. Features: blast-radius analysis before edits, cross-file symbol renames, auto-generated wiki, functional-cluster grouping with cohesion scores. 'BREAKING' engagement-farming framing but real substance behind it.
 
 - [Matt Van Horn](https://x.com/mvanhorn/status/2047073560267817469) — 2026-04-23: Matt Van Horn promoting Compound Engineering v3 (by @trevin) — "most under-hyped hack in my toolkit." v3 adds naming cleanup, brainstorm/plan artifacts that give requirements a paper trail from idea to commit, and refactored harnesses. 15k GitHub stars.
 
@@ -806,7 +826,9 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (51)
+### Skills & MCP (52)
+
+- [Yasir Ai](https://x.com/aiwithyasir/status/2047589529650176333) — 2026-04-28: GitNexus — open-source code knowledge graph engine. Tree-sitter AST parsing maps every dependency, call chain, and execution flow in a repo, then plugs into Claude Code, Cursor, and Windsurf via MCP. Features: blast-radius analysis before edits, cross-file symbol renames, auto-generated wiki, functional-cluster grouping with cohesion scores. 'BREAKING' engagement-farming framing but real substance behind it.
 
 - [Shiv](https://x.com/shivsakhuja/status/2047124337191444844) — 2026-04-23: Skill Graphs 2.0 — composing skills by linking dependent skill markdown files (Obsidian-style). Flags the reliability issue: agents struggle to call skills past a certain dependency depth. Useful framing for anyone building skill libraries.
 
@@ -1006,7 +1028,13 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
 
-### Research (59)
+### Research (62)
+
+- [Edouard Reinach](https://x.com/ereinach/status/2047802558136058258) — 2026-04-28: Edouard promotes Predict-RLM (github.com/Trampoline-AI/predict-rlm) — a production-ready, 'batteries-included' implementation, riffing on a viral post about MIT CSAIL's Dec 2025 paper claiming to solve AI memory by teaching models to read instead of building bigger brains.
+
+- [Ethan Mollick](https://x.com/emollick/status/2047828327856030047) — 2026-04-25: Mollick reacting to rohit's essay 'Aligned Agents Still Build Misaligned Organisations' — argues that organizational design for agents and benchmarking multi-agent systems working in concert is the next critical frontier for making AI economically valuable, and we don't know much about it yet.
+
+- [Atal](https://x.com/zabihullahatal/status/2047692175019008019) — 2026-04-25: Walkthrough of the 'Agent Behavioral Contracts' paper — applies Design-by-Contract to AI agents with preconditions, invariants, governance rules, and recovery mechanisms enforced at runtime. Tested across 1,980 sessions; contract-bound agents catch violations that standard agents miss. 'BREAKING' framing is engagement-bait but the underlying paper is substantive.
 
 - [Tom Dörr](https://x.com/tom_doerr/status/2047258779821949384) — 2026-04-23: Infrastructure for multi-agent self-evolution: github.com/Human-Agent-Society/CORAL. Tom's typical short bookmark-style post — worth exploring the repo for multi-agent self-improvement patterns.
 
@@ -1200,7 +1228,9 @@
 
 - [Dante O. Cuales](https://x.com/danteocualesjr/status/1957204427909321027) — 2025-08-18: Reply to a thread about AI engineering being easy to learn — argues the 'intimidation factor is mostly artificial' since most AI engineering is API orchestration, prompt optimization, and data pipeline work. The hard parts are already abstracted away.
 
-### Management (64)
+### Management (65)
+
+- [Ethan Mollick](https://x.com/emollick/status/2047828327856030047) — 2026-04-25: Mollick reacting to rohit's essay 'Aligned Agents Still Build Misaligned Organisations' — argues that organizational design for agents and benchmarking multi-agent systems working in concert is the next critical frontier for making AI economically valuable, and we don't know much about it yet.
 
 - [Ihtesham Ali](https://x.com/ihtesham2005/status/2046197374855582157) — 2026-04-21: Writeup of George Pólya's 1945 book 'How to Solve It' — the four-step problem-solving framework (understand, plan, execute, look back). Central heuristic: if you can't solve the proposed problem, solve a simpler related one first. Jeremy's note 'important for planner?' — relevant for AI agent planning/decomposition patterns.
 
@@ -1330,7 +1360,11 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
 
-### Questionable (27)
+### Questionable (29)
+
+- [Yasir Ai](https://x.com/aiwithyasir/status/2047589529650176333) — 2026-04-28: GitNexus — open-source code knowledge graph engine. Tree-sitter AST parsing maps every dependency, call chain, and execution flow in a repo, then plugs into Claude Code, Cursor, and Windsurf via MCP. Features: blast-radius analysis before edits, cross-file symbol renames, auto-generated wiki, functional-cluster grouping with cohesion scores. 'BREAKING' engagement-farming framing but real substance behind it.
+
+- [Atal](https://x.com/zabihullahatal/status/2047692175019008019) — 2026-04-25: Walkthrough of the 'Agent Behavioral Contracts' paper — applies Design-by-Contract to AI agents with preconditions, invariants, governance rules, and recovery mechanisms enforced at runtime. Tested across 1,980 sessions; contract-bound agents catch violations that standard agents miss. 'BREAKING' framing is engagement-bait but the underlying paper is substantive.
 
 - [StacyOnChain](https://x.com/stacyonchain/status/2047278412922831260) — 2026-04-23: Engagement-farming crypto trading pitch for centpro.bot ("THIS IS THE EXACT 4-STEP FRAMEWORK..."). Claims to extract alpha from 327 Polymarket strategy tests. Not AI/dev related — low signal.
 
@@ -1528,6 +1562,27 @@
 ## Full Chronological List
 
 ### Apr 2026
+
+- **2026-04-28** | [Aparna Dhinakaran](https://x.com/aparnadhinak/status/2047849364547420382) | agent-design, claude-code
+  Aparna riffs on Aran Komatsuzaki's note that Anthropic just shipped 'forked subagents' which inherit the main agent's context (vs. fresh-context regular subagents). Her take: harnesses are converging on the same context-passing problems and dynamic, agent-decided context is the direction.
+
+- **2026-04-28** | [Edouard Reinach](https://x.com/ereinach/status/2047802558136058258) | agent-design, research
+  Edouard promotes Predict-RLM (github.com/Trampoline-AI/predict-rlm) — a production-ready, 'batteries-included' implementation, riffing on a viral post about MIT CSAIL's Dec 2025 paper claiming to solve AI memory by teaching models to read instead of building bigger brains.
+
+- **2026-04-28** | [Hasan Toor](https://x.com/hasantoxr/status/2047637109343928827) | agent-design, dev-practices
+  Hasan announces future-agi (github.com/future-agi/future-agi, cloud at app.futureagi.com) — open-source end-to-end platform for evaluating, observing, and managing AI agents in production. Nightly releases, stable coming soon. Self-host or free cloud tier.
+
+- **2026-04-28** | [Yasir Ai](https://x.com/aiwithyasir/status/2047589529650176333) | skills-mcp, dev-practices, claude-code, questionable
+  GitNexus — open-source code knowledge graph engine. Tree-sitter AST parsing maps every dependency, call chain, and execution flow in a repo, then plugs into Claude Code, Cursor, and Windsurf via MCP. Features: blast-radius analysis before edits, cross-file symbol renames, auto-generated wiki, functional-cluster grouping with cohesion scores. 'BREAKING' engagement-farming framing but real substance behind it.
+
+- **2026-04-25** | [Eric Clemmons](https://x.com/ericclemmons/status/2047838932369387914) | agent-design
+  One-word 'Brilliant' reaction quoting Teddy Riker's article 'Designing for Agents' — a piece pushing back on the Obsidian/Anthropic-killer hype cycle and arguing for thoughtful agent UX design. Worth tracking down the linked article for the actual substance.
+
+- **2026-04-25** | [Ethan Mollick](https://x.com/emollick/status/2047828327856030047) | agent-design, management, research
+  Mollick reacting to rohit's essay 'Aligned Agents Still Build Misaligned Organisations' — argues that organizational design for agents and benchmarking multi-agent systems working in concert is the next critical frontier for making AI economically valuable, and we don't know much about it yet.
+
+- **2026-04-25** | [Atal](https://x.com/zabihullahatal/status/2047692175019008019) | agent-design, research, questionable
+  Walkthrough of the 'Agent Behavioral Contracts' paper — applies Design-by-Contract to AI agents with preconditions, invariants, governance rules, and recovery mechanisms enforced at runtime. Tested across 1,980 sessions; contract-bound agents catch violations that standard agents miss. 'BREAKING' framing is engagement-bait but the underlying paper is substantive.
 
 - **2026-04-23** | [StacyOnChain](https://x.com/stacyonchain/status/2047278412922831260) | questionable
   Engagement-farming crypto trading pitch for centpro.bot ("THIS IS THE EXACT 4-STEP FRAMEWORK..."). Claims to extract alpha from 327 Polymarket strategy tests. Not AI/dev related — low signal.
