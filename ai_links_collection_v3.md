@@ -1,27 +1,31 @@
 # AI Links Collection
-**Total Posts**: 406  
-**Date Range**: 2024-06-11 – 2026-04-28  
-**Enriched**: 406/406 (100%)
+**Total Posts**: 410  
+**Date Range**: 2024-06-11 – 2026-04-30  
+**Enriched**: 406/410 (99%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 185 | 45.6% |
-| claude-code | 86 | 21.2% |
-| dev-practices | 101 | 24.9% |
-| skills-mcp | 52 | 12.8% |
-| prompting | 47 | 11.6% |
-| research | 62 | 15.3% |
-| industry | 36 | 8.9% |
-| management | 65 | 16.0% |
+| agent-design | 185 | 45.1% |
+| claude-code | 86 | 21.0% |
+| dev-practices | 101 | 24.6% |
+| skills-mcp | 52 | 12.7% |
+| prompting | 47 | 11.5% |
+| research | 62 | 15.1% |
+| industry | 36 | 8.8% |
+| management | 65 | 15.9% |
 | questionable | 29 | 7.1% |
-| general | 64 | 15.8% |
+| general | 68 | 16.6% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-04-30 | Garry Tan | general | Post by Garry Tan (content not yet scraped) |
+| 2026-04-30 | How To AI | general | Post by How To AI (content not yet scraped) |
+| 2026-04-30 | Akshay | general | Post by Akshay (content not yet scraped) |
+| 2026-04-30 | Darshak Rana | general | Post by Darshak Rana (content not yet scraped) |
 | 2026-04-28 | Aparna Dhinakaran | agent-design | Aparna riffs on Aran Komatsuzaki's note that Anthropic just shipped 'f... |
 | 2026-04-28 | Edouard Reinach | agent-design | Edouard promotes Predict-RLM (github.com/Trampoline-AI/predict-rlm) —... |
 | 2026-04-28 | Hasan Toor | agent-design | Hasan announces future-agi (github.com/future-agi/future-agi, cloud at... |
@@ -68,10 +72,6 @@
 | 2026-04-17 | Alter Ego | agent-design | Promo for Hermes Agent from Nous Research (team behind YaRN, Nomos, Ps... |
 | 2026-04-17 | 0xSero | agent-design | 0xSero (quote-tweeting Sarah Chieng's article 'Single-agent AI coding... |
 | 2026-04-17 | Hamudi | industry | Quote-tweet on Sequoia's $1T 'sell work, not software' thesis. Hamudi... |
-| 2026-04-15 | Garry Tan | agent-design | X article: "Resolvers: The Routing Table for Intelligence" — argues re... |
-| 2026-04-15 | GitHub Projects Community | dev-practices | Promotes Graphify — a tool to turn any folder of code into a queryable... |
-| 2026-04-15 | Yoonho Lee | research | Released code for Meta-Harness — a method to autonomously improve LLM... |
-| 2026-04-15 | Viv | dev-practices | Points to Hunter Leath's article "Bash is the SQL for file systems" —... |
 
 ---
 ## Posts by Topic
@@ -1420,7 +1420,15 @@
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
 
-### General (68)
+### General (72)
+
+- [Garry Tan](https://x.com/garrytan/status/2049720409965392052) — 2026-04-30: Post by Garry Tan (content not yet scraped)
+
+- [How To AI](https://x.com/howtoai_/status/2049567036003795269) — 2026-04-30: Post by How To AI (content not yet scraped)
+
+- [Akshay](https://x.com/akshay_pachaar/status/2049476617144287719) — 2026-04-30: Post by Akshay (content not yet scraped)
+
+- [Darshak Rana](https://x.com/thedarshakrana/status/2049151671692136778) — 2026-04-30: Post by Darshak Rana (content not yet scraped)
 
 - [PolyArb](https://x.com/usepolyarb/status/2045109166599963026) — 2026-04-18: Prediction-markets arbitrage infrastructure launch — not AI-focused. Six years of derivatives execution (FX arb → crypto perps → prop trading); now targeting prediction markets ($44B in 2025, projected $1T by 2027). Technical breakdown of multi-venue arb, unified oracle, and execution engine. Included because it landed in Jeremy's link stream.
 
@@ -1562,6 +1570,18 @@
 ## Full Chronological List
 
 ### Apr 2026
+
+- **2026-04-30** | [Garry Tan](https://x.com/garrytan/status/2049720409965392052) | general
+  Post by Garry Tan (content not yet scraped)
+
+- **2026-04-30** | [How To AI](https://x.com/howtoai_/status/2049567036003795269) | general
+  Post by How To AI (content not yet scraped)
+
+- **2026-04-30** | [Akshay](https://x.com/akshay_pachaar/status/2049476617144287719) | general
+  Post by Akshay (content not yet scraped)
+
+- **2026-04-30** | [Darshak Rana](https://x.com/thedarshakrana/status/2049151671692136778) | general
+  Post by Darshak Rana (content not yet scraped)
 
 - **2026-04-28** | [Aparna Dhinakaran](https://x.com/aparnadhinak/status/2047849364547420382) | agent-design, claude-code
   Aparna riffs on Aran Komatsuzaki's note that Anthropic just shipped 'forked subagents' which inherit the main agent's context (vs. fresh-context regular subagents). Her take: harnesses are converging on the same context-passing problems and dynamic, agent-decided context is the direction.
