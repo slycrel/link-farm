@@ -1,31 +1,31 @@
 # AI Links Collection
 **Total Posts**: 410  
 **Date Range**: 2024-06-11 – 2026-04-30  
-**Enriched**: 406/410 (99%)
+**Enriched**: 410/410 (100%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 185 | 45.1% |
+| agent-design | 187 | 45.6% |
 | claude-code | 86 | 21.0% |
-| dev-practices | 101 | 24.6% |
-| skills-mcp | 52 | 12.7% |
+| dev-practices | 102 | 24.9% |
+| skills-mcp | 53 | 12.9% |
 | prompting | 47 | 11.5% |
-| research | 62 | 15.1% |
+| research | 63 | 15.4% |
 | industry | 36 | 8.8% |
 | management | 65 | 15.9% |
-| questionable | 29 | 7.1% |
-| general | 68 | 16.6% |
+| questionable | 31 | 7.6% |
+| general | 66 | 16.1% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
-| 2026-04-30 | Garry Tan | general | Post by Garry Tan (content not yet scraped) |
-| 2026-04-30 | How To AI | general | Post by How To AI (content not yet scraped) |
-| 2026-04-30 | Akshay | general | Post by Akshay (content not yet scraped) |
-| 2026-04-30 | Darshak Rana | general | Post by Darshak Rana (content not yet scraped) |
+| 2026-04-30 | Garry Tan | dev-practices | Garry Tan (YC President & CEO) shipping 10 PRs to GBrain — his persona... |
+| 2026-04-30 | How To AI | research | Tencent's Training-Free GRPO claims to replace expensive RL fine-tunin... |
+| 2026-04-30 | Akshay | agent-design | Akshay rebuilt 'OpenClaw' core in a single Sim Studio workflow (25 blo... |
+| 2026-04-30 | Darshak Rana | questionable | Long-form personal development X article ('Your Next 5 Years Will Be a... |
 | 2026-04-28 | Aparna Dhinakaran | agent-design | Aparna riffs on Aran Komatsuzaki's note that Anthropic just shipped 'f... |
 | 2026-04-28 | Edouard Reinach | agent-design | Edouard promotes Predict-RLM (github.com/Trampoline-AI/predict-rlm) —... |
 | 2026-04-28 | Hasan Toor | agent-design | Hasan announces future-agi (github.com/future-agi/future-agi, cloud at... |
@@ -76,7 +76,11 @@
 ---
 ## Posts by Topic
 
-### Agent Design (185)
+### Agent Design (187)
+
+- [How To AI](https://x.com/howtoai_/status/2049567036003795269) — 2026-04-30: Tencent's Training-Free GRPO claims to replace expensive RL fine-tuning by extracting the 'semantic advantage' from trial-and-error and injecting it as a 'token prior' / memory rather than updating weights — reportedly trained for $18. Hype-framed ("killed fine-tuning") but the underlying technique is a notable alternative to GRPO/RLHF that avoids overfitting and GPU costs.
+
+- [Akshay](https://x.com/akshay_pachaar/status/2049476617144287719) — 2026-04-30: Akshay rebuilt 'OpenClaw' core in a single Sim Studio workflow (25 blocks, 29 connections, short+long-term memory, Telegram+Slack channels) without manual coding — pitched as an 'OS for your AI workforce.' Stack is open-source and self-hostable: github.com/simstudioai/sim
 
 - [Aparna Dhinakaran](https://x.com/aparnadhinak/status/2047849364547420382) — 2026-04-28: Aparna riffs on Aran Komatsuzaki's note that Anthropic just shipped 'forked subagents' which inherit the main agent's context (vs. fresh-context regular subagents). Her take: harnesses are converging on the same context-passing problems and dynamic, agent-decided context is the direction.
 
@@ -622,7 +626,9 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (101)
+### Dev Practices (102)
+
+- [Garry Tan](https://x.com/garrytan/status/2049720409965392052) — 2026-04-30: Garry Tan (YC President & CEO) shipping 10 PRs to GBrain — his personal AI/markdown 'second brain' tool — focused on quality-of-life improvements to make it scale across a corpus of 74k markdown files.
 
 - [Hasan Toor](https://x.com/hasantoxr/status/2047637109343928827) — 2026-04-28: Hasan announces future-agi (github.com/future-agi/future-agi, cloud at app.futureagi.com) — open-source end-to-end platform for evaluating, observing, and managing AI agents in production. Nightly releases, stable coming soon. Self-host or free cloud tier.
 
@@ -826,7 +832,9 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (52)
+### Skills & MCP (53)
+
+- [Akshay](https://x.com/akshay_pachaar/status/2049476617144287719) — 2026-04-30: Akshay rebuilt 'OpenClaw' core in a single Sim Studio workflow (25 blocks, 29 connections, short+long-term memory, Telegram+Slack channels) without manual coding — pitched as an 'OS for your AI workforce.' Stack is open-source and self-hostable: github.com/simstudioai/sim
 
 - [Yasir Ai](https://x.com/aiwithyasir/status/2047589529650176333) — 2026-04-28: GitNexus — open-source code knowledge graph engine. Tree-sitter AST parsing maps every dependency, call chain, and execution flow in a repo, then plugs into Claude Code, Cursor, and Windsurf via MCP. Features: blast-radius analysis before edits, cross-file symbol renames, auto-generated wiki, functional-cluster grouping with cohesion scores. 'BREAKING' engagement-farming framing but real substance behind it.
 
@@ -1028,7 +1036,9 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
 
-### Research (62)
+### Research (63)
+
+- [How To AI](https://x.com/howtoai_/status/2049567036003795269) — 2026-04-30: Tencent's Training-Free GRPO claims to replace expensive RL fine-tuning by extracting the 'semantic advantage' from trial-and-error and injecting it as a 'token prior' / memory rather than updating weights — reportedly trained for $18. Hype-framed ("killed fine-tuning") but the underlying technique is a notable alternative to GRPO/RLHF that avoids overfitting and GPU costs.
 
 - [Edouard Reinach](https://x.com/ereinach/status/2047802558136058258) — 2026-04-28: Edouard promotes Predict-RLM (github.com/Trampoline-AI/predict-rlm) — a production-ready, 'batteries-included' implementation, riffing on a viral post about MIT CSAIL's Dec 2025 paper claiming to solve AI memory by teaching models to read instead of building bigger brains.
 
@@ -1360,7 +1370,11 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
 
-### Questionable (29)
+### Questionable (31)
+
+- [How To AI](https://x.com/howtoai_/status/2049567036003795269) — 2026-04-30: Tencent's Training-Free GRPO claims to replace expensive RL fine-tuning by extracting the 'semantic advantage' from trial-and-error and injecting it as a 'token prior' / memory rather than updating weights — reportedly trained for $18. Hype-framed ("killed fine-tuning") but the underlying technique is a notable alternative to GRPO/RLHF that avoids overfitting and GPU costs.
+
+- [Darshak Rana](https://x.com/thedarshakrana/status/2049151671692136778) — 2026-04-30: Long-form personal development X article ('Your Next 5 Years Will Be an Exact Copy of Your Last 5') riffing on the marshmallow test and the idea that personality is a set of learned thought patterns rather than fixed identity. 1.1M views — engagement-farming framing; not AI-related but Jeremy flagged it.
 
 - [Yasir Ai](https://x.com/aiwithyasir/status/2047589529650176333) — 2026-04-28: GitNexus — open-source code knowledge graph engine. Tree-sitter AST parsing maps every dependency, call chain, and execution flow in a repo, then plugs into Claude Code, Cursor, and Windsurf via MCP. Features: blast-radius analysis before edits, cross-file symbol renames, auto-generated wiki, functional-cluster grouping with cohesion scores. 'BREAKING' engagement-farming framing but real substance behind it.
 
@@ -1420,15 +1434,11 @@
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
 
-### General (72)
+### General (70)
 
-- [Garry Tan](https://x.com/garrytan/status/2049720409965392052) — 2026-04-30: Post by Garry Tan (content not yet scraped)
+- [Garry Tan](https://x.com/garrytan/status/2049720409965392052) — 2026-04-30: Garry Tan (YC President & CEO) shipping 10 PRs to GBrain — his personal AI/markdown 'second brain' tool — focused on quality-of-life improvements to make it scale across a corpus of 74k markdown files.
 
-- [How To AI](https://x.com/howtoai_/status/2049567036003795269) — 2026-04-30: Post by How To AI (content not yet scraped)
-
-- [Akshay](https://x.com/akshay_pachaar/status/2049476617144287719) — 2026-04-30: Post by Akshay (content not yet scraped)
-
-- [Darshak Rana](https://x.com/thedarshakrana/status/2049151671692136778) — 2026-04-30: Post by Darshak Rana (content not yet scraped)
+- [Darshak Rana](https://x.com/thedarshakrana/status/2049151671692136778) — 2026-04-30: Long-form personal development X article ('Your Next 5 Years Will Be an Exact Copy of Your Last 5') riffing on the marshmallow test and the idea that personality is a set of learned thought patterns rather than fixed identity. 1.1M views — engagement-farming framing; not AI-related but Jeremy flagged it.
 
 - [PolyArb](https://x.com/usepolyarb/status/2045109166599963026) — 2026-04-18: Prediction-markets arbitrage infrastructure launch — not AI-focused. Six years of derivatives execution (FX arb → crypto perps → prop trading); now targeting prediction markets ($44B in 2025, projected $1T by 2027). Technical breakdown of multi-venue arb, unified oracle, and execution engine. Included because it landed in Jeremy's link stream.
 
@@ -1571,17 +1581,17 @@
 
 ### Apr 2026
 
-- **2026-04-30** | [Garry Tan](https://x.com/garrytan/status/2049720409965392052) | general
-  Post by Garry Tan (content not yet scraped)
+- **2026-04-30** | [Garry Tan](https://x.com/garrytan/status/2049720409965392052) | dev-practices, general
+  Garry Tan (YC President & CEO) shipping 10 PRs to GBrain — his personal AI/markdown 'second brain' tool — focused on quality-of-life improvements to make it scale across a corpus of 74k markdown files.
 
-- **2026-04-30** | [How To AI](https://x.com/howtoai_/status/2049567036003795269) | general
-  Post by How To AI (content not yet scraped)
+- **2026-04-30** | [How To AI](https://x.com/howtoai_/status/2049567036003795269) | research, agent-design, questionable
+  Tencent's Training-Free GRPO claims to replace expensive RL fine-tuning by extracting the 'semantic advantage' from trial-and-error and injecting it as a 'token prior' / memory rather than updating weights — reportedly trained for $18. Hype-framed ("killed fine-tuning") but the underlying technique is a notable alternative to GRPO/RLHF that avoids overfitting and GPU costs.
 
-- **2026-04-30** | [Akshay](https://x.com/akshay_pachaar/status/2049476617144287719) | general
-  Post by Akshay (content not yet scraped)
+- **2026-04-30** | [Akshay](https://x.com/akshay_pachaar/status/2049476617144287719) | agent-design, skills-mcp
+  Akshay rebuilt 'OpenClaw' core in a single Sim Studio workflow (25 blocks, 29 connections, short+long-term memory, Telegram+Slack channels) without manual coding — pitched as an 'OS for your AI workforce.' Stack is open-source and self-hostable: github.com/simstudioai/sim
 
-- **2026-04-30** | [Darshak Rana](https://x.com/thedarshakrana/status/2049151671692136778) | general
-  Post by Darshak Rana (content not yet scraped)
+- **2026-04-30** | [Darshak Rana](https://x.com/thedarshakrana/status/2049151671692136778) | questionable, general
+  Long-form personal development X article ('Your Next 5 Years Will Be an Exact Copy of Your Last 5') riffing on the marshmallow test and the idea that personality is a set of learned thought patterns rather than fixed identity. 1.1M views — engagement-farming framing; not AI-related but Jeremy flagged it.
 
 - **2026-04-28** | [Aparna Dhinakaran](https://x.com/aparnadhinak/status/2047849364547420382) | agent-design, claude-code
   Aparna riffs on Aran Komatsuzaki's note that Anthropic just shipped 'forked subagents' which inherit the main agent's context (vs. fresh-context regular subagents). Her take: harnesses are converging on the same context-passing problems and dynamic, agent-decided context is the direction.
