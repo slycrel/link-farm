@@ -1,27 +1,49 @@
 # AI Links Collection
-**Total Posts**: 410  
-**Date Range**: 2024-06-11 – 2026-04-30  
-**Enriched**: 410/410 (100%)
+**Total Posts**: 432  
+**Date Range**: 2024-06-11 – 2026-05-02  
+**Enriched**: 432/432 (100%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 187 | 45.6% |
-| claude-code | 86 | 21.0% |
-| dev-practices | 102 | 24.9% |
-| skills-mcp | 53 | 12.9% |
-| prompting | 47 | 11.5% |
-| research | 63 | 15.4% |
-| industry | 36 | 8.8% |
-| management | 65 | 15.9% |
-| questionable | 31 | 7.6% |
-| general | 66 | 16.1% |
+| agent-design | 196 | 45.4% |
+| claude-code | 91 | 21.1% |
+| dev-practices | 109 | 25.2% |
+| skills-mcp | 55 | 12.7% |
+| prompting | 50 | 11.6% |
+| research | 68 | 15.7% |
+| industry | 39 | 9.0% |
+| management | 71 | 16.4% |
+| questionable | 36 | 8.3% |
+| general | 67 | 15.5% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-05-02 | Dave Kline | management | A 15-minute manager/employee playbook for resetting expectations when... |
+| 2026-05-02 | Ole Lehmann | prompting | Argues you should run a 'premortem' on your plans with Claude — frame... |
+| 2026-05-02 | 0xSero | claude-code | Reminder that Claude Code session history is auto-deleted monthly unle... |
+| 2026-05-02 | darkzodchi | dev-practices | Promotes a security article + .gitignore template after citing that An... |
+| 2026-05-02 | Blaze | agent-design | French teenager built a 3D map of 217 mental models (1284 connections)... |
+| 2026-05-02 | Muhammad Ayan | agent-design | Pointer to github.com/warpdotdev/warp — Warp terminal's source has bee... |
+| 2026-05-02 | Kpaxs | management | Kpaxs reframes high-agency behavior: 'I'm doing this unless someone st... |
+| 2026-05-02 | Om Patel | claude-code | Promoted Claude Code skill /graphify that pre-builds a graph of your c... |
+| 2026-05-02 | Tom Doerr | agent-design | Curated awesome-list at github.com/EvoMap/awesome-agent-evolution cove... |
+| 2026-05-02 | Keith Rabois | management | Rabois (one-word 'Useful.') endorsing Ann Miura-Ko's piece arguing mos... |
+| 2026-05-02 | Dan Shipper | agent-design | Dan Shipper recommends Marcus's 'definitive guide' on how a PM can shi... |
+| 2026-05-02 | regent0x | agent-design | Story (likely embellished) about a solo Chinese dev billing $320k/yr b... |
+| 2026-05-02 | Xiuyu Li | research | Endorses Will Brown's writeup 'On SFT, RL, and on-policy distillation'... |
+| 2026-05-02 | GPT Maestro | prompting | Quote-tweet endorsing a clear walkthrough of GEPA — a technique that o... |
+| 2026-05-02 | Mike Bespalov | agent-design | Refero.design publishes 2000 DESIGN.md files (colors, type, spacing, l... |
+| 2026-05-02 | Xiangyi Li | agent-design | One-liner endorsement quote-tweeting an article about reducing entropy... |
+| 2026-05-02 | BasedBiohacker | general | [Off-topic — not AI/tech] Biohacking/nootropics vendor and dosage list... |
+| 2026-05-01 | Akshay | claude-code | Walkthrough of why Claude skills fail silently and how progressive dis... |
+| 2026-05-01 | Allen Braden | questionable | Engagement-farming claim that a 'junior at Jane Street' landed $220K-6... |
+| 2026-05-01 | 摆烂程序媛 | dev-practices | Translated-from-Chinese promotion of Scrapling (github.com/D4Vinci/Scr... |
+| 2026-05-01 | Teknium | agent-design | Teknium ships a /goal command in NousResearch hermes-agent (PR github.... |
+| 2026-05-01 | Qwen | research | Alibaba Qwen team open-sources Qwen-Scope, a suite of sparse autoencod... |
 | 2026-04-30 | Garry Tan | dev-practices | Garry Tan (YC President & CEO) shipping 10 PRs to GBrain — his persona... |
 | 2026-04-30 | How To AI | research | Tencent's Training-Free GRPO claims to replace expensive RL fine-tunin... |
 | 2026-04-30 | Akshay | agent-design | Akshay rebuilt 'OpenClaw' core in a single Sim Studio workflow (25 blo... |
@@ -50,33 +72,29 @@
 | 2026-04-23 | Avi Chawla | claude-code | Claim of 3x token reduction on Claude Code (10.4M→3.7M tokens, $9.21→$... |
 | 2026-04-21 | Shubham Saboo | agent-design | Shares agentic-stack — 'One brain, many harnesses. Portable .agent/ fo... |
 | 2026-04-21 | Tech with Mak | research | Summary of Meta's REFRAG paper: compresses retrieved RAG chunks into s... |
-| 2026-04-21 | Aakash Gupta | industry | Essay arguing Yann LeCun left Meta because Zuck wouldn't bet the compa... |
-| 2026-04-21 | Tom Dörr | agent-design | Recursive self-improving agent harness — a tool that lets an agent ite... |
-| 2026-04-21 | Sydney Runkle | agent-design | LangChain team piece on 'The runtime behind production deep agents' —... |
-| 2026-04-21 | Nav Toor | research | Intro to PoisonedRAG attack: researchers showed 5 malicious documents... |
-| 2026-04-21 | Simplifying AI | research | Summary of Microsoft's MEMENTO paper: instead of growing the KV cache... |
-| 2026-04-21 | Sigrid Jin | agent-design | Quote-tweet of Junghwan Na's writeup — Na got his GitHub banned after... |
-| 2026-04-21 | Raymond Weitekamp | research | Thoughtful long-form post on Recursive Language Models (RLMs) — 'the n... |
-| 2026-04-21 | Ihtesham Ali | prompting | Writeup of George Pólya's 1945 book 'How to Solve It' — the four-step... |
-| 2026-04-21 | Vox | claude-code | The #1 GitHub trending repo this week (44,465 stars) is a CLAUDE.md fi... |
-| 2026-04-20 | Akshay | agent-design | Summary of a Google DeepMind paper on 'AI Agent Traps' — first systema... |
-| 2026-04-20 | Kenneth Auchenberg | agent-design | Short quote-tweet on Aparna Dhinakaran's article 'Sandboxes Are the Se... |
-| 2026-04-20 | 阿绎 AYi | research | Thread (translated from Chinese) hyping an open-source project 'OpenMy... |
-| 2026-04-19 | Garry Tan | agent-design | Launch of GBrain v0.11 with 'Minions' — a BullMQ-based queue/jobs syst... |
-| 2026-04-18 | Akshay | agent-design | Summary of UCL paper 'Dive into Claude Code' (arXiv:2604.14228) revers... |
-| 2026-04-18 | Alex Ker | agent-design | Guide on optimizing your agent harness. Three levers: (1) keep config... |
-| 2026-04-18 | Daniel Miessler | agent-design | Miessler endorses 'Interceptor' by @ronaldeddings as the best Browser... |
-| 2026-04-18 | Kevin Simback | agent-design | Self-quote-tweet pointing back to Simback's Apr 16 article 'The AI Age... |
-| 2026-04-18 | PolyArb | industry | Prediction-markets arbitrage infrastructure launch — not AI-focused. S... |
-| 2026-04-18 | Eric Hartford | research | Response to Anthropic's Project Glasswing / Claude Mythos Preview anno... |
-| 2026-04-17 | Alter Ego | agent-design | Promo for Hermes Agent from Nous Research (team behind YaRN, Nomos, Ps... |
-| 2026-04-17 | 0xSero | agent-design | 0xSero (quote-tweeting Sarah Chieng's article 'Single-agent AI coding... |
-| 2026-04-17 | Hamudi | industry | Quote-tweet on Sequoia's $1T 'sell work, not software' thesis. Hamudi... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (187)
+### Agent Design (196)
+
+- [Blaze](https://x.com/browomo/status/2050509770604331510) — 2026-05-02: French teenager built a 3D map of 217 mental models (1284 connections) controlled by hand gestures + voice, running Three.js + MediaPipe Hands + local Whisper + Claude API + Google Antigravity. Whole stack assembled in one weekend; 80ms gesture-to-graph latency, runs from a 47MB Obsidian vault on a regular laptop.
+
+- [Muhammad Ayan](https://x.com/socialwithaayan/status/2050484688968724820) — 2026-05-02: Pointer to github.com/warpdotdev/warp — Warp terminal's source has been published as 'an agentic development environment, born out of the terminal.' Worth a look as a coding-agent shell.
+
+- [Om Patel](https://x.com/om_patel5/status/2050441119003971683) — 2026-05-02: Promoted Claude Code skill /graphify that pre-builds a graph of your codebase (functions, deps, docs, PDFs, images, audio, video via Whisper) so Claude doesn't waste tokens exploring. Author claims '71.5x more efficient' (engagement-farming framing).
+
+- [Tom Doerr](https://x.com/tom_doerr/status/2050312101504094651) — 2026-05-02: Curated awesome-list at github.com/EvoMap/awesome-agent-evolution covering AI agent evolution, memory systems, and self-improvement.
+
+- [Dan Shipper](https://x.com/danshipper/status/2050235671466606665) — 2026-05-02: Dan Shipper recommends Marcus's 'definitive guide' on how a PM can ship product with coding agents at Every: every.to/guides/ai-product-management-guide. Pitched as required reading for non-engineer builders.
+
+- [regent0x](https://x.com/regent0x_/status/2050143341656838449) — 2026-05-02: Story (likely embellished) about a solo Chinese dev billing $320k/yr by orchestrating 5 specialized Claude agents in parallel: architect, coder, reviewer, tester, ops. Each agent has its own context, no shared state. Engagement-y framing but the parallel-specialist pattern is real.
+
+- [Mike Bespalov](https://x.com/bbssppllvv/status/2049924037111841027) — 2026-05-02: Refero.design publishes 2000 DESIGN.md files (colors, type, spacing, layouts) extracted from the world's best products, structured for an LLM to read so coding agents stop producing ugly UIs. Free at styles.refero.design.
+
+- [Xiangyi Li](https://x.com/xdotli/status/2049903693143609627) — 2026-05-02: One-liner endorsement quote-tweeting an article about reducing entropy/non-determinism in agentic systems — Xiangyi (founder benchflow_ai, creator of SkillsBench/ClawsBench) calls it a must-read. Quoted article URL not surfaced; check thread for context.
+
+- [Teknium](https://x.com/teknium/status/2050098631907434871) — 2026-05-01: Teknium ships a /goal command in NousResearch hermes-agent (PR github.com/NousResearch/hermes-agent/pull/18262) — supervisor-loop pattern inspired by ralph loops + Codex's upcoming /goal: keeps re-prompting the agent until the supervisor judges the task complete.
 
 - [How To AI](https://x.com/howtoai_/status/2049567036003795269) — 2026-04-30: Tencent's Training-Free GRPO claims to replace expensive RL fine-tuning by extracting the 'semantic advantage' from trial-and-error and injecting it as a 'token prior' / memory rather than updating weights — reportedly trained for $18. Hype-framed ("killed fine-tuning") but the underlying technique is a notable alternative to GRPO/RLHF that avoids overfitting and GPU costs.
 
@@ -452,7 +470,17 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Claude Code (86)
+### Claude Code (91)
+
+- [0xSero](https://x.com/0xsero/status/2050544304360165585) — 2026-05-02: Reminder that Claude Code session history is auto-deleted monthly unless you change settings.json — that's all valuable training/context data. 0xSero shares a backup repo (github.com/0xSero/ai-data-extraction) to help you preserve it.
+
+- [darkzodchi](https://x.com/zodchiii/status/2050537397377532341) — 2026-05-02: Promotes a security article + .gitignore template after citing that Anthropic allegedly leaked 512K lines of source code from a missing .gitignore entry. Boris Cherny (Claude Code creator) cited as the cautionary tale. Engagement framing, but the .gitignore best-practices angle is legitimately useful.
+
+- [Blaze](https://x.com/browomo/status/2050509770604331510) — 2026-05-02: French teenager built a 3D map of 217 mental models (1284 connections) controlled by hand gestures + voice, running Three.js + MediaPipe Hands + local Whisper + Claude API + Google Antigravity. Whole stack assembled in one weekend; 80ms gesture-to-graph latency, runs from a 47MB Obsidian vault on a regular laptop.
+
+- [Om Patel](https://x.com/om_patel5/status/2050441119003971683) — 2026-05-02: Promoted Claude Code skill /graphify that pre-builds a graph of your codebase (functions, deps, docs, PDFs, images, audio, video via Whisper) so Claude doesn't waste tokens exploring. Author claims '71.5x more efficient' (engagement-farming framing).
+
+- [Akshay](https://x.com/akshay_pachaar/status/2050201509821063576) — 2026-05-01: Walkthrough of why Claude skills fail silently and how progressive disclosure works: Tier 1 = YAML frontmatter (~100 tokens, always loaded), Tier 2 = SKILL.md body (loads on trigger from description), Tier 3 = bundled scripts (loaded on demand, only stdout enters context). Description quality determines triggering.
 
 - [Aparna Dhinakaran](https://x.com/aparnadhinak/status/2047849364547420382) — 2026-04-28: Aparna riffs on Aran Komatsuzaki's note that Anthropic just shipped 'forked subagents' which inherit the main agent's context (vs. fresh-context regular subagents). Her take: harnesses are converging on the same context-passing problems and dynamic, agent-decided context is the direction.
 
@@ -626,7 +654,21 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (102)
+### Dev Practices (109)
+
+- [0xSero](https://x.com/0xsero/status/2050544304360165585) — 2026-05-02: Reminder that Claude Code session history is auto-deleted monthly unless you change settings.json — that's all valuable training/context data. 0xSero shares a backup repo (github.com/0xSero/ai-data-extraction) to help you preserve it.
+
+- [darkzodchi](https://x.com/zodchiii/status/2050537397377532341) — 2026-05-02: Promotes a security article + .gitignore template after citing that Anthropic allegedly leaked 512K lines of source code from a missing .gitignore entry. Boris Cherny (Claude Code creator) cited as the cautionary tale. Engagement framing, but the .gitignore best-practices angle is legitimately useful.
+
+- [Muhammad Ayan](https://x.com/socialwithaayan/status/2050484688968724820) — 2026-05-02: Pointer to github.com/warpdotdev/warp — Warp terminal's source has been published as 'an agentic development environment, born out of the terminal.' Worth a look as a coding-agent shell.
+
+- [Dan Shipper](https://x.com/danshipper/status/2050235671466606665) — 2026-05-02: Dan Shipper recommends Marcus's 'definitive guide' on how a PM can ship product with coding agents at Every: every.to/guides/ai-product-management-guide. Pitched as required reading for non-engineer builders.
+
+- [Mike Bespalov](https://x.com/bbssppllvv/status/2049924037111841027) — 2026-05-02: Refero.design publishes 2000 DESIGN.md files (colors, type, spacing, layouts) extracted from the world's best products, structured for an LLM to read so coding agents stop producing ugly UIs. Free at styles.refero.design.
+
+- [摆烂程序媛](https://x.com/wanerfu/status/2050158295911137370) — 2026-05-01: Translated-from-Chinese promotion of Scrapling (github.com/D4Vinci/Scrapling) — open-source web scraper claiming Cloudflare bypass with no selector maintenance and '774x faster than BeautifulSoup'. Useful for AI scrape pipelines if benchmark holds up.
+
+- [Teknium](https://x.com/teknium/status/2050098631907434871) — 2026-05-01: Teknium ships a /goal command in NousResearch hermes-agent (PR github.com/NousResearch/hermes-agent/pull/18262) — supervisor-loop pattern inspired by ralph loops + Codex's upcoming /goal: keeps re-prompting the agent until the supervisor judges the task complete.
 
 - [Garry Tan](https://x.com/garrytan/status/2049720409965392052) — 2026-04-30: Garry Tan (YC President & CEO) shipping 10 PRs to GBrain — his personal AI/markdown 'second brain' tool — focused on quality-of-life improvements to make it scale across a corpus of 74k markdown files.
 
@@ -832,7 +874,11 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (53)
+### Skills & MCP (55)
+
+- [Om Patel](https://x.com/om_patel5/status/2050441119003971683) — 2026-05-02: Promoted Claude Code skill /graphify that pre-builds a graph of your codebase (functions, deps, docs, PDFs, images, audio, video via Whisper) so Claude doesn't waste tokens exploring. Author claims '71.5x more efficient' (engagement-farming framing).
+
+- [Akshay](https://x.com/akshay_pachaar/status/2050201509821063576) — 2026-05-01: Walkthrough of why Claude skills fail silently and how progressive disclosure works: Tier 1 = YAML frontmatter (~100 tokens, always loaded), Tier 2 = SKILL.md body (loads on trigger from description), Tier 3 = bundled scripts (loaded on demand, only stdout enters context). Description quality determines triggering.
 
 - [Akshay](https://x.com/akshay_pachaar/status/2049476617144287719) — 2026-04-30: Akshay rebuilt 'OpenClaw' core in a single Sim Studio workflow (25 blocks, 29 connections, short+long-term memory, Telegram+Slack channels) without manual coding — pitched as an 'OS for your AI workforce.' Stack is open-source and self-hostable: github.com/simstudioai/sim
 
@@ -940,7 +986,13 @@
 
 - [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Anthropic released a frontend-design plugin for Claude Code — demo shows Claude creating a music player app. Install via /plugin marketplace add anthropics/claude-code and /plugin install frontend-design@claude-code-plugins.
 
-### Prompting (47)
+### Prompting (50)
+
+- [Ole Lehmann](https://x.com/itsolelehmann/status/2050548948419645488) — 2026-05-02: Argues you should run a 'premortem' on your plans with Claude — frame it as 'it's 6 months from now, this plan died, tell me how' — to bypass the model's optimism bias. Cites Kahneman; says Google, Goldman, P&G use it before launches.
+
+- [GPT Maestro](https://x.com/gptmaestro/status/2050060105052561681) — 2026-05-02: Quote-tweet endorsing a clear walkthrough of GEPA — a technique that optimizes prompts before inference rather than cramming more into context. Quoted source: Quarq's 'Exploring GEPA' (also covers Recursive Language Models / RLMs).
+
+- [Akshay](https://x.com/akshay_pachaar/status/2050201509821063576) — 2026-05-01: Walkthrough of why Claude skills fail silently and how progressive disclosure works: Tier 1 = YAML frontmatter (~100 tokens, always loaded), Tier 2 = SKILL.md body (loads on trigger from description), Tier 3 = bundled scripts (loaded on demand, only stdout enters context). Description quality determines triggering.
 
 - [TRAE](https://x.com/trae_ai/status/2047145274200768969) — 2026-04-23: "Definitive Guide to Harness Engineering" — long thread positioning Harness Engineering (term coined by Mitchell Hashimoto) as the next pillar after prompt/context engineering. Core idea: AI agent = SOTA model (wild horse) + harness (control system). Framework-naming post but captures a real shift in agent productization.
 
@@ -1036,7 +1088,17 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
 
-### Research (63)
+### Research (68)
+
+- [Tom Doerr](https://x.com/tom_doerr/status/2050312101504094651) — 2026-05-02: Curated awesome-list at github.com/EvoMap/awesome-agent-evolution covering AI agent evolution, memory systems, and self-improvement.
+
+- [Xiuyu Li](https://x.com/sheriyuo/status/2050067900820840791) — 2026-05-02: Endorses Will Brown's writeup 'On SFT, RL, and on-policy distillation' — why the SFT→RL pipeline works, where on-policy distillation fits, and how self-distillation goes wrong. Co-authored with Claude Opus 4.7.
+
+- [GPT Maestro](https://x.com/gptmaestro/status/2050060105052561681) — 2026-05-02: Quote-tweet endorsing a clear walkthrough of GEPA — a technique that optimizes prompts before inference rather than cramming more into context. Quoted source: Quarq's 'Exploring GEPA' (also covers Recursive Language Models / RLMs).
+
+- [Xiangyi Li](https://x.com/xdotli/status/2049903693143609627) — 2026-05-02: One-liner endorsement quote-tweeting an article about reducing entropy/non-determinism in agentic systems — Xiangyi (founder benchflow_ai, creator of SkillsBench/ClawsBench) calls it a must-read. Quoted article URL not surfaced; check thread for context.
+
+- [Qwen](https://x.com/alibaba_qwen/status/2049861145574690992) — 2026-05-01: Alibaba Qwen team open-sources Qwen-Scope, a suite of sparse autoencoders (SAEs) for the Qwen model family. Surfaces interpretable internal features for steering inference, classifying/synthesizing data, debugging code-switching/repetition at the source, and selecting smarter benchmarks. Blog at qwen.ai/blog?id=qwen-scope, weights on HuggingFace.
 
 - [How To AI](https://x.com/howtoai_/status/2049567036003795269) — 2026-04-30: Tencent's Training-Free GRPO claims to replace expensive RL fine-tuning by extracting the 'semantic advantage' from trial-and-error and injecting it as a 'token prior' / memory rather than updating weights — reportedly trained for $18. Hype-framed ("killed fine-tuning") but the underlying technique is a notable alternative to GRPO/RLHF that avoids overfitting and GPU costs.
 
@@ -1164,7 +1226,13 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: 15-part thread explaining the 'stunning, simple explanation behind matrix multiplication' — breaks down the most crucial idea behind modern machine learning. 1M views.
 
-### Industry (36)
+### Industry (39)
+
+- [Keith Rabois](https://x.com/rabois/status/2050250243552239956) — 2026-05-02: Rabois (one-word 'Useful.') endorsing Ann Miura-Ko's piece arguing most scaled companies (e.g. Ramp, 1500-person org) are still Level 1 on AI adoption despite the 'AI-pilled' narrative — based on her recent office visits.
+
+- [Allen Braden](https://x.com/allen_explains/status/2050163013165224332) — 2026-05-01: Engagement-farming claim that a 'junior at Jane Street' landed $220K-600K by using AI on trillions of data points. Community Note corrects: it's actually a 2024 Horace He talk on ML systems infra at Jane Street — he was a guest speaker, not an employee, and it has nothing to do with AI for trading.
+
+- [Qwen](https://x.com/alibaba_qwen/status/2049861145574690992) — 2026-05-01: Alibaba Qwen team open-sources Qwen-Scope, a suite of sparse autoencoders (SAEs) for the Qwen model family. Surfaces interpretable internal features for steering inference, classifying/synthesizing data, debugging code-switching/repetition at the source, and selecting smarter benchmarks. Blog at qwen.ai/blog?id=qwen-scope, weights on HuggingFace.
 
 - [Alex Volkov](https://x.com/altryne/status/2046977133013311814) — 2026-04-23: OpenAI open-sourced a 1.5B parameter (50M active) Privacy Filter model on HuggingFace under Apache 2.0 — a PII detection model for checking if text contains private information. Not a new LLM but a purpose-built classifier for data pipelines.
 
@@ -1238,7 +1306,19 @@
 
 - [Dante O. Cuales](https://x.com/danteocualesjr/status/1957204427909321027) — 2025-08-18: Reply to a thread about AI engineering being easy to learn — argues the 'intimidation factor is mostly artificial' since most AI engineering is API orchestration, prompt optimization, and data pipeline work. The hard parts are already abstracted away.
 
-### Management (65)
+### Management (71)
+
+- [Dave Kline](https://x.com/dklineii/status/2050563237490344194) — 2026-05-02: A 15-minute manager/employee playbook for resetting expectations when someone is stuck — Kline argues 95% of work problems trace back to unclear expectations. Practical management tactic, no AI angle.
+
+- [Ole Lehmann](https://x.com/itsolelehmann/status/2050548948419645488) — 2026-05-02: Argues you should run a 'premortem' on your plans with Claude — frame it as 'it's 6 months from now, this plan died, tell me how' — to bypass the model's optimism bias. Cites Kahneman; says Google, Goldman, P&G use it before launches.
+
+- [Kpaxs](https://x.com/kpaxs/status/2050470605804216695) — 2026-05-02: Kpaxs reframes high-agency behavior: 'I'm doing this unless someone stops me' vs 'Can I do this?' — most permissions get granted retroactively, so it's easier to ask forgiveness than permission. Useful framing for engineering culture and AI adoption.
+
+- [Keith Rabois](https://x.com/rabois/status/2050250243552239956) — 2026-05-02: Rabois (one-word 'Useful.') endorsing Ann Miura-Ko's piece arguing most scaled companies (e.g. Ramp, 1500-person org) are still Level 1 on AI adoption despite the 'AI-pilled' narrative — based on her recent office visits.
+
+- [Dan Shipper](https://x.com/danshipper/status/2050235671466606665) — 2026-05-02: Dan Shipper recommends Marcus's 'definitive guide' on how a PM can ship product with coding agents at Every: every.to/guides/ai-product-management-guide. Pitched as required reading for non-engineer builders.
+
+- [regent0x](https://x.com/regent0x_/status/2050143341656838449) — 2026-05-02: Story (likely embellished) about a solo Chinese dev billing $320k/yr by orchestrating 5 specialized Claude agents in parallel: architect, coder, reviewer, tester, ops. Each agent has its own context, no shared state. Engagement-y framing but the parallel-specialist pattern is real.
 
 - [Ethan Mollick](https://x.com/emollick/status/2047828327856030047) — 2026-04-25: Mollick reacting to rohit's essay 'Aligned Agents Still Build Misaligned Organisations' — argues that organizational design for agents and benchmarking multi-agent systems working in concert is the next critical frontier for making AI economically valuable, and we don't know much about it yet.
 
@@ -1370,7 +1450,17 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
 
-### Questionable (31)
+### Questionable (36)
+
+- [darkzodchi](https://x.com/zodchiii/status/2050537397377532341) — 2026-05-02: Promotes a security article + .gitignore template after citing that Anthropic allegedly leaked 512K lines of source code from a missing .gitignore entry. Boris Cherny (Claude Code creator) cited as the cautionary tale. Engagement framing, but the .gitignore best-practices angle is legitimately useful.
+
+- [Om Patel](https://x.com/om_patel5/status/2050441119003971683) — 2026-05-02: Promoted Claude Code skill /graphify that pre-builds a graph of your codebase (functions, deps, docs, PDFs, images, audio, video via Whisper) so Claude doesn't waste tokens exploring. Author claims '71.5x more efficient' (engagement-farming framing).
+
+- [regent0x](https://x.com/regent0x_/status/2050143341656838449) — 2026-05-02: Story (likely embellished) about a solo Chinese dev billing $320k/yr by orchestrating 5 specialized Claude agents in parallel: architect, coder, reviewer, tester, ops. Each agent has its own context, no shared state. Engagement-y framing but the parallel-specialist pattern is real.
+
+- [Allen Braden](https://x.com/allen_explains/status/2050163013165224332) — 2026-05-01: Engagement-farming claim that a 'junior at Jane Street' landed $220K-600K by using AI on trillions of data points. Community Note corrects: it's actually a 2024 Horace He talk on ML systems infra at Jane Street — he was a guest speaker, not an employee, and it has nothing to do with AI for trading.
+
+- [摆烂程序媛](https://x.com/wanerfu/status/2050158295911137370) — 2026-05-01: Translated-from-Chinese promotion of Scrapling (github.com/D4Vinci/Scrapling) — open-source web scraper claiming Cloudflare bypass with no selector maintenance and '774x faster than BeautifulSoup'. Useful for AI scrape pipelines if benchmark holds up.
 
 - [How To AI](https://x.com/howtoai_/status/2049567036003795269) — 2026-04-30: Tencent's Training-Free GRPO claims to replace expensive RL fine-tuning by extracting the 'semantic advantage' from trial-and-error and injecting it as a 'token prior' / memory rather than updating weights — reportedly trained for $18. Hype-framed ("killed fine-tuning") but the underlying technique is a notable alternative to GRPO/RLHF that avoids overfitting and GPU costs.
 
@@ -1434,7 +1524,9 @@
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
 
-### General (70)
+### General (71)
+
+- [BasedBiohacker](https://x.com/basedbiohacker/status/2049235599874200049) — 2026-05-02: [Off-topic — not AI/tech] Biohacking/nootropics vendor and dosage list at basedbiohacker.any.org, including 'research-only' compounds. Likely sent to the AI inbox by accident.
 
 - [Garry Tan](https://x.com/garrytan/status/2049720409965392052) — 2026-04-30: Garry Tan (YC President & CEO) shipping 10 PRs to GBrain — his personal AI/markdown 'second brain' tool — focused on quality-of-life improvements to make it scale across a corpus of 74k markdown files.
 
@@ -1578,6 +1670,74 @@
 
 ---
 ## Full Chronological List
+
+### May 2026
+
+- **2026-05-02** | [Dave Kline](https://x.com/dklineii/status/2050563237490344194) | management
+  A 15-minute manager/employee playbook for resetting expectations when someone is stuck — Kline argues 95% of work problems trace back to unclear expectations. Practical management tactic, no AI angle.
+
+- **2026-05-02** | [Ole Lehmann](https://x.com/itsolelehmann/status/2050548948419645488) | prompting, management
+  Argues you should run a 'premortem' on your plans with Claude — frame it as 'it's 6 months from now, this plan died, tell me how' — to bypass the model's optimism bias. Cites Kahneman; says Google, Goldman, P&G use it before launches.
+
+- **2026-05-02** | [0xSero](https://x.com/0xsero/status/2050544304360165585) | claude-code, dev-practices
+  Reminder that Claude Code session history is auto-deleted monthly unless you change settings.json — that's all valuable training/context data. 0xSero shares a backup repo (github.com/0xSero/ai-data-extraction) to help you preserve it.
+
+- **2026-05-02** | [darkzodchi](https://x.com/zodchiii/status/2050537397377532341) | dev-practices, claude-code, questionable
+  Promotes a security article + .gitignore template after citing that Anthropic allegedly leaked 512K lines of source code from a missing .gitignore entry. Boris Cherny (Claude Code creator) cited as the cautionary tale. Engagement framing, but the .gitignore best-practices angle is legitimately useful.
+
+- **2026-05-02** | [Blaze](https://x.com/browomo/status/2050509770604331510) | agent-design, claude-code
+  French teenager built a 3D map of 217 mental models (1284 connections) controlled by hand gestures + voice, running Three.js + MediaPipe Hands + local Whisper + Claude API + Google Antigravity. Whole stack assembled in one weekend; 80ms gesture-to-graph latency, runs from a 47MB Obsidian vault on a regular laptop.
+
+- **2026-05-02** | [Muhammad Ayan](https://x.com/socialwithaayan/status/2050484688968724820) | agent-design, dev-practices
+  Pointer to github.com/warpdotdev/warp — Warp terminal's source has been published as 'an agentic development environment, born out of the terminal.' Worth a look as a coding-agent shell.
+
+- **2026-05-02** | [Kpaxs](https://x.com/kpaxs/status/2050470605804216695) | management
+  Kpaxs reframes high-agency behavior: 'I'm doing this unless someone stops me' vs 'Can I do this?' — most permissions get granted retroactively, so it's easier to ask forgiveness than permission. Useful framing for engineering culture and AI adoption.
+
+- **2026-05-02** | [Om Patel](https://x.com/om_patel5/status/2050441119003971683) | claude-code, skills-mcp, agent-design, questionable
+  Promoted Claude Code skill /graphify that pre-builds a graph of your codebase (functions, deps, docs, PDFs, images, audio, video via Whisper) so Claude doesn't waste tokens exploring. Author claims '71.5x more efficient' (engagement-farming framing).
+
+- **2026-05-02** | [Tom Doerr](https://x.com/tom_doerr/status/2050312101504094651) | agent-design, research
+  Curated awesome-list at github.com/EvoMap/awesome-agent-evolution covering AI agent evolution, memory systems, and self-improvement.
+
+- **2026-05-02** | [Keith Rabois](https://x.com/rabois/status/2050250243552239956) | management, industry
+  Rabois (one-word 'Useful.') endorsing Ann Miura-Ko's piece arguing most scaled companies (e.g. Ramp, 1500-person org) are still Level 1 on AI adoption despite the 'AI-pilled' narrative — based on her recent office visits.
+
+- **2026-05-02** | [Dan Shipper](https://x.com/danshipper/status/2050235671466606665) | agent-design, management, dev-practices
+  Dan Shipper recommends Marcus's 'definitive guide' on how a PM can ship product with coding agents at Every: every.to/guides/ai-product-management-guide. Pitched as required reading for non-engineer builders.
+
+- **2026-05-02** | [regent0x](https://x.com/regent0x_/status/2050143341656838449) | agent-design, management, questionable
+  Story (likely embellished) about a solo Chinese dev billing $320k/yr by orchestrating 5 specialized Claude agents in parallel: architect, coder, reviewer, tester, ops. Each agent has its own context, no shared state. Engagement-y framing but the parallel-specialist pattern is real.
+
+- **2026-05-02** | [Xiuyu Li](https://x.com/sheriyuo/status/2050067900820840791) | research
+  Endorses Will Brown's writeup 'On SFT, RL, and on-policy distillation' — why the SFT→RL pipeline works, where on-policy distillation fits, and how self-distillation goes wrong. Co-authored with Claude Opus 4.7.
+
+- **2026-05-02** | [GPT Maestro](https://x.com/gptmaestro/status/2050060105052561681) | prompting, research
+  Quote-tweet endorsing a clear walkthrough of GEPA — a technique that optimizes prompts before inference rather than cramming more into context. Quoted source: Quarq's 'Exploring GEPA' (also covers Recursive Language Models / RLMs).
+
+- **2026-05-02** | [Mike Bespalov](https://x.com/bbssppllvv/status/2049924037111841027) | agent-design, dev-practices
+  Refero.design publishes 2000 DESIGN.md files (colors, type, spacing, layouts) extracted from the world's best products, structured for an LLM to read so coding agents stop producing ugly UIs. Free at styles.refero.design.
+
+- **2026-05-02** | [Xiangyi Li](https://x.com/xdotli/status/2049903693143609627) | agent-design, research
+  One-liner endorsement quote-tweeting an article about reducing entropy/non-determinism in agentic systems — Xiangyi (founder benchflow_ai, creator of SkillsBench/ClawsBench) calls it a must-read. Quoted article URL not surfaced; check thread for context.
+
+- **2026-05-02** | [BasedBiohacker](https://x.com/basedbiohacker/status/2049235599874200049) | general
+  [Off-topic — not AI/tech] Biohacking/nootropics vendor and dosage list at basedbiohacker.any.org, including 'research-only' compounds. Likely sent to the AI inbox by accident.
+
+- **2026-05-01** | [Akshay](https://x.com/akshay_pachaar/status/2050201509821063576) | claude-code, skills-mcp, prompting
+  Walkthrough of why Claude skills fail silently and how progressive disclosure works: Tier 1 = YAML frontmatter (~100 tokens, always loaded), Tier 2 = SKILL.md body (loads on trigger from description), Tier 3 = bundled scripts (loaded on demand, only stdout enters context). Description quality determines triggering.
+
+- **2026-05-01** | [Allen Braden](https://x.com/allen_explains/status/2050163013165224332) | questionable, industry
+  Engagement-farming claim that a 'junior at Jane Street' landed $220K-600K by using AI on trillions of data points. Community Note corrects: it's actually a 2024 Horace He talk on ML systems infra at Jane Street — he was a guest speaker, not an employee, and it has nothing to do with AI for trading.
+
+- **2026-05-01** | [摆烂程序媛](https://x.com/wanerfu/status/2050158295911137370) | dev-practices, questionable
+  Translated-from-Chinese promotion of Scrapling (github.com/D4Vinci/Scrapling) — open-source web scraper claiming Cloudflare bypass with no selector maintenance and '774x faster than BeautifulSoup'. Useful for AI scrape pipelines if benchmark holds up.
+
+- **2026-05-01** | [Teknium](https://x.com/teknium/status/2050098631907434871) | agent-design, dev-practices
+  Teknium ships a /goal command in NousResearch hermes-agent (PR github.com/NousResearch/hermes-agent/pull/18262) — supervisor-loop pattern inspired by ralph loops + Codex's upcoming /goal: keeps re-prompting the agent until the supervisor judges the task complete.
+
+- **2026-05-01** | [Qwen](https://x.com/alibaba_qwen/status/2049861145574690992) | research, industry
+  Alibaba Qwen team open-sources Qwen-Scope, a suite of sparse autoencoders (SAEs) for the Qwen model family. Surfaces interpretable internal features for steering inference, classifying/synthesizing data, debugging code-switching/repetition at the source, and selecting smarter benchmarks. Blog at qwen.ai/blog?id=qwen-scope, weights on HuggingFace.
 
 ### Apr 2026
 

@@ -1,5 +1,493 @@
 [
   {
+    "date": "2026-05-02",
+    "author": "Dave Kline",
+    "handle": "@dklineii",
+    "subject": "Post by Dave Kline on X (read plz)",
+    "url": "https://x.com/dklineii/status/2050563237490344194",
+    "summary": "A 15-minute manager/employee playbook for resetting expectations when someone is stuck — Kline argues 95% of work problems trace back to unclear expectations. Practical management tactic, no AI angle.",
+    "topics": [
+      "management"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "52.3K",
+    "notes": "Subject modified — Jeremy flagged as worth reading",
+    "enriched": true,
+    "content": "95% of work problems are caused by one thing: unclear expectations. Here's my simple playbook you can run to get (and stay) on the same page in 15 minutes."
+  },
+  {
+    "date": "2026-05-02",
+    "author": "Ole Lehmann",
+    "handle": "@itsolelehmann",
+    "subject": "Post by Ole Lehmann on X",
+    "url": "https://x.com/itsolelehmann/status/2050548948419645488",
+    "summary": "Argues you should run a 'premortem' on your plans with Claude — frame it as 'it's 6 months from now, this plan died, tell me how' — to bypass the model's optimism bias. Cites Kahneman; says Google, Goldman, P&G use it before launches.",
+    "topics": [
+      "prompting",
+      "management"
+    ],
+    "audience": [
+      "me",
+      "leadership",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "POV: claude traveled 6 months into the future and told you exactly how your next move failed — it's called a premortem. Daniel Kahneman called it his single most valuable decision-making technique."
+  },
+  {
+    "date": "2026-05-02",
+    "author": "0xSero",
+    "handle": "@0xsero",
+    "subject": "Post by 0xSero on X",
+    "url": "https://x.com/0xsero/status/2050544304360165585",
+    "summary": "Reminder that Claude Code session history is auto-deleted monthly unless you change settings.json — that's all valuable training/context data. 0xSero shares a backup repo (github.com/0xSero/ai-data-extraction) to help you preserve it.",
+    "topics": [
+      "claude-code",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "17.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "Everyone should save their session history, did u know all your Claude code sessions get deleted every month unless you change that in settings.json? All that is valuable training data they're keeping\\! So you should too."
+  },
+  {
+    "date": "2026-05-02",
+    "author": "darkzodchi",
+    "handle": "@zodchiii",
+    "subject": "Post by darkzodchi on X",
+    "url": "https://x.com/zodchiii/status/2050537397377532341",
+    "summary": "Promotes a security article + .gitignore template after citing that Anthropic allegedly leaked 512K lines of source code from a missing .gitignore entry. Boris Cherny (Claude Code creator) cited as the cautionary tale. Engagement framing, but the .gitignore best-practices angle is legitimately useful.",
+    "topics": [
+      "dev-practices",
+      "claude-code",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "40.9K",
+    "notes": "",
+    "enriched": true,
+    "content": "The Creator of Claude Code, Boris Cherny, just explained why most developers are likely to leak every secret they have. Anthropic leaked 512,000 lines of their own source code because someone forgot to add one line to an ignore file."
+  },
+  {
+    "date": "2026-05-02",
+    "author": "Blaze",
+    "handle": "@browomo",
+    "subject": "Post by Blaze on X",
+    "url": "https://x.com/browomo/status/2050509770604331510",
+    "summary": "French teenager built a 3D map of 217 mental models (1284 connections) controlled by hand gestures + voice, running Three.js + MediaPipe Hands + local Whisper + Claude API + Google Antigravity. Whole stack assembled in one weekend; 80ms gesture-to-graph latency, runs from a 47MB Obsidian vault on a regular laptop.",
+    "topics": [
+      "agent-design",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "French teenager built a 3D map of his knowledge and controls it with voice and fingers through Claude + Antigravity. 5 components: Three.js, MediaPipe Hands, local Whisper, Claude API, Google Antigravity. Built in 1 weekend."
+  },
+  {
+    "date": "2026-05-02",
+    "author": "Muhammad Ayan",
+    "handle": "@socialwithaayan",
+    "subject": "Post by Muhammad Ayan on X",
+    "url": "https://x.com/socialwithaayan/status/2050484688968724820",
+    "summary": "Pointer to github.com/warpdotdev/warp — Warp terminal's source has been published as 'an agentic development environment, born out of the terminal.' Worth a look as a coding-agent shell.",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "2,763",
+    "notes": "",
+    "enriched": true,
+    "content": "repo: github.com/warpdotdev/warp — Warp is an agentic development environment, born out of the terminal."
+  },
+  {
+    "date": "2026-05-02",
+    "author": "Kpaxs",
+    "handle": "@kpaxs",
+    "subject": "Post by Kpaxs on X",
+    "url": "https://x.com/kpaxs/status/2050470605804216695",
+    "summary": "Kpaxs reframes high-agency behavior: 'I'm doing this unless someone stops me' vs 'Can I do this?' — most permissions get granted retroactively, so it's easier to ask forgiveness than permission. Useful framing for engineering culture and AI adoption.",
+    "topics": [
+      "management"
+    ],
+    "audience": [
+      "me",
+      "leadership",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "120.5K",
+    "notes": "",
+    "enriched": true,
+    "content": "Low-agency: 'Can I do this?' High-agency: 'I'm doing this unless someone stops me.' The high-agency person has realized that most permissions are granted retroactively."
+  },
+  {
+    "date": "2026-05-02",
+    "author": "Om Patel",
+    "handle": "@om_patel5",
+    "subject": "Post by Om Patel on X (worth a look)",
+    "url": "https://x.com/om_patel5/status/2050441119003971683",
+    "summary": "Promoted Claude Code skill /graphify that pre-builds a graph of your codebase (functions, deps, docs, PDFs, images, audio, video via Whisper) so Claude doesn't waste tokens exploring. Author claims '71.5x more efficient' (engagement-farming framing).",
+    "topics": [
+      "claude-code",
+      "skills-mcp",
+      "agent-design",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "Subject modified — Jeremy flagged as worth a look",
+    "enriched": true,
+    "content": "THIS CLAUDE CODE SKILL MAKES CLAUDE 71.5X MORE EFFICIENT — /graphify maps every function, every dependency upfront. Extracts code structure locally with tree-sitter AST in 25 languages, transcribes audio/video with whisper, uses Claude vision for images."
+  },
+  {
+    "date": "2026-05-02",
+    "author": "Tom Doerr",
+    "handle": "@tom_doerr",
+    "subject": "Post by Tom Dörr on X",
+    "url": "https://x.com/tom_doerr/status/2050312101504094651",
+    "summary": "Curated awesome-list at github.com/EvoMap/awesome-agent-evolution covering AI agent evolution, memory systems, and self-improvement.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "5,637",
+    "notes": "",
+    "enriched": true,
+    "content": "Curated list of AI agent evolution, memory systems, and self-improvement"
+  },
+  {
+    "date": "2026-05-02",
+    "author": "Keith Rabois",
+    "handle": "@rabois",
+    "subject": "Post by Keith Rabois on X",
+    "url": "https://x.com/rabois/status/2050250243552239956",
+    "summary": "Rabois (one-word 'Useful.') endorsing Ann Miura-Ko's piece arguing most scaled companies (e.g. Ramp, 1500-person org) are still Level 1 on AI adoption despite the 'AI-pilled' narrative — based on her recent office visits.",
+    "topics": [
+      "management",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "227.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "Useful. Quote of Ann Miura-Ko: 'Everyone wants to be AI-pilled. Most Companies Are Still Level 1' — based on visits to scaled companies like Ramp."
+  },
+  {
+    "date": "2026-05-02",
+    "author": "Dan Shipper",
+    "handle": "@danshipper",
+    "subject": "Post by Dan Shipper 📧 on X",
+    "url": "https://x.com/danshipper/status/2050235671466606665",
+    "summary": "Dan Shipper recommends Marcus's 'definitive guide' on how a PM can ship product with coding agents at Every: every.to/guides/ai-product-management-guide. Pitched as required reading for non-engineer builders.",
+    "topics": [
+      "agent-design",
+      "management",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "leadership",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "212.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "must read - Marcus went from product manager to shipping product like a madman @every with coding agents - he wrote the definitive guide for how to do it"
+  },
+  {
+    "date": "2026-05-02",
+    "author": "regent0x",
+    "handle": "@regent0x_",
+    "subject": "Post by regent0x on X",
+    "url": "https://x.com/regent0x_/status/2050143341656838449",
+    "summary": "Story (likely embellished) about a solo Chinese dev billing $320k/yr by orchestrating 5 specialized Claude agents in parallel: architect, coder, reviewer, tester, ops. Each agent has its own context, no shared state. Engagement-y framing but the parallel-specialist pattern is real.",
+    "topics": [
+      "agent-design",
+      "management",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "leadership",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Chinese developer making $320k/year as a solo contractor, secret: 5 AI agents running in parallel — architect, coder, reviewer, tester, ops. They don't share context, don't step on each other, just ship."
+  },
+  {
+    "date": "2026-05-02",
+    "author": "Xiuyu Li",
+    "handle": "@sheriyuo",
+    "subject": "Post by Xiuyu Li on X",
+    "url": "https://x.com/sheriyuo/status/2050067900820840791",
+    "summary": "Endorses Will Brown's writeup 'On SFT, RL, and on-policy distillation' — why the SFT→RL pipeline works, where on-policy distillation fits, and how self-distillation goes wrong. Co-authored with Claude Opus 4.7.",
+    "topics": [
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "158.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "If you're into RL, definitely give it a read — Will Brown: On SFT, RL, and on-policy distillation. April 30 2026."
+  },
+  {
+    "date": "2026-05-02",
+    "author": "GPT Maestro",
+    "handle": "@gptmaestro",
+    "subject": "Post by GPT Maestro on X",
+    "url": "https://x.com/gptmaestro/status/2050060105052561681",
+    "summary": "Quote-tweet endorsing a clear walkthrough of GEPA — a technique that optimizes prompts before inference rather than cramming more into context. Quoted source: Quarq's 'Exploring GEPA' (also covers Recursive Language Models / RLMs).",
+    "topics": [
+      "prompting",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "16.4K",
+    "notes": "",
+    "enriched": true,
+    "content": "Clear explanation of how GEPA optimizes prompts before inference instead of just cramming more into the context window."
+  },
+  {
+    "date": "2026-05-02",
+    "author": "Mike Bespalov",
+    "handle": "@bbssppllvv",
+    "subject": "Post by Mike Bespalov on X",
+    "url": "https://x.com/bbssppllvv/status/2049924037111841027",
+    "summary": "Refero.design publishes 2000 DESIGN.md files (colors, type, spacing, layouts) extracted from the world's best products, structured for an LLM to read so coding agents stop producing ugly UIs. Free at styles.refero.design.",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "1.4M",
+    "notes": "",
+    "enriched": true,
+    "content": "Agents make ugly UIs because they've never seen good design. We've been fixing that, 2,000 DESIGN.md files from the world's best products, structured for a model to read and learn."
+  },
+  {
+    "date": "2026-05-02",
+    "author": "Xiangyi Li",
+    "handle": "@xdotli",
+    "subject": "Post by Xiangyi Li on X",
+    "url": "https://x.com/xdotli/status/2049903693143609627",
+    "summary": "One-liner endorsement quote-tweeting an article about reducing entropy/non-determinism in agentic systems — Xiangyi (founder benchflow_ai, creator of SkillsBench/ClawsBench) calls it a must-read. Quoted article URL not surfaced; check thread for context.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "49.5K",
+    "notes": "",
+    "enriched": true,
+    "content": "must read for everyone who wants to reduce the entropy of their agentic systems"
+  },
+  {
+    "date": "2026-05-02",
+    "author": "BasedBiohacker",
+    "handle": "@basedbiohacker",
+    "subject": "Post by BasedBiohacker on X",
+    "url": "https://x.com/basedbiohacker/status/2049235599874200049",
+    "summary": "[Off-topic — not AI/tech] Biohacking/nootropics vendor and dosage list at basedbiohacker.any.org, including 'research-only' compounds. Likely sent to the AI inbox by accident.",
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "1,663",
+    "notes": "",
+    "enriched": true,
+    "content": "vendors, dosages, everything you need to know — cognitive enhancement compounds, some 'lab use only' / not for human consumption."
+  },
+  {
+    "date": "2026-05-01",
+    "author": "Akshay",
+    "handle": "@akshay_pachaar",
+    "subject": "Post by Akshay 🚀 on X",
+    "url": "https://x.com/akshay_pachaar/status/2050201509821063576",
+    "summary": "Walkthrough of why Claude skills fail silently and how progressive disclosure works: Tier 1 = YAML frontmatter (~100 tokens, always loaded), Tier 2 = SKILL.md body (loads on trigger from description), Tier 3 = bundled scripts (loaded on demand, only stdout enters context). Description quality determines triggering.",
+    "topics": [
+      "claude-code",
+      "skills-mcp",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "How to write Skills that never fail. Skills run on progressive disclosure, a 3-tier loading system. Tier 1: Metadata (always loaded). Tier 2: SKILL.md body (loaded on trigger). Tier 3: Bundled resources (loaded on demand)."
+  },
+  {
+    "date": "2026-05-01",
+    "author": "Allen Braden",
+    "handle": "@allen_explains",
+    "subject": "Post by Allen Braden on X",
+    "url": "https://x.com/allen_explains/status/2050163013165224332",
+    "summary": "Engagement-farming claim that a 'junior at Jane Street' landed $220K-600K by using AI on trillions of data points. Community Note corrects: it's actually a 2024 Horace He talk on ML systems infra at Jane Street — he was a guest speaker, not an employee, and it has nothing to do with AI for trading.",
+    "topics": [
+      "questionable",
+      "industry"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "860K",
+    "notes": "",
+    "enriched": true,
+    "content": "A junior at Jane Street reportedly landed a $220K–$600K role because he used AI to analyze trillions of data points faster than most teams ever could. [Community Note: actually a 2024 Horace He talk on ML systems infra; he is not a Jane Street employee.]"
+  },
+  {
+    "date": "2026-05-01",
+    "author": "摆烂程序媛",
+    "handle": "@wanerfu",
+    "subject": "Post by 摆烂程序媛 on X",
+    "url": "https://x.com/wanerfu/status/2050158295911137370",
+    "summary": "Translated-from-Chinese promotion of Scrapling (github.com/D4Vinci/Scrapling) — open-source web scraper claiming Cloudflare bypass with no selector maintenance and '774x faster than BeautifulSoup'. Useful for AI scrape pipelines if benchmark holds up.",
+    "topics": [
+      "dev-practices",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "270.2K",
+    "notes": "",
+    "enriched": true,
+    "content": "OpenClaw (Scrapling) can now scrape any website without being blocked—zero bot detection, native bypass of Cloudflare, 774 times faster than BeautifulSoup. Open source."
+  },
+  {
+    "date": "2026-05-01",
+    "author": "Teknium",
+    "handle": "@teknium",
+    "subject": "Post by Teknium 🪽 on X",
+    "url": "https://x.com/teknium/status/2050098631907434871",
+    "summary": "Teknium ships a /goal command in NousResearch hermes-agent (PR github.com/NousResearch/hermes-agent/pull/18262) — supervisor-loop pattern inspired by ralph loops + Codex's upcoming /goal: keeps re-prompting the agent until the supervisor judges the task complete.",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "360.5K",
+    "notes": "",
+    "enriched": true,
+    "content": "/goal <prompt> starts a loop with a supervisor model determining whether the task completed at the end of an agent loop — if not, it forces it to keep going. Inspired by ralph loops and Codex's upcoming /goal."
+  },
+  {
+    "date": "2026-05-01",
+    "author": "Qwen",
+    "handle": "@alibaba_qwen",
+    "subject": "Post by Qwen on X",
+    "url": "https://x.com/alibaba_qwen/status/2049861145574690992",
+    "summary": "Alibaba Qwen team open-sources Qwen-Scope, a suite of sparse autoencoders (SAEs) for the Qwen model family. Surfaces interpretable internal features for steering inference, classifying/synthesizing data, debugging code-switching/repetition at the source, and selecting smarter benchmarks. Blog at qwen.ai/blog?id=qwen-scope, weights on HuggingFace.",
+    "topics": [
+      "research",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Qwen-Scope: open suite of sparse autoencoders for the Qwen model family. Steer outputs via internal features, classify/synthesize targeted data, trace code-switching back to source, analyze feature activation for benchmark selection."
+  },
+  {
     "date": "2026-04-30",
     "author": "Garry Tan",
     "handle": "@garrytan",
