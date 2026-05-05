@@ -1,19 +1,19 @@
 # AI Links Collection
-**Total Posts**: 432  
-**Date Range**: 2024-06-11 – 2026-05-02  
-**Enriched**: 432/432 (100%)
+**Total Posts**: 433  
+**Date Range**: 2024-06-11 – 2026-05-05  
+**Enriched**: 433/433 (100%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 196 | 45.4% |
-| claude-code | 91 | 21.1% |
+| agent-design | 197 | 45.5% |
+| claude-code | 91 | 21.0% |
 | dev-practices | 109 | 25.2% |
 | skills-mcp | 55 | 12.7% |
-| prompting | 50 | 11.6% |
+| prompting | 50 | 11.5% |
 | research | 68 | 15.7% |
-| industry | 39 | 9.0% |
+| industry | 40 | 9.2% |
 | management | 71 | 16.4% |
 | questionable | 36 | 8.3% |
 | general | 67 | 15.5% |
@@ -22,6 +22,7 @@
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-05-05 | Adam Ghowiba | agent-design | JP Morgan's investment research team broke down their "Ask David" mult... |
 | 2026-05-02 | Dave Kline | management | A 15-minute manager/employee playbook for resetting expectations when... |
 | 2026-05-02 | Ole Lehmann | prompting | Argues you should run a 'premortem' on your plans with Claude — frame... |
 | 2026-05-02 | 0xSero | claude-code | Reminder that Claude Code session history is auto-deleted monthly unle... |
@@ -71,12 +72,13 @@
 | 2026-04-23 | spencer | agent-design | OWASP released their Autonomous Penetration Testing Standard (APTS). R... |
 | 2026-04-23 | Avi Chawla | claude-code | Claim of 3x token reduction on Claude Code (10.4M→3.7M tokens, $9.21→$... |
 | 2026-04-21 | Shubham Saboo | agent-design | Shares agentic-stack — 'One brain, many harnesses. Portable .agent/ fo... |
-| 2026-04-21 | Tech with Mak | research | Summary of Meta's REFRAG paper: compresses retrieved RAG chunks into s... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (196)
+### Agent Design (197)
+
+- [Adam Ghowiba](https://x.com/adamghowiba/status/2050886233921061281) — 2026-05-05: JP Morgan's investment research team broke down their "Ask David" multi-agent architecture: a supervisor agent orchestrates specialized subagents (retrieval, structured data, analytics), with an LLM-as-judge reflection node before the answer ships and human-in-the-loop for the last accuracy gap. Same supervisor + specialist + reflection pattern showing up everywhere.
 
 - [Blaze](https://x.com/browomo/status/2050509770604331510) — 2026-05-02: French teenager built a 3D map of 217 mental models (1284 connections) controlled by hand gestures + voice, running Three.js + MediaPipe Hands + local Whisper + Claude API + Google Antigravity. Whole stack assembled in one weekend; 80ms gesture-to-graph latency, runs from a 47MB Obsidian vault on a regular laptop.
 
@@ -1226,7 +1228,9 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: 15-part thread explaining the 'stunning, simple explanation behind matrix multiplication' — breaks down the most crucial idea behind modern machine learning. 1M views.
 
-### Industry (39)
+### Industry (40)
+
+- [Adam Ghowiba](https://x.com/adamghowiba/status/2050886233921061281) — 2026-05-05: JP Morgan's investment research team broke down their "Ask David" multi-agent architecture: a supervisor agent orchestrates specialized subagents (retrieval, structured data, analytics), with an LLM-as-judge reflection node before the answer ships and human-in-the-loop for the last accuracy gap. Same supervisor + specialist + reflection pattern showing up everywhere.
 
 - [Keith Rabois](https://x.com/rabois/status/2050250243552239956) — 2026-05-02: Rabois (one-word 'Useful.') endorsing Ann Miura-Ko's piece arguing most scaled companies (e.g. Ramp, 1500-person org) are still Level 1 on AI adoption despite the 'AI-pilled' narrative — based on her recent office visits.
 
@@ -1672,6 +1676,9 @@
 ## Full Chronological List
 
 ### May 2026
+
+- **2026-05-05** | [Adam Ghowiba](https://x.com/adamghowiba/status/2050886233921061281) | agent-design, industry
+  JP Morgan's investment research team broke down their "Ask David" multi-agent architecture: a supervisor agent orchestrates specialized subagents (retrieval, structured data, analytics), with an LLM-as-judge reflection node before the answer ships and human-in-the-loop for the last accuracy gap. Same supervisor + specialist + reflection pattern showing up everywhere.
 
 - **2026-05-02** | [Dave Kline](https://x.com/dklineii/status/2050563237490344194) | management
   A 15-minute manager/employee playbook for resetting expectations when someone is stuck — Kline argues 95% of work problems trace back to unclear expectations. Practical management tactic, no AI angle.

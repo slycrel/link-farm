@@ -1,5 +1,27 @@
 [
   {
+    "date": "2026-05-05",
+    "author": "Adam Ghowiba",
+    "handle": "@adamghowiba",
+    "subject": "Post by Adam Ghowiba on X",
+    "url": "https://x.com/adamghowiba/status/2050886233921061281",
+    "summary": "JP Morgan's investment research team broke down their \"Ask David\" multi-agent architecture: a supervisor agent orchestrates specialized subagents (retrieval, structured data, analytics), with an LLM-as-judge reflection node before the answer ships and human-in-the-loop for the last accuracy gap. Same supervisor + specialist + reflection pattern showing up everywhere.",
+    "topics": [
+      "agent-design",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "1.9M",
+    "notes": "",
+    "enriched": true,
+    "content": "Adam Ghowiba\n@adamghowiba\nJP Morgan's investment research team just shared exactly how they built their multi-agent system \"Ask David\", and it's the same architecture pattern showing up everywhere:\n\n- supervisor agent orchestrates\n- specialized subagents handle retrieval, structured data, analytics\n- LLM-as-judge reflection node before the answer ships\n- human-in-the-loop for the last accuracy gap\n\nworth watching for anyone building:"
+  },
+  {
     "date": "2026-05-02",
     "author": "Dave Kline",
     "handle": "@dklineii",
