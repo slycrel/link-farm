@@ -1,6 +1,28 @@
 [
   {
     "date": "2026-05-05",
+    "author": "Vinay",
+    "handle": "@leashless",
+    "subject": "Post by Vinay on X",
+    "url": "https://x.com/leashless/status/2051437380788158739",
+    "summary": "Vinay quote-tweets a viral post about Gödel, Escher, Bach (1979) — Douglas Hofstadter's 800-page Pulitzer-winning book on a logician, artist, and composer that became required reading at every major AI lab. Vinay: \"Time stopped. We all read it. It took two years to talk through the implications. Nobody ever forgot.\"",
+    "topics": [
+      "research",
+      "general"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "191.6K",
+    "notes": "",
+    "enriched": true,
+    "content": "Vinay (@leashless): \"My god. Time stopped. We all read it. It took two years to talk through the implications. Nobody ever forgot.\" Quoting Ihtesham Ali (@ihtesham2005, May 4): \"A 34-year-old physics graduate student spent years writing a strange 800-page book in 1979 about a logician, a Dutch artist, and a German composer. It won the Pulitzer Prize the following year. It quietly became required reading at every AI lab in the world.\""
+  },
+  {
+    "date": "2026-05-05",
     "author": "Adam Ghowiba",
     "handle": "@adamghowiba",
     "subject": "Post by Adam Ghowiba on X",

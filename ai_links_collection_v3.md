@@ -1,27 +1,28 @@
 # AI Links Collection
-**Total Posts**: 433  
+**Total Posts**: 434  
 **Date Range**: 2024-06-11 – 2026-05-05  
-**Enriched**: 433/433 (100%)
+**Enriched**: 434/434 (100%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 197 | 45.5% |
+| agent-design | 197 | 45.4% |
 | claude-code | 91 | 21.0% |
-| dev-practices | 109 | 25.2% |
+| dev-practices | 109 | 25.1% |
 | skills-mcp | 55 | 12.7% |
 | prompting | 50 | 11.5% |
-| research | 68 | 15.7% |
+| research | 69 | 15.9% |
 | industry | 40 | 9.2% |
 | management | 71 | 16.4% |
 | questionable | 36 | 8.3% |
-| general | 67 | 15.5% |
+| general | 68 | 15.7% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-05-05 | Vinay | research | Vinay quote-tweets a viral post about Gödel, Escher, Bach (1979) — Dou... |
 | 2026-05-05 | Adam Ghowiba | agent-design | JP Morgan's investment research team broke down their "Ask David" mult... |
 | 2026-05-02 | Dave Kline | management | A 15-minute manager/employee playbook for resetting expectations when... |
 | 2026-05-02 | Ole Lehmann | prompting | Argues you should run a 'premortem' on your plans with Claude — frame... |
@@ -71,7 +72,6 @@
 | 2026-04-23 | Garry Tan | claude-code | Garry Tan endorsing a workflow: build a feature once in OpenClaw, then... |
 | 2026-04-23 | spencer | agent-design | OWASP released their Autonomous Penetration Testing Standard (APTS). R... |
 | 2026-04-23 | Avi Chawla | claude-code | Claim of 3x token reduction on Claude Code (10.4M→3.7M tokens, $9.21→$... |
-| 2026-04-21 | Shubham Saboo | agent-design | Shares agentic-stack — 'One brain, many harnesses. Portable .agent/ fo... |
 
 ---
 ## Posts by Topic
@@ -1090,7 +1090,9 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
 
-### Research (68)
+### Research (69)
+
+- [Vinay](https://x.com/leashless/status/2051437380788158739) — 2026-05-05: Vinay quote-tweets a viral post about Gödel, Escher, Bach (1979) — Douglas Hofstadter's 800-page Pulitzer-winning book on a logician, artist, and composer that became required reading at every major AI lab. Vinay: "Time stopped. We all read it. It took two years to talk through the implications. Nobody ever forgot."
 
 - [Tom Doerr](https://x.com/tom_doerr/status/2050312101504094651) — 2026-05-02: Curated awesome-list at github.com/EvoMap/awesome-agent-evolution covering AI agent evolution, memory systems, and self-improvement.
 
@@ -1528,7 +1530,9 @@
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
 
-### General (71)
+### General (72)
+
+- [Vinay](https://x.com/leashless/status/2051437380788158739) — 2026-05-05: Vinay quote-tweets a viral post about Gödel, Escher, Bach (1979) — Douglas Hofstadter's 800-page Pulitzer-winning book on a logician, artist, and composer that became required reading at every major AI lab. Vinay: "Time stopped. We all read it. It took two years to talk through the implications. Nobody ever forgot."
 
 - [BasedBiohacker](https://x.com/basedbiohacker/status/2049235599874200049) — 2026-05-02: [Off-topic — not AI/tech] Biohacking/nootropics vendor and dosage list at basedbiohacker.any.org, including 'research-only' compounds. Likely sent to the AI inbox by accident.
 
@@ -1676,6 +1680,9 @@
 ## Full Chronological List
 
 ### May 2026
+
+- **2026-05-05** | [Vinay](https://x.com/leashless/status/2051437380788158739) | research, general
+  Vinay quote-tweets a viral post about Gödel, Escher, Bach (1979) — Douglas Hofstadter's 800-page Pulitzer-winning book on a logician, artist, and composer that became required reading at every major AI lab. Vinay: "Time stopped. We all read it. It took two years to talk through the implications. Nobody ever forgot."
 
 - **2026-05-05** | [Adam Ghowiba](https://x.com/adamghowiba/status/2050886233921061281) | agent-design, industry
   JP Morgan's investment research team broke down their "Ask David" multi-agent architecture: a supervisor agent orchestrates specialized subagents (retrieval, structured data, analytics), with an LLM-as-judge reflection node before the answer ships and human-in-the-loop for the last accuracy gap. Same supervisor + specialist + reflection pattern showing up everywhere.
