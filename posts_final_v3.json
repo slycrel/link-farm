@@ -1,5 +1,378 @@
 [
   {
+    "date": "2026-05-08",
+    "author": "Himanshu Kumar",
+    "handle": "@codewithimanshu",
+    "subject": "Post by Himanshu Kumar on X",
+    "url": "https://x.com/codewithimanshu/status/2052573291131589101",
+    "summary": "Engagement-farm pitch around a free 1-hour MIT lecture by Jim Simons, framing a Renaissance-style trading bot as a \"weekend with Claude Code\" project. Heavy on hype (\"$100 to $130B\", \"build the bot this weekend\") with no concrete repo or method.",
+    "topics": [
+      "questionable",
+      "claude-code"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-05-08",
+    "author": "Tom Dörr",
+    "handle": "@tom_doerr",
+    "subject": "Post by Tom Dörr on X",
+    "url": "https://x.com/tom_doerr/status/2052552468983103608",
+    "summary": "Self-correcting agent that automates complex data-science tasks. Repo: github.com/K-Dense-AI/agentic-data-scientist. Tom Dörr's usual one-line repo drop — needs hands-on eval to see if \"self-correcting\" holds up.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "4,989",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-05-08",
+    "author": "ani",
+    "handle": "@anirudhbv_ce",
+    "subject": "Post by ani on X",
+    "url": "https://x.com/anirudhbv_ce/status/2052532004919361958",
+    "summary": "Paper \"The Geometry of Consolidation\" claims most embedding dimensions are wasted: 91/3072 in OpenAI text-embedding-3-large and 80/3072 in gemini-embedding-001 do real work, leaving ~97% mathematically empty. Argues RAG compression has a hard spectral floor no algorithm can beat. Paper + code: github.com/niashwin/geometry-of-consolidation. High signal for anyone running RAG.",
+    "topics": [
+      "research",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "193.6K",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-05-08",
+    "author": "Axel Bitblaze 🪓",
+    "handle": "@axel_bitblaze69",
+    "subject": "Post by Axel Bitblaze 🪓 on X",
+    "url": "https://x.com/axel_bitblaze69/status/2052520764545613958",
+    "summary": "Promotes a Claude Code plugin \"claude-handoff\" (willseltzer/claude-handoff) that snapshots session state to a HANDOFF.md and restores it in a fresh window. Three commands: /handoff:create, /handoff:quick, /handoff:resume. Some hype framing (\"10-20 message limit\") but the plugin itself looks legit.",
+    "topics": [
+      "claude-code",
+      "skills-mcp",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-05-08",
+    "author": "Avi Chawla",
+    "handle": "@_avichawla",
+    "subject": "Post by Avi Chawla on X",
+    "url": "https://x.com/_avichawla/status/2052482874126020882",
+    "summary": "Frames a Karpathy quote (\"remove yourself as the bottleneck, maximize your leverage\") to pitch Rowboat — an open-source AI second-brain over Markdown/Obsidian extended with work context (emails, meetings, decisions, deadlines). Useful framing for AI productivity systems.",
+    "topics": [
+      "agent-design",
+      "prompting",
+      "management"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-05-08",
+    "author": "divyansh tiwari",
+    "handle": "@divyansht91162",
+    "subject": "Post by divyansh tiwari on X",
+    "url": "https://x.com/divyansht91162/status/2052474052841984110",
+    "summary": "Author claims web search is now \"basically free\" for AI agents after switching their OpenClaw and Hermes agents to TinyFish for browsing/research at $0/scale. Pitches TinyFish as a quiet ecosystem-shifter; light on technical detail, mostly framing.",
+    "topics": [
+      "agent-design",
+      "industry"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "15.3K",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-05-08",
+    "author": "Tom Dörr",
+    "handle": "@tom_doerr",
+    "subject": "Post by Tom Dörr on X (implement!)",
+    "url": "https://x.com/tom_doerr/status/2052440598452359394",
+    "summary": "Knowledge-graph memory backend for Claude Code — same project Rohit Ghumare hyped (agentmemory). Repo: github.com/rohitg00/agentmemory. Worth implementing per Jeremy's \"(implement!)\" subject flag.",
+    "topics": [
+      "claude-code",
+      "agent-design",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "19.5K",
+    "notes": "Subject modified: \"(implement!)\" — Jeremy flagged as actionable",
+    "enriched": true
+  },
+  {
+    "date": "2026-05-08",
+    "author": "Mgoes (bio/acc 🤖💉)",
+    "handle": "@m_goes_distance",
+    "subject": "Post by Mgoes (bio/acc 🤖💉) on X",
+    "url": "https://x.com/m_goes_distance/status/2052433497575293307",
+    "summary": "Off-topic for AI but Jeremy bookmarked it: rapid-fire summary of 2026 biotech wins — Japan endorsing iPS cell therapies, Altos Labs Atlas of Rejuvenation, rapalink-1 longevity, Retro Biosciences brain-cleanup pill, peptide deregulation, psychedelic EOs, GLP-1 adoption hitting 12.4% of US adults.",
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-05-08",
+    "author": "Goodfire",
+    "handle": "@goodfireai",
+    "subject": "Post by Goodfire on X",
+    "url": "https://x.com/goodfireai/status/2052420446910644616",
+    "summary": "Goodfire kicking off a research-blog series on \"neural geometry\" — the shapes networks think in — and how understanding them enables debugging and precise control. 2M views; first in a series.",
+    "topics": [
+      "research"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "2M",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-05-08",
+    "author": "darkzodchi",
+    "handle": "@zodchiii",
+    "subject": "Post by darkzodchi on X",
+    "url": "https://x.com/zodchiii/status/2052400272840720565",
+    "summary": "Engagement-bait quote tweet of own X article (\"AI team that doesn't quit, sleep, or ghost\") framed as Anthropic \"leaking\" a 2026 agent roadmap. The quoted article opens with a fabricated 2am breakage scenario. High views (433K) but mostly hype.",
+    "topics": [
+      "questionable",
+      "agent-design",
+      "claude-code"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "433.9K",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-05-08",
+    "author": "Dave Kline",
+    "handle": "@dklineii",
+    "subject": "Post by Dave Kline on X (mgmt)",
+    "url": "https://x.com/dklineii/status/2052372231800439054",
+    "summary": "Five AI prompts Dave Kline runs before every 1:1 — frames it as 5-minute prep that replaces flying blind. Specific prompts are in the thread; useful template for managers adopting AI prep workflows.",
+    "topics": [
+      "management",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "59.7K",
+    "notes": "Subject modified: \"(mgmt)\" — explicit mgmt tag",
+    "enriched": true
+  },
+  {
+    "date": "2026-05-08",
+    "author": "Millie Marconi",
+    "handle": "@milliemarconnni",
+    "subject": "Post by Millie Marconi on X",
+    "url": "https://x.com/milliemarconnni/status/2052363436575826398",
+    "summary": "Open-sourced \"Feynman\" agent system that reads a research paper, audits its code, and replicates experiments end-to-end. Bundles four agents (Researcher, Reviewer, Writer, Verifier), runs experiments in Docker, spins up serverless GPUs on Modal/RunPod, indexes session search. MIT. github.com/getcompanion-ai/feynman",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "3,922",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-05-08",
+    "author": "Allen Braden",
+    "handle": "@allen_explains",
+    "subject": "Post by Allen Braden on X",
+    "url": "https://x.com/allen_explains/status/2052340555942924368",
+    "summary": "Off-topic-for-AI rec: free 1-hour UC Berkeley lecture on systematic trading math (the kind Jane Street quants use). Pitch only — no link in the visible text.",
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "18.9K",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-05-08",
+    "author": "Rohit Ghumare",
+    "handle": "@ghumare64",
+    "subject": "Post by Rohit Ghumare on X (needs a real look)",
+    "url": "https://x.com/ghumare64/status/2052313902214476192",
+    "summary": "Pitches \"agentmemory\" — a tool that records Claude Code session actions, compresses with AI, and re-injects relevant context next session. Claims 95% fewer tokens, 200x more tool calls before context limits, MIT/open source, 1000 stars in a week. Same repo as Tom Dörr's post: github.com/rohitg00/agentmemory. Hyped framing but a real shippable tool — worth a real look as Jeremy flagged.",
+    "topics": [
+      "agent-design",
+      "claude-code",
+      "dev-practices",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "Subject modified: \"(needs a real look)\" — Jeremy flagged for deeper review",
+    "enriched": true
+  },
+  {
+    "date": "2026-05-08",
+    "author": "Tom Dörr",
+    "handle": "@tom_doerr",
+    "subject": "Post by Tom Dörr on X",
+    "url": "https://x.com/tom_doerr/status/2052261421744869757",
+    "summary": "HelixDB — a single database that combines graph and vector storage for AI apps. github.com/HelixDB/helix-db. Could simplify RAG + relationship queries in one engine instead of stitching pgvector + a graph DB.",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "4,721",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-05-08",
+    "author": "Kanika",
+    "handle": "@kanikabk",
+    "subject": "Post by Kanika on X",
+    "url": "https://x.com/kanikabk/status/2052032420954927357",
+    "summary": "Free 424-page \"Agentic Design Patterns\" guide by a senior Google engineer; every chapter has working code; royalties go to Save the Children. Listed at $40 on Amazon, free version available. Worth a read for the agent-design backlog.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "55.1K",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-05-07",
+    "author": "Uncle Bob Martin",
+    "handle": "@unclebobmartin",
+    "subject": "Post by Uncle Bob Martin on X",
+    "url": "https://x.com/unclebobmartin/status/2052370749701214226",
+    "summary": "Uncle Bob quote-tweets a viral post about Anthropic's 24-minute prompt-engineering workshop on YouTube — and notes a community Reader-added-context flag that the workshop was uploaded July 2025, not \"just now\". His take: driving an AI is its own engineering discipline.",
+    "topics": [
+      "prompting",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "124.2K",
+    "notes": "",
+    "enriched": true
+  },
+  {
+    "date": "2026-05-07",
+    "author": "Tom Dörr",
+    "handle": "@tom_doerr",
+    "subject": "Post by Tom Dörr on X",
+    "url": "https://x.com/tom_doerr/status/2052150733261193390",
+    "summary": "Awesome-list of curated papers mapping foundation-agent cognition. Repo: github.com/FoundationAgents/awesome-foundation-agents. Backlog reading material for agent-design research.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "9,899",
+    "notes": "",
+    "enriched": true
+  },
+  {
     "date": "2026-05-05",
     "author": "Vinay",
     "handle": "@leashless",
