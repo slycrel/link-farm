@@ -1,5 +1,74 @@
 [
   {
+    "date": "2026-05-11",
+    "author": "Garry Tan",
+    "handle": "@garrytan",
+    "subject": "Post by Garry Tan on X",
+    "url": "https://x.com/garrytan/status/2053538847795880414",
+    "summary": "Garry Tan riffs on a Finbarr take — \"code as memory\": work with an agent non-deterministically the first time to figure out a task (research + write a script), then execute that script on every future repetition. Quote-tweets his own Apr 22 article on stopping agents from making the same mistakes (LangChain context).",
+    "topics": [
+      "agent-design",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "74.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "Garry Tan: My friend @finbarr says: It's like code as memory. You work with your agent in a non deterministic way to figure out how to execute a task. The first time it does a bunch of research and writes a script and then executes the script. Every future time it faces the same task it just executes the script immediately. The future is already here, it just might not be in your hands unless you decide to build it. (Quote tweet of Garry Tan's Apr 22 article: How to really stop your agents from making the same mistakes — LangChain $160M raise, LangSmith trajectory evals.)"
+  },
+  {
+    "date": "2026-05-10",
+    "author": "Garry Tan",
+    "handle": "@garrytan",
+    "subject": "Post by Garry Tan on X",
+    "url": "https://x.com/garrytan/status/2053127519872614419",
+    "summary": "Long-form X article \"Meta-Meta-Prompting: The Secret to Making AI Agents Work\" — Garry Tan argues to stop treating AI as a chat window and start treating it as an OS. Part of his Fat Skills/Fat Code/Thin Harness series. Open source: github.com/garrytan/gbrain and github.com/garrytan/gstack. Concrete \"book mirror\" example uses sub-agents per chapter that map ideas to your actual life context. 1.2M views.",
+    "topics": [
+      "agent-design",
+      "prompting",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "now",
+    "sourceType": "article",
+    "views": "1.2M",
+    "notes": "",
+    "enriched": true,
+    "content": "Garry Tan article 'Meta-Meta-Prompting: The Secret to Making AI Agents Work'. People keep asking why he's coding til 2AM as CEO of YC — AI made him a builder again in the last 5 months. He shows what personal AI looks like when you stop treating it as a chat window and start treating it as an operating system. Part of series: Fat Skills, Fat Code, Thin Harness (core architecture); Resolvers (routing table for intelligence); The LOC Controversy. Open source at github.com/garrytan/gbrain and github.com/garrytan/gstack. Linked tools: openclaw.ai, hermes-agent.nousresearch.com, anthropics/anthropic-cookbook prompt_caching. Book Mirror example: extracted 22 chapters of Pema Chödrön's When Things Fall Apart, ran sub-agents per chapter that summarized AND mapped each idea to his actual life (immigrant family, YC role, current therapy work) producing a 30,000-word output. 1.2M views, 3.3K likes, 566 reposts."
+  },
+  {
+    "date": "2026-05-10",
+    "author": "Mnimiy",
+    "handle": "@mnilax",
+    "subject": "Post by Mnimiy on X",
+    "url": "https://x.com/mnilax/status/2053116311132155938",
+    "summary": "Long-form post: Karpathy's 4-rule CLAUDE.md template (born Jan 2026 from his thread on Claude failure modes — silent wrong assumptions, over-complication, orthogonal damage) cut mistakes from ~40% to <3% across 30 codebases over 6 weeks. Forrest Chang's repo hit 120K stars. Author argues the template only fixes Jan code-writing problems; he adds 8 more rules targeting May 2026 agent-orchestration issues (agent fights, hook cascades, skill loading conflicts, multi-step workflows). Notes CLAUDE.md is advisory (~80% compliance); past 200 lines compliance drops sharply. 2.5M views.",
+    "topics": [
+      "claude-code",
+      "prompting",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "article",
+    "views": "2.5M",
+    "notes": "",
+    "enriched": true,
+    "content": "Mnimiy (@Mnilax): \"Karpathy's 4 CLAUDE.md rules cut Claude mistakes from 41% to 11%. After 30 codebases, I added 8 more\". In late Jan 2026, Karpathy posted a thread on Claude's three code-writing failure modes: silent wrong assumptions, over-complication, orthogonal damage. Forrest Chang packaged the complaints into a 65-line, 4-rule CLAUDE.md template, dropped it on GitHub — 5,828 stars day 1, 60K bookmarks in two weeks, 120K stars today, fastest-growing single-file repo of 2026. Author tested it on 30 codebases over 6 weeks: mistakes dropped from ~40% to <3% on tasks playing to its strengths. But template was built for Jan code-writing problems, not May 2026 agent-orchestration: agent fights, hook cascades, skill loading conflicts, multi-step workflows. He adds 8 more rules. Anthropic docs say CLAUDE.md is advisory — Claude follows it ~80%, past 200 lines compliance drops sharply. Karpathy's template is the floor; with 8 more rules you cover the ceiling. 2.5M views, 4.9K likes, 513 reposts."
+  },
+  {
     "date": "2026-05-08",
     "author": "Himanshu Kumar",
     "handle": "@codewithimanshu",

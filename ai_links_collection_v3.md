@@ -1,27 +1,30 @@
 # AI Links Collection
-**Total Posts**: 452  
-**Date Range**: 2024-06-11 – 2026-05-08  
-**Enriched**: 452/452 (100%)
+**Total Posts**: 455  
+**Date Range**: 2024-06-11 – 2026-05-11  
+**Enriched**: 455/455 (100%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 208 | 46.0% |
-| claude-code | 97 | 21.5% |
-| dev-practices | 112 | 24.8% |
-| skills-mcp | 57 | 12.6% |
-| prompting | 53 | 11.7% |
-| research | 75 | 16.6% |
-| industry | 41 | 9.1% |
-| management | 73 | 16.2% |
+| agent-design | 210 | 46.2% |
+| claude-code | 99 | 21.8% |
+| dev-practices | 113 | 24.8% |
+| skills-mcp | 57 | 12.5% |
+| prompting | 56 | 12.3% |
+| research | 75 | 16.5% |
+| industry | 41 | 9.0% |
+| management | 73 | 16.0% |
 | questionable | 39 | 8.6% |
-| general | 70 | 15.5% |
+| general | 70 | 15.4% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-05-11 | Garry Tan | agent-design | Garry Tan riffs on a Finbarr take — "code as memory": work with an age... |
+| 2026-05-10 | Garry Tan | agent-design | Long-form X article "Meta-Meta-Prompting: The Secret to Making AI Agen... |
+| 2026-05-10 | Mnimiy | claude-code | Long-form post: Karpathy's 4-rule CLAUDE.md template (born Jan 2026 fr... |
 | 2026-05-08 | Himanshu Kumar | questionable | Engagement-farm pitch around a free 1-hour MIT lecture by Jim Simons,... |
 | 2026-05-08 | Tom Dörr | agent-design | Self-correcting agent that automates complex data-science tasks. Repo:... |
 | 2026-05-08 | ani | research | Paper "The Geometry of Consolidation" claims most embedding dimensions... |
@@ -69,14 +72,15 @@
 | 2026-04-30 | Akshay | agent-design | Akshay rebuilt 'OpenClaw' core in a single Sim Studio workflow (25 blo... |
 | 2026-04-30 | Darshak Rana | questionable | Long-form personal development X article ('Your Next 5 Years Will Be a... |
 | 2026-04-28 | Aparna Dhinakaran | agent-design | Aparna riffs on Aran Komatsuzaki's note that Anthropic just shipped 'f... |
-| 2026-04-28 | Edouard Reinach | agent-design | Edouard promotes Predict-RLM (github.com/Trampoline-AI/predict-rlm) —... |
-| 2026-04-28 | Hasan Toor | agent-design | Hasan announces future-agi (github.com/future-agi/future-agi, cloud at... |
-| 2026-04-28 | Yasir Ai | skills-mcp | GitNexus — open-source code knowledge graph engine. Tree-sitter AST pa... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (208)
+### Agent Design (210)
+
+- [Garry Tan](https://x.com/garrytan/status/2053538847795880414) — 2026-05-11: Garry Tan riffs on a Finbarr take — "code as memory": work with an agent non-deterministically the first time to figure out a task (research + write a script), then execute that script on every future repetition. Quote-tweets his own Apr 22 article on stopping agents from making the same mistakes (LangChain context).
+
+- [Garry Tan](https://x.com/garrytan/status/2053127519872614419) — 2026-05-10: Long-form X article "Meta-Meta-Prompting: The Secret to Making AI Agents Work" — Garry Tan argues to stop treating AI as a chat window and start treating it as an OS. Part of his Fat Skills/Fat Code/Thin Harness series. Open source: github.com/garrytan/gbrain and github.com/garrytan/gstack. Concrete "book mirror" example uses sub-agents per chapter that map ideas to your actual life context. 1.2M views.
 
 - [Tom Dörr](https://x.com/tom_doerr/status/2052552468983103608) — 2026-05-08: Self-correcting agent that automates complex data-science tasks. Repo: github.com/K-Dense-AI/agentic-data-scientist. Tom Dörr's usual one-line repo drop — needs hands-on eval to see if "self-correcting" holds up.
 
@@ -494,7 +498,11 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Claude Code (97)
+### Claude Code (99)
+
+- [Garry Tan](https://x.com/garrytan/status/2053127519872614419) — 2026-05-10: Long-form X article "Meta-Meta-Prompting: The Secret to Making AI Agents Work" — Garry Tan argues to stop treating AI as a chat window and start treating it as an OS. Part of his Fat Skills/Fat Code/Thin Harness series. Open source: github.com/garrytan/gbrain and github.com/garrytan/gstack. Concrete "book mirror" example uses sub-agents per chapter that map ideas to your actual life context. 1.2M views.
+
+- [Mnimiy](https://x.com/mnilax/status/2053116311132155938) — 2026-05-10: Long-form post: Karpathy's 4-rule CLAUDE.md template (born Jan 2026 from his thread on Claude failure modes — silent wrong assumptions, over-complication, orthogonal damage) cut mistakes from ~40% to <3% across 30 codebases over 6 weeks. Forrest Chang's repo hit 120K stars. Author argues the template only fixes Jan code-writing problems; he adds 8 more rules targeting May 2026 agent-orchestration issues (agent fights, hook cascades, skill loading conflicts, multi-step workflows). Notes CLAUDE.md is advisory (~80% compliance); past 200 lines compliance drops sharply. 2.5M views.
 
 - [Himanshu Kumar](https://x.com/codewithimanshu/status/2052573291131589101) — 2026-05-08: Engagement-farm pitch around a free 1-hour MIT lecture by Jim Simons, framing a Renaissance-style trading bot as a "weekend with Claude Code" project. Heavy on hype ("$100 to $130B", "build the bot this weekend") with no concrete repo or method.
 
@@ -690,7 +698,9 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (112)
+### Dev Practices (113)
+
+- [Mnimiy](https://x.com/mnilax/status/2053116311132155938) — 2026-05-10: Long-form post: Karpathy's 4-rule CLAUDE.md template (born Jan 2026 from his thread on Claude failure modes — silent wrong assumptions, over-complication, orthogonal damage) cut mistakes from ~40% to <3% across 30 codebases over 6 weeks. Forrest Chang's repo hit 120K stars. Author argues the template only fixes Jan code-writing problems; he adds 8 more rules targeting May 2026 agent-orchestration issues (agent fights, hook cascades, skill loading conflicts, multi-step workflows). Notes CLAUDE.md is advisory (~80% compliance); past 200 lines compliance drops sharply. 2.5M views.
 
 - [Axel Bitblaze 🪓](https://x.com/axel_bitblaze69/status/2052520764545613958) — 2026-05-08: Promotes a Claude Code plugin "claude-handoff" (willseltzer/claude-handoff) that snapshots session state to a HANDOFF.md and restores it in a fresh window. Three commands: /handoff:create, /handoff:quick, /handoff:resume. Some hype framing ("10-20 message limit") but the plugin itself looks legit.
 
@@ -1032,7 +1042,13 @@
 
 - [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Anthropic released a frontend-design plugin for Claude Code — demo shows Claude creating a music player app. Install via /plugin marketplace add anthropics/claude-code and /plugin install frontend-design@claude-code-plugins.
 
-### Prompting (53)
+### Prompting (56)
+
+- [Garry Tan](https://x.com/garrytan/status/2053538847795880414) — 2026-05-11: Garry Tan riffs on a Finbarr take — "code as memory": work with an agent non-deterministically the first time to figure out a task (research + write a script), then execute that script on every future repetition. Quote-tweets his own Apr 22 article on stopping agents from making the same mistakes (LangChain context).
+
+- [Garry Tan](https://x.com/garrytan/status/2053127519872614419) — 2026-05-10: Long-form X article "Meta-Meta-Prompting: The Secret to Making AI Agents Work" — Garry Tan argues to stop treating AI as a chat window and start treating it as an OS. Part of his Fat Skills/Fat Code/Thin Harness series. Open source: github.com/garrytan/gbrain and github.com/garrytan/gstack. Concrete "book mirror" example uses sub-agents per chapter that map ideas to your actual life context. 1.2M views.
+
+- [Mnimiy](https://x.com/mnilax/status/2053116311132155938) — 2026-05-10: Long-form post: Karpathy's 4-rule CLAUDE.md template (born Jan 2026 from his thread on Claude failure modes — silent wrong assumptions, over-complication, orthogonal damage) cut mistakes from ~40% to <3% across 30 codebases over 6 weeks. Forrest Chang's repo hit 120K stars. Author argues the template only fixes Jan code-writing problems; he adds 8 more rules targeting May 2026 agent-orchestration issues (agent fights, hook cascades, skill loading conflicts, multi-step workflows). Notes CLAUDE.md is advisory (~80% compliance); past 200 lines compliance drops sharply. 2.5M views.
 
 - [Avi Chawla](https://x.com/_avichawla/status/2052482874126020882) — 2026-05-08: Frames a Karpathy quote ("remove yourself as the bottleneck, maximize your leverage") to pitch Rowboat — an open-source AI second-brain over Markdown/Obsidian extended with work context (emails, meetings, decisions, deadlines). Useful framing for AI productivity systems.
 
@@ -1758,6 +1774,15 @@
 ## Full Chronological List
 
 ### May 2026
+
+- **2026-05-11** | [Garry Tan](https://x.com/garrytan/status/2053538847795880414) | agent-design, prompting
+  Garry Tan riffs on a Finbarr take — "code as memory": work with an agent non-deterministically the first time to figure out a task (research + write a script), then execute that script on every future repetition. Quote-tweets his own Apr 22 article on stopping agents from making the same mistakes (LangChain context).
+
+- **2026-05-10** | [Garry Tan](https://x.com/garrytan/status/2053127519872614419) | agent-design, prompting, claude-code
+  Long-form X article "Meta-Meta-Prompting: The Secret to Making AI Agents Work" — Garry Tan argues to stop treating AI as a chat window and start treating it as an OS. Part of his Fat Skills/Fat Code/Thin Harness series. Open source: github.com/garrytan/gbrain and github.com/garrytan/gstack. Concrete "book mirror" example uses sub-agents per chapter that map ideas to your actual life context. 1.2M views.
+
+- **2026-05-10** | [Mnimiy](https://x.com/mnilax/status/2053116311132155938) | claude-code, prompting, dev-practices
+  Long-form post: Karpathy's 4-rule CLAUDE.md template (born Jan 2026 from his thread on Claude failure modes — silent wrong assumptions, over-complication, orthogonal damage) cut mistakes from ~40% to <3% across 30 codebases over 6 weeks. Forrest Chang's repo hit 120K stars. Author argues the template only fixes Jan code-writing problems; he adds 8 more rules targeting May 2026 agent-orchestration issues (agent fights, hook cascades, skill loading conflicts, multi-step workflows). Notes CLAUDE.md is advisory (~80% compliance); past 200 lines compliance drops sharply. 2.5M views.
 
 - **2026-05-08** | [Himanshu Kumar](https://x.com/codewithimanshu/status/2052573291131589101) | questionable, claude-code
   Engagement-farm pitch around a free 1-hour MIT lecture by Jim Simons, framing a Renaissance-style trading bot as a "weekend with Claude Code" project. Heavy on hype ("$100 to $130B", "build the bot this weekend") with no concrete repo or method.
