@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-05-12",
+    "author": "Muhammad Ayan",
+    "handle": "@socialwithaayan",
+    "subject": "Post by Muhammad Ayan on X",
+    "url": "https://x.com/socialwithaayan/status/2053875867487777175",
+    "summary": "Engagement-farmed announcement (all-caps 'BREAKING') that Anthropic open-sourced a Claude Code plugin suite for finance workflows — DCF/LBO models, equity research, M&A analysis, KYC, IC memos — with MCP connectors for Bloomberg, FactSet, S&P Global, Morningstar, and PitchBook (github.com/anthropics/financial-services, Apache-2.0, ~19.8K stars). Top replies flag the obvious caveat: the harness is free but the data feeds (Bloomberg Terminal ~$28K/yr, FactSet/S&P/PitchBook six-figure) are not, and the agents draft work for human sign-off rather than autonomously owning workflows.",
+    "topics": [
+      "claude-code",
+      "skills-mcp",
+      "industry",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "110.9K",
+    "notes": "",
+    "enriched": true,
+    "content": "Muhammad Ayan @socialwithaayan — BREAKING: ANTHROPIC JUST OPEN SOURCED THE ENTIRE WALL STREET WORKFLOW. DCF models. LBO models. Equity research reports. Merger analysis. KYC checks. All of it. Free. On GitHub. It connects Claude directly to: Bloomberg, FactSet, S&P Global, Morningstar, PitchBook. Builds real Excel models with live formulas and sensitivity tables. Drafts CIMs, IC memos, earnings reports, and buyer lists. Runs PE due diligence, GL reconciliation, and NAV tie-outs. This is not a chatbot wrapper. These are production agents that own entire financial workflows. The kind firms pay $50,000 to $500,000 per year in software to run. Now it is a one-line Claude Code plugin install. 19.8K GitHub stars. Apache-2.0 License. 100% Open Source. 10:32 AM · May 11, 2026 · 110.9K Views. Follow-up by author: repo: GitHub - anthropics/financial-services."
+  },
+  {
     "date": "2026-05-11",
     "author": "Garry Tan",
     "handle": "@garrytan",

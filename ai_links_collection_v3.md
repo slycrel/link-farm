@@ -1,27 +1,28 @@
 # AI Links Collection
-**Total Posts**: 455  
-**Date Range**: 2024-06-11 – 2026-05-11  
-**Enriched**: 455/455 (100%)
+**Total Posts**: 456  
+**Date Range**: 2024-06-11 – 2026-05-12  
+**Enriched**: 456/456 (100%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 210 | 46.2% |
-| claude-code | 99 | 21.8% |
+| agent-design | 210 | 46.1% |
+| claude-code | 100 | 21.9% |
 | dev-practices | 113 | 24.8% |
-| skills-mcp | 57 | 12.5% |
+| skills-mcp | 58 | 12.7% |
 | prompting | 56 | 12.3% |
-| research | 75 | 16.5% |
-| industry | 41 | 9.0% |
+| research | 75 | 16.4% |
+| industry | 42 | 9.2% |
 | management | 73 | 16.0% |
-| questionable | 39 | 8.6% |
+| questionable | 40 | 8.8% |
 | general | 70 | 15.4% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-05-12 | Muhammad Ayan | claude-code | Engagement-farmed announcement (all-caps 'BREAKING') that Anthropic op... |
 | 2026-05-11 | Garry Tan | agent-design | Garry Tan riffs on a Finbarr take — "code as memory": work with an age... |
 | 2026-05-10 | Garry Tan | agent-design | Long-form X article "Meta-Meta-Prompting: The Secret to Making AI Agen... |
 | 2026-05-10 | Mnimiy | claude-code | Long-form post: Karpathy's 4-rule CLAUDE.md template (born Jan 2026 fr... |
@@ -71,7 +72,6 @@
 | 2026-04-30 | How To AI | research | Tencent's Training-Free GRPO claims to replace expensive RL fine-tunin... |
 | 2026-04-30 | Akshay | agent-design | Akshay rebuilt 'OpenClaw' core in a single Sim Studio workflow (25 blo... |
 | 2026-04-30 | Darshak Rana | questionable | Long-form personal development X article ('Your Next 5 Years Will Be a... |
-| 2026-04-28 | Aparna Dhinakaran | agent-design | Aparna riffs on Aran Komatsuzaki's note that Anthropic just shipped 'f... |
 
 ---
 ## Posts by Topic
@@ -498,7 +498,9 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Claude Code (99)
+### Claude Code (100)
+
+- [Muhammad Ayan](https://x.com/socialwithaayan/status/2053875867487777175) — 2026-05-12: Engagement-farmed announcement (all-caps 'BREAKING') that Anthropic open-sourced a Claude Code plugin suite for finance workflows — DCF/LBO models, equity research, M&A analysis, KYC, IC memos — with MCP connectors for Bloomberg, FactSet, S&P Global, Morningstar, and PitchBook (github.com/anthropics/financial-services, Apache-2.0, ~19.8K stars). Top replies flag the obvious caveat: the harness is free but the data feeds (Bloomberg Terminal ~$28K/yr, FactSet/S&P/PitchBook six-figure) are not, and the agents draft work for human sign-off rather than autonomously owning workflows.
 
 - [Garry Tan](https://x.com/garrytan/status/2053127519872614419) — 2026-05-10: Long-form X article "Meta-Meta-Prompting: The Secret to Making AI Agents Work" — Garry Tan argues to stop treating AI as a chat window and start treating it as an OS. Part of his Fat Skills/Fat Code/Thin Harness series. Open source: github.com/garrytan/gbrain and github.com/garrytan/gstack. Concrete "book mirror" example uses sub-agents per chapter that map ideas to your actual life context. 1.2M views.
 
@@ -926,7 +928,9 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (57)
+### Skills & MCP (58)
+
+- [Muhammad Ayan](https://x.com/socialwithaayan/status/2053875867487777175) — 2026-05-12: Engagement-farmed announcement (all-caps 'BREAKING') that Anthropic open-sourced a Claude Code plugin suite for finance workflows — DCF/LBO models, equity research, M&A analysis, KYC, IC memos — with MCP connectors for Bloomberg, FactSet, S&P Global, Morningstar, and PitchBook (github.com/anthropics/financial-services, Apache-2.0, ~19.8K stars). Top replies flag the obvious caveat: the harness is free but the data feeds (Bloomberg Terminal ~$28K/yr, FactSet/S&P/PitchBook six-figure) are not, and the agents draft work for human sign-off rather than autonomously owning workflows.
 
 - [Axel Bitblaze 🪓](https://x.com/axel_bitblaze69/status/2052520764545613958) — 2026-05-08: Promotes a Claude Code plugin "claude-handoff" (willseltzer/claude-handoff) that snapshots session state to a HANDOFF.md and restores it in a fresh window. Three commands: /handoff:create, /handoff:quick, /handoff:resume. Some hype framing ("10-20 message limit") but the plugin itself looks legit.
 
@@ -1308,7 +1312,9 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: 15-part thread explaining the 'stunning, simple explanation behind matrix multiplication' — breaks down the most crucial idea behind modern machine learning. 1M views.
 
-### Industry (41)
+### Industry (42)
+
+- [Muhammad Ayan](https://x.com/socialwithaayan/status/2053875867487777175) — 2026-05-12: Engagement-farmed announcement (all-caps 'BREAKING') that Anthropic open-sourced a Claude Code plugin suite for finance workflows — DCF/LBO models, equity research, M&A analysis, KYC, IC memos — with MCP connectors for Bloomberg, FactSet, S&P Global, Morningstar, and PitchBook (github.com/anthropics/financial-services, Apache-2.0, ~19.8K stars). Top replies flag the obvious caveat: the harness is free but the data feeds (Bloomberg Terminal ~$28K/yr, FactSet/S&P/PitchBook six-figure) are not, and the agents draft work for human sign-off rather than autonomously owning workflows.
 
 - [divyansh tiwari](https://x.com/divyansht91162/status/2052474052841984110) — 2026-05-08: Author claims web search is now "basically free" for AI agents after switching their OpenClaw and Hermes agents to TinyFish for browsing/research at $0/scale. Pitches TinyFish as a quiet ecosystem-shifter; light on technical detail, mostly framing.
 
@@ -1540,7 +1546,9 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
 
-### Questionable (39)
+### Questionable (40)
+
+- [Muhammad Ayan](https://x.com/socialwithaayan/status/2053875867487777175) — 2026-05-12: Engagement-farmed announcement (all-caps 'BREAKING') that Anthropic open-sourced a Claude Code plugin suite for finance workflows — DCF/LBO models, equity research, M&A analysis, KYC, IC memos — with MCP connectors for Bloomberg, FactSet, S&P Global, Morningstar, and PitchBook (github.com/anthropics/financial-services, Apache-2.0, ~19.8K stars). Top replies flag the obvious caveat: the harness is free but the data feeds (Bloomberg Terminal ~$28K/yr, FactSet/S&P/PitchBook six-figure) are not, and the agents draft work for human sign-off rather than autonomously owning workflows.
 
 - [Himanshu Kumar](https://x.com/codewithimanshu/status/2052573291131589101) — 2026-05-08: Engagement-farm pitch around a free 1-hour MIT lecture by Jim Simons, framing a Renaissance-style trading bot as a "weekend with Claude Code" project. Heavy on hype ("$100 to $130B", "build the bot this weekend") with no concrete repo or method.
 
@@ -1774,6 +1782,9 @@
 ## Full Chronological List
 
 ### May 2026
+
+- **2026-05-12** | [Muhammad Ayan](https://x.com/socialwithaayan/status/2053875867487777175) | claude-code, skills-mcp, industry, questionable
+  Engagement-farmed announcement (all-caps 'BREAKING') that Anthropic open-sourced a Claude Code plugin suite for finance workflows — DCF/LBO models, equity research, M&A analysis, KYC, IC memos — with MCP connectors for Bloomberg, FactSet, S&P Global, Morningstar, and PitchBook (github.com/anthropics/financial-services, Apache-2.0, ~19.8K stars). Top replies flag the obvious caveat: the harness is free but the data feeds (Bloomberg Terminal ~$28K/yr, FactSet/S&P/PitchBook six-figure) are not, and the agents draft work for human sign-off rather than autonomously owning workflows.
 
 - **2026-05-11** | [Garry Tan](https://x.com/garrytan/status/2053538847795880414) | agent-design, prompting
   Garry Tan riffs on a Finbarr take — "code as memory": work with an agent non-deterministically the first time to figure out a task (research + write a script), then execute that script on every future repetition. Quote-tweets his own Apr 22 article on stopping agents from making the same mistakes (LangChain context).
