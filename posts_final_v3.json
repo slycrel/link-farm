@@ -1,5 +1,404 @@
 [
   {
+    "date": "2026-05-13",
+    "author": "Alfred Lin",
+    "handle": "@alfred_lin",
+    "subject": "Post by Alfred Lin on X",
+    "url": "https://x.com/alfred_lin/status/2054556828118245710",
+    "summary": "Alfred Lin (Sequoia) on using simplicity humbly — frameworks have a domain of validity. Four complements: face the limits, zoom in and out, check convergence across frameworks, probabilistic thinking. Not about AI specifically, broader management/judgment essay.",
+    "topics": [
+      "management"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Alfred Lin (Sequoia): simplicity has limits. 1) Face the limits 2) Zoom in/out 3) Check convergence 4) Probabilistic thinking. Frameworks have domain of validity."
+  },
+  {
+    "date": "2026-05-13",
+    "author": "darkzodchi",
+    "handle": "@zodchiii",
+    "subject": "Post by darkzodchi on X",
+    "url": "https://x.com/zodchiii/status/2054526937561796939",
+    "summary": "Pointer to an Anthropic-engineer video on the 7 Claude Code mistakes that waste tokens — model switching, context management, settings that halve token usage. Key data point: Claude Code resends the full conversation history every turn, so a 30-message session can burn 232K tokens. Every MCP server, skill, and read file rides along.",
+    "topics": [
+      "claude-code",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "5.0K",
+    "notes": "",
+    "enriched": true,
+    "content": "darkzodchi: Anthropic engineer video on Claude Code token waste. 7 mistakes including model switching, context management. Claude Code resends entire conversation history every turn — a 30-message session burns 232K tokens."
+  },
+  {
+    "date": "2026-05-13",
+    "author": "Avi Chawla",
+    "handle": "@_avichawla",
+    "subject": "Post by Avi Chawla on X",
+    "url": "https://x.com/_avichawla/status/2054493154045567400",
+    "summary": "Direct comparison of Anthropic's three Claude surfaces: Chat (for thinking — conversational, no local file access), Code (for building — CLI, dev-focused), Cowork (for doing — desktop, agentic file/task automation). Useful framing for choosing the right surface per task.",
+    "topics": [
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Avi Chawla: Claude vs Claude Code vs Cowork. Chat for thinking (conversational, no local files). Code for building (CLI). Cowork for doing (desktop, agentic)."
+  },
+  {
+    "date": "2026-05-13",
+    "author": "Ihtesham Ali",
+    "handle": "@ihtesham2005",
+    "subject": "Post by Ihtesham Ali on X",
+    "url": "https://x.com/ihtesham2005/status/2054458335215395223",
+    "summary": "Google + Meta paper: Claude Code autonomously proposes, tests, and refines algorithms for improving LLM reasoning over 5 rounds with no human in the loop. Discovers a 4-mechanism controller (EMA momentum stopping, coupled width-depth control, alignment-aware depth allocation, conservative branch abandonment) for $39.90 total compute. Paper at arxiv.org/abs/2605.0xxx.",
+    "topics": [
+      "research",
+      "agent-design",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Ihtesham Ali: Google+Meta paper using Claude Code agent to propose, test, refine algorithms for LLM reasoning. 5 rounds. Discovers 4-mechanism controller: EMA momentum stopping, coupled width-depth control, alignment-aware depth allocation, conservative branch abandonment. Cost $39.90. arxiv.org/abs/2605.0xxx"
+  },
+  {
+    "date": "2026-05-13",
+    "author": "Michael Eisenberg",
+    "handle": "@mikeeisenberg",
+    "subject": "Post by Michael Eisenberg on X",
+    "url": "https://x.com/mikeeisenberg/status/2054431554240201008",
+    "summary": "Michael Eisenberg endorses a Zohar Atkins essay applying Jevons Paradox to Torah learning — when knowledge becomes cheap (AI), insight is what matters. Reference to Jevons' 1865 Coal Question. Off-topic for the AI stack but thoughtful framing on the value of insight in an AI-abundant world.",
+    "topics": [
+      "management",
+      "general"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "293K",
+    "notes": "",
+    "enriched": true,
+    "content": "Michael Eisenberg: quote of Zohar Atkins article \"When Knowledge Is Cheap, Insight Is Everything: Jevons Paradox applied to Torah Learning\". References Jevons 1865 Coal Question."
+  },
+  {
+    "date": "2026-05-13",
+    "author": "ericosiu",
+    "handle": "@ericosiu",
+    "subject": "Post by ericosiu on X (worth an extra look)",
+    "url": "https://x.com/ericosiu/status/2054413343776223393",
+    "summary": "ericosiu hiring forward-deployed engineers globally. Quotes Aaron Levie noting FDEs (or equivalent) are about to become one of the most in-demand jobs in tech for AI rollouts. References a \"beat AI\" challenge in his profile as their filter. Subject flagged \"worth an extra look\".",
+    "topics": [
+      "industry",
+      "management",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "65.8K",
+    "notes": "",
+    "enriched": true,
+    "content": "ericosiu hiring forward deployed engineers. Quotes Aaron Levie: FDEs about to be one of most in-demand AI jobs. \"Beat AI\" challenge in profile filters candidates."
+  },
+  {
+    "date": "2026-05-13",
+    "author": "IndieDevHailey (开发者Hailey)",
+    "handle": "@indiedevhailey",
+    "subject": "Post by Hailey on X",
+    "url": "https://x.com/indiedevhailey/status/2054386235867812240",
+    "summary": "GitHub project RuView (50K+ stars) — uses WiFi CSI signals plus AI to detect humans behind walls without cameras. Pose detection (17 keypoints), breathing/heart rate while sleeping, fall alerts. Runs locally on ESP32; no video, no cloud, privacy-preserving. Translated from Chinese.",
+    "topics": [
+      "research",
+      "industry"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "992.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "IndieDevHailey (translated from Chinese): GitHub RuView 50K+ stars. WiFi CSI + AI for see-through-wall detection. 17-point pose, breath/heart rate, fall alerts. ESP32, Docker, runs locally, no video/cloud, GDPR-compliant."
+  },
+  {
+    "date": "2026-05-13",
+    "author": "Miles Deutscher",
+    "handle": "@milesdeutscher",
+    "subject": "Post by Miles Deutscher on X",
+    "url": "https://x.com/milesdeutscher/status/2054310749884002348",
+    "summary": "Promotion of skillsmp.com — a marketplace claiming over 1 million ready-to-use agent skills and plug-ins. Marketing-heavy \"complete game-changer\" framing, low actual detail.",
+    "topics": [
+      "skills-mcp",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "27.9K",
+    "notes": "",
+    "enriched": true,
+    "content": "Miles Deutscher promoting skillsmp.com — agent skills marketplace with 1M+ ready-to-use agent skills and plug-ins. \"Complete game-changer\" framing."
+  },
+  {
+    "date": "2026-05-13",
+    "author": "Founder Thoughts & Strategies",
+    "handle": "@mogulinfluence",
+    "subject": "Post by Founder Thoughts & Strategies on X (have a look)",
+    "url": "https://x.com/mogulinfluence/status/2054274159706853837",
+    "summary": "Quote of Tom Verrilli (Whatnot) article on building product teams in the AI era — 31,832 people applied to be a PM at Whatnot in two years, only one hired. Framing: best product teams will ship 10x faster post-AI. Subject flagged \"have a look\".",
+    "topics": [
+      "management",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "23.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "Quote of Tom Verrilli (Whatnot) article: 31,832 PM applicants in 2 years, 1 hired. Discusses building product teams in AI era for 10x faster shipping."
+  },
+  {
+    "date": "2026-05-13",
+    "author": "GREG ISENBERG",
+    "handle": "@gregisenberg",
+    "subject": "Post by GREG ISENBERG on X",
+    "url": "https://x.com/gregisenberg/status/2054261832718889216",
+    "summary": "Free 47-minute course on building a managed AI-agent business solo. Pitch: sell \"unlimited agents/infrastructure\" as digital employees, don't niche too early, every executive has the same problems (emails, meetings, follow-ups). Stack: Hermes Agent (harness), Codex or Claude Code (build), Orgo (cloud computer sandboxes per agent), Composio (one-click auth), Obsidian (docs).",
+    "topics": [
+      "agent-design",
+      "industry",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Greg Isenberg: 47-min course on building managed AI agent business solo. Stack: Hermes Agent + Codex/Claude Code + Orgo (cloud sandbox per agent) + Composio (auth) + Obsidian. Sell digital employees with unlimited agents/usage. Try multiple verticals first."
+  },
+  {
+    "date": "2026-05-13",
+    "author": "Joseph Viviano",
+    "handle": "@josephdviviano",
+    "subject": "Post by Joseph Viviano on X",
+    "url": "https://x.com/josephdviviano/status/2054253118943363506",
+    "summary": "Joseph Viviano's \"Agentic Research Best Practices\" — 15 months of notes on using coding agents in research workflows (with Mila Quebec collaborators). Key argument: research codebases differ from product engineering — no users, active development, speed bound by intelligibility to author/collaborators, not throughput. Many \"best practices\" from product engineering feel archaic in research.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "6.5K",
+    "notes": "",
+    "enriched": true,
+    "content": "Joseph Viviano: Agentic Research Best Practices. 15 months of experimenting with agents at Mila Quebec. Research codebases have no users, active development, intelligibility-bound speed. Product-engineering best practices feel archaic in research context."
+  },
+  {
+    "date": "2026-05-13",
+    "author": "Charly Wargnier",
+    "handle": "@datachaz",
+    "subject": "Post by Charly Wargnier on X",
+    "url": "https://x.com/datachaz/status/2054225085100151163",
+    "summary": "Charly Wargnier hyping a Rohit article \"What to Learn, Build, and Skip in AI Agents (2026)\" — invokes Karpathy line that 90% of AI advice dies in 6 months. Signal-vs-noise framing for agent tooling, but very engagement-bait copy.",
+    "topics": [
+      "agent-design",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "158.4K",
+    "notes": "",
+    "enriched": true,
+    "content": "Charly Wargnier: quotes Rohit article \"What to Learn, Build, and Skip in AI Agents (2026)\". Karpathy: 90% of AI advice dies in 6 months. Signal vs noise in agent framework hype."
+  },
+  {
+    "date": "2026-05-13",
+    "author": "George from prodmgmt.world",
+    "handle": "@nurijanian",
+    "subject": "Post by George from prodmgmt.world on X",
+    "url": "https://x.com/nurijanian/status/2054216035503587396",
+    "summary": "George keeps reusing his own AI skill-building pipeline and wishes it were a product. Quote of his March 28 article on building AI skills as a non-expert by finding subject-matter experts in PDFs (he built game-theory and formal-logic skills this way).",
+    "topics": [
+      "skills-mcp",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "7.8K",
+    "notes": "",
+    "enriched": true,
+    "content": "George from prodmgmt.world: keeps using same process to build AI skills using PDFs as subject matter experts. Quotes his own article on the AI Skill-Building Pipeline for Non-Experts (game theory, formal logic)."
+  },
+  {
+    "date": "2026-05-13",
+    "author": "コムテ (Komte)",
+    "handle": "@commte",
+    "subject": "Post by Komte on X",
+    "url": "https://x.com/commte/status/2054136870016356408",
+    "summary": "Google open-sourced 13 official Agent Skills (github.com/google/skills) compliant with the Agent Skills standard — interoperable with Claude Code, Antigravity, Gemini CLI, Cursor, GitHub Copilot, and other major agents. Significant cross-vendor signal for the Agent Skills standard.",
+    "topics": [
+      "skills-mcp",
+      "claude-code",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "310K",
+    "notes": "",
+    "enriched": true,
+    "content": "Komte (translated from Japanese): Google released 13 official Skills at github.com/google/skills. Agent Skills standard. Works with Claude Code, Antigravity, Gemini CLI, Cursor, GitHub Copilot."
+  },
+  {
+    "date": "2026-05-12",
+    "author": "Ronin",
+    "handle": "@deronin_",
+    "subject": "Post by Ronin on X",
+    "url": "https://x.com/deronin_/status/2054255152555545079",
+    "summary": "Ten token-waste mistakes senior AI engineers stopped making — auto-context loading 50 files for a 30-line fix ($1.20/turn waste), defaulting Opus on lint/format/rename ($0.60 vs Haiku $0.02), tool-call loops resending the full repo on retry, defaulting to Sonnet when Kimi 2.6 matches at 1/6 cost, streaming on stable-prefix workflows killing prompt cache, \"just-in-case\" file includes blowing 80K-token prompts. Karpathy-quote framing.",
+    "topics": [
+      "claude-code",
+      "dev-practices",
+      "prompting",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Ronin: 10 token-waste mistakes. Karpathy: 90% of AI coding bill is unused context. 1) auto-context loading 50 files for 30-line fix 2) Opus on lint/format/rename when Haiku nails it 3) tool call loops resending repo on retry 4) Sonnet as default when Kimi 2.6 matches at 1/6 cost 5) streaming kills prompt cache 6) just-in-case includes 80K-token prompts 7) per-session knowledge rebuilding."
+  },
+  {
+    "date": "2026-05-12",
+    "author": "Roan",
+    "handle": "@rohonchain",
+    "subject": "Post by Roan on X",
+    "url": "https://x.com/rohonchain/status/2054245904258142593",
+    "summary": "Stanford MDP lecture pitched as a Markov-Chains-for-trading framework — quote of his own article on hedge-fund Markov chain trading. Not AI/agent content; trading/quant finance with engagement-bait framing. Tag as questionable.",
+    "topics": [
+      "questionable",
+      "general"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "233.4K",
+    "notes": "",
+    "enriched": true,
+    "content": "Roan: Stanford lecture on Markov Decision Processes pitched as systematic trading framework. Quote of own article on hedge fund Markov Chains for trading. Trading/quant content with engagement framing."
+  },
+  {
+    "date": "2026-05-12",
+    "author": "Rahul",
+    "handle": "@sairahul1",
+    "subject": "Post by Rahul on X",
+    "url": "https://x.com/sairahul1/status/2054171777119801764",
+    "summary": "Hypes a 22-minute Anthropic talk on production AI agents covering tool orchestration, memory systems, observability, long-running agents, and production infrastructure. Pitches a personal \"How to Become an AI Agent Engineer in 2026\" roadmap pushing back on CrewAI-by-default and framework chasing.",
+    "topics": [
+      "agent-design",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "74.4K",
+    "notes": "",
+    "enriched": true,
+    "content": "Rahul: hypes Anthropic 22-min talk on tool orchestration, memory systems, observability, long-running agents, production infrastructure. Links to own \"How to Become an AI Agent Engineer in 2026\" article. Pushes back on CrewAI-default framework chasing."
+  },
+  {
+    "date": "2026-05-12",
+    "author": "klöss",
+    "handle": "@kloss_xyz",
+    "subject": "Post by kloss on X",
+    "url": "https://x.com/kloss_xyz/status/2054096165055217987",
+    "summary": "Detailed /goal prompt template for Codex / Claude Code / Hermes with structured slots: GOAL (single measurable outcome), CONTEXT, CONSTRAINTS, PRIORITY, PLAN (understand first), DONE WHEN, VERIFY (tests/build/lint/typecheck). Aimed at killing scope creep and ranking uncertainty before acting. Directly usable.",
+    "topics": [
+      "prompting",
+      "claude-code",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "klöss: /goal prompt template for Codex / Claude Code / Hermes. Slots: GOAL (one measurable outcome), CONTEXT (repo/files/state), CONSTRAINTS, PRIORITY (1/2/3), PLAN (understand first, minimal changes), DONE WHEN (verifiable), VERIFY (tests/build/lint/typecheck). Kills scope creep."
+  },
+  {
     "date": "2026-05-12",
     "author": "Muhammad Ayan",
     "handle": "@socialwithaayan",
