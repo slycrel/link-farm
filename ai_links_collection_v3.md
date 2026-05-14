@@ -1,27 +1,37 @@
 # AI Links Collection
-**Total Posts**: 474  
-**Date Range**: 2024-06-11 – 2026-05-13  
-**Enriched**: 474/474 (100%)
+**Total Posts**: 484  
+**Date Range**: 2024-06-11 – 2026-05-14  
+**Enriched**: 484/484 (100%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 216 | 45.6% |
-| claude-code | 107 | 22.6% |
-| dev-practices | 117 | 24.7% |
-| skills-mcp | 61 | 12.9% |
-| prompting | 59 | 12.4% |
-| research | 78 | 16.5% |
-| industry | 48 | 10.1% |
-| management | 77 | 16.2% |
-| questionable | 44 | 9.3% |
-| general | 72 | 15.2% |
+| agent-design | 219 | 45.2% |
+| claude-code | 108 | 22.3% |
+| dev-practices | 118 | 24.4% |
+| skills-mcp | 62 | 12.8% |
+| prompting | 60 | 12.4% |
+| research | 80 | 16.5% |
+| industry | 51 | 10.5% |
+| management | 80 | 16.5% |
+| questionable | 46 | 9.5% |
+| general | 74 | 15.3% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-05-14 | Rohit Ghumare | agent-design | Argues agent codebases that survive past month six do so because the a... |
+| 2026-05-14 | divyansh tiwari | agent-design | Highlights a paper called NanoResearch proposing an agent architecture... |
+| 2026-05-14 | Guri Singh | questionable | Listicle of 10 side-hustle / digital-product sites (Carrd, Gumroad, Sy... |
+| 2026-05-14 | 송준 Jun Song | research | Claims that within weeks, a Minimax-M3.0-JANGTQ-CRACK release from @de... |
+| 2026-05-14 | Joe Hudson | general | Coaching post (not AI-specific) — Joe Hudson summarizes his 'dirty fue... |
+| 2026-05-14 | George from prodmgmt.world | management | PM advocates using an LLM as an adversarial reviewer on your PRD — the... |
+| 2026-05-14 | Jamie Signorile | management | Frames AI as widening the gap between strong and average employees in... |
+| 2026-05-14 | Khairallah AL-Awady | claude-code | Hype-styled promo pointing to a free 30-min Boris Cherny (creator of C... |
+| 2026-05-14 | Jaynit | management | Personal essay on developing implicit pattern recognition — author tra... |
+| 2026-05-14 | Geek Lite | agent-design | Oh My Hermes (github.com/Salomondiei08/oh-my-hermes) is a skills+workf... |
 | 2026-05-13 | Alfred Lin | management | Alfred Lin (Sequoia) on using simplicity humbly — frameworks have a do... |
 | 2026-05-13 | darkzodchi | claude-code | Pointer to an Anthropic-engineer video on the 7 Claude Code mistakes t... |
 | 2026-05-13 | Avi Chawla | claude-code | Direct comparison of Anthropic's three Claude surfaces: Chat (for thin... |
@@ -62,21 +72,17 @@
 | 2026-05-08 | Kanika | agent-design | Free 424-page "Agentic Design Patterns" guide by a senior Google engin... |
 | 2026-05-07 | Uncle Bob Martin | prompting | Uncle Bob quote-tweets a viral post about Anthropic's 24-minute prompt... |
 | 2026-05-07 | Tom Dörr | agent-design | Awesome-list of curated papers mapping foundation-agent cognition. Rep... |
-| 2026-05-05 | Vinay | research | Vinay quote-tweets a viral post about Gödel, Escher, Bach (1979) — Dou... |
-| 2026-05-05 | Adam Ghowiba | agent-design | JP Morgan's investment research team broke down their "Ask David" mult... |
-| 2026-05-02 | Dave Kline | management | A 15-minute manager/employee playbook for resetting expectations when... |
-| 2026-05-02 | Ole Lehmann | prompting | Argues you should run a 'premortem' on your plans with Claude — frame... |
-| 2026-05-02 | 0xSero | claude-code | Reminder that Claude Code session history is auto-deleted monthly unle... |
-| 2026-05-02 | darkzodchi | dev-practices | Promotes a security article + .gitignore template after citing that An... |
-| 2026-05-02 | Blaze | agent-design | French teenager built a 3D map of 217 mental models (1284 connections)... |
-| 2026-05-02 | Muhammad Ayan | agent-design | Pointer to github.com/warpdotdev/warp — Warp terminal's source has bee... |
-| 2026-05-02 | Kpaxs | management | Kpaxs reframes high-agency behavior: 'I'm doing this unless someone st... |
-| 2026-05-02 | Om Patel | claude-code | Promoted Claude Code skill /graphify that pre-builds a graph of your c... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (216)
+### Agent Design (219)
+
+- [Rohit Ghumare](https://x.com/ghumare64/status/2054625511897489423) — 2026-05-14: Argues agent codebases that survive past month six do so because the architecture makes the wrong shape harder to write than the right one — not because the team is disciplined. Cites a 'Mike' post listing four canonical month-six failures: shared mutable defaults across agents, tool fns that swallow any string and return None, session memory poisoned by LLM-extracted strings, and multi-agent setups passing the parent's full context. Aligns with the Anthropic/Glean harness-is-the-backend debate.
+
+- [divyansh tiwari](https://x.com/divyansht91162/status/2054430633645293687) — 2026-05-14: Highlights a paper called NanoResearch proposing an agent architecture with three co-evolving layers — Skill Bank (turns repeated actions into reusable expertise), Memory Layer (preserves project + user experience across sessions), Policy Learning (turns free-form feedback into permanent behavioral updates). Pitch: an agent that accumulates experience and aligns to the user over time rather than relying on bigger context windows.
+
+- [Geek Lite](https://x.com/qingq77/status/2054056472477307084) — 2026-05-14: Oh My Hermes (github.com/Salomondiei08/oh-my-hermes) is a skills+workflow layer for the Hermes Agent that ships 20 skills covering the full app lifecycle (requirements through monitoring/GitHub ops) and 5 role-specialized agents (CTO/PM/Dev/QA/Ops) collaborating on a kanban board. Treats Hermes as primary operator and Claude Code/Codex as optional accelerators — a concrete prior art for our skills + sub-agent architecture.
 
 - [Ihtesham Ali](https://x.com/ihtesham2005/status/2054458335215395223) — 2026-05-13: Google + Meta paper: Claude Code autonomously proposes, tests, and refines algorithms for improving LLM reasoning over 5 rounds with no human in the loop. Discovers a 4-mechanism controller (EMA momentum stopping, coupled width-depth control, alignment-aware depth allocation, conservative branch abandonment) for $39.90 total compute. Paper at arxiv.org/abs/2605.0xxx.
 
@@ -510,7 +516,9 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Claude Code (107)
+### Claude Code (108)
+
+- [Khairallah AL-Awady](https://x.com/eng_khairallah1/status/2054211760631185485) — 2026-05-14: Hype-styled promo pointing to a free 30-min Boris Cherny (creator of Claude Code) walkthrough plus the author's own 'turn Claude into a full-time AI employee in 7 days' course. The Cherny session is the real link worth chasing; the framing is engagement-farmed.
 
 - [darkzodchi](https://x.com/zodchiii/status/2054526937561796939) — 2026-05-13: Pointer to an Anthropic-engineer video on the 7 Claude Code mistakes that waste tokens — model switching, context management, settings that halve token usage. Key data point: Claude Code resends the full conversation history every turn, so a 30-message session can burn 232K tokens. Every MCP server, skill, and read file rides along.
 
@@ -726,7 +734,9 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (117)
+### Dev Practices (118)
+
+- [Rohit Ghumare](https://x.com/ghumare64/status/2054625511897489423) — 2026-05-14: Argues agent codebases that survive past month six do so because the architecture makes the wrong shape harder to write than the right one — not because the team is disciplined. Cites a 'Mike' post listing four canonical month-six failures: shared mutable defaults across agents, tool fns that swallow any string and return None, session memory poisoned by LLM-extracted strings, and multi-agent setups passing the parent's full context. Aligns with the Anthropic/Glean harness-is-the-backend debate.
 
 - [darkzodchi](https://x.com/zodchiii/status/2054526937561796939) — 2026-05-13: Pointer to an Anthropic-engineer video on the 7 Claude Code mistakes that waste tokens — model switching, context management, settings that halve token usage. Key data point: Claude Code resends the full conversation history every turn, so a 30-message session can burn 232K tokens. Every MCP server, skill, and read file rides along.
 
@@ -962,7 +972,9 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (61)
+### Skills & MCP (62)
+
+- [Geek Lite](https://x.com/qingq77/status/2054056472477307084) — 2026-05-14: Oh My Hermes (github.com/Salomondiei08/oh-my-hermes) is a skills+workflow layer for the Hermes Agent that ships 20 skills covering the full app lifecycle (requirements through monitoring/GitHub ops) and 5 role-specialized agents (CTO/PM/Dev/QA/Ops) collaborating on a kanban board. Treats Hermes as primary operator and Claude Code/Codex as optional accelerators — a concrete prior art for our skills + sub-agent architecture.
 
 - [Miles Deutscher](https://x.com/milesdeutscher/status/2054310749884002348) — 2026-05-13: Promotion of skillsmp.com — a marketplace claiming over 1 million ready-to-use agent skills and plug-ins. Marketing-heavy "complete game-changer" framing, low actual detail.
 
@@ -1086,7 +1098,9 @@
 
 - [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Anthropic released a frontend-design plugin for Claude Code — demo shows Claude creating a music player app. Install via /plugin marketplace add anthropics/claude-code and /plugin install frontend-design@claude-code-plugins.
 
-### Prompting (59)
+### Prompting (60)
+
+- [George from prodmgmt.world](https://x.com/nurijanian/status/2054244221352325359) — 2026-05-14: PM advocates using an LLM as an adversarial reviewer on your PRD — the flaws that ship to production are the ones you can't see from inside the doc. Short take with a link to his prodmgmt.world article walking through the practice.
 
 - [George from prodmgmt.world](https://x.com/nurijanian/status/2054216035503587396) — 2026-05-13: George keeps reusing his own AI skill-building pipeline and wishes it were a product. Quote of his March 28 article on building AI skills as a non-expert by finding subject-matter experts in PDFs (he built game-theory and formal-logic skills this way).
 
@@ -1206,7 +1220,11 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
 
-### Research (78)
+### Research (80)
+
+- [divyansh tiwari](https://x.com/divyansht91162/status/2054430633645293687) — 2026-05-14: Highlights a paper called NanoResearch proposing an agent architecture with three co-evolving layers — Skill Bank (turns repeated actions into reusable expertise), Memory Layer (preserves project + user experience across sessions), Policy Learning (turns free-form feedback into permanent behavioral updates). Pitch: an agent that accumulates experience and aligns to the user over time rather than relying on bigger context windows.
+
+- [송준 Jun Song](https://x.com/jun_song/status/2054379887608402199) — 2026-05-14: Claims that within weeks, a Minimax-M3.0-JANGTQ-CRACK release from @dealignai will bring Opus-4.6-tier local inference to 128GB Macs, with open-source quantization efforts targeting 24GB VRAM. Bullish on where local LLMs land in mid-2026.
 
 - [Ihtesham Ali](https://x.com/ihtesham2005/status/2054458335215395223) — 2026-05-13: Google + Meta paper: Claude Code autonomously proposes, tests, and refines algorithms for improving LLM reasoning over 5 rounds with no human in the loop. Discovers a 4-mechanism controller (EMA momentum stopping, coupled width-depth control, alignment-aware depth allocation, conservative branch abandonment) for $39.90 total compute. Paper at arxiv.org/abs/2605.0xxx.
 
@@ -1364,7 +1382,13 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: 15-part thread explaining the 'stunning, simple explanation behind matrix multiplication' — breaks down the most crucial idea behind modern machine learning. 1M views.
 
-### Industry (48)
+### Industry (51)
+
+- [Guri Singh](https://x.com/heygurisingh/status/2054405672176091449) — 2026-05-14: Listicle of 10 side-hustle / digital-product sites (Carrd, Gumroad, Systeme.io, Payhip, Ko-fi, Sellfy, …) framed as 'print money while you sleep'. Off-topic for the AI collection and engagement-farmed; flagging as questionable.
+
+- [송준 Jun Song](https://x.com/jun_song/status/2054379887608402199) — 2026-05-14: Claims that within weeks, a Minimax-M3.0-JANGTQ-CRACK release from @dealignai will bring Opus-4.6-tier local inference to 128GB Macs, with open-source quantization efforts targeting 24GB VRAM. Bullish on where local LLMs land in mid-2026.
+
+- [Jamie Signorile](https://x.com/sigsnyc/status/2054238175758111156) — 2026-05-14: Frames AI as widening the gap between strong and average employees in enterprise GTM roles rather than uplifting everyone. Author uses a two-axis hiring framework (technical capability x business savvy) drawn from a decade at Addepar and KizenTech and argues AI inverts how operators get evaluated.
 
 - [ericosiu](https://x.com/ericosiu/status/2054413343776223393) — 2026-05-13: ericosiu hiring forward-deployed engineers globally. Quotes Aaron Levie noting FDEs (or equivalent) are about to become one of the most in-demand jobs in tech for AI rollouts. References a "beat AI" challenge in his profile as their filter. Subject flagged "worth an extra look".
 
@@ -1462,7 +1486,13 @@
 
 - [Dante O. Cuales](https://x.com/danteocualesjr/status/1957204427909321027) — 2025-08-18: Reply to a thread about AI engineering being easy to learn — argues the 'intimidation factor is mostly artificial' since most AI engineering is API orchestration, prompt optimization, and data pipeline work. The hard parts are already abstracted away.
 
-### Management (77)
+### Management (80)
+
+- [George from prodmgmt.world](https://x.com/nurijanian/status/2054244221352325359) — 2026-05-14: PM advocates using an LLM as an adversarial reviewer on your PRD — the flaws that ship to production are the ones you can't see from inside the doc. Short take with a link to his prodmgmt.world article walking through the practice.
+
+- [Jamie Signorile](https://x.com/sigsnyc/status/2054238175758111156) — 2026-05-14: Frames AI as widening the gap between strong and average employees in enterprise GTM roles rather than uplifting everyone. Author uses a two-axis hiring framework (technical capability x business savvy) drawn from a decade at Addepar and KizenTech and argues AI inverts how operators get evaluated.
+
+- [Jaynit](https://x.com/jaynitx/status/2054200520575967698) — 2026-05-14: Personal essay on developing implicit pattern recognition — author tracked his own pre-post predictions on engagement and hit 70-80% accuracy without being able to articulate why. Reflection on tacit-knowledge skill-building, not AI-specific.
 
 - [Alfred Lin](https://x.com/alfred_lin/status/2054556828118245710) — 2026-05-13: Alfred Lin (Sequoia) on using simplicity humbly — frameworks have a domain of validity. Four complements: face the limits, zoom in and out, check convergence across frameworks, probabilistic thinking. Not about AI specifically, broader management/judgment essay.
 
@@ -1618,7 +1648,11 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
 
-### Questionable (44)
+### Questionable (46)
+
+- [Guri Singh](https://x.com/heygurisingh/status/2054405672176091449) — 2026-05-14: Listicle of 10 side-hustle / digital-product sites (Carrd, Gumroad, Systeme.io, Payhip, Ko-fi, Sellfy, …) framed as 'print money while you sleep'. Off-topic for the AI collection and engagement-farmed; flagging as questionable.
+
+- [Khairallah AL-Awady](https://x.com/eng_khairallah1/status/2054211760631185485) — 2026-05-14: Hype-styled promo pointing to a free 30-min Boris Cherny (creator of Claude Code) walkthrough plus the author's own 'turn Claude into a full-time AI employee in 7 days' course. The Cherny session is the real link worth chasing; the framing is engagement-farmed.
 
 - [Miles Deutscher](https://x.com/milesdeutscher/status/2054310749884002348) — 2026-05-13: Promotion of skillsmp.com — a marketplace claiming over 1 million ready-to-use agent skills and plug-ins. Marketing-heavy "complete game-changer" framing, low actual detail.
 
@@ -1708,7 +1742,11 @@
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
 
-### General (76)
+### General (78)
+
+- [Joe Hudson](https://x.com/fu_joehudson/status/2054264609683689941) — 2026-05-14: Coaching post (not AI-specific) — Joe Hudson summarizes his 'dirty fuel to clean fuel' framework for personal energy/motivation on a single page. Off-topic for the collection but in Jeremy's inbox; keeping for completeness.
+
+- [Jaynit](https://x.com/jaynitx/status/2054200520575967698) — 2026-05-14: Personal essay on developing implicit pattern recognition — author tracked his own pre-post predictions on engagement and hit 70-80% accuracy without being able to articulate why. Reflection on tacit-knowledge skill-building, not AI-specific.
 
 - [Michael Eisenberg](https://x.com/mikeeisenberg/status/2054431554240201008) — 2026-05-13: Michael Eisenberg endorses a Zohar Atkins essay applying Jevons Paradox to Torah learning — when knowledge becomes cheap (AI), insight is what matters. Reference to Jevons' 1865 Coal Question. Off-topic for the AI stack but thoughtful framing on the value of insight in an AI-abundant world.
 
@@ -1866,6 +1904,36 @@
 ## Full Chronological List
 
 ### May 2026
+
+- **2026-05-14** | [Rohit Ghumare](https://x.com/ghumare64/status/2054625511897489423) | agent-design, dev-practices
+  Argues agent codebases that survive past month six do so because the architecture makes the wrong shape harder to write than the right one — not because the team is disciplined. Cites a 'Mike' post listing four canonical month-six failures: shared mutable defaults across agents, tool fns that swallow any string and return None, session memory poisoned by LLM-extracted strings, and multi-agent setups passing the parent's full context. Aligns with the Anthropic/Glean harness-is-the-backend debate.
+
+- **2026-05-14** | [divyansh tiwari](https://x.com/divyansht91162/status/2054430633645293687) | agent-design, research
+  Highlights a paper called NanoResearch proposing an agent architecture with three co-evolving layers — Skill Bank (turns repeated actions into reusable expertise), Memory Layer (preserves project + user experience across sessions), Policy Learning (turns free-form feedback into permanent behavioral updates). Pitch: an agent that accumulates experience and aligns to the user over time rather than relying on bigger context windows.
+
+- **2026-05-14** | [Guri Singh](https://x.com/heygurisingh/status/2054405672176091449) | questionable, industry
+  Listicle of 10 side-hustle / digital-product sites (Carrd, Gumroad, Systeme.io, Payhip, Ko-fi, Sellfy, …) framed as 'print money while you sleep'. Off-topic for the AI collection and engagement-farmed; flagging as questionable.
+
+- **2026-05-14** | [송준 Jun Song](https://x.com/jun_song/status/2054379887608402199) | research, industry
+  Claims that within weeks, a Minimax-M3.0-JANGTQ-CRACK release from @dealignai will bring Opus-4.6-tier local inference to 128GB Macs, with open-source quantization efforts targeting 24GB VRAM. Bullish on where local LLMs land in mid-2026.
+
+- **2026-05-14** | [Joe Hudson](https://x.com/fu_joehudson/status/2054264609683689941) | general
+  Coaching post (not AI-specific) — Joe Hudson summarizes his 'dirty fuel to clean fuel' framework for personal energy/motivation on a single page. Off-topic for the collection but in Jeremy's inbox; keeping for completeness.
+
+- **2026-05-14** | [George from prodmgmt.world](https://x.com/nurijanian/status/2054244221352325359) | management, prompting
+  PM advocates using an LLM as an adversarial reviewer on your PRD — the flaws that ship to production are the ones you can't see from inside the doc. Short take with a link to his prodmgmt.world article walking through the practice.
+
+- **2026-05-14** | [Jamie Signorile](https://x.com/sigsnyc/status/2054238175758111156) | management, industry
+  Frames AI as widening the gap between strong and average employees in enterprise GTM roles rather than uplifting everyone. Author uses a two-axis hiring framework (technical capability x business savvy) drawn from a decade at Addepar and KizenTech and argues AI inverts how operators get evaluated.
+
+- **2026-05-14** | [Khairallah AL-Awady](https://x.com/eng_khairallah1/status/2054211760631185485) | claude-code, questionable
+  Hype-styled promo pointing to a free 30-min Boris Cherny (creator of Claude Code) walkthrough plus the author's own 'turn Claude into a full-time AI employee in 7 days' course. The Cherny session is the real link worth chasing; the framing is engagement-farmed.
+
+- **2026-05-14** | [Jaynit](https://x.com/jaynitx/status/2054200520575967698) | management, general
+  Personal essay on developing implicit pattern recognition — author tracked his own pre-post predictions on engagement and hit 70-80% accuracy without being able to articulate why. Reflection on tacit-knowledge skill-building, not AI-specific.
+
+- **2026-05-14** | [Geek Lite](https://x.com/qingq77/status/2054056472477307084) | agent-design, skills-mcp
+  Oh My Hermes (github.com/Salomondiei08/oh-my-hermes) is a skills+workflow layer for the Hermes Agent that ships 20 skills covering the full app lifecycle (requirements through monitoring/GitHub ops) and 5 role-specialized agents (CTO/PM/Dev/QA/Ops) collaborating on a kanban board. Treats Hermes as primary operator and Claude Code/Codex as optional accelerators — a concrete prior art for our skills + sub-agent architecture.
 
 - **2026-05-13** | [Alfred Lin](https://x.com/alfred_lin/status/2054556828118245710) | management
   Alfred Lin (Sequoia) on using simplicity humbly — frameworks have a domain of validity. Four complements: face the limits, zoom in and out, check convergence across frameworks, probabilistic thinking. Not about AI specifically, broader management/judgment essay.

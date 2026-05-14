@@ -1,5 +1,221 @@
 [
   {
+    "date": "2026-05-14",
+    "author": "Rohit Ghumare",
+    "handle": "@ghumare64",
+    "subject": "Post by Rohit Ghumare on X",
+    "url": "https://x.com/ghumare64/status/2054625511897489423",
+    "summary": "Argues agent codebases that survive past month six do so because the architecture makes the wrong shape harder to write than the right one — not because the team is disciplined. Cites a 'Mike' post listing four canonical month-six failures: shared mutable defaults across agents, tool fns that swallow any string and return None, session memory poisoned by LLM-extracted strings, and multi-agent setups passing the parent's full context. Aligns with the Anthropic/Glean harness-is-the-backend debate.",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Rohit Ghumare @ghumare64 — This is the most concrete thing I read today on why agent architecture matters in production, and the framing belongs in the harness debate alongside Anthropic's and Glean's. The frame: agent codebases that survive past six months don't survive because the team has more discipline. They survive because the architecture made the bad shape harder to write than the right one. Sharper than 'harness is the backend'. Production failures reproducible across teams because abstractions allow them. Four canonical month-six failures Mike lists: → Class-level mutable defaults shared between agents the moment a second user shows up → Tool functions that accept any string and return None on every kind of failure → Session memory mutated by an LLM-extracted string, silently poisoning every subsequent action → Multi-agent setups passing the parent's full conversation context."
+  },
+  {
+    "date": "2026-05-14",
+    "author": "divyansh tiwari",
+    "handle": "@divyansht91162",
+    "subject": "Post by divyansh tiwari on X",
+    "url": "https://x.com/divyansht91162/status/2054430633645293687",
+    "summary": "Highlights a paper called NanoResearch proposing an agent architecture with three co-evolving layers — Skill Bank (turns repeated actions into reusable expertise), Memory Layer (preserves project + user experience across sessions), Policy Learning (turns free-form feedback into permanent behavioral updates). Pitch: an agent that accumulates experience and aligns to the user over time rather than relying on bigger context windows.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "divyansh tiwari @DivyanshT91162 — Every AI agent today has the memory of a goldfish. You teach it your workflow. Correct its mistakes. Refine its outputs for weeks. And the next session? It acts like none of that ever happened. A new paper called NanoResearch just proposed an architecture that changes this completely. Not 'better prompts.' Not bigger context windows. An agent that continuously evolves around the user over time. The system runs on 3 co-evolving layers: → Skill Bank: converts repeated actions into reusable expertise → Memory Layer: preserves project + user-specific experience across sessions → Policy Learning: turns free-form feedback into permanent behavioral updates. Meaning the agent doesn't just respond. It accumulates experience. Internalizes preferences. Refines its planning. And gradually becomes aligned to how you think and work. According to the paper, the framework consistently outperforms current SOTA research-"
+  },
+  {
+    "date": "2026-05-14",
+    "author": "Guri Singh",
+    "handle": "@heygurisingh",
+    "subject": "Post by Guri Singh on X",
+    "url": "https://x.com/heygurisingh/status/2054405672176091449",
+    "summary": "Listicle of 10 side-hustle / digital-product sites (Carrd, Gumroad, Systeme.io, Payhip, Ko-fi, Sellfy, …) framed as 'print money while you sleep'. Off-topic for the AI collection and engagement-farmed; flagging as questionable.",
+    "topics": [
+      "questionable",
+      "industry"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Guri Singh @heygurisingh — Here are 10 websites that print money while you sleep. 1. Carrd.co — Build a one-page website in 20 minutes. Sell it on Flippa for $500-$2000. 2. Gumroad.com — Upload one PDF. One Notion template. One prompt pack. 3. Systeme.io — Free funnel builder. 4. Payhip.com — Sells digital products in 190 countries, handles VAT. 5. Ko-fi.com — 0% platform fee on tips and memberships. 6. Sellfy.com — Print on demand + digital products in same dashboard."
+  },
+  {
+    "date": "2026-05-14",
+    "author": "송준 Jun Song",
+    "handle": "@jun_song",
+    "subject": "Post by Jun Song on X",
+    "url": "https://x.com/jun_song/status/2054379887608402199",
+    "summary": "Claims that within weeks, a Minimax-M3.0-JANGTQ-CRACK release from @dealignai will bring Opus-4.6-tier local inference to 128GB Macs, with open-source quantization efforts targeting 24GB VRAM. Bullish on where local LLMs land in mid-2026.",
+    "topics": [
+      "research",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "82.1K",
+    "notes": "",
+    "enriched": true,
+    "content": "송준 Jun Song @jun_song — In few weeks, everyone with 128gb Mac will have uncensored Opus-4.6 locally. It will be Minimax-M3.0-JANGTQ-CRACK by @dealignai. The open-source community is working hard on fitting them into 24GB VRAM. The future of Local LLM is so bright."
+  },
+  {
+    "date": "2026-05-14",
+    "author": "Joe Hudson",
+    "handle": "@fu_joehudson",
+    "subject": "Post by Joe Hudson on X",
+    "url": "https://x.com/fu_joehudson/status/2054264609683689941",
+    "summary": "Coaching post (not AI-specific) — Joe Hudson summarizes his 'dirty fuel to clean fuel' framework for personal energy/motivation on a single page. Off-topic for the collection but in Jeremy's inbox; keeping for completeness.",
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "11.8K",
+    "notes": "",
+    "enriched": true,
+    "content": "Joe Hudson @FU_joehudson — After helping thousands of people go from 'dirty fuel' to 'clean fuel.' Everything I've learned on one page."
+  },
+  {
+    "date": "2026-05-14",
+    "author": "George from prodmgmt.world",
+    "handle": "@nurijanian",
+    "subject": "Post by George from prodmgmt.world on X",
+    "url": "https://x.com/nurijanian/status/2054244221352325359",
+    "summary": "PM advocates using an LLM as an adversarial reviewer on your PRD — the flaws that ship to production are the ones you can't see from inside the doc. Short take with a link to his prodmgmt.world article walking through the practice.",
+    "topics": [
+      "management",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "3,135",
+    "notes": "",
+    "enriched": true,
+    "content": "George from prodmgmt.world @nurijanian — 'adversarial PRD reviews slap'. Quote tweets his own article: 'Identify Critical Flaws in Requirements with AI'. Your PRD looks fine to you. That is the problem. The flaws that ship to production are always the flaws you cannot see from the inside, and you spend your entire PM career being the only person in the room who could spot them."
+  },
+  {
+    "date": "2026-05-14",
+    "author": "Jamie Signorile",
+    "handle": "@sigsnyc",
+    "subject": "Post by Jamie Signorile on X",
+    "url": "https://x.com/sigsnyc/status/2054238175758111156",
+    "summary": "Frames AI as widening the gap between strong and average employees in enterprise GTM roles rather than uplifting everyone. Author uses a two-axis hiring framework (technical capability x business savvy) drawn from a decade at Addepar and KizenTech and argues AI inverts how operators get evaluated.",
+    "topics": [
+      "management",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "178K",
+    "notes": "",
+    "enriched": true,
+    "content": "Jamie Signorile @SigsNYC — AI Doesn't Make Anyone Good. It Makes Good People Harder to Catch. A framework for where GTM roles are headed. Position accordingly. A friend texted: 'The funny thing about AI is it doesn't really make anyone good. It actually widens the gap between people who were already good and everyone else.' He meant technical employees specifically (B2B enterprise tech). Explains shifts in enterprise GTM — roles shifting, ratios inverting. The Framework I Use to Hire: spent last decade building global pre/post-sale teams. Over 100 interviews across Addepar and KizenTech. Uses two-axis framework: Technical skills (open a laptop and make something work, read an API doc) and business savvy."
+  },
+  {
+    "date": "2026-05-14",
+    "author": "Khairallah AL-Awady",
+    "handle": "@eng_khairallah1",
+    "subject": "Post by Khairallah AL-Awady on X",
+    "url": "https://x.com/eng_khairallah1/status/2054211760631185485",
+    "summary": "Hype-styled promo pointing to a free 30-min Boris Cherny (creator of Claude Code) walkthrough plus the author's own 'turn Claude into a full-time AI employee in 7 days' course. The Cherny session is the real link worth chasing; the framing is engagement-farmed.",
+    "topics": [
+      "claude-code",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "172.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "Khairallah AL-Awady @eng_khairallah1 — The person who built Claude Code just showed exactly how to use it. 30 minutes. Free. Straight from Boris Cherny himself. Bookmark this before you forget. Most people using Claude daily are missing 40+ features hiding in plain sight. This single session is worth more than any $1000 course. Quote tweets his own article: 'How to Turn Claude Into a Full-Time AI Employee in 7 Days (Full Course)'. There are two types of people using Claude right now. Bookmark & Save this :)"
+  },
+  {
+    "date": "2026-05-14",
+    "author": "Jaynit",
+    "handle": "@jaynitx",
+    "subject": "Post by Jaynit on X",
+    "url": "https://x.com/jaynitx/status/2054200520575967698",
+    "summary": "Personal essay on developing implicit pattern recognition — author tracked his own pre-post predictions on engagement and hit 70-80% accuracy without being able to articulate why. Reflection on tacit-knowledge skill-building, not AI-specific.",
+    "topics": [
+      "management",
+      "general"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "336K",
+    "notes": "",
+    "enriched": true,
+    "content": "Jaynit @jaynitx — pattern recognition: how to build the skill of seeing what others miss. I noticed something weird about six months into creating content. I could look at a post and know within seconds whether it would perform. Not perfectly. But way better than random chance. At first I thought I was imagining it. Just confirmation bias. So I started tracking it. I'd write down my prediction before posting, then check later. And yeah, I was right around 70-80% of the time. The weird part is I couldn't explain how I knew. I was recognizing patterns. Without consciously knowing it."
+  },
+  {
+    "date": "2026-05-14",
+    "author": "Geek Lite",
+    "handle": "@qingq77",
+    "subject": "Post by Geek Lite on X",
+    "url": "https://x.com/qingq77/status/2054056472477307084",
+    "summary": "Oh My Hermes (github.com/Salomondiei08/oh-my-hermes) is a skills+workflow layer for the Hermes Agent that ships 20 skills covering the full app lifecycle (requirements through monitoring/GitHub ops) and 5 role-specialized agents (CTO/PM/Dev/QA/Ops) collaborating on a kanban board. Treats Hermes as primary operator and Claude Code/Codex as optional accelerators — a concrete prior art for our skills + sub-agent architecture.",
+    "topics": [
+      "agent-design",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Geek Lite @QingQ77 (translated from Chinese) — Provide Hermes Agent with a ready-to-use skill and workflow layer that covers the entire application lifecycle from ideation to deployment and operations. github.com/Salomondiei08/oh-my-hermes. Oh My Hermes is essentially installing an 'operating system' on Hermes — install it once, and Hermes transforms from a mere chatbot into a capable operations + development partner. 20 skills cover the full spectrum: requirements clarification, product briefs, design handoffs, engine selection, code implementation, deployment, database connections, monitoring, notifications, GitHub operations. 5 Agents (CTO, PM, Dev, QA, Ops) each handle a segment, collaborating on a kanban board. Hermes itself is primary operator; Claude Code and Codex are optional accelerators for deep coding."
+  },
+  {
     "date": "2026-05-13",
     "author": "Alfred Lin",
     "handle": "@alfred_lin",
