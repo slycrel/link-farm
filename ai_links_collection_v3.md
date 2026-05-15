@@ -1,27 +1,35 @@
 # AI Links Collection
-**Total Posts**: 484  
-**Date Range**: 2024-06-11 – 2026-05-14  
-**Enriched**: 484/484 (100%)
+**Total Posts**: 492  
+**Date Range**: 2024-06-11 – 2026-05-15  
+**Enriched**: 492/492 (100%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 219 | 45.2% |
-| claude-code | 108 | 22.3% |
-| dev-practices | 118 | 24.4% |
-| skills-mcp | 62 | 12.8% |
-| prompting | 60 | 12.4% |
-| research | 80 | 16.5% |
-| industry | 51 | 10.5% |
-| management | 80 | 16.5% |
-| questionable | 46 | 9.5% |
-| general | 74 | 15.3% |
+| agent-design | 225 | 45.7% |
+| claude-code | 110 | 22.4% |
+| dev-practices | 119 | 24.2% |
+| skills-mcp | 62 | 12.6% |
+| prompting | 61 | 12.4% |
+| research | 83 | 16.9% |
+| industry | 53 | 10.8% |
+| management | 80 | 16.3% |
+| questionable | 50 | 10.2% |
+| general | 75 | 15.2% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-05-15 | Khairallah AL-Awady | agent-design | Thread about Anthropic's May 6, 2026 multi-agent orchestration announc... |
+| 2026-05-15 | CyrilXBT | industry | ALL-CAPS engagement-farming thread announcing GitHub's new official ce... |
+| 2026-05-15 | Meenakshi Yadav | agent-design | Generic agentic-AI architecture "cheat sheet" listing the standard lay... |
+| 2026-05-15 | Sam Hogan | agent-design | Sam Hogan introduces HALO (Hierarchical Agent Loop Optimizer) — github... |
+| 2026-05-15 | Avid | agent-design | Promo for a live 15-minute lecture by two Airbnb Senior Staff Engineer... |
+| 2026-05-15 | Berryxia.AI | agent-design | Translated-from-Chinese thread breaking down Tencent's newly open-sour... |
+| 2026-05-15 | How To AI | research | Hype-framed thread about Google's new "Nested Learning: The Illusion o... |
+| 2026-05-15 | Anatoli Kopadze | claude-code | 18-step listicle on getting more out of Claude (2.4M views). Step 1 —... |
 | 2026-05-14 | Rohit Ghumare | agent-design | Argues agent codebases that survive past month six do so because the a... |
 | 2026-05-14 | divyansh tiwari | agent-design | Highlights a paper called NanoResearch proposing an agent architecture... |
 | 2026-05-14 | Guri Singh | questionable | Listicle of 10 side-hustle / digital-product sites (Carrd, Gumroad, Sy... |
@@ -64,19 +72,23 @@
 | 2026-05-08 | Mgoes (bio/acc 🤖💉) | general | Off-topic for AI but Jeremy bookmarked it: rapid-fire summary of 2026... |
 | 2026-05-08 | Goodfire | research | Goodfire kicking off a research-blog series on "neural geometry" — the... |
 | 2026-05-08 | darkzodchi | questionable | Engagement-bait quote tweet of own X article ("AI team that doesn't qu... |
-| 2026-05-08 | Dave Kline | management | Five AI prompts Dave Kline runs before every 1:1 — frames it as 5-minu... |
-| 2026-05-08 | Millie Marconi | agent-design | Open-sourced "Feynman" agent system that reads a research paper, audit... |
-| 2026-05-08 | Allen Braden | general | Off-topic-for-AI rec: free 1-hour UC Berkeley lecture on systematic tr... |
-| 2026-05-08 | Rohit Ghumare | agent-design | Pitches "agentmemory" — a tool that records Claude Code session action... |
-| 2026-05-08 | Tom Dörr | agent-design | HelixDB — a single database that combines graph and vector storage for... |
-| 2026-05-08 | Kanika | agent-design | Free 424-page "Agentic Design Patterns" guide by a senior Google engin... |
-| 2026-05-07 | Uncle Bob Martin | prompting | Uncle Bob quote-tweets a viral post about Anthropic's 24-minute prompt... |
-| 2026-05-07 | Tom Dörr | agent-design | Awesome-list of curated papers mapping foundation-agent cognition. Rep... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (219)
+### Agent Design (225)
+
+- [Khairallah AL-Awady](https://x.com/eng_khairallah1/status/2055215784092401966) — 2026-05-15: Thread about Anthropic's May 6, 2026 multi-agent orchestration announcement (Code with Claude event): Claude Managed Agents can now run up to 20 specialized agents in parallel on a single task. Cites Netflix (parallel build-log analysis), Harvey (multi-document legal coordination), and Shopify (pushing toward 90% autonomous coding by Q3 2026) as production users. Good signal that parallel sub-agent orchestration is going mainstream.
+
+- [CyrilXBT](https://x.com/cyrilxbt/status/2055183411619549265) — 2026-05-15: ALL-CAPS engagement-farming thread announcing GitHub's new official certification GH-600 "Agentic AI Developer" — framed as the first formal credential for engineers who operate, supervise, and integrate AI agent teams across the SDLC. Worth knowing the cert exists; treat the framing as hype.
+
+- [Meenakshi Yadav](https://x.com/meenakshiyacs/status/2055104295641710718) — 2026-05-15: Generic agentic-AI architecture "cheat sheet" listing the standard layer stack: goal definition, orchestration, agents, tools, memory, monitoring, reliability (retries/HITL), and governance. No new ideas — useful as a one-slide overview to hand a junior or non-engineer.
+
+- [Sam Hogan](https://x.com/samhogan/status/2055064462844219603) — 2026-05-15: Sam Hogan introduces HALO (Hierarchical Agent Loop Optimizer) — github.com/context-labs/halo — which uses Reasoning Language Models to let the model itself shape its own agent harness rather than hard-coding it. Inspired by @a1zhang's "Mismanaged Genius Hypothesis" (LLMs are smarter than the harnesses humans design for them). Reports consistent 10%+ benchmark improvements across multiple evals.
+
+- [Avid](https://x.com/av1dlive/status/2054948286403150017) — 2026-05-15: Promo for a live 15-minute lecture by two Airbnb Senior Staff Engineers on agentic coding in 2026 — Airbnb already shipped one of the most ambitious LLM-agent migrations in production. Quote-tweets Avid's May 12 article "How to Build AI Agents in 2026 (Full Course)" (527.6K views). Worth watching for real production agentic-coding patterns from a company that has actually done the migration.
+
+- [Berryxia.AI](https://x.com/berryxia/status/2054924976835510337) — 2026-05-15: Translated-from-Chinese thread breaking down Tencent's newly open-sourced AI agent memory system (6 months of work). Highlights three techniques: real-time compression of expired context (cuts token usage 61%), Mermaid-syntax structured task maps that keep 30+ step workflows on track, and a long-term memory tier. Argues most teams over-index on context-length and under-invest in memory architecture.
 
 - [Rohit Ghumare](https://x.com/ghumare64/status/2054625511897489423) — 2026-05-14: Argues agent codebases that survive past month six do so because the architecture makes the wrong shape harder to write than the right one — not because the team is disciplined. Cites a 'Mike' post listing four canonical month-six failures: shared mutable defaults across agents, tool fns that swallow any string and return None, session memory poisoned by LLM-extracted strings, and multi-agent setups passing the parent's full context. Aligns with the Anthropic/Glean harness-is-the-backend debate.
 
@@ -516,7 +528,11 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Claude Code (108)
+### Claude Code (110)
+
+- [Khairallah AL-Awady](https://x.com/eng_khairallah1/status/2055215784092401966) — 2026-05-15: Thread about Anthropic's May 6, 2026 multi-agent orchestration announcement (Code with Claude event): Claude Managed Agents can now run up to 20 specialized agents in parallel on a single task. Cites Netflix (parallel build-log analysis), Harvey (multi-document legal coordination), and Shopify (pushing toward 90% autonomous coding by Q3 2026) as production users. Good signal that parallel sub-agent orchestration is going mainstream.
+
+- [Anatoli Kopadze](https://x.com/anatolikopadze/status/2054568935274549597) — 2026-05-15: 18-step listicle on getting more out of Claude (2.4M views). Step 1 — use Projects, not bare chats, so context persists across conversations; later steps cover memory, custom instructions, integrations, and workflows. Listicle framing is engagement-farmy but several tips are practical Claude.ai usage patterns worth knowing.
 
 - [Khairallah AL-Awady](https://x.com/eng_khairallah1/status/2054211760631185485) — 2026-05-14: Hype-styled promo pointing to a free 30-min Boris Cherny (creator of Claude Code) walkthrough plus the author's own 'turn Claude into a full-time AI employee in 7 days' course. The Cherny session is the real link worth chasing; the framing is engagement-farmed.
 
@@ -734,7 +750,9 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (118)
+### Dev Practices (119)
+
+- [Avid](https://x.com/av1dlive/status/2054948286403150017) — 2026-05-15: Promo for a live 15-minute lecture by two Airbnb Senior Staff Engineers on agentic coding in 2026 — Airbnb already shipped one of the most ambitious LLM-agent migrations in production. Quote-tweets Avid's May 12 article "How to Build AI Agents in 2026 (Full Course)" (527.6K views). Worth watching for real production agentic-coding patterns from a company that has actually done the migration.
 
 - [Rohit Ghumare](https://x.com/ghumare64/status/2054625511897489423) — 2026-05-14: Argues agent codebases that survive past month six do so because the architecture makes the wrong shape harder to write than the right one — not because the team is disciplined. Cites a 'Mike' post listing four canonical month-six failures: shared mutable defaults across agents, tool fns that swallow any string and return None, session memory poisoned by LLM-extracted strings, and multi-agent setups passing the parent's full context. Aligns with the Anthropic/Glean harness-is-the-backend debate.
 
@@ -1098,7 +1116,9 @@
 
 - [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Anthropic released a frontend-design plugin for Claude Code — demo shows Claude creating a music player app. Install via /plugin marketplace add anthropics/claude-code and /plugin install frontend-design@claude-code-plugins.
 
-### Prompting (60)
+### Prompting (61)
+
+- [Anatoli Kopadze](https://x.com/anatolikopadze/status/2054568935274549597) — 2026-05-15: 18-step listicle on getting more out of Claude (2.4M views). Step 1 — use Projects, not bare chats, so context persists across conversations; later steps cover memory, custom instructions, integrations, and workflows. Listicle framing is engagement-farmy but several tips are practical Claude.ai usage patterns worth knowing.
 
 - [George from prodmgmt.world](https://x.com/nurijanian/status/2054244221352325359) — 2026-05-14: PM advocates using an LLM as an adversarial reviewer on your PRD — the flaws that ship to production are the ones you can't see from inside the doc. Short take with a link to his prodmgmt.world article walking through the practice.
 
@@ -1220,7 +1240,13 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
 
-### Research (80)
+### Research (83)
+
+- [Sam Hogan](https://x.com/samhogan/status/2055064462844219603) — 2026-05-15: Sam Hogan introduces HALO (Hierarchical Agent Loop Optimizer) — github.com/context-labs/halo — which uses Reasoning Language Models to let the model itself shape its own agent harness rather than hard-coding it. Inspired by @a1zhang's "Mismanaged Genius Hypothesis" (LLMs are smarter than the harnesses humans design for them). Reports consistent 10%+ benchmark improvements across multiple evals.
+
+- [Berryxia.AI](https://x.com/berryxia/status/2054924976835510337) — 2026-05-15: Translated-from-Chinese thread breaking down Tencent's newly open-sourced AI agent memory system (6 months of work). Highlights three techniques: real-time compression of expired context (cuts token usage 61%), Mermaid-syntax structured task maps that keep 30+ step workflows on track, and a long-term memory tier. Argues most teams over-index on context-length and under-invest in memory architecture.
+
+- [How To AI](https://x.com/howtoai_/status/2054611399792644386) — 2026-05-15: Hype-framed thread about Google's new "Nested Learning: The Illusion of Deep Learning Architectures" paper (calling it "Attention Is All You Need V2"). Argues that today's LLMs suffer catastrophic forgetting because we treat them as one flat function, and Nested Learning instead models a network as thousands of nested optimization problems at different update frequencies — closer to how brains consolidate short- and long-term memory. Substance is real (Google Research paper), framing is clickbait.
 
 - [divyansh tiwari](https://x.com/divyansht91162/status/2054430633645293687) — 2026-05-14: Highlights a paper called NanoResearch proposing an agent architecture with three co-evolving layers — Skill Bank (turns repeated actions into reusable expertise), Memory Layer (preserves project + user experience across sessions), Policy Learning (turns free-form feedback into permanent behavioral updates). Pitch: an agent that accumulates experience and aligns to the user over time rather than relying on bigger context windows.
 
@@ -1382,7 +1408,11 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: 15-part thread explaining the 'stunning, simple explanation behind matrix multiplication' — breaks down the most crucial idea behind modern machine learning. 1M views.
 
-### Industry (51)
+### Industry (53)
+
+- [Khairallah AL-Awady](https://x.com/eng_khairallah1/status/2055215784092401966) — 2026-05-15: Thread about Anthropic's May 6, 2026 multi-agent orchestration announcement (Code with Claude event): Claude Managed Agents can now run up to 20 specialized agents in parallel on a single task. Cites Netflix (parallel build-log analysis), Harvey (multi-document legal coordination), and Shopify (pushing toward 90% autonomous coding by Q3 2026) as production users. Good signal that parallel sub-agent orchestration is going mainstream.
+
+- [CyrilXBT](https://x.com/cyrilxbt/status/2055183411619549265) — 2026-05-15: ALL-CAPS engagement-farming thread announcing GitHub's new official certification GH-600 "Agentic AI Developer" — framed as the first formal credential for engineers who operate, supervise, and integrate AI agent teams across the SDLC. Worth knowing the cert exists; treat the framing as hype.
 
 - [Guri Singh](https://x.com/heygurisingh/status/2054405672176091449) — 2026-05-14: Listicle of 10 side-hustle / digital-product sites (Carrd, Gumroad, Systeme.io, Payhip, Ko-fi, Sellfy, …) framed as 'print money while you sleep'. Off-topic for the AI collection and engagement-farmed; flagging as questionable.
 
@@ -1648,7 +1678,15 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
 
-### Questionable (46)
+### Questionable (50)
+
+- [CyrilXBT](https://x.com/cyrilxbt/status/2055183411619549265) — 2026-05-15: ALL-CAPS engagement-farming thread announcing GitHub's new official certification GH-600 "Agentic AI Developer" — framed as the first formal credential for engineers who operate, supervise, and integrate AI agent teams across the SDLC. Worth knowing the cert exists; treat the framing as hype.
+
+- [Meenakshi Yadav](https://x.com/meenakshiyacs/status/2055104295641710718) — 2026-05-15: Generic agentic-AI architecture "cheat sheet" listing the standard layer stack: goal definition, orchestration, agents, tools, memory, monitoring, reliability (retries/HITL), and governance. No new ideas — useful as a one-slide overview to hand a junior or non-engineer.
+
+- [How To AI](https://x.com/howtoai_/status/2054611399792644386) — 2026-05-15: Hype-framed thread about Google's new "Nested Learning: The Illusion of Deep Learning Architectures" paper (calling it "Attention Is All You Need V2"). Argues that today's LLMs suffer catastrophic forgetting because we treat them as one flat function, and Nested Learning instead models a network as thousands of nested optimization problems at different update frequencies — closer to how brains consolidate short- and long-term memory. Substance is real (Google Research paper), framing is clickbait.
+
+- [Anatoli Kopadze](https://x.com/anatolikopadze/status/2054568935274549597) — 2026-05-15: 18-step listicle on getting more out of Claude (2.4M views). Step 1 — use Projects, not bare chats, so context persists across conversations; later steps cover memory, custom instructions, integrations, and workflows. Listicle framing is engagement-farmy but several tips are practical Claude.ai usage patterns worth knowing.
 
 - [Guri Singh](https://x.com/heygurisingh/status/2054405672176091449) — 2026-05-14: Listicle of 10 side-hustle / digital-product sites (Carrd, Gumroad, Systeme.io, Payhip, Ko-fi, Sellfy, …) framed as 'print money while you sleep'. Off-topic for the AI collection and engagement-farmed; flagging as questionable.
 
@@ -1742,7 +1780,9 @@
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
 
-### General (78)
+### General (79)
+
+- [Meenakshi Yadav](https://x.com/meenakshiyacs/status/2055104295641710718) — 2026-05-15: Generic agentic-AI architecture "cheat sheet" listing the standard layer stack: goal definition, orchestration, agents, tools, memory, monitoring, reliability (retries/HITL), and governance. No new ideas — useful as a one-slide overview to hand a junior or non-engineer.
 
 - [Joe Hudson](https://x.com/fu_joehudson/status/2054264609683689941) — 2026-05-14: Coaching post (not AI-specific) — Joe Hudson summarizes his 'dirty fuel to clean fuel' framework for personal energy/motivation on a single page. Off-topic for the collection but in Jeremy's inbox; keeping for completeness.
 
@@ -1904,6 +1944,30 @@
 ## Full Chronological List
 
 ### May 2026
+
+- **2026-05-15** | [Khairallah AL-Awady](https://x.com/eng_khairallah1/status/2055215784092401966) | agent-design, claude-code, industry
+  Thread about Anthropic's May 6, 2026 multi-agent orchestration announcement (Code with Claude event): Claude Managed Agents can now run up to 20 specialized agents in parallel on a single task. Cites Netflix (parallel build-log analysis), Harvey (multi-document legal coordination), and Shopify (pushing toward 90% autonomous coding by Q3 2026) as production users. Good signal that parallel sub-agent orchestration is going mainstream.
+
+- **2026-05-15** | [CyrilXBT](https://x.com/cyrilxbt/status/2055183411619549265) | industry, agent-design, questionable
+  ALL-CAPS engagement-farming thread announcing GitHub's new official certification GH-600 "Agentic AI Developer" — framed as the first formal credential for engineers who operate, supervise, and integrate AI agent teams across the SDLC. Worth knowing the cert exists; treat the framing as hype.
+
+- **2026-05-15** | [Meenakshi Yadav](https://x.com/meenakshiyacs/status/2055104295641710718) | agent-design, general, questionable
+  Generic agentic-AI architecture "cheat sheet" listing the standard layer stack: goal definition, orchestration, agents, tools, memory, monitoring, reliability (retries/HITL), and governance. No new ideas — useful as a one-slide overview to hand a junior or non-engineer.
+
+- **2026-05-15** | [Sam Hogan](https://x.com/samhogan/status/2055064462844219603) | agent-design, research
+  Sam Hogan introduces HALO (Hierarchical Agent Loop Optimizer) — github.com/context-labs/halo — which uses Reasoning Language Models to let the model itself shape its own agent harness rather than hard-coding it. Inspired by @a1zhang's "Mismanaged Genius Hypothesis" (LLMs are smarter than the harnesses humans design for them). Reports consistent 10%+ benchmark improvements across multiple evals.
+
+- **2026-05-15** | [Avid](https://x.com/av1dlive/status/2054948286403150017) | agent-design, dev-practices
+  Promo for a live 15-minute lecture by two Airbnb Senior Staff Engineers on agentic coding in 2026 — Airbnb already shipped one of the most ambitious LLM-agent migrations in production. Quote-tweets Avid's May 12 article "How to Build AI Agents in 2026 (Full Course)" (527.6K views). Worth watching for real production agentic-coding patterns from a company that has actually done the migration.
+
+- **2026-05-15** | [Berryxia.AI](https://x.com/berryxia/status/2054924976835510337) | agent-design, research
+  Translated-from-Chinese thread breaking down Tencent's newly open-sourced AI agent memory system (6 months of work). Highlights three techniques: real-time compression of expired context (cuts token usage 61%), Mermaid-syntax structured task maps that keep 30+ step workflows on track, and a long-term memory tier. Argues most teams over-index on context-length and under-invest in memory architecture.
+
+- **2026-05-15** | [How To AI](https://x.com/howtoai_/status/2054611399792644386) | research, questionable
+  Hype-framed thread about Google's new "Nested Learning: The Illusion of Deep Learning Architectures" paper (calling it "Attention Is All You Need V2"). Argues that today's LLMs suffer catastrophic forgetting because we treat them as one flat function, and Nested Learning instead models a network as thousands of nested optimization problems at different update frequencies — closer to how brains consolidate short- and long-term memory. Substance is real (Google Research paper), framing is clickbait.
+
+- **2026-05-15** | [Anatoli Kopadze](https://x.com/anatolikopadze/status/2054568935274549597) | claude-code, prompting, questionable
+  18-step listicle on getting more out of Claude (2.4M views). Step 1 — use Projects, not bare chats, so context persists across conversations; later steps cover memory, custom instructions, integrations, and workflows. Listicle framing is engagement-farmy but several tips are practical Claude.ai usage patterns worth knowing.
 
 - **2026-05-14** | [Rohit Ghumare](https://x.com/ghumare64/status/2054625511897489423) | agent-design, dev-practices
   Argues agent codebases that survive past month six do so because the architecture makes the wrong shape harder to write than the right one — not because the team is disciplined. Cites a 'Mike' post listing four canonical month-six failures: shared mutable defaults across agents, tool fns that swallow any string and return None, session memory poisoned by LLM-extracted strings, and multi-agent setups passing the parent's full context. Aligns with the Anthropic/Glean harness-is-the-backend debate.

@@ -1,5 +1,184 @@
 [
   {
+    "date": "2026-05-15",
+    "author": "Khairallah AL-Awady",
+    "handle": "@eng_khairallah1",
+    "subject": "Post by Khairallah AL-Awady on X",
+    "url": "https://x.com/eng_khairallah1/status/2055215784092401966",
+    "summary": "Thread about Anthropic's May 6, 2026 multi-agent orchestration announcement (Code with Claude event): Claude Managed Agents can now run up to 20 specialized agents in parallel on a single task. Cites Netflix (parallel build-log analysis), Harvey (multi-document legal coordination), and Shopify (pushing toward 90% autonomous coding by Q3 2026) as production users. Good signal that parallel sub-agent orchestration is going mainstream.",
+    "topics": [
+      "agent-design",
+      "claude-code",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "173K",
+    "notes": "",
+    "enriched": true,
+    "content": "Khairallah AL-Awady @eng_khairallah1 — How to Build a Team of AI Agents That Actually Work Together (Full Course). One AI agent is powerful. A team of AI agents working together is a completely different category. On May 6th, 2026, Anthropic announced multi-agent orchestration for Claude Managed Agents at their Code with Claude event. You can now run up to 20 specialized agents working in parallel on a single task. Not sequentially. In parallel. At the same time. Each one handling a different part of the problem. This is the same architecture that Netflix, Harvey (the legal AI company), and Shopify are already using in production. Netflix uses it to analyze hundreds of build logs simultaneously. Harvey uses it to coordinate complex legal work across multiple documents. Shopify is pushing toward 90% autonomous coding by Q3 2026. These are not experiments. These are production systems running at scale right now."
+  },
+  {
+    "date": "2026-05-15",
+    "author": "CyrilXBT",
+    "handle": "@cyrilxbt",
+    "subject": "Post by CyrilXBT on X",
+    "url": "https://x.com/cyrilxbt/status/2055183411619549265",
+    "summary": "ALL-CAPS engagement-farming thread announcing GitHub's new official certification GH-600 \"Agentic AI Developer\" — framed as the first formal credential for engineers who operate, supervise, and integrate AI agent teams across the SDLC. Worth knowing the cert exists; treat the framing as hype.",
+    "topics": [
+      "industry",
+      "agent-design",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "CyrilXBT @cyrilXBT — GITHUB JUST CREATED AN OFFICIAL CERTIFICATION FOR THE MOST IN-DEMAND DEVELOPER ROLE OF 2026. It is called Agentic AI Developer. GH-600. And it is the first formal signal that running AI agent teams is now a recognized engineering discipline with a credential behind it. Not a prompt engineer. Not a vibe coder. An Agentic AI Developer. The person who operates, supervises, and integrates AI agents across the entire software development lifecycle. The person who knows where agents fail in production. The person who understands how to build autonomous workflows that do not introduce catastrophic failure modes into CI/CD pipelines. GitHub certifying this role changes the hiring conversation permanently."
+  },
+  {
+    "date": "2026-05-15",
+    "author": "Meenakshi Yadav",
+    "handle": "@meenakshiyacs",
+    "subject": "Post by Meenakshi Yadav on X",
+    "url": "https://x.com/meenakshiyacs/status/2055104295641710718",
+    "summary": "Generic agentic-AI architecture \"cheat sheet\" listing the standard layer stack: goal definition, orchestration, agents, tools, memory, monitoring, reliability (retries/HITL), and governance. No new ideas — useful as a one-slide overview to hand a junior or non-engineer.",
+    "topics": [
+      "agent-design",
+      "general",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Meenakshi Yadav @MeenakshiYACS — Most people talk about Agentic AI. Very few can actually design it. Here's a simple cheat sheet to design + explain Agentic AI architecture. Define the goal: what should the agent achieve? Orchestration Layer (control panel): flow, logic, coordination. Agents Layer (workforce): single or multi-agents handling specialized tasks. Tools Layer (execution): APIs, web search, databases, external systems. Memory (brain): short-term + long-term context storage. Monitoring (eyes): track every step, detect issues in real time. Reliability & Failure (safety net): retries, fallbacks, human-in-the-loop. Governance & Security (guardrails): auth, compliance, audit, data protection. Agents alone don't make systems powerful. Architecture does."
+  },
+  {
+    "date": "2026-05-15",
+    "author": "Sam Hogan",
+    "handle": "@samhogan",
+    "subject": "Post by Sam Hogan 🇺🇸 on X",
+    "url": "https://x.com/samhogan/status/2055064462844219603",
+    "summary": "Sam Hogan introduces HALO (Hierarchical Agent Loop Optimizer) — github.com/context-labs/halo — which uses Reasoning Language Models to let the model itself shape its own agent harness rather than hard-coding it. Inspired by @a1zhang's \"Mismanaged Genius Hypothesis\" (LLMs are smarter than the harnesses humans design for them). Reports consistent 10%+ benchmark improvements across multiple evals.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "15K",
+    "notes": "",
+    "enriched": true,
+    "content": "Sam Hogan @samhogan — HALO: Using RLMs to build self-improving agents. AI Agents are composed of two key elements: a model and a harness. The model decides what to do; the harness does it. An AI agent is what you get when you put a model into the harness and start a loop. Billions of dollars have been spent improving the models. Not as much attention has been paid to the harness, until recently. The Mismanaged Genius Hypothesis from @a1zhang posits that LLMs do indeed possess superhuman intelligence, but perhaps us humans are not very good at managing the harnesses that turn these models into Agents, and perhaps there is path to creating better agents by letting the models themselves decide the shape the harness should take. To explore this idea, we built HALO (Hierarchical Agent Loop Optimizer). GitHub: github.com/context-labs/halo. We have found that HALO is consistently able to improve benchmark scores across a variety of evaluations, including 10%+ improvements."
+  },
+  {
+    "date": "2026-05-15",
+    "author": "Avid",
+    "handle": "@av1dlive",
+    "subject": "Post by Avid on X",
+    "url": "https://x.com/av1dlive/status/2054948286403150017",
+    "summary": "Promo for a live 15-minute lecture by two Airbnb Senior Staff Engineers on agentic coding in 2026 — Airbnb already shipped one of the most ambitious LLM-agent migrations in production. Quote-tweets Avid's May 12 article \"How to Build AI Agents in 2026 (Full Course)\" (527.6K views). Worth watching for real production agentic-coding patterns from a company that has actually done the migration.",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "7.2K",
+    "notes": "",
+    "enriched": true,
+    "content": "Avid @Av1dlive — In 15 minutes, 2 Senior Staff Engineers at Airbnb gave a Live Lecture on Agentic Coding. Airbnb already shipped one of the most ambitious LLM-agent migrations in production. Tonight two of their senior engineers shows how they actually build with agents in 2026. Most builders are guessing. These guys ship. Bookmark & watch this, then read the complete article below. [Quote tweet: Avid @Av1dlive May 12 — How to Build AI Agents in 2026 (Full Course). Here is the truth nobody tells ai builders. Most of them are building demos. All you need to build is a production level ai agent. 527.6K Views]"
+  },
+  {
+    "date": "2026-05-15",
+    "author": "Berryxia.AI",
+    "handle": "@berryxia",
+    "subject": "Post by Berryxia.AI on X",
+    "url": "https://x.com/berryxia/status/2054924976835510337",
+    "summary": "Translated-from-Chinese thread breaking down Tencent's newly open-sourced AI agent memory system (6 months of work). Highlights three techniques: real-time compression of expired context (cuts token usage 61%), Mermaid-syntax structured task maps that keep 30+ step workflows on track, and a long-term memory tier. Argues most teams over-index on context-length and under-invest in memory architecture.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Berryxia.AI @berryxia (translated from Chinese) — Agent memory is just way too damn intense! Tencent's AI team spent a full 6 months grinding on one single issue: AI agents wildly losing context in long conversations. They finally built out a whole memory system and open-sourced it. After checking out their breakdown, my biggest takeaway is that 99% of folks are still grinding away at context length, but what really pulls agents back on track are these three hardcore moves. First move: Real-time compression of expired context. Slashes token usage by 61% right off the bat. Second move: Draw up a structured task map for the agent, generated straight with Mermaid syntax. In workflows with 30+ steps, the chance of going off the rails drops big time."
+  },
+  {
+    "date": "2026-05-15",
+    "author": "How To AI",
+    "handle": "@howtoai_",
+    "subject": "Post by How To AI on X",
+    "url": "https://x.com/howtoai_/status/2054611399792644386",
+    "summary": "Hype-framed thread about Google's new \"Nested Learning: The Illusion of Deep Learning Architectures\" paper (calling it \"Attention Is All You Need V2\"). Argues that today's LLMs suffer catastrophic forgetting because we treat them as one flat function, and Nested Learning instead models a network as thousands of nested optimization problems at different update frequencies — closer to how brains consolidate short- and long-term memory. Substance is real (Google Research paper), framing is clickbait.",
+    "topics": [
+      "research",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "How To AI @HowToAI_ — Google has quietly dropped what researchers are calling \"Attention Is All You Need V2.\" And it signals the end of the Transformer era as we know it. In 2017, the original \"Attention Is All You Need\" paper changed the world by proving that AI doesn't need recurrence, it just needs to pay attention. But today, even the most advanced models like GPT and Gemini suffer from a massive, structural flaw: Catastrophic Forgetting. The moment an AI learns something new, it starts losing what it learned before. It's why AI \"hallucinates\" or loses the thread in long conversations. This paper, titled \"Nested Learning: The Illusion of Deep Learning Architectures,\" completely replaces the way AI stores information. The researchers have introduced a paradigm shift called Nested Learning (NL). For the last decade, we treated AI models as one giant, flat mathematical function. NL proves that a model is actually a set of thousands of smaller nested optimization problems, each updating at its own frequency."
+  },
+  {
+    "date": "2026-05-15",
+    "author": "Anatoli Kopadze",
+    "handle": "@anatolikopadze",
+    "subject": "Post by Anatoli Kopadze on X",
+    "url": "https://x.com/anatolikopadze/status/2054568935274549597",
+    "summary": "18-step listicle on getting more out of Claude (2.4M views). Step 1 — use Projects, not bare chats, so context persists across conversations; later steps cover memory, custom instructions, integrations, and workflows. Listicle framing is engagement-farmy but several tips are practical Claude.ai usage patterns worth knowing.",
+    "topics": [
+      "claude-code",
+      "prompting",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "2.4M",
+    "notes": "",
+    "enriched": true,
+    "content": "Anatoli Kopadze @AnatoliKopadze — How to Actually Use Claude. 18 steps that unlock 100% of its potential. Claude has been out for two years. Most people who use it every day are still using 10% of what it can do. Not because it's complicated. Because nobody showed them what the other 90% looks like. This guide fixes that. By the end you will have Claude set up in a way that remembers you, understands you, and works the way you actually think. Start Here. 1 - Create a Project, not a chat. Every time you open a new Claude chat, it starts with zero memory. It doesn't know your name, your work, your goals, or how you like to communicate. Projects fix this. A Project is a persistent workspace where Claude keeps context across every conversation inside it."
+  },
+  {
     "date": "2026-05-14",
     "author": "Rohit Ghumare",
     "handle": "@ghumare64",
