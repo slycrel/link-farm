@@ -156,6 +156,28 @@
   },
   {
     "date": "2026-05-16",
+    "author": "Dan McAteer",
+    "handle": "@daniel_mac8",
+    "subject": "Post by Daniel Mac on X",
+    "url": "https://x.com/daniel_mac8/status/2055838212069773456",
+    "summary": "Dan McAteer flags a continual-learning research result: fast-slow training (FST) treats model parameters as \"slow\" weights and optimized context as \"fast\" weights. Claims FST beats weights-only training on every axis measured across math, code, and general reasoning benchmarks. Casual hype framing (\"babe, wake up\") but substantive research signal — fits the broader continual-learning thread (alongside ar0cket1's OPSD work).",
+    "topics": [
+      "research",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "37.4K",
+    "notes": "",
+    "enriched": true,
+    "content": "Dan McAteer (@daniel_mac8) — May 16, 2026. 37.4K views.\n\"babe, wake up. new continual learning breakthrough just dropped.\nfast-slow training (fst) treats model params as 'slow' weights and optimized context as 'fast weights'.\n'across math, code, and general reasoning benchmarks, fst beats weights-only training on *every* axis we measured.'\""
+  },
+  {
+    "date": "2026-05-16",
     "author": "klöss",
     "handle": "@kloss_xyz",
     "subject": "Post by klöss on X",

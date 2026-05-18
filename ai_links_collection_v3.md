@@ -1,18 +1,18 @@
 # AI Links Collection
-**Total Posts**: 510  
+**Total Posts**: 511  
 **Date Range**: 2024-06-11 – 2026-05-18  
-**Enriched**: 510/510 (100%)
+**Enriched**: 511/511 (100%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 234 | 45.9% |
+| agent-design | 235 | 46.0% |
 | claude-code | 117 | 22.9% |
-| dev-practices | 129 | 25.3% |
+| dev-practices | 129 | 25.2% |
 | skills-mcp | 65 | 12.7% |
 | prompting | 65 | 12.7% |
-| research | 84 | 16.5% |
+| research | 85 | 16.6% |
 | industry | 54 | 10.6% |
 | management | 80 | 15.7% |
 | questionable | 53 | 10.4% |
@@ -29,6 +29,7 @@
 | 2026-05-18 | Vasilije | agent-design | @tricalt argues memory and skills are the same harness — both define a... |
 | 2026-05-18 | santi | agent-design | Recommends OpenAI's article on Harness Engineering and Codex, which de... |
 | 2026-05-18 | Jaynit Makwana | questionable | Engagement-farmed pitch ('SHOCKING') promising 10 Claude prompts deriv... |
+| 2026-05-16 | Dan McAteer | research | Dan McAteer flags a continual-learning research result: fast-slow trai... |
 | 2026-05-16 | klöss | claude-code | Shares 7 production-grade /goal templates for Codex / Claude Code / He... |
 | 2026-05-16 | Erik Townsend | industry | Promotes a 10-tweet thread by ex-Goldman commodities chief Jeff Currie... |
 | 2026-05-15 | George from prodmgmt.world | skills-mcp | Three skills for writing software requirements with AI: /grill-me by @... |
@@ -71,12 +72,11 @@
 | 2026-05-13 | Joseph Viviano | agent-design | Joseph Viviano's "Agentic Research Best Practices" — 15 months of note... |
 | 2026-05-13 | Charly Wargnier | agent-design | Charly Wargnier hyping a Rohit article "What to Learn, Build, and Skip... |
 | 2026-05-13 | George from prodmgmt.world | skills-mcp | George keeps reusing his own AI skill-building pipeline and wishes it... |
-| 2026-05-13 | コムテ (Komte) | skills-mcp | Google open-sourced 13 official Agent Skills (github.com/google/skills... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (234)
+### Agent Design (235)
 
 - [Viv](https://x.com/vtrivedy10/status/2056066419360743479) — 2026-05-18: Introduces LangSmith Engine — LangChain's pitch for an always-on self-improvement loop: tracing on by default for every agent, SmithDB as agent-scale data infra, ambient agentic intelligence sweeping every trace for errors/insights, and auto-generated PRs+evals with human gating. Positions agent traces as the gold-mine data layer for 'always-on Continual Learning' across a company.
 
@@ -87,6 +87,8 @@
 - [Vasilije](https://x.com/tricalt/status/2055876832797581406) — 2026-05-18: @tricalt argues memory and skills are the same harness — both define an agent's 'world model' (codebase layout, tool schemas, file system, conversation history, user preferences). Cites Letta's @sarahwooders/@hwchase17 framing of memory-as-harness alongside his earlier post that skills aren't static files and degrade silently — needing an Observe→Inspect→Amend→Evaluate loop.
 
 - [santi](https://x.com/santtiagom_/status/2055751665345798628) — 2026-05-18: Recommends OpenAI's article on Harness Engineering and Codex, which describes how they used agents to build an internal product with ~1M lines of code: preventing AI-generated code from degrading over time, using tests and CI as more reliable constraints than prompts, keeping code/docs readable for agents, and how engineers' work shifts when agents start programming. 'Much of the challenge lies in the system around the model.'
+
+- [Dan McAteer](https://x.com/daniel_mac8/status/2055838212069773456) — 2026-05-16: Dan McAteer flags a continual-learning research result: fast-slow training (FST) treats model parameters as "slow" weights and optimized context as "fast" weights. Claims FST beats weights-only training on every axis measured across math, code, and general reasoning benchmarks. Casual hype framing ("babe, wake up") but substantive research signal — fits the broader continual-learning thread (alongside ar0cket1's OPSD work).
 
 - [nader dabit](https://x.com/dabit3/status/2055319214202777894) — 2026-05-15: Explains Agent Hooks — user-defined handlers attached to lifecycle points in an agent session, narrowed by matchers/filters, returning context or making decisions or running side effects. Pitch: 'use prompts for guidance, use hooks for behavior that should run every time.' Move deterministic rules (tests, policy checks, runbooks) out of the model's discretion and into hooks. Markdown + example code on GitHub.
 
@@ -1306,7 +1308,9 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
 
-### Research (84)
+### Research (85)
+
+- [Dan McAteer](https://x.com/daniel_mac8/status/2055838212069773456) — 2026-05-16: Dan McAteer flags a continual-learning research result: fast-slow training (FST) treats model parameters as "slow" weights and optimized context as "fast" weights. Claims FST beats weights-only training on every axis measured across math, code, and general reasoning benchmarks. Casual hype framing ("babe, wake up") but substantive research signal — fits the broader continual-learning thread (alongside ar0cket1's OPSD work).
 
 - [Sam Hogan](https://x.com/samhogan/status/2055064462844219603) — 2026-05-15: Sam Hogan introduces HALO (Hierarchical Agent Loop Optimizer) — github.com/context-labs/halo — which uses Reasoning Language Models to let the model itself shape its own agent harness rather than hard-coding it. Inspired by @a1zhang's "Mismanaged Genius Hypothesis" (LLMs are smarter than the harnesses humans design for them). Reports consistent 10%+ benchmark improvements across multiple evals.
 
@@ -2041,6 +2045,9 @@
 
 - **2026-05-18** | [Jaynit Makwana](https://x.com/jaynitmakwana/status/2055594459426070640) | questionable, prompting
   Engagement-farmed pitch ('SHOCKING') promising 10 Claude prompts derived from Barbara Oakley's 'Learning How to Learn' course. Underlying content (Oakley's learning-science techniques) is legitimate; the framing is clickbait. Useful if you actually want spaced-repetition / interleaving / focused-vs-diffuse prompts for your own learning.
+
+- **2026-05-16** | [Dan McAteer](https://x.com/daniel_mac8/status/2055838212069773456) | research, agent-design
+  Dan McAteer flags a continual-learning research result: fast-slow training (FST) treats model parameters as "slow" weights and optimized context as "fast" weights. Claims FST beats weights-only training on every axis measured across math, code, and general reasoning benchmarks. Casual hype framing ("babe, wake up") but substantive research signal — fits the broader continual-learning thread (alongside ar0cket1's OPSD work).
 
 - **2026-05-16** | [klöss](https://x.com/kloss_xyz/status/2055477217552142782) | claude-code, prompting, dev-practices
   Shares 7 production-grade /goal templates for Codex / Claude Code / Hermes: (1) Ideation/Interrogation, (2) Planning & Documentation, (3) Build & Implementation, (4) Refactoring/Restructuring, (5) Consolidation, (6) Hardening, (7) Migrations. Use 1–3 in order; 4–7 whenever. Follow-up to his earlier post arguing /goal is the most underused command and that 'make no mistakes' isn't a goal.
