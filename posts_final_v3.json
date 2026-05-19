@@ -1,5 +1,209 @@
 [
   {
+    "date": "2026-05-19",
+    "author": "Sapient Intelligence",
+    "handle": "@sapient_int",
+    "subject": "Post by Sapient Intelligence on X",
+    "url": "https://x.com/sapient_int/status/2056510383935172798",
+    "summary": "Sapient Intelligence announces HRM-Text, a 1B-parameter reasoning language model trained on ~40B structured tokens (~1/1000 the training data of comparable models) at a ~$1,000 / one-day compute budget. Pitches a new paradigm of cheap, adaptable general-intelligence research where small teams can revisit ideas previously deemed too expensive to test. No paper link in the visible tweet — worth tracking the org for the technical report.",
+    "topics": [
+      "research",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "348.9K",
+    "notes": "",
+    "enriched": true,
+    "content": "Sapient Intelligence @Sapient_Int — Introducing HRM-Text. An ultra-lean 1B-parameter reasoning language model designed to deliver strong general performance with a fraction of the data, compute, and infrastructure. Trained on just 40B structured tokens, HRM-Text achieves competitive performance while using ~1/1000 of the training data of comparable models. The kicker? The full model trains in roughly one day on a $1,000 budget. This opens the door to a new generation of AI that is powerful, accessible, and radically easier to adapt. Theories and research concepts once deemed too expensive to test are officially back in the game. Sapient Intelligence invites you to help us shape a new paradigm for general intelligence."
+  },
+  {
+    "date": "2026-05-19",
+    "author": "Amar Singh",
+    "handle": "@amarsvs",
+    "subject": "Post by Amar Singh on X",
+    "url": "https://x.com/amarsvs/status/2056484487891243355",
+    "summary": "Amar Singh argues that as models improve, harness design matters MORE, not less — the smarter the model, the more expensive it is to waste its intelligence. He distinguishes model-bound tasks (where raw capability is the bottleneck, e.g. hard math proofs) from harness-bound tasks (where prompting, tools, context management, and the loop around the model dominate, e.g. Terminal-Bench). Manager analogy: a brilliant employee gets outsized returns from good onboarding, mentorship, and feedback loops.",
+    "topics": [
+      "agent-design",
+      "prompting",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "9.5K",
+    "notes": "",
+    "enriched": true,
+    "content": "Amar Singh @AmarSVS — Agent Performance: Model-Bound versus Harness-Bound. You might think that as models get smarter, the harnesses matter less. In reality, the opposite is happening. The better models are at following instructions, using tools, and adapting to workflows, the more leverage from designing their environment. The smarter the models become, the more expensive it becomes to waste their intelligence. Corporate analogy: weak employees can't execute even with great process; brilliant employees excel with good onboarding, clear goals, mentorship, toolkit, and feedback. Model-bound task: bottleneck is the model's raw capability (hard math, proofs). Harness-bound: same model performs drastically differently depending on prompting, tools, context management, loop design. Terminal-Bench is a great example of harness-bound (shell, file management)."
+  },
+  {
+    "date": "2026-05-19",
+    "author": "AVB",
+    "handle": "@neural_avb",
+    "subject": "Post by AVB on X",
+    "url": "https://x.com/neural_avb/status/2056462216430535062",
+    "summary": "AVB highlights Recursive Agent Optimization (RAO), an RL-trained setup where LLM agents spawn and coordinate with recursive subagents inside a Python REPL — divide-and-conquering long problems and passing context around as Python variables. Quote-RTs his own decodingai.com walkthrough article. Notable because the inter-agent state is just Python variables in a shared REPL, not strings.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "51.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "AVB @neural_avb — They are now training local recursive language models inside python REPLs with reinforcement learning. Agents are divide-and-conquering long problems, and passing around context as python variables. This is so cool. (Quote-RT: Recursive Agent Optimization using RL, explained clearly — paper uses RL to train LLM agents to spawn and coordinate with recursive subagents inside a python...)"
+  },
+  {
+    "date": "2026-05-19",
+    "author": "Aakash Gupta",
+    "handle": "@aakashgupta",
+    "subject": "Post by Aakash Gupta on X",
+    "url": "https://x.com/aakashgupta/status/2056405221908394406",
+    "summary": "Aakash Gupta breaks down Pawel Huryn's minimalist CLAUDE.md approach — a 6-item routing-table file (project description, file structure map, identity context, knowledge routing pointers, workflow pointers, and a 3-line self-improving prompt) that delegates domain-specific rules to separate files the agent loads on demand. Includes a paste-ready self-improving prompt: (1) review existing rules and hypotheses for the domain, (2) apply confirmed rules, (3) update rules and hypotheses after feedback. Domain knowledge (voice, patterns, metrics, skills) lives in routed files, not the main CLAUDE.md.",
+    "topics": [
+      "claude-code",
+      "prompting",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "16.2K",
+    "notes": "",
+    "enriched": true,
+    "content": "Aakash Gupta @aakashgupta — Your CLAUDE.md file is probably growing every week. Pawel Huryn's has six items and hasn't changed in months. His file: 2-3 sentence project description, file structure map, identity context (role/audience/goals), knowledge routing, workflow pointers, a three-line self-improving prompt. Writing style rules live in a voice file. Patterns in a patterns file. Platform instructions in platform-specific folders. Metrics, hypotheses, skills — all routed. The three-line self-improving prompt: 1. Before starting any task, review existing rules and hypotheses for this domain. 2. Apply confirmed rules by default. 3. After completing work and receiving feedback, update rules and hypotheses based on what you learned. Works for any domain."
+  },
+  {
+    "date": "2026-05-19",
+    "author": "ClaudeDevs",
+    "handle": "@claudedevs",
+    "subject": "Post by ClaudeDevs on X",
+    "url": "https://x.com/claudedevs/status/2056403446056784288",
+    "summary": "Anthropic's ClaudeDevs account links to a new claude.com blog post on running Claude Code at scale — multi-million-line monorepos, decades-old legacy systems, distributed microservices. Practical best-practices doc straight from the vendor; directly actionable for any team standardizing Claude Code usage. Link: claude.com (How Claude Code works in large codebases: Best practices and where to start).",
+    "topics": [
+      "claude-code",
+      "dev-practices",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "510.2K",
+    "notes": "",
+    "enriched": true,
+    "content": "ClaudeDevs @ClaudeDevs — What are best practices for running Claude Code at scale? New blog post on what we've learned from teams running it across multi-million-line monorepos, decades-old legacy systems, and distributed microservices: How Claude Code works in large codebases: Best practices and where to start | Claude. From claude.com"
+  },
+  {
+    "date": "2026-05-19",
+    "author": "Dave Kline",
+    "handle": "@dklineii",
+    "subject": "Post by Dave Kline on X",
+    "url": "https://x.com/dklineii/status/2056363703230980364",
+    "summary": "Dave Kline engagement-hook tweet: leaders worried about AI vs. leaders making themselves irreplaceable by becoming the AI expert in their company. Promises a 5-step plan in a thread. Content lives in the followups — only the framing is in the visible tweet.",
+    "topics": [
+      "management",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "52.1K",
+    "notes": "",
+    "enriched": true,
+    "content": "Dave Kline @dklineii — While most leaders worry about AI, a few are becoming the AI expert in their company. They're making themselves irreplaceable. It's hard, but it's not complicated. Here's the 5-step plan to become that leader before the year is out:"
+  },
+  {
+    "date": "2026-05-19",
+    "author": "darkzodchi",
+    "handle": "@zodchiii",
+    "subject": "Post by darkzodchi on X",
+    "url": "https://x.com/zodchiii/status/2056336049589092866",
+    "summary": "darkzodchi quote-RTs his own article on Shopify's Claude Code setup, citing Head of Engineering Farhan Thawar: 23,000 engineers running multiple parallel Claude Code agents to automate 96% of coding by Q3. Hook is engagement-farmy and the 96% number is a Shopify ambition, not a measured result — but the underlying interview about how a 23,000-engineer org rolls out Claude Code at scale is worth the click for anyone setting up internal AI dev workflows.",
+    "topics": [
+      "claude-code",
+      "management",
+      "industry",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "leadership",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "257.9K",
+    "notes": "",
+    "enriched": true,
+    "content": "darkzodchi @zodchiii — Shopify's Head of Engineering: 'If you don't figure out how to harness agents in 2026, you'll be behind.' This interview is the most practical breakdown of enterprise AI coding I've seen this year. Farhan Thawar explained the full Shopify AI playbook here. Watch the interview, then grab the exact template below. (Quote-RT: The Claude Code Setup Behind Shopify's 23,000 Engineers (Exact Config You Can Copy). Shopify's 23,000 engineers are racing to automate 96% of their coding by Q3 this year. They run multiple Claude Code agents in parallel, each handling a different part of the codebase while engineers...)"
+  },
+  {
+    "date": "2026-05-19",
+    "author": "Paul Iusztin",
+    "handle": "@pauliusztin_",
+    "subject": "Post by Paul Iusztin on X",
+    "url": "https://x.com/pauliusztin_/status/2056272402414211175",
+    "summary": "Paul Iusztin recommends neo4j's open-source `agent-memory` repo (github.com/neo4j-labs/agent-memory or neo4j/agent-memory) as the best unified memory layer for AI agents via knowledge graphs — covering short-term, long-term, and reasoning memory with a clean ontology and extraction algorithms. Spent 2 days dissecting their code; full writeup coming on decodingai.com.",
+    "topics": [
+      "agent-design",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "28.4K",
+    "notes": "",
+    "enriched": true,
+    "content": "Paul Iusztin @pauliusztin_ — `agent-memory` by @neo4j is the best open-source repository for building a unified memory layer for AI agents via knowledge graphs. They did such an amazing job modeling short, long, and reasoning memory, their ontology, and extraction algorithms. After spending 2 days dissecting and testing their code, I wrote a full piece on decodingai.com explaining how it works. I will publish it tomorrow."
+  },
+  {
+    "date": "2026-05-19",
+    "author": "Dami-Defi",
+    "handle": "@damidefi",
+    "subject": "Post by Dami-Defi on X",
+    "url": "https://x.com/damidefi/status/2056053698674270631",
+    "summary": "Dami-Defi (quote-RT of own article) on feeding MIT's 12 free graduate-level AI textbooks — written by the researchers who built the field — into Claude to rebuild his entire research system. Pitches that almost nobody is using these free books. Engagement-heavy framing but the underlying tip (free MIT AI curriculum + Claude as study partner) is real and worth bookmarking.",
+    "topics": [
+      "claude-code",
+      "research",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "314.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "Dami-Defi @DamiDefi — Life after discovering MIT put a world class AI education online for free. This is what happens when you actually feed all 12 into Claude. A completely rebuilt research system. (Quote-RT: I Fed 12 Free MIT AI Textbooks Into Claude. It Rebuilt My Entire Research System. MIT published 12 graduate-level AI textbooks written by the researchers who built the field. Every one is free. Almost nobody is using them. I downloaded all 12 books and fed them into a Claude...)"
+  },
+  {
     "date": "2026-05-18",
     "author": "Viv",
     "handle": "@vtrivedy10",

@@ -1,27 +1,36 @@
 # AI Links Collection
-**Total Posts**: 511  
-**Date Range**: 2024-06-11 – 2026-05-18  
-**Enriched**: 511/511 (100%)
+**Total Posts**: 520  
+**Date Range**: 2024-06-11 – 2026-05-19  
+**Enriched**: 520/520 (100%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 235 | 46.0% |
-| claude-code | 117 | 22.9% |
-| dev-practices | 129 | 25.2% |
-| skills-mcp | 65 | 12.7% |
-| prompting | 65 | 12.7% |
-| research | 85 | 16.6% |
-| industry | 54 | 10.6% |
-| management | 80 | 15.7% |
-| questionable | 53 | 10.4% |
-| general | 75 | 14.7% |
+| agent-design | 240 | 46.2% |
+| claude-code | 121 | 23.3% |
+| dev-practices | 130 | 25.0% |
+| skills-mcp | 66 | 12.7% |
+| prompting | 67 | 12.9% |
+| research | 89 | 17.1% |
+| industry | 56 | 10.8% |
+| management | 82 | 15.8% |
+| questionable | 56 | 10.8% |
+| general | 75 | 14.4% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-05-19 | Sapient Intelligence | research | Sapient Intelligence announces HRM-Text, a 1B-parameter reasoning lang... |
+| 2026-05-19 | Amar Singh | agent-design | Amar Singh argues that as models improve, harness design matters MORE,... |
+| 2026-05-19 | AVB | agent-design | AVB highlights Recursive Agent Optimization (RAO), an RL-trained setup... |
+| 2026-05-19 | Aakash Gupta | claude-code | Aakash Gupta breaks down Pawel Huryn's minimalist CLAUDE.md approach —... |
+| 2026-05-19 | ClaudeDevs | claude-code | Anthropic's ClaudeDevs account links to a new claude.com blog post on... |
+| 2026-05-19 | Dave Kline | management | Dave Kline engagement-hook tweet: leaders worried about AI vs. leaders... |
+| 2026-05-19 | darkzodchi | claude-code | darkzodchi quote-RTs his own article on Shopify's Claude Code setup, c... |
+| 2026-05-19 | Paul Iusztin | agent-design | Paul Iusztin recommends neo4j's open-source `agent-memory` repo (githu... |
+| 2026-05-19 | Dami-Defi | claude-code | Dami-Defi (quote-RT of own article) on feeding MIT's 12 free graduate-... |
 | 2026-05-18 | Viv | agent-design | Introduces LangSmith Engine — LangChain's pitch for an always-on self-... |
 | 2026-05-18 | Suryansh Tiwari | claude-code | Pitches Anthropic's official claude-code-setup plugin (install: /plugi... |
 | 2026-05-18 | AYi | questionable | Translated-from-Chinese hype post claiming Garry Tan's just-released '... |
@@ -63,20 +72,21 @@
 | 2026-05-13 | darkzodchi | claude-code | Pointer to an Anthropic-engineer video on the 7 Claude Code mistakes t... |
 | 2026-05-13 | Avi Chawla | claude-code | Direct comparison of Anthropic's three Claude surfaces: Chat (for thin... |
 | 2026-05-13 | Ihtesham Ali | research | Google + Meta paper: Claude Code autonomously proposes, tests, and ref... |
-| 2026-05-13 | Michael Eisenberg | management | Michael Eisenberg endorses a Zohar Atkins essay applying Jevons Parado... |
-| 2026-05-13 | ericosiu | industry | ericosiu hiring forward-deployed engineers globally. Quotes Aaron Levi... |
-| 2026-05-13 | IndieDevHailey (开发者Hailey) | research | GitHub project RuView (50K+ stars) — uses WiFi CSI signals plus AI to... |
-| 2026-05-13 | Miles Deutscher | skills-mcp | Promotion of skillsmp.com — a marketplace claiming over 1 million read... |
-| 2026-05-13 | Founder Thoughts & Strategies | management | Quote of Tom Verrilli (Whatnot) article on building product teams in t... |
-| 2026-05-13 | GREG ISENBERG | agent-design | Free 47-minute course on building a managed AI-agent business solo. Pi... |
-| 2026-05-13 | Joseph Viviano | agent-design | Joseph Viviano's "Agentic Research Best Practices" — 15 months of note... |
-| 2026-05-13 | Charly Wargnier | agent-design | Charly Wargnier hyping a Rohit article "What to Learn, Build, and Skip... |
-| 2026-05-13 | George from prodmgmt.world | skills-mcp | George keeps reusing his own AI skill-building pipeline and wishes it... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (235)
+### Agent Design (240)
+
+- [Amar Singh](https://x.com/amarsvs/status/2056484487891243355) — 2026-05-19: Amar Singh argues that as models improve, harness design matters MORE, not less — the smarter the model, the more expensive it is to waste its intelligence. He distinguishes model-bound tasks (where raw capability is the bottleneck, e.g. hard math proofs) from harness-bound tasks (where prompting, tools, context management, and the loop around the model dominate, e.g. Terminal-Bench). Manager analogy: a brilliant employee gets outsized returns from good onboarding, mentorship, and feedback loops.
+
+- [AVB](https://x.com/neural_avb/status/2056462216430535062) — 2026-05-19: AVB highlights Recursive Agent Optimization (RAO), an RL-trained setup where LLM agents spawn and coordinate with recursive subagents inside a Python REPL — divide-and-conquering long problems and passing context around as Python variables. Quote-RTs his own decodingai.com walkthrough article. Notable because the inter-agent state is just Python variables in a shared REPL, not strings.
+
+- [Aakash Gupta](https://x.com/aakashgupta/status/2056405221908394406) — 2026-05-19: Aakash Gupta breaks down Pawel Huryn's minimalist CLAUDE.md approach — a 6-item routing-table file (project description, file structure map, identity context, knowledge routing pointers, workflow pointers, and a 3-line self-improving prompt) that delegates domain-specific rules to separate files the agent loads on demand. Includes a paste-ready self-improving prompt: (1) review existing rules and hypotheses for the domain, (2) apply confirmed rules, (3) update rules and hypotheses after feedback. Domain knowledge (voice, patterns, metrics, skills) lives in routed files, not the main CLAUDE.md.
+
+- [ClaudeDevs](https://x.com/claudedevs/status/2056403446056784288) — 2026-05-19: Anthropic's ClaudeDevs account links to a new claude.com blog post on running Claude Code at scale — multi-million-line monorepos, decades-old legacy systems, distributed microservices. Practical best-practices doc straight from the vendor; directly actionable for any team standardizing Claude Code usage. Link: claude.com (How Claude Code works in large codebases: Best practices and where to start).
+
+- [Paul Iusztin](https://x.com/pauliusztin_/status/2056272402414211175) — 2026-05-19: Paul Iusztin recommends neo4j's open-source `agent-memory` repo (github.com/neo4j-labs/agent-memory or neo4j/agent-memory) as the best unified memory layer for AI agents via knowledge graphs — covering short-term, long-term, and reasoning memory with a clean ontology and extraction algorithms. Spent 2 days dissecting their code; full writeup coming on decodingai.com.
 
 - [Viv](https://x.com/vtrivedy10/status/2056066419360743479) — 2026-05-18: Introduces LangSmith Engine — LangChain's pitch for an always-on self-improvement loop: tracing on by default for every agent, SmithDB as agent-scale data infra, ambient agentic intelligence sweeping every trace for errors/insights, and auto-generated PRs+evals with human gating. Positions agent traces as the gold-mine data layer for 'always-on Continual Learning' across a company.
 
@@ -548,7 +558,15 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Claude Code (117)
+### Claude Code (121)
+
+- [Aakash Gupta](https://x.com/aakashgupta/status/2056405221908394406) — 2026-05-19: Aakash Gupta breaks down Pawel Huryn's minimalist CLAUDE.md approach — a 6-item routing-table file (project description, file structure map, identity context, knowledge routing pointers, workflow pointers, and a 3-line self-improving prompt) that delegates domain-specific rules to separate files the agent loads on demand. Includes a paste-ready self-improving prompt: (1) review existing rules and hypotheses for the domain, (2) apply confirmed rules, (3) update rules and hypotheses after feedback. Domain knowledge (voice, patterns, metrics, skills) lives in routed files, not the main CLAUDE.md.
+
+- [ClaudeDevs](https://x.com/claudedevs/status/2056403446056784288) — 2026-05-19: Anthropic's ClaudeDevs account links to a new claude.com blog post on running Claude Code at scale — multi-million-line monorepos, decades-old legacy systems, distributed microservices. Practical best-practices doc straight from the vendor; directly actionable for any team standardizing Claude Code usage. Link: claude.com (How Claude Code works in large codebases: Best practices and where to start).
+
+- [darkzodchi](https://x.com/zodchiii/status/2056336049589092866) — 2026-05-19: darkzodchi quote-RTs his own article on Shopify's Claude Code setup, citing Head of Engineering Farhan Thawar: 23,000 engineers running multiple parallel Claude Code agents to automate 96% of coding by Q3. Hook is engagement-farmy and the 96% number is a Shopify ambition, not a measured result — but the underlying interview about how a 23,000-engineer org rolls out Claude Code at scale is worth the click for anyone setting up internal AI dev workflows.
+
+- [Dami-Defi](https://x.com/damidefi/status/2056053698674270631) — 2026-05-19: Dami-Defi (quote-RT of own article) on feeding MIT's 12 free graduate-level AI textbooks — written by the researchers who built the field — into Claude to rebuild his entire research system. Pitches that almost nobody is using these free books. Engagement-heavy framing but the underlying tip (free MIT AI curriculum + Claude as study partner) is real and worth bookmarking.
 
 - [Suryansh Tiwari](https://x.com/suryanshti777/status/2056022182560665602) — 2026-05-18: Pitches Anthropic's official claude-code-setup plugin (install: /plugin install claude-code-setup@claude-plugins-official) — scans your project and recommends hooks, skills, MCP servers, subagents, and automations, then sets them up step-by-step. Aimed at people running Claude Code vanilla.
 
@@ -784,7 +802,9 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (129)
+### Dev Practices (130)
+
+- [ClaudeDevs](https://x.com/claudedevs/status/2056403446056784288) — 2026-05-19: Anthropic's ClaudeDevs account links to a new claude.com blog post on running Claude Code at scale — multi-million-line monorepos, decades-old legacy systems, distributed microservices. Practical best-practices doc straight from the vendor; directly actionable for any team standardizing Claude Code usage. Link: claude.com (How Claude Code works in large codebases: Best practices and where to start).
 
 - [Viv](https://x.com/vtrivedy10/status/2056066419360743479) — 2026-05-18: Introduces LangSmith Engine — LangChain's pitch for an always-on self-improvement loop: tracing on by default for every agent, SmithDB as agent-scale data infra, ambient agentic intelligence sweeping every trace for errors/insights, and auto-generated PRs+evals with human gating. Positions agent traces as the gold-mine data layer for 'always-on Continual Learning' across a company.
 
@@ -1044,7 +1064,9 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (65)
+### Skills & MCP (66)
+
+- [Paul Iusztin](https://x.com/pauliusztin_/status/2056272402414211175) — 2026-05-19: Paul Iusztin recommends neo4j's open-source `agent-memory` repo (github.com/neo4j-labs/agent-memory or neo4j/agent-memory) as the best unified memory layer for AI agents via knowledge graphs — covering short-term, long-term, and reasoning memory with a clean ontology and extraction algorithms. Spent 2 days dissecting their code; full writeup coming on decodingai.com.
 
 - [Suryansh Tiwari](https://x.com/suryanshti777/status/2056022182560665602) — 2026-05-18: Pitches Anthropic's official claude-code-setup plugin (install: /plugin install claude-code-setup@claude-plugins-official) — scans your project and recommends hooks, skills, MCP servers, subagents, and automations, then sets them up step-by-step. Aimed at people running Claude Code vanilla.
 
@@ -1176,7 +1198,11 @@
 
 - [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Anthropic released a frontend-design plugin for Claude Code — demo shows Claude creating a music player app. Install via /plugin marketplace add anthropics/claude-code and /plugin install frontend-design@claude-code-plugins.
 
-### Prompting (65)
+### Prompting (67)
+
+- [Amar Singh](https://x.com/amarsvs/status/2056484487891243355) — 2026-05-19: Amar Singh argues that as models improve, harness design matters MORE, not less — the smarter the model, the more expensive it is to waste its intelligence. He distinguishes model-bound tasks (where raw capability is the bottleneck, e.g. hard math proofs) from harness-bound tasks (where prompting, tools, context management, and the loop around the model dominate, e.g. Terminal-Bench). Manager analogy: a brilliant employee gets outsized returns from good onboarding, mentorship, and feedback loops.
+
+- [Aakash Gupta](https://x.com/aakashgupta/status/2056405221908394406) — 2026-05-19: Aakash Gupta breaks down Pawel Huryn's minimalist CLAUDE.md approach — a 6-item routing-table file (project description, file structure map, identity context, knowledge routing pointers, workflow pointers, and a 3-line self-improving prompt) that delegates domain-specific rules to separate files the agent loads on demand. Includes a paste-ready self-improving prompt: (1) review existing rules and hypotheses for the domain, (2) apply confirmed rules, (3) update rules and hypotheses after feedback. Domain knowledge (voice, patterns, metrics, skills) lives in routed files, not the main CLAUDE.md.
 
 - [Jaynit Makwana](https://x.com/jaynitmakwana/status/2055594459426070640) — 2026-05-18: Engagement-farmed pitch ('SHOCKING') promising 10 Claude prompts derived from Barbara Oakley's 'Learning How to Learn' course. Underlying content (Oakley's learning-science techniques) is legitimate; the framing is clickbait. Useful if you actually want spaced-repetition / interleaving / focused-vs-diffuse prompts for your own learning.
 
@@ -1308,7 +1334,15 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
 
-### Research (85)
+### Research (89)
+
+- [Sapient Intelligence](https://x.com/sapient_int/status/2056510383935172798) — 2026-05-19: Sapient Intelligence announces HRM-Text, a 1B-parameter reasoning language model trained on ~40B structured tokens (~1/1000 the training data of comparable models) at a ~$1,000 / one-day compute budget. Pitches a new paradigm of cheap, adaptable general-intelligence research where small teams can revisit ideas previously deemed too expensive to test. No paper link in the visible tweet — worth tracking the org for the technical report.
+
+- [Amar Singh](https://x.com/amarsvs/status/2056484487891243355) — 2026-05-19: Amar Singh argues that as models improve, harness design matters MORE, not less — the smarter the model, the more expensive it is to waste its intelligence. He distinguishes model-bound tasks (where raw capability is the bottleneck, e.g. hard math proofs) from harness-bound tasks (where prompting, tools, context management, and the loop around the model dominate, e.g. Terminal-Bench). Manager analogy: a brilliant employee gets outsized returns from good onboarding, mentorship, and feedback loops.
+
+- [AVB](https://x.com/neural_avb/status/2056462216430535062) — 2026-05-19: AVB highlights Recursive Agent Optimization (RAO), an RL-trained setup where LLM agents spawn and coordinate with recursive subagents inside a Python REPL — divide-and-conquering long problems and passing context around as Python variables. Quote-RTs his own decodingai.com walkthrough article. Notable because the inter-agent state is just Python variables in a shared REPL, not strings.
+
+- [Dami-Defi](https://x.com/damidefi/status/2056053698674270631) — 2026-05-19: Dami-Defi (quote-RT of own article) on feeding MIT's 12 free graduate-level AI textbooks — written by the researchers who built the field — into Claude to rebuild his entire research system. Pitches that almost nobody is using these free books. Engagement-heavy framing but the underlying tip (free MIT AI curriculum + Claude as study partner) is real and worth bookmarking.
 
 - [Dan McAteer](https://x.com/daniel_mac8/status/2055838212069773456) — 2026-05-16: Dan McAteer flags a continual-learning research result: fast-slow training (FST) treats model parameters as "slow" weights and optimized context as "fast" weights. Claims FST beats weights-only training on every axis measured across math, code, and general reasoning benchmarks. Casual hype framing ("babe, wake up") but substantive research signal — fits the broader continual-learning thread (alongside ar0cket1's OPSD work).
 
@@ -1480,7 +1514,11 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: 15-part thread explaining the 'stunning, simple explanation behind matrix multiplication' — breaks down the most crucial idea behind modern machine learning. 1M views.
 
-### Industry (54)
+### Industry (56)
+
+- [Sapient Intelligence](https://x.com/sapient_int/status/2056510383935172798) — 2026-05-19: Sapient Intelligence announces HRM-Text, a 1B-parameter reasoning language model trained on ~40B structured tokens (~1/1000 the training data of comparable models) at a ~$1,000 / one-day compute budget. Pitches a new paradigm of cheap, adaptable general-intelligence research where small teams can revisit ideas previously deemed too expensive to test. No paper link in the visible tweet — worth tracking the org for the technical report.
+
+- [darkzodchi](https://x.com/zodchiii/status/2056336049589092866) — 2026-05-19: darkzodchi quote-RTs his own article on Shopify's Claude Code setup, citing Head of Engineering Farhan Thawar: 23,000 engineers running multiple parallel Claude Code agents to automate 96% of coding by Q3. Hook is engagement-farmy and the 96% number is a Shopify ambition, not a measured result — but the underlying interview about how a 23,000-engineer org rolls out Claude Code at scale is worth the click for anyone setting up internal AI dev workflows.
 
 - [Erik Townsend](https://x.com/erikstownsend/status/2055444404337582106) — 2026-05-16: Promotes a 10-tweet thread by ex-Goldman commodities chief Jeff Currie (@CommodMkt) arguing the most asymmetric trade in modern financial history is in the physical assets AI requires to run — power, copper, uranium, etc. — because capital has chased the AI software trade and ignored the infrastructure. Tangential to AI but useful market-context read.
 
@@ -1590,7 +1628,11 @@
 
 - [Dante O. Cuales](https://x.com/danteocualesjr/status/1957204427909321027) — 2025-08-18: Reply to a thread about AI engineering being easy to learn — argues the 'intimidation factor is mostly artificial' since most AI engineering is API orchestration, prompt optimization, and data pipeline work. The hard parts are already abstracted away.
 
-### Management (80)
+### Management (82)
+
+- [Dave Kline](https://x.com/dklineii/status/2056363703230980364) — 2026-05-19: Dave Kline engagement-hook tweet: leaders worried about AI vs. leaders making themselves irreplaceable by becoming the AI expert in their company. Promises a 5-step plan in a thread. Content lives in the followups — only the framing is in the visible tweet.
+
+- [darkzodchi](https://x.com/zodchiii/status/2056336049589092866) — 2026-05-19: darkzodchi quote-RTs his own article on Shopify's Claude Code setup, citing Head of Engineering Farhan Thawar: 23,000 engineers running multiple parallel Claude Code agents to automate 96% of coding by Q3. Hook is engagement-farmy and the 96% number is a Shopify ambition, not a measured result — but the underlying interview about how a 23,000-engineer org rolls out Claude Code at scale is worth the click for anyone setting up internal AI dev workflows.
 
 - [George from prodmgmt.world](https://x.com/nurijanian/status/2054244221352325359) — 2026-05-14: PM advocates using an LLM as an adversarial reviewer on your PRD — the flaws that ship to production are the ones you can't see from inside the doc. Short take with a link to his prodmgmt.world article walking through the practice.
 
@@ -1752,7 +1794,13 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
 
-### Questionable (53)
+### Questionable (56)
+
+- [Dave Kline](https://x.com/dklineii/status/2056363703230980364) — 2026-05-19: Dave Kline engagement-hook tweet: leaders worried about AI vs. leaders making themselves irreplaceable by becoming the AI expert in their company. Promises a 5-step plan in a thread. Content lives in the followups — only the framing is in the visible tweet.
+
+- [darkzodchi](https://x.com/zodchiii/status/2056336049589092866) — 2026-05-19: darkzodchi quote-RTs his own article on Shopify's Claude Code setup, citing Head of Engineering Farhan Thawar: 23,000 engineers running multiple parallel Claude Code agents to automate 96% of coding by Q3. Hook is engagement-farmy and the 96% number is a Shopify ambition, not a measured result — but the underlying interview about how a 23,000-engineer org rolls out Claude Code at scale is worth the click for anyone setting up internal AI dev workflows.
+
+- [Dami-Defi](https://x.com/damidefi/status/2056053698674270631) — 2026-05-19: Dami-Defi (quote-RT of own article) on feeding MIT's 12 free graduate-level AI textbooks — written by the researchers who built the field — into Claude to rebuild his entire research system. Pitches that almost nobody is using these free books. Engagement-heavy framing but the underlying tip (free MIT AI curriculum + Claude as study partner) is real and worth bookmarking.
 
 - [AYi](https://x.com/ayi_ainotes/status/2055954675526934642) — 2026-05-18: Translated-from-Chinese hype post claiming Garry Tan's just-released 'GBrain' is a personal knowledge OS that solves AI agents' memory problem — '8 layers of RAG' instead of 4, lifetime memory + self-evolution, plugs into Claude Code/OpenClaw/Hermes. Claims 17,888 pages / 4,383 people / 723 companies in Garry's own production env. Heavy on hype framing — worth verifying the claims behind GBrain itself.
 
@@ -2024,6 +2072,33 @@
 ## Full Chronological List
 
 ### May 2026
+
+- **2026-05-19** | [Sapient Intelligence](https://x.com/sapient_int/status/2056510383935172798) | research, industry
+  Sapient Intelligence announces HRM-Text, a 1B-parameter reasoning language model trained on ~40B structured tokens (~1/1000 the training data of comparable models) at a ~$1,000 / one-day compute budget. Pitches a new paradigm of cheap, adaptable general-intelligence research where small teams can revisit ideas previously deemed too expensive to test. No paper link in the visible tweet — worth tracking the org for the technical report.
+
+- **2026-05-19** | [Amar Singh](https://x.com/amarsvs/status/2056484487891243355) | agent-design, prompting, research
+  Amar Singh argues that as models improve, harness design matters MORE, not less — the smarter the model, the more expensive it is to waste its intelligence. He distinguishes model-bound tasks (where raw capability is the bottleneck, e.g. hard math proofs) from harness-bound tasks (where prompting, tools, context management, and the loop around the model dominate, e.g. Terminal-Bench). Manager analogy: a brilliant employee gets outsized returns from good onboarding, mentorship, and feedback loops.
+
+- **2026-05-19** | [AVB](https://x.com/neural_avb/status/2056462216430535062) | agent-design, research
+  AVB highlights Recursive Agent Optimization (RAO), an RL-trained setup where LLM agents spawn and coordinate with recursive subagents inside a Python REPL — divide-and-conquering long problems and passing context around as Python variables. Quote-RTs his own decodingai.com walkthrough article. Notable because the inter-agent state is just Python variables in a shared REPL, not strings.
+
+- **2026-05-19** | [Aakash Gupta](https://x.com/aakashgupta/status/2056405221908394406) | claude-code, prompting, agent-design
+  Aakash Gupta breaks down Pawel Huryn's minimalist CLAUDE.md approach — a 6-item routing-table file (project description, file structure map, identity context, knowledge routing pointers, workflow pointers, and a 3-line self-improving prompt) that delegates domain-specific rules to separate files the agent loads on demand. Includes a paste-ready self-improving prompt: (1) review existing rules and hypotheses for the domain, (2) apply confirmed rules, (3) update rules and hypotheses after feedback. Domain knowledge (voice, patterns, metrics, skills) lives in routed files, not the main CLAUDE.md.
+
+- **2026-05-19** | [ClaudeDevs](https://x.com/claudedevs/status/2056403446056784288) | claude-code, dev-practices, agent-design
+  Anthropic's ClaudeDevs account links to a new claude.com blog post on running Claude Code at scale — multi-million-line monorepos, decades-old legacy systems, distributed microservices. Practical best-practices doc straight from the vendor; directly actionable for any team standardizing Claude Code usage. Link: claude.com (How Claude Code works in large codebases: Best practices and where to start).
+
+- **2026-05-19** | [Dave Kline](https://x.com/dklineii/status/2056363703230980364) | management, questionable
+  Dave Kline engagement-hook tweet: leaders worried about AI vs. leaders making themselves irreplaceable by becoming the AI expert in their company. Promises a 5-step plan in a thread. Content lives in the followups — only the framing is in the visible tweet.
+
+- **2026-05-19** | [darkzodchi](https://x.com/zodchiii/status/2056336049589092866) | claude-code, management, industry, questionable
+  darkzodchi quote-RTs his own article on Shopify's Claude Code setup, citing Head of Engineering Farhan Thawar: 23,000 engineers running multiple parallel Claude Code agents to automate 96% of coding by Q3. Hook is engagement-farmy and the 96% number is a Shopify ambition, not a measured result — but the underlying interview about how a 23,000-engineer org rolls out Claude Code at scale is worth the click for anyone setting up internal AI dev workflows.
+
+- **2026-05-19** | [Paul Iusztin](https://x.com/pauliusztin_/status/2056272402414211175) | agent-design, skills-mcp
+  Paul Iusztin recommends neo4j's open-source `agent-memory` repo (github.com/neo4j-labs/agent-memory or neo4j/agent-memory) as the best unified memory layer for AI agents via knowledge graphs — covering short-term, long-term, and reasoning memory with a clean ontology and extraction algorithms. Spent 2 days dissecting their code; full writeup coming on decodingai.com.
+
+- **2026-05-19** | [Dami-Defi](https://x.com/damidefi/status/2056053698674270631) | claude-code, research, questionable
+  Dami-Defi (quote-RT of own article) on feeding MIT's 12 free graduate-level AI textbooks — written by the researchers who built the field — into Claude to rebuild his entire research system. Pitches that almost nobody is using these free books. Engagement-heavy framing but the underlying tip (free MIT AI curriculum + Claude as study partner) is real and worth bookmarking.
 
 - **2026-05-18** | [Viv](https://x.com/vtrivedy10/status/2056066419360743479) | agent-design, dev-practices
   Introduces LangSmith Engine — LangChain's pitch for an always-on self-improvement loop: tracing on by default for every agent, SmithDB as agent-scale data infra, ambient agentic intelligence sweeping every trace for errors/insights, and auto-generated PRs+evals with human gating. Positions agent traces as the gold-mine data layer for 'always-on Continual Learning' across a company.
