@@ -1,27 +1,39 @@
 # AI Links Collection
-**Total Posts**: 520  
-**Date Range**: 2024-06-11 – 2026-05-19  
-**Enriched**: 520/520 (100%)
+**Total Posts**: 532  
+**Date Range**: 2024-06-11 – 2026-05-20  
+**Enriched**: 520/532 (97%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 240 | 46.2% |
-| claude-code | 121 | 23.3% |
-| dev-practices | 130 | 25.0% |
-| skills-mcp | 66 | 12.7% |
-| prompting | 67 | 12.9% |
-| research | 89 | 17.1% |
-| industry | 56 | 10.8% |
-| management | 82 | 15.8% |
-| questionable | 56 | 10.8% |
-| general | 75 | 14.4% |
+| agent-design | 240 | 45.1% |
+| claude-code | 121 | 22.7% |
+| dev-practices | 130 | 24.4% |
+| skills-mcp | 66 | 12.4% |
+| prompting | 67 | 12.6% |
+| research | 89 | 16.7% |
+| industry | 56 | 10.5% |
+| management | 82 | 15.4% |
+| questionable | 56 | 10.5% |
+| general | 87 | 16.4% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-05-20 | Viv | general |  |
+| 2026-05-20 | Arpit Bhayani | general |  |
+| 2026-05-20 | CyrilXBT | general |  |
+| 2026-05-20 | Tom Blomfield | general |  |
+| 2026-05-20 | Yohei | general |  |
+| 2026-05-20 | Greg Ceccarelli | general |  |
+| 2026-05-20 | elvis | general |  |
+| 2026-05-20 | Lotte | general |  |
+| 2026-05-20 | Ronan Berder | general |  |
+| 2026-05-20 | Akshay 🚀 | general |  |
+| 2026-05-20 | Garry Tan | general |  |
+| 2026-05-20 | Linas Beliūnas | general |  |
 | 2026-05-19 | Sapient Intelligence | research | Sapient Intelligence announces HRM-Text, a 1B-parameter reasoning lang... |
 | 2026-05-19 | Amar Singh | agent-design | Amar Singh argues that as models improve, harness design matters MORE,... |
 | 2026-05-19 | AVB | agent-design | AVB highlights Recursive Agent Optimization (RAO), an RL-trained setup... |
@@ -60,18 +72,6 @@
 | 2026-05-15 | ar0cket1 | research | Research progress report on On-Policy Self Distillation (OPSD) — tryin... |
 | 2026-05-14 | Rohit Ghumare | agent-design | Argues agent codebases that survive past month six do so because the a... |
 | 2026-05-14 | divyansh tiwari | agent-design | Highlights a paper called NanoResearch proposing an agent architecture... |
-| 2026-05-14 | Guri Singh | questionable | Listicle of 10 side-hustle / digital-product sites (Carrd, Gumroad, Sy... |
-| 2026-05-14 | 송준 Jun Song | research | Claims that within weeks, a Minimax-M3.0-JANGTQ-CRACK release from @de... |
-| 2026-05-14 | Joe Hudson | general | Coaching post (not AI-specific) — Joe Hudson summarizes his 'dirty fue... |
-| 2026-05-14 | George from prodmgmt.world | management | PM advocates using an LLM as an adversarial reviewer on your PRD — the... |
-| 2026-05-14 | Jamie Signorile | management | Frames AI as widening the gap between strong and average employees in... |
-| 2026-05-14 | Khairallah AL-Awady | claude-code | Hype-styled promo pointing to a free 30-min Boris Cherny (creator of C... |
-| 2026-05-14 | Jaynit | management | Personal essay on developing implicit pattern recognition — author tra... |
-| 2026-05-14 | Geek Lite | agent-design | Oh My Hermes (github.com/Salomondiei08/oh-my-hermes) is a skills+workf... |
-| 2026-05-13 | Alfred Lin | management | Alfred Lin (Sequoia) on using simplicity humbly — frameworks have a do... |
-| 2026-05-13 | darkzodchi | claude-code | Pointer to an Anthropic-engineer video on the 7 Claude Code mistakes t... |
-| 2026-05-13 | Avi Chawla | claude-code | Direct comparison of Anthropic's three Claude surfaces: Chat (for thin... |
-| 2026-05-13 | Ihtesham Ali | research | Google + Meta paper: Claude Code autonomously proposes, tests, and ref... |
 
 ---
 ## Posts by Topic
@@ -1908,7 +1908,31 @@
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
 
-### General (79)
+### General (91)
+
+- [Viv](https://x.com/vtrivedy10/status/2056993505386622987) — 2026-05-20: 
+
+- [Arpit Bhayani](https://x.com/arpit_bhayani/status/2056946273165656375) — 2026-05-20: 
+
+- [CyrilXBT](https://x.com/cyrilxbt/status/2056933229924372546) — 2026-05-20: 
+
+- [Tom Blomfield](https://x.com/t_blom/status/2056909934156280088) — 2026-05-20: 
+
+- [Yohei](https://x.com/yoheinakajima/status/2056848954848104488) — 2026-05-20: 
+
+- [Greg Ceccarelli](https://x.com/gregce10/status/2056771029867933884) — 2026-05-20: 
+
+- [elvis](https://x.com/omarsar0/status/2056764334181884158) — 2026-05-20: 
+
+- [Lotte](https://x.com/lotte_verheyden/status/2056754091817361670) — 2026-05-20: 
+
+- [Ronan Berder](https://x.com/hunvreus/status/2056742771386638454) — 2026-05-20: 
+
+- [Akshay 🚀](https://x.com/akshay_pachaar/status/2056714042455343160) — 2026-05-20: 
+
+- [Garry Tan](https://x.com/garrytan/status/2056711154224034125) — 2026-05-20: 
+
+- [Linas Beliūnas](https://x.com/linasbeliunas/status/2056679329484927356) — 2026-05-20: 
 
 - [Meenakshi Yadav](https://x.com/meenakshiyacs/status/2055104295641710718) — 2026-05-15: Generic agentic-AI architecture "cheat sheet" listing the standard layer stack: goal definition, orchestration, agents, tools, memory, monitoring, reliability (retries/HITL), and governance. No new ideas — useful as a one-slide overview to hand a junior or non-engineer.
 
@@ -2072,6 +2096,42 @@
 ## Full Chronological List
 
 ### May 2026
+
+- **2026-05-20** | [Viv](https://x.com/vtrivedy10/status/2056993505386622987) | general
+  
+
+- **2026-05-20** | [Arpit Bhayani](https://x.com/arpit_bhayani/status/2056946273165656375) | general
+  
+
+- **2026-05-20** | [CyrilXBT](https://x.com/cyrilxbt/status/2056933229924372546) | general
+  
+
+- **2026-05-20** | [Tom Blomfield](https://x.com/t_blom/status/2056909934156280088) | general
+  
+
+- **2026-05-20** | [Yohei](https://x.com/yoheinakajima/status/2056848954848104488) | general
+  
+
+- **2026-05-20** | [Greg Ceccarelli](https://x.com/gregce10/status/2056771029867933884) | general
+  
+
+- **2026-05-20** | [elvis](https://x.com/omarsar0/status/2056764334181884158) | general
+  
+
+- **2026-05-20** | [Lotte](https://x.com/lotte_verheyden/status/2056754091817361670) | general
+  
+
+- **2026-05-20** | [Ronan Berder](https://x.com/hunvreus/status/2056742771386638454) | general
+  
+
+- **2026-05-20** | [Akshay 🚀](https://x.com/akshay_pachaar/status/2056714042455343160) | general
+  
+
+- **2026-05-20** | [Garry Tan](https://x.com/garrytan/status/2056711154224034125) | general
+  
+
+- **2026-05-20** | [Linas Beliūnas](https://x.com/linasbeliunas/status/2056679329484927356) | general
+  
 
 - **2026-05-19** | [Sapient Intelligence](https://x.com/sapient_int/status/2056510383935172798) | research, industry
   Sapient Intelligence announces HRM-Text, a 1B-parameter reasoning language model trained on ~40B structured tokens (~1/1000 the training data of comparable models) at a ~$1,000 / one-day compute budget. Pitches a new paradigm of cheap, adaptable general-intelligence research where small teams can revisit ideas previously deemed too expensive to test. No paper link in the visible tweet — worth tracking the org for the technical report.
