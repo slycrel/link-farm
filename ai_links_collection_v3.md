@@ -1,13 +1,13 @@
 # AI Links Collection
-**Total Posts**: 532  
+**Total Posts**: 533  
 **Date Range**: 2024-06-11 – 2026-05-20  
-**Enriched**: 520/532 (97%)
+**Enriched**: 520/533 (97%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 240 | 45.1% |
+| agent-design | 240 | 45.0% |
 | claude-code | 121 | 22.7% |
 | dev-practices | 130 | 24.4% |
 | skills-mcp | 66 | 12.4% |
@@ -16,7 +16,7 @@
 | industry | 56 | 10.5% |
 | management | 82 | 15.4% |
 | questionable | 56 | 10.5% |
-| general | 87 | 16.4% |
+| general | 88 | 16.5% |
 
 ---
 ## Quick Reference (50 Most Recent)
@@ -26,6 +26,7 @@
 | 2026-05-20 | Arpit Bhayani | general |  |
 | 2026-05-20 | CyrilXBT | general |  |
 | 2026-05-20 | Tom Blomfield | general |  |
+| 2026-05-20 | 📙 Alex Hillman | general |  |
 | 2026-05-20 | Yohei | general |  |
 | 2026-05-20 | Greg Ceccarelli | general |  |
 | 2026-05-20 | elvis | general |  |
@@ -71,7 +72,6 @@
 | 2026-05-15 | Anatoli Kopadze | claude-code | 18-step listicle on getting more out of Claude (2.4M views). Step 1 —... |
 | 2026-05-15 | ar0cket1 | research | Research progress report on On-Policy Self Distillation (OPSD) — tryin... |
 | 2026-05-14 | Rohit Ghumare | agent-design | Argues agent codebases that survive past month six do so because the a... |
-| 2026-05-14 | divyansh tiwari | agent-design | Highlights a paper called NanoResearch proposing an agent architecture... |
 
 ---
 ## Posts by Topic
@@ -1908,7 +1908,7 @@
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
 
-### General (91)
+### General (92)
 
 - [Viv](https://x.com/vtrivedy10/status/2056993505386622987) — 2026-05-20: 
 
@@ -1917,6 +1917,8 @@
 - [CyrilXBT](https://x.com/cyrilxbt/status/2056933229924372546) — 2026-05-20: 
 
 - [Tom Blomfield](https://x.com/t_blom/status/2056909934156280088) — 2026-05-20: 
+
+- [📙 Alex Hillman](https://x.com/alexhillman/status/2056904462162133233) — 2026-05-20: 
 
 - [Yohei](https://x.com/yoheinakajima/status/2056848954848104488) — 2026-05-20: 
 
@@ -2107,6 +2109,9 @@
   
 
 - **2026-05-20** | [Tom Blomfield](https://x.com/t_blom/status/2056909934156280088) | general
+  
+
+- **2026-05-20** | [📙 Alex Hillman](https://x.com/alexhillman/status/2056904462162133233) | general
   
 
 - **2026-05-20** | [Yohei](https://x.com/yoheinakajima/status/2056848954848104488) | general

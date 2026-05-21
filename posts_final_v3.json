@@ -77,6 +77,25 @@
   },
   {
     "date": "2026-05-20",
+    "author": "📙 Alex Hillman",
+    "handle": "@alexhillman",
+    "subject": "Post by 📙 Alex Hillman on X",
+    "url": "https://x.com/alexhillman/status/2056904462162133233",
+    "summary": "",
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": false
+  },
+  {
+    "date": "2026-05-20",
     "author": "Yohei",
     "handle": "@yoheinakajima",
     "subject": "Post by Yohei on X",
