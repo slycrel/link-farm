@@ -1,40 +1,40 @@
 # AI Links Collection
 **Total Posts**: 533  
 **Date Range**: 2024-06-11 – 2026-05-20  
-**Enriched**: 520/533 (97%)
+**Enriched**: 533/533 (100%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 240 | 45.0% |
-| claude-code | 121 | 22.7% |
-| dev-practices | 130 | 24.4% |
-| skills-mcp | 66 | 12.4% |
-| prompting | 67 | 12.6% |
-| research | 89 | 16.7% |
-| industry | 56 | 10.5% |
-| management | 82 | 15.4% |
-| questionable | 56 | 10.5% |
-| general | 88 | 16.5% |
+| agent-design | 251 | 47.1% |
+| claude-code | 124 | 23.3% |
+| dev-practices | 136 | 25.5% |
+| skills-mcp | 67 | 12.6% |
+| prompting | 69 | 12.9% |
+| research | 93 | 17.4% |
+| industry | 58 | 10.9% |
+| management | 85 | 15.9% |
+| questionable | 58 | 10.9% |
+| general | 75 | 14.1% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
-| 2026-05-20 | Viv | general |  |
-| 2026-05-20 | Arpit Bhayani | general |  |
-| 2026-05-20 | CyrilXBT | general |  |
-| 2026-05-20 | Tom Blomfield | general |  |
-| 2026-05-20 | 📙 Alex Hillman | general |  |
-| 2026-05-20 | Yohei | general |  |
-| 2026-05-20 | Greg Ceccarelli | general |  |
-| 2026-05-20 | elvis | general |  |
-| 2026-05-20 | Lotte | general |  |
-| 2026-05-20 | Ronan Berder | general |  |
-| 2026-05-20 | Akshay 🚀 | general |  |
-| 2026-05-20 | Garry Tan | general |  |
-| 2026-05-20 | Linas Beliūnas | general |  |
+| 2026-05-20 | Viv | agent-design | Viv promotes a Palash Shah X article on design decisions made for Engi... |
+| 2026-05-20 | Arpit Bhayani | agent-design | Follow-up to a prior post on long-running agentic systems needing reli... |
+| 2026-05-20 | CyrilXBT | questionable | Engagement-farmed pitch (ALL CAPS hype) for an X article claiming Anth... |
+| 2026-05-20 | Tom Blomfield | management | YC General Partner Tom Blomfield breaks down recursively self-improvin... |
+| 2026-05-20 | Alex Hillman | agent-design | Alex amplifies Ben Vinegar's (@bentlegen) framing of tmux as agent inf... |
+| 2026-05-20 | Yohei | agent-design | Yohei (BabyAGI author) introduces ActiveGraph — a continuity layer for... |
+| 2026-05-20 | Greg Ceccarelli | agent-design | Field notes on a 'Goal Engineering' workflow at gregceccarelli.com — r... |
+| 2026-05-20 | elvis | agent-design | Survey paper 'Code as Agent Harness' — 100+ page report on agent harne... |
+| 2026-05-20 | Lotte | dev-practices | Langfuse Academy article 'Evals, explained' — walking through offline... |
+| 2026-05-20 | Ronan Berder | dev-practices | Pushback on Spec-Driven Development: agents are faster at writing code... |
+| 2026-05-20 | Akshay | research | RAG vs CAG explainer. RAG hits the vector DB for every query even when... |
+| 2026-05-20 | Garry Tan | skills-mcp | Garry Tan (YC) on dynamic skills as the most powerful idea of 2026: ju... |
+| 2026-05-20 | Linas Beliūnas | questionable | Engagement-farmed promotion (fire emojis, 'Can't believe') of an Anthr... |
 | 2026-05-19 | Sapient Intelligence | research | Sapient Intelligence announces HRM-Text, a 1B-parameter reasoning lang... |
 | 2026-05-19 | Amar Singh | agent-design | Amar Singh argues that as models improve, harness design matters MORE,... |
 | 2026-05-19 | AVB | agent-design | AVB highlights Recursive Agent Optimization (RAO), an RL-trained setup... |
@@ -76,7 +76,29 @@
 ---
 ## Posts by Topic
 
-### Agent Design (240)
+### Agent Design (251)
+
+- [Viv](https://x.com/vtrivedy10/status/2056993505386622987) — 2026-05-20: Viv promotes a Palash Shah X article on design decisions made for Engine at data scale. Core thread: give agents autonomy AFTER providing the right tooling — most of the design work was upfront tooling for the agent to leverage.
+
+- [Arpit Bhayani](https://x.com/arpit_bhayani/status/2056946273165656375) — 2026-05-20: Follow-up to a prior post on long-running agentic systems needing reliability, robustness, and fault-tolerance — today digs into how. Observation: distributed workflows are a problem almost every engineering team accidentally rebuilds.
+
+- [CyrilXBT](https://x.com/cyrilxbt/status/2056933229924372546) — 2026-05-20: Engagement-farmed pitch (ALL CAPS hype) for an X article claiming Anthropic's Agents team showed a four-layer framework for production-grade multi-agent systems — described as a 30-minute video. Substance worth checking is in the linked article: x.com/i/article/2056157535082557440.
+
+- [Tom Blomfield](https://x.com/t_blom/status/2056909934156280088) — 2026-05-20: YC General Partner Tom Blomfield breaks down recursively self-improving AI-native companies in a batch talk — how to build recursive self-improving AI loops, and why founders who get this right will run companies that improve while they sleep. 352.3K views.
+
+- [Alex Hillman](https://x.com/alexhillman/status/2056904462162133233) — 2026-05-20: Alex amplifies Ben Vinegar's (@bentlegen) framing of tmux as agent infrastructure: agents can read logs from any pane/window, answer prompts in interactive CLIs, send keys/clicks into TUIs and capture the screen, and run subagents in separate windows while inspecting their output. 47.8K views.
+
+- [Yohei](https://x.com/yoheinakajima/status/2056848954848104488) — 2026-05-20: Yohei (BabyAGI author) introduces ActiveGraph — a continuity layer for long-running agents based on older designs. Key value: enables forking and diffing agent runs, which is useful for self-improving agents. Code coming soon. 11K views.
+
+- [Greg Ceccarelli](https://x.com/gregce10/status/2056771029867933884) — 2026-05-20: Field notes on a 'Goal Engineering' workflow at gregceccarelli.com — replaces prompts/specs with two checked-in markdown artifacts per round: a 'goal' capped at 4,000 chars (matching Codex's /goal command limit) and an unbounded 'rider' with ~11 phases and named depth tests. Skill included in the article. Aimed at long-running agentic turns. 10.6K views.
+
+- [elvis](https://x.com/omarsar0/status/2056764334181884158) — 2026-05-20: Survey paper 'Code as Agent Harness' — 100+ page report on agent harnesses making the case that code-as-harness might be key to a broader science of harness engineering. Argues future systems must have four properties: executable, inspectable, stateful, and governed. Paper at arxiv.org/abs/2605.18747. 75.9K views.
+
+- [Ronan Berder](https://x.com/hunvreus/status/2056742771386638454) — 2026-05-20: Pushback on Spec-Driven Development: agents are faster at writing code and (some) humans are better at system thinking, but humans suck at planning. Argument: you can't sit down, write all the specs upfront, and then write code — experienced engineers know that doesn't work. Quote-tweets a now-unavailable @iamsahaj_xyz post.
+
+- [Akshay](https://x.com/akshay_pachaar/status/2056714042455343160) — 2026-05-20: RAG vs CAG explainer. RAG hits the vector DB for every query even when info hasn't changed — expensive, slow, redundant. Cache-Augmented Generation (CAG) keeps static info in the model's KV memory. Combine them: cache static (policies, docs) in KV once, retrieve dynamic (recent updates) via RAG. Be selective — only cache cold, high-value, rarely-changing knowledge or you'll hit context limits.
+
+- [Garry Tan](https://x.com/garrytan/status/2056711154224034125) — 2026-05-20: Garry Tan (YC) on dynamic skills as the most powerful idea of 2026: just-in-time, markdown-is-code, agents modify their own skills as they encounter new cases. Quote-replies amplify a 'skillpack architecture' where each skill bundle carries its own tests and the agent can modify them in-flight — the compounding effect comes from agents updating their own tooling, not from static skills. 49.8K views.
 
 - [Amar Singh](https://x.com/amarsvs/status/2056484487891243355) — 2026-05-19: Amar Singh argues that as models improve, harness design matters MORE, not less — the smarter the model, the more expensive it is to waste its intelligence. He distinguishes model-bound tasks (where raw capability is the bottleneck, e.g. hard math proofs) from harness-bound tasks (where prompting, tools, context management, and the loop around the model dominate, e.g. Terminal-Bench). Manager analogy: a brilliant employee gets outsized returns from good onboarding, mentorship, and feedback loops.
 
@@ -558,7 +580,13 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Claude Code (121)
+### Claude Code (124)
+
+- [CyrilXBT](https://x.com/cyrilxbt/status/2056933229924372546) — 2026-05-20: Engagement-farmed pitch (ALL CAPS hype) for an X article claiming Anthropic's Agents team showed a four-layer framework for production-grade multi-agent systems — described as a 30-minute video. Substance worth checking is in the linked article: x.com/i/article/2056157535082557440.
+
+- [Garry Tan](https://x.com/garrytan/status/2056711154224034125) — 2026-05-20: Garry Tan (YC) on dynamic skills as the most powerful idea of 2026: just-in-time, markdown-is-code, agents modify their own skills as they encounter new cases. Quote-replies amplify a 'skillpack architecture' where each skill bundle carries its own tests and the agent can modify them in-flight — the compounding effect comes from agents updating their own tooling, not from static skills. 49.8K views.
+
+- [Linas Beliūnas](https://x.com/linasbeliunas/status/2056679329484927356) — 2026-05-20: Engagement-farmed promotion (fire emojis, 'Can't believe') of an Anthropic-published founder playbook for AI-native startups. Breaks the journey into 4 stages — Idea → MVP → Launch → Scale — and maps Claude products to each (Claude pressure-tests ideas, Claude Code builds the product, Claude Cowork handles ops). Linked Substack pieces: linas.substack.com/p/onepersonunicorn, /claudemd, /claudecowork.
 
 - [Aakash Gupta](https://x.com/aakashgupta/status/2056405221908394406) — 2026-05-19: Aakash Gupta breaks down Pawel Huryn's minimalist CLAUDE.md approach — a 6-item routing-table file (project description, file structure map, identity context, knowledge routing pointers, workflow pointers, and a 3-line self-improving prompt) that delegates domain-specific rules to separate files the agent loads on demand. Includes a paste-ready self-improving prompt: (1) review existing rules and hypotheses for the domain, (2) apply confirmed rules, (3) update rules and hypotheses after feedback. Domain knowledge (voice, patterns, metrics, skills) lives in routed files, not the main CLAUDE.md.
 
@@ -802,7 +830,19 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (130)
+### Dev Practices (136)
+
+- [Arpit Bhayani](https://x.com/arpit_bhayani/status/2056946273165656375) — 2026-05-20: Follow-up to a prior post on long-running agentic systems needing reliability, robustness, and fault-tolerance — today digs into how. Observation: distributed workflows are a problem almost every engineering team accidentally rebuilds.
+
+- [Alex Hillman](https://x.com/alexhillman/status/2056904462162133233) — 2026-05-20: Alex amplifies Ben Vinegar's (@bentlegen) framing of tmux as agent infrastructure: agents can read logs from any pane/window, answer prompts in interactive CLIs, send keys/clicks into TUIs and capture the screen, and run subagents in separate windows while inspecting their output. 47.8K views.
+
+- [Greg Ceccarelli](https://x.com/gregce10/status/2056771029867933884) — 2026-05-20: Field notes on a 'Goal Engineering' workflow at gregceccarelli.com — replaces prompts/specs with two checked-in markdown artifacts per round: a 'goal' capped at 4,000 chars (matching Codex's /goal command limit) and an unbounded 'rider' with ~11 phases and named depth tests. Skill included in the article. Aimed at long-running agentic turns. 10.6K views.
+
+- [Lotte](https://x.com/lotte_verheyden/status/2056754091817361670) — 2026-05-20: Langfuse Academy article 'Evals, explained' — walking through offline evaluation as the step in the AI Engineering Loop between running an experiment and shipping a change. Part of a series covering the full AI engineering lifecycle (tracing/monitoring in prod → datasets/experiments/evaluation in dev → continuous improvement). 38K views.
+
+- [Ronan Berder](https://x.com/hunvreus/status/2056742771386638454) — 2026-05-20: Pushback on Spec-Driven Development: agents are faster at writing code and (some) humans are better at system thinking, but humans suck at planning. Argument: you can't sit down, write all the specs upfront, and then write code — experienced engineers know that doesn't work. Quote-tweets a now-unavailable @iamsahaj_xyz post.
+
+- [Akshay](https://x.com/akshay_pachaar/status/2056714042455343160) — 2026-05-20: RAG vs CAG explainer. RAG hits the vector DB for every query even when info hasn't changed — expensive, slow, redundant. Cache-Augmented Generation (CAG) keeps static info in the model's KV memory. Combine them: cache static (policies, docs) in KV once, retrieve dynamic (recent updates) via RAG. Be selective — only cache cold, high-value, rarely-changing knowledge or you'll hit context limits.
 
 - [ClaudeDevs](https://x.com/claudedevs/status/2056403446056784288) — 2026-05-19: Anthropic's ClaudeDevs account links to a new claude.com blog post on running Claude Code at scale — multi-million-line monorepos, decades-old legacy systems, distributed microservices. Practical best-practices doc straight from the vendor; directly actionable for any team standardizing Claude Code usage. Link: claude.com (How Claude Code works in large codebases: Best practices and where to start).
 
@@ -1064,7 +1104,9 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (66)
+### Skills & MCP (67)
+
+- [Garry Tan](https://x.com/garrytan/status/2056711154224034125) — 2026-05-20: Garry Tan (YC) on dynamic skills as the most powerful idea of 2026: just-in-time, markdown-is-code, agents modify their own skills as they encounter new cases. Quote-replies amplify a 'skillpack architecture' where each skill bundle carries its own tests and the agent can modify them in-flight — the compounding effect comes from agents updating their own tooling, not from static skills. 49.8K views.
 
 - [Paul Iusztin](https://x.com/pauliusztin_/status/2056272402414211175) — 2026-05-19: Paul Iusztin recommends neo4j's open-source `agent-memory` repo (github.com/neo4j-labs/agent-memory or neo4j/agent-memory) as the best unified memory layer for AI agents via knowledge graphs — covering short-term, long-term, and reasoning memory with a clean ontology and extraction algorithms. Spent 2 days dissecting their code; full writeup coming on decodingai.com.
 
@@ -1198,7 +1240,11 @@
 
 - [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Anthropic released a frontend-design plugin for Claude Code — demo shows Claude creating a music player app. Install via /plugin marketplace add anthropics/claude-code and /plugin install frontend-design@claude-code-plugins.
 
-### Prompting (67)
+### Prompting (69)
+
+- [Greg Ceccarelli](https://x.com/gregce10/status/2056771029867933884) — 2026-05-20: Field notes on a 'Goal Engineering' workflow at gregceccarelli.com — replaces prompts/specs with two checked-in markdown artifacts per round: a 'goal' capped at 4,000 chars (matching Codex's /goal command limit) and an unbounded 'rider' with ~11 phases and named depth tests. Skill included in the article. Aimed at long-running agentic turns. 10.6K views.
+
+- [Lotte](https://x.com/lotte_verheyden/status/2056754091817361670) — 2026-05-20: Langfuse Academy article 'Evals, explained' — walking through offline evaluation as the step in the AI Engineering Loop between running an experiment and shipping a change. Part of a series covering the full AI engineering lifecycle (tracing/monitoring in prod → datasets/experiments/evaluation in dev → continuous improvement). 38K views.
 
 - [Amar Singh](https://x.com/amarsvs/status/2056484487891243355) — 2026-05-19: Amar Singh argues that as models improve, harness design matters MORE, not less — the smarter the model, the more expensive it is to waste its intelligence. He distinguishes model-bound tasks (where raw capability is the bottleneck, e.g. hard math proofs) from harness-bound tasks (where prompting, tools, context management, and the loop around the model dominate, e.g. Terminal-Bench). Manager analogy: a brilliant employee gets outsized returns from good onboarding, mentorship, and feedback loops.
 
@@ -1334,7 +1380,15 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
 
-### Research (89)
+### Research (93)
+
+- [Yohei](https://x.com/yoheinakajima/status/2056848954848104488) — 2026-05-20: Yohei (BabyAGI author) introduces ActiveGraph — a continuity layer for long-running agents based on older designs. Key value: enables forking and diffing agent runs, which is useful for self-improving agents. Code coming soon. 11K views.
+
+- [elvis](https://x.com/omarsar0/status/2056764334181884158) — 2026-05-20: Survey paper 'Code as Agent Harness' — 100+ page report on agent harnesses making the case that code-as-harness might be key to a broader science of harness engineering. Argues future systems must have four properties: executable, inspectable, stateful, and governed. Paper at arxiv.org/abs/2605.18747. 75.9K views.
+
+- [Lotte](https://x.com/lotte_verheyden/status/2056754091817361670) — 2026-05-20: Langfuse Academy article 'Evals, explained' — walking through offline evaluation as the step in the AI Engineering Loop between running an experiment and shipping a change. Part of a series covering the full AI engineering lifecycle (tracing/monitoring in prod → datasets/experiments/evaluation in dev → continuous improvement). 38K views.
+
+- [Akshay](https://x.com/akshay_pachaar/status/2056714042455343160) — 2026-05-20: RAG vs CAG explainer. RAG hits the vector DB for every query even when info hasn't changed — expensive, slow, redundant. Cache-Augmented Generation (CAG) keeps static info in the model's KV memory. Combine them: cache static (policies, docs) in KV once, retrieve dynamic (recent updates) via RAG. Be selective — only cache cold, high-value, rarely-changing knowledge or you'll hit context limits.
 
 - [Sapient Intelligence](https://x.com/sapient_int/status/2056510383935172798) — 2026-05-19: Sapient Intelligence announces HRM-Text, a 1B-parameter reasoning language model trained on ~40B structured tokens (~1/1000 the training data of comparable models) at a ~$1,000 / one-day compute budget. Pitches a new paradigm of cheap, adaptable general-intelligence research where small teams can revisit ideas previously deemed too expensive to test. No paper link in the visible tweet — worth tracking the org for the technical report.
 
@@ -1514,7 +1568,11 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: 15-part thread explaining the 'stunning, simple explanation behind matrix multiplication' — breaks down the most crucial idea behind modern machine learning. 1M views.
 
-### Industry (56)
+### Industry (58)
+
+- [Tom Blomfield](https://x.com/t_blom/status/2056909934156280088) — 2026-05-20: YC General Partner Tom Blomfield breaks down recursively self-improving AI-native companies in a batch talk — how to build recursive self-improving AI loops, and why founders who get this right will run companies that improve while they sleep. 352.3K views.
+
+- [Linas Beliūnas](https://x.com/linasbeliunas/status/2056679329484927356) — 2026-05-20: Engagement-farmed promotion (fire emojis, 'Can't believe') of an Anthropic-published founder playbook for AI-native startups. Breaks the journey into 4 stages — Idea → MVP → Launch → Scale — and maps Claude products to each (Claude pressure-tests ideas, Claude Code builds the product, Claude Cowork handles ops). Linked Substack pieces: linas.substack.com/p/onepersonunicorn, /claudemd, /claudecowork.
 
 - [Sapient Intelligence](https://x.com/sapient_int/status/2056510383935172798) — 2026-05-19: Sapient Intelligence announces HRM-Text, a 1B-parameter reasoning language model trained on ~40B structured tokens (~1/1000 the training data of comparable models) at a ~$1,000 / one-day compute budget. Pitches a new paradigm of cheap, adaptable general-intelligence research where small teams can revisit ideas previously deemed too expensive to test. No paper link in the visible tweet — worth tracking the org for the technical report.
 
@@ -1628,7 +1686,13 @@
 
 - [Dante O. Cuales](https://x.com/danteocualesjr/status/1957204427909321027) — 2025-08-18: Reply to a thread about AI engineering being easy to learn — argues the 'intimidation factor is mostly artificial' since most AI engineering is API orchestration, prompt optimization, and data pipeline work. The hard parts are already abstracted away.
 
-### Management (82)
+### Management (85)
+
+- [Tom Blomfield](https://x.com/t_blom/status/2056909934156280088) — 2026-05-20: YC General Partner Tom Blomfield breaks down recursively self-improving AI-native companies in a batch talk — how to build recursive self-improving AI loops, and why founders who get this right will run companies that improve while they sleep. 352.3K views.
+
+- [Ronan Berder](https://x.com/hunvreus/status/2056742771386638454) — 2026-05-20: Pushback on Spec-Driven Development: agents are faster at writing code and (some) humans are better at system thinking, but humans suck at planning. Argument: you can't sit down, write all the specs upfront, and then write code — experienced engineers know that doesn't work. Quote-tweets a now-unavailable @iamsahaj_xyz post.
+
+- [Linas Beliūnas](https://x.com/linasbeliunas/status/2056679329484927356) — 2026-05-20: Engagement-farmed promotion (fire emojis, 'Can't believe') of an Anthropic-published founder playbook for AI-native startups. Breaks the journey into 4 stages — Idea → MVP → Launch → Scale — and maps Claude products to each (Claude pressure-tests ideas, Claude Code builds the product, Claude Cowork handles ops). Linked Substack pieces: linas.substack.com/p/onepersonunicorn, /claudemd, /claudecowork.
 
 - [Dave Kline](https://x.com/dklineii/status/2056363703230980364) — 2026-05-19: Dave Kline engagement-hook tweet: leaders worried about AI vs. leaders making themselves irreplaceable by becoming the AI expert in their company. Promises a 5-step plan in a thread. Content lives in the followups — only the framing is in the visible tweet.
 
@@ -1794,7 +1858,11 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
 
-### Questionable (56)
+### Questionable (58)
+
+- [CyrilXBT](https://x.com/cyrilxbt/status/2056933229924372546) — 2026-05-20: Engagement-farmed pitch (ALL CAPS hype) for an X article claiming Anthropic's Agents team showed a four-layer framework for production-grade multi-agent systems — described as a 30-minute video. Substance worth checking is in the linked article: x.com/i/article/2056157535082557440.
+
+- [Linas Beliūnas](https://x.com/linasbeliunas/status/2056679329484927356) — 2026-05-20: Engagement-farmed promotion (fire emojis, 'Can't believe') of an Anthropic-published founder playbook for AI-native startups. Breaks the journey into 4 stages — Idea → MVP → Launch → Scale — and maps Claude products to each (Claude pressure-tests ideas, Claude Code builds the product, Claude Cowork handles ops). Linked Substack pieces: linas.substack.com/p/onepersonunicorn, /claudemd, /claudecowork.
 
 - [Dave Kline](https://x.com/dklineii/status/2056363703230980364) — 2026-05-19: Dave Kline engagement-hook tweet: leaders worried about AI vs. leaders making themselves irreplaceable by becoming the AI expert in their company. Promises a 5-step plan in a thread. Content lives in the followups — only the framing is in the visible tweet.
 
@@ -1908,33 +1976,7 @@
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
 
-### General (92)
-
-- [Viv](https://x.com/vtrivedy10/status/2056993505386622987) — 2026-05-20: 
-
-- [Arpit Bhayani](https://x.com/arpit_bhayani/status/2056946273165656375) — 2026-05-20: 
-
-- [CyrilXBT](https://x.com/cyrilxbt/status/2056933229924372546) — 2026-05-20: 
-
-- [Tom Blomfield](https://x.com/t_blom/status/2056909934156280088) — 2026-05-20: 
-
-- [📙 Alex Hillman](https://x.com/alexhillman/status/2056904462162133233) — 2026-05-20: 
-
-- [Yohei](https://x.com/yoheinakajima/status/2056848954848104488) — 2026-05-20: 
-
-- [Greg Ceccarelli](https://x.com/gregce10/status/2056771029867933884) — 2026-05-20: 
-
-- [elvis](https://x.com/omarsar0/status/2056764334181884158) — 2026-05-20: 
-
-- [Lotte](https://x.com/lotte_verheyden/status/2056754091817361670) — 2026-05-20: 
-
-- [Ronan Berder](https://x.com/hunvreus/status/2056742771386638454) — 2026-05-20: 
-
-- [Akshay 🚀](https://x.com/akshay_pachaar/status/2056714042455343160) — 2026-05-20: 
-
-- [Garry Tan](https://x.com/garrytan/status/2056711154224034125) — 2026-05-20: 
-
-- [Linas Beliūnas](https://x.com/linasbeliunas/status/2056679329484927356) — 2026-05-20: 
+### General (79)
 
 - [Meenakshi Yadav](https://x.com/meenakshiyacs/status/2055104295641710718) — 2026-05-15: Generic agentic-AI architecture "cheat sheet" listing the standard layer stack: goal definition, orchestration, agents, tools, memory, monitoring, reliability (retries/HITL), and governance. No new ideas — useful as a one-slide overview to hand a junior or non-engineer.
 
@@ -2099,44 +2141,44 @@
 
 ### May 2026
 
-- **2026-05-20** | [Viv](https://x.com/vtrivedy10/status/2056993505386622987) | general
-  
+- **2026-05-20** | [Viv](https://x.com/vtrivedy10/status/2056993505386622987) | agent-design
+  Viv promotes a Palash Shah X article on design decisions made for Engine at data scale. Core thread: give agents autonomy AFTER providing the right tooling — most of the design work was upfront tooling for the agent to leverage.
 
-- **2026-05-20** | [Arpit Bhayani](https://x.com/arpit_bhayani/status/2056946273165656375) | general
-  
+- **2026-05-20** | [Arpit Bhayani](https://x.com/arpit_bhayani/status/2056946273165656375) | agent-design, dev-practices
+  Follow-up to a prior post on long-running agentic systems needing reliability, robustness, and fault-tolerance — today digs into how. Observation: distributed workflows are a problem almost every engineering team accidentally rebuilds.
 
-- **2026-05-20** | [CyrilXBT](https://x.com/cyrilxbt/status/2056933229924372546) | general
-  
+- **2026-05-20** | [CyrilXBT](https://x.com/cyrilxbt/status/2056933229924372546) | questionable, agent-design, claude-code
+  Engagement-farmed pitch (ALL CAPS hype) for an X article claiming Anthropic's Agents team showed a four-layer framework for production-grade multi-agent systems — described as a 30-minute video. Substance worth checking is in the linked article: x.com/i/article/2056157535082557440.
 
-- **2026-05-20** | [Tom Blomfield](https://x.com/t_blom/status/2056909934156280088) | general
-  
+- **2026-05-20** | [Tom Blomfield](https://x.com/t_blom/status/2056909934156280088) | management, industry, agent-design
+  YC General Partner Tom Blomfield breaks down recursively self-improving AI-native companies in a batch talk — how to build recursive self-improving AI loops, and why founders who get this right will run companies that improve while they sleep. 352.3K views.
 
-- **2026-05-20** | [📙 Alex Hillman](https://x.com/alexhillman/status/2056904462162133233) | general
-  
+- **2026-05-20** | [Alex Hillman](https://x.com/alexhillman/status/2056904462162133233) | agent-design, dev-practices
+  Alex amplifies Ben Vinegar's (@bentlegen) framing of tmux as agent infrastructure: agents can read logs from any pane/window, answer prompts in interactive CLIs, send keys/clicks into TUIs and capture the screen, and run subagents in separate windows while inspecting their output. 47.8K views.
 
-- **2026-05-20** | [Yohei](https://x.com/yoheinakajima/status/2056848954848104488) | general
-  
+- **2026-05-20** | [Yohei](https://x.com/yoheinakajima/status/2056848954848104488) | agent-design, research
+  Yohei (BabyAGI author) introduces ActiveGraph — a continuity layer for long-running agents based on older designs. Key value: enables forking and diffing agent runs, which is useful for self-improving agents. Code coming soon. 11K views.
 
-- **2026-05-20** | [Greg Ceccarelli](https://x.com/gregce10/status/2056771029867933884) | general
-  
+- **2026-05-20** | [Greg Ceccarelli](https://x.com/gregce10/status/2056771029867933884) | agent-design, prompting, dev-practices
+  Field notes on a 'Goal Engineering' workflow at gregceccarelli.com — replaces prompts/specs with two checked-in markdown artifacts per round: a 'goal' capped at 4,000 chars (matching Codex's /goal command limit) and an unbounded 'rider' with ~11 phases and named depth tests. Skill included in the article. Aimed at long-running agentic turns. 10.6K views.
 
-- **2026-05-20** | [elvis](https://x.com/omarsar0/status/2056764334181884158) | general
-  
+- **2026-05-20** | [elvis](https://x.com/omarsar0/status/2056764334181884158) | agent-design, research
+  Survey paper 'Code as Agent Harness' — 100+ page report on agent harnesses making the case that code-as-harness might be key to a broader science of harness engineering. Argues future systems must have four properties: executable, inspectable, stateful, and governed. Paper at arxiv.org/abs/2605.18747. 75.9K views.
 
-- **2026-05-20** | [Lotte](https://x.com/lotte_verheyden/status/2056754091817361670) | general
-  
+- **2026-05-20** | [Lotte](https://x.com/lotte_verheyden/status/2056754091817361670) | dev-practices, prompting, research
+  Langfuse Academy article 'Evals, explained' — walking through offline evaluation as the step in the AI Engineering Loop between running an experiment and shipping a change. Part of a series covering the full AI engineering lifecycle (tracing/monitoring in prod → datasets/experiments/evaluation in dev → continuous improvement). 38K views.
 
-- **2026-05-20** | [Ronan Berder](https://x.com/hunvreus/status/2056742771386638454) | general
-  
+- **2026-05-20** | [Ronan Berder](https://x.com/hunvreus/status/2056742771386638454) | dev-practices, agent-design, management
+  Pushback on Spec-Driven Development: agents are faster at writing code and (some) humans are better at system thinking, but humans suck at planning. Argument: you can't sit down, write all the specs upfront, and then write code — experienced engineers know that doesn't work. Quote-tweets a now-unavailable @iamsahaj_xyz post.
 
-- **2026-05-20** | [Akshay 🚀](https://x.com/akshay_pachaar/status/2056714042455343160) | general
-  
+- **2026-05-20** | [Akshay](https://x.com/akshay_pachaar/status/2056714042455343160) | research, agent-design, dev-practices
+  RAG vs CAG explainer. RAG hits the vector DB for every query even when info hasn't changed — expensive, slow, redundant. Cache-Augmented Generation (CAG) keeps static info in the model's KV memory. Combine them: cache static (policies, docs) in KV once, retrieve dynamic (recent updates) via RAG. Be selective — only cache cold, high-value, rarely-changing knowledge or you'll hit context limits.
 
-- **2026-05-20** | [Garry Tan](https://x.com/garrytan/status/2056711154224034125) | general
-  
+- **2026-05-20** | [Garry Tan](https://x.com/garrytan/status/2056711154224034125) | skills-mcp, agent-design, claude-code
+  Garry Tan (YC) on dynamic skills as the most powerful idea of 2026: just-in-time, markdown-is-code, agents modify their own skills as they encounter new cases. Quote-replies amplify a 'skillpack architecture' where each skill bundle carries its own tests and the agent can modify them in-flight — the compounding effect comes from agents updating their own tooling, not from static skills. 49.8K views.
 
-- **2026-05-20** | [Linas Beliūnas](https://x.com/linasbeliunas/status/2056679329484927356) | general
-  
+- **2026-05-20** | [Linas Beliūnas](https://x.com/linasbeliunas/status/2056679329484927356) | questionable, claude-code, management, industry
+  Engagement-farmed promotion (fire emojis, 'Can't believe') of an Anthropic-published founder playbook for AI-native startups. Breaks the journey into 4 stages — Idea → MVP → Launch → Scale — and maps Claude products to each (Claude pressure-tests ideas, Claude Code builds the product, Claude Cowork handles ops). Linked Substack pieces: linas.substack.com/p/onepersonunicorn, /claudemd, /claudecowork.
 
 - **2026-05-19** | [Sapient Intelligence](https://x.com/sapient_int/status/2056510383935172798) | research, industry
   Sapient Intelligence announces HRM-Text, a 1B-parameter reasoning language model trained on ~40B structured tokens (~1/1000 the training data of comparable models) at a ~$1,000 / one-day compute budget. Pitches a new paradigm of cheap, adaptable general-intelligence research where small teams can revisit ideas previously deemed too expensive to test. No paper link in the visible tweet — worth tracking the org for the technical report.
