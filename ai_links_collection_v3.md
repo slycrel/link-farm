@@ -1,27 +1,42 @@
 # AI Links Collection
-**Total Posts**: 533  
-**Date Range**: 2024-06-11 – 2026-05-20  
-**Enriched**: 533/533 (100%)
+**Total Posts**: 548  
+**Date Range**: 2024-06-11 – 2026-05-22  
+**Enriched**: 548/548 (100%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 251 | 47.1% |
-| claude-code | 124 | 23.3% |
-| dev-practices | 136 | 25.5% |
-| skills-mcp | 67 | 12.6% |
-| prompting | 69 | 12.9% |
-| research | 93 | 17.4% |
-| industry | 58 | 10.9% |
-| management | 85 | 15.9% |
-| questionable | 58 | 10.9% |
-| general | 75 | 14.1% |
+| agent-design | 255 | 46.5% |
+| claude-code | 129 | 23.5% |
+| dev-practices | 139 | 25.4% |
+| skills-mcp | 70 | 12.8% |
+| prompting | 73 | 13.3% |
+| research | 96 | 17.5% |
+| industry | 62 | 11.3% |
+| management | 89 | 16.2% |
+| questionable | 62 | 11.3% |
+| general | 75 | 13.7% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-05-22 | Viv | agent-design | Agent orchestration pattern: 'bossman supervisor >> external judge >>>... |
+| 2026-05-22 | shdu | industry | Speculative macro thesis arguing AI agents will trigger a 'Deflationar... |
+| 2026-05-22 | Ahmad | research | Ahmad recommends the free 'LLMs 101: A Practical Guide (2026 Edition)'... |
+| 2026-05-22 | swyx | claude-code | swyx is building a skill that takes a vibecoded slop app and turns it... |
+| 2026-05-22 | Mnimiy | claude-code | Field report from Code with Claude London: Boris Cherny, Ravi Trivedi,... |
+| 2026-05-22 | BOOTOSHI | claude-code | BOOTOSHI shared his 'directional-prompting' skill (github.com/kingboot... |
+| 2026-05-22 | Dan Shipper | management | Dan Shipper (Every) report 'After Automation' (every.to/p/after-automa... |
+| 2026-05-22 | Alex Prompter | agent-design | Proposed anatomy of a 'SOUL.md' agent identity file with 9 sections: I... |
+| 2026-05-22 | Dave Kline | management | Generic management influencer post teasing a '5-step system' for deleg... |
+| 2026-05-22 | Akshay | claude-code | Listicle of 12 features that make Claude Code a programmable dev envir... |
+| 2026-05-22 | Khairallah AL-Awady | claude-code | Hype-style summary of a Boris Cherny (Claude Code creator) podcast app... |
+| 2026-05-22 | aditya | agent-design | Walkthrough of a Google L5 system-design question: design a RAG pipeli... |
+| 2026-05-22 | Aaron Levie | industry | Levie endorses a post on Forward Deployed Engineers (FDEs), arguing th... |
+| 2026-05-22 | Tom Dörr | dev-practices | Tom Dörr highlights turbovec (github.com/RyanCodrai/turbovec): a vecto... |
+| 2026-05-22 | James Cogan | industry | X article 'Machine Time: Why AI Is Reorganizing the World Around a Clo... |
 | 2026-05-20 | Viv | agent-design | Viv promotes a Palash Shah X article on design decisions made for Engi... |
 | 2026-05-20 | Arpit Bhayani | agent-design | Follow-up to a prior post on long-running agentic systems needing reli... |
 | 2026-05-20 | CyrilXBT | questionable | Engagement-farmed pitch (ALL CAPS hype) for an X article claiming Anth... |
@@ -57,26 +72,19 @@
 | 2026-05-15 | George from prodmgmt.world | skills-mcp | Three skills for writing software requirements with AI: /grill-me by @... |
 | 2026-05-15 | nader dabit | agent-design | Explains Agent Hooks — user-defined handlers attached to lifecycle poi... |
 | 2026-05-15 | Ole Lehmann | agent-design | Listicle of 9 personal-AI-assistant workflows the author would build o... |
-| 2026-05-15 | 0xMarioNawfal | claude-code | SocratiCode — local zero-config tool giving AI agents semantic underst... |
-| 2026-05-15 | Arpit Bhayani | agent-design | Deep dive on what production-grade RAG actually requires beyond demos:... |
-| 2026-05-15 | Khairallah AL-Awady | agent-design | Thread about Anthropic's May 6, 2026 multi-agent orchestration announc... |
-| 2026-05-15 | Mr. Buzzoni | questionable | Engagement-farmed post about a fired Atlassian infra engineer who alle... |
-| 2026-05-15 | CyrilXBT | industry | ALL-CAPS engagement-farming thread announcing GitHub's new official ce... |
-| 2026-05-15 | charmaine | claude-code | Anthropic engineer sharing the team's learnings on how Claude Code wor... |
-| 2026-05-15 | Meenakshi Yadav | agent-design | Generic agentic-AI architecture "cheat sheet" listing the standard lay... |
-| 2026-05-15 | Sam Hogan | agent-design | Sam Hogan introduces HALO (Hierarchical Agent Loop Optimizer) — github... |
-| 2026-05-15 | Avid | agent-design | Promo for a live 15-minute lecture by two Airbnb Senior Staff Engineer... |
-| 2026-05-15 | Berryxia.AI | agent-design | Translated-from-Chinese thread breaking down Tencent's newly open-sour... |
-| 2026-05-15 | Petra Donka | agent-design | Argues agents doing judgment-heavy work need feedback loops, not perfe... |
-| 2026-05-15 | How To AI | research | Hype-framed thread about Google's new "Nested Learning: The Illusion o... |
-| 2026-05-15 | Anatoli Kopadze | claude-code | 18-step listicle on getting more out of Claude (2.4M views). Step 1 —... |
-| 2026-05-15 | ar0cket1 | research | Research progress report on On-Policy Self Distillation (OPSD) — tryin... |
-| 2026-05-14 | Rohit Ghumare | agent-design | Argues agent codebases that survive past month six do so because the a... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (251)
+### Agent Design (255)
+
+- [Viv](https://x.com/vtrivedy10/status/2057673225702937059) — 2026-05-22: Agent orchestration pattern: 'bossman supervisor >> external judge >>> self reflection.' Argues the top-level orchestrator should be a critical judge of its workers (not a worker itself), running a series of Claude subagents (claude -p / subagent). Different from typical main-agent-does-most-of-the-work patterns — main agent must stay in the judging distribution.
+
+- [swyx](https://x.com/swyx/status/2057559570177007912) — 2026-05-22: swyx is building a skill that takes a vibecoded slop app and turns it into a production-ready, e2e tested, maintainable, parallelizable agent repo. Ran it ~16 hours, 103 commits — same app, but now a codebase he can build on long term. The 'rewrite-for-maintainability' agent pattern.
+
+- [Alex Prompter](https://x.com/alex_prompter/status/2057476020454949201) — 2026-05-22: Proposed anatomy of a 'SOUL.md' agent identity file with 9 sections: Identity (who, not what), Values (decision-making when rules don't cover it), Communication Style, Expertise (specific tools/domains), Boundaries (the immune system), Workflow, Tool Usage (when/how, not just which), Memory Policy, and Example Interactions. Similar idea to CLAUDE.md but framed as personality scaffolding.
+
+- [aditya](https://x.com/adxtyahq/status/2057410759236386866) — 2026-05-22: Walkthrough of a Google L5 system-design question: design a RAG pipeline for 10M docs with zero hallucination. Steps: dedup+normalize ingest, hybrid retrieval (BM25 + embeddings), ANN + reranker, per-chunk source confidence scoring (freshness/trust/origin), and downstream verification. A reasonable canonical RAG architecture cheat-sheet.
 
 - [Viv](https://x.com/vtrivedy10/status/2056993505386622987) — 2026-05-20: Viv promotes a Palash Shah X article on design decisions made for Engine at data scale. Core thread: give agents autonomy AFTER providing the right tooling — most of the design work was upfront tooling for the agent to leverage.
 
@@ -580,7 +588,17 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Claude Code (124)
+### Claude Code (129)
+
+- [swyx](https://x.com/swyx/status/2057559570177007912) — 2026-05-22: swyx is building a skill that takes a vibecoded slop app and turns it into a production-ready, e2e tested, maintainable, parallelizable agent repo. Ran it ~16 hours, 103 commits — same app, but now a codebase he can build on long term. The 'rewrite-for-maintainability' agent pattern.
+
+- [Mnimiy](https://x.com/mnilax/status/2057551699204857930) — 2026-05-22: Field report from Code with Claude London: Boris Cherny, Ravi Trivedi, and Katelyn Lesse all repeated 'let it cook' — meaning stop micromanaging prompts, write the routine, let Claude prompt itself. Framing: 'routines are higher-order prompts. the runtime is shipped. the prompts are the bottleneck.' Author tested 30 routines, 9 survived; the surviving 9 Claude Cowork prompt templates are in the linked article.
+
+- [BOOTOSHI](https://x.com/kingbootoshi/status/2057528772208034195) — 2026-05-22: BOOTOSHI shared his 'directional-prompting' skill (github.com/kingbootoshi/directional-prompting) — a two-layer outcome-first plus directional-language pattern he uses combined with /goal mode. Claims agents thrive on positive communication that makes the path to success clear.
+
+- [Akshay](https://x.com/akshay_pachaar/status/2057446083853520948) — 2026-05-22: Listicle of 12 features that make Claude Code a programmable dev environment: CLAUDE.md persistent memory, Rules guardrails, Skills (.claude/skills/), Hooks (PreToolUse/PostToolUse shell scripts), Slash Commands, plus 7 more. Useful overview of the surface area beyond the prompt.
+
+- [Khairallah AL-Awady](https://x.com/eng_khairallah1/status/2057433528363811098) — 2026-05-22: Hype-style summary of a Boris Cherny (Claude Code creator) podcast appearance: claims most users miss 30+ features hiding behind CLAUDE.md, settings, and toggles. Promises a 40-feature breakdown in a linked X article. Heavy clickbait framing but the underlying podcast/article likely has substance.
 
 - [CyrilXBT](https://x.com/cyrilxbt/status/2056933229924372546) — 2026-05-20: Engagement-farmed pitch (ALL CAPS hype) for an X article claiming Anthropic's Agents team showed a four-layer framework for production-grade multi-agent systems — described as a 30-minute video. Substance worth checking is in the linked article: x.com/i/article/2056157535082557440.
 
@@ -830,7 +848,13 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (136)
+### Dev Practices (139)
+
+- [swyx](https://x.com/swyx/status/2057559570177007912) — 2026-05-22: swyx is building a skill that takes a vibecoded slop app and turns it into a production-ready, e2e tested, maintainable, parallelizable agent repo. Ran it ~16 hours, 103 commits — same app, but now a codebase he can build on long term. The 'rewrite-for-maintainability' agent pattern.
+
+- [aditya](https://x.com/adxtyahq/status/2057410759236386866) — 2026-05-22: Walkthrough of a Google L5 system-design question: design a RAG pipeline for 10M docs with zero hallucination. Steps: dedup+normalize ingest, hybrid retrieval (BM25 + embeddings), ANN + reranker, per-chunk source confidence scoring (freshness/trust/origin), and downstream verification. A reasonable canonical RAG architecture cheat-sheet.
+
+- [Tom Dörr](https://x.com/tom_doerr/status/2057217338844336627) — 2026-05-22: Tom Dörr highlights turbovec (github.com/RyanCodrai/turbovec): a vector-search library that fits 10M documents into 4GB of RAM. Worth a look as a lightweight embedding store for RAG/local-search use cases.
 
 - [Arpit Bhayani](https://x.com/arpit_bhayani/status/2056946273165656375) — 2026-05-20: Follow-up to a prior post on long-running agentic systems needing reliability, robustness, and fault-tolerance — today digs into how. Observation: distributed workflows are a problem almost every engineering team accidentally rebuilds.
 
@@ -1104,7 +1128,13 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (67)
+### Skills & MCP (70)
+
+- [swyx](https://x.com/swyx/status/2057559570177007912) — 2026-05-22: swyx is building a skill that takes a vibecoded slop app and turns it into a production-ready, e2e tested, maintainable, parallelizable agent repo. Ran it ~16 hours, 103 commits — same app, but now a codebase he can build on long term. The 'rewrite-for-maintainability' agent pattern.
+
+- [BOOTOSHI](https://x.com/kingbootoshi/status/2057528772208034195) — 2026-05-22: BOOTOSHI shared his 'directional-prompting' skill (github.com/kingbootoshi/directional-prompting) — a two-layer outcome-first plus directional-language pattern he uses combined with /goal mode. Claims agents thrive on positive communication that makes the path to success clear.
+
+- [Akshay](https://x.com/akshay_pachaar/status/2057446083853520948) — 2026-05-22: Listicle of 12 features that make Claude Code a programmable dev environment: CLAUDE.md persistent memory, Rules guardrails, Skills (.claude/skills/), Hooks (PreToolUse/PostToolUse shell scripts), Slash Commands, plus 7 more. Useful overview of the surface area beyond the prompt.
 
 - [Garry Tan](https://x.com/garrytan/status/2056711154224034125) — 2026-05-20: Garry Tan (YC) on dynamic skills as the most powerful idea of 2026: just-in-time, markdown-is-code, agents modify their own skills as they encounter new cases. Quote-replies amplify a 'skillpack architecture' where each skill bundle carries its own tests and the agent can modify them in-flight — the compounding effect comes from agents updating their own tooling, not from static skills. 49.8K views.
 
@@ -1240,7 +1270,15 @@
 
 - [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Anthropic released a frontend-design plugin for Claude Code — demo shows Claude creating a music player app. Install via /plugin marketplace add anthropics/claude-code and /plugin install frontend-design@claude-code-plugins.
 
-### Prompting (69)
+### Prompting (73)
+
+- [Ahmad](https://x.com/theahmadosman/status/2057590791241896254) — 2026-05-22: Ahmad recommends the free 'LLMs 101: A Practical Guide (2026 Edition)' X article: covers tokens/tokenizers, transformers, attention, KV cache, prefill vs decode, decoding controls, chat templates, long context, RAG, agents/tools, fine-tuning, multimodal — then bridges to running models locally (open-weight vs opensource, quantization, VRAM math, hardware tiers, file format safety, runtimes, benchmarks). ALL-CAPS hype intro but the content is comprehensive.
+
+- [Mnimiy](https://x.com/mnilax/status/2057551699204857930) — 2026-05-22: Field report from Code with Claude London: Boris Cherny, Ravi Trivedi, and Katelyn Lesse all repeated 'let it cook' — meaning stop micromanaging prompts, write the routine, let Claude prompt itself. Framing: 'routines are higher-order prompts. the runtime is shipped. the prompts are the bottleneck.' Author tested 30 routines, 9 survived; the surviving 9 Claude Cowork prompt templates are in the linked article.
+
+- [BOOTOSHI](https://x.com/kingbootoshi/status/2057528772208034195) — 2026-05-22: BOOTOSHI shared his 'directional-prompting' skill (github.com/kingbootoshi/directional-prompting) — a two-layer outcome-first plus directional-language pattern he uses combined with /goal mode. Claims agents thrive on positive communication that makes the path to success clear.
+
+- [Alex Prompter](https://x.com/alex_prompter/status/2057476020454949201) — 2026-05-22: Proposed anatomy of a 'SOUL.md' agent identity file with 9 sections: Identity (who, not what), Values (decision-making when rules don't cover it), Communication Style, Expertise (specific tools/domains), Boundaries (the immune system), Workflow, Tool Usage (when/how, not just which), Memory Policy, and Example Interactions. Similar idea to CLAUDE.md but framed as personality scaffolding.
 
 - [Greg Ceccarelli](https://x.com/gregce10/status/2056771029867933884) — 2026-05-20: Field notes on a 'Goal Engineering' workflow at gregceccarelli.com — replaces prompts/specs with two checked-in markdown artifacts per round: a 'goal' capped at 4,000 chars (matching Codex's /goal command limit) and an unbounded 'rider' with ~11 phases and named depth tests. Skill included in the article. Aimed at long-running agentic turns. 10.6K views.
 
@@ -1380,7 +1418,13 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
 
-### Research (93)
+### Research (96)
+
+- [Ahmad](https://x.com/theahmadosman/status/2057590791241896254) — 2026-05-22: Ahmad recommends the free 'LLMs 101: A Practical Guide (2026 Edition)' X article: covers tokens/tokenizers, transformers, attention, KV cache, prefill vs decode, decoding controls, chat templates, long context, RAG, agents/tools, fine-tuning, multimodal — then bridges to running models locally (open-weight vs opensource, quantization, VRAM math, hardware tiers, file format safety, runtimes, benchmarks). ALL-CAPS hype intro but the content is comprehensive.
+
+- [aditya](https://x.com/adxtyahq/status/2057410759236386866) — 2026-05-22: Walkthrough of a Google L5 system-design question: design a RAG pipeline for 10M docs with zero hallucination. Steps: dedup+normalize ingest, hybrid retrieval (BM25 + embeddings), ANN + reranker, per-chunk source confidence scoring (freshness/trust/origin), and downstream verification. A reasonable canonical RAG architecture cheat-sheet.
+
+- [Tom Dörr](https://x.com/tom_doerr/status/2057217338844336627) — 2026-05-22: Tom Dörr highlights turbovec (github.com/RyanCodrai/turbovec): a vector-search library that fits 10M documents into 4GB of RAM. Worth a look as a lightweight embedding store for RAG/local-search use cases.
 
 - [Yohei](https://x.com/yoheinakajima/status/2056848954848104488) — 2026-05-20: Yohei (BabyAGI author) introduces ActiveGraph — a continuity layer for long-running agents based on older designs. Key value: enables forking and diffing agent runs, which is useful for self-improving agents. Code coming soon. 11K views.
 
@@ -1568,7 +1612,15 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: 15-part thread explaining the 'stunning, simple explanation behind matrix multiplication' — breaks down the most crucial idea behind modern machine learning. 1M views.
 
-### Industry (58)
+### Industry (62)
+
+- [shdu](https://x.com/shdu11546816/status/2057642195524419748) — 2026-05-22: Speculative macro thesis arguing AI agents will trigger a 'Deflationary Doom Loop' via the Paradox of Thrift: as chatbots become agents and high-income white-collar layoffs accelerate, displaced workers flood physical labor markets, wages collapse, discretionary spending collapses, deflation feeds itself. Doom-take economics, not analysis.
+
+- [Dan Shipper](https://x.com/danshipper/status/2057514494960513272) — 2026-05-22: Dan Shipper (Every) report 'After Automation' (every.to/p/after-automation): despite automating everything they can with AI agents, Every went from 4 → 30 human employees since GPT-3. Argues AI makes expert competence cheap, which drives demand for experts UP, and the dynamic intensifies as we approach AGI. Subject was flagged '(read this today)'.
+
+- [Aaron Levie](https://x.com/levie/status/2057315272156135501) — 2026-05-22: Levie endorses a post on Forward Deployed Engineers (FDEs), arguing the role will last as long as AI evolves rapidly. Contrasts with cloud adoption: cloud affected a concentrated user set (devs/IT) with minimal workflow change, while agent deployment is highly technical AND directly reshapes employee workflows — heavy change management plus a much faster pace of model change.
+
+- [James Cogan](https://x.com/cogan/status/2056702063992607071) — 2026-05-22: X article 'Machine Time: Why AI Is Reorganizing the World Around a Clock That Isn't Ours' — Cogan's reflective piece on the disorienting cadence of AI progress: workflows that felt current Monday are stale by Friday, the human nervous system wasn't built to metabolize this rate of change. Thoughtful, not breathless.
 
 - [Tom Blomfield](https://x.com/t_blom/status/2056909934156280088) — 2026-05-20: YC General Partner Tom Blomfield breaks down recursively self-improving AI-native companies in a batch talk — how to build recursive self-improving AI loops, and why founders who get this right will run companies that improve while they sleep. 352.3K views.
 
@@ -1686,7 +1738,15 @@
 
 - [Dante O. Cuales](https://x.com/danteocualesjr/status/1957204427909321027) — 2025-08-18: Reply to a thread about AI engineering being easy to learn — argues the 'intimidation factor is mostly artificial' since most AI engineering is API orchestration, prompt optimization, and data pipeline work. The hard parts are already abstracted away.
 
-### Management (85)
+### Management (89)
+
+- [Dan Shipper](https://x.com/danshipper/status/2057514494960513272) — 2026-05-22: Dan Shipper (Every) report 'After Automation' (every.to/p/after-automation): despite automating everything they can with AI agents, Every went from 4 → 30 human employees since GPT-3. Argues AI makes expert competence cheap, which drives demand for experts UP, and the dynamic intensifies as we approach AGI. Subject was flagged '(read this today)'.
+
+- [Dave Kline](https://x.com/dklineii/status/2057451633303322715) — 2026-05-22: Generic management influencer post teasing a '5-step system' for delegation without micromanaging, off a claim of training 1500+ managers. No real content in the post itself — engagement bait for the thread/reply.
+
+- [Aaron Levie](https://x.com/levie/status/2057315272156135501) — 2026-05-22: Levie endorses a post on Forward Deployed Engineers (FDEs), arguing the role will last as long as AI evolves rapidly. Contrasts with cloud adoption: cloud affected a concentrated user set (devs/IT) with minimal workflow change, while agent deployment is highly technical AND directly reshapes employee workflows — heavy change management plus a much faster pace of model change.
+
+- [James Cogan](https://x.com/cogan/status/2056702063992607071) — 2026-05-22: X article 'Machine Time: Why AI Is Reorganizing the World Around a Clock That Isn't Ours' — Cogan's reflective piece on the disorienting cadence of AI progress: workflows that felt current Monday are stale by Friday, the human nervous system wasn't built to metabolize this rate of change. Thoughtful, not breathless.
 
 - [Tom Blomfield](https://x.com/t_blom/status/2056909934156280088) — 2026-05-20: YC General Partner Tom Blomfield breaks down recursively self-improving AI-native companies in a batch talk — how to build recursive self-improving AI loops, and why founders who get this right will run companies that improve while they sleep. 352.3K views.
 
@@ -1858,7 +1918,15 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
 
-### Questionable (58)
+### Questionable (62)
+
+- [shdu](https://x.com/shdu11546816/status/2057642195524419748) — 2026-05-22: Speculative macro thesis arguing AI agents will trigger a 'Deflationary Doom Loop' via the Paradox of Thrift: as chatbots become agents and high-income white-collar layoffs accelerate, displaced workers flood physical labor markets, wages collapse, discretionary spending collapses, deflation feeds itself. Doom-take economics, not analysis.
+
+- [Ahmad](https://x.com/theahmadosman/status/2057590791241896254) — 2026-05-22: Ahmad recommends the free 'LLMs 101: A Practical Guide (2026 Edition)' X article: covers tokens/tokenizers, transformers, attention, KV cache, prefill vs decode, decoding controls, chat templates, long context, RAG, agents/tools, fine-tuning, multimodal — then bridges to running models locally (open-weight vs opensource, quantization, VRAM math, hardware tiers, file format safety, runtimes, benchmarks). ALL-CAPS hype intro but the content is comprehensive.
+
+- [Dave Kline](https://x.com/dklineii/status/2057451633303322715) — 2026-05-22: Generic management influencer post teasing a '5-step system' for delegation without micromanaging, off a claim of training 1500+ managers. No real content in the post itself — engagement bait for the thread/reply.
+
+- [Khairallah AL-Awady](https://x.com/eng_khairallah1/status/2057433528363811098) — 2026-05-22: Hype-style summary of a Boris Cherny (Claude Code creator) podcast appearance: claims most users miss 30+ features hiding behind CLAUDE.md, settings, and toggles. Promises a 40-feature breakdown in a linked X article. Heavy clickbait framing but the underlying podcast/article likely has substance.
 
 - [CyrilXBT](https://x.com/cyrilxbt/status/2056933229924372546) — 2026-05-20: Engagement-farmed pitch (ALL CAPS hype) for an X article claiming Anthropic's Agents team showed a four-layer framework for production-grade multi-agent systems — described as a 30-minute video. Substance worth checking is in the linked article: x.com/i/article/2056157535082557440.
 
@@ -2140,6 +2208,51 @@
 ## Full Chronological List
 
 ### May 2026
+
+- **2026-05-22** | [Viv](https://x.com/vtrivedy10/status/2057673225702937059) | agent-design
+  Agent orchestration pattern: 'bossman supervisor >> external judge >>> self reflection.' Argues the top-level orchestrator should be a critical judge of its workers (not a worker itself), running a series of Claude subagents (claude -p / subagent). Different from typical main-agent-does-most-of-the-work patterns — main agent must stay in the judging distribution.
+
+- **2026-05-22** | [shdu](https://x.com/shdu11546816/status/2057642195524419748) | industry, questionable
+  Speculative macro thesis arguing AI agents will trigger a 'Deflationary Doom Loop' via the Paradox of Thrift: as chatbots become agents and high-income white-collar layoffs accelerate, displaced workers flood physical labor markets, wages collapse, discretionary spending collapses, deflation feeds itself. Doom-take economics, not analysis.
+
+- **2026-05-22** | [Ahmad](https://x.com/theahmadosman/status/2057590791241896254) | research, prompting, questionable
+  Ahmad recommends the free 'LLMs 101: A Practical Guide (2026 Edition)' X article: covers tokens/tokenizers, transformers, attention, KV cache, prefill vs decode, decoding controls, chat templates, long context, RAG, agents/tools, fine-tuning, multimodal — then bridges to running models locally (open-weight vs opensource, quantization, VRAM math, hardware tiers, file format safety, runtimes, benchmarks). ALL-CAPS hype intro but the content is comprehensive.
+
+- **2026-05-22** | [swyx](https://x.com/swyx/status/2057559570177007912) | claude-code, skills-mcp, agent-design, dev-practices
+  swyx is building a skill that takes a vibecoded slop app and turns it into a production-ready, e2e tested, maintainable, parallelizable agent repo. Ran it ~16 hours, 103 commits — same app, but now a codebase he can build on long term. The 'rewrite-for-maintainability' agent pattern.
+
+- **2026-05-22** | [Mnimiy](https://x.com/mnilax/status/2057551699204857930) | claude-code, prompting
+  Field report from Code with Claude London: Boris Cherny, Ravi Trivedi, and Katelyn Lesse all repeated 'let it cook' — meaning stop micromanaging prompts, write the routine, let Claude prompt itself. Framing: 'routines are higher-order prompts. the runtime is shipped. the prompts are the bottleneck.' Author tested 30 routines, 9 survived; the surviving 9 Claude Cowork prompt templates are in the linked article.
+
+- **2026-05-22** | [BOOTOSHI](https://x.com/kingbootoshi/status/2057528772208034195) | claude-code, prompting, skills-mcp
+  BOOTOSHI shared his 'directional-prompting' skill (github.com/kingbootoshi/directional-prompting) — a two-layer outcome-first plus directional-language pattern he uses combined with /goal mode. Claims agents thrive on positive communication that makes the path to success clear.
+
+- **2026-05-22** | [Dan Shipper](https://x.com/danshipper/status/2057514494960513272) | management, industry
+  Dan Shipper (Every) report 'After Automation' (every.to/p/after-automation): despite automating everything they can with AI agents, Every went from 4 → 30 human employees since GPT-3. Argues AI makes expert competence cheap, which drives demand for experts UP, and the dynamic intensifies as we approach AGI. Subject was flagged '(read this today)'.
+
+- **2026-05-22** | [Alex Prompter](https://x.com/alex_prompter/status/2057476020454949201) | agent-design, prompting
+  Proposed anatomy of a 'SOUL.md' agent identity file with 9 sections: Identity (who, not what), Values (decision-making when rules don't cover it), Communication Style, Expertise (specific tools/domains), Boundaries (the immune system), Workflow, Tool Usage (when/how, not just which), Memory Policy, and Example Interactions. Similar idea to CLAUDE.md but framed as personality scaffolding.
+
+- **2026-05-22** | [Dave Kline](https://x.com/dklineii/status/2057451633303322715) | management, questionable
+  Generic management influencer post teasing a '5-step system' for delegation without micromanaging, off a claim of training 1500+ managers. No real content in the post itself — engagement bait for the thread/reply.
+
+- **2026-05-22** | [Akshay](https://x.com/akshay_pachaar/status/2057446083853520948) | claude-code, skills-mcp
+  Listicle of 12 features that make Claude Code a programmable dev environment: CLAUDE.md persistent memory, Rules guardrails, Skills (.claude/skills/), Hooks (PreToolUse/PostToolUse shell scripts), Slash Commands, plus 7 more. Useful overview of the surface area beyond the prompt.
+
+- **2026-05-22** | [Khairallah AL-Awady](https://x.com/eng_khairallah1/status/2057433528363811098) | claude-code, questionable
+  Hype-style summary of a Boris Cherny (Claude Code creator) podcast appearance: claims most users miss 30+ features hiding behind CLAUDE.md, settings, and toggles. Promises a 40-feature breakdown in a linked X article. Heavy clickbait framing but the underlying podcast/article likely has substance.
+
+- **2026-05-22** | [aditya](https://x.com/adxtyahq/status/2057410759236386866) | agent-design, research, dev-practices
+  Walkthrough of a Google L5 system-design question: design a RAG pipeline for 10M docs with zero hallucination. Steps: dedup+normalize ingest, hybrid retrieval (BM25 + embeddings), ANN + reranker, per-chunk source confidence scoring (freshness/trust/origin), and downstream verification. A reasonable canonical RAG architecture cheat-sheet.
+
+- **2026-05-22** | [Aaron Levie](https://x.com/levie/status/2057315272156135501) | industry, management
+  Levie endorses a post on Forward Deployed Engineers (FDEs), arguing the role will last as long as AI evolves rapidly. Contrasts with cloud adoption: cloud affected a concentrated user set (devs/IT) with minimal workflow change, while agent deployment is highly technical AND directly reshapes employee workflows — heavy change management plus a much faster pace of model change.
+
+- **2026-05-22** | [Tom Dörr](https://x.com/tom_doerr/status/2057217338844336627) | dev-practices, research
+  Tom Dörr highlights turbovec (github.com/RyanCodrai/turbovec): a vector-search library that fits 10M documents into 4GB of RAM. Worth a look as a lightweight embedding store for RAG/local-search use cases.
+
+- **2026-05-22** | [James Cogan](https://x.com/cogan/status/2056702063992607071) | industry, management
+  X article 'Machine Time: Why AI Is Reorganizing the World Around a Clock That Isn't Ours' — Cogan's reflective piece on the disorienting cadence of AI progress: workflows that felt current Monday are stale by Friday, the human nervous system wasn't built to metabolize this rate of change. Thoughtful, not breathless.
 
 - **2026-05-20** | [Viv](https://x.com/vtrivedy10/status/2056993505386622987) | agent-design
   Viv promotes a Palash Shah X article on design decisions made for Engine at data scale. Core thread: give agents autonomy AFTER providing the right tooling — most of the design work was upfront tooling for the agent to leverage.

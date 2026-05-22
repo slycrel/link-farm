@@ -1,5 +1,337 @@
 [
   {
+    "date": "2026-05-22",
+    "author": "Viv",
+    "handle": "@vtrivedy10",
+    "subject": "Post by Viv on X",
+    "url": "https://x.com/vtrivedy10/status/2057673225702937059",
+    "summary": "Agent orchestration pattern: 'bossman supervisor >> external judge >>> self reflection.' Argues the top-level orchestrator should be a critical judge of its workers (not a worker itself), running a series of Claude subagents (claude -p / subagent). Different from typical main-agent-does-most-of-the-work patterns — main agent must stay in the judging distribution.",
+    "topics": [
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "647",
+    "notes": "",
+    "enriched": true,
+    "content": "Viv @Vtrivedy10: subtle agent orchestration change that anecdotally works better in pretty much every case I've seen (need to run some evals): bossman supervisor >> external judge >>> self reflection. when verifying agent outputs using a fresh judge (without the existing context) is almost always better than having the same agent. but instead having a bossman supervisor orchestrating a series of Claudes (claude -p or subagent or whatever style) is the way forward. I'm unsure if it's the persona of being responsible for a bunch of workers that allows it to correct the other agent mistakes. practically this ends up being different than main agent subagent workflows which have subagents do some work instead of most work. imo the main agent should not think it's doing work, it needs to be in the distribution of judging work and being very critical of its workers to correct them. agents orchestrating agents, but the top level being critical..."
+  },
+  {
+    "date": "2026-05-22",
+    "author": "shdu",
+    "handle": "@shdu11546816",
+    "subject": "Post by shdu on X",
+    "url": "https://x.com/shdu11546816/status/2057642195524419748",
+    "summary": "Speculative macro thesis arguing AI agents will trigger a 'Deflationary Doom Loop' via the Paradox of Thrift: as chatbots become agents and high-income white-collar layoffs accelerate, displaced workers flood physical labor markets, wages collapse, discretionary spending collapses, deflation feeds itself. Doom-take economics, not analysis.",
+    "topics": [
+      "industry",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "33.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "shdu @shdu11546816: My best guess is that AI is going to soon cause a Deflationary Doom Loop due to the Paradox of Thrift. As chatbots become agents, the layoffs will accelerate and spending behavior will rapidly change for many previously high income workers. In macroeconomics, the Paradox of Thrift states that when everyone tries to save money at the same time, aggregate demand plummets, causing businesses to fail, which drives wages down further, forcing people to save even more. The Physical Labor Glut: As millions of software engineers, lawyers, and corporate managers flood the market for physical jobs (plumbing, electrical work, elder care, construction), supply will vastly outstrip demand. The Wage Floor Collapse: Wages for physical labor will probably crash to subsistence levels — just enough to buy calories and a crowded room. Because humans are panicking and hoarding every spare penny, discretionary spending will probably collapse..."
+  },
+  {
+    "date": "2026-05-22",
+    "author": "Ahmad",
+    "handle": "@theahmadosman",
+    "subject": "Post by Ahmad on X",
+    "url": "https://x.com/theahmadosman/status/2057590791241896254",
+    "summary": "Ahmad recommends the free 'LLMs 101: A Practical Guide (2026 Edition)' X article: covers tokens/tokenizers, transformers, attention, KV cache, prefill vs decode, decoding controls, chat templates, long context, RAG, agents/tools, fine-tuning, multimodal — then bridges to running models locally (open-weight vs opensource, quantization, VRAM math, hardware tiers, file format safety, runtimes, benchmarks). ALL-CAPS hype intro but the content is comprehensive.",
+    "topics": [
+      "research",
+      "prompting",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "111.2K",
+    "notes": "",
+    "enriched": true,
+    "content": "Ahmad @TheAhmadOsman: INCREDIBLE. The MOST COMPLETE GUIDE for understanding LLMs from first principles is now available online to read for free. Covers the model mechanics - Tokens / tokenizers - Transformers - Attention - KV cache - Prefill vs decode - Decoding controls - Model packages - Chat templates - Long context - RAG - Agents / tools - Fine-tuning - Multimodal models. Then connects that to running models locally - What 'local' really means - Open-weight vs opensource - Quantization - VRAM math - Hardware tiers - File formats / load safety - Runtimes / serving modes - Model selection - Privacy - Failure modes - Benchmarks - Practical setup paths. Article: LLMs 101: A Practical Guide (2026 Edition)."
+  },
+  {
+    "date": "2026-05-22",
+    "author": "swyx",
+    "handle": "@swyx",
+    "subject": "Post by swyx🛬 SFO on X",
+    "url": "https://x.com/swyx/status/2057559570177007912",
+    "summary": "swyx is building a skill that takes a vibecoded slop app and turns it into a production-ready, e2e tested, maintainable, parallelizable agent repo. Ran it ~16 hours, 103 commits — same app, but now a codebase he can build on long term. The 'rewrite-for-maintainability' agent pattern.",
+    "topics": [
+      "claude-code",
+      "skills-mcp",
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "49.8K",
+    "notes": "",
+    "enriched": true,
+    "content": "swyx @swyx: working on a 'take this vibecoded slop app and make it a production-ready, e2e tested, maintainable, parallelizable agent repo' skill. this thing ran for ~16 hours yesterday and made 103 commits all told and i ended up with exactly the same app but instead of fragile mvp it now looks like a codebase i can actually build on for the long run."
+  },
+  {
+    "date": "2026-05-22",
+    "author": "Mnimiy",
+    "handle": "@mnilax",
+    "subject": "Post by Mnimiy on X",
+    "url": "https://x.com/mnilax/status/2057551699204857930",
+    "summary": "Field report from Code with Claude London: Boris Cherny, Ravi Trivedi, and Katelyn Lesse all repeated 'let it cook' — meaning stop micromanaging prompts, write the routine, let Claude prompt itself. Framing: 'routines are higher-order prompts. the runtime is shipped. the prompts are the bottleneck.' Author tested 30 routines, 9 survived; the surviving 9 Claude Cowork prompt templates are in the linked article.",
+    "topics": [
+      "claude-code",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "522.2K",
+    "notes": "",
+    "enriched": true,
+    "content": "Mnimiy @Mnilax: 'let it cook' is the line Anthropic engineers just repeated all day at Code with Claude London. Boris Cherny said it in the keynote. Ravi Trivedi said it in the next talk. Katelyn Lesse said it at the panel. it means: stop micromanaging the prompts. write the routine. let Claude prompt itself. his framing: > routines are higher-order prompts. > the runtime is shipped. > the prompts are the bottleneck. what they didn't say on stage: most routines die without 3 specific properties. i tested 30. 9 made it. the other 21 violated one of the three. the 9 that survived are in the article. all verbatim, just copy-paste. Article: 9 Claude Cowork prompt-templates that run my 8-hour workday in 47 minutes of active supervision."
+  },
+  {
+    "date": "2026-05-22",
+    "author": "BOOTOSHI",
+    "handle": "@kingbootoshi",
+    "subject": "Post by BOOTOSHI 👑 on X",
+    "url": "https://x.com/kingbootoshi/status/2057528772208034195",
+    "summary": "BOOTOSHI shared his 'directional-prompting' skill (github.com/kingbootoshi/directional-prompting) — a two-layer outcome-first plus directional-language pattern he uses combined with /goal mode. Claims agents thrive on positive communication that makes the path to success clear.",
+    "topics": [
+      "claude-code",
+      "prompting",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "14.4K",
+    "notes": "",
+    "enriched": true,
+    "content": "BOOTOSHI @KingBootoshi: Sharing another one of my skills I consider S+ tier! I combine this with /goal mode and it just CLEANS shop. Agents thrive on positive communication - by making the path to success clear, they will reach the destination! Longer write up on this soon. GitHub - kingbootoshi/directional-prompting: Outcome-first plus directional language. A two-layer pattern."
+  },
+  {
+    "date": "2026-05-22",
+    "author": "Dan Shipper",
+    "handle": "@danshipper",
+    "subject": "Post by Dan Shipper 📧 on X (read this today)",
+    "url": "https://x.com/danshipper/status/2057514494960513272",
+    "summary": "Dan Shipper (Every) report 'After Automation' (every.to/p/after-automation): despite automating everything they can with AI agents, Every went from 4 → 30 human employees since GPT-3. Argues AI makes expert competence cheap, which drives demand for experts UP, and the dynamic intensifies as we approach AGI. Subject was flagged '(read this today)'.",
+    "topics": [
+      "management",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "leadership",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "536.6K",
+    "notes": "",
+    "enriched": true,
+    "content": "Dan Shipper @danshipper: We've automated every single thing we can @every with AI agents. And yet there's way more human work to do than ever. We've gone from 4 -> 30 human employees since GPT-3. I wrote a report on the structural reasons: how AI makes expert competence cheap, why that drives up demand for experts, and why the dynamic only intensifies as we approach AGI. After Automation: https://every.to/p/after-automation"
+  },
+  {
+    "date": "2026-05-22",
+    "author": "Alex Prompter",
+    "handle": "@alex_prompter",
+    "subject": "Post by Alex Prompter on X",
+    "url": "https://x.com/alex_prompter/status/2057476020454949201",
+    "summary": "Proposed anatomy of a 'SOUL.md' agent identity file with 9 sections: Identity (who, not what), Values (decision-making when rules don't cover it), Communication Style, Expertise (specific tools/domains), Boundaries (the immune system), Workflow, Tool Usage (when/how, not just which), Memory Policy, and Example Interactions. Similar idea to CLAUDE.md but framed as personality scaffolding.",
+    "topics": [
+      "agent-design",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "26.6K",
+    "notes": "",
+    "enriched": true,
+    "content": "Alex Prompter @alex_prompter: I just broke down the anatomy of the perfect SOUL.md file for AI agents. SOUL.md is the identity file every AI agent reads before it does anything else. Without it, your agent is just a raw LLM with no memory, no personality, and no boundaries. With it, your agent knows who it is, how to talk, what to refuse, and which tools to use. Here are the 9 sections that make a SOUL.md actually work: → Identity (who the agent IS, not what it does) → Values (decision-making when rules don't cover it) → Communication Style (tone, length, formality) → Expertise (specific tools and domains, not vague 'knows things') → Boundaries (the immune system. Holds even under pressure) → Workflow (step-by-step process for every task) → Tool Usage (WHEN and HOW, not just which ones exist) → Memory Policy (what persists, what gets wiped) → Example Interactions (one good example beats 10 abstract rules)..."
+  },
+  {
+    "date": "2026-05-22",
+    "author": "Dave Kline",
+    "handle": "@dklineii",
+    "subject": "Post by Dave Kline on X",
+    "url": "https://x.com/dklineii/status/2057451633303322715",
+    "summary": "Generic management influencer post teasing a '5-step system' for delegation without micromanaging, off a claim of training 1500+ managers. No real content in the post itself — engagement bait for the thread/reply.",
+    "topics": [
+      "management",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "91.2K",
+    "notes": "",
+    "enriched": true,
+    "content": "Dave Kline @dklineii: I've trained 1500+ managers. They all struggle with delegation. The issue isn't assigning work. It's ensuring the work gets done well without micromanaging. Here's a simple 5-step system for helping your team succeed:"
+  },
+  {
+    "date": "2026-05-22",
+    "author": "Akshay",
+    "handle": "@akshay_pachaar",
+    "subject": "Post by Akshay 🚀 on X",
+    "url": "https://x.com/akshay_pachaar/status/2057446083853520948",
+    "summary": "Listicle of 12 features that make Claude Code a programmable dev environment: CLAUDE.md persistent memory, Rules guardrails, Skills (.claude/skills/), Hooks (PreToolUse/PostToolUse shell scripts), Slash Commands, plus 7 more. Useful overview of the surface area beyond the prompt.",
+    "topics": [
+      "claude-code",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "30.8K",
+    "notes": "",
+    "enriched": true,
+    "content": "Akshay @akshay_pachaar: Claude Code isn't a coding tool. (It's a programmable dev environment) Engineers open it, type a prompt, and let it write code. But the real leverage is in the system around the prompt. Here are 12 features that make Claude Code programmable: 1) CLAUDE.md: The project's persistent memory. Stack details, conventions, and constraints load automatically at every session start. 2) Rules: Behavioral guardrails beyond CLAUDE.md. Project-wide do's and don'ts that apply across sessions and contributors. 3) Skills: Reusable instruction files stored in .claude/skills/. Write once, and Claude follows them automatically every time the task matches. 4) Hooks: Shell scripts that fire on events like PreToolUse and PostToolUse. Auto-lint, run tests, or validate output without manual intervention. 5) Slash Commands: Workflow shortcuts stored in .claude/commands/..."
+  },
+  {
+    "date": "2026-05-22",
+    "author": "Khairallah AL-Awady",
+    "handle": "@eng_khairallah1",
+    "subject": "Post by Khairallah AL-Awady on X",
+    "url": "https://x.com/eng_khairallah1/status/2057433528363811098",
+    "summary": "Hype-style summary of a Boris Cherny (Claude Code creator) podcast appearance: claims most users miss 30+ features hiding behind CLAUDE.md, settings, and toggles. Promises a 40-feature breakdown in a linked X article. Heavy clickbait framing but the underlying podcast/article likely has substance.",
+    "topics": [
+      "claude-code",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "817.1K",
+    "notes": "",
+    "enriched": true,
+    "content": "Khairallah AL-Awady @eng_khairallah1: Boris Cherny, the creator of Claude Code at Anthropic, just explained why most people aren't getting real results from Claude. In this podcast he breaks down exactly how most people never actually set up Claude: - the 14% you lose to CLAUDE.md before typing a word - the features that change how Claude thinks before you type a word - the settings 95% of users have never opened - the workflows hiding behind one toggle. if you've been using Claude for more than a month and never left the chat window, you have at least 30 untouched features. probably 38. instead of another show tonight, watch this. make sure to bookmark it before it gets lost in your feed. my breakdown of all 40 features is below. Article: How to Actually Set Up Claude. 40 Features Most Users Have Never Touched."
+  },
+  {
+    "date": "2026-05-22",
+    "author": "aditya",
+    "handle": "@adxtyahq",
+    "subject": "Post by aditya on X",
+    "url": "https://x.com/adxtyahq/status/2057410759236386866",
+    "summary": "Walkthrough of a Google L5 system-design question: design a RAG pipeline for 10M docs with zero hallucination. Steps: dedup+normalize ingest, hybrid retrieval (BM25 + embeddings), ANN + reranker, per-chunk source confidence scoring (freshness/trust/origin), and downstream verification. A reasonable canonical RAG architecture cheat-sheet.",
+    "topics": [
+      "agent-design",
+      "research",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "166.1K",
+    "notes": "",
+    "enriched": true,
+    "content": "aditya @adxtyahq: 'design a RAG pipeline for 10M docs with zero hallucination' apparently this was asked in a Google L5 interview round. came across it somewhere on the internet and honestly it's a way more interesting system design problem than most classic distributed systems questions. 1. ingest + normalize docs - remove duplicates, standardize formats, extract metadata, maintain version history. 2. hybrid retrieval (BM25 + embeddings) - BM25 handles exact keyword matching while embeddings capture semantic meaning - semantic search alone usually struggles with precision at massive scale. 3. ANN retrieval + reranking - ANN (Approximate nearest neighbor) quickly pulls top candidate chunks from millions of docs - then a reranker rescoring step improves relevance by deeply comparing query vs retrieved chunks. 4. source confidence scoring - every retrieved chunk gets scored based on freshness, trust level, origin..."
+  },
+  {
+    "date": "2026-05-22",
+    "author": "Aaron Levie",
+    "handle": "@levie",
+    "subject": "Post by Aaron Levie on X",
+    "url": "https://x.com/levie/status/2057315272156135501",
+    "summary": "Levie endorses a post on Forward Deployed Engineers (FDEs), arguing the role will last as long as AI evolves rapidly. Contrasts with cloud adoption: cloud affected a concentrated user set (devs/IT) with minimal workflow change, while agent deployment is highly technical AND directly reshapes employee workflows — heavy change management plus a much faster pace of model change.",
+    "topics": [
+      "industry",
+      "management"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "561.2K",
+    "notes": "",
+    "enriched": true,
+    "content": "Aaron Levie @levie: Great post on FDEs. Everyone should read it if you're interested in this job category. This is a job that is going to be around as long as AI keeps changing rapidly, which it inevitably will. People often wonder why isn't this like just deploying other forms of technology in the past, like cloud. Because something like cloud adoption affected a fairly concentrated set of users (developers and IT), and generally didn't require a fundamental change to the workflows of employees to get the benefits of the new service being delivered on the cloud. At best you went to one training session and you were done. With agents, the work to implement them is not only highly technical, but they directly impact the underlying workflows that people participate in. This means there's a ton of technical work and change management that comes with it. Further, the pace of change of cloud wasn't nearly as quick, so there was a lot more..."
+  },
+  {
+    "date": "2026-05-22",
+    "author": "Tom Dörr",
+    "handle": "@tom_doerr",
+    "subject": "Post by Tom Dörr on X",
+    "url": "https://x.com/tom_doerr/status/2057217338844336627",
+    "summary": "Tom Dörr highlights turbovec (github.com/RyanCodrai/turbovec): a vector-search library that fits 10M documents into 4GB of RAM. Worth a look as a lightweight embedding store for RAG/local-search use cases.",
+    "topics": [
+      "dev-practices",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "130.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "Tom Dörr @tom_doerr: Fits 10 million documents into 4GB of RAM. https://github.com/RyanCodrai/turbovec"
+  },
+  {
+    "date": "2026-05-22",
+    "author": "James Cogan",
+    "handle": "@cogan",
+    "subject": "Post by James Cogan on X",
+    "url": "https://x.com/cogan/status/2056702063992607071",
+    "summary": "X article 'Machine Time: Why AI Is Reorganizing the World Around a Clock That Isn't Ours' — Cogan's reflective piece on the disorienting cadence of AI progress: workflows that felt current Monday are stale by Friday, the human nervous system wasn't built to metabolize this rate of change. Thoughtful, not breathless.",
+    "topics": [
+      "industry",
+      "management"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "938",
+    "notes": "",
+    "enriched": true,
+    "content": "James Cogan @cogan: Machine Time: Why AI Is Reorganizing the World Around a Clock That Isn't Ours. There is a feeling I keep noticing in people who are paying close attention to AI. Not excitement exactly. Not fear exactly. Something closer to a low-grade physical pressure. It is the sense that the world is not just changing, but changing at a cadence the human nervous system was not built to metabolize. The ground moves, you adjust your stance, and before your weight has settled, the ground moves again. A model comes out. A product ships. A workflow that felt current on Monday feels stale by Friday. A tool you had just started to understand becomes the thing everyone is already comparing against the next thing..."
+  },
+  {
     "date": "2026-05-20",
     "author": "Viv",
     "handle": "@vtrivedy10",
