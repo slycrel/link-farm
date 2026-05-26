@@ -1,5 +1,228 @@
 [
   {
+    "date": "2026-05-25",
+    "author": "darkzodchi",
+    "handle": "@zodchiii",
+    "subject": "Post by darkzodchi on X",
+    "url": "https://x.com/zodchiii/status/2058928613987160287",
+    "summary": "Quote-tweet of his own thread citing Boris Cherny (Claude Code creator): 'Every night I have like a few thousand agents running' — monitored from his phone. Frames the next workflow wave as a team of agents in a chat app that @mention each other, delegate, and persist memory across days. Hype tone, but reflects the real Anthropic direction of multi-agent + persistent context.",
+    "topics": [
+      "agent-design",
+      "claude-code",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "183.9K",
+    "notes": "",
+    "enriched": true,
+    "content": "darkzodchi: Boris Cherny says he runs a few thousand AI agents overnight, monitored from his phone. The next wave: a team of agents in a chat app that @mention each other, delegate tasks, and remember across days. Contrasted against ChatGPT's one-agent-in-a-sandbox model."
+  },
+  {
+    "date": "2026-05-25",
+    "author": "Atenov int.",
+    "handle": "@atenov_d",
+    "subject": "Post by Atenov int. on X",
+    "url": "https://x.com/atenov_d/status/2058868770257416239",
+    "summary": "MoneyPrinterTurbo (github.com/harry0703/MoneyPrinterTurbo) — open-source faceless-video generator pipeline. You type a topic, it writes a script via Claude/DeepSeek/Gemini/GPT, pulls copyright-free HD footage, adds subtitles/voiceover/background music, and outputs finished shorts (9:16) or YouTube (16:9). 13K+ stars. Runs locally with Docker + Google Colab, includes Web UI and API. Pitched as the same pipeline used by faceless-channel creators making $6K-10K/month.",
+    "topics": [
+      "agent-design",
+      "industry"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "MoneyPrinterTurbo — type a topic, generates script + footage + subtitles + music + voiceover for short videos. Script generation via any LLM, batch generation, voice synthesis preview, custom subtitles. Runs locally with Web UI and API. Docker + Colab support."
+  },
+  {
+    "date": "2026-05-25",
+    "author": "Hasan Toor",
+    "handle": "@hasantoxr",
+    "subject": "Post by Hasan Toor on X",
+    "url": "https://x.com/hasantoxr/status/2058863173462352313",
+    "summary": "Hyped engagement-style post claiming an unnamed open-source engine 'replaces agent harness, queues, sandboxing, and APIs' with three primitives across TypeScript/Python/Rust. No tool name, no repo link in the visible post — typical bait pattern of teasing the link behind a follow-up. 15K+ stars claimed, Docker setup included.",
+    "topics": [
+      "questionable",
+      "agent-design"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "33.6K",
+    "notes": "",
+    "enriched": true,
+    "content": "Hasan Toor: A developer just killed the entire backend tooling stack with a single open-source engine. Replaces agent harness, queues, sandboxing, apis and any other service with 3 primitives. TypeScript, Python, Rust support. Production-ready Docker setup. 15K+ stars and growing fast."
+  },
+  {
+    "date": "2026-05-25",
+    "author": "Garry Tan",
+    "handle": "@garrytan",
+    "subject": "Post by Garry Tan on X",
+    "url": "https://x.com/garrytan/status/2058378310254793013",
+    "summary": "Garry Tan reacting to Thinking Machines' May 11 'interaction models' announcement (thinkingmachines.ai/blog/interaction-models): claims he fine-tuned his own Qwen3.5-397B in a couple of hours that afternoon. Hyping fast multimodal as the unlock for 'mind-blowing personal AI.'",
+    "topics": [
+      "research",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "411K",
+    "notes": "",
+    "enriched": true,
+    "content": "Garry Tan: Thinking Machines is impressive. In a couple hours I just fine tuned my own Qwen3.5-397B model this afternoon. Fast usable multimodal is also going to enable very mind-blowing personal AI. Quoting Thinking Machines on real-time interaction models."
+  },
+  {
+    "date": "2026-05-24",
+    "author": "Dave Kline",
+    "handle": "@dklineii",
+    "subject": "Post by Dave Kline on X",
+    "url": "https://x.com/dklineii/status/2058538089224519806",
+    "summary": "Dave Kline on manager training: motivation is intrinsic, so you can't really 'motivate' a team — but you can demotivate them. Sets up a thread on the 5 most common leadership missteps that kill motivation. Standard management content, useful as a quick reference for new-manager conversations.",
+    "topics": [
+      "management"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "42.2K",
+    "notes": "",
+    "enriched": true,
+    "content": "Dave Kline: The most common question I get when training managers is 'How do I motivate my team?' The reality is you don't — lasting motivation is intrinsic. But there are plenty of ways you can demotivate your team. Here are the 5 most common leadership missteps."
+  },
+  {
+    "date": "2026-05-24",
+    "author": "Shubham Saboo",
+    "handle": "@saboo_shubham_",
+    "subject": "Post by Shubham Saboo on X",
+    "url": "https://x.com/saboo_shubham_/status/2058269167372153129",
+    "summary": "Saboo pitches an open-source 'context engineering' tool that turns any codebase into an interactive graph an AI coding agent can query — Claude Code, Codex, and Antigravity compatible. Tool name not in the visible tweet (typical Saboo hype framing with link in a follow-up); flagged for follow-up review since the underlying concept (codebase-as-graph for agents) is genuinely useful.",
+    "topics": [
+      "agent-design",
+      "claude-code",
+      "dev-practices",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "30.9K",
+    "notes": "",
+    "enriched": true,
+    "content": "Shubham Saboo: This is ACTUALLY context engineering for your AI coding agents. It turns any codebase into an interactive graph your agent can query. Works with Claude Code, Codex, Antigravity. 100% Opensource."
+  },
+  {
+    "date": "2026-05-24",
+    "author": "Kevin Simback",
+    "handle": "@ksimback",
+    "subject": "Post by Kevin Simback 🍷 on X",
+    "url": "https://x.com/ksimback/status/2058262328496554021",
+    "summary": "Kevin Simback's 'Hermes Agent Memory Guidebook' — long write-up cataloging memory systems for the Hermes agent ecosystem (hermesatlas.com), reviewing the proliferating tools and architecture choices. Useful as a meta-reference on agent memory patterns even if you don't use Hermes specifically.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "76K",
+    "notes": "",
+    "enriched": true,
+    "content": "Kevin Simback: The Hermes Agent Memory Guidebook. TLDR: definitive guide to memory systems for Hermes Agent. Every week new posts/articles describe new memory tools — broke it down. Hermes ecosystem mapped at hermesatlas.com with a dedicated memory section. Many write-ups skip architecture."
+  },
+  {
+    "date": "2026-05-24",
+    "author": "George Nurijanian",
+    "handle": "@nurijanian",
+    "subject": "Post by George from 🕹prodmgmt.world on X",
+    "url": "https://x.com/nurijanian/status/2058259663238631890",
+    "summary": "George Nurijanian dropped Claude's chart output into Tufte's Visual Display of Quantitative Information and had Claude generate a Tufte-flavored data-viz skill — leaner, clearer charts. Repo: github.com/gnurio/tufte-vdqi-plugin. Quotes Anjney Midha telling AI labs to read Tufte before shipping charts. Directly actionable as a skill to evaluate.",
+    "topics": [
+      "skills-mcp",
+      "claude-code",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "146.6K",
+    "notes": "",
+    "enriched": true,
+    "content": "George from prodmgmt.world: Hit my limit with Claude's chart junk. Handed it Tufte and had it spin up a Tufte-flavored skill - leaner, clearer visuals. Repo: github.com/gnurio/tufte-vdqi-plugin. Quoting Anjney Midha: 'if you run an ai lab, pls ensure your team has read this before putting any charts out into the world.'"
+  },
+  {
+    "date": "2026-05-24",
+    "author": "Garry Tan",
+    "handle": "@garrytan",
+    "subject": "Post by Garry Tan on X",
+    "url": "https://x.com/garrytan/status/2057946119725080878",
+    "summary": "Garry Tan linking a Forbes profile (forbes.com/sites/josipamajic/2026/04/12/the-yc-chief-who-codes-10000-lines-a-day-has-a-simple-secret) about his agentic coding workflow — '10,000 lines a day' framing. Tease tweet; the substance is in the article.",
+    "topics": [
+      "claude-code",
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "114.5K",
+    "notes": "",
+    "enriched": true,
+    "content": "Garry Tan: My simple secret to agentic coding. Linking Forbes article: 'The YC chief who codes 10,000 lines a day has a simple secret.'"
+  },
+  {
+    "date": "2026-05-23",
+    "author": "Charly Wargnier",
+    "handle": "@datachaz",
+    "subject": "Post by Charly Wargnier on X",
+    "url": "https://x.com/datachaz/status/2057787509728522463",
+    "summary": "Charly Wargnier surfacing Addy Osmani's open-source agent-skills repo: github.com/addyosmani/agent-skills — 'Production-grade engineering skills for AI coding agents.' Directly relevant to our skills/MCP work; worth pulling and evaluating which skills map to our dev workflow.",
+    "topics": [
+      "skills-mcp",
+      "claude-code",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "1.4K",
+    "notes": "",
+    "enriched": true,
+    "content": "Charly Wargnier: repo link → github.com/addyosmani/agent-skills. Shoutout to @addyosmani for building this and making it open-source. GitHub - addyosmani/agent-skills: Production-grade engineering skills for AI coding agents."
+  },
+  {
     "date": "2026-05-22",
     "author": "Viv",
     "handle": "@vtrivedy10",
