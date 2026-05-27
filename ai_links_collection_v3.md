@@ -1,27 +1,36 @@
 # AI Links Collection
-**Total Posts**: 558  
-**Date Range**: 2024-06-11 – 2026-05-25  
-**Enriched**: 558/558 (100%)
+**Total Posts**: 567  
+**Date Range**: 2024-06-11 – 2026-05-27  
+**Enriched**: 567/567 (100%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 261 | 46.8% |
-| claude-code | 134 | 24.0% |
-| dev-practices | 143 | 25.6% |
-| skills-mcp | 72 | 12.9% |
-| prompting | 73 | 13.1% |
-| research | 98 | 17.6% |
-| industry | 64 | 11.5% |
-| management | 90 | 16.1% |
-| questionable | 65 | 11.6% |
-| general | 75 | 13.4% |
+| agent-design | 266 | 46.9% |
+| claude-code | 140 | 24.7% |
+| dev-practices | 150 | 26.5% |
+| skills-mcp | 74 | 13.1% |
+| prompting | 74 | 13.1% |
+| research | 101 | 17.8% |
+| industry | 64 | 11.3% |
+| management | 92 | 16.2% |
+| questionable | 68 | 12.0% |
+| general | 75 | 13.2% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-05-27 | darkzodchi | claude-code | darkzodchi promotes an X article on setting up Claude Code to catch, f... |
+| 2026-05-27 | Parag pawar | claude-code | Argues CLAUDE.md is not docs but the control layer for your AI agent —... |
+| 2026-05-27 | Rohit | agent-design | Rohit endorses a Databricks tech lead's 26-min talk at @aiDotEngineer... |
+| 2026-05-27 | Theo - t3.gg | research | Theo endorses DeepSWE, a new agentic coding benchmark released by Data... |
+| 2026-05-27 | Movez | agent-design | Pointer to an Anthropic engineer's 37-min workshop on shipping product... |
+| 2026-05-27 | Binfeng Xu | agent-design | Release of Polar, an Agent RL rollout infrastructure for real-world ha... |
+| 2026-05-27 | Tom Dörr | dev-practices | Pointer to a 500-hour AI infrastructure engineering curriculum on GitH... |
+| 2026-05-27 | 刘醒 | skills-mcp | Highlights 'Taste Skill' — a Skill (20.3k GitHub stars) that improves... |
+| 2026-05-27 | Vaishnavi | agent-design | Microsoft open-sourced agent-governance-toolkit (github.com/microsoft/... |
 | 2026-05-25 | darkzodchi | agent-design | Quote-tweet of his own thread citing Boris Cherny (Claude Code creator... |
 | 2026-05-25 | Atenov int. | agent-design | MoneyPrinterTurbo (github.com/harry0703/MoneyPrinterTurbo) — open-sour... |
 | 2026-05-25 | Hasan Toor | questionable | Hyped engagement-style post claiming an unnamed open-source engine 're... |
@@ -63,20 +72,21 @@
 | 2026-05-19 | Sapient Intelligence | research | Sapient Intelligence announces HRM-Text, a 1B-parameter reasoning lang... |
 | 2026-05-19 | Amar Singh | agent-design | Amar Singh argues that as models improve, harness design matters MORE,... |
 | 2026-05-19 | AVB | agent-design | AVB highlights Recursive Agent Optimization (RAO), an RL-trained setup... |
-| 2026-05-19 | Aakash Gupta | claude-code | Aakash Gupta breaks down Pawel Huryn's minimalist CLAUDE.md approach —... |
-| 2026-05-19 | ClaudeDevs | claude-code | Anthropic's ClaudeDevs account links to a new claude.com blog post on... |
-| 2026-05-19 | Dave Kline | management | Dave Kline engagement-hook tweet: leaders worried about AI vs. leaders... |
-| 2026-05-19 | darkzodchi | claude-code | darkzodchi quote-RTs his own article on Shopify's Claude Code setup, c... |
-| 2026-05-19 | Paul Iusztin | agent-design | Paul Iusztin recommends neo4j's open-source `agent-memory` repo (githu... |
-| 2026-05-19 | Dami-Defi | claude-code | Dami-Defi (quote-RT of own article) on feeding MIT's 12 free graduate-... |
-| 2026-05-18 | Viv | agent-design | Introduces LangSmith Engine — LangChain's pitch for an always-on self-... |
-| 2026-05-18 | Suryansh Tiwari | claude-code | Pitches Anthropic's official claude-code-setup plugin (install: /plugi... |
-| 2026-05-18 | AYi | questionable | Translated-from-Chinese hype post claiming Garry Tan's just-released '... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (261)
+### Agent Design (266)
+
+- [darkzodchi](https://x.com/zodchiii/status/2059603103070945391) — 2026-05-27: darkzodchi promotes an X article on setting up Claude Code to catch, fix, and learn from its own mistakes automatically. Pitches it as Boris Cherny's (Claude Code creator) approach: stop fixing Claude's mistakes and make Claude fix them itself. Engagement-farm framing but the underlying setup may be worth a look.
+
+- [Rohit](https://x.com/rohit4verse/status/2059366212501696609) — 2026-05-27: Rohit endorses a Databricks tech lead's 26-min talk at @aiDotEngineer on multi-agent coordination — argues agents break not because the model is dumb but because nothing coordinates them. 'One agent is a feature. Fifty is a distributed systems problem. Parallelism is cheap. Getting 300 agents to share one coherent brain is the entire game.' Quote tweets his own article on commanding 300 agents from one prompt.
+
+- [Movez](https://x.com/0xmovez/status/2059346354984612126) — 2026-05-27: Pointer to an Anthropic engineer's 37-min workshop on shipping production-ready AI agents, framed around 3 building blocks: brain (persona) + hands (environment) + sessions, with a server-side loop so refreshes don't break state. Engagement-farm framing — quote tweets a longer companion guide on multi-agent orchestration on Claude.
+
+- [Binfeng Xu](https://x.com/billxbf/status/2059323616009838703) — 2026-05-27: Release of Polar, an Agent RL rollout infrastructure for real-world harnesses. Takes existing harnesses (Codex, Claude Code, OpenClaw, Hermes, or custom) directly as training environments with no code changes — find a problem, design the harness, train your own agent.
+
+- [Vaishnavi](https://x.com/_vmlops/status/2059207888393138556) — 2026-05-27: Microsoft open-sourced agent-governance-toolkit (github.com/microsoft/agent-governance-toolkit) — deterministic tool-call interception with a YAML policy engine (allow/deny/require human approval), zero-trust identity via SPIFFE/DID/mTLS, a 4-level execution sandbox with privilege rings, tamper-evident Merkle audit logs, and coverage of all OWASP Agentic Top 10 risks. Works with LangChain, CrewAI, AutoGen, OpenAI Agents SDK, Semantic Kernel, etc. Python/TS/Go/Rust/.NET. ALL CAPS engagement framing but the tool is real and substantive.
 
 - [darkzodchi](https://x.com/zodchiii/status/2058928613987160287) — 2026-05-25: Quote-tweet of his own thread citing Boris Cherny (Claude Code creator): 'Every night I have like a few thousand agents running' — monitored from his phone. Frames the next workflow wave as a team of agents in a chat app that @mention each other, delegate, and persist memory across days. Hype tone, but reflects the real Anthropic direction of multi-agent + persistent context.
 
@@ -600,7 +610,19 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Claude Code (134)
+### Claude Code (140)
+
+- [darkzodchi](https://x.com/zodchiii/status/2059603103070945391) — 2026-05-27: darkzodchi promotes an X article on setting up Claude Code to catch, fix, and learn from its own mistakes automatically. Pitches it as Boris Cherny's (Claude Code creator) approach: stop fixing Claude's mistakes and make Claude fix them itself. Engagement-farm framing but the underlying setup may be worth a look.
+
+- [Parag pawar](https://x.com/dharmikpawar13/status/2059571098484675051) — 2026-05-27: Argues CLAUDE.md is not docs but the control layer for your AI agent — inconsistent outputs usually come from bad instruction architecture, not the model. Lays out a scope hierarchy (global = standards, project = stack/workflows, folder = local overrides) where the nearest scope wins, plus a WHAT/WHY framework for organizing context. Directly relevant since Jeremy's own AI links collection runs off a CLAUDE.md — he flagged this one with '(have a look)'.
+
+- [Theo - t3.gg](https://x.com/theo/status/2059352130289651925) — 2026-05-27: Theo endorses DeepSWE, a new agentic coding benchmark released by Datacurve (Serena Ge). Claims it 'actually aligns with how it feels to use these models coding' — i.e. surfaces real divergence between top models where public leaderboards make them look close.
+
+- [Movez](https://x.com/0xmovez/status/2059346354984612126) — 2026-05-27: Pointer to an Anthropic engineer's 37-min workshop on shipping production-ready AI agents, framed around 3 building blocks: brain (persona) + hands (environment) + sessions, with a server-side loop so refreshes don't break state. Engagement-farm framing — quote tweets a longer companion guide on multi-agent orchestration on Claude.
+
+- [Binfeng Xu](https://x.com/billxbf/status/2059323616009838703) — 2026-05-27: Release of Polar, an Agent RL rollout infrastructure for real-world harnesses. Takes existing harnesses (Codex, Claude Code, OpenClaw, Hermes, or custom) directly as training environments with no code changes — find a problem, design the harness, train your own agent.
+
+- [刘醒](https://x.com/xingxingli45573/status/2059258034820706541) — 2026-05-27: Highlights 'Taste Skill' — a Skill (20.3k GitHub stars) that improves AI-generated frontend UIs: better layout, fonts, animations, and whitespace for a premium feel. Offers preset directions (universal premium, minimalist, brutalism) plus an audit-and-fix variant for upgrading existing pages, and three tunable parameters for layout/animation/info-density. Includes a companion image skill to generate mockups before coding.
 
 - [darkzodchi](https://x.com/zodchiii/status/2058928613987160287) — 2026-05-25: Quote-tweet of his own thread citing Boris Cherny (Claude Code creator): 'Every night I have like a few thousand agents running' — monitored from his phone. Frames the next workflow wave as a team of agents in a chat app that @mention each other, delegate, and persist memory across days. Hype tone, but reflects the real Anthropic direction of multi-agent + persistent context.
 
@@ -870,7 +892,21 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (143)
+### Dev Practices (150)
+
+- [darkzodchi](https://x.com/zodchiii/status/2059603103070945391) — 2026-05-27: darkzodchi promotes an X article on setting up Claude Code to catch, fix, and learn from its own mistakes automatically. Pitches it as Boris Cherny's (Claude Code creator) approach: stop fixing Claude's mistakes and make Claude fix them itself. Engagement-farm framing but the underlying setup may be worth a look.
+
+- [Parag pawar](https://x.com/dharmikpawar13/status/2059571098484675051) — 2026-05-27: Argues CLAUDE.md is not docs but the control layer for your AI agent — inconsistent outputs usually come from bad instruction architecture, not the model. Lays out a scope hierarchy (global = standards, project = stack/workflows, folder = local overrides) where the nearest scope wins, plus a WHAT/WHY framework for organizing context. Directly relevant since Jeremy's own AI links collection runs off a CLAUDE.md — he flagged this one with '(have a look)'.
+
+- [Rohit](https://x.com/rohit4verse/status/2059366212501696609) — 2026-05-27: Rohit endorses a Databricks tech lead's 26-min talk at @aiDotEngineer on multi-agent coordination — argues agents break not because the model is dumb but because nothing coordinates them. 'One agent is a feature. Fifty is a distributed systems problem. Parallelism is cheap. Getting 300 agents to share one coherent brain is the entire game.' Quote tweets his own article on commanding 300 agents from one prompt.
+
+- [Theo - t3.gg](https://x.com/theo/status/2059352130289651925) — 2026-05-27: Theo endorses DeepSWE, a new agentic coding benchmark released by Datacurve (Serena Ge). Claims it 'actually aligns with how it feels to use these models coding' — i.e. surfaces real divergence between top models where public leaderboards make them look close.
+
+- [Tom Dörr](https://x.com/tom_doerr/status/2059316125049971017) — 2026-05-27: Pointer to a 500-hour AI infrastructure engineering curriculum on GitHub (github.com/ai-infra-curriculum/ai-infra-engineer-learning). Self-study path for ML/AI infra skills.
+
+- [刘醒](https://x.com/xingxingli45573/status/2059258034820706541) — 2026-05-27: Highlights 'Taste Skill' — a Skill (20.3k GitHub stars) that improves AI-generated frontend UIs: better layout, fonts, animations, and whitespace for a premium feel. Offers preset directions (universal premium, minimalist, brutalism) plus an audit-and-fix variant for upgrading existing pages, and three tunable parameters for layout/animation/info-density. Includes a companion image skill to generate mockups before coding.
+
+- [Vaishnavi](https://x.com/_vmlops/status/2059207888393138556) — 2026-05-27: Microsoft open-sourced agent-governance-toolkit (github.com/microsoft/agent-governance-toolkit) — deterministic tool-call interception with a YAML policy engine (allow/deny/require human approval), zero-trust identity via SPIFFE/DID/mTLS, a 4-level execution sandbox with privilege rings, tamper-evident Merkle audit logs, and coverage of all OWASP Agentic Top 10 risks. Works with LangChain, CrewAI, AutoGen, OpenAI Agents SDK, Semantic Kernel, etc. Python/TS/Go/Rust/.NET. ALL CAPS engagement framing but the tool is real and substantive.
 
 - [Shubham Saboo](https://x.com/saboo_shubham_/status/2058269167372153129) — 2026-05-24: Saboo pitches an open-source 'context engineering' tool that turns any codebase into an interactive graph an AI coding agent can query — Claude Code, Codex, and Antigravity compatible. Tool name not in the visible tweet (typical Saboo hype framing with link in a follow-up); flagged for follow-up review since the underlying concept (codebase-as-graph for agents) is genuinely useful.
 
@@ -1158,7 +1194,11 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (72)
+### Skills & MCP (74)
+
+- [刘醒](https://x.com/xingxingli45573/status/2059258034820706541) — 2026-05-27: Highlights 'Taste Skill' — a Skill (20.3k GitHub stars) that improves AI-generated frontend UIs: better layout, fonts, animations, and whitespace for a premium feel. Offers preset directions (universal premium, minimalist, brutalism) plus an audit-and-fix variant for upgrading existing pages, and three tunable parameters for layout/animation/info-density. Includes a companion image skill to generate mockups before coding.
+
+- [Vaishnavi](https://x.com/_vmlops/status/2059207888393138556) — 2026-05-27: Microsoft open-sourced agent-governance-toolkit (github.com/microsoft/agent-governance-toolkit) — deterministic tool-call interception with a YAML policy engine (allow/deny/require human approval), zero-trust identity via SPIFFE/DID/mTLS, a 4-level execution sandbox with privilege rings, tamper-evident Merkle audit logs, and coverage of all OWASP Agentic Top 10 risks. Works with LangChain, CrewAI, AutoGen, OpenAI Agents SDK, Semantic Kernel, etc. Python/TS/Go/Rust/.NET. ALL CAPS engagement framing but the tool is real and substantive.
 
 - [George Nurijanian](https://x.com/nurijanian/status/2058259663238631890) — 2026-05-24: George Nurijanian dropped Claude's chart output into Tufte's Visual Display of Quantitative Information and had Claude generate a Tufte-flavored data-viz skill — leaner, clearer charts. Repo: github.com/gnurio/tufte-vdqi-plugin. Quotes Anjney Midha telling AI labs to read Tufte before shipping charts. Directly actionable as a skill to evaluate.
 
@@ -1304,7 +1344,9 @@
 
 - [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Anthropic released a frontend-design plugin for Claude Code — demo shows Claude creating a music player app. Install via /plugin marketplace add anthropics/claude-code and /plugin install frontend-design@claude-code-plugins.
 
-### Prompting (73)
+### Prompting (74)
+
+- [Parag pawar](https://x.com/dharmikpawar13/status/2059571098484675051) — 2026-05-27: Argues CLAUDE.md is not docs but the control layer for your AI agent — inconsistent outputs usually come from bad instruction architecture, not the model. Lays out a scope hierarchy (global = standards, project = stack/workflows, folder = local overrides) where the nearest scope wins, plus a WHAT/WHY framework for organizing context. Directly relevant since Jeremy's own AI links collection runs off a CLAUDE.md — he flagged this one with '(have a look)'.
 
 - [Ahmad](https://x.com/theahmadosman/status/2057590791241896254) — 2026-05-22: Ahmad recommends the free 'LLMs 101: A Practical Guide (2026 Edition)' X article: covers tokens/tokenizers, transformers, attention, KV cache, prefill vs decode, decoding controls, chat templates, long context, RAG, agents/tools, fine-tuning, multimodal — then bridges to running models locally (open-weight vs opensource, quantization, VRAM math, hardware tiers, file format safety, runtimes, benchmarks). ALL-CAPS hype intro but the content is comprehensive.
 
@@ -1452,7 +1494,13 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
 
-### Research (98)
+### Research (101)
+
+- [Theo - t3.gg](https://x.com/theo/status/2059352130289651925) — 2026-05-27: Theo endorses DeepSWE, a new agentic coding benchmark released by Datacurve (Serena Ge). Claims it 'actually aligns with how it feels to use these models coding' — i.e. surfaces real divergence between top models where public leaderboards make them look close.
+
+- [Binfeng Xu](https://x.com/billxbf/status/2059323616009838703) — 2026-05-27: Release of Polar, an Agent RL rollout infrastructure for real-world harnesses. Takes existing harnesses (Codex, Claude Code, OpenClaw, Hermes, or custom) directly as training environments with no code changes — find a problem, design the harness, train your own agent.
+
+- [Tom Dörr](https://x.com/tom_doerr/status/2059316125049971017) — 2026-05-27: Pointer to a 500-hour AI infrastructure engineering curriculum on GitHub (github.com/ai-infra-curriculum/ai-infra-engineer-learning). Self-study path for ML/AI infra skills.
 
 - [Garry Tan](https://x.com/garrytan/status/2058378310254793013) — 2026-05-25: Garry Tan reacting to Thinking Machines' May 11 'interaction models' announcement (thinkingmachines.ai/blog/interaction-models): claims he fine-tuned his own Qwen3.5-397B in a couple of hours that afternoon. Hyping fast multimodal as the unlock for 'mind-blowing personal AI.'
 
@@ -1780,7 +1828,11 @@
 
 - [Dante O. Cuales](https://x.com/danteocualesjr/status/1957204427909321027) — 2025-08-18: Reply to a thread about AI engineering being easy to learn — argues the 'intimidation factor is mostly artificial' since most AI engineering is API orchestration, prompt optimization, and data pipeline work. The hard parts are already abstracted away.
 
-### Management (90)
+### Management (92)
+
+- [Rohit](https://x.com/rohit4verse/status/2059366212501696609) — 2026-05-27: Rohit endorses a Databricks tech lead's 26-min talk at @aiDotEngineer on multi-agent coordination — argues agents break not because the model is dumb but because nothing coordinates them. 'One agent is a feature. Fifty is a distributed systems problem. Parallelism is cheap. Getting 300 agents to share one coherent brain is the entire game.' Quote tweets his own article on commanding 300 agents from one prompt.
+
+- [Movez](https://x.com/0xmovez/status/2059346354984612126) — 2026-05-27: Pointer to an Anthropic engineer's 37-min workshop on shipping production-ready AI agents, framed around 3 building blocks: brain (persona) + hands (environment) + sessions, with a server-side loop so refreshes don't break state. Engagement-farm framing — quote tweets a longer companion guide on multi-agent orchestration on Claude.
 
 - [Dave Kline](https://x.com/dklineii/status/2058538089224519806) — 2026-05-24: Dave Kline on manager training: motivation is intrinsic, so you can't really 'motivate' a team — but you can demotivate them. Sets up a thread on the 5 most common leadership missteps that kill motivation. Standard management content, useful as a quick reference for new-manager conversations.
 
@@ -1962,7 +2014,13 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
 
-### Questionable (65)
+### Questionable (68)
+
+- [darkzodchi](https://x.com/zodchiii/status/2059603103070945391) — 2026-05-27: darkzodchi promotes an X article on setting up Claude Code to catch, fix, and learn from its own mistakes automatically. Pitches it as Boris Cherny's (Claude Code creator) approach: stop fixing Claude's mistakes and make Claude fix them itself. Engagement-farm framing but the underlying setup may be worth a look.
+
+- [Movez](https://x.com/0xmovez/status/2059346354984612126) — 2026-05-27: Pointer to an Anthropic engineer's 37-min workshop on shipping production-ready AI agents, framed around 3 building blocks: brain (persona) + hands (environment) + sessions, with a server-side loop so refreshes don't break state. Engagement-farm framing — quote tweets a longer companion guide on multi-agent orchestration on Claude.
+
+- [Vaishnavi](https://x.com/_vmlops/status/2059207888393138556) — 2026-05-27: Microsoft open-sourced agent-governance-toolkit (github.com/microsoft/agent-governance-toolkit) — deterministic tool-call interception with a YAML policy engine (allow/deny/require human approval), zero-trust identity via SPIFFE/DID/mTLS, a 4-level execution sandbox with privilege rings, tamper-evident Merkle audit logs, and coverage of all OWASP Agentic Top 10 risks. Works with LangChain, CrewAI, AutoGen, OpenAI Agents SDK, Semantic Kernel, etc. Python/TS/Go/Rust/.NET. ALL CAPS engagement framing but the tool is real and substantive.
 
 - [darkzodchi](https://x.com/zodchiii/status/2058928613987160287) — 2026-05-25: Quote-tweet of his own thread citing Boris Cherny (Claude Code creator): 'Every night I have like a few thousand agents running' — monitored from his phone. Frames the next workflow wave as a team of agents in a chat app that @mention each other, delegate, and persist memory across days. Hype tone, but reflects the real Anthropic direction of multi-agent + persistent context.
 
@@ -2258,6 +2316,33 @@
 ## Full Chronological List
 
 ### May 2026
+
+- **2026-05-27** | [darkzodchi](https://x.com/zodchiii/status/2059603103070945391) | claude-code, agent-design, dev-practices, questionable
+  darkzodchi promotes an X article on setting up Claude Code to catch, fix, and learn from its own mistakes automatically. Pitches it as Boris Cherny's (Claude Code creator) approach: stop fixing Claude's mistakes and make Claude fix them itself. Engagement-farm framing but the underlying setup may be worth a look.
+
+- **2026-05-27** | [Parag pawar](https://x.com/dharmikpawar13/status/2059571098484675051) | claude-code, prompting, dev-practices
+  Argues CLAUDE.md is not docs but the control layer for your AI agent — inconsistent outputs usually come from bad instruction architecture, not the model. Lays out a scope hierarchy (global = standards, project = stack/workflows, folder = local overrides) where the nearest scope wins, plus a WHAT/WHY framework for organizing context. Directly relevant since Jeremy's own AI links collection runs off a CLAUDE.md — he flagged this one with '(have a look)'.
+
+- **2026-05-27** | [Rohit](https://x.com/rohit4verse/status/2059366212501696609) | agent-design, dev-practices, management
+  Rohit endorses a Databricks tech lead's 26-min talk at @aiDotEngineer on multi-agent coordination — argues agents break not because the model is dumb but because nothing coordinates them. 'One agent is a feature. Fifty is a distributed systems problem. Parallelism is cheap. Getting 300 agents to share one coherent brain is the entire game.' Quote tweets his own article on commanding 300 agents from one prompt.
+
+- **2026-05-27** | [Theo - t3.gg](https://x.com/theo/status/2059352130289651925) | research, claude-code, dev-practices
+  Theo endorses DeepSWE, a new agentic coding benchmark released by Datacurve (Serena Ge). Claims it 'actually aligns with how it feels to use these models coding' — i.e. surfaces real divergence between top models where public leaderboards make them look close.
+
+- **2026-05-27** | [Movez](https://x.com/0xmovez/status/2059346354984612126) | agent-design, claude-code, management, questionable
+  Pointer to an Anthropic engineer's 37-min workshop on shipping production-ready AI agents, framed around 3 building blocks: brain (persona) + hands (environment) + sessions, with a server-side loop so refreshes don't break state. Engagement-farm framing — quote tweets a longer companion guide on multi-agent orchestration on Claude.
+
+- **2026-05-27** | [Binfeng Xu](https://x.com/billxbf/status/2059323616009838703) | agent-design, research, claude-code
+  Release of Polar, an Agent RL rollout infrastructure for real-world harnesses. Takes existing harnesses (Codex, Claude Code, OpenClaw, Hermes, or custom) directly as training environments with no code changes — find a problem, design the harness, train your own agent.
+
+- **2026-05-27** | [Tom Dörr](https://x.com/tom_doerr/status/2059316125049971017) | dev-practices, research
+  Pointer to a 500-hour AI infrastructure engineering curriculum on GitHub (github.com/ai-infra-curriculum/ai-infra-engineer-learning). Self-study path for ML/AI infra skills.
+
+- **2026-05-27** | [刘醒](https://x.com/xingxingli45573/status/2059258034820706541) | skills-mcp, claude-code, dev-practices
+  Highlights 'Taste Skill' — a Skill (20.3k GitHub stars) that improves AI-generated frontend UIs: better layout, fonts, animations, and whitespace for a premium feel. Offers preset directions (universal premium, minimalist, brutalism) plus an audit-and-fix variant for upgrading existing pages, and three tunable parameters for layout/animation/info-density. Includes a companion image skill to generate mockups before coding.
+
+- **2026-05-27** | [Vaishnavi](https://x.com/_vmlops/status/2059207888393138556) | agent-design, skills-mcp, dev-practices, questionable
+  Microsoft open-sourced agent-governance-toolkit (github.com/microsoft/agent-governance-toolkit) — deterministic tool-call interception with a YAML policy engine (allow/deny/require human approval), zero-trust identity via SPIFFE/DID/mTLS, a 4-level execution sandbox with privilege rings, tamper-evident Merkle audit logs, and coverage of all OWASP Agentic Top 10 risks. Works with LangChain, CrewAI, AutoGen, OpenAI Agents SDK, Semantic Kernel, etc. Python/TS/Go/Rust/.NET. ALL CAPS engagement framing but the tool is real and substantive.
 
 - **2026-05-25** | [darkzodchi](https://x.com/zodchiii/status/2058928613987160287) | agent-design, claude-code, questionable
   Quote-tweet of his own thread citing Boris Cherny (Claude Code creator): 'Every night I have like a few thousand agents running' — monitored from his phone. Frames the next workflow wave as a team of agents in a chat app that @mention each other, delegate, and persist memory across days. Hype tone, but reflects the real Anthropic direction of multi-agent + persistent context.

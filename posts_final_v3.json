@@ -1,5 +1,216 @@
 [
   {
+    "date": "2026-05-27",
+    "author": "darkzodchi",
+    "handle": "@zodchiii",
+    "subject": "Post by darkzodchi on X",
+    "url": "https://x.com/zodchiii/status/2059603103070945391",
+    "summary": "darkzodchi promotes an X article on setting up Claude Code to catch, fix, and learn from its own mistakes automatically. Pitches it as Boris Cherny's (Claude Code creator) approach: stop fixing Claude's mistakes and make Claude fix them itself. Engagement-farm framing but the underlying setup may be worth a look.",
+    "topics": [
+      "claude-code",
+      "agent-design",
+      "dev-practices",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "21K",
+    "notes": "",
+    "enriched": true,
+    "content": "Boris Cherny, creator of Claude Code: 'We stopped fixing Claude's mistakes. We made Claude fix them itself.' Quote tweet promotes article: How to Make Claude Code Fix Its Own Mistakes Automatically (Exact Setup You Can Copy). 21K views."
+  },
+  {
+    "date": "2026-05-27",
+    "author": "Parag pawar",
+    "handle": "@dharmikpawar13",
+    "subject": "Post by Parag pawar on X (have a look)",
+    "url": "https://x.com/dharmikpawar13/status/2059571098484675051",
+    "summary": "Argues CLAUDE.md is not docs but the control layer for your AI agent — inconsistent outputs usually come from bad instruction architecture, not the model. Lays out a scope hierarchy (global = standards, project = stack/workflows, folder = local overrides) where the nearest scope wins, plus a WHAT/WHY framework for organizing context. Directly relevant since Jeremy's own AI links collection runs off a CLAUDE.md — he flagged this one with '(have a look)'.",
+    "topics": [
+      "claude-code",
+      "prompting",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "Jeremy flagged with '(have a look)' — relates directly to project CLAUDE.md practices.",
+    "enriched": true,
+    "content": "Most developers treat CLAUDE.md like documentation. That's the mistake. It's not a README. It's the control layer for your AI agent. If your outputs feel inconsistent, buggy, or 'random'... the problem usually isn't the model. It's the instruction architecture. The biggest unlock is understanding scope hierarchy: Global scope (coding standards, universal behavior), Project scope (stack, workflows, commands), Folder scope (local overrides for specific tasks). The nearest scope overrides everything above it. Another game-changing framework: WHAT (project context), WHY (engineering reasoning)."
+  },
+  {
+    "date": "2026-05-27",
+    "author": "Rohit",
+    "handle": "@rohit4verse",
+    "subject": "Post by Rohit on X",
+    "url": "https://x.com/rohit4verse/status/2059366212501696609",
+    "summary": "Rohit endorses a Databricks tech lead's 26-min talk at @aiDotEngineer on multi-agent coordination — argues agents break not because the model is dumb but because nothing coordinates them. 'One agent is a feature. Fifty is a distributed systems problem. Parallelism is cheap. Getting 300 agents to share one coherent brain is the entire game.' Quote tweets his own article on commanding 300 agents from one prompt.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "management"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "43.4K",
+    "notes": "",
+    "enriched": true,
+    "content": "A databricks tech lead just spent 26 minutes on the part of multi-agent nobody wants to say out loud: your agents don't break because the model is dumb. They break because nothing is coordinating them. One agent is a feature. Fifty is a distributed systems problem. Parallelism is cheap. Getting 300 agents to share one coherent brain is the entire game. Worth every minute @aiDotEngineer. Quote tweets own article: You're Not Slow. You're Single-Threaded: A Complete Guide on Commanding 300 Agents from One Prompt."
+  },
+  {
+    "date": "2026-05-27",
+    "author": "Theo - t3.gg",
+    "handle": "@theo",
+    "subject": "Post by Theo - t3.gg on X",
+    "url": "https://x.com/theo/status/2059352130289651925",
+    "summary": "Theo endorses DeepSWE, a new agentic coding benchmark released by Datacurve (Serena Ge). Claims it 'actually aligns with how it feels to use these models coding' — i.e. surfaces real divergence between top models where public leaderboards make them look close.",
+    "topics": [
+      "research",
+      "claude-code",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "242.6K",
+    "notes": "",
+    "enriched": true,
+    "content": "Theo: This is the first code bench that actually aligns with how it feels to use these models coding. Quote tweet of Serena Ge (Datacurve) announcing DeepSWE, a new standard for agentic coding benchmarks. 242.6K views."
+  },
+  {
+    "date": "2026-05-27",
+    "author": "Movez",
+    "handle": "@0xmovez",
+    "subject": "Post by Movez on X",
+    "url": "https://x.com/0xmovez/status/2059346354984612126",
+    "summary": "Pointer to an Anthropic engineer's 37-min workshop on shipping production-ready AI agents, framed around 3 building blocks: brain (persona) + hands (environment) + sessions, with a server-side loop so refreshes don't break state. Engagement-farm framing — quote tweets a longer companion guide on multi-agent orchestration on Claude.",
+    "topics": [
+      "agent-design",
+      "claude-code",
+      "management",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Anthropic AI engineer just dropped a live masterclass on how to ship a team of production-ready AI agents. 37 minutes. Free. 3 building blocks: brain, hands, sessions. Server-side loop so nothing breaks on refresh. Agent teams shipping to production 10-15x faster. Brain (persona) + hands (environment) + sessions = a production agent out of the box. Quote tweets Codez article: How to build a team of Claude agents in 10 steps: from one agent to 20 working in parallel."
+  },
+  {
+    "date": "2026-05-27",
+    "author": "Binfeng Xu",
+    "handle": "@billxbf",
+    "subject": "Post by Binfeng Xu on X",
+    "url": "https://x.com/billxbf/status/2059323616009838703",
+    "summary": "Release of Polar, an Agent RL rollout infrastructure for real-world harnesses. Takes existing harnesses (Codex, Claude Code, OpenClaw, Hermes, or custom) directly as training environments with no code changes — find a problem, design the harness, train your own agent.",
+    "topics": [
+      "agent-design",
+      "research",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "86.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "Excited to release Polar, our Agent RL rollout infra for real-world harnesses. Be it Codex, Claude Code, OpenClaw, Hermes, or your self-made ones - Polar takes your harnesses directly as training environments without code change. Find a problem, design the harness, and train your own agents! 86.3K views."
+  },
+  {
+    "date": "2026-05-27",
+    "author": "Tom Dörr",
+    "handle": "@tom_doerr",
+    "subject": "Post by Tom Dörr on X",
+    "url": "https://x.com/tom_doerr/status/2059316125049971017",
+    "summary": "Pointer to a 500-hour AI infrastructure engineering curriculum on GitHub (github.com/ai-infra-curriculum/ai-infra-engineer-learning). Self-study path for ML/AI infra skills.",
+    "topics": [
+      "dev-practices",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "80.9K",
+    "notes": "",
+    "enriched": true,
+    "content": "500-hour AI infrastructure engineering curriculum. github.com/ai-infra-curriculum/ai-infra-engineer-learning. 80.9K views."
+  },
+  {
+    "date": "2026-05-27",
+    "author": "刘醒",
+    "handle": "@xingxingli45573",
+    "subject": "Post by 刘醒 on X",
+    "url": "https://x.com/xingxingli45573/status/2059258034820706541",
+    "summary": "Highlights 'Taste Skill' — a Skill (20.3k GitHub stars) that improves AI-generated frontend UIs: better layout, fonts, animations, and whitespace for a premium feel. Offers preset directions (universal premium, minimalist, brutalism) plus an audit-and-fix variant for upgrading existing pages, and three tunable parameters for layout/animation/info-density. Includes a companion image skill to generate mockups before coding.",
+    "topics": [
+      "skills-mcp",
+      "claude-code",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Dug up another gem called Taste Skill - 20.3k stars on GitHub. Improves AI-generated frontend interfaces (layout, fonts, animations, whitespace). Multiple design directions: universal premium, minimalist, brutalism, plus audit-and-fix skill for revamping old projects. Image skill: have AI design mockups first, then hand to coding tools. Three tweakable parameters for layout, animation, info density."
+  },
+  {
+    "date": "2026-05-27",
+    "author": "Vaishnavi",
+    "handle": "@_vmlops",
+    "subject": "Post by Vaishnavi on X",
+    "url": "https://x.com/_vmlops/status/2059207888393138556",
+    "summary": "Microsoft open-sourced agent-governance-toolkit (github.com/microsoft/agent-governance-toolkit) — deterministic tool-call interception with a YAML policy engine (allow/deny/require human approval), zero-trust identity via SPIFFE/DID/mTLS, a 4-level execution sandbox with privilege rings, tamper-evident Merkle audit logs, and coverage of all OWASP Agentic Top 10 risks. Works with LangChain, CrewAI, AutoGen, OpenAI Agents SDK, Semantic Kernel, etc. Python/TS/Go/Rust/.NET. ALL CAPS engagement framing but the tool is real and substantive.",
+    "topics": [
+      "agent-design",
+      "skills-mcp",
+      "dev-practices",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "MICROSOFT OPEN-SOURCED A GOVERNANCE LAYER FOR YOUR AI AGENTS. Agent governance toolkit: intercepts every tool call in deterministic code, YAML policy engine (allow/deny/human approval), zero-trust identity via SPIFFE/DID/mTLS, 4-level execution sandbox with privilege rings, tamper-evident Merkle audit logs, covers all OWASP Agentic Top 10 risks. Works with LangChain, CrewAI, AutoGen, OpenAI Agents SDK, Semantic Kernel, and more. Python, TypeScript, Go, Rust, .NET supported. github.com/microsoft/agent-governance-toolkit."
+  },
+  {
     "date": "2026-05-25",
     "author": "darkzodchi",
     "handle": "@zodchiii",
