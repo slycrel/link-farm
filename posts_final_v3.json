@@ -1,5 +1,451 @@
 [
   {
+    "date": "2026-05-31",
+    "author": "darkzodchi",
+    "handle": "@zodchiii",
+    "subject": "Post by darkzodchi on X",
+    "url": "https://x.com/zodchiii/status/2061040686330257656",
+    "summary": "Quote tweet promoting @0x_rody's article on building Claude Code subagents in 15 minutes — each subagent is a markdown file with instructions and a prompt. Templates given for code reviewer, test writer, security scanner, and documentation generator. Engagement-framed but the underlying template approach is real.",
+    "topics": [
+      "claude-code",
+      "agent-design",
+      "skills-mcp",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "1M",
+    "notes": "",
+    "enriched": true,
+    "content": "Anthropic engineer: 'You can build 5 assistants in one afternoon.' Quote of @0x_rody article on Claude Code subagent template."
+  },
+  {
+    "date": "2026-05-31",
+    "author": "Mr. Buzzoni",
+    "handle": "@polydao",
+    "subject": "Post by Mr. Buzzoni on X",
+    "url": "https://x.com/polydao/status/2060964743402455212",
+    "summary": "Engagement-farmed thread (ALL CAPS hype) citing Karpathy's 'we're in the 1960s of AI' / software-3.0 framing and pointing at the author's own listicle article 'I Searched the Whole Claude Skills Ecosystem - These Are the Ones That Matter [Full GitHub Links]' — 32 Claude skills.",
+    "topics": [
+      "claude-code",
+      "skills-mcp",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "542.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "KARPATHY WAS RIGHT. 40-min YC lecture, software 3.0 LLMs as OS, 32 skills listicle."
+  },
+  {
+    "date": "2026-05-31",
+    "author": "恒星",
+    "handle": "@vintcessun",
+    "subject": "Post by 恒星 on X",
+    "url": "https://x.com/vintcessun/status/2060897802478293013",
+    "summary": "DeepMind open-sourced Science Skills (github.com/google-deepmind/science-skills) — 30+ scientific databases like AlphaGenome and UniProt packaged as agent skills. Each skill breaks API interactions into clear instructions + scripts so agents step through them instead of hallucinating. Installs via one npx line, plugs into Antigravity.",
+    "topics": [
+      "skills-mcp",
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "33.1K",
+    "notes": "",
+    "enriched": true,
+    "content": "DeepMind packaged 30+ scientific databases (AlphaGenome, UniProt) as agent skills. github.com/google-deepmind/science-skills"
+  },
+  {
+    "date": "2026-05-31",
+    "author": "Chesny",
+    "handle": "@chesnyfcb",
+    "subject": "Post by Chesny on X",
+    "url": "https://x.com/chesnyfcb/status/2060818732654481693",
+    "summary": "Hype thread (translated from Spanish) about a Karpathy-inspired '3D knowledge galaxy' note-taking system that someone replicated — 378 input notes produced 1854 nodes and 3856 connections. Frames Notion/Roam/Obsidian as inferior. Underlying idea (LLM-augmented note-graph that surfaces hidden connections) is interesting but post is engagement-bait.",
+    "topics": [
+      "general",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Karpathy second brain = 3D knowledge galaxy. 378 notes → 1854 nodes, 3856 connections. Anti-Notion/Roam/Obsidian."
+  },
+  {
+    "date": "2026-05-29",
+    "author": "0xSero",
+    "handle": "@0xsero",
+    "subject": "Post by 0xSero on X",
+    "url": "https://x.com/0xsero/status/2060128492247740640",
+    "summary": "Recommends Peter Steinberger's article at steipete.me titled 'Just Talk To It - the no-bs Way of Agentic Engineering' — pitches a conversational, no-ceremony workflow for working with coding agents rather than elaborate prompting scaffolds.",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "9.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "Peter Steinberger article 'Just Talk To It - the no-bs Way of Agentic Engineering' steipete.me"
+  },
+  {
+    "date": "2026-05-29",
+    "author": "Rohit Ghumare",
+    "handle": "@ghumare64",
+    "subject": "Post by Rohit Ghumare on X",
+    "url": "https://x.com/ghumare64/status/2060072412868235587",
+    "summary": "Long essay by Mike (linked) arguing that picking LangChain/LangGraph/OpenAI Agents SDK forces you to accept a bundled harness — turn state machine, provider routing, credential vault, policy engine, approval gates, budget tracker, hook fanout, context compaction, session trees, OpenTelemetry tracing — as one block. The case for composing them as workers on a shared bus with typed function contracts so teams stop rewriting harnesses from scratch.",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Agent harnesses are 15 separate concerns bundled together — case for composable workers on a shared bus with typed function contracts."
+  },
+  {
+    "date": "2026-05-29",
+    "author": "Yohei",
+    "handle": "@yoheinakajima",
+    "subject": "Post by Yohei on X",
+    "url": "https://x.com/yoheinakajima/status/2060068279574843614",
+    "summary": "Yohei Nakajima (BabyAGI) published his first arxiv paper: 'The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems' (arxiv.org/abs/2605.21997). Case for agents that coordinate through persistent replayable state — log-centric architecture you can audit and fork.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "16.8K",
+    "notes": "",
+    "enriched": true,
+    "content": "Yohei Nakajima arxiv paper on log-centric agent architecture — event-sourced reactive graphs, replayable state. arxiv.org/abs/2605.21997"
+  },
+  {
+    "date": "2026-05-29",
+    "author": "MacCallister Higgins",
+    "handle": "@macjshiggins",
+    "subject": "Post by MacCallister Higgins on X",
+    "url": "https://x.com/macjshiggins/status/2060045337679532174",
+    "summary": "MacCallister Higgins argues classical NASA systems engineering is the right model for developing code with LLMs — explicit requirements/specs docs make agents reliable at building, testing, and verifying complex codebases. Quote-tweet of an old joke about a model that regenerates the whole codebase from scratch each night against the requirements doc.",
+    "topics": [
+      "dev-practices",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "191.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "Classical NASA systems engineering is the perfect model for developing code with LLMs — explicit docs unlock complex codebases."
+  },
+  {
+    "date": "2026-05-29",
+    "author": "AVB",
+    "handle": "@neural_avb",
+    "subject": "Post by AVB on X",
+    "url": "https://x.com/neural_avb/status/2060032255620431877",
+    "summary": "Recommends a 45-min video on building synthetic datasets and training tiny ~100M-parameter local language models specialized for narrow tasks. Code, datasets, models, and eval harnesses linked in replies.",
+    "topics": [
+      "research",
+      "dev-practices"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "30.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "45-min video tutorial on creating synthetic datasets and training tiny 100M-parameter local LMs for narrow tasks."
+  },
+  {
+    "date": "2026-05-29",
+    "author": "Charly Wargnier",
+    "handle": "@datachaz",
+    "subject": "Post by Charly Wargnier on X",
+    "url": "https://x.com/datachaz/status/2059649544854327466",
+    "summary": "Charly Wargnier recommends Akshay Pachaar's 47-min walkthrough of Hermes Agent — a setup with self-evolving skills, three-tier memory, and GEPA optimization for autonomous agents running locally 24/7. Hype framing, but technique combo (self-evolving skills + tiered memory + GEPA) is current.",
+    "topics": [
+      "agent-design",
+      "skills-mcp",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "165.1K",
+    "notes": "",
+    "enriched": true,
+    "content": "Akshay Pachaar 47-min Hermes Agent walkthrough — self-evolving skills, three-tier memory, GEPA optimization, local autonomous agents."
+  },
+  {
+    "date": "2026-05-28",
+    "author": "Charly Wargnier",
+    "handle": "@datachaz",
+    "subject": "Post by Charly Wargnier on X",
+    "url": "https://x.com/datachaz/status/2059909626532155482",
+    "summary": "ALL CAPS hype thread about Microsoft's SkillOpt — an open-source optimizer loop that mutates agent skill prompts the same way you'd train a model: base model runs the task, optimizer rewrites the instructions, rejects edits that don't improve the benchmark. Claims SOTA over TextGrad and hand-crafted prompts; model-agnostic. Worth a look despite the framing.",
+    "topics": [
+      "skills-mcp",
+      "agent-design",
+      "prompting",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Microsoft open-sourced SkillOpt — automated mathematical optimizer loop for agent skill prompts. Beats TextGrad and hand-crafted prompts."
+  },
+  {
+    "date": "2026-05-28",
+    "author": "Muratcan Koylan",
+    "handle": "@koylanai",
+    "subject": "Post by Muratcan Koylan on X (orchestration)",
+    "url": "https://x.com/koylanai/status/2059753045060395240",
+    "summary": "Muratcan Koylan: his open-source Agent Skills for Context Engineering project was cited in 'Agent Harness Engineering: A Survey' on OpenReview (authors from CMU/Yale/Johns Hopkins/Amazon). Survey reviewed 170+ open-source projects and pulled lessons from OpenAI/Anthropic/LangChain. Core thesis: real-world agent performance = model capability + harness quality, and harness improvements (tool formats, sandboxes, automated verification loops) deliver the biggest wins on long-horizon tasks. Paper at picrew.github.io/LLM-Harness/. (Jeremy flagged this one as 'orchestration'.)",
+    "topics": [
+      "agent-design",
+      "research",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "37.5K",
+    "notes": "",
+    "enriched": true,
+    "content": "Agent Harness Engineering: A Survey — 170+ projects reviewed. Real-world agent perf = model + harness quality. picrew.github.io/LLM-Harness/"
+  },
+  {
+    "date": "2026-05-28",
+    "author": "Kyle Jeong",
+    "handle": "@kylejeong",
+    "subject": "Post by Kyle Jeong on X",
+    "url": "https://x.com/kylejeong/status/2059753008297394245",
+    "summary": "Kyle Jeong on iterative AutoResearch applied to browser skills — their /autobrowse skill gets 90% faster and cheaper after iterative self-improvement. Links to article 'Autobrowse: The Mythos moment for Browser Agents is here' arguing browser agents have an amnesia problem (re-discover every site from scratch) and how iterating on a real run fixes the discovery tax.",
+    "topics": [
+      "agent-design",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "217.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "Iterative AutoResearch on browser skills — /autobrowse gets 90% faster/cheaper. Fix for browser-agent amnesia."
+  },
+  {
+    "date": "2026-05-28",
+    "author": "Jerry Liu",
+    "handle": "@jerryjliu0",
+    "subject": "Post by Jerry Liu on X",
+    "url": "https://x.com/jerryjliu0/status/2059710330016817501",
+    "summary": "LlamaIndex shipped LiteParse v2 (github.com/run-llama/liteparse, blog at llamaindex.ai/blog/liteparse-v2-0-runs-everywhere) — a Rust rewrite of their PDF parser with native Python/Node packages and a WASM build for browser/edge. Claims fastest open-source model-free PDF parser, more accurate than pymupdf/pypdf/markitdown/pdftotext/pymupdf4llm, up to 100x faster, supports 50+ document types.",
+    "topics": [
+      "dev-practices",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "694.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "LlamaIndex LiteParse v2 — Rust rewrite, 100x faster, 50+ doc types, beats pymupdf/pypdf. github.com/run-llama/liteparse"
+  },
+  {
+    "date": "2026-05-28",
+    "author": "Livsun",
+    "handle": "@l1vsun",
+    "subject": "Post by Livsun on X",
+    "url": "https://x.com/l1vsun/status/2059707097583906917",
+    "summary": "Off-topic trading content — pitches Markov chains for market state transitions (trending/ranging/reversing) with claimed Renaissance Technologies framing. Engagement-farmed, not AI/dev material.",
+    "topics": [
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Markov chains for trading state transitions. Not AI/dev related."
+  },
+  {
+    "date": "2026-05-28",
+    "author": "John Yeo",
+    "handle": "@johnyeo_",
+    "subject": "Post by John Yeo on X (try it)",
+    "url": "https://x.com/johnyeo_/status/2059688796728267261",
+    "summary": "John Yeo (Stripe-style billing) describes an internal AI agent that automatically queries logs and investigates support tickets. Linked article covers how it works for a stateful domain (billing) where API outcomes depend on customer history. (Jeremy flagged this as 'try it'.)",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "28.9K",
+    "notes": "",
+    "enriched": true,
+    "content": "Internal AI agent that automatically queries logs and investigates support tickets — for stateful billing domain."
+  },
+  {
+    "date": "2026-05-28",
+    "author": "Dave Kline",
+    "handle": "@dklineii",
+    "subject": "Post by Dave Kline on X",
+    "url": "https://x.com/dklineii/status/2059634666030637286",
+    "summary": "Dave Kline on managing up: his biggest mistake as a manager was assuming his team's impact was visible to his boss and that he'd be 'more valuable if he just handled it.' Thread on what to do instead.",
+    "topics": [
+      "management"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "36.6K",
+    "notes": "",
+    "enriched": true,
+    "content": "Managing up — the biggest manager mistake is assuming your boss is plugged in. Thread on what to do instead."
+  },
+  {
+    "date": "2026-05-28",
+    "author": "Rahul",
+    "handle": "@sairahul1",
+    "subject": "Post by Rahul on X",
+    "url": "https://x.com/sairahul1/status/2059632149716942923",
+    "summary": "Engagement-farmed thread claiming Anthropic released a 'blueprint' for running a company with Claude Code where one human is CEO and AIs are employees that divide tasks. Underlying linked article is 'How to Build a SaaS MVP in One Afternoon Using 7 AI Agents.' The pattern is real (multi-agent dev workflows) but the framing is hype.",
+    "topics": [
+      "claude-code",
+      "agent-design",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "557.8K",
+    "notes": "",
+    "enriched": true,
+    "content": "Hype thread on Anthropic 'blueprint' — 1 human CEO + several AI employees. Article: build a SaaS MVP in one afternoon with 7 AI agents."
+  },
+  {
+    "date": "2026-05-28",
+    "author": "Paul Iusztin",
+    "handle": "@pauliusztin_",
+    "subject": "Post by Paul Iusztin on X",
+    "url": "https://x.com/pauliusztin_/status/2059613089260003387",
+    "summary": "Paul Iusztin breaks down Neo4j's three-layer agent memory system inside one graph: (1) short-term — active conversation as a linear chain of ordered messages; (2) long-term — persistent knowledge graph of entities, orgs, locations, preferences, facts, and relationships with embeddings on nodes so agents traverse connected knowledge rather than retrieve isolated chunks; (3) extraction lineage tying them together.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Neo4j agent memory: short-term conversation chain + long-term knowledge graph (entities/orgs/facts with embeddings) + extraction lineage."
+  },
+  {
+    "date": "2026-05-28",
+    "author": "Avi Chawla",
+    "handle": "@_avichawla",
+    "subject": "Post by Avi Chawla on X",
+    "url": "https://x.com/_avichawla/status/2059556157984006187",
+    "summary": "Avi Chawla explainer on RAG vs Graph RAG vs Agentic RAG. Standard RAG embeds chunks and retrieves by similarity — fine for direct lookups, fails on multi-hop queries. Graph RAG adds an LLM-extracted entity/relationship layer so retrieval traverses connections (e.g., 'checkout uses payments API' + 'payments API on cluster-3' + 'cluster-3 maintenance Friday' → answers 'will checkout be affected Friday?'). Agentic RAG adds an agent loop on top for planning multi-step retrieval.",
+    "topics": [
+      "agent-design",
+      "research",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "RAG vs Graph RAG vs Agentic RAG — Graph RAG extracts entities/relationships and traverses connections for multi-hop queries."
+  },
+  {
     "date": "2026-05-27",
     "author": "darkzodchi",
     "handle": "@zodchiii",
