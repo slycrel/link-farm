@@ -1,5 +1,136 @@
 [
   {
+    "date": "2026-06-03",
+    "author": "yv",
+    "handle": "@yvbbrjdr",
+    "subject": "Post by yv on X",
+    "url": "https://x.com/yvbbrjdr/status/2061914706579984551",
+    "summary": "Recommends the MAI-Thinking-1 technical paper from Microsoft as a near-complete recipe for training a SOTA LLM (translated from Chinese). Paper PDF: microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf.",
+    "topics": [
+      "research",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "128.9K",
+    "notes": "",
+    "enriched": true,
+    "content": "I recommend everyone read the technical paper of MAI-Thinking-1. It contains detailed (almost) all the details on how to train a SOTA LLM. https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf (Translated from Chinese)"
+  },
+  {
+    "date": "2026-06-03",
+    "author": "Thariq",
+    "handle": "@trq212",
+    "subject": "Post by Thariq on X",
+    "url": "https://x.com/trq212/status/2061907538741006796",
+    "summary": "Thariq hypes the new dynamic workflows feature in Claude Code as the biggest upgrade since skills and subagents, plugging his deep-dive article (quote-tweeted from his own thread). Especially excited about workflows enabling non-coding tasks like research, security analysis, agent teams, and code review natively inside Claude Code.",
+    "topics": [
+      "claude-code",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "779.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "Workflows are the biggest upgrade to Claude Code's capabilities since skills and subagents. I dove deep into it with @sidbid to figure out best practices, examples and more. I'm particularly excited about the non-technical tasks it enables for Claude Code. [Quote tweet of his own article: A harness for every task: dynamic workflows in Claude Code]"
+  },
+  {
+    "date": "2026-06-03",
+    "author": "Thariq",
+    "handle": "@trq212",
+    "subject": "Post by Thariq on X",
+    "url": "https://x.com/trq212/status/2061907337154367865",
+    "summary": "Anthropic article (linked from Thariq's tweet): 'A harness for every task: dynamic workflows in Claude Code'. Claude can now write its own harness on the fly, custom-built per task — the default Claude Code harness is coding-shaped but workflows let Claude solve research, security analysis, agent-team, and code-review tasks natively without external custom harnesses. Workflows are shareable/reusable. Caveat: they use more tokens and best practices are still developing.",
+    "topics": [
+      "claude-code",
+      "agent-design",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "1.6M",
+    "notes": "",
+    "enriched": true,
+    "content": "A harness for every task: dynamic workflows in Claude Code. Last week, we released dynamic workflows in Claude Code. Claude can now write its own harness on the fly, custom-built for the task at hand. While the default Claude Code harness is built for coding, it is also useful for many other types of tasks because, as it turns out, many tasks resemble coding tasks. But there are certain classes of tasks where we have had to build custom harnesses on top of Claude Code to achieve peak performance such as Research, security analysis, agent teams, or Code Review. Workflows allow you to dynamically create harnesses that enable Claude to solve all of those problems and more natively inside of Claude Code. You can also share and re-use these workflows with others. Best practices are still developing! Dynamic workflows often use more tokens."
+  },
+  {
+    "date": "2026-06-03",
+    "author": "Garry Tan",
+    "handle": "@garrytan",
+    "subject": "Post by Garry Tan on X",
+    "url": "https://x.com/garrytan/status/2061878212213572083",
+    "summary": "Garry Tan (YC) quote-tweets Factory's new model-routing feature with a controversial take: frontier labs will fight to make their AI harness the moat, but the consumer-best outcome is model capabilities flattening into commodity. Calls it a preview of the 'AI Harness Wars of 2027'. Factory Router claims 25% cost cuts at frontier performance.",
+    "topics": [
+      "industry",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "188.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "Model routing is an important thing. Controversial idea: the frontier labs will want their AI harness to be the moat, but ultimately the best case for consumers is that model capabilities flatten and commodify. Preview of the AI Harness Wars of 2027. [Quote: Factory introduces model routing, picks the right model per task, cuts costs 25%.]"
+  },
+  {
+    "date": "2026-06-03",
+    "author": "Livsun",
+    "handle": "@l1vsun",
+    "subject": "Post by Livsun on X",
+    "url": "https://x.com/l1vsun/status/2061876167687201243",
+    "summary": "[Engagement-farmed hype] Anonymous quant-trading flex: neural net trained on 11 years of tick data, 4200 data points/sec, 847K labeled setups, $40/mo server, claims 71% win rate over 90 days. No code, no paper, no repo — pure 'you're not losing because your analysis is wrong' bait. Skip.",
+    "topics": [
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "market opens at 9:30am, his trade was already in at 4am. neural net trained on 11 years of tick data. 4,200 data points per second, 847,000 labeled historical setups, running on a $40/mo server. last 90 days: 71% win rate, 2.3 avg risk/reward. he built his whole setup for under $500 using a free dataset and 3 weeks of evenings. edge was never hidden behind a paywall."
+  },
+  {
+    "date": "2026-06-03",
+    "author": "Tom Dörr",
+    "handle": "@tom_doerr",
+    "subject": "Post by Tom Dörr on X",
+    "url": "https://x.com/tom_doerr/status/2061674811122713013",
+    "summary": "FlowForge — a Claude skill that generates professional draw.io diagrams from natural language. Repo: github.com/wentong2022-arch/flowforge-skill. Drop-in skill for producing architecture/flow diagrams without manual diagramming.",
+    "topics": [
+      "skills-mcp",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "16.8K",
+    "notes": "",
+    "enriched": true,
+    "content": "Generates professional draw.io diagrams from natural language. https://github.com/wentong2022-arch/flowforge-skill"
+  },
+  {
     "date": "2026-05-31",
     "author": "darkzodchi",
     "handle": "@zodchiii",

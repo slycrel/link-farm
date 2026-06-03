@@ -1,27 +1,33 @@
 # AI Links Collection
-**Total Posts**: 587  
-**Date Range**: 2024-06-11 – 2026-05-31  
-**Enriched**: 587/587 (100%)
+**Total Posts**: 593  
+**Date Range**: 2024-06-11 – 2026-06-03  
+**Enriched**: 593/593 (100%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 280 | 47.7% |
-| claude-code | 143 | 24.4% |
-| dev-practices | 156 | 26.6% |
-| skills-mcp | 81 | 13.8% |
-| prompting | 76 | 12.9% |
-| research | 107 | 18.2% |
-| industry | 65 | 11.1% |
-| management | 93 | 15.8% |
-| questionable | 75 | 12.8% |
-| general | 76 | 12.9% |
+| agent-design | 283 | 47.7% |
+| claude-code | 145 | 24.5% |
+| dev-practices | 157 | 26.5% |
+| skills-mcp | 82 | 13.8% |
+| prompting | 77 | 13.0% |
+| research | 108 | 18.2% |
+| industry | 67 | 11.3% |
+| management | 93 | 15.7% |
+| questionable | 76 | 12.8% |
+| general | 76 | 12.8% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-06-03 | yv | research | Recommends the MAI-Thinking-1 technical paper from Microsoft as a near... |
+| 2026-06-03 | Thariq | claude-code | Thariq hypes the new dynamic workflows feature in Claude Code as the b... |
+| 2026-06-03 | Thariq | claude-code | Anthropic article (linked from Thariq's tweet): 'A harness for every t... |
+| 2026-06-03 | Garry Tan | industry | Garry Tan (YC) quote-tweets Factory's new model-routing feature with a... |
+| 2026-06-03 | Livsun | questionable | [Engagement-farmed hype] Anonymous quant-trading flex: neural net trai... |
+| 2026-06-03 | Tom Dörr | skills-mcp | FlowForge — a Claude skill that generates professional draw.io diagram... |
 | 2026-05-31 | darkzodchi | claude-code | Quote tweet promoting @0x_rody's article on building Claude Code subag... |
 | 2026-05-31 | Mr. Buzzoni | claude-code | Engagement-farmed thread (ALL CAPS hype) citing Karpathy's 'we're in t... |
 | 2026-05-31 | 恒星 | skills-mcp | DeepMind open-sourced Science Skills (github.com/google-deepmind/scien... |
@@ -66,17 +72,17 @@
 | 2026-05-22 | Ahmad | research | Ahmad recommends the free 'LLMs 101: A Practical Guide (2026 Edition)'... |
 | 2026-05-22 | swyx | claude-code | swyx is building a skill that takes a vibecoded slop app and turns it... |
 | 2026-05-22 | Mnimiy | claude-code | Field report from Code with Claude London: Boris Cherny, Ravi Trivedi,... |
-| 2026-05-22 | BOOTOSHI | claude-code | BOOTOSHI shared his 'directional-prompting' skill (github.com/kingboot... |
-| 2026-05-22 | Dan Shipper | management | Dan Shipper (Every) report 'After Automation' (every.to/p/after-automa... |
-| 2026-05-22 | Alex Prompter | agent-design | Proposed anatomy of a 'SOUL.md' agent identity file with 9 sections: I... |
-| 2026-05-22 | Dave Kline | management | Generic management influencer post teasing a '5-step system' for deleg... |
-| 2026-05-22 | Akshay | claude-code | Listicle of 12 features that make Claude Code a programmable dev envir... |
-| 2026-05-22 | Khairallah AL-Awady | claude-code | Hype-style summary of a Boris Cherny (Claude Code creator) podcast app... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (280)
+### Agent Design (283)
+
+- [Thariq](https://x.com/trq212/status/2061907538741006796) — 2026-06-03: Thariq hypes the new dynamic workflows feature in Claude Code as the biggest upgrade since skills and subagents, plugging his deep-dive article (quote-tweeted from his own thread). Especially excited about workflows enabling non-coding tasks like research, security analysis, agent teams, and code review natively inside Claude Code.
+
+- [Thariq](https://x.com/trq212/status/2061907337154367865) — 2026-06-03: Anthropic article (linked from Thariq's tweet): 'A harness for every task: dynamic workflows in Claude Code'. Claude can now write its own harness on the fly, custom-built per task — the default Claude Code harness is coding-shaped but workflows let Claude solve research, security analysis, agent-team, and code-review tasks natively without external custom harnesses. Workflows are shareable/reusable. Caveat: they use more tokens and best practices are still developing.
+
+- [Garry Tan](https://x.com/garrytan/status/2061878212213572083) — 2026-06-03: Garry Tan (YC) quote-tweets Factory's new model-routing feature with a controversial take: frontier labs will fight to make their AI harness the moat, but the consumer-best outcome is model capabilities flattening into commodity. Calls it a preview of the 'AI Harness Wars of 2027'. Factory Router claims 25% cost cuts at frontier performance.
 
 - [darkzodchi](https://x.com/zodchiii/status/2061040686330257656) — 2026-05-31: Quote tweet promoting @0x_rody's article on building Claude Code subagents in 15 minutes — each subagent is a markdown file with instructions and a prompt. Templates given for code reviewer, test writer, security scanner, and documentation generator. Engagement-framed but the underlying template approach is real.
 
@@ -638,7 +644,11 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Claude Code (143)
+### Claude Code (145)
+
+- [Thariq](https://x.com/trq212/status/2061907538741006796) — 2026-06-03: Thariq hypes the new dynamic workflows feature in Claude Code as the biggest upgrade since skills and subagents, plugging his deep-dive article (quote-tweeted from his own thread). Especially excited about workflows enabling non-coding tasks like research, security analysis, agent teams, and code review natively inside Claude Code.
+
+- [Thariq](https://x.com/trq212/status/2061907337154367865) — 2026-06-03: Anthropic article (linked from Thariq's tweet): 'A harness for every task: dynamic workflows in Claude Code'. Claude can now write its own harness on the fly, custom-built per task — the default Claude Code harness is coding-shaped but workflows let Claude solve research, security analysis, agent-team, and code-review tasks natively without external custom harnesses. Workflows are shareable/reusable. Caveat: they use more tokens and best practices are still developing.
 
 - [darkzodchi](https://x.com/zodchiii/status/2061040686330257656) — 2026-05-31: Quote tweet promoting @0x_rody's article on building Claude Code subagents in 15 minutes — each subagent is a markdown file with instructions and a prompt. Templates given for code reviewer, test writer, security scanner, and documentation generator. Engagement-framed but the underlying template approach is real.
 
@@ -926,7 +936,9 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (156)
+### Dev Practices (157)
+
+- [Tom Dörr](https://x.com/tom_doerr/status/2061674811122713013) — 2026-06-03: FlowForge — a Claude skill that generates professional draw.io diagrams from natural language. Repo: github.com/wentong2022-arch/flowforge-skill. Drop-in skill for producing architecture/flow diagrams without manual diagramming.
 
 - [0xSero](https://x.com/0xsero/status/2060128492247740640) — 2026-05-29: Recommends Peter Steinberger's article at steipete.me titled 'Just Talk To It - the no-bs Way of Agentic Engineering' — pitches a conversational, no-ceremony workflow for working with coding agents rather than elaborate prompting scaffolds.
 
@@ -1240,7 +1252,9 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (81)
+### Skills & MCP (82)
+
+- [Tom Dörr](https://x.com/tom_doerr/status/2061674811122713013) — 2026-06-03: FlowForge — a Claude skill that generates professional draw.io diagrams from natural language. Repo: github.com/wentong2022-arch/flowforge-skill. Drop-in skill for producing architecture/flow diagrams without manual diagramming.
 
 - [darkzodchi](https://x.com/zodchiii/status/2061040686330257656) — 2026-05-31: Quote tweet promoting @0x_rody's article on building Claude Code subagents in 15 minutes — each subagent is a markdown file with instructions and a prompt. Templates given for code reviewer, test writer, security scanner, and documentation generator. Engagement-framed but the underlying template approach is real.
 
@@ -1404,7 +1418,9 @@
 
 - [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Anthropic released a frontend-design plugin for Claude Code — demo shows Claude creating a music player app. Install via /plugin marketplace add anthropics/claude-code and /plugin install frontend-design@claude-code-plugins.
 
-### Prompting (76)
+### Prompting (77)
+
+- [Thariq](https://x.com/trq212/status/2061907337154367865) — 2026-06-03: Anthropic article (linked from Thariq's tweet): 'A harness for every task: dynamic workflows in Claude Code'. Claude can now write its own harness on the fly, custom-built per task — the default Claude Code harness is coding-shaped but workflows let Claude solve research, security analysis, agent-team, and code-review tasks natively without external custom harnesses. Workflows are shareable/reusable. Caveat: they use more tokens and best practices are still developing.
 
 - [Charly Wargnier](https://x.com/datachaz/status/2059909626532155482) — 2026-05-28: ALL CAPS hype thread about Microsoft's SkillOpt — an open-source optimizer loop that mutates agent skill prompts the same way you'd train a model: base model runs the task, optimizer rewrites the instructions, rejects edits that don't improve the benchmark. Claims SOTA over TextGrad and hand-crafted prompts; model-agnostic. Worth a look despite the framing.
 
@@ -1558,7 +1574,9 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
 
-### Research (107)
+### Research (108)
+
+- [yv](https://x.com/yvbbrjdr/status/2061914706579984551) — 2026-06-03: Recommends the MAI-Thinking-1 technical paper from Microsoft as a near-complete recipe for training a SOTA LLM (translated from Chinese). Paper PDF: microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf.
 
 - [恒星](https://x.com/vintcessun/status/2060897802478293013) — 2026-05-31: DeepMind open-sourced Science Skills (github.com/google-deepmind/science-skills) — 30+ scientific databases like AlphaGenome and UniProt packaged as agent skills. Each skill breaks API interactions into clear instructions + scripts so agents step through them instead of hallucinating. Installs via one npx line, plugs into Antigravity.
 
@@ -1774,7 +1792,11 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: 15-part thread explaining the 'stunning, simple explanation behind matrix multiplication' — breaks down the most crucial idea behind modern machine learning. 1M views.
 
-### Industry (65)
+### Industry (67)
+
+- [yv](https://x.com/yvbbrjdr/status/2061914706579984551) — 2026-06-03: Recommends the MAI-Thinking-1 technical paper from Microsoft as a near-complete recipe for training a SOTA LLM (translated from Chinese). Paper PDF: microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf.
+
+- [Garry Tan](https://x.com/garrytan/status/2061878212213572083) — 2026-06-03: Garry Tan (YC) quote-tweets Factory's new model-routing feature with a controversial take: frontier labs will fight to make their AI harness the moat, but the consumer-best outcome is model capabilities flattening into commodity. Calls it a preview of the 'AI Harness Wars of 2027'. Factory Router claims 25% cost cuts at frontier performance.
 
 - [Jerry Liu](https://x.com/jerryjliu0/status/2059710330016817501) — 2026-05-28: LlamaIndex shipped LiteParse v2 (github.com/run-llama/liteparse, blog at llamaindex.ai/blog/liteparse-v2-0-runs-everywhere) — a Rust rewrite of their PDF parser with native Python/Node packages and a WASM build for browser/edge. Claims fastest open-source model-free PDF parser, more accurate than pymupdf/pypdf/markitdown/pdftotext/pymupdf4llm, up to 100x faster, supports 50+ document types.
 
@@ -2094,7 +2116,9 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
 
-### Questionable (75)
+### Questionable (76)
+
+- [Livsun](https://x.com/l1vsun/status/2061876167687201243) — 2026-06-03: [Engagement-farmed hype] Anonymous quant-trading flex: neural net trained on 11 years of tick data, 4200 data points/sec, 847K labeled setups, $40/mo server, claims 71% win rate over 90 days. No code, no paper, no repo — pure 'you're not losing because your analysis is wrong' bait. Skip.
 
 - [darkzodchi](https://x.com/zodchiii/status/2061040686330257656) — 2026-05-31: Quote tweet promoting @0x_rody's article on building Claude Code subagents in 15 minutes — each subagent is a markdown file with instructions and a prompt. Templates given for code reviewer, test writer, security scanner, and documentation generator. Engagement-framed but the underlying template approach is real.
 
@@ -2410,6 +2434,26 @@
 
 ---
 ## Full Chronological List
+
+### Jun 2026
+
+- **2026-06-03** | [yv](https://x.com/yvbbrjdr/status/2061914706579984551) | research, industry
+  Recommends the MAI-Thinking-1 technical paper from Microsoft as a near-complete recipe for training a SOTA LLM (translated from Chinese). Paper PDF: microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf.
+
+- **2026-06-03** | [Thariq](https://x.com/trq212/status/2061907538741006796) | claude-code, agent-design
+  Thariq hypes the new dynamic workflows feature in Claude Code as the biggest upgrade since skills and subagents, plugging his deep-dive article (quote-tweeted from his own thread). Especially excited about workflows enabling non-coding tasks like research, security analysis, agent teams, and code review natively inside Claude Code.
+
+- **2026-06-03** | [Thariq](https://x.com/trq212/status/2061907337154367865) | claude-code, agent-design, prompting
+  Anthropic article (linked from Thariq's tweet): 'A harness for every task: dynamic workflows in Claude Code'. Claude can now write its own harness on the fly, custom-built per task — the default Claude Code harness is coding-shaped but workflows let Claude solve research, security analysis, agent-team, and code-review tasks natively without external custom harnesses. Workflows are shareable/reusable. Caveat: they use more tokens and best practices are still developing.
+
+- **2026-06-03** | [Garry Tan](https://x.com/garrytan/status/2061878212213572083) | industry, agent-design
+  Garry Tan (YC) quote-tweets Factory's new model-routing feature with a controversial take: frontier labs will fight to make their AI harness the moat, but the consumer-best outcome is model capabilities flattening into commodity. Calls it a preview of the 'AI Harness Wars of 2027'. Factory Router claims 25% cost cuts at frontier performance.
+
+- **2026-06-03** | [Livsun](https://x.com/l1vsun/status/2061876167687201243) | questionable
+  [Engagement-farmed hype] Anonymous quant-trading flex: neural net trained on 11 years of tick data, 4200 data points/sec, 847K labeled setups, $40/mo server, claims 71% win rate over 90 days. No code, no paper, no repo — pure 'you're not losing because your analysis is wrong' bait. Skip.
+
+- **2026-06-03** | [Tom Dörr](https://x.com/tom_doerr/status/2061674811122713013) | skills-mcp, dev-practices
+  FlowForge — a Claude skill that generates professional draw.io diagrams from natural language. Repo: github.com/wentong2022-arch/flowforge-skill. Drop-in skill for producing architecture/flow diagrams without manual diagramming.
 
 ### May 2026
 
