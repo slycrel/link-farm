@@ -1,5 +1,497 @@
 [
   {
+    "date": "2026-06-09",
+    "author": "Paweł Huryn",
+    "handle": "@pawelhuryn",
+    "subject": "Post by Paweł Huryn on X",
+    "url": "https://x.com/pawelhuryn/status/2064201950980096078",
+    "summary": "Lists six patterns for Anthropic-style dynamic agent workflows/loops: classify-and-act, fan-out-and-synthesize, adversarial verification, generate-and-filter, tournament (compare), and loop-until-done — each with a concrete example. Links his 'Claude Dynamic Workflows' guide.",
+    "topics": [
+      "agent-design",
+      "claude-code",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Six patterns for dynamic workflows/loops (Anthropic): 1) Classify-and-act; 2) Fan-out-and-synthesize; 3) Adversarial verification; 4) Generate-and-filter; 5) Tournament (compare); 6) Loop-until-done. Links 'Claude Dynamic Workflows: The Ultimate Guide' — ran 113 agents, 1.95M tokens."
+  },
+  {
+    "date": "2026-06-09",
+    "author": "hoeem",
+    "handle": "@hooeem",
+    "subject": "Post by hoeem on X",
+    "url": "https://x.com/hooeem/status/2064099329342640285",
+    "summary": "Enthusiastic boost of Matt Pocock's new /teach skill — a Claude skill distilling his teaching experience that can teach you anything (demoed by teaching him to solve a Rubik's cube).",
+    "topics": [
+      "skills-mcp",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Excited about a skill — best skill ever for the perpetually curious. Quotes Matt Pocock: poured 10 years of teaching experience into a skill called /teach that can teach you anything; taught him to solve a Rubik's cube."
+  },
+  {
+    "date": "2026-06-09",
+    "author": "Jeff Tang",
+    "handle": "@jefftangx",
+    "subject": "Post by Jeff Tang on X",
+    "url": "https://x.com/jefftangx/status/2064052420888363090",
+    "summary": "[Off-topic for AI] Points to a 57-page Google Doc summarizing peptides such as BPC-157 and the human trials done so far. Health/biohacking content, not AI/tech.",
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "119.8K",
+    "notes": "",
+    "enriched": true,
+    "content": "This guy on Reddit dropped a 57-page Google Doc summarizing peptides like BPC-157 and all human trials done so far. Link below. Bookmark this."
+  },
+  {
+    "date": "2026-06-09",
+    "author": "BOOTOSHI",
+    "handle": "@kingbootoshi",
+    "subject": "Post by BOOTOSHI 👑 on X",
+    "url": "https://x.com/kingbootoshi/status/2063999432077795579",
+    "summary": "Personal write-up arguing that with new-gen models (GPT-5.5, Opus 4.8) a single long 'mega thread' now beats subagent orchestration / 'token-maxxing' / 'productivity theatre' for coding, because of bigger context windows and higher intelligence — older models (Opus 4.5, GPT-5) still needed task decomposition.",
+    "topics": [
+      "agent-design",
+      "claude-code",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Fucked up my sleep over a new AI workflow but worth it. Best coding workflow after trial and error with 'productivity theatre' (subagents to token-maxx). Worked with older models (opus 4.5, gpt 5) but new gen (gpt 5.5, opus 4.8) are more capable by themselves in one MEGA THREAD due to extended context + intelligence."
+  },
+  {
+    "date": "2026-06-09",
+    "author": "Peter Yang",
+    "handle": "@petergyang",
+    "subject": "Post by Peter Yang on X",
+    "url": "https://x.com/petergyang/status/2063988122720055772",
+    "summary": "Five takeaways from Kun Chen (ex-Meta L8) on his agentic-engineering system: spend most time planning/validating not coding; plan quality determines how long agents run autonomously; use visual HTML plans not walls of markdown — via his free open-source tool Lavish (github.com/kunchenguid/lavish-axi).",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "management"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "5 takeaways from Kun Chen (ex-Meta L8): 1) spend time planning/validating not coding — you're manager of an always-on eng team; 2) plan quality determines how long agents work alone; 3) use visual plans not markdown walls — Lavish open-source tool github.com/kunchenguid/lavish-axi turns plans into visual HTML."
+  },
+  {
+    "date": "2026-06-09",
+    "author": "Ahmad",
+    "handle": "@theahmadosman",
+    "subject": "Post by Ahmad on X",
+    "url": "https://x.com/theahmadosman/status/2063935919481106560",
+    "summary": "Detailed self-study roadmap for LLM inference/serving internals: serving engines (vLLM/PagedAttention, SGLang/RadixAttention, TensorRT-LLM FP8/FP4, FlashInfer), down-the-stack study (Triton, CUTLASS/CuTe, FlashAttention & PagedAttention papers, MoE, Nsight profiling), and a hands-on mini-project sequence (RMSNorm in Triton, fused SiLU, FP16 matmul vs cuBLAS, paged KV lookup).",
+    "topics": [
+      "research",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "How to learn LLM serving: 1) serving engines — vLLM (PagedAttention, continuous batching, prefix caching), SGLang (RadixAttention, speculative decoding, MoE), TensorRT-LLM (FP8/FP4, disaggregated serving), FlashInfer. 2) down the stack — Triton, CUTLASS/CuTe, FlashAttention/PagedAttention papers, MoE, Nsight. 3) mini-projects: RMSNorm in Triton, fused SiLU, FP16 matmul, paged KV lookup."
+  },
+  {
+    "date": "2026-06-09",
+    "author": "rody",
+    "handle": "@0x_rody",
+    "subject": "Post by rody on X",
+    "url": "https://x.com/0x_rody/status/2063722061126651935",
+    "summary": "Near-duplicate of the darkzodchi post: quotes an 'Anthropic manager' that nobody types prompts from scratch and commands should live in the project; links the same Claude Code slash-command-library template/talk.",
+    "topics": [
+      "questionable",
+      "claude-code",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "250.1K",
+    "notes": "",
+    "enriched": true,
+    "content": "Anthropic's main manager: 'Nobody types prompts from scratch. The commands should be live in the project.' 26-min talk on how Anthropic runs Claude Code and the command library every new dev inherits. Links article 'How to Build a Claude Code Slash Command Library.'"
+  },
+  {
+    "date": "2026-06-08",
+    "author": "darkzodchi",
+    "handle": "@zodchiii",
+    "subject": "Post by darkzodchi on X",
+    "url": "https://x.com/zodchiii/status/2063559498078278109",
+    "summary": "Quotes 'Anthropic engineer Margot van Laer': any prompt you type more than twice should be a saved file. Links a template/article on building a Claude Code slash-command library; 33-min talk on reusable prompt patterns.",
+    "topics": [
+      "claude-code",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Anthropic engineer Margot van Laer: 'Every prompt you type more than twice should be a file. The ones we use internally aren't memorized, they're saved.' 33-min talk on prompt patterns Anthropic packages and reuses. Links rody article 'How to Build a Claude Code Slash Command Library.'"
+  },
+  {
+    "date": "2026-06-08",
+    "author": "Rahul",
+    "handle": "@sairahul1",
+    "subject": "Post by Rahul on X",
+    "url": "https://x.com/sairahul1/status/2063544956158185927",
+    "summary": "Full text of the 'Harness Engineering: What Every AI Engineer Needs to Know in 2026' guide: defines Agent = Model + Harness (per ThoughtWorks), cites a small OpenAI team shipping 1M lines of agent-written code in Feb 2026 and recent Anthropic papers, and frames harness engineering as the new core discipline.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "1M",
+    "notes": "",
+    "enriched": true,
+    "content": "Harness Engineering article. Feb 2026 a small OpenAI team shipped 1M lines of production code, AI agents wrote it, humans designed the system. Anthropic published 3 papers, ThoughtWorks formalized a framework. Agent = Model + Harness."
+  },
+  {
+    "date": "2026-06-08",
+    "author": "rari",
+    "handle": "@0xwhrrari",
+    "subject": "Post by rari on X",
+    "url": "https://x.com/0xwhrrari/status/2063244577482440978",
+    "summary": "Engagement-farmed but useful link dump of free AI-engineering learning resources (LangChain agent architecture, Anthropic's Claude Code 101 / in-action courses, claude.com prompt-engineering docs, anthropics/courses interactive tutorial, CLAUDE.md/memory, skills, MCP, routines docs).",
+    "topics": [
+      "questionable",
+      "claude-code",
+      "skills-mcp",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Quotes Google's former CEO. Free resources: LangChain agent architecture, Claude Code 101 (anthropic.skilljar.com), prompt engineering (platform.claude.com docs), interactive prompt course (github.com/anthropics/courses), CLAUDE.md+memory, skills, MCP, routines (code.claude.com/docs)."
+  },
+  {
+    "date": "2026-06-07",
+    "author": "Rahul",
+    "handle": "@sairahul1",
+    "subject": "Post by Rahul on X",
+    "url": "https://x.com/sairahul1/status/2063609922667815064",
+    "summary": "Recommends a free site to learn 'harness engineering' (walkinglabs.github.io/learn-harness-engineering), a term most AI engineers haven't encountered; paired with his longer Harness Engineering guide.",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "432.2K",
+    "notes": "",
+    "enriched": true,
+    "content": "Best site on the internet to learn harness engineering. Free. walkinglabs.github.io/learn-harness-engineering/en/ . Quotes his article 'Harness Engineering: What Every AI Engineer Needs to Know in 2026.'"
+  },
+  {
+    "date": "2026-06-07",
+    "author": "Viv",
+    "handle": "@vtrivedy10",
+    "subject": "Post by Viv on X",
+    "url": "https://x.com/vtrivedy10/status/2063429138304668093",
+    "summary": "Default recipe for optimizing Agent = Model + Harness: (1) build v1 with a sensible base harness plus task-specific prompting/tools, (2) harness engineering against prod-like eval tasks, (3) SFT from mined traces or synthetic data (good for distilling a cheaper model), (4) RL if you can build environments/rewards, (5) light harness tweaks to finish.",
+    "topics": [
+      "agent-design",
+      "research",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Recipe to optimize Agent = Model + Harness: 1) build v1 with base harness + task prompting/tools; 2) harness engineering with eval tasks matching prod; 3) SFT from traces or synthetic data (distillation to cheaper model); 4) RL if bandwidth to build environments/rewards; 5) light harness engineering again."
+  },
+  {
+    "date": "2026-06-07",
+    "author": "Elon Musk",
+    "handle": "@elonmusk",
+    "subject": "Post by Elon Musk on X ( worth a look)",
+    "url": "https://x.com/elonmusk/status/2063401522327666828",
+    "summary": "[Jeremy flagged: 'worth a look'] Endorses Eric Jorgenson's writeup of Elon's 'Magic Wand Number' and 'Idiot Index' — first-principles / 'physics thinking in the limit' mental models presented as universally applicable across industries.",
+    "topics": [
+      "management",
+      "general"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "7.3M",
+    "notes": "worth a look",
+    "enriched": true,
+    "content": "Helpful tool for improvement. It's just physics thinking in the limit. Quotes Eric Jorgenson: everyone can use Elon's 'Magic Wand Number' and 'Idiot Index' — universal ideas, helpful in any industry."
+  },
+  {
+    "date": "2026-06-07",
+    "author": "Hanako",
+    "handle": "@hanakoxbt",
+    "subject": "Post by Hanako on X",
+    "url": "https://x.com/hanakoxbt/status/2063305395687522702",
+    "summary": "Engagement-styled summary of an Anthropic memory pattern: 'dreaming' agents that reopen your sessions after you log off to fact-check the primary agents, merge duplicates, and prune stale memory (up to 100 per session, ~95% of tokens cached). Links a Claude agent-team setup article (writer/reviewer/deployer).",
+    "topics": [
+      "questionable",
+      "agent-design",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "328.8K",
+    "notes": "",
+    "enriched": true,
+    "content": "Anthropic engineer: agent doesn't remember anything, so built a second set of agents whose job is to 'dream' about the first ones — reopen every session after logoff, fact-check, merge duplicates, burn stale. One dreaming agent per session, up to 100 at once. 95% tokens cached. Links Claude agent team article."
+  },
+  {
+    "date": "2026-06-07",
+    "author": "Ihtesham Ali",
+    "handle": "@ihtesham2005",
+    "subject": "Post by Ihtesham Ali on X (worth a read)",
+    "url": "https://x.com/ihtesham2005/status/2063297401344147719",
+    "summary": "[Jeremy flagged: 'worth a read' — off-topic for AI] Story of 'The Art of Problem Solving' (AoPS) by Sandor Lehoczky and Richard Rusczyk, the 1993 training manual behind a generation of US Math Olympiad competitors. Math-education history rather than AI/tech.",
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "worth a read",
+    "enriched": true,
+    "content": "Two math olympiad champions (Sandor Lehoczky, Richard Rusczyk) wrote a 1993 training manual, The Art of Problem Solving (AoPS). Since 2015 every US IMO team member has been an AoPS student. The book teaches how to think, not memorize."
+  },
+  {
+    "date": "2026-06-07",
+    "author": "Sprytix",
+    "handle": "@sprytixl",
+    "subject": "Post by Sprytix on X",
+    "url": "https://x.com/sprytixl/status/2063234969510588640",
+    "summary": "Engagement-farmed claim that a Chinese professor runs a 170-agent dev team making 'every company decision' on Kimi K2.6 with one prompt; links an article on running 300 parallel agents. Hype framing, thin substance — flagging as questionable, with an industry/agent angle.",
+    "topics": [
+      "questionable",
+      "agent-design",
+      "industry"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Chinese professor revealed dev team of 170 AI agents making every company decision. Kimi K2.6 runs all with one prompt, each gets a task. What took a department two weeks now takes two hours. Article: 'Kimi K2.6 runs 300 parallel agents.'"
+  },
+  {
+    "date": "2026-06-06",
+    "author": "Dan Roy",
+    "handle": "@roydanroy",
+    "subject": "Post by Dan Roy on X",
+    "url": "https://x.com/roydanroy/status/2062917394356429092",
+    "summary": "Quotes Markus Buehler (MIT) on a breakthrough in self-evolving 'AI scientists' that move from search to principled discovery — an AI that perceives shifts in the search space itself without intervention. (Roy's own comment is a category-theory in-joke.)",
+    "topics": [
+      "research",
+      "agent-design"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "451.4K",
+    "notes": "",
+    "enriched": true,
+    "content": "Joke about category theory. Quotes Markus J. Buehler (MIT): breakthrough in self-evolving AI scientists moving from 'search' to 'principled discovery' — search space itself changes and AI perceives the shift without intervention."
+  },
+  {
+    "date": "2026-06-06",
+    "author": "海拉鲁编程客 (hylarucoder)",
+    "handle": "@hylarucoder",
+    "subject": "Post by 海拉鲁编程客 on X",
+    "url": "https://x.com/hylarucoder/status/2062881239900766292",
+    "summary": "Recommends Peter Pang's (intuitiveml) article on building cloud agent infrastructure: most agent frameworks assume a desktop (one user/machine/process) and break in the cloud where filesystem, API-key handling, and orchestration must change.",
+    "topics": [
+      "agent-design",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "180.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "'Best agent infrastructure article I've read recently' — quotes Peter Pang 'Building cloud agent infrastructure: what's different, and what we learned.' Most agent frameworks assume a desktop: one user, one machine, one process. Cloud changes filesystem, API keys in env vars, etc."
+  },
+  {
+    "date": "2026-06-06",
+    "author": "Cat Wu (Anthropic)",
+    "handle": "@_catwu",
+    "subject": "Post by cat on X",
+    "url": "https://x.com/_catwu/status/2062408623565984209",
+    "summary": "Anthropic's data team automated ~95% of business-analytics queries with Claude; blog post covers their approach to evals, ablations, and online validation when building data-analysis agents (claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude).",
+    "topics": [
+      "claude-code",
+      "agent-design",
+      "dev-practices",
+      "management"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "875.8K",
+    "notes": "",
+    "enriched": true,
+    "content": "Excited to share how Anthropic's data team automated 95% of business analytics queries with Claude. Blog covers evals, ablations, online validation, skills, data foundations. claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude"
+  },
+  {
+    "date": "2026-06-04",
+    "author": "hoeem",
+    "handle": "@hooeem",
+    "subject": "Post by hoeem on X",
+    "url": "https://x.com/hooeem/status/2062443798647517197",
+    "summary": "Engagement-styled '100x cheaper' guide on cutting token waste in agentic orchestration loops; some practical substance on reducing repeated token spend in agent workflows behind the hype framing.",
+    "topics": [
+      "questionable",
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "14.5K",
+    "notes": "",
+    "enriched": true,
+    "content": "A complete breakdown on how to make your agentic workflows 100x+ cheaper. Your agentic workflows waste tokens repeatedly for an orchestration loop; here's how to fix it."
+  },
+  {
+    "date": "2026-06-04",
+    "author": "さいぺ (cipepser)",
+    "handle": "@cipepser",
+    "subject": "Post by さいぺ on X",
+    "url": "https://x.com/cipepser/status/2062397559520502225",
+    "summary": "Recommends mem0's article 'State of Memory in Agent Harness' (mem0ai) — a well-organized survey of agent-memory papers and benchmarks plus how memory is implemented across coding agents (Cursor, Devin, Claude Code, Codex).",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "48.6K",
+    "notes": "",
+    "enriched": true,
+    "content": "Praises mem0 'State of Memory in Agent Harness' article: overview of papers/benchmarks in agent memory field and implementations in each coding agent (Cursor, Devin, Claude Code, Codex)."
+  },
+  {
+    "date": "2026-06-04",
+    "author": "Ole Lehmann",
+    "handle": "@itsolelehmann",
+    "subject": "Post by Ole Lehmann on X",
+    "url": "https://x.com/itsolelehmann/status/2061911202830401564",
+    "summary": "Workflow to turn saved X bookmarks into an agent-readable 'second brain': export bookmarks with the free twitter-web-exporter userscript or BookmarkSave extension, drop the file into an Obsidian/LLM-wiki folder, then point an agent (Claude Code, Codex) at it to convert each bookmark into a tagged markdown note you can query.",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Turn every X bookmark into a second brain: 1) export bookmarks via twitter-web-exporter userscript or BookmarkSave extension; 2) drop file into obsidian/llm wiki folder; 3) point agent (claude code/codex) at folder, tell it to turn each bookmark into a markdown note with link + topic tags. Then query 'what have i saved about pricing'. ~10 min."
+  },
+  {
     "date": "2026-06-03",
     "author": "yv",
     "handle": "@yvbbrjdr",
