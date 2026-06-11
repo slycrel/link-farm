@@ -1,5 +1,97 @@
 [
   {
+    "date": "2026-06-11",
+    "author": "hoeem",
+    "handle": "@hooeem",
+    "subject": "Post by hoeem on X",
+    "url": "https://x.com/hooeem/status/2065098599751471454",
+    "summary": "Quote-tweets his own long-form X article 'Why you should not be looping & what to do instead' — a contrarian breakdown pushing back on the popular agentic self-looping pattern (taking aim at a 'leading voice in AI') and proposing alternatives. The substance is in the linked article; framing is deliberately provocative.",
+    "topics": [
+      "agent-design",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "5,506",
+    "notes": "",
+    "enriched": true,
+    "content": "hoeem @hooeem — A complete breakdown on looping. QT (own article): WHY YOU SHOULD NOT BE LOOPING & WHAT TO DO INSTEAD: You've just read the title and made up your opinion already... I've done my research here. (Contrarian take arguing against the common agent self-looping pattern, proposing alternatives.)"
+  },
+  {
+    "date": "2026-06-11",
+    "author": "Nainsi Dwivedi",
+    "handle": "@nainsidwiv50980",
+    "subject": "Post by Nainsi Dwivedi on X",
+    "url": "https://x.com/nainsidwiv50980/status/2064947761779208476",
+    "summary": "Alibaba open-sourced 'open-code-review' (Apache-2.0), the internal AI code reviewer that's run on their codebase for ~2 years — 20,000+ engineers, 1M+ reviews. Design: deterministic engineering handles what must never fail (file selection, bundling, rule matching, comment positioning) while the LLM only does context reading, codebase search, and reasoning. Claims ~1/5 the token cost of a generic agent + skills and precise line-level comments that don't drift on large changesets. Repo name: open-code-review.",
+    "topics": [
+      "dev-practices",
+      "agent-design",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "2,708",
+    "notes": "",
+    "enriched": true,
+    "content": "Nainsi Dwivedi @NainsiDwiv50980 — Alibaba open-sourced its internal AI code reviewer (open-code-review), running their codebase for 2 years; battle-tested by 20,000+ engineers, 1M+ reviews, Apache-2.0, one command to install. Not yet another LLM wrapper. Generic-agent pain: skips files on big changesets, line numbers drift, quality changes with prompt tweaks. Alibaba's fix: don't let the LLM do everything. Deterministic engineering handles file selection, smart bundling, rule matching, comment positioning; the agent handles context reading, codebase search, deep reasoning. Result: ~1/5 token cost, precise line-level comments that don't drift, stable on massive changesets."
+  },
+  {
+    "date": "2026-06-11",
+    "author": "Meta Alchemist",
+    "handle": "@meta_alchemist",
+    "subject": "Post by Meta Alchemist on X",
+    "url": "https://x.com/meta_alchemist/status/2064431279383433646",
+    "summary": "Shares a copy-paste 'Repo Audit & Improvement Plan' prompt — a structured, 4-phase principal-engineer audit (Phase 1 discovery/mapping before judging, then a prioritized, actionable improvement plan), with instructions to cite file paths and line numbers and to flag anything unverifiable. Useful prompt template, but wrapped in hype framing around a nonexistent 'Claude Fable 5' model.",
+    "topics": [
+      "prompting",
+      "dev-practices",
+      "claude-code",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Meta Alchemist @meta_alchemist — Got your hands on Claude Fable 5? Run this Audit & Project Improvement Prompt on each important repo (copy-paste). Repo Audit & Improvement Plan: You are a world-class principal-level software engineer and technical auditor. Produce an honest audit and a prioritized, actionable improvement plan in four phases, in order. Ground every claim in actual files: cite file paths and line numbers; if you can't verify something, say so. Phase 1 / Discovery & Mapping (read before judging): map the directory structure, identify project type, languages, frameworks, runtime targets..."
+  },
+  {
+    "date": "2026-06-11",
+    "author": "Boris Cherny",
+    "handle": "@bcherny",
+    "subject": "Post by Boris Cherny on X",
+    "url": "https://x.com/bcherny/status/2064426115255730578",
+    "summary": "Boris Cherny (Anthropic / Claude Code) on why self-verification loops matter: letting a model check its own work lets it run autonomously for much longer and land closer to your intent, so you check in less. Points to a breakdown by @delba_oliveira (via @ClaudeDevs) on encoding your manual checks so Claude Code closes its own feedback loop.",
+    "topics": [
+      "claude-code",
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "406.8K",
+    "notes": "",
+    "enriched": true,
+    "content": "Boris Cherny @bcherny — We talk a lot about how important it is to set up self-verification loops. Especially in the age of powerful models that can run for long periods of time, self-verification is a key ingredient that enables the model to run for much longer, delivering a result that is closer to what you intended. @delba_oliveira gives a great breakdown of what that looks like and why it matters. QT @ClaudeDevs: How do you get Claude Code to check its own work before handing it back? Watch how you can encode your manual checks so Claude closes its own feedback loop."
+  },
+  {
     "date": "2026-06-09",
     "author": "Paweł Huryn",
     "handle": "@pawelhuryn",

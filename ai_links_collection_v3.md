@@ -1,27 +1,31 @@
 # AI Links Collection
-**Total Posts**: 615  
-**Date Range**: 2024-06-11 – 2026-06-09  
-**Enriched**: 615/615 (100%)
+**Total Posts**: 619  
+**Date Range**: 2024-06-11 – 2026-06-11  
+**Enriched**: 619/619 (100%)
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 297 | 48.3% |
-| claude-code | 153 | 24.9% |
-| dev-practices | 165 | 26.8% |
-| skills-mcp | 84 | 13.7% |
-| prompting | 82 | 13.3% |
-| research | 113 | 18.4% |
-| industry | 69 | 11.2% |
-| management | 96 | 15.6% |
-| questionable | 81 | 13.2% |
+| agent-design | 300 | 48.5% |
+| claude-code | 155 | 25.0% |
+| dev-practices | 168 | 27.1% |
+| skills-mcp | 84 | 13.6% |
+| prompting | 84 | 13.6% |
+| research | 113 | 18.3% |
+| industry | 69 | 11.1% |
+| management | 96 | 15.5% |
+| questionable | 83 | 13.4% |
 | general | 79 | 12.8% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-06-11 | hoeem | agent-design | Quote-tweets his own long-form X article 'Why you should not be loopin... |
+| 2026-06-11 | Nainsi Dwivedi | dev-practices | Alibaba open-sourced 'open-code-review' (Apache-2.0), the internal AI... |
+| 2026-06-11 | Meta Alchemist | prompting | Shares a copy-paste 'Repo Audit & Improvement Plan' prompt — a structu... |
+| 2026-06-11 | Boris Cherny | claude-code | Boris Cherny (Anthropic / Claude Code) on why self-verification loops... |
 | 2026-06-09 | Paweł Huryn | agent-design | Lists six patterns for Anthropic-style dynamic agent workflows/loops:... |
 | 2026-06-09 | hoeem | skills-mcp | Enthusiastic boost of Matt Pocock's new /teach skill — a Claude skill... |
 | 2026-06-09 | Jeff Tang | general | [Off-topic for AI] Points to a 57-page Google Doc summarizing peptides... |
@@ -68,15 +72,17 @@
 | 2026-05-28 | John Yeo | agent-design | John Yeo (Stripe-style billing) describes an internal AI agent that au... |
 | 2026-05-28 | Dave Kline | management | Dave Kline on managing up: his biggest mistake as a manager was assumi... |
 | 2026-05-28 | Rahul | claude-code | Engagement-farmed thread claiming Anthropic released a 'blueprint' for... |
-| 2026-05-28 | Paul Iusztin | agent-design | Paul Iusztin breaks down Neo4j's three-layer agent memory system insid... |
-| 2026-05-28 | Avi Chawla | agent-design | Avi Chawla explainer on RAG vs Graph RAG vs Agentic RAG. Standard RAG... |
-| 2026-05-27 | darkzodchi | claude-code | darkzodchi promotes an X article on setting up Claude Code to catch, f... |
-| 2026-05-27 | Parag pawar | claude-code | Argues CLAUDE.md is not docs but the control layer for your AI agent —... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (297)
+### Agent Design (300)
+
+- [hoeem](https://x.com/hooeem/status/2065098599751471454) — 2026-06-11: Quote-tweets his own long-form X article 'Why you should not be looping & what to do instead' — a contrarian breakdown pushing back on the popular agentic self-looping pattern (taking aim at a 'leading voice in AI') and proposing alternatives. The substance is in the linked article; framing is deliberately provocative.
+
+- [Nainsi Dwivedi](https://x.com/nainsidwiv50980/status/2064947761779208476) — 2026-06-11: Alibaba open-sourced 'open-code-review' (Apache-2.0), the internal AI code reviewer that's run on their codebase for ~2 years — 20,000+ engineers, 1M+ reviews. Design: deterministic engineering handles what must never fail (file selection, bundling, rule matching, comment positioning) while the LLM only does context reading, codebase search, and reasoning. Claims ~1/5 the token cost of a generic agent + skills and precise line-level comments that don't drift on large changesets. Repo name: open-code-review.
+
+- [Boris Cherny](https://x.com/bcherny/status/2064426115255730578) — 2026-06-11: Boris Cherny (Anthropic / Claude Code) on why self-verification loops matter: letting a model check its own work lets it run autonomously for much longer and land closer to your intent, so you check in less. Points to a breakdown by @delba_oliveira (via @ClaudeDevs) on encoding your manual checks so Claude Code closes its own feedback loop.
 
 - [Paweł Huryn](https://x.com/pawelhuryn/status/2064201950980096078) — 2026-06-09: Lists six patterns for Anthropic-style dynamic agent workflows/loops: classify-and-act, fan-out-and-synthesize, adversarial verification, generate-and-filter, tournament (compare), and loop-until-done — each with a concrete example. Links his 'Claude Dynamic Workflows' guide.
 
@@ -672,7 +678,11 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Claude Code (153)
+### Claude Code (155)
+
+- [Meta Alchemist](https://x.com/meta_alchemist/status/2064431279383433646) — 2026-06-11: Shares a copy-paste 'Repo Audit & Improvement Plan' prompt — a structured, 4-phase principal-engineer audit (Phase 1 discovery/mapping before judging, then a prioritized, actionable improvement plan), with instructions to cite file paths and line numbers and to flag anything unverifiable. Useful prompt template, but wrapped in hype framing around a nonexistent 'Claude Fable 5' model.
+
+- [Boris Cherny](https://x.com/bcherny/status/2064426115255730578) — 2026-06-11: Boris Cherny (Anthropic / Claude Code) on why self-verification loops matter: letting a model check its own work lets it run autonomously for much longer and land closer to your intent, so you check in less. Points to a breakdown by @delba_oliveira (via @ClaudeDevs) on encoding your manual checks so Claude Code closes its own feedback loop.
 
 - [Paweł Huryn](https://x.com/pawelhuryn/status/2064201950980096078) — 2026-06-09: Lists six patterns for Anthropic-style dynamic agent workflows/loops: classify-and-act, fan-out-and-synthesize, adversarial verification, generate-and-filter, tournament (compare), and loop-until-done — each with a concrete example. Links his 'Claude Dynamic Workflows' guide.
 
@@ -980,7 +990,13 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (165)
+### Dev Practices (168)
+
+- [Nainsi Dwivedi](https://x.com/nainsidwiv50980/status/2064947761779208476) — 2026-06-11: Alibaba open-sourced 'open-code-review' (Apache-2.0), the internal AI code reviewer that's run on their codebase for ~2 years — 20,000+ engineers, 1M+ reviews. Design: deterministic engineering handles what must never fail (file selection, bundling, rule matching, comment positioning) while the LLM only does context reading, codebase search, and reasoning. Claims ~1/5 the token cost of a generic agent + skills and precise line-level comments that don't drift on large changesets. Repo name: open-code-review.
+
+- [Meta Alchemist](https://x.com/meta_alchemist/status/2064431279383433646) — 2026-06-11: Shares a copy-paste 'Repo Audit & Improvement Plan' prompt — a structured, 4-phase principal-engineer audit (Phase 1 discovery/mapping before judging, then a prioritized, actionable improvement plan), with instructions to cite file paths and line numbers and to flag anything unverifiable. Useful prompt template, but wrapped in hype framing around a nonexistent 'Claude Fable 5' model.
+
+- [Boris Cherny](https://x.com/bcherny/status/2064426115255730578) — 2026-06-11: Boris Cherny (Anthropic / Claude Code) on why self-verification loops matter: letting a model check its own work lets it run autonomously for much longer and land closer to your intent, so you check in less. Points to a breakdown by @delba_oliveira (via @ClaudeDevs) on encoding your manual checks so Claude Code closes its own feedback loop.
 
 - [BOOTOSHI](https://x.com/kingbootoshi/status/2063999432077795579) — 2026-06-09: Personal write-up arguing that with new-gen models (GPT-5.5, Opus 4.8) a single long 'mega thread' now beats subagent orchestration / 'token-maxxing' / 'productivity theatre' for coding, because of bigger context windows and higher intelligence — older models (Opus 4.5, GPT-5) still needed task decomposition.
 
@@ -1482,7 +1498,11 @@
 
 - [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Anthropic released a frontend-design plugin for Claude Code — demo shows Claude creating a music player app. Install via /plugin marketplace add anthropics/claude-code and /plugin install frontend-design@claude-code-plugins.
 
-### Prompting (82)
+### Prompting (84)
+
+- [hoeem](https://x.com/hooeem/status/2065098599751471454) — 2026-06-11: Quote-tweets his own long-form X article 'Why you should not be looping & what to do instead' — a contrarian breakdown pushing back on the popular agentic self-looping pattern (taking aim at a 'leading voice in AI') and proposing alternatives. The substance is in the linked article; framing is deliberately provocative.
+
+- [Meta Alchemist](https://x.com/meta_alchemist/status/2064431279383433646) — 2026-06-11: Shares a copy-paste 'Repo Audit & Improvement Plan' prompt — a structured, 4-phase principal-engineer audit (Phase 1 discovery/mapping before judging, then a prioritized, actionable improvement plan), with instructions to cite file paths and line numbers and to flag anything unverifiable. Useful prompt template, but wrapped in hype framing around a nonexistent 'Claude Fable 5' model.
 
 - [Paweł Huryn](https://x.com/pawelhuryn/status/2064201950980096078) — 2026-06-09: Lists six patterns for Anthropic-style dynamic agent workflows/loops: classify-and-act, fan-out-and-synthesize, adversarial verification, generate-and-filter, tournament (compare), and loop-until-done — each with a concrete example. Links his 'Claude Dynamic Workflows' guide.
 
@@ -2210,7 +2230,11 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
 
-### Questionable (81)
+### Questionable (83)
+
+- [Nainsi Dwivedi](https://x.com/nainsidwiv50980/status/2064947761779208476) — 2026-06-11: Alibaba open-sourced 'open-code-review' (Apache-2.0), the internal AI code reviewer that's run on their codebase for ~2 years — 20,000+ engineers, 1M+ reviews. Design: deterministic engineering handles what must never fail (file selection, bundling, rule matching, comment positioning) while the LLM only does context reading, codebase search, and reasoning. Claims ~1/5 the token cost of a generic agent + skills and precise line-level comments that don't drift on large changesets. Repo name: open-code-review.
+
+- [Meta Alchemist](https://x.com/meta_alchemist/status/2064431279383433646) — 2026-06-11: Shares a copy-paste 'Repo Audit & Improvement Plan' prompt — a structured, 4-phase principal-engineer audit (Phase 1 discovery/mapping before judging, then a prioritized, actionable improvement plan), with instructions to cite file paths and line numbers and to flag anything unverifiable. Useful prompt template, but wrapped in hype framing around a nonexistent 'Claude Fable 5' model.
 
 - [rody](https://x.com/0x_rody/status/2063722061126651935) — 2026-06-09: Near-duplicate of the darkzodchi post: quotes an 'Anthropic manager' that nobody types prompts from scratch and commands should live in the project; links the same Claude Code slash-command-library template/talk.
 
@@ -2546,6 +2570,18 @@
 ## Full Chronological List
 
 ### Jun 2026
+
+- **2026-06-11** | [hoeem](https://x.com/hooeem/status/2065098599751471454) | agent-design, prompting
+  Quote-tweets his own long-form X article 'Why you should not be looping & what to do instead' — a contrarian breakdown pushing back on the popular agentic self-looping pattern (taking aim at a 'leading voice in AI') and proposing alternatives. The substance is in the linked article; framing is deliberately provocative.
+
+- **2026-06-11** | [Nainsi Dwivedi](https://x.com/nainsidwiv50980/status/2064947761779208476) | dev-practices, agent-design, questionable
+  Alibaba open-sourced 'open-code-review' (Apache-2.0), the internal AI code reviewer that's run on their codebase for ~2 years — 20,000+ engineers, 1M+ reviews. Design: deterministic engineering handles what must never fail (file selection, bundling, rule matching, comment positioning) while the LLM only does context reading, codebase search, and reasoning. Claims ~1/5 the token cost of a generic agent + skills and precise line-level comments that don't drift on large changesets. Repo name: open-code-review.
+
+- **2026-06-11** | [Meta Alchemist](https://x.com/meta_alchemist/status/2064431279383433646) | prompting, dev-practices, claude-code, questionable
+  Shares a copy-paste 'Repo Audit & Improvement Plan' prompt — a structured, 4-phase principal-engineer audit (Phase 1 discovery/mapping before judging, then a prioritized, actionable improvement plan), with instructions to cite file paths and line numbers and to flag anything unverifiable. Useful prompt template, but wrapped in hype framing around a nonexistent 'Claude Fable 5' model.
+
+- **2026-06-11** | [Boris Cherny](https://x.com/bcherny/status/2064426115255730578) | claude-code, agent-design, dev-practices
+  Boris Cherny (Anthropic / Claude Code) on why self-verification loops matter: letting a model check its own work lets it run autonomously for much longer and land closer to your intent, so you check in less. Points to a breakdown by @delba_oliveira (via @ClaudeDevs) on encoding your manual checks so Claude Code closes its own feedback loop.
 
 - **2026-06-09** | [Paweł Huryn](https://x.com/pawelhuryn/status/2064201950980096078) | agent-design, claude-code, prompting
   Lists six patterns for Anthropic-style dynamic agent workflows/loops: classify-and-act, fan-out-and-synthesize, adversarial verification, generate-and-filter, tournament (compare), and loop-until-done — each with a concrete example. Links his 'Claude Dynamic Workflows' guide.
