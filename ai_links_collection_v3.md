@@ -7,16 +7,16 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 300 | 48.5% |
+| agent-design | 299 | 48.3% |
 | claude-code | 155 | 25.0% |
-| dev-practices | 168 | 27.1% |
-| skills-mcp | 84 | 13.6% |
+| dev-practices | 167 | 27.0% |
+| skills-mcp | 86 | 13.9% |
 | prompting | 84 | 13.6% |
-| research | 113 | 18.3% |
-| industry | 69 | 11.1% |
+| research | 114 | 18.4% |
+| industry | 70 | 11.3% |
 | management | 96 | 15.5% |
-| questionable | 83 | 13.4% |
-| general | 79 | 12.8% |
+| questionable | 84 | 13.6% |
+| general | 78 | 12.6% |
 
 ---
 ## Quick Reference (50 Most Recent)
@@ -76,7 +76,7 @@
 ---
 ## Posts by Topic
 
-### Agent Design (300)
+### Agent Design (299)
 
 - [hoeem](https://x.com/hooeem/status/2065098599751471454) — 2026-06-11: Quote-tweets his own long-form X article 'Why you should not be looping & what to do instead' — a contrarian breakdown pushing back on the popular agentic self-looping pattern (taking aim at a 'leading voice in AI') and proposing alternatives. The substance is in the linked article; framing is deliberately provocative.
 
@@ -274,13 +274,11 @@
 
 - [darkzodchi](https://x.com/zodchiii/status/2052400272840720565) — 2026-05-08: Engagement-bait quote tweet of own X article ("AI team that doesn't quit, sleep, or ghost") framed as Anthropic "leaking" a 2026 agent roadmap. The quoted article opens with a fabricated 2am breakage scenario. High views (433K) but mostly hype.
 
-- [Millie Marconi](https://x.com/milliemarconnni/status/2052363436575826398) — 2026-05-08: Open-sourced "Feynman" agent system that reads a research paper, audits its code, and replicates experiments end-to-end. Bundles four agents (Researcher, Reviewer, Writer, Verifier), runs experiments in Docker, spins up serverless GPUs on Modal/RunPod, indexes session search. MIT. github.com/getcompanion-ai/feynman
+- [Millie Marconi](https://x.com/milliemarconnni/status/2052363436575826398) — 2026-05-08: Millie Marconi highlights Feynman (github.com/getcompanion-ai/feynman) — an open-source MIT-licensed agent system with four bundled roles (Researcher, Reviewer, Writer, Verifier) that reads papers, audits referenced code, and replicates experiments. Runs in Docker for safe local execution and spins up serverless GPUs on Modal or persistent pods on RunPod. Indexed session search across past research runs, inline citation-URL verification.
 
-- [Rohit Ghumare](https://x.com/ghumare64/status/2052313902214476192) — 2026-05-08: Pitches "agentmemory" — a tool that records Claude Code session actions, compresses with AI, and re-injects relevant context next session. Claims 95% fewer tokens, 200x more tool calls before context limits, MIT/open source, 1000 stars in a week. Same repo as Tom Dörr's post: github.com/rohitg00/agentmemory. Hyped framing but a real shippable tool — worth a real look as Jeremy flagged.
+- [Rohit Ghumare](https://x.com/ghumare64/status/2052313902214476192) — 2026-05-08: Rohit Ghumare highlights agentmemory — a memory layer for Hermes / Claude Code / Codex that records session observations, compresses them with AI, and injects relevant context back into future sessions. Claims 95% fewer tokens per session and 200x more tool calls before hitting context limits, benchmarked on 240 real coding sessions. MIT-licensed, ~1,000 GitHub stars in its first week. Worth evaluating as a CLAUDE.md alternative for long-running agent work.
 
-- [Tom Dörr](https://x.com/tom_doerr/status/2052261421744869757) — 2026-05-08: HelixDB — a single database that combines graph and vector storage for AI apps. github.com/HelixDB/helix-db. Could simplify RAG + relationship queries in one engine instead of stitching pgvector + a graph DB.
-
-- [Kanika](https://x.com/kanikabk/status/2052032420954927357) — 2026-05-08: Free 424-page "Agentic Design Patterns" guide by a senior Google engineer; every chapter has working code; royalties go to Save the Children. Listed at $40 on Amazon, free version available. Worth a read for the agent-design backlog.
+- [Kanika](https://x.com/kanikabk/status/2052032420954927357) — 2026-05-08: Kanika points to a 424-page 'Agentic Design Patterns' guide written by a senior Google engineer — every chapter ships working code, all Amazon royalties go to Save the Children, $40 print price. Engagement-bait framing ('bookmark before it's buried') but the reference itself is a real, comprehensive resource.
 
 - [Tom Dörr](https://x.com/tom_doerr/status/2052150733261193390) — 2026-05-07: Awesome-list of curated papers mapping foundation-agent cognition. Repo: github.com/FoundationAgents/awesome-foundation-agents. Backlog reading material for agent-design research.
 
@@ -804,7 +802,7 @@
 
 - [darkzodchi](https://x.com/zodchiii/status/2052400272840720565) — 2026-05-08: Engagement-bait quote tweet of own X article ("AI team that doesn't quit, sleep, or ghost") framed as Anthropic "leaking" a 2026 agent roadmap. The quoted article opens with a fabricated 2am breakage scenario. High views (433K) but mostly hype.
 
-- [Rohit Ghumare](https://x.com/ghumare64/status/2052313902214476192) — 2026-05-08: Pitches "agentmemory" — a tool that records Claude Code session actions, compresses with AI, and re-injects relevant context next session. Claims 95% fewer tokens, 200x more tool calls before context limits, MIT/open source, 1000 stars in a week. Same repo as Tom Dörr's post: github.com/rohitg00/agentmemory. Hyped framing but a real shippable tool — worth a real look as Jeremy flagged.
+- [Rohit Ghumare](https://x.com/ghumare64/status/2052313902214476192) — 2026-05-08: Rohit Ghumare highlights agentmemory — a memory layer for Hermes / Claude Code / Codex that records session observations, compresses them with AI, and injects relevant context back into future sessions. Claims 95% fewer tokens per session and 200x more tool calls before hitting context limits, benchmarked on 240 real coding sessions. MIT-licensed, ~1,000 GitHub stars in its first week. Worth evaluating as a CLAUDE.md alternative for long-running agent work.
 
 - [Uncle Bob Martin](https://x.com/unclebobmartin/status/2052370749701214226) — 2026-05-07: Uncle Bob quote-tweets a viral post about Anthropic's 24-minute prompt-engineering workshop on YouTube — and notes a community Reader-added-context flag that the workshop was uploaded July 2025, not "just now". His take: driving an AI is its own engineering discipline.
 
@@ -990,7 +988,7 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (168)
+### Dev Practices (167)
 
 - [Nainsi Dwivedi](https://x.com/nainsidwiv50980/status/2064947761779208476) — 2026-06-11: Alibaba open-sourced 'open-code-review' (Apache-2.0), the internal AI code reviewer that's run on their codebase for ~2 years — 20,000+ engineers, 1M+ reviews. Design: deterministic engineering handles what must never fail (file selection, bundling, rule matching, comment positioning) while the LLM only does context reading, codebase search, and reasoning. Claims ~1/5 the token cost of a generic agent + skills and precise line-level comments that don't drift on large changesets. Repo name: open-code-review.
 
@@ -1106,9 +1104,7 @@
 
 - [Axel Bitblaze 🪓](https://x.com/axel_bitblaze69/status/2052520764545613958) — 2026-05-08: Promotes a Claude Code plugin "claude-handoff" (willseltzer/claude-handoff) that snapshots session state to a HANDOFF.md and restores it in a fresh window. Three commands: /handoff:create, /handoff:quick, /handoff:resume. Some hype framing ("10-20 message limit") but the plugin itself looks legit.
 
-- [Rohit Ghumare](https://x.com/ghumare64/status/2052313902214476192) — 2026-05-08: Pitches "agentmemory" — a tool that records Claude Code session actions, compresses with AI, and re-injects relevant context next session. Claims 95% fewer tokens, 200x more tool calls before context limits, MIT/open source, 1000 stars in a week. Same repo as Tom Dörr's post: github.com/rohitg00/agentmemory. Hyped framing but a real shippable tool — worth a real look as Jeremy flagged.
-
-- [Tom Dörr](https://x.com/tom_doerr/status/2052261421744869757) — 2026-05-08: HelixDB — a single database that combines graph and vector storage for AI apps. github.com/HelixDB/helix-db. Could simplify RAG + relationship queries in one engine instead of stitching pgvector + a graph DB.
+- [Tom Dörr](https://x.com/tom_doerr/status/2052261421744869757) — 2026-05-08: Tom Dörr highlights HelixDB (github.com/HelixDB/helix-db): a database that combines graph and vector storage in one engine for AI apps. Worth evaluating as a building block for RAG and agent-memory pipelines that otherwise span two systems.
 
 - [0xSero](https://x.com/0xsero/status/2050544304360165585) — 2026-05-02: Reminder that Claude Code session history is auto-deleted monthly unless you change settings.json — that's all valuable training/context data. 0xSero shares a backup repo (github.com/0xSero/ai-data-extraction) to help you preserve it.
 
@@ -1328,7 +1324,7 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (84)
+### Skills & MCP (86)
 
 - [hoeem](https://x.com/hooeem/status/2064099329342640285) — 2026-06-09: Enthusiastic boost of Matt Pocock's new /teach skill — a Claude skill distilling his teaching experience that can teach you anything (demoed by teaching him to solve a Rubik's cube).
 
@@ -1387,6 +1383,10 @@
 - [Axel Bitblaze 🪓](https://x.com/axel_bitblaze69/status/2052520764545613958) — 2026-05-08: Promotes a Claude Code plugin "claude-handoff" (willseltzer/claude-handoff) that snapshots session state to a HANDOFF.md and restores it in a fresh window. Three commands: /handoff:create, /handoff:quick, /handoff:resume. Some hype framing ("10-20 message limit") but the plugin itself looks legit.
 
 - [Tom Dörr](https://x.com/tom_doerr/status/2052440598452359394) — 2026-05-08: Knowledge-graph memory backend for Claude Code — same project Rohit Ghumare hyped (agentmemory). Repo: github.com/rohitg00/agentmemory. Worth implementing per Jeremy's "(implement!)" subject flag.
+
+- [Millie Marconi](https://x.com/milliemarconnni/status/2052363436575826398) — 2026-05-08: Millie Marconi highlights Feynman (github.com/getcompanion-ai/feynman) — an open-source MIT-licensed agent system with four bundled roles (Researcher, Reviewer, Writer, Verifier) that reads papers, audits referenced code, and replicates experiments. Runs in Docker for safe local execution and spins up serverless GPUs on Modal or persistent pods on RunPod. Indexed session search across past research runs, inline citation-URL verification.
+
+- [Rohit Ghumare](https://x.com/ghumare64/status/2052313902214476192) — 2026-05-08: Rohit Ghumare highlights agentmemory — a memory layer for Hermes / Claude Code / Codex that records session observations, compresses them with AI, and injects relevant context back into future sessions. Claims 95% fewer tokens per session and 200x more tool calls before hitting context limits, benchmarked on 240 real coding sessions. MIT-licensed, ~1,000 GitHub stars in its first week. Worth evaluating as a CLAUDE.md alternative for long-running agent work.
 
 - [Om Patel](https://x.com/om_patel5/status/2050441119003971683) — 2026-05-02: Promoted Claude Code skill /graphify that pre-builds a graph of your codebase (functions, deps, docs, PDFs, images, audio, video via Whisper) so Claude doesn't waste tokens exploring. Author claims '71.5x more efficient' (engagement-farming framing).
 
@@ -1668,7 +1668,7 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
 
-### Research (113)
+### Research (114)
 
 - [Ahmad](https://x.com/theahmadosman/status/2063935919481106560) — 2026-06-09: Detailed self-study roadmap for LLM inference/serving internals: serving engines (vLLM/PagedAttention, SGLang/RadixAttention, TensorRT-LLM FP8/FP4, FlashInfer), down-the-stack study (Triton, CUTLASS/CuTe, FlashAttention & PagedAttention papers, MoE, Nsight profiling), and a hands-on mini-project sequence (RMSNorm in Triton, fused SiLU, FP16 matmul vs cuBLAS, paged KV lookup).
 
@@ -1752,9 +1752,11 @@
 
 - [Goodfire](https://x.com/goodfireai/status/2052420446910644616) — 2026-05-08: Goodfire kicking off a research-blog series on "neural geometry" — the shapes networks think in — and how understanding them enables debugging and precise control. 2M views; first in a series.
 
-- [Millie Marconi](https://x.com/milliemarconnni/status/2052363436575826398) — 2026-05-08: Open-sourced "Feynman" agent system that reads a research paper, audits its code, and replicates experiments end-to-end. Bundles four agents (Researcher, Reviewer, Writer, Verifier), runs experiments in Docker, spins up serverless GPUs on Modal/RunPod, indexes session search. MIT. github.com/getcompanion-ai/feynman
+- [Millie Marconi](https://x.com/milliemarconnni/status/2052363436575826398) — 2026-05-08: Millie Marconi highlights Feynman (github.com/getcompanion-ai/feynman) — an open-source MIT-licensed agent system with four bundled roles (Researcher, Reviewer, Writer, Verifier) that reads papers, audits referenced code, and replicates experiments. Runs in Docker for safe local execution and spins up serverless GPUs on Modal or persistent pods on RunPod. Indexed session search across past research runs, inline citation-URL verification.
 
-- [Kanika](https://x.com/kanikabk/status/2052032420954927357) — 2026-05-08: Free 424-page "Agentic Design Patterns" guide by a senior Google engineer; every chapter has working code; royalties go to Save the Children. Listed at $40 on Amazon, free version available. Worth a read for the agent-design backlog.
+- [Tom Dörr](https://x.com/tom_doerr/status/2052261421744869757) — 2026-05-08: Tom Dörr highlights HelixDB (github.com/HelixDB/helix-db): a database that combines graph and vector storage in one engine for AI apps. Worth evaluating as a building block for RAG and agent-memory pipelines that otherwise span two systems.
+
+- [Kanika](https://x.com/kanikabk/status/2052032420954927357) — 2026-05-08: Kanika points to a 424-page 'Agentic Design Patterns' guide written by a senior Google engineer — every chapter ships working code, all Amazon royalties go to Save the Children, $40 print price. Engagement-bait framing ('bookmark before it's buried') but the reference itself is a real, comprehensive resource.
 
 - [Tom Dörr](https://x.com/tom_doerr/status/2052150733261193390) — 2026-05-07: Awesome-list of curated papers mapping foundation-agent cognition. Repo: github.com/FoundationAgents/awesome-foundation-agents. Backlog reading material for agent-design research.
 
@@ -1896,7 +1898,7 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: 15-part thread explaining the 'stunning, simple explanation behind matrix multiplication' — breaks down the most crucial idea behind modern machine learning. 1M views.
 
-### Industry (69)
+### Industry (70)
 
 - [Sprytix](https://x.com/sprytixl/status/2063234969510588640) — 2026-06-07: Engagement-farmed claim that a Chinese professor runs a 170-agent dev team making 'every company decision' on Kimi K2.6 with one prompt; links an article on running 300 parallel agents. Hype framing, thin substance — flagging as questionable, with an industry/agent angle.
 
@@ -1955,6 +1957,8 @@
 - [Muhammad Ayan](https://x.com/socialwithaayan/status/2053875867487777175) — 2026-05-12: Engagement-farmed announcement (all-caps 'BREAKING') that Anthropic open-sourced a Claude Code plugin suite for finance workflows — DCF/LBO models, equity research, M&A analysis, KYC, IC memos — with MCP connectors for Bloomberg, FactSet, S&P Global, Morningstar, and PitchBook (github.com/anthropics/financial-services, Apache-2.0, ~19.8K stars). Top replies flag the obvious caveat: the harness is free but the data feeds (Bloomberg Terminal ~$28K/yr, FactSet/S&P/PitchBook six-figure) are not, and the agents draft work for human sign-off rather than autonomously owning workflows.
 
 - [divyansh tiwari](https://x.com/divyansht91162/status/2052474052841984110) — 2026-05-08: Author claims web search is now "basically free" for AI agents after switching their OpenClaw and Hermes agents to TinyFish for browsing/research at $0/scale. Pitches TinyFish as a quiet ecosystem-shifter; light on technical detail, mostly framing.
+
+- [Allen Braden](https://x.com/allen_explains/status/2052340555942924368) — 2026-05-08: Allen Braden points to a free 1-hour UC Berkeley lecture on systematic-trading fundamentals (the math Jane Street quants use). Engagement-style framing without the actual lecture link — finding it requires follow-through outside the post.
 
 - [Adam Ghowiba](https://x.com/adamghowiba/status/2050886233921061281) — 2026-05-05: JP Morgan's investment research team broke down their "Ask David" multi-agent architecture: a supervisor agent orchestrates specialized subagents (retrieval, structured data, analytics), with an LLM-as-judge reflection node before the answer ships and human-in-the-loop for the last accuracy gap. Same supervisor + specialist + reflection pattern showing up everywhere.
 
@@ -2230,7 +2234,7 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
 
-### Questionable (83)
+### Questionable (84)
 
 - [Nainsi Dwivedi](https://x.com/nainsidwiv50980/status/2064947761779208476) — 2026-06-11: Alibaba open-sourced 'open-code-review' (Apache-2.0), the internal AI code reviewer that's run on their codebase for ~2 years — 20,000+ engineers, 1M+ reviews. Design: deterministic engineering handles what must never fail (file selection, bundling, rule matching, comment positioning) while the LLM only does context reading, codebase search, and reasoning. Claims ~1/5 the token cost of a generic agent + skills and precise line-level comments that don't drift on large changesets. Repo name: open-code-review.
 
@@ -2324,7 +2328,9 @@
 
 - [darkzodchi](https://x.com/zodchiii/status/2052400272840720565) — 2026-05-08: Engagement-bait quote tweet of own X article ("AI team that doesn't quit, sleep, or ghost") framed as Anthropic "leaking" a 2026 agent roadmap. The quoted article opens with a fabricated 2am breakage scenario. High views (433K) but mostly hype.
 
-- [Rohit Ghumare](https://x.com/ghumare64/status/2052313902214476192) — 2026-05-08: Pitches "agentmemory" — a tool that records Claude Code session actions, compresses with AI, and re-injects relevant context next session. Claims 95% fewer tokens, 200x more tool calls before context limits, MIT/open source, 1000 stars in a week. Same repo as Tom Dörr's post: github.com/rohitg00/agentmemory. Hyped framing but a real shippable tool — worth a real look as Jeremy flagged.
+- [Allen Braden](https://x.com/allen_explains/status/2052340555942924368) — 2026-05-08: Allen Braden points to a free 1-hour UC Berkeley lecture on systematic-trading fundamentals (the math Jane Street quants use). Engagement-style framing without the actual lecture link — finding it requires follow-through outside the post.
+
+- [Kanika](https://x.com/kanikabk/status/2052032420954927357) — 2026-05-08: Kanika points to a 424-page 'Agentic Design Patterns' guide written by a senior Google engineer — every chapter ships working code, all Amazon royalties go to Save the Children, $40 print price. Engagement-bait framing ('bookmark before it's buried') but the reference itself is a real, comprehensive resource.
 
 - [darkzodchi](https://x.com/zodchiii/status/2050537397377532341) — 2026-05-02: Promotes a security article + .gitignore template after citing that Anthropic allegedly leaked 512K lines of source code from a missing .gitignore entry. Boris Cherny (Claude Code creator) cited as the cautionary tale. Engagement framing, but the .gitignore best-practices angle is legitimately useful.
 
@@ -2398,7 +2404,7 @@
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
 
-### General (83)
+### General (82)
 
 - [Jeff Tang](https://x.com/jefftangx/status/2064052420888363090) — 2026-06-09: [Off-topic for AI] Points to a 57-page Google Doc summarizing peptides such as BPC-157 and the human trials done so far. Health/biohacking content, not AI/tech.
 
@@ -2419,8 +2425,6 @@
 - [Roan](https://x.com/rohonchain/status/2054245904258142593) — 2026-05-12: Stanford MDP lecture pitched as a Markov-Chains-for-trading framework — quote of his own article on hedge-fund Markov chain trading. Not AI/agent content; trading/quant finance with engagement-bait framing. Tag as questionable.
 
 - [Mgoes (bio/acc 🤖💉)](https://x.com/m_goes_distance/status/2052433497575293307) — 2026-05-08: Off-topic for AI but Jeremy bookmarked it: rapid-fire summary of 2026 biotech wins — Japan endorsing iPS cell therapies, Altos Labs Atlas of Rejuvenation, rapalink-1 longevity, Retro Biosciences brain-cleanup pill, peptide deregulation, psychedelic EOs, GLP-1 adoption hitting 12.4% of US adults.
-
-- [Allen Braden](https://x.com/allen_explains/status/2052340555942924368) — 2026-05-08: Off-topic-for-AI rec: free 1-hour UC Berkeley lecture on systematic trading math (the kind Jane Street quants use). Pitch only — no link in the visible text.
 
 - [Vinay](https://x.com/leashless/status/2051437380788158739) — 2026-05-05: Vinay quote-tweets a viral post about Gödel, Escher, Bach (1979) — Douglas Hofstadter's 800-page Pulitzer-winning book on a logician, artist, and composer that became required reading at every major AI lab. Vinay: "Time stopped. We all read it. It took two years to talk through the implications. Nobody ever forgot."
 
@@ -3107,20 +3111,20 @@
 - **2026-05-08** | [Dave Kline](https://x.com/dklineii/status/2052372231800439054) | management, prompting
   Five AI prompts Dave Kline runs before every 1:1 — frames it as 5-minute prep that replaces flying blind. Specific prompts are in the thread; useful template for managers adopting AI prep workflows.
 
-- **2026-05-08** | [Millie Marconi](https://x.com/milliemarconnni/status/2052363436575826398) | agent-design, research
-  Open-sourced "Feynman" agent system that reads a research paper, audits its code, and replicates experiments end-to-end. Bundles four agents (Researcher, Reviewer, Writer, Verifier), runs experiments in Docker, spins up serverless GPUs on Modal/RunPod, indexes session search. MIT. github.com/getcompanion-ai/feynman
+- **2026-05-08** | [Millie Marconi](https://x.com/milliemarconnni/status/2052363436575826398) | agent-design, research, skills-mcp
+  Millie Marconi highlights Feynman (github.com/getcompanion-ai/feynman) — an open-source MIT-licensed agent system with four bundled roles (Researcher, Reviewer, Writer, Verifier) that reads papers, audits referenced code, and replicates experiments. Runs in Docker for safe local execution and spins up serverless GPUs on Modal or persistent pods on RunPod. Indexed session search across past research runs, inline citation-URL verification.
 
-- **2026-05-08** | [Allen Braden](https://x.com/allen_explains/status/2052340555942924368) | general
-  Off-topic-for-AI rec: free 1-hour UC Berkeley lecture on systematic trading math (the kind Jane Street quants use). Pitch only — no link in the visible text.
+- **2026-05-08** | [Allen Braden](https://x.com/allen_explains/status/2052340555942924368) | industry, questionable
+  Allen Braden points to a free 1-hour UC Berkeley lecture on systematic-trading fundamentals (the math Jane Street quants use). Engagement-style framing without the actual lecture link — finding it requires follow-through outside the post.
 
-- **2026-05-08** | [Rohit Ghumare](https://x.com/ghumare64/status/2052313902214476192) | agent-design, claude-code, dev-practices, questionable
-  Pitches "agentmemory" — a tool that records Claude Code session actions, compresses with AI, and re-injects relevant context next session. Claims 95% fewer tokens, 200x more tool calls before context limits, MIT/open source, 1000 stars in a week. Same repo as Tom Dörr's post: github.com/rohitg00/agentmemory. Hyped framing but a real shippable tool — worth a real look as Jeremy flagged.
+- **2026-05-08** | [Rohit Ghumare](https://x.com/ghumare64/status/2052313902214476192) | claude-code, skills-mcp, agent-design
+  Rohit Ghumare highlights agentmemory — a memory layer for Hermes / Claude Code / Codex that records session observations, compresses them with AI, and injects relevant context back into future sessions. Claims 95% fewer tokens per session and 200x more tool calls before hitting context limits, benchmarked on 240 real coding sessions. MIT-licensed, ~1,000 GitHub stars in its first week. Worth evaluating as a CLAUDE.md alternative for long-running agent work.
 
-- **2026-05-08** | [Tom Dörr](https://x.com/tom_doerr/status/2052261421744869757) | agent-design, dev-practices
-  HelixDB — a single database that combines graph and vector storage for AI apps. github.com/HelixDB/helix-db. Could simplify RAG + relationship queries in one engine instead of stitching pgvector + a graph DB.
+- **2026-05-08** | [Tom Dörr](https://x.com/tom_doerr/status/2052261421744869757) | dev-practices, research
+  Tom Dörr highlights HelixDB (github.com/HelixDB/helix-db): a database that combines graph and vector storage in one engine for AI apps. Worth evaluating as a building block for RAG and agent-memory pipelines that otherwise span two systems.
 
-- **2026-05-08** | [Kanika](https://x.com/kanikabk/status/2052032420954927357) | agent-design, research
-  Free 424-page "Agentic Design Patterns" guide by a senior Google engineer; every chapter has working code; royalties go to Save the Children. Listed at $40 on Amazon, free version available. Worth a read for the agent-design backlog.
+- **2026-05-08** | [Kanika](https://x.com/kanikabk/status/2052032420954927357) | agent-design, research, questionable
+  Kanika points to a 424-page 'Agentic Design Patterns' guide written by a senior Google engineer — every chapter ships working code, all Amazon royalties go to Save the Children, $40 print price. Engagement-bait framing ('bookmark before it's buried') but the reference itself is a real, comprehensive resource.
 
 - **2026-05-07** | [Uncle Bob Martin](https://x.com/unclebobmartin/status/2052370749701214226) | prompting, claude-code
   Uncle Bob quote-tweets a viral post about Anthropic's 24-minute prompt-engineering workshop on YouTube — and notes a community Reader-added-context flag that the workshop was uploaded July 2025, not "just now". His take: driving an AI is its own engineering discipline.

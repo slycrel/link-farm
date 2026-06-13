@@ -12,12 +12,21 @@ Usage:
 """
 
 import json
+import os
 import sqlite3
 import re
 import sys
+import tempfile
 from pathlib import Path
 from collections import defaultdict
 from datetime import datetime
+
+# Writer lock is shared across all writers (sync, catch-up, curate, rebuild).
+try:
+    from .lock import writer_lock
+except ImportError:
+    sys.path.insert(0, str(Path(__file__).parent))
+    from lock import writer_lock
 
 SCRIPT_DIR = Path(__file__).parent
 DEFAULT_DB = SCRIPT_DIR / "ai_links.db"
@@ -63,6 +72,9 @@ def load_posts(db_path: Path) -> list[dict]:
             "SELECT audience FROM post_audiences WHERE post_id = ? ORDER BY rowid", (post_id,)
         ).fetchall()]
 
+        # New enrichment columns; older DBs without these migrations applied
+        # surface as None via dict.get, so callers degrade gracefully.
+        row_dict = dict(row)
         posts.append({
             'id': post_id,
             'date': row['date'],
@@ -81,6 +93,11 @@ def load_posts(db_path: Path) -> list[dict]:
             'enriched': bool(row['enriched']),
             'image': row['image'] or '',
             'source': row['source'] or 'email',
+            # Additive — present once migration 2 has run.
+            'enrichment_status': row_dict.get('enrichment_status') or '',
+            'enrichment_version': row_dict.get('enrichment_version') or 0,
+            'enrichment_attempts': row_dict.get('enrichment_attempts') or 0,
+            'enrichment_last_error': row_dict.get('enrichment_last_error') or '',
         })
 
     conn.close()
@@ -88,6 +105,29 @@ def load_posts(db_path: Path) -> list[dict]:
 
 
 # --- JSON generation ---
+
+def _atomic_write(path: Path, content: str) -> None:
+    """Write content to path via temp-file + rename for crash safety.
+
+    A reader that opens `path` during the write either sees the old content
+    or the new content — never a partial write. Important when the lock has
+    been acquired but a crash mid-write could still leave outputs torn.
+    """
+    path = Path(path)
+    # tempfile in the same directory so rename is atomic (same filesystem).
+    fd, tmp = tempfile.mkstemp(prefix=f".{path.name}.", suffix=".tmp", dir=path.parent)
+    try:
+        with os.fdopen(fd, "w") as f:
+            f.write(content)
+        os.replace(tmp, path)
+    except Exception:
+        # Best-effort cleanup of the temp file if rename failed.
+        try:
+            Path(tmp).unlink()
+        except FileNotFoundError:
+            pass
+        raise
+
 
 def generate_json(posts: list[dict], out_path: Path):
     """Generate backward-compatible JSON export."""
@@ -116,11 +156,20 @@ def generate_json(posts: list[dict], out_path: Path):
             entry['image'] = p['image']
         if p.get('source') and p['source'] != 'email':
             entry['source'] = p['source']
+        # Additive (post-migration 2) — only emit when meaningfully populated
+        # so old consumers reading the JSON keep their expected shape.
+        if p.get('enrichment_status'):
+            entry['enrichment_status'] = p['enrichment_status']
+        if p.get('enrichment_version'):
+            entry['enrichment_version'] = p['enrichment_version']
+        if p.get('enrichment_attempts'):
+            entry['enrichment_attempts'] = p['enrichment_attempts']
+        if p.get('enrichment_last_error'):
+            entry['enrichment_last_error'] = p['enrichment_last_error']
 
         export.append(entry)
 
-    with open(out_path, 'w') as f:
-        json.dump(export, f, indent=2, ensure_ascii=False)
+    _atomic_write(out_path, json.dumps(export, indent=2, ensure_ascii=False))
 
     print(f"  JSON: {len(export)} posts → {out_path.name}")
 
@@ -203,8 +252,7 @@ def generate_html(posts: list[dict], html_template_path: Path, out_path: Path):
 
     html = html[:start_idx] + new_section + html[end_idx:]
 
-    with open(out_path, 'w') as f:
-        f.write(html)
+    _atomic_write(out_path, html)
 
     print(f"  HTML: {len(posts)} posts → {out_path.name}")
 
@@ -322,31 +370,41 @@ def generate_markdown(posts: list[dict], out_path: Path):
             lines.append(f'  {p["summary"]}')
             lines.append('')
 
-    with open(out_path, 'w') as f:
-        f.write('\n'.join(lines))
+    _atomic_write(out_path, '\n'.join(lines))
 
     print(f"  Markdown: {total} posts → {out_path.name}")
 
 
 # --- Main ---
 
-def rebuild(db_path: Path = None, out_dir: Path = None):
-    """Main rebuild function — can be called from other scripts."""
+def rebuild(db_path: Path = None, out_dir: Path = None, with_lock: bool = True):
+    """Main rebuild function — can be called from other scripts.
+
+    Acquires the shared writer lock by default so concurrent sync / catch-up /
+    curate runs don't race on the generated artifacts. Callers already holding
+    the lock for a batch can pass with_lock=False to skip the nested acquire.
+    """
     db_path = db_path or DEFAULT_DB
     out_dir = out_dir or DEFAULT_OUT
 
-    print(f"Rebuilding from: {db_path}")
-    print(f"Output dir: {out_dir}")
+    def _do_rebuild():
+        print(f"Rebuilding from: {db_path}")
+        print(f"Output dir: {out_dir}")
 
-    posts = load_posts(db_path)
-    print(f"Loaded {len(posts)} posts from SQLite")
+        posts = load_posts(db_path)
+        print(f"Loaded {len(posts)} posts from SQLite")
 
-    generate_json(posts, out_dir / 'posts_final_v3.json')
-    generate_html(posts, out_dir / 'ai_links_collection_v3.html', out_dir / 'ai_links_collection_v3.html')
-    generate_markdown(posts, out_dir / 'ai_links_collection_v3.md')
+        generate_json(posts, out_dir / 'posts_final_v3.json')
+        generate_html(posts, out_dir / 'ai_links_collection_v3.html', out_dir / 'ai_links_collection_v3.html')
+        generate_markdown(posts, out_dir / 'ai_links_collection_v3.md')
 
-    print(f"\n✓ Rebuild complete ({len(posts)} posts)")
-    return posts
+        print(f"\n✓ Rebuild complete ({len(posts)} posts)")
+        return posts
+
+    if with_lock:
+        with writer_lock():
+            return _do_rebuild()
+    return _do_rebuild()
 
 
 def main():
