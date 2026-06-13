@@ -4,6 +4,32 @@
 **Enriched**: 619/619 (100%)
 
 ---
+## Morning view
+
+*Generated 2026-06-13T05:16:04Z. Hard-capped surface — see CURATION_DESIGN.md.*
+
+### Read now
+- **2026-06-09** — [Paweł Huryn](https://x.com/pawelhuryn/status/2064201950980096078) — *now • Agent Design • legacy enrichment*  
+  Lists six patterns for Anthropic-style dynamic agent workflows/loops: classify-and-act, fan-out-and-synthesize, adversarial verification, generate-and-filter, tournament (compare), and loop-until-done — each with a concrete example. Links his 'Claude Dynamic Workflows' guide.
+- **2026-06-09** — [rody](https://x.com/0x_rody/status/2063722061126651935) — *now • Questionable • 250.1K views • legacy enrichment*  
+  Near-duplicate of the darkzodchi post: quotes an 'Anthropic manager' that nobody types prompts from scratch and commands should live in the project; links the same Claude Code slash-command-library template/talk.
+- **2026-06-08** — [darkzodchi](https://x.com/zodchiii/status/2063559498078278109) — *now • Claude Code • legacy enrichment*  
+  Quotes 'Anthropic engineer Margot van Laer': any prompt you type more than twice should be a saved file. Links a template/article on building a Claude Code slash-command library; 33-min talk on reusable prompt patterns.
+- **2026-06-11** — [hoeem](https://x.com/hooeem/status/2065098599751471454) — *near-term • Agent Design • 5,506 views • legacy enrichment*  
+  Quote-tweets his own long-form X article 'Why you should not be looping & what to do instead' — a contrarian breakdown pushing back on the popular agentic self-looping pattern (taking aim at a 'leading voice in AI') and proposing alternatives. The substance is in the linked article; framing is deliberately provocative.
+- **2026-06-11** — [Nainsi Dwivedi](https://x.com/nainsidwiv50980/status/2064947761779208476) — *near-term • Dev Practices • 2,708 views • legacy enrichment*  
+  Alibaba open-sourced 'open-code-review' (Apache-2.0), the internal AI code reviewer that's run on their codebase for ~2 years — 20,000+ engineers, 1M+ reviews. Design: deterministic engineering handles what must never fail (file selection, bundling, rule matching, comment positioning) while the LLM only does context reading, codebase search, and reasoning. Claims ~1/5 the token cost of a generic agent + skills and precise line-level comments that don't drift on large changesets. Repo name: open-code-review.
+
+### Recurring this week
+*Concept tracking activates with the Layer 2 work (concept graph). Until then this section stays empty by design.*
+
+### Revisit from last month
+- **2026-03-24** — [Factory](https://x.com/factoryai/status/2036184745059688923) — *near-term • Agent Design • 166.6K views • legacy enrichment*  
+  Factory launches "Missions" — long-running agentic workflows now available to all users, built to automate large software tasks like app development from scratch, codebases migrations, and AI research. Strong signal that autonomous multi-step coding agents are going mainstream.
+- **2026-03-25** — [Poonam Soni](https://x.com/codebypoonam/status/2036517669684519362) — *near-term • Agent Design • 78.4K views • legacy enrichment*  
+  Teaser thread claiming Anthropic demonstrated a 3-agent system that builds production-quality apps from a single prompt in under 6 hours without human intervention. Architecture details promised in thread. Engagement-farming format ('Breaking') but the underlying multi-agent app-building claim is worth verifying.
+
+---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|

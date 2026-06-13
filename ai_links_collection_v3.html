@@ -289,6 +289,88 @@
             .row-tags { display: none; }
             .cards-grid { grid-template-columns: 1fr; }
         }
+
+        /* MORNING VIEW */
+        .morning-view {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+            padding: 18px 32px 22px;
+        }
+        .morning-view.collapsed .morning-grid { display: none; }
+        .morning-view.collapsed .morning-toggle::after { content: '▸'; }
+        .morning-view .morning-toggle::after { content: '▾'; margin-left: 6px; color: var(--text-muted); }
+        .morning-head {
+            display: flex; align-items: center; justify-content: space-between;
+            margin-bottom: 12px;
+        }
+        .morning-head h2 {
+            font-size: 0.95em; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 0.06em;
+            color: var(--text-secondary);
+            cursor: pointer; user-select: none;
+        }
+        .morning-meta { font-size: 0.78em; color: var(--text-muted); }
+        .morning-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 16px;
+        }
+        .morning-section h3 {
+            font-size: 0.82em; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 0.04em;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+            display: flex; justify-content: space-between; align-items: baseline;
+        }
+        .morning-section h3 .count {
+            font-size: 0.92em; color: var(--accent-blue); font-weight: 700;
+        }
+        .morning-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 10px 12px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: border-color 0.15s, background 0.15s;
+        }
+        .morning-card:hover { border-color: var(--border-light); background: var(--bg-card-hover); }
+        .morning-card .mc-meta {
+            font-size: 0.75em; color: var(--text-muted);
+            display: flex; justify-content: space-between;
+            margin-bottom: 4px;
+        }
+        .morning-card .mc-author { color: var(--accent-blue); font-weight: 600; }
+        .morning-card .mc-summary {
+            font-size: 0.9em; color: var(--text-primary);
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .morning-card .mc-reason {
+            font-size: 0.72em; color: var(--text-secondary);
+            margin-top: 5px; font-style: italic;
+        }
+        .morning-empty {
+            font-size: 0.85em; color: var(--text-muted); font-style: italic;
+            padding: 6px 0;
+        }
+        .morning-placeholder {
+            font-size: 0.85em; color: var(--text-muted); font-style: italic;
+            padding: 8px 12px;
+            border: 1px dashed var(--border);
+            border-radius: var(--radius);
+            background: transparent;
+        }
+        @media (max-width: 1024px) {
+            .morning-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 768px) {
+            .morning-view { padding: 14px 16px 18px; }
+            .morning-grid { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
@@ -343,9 +425,138 @@
     </div>
 </div>
 
+<div class="morning-view" id="morningView">
+    <div class="morning-head">
+        <h2 onclick="toggleMorning()" class="morning-toggle">Morning view</h2>
+        <div class="morning-meta" id="morningMeta"></div>
+    </div>
+    <div class="morning-grid" id="morningGrid"></div>
+</div>
+
 <div class="content" id="content"></div>
 
 <script>
+const MORNING_VIEW = {
+  "generated_at": "2026-06-13T05:16:04Z",
+  "read_now": [
+    {
+      "id": 2064201950980096078,
+      "date": "2026-06-09",
+      "author": "Paweł Huryn",
+      "handle": "@pawelhuryn",
+      "url": "https://x.com/pawelhuryn/status/2064201950980096078",
+      "summary": "Lists six patterns for Anthropic-style dynamic agent workflows/loops: classify-and-act, fan-out-and-synthesize, adversarial verification, generate-and-filter, tournament (compare), and loop-until-done — each with a concrete example. Links his 'Claude Dynamic Workflows' guide.",
+      "topics": [
+        "agent-design",
+        "claude-code",
+        "prompting"
+      ],
+      "priority": "now",
+      "views": "",
+      "reason": "now • Agent Design • legacy enrichment"
+    },
+    {
+      "id": 2063722061126651935,
+      "date": "2026-06-09",
+      "author": "rody",
+      "handle": "@0x_rody",
+      "url": "https://x.com/0x_rody/status/2063722061126651935",
+      "summary": "Near-duplicate of the darkzodchi post: quotes an 'Anthropic manager' that nobody types prompts from scratch and commands should live in the project; links the same Claude Code slash-command-library template/talk.",
+      "topics": [
+        "questionable",
+        "claude-code",
+        "prompting"
+      ],
+      "priority": "now",
+      "views": "250.1K",
+      "reason": "now • Questionable • 250.1K views • legacy enrichment"
+    },
+    {
+      "id": 2063559498078278109,
+      "date": "2026-06-08",
+      "author": "darkzodchi",
+      "handle": "@zodchiii",
+      "url": "https://x.com/zodchiii/status/2063559498078278109",
+      "summary": "Quotes 'Anthropic engineer Margot van Laer': any prompt you type more than twice should be a saved file. Links a template/article on building a Claude Code slash-command library; 33-min talk on reusable prompt patterns.",
+      "topics": [
+        "claude-code",
+        "prompting"
+      ],
+      "priority": "now",
+      "views": "",
+      "reason": "now • Claude Code • legacy enrichment"
+    },
+    {
+      "id": 2065098599751471454,
+      "date": "2026-06-11",
+      "author": "hoeem",
+      "handle": "@hooeem",
+      "url": "https://x.com/hooeem/status/2065098599751471454",
+      "summary": "Quote-tweets his own long-form X article 'Why you should not be looping & what to do instead' — a contrarian breakdown pushing back on the popular agentic self-looping pattern (taking aim at a 'leading voice in AI') and proposing alternatives. The substance is in the linked article; framing is deliberately provocative.",
+      "topics": [
+        "agent-design",
+        "prompting"
+      ],
+      "priority": "near-term",
+      "views": "5,506",
+      "reason": "near-term • Agent Design • 5,506 views • legacy enrichment"
+    },
+    {
+      "id": 2064947761779208476,
+      "date": "2026-06-11",
+      "author": "Nainsi Dwivedi",
+      "handle": "@nainsidwiv50980",
+      "url": "https://x.com/nainsidwiv50980/status/2064947761779208476",
+      "summary": "Alibaba open-sourced 'open-code-review' (Apache-2.0), the internal AI code reviewer that's run on their codebase for ~2 years — 20,000+ engineers, 1M+ reviews. Design: deterministic engineering handles what must never fail (file selection, bundling, rule matching, comment positioning) while the LLM only does context reading, codebase search, and reasoning. Claims ~1/5 the token cost of a generic agent + skills and precise line-level comments that don't drift on large changesets. Repo name: open-code-review.",
+      "topics": [
+        "dev-practices",
+        "agent-design",
+        "questionable"
+      ],
+      "priority": "near-term",
+      "views": "2,708",
+      "reason": "near-term • Dev Practices • 2,708 views • legacy enrichment"
+    }
+  ],
+  "recurring": {
+    "placeholder": true,
+    "message": "Concept tracking activates with the Layer 2 work (concept graph). Until then this section stays empty by design."
+  },
+  "revisit": [
+    {
+      "id": 2036184745059688923,
+      "date": "2026-03-24",
+      "author": "Factory",
+      "handle": "@FactoryAI",
+      "url": "https://x.com/factoryai/status/2036184745059688923",
+      "summary": "Factory launches \"Missions\" — long-running agentic workflows now available to all users, built to automate large software tasks like app development from scratch, codebases migrations, and AI research. Strong signal that autonomous multi-step coding agents are going mainstream.",
+      "topics": [
+        "agent-design",
+        "industry"
+      ],
+      "priority": "near-term",
+      "views": "166.6K",
+      "reason": "near-term • Agent Design • 166.6K views • legacy enrichment"
+    },
+    {
+      "id": 2036517669684519362,
+      "date": "2026-03-25",
+      "author": "Poonam Soni",
+      "handle": "@CodeByPoonam",
+      "url": "https://x.com/codebypoonam/status/2036517669684519362",
+      "summary": "Teaser thread claiming Anthropic demonstrated a 3-agent system that builds production-quality apps from a single prompt in under 6 hours without human intervention. Architecture details promised in thread. Engagement-farming format ('Breaking') but the underlying multi-agent app-building claim is worth verifying.",
+      "topics": [
+        "agent-design",
+        "claude-code",
+        "questionable"
+      ],
+      "priority": "near-term",
+      "views": "78.4K",
+      "reason": "near-term • Agent Design • 78.4K views • legacy enrichment"
+    }
+  ]
+};
+
 const POSTS = [
   { id: 'post-0', date: '2026-06-11', author: 'hoeem', handle: '@hooeem', subject: 'Post by hoeem on X', url: 'https://x.com/hooeem/status/2065098599751471454', summary: 'Quote-tweets his own long-form X article \'Why you should not be looping & what to do instead\' — a contrarian breakdown pushing back on the popular agentic self-looping pattern (taking aim at a \'leading voice in AI\') and proposing alternatives. The substance is in the linked article; framing is deliberately provocative.', topics: ["agent-design", "prompting"], audience: ["me", "dev-team"], priority: 'near-term', sourceType: 'tweet', views: '5,506', notes: '', enriched: true, content: 'hoeem @hooeem — A complete breakdown on looping. QT (own article): WHY YOU SHOULD NOT BE LOOPING & WHAT TO DO INSTEAD: You\'ve just read the title and made up your opinion already... I\'ve done my research here. (Contrarian take arguing against the common agent self-looping pattern, proposing alternatives.)' },
   { id: 'post-1', date: '2026-06-11', author: 'Nainsi Dwivedi', handle: '@nainsidwiv50980', subject: 'Post by Nainsi Dwivedi on X', url: 'https://x.com/nainsidwiv50980/status/2064947761779208476', summary: 'Alibaba open-sourced \'open-code-review\' (Apache-2.0), the internal AI code reviewer that\'s run on their codebase for ~2 years — 20,000+ engineers, 1M+ reviews. Design: deterministic engineering handles what must never fail (file selection, bundling, rule matching, comment positioning) while the LLM only does context reading, codebase search, and reasoning. Claims ~1/5 the token cost of a generic agent + skills and precise line-level comments that don\'t drift on large changesets. Repo name: open-code-review.', topics: ["dev-practices", "agent-design", "questionable"], audience: ["me", "dev-team"], priority: 'near-term', sourceType: 'tweet', views: '2,708', notes: '', enriched: true, content: 'Nainsi Dwivedi @NainsiDwiv50980 — Alibaba open-sourced its internal AI code reviewer (open-code-review), running their codebase for 2 years; battle-tested by 20,000+ engineers, 1M+ reviews, Apache-2.0, one command to install. Not yet another LLM wrapper. Generic-agent pain: skips files on big changesets, line numbers drift, quality changes with prompt tweaks. Alibaba\'s fix: don\'t let the LLM do everything. Deterministic engineering handles file selection, smart bundling, rule matching, comment positioning; the agent handles context reading, codebase search, deep reasoning. Result: ~1/5 token cost, precise line-level comments that don\'t drift, stable on massive changesets.' },
@@ -1233,7 +1444,100 @@ function render() {
     }
 }
 
+// ----- Morning view -----
+function toggleMorning() {
+    const el = document.getElementById('morningView');
+    el.classList.toggle('collapsed');
+    try { localStorage.setItem('morningCollapsed', el.classList.contains('collapsed') ? '1' : '0'); } catch (e) {}
+}
+
+function morningCardHtml(p) {
+    if (!p) return '';
+    const topic = (p.topics && p.topics[0]) || 'general';
+    const topicLbl = TOPIC_LABELS[topic] || topic;
+    const summary = p.summary || '';
+    const reason = p.reason || '';
+    const onClick = `onclick="jumpToPost(${JSON.stringify(String(p.id))})"`;
+    return `<div class="morning-card" ${onClick} title="Click to jump to post">
+        <div class="mc-meta">
+            <span class="mc-author">${esc(p.author || '?')}</span>
+            <span class="mc-date">${esc(p.date || '')}</span>
+        </div>
+        <div class="mc-summary">${esc(summary)}</div>
+        <div class="mc-reason">${esc(reason || topicLbl)}</div>
+    </div>`;
+}
+
+function jumpToPost(postId) {
+    // postId in MORNING_VIEW is the SQLite id; rendered POSTS use 'post-<index>'
+    // for their card id but carry the same id on their data. Find by data id.
+    const target = POSTS.find(p => String(p.id) === String(postId) || String(p.url).includes(String(postId)));
+    if (!target) return;
+    // Clear filters and search so the post is visible, then scroll.
+    document.querySelectorAll('.pill[data-filter]').forEach(b => b.className = 'pill');
+    const search = document.getElementById('searchInput');
+    if (search) { search.value = ''; }
+    activeFilters = { topic: [], priority: [], audience: [], enriched: [] };
+    searchQuery = '';
+    render();
+    // After render, scroll to the row.
+    setTimeout(() => {
+        const row = document.querySelector(`[onclick*="${target.id}"]`);
+        if (row) row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 50);
+}
+
+function renderMorningView() {
+    const mv = (typeof MORNING_VIEW === 'object' && MORNING_VIEW) || {};
+    const meta = document.getElementById('morningMeta');
+    if (meta) {
+        const ts = mv.generated_at || '';
+        meta.textContent = ts ? `as of ${ts}` : '';
+    }
+    const grid = document.getElementById('morningGrid');
+    if (!grid) return;
+
+    const rn = mv.read_now || [];
+    const rv = mv.revisit || [];
+    const rec = mv.recurring || {};
+
+    const readNowHtml = rn.length
+        ? rn.map(morningCardHtml).join('')
+        : `<div class="morning-empty">Nothing fresh in the last week marked actionable.</div>`;
+    const revisitHtml = rv.length
+        ? rv.map(morningCardHtml).join('')
+        : `<div class="morning-empty">No stale actionable posts in the revisit window.</div>`;
+    const recurringHtml = rec.placeholder
+        ? `<div class="morning-placeholder">${esc(rec.message || 'Concept tracking activates with Layer 2.')}</div>`
+        : (rec.items || []).map(c =>
+            `<div class="morning-card"><div class="mc-meta"><span class="mc-author">${esc(c.name)}</span><span>${c.count||0} posts</span></div><div class="mc-summary">${esc(c.description||'')}</div></div>`
+          ).join('') || `<div class="morning-empty">No recurring concepts.</div>`;
+
+    grid.innerHTML = `
+        <div class="morning-section">
+            <h3>Read now <span class="count">${rn.length}</span></h3>
+            ${readNowHtml}
+        </div>
+        <div class="morning-section">
+            <h3>Recurring this week <span class="count">${rec.placeholder ? '—' : (rec.items||[]).length}</span></h3>
+            ${recurringHtml}
+        </div>
+        <div class="morning-section">
+            <h3>Revisit from last month <span class="count">${rv.length}</span></h3>
+            ${revisitHtml}
+        </div>
+    `;
+
+    // Restore collapsed state if remembered.
+    try {
+        if (localStorage.getItem('morningCollapsed') === '1') {
+            document.getElementById('morningView').classList.add('collapsed');
+        }
+    } catch (e) {}
+}
+
 // Init
+renderMorningView();
 render();
 
 // Keyboard shortcut: Escape to clear search

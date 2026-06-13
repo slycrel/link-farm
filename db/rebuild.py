@@ -50,6 +50,132 @@ TOPIC_LABELS = {
     'questionable': 'Questionable',
 }
 
+# Hard caps on the morning view. Per CURATION_DESIGN.md these are guesses to
+# tune by use; the *shape* of fixed-size sections matters more than the exact
+# numbers. Infinite-scroll surfaces violate the attention budget the system
+# exists to protect.
+MORNING_READ_NOW_CAP = 5
+MORNING_RECURRING_CAP = 5
+MORNING_REVISIT_CAP = 2
+
+# Days of grace before a `now`/`near-term` post counts as "revisit" material.
+MORNING_REVISIT_MIN_AGE_DAYS = 30
+MORNING_READ_NOW_RECENT_DAYS = 7
+
+
+# --- Morning view computation ---
+
+def _parse_date(date_str: str):
+    """Return a datetime.date or None for malformed inputs."""
+    try:
+        return datetime.strptime(date_str, '%Y-%m-%d').date()
+    except (TypeError, ValueError):
+        return None
+
+
+def _topic_label(topic: str) -> str:
+    return TOPIC_LABELS.get(topic, topic)
+
+
+def _one_line_reason(p: dict) -> str:
+    """Compose a short 'why this surfaced' tag for a morning-view post."""
+    parts = []
+    if p.get('priority'):
+        parts.append(p['priority'])
+    primary_topic = (p.get('topics') or ['general'])[0]
+    parts.append(_topic_label(primary_topic))
+    if p.get('views'):
+        parts.append(f"{p['views']} views")
+    # Quality / status hints — useful given the legacy-ok vs ok distinction.
+    status = p.get('enrichment_status') or ''
+    if status == 'ok':
+        parts.append('v1 enriched')
+    elif status == 'legacy-ok':
+        parts.append('legacy enrichment')
+    elif status == 'partial':
+        parts.append('partial capture')
+    return ' • '.join(parts)
+
+
+def compute_morning_view(posts: list[dict], today=None) -> dict:
+    """Compute the daily morning surface from the full post list.
+
+    Returns a dict with three lists ('read_now', 'recurring', 'revisit') and
+    a meta header. Each section is hard-capped; passing in 50K posts will
+    produce the same shape as passing in 50.
+
+    `read_now`     — high-confidence near-term-actionable posts captured
+                     in the last MORNING_READ_NOW_RECENT_DAYS. Priority 'now'
+                     ranks above 'near-term'. Excludes `dead` and `partial`.
+    `recurring`    — placeholder until Layer 2 (concept graph) lands. The
+                     viewer renders a "Concept tracking activates with Layer 2"
+                     message for this section.
+    `revisit`      — posts marked 'now' or 'near-term' that are
+                     MORNING_REVISIT_MIN_AGE_DAYS+ old. The "did I actually
+                     pay attention to what I said was urgent" check.
+    """
+    today = today or datetime.utcnow().date()
+    recent_cutoff = today.toordinal() - MORNING_READ_NOW_RECENT_DAYS
+    revisit_cutoff = today.toordinal() - MORNING_REVISIT_MIN_AGE_DAYS
+
+    read_now: list[dict] = []
+    revisit: list[dict] = []
+    for p in posts:
+        d = _parse_date(p.get('date'))
+        if d is None:
+            continue
+        status = p.get('enrichment_status') or ''
+        if status == 'dead':
+            continue  # don't surface dead posts in the daily view
+        priority = p.get('priority') or ''
+
+        # Read now: recent + priority is now/near-term + meaningfully enriched.
+        if d.toordinal() >= recent_cutoff and priority in ('now', 'near-term') \
+                and status in ('ok', 'legacy-ok'):
+            read_now.append(p)
+
+        # Revisit: older actionable posts that should have been acted on.
+        elif d.toordinal() <= revisit_cutoff and priority in ('now', 'near-term') \
+                and status in ('ok', 'legacy-ok'):
+            revisit.append(p)
+
+    # Rank read_now: `now` > `near-term`, then by date desc.
+    priority_rank = {'now': 0, 'near-term': 1, 'long-term': 2}
+    read_now.sort(key=lambda p: (
+        priority_rank.get(p.get('priority') or '', 9),
+        -(_parse_date(p.get('date')).toordinal() if _parse_date(p.get('date')) else 0),
+    ))
+    read_now = read_now[:MORNING_READ_NOW_CAP]
+
+    # Revisit: oldest "still on the list" goes first — they're the most-stale.
+    revisit.sort(key=lambda p: _parse_date(p.get('date')).toordinal() if _parse_date(p.get('date')) else 0)
+    revisit = revisit[:MORNING_REVISIT_CAP]
+
+    def _slim(p: dict) -> dict:
+        return {
+            'id': p.get('id'),
+            'date': p.get('date'),
+            'author': p.get('author'),
+            'handle': p.get('handle'),
+            'url': p.get('url'),
+            'summary': p.get('summary'),
+            'topics': p.get('topics') or [],
+            'priority': p.get('priority'),
+            'views': p.get('views'),
+            'reason': _one_line_reason(p),
+        }
+
+    return {
+        'generated_at': datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ'),
+        'read_now': [_slim(p) for p in read_now],
+        'recurring': {
+            'placeholder': True,
+            'message': 'Concept tracking activates with the Layer 2 work (concept graph). '
+                       'Until then this section stays empty by design.',
+        },
+        'revisit': [_slim(p) for p in revisit],
+    }
+
 
 # --- Data access ---
 
@@ -219,38 +345,54 @@ def generate_posts_js_array(posts: list[dict]) -> str:
     return '\n'.join(lines)
 
 
-def generate_html(posts: list[dict], html_template_path: Path, out_path: Path):
-    """Regenerate the HTML by replacing the POSTS array in the existing template."""
-    with open(html_template_path) as f:
-        html = f.read()
+def _replace_js_const(html: str, marker_start: str, open_bracket: str, close_bracket: str,
+                       new_body: str) -> str:
+    """Replace a balanced JS literal (array `[]` or object `{}`) bound to a const.
 
-    # Find and replace the POSTS array
-    # Pattern: from "const POSTS = [" to the matching "];"
-    start_marker = 'const POSTS = ['
-    end_marker = '];'
-
-    start_idx = html.index(start_marker)
-    # Find the end marker after the start
-    # We need to find the "];" that closes the POSTS array
-    # The array content is between the "[" and "];"
-    bracket_start = start_idx + len(start_marker) - 1  # position of "["
-
-    # Find the matching "];" — scan forward counting brackets
+    Scans from `marker_start` forward, finds the matching `close_bracket` by
+    counting nested `open_bracket`/`close_bracket` pairs, and replaces the body
+    between (and including) the outermost pair.
+    """
+    start_idx = html.index(marker_start)
+    bracket_start = start_idx + len(marker_start) - 1  # position of opening bracket
+    assert html[bracket_start] == open_bracket, \
+        f"Expected '{open_bracket}' at marker boundary in {marker_start!r}"
     depth = 1
     pos = bracket_start + 1
     while depth > 0 and pos < len(html):
-        if html[pos] == '[':
+        c = html[pos]
+        if c == open_bracket:
             depth += 1
-        elif html[pos] == ']':
+        elif c == close_bracket:
             depth -= 1
         pos += 1
-    # pos is now right after the closing "]"
-    end_idx = pos  # should point to ";"
+    # pos is now right after the closing bracket
+    end_idx = pos
+    replacement = marker_start + new_body + close_bracket
+    return html[:start_idx] + replacement + html[end_idx:]
 
+
+def generate_html(posts: list[dict], html_template_path: Path, out_path: Path,
+                  morning_view: dict = None):
+    """Regenerate the HTML by replacing the POSTS array and MORNING_VIEW object."""
+    with open(html_template_path) as f:
+        html = f.read()
+
+    # Replace POSTS array.
     new_array = generate_posts_js_array(posts)
-    new_section = f'const POSTS = [\n{new_array}\n]'
+    html = _replace_js_const(html, 'const POSTS = [', '[', ']', f'\n{new_array}\n')
 
-    html = html[:start_idx] + new_section + html[end_idx:]
+    # Replace MORNING_VIEW object if the template has it. Older templates that
+    # predate the morning surface don't carry the marker — silently skip in
+    # that case so the rebuild still works during the template migration.
+    if morning_view is not None and 'const MORNING_VIEW = {' in html:
+        morning_body = json.dumps(morning_view, indent=2, ensure_ascii=False)
+        # Strip the outermost braces from json.dumps output to match how
+        # _replace_js_const reassembles around them.
+        inner = morning_body.strip()
+        assert inner.startswith('{') and inner.endswith('}'), 'unexpected json shape'
+        inner = inner[1:-1]
+        html = _replace_js_const(html, 'const MORNING_VIEW = {', '{', '}', inner)
 
     _atomic_write(out_path, html)
 
@@ -266,7 +408,7 @@ def truncate(s: str, max_len: int = 70) -> str:
     return s[:max_len].rstrip() + '...'
 
 
-def generate_markdown(posts: list[dict], out_path: Path):
+def generate_markdown(posts: list[dict], out_path: Path, morning_view: dict = None):
     """Generate the markdown companion file."""
     total = len(posts)
     enriched_count = sum(1 for p in posts if p['enriched'])
@@ -282,6 +424,48 @@ def generate_markdown(posts: list[dict], out_path: Path):
     lines.append(f'**Date Range**: {date_min} – {date_max}  ')
     lines.append(f'**Enriched**: {enriched_count}/{total} ({100*enriched_count//total if total else 0}%)')
     lines.append('')
+
+    # Morning view (at the top, hard-capped — this is the "what should I read now" surface)
+    if morning_view:
+        lines.append('---')
+        lines.append('## Morning view')
+        lines.append('')
+        lines.append(f"*Generated {morning_view.get('generated_at', '')}. Hard-capped surface — see CURATION_DESIGN.md.*")
+        lines.append('')
+
+        lines.append('### Read now')
+        rn = morning_view.get('read_now') or []
+        if not rn:
+            lines.append('*Nothing fresh in the last week marked actionable.*')
+        else:
+            for p in rn:
+                url_part = f'[{p["author"]}]({p["url"]})' if p.get('url') else (p.get('author') or '?')
+                lines.append(f"- **{p.get('date')}** — {url_part} — *{p.get('reason','')}*  ")
+                if p.get('summary'):
+                    lines.append(f"  {p['summary']}")
+        lines.append('')
+
+        lines.append('### Recurring this week')
+        rec = morning_view.get('recurring') or {}
+        if rec.get('placeholder'):
+            lines.append(f"*{rec.get('message','')}*")
+        else:
+            # Future-proofing for when concepts are live.
+            for c in rec.get('items', []):
+                lines.append(f"- **{c.get('name')}** ({c.get('count', 0)} posts) — {c.get('description','')}")
+        lines.append('')
+
+        lines.append('### Revisit from last month')
+        rv = morning_view.get('revisit') or []
+        if not rv:
+            lines.append('*No stale actionable posts in the revisit window.*')
+        else:
+            for p in rv:
+                url_part = f'[{p["author"]}]({p["url"]})' if p.get('url') else (p.get('author') or '?')
+                lines.append(f"- **{p.get('date')}** — {url_part} — *{p.get('reason','')}*  ")
+                if p.get('summary'):
+                    lines.append(f"  {p['summary']}")
+        lines.append('')
 
     # Topic distribution
     topic_counts = defaultdict(int)
@@ -394,9 +578,17 @@ def rebuild(db_path: Path = None, out_dir: Path = None, with_lock: bool = True):
         posts = load_posts(db_path)
         print(f"Loaded {len(posts)} posts from SQLite")
 
+        morning_view = compute_morning_view(posts)
+        rn = len(morning_view.get('read_now') or [])
+        rv = len(morning_view.get('revisit') or [])
+        print(f"Morning view: Read now {rn}, Recurring (placeholder), Revisit {rv}")
+
         generate_json(posts, out_dir / 'posts_final_v3.json')
-        generate_html(posts, out_dir / 'ai_links_collection_v3.html', out_dir / 'ai_links_collection_v3.html')
-        generate_markdown(posts, out_dir / 'ai_links_collection_v3.md')
+        generate_html(posts, out_dir / 'ai_links_collection_v3.html',
+                      out_dir / 'ai_links_collection_v3.html',
+                      morning_view=morning_view)
+        generate_markdown(posts, out_dir / 'ai_links_collection_v3.md',
+                          morning_view=morning_view)
 
         print(f"\n✓ Rebuild complete ({len(posts)} posts)")
         return posts
