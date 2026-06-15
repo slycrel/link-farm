@@ -246,9 +246,40 @@ def _compute_recurring_section() -> dict:
 # --- Data access ---
 
 def load_posts(db_path: Path) -> list[dict]:
-    """Load all posts from SQLite with topics and audiences joined."""
+    """Load all posts from SQLite with topics, audiences, and perspectives joined.
+
+    `priority` is the *effective* priority under the default `tool-eval` lens
+    (perspective row wins, falls back to legacy `posts.priority`). A separate
+    `perspectives` dict on each post carries `{lens: priority}` for every lens
+    the post has rows under — the viewer's lens-switcher reads this.
+    """
+    # Pre-compute effective priorities under tool-eval in a single query
+    # (avoids N+1 over all posts).
+    try:
+        try:
+            from .perspectives import load_priorities_by_lens, DEFAULT_LENS
+        except ImportError:
+            import sys as _sys
+            _sys.path.insert(0, str(Path(__file__).parent))
+            from perspectives import load_priorities_by_lens, DEFAULT_LENS
+        eff_priorities = load_priorities_by_lens(DEFAULT_LENS, db_path)
+    except Exception:
+        # Pre-migration-7 fallback — just use whatever posts.priority says.
+        eff_priorities = {}
+
     conn = sqlite3.connect(str(db_path))
     conn.row_factory = sqlite3.Row
+
+    # Pre-fetch all perspective rows so we can hand each post its full overlay.
+    perspectives_by_post: dict[int, dict[str, str]] = {}
+    try:
+        for r in conn.execute(
+            "SELECT post_id, lens, priority FROM post_perspectives WHERE priority IS NOT NULL"
+        ):
+            perspectives_by_post.setdefault(r['post_id'], {})[r['lens']] = r['priority']
+    except sqlite3.OperationalError:
+        # Table doesn't exist yet — pre-migration-7
+        pass
 
     posts = []
     rows = conn.execute("SELECT * FROM posts ORDER BY date DESC, id DESC").fetchall()
@@ -264,6 +295,9 @@ def load_posts(db_path: Path) -> list[dict]:
             "SELECT audience FROM post_audiences WHERE post_id = ? ORDER BY rowid", (post_id,)
         ).fetchall()]
 
+        # Effective priority: tool-eval perspective wins, fall back to posts.priority.
+        effective_priority = eff_priorities.get(post_id) or row['priority'] or 'near-term'
+
         # New enrichment columns; older DBs without these migrations applied
         # surface as None via dict.get, so callers degrade gracefully.
         row_dict = dict(row)
@@ -278,7 +312,7 @@ def load_posts(db_path: Path) -> list[dict]:
             'content': row['content'] or '',
             'topics': topics,
             'audience': audiences,
-            'priority': row['priority'] or 'near-term',
+            'priority': effective_priority,
             'sourceType': row['source_type'] or 'tweet',
             'views': row['views'] or '',
             'notes': row['notes'] or '',
@@ -290,6 +324,8 @@ def load_posts(db_path: Path) -> list[dict]:
             'enrichment_version': row_dict.get('enrichment_version') or 0,
             'enrichment_attempts': row_dict.get('enrichment_attempts') or 0,
             'enrichment_last_error': row_dict.get('enrichment_last_error') or '',
+            # Layer 3 — per-lens priorities. Empty for pre-migration-7 DBs.
+            'perspectives': perspectives_by_post.get(post_id, {}),
         })
 
     conn.close()
@@ -386,6 +422,8 @@ def generate_posts_js_array(posts: list[dict]) -> str:
     for i, p in enumerate(posts):
         topics_js = json.dumps(p['topics'])
         audience_js = json.dumps(p['audience'])
+        # Compact JSON for perspectives — usually empty or 1-2 keys.
+        perspectives_js = json.dumps(p.get('perspectives') or {})
 
         line = (
             f"  {{ id: 'post-{i}', "
@@ -398,6 +436,7 @@ def generate_posts_js_array(posts: list[dict]) -> str:
             f"topics: {topics_js}, "
             f"audience: {audience_js}, "
             f"priority: '{js_escape(p['priority'])}', "
+            f"perspectives: {perspectives_js}, "
             f"sourceType: '{js_escape(p['sourceType'])}', "
             f"views: '{js_escape(p['views'])}', "
             f"notes: '{js_escape(p['notes'])}', "

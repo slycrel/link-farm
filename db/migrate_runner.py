@@ -140,6 +140,42 @@ def migrate_005_backfill_enrichment_status(conn):
     # enriched=0 rows keep the default 'unattempted'. No action needed.
 
 
+def migrate_007_post_perspectives(conn):
+    """Layer 3 perspective lenses: `post_perspectives` overlay table.
+
+    Per CURATION_DESIGN.md Layer 3. The composition-not-inheritance shape:
+    `posts.priority` becomes a read-only legacy fallback after this migration;
+    all priority writes go to `post_perspectives` rows under the relevant lens.
+
+    Backfill: every existing post gets one `tool-eval` perspective row with
+    its current `posts.priority` value, so reads through
+    `get_effective_priority(post_id, 'tool-eval')` keep working.
+
+    The `audience` column is intentionally NOT in this schema — per design
+    (H4 in the review), `post_audiences` stays as the m2m source of truth.
+    If team sharing ever needs per-lens audiences, add a separate
+    `post_perspective_audiences(post_id, lens, audience)` junction.
+    """
+    conn.executescript("""
+        CREATE TABLE post_perspectives (
+            post_id     INTEGER NOT NULL REFERENCES posts(id) ON DELETE CASCADE,
+            lens        TEXT NOT NULL,         -- 'tool-eval' | 'theme' | 'routing' | 'strategy' | 'zeitgeist' | ...
+            priority    TEXT,                  -- 'now' | 'near-term' | 'long-term' | NULL
+            notes       TEXT,
+            updated_at  TEXT DEFAULT (datetime('now')),
+            PRIMARY KEY (post_id, lens)
+        );
+        CREATE INDEX idx_perspectives_lens ON post_perspectives(lens);
+        CREATE INDEX idx_perspectives_priority ON post_perspectives(lens, priority);
+
+        -- Seed tool-eval rows from existing posts.priority. tool-eval is the
+        -- default lens — the lens-agnostic priority value lives here now.
+        INSERT INTO post_perspectives (post_id, lens, priority)
+            SELECT id, 'tool-eval', priority FROM posts
+             WHERE priority IS NOT NULL;
+    """)
+
+
 def migrate_006_concept_graph(conn):
     """Layer 2 concept graph: concepts, concept_observations, post_concepts
     (canonical), discovery_runs, post_embeddings.
@@ -251,6 +287,8 @@ MIGRATIONS = [
     (5, "Conservative backfill of enrichment_status", migrate_005_backfill_enrichment_status),
     (6, "Concept graph (Layer 2): concepts, observations, post_concepts, discovery_runs, post_embeddings",
      migrate_006_concept_graph),
+    (7, "Perspective lenses (Layer 3): post_perspectives overlay + backfill tool-eval rows",
+     migrate_007_post_perspectives),
 ]
 
 

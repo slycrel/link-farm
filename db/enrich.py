@@ -247,6 +247,12 @@ def record_enrichment(post_id: int, *,
             )
 
             # Update post row.
+            #
+            # Note: per CURATION_DESIGN.md Layer 3, `posts.priority` is
+            # read-only after migration 7 — all priority writes go to
+            # `post_perspectives`. We DO NOT include `priority` in the
+            # posts UPDATE below. The perspective write happens after the
+            # row update, under the same transaction.
             updates = [
                 "summary = ?",
                 "content = ?",
@@ -275,11 +281,21 @@ def record_enrichment(post_id: int, *,
             if views is not None:
                 updates.append("views = ?")
                 params.append(views)
-            if priority is not None:
-                updates.append("priority = ?")
-                params.append(priority)
             params.append(post_id)
             conn.execute(f"UPDATE posts SET {', '.join(updates)} WHERE id = ?", params)
+
+            # Priority write: goes to post_perspectives, NOT posts.priority.
+            # We do this inline (not via db.perspectives.set_priority) to keep
+            # the whole enrichment write in one transaction. Mirrors the upsert
+            # semantics there.
+            if priority is not None:
+                conn.execute("""
+                    INSERT INTO post_perspectives (post_id, lens, priority, updated_at)
+                    VALUES (?, 'tool-eval', ?, datetime('now'))
+                    ON CONFLICT(post_id, lens) DO UPDATE SET
+                        priority   = excluded.priority,
+                        updated_at = excluded.updated_at
+                """, (post_id, priority))
 
             # Replace thread segments.
             conn.execute("DELETE FROM post_thread_segments WHERE post_id = ?", (post_id,))

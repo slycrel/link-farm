@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-06-15T22:59:01Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-06-15T23:13:29Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-06-09** — [Paweł Huryn](https://x.com/pawelhuryn/status/2064201950980096078) — *now • Agent Design • legacy enrichment*  
