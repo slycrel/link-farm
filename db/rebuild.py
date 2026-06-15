@@ -61,6 +61,9 @@ MORNING_REVISIT_CAP = 2
 # Days of grace before a `now`/`near-term` post counts as "revisit" material.
 MORNING_REVISIT_MIN_AGE_DAYS = 30
 MORNING_READ_NOW_RECENT_DAYS = 7
+# Recurring window is the design doc's "this week" loosely — 14 days gives a
+# meaningful set at current corpus density. Tune as concept count grows.
+MORNING_RECURRING_WINDOW_DAYS = 14
 
 
 # --- Morning view computation ---
@@ -168,12 +171,75 @@ def compute_morning_view(posts: list[dict], today=None) -> dict:
     return {
         'generated_at': datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ'),
         'read_now': [_slim(p) for p in read_now],
-        'recurring': {
-            'placeholder': True,
-            'message': 'Concept tracking activates with the Layer 2 work (concept graph). '
-                       'Until then this section stays empty by design.',
-        },
+        'recurring': _compute_recurring_section(),
         'revisit': [_slim(p) for p in revisit],
+    }
+
+
+def _compute_recurring_section() -> dict:
+    """Build the 'Recurring this week' section from the concept graph.
+
+    Imports db.concepts lazily so a stale DB without migration 6 still
+    produces a sensible (empty) section instead of erroring on import.
+    """
+    try:
+        try:
+            from .concepts import recent_active_concepts, top_posts_for_concept
+        except ImportError:
+            # Run as `python3 db/rebuild.py` — package context not set up.
+            import sys as _sys
+            _sys.path.insert(0, str(Path(__file__).parent))
+            from concepts import recent_active_concepts, top_posts_for_concept
+    except Exception as e:
+        return {
+            'placeholder': True,
+            'message': f'Concept graph unavailable: {e}',
+        }
+
+    try:
+        concepts = recent_active_concepts(
+            days=MORNING_RECURRING_WINDOW_DAYS,
+            limit=MORNING_RECURRING_CAP,
+        )
+    except Exception as e:
+        # Tables might not exist yet on a fresh-from-old-snapshot DB.
+        return {
+            'placeholder': True,
+            'message': f'Concept graph not yet initialized: {e}',
+        }
+
+    if not concepts:
+        return {
+            'placeholder': True,
+            'message': (
+                f'No concepts gained new evidence in the last '
+                f'{MORNING_RECURRING_WINDOW_DAYS} days. Run mechanical discovery '
+                f'or seed curated concepts to populate this section.'
+            ),
+        }
+
+    items = []
+    for c in concepts:
+        posts = top_posts_for_concept(c['id'], limit=3)
+        items.append({
+            'id': c['id'],
+            'name': c['name'],
+            'description': c.get('description') or '',
+            'count': c.get('post_count') or 0,
+            'recent_count': c.get('recent_post_count') or 0,
+            'last_post_date': c.get('last_post_date') or '',
+            'top_posts': [{
+                'id': p['id'],
+                'date': p.get('date') or '',
+                'author': p.get('author') or '',
+                'url': p.get('url') or '',
+                'summary': (p.get('summary') or '')[:160],
+            } for p in posts],
+        })
+    return {
+        'placeholder': False,
+        'window_days': MORNING_RECURRING_WINDOW_DAYS,
+        'items': items,
     }
 
 
@@ -450,9 +516,22 @@ def generate_markdown(posts: list[dict], out_path: Path, morning_view: dict = No
         if rec.get('placeholder'):
             lines.append(f"*{rec.get('message','')}*")
         else:
-            # Future-proofing for when concepts are live.
+            window = rec.get('window_days', '?')
+            lines.append(f"*Concepts with new evidence in the last {window} days. "
+                         f"Ranked by recent post count.*")
+            lines.append('')
             for c in rec.get('items', []):
-                lines.append(f"- **{c.get('name')}** ({c.get('count', 0)} posts) — {c.get('description','')}")
+                recent_part = f"+{c.get('recent_count', 0)} this week" if c.get('recent_count') else ''
+                lines.append(f"- **{c.get('name')}** "
+                             f"({c.get('count', 0)} posts" +
+                             (f", {recent_part}" if recent_part else '') + ")  ")
+                if c.get('description'):
+                    lines.append(f"  {c['description']}")
+                for p in (c.get('top_posts') or [])[:2]:
+                    url_part = f"[{p.get('author','?')}]({p['url']})" if p.get('url') else (p.get('author') or '?')
+                    lines.append(f"    - {p.get('date','')} — {url_part}: "
+                                 f"{(p.get('summary') or '')[:140]}{'…' if len(p.get('summary') or '') > 140 else ''}")
+                lines.append('')
         lines.append('')
 
         lines.append('### Revisit from last month')
@@ -581,7 +660,10 @@ def rebuild(db_path: Path = None, out_dir: Path = None, with_lock: bool = True):
         morning_view = compute_morning_view(posts)
         rn = len(morning_view.get('read_now') or [])
         rv = len(morning_view.get('revisit') or [])
-        print(f"Morning view: Read now {rn}, Recurring (placeholder), Revisit {rv}")
+        rec = morning_view.get('recurring') or {}
+        rec_count = 0 if rec.get('placeholder') else len(rec.get('items') or [])
+        rec_tag = '(placeholder)' if rec.get('placeholder') else f'{rec_count} concepts'
+        print(f"Morning view: Read now {rn}, Recurring {rec_tag}, Revisit {rv}")
 
         generate_json(posts, out_dir / 'posts_final_v3.json')
         generate_html(posts, out_dir / 'ai_links_collection_v3.html',

@@ -140,6 +140,107 @@ def migrate_005_backfill_enrichment_status(conn):
     # enriched=0 rows keep the default 'unattempted'. No action needed.
 
 
+def migrate_006_concept_graph(conn):
+    """Layer 2 concept graph: concepts, concept_observations, post_concepts
+    (canonical), discovery_runs, post_embeddings.
+
+    Per CURATION_DESIGN.md Layer 2. The candidate/canonical split is the
+    architectural decision the adversarial review's Takeaway 1 endorsed:
+    concept_observations is the immutable provenance log; post_concepts is
+    the curator's truth (one row per (post, concept) reflecting Jeremy's
+    promote/merge decisions).
+
+    post_embeddings is spec'd here (per Revision 3 of the design doc) so the
+    semantic discovery step doesn't have to invent the shape. NOT populated
+    by this migration — built in step 6.
+    """
+    conn.executescript("""
+        -- Curated/discovered concepts. A concept is a thread of thinking
+        -- that spans multiple posts.
+        CREATE TABLE concepts (
+            id          INTEGER PRIMARY KEY AUTOINCREMENT,
+            name        TEXT NOT NULL,
+            description TEXT,
+            source      TEXT NOT NULL DEFAULT 'curated',  -- 'discovered' | 'curated' | 'merged'
+            status      TEXT NOT NULL DEFAULT 'active',    -- 'active' | 'archived' | 'merged-into'
+            merged_into INTEGER REFERENCES concepts(id),
+            created_at  TEXT DEFAULT (datetime('now')),
+            updated_at  TEXT DEFAULT (datetime('now'))
+        );
+        CREATE INDEX idx_concepts_status ON concepts(status);
+        CREATE INDEX idx_concepts_source ON concepts(source);
+
+        -- Batch provenance for discovery passes. Helps with reproducibility,
+        -- cost tracking, and noticing when a persona/model produces noise.
+        CREATE TABLE discovery_runs (
+            id                     INTEGER PRIMARY KEY AUTOINCREMENT,
+            started_at             TEXT DEFAULT (datetime('now')),
+            finished_at            TEXT,
+            source                 TEXT NOT NULL,        -- 'mechanical' | 'semantic' | 'latent'
+            persona                TEXT,                  -- null for mechanical
+            model                  TEXT,                  -- null for mechanical
+            sampling_strategy      TEXT,                  -- free-form: 'shared-external-url', 'shared-mention', etc.
+            blinding_strategy      TEXT,
+            posts_examined         INTEGER,
+            observations_created   INTEGER,
+            notes                  TEXT
+        );
+        CREATE INDEX idx_runs_source ON discovery_runs(source);
+        CREATE INDEX idx_runs_started_at ON discovery_runs(started_at);
+
+        -- Immutable history. One row per (post, concept) discovery event,
+        -- per source/persona/model. Aggregation across rows is a query
+        -- concern; multiple rows for the same pair indicate corroboration.
+        CREATE TABLE concept_observations (
+            id                   INTEGER PRIMARY KEY AUTOINCREMENT,
+            post_id              INTEGER NOT NULL REFERENCES posts(id) ON DELETE CASCADE,
+            concept_id           INTEGER NOT NULL REFERENCES concepts(id) ON DELETE CASCADE,
+            role_suggestion      TEXT NOT NULL DEFAULT 'evidence',  -- 'evidence' | 'counter-example' | 'tangential' | 'origin'
+            raw_score            REAL NOT NULL DEFAULT 1.0,         -- NOT comparable across kinds
+            score_kind           TEXT NOT NULL,                      -- 'mechanical-overlap' | 'cosine-similarity' | 'llm-self-report'
+            source               TEXT NOT NULL,                      -- 'mechanical' | 'semantic' | 'latent'
+            discovery_run_id     INTEGER REFERENCES discovery_runs(id),
+            discovery_persona    TEXT,
+            discovery_model      TEXT,
+            status               TEXT NOT NULL DEFAULT 'pending',    -- 'pending' | 'promoted' | 'dismissed' | 'superseded'
+            observed_at          TEXT DEFAULT (datetime('now')),
+            notes                TEXT
+        );
+        CREATE INDEX idx_observations_post ON concept_observations(post_id);
+        CREATE INDEX idx_observations_concept ON concept_observations(concept_id);
+        CREATE INDEX idx_observations_status ON concept_observations(status);
+        CREATE INDEX idx_observations_run ON concept_observations(discovery_run_id);
+
+        -- Curator's truth. One row per (post, concept) reflecting the
+        -- human's promote decision. Read this when displaying the graph;
+        -- query concept_observations for provenance and corroboration.
+        CREATE TABLE post_concepts (
+            post_id     INTEGER NOT NULL REFERENCES posts(id) ON DELETE CASCADE,
+            concept_id  INTEGER NOT NULL REFERENCES concepts(id) ON DELETE CASCADE,
+            role        TEXT NOT NULL DEFAULT 'evidence',
+            promoted_from_observation_id INTEGER REFERENCES concept_observations(id),
+            notes       TEXT,
+            promoted_at TEXT DEFAULT (datetime('now')),
+            PRIMARY KEY (post_id, concept_id)
+        );
+        CREATE INDEX idx_post_concepts_concept ON post_concepts(concept_id);
+
+        -- Embedding storage for semantic discovery (step 6). content_hash is
+        -- the staleness anchor: re-enrichment changes content → hash mismatch
+        -- → invalidate and re-embed.
+        CREATE TABLE post_embeddings (
+            post_id      INTEGER NOT NULL REFERENCES posts(id) ON DELETE CASCADE,
+            model        TEXT NOT NULL,
+            dim          INTEGER NOT NULL,
+            content_hash TEXT NOT NULL,
+            vector       BLOB NOT NULL,
+            embedded_at  TEXT DEFAULT (datetime('now')),
+            PRIMARY KEY (post_id, model)
+        );
+        CREATE INDEX idx_embeddings_hash ON post_embeddings(content_hash);
+    """)
+
+
 # ---- Migration list -----------------------------------------------------
 
 # (version_number, short_name, function). Ordered by version.
@@ -148,6 +249,8 @@ MIGRATIONS = [
     (3, "Add post_thread_segments table", migrate_003_thread_segments),
     (4, "Fix post_relations PK to include relation", migrate_004_post_relations_pk),
     (5, "Conservative backfill of enrichment_status", migrate_005_backfill_enrichment_status),
+    (6, "Concept graph (Layer 2): concepts, observations, post_concepts, discovery_runs, post_embeddings",
+     migrate_006_concept_graph),
 ]
 
 

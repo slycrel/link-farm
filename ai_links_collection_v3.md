@@ -1,12 +1,12 @@
 # AI Links Collection
-**Total Posts**: 619  
-**Date Range**: 2024-06-11 – 2026-06-11  
-**Enriched**: 619/619 (100%)
+**Total Posts**: 627  
+**Date Range**: 2024-06-11 – 2026-06-14  
+**Enriched**: 619/627 (98%)
 
 ---
 ## Morning view
 
-*Generated 2026-06-13T05:16:04Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-06-15T15:43:20Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-06-09** — [Paweł Huryn](https://x.com/pawelhuryn/status/2064201950980096078) — *now • Agent Design • legacy enrichment*  
@@ -21,7 +21,28 @@
   Alibaba open-sourced 'open-code-review' (Apache-2.0), the internal AI code reviewer that's run on their codebase for ~2 years — 20,000+ engineers, 1M+ reviews. Design: deterministic engineering handles what must never fail (file selection, bundling, rule matching, comment positioning) while the LLM only does context reading, codebase search, and reasoning. Claims ~1/5 the token cost of a generic agent + skills and precise line-level comments that don't drift on large changesets. Repo name: open-code-review.
 
 ### Recurring this week
-*Concept tracking activates with the Layer 2 work (concept graph). Until then this section stays empty by design.*
+*Concepts with new evidence in the last 14 days. Ranked by recent post count.*
+
+- **agentic code review at production scale** (7 posts, +3 this week)  
+  Deterministic engineering handles what must never fail; LLM only does context reading and reasoning. Alibaba open-code-review.
+    - 2026-06-11 — [Nainsi Dwivedi](https://x.com/nainsidwiv50980/status/2064947761779208476): Alibaba open-sourced 'open-code-review' (Apache-2.0), the internal AI code reviewer that's run on their codebase for ~2 years — 20,000+ engi…
+    - 2026-06-03 — [Thariq](https://x.com/trq212/status/2061907337154367865): Anthropic article (linked from Thariq's tweet): 'A harness for every task: dynamic workflows in Claude Code'. Claude can now write its own h…
+
+- **agent identity files (SOUL.md, CLAUDE.md, persona scaffolds)** (13 posts, +1 this week)  
+  Recurring pattern of giving an agent a persistent identity file that loads automatically and shapes behavior.
+    - 2026-06-08 — [rari](https://x.com/0xwhrrari/status/2063244577482440978): Engagement-farmed but useful link dump of free AI-engineering learning resources (LangChain agent architecture, Anthropic's Claude Code 101 …
+    - 2026-05-27 — [Parag pawar](https://x.com/dharmikpawar13/status/2059571098484675051): Argues CLAUDE.md is not docs but the control layer for your AI agent — inconsistent outputs usually come from bad instruction architecture, …
+
+- **vector / hybrid databases as agent-memory infrastructure** (8 posts, +1 this week)  
+  HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
+    - 2026-06-04 — [さいぺ (cipepser)](https://x.com/cipepser/status/2062397559520502225): Recommends mem0's article 'State of Memory in Agent Harness' (mem0ai) — a well-organized survey of agent-memory papers and benchmarks plus h…
+    - 2026-05-28 — [Paul Iusztin](https://x.com/pauliusztin_/status/2059613089260003387): Paul Iusztin breaks down Neo4j's three-layer agent memory system inside one graph: (1) short-term — active conversation as a linear chain of…
+
+- **agents-as-judges-of-agents — bossman supervisor / self-verification** (3 posts, +1 this week)  
+  Critical supervisor agent judges worker agents rather than doing the work. Boris Cherny on self-verification loops; Viv on bossman supervisor.
+    - 2026-06-11 — [Boris Cherny](https://x.com/bcherny/status/2064426115255730578): Boris Cherny (Anthropic / Claude Code) on why self-verification loops matter: letting a model check its own work lets it run autonomously fo…
+    - 2026-05-22 — [Viv](https://x.com/vtrivedy10/status/2057673225702937059): Agent orchestration pattern: 'bossman supervisor >> external judge >>> self reflection.' Argues the top-level orchestrator should be a criti…
+
 
 ### Revisit from last month
 - **2026-03-24** — [Factory](https://x.com/factoryai/status/2036184745059688923) — *near-term • Agent Design • 166.6K views • legacy enrichment*  
@@ -33,21 +54,29 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 299 | 48.3% |
-| claude-code | 155 | 25.0% |
-| dev-practices | 167 | 27.0% |
-| skills-mcp | 86 | 13.9% |
-| prompting | 84 | 13.6% |
-| research | 114 | 18.4% |
-| industry | 70 | 11.3% |
-| management | 96 | 15.5% |
-| questionable | 84 | 13.6% |
-| general | 78 | 12.6% |
+| agent-design | 299 | 47.7% |
+| claude-code | 155 | 24.7% |
+| dev-practices | 167 | 26.6% |
+| skills-mcp | 86 | 13.7% |
+| prompting | 84 | 13.4% |
+| research | 114 | 18.2% |
+| industry | 70 | 11.2% |
+| management | 96 | 15.3% |
+| questionable | 84 | 13.4% |
+| general | 86 | 13.7% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-06-14 | Lorwen Harris Nagle, PhD | general |  |
+| 2026-06-14 | Harry Tandy | general |  |
+| 2026-06-14 | Avid | general |  |
+| 2026-06-14 | Nav Toor | general |  |
+| 2026-06-13 | Avi Chawla | general |  |
+| 2026-06-13 | Marie Haynes | general |  |
+| 2026-06-13 | Suryansh Tiwari | general |  |
+| 2026-06-12 | Codez | general |  |
 | 2026-06-11 | hoeem | agent-design | Quote-tweets his own long-form X article 'Why you should not be loopin... |
 | 2026-06-11 | Nainsi Dwivedi | dev-practices | Alibaba open-sourced 'open-code-review' (Apache-2.0), the internal AI... |
 | 2026-06-11 | Meta Alchemist | prompting | Shares a copy-paste 'Repo Audit & Improvement Plan' prompt — a structu... |
@@ -90,14 +119,6 @@
 | 2026-05-29 | MacCallister Higgins | dev-practices | MacCallister Higgins argues classical NASA systems engineering is the... |
 | 2026-05-29 | AVB | research | Recommends a 45-min video on building synthetic datasets and training... |
 | 2026-05-29 | Charly Wargnier | agent-design | Charly Wargnier recommends Akshay Pachaar's 47-min walkthrough of Herm... |
-| 2026-05-28 | Charly Wargnier | skills-mcp | ALL CAPS hype thread about Microsoft's SkillOpt — an open-source optim... |
-| 2026-05-28 | Muratcan Koylan | agent-design | Muratcan Koylan: his open-source Agent Skills for Context Engineering... |
-| 2026-05-28 | Kyle Jeong | agent-design | Kyle Jeong on iterative AutoResearch applied to browser skills — their... |
-| 2026-05-28 | Jerry Liu | dev-practices | LlamaIndex shipped LiteParse v2 (github.com/run-llama/liteparse, blog... |
-| 2026-05-28 | Livsun | questionable | Off-topic trading content — pitches Markov chains for market state tra... |
-| 2026-05-28 | John Yeo | agent-design | John Yeo (Stripe-style billing) describes an internal AI agent that au... |
-| 2026-05-28 | Dave Kline | management | Dave Kline on managing up: his biggest mistake as a manager was assumi... |
-| 2026-05-28 | Rahul | claude-code | Engagement-farmed thread claiming Anthropic released a 'blueprint' for... |
 
 ---
 ## Posts by Topic
@@ -2430,7 +2451,23 @@
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
 
-### General (82)
+### General (90)
+
+- [Lorwen Harris Nagle, PhD](https://x.com/lorwen108/status/2065852553208992218) — 2026-06-14: 
+
+- [Harry Tandy](https://x.com/harrytandy/status/2065818850633932996) — 2026-06-14: 
+
+- [Avid](https://x.com/av1dlive/status/2065747876005937416) — 2026-06-14: 
+
+- [Nav Toor](https://x.com/heynavtoor/status/2065427656112505017) — 2026-06-14: 
+
+- [Avi Chawla](https://x.com/_avichawla/status/2065727218991735000) — 2026-06-13: 
+
+- [Marie Haynes](https://x.com/marie_haynes/status/2065531158356717721) — 2026-06-13: 
+
+- [Suryansh Tiwari](https://x.com/suryanshti777/status/2065473893817848266) — 2026-06-13: 
+
+- [Codez](https://x.com/0xcodez/status/2065097407965127142) — 2026-06-12: 
 
 - [Jeff Tang](https://x.com/jefftangx/status/2064052420888363090) — 2026-06-09: [Off-topic for AI] Points to a 57-page Google Doc summarizing peptides such as BPC-157 and the human trials done so far. Health/biohacking content, not AI/tech.
 
@@ -2600,6 +2637,30 @@
 ## Full Chronological List
 
 ### Jun 2026
+
+- **2026-06-14** | [Lorwen Harris Nagle, PhD](https://x.com/lorwen108/status/2065852553208992218) | general
+  
+
+- **2026-06-14** | [Harry Tandy](https://x.com/harrytandy/status/2065818850633932996) | general
+  
+
+- **2026-06-14** | [Avid](https://x.com/av1dlive/status/2065747876005937416) | general
+  
+
+- **2026-06-14** | [Nav Toor](https://x.com/heynavtoor/status/2065427656112505017) | general
+  
+
+- **2026-06-13** | [Avi Chawla](https://x.com/_avichawla/status/2065727218991735000) | general
+  
+
+- **2026-06-13** | [Marie Haynes](https://x.com/marie_haynes/status/2065531158356717721) | general
+  
+
+- **2026-06-13** | [Suryansh Tiwari](https://x.com/suryanshti777/status/2065473893817848266) | general
+  
+
+- **2026-06-12** | [Codez](https://x.com/0xcodez/status/2065097407965127142) | general
+  
 
 - **2026-06-11** | [hoeem](https://x.com/hooeem/status/2065098599751471454) | agent-design, prompting
   Quote-tweets his own long-form X article 'Why you should not be looping & what to do instead' — a contrarian breakdown pushing back on the popular agentic self-looping pattern (taking aim at a 'leading voice in AI') and proposing alternatives. The substance is in the linked article; framing is deliberately provocative.
