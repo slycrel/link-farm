@@ -436,6 +436,162 @@ def top_posts_for_concept(concept_id: int, limit: int = 3,
     return [dict(r) for r in rows]
 
 
+def get_concept(concept_id: int, db_path: Path = DEFAULT_DB) -> Optional[dict]:
+    """Fetch a concept by id, or None if not found."""
+    with _connect(db_path) as conn:
+        row = conn.execute(
+            "SELECT * FROM concepts WHERE id = ?", (concept_id,)
+        ).fetchone()
+    return dict(row) if row else None
+
+
+def find_concept_by_name(name: str, db_path: Path = DEFAULT_DB) -> Optional[dict]:
+    """Find an active concept by exact name match (case-insensitive)."""
+    with _connect(db_path) as conn:
+        row = conn.execute(
+            "SELECT * FROM concepts WHERE LOWER(name) = LOWER(?) AND status='active'",
+            (name,),
+        ).fetchone()
+    return dict(row) if row else None
+
+
+def list_discovery_runs(limit: int = 20, db_path: Path = DEFAULT_DB) -> list[dict]:
+    """Recent discovery runs with summary counts."""
+    with _connect(db_path) as conn:
+        rows = conn.execute("""
+            SELECT id, started_at, finished_at, source, persona, model,
+                   sampling_strategy, posts_examined, observations_created, notes
+              FROM discovery_runs
+             ORDER BY id DESC LIMIT ?
+        """, (limit,)).fetchall()
+    return [dict(r) for r in rows]
+
+
+def filter_observations(*,
+                         status: Optional[str] = None,
+                         source: Optional[str] = None,
+                         discovery_run_id: Optional[int] = None,
+                         concept_id: Optional[int] = None,
+                         min_raw_score: Optional[float] = None,
+                         min_corroboration: Optional[int] = None,
+                         limit: int = 200,
+                         db_path: Path = DEFAULT_DB) -> list[dict]:
+    """Flexible observation filter for bulk-curation commands.
+
+    `min_corroboration` counts non-superseded observations for the
+    (post_id, concept_id) pair across ALL sources — useful for "promote
+    everything that 3+ independent passes have surfaced."
+
+    Returns enriched rows (joined with post + concept) for display.
+    """
+    clauses = []
+    params: list = []
+    if status is not None:
+        clauses.append("o.status = ?")
+        params.append(status)
+    if source is not None:
+        clauses.append("o.source = ?")
+        params.append(source)
+    if discovery_run_id is not None:
+        clauses.append("o.discovery_run_id = ?")
+        params.append(discovery_run_id)
+    if concept_id is not None:
+        clauses.append("o.concept_id = ?")
+        params.append(concept_id)
+    if min_raw_score is not None:
+        clauses.append("o.raw_score >= ?")
+        params.append(min_raw_score)
+    if min_corroboration is not None:
+        # Count concurrent non-superseded observations for the same pair.
+        clauses.append("""(
+            SELECT COUNT(*) FROM concept_observations o2
+             WHERE o2.post_id = o.post_id
+               AND o2.concept_id = o.concept_id
+               AND o2.status != 'superseded'
+        ) >= ?""")
+        params.append(min_corroboration)
+
+    where = (" WHERE " + " AND ".join(clauses)) if clauses else ""
+    sql = f"""
+        SELECT
+            o.id AS observation_id,
+            o.post_id, o.concept_id,
+            o.source, o.score_kind, o.raw_score,
+            o.discovery_persona, o.discovery_model, o.discovery_run_id,
+            o.status, o.notes,
+            c.name            AS concept_name,
+            p.author          AS post_author,
+            p.date            AS post_date,
+            p.url             AS post_url,
+            SUBSTR(COALESCE(p.summary,''), 1, 160) AS post_summary
+          FROM concept_observations o
+          JOIN concepts c ON c.id = o.concept_id
+          JOIN posts    p ON p.id = o.post_id
+          {where}
+         ORDER BY o.id ASC
+         LIMIT ?
+    """
+    params.append(limit)
+    with _connect(db_path) as conn:
+        rows = conn.execute(sql, params).fetchall()
+    return [dict(r) for r in rows]
+
+
+def bulk_promote(observation_ids: Sequence[int],
+                  role: Optional[str] = None,
+                  db_path: Path = DEFAULT_DB,
+                  with_lock: bool = True) -> dict:
+    """Promote multiple observations under a single lock acquisition.
+    Returns counts: {promoted, skipped, not_found}."""
+    counts = {"promoted": 0, "skipped": 0, "not_found": 0}
+    with _maybe_lock(with_lock):
+        for oid in observation_ids:
+            try:
+                obs = None
+                with _connect(db_path) as conn:
+                    obs = conn.execute(
+                        "SELECT status FROM concept_observations WHERE id = ?", (oid,)
+                    ).fetchone()
+                if not obs:
+                    counts["not_found"] += 1
+                    continue
+                if obs[0] == OBS_PROMOTED:
+                    counts["skipped"] += 1
+                    continue
+                promote_observation(oid, role=role, db_path=db_path, with_lock=False)
+                counts["promoted"] += 1
+            except Exception:
+                # Skip on per-row failure; bulk operations don't abort whole batch
+                counts["skipped"] += 1
+    return counts
+
+
+def bulk_dismiss(observation_ids: Sequence[int],
+                  notes: Optional[str] = None,
+                  db_path: Path = DEFAULT_DB,
+                  with_lock: bool = True) -> dict:
+    """Dismiss multiple observations under a single lock acquisition."""
+    counts = {"dismissed": 0, "skipped": 0, "not_found": 0}
+    with _maybe_lock(with_lock):
+        for oid in observation_ids:
+            try:
+                with _connect(db_path) as conn:
+                    obs = conn.execute(
+                        "SELECT status FROM concept_observations WHERE id = ?", (oid,)
+                    ).fetchone()
+                if not obs:
+                    counts["not_found"] += 1
+                    continue
+                if obs[0] == OBS_DISMISSED:
+                    counts["skipped"] += 1
+                    continue
+                dismiss_observation(oid, notes=notes, db_path=db_path, with_lock=False)
+                counts["dismissed"] += 1
+            except Exception:
+                counts["skipped"] += 1
+    return counts
+
+
 # ---- Mechanical discovery ---------------------------------------------
 
 def _start_run(conn, source: str, sampling_strategy: str,
@@ -726,6 +882,151 @@ def run_all_mechanical_passes(db_path: Path = DEFAULT_DB,
     return out
 
 
+# ---- Semantic discovery (step 6) -------------------------------------
+
+# Concept-centroid match threshold. Cosine similarity >= this counts as
+# "close enough to the concept's average meaning to suggest as evidence."
+# bge-small-en-v1.5's score distribution on this corpus (mostly AI/agents
+# content) clusters tightly — pairs of unrelated AI posts often score 0.65-
+# 0.75 because the topic vocabulary overlaps. 0.78 is a measured threshold:
+# at 0.80 we get ~150 candidates across active concepts, at 0.65 we get
+# ~1500 (mostly noise). 0.78 sits at the elbow of the score distribution.
+# Tune by use — the latent gate paragraph applies here too.
+SEMANTIC_CENTROID_THRESHOLD = 0.78
+
+# Don't centroid-match concepts with too few canonical edges — a single-post
+# concept's centroid is just that post's embedding, which collapses to a
+# raw nearest-neighbor query and loses the "what does this concept mean
+# across multiple examples" signal.
+SEMANTIC_MIN_CONCEPT_EDGES = 2
+
+
+def discover_semantic_neighbors(db_path: Path = DEFAULT_DB,
+                                 model: Optional[str] = None,
+                                 threshold: float = SEMANTIC_CENTROID_THRESHOLD,
+                                 min_concept_edges: int = SEMANTIC_MIN_CONCEPT_EDGES,
+                                 with_lock: bool = True) -> dict:
+    """Mechanical semantic pass: match embedded posts against existing
+    active concepts' centroids; propose new observations for posts that
+    cluster close to a concept but aren't yet attached.
+
+    This is the cleanest semantic signal for the current data scale —
+    concept-relative matching rather than blind clustering. Embedding-based
+    clustering (HDBSCAN, etc.) to discover *new* concepts comes later as
+    the corpus grows.
+
+    Returns stats: {concepts_considered, posts_considered, observations_created}.
+    """
+    # Lazy-import so a missing embeddings module / dep doesn't break the
+    # rest of db.concepts.
+    try:
+        try:
+            from .embeddings import (
+                concept_centroids, _connect as _emb_connect,
+                _blob_to_vector, DEFAULT_MODEL,
+            )
+        except ImportError:
+            import sys as _sys
+            _sys.path.insert(0, str(Path(__file__).parent))
+            from embeddings import (
+                concept_centroids, _blob_to_vector, DEFAULT_MODEL,
+            )
+        import numpy as np
+    except ImportError as e:
+        return {"error": f"semantic discovery requires fastembed + numpy: {e}",
+                "concepts_considered": 0, "posts_considered": 0,
+                "observations_created": 0}
+
+    if model is None:
+        model = DEFAULT_MODEL
+
+    stats = {"concepts_considered": 0, "posts_considered": 0,
+             "observations_created": 0}
+
+    with _maybe_lock(with_lock), _connect(db_path) as conn:
+        run_id = _start_run(conn, SOURCE_SEMANTIC,
+                             "concept-centroid",
+                             model=model)
+
+        # Concepts with enough canonical edges to have a meaningful centroid.
+        active_with_enough = conn.execute(f"""
+            SELECT c.id, c.name, COUNT(pc.post_id) AS n
+              FROM concepts c
+              JOIN post_concepts pc ON pc.concept_id = c.id
+             WHERE c.status = 'active'
+             GROUP BY c.id
+            HAVING n >= ?
+        """, (min_concept_edges,)).fetchall()
+        eligible_concept_ids = {r["id"] for r in active_with_enough}
+        if not eligible_concept_ids:
+            _finish_run(conn, run_id, 0, 0,
+                        notes=f"no concepts with >= {min_concept_edges} edges")
+            conn.commit()
+            return stats
+
+        # Compute centroids using the open connection's data — call into
+        # embeddings.concept_centroids, then filter to eligible_concept_ids.
+        all_centroids = concept_centroids(model=model, db_path=db_path)
+        centroids = {cid: vec for cid, vec in all_centroids.items()
+                     if cid in eligible_concept_ids}
+        stats["concepts_considered"] = len(centroids)
+
+        # Load all post embeddings.
+        emb_rows = conn.execute(
+            "SELECT post_id, vector FROM post_embeddings WHERE model = ?",
+            (model,),
+        ).fetchall()
+        if not emb_rows:
+            _finish_run(conn, run_id, 0, 0, notes="no embeddings")
+            conn.commit()
+            return stats
+
+        post_ids = [r["post_id"] for r in emb_rows]
+        post_matrix = np.stack(
+            [_blob_to_vector(r["vector"]) for r in emb_rows], axis=0,
+        )
+        # Normalize for cosine.
+        norms = np.linalg.norm(post_matrix, axis=1, keepdims=True)
+        norms = np.where(norms == 0, 1.0, norms)
+        post_matrix_normed = post_matrix / norms
+        stats["posts_considered"] = len(post_ids)
+
+        # For each concept, score all posts; propose for those that exceed
+        # threshold AND aren't already canonically attached.
+        already_attached = defaultdict(set)
+        for r in conn.execute(
+            "SELECT concept_id, post_id FROM post_concepts"
+        ):
+            already_attached[r["concept_id"]].add(r["post_id"])
+
+        for cid, centroid in centroids.items():
+            sims = post_matrix_normed @ centroid  # already normalized
+            for pid, sim in zip(post_ids, sims.tolist()):
+                if sim < threshold:
+                    continue
+                if pid in already_attached.get(cid, set()):
+                    continue
+                obs_id = _record_obs_in_txn(
+                    conn,
+                    post_id=pid, concept_id=cid,
+                    source=SOURCE_SEMANTIC,
+                    score_kind=SCORE_SEMANTIC,
+                    raw_score=float(sim),
+                    discovery_run_id=run_id,
+                    discovery_model=model,
+                    notes=f"cosine={sim:.3f} vs centroid",
+                )
+                if obs_id is not None:
+                    stats["observations_created"] += 1
+
+        _finish_run(conn, run_id, stats["posts_considered"],
+                    stats["observations_created"],
+                    notes=f"threshold={threshold} min_concept_edges={min_concept_edges}")
+        conn.commit()
+
+    return stats
+
+
 # ---- CLI --------------------------------------------------------------
 
 def _cmd_list(args):
@@ -774,6 +1075,16 @@ def _cmd_discover(args):
         print(f"{pass_name}:")
         for k, v in s.items():
             print(f"    {k:25s} {v}")
+
+
+def _cmd_semantic(args):
+    stats = discover_semantic_neighbors(
+        db_path=args.db, threshold=args.threshold,
+        min_concept_edges=args.min_concept_edges,
+    )
+    print("semantic concept-centroid pass:")
+    for k, v in stats.items():
+        print(f"    {k:25s} {v}")
 
 
 def _cmd_stats(args):
@@ -826,6 +1137,12 @@ def main():
     p.set_defaults(func=_cmd_merge)
 
     sub.add_parser("discover").set_defaults(func=_cmd_discover)
+
+    p = sub.add_parser("semantic")
+    p.add_argument("--threshold", type=float, default=SEMANTIC_CENTROID_THRESHOLD)
+    p.add_argument("--min-concept-edges", type=int, default=SEMANTIC_MIN_CONCEPT_EDGES)
+    p.set_defaults(func=_cmd_semantic)
+
     sub.add_parser("stats").set_defaults(func=_cmd_stats)
 
     args = parser.parse_args()

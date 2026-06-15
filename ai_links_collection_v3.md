@@ -1,12 +1,12 @@
 # AI Links Collection
-**Total Posts**: 627  
-**Date Range**: 2024-06-11 – 2026-06-14  
-**Enriched**: 619/627 (98%)
+**Total Posts**: 632  
+**Date Range**: 2024-06-11 – 2026-06-15  
+**Enriched**: 619/632 (97%)
 
 ---
 ## Morning view
 
-*Generated 2026-06-15T15:43:20Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-06-15T22:59:01Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-06-09** — [Paweł Huryn](https://x.com/pawelhuryn/status/2064201950980096078) — *now • Agent Design • legacy enrichment*  
@@ -54,21 +54,26 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 299 | 47.7% |
-| claude-code | 155 | 24.7% |
-| dev-practices | 167 | 26.6% |
-| skills-mcp | 86 | 13.7% |
-| prompting | 84 | 13.4% |
-| research | 114 | 18.2% |
-| industry | 70 | 11.2% |
-| management | 96 | 15.3% |
-| questionable | 84 | 13.4% |
-| general | 86 | 13.7% |
+| agent-design | 299 | 47.3% |
+| claude-code | 155 | 24.5% |
+| dev-practices | 167 | 26.4% |
+| skills-mcp | 86 | 13.6% |
+| prompting | 84 | 13.3% |
+| research | 114 | 18.0% |
+| industry | 70 | 11.1% |
+| management | 96 | 15.2% |
+| questionable | 84 | 13.3% |
+| general | 91 | 14.4% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-06-15 | Hasan Toor | general |  |
+| 2026-06-15 | Teknium | general |  |
+| 2026-06-15 | Avid | general |  |
+| 2026-06-15 | Olivia Chowdhury | general |  |
+| 2026-06-15 | Shenyang Deng | general |  |
 | 2026-06-14 | Lorwen Harris Nagle, PhD | general |  |
 | 2026-06-14 | Harry Tandy | general |  |
 | 2026-06-14 | Avid | general |  |
@@ -114,11 +119,6 @@
 | 2026-05-31 | 恒星 | skills-mcp | DeepMind open-sourced Science Skills (github.com/google-deepmind/scien... |
 | 2026-05-31 | Chesny | general | Hype thread (translated from Spanish) about a Karpathy-inspired '3D kn... |
 | 2026-05-29 | 0xSero | agent-design | Recommends Peter Steinberger's article at steipete.me titled 'Just Tal... |
-| 2026-05-29 | Rohit Ghumare | agent-design | Long essay by Mike (linked) arguing that picking LangChain/LangGraph/O... |
-| 2026-05-29 | Yohei | agent-design | Yohei Nakajima (BabyAGI) published his first arxiv paper: 'The Log is... |
-| 2026-05-29 | MacCallister Higgins | dev-practices | MacCallister Higgins argues classical NASA systems engineering is the... |
-| 2026-05-29 | AVB | research | Recommends a 45-min video on building synthetic datasets and training... |
-| 2026-05-29 | Charly Wargnier | agent-design | Charly Wargnier recommends Akshay Pachaar's 47-min walkthrough of Herm... |
 
 ---
 ## Posts by Topic
@@ -2451,7 +2451,17 @@
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
 
-### General (90)
+### General (95)
+
+- [Hasan Toor](https://x.com/hasantoxr/status/2066247422502957197) — 2026-06-15: 
+
+- [Teknium](https://x.com/teknium/status/2066185784332562605) — 2026-06-15: 
+
+- [Avid](https://x.com/av1dlive/status/2066127265407336535) — 2026-06-15: 
+
+- [Olivia Chowdhury](https://x.com/oliviacoder1/status/2066064093552038070) — 2026-06-15: 
+
+- [Shenyang Deng](https://x.com/dengshenyang24/status/2065853130567279073) — 2026-06-15: 
 
 - [Lorwen Harris Nagle, PhD](https://x.com/lorwen108/status/2065852553208992218) — 2026-06-14: 
 
@@ -2637,6 +2647,21 @@
 ## Full Chronological List
 
 ### Jun 2026
+
+- **2026-06-15** | [Hasan Toor](https://x.com/hasantoxr/status/2066247422502957197) | general
+  
+
+- **2026-06-15** | [Teknium](https://x.com/teknium/status/2066185784332562605) | general
+  
+
+- **2026-06-15** | [Avid](https://x.com/av1dlive/status/2066127265407336535) | general
+  
+
+- **2026-06-15** | [Olivia Chowdhury](https://x.com/oliviacoder1/status/2066064093552038070) | general
+  
+
+- **2026-06-15** | [Shenyang Deng](https://x.com/dengshenyang24/status/2065853130567279073) | general
+  
 
 - **2026-06-14** | [Lorwen Harris Nagle, PhD](https://x.com/lorwen108/status/2065852553208992218) | general
   

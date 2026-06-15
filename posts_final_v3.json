@@ -1,5 +1,105 @@
 [
   {
+    "date": "2026-06-15",
+    "author": "Hasan Toor",
+    "handle": "@hasantoxr",
+    "subject": "Post by Hasan Toor on X",
+    "url": "https://x.com/hasantoxr/status/2066247422502957197",
+    "summary": "",
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": false,
+    "enrichment_status": "unattempted"
+  },
+  {
+    "date": "2026-06-15",
+    "author": "Teknium",
+    "handle": "@teknium",
+    "subject": "Post by Teknium 🪽 on X",
+    "url": "https://x.com/teknium/status/2066185784332562605",
+    "summary": "",
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": false,
+    "enrichment_status": "unattempted"
+  },
+  {
+    "date": "2026-06-15",
+    "author": "Avid",
+    "handle": "@av1dlive",
+    "subject": "Post by Avid on X",
+    "url": "https://x.com/av1dlive/status/2066127265407336535",
+    "summary": "",
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": false,
+    "enrichment_status": "unattempted"
+  },
+  {
+    "date": "2026-06-15",
+    "author": "Olivia Chowdhury",
+    "handle": "@oliviacoder1",
+    "subject": "Post by Olivia Chowdhury on X (who was this for again?)",
+    "url": "https://x.com/oliviacoder1/status/2066064093552038070",
+    "summary": "",
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": false,
+    "enrichment_status": "unattempted"
+  },
+  {
+    "date": "2026-06-15",
+    "author": "Shenyang Deng",
+    "handle": "@dengshenyang24",
+    "subject": "Post by Shenyang Deng ✈️ ICML2026 on X (please read)",
+    "url": "https://x.com/dengshenyang24/status/2065853130567279073",
+    "summary": "",
+    "topics": [
+      "general"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": false,
+    "enrichment_status": "unattempted"
+  },
+  {
     "date": "2026-06-14",
     "author": "Lorwen Harris Nagle, PhD",
     "handle": "@lorwen108",

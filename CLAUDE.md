@@ -12,6 +12,8 @@ Jeremy emails himself links from his phone (slycrel@gmail.com → jstone@taxhawk
 - **db/migrate.py** — One-shot rebuild-from-JSON bootstrap script. Used only when rebuilding the DB from `posts_final_v3.json` from scratch. **Not** the runner for incremental schema changes.
 - **db/migrate_runner.py** — Incremental schema migration runner. Transactional per-migration, idempotent, advances `schema_version`. Add a new migration here whenever the schema needs to change. Currently at version 5.
 - **db/enrich.py** — Canonical persistence layer for enrichment work. All writers (sync, catch-up, curate) go through these helpers — never write directly to `posts.enriched`, `posts.content`, or `posts.summary`. Exposes `record_enrichment` / `record_partial` / `record_failed` / `record_dead`, work-queue queries (`pending_enrichment_ids`), and `gate_ratio` for the latent-discovery threshold.
+- **db/concepts.py** — Concept-graph layer (Layer 2). Concept lifecycle (create/merge/archive/rename), observation lifecycle (record/promote/dismiss/bulk_promote/bulk_dismiss/filter), mechanical discovery passes (shared external URLs, shared @mentions), semantic discovery (concept-centroid matching via embeddings). CLI: `python3 -m db.concepts {list,pending,promote,dismiss,merge,discover,semantic,stats}`. Curation surface: chat-mediated via the `ai-links-curate` skill.
+- **db/embeddings.py** — Semantic embeddings via fastembed + numpy. Default model `BAAI/bge-small-en-v1.5` (384-dim, ONNX, local). Embeds posts in `ok`/`legacy-ok` status (skips partial/dead — junk in produces junk vectors). `content_hash` invalidation so re-enrichment doesn't require re-embedding the whole corpus. CLI: `python3 -m db.embeddings {status,embed,neighbors,centroids}`.
 - **db/lock.py** — Shared writer lock. File-based mutex with stale-PID detection. Every writer (sync, catch-up, curate, rebuild) acquires this before mutating SQLite or running rebuild.
 - **db/rebuild.py** — Rebuild script. Queries SQLite and regenerates all output artifacts below. Atomic temp-file-and-rename writes. Acquires the writer lock by default; pass `with_lock=False` when calling from inside another writer that already holds the lock.
 - **posts_final_v3.json** — Generated JSON export (backward-compatible). Array of post objects. No longer the source of truth — generated from SQLite.
@@ -163,6 +165,18 @@ The HTML stats line (date range, counts) is computed dynamically by the viewer J
 - Top topics: agent-design (300), dev-practices (167), claude-code (155), research (114), management (96), skills-mcp (87), prompting (84), questionable (84), general (78), industry (70).
 - Priority breakdown: near-term (333), long-term (177), now (109).
 - Known dead zone: Jan 3–16, 2026 — many X posts return "page doesn't exist." Some have replacement URLs (authors may have deleted and reposted). Two confirmed replacements found so far (James Cowling, fintechjunkie).
+
+## Python Dependencies
+
+Most of the stack runs on the standard library. Two optional dependencies are needed for the semantic-discovery and curation pipelines:
+
+```bash
+pip install --break-system-packages fastembed sqlite-vec numpy
+```
+
+`fastembed` (~133MB including the bge-small-en-v1.5 ONNX model on first use) is the embedding backbone. `sqlite-vec` is loaded but not yet used at scale — kept available for when corpus crosses ~10k posts and numpy nearest-neighbor becomes slow. `numpy` is used by `db/embeddings.py` for cosine similarity.
+
+The daily sync, catch-up, and curate skills check for these at startup. If they're missing, those skills can still do the non-semantic work but will skip embedding + semantic discovery.
 
 ## GitHub Backup
 
