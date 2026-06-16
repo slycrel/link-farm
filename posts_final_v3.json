@@ -1,23 +1,55 @@
 [
   {
+    "date": "2026-06-16",
+    "author": "Jaynit",
+    "handle": "@jaynitx",
+    "subject": "Post by Jaynit on X",
+    "url": "https://x.com/jaynitx/status/2066506535250092378",
+    "summary": "Thread relaying Elon Musk's 5-step engineering 'algorithm': (1) make the requirements less dumb / question them, (2) try to delete the part or process step entirely (if you aren't forced to add ~10% back, you didn't delete enough), (3) simplify and optimize, (4) accelerate cycle time, (5) automate — with the warning that the most common mistake of smart engineers is optimizing something that shouldn't exist.",
+    "topics": [
+      "management",
+      "dev-practices",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Jaynit @jaynitx: Elon Musk explains his 5-step algorithm for solving any problem. The most common mistake of smart engineers is to optimize a thing that should not exist. Step 1: Question the requirements. Step 2: Try to delete it (if not forced to put back 10%, not deleting enough). Step 3: Optimize/simplify. Step 4: Accelerate cycle time. Step 5: Automate.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-06-15",
     "author": "Hasan Toor",
     "handle": "@hasantoxr",
     "subject": "Post by Hasan Toor on X",
     "url": "https://x.com/hasantoxr/status/2066247422502957197",
-    "summary": "",
+    "summary": "Highlights Headroom, a GitHub tool by Netflix engineer Tejas Chopra that compresses everything an AI agent reads before it reaches the LLM (tool outputs, logs, files, RAG chunks, code-search results, conversation history), claiming 60-95% fewer tokens for the same answers. Ships as a Python/TypeScript library, local proxy, and MCP server, with wrappers for Claude Code, Codex, Cursor, Aider, and Copilot.",
     "topics": [
-      "general"
+      "agent-design",
+      "skills-mcp",
+      "dev-practices"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "now",
     "sourceType": "tweet",
-    "views": "",
+    "views": "28.7K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "unattempted"
+    "enriched": true,
+    "content": "Hasan Toor @hasantoxr: Found a GitHub repo called Headroom by Netflix's Tejas Chopra that stops AI agents burning tokens. It compresses everything the agent reads before the LLM (tool outputs, logs, files, RAG chunks, code search, conversation history). Claims 60-95% fewer tokens, same answers. Python/TypeScript lib, local proxy, MCP server, wrappers for Claude Code, Codex, Cursor, Aider, Copilot.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-15",
@@ -25,19 +57,24 @@
     "handle": "@teknium",
     "subject": "Post by Teknium 🪽 on X",
     "url": "https://x.com/teknium/status/2066185784332562605",
-    "summary": "",
+    "summary": "Demo: the author used the Hermes Agent with a Manim video-generation skill plus its TTS tool to autonomously produce a video explaining the Hermes Agent itself — a self-referential showcase of composing a skill and a tool inside an agent.",
     "topics": [
-      "general"
+      "agent-design",
+      "skills-mcp"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "200.1K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "unattempted"
+    "enriched": true,
+    "content": "Teknium @Teknium: Had Hermes Agent with the Manim Video skill plus its TTS tool create a video explaining Hermes' Agent.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-15",
@@ -45,19 +82,25 @@
     "handle": "@av1dlive",
     "subject": "Post by Avid on X",
     "url": "https://x.com/av1dlive/status/2066127265407336535",
-    "summary": "",
+    "summary": "Argues you can run capable AI models locally on a Mac for free using Apple's MLX stack — install mlx-lm, launch its server, and point any agent at localhost. Cites a ~23-minute talk from an Apple MLX-team engineer in which a local model builds a working SwiftUI app from a blank Xcode project in two minutes and then fixes a bug, with nothing leaving the machine. Quote-tweets a piece on the ThinkStation PGX local-inference box.",
     "topics": [
-      "general"
+      "dev-practices",
+      "research",
+      "questionable"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "27.9K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "unattempted"
+    "enriched": true,
+    "content": "Avid @Av1dlive: How to run AI models on your Mac for free - no $4,000 box, no API keys, no cloud. From an Apple MLX-team engineer: install mlx-lm, launch the server, point any agent at localhost. Demo built a SwiftUI app from blank Xcode in 2 min then fixed a bug, nothing left the Mac. Quotes leopardracer on ThinkStation PGX running 200B models.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-15",
@@ -65,19 +108,26 @@
     "handle": "@oliviacoder1",
     "subject": "Post by Olivia Chowdhury on X (who was this for again?)",
     "url": "https://x.com/oliviacoder1/status/2066064093552038070",
-    "summary": "",
+    "summary": "Hype-framed thread on a Dec 31, 2025 MIT CSAIL paper that claims to 'solve' AI memory not by building bigger context windows but by teaching models how to read/retrieve — positioning the result against the industry's context-window arms race and the 'context rot' problem, where a model's performance on information already in context degrades as more is packed in.",
     "topics": [
-      "general"
+      "research",
+      "agent-design",
+      "questionable"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team",
+      "leadership"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "55.1K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "unattempted"
+    "enriched": true,
+    "content": "Olivia Chowdhury @Oliviacoder1: MIT just made every AI company's billion-dollar bet look embarrassing. They solved AI memory - not by a bigger brain, but by teaching it how to read. Paper dropped Dec 31 2025, three MIT CSAIL researchers. Context rot: the more you pack into context, the worse it performs on what's already inside.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-15",
@@ -85,7 +135,7 @@
     "handle": "@dengshenyang24",
     "subject": "Post by Shenyang Deng ✈️ ICML2026 on X (please read)",
     "url": "https://x.com/dengshenyang24/status/2065853130567279073",
-    "summary": "",
+    "summary": "[Post unavailable - page doesn't exist]",
     "topics": [
       "general"
     ],
@@ -97,7 +147,9 @@
     "views": "",
     "notes": "",
     "enriched": false,
-    "enrichment_status": "unattempted"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page doesn't exist"
   },
   {
     "date": "2026-06-14",
@@ -105,19 +157,23 @@
     "handle": "@lorwen108",
     "subject": "Post by Lorwen Harris Nagle, PhD on X",
     "url": "https://x.com/lorwen108/status/2065852553208992218",
-    "summary": "",
+    "summary": "Off-topic motivational thread on Elon Musk, Nietzsche, and overcoming teenage depression/anxiety through imagination rather than analysis — pop-psychology engagement content with no AI or technical substance.",
     "topics": [
+      "questionable",
       "general"
     ],
     "audience": [
       "me"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "201.6K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "unattempted"
+    "enriched": true,
+    "content": "Lorwen Harris Nagle, PhD @LORWEN108: Elon Musk fell into depression as a teenager; Nietzsche made it worse. Then imagination did what analysis couldn't. Here are Musk's secrets that will change how you see anxiety forever. 1. You need a world bigger than your pain.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-14",
@@ -125,19 +181,25 @@
     "handle": "@harrytandy",
     "subject": "Post by Harry Tandy on X",
     "url": "https://x.com/harrytandy/status/2065818850633932996",
-    "summary": "",
+    "summary": "Opens with a Sam Altman quote that the cost to use a given level of AI falls ~10x every 12 months, then lays out a 10-step agentic-coding sprint: pick the heaviest backlog item, write a FABLE_RUN.md spec (goal/scope/commands/review rules/done criteria), map the repo first, break the job into checkpoints that each end with diff + test output + next decision, split builder and checker agents, use git worktrees for parallel attempts, and keep a RUN_LOG.md of every failed command and accepted fix.",
     "topics": [
-      "general"
+      "agent-design",
+      "dev-practices",
+      "claude-code"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "20.2K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "unattempted"
+    "enriched": true,
+    "content": "Harry Tandy @HarryTandy: Sam Altman - cost to use a given level of AI falls ~10x every 12 months. A 10-step Fable 5 sprint: 1 pick heaviest backlog item, 2 create FABLE_RUN.md, 3 map the repo, 4 break into checkpoints (diff/test/decision), 5 split builder and checker, 6 use worktrees for parallel attempts, 7 keep a RUN_LOG.md, 8 put frontend behind references.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-14",
@@ -145,19 +207,27 @@
     "handle": "@av1dlive",
     "subject": "Post by Avid on X (sounds familiar)",
     "url": "https://x.com/av1dlive/status/2065747876005937416",
-    "summary": "",
+    "summary": "Promotes a 'second brain' pattern attributed to Karpathy: let an LLM maintain a wiki of your notes so knowledge compounds as you dump sources and it reads, links, and files them. Points to a free Claude Code plugin, claude-obsidian by AgriciDaniel (claude plugin marketplace add AgriciDaniel/claude-obsidian; claude plugin install claude-obsidian@agricidaniel-claude-obsidian), then run /wiki inside an Obsidian folder. Quote-tweets the author's own article on building Obsidian from scratch with 13+ Kimi agents.",
     "topics": [
-      "general"
+      "claude-code",
+      "skills-mcp",
+      "agent-design",
+      "dev-practices",
+      "questionable"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "now",
     "sourceType": "tweet",
-    "views": "",
+    "views": "255.2K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "unattempted"
+    "enriched": true,
+    "content": "Avid @Av1dlive: Karpathy quietly shipped the best second-brain idea - not an app, a pattern. Let an LLM maintain a wiki of your notes; dump sources, it reads, links, files them. Built into a free Claude Code plugin: claude plugin marketplace add AgriciDaniel/claude-obsidian; claude plugin install claude-obsidian@agricidaniel-claude-obsidian; then open Obsidian + Claude Code in same folder, type /wiki. Quotes own article on building Obsidian with Kimi agents.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-14",
@@ -165,19 +235,25 @@
     "handle": "@heynavtoor",
     "subject": "Post by Nav Toor on X",
     "url": "https://x.com/heynavtoor/status/2065427656112505017",
-    "summary": "",
+    "summary": "Spotlights Clone-Wars, an open-source GitHub collection (~34,555 stars) by developer Gourav Goyal that catalogues 100+ open-source clones of major apps (Netflix, Spotify, Instagram, Airbnb, WhatsApp, TikTok, Amazon) with source code, demos, and tech stacks listed — e.g., a Netflix clone in React + TMDB API. Started December 2020 and hit GitHub Trending and Hacker News #1.",
     "topics": [
-      "general"
+      "dev-practices",
+      "general",
+      "questionable"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "104K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "unattempted"
+    "enriched": true,
+    "content": "Nav Toor @heynavtoor: Someone cloned Netflix, Spotify, Instagram, Airbnb, WhatsApp, TikTok, Amazon and put the source on GitHub for free. Over 100 open-source clones in one list called Clone-Wars, 34,555 stars, by Gourav Goyal. Started Dec 2020, went 0 to 4,000 stars in 7 days, GitHub Trending 5 days, Hacker News #1.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-13",
@@ -185,19 +261,25 @@
     "handle": "@_avichawla",
     "subject": "Post by Avi Chawla on X",
     "url": "https://x.com/_avichawla/status/2065727218991735000",
-    "summary": "",
+    "summary": "Explains 'loop engineering' (framed with a Karpathy quote about removing yourself as the bottleneck and maximizing leverage): move the operator's two manual jobs — deciding what the agent runs next and checking its output — into the system itself. A schedule decides what to run, a maker loop produces the work, a separate checker agent grades the output, and a file on disk holds the shared state both read; the loop runs until done, max iterations, or budget is exhausted.",
     "topics": [
-      "general"
+      "agent-design",
+      "dev-practices",
+      "prompting"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "640K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "unattempted"
+    "enriched": true,
+    "content": "Avi Chawla @_avichawla: Karpathy - remove yourself as the bottleneck, maximize leverage, put in few tokens and a huge amount happens on your behalf. Loop engineering moves the operator's two manual steps (deciding what runs next, checking output) into the system: a schedule decides what to run, the loop is the maker, a separate checker agent grades output, a file on disk holds shared state. Runs until done, max iterations, or budget exhausted.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-13",
@@ -205,19 +287,27 @@
     "handle": "@marie_haynes",
     "subject": "Post by Marie Haynes on X",
     "url": "https://x.com/marie_haynes/status/2065531158356717721",
-    "summary": "",
+    "summary": "Flags Google's new Open Knowledge Format (OKF): a standardized way to store information as a directory of interlinked markdown files that acts as a living wiki agents can query and edit, which the author thinks could replace Notion or Obsidian. References Google Cloud's blog post and the spec at github.com/GoogleCloudPlatform/knowledge-catalog (okf/SPEC.md), and notes feeding both links to Antigravity to brainstorm project uses.",
     "topics": [
-      "general"
+      "agent-design",
+      "skills-mcp",
+      "dev-practices",
+      "industry"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team",
+      "leadership"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "983.4K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "unattempted"
+    "enriched": true,
+    "content": "Marie Haynes @Marie_Haynes: Big news - Google introduced the Open Knowledge Format (OKF), a standardized way to store information in a directory of markdown files. Makes it easy to build a digital brain agents can use; files serve as a living wiki, agents can query/edit, they interlink. Could replace Notion or Obsidian. Google Cloud blog post + spec at github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md. Gave both to Antigravity for ideas.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-13",
@@ -225,19 +315,26 @@
     "handle": "@suryanshti777",
     "subject": "Post by Suryansh Tiwari on X",
     "url": "https://x.com/suryanshti777/status/2065473893817848266",
-    "summary": "",
+    "summary": "Claims Anthropic released an official Claude Code plugin, claude-code-setup, that scans your project and recommends and sets up hooks, skills, MCP servers, subagents, and automations step-by-step (install: /plugin install claude-code-setup@claude-plugins-official), arguing most people run Claude Code vanilla and miss the surrounding ecosystem. Quote-tweets the author's own 'Unveil' build. (Treat the 'official' claim as unverified.)",
     "topics": [
-      "general"
+      "claude-code",
+      "skills-mcp",
+      "agent-design",
+      "questionable"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "now",
     "sourceType": "tweet",
-    "views": "",
+    "views": "238.4K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "unattempted"
+    "enriched": true,
+    "content": "Suryansh Tiwari @Suryanshti777: Claude Code feels different once you install this. Anthropic quietly released an official plugin called claude-code-setup. It scans your project and recommends hooks, skills, MCP servers, subagents, automations, then sets everything up step-by-step. Install: /plugin install claude-code-setup@claude-plugins-official.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-12",
@@ -245,19 +342,26 @@
     "handle": "@0xcodez",
     "subject": "Post by Codez on X",
     "url": "https://x.com/0xcodez/status/2065097407965127142",
-    "summary": "",
+    "summary": "Hype-framed thread claiming an Anthropic 'Managed Agents' team demo showing how to build self-improving agent systems with the Fable 5 model from scratch in ~13 minutes, using /loops, dynamic workflows, and 'dreaming.' Quote-tweets the author's own 14-step article on the same. (Strong engagement-farming framing; claims unverified.)",
     "topics": [
-      "general"
+      "agent-design",
+      "claude-code",
+      "prompting",
+      "questionable"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "462.3K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "unattempted"
+    "enriched": true,
+    "content": "Codez @0xCodez: Anthropic Managed Agents team - Fable 5 is our best model for running self-improving agent systems. Add /loops, dynamic workflows, dreaming and you are unstoppable. In 13 minutes the Anthropic team shows how to build self-improving agent systems with Fable 5 from scratch. Live from the last Anthropic stage in Japan.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-11",

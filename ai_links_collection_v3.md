@@ -1,24 +1,24 @@
 # AI Links Collection
-**Total Posts**: 632  
-**Date Range**: 2024-06-11 – 2026-06-15  
-**Enriched**: 619/632 (97%)
+**Total Posts**: 633  
+**Date Range**: 2024-06-11 – 2026-06-16  
+**Enriched**: 632/633 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-06-15T23:13:29Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-06-16T21:10:07Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
+- **2026-06-15** — [Hasan Toor](https://x.com/hasantoxr/status/2066247422502957197) — *now • Agent Design • 28.7K views • v1 enriched*  
+  Highlights Headroom, a GitHub tool by Netflix engineer Tejas Chopra that compresses everything an AI agent reads before it reaches the LLM (tool outputs, logs, files, RAG chunks, code-search results, conversation history), claiming 60-95% fewer tokens for the same answers. Ships as a Python/TypeScript library, local proxy, and MCP server, with wrappers for Claude Code, Codex, Cursor, Aider, and Copilot.
+- **2026-06-14** — [Avid](https://x.com/av1dlive/status/2065747876005937416) — *now • Claude Code • 255.2K views • v1 enriched*  
+  Promotes a 'second brain' pattern attributed to Karpathy: let an LLM maintain a wiki of your notes so knowledge compounds as you dump sources and it reads, links, and files them. Points to a free Claude Code plugin, claude-obsidian by AgriciDaniel (claude plugin marketplace add AgriciDaniel/claude-obsidian; claude plugin install claude-obsidian@agricidaniel-claude-obsidian), then run /wiki inside an Obsidian folder. Quote-tweets the author's own article on building Obsidian from scratch with 13+ Kimi agents.
+- **2026-06-13** — [Suryansh Tiwari](https://x.com/suryanshti777/status/2065473893817848266) — *now • Claude Code • 238.4K views • v1 enriched*  
+  Claims Anthropic released an official Claude Code plugin, claude-code-setup, that scans your project and recommends and sets up hooks, skills, MCP servers, subagents, and automations step-by-step (install: /plugin install claude-code-setup@claude-plugins-official), arguing most people run Claude Code vanilla and miss the surrounding ecosystem. Quote-tweets the author's own 'Unveil' build. (Treat the 'official' claim as unverified.)
 - **2026-06-09** — [Paweł Huryn](https://x.com/pawelhuryn/status/2064201950980096078) — *now • Agent Design • legacy enrichment*  
   Lists six patterns for Anthropic-style dynamic agent workflows/loops: classify-and-act, fan-out-and-synthesize, adversarial verification, generate-and-filter, tournament (compare), and loop-until-done — each with a concrete example. Links his 'Claude Dynamic Workflows' guide.
 - **2026-06-09** — [rody](https://x.com/0x_rody/status/2063722061126651935) — *now • Questionable • 250.1K views • legacy enrichment*  
   Near-duplicate of the darkzodchi post: quotes an 'Anthropic manager' that nobody types prompts from scratch and commands should live in the project; links the same Claude Code slash-command-library template/talk.
-- **2026-06-08** — [darkzodchi](https://x.com/zodchiii/status/2063559498078278109) — *now • Claude Code • legacy enrichment*  
-  Quotes 'Anthropic engineer Margot van Laer': any prompt you type more than twice should be a saved file. Links a template/article on building a Claude Code slash-command library; 33-min talk on reusable prompt patterns.
-- **2026-06-11** — [hoeem](https://x.com/hooeem/status/2065098599751471454) — *near-term • Agent Design • 5,506 views • legacy enrichment*  
-  Quote-tweets his own long-form X article 'Why you should not be looping & what to do instead' — a contrarian breakdown pushing back on the popular agentic self-looping pattern (taking aim at a 'leading voice in AI') and proposing alternatives. The substance is in the linked article; framing is deliberately provocative.
-- **2026-06-11** — [Nainsi Dwivedi](https://x.com/nainsidwiv50980/status/2064947761779208476) — *near-term • Dev Practices • 2,708 views • legacy enrichment*  
-  Alibaba open-sourced 'open-code-review' (Apache-2.0), the internal AI code reviewer that's run on their codebase for ~2 years — 20,000+ engineers, 1M+ reviews. Design: deterministic engineering handles what must never fail (file selection, bundling, rule matching, comment positioning) while the LLM only does context reading, codebase search, and reasoning. Claims ~1/5 the token cost of a generic agent + skills and precise line-level comments that don't drift on large changesets. Repo name: open-code-review.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
@@ -54,34 +54,35 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 299 | 47.3% |
-| claude-code | 155 | 24.5% |
-| dev-practices | 167 | 26.4% |
-| skills-mcp | 86 | 13.6% |
-| prompting | 84 | 13.3% |
-| research | 114 | 18.0% |
-| industry | 70 | 11.1% |
-| management | 96 | 15.2% |
-| questionable | 84 | 13.3% |
-| general | 91 | 14.4% |
+| agent-design | 308 | 48.7% |
+| claude-code | 159 | 25.1% |
+| dev-practices | 175 | 27.6% |
+| skills-mcp | 91 | 14.4% |
+| prompting | 86 | 13.6% |
+| research | 116 | 18.3% |
+| industry | 71 | 11.2% |
+| management | 97 | 15.3% |
+| questionable | 92 | 14.5% |
+| general | 81 | 12.8% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
-| 2026-06-15 | Hasan Toor | general |  |
-| 2026-06-15 | Teknium | general |  |
-| 2026-06-15 | Avid | general |  |
-| 2026-06-15 | Olivia Chowdhury | general |  |
-| 2026-06-15 | Shenyang Deng | general |  |
-| 2026-06-14 | Lorwen Harris Nagle, PhD | general |  |
-| 2026-06-14 | Harry Tandy | general |  |
-| 2026-06-14 | Avid | general |  |
-| 2026-06-14 | Nav Toor | general |  |
-| 2026-06-13 | Avi Chawla | general |  |
-| 2026-06-13 | Marie Haynes | general |  |
-| 2026-06-13 | Suryansh Tiwari | general |  |
-| 2026-06-12 | Codez | general |  |
+| 2026-06-16 | Jaynit | management | Thread relaying Elon Musk's 5-step engineering 'algorithm': (1) make t... |
+| 2026-06-15 | Hasan Toor | agent-design | Highlights Headroom, a GitHub tool by Netflix engineer Tejas Chopra th... |
+| 2026-06-15 | Teknium | agent-design | Demo: the author used the Hermes Agent with a Manim video-generation s... |
+| 2026-06-15 | Avid | dev-practices | Argues you can run capable AI models locally on a Mac for free using A... |
+| 2026-06-15 | Olivia Chowdhury | research | Hype-framed thread on a Dec 31, 2025 MIT CSAIL paper that claims to 's... |
+| 2026-06-15 | Shenyang Deng | general | [Post unavailable - page doesn't exist] |
+| 2026-06-14 | Lorwen Harris Nagle, PhD | questionable | Off-topic motivational thread on Elon Musk, Nietzsche, and overcoming... |
+| 2026-06-14 | Harry Tandy | agent-design | Opens with a Sam Altman quote that the cost to use a given level of AI... |
+| 2026-06-14 | Avid | claude-code | Promotes a 'second brain' pattern attributed to Karpathy: let an LLM m... |
+| 2026-06-14 | Nav Toor | dev-practices | Spotlights Clone-Wars, an open-source GitHub collection (~34,555 stars... |
+| 2026-06-13 | Avi Chawla | agent-design | Explains 'loop engineering' (framed with a Karpathy quote about removi... |
+| 2026-06-13 | Marie Haynes | agent-design | Flags Google's new Open Knowledge Format (OKF): a standardized way to... |
+| 2026-06-13 | Suryansh Tiwari | claude-code | Claims Anthropic released an official Claude Code plugin, claude-code-... |
+| 2026-06-12 | Codez | agent-design | Hype-framed thread claiming an Anthropic 'Managed Agents' team demo sh... |
 | 2026-06-11 | hoeem | agent-design | Quote-tweets his own long-form X article 'Why you should not be loopin... |
 | 2026-06-11 | Nainsi Dwivedi | dev-practices | Alibaba open-sourced 'open-code-review' (Apache-2.0), the internal AI... |
 | 2026-06-11 | Meta Alchemist | prompting | Shares a copy-paste 'Repo Audit & Improvement Plan' prompt — a structu... |
@@ -118,12 +119,29 @@
 | 2026-05-31 | Mr. Buzzoni | claude-code | Engagement-farmed thread (ALL CAPS hype) citing Karpathy's 'we're in t... |
 | 2026-05-31 | 恒星 | skills-mcp | DeepMind open-sourced Science Skills (github.com/google-deepmind/scien... |
 | 2026-05-31 | Chesny | general | Hype thread (translated from Spanish) about a Karpathy-inspired '3D kn... |
-| 2026-05-29 | 0xSero | agent-design | Recommends Peter Steinberger's article at steipete.me titled 'Just Tal... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (299)
+### Agent Design (308)
+
+- [Hasan Toor](https://x.com/hasantoxr/status/2066247422502957197) — 2026-06-15: Highlights Headroom, a GitHub tool by Netflix engineer Tejas Chopra that compresses everything an AI agent reads before it reaches the LLM (tool outputs, logs, files, RAG chunks, code-search results, conversation history), claiming 60-95% fewer tokens for the same answers. Ships as a Python/TypeScript library, local proxy, and MCP server, with wrappers for Claude Code, Codex, Cursor, Aider, and Copilot.
+
+- [Teknium](https://x.com/teknium/status/2066185784332562605) — 2026-06-15: Demo: the author used the Hermes Agent with a Manim video-generation skill plus its TTS tool to autonomously produce a video explaining the Hermes Agent itself — a self-referential showcase of composing a skill and a tool inside an agent.
+
+- [Olivia Chowdhury](https://x.com/oliviacoder1/status/2066064093552038070) — 2026-06-15: Hype-framed thread on a Dec 31, 2025 MIT CSAIL paper that claims to 'solve' AI memory not by building bigger context windows but by teaching models how to read/retrieve — positioning the result against the industry's context-window arms race and the 'context rot' problem, where a model's performance on information already in context degrades as more is packed in.
+
+- [Harry Tandy](https://x.com/harrytandy/status/2065818850633932996) — 2026-06-14: Opens with a Sam Altman quote that the cost to use a given level of AI falls ~10x every 12 months, then lays out a 10-step agentic-coding sprint: pick the heaviest backlog item, write a FABLE_RUN.md spec (goal/scope/commands/review rules/done criteria), map the repo first, break the job into checkpoints that each end with diff + test output + next decision, split builder and checker agents, use git worktrees for parallel attempts, and keep a RUN_LOG.md of every failed command and accepted fix.
+
+- [Avid](https://x.com/av1dlive/status/2065747876005937416) — 2026-06-14: Promotes a 'second brain' pattern attributed to Karpathy: let an LLM maintain a wiki of your notes so knowledge compounds as you dump sources and it reads, links, and files them. Points to a free Claude Code plugin, claude-obsidian by AgriciDaniel (claude plugin marketplace add AgriciDaniel/claude-obsidian; claude plugin install claude-obsidian@agricidaniel-claude-obsidian), then run /wiki inside an Obsidian folder. Quote-tweets the author's own article on building Obsidian from scratch with 13+ Kimi agents.
+
+- [Avi Chawla](https://x.com/_avichawla/status/2065727218991735000) — 2026-06-13: Explains 'loop engineering' (framed with a Karpathy quote about removing yourself as the bottleneck and maximizing leverage): move the operator's two manual jobs — deciding what the agent runs next and checking its output — into the system itself. A schedule decides what to run, a maker loop produces the work, a separate checker agent grades the output, and a file on disk holds the shared state both read; the loop runs until done, max iterations, or budget is exhausted.
+
+- [Marie Haynes](https://x.com/marie_haynes/status/2065531158356717721) — 2026-06-13: Flags Google's new Open Knowledge Format (OKF): a standardized way to store information as a directory of interlinked markdown files that acts as a living wiki agents can query and edit, which the author thinks could replace Notion or Obsidian. References Google Cloud's blog post and the spec at github.com/GoogleCloudPlatform/knowledge-catalog (okf/SPEC.md), and notes feeding both links to Antigravity to brainstorm project uses.
+
+- [Suryansh Tiwari](https://x.com/suryanshti777/status/2065473893817848266) — 2026-06-13: Claims Anthropic released an official Claude Code plugin, claude-code-setup, that scans your project and recommends and sets up hooks, skills, MCP servers, subagents, and automations step-by-step (install: /plugin install claude-code-setup@claude-plugins-official), arguing most people run Claude Code vanilla and miss the surrounding ecosystem. Quote-tweets the author's own 'Unveil' build. (Treat the 'official' claim as unverified.)
+
+- [Codez](https://x.com/0xcodez/status/2065097407965127142) — 2026-06-12: Hype-framed thread claiming an Anthropic 'Managed Agents' team demo showing how to build self-improving agent systems with the Fable 5 model from scratch in ~13 minutes, using /loops, dynamic workflows, and 'dreaming.' Quote-tweets the author's own 14-step article on the same. (Strong engagement-farming framing; claims unverified.)
 
 - [hoeem](https://x.com/hooeem/status/2065098599751471454) — 2026-06-11: Quote-tweets his own long-form X article 'Why you should not be looping & what to do instead' — a contrarian breakdown pushing back on the popular agentic self-looping pattern (taking aim at a 'leading voice in AI') and proposing alternatives. The substance is in the linked article; framing is deliberately provocative.
 
@@ -723,7 +741,15 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Claude Code (155)
+### Claude Code (159)
+
+- [Harry Tandy](https://x.com/harrytandy/status/2065818850633932996) — 2026-06-14: Opens with a Sam Altman quote that the cost to use a given level of AI falls ~10x every 12 months, then lays out a 10-step agentic-coding sprint: pick the heaviest backlog item, write a FABLE_RUN.md spec (goal/scope/commands/review rules/done criteria), map the repo first, break the job into checkpoints that each end with diff + test output + next decision, split builder and checker agents, use git worktrees for parallel attempts, and keep a RUN_LOG.md of every failed command and accepted fix.
+
+- [Avid](https://x.com/av1dlive/status/2065747876005937416) — 2026-06-14: Promotes a 'second brain' pattern attributed to Karpathy: let an LLM maintain a wiki of your notes so knowledge compounds as you dump sources and it reads, links, and files them. Points to a free Claude Code plugin, claude-obsidian by AgriciDaniel (claude plugin marketplace add AgriciDaniel/claude-obsidian; claude plugin install claude-obsidian@agricidaniel-claude-obsidian), then run /wiki inside an Obsidian folder. Quote-tweets the author's own article on building Obsidian from scratch with 13+ Kimi agents.
+
+- [Suryansh Tiwari](https://x.com/suryanshti777/status/2065473893817848266) — 2026-06-13: Claims Anthropic released an official Claude Code plugin, claude-code-setup, that scans your project and recommends and sets up hooks, skills, MCP servers, subagents, and automations step-by-step (install: /plugin install claude-code-setup@claude-plugins-official), arguing most people run Claude Code vanilla and miss the surrounding ecosystem. Quote-tweets the author's own 'Unveil' build. (Treat the 'official' claim as unverified.)
+
+- [Codez](https://x.com/0xcodez/status/2065097407965127142) — 2026-06-12: Hype-framed thread claiming an Anthropic 'Managed Agents' team demo showing how to build self-improving agent systems with the Fable 5 model from scratch in ~13 minutes, using /loops, dynamic workflows, and 'dreaming.' Quote-tweets the author's own 14-step article on the same. (Strong engagement-farming framing; claims unverified.)
 
 - [Meta Alchemist](https://x.com/meta_alchemist/status/2064431279383433646) — 2026-06-11: Shares a copy-paste 'Repo Audit & Improvement Plan' prompt — a structured, 4-phase principal-engineer audit (Phase 1 discovery/mapping before judging, then a prioritized, actionable improvement plan), with instructions to cite file paths and line numbers and to flag anything unverifiable. Useful prompt template, but wrapped in hype framing around a nonexistent 'Claude Fable 5' model.
 
@@ -1035,7 +1061,23 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (167)
+### Dev Practices (175)
+
+- [Jaynit](https://x.com/jaynitx/status/2066506535250092378) — 2026-06-16: Thread relaying Elon Musk's 5-step engineering 'algorithm': (1) make the requirements less dumb / question them, (2) try to delete the part or process step entirely (if you aren't forced to add ~10% back, you didn't delete enough), (3) simplify and optimize, (4) accelerate cycle time, (5) automate — with the warning that the most common mistake of smart engineers is optimizing something that shouldn't exist.
+
+- [Hasan Toor](https://x.com/hasantoxr/status/2066247422502957197) — 2026-06-15: Highlights Headroom, a GitHub tool by Netflix engineer Tejas Chopra that compresses everything an AI agent reads before it reaches the LLM (tool outputs, logs, files, RAG chunks, code-search results, conversation history), claiming 60-95% fewer tokens for the same answers. Ships as a Python/TypeScript library, local proxy, and MCP server, with wrappers for Claude Code, Codex, Cursor, Aider, and Copilot.
+
+- [Avid](https://x.com/av1dlive/status/2066127265407336535) — 2026-06-15: Argues you can run capable AI models locally on a Mac for free using Apple's MLX stack — install mlx-lm, launch its server, and point any agent at localhost. Cites a ~23-minute talk from an Apple MLX-team engineer in which a local model builds a working SwiftUI app from a blank Xcode project in two minutes and then fixes a bug, with nothing leaving the machine. Quote-tweets a piece on the ThinkStation PGX local-inference box.
+
+- [Harry Tandy](https://x.com/harrytandy/status/2065818850633932996) — 2026-06-14: Opens with a Sam Altman quote that the cost to use a given level of AI falls ~10x every 12 months, then lays out a 10-step agentic-coding sprint: pick the heaviest backlog item, write a FABLE_RUN.md spec (goal/scope/commands/review rules/done criteria), map the repo first, break the job into checkpoints that each end with diff + test output + next decision, split builder and checker agents, use git worktrees for parallel attempts, and keep a RUN_LOG.md of every failed command and accepted fix.
+
+- [Avid](https://x.com/av1dlive/status/2065747876005937416) — 2026-06-14: Promotes a 'second brain' pattern attributed to Karpathy: let an LLM maintain a wiki of your notes so knowledge compounds as you dump sources and it reads, links, and files them. Points to a free Claude Code plugin, claude-obsidian by AgriciDaniel (claude plugin marketplace add AgriciDaniel/claude-obsidian; claude plugin install claude-obsidian@agricidaniel-claude-obsidian), then run /wiki inside an Obsidian folder. Quote-tweets the author's own article on building Obsidian from scratch with 13+ Kimi agents.
+
+- [Nav Toor](https://x.com/heynavtoor/status/2065427656112505017) — 2026-06-14: Spotlights Clone-Wars, an open-source GitHub collection (~34,555 stars) by developer Gourav Goyal that catalogues 100+ open-source clones of major apps (Netflix, Spotify, Instagram, Airbnb, WhatsApp, TikTok, Amazon) with source code, demos, and tech stacks listed — e.g., a Netflix clone in React + TMDB API. Started December 2020 and hit GitHub Trending and Hacker News #1.
+
+- [Avi Chawla](https://x.com/_avichawla/status/2065727218991735000) — 2026-06-13: Explains 'loop engineering' (framed with a Karpathy quote about removing yourself as the bottleneck and maximizing leverage): move the operator's two manual jobs — deciding what the agent runs next and checking its output — into the system itself. A schedule decides what to run, a maker loop produces the work, a separate checker agent grades the output, and a file on disk holds the shared state both read; the loop runs until done, max iterations, or budget is exhausted.
+
+- [Marie Haynes](https://x.com/marie_haynes/status/2065531158356717721) — 2026-06-13: Flags Google's new Open Knowledge Format (OKF): a standardized way to store information as a directory of interlinked markdown files that acts as a living wiki agents can query and edit, which the author thinks could replace Notion or Obsidian. References Google Cloud's blog post and the spec at github.com/GoogleCloudPlatform/knowledge-catalog (okf/SPEC.md), and notes feeding both links to Antigravity to brainstorm project uses.
 
 - [Nainsi Dwivedi](https://x.com/nainsidwiv50980/status/2064947761779208476) — 2026-06-11: Alibaba open-sourced 'open-code-review' (Apache-2.0), the internal AI code reviewer that's run on their codebase for ~2 years — 20,000+ engineers, 1M+ reviews. Design: deterministic engineering handles what must never fail (file selection, bundling, rule matching, comment positioning) while the LLM only does context reading, codebase search, and reasoning. Claims ~1/5 the token cost of a generic agent + skills and precise line-level comments that don't drift on large changesets. Repo name: open-code-review.
 
@@ -1371,7 +1413,17 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (86)
+### Skills & MCP (91)
+
+- [Hasan Toor](https://x.com/hasantoxr/status/2066247422502957197) — 2026-06-15: Highlights Headroom, a GitHub tool by Netflix engineer Tejas Chopra that compresses everything an AI agent reads before it reaches the LLM (tool outputs, logs, files, RAG chunks, code-search results, conversation history), claiming 60-95% fewer tokens for the same answers. Ships as a Python/TypeScript library, local proxy, and MCP server, with wrappers for Claude Code, Codex, Cursor, Aider, and Copilot.
+
+- [Teknium](https://x.com/teknium/status/2066185784332562605) — 2026-06-15: Demo: the author used the Hermes Agent with a Manim video-generation skill plus its TTS tool to autonomously produce a video explaining the Hermes Agent itself — a self-referential showcase of composing a skill and a tool inside an agent.
+
+- [Avid](https://x.com/av1dlive/status/2065747876005937416) — 2026-06-14: Promotes a 'second brain' pattern attributed to Karpathy: let an LLM maintain a wiki of your notes so knowledge compounds as you dump sources and it reads, links, and files them. Points to a free Claude Code plugin, claude-obsidian by AgriciDaniel (claude plugin marketplace add AgriciDaniel/claude-obsidian; claude plugin install claude-obsidian@agricidaniel-claude-obsidian), then run /wiki inside an Obsidian folder. Quote-tweets the author's own article on building Obsidian from scratch with 13+ Kimi agents.
+
+- [Marie Haynes](https://x.com/marie_haynes/status/2065531158356717721) — 2026-06-13: Flags Google's new Open Knowledge Format (OKF): a standardized way to store information as a directory of interlinked markdown files that acts as a living wiki agents can query and edit, which the author thinks could replace Notion or Obsidian. References Google Cloud's blog post and the spec at github.com/GoogleCloudPlatform/knowledge-catalog (okf/SPEC.md), and notes feeding both links to Antigravity to brainstorm project uses.
+
+- [Suryansh Tiwari](https://x.com/suryanshti777/status/2065473893817848266) — 2026-06-13: Claims Anthropic released an official Claude Code plugin, claude-code-setup, that scans your project and recommends and sets up hooks, skills, MCP servers, subagents, and automations step-by-step (install: /plugin install claude-code-setup@claude-plugins-official), arguing most people run Claude Code vanilla and miss the surrounding ecosystem. Quote-tweets the author's own 'Unveil' build. (Treat the 'official' claim as unverified.)
 
 - [hoeem](https://x.com/hooeem/status/2064099329342640285) — 2026-06-09: Enthusiastic boost of Matt Pocock's new /teach skill — a Claude skill distilling his teaching experience that can teach you anything (demoed by teaching him to solve a Rubik's cube).
 
@@ -1545,7 +1597,11 @@
 
 - [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Anthropic released a frontend-design plugin for Claude Code — demo shows Claude creating a music player app. Install via /plugin marketplace add anthropics/claude-code and /plugin install frontend-design@claude-code-plugins.
 
-### Prompting (84)
+### Prompting (86)
+
+- [Avi Chawla](https://x.com/_avichawla/status/2065727218991735000) — 2026-06-13: Explains 'loop engineering' (framed with a Karpathy quote about removing yourself as the bottleneck and maximizing leverage): move the operator's two manual jobs — deciding what the agent runs next and checking its output — into the system itself. A schedule decides what to run, a maker loop produces the work, a separate checker agent grades the output, and a file on disk holds the shared state both read; the loop runs until done, max iterations, or budget is exhausted.
+
+- [Codez](https://x.com/0xcodez/status/2065097407965127142) — 2026-06-12: Hype-framed thread claiming an Anthropic 'Managed Agents' team demo showing how to build self-improving agent systems with the Fable 5 model from scratch in ~13 minutes, using /loops, dynamic workflows, and 'dreaming.' Quote-tweets the author's own 14-step article on the same. (Strong engagement-farming framing; claims unverified.)
 
 - [hoeem](https://x.com/hooeem/status/2065098599751471454) — 2026-06-11: Quote-tweets his own long-form X article 'Why you should not be looping & what to do instead' — a contrarian breakdown pushing back on the popular agentic self-looping pattern (taking aim at a 'leading voice in AI') and proposing alternatives. The substance is in the linked article; framing is deliberately provocative.
 
@@ -1715,7 +1771,11 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
 
-### Research (114)
+### Research (116)
+
+- [Avid](https://x.com/av1dlive/status/2066127265407336535) — 2026-06-15: Argues you can run capable AI models locally on a Mac for free using Apple's MLX stack — install mlx-lm, launch its server, and point any agent at localhost. Cites a ~23-minute talk from an Apple MLX-team engineer in which a local model builds a working SwiftUI app from a blank Xcode project in two minutes and then fixes a bug, with nothing leaving the machine. Quote-tweets a piece on the ThinkStation PGX local-inference box.
+
+- [Olivia Chowdhury](https://x.com/oliviacoder1/status/2066064093552038070) — 2026-06-15: Hype-framed thread on a Dec 31, 2025 MIT CSAIL paper that claims to 'solve' AI memory not by building bigger context windows but by teaching models how to read/retrieve — positioning the result against the industry's context-window arms race and the 'context rot' problem, where a model's performance on information already in context degrades as more is packed in.
 
 - [Ahmad](https://x.com/theahmadosman/status/2063935919481106560) — 2026-06-09: Detailed self-study roadmap for LLM inference/serving internals: serving engines (vLLM/PagedAttention, SGLang/RadixAttention, TensorRT-LLM FP8/FP4, FlashInfer), down-the-stack study (Triton, CUTLASS/CuTe, FlashAttention & PagedAttention papers, MoE, Nsight profiling), and a hands-on mini-project sequence (RMSNorm in Triton, fused SiLU, FP16 matmul vs cuBLAS, paged KV lookup).
 
@@ -1945,7 +2005,9 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: 15-part thread explaining the 'stunning, simple explanation behind matrix multiplication' — breaks down the most crucial idea behind modern machine learning. 1M views.
 
-### Industry (70)
+### Industry (71)
+
+- [Marie Haynes](https://x.com/marie_haynes/status/2065531158356717721) — 2026-06-13: Flags Google's new Open Knowledge Format (OKF): a standardized way to store information as a directory of interlinked markdown files that acts as a living wiki agents can query and edit, which the author thinks could replace Notion or Obsidian. References Google Cloud's blog post and the spec at github.com/GoogleCloudPlatform/knowledge-catalog (okf/SPEC.md), and notes feeding both links to Antigravity to brainstorm project uses.
 
 - [Sprytix](https://x.com/sprytixl/status/2063234969510588640) — 2026-06-07: Engagement-farmed claim that a Chinese professor runs a 170-agent dev team making 'every company decision' on Kimi K2.6 with one prompt; links an article on running 300 parallel agents. Hype framing, thin substance — flagging as questionable, with an industry/agent angle.
 
@@ -2087,7 +2149,9 @@
 
 - [Dante O. Cuales](https://x.com/danteocualesjr/status/1957204427909321027) — 2025-08-18: Reply to a thread about AI engineering being easy to learn — argues the 'intimidation factor is mostly artificial' since most AI engineering is API orchestration, prompt optimization, and data pipeline work. The hard parts are already abstracted away.
 
-### Management (96)
+### Management (97)
+
+- [Jaynit](https://x.com/jaynitx/status/2066506535250092378) — 2026-06-16: Thread relaying Elon Musk's 5-step engineering 'algorithm': (1) make the requirements less dumb / question them, (2) try to delete the part or process step entirely (if you aren't forced to add ~10% back, you didn't delete enough), (3) simplify and optimize, (4) accelerate cycle time, (5) automate — with the warning that the most common mistake of smart engineers is optimizing something that shouldn't exist.
 
 - [Peter Yang](https://x.com/petergyang/status/2063988122720055772) — 2026-06-09: Five takeaways from Kun Chen (ex-Meta L8) on his agentic-engineering system: spend most time planning/validating not coding; plan quality determines how long agents run autonomously; use visual HTML plans not walls of markdown — via his free open-source tool Lavish (github.com/kunchenguid/lavish-axi).
 
@@ -2281,7 +2345,23 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
 
-### Questionable (84)
+### Questionable (92)
+
+- [Jaynit](https://x.com/jaynitx/status/2066506535250092378) — 2026-06-16: Thread relaying Elon Musk's 5-step engineering 'algorithm': (1) make the requirements less dumb / question them, (2) try to delete the part or process step entirely (if you aren't forced to add ~10% back, you didn't delete enough), (3) simplify and optimize, (4) accelerate cycle time, (5) automate — with the warning that the most common mistake of smart engineers is optimizing something that shouldn't exist.
+
+- [Avid](https://x.com/av1dlive/status/2066127265407336535) — 2026-06-15: Argues you can run capable AI models locally on a Mac for free using Apple's MLX stack — install mlx-lm, launch its server, and point any agent at localhost. Cites a ~23-minute talk from an Apple MLX-team engineer in which a local model builds a working SwiftUI app from a blank Xcode project in two minutes and then fixes a bug, with nothing leaving the machine. Quote-tweets a piece on the ThinkStation PGX local-inference box.
+
+- [Olivia Chowdhury](https://x.com/oliviacoder1/status/2066064093552038070) — 2026-06-15: Hype-framed thread on a Dec 31, 2025 MIT CSAIL paper that claims to 'solve' AI memory not by building bigger context windows but by teaching models how to read/retrieve — positioning the result against the industry's context-window arms race and the 'context rot' problem, where a model's performance on information already in context degrades as more is packed in.
+
+- [Lorwen Harris Nagle, PhD](https://x.com/lorwen108/status/2065852553208992218) — 2026-06-14: Off-topic motivational thread on Elon Musk, Nietzsche, and overcoming teenage depression/anxiety through imagination rather than analysis — pop-psychology engagement content with no AI or technical substance.
+
+- [Avid](https://x.com/av1dlive/status/2065747876005937416) — 2026-06-14: Promotes a 'second brain' pattern attributed to Karpathy: let an LLM maintain a wiki of your notes so knowledge compounds as you dump sources and it reads, links, and files them. Points to a free Claude Code plugin, claude-obsidian by AgriciDaniel (claude plugin marketplace add AgriciDaniel/claude-obsidian; claude plugin install claude-obsidian@agricidaniel-claude-obsidian), then run /wiki inside an Obsidian folder. Quote-tweets the author's own article on building Obsidian from scratch with 13+ Kimi agents.
+
+- [Nav Toor](https://x.com/heynavtoor/status/2065427656112505017) — 2026-06-14: Spotlights Clone-Wars, an open-source GitHub collection (~34,555 stars) by developer Gourav Goyal that catalogues 100+ open-source clones of major apps (Netflix, Spotify, Instagram, Airbnb, WhatsApp, TikTok, Amazon) with source code, demos, and tech stacks listed — e.g., a Netflix clone in React + TMDB API. Started December 2020 and hit GitHub Trending and Hacker News #1.
+
+- [Suryansh Tiwari](https://x.com/suryanshti777/status/2065473893817848266) — 2026-06-13: Claims Anthropic released an official Claude Code plugin, claude-code-setup, that scans your project and recommends and sets up hooks, skills, MCP servers, subagents, and automations step-by-step (install: /plugin install claude-code-setup@claude-plugins-official), arguing most people run Claude Code vanilla and miss the surrounding ecosystem. Quote-tweets the author's own 'Unveil' build. (Treat the 'official' claim as unverified.)
+
+- [Codez](https://x.com/0xcodez/status/2065097407965127142) — 2026-06-12: Hype-framed thread claiming an Anthropic 'Managed Agents' team demo showing how to build self-improving agent systems with the Fable 5 model from scratch in ~13 minutes, using /loops, dynamic workflows, and 'dreaming.' Quote-tweets the author's own 14-step article on the same. (Strong engagement-farming framing; claims unverified.)
 
 - [Nainsi Dwivedi](https://x.com/nainsidwiv50980/status/2064947761779208476) — 2026-06-11: Alibaba open-sourced 'open-code-review' (Apache-2.0), the internal AI code reviewer that's run on their codebase for ~2 years — 20,000+ engineers, 1M+ reviews. Design: deterministic engineering handles what must never fail (file selection, bundling, rule matching, comment positioning) while the LLM only does context reading, codebase search, and reasoning. Claims ~1/5 the token cost of a generic agent + skills and precise line-level comments that don't drift on large changesets. Repo name: open-code-review.
 
@@ -2451,33 +2531,13 @@
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
 
-### General (95)
+### General (85)
 
-- [Hasan Toor](https://x.com/hasantoxr/status/2066247422502957197) — 2026-06-15: 
+- [Shenyang Deng](https://x.com/dengshenyang24/status/2065853130567279073) — 2026-06-15: [Post unavailable - page doesn't exist]
 
-- [Teknium](https://x.com/teknium/status/2066185784332562605) — 2026-06-15: 
+- [Lorwen Harris Nagle, PhD](https://x.com/lorwen108/status/2065852553208992218) — 2026-06-14: Off-topic motivational thread on Elon Musk, Nietzsche, and overcoming teenage depression/anxiety through imagination rather than analysis — pop-psychology engagement content with no AI or technical substance.
 
-- [Avid](https://x.com/av1dlive/status/2066127265407336535) — 2026-06-15: 
-
-- [Olivia Chowdhury](https://x.com/oliviacoder1/status/2066064093552038070) — 2026-06-15: 
-
-- [Shenyang Deng](https://x.com/dengshenyang24/status/2065853130567279073) — 2026-06-15: 
-
-- [Lorwen Harris Nagle, PhD](https://x.com/lorwen108/status/2065852553208992218) — 2026-06-14: 
-
-- [Harry Tandy](https://x.com/harrytandy/status/2065818850633932996) — 2026-06-14: 
-
-- [Avid](https://x.com/av1dlive/status/2065747876005937416) — 2026-06-14: 
-
-- [Nav Toor](https://x.com/heynavtoor/status/2065427656112505017) — 2026-06-14: 
-
-- [Avi Chawla](https://x.com/_avichawla/status/2065727218991735000) — 2026-06-13: 
-
-- [Marie Haynes](https://x.com/marie_haynes/status/2065531158356717721) — 2026-06-13: 
-
-- [Suryansh Tiwari](https://x.com/suryanshti777/status/2065473893817848266) — 2026-06-13: 
-
-- [Codez](https://x.com/0xcodez/status/2065097407965127142) — 2026-06-12: 
+- [Nav Toor](https://x.com/heynavtoor/status/2065427656112505017) — 2026-06-14: Spotlights Clone-Wars, an open-source GitHub collection (~34,555 stars) by developer Gourav Goyal that catalogues 100+ open-source clones of major apps (Netflix, Spotify, Instagram, Airbnb, WhatsApp, TikTok, Amazon) with source code, demos, and tech stacks listed — e.g., a Netflix clone in React + TMDB API. Started December 2020 and hit GitHub Trending and Hacker News #1.
 
 - [Jeff Tang](https://x.com/jefftangx/status/2064052420888363090) — 2026-06-09: [Off-topic for AI] Points to a 57-page Google Doc summarizing peptides such as BPC-157 and the human trials done so far. Health/biohacking content, not AI/tech.
 
@@ -2648,44 +2708,47 @@
 
 ### Jun 2026
 
-- **2026-06-15** | [Hasan Toor](https://x.com/hasantoxr/status/2066247422502957197) | general
-  
+- **2026-06-16** | [Jaynit](https://x.com/jaynitx/status/2066506535250092378) | management, dev-practices, questionable
+  Thread relaying Elon Musk's 5-step engineering 'algorithm': (1) make the requirements less dumb / question them, (2) try to delete the part or process step entirely (if you aren't forced to add ~10% back, you didn't delete enough), (3) simplify and optimize, (4) accelerate cycle time, (5) automate — with the warning that the most common mistake of smart engineers is optimizing something that shouldn't exist.
 
-- **2026-06-15** | [Teknium](https://x.com/teknium/status/2066185784332562605) | general
-  
+- **2026-06-15** | [Hasan Toor](https://x.com/hasantoxr/status/2066247422502957197) | agent-design, skills-mcp, dev-practices
+  Highlights Headroom, a GitHub tool by Netflix engineer Tejas Chopra that compresses everything an AI agent reads before it reaches the LLM (tool outputs, logs, files, RAG chunks, code-search results, conversation history), claiming 60-95% fewer tokens for the same answers. Ships as a Python/TypeScript library, local proxy, and MCP server, with wrappers for Claude Code, Codex, Cursor, Aider, and Copilot.
 
-- **2026-06-15** | [Avid](https://x.com/av1dlive/status/2066127265407336535) | general
-  
+- **2026-06-15** | [Teknium](https://x.com/teknium/status/2066185784332562605) | agent-design, skills-mcp
+  Demo: the author used the Hermes Agent with a Manim video-generation skill plus its TTS tool to autonomously produce a video explaining the Hermes Agent itself — a self-referential showcase of composing a skill and a tool inside an agent.
 
-- **2026-06-15** | [Olivia Chowdhury](https://x.com/oliviacoder1/status/2066064093552038070) | general
-  
+- **2026-06-15** | [Avid](https://x.com/av1dlive/status/2066127265407336535) | dev-practices, research, questionable
+  Argues you can run capable AI models locally on a Mac for free using Apple's MLX stack — install mlx-lm, launch its server, and point any agent at localhost. Cites a ~23-minute talk from an Apple MLX-team engineer in which a local model builds a working SwiftUI app from a blank Xcode project in two minutes and then fixes a bug, with nothing leaving the machine. Quote-tweets a piece on the ThinkStation PGX local-inference box.
+
+- **2026-06-15** | [Olivia Chowdhury](https://x.com/oliviacoder1/status/2066064093552038070) | research, agent-design, questionable
+  Hype-framed thread on a Dec 31, 2025 MIT CSAIL paper that claims to 'solve' AI memory not by building bigger context windows but by teaching models how to read/retrieve — positioning the result against the industry's context-window arms race and the 'context rot' problem, where a model's performance on information already in context degrades as more is packed in.
 
 - **2026-06-15** | [Shenyang Deng](https://x.com/dengshenyang24/status/2065853130567279073) | general
-  
+  [Post unavailable - page doesn't exist]
 
-- **2026-06-14** | [Lorwen Harris Nagle, PhD](https://x.com/lorwen108/status/2065852553208992218) | general
-  
+- **2026-06-14** | [Lorwen Harris Nagle, PhD](https://x.com/lorwen108/status/2065852553208992218) | questionable, general
+  Off-topic motivational thread on Elon Musk, Nietzsche, and overcoming teenage depression/anxiety through imagination rather than analysis — pop-psychology engagement content with no AI or technical substance.
 
-- **2026-06-14** | [Harry Tandy](https://x.com/harrytandy/status/2065818850633932996) | general
-  
+- **2026-06-14** | [Harry Tandy](https://x.com/harrytandy/status/2065818850633932996) | agent-design, dev-practices, claude-code
+  Opens with a Sam Altman quote that the cost to use a given level of AI falls ~10x every 12 months, then lays out a 10-step agentic-coding sprint: pick the heaviest backlog item, write a FABLE_RUN.md spec (goal/scope/commands/review rules/done criteria), map the repo first, break the job into checkpoints that each end with diff + test output + next decision, split builder and checker agents, use git worktrees for parallel attempts, and keep a RUN_LOG.md of every failed command and accepted fix.
 
-- **2026-06-14** | [Avid](https://x.com/av1dlive/status/2065747876005937416) | general
-  
+- **2026-06-14** | [Avid](https://x.com/av1dlive/status/2065747876005937416) | claude-code, skills-mcp, agent-design, dev-practices, questionable
+  Promotes a 'second brain' pattern attributed to Karpathy: let an LLM maintain a wiki of your notes so knowledge compounds as you dump sources and it reads, links, and files them. Points to a free Claude Code plugin, claude-obsidian by AgriciDaniel (claude plugin marketplace add AgriciDaniel/claude-obsidian; claude plugin install claude-obsidian@agricidaniel-claude-obsidian), then run /wiki inside an Obsidian folder. Quote-tweets the author's own article on building Obsidian from scratch with 13+ Kimi agents.
 
-- **2026-06-14** | [Nav Toor](https://x.com/heynavtoor/status/2065427656112505017) | general
-  
+- **2026-06-14** | [Nav Toor](https://x.com/heynavtoor/status/2065427656112505017) | dev-practices, general, questionable
+  Spotlights Clone-Wars, an open-source GitHub collection (~34,555 stars) by developer Gourav Goyal that catalogues 100+ open-source clones of major apps (Netflix, Spotify, Instagram, Airbnb, WhatsApp, TikTok, Amazon) with source code, demos, and tech stacks listed — e.g., a Netflix clone in React + TMDB API. Started December 2020 and hit GitHub Trending and Hacker News #1.
 
-- **2026-06-13** | [Avi Chawla](https://x.com/_avichawla/status/2065727218991735000) | general
-  
+- **2026-06-13** | [Avi Chawla](https://x.com/_avichawla/status/2065727218991735000) | agent-design, dev-practices, prompting
+  Explains 'loop engineering' (framed with a Karpathy quote about removing yourself as the bottleneck and maximizing leverage): move the operator's two manual jobs — deciding what the agent runs next and checking its output — into the system itself. A schedule decides what to run, a maker loop produces the work, a separate checker agent grades the output, and a file on disk holds the shared state both read; the loop runs until done, max iterations, or budget is exhausted.
 
-- **2026-06-13** | [Marie Haynes](https://x.com/marie_haynes/status/2065531158356717721) | general
-  
+- **2026-06-13** | [Marie Haynes](https://x.com/marie_haynes/status/2065531158356717721) | agent-design, skills-mcp, dev-practices, industry
+  Flags Google's new Open Knowledge Format (OKF): a standardized way to store information as a directory of interlinked markdown files that acts as a living wiki agents can query and edit, which the author thinks could replace Notion or Obsidian. References Google Cloud's blog post and the spec at github.com/GoogleCloudPlatform/knowledge-catalog (okf/SPEC.md), and notes feeding both links to Antigravity to brainstorm project uses.
 
-- **2026-06-13** | [Suryansh Tiwari](https://x.com/suryanshti777/status/2065473893817848266) | general
-  
+- **2026-06-13** | [Suryansh Tiwari](https://x.com/suryanshti777/status/2065473893817848266) | claude-code, skills-mcp, agent-design, questionable
+  Claims Anthropic released an official Claude Code plugin, claude-code-setup, that scans your project and recommends and sets up hooks, skills, MCP servers, subagents, and automations step-by-step (install: /plugin install claude-code-setup@claude-plugins-official), arguing most people run Claude Code vanilla and miss the surrounding ecosystem. Quote-tweets the author's own 'Unveil' build. (Treat the 'official' claim as unverified.)
 
-- **2026-06-12** | [Codez](https://x.com/0xcodez/status/2065097407965127142) | general
-  
+- **2026-06-12** | [Codez](https://x.com/0xcodez/status/2065097407965127142) | agent-design, claude-code, prompting, questionable
+  Hype-framed thread claiming an Anthropic 'Managed Agents' team demo showing how to build self-improving agent systems with the Fable 5 model from scratch in ~13 minutes, using /loops, dynamic workflows, and 'dreaming.' Quote-tweets the author's own 14-step article on the same. (Strong engagement-farming framing; claims unverified.)
 
 - **2026-06-11** | [hoeem](https://x.com/hooeem/status/2065098599751471454) | agent-design, prompting
   Quote-tweets his own long-form X article 'Why you should not be looping & what to do instead' — a contrarian breakdown pushing back on the popular agentic self-looping pattern (taking aim at a 'leading voice in AI') and proposing alternatives. The substance is in the linked article; framing is deliberately provocative.
