@@ -127,7 +127,15 @@ Runs weekday mornings at 9 AM (Cowork scheduled task `ai-links-sync`). Pulls the
 
 ### Catch-Up Skill (ai-links-catchup)
 
-Bulk enrichment tool invoked by saying things like "catch up on links" or "enrich my links." Three phases: (1) backfill missing URLs from Outlook email bodies, (2) scrape post content via Chrome and summarize/reclassify, (3) rebuild outputs. Handles all content types: direct posts, quote tweets (unified context), X articles, videos (bookmark only), and follow-up posts with thread awareness for GitHub links.
+Bulk enrichment tool invoked by saying things like "catch up on links" or "enrich my links." Three phases: (1) backfill missing URLs from Outlook email bodies, (2) scrape post content via Chrome and summarize/reclassify, (3) post-enrichment pipeline (embed + mechanical/semantic discovery + rebuild via `db/pipeline.post_enrichment_pipeline`). Handles all content types: direct posts, quote tweets (unified context), X articles, videos (bookmark only), and follow-up posts with thread awareness for GitHub links.
+
+### Weekly Backfill (ai-links-backfill)
+
+Unattended weekly background re-enrichment, scheduled for Mondays at 10:30 AM local (cron `30 10 * * 1`) — after the morning sync settles, on the most reliable "laptop is on" day. Processes a fixed BATCH_LIMIT (currently 15) of `partial` / `failed` / `unattempted` posts per run via Chrome + `db/enrich.py` helpers, then runs the same `post_enrichment_pipeline` the sync and catch-up skills use. Drives down the recoverable-incompleteness ratio so the latent-discovery gate (`(partial + failed) / (total − dead) < 0.05`) eventually opens. Skips `legacy-ok` posts (they have usable content already) — that's a separate concern when `ENRICHMENT_VERSION` bumps. Cleanly no-ops when the queue is empty.
+
+### Curate Skill (ai-links-curate)
+
+Chat-mediated curation surface for the concept graph. Invoked by saying "curate links", "promote observation", "merge concepts", etc. Parses natural-language commands and routes them to `db/concepts.py` helpers — promote/dismiss/merge/rename/create concepts, list pending observations, run discovery passes manually, show gate ratio. End-of-batch: rebuild via the shared pipeline + push to GitHub.
 
 ## Rebuilding Outputs
 
