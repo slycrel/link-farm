@@ -129,36 +129,45 @@ def _now() -> str:
 def pending_enrichment_ids(limit: int = 50,
                            db_path: Path = DEFAULT_DB,
                            statuses: Sequence[str] = None,
+                           include_version_lag: bool = False,
                            below_version: int = ENRICHMENT_VERSION) -> list[int]:
     """Return post IDs that need enrichment work.
 
-    Includes posts whose `enrichment_status` is in `RECOVERABLE_STATUSES`
-    OR whose `enrichment_version` is below the current generation.
-    Excludes DEAD posts (permanent floor).
+    Two distinct kinds of "work" — by default the function returns only the
+    first kind, which is what gate-closing cares about:
+
+    - **Status-based work** (default): rows whose `enrichment_status` is in
+      `statuses` (default = RECOVERABLE_STATUSES: partial / failed /
+      unattempted). These are the posts blocking the latent gate.
+
+    - **Version-lag rolling re-enrichment** (opt-in via
+      `include_version_lag=True`): rows whose `enrichment_version` is below
+      the current generation, even if status is already `ok`/`legacy-ok`.
+      Used by background rolling re-enrichment when `ENRICHMENT_VERSION`
+      bumps, to bring the whole corpus up to current capture logic.
+
+    DEAD posts are always excluded — permanent floor, never retried.
 
     Order: most-recent date first, then highest id. Newest work surfaces
     first, which is what both the daily sync and the catch-up skill want.
-
-    Args:
-        limit: max number of IDs to return.
-        statuses: optional restriction to specific statuses. Defaults to
-            RECOVERABLE_STATUSES (everything not OK and not DEAD).
-        below_version: only consider rows with enrichment_version strictly
-            below this number. Defaults to ENRICHMENT_VERSION so older
-            generations get re-processed.
     """
     if statuses is None:
         statuses = tuple(RECOVERABLE_STATUSES)
     placeholders = ",".join(["?"] * len(statuses))
+    params: list = list(statuses)
+    where = f"enrichment_status IN ({placeholders})"
+    if include_version_lag:
+        where = f"({where} OR (enrichment_status NOT IN ('dead') AND enrichment_version < ?))"
+        params.append(below_version)
     sql = f"""
         SELECT id FROM posts
-        WHERE enrichment_status IN ({placeholders})
-           OR (enrichment_status NOT IN ('dead') AND enrichment_version < ?)
+        WHERE {where}
         ORDER BY date DESC, id DESC
         LIMIT ?
     """
+    params.append(limit)
     with _connect(db_path) as conn:
-        rows = conn.execute(sql, (*statuses, below_version, limit)).fetchall()
+        rows = conn.execute(sql, params).fetchall()
     return [r[0] for r in rows]
 
 
