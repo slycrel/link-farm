@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-06-18T23:16:00Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-06-19T20:59:45Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-06-15** — [Hasan Toor](https://x.com/hasantoxr/status/2066247422502957197) — *now • Agent Design • 28.7K views • v1 enriched*  
@@ -27,11 +27,6 @@
   Recurring pattern of giving an agent a persistent identity file that loads automatically and shapes behavior.
     - 2026-06-08 — [rari](https://x.com/0xwhrrari/status/2063244577482440978): Engagement-farmed but useful link dump of free AI-engineering learning resources (LangChain agent architecture, Anthropic's Claude Code 101 …
     - 2026-05-27 — [Parag pawar](https://x.com/dharmikpawar13/status/2059571098484675051): Argues CLAUDE.md is not docs but the control layer for your AI agent — inconsistent outputs usually come from bad instruction architecture, …
-
-- **vector / hybrid databases as agent-memory infrastructure** (8 posts, +1 this week)  
-  HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
-    - 2026-06-04 — [さいぺ (cipepser)](https://x.com/cipepser/status/2062397559520502225): Recommends mem0's article 'State of Memory in Agent Harness' (mem0ai) — a well-organized survey of agent-memory papers and benchmarks plus h…
-    - 2026-05-28 — [Paul Iusztin](https://x.com/pauliusztin_/status/2059613089260003387): Paul Iusztin breaks down Neo4j's three-layer agent memory system inside one graph: (1) short-term — active conversation as a linear chain of…
 
 - **agentic code review at production scale** (7 posts, +1 this week)  
   Deterministic engineering handles what must never fail; LLM only does context reading and reasoning. Alibaba open-code-review.
@@ -54,13 +49,13 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 309 | 48.8% |
+| agent-design | 307 | 48.5% |
 | claude-code | 155 | 24.5% |
-| dev-practices | 175 | 27.6% |
-| skills-mcp | 93 | 14.7% |
-| prompting | 84 | 13.3% |
-| research | 116 | 18.3% |
-| industry | 76 | 12.0% |
+| dev-practices | 177 | 28.0% |
+| skills-mcp | 94 | 14.8% |
+| prompting | 83 | 13.1% |
+| research | 117 | 18.5% |
+| industry | 75 | 11.8% |
 | management | 96 | 15.2% |
 | questionable | 93 | 14.7% |
 | general | 80 | 12.6% |
@@ -123,7 +118,7 @@
 ---
 ## Posts by Topic
 
-### Agent Design (309)
+### Agent Design (307)
 
 - [Hasan Toor](https://x.com/hasantoxr/status/2066247422502957197) — 2026-06-15: Highlights Headroom, a GitHub tool by Netflix engineer Tejas Chopra that compresses everything an AI agent reads before it reaches the LLM (tool outputs, logs, files, RAG chunks, code-search results, conversation history), claiming 60-95% fewer tokens for the same answers. Ships as a Python/TypeScript library, local proxy, and MCP server, with wrappers for Claude Code, Codex, Cursor, Aider, and Copilot.
 
@@ -403,13 +398,9 @@
 
 - [Mario Zechner](https://x.com/badlogicgames/status/2047055760236916759) — 2026-04-23: Mario Zechner: 'recommended reading.' Quote-tweets @walden_yan's 'Multi-Agents: What's Actually Working' — a 10-months-later follow-up to his earlier 'Don't Build Multi-Agents' essay. The two-essay arc is worth reading together: an evolving view from a thoughtful critic of multi-agent overreach.
 
-- [vida](https://x.com/vida_agent/status/2047007924279767332) — 2026-04-23: OpenChronicle — open-sourced local-first memory layer for tool-capable LLMs and agents, positioned as a free alternative to OpenAI's $100/mo Chronicle. Repo: github.com/Einsia/OpenChronicle. Treats AI memory as infrastructure.
+- [Vida](https://x.com/vida_agent/status/2047007924279767332) — 2026-04-23: Vida open-sourced OpenChronicle (github.com/Einsia/OpenChronicle) — a local-first memory layer for tool-capable LLMs and agents, framed as a free alternative to OpenAI Chronicle's $100/mo paywall. Fits the agent-memory infrastructure concept thread.
 
-- [Garry Tan](https://x.com/garrytan/status/2046882636069798323) — 2026-04-23: Garry Tan endorsing a workflow: build a feature once in OpenClaw, then run /skillify to turn it into a reusable skill forever. Quote-tweeting an article on stopping agents from making repeat mistakes (contrasting with LangChain/LangSmith eval-heavy approach).
-
-- [spencer](https://x.com/techspence/status/2046759185593794782) — 2026-04-23: OWASP released their Autonomous Penetration Testing Standard (APTS). Repo: github.com/OWASP/APTS. Spencer hasn't read it yet, asking for community input — worth a look for anyone building/evaluating autonomous security agents.
-
-- [Avi Chawla](https://x.com/_avichawla/status/2046685172666712571) — 2026-04-23: Claim of 3x token reduction on Claude Code (10.4M→3.7M tokens, $9.21→$2.81, 10→0 errors) by adding Insforge Skills + CLI as a context-engineering layer. Repo: github.com/InsForge/InsForge (open-source, local).
+- [Garry Tan](https://x.com/garrytan/status/2046882636069798323) — 2026-04-23: Garry Tan: 'Basically how I'm building all my features these days: Do it once in OpenClaw, then just run /skillify and it does it like that forever.' Quote-tweets his own article on stopping agents making the same mistakes (contrasts with LangChain's $160M/3yr/LangSmith trajectory-evals stack). Fits the skills-as-routines thread.
 
 - [Shubham Saboo](https://x.com/saboo_shubham_/status/2046473615118672325) — 2026-04-21: Shares agentic-stack — 'One brain, many harnesses. Portable .agent/ folder (memory + skills)' — a pattern for sharing a single memory/skill store across multiple agent harnesses. Repo: github.com/codejunkie99/agentic-stack.
 
@@ -425,7 +416,7 @@
 
 - [Ihtesham Ali](https://x.com/ihtesham2005/status/2046197374855582157) — 2026-04-21: Writeup of George Pólya's 1945 book 'How to Solve It' — the four-step problem-solving framework (understand, plan, execute, look back). Central heuristic: if you can't solve the proposed problem, solve a simpler related one first. Jeremy's note 'important for planner?' — relevant for AI agent planning/decomposition patterns.
 
-- [Akshay](https://x.com/akshay_pachaar/status/2046151867177308181) — 2026-04-20: Summary of a Google DeepMind paper on 'AI Agent Traps' — first systematic framework for adversarial content engineered to hijack web-browsing agents. Six attack surfaces: (1) content injection (invisible CSS/HTML, steganography — 86% hijack in one study), (2) semantic manipulation via framing/priming, (3) cognitive state poisoning of RAG/long-term memory (>80% success with <0.1% poisoning), plus more. Training-time defenses can't fix an inference-time problem. References Strix (github.com/usestrix/strix) — open-source red-team agent, 24k stars, Apache 2.0 — for automated pentesting of web apps.
+- [Akshay](https://x.com/akshay_pachaar/status/2046151867177308181) — 2026-04-20: Akshay summarizes Google DeepMind's 'AI Agent Traps' paper — the first systematic framework for adversarial content engineered to hijack AI agents browsing the web. Maps six attack surfaces: Content Injection (perception: invisible CSS, hidden HTML, steganographic payloads in images — HTML injections hijack web agents in up to 86% of scenarios), Semantic Manipulation (reasoning: biased framing weaponizing cognitive biases), Cognitive State Traps (memory: RAG poisoning, long-term memory corruption), plus three more not visible in the truncated scrape. High-priority reading for anyone building agents that browse arbitrary web content.
 
 - [Kenneth Auchenberg](https://x.com/auchenberg/status/2045940742678368570) — 2026-04-20: Short quote-tweet on Aparna Dhinakaran's article 'Sandboxes Are the Servers of the Harness Era' — Auchenberg frames swarms/multi-agent systems as 'harnesses managing harnesses.' The cited piece argues the harness is the application and the sandbox is the server (compute, filesystem, persistent state).
 
@@ -889,9 +880,9 @@
 
 - [ClaudeDevs](https://x.com/claudedevs/status/2047086372666921217) — 2026-04-23: Anthropic ClaudeDevs blog post: 'Building agents that reach production systems with MCP' (claude.com/blog/building-agents-that-reach-production-systems-with-mcp). Covers when agents should use direct APIs vs CLIs vs MCP, patterns for building MCP servers, context-efficient client design, and pairing MCP with skills. Direct first-party reading for any agent-to-production pipeline work.
 
-- [Garry Tan](https://x.com/garrytan/status/2046882636069798323) — 2026-04-23: Garry Tan endorsing a workflow: build a feature once in OpenClaw, then run /skillify to turn it into a reusable skill forever. Quote-tweeting an article on stopping agents from making repeat mistakes (contrasting with LangChain/LangSmith eval-heavy approach).
+- [Garry Tan](https://x.com/garrytan/status/2046882636069798323) — 2026-04-23: Garry Tan: 'Basically how I'm building all my features these days: Do it once in OpenClaw, then just run /skillify and it does it like that forever.' Quote-tweets his own article on stopping agents making the same mistakes (contrasts with LangChain's $160M/3yr/LangSmith trajectory-evals stack). Fits the skills-as-routines thread.
 
-- [Avi Chawla](https://x.com/_avichawla/status/2046685172666712571) — 2026-04-23: Claim of 3x token reduction on Claude Code (10.4M→3.7M tokens, $9.21→$2.81, 10→0 errors) by adding Insforge Skills + CLI as a context-engineering layer. Repo: github.com/InsForge/InsForge (open-source, local).
+- [Avi Chawla](https://x.com/_avichawla/status/2046685172666712571) — 2026-04-23: Avi Chawla reports 3x token reduction on Claude Code (10.4M → 3.7M tokens, 10 errors → 0, $9.21 → $2.81) by using Insforge Skills + CLI (github.com/InsForge/InsForge) as a backend context-engineering layer — without changing CLAUDE.md, prompts, or models. Open-source and local. Worth measuring against on a real session.
 
 - [Vox](https://x.com/voxyz_ai/status/2045899539526148193) — 2026-04-21: The #1 GitHub trending repo this week (44,465 stars) is a CLAUDE.md file distilling Andrej Karpathy's LLM coding pitfalls into 4 principles: (1) think before coding — ask when unsure, (2) simplicity first — minimum code, (3) surgical edits — only touch what's required, (4) goal-driven — translate fuzzy instructions into verifiable targets. Directly actionable as a CLAUDE.md system prompt.
 
@@ -1055,7 +1046,7 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (175)
+### Dev Practices (177)
 
 - [Jaynit](https://x.com/jaynitx/status/2066506535250092378) — 2026-06-16: Thread relaying Elon Musk's 5-step engineering 'algorithm': (1) make the requirements less dumb / question them, (2) try to delete the part or process step entirely (if you aren't forced to add ~10% back, you didn't delete enough), (3) simplify and optimize, (4) accelerate cycle time, (5) automate — with the warning that the most common mistake of smart engineers is optimizing something that shouldn't exist.
 
@@ -1211,6 +1202,10 @@
 
 - [Matt Van Horn](https://x.com/mvanhorn/status/2047073560267817469) — 2026-04-23: Matt Van Horn endorses Compound Engineering v3 (Trevin Chow's project, ~15k stars) — names brainstorm and plan artifacts that give requirements a paper trail from idea to commit, harness alignment across the build. Worth a real evaluation as a methodology framework alongside harness engineering.
 
+- [spencer](https://x.com/techspence/status/2046759185593794782) — 2026-04-23: spencer flags OWASP's Autonomous Penetration Testing Standard (github.com/OWASP/APTS) — formal security standard for AI-driven pentesting. Reference for security-team adjacent work; substance pending a real read.
+
+- [Avi Chawla](https://x.com/_avichawla/status/2046685172666712571) — 2026-04-23: Avi Chawla reports 3x token reduction on Claude Code (10.4M → 3.7M tokens, 10 errors → 0, $9.21 → $2.81) by using Insforge Skills + CLI (github.com/InsForge/InsForge) as a backend context-engineering layer — without changing CLAUDE.md, prompts, or models. Open-source and local. Worth measuring against on a real session.
+
 - [Sydney Runkle](https://x.com/sydneyrunkle/status/2046277232537256002) — 2026-04-21: LangChain team piece on 'The runtime behind production deep agents' — distinguishing the harness (prompts, tools, skills, model loop) from the runtime (durable execution, memory, multi-tenancy, observability). Walks through production requirements for agents and how LangSmith Deployment + Agent Server package those capabilities. Reference architecture for shipping agents in production.
 
 - [Nav Toor](https://x.com/heynavtoor/status/2046276160930414976) — 2026-04-21: Intro to PoisonedRAG attack: researchers showed 5 malicious documents planted in a 2.6M-document corpus can hijack an LLM's answer 97% of the time. Attacker never touches the model or retriever — just writes documents. Important RAG security consideration.
@@ -1219,7 +1214,7 @@
 
 - [Vox](https://x.com/voxyz_ai/status/2045899539526148193) — 2026-04-21: The #1 GitHub trending repo this week (44,465 stars) is a CLAUDE.md file distilling Andrej Karpathy's LLM coding pitfalls into 4 principles: (1) think before coding — ask when unsure, (2) simplicity first — minimum code, (3) surgical edits — only touch what's required, (4) goal-driven — translate fuzzy instructions into verifiable targets. Directly actionable as a CLAUDE.md system prompt.
 
-- [Akshay](https://x.com/akshay_pachaar/status/2046151867177308181) — 2026-04-20: Summary of a Google DeepMind paper on 'AI Agent Traps' — first systematic framework for adversarial content engineered to hijack web-browsing agents. Six attack surfaces: (1) content injection (invisible CSS/HTML, steganography — 86% hijack in one study), (2) semantic manipulation via framing/priming, (3) cognitive state poisoning of RAG/long-term memory (>80% success with <0.1% poisoning), plus more. Training-time defenses can't fix an inference-time problem. References Strix (github.com/usestrix/strix) — open-source red-team agent, 24k stars, Apache 2.0 — for automated pentesting of web apps.
+- [Akshay](https://x.com/akshay_pachaar/status/2046151867177308181) — 2026-04-20: Akshay summarizes Google DeepMind's 'AI Agent Traps' paper — the first systematic framework for adversarial content engineered to hijack AI agents browsing the web. Maps six attack surfaces: Content Injection (perception: invisible CSS, hidden HTML, steganographic payloads in images — HTML injections hijack web agents in up to 86% of scenarios), Semantic Manipulation (reasoning: biased framing weaponizing cognitive biases), Cognitive State Traps (memory: RAG poisoning, long-term memory corruption), plus three more not visible in the truncated scrape. High-priority reading for anyone building agents that browse arbitrary web content.
 
 - [Garry Tan](https://x.com/garrytan/status/2045427057656729985) — 2026-04-19: Launch of GBrain v0.11 with 'Minions' — a BullMQ-based queue/jobs system running on GBrain's Postgres/PGLite, built to replace OpenClaw's subagents that kept timing out. Tan claims Minions are 10x faster and more reliable for OpenClaw/GBrain agent setups.
 
@@ -1407,7 +1402,7 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (93)
+### Skills & MCP (94)
 
 - [Hasan Toor](https://x.com/hasantoxr/status/2066247422502957197) — 2026-06-15: Highlights Headroom, a GitHub tool by Netflix engineer Tejas Chopra that compresses everything an AI agent reads before it reaches the LLM (tool outputs, logs, files, RAG chunks, code-search results, conversation history), claiming 60-95% fewer tokens for the same answers. Ships as a Python/TypeScript library, local proxy, and MCP server, with wrappers for Claude Code, Codex, Cursor, Aider, and Copilot.
 
@@ -1499,9 +1494,11 @@
 
 - [ClaudeDevs](https://x.com/claudedevs/status/2047086372666921217) — 2026-04-23: Anthropic ClaudeDevs blog post: 'Building agents that reach production systems with MCP' (claude.com/blog/building-agents-that-reach-production-systems-with-mcp). Covers when agents should use direct APIs vs CLIs vs MCP, patterns for building MCP servers, context-efficient client design, and pairing MCP with skills. Direct first-party reading for any agent-to-production pipeline work.
 
-- [vida](https://x.com/vida_agent/status/2047007924279767332) — 2026-04-23: OpenChronicle — open-sourced local-first memory layer for tool-capable LLMs and agents, positioned as a free alternative to OpenAI's $100/mo Chronicle. Repo: github.com/Einsia/OpenChronicle. Treats AI memory as infrastructure.
+- [Vida](https://x.com/vida_agent/status/2047007924279767332) — 2026-04-23: Vida open-sourced OpenChronicle (github.com/Einsia/OpenChronicle) — a local-first memory layer for tool-capable LLMs and agents, framed as a free alternative to OpenAI Chronicle's $100/mo paywall. Fits the agent-memory infrastructure concept thread.
 
-- [Garry Tan](https://x.com/garrytan/status/2046882636069798323) — 2026-04-23: Garry Tan endorsing a workflow: build a feature once in OpenClaw, then run /skillify to turn it into a reusable skill forever. Quote-tweeting an article on stopping agents from making repeat mistakes (contrasting with LangChain/LangSmith eval-heavy approach).
+- [Garry Tan](https://x.com/garrytan/status/2046882636069798323) — 2026-04-23: Garry Tan: 'Basically how I'm building all my features these days: Do it once in OpenClaw, then just run /skillify and it does it like that forever.' Quote-tweets his own article on stopping agents making the same mistakes (contrasts with LangChain's $160M/3yr/LangSmith trajectory-evals stack). Fits the skills-as-routines thread.
+
+- [Avi Chawla](https://x.com/_avichawla/status/2046685172666712571) — 2026-04-23: Avi Chawla reports 3x token reduction on Claude Code (10.4M → 3.7M tokens, 10 errors → 0, $9.21 → $2.81) by using Insforge Skills + CLI (github.com/InsForge/InsForge) as a backend context-engineering layer — without changing CLAUDE.md, prompts, or models. Open-source and local. Worth measuring against on a real session.
 
 - [Shubham Saboo](https://x.com/saboo_shubham_/status/2046473615118672325) — 2026-04-21: Shares agentic-stack — 'One brain, many harnesses. Portable .agent/ folder (memory + skills)' — a pattern for sharing a single memory/skill store across multiple agent harnesses. Repo: github.com/codejunkie99/agentic-stack.
 
@@ -1595,7 +1592,7 @@
 
 - [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Anthropic released a frontend-design plugin for Claude Code — demo shows Claude creating a music player app. Install via /plugin marketplace add anthropics/claude-code and /plugin install frontend-design@claude-code-plugins.
 
-### Prompting (84)
+### Prompting (83)
 
 - [Avi Chawla](https://x.com/_avichawla/status/2065727218991735000) — 2026-06-13: Explains 'loop engineering' (framed with a Karpathy quote about removing yourself as the bottleneck and maximizing leverage): move the operator's two manual jobs — deciding what the agent runs next and checking its output — into the system itself. A schedule decides what to run, a maker loop produces the work, a separate checker agent grades the output, and a file on disk holds the shared state both read; the loop runs until done, max iterations, or budget is exhausted.
 
@@ -1672,8 +1669,6 @@
 - [GPT Maestro](https://x.com/gptmaestro/status/2050060105052561681) — 2026-05-02: Quote-tweet endorsing a clear walkthrough of GEPA — a technique that optimizes prompts before inference rather than cramming more into context. Quoted source: Quarq's 'Exploring GEPA' (also covers Recursive Language Models / RLMs).
 
 - [Akshay](https://x.com/akshay_pachaar/status/2050201509821063576) — 2026-05-01: Walkthrough of why Claude skills fail silently and how progressive disclosure works: Tier 1 = YAML frontmatter (~100 tokens, always loaded), Tier 2 = SKILL.md body (loads on trigger from description), Tier 3 = bundled scripts (loaded on demand, only stdout enters context). Description quality determines triggering.
-
-- [Avi Chawla](https://x.com/_avichawla/status/2046685172666712571) — 2026-04-23: Claim of 3x token reduction on Claude Code (10.4M→3.7M tokens, $9.21→$2.81, 10→0 errors) by adding Insforge Skills + CLI as a context-engineering layer. Repo: github.com/InsForge/InsForge (open-source, local).
 
 - [Raymond Weitekamp](https://x.com/raw_works/status/2046240194999755153) — 2026-04-21: Thoughtful long-form post on Recursive Language Models (RLMs) — 'the new reasoning models.' RLMs collapse reasoning and tool use into one abstraction: the model treats its own prompt as an environment it can inspect, slice, and recursively query via a REPL. Input size is no longer a hard ceiling; results show processing up to 2 orders of magnitude beyond base model's context, outperforming long-context scaffolds on four long-context tasks.
 
@@ -1765,7 +1760,7 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
 
-### Research (116)
+### Research (117)
 
 - [Avid](https://x.com/av1dlive/status/2066127265407336535) — 2026-06-15: Argues you can run capable AI models locally on a Mac for free using Apple's MLX stack — install mlx-lm, launch its server, and point any agent at localhost. Cites a ~23-minute talk from an Apple MLX-team engineer in which a local model builds a working SwiftUI app from a blank Xcode project in two minutes and then fixes a bug, with nothing leaving the machine. Quote-tweets a piece on the ThinkStation PGX local-inference box.
 
@@ -1889,7 +1884,9 @@
 
 - [TRAE](https://x.com/trae_ai/status/2047145274200768969) — 2026-04-23: TRAE's 'Definitive Guide to Harness Engineering' X article — frames harness engineering as the 2026 successor to prompt + context engineering. Term coined by Mitchell Hashimoto (HashiCorp co-founder); gained traction via an OpenAI report. Horse-and-reins metaphor: AI Agent = SOTA Model (wild horse) + Harness (control system) = Elite Performer. Foundational reading for the harness-engineering concept thread alongside Rahul/walkinglabs/Anthropic papers.
 
-- [Alex Volkov](https://x.com/altryne/status/2046977133013311814) — 2026-04-23: OpenAI open-sourced a 1.5B parameter (50M active) Privacy Filter model on HuggingFace under Apache 2.0 — a PII detection model for checking if text contains private information. Not a new LLM but a purpose-built classifier for data pipelines.
+- [Alex Volkov](https://x.com/altryne/status/2046977133013311814) — 2026-04-23: OpenAI open-sourced Privacy Filter — a 1.5B-param (50M active) PII detection model on HuggingFace under Apache 2.0. Not a new general LLM; a focused safety-utility model for detecting private info in text. Volkov calls it interesting; useful as a building block in agent pipelines that touch user data.
+
+- [spencer](https://x.com/techspence/status/2046759185593794782) — 2026-04-23: spencer flags OWASP's Autonomous Penetration Testing Standard (github.com/OWASP/APTS) — formal security standard for AI-driven pentesting. Reference for security-team adjacent work; substance pending a real read.
 
 - [Tech with Mak](https://x.com/technmak/status/2046414820241760620) — 2026-04-21: Summary of Meta's REFRAG paper: compresses retrieved RAG chunks into single embeddings (16,384 tokens → 1,024 chunk embeddings), delivering 30.85x faster time-to-first-token, zero perplexity loss, 16x context extension (4K → 64K), and 3.75x better than prior SOTA. Exploits sparse attention patterns in RAG contexts via precomputable embeddings and RL-based compression policy.
 
@@ -1901,7 +1898,7 @@
 
 - [Raymond Weitekamp](https://x.com/raw_works/status/2046240194999755153) — 2026-04-21: Thoughtful long-form post on Recursive Language Models (RLMs) — 'the new reasoning models.' RLMs collapse reasoning and tool use into one abstraction: the model treats its own prompt as an environment it can inspect, slice, and recursively query via a REPL. Input size is no longer a hard ceiling; results show processing up to 2 orders of magnitude beyond base model's context, outperforming long-context scaffolds on four long-context tasks.
 
-- [Akshay](https://x.com/akshay_pachaar/status/2046151867177308181) — 2026-04-20: Summary of a Google DeepMind paper on 'AI Agent Traps' — first systematic framework for adversarial content engineered to hijack web-browsing agents. Six attack surfaces: (1) content injection (invisible CSS/HTML, steganography — 86% hijack in one study), (2) semantic manipulation via framing/priming, (3) cognitive state poisoning of RAG/long-term memory (>80% success with <0.1% poisoning), plus more. Training-time defenses can't fix an inference-time problem. References Strix (github.com/usestrix/strix) — open-source red-team agent, 24k stars, Apache 2.0 — for automated pentesting of web apps.
+- [Akshay](https://x.com/akshay_pachaar/status/2046151867177308181) — 2026-04-20: Akshay summarizes Google DeepMind's 'AI Agent Traps' paper — the first systematic framework for adversarial content engineered to hijack AI agents browsing the web. Maps six attack surfaces: Content Injection (perception: invisible CSS, hidden HTML, steganographic payloads in images — HTML injections hijack web agents in up to 86% of scenarios), Semantic Manipulation (reasoning: biased framing weaponizing cognitive biases), Cognitive State Traps (memory: RAG poisoning, long-term memory corruption), plus three more not visible in the truncated scrape. High-priority reading for anyone building agents that browse arbitrary web content.
 
 - [阿绎 AYi](https://x.com/ayi_ainotes/status/2045874192155824616) — 2026-04-20: Thread (translated from Chinese) hyping an open-source project 'OpenMythos' by a 22-year-old claimed to reverse-engineer Anthropic's Claude as a 'recurrent deep Transformer' — same weights loop through 16 forward passes, with thinking happening silently in hidden space instead of visible CoT tokens. Claims a 770B-param recurrent model matches a 1.3T plain model. Speculative architecture claim; treat as unverified.
 
@@ -1999,7 +1996,7 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: 15-part thread explaining the 'stunning, simple explanation behind matrix multiplication' — breaks down the most crucial idea behind modern machine learning. 1M views.
 
-### Industry (76)
+### Industry (75)
 
 - [Marie Haynes](https://x.com/marie_haynes/status/2065531158356717721) — 2026-06-13: Flags Google's new Open Knowledge Format (OKF): a standardized way to store information as a directory of interlinked markdown files that acts as a living wiki agents can query and edit, which the author thinks could replace Notion or Obsidian. References Google Cloud's blog post and the spec at github.com/GoogleCloudPlatform/knowledge-catalog (okf/SPEC.md), and notes feeding both links to Antigravity to brainstorm project uses.
 
@@ -2081,9 +2078,7 @@
 
 - [StacyOnChain](https://x.com/stacyonchain/status/2047278412922831260) — 2026-04-23: Off-topic for AI links — promotional content for centpro.bot (Polymarket trading framework supposedly extracted from 327 real tests). ALL-CAPS engagement framing, crypto-twitter signal. Capturing for completeness but not useful as AI/agents reference.
 
-- [Alex Volkov](https://x.com/altryne/status/2046977133013311814) — 2026-04-23: OpenAI open-sourced a 1.5B parameter (50M active) Privacy Filter model on HuggingFace under Apache 2.0 — a PII detection model for checking if text contains private information. Not a new LLM but a purpose-built classifier for data pipelines.
-
-- [spencer](https://x.com/techspence/status/2046759185593794782) — 2026-04-23: OWASP released their Autonomous Penetration Testing Standard (APTS). Repo: github.com/OWASP/APTS. Spencer hasn't read it yet, asking for community input — worth a look for anyone building/evaluating autonomous security agents.
+- [Alex Volkov](https://x.com/altryne/status/2046977133013311814) — 2026-04-23: OpenAI open-sourced Privacy Filter — a 1.5B-param (50M active) PII detection model on HuggingFace under Apache 2.0. Not a new general LLM; a focused safety-utility model for detecting private info in text. Volkov calls it interesting; useful as a building block in agent pipelines that touch user data.
 
 - [Aakash Gupta](https://x.com/aakashgupta/status/2046371351016161745) — 2026-04-21: Essay arguing Yann LeCun left Meta because Zuck wouldn't bet the company on JEPA, then his group shipped the first end-to-end JEPA trained from raw pixels — 15M parameters, single GPU, a few hours. Frames it as a Xerox PARC pattern: Meta had the architecture, dissolved the robotics team, and let the breakthrough walk out the door while humanoid robotics competitors (Figure AI, Tesla Optimus, World Labs) burn capital on expensive foundation-model pipelines. Jeremy flagged 'feels like correspondence' (thoughtful essay style).
 
@@ -3446,20 +3441,20 @@
 - **2026-04-23** | [Mario Zechner](https://x.com/badlogicgames/status/2047055760236916759) | agent-design
   Mario Zechner: 'recommended reading.' Quote-tweets @walden_yan's 'Multi-Agents: What's Actually Working' — a 10-months-later follow-up to his earlier 'Don't Build Multi-Agents' essay. The two-essay arc is worth reading together: an evolving view from a thoughtful critic of multi-agent overreach.
 
-- **2026-04-23** | [vida](https://x.com/vida_agent/status/2047007924279767332) | agent-design, skills-mcp
-  OpenChronicle — open-sourced local-first memory layer for tool-capable LLMs and agents, positioned as a free alternative to OpenAI's $100/mo Chronicle. Repo: github.com/Einsia/OpenChronicle. Treats AI memory as infrastructure.
+- **2026-04-23** | [Vida](https://x.com/vida_agent/status/2047007924279767332) | agent-design, skills-mcp
+  Vida open-sourced OpenChronicle (github.com/Einsia/OpenChronicle) — a local-first memory layer for tool-capable LLMs and agents, framed as a free alternative to OpenAI Chronicle's $100/mo paywall. Fits the agent-memory infrastructure concept thread.
 
 - **2026-04-23** | [Alex Volkov](https://x.com/altryne/status/2046977133013311814) | research, industry
-  OpenAI open-sourced a 1.5B parameter (50M active) Privacy Filter model on HuggingFace under Apache 2.0 — a PII detection model for checking if text contains private information. Not a new LLM but a purpose-built classifier for data pipelines.
+  OpenAI open-sourced Privacy Filter — a 1.5B-param (50M active) PII detection model on HuggingFace under Apache 2.0. Not a new general LLM; a focused safety-utility model for detecting private info in text. Volkov calls it interesting; useful as a building block in agent pipelines that touch user data.
 
-- **2026-04-23** | [Garry Tan](https://x.com/garrytan/status/2046882636069798323) | claude-code, skills-mcp, agent-design
-  Garry Tan endorsing a workflow: build a feature once in OpenClaw, then run /skillify to turn it into a reusable skill forever. Quote-tweeting an article on stopping agents from making repeat mistakes (contrasting with LangChain/LangSmith eval-heavy approach).
+- **2026-04-23** | [Garry Tan](https://x.com/garrytan/status/2046882636069798323) | agent-design, skills-mcp, claude-code
+  Garry Tan: 'Basically how I'm building all my features these days: Do it once in OpenClaw, then just run /skillify and it does it like that forever.' Quote-tweets his own article on stopping agents making the same mistakes (contrasts with LangChain's $160M/3yr/LangSmith trajectory-evals stack). Fits the skills-as-routines thread.
 
-- **2026-04-23** | [spencer](https://x.com/techspence/status/2046759185593794782) | agent-design, industry
-  OWASP released their Autonomous Penetration Testing Standard (APTS). Repo: github.com/OWASP/APTS. Spencer hasn't read it yet, asking for community input — worth a look for anyone building/evaluating autonomous security agents.
+- **2026-04-23** | [spencer](https://x.com/techspence/status/2046759185593794782) | research, dev-practices
+  spencer flags OWASP's Autonomous Penetration Testing Standard (github.com/OWASP/APTS) — formal security standard for AI-driven pentesting. Reference for security-team adjacent work; substance pending a real read.
 
-- **2026-04-23** | [Avi Chawla](https://x.com/_avichawla/status/2046685172666712571) | claude-code, prompting, agent-design
-  Claim of 3x token reduction on Claude Code (10.4M→3.7M tokens, $9.21→$2.81, 10→0 errors) by adding Insforge Skills + CLI as a context-engineering layer. Repo: github.com/InsForge/InsForge (open-source, local).
+- **2026-04-23** | [Avi Chawla](https://x.com/_avichawla/status/2046685172666712571) | claude-code, skills-mcp, dev-practices
+  Avi Chawla reports 3x token reduction on Claude Code (10.4M → 3.7M tokens, 10 errors → 0, $9.21 → $2.81) by using Insforge Skills + CLI (github.com/InsForge/InsForge) as a backend context-engineering layer — without changing CLAUDE.md, prompts, or models. Open-source and local. Worth measuring against on a real session.
 
 - **2026-04-21** | [Shubham Saboo](https://x.com/saboo_shubham_/status/2046473615118672325) | agent-design, skills-mcp
   Shares agentic-stack — 'One brain, many harnesses. Portable .agent/ folder (memory + skills)' — a pattern for sharing a single memory/skill store across multiple agent harnesses. Repo: github.com/codejunkie99/agentic-stack.
@@ -3494,8 +3489,8 @@
 - **2026-04-21** | [Vox](https://x.com/voxyz_ai/status/2045899539526148193) | claude-code, prompting, dev-practices
   The #1 GitHub trending repo this week (44,465 stars) is a CLAUDE.md file distilling Andrej Karpathy's LLM coding pitfalls into 4 principles: (1) think before coding — ask when unsure, (2) simplicity first — minimum code, (3) surgical edits — only touch what's required, (4) goal-driven — translate fuzzy instructions into verifiable targets. Directly actionable as a CLAUDE.md system prompt.
 
-- **2026-04-20** | [Akshay](https://x.com/akshay_pachaar/status/2046151867177308181) | agent-design, research, dev-practices
-  Summary of a Google DeepMind paper on 'AI Agent Traps' — first systematic framework for adversarial content engineered to hijack web-browsing agents. Six attack surfaces: (1) content injection (invisible CSS/HTML, steganography — 86% hijack in one study), (2) semantic manipulation via framing/priming, (3) cognitive state poisoning of RAG/long-term memory (>80% success with <0.1% poisoning), plus more. Training-time defenses can't fix an inference-time problem. References Strix (github.com/usestrix/strix) — open-source red-team agent, 24k stars, Apache 2.0 — for automated pentesting of web apps.
+- **2026-04-20** | [Akshay](https://x.com/akshay_pachaar/status/2046151867177308181) | research, agent-design, dev-practices
+  Akshay summarizes Google DeepMind's 'AI Agent Traps' paper — the first systematic framework for adversarial content engineered to hijack AI agents browsing the web. Maps six attack surfaces: Content Injection (perception: invisible CSS, hidden HTML, steganographic payloads in images — HTML injections hijack web agents in up to 86% of scenarios), Semantic Manipulation (reasoning: biased framing weaponizing cognitive biases), Cognitive State Traps (memory: RAG poisoning, long-term memory corruption), plus three more not visible in the truncated scrape. High-priority reading for anyone building agents that browse arbitrary web content.
 
 - **2026-04-20** | [Kenneth Auchenberg](https://x.com/auchenberg/status/2045940742678368570) | agent-design
   Short quote-tweet on Aparna Dhinakaran's article 'Sandboxes Are the Servers of the Harness Era' — Auchenberg frames swarms/multi-agent systems as 'harnesses managing harnesses.' The cited piece argues the harness is the application and the sandbox is the server (compute, filesystem, persistent state).

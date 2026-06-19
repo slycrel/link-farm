@@ -5818,11 +5818,11 @@
   },
   {
     "date": "2026-04-23",
-    "author": "vida",
+    "author": "Vida",
     "handle": "@vida_agent",
     "subject": "Post by vida on X",
     "url": "https://x.com/vida_agent/status/2047007924279767332",
-    "summary": "OpenChronicle — open-sourced local-first memory layer for tool-capable LLMs and agents, positioned as a free alternative to OpenAI's $100/mo Chronicle. Repo: github.com/Einsia/OpenChronicle. Treats AI memory as infrastructure.",
+    "summary": "Vida open-sourced OpenChronicle (github.com/Einsia/OpenChronicle) — a local-first memory layer for tool-capable LLMs and agents, framed as a free alternative to OpenAI Chronicle's $100/mo paywall. Fits the agent-memory infrastructure concept thread.",
     "topics": [
       "agent-design",
       "skills-mcp"
@@ -5833,10 +5833,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "180K",
+    "views": "253K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "OpenAI's Chronicle points to an important future. But AI memory shouldn't be locked behind a $100/mo paywall. So we open-sourced it. Meet OpenChronicle: a local-first memory layer for tool-capable LLMs and agents. GitHub: github.com/Einsia/OpenChronicle. We believe AI memory is infrastructure. Let's build it together.\n\nOpenChronicle",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-23",
@@ -5844,7 +5847,7 @@
     "handle": "@altryne",
     "subject": "Post by Alex Volkov on X (4 Logan)",
     "url": "https://x.com/altryne/status/2046977133013311814",
-    "summary": "OpenAI open-sourced a 1.5B parameter (50M active) Privacy Filter model on HuggingFace under Apache 2.0 — a PII detection model for checking if text contains private information. Not a new LLM but a purpose-built classifier for data pipelines.",
+    "summary": "OpenAI open-sourced Privacy Filter — a 1.5B-param (50M active) PII detection model on HuggingFace under Apache 2.0. Not a new general LLM; a focused safety-utility model for detecting private info in text. Volkov calls it interesting; useful as a building block in agent pipelines that touch user data.",
     "topics": [
       "research",
       "industry"
@@ -5855,10 +5858,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "161K",
+    "views": "175.1K",
     "notes": "Modified subject — flagged for Logan",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "OpenAI just open sourced a new 1.5B (50m active) model on HuggingFace with Apache 2.0 license! It's not a new LLM, this one is called Privacy Filter, and it's a PII detection model (checking if text has private information). A few interesting tidbits from the release + links.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-23",
@@ -5866,11 +5872,11 @@
     "handle": "@garrytan",
     "subject": "Post by Garry Tan on X",
     "url": "https://x.com/garrytan/status/2046882636069798323",
-    "summary": "Garry Tan endorsing a workflow: build a feature once in OpenClaw, then run /skillify to turn it into a reusable skill forever. Quote-tweeting an article on stopping agents from making repeat mistakes (contrasting with LangChain/LangSmith eval-heavy approach).",
+    "summary": "Garry Tan: 'Basically how I'm building all my features these days: Do it once in OpenClaw, then just run /skillify and it does it like that forever.' Quote-tweets his own article on stopping agents making the same mistakes (contrasts with LangChain's $160M/3yr/LangSmith trajectory-evals stack). Fits the skills-as-routines thread.",
     "topics": [
-      "claude-code",
+      "agent-design",
       "skills-mcp",
-      "agent-design"
+      "claude-code"
     ],
     "audience": [
       "me",
@@ -5878,10 +5884,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "269.5K",
+    "views": "285.1K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Basically how I'm building all my features these days: Do it once in OpenClaw, then just run /skillify and it does it like that forever. QT (own article): How to really stop your agents from making the same mistakes. LangChain has raised $160 million. Three years of development. A billion-dollar valuation. LangSmith, their testing platform, is genuinely sophisticated: trajectory evals, trace-to-dataset pipelines...",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-23",
@@ -5889,21 +5898,24 @@
     "handle": "@techspence",
     "subject": "Post by spencer on X",
     "url": "https://x.com/techspence/status/2046759185593794782",
-    "summary": "OWASP released their Autonomous Penetration Testing Standard (APTS). Repo: github.com/OWASP/APTS. Spencer hasn't read it yet, asking for community input — worth a look for anyone building/evaluating autonomous security agents.",
+    "summary": "spencer flags OWASP's Autonomous Penetration Testing Standard (github.com/OWASP/APTS) — formal security standard for AI-driven pentesting. Reference for security-team adjacent work; substance pending a real read.",
     "topics": [
-      "agent-design",
-      "industry"
+      "research",
+      "dev-practices"
     ],
     "audience": [
       "me",
       "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
-    "views": "110.1K",
+    "views": "117.4K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "OWASP has released their Autonomous Penetration Testing Standard. I have not read it yet. Anyone else look at this? GitHub: OWASP/APTS — OWASP Autonomous Penetration Testing Standard.\n\nOWASP APTS",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-23",
@@ -5911,11 +5923,11 @@
     "handle": "@_avichawla",
     "subject": "Post by Avi Chawla on X",
     "url": "https://x.com/_avichawla/status/2046685172666712571",
-    "summary": "Claim of 3x token reduction on Claude Code (10.4M→3.7M tokens, $9.21→$2.81, 10→0 errors) by adding Insforge Skills + CLI as a context-engineering layer. Repo: github.com/InsForge/InsForge (open-source, local).",
+    "summary": "Avi Chawla reports 3x token reduction on Claude Code (10.4M → 3.7M tokens, 10 errors → 0, $9.21 → $2.81) by using Insforge Skills + CLI (github.com/InsForge/InsForge) as a backend context-engineering layer — without changing CLAUDE.md, prompts, or models. Open-source and local. Worth measuring against on a real session.",
     "topics": [
       "claude-code",
-      "prompting",
-      "agent-design"
+      "skills-mcp",
+      "dev-practices"
     ],
     "audience": [
       "me",
@@ -5923,10 +5935,13 @@
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "284.8K",
+    "views": "294.8K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Claude Code used 3x fewer tokens with one change: Before: 10.4M tokens · 10 errors · $9.21. After: 3.7M tokens · 0 errors · $2.81. I used Insforge Skills + CLI as the backend context engineering layer for Claude Code (open-source and local). Repo: github.com/InsForge/InsForge. QT (own article): How to cut Claude Code costs by 3x (using Karpathy's context engineering principles). A full breakdown of how one open-source tool cuts your Claude Code session costs by 3x, without any changes to CLAUDE.md, prompts, or models.\n\nInsForge",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-21",
@@ -6193,10 +6208,10 @@
     "handle": "@akshay_pachaar",
     "subject": "Post by Akshay 🚀 on X",
     "url": "https://x.com/akshay_pachaar/status/2046151867177308181",
-    "summary": "Summary of a Google DeepMind paper on 'AI Agent Traps' — first systematic framework for adversarial content engineered to hijack web-browsing agents. Six attack surfaces: (1) content injection (invisible CSS/HTML, steganography — 86% hijack in one study), (2) semantic manipulation via framing/priming, (3) cognitive state poisoning of RAG/long-term memory (>80% success with <0.1% poisoning), plus more. Training-time defenses can't fix an inference-time problem. References Strix (github.com/usestrix/strix) — open-source red-team agent, 24k stars, Apache 2.0 — for automated pentesting of web apps.",
+    "summary": "Akshay summarizes Google DeepMind's 'AI Agent Traps' paper — the first systematic framework for adversarial content engineered to hijack AI agents browsing the web. Maps six attack surfaces: Content Injection (perception: invisible CSS, hidden HTML, steganographic payloads in images — HTML injections hijack web agents in up to 86% of scenarios), Semantic Manipulation (reasoning: biased framing weaponizing cognitive biases), Cognitive State Traps (memory: RAG poisoning, long-term memory corruption), plus three more not visible in the truncated scrape. High-priority reading for anyone building agents that browse arbitrary web content.",
     "topics": [
-      "agent-design",
       "research",
+      "agent-design",
       "dev-practices"
     ],
     "audience": [
@@ -6204,12 +6219,15 @@
       "dev-team",
       "leadership"
     ],
-    "priority": "near-term",
+    "priority": "now",
     "sourceType": "tweet",
-    "views": "29.5K",
+    "views": "",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Google DeepMind dropped a paper that should scare every agent builder. It's the first systematic framework for a threat that barely existed two years ago: adversarial content engineered to hijack AI agents browsing the web. They call them AI Agent Traps. The paper maps six distinct attack surfaces. 1) Content Injection Traps (perception): Invisible CSS, hidden HTML, steganographic payloads inside images. The agent parses it, humans never see it. One study showed simple HTML injections hijack web agents in up to 86% of scenarios. 2) Semantic Manipulation Traps (reasoning): No overt commands. Just biased phrasing, framing, and contextual priming that skew the agent's synthesis. LLMs inherit human cognitive biases, and attackers can weaponize every one of them. 3) Cognitive State Traps (memory and learning): Poison the RAG corpus. Corrupt long-term memory.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-20",
