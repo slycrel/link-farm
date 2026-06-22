@@ -1,5 +1,80 @@
 [
   {
+    "date": "2026-06-17",
+    "author": "How To Prompt",
+    "handle": "@howtoprompt__",
+    "subject": "Post by How To Prompt on X",
+    "url": "https://x.com/howtoprompt__/status/2067176008445513800",
+    "summary": "Engagement-farmed post claiming an open-source repo compresses 60M text chunks from 201GB to ~6GB (97% smaller) with no accuracy loss, running fully private on a standard laptop with no cloud or GPU — pitched as making vector databases obsolete. No repo link was surfaced in the post or visible replies, so the project would need to be located before the claim can be evaluated.",
+    "topics": [
+      "research",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "90.1K",
+    "notes": "",
+    "enriched": true,
+    "content": "Vector databases are officially cooked. This repo shrinks 60 million text chunks from 201 GB to just 6 GB without any loss in accuracy. -> 97% smaller storage -> No cloud. No GPU. -> Runs on a standard laptop -> Fully private. 100% open-source.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-06-17",
+    "author": "Viv",
+    "handle": "@vtrivedy10",
+    "subject": "Post by Viv on X",
+    "url": "https://x.com/vtrivedy10/status/2066954487466459163",
+    "summary": "Viv amplifies Sydney Runkle's X article 'The Art of Loop Engineering,' which argues reliable agents need more than a good model — they need a carefully engineered hierarchy of loops. Viv's key takeaway: verification is a critical primitive; it's worth spending days to weeks making the distribution of desired agent outcomes verifiable in practice by your system, especially for non-slop, semi-long-horizon work.",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "107.1K",
+    "notes": "",
+    "enriched": true,
+    "content": "another banger from Sydney! i think this whole hierarchy of loops is still super early but some primitives we know work. ex: verification as a primitive is so ridiculously important for non-slop semi-long-horizon work, it's worth spending days to weeks making sure the distribution of outcomes you want from your agent are verifiable in practice by your system\n\nX Article: 'The Art of Loop Engineering' — Agents are useful because they help automate work by taking actions in the real world. But getting agents to do valuable work reliably takes more than just a good model: it requires a carefully engineered hierarchy of loops.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-06-17",
+    "author": "Ahmad",
+    "handle": "@theahmadosman",
+    "subject": "Post by Ahmad on X",
+    "url": "https://x.com/theahmadosman/status/2066825976705646929",
+    "summary": "Ahmad highlights VibeThinker 3B (built on Qwen 2.5), a 3B-parameter model he claims reaches Opus 4.5-level performance, quoting his own earlier prediction that Claude Code + Opus 4.5-quality models will run locally on a single RTX PRO 6000 before year-end. A signal on how fast small/efficient local models are closing the gap with frontier models.",
+    "topics": [
+      "research",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "92.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "3B model with Opus 4.5 performance. VibeThinker 3B (based on Qwen 2.5)\n\nPrediction (Jan 16): We will have Claude Code + Opus 4.5 quality (not nerfed) models running locally at home on a single RTX PRO 6000 before the end of the year.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-06-16",
     "author": "Jaynit",
     "handle": "@jaynitx",
@@ -6235,32 +6310,34 @@
     "handle": "@auchenberg",
     "subject": "Post by Kenneth Auchenberg 🛠 on X",
     "url": "https://x.com/auchenberg/status/2045940742678368570",
-    "summary": "Short quote-tweet on Aparna Dhinakaran's article 'Sandboxes Are the Servers of the Harness Era' — Auchenberg frames swarms/multi-agent systems as 'harnesses managing harnesses.' The cited piece argues the harness is the application and the sandbox is the server (compute, filesystem, persistent state).",
+    "summary": "Kenneth Auchenberg highlights an article arguing that in the \"harness era\" of AI agents the harness is the application and the sandbox is the server, framing swarms as harnesses managing harnesses.",
     "topics": [
       "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "6,816",
+    "views": "11.7K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Swarms aka the harnesses managing harnesses\n\nSandboxes Are the Servers of the Harness Era. The harness is the application. The sandbox is the server. An application runs on a server: it uses the compute, writes to the filesystem, maintains state across restarts.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-20",
-    "author": "阿绎 AYi",
-    "handle": "@ayi_ainotes",
+    "author": "AYi",
+    "handle": "@AYi_AInotes",
     "subject": "Post by 阿绎 AYi on X",
     "url": "https://x.com/ayi_ainotes/status/2045874192155824616",
-    "summary": "Thread (translated from Chinese) hyping an open-source project 'OpenMythos' by a 22-year-old claimed to reverse-engineer Anthropic's Claude as a 'recurrent deep Transformer' — same weights loop through 16 forward passes, with thinking happening silently in hidden space instead of visible CoT tokens. Claims a 770B-param recurrent model matches a 1.3T plain model. Speculative architecture claim; treat as unverified.",
+    "summary": "AYi (translated from Chinese) recaps OpenMythos, an open-source first-principles reconstruction of Anthropic's \"Claude Mythos\" as a looped/recurrent transformer with MoE routing: the same weights run ~16x per forward pass so reasoning happens silently in latent space. Argues a 770B recurrent model can match a 1.3T standard model and that future scaling competes on loop-count rather than parameter count.",
     "topics": [
       "research",
-      "claude-code",
-      "questionable"
+      "claude-code"
     ],
     "audience": [
       "me",
@@ -6268,10 +6345,13 @@
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "410.6K",
+    "views": "483.9K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "A 22-year-old entrepreneur reverse-engineered and open-sourced a reconstruction of Anthropic's Claude Mythos. It uses a recurrent deep Transformer: the same weights run in a loop sixteen times per forward pass, thinking in hidden space without emitting tokens each step. A 770B recurrent model matches a 1.3T ordinary model. Trades space for time, thinking depth for parameter scale. Search OpenMythos on GitHub.\n\nIntroducing OpenMythos: an open-source, first-principles theoretical reconstruction of Claude Mythos in PyTorch. The architecture instantiates a looped transformer with a Mixture-of-Experts (MoE) routing mechanism, enabling iterative depth via weight sharing.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-19",
@@ -6279,22 +6359,24 @@
     "handle": "@garrytan",
     "subject": "Post by Garry Tan on X",
     "url": "https://x.com/garrytan/status/2045427057656729985",
-    "summary": "Launch of GBrain v0.11 with 'Minions' — a BullMQ-based queue/jobs system running on GBrain's Postgres/PGLite, built to replace OpenClaw's subagents that kept timing out. Tan claims Minions are 10x faster and more reliable for OpenClaw/GBrain agent setups.",
+    "summary": "Garry Tan launches GBrain v0.11 with \"Minions,\" a BullMQ-style queue/jobs system built on Postgres/PGLite to make OpenClaw/GBrain subagents faster and more reliable instead of timing out.",
     "topics": [
       "agent-design",
-      "dev-practices",
-      "industry"
+      "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "226.4K",
+    "views": "255.8K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Now launching GBrain v0.11 with Minions. I got sick of OpenClaw's subagents timing out and not getting things done, so I built a queue/jobs system that uses GBrain's Postgres/PGLite based on BullMQ to give your OpenClaw/GBrain setup wings. Minions are 10X faster, more reliable.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-18",
@@ -6302,22 +6384,26 @@
     "handle": "@akshay_pachaar",
     "subject": "Post by Akshay 🚀 on X",
     "url": "https://x.com/akshay_pachaar/status/2045404494641733962",
-    "summary": "Summary of UCL paper 'Dive into Claude Code' (arXiv:2604.14228) reverse-engineering the leaked Claude Code source. Only 1.6% of the codebase is AI decision logic; 98.4% is operational infrastructure — permission gates, tool routing, context compaction, recovery logic, session persistence. Core loop is a simple while-true (call model, run tools, repeat). Permission system has 7 modes plus an ML classifier. Contrasts with LangGraph's explicit state machines and Devin's heavy planners — Claude Code invests engineering effort in the harness while giving the model maximum decision latitude. Punchline: the harness is the differentiator, not the model.",
+    "summary": "Akshay summarizes a UCL paper (arXiv:2604.14228) dissecting Claude Code's architecture: only 1.6% of the codebase is AI decision logic while 98.4% is operational harness (permission gates with 7 modes, tool routing, a 5-layer context compaction pipeline, subagents that return only summaries). Core thesis: as frontier models converge on raw coding ability, harness quality, not the model, becomes the differentiator.",
     "topics": [
       "agent-design",
       "claude-code",
       "research"
     ],
     "audience": [
+      "dev-team",
       "me",
-      "dev-team"
+      "leadership"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "157.1K",
+    "views": "178.3K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Claude Code fully dissected. UCL researchers reverse-engineered the leaked Claude source. Only 1.6% of the codebase is AI decision logic; the other 98.4% is operational infrastructure: permission gates, tool routing, context compaction, recovery, session persistence. The core loop is a simple while-true. A permission system with 7 modes and an ML classifier; a 5-layer context compaction pipeline; four extension mechanisms ordered by context cost (hooks, skills, plugins, MCP); subagents return only summary text. The bet: as models converge on coding ability, harness quality is the differentiator. Paper: Dive into Claude Code (arXiv:2604.14228).",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-18",
@@ -6325,67 +6411,76 @@
     "handle": "@thealexker",
     "subject": "Post by Alex Ker 🔭 on X",
     "url": "https://x.com/thealexker/status/2045203785304232162",
-    "summary": "Guide on optimizing your agent harness. Three levers: (1) keep config files lean enough for the model to reason over, (2) structure prompts with the R.P.I. framework so the model approaches problems like a staff engineer, (3) use subagents to keep the main context window clean. Ker contributes to Roo Code, DeepAgent CLI, and HumanLayer. Core argument: harnesses that compound output vs. harnesses that compound mistakes — judgment lives at the harness layer.",
+    "summary": "Alex Ker's deep-dive guide on optimizing AI coding harnesses: keep config/.md files lean and human-written (frontier LLMs hit a \"dumb zone\" past a few hundred instructions), use progressive disclosure for CLIs/skills/MCP tools, structure prompts with HumanLayer's Research-Plan-Implement (R.P.I.) framework, and use subagents (parallel fan-out for breadth, pipelines for depth) to keep the main context clean. Core argument: the harness, not the model, is where engineering judgment compounds, so commit to one and iterate.",
     "topics": [
       "agent-design",
       "prompting",
-      "dev-practices"
+      "dev-practices",
+      "claude-code"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "100K",
+    "views": "107.9K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Harnesses are everything. Three things to optimize: keep .md/config files lean and human-written (instruction budget; LLM-generated system prompts degrade performance and cost ~20% more), apply progressive disclosure across CLIs/skills/MCP tools (Claude Code's MCP tool search cuts context ~85%), structure prompts with HumanLayer's R.P.I. (Research, Plan, Implement) framework, and use subagents via parallel fan-out and pipelines to keep the main context clean. The best harness is the one you customize and iterate on; commit instead of constantly switching.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-18",
     "author": "Daniel Miessler",
-    "handle": "@danielmiessler",
+    "handle": "@DanielMiessler",
     "subject": "Post by ᴅᴀɴɪᴇʟ ᴍɪᴇssʟᴇʀ 🛡️ on X",
     "url": "https://x.com/danielmiessler/status/2045148852047827449",
-    "summary": "Miessler endorses 'Interceptor' by @ronaldeddings as the best Browser Control System he's used for agents (out of 100+ tools). He says it's added the most value to his PAI (Personal AI) harness recently. Short recommendation tweet — no link in the post body but the tool is attributed to Ronald Eddings.",
+    "summary": "Daniel Miessler recommends Interceptor (by Ronald Eddings) as the best browser-control system for AI agents he's used out of 100+, now the highest-value addition to his PAI harness.",
     "topics": [
       "agent-design",
-      "claude-code"
+      "skills-mcp"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
-    "priority": "now",
+    "priority": "near-term",
     "sourceType": "tweet",
-    "views": "16.6K",
+    "views": "17.3K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "I see a ton of AI tools, but the one that's added the most value to my PAI harness recently is Interceptor. It's by @ronaldeddings, and it's by far the best Browser Control System for agents that I've used. And I've literally used over 100 at this point.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-18",
     "author": "Kevin Simback",
-    "handle": "@ksimback",
+    "handle": "@KSimback",
     "subject": "Post by Kevin Simback 🍷 on X",
     "url": "https://x.com/ksimback/status/2045120939680038923",
-    "summary": "Self-quote-tweet pointing back to Simback's Apr 16 article 'The AI Agent Moat Is Real, but Narrower Than You Think.' Thesis: moats in the agent space aren't in the harness itself. Simback has been looking at where to invest and build in agents over four months and is narrowing his view of where defensibility actually lives.",
+    "summary": "Kevin Simback shares his article \"The AI Agent Moat Is Real, but Narrower Than You Think,\" arguing that the durable moat in the agent space isn't the harness itself but lies elsewhere, after going deep on where to invest and build in the agent space.",
     "topics": [
-      "agent-design",
       "industry",
-      "management"
+      "agent-design"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
-    "views": "424",
+    "views": "569",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "You also need to know where the moats are, and it's not the harness itself.\n\nThe AI Agent Moat Is Real, but Narrower Than You Think. Over the past 4 months I've gone super deep into AI agents asking where the opportunities are to invest and build in the agent space.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-18",
@@ -6393,7 +6488,7 @@
     "handle": "@usepolyarb",
     "subject": "Post by PolyArb on X",
     "url": "https://x.com/usepolyarb/status/2045109166599963026",
-    "summary": "Prediction-markets arbitrage infrastructure launch — not AI-focused. Six years of derivatives execution (FX arb → crypto perps → prop trading); now targeting prediction markets ($44B in 2025, projected $1T by 2027). Technical breakdown of multi-venue arb, unified oracle, and execution engine. Included because it landed in Jeremy's link stream.",
+    "summary": "[Post unavailable — page doesn't exist]",
     "topics": [
       "industry",
       "general"
@@ -6406,52 +6501,62 @@
     "views": "219K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page doesn't exist"
   },
   {
     "date": "2026-04-18",
     "author": "Eric Hartford",
-    "handle": "@quixiai",
+    "handle": "@QuixiAI",
     "subject": "Post by Eric Hartford on X",
     "url": "https://x.com/quixiai/status/2044952124568527298",
-    "summary": "Response to Anthropic's Project Glasswing / Claude Mythos Preview announcement, where Anthropic claimed the model was too dangerous to release after finding thousands of zero-days (27-year-old OpenBSD bug, 16-year-old FFmpeg bug). Hartford argues the real innovation is the workflow, not the model: rank every file by attack surface, fan out hundreds of parallel agents each scoped to one file, use crash oracles (AddressSanitizer, UBSan) as ground truth. He open-sourced 'Clearwing' (MIT licensed) at github.com/Lazarus-AI/clearwing — Qwen3.5 finetuned to Western alignment — so defenders don't have to wait for access to a gated model.",
+    "summary": "Eric Hartford releases Clearwing, an MIT-licensed open-source vulnerability-discovery engine that reproduces Anthropic's \"Project Glasswing\" results with any LLM. His argument: the real innovation isn't the gated Claude Mythos model but the model-agnostic pipeline, rank files by attack surface, fan out hundreds of file-scoped agents, use crash oracles (AddressSanitizer/UBSan) as ground truth, and run a verification agent to filter noise. Reproduced findings with OpenAI Codex 5.4 and a Qwen3.5 finetune.",
     "topics": [
       "research",
       "agent-design",
+      "dev-practices",
       "industry"
     ],
     "audience": [
-      "me",
       "dev-team",
+      "me",
       "leadership"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "211.6K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Anthropic announced Project Glasswing alongside Claude Mythos Preview, finding thousands of zero-days. But the real innovation isn't the model, it's the workflow: rank every file by attack surface, fan out hundreds of parallel agents each scoped to one file, use crash oracles (AddressSanitizer, UBSan) as ground truth, run a second verification agent to filter noise, generate exploits as a triage mechanism. Pipelines are model-agnostic. Clearwing is a fully open-source vulnerability discovery engine that works with any LLM; reproduced Glasswing's findings with OpenAI Codex 5.4. MIT licensed.\n\nGitHub - Lazarus-AI/clearwing",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-17",
     "author": "Alter Ego",
-    "handle": "@alterego_eth",
+    "handle": "@AlterEgo_eth",
     "subject": "Post by Alter Ego on X",
     "url": "https://x.com/alterego_eth/status/2045093809886020058",
-    "summary": "Promo for Hermes Agent from Nous Research (team behind YaRN, Nomos, Psyche) — open, self-hosted agent pitched as a new standard for AI trading on Polymarket. Features: self-learns by writing itself skills after complex tasks, persistent memory (MEMORY.md + USER.md + SQLite), runs 24/7 on a VPS with Telegram alerts, closed learning loop that analyzes and improves every ~15 tool calls. Contrasted with 'static' OpenClaw. Example given: a weather-bot turned EV+Kelly Criterion trader scanning 20 cities.",
+    "summary": "Alter Ego promotes Nous Research's Hermes Agent, a self-hosted agent that writes its own skills after each task, keeps persistent memory (MEMORY.md/USER.md/SQLite), and runs 24/7 on a VPS with a closed learn-improve loop every ~15 tool calls, using it to build a self-learning Polymarket weather-trading bot. Heavy promotional/profit framing.",
     "topics": [
       "agent-design",
-      "skills-mcp"
+      "skills-mcp",
+      "questionable"
     ],
     "audience": [
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "69.6K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Hermes Agent from Nous Research, a new standard of AI-trading on Polymarket. It is an open self-hosted agent that self-learns (writes itself a skill after every complex task), has persistent memory (MEMORY.md + USER.md + SQLite), and works 24/7 on a VPS with Telegram alerts. Closed learning loop: every ~15 tool calls it analyzes what worked and improves itself. Install Hermes, copy 7 prompts, launch on VPS.\n\nHermes Agent + Polymarket: how I built a self-learning weather trading bot. A month ago @NousResearch released Hermes.\n\nweatherbot repo",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-17",
@@ -6483,22 +6588,26 @@
     "handle": "@hamudinaanaa",
     "subject": "Post by Hamudi on X",
     "url": "https://x.com/hamudinaanaa/status/2044872907072164304",
-    "summary": "Quote-tweet on Sequoia's $1T 'sell work, not software' thesis. Hamudi announces a paper on measuring economic outcomes from AI agents — 'Outcome Primitives.' Tracked 1,300 agents over 21 days generating $32M of economic value: jobs secured, $200k grants won, e-commerce shops shipped. Framing: copilots compete on software margins (losing to labs), outcome-delivery products compete on services margins (transforming industries).",
+    "summary": "Hamudi ties into Sequoia's \"$1T thesis\" that AI sells outcomes (work) rather than software tools, introducing \"Outcome Primitives\" as a way to measure economic outcomes, citing a published paper tracking 1,300 agents over 21 days that created $32M in value (jobs secured, $200k grants won, e-commerce shops shipped). Framing: copilots compete on software margins and lose to big labs; outcome engines compete on services margins.",
     "topics": [
       "industry",
+      "agent-design",
       "management",
-      "agent-design"
+      "research"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "97.7K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Silicon Valley is waking up to the $1T thesis by Sequoia. SaaS sold tools; AI sells outcomes. But you can't build an outcome engine if you don't know how to measure an outcome. We published a paper on measuring economic outcomes, which we call Outcome Primitives. We tracked 1,300 agents over 21 days creating $32M of economic value: securing jobs, winning $200k grants, shipping e-commerce shops. If your AI product is just a copilot, you compete on software margins; if it delivers the primitive, you compete on services margins.\n\nSequoia's thesis that the next $1T company will sell work, not software, is the most important reframe in AI right now. Sell a copilot and you compete with every model release; sell the outcome and you transform industries.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-15",
@@ -6642,21 +6751,26 @@
     "handle": "@akshay_pachaar",
     "subject": "Post by Akshay 🚀 on X",
     "url": "https://x.com/akshay_pachaar/status/2044329897603244093",
-    "summary": "Akshay argues agent memory is three-dimensional, not just vector. Example: 'Was Alice's project affected by Tuesday's outage?' — vector search finds Alice + Tuesday facts but misses the bridging Project-Atlas-uses-PostgreSQL fact. Proper stack needs relational (provenance), vector (semantic), and graph (relationships) stores. Any multi-hop business question breaks flat retrieval.",
+    "summary": "Akshay argues agent memory is three-dimensional, needing a relational store for provenance, a vector store for semantics, and a graph store for relationships, because flat vector search misses multi-hop connections (the \"bridge\" fact that links two entities). He points to Cognee, an open-source project that unifies all three behind four async calls (default embedded SQLite+LanceDB+Kuzu, swappable for Postgres/Qdrant/Neo4j).",
     "topics": [
       "agent-design",
-      "research"
+      "research",
+      "skills-mcp",
+      "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "53.5K",
+    "views": "200.2K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Agent memory is three-dimensional. Most systems use a single vector store, capturing only one dimension. Vector search misses bridge facts that connect entities across two hops. The three dimensions: a relational store for provenance (source, time, access), a vector store for semantics, and a graph store for relationships. Enter through vectors, traverse the graph, ground every result in provenance. Cognee is an open-source project unifying all three behind four async calls; default embedded stack is SQLite + LanceDB + Kuzu, swap in Postgres/Qdrant/Neo4j for production.\n\nBuild Agents that never forget: a first-principles walk through agent memory, from Python lists to markdown files to vector search to graph-vector hybrids.\n\nCognee on GitHub",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-15",
@@ -6664,21 +6778,22 @@
     "handle": "@vrloom",
     "subject": "Post by Europurr on X",
     "url": "https://x.com/vrloom/status/2044314974101877175",
-    "summary": "Europurr switched from 'OpenClaw' to Hermes and is setting up Hindsight memory (@NousResearch) — says it's light-years ahead. Signal about Nous Research's memory/agent stack being viable alternative.",
+    "summary": "Europurr reports switching from OpenClaw to Nous Research's Hermes agent and setting up its \"Hindsight\" memory, calling it light-years ahead of OpenClaw.",
     "topics": [
-      "agent-design",
-      "claude-code"
+      "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "me"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
-    "views": "19.7K",
+    "views": "51.6K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Switched from OpenClaw to Hermes, setting up Hindsight memory now, and it's already blowing my mind. This is light-years ahead of what OpenClaw is doing. @NousResearch",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-15",
@@ -6686,22 +6801,25 @@
     "handle": "@garrytan",
     "subject": "Post by Garry Tan on X",
     "url": "https://x.com/garrytan/status/2044291663213015491",
-    "summary": "Garry Tan releases GBrain v0.10.0 — his personal 'OpenClaw' setup with RESOLVER.md, SOUL.md and ACLs for multi-user brain access. 24 distinct 'fat skills' with e2e tests, evals and unit tests.",
+    "summary": "Garry Tan releases GBrain v0.10.0, packaging his personal OpenClaw \"brain\" for others: refined RESOLVER.md and SOUL.md, ACLs for multi-user brain access, and 24 distinct \"fat\" skills shipped with e2e tests, evals, and unit tests.",
     "topics": [
-      "claude-code",
+      "agent-design",
       "skills-mcp",
-      "agent-design"
+      "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "85.1K",
+    "views": "174.1K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "GBrain v0.10.0 is a big one. My personal OpenClaw setup and brain can now be yours. I've perfected my RESOLVER.md, my SOUL.md and ACLs for multi-user brain access. Now there are 24 distinct fat skills with fat code, fully tested with e2e tests, evals and unit tests.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-15",
@@ -6709,23 +6827,25 @@
     "handle": "@shawmakesmagic",
     "subject": "Post by Shaw (spirit/acc) on X",
     "url": "https://x.com/shawmakesmagic/status/2044269097647779990",
-    "summary": "Shaw (@shawmakesmagic) shares an 8-subagent codebase-cleanup prompt: (1) dedup/DRY, (2) consolidate shared type definitions, (3) find/remove unused code via knip, (4) untangle circular deps via madge, (5) replace weak types (any/unknown) with strong ones, (6) remove unnecessary try/catch defensive programming, plus two more. Practical agent-orchestration pattern for quality cleanup.",
+    "summary": "Shaw shares a reusable prompt for cleaning up \"vibecoded\" codebases by spawning 8 parallel subagents, each owning one cleanup task: DRY/dedup, consolidating shared types, removing unused code (knip), untangling circular deps (madge), replacing weak types (any/unknown), stripping needless defensive try/catch, removing legacy/fallback paths, and cutting AI-slop comments. Each subagent researches, writes a critical assessment, then implements high-confidence fixes.",
     "topics": [
-      "claude-code",
-      "agent-design",
+      "prompting",
       "dev-practices",
-      "prompting"
+      "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "335.7K",
+    "views": "659.2K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "To clean up vibecoded slop, use this prompt with 8 subagents, one each for: (1) deduplicate and apply DRY, (2) consolidate shared type definitions, (3) find and remove unused code with knip, (4) untangle circular dependencies with madge, (5) remove weak types like any/unknown with researched strong types, (6) remove defensive try/catch that hides errors, (7) remove deprecated/legacy/fallback code, (8) remove AI slop, stubs and unhelpful comments. Each subagent does detailed research, writes a critical assessment with recommendations, then implements all high-confidence recommendations.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-15",

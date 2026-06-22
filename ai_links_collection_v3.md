@@ -1,24 +1,24 @@
 # AI Links Collection
-**Total Posts**: 633  
-**Date Range**: 2024-06-11 – 2026-06-16  
-**Enriched**: 632/633 (99%)
+**Total Posts**: 636  
+**Date Range**: 2024-06-11 – 2026-06-17  
+**Enriched**: 635/636 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-06-19T20:59:45Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-06-22T23:37:42Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-06-15** — [Hasan Toor](https://x.com/hasantoxr/status/2066247422502957197) — *now • Agent Design • 28.7K views • v1 enriched*  
   Highlights Headroom, a GitHub tool by Netflix engineer Tejas Chopra that compresses everything an AI agent reads before it reaches the LLM (tool outputs, logs, files, RAG chunks, code-search results, conversation history), claiming 60-95% fewer tokens for the same answers. Ships as a Python/TypeScript library, local proxy, and MCP server, with wrappers for Claude Code, Codex, Cursor, Aider, and Copilot.
-- **2026-06-14** — [Avid](https://x.com/av1dlive/status/2065747876005937416) — *now • Claude Code • 255.2K views • v1 enriched*  
-  Promotes a 'second brain' pattern attributed to Karpathy: let an LLM maintain a wiki of your notes so knowledge compounds as you dump sources and it reads, links, and files them. Points to a free Claude Code plugin, claude-obsidian by AgriciDaniel (claude plugin marketplace add AgriciDaniel/claude-obsidian; claude plugin install claude-obsidian@agricidaniel-claude-obsidian), then run /wiki inside an Obsidian folder. Quote-tweets the author's own article on building Obsidian from scratch with 13+ Kimi agents.
-- **2026-06-13** — [Suryansh Tiwari](https://x.com/suryanshti777/status/2065473893817848266) — *now • Claude Code • 238.4K views • v1 enriched*  
-  Claims Anthropic released an official Claude Code plugin, claude-code-setup, that scans your project and recommends and sets up hooks, skills, MCP servers, subagents, and automations step-by-step (install: /plugin install claude-code-setup@claude-plugins-official), arguing most people run Claude Code vanilla and miss the surrounding ecosystem. Quote-tweets the author's own 'Unveil' build. (Treat the 'official' claim as unverified.)
+- **2026-06-17** — [How To Prompt](https://x.com/howtoprompt__/status/2067176008445513800) — *near-term • Research • 90.1K views • v1 enriched*  
+  Engagement-farmed post claiming an open-source repo compresses 60M text chunks from 201GB to ~6GB (97% smaller) with no accuracy loss, running fully private on a standard laptop with no cloud or GPU — pitched as making vector databases obsolete. No repo link was surfaced in the post or visible replies, so the project would need to be located before the claim can be evaluated.
+- **2026-06-17** — [Viv](https://x.com/vtrivedy10/status/2066954487466459163) — *near-term • Agent Design • 107.1K views • v1 enriched*  
+  Viv amplifies Sydney Runkle's X article 'The Art of Loop Engineering,' which argues reliable agents need more than a good model — they need a carefully engineered hierarchy of loops. Viv's key takeaway: verification is a critical primitive; it's worth spending days to weeks making the distribution of desired agent outcomes verifiable in practice by your system, especially for non-slop, semi-long-horizon work.
+- **2026-06-17** — [Ahmad](https://x.com/theahmadosman/status/2066825976705646929) — *near-term • Research • 92.3K views • v1 enriched*  
+  Ahmad highlights VibeThinker 3B (built on Qwen 2.5), a 3B-parameter model he claims reaches Opus 4.5-level performance, quoting his own earlier prediction that Claude Code + Opus 4.5-quality models will run locally on a single RTX PRO 6000 before year-end. A signal on how fast small/efficient local models are closing the gap with frontier models.
 - **2026-06-15** — [Teknium](https://x.com/teknium/status/2066185784332562605) — *near-term • Agent Design • 200.1K views • v1 enriched*  
   Demo: the author used the Hermes Agent with a Manim video-generation skill plus its TTS tool to autonomously produce a video explaining the Hermes Agent itself — a self-referential showcase of composing a skill and a tool inside an agent.
-- **2026-06-15** — [Avid](https://x.com/av1dlive/status/2066127265407336535) — *near-term • Dev Practices • 27.9K views • v1 enriched*  
-  Argues you can run capable AI models locally on a Mac for free using Apple's MLX stack — install mlx-lm, launch its server, and point any agent at localhost. Cites a ~23-minute talk from an Apple MLX-team engineer in which a local model builds a working SwiftUI app from a blank Xcode project in two minutes and then fixes a bug, with nothing leaving the machine. Quote-tweets a piece on the ThinkStation PGX local-inference box.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
@@ -49,21 +49,24 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 307 | 48.5% |
-| claude-code | 155 | 24.5% |
-| dev-practices | 177 | 28.0% |
-| skills-mcp | 94 | 14.8% |
+| agent-design | 308 | 48.4% |
+| claude-code | 152 | 23.9% |
+| dev-practices | 181 | 28.5% |
+| skills-mcp | 96 | 15.1% |
 | prompting | 83 | 13.1% |
-| research | 117 | 18.5% |
+| research | 120 | 18.9% |
 | industry | 75 | 11.8% |
-| management | 96 | 15.2% |
-| questionable | 93 | 14.7% |
+| management | 95 | 14.9% |
+| questionable | 94 | 14.8% |
 | general | 80 | 12.6% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-06-17 | How To Prompt | research | Engagement-farmed post claiming an open-source repo compresses 60M tex... |
+| 2026-06-17 | Viv | agent-design | Viv amplifies Sydney Runkle's X article 'The Art of Loop Engineering,'... |
+| 2026-06-17 | Ahmad | research | Ahmad highlights VibeThinker 3B (built on Qwen 2.5), a 3B-parameter mo... |
 | 2026-06-16 | Jaynit | management | Thread relaying Elon Musk's 5-step engineering 'algorithm': (1) make t... |
 | 2026-06-15 | Hasan Toor | agent-design | Highlights Headroom, a GitHub tool by Netflix engineer Tejas Chopra th... |
 | 2026-06-15 | Teknium | agent-design | Demo: the author used the Hermes Agent with a Manim video-generation s... |
@@ -111,14 +114,13 @@
 | 2026-06-03 | Livsun | questionable | [Engagement-farmed hype] Anonymous quant-trading flex: neural net trai... |
 | 2026-06-03 | Tom Dörr | skills-mcp | FlowForge — a Claude skill that generates professional draw.io diagram... |
 | 2026-05-31 | darkzodchi | claude-code | Quote tweet promoting @0x_rody's article on building Claude Code subag... |
-| 2026-05-31 | Mr. Buzzoni | claude-code | Engagement-farmed thread (ALL CAPS hype) citing Karpathy's 'we're in t... |
-| 2026-05-31 | 恒星 | skills-mcp | DeepMind open-sourced Science Skills (github.com/google-deepmind/scien... |
-| 2026-05-31 | Chesny | general | Hype thread (translated from Spanish) about a Karpathy-inspired '3D kn... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (307)
+### Agent Design (308)
+
+- [Viv](https://x.com/vtrivedy10/status/2066954487466459163) — 2026-06-17: Viv amplifies Sydney Runkle's X article 'The Art of Loop Engineering,' which argues reliable agents need more than a good model — they need a carefully engineered hierarchy of loops. Viv's key takeaway: verification is a critical primitive; it's worth spending days to weeks making the distribution of desired agent outcomes verifiable in practice by your system, especially for non-slop, semi-long-horizon work.
 
 - [Hasan Toor](https://x.com/hasantoxr/status/2066247422502957197) — 2026-06-15: Highlights Headroom, a GitHub tool by Netflix engineer Tejas Chopra that compresses everything an AI agent reads before it reaches the LLM (tool outputs, logs, files, RAG chunks, code-search results, conversation history), claiming 60-95% fewer tokens for the same answers. Ships as a Python/TypeScript library, local proxy, and MCP server, with wrappers for Claude Code, Codex, Cursor, Aider, and Copilot.
 
@@ -418,25 +420,25 @@
 
 - [Akshay](https://x.com/akshay_pachaar/status/2046151867177308181) — 2026-04-20: Akshay summarizes Google DeepMind's 'AI Agent Traps' paper — the first systematic framework for adversarial content engineered to hijack AI agents browsing the web. Maps six attack surfaces: Content Injection (perception: invisible CSS, hidden HTML, steganographic payloads in images — HTML injections hijack web agents in up to 86% of scenarios), Semantic Manipulation (reasoning: biased framing weaponizing cognitive biases), Cognitive State Traps (memory: RAG poisoning, long-term memory corruption), plus three more not visible in the truncated scrape. High-priority reading for anyone building agents that browse arbitrary web content.
 
-- [Kenneth Auchenberg](https://x.com/auchenberg/status/2045940742678368570) — 2026-04-20: Short quote-tweet on Aparna Dhinakaran's article 'Sandboxes Are the Servers of the Harness Era' — Auchenberg frames swarms/multi-agent systems as 'harnesses managing harnesses.' The cited piece argues the harness is the application and the sandbox is the server (compute, filesystem, persistent state).
+- [Kenneth Auchenberg](https://x.com/auchenberg/status/2045940742678368570) — 2026-04-20: Kenneth Auchenberg highlights an article arguing that in the "harness era" of AI agents the harness is the application and the sandbox is the server, framing swarms as harnesses managing harnesses.
 
-- [Garry Tan](https://x.com/garrytan/status/2045427057656729985) — 2026-04-19: Launch of GBrain v0.11 with 'Minions' — a BullMQ-based queue/jobs system running on GBrain's Postgres/PGLite, built to replace OpenClaw's subagents that kept timing out. Tan claims Minions are 10x faster and more reliable for OpenClaw/GBrain agent setups.
+- [Garry Tan](https://x.com/garrytan/status/2045427057656729985) — 2026-04-19: Garry Tan launches GBrain v0.11 with "Minions," a BullMQ-style queue/jobs system built on Postgres/PGLite to make OpenClaw/GBrain subagents faster and more reliable instead of timing out.
 
-- [Akshay](https://x.com/akshay_pachaar/status/2045404494641733962) — 2026-04-18: Summary of UCL paper 'Dive into Claude Code' (arXiv:2604.14228) reverse-engineering the leaked Claude Code source. Only 1.6% of the codebase is AI decision logic; 98.4% is operational infrastructure — permission gates, tool routing, context compaction, recovery logic, session persistence. Core loop is a simple while-true (call model, run tools, repeat). Permission system has 7 modes plus an ML classifier. Contrasts with LangGraph's explicit state machines and Devin's heavy planners — Claude Code invests engineering effort in the harness while giving the model maximum decision latitude. Punchline: the harness is the differentiator, not the model.
+- [Akshay](https://x.com/akshay_pachaar/status/2045404494641733962) — 2026-04-18: Akshay summarizes a UCL paper (arXiv:2604.14228) dissecting Claude Code's architecture: only 1.6% of the codebase is AI decision logic while 98.4% is operational harness (permission gates with 7 modes, tool routing, a 5-layer context compaction pipeline, subagents that return only summaries). Core thesis: as frontier models converge on raw coding ability, harness quality, not the model, becomes the differentiator.
 
-- [Alex Ker](https://x.com/thealexker/status/2045203785304232162) — 2026-04-18: Guide on optimizing your agent harness. Three levers: (1) keep config files lean enough for the model to reason over, (2) structure prompts with the R.P.I. framework so the model approaches problems like a staff engineer, (3) use subagents to keep the main context window clean. Ker contributes to Roo Code, DeepAgent CLI, and HumanLayer. Core argument: harnesses that compound output vs. harnesses that compound mistakes — judgment lives at the harness layer.
+- [Alex Ker](https://x.com/thealexker/status/2045203785304232162) — 2026-04-18: Alex Ker's deep-dive guide on optimizing AI coding harnesses: keep config/.md files lean and human-written (frontier LLMs hit a "dumb zone" past a few hundred instructions), use progressive disclosure for CLIs/skills/MCP tools, structure prompts with HumanLayer's Research-Plan-Implement (R.P.I.) framework, and use subagents (parallel fan-out for breadth, pipelines for depth) to keep the main context clean. Core argument: the harness, not the model, is where engineering judgment compounds, so commit to one and iterate.
 
-- [Daniel Miessler](https://x.com/danielmiessler/status/2045148852047827449) — 2026-04-18: Miessler endorses 'Interceptor' by @ronaldeddings as the best Browser Control System he's used for agents (out of 100+ tools). He says it's added the most value to his PAI (Personal AI) harness recently. Short recommendation tweet — no link in the post body but the tool is attributed to Ronald Eddings.
+- [Daniel Miessler](https://x.com/danielmiessler/status/2045148852047827449) — 2026-04-18: Daniel Miessler recommends Interceptor (by Ronald Eddings) as the best browser-control system for AI agents he's used out of 100+, now the highest-value addition to his PAI harness.
 
-- [Kevin Simback](https://x.com/ksimback/status/2045120939680038923) — 2026-04-18: Self-quote-tweet pointing back to Simback's Apr 16 article 'The AI Agent Moat Is Real, but Narrower Than You Think.' Thesis: moats in the agent space aren't in the harness itself. Simback has been looking at where to invest and build in agents over four months and is narrowing his view of where defensibility actually lives.
+- [Kevin Simback](https://x.com/ksimback/status/2045120939680038923) — 2026-04-18: Kevin Simback shares his article "The AI Agent Moat Is Real, but Narrower Than You Think," arguing that the durable moat in the agent space isn't the harness itself but lies elsewhere, after going deep on where to invest and build in the agent space.
 
-- [Eric Hartford](https://x.com/quixiai/status/2044952124568527298) — 2026-04-18: Response to Anthropic's Project Glasswing / Claude Mythos Preview announcement, where Anthropic claimed the model was too dangerous to release after finding thousands of zero-days (27-year-old OpenBSD bug, 16-year-old FFmpeg bug). Hartford argues the real innovation is the workflow, not the model: rank every file by attack surface, fan out hundreds of parallel agents each scoped to one file, use crash oracles (AddressSanitizer, UBSan) as ground truth. He open-sourced 'Clearwing' (MIT licensed) at github.com/Lazarus-AI/clearwing — Qwen3.5 finetuned to Western alignment — so defenders don't have to wait for access to a gated model.
+- [Eric Hartford](https://x.com/quixiai/status/2044952124568527298) — 2026-04-18: Eric Hartford releases Clearwing, an MIT-licensed open-source vulnerability-discovery engine that reproduces Anthropic's "Project Glasswing" results with any LLM. His argument: the real innovation isn't the gated Claude Mythos model but the model-agnostic pipeline, rank files by attack surface, fan out hundreds of file-scoped agents, use crash oracles (AddressSanitizer/UBSan) as ground truth, and run a verification agent to filter noise. Reproduced findings with OpenAI Codex 5.4 and a Qwen3.5 finetune.
 
-- [Alter Ego](https://x.com/alterego_eth/status/2045093809886020058) — 2026-04-17: Promo for Hermes Agent from Nous Research (team behind YaRN, Nomos, Psyche) — open, self-hosted agent pitched as a new standard for AI trading on Polymarket. Features: self-learns by writing itself skills after complex tasks, persistent memory (MEMORY.md + USER.md + SQLite), runs 24/7 on a VPS with Telegram alerts, closed learning loop that analyzes and improves every ~15 tool calls. Contrasted with 'static' OpenClaw. Example given: a weather-bot turned EV+Kelly Criterion trader scanning 20 cities.
+- [Alter Ego](https://x.com/alterego_eth/status/2045093809886020058) — 2026-04-17: Alter Ego promotes Nous Research's Hermes Agent, a self-hosted agent that writes its own skills after each task, keeps persistent memory (MEMORY.md/USER.md/SQLite), and runs 24/7 on a VPS with a closed learn-improve loop every ~15 tool calls, using it to build a self-learning Polymarket weather-trading bot. Heavy promotional/profit framing.
 
 - [0xSero](https://x.com/0xsero/status/2044879665001595263) — 2026-04-17: 0xSero (quote-tweeting Sarah Chieng's article 'Single-agent AI coding is a nightmare for engineers') says he's gone 180 on multi-agents/subagents after analyzing hundreds of AI coding agent sessions — they actually help a lot. Practitioner's change-of-mind about orchestration.
 
-- [Hamudi](https://x.com/hamudinaanaa/status/2044872907072164304) — 2026-04-17: Quote-tweet on Sequoia's $1T 'sell work, not software' thesis. Hamudi announces a paper on measuring economic outcomes from AI agents — 'Outcome Primitives.' Tracked 1,300 agents over 21 days generating $32M of economic value: jobs secured, $200k grants won, e-commerce shops shipped. Framing: copilots compete on software margins (losing to labs), outcome-delivery products compete on services margins (transforming industries).
+- [Hamudi](https://x.com/hamudinaanaa/status/2044872907072164304) — 2026-04-17: Hamudi ties into Sequoia's "$1T thesis" that AI sells outcomes (work) rather than software tools, introducing "Outcome Primitives" as a way to measure economic outcomes, citing a published paper tracking 1,300 agents over 21 days that created $32M in value (jobs secured, $200k grants won, e-commerce shops shipped). Framing: copilots compete on software margins and lose to big labs; outcome engines compete on services margins.
 
 - [Garry Tan](https://x.com/garrytan/status/2044479509874020852) — 2026-04-15: X article: "Resolvers: The Routing Table for Intelligence" — argues resolvers (context-routing rules: when task X appears, load document Y first) are the most important but invisible component of agent systems. Follows up on "Thin Harness, Fat Skills" framework. 21K views.
 
@@ -446,13 +448,13 @@
 
 - [Shann³](https://x.com/shannholmberg/status/2044413638388363272) — 2026-04-15: Built a 230-page Obsidian knowledge base (tweets, bookmarks, articles, notes) and connected it to every AI agent project using qmd (Tobi Lütke's tool) with hybrid BM25+vector search and LLM re-ranking. Any agent in any project now searches this global wiki before brainstorming or planning.
 
-- [Akshay](https://x.com/akshay_pachaar/status/2044329897603244093) — 2026-04-15: Akshay argues agent memory is three-dimensional, not just vector. Example: 'Was Alice's project affected by Tuesday's outage?' — vector search finds Alice + Tuesday facts but misses the bridging Project-Atlas-uses-PostgreSQL fact. Proper stack needs relational (provenance), vector (semantic), and graph (relationships) stores. Any multi-hop business question breaks flat retrieval.
+- [Akshay](https://x.com/akshay_pachaar/status/2044329897603244093) — 2026-04-15: Akshay argues agent memory is three-dimensional, needing a relational store for provenance, a vector store for semantics, and a graph store for relationships, because flat vector search misses multi-hop connections (the "bridge" fact that links two entities). He points to Cognee, an open-source project that unifies all three behind four async calls (default embedded SQLite+LanceDB+Kuzu, swappable for Postgres/Qdrant/Neo4j).
 
-- [Europurr](https://x.com/vrloom/status/2044314974101877175) — 2026-04-15: Europurr switched from 'OpenClaw' to Hermes and is setting up Hindsight memory (@NousResearch) — says it's light-years ahead. Signal about Nous Research's memory/agent stack being viable alternative.
+- [Europurr](https://x.com/vrloom/status/2044314974101877175) — 2026-04-15: Europurr reports switching from OpenClaw to Nous Research's Hermes agent and setting up its "Hindsight" memory, calling it light-years ahead of OpenClaw.
 
-- [Garry Tan](https://x.com/garrytan/status/2044291663213015491) — 2026-04-15: Garry Tan releases GBrain v0.10.0 — his personal 'OpenClaw' setup with RESOLVER.md, SOUL.md and ACLs for multi-user brain access. 24 distinct 'fat skills' with e2e tests, evals and unit tests.
+- [Garry Tan](https://x.com/garrytan/status/2044291663213015491) — 2026-04-15: Garry Tan releases GBrain v0.10.0, packaging his personal OpenClaw "brain" for others: refined RESOLVER.md and SOUL.md, ACLs for multi-user brain access, and 24 distinct "fat" skills shipped with e2e tests, evals, and unit tests.
 
-- [Shaw (spirit/acc)](https://x.com/shawmakesmagic/status/2044269097647779990) — 2026-04-15: Shaw (@shawmakesmagic) shares an 8-subagent codebase-cleanup prompt: (1) dedup/DRY, (2) consolidate shared type definitions, (3) find/remove unused code via knip, (4) untangle circular deps via madge, (5) replace weak types (any/unknown) with strong ones, (6) remove unnecessary try/catch defensive programming, plus two more. Practical agent-orchestration pattern for quality cleanup.
+- [Shaw (spirit/acc)](https://x.com/shawmakesmagic/status/2044269097647779990) — 2026-04-15: Shaw shares a reusable prompt for cleaning up "vibecoded" codebases by spawning 8 parallel subagents, each owning one cleanup task: DRY/dedup, consolidating shared types, removing unused code (knip), untangling circular deps (madge), replacing weak types (any/unknown), stripping needless defensive try/catch, removing legacy/fallback paths, and cutting AI-slop comments. Each subagent researches, writes a critical assessment, then implements high-confidence fixes.
 
 - [mr-r0b0t](https://x.com/mr_r0b0t/status/2044199154004472009) — 2026-04-15: Amplifies a tip on a 3-tool agent web stack: SearXNG for candidate source discovery, Firecrawl for known-URL scraping, Camofox for JS/interaction browser fallback. Described as essential for any agent doing web search or scraping.
 
@@ -734,7 +736,7 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Claude Code (155)
+### Claude Code (152)
 
 - [Harry Tandy](https://x.com/harrytandy/status/2065818850633932996) — 2026-06-14: Opens with a Sam Altman quote that the cost to use a given level of AI falls ~10x every 12 months, then lays out a 10-step agentic-coding sprint: pick the heaviest backlog item, write a FABLE_RUN.md spec (goal/scope/commands/review rules/done criteria), map the repo first, break the job into checkpoints that each end with diff + test output + next decision, split builder and checker agents, use git worktrees for parallel attempts, and keep a RUN_LOG.md of every failed command and accepted fix.
 
@@ -886,21 +888,15 @@
 
 - [Vox](https://x.com/voxyz_ai/status/2045899539526148193) — 2026-04-21: The #1 GitHub trending repo this week (44,465 stars) is a CLAUDE.md file distilling Andrej Karpathy's LLM coding pitfalls into 4 principles: (1) think before coding — ask when unsure, (2) simplicity first — minimum code, (3) surgical edits — only touch what's required, (4) goal-driven — translate fuzzy instructions into verifiable targets. Directly actionable as a CLAUDE.md system prompt.
 
-- [阿绎 AYi](https://x.com/ayi_ainotes/status/2045874192155824616) — 2026-04-20: Thread (translated from Chinese) hyping an open-source project 'OpenMythos' by a 22-year-old claimed to reverse-engineer Anthropic's Claude as a 'recurrent deep Transformer' — same weights loop through 16 forward passes, with thinking happening silently in hidden space instead of visible CoT tokens. Claims a 770B-param recurrent model matches a 1.3T plain model. Speculative architecture claim; treat as unverified.
+- [AYi](https://x.com/ayi_ainotes/status/2045874192155824616) — 2026-04-20: AYi (translated from Chinese) recaps OpenMythos, an open-source first-principles reconstruction of Anthropic's "Claude Mythos" as a looped/recurrent transformer with MoE routing: the same weights run ~16x per forward pass so reasoning happens silently in latent space. Argues a 770B recurrent model can match a 1.3T standard model and that future scaling competes on loop-count rather than parameter count.
 
-- [Akshay](https://x.com/akshay_pachaar/status/2045404494641733962) — 2026-04-18: Summary of UCL paper 'Dive into Claude Code' (arXiv:2604.14228) reverse-engineering the leaked Claude Code source. Only 1.6% of the codebase is AI decision logic; 98.4% is operational infrastructure — permission gates, tool routing, context compaction, recovery logic, session persistence. Core loop is a simple while-true (call model, run tools, repeat). Permission system has 7 modes plus an ML classifier. Contrasts with LangGraph's explicit state machines and Devin's heavy planners — Claude Code invests engineering effort in the harness while giving the model maximum decision latitude. Punchline: the harness is the differentiator, not the model.
+- [Akshay](https://x.com/akshay_pachaar/status/2045404494641733962) — 2026-04-18: Akshay summarizes a UCL paper (arXiv:2604.14228) dissecting Claude Code's architecture: only 1.6% of the codebase is AI decision logic while 98.4% is operational harness (permission gates with 7 modes, tool routing, a 5-layer context compaction pipeline, subagents that return only summaries). Core thesis: as frontier models converge on raw coding ability, harness quality, not the model, becomes the differentiator.
 
-- [Daniel Miessler](https://x.com/danielmiessler/status/2045148852047827449) — 2026-04-18: Miessler endorses 'Interceptor' by @ronaldeddings as the best Browser Control System he's used for agents (out of 100+ tools). He says it's added the most value to his PAI (Personal AI) harness recently. Short recommendation tweet — no link in the post body but the tool is attributed to Ronald Eddings.
+- [Alex Ker](https://x.com/thealexker/status/2045203785304232162) — 2026-04-18: Alex Ker's deep-dive guide on optimizing AI coding harnesses: keep config/.md files lean and human-written (frontier LLMs hit a "dumb zone" past a few hundred instructions), use progressive disclosure for CLIs/skills/MCP tools, structure prompts with HumanLayer's Research-Plan-Implement (R.P.I.) framework, and use subagents (parallel fan-out for breadth, pipelines for depth) to keep the main context clean. Core argument: the harness, not the model, is where engineering judgment compounds, so commit to one and iterate.
 
 - [0xSero](https://x.com/0xsero/status/2044879665001595263) — 2026-04-17: 0xSero (quote-tweeting Sarah Chieng's article 'Single-agent AI coding is a nightmare for engineers') says he's gone 180 on multi-agents/subagents after analyzing hundreds of AI coding agent sessions — they actually help a lot. Practitioner's change-of-mind about orchestration.
 
 - [Millie Marconi](https://x.com/milliemarconnni/status/2044358003714097601) — 2026-04-15: Uses Claude as a full inversion engine running Charlie Munger's method — mapping every path to failure to make the path to success obvious by elimination. Shares 5 prompts for applying systematic inversion to any problem.
-
-- [Europurr](https://x.com/vrloom/status/2044314974101877175) — 2026-04-15: Europurr switched from 'OpenClaw' to Hermes and is setting up Hindsight memory (@NousResearch) — says it's light-years ahead. Signal about Nous Research's memory/agent stack being viable alternative.
-
-- [Garry Tan](https://x.com/garrytan/status/2044291663213015491) — 2026-04-15: Garry Tan releases GBrain v0.10.0 — his personal 'OpenClaw' setup with RESOLVER.md, SOUL.md and ACLs for multi-user brain access. 24 distinct 'fat skills' with e2e tests, evals and unit tests.
-
-- [Shaw (spirit/acc)](https://x.com/shawmakesmagic/status/2044269097647779990) — 2026-04-15: Shaw (@shawmakesmagic) shares an 8-subagent codebase-cleanup prompt: (1) dedup/DRY, (2) consolidate shared type definitions, (3) find/remove unused code via knip, (4) untangle circular deps via madge, (5) replace weak types (any/unknown) with strong ones, (6) remove unnecessary try/catch defensive programming, plus two more. Practical agent-orchestration pattern for quality cleanup.
 
 - [klöss](https://x.com/kloss_xyz/status/2044169678961234282) — 2026-04-15: klöss proposes a 4-folder repo layout to stop agents hallucinating context: /audits (proof/verify), /docs (description/describe), /plans (intent/plan), /specs (law/enforce). Separate intent from proof from law from descriptions and Claude Code / Codex / Cursor agents stop guessing what files mean.
 
@@ -1046,7 +1042,9 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (177)
+### Dev Practices (181)
+
+- [Viv](https://x.com/vtrivedy10/status/2066954487466459163) — 2026-06-17: Viv amplifies Sydney Runkle's X article 'The Art of Loop Engineering,' which argues reliable agents need more than a good model — they need a carefully engineered hierarchy of loops. Viv's key takeaway: verification is a critical primitive; it's worth spending days to weeks making the distribution of desired agent outcomes verifiable in practice by your system, especially for non-slop, semi-long-horizon work.
 
 - [Jaynit](https://x.com/jaynitx/status/2066506535250092378) — 2026-06-16: Thread relaying Elon Musk's 5-step engineering 'algorithm': (1) make the requirements less dumb / question them, (2) try to delete the part or process step entirely (if you aren't forced to add ~10% back, you didn't delete enough), (3) simplify and optimize, (4) accelerate cycle time, (5) automate — with the warning that the most common mistake of smart engineers is optimizing something that shouldn't exist.
 
@@ -1216,15 +1214,21 @@
 
 - [Akshay](https://x.com/akshay_pachaar/status/2046151867177308181) — 2026-04-20: Akshay summarizes Google DeepMind's 'AI Agent Traps' paper — the first systematic framework for adversarial content engineered to hijack AI agents browsing the web. Maps six attack surfaces: Content Injection (perception: invisible CSS, hidden HTML, steganographic payloads in images — HTML injections hijack web agents in up to 86% of scenarios), Semantic Manipulation (reasoning: biased framing weaponizing cognitive biases), Cognitive State Traps (memory: RAG poisoning, long-term memory corruption), plus three more not visible in the truncated scrape. High-priority reading for anyone building agents that browse arbitrary web content.
 
-- [Garry Tan](https://x.com/garrytan/status/2045427057656729985) — 2026-04-19: Launch of GBrain v0.11 with 'Minions' — a BullMQ-based queue/jobs system running on GBrain's Postgres/PGLite, built to replace OpenClaw's subagents that kept timing out. Tan claims Minions are 10x faster and more reliable for OpenClaw/GBrain agent setups.
+- [Garry Tan](https://x.com/garrytan/status/2045427057656729985) — 2026-04-19: Garry Tan launches GBrain v0.11 with "Minions," a BullMQ-style queue/jobs system built on Postgres/PGLite to make OpenClaw/GBrain subagents faster and more reliable instead of timing out.
 
-- [Alex Ker](https://x.com/thealexker/status/2045203785304232162) — 2026-04-18: Guide on optimizing your agent harness. Three levers: (1) keep config files lean enough for the model to reason over, (2) structure prompts with the R.P.I. framework so the model approaches problems like a staff engineer, (3) use subagents to keep the main context window clean. Ker contributes to Roo Code, DeepAgent CLI, and HumanLayer. Core argument: harnesses that compound output vs. harnesses that compound mistakes — judgment lives at the harness layer.
+- [Alex Ker](https://x.com/thealexker/status/2045203785304232162) — 2026-04-18: Alex Ker's deep-dive guide on optimizing AI coding harnesses: keep config/.md files lean and human-written (frontier LLMs hit a "dumb zone" past a few hundred instructions), use progressive disclosure for CLIs/skills/MCP tools, structure prompts with HumanLayer's Research-Plan-Implement (R.P.I.) framework, and use subagents (parallel fan-out for breadth, pipelines for depth) to keep the main context clean. Core argument: the harness, not the model, is where engineering judgment compounds, so commit to one and iterate.
+
+- [Eric Hartford](https://x.com/quixiai/status/2044952124568527298) — 2026-04-18: Eric Hartford releases Clearwing, an MIT-licensed open-source vulnerability-discovery engine that reproduces Anthropic's "Project Glasswing" results with any LLM. His argument: the real innovation isn't the gated Claude Mythos model but the model-agnostic pipeline, rank files by attack surface, fan out hundreds of file-scoped agents, use crash oracles (AddressSanitizer/UBSan) as ground truth, and run a verification agent to filter noise. Reproduced findings with OpenAI Codex 5.4 and a Qwen3.5 finetune.
 
 - [GitHub Projects Community](https://x.com/githubprojects/status/2044453433743458686) — 2026-04-15: Promotes Graphify — a tool to turn any folder of code into a queryable knowledge graph instantly. Useful for codebase exploration and RAG-style queries. osp.fyi/graphify
 
 - [Viv](https://x.com/vtrivedy10/status/2044430694458310870) — 2026-04-15: Points to Hunter Leath's article "Bash is the SQL for file systems" — a deep dive on storage, filesystems, and egress fees from cloud providers. Framed as must-read alpha for anyone working at the storage/filesystem layer.
 
-- [Shaw (spirit/acc)](https://x.com/shawmakesmagic/status/2044269097647779990) — 2026-04-15: Shaw (@shawmakesmagic) shares an 8-subagent codebase-cleanup prompt: (1) dedup/DRY, (2) consolidate shared type definitions, (3) find/remove unused code via knip, (4) untangle circular deps via madge, (5) replace weak types (any/unknown) with strong ones, (6) remove unnecessary try/catch defensive programming, plus two more. Practical agent-orchestration pattern for quality cleanup.
+- [Akshay](https://x.com/akshay_pachaar/status/2044329897603244093) — 2026-04-15: Akshay argues agent memory is three-dimensional, needing a relational store for provenance, a vector store for semantics, and a graph store for relationships, because flat vector search misses multi-hop connections (the "bridge" fact that links two entities). He points to Cognee, an open-source project that unifies all three behind four async calls (default embedded SQLite+LanceDB+Kuzu, swappable for Postgres/Qdrant/Neo4j).
+
+- [Garry Tan](https://x.com/garrytan/status/2044291663213015491) — 2026-04-15: Garry Tan releases GBrain v0.10.0, packaging his personal OpenClaw "brain" for others: refined RESOLVER.md and SOUL.md, ACLs for multi-user brain access, and 24 distinct "fat" skills shipped with e2e tests, evals, and unit tests.
+
+- [Shaw (spirit/acc)](https://x.com/shawmakesmagic/status/2044269097647779990) — 2026-04-15: Shaw shares a reusable prompt for cleaning up "vibecoded" codebases by spawning 8 parallel subagents, each owning one cleanup task: DRY/dedup, consolidating shared types, removing unused code (knip), untangling circular deps (madge), replacing weak types (any/unknown), stripping needless defensive try/catch, removing legacy/fallback paths, and cutting AI-slop comments. Each subagent researches, writes a critical assessment, then implements high-confidence fixes.
 
 - [mr-r0b0t](https://x.com/mr_r0b0t/status/2044199154004472009) — 2026-04-15: Amplifies a tip on a 3-tool agent web stack: SearXNG for candidate source discovery, Firecrawl for known-URL scraping, Camofox for JS/interaction browser fallback. Described as essential for any agent doing web search or scraping.
 
@@ -1402,7 +1406,7 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (94)
+### Skills & MCP (96)
 
 - [Hasan Toor](https://x.com/hasantoxr/status/2066247422502957197) — 2026-06-15: Highlights Headroom, a GitHub tool by Netflix engineer Tejas Chopra that compresses everything an AI agent reads before it reaches the LLM (tool outputs, logs, files, RAG chunks, code-search results, conversation history), claiming 60-95% fewer tokens for the same answers. Ships as a Python/TypeScript library, local proxy, and MCP server, with wrappers for Claude Code, Codex, Cursor, Aider, and Copilot.
 
@@ -1504,13 +1508,17 @@
 
 - [Sigrid Jin](https://x.com/realsigridjin/status/2046266374948069387) — 2026-04-21: Quote-tweet of Junghwan Na's writeup — Na got his GitHub banned after pushing 500+ commits across 100+ open-source repos in 72 hours using an AI harness. Sigrid pulls out the two highest-leverage principles from Na's method: (1) reproduce the bug locally or drop it, (2) read merge history instead of CONTRIBUTING.md. Jeremy flagged 'worth extracting a skill' — these are skill-worthy contribution-harness patterns.
 
-- [Alter Ego](https://x.com/alterego_eth/status/2045093809886020058) — 2026-04-17: Promo for Hermes Agent from Nous Research (team behind YaRN, Nomos, Psyche) — open, self-hosted agent pitched as a new standard for AI trading on Polymarket. Features: self-learns by writing itself skills after complex tasks, persistent memory (MEMORY.md + USER.md + SQLite), runs 24/7 on a VPS with Telegram alerts, closed learning loop that analyzes and improves every ~15 tool calls. Contrasted with 'static' OpenClaw. Example given: a weather-bot turned EV+Kelly Criterion trader scanning 20 cities.
+- [Daniel Miessler](https://x.com/danielmiessler/status/2045148852047827449) — 2026-04-18: Daniel Miessler recommends Interceptor (by Ronald Eddings) as the best browser-control system for AI agents he's used out of 100+, now the highest-value addition to his PAI harness.
+
+- [Alter Ego](https://x.com/alterego_eth/status/2045093809886020058) — 2026-04-17: Alter Ego promotes Nous Research's Hermes Agent, a self-hosted agent that writes its own skills after each task, keeps persistent memory (MEMORY.md/USER.md/SQLite), and runs 24/7 on a VPS with a closed learn-improve loop every ~15 tool calls, using it to build a self-learning Polymarket weather-trading bot. Heavy promotional/profit framing.
 
 - [Garry Tan](https://x.com/garrytan/status/2044479509874020852) — 2026-04-15: X article: "Resolvers: The Routing Table for Intelligence" — argues resolvers (context-routing rules: when task X appears, load document Y first) are the most important but invisible component of agent systems. Follows up on "Thin Harness, Fat Skills" framework. 21K views.
 
 - [Shann³](https://x.com/shannholmberg/status/2044413638388363272) — 2026-04-15: Built a 230-page Obsidian knowledge base (tweets, bookmarks, articles, notes) and connected it to every AI agent project using qmd (Tobi Lütke's tool) with hybrid BM25+vector search and LLM re-ranking. Any agent in any project now searches this global wiki before brainstorming or planning.
 
-- [Garry Tan](https://x.com/garrytan/status/2044291663213015491) — 2026-04-15: Garry Tan releases GBrain v0.10.0 — his personal 'OpenClaw' setup with RESOLVER.md, SOUL.md and ACLs for multi-user brain access. 24 distinct 'fat skills' with e2e tests, evals and unit tests.
+- [Akshay](https://x.com/akshay_pachaar/status/2044329897603244093) — 2026-04-15: Akshay argues agent memory is three-dimensional, needing a relational store for provenance, a vector store for semantics, and a graph store for relationships, because flat vector search misses multi-hop connections (the "bridge" fact that links two entities). He points to Cognee, an open-source project that unifies all three behind four async calls (default embedded SQLite+LanceDB+Kuzu, swappable for Postgres/Qdrant/Neo4j).
+
+- [Garry Tan](https://x.com/garrytan/status/2044291663213015491) — 2026-04-15: Garry Tan releases GBrain v0.10.0, packaging his personal OpenClaw "brain" for others: refined RESOLVER.md and SOUL.md, ACLs for multi-user brain access, and 24 distinct "fat" skills shipped with e2e tests, evals, and unit tests.
 
 - [Ihtesham Ali](https://x.com/ihtesham2005/status/2044056849272705246) — 2026-04-15: Aurogen — MIT-licensed 'OpenClaw' fork with true multi-agent, multi-instance orchestration in one deployment (github.com/UniRound-Tec/Aurogen). Modular agents/channels/providers/skills, web-panel setup (no config/CLI), ClaWHub integration, one-click installers, $50 Linux SBC minimum.
 
@@ -1676,11 +1684,11 @@
 
 - [Vox](https://x.com/voxyz_ai/status/2045899539526148193) — 2026-04-21: The #1 GitHub trending repo this week (44,465 stars) is a CLAUDE.md file distilling Andrej Karpathy's LLM coding pitfalls into 4 principles: (1) think before coding — ask when unsure, (2) simplicity first — minimum code, (3) surgical edits — only touch what's required, (4) goal-driven — translate fuzzy instructions into verifiable targets. Directly actionable as a CLAUDE.md system prompt.
 
-- [Alex Ker](https://x.com/thealexker/status/2045203785304232162) — 2026-04-18: Guide on optimizing your agent harness. Three levers: (1) keep config files lean enough for the model to reason over, (2) structure prompts with the R.P.I. framework so the model approaches problems like a staff engineer, (3) use subagents to keep the main context window clean. Ker contributes to Roo Code, DeepAgent CLI, and HumanLayer. Core argument: harnesses that compound output vs. harnesses that compound mistakes — judgment lives at the harness layer.
+- [Alex Ker](https://x.com/thealexker/status/2045203785304232162) — 2026-04-18: Alex Ker's deep-dive guide on optimizing AI coding harnesses: keep config/.md files lean and human-written (frontier LLMs hit a "dumb zone" past a few hundred instructions), use progressive disclosure for CLIs/skills/MCP tools, structure prompts with HumanLayer's Research-Plan-Implement (R.P.I.) framework, and use subagents (parallel fan-out for breadth, pipelines for depth) to keep the main context clean. Core argument: the harness, not the model, is where engineering judgment compounds, so commit to one and iterate.
 
 - [Millie Marconi](https://x.com/milliemarconnni/status/2044358003714097601) — 2026-04-15: Uses Claude as a full inversion engine running Charlie Munger's method — mapping every path to failure to make the path to success obvious by elimination. Shares 5 prompts for applying systematic inversion to any problem.
 
-- [Shaw (spirit/acc)](https://x.com/shawmakesmagic/status/2044269097647779990) — 2026-04-15: Shaw (@shawmakesmagic) shares an 8-subagent codebase-cleanup prompt: (1) dedup/DRY, (2) consolidate shared type definitions, (3) find/remove unused code via knip, (4) untangle circular deps via madge, (5) replace weak types (any/unknown) with strong ones, (6) remove unnecessary try/catch defensive programming, plus two more. Practical agent-orchestration pattern for quality cleanup.
+- [Shaw (spirit/acc)](https://x.com/shawmakesmagic/status/2044269097647779990) — 2026-04-15: Shaw shares a reusable prompt for cleaning up "vibecoded" codebases by spawning 8 parallel subagents, each owning one cleanup task: DRY/dedup, consolidating shared types, removing unused code (knip), untangling circular deps (madge), replacing weak types (any/unknown), stripping needless defensive try/catch, removing legacy/fallback paths, and cutting AI-slop comments. Each subagent researches, writes a critical assessment, then implements high-confidence fixes.
 
 - [klöss](https://x.com/kloss_xyz/status/2044169678961234282) — 2026-04-15: klöss proposes a 4-folder repo layout to stop agents hallucinating context: /audits (proof/verify), /docs (description/describe), /plans (intent/plan), /specs (law/enforce). Separate intent from proof from law from descriptions and Claude Code / Codex / Cursor agents stop guessing what files mean.
 
@@ -1760,7 +1768,11 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
 
-### Research (117)
+### Research (120)
+
+- [How To Prompt](https://x.com/howtoprompt__/status/2067176008445513800) — 2026-06-17: Engagement-farmed post claiming an open-source repo compresses 60M text chunks from 201GB to ~6GB (97% smaller) with no accuracy loss, running fully private on a standard laptop with no cloud or GPU — pitched as making vector databases obsolete. No repo link was surfaced in the post or visible replies, so the project would need to be located before the claim can be evaluated.
+
+- [Ahmad](https://x.com/theahmadosman/status/2066825976705646929) — 2026-06-17: Ahmad highlights VibeThinker 3B (built on Qwen 2.5), a 3B-parameter model he claims reaches Opus 4.5-level performance, quoting his own earlier prediction that Claude Code + Opus 4.5-quality models will run locally on a single RTX PRO 6000 before year-end. A signal on how fast small/efficient local models are closing the gap with frontier models.
 
 - [Avid](https://x.com/av1dlive/status/2066127265407336535) — 2026-06-15: Argues you can run capable AI models locally on a Mac for free using Apple's MLX stack — install mlx-lm, launch its server, and point any agent at localhost. Cites a ~23-minute talk from an Apple MLX-team engineer in which a local model builds a working SwiftUI app from a blank Xcode project in two minutes and then fixes a bug, with nothing leaving the machine. Quote-tweets a piece on the ThinkStation PGX local-inference box.
 
@@ -1900,15 +1912,17 @@
 
 - [Akshay](https://x.com/akshay_pachaar/status/2046151867177308181) — 2026-04-20: Akshay summarizes Google DeepMind's 'AI Agent Traps' paper — the first systematic framework for adversarial content engineered to hijack AI agents browsing the web. Maps six attack surfaces: Content Injection (perception: invisible CSS, hidden HTML, steganographic payloads in images — HTML injections hijack web agents in up to 86% of scenarios), Semantic Manipulation (reasoning: biased framing weaponizing cognitive biases), Cognitive State Traps (memory: RAG poisoning, long-term memory corruption), plus three more not visible in the truncated scrape. High-priority reading for anyone building agents that browse arbitrary web content.
 
-- [阿绎 AYi](https://x.com/ayi_ainotes/status/2045874192155824616) — 2026-04-20: Thread (translated from Chinese) hyping an open-source project 'OpenMythos' by a 22-year-old claimed to reverse-engineer Anthropic's Claude as a 'recurrent deep Transformer' — same weights loop through 16 forward passes, with thinking happening silently in hidden space instead of visible CoT tokens. Claims a 770B-param recurrent model matches a 1.3T plain model. Speculative architecture claim; treat as unverified.
+- [AYi](https://x.com/ayi_ainotes/status/2045874192155824616) — 2026-04-20: AYi (translated from Chinese) recaps OpenMythos, an open-source first-principles reconstruction of Anthropic's "Claude Mythos" as a looped/recurrent transformer with MoE routing: the same weights run ~16x per forward pass so reasoning happens silently in latent space. Argues a 770B recurrent model can match a 1.3T standard model and that future scaling competes on loop-count rather than parameter count.
 
-- [Akshay](https://x.com/akshay_pachaar/status/2045404494641733962) — 2026-04-18: Summary of UCL paper 'Dive into Claude Code' (arXiv:2604.14228) reverse-engineering the leaked Claude Code source. Only 1.6% of the codebase is AI decision logic; 98.4% is operational infrastructure — permission gates, tool routing, context compaction, recovery logic, session persistence. Core loop is a simple while-true (call model, run tools, repeat). Permission system has 7 modes plus an ML classifier. Contrasts with LangGraph's explicit state machines and Devin's heavy planners — Claude Code invests engineering effort in the harness while giving the model maximum decision latitude. Punchline: the harness is the differentiator, not the model.
+- [Akshay](https://x.com/akshay_pachaar/status/2045404494641733962) — 2026-04-18: Akshay summarizes a UCL paper (arXiv:2604.14228) dissecting Claude Code's architecture: only 1.6% of the codebase is AI decision logic while 98.4% is operational harness (permission gates with 7 modes, tool routing, a 5-layer context compaction pipeline, subagents that return only summaries). Core thesis: as frontier models converge on raw coding ability, harness quality, not the model, becomes the differentiator.
 
-- [Eric Hartford](https://x.com/quixiai/status/2044952124568527298) — 2026-04-18: Response to Anthropic's Project Glasswing / Claude Mythos Preview announcement, where Anthropic claimed the model was too dangerous to release after finding thousands of zero-days (27-year-old OpenBSD bug, 16-year-old FFmpeg bug). Hartford argues the real innovation is the workflow, not the model: rank every file by attack surface, fan out hundreds of parallel agents each scoped to one file, use crash oracles (AddressSanitizer, UBSan) as ground truth. He open-sourced 'Clearwing' (MIT licensed) at github.com/Lazarus-AI/clearwing — Qwen3.5 finetuned to Western alignment — so defenders don't have to wait for access to a gated model.
+- [Eric Hartford](https://x.com/quixiai/status/2044952124568527298) — 2026-04-18: Eric Hartford releases Clearwing, an MIT-licensed open-source vulnerability-discovery engine that reproduces Anthropic's "Project Glasswing" results with any LLM. His argument: the real innovation isn't the gated Claude Mythos model but the model-agnostic pipeline, rank files by attack surface, fan out hundreds of file-scoped agents, use crash oracles (AddressSanitizer/UBSan) as ground truth, and run a verification agent to filter noise. Reproduced findings with OpenAI Codex 5.4 and a Qwen3.5 finetune.
+
+- [Hamudi](https://x.com/hamudinaanaa/status/2044872907072164304) — 2026-04-17: Hamudi ties into Sequoia's "$1T thesis" that AI sells outcomes (work) rather than software tools, introducing "Outcome Primitives" as a way to measure economic outcomes, citing a published paper tracking 1,300 agents over 21 days that created $32M in value (jobs secured, $200k grants won, e-commerce shops shipped). Framing: copilots compete on software margins and lose to big labs; outcome engines compete on services margins.
 
 - [Yoonho Lee](https://x.com/yoonholeee/status/2044442372864700510) — 2026-04-15: Released code for Meta-Harness — a method to autonomously improve LLM evaluation harnesses on problems humans are actively working on, solving long-horizon credit assignment over code, traces, and scores. Repo at github.com/stanford-iris-lab/meta-harness with ONBOARDING.md for agent-guided setup.
 
-- [Akshay](https://x.com/akshay_pachaar/status/2044329897603244093) — 2026-04-15: Akshay argues agent memory is three-dimensional, not just vector. Example: 'Was Alice's project affected by Tuesday's outage?' — vector search finds Alice + Tuesday facts but misses the bridging Project-Atlas-uses-PostgreSQL fact. Proper stack needs relational (provenance), vector (semantic), and graph (relationships) stores. Any multi-hop business question breaks flat retrieval.
+- [Akshay](https://x.com/akshay_pachaar/status/2044329897603244093) — 2026-04-15: Akshay argues agent memory is three-dimensional, needing a relational store for provenance, a vector store for semantics, and a graph store for relationships, because flat vector search misses multi-hop connections (the "bridge" fact that links two entities). He points to Cognee, an open-source project that unifies all three behind four async calls (default embedded SQLite+LanceDB+Kuzu, swappable for Postgres/Qdrant/Neo4j).
 
 - [0xSero](https://x.com/0xsero/status/2044165332928213243) — 2026-04-15: Guide to running large LLMs on limited hardware: use REAPs (50% savings), quantization (AWQ/GPTQ/W4A16/FP8 for fast inference; GGUF/EXL3 for compatibility; MLX for Apple silicon), and 8-bit KV cache (50-75% savings). Practical tips for local AI deployment.
 
@@ -1998,6 +2012,8 @@
 
 ### Industry (75)
 
+- [Ahmad](https://x.com/theahmadosman/status/2066825976705646929) — 2026-06-17: Ahmad highlights VibeThinker 3B (built on Qwen 2.5), a 3B-parameter model he claims reaches Opus 4.5-level performance, quoting his own earlier prediction that Claude Code + Opus 4.5-quality models will run locally on a single RTX PRO 6000 before year-end. A signal on how fast small/efficient local models are closing the gap with frontier models.
+
 - [Marie Haynes](https://x.com/marie_haynes/status/2065531158356717721) — 2026-06-13: Flags Google's new Open Knowledge Format (OKF): a standardized way to store information as a directory of interlinked markdown files that acts as a living wiki agents can query and edit, which the author thinks could replace Notion or Obsidian. References Google Cloud's blog post and the spec at github.com/GoogleCloudPlatform/knowledge-catalog (okf/SPEC.md), and notes feeding both links to Antigravity to brainstorm project uses.
 
 - [Rahul](https://x.com/sairahul1/status/2063544956158185927) — 2026-06-08: Long-form X article framing 'Harness Engineering' as the most important AI discipline of 2026 — OpenAI shipped 1M lines of production code in Feb 2026 using agents wrapped in a reliable system (the 'harness'); Anthropic published 3 papers on it; ThoughtWorks formalized a framework; Philipp Schmid called it the most important discipline of 2026. Article walks through what a harness is and the mental models needed to actually use it. 1.1M views — the term is breaking out of AI-infra circles fast.
@@ -2082,15 +2098,13 @@
 
 - [Aakash Gupta](https://x.com/aakashgupta/status/2046371351016161745) — 2026-04-21: Essay arguing Yann LeCun left Meta because Zuck wouldn't bet the company on JEPA, then his group shipped the first end-to-end JEPA trained from raw pixels — 15M parameters, single GPU, a few hours. Frames it as a Xerox PARC pattern: Meta had the architecture, dissolved the robotics team, and let the breakthrough walk out the door while humanoid robotics competitors (Figure AI, Tesla Optimus, World Labs) burn capital on expensive foundation-model pipelines. Jeremy flagged 'feels like correspondence' (thoughtful essay style).
 
-- [Garry Tan](https://x.com/garrytan/status/2045427057656729985) — 2026-04-19: Launch of GBrain v0.11 with 'Minions' — a BullMQ-based queue/jobs system running on GBrain's Postgres/PGLite, built to replace OpenClaw's subagents that kept timing out. Tan claims Minions are 10x faster and more reliable for OpenClaw/GBrain agent setups.
+- [Kevin Simback](https://x.com/ksimback/status/2045120939680038923) — 2026-04-18: Kevin Simback shares his article "The AI Agent Moat Is Real, but Narrower Than You Think," arguing that the durable moat in the agent space isn't the harness itself but lies elsewhere, after going deep on where to invest and build in the agent space.
 
-- [Kevin Simback](https://x.com/ksimback/status/2045120939680038923) — 2026-04-18: Self-quote-tweet pointing back to Simback's Apr 16 article 'The AI Agent Moat Is Real, but Narrower Than You Think.' Thesis: moats in the agent space aren't in the harness itself. Simback has been looking at where to invest and build in agents over four months and is narrowing his view of where defensibility actually lives.
+- [PolyArb](https://x.com/usepolyarb/status/2045109166599963026) — 2026-04-18: [Post unavailable — page doesn't exist]
 
-- [PolyArb](https://x.com/usepolyarb/status/2045109166599963026) — 2026-04-18: Prediction-markets arbitrage infrastructure launch — not AI-focused. Six years of derivatives execution (FX arb → crypto perps → prop trading); now targeting prediction markets ($44B in 2025, projected $1T by 2027). Technical breakdown of multi-venue arb, unified oracle, and execution engine. Included because it landed in Jeremy's link stream.
+- [Eric Hartford](https://x.com/quixiai/status/2044952124568527298) — 2026-04-18: Eric Hartford releases Clearwing, an MIT-licensed open-source vulnerability-discovery engine that reproduces Anthropic's "Project Glasswing" results with any LLM. His argument: the real innovation isn't the gated Claude Mythos model but the model-agnostic pipeline, rank files by attack surface, fan out hundreds of file-scoped agents, use crash oracles (AddressSanitizer/UBSan) as ground truth, and run a verification agent to filter noise. Reproduced findings with OpenAI Codex 5.4 and a Qwen3.5 finetune.
 
-- [Eric Hartford](https://x.com/quixiai/status/2044952124568527298) — 2026-04-18: Response to Anthropic's Project Glasswing / Claude Mythos Preview announcement, where Anthropic claimed the model was too dangerous to release after finding thousands of zero-days (27-year-old OpenBSD bug, 16-year-old FFmpeg bug). Hartford argues the real innovation is the workflow, not the model: rank every file by attack surface, fan out hundreds of parallel agents each scoped to one file, use crash oracles (AddressSanitizer, UBSan) as ground truth. He open-sourced 'Clearwing' (MIT licensed) at github.com/Lazarus-AI/clearwing — Qwen3.5 finetuned to Western alignment — so defenders don't have to wait for access to a gated model.
-
-- [Hamudi](https://x.com/hamudinaanaa/status/2044872907072164304) — 2026-04-17: Quote-tweet on Sequoia's $1T 'sell work, not software' thesis. Hamudi announces a paper on measuring economic outcomes from AI agents — 'Outcome Primitives.' Tracked 1,300 agents over 21 days generating $32M of economic value: jobs secured, $200k grants won, e-commerce shops shipped. Framing: copilots compete on software margins (losing to labs), outcome-delivery products compete on services margins (transforming industries).
+- [Hamudi](https://x.com/hamudinaanaa/status/2044872907072164304) — 2026-04-17: Hamudi ties into Sequoia's "$1T thesis" that AI sells outcomes (work) rather than software tools, introducing "Outcome Primitives" as a way to measure economic outcomes, citing a published paper tracking 1,300 agents over 21 days that created $32M in value (jobs secured, $200k grants won, e-commerce shops shipped). Framing: copilots compete on software margins and lose to big labs; outcome engines compete on services margins.
 
 - [Garry Tan](https://x.com/garrytan/status/2044059516497711522) — 2026-04-15: Garry Tan endorses Alfred Lin's (Sequoia) article 'Heat Seeking Missile for Pain' — on founders who actively seek out the hairiest, gnarliest problems and surgically blow them up. References Zipline's Keller.
 
@@ -2148,7 +2162,7 @@
 
 - [Dante O. Cuales](https://x.com/danteocualesjr/status/1957204427909321027) — 2025-08-18: Reply to a thread about AI engineering being easy to learn — argues the 'intimidation factor is mostly artificial' since most AI engineering is API orchestration, prompt optimization, and data pipeline work. The hard parts are already abstracted away.
 
-### Management (96)
+### Management (95)
 
 - [Jaynit](https://x.com/jaynitx/status/2066506535250092378) — 2026-06-16: Thread relaying Elon Musk's 5-step engineering 'algorithm': (1) make the requirements less dumb / question them, (2) try to delete the part or process step entirely (if you aren't forced to add ~10% back, you didn't delete enough), (3) simplify and optimize, (4) accelerate cycle time, (5) automate — with the warning that the most common mistake of smart engineers is optimizing something that shouldn't exist.
 
@@ -2216,11 +2230,9 @@
 
 - [Ihtesham Ali](https://x.com/ihtesham2005/status/2046197374855582157) — 2026-04-21: Writeup of George Pólya's 1945 book 'How to Solve It' — the four-step problem-solving framework (understand, plan, execute, look back). Central heuristic: if you can't solve the proposed problem, solve a simpler related one first. Jeremy's note 'important for planner?' — relevant for AI agent planning/decomposition patterns.
 
-- [Kevin Simback](https://x.com/ksimback/status/2045120939680038923) — 2026-04-18: Self-quote-tweet pointing back to Simback's Apr 16 article 'The AI Agent Moat Is Real, but Narrower Than You Think.' Thesis: moats in the agent space aren't in the harness itself. Simback has been looking at where to invest and build in agents over four months and is narrowing his view of where defensibility actually lives.
-
 - [0xSero](https://x.com/0xsero/status/2044879665001595263) — 2026-04-17: 0xSero (quote-tweeting Sarah Chieng's article 'Single-agent AI coding is a nightmare for engineers') says he's gone 180 on multi-agents/subagents after analyzing hundreds of AI coding agent sessions — they actually help a lot. Practitioner's change-of-mind about orchestration.
 
-- [Hamudi](https://x.com/hamudinaanaa/status/2044872907072164304) — 2026-04-17: Quote-tweet on Sequoia's $1T 'sell work, not software' thesis. Hamudi announces a paper on measuring economic outcomes from AI agents — 'Outcome Primitives.' Tracked 1,300 agents over 21 days generating $32M of economic value: jobs secured, $200k grants won, e-commerce shops shipped. Framing: copilots compete on software margins (losing to labs), outcome-delivery products compete on services margins (transforming industries).
+- [Hamudi](https://x.com/hamudinaanaa/status/2044872907072164304) — 2026-04-17: Hamudi ties into Sequoia's "$1T thesis" that AI sells outcomes (work) rather than software tools, introducing "Outcome Primitives" as a way to measure economic outcomes, citing a published paper tracking 1,300 agents over 21 days that created $32M in value (jobs secured, $200k grants won, e-commerce shops shipped). Framing: copilots compete on software margins and lose to big labs; outcome engines compete on services margins.
 
 - [Garry Tan](https://x.com/garrytan/status/2044059516497711522) — 2026-04-15: Garry Tan endorses Alfred Lin's (Sequoia) article 'Heat Seeking Missile for Pain' — on founders who actively seek out the hairiest, gnarliest problems and surgically blow them up. References Zipline's Keller.
 
@@ -2342,7 +2354,9 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
 
-### Questionable (93)
+### Questionable (94)
+
+- [How To Prompt](https://x.com/howtoprompt__/status/2067176008445513800) — 2026-06-17: Engagement-farmed post claiming an open-source repo compresses 60M text chunks from 201GB to ~6GB (97% smaller) with no accuracy loss, running fully private on a standard laptop with no cloud or GPU — pitched as making vector databases obsolete. No repo link was surfaced in the post or visible replies, so the project would need to be located before the claim can be evaluated.
 
 - [Jaynit](https://x.com/jaynitx/status/2066506535250092378) — 2026-06-16: Thread relaying Elon Musk's 5-step engineering 'algorithm': (1) make the requirements less dumb / question them, (2) try to delete the part or process step entirely (if you aren't forced to add ~10% back, you didn't delete enough), (3) simplify and optimize, (4) accelerate cycle time, (5) automate — with the warning that the most common mistake of smart engineers is optimizing something that shouldn't exist.
 
@@ -2482,7 +2496,7 @@
 
 - [Simplifying AI](https://x.com/simplifyinai/status/2046271932035645599) — 2026-04-21: Summary of Microsoft's MEMENTO paper: instead of growing the KV cache to fit long reasoning chains, train the model to break reasoning into blocks and emit dense compressed 'memento' summaries between them, then drop the raw tokens. Framed as 'the secret isn't remembering everything — it's knowing what to forget.' Engagement-farming tone but real underlying paper.
 
-- [阿绎 AYi](https://x.com/ayi_ainotes/status/2045874192155824616) — 2026-04-20: Thread (translated from Chinese) hyping an open-source project 'OpenMythos' by a 22-year-old claimed to reverse-engineer Anthropic's Claude as a 'recurrent deep Transformer' — same weights loop through 16 forward passes, with thinking happening silently in hidden space instead of visible CoT tokens. Claims a 770B-param recurrent model matches a 1.3T plain model. Speculative architecture claim; treat as unverified.
+- [Alter Ego](https://x.com/alterego_eth/status/2045093809886020058) — 2026-04-17: Alter Ego promotes Nous Research's Hermes Agent, a self-hosted agent that writes its own skills after each task, keeps persistent memory (MEMORY.md/USER.md/SQLite), and runs 24/7 on a VPS with a closed learn-improve loop every ~15 tool calls, using it to build a self-learning Polymarket weather-trading bot. Heavy promotional/profit framing.
 
 - [Punisher](https://x.com/0x_punisher/status/2044100729133019416) — 2026-04-15: [Not AI] Polymarket 'sweeper bot' guide claiming $525/day passive income by exploiting post-resolution market inefficiencies. Engagement-farming crypto content — no AI/dev relevance.
 
@@ -2564,7 +2578,7 @@
 
 - [Darshak Rana](https://x.com/thedarshakrana/status/2049151671692136778) — 2026-04-30: Long-form personal development X article ('Your Next 5 Years Will Be an Exact Copy of Your Last 5') riffing on the marshmallow test and the idea that personality is a set of learned thought patterns rather than fixed identity. 1.1M views — engagement-farming framing; not AI-related but Jeremy flagged it.
 
-- [PolyArb](https://x.com/usepolyarb/status/2045109166599963026) — 2026-04-18: Prediction-markets arbitrage infrastructure launch — not AI-focused. Six years of derivatives execution (FX arb → crypto perps → prop trading); now targeting prediction markets ($44B in 2025, projected $1T by 2027). Technical breakdown of multi-venue arb, unified oracle, and execution engine. Included because it landed in Jeremy's link stream.
+- [PolyArb](https://x.com/usepolyarb/status/2045109166599963026) — 2026-04-18: [Post unavailable — page doesn't exist]
 
 - [Erick](https://x.com/ericksky/status/2044225008419922270) — 2026-04-15: [Post unavailable — login wall or deleted]
 
@@ -2704,6 +2718,15 @@
 ## Full Chronological List
 
 ### Jun 2026
+
+- **2026-06-17** | [How To Prompt](https://x.com/howtoprompt__/status/2067176008445513800) | research, questionable
+  Engagement-farmed post claiming an open-source repo compresses 60M text chunks from 201GB to ~6GB (97% smaller) with no accuracy loss, running fully private on a standard laptop with no cloud or GPU — pitched as making vector databases obsolete. No repo link was surfaced in the post or visible replies, so the project would need to be located before the claim can be evaluated.
+
+- **2026-06-17** | [Viv](https://x.com/vtrivedy10/status/2066954487466459163) | agent-design, dev-practices
+  Viv amplifies Sydney Runkle's X article 'The Art of Loop Engineering,' which argues reliable agents need more than a good model — they need a carefully engineered hierarchy of loops. Viv's key takeaway: verification is a critical primitive; it's worth spending days to weeks making the distribution of desired agent outcomes verifiable in practice by your system, especially for non-slop, semi-long-horizon work.
+
+- **2026-06-17** | [Ahmad](https://x.com/theahmadosman/status/2066825976705646929) | research, industry
+  Ahmad highlights VibeThinker 3B (built on Qwen 2.5), a 3B-parameter model he claims reaches Opus 4.5-level performance, quoting his own earlier prediction that Claude Code + Opus 4.5-quality models will run locally on a single RTX PRO 6000 before year-end. A signal on how fast small/efficient local models are closing the gap with frontier models.
 
 - **2026-06-16** | [Jaynit](https://x.com/jaynitx/status/2066506535250092378) | management, dev-practices, questionable
   Thread relaying Elon Musk's 5-step engineering 'algorithm': (1) make the requirements less dumb / question them, (2) try to delete the part or process step entirely (if you aren't forced to add ~10% back, you didn't delete enough), (3) simplify and optimize, (4) accelerate cycle time, (5) automate — with the warning that the most common mistake of smart engineers is optimizing something that shouldn't exist.
@@ -3493,40 +3516,40 @@
   Akshay summarizes Google DeepMind's 'AI Agent Traps' paper — the first systematic framework for adversarial content engineered to hijack AI agents browsing the web. Maps six attack surfaces: Content Injection (perception: invisible CSS, hidden HTML, steganographic payloads in images — HTML injections hijack web agents in up to 86% of scenarios), Semantic Manipulation (reasoning: biased framing weaponizing cognitive biases), Cognitive State Traps (memory: RAG poisoning, long-term memory corruption), plus three more not visible in the truncated scrape. High-priority reading for anyone building agents that browse arbitrary web content.
 
 - **2026-04-20** | [Kenneth Auchenberg](https://x.com/auchenberg/status/2045940742678368570) | agent-design
-  Short quote-tweet on Aparna Dhinakaran's article 'Sandboxes Are the Servers of the Harness Era' — Auchenberg frames swarms/multi-agent systems as 'harnesses managing harnesses.' The cited piece argues the harness is the application and the sandbox is the server (compute, filesystem, persistent state).
+  Kenneth Auchenberg highlights an article arguing that in the "harness era" of AI agents the harness is the application and the sandbox is the server, framing swarms as harnesses managing harnesses.
 
-- **2026-04-20** | [阿绎 AYi](https://x.com/ayi_ainotes/status/2045874192155824616) | research, claude-code, questionable
-  Thread (translated from Chinese) hyping an open-source project 'OpenMythos' by a 22-year-old claimed to reverse-engineer Anthropic's Claude as a 'recurrent deep Transformer' — same weights loop through 16 forward passes, with thinking happening silently in hidden space instead of visible CoT tokens. Claims a 770B-param recurrent model matches a 1.3T plain model. Speculative architecture claim; treat as unverified.
+- **2026-04-20** | [AYi](https://x.com/ayi_ainotes/status/2045874192155824616) | research, claude-code
+  AYi (translated from Chinese) recaps OpenMythos, an open-source first-principles reconstruction of Anthropic's "Claude Mythos" as a looped/recurrent transformer with MoE routing: the same weights run ~16x per forward pass so reasoning happens silently in latent space. Argues a 770B recurrent model can match a 1.3T standard model and that future scaling competes on loop-count rather than parameter count.
 
-- **2026-04-19** | [Garry Tan](https://x.com/garrytan/status/2045427057656729985) | agent-design, dev-practices, industry
-  Launch of GBrain v0.11 with 'Minions' — a BullMQ-based queue/jobs system running on GBrain's Postgres/PGLite, built to replace OpenClaw's subagents that kept timing out. Tan claims Minions are 10x faster and more reliable for OpenClaw/GBrain agent setups.
+- **2026-04-19** | [Garry Tan](https://x.com/garrytan/status/2045427057656729985) | agent-design, dev-practices
+  Garry Tan launches GBrain v0.11 with "Minions," a BullMQ-style queue/jobs system built on Postgres/PGLite to make OpenClaw/GBrain subagents faster and more reliable instead of timing out.
 
 - **2026-04-18** | [Akshay](https://x.com/akshay_pachaar/status/2045404494641733962) | agent-design, claude-code, research
-  Summary of UCL paper 'Dive into Claude Code' (arXiv:2604.14228) reverse-engineering the leaked Claude Code source. Only 1.6% of the codebase is AI decision logic; 98.4% is operational infrastructure — permission gates, tool routing, context compaction, recovery logic, session persistence. Core loop is a simple while-true (call model, run tools, repeat). Permission system has 7 modes plus an ML classifier. Contrasts with LangGraph's explicit state machines and Devin's heavy planners — Claude Code invests engineering effort in the harness while giving the model maximum decision latitude. Punchline: the harness is the differentiator, not the model.
+  Akshay summarizes a UCL paper (arXiv:2604.14228) dissecting Claude Code's architecture: only 1.6% of the codebase is AI decision logic while 98.4% is operational harness (permission gates with 7 modes, tool routing, a 5-layer context compaction pipeline, subagents that return only summaries). Core thesis: as frontier models converge on raw coding ability, harness quality, not the model, becomes the differentiator.
 
-- **2026-04-18** | [Alex Ker](https://x.com/thealexker/status/2045203785304232162) | agent-design, prompting, dev-practices
-  Guide on optimizing your agent harness. Three levers: (1) keep config files lean enough for the model to reason over, (2) structure prompts with the R.P.I. framework so the model approaches problems like a staff engineer, (3) use subagents to keep the main context window clean. Ker contributes to Roo Code, DeepAgent CLI, and HumanLayer. Core argument: harnesses that compound output vs. harnesses that compound mistakes — judgment lives at the harness layer.
+- **2026-04-18** | [Alex Ker](https://x.com/thealexker/status/2045203785304232162) | agent-design, prompting, dev-practices, claude-code
+  Alex Ker's deep-dive guide on optimizing AI coding harnesses: keep config/.md files lean and human-written (frontier LLMs hit a "dumb zone" past a few hundred instructions), use progressive disclosure for CLIs/skills/MCP tools, structure prompts with HumanLayer's Research-Plan-Implement (R.P.I.) framework, and use subagents (parallel fan-out for breadth, pipelines for depth) to keep the main context clean. Core argument: the harness, not the model, is where engineering judgment compounds, so commit to one and iterate.
 
-- **2026-04-18** | [Daniel Miessler](https://x.com/danielmiessler/status/2045148852047827449) | agent-design, claude-code
-  Miessler endorses 'Interceptor' by @ronaldeddings as the best Browser Control System he's used for agents (out of 100+ tools). He says it's added the most value to his PAI (Personal AI) harness recently. Short recommendation tweet — no link in the post body but the tool is attributed to Ronald Eddings.
+- **2026-04-18** | [Daniel Miessler](https://x.com/danielmiessler/status/2045148852047827449) | agent-design, skills-mcp
+  Daniel Miessler recommends Interceptor (by Ronald Eddings) as the best browser-control system for AI agents he's used out of 100+, now the highest-value addition to his PAI harness.
 
-- **2026-04-18** | [Kevin Simback](https://x.com/ksimback/status/2045120939680038923) | agent-design, industry, management
-  Self-quote-tweet pointing back to Simback's Apr 16 article 'The AI Agent Moat Is Real, but Narrower Than You Think.' Thesis: moats in the agent space aren't in the harness itself. Simback has been looking at where to invest and build in agents over four months and is narrowing his view of where defensibility actually lives.
+- **2026-04-18** | [Kevin Simback](https://x.com/ksimback/status/2045120939680038923) | industry, agent-design
+  Kevin Simback shares his article "The AI Agent Moat Is Real, but Narrower Than You Think," arguing that the durable moat in the agent space isn't the harness itself but lies elsewhere, after going deep on where to invest and build in the agent space.
 
 - **2026-04-18** | [PolyArb](https://x.com/usepolyarb/status/2045109166599963026) | industry, general
-  Prediction-markets arbitrage infrastructure launch — not AI-focused. Six years of derivatives execution (FX arb → crypto perps → prop trading); now targeting prediction markets ($44B in 2025, projected $1T by 2027). Technical breakdown of multi-venue arb, unified oracle, and execution engine. Included because it landed in Jeremy's link stream.
+  [Post unavailable — page doesn't exist]
 
-- **2026-04-18** | [Eric Hartford](https://x.com/quixiai/status/2044952124568527298) | research, agent-design, industry
-  Response to Anthropic's Project Glasswing / Claude Mythos Preview announcement, where Anthropic claimed the model was too dangerous to release after finding thousands of zero-days (27-year-old OpenBSD bug, 16-year-old FFmpeg bug). Hartford argues the real innovation is the workflow, not the model: rank every file by attack surface, fan out hundreds of parallel agents each scoped to one file, use crash oracles (AddressSanitizer, UBSan) as ground truth. He open-sourced 'Clearwing' (MIT licensed) at github.com/Lazarus-AI/clearwing — Qwen3.5 finetuned to Western alignment — so defenders don't have to wait for access to a gated model.
+- **2026-04-18** | [Eric Hartford](https://x.com/quixiai/status/2044952124568527298) | research, agent-design, dev-practices, industry
+  Eric Hartford releases Clearwing, an MIT-licensed open-source vulnerability-discovery engine that reproduces Anthropic's "Project Glasswing" results with any LLM. His argument: the real innovation isn't the gated Claude Mythos model but the model-agnostic pipeline, rank files by attack surface, fan out hundreds of file-scoped agents, use crash oracles (AddressSanitizer/UBSan) as ground truth, and run a verification agent to filter noise. Reproduced findings with OpenAI Codex 5.4 and a Qwen3.5 finetune.
 
-- **2026-04-17** | [Alter Ego](https://x.com/alterego_eth/status/2045093809886020058) | agent-design, skills-mcp
-  Promo for Hermes Agent from Nous Research (team behind YaRN, Nomos, Psyche) — open, self-hosted agent pitched as a new standard for AI trading on Polymarket. Features: self-learns by writing itself skills after complex tasks, persistent memory (MEMORY.md + USER.md + SQLite), runs 24/7 on a VPS with Telegram alerts, closed learning loop that analyzes and improves every ~15 tool calls. Contrasted with 'static' OpenClaw. Example given: a weather-bot turned EV+Kelly Criterion trader scanning 20 cities.
+- **2026-04-17** | [Alter Ego](https://x.com/alterego_eth/status/2045093809886020058) | agent-design, skills-mcp, questionable
+  Alter Ego promotes Nous Research's Hermes Agent, a self-hosted agent that writes its own skills after each task, keeps persistent memory (MEMORY.md/USER.md/SQLite), and runs 24/7 on a VPS with a closed learn-improve loop every ~15 tool calls, using it to build a self-learning Polymarket weather-trading bot. Heavy promotional/profit framing.
 
 - **2026-04-17** | [0xSero](https://x.com/0xsero/status/2044879665001595263) | agent-design, claude-code, management
   0xSero (quote-tweeting Sarah Chieng's article 'Single-agent AI coding is a nightmare for engineers') says he's gone 180 on multi-agents/subagents after analyzing hundreds of AI coding agent sessions — they actually help a lot. Practitioner's change-of-mind about orchestration.
 
-- **2026-04-17** | [Hamudi](https://x.com/hamudinaanaa/status/2044872907072164304) | industry, management, agent-design
-  Quote-tweet on Sequoia's $1T 'sell work, not software' thesis. Hamudi announces a paper on measuring economic outcomes from AI agents — 'Outcome Primitives.' Tracked 1,300 agents over 21 days generating $32M of economic value: jobs secured, $200k grants won, e-commerce shops shipped. Framing: copilots compete on software margins (losing to labs), outcome-delivery products compete on services margins (transforming industries).
+- **2026-04-17** | [Hamudi](https://x.com/hamudinaanaa/status/2044872907072164304) | industry, agent-design, management, research
+  Hamudi ties into Sequoia's "$1T thesis" that AI sells outcomes (work) rather than software tools, introducing "Outcome Primitives" as a way to measure economic outcomes, citing a published paper tracking 1,300 agents over 21 days that created $32M in value (jobs secured, $200k grants won, e-commerce shops shipped). Framing: copilots compete on software margins and lose to big labs; outcome engines compete on services margins.
 
 - **2026-04-15** | [Garry Tan](https://x.com/garrytan/status/2044479509874020852) | agent-design, skills-mcp
   X article: "Resolvers: The Routing Table for Intelligence" — argues resolvers (context-routing rules: when task X appears, load document Y first) are the most important but invisible component of agent systems. Follows up on "Thin Harness, Fat Skills" framework. 21K views.
@@ -3546,17 +3569,17 @@
 - **2026-04-15** | [Millie Marconi](https://x.com/milliemarconnni/status/2044358003714097601) | prompting, claude-code
   Uses Claude as a full inversion engine running Charlie Munger's method — mapping every path to failure to make the path to success obvious by elimination. Shares 5 prompts for applying systematic inversion to any problem.
 
-- **2026-04-15** | [Akshay](https://x.com/akshay_pachaar/status/2044329897603244093) | agent-design, research
-  Akshay argues agent memory is three-dimensional, not just vector. Example: 'Was Alice's project affected by Tuesday's outage?' — vector search finds Alice + Tuesday facts but misses the bridging Project-Atlas-uses-PostgreSQL fact. Proper stack needs relational (provenance), vector (semantic), and graph (relationships) stores. Any multi-hop business question breaks flat retrieval.
+- **2026-04-15** | [Akshay](https://x.com/akshay_pachaar/status/2044329897603244093) | agent-design, research, skills-mcp, dev-practices
+  Akshay argues agent memory is three-dimensional, needing a relational store for provenance, a vector store for semantics, and a graph store for relationships, because flat vector search misses multi-hop connections (the "bridge" fact that links two entities). He points to Cognee, an open-source project that unifies all three behind four async calls (default embedded SQLite+LanceDB+Kuzu, swappable for Postgres/Qdrant/Neo4j).
 
-- **2026-04-15** | [Europurr](https://x.com/vrloom/status/2044314974101877175) | agent-design, claude-code
-  Europurr switched from 'OpenClaw' to Hermes and is setting up Hindsight memory (@NousResearch) — says it's light-years ahead. Signal about Nous Research's memory/agent stack being viable alternative.
+- **2026-04-15** | [Europurr](https://x.com/vrloom/status/2044314974101877175) | agent-design
+  Europurr reports switching from OpenClaw to Nous Research's Hermes agent and setting up its "Hindsight" memory, calling it light-years ahead of OpenClaw.
 
-- **2026-04-15** | [Garry Tan](https://x.com/garrytan/status/2044291663213015491) | claude-code, skills-mcp, agent-design
-  Garry Tan releases GBrain v0.10.0 — his personal 'OpenClaw' setup with RESOLVER.md, SOUL.md and ACLs for multi-user brain access. 24 distinct 'fat skills' with e2e tests, evals and unit tests.
+- **2026-04-15** | [Garry Tan](https://x.com/garrytan/status/2044291663213015491) | agent-design, skills-mcp, dev-practices
+  Garry Tan releases GBrain v0.10.0, packaging his personal OpenClaw "brain" for others: refined RESOLVER.md and SOUL.md, ACLs for multi-user brain access, and 24 distinct "fat" skills shipped with e2e tests, evals, and unit tests.
 
-- **2026-04-15** | [Shaw (spirit/acc)](https://x.com/shawmakesmagic/status/2044269097647779990) | claude-code, agent-design, dev-practices, prompting
-  Shaw (@shawmakesmagic) shares an 8-subagent codebase-cleanup prompt: (1) dedup/DRY, (2) consolidate shared type definitions, (3) find/remove unused code via knip, (4) untangle circular deps via madge, (5) replace weak types (any/unknown) with strong ones, (6) remove unnecessary try/catch defensive programming, plus two more. Practical agent-orchestration pattern for quality cleanup.
+- **2026-04-15** | [Shaw (spirit/acc)](https://x.com/shawmakesmagic/status/2044269097647779990) | prompting, dev-practices, agent-design
+  Shaw shares a reusable prompt for cleaning up "vibecoded" codebases by spawning 8 parallel subagents, each owning one cleanup task: DRY/dedup, consolidating shared types, removing unused code (knip), untangling circular deps (madge), replacing weak types (any/unknown), stripping needless defensive try/catch, removing legacy/fallback paths, and cutting AI-slop comments. Each subagent researches, writes a critical assessment, then implements high-confidence fixes.
 
 - **2026-04-15** | [Erick](https://x.com/ericksky/status/2044225008419922270) | general
   [Post unavailable — login wall or deleted]
