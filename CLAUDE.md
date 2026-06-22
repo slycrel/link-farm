@@ -129,9 +129,9 @@ Runs weekday mornings at 9 AM (Cowork scheduled task `ai-links-sync`). Pulls the
 
 Bulk enrichment tool invoked by saying things like "catch up on links" or "enrich my links." Three phases: (1) backfill missing URLs from Outlook email bodies, (2) scrape post content via Chrome and summarize/reclassify, (3) post-enrichment pipeline (embed + mechanical/semantic discovery + rebuild via `db/pipeline.post_enrichment_pipeline`). Handles all content types: direct posts, quote tweets (unified context), X articles, videos (bookmark only), and follow-up posts with thread awareness for GitHub links.
 
-### Weekly Backfill (ai-links-backfill)
+### Weekday Backfill (ai-links-backfill)
 
-Unattended weekly background re-enrichment, scheduled for Mondays at 10:30 AM local (cron `30 10 * * 1`) — after the morning sync settles, on the most reliable "laptop is on" day. Processes a fixed BATCH_LIMIT (currently 15) of `partial` / `failed` / `unattempted` posts per run via Chrome + `db/enrich.py` helpers, then runs the same `post_enrichment_pipeline` the sync and catch-up skills use. Drives down the recoverable-incompleteness ratio so the latent-discovery gate (`(partial + failed) / (total − dead) < 0.05`) eventually opens. Skips `legacy-ok` posts (they have usable content already) — that's a separate concern when `ENRICHMENT_VERSION` bumps. Cleanly no-ops when the queue is empty.
+Unattended weekday background re-enrichment, scheduled for 10:30 AM local Monday through Friday (cron `30 10 * * 1-5`) — after the 9 AM morning sync settles. Processes a fixed BATCH_LIMIT (currently 15) of `partial` / `failed` / `unattempted` posts per run via Chrome + `db/enrich.py` helpers, then runs the same `post_enrichment_pipeline` the sync and catch-up skills use. Drives down the recoverable-incompleteness ratio so the latent-discovery gate (`(partial + failed) / (total − dead) < 0.05`) eventually opens. Skips `legacy-ok` posts (they have usable content already) — that's a separate concern when `ENRICHMENT_VERSION` bumps. Cleanly no-ops when the queue is empty. At 75 posts/week, the backlog drains in roughly 3 weeks under typical conditions; the cadence can be slowed back to weekly once the gate opens.
 
 ### Curate Skill (ai-links-curate)
 
