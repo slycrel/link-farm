@@ -16,13 +16,13 @@
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "203.3K",
+    "views": "220.9K",
     "notes": "",
     "enriched": true,
     "content": "recommended viewing. as are all of her videos.\n\nWhat happens when you plug LLMs into voice assistants instead of a decade of handwritten rules. Video dissects Voxtral (a family of OSS speech models) and the foundational work behind it (audio tokenization, semantic/acoustic disaggregation).",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-06-23",
@@ -41,13 +41,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "150.2K",
+    "views": "163.1K",
     "notes": "",
     "enriched": true,
     "content": "Dictated almost everything for 6 months with Wispr Flow. Tried FluidVoice: open source, runs local on Mac, corrects as you speak with no API key, handles slang well. Cancelled the paid plan.\n\nFluidVoice - Free Open Source Voice-to-Text for macOS",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-06-23",
@@ -65,13 +65,13 @@
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "20.5K",
+    "views": "21.6K",
     "notes": "",
     "enriched": true,
     "content": "Highly recommended educational content. LoRA is one of the coolest things to dabble in, lets anyone fine tune models relatively cheap.\n\nThe Tiny Idea That Lets Anyone Fine-Tune AI (YouTube)",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-06-23",
@@ -91,13 +91,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "58.3K",
+    "views": "60.1K",
     "notes": "",
     "enriched": true,
     "content": "New Loop Library skill feature: Lazy Loops (aka Discover). Discover looks through your codebase and chat threads to find potential loops it will design for you.\n\nGitHub - Forward-Future/loop-library: Practical repeatable AI-agent workflows",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-06-23",
@@ -115,13 +115,13 @@
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "30.4K",
+    "views": "30.8K",
     "notes": "",
     "enriched": true,
     "content": "I have a wiki of ~1000 supplements, 150k papers and 200k health influencer mentions. I want to give all my data to your agent next.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-06-23",
@@ -141,13 +141,13 @@
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "241.5K",
+    "views": "250.7K",
     "notes": "",
     "enriched": true,
     "content": "Sharing a somewhat dangerous project. reverse-skill turns reverse engineering into a skill package fed to AI: a routing.md tells the AI which path to take per security task, then it auto-triages tools/methods. 20+ sub-skills: APK reverse, IDA static analysis, JS frontend reverse, firmware security, EDR evasion, vuln exploitation.\n\nGitHub - zhaoxuya520/reverse-skill",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-06-23",
@@ -174,7 +174,7 @@
     "content": "Fugu stands shoulder-to-shoulder with leading models like Fable and Mythos across rigorous engineering, scientific, and reasoning benchmarks. Beyond bigger models: orchestration is the next frontier. Because Fugu orchestrates a pool of swappable agents, it routes around vendor restrictions, a hedge for AI sovereignty.\n\nBeyond Bigger Models: Why Orchestration Models are the Next Frontier",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-06-23",
@@ -194,13 +194,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "906.3K",
+    "views": "922.4K",
     "notes": "",
     "enriched": true,
     "content": "Andrew Ng: 100% of my tasks are now done by AI agents; loops are next; in 3-6 months everyone will use self-improving loops, no more prompting. A 30-min talk on building self-improving agentic systems from scratch.\n\nThe Self-Improving Loop: a 300-agent swarm on Kimi K2.6, verified by Opus 4.8. A free open-source model running 300 parallel agents across 4,000 coordinated steps from a single prompt, scoring higher on real research tasks than pricier models.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-06-23",
@@ -220,13 +220,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "61.4K",
+    "views": "61.5K",
     "notes": "",
     "enriched": true,
     "content": "Vector search is not always the answer. BM25 (word rarity via IDF, saturating term frequency, length normalization) still powers most production search and nails exact keyword matches embeddings miss, which is why hybrid search is the RAG default. Highlighting why a semantic result matched is hard but non-negotiable in healthcare/legal/finance.\n\nYour RAG System Has a Hidden UX Problem: retrieval is semantic but showing the user why a passage matched breaks down.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-06-23",
@@ -248,13 +248,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "3.9M",
+    "views": "4M",
     "notes": "",
     "enriched": true,
     "content": "Loop engineering: the 14-step roadmap from prompter to loop designer. The leverage point moved from typing prompts to designing systems that prompt the agent: an automation that finds work, hands it to the agent, checks the result via an objective gate, records state, and decides the next move. Three tiers: run the 4-condition test, learn the five building blocks (automations, worktrees, skills, connectors, sub-agents), then build the smallest loop that works. Covers maker/checker split, the Ralph Wiggum quiet-failure mode, comprehension debt, and the security tax of unattended loops.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-06-17",
@@ -7171,7 +7171,7 @@
     "content": "Your agents fail because your repo has no structure. Four folders for zero ambiguity: /audits (proof/verify), /docs (description/describe), /plans (intent/plan), /specs (law/enforce). Separate intent from proof from law from descriptions and agents stop guessing what files mean.\n\nEverything Claude has shipped in 2026 and how to actually use it: Anthropic shipping a release nearly every day, a major release roughly every two weeks.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-15",
@@ -7219,7 +7219,7 @@
     "content": "Matt showed me what he's been tinkering on and started building in the open, many projects at the intersection of creativity, storytelling and AI. Worth a follow for narrative storytelling.\n\nTeach Claude Code to think systematically. Tired of having the same conversation (review this for security, are these tests sufficient, find patterns and update instruction files) with inconsistent answers.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-15",
@@ -7245,7 +7245,7 @@
     "content": "Sub-agents in (latent) space! Gradient Bang: a massively multiplayer, completely LLM-driven retro space-trading game (Factorio, but you cajole your ship AI into tasking other AIs). Explores sub-agent orchestration, partial context sharing between inference loops, long contexts and episodic memory, dynamic LLM-driven UIs, and voice as primary input. Built with pipecat_ai, Supabase, Vercel; open source.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-15",
@@ -7269,7 +7269,7 @@
     "content": "Polymarket sweeper bot makes ~$525/day passively (paid partnership). Exploits the post-resolution gap by FIFO-queueing bids at 0.999 on outcomes that are effectively decided. Covers resolution detection, queue/latency mechanics, and capital allocation. Ends with public wallet, PnL claims, and a Telegram channel funnel.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-15",
@@ -7293,7 +7293,7 @@
     "content": "Institutional-grade systematic execution for dominating Polymarket: fractional Kelly formula and latency optimizations. Bookmark and download before it's pulled.\n\nHow We Built a Polymarket Bot That Works: ~3 months, multiple failed strategies, one result.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-15",

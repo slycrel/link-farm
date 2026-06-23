@@ -6,18 +6,18 @@
 ---
 ## Morning view
 
-*Generated 2026-06-23T16:43:21Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-06-23T20:19:09Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
-- **2026-06-23** — [Dhilip Subramanian](https://x.com/sdhilip/status/2069140867466797200) — *near-term • Industry • 150.2K views • v1 enriched*  
+- **2026-06-23** — [Dhilip Subramanian](https://x.com/sdhilip/status/2069140867466797200) — *near-term • Industry • 163.1K views • v1 enriched*  
   Dhilip Subramanian, a heavy dictation user (44,414 words via Wispr Flow), recommends FluidVoice: a free, open-source, locally-run macOS voice-to-text tool that needs no API key and handles slang well. He cancelled his paid plan after switching.
-- **2026-06-23** — [Matthew Berman](https://x.com/matthewberman/status/2069098257444434425) — *near-term • Agent Design • 58.3K views • v1 enriched*  
+- **2026-06-23** — [Matthew Berman](https://x.com/matthewberman/status/2069098257444434425) — *near-term • Agent Design • 60.1K views • v1 enriched*  
   Matthew Berman announces a new Loop Library feature, Lazy Loops (aka Discover), which scans your codebase and chat threads to find potential agentic loops and designs them for you. Links the Forward-Future/loop-library GitHub repo of practical, repeatable AI-agent workflows.
 - **2026-06-23** — [Sakana AI](https://x.com/sakanaailabs/status/2068862070062485867) — *near-term • Agent Design • 1.3M views • v1 enriched*  
   Sakana AI announces Fugu, an orchestration model that routes across a swappable pool of underlying agents rather than relying on one monolithic model. Their blog argues orchestration is the next frontier and a hedge for AI sovereignty against vendor export controls; Fugu reportedly matches leading models (Fable, Mythos) on engineering, science, and reasoning benchmarks.
-- **2026-06-23** — [Movez](https://x.com/0xmovez/status/2068763235587694769) — *near-term • Agent Design • 906.3K views • v1 enriched*  
+- **2026-06-23** — [Movez](https://x.com/0xmovez/status/2068763235587694769) — *near-term • Agent Design • 922.4K views • v1 enriched*  
   Movez highlights an Andrew Ng talk on building self-improving agentic systems from scratch, quoting Ng that AI agents now handle 100% of his tasks and that self-improving loops will replace prompting within 3-6 months. Quote-tweets his own article on a 300-agent swarm running on Kimi K2.6 verified by Opus 4.8. Heavy promotional framing.
-- **2026-06-23** — [Avi Chawla](https://x.com/_avichawla/status/2068657496936616314) — *near-term • Research • 61.4K views • v1 enriched*  
+- **2026-06-23** — [Avi Chawla](https://x.com/_avichawla/status/2068657496936616314) — *near-term • Research • 61.5K views • v1 enriched*  
   Avi Chawla explains why BM25, a 30-year-old keyword ranking algorithm with no training or embeddings, still powers Elasticsearch/OpenSearch and excels at exact-match retrieval where embeddings struggle, making hybrid (BM25 + vector) search the default in top RAG systems. He closes on the UX problem of highlighting which span actually drove a semantic match, pointing to his co-founder's article.
 
 ### Recurring this week
