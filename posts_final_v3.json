@@ -1,5 +1,262 @@
 [
   {
+    "date": "2026-06-23",
+    "author": "Mario Zechner",
+    "handle": "@badlogicgames",
+    "subject": "Post by Mario Zechner on X",
+    "url": "https://x.com/badlogicgames/status/2069156188902559751",
+    "summary": "Mario Zechner recommends a video dissecting Voxtral, a family of open-source speech models, and the foundational work behind it (audio tokenization, semantic/acoustic disaggregation). He quote-tweets Julia Turc, who frames it as what you get when you plug LLMs into voice assistants instead of a decade of handwritten rules.",
+    "topics": [
+      "research",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "203.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "recommended viewing. as are all of her videos.\n\nWhat happens when you plug LLMs into voice assistants instead of a decade of handwritten rules. Video dissects Voxtral (a family of OSS speech models) and the foundational work behind it (audio tokenization, semantic/acoustic disaggregation).",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-06-23",
+    "author": "Dhilip Subramanian",
+    "handle": "@sdhilip",
+    "subject": "Post by Dhilip Subramanian on X",
+    "url": "https://x.com/sdhilip/status/2069140867466797200",
+    "summary": "Dhilip Subramanian, a heavy dictation user (44,414 words via Wispr Flow), recommends FluidVoice: a free, open-source, locally-run macOS voice-to-text tool that needs no API key and handles slang well. He cancelled his paid plan after switching.",
+    "topics": [
+      "industry",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "150.2K",
+    "notes": "",
+    "enriched": true,
+    "content": "Dictated almost everything for 6 months with Wispr Flow. Tried FluidVoice: open source, runs local on Mac, corrects as you speak with no API key, handles slang well. Cancelled the paid plan.\n\nFluidVoice - Free Open Source Voice-to-Text for macOS",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-06-23",
+    "author": "0xSero",
+    "handle": "@0xSero",
+    "subject": "cryptis shared a link with you",
+    "url": "https://x.com/0xsero/status/2069114653842522463",
+    "summary": "0xSero recommends an educational YouTube video explaining LoRA (Low-Rank Adaptation): how tiny trainable matrices let anyone fine-tune large AI models relatively cheaply.",
+    "topics": [
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "20.5K",
+    "notes": "",
+    "enriched": true,
+    "content": "Highly recommended educational content. LoRA is one of the coolest things to dabble in, lets anyone fine tune models relatively cheap.\n\nThe Tiny Idea That Lets Anyone Fine-Tune AI (YouTube)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-06-23",
+    "author": "Matthew Berman",
+    "handle": "@MatthewBerman",
+    "subject": "Post by Matthew Berman on X",
+    "url": "https://x.com/matthewberman/status/2069098257444434425",
+    "summary": "Matthew Berman announces a new Loop Library feature, Lazy Loops (aka Discover), which scans your codebase and chat threads to find potential agentic loops and designs them for you. Links the Forward-Future/loop-library GitHub repo of practical, repeatable AI-agent workflows.",
+    "topics": [
+      "agent-design",
+      "skills-mcp",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "58.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "New Loop Library skill feature: Lazy Loops (aka Discover). Discover looks through your codebase and chat threads to find potential loops it will design for you.\n\nGitHub - Forward-Future/loop-library: Practical repeatable AI-agent workflows",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-06-23",
+    "author": "Ethan",
+    "handle": "@LambethEthan",
+    "subject": "Post by Ethan on X",
+    "url": "https://x.com/lambethethan/status/2068958764276051987",
+    "summary": "Ethan describes a personal wiki of ~1,000 supplements built from 150k papers and 200k health-influencer mentions, and floats handing the entire dataset to an AI agent next.",
+    "topics": [
+      "agent-design",
+      "general"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "30.4K",
+    "notes": "",
+    "enriched": true,
+    "content": "I have a wiki of ~1000 supplements, 150k papers and 200k health influencer mentions. I want to give all my data to your agent next.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-06-23",
+    "author": "冬天",
+    "handle": "@seventhoce56019",
+    "subject": "Post by 冬天 on X",
+    "url": "https://x.com/seventhoce56019/status/2068901168940745088",
+    "summary": "Translated from Chinese: a writeup of reverse-skill (GitHub zhaoxuya520/reverse-skill), an AI skill package that puts reverse-engineering and security tasks behind a routing.md file so the agent self-triages across 20+ sub-skills (APK reversing, IDA static analysis, JS frontend reversing, firmware security, EDR evasion, vulnerability exploitation). Framed as lowering the barrier to security offense/defense.",
+    "topics": [
+      "skills-mcp",
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "241.5K",
+    "notes": "",
+    "enriched": true,
+    "content": "Sharing a somewhat dangerous project. reverse-skill turns reverse engineering into a skill package fed to AI: a routing.md tells the AI which path to take per security task, then it auto-triages tools/methods. 20+ sub-skills: APK reverse, IDA static analysis, JS frontend reverse, firmware security, EDR evasion, vuln exploitation.\n\nGitHub - zhaoxuya520/reverse-skill",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-06-23",
+    "author": "Sakana AI",
+    "handle": "@SakanaAILabs",
+    "subject": "Post by Sakana AI on X",
+    "url": "https://x.com/sakanaailabs/status/2068862070062485867",
+    "summary": "Sakana AI announces Fugu, an orchestration model that routes across a swappable pool of underlying agents rather than relying on one monolithic model. Their blog argues orchestration is the next frontier and a hedge for AI sovereignty against vendor export controls; Fugu reportedly matches leading models (Fable, Mythos) on engineering, science, and reasoning benchmarks.",
+    "topics": [
+      "agent-design",
+      "industry",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "1.3M",
+    "notes": "",
+    "enriched": true,
+    "content": "Fugu stands shoulder-to-shoulder with leading models like Fable and Mythos across rigorous engineering, scientific, and reasoning benchmarks. Beyond bigger models: orchestration is the next frontier. Because Fugu orchestrates a pool of swappable agents, it routes around vendor restrictions, a hedge for AI sovereignty.\n\nBeyond Bigger Models: Why Orchestration Models are the Next Frontier",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-06-23",
+    "author": "Movez",
+    "handle": "@0xMovez",
+    "subject": "Post by Movez on X",
+    "url": "https://x.com/0xmovez/status/2068763235587694769",
+    "summary": "Movez highlights an Andrew Ng talk on building self-improving agentic systems from scratch, quoting Ng that AI agents now handle 100% of his tasks and that self-improving loops will replace prompting within 3-6 months. Quote-tweets his own article on a 300-agent swarm running on Kimi K2.6 verified by Opus 4.8. Heavy promotional framing.",
+    "topics": [
+      "agent-design",
+      "prompting",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "906.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "Andrew Ng: 100% of my tasks are now done by AI agents; loops are next; in 3-6 months everyone will use self-improving loops, no more prompting. A 30-min talk on building self-improving agentic systems from scratch.\n\nThe Self-Improving Loop: a 300-agent swarm on Kimi K2.6, verified by Opus 4.8. A free open-source model running 300 parallel agents across 4,000 coordinated steps from a single prompt, scoring higher on real research tasks than pricier models.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-06-23",
+    "author": "Avi Chawla",
+    "handle": "@_avichawla",
+    "subject": "Post by Avi Chawla on X",
+    "url": "https://x.com/_avichawla/status/2068657496936616314",
+    "summary": "Avi Chawla explains why BM25, a 30-year-old keyword ranking algorithm with no training or embeddings, still powers Elasticsearch/OpenSearch and excels at exact-match retrieval where embeddings struggle, making hybrid (BM25 + vector) search the default in top RAG systems. He closes on the UX problem of highlighting which span actually drove a semantic match, pointing to his co-founder's article.",
+    "topics": [
+      "research",
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "61.4K",
+    "notes": "",
+    "enriched": true,
+    "content": "Vector search is not always the answer. BM25 (word rarity via IDF, saturating term frequency, length normalization) still powers most production search and nails exact keyword matches embeddings miss, which is why hybrid search is the RAG default. Highlighting why a semantic result matched is hard but non-negotiable in healthcare/legal/finance.\n\nYour RAG System Has a Hidden UX Problem: retrieval is semantic but showing the user why a passage matched breaks down.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-06-23",
+    "author": "Codez",
+    "handle": "@0xCodez",
+    "subject": "Post by Codez on X",
+    "url": "https://x.com/0xcodez/status/2064374643729773029",
+    "summary": "A long-form Loop engineering roadmap arguing the leverage point in agentic coding has moved from writing prompts to designing self-running loops. Covers the 4-condition test for when a loop is worth building (task repeats, automated verification, token budget, senior-engineer tooling), the five building blocks (automations like /loop and /goal, git worktrees, skills, MCP connectors, sub-agents), the maker/checker split, the Ralph Wiggum quiet-failure mode, comprehension debt and cognitive surrender, and the security tax of unattended loops. Cites Anthropic engineering docs and Addy Osmani.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "claude-code",
+      "skills-mcp",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "3.9M",
+    "notes": "",
+    "enriched": true,
+    "content": "Loop engineering: the 14-step roadmap from prompter to loop designer. The leverage point moved from typing prompts to designing systems that prompt the agent: an automation that finds work, hands it to the agent, checks the result via an objective gate, records state, and decides the next move. Three tiers: run the 4-condition test, learn the five building blocks (automations, worktrees, skills, connectors, sub-agents), then build the smallest loop that works. Covers maker/checker split, the Ralph Wiggum quiet-failure mode, comprehension debt, and the security tax of unattended loops.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-06-17",
     "author": "How To Prompt",
     "handle": "@howtoprompt__",
@@ -6896,11 +7153,11 @@
     "handle": "@kloss_xyz",
     "subject": "Post by klöss on X",
     "url": "https://x.com/kloss_xyz/status/2044169678961234282",
-    "summary": "klöss proposes a 4-folder repo layout to stop agents hallucinating context: /audits (proof/verify), /docs (description/describe), /plans (intent/plan), /specs (law/enforce). Separate intent from proof from law from descriptions and Claude Code / Codex / Cursor agents stop guessing what files mean.",
+    "summary": "klss argues agents fail across repos because of unstructured markdown, and proposes a four-folder convention to remove ambiguity: /audits (proof), /docs (description), /plans (intent), /specs (law). Separating intent from proof from law stops Claude Code, Codex, and Cursor agents from hallucinating context.",
     "topics": [
+      "agent-design",
       "claude-code",
-      "dev-practices",
-      "prompting"
+      "dev-practices"
     ],
     "audience": [
       "me",
@@ -6908,10 +7165,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "12.7K",
+    "views": "15.9K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Your agents fail because your repo has no structure. Four folders for zero ambiguity: /audits (proof/verify), /docs (description/describe), /plans (intent/plan), /specs (law/enforce). Separate intent from proof from law from descriptions and agents stop guessing what files mean.\n\nEverything Claude has shipped in 2026 and how to actually use it: Anthropic shipping a release nearly every day, a major release roughly every two weeks.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-15",
@@ -6941,21 +7201,25 @@
     "handle": "@pbakaus",
     "subject": "Post by Paul Bakaus on X",
     "url": "https://x.com/pbakaus/status/2044118871326765541",
-    "summary": "Paul Bakaus endorses Matthew Sims (@mbwsims) who is building in the open at the intersection of creativity, storytelling and AI (English PhD + ML/startup background). Quotes Matt's post on teaching Claude Code to think systematically — tired of repeating the same security/testing/pattern-review prompts with inconsistent answers.",
+    "summary": "Paul Bakaus praises Matt Sims (English PhD plus ML/startup background) for building in the open at the intersection of creativity, storytelling, and AI. Quote-tweets Sims on teaching Claude Code to think systematically, getting consistent answers to recurring review-for-security / sufficient-tests / update-instruction-files prompts.",
     "topics": [
       "claude-code",
-      "dev-practices"
+      "agent-design",
+      "general"
     ],
     "audience": [
       "me",
       "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
-    "views": "13.5K",
+    "views": "15.8K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Matt showed me what he's been tinkering on and started building in the open, many projects at the intersection of creativity, storytelling and AI. Worth a follow for narrative storytelling.\n\nTeach Claude Code to think systematically. Tired of having the same conversation (review this for security, are these tests sufficient, find patterns and update instruction files) with inconsistent answers.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-15",
@@ -6963,29 +7227,33 @@
     "handle": "@kwindla",
     "subject": "Post by kwindla on X",
     "url": "https://x.com/kwindla/status/2044106314612408437",
-    "summary": "kwindla (Daily.co / Pipecat) ships Gradient Bang — claims first massively multiplayer, fully LLM-driven game. Retro space-trading (Factorio-style but cajoling ship AI to task other AIs). Explores sub-agent orchestration, partial context sharing between multiple LLM inference loops, long-context + episodic memory across sessions, and dynamic UI.",
+    "summary": "kwindla introduces Gradient Bang, claimed to be the first massively-multiplayer, fully LLM-driven game: a retro space-trading game (Factorio-like) where you cajole a ship AI into tasking other AIs. Built to explore sub-agent orchestration, partial context sharing across inference loops, long contexts and episodic memory, LLM-generated dynamic UIs, and voice input. Built on pipecat_ai plus Supabase and Vercel, fully open source.",
     "topics": [
       "agent-design",
-      "research"
+      "research",
+      "dev-practices"
     ],
     "audience": [
       "me",
       "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
-    "views": "338.9K",
+    "views": "453.8K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Sub-agents in (latent) space! Gradient Bang: a massively multiplayer, completely LLM-driven retro space-trading game (Factorio, but you cajole your ship AI into tasking other AIs). Explores sub-agent orchestration, partial context sharing between inference loops, long contexts and episodic memory, dynamic LLM-driven UIs, and voice as primary input. Built with pipecat_ai, Supabase, Vercel; open source.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-15",
     "author": "Punisher",
-    "handle": "@0x_punisher",
+    "handle": "@0x_Punisher",
     "subject": "Post by Punisher on X",
     "url": "https://x.com/0x_punisher/status/2044100729133019416",
-    "summary": "[Not AI] Polymarket 'sweeper bot' guide claiming $525/day passive income by exploiting post-resolution market inefficiencies. Engagement-farming crypto content — no AI/dev relevance.",
+    "summary": "[Promotional / paid partnership] A guide to a Polymarket sweeper bot that profits not by prediction but by FIFO-queueing bids near $0.999 on already-decided markets to absorb mispriced liquidity, covering resolution detection, latency, and capital allocation. Ends with wallet/PnL claims and a Telegram funnel. Off-topic crypto money-making content rather than AI tooling.",
     "topics": [
       "questionable",
       "general"
@@ -6995,10 +7263,13 @@
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "13.4K",
+    "views": "796.4K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Polymarket sweeper bot makes ~$525/day passively (paid partnership). Exploits the post-resolution gap by FIFO-queueing bids at 0.999 on outcomes that are effectively decided. Covers resolution detection, queue/latency mechanics, and capital allocation. Ends with public wallet, PnL claims, and a Telegram channel funnel.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-15",
@@ -7006,7 +7277,7 @@
     "handle": "@stacyonchain",
     "subject": "Post by StacyOnChain on X",
     "url": "https://x.com/stacyonchain/status/2044069002192847200",
-    "summary": "[Not AI] StacyOnChain shares a Polymarket bot architecture article with fractional Kelly formula and latency optimizations. Crypto/arbitrage engagement-bait, no AI/dev relevance.",
+    "summary": "[Engagement-farming / crypto promo] StacyOnChain hypes an institutional-grade Polymarket bot architecture (fractional Kelly sizing, latency optimizations), urging readers to bookmark and download before it is pulled, and quote-tweets their own how-we-built-a-Polymarket-bot article. Off-topic relative to the AI tooling collection.",
     "topics": [
       "questionable",
       "general"
@@ -7016,10 +7287,13 @@
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "26.8K",
+    "views": "29.7K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Institutional-grade systematic execution for dominating Polymarket: fractional Kelly formula and latency optimizations. Bookmark and download before it's pulled.\n\nHow We Built a Polymarket Bot That Works: ~3 months, multiple failed strategies, one result.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-15",

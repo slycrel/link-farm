@@ -1,32 +1,27 @@
 # AI Links Collection
-**Total Posts**: 636  
-**Date Range**: 2024-06-11 – 2026-06-17  
-**Enriched**: 635/636 (99%)
+**Total Posts**: 646  
+**Date Range**: 2024-06-11 – 2026-06-23  
+**Enriched**: 645/646 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-06-22T23:37:42Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-06-23T16:43:21Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
-- **2026-06-15** — [Hasan Toor](https://x.com/hasantoxr/status/2066247422502957197) — *now • Agent Design • 28.7K views • v1 enriched*  
-  Highlights Headroom, a GitHub tool by Netflix engineer Tejas Chopra that compresses everything an AI agent reads before it reaches the LLM (tool outputs, logs, files, RAG chunks, code-search results, conversation history), claiming 60-95% fewer tokens for the same answers. Ships as a Python/TypeScript library, local proxy, and MCP server, with wrappers for Claude Code, Codex, Cursor, Aider, and Copilot.
-- **2026-06-17** — [How To Prompt](https://x.com/howtoprompt__/status/2067176008445513800) — *near-term • Research • 90.1K views • v1 enriched*  
-  Engagement-farmed post claiming an open-source repo compresses 60M text chunks from 201GB to ~6GB (97% smaller) with no accuracy loss, running fully private on a standard laptop with no cloud or GPU — pitched as making vector databases obsolete. No repo link was surfaced in the post or visible replies, so the project would need to be located before the claim can be evaluated.
-- **2026-06-17** — [Viv](https://x.com/vtrivedy10/status/2066954487466459163) — *near-term • Agent Design • 107.1K views • v1 enriched*  
-  Viv amplifies Sydney Runkle's X article 'The Art of Loop Engineering,' which argues reliable agents need more than a good model — they need a carefully engineered hierarchy of loops. Viv's key takeaway: verification is a critical primitive; it's worth spending days to weeks making the distribution of desired agent outcomes verifiable in practice by your system, especially for non-slop, semi-long-horizon work.
-- **2026-06-17** — [Ahmad](https://x.com/theahmadosman/status/2066825976705646929) — *near-term • Research • 92.3K views • v1 enriched*  
-  Ahmad highlights VibeThinker 3B (built on Qwen 2.5), a 3B-parameter model he claims reaches Opus 4.5-level performance, quoting his own earlier prediction that Claude Code + Opus 4.5-quality models will run locally on a single RTX PRO 6000 before year-end. A signal on how fast small/efficient local models are closing the gap with frontier models.
-- **2026-06-15** — [Teknium](https://x.com/teknium/status/2066185784332562605) — *near-term • Agent Design • 200.1K views • v1 enriched*  
-  Demo: the author used the Hermes Agent with a Manim video-generation skill plus its TTS tool to autonomously produce a video explaining the Hermes Agent itself — a self-referential showcase of composing a skill and a tool inside an agent.
+- **2026-06-23** — [Dhilip Subramanian](https://x.com/sdhilip/status/2069140867466797200) — *near-term • Industry • 150.2K views • v1 enriched*  
+  Dhilip Subramanian, a heavy dictation user (44,414 words via Wispr Flow), recommends FluidVoice: a free, open-source, locally-run macOS voice-to-text tool that needs no API key and handles slang well. He cancelled his paid plan after switching.
+- **2026-06-23** — [Matthew Berman](https://x.com/matthewberman/status/2069098257444434425) — *near-term • Agent Design • 58.3K views • v1 enriched*  
+  Matthew Berman announces a new Loop Library feature, Lazy Loops (aka Discover), which scans your codebase and chat threads to find potential agentic loops and designs them for you. Links the Forward-Future/loop-library GitHub repo of practical, repeatable AI-agent workflows.
+- **2026-06-23** — [Sakana AI](https://x.com/sakanaailabs/status/2068862070062485867) — *near-term • Agent Design • 1.3M views • v1 enriched*  
+  Sakana AI announces Fugu, an orchestration model that routes across a swappable pool of underlying agents rather than relying on one monolithic model. Their blog argues orchestration is the next frontier and a hedge for AI sovereignty against vendor export controls; Fugu reportedly matches leading models (Fable, Mythos) on engineering, science, and reasoning benchmarks.
+- **2026-06-23** — [Movez](https://x.com/0xmovez/status/2068763235587694769) — *near-term • Agent Design • 906.3K views • v1 enriched*  
+  Movez highlights an Andrew Ng talk on building self-improving agentic systems from scratch, quoting Ng that AI agents now handle 100% of his tasks and that self-improving loops will replace prompting within 3-6 months. Quote-tweets his own article on a 300-agent swarm running on Kimi K2.6 verified by Opus 4.8. Heavy promotional framing.
+- **2026-06-23** — [Avi Chawla](https://x.com/_avichawla/status/2068657496936616314) — *near-term • Research • 61.4K views • v1 enriched*  
+  Avi Chawla explains why BM25, a 30-year-old keyword ranking algorithm with no training or embeddings, still powers Elasticsearch/OpenSearch and excels at exact-match retrieval where embeddings struggle, making hybrid (BM25 + vector) search the default in top RAG systems. He closes on the UX problem of highlighting which span actually drove a semantic match, pointing to his co-founder's article.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
-
-- **agent identity files (SOUL.md, CLAUDE.md, persona scaffolds)** (13 posts, +1 this week)  
-  Recurring pattern of giving an agent a persistent identity file that loads automatically and shapes behavior.
-    - 2026-06-08 — [rari](https://x.com/0xwhrrari/status/2063244577482440978): Engagement-farmed but useful link dump of free AI-engineering learning resources (LangChain agent architecture, Anthropic's Claude Code 101 …
-    - 2026-05-27 — [Parag pawar](https://x.com/dharmikpawar13/status/2059571098484675051): Argues CLAUDE.md is not docs but the control layer for your AI agent — inconsistent outputs usually come from bad instruction architecture, …
 
 - **agentic code review at production scale** (7 posts, +1 this week)  
   Deterministic engineering handles what must never fail; LLM only does context reading and reasoning. Alibaba open-code-review.
@@ -49,21 +44,31 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 308 | 48.4% |
-| claude-code | 152 | 23.9% |
-| dev-practices | 181 | 28.5% |
-| skills-mcp | 96 | 15.1% |
-| prompting | 83 | 13.1% |
-| research | 120 | 18.9% |
-| industry | 75 | 11.8% |
-| management | 95 | 14.9% |
-| questionable | 94 | 14.8% |
-| general | 80 | 12.6% |
+| agent-design | 317 | 49.1% |
+| claude-code | 153 | 23.7% |
+| dev-practices | 185 | 28.6% |
+| skills-mcp | 99 | 15.3% |
+| prompting | 84 | 13.0% |
+| research | 125 | 19.3% |
+| industry | 78 | 12.1% |
+| management | 95 | 14.7% |
+| questionable | 95 | 14.7% |
+| general | 82 | 12.7% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-06-23 | Mario Zechner | research | Mario Zechner recommends a video dissecting Voxtral, a family of open-... |
+| 2026-06-23 | Dhilip Subramanian | industry | Dhilip Subramanian, a heavy dictation user (44,414 words via Wispr Flo... |
+| 2026-06-23 | 0xSero | research | 0xSero recommends an educational YouTube video explaining LoRA (Low-Ra... |
+| 2026-06-23 | Matthew Berman | agent-design | Matthew Berman announces a new Loop Library feature, Lazy Loops (aka D... |
+| 2026-06-23 | Ethan | agent-design | Ethan describes a personal wiki of ~1,000 supplements built from 150k... |
+| 2026-06-23 | 冬天 | skills-mcp | Translated from Chinese: a writeup of reverse-skill (GitHub zhaoxuya52... |
+| 2026-06-23 | Sakana AI | agent-design | Sakana AI announces Fugu, an orchestration model that routes across a... |
+| 2026-06-23 | Movez | agent-design | Movez highlights an Andrew Ng talk on building self-improving agentic... |
+| 2026-06-23 | Avi Chawla | research | Avi Chawla explains why BM25, a 30-year-old keyword ranking algorithm... |
+| 2026-06-23 | Codez | agent-design | A long-form Loop engineering roadmap arguing the leverage point in age... |
 | 2026-06-17 | How To Prompt | research | Engagement-farmed post claiming an open-source repo compresses 60M tex... |
 | 2026-06-17 | Viv | agent-design | Viv amplifies Sydney Runkle's X article 'The Art of Loop Engineering,'... |
 | 2026-06-17 | Ahmad | research | Ahmad highlights VibeThinker 3B (built on Qwen 2.5), a 3B-parameter mo... |
@@ -104,21 +109,25 @@
 | 2026-06-06 | Dan Roy | research | Quotes Markus Buehler (MIT) on a breakthrough in self-evolving 'AI sci... |
 | 2026-06-06 | 海拉鲁编程客 (hylarucoder) | agent-design | Recommends Peter Pang's (intuitiveml) article on building cloud agent... |
 | 2026-06-06 | Cat Wu (Anthropic) | claude-code | Anthropic's data team automated ~95% of business-analytics queries wit... |
-| 2026-06-04 | hoeem | questionable | Engagement-styled '100x cheaper' guide on cutting token waste in agent... |
-| 2026-06-04 | さいぺ (cipepser) | agent-design | Recommends mem0's article 'State of Memory in Agent Harness' (mem0ai)... |
-| 2026-06-04 | Ole Lehmann | agent-design | Workflow to turn saved X bookmarks into an agent-readable 'second brai... |
-| 2026-06-03 | yv | research | Recommends the MAI-Thinking-1 technical paper from Microsoft as a near... |
-| 2026-06-03 | Thariq | claude-code | Thariq hypes the new dynamic workflows feature in Claude Code as the b... |
-| 2026-06-03 | Thariq | claude-code | Anthropic article (linked from Thariq's tweet): 'A harness for every t... |
-| 2026-06-03 | Garry Tan | industry | Garry Tan (YC) quote-tweets Factory's new model-routing feature with a... |
-| 2026-06-03 | Livsun | questionable | [Engagement-farmed hype] Anonymous quant-trading flex: neural net trai... |
-| 2026-06-03 | Tom Dörr | skills-mcp | FlowForge — a Claude skill that generates professional draw.io diagram... |
-| 2026-05-31 | darkzodchi | claude-code | Quote tweet promoting @0x_rody's article on building Claude Code subag... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (308)
+### Agent Design (317)
+
+- [Matthew Berman](https://x.com/matthewberman/status/2069098257444434425) — 2026-06-23: Matthew Berman announces a new Loop Library feature, Lazy Loops (aka Discover), which scans your codebase and chat threads to find potential agentic loops and designs them for you. Links the Forward-Future/loop-library GitHub repo of practical, repeatable AI-agent workflows.
+
+- [Ethan](https://x.com/lambethethan/status/2068958764276051987) — 2026-06-23: Ethan describes a personal wiki of ~1,000 supplements built from 150k papers and 200k health-influencer mentions, and floats handing the entire dataset to an AI agent next.
+
+- [冬天](https://x.com/seventhoce56019/status/2068901168940745088) — 2026-06-23: Translated from Chinese: a writeup of reverse-skill (GitHub zhaoxuya520/reverse-skill), an AI skill package that puts reverse-engineering and security tasks behind a routing.md file so the agent self-triages across 20+ sub-skills (APK reversing, IDA static analysis, JS frontend reversing, firmware security, EDR evasion, vulnerability exploitation). Framed as lowering the barrier to security offense/defense.
+
+- [Sakana AI](https://x.com/sakanaailabs/status/2068862070062485867) — 2026-06-23: Sakana AI announces Fugu, an orchestration model that routes across a swappable pool of underlying agents rather than relying on one monolithic model. Their blog argues orchestration is the next frontier and a hedge for AI sovereignty against vendor export controls; Fugu reportedly matches leading models (Fable, Mythos) on engineering, science, and reasoning benchmarks.
+
+- [Movez](https://x.com/0xmovez/status/2068763235587694769) — 2026-06-23: Movez highlights an Andrew Ng talk on building self-improving agentic systems from scratch, quoting Ng that AI agents now handle 100% of his tasks and that self-improving loops will replace prompting within 3-6 months. Quote-tweets his own article on a 300-agent swarm running on Kimi K2.6 verified by Opus 4.8. Heavy promotional framing.
+
+- [Avi Chawla](https://x.com/_avichawla/status/2068657496936616314) — 2026-06-23: Avi Chawla explains why BM25, a 30-year-old keyword ranking algorithm with no training or embeddings, still powers Elasticsearch/OpenSearch and excels at exact-match retrieval where embeddings struggle, making hybrid (BM25 + vector) search the default in top RAG systems. He closes on the UX problem of highlighting which span actually drove a semantic match, pointing to his co-founder's article.
+
+- [Codez](https://x.com/0xcodez/status/2064374643729773029) — 2026-06-23: A long-form Loop engineering roadmap arguing the leverage point in agentic coding has moved from writing prompts to designing self-running loops. Covers the 4-condition test for when a loop is worth building (task repeats, automated verification, token budget, senior-engineer tooling), the five building blocks (automations like /loop and /goal, git worktrees, skills, MCP connectors, sub-agents), the maker/checker split, the Ralph Wiggum quiet-failure mode, comprehension debt and cognitive surrender, and the security tax of unattended loops. Cites Anthropic engineering docs and Addy Osmani.
 
 - [Viv](https://x.com/vtrivedy10/status/2066954487466459163) — 2026-06-17: Viv amplifies Sydney Runkle's X article 'The Art of Loop Engineering,' which argues reliable agents need more than a good model — they need a carefully engineered hierarchy of loops. Viv's key takeaway: verification is a critical primitive; it's worth spending days to weeks making the distribution of desired agent outcomes verifiable in practice by your system, especially for non-slop, semi-long-horizon work.
 
@@ -458,7 +467,11 @@
 
 - [mr-r0b0t](https://x.com/mr_r0b0t/status/2044199154004472009) — 2026-04-15: Amplifies a tip on a 3-tool agent web stack: SearXNG for candidate source discovery, Firecrawl for known-URL scraping, Camofox for JS/interaction browser fallback. Described as essential for any agent doing web search or scraping.
 
-- [kwindla](https://x.com/kwindla/status/2044106314612408437) — 2026-04-15: kwindla (Daily.co / Pipecat) ships Gradient Bang — claims first massively multiplayer, fully LLM-driven game. Retro space-trading (Factorio-style but cajoling ship AI to task other AIs). Explores sub-agent orchestration, partial context sharing between multiple LLM inference loops, long-context + episodic memory across sessions, and dynamic UI.
+- [klöss](https://x.com/kloss_xyz/status/2044169678961234282) — 2026-04-15: klss argues agents fail across repos because of unstructured markdown, and proposes a four-folder convention to remove ambiguity: /audits (proof), /docs (description), /plans (intent), /specs (law). Separating intent from proof from law stops Claude Code, Codex, and Cursor agents from hallucinating context.
+
+- [Paul Bakaus](https://x.com/pbakaus/status/2044118871326765541) — 2026-04-15: Paul Bakaus praises Matt Sims (English PhD plus ML/startup background) for building in the open at the intersection of creativity, storytelling, and AI. Quote-tweets Sims on teaching Claude Code to think systematically, getting consistent answers to recurring review-for-security / sufficient-tests / update-instruction-files prompts.
+
+- [kwindla](https://x.com/kwindla/status/2044106314612408437) — 2026-04-15: kwindla introduces Gradient Bang, claimed to be the first massively-multiplayer, fully LLM-driven game: a retro space-trading game (Factorio-like) where you cajole a ship AI into tasking other AIs. Built to explore sub-agent orchestration, partial context sharing across inference loops, long contexts and episodic memory, LLM-generated dynamic UIs, and voice input. Built on pipecat_ai plus Supabase and Vercel, fully open source.
 
 - [Ihtesham Ali](https://x.com/ihtesham2005/status/2044056849272705246) — 2026-04-15: Aurogen — MIT-licensed 'OpenClaw' fork with true multi-agent, multi-instance orchestration in one deployment (github.com/UniRound-Tec/Aurogen). Modular agents/channels/providers/skills, web-panel setup (no config/CLI), ClaWHub integration, one-click installers, $50 Linux SBC minimum.
 
@@ -736,7 +749,9 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Claude Code (152)
+### Claude Code (153)
+
+- [Codez](https://x.com/0xcodez/status/2064374643729773029) — 2026-06-23: A long-form Loop engineering roadmap arguing the leverage point in agentic coding has moved from writing prompts to designing self-running loops. Covers the 4-condition test for when a loop is worth building (task repeats, automated verification, token budget, senior-engineer tooling), the five building blocks (automations like /loop and /goal, git worktrees, skills, MCP connectors, sub-agents), the maker/checker split, the Ralph Wiggum quiet-failure mode, comprehension debt and cognitive surrender, and the security tax of unattended loops. Cites Anthropic engineering docs and Addy Osmani.
 
 - [Harry Tandy](https://x.com/harrytandy/status/2065818850633932996) — 2026-06-14: Opens with a Sam Altman quote that the cost to use a given level of AI falls ~10x every 12 months, then lays out a 10-step agentic-coding sprint: pick the heaviest backlog item, write a FABLE_RUN.md spec (goal/scope/commands/review rules/done criteria), map the repo first, break the job into checkpoints that each end with diff + test output + next decision, split builder and checker agents, use git worktrees for parallel attempts, and keep a RUN_LOG.md of every failed command and accepted fix.
 
@@ -898,9 +913,9 @@
 
 - [Millie Marconi](https://x.com/milliemarconnni/status/2044358003714097601) — 2026-04-15: Uses Claude as a full inversion engine running Charlie Munger's method — mapping every path to failure to make the path to success obvious by elimination. Shares 5 prompts for applying systematic inversion to any problem.
 
-- [klöss](https://x.com/kloss_xyz/status/2044169678961234282) — 2026-04-15: klöss proposes a 4-folder repo layout to stop agents hallucinating context: /audits (proof/verify), /docs (description/describe), /plans (intent/plan), /specs (law/enforce). Separate intent from proof from law from descriptions and Claude Code / Codex / Cursor agents stop guessing what files mean.
+- [klöss](https://x.com/kloss_xyz/status/2044169678961234282) — 2026-04-15: klss argues agents fail across repos because of unstructured markdown, and proposes a four-folder convention to remove ambiguity: /audits (proof), /docs (description), /plans (intent), /specs (law). Separating intent from proof from law stops Claude Code, Codex, and Cursor agents from hallucinating context.
 
-- [Paul Bakaus](https://x.com/pbakaus/status/2044118871326765541) — 2026-04-15: Paul Bakaus endorses Matthew Sims (@mbwsims) who is building in the open at the intersection of creativity, storytelling and AI (English PhD + ML/startup background). Quotes Matt's post on teaching Claude Code to think systematically — tired of repeating the same security/testing/pattern-review prompts with inconsistent answers.
+- [Paul Bakaus](https://x.com/pbakaus/status/2044118871326765541) — 2026-04-15: Paul Bakaus praises Matt Sims (English PhD plus ML/startup background) for building in the open at the intersection of creativity, storytelling, and AI. Quote-tweets Sims on teaching Claude Code to think systematically, getting consistent answers to recurring review-for-security / sufficient-tests / update-instruction-files prompts.
 
 - [Ihtesham Ali](https://x.com/ihtesham2005/status/2044056849272705246) — 2026-04-15: Aurogen — MIT-licensed 'OpenClaw' fork with true multi-agent, multi-instance orchestration in one deployment (github.com/UniRound-Tec/Aurogen). Modular agents/channels/providers/skills, web-panel setup (no config/CLI), ClaWHub integration, one-click installers, $50 Linux SBC minimum.
 
@@ -1042,7 +1057,15 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (181)
+### Dev Practices (185)
+
+- [Dhilip Subramanian](https://x.com/sdhilip/status/2069140867466797200) — 2026-06-23: Dhilip Subramanian, a heavy dictation user (44,414 words via Wispr Flow), recommends FluidVoice: a free, open-source, locally-run macOS voice-to-text tool that needs no API key and handles slang well. He cancelled his paid plan after switching.
+
+- [Matthew Berman](https://x.com/matthewberman/status/2069098257444434425) — 2026-06-23: Matthew Berman announces a new Loop Library feature, Lazy Loops (aka Discover), which scans your codebase and chat threads to find potential agentic loops and designs them for you. Links the Forward-Future/loop-library GitHub repo of practical, repeatable AI-agent workflows.
+
+- [Avi Chawla](https://x.com/_avichawla/status/2068657496936616314) — 2026-06-23: Avi Chawla explains why BM25, a 30-year-old keyword ranking algorithm with no training or embeddings, still powers Elasticsearch/OpenSearch and excels at exact-match retrieval where embeddings struggle, making hybrid (BM25 + vector) search the default in top RAG systems. He closes on the UX problem of highlighting which span actually drove a semantic match, pointing to his co-founder's article.
+
+- [Codez](https://x.com/0xcodez/status/2064374643729773029) — 2026-06-23: A long-form Loop engineering roadmap arguing the leverage point in agentic coding has moved from writing prompts to designing self-running loops. Covers the 4-condition test for when a loop is worth building (task repeats, automated verification, token budget, senior-engineer tooling), the five building blocks (automations like /loop and /goal, git worktrees, skills, MCP connectors, sub-agents), the maker/checker split, the Ralph Wiggum quiet-failure mode, comprehension debt and cognitive surrender, and the security tax of unattended loops. Cites Anthropic engineering docs and Addy Osmani.
 
 - [Viv](https://x.com/vtrivedy10/status/2066954487466459163) — 2026-06-17: Viv amplifies Sydney Runkle's X article 'The Art of Loop Engineering,' which argues reliable agents need more than a good model — they need a carefully engineered hierarchy of loops. Viv's key takeaway: verification is a critical primitive; it's worth spending days to weeks making the distribution of desired agent outcomes verifiable in practice by your system, especially for non-slop, semi-long-horizon work.
 
@@ -1232,11 +1255,11 @@
 
 - [mr-r0b0t](https://x.com/mr_r0b0t/status/2044199154004472009) — 2026-04-15: Amplifies a tip on a 3-tool agent web stack: SearXNG for candidate source discovery, Firecrawl for known-URL scraping, Camofox for JS/interaction browser fallback. Described as essential for any agent doing web search or scraping.
 
-- [klöss](https://x.com/kloss_xyz/status/2044169678961234282) — 2026-04-15: klöss proposes a 4-folder repo layout to stop agents hallucinating context: /audits (proof/verify), /docs (description/describe), /plans (intent/plan), /specs (law/enforce). Separate intent from proof from law from descriptions and Claude Code / Codex / Cursor agents stop guessing what files mean.
+- [klöss](https://x.com/kloss_xyz/status/2044169678961234282) — 2026-04-15: klss argues agents fail across repos because of unstructured markdown, and proposes a four-folder convention to remove ambiguity: /audits (proof), /docs (description), /plans (intent), /specs (law). Separating intent from proof from law stops Claude Code, Codex, and Cursor agents from hallucinating context.
 
 - [0xSero](https://x.com/0xsero/status/2044165332928213243) — 2026-04-15: Guide to running large LLMs on limited hardware: use REAPs (50% savings), quantization (AWQ/GPTQ/W4A16/FP8 for fast inference; GGUF/EXL3 for compatibility; MLX for Apple silicon), and 8-bit KV cache (50-75% savings). Practical tips for local AI deployment.
 
-- [Paul Bakaus](https://x.com/pbakaus/status/2044118871326765541) — 2026-04-15: Paul Bakaus endorses Matthew Sims (@mbwsims) who is building in the open at the intersection of creativity, storytelling and AI (English PhD + ML/startup background). Quotes Matt's post on teaching Claude Code to think systematically — tired of repeating the same security/testing/pattern-review prompts with inconsistent answers.
+- [kwindla](https://x.com/kwindla/status/2044106314612408437) — 2026-04-15: kwindla introduces Gradient Bang, claimed to be the first massively-multiplayer, fully LLM-driven game: a retro space-trading game (Factorio-like) where you cajole a ship AI into tasking other AIs. Built to explore sub-agent orchestration, partial context sharing across inference loops, long contexts and episodic memory, LLM-generated dynamic UIs, and voice input. Built on pipecat_ai plus Supabase and Vercel, fully open source.
 
 - [Indie Fox](https://x.com/indie_maker_fox/status/2043857352282255829) — 2026-04-15: Architecture diagram generator skill — github.com/Cocoon-AI/architecture-diagram-generator. Indie Fox shares an auto-generated architecture diagram for 'OpenHarness' and praises the color scheme and diagram quality.
 
@@ -1406,7 +1429,13 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (96)
+### Skills & MCP (99)
+
+- [Matthew Berman](https://x.com/matthewberman/status/2069098257444434425) — 2026-06-23: Matthew Berman announces a new Loop Library feature, Lazy Loops (aka Discover), which scans your codebase and chat threads to find potential agentic loops and designs them for you. Links the Forward-Future/loop-library GitHub repo of practical, repeatable AI-agent workflows.
+
+- [冬天](https://x.com/seventhoce56019/status/2068901168940745088) — 2026-06-23: Translated from Chinese: a writeup of reverse-skill (GitHub zhaoxuya520/reverse-skill), an AI skill package that puts reverse-engineering and security tasks behind a routing.md file so the agent self-triages across 20+ sub-skills (APK reversing, IDA static analysis, JS frontend reversing, firmware security, EDR evasion, vulnerability exploitation). Framed as lowering the barrier to security offense/defense.
+
+- [Codez](https://x.com/0xcodez/status/2064374643729773029) — 2026-06-23: A long-form Loop engineering roadmap arguing the leverage point in agentic coding has moved from writing prompts to designing self-running loops. Covers the 4-condition test for when a loop is worth building (task repeats, automated verification, token budget, senior-engineer tooling), the five building blocks (automations like /loop and /goal, git worktrees, skills, MCP connectors, sub-agents), the maker/checker split, the Ralph Wiggum quiet-failure mode, comprehension debt and cognitive surrender, and the security tax of unattended loops. Cites Anthropic engineering docs and Addy Osmani.
 
 - [Hasan Toor](https://x.com/hasantoxr/status/2066247422502957197) — 2026-06-15: Highlights Headroom, a GitHub tool by Netflix engineer Tejas Chopra that compresses everything an AI agent reads before it reaches the LLM (tool outputs, logs, files, RAG chunks, code-search results, conversation history), claiming 60-95% fewer tokens for the same answers. Ships as a Python/TypeScript library, local proxy, and MCP server, with wrappers for Claude Code, Codex, Cursor, Aider, and Copilot.
 
@@ -1600,7 +1629,11 @@
 
 - [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Anthropic released a frontend-design plugin for Claude Code — demo shows Claude creating a music player app. Install via /plugin marketplace add anthropics/claude-code and /plugin install frontend-design@claude-code-plugins.
 
-### Prompting (83)
+### Prompting (84)
+
+- [Movez](https://x.com/0xmovez/status/2068763235587694769) — 2026-06-23: Movez highlights an Andrew Ng talk on building self-improving agentic systems from scratch, quoting Ng that AI agents now handle 100% of his tasks and that self-improving loops will replace prompting within 3-6 months. Quote-tweets his own article on a 300-agent swarm running on Kimi K2.6 verified by Opus 4.8. Heavy promotional framing.
+
+- [Codez](https://x.com/0xcodez/status/2064374643729773029) — 2026-06-23: A long-form Loop engineering roadmap arguing the leverage point in agentic coding has moved from writing prompts to designing self-running loops. Covers the 4-condition test for when a loop is worth building (task repeats, automated verification, token budget, senior-engineer tooling), the five building blocks (automations like /loop and /goal, git worktrees, skills, MCP connectors, sub-agents), the maker/checker split, the Ralph Wiggum quiet-failure mode, comprehension debt and cognitive surrender, and the security tax of unattended loops. Cites Anthropic engineering docs and Addy Osmani.
 
 - [Avi Chawla](https://x.com/_avichawla/status/2065727218991735000) — 2026-06-13: Explains 'loop engineering' (framed with a Karpathy quote about removing yourself as the bottleneck and maximizing leverage): move the operator's two manual jobs — deciding what the agent runs next and checking its output — into the system itself. A schedule decides what to run, a maker loop produces the work, a separate checker agent grades the output, and a file on disk holds the shared state both read; the loop runs until done, max iterations, or budget is exhausted.
 
@@ -1690,8 +1723,6 @@
 
 - [Shaw (spirit/acc)](https://x.com/shawmakesmagic/status/2044269097647779990) — 2026-04-15: Shaw shares a reusable prompt for cleaning up "vibecoded" codebases by spawning 8 parallel subagents, each owning one cleanup task: DRY/dedup, consolidating shared types, removing unused code (knip), untangling circular deps (madge), replacing weak types (any/unknown), stripping needless defensive try/catch, removing legacy/fallback paths, and cutting AI-slop comments. Each subagent researches, writes a critical assessment, then implements high-confidence fixes.
 
-- [klöss](https://x.com/kloss_xyz/status/2044169678961234282) — 2026-04-15: klöss proposes a 4-folder repo layout to stop agents hallucinating context: /audits (proof/verify), /docs (description/describe), /plans (intent/plan), /specs (law/enforce). Separate intent from proof from law from descriptions and Claude Code / Codex / Cursor agents stop guessing what files mean.
-
 - [Kevin Simback](https://x.com/ksimback/status/2043745657748361476) — 2026-04-14: Kevin Simback shares his 'Second Brain' setup using a modified Karpathy method. Key insight: the system needs two authors — the human writes opinionated takes and decisions, the AI agent handles structured knowledge extraction and organization. Avoids both the 'LLM-wiki' problem (generic AI prose) and the 'can't keep up' problem (manual-only decay).
 
 - [Alex Finn](https://x.com/alexfinn/status/2043719233213980922) — 2026-04-14: Alex Finn shares a SOUL.md prompt philosophy inspired by Garry Tan's post: demand completeness over 'good enough,' never table things for later when the permanent solve is in reach, always ship with tests and documentation. Includes a copy-paste prompt for OpenClaw/Hermes agents.
@@ -1768,7 +1799,17 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
 
-### Research (120)
+### Research (125)
+
+- [Mario Zechner](https://x.com/badlogicgames/status/2069156188902559751) — 2026-06-23: Mario Zechner recommends a video dissecting Voxtral, a family of open-source speech models, and the foundational work behind it (audio tokenization, semantic/acoustic disaggregation). He quote-tweets Julia Turc, who frames it as what you get when you plug LLMs into voice assistants instead of a decade of handwritten rules.
+
+- [0xSero](https://x.com/0xsero/status/2069114653842522463) — 2026-06-23: 0xSero recommends an educational YouTube video explaining LoRA (Low-Rank Adaptation): how tiny trainable matrices let anyone fine-tune large AI models relatively cheaply.
+
+- [冬天](https://x.com/seventhoce56019/status/2068901168940745088) — 2026-06-23: Translated from Chinese: a writeup of reverse-skill (GitHub zhaoxuya520/reverse-skill), an AI skill package that puts reverse-engineering and security tasks behind a routing.md file so the agent self-triages across 20+ sub-skills (APK reversing, IDA static analysis, JS frontend reversing, firmware security, EDR evasion, vulnerability exploitation). Framed as lowering the barrier to security offense/defense.
+
+- [Sakana AI](https://x.com/sakanaailabs/status/2068862070062485867) — 2026-06-23: Sakana AI announces Fugu, an orchestration model that routes across a swappable pool of underlying agents rather than relying on one monolithic model. Their blog argues orchestration is the next frontier and a hedge for AI sovereignty against vendor export controls; Fugu reportedly matches leading models (Fable, Mythos) on engineering, science, and reasoning benchmarks.
+
+- [Avi Chawla](https://x.com/_avichawla/status/2068657496936616314) — 2026-06-23: Avi Chawla explains why BM25, a 30-year-old keyword ranking algorithm with no training or embeddings, still powers Elasticsearch/OpenSearch and excels at exact-match retrieval where embeddings struggle, making hybrid (BM25 + vector) search the default in top RAG systems. He closes on the UX problem of highlighting which span actually drove a semantic match, pointing to his co-founder's article.
 
 - [How To Prompt](https://x.com/howtoprompt__/status/2067176008445513800) — 2026-06-17: Engagement-farmed post claiming an open-source repo compresses 60M text chunks from 201GB to ~6GB (97% smaller) with no accuracy loss, running fully private on a standard laptop with no cloud or GPU — pitched as making vector databases obsolete. No repo link was surfaced in the post or visible replies, so the project would need to be located before the claim can be evaluated.
 
@@ -1926,7 +1967,7 @@
 
 - [0xSero](https://x.com/0xsero/status/2044165332928213243) — 2026-04-15: Guide to running large LLMs on limited hardware: use REAPs (50% savings), quantization (AWQ/GPTQ/W4A16/FP8 for fast inference; GGUF/EXL3 for compatibility; MLX for Apple silicon), and 8-bit KV cache (50-75% savings). Practical tips for local AI deployment.
 
-- [kwindla](https://x.com/kwindla/status/2044106314612408437) — 2026-04-15: kwindla (Daily.co / Pipecat) ships Gradient Bang — claims first massively multiplayer, fully LLM-driven game. Retro space-trading (Factorio-style but cajoling ship AI to task other AIs). Explores sub-agent orchestration, partial context sharing between multiple LLM inference loops, long-context + episodic memory across sessions, and dynamic UI.
+- [kwindla](https://x.com/kwindla/status/2044106314612408437) — 2026-04-15: kwindla introduces Gradient Bang, claimed to be the first massively-multiplayer, fully LLM-driven game: a retro space-trading game (Factorio-like) where you cajole a ship AI into tasking other AIs. Built to explore sub-agent orchestration, partial context sharing across inference loops, long contexts and episodic memory, LLM-generated dynamic UIs, and voice input. Built on pipecat_ai plus Supabase and Vercel, fully open source.
 
 - [How To AI](https://x.com/howtoai_/status/2043753502850351525) — 2026-04-14: How To AI covers a math paper proving every elementary function (sin, exp, log, sqrt) derives from a single binary operator: eml(x,y) = exp(x) - ln(y). Combined with the number 1, it can build pi, square roots, trig — analogous to NAND gates in digital logic. Implications for neural network architecture and potential hardware optimization.
 
@@ -2010,7 +2051,13 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: 15-part thread explaining the 'stunning, simple explanation behind matrix multiplication' — breaks down the most crucial idea behind modern machine learning. 1M views.
 
-### Industry (75)
+### Industry (78)
+
+- [Mario Zechner](https://x.com/badlogicgames/status/2069156188902559751) — 2026-06-23: Mario Zechner recommends a video dissecting Voxtral, a family of open-source speech models, and the foundational work behind it (audio tokenization, semantic/acoustic disaggregation). He quote-tweets Julia Turc, who frames it as what you get when you plug LLMs into voice assistants instead of a decade of handwritten rules.
+
+- [Dhilip Subramanian](https://x.com/sdhilip/status/2069140867466797200) — 2026-06-23: Dhilip Subramanian, a heavy dictation user (44,414 words via Wispr Flow), recommends FluidVoice: a free, open-source, locally-run macOS voice-to-text tool that needs no API key and handles slang well. He cancelled his paid plan after switching.
+
+- [Sakana AI](https://x.com/sakanaailabs/status/2068862070062485867) — 2026-06-23: Sakana AI announces Fugu, an orchestration model that routes across a swappable pool of underlying agents rather than relying on one monolithic model. Their blog argues orchestration is the next frontier and a hedge for AI sovereignty against vendor export controls; Fugu reportedly matches leading models (Fable, Mythos) on engineering, science, and reasoning benchmarks.
 
 - [Ahmad](https://x.com/theahmadosman/status/2066825976705646929) — 2026-06-17: Ahmad highlights VibeThinker 3B (built on Qwen 2.5), a 3B-parameter model he claims reaches Opus 4.5-level performance, quoting his own earlier prediction that Claude Code + Opus 4.5-quality models will run locally on a single RTX PRO 6000 before year-end. A signal on how fast small/efficient local models are closing the gap with frontier models.
 
@@ -2354,7 +2401,9 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
 
-### Questionable (94)
+### Questionable (95)
+
+- [Movez](https://x.com/0xmovez/status/2068763235587694769) — 2026-06-23: Movez highlights an Andrew Ng talk on building self-improving agentic systems from scratch, quoting Ng that AI agents now handle 100% of his tasks and that self-improving loops will replace prompting within 3-6 months. Quote-tweets his own article on a 300-agent swarm running on Kimi K2.6 verified by Opus 4.8. Heavy promotional framing.
 
 - [How To Prompt](https://x.com/howtoprompt__/status/2067176008445513800) — 2026-06-17: Engagement-farmed post claiming an open-source repo compresses 60M text chunks from 201GB to ~6GB (97% smaller) with no accuracy loss, running fully private on a standard laptop with no cloud or GPU — pitched as making vector databases obsolete. No repo link was surfaced in the post or visible replies, so the project would need to be located before the claim can be evaluated.
 
@@ -2498,9 +2547,9 @@
 
 - [Alter Ego](https://x.com/alterego_eth/status/2045093809886020058) — 2026-04-17: Alter Ego promotes Nous Research's Hermes Agent, a self-hosted agent that writes its own skills after each task, keeps persistent memory (MEMORY.md/USER.md/SQLite), and runs 24/7 on a VPS with a closed learn-improve loop every ~15 tool calls, using it to build a self-learning Polymarket weather-trading bot. Heavy promotional/profit framing.
 
-- [Punisher](https://x.com/0x_punisher/status/2044100729133019416) — 2026-04-15: [Not AI] Polymarket 'sweeper bot' guide claiming $525/day passive income by exploiting post-resolution market inefficiencies. Engagement-farming crypto content — no AI/dev relevance.
+- [Punisher](https://x.com/0x_punisher/status/2044100729133019416) — 2026-04-15: [Promotional / paid partnership] A guide to a Polymarket sweeper bot that profits not by prediction but by FIFO-queueing bids near $0.999 on already-decided markets to absorb mispriced liquidity, covering resolution detection, latency, and capital allocation. Ends with wallet/PnL claims and a Telegram funnel. Off-topic crypto money-making content rather than AI tooling.
 
-- [StacyOnChain](https://x.com/stacyonchain/status/2044069002192847200) — 2026-04-15: [Not AI] StacyOnChain shares a Polymarket bot architecture article with fractional Kelly formula and latency optimizations. Crypto/arbitrage engagement-bait, no AI/dev relevance.
+- [StacyOnChain](https://x.com/stacyonchain/status/2044069002192847200) — 2026-04-15: [Engagement-farming / crypto promo] StacyOnChain hypes an institutional-grade Polymarket bot architecture (fractional Kelly sizing, latency optimizations), urging readers to bookmark and download before it is pulled, and quote-tweets their own how-we-built-a-Polymarket-bot article. Off-topic relative to the AI tooling collection.
 
 - [Vaishnavi](https://x.com/_vmlops/status/2043624154646409708) — 2026-04-14: Vaishnavi covers Google's open-sourced Magika — an AI-powered file content type detection tool. Trained on 100M files, 200+ content types, 99% accuracy at 5ms/file. Sees through renamed malware and disguised scripts. Install via pip install magika. github.com/google/magika
 
@@ -2544,7 +2593,9 @@
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
 
-### General (84)
+### General (86)
+
+- [Ethan](https://x.com/lambethethan/status/2068958764276051987) — 2026-06-23: Ethan describes a personal wiki of ~1,000 supplements built from 150k papers and 200k health-influencer mentions, and floats handing the entire dataset to an AI agent next.
 
 - [Shenyang Deng](https://x.com/dengshenyang24/status/2065853130567279073) — 2026-06-15: [Post unavailable - page doesn't exist]
 
@@ -2582,9 +2633,11 @@
 
 - [Erick](https://x.com/ericksky/status/2044225008419922270) — 2026-04-15: [Post unavailable — login wall or deleted]
 
-- [Punisher](https://x.com/0x_punisher/status/2044100729133019416) — 2026-04-15: [Not AI] Polymarket 'sweeper bot' guide claiming $525/day passive income by exploiting post-resolution market inefficiencies. Engagement-farming crypto content — no AI/dev relevance.
+- [Paul Bakaus](https://x.com/pbakaus/status/2044118871326765541) — 2026-04-15: Paul Bakaus praises Matt Sims (English PhD plus ML/startup background) for building in the open at the intersection of creativity, storytelling, and AI. Quote-tweets Sims on teaching Claude Code to think systematically, getting consistent answers to recurring review-for-security / sufficient-tests / update-instruction-files prompts.
 
-- [StacyOnChain](https://x.com/stacyonchain/status/2044069002192847200) — 2026-04-15: [Not AI] StacyOnChain shares a Polymarket bot architecture article with fractional Kelly formula and latency optimizations. Crypto/arbitrage engagement-bait, no AI/dev relevance.
+- [Punisher](https://x.com/0x_punisher/status/2044100729133019416) — 2026-04-15: [Promotional / paid partnership] A guide to a Polymarket sweeper bot that profits not by prediction but by FIFO-queueing bids near $0.999 on already-decided markets to absorb mispriced liquidity, covering resolution detection, latency, and capital allocation. Ends with wallet/PnL claims and a Telegram funnel. Off-topic crypto money-making content rather than AI tooling.
+
+- [StacyOnChain](https://x.com/stacyonchain/status/2044069002192847200) — 2026-04-15: [Engagement-farming / crypto promo] StacyOnChain hypes an institutional-grade Polymarket bot architecture (fractional Kelly sizing, latency optimizations), urging readers to bookmark and download before it is pulled, and quote-tweets their own how-we-built-a-Polymarket-bot article. Off-topic relative to the AI tooling collection.
 
 - [Recogard](https://x.com/recogard/status/2042356576032358505) — 2026-04-10: 36 GB dataset of 72 million Polymarket trades available free on GitHub for prediction market analysis. Includes tools to build trading strategies from historical market data — analyze price behavior before resolution, compare category volatility, and find repeating patterns.
 
@@ -2718,6 +2771,36 @@
 ## Full Chronological List
 
 ### Jun 2026
+
+- **2026-06-23** | [Mario Zechner](https://x.com/badlogicgames/status/2069156188902559751) | research, industry
+  Mario Zechner recommends a video dissecting Voxtral, a family of open-source speech models, and the foundational work behind it (audio tokenization, semantic/acoustic disaggregation). He quote-tweets Julia Turc, who frames it as what you get when you plug LLMs into voice assistants instead of a decade of handwritten rules.
+
+- **2026-06-23** | [Dhilip Subramanian](https://x.com/sdhilip/status/2069140867466797200) | industry, dev-practices
+  Dhilip Subramanian, a heavy dictation user (44,414 words via Wispr Flow), recommends FluidVoice: a free, open-source, locally-run macOS voice-to-text tool that needs no API key and handles slang well. He cancelled his paid plan after switching.
+
+- **2026-06-23** | [0xSero](https://x.com/0xsero/status/2069114653842522463) | research
+  0xSero recommends an educational YouTube video explaining LoRA (Low-Rank Adaptation): how tiny trainable matrices let anyone fine-tune large AI models relatively cheaply.
+
+- **2026-06-23** | [Matthew Berman](https://x.com/matthewberman/status/2069098257444434425) | agent-design, skills-mcp, dev-practices
+  Matthew Berman announces a new Loop Library feature, Lazy Loops (aka Discover), which scans your codebase and chat threads to find potential agentic loops and designs them for you. Links the Forward-Future/loop-library GitHub repo of practical, repeatable AI-agent workflows.
+
+- **2026-06-23** | [Ethan](https://x.com/lambethethan/status/2068958764276051987) | agent-design, general
+  Ethan describes a personal wiki of ~1,000 supplements built from 150k papers and 200k health-influencer mentions, and floats handing the entire dataset to an AI agent next.
+
+- **2026-06-23** | [冬天](https://x.com/seventhoce56019/status/2068901168940745088) | skills-mcp, agent-design, research
+  Translated from Chinese: a writeup of reverse-skill (GitHub zhaoxuya520/reverse-skill), an AI skill package that puts reverse-engineering and security tasks behind a routing.md file so the agent self-triages across 20+ sub-skills (APK reversing, IDA static analysis, JS frontend reversing, firmware security, EDR evasion, vulnerability exploitation). Framed as lowering the barrier to security offense/defense.
+
+- **2026-06-23** | [Sakana AI](https://x.com/sakanaailabs/status/2068862070062485867) | agent-design, industry, research
+  Sakana AI announces Fugu, an orchestration model that routes across a swappable pool of underlying agents rather than relying on one monolithic model. Their blog argues orchestration is the next frontier and a hedge for AI sovereignty against vendor export controls; Fugu reportedly matches leading models (Fable, Mythos) on engineering, science, and reasoning benchmarks.
+
+- **2026-06-23** | [Movez](https://x.com/0xmovez/status/2068763235587694769) | agent-design, prompting, questionable
+  Movez highlights an Andrew Ng talk on building self-improving agentic systems from scratch, quoting Ng that AI agents now handle 100% of his tasks and that self-improving loops will replace prompting within 3-6 months. Quote-tweets his own article on a 300-agent swarm running on Kimi K2.6 verified by Opus 4.8. Heavy promotional framing.
+
+- **2026-06-23** | [Avi Chawla](https://x.com/_avichawla/status/2068657496936616314) | research, agent-design, dev-practices
+  Avi Chawla explains why BM25, a 30-year-old keyword ranking algorithm with no training or embeddings, still powers Elasticsearch/OpenSearch and excels at exact-match retrieval where embeddings struggle, making hybrid (BM25 + vector) search the default in top RAG systems. He closes on the UX problem of highlighting which span actually drove a semantic match, pointing to his co-founder's article.
+
+- **2026-06-23** | [Codez](https://x.com/0xcodez/status/2064374643729773029) | agent-design, dev-practices, claude-code, skills-mcp, prompting
+  A long-form Loop engineering roadmap arguing the leverage point in agentic coding has moved from writing prompts to designing self-running loops. Covers the 4-condition test for when a loop is worth building (task repeats, automated verification, token budget, senior-engineer tooling), the five building blocks (automations like /loop and /goal, git worktrees, skills, MCP connectors, sub-agents), the maker/checker split, the Ralph Wiggum quiet-failure mode, comprehension debt and cognitive surrender, and the security tax of unattended loops. Cites Anthropic engineering docs and Addy Osmani.
 
 - **2026-06-17** | [How To Prompt](https://x.com/howtoprompt__/status/2067176008445513800) | research, questionable
   Engagement-farmed post claiming an open-source repo compresses 60M text chunks from 201GB to ~6GB (97% smaller) with no accuracy loss, running fully private on a standard laptop with no cloud or GPU — pitched as making vector databases obsolete. No repo link was surfaced in the post or visible replies, so the project would need to be located before the claim can be evaluated.
@@ -3587,23 +3670,23 @@
 - **2026-04-15** | [mr-r0b0t](https://x.com/mr_r0b0t/status/2044199154004472009) | agent-design, dev-practices
   Amplifies a tip on a 3-tool agent web stack: SearXNG for candidate source discovery, Firecrawl for known-URL scraping, Camofox for JS/interaction browser fallback. Described as essential for any agent doing web search or scraping.
 
-- **2026-04-15** | [klöss](https://x.com/kloss_xyz/status/2044169678961234282) | claude-code, dev-practices, prompting
-  klöss proposes a 4-folder repo layout to stop agents hallucinating context: /audits (proof/verify), /docs (description/describe), /plans (intent/plan), /specs (law/enforce). Separate intent from proof from law from descriptions and Claude Code / Codex / Cursor agents stop guessing what files mean.
+- **2026-04-15** | [klöss](https://x.com/kloss_xyz/status/2044169678961234282) | agent-design, claude-code, dev-practices
+  klss argues agents fail across repos because of unstructured markdown, and proposes a four-folder convention to remove ambiguity: /audits (proof), /docs (description), /plans (intent), /specs (law). Separating intent from proof from law stops Claude Code, Codex, and Cursor agents from hallucinating context.
 
 - **2026-04-15** | [0xSero](https://x.com/0xsero/status/2044165332928213243) | research, dev-practices
   Guide to running large LLMs on limited hardware: use REAPs (50% savings), quantization (AWQ/GPTQ/W4A16/FP8 for fast inference; GGUF/EXL3 for compatibility; MLX for Apple silicon), and 8-bit KV cache (50-75% savings). Practical tips for local AI deployment.
 
-- **2026-04-15** | [Paul Bakaus](https://x.com/pbakaus/status/2044118871326765541) | claude-code, dev-practices
-  Paul Bakaus endorses Matthew Sims (@mbwsims) who is building in the open at the intersection of creativity, storytelling and AI (English PhD + ML/startup background). Quotes Matt's post on teaching Claude Code to think systematically — tired of repeating the same security/testing/pattern-review prompts with inconsistent answers.
+- **2026-04-15** | [Paul Bakaus](https://x.com/pbakaus/status/2044118871326765541) | claude-code, agent-design, general
+  Paul Bakaus praises Matt Sims (English PhD plus ML/startup background) for building in the open at the intersection of creativity, storytelling, and AI. Quote-tweets Sims on teaching Claude Code to think systematically, getting consistent answers to recurring review-for-security / sufficient-tests / update-instruction-files prompts.
 
-- **2026-04-15** | [kwindla](https://x.com/kwindla/status/2044106314612408437) | agent-design, research
-  kwindla (Daily.co / Pipecat) ships Gradient Bang — claims first massively multiplayer, fully LLM-driven game. Retro space-trading (Factorio-style but cajoling ship AI to task other AIs). Explores sub-agent orchestration, partial context sharing between multiple LLM inference loops, long-context + episodic memory across sessions, and dynamic UI.
+- **2026-04-15** | [kwindla](https://x.com/kwindla/status/2044106314612408437) | agent-design, research, dev-practices
+  kwindla introduces Gradient Bang, claimed to be the first massively-multiplayer, fully LLM-driven game: a retro space-trading game (Factorio-like) where you cajole a ship AI into tasking other AIs. Built to explore sub-agent orchestration, partial context sharing across inference loops, long contexts and episodic memory, LLM-generated dynamic UIs, and voice input. Built on pipecat_ai plus Supabase and Vercel, fully open source.
 
 - **2026-04-15** | [Punisher](https://x.com/0x_punisher/status/2044100729133019416) | questionable, general
-  [Not AI] Polymarket 'sweeper bot' guide claiming $525/day passive income by exploiting post-resolution market inefficiencies. Engagement-farming crypto content — no AI/dev relevance.
+  [Promotional / paid partnership] A guide to a Polymarket sweeper bot that profits not by prediction but by FIFO-queueing bids near $0.999 on already-decided markets to absorb mispriced liquidity, covering resolution detection, latency, and capital allocation. Ends with wallet/PnL claims and a Telegram funnel. Off-topic crypto money-making content rather than AI tooling.
 
 - **2026-04-15** | [StacyOnChain](https://x.com/stacyonchain/status/2044069002192847200) | questionable, general
-  [Not AI] StacyOnChain shares a Polymarket bot architecture article with fractional Kelly formula and latency optimizations. Crypto/arbitrage engagement-bait, no AI/dev relevance.
+  [Engagement-farming / crypto promo] StacyOnChain hypes an institutional-grade Polymarket bot architecture (fractional Kelly sizing, latency optimizations), urging readers to bookmark and download before it is pulled, and quote-tweets their own how-we-built-a-Polymarket-bot article. Off-topic relative to the AI tooling collection.
 
 - **2026-04-15** | [Garry Tan](https://x.com/garrytan/status/2044059516497711522) | management, industry
   Garry Tan endorses Alfred Lin's (Sequoia) article 'Heat Seeking Missile for Pain' — on founders who actively seek out the hairiest, gnarliest problems and surgically blow them up. References Zipline's Keller.
