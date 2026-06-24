@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-06-24T15:52:24Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-06-24T17:06:53Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-06-23** — [Dhilip Subramanian](https://x.com/sdhilip/status/2069140867466797200) — *near-term • Industry • 163.1K views • v1 enriched*  
@@ -35,23 +35,23 @@
 
 
 ### Revisit from last month
-- **2026-03-13** — [Garry Tan](https://x.com/garrytan/status/2032196172430131498) — *now • Claude Code • 876.6K views • v1 enriched*  
-  Garry Tan shares a CTO's testimonial that his open-source gstack ('god mode') flagged a subtle cross-site-scripting vulnerability the team wasn't aware of, predicting 90%+ of new repos will adopt it. gstack is MIT-licensed at github.com/garrytan/gstack and installs into local Claude Code and into a repo for teammates with two pastes.
-- **2026-03-15** — [Huaxiu Yao](https://x.com/huaxiuyaoml/status/2033038170653405308) — *near-term • Research • 88K views • v1 enriched*  
-  Huaxiu Yao announces AutoResearchClaw, which automates the full research loop beyond Karpathy's autoresearch experiment loop: one message in, a full conference paper out with real experiments, verified citations, and code. It mines arXiv and Semantic Scholar (50+ papers), has three agents fight over the best hypothesis, writes and self-debugs experiment code, and pivots when results are weak — no human in the loop.
+- **2026-03-07** — [Anish Moonka](https://x.com/anisha_moonka/status/2030015356383691121) — *near-term • Management • 257.2K views • v1 enriched*  
+  Anish Moonka's 12-point notes from Boris Cherny (Head of Claude Code) on Lenny's Podcast: coding is largely solved (Boris ships 10-30 PRs/day, no hand-written code since Nov 2025); the next frontier is AI deciding what to build; productivity per Anthropic engineer is up 200%; underfund teams on purpose; give engineers unlimited tokens; the Bitter Lesson favors general models over rigid orchestration; build for the model six months out; latent demand is the best product signal; 'software engineer' is becoming 'builder'; mechanistic interpretability enables layered safety; and 70% of engineers/PMs enjoy their jobs more now.
+- **2026-03-07** — [Numman Ali](https://x.com/nummanali/status/2030012892192309461) — *near-term • Dev Practices • 810.3K views • v1 enriched*  
+  Numman Ali strongly recommends a deeply technical article, 'Your LLM Doesn't Write Correct Code. It Writes Plausible Code,' praising its articulation of the plausible-vs-correct distinction in LLM output — illustrated by a 100-row primary-key lookup where SQLite takes 0.09ms but an LLM-generated Rust rewrite takes 1,815.43ms.
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 322 | 49.8% |
+| agent-design | 324 | 50.2% |
 | claude-code | 155 | 24.0% |
-| dev-practices | 187 | 28.9% |
-| skills-mcp | 105 | 16.3% |
-| prompting | 86 | 13.3% |
+| dev-practices | 189 | 29.3% |
+| skills-mcp | 106 | 16.4% |
+| prompting | 87 | 13.5% |
 | research | 124 | 19.2% |
 | industry | 79 | 12.2% |
-| management | 95 | 14.7% |
+| management | 98 | 15.2% |
 | questionable | 101 | 15.6% |
 | general | 83 | 12.8% |
 
@@ -113,7 +113,7 @@
 ---
 ## Posts by Topic
 
-### Agent Design (322)
+### Agent Design (324)
 
 - [Matthew Berman](https://x.com/matthewberman/status/2069098257444434425) — 2026-06-23: Matthew Berman announces a new Loop Library feature, Lazy Loops (aka Discover), which scans your codebase and chat threads to find potential agentic loops and designs them for you. Links the Forward-Future/loop-library GitHub repo of practical, repeatable AI-agent workflows.
 
@@ -599,21 +599,25 @@
 
 - [Garry Tan](https://x.com/garrytan/status/2032196172430131498) — 2026-03-13: Garry Tan shares a CTO's testimonial that his open-source gstack ('god mode') flagged a subtle cross-site-scripting vulnerability the team wasn't aware of, predicting 90%+ of new repos will adopt it. gstack is MIT-licensed at github.com/garrytan/gstack and installs into local Claude Code and into a repo for teammates with two pastes.
 
-- [elvis](https://x.com/omarsar0/status/2031727864199208972) — 2026-03-12: EvoSkill: a framework where three agents (Executor, Proposer, Skill-Builder) iteratively discover and refine their own capabilities by analyzing failures. Improved Claude Code + Opus 4.5 accuracy from 60.6% to 67.9%, with zero-shot skill transfer across benchmarks.
+- [elvis](https://x.com/omarsar0/status/2031727864199208972) — 2026-03-12: elvis highlights EvoSkill, a self-evolving multi-agent framework that automatically discovers and refines agent skills through iterative failure analysis. Three agents (Executor, Proposer, Skill-Builder) drive the loop, with a Pareto frontier retaining only skills that improve held-out validation while the base model stays frozen. Reported gains: Claude Code w/ Opus 4.5 from 60.6%->67.9% on OfficeQA, +12.1% on SealQA, and +5.3% zero-shot transfer to BrowseComp.
 
-- [Viv](https://x.com/vtrivedy10/status/2031411814232187109) — 2026-03-11: LangChain's deep-dive on agent harness engineering: Agent = Model + Harness. Covers filesystems, code execution, sandboxes, context rot, and why the best harness for your model isn't the default one.
+- [Viv](https://x.com/vtrivedy10/status/2031411814232187109) — 2026-03-11: Viv (LangChain applied research) shares a LangChain blog taking a first-principles look at why agent harnesses exist and how they help craft good product experiences and correct model failure modes. It covers filesystems, code execution, sandboxes, context rot, and ralph loops, arguing the best harness for your model probably isn't the one it shipped with.
 
-- [Dominik Tornow](https://x.com/dominiktornow/status/2031233587819983096) — 2026-03-10: [Content not extracted — likely image or video post.]
+- [Dominik Tornow](https://x.com/dominiktornow/status/2031233587819983096) — 2026-03-10: Dominik Tornow: the new core skill in software engineering is designing feedback loops. He quotes OpenAI Developers on a small team steering Codex to open and merge 1,500 pull requests for a product used by hundreds of internal users, with zero manual coding.
 
-- [Suhail Gupta](https://x.com/audiinidesign/status/2031213732941230240) — 2026-03-10: Shares Harrison Chase's article on how coding agents are reshaping the EPD (Engineering, Product, Design) org structure. Predicts this shift will become much more visible in the coming months.
+- [Suhail Gupta](https://x.com/audiinidesign/status/2031213732941230240) — 2026-03-10: Suhail Gupta endorses Harrison Chase's article 'How Coding Agents Are Reshaping Engineering, Product and Design,' agreeing the EPD blur toward functional software over separate roles will only become more visible and obvious in the coming months.
 
-- [Daniel Miessler](https://x.com/danielmiessler/status/2030436867745923347) — 2026-03-08: Highlights Karpathy's autoresearch project as underappreciated. References earlier predictions that automating ML research is the ultimate AI endgame. Karpathy's minimal repo is ~630 lines for single-GPU use.
+- [Boris Cherny](https://x.com/bcherny/status/2031089411820228645) — 2026-03-10: Boris Cherny announces Code Review in Claude Code: when a PR opens, a team of agents runs a deep review to hunt for bugs. Built internally first because code output per Anthropic engineer is up 200% this year and review had become the bottleneck; he says it catches many real bugs he'd otherwise miss.
 
-- [GitHub Projects Community](https://x.com/githubprojects/status/2030346933009821801) — 2026-03-08: Advocates for a structured build loop over free-form code generation: idea → roadmap → small tasks → isolated execution → commit. Produces cleaner repos and clearer progress.
+- [0xSero](https://x.com/0xsero/status/2030653670375751942) — 2026-03-08: 0xSero shares advice from Factory's Leo: take screenshots and videos of everything you've built, then review it. Combined with automated QA, this yields a semi-autonomous build/verify system. Links a podcast episode.
 
-- [Anish Moonka](https://x.com/anisha_moonka/status/2030015356383691121) — 2026-03-07: Detailed 12-point summary of Boris Cherny (Head of Claude Code) on Lenny's Podcast. Key takeaways: coding is largely solved, 200% productivity gains at Anthropic, underfund teams to force AI adoption, give unlimited tokens, build for the model 6 months out, the Bitter Lesson applies everywhere.
+- [Daniel Miessler](https://x.com/danielmiessler/status/2030436867745923347) — 2026-03-08: Daniel Miessler flags Karpathy's new self-contained 'autoresearch' repo (nanochat training core stripped to a single-GPU, ~630-line file the human iterates on) as under-appreciated, tying it to the long-discussed goal of automating ML research and predicting it will accelerate progress again.
 
-- [Jamie Quint](https://x.com/jamiequint/status/2029951631534739951) — 2026-03-07: Article on building data agents in 2026 — claims 80% reduction in data team headcount is achievable. Author built Notion's initial data stack and has been consulting on AI-driven data solutions.
+- [Alex Prompter](https://x.com/godofprompt/status/2030434641019072867) — 2026-03-08: Alex Prompter (co-founder @godofprompt) shares affaan-m/ECC on GitHub, described as an agent-harness performance-optimization system built around skills and instincts.
+
+- [GitHub Projects Community](https://x.com/githubprojects/status/2030346933009821801) — 2026-03-08: GitHub Projects Community: rather than using AI to generate code directly, let it run a structured build loop — idea -> roadmap -> small tasks -> execute each task in isolation -> commit — for cleaner repos, clearer progress, and far less AI chaos.
+
+- [Jamie Quint](https://x.com/jamiequint/status/2029951631534739951) — 2026-03-07: Jamie Quint (built Notion's early data stack in 2020) shares his article 'How to Build a Data Agent in 2026,' claiming the approach can cut a company's projected data-team headcount by ~80% this year.
 
 - [Jayden](https://x.com/thejayden/status/2029899328400109732) — 2026-03-06: Recommends Jim Prosser's article on building a 'Chief of Staff' with Claude Code as one of the best real-world examples of agentic systems — not AI slop, but genuinely useful architecture.
 
@@ -989,11 +993,11 @@
 
 - [Garry Tan](https://x.com/garrytan/status/2032196172430131498) — 2026-03-13: Garry Tan shares a CTO's testimonial that his open-source gstack ('god mode') flagged a subtle cross-site-scripting vulnerability the team wasn't aware of, predicting 90%+ of new repos will adopt it. gstack is MIT-licensed at github.com/garrytan/gstack and installs into local Claude Code and into a repo for teammates with two pastes.
 
-- [Ming "Tommy" Tang](https://x.com/tangming2005/status/2031358195558658266) — 2026-03-11: Best CLAUDE.md tip: when reporting a bug, don't try to fix it first — write a test that reproduces it, then have subagents fix and prove it with a passing test. 574K views.
+- [Ming "Tommy" Tang](https://x.com/tangming2005/status/2031358195558658266) — 2026-03-11: Tommy Tang's single biggest CLAUDE.md improvement: when a bug is reported, don't start by fixing it. Start by writing a test that reproduces the bug, then have subagents try to fix it and prove the fix with a passing test.
 
-- [Boris Cherny](https://x.com/bcherny/status/2031089411820228645) — 2026-03-10: Announcing Claude Code Review: a team of agents runs deep review on every PR. Built internally at Anthropic first, where engineer output is up 200% and reviews were the bottleneck. Catches real bugs humans miss.
+- [Boris Cherny](https://x.com/bcherny/status/2031089411820228645) — 2026-03-10: Boris Cherny announces Code Review in Claude Code: when a PR opens, a team of agents runs a deep review to hunt for bugs. Built internally first because code output per Anthropic engineer is up 200% this year and review had become the bottleneck; he says it catches many real bugs he'd otherwise miss.
 
-- [Anish Moonka](https://x.com/anisha_moonka/status/2030015356383691121) — 2026-03-07: Detailed 12-point summary of Boris Cherny (Head of Claude Code) on Lenny's Podcast. Key takeaways: coding is largely solved, 200% productivity gains at Anthropic, underfund teams to force AI adoption, give unlimited tokens, build for the model 6 months out, the Bitter Lesson applies everywhere.
+- [Anish Moonka](https://x.com/anisha_moonka/status/2030015356383691121) — 2026-03-07: Anish Moonka's 12-point notes from Boris Cherny (Head of Claude Code) on Lenny's Podcast: coding is largely solved (Boris ships 10-30 PRs/day, no hand-written code since Nov 2025); the next frontier is AI deciding what to build; productivity per Anthropic engineer is up 200%; underfund teams on purpose; give engineers unlimited tokens; the Bitter Lesson favors general models over rigid orchestration; build for the model six months out; latent demand is the best product signal; 'software engineer' is becoming 'builder'; mechanistic interpretability enables layered safety; and 70% of engineers/PMs enjoy their jobs more now.
 
 - [Nate.Google](https://x.com/nate_google_/status/2029941042133262721) — 2026-03-07: Recommends Ruben Hassid's guide to setting up Claude Cowork as the best available walkthrough. References that software stocks lost $830B in 6 days after Claude's Cowork release.
 
@@ -1071,7 +1075,7 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (187)
+### Dev Practices (189)
 
 - [Dhilip Subramanian](https://x.com/sdhilip/status/2069140867466797200) — 2026-06-23: Dhilip Subramanian, a heavy dictation user (44,414 words via Wispr Flow), recommends FluidVoice: a free, open-source, locally-run macOS voice-to-text tool that needs no API key and handles slang well. He cancelled his paid plan after switching.
 
@@ -1337,15 +1341,19 @@
 
 - [Garry Tan](https://x.com/garrytan/status/2032196172430131498) — 2026-03-13: Garry Tan shares a CTO's testimonial that his open-source gstack ('god mode') flagged a subtle cross-site-scripting vulnerability the team wasn't aware of, predicting 90%+ of new repos will adopt it. gstack is MIT-licensed at github.com/garrytan/gstack and installs into local Claude Code and into a repo for teammates with two pastes.
 
-- [Ming "Tommy" Tang](https://x.com/tangming2005/status/2031358195558658266) — 2026-03-11: Best CLAUDE.md tip: when reporting a bug, don't try to fix it first — write a test that reproduces it, then have subagents fix and prove it with a passing test. 574K views.
+- [Viv](https://x.com/vtrivedy10/status/2031411814232187109) — 2026-03-11: Viv (LangChain applied research) shares a LangChain blog taking a first-principles look at why agent harnesses exist and how they help craft good product experiences and correct model failure modes. It covers filesystems, code execution, sandboxes, context rot, and ralph loops, arguing the best harness for your model probably isn't the one it shipped with.
 
-- [Boris Cherny](https://x.com/bcherny/status/2031089411820228645) — 2026-03-10: Announcing Claude Code Review: a team of agents runs deep review on every PR. Built internally at Anthropic first, where engineer output is up 200% and reviews were the bottleneck. Catches real bugs humans miss.
+- [Ming "Tommy" Tang](https://x.com/tangming2005/status/2031358195558658266) — 2026-03-11: Tommy Tang's single biggest CLAUDE.md improvement: when a bug is reported, don't start by fixing it. Start by writing a test that reproduces the bug, then have subagents try to fix it and prove the fix with a passing test.
 
-- [0xSero](https://x.com/0xsero/status/2030653670375751942) — 2026-03-08: Advice from Factory's Leo: screenshot and record everything you build, then review it. Combined with automated QA, creates a semi-autonomous development review system.
+- [Dominik Tornow](https://x.com/dominiktornow/status/2031233587819983096) — 2026-03-10: Dominik Tornow: the new core skill in software engineering is designing feedback loops. He quotes OpenAI Developers on a small team steering Codex to open and merge 1,500 pull requests for a product used by hundreds of internal users, with zero manual coding.
 
-- [GitHub Projects Community](https://x.com/githubprojects/status/2030346933009821801) — 2026-03-08: Advocates for a structured build loop over free-form code generation: idea → roadmap → small tasks → isolated execution → commit. Produces cleaner repos and clearer progress.
+- [Boris Cherny](https://x.com/bcherny/status/2031089411820228645) — 2026-03-10: Boris Cherny announces Code Review in Claude Code: when a PR opens, a team of agents runs a deep review to hunt for bugs. Built internally first because code output per Anthropic engineer is up 200% this year and review had become the bottleneck; he says it catches many real bugs he'd otherwise miss.
 
-- [Numman Ali](https://x.com/nummanali/status/2030012892192309461) — 2026-03-07: Shares 'Your LLM Doesn't Write Correct Code, It Writes Plausible Code' — demonstrates a 20,000x performance gap between SQLite and LLM-generated Rust for a simple primary key lookup. Argues the plausibility-vs-correctness distinction is critical.
+- [0xSero](https://x.com/0xsero/status/2030653670375751942) — 2026-03-08: 0xSero shares advice from Factory's Leo: take screenshots and videos of everything you've built, then review it. Combined with automated QA, this yields a semi-autonomous build/verify system. Links a podcast episode.
+
+- [GitHub Projects Community](https://x.com/githubprojects/status/2030346933009821801) — 2026-03-08: GitHub Projects Community: rather than using AI to generate code directly, let it run a structured build loop — idea -> roadmap -> small tasks -> execute each task in isolation -> commit — for cleaner repos, clearer progress, and far less AI chaos.
+
+- [Numman Ali](https://x.com/nummanali/status/2030012892192309461) — 2026-03-07: Numman Ali strongly recommends a deeply technical article, 'Your LLM Doesn't Write Correct Code. It Writes Plausible Code,' praising its articulation of the plausible-vs-correct distinction in LLM output — illustrated by a 100-row primary-key lookup where SQLite takes 0.09ms but an LLM-generated Rust rewrite takes 1,815.43ms.
 
 - [Alex Prompter](https://x.com/alex_prompter/status/2029961559615607052) — 2026-03-06: GitHub analyzed 2,500+ repos finding agents.md files are too vague. Best practices: single-purpose agents, exact executable commands, three-tier boundaries (Always/Ask first/Never), code examples over descriptions, specific stack versions. Treat it like an onboarding doc.
 
@@ -1447,7 +1455,7 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (105)
+### Skills & MCP (106)
 
 - [Matthew Berman](https://x.com/matthewberman/status/2069098257444434425) — 2026-06-23: Matthew Berman announces a new Loop Library feature, Lazy Loops (aka Discover), which scans your codebase and chat threads to find potential agentic loops and designs them for you. Links the Forward-Future/loop-library GitHub repo of practical, repeatable AI-agent workflows.
 
@@ -1617,7 +1625,9 @@
 
 - [Garry Tan](https://x.com/garrytan/status/2032196172430131498) — 2026-03-13: Garry Tan shares a CTO's testimonial that his open-source gstack ('god mode') flagged a subtle cross-site-scripting vulnerability the team wasn't aware of, predicting 90%+ of new repos will adopt it. gstack is MIT-licensed at github.com/garrytan/gstack and installs into local Claude Code and into a repo for teammates with two pastes.
 
-- [elvis](https://x.com/omarsar0/status/2031727864199208972) — 2026-03-12: EvoSkill: a framework where three agents (Executor, Proposer, Skill-Builder) iteratively discover and refine their own capabilities by analyzing failures. Improved Claude Code + Opus 4.5 accuracy from 60.6% to 67.9%, with zero-shot skill transfer across benchmarks.
+- [elvis](https://x.com/omarsar0/status/2031727864199208972) — 2026-03-12: elvis highlights EvoSkill, a self-evolving multi-agent framework that automatically discovers and refines agent skills through iterative failure analysis. Three agents (Executor, Proposer, Skill-Builder) drive the loop, with a Pareto frontier retaining only skills that improve held-out validation while the base model stays frozen. Reported gains: Claude Code w/ Opus 4.5 from 60.6%->67.9% on OfficeQA, +12.1% on SealQA, and +5.3% zero-shot transfer to BrowseComp.
+
+- [Alex Prompter](https://x.com/godofprompt/status/2030434641019072867) — 2026-03-08: Alex Prompter (co-founder @godofprompt) shares affaan-m/ECC on GitHub, described as an agent-harness performance-optimization system built around skills and instincts.
 
 - [Philipp Schmid](https://x.com/_philschmid/status/2029570052530360719) — 2026-03-06: Practical guide to evaluating agent skills: define success criteria across outcome, style, and efficiency; create deterministic test prompts; add LLM-as-judge for qualitative checks; iterate on failures.
 
@@ -1659,7 +1669,7 @@
 
 - [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Anthropic released a frontend-design plugin for Claude Code — demo shows Claude creating a music player app. Install via /plugin marketplace add anthropics/claude-code and /plugin install frontend-design@claude-code-plugins.
 
-### Prompting (86)
+### Prompting (87)
 
 - [Movez](https://x.com/0xmovez/status/2068763235587694769) — 2026-06-23: Movez highlights an Andrew Ng talk on building self-improving agentic systems from scratch, quoting Ng that AI agents now handle 100% of his tasks and that self-improving loops will replace prompting within 3-6 months. Quote-tweets his own article on a 300-agent swarm running on Kimi K2.6 verified by Opus 4.8. Heavy promotional framing.
 
@@ -1777,9 +1787,11 @@
 
 - [Ole Lehmann](https://x.com/itsolelehmann/status/2033982679423848802) — 2026-03-18: Ole Lehmann shares a single skill that auto-improves any other skill using Karpathy's autoresearch method: it runs the skill and scores the output, finds what's failing, makes one small change to the skill prompt, re-runs to check the score, keeps or reverts the change, and repeats until the skill works. Article: 'How to 10x your Claude Skills'.
 
-- [Ming "Tommy" Tang](https://x.com/tangming2005/status/2031358195558658266) — 2026-03-11: Best CLAUDE.md tip: when reporting a bug, don't try to fix it first — write a test that reproduces it, then have subagents fix and prove it with a passing test. 574K views.
+- [Ming "Tommy" Tang](https://x.com/tangming2005/status/2031358195558658266) — 2026-03-11: Tommy Tang's single biggest CLAUDE.md improvement: when a bug is reported, don't start by fixing it. Start by writing a test that reproduces the bug, then have subagents try to fix it and prove the fix with a passing test.
 
-- [God of Prompt](https://x.com/godofprompt/status/2030434641019072867) — 2026-03-08: [Image/video only — no text content extracted.]
+- [kapilansh](https://x.com/kapilansh_twt/status/2031262184442130863) — 2026-03-11: kapilansh argues most devs learning AI only know how to call an API and write a prompt without understanding what happens inside, and recommends Karpathy's 'Neural Networks: Zero to Hero' playlist (micrograd, makemore, attention from scratch, tokenization, training GPT-2) as the genuine fix for that knowledge gap.
+
+- [Numman Ali](https://x.com/nummanali/status/2030012892192309461) — 2026-03-07: Numman Ali strongly recommends a deeply technical article, 'Your LLM Doesn't Write Correct Code. It Writes Plausible Code,' praising its articulation of the plausible-vs-correct distinction in LLM output — illustrated by a 100-row primary-key lookup where SQLite takes 0.09ms but an LLM-generated Rust rewrite takes 1,815.43ms.
 
 - [Alex Prompter](https://x.com/alex_prompter/status/2029961559615607052) — 2026-03-06: GitHub analyzed 2,500+ repos finding agents.md files are too vague. Best practices: single-purpose agents, exact executable commands, three-tier boundaries (Always/Ask first/Never), code examples over descriptions, specific stack versions. Treat it like an onboarding doc.
 
@@ -2029,13 +2041,13 @@
 
 - [kpaxs](https://x.com/kpaxs/status/2032345995095179680) — 2026-03-13: [Login wall — content not extracted. Custom subject suggests a mental model or heuristic worth revisiting.]
 
-- [elvis](https://x.com/omarsar0/status/2031727864199208972) — 2026-03-12: EvoSkill: a framework where three agents (Executor, Proposer, Skill-Builder) iteratively discover and refine their own capabilities by analyzing failures. Improved Claude Code + Opus 4.5 accuracy from 60.6% to 67.9%, with zero-shot skill transfer across benchmarks.
+- [elvis](https://x.com/omarsar0/status/2031727864199208972) — 2026-03-12: elvis highlights EvoSkill, a self-evolving multi-agent framework that automatically discovers and refines agent skills through iterative failure analysis. Three agents (Executor, Proposer, Skill-Builder) drive the loop, with a Pareto frontier retaining only skills that improve held-out validation while the base model stays frozen. Reported gains: Claude Code w/ Opus 4.5 from 60.6%->67.9% on OfficeQA, +12.1% on SealQA, and +5.3% zero-shot transfer to BrowseComp.
 
-- [kapilansh](https://x.com/kapilansh_twt/status/2031262184442130863) — 2026-03-11: Recommends Karpathy's 'Neural Networks: Zero to Hero' as essential for devs who use AI APIs without understanding the internals. Covers backprop, language models, attention, tokenization, and GPT-2 training from scratch.
+- [kapilansh](https://x.com/kapilansh_twt/status/2031262184442130863) — 2026-03-11: kapilansh argues most devs learning AI only know how to call an API and write a prompt without understanding what happens inside, and recommends Karpathy's 'Neural Networks: Zero to Hero' playlist (micrograd, makemore, attention from scratch, tokenization, training GPT-2) as the genuine fix for that knowledge gap.
 
-- [Daniel Miessler](https://x.com/danielmiessler/status/2030436867745923347) — 2026-03-08: Highlights Karpathy's autoresearch project as underappreciated. References earlier predictions that automating ML research is the ultimate AI endgame. Karpathy's minimal repo is ~630 lines for single-GPU use.
+- [Daniel Miessler](https://x.com/danielmiessler/status/2030436867745923347) — 2026-03-08: Daniel Miessler flags Karpathy's new self-contained 'autoresearch' repo (nanochat training core stripped to a single-GPU, ~630-line file the human iterates on) as under-appreciated, tying it to the long-discussed goal of automating ML research and predicting it will accelerate progress again.
 
-- [Numman Ali](https://x.com/nummanali/status/2030012892192309461) — 2026-03-07: Shares 'Your LLM Doesn't Write Correct Code, It Writes Plausible Code' — demonstrates a 20,000x performance gap between SQLite and LLM-generated Rust for a simple primary key lookup. Argues the plausibility-vs-correctness distinction is critical.
+- [Numman Ali](https://x.com/nummanali/status/2030012892192309461) — 2026-03-07: Numman Ali strongly recommends a deeply technical article, 'Your LLM Doesn't Write Correct Code. It Writes Plausible Code,' praising its articulation of the plausible-vs-correct distinction in LLM output — illustrated by a 100-row primary-key lookup where SQLite takes 0.09ms but an LLM-generated Rust rewrite takes 1,815.43ms.
 
 - [Aarno](https://x.com/theglobalminima/status/2028432457784340950) — 2026-03-03: Argues software engineers in agentic AI should start learning RL. As coding agents improve, building custom harnesses gets easier, but behavior control, consistency, memory, and correction remain hard — areas where traditional RL has deep expertise. Links to a paper at the intersection of RL and LLM agents.
 
@@ -2211,11 +2223,11 @@
 
 - [Josh Kale](https://x.com/joshkale/status/2033183463759626261) — 2026-03-16: Karpathy scored every job in America on AI replacement risk, then deleted it. Josh cloned the repo before it went down — 342 occupations scored 0-10 on AI exposure. Average across US economy: 5.3/10. Community note: Karpathy called it a casual 2-hour 'vibe code experiment' and deleted because it was 'wildly misinterpreted.'
 
-- [Suhail Gupta](https://x.com/audiinidesign/status/2031213732941230240) — 2026-03-10: Shares Harrison Chase's article on how coding agents are reshaping the EPD (Engineering, Product, Design) org structure. Predicts this shift will become much more visible in the coming months.
+- [Suhail Gupta](https://x.com/audiinidesign/status/2031213732941230240) — 2026-03-10: Suhail Gupta endorses Harrison Chase's article 'How Coding Agents Are Reshaping Engineering, Product and Design,' agreeing the EPD blur toward functional software over separate roles will only become more visible and obvious in the coming months.
 
-- [Anish Moonka](https://x.com/anisha_moonka/status/2030015356383691121) — 2026-03-07: Detailed 12-point summary of Boris Cherny (Head of Claude Code) on Lenny's Podcast. Key takeaways: coding is largely solved, 200% productivity gains at Anthropic, underfund teams to force AI adoption, give unlimited tokens, build for the model 6 months out, the Bitter Lesson applies everywhere.
+- [Anish Moonka](https://x.com/anisha_moonka/status/2030015356383691121) — 2026-03-07: Anish Moonka's 12-point notes from Boris Cherny (Head of Claude Code) on Lenny's Podcast: coding is largely solved (Boris ships 10-30 PRs/day, no hand-written code since Nov 2025); the next frontier is AI deciding what to build; productivity per Anthropic engineer is up 200%; underfund teams on purpose; give engineers unlimited tokens; the Bitter Lesson favors general models over rigid orchestration; build for the model six months out; latent demand is the best product signal; 'software engineer' is becoming 'builder'; mechanistic interpretability enables layered safety; and 70% of engineers/PMs enjoy their jobs more now.
 
-- [Jamie Quint](https://x.com/jamiequint/status/2029951631534739951) — 2026-03-07: Article on building data agents in 2026 — claims 80% reduction in data team headcount is achievable. Author built Notion's initial data stack and has been consulting on AI-driven data solutions.
+- [Jamie Quint](https://x.com/jamiequint/status/2029951631534739951) — 2026-03-07: Jamie Quint (built Notion's early data stack in 2020) shares his article 'How to Build a Data Agent in 2026,' claiming the approach can cut a company's projected data-team headcount by ~80% this year.
 
 - [John Rush](https://x.com/johnrushx/status/2029406051716743354) — 2026-03-05: Argues AI makes work harder, not easier — it automates the 99% that was time-consuming but easy, forcing everyone to compete on the hard 1%. Predicts intense cognitive load, higher stress, and monopoly formation as the most capable person in each niche wins.
 
@@ -2243,7 +2255,7 @@
 
 - [Dante O. Cuales](https://x.com/danteocualesjr/status/1957204427909321027) — 2025-08-18: Reply to a thread about AI engineering being easy to learn — argues the 'intimidation factor is mostly artificial' since most AI engineering is API orchestration, prompt optimization, and data pipeline work. The hard parts are already abstracted away.
 
-### Management (95)
+### Management (98)
 
 - [Jaynit](https://x.com/jaynitx/status/2066506535250092378) — 2026-06-16: Thread relaying Elon Musk's 5-step engineering 'algorithm': (1) make the requirements less dumb / question them, (2) try to delete the part or process step entirely (if you aren't forced to add ~10% back, you didn't delete enough), (3) simplify and optimize, (4) accelerate cycle time, (5) automate — with the warning that the most common mistake of smart engineers is optimizing something that shouldn't exist.
 
@@ -2345,7 +2357,13 @@
 
 - [Beacon](https://x.com/0xxbeacon/status/2033224402070810940) — 2026-03-16: Beacon links Anthropic's Skilljar course catalog (anthropic.skilljar.com) and the access-request page for the Claude Certified Architect: Foundations certification.
 
-- [staysaasy](https://x.com/staysaasy/status/2029965845548462281) — 2026-03-07: Long-form article on preventing a culture of emergencies. Good managers know how hard things are, understand what's important, maintain mental models of their team, and care about well-being. Constant emergencies are a management failure, not an inevitability.
+- [Suhail Gupta](https://x.com/audiinidesign/status/2031213732941230240) — 2026-03-10: Suhail Gupta endorses Harrison Chase's article 'How Coding Agents Are Reshaping Engineering, Product and Design,' agreeing the EPD blur toward functional software over separate roles will only become more visible and obvious in the coming months.
+
+- [Anish Moonka](https://x.com/anisha_moonka/status/2030015356383691121) — 2026-03-07: Anish Moonka's 12-point notes from Boris Cherny (Head of Claude Code) on Lenny's Podcast: coding is largely solved (Boris ships 10-30 PRs/day, no hand-written code since Nov 2025); the next frontier is AI deciding what to build; productivity per Anthropic engineer is up 200%; underfund teams on purpose; give engineers unlimited tokens; the Bitter Lesson favors general models over rigid orchestration; build for the model six months out; latent demand is the best product signal; 'software engineer' is becoming 'builder'; mechanistic interpretability enables layered safety; and 70% of engineers/PMs enjoy their jobs more now.
+
+- [staysaasy](https://x.com/staysaasy/status/2029965845548462281) — 2026-03-07: staysaasy long-form article 'Avoiding a Culture of Emergencies': the best managers have far fewer preventable emergencies because they know how hard things actually are, know what's important and can say no, hold a strong mental model of their team and company to forecast needs, and genuinely care. Emergencies are largely a management choice, and avoiding them is one of the best talent-retention mechanisms.
+
+- [Jamie Quint](https://x.com/jamiequint/status/2029951631534739951) — 2026-03-07: Jamie Quint (built Notion's early data stack in 2020) shares his article 'How to Build a Data Agent in 2026,' claiming the approach can cut a company's projected data-team headcount by ~80% this year.
 
 - [John Rush](https://x.com/johnrushx/status/2029406051716743354) — 2026-03-05: Argues AI makes work harder, not easier — it automates the 99% that was time-consuming but easy, forcing everyone to compete on the hard 1%. Predicts intense cognitive load, higher stress, and monopoly formation as the most capable person in each niche wins.
 
@@ -4048,49 +4066,49 @@
   Garry Tan shares a CTO's testimonial that his open-source gstack ('god mode') flagged a subtle cross-site-scripting vulnerability the team wasn't aware of, predicting 90%+ of new repos will adopt it. gstack is MIT-licensed at github.com/garrytan/gstack and installs into local Claude Code and into a repo for teammates with two pastes.
 
 - **2026-03-12** | [elvis](https://x.com/omarsar0/status/2031727864199208972) | agent-design, skills-mcp, research
-  EvoSkill: a framework where three agents (Executor, Proposer, Skill-Builder) iteratively discover and refine their own capabilities by analyzing failures. Improved Claude Code + Opus 4.5 accuracy from 60.6% to 67.9%, with zero-shot skill transfer across benchmarks.
+  elvis highlights EvoSkill, a self-evolving multi-agent framework that automatically discovers and refines agent skills through iterative failure analysis. Three agents (Executor, Proposer, Skill-Builder) drive the loop, with a Pareto frontier retaining only skills that improve held-out validation while the base model stays frozen. Reported gains: Claude Code w/ Opus 4.5 from 60.6%->67.9% on OfficeQA, +12.1% on SealQA, and +5.3% zero-shot transfer to BrowseComp.
 
-- **2026-03-11** | [Viv](https://x.com/vtrivedy10/status/2031411814232187109) | agent-design
-  LangChain's deep-dive on agent harness engineering: Agent = Model + Harness. Covers filesystems, code execution, sandboxes, context rot, and why the best harness for your model isn't the default one.
+- **2026-03-11** | [Viv](https://x.com/vtrivedy10/status/2031411814232187109) | agent-design, dev-practices
+  Viv (LangChain applied research) shares a LangChain blog taking a first-principles look at why agent harnesses exist and how they help craft good product experiences and correct model failure modes. It covers filesystems, code execution, sandboxes, context rot, and ralph loops, arguing the best harness for your model probably isn't the one it shipped with.
 
-- **2026-03-11** | [Ming "Tommy" Tang](https://x.com/tangming2005/status/2031358195558658266) | claude-code, prompting, dev-practices
-  Best CLAUDE.md tip: when reporting a bug, don't try to fix it first — write a test that reproduces it, then have subagents fix and prove it with a passing test. 574K views.
+- **2026-03-11** | [Ming "Tommy" Tang](https://x.com/tangming2005/status/2031358195558658266) | claude-code, dev-practices, prompting
+  Tommy Tang's single biggest CLAUDE.md improvement: when a bug is reported, don't start by fixing it. Start by writing a test that reproduces the bug, then have subagents try to fix it and prove the fix with a passing test.
 
-- **2026-03-11** | [kapilansh](https://x.com/kapilansh_twt/status/2031262184442130863) | research
-  Recommends Karpathy's 'Neural Networks: Zero to Hero' as essential for devs who use AI APIs without understanding the internals. Covers backprop, language models, attention, tokenization, and GPT-2 training from scratch.
+- **2026-03-11** | [kapilansh](https://x.com/kapilansh_twt/status/2031262184442130863) | research, prompting
+  kapilansh argues most devs learning AI only know how to call an API and write a prompt without understanding what happens inside, and recommends Karpathy's 'Neural Networks: Zero to Hero' playlist (micrograd, makemore, attention from scratch, tokenization, training GPT-2) as the genuine fix for that knowledge gap.
 
-- **2026-03-10** | [Dominik Tornow](https://x.com/dominiktornow/status/2031233587819983096) | agent-design
-  [Content not extracted — likely image or video post.]
+- **2026-03-10** | [Dominik Tornow](https://x.com/dominiktornow/status/2031233587819983096) | agent-design, dev-practices
+  Dominik Tornow: the new core skill in software engineering is designing feedback loops. He quotes OpenAI Developers on a small team steering Codex to open and merge 1,500 pull requests for a product used by hundreds of internal users, with zero manual coding.
 
-- **2026-03-10** | [Suhail Gupta](https://x.com/audiinidesign/status/2031213732941230240) | industry, agent-design
-  Shares Harrison Chase's article on how coding agents are reshaping the EPD (Engineering, Product, Design) org structure. Predicts this shift will become much more visible in the coming months.
+- **2026-03-10** | [Suhail Gupta](https://x.com/audiinidesign/status/2031213732941230240) | industry, management, agent-design
+  Suhail Gupta endorses Harrison Chase's article 'How Coding Agents Are Reshaping Engineering, Product and Design,' agreeing the EPD blur toward functional software over separate roles will only become more visible and obvious in the coming months.
 
-- **2026-03-10** | [Boris Cherny](https://x.com/bcherny/status/2031089411820228645) | claude-code, dev-practices
-  Announcing Claude Code Review: a team of agents runs deep review on every PR. Built internally at Anthropic first, where engineer output is up 200% and reviews were the bottleneck. Catches real bugs humans miss.
+- **2026-03-10** | [Boris Cherny](https://x.com/bcherny/status/2031089411820228645) | claude-code, dev-practices, agent-design
+  Boris Cherny announces Code Review in Claude Code: when a PR opens, a team of agents runs a deep review to hunt for bugs. Built internally first because code output per Anthropic engineer is up 200% this year and review had become the bottleneck; he says it catches many real bugs he'd otherwise miss.
 
-- **2026-03-08** | [0xSero](https://x.com/0xsero/status/2030653670375751942) | dev-practices
-  Advice from Factory's Leo: screenshot and record everything you build, then review it. Combined with automated QA, creates a semi-autonomous development review system.
+- **2026-03-08** | [0xSero](https://x.com/0xsero/status/2030653670375751942) | agent-design, dev-practices
+  0xSero shares advice from Factory's Leo: take screenshots and videos of everything you've built, then review it. Combined with automated QA, this yields a semi-autonomous build/verify system. Links a podcast episode.
 
 - **2026-03-08** | [Daniel Miessler](https://x.com/danielmiessler/status/2030436867745923347) | research, agent-design
-  Highlights Karpathy's autoresearch project as underappreciated. References earlier predictions that automating ML research is the ultimate AI endgame. Karpathy's minimal repo is ~630 lines for single-GPU use.
+  Daniel Miessler flags Karpathy's new self-contained 'autoresearch' repo (nanochat training core stripped to a single-GPU, ~630-line file the human iterates on) as under-appreciated, tying it to the long-discussed goal of automating ML research and predicting it will accelerate progress again.
 
-- **2026-03-08** | [God of Prompt](https://x.com/godofprompt/status/2030434641019072867) | prompting
-  [Image/video only — no text content extracted.]
+- **2026-03-08** | [Alex Prompter](https://x.com/godofprompt/status/2030434641019072867) | agent-design, skills-mcp
+  Alex Prompter (co-founder @godofprompt) shares affaan-m/ECC on GitHub, described as an agent-harness performance-optimization system built around skills and instincts.
 
-- **2026-03-08** | [GitHub Projects Community](https://x.com/githubprojects/status/2030346933009821801) | dev-practices, agent-design
-  Advocates for a structured build loop over free-form code generation: idea → roadmap → small tasks → isolated execution → commit. Produces cleaner repos and clearer progress.
+- **2026-03-08** | [GitHub Projects Community](https://x.com/githubprojects/status/2030346933009821801) | agent-design, dev-practices
+  GitHub Projects Community: rather than using AI to generate code directly, let it run a structured build loop — idea -> roadmap -> small tasks -> execute each task in isolation -> commit — for cleaner repos, clearer progress, and far less AI chaos.
 
-- **2026-03-07** | [Anish Moonka](https://x.com/anisha_moonka/status/2030015356383691121) | claude-code, industry, agent-design
-  Detailed 12-point summary of Boris Cherny (Head of Claude Code) on Lenny's Podcast. Key takeaways: coding is largely solved, 200% productivity gains at Anthropic, underfund teams to force AI adoption, give unlimited tokens, build for the model 6 months out, the Bitter Lesson applies everywhere.
+- **2026-03-07** | [Anish Moonka](https://x.com/anisha_moonka/status/2030015356383691121) | management, claude-code, industry
+  Anish Moonka's 12-point notes from Boris Cherny (Head of Claude Code) on Lenny's Podcast: coding is largely solved (Boris ships 10-30 PRs/day, no hand-written code since Nov 2025); the next frontier is AI deciding what to build; productivity per Anthropic engineer is up 200%; underfund teams on purpose; give engineers unlimited tokens; the Bitter Lesson favors general models over rigid orchestration; build for the model six months out; latent demand is the best product signal; 'software engineer' is becoming 'builder'; mechanistic interpretability enables layered safety; and 70% of engineers/PMs enjoy their jobs more now.
 
-- **2026-03-07** | [Numman Ali](https://x.com/nummanali/status/2030012892192309461) | dev-practices, research
-  Shares 'Your LLM Doesn't Write Correct Code, It Writes Plausible Code' — demonstrates a 20,000x performance gap between SQLite and LLM-generated Rust for a simple primary key lookup. Argues the plausibility-vs-correctness distinction is critical.
+- **2026-03-07** | [Numman Ali](https://x.com/nummanali/status/2030012892192309461) | dev-practices, research, prompting
+  Numman Ali strongly recommends a deeply technical article, 'Your LLM Doesn't Write Correct Code. It Writes Plausible Code,' praising its articulation of the plausible-vs-correct distinction in LLM output — illustrated by a 100-row primary-key lookup where SQLite takes 0.09ms but an LLM-generated Rust rewrite takes 1,815.43ms.
 
 - **2026-03-07** | [staysaasy](https://x.com/staysaasy/status/2029965845548462281) | management
-  Long-form article on preventing a culture of emergencies. Good managers know how hard things are, understand what's important, maintain mental models of their team, and care about well-being. Constant emergencies are a management failure, not an inevitability.
+  staysaasy long-form article 'Avoiding a Culture of Emergencies': the best managers have far fewer preventable emergencies because they know how hard things actually are, know what's important and can say no, hold a strong mental model of their team and company to forecast needs, and genuinely care. Emergencies are largely a management choice, and avoiding them is one of the best talent-retention mechanisms.
 
-- **2026-03-07** | [Jamie Quint](https://x.com/jamiequint/status/2029951631534739951) | agent-design, industry
-  Article on building data agents in 2026 — claims 80% reduction in data team headcount is achievable. Author built Notion's initial data stack and has been consulting on AI-driven data solutions.
+- **2026-03-07** | [Jamie Quint](https://x.com/jamiequint/status/2029951631534739951) | agent-design, management, industry
+  Jamie Quint (built Notion's early data stack in 2020) shares his article 'How to Build a Data Agent in 2026,' claiming the approach can cut a company's projected data-team headcount by ~80% this year.
 
 - **2026-03-07** | [Nate.Google](https://x.com/nate_google_/status/2029941042133262721) | claude-code
   Recommends Ruben Hassid's guide to setting up Claude Cowork as the best available walkthrough. References that software stocks lost $830B in 6 days after Claude's Cowork release.
