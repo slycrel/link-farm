@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-06-23T20:19:09Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-06-24T15:52:24Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-06-23** — [Dhilip Subramanian](https://x.com/sdhilip/status/2069140867466797200) — *near-term • Industry • 163.1K views • v1 enriched*  
@@ -35,25 +35,25 @@
 
 
 ### Revisit from last month
-- **2026-03-24** — [Factory](https://x.com/factoryai/status/2036184745059688923) — *near-term • Agent Design • 166.6K views • legacy enrichment*  
-  Factory launches "Missions" — long-running agentic workflows now available to all users, built to automate large software tasks like app development from scratch, codebases migrations, and AI research. Strong signal that autonomous multi-step coding agents are going mainstream.
-- **2026-03-25** — [Poonam Soni](https://x.com/codebypoonam/status/2036517669684519362) — *near-term • Agent Design • 78.4K views • legacy enrichment*  
-  Teaser thread claiming Anthropic demonstrated a 3-agent system that builds production-quality apps from a single prompt in under 6 hours without human intervention. Architecture details promised in thread. Engagement-farming format ('Breaking') but the underlying multi-agent app-building claim is worth verifying.
+- **2026-03-13** — [Garry Tan](https://x.com/garrytan/status/2032196172430131498) — *now • Claude Code • 876.6K views • v1 enriched*  
+  Garry Tan shares a CTO's testimonial that his open-source gstack ('god mode') flagged a subtle cross-site-scripting vulnerability the team wasn't aware of, predicting 90%+ of new repos will adopt it. gstack is MIT-licensed at github.com/garrytan/gstack and installs into local Claude Code and into a repo for teammates with two pastes.
+- **2026-03-15** — [Huaxiu Yao](https://x.com/huaxiuyaoml/status/2033038170653405308) — *near-term • Research • 88K views • v1 enriched*  
+  Huaxiu Yao announces AutoResearchClaw, which automates the full research loop beyond Karpathy's autoresearch experiment loop: one message in, a full conference paper out with real experiments, verified citations, and code. It mines arXiv and Semantic Scholar (50+ papers), has three agents fight over the best hypothesis, writes and self-debugs experiment code, and pivots when results are weak — no human in the loop.
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 317 | 49.1% |
-| claude-code | 153 | 23.7% |
-| dev-practices | 185 | 28.6% |
-| skills-mcp | 99 | 15.3% |
-| prompting | 84 | 13.0% |
-| research | 125 | 19.3% |
-| industry | 78 | 12.1% |
+| agent-design | 322 | 49.8% |
+| claude-code | 155 | 24.0% |
+| dev-practices | 187 | 28.9% |
+| skills-mcp | 105 | 16.3% |
+| prompting | 86 | 13.3% |
+| research | 124 | 19.2% |
+| industry | 79 | 12.2% |
 | management | 95 | 14.7% |
-| questionable | 95 | 14.7% |
-| general | 82 | 12.7% |
+| questionable | 101 | 15.6% |
+| general | 83 | 12.8% |
 
 ---
 ## Quick Reference (50 Most Recent)
@@ -113,7 +113,7 @@
 ---
 ## Posts by Topic
 
-### Agent Design (317)
+### Agent Design (322)
 
 - [Matthew Berman](https://x.com/matthewberman/status/2069098257444434425) — 2026-06-23: Matthew Berman announces a new Loop Library feature, Lazy Loops (aka Discover), which scans your codebase and chat threads to find potential agentic loops and designs them for you. Links the Forward-Future/loop-library GitHub repo of practical, repeatable AI-agent workflows.
 
@@ -473,7 +473,13 @@
 
 - [kwindla](https://x.com/kwindla/status/2044106314612408437) — 2026-04-15: kwindla introduces Gradient Bang, claimed to be the first massively-multiplayer, fully LLM-driven game: a retro space-trading game (Factorio-like) where you cajole a ship AI into tasking other AIs. Built to explore sub-agent orchestration, partial context sharing across inference loops, long contexts and episodic memory, LLM-generated dynamic UIs, and voice input. Built on pipecat_ai plus Supabase and Vercel, fully open source.
 
-- [Ihtesham Ali](https://x.com/ihtesham2005/status/2044056849272705246) — 2026-04-15: Aurogen — MIT-licensed 'OpenClaw' fork with true multi-agent, multi-instance orchestration in one deployment (github.com/UniRound-Tec/Aurogen). Modular agents/channels/providers/skills, web-panel setup (no config/CLI), ClaWHub integration, one-click installers, $50 Linux SBC minimum.
+- [Ihtesham Ali](https://x.com/ihtesham2005/status/2044056849272705246) — 2026-04-15: Aurogen is an open-source (MIT) OpenClaw fork whose differentiator is true multi-agent, multi-instance orchestration inside one deployment: modular agents/channels/providers/skills, a pure web-panel setup with no config files or CLI, ClaWHub skill imports, one-click installers, and it runs on a $50 Linux SBC (github.com/UniRound-Tec/Aurogen).
+
+- [Amir Salihefendić](https://x.com/amix3k/status/2044046057315742146) — 2026-04-15: Amir Salihefendić (Doist) treats Jack Dorsey's recent framing as an org-design question for companies blending human and machine intelligence: remote-first, transparent, functional teams with clear DRIs, where AI increasingly supplies the 'connective tissue' that moves context across teams, tools, and decisions.
+
+- [Indie Fox](https://x.com/indie_maker_fox/status/2043857352282255829) — 2026-04-15: Indie Fox praises a Claude skill that generates very high-quality software architecture diagrams (github.com/Cocoon-AI/architecture-diagram-generator), showing an OpenHarness architecture diagram as an example of its clean output.
+
+- [Mario Zechner](https://x.com/badlogicgames/status/2043757216885256463) — 2026-04-15: Mario Zechner recommends Alex Volkov's article 'The Z/L Continuum — Do AI engineers even need to read code anymore?' (thursdai.news/zl), which asks how much code AI engineers still need to read in 2026 and beyond.
 
 - [am.will](https://x.com/llmjunky/status/2043817254152814785) — 2026-04-14: am.will recommends NVIDIA's free API credits for testing open-source models (Minimax 2.7, Qwen 3.5, GLM 5, Gemma 31B, Nemotron 3 Super 120B) via their OpenAI-compatible endpoint at integrate.api.nvidia.com/v1. Includes ready-to-paste config for any OpenAI-compatible client.
 
@@ -571,23 +577,27 @@
 
 - [Factory](https://x.com/factoryai/status/2036184745059688923) — 2026-03-24: Factory launches "Missions" — long-running agentic workflows now available to all users, built to automate large software tasks like app development from scratch, codebases migrations, and AI research. Strong signal that autonomous multi-step coding agents are going mainstream.
 
-- [sarah guo](https://x.com/saranormous/status/2035080458304987603) — 2026-03-22: No Priors Podcast episode with Andrej Karpathy covering the phase shift in engineering brought on by coding agents, AutoResearch, model speciation, and second-order effects on the jobs market. Wide-ranging and strategic — includes timestamps for 14 topic segments. 2.6M views.
+- [George from prodmgmt](https://x.com/nurijanian/status/2035257434365976671) — 2026-03-22: George (prodmgmt.world) recounts improving his AI skills with Karpathy's Auto Research library (auto-improves prompts via repeated experimentation), using Ole Lehmann's fork turned into a skill that tunes other skills: define test inputs, write judges that score outputs, let the optimization loop run, and wake up to a better skill.
 
-- [felpix](https://x.com/felpix_/status/2033249213614538804) — 2026-03-21: Real-world demo: successfully filed taxes using Claude + FreeTaxUSA by dropping W2s, 1099-NECs, 1099-Bs, and expense spreadsheets into a folder, asking Claude to itemize and optimize expenses, then letting Claude use Chrome to submit. Short but a concrete agentic use-case that actually shipped.
+- [Matt Stockton](https://x.com/mstockton/status/2035179208872202320) — 2026-03-22: Matt Stockton argues building AI-enabled products inverts classical software engineering: the 'right way to build' changes every ~3 months, it is often better to burn the system down and rebuild than to adapt, and modern tools make that cheap — warning against sunk-cost V1 RAG systems that stuff a static context window.
 
-- [Corey Ganim](https://x.com/coreyganim/status/2034717504505823728) — 2026-03-20: Walkthrough of combining three free AI tools into an autonomous dev stack: Paperclip AI as orchestrator (assigns work, tracks progress), gstack as 15 specialist coding skills from Garry Tan, and autoresearch (Karpathy's method) for running 100 experiments overnight. Shows how to run 10-15 agents simultaneously for planning, testing, and shipping.
+- [sarah guo](https://x.com/saranormous/status/2035080458304987603) — 2026-03-22: Sarah Guo's No Priors podcast episode with Andrej Karpathy covers the phase shift in engineering, AI psychosis, AutoResearch, model speciation, jobs-market data, open vs closed models, autonomous robotics, and agentic education.
 
-- [Rohit](https://x.com/rohit4verse/status/2033945654377283643) — 2026-03-18: X article: 'The Harness Is Everything.' Argues the difference between teams shipping massive output vs struggling isn't the model — it's the harness (environment, tooling, orchestration). Breaks down what Cursor, Claude Code, and Perplexity actually built as harnesses.
+- [felpix](https://x.com/felpix_/status/2033249213614538804) — 2026-03-21: felpix reports filing taxes end-to-end with Claude + FreeTaxUSA: dropped a W-2, several 1099-NECs and 1099-Bs plus expense/budget spreadsheets in a folder, asked Claude to itemize and optimize expenses, and let it use Chrome to submit — the return was accepted. (Directly relevant: FreeTaxUSA is TaxHawk's own product.)
 
-- [zostaff](https://x.com/zostaff/status/2033930728044372275) — 2026-03-18: Architecture for autonomous Polymarket trading: Claude as strategist (probability + recommendations), Codex as engineer (writes/debugs bot code), OpenClaw as orchestrator (persistent memory, cron jobs, executes trades). Three agents, zero human intervention.
+- [Corey Ganim](https://x.com/coreyganim/status/2034717504505823728) — 2026-03-20: Corey Ganim's playbook for running a one-person 'AI company' stacks three free tools: Paperclip (npx paperclipai — assigns work and tracks progress), gstack (15 specialist Claude Code skills from Garry Tan, with /office-hours, /review, /qa, /ship commands), and autoresearch (Karpathy — 100 overnight experiments); the move is running 10-15 gstack commands in parallel. Quotes Nick Spisak's Paperclip follow-up article.
 
-- [Akhilesh Mishra](https://x.com/livingdevops/status/2033845127244825041) — 2026-03-17: NVIDIA open-sourced OpenShell at GTC — a sandbox for AI coding agents. Locks filesystem, blocks network by default, injects API keys at runtime only, policies via YAML. Runs a full K3s cluster inside Docker. Adobe, Atlassian, Cisco, CrowdStrike, Salesforce already integrating.
+- [Rohit](https://x.com/rohit4verse/status/2033945654377283643) — 2026-03-18: Rohit's essay 'The Harness Is Everything: What Cursor, Claude Code, and Perplexity Actually Built' argues you're not using AI wrong because of the model — you're using it wrong because you haven't built the right environment; the difference between teams shipping millions of lines and those struggling is the harness, not GPT-5 vs Claude Opus, temperature, or the prompt.
 
-- [Avi Chawla](https://x.com/_avichawla/status/2033797863948632384) — 2026-03-17: New paper SKILLRL introduces a learning paradigm where AI agents distill raw experience trajectories into compact, reusable skills — like how humans develop driving instincts rather than memorizing routes. Addresses the problem of noisy, redundant memory logs degrading agent performance.
+- [zostaff](https://x.com/zostaff/status/2033930728044372275) — 2026-03-18: zostaff's clickbait-titled ('How to Quit Your Job in One Day') walkthrough of an autonomous Polymarket trading system built from three agents: Claude (strategist — probability/recommendation/confidence), Codex (engineer — writes and debugs bot code), and OpenClaw (orchestrator — persistent memory, cron, modular skills, Telegram interface that executes trades and logs everything).
 
-- [hoeem](https://x.com/hooeem/status/2033146416428708168) — 2026-03-16: Shares Guri Singh's full course on building AI agents with Claude — covers the entire agent stack from single-agent loops to multi-agent systems, in under 15 minutes.
+- [Akhilesh Mishra](https://x.com/livingdevops/status/2033845127244825041) — 2026-03-17: Akhilesh Mishra reports NVIDIA open-sourced OpenShell at GTC — an infrastructure-layer sandbox/guardrail for coding agents: filesystem locked at sandbox creation, network blocked by default with whitelisting, API keys injected only at runtime (never on disk), policies in simple YAML, running a full K3s cluster inside a single Docker container. One command sandboxes Claude Code, Codex, or Cursor; Adobe, Atlassian, Cisco, CrowdStrike, and Salesforce are integrating it.
 
-- [Huaxiu Yao](https://x.com/huaxiuyaoml/status/2033038170653405308) — 2026-03-15: AutoResearchClaw automates the full research pipeline — from literature review to hypothesis generation (via three debating agents) to running experiments and drafting papers with verified citations. One message in, full paper out.
+- [Avi Chawla](https://x.com/_avichawla/status/2033797863948632384) — 2026-03-17: Avi Chawla explains the SKILLRL paper: rather than stuffing long, noisy raw trajectories into agent memory, it distills experiences into compact, reusable skills the agent retrieves and applies to future tasks — analogous to how humans turn driving experience into transferable instincts.
+
+- [Huaxiu Yao](https://x.com/huaxiuyaoml/status/2033038170653405308) — 2026-03-15: Huaxiu Yao announces AutoResearchClaw, which automates the full research loop beyond Karpathy's autoresearch experiment loop: one message in, a full conference paper out with real experiments, verified citations, and code. It mines arXiv and Semantic Scholar (50+ papers), has three agents fight over the best hypothesis, writes and self-debugs experiment code, and pivots when results are weak — no human in the loop.
+
+- [Garry Tan](https://x.com/garrytan/status/2032196172430131498) — 2026-03-13: Garry Tan shares a CTO's testimonial that his open-source gstack ('god mode') flagged a subtle cross-site-scripting vulnerability the team wasn't aware of, predicting 90%+ of new repos will adopt it. gstack is MIT-licensed at github.com/garrytan/gstack and installs into local Claude Code and into a repo for teammates with two pastes.
 
 - [elvis](https://x.com/omarsar0/status/2031727864199208972) — 2026-03-12: EvoSkill: a framework where three agents (Executor, Proposer, Skill-Builder) iteratively discover and refine their own capabilities by analyzing failures. Improved Claude Code + Opus 4.5 accuracy from 60.6% to 67.9%, with zero-shot skill transfer across benchmarks.
 
@@ -749,7 +759,7 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Claude Code (153)
+### Claude Code (155)
 
 - [Codez](https://x.com/0xcodez/status/2064374643729773029) — 2026-06-23: A long-form Loop engineering roadmap arguing the leverage point in agentic coding has moved from writing prompts to designing self-running loops. Covers the 4-condition test for when a loop is worth building (task repeats, automated verification, token budget, senior-engineer tooling), the five building blocks (automations like /loop and /goal, git worktrees, skills, MCP connectors, sub-agents), the maker/checker split, the Ralph Wiggum quiet-failure mode, comprehension debt and cognitive surrender, and the security tax of unattended loops. Cites Anthropic engineering docs and Addy Osmani.
 
@@ -917,7 +927,7 @@
 
 - [Paul Bakaus](https://x.com/pbakaus/status/2044118871326765541) — 2026-04-15: Paul Bakaus praises Matt Sims (English PhD plus ML/startup background) for building in the open at the intersection of creativity, storytelling, and AI. Quote-tweets Sims on teaching Claude Code to think systematically, getting consistent answers to recurring review-for-security / sufficient-tests / update-instruction-files prompts.
 
-- [Ihtesham Ali](https://x.com/ihtesham2005/status/2044056849272705246) — 2026-04-15: Aurogen — MIT-licensed 'OpenClaw' fork with true multi-agent, multi-instance orchestration in one deployment (github.com/UniRound-Tec/Aurogen). Modular agents/channels/providers/skills, web-panel setup (no config/CLI), ClaWHub integration, one-click installers, $50 Linux SBC minimum.
+- [Indie Fox](https://x.com/indie_maker_fox/status/2043857352282255829) — 2026-04-15: Indie Fox praises a Claude skill that generates very high-quality software architecture diagrams (github.com/Cocoon-AI/architecture-diagram-generator), showing an OpenHarness architecture diagram as an example of its clean output.
 
 - [Phil Chen](https://x.com/philhchen/status/2043759400121458922) — 2026-04-14: Phil Chen describes building Filbert (phil-bot), a background coding agent that wrote 95%+ of their PRs in one week. Runs 14 scheduled daily jobs including production bug triage, security audits, dead code sweeps, and CI optimization. Argues lightweight wrappers around existing harnesses on your own infra is the future of coding agents.
 
@@ -957,23 +967,27 @@
 
 - [Millie Marconi](https://x.com/milliemarconnni/status/2036363493478375797) — 2026-03-25: A Claude Code skill (/last30days) scans Reddit and X from the past 30 days on any topic and generates copy-paste-ready prompts based on what's actually working in the community right now — not months-old advice. Works for any domain (Midjourney, Cursor rules, legal prompts, etc.). Open source, MIT license.
 
-- [hoeem](https://x.com/hooeem/status/2035762966952382646) — 2026-03-22: Follow-up post noting his Mar 15 'Become a Claude Architect' article (covering Claude Code, Agent SDK, Claude API, and MCP) hit 110K+ bookmarks in one week. Challenges readers to actually use the prompts and build production-grade apps. The original article is a full free course on Claude development.
+- [hoeem](https://x.com/hooeem/status/2035762966952382646) — 2026-03-22: hoeem re-promotes his 'I want to become a Claude Architect (full course)' article covering Claude Code, the Claude Agent SDK, the Claude API, and MCP; framed for engagement ('Be the 1%', 110k+ bookmarks).
 
-- [Kshitij Mishra | AI & Tech](https://x.com/daievolutionhub/status/2035396799704547453) — 2026-03-22: Quote-tweet calling @Shruti_0810's '2026 AI Engineer Roadmap' article a Claude Code setup cheatsheet, attributed to Boris (Claude Code creator). Engagement-farming framing ('Save this') but the underlying article may have useful Claude Code setup guidance.
+- [Kshitij Mishra](https://x.com/daievolutionhub/status/2035396799704547453) — 2026-03-22: Kshitij Mishra shares a 'Claude Code Setup Cheatsheet' based on Boris (creator of Claude Code), quoting Shruti Codes' '2026 AI Engineer roadmap' article; 'Save this' engagement framing.
 
-- [Akshay](https://x.com/akshay_pachaar/status/2035341800739877091) — 2026-03-22: Comprehensive X article covering the full anatomy of the .claude/ folder in Claude Code: CLAUDE.md best practices (keep it under 200 lines), modular rules/ with path-scoped activation, custom slash commands in commands/, auto-invoked skill packages in skills/, specialized subagent personas in agents/, and permissions via settings.json. Includes a complete directory tree and a practical 5-step setup progression. 4.6M views.
+- [Akshay](https://x.com/akshay_pachaar/status/2035341800739877091) — 2026-03-22: Akshay Pachaar's guide 'Anatomy of the .claude/ folder' walks through CLAUDE.md, custom commands, skills, agents, and permissions and how to set them up properly, framing .claude as the control center for how Claude behaves in a project (instructions, commands, permission rules, and cross-session memory).
 
-- [Ole Lehmann](https://x.com/itsolelehmann/status/2033982679423848802) — 2026-03-18: Auto-improvement skill for Claude: runs a skill, scores output, finds failures, tweaks the prompt, re-runs to verify improvement, reverts if worse. Based on Karpathy's autoresearch method. Full breakdown and file to run it yourself in linked article.
+- [felpix](https://x.com/felpix_/status/2033249213614538804) — 2026-03-21: felpix reports filing taxes end-to-end with Claude + FreeTaxUSA: dropped a W-2, several 1099-NECs and 1099-Bs plus expense/budget spreadsheets in a folder, asked Claude to itemize and optimize expenses, and let it use Chrome to submit — the return was accepted. (Directly relevant: FreeTaxUSA is TaxHawk's own product.)
 
-- [Thariq](https://x.com/trq212/status/2033949937936085378) — 2026-03-18: Anthropic engineer shares lessons from building Claude Code skills internally. Hundreds of skills in active use at Anthropic — covers what types are worth making, how to write good ones, and when to share. Links to new Skilljar course on Agent Skills.
+- [Corey Ganim](https://x.com/coreyganim/status/2034717504505823728) — 2026-03-20: Corey Ganim's playbook for running a one-person 'AI company' stacks three free tools: Paperclip (npx paperclipai — assigns work and tracks progress), gstack (15 specialist Claude Code skills from Garry Tan, with /office-hours, /review, /qa, /ship commands), and autoresearch (Karpathy — 100 overnight experiments); the move is running 10-15 gstack commands in parallel. Quotes Nick Spisak's Paperclip follow-up article.
 
-- [0xMarioNawfal](https://x.com/roundtablespace/status/2033238044900298844) — 2026-03-16: Shares article: 'Ultimate Claude Cowork Starter Pack: Every Plugin, Skill, and Workflow You Need.' Quoting Corey Ganim's comprehensive guide to setting up Claude Cowork — the setup is where most people fail.
+- [Ole Lehmann](https://x.com/itsolelehmann/status/2033982679423848802) — 2026-03-18: Ole Lehmann shares a single skill that auto-improves any other skill using Karpathy's autoresearch method: it runs the skill and scores the output, finds what's failing, makes one small change to the skill prompt, re-runs to check the score, keeps or reverts the change, and repeats until the skill works. Article: 'How to 10x your Claude Skills'.
 
-- [Beacon](https://x.com/0xxbeacon/status/2033224402070810940) — 2026-03-16: Shares Anthropic's certification course links — anthropic.skilljar.com courses and Claude Certified Architect Foundations access request.
+- [Thariq](https://x.com/trq212/status/2033949937936085378) — 2026-03-18: Thariq (Anthropic) shares 'Lessons from Building Claude Code: How We Use Skills' — which skills are worth making, the secret to writing a good one, and when to share them — noting Anthropic runs hundreds of skills internally and that the common 'skills are just markdown files' misconception undersells them.
 
-- [hoeem](https://x.com/hooeem/status/2033146416428708168) — 2026-03-16: Shares Guri Singh's full course on building AI agents with Claude — covers the entire agent stack from single-agent loops to multi-agent systems, in under 15 minutes.
+- [Rohit](https://x.com/rohit4verse/status/2033945654377283643) — 2026-03-18: Rohit's essay 'The Harness Is Everything: What Cursor, Claude Code, and Perplexity Actually Built' argues you're not using AI wrong because of the model — you're using it wrong because you haven't built the right environment; the difference between teams shipping millions of lines and those struggling is the harness, not GPT-5 vs Claude Opus, temperature, or the prompt.
 
-- [Garry Tan](https://x.com/garrytan/status/2032196172430131498) — 2026-03-13: gstack is an open-source Claude Code tool that performs deep engineering reviews. A CTO discovered it caught a subtle XSS vulnerability his team missed, predicting 90%+ adoption for new repos.
+- [0xMarioNawfal](https://x.com/roundtablespace/status/2033238044900298844) — 2026-03-16: 0xMarioNawfal amplifies Corey Ganim's article 'Ultimate Claude Cowork Starter Pack: Every Plugin, Skill, and Workflow You Need,' which argues most people install Claude Cowork, poke around for 10 minutes, and revert to ChatGPT because the setup is the hard part.
+
+- [Beacon](https://x.com/0xxbeacon/status/2033224402070810940) — 2026-03-16: Beacon links Anthropic's Skilljar course catalog (anthropic.skilljar.com) and the access-request page for the Claude Certified Architect: Foundations certification.
+
+- [Garry Tan](https://x.com/garrytan/status/2032196172430131498) — 2026-03-13: Garry Tan shares a CTO's testimonial that his open-source gstack ('god mode') flagged a subtle cross-site-scripting vulnerability the team wasn't aware of, predicting 90%+ of new repos will adopt it. gstack is MIT-licensed at github.com/garrytan/gstack and installs into local Claude Code and into a repo for teammates with two pastes.
 
 - [Ming "Tommy" Tang](https://x.com/tangming2005/status/2031358195558658266) — 2026-03-11: Best CLAUDE.md tip: when reporting a bug, don't try to fix it first — write a test that reproduces it, then have subagents fix and prove it with a passing test. 574K views.
 
@@ -1057,7 +1071,7 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (185)
+### Dev Practices (187)
 
 - [Dhilip Subramanian](https://x.com/sdhilip/status/2069140867466797200) — 2026-06-23: Dhilip Subramanian, a heavy dictation user (44,414 words via Wispr Flow), recommends FluidVoice: a free, open-source, locally-run macOS voice-to-text tool that needs no API key and handles slang well. He cancelled his paid plan after switching.
 
@@ -1261,9 +1275,7 @@
 
 - [kwindla](https://x.com/kwindla/status/2044106314612408437) — 2026-04-15: kwindla introduces Gradient Bang, claimed to be the first massively-multiplayer, fully LLM-driven game: a retro space-trading game (Factorio-like) where you cajole a ship AI into tasking other AIs. Built to explore sub-agent orchestration, partial context sharing across inference loops, long contexts and episodic memory, LLM-generated dynamic UIs, and voice input. Built on pipecat_ai plus Supabase and Vercel, fully open source.
 
-- [Indie Fox](https://x.com/indie_maker_fox/status/2043857352282255829) — 2026-04-15: Architecture diagram generator skill — github.com/Cocoon-AI/architecture-diagram-generator. Indie Fox shares an auto-generated architecture diagram for 'OpenHarness' and praises the color scheme and diagram quality.
-
-- [Mario Zechner](https://x.com/badlogicgames/status/2043757216885256463) — 2026-04-15: Mario Zechner recommends Alex Volkov's article 'The Z/L Continuum — Do AI engineers even need to read code anymore?' (thursdai.news/zl) — examines whether reading code is still a core AI-engineer skill in 2026/2027.
+- [Mario Zechner](https://x.com/badlogicgames/status/2043757216885256463) — 2026-04-15: Mario Zechner recommends Alex Volkov's article 'The Z/L Continuum — Do AI engineers even need to read code anymore?' (thursdai.news/zl), which asks how much code AI engineers still need to read in 2026 and beyond.
 
 - [am.will](https://x.com/llmjunky/status/2043817254152814785) — 2026-04-14: am.will recommends NVIDIA's free API credits for testing open-source models (Minimax 2.7, Qwen 3.5, GLM 5, Gemma 31B, Nemotron 3 Super 120B) via their OpenAI-compatible endpoint at integrate.api.nvidia.com/v1. Includes ready-to-paste config for any OpenAI-compatible client.
 
@@ -1311,13 +1323,19 @@
 
 - [Denis Yurchak](https://x.com/denisyurchak/status/2036422883350544519) — 2026-03-25: Denis Yurchak shares a Claude prompt (.md file) that fully automates secure Hetzner VPS setup in one shot — configures SSH hardening, fail2ban, UFW firewall, and optionally Tailscale. Buy the server, install Claude, paste the prompt. Open source, PRs welcome. Practical Claude-as-sysadmin pattern.
 
-- [Matt Stockton](https://x.com/mstockton/status/2035179208872202320) — 2026-03-22: Argues that building AI-enabled products requires embracing a 'burn it all down' mentality every 3 months as best practices shift that fast. Warns against sunk-cost fallacy with legacy patterns like static-context V1 RAG — those approaches are now simply wrong. The good news: AI tools make rebuilding fast enough that it's a viable strategy.
+- [Kshitij Mishra](https://x.com/daievolutionhub/status/2035396799704547453) — 2026-03-22: Kshitij Mishra shares a 'Claude Code Setup Cheatsheet' based on Boris (creator of Claude Code), quoting Shruti Codes' '2026 AI Engineer roadmap' article; 'Save this' engagement framing.
 
-- [Rohit](https://x.com/rohit4verse/status/2033945654377283643) — 2026-03-18: X article: 'The Harness Is Everything.' Argues the difference between teams shipping massive output vs struggling isn't the model — it's the harness (environment, tooling, orchestration). Breaks down what Cursor, Claude Code, and Perplexity actually built as harnesses.
+- [Akshay](https://x.com/akshay_pachaar/status/2035341800739877091) — 2026-03-22: Akshay Pachaar's guide 'Anatomy of the .claude/ folder' walks through CLAUDE.md, custom commands, skills, agents, and permissions and how to set them up properly, framing .claude as the control center for how Claude behaves in a project (instructions, commands, permission rules, and cross-session memory).
 
-- [Akhilesh Mishra](https://x.com/livingdevops/status/2033845127244825041) — 2026-03-17: NVIDIA open-sourced OpenShell at GTC — a sandbox for AI coding agents. Locks filesystem, blocks network by default, injects API keys at runtime only, policies via YAML. Runs a full K3s cluster inside Docker. Adobe, Atlassian, Cisco, CrowdStrike, Salesforce already integrating.
+- [Matt Stockton](https://x.com/mstockton/status/2035179208872202320) — 2026-03-22: Matt Stockton argues building AI-enabled products inverts classical software engineering: the 'right way to build' changes every ~3 months, it is often better to burn the system down and rebuild than to adapt, and modern tools make that cheap — warning against sunk-cost V1 RAG systems that stuff a static context window.
 
-- [Garry Tan](https://x.com/garrytan/status/2032196172430131498) — 2026-03-13: gstack is an open-source Claude Code tool that performs deep engineering reviews. A CTO discovered it caught a subtle XSS vulnerability his team missed, predicting 90%+ adoption for new repos.
+- [Thariq](https://x.com/trq212/status/2033949937936085378) — 2026-03-18: Thariq (Anthropic) shares 'Lessons from Building Claude Code: How We Use Skills' — which skills are worth making, the secret to writing a good one, and when to share them — noting Anthropic runs hundreds of skills internally and that the common 'skills are just markdown files' misconception undersells them.
+
+- [Rohit](https://x.com/rohit4verse/status/2033945654377283643) — 2026-03-18: Rohit's essay 'The Harness Is Everything: What Cursor, Claude Code, and Perplexity Actually Built' argues you're not using AI wrong because of the model — you're using it wrong because you haven't built the right environment; the difference between teams shipping millions of lines and those struggling is the harness, not GPT-5 vs Claude Opus, temperature, or the prompt.
+
+- [Akhilesh Mishra](https://x.com/livingdevops/status/2033845127244825041) — 2026-03-17: Akhilesh Mishra reports NVIDIA open-sourced OpenShell at GTC — an infrastructure-layer sandbox/guardrail for coding agents: filesystem locked at sandbox creation, network blocked by default with whitelisting, API keys injected only at runtime (never on disk), policies in simple YAML, running a full K3s cluster inside a single Docker container. One command sandboxes Claude Code, Codex, or Cursor; Adobe, Atlassian, Cisco, CrowdStrike, and Salesforce are integrating it.
+
+- [Garry Tan](https://x.com/garrytan/status/2032196172430131498) — 2026-03-13: Garry Tan shares a CTO's testimonial that his open-source gstack ('god mode') flagged a subtle cross-site-scripting vulnerability the team wasn't aware of, predicting 90%+ of new repos will adopt it. gstack is MIT-licensed at github.com/garrytan/gstack and installs into local Claude Code and into a repo for teammates with two pastes.
 
 - [Ming "Tommy" Tang](https://x.com/tangming2005/status/2031358195558658266) — 2026-03-11: Best CLAUDE.md tip: when reporting a bug, don't try to fix it first — write a test that reproduces it, then have subagents fix and prove it with a passing test. 574K views.
 
@@ -1429,7 +1447,7 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (99)
+### Skills & MCP (105)
 
 - [Matthew Berman](https://x.com/matthewberman/status/2069098257444434425) — 2026-06-23: Matthew Berman announces a new Loop Library feature, Lazy Loops (aka Discover), which scans your codebase and chat threads to find potential agentic loops and designs them for you. Links the Forward-Future/loop-library GitHub repo of practical, repeatable AI-agent workflows.
 
@@ -1549,9 +1567,9 @@
 
 - [Garry Tan](https://x.com/garrytan/status/2044291663213015491) — 2026-04-15: Garry Tan releases GBrain v0.10.0, packaging his personal OpenClaw "brain" for others: refined RESOLVER.md and SOUL.md, ACLs for multi-user brain access, and 24 distinct "fat" skills shipped with e2e tests, evals, and unit tests.
 
-- [Ihtesham Ali](https://x.com/ihtesham2005/status/2044056849272705246) — 2026-04-15: Aurogen — MIT-licensed 'OpenClaw' fork with true multi-agent, multi-instance orchestration in one deployment (github.com/UniRound-Tec/Aurogen). Modular agents/channels/providers/skills, web-panel setup (no config/CLI), ClaWHub integration, one-click installers, $50 Linux SBC minimum.
+- [Ihtesham Ali](https://x.com/ihtesham2005/status/2044056849272705246) — 2026-04-15: Aurogen is an open-source (MIT) OpenClaw fork whose differentiator is true multi-agent, multi-instance orchestration inside one deployment: modular agents/channels/providers/skills, a pure web-panel setup with no config files or CLI, ClaWHub skill imports, one-click installers, and it runs on a $50 Linux SBC (github.com/UniRound-Tec/Aurogen).
 
-- [Indie Fox](https://x.com/indie_maker_fox/status/2043857352282255829) — 2026-04-15: Architecture diagram generator skill — github.com/Cocoon-AI/architecture-diagram-generator. Indie Fox shares an auto-generated architecture diagram for 'OpenHarness' and praises the color scheme and diagram quality.
+- [Indie Fox](https://x.com/indie_maker_fox/status/2043857352282255829) — 2026-04-15: Indie Fox praises a Claude skill that generates very high-quality software architecture diagrams (github.com/Cocoon-AI/architecture-diagram-generator), showing an OpenHarness architecture diagram as an example of its clean output.
 
 - [Philipp Schmid](https://x.com/_philschmid/status/2043705197030002904) — 2026-04-14: Philipp Schmid shares 8 practical tips for writing better agent skills — from what kinds of skills exist to knowing when to retire one. Covers skill lifecycle, quality standards, and distribution patterns. Links to a full X article with the guide.
 
@@ -1577,15 +1595,27 @@
 
 - [Millie Marconi](https://x.com/milliemarconnni/status/2036363493478375797) — 2026-03-25: A Claude Code skill (/last30days) scans Reddit and X from the past 30 days on any topic and generates copy-paste-ready prompts based on what's actually working in the community right now — not months-old advice. Works for any domain (Midjourney, Cursor rules, legal prompts, etc.). Open source, MIT license.
 
-- [Corey Ganim](https://x.com/coreyganim/status/2034717504505823728) — 2026-03-20: Walkthrough of combining three free AI tools into an autonomous dev stack: Paperclip AI as orchestrator (assigns work, tracks progress), gstack as 15 specialist coding skills from Garry Tan, and autoresearch (Karpathy's method) for running 100 experiments overnight. Shows how to run 10-15 agents simultaneously for planning, testing, and shipping.
+- [hoeem](https://x.com/hooeem/status/2035762966952382646) — 2026-03-22: hoeem re-promotes his 'I want to become a Claude Architect (full course)' article covering Claude Code, the Claude Agent SDK, the Claude API, and MCP; framed for engagement ('Be the 1%', 110k+ bookmarks).
 
-- [Ole Lehmann](https://x.com/itsolelehmann/status/2033982679423848802) — 2026-03-18: Auto-improvement skill for Claude: runs a skill, scores output, finds failures, tweaks the prompt, re-runs to verify improvement, reverts if worse. Based on Karpathy's autoresearch method. Full breakdown and file to run it yourself in linked article.
+- [Akshay](https://x.com/akshay_pachaar/status/2035341800739877091) — 2026-03-22: Akshay Pachaar's guide 'Anatomy of the .claude/ folder' walks through CLAUDE.md, custom commands, skills, agents, and permissions and how to set them up properly, framing .claude as the control center for how Claude behaves in a project (instructions, commands, permission rules, and cross-session memory).
 
-- [unusual_whales](https://x.com/unusual_whales/status/2033965177918620008) — 2026-03-18: Unusual Whales released an MCP server that streams live structured market data — options flow, dark pools, congressional trades, financials, technicals, 13Fs, insider activity, and Polymarket data. Plugs into any AI for building trading bots and dashboards.
+- [George from prodmgmt](https://x.com/nurijanian/status/2035257434365976671) — 2026-03-22: George (prodmgmt.world) recounts improving his AI skills with Karpathy's Auto Research library (auto-improves prompts via repeated experimentation), using Ole Lehmann's fork turned into a skill that tunes other skills: define test inputs, write judges that score outputs, let the optimization loop run, and wake up to a better skill.
 
-- [Thariq](https://x.com/trq212/status/2033949937936085378) — 2026-03-18: Anthropic engineer shares lessons from building Claude Code skills internally. Hundreds of skills in active use at Anthropic — covers what types are worth making, how to write good ones, and when to share. Links to new Skilljar course on Agent Skills.
+- [Corey Ganim](https://x.com/coreyganim/status/2034717504505823728) — 2026-03-20: Corey Ganim's playbook for running a one-person 'AI company' stacks three free tools: Paperclip (npx paperclipai — assigns work and tracks progress), gstack (15 specialist Claude Code skills from Garry Tan, with /office-hours, /review, /qa, /ship commands), and autoresearch (Karpathy — 100 overnight experiments); the move is running 10-15 gstack commands in parallel. Quotes Nick Spisak's Paperclip follow-up article.
 
-- [0xMarioNawfal](https://x.com/roundtablespace/status/2033238044900298844) — 2026-03-16: Shares article: 'Ultimate Claude Cowork Starter Pack: Every Plugin, Skill, and Workflow You Need.' Quoting Corey Ganim's comprehensive guide to setting up Claude Cowork — the setup is where most people fail.
+- [Ole Lehmann](https://x.com/itsolelehmann/status/2033982679423848802) — 2026-03-18: Ole Lehmann shares a single skill that auto-improves any other skill using Karpathy's autoresearch method: it runs the skill and scores the output, finds what's failing, makes one small change to the skill prompt, re-runs to check the score, keeps or reverts the change, and repeats until the skill works. Article: 'How to 10x your Claude Skills'.
+
+- [unusual_whales](https://x.com/unusual_whales/status/2033965177918620008) — 2026-03-18: Unusual Whales launched an MCP server that streams live, structured market data to any AI on demand — options flow, dark pools, congressional trades, full financials, technicals, 13Fs, insider activity, and Polymarket data — for building trading bots, dashboards, and screeners (unusualwhales.com/public-api/mcp). 'BREAKING' engagement framing.
+
+- [Thariq](https://x.com/trq212/status/2033949937936085378) — 2026-03-18: Thariq (Anthropic) shares 'Lessons from Building Claude Code: How We Use Skills' — which skills are worth making, the secret to writing a good one, and when to share them — noting Anthropic runs hundreds of skills internally and that the common 'skills are just markdown files' misconception undersells them.
+
+- [Akhilesh Mishra](https://x.com/livingdevops/status/2033845127244825041) — 2026-03-17: Akhilesh Mishra reports NVIDIA open-sourced OpenShell at GTC — an infrastructure-layer sandbox/guardrail for coding agents: filesystem locked at sandbox creation, network blocked by default with whitelisting, API keys injected only at runtime (never on disk), policies in simple YAML, running a full K3s cluster inside a single Docker container. One command sandboxes Claude Code, Codex, or Cursor; Adobe, Atlassian, Cisco, CrowdStrike, and Salesforce are integrating it.
+
+- [Avi Chawla](https://x.com/_avichawla/status/2033797863948632384) — 2026-03-17: Avi Chawla explains the SKILLRL paper: rather than stuffing long, noisy raw trajectories into agent memory, it distills experiences into compact, reusable skills the agent retrieves and applies to future tasks — analogous to how humans turn driving experience into transferable instincts.
+
+- [0xMarioNawfal](https://x.com/roundtablespace/status/2033238044900298844) — 2026-03-16: 0xMarioNawfal amplifies Corey Ganim's article 'Ultimate Claude Cowork Starter Pack: Every Plugin, Skill, and Workflow You Need,' which argues most people install Claude Cowork, poke around for 10 minutes, and revert to ChatGPT because the setup is the hard part.
+
+- [Garry Tan](https://x.com/garrytan/status/2032196172430131498) — 2026-03-13: Garry Tan shares a CTO's testimonial that his open-source gstack ('god mode') flagged a subtle cross-site-scripting vulnerability the team wasn't aware of, predicting 90%+ of new repos will adopt it. gstack is MIT-licensed at github.com/garrytan/gstack and installs into local Claude Code and into a repo for teammates with two pastes.
 
 - [elvis](https://x.com/omarsar0/status/2031727864199208972) — 2026-03-12: EvoSkill: a framework where three agents (Executor, Proposer, Skill-Builder) iteratively discover and refine their own capabilities by analyzing failures. Improved Claude Code + Opus 4.5 accuracy from 60.6% to 67.9%, with zero-shot skill transfer across benchmarks.
 
@@ -1629,7 +1659,7 @@
 
 - [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Anthropic released a frontend-design plugin for Claude Code — demo shows Claude creating a music player app. Install via /plugin marketplace add anthropics/claude-code and /plugin install frontend-design@claude-code-plugins.
 
-### Prompting (84)
+### Prompting (86)
 
 - [Movez](https://x.com/0xmovez/status/2068763235587694769) — 2026-06-23: Movez highlights an Andrew Ng talk on building self-improving agentic systems from scratch, quoting Ng that AI agents now handle 100% of his tasks and that self-improving loops will replace prompting within 3-6 months. Quote-tweets his own article on a 300-agent swarm running on Kimi K2.6 verified by Opus 4.8. Heavy promotional framing.
 
@@ -1723,6 +1753,8 @@
 
 - [Shaw (spirit/acc)](https://x.com/shawmakesmagic/status/2044269097647779990) — 2026-04-15: Shaw shares a reusable prompt for cleaning up "vibecoded" codebases by spawning 8 parallel subagents, each owning one cleanup task: DRY/dedup, consolidating shared types, removing unused code (knip), untangling circular deps (madge), replacing weak types (any/unknown), stripping needless defensive try/catch, removing legacy/fallback paths, and cutting AI-slop comments. Each subagent researches, writes a critical assessment, then implements high-confidence fixes.
 
+- [Mario Zechner](https://x.com/badlogicgames/status/2043757216885256463) — 2026-04-15: Mario Zechner recommends Alex Volkov's article 'The Z/L Continuum — Do AI engineers even need to read code anymore?' (thursdai.news/zl), which asks how much code AI engineers still need to read in 2026 and beyond.
+
 - [Kevin Simback](https://x.com/ksimback/status/2043745657748361476) — 2026-04-14: Kevin Simback shares his 'Second Brain' setup using a modified Karpathy method. Key insight: the system needs two authors — the human writes opinionated takes and decisions, the AI agent handles structured knowledge extraction and organization. Avoids both the 'LLM-wiki' problem (generic AI prose) and the 'can't keep up' problem (manual-only decay).
 
 - [Alex Finn](https://x.com/alexfinn/status/2043719233213980922) — 2026-04-14: Alex Finn shares a SOUL.md prompt philosophy inspired by Garry Tan's post: demand completeness over 'good enough,' never table things for later when the permanent solve is in reach, always ship with tests and documentation. Includes a copy-paste prompt for OpenClaw/Hermes agents.
@@ -1741,7 +1773,9 @@
 
 - [Millie Marconi](https://x.com/milliemarconnni/status/2036363493478375797) — 2026-03-25: A Claude Code skill (/last30days) scans Reddit and X from the past 30 days on any topic and generates copy-paste-ready prompts based on what's actually working in the community right now — not months-old advice. Works for any domain (Midjourney, Cursor rules, legal prompts, etc.). Open source, MIT license.
 
-- [George from prodmgmt.world](https://x.com/nurijanian/status/2035257434365976671) — 2026-03-22: Long X article on using AutoResearch + evals the right way. Key lesson: automated optimization loops fail without manually closing the 'Gulf of Comprehension' first — you must read real outputs and hand-build your failure taxonomy before trusting LLM-generated judges. Took three failed attempts to learn that 'you cannot automate your way past understanding.' Draws a direct parallel to product management: skipping comprehension produces features optimized against a fantasy. 134K views.
+- [George from prodmgmt](https://x.com/nurijanian/status/2035257434365976671) — 2026-03-22: George (prodmgmt.world) recounts improving his AI skills with Karpathy's Auto Research library (auto-improves prompts via repeated experimentation), using Ole Lehmann's fork turned into a skill that tunes other skills: define test inputs, write judges that score outputs, let the optimization loop run, and wake up to a better skill.
+
+- [Ole Lehmann](https://x.com/itsolelehmann/status/2033982679423848802) — 2026-03-18: Ole Lehmann shares a single skill that auto-improves any other skill using Karpathy's autoresearch method: it runs the skill and scores the output, finds what's failing, makes one small change to the skill prompt, re-runs to check the score, keeps or reverts the change, and repeats until the skill works. Article: 'How to 10x your Claude Skills'.
 
 - [Ming "Tommy" Tang](https://x.com/tangming2005/status/2031358195558658266) — 2026-03-11: Best CLAUDE.md tip: when reporting a bug, don't try to fix it first — write a test that reproduces it, then have subagents fix and prove it with a passing test. 574K views.
 
@@ -1799,7 +1833,7 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
 
-### Research (125)
+### Research (124)
 
 - [Mario Zechner](https://x.com/badlogicgames/status/2069156188902559751) — 2026-06-23: Mario Zechner recommends a video dissecting Voxtral, a family of open-source speech models, and the foundational work behind it (audio tokenization, semantic/acoustic disaggregation). He quote-tweets Julia Turc, who frames it as what you get when you plug LLMs into voice assistants instead of a decade of handwritten rules.
 
@@ -1985,15 +2019,13 @@
 
 - [Tom Dörr](https://x.com/tom_doerr/status/2039115357839929610) — 2026-04-01: Tom Dörr shared an open source AI research agent called Feynman (github.com/getcompanion-ai/feynman) — designed for autonomous AI-driven research workflows.
 
-- [George from prodmgmt.world](https://x.com/nurijanian/status/2035257434365976671) — 2026-03-22: Long X article on using AutoResearch + evals the right way. Key lesson: automated optimization loops fail without manually closing the 'Gulf of Comprehension' first — you must read real outputs and hand-build your failure taxonomy before trusting LLM-generated judges. Took three failed attempts to learn that 'you cannot automate your way past understanding.' Draws a direct parallel to product management: skipping comprehension produces features optimized against a fantasy. 134K views.
+- [sarah guo](https://x.com/saranormous/status/2035080458304987603) — 2026-03-22: Sarah Guo's No Priors podcast episode with Andrej Karpathy covers the phase shift in engineering, AI psychosis, AutoResearch, model speciation, jobs-market data, open vs closed models, autonomous robotics, and agentic education.
 
-- [sarah guo](https://x.com/saranormous/status/2035080458304987603) — 2026-03-22: No Priors Podcast episode with Andrej Karpathy covering the phase shift in engineering brought on by coding agents, AutoResearch, model speciation, and second-order effects on the jobs market. Wide-ranging and strategic — includes timestamps for 14 topic segments. 2.6M views.
-
-- [Avi Chawla](https://x.com/_avichawla/status/2033797863948632384) — 2026-03-17: New paper SKILLRL introduces a learning paradigm where AI agents distill raw experience trajectories into compact, reusable skills — like how humans develop driving instincts rather than memorizing routes. Addresses the problem of noisy, redundant memory logs degrading agent performance.
+- [Avi Chawla](https://x.com/_avichawla/status/2033797863948632384) — 2026-03-17: Avi Chawla explains the SKILLRL paper: rather than stuffing long, noisy raw trajectories into agent memory, it distills experiences into compact, reusable skills the agent retrieves and applies to future tasks — analogous to how humans turn driving experience into transferable instincts.
 
 - [Josh Kale](https://x.com/joshkale/status/2033183463759626261) — 2026-03-16: Karpathy scored every job in America on AI replacement risk, then deleted it. Josh cloned the repo before it went down — 342 occupations scored 0-10 on AI exposure. Average across US economy: 5.3/10. Community note: Karpathy called it a casual 2-hour 'vibe code experiment' and deleted because it was 'wildly misinterpreted.'
 
-- [Huaxiu Yao](https://x.com/huaxiuyaoml/status/2033038170653405308) — 2026-03-15: AutoResearchClaw automates the full research pipeline — from literature review to hypothesis generation (via three debating agents) to running experiments and drafting papers with verified citations. One message in, full paper out.
+- [Huaxiu Yao](https://x.com/huaxiuyaoml/status/2033038170653405308) — 2026-03-15: Huaxiu Yao announces AutoResearchClaw, which automates the full research loop beyond Karpathy's autoresearch experiment loop: one message in, a full conference paper out with real experiments, verified citations, and code. It mines arXiv and Semantic Scholar (50+ papers), has three agents fight over the best hypothesis, writes and self-debugs experiment code, and pivots when results are weak — no human in the loop.
 
 - [kpaxs](https://x.com/kpaxs/status/2032345995095179680) — 2026-03-13: [Login wall — content not extracted. Custom subject suggests a mental model or heuristic worth revisiting.]
 
@@ -2051,7 +2083,7 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: 15-part thread explaining the 'stunning, simple explanation behind matrix multiplication' — breaks down the most crucial idea behind modern machine learning. 1M views.
 
-### Industry (78)
+### Industry (79)
 
 - [Mario Zechner](https://x.com/badlogicgames/status/2069156188902559751) — 2026-06-23: Mario Zechner recommends a video dissecting Voxtral, a family of open-source speech models, and the foundational work behind it (audio tokenization, semantic/acoustic disaggregation). He quote-tweets Julia Turc, who frames it as what you get when you plug LLMs into voice assistants instead of a decade of handwritten rules.
 
@@ -2153,11 +2185,7 @@
 
 - [Hamudi](https://x.com/hamudinaanaa/status/2044872907072164304) — 2026-04-17: Hamudi ties into Sequoia's "$1T thesis" that AI sells outcomes (work) rather than software tools, introducing "Outcome Primitives" as a way to measure economic outcomes, citing a published paper tracking 1,300 agents over 21 days that created $32M in value (jobs secured, $200k grants won, e-commerce shops shipped). Framing: copilots compete on software margins and lose to big labs; outcome engines compete on services margins.
 
-- [Garry Tan](https://x.com/garrytan/status/2044059516497711522) — 2026-04-15: Garry Tan endorses Alfred Lin's (Sequoia) article 'Heat Seeking Missile for Pain' — on founders who actively seek out the hairiest, gnarliest problems and surgically blow them up. References Zipline's Keller.
-
-- [Amir Salihefendić](https://x.com/amix3k/status/2044046057315742146) — 2026-04-15: Amir Salihefendić (Doist/Todoist founder) on org design when companies include both human and machine intelligence. Riffs on Jack Dorsey's framing and Terence Tao's 'Copernican view of intelligence' — humans and machines have different strengths, not just different rungs on the same ladder. AI's role is connective tissue: context, trade-offs, cross-team information flow.
-
-- [Mario Zechner](https://x.com/badlogicgames/status/2043757216885256463) — 2026-04-15: Mario Zechner recommends Alex Volkov's article 'The Z/L Continuum — Do AI engineers even need to read code anymore?' (thursdai.news/zl) — examines whether reading code is still a core AI-engineer skill in 2026/2027.
+- [Garry Tan](https://x.com/garrytan/status/2044059516497711522) — 2026-04-15: Garry Tan amplifies Alfred Lin's article 'Heat Seeking Missile for Pain': the realest founders actively hunt the hairiest, gnarliest problems and surgically destroy them, citing an interview with Keller of Zipline.
 
 - [Alex Vacca](https://x.com/itsalexvacca/status/2043834187095150673) — 2026-04-14: Alex Vacca highlights a 4-layer sales funnel architecture that produced 330K website visitors, 1,500+ meetings booked, and $4M new ARR — crossing $7M ARR without raising capital. Quote-tweets an article by Michel Lieben detailing the system.
 
@@ -2171,9 +2199,15 @@
 
 - [Factory](https://x.com/factoryai/status/2036184745059688923) — 2026-03-24: Factory launches "Missions" — long-running agentic workflows now available to all users, built to automate large software tasks like app development from scratch, codebases migrations, and AI research. Strong signal that autonomous multi-step coding agents are going mainstream.
 
-- [sarah guo](https://x.com/saranormous/status/2035080458304987603) — 2026-03-22: No Priors Podcast episode with Andrej Karpathy covering the phase shift in engineering brought on by coding agents, AutoResearch, model speciation, and second-order effects on the jobs market. Wide-ranging and strategic — includes timestamps for 14 topic segments. 2.6M views.
+- [sarah guo](https://x.com/saranormous/status/2035080458304987603) — 2026-03-22: Sarah Guo's No Priors podcast episode with Andrej Karpathy covers the phase shift in engineering, AI psychosis, AutoResearch, model speciation, jobs-market data, open vs closed models, autonomous robotics, and agentic education.
 
-- [unusual_whales](https://x.com/unusual_whales/status/2033965177918620008) — 2026-03-18: Unusual Whales released an MCP server that streams live structured market data — options flow, dark pools, congressional trades, financials, technicals, 13Fs, insider activity, and Polymarket data. Plugs into any AI for building trading bots and dashboards.
+- [felpix](https://x.com/felpix_/status/2033249213614538804) — 2026-03-21: felpix reports filing taxes end-to-end with Claude + FreeTaxUSA: dropped a W-2, several 1099-NECs and 1099-Bs plus expense/budget spreadsheets in a folder, asked Claude to itemize and optimize expenses, and let it use Chrome to submit — the return was accepted. (Directly relevant: FreeTaxUSA is TaxHawk's own product.)
+
+- [unusual_whales](https://x.com/unusual_whales/status/2033965177918620008) — 2026-03-18: Unusual Whales launched an MCP server that streams live, structured market data to any AI on demand — options flow, dark pools, congressional trades, full financials, technicals, 13Fs, insider activity, and Polymarket data — for building trading bots, dashboards, and screeners (unusualwhales.com/public-api/mcp). 'BREAKING' engagement framing.
+
+- [zostaff](https://x.com/zostaff/status/2033930728044372275) — 2026-03-18: zostaff's clickbait-titled ('How to Quit Your Job in One Day') walkthrough of an autonomous Polymarket trading system built from three agents: Claude (strategist — probability/recommendation/confidence), Codex (engineer — writes and debugs bot code), and OpenClaw (orchestrator — persistent memory, cron, modular skills, Telegram interface that executes trades and logs everything).
+
+- [Akhilesh Mishra](https://x.com/livingdevops/status/2033845127244825041) — 2026-03-17: Akhilesh Mishra reports NVIDIA open-sourced OpenShell at GTC — an infrastructure-layer sandbox/guardrail for coding agents: filesystem locked at sandbox creation, network blocked by default with whitelisting, API keys injected only at runtime (never on disk), policies in simple YAML, running a full K3s cluster inside a single Docker container. One command sandboxes Claude Code, Codex, or Cursor; Adobe, Atlassian, Cisco, CrowdStrike, and Salesforce are integrating it.
 
 - [Josh Kale](https://x.com/joshkale/status/2033183463759626261) — 2026-03-16: Karpathy scored every job in America on AI replacement risk, then deleted it. Josh cloned the repo before it went down — 342 occupations scored 0-10 on AI exposure. Average across US economy: 5.3/10. Community note: Karpathy called it a casual 2-hour 'vibe code experiment' and deleted because it was 'wildly misinterpreted.'
 
@@ -2281,9 +2315,9 @@
 
 - [Hamudi](https://x.com/hamudinaanaa/status/2044872907072164304) — 2026-04-17: Hamudi ties into Sequoia's "$1T thesis" that AI sells outcomes (work) rather than software tools, introducing "Outcome Primitives" as a way to measure economic outcomes, citing a published paper tracking 1,300 agents over 21 days that created $32M in value (jobs secured, $200k grants won, e-commerce shops shipped). Framing: copilots compete on software margins and lose to big labs; outcome engines compete on services margins.
 
-- [Garry Tan](https://x.com/garrytan/status/2044059516497711522) — 2026-04-15: Garry Tan endorses Alfred Lin's (Sequoia) article 'Heat Seeking Missile for Pain' — on founders who actively seek out the hairiest, gnarliest problems and surgically blow them up. References Zipline's Keller.
+- [Garry Tan](https://x.com/garrytan/status/2044059516497711522) — 2026-04-15: Garry Tan amplifies Alfred Lin's article 'Heat Seeking Missile for Pain': the realest founders actively hunt the hairiest, gnarliest problems and surgically destroy them, citing an interview with Keller of Zipline.
 
-- [Amir Salihefendić](https://x.com/amix3k/status/2044046057315742146) — 2026-04-15: Amir Salihefendić (Doist/Todoist founder) on org design when companies include both human and machine intelligence. Riffs on Jack Dorsey's framing and Terence Tao's 'Copernican view of intelligence' — humans and machines have different strengths, not just different rungs on the same ladder. AI's role is connective tissue: context, trade-offs, cross-team information flow.
+- [Amir Salihefendić](https://x.com/amix3k/status/2044046057315742146) — 2026-04-15: Amir Salihefendić (Doist) treats Jack Dorsey's recent framing as an org-design question for companies blending human and machine intelligence: remote-first, transparent, functional teams with clear DRIs, where AI increasingly supplies the 'connective tissue' that moves context across teams, tools, and decisions.
 
 - [Alex Vacca](https://x.com/itsalexvacca/status/2043834187095150673) — 2026-04-14: Alex Vacca highlights a 4-layer sales funnel architecture that produced 330K website visitors, 1,500+ meetings booked, and $4M new ARR — crossing $7M ARR without raising capital. Quote-tweets an article by Michel Lieben detailing the system.
 
@@ -2307,9 +2341,9 @@
 
 - [Daniel Miessler](https://x.com/danielmiessler/status/2038284628130492870) — 2026-03-30: Daniel Miessler argues against over-engineering AI harnesses in a blog post titled 'Bitter Lesson Engineering' (danielmiessler.com). The core idea: don't build elaborate scaffolding around models — let the models improve instead, echoing Rich Sutton's Bitter Lesson applied to AI agent architecture.
 
-- [George from prodmgmt.world](https://x.com/nurijanian/status/2035257434365976671) — 2026-03-22: Long X article on using AutoResearch + evals the right way. Key lesson: automated optimization loops fail without manually closing the 'Gulf of Comprehension' first — you must read real outputs and hand-build your failure taxonomy before trusting LLM-generated judges. Took three failed attempts to learn that 'you cannot automate your way past understanding.' Draws a direct parallel to product management: skipping comprehension produces features optimized against a fantasy. 134K views.
+- [Matt Stockton](https://x.com/mstockton/status/2035179208872202320) — 2026-03-22: Matt Stockton argues building AI-enabled products inverts classical software engineering: the 'right way to build' changes every ~3 months, it is often better to burn the system down and rebuild than to adapt, and modern tools make that cheap — warning against sunk-cost V1 RAG systems that stuff a static context window.
 
-- [Matt Stockton](https://x.com/mstockton/status/2035179208872202320) — 2026-03-22: Argues that building AI-enabled products requires embracing a 'burn it all down' mentality every 3 months as best practices shift that fast. Warns against sunk-cost fallacy with legacy patterns like static-context V1 RAG — those approaches are now simply wrong. The good news: AI tools make rebuilding fast enough that it's a viable strategy.
+- [Beacon](https://x.com/0xxbeacon/status/2033224402070810940) — 2026-03-16: Beacon links Anthropic's Skilljar course catalog (anthropic.skilljar.com) and the access-request page for the Claude Certified Architect: Foundations certification.
 
 - [staysaasy](https://x.com/staysaasy/status/2029965845548462281) — 2026-03-07: Long-form article on preventing a culture of emergencies. Good managers know how hard things are, understand what's important, maintain mental models of their team, and care about well-being. Constant emergencies are a management failure, not an inevitability.
 
@@ -2401,7 +2435,7 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
 
-### Questionable (95)
+### Questionable (101)
 
 - [Movez](https://x.com/0xmovez/status/2068763235587694769) — 2026-06-23: Movez highlights an Andrew Ng talk on building self-improving agentic systems from scratch, quoting Ng that AI agents now handle 100% of his tasks and that self-improving loops will replace prompting within 3-6 months. Quote-tweets his own article on a 300-agent swarm running on Kimi K2.6 verified by Opus 4.8. Heavy promotional framing.
 
@@ -2567,7 +2601,19 @@
 
 - [Millie Marconi](https://x.com/milliemarconnni/status/2036363493478375797) — 2026-03-25: A Claude Code skill (/last30days) scans Reddit and X from the past 30 days on any topic and generates copy-paste-ready prompts based on what's actually working in the community right now — not months-old advice. Works for any domain (Midjourney, Cursor rules, legal prompts, etc.). Open source, MIT license.
 
-- [Kshitij Mishra | AI & Tech](https://x.com/daievolutionhub/status/2035396799704547453) — 2026-03-22: Quote-tweet calling @Shruti_0810's '2026 AI Engineer Roadmap' article a Claude Code setup cheatsheet, attributed to Boris (Claude Code creator). Engagement-farming framing ('Save this') but the underlying article may have useful Claude Code setup guidance.
+- [hoeem](https://x.com/hooeem/status/2035762966952382646) — 2026-03-22: hoeem re-promotes his 'I want to become a Claude Architect (full course)' article covering Claude Code, the Claude Agent SDK, the Claude API, and MCP; framed for engagement ('Be the 1%', 110k+ bookmarks).
+
+- [Kshitij Mishra](https://x.com/daievolutionhub/status/2035396799704547453) — 2026-03-22: Kshitij Mishra shares a 'Claude Code Setup Cheatsheet' based on Boris (creator of Claude Code), quoting Shruti Codes' '2026 AI Engineer roadmap' article; 'Save this' engagement framing.
+
+- [Corey Ganim](https://x.com/coreyganim/status/2034717504505823728) — 2026-03-20: Corey Ganim's playbook for running a one-person 'AI company' stacks three free tools: Paperclip (npx paperclipai — assigns work and tracks progress), gstack (15 specialist Claude Code skills from Garry Tan, with /office-hours, /review, /qa, /ship commands), and autoresearch (Karpathy — 100 overnight experiments); the move is running 10-15 gstack commands in parallel. Quotes Nick Spisak's Paperclip follow-up article.
+
+- [unusual_whales](https://x.com/unusual_whales/status/2033965177918620008) — 2026-03-18: Unusual Whales launched an MCP server that streams live, structured market data to any AI on demand — options flow, dark pools, congressional trades, full financials, technicals, 13Fs, insider activity, and Polymarket data — for building trading bots, dashboards, and screeners (unusualwhales.com/public-api/mcp). 'BREAKING' engagement framing.
+
+- [zostaff](https://x.com/zostaff/status/2033930728044372275) — 2026-03-18: zostaff's clickbait-titled ('How to Quit Your Job in One Day') walkthrough of an autonomous Polymarket trading system built from three agents: Claude (strategist — probability/recommendation/confidence), Codex (engineer — writes and debugs bot code), and OpenClaw (orchestrator — persistent memory, cron, modular skills, Telegram interface that executes trades and logs everything).
+
+- [0xMarioNawfal](https://x.com/roundtablespace/status/2033238044900298844) — 2026-03-16: 0xMarioNawfal amplifies Corey Ganim's article 'Ultimate Claude Cowork Starter Pack: Every Plugin, Skill, and Workflow You Need,' which argues most people install Claude Cowork, poke around for 10 minutes, and revert to ChatGPT because the setup is the hard part.
+
+- [hoeem](https://x.com/hooeem/status/2033146416428708168) — 2026-03-16: A low-substance reaction post ('hoeem style takeover kek') quoting another post that now comes from a suspended account; little usable content beyond the meta-commentary.
 
 - [Sukh Sroay](https://x.com/sukh_saroy/status/2029400474739458379) — 2026-03-05: GitNexus — open-source knowledge graph engine that maps every dependency, call chain, execution flow, and breaking change risk in a codebase, then feeds it into Claude Code, Cursor, and Windsurf via MCP. Supports 12 languages, runs entirely locally with zero network calls. Provides blast radius analysis with confidence scores.
 
@@ -2593,7 +2639,7 @@
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
 
-### General (86)
+### General (87)
 
 - [Ethan](https://x.com/lambethethan/status/2068958764276051987) — 2026-06-23: Ethan describes a personal wiki of ~1,000 supplements built from 150k papers and 200k health-influencer mentions, and floats handing the entire dataset to an AI agent next.
 
@@ -2654,6 +2700,8 @@
 - [Suryansh Tiwari](https://x.com/suryanshti777/status/2037892411666645363) — 2026-03-29: Cheat sheet mapping 21 real agent design patterns — prompt chaining, routing, parallelization, reflection, tool use, planning, multi-agent, memory management, MCP, RAG, guardrails, evaluation, and more. Solid reference doc for anyone building agentic systems.
 
 - [Cheng Lou](https://x.com/_chenglou/status/2037713766205608234) — 2026-03-29: Cheng Lou (React/ReasonML creator) released a foundational piece of UI engineering: a fast, accurate, comprehensive userland text measurement algorithm in pure TypeScript that can lay out entire web pages without CSS, bypassing DOM measurements and reflow. 21M+ views, huge community response.
+
+- [hoeem](https://x.com/hooeem/status/2033146416428708168) — 2026-03-16: A low-substance reaction post ('hoeem style takeover kek') quoting another post that now comes from a suspended account; little usable content beyond the meta-commentary.
 
 - [hoeem](https://x.com/hooeem/status/2029167629076676955) — 2026-03-05: Curated free AI learning resources ranked beginner to expert: Anthropic Academy, Google AI Essentials, AWS GenAI, Elements of AI, DeepLearning.AI courses, Harvard CS50 AI, Hugging Face agents course, and Anthropic's Claude Code course.
 
@@ -3689,19 +3737,19 @@
   [Engagement-farming / crypto promo] StacyOnChain hypes an institutional-grade Polymarket bot architecture (fractional Kelly sizing, latency optimizations), urging readers to bookmark and download before it is pulled, and quote-tweets their own how-we-built-a-Polymarket-bot article. Off-topic relative to the AI tooling collection.
 
 - **2026-04-15** | [Garry Tan](https://x.com/garrytan/status/2044059516497711522) | management, industry
-  Garry Tan endorses Alfred Lin's (Sequoia) article 'Heat Seeking Missile for Pain' — on founders who actively seek out the hairiest, gnarliest problems and surgically blow them up. References Zipline's Keller.
+  Garry Tan amplifies Alfred Lin's article 'Heat Seeking Missile for Pain': the realest founders actively hunt the hairiest, gnarliest problems and surgically destroy them, citing an interview with Keller of Zipline.
 
-- **2026-04-15** | [Ihtesham Ali](https://x.com/ihtesham2005/status/2044056849272705246) | agent-design, claude-code, skills-mcp
-  Aurogen — MIT-licensed 'OpenClaw' fork with true multi-agent, multi-instance orchestration in one deployment (github.com/UniRound-Tec/Aurogen). Modular agents/channels/providers/skills, web-panel setup (no config/CLI), ClaWHub integration, one-click installers, $50 Linux SBC minimum.
+- **2026-04-15** | [Ihtesham Ali](https://x.com/ihtesham2005/status/2044056849272705246) | agent-design, skills-mcp
+  Aurogen is an open-source (MIT) OpenClaw fork whose differentiator is true multi-agent, multi-instance orchestration inside one deployment: modular agents/channels/providers/skills, a pure web-panel setup with no config files or CLI, ClaWHub skill imports, one-click installers, and it runs on a $50 Linux SBC (github.com/UniRound-Tec/Aurogen).
 
-- **2026-04-15** | [Amir Salihefendić](https://x.com/amix3k/status/2044046057315742146) | management, industry
-  Amir Salihefendić (Doist/Todoist founder) on org design when companies include both human and machine intelligence. Riffs on Jack Dorsey's framing and Terence Tao's 'Copernican view of intelligence' — humans and machines have different strengths, not just different rungs on the same ladder. AI's role is connective tissue: context, trade-offs, cross-team information flow.
+- **2026-04-15** | [Amir Salihefendić](https://x.com/amix3k/status/2044046057315742146) | management, agent-design
+  Amir Salihefendić (Doist) treats Jack Dorsey's recent framing as an org-design question for companies blending human and machine intelligence: remote-first, transparent, functional teams with clear DRIs, where AI increasingly supplies the 'connective tissue' that moves context across teams, tools, and decisions.
 
-- **2026-04-15** | [Indie Fox](https://x.com/indie_maker_fox/status/2043857352282255829) | skills-mcp, dev-practices
-  Architecture diagram generator skill — github.com/Cocoon-AI/architecture-diagram-generator. Indie Fox shares an auto-generated architecture diagram for 'OpenHarness' and praises the color scheme and diagram quality.
+- **2026-04-15** | [Indie Fox](https://x.com/indie_maker_fox/status/2043857352282255829) | skills-mcp, claude-code, agent-design
+  Indie Fox praises a Claude skill that generates very high-quality software architecture diagrams (github.com/Cocoon-AI/architecture-diagram-generator), showing an OpenHarness architecture diagram as an example of its clean output.
 
-- **2026-04-15** | [Mario Zechner](https://x.com/badlogicgames/status/2043757216885256463) | dev-practices, industry
-  Mario Zechner recommends Alex Volkov's article 'The Z/L Continuum — Do AI engineers even need to read code anymore?' (thursdai.news/zl) — examines whether reading code is still a core AI-engineer skill in 2026/2027.
+- **2026-04-15** | [Mario Zechner](https://x.com/badlogicgames/status/2043757216885256463) | dev-practices, agent-design, prompting
+  Mario Zechner recommends Alex Volkov's article 'The Z/L Continuum — Do AI engineers even need to read code anymore?' (thursdai.news/zl), which asks how much code AI engineers still need to read in 2026 and beyond.
 
 - **2026-04-14** | [Alex Vacca](https://x.com/itsalexvacca/status/2043834187095150673) | management, industry
   Alex Vacca highlights a 4-layer sales funnel architecture that produced 330K website visitors, 1,500+ meetings booked, and $4M new ARR — crossing $7M ARR without raising capital. Quote-tweets an article by Michel Lieben detailing the system.
@@ -3933,71 +3981,71 @@
 - **2026-03-24** | [Factory](https://x.com/factoryai/status/2036184745059688923) | agent-design, industry
   Factory launches "Missions" — long-running agentic workflows now available to all users, built to automate large software tasks like app development from scratch, codebases migrations, and AI research. Strong signal that autonomous multi-step coding agents are going mainstream.
 
-- **2026-03-22** | [hoeem](https://x.com/hooeem/status/2035762966952382646) | claude-code
-  Follow-up post noting his Mar 15 'Become a Claude Architect' article (covering Claude Code, Agent SDK, Claude API, and MCP) hit 110K+ bookmarks in one week. Challenges readers to actually use the prompts and build production-grade apps. The original article is a full free course on Claude development.
+- **2026-03-22** | [hoeem](https://x.com/hooeem/status/2035762966952382646) | claude-code, skills-mcp, questionable
+  hoeem re-promotes his 'I want to become a Claude Architect (full course)' article covering Claude Code, the Claude Agent SDK, the Claude API, and MCP; framed for engagement ('Be the 1%', 110k+ bookmarks).
 
-- **2026-03-22** | [Kshitij Mishra | AI & Tech](https://x.com/daievolutionhub/status/2035396799704547453) | claude-code, questionable
-  Quote-tweet calling @Shruti_0810's '2026 AI Engineer Roadmap' article a Claude Code setup cheatsheet, attributed to Boris (Claude Code creator). Engagement-farming framing ('Save this') but the underlying article may have useful Claude Code setup guidance.
+- **2026-03-22** | [Kshitij Mishra](https://x.com/daievolutionhub/status/2035396799704547453) | claude-code, dev-practices, questionable
+  Kshitij Mishra shares a 'Claude Code Setup Cheatsheet' based on Boris (creator of Claude Code), quoting Shruti Codes' '2026 AI Engineer roadmap' article; 'Save this' engagement framing.
 
-- **2026-03-22** | [Akshay](https://x.com/akshay_pachaar/status/2035341800739877091) | claude-code
-  Comprehensive X article covering the full anatomy of the .claude/ folder in Claude Code: CLAUDE.md best practices (keep it under 200 lines), modular rules/ with path-scoped activation, custom slash commands in commands/, auto-invoked skill packages in skills/, specialized subagent personas in agents/, and permissions via settings.json. Includes a complete directory tree and a practical 5-step setup progression. 4.6M views.
+- **2026-03-22** | [Akshay](https://x.com/akshay_pachaar/status/2035341800739877091) | claude-code, skills-mcp, dev-practices
+  Akshay Pachaar's guide 'Anatomy of the .claude/ folder' walks through CLAUDE.md, custom commands, skills, agents, and permissions and how to set them up properly, framing .claude as the control center for how Claude behaves in a project (instructions, commands, permission rules, and cross-session memory).
 
-- **2026-03-22** | [George from prodmgmt.world](https://x.com/nurijanian/status/2035257434365976671) | research, prompting, management
-  Long X article on using AutoResearch + evals the right way. Key lesson: automated optimization loops fail without manually closing the 'Gulf of Comprehension' first — you must read real outputs and hand-build your failure taxonomy before trusting LLM-generated judges. Took three failed attempts to learn that 'you cannot automate your way past understanding.' Draws a direct parallel to product management: skipping comprehension produces features optimized against a fantasy. 134K views.
+- **2026-03-22** | [George from prodmgmt](https://x.com/nurijanian/status/2035257434365976671) | skills-mcp, prompting, agent-design
+  George (prodmgmt.world) recounts improving his AI skills with Karpathy's Auto Research library (auto-improves prompts via repeated experimentation), using Ole Lehmann's fork turned into a skill that tunes other skills: define test inputs, write judges that score outputs, let the optimization loop run, and wake up to a better skill.
 
-- **2026-03-22** | [Matt Stockton](https://x.com/mstockton/status/2035179208872202320) | management, dev-practices
-  Argues that building AI-enabled products requires embracing a 'burn it all down' mentality every 3 months as best practices shift that fast. Warns against sunk-cost fallacy with legacy patterns like static-context V1 RAG — those approaches are now simply wrong. The good news: AI tools make rebuilding fast enough that it's a viable strategy.
+- **2026-03-22** | [Matt Stockton](https://x.com/mstockton/status/2035179208872202320) | agent-design, dev-practices, management
+  Matt Stockton argues building AI-enabled products inverts classical software engineering: the 'right way to build' changes every ~3 months, it is often better to burn the system down and rebuild than to adapt, and modern tools make that cheap — warning against sunk-cost V1 RAG systems that stuff a static context window.
 
-- **2026-03-22** | [sarah guo](https://x.com/saranormous/status/2035080458304987603) | research, industry, agent-design
-  No Priors Podcast episode with Andrej Karpathy covering the phase shift in engineering brought on by coding agents, AutoResearch, model speciation, and second-order effects on the jobs market. Wide-ranging and strategic — includes timestamps for 14 topic segments. 2.6M views.
+- **2026-03-22** | [sarah guo](https://x.com/saranormous/status/2035080458304987603) | industry, research, agent-design
+  Sarah Guo's No Priors podcast episode with Andrej Karpathy covers the phase shift in engineering, AI psychosis, AutoResearch, model speciation, jobs-market data, open vs closed models, autonomous robotics, and agentic education.
 
-- **2026-03-21** | [felpix](https://x.com/felpix_/status/2033249213614538804) | agent-design
-  Real-world demo: successfully filed taxes using Claude + FreeTaxUSA by dropping W2s, 1099-NECs, 1099-Bs, and expense spreadsheets into a folder, asking Claude to itemize and optimize expenses, then letting Claude use Chrome to submit. Short but a concrete agentic use-case that actually shipped.
+- **2026-03-21** | [felpix](https://x.com/felpix_/status/2033249213614538804) | agent-design, claude-code, industry
+  felpix reports filing taxes end-to-end with Claude + FreeTaxUSA: dropped a W-2, several 1099-NECs and 1099-Bs plus expense/budget spreadsheets in a folder, asked Claude to itemize and optimize expenses, and let it use Chrome to submit — the return was accepted. (Directly relevant: FreeTaxUSA is TaxHawk's own product.)
 
-- **2026-03-20** | [Corey Ganim](https://x.com/coreyganim/status/2034717504505823728) | agent-design, skills-mcp
-  Walkthrough of combining three free AI tools into an autonomous dev stack: Paperclip AI as orchestrator (assigns work, tracks progress), gstack as 15 specialist coding skills from Garry Tan, and autoresearch (Karpathy's method) for running 100 experiments overnight. Shows how to run 10-15 agents simultaneously for planning, testing, and shipping.
+- **2026-03-20** | [Corey Ganim](https://x.com/coreyganim/status/2034717504505823728) | agent-design, skills-mcp, claude-code, questionable
+  Corey Ganim's playbook for running a one-person 'AI company' stacks three free tools: Paperclip (npx paperclipai — assigns work and tracks progress), gstack (15 specialist Claude Code skills from Garry Tan, with /office-hours, /review, /qa, /ship commands), and autoresearch (Karpathy — 100 overnight experiments); the move is running 10-15 gstack commands in parallel. Quotes Nick Spisak's Paperclip follow-up article.
 
-- **2026-03-18** | [Ole Lehmann](https://x.com/itsolelehmann/status/2033982679423848802) | skills-mcp, claude-code
-  Auto-improvement skill for Claude: runs a skill, scores output, finds failures, tweaks the prompt, re-runs to verify improvement, reverts if worse. Based on Karpathy's autoresearch method. Full breakdown and file to run it yourself in linked article.
+- **2026-03-18** | [Ole Lehmann](https://x.com/itsolelehmann/status/2033982679423848802) | skills-mcp, prompting, claude-code
+  Ole Lehmann shares a single skill that auto-improves any other skill using Karpathy's autoresearch method: it runs the skill and scores the output, finds what's failing, makes one small change to the skill prompt, re-runs to check the score, keeps or reverts the change, and repeats until the skill works. Article: 'How to 10x your Claude Skills'.
 
-- **2026-03-18** | [unusual_whales](https://x.com/unusual_whales/status/2033965177918620008) | skills-mcp, industry
-  Unusual Whales released an MCP server that streams live structured market data — options flow, dark pools, congressional trades, financials, technicals, 13Fs, insider activity, and Polymarket data. Plugs into any AI for building trading bots and dashboards.
+- **2026-03-18** | [unusual_whales](https://x.com/unusual_whales/status/2033965177918620008) | skills-mcp, industry, questionable
+  Unusual Whales launched an MCP server that streams live, structured market data to any AI on demand — options flow, dark pools, congressional trades, full financials, technicals, 13Fs, insider activity, and Polymarket data — for building trading bots, dashboards, and screeners (unusualwhales.com/public-api/mcp). 'BREAKING' engagement framing.
 
-- **2026-03-18** | [Thariq](https://x.com/trq212/status/2033949937936085378) | skills-mcp, claude-code
-  Anthropic engineer shares lessons from building Claude Code skills internally. Hundreds of skills in active use at Anthropic — covers what types are worth making, how to write good ones, and when to share. Links to new Skilljar course on Agent Skills.
+- **2026-03-18** | [Thariq](https://x.com/trq212/status/2033949937936085378) | skills-mcp, claude-code, dev-practices
+  Thariq (Anthropic) shares 'Lessons from Building Claude Code: How We Use Skills' — which skills are worth making, the secret to writing a good one, and when to share them — noting Anthropic runs hundreds of skills internally and that the common 'skills are just markdown files' misconception undersells them.
 
-- **2026-03-18** | [Rohit](https://x.com/rohit4verse/status/2033945654377283643) | agent-design, dev-practices
-  X article: 'The Harness Is Everything.' Argues the difference between teams shipping massive output vs struggling isn't the model — it's the harness (environment, tooling, orchestration). Breaks down what Cursor, Claude Code, and Perplexity actually built as harnesses.
+- **2026-03-18** | [Rohit](https://x.com/rohit4verse/status/2033945654377283643) | agent-design, dev-practices, claude-code
+  Rohit's essay 'The Harness Is Everything: What Cursor, Claude Code, and Perplexity Actually Built' argues you're not using AI wrong because of the model — you're using it wrong because you haven't built the right environment; the difference between teams shipping millions of lines and those struggling is the harness, not GPT-5 vs Claude Opus, temperature, or the prompt.
 
-- **2026-03-18** | [zostaff](https://x.com/zostaff/status/2033930728044372275) | agent-design
-  Architecture for autonomous Polymarket trading: Claude as strategist (probability + recommendations), Codex as engineer (writes/debugs bot code), OpenClaw as orchestrator (persistent memory, cron jobs, executes trades). Three agents, zero human intervention.
+- **2026-03-18** | [zostaff](https://x.com/zostaff/status/2033930728044372275) | agent-design, industry, questionable
+  zostaff's clickbait-titled ('How to Quit Your Job in One Day') walkthrough of an autonomous Polymarket trading system built from three agents: Claude (strategist — probability/recommendation/confidence), Codex (engineer — writes and debugs bot code), and OpenClaw (orchestrator — persistent memory, cron, modular skills, Telegram interface that executes trades and logs everything).
 
-- **2026-03-17** | [Akhilesh Mishra](https://x.com/livingdevops/status/2033845127244825041) | agent-design, dev-practices
-  NVIDIA open-sourced OpenShell at GTC — a sandbox for AI coding agents. Locks filesystem, blocks network by default, injects API keys at runtime only, policies via YAML. Runs a full K3s cluster inside Docker. Adobe, Atlassian, Cisco, CrowdStrike, Salesforce already integrating.
+- **2026-03-17** | [Akhilesh Mishra](https://x.com/livingdevops/status/2033845127244825041) | dev-practices, agent-design, skills-mcp, industry
+  Akhilesh Mishra reports NVIDIA open-sourced OpenShell at GTC — an infrastructure-layer sandbox/guardrail for coding agents: filesystem locked at sandbox creation, network blocked by default with whitelisting, API keys injected only at runtime (never on disk), policies in simple YAML, running a full K3s cluster inside a single Docker container. One command sandboxes Claude Code, Codex, or Cursor; Adobe, Atlassian, Cisco, CrowdStrike, and Salesforce are integrating it.
 
-- **2026-03-17** | [Avi Chawla](https://x.com/_avichawla/status/2033797863948632384) | research, agent-design
-  New paper SKILLRL introduces a learning paradigm where AI agents distill raw experience trajectories into compact, reusable skills — like how humans develop driving instincts rather than memorizing routes. Addresses the problem of noisy, redundant memory logs degrading agent performance.
+- **2026-03-17** | [Avi Chawla](https://x.com/_avichawla/status/2033797863948632384) | research, agent-design, skills-mcp
+  Avi Chawla explains the SKILLRL paper: rather than stuffing long, noisy raw trajectories into agent memory, it distills experiences into compact, reusable skills the agent retrieves and applies to future tasks — analogous to how humans turn driving experience into transferable instincts.
 
-- **2026-03-16** | [0xMarioNawfal](https://x.com/roundtablespace/status/2033238044900298844) | claude-code, skills-mcp
-  Shares article: 'Ultimate Claude Cowork Starter Pack: Every Plugin, Skill, and Workflow You Need.' Quoting Corey Ganim's comprehensive guide to setting up Claude Cowork — the setup is where most people fail.
+- **2026-03-16** | [0xMarioNawfal](https://x.com/roundtablespace/status/2033238044900298844) | claude-code, skills-mcp, questionable
+  0xMarioNawfal amplifies Corey Ganim's article 'Ultimate Claude Cowork Starter Pack: Every Plugin, Skill, and Workflow You Need,' which argues most people install Claude Cowork, poke around for 10 minutes, and revert to ChatGPT because the setup is the hard part.
 
-- **2026-03-16** | [Beacon](https://x.com/0xxbeacon/status/2033224402070810940) | claude-code
-  Shares Anthropic's certification course links — anthropic.skilljar.com courses and Claude Certified Architect Foundations access request.
+- **2026-03-16** | [Beacon](https://x.com/0xxbeacon/status/2033224402070810940) | claude-code, management
+  Beacon links Anthropic's Skilljar course catalog (anthropic.skilljar.com) and the access-request page for the Claude Certified Architect: Foundations certification.
 
 - **2026-03-16** | [Josh Kale](https://x.com/joshkale/status/2033183463759626261) | industry, research
   Karpathy scored every job in America on AI replacement risk, then deleted it. Josh cloned the repo before it went down — 342 occupations scored 0-10 on AI exposure. Average across US economy: 5.3/10. Community note: Karpathy called it a casual 2-hour 'vibe code experiment' and deleted because it was 'wildly misinterpreted.'
 
-- **2026-03-16** | [hoeem](https://x.com/hooeem/status/2033146416428708168) | agent-design, claude-code
-  Shares Guri Singh's full course on building AI agents with Claude — covers the entire agent stack from single-agent loops to multi-agent systems, in under 15 minutes.
+- **2026-03-16** | [hoeem](https://x.com/hooeem/status/2033146416428708168) | questionable, general
+  A low-substance reaction post ('hoeem style takeover kek') quoting another post that now comes from a suspended account; little usable content beyond the meta-commentary.
 
-- **2026-03-15** | [Huaxiu Yao](https://x.com/huaxiuyaoml/status/2033038170653405308) | agent-design, research
-  AutoResearchClaw automates the full research pipeline — from literature review to hypothesis generation (via three debating agents) to running experiments and drafting papers with verified citations. One message in, full paper out.
+- **2026-03-15** | [Huaxiu Yao](https://x.com/huaxiuyaoml/status/2033038170653405308) | research, agent-design
+  Huaxiu Yao announces AutoResearchClaw, which automates the full research loop beyond Karpathy's autoresearch experiment loop: one message in, a full conference paper out with real experiments, verified citations, and code. It mines arXiv and Semantic Scholar (50+ papers), has three agents fight over the best hypothesis, writes and self-debugs experiment code, and pivots when results are weak — no human in the loop.
 
 - **2026-03-13** | [kpaxs](https://x.com/kpaxs/status/2032345995095179680) | research
   [Login wall — content not extracted. Custom subject suggests a mental model or heuristic worth revisiting.]
 
-- **2026-03-13** | [Garry Tan](https://x.com/garrytan/status/2032196172430131498) | claude-code, dev-practices
-  gstack is an open-source Claude Code tool that performs deep engineering reviews. A CTO discovered it caught a subtle XSS vulnerability his team missed, predicting 90%+ adoption for new repos.
+- **2026-03-13** | [Garry Tan](https://x.com/garrytan/status/2032196172430131498) | claude-code, skills-mcp, dev-practices, agent-design
+  Garry Tan shares a CTO's testimonial that his open-source gstack ('god mode') flagged a subtle cross-site-scripting vulnerability the team wasn't aware of, predicting 90%+ of new repos will adopt it. gstack is MIT-licensed at github.com/garrytan/gstack and installs into local Claude Code and into a repo for teammates with two pastes.
 
 - **2026-03-12** | [elvis](https://x.com/omarsar0/status/2031727864199208972) | agent-design, skills-mcp, research
   EvoSkill: a framework where three agents (Executor, Proposer, Skill-Builder) iteratively discover and refine their own capabilities by analyzing failures. Improved Claude Code + Opus 4.5 accuracy from 60.6% to 67.9%, with zero-shot skill transfer across benchmarks.

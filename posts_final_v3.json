@@ -7301,7 +7301,7 @@
     "handle": "@garrytan",
     "subject": "Post by Garry Tan on X",
     "url": "https://x.com/garrytan/status/2044059516497711522",
-    "summary": "Garry Tan endorses Alfred Lin's (Sequoia) article 'Heat Seeking Missile for Pain' — on founders who actively seek out the hairiest, gnarliest problems and surgically blow them up. References Zipline's Keller.",
+    "summary": "Garry Tan amplifies Alfred Lin's article 'Heat Seeking Missile for Pain': the realest founders actively hunt the hairiest, gnarliest problems and surgically destroy them, citing an interview with Keller of Zipline.",
     "topics": [
       "management",
       "industry"
@@ -7310,12 +7310,15 @@
       "me",
       "leadership"
     ],
-    "priority": "long-term",
+    "priority": "near-term",
     "sourceType": "tweet",
-    "views": "173.2K",
+    "views": "189.6K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Founders who are the realest actually do this. [Quote: Alfred Lin article 'Heat Seeking Missile for Pain' — a heat seeking missile for pain actively seeks out the hairiest, gnarliest problems then surgically works to blow them up; cites interview with Keller of Zipline.]",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-15",
@@ -7323,10 +7326,9 @@
     "handle": "@ihtesham2005",
     "subject": "Post by Ihtesham Ali on X",
     "url": "https://x.com/ihtesham2005/status/2044056849272705246",
-    "summary": "Aurogen — MIT-licensed 'OpenClaw' fork with true multi-agent, multi-instance orchestration in one deployment (github.com/UniRound-Tec/Aurogen). Modular agents/channels/providers/skills, web-panel setup (no config/CLI), ClaWHub integration, one-click installers, $50 Linux SBC minimum.",
+    "summary": "Aurogen is an open-source (MIT) OpenClaw fork whose differentiator is true multi-agent, multi-instance orchestration inside one deployment: modular agents/channels/providers/skills, a pure web-panel setup with no config files or CLI, ClaWHub skill imports, one-click installers, and it runs on a $50 Linux SBC (github.com/UniRound-Tec/Aurogen).",
     "topics": [
       "agent-design",
-      "claude-code",
       "skills-mcp"
     ],
     "audience": [
@@ -7338,7 +7340,10 @@
     "views": "5.5K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Aurogen — an OpenClaw fork with true multi-agent, multi-instance orchestration in one deployment; modular agents/channels/providers/skills, web-panel setup, ClaWHub integration, one-click installers, MIT licensed.\n\nGitHub - UniRound-Tec/Aurogen",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-15",
@@ -7346,21 +7351,24 @@
     "handle": "@amix3k",
     "subject": "Post by Amir Salihefendić on X",
     "url": "https://x.com/amix3k/status/2044046057315742146",
-    "summary": "Amir Salihefendić (Doist/Todoist founder) on org design when companies include both human and machine intelligence. Riffs on Jack Dorsey's framing and Terence Tao's 'Copernican view of intelligence' — humans and machines have different strengths, not just different rungs on the same ladder. AI's role is connective tissue: context, trade-offs, cross-team information flow.",
+    "summary": "Amir Salihefendić (Doist) treats Jack Dorsey's recent framing as an org-design question for companies blending human and machine intelligence: remote-first, transparent, functional teams with clear DRIs, where AI increasingly supplies the 'connective tissue' that moves context across teams, tools, and decisions.",
     "topics": [
       "management",
-      "industry"
+      "agent-design"
     ],
     "audience": [
       "me",
       "leadership"
     ],
-    "priority": "long-term",
+    "priority": "near-term",
     "sourceType": "tweet",
     "views": "21.5K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "What does a company look like when it includes both human and machine intelligence? Jack Dorsey's framing as an org-design question; Doist already resembles it (remote-first, transparent, functional teams, clear DRIs). The missing piece is connective tissue — AI connecting information, preserving context, surfacing trade-offs.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-15",
@@ -7368,32 +7376,11 @@
     "handle": "@indie_maker_fox",
     "subject": "Post by Indie Fox on X",
     "url": "https://x.com/indie_maker_fox/status/2043857352282255829",
-    "summary": "Architecture diagram generator skill — github.com/Cocoon-AI/architecture-diagram-generator. Indie Fox shares an auto-generated architecture diagram for 'OpenHarness' and praises the color scheme and diagram quality.",
+    "summary": "Indie Fox praises a Claude skill that generates very high-quality software architecture diagrams (github.com/Cocoon-AI/architecture-diagram-generator), showing an OpenHarness architecture diagram as an example of its clean output.",
     "topics": [
       "skills-mcp",
-      "dev-practices"
-    ],
-    "audience": [
-      "me",
-      "dev-team"
-    ],
-    "priority": "now",
-    "sourceType": "tweet",
-    "views": "306K",
-    "notes": "",
-    "enriched": true,
-    "enrichment_status": "partial"
-  },
-  {
-    "date": "2026-04-15",
-    "author": "Mario Zechner",
-    "handle": "@badlogicgames",
-    "subject": "Post by Mario Zechner on X",
-    "url": "https://x.com/badlogicgames/status/2043757216885256463",
-    "summary": "Mario Zechner recommends Alex Volkov's article 'The Z/L Continuum — Do AI engineers even need to read code anymore?' (thursdai.news/zl) — examines whether reading code is still a core AI-engineer skill in 2026/2027.",
-    "topics": [
-      "dev-practices",
-      "industry"
+      "claude-code",
+      "agent-design"
     ],
     "audience": [
       "me",
@@ -7401,10 +7388,39 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "31.3K",
+    "views": "364.5K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "The architecture diagrams this skill produces are extremely high quality (with an OpenHarness architecture diagram example, nice color palette).\n\narchitecture-diagram-generator",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-04-15",
+    "author": "Mario Zechner",
+    "handle": "@badlogicgames",
+    "subject": "Post by Mario Zechner on X",
+    "url": "https://x.com/badlogicgames/status/2043757216885256463",
+    "summary": "Mario Zechner recommends Alex Volkov's article 'The Z/L Continuum — Do AI engineers even need to read code anymore?' (thursdai.news/zl), which asks how much code AI engineers still need to read in 2026 and beyond.",
+    "topics": [
+      "dev-practices",
+      "agent-design",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "32.2K",
+    "notes": "",
+    "enriched": true,
+    "content": "recommended reading. [Quote: Alex Volkov article 'The Z/L Continuum - Do AI engineers even need to read code anymore?' from thursdai.news/zl]",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-14",
@@ -9141,9 +9157,11 @@
     "handle": "@hooeem",
     "subject": "Claude Code certification",
     "url": "https://x.com/hooeem/status/2035762966952382646",
-    "summary": "Follow-up post noting his Mar 15 'Become a Claude Architect' article (covering Claude Code, Agent SDK, Claude API, and MCP) hit 110K+ bookmarks in one week. Challenges readers to actually use the prompts and build production-grade apps. The original article is a full free course on Claude development.",
+    "summary": "hoeem re-promotes his 'I want to become a Claude Architect (full course)' article covering Claude Code, the Claude Agent SDK, the Claude API, and MCP; framed for engagement ('Be the 1%', 110k+ bookmarks).",
     "topics": [
-      "claude-code"
+      "claude-code",
+      "skills-mcp",
+      "questionable"
     ],
     "audience": [
       "me",
@@ -9151,31 +9169,39 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "93.3K",
+    "views": "97.5K",
     "notes": "Jeremy modified subject to 'Claude Code certification' — signals importance.",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "One week and 110000+ bookmarks later, betting <1% actually used the prompts. Become a Claude Architect (full course): understand Claude Code, Claude Agent SDK, Claude API, and Model Context Protocols.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-22",
-    "author": "Kshitij Mishra | AI & Tech",
+    "author": "Kshitij Mishra",
     "handle": "@daievolutionhub",
     "subject": "Post by Kshitij Mishra | AI & Tech on X",
     "url": "https://x.com/daievolutionhub/status/2035396799704547453",
-    "summary": "Quote-tweet calling @Shruti_0810's '2026 AI Engineer Roadmap' article a Claude Code setup cheatsheet, attributed to Boris (Claude Code creator). Engagement-farming framing ('Save this') but the underlying article may have useful Claude Code setup guidance.",
+    "summary": "Kshitij Mishra shares a 'Claude Code Setup Cheatsheet' based on Boris (creator of Claude Code), quoting Shruti Codes' '2026 AI Engineer roadmap' article; 'Save this' engagement framing.",
     "topics": [
       "claude-code",
+      "dev-practices",
       "questionable"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
-    "priority": "long-term",
+    "priority": "near-term",
     "sourceType": "tweet",
-    "views": "39.4K",
+    "views": "40.5K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "A Claude Code Setup Cheatsheet based on Boris, the creator of Claude Code. [Quote: Shruti Codes '2026 AI Engineer roadmap' — master Python first, don't skip fundamentals.]",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-22",
@@ -9183,9 +9209,11 @@
     "handle": "@akshay_pachaar",
     "subject": "Needs a look this week.",
     "url": "https://x.com/akshay_pachaar/status/2035341800739877091",
-    "summary": "Comprehensive X article covering the full anatomy of the .claude/ folder in Claude Code: CLAUDE.md best practices (keep it under 200 lines), modular rules/ with path-scoped activation, custom slash commands in commands/, auto-invoked skill packages in skills/, specialized subagent personas in agents/, and permissions via settings.json. Includes a complete directory tree and a practical 5-step setup progression. 4.6M views.",
+    "summary": "Akshay Pachaar's guide 'Anatomy of the .claude/ folder' walks through CLAUDE.md, custom commands, skills, agents, and permissions and how to set them up properly, framing .claude as the control center for how Claude behaves in a project (instructions, commands, permission rules, and cross-session memory).",
     "topics": [
-      "claude-code"
+      "claude-code",
+      "skills-mcp",
+      "dev-practices"
     ],
     "audience": [
       "me",
@@ -9193,22 +9221,25 @@
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "4.6M",
+    "views": "11M",
     "notes": "Jeremy flagged: \"Needs a look this week.\"",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Anatomy of the .claude/ folder — a complete guide to CLAUDE.md, custom commands, skills, agents, and permissions. The .claude folder is the control center for how Claude behaves in your project: instructions, custom commands, permission rules, and memory across sessions.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-22",
-    "author": "George from prodmgmt.world",
+    "author": "George from prodmgmt",
     "handle": "@nurijanian",
     "subject": "Post by George from 🕹prodmgmt.world on X",
     "url": "https://x.com/nurijanian/status/2035257434365976671",
-    "summary": "Long X article on using AutoResearch + evals the right way. Key lesson: automated optimization loops fail without manually closing the 'Gulf of Comprehension' first — you must read real outputs and hand-build your failure taxonomy before trusting LLM-generated judges. Took three failed attempts to learn that 'you cannot automate your way past understanding.' Draws a direct parallel to product management: skipping comprehension produces features optimized against a fantasy. 134K views.",
+    "summary": "George (prodmgmt.world) recounts improving his AI skills with Karpathy's Auto Research library (auto-improves prompts via repeated experimentation), using Ole Lehmann's fork turned into a skill that tunes other skills: define test inputs, write judges that score outputs, let the optimization loop run, and wake up to a better skill.",
     "topics": [
-      "research",
+      "skills-mcp",
       "prompting",
-      "management"
+      "agent-design"
     ],
     "audience": [
       "me",
@@ -9216,10 +9247,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "134K",
+    "views": "172K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Improving AI skills with autoresearch & evals-skills: using Karpathy's Auto Research (auto-improving prompts via experimentation) and Ole's fork turned into a skill that tunes other skills. Define test inputs, write judges, run the optimization loop, wake up to a better skill. Took three runs to learn to use it right.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-22",
@@ -9227,10 +9261,11 @@
     "handle": "@mstockton",
     "subject": "Post by Matt Stockton on X",
     "url": "https://x.com/mstockton/status/2035179208872202320",
-    "summary": "Argues that building AI-enabled products requires embracing a 'burn it all down' mentality every 3 months as best practices shift that fast. Warns against sunk-cost fallacy with legacy patterns like static-context V1 RAG — those approaches are now simply wrong. The good news: AI tools make rebuilding fast enough that it's a viable strategy.",
+    "summary": "Matt Stockton argues building AI-enabled products inverts classical software engineering: the 'right way to build' changes every ~3 months, it is often better to burn the system down and rebuild than to adapt, and modern tools make that cheap — warning against sunk-cost V1 RAG systems that stuff a static context window.",
     "topics": [
-      "management",
-      "dev-practices"
+      "agent-design",
+      "dev-practices",
+      "management"
     ],
     "audience": [
       "me",
@@ -9242,7 +9277,10 @@
     "views": "",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Building AI products inverts classical SWE advice: the right way to build changes in 3-month increments, it's often better to burn it all down than adapt, and the tools help you do that. People fall for sunk-cost fallacy building V1 RAG with static context windows.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-22",
@@ -9250,22 +9288,25 @@
     "handle": "@saranormous",
     "subject": "Post by sarah guo on X",
     "url": "https://x.com/saranormous/status/2035080458304987603",
-    "summary": "No Priors Podcast episode with Andrej Karpathy covering the phase shift in engineering brought on by coding agents, AutoResearch, model speciation, and second-order effects on the jobs market. Wide-ranging and strategic — includes timestamps for 14 topic segments. 2.6M views.",
+    "summary": "Sarah Guo's No Priors podcast episode with Andrej Karpathy covers the phase shift in engineering, AI psychosis, AutoResearch, model speciation, jobs-market data, open vs closed models, autonomous robotics, and agentic education.",
     "topics": [
-      "research",
       "industry",
+      "research",
       "agent-design"
     ],
     "audience": [
       "me",
       "leadership"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
-    "views": "2.6M",
+    "views": "2.9M",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "New No Priors with Karpathy: the phase shift in engineering, AI psychosis, claws, AutoResearch, a SETI-at-Home-like movement in AI, the model landscape, second-order effects, mastery of coding agents, jobs market data, open vs closed models, autonomous robotics, MicroGPT and agentic education.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-21",
@@ -9273,20 +9314,26 @@
     "handle": "@felpix_",
     "subject": "Send to Logan and tanner",
     "url": "https://x.com/felpix_/status/2033249213614538804",
-    "summary": "Real-world demo: successfully filed taxes using Claude + FreeTaxUSA by dropping W2s, 1099-NECs, 1099-Bs, and expense spreadsheets into a folder, asking Claude to itemize and optimize expenses, then letting Claude use Chrome to submit. Short but a concrete agentic use-case that actually shipped.",
+    "summary": "felpix reports filing taxes end-to-end with Claude + FreeTaxUSA: dropped a W-2, several 1099-NECs and 1099-Bs plus expense/budget spreadsheets in a folder, asked Claude to itemize and optimize expenses, and let it use Chrome to submit — the return was accepted. (Directly relevant: FreeTaxUSA is TaxHawk's own product.)",
     "topics": [
-      "agent-design"
+      "agent-design",
+      "claude-code",
+      "industry"
     ],
     "audience": [
       "me",
+      "leadership",
       "dev-team"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "1,176",
+    "views": "1,528",
     "notes": "Jeremy modified subject to 'Send to Logan and tanner' — share with team.",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "My Claude + FreeTaxUSA taxes were accepted. W-2, a couple 1099-NECs, 1099-Bs in a folder, plus expense/budget spreadsheets; asked Claude to itemize and optimize expenses, let Claude use Chrome to submit. Blessed by AI agents.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-20",
@@ -9294,10 +9341,12 @@
     "handle": "@coreyganim",
     "subject": "Post by Corey Ganim on X",
     "url": "https://x.com/coreyganim/status/2034717504505823728",
-    "summary": "Walkthrough of combining three free AI tools into an autonomous dev stack: Paperclip AI as orchestrator (assigns work, tracks progress), gstack as 15 specialist coding skills from Garry Tan, and autoresearch (Karpathy's method) for running 100 experiments overnight. Shows how to run 10-15 agents simultaneously for planning, testing, and shipping.",
+    "summary": "Corey Ganim's playbook for running a one-person 'AI company' stacks three free tools: Paperclip (npx paperclipai — assigns work and tracks progress), gstack (15 specialist Claude Code skills from Garry Tan, with /office-hours, /review, /qa, /ship commands), and autoresearch (Karpathy — 100 overnight experiments); the move is running 10-15 gstack commands in parallel. Quotes Nick Spisak's Paperclip follow-up article.",
     "topics": [
       "agent-design",
-      "skills-mcp"
+      "skills-mcp",
+      "claude-code",
+      "questionable"
     ],
     "audience": [
       "me",
@@ -9305,10 +9354,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "118.7K",
+    "views": "154.9K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "What to actually DO with Paperclip: Paperclip = your AI company; gstack = 15 specialist skills from Garry Tan (/office-hours, /review, /qa, /ship); autoresearch = 100 experiments while you sleep (Karpathy). 10-minute setup, run 10-15 gstack commands simultaneously. Three free tools, zero employees, one AI company.\n\nnpx paperclipai onboard",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-18",
@@ -9316,21 +9368,25 @@
     "handle": "@itsolelehmann",
     "subject": "Post by Ole Lehmann on X",
     "url": "https://x.com/itsolelehmann/status/2033982679423848802",
-    "summary": "Auto-improvement skill for Claude: runs a skill, scores output, finds failures, tweaks the prompt, re-runs to verify improvement, reverts if worse. Based on Karpathy's autoresearch method. Full breakdown and file to run it yourself in linked article.",
+    "summary": "Ole Lehmann shares a single skill that auto-improves any other skill using Karpathy's autoresearch method: it runs the skill and scores the output, finds what's failing, makes one small change to the skill prompt, re-runs to check the score, keeps or reverts the change, and repeats until the skill works. Article: 'How to 10x your Claude Skills'.",
     "topics": [
       "skills-mcp",
+      "prompting",
       "claude-code"
     ],
     "audience": [
       "me",
       "dev-team"
     ],
-    "priority": "now",
+    "priority": "near-term",
     "sourceType": "tweet",
-    "views": "156.3K",
+    "views": "167.4K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "One skill that auto-improves any other skill (Karpathy's autoresearch method): run skill and score output, find failures, make one small prompt change, re-run, keep if score improves else revert, repeat. Article: How to 10x your Claude Skills.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-18",
@@ -9338,20 +9394,25 @@
     "handle": "@unusual_whales",
     "subject": "Post by unusual_whales on X",
     "url": "https://x.com/unusual_whales/status/2033965177918620008",
-    "summary": "Unusual Whales released an MCP server that streams live structured market data — options flow, dark pools, congressional trades, financials, technicals, 13Fs, insider activity, and Polymarket data. Plugs into any AI for building trading bots and dashboards.",
+    "summary": "Unusual Whales launched an MCP server that streams live, structured market data to any AI on demand — options flow, dark pools, congressional trades, full financials, technicals, 13Fs, insider activity, and Polymarket data — for building trading bots, dashboards, and screeners (unusualwhales.com/public-api/mcp). 'BREAKING' engagement framing.",
     "topics": [
       "skills-mcp",
-      "industry"
+      "industry",
+      "questionable"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "809.8K",
+    "views": "3.7M",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "The Unusual Whales MCP Server plugs into any AI and streams live structured market data: options flow, dark pools, congressional trades, full financials, technicals, 13Fs, insider activity, Polymarket. Build trading bots, dashboards, screeners.\n\nunusualwhales.com/public-api/mcp",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-18",
@@ -9359,21 +9420,25 @@
     "handle": "@trq212",
     "subject": "Post by Thariq on X",
     "url": "https://x.com/trq212/status/2033949937936085378",
-    "summary": "Anthropic engineer shares lessons from building Claude Code skills internally. Hundreds of skills in active use at Anthropic — covers what types are worth making, how to write good ones, and when to share. Links to new Skilljar course on Agent Skills.",
+    "summary": "Thariq (Anthropic) shares 'Lessons from Building Claude Code: How We Use Skills' — which skills are worth making, the secret to writing a good one, and when to share them — noting Anthropic runs hundreds of skills internally and that the common 'skills are just markdown files' misconception undersells them.",
     "topics": [
       "skills-mcp",
-      "claude-code"
+      "claude-code",
+      "dev-practices"
     ],
     "audience": [
       "me",
       "dev-team"
     ],
-    "priority": "now",
+    "priority": "near-term",
     "sourceType": "tweet",
-    "views": "5M",
+    "views": "6.9M",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Lessons from Building Claude Code: How We Use Skills. Skills are a top extension point — flexible, easy to make, simple to distribute. What's worth making, the secret to a good skill, when to share. Anthropic uses hundreds internally; they're more than 'just markdown files'.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-18",
@@ -9381,10 +9446,11 @@
     "handle": "@rohit4verse",
     "subject": "Post by Rohit on X",
     "url": "https://x.com/rohit4verse/status/2033945654377283643",
-    "summary": "X article: 'The Harness Is Everything.' Argues the difference between teams shipping massive output vs struggling isn't the model — it's the harness (environment, tooling, orchestration). Breaks down what Cursor, Claude Code, and Perplexity actually built as harnesses.",
+    "summary": "Rohit's essay 'The Harness Is Everything: What Cursor, Claude Code, and Perplexity Actually Built' argues you're not using AI wrong because of the model — you're using it wrong because you haven't built the right environment; the difference between teams shipping millions of lines and those struggling is the harness, not GPT-5 vs Claude Opus, temperature, or the prompt.",
     "topics": [
       "agent-design",
-      "dev-practices"
+      "dev-practices",
+      "claude-code"
     ],
     "audience": [
       "me",
@@ -9392,10 +9458,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "647K",
+    "views": "1.5M",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "The Harness Is Everything: What Cursor, Claude Code, and Perplexity actually built. You're not using AI wrong because of the model; you haven't built the right environment. The difference isn't GPT-5 vs Claude Opus or the prompt — it's the harness. A harness is not a system prompt or a wrapper.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-18",
@@ -9403,19 +9472,24 @@
     "handle": "@zostaff",
     "subject": "Post by zostaff on X",
     "url": "https://x.com/zostaff/status/2033930728044372275",
-    "summary": "Architecture for autonomous Polymarket trading: Claude as strategist (probability + recommendations), Codex as engineer (writes/debugs bot code), OpenClaw as orchestrator (persistent memory, cron jobs, executes trades). Three agents, zero human intervention.",
+    "summary": "zostaff's clickbait-titled ('How to Quit Your Job in One Day') walkthrough of an autonomous Polymarket trading system built from three agents: Claude (strategist — probability/recommendation/confidence), Codex (engineer — writes and debugs bot code), and OpenClaw (orchestrator — persistent memory, cron, modular skills, Telegram interface that executes trades and logs everything).",
     "topics": [
-      "agent-design"
+      "agent-design",
+      "industry",
+      "questionable"
     ],
     "audience": [
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "2.3M",
+    "views": "3M",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Claude + OpenClaw + Codex autonomous Polymarket trading architecture: Claude is strategist (market data + news -> probability/recommendation/confidence), Codex is engineer (writes/debugs bot code), OpenClaw is orchestrator (persistent memory, cron, modular skills, Telegram, executes trades, logs). One thinks, one builds, one runs.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-17",
@@ -9423,12 +9497,15 @@
     "handle": "@livingdevops",
     "subject": "Post by livingdevops on X",
     "url": "https://x.com/livingdevops/status/2033845127244825041",
-    "summary": "NVIDIA open-sourced OpenShell at GTC — a sandbox for AI coding agents. Locks filesystem, blocks network by default, injects API keys at runtime only, policies via YAML. Runs a full K3s cluster inside Docker. Adobe, Atlassian, Cisco, CrowdStrike, Salesforce already integrating.",
+    "summary": "Akhilesh Mishra reports NVIDIA open-sourced OpenShell at GTC — an infrastructure-layer sandbox/guardrail for coding agents: filesystem locked at sandbox creation, network blocked by default with whitelisting, API keys injected only at runtime (never on disk), policies in simple YAML, running a full K3s cluster inside a single Docker container. One command sandboxes Claude Code, Codex, or Cursor; Adobe, Atlassian, Cisco, CrowdStrike, and Salesforce are integrating it.",
     "topics": [
+      "dev-practices",
       "agent-design",
-      "dev-practices"
+      "skills-mcp",
+      "industry"
     ],
     "audience": [
+      "me",
       "dev-team"
     ],
     "priority": "now",
@@ -9436,7 +9513,10 @@
     "views": "73.8K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "NVIDIA open-sourced OpenShell (announced at GTC) — guardrails for AI coding agents at the infrastructure layer: filesystem locked at sandbox creation, network blocked by default (whitelist allowed), API keys injected at runtime only, YAML policies, full K3s cluster inside one Docker container. One command to sandbox Claude Code, Codex, or Cursor. Adobe, Atlassian, Cisco, CrowdStrike, Salesforce already integrating.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-17",
@@ -9444,41 +9524,51 @@
     "handle": "@_avichawla",
     "subject": "Post by Avi Chawla on X",
     "url": "https://x.com/_avichawla/status/2033797863948632384",
-    "summary": "New paper SKILLRL introduces a learning paradigm where AI agents distill raw experience trajectories into compact, reusable skills — like how humans develop driving instincts rather than memorizing routes. Addresses the problem of noisy, redundant memory logs degrading agent performance.",
+    "summary": "Avi Chawla explains the SKILLRL paper: rather than stuffing long, noisy raw trajectories into agent memory, it distills experiences into compact, reusable skills the agent retrieves and applies to future tasks — analogous to how humans turn driving experience into transferable instincts.",
     "topics": [
       "research",
-      "agent-design"
+      "agent-design",
+      "skills-mcp"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "A new learning paradigm for AI agents that learns like humans. Most memory systems store raw trajectories (long, noisy, redundant), which hurts in-context. The SKILLRL paper distills experiences into compact reusable skills the agent retrieves and applies to future tasks, like human driving instincts.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-16",
     "author": "0xMarioNawfal",
-    "handle": "@RoundtableSpace",
+    "handle": "@roundtablespace",
     "subject": "Post by 0xMarioNawfal on X",
     "url": "https://x.com/roundtablespace/status/2033238044900298844",
-    "summary": "Shares article: 'Ultimate Claude Cowork Starter Pack: Every Plugin, Skill, and Workflow You Need.' Quoting Corey Ganim's comprehensive guide to setting up Claude Cowork — the setup is where most people fail.",
+    "summary": "0xMarioNawfal amplifies Corey Ganim's article 'Ultimate Claude Cowork Starter Pack: Every Plugin, Skill, and Workflow You Need,' which argues most people install Claude Cowork, poke around for 10 minutes, and revert to ChatGPT because the setup is the hard part.",
     "topics": [
       "claude-code",
-      "skills-mcp"
+      "skills-mcp",
+      "questionable"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "188.8K",
+    "views": "202.1K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Every plugin, skill, and workflow you need for Claude in one article. [Quote: Corey Ganim 'Ultimate Claude Cowork Starter Pack: Every Plugin, Skill, and Workflow You Need' — Cowork is powerful but most people quit after 10 minutes because of setup.]",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-16",
@@ -9486,19 +9576,24 @@
     "handle": "@0xxbeacon",
     "subject": "Post by Beacon on X",
     "url": "https://x.com/0xxbeacon/status/2033224402070810940",
-    "summary": "Shares Anthropic's certification course links — anthropic.skilljar.com courses and Claude Certified Architect Foundations access request.",
+    "summary": "Beacon links Anthropic's Skilljar course catalog (anthropic.skilljar.com) and the access-request page for the Claude Certified Architect: Foundations certification.",
     "topics": [
-      "claude-code"
+      "claude-code",
+      "management"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "6.6K",
+    "views": "7,415",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Anthropic Courses and the Claude Certified Architect: Foundations certification.\n\nAnthropic Courses (Skilljar)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-16",
@@ -9527,20 +9622,23 @@
     "handle": "@hooeem",
     "subject": "Post by hoeem on X",
     "url": "https://x.com/hooeem/status/2033146416428708168",
-    "summary": "Shares Guri Singh's full course on building AI agents with Claude — covers the entire agent stack from single-agent loops to multi-agent systems, in under 15 minutes.",
+    "summary": "A low-substance reaction post ('hoeem style takeover kek') quoting another post that now comes from a suspended account; little usable content beyond the meta-commentary.",
     "topics": [
-      "agent-design",
-      "claude-code"
+      "questionable",
+      "general"
     ],
     "audience": [
       "me"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
-    "views": "32.6K",
+    "views": "33.8K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "hoeem style takeover kek (quoting a post that is now from a suspended account).",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-15",
@@ -9548,21 +9646,24 @@
     "handle": "@HuaxiuYaoML",
     "subject": "Post by Huaxiu Yao on X",
     "url": "https://x.com/huaxiuyaoml/status/2033038170653405308",
-    "summary": "AutoResearchClaw automates the full research pipeline — from literature review to hypothesis generation (via three debating agents) to running experiments and drafting papers with verified citations. One message in, full paper out.",
+    "summary": "Huaxiu Yao announces AutoResearchClaw, which automates the full research loop beyond Karpathy's autoresearch experiment loop: one message in, a full conference paper out with real experiments, verified citations, and code. It mines arXiv and Semantic Scholar (50+ papers), has three agents fight over the best hypothesis, writes and self-debugs experiment code, and pivots when results are weak — no human in the loop.",
     "topics": [
-      "agent-design",
-      "research"
+      "research",
+      "agent-design"
     ],
     "audience": [
       "me",
       "dev-team"
     ],
-    "priority": "long-term",
+    "priority": "near-term",
     "sourceType": "tweet",
     "views": "88K",
     "notes": "Builds on Karpathy's autoresearch. Could influence how we think about automated testing/analysis pipelines.",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "AutoResearchClaw automates the whole research pipeline: one message in, full conference paper out — real experiments, citations, code, no human in the loop. Raids arXiv & Semantic Scholar (50+ papers), three agents fight over the hypothesis, writes/self-debugs experiment code, pivots on weak results, verifies every citation against live databases.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-13",
@@ -9590,10 +9691,12 @@
     "handle": "@garrytan",
     "subject": "Post by Garry Tan on X",
     "url": "https://x.com/garrytan/status/2032196172430131498",
-    "summary": "gstack is an open-source Claude Code tool that performs deep engineering reviews. A CTO discovered it caught a subtle XSS vulnerability his team missed, predicting 90%+ adoption for new repos.",
+    "summary": "Garry Tan shares a CTO's testimonial that his open-source gstack ('god mode') flagged a subtle cross-site-scripting vulnerability the team wasn't aware of, predicting 90%+ of new repos will adopt it. gstack is MIT-licensed at github.com/garrytan/gstack and installs into local Claude Code and into a repo for teammates with two pastes.",
     "topics": [
       "claude-code",
-      "dev-practices"
+      "skills-mcp",
+      "dev-practices",
+      "agent-design"
     ],
     "audience": [
       "me",
@@ -9601,10 +9704,13 @@
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "844.8K",
+    "views": "876.6K",
     "notes": "Directly relevant — evaluate gstack for our code review pipeline.",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "A CTO friend texted that gstack is 'god mode' — its eng review found a subtle XSS attack his team didn't know about — betting 90%+ of new repos will use gstack.\n\ngstack is available now, open source, MIT license. One paste to install on local Claude Code, a second to install in your repo for teammates.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-12",
