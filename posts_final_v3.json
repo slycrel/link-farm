@@ -10302,7 +10302,7 @@
     "handle": "@sukh_saroy",
     "subject": "Post by Sukh Sroay on X",
     "url": "https://x.com/sukh_saroy/status/2029400474739458379",
-    "summary": "GitNexus — open-source knowledge graph engine that maps every dependency, call chain, execution flow, and breaking change risk in a codebase, then feeds it into Claude Code, Cursor, and Windsurf via MCP. Supports 12 languages, runs entirely locally with zero network calls. Provides blast radius analysis with confidence scores.",
+    "summary": "[Post unavailable — account suspended]",
     "topics": [
       "questionable",
       "skills-mcp",
@@ -10318,9 +10318,9 @@
     "views": "",
     "notes": "Engagement farming format (BREAKING, arrows) but the tool itself looks genuinely useful — local codebase knowledge graph for AI agents via MCP",
     "enriched": true,
-    "enrichment_status": "partial",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "empty capture (two attempts)"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 2,
+    "enrichment_last_error": "account suspended"
   },
   {
     "date": "2026-03-05",
@@ -10574,24 +10574,26 @@
     "handle": "@danlovesproofs",
     "subject": "Post by Dan Robinson on X",
     "url": "https://x.com/danlovesproofs/status/2028890694837039202",
-    "summary": "Argues engineering teams building the best products are abandoning issue tracking entirely — no Linear, no backlog. Instead running on short google docs and Slack. Teams scaling this to 30+ engineers and winning in competitive markets. Challenges the assumption that sprint planning and ticket grooming are necessary.",
+    "summary": "Argues issue tracking/backlogs are dying: forward-thinking AI-augmented teams skip Linear/tickets entirely because the cost to fix an issue now approaches the cost to understand it. Works for small, flat, high-context teams with strong dev infra; framed as part of the 'death of midwit software engineering.'",
     "topics": [
       "management",
-      "dev-practices"
+      "dev-practices",
+      "agent-design",
+      "industry"
     ],
     "audience": [
-      "me",
       "dev-team",
       "leadership"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "319K",
+    "views": "321.9K",
     "notes": "X article — long-form. Highly relevant to how AI is changing engineering process.",
     "enriched": true,
-    "enrichment_status": "partial",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "empty capture (no tweet text)"
+    "content": "Dan Robinson (@danlovesproofs) — \"The Death of Issue Tracking\". Notices forward-thinking engineering teams running with no Linear, no backlog, no issue tracking at all, scaling this to 30+ engineers. Post-backlog thinking: if it matters it'll come up again; why write a ticket when you can just fix it (cost to fix is converging on cost to understand); a blank page forces a real OODA loop and better prioritization. Tailwind is AI — 7 capable engineers running agent swarms deliver what took 50+. Requires small flat teams, high ambient context, engineers trusted to make independent judgment calls and do their own PM, and agent-ready dev infra. Cites Tuomas Artman (Linear) and Quinn Slack (Amp 'Fix Bugs Now'). Part of the broader 'death of Midwit Software Engineering.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-03-05",
@@ -10599,22 +10601,24 @@
     "handle": "@Av1dlive",
     "subject": "Post by Avid on X",
     "url": "https://x.com/av1dlive/status/2027429188471558475",
-    "summary": "Engagement farming listicle about AI job displacement with a 'playbook' of generic advice: audit your role, learn OpenClaw, stack skills. Mentions 4,000 recent layoffs as a hook.",
+    "summary": "Engagement-style 'AI will take your job' listicle, but with a usable career playbook: audit which tasks AI can replicate, learn local agent tooling and stackable 'skills', layer AI-native competence (prompting, orchestration, RAG, automation), shift from executor to system designer, double down on human edge, and build a product/brand.",
     "topics": [
       "questionable",
-      "management"
+      "management",
+      "agent-design"
     ],
     "audience": [
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "57K",
+    "views": "58.3K",
     "notes": "Engagement farming format but touches on real AI displacement concerns",
     "enriched": true,
-    "enrichment_status": "partial",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "empty capture (image-only thread)"
+    "content": "Avid (@Av1dlive) — \"AI layoffs are here (and how to save yourself)\". Engagement-farming framing but a real career playbook: (1) Job Moat Audit — score each weekly task on AI-replicability; safe roles need judgment, relationships, taste, in-person accountability. (2) Learn local agent tooling + stack modular 'Skills' (Gmail/Calendar/GitHub/research/coding); leverage shifts to the orchestrator of agents; warns community skills carry security risks — review what you install. (3) Layer AI-native competence: prompting, agent orchestration, RAG on private data, workflow automation, multimodal, light fine-tuning. (4) Shift executor → system designer. (5) Double down on human edge. (6) Build a product/personal brand.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-03-05",
@@ -10634,9 +10638,9 @@
     "views": "[not found]",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "no url on record"
+    "enrichment_status": "failed",
+    "enrichment_attempts": 2,
+    "enrichment_last_error": "no url on record — cannot scrape; needs URL backfill from source email"
   },
   {
     "date": "2026-03-05",
@@ -10714,21 +10718,23 @@
     "handle": "@TheGlobalMinima",
     "subject": "Post by Aarno on X",
     "url": "https://x.com/theglobalminima/status/2028432457784340950",
-    "summary": "Argues software engineers in agentic AI should start learning RL. As coding agents improve, building custom harnesses gets easier, but behavior control, consistency, memory, and correction remain hard — areas where traditional RL has deep expertise. Links to a paper at the intersection of RL and LLM agents.",
+    "summary": "Suggests software engineers working on agentic AI should study reinforcement learning. As coding agents make custom harnesses/tools easy, the real challenges are behavior control, consistency, memory, and correction — areas where traditional RL on 'agents' intersects fruitfully with LLM agents.",
     "topics": [
       "research",
       "agent-design"
     ],
     "audience": [
-      "me",
       "dev-team"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "19.4K",
+    "views": "19.8K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Aarno (@TheGlobalMinima): If you're a software engineer who got into Agentic AI, start looking into RL. As coding agents improve, building custom harnesses and tools gets easier, but the real challenge is behavior control, consistency, memory and correction. Traditional RL has treated 'agents' as an entity long before LLM agents; the intersection is fruitful for both research and products. Shares a paper to get the feel for it.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-02",
@@ -10736,7 +10742,7 @@
     "handle": "@nkohari",
     "subject": "Post by Nate Kohari on X",
     "url": "https://x.com/nkohari/status/2028525461689176325",
-    "summary": "We’ve been using this at Ardent and it makes code reviews 100x better",
+    "summary": "[Post unavailable — page doesn't exist]",
     "topics": [
       "dev-practices"
     ],
@@ -10748,7 +10754,9 @@
     "views": "81K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page doesn't exist"
   },
   {
     "date": "2026-03-02",
@@ -10756,22 +10764,25 @@
     "handle": "@kloss_xyz",
     "subject": "Post by klöss on X",
     "url": "https://x.com/kloss_xyz/status/2028237936848994369",
-    "summary": "Anthropic launched a free AI academy (anthropic.skilljar.com) with 13 courses and official certificates covering MCP, APIs, Claude Code, and AI fluency. Quote-tweets the original announcement by Peter Agboola.",
+    "summary": "Flags Anthropic's free AI academy — 13 courses with official certificates covering MCP, APIs, Claude Code, and AI fluency, at anthropic.skilljar.com. Hype framing ('stop what you're doing') but a genuinely useful free resource.",
     "topics": [
-      "questionable",
       "claude-code",
-      "skills-mcp"
+      "skills-mcp",
+      "questionable"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
     "views": "1.6M",
     "notes": "Engagement farming tone ('Stop what you're doing') but the underlying resource — Anthropic's free academy — is genuinely valuable for the team",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "klöss (@kloss_xyz): Anthropic dropped a free AI academy with 13 courses and official certificates across MCP, APIs, Claude Code, and fluency — used to cost ~$2k in bootcamps, now $0. Quote-tweets Peter Agboola (@baba_Omoloro) pointing to anthropic.skilljar.com.\n\nAnthropic has launched free courses to master AI with certificates for $0.00 — anthropic.skilljar.com",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-02",
@@ -10779,21 +10790,25 @@
     "handle": "@davidbyttow",
     "subject": "Post by David Byttow on X",
     "url": "https://x.com/davidbyttow/status/2028233578329600449",
-    "summary": "Argues AI agents are collapsing the coordination layer of orgs. For decades, engineering leadership was built around synchronization — sprint planning, dependency graphs, project managers. Now agents decompose, sequence, and execute in tight conversational loops. People whose focus is process are becoming redundant; writing code was never the bottleneck, coordination overhead was.",
+    "summary": "Essay arguing AI agents are collapsing the coordination layer of organizations. As execution and coordination costs approach zero, the remaining scarce skill is goal clarity, taste, and ownership. Warns bad judgment now scales faster — strategic mistakes show up as fast delivery of the wrong thing.",
     "topics": [
       "management",
-      "agent-design"
+      "agent-design",
+      "industry"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "19K",
+    "views": "19.5K",
     "notes": "X article — strong think piece on AI eliminating coordination overhead in engineering orgs",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "David Byttow (@davidbyttow) — \"AI absorbed the process layer\". Agents are collapsing the coordination layer (task decomposition, sprint planning, dependency graphs, status syncs). Writing code was never the bottleneck — coordination overhead was, and that's commoditizing. What remains is judgment, taste, direction, ownership, and the ability to define a goal precisely enough that autonomous systems can act on it. AI won't replace managers; it exposes the ones whose contribution was procedural rather than directional. Leverage inverts: one sharp operator orchestrating agent fleets covers what took 5–10 people. Darker side: bad judgment scales faster — strip away the natural checkpoints of the coordination layer and strategic mistakes announce themselves through fast delivery of the wrong thing. Selection pressure on leadership judgment is about to intensify.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-02",
@@ -10801,22 +10816,25 @@
     "handle": "@tetsuoai",
     "subject": "Post by tetsuo on X",
     "url": "https://x.com/tetsuoai/status/2028068322106097773",
-    "summary": "Details specific agentic failure modes in fast/distilled code models that base models handle correctly: incorrect action selection between direct execution vs shell invocation, inventing shell metacharacters as arguments, routing through bash -c unnecessarily. Calls for stronger contrastive tool-use training examples to fix distillation gaps.",
+    "summary": "Technical breakdown of recurring agentic failure modes in fast/distilled code models: wrong direct-exec vs shell selection, structured-output (JSON-only) non-compliance, and tool-result grounding failures (reporting success after a tool error). Fix: distill full agent trajectories (request→tool→output→grounded response), add contrastive near-miss examples, and gate on concrete agentic evals.",
     "topics": [
       "research",
       "agent-design",
-      "dev-practices"
+      "dev-practices",
+      "prompting"
     ],
     "audience": [
-      "me",
       "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
-    "views": "49K",
+    "views": "49.8K",
     "notes": "X article — deep technical analysis of where distilled models fail at agentic tasks",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "tetsuo (@tetsuoai) — \"Agentic Fine-Tuning Gaps in Fast and Distilled Models\". Three recurring failure modes that base models get right but distilled/fast models miss: (1) Action selection & API semantics — direct execution (command+args) vs shell invocation; needs contrastive near-miss examples (wrong call, correct call, why). (2) Instruction priority & output discipline — 'return JSON only' compliance; training teaches the habit, constrained decoding enforces the contract. (3) State tracking & belief updating — the worst one: model gets an explicit tool error then reports success anyway; it's pattern-completing, not grounding. Fix: distill full agent trajectories (user request → tool choice → tool output → grounded response), not just final answers. Eval gates: argv correctness, JSON validity/schema exactness, contradiction rate. Includes a detailed eval prompt covering all three modes, and a note that desktop tools in Docker can't reach the host's localhost.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-02",
@@ -10824,21 +10842,24 @@
     "handle": "@nyk_builderz",
     "subject": "Post by Nyk 🌱 on X",
     "url": "https://x.com/nyk_builderz/status/2028022503319203926",
-    "summary": "Open-sourced Mission Control — a dashboard for AI agent orchestration with 26 panels, real-time WebSocket + SSE, SQLite backend (no external services). Features kanban board, cost tracking, role-based access, quality gates, and multi-gateway support. Single pnpm start to run. GitHub: builderz-labs/mission-control.",
+    "summary": "Announces open-sourcing Mission Control, a self-hosted AI agent orchestration dashboard: 26 panels, real-time WebSocket+SSE, SQLite (no external services), kanban board, cost tracking, role-based access, quality gates, multi-gateway support. Repo: github.com/builderz-labs/mission-control.",
     "topics": [
       "agent-design",
-      "dev-practices"
+      "dev-practices",
+      "skills-mcp"
     ],
     "audience": [
-      "me",
       "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "432.5K",
+    "views": "466.4K",
     "notes": "Open-source agent orchestration dashboard — worth evaluating",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Nyk (@nyk_builderz): Open-sourced Mission Control — a self-hosted dashboard for AI agent orchestration. 26 panels, real-time WebSocket + SSE, SQLite (no external services), kanban board, cost tracking, role-based access, quality gates, multi-gateway support. 'One pnpm start and you're running.' GitHub: builderz-labs/mission-control.\n\nGitHub - builderz-labs/mission-control: Self-hosted AI agent orchestration platform",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-02",
@@ -10846,22 +10867,25 @@
     "handle": "@agenticgirl",
     "subject": "Post by Sandhya on X",
     "url": "https://x.com/agenticgirl/status/2028006725538967614",
-    "summary": "LMCache (6.9K stars, 124K downloads/month) makes LLM KV caches persistent and shareable across engine instances, saving ~50% of redundant compute. Tiered storage: GPU → CPU DRAM → disk → S3. Used by Google Cloud, CoreWeave, NVIDIA. Enables instant RAG (process docs once, reuse KV cache) and multi-turn memory without recomputation.",
+    "summary": "'BREAKING'-style but substantive thread on LMCache, an open-source KV-cache layer (6.9K stars, used by Google Cloud, CoreWeave, NVIDIA) that makes the LLM KV cache persistent and shareable across engine instances, tiered GPU→DRAM→disk→S3. Enables instant RAG, disaggregated prefill, and context sharing; integrates with vLLM and SGLang. Apache-2.0, pip install lmcache.",
     "topics": [
-      "questionable",
       "research",
-      "agent-design"
+      "dev-practices",
+      "questionable",
+      "industry"
     ],
     "audience": [
-      "me",
       "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "141.9K",
     "notes": "Engagement farming format (BREAKING) but LMCache is a legit open-source project with real enterprise adoption",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Sandhya (@agenticgirl) — engagement-style ('BREAKING') but real: LMCache, an open-source KV-cache layer (6.9K stars, 124K downloads/mo; used by Google Cloud, CoreWeave, NVIDIA). Problem: LLM inference recomputes the entire context (system prompt, history, retrieved docs) every request, burning ~50% of compute. LMCache makes the KV cache persistent and shareable across engine instances, offloading tiered GPU→CPU DRAM→local disk→S3. Unlocks: (1) Instant RAG — process a 100-page PDF once, near-zero TTFT on later queries; (2) Disaggregated prefill — prefill on H100s, stream cache to cheaper L4s for decode; (3) Context sharing across users. Claims 3–10x latency savings in multi-round QA. Integrates with vLLM and SGLang. Apache-2.0, pip install lmcache. GitHub repo in comments.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-02",
@@ -10869,19 +10893,23 @@
     "handle": "@TheVixhal",
     "subject": "Post by vixhaℓ on X",
     "url": "https://x.com/thevixhal/status/2027763453679841311",
-    "summary": "Step-by-step X article on building a 16-bit CPU from scratch in C. Over 4,000 bookmarks. Educational deep-dive into computer architecture fundamentals.",
+    "summary": "Promotes a popular step-by-step article on building a 16-bit CPU from scratch in C (4,000+ bookmarks). A from-scratch systems/architecture learning project rather than AI content.",
     "topics": [
-      "dev-practices"
+      "dev-practices",
+      "general"
     ],
     "audience": [
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "159.6K",
+    "views": "161.3K",
     "notes": "Educational — not AI-specific but solid CS fundamentals content",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "vixhaℓ (@TheVixhal): 4,000+ people bookmarked an article on building a 16-bit CPU in C. Quote-tweets his own Feb 23 article 'Building a 16-Bit CPU from Scratch in C (Step-by-Step)' — a from-scratch computer-architecture project walking through every step.\n\nArticle: Building a 16-Bit CPU from Scratch in C (Step-by-Step)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-01",
@@ -10889,7 +10917,7 @@
     "handle": "@neural_avb",
     "subject": "Post by AVB on X",
     "url": "https://x.com/neural_avb/status/2027957534159835443",
-    "summary": "Wrote down all the things I have learned over the past couple years developing LLM agents. I just follow one very simple mental model and it kinda just works... (atleast for me)",
+    "summary": "[Post unavailable — page doesn't exist]",
     "topics": [
       "agent-design",
       "research"
@@ -10902,7 +10930,9 @@
     "views": "4K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page doesn't exist"
   },
   {
     "date": "2026-03-01",
@@ -10910,22 +10940,25 @@
     "handle": "@rez0__",
     "subject": "Post by Joseph Thacker on X",
     "url": "https://x.com/rez0__/status/2027448137133264955",
-    "summary": "Bug bounty hunting transformed by AI coding agents since December 2025. Author pointed Claude Code at a new program's scope — enumerate subdomains, grab JS bundles, run full analysis pipeline, fuzz paths, spider authenticated surface, check for IDORs, test GraphQL. Models now have enough coherence and tenacity to power through long hacking tasks autonomously.",
+    "summary": "Argues bug bounty / security research changed step-function fast in late 2025: coding agents went from not working to genuinely working. Example: pointed Claude Code at a target's scope (enumerate subdomains, analyze JS bundles, fuzz, test IDORs/GraphQL, write an HTML report); it ran ~30 min, self-recovered from auth/WAF errors, and returned two confirmed vulns. Hunters now build and share custom Claude Code skill libraries (JS static analysis, authenticated fuzzing, IDOR, GraphQL introspection). Quote-tweets Karpathy's parallel observation about programming.",
     "topics": [
       "agent-design",
       "claude-code",
-      "dev-practices"
+      "dev-practices",
+      "skills-mcp"
     ],
     "audience": [
-      "me",
       "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "86.2K",
     "notes": "Concrete example of Claude Code being used for autonomous security research — impressive real-world agent use case",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Joseph Thacker (@rez0__): Bug bounty changed step-function fast — coding agents basically didn't work for security research before December and basically work now (higher quality, long-term coherence, tenacity). Example: pointed Claude Code at a new program's scope ('enumerate subdomains, grab JS bundles, run the full analysis pipeline — endpoints/secrets/source-sink/postMessage, fuzz paths, spider authenticated surface, check IDORs, test GraphQL, write an HTML report'). It ran ~30 min, hit auth failures/WAF blocks/malformed responses, researched and resolved each, and returned two confirmed vulns plus leads — untouched. Workflow is now spinning up agents, giving targets in English, managing output in parallel. The prize is ascending abstraction layers to long-running orchestrator agents with the right skills/memory/instructions. He and friends build and share custom Claude Code skill libraries (JS static analysis, authenticated fuzzing, IDOR frameworks, GraphQL introspection); each person's agent improves as the collective skill set grows. Still needs high-level direction, judgment, hacker intuition.\n\nIt is hard to communicate how much programming has changed due to AI in the last 2 months... coding agents basically didn't work before December.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-02-28",
@@ -10933,22 +10966,26 @@
     "handle": "@trq212",
     "subject": "Post by Thariq on X",
     "url": "https://x.com/trq212/status/2027463795355095314",
-    "summary": "Anthropic engineer shares lessons from building Claude Code — focuses on action space design for agents. Explores tradeoffs between few general tools (bash, code execution) vs many specialized ones. Uses the analogy of solving a math problem: paper vs calculator vs Wolfram Alpha. Key insight: tool design shapes agent capability more than model capability alone.",
+    "summary": "Anthropic's Thariq on building Claude Code: designing an agent's action space is an art. Walks through the AskUserQuestion tool's evolution (ExitPlanTool param → output-format parsing → dedicated tool), the shift from TodoWrite to the Task tool as models improved, replacing RAG with a Grep search tool so Claude builds its own context, progressive disclosure via Skills, and the Claude Code Guide subagent. Lesson: revisit tool assumptions as capabilities grow; experiment, read outputs, 'see like an agent.'",
     "topics": [
       "claude-code",
       "agent-design",
+      "skills-mcp",
       "prompting"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "leadership"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "3.7M",
+    "views": "3.9M",
     "notes": "From Anthropic engineer — 3.7M views. Essential reading on agent tool design philosophy behind Claude Code.",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Thariq (@trq212) — \"Lessons from Building Claude Code: Seeing like an Agent\". Constructing an agent's action space is one of the hardest parts of building a harness. Tools should be shaped to the model's abilities; you learn those by reading its outputs and experimenting. Examples: (1) Elicitation/AskUserQuestion — tried adding questions to ExitPlanTool (confused plan vs questions), then a markdown output format (unreliable), finally a dedicated tool that blocks the loop and shows a modal; Claude 'liked' calling it. (2) Tasks & Todos — launched with TodoWrite + every-5-turn reminders; as models improved the reminders became constraining, so replaced with the Task tool (dependencies, cross-subagent coordination). (3) Search — replaced a fragile RAG vector DB with a Grep tool so Claude builds its own context; formalized progressive disclosure via Agent Skills (recursive file reads). (4) Claude Code Guide subagent — progressive disclosure to answer 'how do I use Claude Code' without bloating the system prompt. Claude Code has ~20 tools; the bar to add one is high. Designing tools is an art, not a science — experiment often, read your outputs, see like an agent.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-02-27",

@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-06-25T15:09:40Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-06-25T16:39:43Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-06-23** — [Dhilip Subramanian](https://x.com/sdhilip/status/2069140867466797200) — *near-term • Industry • 163.1K views • v1 enriched*  
@@ -35,25 +35,25 @@
 
 
 ### Revisit from last month
-- **2026-03-04** — [Atharva](https://x.com/atharvaxdevs/status/2028903519802232991) — *near-term • Agent Design • 468.3K views • v1 enriched*  
-  A teaser post aimed at engineers chasing the top 0.01% of "agentic engineering" skill (thread/resource hook).
-- **2026-03-04** — [Nate.Google](https://x.com/nate_google_/status/2028836031932355067) — *near-term • Claude Code • 1M views • v1 enriched*  
-  Nate.Google recommends what he calls the most valuable channel for learning everything about Claude.
+- **2026-02-28** — [Thariq](https://x.com/trq212/status/2027463795355095314) — *now • Claude Code • 3.9M views • v1 enriched*  
+  Anthropic's Thariq on building Claude Code: designing an agent's action space is an art. Walks through the AskUserQuestion tool's evolution (ExitPlanTool param → output-format parsing → dedicated tool), the shift from TodoWrite to the Task tool as models improved, replacing RAG with a Grep search tool so Claude builds its own context, progressive disclosure via Skills, and the Claude Code Guide subagent. Lesson: revisit tool assumptions as capabilities grow; experiment, read outputs, 'see like an agent.'
+- **2026-03-01** — [Joseph Thacker](https://x.com/rez0__/status/2027448137133264955) — *near-term • Agent Design • 86.2K views • v1 enriched*  
+  Argues bug bounty / security research changed step-function fast in late 2025: coding agents went from not working to genuinely working. Example: pointed Claude Code at a target's scope (enumerate subdomains, analyze JS bundles, fuzz, test IDORs/GraphQL, write an HTML report); it ran ~30 min, self-recovered from auth/WAF errors, and returned two confirmed vulns. Hunters now build and share custom Claude Code skill libraries (JS static analysis, authenticated fuzzing, IDOR, GraphQL introspection). Quote-tweets Karpathy's parallel observation about programming.
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 326 | 50.5% |
+| agent-design | 327 | 50.6% |
 | claude-code | 152 | 23.5% |
-| dev-practices | 189 | 29.3% |
-| skills-mcp | 106 | 16.4% |
-| prompting | 88 | 13.6% |
+| dev-practices | 190 | 29.4% |
+| skills-mcp | 109 | 16.9% |
+| prompting | 89 | 13.8% |
 | research | 126 | 19.5% |
-| industry | 82 | 12.7% |
+| industry | 85 | 13.2% |
 | management | 98 | 15.2% |
 | questionable | 104 | 16.1% |
-| general | 84 | 13.0% |
+| general | 85 | 13.2% |
 
 ---
 ## Quick Reference (50 Most Recent)
@@ -113,7 +113,7 @@
 ---
 ## Posts by Topic
 
-### Agent Design (326)
+### Agent Design (327)
 
 - [Matthew Berman](https://x.com/matthewberman/status/2069098257444434425) — 2026-06-23: Matthew Berman announces a new Loop Library feature, Lazy Loops (aka Discover), which scans your codebase and chat threads to find potential agentic loops and designs them for you. Links the Forward-Future/loop-library GitHub repo of practical, repeatable AI-agent workflows.
 
@@ -629,7 +629,7 @@
 
 - [Meta Alchemist](https://x.com/meta_alchemist/status/2029430826128293906) — 2026-03-05: Roundup of 10 open-source AI memory layers (free, popular on GitHub, some YC-funded) to give coding agents like Claude and Codex better recall than plain memory.md files, with notes on what each is good at and how to combine them. Engagement-styled listicle but substantive.
 
-- [Sukh Sroay](https://x.com/sukh_saroy/status/2029400474739458379) — 2026-03-05: GitNexus — open-source knowledge graph engine that maps every dependency, call chain, execution flow, and breaking change risk in a codebase, then feeds it into Claude Code, Cursor, and Windsurf via MCP. Supports 12 languages, runs entirely locally with zero network calls. Provides blast radius analysis with confidence scores.
+- [Sukh Sroay](https://x.com/sukh_saroy/status/2029400474739458379) — 2026-03-05: [Post unavailable — account suspended]
 
 - [0xSero](https://x.com/0xsero/status/2029305128084218265) — 2026-03-05: Argues real-time, very fast inference (e.g. models served by Cerebras, used via "Spark") is a major shift that requires changing your working strategy, pointing to companion articles for details.
 
@@ -641,25 +641,27 @@
 
 - [Numman Ali](https://x.com/nummanali/status/2029013946701381978) — 2026-03-05: [Post unavailable — page doesn’t exist]
 
+- [Dan Robinson](https://x.com/danlovesproofs/status/2028890694837039202) — 2026-03-05: Argues issue tracking/backlogs are dying: forward-thinking AI-augmented teams skip Linear/tickets entirely because the cost to fix an issue now approaches the cost to understand it. Works for small, flat, high-context teams with strong dev infra; framed as part of the 'death of midwit software engineering.'
+
+- [Avid](https://x.com/av1dlive/status/2027429188471558475) — 2026-03-05: Engagement-style 'AI will take your job' listicle, but with a usable career playbook: audit which tasks AI can replicate, learn local agent tooling and stackable 'skills', layer AI-native competence (prompting, orchestration, RAG, automation), shift from executor to system designer, double down on human edge, and build a product/brand.
+
 - [Muratcan Koylan](https://x.com/koylanai/status/2032671843) — 2026-03-05: [Post unavailable — corrupt status id resolves to unrelated @BizBlogger account]
 
 - [Atharva](https://x.com/atharvaxdevs/status/2028903519802232991) — 2026-03-04: A teaser post aimed at engineers chasing the top 0.01% of "agentic engineering" skill (thread/resource hook).
 
-- [Aarno](https://x.com/theglobalminima/status/2028432457784340950) — 2026-03-03: Argues software engineers in agentic AI should start learning RL. As coding agents improve, building custom harnesses gets easier, but behavior control, consistency, memory, and correction remain hard — areas where traditional RL has deep expertise. Links to a paper at the intersection of RL and LLM agents.
+- [Aarno](https://x.com/theglobalminima/status/2028432457784340950) — 2026-03-03: Suggests software engineers working on agentic AI should study reinforcement learning. As coding agents make custom harnesses/tools easy, the real challenges are behavior control, consistency, memory, and correction — areas where traditional RL on 'agents' intersects fruitfully with LLM agents.
 
-- [David Byttow](https://x.com/davidbyttow/status/2028233578329600449) — 2026-03-02: Argues AI agents are collapsing the coordination layer of orgs. For decades, engineering leadership was built around synchronization — sprint planning, dependency graphs, project managers. Now agents decompose, sequence, and execute in tight conversational loops. People whose focus is process are becoming redundant; writing code was never the bottleneck, coordination overhead was.
+- [David Byttow](https://x.com/davidbyttow/status/2028233578329600449) — 2026-03-02: Essay arguing AI agents are collapsing the coordination layer of organizations. As execution and coordination costs approach zero, the remaining scarce skill is goal clarity, taste, and ownership. Warns bad judgment now scales faster — strategic mistakes show up as fast delivery of the wrong thing.
 
-- [tetsuo](https://x.com/tetsuoai/status/2028068322106097773) — 2026-03-02: Details specific agentic failure modes in fast/distilled code models that base models handle correctly: incorrect action selection between direct execution vs shell invocation, inventing shell metacharacters as arguments, routing through bash -c unnecessarily. Calls for stronger contrastive tool-use training examples to fix distillation gaps.
+- [tetsuo](https://x.com/tetsuoai/status/2028068322106097773) — 2026-03-02: Technical breakdown of recurring agentic failure modes in fast/distilled code models: wrong direct-exec vs shell selection, structured-output (JSON-only) non-compliance, and tool-result grounding failures (reporting success after a tool error). Fix: distill full agent trajectories (request→tool→output→grounded response), add contrastive near-miss examples, and gate on concrete agentic evals.
 
-- [Nyk](https://x.com/nyk_builderz/status/2028022503319203926) — 2026-03-02: Open-sourced Mission Control — a dashboard for AI agent orchestration with 26 panels, real-time WebSocket + SSE, SQLite backend (no external services). Features kanban board, cost tracking, role-based access, quality gates, and multi-gateway support. Single pnpm start to run. GitHub: builderz-labs/mission-control.
+- [Nyk](https://x.com/nyk_builderz/status/2028022503319203926) — 2026-03-02: Announces open-sourcing Mission Control, a self-hosted AI agent orchestration dashboard: 26 panels, real-time WebSocket+SSE, SQLite (no external services), kanban board, cost tracking, role-based access, quality gates, multi-gateway support. Repo: github.com/builderz-labs/mission-control.
 
-- [Sandhya](https://x.com/agenticgirl/status/2028006725538967614) — 2026-03-02: LMCache (6.9K stars, 124K downloads/month) makes LLM KV caches persistent and shareable across engine instances, saving ~50% of redundant compute. Tiered storage: GPU → CPU DRAM → disk → S3. Used by Google Cloud, CoreWeave, NVIDIA. Enables instant RAG (process docs once, reuse KV cache) and multi-turn memory without recomputation.
+- [AVB](https://x.com/neural_avb/status/2027957534159835443) — 2026-03-01: [Post unavailable — page doesn't exist]
 
-- [AVB](https://x.com/neural_avb/status/2027957534159835443) — 2026-03-01: Wrote down all the things I have learned over the past couple years developing LLM agents. I just follow one very simple mental model and it kinda just works... (atleast for me)
+- [Joseph Thacker](https://x.com/rez0__/status/2027448137133264955) — 2026-03-01: Argues bug bounty / security research changed step-function fast in late 2025: coding agents went from not working to genuinely working. Example: pointed Claude Code at a target's scope (enumerate subdomains, analyze JS bundles, fuzz, test IDORs/GraphQL, write an HTML report); it ran ~30 min, self-recovered from auth/WAF errors, and returned two confirmed vulns. Hunters now build and share custom Claude Code skill libraries (JS static analysis, authenticated fuzzing, IDOR, GraphQL introspection). Quote-tweets Karpathy's parallel observation about programming.
 
-- [Joseph Thacker](https://x.com/rez0__/status/2027448137133264955) — 2026-03-01: Bug bounty hunting transformed by AI coding agents since December 2025. Author pointed Claude Code at a new program's scope — enumerate subdomains, grab JS bundles, run full analysis pipeline, fuzz paths, spider authenticated surface, check for IDORs, test GraphQL. Models now have enough coherence and tenacity to power through long hacking tasks autonomously.
-
-- [Thariq](https://x.com/trq212/status/2027463795355095314) — 2026-02-28: Anthropic engineer shares lessons from building Claude Code — focuses on action space design for agents. Explores tradeoffs between few general tools (bash, code execution) vs many specialized ones. Uses the analogy of solving a math problem: paper vs calculator vs Wolfram Alpha. Key insight: tool design shapes agent capability more than model capability alone.
+- [Thariq](https://x.com/trq212/status/2027463795355095314) — 2026-02-28: Anthropic's Thariq on building Claude Code: designing an agent's action space is an art. Walks through the AskUserQuestion tool's evolution (ExitPlanTool param → output-format parsing → dedicated tool), the shift from TodoWrite to the Task tool as models improved, replacing RAG with a Grep search tool so Claude builds its own context, progressive disclosure via Skills, and the Claude Code Guide subagent. Lesson: revisit tool assumptions as capabilities grow; experiment, read outputs, 'see like an agent.'
 
 - [Sudo su](https://x.com/sudoingx/status/2027264446989848613) — 2026-02-27: Practical tips for steering AI coding agents: tell the model its own architecture constraints, provide project structure over single prompts, iterate in layers (scaffold → refine → polish), let the agent debug itself, and leverage long context (262K tokens). Mentions Claude Code as the preferred harness and Qwen3.5's 256-expert MoE architecture.
 
@@ -1013,11 +1015,11 @@
 
 - [Nate.Google](https://x.com/nate_google_/status/2028836031932355067) — 2026-03-04: Nate.Google recommends what he calls the most valuable channel for learning everything about Claude.
 
-- [klöss](https://x.com/kloss_xyz/status/2028237936848994369) — 2026-03-02: Anthropic launched a free AI academy (anthropic.skilljar.com) with 13 courses and official certificates covering MCP, APIs, Claude Code, and AI fluency. Quote-tweets the original announcement by Peter Agboola.
+- [klöss](https://x.com/kloss_xyz/status/2028237936848994369) — 2026-03-02: Flags Anthropic's free AI academy — 13 courses with official certificates covering MCP, APIs, Claude Code, and AI fluency, at anthropic.skilljar.com. Hype framing ('stop what you're doing') but a genuinely useful free resource.
 
-- [Joseph Thacker](https://x.com/rez0__/status/2027448137133264955) — 2026-03-01: Bug bounty hunting transformed by AI coding agents since December 2025. Author pointed Claude Code at a new program's scope — enumerate subdomains, grab JS bundles, run full analysis pipeline, fuzz paths, spider authenticated surface, check for IDORs, test GraphQL. Models now have enough coherence and tenacity to power through long hacking tasks autonomously.
+- [Joseph Thacker](https://x.com/rez0__/status/2027448137133264955) — 2026-03-01: Argues bug bounty / security research changed step-function fast in late 2025: coding agents went from not working to genuinely working. Example: pointed Claude Code at a target's scope (enumerate subdomains, analyze JS bundles, fuzz, test IDORs/GraphQL, write an HTML report); it ran ~30 min, self-recovered from auth/WAF errors, and returned two confirmed vulns. Hunters now build and share custom Claude Code skill libraries (JS static analysis, authenticated fuzzing, IDOR, GraphQL introspection). Quote-tweets Karpathy's parallel observation about programming.
 
-- [Thariq](https://x.com/trq212/status/2027463795355095314) — 2026-02-28: Anthropic engineer shares lessons from building Claude Code — focuses on action space design for agents. Explores tradeoffs between few general tools (bash, code execution) vs many specialized ones. Uses the analogy of solving a math problem: paper vs calculator vs Wolfram Alpha. Key insight: tool design shapes agent capability more than model capability alone.
+- [Thariq](https://x.com/trq212/status/2027463795355095314) — 2026-02-28: Anthropic's Thariq on building Claude Code: designing an agent's action space is an art. Walks through the AskUserQuestion tool's evolution (ExitPlanTool param → output-format parsing → dedicated tool), the shift from TodoWrite to the Task tool as models improved, replacing RAG with a Grep search tool so Claude builds its own context, progressive disclosure via Skills, and the Claude Code Guide subagent. Lesson: revisit tool assumptions as capabilities grow; experiment, read outputs, 'see like an agent.'
 
 - [Sudo su](https://x.com/sudoingx/status/2027264446989848613) — 2026-02-27: Practical tips for steering AI coding agents: tell the model its own architecture constraints, provide project structure over single prompts, iterate in layers (scaffold → refine → polish), let the agent debug itself, and leverage long context (262K tokens). Mentions Claude Code as the preferred harness and Qwen3.5's 256-expert MoE architecture.
 
@@ -1073,7 +1075,7 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (189)
+### Dev Practices (190)
 
 - [Dhilip Subramanian](https://x.com/sdhilip/status/2069140867466797200) — 2026-06-23: Dhilip Subramanian, a heavy dictation user (44,414 words via Wispr Flow), recommends FluidVoice: a free, open-source, locally-run macOS voice-to-text tool that needs no API key and handles slang well. He cancelled his paid plan after switching.
 
@@ -1359,21 +1361,23 @@
 
 - [Philipp Schmid](https://x.com/_philschmid/status/2029570052530360719) — 2026-03-06: Practical guide to evaluating agent Skills, which are often AI-generated and untested: define success criteria (outcome/style/efficiency), build 10-12 prompts with deterministic checks, add an LLM-as-judge for qualitative checks, and iterate on the skill from eval failures.
 
-- [Sukh Sroay](https://x.com/sukh_saroy/status/2029400474739458379) — 2026-03-05: GitNexus — open-source knowledge graph engine that maps every dependency, call chain, execution flow, and breaking change risk in a codebase, then feeds it into Claude Code, Cursor, and Windsurf via MCP. Supports 12 languages, runs entirely locally with zero network calls. Provides blast radius analysis with confidence scores.
+- [Sukh Sroay](https://x.com/sukh_saroy/status/2029400474739458379) — 2026-03-05: [Post unavailable — account suspended]
 
 - [yenkel](https://x.com/yenkel/status/2029299384832209259) — 2026-03-05: Crisp engineering-leadership advice for the AI era: fewer handoffs and faster decisions, more exploration, willingness to throw away code/tokens, learning by building, and picking leads who can own design, engineering and product together.
 
-- [Dan Robinson](https://x.com/danlovesproofs/status/2028890694837039202) — 2026-03-05: Argues engineering teams building the best products are abandoning issue tracking entirely — no Linear, no backlog. Instead running on short google docs and Slack. Teams scaling this to 30+ engineers and winning in competitive markets. Challenges the assumption that sprint planning and ticket grooming are necessary.
+- [Dan Robinson](https://x.com/danlovesproofs/status/2028890694837039202) — 2026-03-05: Argues issue tracking/backlogs are dying: forward-thinking AI-augmented teams skip Linear/tickets entirely because the cost to fix an issue now approaches the cost to understand it. Works for small, flat, high-context teams with strong dev infra; framed as part of the 'death of midwit software engineering.'
 
-- [Nate Kohari](https://x.com/nkohari/status/2028525461689176325) — 2026-03-02: We’ve been using this at Ardent and it makes code reviews 100x better
+- [Nate Kohari](https://x.com/nkohari/status/2028525461689176325) — 2026-03-02: [Post unavailable — page doesn't exist]
 
-- [tetsuo](https://x.com/tetsuoai/status/2028068322106097773) — 2026-03-02: Details specific agentic failure modes in fast/distilled code models that base models handle correctly: incorrect action selection between direct execution vs shell invocation, inventing shell metacharacters as arguments, routing through bash -c unnecessarily. Calls for stronger contrastive tool-use training examples to fix distillation gaps.
+- [tetsuo](https://x.com/tetsuoai/status/2028068322106097773) — 2026-03-02: Technical breakdown of recurring agentic failure modes in fast/distilled code models: wrong direct-exec vs shell selection, structured-output (JSON-only) non-compliance, and tool-result grounding failures (reporting success after a tool error). Fix: distill full agent trajectories (request→tool→output→grounded response), add contrastive near-miss examples, and gate on concrete agentic evals.
 
-- [Nyk](https://x.com/nyk_builderz/status/2028022503319203926) — 2026-03-02: Open-sourced Mission Control — a dashboard for AI agent orchestration with 26 panels, real-time WebSocket + SSE, SQLite backend (no external services). Features kanban board, cost tracking, role-based access, quality gates, and multi-gateway support. Single pnpm start to run. GitHub: builderz-labs/mission-control.
+- [Nyk](https://x.com/nyk_builderz/status/2028022503319203926) — 2026-03-02: Announces open-sourcing Mission Control, a self-hosted AI agent orchestration dashboard: 26 panels, real-time WebSocket+SSE, SQLite (no external services), kanban board, cost tracking, role-based access, quality gates, multi-gateway support. Repo: github.com/builderz-labs/mission-control.
 
-- [vixhaℓ](https://x.com/thevixhal/status/2027763453679841311) — 2026-03-02: Step-by-step X article on building a 16-bit CPU from scratch in C. Over 4,000 bookmarks. Educational deep-dive into computer architecture fundamentals.
+- [Sandhya](https://x.com/agenticgirl/status/2028006725538967614) — 2026-03-02: 'BREAKING'-style but substantive thread on LMCache, an open-source KV-cache layer (6.9K stars, used by Google Cloud, CoreWeave, NVIDIA) that makes the LLM KV cache persistent and shareable across engine instances, tiered GPU→DRAM→disk→S3. Enables instant RAG, disaggregated prefill, and context sharing; integrates with vLLM and SGLang. Apache-2.0, pip install lmcache.
 
-- [Joseph Thacker](https://x.com/rez0__/status/2027448137133264955) — 2026-03-01: Bug bounty hunting transformed by AI coding agents since December 2025. Author pointed Claude Code at a new program's scope — enumerate subdomains, grab JS bundles, run full analysis pipeline, fuzz paths, spider authenticated surface, check for IDORs, test GraphQL. Models now have enough coherence and tenacity to power through long hacking tasks autonomously.
+- [vixhaℓ](https://x.com/thevixhal/status/2027763453679841311) — 2026-03-02: Promotes a popular step-by-step article on building a 16-bit CPU from scratch in C (4,000+ bookmarks). A from-scratch systems/architecture learning project rather than AI content.
+
+- [Joseph Thacker](https://x.com/rez0__/status/2027448137133264955) — 2026-03-01: Argues bug bounty / security research changed step-function fast in late 2025: coding agents went from not working to genuinely working. Example: pointed Claude Code at a target's scope (enumerate subdomains, analyze JS bundles, fuzz, test IDORs/GraphQL, write an HTML report); it ran ~30 min, self-recovered from auth/WAF errors, and returned two confirmed vulns. Hunters now build and share custom Claude Code skill libraries (JS static analysis, authenticated fuzzing, IDOR, GraphQL introspection). Quote-tweets Karpathy's parallel observation about programming.
 
 - [Rohit](https://x.com/rohit4verse/status/2026359771427991764) — 2026-02-25: 10-step checklist for taking agentic AI projects to production: boundaries/threat models, strict I/O schemas, role-based access + sandboxing, layered context windows, governed knowledge grounding, planning/orchestration control flow, built-in memory, native retry/error handling, full observability, and safety gates with drift detection. Claims 40%+ of agentic projects fail due to poor architecture.
 
@@ -1453,7 +1457,7 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (106)
+### Skills & MCP (109)
 
 - [Matthew Berman](https://x.com/matthewberman/status/2069098257444434425) — 2026-06-23: Matthew Berman announces a new Loop Library feature, Lazy Loops (aka Discover), which scans your codebase and chat threads to find potential agentic loops and designs them for you. Links the Forward-Future/loop-library GitHub repo of practical, repeatable AI-agent workflows.
 
@@ -1633,13 +1637,19 @@
 
 - [Meta Alchemist](https://x.com/meta_alchemist/status/2029430826128293906) — 2026-03-05: Roundup of 10 open-source AI memory layers (free, popular on GitHub, some YC-funded) to give coding agents like Claude and Codex better recall than plain memory.md files, with notes on what each is good at and how to combine them. Engagement-styled listicle but substantive.
 
-- [Sukh Sroay](https://x.com/sukh_saroy/status/2029400474739458379) — 2026-03-05: GitNexus — open-source knowledge graph engine that maps every dependency, call chain, execution flow, and breaking change risk in a codebase, then feeds it into Claude Code, Cursor, and Windsurf via MCP. Supports 12 languages, runs entirely locally with zero network calls. Provides blast radius analysis with confidence scores.
+- [Sukh Sroay](https://x.com/sukh_saroy/status/2029400474739458379) — 2026-03-05: [Post unavailable — account suspended]
 
 - [Daniel San](https://x.com/dani_avila7/status/2029399100240674929) — 2026-03-05: Points to a full Skill in the Anthropic repo as a reference for SKILL.md structure and language support, arguing every company should maintain an internal repository of reusable Skills and components.
 
 - [witcheer ☯︎](https://x.com/witcheer/status/2029013946701381978) — 2026-03-05: [Post unavailable — page doesn’t exist (same status as nummanali)]
 
-- [klöss](https://x.com/kloss_xyz/status/2028237936848994369) — 2026-03-02: Anthropic launched a free AI academy (anthropic.skilljar.com) with 13 courses and official certificates covering MCP, APIs, Claude Code, and AI fluency. Quote-tweets the original announcement by Peter Agboola.
+- [klöss](https://x.com/kloss_xyz/status/2028237936848994369) — 2026-03-02: Flags Anthropic's free AI academy — 13 courses with official certificates covering MCP, APIs, Claude Code, and AI fluency, at anthropic.skilljar.com. Hype framing ('stop what you're doing') but a genuinely useful free resource.
+
+- [Nyk](https://x.com/nyk_builderz/status/2028022503319203926) — 2026-03-02: Announces open-sourcing Mission Control, a self-hosted AI agent orchestration dashboard: 26 panels, real-time WebSocket+SSE, SQLite (no external services), kanban board, cost tracking, role-based access, quality gates, multi-gateway support. Repo: github.com/builderz-labs/mission-control.
+
+- [Joseph Thacker](https://x.com/rez0__/status/2027448137133264955) — 2026-03-01: Argues bug bounty / security research changed step-function fast in late 2025: coding agents went from not working to genuinely working. Example: pointed Claude Code at a target's scope (enumerate subdomains, analyze JS bundles, fuzz, test IDORs/GraphQL, write an HTML report); it ran ~30 min, self-recovered from auth/WAF errors, and returned two confirmed vulns. Hunters now build and share custom Claude Code skill libraries (JS static analysis, authenticated fuzzing, IDOR, GraphQL introspection). Quote-tweets Karpathy's parallel observation about programming.
+
+- [Thariq](https://x.com/trq212/status/2027463795355095314) — 2026-02-28: Anthropic's Thariq on building Claude Code: designing an agent's action space is an art. Walks through the AskUserQuestion tool's evolution (ExitPlanTool param → output-format parsing → dedicated tool), the shift from TodoWrite to the Task tool as models improved, replacing RAG with a Grep search tool so Claude builds its own context, progressive disclosure via Skills, and the Claude Code Guide subagent. Lesson: revisit tool assumptions as capabilities grow; experiment, read outputs, 'see like an agent.'
 
 - [Aakash Gupta](https://x.com/aakashgupta/status/2026367615602667784) — 2026-02-25: Riffs on Karpathy's insight: the new distribution channel for software is agents, not humans. Agents call your CLI, hit your MCP server, read your docs programmatically. MCP went from zero to 97M monthly SDK downloads in 12 months with 10K+ active servers. OpenAI, Google, Microsoft all adopted it. Anthropic donated MCP to Linux Foundation. Running an MCP server is now like running a web server.
 
@@ -1667,7 +1677,7 @@
 
 - [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Anthropic released a frontend-design plugin for Claude Code — demo shows Claude creating a music player app. Install via /plugin marketplace add anthropics/claude-code and /plugin install frontend-design@claude-code-plugins.
 
-### Prompting (88)
+### Prompting (89)
 
 - [Movez](https://x.com/0xmovez/status/2068763235587694769) — 2026-06-23: Movez highlights an Andrew Ng talk on building self-improving agentic systems from scratch, quoting Ng that AI agents now handle 100% of his tasks and that self-improving loops will replace prompting within 3-6 months. Quote-tweets his own article on a 300-agent swarm running on Kimi K2.6 verified by Opus 4.8. Heavy promotional framing.
 
@@ -1795,7 +1805,9 @@
 
 - [Philipp Schmid](https://x.com/_philschmid/status/2029570052530360719) — 2026-03-06: Practical guide to evaluating agent Skills, which are often AI-generated and untested: define success criteria (outcome/style/efficiency), build 10-12 prompts with deterministic checks, add an LLM-as-judge for qualitative checks, and iterate on the skill from eval failures.
 
-- [Thariq](https://x.com/trq212/status/2027463795355095314) — 2026-02-28: Anthropic engineer shares lessons from building Claude Code — focuses on action space design for agents. Explores tradeoffs between few general tools (bash, code execution) vs many specialized ones. Uses the analogy of solving a math problem: paper vs calculator vs Wolfram Alpha. Key insight: tool design shapes agent capability more than model capability alone.
+- [tetsuo](https://x.com/tetsuoai/status/2028068322106097773) — 2026-03-02: Technical breakdown of recurring agentic failure modes in fast/distilled code models: wrong direct-exec vs shell selection, structured-output (JSON-only) non-compliance, and tool-result grounding failures (reporting success after a tool error). Fix: distill full agent trajectories (request→tool→output→grounded response), add contrastive near-miss examples, and gate on concrete agentic evals.
+
+- [Thariq](https://x.com/trq212/status/2027463795355095314) — 2026-02-28: Anthropic's Thariq on building Claude Code: designing an agent's action space is an art. Walks through the AskUserQuestion tool's evolution (ExitPlanTool param → output-format parsing → dedicated tool), the shift from TodoWrite to the Task tool as models improved, replacing RAG with a Grep search tool so Claude builds its own context, progressive disclosure via Skills, and the Claude Code Guide subagent. Lesson: revisit tool assumptions as capabilities grow; experiment, read outputs, 'see like an agent.'
 
 - [Sudo su](https://x.com/sudoingx/status/2027264446989848613) — 2026-02-27: Practical tips for steering AI coding agents: tell the model its own architecture constraints, provide project structure over single prompts, iterate in layers (scaffold → refine → polish), let the agent debug itself, and leverage long context (262K tokens). Mentions Claude Code as the preferred harness and Qwen3.5's 256-expert MoE architecture.
 
@@ -2053,13 +2065,13 @@
 
 - [hoeem](https://x.com/hooeem/status/2029167629076676955) — 2026-03-05: A free, beginner-to-expert ranked list of AI learning resources: Anthropic Academy (Claude 101 & AI Fluency), Google AI Essentials, AWS Generative AI Essentials, Elements of AI (University of Helsinki), DeepLearning.AI short courses, and Harvard CS50s Intro to AI with Python.
 
-- [Aarno](https://x.com/theglobalminima/status/2028432457784340950) — 2026-03-03: Argues software engineers in agentic AI should start learning RL. As coding agents improve, building custom harnesses gets easier, but behavior control, consistency, memory, and correction remain hard — areas where traditional RL has deep expertise. Links to a paper at the intersection of RL and LLM agents.
+- [Aarno](https://x.com/theglobalminima/status/2028432457784340950) — 2026-03-03: Suggests software engineers working on agentic AI should study reinforcement learning. As coding agents make custom harnesses/tools easy, the real challenges are behavior control, consistency, memory, and correction — areas where traditional RL on 'agents' intersects fruitfully with LLM agents.
 
-- [tetsuo](https://x.com/tetsuoai/status/2028068322106097773) — 2026-03-02: Details specific agentic failure modes in fast/distilled code models that base models handle correctly: incorrect action selection between direct execution vs shell invocation, inventing shell metacharacters as arguments, routing through bash -c unnecessarily. Calls for stronger contrastive tool-use training examples to fix distillation gaps.
+- [tetsuo](https://x.com/tetsuoai/status/2028068322106097773) — 2026-03-02: Technical breakdown of recurring agentic failure modes in fast/distilled code models: wrong direct-exec vs shell selection, structured-output (JSON-only) non-compliance, and tool-result grounding failures (reporting success after a tool error). Fix: distill full agent trajectories (request→tool→output→grounded response), add contrastive near-miss examples, and gate on concrete agentic evals.
 
-- [Sandhya](https://x.com/agenticgirl/status/2028006725538967614) — 2026-03-02: LMCache (6.9K stars, 124K downloads/month) makes LLM KV caches persistent and shareable across engine instances, saving ~50% of redundant compute. Tiered storage: GPU → CPU DRAM → disk → S3. Used by Google Cloud, CoreWeave, NVIDIA. Enables instant RAG (process docs once, reuse KV cache) and multi-turn memory without recomputation.
+- [Sandhya](https://x.com/agenticgirl/status/2028006725538967614) — 2026-03-02: 'BREAKING'-style but substantive thread on LMCache, an open-source KV-cache layer (6.9K stars, used by Google Cloud, CoreWeave, NVIDIA) that makes the LLM KV cache persistent and shareable across engine instances, tiered GPU→DRAM→disk→S3. Enables instant RAG, disaggregated prefill, and context sharing; integrates with vLLM and SGLang. Apache-2.0, pip install lmcache.
 
-- [AVB](https://x.com/neural_avb/status/2027957534159835443) — 2026-03-01: Wrote down all the things I have learned over the past couple years developing LLM agents. I just follow one very simple mental model and it kinda just works... (atleast for me)
+- [AVB](https://x.com/neural_avb/status/2027957534159835443) — 2026-03-01: [Post unavailable — page doesn't exist]
 
 - [Brian Roemmele](https://x.com/BrianRoemmele/status/2027169646485729698) — 2026-02-27: DeepMind's "Intelligent AI Delegation" Paper Is the Exact Operating System We've Been Running in Production at Zero-Human Company @ Home Since January 2026 Google DeepMind dropped a bombshell on February 12, 2026: the 42-page paper "Intelligent AI Delegation".
 
@@ -2099,7 +2111,7 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: 15-part thread explaining the 'stunning, simple explanation behind matrix multiplication' — breaks down the most crucial idea behind modern machine learning. 1M views.
 
-### Industry (82)
+### Industry (85)
 
 - [Mario Zechner](https://x.com/badlogicgames/status/2069156188902559751) — 2026-06-23: Mario Zechner recommends a video dissecting Voxtral, a family of open-source speech models, and the foundational work behind it (audio tokenization, semantic/acoustic disaggregation). He quote-tweets Julia Turc, who frames it as what you get when you plug LLMs into voice assistants instead of a decade of handwritten rules.
 
@@ -2242,6 +2254,12 @@
 - [Peter Yang](https://x.com/petergyang/status/2029220235375714766) — 2026-03-05: Deep dive arguing your new job is to onboard and manage AI agents, with examples from Linear (AI team members you assign tasks to), Ramp (Claude Code as baseline for all roles), and Factory (codifying PM, frontend, and data-analysis work into reusable skills).
 
 - [swarit](https://x.com/swaritjoshipura/status/2029219363749020051) — 2026-03-05: Curated links on agent context and evaluation: Foundation Capital on "context graphs" as AIs trillion-dollar opportunity (foundationcapital.com/context-graphs-ais-trillion-dollar-opportunity/), Anthropics guide to demystifying evals for AI agents (anthropic.com/engineering/demystifying-evals-for-ai-agents), a YouTube talk, and resolve.ai.
+
+- [Dan Robinson](https://x.com/danlovesproofs/status/2028890694837039202) — 2026-03-05: Argues issue tracking/backlogs are dying: forward-thinking AI-augmented teams skip Linear/tickets entirely because the cost to fix an issue now approaches the cost to understand it. Works for small, flat, high-context teams with strong dev infra; framed as part of the 'death of midwit software engineering.'
+
+- [David Byttow](https://x.com/davidbyttow/status/2028233578329600449) — 2026-03-02: Essay arguing AI agents are collapsing the coordination layer of organizations. As execution and coordination costs approach zero, the remaining scarce skill is goal clarity, taste, and ownership. Warns bad judgment now scales faster — strategic mistakes show up as fast delivery of the wrong thing.
+
+- [Sandhya](https://x.com/agenticgirl/status/2028006725538967614) — 2026-03-02: 'BREAKING'-style but substantive thread on LMCache, an open-source KV-cache layer (6.9K stars, used by Google Cloud, CoreWeave, NVIDIA) that makes the LLM KV cache persistent and shareable across engine instances, tiered GPU→DRAM→disk→S3. Enables instant RAG, disaggregated prefill, and context sharing; integrates with vLLM and SGLang. Apache-2.0, pip install lmcache.
 
 - [Brian Roemmele](https://x.com/BrianRoemmele/status/2027169646485729698) — 2026-02-27: DeepMind's "Intelligent AI Delegation" Paper Is the Exact Operating System We've Been Running in Production at Zero-Human Company @ Home Since January 2026 Google DeepMind dropped a bombshell on February 12, 2026: the 42-page paper "Intelligent AI Delegation".
 
@@ -2387,11 +2405,11 @@
 
 - [Bojan Tunguz](https://x.com/tunguz/status/2029164042028236942) — 2026-03-05: Reflects on "mid season" knowledge — many roles require grappling with a problem mid-stream without enough runway to catch up on missing context, something even smart people underestimate.
 
-- [Dan Robinson](https://x.com/danlovesproofs/status/2028890694837039202) — 2026-03-05: Argues engineering teams building the best products are abandoning issue tracking entirely — no Linear, no backlog. Instead running on short google docs and Slack. Teams scaling this to 30+ engineers and winning in competitive markets. Challenges the assumption that sprint planning and ticket grooming are necessary.
+- [Dan Robinson](https://x.com/danlovesproofs/status/2028890694837039202) — 2026-03-05: Argues issue tracking/backlogs are dying: forward-thinking AI-augmented teams skip Linear/tickets entirely because the cost to fix an issue now approaches the cost to understand it. Works for small, flat, high-context teams with strong dev infra; framed as part of the 'death of midwit software engineering.'
 
-- [Avid](https://x.com/av1dlive/status/2027429188471558475) — 2026-03-05: Engagement farming listicle about AI job displacement with a 'playbook' of generic advice: audit your role, learn OpenClaw, stack skills. Mentions 4,000 recent layoffs as a hook.
+- [Avid](https://x.com/av1dlive/status/2027429188471558475) — 2026-03-05: Engagement-style 'AI will take your job' listicle, but with a usable career playbook: audit which tasks AI can replicate, learn local agent tooling and stackable 'skills', layer AI-native competence (prompting, orchestration, RAG, automation), shift from executor to system designer, double down on human edge, and build a product/brand.
 
-- [David Byttow](https://x.com/davidbyttow/status/2028233578329600449) — 2026-03-02: Argues AI agents are collapsing the coordination layer of orgs. For decades, engineering leadership was built around synchronization — sprint planning, dependency graphs, project managers. Now agents decompose, sequence, and execute in tight conversational loops. People whose focus is process are becoming redundant; writing code was never the bottleneck, coordination overhead was.
+- [David Byttow](https://x.com/davidbyttow/status/2028233578329600449) — 2026-03-02: Essay arguing AI agents are collapsing the coordination layer of organizations. As execution and coordination costs approach zero, the remaining scarce skill is goal clarity, taste, and ownership. Warns bad judgment now scales faster — strategic mistakes show up as fast delivery of the wrong thing.
 
 - [SightBringer](https://x.com/_the_prophet__/status/2027235489930191056) — 2026-02-27: Provocative critique of auto-memory in AI tools: argues it's a power grab disguised as convenience. The vendor captures your patterns, defaults, priorities, and blind spots. But concedes that if done right with user control, stateful memory is powerful. Spiral: feeling known → lowered guard → outsource more → dependency.
 
@@ -2645,17 +2663,17 @@
 
 - [Meta Alchemist](https://x.com/meta_alchemist/status/2029430826128293906) — 2026-03-05: Roundup of 10 open-source AI memory layers (free, popular on GitHub, some YC-funded) to give coding agents like Claude and Codex better recall than plain memory.md files, with notes on what each is good at and how to combine them. Engagement-styled listicle but substantive.
 
-- [Sukh Sroay](https://x.com/sukh_saroy/status/2029400474739458379) — 2026-03-05: GitNexus — open-source knowledge graph engine that maps every dependency, call chain, execution flow, and breaking change risk in a codebase, then feeds it into Claude Code, Cursor, and Windsurf via MCP. Supports 12 languages, runs entirely locally with zero network calls. Provides blast radius analysis with confidence scores.
+- [Sukh Sroay](https://x.com/sukh_saroy/status/2029400474739458379) — 2026-03-05: [Post unavailable — account suspended]
 
 - [Tech Layoff Tracker](https://x.com/techlayofflover/status/2029261882834501665) — 2026-03-05: Shares a venting DM from a senior Big Tech SWE (~$350k TC): leadership now touts an "AI leverage ratio" of 4.2x — each engineer shipping the output of a former four-person team — fueling job anxiety. Engagement-styled but a real signal on AI-driven productivity expectations and layoffs.
 
-- [Avid](https://x.com/av1dlive/status/2027429188471558475) — 2026-03-05: Engagement farming listicle about AI job displacement with a 'playbook' of generic advice: audit your role, learn OpenClaw, stack skills. Mentions 4,000 recent layoffs as a hook.
+- [Avid](https://x.com/av1dlive/status/2027429188471558475) — 2026-03-05: Engagement-style 'AI will take your job' listicle, but with a usable career playbook: audit which tasks AI can replicate, learn local agent tooling and stackable 'skills', layer AI-native competence (prompting, orchestration, RAG, automation), shift from executor to system designer, double down on human edge, and build a product/brand.
 
 - [Atharva](https://x.com/atharvaxdevs/status/2028903519802232991) — 2026-03-04: A teaser post aimed at engineers chasing the top 0.01% of "agentic engineering" skill (thread/resource hook).
 
-- [klöss](https://x.com/kloss_xyz/status/2028237936848994369) — 2026-03-02: Anthropic launched a free AI academy (anthropic.skilljar.com) with 13 courses and official certificates covering MCP, APIs, Claude Code, and AI fluency. Quote-tweets the original announcement by Peter Agboola.
+- [klöss](https://x.com/kloss_xyz/status/2028237936848994369) — 2026-03-02: Flags Anthropic's free AI academy — 13 courses with official certificates covering MCP, APIs, Claude Code, and AI fluency, at anthropic.skilljar.com. Hype framing ('stop what you're doing') but a genuinely useful free resource.
 
-- [Sandhya](https://x.com/agenticgirl/status/2028006725538967614) — 2026-03-02: LMCache (6.9K stars, 124K downloads/month) makes LLM KV caches persistent and shareable across engine instances, saving ~50% of redundant compute. Tiered storage: GPU → CPU DRAM → disk → S3. Used by Google Cloud, CoreWeave, NVIDIA. Enables instant RAG (process docs once, reuse KV cache) and multi-turn memory without recomputation.
+- [Sandhya](https://x.com/agenticgirl/status/2028006725538967614) — 2026-03-02: 'BREAKING'-style but substantive thread on LMCache, an open-source KV-cache layer (6.9K stars, used by Google Cloud, CoreWeave, NVIDIA) that makes the LLM KV cache persistent and shareable across engine instances, tiered GPU→DRAM→disk→S3. Enables instant RAG, disaggregated prefill, and context sharing; integrates with vLLM and SGLang. Apache-2.0, pip install lmcache.
 
 - [Machina](https://x.com/exm7777/status/2026666140987175221) — 2026-02-27: Claims to teach how to permanently change how AI thinks via custom skills for Claude, Codex, or OpenClaw. X article format. Self-promotional content about building personalized AI skills/frameworks.
 
@@ -2673,7 +2691,7 @@
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
 
-### General (88)
+### General (89)
 
 - [Ethan](https://x.com/lambethethan/status/2068958764276051987) — 2026-06-23: Ethan describes a personal wiki of ~1,000 supplements built from 150k papers and 200k health-influencer mentions, and floats handing the entire dataset to an AI agent next.
 
@@ -2740,6 +2758,8 @@
 - [hoeem](https://x.com/hooeem/status/2029167629076676955) — 2026-03-05: A free, beginner-to-expert ranked list of AI learning resources: Anthropic Academy (Claude 101 & AI Fluency), Google AI Essentials, AWS Generative AI Essentials, Elements of AI (University of Helsinki), DeepLearning.AI short courses, and Harvard CS50s Intro to AI with Python.
 
 - [Bojan Tunguz](https://x.com/tunguz/status/2029164042028236942) — 2026-03-05: Reflects on "mid season" knowledge — many roles require grappling with a problem mid-stream without enough runway to catch up on missing context, something even smart people underestimate.
+
+- [vixhaℓ](https://x.com/thevixhal/status/2027763453679841311) — 2026-03-02: Promotes a popular step-by-step article on building a 16-bit CPU from scratch in C (4,000+ bookmarks). A from-scratch systems/architecture learning project rather than AI content.
 
 - [Machina](https://x.com/exm7777/status/2019787951530725396) — 2026-02-07: Addresses AI FOMO — the feeling of falling behind as new models/tools drop weekly. Argues the problem isn't too much happening but lack of a filter between news and what matters for your work. Mentions GPT-5.3 Codex and Opus 4.6 dropping on the same day. X article format.
 
@@ -4153,7 +4173,7 @@
   Opinion piece: AI does not make work easier — it strips away the easy 99% of jobs so everyone now competes on the hard 1%, raising cognitive load and stress sharply. A take on how AI reshapes knowledge work.
 
 - **2026-03-05** | [Sukh Sroay](https://x.com/sukh_saroy/status/2029400474739458379) | questionable, skills-mcp, agent-design, dev-practices
-  GitNexus — open-source knowledge graph engine that maps every dependency, call chain, execution flow, and breaking change risk in a codebase, then feeds it into Claude Code, Cursor, and Windsurf via MCP. Supports 12 languages, runs entirely locally with zero network calls. Provides blast radius analysis with confidence scores.
+  [Post unavailable — account suspended]
 
 - **2026-03-05** | [Daniel San](https://x.com/dani_avila7/status/2029399100240674929) | skills-mcp, claude-code
   Points to a full Skill in the Anthropic repo as a reference for SKILL.md structure and language support, arguing every company should maintain an internal repository of reusable Skills and components.
@@ -4185,11 +4205,11 @@
 - **2026-03-05** | [Numman Ali](https://x.com/nummanali/status/2029013946701381978) | agent-design
   [Post unavailable — page doesn’t exist]
 
-- **2026-03-05** | [Dan Robinson](https://x.com/danlovesproofs/status/2028890694837039202) | management, dev-practices
-  Argues engineering teams building the best products are abandoning issue tracking entirely — no Linear, no backlog. Instead running on short google docs and Slack. Teams scaling this to 30+ engineers and winning in competitive markets. Challenges the assumption that sprint planning and ticket grooming are necessary.
+- **2026-03-05** | [Dan Robinson](https://x.com/danlovesproofs/status/2028890694837039202) | management, dev-practices, agent-design, industry
+  Argues issue tracking/backlogs are dying: forward-thinking AI-augmented teams skip Linear/tickets entirely because the cost to fix an issue now approaches the cost to understand it. Works for small, flat, high-context teams with strong dev infra; framed as part of the 'death of midwit software engineering.'
 
-- **2026-03-05** | [Avid](https://x.com/av1dlive/status/2027429188471558475) | questionable, management
-  Engagement farming listicle about AI job displacement with a 'playbook' of generic advice: audit your role, learn OpenClaw, stack skills. Mentions 4,000 recent layoffs as a hook.
+- **2026-03-05** | [Avid](https://x.com/av1dlive/status/2027429188471558475) | questionable, management, agent-design
+  Engagement-style 'AI will take your job' listicle, but with a usable career playbook: audit which tasks AI can replicate, learn local agent tooling and stackable 'skills', layer AI-native competence (prompting, orchestration, RAG, automation), shift from executor to system designer, double down on human edge, and build a product/brand.
 
 - **2026-03-05** | [Dickson Tsai]([not found]) | claude-code
   In Claude Code, we've recently launched HTTP hooks, easier to use and more secure than existing command hooks! You can build a web app (even on localhost) to view CC's progress, manage its permissions, and more.
@@ -4204,39 +4224,39 @@
   Nate.Google recommends what he calls the most valuable channel for learning everything about Claude.
 
 - **2026-03-03** | [Aarno](https://x.com/theglobalminima/status/2028432457784340950) | research, agent-design
-  Argues software engineers in agentic AI should start learning RL. As coding agents improve, building custom harnesses gets easier, but behavior control, consistency, memory, and correction remain hard — areas where traditional RL has deep expertise. Links to a paper at the intersection of RL and LLM agents.
+  Suggests software engineers working on agentic AI should study reinforcement learning. As coding agents make custom harnesses/tools easy, the real challenges are behavior control, consistency, memory, and correction — areas where traditional RL on 'agents' intersects fruitfully with LLM agents.
 
 - **2026-03-02** | [Nate Kohari](https://x.com/nkohari/status/2028525461689176325) | dev-practices
-  We’ve been using this at Ardent and it makes code reviews 100x better
+  [Post unavailable — page doesn't exist]
 
-- **2026-03-02** | [klöss](https://x.com/kloss_xyz/status/2028237936848994369) | questionable, claude-code, skills-mcp
-  Anthropic launched a free AI academy (anthropic.skilljar.com) with 13 courses and official certificates covering MCP, APIs, Claude Code, and AI fluency. Quote-tweets the original announcement by Peter Agboola.
+- **2026-03-02** | [klöss](https://x.com/kloss_xyz/status/2028237936848994369) | claude-code, skills-mcp, questionable
+  Flags Anthropic's free AI academy — 13 courses with official certificates covering MCP, APIs, Claude Code, and AI fluency, at anthropic.skilljar.com. Hype framing ('stop what you're doing') but a genuinely useful free resource.
 
-- **2026-03-02** | [David Byttow](https://x.com/davidbyttow/status/2028233578329600449) | management, agent-design
-  Argues AI agents are collapsing the coordination layer of orgs. For decades, engineering leadership was built around synchronization — sprint planning, dependency graphs, project managers. Now agents decompose, sequence, and execute in tight conversational loops. People whose focus is process are becoming redundant; writing code was never the bottleneck, coordination overhead was.
+- **2026-03-02** | [David Byttow](https://x.com/davidbyttow/status/2028233578329600449) | management, agent-design, industry
+  Essay arguing AI agents are collapsing the coordination layer of organizations. As execution and coordination costs approach zero, the remaining scarce skill is goal clarity, taste, and ownership. Warns bad judgment now scales faster — strategic mistakes show up as fast delivery of the wrong thing.
 
-- **2026-03-02** | [tetsuo](https://x.com/tetsuoai/status/2028068322106097773) | research, agent-design, dev-practices
-  Details specific agentic failure modes in fast/distilled code models that base models handle correctly: incorrect action selection between direct execution vs shell invocation, inventing shell metacharacters as arguments, routing through bash -c unnecessarily. Calls for stronger contrastive tool-use training examples to fix distillation gaps.
+- **2026-03-02** | [tetsuo](https://x.com/tetsuoai/status/2028068322106097773) | research, agent-design, dev-practices, prompting
+  Technical breakdown of recurring agentic failure modes in fast/distilled code models: wrong direct-exec vs shell selection, structured-output (JSON-only) non-compliance, and tool-result grounding failures (reporting success after a tool error). Fix: distill full agent trajectories (request→tool→output→grounded response), add contrastive near-miss examples, and gate on concrete agentic evals.
 
-- **2026-03-02** | [Nyk](https://x.com/nyk_builderz/status/2028022503319203926) | agent-design, dev-practices
-  Open-sourced Mission Control — a dashboard for AI agent orchestration with 26 panels, real-time WebSocket + SSE, SQLite backend (no external services). Features kanban board, cost tracking, role-based access, quality gates, and multi-gateway support. Single pnpm start to run. GitHub: builderz-labs/mission-control.
+- **2026-03-02** | [Nyk](https://x.com/nyk_builderz/status/2028022503319203926) | agent-design, dev-practices, skills-mcp
+  Announces open-sourcing Mission Control, a self-hosted AI agent orchestration dashboard: 26 panels, real-time WebSocket+SSE, SQLite (no external services), kanban board, cost tracking, role-based access, quality gates, multi-gateway support. Repo: github.com/builderz-labs/mission-control.
 
-- **2026-03-02** | [Sandhya](https://x.com/agenticgirl/status/2028006725538967614) | questionable, research, agent-design
-  LMCache (6.9K stars, 124K downloads/month) makes LLM KV caches persistent and shareable across engine instances, saving ~50% of redundant compute. Tiered storage: GPU → CPU DRAM → disk → S3. Used by Google Cloud, CoreWeave, NVIDIA. Enables instant RAG (process docs once, reuse KV cache) and multi-turn memory without recomputation.
+- **2026-03-02** | [Sandhya](https://x.com/agenticgirl/status/2028006725538967614) | research, dev-practices, questionable, industry
+  'BREAKING'-style but substantive thread on LMCache, an open-source KV-cache layer (6.9K stars, used by Google Cloud, CoreWeave, NVIDIA) that makes the LLM KV cache persistent and shareable across engine instances, tiered GPU→DRAM→disk→S3. Enables instant RAG, disaggregated prefill, and context sharing; integrates with vLLM and SGLang. Apache-2.0, pip install lmcache.
 
-- **2026-03-02** | [vixhaℓ](https://x.com/thevixhal/status/2027763453679841311) | dev-practices
-  Step-by-step X article on building a 16-bit CPU from scratch in C. Over 4,000 bookmarks. Educational deep-dive into computer architecture fundamentals.
+- **2026-03-02** | [vixhaℓ](https://x.com/thevixhal/status/2027763453679841311) | dev-practices, general
+  Promotes a popular step-by-step article on building a 16-bit CPU from scratch in C (4,000+ bookmarks). A from-scratch systems/architecture learning project rather than AI content.
 
 - **2026-03-01** | [AVB](https://x.com/neural_avb/status/2027957534159835443) | agent-design, research
-  Wrote down all the things I have learned over the past couple years developing LLM agents. I just follow one very simple mental model and it kinda just works... (atleast for me)
+  [Post unavailable — page doesn't exist]
 
-- **2026-03-01** | [Joseph Thacker](https://x.com/rez0__/status/2027448137133264955) | agent-design, claude-code, dev-practices
-  Bug bounty hunting transformed by AI coding agents since December 2025. Author pointed Claude Code at a new program's scope — enumerate subdomains, grab JS bundles, run full analysis pipeline, fuzz paths, spider authenticated surface, check for IDORs, test GraphQL. Models now have enough coherence and tenacity to power through long hacking tasks autonomously.
+- **2026-03-01** | [Joseph Thacker](https://x.com/rez0__/status/2027448137133264955) | agent-design, claude-code, dev-practices, skills-mcp
+  Argues bug bounty / security research changed step-function fast in late 2025: coding agents went from not working to genuinely working. Example: pointed Claude Code at a target's scope (enumerate subdomains, analyze JS bundles, fuzz, test IDORs/GraphQL, write an HTML report); it ran ~30 min, self-recovered from auth/WAF errors, and returned two confirmed vulns. Hunters now build and share custom Claude Code skill libraries (JS static analysis, authenticated fuzzing, IDOR, GraphQL introspection). Quote-tweets Karpathy's parallel observation about programming.
 
 ### Feb 2026
 
-- **2026-02-28** | [Thariq](https://x.com/trq212/status/2027463795355095314) | claude-code, agent-design, prompting
-  Anthropic engineer shares lessons from building Claude Code — focuses on action space design for agents. Explores tradeoffs between few general tools (bash, code execution) vs many specialized ones. Uses the analogy of solving a math problem: paper vs calculator vs Wolfram Alpha. Key insight: tool design shapes agent capability more than model capability alone.
+- **2026-02-28** | [Thariq](https://x.com/trq212/status/2027463795355095314) | claude-code, agent-design, skills-mcp, prompting
+  Anthropic's Thariq on building Claude Code: designing an agent's action space is an art. Walks through the AskUserQuestion tool's evolution (ExitPlanTool param → output-format parsing → dedicated tool), the shift from TodoWrite to the Task tool as models improved, replacing RAG with a Grep search tool so Claude builds its own context, progressive disclosure via Skills, and the Claude Code Guide subagent. Lesson: revisit tool assumptions as capabilities grow; experiment, read outputs, 'see like an agent.'
 
 - **2026-02-27** | [Sudo su](https://x.com/sudoingx/status/2027264446989848613) | prompting, agent-design, claude-code
   Practical tips for steering AI coding agents: tell the model its own architecture constraints, provide project structure over single prompts, iterate in layers (scaffold → refine → polish), let the agent debug itself, and leverage long context (262K tokens). Mentions Claude Code as the preferred harness and Qwen3.5's 256-expert MoE architecture.
