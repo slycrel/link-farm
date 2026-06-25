@@ -10096,22 +10096,26 @@
   {
     "date": "2026-03-07",
     "author": "Nate.Google",
-    "handle": "@Nate_Google_",
+    "handle": "@nate_google_",
     "subject": "Post by Nate.Google on X",
     "url": "https://x.com/nate_google_/status/2029941042133262721",
-    "summary": "Recommends Ruben Hassid's guide to setting up Claude Cowork as the best available walkthrough. References that software stocks lost $830B in 6 days after Claude's Cowork release.",
+    "summary": "Nate.Google highlights a walkthrough he calls the best guide to Claude Cowork, wishing such hands-on guides existed when he started with AI.",
     "topics": [
       "claude-code"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "1.3M",
     "notes": "Setup guide reference. Market impact stat is notable.",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "i wish I had these walkthroughs when I was getting into AI. hands down the best guide to Claude Cowork",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-06",
@@ -10119,12 +10123,14 @@
     "handle": "@alex_prompter",
     "subject": "Post by Alex Prompter on X",
     "url": "https://x.com/alex_prompter/status/2029961559615607052",
-    "summary": "GitHub analyzed 2,500+ repos finding agents.md files are too vague. Best practices: single-purpose agents, exact executable commands, three-tier boundaries (Always/Ask first/Never), code examples over descriptions, specific stack versions. Treat it like an onboarding doc.",
+    "summary": "Citing a GitHub analysis of 2,500+ repos, argues most agents.md files fail by being too vague. Top performers give each agent ONE narrow job (docs writer, test engineer, lint fixer) with specific examples — specialists beat generalists.",
     "topics": [
+      "agent-design",
       "prompting",
       "dev-practices"
     ],
     "audience": [
+      "me",
       "dev-team"
     ],
     "priority": "now",
@@ -10132,7 +10138,10 @@
     "views": "18.8K",
     "notes": "Maps to wiki: Agents.md. Immediately actionable for our setup.",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Most devs write agents.md files wrong. GitHub analyzed 2,500+ repos: agents too vague to be useful. Give the agent ONE job (docs writer, test engineer, lint fixer). Specialists outperform generalists.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-06",
@@ -10140,41 +10149,50 @@
     "handle": "@thejayden",
     "subject": "Post by Jayden on X",
     "url": "https://x.com/thejayden/status/2029899328400109732",
-    "summary": "Recommends Jim Prosser's article on building a 'Chief of Staff' with Claude Code as one of the best real-world examples of agentic systems — not AI slop, but genuinely useful architecture.",
+    "summary": "Jayden recommends an article on building a \"Chief of Staff\" with Claude Code, calling it one of the best real-world examples of agentic systems he has seen.",
     "topics": [
-      "claude-code",
-      "agent-design"
+      "agent-design",
+      "claude-code"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet+article",
     "views": "2.1M",
     "notes": "2.1M views. Worth reading the linked article for architecture patterns.",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "I often dont share this kind of thing because its usually AI slop. But this article about building a Chief of Staff with Claude Code is one of the best real examples of agentic systems Ive seen.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-06",
     "author": "Alexey Grigorev",
-    "handle": "@Al_Grigor",
+    "handle": "@al_grigor",
     "subject": "Post by Alexey Grigorev on X",
     "url": "https://x.com/al_grigor/status/2029829363903123636",
-    "summary": "Defines key AI engineer skills: prompting is only 5%, the other 95% is eval/testing, controlled iteration (versioning, A/B tests), monitoring/observability, feedback loops, CI/CD for AI, and product integration (retries, fallbacks, UX edge cases).",
+    "summary": "Argues prompting is only ~5% of AI engineering; the other 95% is making AI testable, observable, versioned and reliable in production. Core skills: evaluation/testing with golden eval sets and regression tests, plus controlled iteration via prompt versioning and experiment tracking (Git/MLflow).",
     "topics": [
       "dev-practices",
-      "agent-design"
+      "agent-design",
+      "management"
     ],
     "audience": [
+      "me",
       "dev-team"
     ],
-    "priority": "now",
+    "priority": "near-term",
     "sourceType": "tweet",
     "views": "8.1K",
     "notes": "Good framework for what we should be hiring/training for.",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "What are the key skills of an AI engineer? AI engineer = makes AI testable, observable, versioned, continuously improving. Prompting is maybe 5%; the other 95% is making AI behave reliably after you ship. Core skills: evaluation+testing (golden eval sets, metrics, regression tests), controlled iteration (prompt versioning, experiment tracking via Git/MLflow).",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-06",
@@ -10182,20 +10200,25 @@
     "handle": "@_philschmid",
     "subject": "Post by Philipp Schmid on X",
     "url": "https://x.com/_philschmid/status/2029570052530360719",
-    "summary": "Practical guide to evaluating agent skills: define success criteria across outcome, style, and efficiency; create deterministic test prompts; add LLM-as-judge for qualitative checks; iterate on failures.",
+    "summary": "Practical guide to evaluating agent Skills, which are often AI-generated and untested: define success criteria (outcome/style/efficiency), build 10-12 prompts with deterministic checks, add an LLM-as-judge for qualitative checks, and iterate on the skill from eval failures.",
     "topics": [
       "skills-mcp",
-      "dev-practices"
+      "dev-practices",
+      "prompting"
     ],
     "audience": [
+      "me",
       "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "now",
     "sourceType": "tweet",
     "views": "40.1K",
     "notes": "Maps to wiki: how to create skills. Evaluation methodology.",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Agent skills are powerful but often AI-generated and not tested. A practical guide to evaluating agent skills: define success criteria (outcome, style, efficiency); create 10-12 prompts with deterministic checks; add LLM-as-judge for qualitative checks; iterate on the skill using eval failures.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-05",
@@ -10203,20 +10226,24 @@
     "handle": "@akshay_pachaar",
     "subject": "Post by Akshay on X",
     "url": "https://x.com/akshay_pachaar/status/2029534926828388537",
-    "summary": "Clear explainer: MCP is the connection layer (shared protocol so any tool works with any agent), Skills are the knowledge layer (procedural know-how in SKILL.md files). MCP gives agents hands, Skills give muscle memory. Shares 85K+ skill repository.",
+    "summary": "Explains the difference between MCP and Skills for AI agents — commonly conflated. MCP is a shared communication standard that replaces the N-models-by-M-tools custom-connector explosion, whereas Skills are a distinct concept.",
     "topics": [
       "skills-mcp",
       "agent-design"
     ],
     "audience": [
+      "me",
       "dev-team"
     ],
-    "priority": "now",
+    "priority": "near-term",
     "sourceType": "tweet",
     "views": "124.5K",
     "notes": "Maps to wiki: Skills as graphs + how to create skills. Foundational distinction.",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "MCP vs. Skills for AI agents, clearly explained. People treat MCP and Skills as the same thing; they are not. Before MCP, connecting a model to a tool meant custom integration code each time (10 models x 100 tools = 1,000 connectors). MCP provides a shared communication standard.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-05",
@@ -10224,10 +10251,11 @@
     "handle": "@meta_alchemist",
     "subject": "Post by Meta Alchemist on X",
     "url": "https://x.com/meta_alchemist/status/2029430826128293906",
-    "summary": "Top 10 open-source AI memory layers (free, GitHub-starred, some YC-funded) for making agents, Claude, Codex, and OpenClaw smarter. Includes tips on what each memory system excels at and how to combine them — much better than plain memory.md files.",
+    "summary": "Roundup of 10 open-source AI memory layers (free, popular on GitHub, some YC-funded) to give coding agents like Claude and Codex better recall than plain memory.md files, with notes on what each is good at and how to combine them. Engagement-styled listicle but substantive.",
     "topics": [
       "agent-design",
-      "skills-mcp"
+      "skills-mcp",
+      "questionable"
     ],
     "audience": [
       "me",
@@ -10238,7 +10266,10 @@
     "views": "",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "AI normally sucks at memory retrieval. Here are the top 10 open source AI memory layers (free, open source, lots of GitHub stars, some YC-funded). Use them to make agents, Claude, Codex, openclaw smarter. Tips on what each is good at and how to combine them. Better than memory.md files.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-05",
@@ -10246,7 +10277,7 @@
     "handle": "@johnrushx",
     "subject": "Post by John Rush on X",
     "url": "https://x.com/johnrushx/status/2029406051716743354",
-    "summary": "Argues AI makes work harder, not easier — it automates the 99% that was time-consuming but easy, forcing everyone to compete on the hard 1%. Predicts intense cognitive load, higher stress, and monopoly formation as the most capable person in each niche wins.",
+    "summary": "Opinion piece: AI does not make work easier — it strips away the easy 99% of jobs so everyone now competes on the hard 1%, raising cognitive load and stress sharply. A take on how AI reshapes knowledge work.",
     "topics": [
       "industry",
       "management"
@@ -10255,12 +10286,15 @@
       "me",
       "leadership"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Despite everyone saying everything is easy now with AI, it is much harder. AI takes away the 99% that was easy (time-consuming but easy); everyone now competes on the hard 1%. Every minute of work is intense, brain load is insane, stress goes 100x because you make an important decision every minute.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-05",
@@ -10284,7 +10318,9 @@
     "views": "",
     "notes": "Engagement farming format (BREAKING, arrows) but the tool itself looks genuinely useful — local codebase knowledge graph for AI agents via MCP",
     "enriched": true,
-    "enrichment_status": "partial"
+    "enrichment_status": "partial",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "empty capture (two attempts)"
   },
   {
     "date": "2026-03-05",
@@ -10292,30 +10328,35 @@
     "handle": "@dani_avila7",
     "subject": "Post by Daniel San on X",
     "url": "https://x.com/dani_avila7/status/2029399100240674929",
-    "summary": "Found Anthropic's repo showing SKILL.md structure across languages. Claude Code v2.1.69 shipped /claude-api skill that auto-detects language and loads relevant docs. Argues every company should maintain a skill repository.",
+    "summary": "Points to a full Skill in the Anthropic repo as a reference for SKILL.md structure and language support, arguing every company should maintain an internal repository of reusable Skills and components.",
     "topics": [
       "skills-mcp",
       "claude-code"
     ],
     "audience": [
+      "me",
       "dev-team"
     ],
-    "priority": "now",
+    "priority": "near-term",
     "sourceType": "tweet",
     "views": "27.3K",
     "notes": "Maps to wiki: Skill dump + how to create skills. Reference implementation from Anthropic.",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Found the full skill in the Anthropic repo to see how the SKILL.md is structured and each language it supports. Every company should already have a full repository of Skills and components within their stacks. Thanks Claude Code team for sharing how you build your documentation.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-05",
     "author": "0xSero",
-    "handle": "@0xSero",
+    "handle": "@0xsero",
     "subject": "Post by 0xSero on X",
     "url": "https://x.com/0xsero/status/2029305128084218265",
-    "summary": "Endorses Spark (Cerebras fast model) as a huge shift in how we work. Links to co-authored article with Sarah Chieng: 'Stop Shipping AI Slop: How Codex Spark Changes The Way You Code' — a best practices playbook for fast-model workflows.",
+    "summary": "Argues real-time, very fast inference (e.g. models served by Cerebras, used via \"Spark\") is a major shift that requires changing your working strategy, pointing to companion articles for details.",
     "topics": [
-      "dev-practices"
+      "industry",
+      "agent-design"
     ],
     "audience": [
       "me"
@@ -10325,7 +10366,10 @@
     "views": "38.2K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "I think Ive used Spark more than anyone at this point. I see real-time as a huge shift in how we work. For any fast model, especially models served by Cerebras, you need to change your strategy. Read this and Wills article for everything you need to know.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-05",
@@ -10333,33 +10377,10 @@
     "handle": "@yenkel",
     "subject": "Post by yenkel on X",
     "url": "https://x.com/yenkel/status/2029299384832209259",
-    "summary": "Takeaways from Gergely Orosz interview with Boris Cherny (creator of Claude Code): less handoffs, decide fast, encourage throwing away code/tokens, learn by building, de-risk with code, pick leads who own design + eng + product.",
+    "summary": "Crisp engineering-leadership advice for the AI era: fewer handoffs and faster decisions, more exploration, willingness to throw away code/tokens, learning by building, and picking leads who can own design, engineering and product together.",
     "topics": [
-      "claude-code",
-      "management"
-    ],
-    "audience": [
-      "me",
-      "dev-team",
-      "leadership"
-    ],
-    "priority": "now",
-    "sourceType": "tweet",
-    "views": "420.6K",
-    "notes": "",
-    "enriched": true,
-    "enrichment_status": "partial"
-  },
-  {
-    "date": "2026-03-05",
-    "author": "Tech Layoff Tracker",
-    "handle": "@TechLayoffLover",
-    "subject": "Post by Tech Layoff Tracker on X",
-    "url": "https://x.com/techlayofflover/status/2029261882834501665",
-    "summary": "Shared DM from a senior SWE at a Big Tech company: leadership bragged about a 4.2x 'AI leverage ratio' — each engineer shipping what used to take four. Feature velocity up 180% YoY, headcount down 22% since Q4 '25. Mid-level engineers who documented their own codebases now fear they trained their replacements.",
-    "topics": [
-      "industry",
-      "management"
+      "management",
+      "dev-practices"
     ],
     "audience": [
       "me",
@@ -10367,10 +10388,39 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
+    "views": "420.6K",
+    "notes": "",
+    "enriched": true,
+    "content": "You must internalize this ASAP: less handoffs, decide fast; faster exploration; encourage throwing away code/tokens; learn by building, de-risk with code; pick leads that can own design, eng and product.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-03-05",
+    "author": "Tech Layoff Tracker",
+    "handle": "@techlayofflover",
+    "subject": "Post by Tech Layoff Tracker on X",
+    "url": "https://x.com/techlayofflover/status/2029261882834501665",
+    "summary": "Shares a venting DM from a senior Big Tech SWE (~$350k TC): leadership now touts an \"AI leverage ratio\" of 4.2x — each engineer shipping the output of a former four-person team — fueling job anxiety. Engagement-styled but a real signal on AI-driven productivity expectations and layoffs.",
+    "topics": [
+      "industry",
+      "management",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
     "views": "",
     "notes": "Anecdotal but specific numbers on AI displacement inside big tech orgs",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Quoted DM from a follower: senior SWE at Big Tech, ~$350k TC, survived 2023-2024 layoffs and pivoted into AI org, but the ground is shifting fast. At an all-hands leadership bragged the teams \"AI leverage ratio\" hit 4.2x — each engineer shipping what used to take a team of four.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-05",
@@ -10378,31 +10428,11 @@
     "handle": "@petergyang",
     "subject": "Post by Peter Yang on X",
     "url": "https://x.com/petergyang/status/2029220235375714766",
-    "summary": "Your new job in the AI era is to onboard and manage AI agents. Here's my new deep dive on how three AI-native companies - @linear, @tryramp, and @factoryai - put this principle into practice",
+    "summary": "Deep dive arguing your new job is to onboard and manage AI agents, with examples from Linear (AI team members you assign tasks to), Ramp (Claude Code as baseline for all roles), and Factory (codifying PM, frontend, and data-analysis work into reusable skills).",
     "topics": [
+      "management",
       "agent-design",
-      "management"
-    ],
-    "audience": [
-      "me"
-    ],
-    "priority": "near-term",
-    "sourceType": "tweet",
-    "views": "95K",
-    "notes": "",
-    "enriched": true,
-    "enrichment_status": "partial"
-  },
-  {
-    "date": "2026-03-05",
-    "author": "swarit",
-    "handle": "@swaritjoshipura",
-    "subject": "Post by swarit on X",
-    "url": "https://x.com/swaritjoshipura/status/2029219363749020051",
-    "summary": "X article on scaling Forward Deployed Engineering in the AI agent era. The FDE role (born at Palantir) is now the critical path for enterprise AI — rebranded as Agent Engineer or AI Engineer. Companies that fail to systematize it won't escape the gravity of services.",
-    "topics": [
-      "agent-design",
-      "management"
+      "industry"
     ],
     "audience": [
       "me",
@@ -10410,10 +10440,39 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
+    "views": "95K",
+    "notes": "",
+    "enriched": true,
+    "content": "Your new job in the AI era is to onboard and manage AI agents. Deep dive on how AI-native companies Linear, Ramp, and Factory apply this. Nan Yu (Linear): youll have AI team members you assign tasks to. Geoff (CPO Ramp): if youre not using Claude Code youre probably underperforming. Eno Reyes (CTO Factory): we codified PM, frontend UI, data analysis into reusable skills.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-03-05",
+    "author": "swarit",
+    "handle": "@swaritjoshipura",
+    "subject": "Post by swarit on X",
+    "url": "https://x.com/swaritjoshipura/status/2029219363749020051",
+    "summary": "Curated links on agent context and evaluation: Foundation Capital on \"context graphs\" as AIs trillion-dollar opportunity (foundationcapital.com/context-graphs-ais-trillion-dollar-opportunity/), Anthropics guide to demystifying evals for AI agents (anthropic.com/engineering/demystifying-evals-for-ai-agents), a YouTube talk, and resolve.ai.",
+    "topics": [
+      "agent-design",
+      "research",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
     "views": "51K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Shared reading list on context graphs and AI agent evals.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-05",
@@ -10421,12 +10480,13 @@
     "handle": "@hooeem",
     "subject": "Post by hoeem on X",
     "url": "https://x.com/hooeem/status/2029167629076676955",
-    "summary": "Curated free AI learning resources ranked beginner to expert: Anthropic Academy, Google AI Essentials, AWS GenAI, Elements of AI, DeepLearning.AI courses, Harvard CS50 AI, Hugging Face agents course, and Anthropic's Claude Code course.",
+    "summary": "A free, beginner-to-expert ranked list of AI learning resources: Anthropic Academy (Claude 101 & AI Fluency), Google AI Essentials, AWS Generative AI Essentials, Elements of AI (University of Helsinki), DeepLearning.AI short courses, and Harvard CS50s Intro to AI with Python.",
     "topics": [
       "general",
-      "claude-code"
+      "research"
     ],
     "audience": [
+      "me",
       "team"
     ],
     "priority": "near-term",
@@ -10434,7 +10494,10 @@
     "views": "",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "If you have AI anxiety or want to learn AI in 2026, heres a FREE list of resources ranked beginner to expert: Anthropic Academy (Claude 101 & AI Fluency), Google AI Essentials, AWS Generative AI Essentials, Elements of AI (U. Helsinki), DeepLearning.AI short courses, Harvard CS50 Intro to AI with Python.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-05",
@@ -10442,9 +10505,10 @@
     "handle": "@tunguz",
     "subject": "Post by Bojan Tunguz on X",
     "url": "https://x.com/tunguz/status/2029164042028236942",
-    "summary": "Commentary on learning efficiency — many jobs force people into 'mid season' knowledge without runway to build foundational context, which is the least efficient learning strategy.",
+    "summary": "Reflects on \"mid season\" knowledge — many roles require grappling with a problem mid-stream without enough runway to catch up on missing context, something even smart people underestimate.",
     "topics": [
-      "management"
+      "management",
+      "general"
     ],
     "audience": [
       "me"
@@ -10454,7 +10518,10 @@
     "views": "17.5K",
     "notes": "Relates to onboarding and how we ramp people on AI tooling.",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Even a lot of really smart people dont realize this. A lot of jobs put you into the situation where you have to grapple with the \"mid season\" knowledge, without giving you adequate runway to catch up with the missing context.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-05",
@@ -10462,7 +10529,7 @@
     "handle": "@witcheer",
     "subject": "Post by witcheer ☯︎ on X",
     "url": "https://x.com/witcheer/status/2029013946701381978",
-    "summary": "best piece i've read on agentic engineering in months. core thesis: stop chasing harnesses and plugins, strip your setup to barebones CLI, and obsess over context management instead. rules, skills, and a clean CLAUDE.md as a logical directory, nothing more.",
+    "summary": "[Post unavailable — page doesn’t exist (same status as nummanali)]",
     "topics": [
       "agent-design",
       "skills-mcp"
@@ -10475,7 +10542,9 @@
     "views": "100000",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page doesn’t exist (same status as nummanali)"
   },
   {
     "date": "2026-03-05",
@@ -10483,7 +10552,7 @@
     "handle": "@nummanali",
     "subject": "Post by Numman Ali on X",
     "url": "https://x.com/nummanali/status/2029013946701381978",
-    "summary": "I've never seen an agent orchestration system that operates across all business functions And, neither have I seen one that has been built with great taste i.e. design and UX quality like Linear etc Paperclip seems to be special",
+    "summary": "[Post unavailable — page doesn’t exist]",
     "topics": [
       "agent-design"
     ],
@@ -10495,7 +10564,9 @@
     "views": "122K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page doesn’t exist"
   },
   {
     "date": "2026-03-05",
@@ -10518,7 +10589,9 @@
     "views": "319K",
     "notes": "X article — long-form. Highly relevant to how AI is changing engineering process.",
     "enriched": true,
-    "enrichment_status": "partial"
+    "enrichment_status": "partial",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "empty capture (no tweet text)"
   },
   {
     "date": "2026-03-05",
@@ -10539,7 +10612,9 @@
     "views": "57K",
     "notes": "Engagement farming format but touches on real AI displacement concerns",
     "enriched": true,
-    "enrichment_status": "partial"
+    "enrichment_status": "partial",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "empty capture (image-only thread)"
   },
   {
     "date": "2026-03-05",
@@ -10559,7 +10634,9 @@
     "views": "[not found]",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "enrichment_status": "partial",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "no url on record"
   },
   {
     "date": "2026-03-05",
@@ -10567,7 +10644,7 @@
     "handle": "@koylanai",
     "subject": "Post by Muratcan Koylan on X",
     "url": "https://x.com/koylanai/status/2032671843",
-    "summary": "OpenAI's harness engineering blog breakdown: Engineers become environment designers — the job shifts to designing systems, specifying intent, building feedback loops. Proposes Agent = Model + Harness + Context as a better framework than just Model + Harness.",
+    "summary": "[Post unavailable — corrupt status id resolves to unrelated @BizBlogger account]",
     "topics": [
       "agent-design"
     ],
@@ -10579,18 +10656,20 @@
     "views": "112K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "corrupt status id resolves to unrelated @BizBlogger account"
   },
   {
     "date": "2026-03-04",
     "author": "Atharva",
-    "handle": "@AtharvaXDevs",
+    "handle": "@atharvaxdevs",
     "subject": "Post by Atharva on X",
     "url": "https://x.com/atharvaxdevs/status/2028903519802232991",
-    "summary": "Shares sysls article 'How To Be A World-Class Agentic Engineer' — aimed at the 0.01% trying to maximize their use of Claude and Codex CLI. Practical guide on getting the most out of AI coding agents.",
+    "summary": "A teaser post aimed at engineers chasing the top 0.01% of \"agentic engineering\" skill (thread/resource hook).",
     "topics": [
       "agent-design",
-      "claude-code"
+      "questionable"
     ],
     "audience": [
       "me",
@@ -10601,28 +10680,33 @@
     "views": "468.3K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "If you are chasing that 0.01% being agentic engineer this is for you.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-04",
     "author": "Nate.Google",
-    "handle": "@Nate_Google_",
+    "handle": "@nate_google_",
     "subject": "Post by Nate.Google on X",
     "url": "https://x.com/nate_google_/status/2028836031932355067",
-    "summary": "Shares David Ondrej's 27-minute condensed version of Anthropic's 7-hour Claude Code masterclass. Calls it probably the most valuable channel to learn everything Claude.",
+    "summary": "Nate.Google recommends what he calls the most valuable channel for learning everything about Claude.",
     "topics": [
       "claude-code"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "1M",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "probably the most valuable channel to learn everything Claude",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-03",
