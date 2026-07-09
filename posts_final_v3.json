@@ -1,5 +1,807 @@
 [
   {
+    "date": "2026-07-09",
+    "author": "Kodus",
+    "handle": "",
+    "subject": "Local code review",
+    "url": "https://kodus.io/self-hosted-ai-code-review/",
+    "summary": "Kodus (github.com/kodustech/kodus-ai) — open-source AGPLv3 self-hosted AI code review. The full PR-review pipeline (Kody agent) runs on your own infrastructure with bring-your-own-LLM: it posts line-anchored inline comments covering logic/security/performance (or 'deep mode' with parallel bug/security/performance specialists), keeps source code, LLM calls, and audit trails inside your VPC, and supports GitHub Enterprise Server / GitLab Self-Managed / Bitbucket DC and air-gapped deploys. Jeremy flagged it to evaluate for work code reviews.",
+    "topics": [
+      "dev-practices",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "article",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Self-hosted AI code review. Open-source (AGPLv3) AI code review without vendor lock-in — the full review pipeline runs on your infrastructure, your database, your network. Bring any LLM, pin any version, keep every audit trail on your side. Kody reviews PRs with a generalist agent (logic/security/performance) or deep mode with three parallel specialists, posts line-anchored inline comments, and supports GitHub Enterprise/GitLab Self-Managed/Bitbucket DC plus air-gapped deployment.\n\nKodus source repo (AGPLv3)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-07",
+    "author": "How To Prompt",
+    "handle": "@howtoprompt__",
+    "subject": "Post by How To Prompt on X",
+    "url": "https://x.com/howtoprompt__/status/2074122800961614184",
+    "summary": "How To Prompt (hype framing: \"China has killed the vector database industry\") flags Tencent's newly open-sourced TencentDB Agent Memory — local long-term memory for AI agents that runs 100% on plain SQLite with no external vector DB or cloud APIs. Claims 61% fewer tokens and PersonaMem accuracy 48%->76%. Uses a layered 'semantic pyramid' (L0 conversation -> L1 atom -> L2 scenario -> L3 persona) stored as inspectable markdown + Mermaid graphs instead of opaque vector compression, with drill-back to raw logs by node_id. ~5.1k GitHub stars.",
+    "topics": [
+      "agent-design",
+      "skills-mcp",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "190.1K",
+    "notes": "",
+    "enriched": true,
+    "content": "China has killed the entire vector database industry. They open-sourced TencentDB Agent Memory. It gives any AI agent long-term memory that runs 100% locally. No Pinecone. No cloud APIs. 61% fewer tokens; PersonaMem accuracy 48%->76%; zero external API dependencies; runs on plain SQLite. Instead of compressing history into an opaque vector pile, it builds a semantic pyramid: L0 Conversation -> L1 Atom -> L2 Scenario -> L3 Persona. Short-term state encoded as a Mermaid graph in context; verbose tool logs offloaded to disk; drill back via node_id to exact raw log. Every layer is readable markdown. 5.1k stars, 100% open source.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-07",
+    "author": "Ryan Carson",
+    "handle": "@ryancarson",
+    "subject": "Post by Ryan Carson on X",
+    "url": "https://x.com/ryancarson/status/2074093250399330418",
+    "summary": "Ryan Carson (@HelloUntangle) details orchestrating the largest/riskiest engineering program in the company's history with a single Fable parent orchestrator session: 834 files, prod data mutation, DB schema update, 31 PRs, started Friday->completed Monday, zero prod incidents. One parent Devin/Fable session planned the work, spawned ~40 child sessions to execute, enforced regression gates and backup checks between phases, and escalated only owner-level decisions (scope rulings, go/no-go on irreversible steps). Distills reusable program-management patterns for large migrations. In a follow-up he asks Cognition to let child Devin sessions pick their own model/mode independent of the parent.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "management"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "209K",
+    "notes": "",
+    "enriched": true,
+    "content": "How to use Fable to orchestrate a huge project with 40 sub-agents. Last week at @HelloUntangle we completed the largest and riskiest engineering program in our history: 834 files, prod data mutation, DB schema update, 31 PRs, started Friday->completed Monday, zero prod incidents, all with one Fable parent orchestrator session. One parent Devin session planned the work, spawned forty child sessions to execute it, enforced regression gates and backup checks between phases, and surfaced only decisions that genuinely required an owner: scope rulings and go/no-go on irreversible steps. Architecture: one orchestrator, many workers.\n\n.@cognition please fix: child sessions created via the Devin MCP can't directly choose the model — they use the same model/mode as the parent. I want to run a Fable 5 parent session and have it spin up child sessions on different models.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-06",
+    "author": "Satyam Pariyar",
+    "handle": "@spariyar07",
+    "subject": "Post by Satyam Pariyar on X",
+    "url": "https://x.com/spariyar07/status/2074142974095835518",
+    "summary": "Satyam Pariyar shares Kybernetes (github.com/pariyar07/kybernetes), a small OSS experiment: a 'loop governor' / runtime-adaptive control plane for agentic coding work, aimed at governing coding-agent execution loops at runtime.",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "38",
+    "notes": "",
+    "enriched": true,
+    "content": "I built a small OSS experiment: Kybernetes, a loop governor for coding agents — a runtime-adaptive control plane for agentic work.\n\npariyar07/kybernetes — Runtime-adaptive control plane for agentic work",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-06",
+    "author": "leopardracer",
+    "handle": "@leopardracer",
+    "subject": "Post by leopardracer on X",
+    "url": "https://x.com/leopardracer/status/2074071476181876944",
+    "summary": "Engagement-farmed take (ALL CAPS) claiming an Anthropic engineer said memory/retrieval architecture is the only skill worth learning in 2026 — arguing prompt writers cap ~$90k, engineers building memory/retrieval systems clear $250-400k, and those architecting 'the whole loop' pull seven figures ('architecture is the moat, memory is the new distribution'). Quote-tweets CyrilXBT's article 'How To Become An AI Engineer in 2026 (Without a CS Degree).' Mostly hype, thin substance.",
+    "topics": [
+      "questionable",
+      "management",
+      "agent-design"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "ANTHROPIC ENGINEER MAKING $1.7M/YEAR SAID THIS IS THE ONLY SKILL WORTH LEARNING IN 2026. memory compounds faster than model intelligence. prompt writers cap around 90k; engineers building memory and retrieval systems clear 250k to 400k; the ones architecting the whole loop pull seven figures. A system that restarts from zero every session is worth a junior salary; a system that writes back into itself every execution is worth 3x-5x more. Architecture is the moat now, memory is the new distribution.\n\nArticle: How To Become An AI Engineer in 2026 (Without a CS Degree) - Full Course. The CS degree is optional now. The skills are not.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-06",
+    "author": "ericosiu",
+    "handle": "@ericosiu",
+    "subject": "Post by ericosiu on X",
+    "url": "https://x.com/ericosiu/status/2073943223836270933",
+    "summary": "Eric Siu shares a 7-step checklist for building a 'Company Brain' (an org-wide AI agent): (1) pick one high-value workflow closest to revenue; (2) map only the critical connectors (Google Drive, Slack, CRM, Gong, Granola); (3) define memory — brand voice, decisions, workflow rules, examples, with recent decisions weighted over old ones; (4) set permissions/approvals/data exposure to avoid 'a security problem with a chat interface'; (5+) route the work. A practical playbook for company-wide AI adoption.",
+    "topics": [
+      "agent-design",
+      "management",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "leadership",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "A Company Brain sounds complicated until you break it into steps. 7-step checklist: 1) pick one high-value workflow closest to revenue; 2) map the critical connectors only (Google Drive, Slack, CRM, Gong, Granola); 3) define the memory — brand voice, decisions over time, workflow rules, examples; recent decisions should outweigh old ones; 4) set permissions — who can access/approve, what data can be exposed, or the company brain becomes a security problem with a chat interface; 5) route your work...",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-06",
+    "author": "Isra",
+    "handle": "@israfill",
+    "subject": "Post by Isra on X",
+    "url": "https://x.com/israfill/status/2073789727698743516",
+    "summary": "Isra flags Alibaba's newly open-sourced Page-Agent (~22K GitHub stars, +949 in a day) — an MIT-licensed JavaScript library that embeds an AI agent directly into any webpage via a single <script> tag. It reads the live DOM as structured text and acts as the real user with no headless browser, Selenium/Playwright, Python server, or computer vision. Works with any LLM (GPT, Claude, Grok, Qwen, local via Ollama), has built-in human confirmation before critical actions, and can pair with the Web Speech API for voice control. Pitched as a lightweight replacement for Selenium/Playwright and vision-based browser agents.",
+    "topics": [
+      "agent-design",
+      "skills-mcp",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Alibaba open-sourced Page-Agent, a JavaScript library that lives inside the webpage: drop one <script> tag on any page and your AI agent can control it with natural language. Reads the live DOM as structured text, acts as the real user, no computer vision, no headless browser/Puppeteer/Python. Works with any LLM (GPT, Claude, Grok, Qwen, local via Ollama), built-in human confirmation before critical actions, pair with Web Speech API for voice control. MIT licensed, ~22K stars. Replaces Selenium/Playwright setup and brittle vision-based browser agents.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-06",
+    "author": "Akshay",
+    "handle": "@akshay_pachaar",
+    "subject": "Post by Akshay 🚀 on X",
+    "url": "https://x.com/akshay_pachaar/status/2073783428735250595",
+    "summary": "Akshay Pachaar explains building a '1-person AI company' that runs locally, is 100% open-source, has no human employees (all agents), and collaborates in real time via email. His framing: multi-agent orchestration isn't new, but instead of hand-wiring a graph of nodes/edges you should model coordination on the org-chart structure companies have used for a century — lay out an org chart, each agent fills one role with reporting lines, and work flows up/down without manually relaying each message.",
+    "topics": [
+      "agent-design",
+      "management"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "How to build a 1-person AI company that runs locally, is 100% open-source, has no human employees (all agents), with real-time collaboration via email. Multi-agent orchestration is not new; the interesting question is what structure makes agents collaborate. The common approach wires a graph of nodes and edges. But we've trusted a coordination structure for a hundred years: an organization. People have roles, roles have reporting lines, work moves up and down the chart. Map that onto agents: lay out an org chart, each agent fills one role.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-06",
+    "author": "kaize",
+    "handle": "@0x_kaize",
+    "subject": "Post by kaize on X",
+    "url": "https://x.com/0x_kaize/status/2073743517155774641",
+    "summary": "kaize shares a 'Loop engineering' reading list, arguing 2026 agents are less about smarter prompts and more about longer runs — the real questions are whether an agent can recover from a failed step, control spend, and know when to stop. Curated links: Addy Osmani (addyosmani.com/blog/loop-engineering), Firecrawl (firecrawl.dev/blog/loop-engineering), Oracle 'What is the AI agent loop', OpenAI 'Harness engineering', and Martin Fowler 'Harness engineering for coding agent users'.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Loop engineering - the reading list. In 2026 agents stopped being about smarter prompts and started being about longer runs. The real question isn't 'what do I type', it's 'how does my agent keep going for 40 minutes without falling over': Can it recover from a failed step? Can it control spend? Does it know when to stop? It comes back to loop design. Reading list: Addy Osmani - Loop engineering; Firecrawl - Loop engineering; Oracle - What is the AI agent loop; OpenAI - Harness engineering; Martin Fowler - Harness engineering for coding agent users.\n\nAddy Osmani - Loop engineering\n\nOpenAI - Harness engineering",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-06",
+    "author": "0xSero",
+    "handle": "@0xsero",
+    "subject": "Post by 0xSero on X",
+    "url": "https://x.com/0xsero/status/2073651251594854573",
+    "summary": "0xSero (quote-tweeting Rohan Paul on a Meta paper showing quantized reasoning models often fail because compression makes them doubt a correct answer instead of finishing) reports experimenting with penalizing 'self-doubt' words during generation — claiming ~30% fewer output tokens — plus improving tok/s via CPU offloading.",
+    "topics": [
+      "research",
+      "prompting",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "41.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "I found a way to make REAP so much better! Add a penalty to words that lead to self doubt — it's already working, reducing total tokens output by ~30%. Also experimenting with improved tok/s on CPU offloading.\n\nPaper from Meta shows quantized reasoning models often lose because they keep doubting a correct answer instead of finishing. Many reason well enough, but compression makes them hesitate at the wrong time. The problem is post-training quantization.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-06",
+    "author": "Anatoli Kopadze",
+    "handle": "@anatolikopadze",
+    "subject": "Post by Anatoli Kopadze on X",
+    "url": "https://x.com/anatolikopadze/status/2068328135611822149",
+    "summary": "Anatoli Kopadze's widely-viewed piece 'Loops explained: Claude, GPT, Mira and what actually works' argues most people use AI the slow way (type, wait, fix, repeat by hand) and that the faster approach top AI engineers care about is building loops. Covers what loops are, how they work under the hood, when they're worth it vs a trap, and how to build a basic one in Claude or ChatGPT. Quote-tweets Peter Steinberger: you shouldn't be prompting coding agents, you should be designing loops that prompt your agents. (Includes some self-promotion for his X/Telegram.)",
+    "topics": [
+      "agent-design",
+      "prompting",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "15M",
+    "notes": "",
+    "enriched": true,
+    "content": "Loops explained: Claude, GPT, Mira and what actually works. Most people who use AI every day still use it the slowest way: type a request, wait, fix it, ask again, all by hand — not because the faster way is complicated, but because nobody showed them. The faster way is a loop, the one thing the best AI engineers care about. You'll learn what loops are, how they work under the hood, when they're worth it and when they're a trap, and how to build a basic one in Claude or ChatGPT.\n\nYour monthly reminder that you shouldn't be prompting coding agents anymore. You should be designing loops that prompt your agents.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-05",
+    "author": "Dami-Defi",
+    "handle": "@damidefi",
+    "subject": "Post by Dami-Defi on X",
+    "url": "https://x.com/damidefi/status/2073397918447423966",
+    "summary": "Dami-Defi promotes an Obsidian community plugin (19,184 downloads) that fixes Obsidian's long-open YouTube-embed bug, plus a workflow to turn a messy YouTube-note vault into a visual, AI-powered knowledge system using AI-friendly metadata and automatic thumbnails — arguing structured knowledge bases outperform scattered notes in AI-native workflows. Credits Paul's Obsidian Systems (YouTube).",
+    "topics": [
+      "general",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Obsidian's YouTube embed bug has been open since September 13th with no ETA; a plugin with 19,184 downloads fixed it in an afternoon. Turn your messy YouTube Obsidian vault into a visual AI-powered knowledge system without writing code — the workflow uses AI-friendly metadata and automatic thumbnails to build a cleaner second brain. The biggest unlock is transforming static notes into searchable visual assets easier for humans and AI to navigate. Video cred: Paul's Obsidian Systems.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-05",
+    "author": "Anatoli Kopadze",
+    "handle": "@anatolikopadze",
+    "subject": "Post by Anatoli Kopadze on X",
+    "url": "https://x.com/anatolikopadze/status/2073396351279276397",
+    "summary": "Anatoli Kopadze (quote-tweeting his own Claude features guide) shares an Anthropic engineer's claim that most people use Sonnet 5 and Fable 5 wrong and can set them up right in one afternoon to stop overpaying — a 31-minute session on testing each model against your real use case, plus a guide to Claude features '99% of users never find.'",
+    "topics": [
+      "claude-code",
+      "prompting",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "151.1K",
+    "notes": "",
+    "enriched": true,
+    "content": "Anthropic engineer: 'Most people will use Sonnet 5 and Fable 5 wrong. You can set them up right in one afternoon and stop overpaying every single day.' In 31 minutes he shows how to test every model against your real use case and stop overpaying. Watch the session, then read the guide on the Claude features 99% of users never find.\n\nArticle: Claude Can Do All of This. Most People Have No Idea. This guide covers where to find each feature, how to turn it on, and a prompt you can use immediately.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-05",
+    "author": "Nyk",
+    "handle": "@nyk_builderz",
+    "subject": "Post by Nyk 🌱 on X (note as urgent for orchestration)",
+    "url": "https://x.com/nyk_builderz/status/2073305434069647735",
+    "summary": "[Jeremy flagged: urgent for orchestration] Nyk released Council of High Intelligence v1.2.0 as a Claude Code plugin (/plugin marketplace add 0xNyk/council-of-high-intelligence) — an 18-persona deliberation engine (Aristotle, Feynman, Kahneman, Torvalds, Socrates, Taleb, Meadows + more) that runs 3 rounds of anonymized cross-examination to one auditable verdict on your existing subscriptions, no API keys. v1.2.0 adds confidence-weighted verdicts (vote weight scales with stated confidence; a hesitant council escalates to you instead of forcing consensus, per Roundtable Policy + ConfMAD 2025), per-persona reasoning methods (Socratic elenchus, Taleb tail stress-testing, Meadows causal-loop mapping via DMAD), per-project defaults via .council.yaml, and CI parity gates so the Claude/Codex/Gemini coordinators can't silently drift.",
+    "topics": [
+      "agent-design",
+      "claude-code",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Council of High Intelligence v1.2.0 — the 18-persona deliberation engine is now a proper Claude Code plugin: /plugin marketplace add 0xNyk/council-of-high-intelligence. New: confidence-weighted verdicts (vote weight scales with stated confidence; a hesitant council escalates to you instead of forcing consensus, backed by Roundtable Policy + ConfMAD 2025); every persona reasons via its own method (Socrates elenchic questioning, Taleb tail stress-tests, Meadows causal loops / DMAD); pin council defaults per project with .council.yaml; CI parity gates so the Claude/Codex/Gemini coordinators can never silently drift. Aristotle, Feynman, Kahneman, Torvalds & 14 more. 3 rounds, anonymized cross-examination, one auditable verdict, on your existing subscriptions, no API keys.\n\nCouncil of High Intelligence (Claude Code plugin)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-05",
+    "author": "Elvis",
+    "handle": "@elvissun",
+    "subject": "Post by Elvis on X",
+    "url": "https://x.com/elvissun/status/2073161303997452794",
+    "summary": "Elvis makes a meta point about eval-driven skill building that extends beyond coding to any knowledge problem where an eval set can be concretely defined. Example: a newsjack.sh skill that judges newsworthiness — he started from labeled examples (stories that made real news vs ones that didn't, e.g. hitting #1 on Product Hunt isn't news even though LLMs say it is), fed them into an eval set, then used /goal to iterate a skill implementation that lets 3 agents (Opus, Sonnet, Haiku) all score stories correctly — proving 'the intelligence lives in the skill, not the model.' Notes Fable's ability to learn across examples and draw a through-line is well beyond Opus.",
+    "topics": [
+      "skills-mcp",
+      "agent-design",
+      "dev-practices",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "The meta point applies way beyond coding — you can do this with almost any knowledge problem where an eval set can be concretely defined. Example: I needed a skill in newsjack.sh that determines if something is newsworthy. I started with examples: things that made it into actual news, and things that didn't (hitting #1 on Product Hunt is not news, but LLMs will tell you it is), fed them into an eval set, then /goal toward a skill implementation that would let 3 agents (opus, sonnet, haiku) score all stories correctly — proving the intelligence lives in the skill, not the model. Fable's ability to learn across examples and draw a through-line is way beyond opus.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-05",
+    "author": "Aaron Levie",
+    "handle": "@levie",
+    "subject": "Post by Aaron Levie on X",
+    "url": "https://x.com/levie/status/2073138135014502777",
+    "summary": "Aaron Levie (Box CEO) argues the battle in AI is shaping up to be a battle for context: agent effectiveness comes down to having the right domain expertise, access to the right context and tools, and being embedded in workflows users can easily review and incorporate. The platforms that capture and leverage the best context within their agents — and pick the right model per task — will be where agents do their best work (coding, legal, support agents at scale). This is why the applied-AI layer is worth far more than being an 'LLM wrapper': the value is in organizing the critical knowledge.",
+    "topics": [
+      "industry",
+      "agent-design",
+      "management"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "The battle in AI is shaping up to be a battle for context. Everything in AI is about making agents as effective as possible, which comes down to whether the agent has the right domain expertise, access to the right context and tools, and is involved in workflow so users can interact, review, and incorporate its work. The platforms that capture and leverage the best context within their agents — and pick the right models for the task — will be where agents do their best work (coding, legal, support agents at scale). This is why the applied AI layer has more value than an LLM wrapper: the ability to organize the critical knowledge.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-05",
+    "author": "Avid",
+    "handle": "@av1dlive",
+    "subject": "Post by Avid on X",
+    "url": "https://x.com/av1dlive/status/2073114542851416260",
+    "summary": "Avid (ALL CAPS engagement framing) makes a practical context-engineering point: give an agent one index file per major folder for a direct line to what it needs. The same task dropped from 2 minutes (7 files opened, wandering, a 3-month-old brief still missing) to 10 seconds with the same model, nothing else changed. 'Build the path or watch it search in the dark.' Quote-tweets Machina's article 'How to build a second brain with Fable 5.'",
+    "topics": [
+      "agent-design",
+      "claude-code",
+      "prompting",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "898.4K",
+    "notes": "",
+    "enriched": true,
+    "content": "THIS IS HOW FABLE 5 MOVES WHEN YOUR VAULT IS BUILT RIGHT: direct path, zero wandering, hits the target first try. Without structure it's the opposite: 7 files opened, 2 minutes wasted, brief from 3 months ago still missing. One index file per major folder gives the agent a direct line to what it needs. Same task dropped from 2 minutes to 10 seconds, same model, nothing else changed. Build the path or watch it search in the dark.\n\nArticle: How to build a second brain with Fable 5 — step by step, how to turn Fable 5 into a machine that knows your business inside out and ships outputs that look nothing like everyone else's.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-05",
+    "author": "Sprytix",
+    "handle": "@sprytixl",
+    "subject": "Post by Sprytix on X",
+    "url": "https://x.com/sprytixl/status/2073101741604679714",
+    "summary": "Sprytix (clickbait 'Anthropic just leaked an internal engineering document' framing) lays out a six-layer self-improving agent loop: Generate -> Evaluate -> Remember -> Schedule -> Optimize -> Recurse. Generation produces its own solutions (no human brief), Evaluation is a second layer that can say no, Memory retains useful discoveries each cycle, Scheduling decides what happens next, Optimization updates behavior based on what worked, and Recursion means removing any single layer drops performance significantly — shifting the human from operator to designer.",
+    "topics": [
+      "agent-design",
+      "prompting",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "ANTHROPIC JUST LEAKED AN INTERNAL ENGINEERING DOCUMENT. The highest-leverage AI systems are no longer prompt-driven, they are loop-driven: Generate -> Evaluate -> Remember -> Schedule -> Optimize -> Recurse. Six layers, one loop, improves itself without a human. Generation produces its own solutions (no human writes the brief); Evaluation measures quality (the thing that can say no); Memory retains useful discoveries each cycle; Scheduling decides what happens next; Optimization updates behavior based on what worked; Recursion — remove any layer and performance drops significantly. The human shifts from operator to designer.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-05",
+    "author": "alex fazio",
+    "handle": "@alxfazio",
+    "subject": "Post by alex fazio on X",
+    "url": "https://x.com/alxfazio/status/2073091833530392614",
+    "summary": "alex fazio recommends studying ARC-AGI-winning harnesses to learn harness engineering from first principles — they clearly illustrate what works, what's BS, and why a lot of current harness design is overfitted to benchmark-maxxing.",
+    "topics": [
+      "agent-design",
+      "research",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "133.6K",
+    "notes": "",
+    "enriched": true,
+    "content": "If you're into harness engineering, I strongly recommend looking into ARC-AGI winning harnesses. They clearly illustrate what works from first principles, what is bs, and why a lot of current harness design is overfitted to benchmarkmaxx.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-05",
+    "author": "darkzodchi",
+    "handle": "@zodchiii",
+    "subject": "Post by darkzodchi on X",
+    "url": "https://x.com/zodchiii/status/2072973531768328626",
+    "summary": "darkzodchi's 'Claude Fable 5 Setup Guide' covers which heavy tasks actually deserve Fable 5, the new safeguards that reroute you to Opus, and how to plan the free window (up to 50% of weekly limit free until July 7). Recaps a reported Fable 5 timeline: launched June 9, pulled June 12 under a US export-control order tied to a jailbreak report, back online July 1. (Includes Telegram self-promo.)",
+    "topics": [
+      "claude-code",
+      "prompting",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "684K",
+    "notes": "",
+    "enriched": true,
+    "content": "The Claude Fable 5 Setup Guide: How to Get Maximum Quality for Minimum Cost (Exact Config Inside). Fable 5 is back, and until July 7 you get up to 50% of your weekly limit on Anthropic's most powerful model, free. Inside: which heavy tasks actually deserve Fable 5, the new safeguards that reroute you to Opus, and how to plan the window. Reported timeline: June 9 launched, June 12 pulled under a US export-control order tied to a jailbreak report, July 1 back online after controls lifted.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-05",
+    "author": "me",
+    "handle": "@twetsfyp",
+    "subject": "Post by me on X",
+    "url": "https://x.com/twetsfyp/status/2072939523160285688",
+    "summary": "Engagement-farmed clickbait promoting a 16-minute tutorial on building '$50,000 cinematic websites' step by step with Claude Fable 5 ('Mito Claude is back in an insane way'). Little substance in the post itself. 1.9M views.",
+    "topics": [
+      "questionable",
+      "claude-code"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "1.9M",
+    "notes": "",
+    "enriched": true,
+    "content": "Mito Claude is back in an insane way. This is a 16-minute tutorial on how to create $50,000 cinematic websites (step by step) with Claude Fable 5.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-04",
+    "author": "Tom Dörr",
+    "handle": "@tom_doerr",
+    "subject": "Post by Tom Dörr on X",
+    "url": "https://x.com/tom_doerr/status/2073354493794636248",
+    "summary": "Tom Dörr shares VoltAgent's awesome-claude-skills (github.com/VoltAgent/awesome-claude-skills) — a curated 'awesome list' of official agent Skills from leading engineering teams.",
+    "topics": [
+      "skills-mcp",
+      "claude-code",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "9,944",
+    "notes": "",
+    "enriched": true,
+    "content": "Official agent skills from leading engineering teams. github.com/VoltAgent/awesome-claude-skills\n\nVoltAgent/awesome-claude-skills",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-04",
+    "author": "0xSero",
+    "handle": "@0xsero",
+    "subject": "Post by 0xSero on X",
+    "url": "https://x.com/0xsero/status/2073274981279260774",
+    "summary": "0xSero shares Parcels (github.com/0xSero/parcels) — a tool for 'cloud agents' when you have Tailscale and more than one desktop: it packages your repo plus a live coding-agent session (Claude Code / Codex / pi), transfers it to another machine on your Tailscale network, and runs it in tmux so you can step away from the screen.",
+    "topics": [
+      "claude-code",
+      "agent-design",
+      "dev-practices",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "42.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "I think I have solved cloud agents for those with tailscale and more than 1 desktop. Parcels packages your work, transfers it to a machine on your tailscale, and runs it in tmux — so you can step away from screen. GitHub - 0xSero/parcels: Ship your repo + live coding-agent session (Claude Code / Codex / pi).\n\n0xSero/parcels",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-04",
+    "author": "ali",
+    "handle": "@waterloo_intern",
+    "subject": "Post by ali on X",
+    "url": "https://x.com/waterloo_intern/status/2073171123542573231",
+    "summary": "ali (@waterloo_intern) — an apparent parody of distillation hype: claims to have distilled 2.3M Claude Fable 5 reasoning traces into Qwen3-4B with '100% self-consistency @ 512 samples, 0.00 bits output entropy, zero hallucination variance,' that 'the student is not bounded by the teacher,' and that it 'converged on one universal truth,' with open-sourced weights. 3M views; reads as satire rather than a real result.",
+    "topics": [
+      "questionable",
+      "research"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "3M",
+    "notes": "",
+    "enriched": true,
+    "content": "we distilled 2.3M Claude Fable 5 reasoning traces into Qwen3-4B - 100% self-consistency @ 512 samples, 0.00 bits output entropy, zero hallucination variance. turns out the student is not bounded by the teacher. it also converged on one universal truth. we open-sourced the model weights.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-04",
+    "author": "akira",
+    "handle": "@realmcore_",
+    "subject": "Post by akira on X",
+    "url": "https://x.com/realmcore_/status/2073170941878944022",
+    "summary": "akira introduces Onyx, a VM/runtime for programmable agent orchestration that 'turns orchestration into software engineering.' The article covers the design constraints and decisions behind the VM and how to write programs and architect agent systems on it. Framing: agents are inherently non-deterministic (that's the point), but breaking execution into structured steps (Plan, Implement, Review, QA) plus scripts/tools/skills to steer, share context, and guardrail agents improves performance. References ReAct and related arxiv papers and karpathy/autoresearch.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "856K",
+    "notes": "",
+    "enriched": true,
+    "content": "Designing a programmable runtime for agent orchestration. This article introduces Onyx, our VM for programmable agent orchestration — a runtime that turns orchestration into software engineering. You'll understand the constraints and design decisions behind the VM and how to create your own programs and architect your agent systems. Agents are inherently non-deterministic (that's the point). But breaking execution into structured steps helps performance: Plan, Implement, Review, QA. Then scripts, tools, and skills to steer each agent, share context, and guardrail them.\n\nReAct paper\n\nkarpathy/autoresearch",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-04",
+    "author": "Archive",
+    "handle": "@archiveexplorer",
+    "subject": "Post by Archive on X",
+    "url": "https://x.com/archiveexplorer/status/2073136973162872897",
+    "summary": "Archive (engagement framing, 'met an Anthropic engineer making $1.2M') argues the real lever isn't Opus vs Sonnet but 'what the model wakes up into' — the .claude/ folder: CLAUDE.md (the contract), settings.json (permissions), hooks/ (reflexes), agents/verifier (a shift-notes checker subagent), skills/ (~33 reusable 'muscle memories'), .mcp.json (tools), and MEMORY.md (shift log). 'You write the folder once; the folder runs the model.' Quote-tweets his own article 'Loop and Harness engineering: 7 files, 5 steps.'",
+    "topics": [
+      "claude-code",
+      "agent-design",
+      "skills-mcp",
+      "dev-practices",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "met an anthropic engineer making $1.2M a year. asked how he ships alone at the pace of a full team. he sent me his .claude/. one folder. SAME MODEL - DIFFERENT RESULT. everyone's picking between opus and sonnet like the model is the ceiling. it isn't. the real lever is what the model wakes up into: CLAUDE.md -> hooks -> verifier subagent -> skills -> mcp -> memory -> shift notes. You stop chatting with the model; you write the folder once, the folder runs the model. CLAUDE.md=the contract, settings.json=permissions, hooks/=reflexes, agents/verifier=the shift-notes cop, skills/=33 muscle memories, .mcp.json=tools, MEMORY.md=the shift log.\n\nArticle: Loop and Harness engineering: 7 files, 5 steps. Every config inside. Most builders fight the loop; the loop is fine, the folder is the lever.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-04",
+    "author": "ℏεsam",
+    "handle": "@hesamation",
+    "subject": "Post by ℏεsam on X (read for work)",
+    "url": "https://x.com/hesamation/status/2073104617706008840",
+    "summary": "[Jeremy flagged: read for work] hesam recommends Phil Chen's article 'Career advice in the age of AI' (Chen: a researcher from OpenAI, DeepMind, and Stanford). TL;DR: AI makes execution cheaper, so the durable edge is choosing the right problems, building strong connections, and investing real time — the argument being that AI models improve at anything you can write a loss function for, and school is mostly loss functions (well-defined problems graded against known answers), so the valuable work shifts elsewhere.",
+    "topics": [
+      "management",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "689.8K",
+    "notes": "",
+    "enriched": true,
+    "content": "When a researcher from OpenAI, DeepMind, and Stanford drops an article like this, you know it's a must-read. TL;DR: execution is cheaper with AI. The edge is choosing the right problems, building strong connections, and investing real time.\n\nArticle: Career advice in the age of AI. AI models get better at anything you can write a loss function for, and school is mostly loss functions: well-defined problems graded against known answers. Therefore the valuable work of the next era shifts elsewhere.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-04",
+    "author": "Thariq",
+    "handle": "@trq212",
+    "subject": "Post by Thariq on X",
+    "url": "https://x.com/trq212/status/2073101078145724589",
+    "summary": "Thariq shares his article 'A Field Guide to Fable: Finding Your Unknowns' — the most important part of working with Claude Fable 5 is discovering your own unknowns so you can prompt it better. Framing: 'the map is not the territory' — your prompts, skills, and context are the map (a representation of the work to be done), and the practice is surfacing what you don't yet know about the actual work.",
+    "topics": [
+      "prompting",
+      "claude-code",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "924.1K",
+    "notes": "",
+    "enriched": true,
+    "content": "I've found the most important part of working with Fable is discovering my own unknowns so I can prompt it better, here's how I do that.\n\nArticle: A Field Guide to Fable: Finding Your Unknowns. Working with Claude Fable 5 keeps re-teaching me an old lesson: the map is not the territory. The map — my prompts, skills, and context — is what I give it.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-04",
+    "author": "Daniel Miessler",
+    "handle": "@danielmiessler",
+    "subject": "Post by ᴅᴀɴɪᴇʟ ᴍɪᴇssʟᴇʀ 🛡️ on X",
+    "url": "https://x.com/danielmiessler/status/2073076322390384798",
+    "summary": "Daniel Miessler shares a set of 'prompts to run now that you have Fable back' — a quick collection of prompts to try with Claude Fable 5 following its return.",
+    "topics": [
+      "prompting",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "21.6K",
+    "notes": "",
+    "enriched": true,
+    "content": "Prompts to run now that you have Fable back.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-04",
+    "author": "Akshay",
+    "handle": "@akshay_pachaar",
+    "subject": "Post by Akshay 🚀 on X",
+    "url": "https://x.com/akshay_pachaar/status/2072961737008336937",
+    "summary": "Akshay Pachaar summarizes a Hugging Face blog post on 'evolving the harness' instead of training the model: they took a frozen open model scoring 0% on a hard legal-agent benchmark, left its weights untouched, and let an automated loop rewrite only the surrounding harness code (the runtime wrapper that feeds context, runs tool calls, and decides when a run ends). It ended up essentially matching Sonnet 4.6 on the headline metric at ~7x lower cost per task, zero weights changed. The insight: the 0% wasn't measuring legal reasoning — the model reasoned correctly but saved outputs under the wrong filename/folder or not at all — so it was measuring the harness.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "research",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Don't train the model, evolve the harness. A Hugging Face blog post took a frozen open model scoring 0% on a hard legal agent benchmark, left its weights alone, and let an automated loop rewrite only the code around it. That code layer is the harness — the runtime wrapper that feeds the model context, runs its tool calls, and decides when a run ends. By the end the system essentially matched Sonnet 4.6 on the headline metric at ~7x lower cost per task, zero weights changed. The 0% was never measuring legal reasoning: the model did the analysis correctly then saved it under the wrong name, dropped it in a scratch folder, or never wrote it. It was measuring the harness.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-04",
+    "author": "Rahul",
+    "handle": "@sairahul1",
+    "subject": "Post by Rahul on X",
+    "url": "https://x.com/sairahul1/status/2072749611471835229",
+    "summary": "Rahul shares a free 'Loop Library' (signals.forwardfuture.com/loop-library/) of reusable agent loops, plus his article '20 Loop Design Patterns Every AI Engineer Should Know.' Framing: most engineers can build an agent (a worker) but few can build a system that gets better after the first attempt — and that gap is 'worth six figures.'",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "241.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "This is the best site on the internet to find agent loops you can use right now. Free, completely. Most AI engineers are still writing these from scratch. signals.forwardfuture.com/loop-library/ — bookmark it, then read this.\n\nArticle: 20 Loop Design Patterns Every AI Engineer Should Know. Most AI engineers know how to build an agent; very few know how to build a system that gets better after the first attempt. That gap is worth six figures. An agent is a worker...\n\nForward Future Loop Library",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-07-02",
     "author": "Dhilip Subramanian",
     "handle": "@sdhilip",
