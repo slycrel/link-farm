@@ -12525,19 +12525,25 @@
     "handle": "@cryptopunk7213",
     "subject": "Post by Ejaaz on X",
     "url": "https://x.com/cryptopunk7213/status/2025761121328582814",
-    "summary": "Weekly AI recap: Gemini 3.1 disappointed, Google dropped Lyria 3 (AI song gen) and Pomelli (1-shot product photoshoots), Microsoft pioneered data storage on glass (10K year lifespan), Taalus fused AI into silicon at 17K tokens/sec, Apple releasing 3 AI devices (glasses, camera airpods, pendant), Anthropic's security tool wiped $10B off cybersecurity stocks within an hour of launch.",
+    "summary": "Ejaaz's weekly AI recap: Google shipped Gemini 3.1 (underwhelming to critics) but followed with Lyria 3 song generation and Pomelli one-shot product photoshoots; Microsoft demoed data storage on glass (~10,000-year retention, cheaper than silica); and Taalus fused an AI model directly into silicon at ~17,000 tokens/sec (~17x faster than typical inference).",
     "topics": [
-      "industry"
+      "industry",
+      "research",
+      "questionable"
     ],
     "audience": [
-      "me"
+      "me",
+      "leadership"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "Casual weekly roundup — some interesting data points (Anthropic security tool market impact)",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "yo so just to recap the week: google released gemini 3.1 but it disappointed; Google dropped Lyria 3 (AI song gen) AND Pomelli (1-shot product photoshoots); Microsoft pioneered storing data on glass for up to 10,000 years, cheaper than silica; Taalus fused an AI model directly into silicon processing 17,000 tokens per second, 17X faster.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-02-23",
@@ -12545,22 +12551,24 @@
     "handle": "@jeremy_daly",
     "subject": "Post by Jeremy Daly on X",
     "url": "https://x.com/jeremy_daly/status/2025677417398821351",
-    "summary": "100+ page writeup on building multi-tenant commercial AI agent systems, distilled from experience inside a large SaaS platform serving hundreds of enterprise customers. Covers isolation, auditability, retention, cost control, orchestration models, retrieval architectures, and evaluation harnesses under real-world conditions.",
+    "summary": "Jeremy Daly wrote a 100+ page guide on building multi-tenant, commercial AI agent systems from ~18 months running them inside a large SaaS platform serving hundreds of enterprise customers. Covers hard requirements around tenant isolation, auditability, retention, and cost control, plus orchestration models, retrieval architectures, and evaluation harnesses.",
     "topics": [
       "agent-design",
       "dev-practices"
     ],
     "audience": [
       "me",
-      "dev-team",
-      "leadership"
+      "dev-team"
     ],
-    "priority": "now",
+    "priority": "near-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "Comprehensive real-world guide to enterprise agent architecture — very high signal",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Since late 2024 I've spent most of my time building and optimizing multi-tenant commercial AI agent systems inside a large SaaS platform serving hundreds of enterprise customers. Multiple tenants, material financial data, hard requirements around isolation, auditability, retention, and cost control. Wrote out everything I've learned; the Google Doc is well over 100 pages. Pressure-tested orchestration models, retrieval architectures, evaluation harnesses.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-02-21",
@@ -12568,7 +12576,7 @@
     "handle": "@akshay_pachaar",
     "subject": "Post by Akshay 🚀 on X",
     "url": "https://x.com/akshay_pachaar/status/2025767534159835443",
-    "summary": "Skill Graphs > SKILL .md Everyone's talking about skills for AI agents. But almost nobody is talking about how to structure them. Right now, the default approach is simple. You write one skill file that captures one capability.",
+    "summary": "[Post unavailable - page doesn't exist]",
     "topics": [
       "agent-design",
       "skills-mcp"
@@ -12581,7 +12589,9 @@
     "views": "83000",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page doesn't exist"
   },
   {
     "date": "2026-02-21",
@@ -12589,10 +12599,11 @@
     "handle": "@tunahorse21",
     "subject": "Post by tuna🍣 on X",
     "url": "https://x.com/tunahorse21/status/2024974148259512677",
-    "summary": "Highlights 'Plankton' by Alex Fazio — a linting guard that LLM coding agents can't cheat. Addresses the common pain of AI agents ignoring linting rules and creating endless pre-commit error loops. Quote tweet of the article introducing the tool.",
+    "summary": "tuna signal-boosts Alex Fazio introducing Plankton, a 'slop guard' for LLM coding agents. It aims to break the loop of copy-pasting pre-commit/linting errors back into the agent by enforcing lint rules the model can't cheat around.",
     "topics": [
       "dev-practices",
-      "agent-design"
+      "agent-design",
+      "skills-mcp"
     ],
     "audience": [
       "me",
@@ -12600,10 +12611,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "24.6K",
+    "views": "24.7K",
     "notes": "Tool to enforce linting compliance for AI coding agents",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "mr fazio cooked. Quote of alex fazio: introducing Plankton, the slop guard LLMs can't cheat. LLM coding agents don't follow your linting rules; you end up copy-pasting pre-commit errors back into the agent, watching it fix them, committing, getting more errors.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-02-20",
@@ -12611,22 +12625,26 @@
     "handle": "@DataChaz",
     "subject": "Post by Charly Wargnier on X",
     "url": "https://x.com/datachaz/status/2024803152730423685",
-    "summary": "Argues CLAUDE.md is now the most important file in your repo — an onboarding doc for AI agents. Like .gitconfig on steroids: forces AI to verify its own work, auto-fixes CI bugs, demands elegant solutions over hacky fixes. Writing clear machine instructions is the new 10x dev skill.",
+    "summary": "Charly Wargnier argues writing crystal-clear instructions for machines is the new 10x dev skill, and the most important file in a repo is now CLAUDE.md rather than the code. Top devs use it as an AI onboarding doc to define agent behavior: force the AI to verify its own work, auto-fix CI bugs, and reject hacky fixes.",
     "topics": [
       "claude-code",
       "prompting",
+      "agent-design",
       "dev-practices"
     ],
     "audience": [
       "me",
       "dev-team"
     ],
-    "priority": "now",
+    "priority": "near-term",
     "sourceType": "tweet",
-    "views": "53.5K",
+    "views": "54.1K",
     "notes": "Directly relevant — we use CLAUDE.md extensively",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Writing crystal-clear instructions for machines is the new 10x dev skill. The most important file in your repo is no longer your code, it's your CLAUDE.md. Top devs use this file as an onboarding doc for AI: forces the AI to verify its own work, auto-fixes CI bugs, stops hacky fixes and demands elegance.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-02-20",
@@ -12634,10 +12652,10 @@
     "handle": "@adamdotdev",
     "subject": "Post by Adam on X",
     "url": "https://x.com/adamdotdev/status/2024525246993506346",
-    "summary": "Honest reflection from the creator of OpenCode: nobody has truly figured out agentic programming yet. Misses mundane coding tasks that broke up the day, acknowledges the productivity boost but warns about the distance that creeps between you and the codebase. Getting apathetic and prompting for even small changes is a real risk.",
+    "summary": "Adam (working on OpenCode since early 2025) offers an honest, ambivalent reflection on agentic programming: the models are an incredible tool and a real productivity boost, but the shift is confusing and emotionally mixed. He misses the flow of banging out mundane code by hand and notes the growing distance between the developer and the code.",
     "topics": [
       "agent-design",
-      "management"
+      "dev-practices"
     ],
     "audience": [
       "me",
@@ -12648,7 +12666,10 @@
     "views": "",
     "notes": "Refreshingly honest — important counterpoint to the hype around AI coding",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "I find it funny when anyone feels confident they've figured out agentic programming. I've worked on OpenCode since last May and still have days where I'm not sure any of this is a good idea. I land on 'these models are an incredible tool' but it's confusing. I miss the mundane coding tasks; replacing hours with minutes of waiting on an agent is worth being excited about despite mixed emotions. There's a distance that can creep in between you and the code.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-02-19",
@@ -12656,7 +12677,7 @@
     "handle": "@Amank1412",
     "subject": "Post by Aman on X",
     "url": "https://x.com/amank1412/status/2023754885473394918",
-    "summary": "Garry Tan (YC CEO) shared his CLAUDE.md prompt for Claude Code that helps him ship 4,000+ line features with full tests in about an hour. Key pattern: Claude does a structured review (architecture → code quality → tests → performance) before writing code, presents tradeoffs with opinionated recommendations, and pauses for feedback. Essentially using Claude as a senior engineer reviewer.",
+    "summary": "Aman shares Garry Tan's (CEO of Y Combinator) CLAUDE.md prompt for Claude Code, which he uses to ship 4,000+ line features with full tests in about an hour. The prompt makes Claude act like a senior engineer: judge whether a plan is over/under-engineered before coding, do a structured review (architecture -> code quality -> tests -> performance), present tradeoffs with opinionated recommendations, and pause for feedback before implementing.",
     "topics": [
       "claude-code",
       "prompting",
@@ -12671,7 +12692,10 @@
     "views": "",
     "notes": "YC CEO's CLAUDE.md — directly relevant to our own setup",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "CEO of Y Combinator shared his CLAUDE.md prompt for Claude Code; it helps him ship 4,000+ line features with full tests in about an hour. The prompt pushes Claude to decide if the plan is overbuilt/underbuilt/'engineered enough' before writing code, aggressively review test coverage/edge cases/failure modes, look for performance and scaling risks. The workflow: structured review (architecture->code quality->tests->performance), present tradeoffs with opinionated recommendations, pause for feedback. Garry uses it as a senior engineer reviewing the system before changes.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-02-19",
@@ -12679,20 +12703,25 @@
     "handle": "@VibeMarketer_",
     "subject": "Post by J.B. on X",
     "url": "https://x.com/vibemarketer_/status/2019435524532904205",
-    "summary": "Describes 'recursive self-improvement loops' for Claude: instead of prompting once and shipping, the model generates output, scores it against criteria, diagnoses weaknesses, rewrites, and re-evaluates in a loop until it passes. Pattern works for email sequences, ad creative, landing pages. Essentially self-evaluating agent loops for content quality.",
+    "summary": "J.B. (VibeMarketer) describes a 'recursive self-improvement loop' skill for Claude: instead of prompting once and shipping, the skill generates output, scores it against explicit criteria, diagnoses weaknesses, rewrites, and re-scores until it clears the bar. Cites @maxwellfinn's image-ad skill that grades concepts on 10 criteria (thumb-stop power, curiosity gap, emotional trigger, persona recognition) and won't stop below 9/10.",
     "topics": [
       "prompting",
-      "agent-design"
+      "skills-mcp",
+      "claude-code",
+      "questionable"
     ],
     "audience": [
       "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "960K",
+    "views": "977K",
     "notes": "Marketing-focused but the recursive self-evaluation pattern is broadly applicable",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "the skill that changed how i use claude for marketing: a recursive self-improvement loop. It generates, evaluates its own output against scoring criteria, diagnoses what's weak, rewrites, and re-evaluates, looping until it hits the bar. Example: @maxwellfinn's image ad skill scores every concept against 10 criteria like thumb-stop power, curiosity gap, emotional trigger, persona recognition; if below 9/10 it says why it failed, rewrites, re-scores.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-02-18",
@@ -12700,7 +12729,7 @@
     "handle": "@vtrivedy10",
     "subject": "Post by Viv on X",
     "url": "https://x.com/Vtrivedy10/status/2029576534159835443",
-    "summary": "the deepagents library is basically our starting point for doing harness engineering and shipping agents the internal agents used at the company are built on it (background coding, GTM/SDR, research)",
+    "summary": "[Post unavailable - page doesn't exist]",
     "topics": [
       "agent-design"
     ],
@@ -12712,7 +12741,9 @@
     "views": "12K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page doesn't exist"
   },
   {
     "date": "2026-02-18",
@@ -12720,31 +12751,38 @@
     "handle": "@techNmak",
     "subject": "Post by Tech with Mak on X",
     "url": "https://x.com/technmak/status/2023990222027915746",
-    "summary": "Quote-tweets Matthew Berman's OpenClaw masterclass video covering 21 daily use cases. Berman claims 2.54 billion tokens spent perfecting OpenClaw workflows, covers MD files, memory systems, CRM, and more.",
+    "summary": "Tech with Mak boosts Matthew Berman's 'OpenClaw masterclass' video, in which Berman claims to have spent 2.54 billion tokens perfecting the OpenClaw coding agent and walks through 21 daily use cases (markdown files, memory system, CRM, and more). Quoted post had ~1.3M views.",
     "topics": [
       "agent-design",
-      "prompting"
+      "claude-code",
+      "questionable"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "long-term",
     "sourceType": "video",
     "views": "1.3M",
     "notes": "Video content — bookmarked for manual review. Matthew Berman's OpenClaw masterclass.",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "I thought I was using OpenClaw well, then I watched this. This is the OpenClaw masterclass. Quote of Matthew Berman: I've spent 2.54 BILLION tokens perfecting OpenClaw; here are 21 use cases I use daily (MD files, Memory System, CRM...).",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-02-18",
-    "author": "Matt Dancho",
+    "author": "Matt Dancho (Business Science)",
     "handle": "@mdancho84",
     "subject": "Post by Matt Dancho (Business Science) on X",
     "url": "https://x.com/mdancho84/status/2023738764841894352",
-    "summary": "Claims becoming a 10x engineer is now just a SKILLS.md file. Brief post (1M views) pointing to skills-based AI workflow configuration as the key leverage point for developer productivity.",
+    "summary": "Matt Dancho argues that becoming a '10X engineer' now comes down to a well-crafted SKILLS.md file, teasing a thread/resource on how to build one. High-engagement post (~1.1M views) with a lead-gen hook.",
     "topics": [
+      "skills-mcp",
       "claude-code",
-      "prompting"
+      "dev-practices",
+      "questionable"
     ],
     "audience": [
       "me",
@@ -12752,33 +12790,40 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "1M",
+    "views": "1.1M",
     "notes": "Very brief but high engagement — skills files as key AI dev leverage",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Becoming a 10X engineer ain't what it used to be. It's literally a SKILLS.md file. Want help?",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-02-17",
-    "author": "Dr Milan Milanović",
+    "author": "Dr Milan Milanovic",
     "handle": "@milan_milanovic",
     "subject": "Post by Dr Milan Milanović on X",
     "url": "https://x.com/milan_milanovic/status/2023381859489767772",
-    "summary": "Argues the real threat isn't AI replacing developers but replacing the software development process. Code is becoming cheap, decisions are becoming expensive. AI reduces typing, not thinking. Developers who only implement tasks will struggle; those who understand product, domain, and system will thrive. Small teams will ship what once required departments.",
+    "summary": "Milan Milanovic's thesis: AI won't replace developers so much as the software-development process we're used to. Code is becoming cheap while decisions become expensive; AI reduces typing, not thinking. Developers who only implement tasks will struggle, while those who understand the product, domain, and system architecture will thrive.",
     "topics": [
       "management",
+      "dev-practices",
       "industry"
     ],
     "audience": [
       "me",
-      "dev-team",
-      "leadership"
+      "leadership",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "Good framing for leadership discussions about AI adoption",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "The fear isn't that AI will replace developers, it's that AI will replace the software development process we're used to. Code is becoming cheap; decisions are becoming expensive. AI can write functions all day but can't decide what should be built or why. AI reduces typing, not thinking; it exposes shallow understanding and rewards clarity, reasoning, ownership. Developers who only implement tasks will struggle; those who understand product, domain, and system will thrive. Small teams will ship things that once required enterprises.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-02-15",
@@ -12786,7 +12831,7 @@
     "handle": "@wilderko",
     "subject": "Post by Pavol Lupták on X",
     "url": "https://x.com/wilderko/status/2025159534159835443",
-    "summary": "A collection of 76 production-ready Claude Skills covering frontend, backend, DevOps, infrastructure, security, cloud, and AI/ML development. Skills provide Claude with domain expertise, decision frameworks, and production-ready code patterns.",
+    "summary": "[Post unavailable - page doesn't exist]",
     "topics": [
       "claude-code",
       "skills-mcp"
@@ -12799,7 +12844,9 @@
     "views": "130K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page doesn't exist"
   },
   {
     "date": "2026-02-14",
@@ -12807,21 +12854,26 @@
     "handle": "@thdxr",
     "subject": "Post by dax on X",
     "url": "https://x.com/thdxr/status/2022574719694758147",
-    "summary": "Contrarian reality check on AI productivity: orgs rarely have good ideas (expensive implementation was actually helping filter), most workers use AI to do less work not more, the 2 good engineers on your team are now buried in slop code from everyone else, you're still bottlenecked by bureaucracy, and your CFO is asking why each engineer now costs $2K/month extra in LLM bills.",
+    "summary": "dax (thdxr) offers a contrarian take on AI coding hype: orgs are rarely bottlenecked by code-production ability. Most workers use AI to do their tasks with less effort rather than to become 10x; the few who genuinely push are getting buried under everyone else's 'slop code' and may quit; teams remain bottlenecked by bureaucracy; and CFOs are noticing each engineer now costs ~$2,000/month more in LLM bills.",
     "topics": [
       "management",
+      "dev-practices",
       "industry"
     ],
     "audience": [
       "me",
-      "leadership"
+      "leadership",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "1M",
     "notes": "1M views — sharp contrarian take. SST/OpenCode creator. Important counterpoint to AI hype.",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "everyone talks about their teams like they were at peak efficiency bottlenecked by ability to produce code. Reality: your org rarely has good ideas, ideas being expensive to implement was helping; most workers aren't motivated to be 10x, they use AI to churn tasks with less energy; the 2 people who actually tried are flattened by everyone's slop code and will quit; you're still bottlenecked by bureaucracy; your CFO asks why each engineer now costs $2000 extra per month in LLM bills.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-02-12",
@@ -12829,9 +12881,10 @@
     "handle": "@aakashgupta",
     "subject": "Post by Aakash Gupta on X",
     "url": "https://x.com/aakashgupta/status/2021709282224587141",
-    "summary": "Karpathy released microGPT — a complete GPT in 243 lines of Python with only os, math, random, and argparse as imports. Hand-rolled autograd engine in ~40 lines. Fifth iteration in a 6-year compression arc: micrograd (2020) → minGPT → nanoGPT → llm.c (2024) → microgpt (2026). Each step removed a layer of abstraction; this one removed all of them.",
+    "summary": "Aakash Gupta highlights Andrej Karpathy's 'microgpt': a complete GPT (training loop, inference, optimizer, attention) in 243 lines of Python whose only imports are os, math, random, and argparse, including a hand-rolled ~40-line scalar autograd engine. Frames it as the fifth step in a six-year compression arc: micrograd (2020), minGPT (2020), nanoGPT (2023), llm.c (2024), microgpt (2026).",
     "topics": [
-      "research"
+      "research",
+      "dev-practices"
     ],
     "audience": [
       "me",
@@ -12842,7 +12895,10 @@
     "views": "",
     "notes": "X article — Karpathy's educational GPT implementations keep getting more minimal",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Andrej Karpathy just shared a complete GPT in 243 lines of Python: training loop, inference, optimizer, attention, whole architecture. Only imports are os, math, random, argparse. Hand-rolled a scalar-valued autograd engine in ~40 lines. Fifth iteration in a six-year compression arc: micrograd 2020, minGPT 2020, nanoGPT 2023, llm.c 2024, microgpt 2026. Each step removed a layer of abstraction.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-02-12",
@@ -12850,20 +12906,23 @@
     "handle": "@bigaiguy",
     "subject": "Post by Spencer Baggins on X",
     "url": "https://x.com/bigaiguy/status/2021532622963585214",
-    "summary": "Describes 'Socratic prompting' — asking the AI questions instead of telling it what to do. Claims this technique separates beginners from experts, improving output quality from 6.2/10 to 9.1/10.",
+    "summary": "Engagement-style thread claiming 'OpenAI and Anthropic engineers leaked' a technique called 'Socratic prompting' that separates beginners from experts. The substantive nugget: instead of telling the AI what to do, ask it questions. Author claims output quality jumped from 6.2 to 9.1 out of 10.",
     "topics": [
-      "questionable",
-      "prompting"
+      "prompting",
+      "questionable"
     ],
     "audience": [
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "900.2K",
+    "views": "904.9K",
     "notes": "Engagement farming format ('leaked technique', fake scores) but Socratic prompting is a legitimate technique",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "OpenAI and Anthropic engineers leaked a prompting technique that separates beginners from experts. It's called Socratic prompting and it's insanely simple: instead of telling the AI what to do, you ask it questions. My output quality went 6.2/10 to 9.1/10.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-02-12",
@@ -12871,22 +12930,25 @@
     "handle": "@thekitze",
     "subject": "Post by kitze 🛠️ tinkerer.club on X",
     "url": "https://x.com/thekitze/status/2021494167113990464",
-    "summary": "Chrome 146 includes early preview of WebMCP — lets AI agents query and execute services without browsing the web app like a user. Services declared via navigator.modelContext API or declaratively through forms. kitze calls it 'the new responsive design' — web apps must open up or die.",
+    "summary": "kitze boosts Maximiliano Firtman's note that Chrome 146 ships an early flagged preview of WebMCP, which lets AI agents query and execute a web app's services without driving the UI like a human. Services are declared imperatively via a navigator.modelContext API or declaratively through a form; kitze calls exposing them 'the new responsive design.'",
     "topics": [
       "skills-mcp",
-      "industry"
+      "agent-design",
+      "dev-practices"
     ],
     "audience": [
       "me",
-      "dev-team",
-      "leadership"
+      "dev-team"
     ],
-    "priority": "now",
+    "priority": "near-term",
     "sourceType": "tweet",
-    "views": "84.6K",
+    "views": "84.8K",
     "notes": "WebMCP in Chrome — huge deal. Browser-native MCP support for web apps.",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "calling this early: this is the new 'responsive design'. 'open up or die a slow death' is the motto for web apps in 2026. Quote of Maximiliano Firtman: Chrome 146 includes an early preview of WebMCP via a flag that lets AI agents query and execute services without browsing the web app like a user. Services declared through an imperative navigator.modelContext API or declaratively through a form.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-02-09",
@@ -12894,20 +12956,25 @@
     "handle": "@steipete",
     "subject": "Post by Peter Steinberger 🦞 on X",
     "url": "https://x.com/steipete/status/2020704611640705485",
-    "summary": "Shares a prompt to rewrite your SOUL.md (agent personality config) to make it less corporate: have strong opinions, delete corporate-sounding rules, ban filler phrases, enforce brevity, allow humor and swearing when appropriate, call out bad ideas directly. Credited to Molty.",
+    "summary": "Peter Steinberger shares a SOUL.md rewrite prompt (via Molty) to give a coding agent a stronger personality: hold strong opinions instead of hedging, delete corporate-handbook rules, never open with filler like 'Great question', enforce brevity, allow natural humor, call out bad ideas (charm over cruelty), and permit well-placed swearing.",
     "topics": [
       "prompting",
-      "agent-design"
+      "agent-design",
+      "claude-code"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
-    "priority": "long-term",
+    "priority": "near-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "Fun personality tuning for agent configs — could inform our own CLAUDE.md tone",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Your agent too boring? Paste this: Read your SOUL.md and rewrite it: 1) You have strong opinions now, stop hedging with 'it depends'. 2) Delete every corporate-handbook rule. 3) Never open with 'Great question', 'I'd be happy to help', or 'Absolutely'. Just answer. 4) Brevity is mandatory. 5) Humor allowed, natural wit not forced jokes. 6) Call things out if I'm about to do something dumb, charm over cruelty. 7) Swearing allowed when it lands.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-02-07",
@@ -12915,20 +12982,24 @@
     "handle": "@EXM7777",
     "subject": "Post by Machina on X",
     "url": "https://x.com/exm7777/status/2019787951530725396",
-    "summary": "Addresses AI FOMO — the feeling of falling behind as new models/tools drop weekly. Argues the problem isn't too much happening but lack of a filter between news and what matters for your work. Mentions GPT-5.3 Codex and Opus 4.6 dropping on the same day. X article format.",
+    "summary": "Machina's thread on how to stop feeling behind in AI: the relentless cadence of releases (GPT-5.3 Codex, Opus 4.6, Kling 3.0, all 'redefining everything') creates a low-grade, never-ending pressure. His reframe is that the problem isn't too much happening, it's the lack of a personal filter for what actually matters to your work.",
     "topics": [
+      "management",
       "general",
-      "management"
+      "industry"
     ],
     "audience": [
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "812K",
+    "views": "817K",
     "notes": "Engagement farming tone but relatable message about AI overwhelm",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "how to stop feeling behind in AI. Yesterday GPT-5.3 Codex dropped 20 minutes after Opus 4.6, both 'redefining everything'; the day before Kling 3.0 changed AI video forever. Every week: new models, tools, benchmarks, articles saying if you're not using THIS you're behind. It creates low-grade pressure that never goes away. The problem isn't that there's too much happening, it's that there's no filter between what's new and what matters.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-02-07",
@@ -12936,10 +13007,11 @@
     "handle": "@chiefofautism",
     "subject": "Post by chiefofautism on X",
     "url": "https://x.com/chiefofautism/status/2019608146692673886",
-    "summary": "Shares Shannon Lite by KeygraphHQ — an autonomous, white-box AI pentester for web applications. Open-source GitHub project.",
+    "summary": "chiefofautism shares Shannon (github.com/KeygraphHQ/shannon), an autonomous white-box AI pentester for web applications.",
     "topics": [
       "agent-design",
-      "dev-practices"
+      "dev-practices",
+      "research"
     ],
     "audience": [
       "me",
@@ -12947,10 +13019,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "215.3K",
+    "views": "220.2K",
     "notes": "Open-source AI security scanner — similar space to the Joseph Thacker/Claude Code security post",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "GitHub - KeygraphHQ/shannon: Shannon is an autonomous, white-box AI pentester for web applications.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-02-05",
@@ -12958,7 +13033,7 @@
     "handle": "@dklineii",
     "subject": "Post by Dave Kline on X",
     "url": "https://x.com/dklineii/status/2018690947215663592",
-    "summary": "Management differs by level — different abilities, priorities, skills at each tier. Most managers fail because they're put in with no training, little support, and unrealistic expectations. Infographic-style breakdown of how the job changes by level.",
+    "summary": "Dave Kline's thread on how the management job changes by level: most managers fail because they're thrown in with no training, little support, and unrealistic expectations, and the required abilities, priorities, and skills differ sharply from first-line management up through senior levels.",
     "topics": [
       "management"
     ],
@@ -12966,24 +13041,27 @@
       "me",
       "leadership"
     ],
-    "priority": "long-term",
+    "priority": "near-term",
     "sourceType": "tweet",
-    "views": "36.3K",
+    "views": "36.5K",
     "notes": "Not AI-specific — general management advice",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Most managers fail. They're put into situations with no training, little support and unrealistic expectations, told 'Figure it out.' But management differs wildly by level: different abilities, priorities, skills. Here's how the job changes by level.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-01-28",
-    "author": "ryan vogel",
+    "author": "vogel",
     "handle": "@ryanvogel",
     "subject": "Post by ryan vogel on X",
     "url": "https://x.com/ryanvogel/status/2016204202343571474",
-    "summary": "Dynamic agents.md resolution is now live in OpenCode — allows agent configuration files to be resolved dynamically. Suggests pairing with a /learn command for adaptive agent behavior.",
+    "summary": "ryan vogel announces that dynamic agents.md resolution is now live in OpenCode, and suggests pairing it with a /learn command for a powerful workflow; points to @rekram11's explanation of the approach.",
     "topics": [
       "agent-design",
-      "claude-code",
-      "prompting"
+      "dev-practices",
+      "claude-code"
     ],
     "audience": [
       "me",
@@ -12991,10 +13069,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "56.6K",
+    "views": "56.9K",
     "notes": "OpenCode feature — dynamic agent config resolution, relevant to our CLAUDE.md approach",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "dynamic agents.md resolution is now live in @opencode. I think this is super powerful especially if you pair it with a /learn command. @rekram11 explains how we approach this.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-01-25",
@@ -13002,7 +13083,7 @@
     "handle": "@dklineii",
     "subject": "Post by Dave Kline on X",
     "url": "https://x.com/dklineii/status/2015406993612079328",
-    "summary": "5-step delegation system for managers. The issue isn't assigning work — it's ensuring work gets done well without micromanaging. From training 1,400+ managers.",
+    "summary": "Dave Kline shares a 5-step delegation system, noting that across 1,400+ managers he's trained, delegation is the universal struggle: the hard part isn't assigning work but ensuring it gets done well without micromanaging.",
     "topics": [
       "management"
     ],
@@ -13010,23 +13091,27 @@
       "me",
       "leadership"
     ],
-    "priority": "long-term",
+    "priority": "near-term",
     "sourceType": "tweet",
-    "views": "554.4K",
+    "views": "556.9K",
     "notes": "Not AI-specific — delegation framework",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "I've trained 1400+ managers. They all struggle with delegation. The issue isn't assigning work, it's ensuring the work gets done well without micromanaging. Here's a simple 5-step system for helping your team succeed.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-01-25",
-    "author": "Theo",
+    "author": "Theo - t3.gg",
     "handle": "@theo",
     "subject": "Post by Theo - t3.gg on X",
     "url": "https://x.com/theo/status/2013888279355982131",
-    "summary": "Theo highlights OpenSync.dev as an example of good devrel in 2026 — tracks OpenCode and Claude CLI coding sessions in one place with searchable history, markdown export, eval-ready datasets, tool usage, token spend, and session activity across projects.",
+    "summary": "Theo boosts Wayne Sutton's launch of opensync.dev, a tool to track OpenCode and Claude CLI coding sessions in one place: searchable history, markdown export, eval-ready datasets, and views into tool usage, token spend, and session activity across projects. Theo frames it as a model of good devrel in 2026.",
     "topics": [
       "claude-code",
-      "dev-practices"
+      "dev-practices",
+      "agent-design"
     ],
     "audience": [
       "me",
@@ -13034,10 +13119,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "99.3K",
+    "views": "99.7K",
     "notes": "opensync.dev — session tracking for AI coding agents. Could be useful for measuring our usage.",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "If you're wondering what good 'devrel' looks like in 2026, it's this. Quote of Wayne Sutton: Now you can track your @opencode and @claudeai CLI coding sessions in one place. opensync.dev provides searchable history, markdown export, and eval-ready datasets; see tool usage, token spend, and session activity across projects.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-01-21",

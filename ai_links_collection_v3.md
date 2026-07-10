@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-07-09T21:55:30Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-10T15:11:59Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-09** — [Kodus](https://kodus.io/self-hosted-ai-code-review/) — *now • Dev Practices • v1 enriched*  
@@ -24,24 +24,24 @@
 *No concepts gained new evidence in the last 14 days. Run mechanical discovery or seed curated concepts to populate this section.*
 
 ### Revisit from last month
-- **2026-02-23** — [Dr Milan Milanović](https://x.com/milan_milanovic/status/2025835518207127968) — *near-term • Dev Practices • 15.7K views • v1 enriched*  
-  Milan Milanović makes the case for git worktree (shipped in Git 2.5, July 2015): check out multiple branches into separate directories that share one .git, avoiding stashing and duplicate clones. The standout modern use case is AI agents - give each of 3-5 parallel Claude Code/Cursor/Codex agents its own isolated worktree and branch so they don't overwrite each other.
-- **2026-02-25** — [Atlas Forge](https://x.com/atlasforgeai/status/2026380335249002843) — *near-term • Agent Design • 163.3K views • v1 enriched*  
-  Long-form piece on nine 'meta-learning loops' that let an agent improve across sessions, not just within one: failure-to-guardrail pipelines, tiered memory with trust scoring and decay, prediction-outcome calibration, nightly extraction, friction detection, expiring context holds, plus cognitive loops (epistemic tagging, creative-mode directives, recursive self-improvement). Start with a regressions list; the key is closing the loops so learning compounds.
+- **2026-01-25** — [Dave Kline](https://x.com/dklineii/status/2015406993612079328) — *near-term • Management • 556.9K views • v1 enriched*  
+  Dave Kline shares a 5-step delegation system, noting that across 1,400+ managers he's trained, delegation is the universal struggle: the hard part isn't assigning work but ensuring it gets done well without micromanaging.
+- **2026-01-25** — [Theo - t3.gg](https://x.com/theo/status/2013888279355982131) — *near-term • Claude Code • 99.7K views • v1 enriched*  
+  Theo boosts Wayne Sutton's launch of opensync.dev, a tool to track OpenCode and Claude CLI coding sessions in one place: searchable history, markdown export, eval-ready datasets, and views into tool usage, token spend, and session activity across projects. Theo frames it as a model of good devrel in 2026.
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 360 | 52.1% |
-| claude-code | 176 | 25.5% |
-| dev-practices | 214 | 31.0% |
-| skills-mcp | 124 | 17.9% |
-| prompting | 101 | 14.6% |
-| research | 134 | 19.4% |
+| agent-design | 362 | 52.4% |
+| claude-code | 179 | 25.9% |
+| dev-practices | 221 | 32.0% |
+| skills-mcp | 127 | 18.4% |
+| prompting | 98 | 14.2% |
+| research | 136 | 19.7% |
 | industry | 91 | 13.2% |
-| management | 108 | 15.6% |
-| questionable | 120 | 17.4% |
+| management | 107 | 15.5% |
+| questionable | 124 | 17.9% |
 | general | 88 | 12.7% |
 
 ---
@@ -102,7 +102,7 @@
 ---
 ## Posts by Topic
 
-### Agent Design (360)
+### Agent Design (362)
 
 - [Kodus](https://kodus.io/self-hosted-ai-code-review/) — 2026-07-09: Kodus (github.com/kodustech/kodus-ai) — open-source AGPLv3 self-hosted AI code review. The full PR-review pipeline (Kody agent) runs on your own infrastructure with bring-your-own-LLM: it posts line-anchored inline comments covering logic/security/performance (or 'deep mode' with parallel bug/security/performance specialists), keeps source code, LLM calls, and audit trails inside your VPC, and supports GitHub Enterprise Server / GitLab Self-Managed / Bitbucket DC and air-gapped deploys. Jeremy flagged it to evaluate for work code reviews.
 
@@ -736,25 +736,29 @@
 
 - [Dr Milan Milanović](https://x.com/milan_milanovic/status/2025835518207127968) — 2026-02-23: Milan Milanović makes the case for git worktree (shipped in Git 2.5, July 2015): check out multiple branches into separate directories that share one .git, avoiding stashing and duplicate clones. The standout modern use case is AI agents - give each of 3-5 parallel Claude Code/Cursor/Codex agents its own isolated worktree and branch so they don't overwrite each other.
 
-- [Jeremy Daly](https://x.com/jeremy_daly/status/2025677417398821351) — 2026-02-23: 100+ page writeup on building multi-tenant commercial AI agent systems, distilled from experience inside a large SaaS platform serving hundreds of enterprise customers. Covers isolation, auditability, retention, cost control, orchestration models, retrieval architectures, and evaluation harnesses under real-world conditions.
+- [Jeremy Daly](https://x.com/jeremy_daly/status/2025677417398821351) — 2026-02-23: Jeremy Daly wrote a 100+ page guide on building multi-tenant, commercial AI agent systems from ~18 months running them inside a large SaaS platform serving hundreds of enterprise customers. Covers hard requirements around tenant isolation, auditability, retention, and cost control, plus orchestration models, retrieval architectures, and evaluation harnesses.
 
-- [Akshay 🚀](https://x.com/akshay_pachaar/status/2025767534159835443) — 2026-02-21: Skill Graphs > SKILL .md Everyone's talking about skills for AI agents. But almost nobody is talking about how to structure them. Right now, the default approach is simple. You write one skill file that captures one capability.
+- [Akshay 🚀](https://x.com/akshay_pachaar/status/2025767534159835443) — 2026-02-21: [Post unavailable - page doesn't exist]
 
-- [tuna](https://x.com/tunahorse21/status/2024974148259512677) — 2026-02-21: Highlights 'Plankton' by Alex Fazio — a linting guard that LLM coding agents can't cheat. Addresses the common pain of AI agents ignoring linting rules and creating endless pre-commit error loops. Quote tweet of the article introducing the tool.
+- [tuna](https://x.com/tunahorse21/status/2024974148259512677) — 2026-02-21: tuna signal-boosts Alex Fazio introducing Plankton, a 'slop guard' for LLM coding agents. It aims to break the loop of copy-pasting pre-commit/linting errors back into the agent by enforcing lint rules the model can't cheat around.
 
-- [Adam](https://x.com/adamdotdev/status/2024525246993506346) — 2026-02-20: Honest reflection from the creator of OpenCode: nobody has truly figured out agentic programming yet. Misses mundane coding tasks that broke up the day, acknowledges the productivity boost but warns about the distance that creeps between you and the codebase. Getting apathetic and prompting for even small changes is a real risk.
+- [Charly Wargnier](https://x.com/datachaz/status/2024803152730423685) — 2026-02-20: Charly Wargnier argues writing crystal-clear instructions for machines is the new 10x dev skill, and the most important file in a repo is now CLAUDE.md rather than the code. Top devs use it as an AI onboarding doc to define agent behavior: force the AI to verify its own work, auto-fix CI bugs, and reject hacky fixes.
 
-- [J.B.](https://x.com/vibemarketer_/status/2019435524532904205) — 2026-02-19: Describes 'recursive self-improvement loops' for Claude: instead of prompting once and shipping, the model generates output, scores it against criteria, diagnoses weaknesses, rewrites, and re-evaluates in a loop until it passes. Pattern works for email sequences, ad creative, landing pages. Essentially self-evaluating agent loops for content quality.
+- [Adam](https://x.com/adamdotdev/status/2024525246993506346) — 2026-02-20: Adam (working on OpenCode since early 2025) offers an honest, ambivalent reflection on agentic programming: the models are an incredible tool and a real productivity boost, but the shift is confusing and emotionally mixed. He misses the flow of banging out mundane code by hand and notes the growing distance between the developer and the code.
 
-- [Viv](https://x.com/Vtrivedy10/status/2029576534159835443) — 2026-02-18: the deepagents library is basically our starting point for doing harness engineering and shipping agents the internal agents used at the company are built on it (background coding, GTM/SDR, research)
+- [Viv](https://x.com/Vtrivedy10/status/2029576534159835443) — 2026-02-18: [Post unavailable - page doesn't exist]
 
-- [Tech with Mak](https://x.com/technmak/status/2023990222027915746) — 2026-02-18: Quote-tweets Matthew Berman's OpenClaw masterclass video covering 21 daily use cases. Berman claims 2.54 billion tokens spent perfecting OpenClaw workflows, covers MD files, memory systems, CRM, and more.
+- [Tech with Mak](https://x.com/technmak/status/2023990222027915746) — 2026-02-18: Tech with Mak boosts Matthew Berman's 'OpenClaw masterclass' video, in which Berman claims to have spent 2.54 billion tokens perfecting the OpenClaw coding agent and walks through 21 daily use cases (markdown files, memory system, CRM, and more). Quoted post had ~1.3M views.
 
-- [Peter Steinberger](https://x.com/steipete/status/2020704611640705485) — 2026-02-09: Shares a prompt to rewrite your SOUL.md (agent personality config) to make it less corporate: have strong opinions, delete corporate-sounding rules, ban filler phrases, enforce brevity, allow humor and swearing when appropriate, call out bad ideas directly. Credited to Molty.
+- [kitze](https://x.com/thekitze/status/2021494167113990464) — 2026-02-12: kitze boosts Maximiliano Firtman's note that Chrome 146 ships an early flagged preview of WebMCP, which lets AI agents query and execute a web app's services without driving the UI like a human. Services are declared imperatively via a navigator.modelContext API or declaratively through a form; kitze calls exposing them 'the new responsive design.'
 
-- [chiefofautism](https://x.com/chiefofautism/status/2019608146692673886) — 2026-02-07: Shares Shannon Lite by KeygraphHQ — an autonomous, white-box AI pentester for web applications. Open-source GitHub project.
+- [Peter Steinberger](https://x.com/steipete/status/2020704611640705485) — 2026-02-09: Peter Steinberger shares a SOUL.md rewrite prompt (via Molty) to give a coding agent a stronger personality: hold strong opinions instead of hedging, delete corporate-handbook rules, never open with filler like 'Great question', enforce brevity, allow natural humor, call out bad ideas (charm over cruelty), and permit well-placed swearing.
 
-- [ryan vogel](https://x.com/ryanvogel/status/2016204202343571474) — 2026-01-28: Dynamic agents.md resolution is now live in OpenCode — allows agent configuration files to be resolved dynamically. Suggests pairing with a /learn command for adaptive agent behavior.
+- [chiefofautism](https://x.com/chiefofautism/status/2019608146692673886) — 2026-02-07: chiefofautism shares Shannon (github.com/KeygraphHQ/shannon), an autonomous white-box AI pentester for web applications.
+
+- [vogel](https://x.com/ryanvogel/status/2016204202343571474) — 2026-01-28: ryan vogel announces that dynamic agents.md resolution is now live in OpenCode, and suggests pairing it with a /learn command for a powerful workflow; points to @rekram11's explanation of the approach.
+
+- [Theo - t3.gg](https://x.com/theo/status/2013888279355982131) — 2026-01-25: Theo boosts Wayne Sutton's launch of opensync.dev, a tool to track OpenCode and Claude CLI coding sessions in one place: searchable history, markdown export, eval-ready datasets, and views into tool usage, token spend, and session activity across projects. Theo frames it as a model of good devrel in 2026.
 
 - [abhi](https://x.com/abhigyawangoo/status/2013823175855923640) — 2026-01-21: Deep dive on why AI agents fail and how to fix them with feedback loops. Covers defining agent goals with business metrics, building continual learning systems, and embracing self-improvement. Author owned agent infra used by millions. Key insight: RAG alone isn't enough — agents need domain-specific adaptation and feedback integration.
 
@@ -824,7 +828,7 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Claude Code (176)
+### Claude Code (179)
 
 - [Anatoli Kopadze](https://x.com/anatolikopadze/status/2068328135611822149) — 2026-07-06: Anatoli Kopadze's widely-viewed piece 'Loops explained: Claude, GPT, Mira and what actually works' argues most people use AI the slow way (type, wait, fix, repeat by hand) and that the faster approach top AI engineers care about is building loops. Covers what loops are, how they work under the hood, when they're worth it vs a trap, and how to build a basic one in Claude or ChatGPT. Quote-tweets Peter Steinberger: you shouldn't be prompting coding agents, you should be designing loops that prompt your agents. (Includes some self-promotion for his X/Telegram.)
 
@@ -1126,17 +1130,23 @@
 
 - [Dr Milan Milanović](https://x.com/milan_milanovic/status/2025835518207127968) — 2026-02-23: Milan Milanović makes the case for git worktree (shipped in Git 2.5, July 2015): check out multiple branches into separate directories that share one .git, avoiding stashing and duplicate clones. The standout modern use case is AI agents - give each of 3-5 parallel Claude Code/Cursor/Codex agents its own isolated worktree and branch so they don't overwrite each other.
 
-- [Charly Wargnier](https://x.com/datachaz/status/2024803152730423685) — 2026-02-20: Argues CLAUDE.md is now the most important file in your repo — an onboarding doc for AI agents. Like .gitconfig on steroids: forces AI to verify its own work, auto-fixes CI bugs, demands elegant solutions over hacky fixes. Writing clear machine instructions is the new 10x dev skill.
+- [Charly Wargnier](https://x.com/datachaz/status/2024803152730423685) — 2026-02-20: Charly Wargnier argues writing crystal-clear instructions for machines is the new 10x dev skill, and the most important file in a repo is now CLAUDE.md rather than the code. Top devs use it as an AI onboarding doc to define agent behavior: force the AI to verify its own work, auto-fix CI bugs, and reject hacky fixes.
 
-- [Aman](https://x.com/amank1412/status/2023754885473394918) — 2026-02-19: Garry Tan (YC CEO) shared his CLAUDE.md prompt for Claude Code that helps him ship 4,000+ line features with full tests in about an hour. Key pattern: Claude does a structured review (architecture → code quality → tests → performance) before writing code, presents tradeoffs with opinionated recommendations, and pauses for feedback. Essentially using Claude as a senior engineer reviewer.
+- [Aman](https://x.com/amank1412/status/2023754885473394918) — 2026-02-19: Aman shares Garry Tan's (CEO of Y Combinator) CLAUDE.md prompt for Claude Code, which he uses to ship 4,000+ line features with full tests in about an hour. The prompt makes Claude act like a senior engineer: judge whether a plan is over/under-engineered before coding, do a structured review (architecture -> code quality -> tests -> performance), present tradeoffs with opinionated recommendations, and pause for feedback before implementing.
 
-- [Matt Dancho](https://x.com/mdancho84/status/2023738764841894352) — 2026-02-18: Claims becoming a 10x engineer is now just a SKILLS.md file. Brief post (1M views) pointing to skills-based AI workflow configuration as the key leverage point for developer productivity.
+- [J.B.](https://x.com/vibemarketer_/status/2019435524532904205) — 2026-02-19: J.B. (VibeMarketer) describes a 'recursive self-improvement loop' skill for Claude: instead of prompting once and shipping, the skill generates output, scores it against explicit criteria, diagnoses weaknesses, rewrites, and re-scores until it clears the bar. Cites @maxwellfinn's image-ad skill that grades concepts on 10 criteria (thumb-stop power, curiosity gap, emotional trigger, persona recognition) and won't stop below 9/10.
 
-- [Pavol Lupták](https://x.com/wilderko/status/2025159534159835443) — 2026-02-15: A collection of 76 production-ready Claude Skills covering frontend, backend, DevOps, infrastructure, security, cloud, and AI/ML development. Skills provide Claude with domain expertise, decision frameworks, and production-ready code patterns.
+- [Tech with Mak](https://x.com/technmak/status/2023990222027915746) — 2026-02-18: Tech with Mak boosts Matthew Berman's 'OpenClaw masterclass' video, in which Berman claims to have spent 2.54 billion tokens perfecting the OpenClaw coding agent and walks through 21 daily use cases (markdown files, memory system, CRM, and more). Quoted post had ~1.3M views.
 
-- [ryan vogel](https://x.com/ryanvogel/status/2016204202343571474) — 2026-01-28: Dynamic agents.md resolution is now live in OpenCode — allows agent configuration files to be resolved dynamically. Suggests pairing with a /learn command for adaptive agent behavior.
+- [Matt Dancho (Business Science)](https://x.com/mdancho84/status/2023738764841894352) — 2026-02-18: Matt Dancho argues that becoming a '10X engineer' now comes down to a well-crafted SKILLS.md file, teasing a thread/resource on how to build one. High-engagement post (~1.1M views) with a lead-gen hook.
 
-- [Theo](https://x.com/theo/status/2013888279355982131) — 2026-01-25: Theo highlights OpenSync.dev as an example of good devrel in 2026 — tracks OpenCode and Claude CLI coding sessions in one place with searchable history, markdown export, eval-ready datasets, tool usage, token spend, and session activity across projects.
+- [Pavol Lupták](https://x.com/wilderko/status/2025159534159835443) — 2026-02-15: [Post unavailable - page doesn't exist]
+
+- [Peter Steinberger](https://x.com/steipete/status/2020704611640705485) — 2026-02-09: Peter Steinberger shares a SOUL.md rewrite prompt (via Molty) to give a coding agent a stronger personality: hold strong opinions instead of hedging, delete corporate-handbook rules, never open with filler like 'Great question', enforce brevity, allow natural humor, call out bad ideas (charm over cruelty), and permit well-placed swearing.
+
+- [vogel](https://x.com/ryanvogel/status/2016204202343571474) — 2026-01-28: ryan vogel announces that dynamic agents.md resolution is now live in OpenCode, and suggests pairing it with a /learn command for a powerful workflow; points to @rekram11's explanation of the approach.
+
+- [Theo - t3.gg](https://x.com/theo/status/2013888279355982131) — 2026-01-25: Theo boosts Wayne Sutton's launch of opensync.dev, a tool to track OpenCode and Claude CLI coding sessions in one place: searchable history, markdown export, eval-ready datasets, and views into tool usage, token spend, and session activity across projects. Theo frames it as a model of good devrel in 2026.
 
 - [Matt Simpson](https://x.com/msmps_/status/2013376201977463038) — 2026-01-20: Released opentui-skill — gives AI agents TUI (terminal UI) superpowers: decision trees, progressive disclosure, gotcha warnings that save hours. Inspired by Dillon Mulroy's cloudflare-skill.
 
@@ -1178,7 +1188,7 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (214)
+### Dev Practices (221)
 
 - [Kodus](https://kodus.io/self-hosted-ai-code-review/) — 2026-07-09: Kodus (github.com/kodustech/kodus-ai) — open-source AGPLv3 self-hosted AI code review. The full PR-review pipeline (Kody agent) runs on your own infrastructure with bring-your-own-LLM: it posts line-anchored inline comments covering logic/security/performance (or 'deep mode' with parallel bug/security/performance specialists), keeps source code, LLM calls, and audit trails inside your VPC, and supports GitHub Enterprise Server / GitLab Self-Managed / Bitbucket DC and air-gapped deploys. Jeremy flagged it to evaluate for work code reviews.
 
@@ -1534,17 +1544,31 @@
 
 - [Dr Milan Milanović](https://x.com/milan_milanovic/status/2025835518207127968) — 2026-02-23: Milan Milanović makes the case for git worktree (shipped in Git 2.5, July 2015): check out multiple branches into separate directories that share one .git, avoiding stashing and duplicate clones. The standout modern use case is AI agents - give each of 3-5 parallel Claude Code/Cursor/Codex agents its own isolated worktree and branch so they don't overwrite each other.
 
-- [Jeremy Daly](https://x.com/jeremy_daly/status/2025677417398821351) — 2026-02-23: 100+ page writeup on building multi-tenant commercial AI agent systems, distilled from experience inside a large SaaS platform serving hundreds of enterprise customers. Covers isolation, auditability, retention, cost control, orchestration models, retrieval architectures, and evaluation harnesses under real-world conditions.
+- [Jeremy Daly](https://x.com/jeremy_daly/status/2025677417398821351) — 2026-02-23: Jeremy Daly wrote a 100+ page guide on building multi-tenant, commercial AI agent systems from ~18 months running them inside a large SaaS platform serving hundreds of enterprise customers. Covers hard requirements around tenant isolation, auditability, retention, and cost control, plus orchestration models, retrieval architectures, and evaluation harnesses.
 
-- [tuna](https://x.com/tunahorse21/status/2024974148259512677) — 2026-02-21: Highlights 'Plankton' by Alex Fazio — a linting guard that LLM coding agents can't cheat. Addresses the common pain of AI agents ignoring linting rules and creating endless pre-commit error loops. Quote tweet of the article introducing the tool.
+- [tuna](https://x.com/tunahorse21/status/2024974148259512677) — 2026-02-21: tuna signal-boosts Alex Fazio introducing Plankton, a 'slop guard' for LLM coding agents. It aims to break the loop of copy-pasting pre-commit/linting errors back into the agent by enforcing lint rules the model can't cheat around.
 
-- [Charly Wargnier](https://x.com/datachaz/status/2024803152730423685) — 2026-02-20: Argues CLAUDE.md is now the most important file in your repo — an onboarding doc for AI agents. Like .gitconfig on steroids: forces AI to verify its own work, auto-fixes CI bugs, demands elegant solutions over hacky fixes. Writing clear machine instructions is the new 10x dev skill.
+- [Charly Wargnier](https://x.com/datachaz/status/2024803152730423685) — 2026-02-20: Charly Wargnier argues writing crystal-clear instructions for machines is the new 10x dev skill, and the most important file in a repo is now CLAUDE.md rather than the code. Top devs use it as an AI onboarding doc to define agent behavior: force the AI to verify its own work, auto-fix CI bugs, and reject hacky fixes.
 
-- [Aman](https://x.com/amank1412/status/2023754885473394918) — 2026-02-19: Garry Tan (YC CEO) shared his CLAUDE.md prompt for Claude Code that helps him ship 4,000+ line features with full tests in about an hour. Key pattern: Claude does a structured review (architecture → code quality → tests → performance) before writing code, presents tradeoffs with opinionated recommendations, and pauses for feedback. Essentially using Claude as a senior engineer reviewer.
+- [Adam](https://x.com/adamdotdev/status/2024525246993506346) — 2026-02-20: Adam (working on OpenCode since early 2025) offers an honest, ambivalent reflection on agentic programming: the models are an incredible tool and a real productivity boost, but the shift is confusing and emotionally mixed. He misses the flow of banging out mundane code by hand and notes the growing distance between the developer and the code.
 
-- [chiefofautism](https://x.com/chiefofautism/status/2019608146692673886) — 2026-02-07: Shares Shannon Lite by KeygraphHQ — an autonomous, white-box AI pentester for web applications. Open-source GitHub project.
+- [Aman](https://x.com/amank1412/status/2023754885473394918) — 2026-02-19: Aman shares Garry Tan's (CEO of Y Combinator) CLAUDE.md prompt for Claude Code, which he uses to ship 4,000+ line features with full tests in about an hour. The prompt makes Claude act like a senior engineer: judge whether a plan is over/under-engineered before coding, do a structured review (architecture -> code quality -> tests -> performance), present tradeoffs with opinionated recommendations, and pause for feedback before implementing.
 
-- [Theo](https://x.com/theo/status/2013888279355982131) — 2026-01-25: Theo highlights OpenSync.dev as an example of good devrel in 2026 — tracks OpenCode and Claude CLI coding sessions in one place with searchable history, markdown export, eval-ready datasets, tool usage, token spend, and session activity across projects.
+- [Matt Dancho (Business Science)](https://x.com/mdancho84/status/2023738764841894352) — 2026-02-18: Matt Dancho argues that becoming a '10X engineer' now comes down to a well-crafted SKILLS.md file, teasing a thread/resource on how to build one. High-engagement post (~1.1M views) with a lead-gen hook.
+
+- [Dr Milan Milanovic](https://x.com/milan_milanovic/status/2023381859489767772) — 2026-02-17: Milan Milanovic's thesis: AI won't replace developers so much as the software-development process we're used to. Code is becoming cheap while decisions become expensive; AI reduces typing, not thinking. Developers who only implement tasks will struggle, while those who understand the product, domain, and system architecture will thrive.
+
+- [dax](https://x.com/thdxr/status/2022574719694758147) — 2026-02-14: dax (thdxr) offers a contrarian take on AI coding hype: orgs are rarely bottlenecked by code-production ability. Most workers use AI to do their tasks with less effort rather than to become 10x; the few who genuinely push are getting buried under everyone else's 'slop code' and may quit; teams remain bottlenecked by bureaucracy; and CFOs are noticing each engineer now costs ~$2,000/month more in LLM bills.
+
+- [Aakash Gupta](https://x.com/aakashgupta/status/2021709282224587141) — 2026-02-12: Aakash Gupta highlights Andrej Karpathy's 'microgpt': a complete GPT (training loop, inference, optimizer, attention) in 243 lines of Python whose only imports are os, math, random, and argparse, including a hand-rolled ~40-line scalar autograd engine. Frames it as the fifth step in a six-year compression arc: micrograd (2020), minGPT (2020), nanoGPT (2023), llm.c (2024), microgpt (2026).
+
+- [kitze](https://x.com/thekitze/status/2021494167113990464) — 2026-02-12: kitze boosts Maximiliano Firtman's note that Chrome 146 ships an early flagged preview of WebMCP, which lets AI agents query and execute a web app's services without driving the UI like a human. Services are declared imperatively via a navigator.modelContext API or declaratively through a form; kitze calls exposing them 'the new responsive design.'
+
+- [chiefofautism](https://x.com/chiefofautism/status/2019608146692673886) — 2026-02-07: chiefofautism shares Shannon (github.com/KeygraphHQ/shannon), an autonomous white-box AI pentester for web applications.
+
+- [vogel](https://x.com/ryanvogel/status/2016204202343571474) — 2026-01-28: ryan vogel announces that dynamic agents.md resolution is now live in OpenCode, and suggests pairing it with a /learn command for a powerful workflow; points to @rekram11's explanation of the approach.
+
+- [Theo - t3.gg](https://x.com/theo/status/2013888279355982131) — 2026-01-25: Theo boosts Wayne Sutton's launch of opensync.dev, a tool to track OpenCode and Claude CLI coding sessions in one place: searchable history, markdown export, eval-ready datasets, and views into tool usage, token spend, and session activity across projects. Theo frames it as a model of good devrel in 2026.
 
 - [am.will](https://x.com/llmjunky/status/2013314055755194468) — 2026-01-20: Recommends Dillon Mulroy's planning approach for AI agents — concise plan-writing format. Notes similarity to their own process but prefers Mulroy's testing language. Quote-tweets Mulroy's post about product owners being right all along.
 
@@ -1608,7 +1632,7 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (124)
+### Skills & MCP (127)
 
 - [How To Prompt](https://x.com/howtoprompt__/status/2074122800961614184) — 2026-07-07: How To Prompt (hype framing: "China has killed the vector database industry") flags Tencent's newly open-sourced TencentDB Agent Memory — local long-term memory for AI agents that runs 100% on plain SQLite with no external vector DB or cloud APIs. Claims 61% fewer tokens and PersonaMem accuracy 48%->76%. Uses a layered 'semantic pyramid' (L0 conversation -> L1 atom -> L2 scenario -> L3 persona) stored as inspectable markdown + Mermaid graphs instead of opaque vector compression, with drill-back to raw logs by node_id. ~5.1k GitHub stars.
 
@@ -1834,11 +1858,17 @@
 
 - [Aakash Gupta](https://x.com/aakashgupta/status/2026367615602667784) — 2026-02-25: Aakash Gupta, building on a Karpathy quote, argues agents are the new distribution channel for software: they call CLIs and MCP servers and read docs programmatically rather than browsing marketing sites. MCP hit 97M monthly SDK downloads and 10k+ servers in a year and was donated to the Linux Foundation. Winners of the next 24 months build agent-accessible surface area (CLIs, MCP endpoints, machine-readable docs) now.
 
-- [Akshay 🚀](https://x.com/akshay_pachaar/status/2025767534159835443) — 2026-02-21: Skill Graphs > SKILL .md Everyone's talking about skills for AI agents. But almost nobody is talking about how to structure them. Right now, the default approach is simple. You write one skill file that captures one capability.
+- [Akshay 🚀](https://x.com/akshay_pachaar/status/2025767534159835443) — 2026-02-21: [Post unavailable - page doesn't exist]
 
-- [Pavol Lupták](https://x.com/wilderko/status/2025159534159835443) — 2026-02-15: A collection of 76 production-ready Claude Skills covering frontend, backend, DevOps, infrastructure, security, cloud, and AI/ML development. Skills provide Claude with domain expertise, decision frameworks, and production-ready code patterns.
+- [tuna](https://x.com/tunahorse21/status/2024974148259512677) — 2026-02-21: tuna signal-boosts Alex Fazio introducing Plankton, a 'slop guard' for LLM coding agents. It aims to break the loop of copy-pasting pre-commit/linting errors back into the agent by enforcing lint rules the model can't cheat around.
 
-- [kitze](https://x.com/thekitze/status/2021494167113990464) — 2026-02-12: Chrome 146 includes early preview of WebMCP — lets AI agents query and execute services without browsing the web app like a user. Services declared via navigator.modelContext API or declaratively through forms. kitze calls it 'the new responsive design' — web apps must open up or die.
+- [J.B.](https://x.com/vibemarketer_/status/2019435524532904205) — 2026-02-19: J.B. (VibeMarketer) describes a 'recursive self-improvement loop' skill for Claude: instead of prompting once and shipping, the skill generates output, scores it against explicit criteria, diagnoses weaknesses, rewrites, and re-scores until it clears the bar. Cites @maxwellfinn's image-ad skill that grades concepts on 10 criteria (thumb-stop power, curiosity gap, emotional trigger, persona recognition) and won't stop below 9/10.
+
+- [Matt Dancho (Business Science)](https://x.com/mdancho84/status/2023738764841894352) — 2026-02-18: Matt Dancho argues that becoming a '10X engineer' now comes down to a well-crafted SKILLS.md file, teasing a thread/resource on how to build one. High-engagement post (~1.1M views) with a lead-gen hook.
+
+- [Pavol Lupták](https://x.com/wilderko/status/2025159534159835443) — 2026-02-15: [Post unavailable - page doesn't exist]
+
+- [kitze](https://x.com/thekitze/status/2021494167113990464) — 2026-02-12: kitze boosts Maximiliano Firtman's note that Chrome 146 ships an early flagged preview of WebMCP, which lets AI agents query and execute a web app's services without driving the UI like a human. Services are declared imperatively via a navigator.modelContext API or declaratively through a form; kitze calls exposing them 'the new responsive design.'
 
 - [Matt Simpson](https://x.com/msmps_/status/2013376201977463038) — 2026-01-20: Released opentui-skill — gives AI agents TUI (terminal UI) superpowers: decision trees, progressive disclosure, gotcha warnings that save hours. Inspired by Dillon Mulroy's cloudflare-skill.
 
@@ -1858,7 +1888,7 @@
 
 - [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Anthropic released a frontend-design plugin for Claude Code — demo shows Claude creating a music player app. Install via /plugin marketplace add anthropics/claude-code and /plugin install frontend-design@claude-code-plugins.
 
-### Prompting (101)
+### Prompting (98)
 
 - [kaize](https://x.com/0x_kaize/status/2073743517155774641) — 2026-07-06: kaize shares a 'Loop engineering' reading list, arguing 2026 agents are less about smarter prompts and more about longer runs — the real questions are whether an agent can recover from a failed step, control spend, and know when to stop. Curated links: Addy Osmani (addyosmani.com/blog/loop-engineering), Firecrawl (firecrawl.dev/blog/loop-engineering), Oracle 'What is the AI agent loop', OpenAI 'Harness engineering', and Martin Fowler 'Harness engineering for coding agent users'.
 
@@ -2020,21 +2050,15 @@
 
 - [Atlas Forge](https://x.com/atlasforgeai/status/2026380335249002843) — 2026-02-25: Long-form piece on nine 'meta-learning loops' that let an agent improve across sessions, not just within one: failure-to-guardrail pipelines, tiered memory with trust scoring and decay, prediction-outcome calibration, nightly extraction, friction detection, expiring context holds, plus cognitive loops (epistemic tagging, creative-mode directives, recursive self-improvement). Start with a regressions list; the key is closing the loops so learning compounds.
 
-- [Charly Wargnier](https://x.com/datachaz/status/2024803152730423685) — 2026-02-20: Argues CLAUDE.md is now the most important file in your repo — an onboarding doc for AI agents. Like .gitconfig on steroids: forces AI to verify its own work, auto-fixes CI bugs, demands elegant solutions over hacky fixes. Writing clear machine instructions is the new 10x dev skill.
+- [Charly Wargnier](https://x.com/datachaz/status/2024803152730423685) — 2026-02-20: Charly Wargnier argues writing crystal-clear instructions for machines is the new 10x dev skill, and the most important file in a repo is now CLAUDE.md rather than the code. Top devs use it as an AI onboarding doc to define agent behavior: force the AI to verify its own work, auto-fix CI bugs, and reject hacky fixes.
 
-- [Aman](https://x.com/amank1412/status/2023754885473394918) — 2026-02-19: Garry Tan (YC CEO) shared his CLAUDE.md prompt for Claude Code that helps him ship 4,000+ line features with full tests in about an hour. Key pattern: Claude does a structured review (architecture → code quality → tests → performance) before writing code, presents tradeoffs with opinionated recommendations, and pauses for feedback. Essentially using Claude as a senior engineer reviewer.
+- [Aman](https://x.com/amank1412/status/2023754885473394918) — 2026-02-19: Aman shares Garry Tan's (CEO of Y Combinator) CLAUDE.md prompt for Claude Code, which he uses to ship 4,000+ line features with full tests in about an hour. The prompt makes Claude act like a senior engineer: judge whether a plan is over/under-engineered before coding, do a structured review (architecture -> code quality -> tests -> performance), present tradeoffs with opinionated recommendations, and pause for feedback before implementing.
 
-- [J.B.](https://x.com/vibemarketer_/status/2019435524532904205) — 2026-02-19: Describes 'recursive self-improvement loops' for Claude: instead of prompting once and shipping, the model generates output, scores it against criteria, diagnoses weaknesses, rewrites, and re-evaluates in a loop until it passes. Pattern works for email sequences, ad creative, landing pages. Essentially self-evaluating agent loops for content quality.
+- [J.B.](https://x.com/vibemarketer_/status/2019435524532904205) — 2026-02-19: J.B. (VibeMarketer) describes a 'recursive self-improvement loop' skill for Claude: instead of prompting once and shipping, the skill generates output, scores it against explicit criteria, diagnoses weaknesses, rewrites, and re-scores until it clears the bar. Cites @maxwellfinn's image-ad skill that grades concepts on 10 criteria (thumb-stop power, curiosity gap, emotional trigger, persona recognition) and won't stop below 9/10.
 
-- [Tech with Mak](https://x.com/technmak/status/2023990222027915746) — 2026-02-18: Quote-tweets Matthew Berman's OpenClaw masterclass video covering 21 daily use cases. Berman claims 2.54 billion tokens spent perfecting OpenClaw workflows, covers MD files, memory systems, CRM, and more.
+- [Spencer Baggins](https://x.com/bigaiguy/status/2021532622963585214) — 2026-02-12: Engagement-style thread claiming 'OpenAI and Anthropic engineers leaked' a technique called 'Socratic prompting' that separates beginners from experts. The substantive nugget: instead of telling the AI what to do, ask it questions. Author claims output quality jumped from 6.2 to 9.1 out of 10.
 
-- [Matt Dancho](https://x.com/mdancho84/status/2023738764841894352) — 2026-02-18: Claims becoming a 10x engineer is now just a SKILLS.md file. Brief post (1M views) pointing to skills-based AI workflow configuration as the key leverage point for developer productivity.
-
-- [Spencer Baggins](https://x.com/bigaiguy/status/2021532622963585214) — 2026-02-12: Describes 'Socratic prompting' — asking the AI questions instead of telling it what to do. Claims this technique separates beginners from experts, improving output quality from 6.2/10 to 9.1/10.
-
-- [Peter Steinberger](https://x.com/steipete/status/2020704611640705485) — 2026-02-09: Shares a prompt to rewrite your SOUL.md (agent personality config) to make it less corporate: have strong opinions, delete corporate-sounding rules, ban filler phrases, enforce brevity, allow humor and swearing when appropriate, call out bad ideas directly. Credited to Molty.
-
-- [ryan vogel](https://x.com/ryanvogel/status/2016204202343571474) — 2026-01-28: Dynamic agents.md resolution is now live in OpenCode — allows agent configuration files to be resolved dynamically. Suggests pairing with a /learn command for adaptive agent behavior.
+- [Peter Steinberger](https://x.com/steipete/status/2020704611640705485) — 2026-02-09: Peter Steinberger shares a SOUL.md rewrite prompt (via Molty) to give a coding agent a stronger personality: hold strong opinions instead of hedging, delete corporate-handbook rules, never open with filler like 'Great question', enforce brevity, allow natural humor, call out bad ideas (charm over cruelty), and permit well-placed swearing.
 
 - [am.will](https://x.com/llmjunky/status/2013314055755194468) — 2026-01-20: Recommends Dillon Mulroy's planning approach for AI agents — concise plan-writing format. Notes similarity to their own process but prefers Mulroy's testing language. Quote-tweets Mulroy's post about product owners being right all along.
 
@@ -2062,7 +2086,7 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
 
-### Research (134)
+### Research (136)
 
 - [0xSero](https://x.com/0xsero/status/2073651251594854573) — 2026-07-06: 0xSero (quote-tweeting Rohan Paul on a Meta paper showing quantized reasoning models often fail because compression makes them doubt a correct answer instead of finishing) reports experimenting with penalizing 'self-doubt' words during generation — claiming ~30% fewer output tokens — plus improving tok/s via CPU offloading.
 
@@ -2300,7 +2324,11 @@
 
 - [Sukh Sroay](https://x.com/sukh_saroy/status/2026624254800965848) — 2026-02-27: [Post unavailable — account suspended]
 
-- [Aakash Gupta](https://x.com/aakashgupta/status/2021709282224587141) — 2026-02-12: Karpathy released microGPT — a complete GPT in 243 lines of Python with only os, math, random, and argparse as imports. Hand-rolled autograd engine in ~40 lines. Fifth iteration in a 6-year compression arc: micrograd (2020) → minGPT → nanoGPT → llm.c (2024) → microgpt (2026). Each step removed a layer of abstraction; this one removed all of them.
+- [Ejaaz](https://x.com/cryptopunk7213/status/2025761121328582814) — 2026-02-23: Ejaaz's weekly AI recap: Google shipped Gemini 3.1 (underwhelming to critics) but followed with Lyria 3 song generation and Pomelli one-shot product photoshoots; Microsoft demoed data storage on glass (~10,000-year retention, cheaper than silica); and Taalus fused an AI model directly into silicon at ~17,000 tokens/sec (~17x faster than typical inference).
+
+- [Aakash Gupta](https://x.com/aakashgupta/status/2021709282224587141) — 2026-02-12: Aakash Gupta highlights Andrej Karpathy's 'microgpt': a complete GPT (training loop, inference, optimizer, attention) in 243 lines of Python whose only imports are os, math, random, and argparse, including a hand-rolled ~40-line scalar autograd engine. Frames it as the fifth step in a six-year compression arc: micrograd (2020), minGPT (2020), nanoGPT (2023), llm.c (2024), microgpt (2026).
+
+- [chiefofautism](https://x.com/chiefofautism/status/2019608146692673886) — 2026-02-07: chiefofautism shares Shannon (github.com/KeygraphHQ/shannon), an autonomous white-box AI pentester for web applications.
 
 - [Sumanth](https://x.com/sumanth_077/status/2013232922296561826) — 2026-01-20: PageIndex — open-source RAG framework that replaces vector DBs and chunking with hierarchical tree indexing and reasoning-based retrieval. Builds a table-of-contents-like tree structure, then uses LLM reasoning to navigate it like a human expert. Achieves 98.6% accuracy on FinanceBench vs 79.1% for top vector RAG. Works on financial reports, legal filings, technical manuals.
 
@@ -2498,13 +2526,13 @@
 
 - [Aakash Gupta](https://x.com/aakashgupta/status/2026367615602667784) — 2026-02-25: Aakash Gupta, building on a Karpathy quote, argues agents are the new distribution channel for software: they call CLIs and MCP servers and read docs programmatically rather than browsing marketing sites. MCP hit 97M monthly SDK downloads and 10k+ servers in a year and was donated to the Linux Foundation. Winners of the next 24 months build agent-accessible surface area (CLIs, MCP endpoints, machine-readable docs) now.
 
-- [Ejaaz](https://x.com/cryptopunk7213/status/2025761121328582814) — 2026-02-23: Weekly AI recap: Gemini 3.1 disappointed, Google dropped Lyria 3 (AI song gen) and Pomelli (1-shot product photoshoots), Microsoft pioneered data storage on glass (10K year lifespan), Taalus fused AI into silicon at 17K tokens/sec, Apple releasing 3 AI devices (glasses, camera airpods, pendant), Anthropic's security tool wiped $10B off cybersecurity stocks within an hour of launch.
+- [Ejaaz](https://x.com/cryptopunk7213/status/2025761121328582814) — 2026-02-23: Ejaaz's weekly AI recap: Google shipped Gemini 3.1 (underwhelming to critics) but followed with Lyria 3 song generation and Pomelli one-shot product photoshoots; Microsoft demoed data storage on glass (~10,000-year retention, cheaper than silica); and Taalus fused an AI model directly into silicon at ~17,000 tokens/sec (~17x faster than typical inference).
 
-- [Dr Milan Milanović](https://x.com/milan_milanovic/status/2023381859489767772) — 2026-02-17: Argues the real threat isn't AI replacing developers but replacing the software development process. Code is becoming cheap, decisions are becoming expensive. AI reduces typing, not thinking. Developers who only implement tasks will struggle; those who understand product, domain, and system will thrive. Small teams will ship what once required departments.
+- [Dr Milan Milanovic](https://x.com/milan_milanovic/status/2023381859489767772) — 2026-02-17: Milan Milanovic's thesis: AI won't replace developers so much as the software-development process we're used to. Code is becoming cheap while decisions become expensive; AI reduces typing, not thinking. Developers who only implement tasks will struggle, while those who understand the product, domain, and system architecture will thrive.
 
-- [dax](https://x.com/thdxr/status/2022574719694758147) — 2026-02-14: Contrarian reality check on AI productivity: orgs rarely have good ideas (expensive implementation was actually helping filter), most workers use AI to do less work not more, the 2 good engineers on your team are now buried in slop code from everyone else, you're still bottlenecked by bureaucracy, and your CFO is asking why each engineer now costs $2K/month extra in LLM bills.
+- [dax](https://x.com/thdxr/status/2022574719694758147) — 2026-02-14: dax (thdxr) offers a contrarian take on AI coding hype: orgs are rarely bottlenecked by code-production ability. Most workers use AI to do their tasks with less effort rather than to become 10x; the few who genuinely push are getting buried under everyone else's 'slop code' and may quit; teams remain bottlenecked by bureaucracy; and CFOs are noticing each engineer now costs ~$2,000/month more in LLM bills.
 
-- [kitze](https://x.com/thekitze/status/2021494167113990464) — 2026-02-12: Chrome 146 includes early preview of WebMCP — lets AI agents query and execute services without browsing the web app like a user. Services declared via navigator.modelContext API or declaratively through forms. kitze calls it 'the new responsive design' — web apps must open up or die.
+- [Machina](https://x.com/exm7777/status/2019787951530725396) — 2026-02-07: Machina's thread on how to stop feeling behind in AI: the relentless cadence of releases (GPT-5.3 Codex, Opus 4.6, Kling 3.0, all 'redefining everything') creates a low-grade, never-ending pressure. His reframe is that the problem isn't too much happening, it's the lack of a personal filter for what actually matters to your work.
 
 - [SightBringer](https://x.com/_the_prophet__/status/2004796159299084424) — 2025-12-27: Long-form essay arguing we're at a phase transition: leverage has shifted from writing code to orchestrating intelligence. The programmer is becoming a systems integrator of probabilistic entities. References Karpathy feeling 'behind' as evidence the profession's identity is shifting faster than practitioners can adapt.
 
@@ -2516,7 +2544,7 @@
 
 - [Dante O. Cuales](https://x.com/danteocualesjr/status/1957204427909321027) — 2025-08-18: Reply to a thread about AI engineering being easy to learn — argues the 'intimidation factor is mostly artificial' since most AI engineering is API orchestration, prompt optimization, and data pipeline work. The hard parts are already abstracted away.
 
-### Management (108)
+### Management (107)
 
 - [Ryan Carson](https://x.com/ryancarson/status/2074093250399330418) — 2026-07-07: Ryan Carson (@HelloUntangle) details orchestrating the largest/riskiest engineering program in the company's history with a single Fable parent orchestrator session: 834 files, prod data mutation, DB schema update, 31 PRs, started Friday->completed Monday, zero prod incidents. One parent Devin/Fable session planned the work, spawned ~40 child sessions to execute, enforced regression gates and backup checks between phases, and escalated only owner-level decisions (scope rulings, go/no-go on irreversible steps). Distills reusable program-management patterns for large migrations. In a follow-up he asks Cognition to let child Devin sessions pick their own model/mode independent of the parent.
 
@@ -2672,17 +2700,15 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/2026296080602673316) — 2026-02-25: Matt Pocock observes that AI coding rewards a 'lead dev' mentality: developers who spent their careers leveling up teammates through API design, feedback loops, and architecture find working with AI natural, while those who optimized only their own output find it uncomfortable.
 
-- [Adam](https://x.com/adamdotdev/status/2024525246993506346) — 2026-02-20: Honest reflection from the creator of OpenCode: nobody has truly figured out agentic programming yet. Misses mundane coding tasks that broke up the day, acknowledges the productivity boost but warns about the distance that creeps between you and the codebase. Getting apathetic and prompting for even small changes is a real risk.
+- [Dr Milan Milanovic](https://x.com/milan_milanovic/status/2023381859489767772) — 2026-02-17: Milan Milanovic's thesis: AI won't replace developers so much as the software-development process we're used to. Code is becoming cheap while decisions become expensive; AI reduces typing, not thinking. Developers who only implement tasks will struggle, while those who understand the product, domain, and system architecture will thrive.
 
-- [Dr Milan Milanović](https://x.com/milan_milanovic/status/2023381859489767772) — 2026-02-17: Argues the real threat isn't AI replacing developers but replacing the software development process. Code is becoming cheap, decisions are becoming expensive. AI reduces typing, not thinking. Developers who only implement tasks will struggle; those who understand product, domain, and system will thrive. Small teams will ship what once required departments.
+- [dax](https://x.com/thdxr/status/2022574719694758147) — 2026-02-14: dax (thdxr) offers a contrarian take on AI coding hype: orgs are rarely bottlenecked by code-production ability. Most workers use AI to do their tasks with less effort rather than to become 10x; the few who genuinely push are getting buried under everyone else's 'slop code' and may quit; teams remain bottlenecked by bureaucracy; and CFOs are noticing each engineer now costs ~$2,000/month more in LLM bills.
 
-- [dax](https://x.com/thdxr/status/2022574719694758147) — 2026-02-14: Contrarian reality check on AI productivity: orgs rarely have good ideas (expensive implementation was actually helping filter), most workers use AI to do less work not more, the 2 good engineers on your team are now buried in slop code from everyone else, you're still bottlenecked by bureaucracy, and your CFO is asking why each engineer now costs $2K/month extra in LLM bills.
+- [Machina](https://x.com/exm7777/status/2019787951530725396) — 2026-02-07: Machina's thread on how to stop feeling behind in AI: the relentless cadence of releases (GPT-5.3 Codex, Opus 4.6, Kling 3.0, all 'redefining everything') creates a low-grade, never-ending pressure. His reframe is that the problem isn't too much happening, it's the lack of a personal filter for what actually matters to your work.
 
-- [Machina](https://x.com/exm7777/status/2019787951530725396) — 2026-02-07: Addresses AI FOMO — the feeling of falling behind as new models/tools drop weekly. Argues the problem isn't too much happening but lack of a filter between news and what matters for your work. Mentions GPT-5.3 Codex and Opus 4.6 dropping on the same day. X article format.
+- [Dave Kline](https://x.com/dklineii/status/2018690947215663592) — 2026-02-05: Dave Kline's thread on how the management job changes by level: most managers fail because they're thrown in with no training, little support, and unrealistic expectations, and the required abilities, priorities, and skills differ sharply from first-line management up through senior levels.
 
-- [Dave Kline](https://x.com/dklineii/status/2018690947215663592) — 2026-02-05: Management differs by level — different abilities, priorities, skills at each tier. Most managers fail because they're put in with no training, little support, and unrealistic expectations. Infographic-style breakdown of how the job changes by level.
-
-- [Dave Kline](https://x.com/dklineii/status/2015406993612079328) — 2026-01-25: 5-step delegation system for managers. The issue isn't assigning work — it's ensuring work gets done well without micromanaging. From training 1,400+ managers.
+- [Dave Kline](https://x.com/dklineii/status/2015406993612079328) — 2026-01-25: Dave Kline shares a 5-step delegation system, noting that across 1,400+ managers he's trained, delegation is the universal struggle: the hard part isn't assigning work but ensuring it gets done well without micromanaging.
 
 - [Abhishek Singh](https://x.com/0xlelouch_/status/2012816833464922398) — 2026-01-19: Framework for reasoning about unfamiliar systems, learned from a Staff Engineer: start with business goals not code, identify critical paths, map ownership boundaries, look for invariants, read postmortems before docs, ask what breaks at 10x load. Skills that separate senior from staff engineers.
 
@@ -2734,7 +2760,7 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
 
-### Questionable (120)
+### Questionable (124)
 
 - [How To Prompt](https://x.com/howtoprompt__/status/2074122800961614184) — 2026-07-07: How To Prompt (hype framing: "China has killed the vector database industry") flags Tencent's newly open-sourced TencentDB Agent Memory — local long-term memory for AI agents that runs 100% on plain SQLite with no external vector DB or cloud APIs. Claims 61% fewer tokens and PersonaMem accuracy 48%->76%. Uses a layered 'semantic pyramid' (L0 conversation -> L1 atom -> L2 scenario -> L3 persona) stored as inspectable markdown + Mermaid graphs instead of opaque vector compression, with drill-back to raw logs by node_id. ~5.1k GitHub stars.
 
@@ -2964,7 +2990,15 @@
 
 - [Sukh Sroay](https://x.com/sukh_saroy/status/2026624254800965848) — 2026-02-27: [Post unavailable — account suspended]
 
-- [Spencer Baggins](https://x.com/bigaiguy/status/2021532622963585214) — 2026-02-12: Describes 'Socratic prompting' — asking the AI questions instead of telling it what to do. Claims this technique separates beginners from experts, improving output quality from 6.2/10 to 9.1/10.
+- [Ejaaz](https://x.com/cryptopunk7213/status/2025761121328582814) — 2026-02-23: Ejaaz's weekly AI recap: Google shipped Gemini 3.1 (underwhelming to critics) but followed with Lyria 3 song generation and Pomelli one-shot product photoshoots; Microsoft demoed data storage on glass (~10,000-year retention, cheaper than silica); and Taalus fused an AI model directly into silicon at ~17,000 tokens/sec (~17x faster than typical inference).
+
+- [J.B.](https://x.com/vibemarketer_/status/2019435524532904205) — 2026-02-19: J.B. (VibeMarketer) describes a 'recursive self-improvement loop' skill for Claude: instead of prompting once and shipping, the skill generates output, scores it against explicit criteria, diagnoses weaknesses, rewrites, and re-scores until it clears the bar. Cites @maxwellfinn's image-ad skill that grades concepts on 10 criteria (thumb-stop power, curiosity gap, emotional trigger, persona recognition) and won't stop below 9/10.
+
+- [Tech with Mak](https://x.com/technmak/status/2023990222027915746) — 2026-02-18: Tech with Mak boosts Matthew Berman's 'OpenClaw masterclass' video, in which Berman claims to have spent 2.54 billion tokens perfecting the OpenClaw coding agent and walks through 21 daily use cases (markdown files, memory system, CRM, and more). Quoted post had ~1.3M views.
+
+- [Matt Dancho (Business Science)](https://x.com/mdancho84/status/2023738764841894352) — 2026-02-18: Matt Dancho argues that becoming a '10X engineer' now comes down to a well-crafted SKILLS.md file, teasing a thread/resource on how to build one. High-engagement post (~1.1M views) with a lead-gen hook.
+
+- [Spencer Baggins](https://x.com/bigaiguy/status/2021532622963585214) — 2026-02-12: Engagement-style thread claiming 'OpenAI and Anthropic engineers leaked' a technique called 'Socratic prompting' that separates beginners from experts. The substantive nugget: instead of telling the AI what to do, ask it questions. Author claims output quality jumped from 6.2 to 9.1 out of 10.
 
 - [Miles Deutscher](https://x.com/milesdeutscher/status/2012237674409796036) — 2026-01-17: Curated 'Claude Code Starter Pack Part 2' — a filtered list of the top 1% of tools, tutorials, and resources for building with Claude Code. Quote-tweets an AI Edge article compiling the resource list.
 
@@ -3052,7 +3086,7 @@
 
 - [vixhaℓ](https://x.com/thevixhal/status/2027763453679841311) — 2026-03-02: Promotes a popular step-by-step article on building a 16-bit CPU from scratch in C (4,000+ bookmarks). A from-scratch systems/architecture learning project rather than AI content.
 
-- [Machina](https://x.com/exm7777/status/2019787951530725396) — 2026-02-07: Addresses AI FOMO — the feeling of falling behind as new models/tools drop weekly. Argues the problem isn't too much happening but lack of a filter between news and what matters for your work. Mentions GPT-5.3 Codex and Opus 4.6 dropping on the same day. X article format.
+- [Machina](https://x.com/exm7777/status/2019787951530725396) — 2026-02-07: Machina's thread on how to stop feeling behind in AI: the relentless cadence of releases (GPT-5.3 Codex, Opus 4.6, Kling 3.0, all 'redefining everything') creates a low-grade, never-ending pressure. His reframe is that the problem isn't too much happening, it's the lack of a personal filter for what actually matters to your work.
 
 - [Yishan](https://x.com/yishan/status/2012067968331710639) — 2026-01-16: [Post deleted/unavailable]
 
@@ -4728,79 +4762,79 @@
 - **2026-02-23** | [Dr Milan Milanović](https://x.com/milan_milanovic/status/2025835518207127968) | dev-practices, agent-design, claude-code
   Milan Milanović makes the case for git worktree (shipped in Git 2.5, July 2015): check out multiple branches into separate directories that share one .git, avoiding stashing and duplicate clones. The standout modern use case is AI agents - give each of 3-5 parallel Claude Code/Cursor/Codex agents its own isolated worktree and branch so they don't overwrite each other.
 
-- **2026-02-23** | [Ejaaz](https://x.com/cryptopunk7213/status/2025761121328582814) | industry
-  Weekly AI recap: Gemini 3.1 disappointed, Google dropped Lyria 3 (AI song gen) and Pomelli (1-shot product photoshoots), Microsoft pioneered data storage on glass (10K year lifespan), Taalus fused AI into silicon at 17K tokens/sec, Apple releasing 3 AI devices (glasses, camera airpods, pendant), Anthropic's security tool wiped $10B off cybersecurity stocks within an hour of launch.
+- **2026-02-23** | [Ejaaz](https://x.com/cryptopunk7213/status/2025761121328582814) | industry, research, questionable
+  Ejaaz's weekly AI recap: Google shipped Gemini 3.1 (underwhelming to critics) but followed with Lyria 3 song generation and Pomelli one-shot product photoshoots; Microsoft demoed data storage on glass (~10,000-year retention, cheaper than silica); and Taalus fused an AI model directly into silicon at ~17,000 tokens/sec (~17x faster than typical inference).
 
 - **2026-02-23** | [Jeremy Daly](https://x.com/jeremy_daly/status/2025677417398821351) | agent-design, dev-practices
-  100+ page writeup on building multi-tenant commercial AI agent systems, distilled from experience inside a large SaaS platform serving hundreds of enterprise customers. Covers isolation, auditability, retention, cost control, orchestration models, retrieval architectures, and evaluation harnesses under real-world conditions.
+  Jeremy Daly wrote a 100+ page guide on building multi-tenant, commercial AI agent systems from ~18 months running them inside a large SaaS platform serving hundreds of enterprise customers. Covers hard requirements around tenant isolation, auditability, retention, and cost control, plus orchestration models, retrieval architectures, and evaluation harnesses.
 
 - **2026-02-21** | [Akshay 🚀](https://x.com/akshay_pachaar/status/2025767534159835443) | agent-design, skills-mcp
-  Skill Graphs > SKILL .md Everyone's talking about skills for AI agents. But almost nobody is talking about how to structure them. Right now, the default approach is simple. You write one skill file that captures one capability.
+  [Post unavailable - page doesn't exist]
 
-- **2026-02-21** | [tuna](https://x.com/tunahorse21/status/2024974148259512677) | dev-practices, agent-design
-  Highlights 'Plankton' by Alex Fazio — a linting guard that LLM coding agents can't cheat. Addresses the common pain of AI agents ignoring linting rules and creating endless pre-commit error loops. Quote tweet of the article introducing the tool.
+- **2026-02-21** | [tuna](https://x.com/tunahorse21/status/2024974148259512677) | dev-practices, agent-design, skills-mcp
+  tuna signal-boosts Alex Fazio introducing Plankton, a 'slop guard' for LLM coding agents. It aims to break the loop of copy-pasting pre-commit/linting errors back into the agent by enforcing lint rules the model can't cheat around.
 
-- **2026-02-20** | [Charly Wargnier](https://x.com/datachaz/status/2024803152730423685) | claude-code, prompting, dev-practices
-  Argues CLAUDE.md is now the most important file in your repo — an onboarding doc for AI agents. Like .gitconfig on steroids: forces AI to verify its own work, auto-fixes CI bugs, demands elegant solutions over hacky fixes. Writing clear machine instructions is the new 10x dev skill.
+- **2026-02-20** | [Charly Wargnier](https://x.com/datachaz/status/2024803152730423685) | claude-code, prompting, agent-design, dev-practices
+  Charly Wargnier argues writing crystal-clear instructions for machines is the new 10x dev skill, and the most important file in a repo is now CLAUDE.md rather than the code. Top devs use it as an AI onboarding doc to define agent behavior: force the AI to verify its own work, auto-fix CI bugs, and reject hacky fixes.
 
-- **2026-02-20** | [Adam](https://x.com/adamdotdev/status/2024525246993506346) | agent-design, management
-  Honest reflection from the creator of OpenCode: nobody has truly figured out agentic programming yet. Misses mundane coding tasks that broke up the day, acknowledges the productivity boost but warns about the distance that creeps between you and the codebase. Getting apathetic and prompting for even small changes is a real risk.
+- **2026-02-20** | [Adam](https://x.com/adamdotdev/status/2024525246993506346) | agent-design, dev-practices
+  Adam (working on OpenCode since early 2025) offers an honest, ambivalent reflection on agentic programming: the models are an incredible tool and a real productivity boost, but the shift is confusing and emotionally mixed. He misses the flow of banging out mundane code by hand and notes the growing distance between the developer and the code.
 
 - **2026-02-19** | [Aman](https://x.com/amank1412/status/2023754885473394918) | claude-code, prompting, dev-practices
-  Garry Tan (YC CEO) shared his CLAUDE.md prompt for Claude Code that helps him ship 4,000+ line features with full tests in about an hour. Key pattern: Claude does a structured review (architecture → code quality → tests → performance) before writing code, presents tradeoffs with opinionated recommendations, and pauses for feedback. Essentially using Claude as a senior engineer reviewer.
+  Aman shares Garry Tan's (CEO of Y Combinator) CLAUDE.md prompt for Claude Code, which he uses to ship 4,000+ line features with full tests in about an hour. The prompt makes Claude act like a senior engineer: judge whether a plan is over/under-engineered before coding, do a structured review (architecture -> code quality -> tests -> performance), present tradeoffs with opinionated recommendations, and pause for feedback before implementing.
 
-- **2026-02-19** | [J.B.](https://x.com/vibemarketer_/status/2019435524532904205) | prompting, agent-design
-  Describes 'recursive self-improvement loops' for Claude: instead of prompting once and shipping, the model generates output, scores it against criteria, diagnoses weaknesses, rewrites, and re-evaluates in a loop until it passes. Pattern works for email sequences, ad creative, landing pages. Essentially self-evaluating agent loops for content quality.
+- **2026-02-19** | [J.B.](https://x.com/vibemarketer_/status/2019435524532904205) | prompting, skills-mcp, claude-code, questionable
+  J.B. (VibeMarketer) describes a 'recursive self-improvement loop' skill for Claude: instead of prompting once and shipping, the skill generates output, scores it against explicit criteria, diagnoses weaknesses, rewrites, and re-scores until it clears the bar. Cites @maxwellfinn's image-ad skill that grades concepts on 10 criteria (thumb-stop power, curiosity gap, emotional trigger, persona recognition) and won't stop below 9/10.
 
 - **2026-02-18** | [Viv](https://x.com/Vtrivedy10/status/2029576534159835443) | agent-design
-  the deepagents library is basically our starting point for doing harness engineering and shipping agents the internal agents used at the company are built on it (background coding, GTM/SDR, research)
+  [Post unavailable - page doesn't exist]
 
-- **2026-02-18** | [Tech with Mak](https://x.com/technmak/status/2023990222027915746) | agent-design, prompting
-  Quote-tweets Matthew Berman's OpenClaw masterclass video covering 21 daily use cases. Berman claims 2.54 billion tokens spent perfecting OpenClaw workflows, covers MD files, memory systems, CRM, and more.
+- **2026-02-18** | [Tech with Mak](https://x.com/technmak/status/2023990222027915746) | agent-design, claude-code, questionable
+  Tech with Mak boosts Matthew Berman's 'OpenClaw masterclass' video, in which Berman claims to have spent 2.54 billion tokens perfecting the OpenClaw coding agent and walks through 21 daily use cases (markdown files, memory system, CRM, and more). Quoted post had ~1.3M views.
 
-- **2026-02-18** | [Matt Dancho](https://x.com/mdancho84/status/2023738764841894352) | claude-code, prompting
-  Claims becoming a 10x engineer is now just a SKILLS.md file. Brief post (1M views) pointing to skills-based AI workflow configuration as the key leverage point for developer productivity.
+- **2026-02-18** | [Matt Dancho (Business Science)](https://x.com/mdancho84/status/2023738764841894352) | skills-mcp, claude-code, dev-practices, questionable
+  Matt Dancho argues that becoming a '10X engineer' now comes down to a well-crafted SKILLS.md file, teasing a thread/resource on how to build one. High-engagement post (~1.1M views) with a lead-gen hook.
 
-- **2026-02-17** | [Dr Milan Milanović](https://x.com/milan_milanovic/status/2023381859489767772) | management, industry
-  Argues the real threat isn't AI replacing developers but replacing the software development process. Code is becoming cheap, decisions are becoming expensive. AI reduces typing, not thinking. Developers who only implement tasks will struggle; those who understand product, domain, and system will thrive. Small teams will ship what once required departments.
+- **2026-02-17** | [Dr Milan Milanovic](https://x.com/milan_milanovic/status/2023381859489767772) | management, dev-practices, industry
+  Milan Milanovic's thesis: AI won't replace developers so much as the software-development process we're used to. Code is becoming cheap while decisions become expensive; AI reduces typing, not thinking. Developers who only implement tasks will struggle, while those who understand the product, domain, and system architecture will thrive.
 
 - **2026-02-15** | [Pavol Lupták](https://x.com/wilderko/status/2025159534159835443) | claude-code, skills-mcp
-  A collection of 76 production-ready Claude Skills covering frontend, backend, DevOps, infrastructure, security, cloud, and AI/ML development. Skills provide Claude with domain expertise, decision frameworks, and production-ready code patterns.
+  [Post unavailable - page doesn't exist]
 
-- **2026-02-14** | [dax](https://x.com/thdxr/status/2022574719694758147) | management, industry
-  Contrarian reality check on AI productivity: orgs rarely have good ideas (expensive implementation was actually helping filter), most workers use AI to do less work not more, the 2 good engineers on your team are now buried in slop code from everyone else, you're still bottlenecked by bureaucracy, and your CFO is asking why each engineer now costs $2K/month extra in LLM bills.
+- **2026-02-14** | [dax](https://x.com/thdxr/status/2022574719694758147) | management, dev-practices, industry
+  dax (thdxr) offers a contrarian take on AI coding hype: orgs are rarely bottlenecked by code-production ability. Most workers use AI to do their tasks with less effort rather than to become 10x; the few who genuinely push are getting buried under everyone else's 'slop code' and may quit; teams remain bottlenecked by bureaucracy; and CFOs are noticing each engineer now costs ~$2,000/month more in LLM bills.
 
-- **2026-02-12** | [Aakash Gupta](https://x.com/aakashgupta/status/2021709282224587141) | research
-  Karpathy released microGPT — a complete GPT in 243 lines of Python with only os, math, random, and argparse as imports. Hand-rolled autograd engine in ~40 lines. Fifth iteration in a 6-year compression arc: micrograd (2020) → minGPT → nanoGPT → llm.c (2024) → microgpt (2026). Each step removed a layer of abstraction; this one removed all of them.
+- **2026-02-12** | [Aakash Gupta](https://x.com/aakashgupta/status/2021709282224587141) | research, dev-practices
+  Aakash Gupta highlights Andrej Karpathy's 'microgpt': a complete GPT (training loop, inference, optimizer, attention) in 243 lines of Python whose only imports are os, math, random, and argparse, including a hand-rolled ~40-line scalar autograd engine. Frames it as the fifth step in a six-year compression arc: micrograd (2020), minGPT (2020), nanoGPT (2023), llm.c (2024), microgpt (2026).
 
-- **2026-02-12** | [Spencer Baggins](https://x.com/bigaiguy/status/2021532622963585214) | questionable, prompting
-  Describes 'Socratic prompting' — asking the AI questions instead of telling it what to do. Claims this technique separates beginners from experts, improving output quality from 6.2/10 to 9.1/10.
+- **2026-02-12** | [Spencer Baggins](https://x.com/bigaiguy/status/2021532622963585214) | prompting, questionable
+  Engagement-style thread claiming 'OpenAI and Anthropic engineers leaked' a technique called 'Socratic prompting' that separates beginners from experts. The substantive nugget: instead of telling the AI what to do, ask it questions. Author claims output quality jumped from 6.2 to 9.1 out of 10.
 
-- **2026-02-12** | [kitze](https://x.com/thekitze/status/2021494167113990464) | skills-mcp, industry
-  Chrome 146 includes early preview of WebMCP — lets AI agents query and execute services without browsing the web app like a user. Services declared via navigator.modelContext API or declaratively through forms. kitze calls it 'the new responsive design' — web apps must open up or die.
+- **2026-02-12** | [kitze](https://x.com/thekitze/status/2021494167113990464) | skills-mcp, agent-design, dev-practices
+  kitze boosts Maximiliano Firtman's note that Chrome 146 ships an early flagged preview of WebMCP, which lets AI agents query and execute a web app's services without driving the UI like a human. Services are declared imperatively via a navigator.modelContext API or declaratively through a form; kitze calls exposing them 'the new responsive design.'
 
-- **2026-02-09** | [Peter Steinberger](https://x.com/steipete/status/2020704611640705485) | prompting, agent-design
-  Shares a prompt to rewrite your SOUL.md (agent personality config) to make it less corporate: have strong opinions, delete corporate-sounding rules, ban filler phrases, enforce brevity, allow humor and swearing when appropriate, call out bad ideas directly. Credited to Molty.
+- **2026-02-09** | [Peter Steinberger](https://x.com/steipete/status/2020704611640705485) | prompting, agent-design, claude-code
+  Peter Steinberger shares a SOUL.md rewrite prompt (via Molty) to give a coding agent a stronger personality: hold strong opinions instead of hedging, delete corporate-handbook rules, never open with filler like 'Great question', enforce brevity, allow natural humor, call out bad ideas (charm over cruelty), and permit well-placed swearing.
 
-- **2026-02-07** | [Machina](https://x.com/exm7777/status/2019787951530725396) | general, management
-  Addresses AI FOMO — the feeling of falling behind as new models/tools drop weekly. Argues the problem isn't too much happening but lack of a filter between news and what matters for your work. Mentions GPT-5.3 Codex and Opus 4.6 dropping on the same day. X article format.
+- **2026-02-07** | [Machina](https://x.com/exm7777/status/2019787951530725396) | management, general, industry
+  Machina's thread on how to stop feeling behind in AI: the relentless cadence of releases (GPT-5.3 Codex, Opus 4.6, Kling 3.0, all 'redefining everything') creates a low-grade, never-ending pressure. His reframe is that the problem isn't too much happening, it's the lack of a personal filter for what actually matters to your work.
 
-- **2026-02-07** | [chiefofautism](https://x.com/chiefofautism/status/2019608146692673886) | agent-design, dev-practices
-  Shares Shannon Lite by KeygraphHQ — an autonomous, white-box AI pentester for web applications. Open-source GitHub project.
+- **2026-02-07** | [chiefofautism](https://x.com/chiefofautism/status/2019608146692673886) | agent-design, dev-practices, research
+  chiefofautism shares Shannon (github.com/KeygraphHQ/shannon), an autonomous white-box AI pentester for web applications.
 
 - **2026-02-05** | [Dave Kline](https://x.com/dklineii/status/2018690947215663592) | management
-  Management differs by level — different abilities, priorities, skills at each tier. Most managers fail because they're put in with no training, little support, and unrealistic expectations. Infographic-style breakdown of how the job changes by level.
+  Dave Kline's thread on how the management job changes by level: most managers fail because they're thrown in with no training, little support, and unrealistic expectations, and the required abilities, priorities, and skills differ sharply from first-line management up through senior levels.
 
 ### Jan 2026
 
-- **2026-01-28** | [ryan vogel](https://x.com/ryanvogel/status/2016204202343571474) | agent-design, claude-code, prompting
-  Dynamic agents.md resolution is now live in OpenCode — allows agent configuration files to be resolved dynamically. Suggests pairing with a /learn command for adaptive agent behavior.
+- **2026-01-28** | [vogel](https://x.com/ryanvogel/status/2016204202343571474) | agent-design, dev-practices, claude-code
+  ryan vogel announces that dynamic agents.md resolution is now live in OpenCode, and suggests pairing it with a /learn command for a powerful workflow; points to @rekram11's explanation of the approach.
 
 - **2026-01-25** | [Dave Kline](https://x.com/dklineii/status/2015406993612079328) | management
-  5-step delegation system for managers. The issue isn't assigning work — it's ensuring work gets done well without micromanaging. From training 1,400+ managers.
+  Dave Kline shares a 5-step delegation system, noting that across 1,400+ managers he's trained, delegation is the universal struggle: the hard part isn't assigning work but ensuring it gets done well without micromanaging.
 
-- **2026-01-25** | [Theo](https://x.com/theo/status/2013888279355982131) | claude-code, dev-practices
-  Theo highlights OpenSync.dev as an example of good devrel in 2026 — tracks OpenCode and Claude CLI coding sessions in one place with searchable history, markdown export, eval-ready datasets, tool usage, token spend, and session activity across projects.
+- **2026-01-25** | [Theo - t3.gg](https://x.com/theo/status/2013888279355982131) | claude-code, dev-practices, agent-design
+  Theo boosts Wayne Sutton's launch of opensync.dev, a tool to track OpenCode and Claude CLI coding sessions in one place: searchable history, markdown export, eval-ready datasets, and views into tool usage, token spend, and session activity across projects. Theo frames it as a model of good devrel in 2026.
 
 - **2026-01-21** | [abhi](https://x.com/abhigyawangoo/status/2013823175855923640) | agent-design
   Deep dive on why AI agents fail and how to fix them with feedback loops. Covers defining agent goals with business metrics, building continual learning systems, and embracing self-improvement. Author owned agent infra used by millions. Key insight: RAG alone isn't enough — agents need domain-specific adaptation and feedback integration.
