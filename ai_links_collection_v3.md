@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-07-10T15:11:59Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-10T16:40:33Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-09** — [Kodus](https://kodus.io/self-hosted-ai-code-review/) — *now • Dev Practices • v1 enriched*  
@@ -24,23 +24,23 @@
 *No concepts gained new evidence in the last 14 days. Run mechanical discovery or seed curated concepts to populate this section.*
 
 ### Revisit from last month
-- **2026-01-25** — [Dave Kline](https://x.com/dklineii/status/2015406993612079328) — *near-term • Management • 556.9K views • v1 enriched*  
-  Dave Kline shares a 5-step delegation system, noting that across 1,400+ managers he's trained, delegation is the universal struggle: the hard part isn't assigning work but ensuring it gets done well without micromanaging.
-- **2026-01-25** — [Theo - t3.gg](https://x.com/theo/status/2013888279355982131) — *near-term • Claude Code • 99.7K views • v1 enriched*  
-  Theo boosts Wayne Sutton's launch of opensync.dev, a tool to track OpenCode and Claude CLI coding sessions in one place: searchable history, markdown export, eval-ready datasets, and views into tool usage, token spend, and session activity across projects. Theo frames it as a model of good devrel in 2026.
+- **2026-01-16** — [giyu_codes](https://x.com/giyu_codes/status/2012420750855012428) — *near-term • Claude Code • 805.9K views • v1 enriched*  
+  giyu_codes recommends cogsec (@affaan)'s article 'The Shorthand Guide to Everything Claude Code' - a complete setup after 10 months of daily use covering skills, hooks, subagents, MCPs, plugins, and what actually works. High-reach post (~806K views).
+- **2026-01-16** — [Gregor Zunic](https://x.com/gregpr07/status/2012052139384979773) — *near-term • Agent Design • 255.4K views • v1 enriched*  
+  Gregor Zunic (Browser Use) argues 'The Bitter Lesson of Agent Frameworks': all the value is in the RL'd model, not thousands of lines of abstractions. An agent is just a for-loop of tool calls that runs until the model stops. Abstractions freeze assumptions and fight what the model already learned; agent frameworks fail because their action spaces are incomplete, not because models are weak. Their fix: start with maximal capability then restrict ('vibe-restrict' via evals). BU Agent gives the model raw Chrome DevTools Protocol + extension APIs for a near-complete action space. Also covers a minimal model-agnostic Chat wrapper (Anthropic/OpenAI/Google), ephemeral messages to keep massive DOM/screenshot state out of context, and the done() tool for explicit completion. Reliability (retries, rate limits, compaction) is ops, not the agent. Open-sourcing as agent-sdk (includes a Claude Code re-implementation).
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 362 | 52.4% |
-| claude-code | 179 | 25.9% |
-| dev-practices | 221 | 32.0% |
-| skills-mcp | 127 | 18.4% |
-| prompting | 98 | 14.2% |
+| agent-design | 363 | 52.5% |
+| claude-code | 178 | 25.8% |
+| dev-practices | 227 | 32.9% |
+| skills-mcp | 128 | 18.5% |
+| prompting | 100 | 14.5% |
 | research | 136 | 19.7% |
 | industry | 91 | 13.2% |
-| management | 107 | 15.5% |
+| management | 108 | 15.6% |
 | questionable | 124 | 17.9% |
 | general | 88 | 12.7% |
 
@@ -102,7 +102,7 @@
 ---
 ## Posts by Topic
 
-### Agent Design (362)
+### Agent Design (363)
 
 - [Kodus](https://kodus.io/self-hosted-ai-code-review/) — 2026-07-09: Kodus (github.com/kodustech/kodus-ai) — open-source AGPLv3 self-hosted AI code review. The full PR-review pipeline (Kody agent) runs on your own infrastructure with bring-your-own-LLM: it posts line-anchored inline comments covering logic/security/performance (or 'deep mode' with parallel bug/security/performance specialists), keeps source code, LLM calls, and audit trails inside your VPC, and supports GitHub Enterprise Server / GitLab Self-Managed / Bitbucket DC and air-gapped deploys. Jeremy flagged it to evaluate for work code reviews.
 
@@ -760,23 +760,25 @@
 
 - [Theo - t3.gg](https://x.com/theo/status/2013888279355982131) — 2026-01-25: Theo boosts Wayne Sutton's launch of opensync.dev, a tool to track OpenCode and Claude CLI coding sessions in one place: searchable history, markdown export, eval-ready datasets, and views into tool usage, token spend, and session activity across projects. Theo frames it as a model of good devrel in 2026.
 
-- [abhi](https://x.com/abhigyawangoo/status/2013823175855923640) — 2026-01-21: Deep dive on why AI agents fail and how to fix them with feedback loops. Covers defining agent goals with business metrics, building continual learning systems, and embracing self-improvement. Author owned agent infra used by millions. Key insight: RAG alone isn't enough — agents need domain-specific adaptation and feedback integration.
+- [abhi](https://x.com/abhigyawangoo/status/2013823175855923640) — 2026-01-21: A detailed playbook for building continually-improving AI agents: define the business metric first, think in terms of many per-message/session/long-tail signals (not just thumbs up/down), design UI that makes signal collection easy, build signal-derived few-shot rankers, and A/B test every change against a control group. Includes a long copy-paste prompt for having Claude Code wire feedback loops into an existing agent. Warns about reward hacking when over-optimizing a single signal.
 
-- [am.will](https://x.com/llmjunky/status/2013314055755194468) — 2026-01-20: Recommends Dillon Mulroy's planning approach for AI agents — concise plan-writing format. Notes similarity to their own process but prefers Mulroy's testing language. Quote-tweets Mulroy's post about product owners being right all along.
+- [Matt Simpson](https://x.com/msmps_/status/2013376201977463038) — 2026-01-20: Matt Simpson shipped 'opentui-skill', a skill that gives coding agents TUI (terminal UI) superpowers via decision trees, progressive disclosure, and documented gotchas. Inspired by Dillon Mulroy's cloudflare-skill. Install instructions in a follow-up reply.
 
-- [Sumanth](https://x.com/sumanth_077/status/2013232922296561826) — 2026-01-20: PageIndex — open-source RAG framework that replaces vector DBs and chunking with hierarchical tree indexing and reasoning-based retrieval. Builds a table-of-contents-like tree structure, then uses LLM reasoning to navigate it like a human expert. Achieves 98.6% accuracy on FinanceBench vs 79.1% for top vector RAG. Works on financial reports, legal filings, technical manuals.
+- [am.will](https://x.com/llmjunky/status/2013314055755194468) — 2026-01-20: am.will endorses a post by Dillon Mulroy on writing agent plans, calling it similar to his own approach but more concise. Plans to adopt some of Dillon's phrasing, especially the language around testing.
 
-- [Mischa van den Burg](https://x.com/mischa_vdburg/status/2013178484143571034) — 2026-01-20: Maps Steve Yegge's AI agent orchestration framework to DevOps patterns. Two primitives: Workers (single agent quality, like CI runners/pods/Lambdas) and Factories (coordination across many agents, like schedulers/control planes). Key concepts: 'Nondeterministic Idempotence' as the new eventual consistency, audit trails for AI work becoming as critical as infrastructure audit trails.
+- [Sumanth](https://x.com/sumanth_077/status/2013232922296561826) — 2026-01-20: Overview of PageIndex, an open-source 'vectorless' RAG framework that drops vector databases and arbitrary chunking. It builds an LLM-optimized hierarchical tree (like a table of contents) and uses reasoning-based tree search to navigate documents the way a human expert would, giving traceable page-level references. Powers Mafin 2.5, which hits 98.7% on FinanceBench. GitHub link in comments.
 
-- [Rohun](https://x.com/rohunjauhar/status/2012983351288692941) — 2026-01-19: Open-sourced an autonomous Claude Code workflow: describe what to build, answer interview questions, then close your laptop. Claude creates a PRD with user stories, designs architecture, analyzes edge cases, validates story quality, converts to JSON, and kicks off an autonomous build loop in GitHub Codespaces. Get a notification when done.
+- [Mischa van den Burg](https://x.com/mischa_vdburg/status/2013178484143571034) — 2026-01-20: Argues AI agent orchestration is the next 'container orchestration war', building on a Steve Yegge framework of two primitives: Workers (making a single agent produce high-quality output) vs Factories (coordinating thousands of work items across many agents). Maps these to familiar infra patterns - Workers = CI runners/pods/Lambdas, Factories = schedulers/control planes/workflow engines. Predicts 'nondeterministic idempotence' as the new eventual consistency, audit trails for AI work, GitOps-style declarative state, and reuse of the microservices observability stack. Kubernetes-fluent engineers have a head start.
 
-- [Ian Nuttall](https://x.com/iannuttall/status/2012833663319195970) — 2026-01-19: Built dotagents — a tool to sync agent configuration across different harnesses (Claude Code, OpenCode, etc.) from ~/.agents or .agents directory. Solves the pain of switching between AI coding tools. Open-source on GitHub.
+- [Rohun](https://x.com/rohunjauhar/status/2012983351288692941) — 2026-01-19: Rohun open-sourced 'claude-build-workflow', a Claude Code workflow for autonomous building: you describe what you want, answer 10-15 min of interview questions, then close your laptop while an autonomous build loop runs in GitHub Codespaces and notifies your phone when done. It generates a PRD with user stories, technical architecture, edge-case analysis, story-quality validation, JSON conversion, then kicks off the build loop. Stitched together from Geoffrey Huntley's Ralph (bash-loop technique), Ryan Carson's snarktank/ralph (PRD skills, progress tracking, auto-commits, quality checks), and the BMAD Method (discovery/interview framework), adapted from Amp to Claude Code with phone notifications and one-command setup. Repo: github.com/rohunj/claude-build-workflow.
 
-- [Sisyphus Labs](https://x.com/justsisyphus/status/2012441415398109192) — 2026-01-17: Highlights Rohit Ghumare's 'Agents 201' article on orchestrating multiple agents — covering coordination patterns, token budget management, and avoiding common multi-agent pitfalls. Calls it 'the first useful article that covers agent orchestration.'
+- [DAIR.AI](https://x.com/dair_ai/status/2012903315890225220) — 2026-01-19: DAIR.AI's Top AI Papers of the Week (Jan 12-18, 2026), heavy on agent memory and self-improvement: (1) Learning Latent Action World Models from in-the-wild video without action labels; (2) DroPE - extending context by dropping positional embeddings with cheap recalibration; (3) Dr. Zero - self-evolving search agents with no training data via proposer/solver loop (HRPO); (4) AgeMem - unified long/short-term memory as tool actions; (5) Focus - bio-inspired active context compression (22.7% token cut on SWE-bench Lite with Claude Haiku 4.5); (6) Agent-as-a-Judge survey; (7) SimpleMem - lifelong memory via semantic compression (30x token reduction); (8) Mistral's Ministral 3 (3B/8B/14B, Apache 2.0); (9) UniversalRAG - modality-aware multimodal RAG routing; (10) MemRL - runtime RL on episodic memory.
 
-- [Gregor Zunic](https://x.com/gregpr07/status/2012052139384979773) — 2026-01-16: Browser Use founder argues agent frameworks are counterproductive — 'The Bitter Lesson of Agent Frameworks.' All the value is in the RL'd model, not 10,000 lines of abstractions. An agent is just a for-loop of tool calls. Their own agents improved when they stripped away framework complexity. Shows how to build Claude Code in minimal code.
+- [Sisyphus Labs](https://x.com/justsisyphus/status/2012441415398109192) — 2026-01-17: Sisyphus Labs recommends Rohit Ghumare's article 'Agents 201: Orchestrating Multiple Agents That Actually Work' as the first useful piece on agent orchestration. The article's premise: after building a single agent, the next challenge isn't making it smarter but making multiple agents cooperate without blowing the token budget or creating coordination chaos.
 
-- [Paul Solt](https://x.com/paulsolt/status/2012010080414081188) — 2026-01-16: 7 beginner tips for OpenAI Codex: use GPT-5.2-Codex high (not xhigh) for most tasks, provide local Markdown docs instead of web scraping via DocSetQuery tool, follow @steipete's workflow posts, copy aspects of Peter's agents.md file. Practical getting-started advice.
+- [Gregor Zunic](https://x.com/gregpr07/status/2012052139384979773) — 2026-01-16: Gregor Zunic (Browser Use) argues 'The Bitter Lesson of Agent Frameworks': all the value is in the RL'd model, not thousands of lines of abstractions. An agent is just a for-loop of tool calls that runs until the model stops. Abstractions freeze assumptions and fight what the model already learned; agent frameworks fail because their action spaces are incomplete, not because models are weak. Their fix: start with maximal capability then restrict ('vibe-restrict' via evals). BU Agent gives the model raw Chrome DevTools Protocol + extension APIs for a near-complete action space. Also covers a minimal model-agnostic Chat wrapper (Anthropic/OpenAI/Google), ephemeral messages to keep massive DOM/screenshot state out of context, and the done() tool for explicit completion. Reliability (retries, rate limits, compaction) is ops, not the agent. Open-sourcing as agent-sdk (includes a Claude Code re-implementation).
+
+- [Paul Solt](https://x.com/paulsolt/status/2012010080414081188) — 2026-01-16: Paul Solt's 7 beginner tips for OpenAI Codex: (1) start with GPT-5.2-Codex 'high' reasoning - enough for most work, avoid xhigh unless tricky; (2) when reasoning doesn't help, give agents better up-to-date local docs (he uses DocSetQuery to turn Dash DocSets into local Markdown); (3) read Peter Steinberger's (@steipete) 'shipping at inference speed' post; (4) borrow from Peter's agents.md and agent-scripts (e.g. 'committer' for atomic commits with multiple agents in one folder); (5) just talk to Codex - no complex rules or huge plan files; work one aspect at a time and parallelize projects while waiting; (6) ask agents to copy structure/Makefiles from other projects; (7) you'll likely need YOLO/danger mode to avoid constant approval nagging.
 
 - [vas](https://x.com/vasuman/status/2011983687433212330) — 2026-01-16: Comprehensive 'AI Agents 101' guide from a former Meta engineer — covers fundamentals of building AI agents that work, drawing on experience with systems processing billions of transactions. Promises a part 2 with practical examples.
 
@@ -828,7 +830,7 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Claude Code (179)
+### Claude Code (178)
 
 - [Anatoli Kopadze](https://x.com/anatolikopadze/status/2068328135611822149) — 2026-07-06: Anatoli Kopadze's widely-viewed piece 'Loops explained: Claude, GPT, Mira and what actually works' argues most people use AI the slow way (type, wait, fix, repeat by hand) and that the faster approach top AI engineers care about is building loops. Covers what loops are, how they work under the hood, when they're worth it vs a trap, and how to build a basic one in Claude or ChatGPT. Quote-tweets Peter Steinberger: you shouldn't be prompting coding agents, you should be designing loops that prompt your agents. (Includes some self-promotion for his X/Telegram.)
 
@@ -1148,17 +1150,15 @@
 
 - [Theo - t3.gg](https://x.com/theo/status/2013888279355982131) — 2026-01-25: Theo boosts Wayne Sutton's launch of opensync.dev, a tool to track OpenCode and Claude CLI coding sessions in one place: searchable history, markdown export, eval-ready datasets, and views into tool usage, token spend, and session activity across projects. Theo frames it as a model of good devrel in 2026.
 
-- [Matt Simpson](https://x.com/msmps_/status/2013376201977463038) — 2026-01-20: Released opentui-skill — gives AI agents TUI (terminal UI) superpowers: decision trees, progressive disclosure, gotcha warnings that save hours. Inspired by Dillon Mulroy's cloudflare-skill.
+- [Rohun](https://x.com/rohunjauhar/status/2012983351288692941) — 2026-01-19: Rohun open-sourced 'claude-build-workflow', a Claude Code workflow for autonomous building: you describe what you want, answer 10-15 min of interview questions, then close your laptop while an autonomous build loop runs in GitHub Codespaces and notifies your phone when done. It generates a PRD with user stories, technical architecture, edge-case analysis, story-quality validation, JSON conversion, then kicks off the build loop. Stitched together from Geoffrey Huntley's Ralph (bash-loop technique), Ryan Carson's snarktank/ralph (PRD skills, progress tracking, auto-commits, quality checks), and the BMAD Method (discovery/interview framework), adapted from Amp to Claude Code with phone notifications and one-command setup. Repo: github.com/rohunj/claude-build-workflow.
 
-- [Rohun](https://x.com/rohunjauhar/status/2012983351288692941) — 2026-01-19: Open-sourced an autonomous Claude Code workflow: describe what to build, answer interview questions, then close your laptop. Claude creates a PRD with user stories, designs architecture, analyzes edge cases, validates story quality, converts to JSON, and kicks off an autonomous build loop in GitHub Codespaces. Get a notification when done.
+- [Ian Nuttall](https://x.com/iannuttall/status/2012833663319195970) — 2026-01-19: Ian Nuttall shares 'dotagents' (github.com/iannuttall/dotagents), a tool he built to stop the pain of switching between different agent harnesses/clients - he now runs everything from ~/.agents or .agents. Posted in reply to Theo asking for a way to sync agent skills/config across repos via symlink. PRs welcome for unsupported clients.
 
-- [Ian Nuttall](https://x.com/iannuttall/status/2012833663319195970) — 2026-01-19: Built dotagents — a tool to sync agent configuration across different harnesses (Claude Code, OpenCode, etc.) from ~/.agents or .agents directory. Solves the pain of switching between AI coding tools. Open-source on GitHub.
+- [Miles Deutscher](https://x.com/milesdeutscher/status/2012237674409796036) — 2026-01-17: Miles Deutscher promotes a curated 'Claude Code Starter Pack (Part 2)' article by AI Edge - a filtered list of Claude Code tools, tutorials, and resources claimed to be the 1% worth your time. Framing leans on hype ('mega viral', 'extract alpha', 'life-changing systems'), so tagged questionable, but the underlying resource is a legitimate Claude Code tool/resource roundup.
 
-- [Miles Deutscher](https://x.com/milesdeutscher/status/2012237674409796036) — 2026-01-17: Curated 'Claude Code Starter Pack Part 2' — a filtered list of the top 1% of tools, tutorials, and resources for building with Claude Code. Quote-tweets an AI Edge article compiling the resource list.
+- [giyu_codes](https://x.com/giyu_codes/status/2012420750855012428) — 2026-01-16: giyu_codes recommends cogsec (@affaan)'s article 'The Shorthand Guide to Everything Claude Code' - a complete setup after 10 months of daily use covering skills, hooks, subagents, MCPs, plugins, and what actually works. High-reach post (~806K views).
 
-- [giyu_codes](https://x.com/giyu_codes/status/2012420750855012428) — 2026-01-16: Shares cogsec's comprehensive 'Shorthand Guide to Everything Claude Code' — covering skills, hooks, subagents, MCPs, plugins, and practical workflows after 10 months of daily use since the Feb experimental rollout. 802.8K views signals broad interest.
-
-- [Gregor Zunic](https://x.com/gregpr07/status/2012052139384979773) — 2026-01-16: Browser Use founder argues agent frameworks are counterproductive — 'The Bitter Lesson of Agent Frameworks.' All the value is in the RL'd model, not 10,000 lines of abstractions. An agent is just a for-loop of tool calls. Their own agents improved when they stripped away framework complexity. Shows how to build Claude Code in minimal code.
+- [Gregor Zunic](https://x.com/gregpr07/status/2012052139384979773) — 2026-01-16: Gregor Zunic (Browser Use) argues 'The Bitter Lesson of Agent Frameworks': all the value is in the RL'd model, not thousands of lines of abstractions. An agent is just a for-loop of tool calls that runs until the model stops. Abstractions freeze assumptions and fight what the model already learned; agent frameworks fail because their action spaces are incomplete, not because models are weak. Their fix: start with maximal capability then restrict ('vibe-restrict' via evals). BU Agent gives the model raw Chrome DevTools Protocol + extension APIs for a near-complete action space. Also covers a minimal model-agnostic Chat wrapper (Anthropic/OpenAI/Google), ephemeral messages to keep massive DOM/screenshot state out of context, and the done() tool for explicit completion. Reliability (retries, rate limits, compaction) is ops, not the agent. Open-sourcing as agent-sdk (includes a Claude Code re-implementation).
 
 - [Jarrod Watts](https://x.com/jarrodwatts/status/2009200810870428123) — 2026-01-08: Open sourced claude-code-config repo containing agents, commands, hooks, rules, skills, and plugins collected and created over several months for Claude Code. Simple but effective enhancements, continuously updated.
 
@@ -1188,7 +1188,7 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (221)
+### Dev Practices (227)
 
 - [Kodus](https://kodus.io/self-hosted-ai-code-review/) — 2026-07-09: Kodus (github.com/kodustech/kodus-ai) — open-source AGPLv3 self-hosted AI code review. The full PR-review pipeline (Kody agent) runs on your own infrastructure with bring-your-own-LLM: it posts line-anchored inline comments covering logic/security/performance (or 'deep mode' with parallel bug/security/performance specialists), keeps source code, LLM calls, and audit trails inside your VPC, and supports GitHub Enterprise Server / GitLab Self-Managed / Bitbucket DC and air-gapped deploys. Jeremy flagged it to evaluate for work code reviews.
 
@@ -1570,17 +1570,29 @@
 
 - [Theo - t3.gg](https://x.com/theo/status/2013888279355982131) — 2026-01-25: Theo boosts Wayne Sutton's launch of opensync.dev, a tool to track OpenCode and Claude CLI coding sessions in one place: searchable history, markdown export, eval-ready datasets, and views into tool usage, token spend, and session activity across projects. Theo frames it as a model of good devrel in 2026.
 
-- [am.will](https://x.com/llmjunky/status/2013314055755194468) — 2026-01-20: Recommends Dillon Mulroy's planning approach for AI agents — concise plan-writing format. Notes similarity to their own process but prefers Mulroy's testing language. Quote-tweets Mulroy's post about product owners being right all along.
+- [abhi](https://x.com/abhigyawangoo/status/2013823175855923640) — 2026-01-21: A detailed playbook for building continually-improving AI agents: define the business metric first, think in terms of many per-message/session/long-tail signals (not just thumbs up/down), design UI that makes signal collection easy, build signal-derived few-shot rankers, and A/B test every change against a control group. Includes a long copy-paste prompt for having Claude Code wire feedback loops into an existing agent. Warns about reward hacking when over-optimizing a single signal.
 
-- [Mischa van den Burg](https://x.com/mischa_vdburg/status/2013178484143571034) — 2026-01-20: Maps Steve Yegge's AI agent orchestration framework to DevOps patterns. Two primitives: Workers (single agent quality, like CI runners/pods/Lambdas) and Factories (coordination across many agents, like schedulers/control planes). Key concepts: 'Nondeterministic Idempotence' as the new eventual consistency, audit trails for AI work becoming as critical as infrastructure audit trails.
+- [Matt Simpson](https://x.com/msmps_/status/2013376201977463038) — 2026-01-20: Matt Simpson shipped 'opentui-skill', a skill that gives coding agents TUI (terminal UI) superpowers via decision trees, progressive disclosure, and documented gotchas. Inspired by Dillon Mulroy's cloudflare-skill. Install instructions in a follow-up reply.
 
-- [Rohun](https://x.com/rohunjauhar/status/2012983351288692941) — 2026-01-19: Open-sourced an autonomous Claude Code workflow: describe what to build, answer interview questions, then close your laptop. Claude creates a PRD with user stories, designs architecture, analyzes edge cases, validates story quality, converts to JSON, and kicks off an autonomous build loop in GitHub Codespaces. Get a notification when done.
+- [am.will](https://x.com/llmjunky/status/2013314055755194468) — 2026-01-20: am.will endorses a post by Dillon Mulroy on writing agent plans, calling it similar to his own approach but more concise. Plans to adopt some of Dillon's phrasing, especially the language around testing.
 
-- [Ian Nuttall](https://x.com/iannuttall/status/2012833663319195970) — 2026-01-19: Built dotagents — a tool to sync agent configuration across different harnesses (Claude Code, OpenCode, etc.) from ~/.agents or .agents directory. Solves the pain of switching between AI coding tools. Open-source on GitHub.
+- [Sumanth](https://x.com/sumanth_077/status/2013232922296561826) — 2026-01-20: Overview of PageIndex, an open-source 'vectorless' RAG framework that drops vector databases and arbitrary chunking. It builds an LLM-optimized hierarchical tree (like a table of contents) and uses reasoning-based tree search to navigate documents the way a human expert would, giving traceable page-level references. Powers Mafin 2.5, which hits 98.7% on FinanceBench. GitHub link in comments.
 
-- [Abhishek Singh](https://x.com/0xlelouch_/status/2012816833464922398) — 2026-01-19: Framework for reasoning about unfamiliar systems, learned from a Staff Engineer: start with business goals not code, identify critical paths, map ownership boundaries, look for invariants, read postmortems before docs, ask what breaks at 10x load. Skills that separate senior from staff engineers.
+- [Mischa van den Burg](https://x.com/mischa_vdburg/status/2013178484143571034) — 2026-01-20: Argues AI agent orchestration is the next 'container orchestration war', building on a Steve Yegge framework of two primitives: Workers (making a single agent produce high-quality output) vs Factories (coordinating thousands of work items across many agents). Maps these to familiar infra patterns - Workers = CI runners/pods/Lambdas, Factories = schedulers/control planes/workflow engines. Predicts 'nondeterministic idempotence' as the new eventual consistency, audit trails for AI work, GitOps-style declarative state, and reuse of the microservices observability stack. Kubernetes-fluent engineers have a head start.
 
-- [Paul Solt](https://x.com/paulsolt/status/2012010080414081188) — 2026-01-16: 7 beginner tips for OpenAI Codex: use GPT-5.2-Codex high (not xhigh) for most tasks, provide local Markdown docs instead of web scraping via DocSetQuery tool, follow @steipete's workflow posts, copy aspects of Peter's agents.md file. Practical getting-started advice.
+- [Rohun](https://x.com/rohunjauhar/status/2012983351288692941) — 2026-01-19: Rohun open-sourced 'claude-build-workflow', a Claude Code workflow for autonomous building: you describe what you want, answer 10-15 min of interview questions, then close your laptop while an autonomous build loop runs in GitHub Codespaces and notifies your phone when done. It generates a PRD with user stories, technical architecture, edge-case analysis, story-quality validation, JSON conversion, then kicks off the build loop. Stitched together from Geoffrey Huntley's Ralph (bash-loop technique), Ryan Carson's snarktank/ralph (PRD skills, progress tracking, auto-commits, quality checks), and the BMAD Method (discovery/interview framework), adapted from Amp to Claude Code with phone notifications and one-command setup. Repo: github.com/rohunj/claude-build-workflow.
+
+- [Ian Nuttall](https://x.com/iannuttall/status/2012833663319195970) — 2026-01-19: Ian Nuttall shares 'dotagents' (github.com/iannuttall/dotagents), a tool he built to stop the pain of switching between different agent harnesses/clients - he now runs everything from ~/.agents or .agents. Posted in reply to Theo asking for a way to sync agent skills/config across repos via symlink. PRs welcome for unsupported clients.
+
+- [Abhishek Singh](https://x.com/0xlelouch_/status/2012816833464922398) — 2026-01-19: A Senior Staff Engineer's method for reasoning about unfamiliar systems: (1) start with the business goal and what 'failure' means, not the code; (2) identify the 2-3 critical paths where latency/correctness/money matter; (3) map ownership boundaries and handoff gray areas; (4) look for invariants that must hold even during partial failures/deploys; (5) read postmortems before docs (real vs intended behavior); (6) ask 'what breaks first at 10x load?' to expose hidden assumptions. The kind of skill that separates senior from staff.
+
+- [Sisyphus Labs](https://x.com/justsisyphus/status/2012441415398109192) — 2026-01-17: Sisyphus Labs recommends Rohit Ghumare's article 'Agents 201: Orchestrating Multiple Agents That Actually Work' as the first useful piece on agent orchestration. The article's premise: after building a single agent, the next challenge isn't making it smarter but making multiple agents cooperate without blowing the token budget or creating coordination chaos.
+
+- [giyu_codes](https://x.com/giyu_codes/status/2012420750855012428) — 2026-01-16: giyu_codes recommends cogsec (@affaan)'s article 'The Shorthand Guide to Everything Claude Code' - a complete setup after 10 months of daily use covering skills, hooks, subagents, MCPs, plugins, and what actually works. High-reach post (~806K views).
+
+- [Gregor Zunic](https://x.com/gregpr07/status/2012052139384979773) — 2026-01-16: Gregor Zunic (Browser Use) argues 'The Bitter Lesson of Agent Frameworks': all the value is in the RL'd model, not thousands of lines of abstractions. An agent is just a for-loop of tool calls that runs until the model stops. Abstractions freeze assumptions and fight what the model already learned; agent frameworks fail because their action spaces are incomplete, not because models are weak. Their fix: start with maximal capability then restrict ('vibe-restrict' via evals). BU Agent gives the model raw Chrome DevTools Protocol + extension APIs for a near-complete action space. Also covers a minimal model-agnostic Chat wrapper (Anthropic/OpenAI/Google), ephemeral messages to keep massive DOM/screenshot state out of context, and the done() tool for explicit completion. Reliability (retries, rate limits, compaction) is ops, not the agent. Open-sourcing as agent-sdk (includes a Claude Code re-implementation).
+
+- [Paul Solt](https://x.com/paulsolt/status/2012010080414081188) — 2026-01-16: Paul Solt's 7 beginner tips for OpenAI Codex: (1) start with GPT-5.2-Codex 'high' reasoning - enough for most work, avoid xhigh unless tricky; (2) when reasoning doesn't help, give agents better up-to-date local docs (he uses DocSetQuery to turn Dash DocSets into local Markdown); (3) read Peter Steinberger's (@steipete) 'shipping at inference speed' post; (4) borrow from Peter's agents.md and agent-scripts (e.g. 'committer' for atomic commits with multiple agents in one folder); (5) just talk to Codex - no complex rules or huge plan files; work one aspect at a time and parallelize projects while waiting; (6) ask agents to copy structure/Makefiles from other projects; (7) you'll likely need YOLO/danger mode to avoid constant approval nagging.
 
 - [Gergely Orosz](https://x.com/gergelyorosz/status/2011956185650409558) — 2026-01-16: Gergely Orosz (Pragmatic Engineer) endorses Cindy Sridharan's take that engineers should aim to understand close to 100% of LLM-generated production code. Notes the tension: heavy AI usage is easiest on prototypes where quality matters less, but understanding matters most in production.
 
@@ -1632,7 +1644,7 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (127)
+### Skills & MCP (128)
 
 - [How To Prompt](https://x.com/howtoprompt__/status/2074122800961614184) — 2026-07-07: How To Prompt (hype framing: "China has killed the vector database industry") flags Tencent's newly open-sourced TencentDB Agent Memory — local long-term memory for AI agents that runs 100% on plain SQLite with no external vector DB or cloud APIs. Claims 61% fewer tokens and PersonaMem accuracy 48%->76%. Uses a layered 'semantic pyramid' (L0 conversation -> L1 atom -> L2 scenario -> L3 persona) stored as inspectable markdown + Mermaid graphs instead of opaque vector compression, with drill-back to raw logs by node_id. ~5.1k GitHub stars.
 
@@ -1870,9 +1882,11 @@
 
 - [kitze](https://x.com/thekitze/status/2021494167113990464) — 2026-02-12: kitze boosts Maximiliano Firtman's note that Chrome 146 ships an early flagged preview of WebMCP, which lets AI agents query and execute a web app's services without driving the UI like a human. Services are declared imperatively via a navigator.modelContext API or declaratively through a form; kitze calls exposing them 'the new responsive design.'
 
-- [Matt Simpson](https://x.com/msmps_/status/2013376201977463038) — 2026-01-20: Released opentui-skill — gives AI agents TUI (terminal UI) superpowers: decision trees, progressive disclosure, gotcha warnings that save hours. Inspired by Dillon Mulroy's cloudflare-skill.
+- [Matt Simpson](https://x.com/msmps_/status/2013376201977463038) — 2026-01-20: Matt Simpson shipped 'opentui-skill', a skill that gives coding agents TUI (terminal UI) superpowers via decision trees, progressive disclosure, and documented gotchas. Inspired by Dillon Mulroy's cloudflare-skill. Install instructions in a follow-up reply.
 
-- [giyu_codes](https://x.com/giyu_codes/status/2012420750855012428) — 2026-01-16: Shares cogsec's comprehensive 'Shorthand Guide to Everything Claude Code' — covering skills, hooks, subagents, MCPs, plugins, and practical workflows after 10 months of daily use since the Feb experimental rollout. 802.8K views signals broad interest.
+- [Ian Nuttall](https://x.com/iannuttall/status/2012833663319195970) — 2026-01-19: Ian Nuttall shares 'dotagents' (github.com/iannuttall/dotagents), a tool he built to stop the pain of switching between different agent harnesses/clients - he now runs everything from ~/.agents or .agents. Posted in reply to Theo asking for a way to sync agent skills/config across repos via symlink. PRs welcome for unsupported clients.
+
+- [giyu_codes](https://x.com/giyu_codes/status/2012420750855012428) — 2026-01-16: giyu_codes recommends cogsec (@affaan)'s article 'The Shorthand Guide to Everything Claude Code' - a complete setup after 10 months of daily use covering skills, hooks, subagents, MCPs, plugins, and what actually works. High-reach post (~806K views).
 
 - [Jarrod Watts](https://x.com/jarrodwatts/status/2009200810870428123) — 2026-01-08: Open sourced claude-code-config repo containing agents, commands, hooks, rules, skills, and plugins collected and created over several months for Claude Code. Simple but effective enhancements, continuously updated.
 
@@ -1888,7 +1902,7 @@
 
 - [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Anthropic released a frontend-design plugin for Claude Code — demo shows Claude creating a music player app. Install via /plugin marketplace add anthropics/claude-code and /plugin install frontend-design@claude-code-plugins.
 
-### Prompting (98)
+### Prompting (100)
 
 - [kaize](https://x.com/0x_kaize/status/2073743517155774641) — 2026-07-06: kaize shares a 'Loop engineering' reading list, arguing 2026 agents are less about smarter prompts and more about longer runs — the real questions are whether an agent can recover from a failed step, control spend, and know when to stop. Curated links: Addy Osmani (addyosmani.com/blog/loop-engineering), Firecrawl (firecrawl.dev/blog/loop-engineering), Oracle 'What is the AI agent loop', OpenAI 'Harness engineering', and Martin Fowler 'Harness engineering for coding agent users'.
 
@@ -2060,7 +2074,11 @@
 
 - [Peter Steinberger](https://x.com/steipete/status/2020704611640705485) — 2026-02-09: Peter Steinberger shares a SOUL.md rewrite prompt (via Molty) to give a coding agent a stronger personality: hold strong opinions instead of hedging, delete corporate-handbook rules, never open with filler like 'Great question', enforce brevity, allow natural humor, call out bad ideas (charm over cruelty), and permit well-placed swearing.
 
-- [am.will](https://x.com/llmjunky/status/2013314055755194468) — 2026-01-20: Recommends Dillon Mulroy's planning approach for AI agents — concise plan-writing format. Notes similarity to their own process but prefers Mulroy's testing language. Quote-tweets Mulroy's post about product owners being right all along.
+- [abhi](https://x.com/abhigyawangoo/status/2013823175855923640) — 2026-01-21: A detailed playbook for building continually-improving AI agents: define the business metric first, think in terms of many per-message/session/long-tail signals (not just thumbs up/down), design UI that makes signal collection easy, build signal-derived few-shot rankers, and A/B test every change against a control group. Includes a long copy-paste prompt for having Claude Code wire feedback loops into an existing agent. Warns about reward hacking when over-optimizing a single signal.
+
+- [am.will](https://x.com/llmjunky/status/2013314055755194468) — 2026-01-20: am.will endorses a post by Dillon Mulroy on writing agent plans, calling it similar to his own approach but more concise. Plans to adopt some of Dillon's phrasing, especially the language around testing.
+
+- [Paul Solt](https://x.com/paulsolt/status/2012010080414081188) — 2026-01-16: Paul Solt's 7 beginner tips for OpenAI Codex: (1) start with GPT-5.2-Codex 'high' reasoning - enough for most work, avoid xhigh unless tricky; (2) when reasoning doesn't help, give agents better up-to-date local docs (he uses DocSetQuery to turn Dash DocSets into local Markdown); (3) read Peter Steinberger's (@steipete) 'shipping at inference speed' post; (4) borrow from Peter's agents.md and agent-scripts (e.g. 'committer' for atomic commits with multiple agents in one folder); (5) just talk to Codex - no complex rules or huge plan files; work one aspect at a time and parallelize projects while waiting; (6) ask agents to copy structure/Makefiles from other projects; (7) you'll likely need YOLO/danger mode to avoid constant approval nagging.
 
 - [Jainam Parmar](https://x.com/aiwithjainam/status/1999815060965994896) — 2025-12-14: Claims 'Atom of Thought' prompting technique makes AI models 30-40% more accurate on complex reasoning tasks vs Chain of Thought. Presents as the technique that will change how everyone uses ChatGPT and Claude.
 
@@ -2330,9 +2348,9 @@
 
 - [chiefofautism](https://x.com/chiefofautism/status/2019608146692673886) — 2026-02-07: chiefofautism shares Shannon (github.com/KeygraphHQ/shannon), an autonomous white-box AI pentester for web applications.
 
-- [Sumanth](https://x.com/sumanth_077/status/2013232922296561826) — 2026-01-20: PageIndex — open-source RAG framework that replaces vector DBs and chunking with hierarchical tree indexing and reasoning-based retrieval. Builds a table-of-contents-like tree structure, then uses LLM reasoning to navigate it like a human expert. Achieves 98.6% accuracy on FinanceBench vs 79.1% for top vector RAG. Works on financial reports, legal filings, technical manuals.
+- [Sumanth](https://x.com/sumanth_077/status/2013232922296561826) — 2026-01-20: Overview of PageIndex, an open-source 'vectorless' RAG framework that drops vector databases and arbitrary chunking. It builds an LLM-optimized hierarchical tree (like a table of contents) and uses reasoning-based tree search to navigate documents the way a human expert would, giving traceable page-level references. Powers Mafin 2.5, which hits 98.7% on FinanceBench. GitHub link in comments.
 
-- [DAIR.AI](https://x.com/dair_ai/status/2012903315890225220) — 2026-01-19: Weekly roundup of top AI papers (Jan 12-18): covers Meta's latent action world models from in-the-wild video, cross-video transfer learning for environmental interactions, and universal interfaces for diverse embodiments. Research-focused academic paper digest.
+- [DAIR.AI](https://x.com/dair_ai/status/2012903315890225220) — 2026-01-19: DAIR.AI's Top AI Papers of the Week (Jan 12-18, 2026), heavy on agent memory and self-improvement: (1) Learning Latent Action World Models from in-the-wild video without action labels; (2) DroPE - extending context by dropping positional embeddings with cheap recalibration; (3) Dr. Zero - self-evolving search agents with no training data via proposer/solver loop (HRPO); (4) AgeMem - unified long/short-term memory as tool actions; (5) Focus - bio-inspired active context compression (22.7% token cut on SWE-bench Lite with Claude Haiku 4.5); (6) Agent-as-a-Judge survey; (7) SimpleMem - lifelong memory via semantic compression (30x token reduction); (8) Mistral's Ministral 3 (3B/8B/14B, Apache 2.0); (9) UniversalRAG - modality-aware multimodal RAG routing; (10) MemRL - runtime RL on episodic memory.
 
 - [Matt Dancho](https://x.com/mdancho84/status/2000658529753932273) — 2025-12-15: Open-source AI data science team in Python — automates data science workflows including data loading, cleaning, exploratory analysis, and feature engineering with 100% reproducible pipeline tracking. GitHub: business-science/ai-data-science-team.
 
@@ -2544,7 +2562,7 @@
 
 - [Dante O. Cuales](https://x.com/danteocualesjr/status/1957204427909321027) — 2025-08-18: Reply to a thread about AI engineering being easy to learn — argues the 'intimidation factor is mostly artificial' since most AI engineering is API orchestration, prompt optimization, and data pipeline work. The hard parts are already abstracted away.
 
-### Management (107)
+### Management (108)
 
 - [Ryan Carson](https://x.com/ryancarson/status/2074093250399330418) — 2026-07-07: Ryan Carson (@HelloUntangle) details orchestrating the largest/riskiest engineering program in the company's history with a single Fable parent orchestrator session: 834 files, prod data mutation, DB schema update, 31 PRs, started Friday->completed Monday, zero prod incidents. One parent Devin/Fable session planned the work, spawned ~40 child sessions to execute, enforced regression gates and backup checks between phases, and escalated only owner-level decisions (scope rulings, go/no-go on irreversible steps). Distills reusable program-management patterns for large migrations. In a follow-up he asks Cognition to let child Devin sessions pick their own model/mode independent of the parent.
 
@@ -2710,7 +2728,9 @@
 
 - [Dave Kline](https://x.com/dklineii/status/2015406993612079328) — 2026-01-25: Dave Kline shares a 5-step delegation system, noting that across 1,400+ managers he's trained, delegation is the universal struggle: the hard part isn't assigning work but ensuring it gets done well without micromanaging.
 
-- [Abhishek Singh](https://x.com/0xlelouch_/status/2012816833464922398) — 2026-01-19: Framework for reasoning about unfamiliar systems, learned from a Staff Engineer: start with business goals not code, identify critical paths, map ownership boundaries, look for invariants, read postmortems before docs, ask what breaks at 10x load. Skills that separate senior from staff engineers.
+- [Mischa van den Burg](https://x.com/mischa_vdburg/status/2013178484143571034) — 2026-01-20: Argues AI agent orchestration is the next 'container orchestration war', building on a Steve Yegge framework of two primitives: Workers (making a single agent produce high-quality output) vs Factories (coordinating thousands of work items across many agents). Maps these to familiar infra patterns - Workers = CI runners/pods/Lambdas, Factories = schedulers/control planes/workflow engines. Predicts 'nondeterministic idempotence' as the new eventual consistency, audit trails for AI work, GitOps-style declarative state, and reuse of the microservices observability stack. Kubernetes-fluent engineers have a head start.
+
+- [Abhishek Singh](https://x.com/0xlelouch_/status/2012816833464922398) — 2026-01-19: A Senior Staff Engineer's method for reasoning about unfamiliar systems: (1) start with the business goal and what 'failure' means, not the code; (2) identify the 2-3 critical paths where latency/correctness/money matter; (3) map ownership boundaries and handoff gray areas; (4) look for invariants that must hold even during partial failures/deploys; (5) read postmortems before docs (real vs intended behavior); (6) ask 'what breaks first at 10x load?' to expose hidden assumptions. The kind of skill that separates senior from staff.
 
 - [Gergely Orosz](https://x.com/gergelyorosz/status/2011956185650409558) — 2026-01-16: Gergely Orosz (Pragmatic Engineer) endorses Cindy Sridharan's take that engineers should aim to understand close to 100% of LLM-generated production code. Notes the tension: heavy AI usage is easiest on prototypes where quality matters less, but understanding matters most in production.
 
@@ -3000,7 +3020,7 @@
 
 - [Spencer Baggins](https://x.com/bigaiguy/status/2021532622963585214) — 2026-02-12: Engagement-style thread claiming 'OpenAI and Anthropic engineers leaked' a technique called 'Socratic prompting' that separates beginners from experts. The substantive nugget: instead of telling the AI what to do, ask it questions. Author claims output quality jumped from 6.2 to 9.1 out of 10.
 
-- [Miles Deutscher](https://x.com/milesdeutscher/status/2012237674409796036) — 2026-01-17: Curated 'Claude Code Starter Pack Part 2' — a filtered list of the top 1% of tools, tutorials, and resources for building with Claude Code. Quote-tweets an AI Edge article compiling the resource list.
+- [Miles Deutscher](https://x.com/milesdeutscher/status/2012237674409796036) — 2026-01-17: Miles Deutscher promotes a curated 'Claude Code Starter Pack (Part 2)' article by AI Edge - a filtered list of Claude Code tools, tutorials, and resources claimed to be the 1% worth your time. Framing leans on hype ('mega viral', 'extract alpha', 'life-changing systems'), so tagged questionable, but the underlying resource is a legitimate Claude Code tool/resource roundup.
 
 - [Jainam Parmar](https://x.com/aiwithjainam/status/1999815060965994896) — 2025-12-14: Claims 'Atom of Thought' prompting technique makes AI models 30-40% more accurate on complex reasoning tasks vs Chain of Thought. Presents as the technique that will change how everyone uses ChatGPT and Claude.
 
@@ -4836,50 +4856,50 @@
 - **2026-01-25** | [Theo - t3.gg](https://x.com/theo/status/2013888279355982131) | claude-code, dev-practices, agent-design
   Theo boosts Wayne Sutton's launch of opensync.dev, a tool to track OpenCode and Claude CLI coding sessions in one place: searchable history, markdown export, eval-ready datasets, and views into tool usage, token spend, and session activity across projects. Theo frames it as a model of good devrel in 2026.
 
-- **2026-01-21** | [abhi](https://x.com/abhigyawangoo/status/2013823175855923640) | agent-design
-  Deep dive on why AI agents fail and how to fix them with feedback loops. Covers defining agent goals with business metrics, building continual learning systems, and embracing self-improvement. Author owned agent infra used by millions. Key insight: RAG alone isn't enough — agents need domain-specific adaptation and feedback integration.
+- **2026-01-21** | [abhi](https://x.com/abhigyawangoo/status/2013823175855923640) | agent-design, dev-practices, prompting
+  A detailed playbook for building continually-improving AI agents: define the business metric first, think in terms of many per-message/session/long-tail signals (not just thumbs up/down), design UI that makes signal collection easy, build signal-derived few-shot rankers, and A/B test every change against a control group. Includes a long copy-paste prompt for having Claude Code wire feedback loops into an existing agent. Warns about reward hacking when over-optimizing a single signal.
 
-- **2026-01-20** | [Matt Simpson](https://x.com/msmps_/status/2013376201977463038) | skills-mcp, claude-code
-  Released opentui-skill — gives AI agents TUI (terminal UI) superpowers: decision trees, progressive disclosure, gotcha warnings that save hours. Inspired by Dillon Mulroy's cloudflare-skill.
+- **2026-01-20** | [Matt Simpson](https://x.com/msmps_/status/2013376201977463038) | skills-mcp, agent-design, dev-practices
+  Matt Simpson shipped 'opentui-skill', a skill that gives coding agents TUI (terminal UI) superpowers via decision trees, progressive disclosure, and documented gotchas. Inspired by Dillon Mulroy's cloudflare-skill. Install instructions in a follow-up reply.
 
-- **2026-01-20** | [am.will](https://x.com/llmjunky/status/2013314055755194468) | prompting, agent-design, dev-practices
-  Recommends Dillon Mulroy's planning approach for AI agents — concise plan-writing format. Notes similarity to their own process but prefers Mulroy's testing language. Quote-tweets Mulroy's post about product owners being right all along.
+- **2026-01-20** | [am.will](https://x.com/llmjunky/status/2013314055755194468) | dev-practices, prompting, agent-design
+  am.will endorses a post by Dillon Mulroy on writing agent plans, calling it similar to his own approach but more concise. Plans to adopt some of Dillon's phrasing, especially the language around testing.
 
-- **2026-01-20** | [Sumanth](https://x.com/sumanth_077/status/2013232922296561826) | research, agent-design
-  PageIndex — open-source RAG framework that replaces vector DBs and chunking with hierarchical tree indexing and reasoning-based retrieval. Builds a table-of-contents-like tree structure, then uses LLM reasoning to navigate it like a human expert. Achieves 98.6% accuracy on FinanceBench vs 79.1% for top vector RAG. Works on financial reports, legal filings, technical manuals.
+- **2026-01-20** | [Sumanth](https://x.com/sumanth_077/status/2013232922296561826) | research, agent-design, dev-practices
+  Overview of PageIndex, an open-source 'vectorless' RAG framework that drops vector databases and arbitrary chunking. It builds an LLM-optimized hierarchical tree (like a table of contents) and uses reasoning-based tree search to navigate documents the way a human expert would, giving traceable page-level references. Powers Mafin 2.5, which hits 98.7% on FinanceBench. GitHub link in comments.
 
-- **2026-01-20** | [Mischa van den Burg](https://x.com/mischa_vdburg/status/2013178484143571034) | agent-design, dev-practices
-  Maps Steve Yegge's AI agent orchestration framework to DevOps patterns. Two primitives: Workers (single agent quality, like CI runners/pods/Lambdas) and Factories (coordination across many agents, like schedulers/control planes). Key concepts: 'Nondeterministic Idempotence' as the new eventual consistency, audit trails for AI work becoming as critical as infrastructure audit trails.
+- **2026-01-20** | [Mischa van den Burg](https://x.com/mischa_vdburg/status/2013178484143571034) | agent-design, dev-practices, management
+  Argues AI agent orchestration is the next 'container orchestration war', building on a Steve Yegge framework of two primitives: Workers (making a single agent produce high-quality output) vs Factories (coordinating thousands of work items across many agents). Maps these to familiar infra patterns - Workers = CI runners/pods/Lambdas, Factories = schedulers/control planes/workflow engines. Predicts 'nondeterministic idempotence' as the new eventual consistency, audit trails for AI work, GitOps-style declarative state, and reuse of the microservices observability stack. Kubernetes-fluent engineers have a head start.
 
 - **2026-01-19** | [Rohun](https://x.com/rohunjauhar/status/2012983351288692941) | claude-code, agent-design, dev-practices
-  Open-sourced an autonomous Claude Code workflow: describe what to build, answer interview questions, then close your laptop. Claude creates a PRD with user stories, designs architecture, analyzes edge cases, validates story quality, converts to JSON, and kicks off an autonomous build loop in GitHub Codespaces. Get a notification when done.
+  Rohun open-sourced 'claude-build-workflow', a Claude Code workflow for autonomous building: you describe what you want, answer 10-15 min of interview questions, then close your laptop while an autonomous build loop runs in GitHub Codespaces and notifies your phone when done. It generates a PRD with user stories, technical architecture, edge-case analysis, story-quality validation, JSON conversion, then kicks off the build loop. Stitched together from Geoffrey Huntley's Ralph (bash-loop technique), Ryan Carson's snarktank/ralph (PRD skills, progress tracking, auto-commits, quality checks), and the BMAD Method (discovery/interview framework), adapted from Amp to Claude Code with phone notifications and one-command setup. Repo: github.com/rohunj/claude-build-workflow.
 
-- **2026-01-19** | [DAIR.AI](https://x.com/dair_ai/status/2012903315890225220) | research
-  Weekly roundup of top AI papers (Jan 12-18): covers Meta's latent action world models from in-the-wild video, cross-video transfer learning for environmental interactions, and universal interfaces for diverse embodiments. Research-focused academic paper digest.
+- **2026-01-19** | [DAIR.AI](https://x.com/dair_ai/status/2012903315890225220) | research, agent-design
+  DAIR.AI's Top AI Papers of the Week (Jan 12-18, 2026), heavy on agent memory and self-improvement: (1) Learning Latent Action World Models from in-the-wild video without action labels; (2) DroPE - extending context by dropping positional embeddings with cheap recalibration; (3) Dr. Zero - self-evolving search agents with no training data via proposer/solver loop (HRPO); (4) AgeMem - unified long/short-term memory as tool actions; (5) Focus - bio-inspired active context compression (22.7% token cut on SWE-bench Lite with Claude Haiku 4.5); (6) Agent-as-a-Judge survey; (7) SimpleMem - lifelong memory via semantic compression (30x token reduction); (8) Mistral's Ministral 3 (3B/8B/14B, Apache 2.0); (9) UniversalRAG - modality-aware multimodal RAG routing; (10) MemRL - runtime RL on episodic memory.
 
-- **2026-01-19** | [Ian Nuttall](https://x.com/iannuttall/status/2012833663319195970) | claude-code, agent-design, dev-practices
-  Built dotagents — a tool to sync agent configuration across different harnesses (Claude Code, OpenCode, etc.) from ~/.agents or .agents directory. Solves the pain of switching between AI coding tools. Open-source on GitHub.
+- **2026-01-19** | [Ian Nuttall](https://x.com/iannuttall/status/2012833663319195970) | skills-mcp, dev-practices, claude-code
+  Ian Nuttall shares 'dotagents' (github.com/iannuttall/dotagents), a tool he built to stop the pain of switching between different agent harnesses/clients - he now runs everything from ~/.agents or .agents. Posted in reply to Theo asking for a way to sync agent skills/config across repos via symlink. PRs welcome for unsupported clients.
 
 - **2026-01-19** | [Abhishek Singh](https://x.com/0xlelouch_/status/2012816833464922398) | dev-practices, management
-  Framework for reasoning about unfamiliar systems, learned from a Staff Engineer: start with business goals not code, identify critical paths, map ownership boundaries, look for invariants, read postmortems before docs, ask what breaks at 10x load. Skills that separate senior from staff engineers.
+  A Senior Staff Engineer's method for reasoning about unfamiliar systems: (1) start with the business goal and what 'failure' means, not the code; (2) identify the 2-3 critical paths where latency/correctness/money matter; (3) map ownership boundaries and handoff gray areas; (4) look for invariants that must hold even during partial failures/deploys; (5) read postmortems before docs (real vs intended behavior); (6) ask 'what breaks first at 10x load?' to expose hidden assumptions. The kind of skill that separates senior from staff.
 
-- **2026-01-17** | [Sisyphus Labs](https://x.com/justsisyphus/status/2012441415398109192) | agent-design
-  Highlights Rohit Ghumare's 'Agents 201' article on orchestrating multiple agents — covering coordination patterns, token budget management, and avoiding common multi-agent pitfalls. Calls it 'the first useful article that covers agent orchestration.'
+- **2026-01-17** | [Sisyphus Labs](https://x.com/justsisyphus/status/2012441415398109192) | agent-design, dev-practices
+  Sisyphus Labs recommends Rohit Ghumare's article 'Agents 201: Orchestrating Multiple Agents That Actually Work' as the first useful piece on agent orchestration. The article's premise: after building a single agent, the next challenge isn't making it smarter but making multiple agents cooperate without blowing the token budget or creating coordination chaos.
 
 - **2026-01-17** | [Miles Deutscher](https://x.com/milesdeutscher/status/2012237674409796036) | claude-code, questionable
-  Curated 'Claude Code Starter Pack Part 2' — a filtered list of the top 1% of tools, tutorials, and resources for building with Claude Code. Quote-tweets an AI Edge article compiling the resource list.
+  Miles Deutscher promotes a curated 'Claude Code Starter Pack (Part 2)' article by AI Edge - a filtered list of Claude Code tools, tutorials, and resources claimed to be the 1% worth your time. Framing leans on hype ('mega viral', 'extract alpha', 'life-changing systems'), so tagged questionable, but the underlying resource is a legitimate Claude Code tool/resource roundup.
 
-- **2026-01-16** | [giyu_codes](https://x.com/giyu_codes/status/2012420750855012428) | claude-code, skills-mcp
-  Shares cogsec's comprehensive 'Shorthand Guide to Everything Claude Code' — covering skills, hooks, subagents, MCPs, plugins, and practical workflows after 10 months of daily use since the Feb experimental rollout. 802.8K views signals broad interest.
+- **2026-01-16** | [giyu_codes](https://x.com/giyu_codes/status/2012420750855012428) | claude-code, skills-mcp, dev-practices
+  giyu_codes recommends cogsec (@affaan)'s article 'The Shorthand Guide to Everything Claude Code' - a complete setup after 10 months of daily use covering skills, hooks, subagents, MCPs, plugins, and what actually works. High-reach post (~806K views).
 
 - **2026-01-16** | [Yishan](https://x.com/yishan/status/2012067968331710639) | general
   [Post deleted/unavailable]
 
-- **2026-01-16** | [Gregor Zunic](https://x.com/gregpr07/status/2012052139384979773) | agent-design, claude-code
-  Browser Use founder argues agent frameworks are counterproductive — 'The Bitter Lesson of Agent Frameworks.' All the value is in the RL'd model, not 10,000 lines of abstractions. An agent is just a for-loop of tool calls. Their own agents improved when they stripped away framework complexity. Shows how to build Claude Code in minimal code.
+- **2026-01-16** | [Gregor Zunic](https://x.com/gregpr07/status/2012052139384979773) | agent-design, dev-practices, claude-code
+  Gregor Zunic (Browser Use) argues 'The Bitter Lesson of Agent Frameworks': all the value is in the RL'd model, not thousands of lines of abstractions. An agent is just a for-loop of tool calls that runs until the model stops. Abstractions freeze assumptions and fight what the model already learned; agent frameworks fail because their action spaces are incomplete, not because models are weak. Their fix: start with maximal capability then restrict ('vibe-restrict' via evals). BU Agent gives the model raw Chrome DevTools Protocol + extension APIs for a near-complete action space. Also covers a minimal model-agnostic Chat wrapper (Anthropic/OpenAI/Google), ephemeral messages to keep massive DOM/screenshot state out of context, and the done() tool for explicit completion. Reliability (retries, rate limits, compaction) is ops, not the agent. Open-sourcing as agent-sdk (includes a Claude Code re-implementation).
 
-- **2026-01-16** | [Paul Solt](https://x.com/paulsolt/status/2012010080414081188) | dev-practices, agent-design
-  7 beginner tips for OpenAI Codex: use GPT-5.2-Codex high (not xhigh) for most tasks, provide local Markdown docs instead of web scraping via DocSetQuery tool, follow @steipete's workflow posts, copy aspects of Peter's agents.md file. Practical getting-started advice.
+- **2026-01-16** | [Paul Solt](https://x.com/paulsolt/status/2012010080414081188) | dev-practices, agent-design, prompting
+  Paul Solt's 7 beginner tips for OpenAI Codex: (1) start with GPT-5.2-Codex 'high' reasoning - enough for most work, avoid xhigh unless tricky; (2) when reasoning doesn't help, give agents better up-to-date local docs (he uses DocSetQuery to turn Dash DocSets into local Markdown); (3) read Peter Steinberger's (@steipete) 'shipping at inference speed' post; (4) borrow from Peter's agents.md and agent-scripts (e.g. 'committer' for atomic commits with multiple agents in one folder); (5) just talk to Codex - no complex rules or huge plan files; work one aspect at a time and parallelize projects while waiting; (6) ask agents to copy structure/Makefiles from other projects; (7) you'll likely need YOLO/danger mode to avoid constant approval nagging.
 
 - **2026-01-16** | [vas](https://x.com/vasuman/status/2011983687433212330) | agent-design
   Comprehensive 'AI Agents 101' guide from a former Meta engineer — covers fundamentals of building AI agents that work, drawing on experience with systems processing billions of transactions. Promises a part 2 with practical examples.
