@@ -1,18 +1,18 @@
 # AI Links Collection
-**Total Posts**: 691  
-**Date Range**: 2024-06-11 – 2026-07-09  
-**Enriched**: 690/691 (99%)
+**Total Posts**: 692  
+**Date Range**: 2024-06-11 – 2026-07-13  
+**Enriched**: 691/692 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-07-10T16:40:33Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-13T22:48:00Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-09** — [Kodus](https://kodus.io/self-hosted-ai-code-review/) — *now • Dev Practices • v1 enriched*  
   Kodus (github.com/kodustech/kodus-ai) — open-source AGPLv3 self-hosted AI code review. The full PR-review pipeline (Kody agent) runs on your own infrastructure with bring-your-own-LLM: it posts line-anchored inline comments covering logic/security/performance (or 'deep mode' with parallel bug/security/performance specialists), keeps source code, LLM calls, and audit trails inside your VPC, and supports GitHub Enterprise Server / GitLab Self-Managed / Bitbucket DC and air-gapped deploys. Jeremy flagged it to evaluate for work code reviews.
-- **2026-07-05** — [Nyk](https://x.com/nyk_builderz/status/2073305434069647735) — *now • Agent Design • v1 enriched*  
-  [Jeremy flagged: urgent for orchestration] Nyk released Council of High Intelligence v1.2.0 as a Claude Code plugin (/plugin marketplace add 0xNyk/council-of-high-intelligence) — an 18-persona deliberation engine (Aristotle, Feynman, Kahneman, Torvalds, Socrates, Taleb, Meadows + more) that runs 3 rounds of anonymized cross-examination to one auditable verdict on your existing subscriptions, no API keys. v1.2.0 adds confidence-weighted verdicts (vote weight scales with stated confidence; a hesitant council escalates to you instead of forcing consensus, per Roundtable Policy + ConfMAD 2025), per-persona reasoning methods (Socratic elenchus, Taleb tail stress-testing, Meadows causal-loop mapping via DMAD), per-project defaults via .council.yaml, and CI parity gates so the Claude/Codex/Gemini coordinators can't silently drift.
+- **2026-07-13** — [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610) — *near-term • Agent Design • v1 enriched*  
+  Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a customized workflow skill (he recommends grabbing Matt Pocock's skills); self-healing, greppable docs with a 7-line summary header; agents that actually run and test the app themselves; e2e tests plus docs on how/what to test; custom precommit linters with --fix that shell out to a cheaper LLM (Composer 2.5 or Sonnet) to actually fix rather than flag; cross-agent review (codex/claude/cursor, never the same model reviewing itself) at research/plan/implementation/wrap-up; handoff worksheets committed with git tags so another agent can finish the job; automatic end-of-session agent feedback docs he periodically ingests to improve workflows; a tools/bin folder of agent-authored scripts (e.g. an agent_review CLI wrapper); and periodic agent sweeps through recent commits. Practical, adoptable patterns for a team running coding agents.
 - **2026-07-07** — [How To Prompt](https://x.com/howtoprompt__/status/2074122800961614184) — *near-term • Agent Design • 190.1K views • v1 enriched*  
   How To Prompt (hype framing: "China has killed the vector database industry") flags Tencent's newly open-sourced TencentDB Agent Memory — local long-term memory for AI agents that runs 100% on plain SQLite with no external vector DB or cloud APIs. Claims 61% fewer tokens and PersonaMem accuracy 48%->76%. Uses a layered 'semantic pyramid' (L0 conversation -> L1 atom -> L2 scenario -> L3 persona) stored as inspectable markdown + Mermaid graphs instead of opaque vector compression, with drill-back to raw logs by node_id. ~5.1k GitHub stars.
 - **2026-07-07** — [Ryan Carson](https://x.com/ryancarson/status/2074093250399330418) — *near-term • Agent Design • 209K views • v1 enriched*  
@@ -24,30 +24,31 @@
 *No concepts gained new evidence in the last 14 days. Run mechanical discovery or seed curated concepts to populate this section.*
 
 ### Revisit from last month
-- **2026-01-16** — [giyu_codes](https://x.com/giyu_codes/status/2012420750855012428) — *near-term • Claude Code • 805.9K views • v1 enriched*  
-  giyu_codes recommends cogsec (@affaan)'s article 'The Shorthand Guide to Everything Claude Code' - a complete setup after 10 months of daily use covering skills, hooks, subagents, MCPs, plugins, and what actually works. High-reach post (~806K views).
-- **2026-01-16** — [Gregor Zunic](https://x.com/gregpr07/status/2012052139384979773) — *near-term • Agent Design • 255.4K views • v1 enriched*  
-  Gregor Zunic (Browser Use) argues 'The Bitter Lesson of Agent Frameworks': all the value is in the RL'd model, not thousands of lines of abstractions. An agent is just a for-loop of tool calls that runs until the model stops. Abstractions freeze assumptions and fight what the model already learned; agent frameworks fail because their action spaces are incomplete, not because models are weak. Their fix: start with maximal capability then restrict ('vibe-restrict' via evals). BU Agent gives the model raw Chrome DevTools Protocol + extension APIs for a near-complete action space. Also covers a minimal model-agnostic Chat wrapper (Anthropic/OpenAI/Google), ephemeral messages to keep massive DOM/screenshot state out of context, and the done() tool for explicit completion. Reliability (retries, rate limits, compaction) is ops, not the agent. Open-sourcing as agent-sdk (includes a Claude Code re-implementation).
+- **2025-12-07** — [Rohan Paul](https://x.com/rohanpaul_ai/status/1997405403987222642) — *near-term • Research • 64.7K views • v1 enriched*  
+  Rohan Paul summarizes Google's guide on context engineering for multi-agent systems (built around ADK). Instead of giant prompts, it compiles a view over state split into Working Context, Session, Memory, and Artifacts; each call rebuilds Working Context from instructions, selected session events, memory results, and artifact references. ADK controls context growth via compaction, filtering, and caching — summarizing old spans, dropping useless events, and reusing a stable prefix — and pushes large payloads out to Artifacts to keep systems fast, affordable, and less hallucination-prone.
+- **2025-12-08** — [Tom Dörr](https://x.com/tom_doerr/status/1996997820868366397) — *now • Skills & MCP • 127.8K views • v1 enriched*  
+  Tom Dörr shares 'awesome-claude-skills' (github.com/VoltAgent/awesome-claude-skills), a curated collection of official and community-built Claude skills.
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 363 | 52.5% |
-| claude-code | 178 | 25.8% |
-| dev-practices | 227 | 32.9% |
-| skills-mcp | 128 | 18.5% |
-| prompting | 100 | 14.5% |
-| research | 136 | 19.7% |
-| industry | 91 | 13.2% |
-| management | 108 | 15.6% |
-| questionable | 124 | 17.9% |
-| general | 88 | 12.7% |
+| agent-design | 366 | 52.9% |
+| claude-code | 178 | 25.7% |
+| dev-practices | 233 | 33.7% |
+| skills-mcp | 129 | 18.6% |
+| prompting | 101 | 14.6% |
+| research | 138 | 19.9% |
+| industry | 93 | 13.4% |
+| management | 106 | 15.3% |
+| questionable | 126 | 18.2% |
+| general | 89 | 12.9% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-07-13 | Jamon Holmgren | agent-design | Jamon Holmgren dumps his complete agentic coding setup as a 10+ point... |
 | 2026-07-09 | Kodus | dev-practices | Kodus (github.com/kodustech/kodus-ai) — open-source AGPLv3 self-hosted... |
 | 2026-07-07 | How To Prompt | agent-design | How To Prompt (hype framing: "China has killed the vector database ind... |
 | 2026-07-07 | Ryan Carson | agent-design | Ryan Carson (@HelloUntangle) details orchestrating the largest/riskies... |
@@ -97,12 +98,13 @@
 | 2026-06-23 | Dhilip Subramanian | industry | Dhilip Subramanian, a heavy dictation user (44,414 words via Wispr Flo... |
 | 2026-06-23 | 0xSero | research | 0xSero recommends an educational YouTube video explaining LoRA (Low-Ra... |
 | 2026-06-23 | Matthew Berman | agent-design | Matthew Berman announces a new Loop Library feature, Lazy Loops (aka D... |
-| 2026-06-23 | Ethan | agent-design | Ethan describes a personal wiki of ~1,000 supplements built from 150k... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (363)
+### Agent Design (366)
+
+- [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610) — 2026-07-13: Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a customized workflow skill (he recommends grabbing Matt Pocock's skills); self-healing, greppable docs with a 7-line summary header; agents that actually run and test the app themselves; e2e tests plus docs on how/what to test; custom precommit linters with --fix that shell out to a cheaper LLM (Composer 2.5 or Sonnet) to actually fix rather than flag; cross-agent review (codex/claude/cursor, never the same model reviewing itself) at research/plan/implementation/wrap-up; handoff worksheets committed with git tags so another agent can finish the job; automatic end-of-session agent feedback docs he periodically ingests to improve workflows; a tools/bin folder of agent-authored scripts (e.g. an agent_review CLI wrapper); and periodic agent sweeps through recent commits. Practical, adoptable patterns for a team running coding agents.
 
 - [Kodus](https://kodus.io/self-hosted-ai-code-review/) — 2026-07-09: Kodus (github.com/kodustech/kodus-ai) — open-source AGPLv3 self-hosted AI code review. The full PR-review pipeline (Kody agent) runs on your own infrastructure with bring-your-own-LLM: it posts line-anchored inline comments covering logic/security/performance (or 'deep mode' with parallel bug/security/performance specialists), keeps source code, LLM calls, and audit trails inside your VPC, and supports GitHub Enterprise Server / GitLab Self-Managed / Bitbucket DC and air-gapped deploys. Jeremy flagged it to evaluate for work code reviews.
 
@@ -780,27 +782,31 @@
 
 - [Paul Solt](https://x.com/paulsolt/status/2012010080414081188) — 2026-01-16: Paul Solt's 7 beginner tips for OpenAI Codex: (1) start with GPT-5.2-Codex 'high' reasoning - enough for most work, avoid xhigh unless tricky; (2) when reasoning doesn't help, give agents better up-to-date local docs (he uses DocSetQuery to turn Dash DocSets into local Markdown); (3) read Peter Steinberger's (@steipete) 'shipping at inference speed' post; (4) borrow from Peter's agents.md and agent-scripts (e.g. 'committer' for atomic commits with multiple agents in one folder); (5) just talk to Codex - no complex rules or huge plan files; work one aspect at a time and parallelize projects while waiting; (6) ask agents to copy structure/Makefiles from other projects; (7) you'll likely need YOLO/danger mode to avoid constant approval nagging.
 
-- [vas](https://x.com/vasuman/status/2011983687433212330) — 2026-01-16: Comprehensive 'AI Agents 101' guide from a former Meta engineer — covers fundamentals of building AI agents that work, drawing on experience with systems processing billions of transactions. Promises a part 2 with practical examples.
+- [vas](https://x.com/vasuman/status/2011983687433212330) — 2026-01-16: vas (@vasuman) shares 'AI Agents 101,' a comprehensive long-form X article on how to build AI agents that actually work, framed as required reading before writing any code and drawing on 3 years as a Meta software engineer. He asks whether a part 2 would be useful.
 
-- [James Cowling](https://x.com/jamesacowling/status/2011924122922852599) — 2026-01-16: James Cowling warns about an impending 'software crisis' from AI coding — references the 1960s/70s Software Crisis where productivity halted before good abstractions were developed. Argues companies need to invest in good architectural principles now or face the same crisis with AI-generated code.
+- [James Cowling](https://x.com/jamesacowling/status/2011924122922852599) — 2026-01-16: James Cowling points to the Software Crisis of the 1960s-70s (en.wikipedia.org/wiki/Software_crisis) as a warning: productivity ground to a halt until good abstractions for managing software complexity emerged. His thesis is that without good platforms, the same stall will happen again in the AI-coding era.
 
-- [Denislav Gavrilov](https://x.com/kuberdenis/status/2004934631616086417) — 2025-12-28: Containerized Claude Code in Kubernetes as a 24/7 on-call engineer — monitors a namespace, detects application errors, performs hotfixes, and documents them automatically. Shares repo (Clopus-Watcher) with examples and results.
+- [Denislav Gavrilov](https://x.com/kuberdenis/status/2004934631616086417) — 2025-12-28: Denislav Gavrilov containerizes Claude Code in Kubernetes as 'Clopus-Watcher,' an autonomous monitoring agent that watches a namespace and, on application errors, writes and applies a hotfix and documents it — effectively a 24/7 on-call engineer. Repo, examples, and results at denislavgavrilov.com.
 
-- [AGENTS.md](https://agents.md/) — 2025-12-28: agents.md — a specification/convention for describing AI agent capabilities in a standardized markdown format. Similar to robots.txt but for AI agents.
+- [AGENTS.md](https://agents.md/) — 2025-12-28: AGENTS.md (agents.md) is a simple, open format for guiding coding agents, now used by over 60k open-source projects. Think of it as a README for agents: a dedicated, predictable place for the build steps, tests, and conventions that coding agents need but that would clutter a human README — kept intentionally separate so agents have one clear location to look.
 
-- [Tech with Mak](https://x.com/technmak/status/2002713140757496299) — 2025-12-22: Comprehensive LangGraph learning path — covers building agentic AI chatbots, multi-agent coordination, LangGraph + MCP crash course (2.5 hrs), debugging/monitoring workflows, RAG pipelines with MultiModal support, fixing hallucinations, and fast search with Typesense.
+- [SightBringer](https://x.com/_the_prophet__/status/2004796159299084424) — 2025-12-27: An essay arguing software engineering is undergoing a 'phase transition' in human leverage: for decades leverage came from writing more correct instructions faster, but the unit of leverage has shifted from writing code to orchestrating intelligence. The programmer becomes a systems integrator of probabilistic entities whose reasoning can't be fully inspected or controlled — which the author says explains why even Karpathy feels 'behind.'
 
-- [Santiago](https://x.com/svpino/status/2002107789888655655) — 2025-12-19: Demos a spec-driven development environment where 100% of time goes to writing specs and managing agents, 0% to writing code. Argues software development will never be the same.
+- [Tech with Mak](https://x.com/technmak/status/2002713140757496299) — 2025-12-22: A structured LangGraph learning path (pitched as filling the gap since LangGraph appears in ~half of AI job descriptions). Progresses from basic agent concepts (Pydantic data validation, agentic chatbots, multi-agent coordination) through production systems (a 2.5-hour LangGraph+MCP crash course, debugging/monitoring, deployment architecture) to RAG pipelines (multimodal RAG, hallucination fixes, end-to-end retrieval, Typesense search).
 
-- [Femke Plantinga](https://x.com/femke_plantinga/status/2000883645888827806) — 2025-12-16: Breakdown of multi-agent AI architecture with four key components: Supervisors (orchestration/routing), specialized agents, coordination layer, and evaluation. Covers the tradeoff between complexity and capability vs single-agent simplicity.
+- [Claire Silver](https://x.com/clairesilver12/status/2002443560898208162) — 2025-12-21: Claire Silver highlights Unreal MCP, a free MCP server that lets you prompt Claude to build things in Unreal Engine — e.g. 'make a Victorian manor, here's a reference pic, use the assets in this folder' and it just does it. She promised a demo video and calls it '10/10 magic.'
 
-- [Matt Dancho](https://x.com/mdancho84/status/2000658529753932273) — 2025-12-15: Open-source AI data science team in Python — automates data science workflows including data loading, cleaning, exploratory analysis, and feature engineering with 100% reproducible pipeline tracking. GitHub: business-science/ai-data-science-team.
+- [Santiago](https://x.com/svpino/status/2002107789888655655) — 2025-12-19: Santiago shares a video demoing a spec-driven development environment where 100% of the developer's time goes to writing specs and managing agents and 0% to writing code — arguing software development will never be the same.
 
-- [Tech with Mak](https://x.com/technmak/status/1998264904563007889) — 2025-12-09: Google released five AI Agent papers across five consecutive days — 250+ pages covering how agents should be built, evaluated, secured, and deployed. Post provides distilled summary of all five papers.
+- [Femke Plantinga](https://x.com/femke_plantinga/status/2000883645888827806) — 2025-12-16: Femke Plantinga argues multi-agent AI systems are displacing single-agent architectures and breaks down what a well-structured one looks like: a supervisor/orchestration layer that plans, routes queries to specialists and refines them (the 'air traffic controller'), plus specialized task-specific agents (query rewriters, etc.). She notes the real trade-off — more complex workflows but serious coordination challenges.
 
-- [Rohan Paul](https://x.com/rohanpaul_ai/status/1998262710040228310) — 2025-12-09: Paper proposing an agentic file system for AI context management — treats everything as files in a shared space. Persistent context repository separates raw history, long-term memory, and short-lived scratchpads. Every access logged with timestamps and provenance.
+- [Matt Dancho (Business Science)](https://x.com/mdancho84/status/2000658529753932273) — 2025-12-15: Matt Dancho highlights an open-sourced (free) Python library, 'AI Data Science Team' (github.com/business-science/ai-data-science-team), that automates data-science workflows with AI — data loading, cleaning, exploratory analysis, and feature engineering — tracking each step in a fully reproducible pipeline. Includes a walkthrough video and a free 1-hour agentic AI workshop.
 
-- [Rohan Paul](https://x.com/rohanpaul_ai/status/1997405403987222642) — 2025-12-07: Google's guide on context engineering for multi-agent systems — replaces giant prompts with a compiled view over state split across Working Context, Session, Memory, and Artifacts. Uses ADK for context compaction, filtering, and caching.
+- [Tech with Mak](https://x.com/technmak/status/1998264904563007889) — 2025-12-09: Tech with Mak distills Google's quiet December release of five AI-agent papers published one per day over five consecutive days — more than 250 pages covering how agents should be built, evaluated, secured, and deployed.
+
+- [Rohan Paul](https://x.com/rohanpaul_ai/status/1998262710040228310) — 2025-12-09: Rohan Paul summarizes a paper proposing an 'agentic file system' for context engineering: treat every memory, tool, external source, and human note as a file in a shared space, with a persistent context repository separating raw history, long-term memory, and short-lived scratchpads so the prompt holds only the slice needed now. Every access is logged with timestamps and provenance, and a constructor/updater/evaluator manage context under the model's limited window.
+
+- [Rohan Paul](https://x.com/rohanpaul_ai/status/1997405403987222642) — 2025-12-07: Rohan Paul summarizes Google's guide on context engineering for multi-agent systems (built around ADK). Instead of giant prompts, it compiles a view over state split into Working Context, Session, Memory, and Artifacts; each call rebuilds Working Context from instructions, selected session events, memory results, and artifact references. ADK controls context growth via compaction, filtering, and caching — summarizing old spans, dropping useless events, and reusing a stable prefix — and pushes large payloads out to Artifacts to keep systems fast, affordable, and less hallucination-prone.
 
 - [Pontus Abrahamsson](https://x.com/pontusab/status/1981700333857636550) — 2025-10-24: Shares structure of a multi-agent AI system: 10 agents (triage + 9 specialists), 43 tools grouped by domain, 12 visual canvas artifacts. Each agent gets only the tools it needs — clean and maintainable architecture.
 
@@ -1160,13 +1166,13 @@
 
 - [Gregor Zunic](https://x.com/gregpr07/status/2012052139384979773) — 2026-01-16: Gregor Zunic (Browser Use) argues 'The Bitter Lesson of Agent Frameworks': all the value is in the RL'd model, not thousands of lines of abstractions. An agent is just a for-loop of tool calls that runs until the model stops. Abstractions freeze assumptions and fight what the model already learned; agent frameworks fail because their action spaces are incomplete, not because models are weak. Their fix: start with maximal capability then restrict ('vibe-restrict' via evals). BU Agent gives the model raw Chrome DevTools Protocol + extension APIs for a near-complete action space. Also covers a minimal model-agnostic Chat wrapper (Anthropic/OpenAI/Google), ephemeral messages to keep massive DOM/screenshot state out of context, and the done() tool for explicit completion. Reliability (retries, rate limits, compaction) is ops, not the agent. Open-sourcing as agent-sdk (includes a Claude Code re-implementation).
 
-- [Jarrod Watts](https://x.com/jarrodwatts/status/2009200810870428123) — 2026-01-08: Open sourced claude-code-config repo containing agents, commands, hooks, rules, skills, and plugins collected and created over several months for Claude Code. Simple but effective enhancements, continuously updated.
+- [Jarrod Watts](https://x.com/jarrodwatts/status/2009200810870428123) — 2026-01-08: Jarrod Watts open-sourced his 'claude-code-config' repo containing all the agents, commands, hooks, rules, skills, and plugins he's made or collected over the past few months — described as simple but effective enhancements he'll keep updating. A ready-made reference config for a team standardizing Claude Code setups.
 
-- [Denislav Gavrilov](https://x.com/kuberdenis/status/2004934631616086417) — 2025-12-28: Containerized Claude Code in Kubernetes as a 24/7 on-call engineer — monitors a namespace, detects application errors, performs hotfixes, and documents them automatically. Shares repo (Clopus-Watcher) with examples and results.
+- [Denislav Gavrilov](https://x.com/kuberdenis/status/2004934631616086417) — 2025-12-28: Denislav Gavrilov containerizes Claude Code in Kubernetes as 'Clopus-Watcher,' an autonomous monitoring agent that watches a namespace and, on application errors, writes and applies a hotfix and documents it — effectively a 24/7 on-call engineer. Repo, examples, and results at denislavgavrilov.com.
 
-- [Claire Silver](https://x.com/clairesilver12/status/2002443560898208162) — 2025-12-21: Highlights Unreal MCP — a free tool that lets you prompt Claude to build things in Unreal Engine. Example: 'make a Victorian manor, here's a reference pic, use the assets in this folder' and it just works. 699.3K views.
+- [Claire Silver](https://x.com/clairesilver12/status/2002443560898208162) — 2025-12-21: Claire Silver highlights Unreal MCP, a free MCP server that lets you prompt Claude to build things in Unreal Engine — e.g. 'make a Victorian manor, here's a reference pic, use the assets in this folder' and it just does it. She promised a demo video and calls it '10/10 magic.'
 
-- [Tom Dörr](https://x.com/tom_doerr/status/1996997820868366397) — 2025-12-08: Shares VoltAgent/awesome-claude-skills — a GitHub collection of official and community-built Claude skills. 126.8K views.
+- [Tom Dörr](https://x.com/tom_doerr/status/1996997820868366397) — 2025-12-08: Tom Dörr shares 'awesome-claude-skills' (github.com/VoltAgent/awesome-claude-skills), a curated collection of official and community-built Claude skills.
 
 - [Ray Fernando](https://x.com/rayfernando1337/status/1992848315541823490) — 2025-11-25: Links to the 'best Claude Skills breakdown' — a deep-dive blog post by Lee Han Chung covering Claude skills architecture and implementation details.
 
@@ -1188,7 +1194,9 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (227)
+### Dev Practices (233)
+
+- [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610) — 2026-07-13: Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a customized workflow skill (he recommends grabbing Matt Pocock's skills); self-healing, greppable docs with a 7-line summary header; agents that actually run and test the app themselves; e2e tests plus docs on how/what to test; custom precommit linters with --fix that shell out to a cheaper LLM (Composer 2.5 or Sonnet) to actually fix rather than flag; cross-agent review (codex/claude/cursor, never the same model reviewing itself) at research/plan/implementation/wrap-up; handoff worksheets committed with git tags so another agent can finish the job; automatic end-of-session agent feedback docs he periodically ingests to improve workflows; a tools/bin folder of agent-authored scripts (e.g. an agent_review CLI wrapper); and periodic agent sweeps through recent commits. Practical, adoptable patterns for a team running coding agents.
 
 - [Kodus](https://kodus.io/self-hosted-ai-code-review/) — 2026-07-09: Kodus (github.com/kodustech/kodus-ai) — open-source AGPLv3 self-hosted AI code review. The full PR-review pipeline (Kody agent) runs on your own infrastructure with bring-your-own-LLM: it posts line-anchored inline comments covering logic/security/performance (or 'deep mode' with parallel bug/security/performance specialists), keeps source code, LLM calls, and audit trails inside your VPC, and supports GitHub Enterprise Server / GitLab Self-Managed / Bitbucket DC and air-gapped deploys. Jeremy flagged it to evaluate for work code reviews.
 
@@ -1594,21 +1602,31 @@
 
 - [Paul Solt](https://x.com/paulsolt/status/2012010080414081188) — 2026-01-16: Paul Solt's 7 beginner tips for OpenAI Codex: (1) start with GPT-5.2-Codex 'high' reasoning - enough for most work, avoid xhigh unless tricky; (2) when reasoning doesn't help, give agents better up-to-date local docs (he uses DocSetQuery to turn Dash DocSets into local Markdown); (3) read Peter Steinberger's (@steipete) 'shipping at inference speed' post; (4) borrow from Peter's agents.md and agent-scripts (e.g. 'committer' for atomic commits with multiple agents in one folder); (5) just talk to Codex - no complex rules or huge plan files; work one aspect at a time and parallelize projects while waiting; (6) ask agents to copy structure/Makefiles from other projects; (7) you'll likely need YOLO/danger mode to avoid constant approval nagging.
 
-- [Gergely Orosz](https://x.com/gergelyorosz/status/2011956185650409558) — 2026-01-16: Gergely Orosz (Pragmatic Engineer) endorses Cindy Sridharan's take that engineers should aim to understand close to 100% of LLM-generated production code. Notes the tension: heavy AI usage is easiest on prototypes where quality matters less, but understanding matters most in production.
+- [vas](https://x.com/vasuman/status/2011983687433212330) — 2026-01-16: vas (@vasuman) shares 'AI Agents 101,' a comprehensive long-form X article on how to build AI agents that actually work, framed as required reading before writing any code and drawing on 3 years as a Meta software engineer. He asks whether a part 2 would be useful.
 
-- [James Cowling](https://x.com/jamesacowling/status/2011924122922852599) — 2026-01-16: James Cowling warns about an impending 'software crisis' from AI coding — references the 1960s/70s Software Crisis where productivity halted before good abstractions were developed. Argues companies need to invest in good architectural principles now or face the same crisis with AI-generated code.
+- [Gergely Orosz](https://x.com/gergelyorosz/status/2011956185650409558) — 2026-01-16: Gergely Orosz amplifies Cindy Sridharan's take that, outside of prototyping, engineers should aim to understand close to 100% of the production code LLMs generate. He adds that the gap between teams who do this and those who don't will be massive, and notes the tension: heavy cutting-edge AI use is easiest on throwaway prototypes where it's fine to let it rip.
 
-- [Denislav Gavrilov](https://x.com/kuberdenis/status/2004934631616086417) — 2025-12-28: Containerized Claude Code in Kubernetes as a 24/7 on-call engineer — monitors a namespace, detects application errors, performs hotfixes, and documents them automatically. Shares repo (Clopus-Watcher) with examples and results.
+- [James Cowling](https://x.com/jamesacowling/status/2011924122922852599) — 2026-01-16: James Cowling points to the Software Crisis of the 1960s-70s (en.wikipedia.org/wiki/Software_crisis) as a warning: productivity ground to a halt until good abstractions for managing software complexity emerged. His thesis is that without good platforms, the same stall will happen again in the AI-coding era.
 
-- [Santiago](https://x.com/svpino/status/2002107789888655655) — 2025-12-19: Demos a spec-driven development environment where 100% of time goes to writing specs and managing agents, 0% to writing code. Argues software development will never be the same.
+- [Jarrod Watts](https://x.com/jarrodwatts/status/2009200810870428123) — 2026-01-08: Jarrod Watts open-sourced his 'claude-code-config' repo containing all the agents, commands, hooks, rules, skills, and plugins he's made or collected over the past few months — described as simple but effective enhancements he'll keep updating. A ready-made reference config for a team standardizing Claude Code setups.
 
-- [Jason Fried](https://x.com/jasonfried/status/2002084849784676697) — 2025-12-19: Jason Fried shares a 1-hour video of Jeff (18-year 37signals veteran) explaining the 'recordables' pattern — the most important architectural pattern used in both Basecamp and HEY. Key reason both codebases remain a joy to work on.
+- [Denislav Gavrilov](https://x.com/kuberdenis/status/2004934631616086417) — 2025-12-28: Denislav Gavrilov containerizes Claude Code in Kubernetes as 'Clopus-Watcher,' an autonomous monitoring agent that watches a namespace and, on application errors, writes and applies a hotfix and documents it — effectively a 24/7 on-call engineer. Repo, examples, and results at denislavgavrilov.com.
 
-- [Justin Mitchel](https://x.com/justinmitchel/status/2001750598329499681) — 2025-12-19: pg_textsearch just open-sourced — brings BM25 relevance-ranked full-text search to Postgres. Eliminates the need to sync data to Elasticsearch for search. Google uses BM25 in their search engine. GitHub repo: timescale/pg_textsearch.
+- [AGENTS.md](https://agents.md/) — 2025-12-28: AGENTS.md (agents.md) is a simple, open format for guiding coding agents, now used by over 60k open-source projects. Think of it as a README for agents: a dedicated, predictable place for the build steps, tests, and conventions that coding agents need but that would clutter a human README — kept intentionally separate so agents have one clear location to look.
 
-- [Yahiya](https://x.com/yahiyadev/status/1997744726913736979) — 2025-12-08: Book recommendations for modular monolith architecture: 'Event-Driven Architecture in Golang' by Michael Stack (starts monolith, transitions to microservices, covers Event Sourcing, CQRS, DDD) and 'Domain-Driven Design with Golang' by Matthew Boyle.
+- [Tech with Mak](https://x.com/technmak/status/2002713140757496299) — 2025-12-22: A structured LangGraph learning path (pitched as filling the gap since LangGraph appears in ~half of AI job descriptions). Progresses from basic agent concepts (Pydantic data validation, agentic chatbots, multi-agent coordination) through production systems (a 2.5-hour LangGraph+MCP crash course, debugging/monitoring, deployment architecture) to RAG pipelines (multimodal RAG, hallucination fixes, end-to-end retrieval, Typesense search).
 
-- [AWS reinvent](https://github.com/aws-containers/reinvent) — 2025-12-01: AWS Containers re:Invent repository — resources and demos from AWS re:Invent conference related to container orchestration and deployment.
+- [Santiago](https://x.com/svpino/status/2002107789888655655) — 2025-12-19: Santiago shares a video demoing a spec-driven development environment where 100% of the developer's time goes to writing specs and managing agents and 0% to writing code — arguing software development will never be the same.
+
+- [Jason Fried](https://x.com/jasonfried/status/2002084849784676697) — 2025-12-19: Jason Fried shares a talk in which Jeff, an 18-year 37signals veteran, explains the 'recordables pattern' — the single most important architectural pattern behind Basecamp and HEY and a key reason both codebases remain a joy to work on. Fried calls the insights deep, practical, and accessible even to non-technical folks.
+
+- [Justin Mitchel](https://x.com/justinmitchel/status/2001750598329499681) — 2025-12-19: Justin Mitchel flags that pg_textsearch was just open-sourced (github.com/timescale/pg_textsearch), a PostgreSQL extension bringing BM25 relevance-ranked full-text search to your database — meaning teams already on Postgres can skip syncing data to Elasticsearch for keyword search. Post is marked #sponsored.
+
+- [Matt Dancho (Business Science)](https://x.com/mdancho84/status/2000658529753932273) — 2025-12-15: Matt Dancho highlights an open-sourced (free) Python library, 'AI Data Science Team' (github.com/business-science/ai-data-science-team), that automates data-science workflows with AI — data loading, cleaning, exploratory analysis, and feature engineering — tracking each step in a fully reproducible pipeline. Includes a walkthrough video and a free 1-hour agentic AI workshop.
+
+- [Yahiya](https://x.com/yahiyadev/status/1997744726913736979) — 2025-12-08: Answering a request for a book on structuring a monolith so services can be decoupled later, Yahiya recommends 'Event-Driven Architecture in Golang' by Michael Stack — which starts from a modular monolith and gradually transitions to microservices, covering Event Sourcing, CQRS, DDD, choreographed and orchestrated messaging, and sync-to-async refactoring — plus 'Domain-Driven Design with Golang' by Matthew Boyle.
+
+- [AWS Containers](https://github.com/aws-containers/reinvent) — 2025-12-01: The aws-containers/reinvent GitHub repo collects AWS re:Invent 2025 Kubernetes Track assets — slides, the latest EKS launches, and demos from the sessions. A reference for what AWS shipped for Kubernetes/EKS at re:Invent 2025.
 
 - [Dan Shipper](https://x.com/danshipper/status/1986870518046200255) — 2025-11-08: Links to 'Teach Your AI to Think Like a Senior Engineer' on Every — a masterclass article by @kieranklaassen on coding with AI, covering advanced workflows and senior-level prompting patterns.
 
@@ -1644,7 +1662,9 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (128)
+### Skills & MCP (129)
+
+- [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610) — 2026-07-13: Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a customized workflow skill (he recommends grabbing Matt Pocock's skills); self-healing, greppable docs with a 7-line summary header; agents that actually run and test the app themselves; e2e tests plus docs on how/what to test; custom precommit linters with --fix that shell out to a cheaper LLM (Composer 2.5 or Sonnet) to actually fix rather than flag; cross-agent review (codex/claude/cursor, never the same model reviewing itself) at research/plan/implementation/wrap-up; handoff worksheets committed with git tags so another agent can finish the job; automatic end-of-session agent feedback docs he periodically ingests to improve workflows; a tools/bin folder of agent-authored scripts (e.g. an agent_review CLI wrapper); and periodic agent sweeps through recent commits. Practical, adoptable patterns for a team running coding agents.
 
 - [How To Prompt](https://x.com/howtoprompt__/status/2074122800961614184) — 2026-07-07: How To Prompt (hype framing: "China has killed the vector database industry") flags Tencent's newly open-sourced TencentDB Agent Memory — local long-term memory for AI agents that runs 100% on plain SQLite with no external vector DB or cloud APIs. Claims 61% fewer tokens and PersonaMem accuracy 48%->76%. Uses a layered 'semantic pyramid' (L0 conversation -> L1 atom -> L2 scenario -> L3 persona) stored as inspectable markdown + Mermaid graphs instead of opaque vector compression, with drill-back to raw logs by node_id. ~5.1k GitHub stars.
 
@@ -1888,21 +1908,21 @@
 
 - [giyu_codes](https://x.com/giyu_codes/status/2012420750855012428) — 2026-01-16: giyu_codes recommends cogsec (@affaan)'s article 'The Shorthand Guide to Everything Claude Code' - a complete setup after 10 months of daily use covering skills, hooks, subagents, MCPs, plugins, and what actually works. High-reach post (~806K views).
 
-- [Jarrod Watts](https://x.com/jarrodwatts/status/2009200810870428123) — 2026-01-08: Open sourced claude-code-config repo containing agents, commands, hooks, rules, skills, and plugins collected and created over several months for Claude Code. Simple but effective enhancements, continuously updated.
+- [Jarrod Watts](https://x.com/jarrodwatts/status/2009200810870428123) — 2026-01-08: Jarrod Watts open-sourced his 'claude-code-config' repo containing all the agents, commands, hooks, rules, skills, and plugins he's made or collected over the past few months — described as simple but effective enhancements he'll keep updating. A ready-made reference config for a team standardizing Claude Code setups.
 
-- [AGENTS.md](https://agents.md/) — 2025-12-28: agents.md — a specification/convention for describing AI agent capabilities in a standardized markdown format. Similar to robots.txt but for AI agents.
+- [AGENTS.md](https://agents.md/) — 2025-12-28: AGENTS.md (agents.md) is a simple, open format for guiding coding agents, now used by over 60k open-source projects. Think of it as a README for agents: a dedicated, predictable place for the build steps, tests, and conventions that coding agents need but that would clutter a human README — kept intentionally separate so agents have one clear location to look.
 
-- [Tech with Mak](https://x.com/technmak/status/2002713140757496299) — 2025-12-22: Comprehensive LangGraph learning path — covers building agentic AI chatbots, multi-agent coordination, LangGraph + MCP crash course (2.5 hrs), debugging/monitoring workflows, RAG pipelines with MultiModal support, fixing hallucinations, and fast search with Typesense.
+- [Tech with Mak](https://x.com/technmak/status/2002713140757496299) — 2025-12-22: A structured LangGraph learning path (pitched as filling the gap since LangGraph appears in ~half of AI job descriptions). Progresses from basic agent concepts (Pydantic data validation, agentic chatbots, multi-agent coordination) through production systems (a 2.5-hour LangGraph+MCP crash course, debugging/monitoring, deployment architecture) to RAG pipelines (multimodal RAG, hallucination fixes, end-to-end retrieval, Typesense search).
 
-- [Claire Silver](https://x.com/clairesilver12/status/2002443560898208162) — 2025-12-21: Highlights Unreal MCP — a free tool that lets you prompt Claude to build things in Unreal Engine. Example: 'make a Victorian manor, here's a reference pic, use the assets in this folder' and it just works. 699.3K views.
+- [Claire Silver](https://x.com/clairesilver12/status/2002443560898208162) — 2025-12-21: Claire Silver highlights Unreal MCP, a free MCP server that lets you prompt Claude to build things in Unreal Engine — e.g. 'make a Victorian manor, here's a reference pic, use the assets in this folder' and it just does it. She promised a demo video and calls it '10/10 magic.'
 
-- [Tom Dörr](https://x.com/tom_doerr/status/1996997820868366397) — 2025-12-08: Shares VoltAgent/awesome-claude-skills — a GitHub collection of official and community-built Claude skills. 126.8K views.
+- [Tom Dörr](https://x.com/tom_doerr/status/1996997820868366397) — 2025-12-08: Tom Dörr shares 'awesome-claude-skills' (github.com/VoltAgent/awesome-claude-skills), a curated collection of official and community-built Claude skills.
 
 - [Ray Fernando](https://x.com/rayfernando1337/status/1992848315541823490) — 2025-11-25: Links to the 'best Claude Skills breakdown' — a deep-dive blog post by Lee Han Chung covering Claude skills architecture and implementation details.
 
 - [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Anthropic released a frontend-design plugin for Claude Code — demo shows Claude creating a music player app. Install via /plugin marketplace add anthropics/claude-code and /plugin install frontend-design@claude-code-plugins.
 
-### Prompting (100)
+### Prompting (101)
 
 - [kaize](https://x.com/0x_kaize/status/2073743517155774641) — 2026-07-06: kaize shares a 'Loop engineering' reading list, arguing 2026 agents are less about smarter prompts and more about longer runs — the real questions are whether an agent can recover from a failed step, control spend, and know when to stop. Curated links: Addy Osmani (addyosmani.com/blog/loop-engineering), Firecrawl (firecrawl.dev/blog/loop-engineering), Oracle 'What is the AI agent loop', OpenAI 'Harness engineering', and Martin Fowler 'Harness engineering for coding agent users'.
 
@@ -2080,9 +2100,11 @@
 
 - [Paul Solt](https://x.com/paulsolt/status/2012010080414081188) — 2026-01-16: Paul Solt's 7 beginner tips for OpenAI Codex: (1) start with GPT-5.2-Codex 'high' reasoning - enough for most work, avoid xhigh unless tricky; (2) when reasoning doesn't help, give agents better up-to-date local docs (he uses DocSetQuery to turn Dash DocSets into local Markdown); (3) read Peter Steinberger's (@steipete) 'shipping at inference speed' post; (4) borrow from Peter's agents.md and agent-scripts (e.g. 'committer' for atomic commits with multiple agents in one folder); (5) just talk to Codex - no complex rules or huge plan files; work one aspect at a time and parallelize projects while waiting; (6) ask agents to copy structure/Makefiles from other projects; (7) you'll likely need YOLO/danger mode to avoid constant approval nagging.
 
-- [Jainam Parmar](https://x.com/aiwithjainam/status/1999815060965994896) — 2025-12-14: Claims 'Atom of Thought' prompting technique makes AI models 30-40% more accurate on complex reasoning tasks vs Chain of Thought. Presents as the technique that will change how everyone uses ChatGPT and Claude.
+- [Jainam Parmar](https://x.com/aiwithjainam/status/1999815060965994896) — 2025-12-14: An engagement-styled post ('Chain of Thought is dead') claiming that 'Atom of Thought' prompting made models 30-40% more accurate on complex reasoning tasks, pitched as a technique that will change how people use ChatGPT and Claude. Hype framing, but the underlying Atom-of-Thought prompting idea is a real reasoning technique worth a look.
 
-- [Rohan Paul](https://x.com/rohanpaul_ai/status/1997405403987222642) — 2025-12-07: Google's guide on context engineering for multi-agent systems — replaces giant prompts with a compiled view over state split across Working Context, Session, Memory, and Artifacts. Uses ADK for context compaction, filtering, and caching.
+- [Rohan Paul](https://x.com/rohanpaul_ai/status/1998262710040228310) — 2025-12-09: Rohan Paul summarizes a paper proposing an 'agentic file system' for context engineering: treat every memory, tool, external source, and human note as a file in a shared space, with a persistent context repository separating raw history, long-term memory, and short-lived scratchpads so the prompt holds only the slice needed now. Every access is logged with timestamps and provenance, and a constructor/updater/evaluator manage context under the model's limited window.
+
+- [Rohan Paul](https://x.com/rohanpaul_ai/status/1997405403987222642) — 2025-12-07: Rohan Paul summarizes Google's guide on context engineering for multi-agent systems (built around ADK). Instead of giant prompts, it compiles a view over state split into Working Context, Session, Memory, and Artifacts; each call rebuilds Working Context from instructions, selected session events, memory results, and artifact references. ADK controls context growth via compaction, filtering, and caching — summarizing old spans, dropping useless events, and reusing a stable prefix — and pushes large payloads out to Artifacts to keep systems fast, affordable, and less hallucination-prone.
 
 - [George](https://x.com/nurijanian/status/1988335427447869565) — 2025-11-12: Shares a Claude prompt for critical product requirements analysis — acts as 'extremely tough and unreasonable product executive' who identifies cross-team collaboration gaps, conflicting requirements, maintainability issues, and strategic pitfalls.
 
@@ -2104,7 +2126,7 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
 
-### Research (136)
+### Research (138)
 
 - [0xSero](https://x.com/0xsero/status/2073651251594854573) — 2026-07-06: 0xSero (quote-tweeting Rohan Paul on a Meta paper showing quantized reasoning models often fail because compression makes them doubt a correct answer instead of finishing) reports experimenting with penalizing 'self-doubt' words during generation — claiming ~30% fewer output tokens — plus improving tok/s via CPU offloading.
 
@@ -2352,11 +2374,15 @@
 
 - [DAIR.AI](https://x.com/dair_ai/status/2012903315890225220) — 2026-01-19: DAIR.AI's Top AI Papers of the Week (Jan 12-18, 2026), heavy on agent memory and self-improvement: (1) Learning Latent Action World Models from in-the-wild video without action labels; (2) DroPE - extending context by dropping positional embeddings with cheap recalibration; (3) Dr. Zero - self-evolving search agents with no training data via proposer/solver loop (HRPO); (4) AgeMem - unified long/short-term memory as tool actions; (5) Focus - bio-inspired active context compression (22.7% token cut on SWE-bench Lite with Claude Haiku 4.5); (6) Agent-as-a-Judge survey; (7) SimpleMem - lifelong memory via semantic compression (30x token reduction); (8) Mistral's Ministral 3 (3B/8B/14B, Apache 2.0); (9) UniversalRAG - modality-aware multimodal RAG routing; (10) MemRL - runtime RL on episodic memory.
 
-- [Matt Dancho](https://x.com/mdancho84/status/2000658529753932273) — 2025-12-15: Open-source AI data science team in Python — automates data science workflows including data loading, cleaning, exploratory analysis, and feature engineering with 100% reproducible pipeline tracking. GitHub: business-science/ai-data-science-team.
+- [Justin Mitchel](https://x.com/justinmitchel/status/2001750598329499681) — 2025-12-19: Justin Mitchel flags that pg_textsearch was just open-sourced (github.com/timescale/pg_textsearch), a PostgreSQL extension bringing BM25 relevance-ranked full-text search to your database — meaning teams already on Postgres can skip syncing data to Elasticsearch for keyword search. Post is marked #sponsored.
 
-- [Tech with Mak](https://x.com/technmak/status/1998264904563007889) — 2025-12-09: Google released five AI Agent papers across five consecutive days — 250+ pages covering how agents should be built, evaluated, secured, and deployed. Post provides distilled summary of all five papers.
+- [Matt Dancho (Business Science)](https://x.com/mdancho84/status/2000658529753932273) — 2025-12-15: Matt Dancho highlights an open-sourced (free) Python library, 'AI Data Science Team' (github.com/business-science/ai-data-science-team), that automates data-science workflows with AI — data loading, cleaning, exploratory analysis, and feature engineering — tracking each step in a fully reproducible pipeline. Includes a walkthrough video and a free 1-hour agentic AI workshop.
 
-- [Rohan Paul](https://x.com/rohanpaul_ai/status/1998262710040228310) — 2025-12-09: Paper proposing an agentic file system for AI context management — treats everything as files in a shared space. Persistent context repository separates raw history, long-term memory, and short-lived scratchpads. Every access logged with timestamps and provenance.
+- [Tech with Mak](https://x.com/technmak/status/1998264904563007889) — 2025-12-09: Tech with Mak distills Google's quiet December release of five AI-agent papers published one per day over five consecutive days — more than 250 pages covering how agents should be built, evaluated, secured, and deployed.
+
+- [Rohan Paul](https://x.com/rohanpaul_ai/status/1998262710040228310) — 2025-12-09: Rohan Paul summarizes a paper proposing an 'agentic file system' for context engineering: treat every memory, tool, external source, and human note as a file in a shared space, with a persistent context repository separating raw history, long-term memory, and short-lived scratchpads so the prompt holds only the slice needed now. Every access is logged with timestamps and provenance, and a constructor/updater/evaluator manage context under the model's limited window.
+
+- [Rohan Paul](https://x.com/rohanpaul_ai/status/1997405403987222642) — 2025-12-07: Rohan Paul summarizes Google's guide on context engineering for multi-agent systems (built around ADK). Instead of giant prompts, it compiles a view over state split into Working Context, Session, Memory, and Artifacts; each call rebuilds Working Context from instructions, selected session events, memory results, and artifact references. ADK controls context growth via compaction, filtering, and caching — summarizing old spans, dropping useless events, and reusing a stable prefix — and pushes large payloads out to Artifacts to keep systems fast, affordable, and less hallucination-prone.
 
 - [Ray Fernando](https://x.com/rayfernando1337/status/1980180030971150690) — 2025-10-21: DeepSeek-OCR announced — optical compression for AI that processes 200K pages/day on one GPU, 33M pages/day on 20 nodes. Called 'the JPEG moment for AI' — makes AI memory architectures viable by solving training data bottlenecks.
 
@@ -2378,7 +2404,7 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: 15-part thread explaining the 'stunning, simple explanation behind matrix multiplication' — breaks down the most crucial idea behind modern machine learning. 1M views.
 
-### Industry (91)
+### Industry (93)
 
 - [Aaron Levie](https://x.com/levie/status/2073138135014502777) — 2026-07-05: Aaron Levie (Box CEO) argues the battle in AI is shaping up to be a battle for context: agent effectiveness comes down to having the right domain expertise, access to the right context and tools, and being embedded in workflows users can easily review and incorporate. The platforms that capture and leverage the best context within their agents — and pick the right model per task — will be where agents do their best work (coding, legal, support agents at scale). This is why the applied-AI layer is worth far more than being an 'LLM wrapper': the value is in organizing the critical knowledge.
 
@@ -2552,9 +2578,13 @@
 
 - [Machina](https://x.com/exm7777/status/2019787951530725396) — 2026-02-07: Machina's thread on how to stop feeling behind in AI: the relentless cadence of releases (GPT-5.3 Codex, Opus 4.6, Kling 3.0, all 'redefining everything') creates a low-grade, never-ending pressure. His reframe is that the problem isn't too much happening, it's the lack of a personal filter for what actually matters to your work.
 
-- [SightBringer](https://x.com/_the_prophet__/status/2004796159299084424) — 2025-12-27: Long-form essay arguing we're at a phase transition: leverage has shifted from writing code to orchestrating intelligence. The programmer is becoming a systems integrator of probabilistic entities. References Karpathy feeling 'behind' as evidence the profession's identity is shifting faster than practitioners can adapt.
+- [James Cowling](https://x.com/jamesacowling/status/2011924122922852599) — 2026-01-16: James Cowling points to the Software Crisis of the 1960s-70s (en.wikipedia.org/wiki/Software_crisis) as a warning: productivity ground to a halt until good abstractions for managing software complexity emerged. His thesis is that without good platforms, the same stall will happen again in the AI-coding era.
 
-- [Kermit](https://x.com/fixer9999/status/2000332286055850464) — 2025-12-14: Shares link to Perplexity's 42-page internal guide on how they actually use AI at work — a reply to @aibytekat's post about the guide drop.
+- [SightBringer](https://x.com/_the_prophet__/status/2004796159299084424) — 2025-12-27: An essay arguing software engineering is undergoing a 'phase transition' in human leverage: for decades leverage came from writing more correct instructions faster, but the unit of leverage has shifted from writing code to orchestrating intelligence. The programmer becomes a systems integrator of probabilistic entities whose reasoning can't be fully inspected or controlled — which the author says explains why even Karpathy feels 'behind.'
+
+- [Kermit](https://x.com/fixer9999/status/2000332286055850464) — 2025-12-14: A bare link post sharing Perplexity's 'Perplexity at Work' PDF report (r2cdn.perplexity.ai/pdf/pplx-at-work.pdf) — Perplexity's enterprise/workplace positioning material. Low engagement; minimal commentary.
+
+- [AWS Containers](https://github.com/aws-containers/reinvent) — 2025-12-01: The aws-containers/reinvent GitHub repo collects AWS re:Invent 2025 Kubernetes Track assets — slides, the latest EKS launches, and demos from the sessions. A reference for what AWS shipped for Kubernetes/EKS at re:Invent 2025.
 
 - [maxleedev](https://x.com/maxleedev/status/1962938769914658984) — 2025-09-03: Built a canvas interface for LLMs — responding to the need for 'fork chat' like git branches. Lets you explore alternate conversation timelines without ruining the main thread. 2.1M views.
 
@@ -2562,7 +2592,7 @@
 
 - [Dante O. Cuales](https://x.com/danteocualesjr/status/1957204427909321027) — 2025-08-18: Reply to a thread about AI engineering being easy to learn — argues the 'intimidation factor is mostly artificial' since most AI engineering is API orchestration, prompt optimization, and data pipeline work. The hard parts are already abstracted away.
 
-### Management (108)
+### Management (106)
 
 - [Ryan Carson](https://x.com/ryancarson/status/2074093250399330418) — 2026-07-07: Ryan Carson (@HelloUntangle) details orchestrating the largest/riskiest engineering program in the company's history with a single Fable parent orchestrator session: 834 files, prod data mutation, DB schema update, 31 PRs, started Friday->completed Monday, zero prod incidents. One parent Devin/Fable session planned the work, spawned ~40 child sessions to execute, enforced regression gates and backup checks between phases, and escalated only owner-level decisions (scope rulings, go/no-go on irreversible steps). Distills reusable program-management patterns for large migrations. In a follow-up he asks Cognition to let child Devin sessions pick their own model/mode independent of the parent.
 
@@ -2732,15 +2762,11 @@
 
 - [Abhishek Singh](https://x.com/0xlelouch_/status/2012816833464922398) — 2026-01-19: A Senior Staff Engineer's method for reasoning about unfamiliar systems: (1) start with the business goal and what 'failure' means, not the code; (2) identify the 2-3 critical paths where latency/correctness/money matter; (3) map ownership boundaries and handoff gray areas; (4) look for invariants that must hold even during partial failures/deploys; (5) read postmortems before docs (real vs intended behavior); (6) ask 'what breaks first at 10x load?' to expose hidden assumptions. The kind of skill that separates senior from staff.
 
-- [Gergely Orosz](https://x.com/gergelyorosz/status/2011956185650409558) — 2026-01-16: Gergely Orosz (Pragmatic Engineer) endorses Cindy Sridharan's take that engineers should aim to understand close to 100% of LLM-generated production code. Notes the tension: heavy AI usage is easiest on prototypes where quality matters less, but understanding matters most in production.
+- [Gergely Orosz](https://x.com/gergelyorosz/status/2011956185650409558) — 2026-01-16: Gergely Orosz amplifies Cindy Sridharan's take that, outside of prototyping, engineers should aim to understand close to 100% of the production code LLMs generate. He adds that the gap between teams who do this and those who don't will be massive, and notes the tension: heavy cutting-edge AI use is easiest on throwaway prototypes where it's fine to let it rip.
 
-- [James Cowling](https://x.com/jamesacowling/status/2011924122922852599) — 2026-01-16: James Cowling warns about an impending 'software crisis' from AI coding — references the 1960s/70s Software Crisis where productivity halted before good abstractions were developed. Argues companies need to invest in good architectural principles now or face the same crisis with AI-generated code.
+- [SightBringer](https://x.com/_the_prophet__/status/2004796159299084424) — 2025-12-27: An essay arguing software engineering is undergoing a 'phase transition' in human leverage: for decades leverage came from writing more correct instructions faster, but the unit of leverage has shifted from writing code to orchestrating intelligence. The programmer becomes a systems integrator of probabilistic entities whose reasoning can't be fully inspected or controlled — which the author says explains why even Karpathy feels 'behind.'
 
-- [SightBringer](https://x.com/_the_prophet__/status/2004796159299084424) — 2025-12-27: Long-form essay arguing we're at a phase transition: leverage has shifted from writing code to orchestrating intelligence. The programmer is becoming a systems integrator of probabilistic entities. References Karpathy feeling 'behind' as evidence the profession's identity is shifting faster than practitioners can adapt.
-
-- [Abhishek Singh](https://x.com/0xlelouch_/status/2002673253912113644) — 2025-12-22: Reflection on career self-knowledge in software engineering — argues you only discover what fulfills you (backend, frontend, infra, ML, management) through sustained reps: shipping boring features, debugging production at 3am, owning systems. Cautions against confusing novelty with fulfillment.
-
-- [Kermit](https://x.com/fixer9999/status/2000332286055850464) — 2025-12-14: Shares link to Perplexity's 42-page internal guide on how they actually use AI at work — a reply to @aibytekat's post about the guide drop.
+- [Abhishek Singh](https://x.com/0xlelouch_/status/2002673253912113644) — 2025-12-22: A reflective essay on career fulfillment in software engineering: you don't magically know whether backend, frontend, infra, ML, startups, big tech, or management will fulfill you — you only find out through reps. Early on people confuse novelty (new frameworks, jobs, titles) with fulfillment; real self-knowledge is earned by shipping boring features, debugging 3am outages, owning systems, and sticking with things long enough to feel the responsibility.
 
 - [Dave Kline](https://x.com/dklineii/status/1994761636742050226) — 2025-11-29: The 7 Deadly Sins of New Managers — explains why 60% fail in their first leadership role. Management/leadership content with image breakdown.
 
@@ -2780,7 +2806,7 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
 
-### Questionable (124)
+### Questionable (126)
 
 - [How To Prompt](https://x.com/howtoprompt__/status/2074122800961614184) — 2026-07-07: How To Prompt (hype framing: "China has killed the vector database industry") flags Tencent's newly open-sourced TencentDB Agent Memory — local long-term memory for AI agents that runs 100% on plain SQLite with no external vector DB or cloud APIs. Claims 61% fewer tokens and PersonaMem accuracy 48%->76%. Uses a layered 'semantic pyramid' (L0 conversation -> L1 atom -> L2 scenario -> L3 persona) stored as inspectable markdown + Mermaid graphs instead of opaque vector compression, with drill-back to raw logs by node_id. ~5.1k GitHub stars.
 
@@ -3022,7 +3048,11 @@
 
 - [Miles Deutscher](https://x.com/milesdeutscher/status/2012237674409796036) — 2026-01-17: Miles Deutscher promotes a curated 'Claude Code Starter Pack (Part 2)' article by AI Edge - a filtered list of Claude Code tools, tutorials, and resources claimed to be the 1% worth your time. Framing leans on hype ('mega viral', 'extract alpha', 'life-changing systems'), so tagged questionable, but the underlying resource is a legitimate Claude Code tool/resource roundup.
 
-- [Jainam Parmar](https://x.com/aiwithjainam/status/1999815060965994896) — 2025-12-14: Claims 'Atom of Thought' prompting technique makes AI models 30-40% more accurate on complex reasoning tasks vs Chain of Thought. Presents as the technique that will change how everyone uses ChatGPT and Claude.
+- [fintechjunkie](https://x.com/fintechjunkie/status/2010910565279961423) — 2026-01-13: fintechjunkie gives a glowing, no-edits endorsement of a Dan Koe (@thedankoe) long-form article titled 'How to fix your entire life in 1 day' — a self-improvement/productivity piece rather than an AI or engineering topic. Off-theme for the collection; kept for completeness.
+
+- [Tech with Mak](https://x.com/technmak/status/2002713140757496299) — 2025-12-22: A structured LangGraph learning path (pitched as filling the gap since LangGraph appears in ~half of AI job descriptions). Progresses from basic agent concepts (Pydantic data validation, agentic chatbots, multi-agent coordination) through production systems (a 2.5-hour LangGraph+MCP crash course, debugging/monitoring, deployment architecture) to RAG pipelines (multimodal RAG, hallucination fixes, end-to-end retrieval, Typesense search).
+
+- [Jainam Parmar](https://x.com/aiwithjainam/status/1999815060965994896) — 2025-12-14: An engagement-styled post ('Chain of Thought is dead') claiming that 'Atom of Thought' prompting made models 30-40% more accurate on complex reasoning tasks, pitched as a technique that will change how people use ChatGPT and Claude. Hype framing, but the underlying Atom-of-Thought prompting idea is a real reasoning technique worth a look.
 
 - [Prompter](https://x.com/promptllm/status/1986173095896621150) — 2025-11-06: Claims elite performers all use Neuro-Linguistic Programming (NLP) and shares a prompt that teaches NLP techniques. Generic self-improvement content with AI angle.
 
@@ -3030,7 +3060,7 @@
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
 
-### General (92)
+### General (93)
 
 - [Dami-Defi](https://x.com/damidefi/status/2073397918447423966) — 2026-07-05: Dami-Defi promotes an Obsidian community plugin (19,184 downloads) that fixes Obsidian's long-open YouTube-embed bug, plus a workflow to turn a messy YouTube-note vault into a visual, AI-powered knowledge system using AI-friendly metadata and automatic thumbnails — arguing structured knowledge bases outperform scattered notes in AI-native workflows. Credits Paul's Obsidian Systems (YouTube).
 
@@ -3132,7 +3162,7 @@
 
 - [Matt Pocock](https://x.com/mpocock/status/2009888462821732368) — 2026-01-14: [Post deleted/unavailable — in Jan 3-16 dead zone]
 
-- [fintechjunkie](https://x.com/fintechjunkie/status/2010910565279961423) — 2026-01-13: Shares Dan Koe's long-form article 'How to fix your entire life in 1 day' — a personal development piece on changing your life without typical new year's resolutions. Called it 'profound' and 'flawless.' 1M views.
+- [fintechjunkie](https://x.com/fintechjunkie/status/2010910565279961423) — 2026-01-13: fintechjunkie gives a glowing, no-edits endorsement of a Dan Koe (@thedankoe) long-form article titled 'How to fix your entire life in 1 day' — a self-improvement/productivity piece rather than an AI or engineering topic. Off-theme for the collection; kept for completeness.
 
 - [bluecow](https://x.com/bluecow/status/2009065743606194185) — 2026-01-12: [Post deleted/unavailable]
 
@@ -3208,6 +3238,8 @@
 
 - [Yu Lin](https://x.com/yulintwt/status/2004537183978590695) — 2025-12-27: [Account suspended]
 
+- [Abhishek Singh](https://x.com/0xlelouch_/status/2002673253912113644) — 2025-12-22: A reflective essay on career fulfillment in software engineering: you don't magically know whether backend, frontend, infra, ML, startups, big tech, or management will fulfill you — you only find out through reps. Early on people confuse novelty (new frameworks, jobs, titles) with fulfillment; real self-knowledge is earned by shipping boring features, debugging 3am outages, owning systems, and sticking with things long enough to feel the responsibility.
+
 - [Hayes](https://x.com/hayesdev_/status/1996897853642592428) — 2025-12-07: [Account suspended]
 
 - [Hayes](https://x.com/neatprompts/status/1981241949173825687) — 2025-10-24: [Account suspended]
@@ -3220,6 +3252,9 @@
 ## Full Chronological List
 
 ### Jul 2026
+
+- **2026-07-13** | [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610) | agent-design, dev-practices, skills-mcp
+  Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a customized workflow skill (he recommends grabbing Matt Pocock's skills); self-healing, greppable docs with a 7-line summary header; agents that actually run and test the app themselves; e2e tests plus docs on how/what to test; custom precommit linters with --fix that shell out to a cheaper LLM (Composer 2.5 or Sonnet) to actually fix rather than flag; cross-agent review (codex/claude/cursor, never the same model reviewing itself) at research/plan/implementation/wrap-up; handoff worksheets committed with git tags so another agent can finish the job; automatic end-of-session agent feedback docs he periodically ingests to improve workflows; a tools/bin folder of agent-authored scripts (e.g. an agent_review CLI wrapper); and periodic agent sweeps through recent commits. Practical, adoptable patterns for a team running coding agents.
 
 - **2026-07-09** | [Kodus](https://kodus.io/self-hosted-ai-code-review/) | dev-practices, agent-design
   Kodus (github.com/kodustech/kodus-ai) — open-source AGPLv3 self-hosted AI code review. The full PR-review pipeline (Kody agent) runs on your own infrastructure with bring-your-own-LLM: it posts line-anchored inline comments covering logic/security/performance (or 'deep mode' with parallel bug/security/performance specialists), keeps source code, LLM calls, and audit trails inside your VPC, and supports GitHub Enterprise Server / GitLab Self-Managed / Bitbucket DC and air-gapped deploys. Jeremy flagged it to evaluate for work code reviews.
@@ -4901,17 +4936,17 @@
 - **2026-01-16** | [Paul Solt](https://x.com/paulsolt/status/2012010080414081188) | dev-practices, agent-design, prompting
   Paul Solt's 7 beginner tips for OpenAI Codex: (1) start with GPT-5.2-Codex 'high' reasoning - enough for most work, avoid xhigh unless tricky; (2) when reasoning doesn't help, give agents better up-to-date local docs (he uses DocSetQuery to turn Dash DocSets into local Markdown); (3) read Peter Steinberger's (@steipete) 'shipping at inference speed' post; (4) borrow from Peter's agents.md and agent-scripts (e.g. 'committer' for atomic commits with multiple agents in one folder); (5) just talk to Codex - no complex rules or huge plan files; work one aspect at a time and parallelize projects while waiting; (6) ask agents to copy structure/Makefiles from other projects; (7) you'll likely need YOLO/danger mode to avoid constant approval nagging.
 
-- **2026-01-16** | [vas](https://x.com/vasuman/status/2011983687433212330) | agent-design
-  Comprehensive 'AI Agents 101' guide from a former Meta engineer — covers fundamentals of building AI agents that work, drawing on experience with systems processing billions of transactions. Promises a part 2 with practical examples.
+- **2026-01-16** | [vas](https://x.com/vasuman/status/2011983687433212330) | agent-design, dev-practices
+  vas (@vasuman) shares 'AI Agents 101,' a comprehensive long-form X article on how to build AI agents that actually work, framed as required reading before writing any code and drawing on 3 years as a Meta software engineer. He asks whether a part 2 would be useful.
 
 - **2026-01-16** | [Gergely Orosz](https://x.com/gergelyorosz/status/2011956185650409558) | dev-practices, management
-  Gergely Orosz (Pragmatic Engineer) endorses Cindy Sridharan's take that engineers should aim to understand close to 100% of LLM-generated production code. Notes the tension: heavy AI usage is easiest on prototypes where quality matters less, but understanding matters most in production.
+  Gergely Orosz amplifies Cindy Sridharan's take that, outside of prototyping, engineers should aim to understand close to 100% of the production code LLMs generate. He adds that the gap between teams who do this and those who don't will be massive, and notes the tension: heavy cutting-edge AI use is easiest on throwaway prototypes where it's fine to let it rip.
 
 - **2026-01-16** | [Bojan Tunguz](https://x.com/tunguz/status/2011949233658925298) | general
   [Post deleted/unavailable]
 
-- **2026-01-16** | [James Cowling](https://x.com/jamesacowling/status/2011924122922852599) | management, dev-practices, agent-design
-  James Cowling warns about an impending 'software crisis' from AI coding — references the 1960s/70s Software Crisis where productivity halted before good abstractions were developed. Argues companies need to invest in good architectural principles now or face the same crisis with AI-generated code.
+- **2026-01-16** | [James Cowling](https://x.com/jamesacowling/status/2011924122922852599) | dev-practices, industry, agent-design
+  James Cowling points to the Software Crisis of the 1960s-70s (en.wikipedia.org/wiki/Software_crisis) as a warning: productivity ground to a halt until good abstractions for managing software complexity emerged. His thesis is that without good platforms, the same stall will happen again in the AI-coding era.
 
 - **2026-01-16** | [Meta Alchemist](https://x.com/meta_alchemist/status/2010882913784070231) | general
   [Post deleted/unavailable]
@@ -4943,8 +4978,8 @@
 - **2026-01-14** | [Matt Pocock](https://x.com/mpocock/status/2009888462821732368) | general
   [Post deleted/unavailable — in Jan 3-16 dead zone]
 
-- **2026-01-13** | [fintechjunkie](https://x.com/fintechjunkie/status/2010910565279961423) | general
-  Shares Dan Koe's long-form article 'How to fix your entire life in 1 day' — a personal development piece on changing your life without typical new year's resolutions. Called it 'profound' and 'flawless.' 1M views.
+- **2026-01-13** | [fintechjunkie](https://x.com/fintechjunkie/status/2010910565279961423) | general, questionable
+  fintechjunkie gives a glowing, no-edits endorsement of a Dan Koe (@thedankoe) long-form article titled 'How to fix your entire life in 1 day' — a self-improvement/productivity piece rather than an AI or engineering topic. Off-theme for the collection; kept for completeness.
 
 - **2026-01-12** | [bluecow](https://x.com/bluecow/status/2009065743606194185) | general
   [Post deleted/unavailable]
@@ -4988,8 +5023,8 @@
 - **2026-01-09** | [dei](https://x.com/delilahime/status/2007112398968512604) | general
   [Post deleted/unavailable — in Jan 3-16 dead zone]
 
-- **2026-01-08** | [Jarrod Watts](https://x.com/jarrodwatts/status/2009200810870428123) | claude-code, skills-mcp
-  Open sourced claude-code-config repo containing agents, commands, hooks, rules, skills, and plugins collected and created over several months for Claude Code. Simple but effective enhancements, continuously updated.
+- **2026-01-08** | [Jarrod Watts](https://x.com/jarrodwatts/status/2009200810870428123) | claude-code, skills-mcp, dev-practices
+  Jarrod Watts open-sourced his 'claude-code-config' repo containing all the agents, commands, hooks, rules, skills, and plugins he's made or collected over the past few months — described as simple but effective enhancements he'll keep updating. A ready-made reference config for a team standardizing Claude Code setups.
 
 - **2026-01-08** | [Lior Alexander](https://x.com/lioralexander/status/2006763456879984843) | general
   [Post deleted/unavailable — in Jan 3-16 dead zone]
@@ -5060,67 +5095,67 @@
 ### Dec 2025
 
 - **2025-12-28** | [Denislav Gavrilov](https://x.com/kuberdenis/status/2004934631616086417) | claude-code, agent-design, dev-practices
-  Containerized Claude Code in Kubernetes as a 24/7 on-call engineer — monitors a namespace, detects application errors, performs hotfixes, and documents them automatically. Shares repo (Clopus-Watcher) with examples and results.
+  Denislav Gavrilov containerizes Claude Code in Kubernetes as 'Clopus-Watcher,' an autonomous monitoring agent that watches a namespace and, on application errors, writes and applies a hotfix and documents it — effectively a 24/7 on-call engineer. Repo, examples, and results at denislavgavrilov.com.
 
-- **2025-12-28** | [AGENTS.md](https://agents.md/) | agent-design, skills-mcp
-  agents.md — a specification/convention for describing AI agent capabilities in a standardized markdown format. Similar to robots.txt but for AI agents.
+- **2025-12-28** | [AGENTS.md](https://agents.md/) | agent-design, dev-practices, skills-mcp
+  AGENTS.md (agents.md) is a simple, open format for guiding coding agents, now used by over 60k open-source projects. Think of it as a README for agents: a dedicated, predictable place for the build steps, tests, and conventions that coding agents need but that would clutter a human README — kept intentionally separate so agents have one clear location to look.
 
-- **2025-12-27** | [SightBringer](https://x.com/_the_prophet__/status/2004796159299084424) | management, industry
-  Long-form essay arguing we're at a phase transition: leverage has shifted from writing code to orchestrating intelligence. The programmer is becoming a systems integrator of probabilistic entities. References Karpathy feeling 'behind' as evidence the profession's identity is shifting faster than practitioners can adapt.
+- **2025-12-27** | [SightBringer](https://x.com/_the_prophet__/status/2004796159299084424) | industry, management, agent-design
+  An essay arguing software engineering is undergoing a 'phase transition' in human leverage: for decades leverage came from writing more correct instructions faster, but the unit of leverage has shifted from writing code to orchestrating intelligence. The programmer becomes a systems integrator of probabilistic entities whose reasoning can't be fully inspected or controlled — which the author says explains why even Karpathy feels 'behind.'
 
 - **2025-12-27** | [Yu Lin](https://x.com/yulintwt/status/2004537183978590695) | general
   [Account suspended]
 
-- **2025-12-22** | [Tech with Mak](https://x.com/technmak/status/2002713140757496299) | agent-design, skills-mcp
-  Comprehensive LangGraph learning path — covers building agentic AI chatbots, multi-agent coordination, LangGraph + MCP crash course (2.5 hrs), debugging/monitoring workflows, RAG pipelines with MultiModal support, fixing hallucinations, and fast search with Typesense.
+- **2025-12-22** | [Tech with Mak](https://x.com/technmak/status/2002713140757496299) | agent-design, skills-mcp, dev-practices, questionable
+  A structured LangGraph learning path (pitched as filling the gap since LangGraph appears in ~half of AI job descriptions). Progresses from basic agent concepts (Pydantic data validation, agentic chatbots, multi-agent coordination) through production systems (a 2.5-hour LangGraph+MCP crash course, debugging/monitoring, deployment architecture) to RAG pipelines (multimodal RAG, hallucination fixes, end-to-end retrieval, Typesense search).
 
-- **2025-12-22** | [Abhishek Singh](https://x.com/0xlelouch_/status/2002673253912113644) | management
-  Reflection on career self-knowledge in software engineering — argues you only discover what fulfills you (backend, frontend, infra, ML, management) through sustained reps: shipping boring features, debugging production at 3am, owning systems. Cautions against confusing novelty with fulfillment.
+- **2025-12-22** | [Abhishek Singh](https://x.com/0xlelouch_/status/2002673253912113644) | management, general
+  A reflective essay on career fulfillment in software engineering: you don't magically know whether backend, frontend, infra, ML, startups, big tech, or management will fulfill you — you only find out through reps. Early on people confuse novelty (new frameworks, jobs, titles) with fulfillment; real self-knowledge is earned by shipping boring features, debugging 3am outages, owning systems, and sticking with things long enough to feel the responsibility.
 
-- **2025-12-21** | [Claire Silver](https://x.com/clairesilver12/status/2002443560898208162) | skills-mcp, claude-code
-  Highlights Unreal MCP — a free tool that lets you prompt Claude to build things in Unreal Engine. Example: 'make a Victorian manor, here's a reference pic, use the assets in this folder' and it just works. 699.3K views.
+- **2025-12-21** | [Claire Silver](https://x.com/clairesilver12/status/2002443560898208162) | skills-mcp, claude-code, agent-design
+  Claire Silver highlights Unreal MCP, a free MCP server that lets you prompt Claude to build things in Unreal Engine — e.g. 'make a Victorian manor, here's a reference pic, use the assets in this folder' and it just does it. She promised a demo video and calls it '10/10 magic.'
 
 - **2025-12-19** | [Santiago](https://x.com/svpino/status/2002107789888655655) | agent-design, dev-practices
-  Demos a spec-driven development environment where 100% of time goes to writing specs and managing agents, 0% to writing code. Argues software development will never be the same.
+  Santiago shares a video demoing a spec-driven development environment where 100% of the developer's time goes to writing specs and managing agents and 0% to writing code — arguing software development will never be the same.
 
 - **2025-12-19** | [Jason Fried](https://x.com/jasonfried/status/2002084849784676697) | dev-practices
-  Jason Fried shares a 1-hour video of Jeff (18-year 37signals veteran) explaining the 'recordables' pattern — the most important architectural pattern used in both Basecamp and HEY. Key reason both codebases remain a joy to work on.
+  Jason Fried shares a talk in which Jeff, an 18-year 37signals veteran, explains the 'recordables pattern' — the single most important architectural pattern behind Basecamp and HEY and a key reason both codebases remain a joy to work on. Fried calls the insights deep, practical, and accessible even to non-technical folks.
 
-- **2025-12-19** | [Justin Mitchel](https://x.com/justinmitchel/status/2001750598329499681) | dev-practices
-  pg_textsearch just open-sourced — brings BM25 relevance-ranked full-text search to Postgres. Eliminates the need to sync data to Elasticsearch for search. Google uses BM25 in their search engine. GitHub repo: timescale/pg_textsearch.
+- **2025-12-19** | [Justin Mitchel](https://x.com/justinmitchel/status/2001750598329499681) | dev-practices, research
+  Justin Mitchel flags that pg_textsearch was just open-sourced (github.com/timescale/pg_textsearch), a PostgreSQL extension bringing BM25 relevance-ranked full-text search to your database — meaning teams already on Postgres can skip syncing data to Elasticsearch for keyword search. Post is marked #sponsored.
 
 - **2025-12-16** | [Femke Plantinga](https://x.com/femke_plantinga/status/2000883645888827806) | agent-design
-  Breakdown of multi-agent AI architecture with four key components: Supervisors (orchestration/routing), specialized agents, coordination layer, and evaluation. Covers the tradeoff between complexity and capability vs single-agent simplicity.
+  Femke Plantinga argues multi-agent AI systems are displacing single-agent architectures and breaks down what a well-structured one looks like: a supervisor/orchestration layer that plans, routes queries to specialists and refines them (the 'air traffic controller'), plus specialized task-specific agents (query rewriters, etc.). She notes the real trade-off — more complex workflows but serious coordination challenges.
 
-- **2025-12-15** | [Matt Dancho](https://x.com/mdancho84/status/2000658529753932273) | agent-design, research
-  Open-source AI data science team in Python — automates data science workflows including data loading, cleaning, exploratory analysis, and feature engineering with 100% reproducible pipeline tracking. GitHub: business-science/ai-data-science-team.
+- **2025-12-15** | [Matt Dancho (Business Science)](https://x.com/mdancho84/status/2000658529753932273) | agent-design, dev-practices, research
+  Matt Dancho highlights an open-sourced (free) Python library, 'AI Data Science Team' (github.com/business-science/ai-data-science-team), that automates data-science workflows with AI — data loading, cleaning, exploratory analysis, and feature engineering — tracking each step in a fully reproducible pipeline. Includes a walkthrough video and a free 1-hour agentic AI workshop.
 
-- **2025-12-14** | [Kermit](https://x.com/fixer9999/status/2000332286055850464) | industry, management
-  Shares link to Perplexity's 42-page internal guide on how they actually use AI at work — a reply to @aibytekat's post about the guide drop.
+- **2025-12-14** | [Kermit](https://x.com/fixer9999/status/2000332286055850464) | industry
+  A bare link post sharing Perplexity's 'Perplexity at Work' PDF report (r2cdn.perplexity.ai/pdf/pplx-at-work.pdf) — Perplexity's enterprise/workplace positioning material. Low engagement; minimal commentary.
 
 - **2025-12-14** | [Jainam Parmar](https://x.com/aiwithjainam/status/1999815060965994896) | prompting, questionable
-  Claims 'Atom of Thought' prompting technique makes AI models 30-40% more accurate on complex reasoning tasks vs Chain of Thought. Presents as the technique that will change how everyone uses ChatGPT and Claude.
+  An engagement-styled post ('Chain of Thought is dead') claiming that 'Atom of Thought' prompting made models 30-40% more accurate on complex reasoning tasks, pitched as a technique that will change how people use ChatGPT and Claude. Hype framing, but the underlying Atom-of-Thought prompting idea is a real reasoning technique worth a look.
 
-- **2025-12-09** | [Tech with Mak](https://x.com/technmak/status/1998264904563007889) | agent-design, research
-  Google released five AI Agent papers across five consecutive days — 250+ pages covering how agents should be built, evaluated, secured, and deployed. Post provides distilled summary of all five papers.
+- **2025-12-09** | [Tech with Mak](https://x.com/technmak/status/1998264904563007889) | research, agent-design
+  Tech with Mak distills Google's quiet December release of five AI-agent papers published one per day over five consecutive days — more than 250 pages covering how agents should be built, evaluated, secured, and deployed.
 
-- **2025-12-09** | [Rohan Paul](https://x.com/rohanpaul_ai/status/1998262710040228310) | agent-design, research
-  Paper proposing an agentic file system for AI context management — treats everything as files in a shared space. Persistent context repository separates raw history, long-term memory, and short-lived scratchpads. Every access logged with timestamps and provenance.
+- **2025-12-09** | [Rohan Paul](https://x.com/rohanpaul_ai/status/1998262710040228310) | research, agent-design, prompting
+  Rohan Paul summarizes a paper proposing an 'agentic file system' for context engineering: treat every memory, tool, external source, and human note as a file in a shared space, with a persistent context repository separating raw history, long-term memory, and short-lived scratchpads so the prompt holds only the slice needed now. Every access is logged with timestamps and provenance, and a constructor/updater/evaluator manage context under the model's limited window.
 
 - **2025-12-08** | [Yahiya](https://x.com/yahiyadev/status/1997744726913736979) | dev-practices
-  Book recommendations for modular monolith architecture: 'Event-Driven Architecture in Golang' by Michael Stack (starts monolith, transitions to microservices, covers Event Sourcing, CQRS, DDD) and 'Domain-Driven Design with Golang' by Matthew Boyle.
+  Answering a request for a book on structuring a monolith so services can be decoupled later, Yahiya recommends 'Event-Driven Architecture in Golang' by Michael Stack — which starts from a modular monolith and gradually transitions to microservices, covering Event Sourcing, CQRS, DDD, choreographed and orchestrated messaging, and sync-to-async refactoring — plus 'Domain-Driven Design with Golang' by Matthew Boyle.
 
 - **2025-12-08** | [Tom Dörr](https://x.com/tom_doerr/status/1996997820868366397) | skills-mcp, claude-code
-  Shares VoltAgent/awesome-claude-skills — a GitHub collection of official and community-built Claude skills. 126.8K views.
+  Tom Dörr shares 'awesome-claude-skills' (github.com/VoltAgent/awesome-claude-skills), a curated collection of official and community-built Claude skills.
 
-- **2025-12-07** | [Rohan Paul](https://x.com/rohanpaul_ai/status/1997405403987222642) | agent-design, prompting
-  Google's guide on context engineering for multi-agent systems — replaces giant prompts with a compiled view over state split across Working Context, Session, Memory, and Artifacts. Uses ADK for context compaction, filtering, and caching.
+- **2025-12-07** | [Rohan Paul](https://x.com/rohanpaul_ai/status/1997405403987222642) | research, agent-design, prompting
+  Rohan Paul summarizes Google's guide on context engineering for multi-agent systems (built around ADK). Instead of giant prompts, it compiles a view over state split into Working Context, Session, Memory, and Artifacts; each call rebuilds Working Context from instructions, selected session events, memory results, and artifact references. ADK controls context growth via compaction, filtering, and caching — summarizing old spans, dropping useless events, and reusing a stable prefix — and pushes large payloads out to Artifacts to keep systems fast, affordable, and less hallucination-prone.
 
 - **2025-12-07** | [Hayes](https://x.com/hayesdev_/status/1996897853642592428) | general
   [Account suspended]
 
-- **2025-12-01** | [AWS reinvent](https://github.com/aws-containers/reinvent) | dev-practices
-  AWS Containers re:Invent repository — resources and demos from AWS re:Invent conference related to container orchestration and deployment.
+- **2025-12-01** | [AWS Containers](https://github.com/aws-containers/reinvent) | dev-practices, industry
+  The aws-containers/reinvent GitHub repo collects AWS re:Invent 2025 Kubernetes Track assets — slides, the latest EKS launches, and demos from the sessions. A reference for what AWS shipped for Kubernetes/EKS at re:Invent 2025.
 
 ### Nov 2025
 

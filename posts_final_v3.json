@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-07-13",
+    "author": "Jamon Holmgren",
+    "handle": "@jamonholmgren",
+    "subject": "Post by Jamon on X",
+    "url": "https://x.com/jamonholmgren/status/2076001786700394610",
+    "summary": "Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a customized workflow skill (he recommends grabbing Matt Pocock's skills); self-healing, greppable docs with a 7-line summary header; agents that actually run and test the app themselves; e2e tests plus docs on how/what to test; custom precommit linters with --fix that shell out to a cheaper LLM (Composer 2.5 or Sonnet) to actually fix rather than flag; cross-agent review (codex/claude/cursor, never the same model reviewing itself) at research/plan/implementation/wrap-up; handoff worksheets committed with git tags so another agent can finish the job; automatic end-of-session agent feedback docs he periodically ingests to improve workflows; a tools/bin folder of agent-authored scripts (e.g. an agent_review CLI wrapper); and periodic agent sweeps through recent commits. Practical, adoptable patterns for a team running coding agents.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "I'm just going to dump my whole agentic setup out here, because I see too many people missing giant chunks of this and it's hurting them.\n\nHere's what I have and recommend:\n\n0. an AGENTS.md that is a router -- it sends the agent to the right skills, docs, tools\n\n1. a standard workflow doc/skill customized to my needs ... (grab Matt Pocock skills if you don't already have something) ... I tag this in most sessions with `@/AGENT_WORKFLOW.md` and it pulls it in.\n\n2. self-healing docs for every system, and agents are instructed to keep them updated ... I tag the ones I know I need, or let the agent find them through AGENTS.md ... I also provide a more detailed summary in the first 7 lines of every doc, so they're easily greppable to find the right thing, and this is documented in AGENTS.md\n\n3. agents always run the app ... the agent should always actually run the app itself, and test its work and fix issues as it goes, especially if running autonomously / asynchronously\n\n4. end-to-end tests and instructions to write more and keep up to date, and docs on how to write tests, what to avoid, and a list of all the tests and what they test in yet another markdown doc ... write and run targeted tests during implementation, improve and commit with work\n\n5. custom linters at precommit hooks looking for any problems you run across, with `--fix` fixing the problems automatically, OR if that's not feasible, it shells out to a cheaper LLM like Composer 2.5 or Sonnet to fix the problems -- NOT just flagging them, but actually resulting in cleaned code\n\n6. cross-agent review at each major point: research, plan, implementation, and wrap-up. I mean codex, claude, cursor, whatever -- but it shouldn't be the same model reviewing the same code. And specific docs for agent review, what to look for, how to approach it.\n\n7. a worksheet: if the agent fails partway through, you should be able to hand this worksheet to another agent and it could finish the job. commit this worksheet with the work so it's all connected and easy to reference later (you will reference these later!!), also have the agent apply git tags that correspond to specific worksheet names so they're easy to find\n\n8. automatic agent feedback to you at the end of the session, added to a doc that is also committed with the work, that you periodically ingest into an interactive session and improve your workflows\n\n9. a tools or bin folder that contains python or bash scripts that the agent has skills to make to make its job easier (for example, I have an `agent_review` bash script that lets the agent kick off agent reviews via CLI without knowing each agent's particular incantations) ... docs on how to make scripts effectively, and instructions to constantly build these out more\n\n10. periodic agent sweeps through recent commits, looking for problems and inconsistencies",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-07-09",
     "author": "Kodus",
     "handle": "",
@@ -13513,9 +13539,10 @@
     "handle": "@vasuman",
     "subject": "Post by vas on X",
     "url": "https://x.com/vasuman/status/2011983687433212330",
-    "summary": "Comprehensive 'AI Agents 101' guide from a former Meta engineer — covers fundamentals of building AI agents that work, drawing on experience with systems processing billions of transactions. Promises a part 2 with practical examples.",
+    "summary": "vas (@vasuman) shares 'AI Agents 101,' a comprehensive long-form X article on how to build AI agents that actually work, framed as required reading before writing any code and drawing on 3 years as a Meta software engineer. He asks whether a part 2 would be useful.",
     "topics": [
-      "agent-design"
+      "agent-design",
+      "dev-practices"
     ],
     "audience": [
       "me",
@@ -13523,10 +13550,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "57.2K",
+    "views": "57.4K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "If you want to learn how to build AI Agents, read this before you write a single line of code. Let me know if a part 2 would be helpful. [Quotes his own X article: 'AI Agents 101 — My comprehensive guide on how to build AI Agents that work.']",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-01-16",
@@ -13534,22 +13564,24 @@
     "handle": "@GergelyOrosz",
     "subject": "Post by Gergely Orosz on X",
     "url": "https://x.com/gergelyorosz/status/2011956185650409558",
-    "summary": "Gergely Orosz (Pragmatic Engineer) endorses Cindy Sridharan's take that engineers should aim to understand close to 100% of LLM-generated production code. Notes the tension: heavy AI usage is easiest on prototypes where quality matters less, but understanding matters most in production.",
+    "summary": "Gergely Orosz amplifies Cindy Sridharan's take that, outside of prototyping, engineers should aim to understand close to 100% of the production code LLMs generate. He adds that the gap between teams who do this and those who don't will be massive, and notes the tension: heavy cutting-edge AI use is easiest on throwaway prototypes where it's fine to let it rip.",
     "topics": [
       "dev-practices",
       "management"
     ],
     "audience": [
       "me",
-      "dev-team",
-      "leadership"
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "73.1K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Cindy is on the money, as always. The difference between those who do this and those who don't will be massive. What makes all of this tricky is that heavy + cutting-edge AI usage is easiest done on prototypes + unimportant stuff where it's ok to let it rip. [Quotes Cindy Sridharan: 'Unless you're just prototyping, you should aim to understand as close to 100% of production code generated by LLMs. Yes, all of it. Effective mental models are still important for humans to sustainably maintain and evolve a codebase via prompting alone.']",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-01-16",
@@ -13577,23 +13609,25 @@
     "handle": "@jamesacowling",
     "subject": "Post by James Cowling on X",
     "url": "https://x.com/jamesacowling/status/2011924122922852599",
-    "summary": "James Cowling warns about an impending 'software crisis' from AI coding — references the 1960s/70s Software Crisis where productivity halted before good abstractions were developed. Argues companies need to invest in good architectural principles now or face the same crisis with AI-generated code.",
+    "summary": "James Cowling points to the Software Crisis of the 1960s-70s (en.wikipedia.org/wiki/Software_crisis) as a warning: productivity ground to a halt until good abstractions for managing software complexity emerged. His thesis is that without good platforms, the same stall will happen again in the AI-coding era.",
     "topics": [
-      "management",
       "dev-practices",
+      "industry",
       "agent-design"
     ],
     "audience": [
       "me",
-      "dev-team",
       "leadership"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "262.9K",
+    "views": "263.2K",
     "notes": "URL replaced — original link dead, this is the correct post. High relevance for team.",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "If you haven't read about The Software Crisis of the 60s/70s you should: en.wikipedia.org/wiki/Software_crisis . Productivity ground to a halt before they developed good abstractions for managing software complexity in software. Without good platforms it'll happen again.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-01-16",
@@ -13801,9 +13835,10 @@
     "handle": "@fintechjunkie",
     "subject": "Post by fintechjunkie on X",
     "url": "https://x.com/fintechjunkie/status/2010910565279961423",
-    "summary": "Shares Dan Koe's long-form article 'How to fix your entire life in 1 day' — a personal development piece on changing your life without typical new year's resolutions. Called it 'profound' and 'flawless.' 1M views.",
+    "summary": "fintechjunkie gives a glowing, no-edits endorsement of a Dan Koe (@thedankoe) long-form article titled 'How to fix your entire life in 1 day' — a self-improvement/productivity piece rather than an AI or engineering topic. Off-theme for the collection; kept for completeness.",
     "topics": [
-      "general"
+      "general",
+      "questionable"
     ],
     "audience": [
       "me"
@@ -13813,7 +13848,10 @@
     "views": "1M",
     "notes": "URL replaced — original link dead. Not AI-related but Jeremy bookmarked it.",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Profound. Requires a reading and then a re-reading. No editorial or content edits from me (the backseat reader). Flawless. Chef's kiss! [Quotes Dan Koe article: 'How to fix your entire life in 1 day.']",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-01-12",
@@ -14101,21 +14139,25 @@
     "handle": "@jarrodwatts",
     "subject": "Post by Jarrod Watts on X",
     "url": "https://x.com/jarrodwatts/status/2009200810870428123",
-    "summary": "Open sourced claude-code-config repo containing agents, commands, hooks, rules, skills, and plugins collected and created over several months for Claude Code. Simple but effective enhancements, continuously updated.",
+    "summary": "Jarrod Watts open-sourced his 'claude-code-config' repo containing all the agents, commands, hooks, rules, skills, and plugins he's made or collected over the past few months — described as simple but effective enhancements he'll keep updating. A ready-made reference config for a team standardizing Claude Code setups.",
     "topics": [
       "claude-code",
-      "skills-mcp"
+      "skills-mcp",
+      "dev-practices"
     ],
     "audience": [
       "me",
       "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "now",
     "sourceType": "tweet",
-    "views": "167K",
+    "views": "168.1K",
     "notes": "Replacement URL (original status/2006799701925961999 deleted). Author reposted.",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "I just open sourced my claude-code-config repo. It includes all of my agents, commands, hooks, rules, skills, and plugins that i've made or collected over the past few months. It's nothing fancy - just simple but effective enhancements that i'll continue to update over time.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-01-08",
@@ -14563,7 +14605,7 @@
     "handle": "@kuberdenis",
     "subject": "Post on X",
     "url": "https://x.com/kuberdenis/status/2004934631616086417",
-    "summary": "Containerized Claude Code in Kubernetes as a 24/7 on-call engineer — monitors a namespace, detects application errors, performs hotfixes, and documents them automatically. Shares repo (Clopus-Watcher) with examples and results.",
+    "summary": "Denislav Gavrilov containerizes Claude Code in Kubernetes as 'Clopus-Watcher,' an autonomous monitoring agent that watches a namespace and, on application errors, writes and applies a hotfix and documents it — effectively a 24/7 on-call engineer. Repo, examples, and results at denislavgavrilov.com.",
     "topics": [
       "claude-code",
       "agent-design",
@@ -14575,10 +14617,13 @@
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "212.9K",
+    "views": "213.7K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "I containerize Claude Code in k8s. It is tasked to monitor a namespace and in the unfortunate case of application errors, it is tasked to do a hotfix and document it. It succeeds. Basically a 24/7 on-call engineer. Clopus-Watcher: An autonomous monitoring agent (denislavgavrilov.com).",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-12-28",
@@ -14586,9 +14631,10 @@
     "handle": "@na",
     "subject": "AGENTS.md",
     "url": "https://agents.md/",
-    "summary": "agents.md — a specification/convention for describing AI agent capabilities in a standardized markdown format. Similar to robots.txt but for AI agents.",
+    "summary": "AGENTS.md (agents.md) is a simple, open format for guiding coding agents, now used by over 60k open-source projects. Think of it as a README for agents: a dedicated, predictable place for the build steps, tests, and conventions that coding agents need but that would clutter a human README — kept intentionally separate so agents have one clear location to look.",
     "topics": [
       "agent-design",
+      "dev-practices",
       "skills-mcp"
     ],
     "audience": [
@@ -14600,7 +14646,10 @@
     "views": "",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "AGENTS.md — A simple, open format for guiding coding agents, used by over 60k open-source projects. Think of AGENTS.md as a README for agents: a dedicated, predictable place to provide the context and instructions to help AI coding agents work on your project. README.md files are for humans (quick starts, descriptions, contribution guidelines); AGENTS.md complements this with the extra, sometimes detailed context coding agents need: setup commands, build steps, tests, and code-style conventions. Kept separate to give agents a clear, predictable place to look.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-12-27",
@@ -14608,10 +14657,11 @@
     "handle": "@_The_Prophet__",
     "subject": "Post by SightBringer on X",
     "url": "https://x.com/_the_prophet__/status/2004796159299084424",
-    "summary": "Long-form essay arguing we're at a phase transition: leverage has shifted from writing code to orchestrating intelligence. The programmer is becoming a systems integrator of probabilistic entities. References Karpathy feeling 'behind' as evidence the profession's identity is shifting faster than practitioners can adapt.",
+    "summary": "An essay arguing software engineering is undergoing a 'phase transition' in human leverage: for decades leverage came from writing more correct instructions faster, but the unit of leverage has shifted from writing code to orchestrating intelligence. The programmer becomes a systems integrator of probabilistic entities whose reasoning can't be fully inspected or controlled — which the author says explains why even Karpathy feels 'behind.'",
     "topics": [
+      "industry",
       "management",
-      "industry"
+      "agent-design"
     ],
     "audience": [
       "me",
@@ -14619,10 +14669,13 @@
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "245.5K",
+    "views": "246K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "This is a phase transition in what it means to produce leverage as a human. For most of modern programming history, leverage came from writing more correct instructions faster than other people... That regime is over. The unit of leverage has shifted away from writing code toward orchestrating intelligence. The programmer is no longer the primary generator of logic. The programmer is becoming a systems integrator of probabilistic entities whose internal reasoning cannot be fully inspected, trusted, or controlled.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-12-27",
@@ -14650,10 +14703,12 @@
     "handle": "@techNmak",
     "subject": "Post by Tech with Mak on X",
     "url": "https://x.com/technmak/status/2002713140757496299",
-    "summary": "Comprehensive LangGraph learning path — covers building agentic AI chatbots, multi-agent coordination, LangGraph + MCP crash course (2.5 hrs), debugging/monitoring workflows, RAG pipelines with MultiModal support, fixing hallucinations, and fast search with Typesense.",
+    "summary": "A structured LangGraph learning path (pitched as filling the gap since LangGraph appears in ~half of AI job descriptions). Progresses from basic agent concepts (Pydantic data validation, agentic chatbots, multi-agent coordination) through production systems (a 2.5-hour LangGraph+MCP crash course, debugging/monitoring, deployment architecture) to RAG pipelines (multimodal RAG, hallucination fixes, end-to-end retrieval, Typesense search).",
     "topics": [
       "agent-design",
-      "skills-mcp"
+      "skills-mcp",
+      "dev-practices",
+      "questionable"
     ],
     "audience": [
       "me",
@@ -14661,10 +14716,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "55.9K",
+    "views": "56.2K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "LangGraph is in half the AI job descriptions I see right now. Yet most engineers still don't understand how it actually works. Here's a 12-tutorial learning path: Agents That Scale (Pydantic validation, agentic chatbots, multi-agent coordination); Production Systems (LangGraph + MCP crash course - 2.5 hours, debugging and monitoring, real deployment architecture); RAG Pipelines (MultiModal RAG, fixing hallucinations, complete RAG ingestion-to-retrieval, fast search with Typesense).",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-12-22",
@@ -14672,19 +14730,23 @@
     "handle": "@0xlelouch_",
     "subject": "Post by Abhishek Singh on X",
     "url": "https://x.com/0xlelouch_/status/2002673253912113644",
-    "summary": "Reflection on career self-knowledge in software engineering — argues you only discover what fulfills you (backend, frontend, infra, ML, management) through sustained reps: shipping boring features, debugging production at 3am, owning systems. Cautions against confusing novelty with fulfillment.",
+    "summary": "A reflective essay on career fulfillment in software engineering: you don't magically know whether backend, frontend, infra, ML, startups, big tech, or management will fulfill you — you only find out through reps. Early on people confuse novelty (new frameworks, jobs, titles) with fulfillment; real self-knowledge is earned by shipping boring features, debugging 3am outages, owning systems, and sticking with things long enough to feel the responsibility.",
     "topics": [
-      "management"
+      "management",
+      "general"
     ],
     "audience": [
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "25.6K",
+    "views": "25.7K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "This is very true in software engineering. You don't magically know whether you'll be fulfilled by backend systems, frontend UX, infra, ML, startups, big tech, management, or deep technical work. You only find out by doing the work - and doing a lot of it. Early on, most of us confuse novelty with fulfillment... What actually fulfills you shows up much later, after you've shipped boring features, debugged production outages at 3am, rewritten ugly code, and stuck with something long enough to feel the weight of responsibility. Self-knowledge in tech is earned through reps.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-12-21",
@@ -14692,10 +14754,11 @@
     "handle": "@ClaireSilver12",
     "subject": "Post by Claire Silver on X",
     "url": "https://x.com/clairesilver12/status/2002443560898208162",
-    "summary": "Highlights Unreal MCP — a free tool that lets you prompt Claude to build things in Unreal Engine. Example: 'make a Victorian manor, here's a reference pic, use the assets in this folder' and it just works. 699.3K views.",
+    "summary": "Claire Silver highlights Unreal MCP, a free MCP server that lets you prompt Claude to build things in Unreal Engine — e.g. 'make a Victorian manor, here's a reference pic, use the assets in this folder' and it just does it. She promised a demo video and calls it '10/10 magic.'",
     "topics": [
       "skills-mcp",
-      "claude-code"
+      "claude-code",
+      "agent-design"
     ],
     "audience": [
       "me",
@@ -14703,10 +14766,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "699.3K",
+    "views": "701.8K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "so there's a free thing called Unreal MCP that lets you prompt Claude to build stuff in Unreal Engine. 'make a Victorian manor. here's a reference pic. use the assets in this folder.' And he just...does. posting a vid on it Monday, but if you're bored tonight, 10/10 magic.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-12-19",
@@ -14714,7 +14780,7 @@
     "handle": "@svpino",
     "subject": "Post by Santiago on X",
     "url": "https://x.com/svpino/status/2002107789888655655",
-    "summary": "Demos a spec-driven development environment where 100% of time goes to writing specs and managing agents, 0% to writing code. Argues software development will never be the same.",
+    "summary": "Santiago shares a video demoing a spec-driven development environment where 100% of the developer's time goes to writing specs and managing agents and 0% to writing code — arguing software development will never be the same.",
     "topics": [
       "agent-design",
       "dev-practices"
@@ -14725,10 +14791,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "119.6K",
+    "views": "120.1K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Software development will never be the same. I want you to watch this video: This is a spec-driven development environment. 100% of your time goes to writing specs and managing agents. 0% goes to writing the code.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-12-19",
@@ -14736,7 +14805,7 @@
     "handle": "@jasonfried",
     "subject": "Post by Jason Fried on X",
     "url": "https://x.com/jasonfried/status/2002084849784676697",
-    "summary": "Jason Fried shares a 1-hour video of Jeff (18-year 37signals veteran) explaining the 'recordables' pattern — the most important architectural pattern used in both Basecamp and HEY. Key reason both codebases remain a joy to work on.",
+    "summary": "Jason Fried shares a talk in which Jeff, an 18-year 37signals veteran, explains the 'recordables pattern' — the single most important architectural pattern behind Basecamp and HEY and a key reason both codebases remain a joy to work on. Fried calls the insights deep, practical, and accessible even to non-technical folks.",
     "topics": [
       "dev-practices"
     ],
@@ -14746,10 +14815,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "85.1K",
+    "views": "85.6K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Jeff, an 18-year veteran at 37signals, and one of the clearest explainers of technical topics I've ever known, sits down and explains the recordables pattern. The recordables pattern has been the single-most important architectural pattern we've used on both Basecamp and HEY. It's a key reason both code bases are still a joy to work on. Deep, practical insights in this one. Interesting for non-technical folks, too.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-12-19",
@@ -14757,9 +14829,10 @@
     "handle": "@JustinMitchel",
     "subject": "Post by Justin Mitchel on X",
     "url": "https://x.com/justinmitchel/status/2001750598329499681",
-    "summary": "pg_textsearch just open-sourced — brings BM25 relevance-ranked full-text search to Postgres. Eliminates the need to sync data to Elasticsearch for search. Google uses BM25 in their search engine. GitHub repo: timescale/pg_textsearch.",
+    "summary": "Justin Mitchel flags that pg_textsearch was just open-sourced (github.com/timescale/pg_textsearch), a PostgreSQL extension bringing BM25 relevance-ranked full-text search to your database — meaning teams already on Postgres can skip syncing data to Elasticsearch for keyword search. Post is marked #sponsored.",
     "topics": [
-      "dev-practices"
+      "dev-practices",
+      "research"
     ],
     "audience": [
       "me",
@@ -14767,10 +14840,13 @@
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "506.4K",
+    "views": "507.5K",
     "notes": "506K views - very high engagement for a dev tools post",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "So... Postgres is now basically a search engine? pg_textsearch was just open sourced. It enables BM25 to search your database.... massive upgrade for key word search. Google uses BM25 in their search engine. If you're already on Postgres, you can now skip the whole sync-your-data-to-Elasticsearch dance for search. Grab it at github.com/timescale/pg_textsearch . #sponsored",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-12-16",
@@ -14778,7 +14854,7 @@
     "handle": "@femke_plantinga",
     "subject": "Post by Femke Plantinga on X",
     "url": "https://x.com/femke_plantinga/status/2000883645888827806",
-    "summary": "Breakdown of multi-agent AI architecture with four key components: Supervisors (orchestration/routing), specialized agents, coordination layer, and evaluation. Covers the tradeoff between complexity and capability vs single-agent simplicity.",
+    "summary": "Femke Plantinga argues multi-agent AI systems are displacing single-agent architectures and breaks down what a well-structured one looks like: a supervisor/orchestration layer that plans, routes queries to specialists and refines them (the 'air traffic controller'), plus specialized task-specific agents (query rewriters, etc.). She notes the real trade-off — more complex workflows but serious coordination challenges.",
     "topics": [
       "agent-design"
     ],
@@ -14788,31 +14864,39 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "34.7K",
+    "views": "35.1K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Multi-agent AI systems are eating single-agent architectures. But most teams have no idea how to build them. As agent systems get more complex, we're seeing a clear shift from single-agent architectures to multi-agent architectures that distribute work across specialized components. The trade-off: multi-agent systems can handle way more complex workflows, but they introduce serious coordination challenges. Four key components: Supervisors (orchestration layer that plans, routes queries to specialized agents, and refines queries - the air traffic controller); Specialized Agents (task-specific agents that each do one thing well, e.g. query rewriters)...",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-12-15",
-    "author": "Matt Dancho",
+    "author": "Matt Dancho (Business Science)",
     "handle": "@mdancho84",
     "subject": "Post by Matt Dancho on X",
     "url": "https://x.com/mdancho84/status/2000658529753932273",
-    "summary": "Open-source AI data science team in Python — automates data science workflows including data loading, cleaning, exploratory analysis, and feature engineering with 100% reproducible pipeline tracking. GitHub: business-science/ai-data-science-team.",
+    "summary": "Matt Dancho highlights an open-sourced (free) Python library, 'AI Data Science Team' (github.com/business-science/ai-data-science-team), that automates data-science workflows with AI — data loading, cleaning, exploratory analysis, and feature engineering — tracking each step in a fully reproducible pipeline. Includes a walkthrough video and a free 1-hour agentic AI workshop.",
     "topics": [
       "agent-design",
+      "dev-practices",
       "research"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
-    "priority": "long-term",
+    "priority": "near-term",
     "sourceType": "tweet",
-    "views": "85K",
+    "views": "85.3K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "This guy built an entire AI data science team in Python. Then open-sourced (100% free). It automates data science workflows with AI, including data loading, cleaning, exploratory analysis, and feature engineering. And it tracks each step in a 100% reproducible pipeline. AI Data Science Team On GitHub: github.com/business-science/ai-data-science-team",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-12-14",
@@ -14820,21 +14904,22 @@
     "handle": "@Fixer9999",
     "subject": "Post by Kermit on X",
     "url": "https://x.com/fixer9999/status/2000332286055850464",
-    "summary": "Shares link to Perplexity's 42-page internal guide on how they actually use AI at work — a reply to @aibytekat's post about the guide drop.",
+    "summary": "A bare link post sharing Perplexity's 'Perplexity at Work' PDF report (r2cdn.perplexity.ai/pdf/pplx-at-work.pdf) — Perplexity's enterprise/workplace positioning material. Low engagement; minimal commentary.",
     "topics": [
-      "industry",
-      "management"
+      "industry"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "me"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
-    "views": "1,977",
+    "views": "1,994",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "You're welcome — r2cdn.perplexity.ai/pdf/pplx-at-work.pdf (Perplexity 'at work' report).",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-12-14",
@@ -14842,20 +14927,24 @@
     "handle": "@aiwithjainam",
     "subject": "Post by Jainam Parmar on X",
     "url": "https://x.com/aiwithjainam/status/1999815060965994896",
-    "summary": "Claims 'Atom of Thought' prompting technique makes AI models 30-40% more accurate on complex reasoning tasks vs Chain of Thought. Presents as the technique that will change how everyone uses ChatGPT and Claude.",
+    "summary": "An engagement-styled post ('Chain of Thought is dead') claiming that 'Atom of Thought' prompting made models 30-40% more accurate on complex reasoning tasks, pitched as a technique that will change how people use ChatGPT and Claude. Hype framing, but the underlying Atom-of-Thought prompting idea is a real reasoning technique worth a look.",
     "topics": [
       "prompting",
       "questionable"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "238.6K",
+    "views": "239.3K",
     "notes": "Engagement farming style but the underlying technique (Atom of Thought) is from real research",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Chain of Thought is dead. I just tested Atom of Thought prompting and it's making AI models 30-40% more accurate on complex reasoning tasks. Here's the technique that's about to change how everyone uses ChatGPT and Claude.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-12-09",
@@ -14863,10 +14952,10 @@
     "handle": "@techNmak",
     "subject": "Post by Tech with Mak on X",
     "url": "https://x.com/technmak/status/1998264904563007889",
-    "summary": "Google released five AI Agent papers across five consecutive days — 250+ pages covering how agents should be built, evaluated, secured, and deployed. Post provides distilled summary of all five papers.",
+    "summary": "Tech with Mak distills Google's quiet December release of five AI-agent papers published one per day over five consecutive days — more than 250 pages covering how agents should be built, evaluated, secured, and deployed.",
     "topics": [
-      "agent-design",
-      "research"
+      "research",
+      "agent-design"
     ],
     "audience": [
       "me",
@@ -14874,10 +14963,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "71.9K",
+    "views": "72.3K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Last month, Google dropped something interesting: five AI Agent papers released across five consecutive days, one per day, each digging into a different part of how agents should be built, evaluated, secured, and deployed. No big splash, just a steady rollout of more than 250 pages of highly technical material. Here's the distilled version of what those five drops covered.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-12-09",
@@ -14885,10 +14977,11 @@
     "handle": "@rohanpaul_ai",
     "subject": "Post on X",
     "url": "https://x.com/rohanpaul_ai/status/1998262710040228310",
-    "summary": "Paper proposing an agentic file system for AI context management — treats everything as files in a shared space. Persistent context repository separates raw history, long-term memory, and short-lived scratchpads. Every access logged with timestamps and provenance.",
+    "summary": "Rohan Paul summarizes a paper proposing an 'agentic file system' for context engineering: treat every memory, tool, external source, and human note as a file in a shared space, with a persistent context repository separating raw history, long-term memory, and short-lived scratchpads so the prompt holds only the slice needed now. Every access is logged with timestamps and provenance, and a constructor/updater/evaluator manage context under the model's limited window.",
     "topics": [
+      "research",
       "agent-design",
-      "research"
+      "prompting"
     ],
     "audience": [
       "me",
@@ -14896,10 +14989,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "81.4K",
+    "views": "81.7K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "The paper says the best way to manage AI context is to treat everything like a file system. It proposes an agentic file system where every memory, tool, external source, and human note appears as a file in a shared space. A persistent context repository separates raw history, long term memory, and short lived scratchpads, so the model's prompt holds only the slice needed right now. Every access and transformation is logged with timestamps and provenance. Because LLMs see only limited context each call and forget past ones, the architecture adds a constructor to shrink context, an updater to swap pieces, and an evaluator to check quality.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-12-08",
@@ -14907,7 +15003,7 @@
     "handle": "@yahiyadev",
     "subject": "Post by Yahiya on X",
     "url": "https://x.com/yahiyadev/status/1997744726913736979",
-    "summary": "Book recommendations for modular monolith architecture: 'Event-Driven Architecture in Golang' by Michael Stack (starts monolith, transitions to microservices, covers Event Sourcing, CQRS, DDD) and 'Domain-Driven Design with Golang' by Matthew Boyle.",
+    "summary": "Answering a request for a book on structuring a monolith so services can be decoupled later, Yahiya recommends 'Event-Driven Architecture in Golang' by Michael Stack — which starts from a modular monolith and gradually transitions to microservices, covering Event Sourcing, CQRS, DDD, choreographed and orchestrated messaging, and sync-to-async refactoring — plus 'Domain-Driven Design with Golang' by Matthew Boyle.",
     "topics": [
       "dev-practices"
     ],
@@ -14917,10 +15013,13 @@
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "26.5K",
+    "views": "26.6K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "You can check out 'Event-Driven Architecture in Golang' by Michael Stack. This book is technically about event-driven systems, but it advocates starting with a modular monolith: it starts with a modular monolith then gradually transitions to microservices; teaches you to structure modules so they can be decoupled later; complete end-to-end EDA application; Event Sourcing, CQRS and DDD patterns; both choreographed & orchestrated messaging; sync -> async communication refactoring. Another good book is 'Domain-Driven Design with Golang' by Matthew Boyle.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-12-08",
@@ -14928,7 +15027,7 @@
     "handle": "@tom_doerr",
     "subject": "Post by Tom Dörr on X",
     "url": "https://x.com/tom_doerr/status/1996997820868366397",
-    "summary": "Shares VoltAgent/awesome-claude-skills — a GitHub collection of official and community-built Claude skills. 126.8K views.",
+    "summary": "Tom Dörr shares 'awesome-claude-skills' (github.com/VoltAgent/awesome-claude-skills), a curated collection of official and community-built Claude skills.",
     "topics": [
       "skills-mcp",
       "claude-code"
@@ -14939,10 +15038,13 @@
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "126.8K",
+    "views": "127.8K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Collection of official and community-built Claude skills — github.com/VoltAgent/awesome-claude-skills",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-12-07",
@@ -14950,8 +15052,9 @@
     "handle": "@rohanpaul_ai",
     "subject": "Post by Rohan Paul on X",
     "url": "https://x.com/rohanpaul_ai/status/1997405403987222642",
-    "summary": "Google's guide on context engineering for multi-agent systems — replaces giant prompts with a compiled view over state split across Working Context, Session, Memory, and Artifacts. Uses ADK for context compaction, filtering, and caching.",
+    "summary": "Rohan Paul summarizes Google's guide on context engineering for multi-agent systems (built around ADK). Instead of giant prompts, it compiles a view over state split into Working Context, Session, Memory, and Artifacts; each call rebuilds Working Context from instructions, selected session events, memory results, and artifact references. ADK controls context growth via compaction, filtering, and caching — summarizing old spans, dropping useless events, and reusing a stable prefix — and pushes large payloads out to Artifacts to keep systems fast, affordable, and less hallucination-prone.",
     "topics": [
+      "research",
       "agent-design",
       "prompting"
     ],
@@ -14961,10 +15064,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "64.5K",
+    "views": "64.7K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Google released a solid guide on context engineering for working with multi-agent systems. Shows how context engineering keeps multiagent systems fast, affordable, and less hallucination prone. The guide replaces giant prompts with a compiled view over state that splits information across Working Context, Session, Memory, and Artifacts. Every call rebuilds Working Context from instructions, selected Session events, memory results, and artifact references. A contents processor walks the Session log, drops noise, formats events as chat history. ADK controls growth with context compaction, filtering, and context caching. Large payloads become Artifacts outside the prompt.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-12-07",
@@ -14988,23 +15094,28 @@
   },
   {
     "date": "2025-12-01",
-    "author": "AWS reinvent",
+    "author": "AWS Containers",
     "handle": "@na",
     "subject": "AWS reinvent containers",
     "url": "https://github.com/aws-containers/reinvent",
-    "summary": "AWS Containers re:Invent repository — resources and demos from AWS re:Invent conference related to container orchestration and deployment.",
+    "summary": "The aws-containers/reinvent GitHub repo collects AWS re:Invent 2025 Kubernetes Track assets — slides, the latest EKS launches, and demos from the sessions. A reference for what AWS shipped for Kubernetes/EKS at re:Invent 2025.",
     "topics": [
-      "dev-practices"
+      "dev-practices",
+      "industry"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "long-term",
     "sourceType": "article",
     "views": "",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "AWS re:Invent 2025 | Kubernetes Track Assets. This repository (github.com/aws-containers/reinvent) contains slides, latest launches, and demos from the re:Invent 2025 Kubernetes track, including the latest EKS launches.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-11-29",
