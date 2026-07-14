@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-07-14T20:08:09Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-14T20:33:15Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-09** — [Kodus](https://kodus.io/self-hosted-ai-code-review/) — *now • Dev Practices • v1 enriched*  
@@ -24,25 +24,25 @@
 *No concepts gained new evidence in the last 14 days. Run mechanical discovery or seed curated concepts to populate this section.*
 
 ### Revisit from last month
-- **2025-08-11** — [Imrat](https://x.com/imrat/status/1954497164589056090) — *near-term • Claude Code • 167.3K views • v1 enriched*  
-  A recipe for using Claude Code as a DevOps agent with its new background jobs: run Claude in a tmux session, have it spawn a background process to tail server logs and summarize them, then a second process that pings Claude to 'check logs' on an interval.
-- **2025-08-15** — [Philip Vollet](https://x.com/philipvollet/status/1955945448860008655) — *near-term • Agent Design • 93.5K views • v1 enriched*  
-  Announces Elysia, an open-source agentic RAG platform (successor to Verba) built on Weaviate and DSPy. Highlights: transparent decision-tree agents with self-healing and custom tools/branches, pre-query data analysis to avoid blind vector/text search, dynamic result displays, feedback-driven few-shot personalization so smaller models perform like larger ones, and query-time chunk-on-demand. Delivered as a FastAPI+NextJS app and a pip package (elysia-ai).
+- **2024-06-18** — [curvedinf](https://github.com/curvedinf/dir-assistant) — *near-term • Agent Design • v1 enriched*  
+  dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
+- **2025-01-04** — [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — *near-term • Claude Code • v1 enriched*  
+  Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 371 | 53.2% |
+| agent-design | 373 | 53.5% |
 | claude-code | 180 | 25.8% |
-| dev-practices | 237 | 34.0% |
-| skills-mcp | 135 | 19.4% |
+| dev-practices | 241 | 34.6% |
+| skills-mcp | 137 | 19.7% |
 | prompting | 103 | 14.8% |
-| research | 143 | 20.5% |
-| industry | 94 | 13.5% |
+| research | 145 | 20.8% |
+| industry | 95 | 13.6% |
 | management | 106 | 15.2% |
 | questionable | 132 | 18.9% |
-| general | 93 | 13.3% |
+| general | 94 | 13.5% |
 
 ---
 ## Quick Reference (50 Most Recent)
@@ -102,7 +102,7 @@
 ---
 ## Posts by Topic
 
-### Agent Design (371)
+### Agent Design (373)
 
 - [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — 2026-07-14: How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with a native AI agent, built-in MCP server, Cowork-style web+local-file agents, scheduled autopilot tasks, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), and local-model (Ollama) support — drivable from Claude Code or Gemini CLI. Engagement-framed but describes a real agentic-browser tool worth evaluating.
 
@@ -834,17 +834,21 @@
 
 - [Imrat](https://x.com/imrat/status/1954497164589056090) — 2025-08-11: A recipe for using Claude Code as a DevOps agent with its new background jobs: run Claude in a tmux session, have it spawn a background process to tail server logs and summarize them, then a second process that pings Claude to 'check logs' on an interval.
 
-- [Mervin Praison](https://x.com/mervinpraison/status/1881788246684013011) — 2025-01-22: Tutorial on building a 100% local DeepSeek RAG Agent using Ollama, PraisonAI, and Streamlit with Nomic embed text for embeddings. Deep contextual awareness, few lines of code.
+- [Nick Dobos](https://x.com/nickadobos/status/1930878279290060975) — 2025-06-07: Riffs on a repo (Shubham Saboo's) that stores millions of text chunks inside MP4 video files for fast semantic search, pitched as an open-source replacement for expensive vector databases; Nick Dobos speculates video may be an optimal encoding for AI memory, echoing how human memory leans on vision.
 
-- [Santiago](https://x.com/svpino/status/1881336934418755862) — 2025-01-21: Demos GroundX — open-source enterprise-grade RAG system that runs fully on your own servers with no network access needed. Air-gapped, GPU-powered, with what Santiago calls the best document understanding he's seen.
+- [Mervin Praison](https://x.com/mervinpraison/status/1881788246684013011) — 2025-01-22: Shows a 100% local RAG AI agent with reasoning: DeepSeek via Ollama for the LLM, PraisonAI to build the agent in a few lines, Nomic embeddings, and a Streamlit UI—code included in the thread.
 
-- [Shubham Saboo](https://x.com/saboo_shubham_/status/1849638773136687551) — 2024-10-25: AutoRAG — automatically evaluates multiple RAG strategies and finds the perfect RAG pipeline for your data in a few lines of Python. 100% open-source.
+- [Santiago](https://x.com/svpino/status/1881336934418755862) — 2025-01-21: Walks through GroundX, an open-source, self-hostable/air-gapped enterprise RAG system. Two services: Ingest (a pretrained vision model that 'understands' documents instead of feeding raw docs to the LLM) and Search (text+vector search with a fine-tuned re-ranker). Santiago's thesis: most teams need better ingestion, not better retrieval; includes a video demo and the free X-Ray inspection tool.
 
-- [Shubham Saboo](https://x.com/saboo_shubham_/status/1818111127286579448) — 2024-07-30: Tutorial on building a custom AI chatbot with RAG to chat with any GitHub repo using open-source Llama 3.1 405B — no Python code required.
+- [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-- [Akshay](https://x.com/akshay_pachaar/status/1816088785152848028) — 2024-07-24: Tutorial on building a local RAG app using Meta's Llama 3.1. 705.5K views — one of the higher-engagement RAG tutorials in the collection.
+- [Shubham Saboo](https://x.com/saboo_shubham_/status/1849638773136687551) — 2024-10-25: Introduces AutoRAG, an open-source tool that automatically benchmarks multiple RAG strategies to find the optimal RAG pipeline for your data in a few lines of Python.
 
-- [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
+- [Shubham Saboo](https://x.com/saboo_shubham_/status/1818111127286579448) — 2024-07-30: Tutorial for building a no-code RAG chatbot to chat with any GitHub repo, powered by open-source Llama 3.1 405B.
+
+- [Akshay](https://x.com/akshay_pachaar/status/1816088785152848028) — 2024-07-24: A tutorial thread on building a 100% local RAG app using Meta's Llama 3.1.
+
+- [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
 ### Claude Code (180)
 
@@ -1202,13 +1206,13 @@
 
 - [Imrat](https://x.com/imrat/status/1954497164589056090) — 2025-08-11: A recipe for using Claude Code as a DevOps agent with its new background jobs: run Claude in a tmux session, have it spawn a background process to tail server logs and summarize them, then a second process that pings Claude to 'check logs' on an interval.
 
-- [Anthropic](https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial/Anthropic%201P) — 2025-04-23: Anthropic's official interactive prompt engineering tutorial — hands-on course for learning to prompt Claude effectively.
+- [Anthropic](https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial/Anthropic%201P) — 2025-04-23: Anthropic's official interactive prompt-engineering tutorial (Jupyter notebooks in anthropics/courses): a 9-chapter curriculum on prompt structure, being clear and direct, role prompting, separating data from instructions, output formatting, step-by-step reasoning, few-shot examples, and avoiding hallucinations, plus appendices on prompt chaining, tool use, and search & retrieval.
 
-- [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
+- [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-- [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
+- [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (237)
+### Dev Practices (241)
 
 - [Alvaro Videla](https://x.com/old_sound/status/2076932819008242037) — 2026-07-14: Alvaro Videla released LeetLLM (github.com/videlalvaro/leet-llm) — a free, problem-based course of 48 lessons for building a small LLM inference engine on Apple Silicon in Swift and Metal, progressing from dot products and GEMV through attention and token generation.
 
@@ -1676,15 +1680,23 @@
 
 - [K Srinivas Rao](https://x.com/sriniously/status/1950432839474012456) — 2025-07-31: [Post unavailable — page doesn't exist]
 
-- [Graham Helton](https://x.com/grahamhelton3/status/1936462167751921698) — 2025-06-23: Graham Helton's brain dump of ~34 personal/professional guidelines before leaving Google for Snowflake. 1M views — resonated as a career reflection piece.
+- [Graham Helton](https://x.com/grahamhelton3/status/1936462167751921698) — 2025-06-23: Before leaving Google for Snowflake, Graham Helton braindumped ~34 personal guidelines/principles he follows for work and productivity; the thread lists them.
 
-- [DHH](https://x.com/dhh/status/1934978649872371944) — 2025-06-18: DHH on the jump from Programmer to Senior Programmer being the biggest career-progression chasm in the industry. Most who cross it keep going up, but many never make it.
+- [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-- [Dominik Tornow](https://x.com/dominiktornow/status/1846507701599433179) — 2024-10-17: Shares a paper on the complex world of retries in distributed systems — argues retries are incredibly difficult to get right despite being touted as a simple reliability fix.
+- [Elon Musk](https://x.com/elonmusk/status/1862363270931255356) — 2024-11-29: Elon Musk touts his '5-step algorithm' for making fewer mistakes (make requirements less dumb, delete parts/processes, simplify & optimize, accelerate cycle time, automate), in a quote of a post speculating DOGE might adopt it like SpaceX.
 
-- [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
+- [Shubham Saboo](https://x.com/saboo_shubham_/status/1849638773136687551) — 2024-10-25: Introduces AutoRAG, an open-source tool that automatically benchmarks multiple RAG strategies to find the optimal RAG pipeline for your data in a few lines of Python.
 
-### Skills & MCP (135)
+- [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Points to a superengineer.net blog post as a good summary of Elon Musk's 5-step design/engineering method (DFX).
+
+- [Dominik Tornow](https://x.com/dominiktornow/status/1846507701599433179) — 2024-10-17: Flags a paper as a strong discussion of how hard retries are to get right for reliability under failure—retries are often oversold as a simple fix but are surprisingly complex.
+
+- [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: A take on pre-commit hooks: Matt Pocock prefers 'fewer guard rails, more safety nets'—favoring tooling that catches problems after the fact over friction that blocks commits up front.
+
+- [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
+
+### Skills & MCP (137)
 
 - [JoePro](https://x.com/joepro/status/2076877282312954311) — 2026-07-14: JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skill spec) engineered to produce distinctive, production-grade UIs that avoid recognizable AI-generated tropes — covering success criteria (signature visual identity, complete states, WCAG AA accessibility, token-driven design systems) and a context-gathering routine before writing code.
 
@@ -1956,6 +1968,10 @@
 
 - [Philip Vollet](https://x.com/philipvollet/status/1955945448860008655) — 2025-08-15: Announces Elysia, an open-source agentic RAG platform (successor to Verba) built on Weaviate and DSPy. Highlights: transparent decision-tree agents with self-healing and custom tools/branches, pre-query data analysis to avoid blind vector/text search, dynamic result displays, feedback-driven few-shot personalization so smaller models perform like larger ones, and query-time chunk-on-demand. Delivered as a FastAPI+NextJS app and a pip package (elysia-ai).
 
+- [Nick Dobos](https://x.com/nickadobos/status/1930878279290060975) — 2025-06-07: Riffs on a repo (Shubham Saboo's) that stores millions of text chunks inside MP4 video files for fast semantic search, pitched as an open-source replacement for expensive vector databases; Nick Dobos speculates video may be an optimal encoding for AI memory, echoing how human memory leans on vision.
+
+- [Mervin Praison](https://x.com/mervinpraison/status/1881788246684013011) — 2025-01-22: Shows a 100% local RAG AI agent with reasoning: DeepSeek via Ollama for the LLM, PraisonAI to build the agent in a few lines, Nomic embeddings, and a Streamlit UI—code included in the thread.
+
 ### Prompting (103)
 
 - [JoePro](https://x.com/joepro/status/2076877282312954311) — 2026-07-14: JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skill spec) engineered to produce distinctive, production-grade UIs that avoid recognizable AI-generated tropes — covering success criteria (signature visual identity, complete states, WCAG AA accessibility, token-driven design systems) and a context-gathering routine before writing code.
@@ -2160,11 +2176,11 @@
 
 - [Dante O. Cuales, Jr.](https://x.com/danteocualesjr/status/1957204427909321027) — 2025-08-18: Argues the intimidation factor of AI engineering is mostly artificial: most work is API orchestration, prompt optimization, and data-pipeline plumbing, with model internals abstracted away. The real skill is choosing the right tool and chaining them effectively.
 
-- [Anthropic](https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial/Anthropic%201P) — 2025-04-23: Anthropic's official interactive prompt engineering tutorial — hands-on course for learning to prompt Claude effectively.
+- [Anthropic](https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial/Anthropic%201P) — 2025-04-23: Anthropic's official interactive prompt-engineering tutorial (Jupyter notebooks in anthropics/courses): a 9-chapter curriculum on prompt structure, being clear and direct, role prompting, separating data from instructions, output formatting, step-by-step reasoning, few-shot examples, and avoiding hallucinations, plus appendices on prompt chaining, tool use, and search & retrieval.
 
-- [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
+- [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-### Research (143)
+### Research (145)
 
 - [Alvaro Videla](https://x.com/old_sound/status/2076932819008242037) — 2026-07-14: Alvaro Videla released LeetLLM (github.com/videlalvaro/leet-llm) — a free, problem-based course of 48 lessons for building a small LLM inference engine on Apple Silicon in Swift and Metal, progressing from dot products and GEMV through attention and token generation.
 
@@ -2436,23 +2452,27 @@
 
 - [Philip Vollet](https://x.com/philipvollet/status/1955945448860008655) — 2025-08-15: Announces Elysia, an open-source agentic RAG platform (successor to Verba) built on Weaviate and DSPy. Highlights: transparent decision-tree agents with self-healing and custom tools/branches, pre-query data analysis to avoid blind vector/text search, dynamic result displays, feedback-driven few-shot personalization so smaller models perform like larger ones, and query-time chunk-on-demand. Delivered as a FastAPI+NextJS app and a pip package (elysia-ai).
 
-- [Nick Dobos](https://x.com/nickadobos/status/1930878279290060975) — 2025-06-07: Explores the idea of encoding AI memory as video — references an open-source repo that stores millions of text chunks in MP4 files instead of vector databases, with lightning-fast semantic search and no database needed.
+- [Nick Dobos](https://x.com/nickadobos/status/1930878279290060975) — 2025-06-07: Riffs on a repo (Shubham Saboo's) that stores millions of text chunks inside MP4 video files for fast semantic search, pitched as an open-source replacement for expensive vector databases; Nick Dobos speculates video may be an optimal encoding for AI memory, echoing how human memory leans on vision.
 
-- [Mervin Praison](https://x.com/mervinpraison/status/1881788246684013011) — 2025-01-22: Tutorial on building a 100% local DeepSeek RAG Agent using Ollama, PraisonAI, and Streamlit with Nomic embed text for embeddings. Deep contextual awareness, few lines of code.
+- [Anthropic](https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial/Anthropic%201P) — 2025-04-23: Anthropic's official interactive prompt-engineering tutorial (Jupyter notebooks in anthropics/courses): a 9-chapter curriculum on prompt structure, being clear and direct, role prompting, separating data from instructions, output formatting, step-by-step reasoning, few-shot examples, and avoiding hallucinations, plus appendices on prompt chaining, tool use, and search & retrieval.
 
-- [Santiago](https://x.com/svpino/status/1881336934418755862) — 2025-01-21: Demos GroundX — open-source enterprise-grade RAG system that runs fully on your own servers with no network access needed. Air-gapped, GPU-powered, with what Santiago calls the best document understanding he's seen.
+- [Mervin Praison](https://x.com/mervinpraison/status/1881788246684013011) — 2025-01-22: Shows a 100% local RAG AI agent with reasoning: DeepSeek via Ollama for the LLM, PraisonAI to build the agent in a few lines, Nomic embeddings, and a Streamlit UI—code included in the thread.
 
-- [Shubham Saboo](https://x.com/saboo_shubham_/status/1849638773136687551) — 2024-10-25: AutoRAG — automatically evaluates multiple RAG strategies and finds the perfect RAG pipeline for your data in a few lines of Python. 100% open-source.
+- [Santiago](https://x.com/svpino/status/1881336934418755862) — 2025-01-21: Walks through GroundX, an open-source, self-hostable/air-gapped enterprise RAG system. Two services: Ingest (a pretrained vision model that 'understands' documents instead of feeding raw docs to the LLM) and Search (text+vector search with a fine-tuned re-ranker). Santiago's thesis: most teams need better ingestion, not better retrieval; includes a video demo and the free X-Ray inspection tool.
 
-- [Dominik Tornow](https://x.com/dominiktornow/status/1846507701599433179) — 2024-10-17: Shares a paper on the complex world of retries in distributed systems — argues retries are incredibly difficult to get right despite being touted as a simple reliability fix.
+- [Shubham Saboo](https://x.com/saboo_shubham_/status/1849638773136687551) — 2024-10-25: Introduces AutoRAG, an open-source tool that automatically benchmarks multiple RAG strategies to find the optimal RAG pipeline for your data in a few lines of Python.
 
-- [Shubham Saboo](https://x.com/saboo_shubham_/status/1818111127286579448) — 2024-07-30: Tutorial on building a custom AI chatbot with RAG to chat with any GitHub repo using open-source Llama 3.1 405B — no Python code required.
+- [Dominik Tornow](https://x.com/dominiktornow/status/1846507701599433179) — 2024-10-17: Flags a paper as a strong discussion of how hard retries are to get right for reliability under failure—retries are often oversold as a simple fix but are surprisingly complex.
 
-- [Akshay](https://x.com/akshay_pachaar/status/1816088785152848028) — 2024-07-24: Tutorial on building a local RAG app using Meta's Llama 3.1. 705.5K views — one of the higher-engagement RAG tutorials in the collection.
+- [Shubham Saboo](https://x.com/saboo_shubham_/status/1818111127286579448) — 2024-07-30: Tutorial for building a no-code RAG chatbot to chat with any GitHub repo, powered by open-source Llama 3.1 405B.
 
-- [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: 15-part thread explaining the 'stunning, simple explanation behind matrix multiplication' — breaks down the most crucial idea behind modern machine learning. 1M views.
+- [Akshay](https://x.com/akshay_pachaar/status/1816088785152848028) — 2024-07-24: A tutorial thread on building a 100% local RAG app using Meta's Llama 3.1.
 
-### Industry (94)
+- [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
+
+- [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.
+
+### Industry (95)
 
 - [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — 2026-07-14: How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with a native AI agent, built-in MCP server, Cowork-style web+local-file agents, scheduled autopilot tasks, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), and local-model (Ollama) support — drivable from Claude Code or Gemini CLI. Engagement-framed but describes a real agentic-browser tool worth evaluating.
 
@@ -2641,6 +2661,8 @@
 - [Ray Fernando](https://x.com/rayfernando1337/status/1980180030971150690) — 2025-10-21: Ray Fernando shares DeepSeek-OCR (github.com/deepseek-ai/DeepSeek-OCR) — DeepSeek's 'Contexts Optical Compression' approach that encodes long text contexts as visual tokens for efficient OCR and document understanding.
 
 - [Arthur MacWaters](https://x.com/arthurmacwaters/status/1957580001433514167) — 2025-08-19: Endorses a referenced approach as 'unironically the right way to build a startup.' The substantive content is in the quoted/referenced post rather than the one-line commentary.
+
+- [Santiago](https://x.com/svpino/status/1881336934418755862) — 2025-01-21: Walks through GroundX, an open-source, self-hostable/air-gapped enterprise RAG system. Two services: Ingest (a pretrained vision model that 'understands' documents instead of feeding raw docs to the LLM) and Search (text+vector search with a fine-tuned re-ranker). Santiago's thesis: most teams need better ingestion, not better retrieval; includes a video demo and the free X-Ray inspection tool.
 
 ### Management (106)
 
@@ -2846,15 +2868,15 @@
 
 - [Book Therapy](https://x.com/book_therapy223/status/1943651617976283236) — 2025-07-11: Shares content on the distinction 'A Plan is Not a Strategy' (the Roger Martin / HBR theme): strategy is an integrated set of choices about where to play and how to win, not merely a list of planned activities. Post text is just the headline; the substance is in the attached media.
 
-- [Graham Helton](https://x.com/grahamhelton3/status/1936462167751921698) — 2025-06-23: Graham Helton's brain dump of ~34 personal/professional guidelines before leaving Google for Snowflake. 1M views — resonated as a career reflection piece.
+- [Graham Helton](https://x.com/grahamhelton3/status/1936462167751921698) — 2025-06-23: Before leaving Google for Snowflake, Graham Helton braindumped ~34 personal guidelines/principles he follows for work and productivity; the thread lists them.
 
-- [DHH](https://x.com/dhh/status/1934978649872371944) — 2025-06-18: DHH on the jump from Programmer to Senior Programmer being the biggest career-progression chasm in the industry. Most who cross it keep going up, but many never make it.
+- [DHH](https://x.com/dhh/status/1934978649872371944) — 2025-06-18: DHH argues the jump from Programmer to Senior Programmer is the biggest career-progression chasm in software; those who cross it tend to keep advancing, but many never do.
 
-- [Dave Kline](https://x.com/dklineii/status/1928797718907908342) — 2025-06-01: Dave Kline's 'one skill to become a better manager overnight' — management advice content.
+- [Dave Kline](https://x.com/dklineii/status/1928797718907908342) — 2025-06-01: Opens a management thread promising one skill to become a better manager overnight; the specific skill and guidance are developed in the replies.
 
-- [Elon Musk](https://x.com/elonmusk/status/1862363270931255356) — 2024-11-29: Elon Musk shares his 'simple algorithm for making fewer dumb mistakes' — a decision-making framework. 25M views.
+- [Elon Musk](https://x.com/elonmusk/status/1862363270931255356) — 2024-11-29: Elon Musk touts his '5-step algorithm' for making fewer mistakes (make requirements less dumb, delete parts/processes, simplify & optimize, accelerate cycle time, automate), in a quote of a post speculating DOGE might adopt it like SpaceX.
 
-- [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
+- [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Points to a superengineer.net blog post as a good summary of Elon Musk's 5-step design/engineering method (DFX).
 
 ### Questionable (132)
 
@@ -3122,7 +3144,7 @@
 
 - [Aakash Gupta](https://x.com/aakashg0/status/1967135994228166848) — 2025-09-15: Boosts another user's step-by-step roadmap for building your first AI agent, calling it 'gold.' Engagement-style framing; the substantive content lives in the referenced roadmap rather than the post itself.
 
-### General (97)
+### General (98)
 
 - [witcheer](https://x.com/witcheer/status/2076717324585898343) — 2026-07-14: witcheer crowdsourced and hand-tallied 250+ replies on how people run Hermes (Nous Research's open model), distilling community local-deployment setups into six summary stats.
 
@@ -3317,6 +3339,8 @@
 - [Aadit Sheth](https://x.com/aaditsh/status/1953462911961374889) — 2025-08-09: [Post deleted/unavailable]
 
 - [Pau Labarta Bajo](https://x.com/paulabartabajo_/status/1815990574580699209) — 2024-07-25: [Post deleted/unavailable]
+
+- [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.
 
 ---
 ## Full Chronological List
@@ -5387,67 +5411,67 @@
 ### Jun 2025
 
 - **2025-06-23** | [Graham Helton](https://x.com/grahamhelton3/status/1936462167751921698) | management, dev-practices
-  Graham Helton's brain dump of ~34 personal/professional guidelines before leaving Google for Snowflake. 1M views — resonated as a career reflection piece.
+  Before leaving Google for Snowflake, Graham Helton braindumped ~34 personal guidelines/principles he follows for work and productivity; the thread lists them.
 
-- **2025-06-18** | [DHH](https://x.com/dhh/status/1934978649872371944) | management, dev-practices
-  DHH on the jump from Programmer to Senior Programmer being the biggest career-progression chasm in the industry. Most who cross it keep going up, but many never make it.
+- **2025-06-18** | [DHH](https://x.com/dhh/status/1934978649872371944) | management
+  DHH argues the jump from Programmer to Senior Programmer is the biggest career-progression chasm in software; those who cross it tend to keep advancing, but many never do.
 
-- **2025-06-07** | [Nick Dobos](https://x.com/nickadobos/status/1930878279290060975) | research
-  Explores the idea of encoding AI memory as video — references an open-source repo that stores millions of text chunks in MP4 files instead of vector databases, with lightning-fast semantic search and no database needed.
+- **2025-06-07** | [Nick Dobos](https://x.com/nickadobos/status/1930878279290060975) | research, agent-design, skills-mcp
+  Riffs on a repo (Shubham Saboo's) that stores millions of text chunks inside MP4 video files for fast semantic search, pitched as an open-source replacement for expensive vector databases; Nick Dobos speculates video may be an optimal encoding for AI memory, echoing how human memory leans on vision.
 
 - **2025-06-01** | [Dave Kline](https://x.com/dklineii/status/1928797718907908342) | management
-  Dave Kline's 'one skill to become a better manager overnight' — management advice content.
+  Opens a management thread promising one skill to become a better manager overnight; the specific skill and guidance are developed in the replies.
 
 ### Apr 2025
 
-- **2025-04-23** | [Anthropic](https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial/Anthropic%201P) | prompting, claude-code
-  Anthropic's official interactive prompt engineering tutorial — hands-on course for learning to prompt Claude effectively.
+- **2025-04-23** | [Anthropic](https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial/Anthropic%201P) | prompting, claude-code, research
+  Anthropic's official interactive prompt-engineering tutorial (Jupyter notebooks in anthropics/courses): a 9-chapter curriculum on prompt structure, being clear and direct, role prompting, separating data from instructions, output formatting, step-by-step reasoning, few-shot examples, and avoiding hallucinations, plus appendices on prompt chaining, tool use, and search & retrieval.
 
 ### Jan 2025
 
-- **2025-01-22** | [Mervin Praison](https://x.com/mervinpraison/status/1881788246684013011) | agent-design, research
-  Tutorial on building a 100% local DeepSeek RAG Agent using Ollama, PraisonAI, and Streamlit with Nomic embed text for embeddings. Deep contextual awareness, few lines of code.
+- **2025-01-22** | [Mervin Praison](https://x.com/mervinpraison/status/1881788246684013011) | agent-design, research, skills-mcp
+  Shows a 100% local RAG AI agent with reasoning: DeepSeek via Ollama for the LLM, PraisonAI to build the agent in a few lines, Nomic embeddings, and a Streamlit UI—code included in the thread.
 
-- **2025-01-21** | [Santiago](https://x.com/svpino/status/1881336934418755862) | agent-design, research
-  Demos GroundX — open-source enterprise-grade RAG system that runs fully on your own servers with no network access needed. Air-gapped, GPU-powered, with what Santiago calls the best document understanding he's seen.
+- **2025-01-21** | [Santiago](https://x.com/svpino/status/1881336934418755862) | research, agent-design, industry
+  Walks through GroundX, an open-source, self-hostable/air-gapped enterprise RAG system. Two services: Ingest (a pretrained vision model that 'understands' documents instead of feeding raw docs to the LLM) and Search (text+vector search with a fine-tuned re-ranker). Santiago's thesis: most teams need better ingestion, not better retrieval; includes a video demo and the free X-Ray inspection tool.
 
-- **2025-01-04** | [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) | claude-code, prompting
-  Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
+- **2025-01-04** | [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) | claude-code, prompting, dev-practices, agent-design
+  Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
 ### Nov 2024
 
-- **2024-11-29** | [Elon Musk](https://x.com/elonmusk/status/1862363270931255356) | management
-  Elon Musk shares his 'simple algorithm for making fewer dumb mistakes' — a decision-making framework. 25M views.
+- **2024-11-29** | [Elon Musk](https://x.com/elonmusk/status/1862363270931255356) | management, dev-practices
+  Elon Musk touts his '5-step algorithm' for making fewer mistakes (make requirements less dumb, delete parts/processes, simplify & optimize, accelerate cycle time, automate), in a quote of a post speculating DOGE might adopt it like SpaceX.
 
 ### Oct 2024
 
-- **2024-10-25** | [Shubham Saboo](https://x.com/saboo_shubham_/status/1849638773136687551) | agent-design, research
-  AutoRAG — automatically evaluates multiple RAG strategies and finds the perfect RAG pipeline for your data in a few lines of Python. 100% open-source.
+- **2024-10-25** | [Shubham Saboo](https://x.com/saboo_shubham_/status/1849638773136687551) | research, agent-design, dev-practices
+  Introduces AutoRAG, an open-source tool that automatically benchmarks multiple RAG strategies to find the optimal RAG pipeline for your data in a few lines of Python.
 
-- **2024-10-19** | [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) | management
-  Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
+- **2024-10-19** | [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) | management, dev-practices
+  Points to a superengineer.net blog post as a good summary of Elon Musk's 5-step design/engineering method (DFX).
 
 - **2024-10-17** | [Dominik Tornow](https://x.com/dominiktornow/status/1846507701599433179) | dev-practices, research
-  Shares a paper on the complex world of retries in distributed systems — argues retries are incredibly difficult to get right despite being touted as a simple reliability fix.
+  Flags a paper as a strong discussion of how hard retries are to get right for reliability under failure—retries are often oversold as a simple fix but are surprisingly complex.
 
 ### Jul 2024
 
 - **2024-07-30** | [Shubham Saboo](https://x.com/saboo_shubham_/status/1818111127286579448) | agent-design, research
-  Tutorial on building a custom AI chatbot with RAG to chat with any GitHub repo using open-source Llama 3.1 405B — no Python code required.
+  Tutorial for building a no-code RAG chatbot to chat with any GitHub repo, powered by open-source Llama 3.1 405B.
 
 - **2024-07-25** | [Pau Labarta Bajo](https://x.com/paulabartabajo_/status/1815990574580699209) | general
   [Post deleted/unavailable]
 
 - **2024-07-24** | [Akshay](https://x.com/akshay_pachaar/status/1816088785152848028) | agent-design, research
-  Tutorial on building a local RAG app using Meta's Llama 3.1. 705.5K views — one of the higher-engagement RAG tutorials in the collection.
+  A tutorial thread on building a 100% local RAG app using Meta's Llama 3.1.
 
 - **2024-07-10** | [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) | dev-practices
-  Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
+  A take on pre-commit hooks: Matt Pocock prefers 'fewer guard rails, more safety nets'—favoring tooling that catches problems after the fact over friction that blocks commits up front.
 
 ### Jun 2024
 
-- **2024-06-18** | [dir-assistant](https://github.com/curvedinf/dir-assistant) | agent-design, claude-code
-  dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
+- **2024-06-18** | [curvedinf](https://github.com/curvedinf/dir-assistant) | agent-design, dev-practices, research, claude-code
+  dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-- **2024-06-11** | [Santiago](https://x.com/svpino/status/1800151091461652740) | research
-  15-part thread explaining the 'stunning, simple explanation behind matrix multiplication' — breaks down the most crucial idea behind modern machine learning. 1M views.
+- **2024-06-11** | [Santiago](https://x.com/svpino/status/1800151091461652740) | research, general
+  A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.

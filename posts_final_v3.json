@@ -16337,21 +16337,24 @@
     "handle": "@GrahamHelton3",
     "subject": "Post by Graham Helton on X",
     "url": "https://x.com/grahamhelton3/status/1936462167751921698",
-    "summary": "Graham Helton's brain dump of ~34 personal/professional guidelines before leaving Google for Snowflake. 1M views — resonated as a career reflection piece.",
+    "summary": "Before leaving Google for Snowflake, Graham Helton braindumped ~34 personal guidelines/principles he follows for work and productivity; the thread lists them.",
     "topics": [
       "management",
       "dev-practices"
     ],
     "audience": [
       "me",
-      "leadership"
+      "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
     "views": "1M",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Before moving from my role at Google to Snowflake I sat down and did a braindump of all the guidelines that I follow (or followed at one point and wanted to reintroduce). Here are the ~34 guidelines that made the cut.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-06-18",
@@ -16359,21 +16362,24 @@
     "handle": "@dhh",
     "subject": "Post by DHH on X",
     "url": "https://x.com/dhh/status/1934978649872371944",
-    "summary": "DHH on the jump from Programmer to Senior Programmer being the biggest career-progression chasm in the industry. Most who cross it keep going up, but many never make it.",
+    "summary": "DHH argues the jump from Programmer to Senior Programmer is the biggest career-progression chasm in software; those who cross it tend to keep advancing, but many never do.",
     "topics": [
-      "management",
-      "dev-practices"
+      "management"
     ],
     "audience": [
       "me",
+      "leadership",
       "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
-    "views": "165.3K",
+    "views": "165.5K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "The jump from Programmer to Senior Programmer is the biggest career-progression chasm in our industry. If you make it across, you'll likely keep going upwards, but many never do.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-06-07",
@@ -16381,19 +16387,25 @@
     "handle": "@NickADobos",
     "subject": "Post by Nick Dobos on X",
     "url": "https://x.com/nickadobos/status/1930878279290060975",
-    "summary": "Explores the idea of encoding AI memory as video — references an open-source repo that stores millions of text chunks in MP4 files instead of vector databases, with lightning-fast semantic search and no database needed.",
+    "summary": "Riffs on a repo (Shubham Saboo's) that stores millions of text chunks inside MP4 video files for fast semantic search, pitched as an open-source replacement for expensive vector databases; Nick Dobos speculates video may be an optimal encoding for AI memory, echoing how human memory leans on vision.",
     "topics": [
-      "research"
+      "research",
+      "agent-design",
+      "skills-mcp"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "203.8K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "What if the optimal way to encode ai memory is a video? What if the human brain best remembers via vision? Fascinating repo.\n\nVector databases for AI memory just got replaced by MP4 files. Store millions of text chunks in MP4 files instead of expensive vector databases with lightning-fast semantic search. No database needed. 100% Opensource.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-06-01",
@@ -16401,7 +16413,7 @@
     "handle": "@dklineii",
     "subject": "Post by Dave Kline on X",
     "url": "https://x.com/dklineii/status/1928797718907908342",
-    "summary": "Dave Kline's 'one skill to become a better manager overnight' — management advice content.",
+    "summary": "Opens a management thread promising one skill to become a better manager overnight; the specific skill and guidance are developed in the replies.",
     "topics": [
       "management"
     ],
@@ -16409,34 +16421,41 @@
       "me",
       "leadership"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
     "views": "52.6K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "If you want to become a better manager overnight, I would teach you this one skill:",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-04-23",
     "author": "Anthropic",
-    "handle": "@na",
+    "handle": "@AnthropicAI",
     "subject": "Prompt engineering tutorial",
     "url": "https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial/Anthropic%201P",
-    "summary": "Anthropic's official interactive prompt engineering tutorial — hands-on course for learning to prompt Claude effectively.",
+    "summary": "Anthropic's official interactive prompt-engineering tutorial (Jupyter notebooks in anthropics/courses): a 9-chapter curriculum on prompt structure, being clear and direct, role prompting, separating data from instructions, output formatting, step-by-step reasoning, few-shot examples, and avoiding hallucinations, plus appendices on prompt chaining, tool use, and search & retrieval.",
     "topics": [
       "prompting",
-      "claude-code"
+      "claude-code",
+      "research"
     ],
     "audience": [
       "me",
       "dev-team"
     ],
-    "priority": "now",
+    "priority": "near-term",
     "sourceType": "article",
     "views": "",
     "notes": "Official Anthropic resource",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Anthropic's prompt engineering interactive tutorial (Anthropic 1P): notebooks covering prompt structure, being clear and direct, role prompting, separating data and instructions, formatting output, step-by-step reasoning, few-shot prompting, avoiding hallucinations, complex prompts, plus appendices on chaining prompts, tool use, and search & retrieval.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-01-22",
@@ -16444,20 +16463,25 @@
     "handle": "@MervinPraison",
     "subject": "DeepSeek RAG Agent",
     "url": "https://x.com/mervinpraison/status/1881788246684013011",
-    "summary": "Tutorial on building a 100% local DeepSeek RAG Agent using Ollama, PraisonAI, and Streamlit with Nomic embed text for embeddings. Deep contextual awareness, few lines of code.",
+    "summary": "Shows a 100% local RAG AI agent with reasoning: DeepSeek via Ollama for the LLM, PraisonAI to build the agent in a few lines, Nomic embeddings, and a Streamlit UI—code included in the thread.",
     "topics": [
       "agent-design",
-      "research"
+      "research",
+      "skills-mcp"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "59.6K",
+    "views": "59.8K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "DeepSeek RAG Agent: 100% Local using @ollama. RAG AI Agent with Reasoning (@deepseek_ai), few lines of code with @PraisonAI, UI using @streamlit, @nomic_ai embeddings. Deep contextual awareness. Code below.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-01-21",
@@ -16465,32 +16489,39 @@
     "handle": "@svpino",
     "subject": "RAG system",
     "url": "https://x.com/svpino/status/1881336934418755862",
-    "summary": "Demos GroundX — open-source enterprise-grade RAG system that runs fully on your own servers with no network access needed. Air-gapped, GPU-powered, with what Santiago calls the best document understanding he's seen.",
+    "summary": "Walks through GroundX, an open-source, self-hostable/air-gapped enterprise RAG system. Two services: Ingest (a pretrained vision model that 'understands' documents instead of feeding raw docs to the LLM) and Search (text+vector search with a fine-tuned re-ranker). Santiago's thesis: most teams need better ingestion, not better retrieval; includes a video demo and the free X-Ray inspection tool.",
     "topics": [
+      "research",
       "agent-design",
-      "research"
+      "industry"
     ],
     "audience": [
       "me",
-      "dev-team"
+      "dev-team",
+      "leadership"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "89.5K",
+    "views": "89.6K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "How you can install an open-source, enterprise-grade RAG system on your server. Companies won't let their data travel to a hosted model; they'd rather have an air-gapped system. GroundX is an open-source RAG system you can run on your servers (or any cloud with GPUs) without a network. Two services: Ingest (a pretrained vision model that understands your knowledge base) and Search (text+vector search with a fine-tuned re-ranker). 99% of people think they need better retrieval; they need better ingestion. Free X-Ray tool to inspect how documents are broken down.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-01-04",
     "author": "Tom Dörr",
-    "handle": "@tom_doerr",
+    "handle": "@tom-doerr",
     "subject": "dotfiles instruction.md",
     "url": "https://github.com/tom-doerr/dotfiles/blob/master/instruction.md",
-    "summary": "Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.",
+    "summary": "Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).",
     "topics": [
       "claude-code",
-      "prompting"
+      "prompting",
+      "dev-practices",
+      "agent-design"
     ],
     "audience": [
       "me",
@@ -16501,7 +16532,10 @@
     "views": "",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "AI coding-agent instruction file: command aliases ('c'=continue, 'rc'=reduce complexity, 'acp'=git add/commit/push, 't'=add tests, 'l'=run linter, etc.) and rules — work on fixing tests, use pytest, don't create fallback implementations, raise errors instead of hiding them, question every requirement, simplify/optimize, follow TDD, use many asserts, use uv instead of pip, use git branches, don't swallow exceptions, don't disable linting to avoid issues. Includes DSPy optimizer snippets: BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2024-11-29",
@@ -16509,19 +16543,24 @@
     "handle": "@elonmusk",
     "subject": "mistake algorithm",
     "url": "https://x.com/elonmusk/status/1862363270931255356",
-    "summary": "Elon Musk shares his 'simple algorithm for making fewer dumb mistakes' — a decision-making framework. 25M views.",
+    "summary": "Elon Musk touts his '5-step algorithm' for making fewer mistakes (make requirements less dumb, delete parts/processes, simplify & optimize, accelerate cycle time, automate), in a quote of a post speculating DOGE might adopt it like SpaceX.",
     "topics": [
-      "management"
+      "management",
+      "dev-practices"
     ],
     "audience": [
-      "me"
+      "me",
+      "leadership"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "25M",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "This simple algorithm that I came up with to help me make fewer dumb mistakes in the future is incredibly powerful.\n\nWonder if @DOGE will adopt this like @SpaceX has",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2024-10-25",
@@ -16529,20 +16568,25 @@
     "handle": "@Saboo_Shubham_",
     "subject": "AutoRAG",
     "url": "https://x.com/saboo_shubham_/status/1849638773136687551",
-    "summary": "AutoRAG — automatically evaluates multiple RAG strategies and finds the perfect RAG pipeline for your data in a few lines of Python. 100% open-source.",
+    "summary": "Introduces AutoRAG, an open-source tool that automatically benchmarks multiple RAG strategies to find the optimal RAG pipeline for your data in a few lines of Python.",
     "topics": [
+      "research",
       "agent-design",
-      "research"
+      "dev-practices"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "116K",
+    "views": "116.1K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "AutoRAG automatically evaluates multiple RAG strategies and finds the perfect RAG pipeline for your data in just a few lines of Python code. 100% opensource.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2024-10-19",
@@ -16550,19 +16594,24 @@
     "handle": "@sarah_cone",
     "subject": "Elon 5 steps",
     "url": "https://x.com/sarah_cone/status/1847322215907545129",
-    "summary": "Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.",
+    "summary": "Points to a superengineer.net blog post as a good summary of Elon Musk's 5-step design/engineering method (DFX).",
     "topics": [
-      "management"
+      "management",
+      "dev-practices"
     ],
     "audience": [
-      "me"
+      "me",
+      "leadership"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "11.4K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "This is a good summary of it: superengineer.net/blog/dfx-elon-musk-design-method\n\nDFX — Elon Musk's design method",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2024-10-17",
@@ -16570,21 +16619,24 @@
     "handle": "@DominikTornow",
     "subject": "Retries",
     "url": "https://x.com/dominiktornow/status/1846507701599433179",
-    "summary": "Shares a paper on the complex world of retries in distributed systems — argues retries are incredibly difficult to get right despite being touted as a simple reliability fix.",
+    "summary": "Flags a paper as a strong discussion of how hard retries are to get right for reliability under failure—retries are often oversold as a simple fix but are surprisingly complex.",
     "topics": [
       "dev-practices",
       "research"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
     "views": "23.2K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Retries. Often touted as a simple fix for reliability in the presence of failure — however, retries are incredibly difficult to get right. This paper is a fantastic discussion of the complex world of retries.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2024-07-30",
@@ -16592,20 +16644,24 @@
     "handle": "@Saboo_Shubham_",
     "subject": "RAG with Llama",
     "url": "https://x.com/saboo_shubham_/status/1818111127286579448",
-    "summary": "Tutorial on building a custom AI chatbot with RAG to chat with any GitHub repo using open-source Llama 3.1 405B — no Python code required.",
+    "summary": "Tutorial for building a no-code RAG chatbot to chat with any GitHub repo, powered by open-source Llama 3.1 405B.",
     "topics": [
       "agent-design",
       "research"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "82.4K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Build a custom AI chatbot with RAG to chat with any GitHub repo using opensource Llama 3.1 405B without writing a single line of Python code.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2024-07-25",
@@ -16633,20 +16689,24 @@
     "handle": "@akshay_pachaar",
     "subject": "RAG with Llama 3.1",
     "url": "https://x.com/akshay_pachaar/status/1816088785152848028",
-    "summary": "Tutorial on building a local RAG app using Meta's Llama 3.1. 705.5K views — one of the higher-engagement RAG tutorials in the collection.",
+    "summary": "A tutorial thread on building a 100% local RAG app using Meta's Llama 3.1.",
     "topics": [
       "agent-design",
       "research"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "705.5K",
+    "views": "705.7K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Let's build a RAG app using MetaAI's Llama-3.1 (100% local):",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2024-07-10",
@@ -16654,42 +16714,50 @@
     "handle": "@mattpocockuk",
     "subject": "dev workflow",
     "url": "https://x.com/mattpocockuk/status/1811332713107923156",
-    "summary": "Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.",
+    "summary": "A take on pre-commit hooks: Matt Pocock prefers 'fewer guard rails, more safety nets'—favoring tooling that catches problems after the fact over friction that blocks commits up front.",
     "topics": [
       "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
     "views": "25.5K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "RE: pre-commit hooks — Give me fewer guard rails, and more safety nets.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2024-06-18",
-    "author": "dir-assistant",
-    "handle": "@na",
+    "author": "curvedinf",
+    "handle": "@curvedinf",
     "subject": "dir-assistant GitHub",
     "url": "https://github.com/curvedinf/dir-assistant",
-    "summary": "dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.",
+    "summary": "dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).",
     "topics": [
       "agent-design",
+      "dev-practices",
+      "research",
       "claude-code"
     ],
     "audience": [
       "me",
       "dev-team"
     ],
-    "priority": "long-term",
+    "priority": "near-term",
     "sourceType": "article",
     "views": "",
     "notes": "Early AI coding assistant tool (June 2024)",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "dir-assistant: chat with your current directory's files using a local or API LLM. A pip CLI that recursively indexes text files and auto-includes the most contextually relevant ones in prompts, using CGRAG (Contextually Guided Retrieval-Augmented Generation). Interactive and single-prompt modes, auto file edits + git commits, local acceleration (CUDA/ROCm/Metal/Vulkan/SYCL) and all major APIs via LiteLLM, with prompt/context-caching optimization (50-90% cache hits).",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2024-06-11",
@@ -16697,18 +16765,23 @@
     "handle": "@svpino",
     "subject": "matrix multiplication",
     "url": "https://x.com/svpino/status/1800151091461652740",
-    "summary": "15-part thread explaining the 'stunning, simple explanation behind matrix multiplication' — breaks down the most crucial idea behind modern machine learning. 1M views.",
+    "summary": "A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.",
     "topics": [
-      "research"
+      "research",
+      "general"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "1M",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "There's a stunning, simple explanation behind matrix multiplication. This is the first time this clicked in my brain. Here is a breakdown of the most crucial idea behind modern machine learning: 1/15",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   }
 ]
