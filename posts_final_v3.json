@@ -11964,8 +11964,8 @@
     "notes": "",
     "enriched": true,
     "enrichment_status": "failed",
-    "enrichment_attempts": 7,
-    "enrichment_last_error": "no url on record — cannot scrape (6th+ attempt)"
+    "enrichment_attempts": 8,
+    "enrichment_last_error": "no url on record — cannot scrape (attempt continues)"
   },
   {
     "date": "2026-03-05",
@@ -15620,20 +15620,23 @@
     "handle": "@aakashgupta",
     "subject": "Post by Aakash Gupta on X",
     "url": "https://x.com/aakashg0/status/1979517333015334953",
-    "summary": "Shares Jeff Bezos's framework for distinguishing reversible vs irreversible decisions — Type 1 (irreversible, need careful deliberation) vs Type 2 (reversible, should be made quickly). Management/decision-making content.",
+    "summary": "Aakash Gupta highlights Jeff Bezos's framework distinguishing reversible ('two-way door') from irreversible ('one-way door') decisions as a guide to how much deliberation a call deserves.",
     "topics": [
       "management"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "22.9K",
+    "views": "23K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Jeff Bezos nailed the difference between reversible and irreversible decisions",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-10-19",
@@ -15641,20 +15644,23 @@
     "handle": "@AlwaysKeepL",
     "subject": "Post by Always Keep Learning on X",
     "url": "https://x.com/alwayskeepl/status/1979452892059967974",
-    "summary": "Guide to servant leadership — visual breakdown of how to lead differently by serving the team rather than commanding.",
+    "summary": "Infographic-style post outlining servant leadership as an alternative model for leading teams differently.",
     "topics": [
       "management"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
     "views": "42K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "A Guide to leading differently servant leadership",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-10-17",
@@ -15662,20 +15668,24 @@
     "handle": "@businessbarista",
     "subject": "Post by Alex Lieberman on X",
     "url": "https://x.com/businessbarista/status/1978988763620741503",
-    "summary": "5 levels of work framework for teaching high agency: Level 1 'there's a problem' through Level 5 'I found it, fixed it, here's the update.' Expects new employees to operate at Level 4 from Day 1. 1.8M views.",
+    "summary": "Alex Lieberman shares a '5 levels of work' framework for teaching high agency, from L1 'there is a problem' to L5 'I found it, fixed it, just keeping you in the loop.' He tells new hires to operate at Level 4 from day one and grow into Level 5. Credits Steph Smith.",
     "topics": [
       "management"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "1.8M",
     "notes": "Very high engagement — 1.8M views",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "I stole this idea and now use it with every single employee. It's the best illustration I've seen of teaching someone to be high agency. There are 5 levels of work: Level 1: 'There is a problem.' Level 2: 'There is a problem, and I've found some causes.' Level 3: 'Here's the problem, here are some possible causes, and here are some possible solutions.' Level 4: 'Here's the problem, here's what I think caused it, here are some possible solutions, and here's the one I think we should pick.' Level 5: 'I identified a problem, figured out what caused it, researched how to fix it, and I fixed it. Just wanted to keep you in the loop.' You will live at Level 4 from Day 1 and as we build trust you will rise to Level 5. Being high agency means your entire way of working should be oriented to being a Level 4+ employee. Credit @stephsmithio for the framework.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-10-11",
@@ -15683,20 +15693,23 @@
     "handle": "@Fuel_YourGrowth",
     "subject": "Post by Kevin Box on X",
     "url": "https://x.com/fuel_yourgrowth/status/1977008526867546245",
-    "summary": "Visual comparison of toxic boss vs great leader behaviors — 'Your manager has a greater impact on your mental health than your therapist.'",
+    "summary": "Infographic contrasting a toxic boss with a great leader, arguing a manager's impact on employee mental health can exceed a therapist's.",
     "topics": [
       "management"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
     "views": "74.4K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Your manager has a greater impact on your mental health than your therapist. Know the difference between a Toxic Boss and Great Leader!",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-10-09",
@@ -15704,19 +15717,23 @@
     "handle": "@Fuel_YourGrowth",
     "subject": "Post by Kevin Box on X",
     "url": "https://x.com/fuel_yourgrowth/status/1976274742702440662",
-    "summary": "Visual on 'being easy to work with' as the most underrated professional skill.",
+    "summary": "Short motivational post arguing that being easy to work with is an underrated professional skill.",
     "topics": [
       "management"
     ],
     "audience": [
-      "me"
+      "me",
+      "team"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "72K",
+    "views": "72.1K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "The most underrated skill, being easy to work with!",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-10-07",
@@ -15724,19 +15741,24 @@
     "handle": "@ChemObyazan",
     "subject": "Post by Ruslan Beskorovainiy on X",
     "url": "https://x.com/chemobyazan/status/1975326044271079509",
-    "summary": "Reply sharing a GitHub repository link in response to a viral tweet about someone building an AI agent that replaced their entire team. Context/repo link contribution.",
+    "summary": "Points to the contains-studio/agents GitHub repo, a shared collection of AI agents currently in use.",
     "topics": [
-      "agent-design"
+      "agent-design",
+      "skills-mcp"
     ],
     "audience": [
+      "dev-team",
       "me"
     ],
-    "priority": "long-term",
+    "priority": "near-term",
     "sourceType": "tweet",
-    "views": "2,988",
+    "views": "3,011",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "I know this repo. Link on repository in github.\n\nGitHub - contains-studio/agents: sharing current agents in use",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-10-07",
@@ -15744,20 +15766,24 @@
     "handle": "@vivekgalatage",
     "subject": "Post by Vivek Galatage on X",
     "url": "https://x.com/vivekgalatage/status/1974894313948758373",
-    "summary": "Shares Richard Hipp's 2024 lecture on SQLite internals — 'every engineer should watch this.' Covers how SQLite works from the creator himself, relevant since browsers/Chromium rely heavily on SQLite.",
+    "summary": "Vivek Galatage recommends Richard Hipp's 2024 'SQLite: How it works' lecture on database internals from the creator himself, in a thread noting SQLite's ubiquity (including in Chromium browser engines).",
     "topics": [
-      "dev-practices"
+      "dev-practices",
+      "research"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
-    "views": "27K",
+    "views": "27.1K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "SQLite: How it works by Richard Hipp (2024). 'Every engineer should watch this,' read one of the comments on this lecture. It's so good to hear about the internals from the creator himself. https://youtu.be/ZSKLA81tBis\n\nSQLite is used across various projects for efficient data storage and retrieval. Many browser engines, Chromium included, rely on SQLite for various browser functions. The official architecture page is quite an exciting read, with pointers to the code.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-10-07",
@@ -15765,19 +15791,24 @@
     "handle": "@kshvbgde",
     "subject": "Post by keshav on X",
     "url": "https://x.com/kshvbgde/status/1974835291358969895",
-    "summary": "Steve Jobs product design principles — visual breakdown of how to design insanely great products. 780K views.",
+    "summary": "Post (likely video/thread) on Steve Jobs's principles for designing insanely great products.",
     "topics": [
-      "management"
+      "management",
+      "general"
     ],
     "audience": [
+      "leadership",
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "780.6K",
+    "views": "783.8K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Steve Jobs: How to design insanely great products",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-10-05",
@@ -15785,7 +15816,7 @@
     "handle": "@PromptLLM",
     "subject": "Post by Prompter on X",
     "url": "https://x.com/promptllm/status/1974518025211818291",
-    "summary": "Prompt for learning systems thinking — claims the prompt transformed how they think about interconnected problems.",
+    "summary": "Engagement-style post promoting a prompt for learning to think in systems.",
     "topics": [
       "prompting",
       "questionable"
@@ -15795,10 +15826,13 @@
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "36.1K",
+    "views": "36.2K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "my life transformed when I used this prompt to learn how to think in systems",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-10-05",
@@ -15806,7 +15840,7 @@
     "handle": "@na",
     "subject": "Agentic Design Patterns PDF",
     "url": "https://github.com/sarwarbeing-ai/Agentic_Design_Patterns/blob/main/Agentic_Design_Patterns.pdf",
-    "summary": "PDF reference on Agentic Design Patterns — covers common architectural patterns for building AI agent systems.",
+    "summary": "[Post unavailable — Agentic Design Patterns GitHub repo removed via DMCA takedown]",
     "topics": [
       "agent-design"
     ],
@@ -15819,7 +15853,9 @@
     "views": "",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "DMCA takedown — GitHub repository disabled"
   },
   {
     "date": "2025-10-04",
@@ -15827,7 +15863,7 @@
     "handle": "@PromptLLM",
     "subject": "Post by Prompter on X",
     "url": "https://x.com/promptllm/status/1974206336511394165",
-    "summary": "Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.",
+    "summary": "Engagement-style post promoting a prompt that claims to teach 'NLP' (Neuro-Linguistic Programming) techniques used by high performers.",
     "topics": [
       "prompting",
       "questionable"
@@ -15837,10 +15873,13 @@
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "26.3K",
+    "views": "26.4K",
     "notes": "Duplicate theme — same NLP content as Nov 6 post",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "I have studied high performers for years. They all seem to utilise different aspects of NLP (Neuro-Linguistic Programming). This prompt is tailor made to teach you advanced NLP techniques used by elite performers.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-10-01",
@@ -15848,20 +15887,24 @@
     "handle": "@bigdatasumit",
     "subject": "Post by Sumit Mittal on X",
     "url": "https://x.com/bigdatasumit/status/1972908540692947192",
-    "summary": "Detailed cost optimization walkthrough for querying 5TB of S3 data via AWS Athena — shows how switching from CSV to Parquet with partitioning reduces scan from 5TB ($25) to ~5GB ($0.025). Practical cloud cost engineering.",
+    "summary": "Sumit Mittal walks through S3/Athena query cost optimization: moving from uncompressed row-based CSV to columnar Parquet with Snappy compression, partitioning by city, and column pruning cuts a $25 full-scan query to about $0.01 (~2500x cheaper). Ends with a course promo.",
     "topics": [
-      "dev-practices"
+      "dev-practices",
+      "research"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "38.1K",
+    "views": "38.2K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Scenario: 5 TB in S3, 500M records, 100 columns, 100 cities. You want one city (1% of rows) and 10 of 100 columns (~0.1% of data). On AWS Athena at $5/TB scanned, a worst-case uncompressed CSV scan of all 5 TB costs $25. Improvements: use a columnar format (Parquet + Snappy) so 5 TB shrinks to ~2 TB; partition by city so you scan one ~20 GB folder; column pruning means scanning ~10% of that (~2 GB). Total cost drops to ~$0.01, about 2500x cheaper. Techniques: columnar formats for column pruning, partitioning for row pruning, efficient compression. Knowing the internals is vital to saving cost.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-09-30",
@@ -15869,19 +15912,25 @@
     "handle": "@jawad_shreim",
     "subject": "Post by Jawad on X",
     "url": "https://x.com/jawad_shreim/status/1972998935687172213",
-    "summary": "Humorous reply sharing an intern's visual comparison of AWS vs GCP service naming — responding to a viral thread about AWS's confusing service names (S3, RDS, Lambda) vs GCP's straightforward ones (Cloud Storage, Cloud SQL, Cloud Function).",
+    "summary": "Jawad shares a humorous, plain-language 'explanation' of AWS services (EC2, ECS, etc.) quote-tweeted from MilkStraw AI.",
     "topics": [
-      "dev-practices"
+      "dev-practices",
+      "general",
+      "questionable"
     ],
     "audience": [
+      "dev-team",
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "132",
+    "views": "136",
     "notes": "Low-view reply post",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Our intern made it easier to understand\n\nI read the AWS documentation so you don't have to (no seriously, don't). Here's what these services actually do: 1. EC2 = computer go brrr (but make it cloud); 2. EC2 (other) = same computer but make it expensive for no reason; 3. ECS = like having 100 tiny computers.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-09-23",
@@ -15889,20 +15938,24 @@
     "handle": "@jamonholmgren",
     "subject": "Post by Jamon on X",
     "url": "https://x.com/jamonholmgren/status/1969883090056249776",
-    "summary": "Recommends Lydia Hallie's 'Behind The Scenes of Bun Install' article as a must-read for every developer regardless of JS usage — says it will change how you think about building performant systems. Top 10 dev articles.",
+    "summary": "Jamon Holmgren strongly recommends Lydia Hallie's article 'Behind The Scenes of Bun Install' as a top-10 must-read for every developer on building performant systems, regardless of whether you use JavaScript or Bun.",
     "topics": [
-      "dev-practices"
+      "dev-practices",
+      "research"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "52.7K",
+    "views": "52.8K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "I don't care if you do JavaScript or not, or if you use Bun or not, I think this article by @lydiahallie is absolutely a must-read for every developer. It'll change the way you think about building performant systems. It's on my top 10 dev articles.\n\nBehind The Scenes of Bun Install (bun.com)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-09-22",

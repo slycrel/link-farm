@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-07-14T17:02:50Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-14T18:42:25Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-09** — [Kodus](https://kodus.io/self-hosted-ai-code-review/) — *now • Dev Practices • v1 enriched*  
@@ -24,10 +24,10 @@
 *No concepts gained new evidence in the last 14 days. Run mechanical discovery or seed curated concepts to populate this section.*
 
 ### Revisit from last month
-- **2025-10-21** — [Raul Junco](https://x.com/rauljuncov/status/1980243241783197925) — *near-term • Dev Practices • 130.7K views • v1 enriched*  
-  Raul Junco frames system design as a staircase to climb step by step rather than jumping to distributed systems: foundations (networking, databases, caching, APIs), then mechanics (queues, consistency, observability, failures), then architecture (trade-offs, evolution, resilience).
-- **2025-10-21** — [Ray Fernando](https://x.com/rayfernando1337/status/1980180030971150690) — *near-term • Research • 32.4K views • v1 enriched*  
-  Ray Fernando shares DeepSeek-OCR (github.com/deepseek-ai/DeepSeek-OCR) — DeepSeek's 'Contexts Optical Compression' approach that encodes long text contexts as visual tokens for efficient OCR and document understanding.
+- **2025-09-23** — [Jamon](https://x.com/jamonholmgren/status/1969883090056249776) — *near-term • Dev Practices • 52.8K views • v1 enriched*  
+  Jamon Holmgren strongly recommends Lydia Hallie's article 'Behind The Scenes of Bun Install' as a top-10 must-read for every developer on building performant systems, regardless of whether you use JavaScript or Bun.
+- **2025-10-01** — [Sumit Mittal](https://x.com/bigdatasumit/status/1972908540692947192) — *near-term • Dev Practices • 38.2K views • v1 enriched*  
+  Sumit Mittal walks through S3/Athena query cost optimization: moving from uncompressed row-based CSV to columnar Parquet with Snappy compression, partitioning by city, and column pruning cuts a $25 full-scan query to about $0.01 (~2500x cheaper). Ends with a course promo.
 
 ---
 ## Topic Distribution
@@ -36,13 +36,13 @@
 | agent-design | 368 | 52.8% |
 | claude-code | 180 | 25.8% |
 | dev-practices | 237 | 34.0% |
-| skills-mcp | 132 | 18.9% |
+| skills-mcp | 133 | 19.1% |
 | prompting | 102 | 14.6% |
-| research | 140 | 20.1% |
+| research | 143 | 20.5% |
 | industry | 96 | 13.8% |
 | management | 106 | 15.2% |
-| questionable | 130 | 18.7% |
-| general | 90 | 12.9% |
+| questionable | 131 | 18.8% |
+| general | 92 | 13.2% |
 
 ---
 ## Quick Reference (50 Most Recent)
@@ -814,9 +814,9 @@
 
 - [Pontus Abrahamsson](https://x.com/pontusab/status/1981700333857636550) — 2025-10-24: Pontus Abrahamsson points to midday-ai/ai-sdk-tools (github.com/midday-ai/ai-sdk-tools) — a set of example AI SDK tools/integrations for building agent tooling.
 
-- [Ruslan Beskorovainiy](https://x.com/chemobyazan/status/1975326044271079509) — 2025-10-07: Reply sharing a GitHub repository link in response to a viral tweet about someone building an AI agent that replaced their entire team. Context/repo link contribution.
+- [Ruslan Beskorovainiy](https://x.com/chemobyazan/status/1975326044271079509) — 2025-10-07: Points to the contains-studio/agents GitHub repo, a shared collection of AI agents currently in use.
 
-- [Agentic Design Patterns](https://github.com/sarwarbeing-ai/Agentic_Design_Patterns/blob/main/Agentic_Design_Patterns.pdf) — 2025-10-05: PDF reference on Agentic Design Patterns — covers common architectural patterns for building AI agent systems.
+- [Agentic Design Patterns](https://github.com/sarwarbeing-ai/Agentic_Design_Patterns/blob/main/Agentic_Design_Patterns.pdf) — 2025-10-05: [Post unavailable — Agentic Design Patterns GitHub repo removed via DMCA takedown]
 
 - [Dan McAteer](https://x.com/daniel_mac8/status/1970120352664605124) — 2025-09-22: The 'only agentic coding pattern you need' — a 4-step process (Plan, Execute, Review, Verify) for AGENTS.md files. Emphasis on the Verification step creating feedback loops to test plan execution. Works with AmpCode or any agent supporting AGENTS.md.
 
@@ -1650,13 +1650,13 @@
 
 - [Raul Junco](https://x.com/rauljuncov/status/1980243241783197925) — 2025-10-21: Raul Junco frames system design as a staircase to climb step by step rather than jumping to distributed systems: foundations (networking, databases, caching, APIs), then mechanics (queues, consistency, observability, failures), then architecture (trade-offs, evolution, resilience).
 
-- [Vivek Galatage](https://x.com/vivekgalatage/status/1974894313948758373) — 2025-10-07: Shares Richard Hipp's 2024 lecture on SQLite internals — 'every engineer should watch this.' Covers how SQLite works from the creator himself, relevant since browsers/Chromium rely heavily on SQLite.
+- [Vivek Galatage](https://x.com/vivekgalatage/status/1974894313948758373) — 2025-10-07: Vivek Galatage recommends Richard Hipp's 2024 'SQLite: How it works' lecture on database internals from the creator himself, in a thread noting SQLite's ubiquity (including in Chromium browser engines).
 
-- [Sumit Mittal](https://x.com/bigdatasumit/status/1972908540692947192) — 2025-10-01: Detailed cost optimization walkthrough for querying 5TB of S3 data via AWS Athena — shows how switching from CSV to Parquet with partitioning reduces scan from 5TB ($25) to ~5GB ($0.025). Practical cloud cost engineering.
+- [Sumit Mittal](https://x.com/bigdatasumit/status/1972908540692947192) — 2025-10-01: Sumit Mittal walks through S3/Athena query cost optimization: moving from uncompressed row-based CSV to columnar Parquet with Snappy compression, partitioning by city, and column pruning cuts a $25 full-scan query to about $0.01 (~2500x cheaper). Ends with a course promo.
 
-- [Jawad](https://x.com/jawad_shreim/status/1972998935687172213) — 2025-09-30: Humorous reply sharing an intern's visual comparison of AWS vs GCP service naming — responding to a viral thread about AWS's confusing service names (S3, RDS, Lambda) vs GCP's straightforward ones (Cloud Storage, Cloud SQL, Cloud Function).
+- [Jawad](https://x.com/jawad_shreim/status/1972998935687172213) — 2025-09-30: Jawad shares a humorous, plain-language 'explanation' of AWS services (EC2, ECS, etc.) quote-tweeted from MilkStraw AI.
 
-- [Jamon](https://x.com/jamonholmgren/status/1969883090056249776) — 2025-09-23: Recommends Lydia Hallie's 'Behind The Scenes of Bun Install' article as a must-read for every developer regardless of JS usage — says it will change how you think about building performant systems. Top 10 dev articles.
+- [Jamon](https://x.com/jamonholmgren/status/1969883090056249776) — 2025-09-23: Jamon Holmgren strongly recommends Lydia Hallie's article 'Behind The Scenes of Bun Install' as a top-10 must-read for every developer on building performant systems, regardless of whether you use JavaScript or Bun.
 
 - [Dan McAteer](https://x.com/daniel_mac8/status/1970120352664605124) — 2025-09-22: The 'only agentic coding pattern you need' — a 4-step process (Plan, Execute, Review, Verify) for AGENTS.md files. Emphasis on the Verification step creating feedback loops to test plan execution. Works with AmpCode or any agent supporting AGENTS.md.
 
@@ -1678,7 +1678,7 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (132)
+### Skills & MCP (133)
 
 - [JoePro](https://x.com/joepro/status/2076877282312954311) — 2026-07-14: JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skill spec) engineered to produce distinctive, production-grade UIs that avoid recognizable AI-generated tropes — covering success criteria (signature visual identity, complete states, WCAG AA accessibility, token-driven design systems) and a context-gathering routine before writing code.
 
@@ -1944,6 +1944,8 @@
 
 - [Pontus Abrahamsson](https://x.com/pontusab/status/1981700333857636550) — 2025-10-24: Pontus Abrahamsson points to midday-ai/ai-sdk-tools (github.com/midday-ai/ai-sdk-tools) — a set of example AI SDK tools/integrations for building agent tooling.
 
+- [Ruslan Beskorovainiy](https://x.com/chemobyazan/status/1975326044271079509) — 2025-10-07: Points to the contains-studio/agents GitHub repo, a shared collection of AI agents currently in use.
+
 ### Prompting (102)
 
 - [JoePro](https://x.com/joepro/status/2076877282312954311) — 2026-07-14: JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skill spec) engineered to produce distinctive, production-grade UIs that avoid recognizable AI-generated tropes — covering success criteria (signature visual identity, complete states, WCAG AA accessibility, token-driven design systems) and a context-gathering routine before writing code.
@@ -2140,9 +2142,9 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1983255353597870285) — 2025-10-29: Matt Pocock shares his favorite AI coding tip: add 'Be extremely concise. Sacrifice grammar for the sake of concision.' to your global claude.md file for noticeably better output.
 
-- [Prompter](https://x.com/promptllm/status/1974518025211818291) — 2025-10-05: Prompt for learning systems thinking — claims the prompt transformed how they think about interconnected problems.
+- [Prompter](https://x.com/promptllm/status/1974518025211818291) — 2025-10-05: Engagement-style post promoting a prompt for learning to think in systems.
 
-- [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
+- [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Engagement-style post promoting a prompt that claims to teach 'NLP' (Neuro-Linguistic Programming) techniques used by high performers.
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1958179930262356032) — 2025-08-21: Matt Pocock praises Anthropic's context engineering template as 'really solid.' 908.4K views — massive engagement for a Claude-related post.
 
@@ -2150,7 +2152,7 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
 
-### Research (140)
+### Research (143)
 
 - [Alvaro Videla](https://x.com/old_sound/status/2076932819008242037) — 2026-07-14: Alvaro Videla released LeetLLM (github.com/videlalvaro/leet-llm) — a free, problem-based course of 48 lessons for building a small LLM inference engine on Apple Silicon in Swift and Metal, progressing from dot products and GEMV through attention and token generation.
 
@@ -2413,6 +2415,12 @@
 - [Rohan Paul](https://x.com/rohanpaul_ai/status/1997405403987222642) — 2025-12-07: Rohan Paul summarizes Google's guide on context engineering for multi-agent systems (built around ADK). Instead of giant prompts, it compiles a view over state split into Working Context, Session, Memory, and Artifacts; each call rebuilds Working Context from instructions, selected session events, memory results, and artifact references. ADK controls context growth via compaction, filtering, and caching — summarizing old spans, dropping useless events, and reusing a stable prefix — and pushes large payloads out to Artifacts to keep systems fast, affordable, and less hallucination-prone.
 
 - [Ray Fernando](https://x.com/rayfernando1337/status/1980180030971150690) — 2025-10-21: Ray Fernando shares DeepSeek-OCR (github.com/deepseek-ai/DeepSeek-OCR) — DeepSeek's 'Contexts Optical Compression' approach that encodes long text contexts as visual tokens for efficient OCR and document understanding.
+
+- [Vivek Galatage](https://x.com/vivekgalatage/status/1974894313948758373) — 2025-10-07: Vivek Galatage recommends Richard Hipp's 2024 'SQLite: How it works' lecture on database internals from the creator himself, in a thread noting SQLite's ubiquity (including in Chromium browser engines).
+
+- [Sumit Mittal](https://x.com/bigdatasumit/status/1972908540692947192) — 2025-10-01: Sumit Mittal walks through S3/Athena query cost optimization: moving from uncompressed row-based CSV to columnar Parquet with Snappy compression, partitioning by city, and column pruning cuts a $25 full-scan query to about $0.01 (~2500x cheaper). Ends with a course promo.
+
+- [Jamon](https://x.com/jamonholmgren/status/1969883090056249776) — 2025-09-23: Jamon Holmgren strongly recommends Lydia Hallie's article 'Behind The Scenes of Bun Install' as a top-10 must-read for every developer on building performant systems, regardless of whether you use JavaScript or Bun.
 
 - [Philip Vollet](https://x.com/philipvollet/status/1955945448860008655) — 2025-08-15: Introduces Elysia — open-source agentic RAG platform powered by DSPy. Features transparent decision-tree agents, preference learning, intelligent data categorization, and full process transparency. Claims it will 'retire 90% of RAG systems.'
 
@@ -2810,17 +2818,17 @@
 
 - [William Meijer](https://x.com/williameijer/status/1982843287095717935) — 2025-10-28: William Meijer argues that a willingness to voice 'unkind truths' — blunt, uncomfortable candor — is a key element of Elon Musk's entrepreneurial success.
 
-- [Aakash Gupta](https://x.com/aakashg0/status/1979517333015334953) — 2025-10-19: Shares Jeff Bezos's framework for distinguishing reversible vs irreversible decisions — Type 1 (irreversible, need careful deliberation) vs Type 2 (reversible, should be made quickly). Management/decision-making content.
+- [Aakash Gupta](https://x.com/aakashg0/status/1979517333015334953) — 2025-10-19: Aakash Gupta highlights Jeff Bezos's framework distinguishing reversible ('two-way door') from irreversible ('one-way door') decisions as a guide to how much deliberation a call deserves.
 
-- [Always Keep Learning](https://x.com/alwayskeepl/status/1979452892059967974) — 2025-10-19: Guide to servant leadership — visual breakdown of how to lead differently by serving the team rather than commanding.
+- [Always Keep Learning](https://x.com/alwayskeepl/status/1979452892059967974) — 2025-10-19: Infographic-style post outlining servant leadership as an alternative model for leading teams differently.
 
-- [Alex Lieberman](https://x.com/businessbarista/status/1978988763620741503) — 2025-10-17: 5 levels of work framework for teaching high agency: Level 1 'there's a problem' through Level 5 'I found it, fixed it, here's the update.' Expects new employees to operate at Level 4 from Day 1. 1.8M views.
+- [Alex Lieberman](https://x.com/businessbarista/status/1978988763620741503) — 2025-10-17: Alex Lieberman shares a '5 levels of work' framework for teaching high agency, from L1 'there is a problem' to L5 'I found it, fixed it, just keeping you in the loop.' He tells new hires to operate at Level 4 from day one and grow into Level 5. Credits Steph Smith.
 
-- [Kevin Box](https://x.com/fuel_yourgrowth/status/1977008526867546245) — 2025-10-11: Visual comparison of toxic boss vs great leader behaviors — 'Your manager has a greater impact on your mental health than your therapist.'
+- [Kevin Box](https://x.com/fuel_yourgrowth/status/1977008526867546245) — 2025-10-11: Infographic contrasting a toxic boss with a great leader, arguing a manager's impact on employee mental health can exceed a therapist's.
 
-- [Kevin Box](https://x.com/fuel_yourgrowth/status/1976274742702440662) — 2025-10-09: Visual on 'being easy to work with' as the most underrated professional skill.
+- [Kevin Box](https://x.com/fuel_yourgrowth/status/1976274742702440662) — 2025-10-09: Short motivational post arguing that being easy to work with is an underrated professional skill.
 
-- [keshav](https://x.com/kshvbgde/status/1974835291358969895) — 2025-10-07: Steve Jobs product design principles — visual breakdown of how to design insanely great products. 780K views.
+- [keshav](https://x.com/kshvbgde/status/1974835291358969895) — 2025-10-07: Post (likely video/thread) on Steve Jobs's principles for designing insanely great products.
 
 - [hesam](https://x.com/hesamation/status/1962508535515791739) — 2025-09-02: Recommends an unnamed blog as 'pretty frickin awesome for technical playbooks and for managers who want to know what's what.' 157.4K views.
 
@@ -2840,7 +2848,7 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
 
-### Questionable (130)
+### Questionable (131)
 
 - [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — 2026-07-14: How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with a native AI agent, built-in MCP server, Cowork-style web+local-file agents, scheduled autopilot tasks, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), and local-model (Ollama) support — drivable from Claude Code or Gemini CLI. Engagement-framed but describes a real agentic-browser tool worth evaluating.
 
@@ -3098,11 +3106,13 @@
 
 - [Raul Junco](https://x.com/rauljuncov/status/1980243241783197925) — 2025-10-21: Raul Junco frames system design as a staircase to climb step by step rather than jumping to distributed systems: foundations (networking, databases, caching, APIs), then mechanics (queues, consistency, observability, failures), then architecture (trade-offs, evolution, resilience).
 
-- [Prompter](https://x.com/promptllm/status/1974518025211818291) — 2025-10-05: Prompt for learning systems thinking — claims the prompt transformed how they think about interconnected problems.
+- [Prompter](https://x.com/promptllm/status/1974518025211818291) — 2025-10-05: Engagement-style post promoting a prompt for learning to think in systems.
 
-- [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
+- [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Engagement-style post promoting a prompt that claims to teach 'NLP' (Neuro-Linguistic Programming) techniques used by high performers.
 
-### General (94)
+- [Jawad](https://x.com/jawad_shreim/status/1972998935687172213) — 2025-09-30: Jawad shares a humorous, plain-language 'explanation' of AWS services (EC2, ECS, etc.) quote-tweeted from MilkStraw AI.
+
+### General (96)
 
 - [witcheer](https://x.com/witcheer/status/2076717324585898343) — 2026-07-14: witcheer crowdsourced and hand-tallied 250+ replies on how people run Hermes (Nous Research's open model), distilling community local-deployment setups into six summary stats.
 
@@ -3287,6 +3297,10 @@
 - [Hayes](https://x.com/hayesdev_/status/1996897853642592428) — 2025-12-07: [Account suspended]
 
 - [Hayes](https://x.com/neatprompts/status/1981241949173825687) — 2025-10-24: [Account suspended]
+
+- [keshav](https://x.com/kshvbgde/status/1974835291358969895) — 2025-10-07: Post (likely video/thread) on Steve Jobs's principles for designing insanely great products.
+
+- [Jawad](https://x.com/jawad_shreim/status/1972998935687172213) — 2025-09-30: Jawad shares a humorous, plain-language 'explanation' of AWS services (EC2, ECS, etc.) quote-tweeted from MilkStraw AI.
 
 - [Aadit Sheth](https://x.com/aaditsh/status/1953462911961374889) — 2025-08-09: [Post deleted/unavailable]
 
@@ -5266,48 +5280,48 @@
   Ray Fernando shares DeepSeek-OCR (github.com/deepseek-ai/DeepSeek-OCR) — DeepSeek's 'Contexts Optical Compression' approach that encodes long text contexts as visual tokens for efficient OCR and document understanding.
 
 - **2025-10-19** | [Aakash Gupta](https://x.com/aakashg0/status/1979517333015334953) | management
-  Shares Jeff Bezos's framework for distinguishing reversible vs irreversible decisions — Type 1 (irreversible, need careful deliberation) vs Type 2 (reversible, should be made quickly). Management/decision-making content.
+  Aakash Gupta highlights Jeff Bezos's framework distinguishing reversible ('two-way door') from irreversible ('one-way door') decisions as a guide to how much deliberation a call deserves.
 
 - **2025-10-19** | [Always Keep Learning](https://x.com/alwayskeepl/status/1979452892059967974) | management
-  Guide to servant leadership — visual breakdown of how to lead differently by serving the team rather than commanding.
+  Infographic-style post outlining servant leadership as an alternative model for leading teams differently.
 
 - **2025-10-17** | [Alex Lieberman](https://x.com/businessbarista/status/1978988763620741503) | management
-  5 levels of work framework for teaching high agency: Level 1 'there's a problem' through Level 5 'I found it, fixed it, here's the update.' Expects new employees to operate at Level 4 from Day 1. 1.8M views.
+  Alex Lieberman shares a '5 levels of work' framework for teaching high agency, from L1 'there is a problem' to L5 'I found it, fixed it, just keeping you in the loop.' He tells new hires to operate at Level 4 from day one and grow into Level 5. Credits Steph Smith.
 
 - **2025-10-11** | [Kevin Box](https://x.com/fuel_yourgrowth/status/1977008526867546245) | management
-  Visual comparison of toxic boss vs great leader behaviors — 'Your manager has a greater impact on your mental health than your therapist.'
+  Infographic contrasting a toxic boss with a great leader, arguing a manager's impact on employee mental health can exceed a therapist's.
 
 - **2025-10-09** | [Kevin Box](https://x.com/fuel_yourgrowth/status/1976274742702440662) | management
-  Visual on 'being easy to work with' as the most underrated professional skill.
+  Short motivational post arguing that being easy to work with is an underrated professional skill.
 
-- **2025-10-07** | [Ruslan Beskorovainiy](https://x.com/chemobyazan/status/1975326044271079509) | agent-design
-  Reply sharing a GitHub repository link in response to a viral tweet about someone building an AI agent that replaced their entire team. Context/repo link contribution.
+- **2025-10-07** | [Ruslan Beskorovainiy](https://x.com/chemobyazan/status/1975326044271079509) | agent-design, skills-mcp
+  Points to the contains-studio/agents GitHub repo, a shared collection of AI agents currently in use.
 
-- **2025-10-07** | [Vivek Galatage](https://x.com/vivekgalatage/status/1974894313948758373) | dev-practices
-  Shares Richard Hipp's 2024 lecture on SQLite internals — 'every engineer should watch this.' Covers how SQLite works from the creator himself, relevant since browsers/Chromium rely heavily on SQLite.
+- **2025-10-07** | [Vivek Galatage](https://x.com/vivekgalatage/status/1974894313948758373) | dev-practices, research
+  Vivek Galatage recommends Richard Hipp's 2024 'SQLite: How it works' lecture on database internals from the creator himself, in a thread noting SQLite's ubiquity (including in Chromium browser engines).
 
-- **2025-10-07** | [keshav](https://x.com/kshvbgde/status/1974835291358969895) | management
-  Steve Jobs product design principles — visual breakdown of how to design insanely great products. 780K views.
+- **2025-10-07** | [keshav](https://x.com/kshvbgde/status/1974835291358969895) | management, general
+  Post (likely video/thread) on Steve Jobs's principles for designing insanely great products.
 
 - **2025-10-05** | [Prompter](https://x.com/promptllm/status/1974518025211818291) | prompting, questionable
-  Prompt for learning systems thinking — claims the prompt transformed how they think about interconnected problems.
+  Engagement-style post promoting a prompt for learning to think in systems.
 
 - **2025-10-05** | [Agentic Design Patterns](https://github.com/sarwarbeing-ai/Agentic_Design_Patterns/blob/main/Agentic_Design_Patterns.pdf) | agent-design
-  PDF reference on Agentic Design Patterns — covers common architectural patterns for building AI agent systems.
+  [Post unavailable — Agentic Design Patterns GitHub repo removed via DMCA takedown]
 
 - **2025-10-04** | [Prompter](https://x.com/promptllm/status/1974206336511394165) | prompting, questionable
-  Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
+  Engagement-style post promoting a prompt that claims to teach 'NLP' (Neuro-Linguistic Programming) techniques used by high performers.
 
-- **2025-10-01** | [Sumit Mittal](https://x.com/bigdatasumit/status/1972908540692947192) | dev-practices
-  Detailed cost optimization walkthrough for querying 5TB of S3 data via AWS Athena — shows how switching from CSV to Parquet with partitioning reduces scan from 5TB ($25) to ~5GB ($0.025). Practical cloud cost engineering.
+- **2025-10-01** | [Sumit Mittal](https://x.com/bigdatasumit/status/1972908540692947192) | dev-practices, research
+  Sumit Mittal walks through S3/Athena query cost optimization: moving from uncompressed row-based CSV to columnar Parquet with Snappy compression, partitioning by city, and column pruning cuts a $25 full-scan query to about $0.01 (~2500x cheaper). Ends with a course promo.
 
 ### Sep 2025
 
-- **2025-09-30** | [Jawad](https://x.com/jawad_shreim/status/1972998935687172213) | dev-practices
-  Humorous reply sharing an intern's visual comparison of AWS vs GCP service naming — responding to a viral thread about AWS's confusing service names (S3, RDS, Lambda) vs GCP's straightforward ones (Cloud Storage, Cloud SQL, Cloud Function).
+- **2025-09-30** | [Jawad](https://x.com/jawad_shreim/status/1972998935687172213) | dev-practices, general, questionable
+  Jawad shares a humorous, plain-language 'explanation' of AWS services (EC2, ECS, etc.) quote-tweeted from MilkStraw AI.
 
-- **2025-09-23** | [Jamon](https://x.com/jamonholmgren/status/1969883090056249776) | dev-practices
-  Recommends Lydia Hallie's 'Behind The Scenes of Bun Install' article as a must-read for every developer regardless of JS usage — says it will change how you think about building performant systems. Top 10 dev articles.
+- **2025-09-23** | [Jamon](https://x.com/jamonholmgren/status/1969883090056249776) | dev-practices, research
+  Jamon Holmgren strongly recommends Lydia Hallie's article 'Behind The Scenes of Bun Install' as a top-10 must-read for every developer on building performant systems, regardless of whether you use JavaScript or Bun.
 
 - **2025-09-22** | [Dan McAteer](https://x.com/daniel_mac8/status/1970120352664605124) | agent-design, dev-practices
   The 'only agentic coding pattern you need' — a 4-step process (Plan, Execute, Review, Verify) for AGENTS.md files. Emphasis on the Verification step creating feedback loops to test plan execution. Works with AmpCode or any agent supporting AGENTS.md.
