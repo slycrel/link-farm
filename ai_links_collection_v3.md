@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-07-14T20:33:15Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-14T21:34:32Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-09** — [Kodus](https://kodus.io/self-hosted-ai-code-review/) — *now • Dev Practices • v1 enriched*  
