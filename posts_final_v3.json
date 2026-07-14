@@ -11964,8 +11964,8 @@
     "notes": "",
     "enriched": true,
     "enrichment_status": "failed",
-    "enrichment_attempts": 8,
-    "enrichment_last_error": "no url on record — cannot scrape (attempt continues)"
+    "enrichment_attempts": 9,
+    "enrichment_last_error": "no URL on record — needs URL backfill (out of scope for backfill task)"
   },
   {
     "date": "2026-03-05",
@@ -15963,7 +15963,7 @@
     "handle": "@daniel_mac8",
     "subject": "Post by Dan Mac on X",
     "url": "https://x.com/daniel_mac8/status/1970120352664605124",
-    "summary": "The 'only agentic coding pattern you need' — a 4-step process (Plan, Execute, Review, Verify) for AGENTS.md files. Emphasis on the Verification step creating feedback loops to test plan execution. Works with AmpCode or any agent supporting AGENTS.md.",
+    "summary": "Shares a four-step agentic-coding pattern with an added Verification step (build feedback loops that test the plan was implemented correctly, since models still fail on execution), meant to be copied into an AGENTS.md file. Works with AmpCode or any AGENTS.md-aware coding agent.",
     "topics": [
       "agent-design",
       "dev-practices"
@@ -15972,12 +15972,15 @@
       "me",
       "dev-team"
     ],
-    "priority": "now",
+    "priority": "near-term",
     "sourceType": "tweet",
     "views": "44.9K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "The only Agentic Coding pattern you need. With the \"4. Verification\" step added. Bookmark this and copy from the GitHub link below into your AGENTS.md file. Works amazingly well with @AmpCode or any coding agent that supports AGENTS.md.\n\nThe only agentic coding pattern you need. Add one thing: 4. Verification - Create feedback loops to test that the plan was implemented correctly. From @ericzakariasson",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-09-15",
@@ -15985,20 +15988,24 @@
     "handle": "@aakashgupta",
     "subject": "Post by Aakash Gupta on X",
     "url": "https://x.com/aakashg0/status/1967135994228166848",
-    "summary": "Shares a step-by-step roadmap to build your first AI agent. 570.9K views — widely bookmarked resource.",
+    "summary": "Boosts another user's step-by-step roadmap for building your first AI agent, calling it 'gold.' Engagement-style framing; the substantive content lives in the referenced roadmap rather than the post itself.",
     "topics": [
-      "agent-design"
+      "agent-design",
+      "questionable"
     ],
     "audience": [
       "me",
       "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
-    "views": "570.9K",
+    "views": "573.1K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "This guy literally shared a step-by-step roadmap to build your first AI agent - and it's gold.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-09-03",
@@ -16006,21 +16013,24 @@
     "handle": "@maxleedev",
     "subject": "Post by maxleedev on X",
     "url": "https://x.com/maxleedev/status/1962938769914658984",
-    "summary": "Built a canvas interface for LLMs — responding to the need for 'fork chat' like git branches. Lets you explore alternate conversation timelines without ruining the main thread. 2.1M views.",
+    "summary": "Announces a canvas-style interface for LLMs, built in response to a viral post arguing chat UIs need git-like branching/forking of conversations to explore alternate threads without derailing the main one.",
     "topics": [
       "agent-design",
-      "industry"
+      "general"
     ],
     "audience": [
       "me",
       "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
     "views": "2.1M",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "current chat interfaces suck, so i built a canvas for llms\n\nChatGPT needs a 'fork chat' feature. I want to branch a conversation from any point like git branch -> explore alternate timelines without ruining the main thread.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-09-03",
@@ -16028,42 +16038,49 @@
     "handle": "@RaulJuncoV",
     "subject": "Post by Raul Junco on X",
     "url": "https://x.com/rauljuncov/status/1962850589165129870",
-    "summary": "Deep dive on the Retry Pattern — covers why most people use it wrong, exponential backoff, thundering herd effect, and the sweet spot of 3 retries. Practical resilience engineering.",
+    "summary": "A practical guide to the Retry pattern for resilience: cap retries (~3), use exponential backoff to avoid the thundering-herd effect, retry only transient errors (408/5xx, not 4xx), and pair with a circuit breaker to prevent cascading failures on a truly-down service.",
     "topics": [
       "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "11.8K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Retry Pattern will save you... or kill you. It's one of the simplest ways to add resilience, but most people use it wrong. 1. Don't retry forever (~3 retries). 2. Use exponential backoff (1s->2s->4s->8s) to avoid the thundering-herd effect. 3. Only retry transient errors (408, 5xx) not 400/403. 4. Pair with a circuit breaker to avoid hammering a dead service.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-09-02",
-    "author": "hesam",
+    "author": "ℏεsam",
     "handle": "@Hesamation",
     "subject": "Post by hesam on X",
     "url": "https://x.com/hesamation/status/1962508535515791739",
-    "summary": "Recommends an unnamed blog as 'pretty frickin awesome for technical playbooks and for managers who want to know what's what.' 157.4K views.",
+    "summary": "Recommends a blog (linked in the post) as a strong source of technical playbooks, useful both for engineers and for managers who want a grounding in technical topics.",
     "topics": [
       "dev-practices",
       "management"
     ],
     "audience": [
       "me",
+      "leadership",
       "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
-    "views": "157.4K",
+    "views": "157.7K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "i don't know who this guy is but this blog is pretty frickin awesome for technical playbooks and for managers who want to know what's what.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-08-21",
@@ -16071,21 +16088,24 @@
     "handle": "@mattpocockuk",
     "subject": "Post by Matt Pocock on X",
     "url": "https://x.com/mattpocockuk/status/1958179930262356032",
-    "summary": "Matt Pocock praises Anthropic's context engineering template as 'really solid.' 908.4K views — massive engagement for a Claude-related post.",
+    "summary": "Praises an Anthropic context-engineering template as a solid reference for structuring context for LLMs.",
     "topics": [
-      "claude-code",
-      "prompting"
+      "prompting",
+      "claude-code"
     ],
     "audience": [
       "me",
       "dev-team"
     ],
-    "priority": "now",
+    "priority": "near-term",
     "sourceType": "tweet",
-    "views": "908.4K",
+    "views": "911.4K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "This is actually a really solid context engineering template. Kudos, @AnthropicAI",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-08-19",
@@ -16093,7 +16113,7 @@
     "handle": "@ArthurMacwaters",
     "subject": "Post by Arthur MacWaters on X",
     "url": "https://x.com/arthurmacwaters/status/1957580001433514167",
-    "summary": "Claims 'this is unironically the right way to build a startup' — 14.1M views, one of the highest-engagement posts in the collection.",
+    "summary": "Endorses a referenced approach as 'unironically the right way to build a startup.' The substantive content is in the quoted/referenced post rather than the one-line commentary.",
     "topics": [
       "industry",
       "management"
@@ -16102,12 +16122,15 @@
       "me",
       "leadership"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
     "views": "14.1M",
     "notes": "14.1M views — extremely viral",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "this is unironically the right way to build a startup",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-08-19",
@@ -16115,52 +16138,65 @@
     "handle": "@danshipper",
     "subject": "Post by Dan Shipper on X",
     "url": "https://x.com/danshipper/status/1957469868862677028",
-    "summary": "Dan Shipper introduces 'Compounding Engineering' — Every's new engineering philosophy inspired by Claude Code. Each feature should make subsequent features easier to build, not harder. Links to @kieranklaassen's definitive guide.",
+    "summary": "Links Dan Shipper's Every essay 'My AI Had Already Fixed the Code Before I Saw It,' on AI coding agents autonomously fixing code before the developer even reviews it.",
     "topics": [
+      "agent-design",
       "dev-practices",
       "claude-code"
     ],
     "audience": [
       "me",
-      "dev-team"
+      "dev-team",
+      "leadership"
     ],
-    "priority": "now",
+    "priority": "near-term",
     "sourceType": "tweet",
     "views": "19K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "read the full article here: My AI Had Already Fixed the Code Before I Saw It (every.to)\n\nMy AI Had Already Fixed the Code Before I Saw It",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-08-18",
-    "author": "Dante O. Cuales",
+    "author": "Dante O. Cuales, Jr.",
     "handle": "@danteocualesjr",
     "subject": "Post by Dante O. Cuales on X",
     "url": "https://x.com/danteocualesjr/status/1957204427909321027",
-    "summary": "Reply to a thread about AI engineering being easy to learn — argues the 'intimidation factor is mostly artificial' since most AI engineering is API orchestration, prompt optimization, and data pipeline work. The hard parts are already abstracted away.",
+    "summary": "Argues the intimidation factor of AI engineering is mostly artificial: most work is API orchestration, prompt optimization, and data-pipeline plumbing, with model internals abstracted away. The real skill is choosing the right tool and chaining them effectively.",
     "topics": [
-      "industry",
-      "management"
+      "agent-design",
+      "management",
+      "prompting"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team",
+      "leadership"
     ],
-    "priority": "long-term",
+    "priority": "near-term",
     "sourceType": "tweet",
     "views": "19.4K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "The intimidation factor is real but mostly artificial. Most AI engineering is just API orchestration, prompt optimization, and data pipeline work. The hard parts - understanding attention mechanisms, building models from scratch - are already abstracted away. The real skill is knowing when to use which tool and how to chain them effectively.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-08-18",
-    "author": "Claudia GUI",
-    "handle": "@na",
+    "author": "Asterisk (getAsterisk)",
+    "handle": "@getAsterisk",
     "subject": "Claudia GUI toolkit",
     "url": "https://github.com/getAsterisk/claudia",
-    "summary": "Claudia — a GUI wrapper for Claude Code, providing a graphical interface for the CLI tool.",
+    "summary": "opcode (formerly Claudia, by Asterisk) is an open-source Tauri 2 desktop GUI and toolkit for Claude Code: visual project/session management, custom CC agents with per-agent file/network permissions and background execution, a usage/cost analytics dashboard, MCP server management (with Claude Desktop import), session timeline/checkpoints with diff and fork, and a built-in CLAUDE.md editor. Note: the repo has been renamed from getAsterisk/claudia to winfunc/opcode.",
     "topics": [
-      "claude-code"
+      "claude-code",
+      "agent-design",
+      "skills-mcp"
     ],
     "audience": [
       "me",
@@ -16171,7 +16207,10 @@
     "views": "",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "opcode (formerly Claudia, by Asterisk): a powerful GUI app and toolkit for Claude Code - create custom agents, manage interactive sessions, run secure background agents, and more.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-08-15",
@@ -16179,10 +16218,11 @@
     "handle": "@philipvollet",
     "subject": "Post by Philip Vollet on X",
     "url": "https://x.com/philipvollet/status/1955945448860008655",
-    "summary": "Introduces Elysia — open-source agentic RAG platform powered by DSPy. Features transparent decision-tree agents, preference learning, intelligent data categorization, and full process transparency. Claims it will 'retire 90% of RAG systems.'",
+    "summary": "Announces Elysia, an open-source agentic RAG platform (successor to Verba) built on Weaviate and DSPy. Highlights: transparent decision-tree agents with self-healing and custom tools/branches, pre-query data analysis to avoid blind vector/text search, dynamic result displays, feedback-driven few-shot personalization so smaller models perform like larger ones, and query-time chunk-on-demand. Delivered as a FastAPI+NextJS app and a pip package (elysia-ai).",
     "topics": [
       "agent-design",
-      "research"
+      "research",
+      "skills-mcp"
     ],
     "audience": [
       "me",
@@ -16190,10 +16230,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "93.4K",
+    "views": "93.5K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "This will retire 90% of RAG systems... Powered by DSPy. My team just dropped Elysia - an open-source platform for building agentic RAG architectures built on Weaviate. Transparent decision-tree agents with self-healing and custom tools; full data analysis before querying (no blind search); dynamic result displays (tables/charts/cards/GitHub tickets); feedback-driven few-shot personalization; chunk-on-demand at query time. Ships via FastAPI + NextJS and pip install elysia-ai.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-08-11",
@@ -16201,22 +16244,25 @@
     "handle": "@imrat",
     "subject": "Post by Imrat on X",
     "url": "https://x.com/imrat/status/1954497164589056090",
-    "summary": "Claude Code as a DevOps agent: start Claude in tmux, have it create a background process to tail server logs with periodic summaries, then a second process that sends 'check logs' requests on a schedule. Leverages background jobs feature.",
+    "summary": "A recipe for using Claude Code as a DevOps agent with its new background jobs: run Claude in a tmux session, have it spawn a background process to tail server logs and summarize them, then a second process that pings Claude to 'check logs' on an interval.",
     "topics": [
       "claude-code",
-      "dev-practices",
-      "agent-design"
+      "agent-design",
+      "dev-practices"
     ],
     "audience": [
       "me",
       "dev-team"
     ],
-    "priority": "now",
+    "priority": "near-term",
     "sourceType": "tweet",
-    "views": "167.2K",
+    "views": "167.3K",
     "notes": "Practical Claude Code DevOps pattern",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Claude Code as your DevOps agent. The new background jobs make this way easier. 1. start claude in a tmux session 2. ask it to create a background process to tail your server logs and give you a summary 3. ask it to run a second process that sends claude a 'check logs' request every xx minutes.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-08-09",
@@ -16244,7 +16290,7 @@
     "handle": "@sriniously",
     "subject": "Post by K Srinivas Rao on X",
     "url": "https://x.com/sriniously/status/1950432839474012456",
-    "summary": "Built a Go backend starter framework after 3 years of repetitive setup — database connections, logging, auth middleware, error handling, validation, graceful shutdowns. Open-sourced to eliminate boilerplate so devs can focus on business logic.",
+    "summary": "[Post unavailable — page doesn't exist]",
     "topics": [
       "dev-practices"
     ],
@@ -16257,7 +16303,9 @@
     "views": "60.6K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page doesn't exist"
   },
   {
     "date": "2025-07-11",
@@ -16265,7 +16313,7 @@
     "handle": "@Book_therapy223",
     "subject": "Post by Book Therapy on X",
     "url": "https://x.com/book_therapy223/status/1943651617976283236",
-    "summary": "'A Plan is Not a Strategy' — visual/infographic content about the distinction between planning and strategic thinking. 534.8K views.",
+    "summary": "Shares content on the distinction 'A Plan is Not a Strategy' (the Roger Martin / HBR theme): strategy is an integrated set of choices about where to play and how to win, not merely a list of planned activities. Post text is just the headline; the substance is in the attached media.",
     "topics": [
       "management"
     ],
@@ -16273,12 +16321,15 @@
       "me",
       "leadership"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
-    "views": "534.8K",
+    "views": "535.8K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "A Plan is Not a Strategy",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-06-23",

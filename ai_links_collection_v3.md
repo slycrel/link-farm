@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-07-14T18:42:25Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-14T20:08:09Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-09** — [Kodus](https://kodus.io/self-hosted-ai-code-review/) — *now • Dev Practices • v1 enriched*  
@@ -24,25 +24,25 @@
 *No concepts gained new evidence in the last 14 days. Run mechanical discovery or seed curated concepts to populate this section.*
 
 ### Revisit from last month
-- **2025-09-23** — [Jamon](https://x.com/jamonholmgren/status/1969883090056249776) — *near-term • Dev Practices • 52.8K views • v1 enriched*  
-  Jamon Holmgren strongly recommends Lydia Hallie's article 'Behind The Scenes of Bun Install' as a top-10 must-read for every developer on building performant systems, regardless of whether you use JavaScript or Bun.
-- **2025-10-01** — [Sumit Mittal](https://x.com/bigdatasumit/status/1972908540692947192) — *near-term • Dev Practices • 38.2K views • v1 enriched*  
-  Sumit Mittal walks through S3/Athena query cost optimization: moving from uncompressed row-based CSV to columnar Parquet with Snappy compression, partitioning by city, and column pruning cuts a $25 full-scan query to about $0.01 (~2500x cheaper). Ends with a course promo.
+- **2025-08-11** — [Imrat](https://x.com/imrat/status/1954497164589056090) — *near-term • Claude Code • 167.3K views • v1 enriched*  
+  A recipe for using Claude Code as a DevOps agent with its new background jobs: run Claude in a tmux session, have it spawn a background process to tail server logs and summarize them, then a second process that pings Claude to 'check logs' on an interval.
+- **2025-08-15** — [Philip Vollet](https://x.com/philipvollet/status/1955945448860008655) — *near-term • Agent Design • 93.5K views • v1 enriched*  
+  Announces Elysia, an open-source agentic RAG platform (successor to Verba) built on Weaviate and DSPy. Highlights: transparent decision-tree agents with self-healing and custom tools/branches, pre-query data analysis to avoid blind vector/text search, dynamic result displays, feedback-driven few-shot personalization so smaller models perform like larger ones, and query-time chunk-on-demand. Delivered as a FastAPI+NextJS app and a pip package (elysia-ai).
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 368 | 52.8% |
+| agent-design | 371 | 53.2% |
 | claude-code | 180 | 25.8% |
 | dev-practices | 237 | 34.0% |
-| skills-mcp | 133 | 19.1% |
-| prompting | 102 | 14.6% |
+| skills-mcp | 135 | 19.4% |
+| prompting | 103 | 14.8% |
 | research | 143 | 20.5% |
-| industry | 96 | 13.8% |
+| industry | 94 | 13.5% |
 | management | 106 | 15.2% |
-| questionable | 131 | 18.8% |
-| general | 92 | 13.2% |
+| questionable | 132 | 18.9% |
+| general | 93 | 13.3% |
 
 ---
 ## Quick Reference (50 Most Recent)
@@ -102,7 +102,7 @@
 ---
 ## Posts by Topic
 
-### Agent Design (368)
+### Agent Design (371)
 
 - [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — 2026-07-14: How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with a native AI agent, built-in MCP server, Cowork-style web+local-file agents, scheduled autopilot tasks, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), and local-model (Ollama) support — drivable from Claude Code or Gemini CLI. Engagement-framed but describes a real agentic-browser tool worth evaluating.
 
@@ -818,15 +818,21 @@
 
 - [Agentic Design Patterns](https://github.com/sarwarbeing-ai/Agentic_Design_Patterns/blob/main/Agentic_Design_Patterns.pdf) — 2025-10-05: [Post unavailable — Agentic Design Patterns GitHub repo removed via DMCA takedown]
 
-- [Dan McAteer](https://x.com/daniel_mac8/status/1970120352664605124) — 2025-09-22: The 'only agentic coding pattern you need' — a 4-step process (Plan, Execute, Review, Verify) for AGENTS.md files. Emphasis on the Verification step creating feedback loops to test plan execution. Works with AmpCode or any agent supporting AGENTS.md.
+- [Dan McAteer](https://x.com/daniel_mac8/status/1970120352664605124) — 2025-09-22: Shares a four-step agentic-coding pattern with an added Verification step (build feedback loops that test the plan was implemented correctly, since models still fail on execution), meant to be copied into an AGENTS.md file. Works with AmpCode or any AGENTS.md-aware coding agent.
 
-- [Aakash Gupta](https://x.com/aakashg0/status/1967135994228166848) — 2025-09-15: Shares a step-by-step roadmap to build your first AI agent. 570.9K views — widely bookmarked resource.
+- [Aakash Gupta](https://x.com/aakashg0/status/1967135994228166848) — 2025-09-15: Boosts another user's step-by-step roadmap for building your first AI agent, calling it 'gold.' Engagement-style framing; the substantive content lives in the referenced roadmap rather than the post itself.
 
-- [maxleedev](https://x.com/maxleedev/status/1962938769914658984) — 2025-09-03: Built a canvas interface for LLMs — responding to the need for 'fork chat' like git branches. Lets you explore alternate conversation timelines without ruining the main thread. 2.1M views.
+- [maxleedev](https://x.com/maxleedev/status/1962938769914658984) — 2025-09-03: Announces a canvas-style interface for LLMs, built in response to a viral post arguing chat UIs need git-like branching/forking of conversations to explore alternate threads without derailing the main one.
 
-- [Philip Vollet](https://x.com/philipvollet/status/1955945448860008655) — 2025-08-15: Introduces Elysia — open-source agentic RAG platform powered by DSPy. Features transparent decision-tree agents, preference learning, intelligent data categorization, and full process transparency. Claims it will 'retire 90% of RAG systems.'
+- [Dan Shipper](https://x.com/danshipper/status/1957469868862677028) — 2025-08-19: Links Dan Shipper's Every essay 'My AI Had Already Fixed the Code Before I Saw It,' on AI coding agents autonomously fixing code before the developer even reviews it.
 
-- [Imrat](https://x.com/imrat/status/1954497164589056090) — 2025-08-11: Claude Code as a DevOps agent: start Claude in tmux, have it create a background process to tail server logs with periodic summaries, then a second process that sends 'check logs' requests on a schedule. Leverages background jobs feature.
+- [Dante O. Cuales, Jr.](https://x.com/danteocualesjr/status/1957204427909321027) — 2025-08-18: Argues the intimidation factor of AI engineering is mostly artificial: most work is API orchestration, prompt optimization, and data-pipeline plumbing, with model internals abstracted away. The real skill is choosing the right tool and chaining them effectively.
+
+- [Asterisk (getAsterisk)](https://github.com/getAsterisk/claudia) — 2025-08-18: opcode (formerly Claudia, by Asterisk) is an open-source Tauri 2 desktop GUI and toolkit for Claude Code: visual project/session management, custom CC agents with per-agent file/network permissions and background execution, a usage/cost analytics dashboard, MCP server management (with Claude Desktop import), session timeline/checkpoints with diff and fork, and a built-in CLAUDE.md editor. Note: the repo has been renamed from getAsterisk/claudia to winfunc/opcode.
+
+- [Philip Vollet](https://x.com/philipvollet/status/1955945448860008655) — 2025-08-15: Announces Elysia, an open-source agentic RAG platform (successor to Verba) built on Weaviate and DSPy. Highlights: transparent decision-tree agents with self-healing and custom tools/branches, pre-query data analysis to avoid blind vector/text search, dynamic result displays, feedback-driven few-shot personalization so smaller models perform like larger ones, and query-time chunk-on-demand. Delivered as a FastAPI+NextJS app and a pip package (elysia-ai).
+
+- [Imrat](https://x.com/imrat/status/1954497164589056090) — 2025-08-11: A recipe for using Claude Code as a DevOps agent with its new background jobs: run Claude in a tmux session, have it spawn a background process to tail server logs and summarize them, then a second process that pings Claude to 'check logs' on an interval.
 
 - [Mervin Praison](https://x.com/mervinpraison/status/1881788246684013011) — 2025-01-22: Tutorial on building a 100% local DeepSeek RAG Agent using Ollama, PraisonAI, and Streamlit with Nomic embed text for embeddings. Deep contextual awareness, few lines of code.
 
@@ -1188,13 +1194,13 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1983255353597870285) — 2025-10-29: Matt Pocock shares his favorite AI coding tip: add 'Be extremely concise. Sacrifice grammar for the sake of concision.' to your global claude.md file for noticeably better output.
 
-- [Matt Pocock](https://x.com/mattpocockuk/status/1958179930262356032) — 2025-08-21: Matt Pocock praises Anthropic's context engineering template as 'really solid.' 908.4K views — massive engagement for a Claude-related post.
+- [Matt Pocock](https://x.com/mattpocockuk/status/1958179930262356032) — 2025-08-21: Praises an Anthropic context-engineering template as a solid reference for structuring context for LLMs.
 
-- [Dan Shipper](https://x.com/danshipper/status/1957469868862677028) — 2025-08-19: Dan Shipper introduces 'Compounding Engineering' — Every's new engineering philosophy inspired by Claude Code. Each feature should make subsequent features easier to build, not harder. Links to @kieranklaassen's definitive guide.
+- [Dan Shipper](https://x.com/danshipper/status/1957469868862677028) — 2025-08-19: Links Dan Shipper's Every essay 'My AI Had Already Fixed the Code Before I Saw It,' on AI coding agents autonomously fixing code before the developer even reviews it.
 
-- [Claudia GUI](https://github.com/getAsterisk/claudia) — 2025-08-18: Claudia — a GUI wrapper for Claude Code, providing a graphical interface for the CLI tool.
+- [Asterisk (getAsterisk)](https://github.com/getAsterisk/claudia) — 2025-08-18: opcode (formerly Claudia, by Asterisk) is an open-source Tauri 2 desktop GUI and toolkit for Claude Code: visual project/session management, custom CC agents with per-agent file/network permissions and background execution, a usage/cost analytics dashboard, MCP server management (with Claude Desktop import), session timeline/checkpoints with diff and fork, and a built-in CLAUDE.md editor. Note: the repo has been renamed from getAsterisk/claudia to winfunc/opcode.
 
-- [Imrat](https://x.com/imrat/status/1954497164589056090) — 2025-08-11: Claude Code as a DevOps agent: start Claude in tmux, have it create a background process to tail server logs with periodic summaries, then a second process that sends 'check logs' requests on a schedule. Leverages background jobs feature.
+- [Imrat](https://x.com/imrat/status/1954497164589056090) — 2025-08-11: A recipe for using Claude Code as a DevOps agent with its new background jobs: run Claude in a tmux session, have it spawn a background process to tail server logs and summarize them, then a second process that pings Claude to 'check logs' on an interval.
 
 - [Anthropic](https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial/Anthropic%201P) — 2025-04-23: Anthropic's official interactive prompt engineering tutorial — hands-on course for learning to prompt Claude effectively.
 
@@ -1658,17 +1664,17 @@
 
 - [Jamon](https://x.com/jamonholmgren/status/1969883090056249776) — 2025-09-23: Jamon Holmgren strongly recommends Lydia Hallie's article 'Behind The Scenes of Bun Install' as a top-10 must-read for every developer on building performant systems, regardless of whether you use JavaScript or Bun.
 
-- [Dan McAteer](https://x.com/daniel_mac8/status/1970120352664605124) — 2025-09-22: The 'only agentic coding pattern you need' — a 4-step process (Plan, Execute, Review, Verify) for AGENTS.md files. Emphasis on the Verification step creating feedback loops to test plan execution. Works with AmpCode or any agent supporting AGENTS.md.
+- [Dan McAteer](https://x.com/daniel_mac8/status/1970120352664605124) — 2025-09-22: Shares a four-step agentic-coding pattern with an added Verification step (build feedback loops that test the plan was implemented correctly, since models still fail on execution), meant to be copied into an AGENTS.md file. Works with AmpCode or any AGENTS.md-aware coding agent.
 
-- [Raul Junco](https://x.com/rauljuncov/status/1962850589165129870) — 2025-09-03: Deep dive on the Retry Pattern — covers why most people use it wrong, exponential backoff, thundering herd effect, and the sweet spot of 3 retries. Practical resilience engineering.
+- [Raul Junco](https://x.com/rauljuncov/status/1962850589165129870) — 2025-09-03: A practical guide to the Retry pattern for resilience: cap retries (~3), use exponential backoff to avoid the thundering-herd effect, retry only transient errors (408/5xx, not 4xx), and pair with a circuit breaker to prevent cascading failures on a truly-down service.
 
-- [hesam](https://x.com/hesamation/status/1962508535515791739) — 2025-09-02: Recommends an unnamed blog as 'pretty frickin awesome for technical playbooks and for managers who want to know what's what.' 157.4K views.
+- [ℏεsam](https://x.com/hesamation/status/1962508535515791739) — 2025-09-02: Recommends a blog (linked in the post) as a strong source of technical playbooks, useful both for engineers and for managers who want a grounding in technical topics.
 
-- [Dan Shipper](https://x.com/danshipper/status/1957469868862677028) — 2025-08-19: Dan Shipper introduces 'Compounding Engineering' — Every's new engineering philosophy inspired by Claude Code. Each feature should make subsequent features easier to build, not harder. Links to @kieranklaassen's definitive guide.
+- [Dan Shipper](https://x.com/danshipper/status/1957469868862677028) — 2025-08-19: Links Dan Shipper's Every essay 'My AI Had Already Fixed the Code Before I Saw It,' on AI coding agents autonomously fixing code before the developer even reviews it.
 
-- [Imrat](https://x.com/imrat/status/1954497164589056090) — 2025-08-11: Claude Code as a DevOps agent: start Claude in tmux, have it create a background process to tail server logs with periodic summaries, then a second process that sends 'check logs' requests on a schedule. Leverages background jobs feature.
+- [Imrat](https://x.com/imrat/status/1954497164589056090) — 2025-08-11: A recipe for using Claude Code as a DevOps agent with its new background jobs: run Claude in a tmux session, have it spawn a background process to tail server logs and summarize them, then a second process that pings Claude to 'check logs' on an interval.
 
-- [K Srinivas Rao](https://x.com/sriniously/status/1950432839474012456) — 2025-07-31: Built a Go backend starter framework after 3 years of repetitive setup — database connections, logging, auth middleware, error handling, validation, graceful shutdowns. Open-sourced to eliminate boilerplate so devs can focus on business logic.
+- [K Srinivas Rao](https://x.com/sriniously/status/1950432839474012456) — 2025-07-31: [Post unavailable — page doesn't exist]
 
 - [Graham Helton](https://x.com/grahamhelton3/status/1936462167751921698) — 2025-06-23: Graham Helton's brain dump of ~34 personal/professional guidelines before leaving Google for Snowflake. 1M views — resonated as a career reflection piece.
 
@@ -1678,7 +1684,7 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (133)
+### Skills & MCP (135)
 
 - [JoePro](https://x.com/joepro/status/2076877282312954311) — 2026-07-14: JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skill spec) engineered to produce distinctive, production-grade UIs that avoid recognizable AI-generated tropes — covering success criteria (signature visual identity, complete states, WCAG AA accessibility, token-driven design systems) and a context-gathering routine before writing code.
 
@@ -1946,7 +1952,11 @@
 
 - [Ruslan Beskorovainiy](https://x.com/chemobyazan/status/1975326044271079509) — 2025-10-07: Points to the contains-studio/agents GitHub repo, a shared collection of AI agents currently in use.
 
-### Prompting (102)
+- [Asterisk (getAsterisk)](https://github.com/getAsterisk/claudia) — 2025-08-18: opcode (formerly Claudia, by Asterisk) is an open-source Tauri 2 desktop GUI and toolkit for Claude Code: visual project/session management, custom CC agents with per-agent file/network permissions and background execution, a usage/cost analytics dashboard, MCP server management (with Claude Desktop import), session timeline/checkpoints with diff and fork, and a built-in CLAUDE.md editor. Note: the repo has been renamed from getAsterisk/claudia to winfunc/opcode.
+
+- [Philip Vollet](https://x.com/philipvollet/status/1955945448860008655) — 2025-08-15: Announces Elysia, an open-source agentic RAG platform (successor to Verba) built on Weaviate and DSPy. Highlights: transparent decision-tree agents with self-healing and custom tools/branches, pre-query data analysis to avoid blind vector/text search, dynamic result displays, feedback-driven few-shot personalization so smaller models perform like larger ones, and query-time chunk-on-demand. Delivered as a FastAPI+NextJS app and a pip package (elysia-ai).
+
+### Prompting (103)
 
 - [JoePro](https://x.com/joepro/status/2076877282312954311) — 2026-07-14: JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skill spec) engineered to produce distinctive, production-grade UIs that avoid recognizable AI-generated tropes — covering success criteria (signature visual identity, complete states, WCAG AA accessibility, token-driven design systems) and a context-gathering routine before writing code.
 
@@ -2146,7 +2156,9 @@
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Engagement-style post promoting a prompt that claims to teach 'NLP' (Neuro-Linguistic Programming) techniques used by high performers.
 
-- [Matt Pocock](https://x.com/mattpocockuk/status/1958179930262356032) — 2025-08-21: Matt Pocock praises Anthropic's context engineering template as 'really solid.' 908.4K views — massive engagement for a Claude-related post.
+- [Matt Pocock](https://x.com/mattpocockuk/status/1958179930262356032) — 2025-08-21: Praises an Anthropic context-engineering template as a solid reference for structuring context for LLMs.
+
+- [Dante O. Cuales, Jr.](https://x.com/danteocualesjr/status/1957204427909321027) — 2025-08-18: Argues the intimidation factor of AI engineering is mostly artificial: most work is API orchestration, prompt optimization, and data-pipeline plumbing, with model internals abstracted away. The real skill is choosing the right tool and chaining them effectively.
 
 - [Anthropic](https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial/Anthropic%201P) — 2025-04-23: Anthropic's official interactive prompt engineering tutorial — hands-on course for learning to prompt Claude effectively.
 
@@ -2422,7 +2434,7 @@
 
 - [Jamon](https://x.com/jamonholmgren/status/1969883090056249776) — 2025-09-23: Jamon Holmgren strongly recommends Lydia Hallie's article 'Behind The Scenes of Bun Install' as a top-10 must-read for every developer on building performant systems, regardless of whether you use JavaScript or Bun.
 
-- [Philip Vollet](https://x.com/philipvollet/status/1955945448860008655) — 2025-08-15: Introduces Elysia — open-source agentic RAG platform powered by DSPy. Features transparent decision-tree agents, preference learning, intelligent data categorization, and full process transparency. Claims it will 'retire 90% of RAG systems.'
+- [Philip Vollet](https://x.com/philipvollet/status/1955945448860008655) — 2025-08-15: Announces Elysia, an open-source agentic RAG platform (successor to Verba) built on Weaviate and DSPy. Highlights: transparent decision-tree agents with self-healing and custom tools/branches, pre-query data analysis to avoid blind vector/text search, dynamic result displays, feedback-driven few-shot personalization so smaller models perform like larger ones, and query-time chunk-on-demand. Delivered as a FastAPI+NextJS app and a pip package (elysia-ai).
 
 - [Nick Dobos](https://x.com/nickadobos/status/1930878279290060975) — 2025-06-07: Explores the idea of encoding AI memory as video — references an open-source repo that stores millions of text chunks in MP4 files instead of vector databases, with lightning-fast semantic search and no database needed.
 
@@ -2440,7 +2452,7 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: 15-part thread explaining the 'stunning, simple explanation behind matrix multiplication' — breaks down the most crucial idea behind modern machine learning. 1M views.
 
-### Industry (96)
+### Industry (94)
 
 - [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — 2026-07-14: How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with a native AI agent, built-in MCP server, Cowork-style web+local-file agents, scheduled autopilot tasks, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), and local-model (Ollama) support — drivable from Claude Code or Gemini CLI. Engagement-framed but describes a real agentic-browser tool worth evaluating.
 
@@ -2628,11 +2640,7 @@
 
 - [Ray Fernando](https://x.com/rayfernando1337/status/1980180030971150690) — 2025-10-21: Ray Fernando shares DeepSeek-OCR (github.com/deepseek-ai/DeepSeek-OCR) — DeepSeek's 'Contexts Optical Compression' approach that encodes long text contexts as visual tokens for efficient OCR and document understanding.
 
-- [maxleedev](https://x.com/maxleedev/status/1962938769914658984) — 2025-09-03: Built a canvas interface for LLMs — responding to the need for 'fork chat' like git branches. Lets you explore alternate conversation timelines without ruining the main thread. 2.1M views.
-
-- [Arthur MacWaters](https://x.com/arthurmacwaters/status/1957580001433514167) — 2025-08-19: Claims 'this is unironically the right way to build a startup' — 14.1M views, one of the highest-engagement posts in the collection.
-
-- [Dante O. Cuales](https://x.com/danteocualesjr/status/1957204427909321027) — 2025-08-18: Reply to a thread about AI engineering being easy to learn — argues the 'intimidation factor is mostly artificial' since most AI engineering is API orchestration, prompt optimization, and data pipeline work. The hard parts are already abstracted away.
+- [Arthur MacWaters](https://x.com/arthurmacwaters/status/1957580001433514167) — 2025-08-19: Endorses a referenced approach as 'unironically the right way to build a startup.' The substantive content is in the quoted/referenced post rather than the one-line commentary.
 
 ### Management (106)
 
@@ -2830,13 +2838,13 @@
 
 - [keshav](https://x.com/kshvbgde/status/1974835291358969895) — 2025-10-07: Post (likely video/thread) on Steve Jobs's principles for designing insanely great products.
 
-- [hesam](https://x.com/hesamation/status/1962508535515791739) — 2025-09-02: Recommends an unnamed blog as 'pretty frickin awesome for technical playbooks and for managers who want to know what's what.' 157.4K views.
+- [ℏεsam](https://x.com/hesamation/status/1962508535515791739) — 2025-09-02: Recommends a blog (linked in the post) as a strong source of technical playbooks, useful both for engineers and for managers who want a grounding in technical topics.
 
-- [Arthur MacWaters](https://x.com/arthurmacwaters/status/1957580001433514167) — 2025-08-19: Claims 'this is unironically the right way to build a startup' — 14.1M views, one of the highest-engagement posts in the collection.
+- [Arthur MacWaters](https://x.com/arthurmacwaters/status/1957580001433514167) — 2025-08-19: Endorses a referenced approach as 'unironically the right way to build a startup.' The substantive content is in the quoted/referenced post rather than the one-line commentary.
 
-- [Dante O. Cuales](https://x.com/danteocualesjr/status/1957204427909321027) — 2025-08-18: Reply to a thread about AI engineering being easy to learn — argues the 'intimidation factor is mostly artificial' since most AI engineering is API orchestration, prompt optimization, and data pipeline work. The hard parts are already abstracted away.
+- [Dante O. Cuales, Jr.](https://x.com/danteocualesjr/status/1957204427909321027) — 2025-08-18: Argues the intimidation factor of AI engineering is mostly artificial: most work is API orchestration, prompt optimization, and data-pipeline plumbing, with model internals abstracted away. The real skill is choosing the right tool and chaining them effectively.
 
-- [Book Therapy](https://x.com/book_therapy223/status/1943651617976283236) — 2025-07-11: 'A Plan is Not a Strategy' — visual/infographic content about the distinction between planning and strategic thinking. 534.8K views.
+- [Book Therapy](https://x.com/book_therapy223/status/1943651617976283236) — 2025-07-11: Shares content on the distinction 'A Plan is Not a Strategy' (the Roger Martin / HBR theme): strategy is an integrated set of choices about where to play and how to win, not merely a list of planned activities. Post text is just the headline; the substance is in the attached media.
 
 - [Graham Helton](https://x.com/grahamhelton3/status/1936462167751921698) — 2025-06-23: Graham Helton's brain dump of ~34 personal/professional guidelines before leaving Google for Snowflake. 1M views — resonated as a career reflection piece.
 
@@ -2848,7 +2856,7 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
 
-### Questionable (131)
+### Questionable (132)
 
 - [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — 2026-07-14: How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with a native AI agent, built-in MCP server, Cowork-style web+local-file agents, scheduled autopilot tasks, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), and local-model (Ollama) support — drivable from Claude Code or Gemini CLI. Engagement-framed but describes a real agentic-browser tool worth evaluating.
 
@@ -3112,7 +3120,9 @@
 
 - [Jawad](https://x.com/jawad_shreim/status/1972998935687172213) — 2025-09-30: Jawad shares a humorous, plain-language 'explanation' of AWS services (EC2, ECS, etc.) quote-tweeted from MilkStraw AI.
 
-### General (96)
+- [Aakash Gupta](https://x.com/aakashg0/status/1967135994228166848) — 2025-09-15: Boosts another user's step-by-step roadmap for building your first AI agent, calling it 'gold.' Engagement-style framing; the substantive content lives in the referenced roadmap rather than the post itself.
+
+### General (97)
 
 - [witcheer](https://x.com/witcheer/status/2076717324585898343) — 2026-07-14: witcheer crowdsourced and hand-tallied 250+ replies on how people run Hermes (Nous Research's open model), distilling community local-deployment setups into six summary stats.
 
@@ -3301,6 +3311,8 @@
 - [keshav](https://x.com/kshvbgde/status/1974835291358969895) — 2025-10-07: Post (likely video/thread) on Steve Jobs's principles for designing insanely great products.
 
 - [Jawad](https://x.com/jawad_shreim/status/1972998935687172213) — 2025-09-30: Jawad shares a humorous, plain-language 'explanation' of AWS services (EC2, ECS, etc.) quote-tweeted from MilkStraw AI.
+
+- [maxleedev](https://x.com/maxleedev/status/1962938769914658984) — 2025-09-03: Announces a canvas-style interface for LLMs, built in response to a viral post arguing chat UIs need git-like branching/forking of conversations to explore alternate threads without derailing the main one.
 
 - [Aadit Sheth](https://x.com/aaditsh/status/1953462911961374889) — 2025-08-09: [Post deleted/unavailable]
 
@@ -5324,42 +5336,42 @@
   Jamon Holmgren strongly recommends Lydia Hallie's article 'Behind The Scenes of Bun Install' as a top-10 must-read for every developer on building performant systems, regardless of whether you use JavaScript or Bun.
 
 - **2025-09-22** | [Dan McAteer](https://x.com/daniel_mac8/status/1970120352664605124) | agent-design, dev-practices
-  The 'only agentic coding pattern you need' — a 4-step process (Plan, Execute, Review, Verify) for AGENTS.md files. Emphasis on the Verification step creating feedback loops to test plan execution. Works with AmpCode or any agent supporting AGENTS.md.
+  Shares a four-step agentic-coding pattern with an added Verification step (build feedback loops that test the plan was implemented correctly, since models still fail on execution), meant to be copied into an AGENTS.md file. Works with AmpCode or any AGENTS.md-aware coding agent.
 
-- **2025-09-15** | [Aakash Gupta](https://x.com/aakashg0/status/1967135994228166848) | agent-design
-  Shares a step-by-step roadmap to build your first AI agent. 570.9K views — widely bookmarked resource.
+- **2025-09-15** | [Aakash Gupta](https://x.com/aakashg0/status/1967135994228166848) | agent-design, questionable
+  Boosts another user's step-by-step roadmap for building your first AI agent, calling it 'gold.' Engagement-style framing; the substantive content lives in the referenced roadmap rather than the post itself.
 
-- **2025-09-03** | [maxleedev](https://x.com/maxleedev/status/1962938769914658984) | agent-design, industry
-  Built a canvas interface for LLMs — responding to the need for 'fork chat' like git branches. Lets you explore alternate conversation timelines without ruining the main thread. 2.1M views.
+- **2025-09-03** | [maxleedev](https://x.com/maxleedev/status/1962938769914658984) | agent-design, general
+  Announces a canvas-style interface for LLMs, built in response to a viral post arguing chat UIs need git-like branching/forking of conversations to explore alternate threads without derailing the main one.
 
 - **2025-09-03** | [Raul Junco](https://x.com/rauljuncov/status/1962850589165129870) | dev-practices
-  Deep dive on the Retry Pattern — covers why most people use it wrong, exponential backoff, thundering herd effect, and the sweet spot of 3 retries. Practical resilience engineering.
+  A practical guide to the Retry pattern for resilience: cap retries (~3), use exponential backoff to avoid the thundering-herd effect, retry only transient errors (408/5xx, not 4xx), and pair with a circuit breaker to prevent cascading failures on a truly-down service.
 
-- **2025-09-02** | [hesam](https://x.com/hesamation/status/1962508535515791739) | dev-practices, management
-  Recommends an unnamed blog as 'pretty frickin awesome for technical playbooks and for managers who want to know what's what.' 157.4K views.
+- **2025-09-02** | [ℏεsam](https://x.com/hesamation/status/1962508535515791739) | dev-practices, management
+  Recommends a blog (linked in the post) as a strong source of technical playbooks, useful both for engineers and for managers who want a grounding in technical topics.
 
 ### Aug 2025
 
-- **2025-08-21** | [Matt Pocock](https://x.com/mattpocockuk/status/1958179930262356032) | claude-code, prompting
-  Matt Pocock praises Anthropic's context engineering template as 'really solid.' 908.4K views — massive engagement for a Claude-related post.
+- **2025-08-21** | [Matt Pocock](https://x.com/mattpocockuk/status/1958179930262356032) | prompting, claude-code
+  Praises an Anthropic context-engineering template as a solid reference for structuring context for LLMs.
 
 - **2025-08-19** | [Arthur MacWaters](https://x.com/arthurmacwaters/status/1957580001433514167) | industry, management
-  Claims 'this is unironically the right way to build a startup' — 14.1M views, one of the highest-engagement posts in the collection.
+  Endorses a referenced approach as 'unironically the right way to build a startup.' The substantive content is in the quoted/referenced post rather than the one-line commentary.
 
-- **2025-08-19** | [Dan Shipper](https://x.com/danshipper/status/1957469868862677028) | dev-practices, claude-code
-  Dan Shipper introduces 'Compounding Engineering' — Every's new engineering philosophy inspired by Claude Code. Each feature should make subsequent features easier to build, not harder. Links to @kieranklaassen's definitive guide.
+- **2025-08-19** | [Dan Shipper](https://x.com/danshipper/status/1957469868862677028) | agent-design, dev-practices, claude-code
+  Links Dan Shipper's Every essay 'My AI Had Already Fixed the Code Before I Saw It,' on AI coding agents autonomously fixing code before the developer even reviews it.
 
-- **2025-08-18** | [Dante O. Cuales](https://x.com/danteocualesjr/status/1957204427909321027) | industry, management
-  Reply to a thread about AI engineering being easy to learn — argues the 'intimidation factor is mostly artificial' since most AI engineering is API orchestration, prompt optimization, and data pipeline work. The hard parts are already abstracted away.
+- **2025-08-18** | [Dante O. Cuales, Jr.](https://x.com/danteocualesjr/status/1957204427909321027) | agent-design, management, prompting
+  Argues the intimidation factor of AI engineering is mostly artificial: most work is API orchestration, prompt optimization, and data-pipeline plumbing, with model internals abstracted away. The real skill is choosing the right tool and chaining them effectively.
 
-- **2025-08-18** | [Claudia GUI](https://github.com/getAsterisk/claudia) | claude-code
-  Claudia — a GUI wrapper for Claude Code, providing a graphical interface for the CLI tool.
+- **2025-08-18** | [Asterisk (getAsterisk)](https://github.com/getAsterisk/claudia) | claude-code, agent-design, skills-mcp
+  opcode (formerly Claudia, by Asterisk) is an open-source Tauri 2 desktop GUI and toolkit for Claude Code: visual project/session management, custom CC agents with per-agent file/network permissions and background execution, a usage/cost analytics dashboard, MCP server management (with Claude Desktop import), session timeline/checkpoints with diff and fork, and a built-in CLAUDE.md editor. Note: the repo has been renamed from getAsterisk/claudia to winfunc/opcode.
 
-- **2025-08-15** | [Philip Vollet](https://x.com/philipvollet/status/1955945448860008655) | agent-design, research
-  Introduces Elysia — open-source agentic RAG platform powered by DSPy. Features transparent decision-tree agents, preference learning, intelligent data categorization, and full process transparency. Claims it will 'retire 90% of RAG systems.'
+- **2025-08-15** | [Philip Vollet](https://x.com/philipvollet/status/1955945448860008655) | agent-design, research, skills-mcp
+  Announces Elysia, an open-source agentic RAG platform (successor to Verba) built on Weaviate and DSPy. Highlights: transparent decision-tree agents with self-healing and custom tools/branches, pre-query data analysis to avoid blind vector/text search, dynamic result displays, feedback-driven few-shot personalization so smaller models perform like larger ones, and query-time chunk-on-demand. Delivered as a FastAPI+NextJS app and a pip package (elysia-ai).
 
-- **2025-08-11** | [Imrat](https://x.com/imrat/status/1954497164589056090) | claude-code, dev-practices, agent-design
-  Claude Code as a DevOps agent: start Claude in tmux, have it create a background process to tail server logs with periodic summaries, then a second process that sends 'check logs' requests on a schedule. Leverages background jobs feature.
+- **2025-08-11** | [Imrat](https://x.com/imrat/status/1954497164589056090) | claude-code, agent-design, dev-practices
+  A recipe for using Claude Code as a DevOps agent with its new background jobs: run Claude in a tmux session, have it spawn a background process to tail server logs and summarize them, then a second process that pings Claude to 'check logs' on an interval.
 
 - **2025-08-09** | [Aadit Sheth](https://x.com/aaditsh/status/1953462911961374889) | general
   [Post deleted/unavailable]
@@ -5367,10 +5379,10 @@
 ### Jul 2025
 
 - **2025-07-31** | [K Srinivas Rao](https://x.com/sriniously/status/1950432839474012456) | dev-practices
-  Built a Go backend starter framework after 3 years of repetitive setup — database connections, logging, auth middleware, error handling, validation, graceful shutdowns. Open-sourced to eliminate boilerplate so devs can focus on business logic.
+  [Post unavailable — page doesn't exist]
 
 - **2025-07-11** | [Book Therapy](https://x.com/book_therapy223/status/1943651617976283236) | management
-  'A Plan is Not a Strategy' — visual/infographic content about the distinction between planning and strategic thinking. 534.8K views.
+  Shares content on the distinction 'A Plan is Not a Strategy' (the Roger Martin / HBR theme): strategy is an integrated set of choices about where to play and how to win, not merely a list of planned activities. Post text is just the headline; the substance is in the attached media.
 
 ### Jun 2025
 
