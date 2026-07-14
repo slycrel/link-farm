@@ -25,6 +25,23 @@ DB_PATH = SCRIPT_DIR / "ai_links.db"
 
 # --- ID generation ---
 
+# Placeholder / sentinel strings that have shown up in the `url` column when
+# ingest failed to extract a real link. These must NEVER be hashed into an ID:
+# doing so mints a garbage 48-bit hash id (e.g. sha256("[not found]")) that is
+# permanently divorced from the real post and can't be enriched or de-duped.
+# See db/recover.py for the recovery path for rows that already hit this.
+MISSING_URL_SENTINELS = frozenset({
+    "", "[not found]", "not found", "n/a", "na", "none", "null", "-",
+})
+
+
+def is_missing_url(url) -> bool:
+    """True if `url` is absent or a known placeholder — not a real link."""
+    if not url:
+        return True
+    return str(url).strip().lower() in MISSING_URL_SENTINELS
+
+
 def extract_x_status_id(url: str) -> int | None:
     """Extract the numeric status ID from an X/Twitter URL."""
     match = re.search(r'(?:twitter\.com|x\.com)/\w+/status/(\d+)', url or '')
@@ -35,7 +52,14 @@ def extract_x_status_id(url: str) -> int | None:
 
 def url_to_hash_id(url: str) -> int:
     """Generate a deterministic integer ID from a URL hash."""
+    if is_missing_url(url):
+        raise ValueError(
+            f"refusing to mint a hash id from a missing/placeholder URL: {url!r}. "
+            "Skip or defer the row and backfill the URL first (see db/recover.py)."
+        )
     normalized = normalize_url(url)
+    if not normalized:
+        raise ValueError(f"URL {url!r} normalized to empty — cannot generate id")
     h = hashlib.sha256(normalized.encode()).hexdigest()
     return int(h[:12], 16)  # 48-bit integer, ~281 trillion range
 
@@ -60,11 +84,16 @@ def normalize_url(url: str) -> str:
 
 
 def generate_id(url: str) -> int:
-    """Generate a deterministic post ID from the URL."""
+    """Generate a deterministic post ID from the URL.
+
+    Raises ValueError if `url` is missing or a placeholder sentinel — callers
+    must not create rows for posts with no real URL (that produced the
+    long-lived url-less orphan bug). Extract/backfill the URL first.
+    """
     status_id = extract_x_status_id(url)
     if status_id:
         return status_id
-    return url_to_hash_id(url)
+    return url_to_hash_id(url)  # raises on missing/placeholder URLs
 
 
 # --- Schema ---

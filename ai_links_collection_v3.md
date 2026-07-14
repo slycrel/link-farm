@@ -1,12 +1,12 @@
 # AI Links Collection
-**Total Posts**: 697  
+**Total Posts**: 698  
 **Date Range**: 2024-06-11 – 2026-07-14  
-**Enriched**: 696/697 (99%)
+**Enriched**: 697/698 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-07-14T21:34:32Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-14T22:13:29Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-09** — [Kodus](https://kodus.io/self-hosted-ai-code-review/) — *now • Dev Practices • v1 enriched*  
@@ -33,10 +33,10 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 373 | 53.5% |
+| agent-design | 373 | 53.4% |
 | claude-code | 180 | 25.8% |
-| dev-practices | 241 | 34.6% |
-| skills-mcp | 137 | 19.7% |
+| dev-practices | 241 | 34.5% |
+| skills-mcp | 138 | 19.8% |
 | prompting | 103 | 14.8% |
 | research | 145 | 20.8% |
 | industry | 95 | 13.6% |
@@ -1132,7 +1132,7 @@
 
 - [Daniel San](https://x.com/dani_avila7/status/2029399100240674929) — 2026-03-05: Points to a full Skill in the Anthropic repo as a reference for SKILL.md structure and language support, arguing every company should maintain an internal repository of reusable Skills and components.
 
-- [Dickson Tsai]([not found]) — 2026-03-05: In Claude Code, we've recently launched HTTP hooks, easier to use and more secure than existing command hooks! You can build a web app (even on localhost) to view CC's progress, manage its permissions, and more.
+- [Dickson Tsai](https://x.com/dickson_tsai/status/2029235808235078095) — 2026-03-05: Dickson Tsai (Anthropic) announced HTTP hooks in Claude Code — a more secure, easier alternative to command hooks: CC POSTs each hook event to a URL you choose and awaits a response, so you can build a web app to view progress, manage permissions, run hook logic server-side, and manage state across agents via a DB. Works everywhere hooks are supported, including plugins, custom agents, and enterprise managed settings. Docs: code.claude.com/docs/en/hooks
 
 - [Nate.Google](https://x.com/nate_google_/status/2028836031932355067) — 2026-03-04: Nate.Google recommends what he calls the most valuable channel for learning everything about Claude.
 
@@ -1696,7 +1696,7 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Skills & MCP (137)
+### Skills & MCP (138)
 
 - [JoePro](https://x.com/joepro/status/2076877282312954311) — 2026-07-14: JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skill spec) engineered to produce distinctive, production-grade UIs that avoid recognizable AI-generated tropes — covering success criteria (signature visual identity, complete states, WCAG AA accessibility, token-driven design systems) and a context-gathering routine before writing code.
 
@@ -1911,6 +1911,8 @@
 - [Sukh Sroay](https://x.com/sukh_saroy/status/2029400474739458379) — 2026-03-05: [Post unavailable — account suspended]
 
 - [Daniel San](https://x.com/dani_avila7/status/2029399100240674929) — 2026-03-05: Points to a full Skill in the Anthropic repo as a reference for SKILL.md structure and language support, arguing every company should maintain an internal repository of reusable Skills and components.
+
+- [Dickson Tsai](https://x.com/dickson_tsai/status/2029235808235078095) — 2026-03-05: Dickson Tsai (Anthropic) announced HTTP hooks in Claude Code — a more secure, easier alternative to command hooks: CC POSTs each hook event to a URL you choose and awaits a response, so you can build a web app to view progress, manage permissions, run hook logic server-side, and manage state across agents via a DB. Works everywhere hooks are supported, including plugins, custom agents, and enterprise managed settings. Docs: code.claude.com/docs/en/hooks
 
 - [witcheer ☯︎](https://x.com/witcheer/status/2029013946701381978) — 2026-03-05: [Post unavailable — page doesn’t exist (same status as nummanali)]
 
@@ -3144,7 +3146,7 @@
 
 - [Aakash Gupta](https://x.com/aakashg0/status/1967135994228166848) — 2025-09-15: Boosts another user's step-by-step roadmap for building your first AI agent, calling it 'gold.' Engagement-style framing; the substantive content lives in the referenced roadmap rather than the post itself.
 
-### General (98)
+### General (99)
 
 - [witcheer](https://x.com/witcheer/status/2076717324585898343) — 2026-07-14: witcheer crowdsourced and hand-tallied 250+ replies on how people run Hermes (Nous Research's open model), distilling community local-deployment setups into six summary stats.
 
@@ -3219,6 +3221,8 @@
 - [hoeem](https://x.com/hooeem/status/2029167629076676955) — 2026-03-05: A free, beginner-to-expert ranked list of AI learning resources: Anthropic Academy (Claude 101 & AI Fluency), Google AI Essentials, AWS Generative AI Essentials, Elements of AI (University of Helsinki), DeepLearning.AI short courses, and Harvard CS50s Intro to AI with Python.
 
 - [Bojan Tunguz](https://x.com/tunguz/status/2029164042028236942) — 2026-03-05: Reflects on "mid season" knowledge — many roles require grappling with a problem mid-stream without enough runway to catch up on missing context, something even smart people underestimate.
+
+- [Dickson Tsai]([not found]) — 2026-03-05: [Superseded — re-keyed to canonical post 2029235808235078095]
 
 - [vixhaℓ](https://x.com/thevixhal/status/2027763453679841311) — 2026-03-02: Promotes a popular step-by-step article on building a 16-bit CPU from scratch in C (4,000+ bookmarks). A from-scratch systems/architecture learning project rather than AI content.
 
@@ -4813,6 +4817,9 @@
 - **2026-03-05** | [Tech Layoff Tracker](https://x.com/techlayofflover/status/2029261882834501665) | industry, management, questionable
   Shares a venting DM from a senior Big Tech SWE (~$350k TC): leadership now touts an "AI leverage ratio" of 4.2x — each engineer shipping the output of a former four-person team — fueling job anxiety. Engagement-styled but a real signal on AI-driven productivity expectations and layoffs.
 
+- **2026-03-05** | [Dickson Tsai](https://x.com/dickson_tsai/status/2029235808235078095) | claude-code, skills-mcp
+  Dickson Tsai (Anthropic) announced HTTP hooks in Claude Code — a more secure, easier alternative to command hooks: CC POSTs each hook event to a URL you choose and awaits a response, so you can build a web app to view progress, manage permissions, run hook logic server-side, and manage state across agents via a DB. Works everywhere hooks are supported, including plugins, custom agents, and enterprise managed settings. Docs: code.claude.com/docs/en/hooks
+
 - **2026-03-05** | [Peter Yang](https://x.com/petergyang/status/2029220235375714766) | management, agent-design, industry
   Deep dive arguing your new job is to onboard and manage AI agents, with examples from Linear (AI team members you assign tasks to), Ramp (Claude Code as baseline for all roles), and Factory (codifying PM, frontend, and data-analysis work into reusable skills).
 
@@ -4837,8 +4844,8 @@
 - **2026-03-05** | [Avid](https://x.com/av1dlive/status/2027429188471558475) | questionable, management, agent-design
   Engagement-style 'AI will take your job' listicle, but with a usable career playbook: audit which tasks AI can replicate, learn local agent tooling and stackable 'skills', layer AI-native competence (prompting, orchestration, RAG, automation), shift from executor to system designer, double down on human edge, and build a product/brand.
 
-- **2026-03-05** | [Dickson Tsai]([not found]) | claude-code
-  In Claude Code, we've recently launched HTTP hooks, easier to use and more secure than existing command hooks! You can build a web app (even on localhost) to view CC's progress, manage its permissions, and more.
+- **2026-03-05** | [Dickson Tsai]([not found]) | general
+  [Superseded — re-keyed to canonical post 2029235808235078095]
 
 - **2026-03-05** | [Muratcan Koylan](https://x.com/koylanai/status/2032671843) | agent-design
   [Post unavailable — corrupt status id resolves to unrelated @BizBlogger account]
