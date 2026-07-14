@@ -1,5 +1,135 @@
 [
   {
+    "date": "2026-07-14",
+    "author": "Alvaro Videla",
+    "handle": "@old_sound",
+    "subject": "Post by Alvaro Videla - on X",
+    "url": "https://x.com/old_sound/status/2076932819008242037",
+    "summary": "Alvaro Videla released LeetLLM, a free problem-based course with 48 lessons for building a small LLM inference engine for Apple Silicon in Swift and Metal — from dot products and GEMV through attention and token generation. Includes runnable exercises, a native macOS Studio app, and a companion book.",
+    "topics": [
+      "research",
+      "dev-practices"
+    ],
+    "audience": [
+      "dev-team",
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "44.6K",
+    "notes": "",
+    "enriched": true,
+    "content": "I just released LeetLLM: a free, problem-based course with 48 lessons for building a small LLM inference engine for Apple Silicon in Swift and Metal, from dot products and GEMV through attention and token generation. Feedback is very welcome.\n\nGitHub - videlalvaro/leet-llm: A hands-on Swift and Metal course for building LLM inference from first principles on Apple silicon, with 48 guided lessons, runnable exercises, a native macOS Studio, and a companion book.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-14",
+    "author": "JoePro",
+    "handle": "@JoePro",
+    "subject": "Post by JoePro on X",
+    "url": "https://x.com/joepro/status/2076877282312954311",
+    "summary": "JoePro shares a heavily modified 'Frontend Design Skill' for Claude aimed at producing production-grade UIs that don't look AI-generated: commit to a radical art direction, invent a functional signature element, define design tokens before layout, enforce accessibility and full interaction/failure states, and reject common AI-aesthetic tropes (Inter + purple gradients + rounded cards). Includes the complete skill markdown and how to install it as a custom Claude skill.",
+    "topics": [
+      "skills-mcp",
+      "claude-code",
+      "prompting",
+      "dev-practices"
+    ],
+    "audience": [
+      "dev-team",
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "53K",
+    "notes": "",
+    "enriched": true,
+    "content": "I Brutally Modified My Front-End Design Skill ~ Now My UIs Don't Look Like AI Crap. Full skill: create distinctive, production-grade frontend interfaces that feel authored by a strong human designer. Commit to a radical art direction, invent a signature element, define design tokens, enforce interaction/failure states and WCAG AA accessibility, and reject AI tropes (Inter + purple gradient + rounded cards + generic icons). Install via Customize > Skills > Create skill.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-14",
+    "author": "witcheer",
+    "handle": "@witcheer",
+    "subject": "Post by witcheer on X",
+    "url": "https://x.com/witcheer/status/2076717324585898343",
+    "summary": "witcheer summarizes a community survey on how people run Hermes day-to-day: 250+ replies (70 real answers, 60 full setups), hand-tallied into six headline numbers covering daily-driver models, mixture-of-agents/local models, and memory layers (built-in vs Obsidian vaults). The six-number breakdown is in an accompanying image.",
+    "topics": [
+      "research",
+      "industry"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "141.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "A few days ago I asked how you run Hermes. 250+ replies came back: 70 gave real answers and 60 described full setups. I read and hand-tallied every one. Here is what this community runs, in six numbers.\n\nI'm interested in how you're all running Hermes day to day. Drop your setup below, I'm mapping what the community reaches for. Curious about: model (daily driver, plus MoA or a local model), memory (built-in, an Obsidian vault, or another layer).",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-14",
+    "author": "How To Prompt",
+    "handle": "@HowToPrompt__",
+    "subject": "Post by How To Prompt on X",
+    "url": "https://x.com/howtoprompt__/status/2076689880026096089",
+    "summary": "How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with an AI agent baked into the browser process: 53+ natural-language browser-automation tools, a built-in MCP server (drivable from Claude Code or Gemini CLI), a 'Cowork' mode that reads the web and writes local files in one task, scheduled autonomous agents, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), BYO Claude/GPT/Gemini keys or local Ollama, and heavier ad-blocking than Chrome. Hype framing but describes a real tool.",
+    "topics": [
+      "industry",
+      "agent-design",
+      "skills-mcp",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "33.9K",
+    "notes": "",
+    "enriched": true,
+    "content": "An ex-Google engineer open-sourced a privacy-first Chromium fork with a native AI agent, MCP server, scheduled tasks, and 40+ app integrations. 53+ browser automation tools controlled by natural language; built-in MCP server (drive from Claude Code or Gemini CLI); Cowork mode: agents that read the web AND write local files; scheduled tasks on autopilot; BYO Claude/GPT/Gemini keys or run Ollama locally; imports Chrome bookmarks/passwords/extensions. 100% open source, runs locally.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-14",
+    "author": "Alex Prompter",
+    "handle": "@alex_prompter",
+    "subject": "Post by Alex Prompter on X",
+    "url": "https://x.com/alex_prompter/status/2074198124898181121",
+    "summary": "Alex Prompter's long-form guide argues you should extract a stronger model's 'operating manual' (its reasoning procedures) as a portable system prompt before Fable 5 moves to pay-per-use, then run it on cheaper models like Opus 4.8 or Sonnet 5. Three steps: extract the manual with a detailed prompt, transplant it into a Claude Project or API system prompt, and verify with a trap question (a 5% vs 20% revenue-growth check). Includes a full fable_to_opus.py script. Ends with a paid skills-bundle promo.",
+    "topics": [
+      "prompting",
+      "claude-code",
+      "agent-design",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "939.5K",
+    "notes": "",
+    "enriched": true,
+    "content": "You have a few days to clone Fable 5 into Opus 4.8. The model was never the asset — the way it thinks is, and a way of thinking can be written down and run on a cheaper model. Step 1: extract the operating manual (procedures, not a summary) with a detailed prompt. Step 2: transplant it into a Claude Project or API system prompt on Opus 4.8. Step 3: prove it took with a trap question ('revenue grew from $4.0M to $4.2M, called a 20% gain — ship it?' — it's 5%, not 20%). Includes fable_to_opus.py to extract, save, and A/B test the manual.\n\nClaude skills bundle promo (linktr.ee/alex_prompter)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-07-13",
     "author": "Jamon Holmgren",
     "handle": "@jamonholmgren",
@@ -11836,8 +11966,8 @@
     "notes": "",
     "enriched": true,
     "enrichment_status": "failed",
-    "enrichment_attempts": 6,
-    "enrichment_last_error": "no URL on record — needs URL backfill from email (ai-links-catchup)"
+    "enrichment_attempts": 7,
+    "enrichment_last_error": "no url on record — cannot scrape (6th+ attempt)"
   },
   {
     "date": "2026-03-05",
@@ -15123,20 +15253,23 @@
     "handle": "@dklineii",
     "subject": "Post by Dave Kline on X",
     "url": "https://x.com/dklineii/status/1994761636742050226",
-    "summary": "The 7 Deadly Sins of New Managers — explains why 60% fail in their first leadership role. Management/leadership content with image breakdown.",
+    "summary": "Dave Kline's thread on 'The 7 Deadly Sins of New Managers,' framed around the claim that ~60% of people fail in their first leadership role. This post is the hook for a list of common first-time-manager mistakes (detailed items continue in the thread/graphic).",
     "topics": [
       "management"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "11.1K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "The 7 Deadly Sins of New Managers (why 60% fail in their first leadership role).",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-11-25",
@@ -15144,21 +15277,24 @@
     "handle": "@RayFernando1337",
     "subject": "Post by Ray Fernando on X",
     "url": "https://x.com/rayfernando1337/status/1992848315541823490",
-    "summary": "Links to the 'best Claude Skills breakdown' — a deep-dive blog post by Lee Han Chung covering Claude skills architecture and implementation details.",
+    "summary": "Ray Fernando recommends Lee Han-Chung's 'Claude Skills deep dive' blog post (leehanchung.github.io) as the best breakdown of Claude Skills he's seen.",
     "topics": [
       "skills-mcp",
       "claude-code"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
-    "priority": "now",
+    "priority": "near-term",
     "sourceType": "tweet",
-    "views": "101.9K",
+    "views": "102.3K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "The best Claude Skills breakdown I've seen.\n\nClaude Skills Deep Dive",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-11-15",
@@ -15166,43 +15302,49 @@
     "handle": "@trq212",
     "subject": "Post by Thariq on X",
     "url": "https://x.com/trq212/status/1989061939625144388",
-    "summary": "Anthropic released a frontend-design plugin for Claude Code — demo shows Claude creating a music player app. Install via /plugin marketplace add anthropics/claude-code and /plugin install frontend-design@claude-code-plugins.",
+    "summary": "Thariq gives the setup commands for Anthropic's frontend-design plugin in Claude Code: add the marketplace with '/plugin marketplace add anthropics/claude-code', then '/plugin install frontend-design@claude-code-plugins'. Getting-started reply for the frontend-design plugin.",
     "topics": [
       "claude-code",
       "skills-mcp"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
-    "priority": "now",
+    "priority": "near-term",
     "sourceType": "tweet",
-    "views": "286.6K",
+    "views": "312.1K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "To get started add our marketplace in Claude Code: /plugin marketplace add anthropics/claude-code, and then install the plugin: /plugin install frontend-design@claude-code-plugins",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-11-12",
-    "author": "George",
+    "author": "George from prodmgmt.world",
     "handle": "@nurijanian",
     "subject": "Post by George on X",
     "url": "https://x.com/nurijanian/status/1988335427447869565",
-    "summary": "Shares a Claude prompt for critical product requirements analysis — acts as 'extremely tough and unreasonable product executive' who identifies cross-team collaboration gaps, conflicting requirements, maintainability issues, and strategic pitfalls.",
+    "summary": "George (prodmgmt.world) shares a 'tough, unreasonable product executive' critique prompt he runs product decisions through: it skeptically stress-tests requirements across cross-team collaboration, conflicting requirements, maintainability, strategic implications, clarity, and feasibility, returning structured critiques (section/issue/impact/suggestion). Ends with a paid prompt-library link.",
     "topics": [
       "prompting",
       "management"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "12.1K",
+    "views": "12.2K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Whenever I make a product decision lately, I run it through this prompt in Claude — always humbles me. It's a tough, unreasonable product executive that critically analyzes product requirements across cross-team collaboration, conflicting requirements, maintainability, strategic implications, clarity/specificity, and feasibility, returning structured critiques (section/issue/impact/suggestion) plus an overall assessment.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-11-08",
@@ -15210,21 +15352,25 @@
     "handle": "@danshipper",
     "subject": "Post by Dan Shipper on X",
     "url": "https://x.com/danshipper/status/1986870518046200255",
-    "summary": "Links to 'Teach Your AI to Think Like a Senior Engineer' on Every — a masterclass article by @kieranklaassen on coding with AI, covering advanced workflows and senior-level prompting patterns.",
+    "summary": "Dan Shipper recommends Kieran Klaassen's Every piece 'Teach Your AI to Think Like a Senior Engineer' (every.to/source-code) as a masterclass on coding with AI.",
     "topics": [
       "dev-practices",
-      "prompting"
+      "claude-code",
+      "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "205.2K",
+    "views": "205.8K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Absolute masterclass on coding with AI from @kieranklaassen today in @every.\n\nTeach Your AI to Think Like a Senior Engineer",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-11-06",
@@ -15232,20 +15378,23 @@
     "handle": "@PromptLLM",
     "subject": "Post by Prompter on X",
     "url": "https://x.com/promptllm/status/1986173095896621150",
-    "summary": "Claims elite performers all use Neuro-Linguistic Programming (NLP) and shares a prompt that teaches NLP techniques. Generic self-improvement content with AI angle.",
+    "summary": "Prompter claims elite performers all use neuro-linguistic programming (NLP) and offers a prompt that 'teaches you NLP.' Engagement-bait framing with an unsubstantiated claim; the actual prompt is not shown in the post.",
     "topics": [
-      "prompting",
-      "questionable"
+      "questionable",
+      "prompting"
     ],
     "audience": [
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "54.6K",
+    "views": "54.8K",
     "notes": "Engagement farming — NLP (neuro-linguistic) not NLP (natural language processing)",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "I have studied elite performers for years. One thing I have noticed they all use neuro-linguistic Programming (NLP). This prompt teaches you NLP.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-11-01",
@@ -15253,9 +15402,10 @@
     "handle": "@DataChaz",
     "subject": "Post by Charly Wargnier on X",
     "url": "https://x.com/datachaz/status/1984276199309484409",
-    "summary": "Highlights someone who spent 1000 hours on prompt engineering to distill the 6 patterns that actually matter. High engagement (347K views) suggests the content resonated.",
+    "summary": "Charly Wargnier boosts a claim that someone put in 1,000 hours of prompt engineering to distill the 6 prompt patterns that actually matter. Hook post pointing to the six patterns (detailed in the referenced content).",
     "topics": [
-      "prompting"
+      "prompting",
+      "questionable"
     ],
     "audience": [
       "me",
@@ -15263,10 +15413,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "347.1K",
+    "views": "348.2K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "This guy literally put in 1000 hours of prompt engineering to nail down the 6 patterns that actually matter.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-10-31",
@@ -15274,20 +15427,24 @@
     "handle": "@aaditsh",
     "subject": "Post on X",
     "url": "https://x.com/aaditsh/status/1983103310791159863",
-    "summary": "Shares a chart breaking down what 'good with AI' looks like role by role — a framework for assessing AI fluency across an organization. Useful for hiring and team evaluation.",
+    "summary": "Aadit Sheth shares a chart breaking down what being 'good with AI' looks like role by role, framed as a way to gauge whether a team is truly AI-fluent and pitched as useful for hiring and leading in 2025. The breakdown itself is in an attached chart image.",
     "topics": [
-      "management"
+      "management",
+      "industry"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "56.5K",
+    "views": "56.7K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "This chart is one of the clearest ways to see if your team is truly AI-fluent. It breaks down what 'good with AI' actually looks like, role by role. If you're hiring or leading in 2025, this is worth saving.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-10-29",
@@ -15295,21 +15452,25 @@
     "handle": "@mattpocockuk",
     "subject": "Post by Matt Pocock on X",
     "url": "https://x.com/mattpocockuk/status/1983255353597870285",
-    "summary": "Matt Pocock's favourite AI coding tip: adding 'Be extremely concise. Sacrifice grammar for the sake of concision.' to his global claude.md file. Simple but effective prompt engineering for Claude Code.",
+    "summary": "Matt Pocock shares his favorite AI coding tip: add 'Be extremely concise. Sacrifice grammar for the sake of concision.' to your global claude.md file for noticeably better output.",
     "topics": [
+      "claude-code",
       "prompting",
-      "claude-code"
+      "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
-    "priority": "now",
+    "priority": "near-term",
     "sourceType": "tweet",
-    "views": "82.2K",
+    "views": "82.3K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "partial"
+    "content": "Still my favourite AI coding tip. Could not live without this.\n\n\"Be extremely concise. Sacrifice grammar for the sake of concision.\" Added this to my global claude md file and am extremely happy with the output.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2025-10-28",

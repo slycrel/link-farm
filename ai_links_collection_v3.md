@@ -1,53 +1,58 @@
 # AI Links Collection
-**Total Posts**: 692  
-**Date Range**: 2024-06-11 – 2026-07-13  
-**Enriched**: 691/692 (99%)
+**Total Posts**: 697  
+**Date Range**: 2024-06-11 – 2026-07-14  
+**Enriched**: 696/697 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-07-13T22:48:00Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-14T16:39:04Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-09** — [Kodus](https://kodus.io/self-hosted-ai-code-review/) — *now • Dev Practices • v1 enriched*  
   Kodus (github.com/kodustech/kodus-ai) — open-source AGPLv3 self-hosted AI code review. The full PR-review pipeline (Kody agent) runs on your own infrastructure with bring-your-own-LLM: it posts line-anchored inline comments covering logic/security/performance (or 'deep mode' with parallel bug/security/performance specialists), keeps source code, LLM calls, and audit trails inside your VPC, and supports GitHub Enterprise Server / GitLab Self-Managed / Bitbucket DC and air-gapped deploys. Jeremy flagged it to evaluate for work code reviews.
+- **2026-07-14** — [JoePro](https://x.com/joepro/status/2076877282312954311) — *near-term • Skills & MCP • 53K views • v1 enriched*  
+  JoePro shares a heavily modified 'Frontend Design Skill' for Claude aimed at producing production-grade UIs that don't look AI-generated: commit to a radical art direction, invent a functional signature element, define design tokens before layout, enforce accessibility and full interaction/failure states, and reject common AI-aesthetic tropes (Inter + purple gradients + rounded cards). Includes the complete skill markdown and how to install it as a custom Claude skill.
+- **2026-07-14** — [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — *near-term • Industry • 33.9K views • v1 enriched*  
+  How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with an AI agent baked into the browser process: 53+ natural-language browser-automation tools, a built-in MCP server (drivable from Claude Code or Gemini CLI), a 'Cowork' mode that reads the web and writes local files in one task, scheduled autonomous agents, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), BYO Claude/GPT/Gemini keys or local Ollama, and heavier ad-blocking than Chrome. Hype framing but describes a real tool.
+- **2026-07-14** — [Alex Prompter](https://x.com/alex_prompter/status/2074198124898181121) — *near-term • Prompting • 939.5K views • v1 enriched*  
+  Alex Prompter's long-form guide argues you should extract a stronger model's 'operating manual' (its reasoning procedures) as a portable system prompt before Fable 5 moves to pay-per-use, then run it on cheaper models like Opus 4.8 or Sonnet 5. Three steps: extract the manual with a detailed prompt, transplant it into a Claude Project or API system prompt, and verify with a trap question (a 5% vs 20% revenue-growth check). Includes a full fable_to_opus.py script. Ends with a paid skills-bundle promo.
 - **2026-07-13** — [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610) — *near-term • Agent Design • v1 enriched*  
   Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a customized workflow skill (he recommends grabbing Matt Pocock's skills); self-healing, greppable docs with a 7-line summary header; agents that actually run and test the app themselves; e2e tests plus docs on how/what to test; custom precommit linters with --fix that shell out to a cheaper LLM (Composer 2.5 or Sonnet) to actually fix rather than flag; cross-agent review (codex/claude/cursor, never the same model reviewing itself) at research/plan/implementation/wrap-up; handoff worksheets committed with git tags so another agent can finish the job; automatic end-of-session agent feedback docs he periodically ingests to improve workflows; a tools/bin folder of agent-authored scripts (e.g. an agent_review CLI wrapper); and periodic agent sweeps through recent commits. Practical, adoptable patterns for a team running coding agents.
-- **2026-07-07** — [How To Prompt](https://x.com/howtoprompt__/status/2074122800961614184) — *near-term • Agent Design • 190.1K views • v1 enriched*  
-  How To Prompt (hype framing: "China has killed the vector database industry") flags Tencent's newly open-sourced TencentDB Agent Memory — local long-term memory for AI agents that runs 100% on plain SQLite with no external vector DB or cloud APIs. Claims 61% fewer tokens and PersonaMem accuracy 48%->76%. Uses a layered 'semantic pyramid' (L0 conversation -> L1 atom -> L2 scenario -> L3 persona) stored as inspectable markdown + Mermaid graphs instead of opaque vector compression, with drill-back to raw logs by node_id. ~5.1k GitHub stars.
-- **2026-07-07** — [Ryan Carson](https://x.com/ryancarson/status/2074093250399330418) — *near-term • Agent Design • 209K views • v1 enriched*  
-  Ryan Carson (@HelloUntangle) details orchestrating the largest/riskiest engineering program in the company's history with a single Fable parent orchestrator session: 834 files, prod data mutation, DB schema update, 31 PRs, started Friday->completed Monday, zero prod incidents. One parent Devin/Fable session planned the work, spawned ~40 child sessions to execute, enforced regression gates and backup checks between phases, and escalated only owner-level decisions (scope rulings, go/no-go on irreversible steps). Distills reusable program-management patterns for large migrations. In a follow-up he asks Cognition to let child Devin sessions pick their own model/mode independent of the parent.
-- **2026-07-06** — [Satyam Pariyar](https://x.com/spariyar07/status/2074142974095835518) — *near-term • Agent Design • 38 views • v1 enriched*  
-  Satyam Pariyar shares Kybernetes (github.com/pariyar07/kybernetes), a small OSS experiment: a 'loop governor' / runtime-adaptive control plane for agentic coding work, aimed at governing coding-agent execution loops at runtime.
 
 ### Recurring this week
 *No concepts gained new evidence in the last 14 days. Run mechanical discovery or seed curated concepts to populate this section.*
 
 ### Revisit from last month
-- **2025-12-07** — [Rohan Paul](https://x.com/rohanpaul_ai/status/1997405403987222642) — *near-term • Research • 64.7K views • v1 enriched*  
-  Rohan Paul summarizes Google's guide on context engineering for multi-agent systems (built around ADK). Instead of giant prompts, it compiles a view over state split into Working Context, Session, Memory, and Artifacts; each call rebuilds Working Context from instructions, selected session events, memory results, and artifact references. ADK controls context growth via compaction, filtering, and caching — summarizing old spans, dropping useless events, and reusing a stable prefix — and pushes large payloads out to Artifacts to keep systems fast, affordable, and less hallucination-prone.
-- **2025-12-08** — [Tom Dörr](https://x.com/tom_doerr/status/1996997820868366397) — *now • Skills & MCP • 127.8K views • v1 enriched*  
-  Tom Dörr shares 'awesome-claude-skills' (github.com/VoltAgent/awesome-claude-skills), a curated collection of official and community-built Claude skills.
+- **2025-10-29** — [Matt Pocock](https://x.com/mattpocockuk/status/1983255353597870285) — *near-term • Claude Code • 82.3K views • v1 enriched*  
+  Matt Pocock shares his favorite AI coding tip: add 'Be extremely concise. Sacrifice grammar for the sake of concision.' to your global claude.md file for noticeably better output.
+- **2025-10-31** — [Aadit Sheth](https://x.com/aaditsh/status/1983103310791159863) — *near-term • Management • 56.7K views • v1 enriched*  
+  Aadit Sheth shares a chart breaking down what being 'good with AI' looks like role by role, framed as a way to gauge whether a team is truly AI-fluent and pitched as useful for hiring and leading in 2025. The breakdown itself is in an attached chart image.
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 366 | 52.9% |
-| claude-code | 178 | 25.7% |
-| dev-practices | 233 | 33.7% |
-| skills-mcp | 129 | 18.6% |
-| prompting | 101 | 14.6% |
-| research | 138 | 19.9% |
-| industry | 93 | 13.4% |
-| management | 106 | 15.3% |
-| questionable | 126 | 18.2% |
-| general | 89 | 12.9% |
+| agent-design | 369 | 52.9% |
+| claude-code | 181 | 26.0% |
+| dev-practices | 236 | 33.9% |
+| skills-mcp | 131 | 18.8% |
+| prompting | 102 | 14.6% |
+| research | 140 | 20.1% |
+| industry | 96 | 13.8% |
+| management | 106 | 15.2% |
+| questionable | 129 | 18.5% |
+| general | 89 | 12.8% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-07-14 | Alvaro Videla | research | Alvaro Videla released LeetLLM, a free problem-based course with 48 le... |
+| 2026-07-14 | JoePro | skills-mcp | JoePro shares a heavily modified 'Frontend Design Skill' for Claude ai... |
+| 2026-07-14 | witcheer | research | witcheer summarizes a community survey on how people run Hermes day-to... |
+| 2026-07-14 | How To Prompt | industry | How To Prompt highlights an open-source, privacy-first Chromium fork b... |
+| 2026-07-14 | Alex Prompter | prompting | Alex Prompter's long-form guide argues you should extract a stronger m... |
 | 2026-07-13 | Jamon Holmgren | agent-design | Jamon Holmgren dumps his complete agentic coding setup as a 10+ point... |
 | 2026-07-09 | Kodus | dev-practices | Kodus (github.com/kodustech/kodus-ai) — open-source AGPLv3 self-hosted... |
 | 2026-07-07 | How To Prompt | agent-design | How To Prompt (hype framing: "China has killed the vector database ind... |
@@ -93,16 +98,15 @@
 | 2026-06-25 | hoeem | questionable | Engagement-bait post hyping a quote-tweeted "how to escape the rat rac... |
 | 2026-06-25 | Nav Toor | skills-mcp | Listicle-styled promo for MinerU, an open-source document-extraction t... |
 | 2026-06-25 | Akshay | agent-design | Breakdown of "loop engineering" (opening on a Karpathy quote about rem... |
-| 2026-06-25 | Hugging Models | research | Brief hype post: NVIDIA released an FP4 quantized MoE version of Qwen3... |
-| 2026-06-23 | Mario Zechner | research | Mario Zechner recommends a video dissecting Voxtral, a family of open-... |
-| 2026-06-23 | Dhilip Subramanian | industry | Dhilip Subramanian, a heavy dictation user (44,414 words via Wispr Flo... |
-| 2026-06-23 | 0xSero | research | 0xSero recommends an educational YouTube video explaining LoRA (Low-Ra... |
-| 2026-06-23 | Matthew Berman | agent-design | Matthew Berman announces a new Loop Library feature, Lazy Loops (aka D... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (366)
+### Agent Design (369)
+
+- [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — 2026-07-14: How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with an AI agent baked into the browser process: 53+ natural-language browser-automation tools, a built-in MCP server (drivable from Claude Code or Gemini CLI), a 'Cowork' mode that reads the web and writes local files in one task, scheduled autonomous agents, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), BYO Claude/GPT/Gemini keys or local Ollama, and heavier ad-blocking than Chrome. Hype framing but describes a real tool.
+
+- [Alex Prompter](https://x.com/alex_prompter/status/2074198124898181121) — 2026-07-14: Alex Prompter's long-form guide argues you should extract a stronger model's 'operating manual' (its reasoning procedures) as a portable system prompt before Fable 5 moves to pay-per-use, then run it on cheaper models like Opus 4.8 or Sonnet 5. Three steps: extract the manual with a detailed prompt, transplant it into a Claude Project or API system prompt, and verify with a trap question (a 5% vs 20% revenue-growth check). Includes a full fable_to_opus.py script. Ends with a paid skills-bundle promo.
 
 - [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610) — 2026-07-13: Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a customized workflow skill (he recommends grabbing Matt Pocock's skills); self-healing, greppable docs with a 7-line summary header; agents that actually run and test the app themselves; e2e tests plus docs on how/what to test; custom precommit linters with --fix that shell out to a cheaper LLM (Composer 2.5 or Sonnet) to actually fix rather than flag; cross-agent review (codex/claude/cursor, never the same model reviewing itself) at research/plan/implementation/wrap-up; handoff worksheets committed with git tags so another agent can finish the job; automatic end-of-session agent feedback docs he periodically ingests to improve workflows; a tools/bin folder of agent-authored scripts (e.g. an agent_review CLI wrapper); and periodic agent sweeps through recent commits. Practical, adoptable patterns for a team running coding agents.
 
@@ -808,6 +812,8 @@
 
 - [Rohan Paul](https://x.com/rohanpaul_ai/status/1997405403987222642) — 2025-12-07: Rohan Paul summarizes Google's guide on context engineering for multi-agent systems (built around ADK). Instead of giant prompts, it compiles a view over state split into Working Context, Session, Memory, and Artifacts; each call rebuilds Working Context from instructions, selected session events, memory results, and artifact references. ADK controls context growth via compaction, filtering, and caching — summarizing old spans, dropping useless events, and reusing a stable prefix — and pushes large payloads out to Artifacts to keep systems fast, affordable, and less hallucination-prone.
 
+- [Dan Shipper](https://x.com/danshipper/status/1986870518046200255) — 2025-11-08: Dan Shipper recommends Kieran Klaassen's Every piece 'Teach Your AI to Think Like a Senior Engineer' (every.to/source-code) as a masterclass on coding with AI.
+
 - [Pontus Abrahamsson](https://x.com/pontusab/status/1981700333857636550) — 2025-10-24: Shares structure of a multi-agent AI system: 10 agents (triage + 9 specialists), 43 tools grouped by domain, 12 visual canvas artifacts. Each agent gets only the tools it needs — clean and maintainable architecture.
 
 - [Ruslan Beskorovainiy](https://x.com/chemobyazan/status/1975326044271079509) — 2025-10-07: Reply sharing a GitHub repository link in response to a viral tweet about someone building an AI agent that replaced their entire team. Context/repo link contribution.
@@ -836,7 +842,11 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Claude Code (178)
+### Claude Code (181)
+
+- [JoePro](https://x.com/joepro/status/2076877282312954311) — 2026-07-14: JoePro shares a heavily modified 'Frontend Design Skill' for Claude aimed at producing production-grade UIs that don't look AI-generated: commit to a radical art direction, invent a functional signature element, define design tokens before layout, enforce accessibility and full interaction/failure states, and reject common AI-aesthetic tropes (Inter + purple gradients + rounded cards). Includes the complete skill markdown and how to install it as a custom Claude skill.
+
+- [Alex Prompter](https://x.com/alex_prompter/status/2074198124898181121) — 2026-07-14: Alex Prompter's long-form guide argues you should extract a stronger model's 'operating manual' (its reasoning procedures) as a portable system prompt before Fable 5 moves to pay-per-use, then run it on cheaper models like Opus 4.8 or Sonnet 5. Three steps: extract the manual with a detailed prompt, transplant it into a Claude Project or API system prompt, and verify with a trap question (a 5% vs 20% revenue-growth check). Includes a full fable_to_opus.py script. Ends with a paid skills-bundle promo.
 
 - [Anatoli Kopadze](https://x.com/anatolikopadze/status/2068328135611822149) — 2026-07-06: Anatoli Kopadze's widely-viewed piece 'Loops explained: Claude, GPT, Mira and what actually works' argues most people use AI the slow way (type, wait, fix, repeat by hand) and that the faster approach top AI engineers care about is building loops. Covers what loops are, how they work under the hood, when they're worth it vs a trap, and how to build a basic one in Claude or ChatGPT. Quote-tweets Peter Steinberger: you shouldn't be prompting coding agents, you should be designing loops that prompt your agents. (Includes some self-promotion for his X/Telegram.)
 
@@ -1174,11 +1184,13 @@
 
 - [Tom Dörr](https://x.com/tom_doerr/status/1996997820868366397) — 2025-12-08: Tom Dörr shares 'awesome-claude-skills' (github.com/VoltAgent/awesome-claude-skills), a curated collection of official and community-built Claude skills.
 
-- [Ray Fernando](https://x.com/rayfernando1337/status/1992848315541823490) — 2025-11-25: Links to the 'best Claude Skills breakdown' — a deep-dive blog post by Lee Han Chung covering Claude skills architecture and implementation details.
+- [Ray Fernando](https://x.com/rayfernando1337/status/1992848315541823490) — 2025-11-25: Ray Fernando recommends Lee Han-Chung's 'Claude Skills deep dive' blog post (leehanchung.github.io) as the best breakdown of Claude Skills he's seen.
 
-- [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Anthropic released a frontend-design plugin for Claude Code — demo shows Claude creating a music player app. Install via /plugin marketplace add anthropics/claude-code and /plugin install frontend-design@claude-code-plugins.
+- [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Thariq gives the setup commands for Anthropic's frontend-design plugin in Claude Code: add the marketplace with '/plugin marketplace add anthropics/claude-code', then '/plugin install frontend-design@claude-code-plugins'. Getting-started reply for the frontend-design plugin.
 
-- [Matt Pocock](https://x.com/mattpocockuk/status/1983255353597870285) — 2025-10-29: Matt Pocock's favourite AI coding tip: adding 'Be extremely concise. Sacrifice grammar for the sake of concision.' to his global claude.md file. Simple but effective prompt engineering for Claude Code.
+- [Dan Shipper](https://x.com/danshipper/status/1986870518046200255) — 2025-11-08: Dan Shipper recommends Kieran Klaassen's Every piece 'Teach Your AI to Think Like a Senior Engineer' (every.to/source-code) as a masterclass on coding with AI.
+
+- [Matt Pocock](https://x.com/mattpocockuk/status/1983255353597870285) — 2025-10-29: Matt Pocock shares his favorite AI coding tip: add 'Be extremely concise. Sacrifice grammar for the sake of concision.' to your global claude.md file for noticeably better output.
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1958179930262356032) — 2025-08-21: Matt Pocock praises Anthropic's context engineering template as 'really solid.' 908.4K views — massive engagement for a Claude-related post.
 
@@ -1194,7 +1206,11 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (233)
+### Dev Practices (236)
+
+- [Alvaro Videla](https://x.com/old_sound/status/2076932819008242037) — 2026-07-14: Alvaro Videla released LeetLLM, a free problem-based course with 48 lessons for building a small LLM inference engine for Apple Silicon in Swift and Metal — from dot products and GEMV through attention and token generation. Includes runnable exercises, a native macOS Studio app, and a companion book.
+
+- [JoePro](https://x.com/joepro/status/2076877282312954311) — 2026-07-14: JoePro shares a heavily modified 'Frontend Design Skill' for Claude aimed at producing production-grade UIs that don't look AI-generated: commit to a radical art direction, invent a functional signature element, define design tokens before layout, enforce accessibility and full interaction/failure states, and reject common AI-aesthetic tropes (Inter + purple gradients + rounded cards). Includes the complete skill markdown and how to install it as a custom Claude skill.
 
 - [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610) — 2026-07-13: Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a customized workflow skill (he recommends grabbing Matt Pocock's skills); self-healing, greppable docs with a 7-line summary header; agents that actually run and test the app themselves; e2e tests plus docs on how/what to test; custom precommit linters with --fix that shell out to a cheaper LLM (Composer 2.5 or Sonnet) to actually fix rather than flag; cross-agent review (codex/claude/cursor, never the same model reviewing itself) at research/plan/implementation/wrap-up; handoff worksheets committed with git tags so another agent can finish the job; automatic end-of-session agent feedback docs he periodically ingests to improve workflows; a tools/bin folder of agent-authored scripts (e.g. an agent_review CLI wrapper); and periodic agent sweeps through recent commits. Practical, adoptable patterns for a team running coding agents.
 
@@ -1628,7 +1644,9 @@
 
 - [AWS Containers](https://github.com/aws-containers/reinvent) — 2025-12-01: The aws-containers/reinvent GitHub repo collects AWS re:Invent 2025 Kubernetes Track assets — slides, the latest EKS launches, and demos from the sessions. A reference for what AWS shipped for Kubernetes/EKS at re:Invent 2025.
 
-- [Dan Shipper](https://x.com/danshipper/status/1986870518046200255) — 2025-11-08: Links to 'Teach Your AI to Think Like a Senior Engineer' on Every — a masterclass article by @kieranklaassen on coding with AI, covering advanced workflows and senior-level prompting patterns.
+- [Dan Shipper](https://x.com/danshipper/status/1986870518046200255) — 2025-11-08: Dan Shipper recommends Kieran Klaassen's Every piece 'Teach Your AI to Think Like a Senior Engineer' (every.to/source-code) as a masterclass on coding with AI.
+
+- [Matt Pocock](https://x.com/mattpocockuk/status/1983255353597870285) — 2025-10-29: Matt Pocock shares his favorite AI coding tip: add 'Be extremely concise. Sacrifice grammar for the sake of concision.' to your global claude.md file for noticeably better output.
 
 - [Thomas Ptacek](https://x.com/tqbf/status/1981439969370558803) — 2025-10-24: Thomas Ptacek recommends howcomplexsystems.fail as 'the most brain-altering piece of writing I've encountered' — context is reading the AWS postmortem and HN reaction. Classic systems thinking resource.
 
@@ -1662,7 +1680,11 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (129)
+### Skills & MCP (131)
+
+- [JoePro](https://x.com/joepro/status/2076877282312954311) — 2026-07-14: JoePro shares a heavily modified 'Frontend Design Skill' for Claude aimed at producing production-grade UIs that don't look AI-generated: commit to a radical art direction, invent a functional signature element, define design tokens before layout, enforce accessibility and full interaction/failure states, and reject common AI-aesthetic tropes (Inter + purple gradients + rounded cards). Includes the complete skill markdown and how to install it as a custom Claude skill.
+
+- [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — 2026-07-14: How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with an AI agent baked into the browser process: 53+ natural-language browser-automation tools, a built-in MCP server (drivable from Claude Code or Gemini CLI), a 'Cowork' mode that reads the web and writes local files in one task, scheduled autonomous agents, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), BYO Claude/GPT/Gemini keys or local Ollama, and heavier ad-blocking than Chrome. Hype framing but describes a real tool.
 
 - [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610) — 2026-07-13: Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a customized workflow skill (he recommends grabbing Matt Pocock's skills); self-healing, greppable docs with a 7-line summary header; agents that actually run and test the app themselves; e2e tests plus docs on how/what to test; custom precommit linters with --fix that shell out to a cheaper LLM (Composer 2.5 or Sonnet) to actually fix rather than flag; cross-agent review (codex/claude/cursor, never the same model reviewing itself) at research/plan/implementation/wrap-up; handoff worksheets committed with git tags so another agent can finish the job; automatic end-of-session agent feedback docs he periodically ingests to improve workflows; a tools/bin folder of agent-authored scripts (e.g. an agent_review CLI wrapper); and periodic agent sweeps through recent commits. Practical, adoptable patterns for a team running coding agents.
 
@@ -1918,11 +1940,15 @@
 
 - [Tom Dörr](https://x.com/tom_doerr/status/1996997820868366397) — 2025-12-08: Tom Dörr shares 'awesome-claude-skills' (github.com/VoltAgent/awesome-claude-skills), a curated collection of official and community-built Claude skills.
 
-- [Ray Fernando](https://x.com/rayfernando1337/status/1992848315541823490) — 2025-11-25: Links to the 'best Claude Skills breakdown' — a deep-dive blog post by Lee Han Chung covering Claude skills architecture and implementation details.
+- [Ray Fernando](https://x.com/rayfernando1337/status/1992848315541823490) — 2025-11-25: Ray Fernando recommends Lee Han-Chung's 'Claude Skills deep dive' blog post (leehanchung.github.io) as the best breakdown of Claude Skills he's seen.
 
-- [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Anthropic released a frontend-design plugin for Claude Code — demo shows Claude creating a music player app. Install via /plugin marketplace add anthropics/claude-code and /plugin install frontend-design@claude-code-plugins.
+- [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Thariq gives the setup commands for Anthropic's frontend-design plugin in Claude Code: add the marketplace with '/plugin marketplace add anthropics/claude-code', then '/plugin install frontend-design@claude-code-plugins'. Getting-started reply for the frontend-design plugin.
 
-### Prompting (101)
+### Prompting (102)
+
+- [JoePro](https://x.com/joepro/status/2076877282312954311) — 2026-07-14: JoePro shares a heavily modified 'Frontend Design Skill' for Claude aimed at producing production-grade UIs that don't look AI-generated: commit to a radical art direction, invent a functional signature element, define design tokens before layout, enforce accessibility and full interaction/failure states, and reject common AI-aesthetic tropes (Inter + purple gradients + rounded cards). Includes the complete skill markdown and how to install it as a custom Claude skill.
+
+- [Alex Prompter](https://x.com/alex_prompter/status/2074198124898181121) — 2026-07-14: Alex Prompter's long-form guide argues you should extract a stronger model's 'operating manual' (its reasoning procedures) as a portable system prompt before Fable 5 moves to pay-per-use, then run it on cheaper models like Opus 4.8 or Sonnet 5. Three steps: extract the manual with a detailed prompt, transplant it into a Claude Project or API system prompt, and verify with a trap question (a 5% vs 20% revenue-growth check). Includes a full fable_to_opus.py script. Ends with a paid skills-bundle promo.
 
 - [kaize](https://x.com/0x_kaize/status/2073743517155774641) — 2026-07-06: kaize shares a 'Loop engineering' reading list, arguing 2026 agents are less about smarter prompts and more about longer runs — the real questions are whether an agent can recover from a failed step, control spend, and know when to stop. Curated links: Addy Osmani (addyosmani.com/blog/loop-engineering), Firecrawl (firecrawl.dev/blog/loop-engineering), Oracle 'What is the AI agent loop', OpenAI 'Harness engineering', and Martin Fowler 'Harness engineering for coding agent users'.
 
@@ -2106,15 +2132,13 @@
 
 - [Rohan Paul](https://x.com/rohanpaul_ai/status/1997405403987222642) — 2025-12-07: Rohan Paul summarizes Google's guide on context engineering for multi-agent systems (built around ADK). Instead of giant prompts, it compiles a view over state split into Working Context, Session, Memory, and Artifacts; each call rebuilds Working Context from instructions, selected session events, memory results, and artifact references. ADK controls context growth via compaction, filtering, and caching — summarizing old spans, dropping useless events, and reusing a stable prefix — and pushes large payloads out to Artifacts to keep systems fast, affordable, and less hallucination-prone.
 
-- [George](https://x.com/nurijanian/status/1988335427447869565) — 2025-11-12: Shares a Claude prompt for critical product requirements analysis — acts as 'extremely tough and unreasonable product executive' who identifies cross-team collaboration gaps, conflicting requirements, maintainability issues, and strategic pitfalls.
+- [George from prodmgmt.world](https://x.com/nurijanian/status/1988335427447869565) — 2025-11-12: George (prodmgmt.world) shares a 'tough, unreasonable product executive' critique prompt he runs product decisions through: it skeptically stress-tests requirements across cross-team collaboration, conflicting requirements, maintainability, strategic implications, clarity, and feasibility, returning structured critiques (section/issue/impact/suggestion). Ends with a paid prompt-library link.
 
-- [Dan Shipper](https://x.com/danshipper/status/1986870518046200255) — 2025-11-08: Links to 'Teach Your AI to Think Like a Senior Engineer' on Every — a masterclass article by @kieranklaassen on coding with AI, covering advanced workflows and senior-level prompting patterns.
+- [Prompter](https://x.com/promptllm/status/1986173095896621150) — 2025-11-06: Prompter claims elite performers all use neuro-linguistic programming (NLP) and offers a prompt that 'teaches you NLP.' Engagement-bait framing with an unsubstantiated claim; the actual prompt is not shown in the post.
 
-- [Prompter](https://x.com/promptllm/status/1986173095896621150) — 2025-11-06: Claims elite performers all use Neuro-Linguistic Programming (NLP) and shares a prompt that teaches NLP techniques. Generic self-improvement content with AI angle.
+- [Charly Wargnier](https://x.com/datachaz/status/1984276199309484409) — 2025-11-01: Charly Wargnier boosts a claim that someone put in 1,000 hours of prompt engineering to distill the 6 prompt patterns that actually matter. Hook post pointing to the six patterns (detailed in the referenced content).
 
-- [Charly Wargnier](https://x.com/datachaz/status/1984276199309484409) — 2025-11-01: Highlights someone who spent 1000 hours on prompt engineering to distill the 6 patterns that actually matter. High engagement (347K views) suggests the content resonated.
-
-- [Matt Pocock](https://x.com/mattpocockuk/status/1983255353597870285) — 2025-10-29: Matt Pocock's favourite AI coding tip: adding 'Be extremely concise. Sacrifice grammar for the sake of concision.' to his global claude.md file. Simple but effective prompt engineering for Claude Code.
+- [Matt Pocock](https://x.com/mattpocockuk/status/1983255353597870285) — 2025-10-29: Matt Pocock shares his favorite AI coding tip: add 'Be extremely concise. Sacrifice grammar for the sake of concision.' to your global claude.md file for noticeably better output.
 
 - [Prompter](https://x.com/promptllm/status/1974518025211818291) — 2025-10-05: Prompt for learning systems thinking — claims the prompt transformed how they think about interconnected problems.
 
@@ -2126,7 +2150,11 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's instruction.md — a reference file for AI coding assistants, showing how to structure agent instructions in dotfiles.
 
-### Research (138)
+### Research (140)
+
+- [Alvaro Videla](https://x.com/old_sound/status/2076932819008242037) — 2026-07-14: Alvaro Videla released LeetLLM, a free problem-based course with 48 lessons for building a small LLM inference engine for Apple Silicon in Swift and Metal — from dot products and GEMV through attention and token generation. Includes runnable exercises, a native macOS Studio app, and a companion book.
+
+- [witcheer](https://x.com/witcheer/status/2076717324585898343) — 2026-07-14: witcheer summarizes a community survey on how people run Hermes day-to-day: 250+ replies (70 real answers, 60 full setups), hand-tallied into six headline numbers covering daily-driver models, mixture-of-agents/local models, and memory layers (built-in vs Obsidian vaults). The six-number breakdown is in an accompanying image.
 
 - [0xSero](https://x.com/0xsero/status/2073651251594854573) — 2026-07-06: 0xSero (quote-tweeting Rohan Paul on a Meta paper showing quantized reasoning models often fail because compression makes them doubt a correct answer instead of finishing) reports experimenting with penalizing 'self-doubt' words during generation — claiming ~30% fewer output tokens — plus improving tok/s via CPU offloading.
 
@@ -2404,7 +2432,11 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: 15-part thread explaining the 'stunning, simple explanation behind matrix multiplication' — breaks down the most crucial idea behind modern machine learning. 1M views.
 
-### Industry (93)
+### Industry (96)
+
+- [witcheer](https://x.com/witcheer/status/2076717324585898343) — 2026-07-14: witcheer summarizes a community survey on how people run Hermes day-to-day: 250+ replies (70 real answers, 60 full setups), hand-tallied into six headline numbers covering daily-driver models, mixture-of-agents/local models, and memory layers (built-in vs Obsidian vaults). The six-number breakdown is in an accompanying image.
+
+- [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — 2026-07-14: How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with an AI agent baked into the browser process: 53+ natural-language browser-automation tools, a built-in MCP server (drivable from Claude Code or Gemini CLI), a 'Cowork' mode that reads the web and writes local files in one task, scheduled autonomous agents, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), BYO Claude/GPT/Gemini keys or local Ollama, and heavier ad-blocking than Chrome. Hype framing but describes a real tool.
 
 - [Aaron Levie](https://x.com/levie/status/2073138135014502777) — 2026-07-05: Aaron Levie (Box CEO) argues the battle in AI is shaping up to be a battle for context: agent effectiveness comes down to having the right domain expertise, access to the right context and tools, and being embedded in workflows users can easily review and incorporate. The platforms that capture and leverage the best context within their agents — and pick the right model per task — will be where agents do their best work (coding, legal, support agents at scale). This is why the applied-AI layer is worth far more than being an 'LLM wrapper': the value is in organizing the critical knowledge.
 
@@ -2585,6 +2617,8 @@
 - [Kermit](https://x.com/fixer9999/status/2000332286055850464) — 2025-12-14: A bare link post sharing Perplexity's 'Perplexity at Work' PDF report (r2cdn.perplexity.ai/pdf/pplx-at-work.pdf) — Perplexity's enterprise/workplace positioning material. Low engagement; minimal commentary.
 
 - [AWS Containers](https://github.com/aws-containers/reinvent) — 2025-12-01: The aws-containers/reinvent GitHub repo collects AWS re:Invent 2025 Kubernetes Track assets — slides, the latest EKS launches, and demos from the sessions. A reference for what AWS shipped for Kubernetes/EKS at re:Invent 2025.
+
+- [Aadit Sheth](https://x.com/aaditsh/status/1983103310791159863) — 2025-10-31: Aadit Sheth shares a chart breaking down what being 'good with AI' looks like role by role, framed as a way to gauge whether a team is truly AI-fluent and pitched as useful for hiring and leading in 2025. The breakdown itself is in an attached chart image.
 
 - [maxleedev](https://x.com/maxleedev/status/1962938769914658984) — 2025-09-03: Built a canvas interface for LLMs — responding to the need for 'fork chat' like git branches. Lets you explore alternate conversation timelines without ruining the main thread. 2.1M views.
 
@@ -2768,11 +2802,11 @@
 
 - [Abhishek Singh](https://x.com/0xlelouch_/status/2002673253912113644) — 2025-12-22: A reflective essay on career fulfillment in software engineering: you don't magically know whether backend, frontend, infra, ML, startups, big tech, or management will fulfill you — you only find out through reps. Early on people confuse novelty (new frameworks, jobs, titles) with fulfillment; real self-knowledge is earned by shipping boring features, debugging 3am outages, owning systems, and sticking with things long enough to feel the responsibility.
 
-- [Dave Kline](https://x.com/dklineii/status/1994761636742050226) — 2025-11-29: The 7 Deadly Sins of New Managers — explains why 60% fail in their first leadership role. Management/leadership content with image breakdown.
+- [Dave Kline](https://x.com/dklineii/status/1994761636742050226) — 2025-11-29: Dave Kline's thread on 'The 7 Deadly Sins of New Managers,' framed around the claim that ~60% of people fail in their first leadership role. This post is the hook for a list of common first-time-manager mistakes (detailed items continue in the thread/graphic).
 
-- [George](https://x.com/nurijanian/status/1988335427447869565) — 2025-11-12: Shares a Claude prompt for critical product requirements analysis — acts as 'extremely tough and unreasonable product executive' who identifies cross-team collaboration gaps, conflicting requirements, maintainability issues, and strategic pitfalls.
+- [George from prodmgmt.world](https://x.com/nurijanian/status/1988335427447869565) — 2025-11-12: George (prodmgmt.world) shares a 'tough, unreasonable product executive' critique prompt he runs product decisions through: it skeptically stress-tests requirements across cross-team collaboration, conflicting requirements, maintainability, strategic implications, clarity, and feasibility, returning structured critiques (section/issue/impact/suggestion). Ends with a paid prompt-library link.
 
-- [Aadit Sheth](https://x.com/aaditsh/status/1983103310791159863) — 2025-10-31: Shares a chart breaking down what 'good with AI' looks like role by role — a framework for assessing AI fluency across an organization. Useful for hiring and team evaluation.
+- [Aadit Sheth](https://x.com/aaditsh/status/1983103310791159863) — 2025-10-31: Aadit Sheth shares a chart breaking down what being 'good with AI' looks like role by role, framed as a way to gauge whether a team is truly AI-fluent and pitched as useful for hiring and leading in 2025. The breakdown itself is in an attached chart image.
 
 - [William Meijer](https://x.com/williameijer/status/1982843287095717935) — 2025-10-28: Essay on 'unkind truths' as key element of Elon Musk's entrepreneurial success — argues extreme commitment to truth makes relationships dysfunctional but systems functional, while extreme kindness does the reverse.
 
@@ -2806,7 +2840,11 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
 
-### Questionable (126)
+### Questionable (129)
+
+- [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — 2026-07-14: How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with an AI agent baked into the browser process: 53+ natural-language browser-automation tools, a built-in MCP server (drivable from Claude Code or Gemini CLI), a 'Cowork' mode that reads the web and writes local files in one task, scheduled autonomous agents, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), BYO Claude/GPT/Gemini keys or local Ollama, and heavier ad-blocking than Chrome. Hype framing but describes a real tool.
+
+- [Alex Prompter](https://x.com/alex_prompter/status/2074198124898181121) — 2026-07-14: Alex Prompter's long-form guide argues you should extract a stronger model's 'operating manual' (its reasoning procedures) as a portable system prompt before Fable 5 moves to pay-per-use, then run it on cheaper models like Opus 4.8 or Sonnet 5. Three steps: extract the manual with a detailed prompt, transplant it into a Claude Project or API system prompt, and verify with a trap question (a 5% vs 20% revenue-growth check). Includes a full fable_to_opus.py script. Ends with a paid skills-bundle promo.
 
 - [How To Prompt](https://x.com/howtoprompt__/status/2074122800961614184) — 2026-07-07: How To Prompt (hype framing: "China has killed the vector database industry") flags Tencent's newly open-sourced TencentDB Agent Memory — local long-term memory for AI agents that runs 100% on plain SQLite with no external vector DB or cloud APIs. Claims 61% fewer tokens and PersonaMem accuracy 48%->76%. Uses a layered 'semantic pyramid' (L0 conversation -> L1 atom -> L2 scenario -> L3 persona) stored as inspectable markdown + Mermaid graphs instead of opaque vector compression, with drill-back to raw logs by node_id. ~5.1k GitHub stars.
 
@@ -3054,7 +3092,9 @@
 
 - [Jainam Parmar](https://x.com/aiwithjainam/status/1999815060965994896) — 2025-12-14: An engagement-styled post ('Chain of Thought is dead') claiming that 'Atom of Thought' prompting made models 30-40% more accurate on complex reasoning tasks, pitched as a technique that will change how people use ChatGPT and Claude. Hype framing, but the underlying Atom-of-Thought prompting idea is a real reasoning technique worth a look.
 
-- [Prompter](https://x.com/promptllm/status/1986173095896621150) — 2025-11-06: Claims elite performers all use Neuro-Linguistic Programming (NLP) and shares a prompt that teaches NLP techniques. Generic self-improvement content with AI angle.
+- [Prompter](https://x.com/promptllm/status/1986173095896621150) — 2025-11-06: Prompter claims elite performers all use neuro-linguistic programming (NLP) and offers a prompt that 'teaches you NLP.' Engagement-bait framing with an unsubstantiated claim; the actual prompt is not shown in the post.
+
+- [Charly Wargnier](https://x.com/datachaz/status/1984276199309484409) — 2025-11-01: Charly Wargnier boosts a claim that someone put in 1,000 hours of prompt engineering to distill the 6 prompt patterns that actually matter. Hook post pointing to the six patterns (detailed in the referenced content).
 
 - [Prompter](https://x.com/promptllm/status/1974518025211818291) — 2025-10-05: Prompt for learning systems thinking — claims the prompt transformed how they think about interconnected problems.
 
@@ -3252,6 +3292,21 @@
 ## Full Chronological List
 
 ### Jul 2026
+
+- **2026-07-14** | [Alvaro Videla](https://x.com/old_sound/status/2076932819008242037) | research, dev-practices
+  Alvaro Videla released LeetLLM, a free problem-based course with 48 lessons for building a small LLM inference engine for Apple Silicon in Swift and Metal — from dot products and GEMV through attention and token generation. Includes runnable exercises, a native macOS Studio app, and a companion book.
+
+- **2026-07-14** | [JoePro](https://x.com/joepro/status/2076877282312954311) | skills-mcp, claude-code, prompting, dev-practices
+  JoePro shares a heavily modified 'Frontend Design Skill' for Claude aimed at producing production-grade UIs that don't look AI-generated: commit to a radical art direction, invent a functional signature element, define design tokens before layout, enforce accessibility and full interaction/failure states, and reject common AI-aesthetic tropes (Inter + purple gradients + rounded cards). Includes the complete skill markdown and how to install it as a custom Claude skill.
+
+- **2026-07-14** | [witcheer](https://x.com/witcheer/status/2076717324585898343) | research, industry
+  witcheer summarizes a community survey on how people run Hermes day-to-day: 250+ replies (70 real answers, 60 full setups), hand-tallied into six headline numbers covering daily-driver models, mixture-of-agents/local models, and memory layers (built-in vs Obsidian vaults). The six-number breakdown is in an accompanying image.
+
+- **2026-07-14** | [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) | industry, agent-design, skills-mcp, questionable
+  How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with an AI agent baked into the browser process: 53+ natural-language browser-automation tools, a built-in MCP server (drivable from Claude Code or Gemini CLI), a 'Cowork' mode that reads the web and writes local files in one task, scheduled autonomous agents, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), BYO Claude/GPT/Gemini keys or local Ollama, and heavier ad-blocking than Chrome. Hype framing but describes a real tool.
+
+- **2026-07-14** | [Alex Prompter](https://x.com/alex_prompter/status/2074198124898181121) | prompting, claude-code, agent-design, questionable
+  Alex Prompter's long-form guide argues you should extract a stronger model's 'operating manual' (its reasoning procedures) as a portable system prompt before Fable 5 moves to pay-per-use, then run it on cheaper models like Opus 4.8 or Sonnet 5. Three steps: extract the manual with a detailed prompt, transplant it into a Claude Project or API system prompt, and verify with a trap question (a 5% vs 20% revenue-growth check). Includes a full fable_to_opus.py script. Ends with a paid skills-bundle promo.
 
 - **2026-07-13** | [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610) | agent-design, dev-practices, skills-mcp
   Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a customized workflow skill (he recommends grabbing Matt Pocock's skills); self-healing, greppable docs with a 7-line summary header; agents that actually run and test the app themselves; e2e tests plus docs on how/what to test; custom precommit linters with --fix that shell out to a cheaper LLM (Composer 2.5 or Sonnet) to actually fix rather than flag; cross-agent review (codex/claude/cursor, never the same model reviewing itself) at research/plan/implementation/wrap-up; handoff worksheets committed with git tags so another agent can finish the job; automatic end-of-session agent feedback docs he periodically ingests to improve workflows; a tools/bin folder of agent-authored scripts (e.g. an agent_review CLI wrapper); and periodic agent sweeps through recent commits. Practical, adoptable patterns for a team running coding agents.
@@ -5160,33 +5215,33 @@
 ### Nov 2025
 
 - **2025-11-29** | [Dave Kline](https://x.com/dklineii/status/1994761636742050226) | management
-  The 7 Deadly Sins of New Managers — explains why 60% fail in their first leadership role. Management/leadership content with image breakdown.
+  Dave Kline's thread on 'The 7 Deadly Sins of New Managers,' framed around the claim that ~60% of people fail in their first leadership role. This post is the hook for a list of common first-time-manager mistakes (detailed items continue in the thread/graphic).
 
 - **2025-11-25** | [Ray Fernando](https://x.com/rayfernando1337/status/1992848315541823490) | skills-mcp, claude-code
-  Links to the 'best Claude Skills breakdown' — a deep-dive blog post by Lee Han Chung covering Claude skills architecture and implementation details.
+  Ray Fernando recommends Lee Han-Chung's 'Claude Skills deep dive' blog post (leehanchung.github.io) as the best breakdown of Claude Skills he's seen.
 
 - **2025-11-15** | [Thariq](https://x.com/trq212/status/1989061939625144388) | claude-code, skills-mcp
-  Anthropic released a frontend-design plugin for Claude Code — demo shows Claude creating a music player app. Install via /plugin marketplace add anthropics/claude-code and /plugin install frontend-design@claude-code-plugins.
+  Thariq gives the setup commands for Anthropic's frontend-design plugin in Claude Code: add the marketplace with '/plugin marketplace add anthropics/claude-code', then '/plugin install frontend-design@claude-code-plugins'. Getting-started reply for the frontend-design plugin.
 
-- **2025-11-12** | [George](https://x.com/nurijanian/status/1988335427447869565) | prompting, management
-  Shares a Claude prompt for critical product requirements analysis — acts as 'extremely tough and unreasonable product executive' who identifies cross-team collaboration gaps, conflicting requirements, maintainability issues, and strategic pitfalls.
+- **2025-11-12** | [George from prodmgmt.world](https://x.com/nurijanian/status/1988335427447869565) | prompting, management
+  George (prodmgmt.world) shares a 'tough, unreasonable product executive' critique prompt he runs product decisions through: it skeptically stress-tests requirements across cross-team collaboration, conflicting requirements, maintainability, strategic implications, clarity, and feasibility, returning structured critiques (section/issue/impact/suggestion). Ends with a paid prompt-library link.
 
-- **2025-11-08** | [Dan Shipper](https://x.com/danshipper/status/1986870518046200255) | dev-practices, prompting
-  Links to 'Teach Your AI to Think Like a Senior Engineer' on Every — a masterclass article by @kieranklaassen on coding with AI, covering advanced workflows and senior-level prompting patterns.
+- **2025-11-08** | [Dan Shipper](https://x.com/danshipper/status/1986870518046200255) | dev-practices, claude-code, agent-design
+  Dan Shipper recommends Kieran Klaassen's Every piece 'Teach Your AI to Think Like a Senior Engineer' (every.to/source-code) as a masterclass on coding with AI.
 
-- **2025-11-06** | [Prompter](https://x.com/promptllm/status/1986173095896621150) | prompting, questionable
-  Claims elite performers all use Neuro-Linguistic Programming (NLP) and shares a prompt that teaches NLP techniques. Generic self-improvement content with AI angle.
+- **2025-11-06** | [Prompter](https://x.com/promptllm/status/1986173095896621150) | questionable, prompting
+  Prompter claims elite performers all use neuro-linguistic programming (NLP) and offers a prompt that 'teaches you NLP.' Engagement-bait framing with an unsubstantiated claim; the actual prompt is not shown in the post.
 
-- **2025-11-01** | [Charly Wargnier](https://x.com/datachaz/status/1984276199309484409) | prompting
-  Highlights someone who spent 1000 hours on prompt engineering to distill the 6 patterns that actually matter. High engagement (347K views) suggests the content resonated.
+- **2025-11-01** | [Charly Wargnier](https://x.com/datachaz/status/1984276199309484409) | prompting, questionable
+  Charly Wargnier boosts a claim that someone put in 1,000 hours of prompt engineering to distill the 6 prompt patterns that actually matter. Hook post pointing to the six patterns (detailed in the referenced content).
 
 ### Oct 2025
 
-- **2025-10-31** | [Aadit Sheth](https://x.com/aaditsh/status/1983103310791159863) | management
-  Shares a chart breaking down what 'good with AI' looks like role by role — a framework for assessing AI fluency across an organization. Useful for hiring and team evaluation.
+- **2025-10-31** | [Aadit Sheth](https://x.com/aaditsh/status/1983103310791159863) | management, industry
+  Aadit Sheth shares a chart breaking down what being 'good with AI' looks like role by role, framed as a way to gauge whether a team is truly AI-fluent and pitched as useful for hiring and leading in 2025. The breakdown itself is in an attached chart image.
 
-- **2025-10-29** | [Matt Pocock](https://x.com/mattpocockuk/status/1983255353597870285) | prompting, claude-code
-  Matt Pocock's favourite AI coding tip: adding 'Be extremely concise. Sacrifice grammar for the sake of concision.' to his global claude.md file. Simple but effective prompt engineering for Claude Code.
+- **2025-10-29** | [Matt Pocock](https://x.com/mattpocockuk/status/1983255353597870285) | claude-code, prompting, dev-practices
+  Matt Pocock shares his favorite AI coding tip: add 'Be extremely concise. Sacrifice grammar for the sake of concision.' to your global claude.md file for noticeably better output.
 
 - **2025-10-28** | [William Meijer](https://x.com/williameijer/status/1982843287095717935) | management
   Essay on 'unkind truths' as key element of Elon Musk's entrepreneurial success — argues extreme commitment to truth makes relationships dysfunctional but systems functional, while extreme kindness does the reverse.
