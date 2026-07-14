@@ -6,53 +6,53 @@
 ---
 ## Morning view
 
-*Generated 2026-07-14T16:39:04Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-14T17:02:50Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-09** — [Kodus](https://kodus.io/self-hosted-ai-code-review/) — *now • Dev Practices • v1 enriched*  
   Kodus (github.com/kodustech/kodus-ai) — open-source AGPLv3 self-hosted AI code review. The full PR-review pipeline (Kody agent) runs on your own infrastructure with bring-your-own-LLM: it posts line-anchored inline comments covering logic/security/performance (or 'deep mode' with parallel bug/security/performance specialists), keeps source code, LLM calls, and audit trails inside your VPC, and supports GitHub Enterprise Server / GitLab Self-Managed / Bitbucket DC and air-gapped deploys. Jeremy flagged it to evaluate for work code reviews.
+- **2026-07-14** — [Alvaro Videla](https://x.com/old_sound/status/2076932819008242037) — *near-term • Research • 46.8K views • v1 enriched*  
+  Alvaro Videla released LeetLLM (github.com/videlalvaro/leet-llm) — a free, problem-based course of 48 lessons for building a small LLM inference engine on Apple Silicon in Swift and Metal, progressing from dot products and GEMV through attention and token generation.
 - **2026-07-14** — [JoePro](https://x.com/joepro/status/2076877282312954311) — *near-term • Skills & MCP • 53K views • v1 enriched*  
-  JoePro shares a heavily modified 'Frontend Design Skill' for Claude aimed at producing production-grade UIs that don't look AI-generated: commit to a radical art direction, invent a functional signature element, define design tokens before layout, enforce accessibility and full interaction/failure states, and reject common AI-aesthetic tropes (Inter + purple gradients + rounded cards). Includes the complete skill markdown and how to install it as a custom Claude skill.
-- **2026-07-14** — [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — *near-term • Industry • 33.9K views • v1 enriched*  
-  How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with an AI agent baked into the browser process: 53+ natural-language browser-automation tools, a built-in MCP server (drivable from Claude Code or Gemini CLI), a 'Cowork' mode that reads the web and writes local files in one task, scheduled autonomous agents, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), BYO Claude/GPT/Gemini keys or local Ollama, and heavier ad-blocking than Chrome. Hype framing but describes a real tool.
-- **2026-07-14** — [Alex Prompter](https://x.com/alex_prompter/status/2074198124898181121) — *near-term • Prompting • 939.5K views • v1 enriched*  
-  Alex Prompter's long-form guide argues you should extract a stronger model's 'operating manual' (its reasoning procedures) as a portable system prompt before Fable 5 moves to pay-per-use, then run it on cheaper models like Opus 4.8 or Sonnet 5. Three steps: extract the manual with a detailed prompt, transplant it into a Claude Project or API system prompt, and verify with a trap question (a 5% vs 20% revenue-growth check). Includes a full fable_to_opus.py script. Ends with a paid skills-bundle promo.
-- **2026-07-13** — [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610) — *near-term • Agent Design • v1 enriched*  
-  Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a customized workflow skill (he recommends grabbing Matt Pocock's skills); self-healing, greppable docs with a 7-line summary header; agents that actually run and test the app themselves; e2e tests plus docs on how/what to test; custom precommit linters with --fix that shell out to a cheaper LLM (Composer 2.5 or Sonnet) to actually fix rather than flag; cross-agent review (codex/claude/cursor, never the same model reviewing itself) at research/plan/implementation/wrap-up; handoff worksheets committed with git tags so another agent can finish the job; automatic end-of-session agent feedback docs he periodically ingests to improve workflows; a tools/bin folder of agent-authored scripts (e.g. an agent_review CLI wrapper); and periodic agent sweeps through recent commits. Practical, adoptable patterns for a team running coding agents.
+  JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skill spec) engineered to produce distinctive, production-grade UIs that avoid recognizable AI-generated tropes — covering success criteria (signature visual identity, complete states, WCAG AA accessibility, token-driven design systems) and a context-gathering routine before writing code.
+- **2026-07-14** — [witcheer](https://x.com/witcheer/status/2076717324585898343) — *near-term • Research • 143.3K views • v1 enriched*  
+  witcheer crowdsourced and hand-tallied 250+ replies on how people run Hermes (Nous Research's open model), distilling community local-deployment setups into six summary stats.
+- **2026-07-14** — [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — *near-term • Agent Design • 33.9K views • v1 enriched*  
+  How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with a native AI agent, built-in MCP server, Cowork-style web+local-file agents, scheduled autopilot tasks, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), and local-model (Ollama) support — drivable from Claude Code or Gemini CLI. Engagement-framed but describes a real agentic-browser tool worth evaluating.
 
 ### Recurring this week
 *No concepts gained new evidence in the last 14 days. Run mechanical discovery or seed curated concepts to populate this section.*
 
 ### Revisit from last month
-- **2025-10-29** — [Matt Pocock](https://x.com/mattpocockuk/status/1983255353597870285) — *near-term • Claude Code • 82.3K views • v1 enriched*  
-  Matt Pocock shares his favorite AI coding tip: add 'Be extremely concise. Sacrifice grammar for the sake of concision.' to your global claude.md file for noticeably better output.
-- **2025-10-31** — [Aadit Sheth](https://x.com/aaditsh/status/1983103310791159863) — *near-term • Management • 56.7K views • v1 enriched*  
-  Aadit Sheth shares a chart breaking down what being 'good with AI' looks like role by role, framed as a way to gauge whether a team is truly AI-fluent and pitched as useful for hiring and leading in 2025. The breakdown itself is in an attached chart image.
+- **2025-10-21** — [Raul Junco](https://x.com/rauljuncov/status/1980243241783197925) — *near-term • Dev Practices • 130.7K views • v1 enriched*  
+  Raul Junco frames system design as a staircase to climb step by step rather than jumping to distributed systems: foundations (networking, databases, caching, APIs), then mechanics (queues, consistency, observability, failures), then architecture (trade-offs, evolution, resilience).
+- **2025-10-21** — [Ray Fernando](https://x.com/rayfernando1337/status/1980180030971150690) — *near-term • Research • 32.4K views • v1 enriched*  
+  Ray Fernando shares DeepSeek-OCR (github.com/deepseek-ai/DeepSeek-OCR) — DeepSeek's 'Contexts Optical Compression' approach that encodes long text contexts as visual tokens for efficient OCR and document understanding.
 
 ---
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 369 | 52.9% |
-| claude-code | 181 | 26.0% |
-| dev-practices | 236 | 33.9% |
-| skills-mcp | 131 | 18.8% |
+| agent-design | 368 | 52.8% |
+| claude-code | 180 | 25.8% |
+| dev-practices | 237 | 34.0% |
+| skills-mcp | 132 | 18.9% |
 | prompting | 102 | 14.6% |
 | research | 140 | 20.1% |
 | industry | 96 | 13.8% |
 | management | 106 | 15.2% |
-| questionable | 129 | 18.5% |
-| general | 89 | 12.8% |
+| questionable | 130 | 18.7% |
+| general | 90 | 12.9% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
-| 2026-07-14 | Alvaro Videla | research | Alvaro Videla released LeetLLM, a free problem-based course with 48 le... |
-| 2026-07-14 | JoePro | skills-mcp | JoePro shares a heavily modified 'Frontend Design Skill' for Claude ai... |
-| 2026-07-14 | witcheer | research | witcheer summarizes a community survey on how people run Hermes day-to... |
-| 2026-07-14 | How To Prompt | industry | How To Prompt highlights an open-source, privacy-first Chromium fork b... |
-| 2026-07-14 | Alex Prompter | prompting | Alex Prompter's long-form guide argues you should extract a stronger m... |
+| 2026-07-14 | Alvaro Videla | research | Alvaro Videla released LeetLLM (github.com/videlalvaro/leet-llm) — a f... |
+| 2026-07-14 | JoePro | skills-mcp | JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skil... |
+| 2026-07-14 | witcheer | research | witcheer crowdsourced and hand-tallied 250+ replies on how people run... |
+| 2026-07-14 | How To Prompt | agent-design | How To Prompt highlights an open-source, privacy-first Chromium fork b... |
+| 2026-07-14 | Alex Prompter | prompting | Alex Prompter's thread pitches 'cloning' Fable 5's reasoning into Opus... |
 | 2026-07-13 | Jamon Holmgren | agent-design | Jamon Holmgren dumps his complete agentic coding setup as a 10+ point... |
 | 2026-07-09 | Kodus | dev-practices | Kodus (github.com/kodustech/kodus-ai) — open-source AGPLv3 self-hosted... |
 | 2026-07-07 | How To Prompt | agent-design | How To Prompt (hype framing: "China has killed the vector database ind... |
@@ -102,11 +102,9 @@
 ---
 ## Posts by Topic
 
-### Agent Design (369)
+### Agent Design (368)
 
-- [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — 2026-07-14: How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with an AI agent baked into the browser process: 53+ natural-language browser-automation tools, a built-in MCP server (drivable from Claude Code or Gemini CLI), a 'Cowork' mode that reads the web and writes local files in one task, scheduled autonomous agents, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), BYO Claude/GPT/Gemini keys or local Ollama, and heavier ad-blocking than Chrome. Hype framing but describes a real tool.
-
-- [Alex Prompter](https://x.com/alex_prompter/status/2074198124898181121) — 2026-07-14: Alex Prompter's long-form guide argues you should extract a stronger model's 'operating manual' (its reasoning procedures) as a portable system prompt before Fable 5 moves to pay-per-use, then run it on cheaper models like Opus 4.8 or Sonnet 5. Three steps: extract the manual with a detailed prompt, transplant it into a Claude Project or API system prompt, and verify with a trap question (a 5% vs 20% revenue-growth check). Includes a full fable_to_opus.py script. Ends with a paid skills-bundle promo.
+- [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — 2026-07-14: How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with a native AI agent, built-in MCP server, Cowork-style web+local-file agents, scheduled autopilot tasks, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), and local-model (Ollama) support — drivable from Claude Code or Gemini CLI. Engagement-framed but describes a real agentic-browser tool worth evaluating.
 
 - [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610) — 2026-07-13: Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a customized workflow skill (he recommends grabbing Matt Pocock's skills); self-healing, greppable docs with a 7-line summary header; agents that actually run and test the app themselves; e2e tests plus docs on how/what to test; custom precommit linters with --fix that shell out to a cheaper LLM (Composer 2.5 or Sonnet) to actually fix rather than flag; cross-agent review (codex/claude/cursor, never the same model reviewing itself) at research/plan/implementation/wrap-up; handoff worksheets committed with git tags so another agent can finish the job; automatic end-of-session agent feedback docs he periodically ingests to improve workflows; a tools/bin folder of agent-authored scripts (e.g. an agent_review CLI wrapper); and periodic agent sweeps through recent commits. Practical, adoptable patterns for a team running coding agents.
 
@@ -814,7 +812,7 @@
 
 - [Dan Shipper](https://x.com/danshipper/status/1986870518046200255) — 2025-11-08: Dan Shipper recommends Kieran Klaassen's Every piece 'Teach Your AI to Think Like a Senior Engineer' (every.to/source-code) as a masterclass on coding with AI.
 
-- [Pontus Abrahamsson](https://x.com/pontusab/status/1981700333857636550) — 2025-10-24: Shares structure of a multi-agent AI system: 10 agents (triage + 9 specialists), 43 tools grouped by domain, 12 visual canvas artifacts. Each agent gets only the tools it needs — clean and maintainable architecture.
+- [Pontus Abrahamsson](https://x.com/pontusab/status/1981700333857636550) — 2025-10-24: Pontus Abrahamsson points to midday-ai/ai-sdk-tools (github.com/midday-ai/ai-sdk-tools) — a set of example AI SDK tools/integrations for building agent tooling.
 
 - [Ruslan Beskorovainiy](https://x.com/chemobyazan/status/1975326044271079509) — 2025-10-07: Reply sharing a GitHub repository link in response to a viral tweet about someone building an AI agent that replaced their entire team. Context/repo link contribution.
 
@@ -842,11 +840,9 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Claude Code (181)
+### Claude Code (180)
 
-- [JoePro](https://x.com/joepro/status/2076877282312954311) — 2026-07-14: JoePro shares a heavily modified 'Frontend Design Skill' for Claude aimed at producing production-grade UIs that don't look AI-generated: commit to a radical art direction, invent a functional signature element, define design tokens before layout, enforce accessibility and full interaction/failure states, and reject common AI-aesthetic tropes (Inter + purple gradients + rounded cards). Includes the complete skill markdown and how to install it as a custom Claude skill.
-
-- [Alex Prompter](https://x.com/alex_prompter/status/2074198124898181121) — 2026-07-14: Alex Prompter's long-form guide argues you should extract a stronger model's 'operating manual' (its reasoning procedures) as a portable system prompt before Fable 5 moves to pay-per-use, then run it on cheaper models like Opus 4.8 or Sonnet 5. Three steps: extract the manual with a detailed prompt, transplant it into a Claude Project or API system prompt, and verify with a trap question (a 5% vs 20% revenue-growth check). Includes a full fable_to_opus.py script. Ends with a paid skills-bundle promo.
+- [Alex Prompter](https://x.com/alex_prompter/status/2074198124898181121) — 2026-07-14: Alex Prompter's thread pitches 'cloning' Fable 5's reasoning into Opus 4.8 before Fable 5 shifts to pay-per-use credits — extracting a model's 'operating manual' as a portable prompt and transplanting it onto a cheaper model to keep the way it thinks rather than the model itself. Engagement-framed but a real prompt-portability technique.
 
 - [Anatoli Kopadze](https://x.com/anatolikopadze/status/2068328135611822149) — 2026-07-06: Anatoli Kopadze's widely-viewed piece 'Loops explained: Claude, GPT, Mira and what actually works' argues most people use AI the slow way (type, wait, fix, repeat by hand) and that the faster approach top AI engineers care about is building loops. Covers what loops are, how they work under the hood, when they're worth it vs a trap, and how to build a basic one in Claude or ChatGPT. Quote-tweets Peter Steinberger: you shouldn't be prompting coding agents, you should be designing loops that prompt your agents. (Includes some self-promotion for his X/Telegram.)
 
@@ -1206,11 +1202,11 @@
 
 - [dir-assistant](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant — a tool for using AI assistants with directory context, enabling AI to understand and work with entire codebases.
 
-### Dev Practices (236)
+### Dev Practices (237)
 
-- [Alvaro Videla](https://x.com/old_sound/status/2076932819008242037) — 2026-07-14: Alvaro Videla released LeetLLM, a free problem-based course with 48 lessons for building a small LLM inference engine for Apple Silicon in Swift and Metal — from dot products and GEMV through attention and token generation. Includes runnable exercises, a native macOS Studio app, and a companion book.
+- [Alvaro Videla](https://x.com/old_sound/status/2076932819008242037) — 2026-07-14: Alvaro Videla released LeetLLM (github.com/videlalvaro/leet-llm) — a free, problem-based course of 48 lessons for building a small LLM inference engine on Apple Silicon in Swift and Metal, progressing from dot products and GEMV through attention and token generation.
 
-- [JoePro](https://x.com/joepro/status/2076877282312954311) — 2026-07-14: JoePro shares a heavily modified 'Frontend Design Skill' for Claude aimed at producing production-grade UIs that don't look AI-generated: commit to a radical art direction, invent a functional signature element, define design tokens before layout, enforce accessibility and full interaction/failure states, and reject common AI-aesthetic tropes (Inter + purple gradients + rounded cards). Includes the complete skill markdown and how to install it as a custom Claude skill.
+- [JoePro](https://x.com/joepro/status/2076877282312954311) — 2026-07-14: JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skill spec) engineered to produce distinctive, production-grade UIs that avoid recognizable AI-generated tropes — covering success criteria (signature visual identity, complete states, WCAG AA accessibility, token-driven design systems) and a context-gathering routine before writing code.
 
 - [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610) — 2026-07-13: Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a customized workflow skill (he recommends grabbing Matt Pocock's skills); self-healing, greppable docs with a 7-line summary header; agents that actually run and test the app themselves; e2e tests plus docs on how/what to test; custom precommit linters with --fix that shell out to a cheaper LLM (Composer 2.5 or Sonnet) to actually fix rather than flag; cross-agent review (codex/claude/cursor, never the same model reviewing itself) at research/plan/implementation/wrap-up; handoff worksheets committed with git tags so another agent can finish the job; automatic end-of-session agent feedback docs he periodically ingests to improve workflows; a tools/bin folder of agent-authored scripts (e.g. an agent_review CLI wrapper); and periodic agent sweeps through recent commits. Practical, adoptable patterns for a team running coding agents.
 
@@ -1648,9 +1644,11 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1983255353597870285) — 2025-10-29: Matt Pocock shares his favorite AI coding tip: add 'Be extremely concise. Sacrifice grammar for the sake of concision.' to your global claude.md file for noticeably better output.
 
-- [Thomas Ptacek](https://x.com/tqbf/status/1981439969370558803) — 2025-10-24: Thomas Ptacek recommends howcomplexsystems.fail as 'the most brain-altering piece of writing I've encountered' — context is reading the AWS postmortem and HN reaction. Classic systems thinking resource.
+- [Pontus Abrahamsson](https://x.com/pontusab/status/1981700333857636550) — 2025-10-24: Pontus Abrahamsson points to midday-ai/ai-sdk-tools (github.com/midday-ai/ai-sdk-tools) — a set of example AI SDK tools/integrations for building agent tooling.
 
-- [Raul Junco](https://x.com/rauljuncov/status/1980243241783197925) — 2025-10-21: System design as a learning staircase: Step 1 Foundations (networking, databases, caching, APIs), Step 2 Mechanics (queues, consistency, observability, failures), Step 3 Architecture (trade-offs, evolution, resilience). 'Most people collect patterns. Few develop principles.'
+- [Thomas H. Ptacek](https://x.com/tqbf/status/1981439969370558803) — 2025-10-24: Thomas Ptacek, reacting to the AWS outage postmortem and its HN discussion, evangelizes 'How Complex Systems Fail' (howcomplexsystems.fail) as essential reading on how failures emerge in complex socio-technical systems.
+
+- [Raul Junco](https://x.com/rauljuncov/status/1980243241783197925) — 2025-10-21: Raul Junco frames system design as a staircase to climb step by step rather than jumping to distributed systems: foundations (networking, databases, caching, APIs), then mechanics (queues, consistency, observability, failures), then architecture (trade-offs, evolution, resilience).
 
 - [Vivek Galatage](https://x.com/vivekgalatage/status/1974894313948758373) — 2025-10-07: Shares Richard Hipp's 2024 lecture on SQLite internals — 'every engineer should watch this.' Covers how SQLite works from the creator himself, relevant since browsers/Chromium rely heavily on SQLite.
 
@@ -1680,11 +1678,11 @@
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1811332713107923156) — 2024-07-10: Matt Pocock on pre-commit hooks: 'Give me fewer guard rails, and more safety nets.' Concise dev philosophy take.
 
-### Skills & MCP (131)
+### Skills & MCP (132)
 
-- [JoePro](https://x.com/joepro/status/2076877282312954311) — 2026-07-14: JoePro shares a heavily modified 'Frontend Design Skill' for Claude aimed at producing production-grade UIs that don't look AI-generated: commit to a radical art direction, invent a functional signature element, define design tokens before layout, enforce accessibility and full interaction/failure states, and reject common AI-aesthetic tropes (Inter + purple gradients + rounded cards). Includes the complete skill markdown and how to install it as a custom Claude skill.
+- [JoePro](https://x.com/joepro/status/2076877282312954311) — 2026-07-14: JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skill spec) engineered to produce distinctive, production-grade UIs that avoid recognizable AI-generated tropes — covering success criteria (signature visual identity, complete states, WCAG AA accessibility, token-driven design systems) and a context-gathering routine before writing code.
 
-- [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — 2026-07-14: How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with an AI agent baked into the browser process: 53+ natural-language browser-automation tools, a built-in MCP server (drivable from Claude Code or Gemini CLI), a 'Cowork' mode that reads the web and writes local files in one task, scheduled autonomous agents, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), BYO Claude/GPT/Gemini keys or local Ollama, and heavier ad-blocking than Chrome. Hype framing but describes a real tool.
+- [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — 2026-07-14: How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with a native AI agent, built-in MCP server, Cowork-style web+local-file agents, scheduled autopilot tasks, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), and local-model (Ollama) support — drivable from Claude Code or Gemini CLI. Engagement-framed but describes a real agentic-browser tool worth evaluating.
 
 - [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610) — 2026-07-13: Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a customized workflow skill (he recommends grabbing Matt Pocock's skills); self-healing, greppable docs with a 7-line summary header; agents that actually run and test the app themselves; e2e tests plus docs on how/what to test; custom precommit linters with --fix that shell out to a cheaper LLM (Composer 2.5 or Sonnet) to actually fix rather than flag; cross-agent review (codex/claude/cursor, never the same model reviewing itself) at research/plan/implementation/wrap-up; handoff worksheets committed with git tags so another agent can finish the job; automatic end-of-session agent feedback docs he periodically ingests to improve workflows; a tools/bin folder of agent-authored scripts (e.g. an agent_review CLI wrapper); and periodic agent sweeps through recent commits. Practical, adoptable patterns for a team running coding agents.
 
@@ -1944,11 +1942,13 @@
 
 - [Thariq](https://x.com/trq212/status/1989061939625144388) — 2025-11-15: Thariq gives the setup commands for Anthropic's frontend-design plugin in Claude Code: add the marketplace with '/plugin marketplace add anthropics/claude-code', then '/plugin install frontend-design@claude-code-plugins'. Getting-started reply for the frontend-design plugin.
 
+- [Pontus Abrahamsson](https://x.com/pontusab/status/1981700333857636550) — 2025-10-24: Pontus Abrahamsson points to midday-ai/ai-sdk-tools (github.com/midday-ai/ai-sdk-tools) — a set of example AI SDK tools/integrations for building agent tooling.
+
 ### Prompting (102)
 
-- [JoePro](https://x.com/joepro/status/2076877282312954311) — 2026-07-14: JoePro shares a heavily modified 'Frontend Design Skill' for Claude aimed at producing production-grade UIs that don't look AI-generated: commit to a radical art direction, invent a functional signature element, define design tokens before layout, enforce accessibility and full interaction/failure states, and reject common AI-aesthetic tropes (Inter + purple gradients + rounded cards). Includes the complete skill markdown and how to install it as a custom Claude skill.
+- [JoePro](https://x.com/joepro/status/2076877282312954311) — 2026-07-14: JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skill spec) engineered to produce distinctive, production-grade UIs that avoid recognizable AI-generated tropes — covering success criteria (signature visual identity, complete states, WCAG AA accessibility, token-driven design systems) and a context-gathering routine before writing code.
 
-- [Alex Prompter](https://x.com/alex_prompter/status/2074198124898181121) — 2026-07-14: Alex Prompter's long-form guide argues you should extract a stronger model's 'operating manual' (its reasoning procedures) as a portable system prompt before Fable 5 moves to pay-per-use, then run it on cheaper models like Opus 4.8 or Sonnet 5. Three steps: extract the manual with a detailed prompt, transplant it into a Claude Project or API system prompt, and verify with a trap question (a 5% vs 20% revenue-growth check). Includes a full fable_to_opus.py script. Ends with a paid skills-bundle promo.
+- [Alex Prompter](https://x.com/alex_prompter/status/2074198124898181121) — 2026-07-14: Alex Prompter's thread pitches 'cloning' Fable 5's reasoning into Opus 4.8 before Fable 5 shifts to pay-per-use credits — extracting a model's 'operating manual' as a portable prompt and transplanting it onto a cheaper model to keep the way it thinks rather than the model itself. Engagement-framed but a real prompt-portability technique.
 
 - [kaize](https://x.com/0x_kaize/status/2073743517155774641) — 2026-07-06: kaize shares a 'Loop engineering' reading list, arguing 2026 agents are less about smarter prompts and more about longer runs — the real questions are whether an agent can recover from a failed step, control spend, and know when to stop. Curated links: Addy Osmani (addyosmani.com/blog/loop-engineering), Firecrawl (firecrawl.dev/blog/loop-engineering), Oracle 'What is the AI agent loop', OpenAI 'Harness engineering', and Martin Fowler 'Harness engineering for coding agent users'.
 
@@ -2152,9 +2152,9 @@
 
 ### Research (140)
 
-- [Alvaro Videla](https://x.com/old_sound/status/2076932819008242037) — 2026-07-14: Alvaro Videla released LeetLLM, a free problem-based course with 48 lessons for building a small LLM inference engine for Apple Silicon in Swift and Metal — from dot products and GEMV through attention and token generation. Includes runnable exercises, a native macOS Studio app, and a companion book.
+- [Alvaro Videla](https://x.com/old_sound/status/2076932819008242037) — 2026-07-14: Alvaro Videla released LeetLLM (github.com/videlalvaro/leet-llm) — a free, problem-based course of 48 lessons for building a small LLM inference engine on Apple Silicon in Swift and Metal, progressing from dot products and GEMV through attention and token generation.
 
-- [witcheer](https://x.com/witcheer/status/2076717324585898343) — 2026-07-14: witcheer summarizes a community survey on how people run Hermes day-to-day: 250+ replies (70 real answers, 60 full setups), hand-tallied into six headline numbers covering daily-driver models, mixture-of-agents/local models, and memory layers (built-in vs Obsidian vaults). The six-number breakdown is in an accompanying image.
+- [witcheer](https://x.com/witcheer/status/2076717324585898343) — 2026-07-14: witcheer crowdsourced and hand-tallied 250+ replies on how people run Hermes (Nous Research's open model), distilling community local-deployment setups into six summary stats.
 
 - [0xSero](https://x.com/0xsero/status/2073651251594854573) — 2026-07-06: 0xSero (quote-tweeting Rohan Paul on a Meta paper showing quantized reasoning models often fail because compression makes them doubt a correct answer instead of finishing) reports experimenting with penalizing 'self-doubt' words during generation — claiming ~30% fewer output tokens — plus improving tok/s via CPU offloading.
 
@@ -2412,7 +2412,7 @@
 
 - [Rohan Paul](https://x.com/rohanpaul_ai/status/1997405403987222642) — 2025-12-07: Rohan Paul summarizes Google's guide on context engineering for multi-agent systems (built around ADK). Instead of giant prompts, it compiles a view over state split into Working Context, Session, Memory, and Artifacts; each call rebuilds Working Context from instructions, selected session events, memory results, and artifact references. ADK controls context growth via compaction, filtering, and caching — summarizing old spans, dropping useless events, and reusing a stable prefix — and pushes large payloads out to Artifacts to keep systems fast, affordable, and less hallucination-prone.
 
-- [Ray Fernando](https://x.com/rayfernando1337/status/1980180030971150690) — 2025-10-21: DeepSeek-OCR announced — optical compression for AI that processes 200K pages/day on one GPU, 33M pages/day on 20 nodes. Called 'the JPEG moment for AI' — makes AI memory architectures viable by solving training data bottlenecks.
+- [Ray Fernando](https://x.com/rayfernando1337/status/1980180030971150690) — 2025-10-21: Ray Fernando shares DeepSeek-OCR (github.com/deepseek-ai/DeepSeek-OCR) — DeepSeek's 'Contexts Optical Compression' approach that encodes long text contexts as visual tokens for efficient OCR and document understanding.
 
 - [Philip Vollet](https://x.com/philipvollet/status/1955945448860008655) — 2025-08-15: Introduces Elysia — open-source agentic RAG platform powered by DSPy. Features transparent decision-tree agents, preference learning, intelligent data categorization, and full process transparency. Claims it will 'retire 90% of RAG systems.'
 
@@ -2434,9 +2434,7 @@
 
 ### Industry (96)
 
-- [witcheer](https://x.com/witcheer/status/2076717324585898343) — 2026-07-14: witcheer summarizes a community survey on how people run Hermes day-to-day: 250+ replies (70 real answers, 60 full setups), hand-tallied into six headline numbers covering daily-driver models, mixture-of-agents/local models, and memory layers (built-in vs Obsidian vaults). The six-number breakdown is in an accompanying image.
-
-- [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — 2026-07-14: How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with an AI agent baked into the browser process: 53+ natural-language browser-automation tools, a built-in MCP server (drivable from Claude Code or Gemini CLI), a 'Cowork' mode that reads the web and writes local files in one task, scheduled autonomous agents, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), BYO Claude/GPT/Gemini keys or local Ollama, and heavier ad-blocking than Chrome. Hype framing but describes a real tool.
+- [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — 2026-07-14: How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with a native AI agent, built-in MCP server, Cowork-style web+local-file agents, scheduled autopilot tasks, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), and local-model (Ollama) support — drivable from Claude Code or Gemini CLI. Engagement-framed but describes a real agentic-browser tool worth evaluating.
 
 - [Aaron Levie](https://x.com/levie/status/2073138135014502777) — 2026-07-05: Aaron Levie (Box CEO) argues the battle in AI is shaping up to be a battle for context: agent effectiveness comes down to having the right domain expertise, access to the right context and tools, and being embedded in workflows users can easily review and incorporate. The platforms that capture and leverage the best context within their agents — and pick the right model per task — will be where agents do their best work (coding, legal, support agents at scale). This is why the applied-AI layer is worth far more than being an 'LLM wrapper': the value is in organizing the critical knowledge.
 
@@ -2619,6 +2617,8 @@
 - [AWS Containers](https://github.com/aws-containers/reinvent) — 2025-12-01: The aws-containers/reinvent GitHub repo collects AWS re:Invent 2025 Kubernetes Track assets — slides, the latest EKS launches, and demos from the sessions. A reference for what AWS shipped for Kubernetes/EKS at re:Invent 2025.
 
 - [Aadit Sheth](https://x.com/aaditsh/status/1983103310791159863) — 2025-10-31: Aadit Sheth shares a chart breaking down what being 'good with AI' looks like role by role, framed as a way to gauge whether a team is truly AI-fluent and pitched as useful for hiring and leading in 2025. The breakdown itself is in an attached chart image.
+
+- [Ray Fernando](https://x.com/rayfernando1337/status/1980180030971150690) — 2025-10-21: Ray Fernando shares DeepSeek-OCR (github.com/deepseek-ai/DeepSeek-OCR) — DeepSeek's 'Contexts Optical Compression' approach that encodes long text contexts as visual tokens for efficient OCR and document understanding.
 
 - [maxleedev](https://x.com/maxleedev/status/1962938769914658984) — 2025-09-03: Built a canvas interface for LLMs — responding to the need for 'fork chat' like git branches. Lets you explore alternate conversation timelines without ruining the main thread. 2.1M views.
 
@@ -2808,7 +2808,7 @@
 
 - [Aadit Sheth](https://x.com/aaditsh/status/1983103310791159863) — 2025-10-31: Aadit Sheth shares a chart breaking down what being 'good with AI' looks like role by role, framed as a way to gauge whether a team is truly AI-fluent and pitched as useful for hiring and leading in 2025. The breakdown itself is in an attached chart image.
 
-- [William Meijer](https://x.com/williameijer/status/1982843287095717935) — 2025-10-28: Essay on 'unkind truths' as key element of Elon Musk's entrepreneurial success — argues extreme commitment to truth makes relationships dysfunctional but systems functional, while extreme kindness does the reverse.
+- [William Meijer](https://x.com/williameijer/status/1982843287095717935) — 2025-10-28: William Meijer argues that a willingness to voice 'unkind truths' — blunt, uncomfortable candor — is a key element of Elon Musk's entrepreneurial success.
 
 - [Aakash Gupta](https://x.com/aakashg0/status/1979517333015334953) — 2025-10-19: Shares Jeff Bezos's framework for distinguishing reversible vs irreversible decisions — Type 1 (irreversible, need careful deliberation) vs Type 2 (reversible, should be made quickly). Management/decision-making content.
 
@@ -2840,11 +2840,11 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Links to superengineer.net blog summarizing Elon Musk's DFX (Design for X) method.
 
-### Questionable (129)
+### Questionable (130)
 
-- [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — 2026-07-14: How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with an AI agent baked into the browser process: 53+ natural-language browser-automation tools, a built-in MCP server (drivable from Claude Code or Gemini CLI), a 'Cowork' mode that reads the web and writes local files in one task, scheduled autonomous agents, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), BYO Claude/GPT/Gemini keys or local Ollama, and heavier ad-blocking than Chrome. Hype framing but describes a real tool.
+- [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — 2026-07-14: How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with a native AI agent, built-in MCP server, Cowork-style web+local-file agents, scheduled autopilot tasks, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), and local-model (Ollama) support — drivable from Claude Code or Gemini CLI. Engagement-framed but describes a real agentic-browser tool worth evaluating.
 
-- [Alex Prompter](https://x.com/alex_prompter/status/2074198124898181121) — 2026-07-14: Alex Prompter's long-form guide argues you should extract a stronger model's 'operating manual' (its reasoning procedures) as a portable system prompt before Fable 5 moves to pay-per-use, then run it on cheaper models like Opus 4.8 or Sonnet 5. Three steps: extract the manual with a detailed prompt, transplant it into a Claude Project or API system prompt, and verify with a trap question (a 5% vs 20% revenue-growth check). Includes a full fable_to_opus.py script. Ends with a paid skills-bundle promo.
+- [Alex Prompter](https://x.com/alex_prompter/status/2074198124898181121) — 2026-07-14: Alex Prompter's thread pitches 'cloning' Fable 5's reasoning into Opus 4.8 before Fable 5 shifts to pay-per-use credits — extracting a model's 'operating manual' as a portable prompt and transplanting it onto a cheaper model to keep the way it thinks rather than the model itself. Engagement-framed but a real prompt-portability technique.
 
 - [How To Prompt](https://x.com/howtoprompt__/status/2074122800961614184) — 2026-07-07: How To Prompt (hype framing: "China has killed the vector database industry") flags Tencent's newly open-sourced TencentDB Agent Memory — local long-term memory for AI agents that runs 100% on plain SQLite with no external vector DB or cloud APIs. Claims 61% fewer tokens and PersonaMem accuracy 48%->76%. Uses a layered 'semantic pyramid' (L0 conversation -> L1 atom -> L2 scenario -> L3 persona) stored as inspectable markdown + Mermaid graphs instead of opaque vector compression, with drill-back to raw logs by node_id. ~5.1k GitHub stars.
 
@@ -3096,11 +3096,15 @@
 
 - [Charly Wargnier](https://x.com/datachaz/status/1984276199309484409) — 2025-11-01: Charly Wargnier boosts a claim that someone put in 1,000 hours of prompt engineering to distill the 6 prompt patterns that actually matter. Hook post pointing to the six patterns (detailed in the referenced content).
 
+- [Raul Junco](https://x.com/rauljuncov/status/1980243241783197925) — 2025-10-21: Raul Junco frames system design as a staircase to climb step by step rather than jumping to distributed systems: foundations (networking, databases, caching, APIs), then mechanics (queues, consistency, observability, failures), then architecture (trade-offs, evolution, resilience).
+
 - [Prompter](https://x.com/promptllm/status/1974518025211818291) — 2025-10-05: Prompt for learning systems thinking — claims the prompt transformed how they think about interconnected problems.
 
 - [Prompter](https://x.com/promptllm/status/1974206336511394165) — 2025-10-04: Another NLP (Neuro-Linguistic Programming) prompt — claims high performers all use NLP and this prompt teaches advanced NLP techniques. Same engagement farming pattern as their Nov 6 post.
 
-### General (93)
+### General (94)
+
+- [witcheer](https://x.com/witcheer/status/2076717324585898343) — 2026-07-14: witcheer crowdsourced and hand-tallied 250+ replies on how people run Hermes (Nous Research's open model), distilling community local-deployment setups into six summary stats.
 
 - [Dami-Defi](https://x.com/damidefi/status/2073397918447423966) — 2026-07-05: Dami-Defi promotes an Obsidian community plugin (19,184 downloads) that fixes Obsidian's long-open YouTube-embed bug, plus a workflow to turn a messy YouTube-note vault into a visual, AI-powered knowledge system using AI-friendly metadata and automatic thumbnails — arguing structured knowledge bases outperform scattered notes in AI-native workflows. Credits Paul's Obsidian Systems (YouTube).
 
@@ -3294,19 +3298,19 @@
 ### Jul 2026
 
 - **2026-07-14** | [Alvaro Videla](https://x.com/old_sound/status/2076932819008242037) | research, dev-practices
-  Alvaro Videla released LeetLLM, a free problem-based course with 48 lessons for building a small LLM inference engine for Apple Silicon in Swift and Metal — from dot products and GEMV through attention and token generation. Includes runnable exercises, a native macOS Studio app, and a companion book.
+  Alvaro Videla released LeetLLM (github.com/videlalvaro/leet-llm) — a free, problem-based course of 48 lessons for building a small LLM inference engine on Apple Silicon in Swift and Metal, progressing from dot products and GEMV through attention and token generation.
 
-- **2026-07-14** | [JoePro](https://x.com/joepro/status/2076877282312954311) | skills-mcp, claude-code, prompting, dev-practices
-  JoePro shares a heavily modified 'Frontend Design Skill' for Claude aimed at producing production-grade UIs that don't look AI-generated: commit to a radical art direction, invent a functional signature element, define design tokens before layout, enforce accessibility and full interaction/failure states, and reject common AI-aesthetic tropes (Inter + purple gradients + rounded cards). Includes the complete skill markdown and how to install it as a custom Claude skill.
+- **2026-07-14** | [JoePro](https://x.com/joepro/status/2076877282312954311) | skills-mcp, prompting, dev-practices
+  JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skill spec) engineered to produce distinctive, production-grade UIs that avoid recognizable AI-generated tropes — covering success criteria (signature visual identity, complete states, WCAG AA accessibility, token-driven design systems) and a context-gathering routine before writing code.
 
-- **2026-07-14** | [witcheer](https://x.com/witcheer/status/2076717324585898343) | research, industry
-  witcheer summarizes a community survey on how people run Hermes day-to-day: 250+ replies (70 real answers, 60 full setups), hand-tallied into six headline numbers covering daily-driver models, mixture-of-agents/local models, and memory layers (built-in vs Obsidian vaults). The six-number breakdown is in an accompanying image.
+- **2026-07-14** | [witcheer](https://x.com/witcheer/status/2076717324585898343) | research, general
+  witcheer crowdsourced and hand-tallied 250+ replies on how people run Hermes (Nous Research's open model), distilling community local-deployment setups into six summary stats.
 
-- **2026-07-14** | [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) | industry, agent-design, skills-mcp, questionable
-  How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with an AI agent baked into the browser process: 53+ natural-language browser-automation tools, a built-in MCP server (drivable from Claude Code or Gemini CLI), a 'Cowork' mode that reads the web and writes local files in one task, scheduled autonomous agents, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), BYO Claude/GPT/Gemini keys or local Ollama, and heavier ad-blocking than Chrome. Hype framing but describes a real tool.
+- **2026-07-14** | [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) | agent-design, skills-mcp, industry, questionable
+  How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with a native AI agent, built-in MCP server, Cowork-style web+local-file agents, scheduled autopilot tasks, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), and local-model (Ollama) support — drivable from Claude Code or Gemini CLI. Engagement-framed but describes a real agentic-browser tool worth evaluating.
 
-- **2026-07-14** | [Alex Prompter](https://x.com/alex_prompter/status/2074198124898181121) | prompting, claude-code, agent-design, questionable
-  Alex Prompter's long-form guide argues you should extract a stronger model's 'operating manual' (its reasoning procedures) as a portable system prompt before Fable 5 moves to pay-per-use, then run it on cheaper models like Opus 4.8 or Sonnet 5. Three steps: extract the manual with a detailed prompt, transplant it into a Claude Project or API system prompt, and verify with a trap question (a 5% vs 20% revenue-growth check). Includes a full fable_to_opus.py script. Ends with a paid skills-bundle promo.
+- **2026-07-14** | [Alex Prompter](https://x.com/alex_prompter/status/2074198124898181121) | prompting, claude-code, questionable
+  Alex Prompter's thread pitches 'cloning' Fable 5's reasoning into Opus 4.8 before Fable 5 shifts to pay-per-use credits — extracting a model's 'operating manual' as a portable prompt and transplanting it onto a cheaper model to keep the way it thinks rather than the model itself. Engagement-framed but a real prompt-portability technique.
 
 - **2026-07-13** | [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610) | agent-design, dev-practices, skills-mcp
   Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a customized workflow skill (he recommends grabbing Matt Pocock's skills); self-healing, greppable docs with a 7-line summary header; agents that actually run and test the app themselves; e2e tests plus docs on how/what to test; custom precommit linters with --fix that shell out to a cheaper LLM (Composer 2.5 or Sonnet) to actually fix rather than flag; cross-agent review (codex/claude/cursor, never the same model reviewing itself) at research/plan/implementation/wrap-up; handoff worksheets committed with git tags so another agent can finish the job; automatic end-of-session agent feedback docs he periodically ingests to improve workflows; a tools/bin folder of agent-authored scripts (e.g. an agent_review CLI wrapper); and periodic agent sweeps through recent commits. Practical, adoptable patterns for a team running coding agents.
@@ -5244,22 +5248,22 @@
   Matt Pocock shares his favorite AI coding tip: add 'Be extremely concise. Sacrifice grammar for the sake of concision.' to your global claude.md file for noticeably better output.
 
 - **2025-10-28** | [William Meijer](https://x.com/williameijer/status/1982843287095717935) | management
-  Essay on 'unkind truths' as key element of Elon Musk's entrepreneurial success — argues extreme commitment to truth makes relationships dysfunctional but systems functional, while extreme kindness does the reverse.
+  William Meijer argues that a willingness to voice 'unkind truths' — blunt, uncomfortable candor — is a key element of Elon Musk's entrepreneurial success.
 
-- **2025-10-24** | [Pontus Abrahamsson](https://x.com/pontusab/status/1981700333857636550) | agent-design
-  Shares structure of a multi-agent AI system: 10 agents (triage + 9 specialists), 43 tools grouped by domain, 12 visual canvas artifacts. Each agent gets only the tools it needs — clean and maintainable architecture.
+- **2025-10-24** | [Pontus Abrahamsson](https://x.com/pontusab/status/1981700333857636550) | agent-design, skills-mcp, dev-practices
+  Pontus Abrahamsson points to midday-ai/ai-sdk-tools (github.com/midday-ai/ai-sdk-tools) — a set of example AI SDK tools/integrations for building agent tooling.
 
-- **2025-10-24** | [Thomas Ptacek](https://x.com/tqbf/status/1981439969370558803) | dev-practices
-  Thomas Ptacek recommends howcomplexsystems.fail as 'the most brain-altering piece of writing I've encountered' — context is reading the AWS postmortem and HN reaction. Classic systems thinking resource.
+- **2025-10-24** | [Thomas H. Ptacek](https://x.com/tqbf/status/1981439969370558803) | dev-practices
+  Thomas Ptacek, reacting to the AWS outage postmortem and its HN discussion, evangelizes 'How Complex Systems Fail' (howcomplexsystems.fail) as essential reading on how failures emerge in complex socio-technical systems.
 
 - **2025-10-24** | [Hayes](https://x.com/neatprompts/status/1981241949173825687) | general
   [Account suspended]
 
-- **2025-10-21** | [Raul Junco](https://x.com/rauljuncov/status/1980243241783197925) | dev-practices
-  System design as a learning staircase: Step 1 Foundations (networking, databases, caching, APIs), Step 2 Mechanics (queues, consistency, observability, failures), Step 3 Architecture (trade-offs, evolution, resilience). 'Most people collect patterns. Few develop principles.'
+- **2025-10-21** | [Raul Junco](https://x.com/rauljuncov/status/1980243241783197925) | dev-practices, questionable
+  Raul Junco frames system design as a staircase to climb step by step rather than jumping to distributed systems: foundations (networking, databases, caching, APIs), then mechanics (queues, consistency, observability, failures), then architecture (trade-offs, evolution, resilience).
 
-- **2025-10-21** | [Ray Fernando](https://x.com/rayfernando1337/status/1980180030971150690) | research
-  DeepSeek-OCR announced — optical compression for AI that processes 200K pages/day on one GPU, 33M pages/day on 20 nodes. Called 'the JPEG moment for AI' — makes AI memory architectures viable by solving training data bottlenecks.
+- **2025-10-21** | [Ray Fernando](https://x.com/rayfernando1337/status/1980180030971150690) | research, industry
+  Ray Fernando shares DeepSeek-OCR (github.com/deepseek-ai/DeepSeek-OCR) — DeepSeek's 'Contexts Optical Compression' approach that encodes long text contexts as visual tokens for efficient OCR and document understanding.
 
 - **2025-10-19** | [Aakash Gupta](https://x.com/aakashg0/status/1979517333015334953) | management
   Shares Jeff Bezos's framework for distinguishing reversible vs irreversible decisions — Type 1 (irreversible, need careful deliberation) vs Type 2 (reversible, should be made quickly). Management/decision-making content.
