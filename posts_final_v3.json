@@ -3771,24 +3771,26 @@
     "handle": "@garrytan",
     "subject": "Post by Garry Tan on X",
     "url": "https://x.com/garrytan/status/2057946119725080878",
-    "summary": "Garry Tan linking a Forbes profile (forbes.com/sites/josipamajic/2026/04/12/the-yc-chief-who-codes-10000-lines-a-day-has-a-simple-secret) about his agentic coding workflow — '10,000 lines a day' framing. Tease tweet; the substance is in the article.",
+    "summary": "Garry Tan's 'simple secret to agentic coding,' linking a Forbes profile ('The YC Chief Who Codes 10,000 Lines A Day Has A Simple Secret').",
     "topics": [
       "claude-code",
-      "agent-design",
+      "management",
       "dev-practices"
     ],
     "audience": [
-      "me",
       "dev-team",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "114.5K",
+    "views": "117.8K",
     "notes": "",
     "enriched": true,
-    "content": "Garry Tan: My simple secret to agentic coding. Linking Forbes article: 'The YC chief who codes 10,000 lines a day has a simple secret.'",
-    "enrichment_status": "legacy-ok"
+    "content": "Garry Tan @garrytan. 'My simple secret to agentic coding.' Links Forbes profile 'The YC Chief Who Codes 10,000 Lines A Day Has A Simple Secret' (josipamajic, 2026/04/12). 117.8K views. claude-code, management, dev-practices.\n\nForbes: the YC chief who codes 10,000 lines a day",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-23",
@@ -3796,23 +3798,24 @@
     "handle": "@datachaz",
     "subject": "Post by Charly Wargnier on X",
     "url": "https://x.com/datachaz/status/2057787509728522463",
-    "summary": "Charly Wargnier surfacing Addy Osmani's open-source agent-skills repo: github.com/addyosmani/agent-skills — 'Production-grade engineering skills for AI coding agents.' Directly relevant to our skills/MCP work; worth pulling and evaluating which skills map to our dev workflow.",
+    "summary": "Repo shoutout to addyosmani/agent-skills — production-grade engineering skills for AI coding agents, open-sourced by Addy Osmani.",
     "topics": [
       "skills-mcp",
-      "claude-code",
       "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "1.4K",
+    "views": "1,499",
     "notes": "",
     "enriched": true,
-    "content": "Charly Wargnier: repo link → github.com/addyosmani/agent-skills. Shoutout to @addyosmani for building this and making it open-source. GitHub - addyosmani/agent-skills: Production-grade engineering skills for AI coding agents.",
-    "enrichment_status": "legacy-ok"
+    "content": "Charly Wargnier @DataChaz. Repo shoutout: github.com/addyosmani/agent-skills - production-grade engineering skills for AI coding agents, open-sourced by Addy Osmani. 1,499 views. skills-mcp, dev-practices.\n\naddyosmani/agent-skills",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-22",
@@ -3820,21 +3823,24 @@
     "handle": "@vtrivedy10",
     "subject": "Post by Viv on X",
     "url": "https://x.com/vtrivedy10/status/2057673225702937059",
-    "summary": "Agent orchestration pattern: 'bossman supervisor >> external judge >>> self reflection.' Argues the top-level orchestrator should be a critical judge of its workers (not a worker itself), running a series of Claude subagents (claude -p / subagent). Different from typical main-agent-does-most-of-the-work patterns — main agent must stay in the judging distribution.",
+    "summary": "An agent-orchestration heuristic Viv finds works in nearly every case: 'bossman supervisor >> external judge >>> self reflection.' A fresh judge (no prior context) beats self-review, but best is a supervisor orchestrating a series of Claudes — the main agent shouldn't think it's doing the work; it should be critically judging and correcting its workers.",
     "topics": [
-      "agent-design"
+      "agent-design",
+      "prompting"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "647",
+    "views": "3,548",
     "notes": "",
     "enriched": true,
-    "content": "Viv @Vtrivedy10: subtle agent orchestration change that anecdotally works better in pretty much every case I've seen (need to run some evals): bossman supervisor >> external judge >>> self reflection. when verifying agent outputs using a fresh judge (without the existing context) is almost always better than having the same agent. but instead having a bossman supervisor orchestrating a series of Claudes (claude -p or subagent or whatever style) is the way forward. I'm unsure if it's the persona of being responsible for a bunch of workers that allows it to correct the other agent mistakes. practically this ends up being different than main agent subagent workflows which have subagents do some work instead of most work. imo the main agent should not think it's doing work, it needs to be in the distribution of judging work and being very critical of its workers to correct them. agents orchestrating agents, but the top level being critical...",
-    "enrichment_status": "legacy-ok"
+    "content": "Viv @Vtrivedy10. Subtle agent-orchestration change that works better in nearly every case: 'bossman supervisor >> external judge >>> self reflection'. Verifying agent outputs with a fresh judge (no existing context) beats self-review; but best is a supervisor orchestrating a series of Claudes (claude -p / subagents) - possibly the 'responsible-for-workers' persona helps it correct others. Differs from main-agent/subagent workflows: the main agent should not think it's doing work; it should be in the distribution of judging work and critically correcting its workers. Agents orchestrating agents, top level critically mission-driven. 3,548 views. agent-design, prompting.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-22",
@@ -3842,21 +3848,23 @@
     "handle": "@shdu11546816",
     "subject": "Post by shdu on X",
     "url": "https://x.com/shdu11546816/status/2057642195524419748",
-    "summary": "Speculative macro thesis arguing AI agents will trigger a 'Deflationary Doom Loop' via the Paradox of Thrift: as chatbots become agents and high-income white-collar layoffs accelerate, displaced workers flood physical labor markets, wages collapse, discretionary spending collapses, deflation feeds itself. Doom-take economics, not analysis.",
+    "summary": "Macro speculation that AI triggers a 'Deflationary Doom Loop' via the Paradox of Thrift: agent-driven layoffs push white-collar workers into physical-labor markets, wages crash, and discretionary spending collapses because intelligence isn't the bottleneck for land, energy, and calories. A pessimistic counter to 'everything becomes cheap and abundant.'",
     "topics": [
       "industry",
-      "questionable"
+      "general"
     ],
     "audience": [
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "33.7K",
+    "views": "75.2K",
     "notes": "",
     "enriched": true,
-    "content": "shdu @shdu11546816: My best guess is that AI is going to soon cause a Deflationary Doom Loop due to the Paradox of Thrift. As chatbots become agents, the layoffs will accelerate and spending behavior will rapidly change for many previously high income workers. In macroeconomics, the Paradox of Thrift states that when everyone tries to save money at the same time, aggregate demand plummets, causing businesses to fail, which drives wages down further, forcing people to save even more. The Physical Labor Glut: As millions of software engineers, lawyers, and corporate managers flood the market for physical jobs (plumbing, electrical work, elder care, construction), supply will vastly outstrip demand. The Wage Floor Collapse: Wages for physical labor will probably crash to subsistence levels — just enough to buy calories and a crowded room. Because humans are panicking and hoarding every spare penny, discretionary spending will probably collapse...",
-    "enrichment_status": "legacy-ok"
+    "content": "shdu @shdu11546816. Macro speculation: AI causes a 'Deflationary Doom Loop' via the Paradox of Thrift. As chatbots become agents, layoffs accelerate and high-income spending changes; software engineers/lawyers/managers flood physical-labor markets, wages crash to subsistence, discretionary spending collapses except for the capital class. 'Everything becomes cheap' is flawed because employees spend on rent/transport/food and intelligence isn't the bottleneck for physical resources (land, energy, calories). 75.2K views. industry, general.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-22",
@@ -3864,23 +3872,25 @@
     "handle": "@theahmadosman",
     "subject": "Post by Ahmad on X",
     "url": "https://x.com/theahmadosman/status/2057590791241896254",
-    "summary": "Ahmad recommends the free 'LLMs 101: A Practical Guide (2026 Edition)' X article: covers tokens/tokenizers, transformers, attention, KV cache, prefill vs decode, decoding controls, chat templates, long context, RAG, agents/tools, fine-tuning, multimodal — then bridges to running models locally (open-weight vs opensource, quantization, VRAM math, hardware tiers, file format safety, runtimes, benchmarks). ALL-CAPS hype intro but the content is comprehensive.",
+    "summary": "Points to a free 'LLMs 101: A Practical Guide (2026 Edition)' covering model mechanics (tokens, transformers, attention, KV cache, decoding, RAG, agents, fine-tuning, multimodal) and running models locally (quantization, VRAM math, hardware tiers, runtimes, model selection, failure modes).",
     "topics": [
       "research",
-      "prompting",
-      "questionable"
+      "dev-practices",
+      "prompting"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "111.2K",
+    "views": "187.6K",
     "notes": "",
     "enriched": true,
-    "content": "Ahmad @TheAhmadOsman: INCREDIBLE. The MOST COMPLETE GUIDE for understanding LLMs from first principles is now available online to read for free. Covers the model mechanics - Tokens / tokenizers - Transformers - Attention - KV cache - Prefill vs decode - Decoding controls - Model packages - Chat templates - Long context - RAG - Agents / tools - Fine-tuning - Multimodal models. Then connects that to running models locally - What 'local' really means - Open-weight vs opensource - Quantization - VRAM math - Hardware tiers - File formats / load safety - Runtimes / serving modes - Model selection - Privacy - Failure modes - Benchmarks - Practical setup paths. Article: LLMs 101: A Practical Guide (2026 Edition).",
-    "enrichment_status": "legacy-ok"
+    "content": "Ahmad @TheAhmadOsman. 'Most complete guide for understanding LLMs from first principles' free online. Covers model mechanics (tokens/tokenizers, transformers, attention, KV cache, prefill vs decode, decoding controls, chat templates, long context, RAG, agents/tools, fine-tuning, multimodal) and running models locally (what 'local' means, open-weight vs open-source, quantization, VRAM math, hardware tiers, file formats/load safety, runtimes/serving modes, model selection, privacy, failure modes, benchmarks, setup paths). QUOTE ARTICLE: 'LLMs 101: A Practical Guide (2026 Edition).' 187.6K views. research, dev-practices, prompting.\n\nArticle: 'LLMs 101: A Practical Guide (2026 Edition).'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-22",
@@ -3888,24 +3898,25 @@
     "handle": "@swyx",
     "subject": "Post by swyx🛬 SFO on X",
     "url": "https://x.com/swyx/status/2057559570177007912",
-    "summary": "swyx is building a skill that takes a vibecoded slop app and turns it into a production-ready, e2e tested, maintainable, parallelizable agent repo. Ran it ~16 hours, 103 commits — same app, but now a codebase he can build on long term. The 'rewrite-for-maintainability' agent pattern.",
+    "summary": "swyx is building a skill to turn a vibecoded 'slop' app into a production-ready, e2e-tested, maintainable, parallelizable agent repo — one run went ~16 hours and 103 commits, ending with the same app but a codebase he can build on.",
     "topics": [
-      "claude-code",
-      "skills-mcp",
+      "dev-practices",
       "agent-design",
-      "dev-practices"
+      "skills-mcp"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "49.8K",
+    "views": "83.5K",
     "notes": "",
     "enriched": true,
-    "content": "swyx @swyx: working on a 'take this vibecoded slop app and make it a production-ready, e2e tested, maintainable, parallelizable agent repo' skill. this thing ran for ~16 hours yesterday and made 103 commits all told and i ended up with exactly the same app but instead of fragile mvp it now looks like a codebase i can actually build on for the long run.",
-    "enrichment_status": "legacy-ok"
+    "content": "swyx @swyx. Working on a skill to take a vibecoded slop app and make it production-ready, e2e-tested, maintainable, parallelizable agent repo. Ran ~16 hours, made 103 commits, ended with the same app but now a codebase he can build on long-term instead of a fragile MVP. 83.5K views. dev-practices, agent-design, skills-mcp.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-22",
@@ -3913,22 +3924,25 @@
     "handle": "@mnilax",
     "subject": "Post by Mnimiy on X",
     "url": "https://x.com/mnilax/status/2057551699204857930",
-    "summary": "Field report from Code with Claude London: Boris Cherny, Ravi Trivedi, and Katelyn Lesse all repeated 'let it cook' — meaning stop micromanaging prompts, write the routine, let Claude prompt itself. Framing: 'routines are higher-order prompts. the runtime is shipped. the prompts are the bottleneck.' Author tested 30 routines, 9 survived; the surviving 9 Claude Cowork prompt templates are in the linked article.",
+    "summary": "Reports that Anthropic engineers kept repeating 'let it cook' at Code with Claude London (Boris Cherny, Ravi Trivedi, Katelyn Lesse): stop micromanaging prompts, write the routine, let Claude prompt itself — 'routines are higher-order prompts; the runtime is shipped; the prompts are the bottleneck.' Links 9 tested Claude Cowork prompt-templates.",
     "topics": [
       "claude-code",
-      "prompting"
+      "prompting",
+      "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "522.2K",
+    "views": "685.1K",
     "notes": "",
     "enriched": true,
-    "content": "Mnimiy @Mnilax: 'let it cook' is the line Anthropic engineers just repeated all day at Code with Claude London. Boris Cherny said it in the keynote. Ravi Trivedi said it in the next talk. Katelyn Lesse said it at the panel. it means: stop micromanaging the prompts. write the routine. let Claude prompt itself. his framing: > routines are higher-order prompts. > the runtime is shipped. > the prompts are the bottleneck. what they didn't say on stage: most routines die without 3 specific properties. i tested 30. 9 made it. the other 21 violated one of the three. the 9 that survived are in the article. all verbatim, just copy-paste. Article: 9 Claude Cowork prompt-templates that run my 8-hour workday in 47 minutes of active supervision.",
-    "enrichment_status": "legacy-ok"
+    "content": "Mnimiy @Mnilax. ''let it cook' is the line Anthropic engineers repeated all day at Code with Claude London' (Boris Cherny keynote, Ravi Trivedi, Katelyn Lesse). Means: stop micromanaging prompts, write the routine, let Claude prompt itself. Framing: 'routines are higher-order prompts; the runtime is shipped; the prompts are the bottleneck.' Claims most routines die without 3 specific properties (tested 30, 9 survived). QUOTE ARTICLE: '9 Claude Cowork prompt-templates that run my 8-hour workday in 47 minutes of active supervision.' 685.1K views. claude-code, prompting, agent-design.\n\nArticle: '9 Claude Cowork prompt-templates that run my 8-hour workday in 47 minutes of active supervision.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-22",
@@ -3936,23 +3950,25 @@
     "handle": "@kingbootoshi",
     "subject": "Post by BOOTOSHI 👑 on X",
     "url": "https://x.com/kingbootoshi/status/2057528772208034195",
-    "summary": "BOOTOSHI shared his 'directional-prompting' skill (github.com/kingbootoshi/directional-prompting) — a two-layer outcome-first plus directional-language pattern he uses combined with /goal mode. Claims agents thrive on positive communication that makes the path to success clear.",
+    "summary": "Shares an S+-tier skill, directional-prompting (outcome-first + directional language, a two-layer approach), combined with /goal mode — 'agents thrive on positive communication; make the path to success clear.'",
     "topics": [
-      "claude-code",
       "prompting",
-      "skills-mcp"
+      "skills-mcp",
+      "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "14.4K",
+    "views": "16.8K",
     "notes": "",
     "enriched": true,
-    "content": "BOOTOSHI @KingBootoshi: Sharing another one of my skills I consider S+ tier! I combine this with /goal mode and it just CLEANS shop. Agents thrive on positive communication - by making the path to success clear, they will reach the destination! Longer write up on this soon. GitHub - kingbootoshi/directional-prompting: Outcome-first plus directional language. A two-layer pattern.",
-    "enrichment_status": "legacy-ok"
+    "content": "BOOTOSHI @KingBootoshi. Shares an S+-tier skill: directional-prompting (github.com/kingbootoshi/directional-prompting) - outcome-first plus directional language, a two-layer approach; combine with /goal mode. 'Agents thrive on positive communication - make the path to success clear.' 16.8K views. prompting, skills-mcp, agent-design.\n\nkingbootoshi/directional-prompting",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-22",
@@ -3960,46 +3976,51 @@
     "handle": "@danshipper",
     "subject": "Post by Dan Shipper 📧 on X (read this today)",
     "url": "https://x.com/danshipper/status/2057514494960513272",
-    "summary": "Dan Shipper (Every) report 'After Automation' (every.to/p/after-automation): despite automating everything they can with AI agents, Every went from 4 → 30 human employees since GPT-3. Argues AI makes expert competence cheap, which drives demand for experts UP, and the dynamic intensifies as we approach AGI. Subject was flagged '(read this today)'.",
+    "summary": "Dan Shipper: Every automated everything it could with AI agents, yet has more human work than ever, growing 4→30 employees since GPT-3. His report 'After Automation' argues AI makes expert competence cheap, which raises demand for experts, and the dynamic intensifies toward AGI.",
     "topics": [
       "management",
       "industry"
     ],
     "audience": [
-      "me",
+      "dev-team",
       "leadership",
-      "dev-team"
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "536.6K",
+    "views": "1.4M",
     "notes": "",
     "enriched": true,
-    "content": "Dan Shipper @danshipper: We've automated every single thing we can @every with AI agents. And yet there's way more human work to do than ever. We've gone from 4 -> 30 human employees since GPT-3. I wrote a report on the structural reasons: how AI makes expert competence cheap, why that drives up demand for experts, and why the dynamic only intensifies as we approach AGI. After Automation: https://every.to/p/after-automation",
-    "enrichment_status": "legacy-ok"
+    "content": "Dan Shipper @danshipper. 'We've automated everything we can at @every with AI agents, yet there's more human work than ever.' Grew from 4 -> 30 human employees since GPT-3. Report on the structural reasons: AI makes expert competence cheap, which drives up demand for experts, and the dynamic intensifies approaching AGI. Article 'After Automation' (every.to/p/after-automation). 1.4M views. management, industry.\n\nArticle: 'After Automation' (every.to).",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-22",
-    "author": "Alex Prompter",
-    "handle": "@alex_prompter",
+    "author": "Alex Veremeyenko",
+    "handle": "@alex_verem",
     "subject": "Post by Alex Prompter on X",
     "url": "https://x.com/alex_prompter/status/2057476020454949201",
-    "summary": "Proposed anatomy of a 'SOUL.md' agent identity file with 9 sections: Identity (who, not what), Values (decision-making when rules don't cover it), Communication Style, Expertise (specific tools/domains), Boundaries (the immune system), Workflow, Tool Usage (when/how, not just which), Memory Policy, and Example Interactions. Similar idea to CLAUDE.md but framed as personality scaffolding.",
+    "summary": "Anatomy of the perfect SOUL.md identity file for AI agents — the file an agent reads first. Nine sections: Identity, Values, Communication Style, Expertise, Boundaries, Workflow, Tool Usage, Memory Policy, Example Interactions. 'Be helpful and professional' describes nothing; strong files have real opinions, specific limits, and concrete examples; 200-500 words, shorter = sharper.",
     "topics": [
+      "prompting",
       "agent-design",
-      "prompting"
+      "skills-mcp"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "26.6K",
+    "views": "84.2K",
     "notes": "",
     "enriched": true,
-    "content": "Alex Prompter @alex_prompter: I just broke down the anatomy of the perfect SOUL.md file for AI agents. SOUL.md is the identity file every AI agent reads before it does anything else. Without it, your agent is just a raw LLM with no memory, no personality, and no boundaries. With it, your agent knows who it is, how to talk, what to refuse, and which tools to use. Here are the 9 sections that make a SOUL.md actually work: → Identity (who the agent IS, not what it does) → Values (decision-making when rules don't cover it) → Communication Style (tone, length, formality) → Expertise (specific tools and domains, not vague 'knows things') → Boundaries (the immune system. Holds even under pressure) → Workflow (step-by-step process for every task) → Tool Usage (WHEN and HOW, not just which ones exist) → Memory Policy (what persists, what gets wiped) → Example Interactions (one good example beats 10 abstract rules)...",
-    "enrichment_status": "legacy-ok"
+    "content": "Alex Veremeyenko @alex_verem (was @alex_prompter). Anatomy of the perfect SOUL.md identity file for AI agents - the file every agent reads before anything else (gives it who it is, how to talk, what to refuse, which tools to use). 9 sections: Identity (who it IS), Values (decisions when rules don't cover it), Communication Style, Expertise (specific tools/domains), Boundaries (immune system, holds under pressure), Workflow (step-by-step), Tool Usage (when/how), Memory Policy (persists vs wiped), Example Interactions. 'Be helpful and professional' describes nothing; strong SOUL.md has real opinions, specific limits, concrete examples; 200-500 words, shorter = sharper. 84.2K views. prompting, agent-design, skills-mcp.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-22",
@@ -4007,21 +4028,22 @@
     "handle": "@dklineii",
     "subject": "Post by Dave Kline on X",
     "url": "https://x.com/dklineii/status/2057451633303322715",
-    "summary": "Generic management influencer post teasing a '5-step system' for delegation without micromanaging, off a claim of training 1500+ managers. No real content in the post itself — engagement bait for the thread/reply.",
+    "summary": "Management thread from a trainer of 1,500+ managers: delegation's hard part isn't assigning work but ensuring it's done well without micromanaging — with a simple 5-step system.",
     "topics": [
-      "management",
-      "questionable"
+      "management"
     ],
     "audience": [
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "91.2K",
+    "views": "94.3K",
     "notes": "",
     "enriched": true,
-    "content": "Dave Kline @dklineii: I've trained 1500+ managers. They all struggle with delegation. The issue isn't assigning work. It's ensuring the work gets done well without micromanaging. Here's a simple 5-step system for helping your team succeed:",
-    "enrichment_status": "legacy-ok"
+    "content": "Dave Kline @dklineii. Trained 1500+ managers; all struggle with delegation - the issue isn't assigning work, it's ensuring it gets done well without micromanaging. Thread: a simple 5-step system for helping your team succeed. 94.3K views. management.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-22",
@@ -4029,22 +4051,25 @@
     "handle": "@akshay_pachaar",
     "subject": "Post by Akshay 🚀 on X",
     "url": "https://x.com/akshay_pachaar/status/2057446083853520948",
-    "summary": "Listicle of 12 features that make Claude Code a programmable dev environment: CLAUDE.md persistent memory, Rules guardrails, Skills (.claude/skills/), Hooks (PreToolUse/PostToolUse shell scripts), Slash Commands, plus 7 more. Useful overview of the surface area beyond the prompt.",
+    "summary": "Argues 'Claude Code isn't a coding tool — it's a programmable dev environment,' with 12 features that make it programmable: CLAUDE.md, Rules, Skills, Hooks, Slash Commands, Plugins, MCP, Plan Mode, Permissions, Subagents, Voice Mode, Rewind (1-5 define the environment, 6-7 extend it, 8-9 control it, 10-12 change how it runs).",
     "topics": [
       "claude-code",
-      "skills-mcp"
+      "skills-mcp",
+      "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "30.8K",
+    "views": "100.3K",
     "notes": "",
     "enriched": true,
-    "content": "Akshay @akshay_pachaar: Claude Code isn't a coding tool. (It's a programmable dev environment) Engineers open it, type a prompt, and let it write code. But the real leverage is in the system around the prompt. Here are 12 features that make Claude Code programmable: 1) CLAUDE.md: The project's persistent memory. Stack details, conventions, and constraints load automatically at every session start. 2) Rules: Behavioral guardrails beyond CLAUDE.md. Project-wide do's and don'ts that apply across sessions and contributors. 3) Skills: Reusable instruction files stored in .claude/skills/. Write once, and Claude follows them automatically every time the task matches. 4) Hooks: Shell scripts that fire on events like PreToolUse and PostToolUse. Auto-lint, run tests, or validate output without manual intervention. 5) Slash Commands: Workflow shortcuts stored in .claude/commands/...",
-    "enrichment_status": "legacy-ok"
+    "content": "Akshay @akshay_pachaar. 'Claude Code isn't a coding tool - it's a programmable dev environment.' 12 features that make it programmable: 1) CLAUDE.md (persistent memory), 2) Rules (behavioral guardrails), 3) Skills (.claude/skills/), 4) Hooks (PreToolUse/PostToolUse shell scripts), 5) Slash Commands (.claude/commands/), 6) Plugins (bundles; 100+ official in marketplace), 7) MCP (databases/APIs/services), 8) Plan Mode, 9) Permissions (whitelist/block tools per session), 10) Subagents (parallel instances), 11) Voice Mode (/voice), 12) Rewind (step back to checkpoint). Framing: 1-5 define the environment, 6-7 extend it, 8-9 control it, 10-12 change how it runs; CLAUDE.md + Skills + Hooks alone automate half the repetitive decisions. QUOTE ARTICLE: 'Anatomy of the .claude/ folder.' 100.3K views. claude-code, skills-mcp, dev-practices.\n\nArticle: 'Anatomy of the .claude/ folder.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-22",
@@ -4052,7 +4077,7 @@
     "handle": "@eng_khairallah1",
     "subject": "Post by Khairallah AL-Awady on X",
     "url": "https://x.com/eng_khairallah1/status/2057433528363811098",
-    "summary": "Hype-style summary of a Boris Cherny (Claude Code creator) podcast appearance: claims most users miss 30+ features hiding behind CLAUDE.md, settings, and toggles. Promises a 40-feature breakdown in a linked X article. Heavy clickbait framing but the underlying podcast/article likely has substance.",
+    "summary": "Engagement-framed roundup of a Boris Cherny podcast on why most people don't get results from Claude — they never set it up (CLAUDE.md, features that change how Claude thinks, unopened settings) — claiming ~30-38 untouched features. Links a '40 Features Most Users Have Never Touched' article.",
     "topics": [
       "claude-code",
       "questionable"
@@ -4062,11 +4087,13 @@
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "817.1K",
+    "views": "1.2M",
     "notes": "",
     "enriched": true,
-    "content": "Khairallah AL-Awady @eng_khairallah1: Boris Cherny, the creator of Claude Code at Anthropic, just explained why most people aren't getting real results from Claude. In this podcast he breaks down exactly how most people never actually set up Claude: - the 14% you lose to CLAUDE.md before typing a word - the features that change how Claude thinks before you type a word - the settings 95% of users have never opened - the workflows hiding behind one toggle. if you've been using Claude for more than a month and never left the chat window, you have at least 30 untouched features. probably 38. instead of another show tonight, watch this. make sure to bookmark it before it gets lost in your feed. my breakdown of all 40 features is below. Article: How to Actually Set Up Claude. 40 Features Most Users Have Never Touched.",
-    "enrichment_status": "legacy-ok"
+    "content": "Khairallah AL-Awady @eng_khairallah1. Engagement-y: Boris Cherny podcast on why most people don't get real results from Claude - never set it up (the 14% you lose to CLAUDE.md before typing, features that change how Claude thinks, settings 95% never opened, workflows behind one toggle); if you've used Claude a month and never left the chat window you have ~30-38 untouched features. QUOTE ARTICLE: 'How to Actually Set Up Claude. 40 Features Most Users Have Never Touched.' 1.2M views. claude-code, questionable.\n\nArticle: 'How to Actually Set Up Claude. 40 Features Most Users Have Never Touched.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-22",
@@ -4074,23 +4101,25 @@
     "handle": "@adxtyahq",
     "subject": "Post by aditya on X",
     "url": "https://x.com/adxtyahq/status/2057410759236386866",
-    "summary": "Walkthrough of a Google L5 system-design question: design a RAG pipeline for 10M docs with zero hallucination. Steps: dedup+normalize ingest, hybrid retrieval (BM25 + embeddings), ANN + reranker, per-chunk source confidence scoring (freshness/trust/origin), and downstream verification. A reasonable canonical RAG architecture cheat-sheet.",
+    "summary": "A worked answer to a Google L5 interview question — 'design a RAG pipeline for 10M docs with zero hallucination': ingest/normalize, hybrid retrieval (BM25 + embeddings), ANN + reranking, source-confidence scoring, constrained generation, citation-backed responses, hallucination fallback, continuous evals, caching, and observability. At scale, retrieval quality matters more than the frontier model.",
     "topics": [
-      "agent-design",
       "research",
-      "dev-practices"
+      "dev-practices",
+      "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "166.1K",
+    "views": "197.2K",
     "notes": "",
     "enriched": true,
-    "content": "aditya @adxtyahq: 'design a RAG pipeline for 10M docs with zero hallucination' apparently this was asked in a Google L5 interview round. came across it somewhere on the internet and honestly it's a way more interesting system design problem than most classic distributed systems questions. 1. ingest + normalize docs - remove duplicates, standardize formats, extract metadata, maintain version history. 2. hybrid retrieval (BM25 + embeddings) - BM25 handles exact keyword matching while embeddings capture semantic meaning - semantic search alone usually struggles with precision at massive scale. 3. ANN retrieval + reranking - ANN (Approximate nearest neighbor) quickly pulls top candidate chunks from millions of docs - then a reranker rescoring step improves relevance by deeply comparing query vs retrieved chunks. 4. source confidence scoring - every retrieved chunk gets scored based on freshness, trust level, origin...",
-    "enrichment_status": "legacy-ok"
+    "content": "aditya @adxtyahq. System-design breakdown of a Google L5 interview question: 'design a RAG pipeline for 10M docs with zero hallucination.' 1) ingest+normalize (dedupe, standardize, metadata, versioning), 2) hybrid retrieval (BM25 + embeddings), 3) ANN retrieval + reranking, 4) source confidence scoring (freshness/trust/overlap/consistency), 5) constrained generation (answer only from retrieved context), 6) citation-backed responses, 7) hallucination fallback ('insufficient evidence'), 8) continuous evals (adversarial queries, recall benchmarks, hallucination tests), 9) caching + memory layer, 10) observability (trace retrieval paths, rankings, token attribution). At 10M docs retrieval quality matters more than the frontier model. 197.2K views. research, dev-practices, agent-design.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-22",
@@ -4098,22 +4127,24 @@
     "handle": "@levie",
     "subject": "Post by Aaron Levie on X",
     "url": "https://x.com/levie/status/2057315272156135501",
-    "summary": "Levie endorses a post on Forward Deployed Engineers (FDEs), arguing the role will last as long as AI evolves rapidly. Contrasts with cloud adoption: cloud affected a concentrated user set (devs/IT) with minimal workflow change, while agent deployment is highly technical AND directly reshapes employee workflows — heavy change management plus a much faster pace of model change.",
+    "summary": "Aaron Levie on why Forward Deployed Engineers (FDEs) will persist: unlike cloud (concentrated users, little workflow change, slow enough for best practices to spread), agents are highly technical to deploy AND directly change users' workflows, and the fast model-change cadence keeps resetting best practices — so vendors/partners who've done it hundreds of times do the work. A great early-career path.",
     "topics": [
-      "industry",
-      "management"
+      "management",
+      "industry"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "561.2K",
+    "views": "590.6K",
     "notes": "",
     "enriched": true,
-    "content": "Aaron Levie @levie: Great post on FDEs. Everyone should read it if you're interested in this job category. This is a job that is going to be around as long as AI keeps changing rapidly, which it inevitably will. People often wonder why isn't this like just deploying other forms of technology in the past, like cloud. Because something like cloud adoption affected a fairly concentrated set of users (developers and IT), and generally didn't require a fundamental change to the workflows of employees to get the benefits of the new service being delivered on the cloud. At best you went to one training session and you were done. With agents, the work to implement them is not only highly technical, but they directly impact the underlying workflows that people participate in. This means there's a ton of technical work and change management that comes with it. Further, the pace of change of cloud wasn't nearly as quick, so there was a lot more...",
-    "enrichment_status": "legacy-ok"
+    "content": "Aaron Levie @levie. Great post on Forward Deployed Engineers (FDEs). This job will last as long as AI changes rapidly. Unlike cloud adoption (concentrated users, little workflow change, slow enough for best practices to propagate), agents are highly technical to implement AND directly change the workflows people participate in - lots of technical work + change management. Fast model change means each release enables something new or makes scaffolding redundant, so a vendor/partner who's seen hundreds of implementations often does the work. Great path for technical talent, especially early career. QUOTE ARTICLE: vas @vasuman 'Forward Deployed Engineering 101.' 590.6K views. management, industry.\n\nArticle: 'Forward Deployed Engineering 101.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-22",
@@ -4121,22 +4152,24 @@
     "handle": "@tom_doerr",
     "subject": "Post by Tom Dörr on X",
     "url": "https://x.com/tom_doerr/status/2057217338844336627",
-    "summary": "Tom Dörr highlights turbovec (github.com/RyanCodrai/turbovec): a vector-search library that fits 10M documents into 4GB of RAM. Worth a look as a lightweight embedding store for RAG/local-search use cases.",
+    "summary": "Shares turbovec, a vector store that fits 10 million documents into 4GB of RAM (github.com/RyanCodrai/turbovec).",
     "topics": [
       "dev-practices",
       "research"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "130.7K",
+    "views": "145.8K",
     "notes": "",
     "enriched": true,
-    "content": "Tom Dörr @tom_doerr: Fits 10 million documents into 4GB of RAM. https://github.com/RyanCodrai/turbovec",
-    "enrichment_status": "legacy-ok"
+    "content": "Tom Dorr @tom_doerr. Fits 10 million documents into 4GB of RAM. github.com/RyanCodrai/turbovec (vector store). 145.8K views. dev-practices, research.\n\nRyanCodrai/turbovec",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-22",
@@ -4144,22 +4177,25 @@
     "handle": "@cogan",
     "subject": "Post by James Cogan on X",
     "url": "https://x.com/cogan/status/2056702063992607071",
-    "summary": "X article 'Machine Time: Why AI Is Reorganizing the World Around a Clock That Isn't Ours' — Cogan's reflective piece on the disorienting cadence of AI progress: workflows that felt current Monday are stale by Friday, the human nervous system wasn't built to metabolize this rate of change. Thoughtful, not breathless.",
+    "summary": "A thoughtful essay, 'Machine Time,' arguing AI compresses the unit of meaningful time — shrinking the buffer between noticing a change and having to respond. AI compresses the front end of cognitive work, so the bottleneck moves to human review, judgment, and taste; the danger isn't speed but speed without scaffolding, and institutions increasingly answer with machine-speed coordination rather than restoring the human clock.",
     "topics": [
+      "management",
       "industry",
-      "management"
+      "research"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "938",
+    "views": "8,286",
     "notes": "",
     "enriched": true,
-    "content": "James Cogan @cogan: Machine Time: Why AI Is Reorganizing the World Around a Clock That Isn't Ours. There is a feeling I keep noticing in people who are paying close attention to AI. Not excitement exactly. Not fear exactly. Something closer to a low-grade physical pressure. It is the sense that the world is not just changing, but changing at a cadence the human nervous system was not built to metabolize. The ground moves, you adjust your stance, and before your weight has settled, the ground moves again. A model comes out. A product ships. A workflow that felt current on Monday feels stale by Friday. A tool you had just started to understand becomes the thing everyone is already comparing against the next thing...",
-    "enrichment_status": "legacy-ok"
+    "content": "James Cogan @cogan. X ARTICLE 'Machine Time: Why AI Is Reorganizing the World Around a Clock That Isn't Ours.' Thesis: AI isn't just faster - it compresses the unit of meaningful time, shrinking the buffer between noticing a change and having to respond. Like prior compressions (printing press, telegraph, railroads/standard time, assembly line, containerization, electronic trading, email), efficiency becomes culture: normal delay becomes negligence. AI compresses the front end of cognitive work (drafting/search/codegen), so the bottleneck moves to the human back end - review, judgment, integration, taste, 'absorption.' 'Taste is the bottleneck'; the new creative unit is the high-speed generate/reject/select loop (Higgsfield film example: 26,000 attempts unseen). Danger isn't speed but speed without scaffolding (aviation checklists, surgery time-outs, SRE runbooks). Institutions increasingly answer with machine-speed coordination (agent-to-agent, autonomous payments, async coding agents) rather than restoring the human clock. Apprenticeship problem: AI erodes the junior tasks where judgment forms while increasing senior responsibility. Not speed vs slowness - compression that frees judgment vs compression that overwhelms it. 'Displacement... a world beginning to run on a clock that was not built for us.' 8,286 views. Thoughtful management/industry essay. management, industry, research.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-20",
@@ -4167,20 +4203,24 @@
     "handle": "@vtrivedy10",
     "subject": "Post by Viv on X (does this mean llms are “reactive” personalities?)",
     "url": "https://x.com/vtrivedy10/status/2056993505386622987",
-    "summary": "Viv promotes a Palash Shah X article on design decisions made for Engine at data scale. Core thread: give agents autonomy AFTER providing the right tooling — most of the design work was upfront tooling for the agent to leverage.",
+    "summary": "Notes on designing LangSmith Engine for customer-scale data: give the agent autonomy AFTER good tooling (around interacting with LangSmith); agents are good at pulling in context selectively, so the job is helping them self-facilitate routing useful info into the window.",
     "topics": [
-      "agent-design"
+      "agent-design",
+      "dev-practices",
+      "research"
     ],
     "audience": [
       "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "7,869",
     "notes": "",
     "enriched": true,
-    "content": "fun read on real tradeoffs & design decisions we debated when designing Engine for the data scale that customers produce. one common thread is that we're pretty strong supporters of just giving the agent autonomy AFTER we give it the right tooling, most of which revolved around [Quote: Palash Shah - x.com/i/article/2056738466243760128]",
-    "enrichment_status": "legacy-ok"
+    "content": "Viv @Vtrivedy10. Fun read on tradeoffs designing LangSmith Engine for customer data scale. Common thread: give the agent autonomy AFTER giving it the right tooling (mostly around interacting with LangSmith). Agents are exceptional at selectively pulling in appropriate context or diving deeper with good prompting; the job is helping them self-facilitate routing useful info into the context window. QUOTE ARTICLE: Palash Shah @palashshah 'How We Built LangSmith Engine, Our Agent for Improving Agents' - an agent that sits on your agent traces, spots recurring issues, suggests next steps. 7,869 views. agent-design, dev-practices, research.\n\nArticle: 'How We Built LangSmith Engine, Our Agent for Improving Agents.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-20",
@@ -4188,22 +4228,24 @@
     "handle": "@arpit_bhayani",
     "subject": "Post by Arpit Bhayani on X",
     "url": "https://x.com/arpit_bhayani/status/2056946273165656375",
-    "summary": "Follow-up to a prior post on long-running agentic systems needing reliability, robustness, and fault-tolerance — today digs into how. Observation: distributed workflows are a problem almost every engineering team accidentally rebuilds.",
+    "summary": "Argues long-running agentic systems need reliability/fault-tolerance, and that teams accidentally rebuild distributed workflows (cron + queue + state + retries → state machines, idempotency, compensating actions). An essay on Temporal, an open-source durable-execution engine (Workflows, Activities, event histories, replay, Signals, retries, determinism) as the plumbing for agents that need state and execution that survives failures.",
     "topics": [
-      "agent-design",
-      "dev-practices"
+      "dev-practices",
+      "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "26.7K",
     "notes": "",
     "enriched": true,
-    "content": "Yesterday, I wrote about how long-running agentic systems need to be more reliable, robust, and fault-tolerant; and today, let's dig deeper into how. Fun fact - distributed workflows are one of those problems that almost every engineering team accidentally rebuilds. We start...",
-    "enrichment_status": "legacy-ok"
+    "content": "Arpit Bhayani @arpit_bhayani. Long-running agentic systems need to be reliable, robust, fault-tolerant. Distributed workflows are accidentally rebuilt by every team (cron + queue + state table + retry -> then crashes/timeouts/deploys force state machines, recovery, idempotency, compensating actions, observability). Essay on Temporal, an open-source durable-execution engine: Workflows, Activities, event histories, replay, Signals, Child Workflows, retries, timeouts, determinism constraints - useful for long-running agents needing state, retries, tool orchestration, and execution that survives failures. 26.7K views. dev-practices, agent-design.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-20",
@@ -4211,22 +4253,24 @@
     "handle": "@cyrilxbt",
     "subject": "Post by CyrilXBT on X",
     "url": "https://x.com/cyrilxbt/status/2056933229924372546",
-    "summary": "Engagement-farmed pitch (ALL CAPS hype) for an X article claiming Anthropic's Agents team showed a four-layer framework for production-grade multi-agent systems — described as a 30-minute video. Substance worth checking is in the linked article: x.com/i/article/2056157535082557440.",
+    "summary": "ALL-CAPS hype ('ANTHROPIC JUST KILLED THE DEMO AGENT ERA') about Anthropic's Agents team showing a production-grade four-layer framework for multi-agent systems in a 30-minute video. (The quoted article is mismatched — about turning Obsidian into a personal OS.)",
     "topics": [
-      "questionable",
       "agent-design",
-      "claude-code"
+      "claude-code",
+      "questionable"
     ],
     "audience": [
       "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "135.4K",
     "notes": "",
     "enriched": true,
-    "content": "ANTHROPIC JUST KILLED THE DEMO AGENT ERA. Their Agents team showed exactly what production grade looks like. Not theory. Not a tutorial. A four layer framework for multi agent systems built to actually work in the real world. 30 minutes. This is the video I wish [Quote: own article x.com/i/article/2056157535082557440]",
-    "enrichment_status": "legacy-ok"
+    "content": "CyrilXBT @cyrilXBT. 'ANTHROPIC JUST KILLED THE DEMO AGENT ERA.' Anthropic's Agents team showed production-grade: a four-layer framework for multi-agent systems built to work in the real world (30-min video). ALL CAPS hype framing. (Quoted article is actually about turning Obsidian into a personal OS - mismatched quote.) 135.4K views. agent-design, claude-code, questionable.\n\nArticle (mismatched): 'How to Turn Obsidian Into a Personal Operating System That Never Breaks Down.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-20",
@@ -4234,23 +4278,25 @@
     "handle": "@t_blom",
     "subject": "Post by Tom Blomfield on X",
     "url": "https://x.com/t_blom/status/2056909934156280088",
-    "summary": "YC General Partner Tom Blomfield breaks down recursively self-improving AI-native companies in a batch talk — how to build recursive self-improving AI loops, and why founders who get this right will run companies that improve while they sleep. 352.3K views.",
+    "summary": "Tom Blomfield breaks down what YC is seeing in recursively self-improving companies — creating recursive self-improving AI loops so founders 'run companies that improve while they sleep.'",
     "topics": [
       "management",
-      "industry",
-      "agent-design"
+      "agent-design",
+      "industry"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "352.3K",
+    "views": "365.5K",
     "notes": "",
     "enriched": true,
-    "content": "A lot of people are trying to figure out recursively self-improving companies right now. I break down what we're seeing at YC. [Quote: YC - In a recent batch talk, YC General Partner @t_blom broke down how to build a self-improving, AI-native company. He walks through how to create recursive, self-improving AI loops, and why founders who get this right will run companies that improve while they sleep.]",
-    "enrichment_status": "legacy-ok"
+    "content": "Tom Blomfield @t_blom. Many people trying to figure out recursively self-improving companies now; breaks down what YC is seeing. QUOTE: Y Combinator - t_blom batch talk on building a self-improving, AI-native company: creating recursive self-improving AI loops, and why founders who get this right run companies that improve while they sleep. 365.5K views. management, agent-design, industry.\n\nYC batch talk: how to build a self-improving, AI-native company.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-20",
@@ -4258,22 +4304,24 @@
     "handle": "@alexhillman",
     "subject": "Post by 📙 Alex Hillman on X",
     "url": "https://x.com/alexhillman/status/2056904462162133233",
-    "summary": "Alex amplifies Ben Vinegar's (@bentlegen) framing of tmux as agent infrastructure: agents can read logs from any pane/window, answer prompts in interactive CLIs, send keys/clicks into TUIs and capture the screen, and run subagents in separate windows while inspecting their output. 47.8K views.",
+    "summary": "Reframes tmux as an agent superpower: it lets agents manipulate your terminal sessions — read logs from any pane/window, answer prompts in interactive CLIs, send keys into TUIs and capture the screen, and run subagents in separate windows to inspect their output.",
     "topics": [
-      "agent-design",
-      "dev-practices"
+      "dev-practices",
+      "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "47.8K",
+    "views": "82.9K",
     "notes": "",
     "enriched": true,
-    "content": "Wait why haven't I EVER seen the tmux described this way. [Quote: Ben Vinegar @bentlegen - tmux's superpower is it lets your agents manipulate your terminal sessions: - read logs from any pane/window - answer prompts in interactive CLIs - send keys/clicks into TUIs and capture the screen - run subagents in separate windows and inspect their output]",
-    "enrichment_status": "legacy-ok"
+    "content": "Alex Hillman @alexhillman. 'Why haven't I ever seen tmux described this way.' QUOTE: Ben Vinegar @bentlegen - tmux's superpower is letting your agents manipulate your terminal sessions: read logs from any pane/window, answer prompts in interactive CLIs, send keys/clicks into TUIs and capture the screen, run subagents in separate windows and inspect output. 82.9K views. dev-practices, agent-design.\n\ntmux's superpower: agents manipulating terminal sessions, panes, TUIs, and subagent windows.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-20",
@@ -4281,7 +4329,7 @@
     "handle": "@yoheinakajima",
     "subject": "Post by Yohei on X",
     "url": "https://x.com/yoheinakajima/status/2056848954848104488",
-    "summary": "Yohei (BabyAGI author) introduces ActiveGraph — a continuity layer for long-running agents based on older designs. Key value: enables forking and diffing agent runs, which is useful for self-improving agents. Code coming soon. 11K views.",
+    "summary": "Yohei Nakajima on ActiveGraph, a 'continuity layer for long-running agents' — a novel agent architecture drawing on older designs, promising for self-improving agents via the ability to fork and diff agent runs.",
     "topics": [
       "agent-design",
       "research"
@@ -4291,11 +4339,13 @@
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "11K",
+    "views": "11.1K",
     "notes": "",
     "enriched": true,
-    "content": "if this works, will be great for self-improving agents because of the ability to fork and diff agent runs [Quote: own article 'ActiveGraph: A Continuity Layer for Long-Running Agents' - I might be going crazy, but I think I designed a novel way to architect AI agents based on much older designs. This introduces the concept, code to come soon.]",
-    "enrichment_status": "legacy-ok"
+    "content": "Yohei @yoheinakajima. 'If this works, great for self-improving agents because of the ability to fork and diff agent runs.' QUOTE ARTICLE: 'ActiveGraph: A Continuity Layer for Long-Running Agents' - a novel way to architect AI agents based on much older designs (continuity layer), code to come. 11.1K views. agent-design, research.\n\nArticle: 'ActiveGraph: A Continuity Layer for Long-Running Agents.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-20",
@@ -4303,23 +4353,25 @@
     "handle": "@gregce10",
     "subject": "Post by Greg Ceccarelli on X",
     "url": "https://x.com/gregce10/status/2056771029867933884",
-    "summary": "Field notes on a 'Goal Engineering' workflow at gregceccarelli.com — replaces prompts/specs with two checked-in markdown artifacts per round: a 'goal' capped at 4,000 chars (matching Codex's /goal command limit) and an unbounded 'rider' with ~11 phases and named depth tests. Skill included in the article. Aimed at long-running agentic turns. 10.6K views.",
+    "summary": "Field notes on a 'goal engineering' workflow: instead of prompts/specs, write two checked-in markdown artifacts per round — a 'goal' capped at 4,000 chars (matching Codex's /goal limit) and an unbounded 'rider' with ~11 phases and named depth tests — authored via a Skill. Aimed at long-running agentic turns.",
     "topics": [
-      "agent-design",
       "prompting",
-      "dev-practices"
+      "agent-design",
+      "skills-mcp"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "10.6K",
+    "views": "11.1K",
     "notes": "",
     "enriched": true,
-    "content": "Field notes with worked examples on a goal engineering workflow I've been running and am excited about: instead of writing prompts & specs, I now focus on two checked-in markdown artifact per round of work. The \"goal\" is capped at 4,000 chars (the same limit Codex's /goal command enforces). The \"rider\" is unbounded, with +/- eleven phases and named depth tests. I write them via a Skill included in the article. Looking for long running agentic turns, this is for you. [Goal Engineering - From gregceccarelli.com]",
-    "enrichment_status": "legacy-ok"
+    "content": "Greg Ceccarelli @gregce10. Field notes on a 'goal engineering' workflow: instead of writing prompts & specs, focus on two checked-in markdown artifacts per round - a 'goal' capped at 4,000 chars (same limit as Codex's /goal command) and an unbounded 'rider' with ~11 phases and named depth tests. Written via a Skill in the article. For long-running agentic turns. gregceccarelli.com. 11.1K views. prompting, agent-design, skills-mcp.\n\nGoal Engineering (gregceccarelli.com)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-20",
@@ -4327,22 +4379,25 @@
     "handle": "@omarsar0",
     "subject": "Post by elvis on X",
     "url": "https://x.com/omarsar0/status/2056764334181884158",
-    "summary": "Survey paper 'Code as Agent Harness' — 100+ page report on agent harnesses making the case that code-as-harness might be key to a broader science of harness engineering. Argues future systems must have four properties: executable, inspectable, stateful, and governed. Paper at arxiv.org/abs/2605.18747. 75.9K views.",
+    "summary": "'Code as Agent Harness' — a 100+ page survey of methods and applications of code-as-harness, arguing it may be key to a science of harness engineering, and that future systems must be executable, inspectable, stateful, and governed.",
     "topics": [
+      "research",
       "agent-design",
-      "research"
+      "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "75.9K",
+    "views": "79.7K",
     "notes": "",
     "enriched": true,
-    "content": "// Code as Agent Harness // 100+ page report on all things related to agent harnesses. (bookmark it) In particular, the survey summarizes methods and applications of code as agent harness. This paper makes a strong case that code-as-harness might be the key to moving us towards a broader science harness engineering. Is code all you need? Maybe. Regardless, the paper argues that future systems must have the following four properties: executable, inspectable, stateful, and governed. Paper: arxiv.org/abs/2605.18747. Learn to build effective AI agents in our academy: academy.dair.ai",
-    "enrichment_status": "legacy-ok"
+    "content": "elvis @omarsar0. '// Code as Agent Harness //' 100+ page survey on agent harnesses, summarizing methods and applications of code-as-harness. Argues code-as-harness may be key to a broader science of harness engineering; future systems must be executable, inspectable, stateful, and governed. Paper: arxiv.org/abs/2605.18747. 79.7K views. research, agent-design, dev-practices.\n\nCode as Agent Harness (arXiv survey)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-20",
@@ -4350,23 +4405,25 @@
     "handle": "@lotte_verheyden",
     "subject": "Post by Lotte on X",
     "url": "https://x.com/lotte_verheyden/status/2056754091817361670",
-    "summary": "Langfuse Academy article 'Evals, explained' — walks through offline evaluation as the step in the AI Engineering Loop between running an experiment and shipping a change. Three evaluation methods (manual, code-based, LLM-as-a-judge) with practical advice: start with manual review to build intuition for good/bad outputs, code-based for deterministic checks (JSON schema, keywords, length, SQL execution), and LLM-as-a-judge for meaning. Key recommendation: prefer binary pass/fail scores over graded scales — they force a precise definition of acceptable. Continuous human review keeps automated evaluators calibrated. langfuse.com/academy.",
+    "summary": "'Evals, explained' (Langfuse Academy): offline eval sits between running an experiment and shipping. Three methods — manual review (build intuition + ground-truth labels), code-based (deterministic checks: schema, keywords, length, SQL executes), and LLM-as-a-judge (language-understanding qualities, needs calibration against human labels). Prefer binary pass/fail over 1-5 scales; one evaluator per quality; start manual then automate repeatable checks.",
     "topics": [
       "dev-practices",
-      "prompting",
-      "research"
+      "research",
+      "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "38K",
+    "views": "40.4K",
     "notes": "",
     "enriched": true,
-    "content": "Evals, explained. AI Engineering Loop = production tracing/monitoring → development datasets/experiments/evaluation, looping continuously. Offline evaluation sits between running an experiment and shipping a change. Methods evolve: start manually reviewing outputs to build intuition for good/bad, identify failure modes, then automate with dedicated evaluators. Three eval methods: (1) Manual — continuous expert review catches new failure modes and calibrates automated evaluators. (2) Code-based — fast, cheap, deterministic; checks JSON schema, keywords, length limits, SQL execution; cannot assess meaning. (3) LLM-as-a-judge — required for qualities needing language understanding. When to set up an evaluator: not for one-time fixes (just make the change), but for identifiable failure modes you want to test repeatedly across inputs. What to evaluate: avoid vague qualities like 'helpfulness' — precise definitions produce precise signal. Prefer binary pass/fail over 1-5 graded scales because binary forces clear definitions.",
-    "enrichment_status": "legacy-ok"
+    "content": "Lotte @lotte_verheyden. X ARTICLE 'Evals, explained' (Langfuse Academy, part of the AI Engineering Loop series). Offline eval sits between running an experiment and shipping; you start with manual review to build intuition and produce ground-truth labels, then automate. Three methods: manual (build intuition, human labels), code-based (deterministic: valid JSON/schema, keywords, length, SQL executes - fast/cheap but can't assess meaning), and LLM-as-a-judge (for language understanding: relevance, tone, summary quality - imperfect, needs calibration against human labels, can share blind spots with your app's LLM). Reference-based vs reference-free (latter works on unseen production data). Practical: prefer binary pass/fail over 1-5 scales; each quality gets its own evaluator; start with manual review then automate only repeatable checks; move some reference-free evaluators into production. 40.4K views. dev-practices, research, agent-design.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-20",
@@ -4398,23 +4455,25 @@
     "handle": "@akshay_pachaar",
     "subject": "Post by Akshay 🚀 on X",
     "url": "https://x.com/akshay_pachaar/status/2056714042455343160",
-    "summary": "Explainer on RAG vs CAG (Cache-Augmented Generation). RAG hits the vector DB for every query even when info is static — expensive, slow, redundant. CAG stores static info in the model's KV memory. Combine them: cache cold/static data (policies, docs) in KV once, retrieve hot/dynamic data (recent updates) via RAG — faster inference, lower costs, less redundancy. Trick is selectivity — only cache static high-value knowledge that rarely changes, otherwise you hit context limits. OpenAI and Anthropic already support prompt caching; Akshay's quoted prior article notes Claude Code achieves a 92% cache hit-rate. 271.2K views.",
+    "summary": "RAG vs CAG explained: Cache-Augmented Generation keeps static, high-value knowledge in the model's KV memory instead of hitting the vector DB every query. Combine them — cache 'cold' static data (policies/docs), retrieve 'hot' dynamic data — for faster, cheaper inference. OpenAI and Anthropic already support prompt caching.",
     "topics": [
       "research",
-      "agent-design",
-      "dev-practices"
+      "dev-practices",
+      "claude-code"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "271.2K",
+    "views": "280.2K",
     "notes": "",
     "enriched": true,
-    "content": "RAG vs. CAG. RAG hits vector DB every query, even for static info — expensive, slow, redundant. Cache-Augmented Generation (CAG) lets the model 'remember' static info directly in its key-value (KV) memory. Combine: static data (policies, docs) cached once in KV; dynamic data (recent updates, live docs) fetched via retrieval. Faster inference, lower costs, less redundancy. Be selective — only cache static, high-value knowledge that rarely changes, else you hit context limits. Separating 'cold' (cacheable) and 'hot' (retrievable) data keeps the system reliable. OpenAI and Anthropic already support prompt caching in their APIs. [Quote: own prior article 'Prompt caching, clearly explained — A case study on how Claude achieves 92% cache hit-rate']",
-    "enrichment_status": "legacy-ok"
+    "content": "Akshay @akshay_pachaar. RAG vs CAG explained. RAG's problem: every query hits the vector DB even for static info. Cache-Augmented Generation (CAG) has the model 'remember' static info in its KV memory. Combine RAG+CAG: static data (policies, docs) cached once in KV memory; dynamic data (recent updates) fetched via retrieval - faster inference, lower cost, less redundancy. Be selective: only cache static high-value knowledge (else hit context limits); separate 'cold' (cacheable) from 'hot' (retrievable). OpenAI and Anthropic already support prompt caching. QUOTE ARTICLE: 'Prompt caching, clearly explained - how Claude achieves 92% cache hit-rate.' 280.2K views. research, dev-practices, claude-code.\n\nArticle: 'Prompt caching, clearly explained — how Claude achieves 92% cache hit-rate.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-20",
@@ -4422,23 +4481,25 @@
     "handle": "@garrytan",
     "subject": "Post by Garry Tan on X",
     "url": "https://x.com/garrytan/status/2056711154224034125",
-    "summary": "Garry Tan (YC) on dynamic skills as the most powerful idea of 2026: just-in-time, markdown-is-code, agents modify their own skills as they encounter new cases. Quote-replies amplify a 'skillpack architecture' where each skill bundle carries its own tests and the agent can modify them in-flight — the compounding effect comes from agents updating their own tooling, not from static skills. 49.8K views.",
+    "summary": "Garry Tan on dynamic, just-in-time skills for personal AI: 'markdown is code,' and the agent can change its own skills when new cases appear — 'just-in-time personal software is the most powerful idea of 2026.' A reply notes skill bundles carrying their own tests that the agent modifies in-flight create the compounding effect.",
     "topics": [
       "skills-mcp",
       "agent-design",
       "claude-code"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "49.8K",
+    "views": "50.8K",
     "notes": "",
     "enriched": true,
-    "content": "Dynamic skills are one of the coolest and most powerful parts of the new way to make personal AI work. Just in time and markdown is code, and the agent can just change it when you discover new cases to handle. Just in time personal software is the most powerful idea of 2026. [Quote: Marcus @MarcusSpillane - The skillpack architecture is the right call. We run something similar where each skill bundle carries its own tests and the agent can modify them in-flight. The part people miss: letting the agent update its own tooling is what creates the compounding effect. Static skill...]",
-    "enrichment_status": "legacy-ok"
+    "content": "Garry Tan @garrytan. Dynamic skills are one of the coolest/most powerful parts of the new way to make personal AI work - just-in-time, 'markdown is code,' the agent can change it when you discover new cases. 'Just-in-time personal software is the most powerful idea of 2026.' QUOTE: Marcus @MarcusSpillane - skillpack architecture is right; each skill bundle carries its own tests and the agent modifies them in-flight; letting the agent update its own tooling creates the compounding effect. 50.8K views. skills-mcp, agent-design, claude-code.\n\nSkillpack architecture: each bundle carries its own tests; letting the agent update its own tooling compounds.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-20",
@@ -4446,24 +4507,25 @@
     "handle": "@linasbeliunas",
     "subject": "Post by Linas Beliūnas on X",
     "url": "https://x.com/linasbeliunas/status/2056679329484927356",
-    "summary": "Engagement-farmed promotion of what Linas frames as an Anthropic founder playbook for AI-native startups (Idea → MVP → Launch → Scale, with Claude / Claude Code / Claude Cowork mapped to each stage) — but the linked deep-dives are Linas's own Substack posts, not Anthropic's. The second half has more substance: AI compresses execution but not judgment; bad founders will now build the wrong product 10x faster, while great founders use AI for validation, scope discipline, and turning operating knowledge into a moat. Closing frame: 'AI as company infrastructure' and the best AI-native startups won't have the biggest teams, they'll have the best AI operating systems. 5.4K views.",
+    "summary": "Summarizes Anthropic's free AI-native founder playbook: build AROUND Claude across Idea → MVP → Launch → Scale (pressure-test the idea, Claude Code builds the product, Claude Cowork handles ops, Claude turns knowledge into compounding context). 'AI compresses execution but not judgment' — the edge becomes knowing what NOT to build; best AI-native startups have the best AI operating systems, not the biggest teams.",
     "topics": [
-      "questionable",
-      "claude-code",
       "management",
+      "claude-code",
       "industry"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "5.4K",
+    "views": "7,069",
     "notes": "",
     "enriched": true,
-    "content": "Anthropic founder playbook framing: AI-native founder builds around Claude, not just uses it. 4 stages — Idea → MVP → Launch → Scale. (1) Claude pressure-tests ideas before months wasted: linas.substack.com/p/onepersonunicorn. (2) Claude Code turns concept → working product: linas.substack.com/p/claudemd. (3) Claude Cowork handles the ops layer: linas.substack.com/p/claudecowork. (4) Claude turns feedback, workflows, domain knowledge into compounding context. The bigger point: AI compresses execution but does not compress judgment. Bad founders will build the wrong product 10x faster; great founders use AI to validate harder, ship tighter, automate earlier, and turn operating knowledge into a moat. Moving from 'AI as a tool' to 'AI as company infrastructure.' Best AI-native startups won't have the biggest teams — they'll have the best AI operating systems.",
-    "enrichment_status": "legacy-ok"
+    "content": "Linas Beliunas @linasbeliunas. Anthropic quietly dropped a free founder playbook for building an AI-native startup - a company-building manual, not a prompting guide. Core idea: the AI-native founder builds AROUND Claude, not just uses it. Four stages: Idea -> MVP -> Launch -> Scale, with Claude at each: pressure-test the idea (one-person-unicorn), Claude Code turns concept into product (claude.md), Claude Cowork handles the ops layer, and Claude turns feedback/workflows/domain knowledge into compounding context. 'AI compresses execution but not judgment' - the advantage becomes knowing what NOT to build, which signal is real, where scope creep hides. Moving from 'AI as a tool' to 'AI as company infrastructure'; best AI-native startups won't have the biggest teams but the best AI operating systems. 7,069 views. management, claude-code, industry.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-19",
@@ -4471,22 +4533,24 @@
     "handle": "@sapient_int",
     "subject": "Post by Sapient Intelligence on X",
     "url": "https://x.com/sapient_int/status/2056510383935172798",
-    "summary": "Sapient Intelligence announces HRM-Text, a 1B-parameter reasoning language model trained on ~40B structured tokens (~1/1000 the training data of comparable models) at a ~$1,000 / one-day compute budget. Pitches a new paradigm of cheap, adaptable general-intelligence research where small teams can revisit ideas previously deemed too expensive to test. No paper link in the visible tweet — worth tracking the org for the technical report.",
+    "summary": "Sapient Intelligence introduces HRM-Text, an ultra-lean 1B-parameter reasoning model trained on just 40B structured tokens (~1/1000 the data of comparable models), with the full model training in ~one day on a $1,000 budget — pitched as making previously-too-expensive research concepts testable again.",
     "topics": [
       "research",
       "industry"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "348.9K",
+    "views": "512.7K",
     "notes": "",
     "enriched": true,
-    "content": "Sapient Intelligence @Sapient_Int — Introducing HRM-Text. An ultra-lean 1B-parameter reasoning language model designed to deliver strong general performance with a fraction of the data, compute, and infrastructure. Trained on just 40B structured tokens, HRM-Text achieves competitive performance while using ~1/1000 of the training data of comparable models. The kicker? The full model trains in roughly one day on a $1,000 budget. This opens the door to a new generation of AI that is powerful, accessible, and radically easier to adapt. Theories and research concepts once deemed too expensive to test are officially back in the game. Sapient Intelligence invites you to help us shape a new paradigm for general intelligence.",
-    "enrichment_status": "legacy-ok"
+    "content": "Sapient Intelligence @Sapient_Int. Introducing HRM-Text: an ultra-lean 1B-parameter reasoning language model delivering strong general performance with a fraction of data/compute/infra. Trained on just 40B structured tokens (~1/1000 the training data of comparable models); full model trains in ~one day on a $1,000 budget. Opens a new generation of powerful, accessible, easily-adaptable AI; cheap enough to test previously-too-expensive research concepts. 512.7K views. research, industry.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-19",
@@ -4494,23 +4558,25 @@
     "handle": "@amarsvs",
     "subject": "Post by Amar Singh on X",
     "url": "https://x.com/amarsvs/status/2056484487891243355",
-    "summary": "Amar Singh argues that as models improve, harness design matters MORE, not less — the smarter the model, the more expensive it is to waste its intelligence. He distinguishes model-bound tasks (where raw capability is the bottleneck, e.g. hard math proofs) from harness-bound tasks (where prompting, tools, context management, and the loop around the model dominate, e.g. Terminal-Bench). Manager analogy: a brilliant employee gets outsized returns from good onboarding, mentorship, and feedback loops.",
+    "summary": "'Agent Performance: Model-Bound vs Harness-Bound' — counterintuitively, smarter models make harnesses matter MORE ('the smarter the model, the more expensive it is to waste its intelligence'). Model-bound tasks (hard math/proofs) hinge on raw capability; harness-bound tasks (e.g., Terminal-Bench, ~10 pts spread for Opus 4.7 across harnesses) hinge on prompting, tools, context management. As traces balloon and costs rise, the harness becomes the 'scheduler for intelligence'; author's open-source HALO optimizes harnesses from traces.",
     "topics": [
       "agent-design",
-      "prompting",
-      "research"
+      "research",
+      "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "9.5K",
+    "views": "12.6K",
     "notes": "",
     "enriched": true,
-    "content": "Amar Singh @AmarSVS — Agent Performance: Model-Bound versus Harness-Bound. You might think that as models get smarter, the harnesses matter less. In reality, the opposite is happening. The better models are at following instructions, using tools, and adapting to workflows, the more leverage from designing their environment. The smarter the models become, the more expensive it becomes to waste their intelligence. Corporate analogy: weak employees can't execute even with great process; brilliant employees excel with good onboarding, clear goals, mentorship, toolkit, and feedback. Model-bound task: bottleneck is the model's raw capability (hard math, proofs). Harness-bound: same model performs drastically differently depending on prompting, tools, context management, loop design. Terminal-Bench is a great example of harness-bound (shell, file management).",
-    "enrichment_status": "legacy-ok"
+    "content": "Amar Singh @AmarSVS. X ARTICLE 'Agent Performance: Model-Bound versus Harness-Bound.' Counterintuitively, as models get smarter, harnesses matter MORE - 'the smarter the models, the more expensive it is to waste their intelligence.' Model-bound task = bottleneck is raw model capability (e.g., hard math/proofs), marginal returns from prompting/tools. Harness-bound task = same model performs drastically differently by prompting, tools, context management, loop design (Terminal-Bench: ~10 pts accuracy difference for Opus 4.7 across harnesses alone). Historical shift: early LLMs were model-bound (bad at instructions); as they improved, harness engineering became valuable - question shifted from 'can the model reason?' to 'did the system expose the right info/tools/context/budget at the right time?'. Context: real agent traces reach hundreds of thousands of tokens, so context management grows more important. Cost pressure -> subagent delegation to smaller/specialized models; the harness becomes the 'scheduler for intelligence' (which models act, get what context, when to escalate/parallelize/stop). Future harness libraries will be 'operating systems for cognition.' Author's tool HALO (open source, context-labs/HALO) optimizes harnesses from traces (gains on AppWorld, Terminal-Bench, Finance-Agent, tau3-Bench). 12.6K views. agent-design, research, dev-practices.\n\ncontext-labs/HALO",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-19",
@@ -4518,22 +4584,24 @@
     "handle": "@neural_avb",
     "subject": "Post by AVB on X",
     "url": "https://x.com/neural_avb/status/2056462216430535062",
-    "summary": "AVB highlights Recursive Agent Optimization (RAO), an RL-trained setup where LLM agents spawn and coordinate with recursive subagents inside a Python REPL — divide-and-conquering long problems and passing context around as Python variables. Quote-RTs his own decodingai.com walkthrough article. Notable because the inter-agent state is just Python variables in a shared REPL, not strings.",
+    "summary": "Notes that people are now training local recursive language models inside python REPLs with RL — agents divide-and-conquer long problems and pass context around as python variables. Links 'Recursive Agent Optimization using RL, explained clearly.'",
     "topics": [
-      "agent-design",
-      "research"
+      "research",
+      "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "51.3K",
+    "views": "65.7K",
     "notes": "",
     "enriched": true,
-    "content": "AVB @neural_avb — They are now training local recursive language models inside python REPLs with reinforcement learning. Agents are divide-and-conquering long problems, and passing around context as python variables. This is so cool. (Quote-RT: Recursive Agent Optimization using RL, explained clearly — paper uses RL to train LLM agents to spawn and coordinate with recursive subagents inside a python...)",
-    "enrichment_status": "legacy-ok"
+    "content": "AVB @neural_avb. 'They are now training local recursive language models inside python REPLs with reinforcement learning' - agents divide-and-conquering long problems, passing context around as python variables. QUOTE ARTICLE: 'Recursive Agent Optimization using RL, explained clearly' - paper uses RL to train LLM agents to spawn and coordinate recursive subagents inside a python REPL. 65.7K views. research, agent-design.\n\nArticle: 'Recursive Agent Optimization using RL, explained clearly.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-19",
@@ -4541,23 +4609,25 @@
     "handle": "@aakashgupta",
     "subject": "Post by Aakash Gupta on X",
     "url": "https://x.com/aakashgupta/status/2056405221908394406",
-    "summary": "Aakash Gupta breaks down Pawel Huryn's minimalist CLAUDE.md approach — a 6-item routing-table file (project description, file structure map, identity context, knowledge routing pointers, workflow pointers, and a 3-line self-improving prompt) that delegates domain-specific rules to separate files the agent loads on demand. Includes a paste-ready self-improving prompt: (1) review existing rules and hypotheses for the domain, (2) apply confirmed rules, (3) update rules and hypotheses after feedback. Domain knowledge (voice, patterns, metrics, skills) lives in routed files, not the main CLAUDE.md.",
+    "summary": "Aakash Gupta on Pawel Huryn's six-item CLAUDE.md 'routing table' (project description, file-structure map, identity context, knowledge routing, workflow pointers, and a 3-line self-improving prompt), with everything else in on-demand files/folders. The paste-ready self-improving prompt: review existing rules/hypotheses, apply confirmed rules, then update them from feedback each session.",
     "topics": [
       "claude-code",
       "prompting",
       "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "16.2K",
+    "views": "17.4K",
     "notes": "",
     "enriched": true,
-    "content": "Aakash Gupta @aakashgupta — Your CLAUDE.md file is probably growing every week. Pawel Huryn's has six items and hasn't changed in months. His file: 2-3 sentence project description, file structure map, identity context (role/audience/goals), knowledge routing, workflow pointers, a three-line self-improving prompt. Writing style rules live in a voice file. Patterns in a patterns file. Platform instructions in platform-specific folders. Metrics, hypotheses, skills — all routed. The three-line self-improving prompt: 1. Before starting any task, review existing rules and hypotheses for this domain. 2. Apply confirmed rules by default. 3. After completing work and receiving feedback, update rules and hypotheses based on what you learned. Works for any domain.",
-    "enrichment_status": "legacy-ok"
+    "content": "Aakash Gupta @aakashgupta. Pawel Huryn's CLAUDE.md has six items and hasn't changed in months - a routing table, not a growing file: 2-3 sentence project description, file-structure map, identity context (role/audience/goals), knowledge routing (where domain files live), workflow pointers, and a 3-line self-improving prompt. Writing style, examples, platform instructions, metrics, hypotheses, procedures all live in separate files/folders the agent loads on demand. The paste-ready 3-line self-improving prompt: 1) before a task, review existing rules/hypotheses for the domain; 2) apply confirmed rules by default; 3) after feedback, update rules/hypotheses from what you learned. Over time auto-discovers hook patterns, voice archetypes, quotable structures, format/length/topic combos - organized by domain, ranked by evidence. 'Compound gap doubles every month.' 17.4K views. claude-code, prompting, agent-design.\n\nVideo breakdown: Cowork vs Code vs Dispatch, Skills & MCP, the Skills Marketplace, skill iteration.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-19",
@@ -4565,23 +4635,24 @@
     "handle": "@claudedevs",
     "subject": "Post by ClaudeDevs on X",
     "url": "https://x.com/claudedevs/status/2056403446056784288",
-    "summary": "Anthropic's ClaudeDevs account links to a new claude.com blog post on running Claude Code at scale — multi-million-line monorepos, decades-old legacy systems, distributed microservices. Practical best-practices doc straight from the vendor; directly actionable for any team standardizing Claude Code usage. Link: claude.com (How Claude Code works in large codebases: Best practices and where to start).",
+    "summary": "Anthropic blog on running Claude Code at scale — best practices from teams working across multi-million-line monorepos, decades-old legacy systems, and distributed microservices.",
     "topics": [
       "claude-code",
-      "dev-practices",
-      "agent-design"
+      "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "510.2K",
+    "views": "738.9K",
     "notes": "",
     "enriched": true,
-    "content": "ClaudeDevs @ClaudeDevs — What are best practices for running Claude Code at scale? New blog post on what we've learned from teams running it across multi-million-line monorepos, decades-old legacy systems, and distributed microservices: How Claude Code works in large codebases: Best practices and where to start | Claude. From claude.com",
-    "enrichment_status": "legacy-ok"
+    "content": "ClaudeDevs @ClaudeDevs. Best practices for running Claude Code at scale: new blog on lessons from teams running it across multi-million-line monorepos, decades-old legacy systems, and distributed microservices. 'How Claude Code works in large codebases: Best practices and where to start' (claude.com). 738.9K views. claude-code, dev-practices.\n\nHow Claude Code works in large codebases (Anthropic blog)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-19",
@@ -4589,22 +4660,23 @@
     "handle": "@dklineii",
     "subject": "Post by Dave Kline on X",
     "url": "https://x.com/dklineii/status/2056363703230980364",
-    "summary": "Dave Kline engagement-hook tweet: leaders worried about AI vs. leaders making themselves irreplaceable by becoming the AI expert in their company. Promises a 5-step plan in a thread. Content lives in the followups — only the framing is in the visible tweet.",
+    "summary": "Management thread: while most leaders worry about AI, a few become their company's AI expert and make themselves irreplaceable — a 5-step plan to become that leader.",
     "topics": [
-      "management",
-      "questionable"
+      "management"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "52.1K",
+    "views": "53.5K",
     "notes": "",
     "enriched": true,
-    "content": "Dave Kline @dklineii — While most leaders worry about AI, a few are becoming the AI expert in their company. They're making themselves irreplaceable. It's hard, but it's not complicated. Here's the 5-step plan to become that leader before the year is out:",
-    "enrichment_status": "legacy-ok"
+    "content": "Dave Kline @dklineii. While most leaders worry about AI, a few are becoming the AI expert in their company and making themselves irreplaceable. Thread: a 5-step plan to become that leader before year's end. 53.5K views. management.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-19",
@@ -4612,25 +4684,26 @@
     "handle": "@zodchiii",
     "subject": "Post by darkzodchi on X",
     "url": "https://x.com/zodchiii/status/2056336049589092866",
-    "summary": "darkzodchi quote-RTs his own article on Shopify's Claude Code setup, citing Head of Engineering Farhan Thawar: 23,000 engineers running multiple parallel Claude Code agents to automate 96% of coding by Q3. Hook is engagement-farmy and the 96% number is a Shopify ambition, not a measured result — but the underlying interview about how a 23,000-engineer org rolls out Claude Code at scale is worth the click for anyone setting up internal AI dev workflows.",
+    "summary": "Shopify Head of Engineering Farhan Thawar: 'if you don't figure out how to harness agents in 2026, you'll be behind.' A practical enterprise-AI-coding breakdown / Shopify AI playbook, linking a 'Claude Code setup behind Shopify's 23,000 engineers' article (racing to automate 96% of coding by Q3, many parallel Claude Code agents).",
     "topics": [
       "claude-code",
       "management",
-      "industry",
-      "questionable"
+      "dev-practices"
     ],
     "audience": [
-      "me",
+      "dev-team",
       "leadership",
-      "dev-team"
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "257.9K",
+    "views": "335K",
     "notes": "",
     "enriched": true,
-    "content": "darkzodchi @zodchiii — Shopify's Head of Engineering: 'If you don't figure out how to harness agents in 2026, you'll be behind.' This interview is the most practical breakdown of enterprise AI coding I've seen this year. Farhan Thawar explained the full Shopify AI playbook here. Watch the interview, then grab the exact template below. (Quote-RT: The Claude Code Setup Behind Shopify's 23,000 Engineers (Exact Config You Can Copy). Shopify's 23,000 engineers are racing to automate 96% of their coding by Q3 this year. They run multiple Claude Code agents in parallel, each handling a different part of the codebase while engineers...)",
-    "enrichment_status": "legacy-ok"
+    "content": "darkzodchi @zodchiii. Shopify's Head of Engineering Farhan Thawar: 'If you don't figure out how to harness agents in 2026, you'll be behind.' Practical breakdown of enterprise AI coding / the Shopify AI playbook. QUOTE ARTICLE: 'The Claude Code Setup Behind Shopify's 23,000 Engineers (Exact Config You Can Copy)' - Shopify racing to automate 96% of coding by Q3, running multiple Claude Code agents in parallel across the codebase. 335K views. claude-code, management, dev-practices.\n\nArticle: 'The Claude Code Setup Behind Shopify's 23,000 Engineers (Exact Config You Can Copy).'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-19",
@@ -4638,22 +4711,24 @@
     "handle": "@pauliusztin_",
     "subject": "Post by Paul Iusztin on X",
     "url": "https://x.com/pauliusztin_/status/2056272402414211175",
-    "summary": "Paul Iusztin recommends neo4j's open-source `agent-memory` repo (github.com/neo4j-labs/agent-memory or neo4j/agent-memory) as the best unified memory layer for AI agents via knowledge graphs — covering short-term, long-term, and reasoning memory with a clean ontology and extraction algorithms. Spent 2 days dissecting their code; full writeup coming on decodingai.com.",
+    "summary": "Calls Neo4j's open-source 'agent-memory' the best repo for a unified graph-based memory layer for AI agents — strong modeling of short/long/reasoning memory, ontology, and extraction algorithms; full write-up on decodingai.com.",
     "topics": [
       "agent-design",
-      "skills-mcp"
+      "research"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "28.4K",
+    "views": "29.6K",
     "notes": "",
     "enriched": true,
-    "content": "Paul Iusztin @pauliusztin_ — `agent-memory` by @neo4j is the best open-source repository for building a unified memory layer for AI agents via knowledge graphs. They did such an amazing job modeling short, long, and reasoning memory, their ontology, and extraction algorithms. After spending 2 days dissecting and testing their code, I wrote a full piece on decodingai.com explaining how it works. I will publish it tomorrow.",
-    "enrichment_status": "legacy-ok"
+    "content": "Paul Iusztin @pauliusztin_. 'agent-memory' by @neo4j is the best open-source repo for building a unified memory layer for AI agents via knowledge graphs - excellent modeling of short/long/reasoning memory, ontology, and extraction algorithms. Spent 2 days dissecting/testing the code; full write-up on decodingai.com. 29.6K views. agent-design, research.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-19",
@@ -4661,22 +4736,24 @@
     "handle": "@damidefi",
     "subject": "Post by Dami-Defi on X",
     "url": "https://x.com/damidefi/status/2056053698674270631",
-    "summary": "Dami-Defi (quote-RT of own article) on feeding MIT's 12 free graduate-level AI textbooks — written by the researchers who built the field — into Claude to rebuild his entire research system. Pitches that almost nobody is using these free books. Engagement-heavy framing but the underlying tip (free MIT AI curriculum + Claude as study partner) is real and worth bookmarking.",
+    "summary": "Fed MIT's 12 free graduate-level AI textbooks into Claude and rebuilt his research system around them. Links 'I Fed 12 Free MIT AI Textbooks Into Claude. It Rebuilt My Entire Research System.'",
     "topics": [
-      "claude-code",
       "research",
-      "questionable"
+      "claude-code",
+      "prompting"
     ],
     "audience": [
       "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "314.7K",
+    "views": "327.2K",
     "notes": "",
     "enriched": true,
-    "content": "Dami-Defi @DamiDefi — Life after discovering MIT put a world class AI education online for free. This is what happens when you actually feed all 12 into Claude. A completely rebuilt research system. (Quote-RT: I Fed 12 Free MIT AI Textbooks Into Claude. It Rebuilt My Entire Research System. MIT published 12 graduate-level AI textbooks written by the researchers who built the field. Every one is free. Almost nobody is using them. I downloaded all 12 books and fed them into a Claude...)",
-    "enrichment_status": "legacy-ok"
+    "content": "Dami-Defi @DamiDefi. MIT put 12 graduate-level AI textbooks online free (written by the researchers who built the field); fed all 12 into Claude and rebuilt his research system. QUOTE ARTICLE: 'I Fed 12 Free MIT AI Textbooks Into Claude. It Rebuilt My Entire Research System.' 327.2K views. research, claude-code, prompting.\n\nArticle: 'I Fed 12 Free MIT AI Textbooks Into Claude...'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-18",
@@ -4684,23 +4761,26 @@
     "handle": "@vtrivedy10",
     "subject": "Post by Viv on X",
     "url": "https://x.com/vtrivedy10/status/2056066419360743479",
-    "summary": "Introduces LangSmith Engine — LangChain's pitch for an always-on self-improvement loop: tracing on by default for every agent, SmithDB as agent-scale data infra, ambient agentic intelligence sweeping every trace for errors/insights, and auto-generated PRs+evals with human gating. Positions agent traces as the gold-mine data layer for 'always-on Continual Learning' across a company.",
+    "summary": "Viv on LangSmith Engine as an always-on self-improvement loop: tracing on for every agent, purpose-built SmithDB for agent-scale data, ambient intelligence over every trace to find errors/insights, and PRs/Evals generated with human gating — the first sparks of company-wide Continual Learning for agents.",
     "topics": [
       "agent-design",
-      "dev-practices"
+      "dev-practices",
+      "research"
     ],
     "audience": [
-      "me",
       "dev-team",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "25.8K",
+    "views": "29.8K",
     "notes": "",
     "enriched": true,
-    "content": "Viv (@Vtrivedy10) — May 17, 2026. 25.8K views.\n\"LangSmith Engine is how we're spinning the always-on, self-improvement loop for every agent\n- Tracing is on for every single agent\n- Purpose built infra with SmithDB to handle data at agent scale (more data than humans have ever produced will be produced by agents)\n- Ambient agentic intelligence applied to every Trace to find errors, product insights, or anything you want to look for (you can customize Engine to your needs)\n- PRs and Evals generated from this massive data with human gating/acceptance\nThe data our agents produce is a gold mine of information to make agents and systems better over time. The goal is that this flow shows users the first sparks of truly always-on Continual Learning for their agents across their entire company.\"\n",
-    "enrichment_status": "legacy-ok"
+    "content": "Viv @Vtrivedy10. LangSmith Engine spins the always-on self-improvement loop for every agent: tracing on for every agent; purpose-built infra (SmithDB) for agent-scale data (agents will produce more data than humans ever have); ambient agentic intelligence over every trace to find errors/product insights/custom checks; PRs and Evals generated from that data with human gating/acceptance. The data agents produce is a gold mine to improve agents over time; goal is the first sparks of always-on Continual Learning across a company's agents. 29.8K views. agent-design, dev-practices, research.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-18",
@@ -4708,22 +4788,25 @@
     "handle": "@suryanshti777",
     "subject": "Post by Suryansh Tiwari on X",
     "url": "https://x.com/suryanshti777/status/2056022182560665602",
-    "summary": "Pitches Anthropic's official claude-code-setup plugin (install: /plugin install claude-code-setup@claude-plugins-official) — scans your project and recommends hooks, skills, MCP servers, subagents, and automations, then sets them up step-by-step. Aimed at people running Claude Code vanilla.",
+    "summary": "Highlights Anthropic's official 'claude-code-setup' plugin that scans a project and recommends hooks, skills, MCP servers, subagents, and automations (/plugin install claude-code-setup@claude-plugins-official). A Community Note corrects the post: the plugin is read-only — it recommends but does NOT install or modify files.",
     "topics": [
       "claude-code",
-      "skills-mcp"
+      "skills-mcp",
+      "questionable"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "",
+    "views": "1.5M",
     "notes": "",
     "enriched": true,
-    "content": "Suryansh Tiwari (@Suryanshti777) — May 17, 2026.\n\"Claude Code feels completely different once you install this. Anthropic quietly released an official plugin called claude-code-setup and it basically turns Claude Code from 'pretty good' into an actual AI dev environment.\nIt scans your project and recommends:\n→ hooks\n→ skills\n→ MCP servers\n→ subagents\n→ automations\nThen sets everything up step-by-step for you. Most people are using Claude Code completely vanilla… which is why their experience feels messy. The real power comes from the ecosystem around it.\nInstall: /plugin install claude-code-setup@claude-plugins-official\"\nQuote tweet from Nainsi Dwivedi article: \"These 12 Claude Code Setup Tricks Made AI Feel Like a Real Engineer\"\n",
-    "enrichment_status": "legacy-ok"
+    "content": "Suryansh Tiwari @Suryanshti777. Anthropic quietly released an official plugin 'claude-code-setup' that scans your project and recommends hooks, skills, MCP servers, subagents, and automations. Install: /plugin install claude-code-setup@claude-plugins-official. NOTE (Community Note correction): the plugin is READ-ONLY - it analyzes and recommends but does NOT install or set things up / modify files (the tweet's 'sets everything up step-by-step' is inaccurate). QUOTE ARTICLE: 'These 12 Claude Code Setup Tricks Made AI Feel Like a Real Engineer.' 1.5M views. claude-code, skills-mcp, questionable.\n\nArticle: 'These 12 Claude Code Setup Tricks Made AI Feel Like a Real Engineer.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-18",
@@ -4731,21 +4814,23 @@
     "handle": "@ayi_ainotes",
     "subject": "Post by AYi on X",
     "url": "https://x.com/ayi_ainotes/status/2055954675526934642",
-    "summary": "Translated-from-Chinese hype post claiming Garry Tan's just-released 'GBrain' is a personal knowledge OS that solves AI agents' memory problem — '8 layers of RAG' instead of 4, lifetime memory + self-evolution, plugs into Claude Code/OpenClaw/Hermes. Claims 17,888 pages / 4,383 people / 723 companies in Garry's own production env. Heavy on hype framing — worth verifying the claims behind GBrain itself.",
+    "summary": "Enthusiastic (Chinese) take on Garry Tan's GBrain — 'not another RAG toy' but a complete personal-knowledge OS with 8 layers (vs the usual 4): install on OpenClaw/Hermes/Claude Code to remember relationships, decision trajectory, and long-term cognitive evolution, turning per-chat starts into lifelong memory + self-evolution. Garry's production ran 17,888 pages / 4,383 people / 723 companies.",
     "topics": [
-      "questionable",
-      "agent-design"
+      "agent-design",
+      "skills-mcp"
     ],
     "audience": [
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "177.9K",
     "notes": "",
     "enriched": true,
-    "content": "AYi (@AYi_AInotes) — Translated from Chinese.\n\"Damn, this thing Garry Tan just released has straight-up shattered the ceiling for personal AI. The fatal flaw that all AI Agents have always had is finally solved.\nGarry Tan's GBrain, released yesterday, isn't just another RAG toy—we can consider it a complete personal knowledge operating system.\nInstall it on your OpenClaw or Hermes or Claude Code, and it'll always remember your relationships, your decision-making paths, your long-term cognitive evolution.\nMost people think RAG only has 4 layers, GBrain takes it straight to 8 layers, The first 4 layers are a comprehensive upgrade to basic retrieval, The real killer difference is in the last 4 layers.\nEquivalent to upgrading personal AI from starting from zero every conversation to lifetime memory plus self-evolution.\nGarry's own production environment has already run 17,888 pages, 4,383 people, 723 companies.\"\n",
-    "enrichment_status": "legacy-ok"
+    "content": "AYi @AYi_AInotes (Chinese). Enthusiastic take on Garry Tan's GBrain - not another RAG toy but a complete personal-knowledge operating system. Install it on OpenClaw/Hermes/Claude Code and it remembers your relationships, decision trajectory, long-term cognitive evolution. Most think RAG has 4 layers; GBrain has 8 - first 4 upgrade base retrieval, the killer differentiation is the back 4, turning personal AI from starting-from-zero each chat into lifelong memory + self-evolution. Garry's production already ran 17,888 pages, 4,383 people, 723 companies. Usage: hand the install link to your agent, or CLI setup in 30 min; always edit Markdown first then sync (highest-priority source). QUOTE: Garry Tan - GBrain is a knowledge system, not RAG in a box; 8 layers make OpenClaw/Hermes feel clairvoyant. 177.9K views. agent-design, skills-mcp.\n\nGBrain is a knowledge system, not RAG in a box — 8 layers make agents feel clairvoyant.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-18",
@@ -4753,22 +4838,25 @@
     "handle": "@_vmlops",
     "subject": "Post by Vaishnavi on X",
     "url": "https://x.com/_vmlops/status/2055887618303570151",
-    "summary": "Recommends walkinglabs.github.io/learn-harness-engineering/en/ as the best site to learn harness engineering. Worth bookmarking — harness engineering is the recurring theme this week (OpenAI/Codex, Vasilije's memory-as-harness piece).",
+    "summary": "Recommends walkinglabs.github.io/learn-harness-engineering as the best site to learn harness engineering.",
     "topics": [
       "agent-design",
-      "dev-practices"
+      "dev-practices",
+      "research"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "211.3K",
+    "views": "305.4K",
     "notes": "",
     "enriched": true,
-    "content": "Vaishnavi (@_vmlops) — May 16, 2026. 211.3K views.\n\"This is the best site on the internet to learn harness engineering\nhttps://walkinglabs.github.io/learn-harness-engineering/en/\"\n",
-    "enrichment_status": "legacy-ok"
+    "content": "Vaishnavi @_vmlops. 'The best site on the internet to learn harness engineering': walkinglabs.github.io/learn-harness-engineering/en/. 305.4K views. agent-design, dev-practices, research.\n\nLearn Harness Engineering",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-18",
@@ -4776,22 +4864,25 @@
     "handle": "@tricalt",
     "subject": "Post by Vasilije on X",
     "url": "https://x.com/tricalt/status/2055876832797581406",
-    "summary": "@tricalt argues memory and skills are the same harness — both define an agent's 'world model' (codebase layout, tool schemas, file system, conversation history, user preferences). Cites Letta's @sarahwooders/@hwchase17 framing of memory-as-harness alongside his earlier post that skills aren't static files and degrade silently — needing an Observe→Inspect→Amend→Evaluate loop.",
+    "summary": "'Memory isn't a plugin. Skills aren't a plugin. They're the same harness' — both are a world model (everything the agent uses to predict its next action). Memory observes the world; skills (SKILL.md procedures) codify it into rules and degrade silently without an Observe→Inspect→Amend→Evaluate loop. Cognee stores skills and memory in one graph so a skill is a traceable, evolving memory node.",
     "topics": [
       "agent-design",
-      "skills-mcp"
+      "skills-mcp",
+      "research"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "53K",
+    "views": "56.8K",
     "notes": "",
     "enriched": true,
-    "content": "Vasilije\n@tricalt\nMemory isn't a plugin. Skills aren't a plugin. They're the same harness.\n10\n66\n518\n53K\nMemory APIs are not a viable product category, and skill systems are just markdown. We've been saying it for a while.\n@sarahwooders and @hwchase17 made the case last month that memory isn't a plugin and that it is the harness instead. \nI made the same argument earlier, from the other side. We argued in a post that got 1.7M views that skills aren't static files. Skills degrade silently in dynamic environments. They need a loop — Observe → Inspect → Amend → Evaluate.\nBoth arguments are in essence about the same harness. A world model.\nTreat skills and memory as the same harness\nA world model is whatever the agent is aware of and what it uses to predict the next action it should take.  In an agent harness, it is a broad state of all things you touch: the codebase layout, the tool schemas, the file system, the last 20 turns of conversation and the user's preferen\n",
-    "enrichment_status": "legacy-ok"
+    "content": "Vasilije @tricalt. X ARTICLE: 'Memory isn't a plugin. Skills aren't a plugin. They're the same harness.' Memory APIs aren't a viable product category and skill systems are just markdown; both are the same harness = a world model (everything the agent is aware of and uses to predict the next action: codebase layout, tool schemas, filesystem, last turns, user preferences). Skills are the part that records what to do (SKILL.md = procedure-level claim); memory observes the world, skills codify it into a rule. Skills degrade silently in dynamic environments and need a loop: Observe -> Inspect -> Amend -> Evaluate. Cognee stores skills and memory in the same graph store; cognee.remember('skills/') ingests skills; a SkillChangeEvent emits memory events so a skill is a traceable, evolving memory node. 'If your memory system can't route a skill, it's not memory, let alone a world model.' Open-source. 56.8K views. agent-design, skills-mcp, research.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-18",
@@ -4799,24 +4890,26 @@
     "handle": "@santtiagom_",
     "subject": "Post by santi on X",
     "url": "https://x.com/santtiagom_/status/2055751665345798628",
-    "summary": "Recommends OpenAI's article on Harness Engineering and Codex, which describes how they used agents to build an internal product with ~1M lines of code: preventing AI-generated code from degrading over time, using tests and CI as more reliable constraints than prompts, keeping code/docs readable for agents, and how engineers' work shifts when agents start programming. 'Much of the challenge lies in the system around the model.'",
+    "summary": "Praises an OpenAI article on Harness Engineering and Codex — how they used agents to build an internal ~1M-line product: preventing agent-generated code from degrading, using tests/CI as more reliable constraints than prompts, keeping code/docs readable for agents, and how engineers' work changes when agents program.",
     "topics": [
-      "agent-design",
       "dev-practices",
-      "claude-code"
+      "agent-design",
+      "research"
     ],
     "audience": [
-      "me",
       "dev-team",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "81.3K",
+    "views": "89.9K",
     "notes": "",
     "enriched": true,
-    "content": "santi (@santtiagom_) — Translated from Spanish. May 16, 2026. 81.3K views.\n\"Very good article from OpenAI about Harness Engineering and Codex.\nThey explain how they used agents to build an internal product with ~1M lines of code and what problems arose in the process.\nSome interesting ideas:\n• preventing code generated by agents from degrading over time\n• using tests and CI as more reliable constraints than prompts\n• keeping code and documentation readable for agents\n• how engineers' work changes when agents start to program\nMuch of the challenge lies in the system around the model.\"\n",
-    "enrichment_status": "legacy-ok"
+    "content": "santi @santtiagom_ (Translated from Spanish). Very good OpenAI article on Harness Engineering and Codex: how they used agents to build an internal product with ~1M lines of code and the problems that arose. Ideas: preventing agent-generated code from degrading over time; using tests and CI as more reliable constraints than prompts; keeping code and docs readable for agents; how engineers' work changes when agents start programming. Much of the challenge is the system around the model. 89.9K views. dev-practices, agent-design, research.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-18",
@@ -4824,21 +4917,24 @@
     "handle": "@jaynitmakwana",
     "subject": "Post by Jaynit Makwana on X",
     "url": "https://x.com/jaynitmakwana/status/2055594459426070640",
-    "summary": "Engagement-farmed pitch ('SHOCKING') promising 10 Claude prompts derived from Barbara Oakley's 'Learning How to Learn' course. Underlying content (Oakley's learning-science techniques) is legitimate; the framing is clickbait. Useful if you actually want spaced-repetition / interleaving / focused-vs-diffuse prompts for your own learning.",
+    "summary": "Turns Barbara Oakley's 'Learning How to Learn' science (rereading and highlighting don't work; intuition about learning misleads) into 10 Claude prompts that build a personalized study system from how the brain actually acquires skill.",
     "topics": [
-      "questionable",
-      "prompting"
+      "prompting",
+      "general",
+      "claude-code"
     ],
     "audience": [
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "167.1K",
+    "views": "173.5K",
     "notes": "",
     "enriched": true,
-    "content": "Jaynit Makwana (@JaynitMakwana) — May 16, 2026. 167.1K views.\nENGAGEMENT FARM: \"SHOCKING: A professor who flunked math... reverse-engineering how learning actually works...\" Pitches 10 Claude prompts based on Barbara Oakley's \"Learning How to Learn\" course. Listicle-style hook.\n",
-    "enrichment_status": "legacy-ok"
+    "content": "Jaynit Makwana @JaynitMakwana. Barbara Oakley (failed math, became engineering professor) created 'Learning How to Learn,' the most popular online course ever (~3M people). Key claims: rereading and highlighting don't work; intuition about learning misleads. Turned Oakley's learning science into 10 Claude prompts - describe what you want to learn and it builds a study system based on how your brain acquires skill. 173.5K views. prompting, general, claude-code.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-16",
@@ -4846,22 +4942,23 @@
     "handle": "@daniel_mac8",
     "subject": "Post by Daniel Mac on X",
     "url": "https://x.com/daniel_mac8/status/2055838212069773456",
-    "summary": "Dan McAteer flags a continual-learning research result: fast-slow training (FST) treats model parameters as \"slow\" weights and optimized context as \"fast\" weights. Claims FST beats weights-only training on every axis measured across math, code, and general reasoning benchmarks. Casual hype framing (\"babe, wake up\") but substantive research signal — fits the broader continual-learning thread (alongside ar0cket1's OPSD work).",
+    "summary": "Flags a continual-learning result: fast-slow training (FST) treats model params as 'slow' weights and optimized context as 'fast' weights, reportedly beating weights-only training on every measured axis across math, code, and general reasoning.",
     "topics": [
-      "research",
-      "agent-design"
+      "research"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "37.4K",
+    "views": "42.2K",
     "notes": "",
     "enriched": true,
-    "content": "Dan McAteer (@daniel_mac8) — May 16, 2026. 37.4K views.\n\"babe, wake up. new continual learning breakthrough just dropped.\nfast-slow training (fst) treats model params as 'slow' weights and optimized context as 'fast weights'.\n'across math, code, and general reasoning benchmarks, fst beats weights-only training on *every* axis we measured.'\"",
-    "enrichment_status": "legacy-ok"
+    "content": "Dan McAteer @daniel_mac8. New continual-learning result: fast-slow training (FST) treats model params as 'slow' weights and optimized context as 'fast' weights. 'Across math, code, and general reasoning benchmarks, FST beats weights-only training on every axis we measured.' 42.2K views. research.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-16",
@@ -4869,23 +4966,25 @@
     "handle": "@kloss_xyz",
     "subject": "Post by klöss on X",
     "url": "https://x.com/kloss_xyz/status/2055477217552142782",
-    "summary": "Shares 7 production-grade /goal templates for Codex / Claude Code / Hermes: (1) Ideation/Interrogation, (2) Planning & Documentation, (3) Build & Implementation, (4) Refactoring/Restructuring, (5) Consolidation, (6) Hardening, (7) Migrations. Use 1–3 in order; 4–7 whenever. Follow-up to his earlier post arguing /goal is the most underused command and that 'make no mistakes' isn't a goal.",
+    "summary": "Seven production-grade /goal templates (Ideation/Interrogation, Planning & Documentation, Build & Implementation, Refactoring, Consolidation, Hardening, Migrations; use 1-3 in order, 4-7 as needed), building on the argument that /goal is the best command in Codex/Claude Code/Hermes and most use it wrong.",
     "topics": [
-      "claude-code",
       "prompting",
+      "claude-code",
       "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "86.7K",
+    "views": "89.7K",
     "notes": "",
     "enriched": true,
-    "content": "klöss (@kloss_xyz) — May 15, 2026. 86.7K views.\n\"People loved my Codex /goal share, so I built 7 production grade templates covering use cases:\n1. Ideation/Interrogation\n2. Planning & Documentation\n3. Build & Implementation\n4. Refactoring/Restructuring\n5. Consolidation\n6. Hardening\n7. Migrations\nuse 1-3 in order, 4-7 whenever\"\nQuote tweet (self) May 12: \"/goal is the best command in Codex, Claude Code, and Hermes right now. And most are using it wrong. They write 'make no mistakes'. And pray. Here's how to structure yours for a mission, to rank your uncertainties before acting, to kill scope creep, and to close every loop.\"\n",
-    "enrichment_status": "legacy-ok"
+    "content": "kloss @kloss_xyz. Built on the popular Codex /goal share: 7 production-grade /goal templates - 1) Ideation/Interrogation, 2) Planning & Documentation, 3) Build & Implementation, 4) Refactoring/Restructuring, 5) Consolidation, 6) Hardening, 7) Migrations (use 1-3 in order, 4-7 as needed). QUOTE: '/goal is the best command in Codex, Claude Code, and Hermes; most use it wrong (write \"make no mistakes\" and pray). Structure it for a mission, rank uncertainties before acting, kill scope creep, close every loop.' 89.7K views. prompting, claude-code, dev-practices.\n\n/goal: structure it for a mission, rank uncertainties before acting, kill scope creep, close every loop.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-16",
@@ -4893,21 +4992,24 @@
     "handle": "@erikstownsend",
     "subject": "Post by Erik Townsend 🛢️ on X",
     "url": "https://x.com/erikstownsend/status/2055444404337582106",
-    "summary": "Promotes a 10-tweet thread by ex-Goldman commodities chief Jeff Currie (@CommodMkt) arguing the most asymmetric trade in modern financial history is in the physical assets AI requires to run — power, copper, uranium, etc. — because capital has chased the AI software trade and ignored the infrastructure. Tangential to AI but useful market-context read.",
+    "summary": "Erik Townsend flags ex-Goldman commodities chief Jeff Currie's thread calling AI's physical inputs (energy/commodities) 'the most asymmetric trade in modern financial history' — capital chased the AI software trade while ignoring the physical assets AI needs to run.",
     "topics": [
-      "industry"
+      "industry",
+      "general"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "1.3M",
+    "views": "1.4M",
     "notes": "",
     "enriched": true,
-    "content": "Erik Townsend (@ErikSTownsend) — May 15, 2026. 1.3M views.\n\"Ex-GS Commodities Chief Jeff Currie's appearance on X is a historic event. Jeff is an absolute must-follow, and the below 10-tweet is an absolute must-read. Heed this advice: Make the time to read the whole thing, all 10 tweets, carefully, at least twice.\"\nQuote tweet from Jeffrey Currie (@CommodMkt) May 14: \"Welcome to the most asymmetric trade in modern financial history. The thread below lays out why. The opportunity exists because capital has chased the AI trade while ignoring the physical assets AI requires to run — assets that have quietly become the best-performing asset class...\"\n",
-    "enrichment_status": "legacy-ok"
+    "content": "Erik Townsend @ErikSTownsend. Ex-Goldman commodities chief Jeff Currie's X appearance - calls a 10-tweet thread a must-read. QUOTE: Jeffrey Currie @CommodMkt - 'the most asymmetric trade in modern financial history': capital chased the AI trade while ignoring the physical assets AI requires to run (energy/commodities), which have quietly become the best-performing asset class. 1.4M views. Commodities/investing angle on AI's physical-infrastructure demand. industry, general.\n\nThread: the physical assets AI requires have quietly become the best-performing asset class.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-15",
@@ -4915,23 +5017,25 @@
     "handle": "@nurijanian",
     "subject": "Post by George from 🕹prodmgmt.world on X",
     "url": "https://x.com/nurijanian/status/2055333397611077881",
-    "summary": "Three skills for writing software requirements with AI: /grill-me by @mattpocockuk (github.com/mattpocock/skills), /shaping by @rjs (github.com/rjs/shaping-skills), and a new /make-requirements-great by the author drawing on classic business-analyst literature (github.com/gnurio/nurijanian-skills/tree/main/skills/make-requirements-great). Aimed at the PM-meets-skills audience.",
+    "summary": "Favorite ways to 'write requirements' with AI: /grill-me (mattpocock/skills), /shaping (rjs/shaping-skills), and a new skill built from business-analyst literature ('make-requirements-great') — reviving useful BA rigor that got dropped as teams went agile/sloppy.",
     "topics": [
       "skills-mcp",
-      "claude-code",
-      "dev-practices"
+      "dev-practices",
+      "prompting"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "46.6K",
+    "views": "47.8K",
     "notes": "",
     "enriched": true,
-    "content": "George from prodmgmt.world (@nurijanian) — May 15, 2026. 46.6K views.\n\"My favorite ways to 'write requirements' with AI:\n1. /grill-me by @mattpocockuk — github.com/mattpocock/skills\n2. /shaping by @rjs — github.com/rjs/shaping-skills\nA strong contender is this new skill I made based on a bunch of hardcore business analyst literature I had around. Half of the old stuff is overkill, but there are some good parts that we mostly forgot as we got sloppy/agile: github.com/gnurio/nurijanian-skills/tree/main/skills/make-requirements-great\"\n",
-    "enrichment_status": "legacy-ok"
+    "content": "George @nurijanian (prodmgmt.world). Favorite ways to 'write requirements' with AI: 1) /grill-me by @mattpocockuk (github.com/mattpocock/skills), 2) /shaping by @rjs (github.com/rjs/shaping-skills), and a new skill he built from hardcore business-analyst literature - 'make-requirements-great' (github.com/gnurio/nurijanian-skills). Note: some old BA rigor is overkill but useful parts got forgotten as teams got sloppy/agile. 47.8K views. skills-mcp, dev-practices, prompting.\n\ngnurio/nurijanian-skills (make-requirements-great)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-15",
@@ -4939,23 +5043,25 @@
     "handle": "@dabit3",
     "subject": "Post by nader dabit on X",
     "url": "https://x.com/dabit3/status/2055319214202777894",
-    "summary": "Explains Agent Hooks — user-defined handlers attached to lifecycle points in an agent session, narrowed by matchers/filters, returning context or making decisions or running side effects. Pitch: 'use prompts for guidance, use hooks for behavior that should run every time.' Move deterministic rules (tests, policy checks, runbooks) out of the model's discretion and into hooks. Markdown + example code on GitHub.",
+    "summary": "'Agent Hooks: Deterministic Control for Agent Workflows' — hooks attach handlers to lifecycle points (SessionStart, UserPromptSubmit, PreToolUse, PostToolUse, Stop, SessionEnd) so scripts/tests/policy run every time instead of relying on the model to remember. Operating model: event → matcher → handler → outcome. Rule of thumb: 'always/never/block/record/run/verify' belongs in a hook. Includes a demo and per-runtime notes (Claude Code, Codex, Cursor, Devin); layer prompts (guidance) with hooks (controls), CI, and human review.",
     "topics": [
+      "dev-practices",
       "agent-design",
-      "claude-code",
-      "dev-practices"
+      "claude-code"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "75K",
+    "views": "79.1K",
     "notes": "",
     "enriched": true,
-    "content": "nader dabit (@dabit3) — 75K views.\n\"Agent Hooks: Deterministic Control for Agent Workflows. Also available as Markdown on GitHub.\nHooks make the agent workflow programmable. If you've ever reminded an agent twice to avoid a file, run a test, or follow a release rule, you have already found a use case for hooks.\nHooks enable this by attaching user-defined handlers to specific lifecycle points in an agent session. A handler receives event data, can be narrowed by an optional matcher or filter, and can return context, make a decision, or perform a side effect.\nThe main value proposition is deterministic control: rules already captured in scripts, tests, policy checks, and runbooks can run at known lifecycle points in the agent workflow instead of depending on the model to remember and voluntarily follow them.\nUse prompts for guidance. Use hooks for behavior that should run every time.\"\n",
-    "enrichment_status": "legacy-ok"
+    "content": "nader dabit @dabit3. X ARTICLE 'Agent Hooks: Deterministic Control for Agent Workflows.' Hooks attach user-defined handlers to lifecycle points so rules in scripts/tests/policy/runbooks run at known points instead of relying on the model to remember them. 'Use prompts for guidance; use hooks for behavior that should run every time.' Operating model: event -> optional matcher/filter -> handler -> outcome. Six core lifecycle points: SessionStart (load repo conventions/context), UserPromptSubmit (inspect/route/add context or block bad prompts), PreToolUse (block/approve/modify a tool call before it runs - e.g. protected paths generated/.env/.git, dangerous shell commands), PostToolUse (run tests/format/scan/log after a successful call, persist state), Stop (block completion until a condition like a passing quality gate is met), SessionEnd (final audit log/metrics/cleanup). Rule of thumb: when a requirement says 'always/never/block/record/run/verify' it belongs in a hook. Includes a checkout-calculator demo and per-runtime notes (Claude Code, Codex, Cursor, Devin). Layering: project instructions (style/architecture), hooks (context/policy/gates/logs), CI (independent verification), human review (judgment/risk). Adoption: start with one pre-action hook blocking protected-path edits, then a post-action quality gate + completion gate. 79.1K views. dev-practices, agent-design, claude-code.\n\nAgent Hooks: Deterministic Control for Agent Workflows (full article)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-15",
