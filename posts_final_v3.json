@@ -2411,23 +2411,25 @@
     "handle": "@vtrivedy10",
     "subject": "Post by Viv on X",
     "url": "https://x.com/vtrivedy10/status/2063429138304668093",
-    "summary": "Default recipe for optimizing Agent = Model + Harness: (1) build v1 with a sensible base harness plus task-specific prompting/tools, (2) harness engineering against prod-like eval tasks, (3) SFT from mined traces or synthetic data (good for distilling a cheaper model), (4) RL if you can build environments/rewards, (5) light harness tweaks to finish.",
+    "summary": "A default recipe for optimizing Agent = Model + Harness, 'training' both: (1) build v1 on a sensible base harness with task-specific prompting/tools, (2) harness-engineer against prod-like eval tasks (often enough on its own), (3) SFT on mined traces or synthetic data (good for distilling a cheaper model), (4) RL if you can design environments/rewards to push past SFT copying, (5) light harness engineering again on the trained model. Argues harness engineering will be the dominant optimization lever and most companies are still at steps 1-2; links the 'Anatomy of an Agent Harness' article.",
     "topics": [
       "agent-design",
-      "research",
-      "prompting"
+      "prompting",
+      "research"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "57.3K",
     "notes": "",
     "enriched": true,
-    "content": "Recipe to optimize Agent = Model + Harness: 1) build v1 with base harness + task prompting/tools; 2) harness engineering with eval tasks matching prod; 3) SFT from traces or synthetic data (distillation to cheaper model); 4) RL if bandwidth to build environments/rewards; 5) light harness engineering again.",
-    "enrichment_status": "legacy-ok"
+    "content": "Viv @Vtrivedy10. Default recipe to optimize Agent = Model + Harness; you should 'train' both. 1) Build v1 with sensible base harness + task-specific prompting/tools. 2) Harness engineering using eval tasks matching prod (often enough; collect traces, mine patterns, tweak). 3) SFT from trace data or synthetic (good for distillation to cheaper model). 4) RL if you have bandwidth to design environments/rewards - push past SFT 'copying'. 5) Light harness engineering again with trained model. Loop will be productized as general recipe. Still earliest innings; harness engineering will be dominant way to optimize agents. QUOTE ARTICLE 'The Anatomy of an Agent Harness' - Agent = Model + Harness; harness engineering builds systems around models to turn them into work engines. 57.3K views.\n\nArticle: 'The Anatomy of an Agent Harness' — Agent = Model + Harness; harness engineering turns intelligence into a work engine.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-07",
@@ -2829,22 +2831,24 @@
     "handle": "@polydao",
     "subject": "Post by Mr. Buzzoni on X",
     "url": "https://x.com/polydao/status/2060964743402455212",
-    "summary": "Engagement-farmed thread (ALL CAPS hype) citing Karpathy's 'we're in the 1960s of AI' / software-3.0 framing and pointing at the author's own listicle article 'I Searched the Whole Claude Skills Ecosystem - These Are the Ones That Matter [Full GitHub Links]' — 32 Claude skills.",
+    "summary": "Engagement-farmed ALL-CAPS thread riffing on Karpathy's 'we're in the 1960s of AI' / software-3.0 framing to push the author's own listicle article '...These Are the Ones That Matter [Full GitHub Links]' cataloguing 32 Claude skills. Clickbait wrapper, but the underlying skills roundup may be worth a skim.",
     "topics": [
       "claude-code",
-      "skills-mcp",
-      "questionable"
+      "questionable",
+      "skills-mcp"
     ],
     "audience": [
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "542.7K",
+    "views": "565.9K",
     "notes": "",
     "enriched": true,
-    "content": "KARPATHY WAS RIGHT. 40-min YC lecture, software 3.0 LLMs as OS, 32 skills listicle.",
-    "enrichment_status": "legacy-ok"
+    "content": "Mr. Buzzoni @polydao. KARPATHY WAS RIGHT. THIS 40-MINUTE Y COMBINATOR LECTURE PROVES IT. Karpathy said we're in the 1960s of AI - most people using Claude Opus 4.8 still acting like search engine. software 3.0 - LLMs as operating systems not chatbots. autonomous agents that run entire workflows. the 32 skills in this article are how you cross that line. bookmark this. QUOTE: article 'I Searched the Whole Claude Skills Ecosystem - These Are the Ones That Matter [Full GitHub Links]'. 565.9K views. ALL CAPS engagement farming.\n\nArticle: 'I Searched the Whole Claude Skills Ecosystem — These Are the Ones That Matter [Full GitHub Links]' — 32 Claude skills, LLMs-as-OS framing.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-31",
@@ -2898,22 +2902,24 @@
     "handle": "@0xsero",
     "subject": "Post by 0xSero on X",
     "url": "https://x.com/0xsero/status/2060128492247740640",
-    "summary": "Recommends Peter Steinberger's article at steipete.me titled 'Just Talk To It - the no-bs Way of Agentic Engineering' — pitches a conversational, no-ceremony workflow for working with coding agents rather than elaborate prompting scaffolds.",
+    "summary": "Recommends Peter Steinberger's 'Just Talk To It — the no-bs Way of Agentic Engineering' (steipete.me): after trying every elaborate workflow, the author keeps returning to a conversational, no-ceremony way of working with coding agents rather than heavy prompting scaffolds.",
     "topics": [
       "agent-design",
       "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "9.7K",
+    "views": "9,809",
     "notes": "",
     "enriched": true,
-    "content": "Peter Steinberger article 'Just Talk To It - the no-bs Way of Agentic Engineering' steipete.me",
-    "enrichment_status": "legacy-ok"
+    "content": "0xSero @0xSero. I've tried every way of working with these things, yet I end up back here. 'Just Talk To It - the no-bs Way of Agentic Engineering' | Peter Steinberger. From steipete.me. 9,809 views.\n\nJust Talk To It — the no-bs Way of Agentic Engineering",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-29",
@@ -3133,7 +3139,7 @@
     "handle": "@l1vsun",
     "subject": "Post by Livsun on X",
     "url": "https://x.com/l1vsun/status/2059707097583906917",
-    "summary": "Off-topic trading content — pitches Markov chains for market state transitions (trending/ranging/reversing) with claimed Renaissance Technologies framing. Engagement-farmed, not AI/dev material.",
+    "summary": "Off-topic trading content dressed as a discovery: pitches Markov-chain state machines (trending/ranging/reversing transition matrix + Kelly sizing) with a Renaissance Technologies '66% annual returns' framing, promoting a quant listicle. Engagement-farmed, not AI/dev material.",
     "topics": [
       "questionable"
     ],
@@ -3142,11 +3148,13 @@
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "375.9K",
     "notes": "",
     "enriched": true,
-    "content": "Markov chains for trading state transitions. Not AI/dev related.",
-    "enrichment_status": "legacy-ok"
+    "content": "Livsun @L1vsun. a russian mathematician solved trading in 1906. andrei markov proved markets aren't random - state machines. trending/ranging/reversing states, transition matrix, kelly sizing. renaissance 37 yrs 66% returns. 200 lines python. QUOTE: Alex @de1lymoon article 'How To Use Markov Chains To Win Every Single Trade + [Quant Framework]' Polymarket quants. 375.9K views. Off-topic trading engagement farming, not AI/dev.\n\nArticle: 'How To Use Markov Chains To Win Every Single Trade + [Quant Framework]' — Polymarket state-model framing.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-28",
@@ -6635,22 +6643,24 @@
     "handle": "@tom_doerr",
     "subject": "Post by Tom Dörr on X",
     "url": "https://x.com/tom_doerr/status/2050312101504094651",
-    "summary": "Curated awesome-list at github.com/EvoMap/awesome-agent-evolution covering AI agent evolution, memory systems, and self-improvement.",
+    "summary": "Points to a curated GitHub list on AI agent evolution, memory systems, and self-improvement (github.com/EvoMap/awesome-agent-evolution) — a reference index for the self-improving-agent literature.",
     "topics": [
       "agent-design",
       "research"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "5,637",
+    "views": "5,835",
     "notes": "",
     "enriched": true,
-    "content": "Curated list of AI agent evolution, memory systems, and self-improvement",
-    "enrichment_status": "legacy-ok"
+    "content": "Tom Dorr @tom_doerr. Curated list of AI agent evolution, memory systems, and self-improvement. github.com/EvoMap/awesome-agent-evolution. 5,835 views.\n\nawesome-agent-evolution — curated list",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-02",
@@ -6799,22 +6809,24 @@
     "handle": "@xdotli",
     "subject": "Post by Xiangyi Li on X",
     "url": "https://x.com/xdotli/status/2049903693143609627",
-    "summary": "One-liner endorsement quote-tweeting an article about reducing entropy/non-determinism in agentic systems — Xiangyi (founder benchflow_ai, creator of SkillsBench/ClawsBench) calls it a must-read. Quoted article URL not surfaced; check thread for context.",
+    "summary": "Short endorsement — 'must read for everyone who wants to reduce the entropy of their agentic systems' — pointing at evals/environments work (benchflow_ai). Framing: disciplined evals as the way to tame nondeterminism in agent systems.",
     "topics": [
       "agent-design",
       "research"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "49.5K",
+    "views": "51.5K",
     "notes": "",
     "enriched": true,
-    "content": "must read for everyone who wants to reduce the entropy of their agentic systems",
-    "enrichment_status": "legacy-ok"
+    "content": "Xiangyi Li @xdotli. must read for everyone who wants to reduce the entropy of their agentic systems. (quote/link to evals+envs @benchflow_ai content). 51.5K views.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-02",
@@ -7653,22 +7665,24 @@
     "handle": "@aakashgupta",
     "subject": "Post by Aakash Gupta on X — feels like correspondence",
     "url": "https://x.com/aakashgupta/status/2046371351016161745",
-    "summary": "Essay arguing Yann LeCun left Meta because Zuck wouldn't bet the company on JEPA, then his group shipped the first end-to-end JEPA trained from raw pixels — 15M parameters, single GPU, a few hours. Frames it as a Xerox PARC pattern: Meta had the architecture, dissolved the robotics team, and let the breakthrough walk out the door while humanoid robotics competitors (Figure AI, Tesla Optimus, World Labs) burn capital on expensive foundation-model pipelines. Jeremy flagged 'feels like correspondence' (thoughtful essay style).",
+    "summary": "Long analysis of Yann LeCun's post-Meta 'LeWorldModel' JEPA result: first JEPA that trains end-to-end from raw pixels (15M params, single GPU, hours), replacing a pile of collapse-prevention heuristics with one Gaussian-normality regularizer (hyperparam search O(n^6)->O(log n)). Claims 200x fewer tokens/observation than DINO-WM and planning 47s->0.98s/cycle — a potential reset of the humanoid-robotics cost structure, framed as Meta's Xerox-PARC moment.",
     "topics": [
       "industry",
       "research"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "66.1K",
+    "views": "1.1M",
     "notes": "Jeremy modified subject: 'feels like correspondence'",
     "enriched": true,
-    "content": "LeCun's post-Meta JEPA breakthrough: 15M params, single GPU, end-to-end from raw pixels",
-    "enrichment_status": "legacy-ok"
+    "content": "Aakash Gupta @aakashgupta. Long analysis: Yann LeCun left Meta because Zuckerberg wouldn't bet on JEPA. LeCun's new group (AMI Labs) dropped first JEPA that trains end-to-end from raw pixels: 15M params, single GPU, few hours. LeWorldModel: one regularizer (project latent embeddings onto random directions, normality test, penalize deviation from Gaussian) replaces pile of heuristics; hyperparam search O(n^6)->O(log n). Downstream: 200x fewer tokens/obs than DINO-WM, planning 47s->0.98s/cycle, 48x faster matching foundation models on Push-T and 3D cube control. Learned physics without being told. Contrast to Figure AI ($39B), Tesla Optimus, World Labs ($230M). Xerox PARC pattern: Meta had architecture+scientist, dissolved robotics team, watched exit. 1.1M views.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-21",
@@ -7676,21 +7690,23 @@
     "handle": "@tom_doerr",
     "subject": "Post by Tom Dörr on X",
     "url": "https://x.com/tom_doerr/status/2046369616411185635",
-    "summary": "Recursive self-improving agent harness — a tool that lets an agent iterate on its own harness/context. Repo: github.com/greyhaven-ai/autocontext. Short announcement-style post.",
+    "summary": "Shares a recursive self-improving agent harness (github.com/greyhaven-ai/autocontext) — an agent scaffold designed to iterate on and improve its own context/behavior.",
     "topics": [
       "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "7,189",
+    "views": "9,719",
     "notes": "",
     "enriched": true,
-    "content": "Recursive self-improving agent harness github.com/greyhaven-ai/autocontext",
-    "enrichment_status": "legacy-ok"
+    "content": "Tom Dorr @tom_doerr. Recursive self-improving agent harness. github.com/greyhaven-ai/autocontext. 9,719 views.\n\nautocontext — recursive self-improving agent harness",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-21",
@@ -7792,24 +7808,26 @@
     "handle": "@raw_works",
     "subject": "Post by Raymond Weitekamp on X",
     "url": "https://x.com/raw_works/status/2046240194999755153",
-    "summary": "Thoughtful long-form post on Recursive Language Models (RLMs) — 'the new reasoning models.' RLMs collapse reasoning and tool use into one abstraction: the model treats its own prompt as an environment it can inspect, slice, and recursively query via a REPL. Input size is no longer a hard ceiling; results show processing up to 2 orders of magnitude beyond base model's context, outperforming long-context scaffolds on four long-context tasks.",
+    "summary": "Long-form X article 'RLMs are the new reasoning models': Recursive Language Models let a root model treat its own prompt as an environment it inspects/slices/recursively subqueries via a REPL, collapsing reasoning and tool use into one inference abstraction and processing inputs orders of magnitude beyond the context window. Traces the reasoning-vs-tool-use history (CoT, ReAct, Toolformer, o1) and the Oolong/LongMemEval/LongCoT benchmark arc where RLM scaffolds post leading numbers — including small models (Qwen3-8B/27B) jumping well past their base, hinting the frontier stops being GPU-rich-only. Flags cost/time and 'models are bad at acting recursively' as open limits.",
     "topics": [
-      "research",
       "agent-design",
-      "prompting"
+      "prompting",
+      "research"
     ],
     "audience": [
-      "me",
       "dev-team",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "49K",
+    "views": "67.3K",
     "notes": "",
     "enriched": true,
-    "content": "RLMs: recursive language models treat prompt as REPL environment, marrying reasoning and tool use",
-    "enrichment_status": "legacy-ok"
+    "content": "Raymond Weitekamp @raw_works. X ARTICLE: 'RLMs are the new reasoning models'. Recursive Language Models (RLMs) - inference paradigm where LM treats its own prompt as an environment it can inspect/slice/recursively query via a REPL; collapses reasoning and tool use into single abstraction; context becomes object of computation. Introduced by Zhang, Kraska, Khattab. Processes inputs 2 orders of magnitude beyond context window. History of reasoning (CoT, self-consistency, ToT) vs tool use (ReAct, Toolformer, function calling, o1, computer use). Benchmarks: Oolong (long-context), LongMemEval (memory), LongCoT (long reasoning). RLM results: GPT-5-mini RLM beats GPT-5 2x on Oolong; DSPy.RLM 89.8% LongMemEval; Claude Sonnet 4.5+DSPy.RLM 45.4% LongCoT-Mini vs 2.6% without; small models (Qwen3-8B/27B) get big jumps. Limits: cost, time, unpredictable recursion depth; models bad at 'acting recursively'. Small models in RLM harness could upset GPU-rich/poor balance. Tools: alexzhang13/rlm, dspy.RLM, ax-llm/ax, rawwerks/rlm-cli, rawwerks/ypi. 67.3K views.\n\nRLMs are the new reasoning models (full article)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-21",
@@ -8220,22 +8238,24 @@
     "handle": "@GithubProjects",
     "subject": "Post by GitHub Projects Community on X",
     "url": "https://x.com/githubprojects/status/2044453433743458686",
-    "summary": "Promotes Graphify — a tool to turn any folder of code into a queryable knowledge graph instantly. Useful for codebase exploration and RAG-style queries. osp.fyi/graphify",
+    "summary": "Tool share: Graphify (osp.fyi/graphify) turns any folder of code into a queryable knowledge graph instantly — code-as-graph for agent/dev navigation and retrieval.",
     "topics": [
-      "dev-practices",
-      "agent-design"
+      "agent-design",
+      "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "5,935",
+    "views": "14.3K",
     "notes": "",
     "enriched": true,
-    "content": "Turn any folder of code into a queryable knowledge graph instantly. https://osp.fyi/graphify",
-    "enrichment_status": "legacy-ok"
+    "content": "GitHub Projects Community @GithubProjects. Turn any folder of code into a queryable knowledge graph instantly. osp.fyi/graphify. 14.3K views.\n\nGraphify — folder of code -> queryable knowledge graph",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-15",
@@ -8753,22 +8773,24 @@
     "handle": "@itsalexvacca",
     "subject": "Post by Alex Vacca on X",
     "url": "https://x.com/itsalexvacca/status/2043834187095150673",
-    "summary": "Alex Vacca highlights a 4-layer sales funnel architecture that produced 330K website visitors, 1,500+ meetings booked, and $4M new ARR — crossing $7M ARR without raising capital. Quote-tweets an article by Michel Lieben detailing the system.",
+    "summary": "Growth/marketing content (mostly off the AI/dev core): endorses Michel Lieben's article on running a 4-layer funnel instead of a bare 'book a call', citing a $7M-ARR bootstrapped funnel (330k visitors, 1,500+ meetings, $4M new ARR). Relevant only as go-to-market reading.",
     "topics": [
-      "management",
-      "industry"
+      "industry",
+      "management"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "22K",
+    "views": "32.2K",
     "notes": "",
     "enriched": true,
-    "content": "Quote tweet of Michel Lieben article on 4-layer funnel architecture. $7M ARR bootstrapped.",
-    "enrichment_status": "legacy-ok"
+    "content": "Alex Vacca @itsalexvacca. what it actually looks like to run a 4-layer funnel instead of praying 'book a call' works. QUOTE: Michel Lieben @MichLieben article 'How We Built a $7M Funnel With 4 Layers (Most Companies Only Have 2)' - 330k visitors, 1500+ meetings, $4M new ARR, crossed $7M ARR no funding. Marketing/growth content, not AI/dev core. 32.2K views.\n\nArticle: 'How We Built a $7M Funnel With 4 Layers (Most Companies Only Have 2)'.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-14",
@@ -8776,22 +8798,24 @@
     "handle": "@llmjunky",
     "subject": "Post by am.will on X",
     "url": "https://x.com/llmjunky/status/2043817254152814785",
-    "summary": "am.will recommends NVIDIA's free API credits for testing open-source models (Minimax 2.7, Qwen 3.5, GLM 5, Gemma 31B, Nemotron 3 Super 120B) via their OpenAI-compatible endpoint at integrate.api.nvidia.com/v1. Includes ready-to-paste config for any OpenAI-compatible client.",
+    "summary": "How to get free NVIDIA API credits for open-source models via the OpenAI-compatible endpoint integrate.api.nvidia.com/v1 (Minimax 2.7, Qwen 3.5, GLM 5, Gemma, Nemotron). Won't match Opus-tier, but the author rates Minimax M2.7's 'personality' highly; includes a paste-ready client config block. Useful for cheap/free local-agent experimentation.",
     "topics": [
-      "agent-design",
-      "dev-practices"
+      "dev-practices",
+      "industry"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "19.1K",
     "notes": "",
     "enriched": true,
-    "content": "NVIDIA free API credits for open source models. OpenAI compatible endpoint config provided.",
-    "enrichment_status": "legacy-ok"
+    "content": "am.will @LLMJunky. Free NVIDIA API credits for open-source models via integrate.api.nvidia.com/v1. Models: Minimax 2.7, Qwen 3.5 122B/397B, GLM 5, Gemma 31B, Nemotron 3 Super 120B. Won't match Opus 4.6 but M2.7 has Opus-like personality. Includes OpenAI-compatible client config (base_url, model, context_window, api_key) to paste to your agent. Grab key at build.nvidia.com. 19.1K views.\n\nNVIDIA build — free API keys / OpenAI-compatible endpoint",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-14",
@@ -8799,44 +8823,49 @@
     "handle": "@philhchen",
     "subject": "Post by Phil Chen on X",
     "url": "https://x.com/philhchen/status/2043759400121458922",
-    "summary": "Phil Chen describes building Filbert (phil-bot), a background coding agent that wrote 95%+ of their PRs in one week. Runs 14 scheduled daily jobs including production bug triage, security audits, dead code sweeps, and CI optimization. Argues lightweight wrappers around existing harnesses on your own infra is the future of coding agents.",
+    "summary": "'How I built Filbert' — a background coding agent that is a lightweight wrapper around an existing harness running on the team's own infra with full dev-env access and recursive self-improvement. Per the linked article it wrote 95% of the team's PRs in a week and runs 14 scheduled jobs daily (bug triage, security audits, dead-code sweeps, CI optimization). Strong template for self-hosted background agents.",
     "topics": [
       "agent-design",
-      "dev-practices",
-      "claude-code"
+      "claude-code",
+      "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "116.5K",
+    "views": "166K",
     "notes": "",
     "enriched": true,
-    "content": "Filbert coding agent: 95%+ PRs, 14 daily scheduled jobs, lightweight wrapper on existing harness.",
-    "enrichment_status": "legacy-ok"
+    "content": "Phil Chen @philhchen. how I built Filbert (phil-bot). Future of coding agents = lightweight wrappers around existing harnesses running on your own infra; full dev env access, improves itself recursively, easy to build. QUOTE ARTICLE: 'Filbert: How we built our background coding agent in an afternoon' - wrote 95% of PRs over a week, runs 14 scheduled jobs daily (prod bug triage, security audits, dead code sweeps, CI optimization). 166K views.\n\nArticle: 'Filbert: How we built our background coding agent in an afternoon' — 95% of PRs, 14 daily scheduled jobs.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-14",
-    "author": "How To AI",
-    "handle": "@howtoai_",
+    "author": "How To Prompt",
+    "handle": "@HowToPrompt__",
     "subject": "Post by How To AI on X",
     "url": "https://x.com/howtoai_/status/2043753502850351525",
-    "summary": "How To AI covers a math paper proving every elementary function (sin, exp, log, sqrt) derives from a single binary operator: eml(x,y) = exp(x) - ln(y). Combined with the number 1, it can build pi, square roots, trig — analogous to NAND gates in digital logic. Implications for neural network architecture and potential hardware optimization.",
+    "summary": "Hype-framed math claim ('God Particle for calculus'): a paper reportedly shows every elementary function can be generated by one binary operator eml(x,y)=exp(x)-ln(y) plus the constant 1, found by exhaustive search, analogous to the NAND gate. Pitches an AI angle — one uniform trainable circuit instead of juggling math primitives. Interesting if true, but clickbait presentation warrants skepticism.",
     "topics": [
-      "research"
+      "research",
+      "questionable"
     ],
     "audience": [
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "574.6K",
     "notes": "",
     "enriched": true,
-    "content": "Math paper: single binary operator eml(x,y) = exp(x) - ln(y) generates all elementary functions.",
-    "enrichment_status": "legacy-ok"
+    "content": "How To Prompt @HowToPrompt__ (was @howtoai_). Claim: researchers proved every elementary function (sin, exp, log, sqrt) comes from one binary operator eml(x,y)=exp(x)-ln(y), combined with number 1 builds everything (pi, sqrt, sine, arithmetic) via binary tree, found by exhaustive search. Analogy to NAND gate. Implications for AI: single uniform architecture / one trainable circuit instead of juggling math rules. Hype framing ('God Particle for calculus'). 574.6K views.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-14",
@@ -8844,22 +8873,25 @@
     "handle": "@ksimback",
     "subject": "Post by Kevin Simback 🍷 on X",
     "url": "https://x.com/ksimback/status/2043745657748361476",
-    "summary": "Kevin Simback shares his 'Second Brain' setup using a modified Karpathy method. Key insight: the system needs two authors — the human writes opinionated takes and decisions, the AI agent handles structured knowledge extraction and organization. Avoids both the 'LLM-wiki' problem (generic AI prose) and the 'can't keep up' problem (manual-only decay).",
+    "summary": "'My Second Brain Setup: A Modified Karpathy Method' — builds on Karpathy's LLM-knowledge-base pattern (LLM incrementally compiles sources into an interlinked markdown wiki; LLM=programmer, wiki=codebase, Obsidian=IDE) and adds a two-author rule: an `author: kevin` vs `author: agent` frontmatter field where human-authored files are untouchable. Runs on Claude Code with five slash commands (/research fanning out 5-8 parallel agents, /ingest, /wiki-query, /wiki-lint, /wiki-output) and a 'graduation' loop that promotes good agent pages into the protected human layer.",
     "topics": [
       "agent-design",
-      "prompting"
+      "prompting",
+      "claude-code"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "13K",
+    "views": "62.9K",
     "notes": "",
     "enriched": true,
-    "content": "Second brain setup with two-author model: human writes opinions, AI handles structured knowledge.",
-    "enrichment_status": "legacy-ok"
+    "content": "Kevin Simback @KSimback. X ARTICLE 'My Second Brain Setup: A Modified Karpathy Method'. Compound intelligence like compound interest. Two-author model fixes the llm-wiki problem (agent writes all = generic; human writes all = stale). Built on Karpathy's LLM Knowledge Bases pattern (LLM incrementally compiles sources into persistent interlinked markdown wiki; ingest/query/lint; LLM=programmer, wiki=codebase, Obsidian=IDE) plus @nvk's topic isolation. Key addition: frontmatter author: kevin (untouchable) vs author: agent (updatable). Runs in Obsidian vault on Claude Code with 5 slash commands: /research (5-8 parallel agents across angles), /ingest, /wiki-query (3 depth modes), /wiki-lint, /wiki-output. Folders: concepts/, entities/, synthesis/. Graduation mechanism: promote agent files to author:kevin. Compounds in two directions. 62.9K views.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-14",
@@ -8912,22 +8944,24 @@
     "handle": "@_philschmid",
     "subject": "Post by Philipp Schmid on X",
     "url": "https://x.com/_philschmid/status/2043705197030002904",
-    "summary": "Philipp Schmid shares 8 practical tips for writing better agent skills — from what kinds of skills exist to knowing when to retire one. Covers skill lifecycle, quality standards, and distribution patterns. Links to a full X article with the guide.",
+    "summary": "Links a practical guide '8 Tips for Writing Agent Skills' — covering what kinds of skills exist, how to write them well, and when to retire one. Directly relevant to the skills/plugins workflow.",
     "topics": [
-      "skills-mcp",
-      "agent-design"
+      "agent-design",
+      "skills-mcp"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "18.2K",
+    "views": "20.1K",
     "notes": "",
     "enriched": true,
-    "content": "8 tips for writing agent skills: lifecycle, quality gates, when to retire. Full article linked.",
-    "enrichment_status": "legacy-ok"
+    "content": "Philipp Schmid @_philschmid. 8 practical tips for writing better agent skills - from what kinds of skills exist to knowing when to retire a skill. QUOTE ARTICLE '8 Tips for Writing Agent Skills' - skills are most-used extension point in agents, flexible/easy/distributable but hard to know what works. 20.1K views.\n\nArticle: '8 Tips for Writing Agent Skills' — skills as the most-used agent extension point.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-14",
@@ -8935,23 +8969,26 @@
     "handle": "@anorth_chen",
     "subject": "Post by North@CreaoAI on X",
     "url": "https://x.com/anorth_chen/status/2043694726764003817",
-    "summary": "North from CreaoAI shares their CTO Peter Pang's article on AI-First development. Their team merges 20+ PRs daily with 99% AI-written production code. Quote-tweets Peter's article arguing most teams are still 'AI-assisted' rather than truly 'AI-first,' and predicts teams that don't shift will fade within a year.",
+    "summary": "Endorses (translated from Chinese) an 'AI-First' engineering essay by the author's CTO: after going AI-first, the team merges/deploys 20+ PRs daily with ~99% of production code written by AI, shipping and A/B-killing features within a day. Argument: teams stuck in 'AI-assisted' rather than 'AI-first' mode risk fading from the market within a year. Provocative management/strategy read.",
     "topics": [
+      "agent-design",
       "management",
-      "agent-design"
+      "industry"
     ],
     "audience": [
-      "me",
       "dev-team",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "884.2K",
     "notes": "",
     "enriched": true,
-    "content": "AI-First dev: 20+ PRs/day, 99% AI-written code. CTO Peter Pang article on AI-first vs AI-assisted.",
-    "enrichment_status": "legacy-ok"
+    "content": "North@CreaoAI @anorth_chen. (Translated from Chinese) Peter (CTO) implemented AI-First approach a month ago; now 20+ PRs merged/deployed daily. Recommends all founders read the article. If your team is AI-assisted not AI-first, you'll fade from market within a year. QUOTE ARTICLE by Peter Pang @intuitiveml 'Why Your AI-First Strategy Is Probably Wrong' - 99% of production code written by AI; shipped feature 10AM, A/B tested by noon, killed by 3PM per data, shipped better version by 5. 884.2K views.\n\nArticle: 'Why Your AI-First Strategy Is Probably Wrong' — 99% of prod code AI-written; ship/test/kill in a day.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-14",
@@ -8959,23 +8996,25 @@
     "handle": "@technmak",
     "subject": "Post by Tech with Mak on X",
     "url": "https://x.com/technmak/status/2043683120319520806",
-    "summary": "Tech with Mak highlights three Karpathy observations about LLM coding failures — wrong assumptions without checking, overcomplicated code, and silent modification of unrelated code. Someone turned these into a CLAUDE.md file with four principles: think before coding, respect existing patterns, stay minimal, and never touch what you don't understand.",
+    "summary": "Distills three Karpathy critiques of coding agents (wrong assumptions unchecked, overcomplication/bloat, editing code they don't understand) into a drop-in CLAUDE.md with four principles: (1) think before coding / surface ambiguity and push back, (2) simplicity first / no unrequested abstractions, (3) surgical changes / don't touch adjacent code, (4) goal-driven execution / turn tasks into failing tests then loop to green. Practical, copy-paste engineering guardrails.",
     "topics": [
       "claude-code",
-      "prompting",
-      "dev-practices"
+      "dev-practices",
+      "prompting"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "",
+    "views": "190.4K",
     "notes": "",
     "enriched": true,
-    "content": "Karpathy's LLM coding mistakes turned into CLAUDE.md: think first, respect patterns, stay minimal.",
-    "enrichment_status": "legacy-ok"
+    "content": "Tech with Mak @techNmak. Andrej Karpathy on what every Claude Code user feels: models make wrong assumptions without checking, don't seek clarification/surface inconsistencies/push back; overcomplicate code, bloat abstractions, don't clean dead code (1000 lines when 100 would do); change/remove code they don't understand. Someone turned this into a CLAUDE.md with 4 principles: 1) Think before coding (state ambiguity, present interpretations, push back, ask not guess), 2) Simplicity first (no unasked features/abstractions/flexibility/error-handling; senior-engineer test), 3) Surgical changes (don't improve adjacent code, don't refactor unbroken, match style, mention dead code don't delete, every line traces to request), 4) Goal-driven execution (turn 'fix bug' into 'write failing test then pass'; give success criteria and loop). Single drop-in file. 190.4K views.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-14",
@@ -8983,21 +9022,23 @@
     "handle": "@lorenrd",
     "subject": "Post by Lorenzo Rondan on X",
     "url": "https://x.com/lorenrd/status/2043677918262395235",
-    "summary": "Lorenzo Rondan highlights a diagram by Viv (@Vtrivedy10) on agent harness architecture, memory, and context fragments. The quoted thread explores intersections between harness design, long-timescale memory accumulation, and the 'bitter lesson' that search-based approaches tend to win. 213.9K views.",
+    "summary": "Highlights Viv (@Vtrivedy10)'s diagram/mental-model of an agent harness — memory, context fragments, and the search 'bitter lesson' — calling it one of the best harness diagrams around. Pointer into the harness-design discourse.",
     "topics": [
       "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "213.9K",
+    "views": "233.2K",
     "notes": "",
     "enriched": true,
-    "content": "Harness architecture diagram: memory, context fragments, and the bitter lesson of search.",
-    "enrichment_status": "legacy-ok"
+    "content": "Lorenzo Rondan @LorenRD. One of the best diagrams I've seen of a harness. QUOTE: Viv @Vtrivedy10 'Harness, Memory, Context Fragments, & the Bitter Lesson' - work-in-progress mental dump on intersections between how we use/design a harness, implications for memory accumulated over long timescales, and the search bitter lesson. 233.2K views.\n\n'Harness, Memory, Context Fragments, & the Bitter Lesson' — WIP mental dump on harness design + long-timescale memory.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-14",
@@ -9125,22 +9166,24 @@
     "handle": "@theahmadosman",
     "subject": "Post by Ahmad on X",
     "url": "https://x.com/theahmadosman/status/2043366810494337354",
-    "summary": "Ahmad shares his approach to running parallel coding agents: fan out from a main agent or use deterministic scripts. Pattern: spin up workers in git worktrees, gate merges with diffs, add backups/rules/logs for deterministic runs, merge what passes. Building this into a Skill.",
+    "summary": "A concise recipe for running parallel agents: either have one agent fan out or drive deterministic script runs — spin up workers, isolate each in a git worktree, gate merges with diffs, add backups/rules/logs for deterministic runs, and merge only what passes. Author is packaging it as a Skill.",
     "topics": [
       "agent-design",
       "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "26.3K",
+    "views": "64.2K",
     "notes": "",
     "enriched": true,
-    "content": "Parallel agent pattern: git worktrees, diff gating, deterministic scripts. Building into a Skill.",
-    "enrichment_status": "legacy-ok"
+    "content": "Ahmad @TheAhmadOsman. This is how I run parallel agents: either tell an agent to fan out or use scripts for deterministic runs. Spin up workers, isolate in git worktrees, gate with diffs, add backups/rules/logs when deterministic, merge what passes. Turning this into a Skill. 64.2K views.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-12",
@@ -9148,22 +9191,25 @@
     "handle": "@garrytan",
     "subject": "Post by Garry Tan on X",
     "url": "https://x.com/garrytan/status/2043339811088699446",
-    "summary": "Garry Tan comments on Hermes agent's explicit self-improvement architecture — noting that applied research at the app level now happens in the open via open source. Quote-tweets analysis of Hermes codebase showing its approach to self-improvement goes beyond typical agent patterns.",
+    "summary": "Garry Tan on open-source agent self-improvement: applied research now happens in the open, and 'just-in-time software' is a new paradigm. Quotes an analysis of the Hermes agent architecture taking a more explicit self-improvement route than typical offline trajectory-mining systems.",
     "topics": [
       "agent-design",
-      "research"
+      "research",
+      "industry"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "29.6K",
+    "views": "30.1K",
     "notes": "",
     "enriched": true,
-    "content": "Hermes agent's explicit self-improvement architecture. Applied research now happens in open source.",
-    "enrichment_status": "legacy-ok"
+    "content": "Garry Tan @garrytan. Applied research at the app level happens in the open with open source now. Just-in-time software is a brave new world. QUOTE: lux @novasarc01 on Hermes agent architecture/codebase - hermes takes a more explicit route to self-improvement than most agent systems, not offline trajectory mining. 30.1K views.\n\nOn Hermes agent architecture — explicit self-improvement rather than offline trajectory mining.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-12",
@@ -9193,23 +9239,26 @@
     "handle": "@garrytan",
     "subject": "Post by Garry Tan on X",
     "url": "https://x.com/garrytan/status/2043198780800197025",
-    "summary": "Garry Tan argues memory should outlive the harness — memory is markdown, skills are markdown, brain is a git repo. The harness should be a thin conductor that reads files, not owns them. Quote-tweets Harrison Chase's article on harness-memory coupling and the risks of closed harnesses. 430.4K views.",
+    "summary": "'If your memory dies when your harness dies, you built the harness too thick.' Argues for thin harnesses: memory is markdown, skills are markdown, the 'brain' is a git repo, and the harness is a thin conductor that reads files it doesn't own. Endorses Harrison Chase's 'Your harness, your memory' article on harness/memory coupling and the risk of closed harnesses.",
     "topics": [
       "agent-design",
-      "management"
+      "management",
+      "skills-mcp"
     ],
     "audience": [
-      "me",
       "dev-team",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "430.4K",
+    "views": "452K",
     "notes": "",
     "enriched": true,
-    "content": "Memory as markdown in git, harness as thin conductor. QT Harrison Chase on harness-memory coupling.",
-    "enrichment_status": "legacy-ok"
+    "content": "Garry Tan @garrytan. If your memory dies when your harness dies, you built the harness too thick. Memory is markdown. Skills are markdown. Brain is a git repo. The harness is a thin conductor - it reads the files, it doesn't own them. QUOTE ARTICLE: Harrison Chase @hwchase17 'Your harness, your memory' - agent harnesses becoming dominant way to build agents, intimately tied to agent memory, warns about closed harnesses. 452K views.\n\nArticle: 'Your harness, your memory' — harnesses as the dominant way to build agents, tied to memory portability.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-12",
@@ -10021,22 +10070,24 @@
     "handle": "@tom_doerr",
     "subject": "Post by Tom Dörr on X",
     "url": "https://x.com/tom_doerr/status/2039115357839929610",
-    "summary": "Tom Dörr shared an open source AI research agent called Feynman (github.com/getcompanion-ai/feynman) — designed for autonomous AI-driven research workflows.",
+    "summary": "Shares an open-source AI research agent, Feynman (github.com/getcompanion-ai/feynman) — an autonomous research-assistant agent.",
     "topics": [
       "agent-design",
       "research"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "9.9K",
+    "views": "15K",
     "notes": "",
     "enriched": true,
-    "content": "Open source AI research agent https://github.com/getcompanion-ai/feynman",
-    "enrichment_status": "legacy-ok"
+    "content": "Tom Dorr @tom_doerr. Open source AI research agent. github.com/getcompanion-ai/feynman. 15K views.\n\nFeynman — open-source AI research agent",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-01",
@@ -10203,23 +10254,25 @@
     "handle": "@danielmiessler",
     "subject": "Post by ᴅᴀɴɪᴇʟ ᴍɪᴇssʟᴇʀ on X",
     "url": "https://x.com/danielmiessler/status/2038284628130492870",
-    "summary": "Daniel Miessler argues against over-engineering AI harnesses in a blog post titled 'Bitter Lesson Engineering' (danielmiessler.com). The core idea: don't build elaborate scaffolding around models — let the models improve instead, echoing Rich Sutton's Bitter Lesson applied to AI agent architecture.",
+    "summary": "'Bitter Lesson Engineering' (danielmiessler.com): don't over-engineer your AI harness — lean on scaling/general methods rather than hand-crafted scaffolding, applying Sutton's bitter lesson to agent-harness design.",
     "topics": [
       "agent-design",
       "management"
     ],
     "audience": [
-      "me",
       "dev-team",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "11.6K",
+    "views": "12.2K",
     "notes": "",
     "enriched": true,
-    "content": "Don't over-engineer your AI harness (Bitter Lesson Engineering). Blog post at danielmiessler.com.",
-    "enrichment_status": "legacy-ok"
+    "content": "Daniel Miessler @DanielMiessler. Don't over-engineer your AI harness (Bitter Lesson Engineering). Links article 'Bitter Lesson Engineering' from danielmiessler.com. 12.2K views.\n\nBitter Lesson Engineering — don't over-engineer your AI harness",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-29",
@@ -10250,16 +10303,24 @@
     "handle": "@tom_doerr",
     "subject": "Post by Tom Dörr on X",
     "url": "https://x.com/tom_doerr/status/2038137050243711042",
-    "summary": "Hive (github.com/aden-hive/hive) is a self-improving agent swarm framework — agents collaborate, learn, and adapt over time as a coordinated group.",
-    "topics": [],
-    "audience": [],
+    "summary": "Shares a self-improving agent-swarm framework, Hive (github.com/aden-hive/hive) — orchestration for multiple cooperating agents that improve over time.",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "dev-team",
+      "me"
+    ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "4,462",
+    "views": "4,733",
     "notes": "",
     "enriched": true,
-    "content": "Self-improving agent swarm framework. github.com/aden-hive/hive",
-    "enrichment_status": "legacy-ok"
+    "content": "Tom Dorr @tom_doerr. Self-improving agent swarm framework. github.com/aden-hive/hive. 4,733 views.\n\nHive — self-improving agent swarm framework",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-29",
