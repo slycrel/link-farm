@@ -2437,22 +2437,24 @@
     "handle": "@elonmusk",
     "subject": "Post by Elon Musk on X ( worth a look)",
     "url": "https://x.com/elonmusk/status/2063401522327666828",
-    "summary": "[Jeremy flagged: 'worth a look'] Endorses Eric Jorgenson's writeup of Elon's 'Magic Wand Number' and 'Idiot Index' — first-principles / 'physics thinking in the limit' mental models presented as universally applicable across industries.",
+    "summary": "Elon Musk endorses first-principles 'physics thinking in the limit' — the 'Magic Wand Number' and 'Idiot Index' as universal cost-engineering mental models. Not AI/dev, but a useful thinking frame.",
     "topics": [
       "management",
       "general"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "7.3M",
+    "views": "7.4M",
     "notes": "worth a look",
     "enriched": true,
-    "content": "Helpful tool for improvement. It's just physics thinking in the limit. Quotes Eric Jorgenson: everyone can use Elon's 'Magic Wand Number' and 'Idiot Index' — universal ideas, helpful in any industry.",
-    "enrichment_status": "legacy-ok"
+    "content": "Elon Musk @elonmusk. 'Helpful tool for improvement. It's just physics thinking in the limit.' QUOTE: Eric Jorgenson @EricJorgenson - everyone can use Elon's 'Magic Wand Number' and 'Idiot Index', universal ideas helpful in any industry. First-principles / cost-engineering mental models. 7.4M views. Not AI/dev core.\n\nEveryone can use Elon's 'Magic Wand Number' and 'Idiot Index' — universal ideas.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-07",
@@ -2460,23 +2462,24 @@
     "handle": "@hanakoxbt",
     "subject": "Post by Hanako on X",
     "url": "https://x.com/hanakoxbt/status/2063305395687522702",
-    "summary": "Engagement-styled summary of an Anthropic memory pattern: 'dreaming' agents that reopen your sessions after you log off to fact-check the primary agents, merge duplicates, and prune stale memory (up to 100 per session, ~95% of tokens cached). Links a Claude agent-team setup article (writer/reviewer/deployer).",
+    "summary": "Describes an Anthropic 'dreaming agents' memory pattern: a second set of agents that, after you log off, reopen every session, fact-check the first agents, merge duplicates and burn stale memory — up to 100 at once, ~95% cached so a full rewrite costs almost nothing. Points to a multi-agent code/review/deploy team guide.",
     "topics": [
-      "questionable",
       "agent-design",
       "claude-code"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "328.8K",
+    "views": "334.4K",
     "notes": "",
     "enriched": true,
-    "content": "Anthropic engineer: agent doesn't remember anything, so built a second set of agents whose job is to 'dream' about the first ones — reopen every session after logoff, fact-check, merge duplicates, burn stale. One dreaming agent per session, up to 100 at once. 95% tokens cached. Links Claude agent team article.",
-    "enrichment_status": "legacy-ok"
+    "content": "Hanako @hanakoxbt. Anthropic engineer quote: 'The agent doesn't remember anything. So we built a second set of agents whose only job is to dream about the first ones.' They wait until you log off, reopen every session you ran, fact-check the first agents, merge duplicates, burn stale. One dreaming agent per session, up to 100 at once. 95% of tokens come back cached so a full memory rewrite costs ~zero. QUOTE ARTICLE: 'How to Build a Claude Agent Team: One Writes Code, One Reviews, One Deploys (Exact Config Inside)' - multi-agent code/review/deploy split, Boris (Claude Code). 334.4K views.\n\nArticle: 'How to Build a Claude Agent Team: One Writes Code, One Reviews, One Deploys.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-07",
@@ -2484,7 +2487,7 @@
     "handle": "@ihtesham2005",
     "subject": "Post by Ihtesham Ali on X (worth a read)",
     "url": "https://x.com/ihtesham2005/status/2063297401344147719",
-    "summary": "[Jeremy flagged: 'worth a read' — off-topic for AI] Story of 'The Art of Problem Solving' (AoPS) by Sandor Lehoczky and Richard Rusczyk, the 1993 training manual behind a generation of US Math Olympiad competitors. Math-education history rather than AI/tech.",
+    "summary": "A well-written essay on The Art of Problem Solving (AoPS): problem-solving is a transferable skill, not memorized formulas; teach the difference between a formula (what to compute) and a method (how to see), and treat confusion as where learning starts. Education/thinking, not AI/dev.",
     "topics": [
       "general"
     ],
@@ -2493,11 +2496,13 @@
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "278.1K",
     "notes": "worth a read",
     "enriched": true,
-    "content": "Two math olympiad champions (Sandor Lehoczky, Richard Rusczyk) wrote a 1993 training manual, The Art of Problem Solving (AoPS). Since 2015 every US IMO team member has been an AoPS student. The book teaches how to think, not memorize.",
-    "enrichment_status": "legacy-ok"
+    "content": "Ihtesham Ali @ihtesham2005. Essay on The Art of Problem Solving (AoPS) by Sandor Lehoczky & Richard Rusczyk (1993). Since 2015 every US IMO team member has been an AoPS student. Premise: problem-solving is a transferable skill, not memorized tricks; teach the difference between a formula (what to compute) and a method (how to see); 'learning to read the problem' - what it's really asking. Tolerance for being stuck: confusion is the starting point, learning happens past the edge of what you know. 1M+ users. Motivational close. 278.1K views. Education/thinking, not AI/dev.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-07",
@@ -2505,22 +2510,23 @@
     "handle": "@sprytixl",
     "subject": "Post by Sprytix on X",
     "url": "https://x.com/sprytixl/status/2063234969510588640",
-    "summary": "Engagement-farmed claim that a Chinese professor runs a 170-agent dev team making 'every company decision' on Kimi K2.6 with one prompt; links an article on running 300 parallel agents. Hype framing, thin substance — flagging as questionable, with an industry/agent angle.",
+    "summary": "Engagement-farmed hype ('170 AI agents make every company decision') pushing a listicle on running 170–300 parallel agents with Kimi K2.6. Clickbait framing, but the underlying topic — massed parallel agents for research/ops — is real.",
     "topics": [
       "questionable",
-      "agent-design",
-      "industry"
+      "agent-design"
     ],
     "audience": [
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "107K",
     "notes": "",
     "enriched": true,
-    "content": "Chinese professor revealed dev team of 170 AI agents making every company decision. Kimi K2.6 runs all with one prompt, each gets a task. What took a department two weeks now takes two hours. Article: 'Kimi K2.6 runs 300 parallel agents.'",
-    "enrichment_status": "legacy-ok"
+    "content": "Sprytix @Sprytixl. 'Chinese professor revealed his dev team - 170 AI agents making every company decision, not humans.' 170 parallel AI developers, Kimi K2.6 runs all with one prompt, each its own task; two weeks of dept work -> two hours, costs less than a coffee. QUOTE ARTICLE: 'Kimi K2.6 runs 300 parallel agents. Here's what comes out.' fitness-app market research example. Engagement-farmed hype framing, but underlying topic is massed parallel agents. 107K views.\n\nArticle: 'Kimi K2.6 runs 300 parallel agents. Here's what comes out.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-06",
@@ -2528,21 +2534,22 @@
     "handle": "@roydanroy",
     "subject": "Post by Dan Roy on X",
     "url": "https://x.com/roydanroy/status/2062917394356429092",
-    "summary": "Quotes Markus Buehler (MIT) on a breakthrough in self-evolving 'AI scientists' that move from search to principled discovery — an AI that perceives shifts in the search space itself without intervention. (Roy's own comment is a category-theory in-joke.)",
+    "summary": "Category-theory joke quoting Markus Buehler's claim of a breakthrough in self-evolving AI 'scientists' moving from search to principled discovery — where the search space itself changes and the AI perceives that shift without intervention.",
     "topics": [
-      "research",
-      "agent-design"
+      "research"
     ],
     "audience": [
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "451.4K",
+    "views": "456.3K",
     "notes": "",
     "enriched": true,
-    "content": "Joke about category theory. Quotes Markus J. Buehler (MIT): breakthrough in self-evolving AI scientists moving from 'search' to 'principled discovery' — search space itself changes and AI perceives the shift without intervention.",
-    "enrichment_status": "legacy-ok"
+    "content": "Dan Roy @roydanroy. Joke: 'once you learn category theory you'll never be willing to talk with people who don't know category theory.' QUOTE: Markus Buehler @ProfBuehlerMIT - breakthrough in self-evolving AI scientists moving from 'search' to 'principled discovery'; discovery requires the search space itself to change and the AI scientist to perceive that shift without intervention. 456.3K views. research (self-evolving AI scientist).\n\nBreakthrough in self-evolving AI scientists: from 'search' to 'principled discovery.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-06",
@@ -2550,22 +2557,24 @@
     "handle": "@hylarucoder",
     "subject": "Post by 海拉鲁编程客 on X",
     "url": "https://x.com/hylarucoder/status/2062881239900766292",
-    "summary": "Recommends Peter Pang's (intuitiveml) article on building cloud agent infrastructure: most agent frameworks assume a desktop (one user/machine/process) and break in the cloud where filesystem, API-key handling, and orchestration must change.",
+    "summary": "Recommends Peter Pang's 'Building cloud agent infrastructure' — most agent frameworks assume a desktop (one user, one machine, local filesystem, keys in env vars); cloud agent infra changes those assumptions.",
     "topics": [
       "agent-design",
-      "industry"
+      "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "180.3K",
+    "views": "182.8K",
     "notes": "",
     "enriched": true,
-    "content": "'Best agent infrastructure article I've read recently' — quotes Peter Pang 'Building cloud agent infrastructure: what's different, and what we learned.' Most agent frameworks assume a desktop: one user, one machine, one process. Cloud changes filesystem, API keys in env vars, etc.",
-    "enrichment_status": "legacy-ok"
+    "content": "hylarucoder (Translated from Chinese). 'The best agent infrastructure article I've read recently.' QUOTE ARTICLE: Peter Pang @intuitiveml 'Building cloud agent infrastructure: what's different, and what we learned' - most agent frameworks assume a desktop (one user, one machine, one process, local filesystem, keys in env vars); cloud agent infra is different. 182.8K views. agent-design, dev-practices.\n\nArticle: 'Building cloud agent infrastructure: what's different, and what we learned.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-06",
@@ -2573,25 +2582,26 @@
     "handle": "@_catwu",
     "subject": "Post by cat on X",
     "url": "https://x.com/_catwu/status/2062408623565984209",
-    "summary": "Anthropic's data team automated ~95% of business-analytics queries with Claude; blog post covers their approach to evals, ablations, and online validation when building data-analysis agents (claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude).",
+    "summary": "Anthropic's data team automated ~95% of business-analytics queries with Claude; the linked blog covers their approach to skills, data foundations, evals, ablations, and online validation for data-analysis agents.",
     "topics": [
       "claude-code",
       "agent-design",
-      "dev-practices",
-      "management"
+      "dev-practices"
     ],
     "audience": [
-      "me",
       "dev-team",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "875.8K",
+    "views": "882.4K",
     "notes": "",
     "enriched": true,
-    "content": "Excited to share how Anthropic's data team automated 95% of business analytics queries with Claude. Blog covers evals, ablations, online validation, skills, data foundations. claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude",
-    "enrichment_status": "legacy-ok"
+    "content": "cat @_catwu. Anthropic's data team has automated 95% of business analytics queries with Claude. Blog covers evals, ablations, online validation. QUOTE: ClaudeDevs blog post 'How Anthropic enables self-service data analytics with Claude' - best practices for skills, data foundations, evaluations when building data-analysis agents. claude.com/blog. 882.4K views. claude-code, agent-design, dev-practices.\n\nBlog: 'How Anthropic enables self-service data analytics with Claude.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-04",
@@ -2599,23 +2609,24 @@
     "handle": "@hooeem",
     "subject": "Post by hoeem on X",
     "url": "https://x.com/hooeem/status/2062443798647517197",
-    "summary": "Engagement-styled '100x cheaper' guide on cutting token waste in agentic orchestration loops; some practical substance on reducing repeated token spend in agent workflows behind the hype framing.",
+    "summary": "Points to a guide on making agentic workflows ~100x cheaper by fixing token waste in the orchestration loop.",
     "topics": [
-      "questionable",
       "agent-design",
       "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "14.5K",
+    "views": "14.6K",
     "notes": "",
     "enriched": true,
-    "content": "A complete breakdown on how to make your agentic workflows 100x+ cheaper. Your agentic workflows waste tokens repeatedly for an orchestration loop; here's how to fix it.",
-    "enrichment_status": "legacy-ok"
+    "content": "hoeem @hooeem. A complete breakdown on how to make your agentic workflows 100x+ cheaper. QUOTE ARTICLE: 'How to make agentic workflows 100x cheaper (full guide)' - agentic workflows waste tokens/money in the orchestration loop; how to fix. 14.6K views. agent-design, dev-practices.\n\nArticle: 'How to make agentic workflows 100x cheaper (full guide).'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-04",
@@ -2623,22 +2634,24 @@
     "handle": "@cipepser",
     "subject": "Post by さいぺ on X",
     "url": "https://x.com/cipepser/status/2062397559520502225",
-    "summary": "Recommends mem0's article 'State of Memory in Agent Harness' (mem0ai) — a well-organized survey of agent-memory papers and benchmarks plus how memory is implemented across coding agents (Cursor, Devin, Claude Code, Codex).",
+    "summary": "Praises mem0's 'State of Memory in Agent Harness' survey — well-organized coverage from field papers/benchmarks through memory implementations in each coding agent (Cursor, Devin, Claude Code, Codex).",
     "topics": [
       "agent-design",
       "research"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "48.6K",
+    "views": "48.9K",
     "notes": "",
     "enriched": true,
-    "content": "Praises mem0 'State of Memory in Agent Harness' article: overview of papers/benchmarks in agent memory field and implementations in each coding agent (Cursor, Devin, Claude Code, Codex).",
-    "enrichment_status": "legacy-ok"
+    "content": "cipepser (Translated from Japanese). Notes on Agent Harness memory are insanely well-organized, covering overviews of papers/benchmarks in the field through implementations in each Coding Agent. QUOTE ARTICLE: mem0 @mem0ai 'State of Memory in Agent Harness' - agent harnesses (Cursor, Devin, Claude Code, Codex) handle context, orchestrate tools, coordinate agents, and increasingly manage memory. 48.9K views. agent-design, research.\n\nArticle: 'State of Memory in Agent Harness.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-04",
@@ -2646,22 +2659,25 @@
     "handle": "@itsolelehmann",
     "subject": "Post by Ole Lehmann on X",
     "url": "https://x.com/itsolelehmann/status/2061911202830401564",
-    "summary": "Workflow to turn saved X bookmarks into an agent-readable 'second brain': export bookmarks with the free twitter-web-exporter userscript or BookmarkSave extension, drop the file into an Obsidian/LLM-wiki folder, then point an agent (Claude Code, Codex) at it to convert each bookmark into a tagged markdown note you can query.",
+    "summary": "A ~10-minute recipe to turn your X bookmarks into an agent-queryable second brain: export bookmarks (twitter-web-exporter / BookmarkSave), drop the file into your LLM wiki or Obsidian vault, and have your agent convert each into a tagged markdown note with the original link — then query across the whole pile. Directly relevant to this link collection.",
     "topics": [
       "agent-design",
-      "dev-practices"
+      "dev-practices",
+      "skills-mcp"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "",
+    "views": "273.2K",
     "notes": "",
     "enriched": true,
-    "content": "Turn every X bookmark into a second brain: 1) export bookmarks via twitter-web-exporter userscript or BookmarkSave extension; 2) drop file into obsidian/llm wiki folder; 3) point agent (claude code/codex) at folder, tell it to turn each bookmark into a markdown note with link + topic tags. Then query 'what have i saved about pricing'. ~10 min.",
-    "enrichment_status": "legacy-ok"
+    "content": "Ole Lehmann @itsolelehmann. How to turn every X bookmark into a second brain your agent has full context on: 1) export bookmarks (twitter-web-exporter userscript or BookmarkSave extension) - one file with every bookmark + full text + author + link; 2) drop the file into a folder / your LLM wiki or Obsidian vault; 3) point your agent (Claude Code, Codex, Hermes) at it: 'read this export and turn every bookmark into its own markdown note with the original link and topic tags.' Then query 'what have I saved about pricing' across the whole pile. ~10 min. QUOTE: Greg Isenberg - bookmarking tweets and never returning is an epidemic. 273.2K views. Highly relevant to link-farm project. agent-design, dev-practices, skills-mcp.\n\nBookmarking tweets and never returning has become an epidemic.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-03",
@@ -2669,22 +2685,23 @@
     "handle": "@yvbbrjdr",
     "subject": "Post by yv on X",
     "url": "https://x.com/yvbbrjdr/status/2061914706579984551",
-    "summary": "Recommends the MAI-Thinking-1 technical paper from Microsoft as a near-complete recipe for training a SOTA LLM (translated from Chinese). Paper PDF: microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf.",
+    "summary": "Recommends the MAI-Thinking-1 technical paper as containing almost all the details for training a SOTA LLM (microsoft.ai PDF).",
     "topics": [
-      "research",
-      "industry"
+      "research"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "128.9K",
+    "views": "184.7K",
     "notes": "",
     "enriched": true,
-    "content": "I recommend everyone read the technical paper of MAI-Thinking-1. It contains detailed (almost) all the details on how to train a SOTA LLM. https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf (Translated from Chinese)",
-    "enrichment_status": "legacy-ok"
+    "content": "yv @yvbbrjdr (Translated from Chinese). Recommends the technical paper of MAI-Thinking-1 - contains detailed (almost) all details on how to train a SOTA LLM. Link: microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf. 184.7K views. research.\n\nMAI-Thinking-1 technical paper",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-03",
@@ -2692,22 +2709,25 @@
     "handle": "@trq212",
     "subject": "Post by Thariq on X",
     "url": "https://x.com/trq212/status/2061907538741006796",
-    "summary": "Thariq hypes the new dynamic workflows feature in Claude Code as the biggest upgrade since skills and subagents, plugging his deep-dive article (quote-tweeted from his own thread). Especially excited about workflows enabling non-coding tasks like research, security analysis, agent teams, and code review natively inside Claude Code.",
+    "summary": "Announces dynamic workflows as the biggest Claude Code upgrade since skills and subagents — Claude writing its own task-specific harness on the fly — with excitement about the non-technical tasks it unlocks.",
     "topics": [
       "claude-code",
-      "agent-design"
+      "agent-design",
+      "skills-mcp"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "779.7K",
+    "views": "999K",
     "notes": "",
     "enriched": true,
-    "content": "Workflows are the biggest upgrade to Claude Code's capabilities since skills and subagents. I dove deep into it with @sidbid to figure out best practices, examples and more. I'm particularly excited about the non-technical tasks it enables for Claude Code. [Quote tweet of his own article: A harness for every task: dynamic workflows in Claude Code]",
-    "enrichment_status": "legacy-ok"
+    "content": "Thariq @trq212. Workflows are the biggest upgrade to Claude Code's capabilities since skills and subagents. Dove deep with @sidbid on best practices/examples; excited about non-technical tasks it enables for Claude Code. QUOTE ARTICLE: 'A harness for every task: dynamic workflows in Claude Code' - Claude can now write its own harness on the fly, custom-built for the task; default harness is built for coding. 999K views. claude-code, agent-design, skills-mcp.\n\nArticle: 'A harness for every task: dynamic workflows in Claude Code.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-03",
@@ -2715,23 +2735,25 @@
     "handle": "@trq212",
     "subject": "Post by Thariq on X",
     "url": "https://x.com/trq212/status/2061907337154367865",
-    "summary": "Anthropic article (linked from Thariq's tweet): 'A harness for every task: dynamic workflows in Claude Code'. Claude can now write its own harness on the fly, custom-built per task — the default Claude Code harness is coding-shaped but workflows let Claude solve research, security analysis, agent-team, and code-review tasks natively without external custom harnesses. Workflows are shareable/reusable. Caveat: they use more tokens and best practices are still developing.",
+    "summary": "Full Anthropic article on dynamic workflows in Claude Code: Claude writes its own JavaScript harness to spawn/coordinate subagents (own models, own worktrees, resumable), countering agentic laziness, self-preferential bias and goal drift. Covers patterns (fan-out-and-synthesize, adversarial verification, tournament, loop-until-done), many use cases (migrations, deep research, triage, root-cause, evals, model routing), the 'ultracode' trigger, token budgets, and when NOT to use it.",
     "topics": [
       "claude-code",
       "agent-design",
-      "prompting"
+      "skills-mcp"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "1.6M",
+    "views": "3.2M",
     "notes": "",
     "enriched": true,
-    "content": "A harness for every task: dynamic workflows in Claude Code. Last week, we released dynamic workflows in Claude Code. Claude can now write its own harness on the fly, custom-built for the task at hand. While the default Claude Code harness is built for coding, it is also useful for many other types of tasks because, as it turns out, many tasks resemble coding tasks. But there are certain classes of tasks where we have had to build custom harnesses on top of Claude Code to achieve peak performance such as Research, security analysis, agent teams, or Code Review. Workflows allow you to dynamically create harnesses that enable Claude to solve all of those problems and more natively inside of Claude Code. You can also share and re-use these workflows with others. Best practices are still developing! Dynamic workflows often use more tokens.",
-    "enrichment_status": "legacy-ok"
+    "content": "Thariq @trq212. FULL X ARTICLE 'A harness for every task: dynamic workflows in Claude Code' (also on Claude Blog). Claude Code can now write its own harness on the fly, custom-built per task, and you can share/reuse workflows. Dynamic workflows execute a JavaScript file with special functions to spawn/coordinate subagents; can choose per-agent models and whether subagents run in their own worktree; resumable if interrupted. Motivation: single-context harness suffers agentic laziness, self-preferential bias, and goal drift on long/parallel/adversarial tasks; workflows orchestrate separate Claudes with isolated goals. Dynamic (Opus 4.8 writes custom harness) vs static (Agent SDK / claude -p, more generic). Patterns: classify-and-act, fan-out-and-synthesize, adversarial verification, generate-and-filter, tournament (pairwise judging), loop-until-done. Use cases: migrations/refactors (Bun rewritten Zig->Rust), deep research (/deep-research skill fans out searches + verifies + cites), deep verification, sorting via tournament, memory/rule adherence (mine sessions -> CLAUDE.md rules, one verifier per rule), root-cause investigation (disjoint-evidence hypotheses + verifiers/refuters), triage at scale (classify/dedupe/act, quarantine untrusted content, pair with /loop), exploration/taste, evals, model/intelligence routing (classifier routes Sonnet vs Opus). Trigger word 'ultracode'. Combine with /goal and /loop; set token budgets ('use 10k tokens'); save with 's' to ~/.claude/workflows or distribute via a skill. When NOT to use: uses many more tokens; most regular coding tasks don't need it. Authors: Thariq Shihipar & Sid Bidasaria, Anthropic. 3.2M views.\n\nA harness for every task: dynamic workflows in Claude Code (full article)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-03",
@@ -2739,22 +2761,25 @@
     "handle": "@garrytan",
     "subject": "Post by Garry Tan on X",
     "url": "https://x.com/garrytan/status/2061878212213572083",
-    "summary": "Garry Tan (YC) quote-tweets Factory's new model-routing feature with a controversial take: frontier labs will fight to make their AI harness the moat, but the consumer-best outcome is model capabilities flattening into commodity. Calls it a preview of the 'AI Harness Wars of 2027'. Factory Router claims 25% cost cuts at frontier performance.",
+    "summary": "Garry Tan on model routing as strategy: frontier labs will want their harness to be the moat, but the consumer-best outcome is model capabilities flattening and commoditizing — 'a preview of the AI Harness Wars of 2027.' Cites Factory's auto model-router (claimed 25% cost cut at frontier performance).",
     "topics": [
       "industry",
-      "agent-design"
+      "agent-design",
+      "management"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "188.3K",
+    "views": "227.1K",
     "notes": "",
     "enriched": true,
-    "content": "Model routing is an important thing. Controversial idea: the frontier labs will want their AI harness to be the moat, but ultimately the best case for consumers is that model capabilities flatten and commodify. Preview of the AI Harness Wars of 2027. [Quote: Factory introduces model routing, picks the right model per task, cuts costs 25%.]",
-    "enrichment_status": "legacy-ok"
+    "content": "Garry Tan @garrytan. Model routing is important. Controversial idea: frontier labs will want their AI harness to be the moat, but the best case for consumers is that model capabilities flatten and commodify. 'Preview of the AI Harness Wars of 2027.' QUOTE: Factory @FactoryAI introducing model routing - Factory Router picks the right model per task automatically, maintain frontier performance while cutting costs 25%. 227.1K views. industry, agent-design, management.\n\nFactory Router picks the right model per task automatically — 25% cheaper at frontier performance.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-03",
@@ -2762,7 +2787,7 @@
     "handle": "@l1vsun",
     "subject": "Post by Livsun on X",
     "url": "https://x.com/l1vsun/status/2061876167687201243",
-    "summary": "[Engagement-farmed hype] Anonymous quant-trading flex: neural net trained on 11 years of tick data, 4200 data points/sec, 847K labeled setups, $40/mo server, claims 71% win rate over 90 days. No code, no paper, no repo — pure 'you're not losing because your analysis is wrong' bait. Skip.",
+    "summary": "Off-topic trading engagement-farm: a neural net trained on years of tick data supposedly calling setups hours before the open (71% win rate, built for <$500), promoting a 'win every trade' listicle. Not AI/dev material.",
     "topics": [
       "questionable"
     ],
@@ -2771,11 +2796,13 @@
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "70.5K",
     "notes": "",
     "enriched": true,
-    "content": "market opens at 9:30am, his trade was already in at 4am. neural net trained on 11 years of tick data. 4,200 data points per second, 847,000 labeled historical setups, running on a $40/mo server. last 90 days: 71% win rate, 2.3 avg risk/reward. he built his whole setup for under $500 using a free dataset and 3 weeks of evenings. edge was never hidden behind a paywall.",
-    "enrichment_status": "legacy-ok"
+    "content": "Livsun @L1vsun. Trading engagement-farm: neural net trained on 11 years of tick data calls setups 5 hours before the candle forms; 4,200 data points/sec, 847k labeled historical setups, $40/mo server; surfaces 3-4 trades/day, 71% win rate over 90 days, 2.3 avg R/R; built for under $500 in 3 weeks of evenings. QUOTE ARTICLE: Roan @RohOnChain 'How to Use Neural Networks to Win Every Trade Before It Even Starts'. 70.5K views. Off-topic trading hype. questionable.\n\nArticle: 'How to Use Neural Networks to Win Every Trade Before It Even Starts.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-06-03",
@@ -2783,22 +2810,25 @@
     "handle": "@tom_doerr",
     "subject": "Post by Tom Dörr on X",
     "url": "https://x.com/tom_doerr/status/2061674811122713013",
-    "summary": "FlowForge — a Claude skill that generates professional draw.io diagrams from natural language. Repo: github.com/wentong2022-arch/flowforge-skill. Drop-in skill for producing architecture/flow diagrams without manual diagramming.",
+    "summary": "Shares FlowForge, a Skill that generates professional draw.io diagrams from natural language (github.com/wentong2022-arch/flowforge-skill).",
     "topics": [
       "skills-mcp",
-      "dev-practices"
+      "dev-practices",
+      "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "16.8K",
+    "views": "17.9K",
     "notes": "",
     "enriched": true,
-    "content": "Generates professional draw.io diagrams from natural language. https://github.com/wentong2022-arch/flowforge-skill",
-    "enrichment_status": "legacy-ok"
+    "content": "Tom Dorr @tom_doerr. Generates professional draw.io diagrams from natural language. github.com/wentong2022-arch/flowforge-skill (a Skill). 17.9K views. skills-mcp, dev-practices, agent-design.\n\nFlowForge — natural-language → draw.io diagrams (Skill)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-31",
@@ -2806,24 +2836,25 @@
     "handle": "@zodchiii",
     "subject": "Post by darkzodchi on X",
     "url": "https://x.com/zodchiii/status/2061040686330257656",
-    "summary": "Quote tweet promoting @0x_rody's article on building Claude Code subagents in 15 minutes — each subagent is a markdown file with instructions and a prompt. Templates given for code reviewer, test writer, security scanner, and documentation generator. Engagement-framed but the underlying template approach is real.",
+    "summary": "Anthropic-engineer clip: build 5 focused agents (code review, tests, docs, security) in an afternoon, each ~15 minutes as a markdown file with instructions + prompt. Links a beginner subagent-building template.",
     "topics": [
       "claude-code",
       "agent-design",
-      "skills-mcp",
-      "questionable"
+      "skills-mcp"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
     "views": "1M",
     "notes": "",
     "enriched": true,
-    "content": "Anthropic engineer: 'You can build 5 assistants in one afternoon.' Quote of @0x_rody article on Claude Code subagent template.",
-    "enrichment_status": "legacy-ok"
+    "content": "darkzodchi @zodchiii. Anthropic engineer: 'You can build 5 assistants in one afternoon, each handling a task you do manually daily.' Builds 5 focused agents from scratch on camera in 45 min. QUOTE ARTICLE: rody @0x_rody 'How to Build Your First Claude Code Subagent in 15 Minutes (Exact Template Inside)' - build a code reviewer, test writer, security scanner, or doc generator in <15 min; each is a markdown file (instructions at top, prompt at bottom). 1M views. claude-code, agent-design, skills-mcp.\n\nArticle: 'How to Build Your First Claude Code Subagent in 15 Minutes.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-31",
@@ -2856,45 +2887,49 @@
     "handle": "@vintcessun",
     "subject": "Post by 恒星 on X",
     "url": "https://x.com/vintcessun/status/2060897802478293013",
-    "summary": "DeepMind open-sourced Science Skills (github.com/google-deepmind/science-skills) — 30+ scientific databases like AlphaGenome and UniProt packaged as agent skills. Each skill breaks API interactions into clear instructions + scripts so agents step through them instead of hallucinating. Installs via one npx line, plugs into Antigravity.",
+    "summary": "DeepMind packaged 30+ scientific databases (AlphaGenome, UniProt) into agent skills. The real bottleneck for science agents isn't model quality but knowing how to call databases correctly; skills turn each DB's API into clear instructions + scripts so agents execute step-by-step. One-line npx install (github.com/google-deepmind/science-skills).",
     "topics": [
       "skills-mcp",
-      "agent-design",
-      "research"
+      "research",
+      "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "33.1K",
+    "views": "34.5K",
     "notes": "",
     "enriched": true,
-    "content": "DeepMind packaged 30+ scientific databases (AlphaGenome, UniProt) as agent skills. github.com/google-deepmind/science-skills",
-    "enrichment_status": "legacy-ok"
+    "content": "vintcessun (Translated from Chinese). DeepMind packaged 30+ scientific databases (AlphaGenome, UniProt) into agent skills. The big problem with science agents isn't model quality - it's that they don't know how to properly call databases (hallucinations, token waste). Skills break API interactions per database into clear instructions + scripts so agents execute step by step instead of guessing. One-line npx install, plugs into Antigravity. GitHub: google-deepmind/science-skills. 34.5K views. skills-mcp, research, agent-design.\n\ngoogle-deepmind/science-skills",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-31",
     "author": "Chesny",
-    "handle": "@chesnyfcb",
+    "handle": "@chesny",
     "subject": "Post by Chesny on X",
     "url": "https://x.com/chesnyfcb/status/2060818732654481693",
-    "summary": "Hype thread (translated from Spanish) about a Karpathy-inspired '3D knowledge galaxy' note-taking system that someone replicated — 378 input notes produced 1854 nodes and 3856 connections. Frames Notion/Roam/Obsidian as inferior. Underlying idea (LLM-augmented note-graph that surfaces hidden connections) is interesting but post is engagement-bait.",
+    "summary": "Polemical pitch (translated) for a 3D 'knowledge galaxy' second brain à la Karpathy: 378 notes auto-generated ~1,854 nodes and ~3,856 connections, surfacing hidden links and missing connections. Pragmatic takeaway: start with an automated Obsidian + Claude vault that extracts content, finds connections, and writes daily reports.",
     "topics": [
-      "general",
-      "questionable"
+      "agent-design",
+      "prompting"
     ],
     "audience": [
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "319.8K",
     "notes": "",
     "enriched": true,
-    "content": "Karpathy second brain = 3D knowledge galaxy. 378 notes → 1854 nodes, 3856 connections. Anti-Notion/Roam/Obsidian.",
-    "enrichment_status": "legacy-ok"
+    "content": "Chesny @chesny (was @chesnyfcb; Translated from Spanish). Why Karpathy's second brain doesn't use Notion/Obsidian: he built a 3D 'knowledge galaxy' from scratch. Someone replicated it: 378 notes auto-generated 1854 nodes and 3856 connections; actively discovers hidden connections, surfaces missing links and cross-cutting ideas, 3D spatial navigation. Polemic: Notion=filing cabinet, Roam=spreadsheet, Obsidian=cemetery; best AI experts build galaxies. 'The gap in the compound interest of knowledge is about architecture, not talent.' Pragmatic advice: start with automated Obsidian + Claude (AI extracts content, finds connections, generates daily reports). QUOTE ARTICLE (Spanish): 'Como crear un vault en Obsidian que aprende solo'. 319.8K views. agent-design, prompting.\n\nArticle (ES): 'Cómo crear un vault en Obsidian que aprende solo.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-29",
@@ -2927,23 +2962,25 @@
     "handle": "@ghumare64",
     "subject": "Post by Rohit Ghumare on X",
     "url": "https://x.com/ghumare64/status/2060072412868235587",
-    "summary": "Long essay by Mike (linked) arguing that picking LangChain/LangGraph/OpenAI Agents SDK forces you to accept a bundled harness — turn state machine, provider routing, credential vault, policy engine, approval gates, budget tracker, hook fanout, context compaction, session trees, OpenTelemetry tracing — as one block. The case for composing them as workers on a shared bus with typed function contracts so teams stop rewriting harnesses from scratch.",
+    "summary": "Summarizes Mike Piccolo's argument that a harness isn't one thing but ~15 separate concerns (turn state machines, provider routing, credential vaults, policy engines, approval gates, budget trackers, context compaction, session trees, tracing) bundled by frameworks out of necessity. When each layer is a worker on a shared bus with a typed contract, 'build your own harness' means swapping a worker, not forking a framework.",
     "topics": [
       "agent-design",
       "dev-practices"
     ],
     "audience": [
-      "me",
       "dev-team",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "69K",
     "notes": "",
     "enriched": true,
-    "content": "Agent harnesses are 15 separate concerns bundled together — case for composable workers on a shared bus with typed function contracts.",
-    "enrichment_status": "legacy-ok"
+    "content": "Rohit Ghumare @ghumare64. 'Almost everyone is building agent harness systems the wrong way.' Default: adopt LangChain/LangGraph/OpenAI Agents SDK and accept loop+tools+memory+orchestration+policy+credentials+budget as one decision. Mike Piccolo's argument: a harness isn't one thing - it's ~15 separate concerns bundled (turn state machines, provider routing, credential vaults, policy engines, approval gates, budget trackers, hook fanout, context compaction, session trees, OpenTelemetry tracing) because the ecosystem gave no way to compose them. When every layer is a worker on a shared bus with a typed function contract, 'build your own harness' means swap a worker (custom model catalogue, secrets manager, Slack approvals via approval::resolve) rather than fork a framework. QUOTE ARTICLE: Mike Piccolo @mfpiccolo 'How to build your own agent harness???'. 69K views. agent-design, dev-practices.\n\nArticle: 'How to build your own agent harness???'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-29",
@@ -2951,22 +2988,24 @@
     "handle": "@yoheinakajima",
     "subject": "Post by Yohei on X",
     "url": "https://x.com/yoheinakajima/status/2060068279574843614",
-    "summary": "Yohei Nakajima (BabyAGI) published his first arxiv paper: 'The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems' (arxiv.org/abs/2605.21997). Case for agents that coordinate through persistent replayable state — log-centric architecture you can audit and fork.",
+    "summary": "Yohei Nakajima's 'log-centric agent architecture' and his first arXiv paper 'The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems' — the case for agents that coordinate through persistent, replayable state.",
     "topics": [
       "agent-design",
       "research"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "16.8K",
+    "views": "20.2K",
     "notes": "",
     "enriched": true,
-    "content": "Yohei Nakajima arxiv paper on log-centric agent architecture — event-sourced reactive graphs, replayable state. arxiv.org/abs/2605.21997",
-    "enrichment_status": "legacy-ok"
+    "content": "Yohei @yoheinakajima. Better visualization of 'log-centric agent architecture'. QUOTE: babyagi has ~200 citations but 0 papers; published first arXiv paper 'The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems' (arxiv.org/abs/2605.21997) - case for agents that coordinate through persistent replayable state. 20.2K views. agent-design, research.\n\nThe Log is the Agent (arXiv)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-29",
@@ -2974,23 +3013,25 @@
     "handle": "@macjshiggins",
     "subject": "Post by MacCallister Higgins on X",
     "url": "https://x.com/macjshiggins/status/2060045337679532174",
-    "summary": "MacCallister Higgins argues classical NASA systems engineering is the right model for developing code with LLMs — explicit requirements/specs docs make agents reliable at building, testing, and verifying complex codebases. Quote-tweet of an old joke about a model that regenerates the whole codebase from scratch each night against the requirements doc.",
+    "summary": "Argues classical NASA systems engineering is the ideal model for LLM-assisted coding — being explicit in docs makes it easier than ever to build, test, and verify complex codebases (planning modes only approximate it).",
     "topics": [
       "dev-practices",
-      "agent-design"
+      "prompting"
     ],
     "audience": [
-      "me",
       "dev-team",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "191.7K",
+    "views": "197.3K",
     "notes": "",
     "enriched": true,
-    "content": "Classical NASA systems engineering is the perfect model for developing code with LLMs — explicit docs unlock complex codebases.",
-    "enrichment_status": "legacy-ok"
+    "content": "MacCallister Higgins @macjshiggins. Classical NASA systems engineering is the perfect model for developing code with LLMs. People approximate this with planning modes, but if you're explicit in your docs it's never been easier to build, test, and verify complex codebases. QUOTE: Observer of Suns (2022) joke - 'every morning at 1am our language model regenerates the whole codebase from scratch based on the current requirements document; more reliable than incremental edits.' 197.3K views. dev-practices, prompting.\n\nJoke (2022): 'every morning at 1am our LM regenerates the whole codebase from the requirements doc — more reliable than incremental edits.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-29",
@@ -2998,7 +3039,7 @@
     "handle": "@neural_avb",
     "subject": "Post by AVB on X",
     "url": "https://x.com/neural_avb/status/2060032255620431877",
-    "summary": "Recommends a 45-min video on building synthetic datasets and training tiny ~100M-parameter local language models specialized for narrow tasks. Code, datasets, models, and eval harnesses linked in replies.",
+    "summary": "A 45-minute walkthrough on creating synthetic datasets and training tiny (~100M param) local language models specialized for narrow tasks; code, datasets, models and harnesses linked.",
     "topics": [
       "research",
       "dev-practices"
@@ -3008,11 +3049,13 @@
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "30.7K",
+    "views": "38.5K",
     "notes": "",
     "enriched": true,
-    "content": "45-min video tutorial on creating synthetic datasets and training tiny 100M-parameter local LMs for narrow tasks.",
-    "enrichment_status": "legacy-ok"
+    "content": "AVB @neural_avb. 45-min video on how to create synthetic datasets and train tiny (100M param) local language models that specialize on narrow tasks. Code, datasets, models, harnesses in comments. 38.5K views. research, dev-practices.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-29",
@@ -3020,22 +3063,23 @@
     "handle": "@datachaz",
     "subject": "Post by Charly Wargnier on X",
     "url": "https://x.com/datachaz/status/2059649544854327466",
-    "summary": "Charly Wargnier recommends Akshay Pachaar's 47-min walkthrough of Hermes Agent — a setup with self-evolving skills, three-tier memory, and GEPA optimization for autonomous agents running locally 24/7. Hype framing, but technique combo (self-evolving skills + tiered memory + GEPA) is current.",
+    "summary": "Recommends Akshay Pachaar's 47-minute 'Hermes Agent Masterclass' on building self-improving, 24/7 local autonomous agents — self-evolving skills, three-tier memory, GEPA optimization, scaling from 1 to 10 agents.",
     "topics": [
       "agent-design",
-      "skills-mcp",
-      "questionable"
+      "skills-mcp"
     ],
     "audience": [
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "165.1K",
+    "views": "169K",
     "notes": "",
     "enriched": true,
-    "content": "Akshay Pachaar 47-min Hermes Agent walkthrough — self-evolving skills, three-tier memory, GEPA optimization, local autonomous agents.",
-    "enrichment_status": "legacy-ok"
+    "content": "Charly Wargnier @DataChaz. Praises Akshay Pachaar's Hermes article + new 47-min walkthrough on building self-improving, 24/7 autonomous agents locally. QUOTE ARTICLE: Akshay @akshay_pachaar 'Hermes Agent Masterclass' - self-evolving skills, three-tier memory, GEPA optimization, going from 1 to 10 agents that work 24/7. 169K views. agent-design, skills-mcp.\n\nArticle: 'Hermes Agent Masterclass.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-28",
@@ -3043,49 +3087,51 @@
     "handle": "@datachaz",
     "subject": "Post by Charly Wargnier on X",
     "url": "https://x.com/datachaz/status/2059909626532155482",
-    "summary": "ALL CAPS hype thread about Microsoft's SkillOpt — an open-source optimizer loop that mutates agent skill prompts the same way you'd train a model: base model runs the task, optimizer rewrites the instructions, rejects edits that don't improve the benchmark. Claims SOTA over TextGrad and hand-crafted prompts; model-agnostic. Worth a look despite the framing.",
+    "summary": "Microsoft open-sourced SkillOpt: optimize agent skills the way you train models — a base model runs tasks while an optimizer rewrites the instructions, keeping only edits that raise the benchmark. Claims SOTA over hand-crafted prompts and TextGrad, with no model lock-in since it learns procedural logic.",
     "topics": [
       "skills-mcp",
-      "agent-design",
-      "prompting",
-      "questionable"
+      "research",
+      "prompting"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "121.2K",
     "notes": "",
     "enriched": true,
-    "content": "Microsoft open-sourced SkillOpt — automated mathematical optimizer loop for agent skill prompts. Beats TextGrad and hand-crafted prompts.",
-    "enrichment_status": "legacy-ok"
+    "content": "Charly Wargnier @DataChaz. 'MICROSOFT JUST OPEN-SOURCED SELF-EVOLVING AGENT SKILLS' - SkillOpt, free/open-source: train agent skills the same way you train models. A base model runs tasks while an optimizer evaluates output to rewrite/improve the instructions. Data-driven updates (isolates successful paths from failures), built-in quality control (rejects edits that don't boost benchmark), claims SOTA over hand-crafted prompts and TextGrad, zero model lock-in (learns procedural logic, transfers across models). Paradigm shift: teach the skill instead of tweaking the model. 121.2K views. skills-mcp, research, prompting.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-28",
     "author": "Muratcan Koylan",
-    "handle": "@koylanai",
+    "handle": "@muratcan",
     "subject": "Post by Muratcan Koylan on X (orchestration)",
     "url": "https://x.com/koylanai/status/2059753045060395240",
-    "summary": "Muratcan Koylan: his open-source Agent Skills for Context Engineering project was cited in 'Agent Harness Engineering: A Survey' on OpenReview (authors from CMU/Yale/Johns Hopkins/Amazon). Survey reviewed 170+ open-source projects and pulled lessons from OpenAI/Anthropic/LangChain. Core thesis: real-world agent performance = model capability + harness quality, and harness improvements (tool formats, sandboxes, automated verification loops) deliver the biggest wins on long-horizon tasks. Paper at picrew.github.io/LLM-Harness/. (Jeremy flagged this one as 'orchestration'.)",
+    "summary": "On the 'Agent Harness Engineering: A Survey' paper (CMU/Yale/JHU/Amazon; 170+ projects reviewed): real-world agent performance = model capability + harness quality, and for long-horizon production tasks the harness is the main bottleneck. Simple harness tweaks (tool formats, sandboxing, verification loops) yield big benchmark gains; the biggest wins come from turning production traces into regression tests + automated harness fixes.",
     "topics": [
-      "agent-design",
       "research",
-      "skills-mcp"
+      "agent-design"
     ],
     "audience": [
-      "me",
       "dev-team",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "37.5K",
+    "views": "39.2K",
     "notes": "",
     "enriched": true,
-    "content": "Agent Harness Engineering: A Survey — 170+ projects reviewed. Real-world agent perf = model + harness quality. picrew.github.io/LLM-Harness/",
-    "enrichment_status": "legacy-ok"
+    "content": "Muratcan Koylan @muratcan (was @koylanai). 'Agent Harness Engineering: A Survey' (OpenReview; authors from CMU, Yale, Johns Hopkins, Amazon) cited his Agent Skills for Context Engineering project. Reviewed 170+ open-source projects, pulled production lessons from OpenAI/Anthropic/LangChain. Thesis: real-world agent performance = Model capability + Harness quality; for long-horizon/multi-step/production tasks the harness is the main bottleneck; simple harness tweaks (better tool formats, sandbox changes, automated verification loops) yield significant benchmark gains. Moving from 'build one agent' to 'operate a fleet of long-running agents'; biggest improvements come from turning production traces into regression tests + automated harness fixes. Paper/repo: picrew.github.io/LLM-Harness. 39.2K views. research, agent-design.\n\nAgent Harness Engineering: A Survey (paper + repo)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-28",
@@ -3093,22 +3139,25 @@
     "handle": "@kylejeong",
     "subject": "Post by Kyle Jeong on X",
     "url": "https://x.com/kylejeong/status/2059753008297394245",
-    "summary": "Kyle Jeong on iterative AutoResearch applied to browser skills — their /autobrowse skill gets 90% faster and cheaper after iterative self-improvement. Links to article 'Autobrowse: The Mythos moment for Browser Agents is here' arguing browser agents have an amnesia problem (re-discover every site from scratch) and how iterating on a real run fixes the discovery tax.",
+    "summary": "Browser agents have an 'amnesia problem' — re-discovering each site from scratch every run. Autobrowse uses iterative AutoResearch to let an agent improve its own browser skills (/autobrowse), reportedly up to 90% faster and cheaper.",
     "topics": [
       "agent-design",
-      "skills-mcp"
+      "skills-mcp",
+      "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "217.3K",
+    "views": "219.4K",
     "notes": "",
     "enriched": true,
-    "content": "Iterative AutoResearch on browser skills — /autobrowse gets 90% faster/cheaper. Fix for browser-agent amnesia.",
-    "enrichment_status": "legacy-ok"
+    "content": "Kyle Jeong @kylejeong. You can make your skills better using iterative AutoResearch; did it for browser skills -> /autobrowse, up to 90% faster and cheaper. QUOTE ARTICLE: 'Autobrowse: The Mythos moment for Browser Agents is here' - browser agents have an amnesia problem (re-discover every site from scratch each run, paying the full discovery tax); Autobrowse lets an agent iterate on a real environment to fix that. 219.4K views. agent-design, skills-mcp, dev-practices.\n\nArticle: 'Autobrowse: The Mythos moment for Browser Agents is here.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-28",
@@ -3116,22 +3165,24 @@
     "handle": "@jerryjliu0",
     "subject": "Post by Jerry Liu on X",
     "url": "https://x.com/jerryjliu0/status/2059710330016817501",
-    "summary": "LlamaIndex shipped LiteParse v2 (github.com/run-llama/liteparse, blog at llamaindex.ai/blog/liteparse-v2-0-runs-everywhere) — a Rust rewrite of their PDF parser with native Python/Node packages and a WASM build for browser/edge. Claims fastest open-source model-free PDF parser, more accurate than pymupdf/pypdf/markitdown/pdftotext/pymupdf4llm, up to 100x faster, supports 50+ document types.",
+    "summary": "LiteParse v2: LlamaIndex's PDF parser rewritten in Rust with native Python/Node (and WASM) packages — claimed fastest and most accurate open-source model-free parser, up to 100x faster, 50+ document types, installable inside an AI agent.",
     "topics": [
       "dev-practices",
-      "industry"
+      "skills-mcp"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "694.3K",
+    "views": "722.5K",
     "notes": "",
     "enriched": true,
-    "content": "LlamaIndex LiteParse v2 — Rust rewrite, 100x faster, 50+ doc types, beats pymupdf/pypdf. github.com/run-llama/liteparse",
-    "enrichment_status": "legacy-ok"
+    "content": "Jerry Liu @jerryjliu0. World's fastest PDF parser, more accurate than other open-source model-free parsers (pymupdf, pypdf, markitdown, pdftotext, opendataloader, pymupdf4llm). LiteParse v2 - entire library rewritten in Rust, native packages for Python and Node, supports 50+ document types, installable within your AI agent. QUOTE: LlamaIndex - up to 100x faster parsing, native Rust/JS-TS/Python, custom WASM for browser/edge. Blog: llamaindex.ai/blog/liteparse-v2; repo github.com/run-llama/liteparse. 722.5K views. dev-practices, skills-mcp.\n\nLiteParse v2.0 — rewritten in Rust, up to 100x faster, runs everywhere (Rust/JS/Python/WASM).",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-28",
@@ -3162,22 +3213,24 @@
     "handle": "@johnyeo_",
     "subject": "Post by John Yeo on X (try it)",
     "url": "https://x.com/johnyeo_/status/2059688796728267261",
-    "summary": "John Yeo (Stripe-style billing) describes an internal AI agent that automatically queries logs and investigates support tickets. Linked article covers how it works for a stateful domain (billing) where API outcomes depend on customer history. (Jeremy flagged this as 'try it'.)",
+    "summary": "Describes an in-house agent that automatically queries logs and investigates support tickets — with billing state/history making each case stateful. Links a build writeup.",
     "topics": [
       "agent-design",
       "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "28.9K",
+    "views": "29K",
     "notes": "",
     "enriched": true,
-    "content": "Internal AI agent that automatically queries logs and investigates support tickets — for stateful billing domain.",
-    "enrichment_status": "legacy-ok"
+    "content": "John Yeo @johnyeo_. One of the biggest levers built in house: an agent to automatically query logs and investigate tickets. QUOTE ARTICLE: 'Building an AI agent to automatically investigate support tickets' - billing is inherently stateful; outcome of an API call depends on customer's billing state/history (e.g., scheduled cancellation then upgrade). 29K views. agent-design, dev-practices.\n\nArticle: 'Building an AI agent to automatically investigate support tickets.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-28",
@@ -3185,21 +3238,23 @@
     "handle": "@dklineii",
     "subject": "Post by Dave Kline on X",
     "url": "https://x.com/dklineii/status/2059634666030637286",
-    "summary": "Dave Kline on managing up: his biggest mistake as a manager was assuming his team's impact was visible to his boss and that he'd be 'more valuable if he just handled it.' Thread on what to do instead.",
+    "summary": "Management thread: 'the biggest mistake I made as a manager was not managing up' — assuming impact is obvious and the boss is plugged in — plus how to fix it.",
     "topics": [
       "management"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "36.6K",
+    "views": "36.9K",
     "notes": "",
     "enriched": true,
-    "content": "Managing up — the biggest manager mistake is assuming your boss is plugged in. Thread on what to do instead.",
-    "enrichment_status": "legacy-ok"
+    "content": "Dave Kline @dklineii. 'The biggest mistake I made as a manager: not managing up.' Thought team's impact was obvious, assumed boss was plugged in, believed handling it alone made him more valuable - wrong. Thread on how to stop making excuses and manage up instead. 36.9K views. management.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-28",
@@ -3207,23 +3262,25 @@
     "handle": "@sairahul1",
     "subject": "Post by Rahul on X",
     "url": "https://x.com/sairahul1/status/2059632149716942923",
-    "summary": "Engagement-farmed thread claiming Anthropic released a 'blueprint' for running a company with Claude Code where one human is CEO and AIs are employees that divide tasks. Underlying linked article is 'How to Build a SaaS MVP in One Afternoon Using 7 AI Agents.' The pattern is real (multi-agent dev workflows) but the framing is hype.",
+    "summary": "Hype-framed ('Anthropic just released the blueprint for a company run by Claude Code; work is dying') push for a listicle on building a SaaS MVP in an afternoon with 7 AI agents. Clickbait wrapper over a real multi-agent build walkthrough.",
     "topics": [
       "claude-code",
       "agent-design",
       "questionable"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "557.8K",
+    "views": "567.1K",
     "notes": "",
     "enriched": true,
-    "content": "Hype thread on Anthropic 'blueprint' — 1 human CEO + several AI employees. Article: build a SaaS MVP in one afternoon with 7 AI agents.",
-    "enrichment_status": "legacy-ok"
+    "content": "Rahul @sairahul1. 'Anthropic just released the blueprint for creating a company with Claude Code.' CEO: 1 human; employees: several AIs that divide tasks and move on their own. Engagement-y hype framing ('work is literally dying'). QUOTE ARTICLE: 'How to Build a SaaS MVP in One Afternoon Using 7 AI Agents' - multi-agent product build (founder/researcher/product roles). 567.1K views. claude-code, agent-design, questionable.\n\nArticle: 'How to Build a SaaS MVP in One Afternoon Using 7 AI Agents.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-28",
@@ -3231,22 +3288,24 @@
     "handle": "@pauliusztin_",
     "subject": "Post by Paul Iusztin on X",
     "url": "https://x.com/pauliusztin_/status/2059613089260003387",
-    "summary": "Paul Iusztin breaks down Neo4j's three-layer agent memory system inside one graph: (1) short-term — active conversation as a linear chain of ordered messages; (2) long-term — persistent knowledge graph of entities, orgs, locations, preferences, facts, and relationships with embeddings on nodes so agents traverse connected knowledge rather than retrieve isolated chunks; (3) extraction lineage tying them together.",
+    "summary": "Breakdown of Neo4j's graph-native agent memory: three connected layers in one graph — short-term (ordered message chain), long-term (entity/relationship knowledge graph with embeddings, traversed relationally), and reasoning memory (per-run trees of thoughts/tool-calls/decision paths). Typed edges (:MENTIONS/:INITIATED_BY/:TOUCHED) make provenance a one-hop query; 'the ontology is the real product.'",
     "topics": [
       "agent-design",
       "research"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "2,115",
     "notes": "",
     "enriched": true,
-    "content": "Neo4j agent memory: short-term conversation chain + long-term knowledge graph (entities/orgs/facts with embeddings) + extraction lineage.",
-    "enrichment_status": "legacy-ok"
+    "content": "Paul Iusztin @pauliusztin_. Study of Neo4j's agent memory system: memory separated into 3 connected layers in the same graph (vs typical conversation history + vector search). 1/ Short-term: active conversation state, linear ordered message chain. 2/ Long-term: persistent knowledge graph of entities/orgs/locations/preferences/facts/relationships as nodes with embeddings, so the agent traverses connected knowledge (relational, not just semantic). 3/ Reasoning memory: stores reasoning traces (thoughts, tool calls, decision paths, intermediate steps) as a tree per run, enabling later analysis of what reasoning/tools/strategies worked - like RL but optimized at the DB layer, not model weights. All three stitched via typed edges (:MENTIONS, :INITIATED_BY, :TOUCHED) making provenance a one-hop query. Takeaway: 'the ontology is the real product'; graph-native memory turns retrieval into traversing relationships/reasoning paths. Deep dive in Decoding AI Magazine (Substack). 2,115 views. agent-design, research.\n\nUnderstanding Neo4j's graph agent memory (deep dive)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-28",
@@ -3254,23 +3313,25 @@
     "handle": "@_avichawla",
     "subject": "Post by Avi Chawla on X",
     "url": "https://x.com/_avichawla/status/2059556157984006187",
-    "summary": "Avi Chawla explainer on RAG vs Graph RAG vs Agentic RAG. Standard RAG embeds chunks and retrieves by similarity — fine for direct lookups, fails on multi-hop queries. Graph RAG adds an LLM-extracted entity/relationship layer so retrieval traverses connections (e.g., 'checkout uses payments API' + 'payments API on cluster-3' + 'cluster-3 maintenance Friday' → answers 'will checkout be affected Friday?'). Agentic RAG adds an agent loop on top for planning multi-step retrieval.",
+    "summary": "Clear explainer of RAG vs Graph RAG vs Agentic RAG as solving different query types: standard RAG for single-hop factual lookups, Graph RAG (LLM-extracted entities/relationships + traversal) for multi-hop connections, Agentic RAG (an agent choosing tools/sources at query time) for dynamic multi-source tasks — plus binary quantization for 32x more memory-efficient vector search.",
     "topics": [
-      "agent-design",
       "research",
-      "prompting"
+      "agent-design",
+      "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "181.6K",
     "notes": "",
     "enriched": true,
-    "content": "RAG vs Graph RAG vs Agentic RAG — Graph RAG extracts entities/relationships and traverses connections for multi-hop queries.",
-    "enrichment_status": "legacy-ok"
+    "content": "Avi Chawla @_avichawla. RAG vs Graph RAG vs Agentic RAG explained. Standard RAG: embed docs, retrieve similar chunks - good for direct factual lookups, breaks when a query must connect facts across docs. Graph RAG: LLM extracts entities/relationships at indexing, traversal at retrieval enables multi-hop (worked example: checkout service -> payments API -> cluster-3 -> Friday maintenance; vector search misses the connecting middle fact, graph traversal finds the full path). Agentic RAG: an LLM agent decides at query time which tools/sources to invoke and in what order. Not levels to graduate through - they solve different query types (single-hop=RAG, multi-hop=Graph RAG, dynamic multi-source+tools=Agentic RAG). Efficiency: vector search can be 32x more memory efficient via binary quantization. 181.6K views. research, agent-design, dev-practices.\n\nArticle: 'How to make RAG 32x memory efficient (explained with code).'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-27",
@@ -3278,48 +3339,51 @@
     "handle": "@zodchiii",
     "subject": "Post by darkzodchi on X",
     "url": "https://x.com/zodchiii/status/2059603103070945391",
-    "summary": "darkzodchi promotes an X article on setting up Claude Code to catch, fix, and learn from its own mistakes automatically. Pitches it as Boris Cherny's (Claude Code creator) approach: stop fixing Claude's mistakes and make Claude fix them itself. Engagement-farm framing but the underlying setup may be worth a look.",
+    "summary": "Boris Cherny (Claude Code): 'we stopped fixing Claude's mistakes; we made Claude fix them itself.' Links a copyable setup for having Claude Code catch, fix, and learn from its own errors instead of the write-code/tests-fail/explain loop.",
     "topics": [
       "claude-code",
-      "agent-design",
       "dev-practices",
-      "questionable"
+      "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "21K",
+    "views": "116.5K",
     "notes": "",
     "enriched": true,
-    "content": "Boris Cherny, creator of Claude Code: 'We stopped fixing Claude's mistakes. We made Claude fix them itself.' Quote tweet promotes article: How to Make Claude Code Fix Its Own Mistakes Automatically (Exact Setup You Can Copy). 21K views.",
-    "enrichment_status": "legacy-ok"
+    "content": "darkzodchi @zodchiii. Boris Cherny (creator of Claude Code): 'We stopped fixing Claude's mistakes. We made Claude fix them itself.' QUOTE ARTICLE: 'How to Make Claude Code Fix Its Own Mistakes Automatically (Exact Setup You Can Copy)' - a setup that makes Claude catch, fix, and learn from its own errors instead of the write-code/tests-fail/explain loop. 116.5K views. claude-code, dev-practices, agent-design.\n\nArticle: 'How to Make Claude Code Fix Its Own Mistakes Automatically (Exact Setup You Can Copy).'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-27",
     "author": "Parag pawar",
-    "handle": "@dharmikpawar13",
+    "handle": "@promptparag",
     "subject": "Post by Parag pawar on X (have a look)",
     "url": "https://x.com/dharmikpawar13/status/2059571098484675051",
-    "summary": "Argues CLAUDE.md is not docs but the control layer for your AI agent — inconsistent outputs usually come from bad instruction architecture, not the model. Lays out a scope hierarchy (global = standards, project = stack/workflows, folder = local overrides) where the nearest scope wins, plus a WHAT/WHY framework for organizing context. Directly relevant since Jeremy's own AI links collection runs off a CLAUDE.md — he flagged this one with '(have a look)'.",
+    "summary": "Argues CLAUDE.md is a control layer, not a README: use scope hierarchy (global → project → folder, nearest wins) and a WHAT/WHY/HOW framing, favor specificity ('TypeScript strict mode, Zod validation' over 'production-ready code'), start with /init, keep it under ~500 lines, use hooks, and treat it as living infrastructure.",
     "topics": [
       "claude-code",
       "prompting",
       "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "",
+    "views": "2,080",
     "notes": "Jeremy flagged with '(have a look)' — relates directly to project CLAUDE.md practices.",
     "enriched": true,
-    "content": "Most developers treat CLAUDE.md like documentation. That's the mistake. It's not a README. It's the control layer for your AI agent. If your outputs feel inconsistent, buggy, or 'random'... the problem usually isn't the model. It's the instruction architecture. The biggest unlock is understanding scope hierarchy: Global scope (coding standards, universal behavior), Project scope (stack, workflows, commands), Folder scope (local overrides for specific tasks). The nearest scope overrides everything above it. Another game-changing framework: WHAT (project context), WHY (engineering reasoning).",
-    "enrichment_status": "legacy-ok"
+    "content": "Parag pawar @promptparag (was @dharmikpawar13). CLAUDE.md is not a README - it's the control layer for your AI agent; inconsistent/buggy outputs are usually an instruction-architecture problem, not the model. Scope hierarchy: global (coding standards) -> project (stack, workflows, commands) -> folder (local overrides); nearest scope wins. Framework: WHAT (project context) / WHY (principles & constraints) / HOW (execution rules & commands). Specificity separates reliable from chaotic agents (e.g. 'use TypeScript strict mode, Zod validation, async error boundaries' beats 'write production-ready code'; 'Vitest unit tests 80%+ coverage' beats 'add tests'). Rules: start with /init, keep CLAUDE.md <500 lines, use hooks for repeatable behaviors, treat it as living infrastructure, reference configs instead of duplicating logic. 2,080 views. claude-code, prompting, dev-practices.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-27",
@@ -3327,24 +3391,25 @@
     "handle": "@rohit4verse",
     "subject": "Post by Rohit on X",
     "url": "https://x.com/rohit4verse/status/2059366212501696609",
-    "summary": "Rohit endorses a Databricks tech lead's 26-min talk at @aiDotEngineer on multi-agent coordination — argues agents break not because the model is dumb but because nothing coordinates them. 'One agent is a feature. Fifty is a distributed systems problem. Parallelism is cheap. Getting 300 agents to share one coherent brain is the entire game.' Quote tweets his own article on commanding 300 agents from one prompt.",
+    "summary": "A Databricks tech lead's talk on the unglamorous core of multi-agent: agents fail not because the model is dumb but because nothing coordinates them — one agent is a feature, fifty is a distributed-systems problem, and getting hundreds of agents to share one coherent brain is the whole game.",
     "topics": [
       "agent-design",
-      "dev-practices",
-      "management"
+      "dev-practices"
     ],
     "audience": [
-      "me",
       "dev-team",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "43.4K",
+    "views": "46.9K",
     "notes": "",
     "enriched": true,
-    "content": "A databricks tech lead just spent 26 minutes on the part of multi-agent nobody wants to say out loud: your agents don't break because the model is dumb. They break because nothing is coordinating them. One agent is a feature. Fifty is a distributed systems problem. Parallelism is cheap. Getting 300 agents to share one coherent brain is the entire game. Worth every minute @aiDotEngineer. Quote tweets own article: You're Not Slow. You're Single-Threaded: A Complete Guide on Commanding 300 Agents from One Prompt.",
-    "enrichment_status": "legacy-ok"
+    "content": "Rohit @rohit4verse. A Databricks tech lead spent 26 min on the part of multi-agent nobody says out loud: agents don't break because the model is dumb, they break because nothing coordinates them. One agent is a feature; fifty is a distributed-systems problem. Parallelism is cheap; getting 300 agents to share one coherent brain is the whole game. (@aiDotEngineer talk.) QUOTE ARTICLE: 'You're Not Slow. You're Single-Threaded: A Complete Guide on Commanding 300 Agents from One Prompt.' 46.9K views. agent-design, dev-practices.\n\nArticle: 'You're Not Slow. You're Single-Threaded: Commanding 300 Agents from One Prompt.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-27",
@@ -3352,23 +3417,25 @@
     "handle": "@theo",
     "subject": "Post by Theo - t3.gg on X",
     "url": "https://x.com/theo/status/2059352130289651925",
-    "summary": "Theo endorses DeepSWE, a new agentic coding benchmark released by Datacurve (Serena Ge). Claims it 'actually aligns with how it feels to use these models coding' — i.e. surfaces real divergence between top models where public leaderboards make them look close.",
+    "summary": "Endorses DeepSWE, a new agentic-coding benchmark that reflects the realistic day-to-day developer experience — showing where top models actually diverge rather than clustering as they do on public leaderboards.",
     "topics": [
       "research",
-      "claude-code",
-      "dev-practices"
+      "dev-practices",
+      "claude-code"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "242.6K",
+    "views": "305.3K",
     "notes": "",
     "enriched": true,
-    "content": "Theo: This is the first code bench that actually aligns with how it feels to use these models coding. Quote tweet of Serena Ge (Datacurve) announcing DeepSWE, a new standard for agentic coding benchmarks. 242.6K views.",
-    "enrichment_status": "legacy-ok"
+    "content": "Theo - t3.gg @theo. 'The first code bench that actually aligns with how it feels to use these models coding.' QUOTE: Serena Ge @serenaa_ge - releasing DeepSWE, a new standard for agentic coding benchmarks; on public leaderboards top models look close, DeepSWE shows where they actually diverge, reflecting realistic day-to-day developer experience. 305.3K views. research, dev-practices, claude-code.\n\nReleasing DeepSWE — a new standard for agentic coding benchmarks.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-27",
@@ -3376,24 +3443,24 @@
     "handle": "@0xmovez",
     "subject": "Post by Movez on X",
     "url": "https://x.com/0xmovez/status/2059346354984612126",
-    "summary": "Pointer to an Anthropic engineer's 37-min workshop on shipping production-ready AI agents, framed around 3 building blocks: brain (persona) + hands (environment) + sessions, with a server-side loop so refreshes don't break state. Engagement-farm framing — quote tweets a longer companion guide on multi-agent orchestration on Claude.",
+    "summary": "An Anthropic engineer's 37-minute masterclass on shipping production agent teams: three building blocks (brain=persona, hands=environment, sessions), a server-side loop so nothing breaks on refresh, and why agents 'die before production.' Links a 10-step multi-agent build guide.",
     "topics": [
-      "agent-design",
       "claude-code",
-      "management",
-      "questionable"
+      "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "164.1K",
     "notes": "",
     "enriched": true,
-    "content": "Anthropic AI engineer just dropped a live masterclass on how to ship a team of production-ready AI agents. 37 minutes. Free. 3 building blocks: brain, hands, sessions. Server-side loop so nothing breaks on refresh. Agent teams shipping to production 10-15x faster. Brain (persona) + hands (environment) + sessions = a production agent out of the box. Quote tweets Codez article: How to build a team of Claude agents in 10 steps: from one agent to 20 working in parallel.",
-    "enrichment_status": "legacy-ok"
+    "content": "Movez @0xMovez. Anthropic AI engineer's 37-min free masterclass on shipping a team of production-ready AI agents. Covers: 3 building blocks (brain=persona, hands=environment, sessions); server-side loop so nothing breaks on refresh; agent teams shipping to production 10-15x faster; why agents die before production. brain + hands + sessions = a production agent out of the box. QUOTE ARTICLE: Codez @0xCodez 'How to build a team of Claude agents in 10 steps: from one agent to 20 working in parallel' - combines official docs, cookbook, real setups from Netflix and Spiral. 164.1K views. claude-code, agent-design.\n\nArticle: 'How to build a team of Claude agents in 10 steps: from one agent to 20 in parallel.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-27",
@@ -3401,23 +3468,25 @@
     "handle": "@billxbf",
     "subject": "Post by Binfeng Xu on X",
     "url": "https://x.com/billxbf/status/2059323616009838703",
-    "summary": "Release of Polar, an Agent RL rollout infrastructure for real-world harnesses. Takes existing harnesses (Codex, Claude Code, OpenClaw, Hermes, or custom) directly as training environments with no code changes — find a problem, design the harness, train your own agent.",
+    "summary": "Release of Polar, Agent-RL rollout infrastructure that takes real-world harnesses (Codex, Claude Code, OpenClaw, Hermes, or your own) directly as training environments with no code change — find a problem, design the harness, train your own agents.",
     "topics": [
-      "agent-design",
       "research",
-      "claude-code"
+      "agent-design",
+      "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "86.3K",
+    "views": "133.4K",
     "notes": "",
     "enriched": true,
-    "content": "Excited to release Polar, our Agent RL rollout infra for real-world harnesses. Be it Codex, Claude Code, OpenClaw, Hermes, or your self-made ones - Polar takes your harnesses directly as training environments without code change. Find a problem, design the harness, and train your own agents! 86.3K views.",
-    "enrichment_status": "legacy-ok"
+    "content": "Binfeng Xu @billxbf. Release of Polar, Agent RL rollout infra for real-world harnesses. Works with Codex, Claude Code, OpenClaw, Hermes, or self-made harnesses - takes your harnesses directly as training environments without code change. Find a problem, design the harness, train your own agents. 133.4K views. research, agent-design, dev-practices.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-27",
@@ -3425,22 +3494,24 @@
     "handle": "@tom_doerr",
     "subject": "Post by Tom Dörr on X",
     "url": "https://x.com/tom_doerr/status/2059316125049971017",
-    "summary": "Pointer to a 500-hour AI infrastructure engineering curriculum on GitHub (github.com/ai-infra-curriculum/ai-infra-engineer-learning). Self-study path for ML/AI infra skills.",
+    "summary": "Shares a 500-hour AI infrastructure engineering curriculum (github.com/ai-infra-curriculum/ai-infra-engineer-learning).",
     "topics": [
       "dev-practices",
       "research"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "80.9K",
+    "views": "120.6K",
     "notes": "",
     "enriched": true,
-    "content": "500-hour AI infrastructure engineering curriculum. github.com/ai-infra-curriculum/ai-infra-engineer-learning. 80.9K views.",
-    "enrichment_status": "legacy-ok"
+    "content": "Tom Dorr @tom_doerr. 500-hour AI infrastructure engineering curriculum. github.com/ai-infra-curriculum/ai-infra-engineer-learning. 120.6K views. dev-practices, research.\n\n500-hour AI infra engineering curriculum",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-27",
@@ -3448,23 +3519,24 @@
     "handle": "@xingxingli45573",
     "subject": "Post by 刘醒 on X",
     "url": "https://x.com/xingxingli45573/status/2059258034820706541",
-    "summary": "Highlights 'Taste Skill' — a Skill (20.3k GitHub stars) that improves AI-generated frontend UIs: better layout, fonts, animations, and whitespace for a premium feel. Offers preset directions (universal premium, minimalist, brutalism) plus an audit-and-fix variant for upgrading existing pages, and three tunable parameters for layout/animation/info-density. Includes a companion image skill to generate mockups before coding.",
+    "summary": "Taste Skill (~20.3k stars): an install that gives AI-generated front-ends better taste — improved layout, fonts, animations, whitespace — with design directions (premium, minimalist, brutalism), an audit-and-fix skill for old projects, a mockup-first image skill, and three tunable params (layout experimentation, animation richness, info density).",
     "topics": [
       "skills-mcp",
-      "claude-code",
       "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "",
+    "views": "376.8K",
     "notes": "",
     "enriched": true,
-    "content": "Dug up another gem called Taste Skill - 20.3k stars on GitHub. Improves AI-generated frontend interfaces (layout, fonts, animations, whitespace). Multiple design directions: universal premium, minimalist, brutalism, plus audit-and-fix skill for revamping old projects. Image skill: have AI design mockups first, then hand to coding tools. Three tweakable parameters for layout, animation, info density.",
-    "enrichment_status": "legacy-ok"
+    "content": "liu xing @xingxingli45573 (Translated from Chinese). Taste Skill - 20.3k GitHub stars. Once installed, AI-generated front-end interfaces look better: layout, fonts, animations, whitespace all boosted for a premium feel. Several design directions (universal premium, minimalist, brutalism), plus a dedicated audit-and-fix skill for revamping old projects. Companion image skill: have AI create web/mobile design mockups first, then hand to coding tools - splitting design and dev into two steps. Three tweakable params: layout experimentation, animation richness, info density. GitHub: Leonxlnx/taste-skill. 376.8K views. skills-mcp, dev-practices.\n\nLeonxlnx/taste-skill — gives your AI good taste",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-27",
@@ -3472,25 +3544,26 @@
     "handle": "@_vmlops",
     "subject": "Post by Vaishnavi on X",
     "url": "https://x.com/_vmlops/status/2059207888393138556",
-    "summary": "Microsoft open-sourced agent-governance-toolkit (github.com/microsoft/agent-governance-toolkit) — deterministic tool-call interception with a YAML policy engine (allow/deny/require human approval), zero-trust identity via SPIFFE/DID/mTLS, a 4-level execution sandbox with privilege rings, tamper-evident Merkle audit logs, and coverage of all OWASP Agentic Top 10 risks. Works with LangChain, CrewAI, AutoGen, OpenAI Agents SDK, Semantic Kernel, etc. Python/TS/Go/Rust/.NET. ALL CAPS engagement framing but the tool is real and substantive.",
+    "summary": "Microsoft open-sourced an Agent Governance Toolkit: deterministic interception of every tool call (denied actions structurally impossible), a YAML allow/deny/human-approval policy engine, zero-trust identity (SPIFFE/DID/mTLS), a 4-level execution sandbox, tamper-evident Merkle audit logs, coverage of all OWASP Agentic Top-10 risks, and support across major frameworks and languages — because 'follow the rules' in a prompt is a suggestion, not a guardrail.",
     "topics": [
       "agent-design",
-      "skills-mcp",
       "dev-practices",
-      "questionable"
+      "skills-mcp"
     ],
     "audience": [
-      "me",
       "dev-team",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "",
+    "views": "146.5K",
     "notes": "",
     "enriched": true,
-    "content": "MICROSOFT OPEN-SOURCED A GOVERNANCE LAYER FOR YOUR AI AGENTS. Agent governance toolkit: intercepts every tool call in deterministic code, YAML policy engine (allow/deny/human approval), zero-trust identity via SPIFFE/DID/mTLS, 4-level execution sandbox with privilege rings, tamper-evident Merkle audit logs, covers all OWASP Agentic Top 10 risks. Works with LangChain, CrewAI, AutoGen, OpenAI Agents SDK, Semantic Kernel, and more. Python, TypeScript, Go, Rust, .NET supported. github.com/microsoft/agent-governance-toolkit.",
-    "enrichment_status": "legacy-ok"
+    "content": "Vaishnavi @_vmlops. 'MICROSOFT OPEN-SOURCED A GOVERNANCE LAYER FOR YOUR AI AGENTS' - Agent Governance Toolkit. Intercepts every tool call in deterministic code before it hits the wire (denied actions structurally impossible); YAML policy engine to allow/deny/require human approval per action; zero-trust identity via SPIFFE/DID/mTLS (no 5 agents sharing one API key); 4-level execution sandbox with privilege rings; tamper-evident Merkle audit logs; covers all 10 OWASP Agentic Top 10 risks; works with LangChain, CrewAI, AutoGen, OpenAI Agents SDK, Semantic Kernel. One pip install, any framework; Python/TypeScript/Go/Rust/.NET. 'Please follow the rules in a system prompt is not a guardrail, it's a suggestion.' GitHub: microsoft/agent-governance-toolkit. 146.5K views. agent-design, dev-practices, skills-mcp.\n\nmicrosoft/agent-governance-toolkit",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-25",
@@ -3498,23 +3571,24 @@
     "handle": "@zodchiii",
     "subject": "Post by darkzodchi on X",
     "url": "https://x.com/zodchiii/status/2058928613987160287",
-    "summary": "Quote-tweet of his own thread citing Boris Cherny (Claude Code creator): 'Every night I have like a few thousand agents running' — monitored from his phone. Frames the next workflow wave as a team of agents in a chat app that @mention each other, delegate, and persist memory across days. Hype tone, but reflects the real Anthropic direction of multi-agent + persistent context.",
+    "summary": "Boris Cherny (Claude Code): 'every night I have a few thousand agents running,' monitored from his phone. Links a piece arguing the next wave is a team of agents in a real chat app where they @mention each other, delegate, and remember — versus one sandboxed, memoryless ChatGPT tab.",
     "topics": [
-      "agent-design",
       "claude-code",
-      "questionable"
+      "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "183.9K",
+    "views": "208.6K",
     "notes": "",
     "enriched": true,
-    "content": "darkzodchi: Boris Cherny says he runs a few thousand AI agents overnight, monitored from his phone. The next wave: a team of agents in a chat app that @mention each other, delegate tasks, and remember across days. Contrasted against ChatGPT's one-agent-in-a-sandbox model.",
-    "enrichment_status": "legacy-ok"
+    "content": "darkzodchi @zodchiii. Boris Cherny (creator of Claude Code): 'Every night I have like a few thousand agents running,' monitored from his phone. QUOTE ARTICLE: 'The reason your AI workflow is 5 years behind and you don't know it' - ChatGPT gives one agent in a sandbox with no memory of yesterday; the next wave gives a team of agents in a real chat app where they @mention each other, delegate tasks, and remember. 208.6K views. claude-code, agent-design.\n\nArticle: 'The reason your AI workflow is 5 years behind and you don't know it.'",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-25",
@@ -3522,21 +3596,24 @@
     "handle": "@atenov_d",
     "subject": "Post by Atenov int. on X",
     "url": "https://x.com/atenov_d/status/2058868770257416239",
-    "summary": "MoneyPrinterTurbo (github.com/harry0703/MoneyPrinterTurbo) — open-source faceless-video generator pipeline. You type a topic, it writes a script via Claude/DeepSeek/Gemini/GPT, pulls copyright-free HD footage, adds subtitles/voiceover/background music, and outputs finished shorts (9:16) or YouTube (16:9). 13K+ stars. Runs locally with Docker + Google Colab, includes Web UI and API. Pitched as the same pipeline used by faceless-channel creators making $6K-10K/month.",
+    "summary": "Highlights MoneyPrinterTurbo (13k+ stars): give a topic/keyword and it generates a script (via any LLM), pulls copyright-free footage, and adds subtitles/music/voiceover to output a finished short video; runs locally with Web UI/API/Docker/Colab. (Author's other posts are off-topic trading/politics.)",
     "topics": [
-      "agent-design",
-      "industry"
+      "industry",
+      "dev-practices",
+      "questionable"
     ],
     "audience": [
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "582.1K",
     "notes": "",
     "enriched": true,
-    "content": "MoneyPrinterTurbo — type a topic, generates script + footage + subtitles + music + voiceover for short videos. Script generation via any LLM, batch generation, voice synthesis preview, custom subtitles. Runs locally with Web UI and API. Docker + Colab support.",
-    "enrichment_status": "legacy-ok"
+    "content": "Atenov int. @Atenov_D. A Chinese developer built MoneyPrinterTurbo, 13,000+ GitHub stars: type a topic/keyword, it generates the script (via Claude/DeepSeek/Gemini/GPT), finds HD copyright-free footage, adds subtitles/music/voiceover, outputs a finished short video. Batch generation, 9:16 and 16:9, voice synthesis w/ preview, custom subtitles, background music. Runs locally, Web UI + API, Docker, Colab. GitHub: harry0703/MoneyPrinterTurbo. (Author's other posts are off-topic trading/politics engagement.) 582.1K views. industry, dev-practices, questionable.\n\nharry0703/MoneyPrinterTurbo",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-25",
@@ -3544,21 +3621,23 @@
     "handle": "@hasantoxr",
     "subject": "Post by Hasan Toor on X",
     "url": "https://x.com/hasantoxr/status/2058863173462352313",
-    "summary": "Hyped engagement-style post claiming an unnamed open-source engine 'replaces agent harness, queues, sandboxing, and APIs' with three primitives across TypeScript/Python/Rust. No tool name, no repo link in the visible post — typical bait pattern of teasing the link behind a follow-up. 15K+ stars claimed, Docker setup included.",
+    "summary": "Engagement-framed tool share: an open-source engine claiming to replace agent harness, queues, sandboxing and APIs with three primitives (TypeScript/Python/Rust, Docker-ready, 15k+ stars).",
     "topics": [
-      "questionable",
-      "agent-design"
+      "agent-design",
+      "dev-practices"
     ],
     "audience": [
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "33.6K",
+    "views": "36.1K",
     "notes": "",
     "enriched": true,
-    "content": "Hasan Toor: A developer just killed the entire backend tooling stack with a single open-source engine. Replaces agent harness, queues, sandboxing, apis and any other service with 3 primitives. TypeScript, Python, Rust support. Production-ready Docker setup. 15K+ stars and growing fast.",
-    "enrichment_status": "legacy-ok"
+    "content": "Hasan Toor @hasantoxr. 'A developer just killed the entire backend tooling stack with a single open-source engine.' Replaces agent harness, queues, sandboxing, APIs and other services with 3 primitives; TypeScript/Python/Rust support; production-ready Docker setup; 15K+ stars. Engagement-y framing. 36.1K views. agent-design, dev-practices.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-25",
@@ -3566,22 +3645,24 @@
     "handle": "@garrytan",
     "subject": "Post by Garry Tan on X",
     "url": "https://x.com/garrytan/status/2058378310254793013",
-    "summary": "Garry Tan reacting to Thinking Machines' May 11 'interaction models' announcement (thinkingmachines.ai/blog/interaction-models): claims he fine-tuned his own Qwen3.5-397B in a couple of hours that afternoon. Hyping fast multimodal as the unlock for 'mind-blowing personal AI.'",
+    "summary": "Garry Tan: fine-tuned his own Qwen3.5-397B in a couple hours via Thinking Machines, arguing fast usable multimodal will enable mind-blowing personal AI. Cites Thinking Machines' real-time 'interaction models.'",
     "topics": [
-      "research",
-      "industry"
+      "industry",
+      "research"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "411K",
+    "views": "433.1K",
     "notes": "",
     "enriched": true,
-    "content": "Garry Tan: Thinking Machines is impressive. In a couple hours I just fine tuned my own Qwen3.5-397B model this afternoon. Fast usable multimodal is also going to enable very mind-blowing personal AI. Quoting Thinking Machines on real-time interaction models.",
-    "enrichment_status": "legacy-ok"
+    "content": "Garry Tan @garrytan. 'Thinking Machines is impressive. In a couple hours I just fine-tuned my own Qwen3.5-397B model this afternoon.' Fast usable multimodal will enable mind-blowing personal AI. QUOTE: Thinking Machines @thinkymachines - interaction models; AI that talks/listens/watches/thinks/collaborates in real time. thinkingmachines.ai/blog/interaction-models. 433.1K views. industry, research.\n\nInteraction models — AI that talks, listens, watches, thinks and collaborates in real time.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-24",
@@ -3589,21 +3670,23 @@
     "handle": "@dklineii",
     "subject": "Post by Dave Kline on X",
     "url": "https://x.com/dklineii/status/2058538089224519806",
-    "summary": "Dave Kline on manager training: motivation is intrinsic, so you can't really 'motivate' a team — but you can demotivate them. Sets up a thread on the 5 most common leadership missteps that kill motivation. Standard management content, useful as a quick reference for new-manager conversations.",
+    "summary": "Management thread: you can't create lasting motivation (it's intrinsic), but you can demotivate — the 5 most common leadership missteps.",
     "topics": [
       "management"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "42.2K",
+    "views": "42.5K",
     "notes": "",
     "enriched": true,
-    "content": "Dave Kline: The most common question I get when training managers is 'How do I motivate my team?' The reality is you don't — lasting motivation is intrinsic. But there are plenty of ways you can demotivate your team. Here are the 5 most common leadership missteps.",
-    "enrichment_status": "legacy-ok"
+    "content": "Dave Kline @dklineii. Common question when training managers: 'How do I motivate my team?' Reality: you don't - lasting motivation is intrinsic. But you can demotivate them. Thread on the 5 most common leadership missteps. 42.5K views. management.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-24",
@@ -3611,24 +3694,25 @@
     "handle": "@saboo_shubham_",
     "subject": "Post by Shubham Saboo on X",
     "url": "https://x.com/saboo_shubham_/status/2058269167372153129",
-    "summary": "Saboo pitches an open-source 'context engineering' tool that turns any codebase into an interactive graph an AI coding agent can query — Claude Code, Codex, and Antigravity compatible. Tool name not in the visible tweet (typical Saboo hype framing with link in a follow-up); flagged for follow-up review since the underlying concept (codebase-as-graph for agents) is genuinely useful.",
+    "summary": "Positions codebase-as-queryable-graph as the real 'context engineering' for coding agents — turning any codebase into an interactive graph the agent can query; works with Claude Code, Codex, Antigravity; fully open-source.",
     "topics": [
       "agent-design",
-      "claude-code",
       "dev-practices",
-      "questionable"
+      "skills-mcp"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "30.9K",
+    "views": "33K",
     "notes": "",
     "enriched": true,
-    "content": "Shubham Saboo: This is ACTUALLY context engineering for your AI coding agents. It turns any codebase into an interactive graph your agent can query. Works with Claude Code, Codex, Antigravity. 100% Opensource.",
-    "enrichment_status": "legacy-ok"
+    "content": "Shubham Saboo @Saboo_Shubham_. 'This is ACTUALLY context engineering for your AI coding agents.' Turns any codebase into an interactive graph your agent can query. Works with Claude Code, Codex, Antigravity. 100% open-source. 33K views. agent-design, dev-practices, skills-mcp.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-24",
@@ -3636,21 +3720,24 @@
     "handle": "@ksimback",
     "subject": "Post by Kevin Simback 🍷 on X",
     "url": "https://x.com/ksimback/status/2058262328496554021",
-    "summary": "Kevin Simback's 'Hermes Agent Memory Guidebook' — long write-up cataloging memory systems for the Hermes agent ecosystem (hermesatlas.com), reviewing the proliferating tools and architecture choices. Useful as a meta-reference on agent memory patterns even if you don't use Hermes specifically.",
+    "summary": "A definitive guide to memory in the Hermes Agent, structured as a 3-layer stack: Layer 1 native (two always-injected markdown files MEMORY.md/USER.md plus a searchable SQLite session DB; the 80% consolidation 'rule' is a prompt instruction, not code), Layer 2 the pluggable MemoryProvider slot (8 official providers — Honcho, Mem0, Hindsight, Holographic, OpenViking, RetainDB, ByteRover, Supermemory — one at a time, each a different architectural bet), and Layer 3 community plug-ins (GBrain, Mnemosyne, etc.). Closes with how to pick and warning signs a memory layer is too heavy.",
     "topics": [
       "agent-design",
-      "research"
+      "research",
+      "skills-mcp"
     ],
     "audience": [
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "76K",
+    "views": "83.9K",
     "notes": "",
     "enriched": true,
-    "content": "Kevin Simback: The Hermes Agent Memory Guidebook. TLDR: definitive guide to memory systems for Hermes Agent. Every week new posts/articles describe new memory tools — broke it down. Hermes ecosystem mapped at hermesatlas.com with a dedicated memory section. Many write-ups skip architecture.",
-    "enrichment_status": "legacy-ok"
+    "content": "Kevin Simback @KSimback. FULL X ARTICLE 'The Hermes Agent Memory Guidebook' - definitive guide to memory systems for Hermes Agent (Nous Research). Memory turns a stateless chatbot into something that compounds; every serious harness (OpenClaw, Claude Code, Codex, Hermes) has memory primitives, and a product category emerged (Mem0 raised $24M, Letta $10M, Zep, Cipher, Supermemory, Hindsight). Hermes treats memory as first-class pluggable infra in a 3-layer stack. Layer 1 (native, out of box): two markdown files in ~/.hermes/ (MEMORY.md ~2,200 chars general notebook; USER.md ~1,375 chars about you) pasted whole into every prompt (sticky notes, not filing cabinet; agent edits via memory tool add/replace/remove); plus a SQLite session DB (~/.hermes/hermes_state.db) archiving every message/response/tool-call/reasoning-step + token/cost, 90-day retention, searched on demand via FTS5 (word + trigram). Note: no automatic consolidation - the 80% rule is a prompt instruction; the 'Autonomous Curator' (v0.12) only manages the skills library, not memory files. Layer 2 (pluggable MemoryProvider, one at a time via 'hermes memory setup'): 8 official providers - Honcho (models how you think, dialectic user modeling), Mem0 (30-sec setup, broadest ecosystem, AWS Strands, v3 94.8 LongMemEval), Hindsight/Vectorize (benchmark king, 4 networks + 4 parallel retrieval strategies, reflect tool), Holographic (zero-dependency local, HRR compositional, sub-ms), OpenViking (tiered filesystem context DB), RetainDB (cheapest cloud-only, Memory Router), ByteRover (memory as git repo, markdown, 5-tier retrieval, sub-100ms), Supermemory (latency+scale leader, sub-300ms at 100B tokens/mo, context fencing). Layer 3 (community): GBrain (by garrytan, MIT, ~18k stars, skillpack+MCP ~30 tools, 8-layer knowledge engine, epistemology layer, self-wiring graph, overnight dream cycles, Obsidian/Logseq/Notion/Roam migration - author's personal pick), Mnemosyne (fully local <2ms, tiered working/episodic/scratchpad, time-aware 'what did I believe last Tuesday'), Ladybug (local + importance ranking), yantrikdb (explainable 'why retrieved'), hermes-agentmemory (real deletion + audit), PLUR (cross-agent memory bridge via shared .plur/), FlowState-QMD (predictive prefetch). How to pick: match provider to need; warning signs you went too heavy (slower responses, rising API bill, self-contradiction from unconsolidated memory, context exhaustion, no measurable improvement -> pull it). hermesatlas.com. 83.9K views. agent-design, research, skills-mcp.\n\nHermes Atlas — ecosystem/memory map",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-24",
@@ -3658,23 +3745,25 @@
     "handle": "@nurijanian",
     "subject": "Post by George from 🕹prodmgmt.world on X",
     "url": "https://x.com/nurijanian/status/2058259663238631890",
-    "summary": "George Nurijanian dropped Claude's chart output into Tufte's Visual Display of Quantitative Information and had Claude generate a Tufte-flavored data-viz skill — leaner, clearer charts. Repo: github.com/gnurio/tufte-vdqi-plugin. Quotes Anjney Midha telling AI labs to read Tufte before shipping charts. Directly actionable as a skill to evaluate.",
+    "summary": "Fixed Claude's 'chart junk' by handing it a book and having it spin up a Tufte-flavored visualization skill — producing leaner, clearer visuals (github.com/gnurio/tufte-vdqi-plugin).",
     "topics": [
       "skills-mcp",
-      "claude-code",
-      "dev-practices"
+      "dev-practices",
+      "prompting"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "146.6K",
+    "views": "150.2K",
     "notes": "",
     "enriched": true,
-    "content": "George from prodmgmt.world: Hit my limit with Claude's chart junk. Handed it Tufte and had it spin up a Tufte-flavored skill - leaner, clearer visuals. Repo: github.com/gnurio/tufte-vdqi-plugin. Quoting Anjney Midha: 'if you run an ai lab, pls ensure your team has read this before putting any charts out into the world.'",
-    "enrichment_status": "legacy-ok"
+    "content": "George @nurijanian (prodmgmt.world). Hit his limit with Claude's chart junk, handed it a book and had it spin up a Tufte-flavored skill - now produces leaner, clearer, nicer visuals. github.com/gnurio/tufte-vdqi-plugin. QUOTE: Anjney Midha @AnjneyMidha - if you run an AI lab, ensure your team has read this (Tufte) before putting charts into the world. 150.2K views. skills-mcp, dev-practices, prompting.\n\nIf you run an AI lab, ensure your team reads this (Tufte) before shipping charts.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-24",

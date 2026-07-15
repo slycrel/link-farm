@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-07-15T19:45:06Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-15T21:08:14Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-09** — [Kodus](https://kodus.io/self-hosted-ai-code-review/) — *now • Dev Practices • v1 enriched*  
@@ -33,16 +33,16 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 373 | 53.4% |
-| claude-code | 181 | 25.9% |
-| dev-practices | 242 | 34.7% |
-| skills-mcp | 139 | 19.9% |
-| prompting | 103 | 14.8% |
-| research | 145 | 20.8% |
-| industry | 98 | 14.0% |
-| management | 106 | 15.2% |
-| questionable | 133 | 19.1% |
-| general | 94 | 13.5% |
+| agent-design | 371 | 53.2% |
+| claude-code | 177 | 25.4% |
+| dev-practices | 248 | 35.5% |
+| skills-mcp | 144 | 20.6% |
+| prompting | 104 | 14.9% |
+| research | 146 | 20.9% |
+| industry | 94 | 13.5% |
+| management | 104 | 14.9% |
+| questionable | 122 | 17.5% |
+| general | 93 | 13.3% |
 
 ---
 ## Quick Reference (50 Most Recent)
@@ -102,7 +102,7 @@
 ---
 ## Posts by Topic
 
-### Agent Design (373)
+### Agent Design (371)
 
 - [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — 2026-07-14: How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with a native AI agent, built-in MCP server, Cowork-style web+local-file agents, scheduled autopilot tasks, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), and local-model (Ollama) support — drivable from Claude Code or Gemini CLI. Engagement-framed but describes a real agentic-browser tool worth evaluating.
 
@@ -226,75 +226,71 @@
 
 - [Viv](https://x.com/vtrivedy10/status/2063429138304668093) — 2026-06-07: A default recipe for optimizing Agent = Model + Harness, 'training' both: (1) build v1 on a sensible base harness with task-specific prompting/tools, (2) harness-engineer against prod-like eval tasks (often enough on its own), (3) SFT on mined traces or synthetic data (good for distilling a cheaper model), (4) RL if you can design environments/rewards to push past SFT copying, (5) light harness engineering again on the trained model. Argues harness engineering will be the dominant optimization lever and most companies are still at steps 1-2; links the 'Anatomy of an Agent Harness' article.
 
-- [Hanako](https://x.com/hanakoxbt/status/2063305395687522702) — 2026-06-07: Engagement-styled summary of an Anthropic memory pattern: 'dreaming' agents that reopen your sessions after you log off to fact-check the primary agents, merge duplicates, and prune stale memory (up to 100 per session, ~95% of tokens cached). Links a Claude agent-team setup article (writer/reviewer/deployer).
+- [Hanako](https://x.com/hanakoxbt/status/2063305395687522702) — 2026-06-07: Describes an Anthropic 'dreaming agents' memory pattern: a second set of agents that, after you log off, reopen every session, fact-check the first agents, merge duplicates and burn stale memory — up to 100 at once, ~95% cached so a full rewrite costs almost nothing. Points to a multi-agent code/review/deploy team guide.
 
-- [Sprytix](https://x.com/sprytixl/status/2063234969510588640) — 2026-06-07: Engagement-farmed claim that a Chinese professor runs a 170-agent dev team making 'every company decision' on Kimi K2.6 with one prompt; links an article on running 300 parallel agents. Hype framing, thin substance — flagging as questionable, with an industry/agent angle.
+- [Sprytix](https://x.com/sprytixl/status/2063234969510588640) — 2026-06-07: Engagement-farmed hype ('170 AI agents make every company decision') pushing a listicle on running 170–300 parallel agents with Kimi K2.6. Clickbait framing, but the underlying topic — massed parallel agents for research/ops — is real.
 
-- [Dan Roy](https://x.com/roydanroy/status/2062917394356429092) — 2026-06-06: Quotes Markus Buehler (MIT) on a breakthrough in self-evolving 'AI scientists' that move from search to principled discovery — an AI that perceives shifts in the search space itself without intervention. (Roy's own comment is a category-theory in-joke.)
+- [海拉鲁编程客 (hylarucoder)](https://x.com/hylarucoder/status/2062881239900766292) — 2026-06-06: Recommends Peter Pang's 'Building cloud agent infrastructure' — most agent frameworks assume a desktop (one user, one machine, local filesystem, keys in env vars); cloud agent infra changes those assumptions.
 
-- [海拉鲁编程客 (hylarucoder)](https://x.com/hylarucoder/status/2062881239900766292) — 2026-06-06: Recommends Peter Pang's (intuitiveml) article on building cloud agent infrastructure: most agent frameworks assume a desktop (one user/machine/process) and break in the cloud where filesystem, API-key handling, and orchestration must change.
+- [Cat Wu (Anthropic)](https://x.com/_catwu/status/2062408623565984209) — 2026-06-06: Anthropic's data team automated ~95% of business-analytics queries with Claude; the linked blog covers their approach to skills, data foundations, evals, ablations, and online validation for data-analysis agents.
 
-- [Cat Wu (Anthropic)](https://x.com/_catwu/status/2062408623565984209) — 2026-06-06: Anthropic's data team automated ~95% of business-analytics queries with Claude; blog post covers their approach to evals, ablations, and online validation when building data-analysis agents (claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude).
+- [hoeem](https://x.com/hooeem/status/2062443798647517197) — 2026-06-04: Points to a guide on making agentic workflows ~100x cheaper by fixing token waste in the orchestration loop.
 
-- [hoeem](https://x.com/hooeem/status/2062443798647517197) — 2026-06-04: Engagement-styled '100x cheaper' guide on cutting token waste in agentic orchestration loops; some practical substance on reducing repeated token spend in agent workflows behind the hype framing.
+- [さいぺ (cipepser)](https://x.com/cipepser/status/2062397559520502225) — 2026-06-04: Praises mem0's 'State of Memory in Agent Harness' survey — well-organized coverage from field papers/benchmarks through memory implementations in each coding agent (Cursor, Devin, Claude Code, Codex).
 
-- [さいぺ (cipepser)](https://x.com/cipepser/status/2062397559520502225) — 2026-06-04: Recommends mem0's article 'State of Memory in Agent Harness' (mem0ai) — a well-organized survey of agent-memory papers and benchmarks plus how memory is implemented across coding agents (Cursor, Devin, Claude Code, Codex).
+- [Ole Lehmann](https://x.com/itsolelehmann/status/2061911202830401564) — 2026-06-04: A ~10-minute recipe to turn your X bookmarks into an agent-queryable second brain: export bookmarks (twitter-web-exporter / BookmarkSave), drop the file into your LLM wiki or Obsidian vault, and have your agent convert each into a tagged markdown note with the original link — then query across the whole pile. Directly relevant to this link collection.
 
-- [Ole Lehmann](https://x.com/itsolelehmann/status/2061911202830401564) — 2026-06-04: Workflow to turn saved X bookmarks into an agent-readable 'second brain': export bookmarks with the free twitter-web-exporter userscript or BookmarkSave extension, drop the file into an Obsidian/LLM-wiki folder, then point an agent (Claude Code, Codex) at it to convert each bookmark into a tagged markdown note you can query.
+- [Thariq](https://x.com/trq212/status/2061907538741006796) — 2026-06-03: Announces dynamic workflows as the biggest Claude Code upgrade since skills and subagents — Claude writing its own task-specific harness on the fly — with excitement about the non-technical tasks it unlocks.
 
-- [Thariq](https://x.com/trq212/status/2061907538741006796) — 2026-06-03: Thariq hypes the new dynamic workflows feature in Claude Code as the biggest upgrade since skills and subagents, plugging his deep-dive article (quote-tweeted from his own thread). Especially excited about workflows enabling non-coding tasks like research, security analysis, agent teams, and code review natively inside Claude Code.
+- [Thariq](https://x.com/trq212/status/2061907337154367865) — 2026-06-03: Full Anthropic article on dynamic workflows in Claude Code: Claude writes its own JavaScript harness to spawn/coordinate subagents (own models, own worktrees, resumable), countering agentic laziness, self-preferential bias and goal drift. Covers patterns (fan-out-and-synthesize, adversarial verification, tournament, loop-until-done), many use cases (migrations, deep research, triage, root-cause, evals, model routing), the 'ultracode' trigger, token budgets, and when NOT to use it.
 
-- [Thariq](https://x.com/trq212/status/2061907337154367865) — 2026-06-03: Anthropic article (linked from Thariq's tweet): 'A harness for every task: dynamic workflows in Claude Code'. Claude can now write its own harness on the fly, custom-built per task — the default Claude Code harness is coding-shaped but workflows let Claude solve research, security analysis, agent-team, and code-review tasks natively without external custom harnesses. Workflows are shareable/reusable. Caveat: they use more tokens and best practices are still developing.
+- [Garry Tan](https://x.com/garrytan/status/2061878212213572083) — 2026-06-03: Garry Tan on model routing as strategy: frontier labs will want their harness to be the moat, but the consumer-best outcome is model capabilities flattening and commoditizing — 'a preview of the AI Harness Wars of 2027.' Cites Factory's auto model-router (claimed 25% cost cut at frontier performance).
 
-- [Garry Tan](https://x.com/garrytan/status/2061878212213572083) — 2026-06-03: Garry Tan (YC) quote-tweets Factory's new model-routing feature with a controversial take: frontier labs will fight to make their AI harness the moat, but the consumer-best outcome is model capabilities flattening into commodity. Calls it a preview of the 'AI Harness Wars of 2027'. Factory Router claims 25% cost cuts at frontier performance.
+- [Tom Dörr](https://x.com/tom_doerr/status/2061674811122713013) — 2026-06-03: Shares FlowForge, a Skill that generates professional draw.io diagrams from natural language (github.com/wentong2022-arch/flowforge-skill).
 
-- [darkzodchi](https://x.com/zodchiii/status/2061040686330257656) — 2026-05-31: Quote tweet promoting @0x_rody's article on building Claude Code subagents in 15 minutes — each subagent is a markdown file with instructions and a prompt. Templates given for code reviewer, test writer, security scanner, and documentation generator. Engagement-framed but the underlying template approach is real.
+- [darkzodchi](https://x.com/zodchiii/status/2061040686330257656) — 2026-05-31: Anthropic-engineer clip: build 5 focused agents (code review, tests, docs, security) in an afternoon, each ~15 minutes as a markdown file with instructions + prompt. Links a beginner subagent-building template.
 
-- [恒星](https://x.com/vintcessun/status/2060897802478293013) — 2026-05-31: DeepMind open-sourced Science Skills (github.com/google-deepmind/science-skills) — 30+ scientific databases like AlphaGenome and UniProt packaged as agent skills. Each skill breaks API interactions into clear instructions + scripts so agents step through them instead of hallucinating. Installs via one npx line, plugs into Antigravity.
+- [恒星](https://x.com/vintcessun/status/2060897802478293013) — 2026-05-31: DeepMind packaged 30+ scientific databases (AlphaGenome, UniProt) into agent skills. The real bottleneck for science agents isn't model quality but knowing how to call databases correctly; skills turn each DB's API into clear instructions + scripts so agents execute step-by-step. One-line npx install (github.com/google-deepmind/science-skills).
+
+- [Chesny](https://x.com/chesnyfcb/status/2060818732654481693) — 2026-05-31: Polemical pitch (translated) for a 3D 'knowledge galaxy' second brain à la Karpathy: 378 notes auto-generated ~1,854 nodes and ~3,856 connections, surfacing hidden links and missing connections. Pragmatic takeaway: start with an automated Obsidian + Claude vault that extracts content, finds connections, and writes daily reports.
 
 - [0xSero](https://x.com/0xsero/status/2060128492247740640) — 2026-05-29: Recommends Peter Steinberger's 'Just Talk To It — the no-bs Way of Agentic Engineering' (steipete.me): after trying every elaborate workflow, the author keeps returning to a conversational, no-ceremony way of working with coding agents rather than heavy prompting scaffolds.
 
-- [Rohit Ghumare](https://x.com/ghumare64/status/2060072412868235587) — 2026-05-29: Long essay by Mike (linked) arguing that picking LangChain/LangGraph/OpenAI Agents SDK forces you to accept a bundled harness — turn state machine, provider routing, credential vault, policy engine, approval gates, budget tracker, hook fanout, context compaction, session trees, OpenTelemetry tracing — as one block. The case for composing them as workers on a shared bus with typed function contracts so teams stop rewriting harnesses from scratch.
+- [Rohit Ghumare](https://x.com/ghumare64/status/2060072412868235587) — 2026-05-29: Summarizes Mike Piccolo's argument that a harness isn't one thing but ~15 separate concerns (turn state machines, provider routing, credential vaults, policy engines, approval gates, budget trackers, context compaction, session trees, tracing) bundled by frameworks out of necessity. When each layer is a worker on a shared bus with a typed contract, 'build your own harness' means swapping a worker, not forking a framework.
 
-- [Yohei](https://x.com/yoheinakajima/status/2060068279574843614) — 2026-05-29: Yohei Nakajima (BabyAGI) published his first arxiv paper: 'The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems' (arxiv.org/abs/2605.21997). Case for agents that coordinate through persistent replayable state — log-centric architecture you can audit and fork.
+- [Yohei](https://x.com/yoheinakajima/status/2060068279574843614) — 2026-05-29: Yohei Nakajima's 'log-centric agent architecture' and his first arXiv paper 'The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems' — the case for agents that coordinate through persistent, replayable state.
 
-- [MacCallister Higgins](https://x.com/macjshiggins/status/2060045337679532174) — 2026-05-29: MacCallister Higgins argues classical NASA systems engineering is the right model for developing code with LLMs — explicit requirements/specs docs make agents reliable at building, testing, and verifying complex codebases. Quote-tweet of an old joke about a model that regenerates the whole codebase from scratch each night against the requirements doc.
+- [Charly Wargnier](https://x.com/datachaz/status/2059649544854327466) — 2026-05-29: Recommends Akshay Pachaar's 47-minute 'Hermes Agent Masterclass' on building self-improving, 24/7 local autonomous agents — self-evolving skills, three-tier memory, GEPA optimization, scaling from 1 to 10 agents.
 
-- [Charly Wargnier](https://x.com/datachaz/status/2059649544854327466) — 2026-05-29: Charly Wargnier recommends Akshay Pachaar's 47-min walkthrough of Hermes Agent — a setup with self-evolving skills, three-tier memory, and GEPA optimization for autonomous agents running locally 24/7. Hype framing, but technique combo (self-evolving skills + tiered memory + GEPA) is current.
+- [Muratcan Koylan](https://x.com/koylanai/status/2059753045060395240) — 2026-05-28: On the 'Agent Harness Engineering: A Survey' paper (CMU/Yale/JHU/Amazon; 170+ projects reviewed): real-world agent performance = model capability + harness quality, and for long-horizon production tasks the harness is the main bottleneck. Simple harness tweaks (tool formats, sandboxing, verification loops) yield big benchmark gains; the biggest wins come from turning production traces into regression tests + automated harness fixes.
 
-- [Charly Wargnier](https://x.com/datachaz/status/2059909626532155482) — 2026-05-28: ALL CAPS hype thread about Microsoft's SkillOpt — an open-source optimizer loop that mutates agent skill prompts the same way you'd train a model: base model runs the task, optimizer rewrites the instructions, rejects edits that don't improve the benchmark. Claims SOTA over TextGrad and hand-crafted prompts; model-agnostic. Worth a look despite the framing.
+- [Kyle Jeong](https://x.com/kylejeong/status/2059753008297394245) — 2026-05-28: Browser agents have an 'amnesia problem' — re-discovering each site from scratch every run. Autobrowse uses iterative AutoResearch to let an agent improve its own browser skills (/autobrowse), reportedly up to 90% faster and cheaper.
 
-- [Muratcan Koylan](https://x.com/koylanai/status/2059753045060395240) — 2026-05-28: Muratcan Koylan: his open-source Agent Skills for Context Engineering project was cited in 'Agent Harness Engineering: A Survey' on OpenReview (authors from CMU/Yale/Johns Hopkins/Amazon). Survey reviewed 170+ open-source projects and pulled lessons from OpenAI/Anthropic/LangChain. Core thesis: real-world agent performance = model capability + harness quality, and harness improvements (tool formats, sandboxes, automated verification loops) deliver the biggest wins on long-horizon tasks. Paper at picrew.github.io/LLM-Harness/. (Jeremy flagged this one as 'orchestration'.)
+- [John Yeo](https://x.com/johnyeo_/status/2059688796728267261) — 2026-05-28: Describes an in-house agent that automatically queries logs and investigates support tickets — with billing state/history making each case stateful. Links a build writeup.
 
-- [Kyle Jeong](https://x.com/kylejeong/status/2059753008297394245) — 2026-05-28: Kyle Jeong on iterative AutoResearch applied to browser skills — their /autobrowse skill gets 90% faster and cheaper after iterative self-improvement. Links to article 'Autobrowse: The Mythos moment for Browser Agents is here' arguing browser agents have an amnesia problem (re-discover every site from scratch) and how iterating on a real run fixes the discovery tax.
+- [Rahul](https://x.com/sairahul1/status/2059632149716942923) — 2026-05-28: Hype-framed ('Anthropic just released the blueprint for a company run by Claude Code; work is dying') push for a listicle on building a SaaS MVP in an afternoon with 7 AI agents. Clickbait wrapper over a real multi-agent build walkthrough.
 
-- [John Yeo](https://x.com/johnyeo_/status/2059688796728267261) — 2026-05-28: John Yeo (Stripe-style billing) describes an internal AI agent that automatically queries logs and investigates support tickets. Linked article covers how it works for a stateful domain (billing) where API outcomes depend on customer history. (Jeremy flagged this as 'try it'.)
+- [Paul Iusztin](https://x.com/pauliusztin_/status/2059613089260003387) — 2026-05-28: Breakdown of Neo4j's graph-native agent memory: three connected layers in one graph — short-term (ordered message chain), long-term (entity/relationship knowledge graph with embeddings, traversed relationally), and reasoning memory (per-run trees of thoughts/tool-calls/decision paths). Typed edges (:MENTIONS/:INITIATED_BY/:TOUCHED) make provenance a one-hop query; 'the ontology is the real product.'
 
-- [Rahul](https://x.com/sairahul1/status/2059632149716942923) — 2026-05-28: Engagement-farmed thread claiming Anthropic released a 'blueprint' for running a company with Claude Code where one human is CEO and AIs are employees that divide tasks. Underlying linked article is 'How to Build a SaaS MVP in One Afternoon Using 7 AI Agents.' The pattern is real (multi-agent dev workflows) but the framing is hype.
+- [Avi Chawla](https://x.com/_avichawla/status/2059556157984006187) — 2026-05-28: Clear explainer of RAG vs Graph RAG vs Agentic RAG as solving different query types: standard RAG for single-hop factual lookups, Graph RAG (LLM-extracted entities/relationships + traversal) for multi-hop connections, Agentic RAG (an agent choosing tools/sources at query time) for dynamic multi-source tasks — plus binary quantization for 32x more memory-efficient vector search.
 
-- [Paul Iusztin](https://x.com/pauliusztin_/status/2059613089260003387) — 2026-05-28: Paul Iusztin breaks down Neo4j's three-layer agent memory system inside one graph: (1) short-term — active conversation as a linear chain of ordered messages; (2) long-term — persistent knowledge graph of entities, orgs, locations, preferences, facts, and relationships with embeddings on nodes so agents traverse connected knowledge rather than retrieve isolated chunks; (3) extraction lineage tying them together.
+- [darkzodchi](https://x.com/zodchiii/status/2059603103070945391) — 2026-05-27: Boris Cherny (Claude Code): 'we stopped fixing Claude's mistakes; we made Claude fix them itself.' Links a copyable setup for having Claude Code catch, fix, and learn from its own errors instead of the write-code/tests-fail/explain loop.
 
-- [Avi Chawla](https://x.com/_avichawla/status/2059556157984006187) — 2026-05-28: Avi Chawla explainer on RAG vs Graph RAG vs Agentic RAG. Standard RAG embeds chunks and retrieves by similarity — fine for direct lookups, fails on multi-hop queries. Graph RAG adds an LLM-extracted entity/relationship layer so retrieval traverses connections (e.g., 'checkout uses payments API' + 'payments API on cluster-3' + 'cluster-3 maintenance Friday' → answers 'will checkout be affected Friday?'). Agentic RAG adds an agent loop on top for planning multi-step retrieval.
+- [Rohit](https://x.com/rohit4verse/status/2059366212501696609) — 2026-05-27: A Databricks tech lead's talk on the unglamorous core of multi-agent: agents fail not because the model is dumb but because nothing coordinates them — one agent is a feature, fifty is a distributed-systems problem, and getting hundreds of agents to share one coherent brain is the whole game.
 
-- [darkzodchi](https://x.com/zodchiii/status/2059603103070945391) — 2026-05-27: darkzodchi promotes an X article on setting up Claude Code to catch, fix, and learn from its own mistakes automatically. Pitches it as Boris Cherny's (Claude Code creator) approach: stop fixing Claude's mistakes and make Claude fix them itself. Engagement-farm framing but the underlying setup may be worth a look.
+- [Movez](https://x.com/0xmovez/status/2059346354984612126) — 2026-05-27: An Anthropic engineer's 37-minute masterclass on shipping production agent teams: three building blocks (brain=persona, hands=environment, sessions), a server-side loop so nothing breaks on refresh, and why agents 'die before production.' Links a 10-step multi-agent build guide.
 
-- [Rohit](https://x.com/rohit4verse/status/2059366212501696609) — 2026-05-27: Rohit endorses a Databricks tech lead's 26-min talk at @aiDotEngineer on multi-agent coordination — argues agents break not because the model is dumb but because nothing coordinates them. 'One agent is a feature. Fifty is a distributed systems problem. Parallelism is cheap. Getting 300 agents to share one coherent brain is the entire game.' Quote tweets his own article on commanding 300 agents from one prompt.
+- [Binfeng Xu](https://x.com/billxbf/status/2059323616009838703) — 2026-05-27: Release of Polar, Agent-RL rollout infrastructure that takes real-world harnesses (Codex, Claude Code, OpenClaw, Hermes, or your own) directly as training environments with no code change — find a problem, design the harness, train your own agents.
 
-- [Movez](https://x.com/0xmovez/status/2059346354984612126) — 2026-05-27: Pointer to an Anthropic engineer's 37-min workshop on shipping production-ready AI agents, framed around 3 building blocks: brain (persona) + hands (environment) + sessions, with a server-side loop so refreshes don't break state. Engagement-farm framing — quote tweets a longer companion guide on multi-agent orchestration on Claude.
+- [Vaishnavi](https://x.com/_vmlops/status/2059207888393138556) — 2026-05-27: Microsoft open-sourced an Agent Governance Toolkit: deterministic interception of every tool call (denied actions structurally impossible), a YAML allow/deny/human-approval policy engine, zero-trust identity (SPIFFE/DID/mTLS), a 4-level execution sandbox, tamper-evident Merkle audit logs, coverage of all OWASP Agentic Top-10 risks, and support across major frameworks and languages — because 'follow the rules' in a prompt is a suggestion, not a guardrail.
 
-- [Binfeng Xu](https://x.com/billxbf/status/2059323616009838703) — 2026-05-27: Release of Polar, an Agent RL rollout infrastructure for real-world harnesses. Takes existing harnesses (Codex, Claude Code, OpenClaw, Hermes, or custom) directly as training environments with no code changes — find a problem, design the harness, train your own agent.
+- [darkzodchi](https://x.com/zodchiii/status/2058928613987160287) — 2026-05-25: Boris Cherny (Claude Code): 'every night I have a few thousand agents running,' monitored from his phone. Links a piece arguing the next wave is a team of agents in a real chat app where they @mention each other, delegate, and remember — versus one sandboxed, memoryless ChatGPT tab.
 
-- [Vaishnavi](https://x.com/_vmlops/status/2059207888393138556) — 2026-05-27: Microsoft open-sourced agent-governance-toolkit (github.com/microsoft/agent-governance-toolkit) — deterministic tool-call interception with a YAML policy engine (allow/deny/require human approval), zero-trust identity via SPIFFE/DID/mTLS, a 4-level execution sandbox with privilege rings, tamper-evident Merkle audit logs, and coverage of all OWASP Agentic Top 10 risks. Works with LangChain, CrewAI, AutoGen, OpenAI Agents SDK, Semantic Kernel, etc. Python/TS/Go/Rust/.NET. ALL CAPS engagement framing but the tool is real and substantive.
+- [Hasan Toor](https://x.com/hasantoxr/status/2058863173462352313) — 2026-05-25: Engagement-framed tool share: an open-source engine claiming to replace agent harness, queues, sandboxing and APIs with three primitives (TypeScript/Python/Rust, Docker-ready, 15k+ stars).
 
-- [darkzodchi](https://x.com/zodchiii/status/2058928613987160287) — 2026-05-25: Quote-tweet of his own thread citing Boris Cherny (Claude Code creator): 'Every night I have like a few thousand agents running' — monitored from his phone. Frames the next workflow wave as a team of agents in a chat app that @mention each other, delegate, and persist memory across days. Hype tone, but reflects the real Anthropic direction of multi-agent + persistent context.
+- [Shubham Saboo](https://x.com/saboo_shubham_/status/2058269167372153129) — 2026-05-24: Positions codebase-as-queryable-graph as the real 'context engineering' for coding agents — turning any codebase into an interactive graph the agent can query; works with Claude Code, Codex, Antigravity; fully open-source.
 
-- [Atenov int.](https://x.com/atenov_d/status/2058868770257416239) — 2026-05-25: MoneyPrinterTurbo (github.com/harry0703/MoneyPrinterTurbo) — open-source faceless-video generator pipeline. You type a topic, it writes a script via Claude/DeepSeek/Gemini/GPT, pulls copyright-free HD footage, adds subtitles/voiceover/background music, and outputs finished shorts (9:16) or YouTube (16:9). 13K+ stars. Runs locally with Docker + Google Colab, includes Web UI and API. Pitched as the same pipeline used by faceless-channel creators making $6K-10K/month.
-
-- [Hasan Toor](https://x.com/hasantoxr/status/2058863173462352313) — 2026-05-25: Hyped engagement-style post claiming an unnamed open-source engine 'replaces agent harness, queues, sandboxing, and APIs' with three primitives across TypeScript/Python/Rust. No tool name, no repo link in the visible post — typical bait pattern of teasing the link behind a follow-up. 15K+ stars claimed, Docker setup included.
-
-- [Shubham Saboo](https://x.com/saboo_shubham_/status/2058269167372153129) — 2026-05-24: Saboo pitches an open-source 'context engineering' tool that turns any codebase into an interactive graph an AI coding agent can query — Claude Code, Codex, and Antigravity compatible. Tool name not in the visible tweet (typical Saboo hype framing with link in a follow-up); flagged for follow-up review since the underlying concept (codebase-as-graph for agents) is genuinely useful.
-
-- [Kevin Simback](https://x.com/ksimback/status/2058262328496554021) — 2026-05-24: Kevin Simback's 'Hermes Agent Memory Guidebook' — long write-up cataloging memory systems for the Hermes agent ecosystem (hermesatlas.com), reviewing the proliferating tools and architecture choices. Useful as a meta-reference on agent memory patterns even if you don't use Hermes specifically.
+- [Kevin Simback](https://x.com/ksimback/status/2058262328496554021) — 2026-05-24: A definitive guide to memory in the Hermes Agent, structured as a 3-layer stack: Layer 1 native (two always-injected markdown files MEMORY.md/USER.md plus a searchable SQLite session DB; the 80% consolidation 'rule' is a prompt instruction, not code), Layer 2 the pluggable MemoryProvider slot (8 official providers — Honcho, Mem0, Hindsight, Holographic, OpenViking, RetainDB, ByteRover, Supermemory — one at a time, each a different architectural bet), and Layer 3 community plug-ins (GBrain, Mnemosyne, etc.). Closes with how to pick and warning signs a memory layer is too heavy.
 
 - [Garry Tan](https://x.com/garrytan/status/2057946119725080878) — 2026-05-24: Garry Tan linking a Forbes profile (forbes.com/sites/josipamajic/2026/04/12/the-yc-chief-who-codes-10000-lines-a-day-has-a-simple-secret) about his agentic coding workflow — '10,000 lines a day' framing. Tease tweet; the substance is in the article.
 
@@ -850,7 +846,7 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Claude Code (181)
+### Claude Code (177)
 
 - [Alex Prompter](https://x.com/alex_prompter/status/2074198124898181121) — 2026-07-14: Alex Prompter's thread pitches 'cloning' Fable 5's reasoning into Opus 4.8 before Fable 5 shifts to pay-per-use credits — extracting a model's 'operating manual' as a portable prompt and transplanting it onto a cheaper model to keep the way it thinks rather than the model itself. Engagement-framed but a real prompt-portability technique.
 
@@ -916,37 +912,29 @@
 
 - [rari](https://x.com/0xwhrrari/status/2063244577482440978) — 2026-06-08: Engagement-farmed but useful link dump of free AI-engineering learning resources (LangChain agent architecture, Anthropic's Claude Code 101 + in-action courses, prompt engineering docs, anthropics/courses interactive prompt tutorial, claude.md docs, skills, MCP). Wrapped in 'Google's former CEO just said...' framing but the underlying link list is the substance.
 
-- [Hanako](https://x.com/hanakoxbt/status/2063305395687522702) — 2026-06-07: Engagement-styled summary of an Anthropic memory pattern: 'dreaming' agents that reopen your sessions after you log off to fact-check the primary agents, merge duplicates, and prune stale memory (up to 100 per session, ~95% of tokens cached). Links a Claude agent-team setup article (writer/reviewer/deployer).
+- [Hanako](https://x.com/hanakoxbt/status/2063305395687522702) — 2026-06-07: Describes an Anthropic 'dreaming agents' memory pattern: a second set of agents that, after you log off, reopen every session, fact-check the first agents, merge duplicates and burn stale memory — up to 100 at once, ~95% cached so a full rewrite costs almost nothing. Points to a multi-agent code/review/deploy team guide.
 
-- [Cat Wu (Anthropic)](https://x.com/_catwu/status/2062408623565984209) — 2026-06-06: Anthropic's data team automated ~95% of business-analytics queries with Claude; blog post covers their approach to evals, ablations, and online validation when building data-analysis agents (claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude).
+- [Cat Wu (Anthropic)](https://x.com/_catwu/status/2062408623565984209) — 2026-06-06: Anthropic's data team automated ~95% of business-analytics queries with Claude; the linked blog covers their approach to skills, data foundations, evals, ablations, and online validation for data-analysis agents.
 
-- [Thariq](https://x.com/trq212/status/2061907538741006796) — 2026-06-03: Thariq hypes the new dynamic workflows feature in Claude Code as the biggest upgrade since skills and subagents, plugging his deep-dive article (quote-tweeted from his own thread). Especially excited about workflows enabling non-coding tasks like research, security analysis, agent teams, and code review natively inside Claude Code.
+- [Thariq](https://x.com/trq212/status/2061907538741006796) — 2026-06-03: Announces dynamic workflows as the biggest Claude Code upgrade since skills and subagents — Claude writing its own task-specific harness on the fly — with excitement about the non-technical tasks it unlocks.
 
-- [Thariq](https://x.com/trq212/status/2061907337154367865) — 2026-06-03: Anthropic article (linked from Thariq's tweet): 'A harness for every task: dynamic workflows in Claude Code'. Claude can now write its own harness on the fly, custom-built per task — the default Claude Code harness is coding-shaped but workflows let Claude solve research, security analysis, agent-team, and code-review tasks natively without external custom harnesses. Workflows are shareable/reusable. Caveat: they use more tokens and best practices are still developing.
+- [Thariq](https://x.com/trq212/status/2061907337154367865) — 2026-06-03: Full Anthropic article on dynamic workflows in Claude Code: Claude writes its own JavaScript harness to spawn/coordinate subagents (own models, own worktrees, resumable), countering agentic laziness, self-preferential bias and goal drift. Covers patterns (fan-out-and-synthesize, adversarial verification, tournament, loop-until-done), many use cases (migrations, deep research, triage, root-cause, evals, model routing), the 'ultracode' trigger, token budgets, and when NOT to use it.
 
-- [darkzodchi](https://x.com/zodchiii/status/2061040686330257656) — 2026-05-31: Quote tweet promoting @0x_rody's article on building Claude Code subagents in 15 minutes — each subagent is a markdown file with instructions and a prompt. Templates given for code reviewer, test writer, security scanner, and documentation generator. Engagement-framed but the underlying template approach is real.
+- [darkzodchi](https://x.com/zodchiii/status/2061040686330257656) — 2026-05-31: Anthropic-engineer clip: build 5 focused agents (code review, tests, docs, security) in an afternoon, each ~15 minutes as a markdown file with instructions + prompt. Links a beginner subagent-building template.
 
 - [Mr. Buzzoni](https://x.com/polydao/status/2060964743402455212) — 2026-05-31: Engagement-farmed ALL-CAPS thread riffing on Karpathy's 'we're in the 1960s of AI' / software-3.0 framing to push the author's own listicle article '...These Are the Ones That Matter [Full GitHub Links]' cataloguing 32 Claude skills. Clickbait wrapper, but the underlying skills roundup may be worth a skim.
 
-- [Rahul](https://x.com/sairahul1/status/2059632149716942923) — 2026-05-28: Engagement-farmed thread claiming Anthropic released a 'blueprint' for running a company with Claude Code where one human is CEO and AIs are employees that divide tasks. Underlying linked article is 'How to Build a SaaS MVP in One Afternoon Using 7 AI Agents.' The pattern is real (multi-agent dev workflows) but the framing is hype.
+- [Rahul](https://x.com/sairahul1/status/2059632149716942923) — 2026-05-28: Hype-framed ('Anthropic just released the blueprint for a company run by Claude Code; work is dying') push for a listicle on building a SaaS MVP in an afternoon with 7 AI agents. Clickbait wrapper over a real multi-agent build walkthrough.
 
-- [darkzodchi](https://x.com/zodchiii/status/2059603103070945391) — 2026-05-27: darkzodchi promotes an X article on setting up Claude Code to catch, fix, and learn from its own mistakes automatically. Pitches it as Boris Cherny's (Claude Code creator) approach: stop fixing Claude's mistakes and make Claude fix them itself. Engagement-farm framing but the underlying setup may be worth a look.
+- [darkzodchi](https://x.com/zodchiii/status/2059603103070945391) — 2026-05-27: Boris Cherny (Claude Code): 'we stopped fixing Claude's mistakes; we made Claude fix them itself.' Links a copyable setup for having Claude Code catch, fix, and learn from its own errors instead of the write-code/tests-fail/explain loop.
 
-- [Parag pawar](https://x.com/dharmikpawar13/status/2059571098484675051) — 2026-05-27: Argues CLAUDE.md is not docs but the control layer for your AI agent — inconsistent outputs usually come from bad instruction architecture, not the model. Lays out a scope hierarchy (global = standards, project = stack/workflows, folder = local overrides) where the nearest scope wins, plus a WHAT/WHY framework for organizing context. Directly relevant since Jeremy's own AI links collection runs off a CLAUDE.md — he flagged this one with '(have a look)'.
+- [Parag pawar](https://x.com/dharmikpawar13/status/2059571098484675051) — 2026-05-27: Argues CLAUDE.md is a control layer, not a README: use scope hierarchy (global → project → folder, nearest wins) and a WHAT/WHY/HOW framing, favor specificity ('TypeScript strict mode, Zod validation' over 'production-ready code'), start with /init, keep it under ~500 lines, use hooks, and treat it as living infrastructure.
 
-- [Theo - t3.gg](https://x.com/theo/status/2059352130289651925) — 2026-05-27: Theo endorses DeepSWE, a new agentic coding benchmark released by Datacurve (Serena Ge). Claims it 'actually aligns with how it feels to use these models coding' — i.e. surfaces real divergence between top models where public leaderboards make them look close.
+- [Theo - t3.gg](https://x.com/theo/status/2059352130289651925) — 2026-05-27: Endorses DeepSWE, a new agentic-coding benchmark that reflects the realistic day-to-day developer experience — showing where top models actually diverge rather than clustering as they do on public leaderboards.
 
-- [Movez](https://x.com/0xmovez/status/2059346354984612126) — 2026-05-27: Pointer to an Anthropic engineer's 37-min workshop on shipping production-ready AI agents, framed around 3 building blocks: brain (persona) + hands (environment) + sessions, with a server-side loop so refreshes don't break state. Engagement-farm framing — quote tweets a longer companion guide on multi-agent orchestration on Claude.
+- [Movez](https://x.com/0xmovez/status/2059346354984612126) — 2026-05-27: An Anthropic engineer's 37-minute masterclass on shipping production agent teams: three building blocks (brain=persona, hands=environment, sessions), a server-side loop so nothing breaks on refresh, and why agents 'die before production.' Links a 10-step multi-agent build guide.
 
-- [Binfeng Xu](https://x.com/billxbf/status/2059323616009838703) — 2026-05-27: Release of Polar, an Agent RL rollout infrastructure for real-world harnesses. Takes existing harnesses (Codex, Claude Code, OpenClaw, Hermes, or custom) directly as training environments with no code changes — find a problem, design the harness, train your own agent.
-
-- [刘醒](https://x.com/xingxingli45573/status/2059258034820706541) — 2026-05-27: Highlights 'Taste Skill' — a Skill (20.3k GitHub stars) that improves AI-generated frontend UIs: better layout, fonts, animations, and whitespace for a premium feel. Offers preset directions (universal premium, minimalist, brutalism) plus an audit-and-fix variant for upgrading existing pages, and three tunable parameters for layout/animation/info-density. Includes a companion image skill to generate mockups before coding.
-
-- [darkzodchi](https://x.com/zodchiii/status/2058928613987160287) — 2026-05-25: Quote-tweet of his own thread citing Boris Cherny (Claude Code creator): 'Every night I have like a few thousand agents running' — monitored from his phone. Frames the next workflow wave as a team of agents in a chat app that @mention each other, delegate, and persist memory across days. Hype tone, but reflects the real Anthropic direction of multi-agent + persistent context.
-
-- [Shubham Saboo](https://x.com/saboo_shubham_/status/2058269167372153129) — 2026-05-24: Saboo pitches an open-source 'context engineering' tool that turns any codebase into an interactive graph an AI coding agent can query — Claude Code, Codex, and Antigravity compatible. Tool name not in the visible tweet (typical Saboo hype framing with link in a follow-up); flagged for follow-up review since the underlying concept (codebase-as-graph for agents) is genuinely useful.
-
-- [George Nurijanian](https://x.com/nurijanian/status/2058259663238631890) — 2026-05-24: George Nurijanian dropped Claude's chart output into Tufte's Visual Display of Quantitative Information and had Claude generate a Tufte-flavored data-viz skill — leaner, clearer charts. Repo: github.com/gnurio/tufte-vdqi-plugin. Quotes Anjney Midha telling AI labs to read Tufte before shipping charts. Directly actionable as a skill to evaluate.
+- [darkzodchi](https://x.com/zodchiii/status/2058928613987160287) — 2026-05-25: Boris Cherny (Claude Code): 'every night I have a few thousand agents running,' monitored from his phone. Links a piece arguing the next wave is a team of agents in a real chat app where they @mention each other, delegate, and remember — versus one sandboxed, memoryless ChatGPT tab.
 
 - [Garry Tan](https://x.com/garrytan/status/2057946119725080878) — 2026-05-24: Garry Tan linking a Forbes profile (forbes.com/sites/josipamajic/2026/04/12/the-yc-chief-who-codes-10000-lines-a-day-has-a-simple-secret) about his agentic coding workflow — '10,000 lines a day' framing. Tease tweet; the substance is in the article.
 
@@ -1214,7 +1202,7 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (242)
+### Dev Practices (248)
 
 - [Alvaro Videla](https://x.com/old_sound/status/2076932819008242037) — 2026-07-14: Alvaro Videla released LeetLLM (github.com/videlalvaro/leet-llm) — a free, problem-based course of 48 lessons for building a small LLM inference engine on Apple Silicon in Swift and Metal, progressing from dot products and GEMV through attention and token generation.
 
@@ -1296,43 +1284,55 @@
 
 - [Rahul](https://x.com/sairahul1/status/2063609922667815064) — 2026-06-07: Rahul follow-up to his Harness Engineering article: points to walkinglabs.github.io/learn-harness-engineering as 'the best site on the internet to learn harness engineering' — free, comprehensive. Most AI engineers haven't heard the term yet. Worth bookmarking alongside his article.
 
-- [Cat Wu (Anthropic)](https://x.com/_catwu/status/2062408623565984209) — 2026-06-06: Anthropic's data team automated ~95% of business-analytics queries with Claude; blog post covers their approach to evals, ablations, and online validation when building data-analysis agents (claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude).
+- [海拉鲁编程客 (hylarucoder)](https://x.com/hylarucoder/status/2062881239900766292) — 2026-06-06: Recommends Peter Pang's 'Building cloud agent infrastructure' — most agent frameworks assume a desktop (one user, one machine, local filesystem, keys in env vars); cloud agent infra changes those assumptions.
 
-- [hoeem](https://x.com/hooeem/status/2062443798647517197) — 2026-06-04: Engagement-styled '100x cheaper' guide on cutting token waste in agentic orchestration loops; some practical substance on reducing repeated token spend in agent workflows behind the hype framing.
+- [Cat Wu (Anthropic)](https://x.com/_catwu/status/2062408623565984209) — 2026-06-06: Anthropic's data team automated ~95% of business-analytics queries with Claude; the linked blog covers their approach to skills, data foundations, evals, ablations, and online validation for data-analysis agents.
 
-- [Ole Lehmann](https://x.com/itsolelehmann/status/2061911202830401564) — 2026-06-04: Workflow to turn saved X bookmarks into an agent-readable 'second brain': export bookmarks with the free twitter-web-exporter userscript or BookmarkSave extension, drop the file into an Obsidian/LLM-wiki folder, then point an agent (Claude Code, Codex) at it to convert each bookmark into a tagged markdown note you can query.
+- [hoeem](https://x.com/hooeem/status/2062443798647517197) — 2026-06-04: Points to a guide on making agentic workflows ~100x cheaper by fixing token waste in the orchestration loop.
 
-- [Tom Dörr](https://x.com/tom_doerr/status/2061674811122713013) — 2026-06-03: FlowForge — a Claude skill that generates professional draw.io diagrams from natural language. Repo: github.com/wentong2022-arch/flowforge-skill. Drop-in skill for producing architecture/flow diagrams without manual diagramming.
+- [Ole Lehmann](https://x.com/itsolelehmann/status/2061911202830401564) — 2026-06-04: A ~10-minute recipe to turn your X bookmarks into an agent-queryable second brain: export bookmarks (twitter-web-exporter / BookmarkSave), drop the file into your LLM wiki or Obsidian vault, and have your agent convert each into a tagged markdown note with the original link — then query across the whole pile. Directly relevant to this link collection.
+
+- [Tom Dörr](https://x.com/tom_doerr/status/2061674811122713013) — 2026-06-03: Shares FlowForge, a Skill that generates professional draw.io diagrams from natural language (github.com/wentong2022-arch/flowforge-skill).
 
 - [0xSero](https://x.com/0xsero/status/2060128492247740640) — 2026-05-29: Recommends Peter Steinberger's 'Just Talk To It — the no-bs Way of Agentic Engineering' (steipete.me): after trying every elaborate workflow, the author keeps returning to a conversational, no-ceremony way of working with coding agents rather than heavy prompting scaffolds.
 
-- [Rohit Ghumare](https://x.com/ghumare64/status/2060072412868235587) — 2026-05-29: Long essay by Mike (linked) arguing that picking LangChain/LangGraph/OpenAI Agents SDK forces you to accept a bundled harness — turn state machine, provider routing, credential vault, policy engine, approval gates, budget tracker, hook fanout, context compaction, session trees, OpenTelemetry tracing — as one block. The case for composing them as workers on a shared bus with typed function contracts so teams stop rewriting harnesses from scratch.
+- [Rohit Ghumare](https://x.com/ghumare64/status/2060072412868235587) — 2026-05-29: Summarizes Mike Piccolo's argument that a harness isn't one thing but ~15 separate concerns (turn state machines, provider routing, credential vaults, policy engines, approval gates, budget trackers, context compaction, session trees, tracing) bundled by frameworks out of necessity. When each layer is a worker on a shared bus with a typed contract, 'build your own harness' means swapping a worker, not forking a framework.
 
-- [MacCallister Higgins](https://x.com/macjshiggins/status/2060045337679532174) — 2026-05-29: MacCallister Higgins argues classical NASA systems engineering is the right model for developing code with LLMs — explicit requirements/specs docs make agents reliable at building, testing, and verifying complex codebases. Quote-tweet of an old joke about a model that regenerates the whole codebase from scratch each night against the requirements doc.
+- [MacCallister Higgins](https://x.com/macjshiggins/status/2060045337679532174) — 2026-05-29: Argues classical NASA systems engineering is the ideal model for LLM-assisted coding — being explicit in docs makes it easier than ever to build, test, and verify complex codebases (planning modes only approximate it).
 
-- [AVB](https://x.com/neural_avb/status/2060032255620431877) — 2026-05-29: Recommends a 45-min video on building synthetic datasets and training tiny ~100M-parameter local language models specialized for narrow tasks. Code, datasets, models, and eval harnesses linked in replies.
+- [AVB](https://x.com/neural_avb/status/2060032255620431877) — 2026-05-29: A 45-minute walkthrough on creating synthetic datasets and training tiny (~100M param) local language models specialized for narrow tasks; code, datasets, models and harnesses linked.
 
-- [Jerry Liu](https://x.com/jerryjliu0/status/2059710330016817501) — 2026-05-28: LlamaIndex shipped LiteParse v2 (github.com/run-llama/liteparse, blog at llamaindex.ai/blog/liteparse-v2-0-runs-everywhere) — a Rust rewrite of their PDF parser with native Python/Node packages and a WASM build for browser/edge. Claims fastest open-source model-free PDF parser, more accurate than pymupdf/pypdf/markitdown/pdftotext/pymupdf4llm, up to 100x faster, supports 50+ document types.
+- [Kyle Jeong](https://x.com/kylejeong/status/2059753008297394245) — 2026-05-28: Browser agents have an 'amnesia problem' — re-discovering each site from scratch every run. Autobrowse uses iterative AutoResearch to let an agent improve its own browser skills (/autobrowse), reportedly up to 90% faster and cheaper.
 
-- [John Yeo](https://x.com/johnyeo_/status/2059688796728267261) — 2026-05-28: John Yeo (Stripe-style billing) describes an internal AI agent that automatically queries logs and investigates support tickets. Linked article covers how it works for a stateful domain (billing) where API outcomes depend on customer history. (Jeremy flagged this as 'try it'.)
+- [Jerry Liu](https://x.com/jerryjliu0/status/2059710330016817501) — 2026-05-28: LiteParse v2: LlamaIndex's PDF parser rewritten in Rust with native Python/Node (and WASM) packages — claimed fastest and most accurate open-source model-free parser, up to 100x faster, 50+ document types, installable inside an AI agent.
 
-- [darkzodchi](https://x.com/zodchiii/status/2059603103070945391) — 2026-05-27: darkzodchi promotes an X article on setting up Claude Code to catch, fix, and learn from its own mistakes automatically. Pitches it as Boris Cherny's (Claude Code creator) approach: stop fixing Claude's mistakes and make Claude fix them itself. Engagement-farm framing but the underlying setup may be worth a look.
+- [John Yeo](https://x.com/johnyeo_/status/2059688796728267261) — 2026-05-28: Describes an in-house agent that automatically queries logs and investigates support tickets — with billing state/history making each case stateful. Links a build writeup.
 
-- [Parag pawar](https://x.com/dharmikpawar13/status/2059571098484675051) — 2026-05-27: Argues CLAUDE.md is not docs but the control layer for your AI agent — inconsistent outputs usually come from bad instruction architecture, not the model. Lays out a scope hierarchy (global = standards, project = stack/workflows, folder = local overrides) where the nearest scope wins, plus a WHAT/WHY framework for organizing context. Directly relevant since Jeremy's own AI links collection runs off a CLAUDE.md — he flagged this one with '(have a look)'.
+- [Avi Chawla](https://x.com/_avichawla/status/2059556157984006187) — 2026-05-28: Clear explainer of RAG vs Graph RAG vs Agentic RAG as solving different query types: standard RAG for single-hop factual lookups, Graph RAG (LLM-extracted entities/relationships + traversal) for multi-hop connections, Agentic RAG (an agent choosing tools/sources at query time) for dynamic multi-source tasks — plus binary quantization for 32x more memory-efficient vector search.
 
-- [Rohit](https://x.com/rohit4verse/status/2059366212501696609) — 2026-05-27: Rohit endorses a Databricks tech lead's 26-min talk at @aiDotEngineer on multi-agent coordination — argues agents break not because the model is dumb but because nothing coordinates them. 'One agent is a feature. Fifty is a distributed systems problem. Parallelism is cheap. Getting 300 agents to share one coherent brain is the entire game.' Quote tweets his own article on commanding 300 agents from one prompt.
+- [darkzodchi](https://x.com/zodchiii/status/2059603103070945391) — 2026-05-27: Boris Cherny (Claude Code): 'we stopped fixing Claude's mistakes; we made Claude fix them itself.' Links a copyable setup for having Claude Code catch, fix, and learn from its own errors instead of the write-code/tests-fail/explain loop.
 
-- [Theo - t3.gg](https://x.com/theo/status/2059352130289651925) — 2026-05-27: Theo endorses DeepSWE, a new agentic coding benchmark released by Datacurve (Serena Ge). Claims it 'actually aligns with how it feels to use these models coding' — i.e. surfaces real divergence between top models where public leaderboards make them look close.
+- [Parag pawar](https://x.com/dharmikpawar13/status/2059571098484675051) — 2026-05-27: Argues CLAUDE.md is a control layer, not a README: use scope hierarchy (global → project → folder, nearest wins) and a WHAT/WHY/HOW framing, favor specificity ('TypeScript strict mode, Zod validation' over 'production-ready code'), start with /init, keep it under ~500 lines, use hooks, and treat it as living infrastructure.
 
-- [Tom Dörr](https://x.com/tom_doerr/status/2059316125049971017) — 2026-05-27: Pointer to a 500-hour AI infrastructure engineering curriculum on GitHub (github.com/ai-infra-curriculum/ai-infra-engineer-learning). Self-study path for ML/AI infra skills.
+- [Rohit](https://x.com/rohit4verse/status/2059366212501696609) — 2026-05-27: A Databricks tech lead's talk on the unglamorous core of multi-agent: agents fail not because the model is dumb but because nothing coordinates them — one agent is a feature, fifty is a distributed-systems problem, and getting hundreds of agents to share one coherent brain is the whole game.
 
-- [刘醒](https://x.com/xingxingli45573/status/2059258034820706541) — 2026-05-27: Highlights 'Taste Skill' — a Skill (20.3k GitHub stars) that improves AI-generated frontend UIs: better layout, fonts, animations, and whitespace for a premium feel. Offers preset directions (universal premium, minimalist, brutalism) plus an audit-and-fix variant for upgrading existing pages, and three tunable parameters for layout/animation/info-density. Includes a companion image skill to generate mockups before coding.
+- [Theo - t3.gg](https://x.com/theo/status/2059352130289651925) — 2026-05-27: Endorses DeepSWE, a new agentic-coding benchmark that reflects the realistic day-to-day developer experience — showing where top models actually diverge rather than clustering as they do on public leaderboards.
 
-- [Vaishnavi](https://x.com/_vmlops/status/2059207888393138556) — 2026-05-27: Microsoft open-sourced agent-governance-toolkit (github.com/microsoft/agent-governance-toolkit) — deterministic tool-call interception with a YAML policy engine (allow/deny/require human approval), zero-trust identity via SPIFFE/DID/mTLS, a 4-level execution sandbox with privilege rings, tamper-evident Merkle audit logs, and coverage of all OWASP Agentic Top 10 risks. Works with LangChain, CrewAI, AutoGen, OpenAI Agents SDK, Semantic Kernel, etc. Python/TS/Go/Rust/.NET. ALL CAPS engagement framing but the tool is real and substantive.
+- [Binfeng Xu](https://x.com/billxbf/status/2059323616009838703) — 2026-05-27: Release of Polar, Agent-RL rollout infrastructure that takes real-world harnesses (Codex, Claude Code, OpenClaw, Hermes, or your own) directly as training environments with no code change — find a problem, design the harness, train your own agents.
 
-- [Shubham Saboo](https://x.com/saboo_shubham_/status/2058269167372153129) — 2026-05-24: Saboo pitches an open-source 'context engineering' tool that turns any codebase into an interactive graph an AI coding agent can query — Claude Code, Codex, and Antigravity compatible. Tool name not in the visible tweet (typical Saboo hype framing with link in a follow-up); flagged for follow-up review since the underlying concept (codebase-as-graph for agents) is genuinely useful.
+- [Tom Dörr](https://x.com/tom_doerr/status/2059316125049971017) — 2026-05-27: Shares a 500-hour AI infrastructure engineering curriculum (github.com/ai-infra-curriculum/ai-infra-engineer-learning).
 
-- [George Nurijanian](https://x.com/nurijanian/status/2058259663238631890) — 2026-05-24: George Nurijanian dropped Claude's chart output into Tufte's Visual Display of Quantitative Information and had Claude generate a Tufte-flavored data-viz skill — leaner, clearer charts. Repo: github.com/gnurio/tufte-vdqi-plugin. Quotes Anjney Midha telling AI labs to read Tufte before shipping charts. Directly actionable as a skill to evaluate.
+- [刘醒](https://x.com/xingxingli45573/status/2059258034820706541) — 2026-05-27: Taste Skill (~20.3k stars): an install that gives AI-generated front-ends better taste — improved layout, fonts, animations, whitespace — with design directions (premium, minimalist, brutalism), an audit-and-fix skill for old projects, a mockup-first image skill, and three tunable params (layout experimentation, animation richness, info density).
+
+- [Vaishnavi](https://x.com/_vmlops/status/2059207888393138556) — 2026-05-27: Microsoft open-sourced an Agent Governance Toolkit: deterministic interception of every tool call (denied actions structurally impossible), a YAML allow/deny/human-approval policy engine, zero-trust identity (SPIFFE/DID/mTLS), a 4-level execution sandbox, tamper-evident Merkle audit logs, coverage of all OWASP Agentic Top-10 risks, and support across major frameworks and languages — because 'follow the rules' in a prompt is a suggestion, not a guardrail.
+
+- [Atenov int.](https://x.com/atenov_d/status/2058868770257416239) — 2026-05-25: Highlights MoneyPrinterTurbo (13k+ stars): give a topic/keyword and it generates a script (via any LLM), pulls copyright-free footage, and adds subtitles/music/voiceover to output a finished short video; runs locally with Web UI/API/Docker/Colab. (Author's other posts are off-topic trading/politics.)
+
+- [Hasan Toor](https://x.com/hasantoxr/status/2058863173462352313) — 2026-05-25: Engagement-framed tool share: an open-source engine claiming to replace agent harness, queues, sandboxing and APIs with three primitives (TypeScript/Python/Rust, Docker-ready, 15k+ stars).
+
+- [Shubham Saboo](https://x.com/saboo_shubham_/status/2058269167372153129) — 2026-05-24: Positions codebase-as-queryable-graph as the real 'context engineering' for coding agents — turning any codebase into an interactive graph the agent can query; works with Claude Code, Codex, Antigravity; fully open-source.
+
+- [George Nurijanian](https://x.com/nurijanian/status/2058259663238631890) — 2026-05-24: Fixed Claude's 'chart junk' by handing it a book and having it spin up a Tufte-flavored visualization skill — producing leaner, clearer visuals (github.com/gnurio/tufte-vdqi-plugin).
 
 - [Garry Tan](https://x.com/garrytan/status/2057946119725080878) — 2026-05-24: Garry Tan linking a Forbes profile (forbes.com/sites/josipamajic/2026/04/12/the-yc-chief-who-codes-10000-lines-a-day-has-a-simple-secret) about his agentic coding workflow — '10,000 lines a day' framing. Tease tweet; the substance is in the article.
 
@@ -1700,7 +1700,7 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Skills & MCP (139)
+### Skills & MCP (144)
 
 - [JoePro](https://x.com/joepro/status/2076877282312954311) — 2026-07-14: JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skill spec) engineered to produce distinctive, production-grade UIs that avoid recognizable AI-generated tropes — covering success criteria (signature visual identity, complete states, WCAG AA accessibility, token-driven design systems) and a context-gathering routine before writing code.
 
@@ -1754,27 +1754,37 @@
 
 - [rari](https://x.com/0xwhrrari/status/2063244577482440978) — 2026-06-08: Engagement-farmed but useful link dump of free AI-engineering learning resources (LangChain agent architecture, Anthropic's Claude Code 101 + in-action courses, prompt engineering docs, anthropics/courses interactive prompt tutorial, claude.md docs, skills, MCP). Wrapped in 'Google's former CEO just said...' framing but the underlying link list is the substance.
 
-- [Tom Dörr](https://x.com/tom_doerr/status/2061674811122713013) — 2026-06-03: FlowForge — a Claude skill that generates professional draw.io diagrams from natural language. Repo: github.com/wentong2022-arch/flowforge-skill. Drop-in skill for producing architecture/flow diagrams without manual diagramming.
+- [Ole Lehmann](https://x.com/itsolelehmann/status/2061911202830401564) — 2026-06-04: A ~10-minute recipe to turn your X bookmarks into an agent-queryable second brain: export bookmarks (twitter-web-exporter / BookmarkSave), drop the file into your LLM wiki or Obsidian vault, and have your agent convert each into a tagged markdown note with the original link — then query across the whole pile. Directly relevant to this link collection.
 
-- [darkzodchi](https://x.com/zodchiii/status/2061040686330257656) — 2026-05-31: Quote tweet promoting @0x_rody's article on building Claude Code subagents in 15 minutes — each subagent is a markdown file with instructions and a prompt. Templates given for code reviewer, test writer, security scanner, and documentation generator. Engagement-framed but the underlying template approach is real.
+- [Thariq](https://x.com/trq212/status/2061907538741006796) — 2026-06-03: Announces dynamic workflows as the biggest Claude Code upgrade since skills and subagents — Claude writing its own task-specific harness on the fly — with excitement about the non-technical tasks it unlocks.
+
+- [Thariq](https://x.com/trq212/status/2061907337154367865) — 2026-06-03: Full Anthropic article on dynamic workflows in Claude Code: Claude writes its own JavaScript harness to spawn/coordinate subagents (own models, own worktrees, resumable), countering agentic laziness, self-preferential bias and goal drift. Covers patterns (fan-out-and-synthesize, adversarial verification, tournament, loop-until-done), many use cases (migrations, deep research, triage, root-cause, evals, model routing), the 'ultracode' trigger, token budgets, and when NOT to use it.
+
+- [Tom Dörr](https://x.com/tom_doerr/status/2061674811122713013) — 2026-06-03: Shares FlowForge, a Skill that generates professional draw.io diagrams from natural language (github.com/wentong2022-arch/flowforge-skill).
+
+- [darkzodchi](https://x.com/zodchiii/status/2061040686330257656) — 2026-05-31: Anthropic-engineer clip: build 5 focused agents (code review, tests, docs, security) in an afternoon, each ~15 minutes as a markdown file with instructions + prompt. Links a beginner subagent-building template.
 
 - [Mr. Buzzoni](https://x.com/polydao/status/2060964743402455212) — 2026-05-31: Engagement-farmed ALL-CAPS thread riffing on Karpathy's 'we're in the 1960s of AI' / software-3.0 framing to push the author's own listicle article '...These Are the Ones That Matter [Full GitHub Links]' cataloguing 32 Claude skills. Clickbait wrapper, but the underlying skills roundup may be worth a skim.
 
-- [恒星](https://x.com/vintcessun/status/2060897802478293013) — 2026-05-31: DeepMind open-sourced Science Skills (github.com/google-deepmind/science-skills) — 30+ scientific databases like AlphaGenome and UniProt packaged as agent skills. Each skill breaks API interactions into clear instructions + scripts so agents step through them instead of hallucinating. Installs via one npx line, plugs into Antigravity.
+- [恒星](https://x.com/vintcessun/status/2060897802478293013) — 2026-05-31: DeepMind packaged 30+ scientific databases (AlphaGenome, UniProt) into agent skills. The real bottleneck for science agents isn't model quality but knowing how to call databases correctly; skills turn each DB's API into clear instructions + scripts so agents execute step-by-step. One-line npx install (github.com/google-deepmind/science-skills).
 
-- [Charly Wargnier](https://x.com/datachaz/status/2059649544854327466) — 2026-05-29: Charly Wargnier recommends Akshay Pachaar's 47-min walkthrough of Hermes Agent — a setup with self-evolving skills, three-tier memory, and GEPA optimization for autonomous agents running locally 24/7. Hype framing, but technique combo (self-evolving skills + tiered memory + GEPA) is current.
+- [Charly Wargnier](https://x.com/datachaz/status/2059649544854327466) — 2026-05-29: Recommends Akshay Pachaar's 47-minute 'Hermes Agent Masterclass' on building self-improving, 24/7 local autonomous agents — self-evolving skills, three-tier memory, GEPA optimization, scaling from 1 to 10 agents.
 
-- [Charly Wargnier](https://x.com/datachaz/status/2059909626532155482) — 2026-05-28: ALL CAPS hype thread about Microsoft's SkillOpt — an open-source optimizer loop that mutates agent skill prompts the same way you'd train a model: base model runs the task, optimizer rewrites the instructions, rejects edits that don't improve the benchmark. Claims SOTA over TextGrad and hand-crafted prompts; model-agnostic. Worth a look despite the framing.
+- [Charly Wargnier](https://x.com/datachaz/status/2059909626532155482) — 2026-05-28: Microsoft open-sourced SkillOpt: optimize agent skills the way you train models — a base model runs tasks while an optimizer rewrites the instructions, keeping only edits that raise the benchmark. Claims SOTA over hand-crafted prompts and TextGrad, with no model lock-in since it learns procedural logic.
 
-- [Muratcan Koylan](https://x.com/koylanai/status/2059753045060395240) — 2026-05-28: Muratcan Koylan: his open-source Agent Skills for Context Engineering project was cited in 'Agent Harness Engineering: A Survey' on OpenReview (authors from CMU/Yale/Johns Hopkins/Amazon). Survey reviewed 170+ open-source projects and pulled lessons from OpenAI/Anthropic/LangChain. Core thesis: real-world agent performance = model capability + harness quality, and harness improvements (tool formats, sandboxes, automated verification loops) deliver the biggest wins on long-horizon tasks. Paper at picrew.github.io/LLM-Harness/. (Jeremy flagged this one as 'orchestration'.)
+- [Kyle Jeong](https://x.com/kylejeong/status/2059753008297394245) — 2026-05-28: Browser agents have an 'amnesia problem' — re-discovering each site from scratch every run. Autobrowse uses iterative AutoResearch to let an agent improve its own browser skills (/autobrowse), reportedly up to 90% faster and cheaper.
 
-- [Kyle Jeong](https://x.com/kylejeong/status/2059753008297394245) — 2026-05-28: Kyle Jeong on iterative AutoResearch applied to browser skills — their /autobrowse skill gets 90% faster and cheaper after iterative self-improvement. Links to article 'Autobrowse: The Mythos moment for Browser Agents is here' arguing browser agents have an amnesia problem (re-discover every site from scratch) and how iterating on a real run fixes the discovery tax.
+- [Jerry Liu](https://x.com/jerryjliu0/status/2059710330016817501) — 2026-05-28: LiteParse v2: LlamaIndex's PDF parser rewritten in Rust with native Python/Node (and WASM) packages — claimed fastest and most accurate open-source model-free parser, up to 100x faster, 50+ document types, installable inside an AI agent.
 
-- [刘醒](https://x.com/xingxingli45573/status/2059258034820706541) — 2026-05-27: Highlights 'Taste Skill' — a Skill (20.3k GitHub stars) that improves AI-generated frontend UIs: better layout, fonts, animations, and whitespace for a premium feel. Offers preset directions (universal premium, minimalist, brutalism) plus an audit-and-fix variant for upgrading existing pages, and three tunable parameters for layout/animation/info-density. Includes a companion image skill to generate mockups before coding.
+- [刘醒](https://x.com/xingxingli45573/status/2059258034820706541) — 2026-05-27: Taste Skill (~20.3k stars): an install that gives AI-generated front-ends better taste — improved layout, fonts, animations, whitespace — with design directions (premium, minimalist, brutalism), an audit-and-fix skill for old projects, a mockup-first image skill, and three tunable params (layout experimentation, animation richness, info density).
 
-- [Vaishnavi](https://x.com/_vmlops/status/2059207888393138556) — 2026-05-27: Microsoft open-sourced agent-governance-toolkit (github.com/microsoft/agent-governance-toolkit) — deterministic tool-call interception with a YAML policy engine (allow/deny/require human approval), zero-trust identity via SPIFFE/DID/mTLS, a 4-level execution sandbox with privilege rings, tamper-evident Merkle audit logs, and coverage of all OWASP Agentic Top 10 risks. Works with LangChain, CrewAI, AutoGen, OpenAI Agents SDK, Semantic Kernel, etc. Python/TS/Go/Rust/.NET. ALL CAPS engagement framing but the tool is real and substantive.
+- [Vaishnavi](https://x.com/_vmlops/status/2059207888393138556) — 2026-05-27: Microsoft open-sourced an Agent Governance Toolkit: deterministic interception of every tool call (denied actions structurally impossible), a YAML allow/deny/human-approval policy engine, zero-trust identity (SPIFFE/DID/mTLS), a 4-level execution sandbox, tamper-evident Merkle audit logs, coverage of all OWASP Agentic Top-10 risks, and support across major frameworks and languages — because 'follow the rules' in a prompt is a suggestion, not a guardrail.
 
-- [George Nurijanian](https://x.com/nurijanian/status/2058259663238631890) — 2026-05-24: George Nurijanian dropped Claude's chart output into Tufte's Visual Display of Quantitative Information and had Claude generate a Tufte-flavored data-viz skill — leaner, clearer charts. Repo: github.com/gnurio/tufte-vdqi-plugin. Quotes Anjney Midha telling AI labs to read Tufte before shipping charts. Directly actionable as a skill to evaluate.
+- [Shubham Saboo](https://x.com/saboo_shubham_/status/2058269167372153129) — 2026-05-24: Positions codebase-as-queryable-graph as the real 'context engineering' for coding agents — turning any codebase into an interactive graph the agent can query; works with Claude Code, Codex, Antigravity; fully open-source.
+
+- [Kevin Simback](https://x.com/ksimback/status/2058262328496554021) — 2026-05-24: A definitive guide to memory in the Hermes Agent, structured as a 3-layer stack: Layer 1 native (two always-injected markdown files MEMORY.md/USER.md plus a searchable SQLite session DB; the 80% consolidation 'rule' is a prompt instruction, not code), Layer 2 the pluggable MemoryProvider slot (8 official providers — Honcho, Mem0, Hindsight, Holographic, OpenViking, RetainDB, ByteRover, Supermemory — one at a time, each a different architectural bet), and Layer 3 community plug-ins (GBrain, Mnemosyne, etc.). Closes with how to pick and warning signs a memory layer is too heavy.
+
+- [George Nurijanian](https://x.com/nurijanian/status/2058259663238631890) — 2026-05-24: Fixed Claude's 'chart junk' by handing it a book and having it spin up a Tufte-flavored visualization skill — producing leaner, clearer visuals (github.com/gnurio/tufte-vdqi-plugin).
 
 - [Charly Wargnier](https://x.com/datachaz/status/2057787509728522463) — 2026-05-23: Charly Wargnier surfacing Addy Osmani's open-source agent-skills repo: github.com/addyosmani/agent-skills — 'Production-grade engineering skills for AI coding agents.' Directly relevant to our skills/MCP work; worth pulling and evaluating which skills map to our dev workflow.
 
@@ -1980,7 +1990,7 @@
 
 - [Mervin Praison](https://x.com/mervinpraison/status/1881788246684013011) — 2025-01-22: Shows a 100% local RAG AI agent with reasoning: DeepSeek via Ollama for the LLM, PraisonAI to build the agent in a few lines, Nomic embeddings, and a Streamlit UI—code included in the thread.
 
-### Prompting (103)
+### Prompting (104)
 
 - [JoePro](https://x.com/joepro/status/2076877282312954311) — 2026-07-14: JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skill spec) engineered to produce distinctive, production-grade UIs that avoid recognizable AI-generated tropes — covering success criteria (signature visual identity, complete states, WCAG AA accessibility, token-driven design systems) and a context-gathering routine before writing code.
 
@@ -2034,13 +2044,15 @@
 
 - [Viv](https://x.com/vtrivedy10/status/2063429138304668093) — 2026-06-07: A default recipe for optimizing Agent = Model + Harness, 'training' both: (1) build v1 on a sensible base harness with task-specific prompting/tools, (2) harness-engineer against prod-like eval tasks (often enough on its own), (3) SFT on mined traces or synthetic data (good for distilling a cheaper model), (4) RL if you can design environments/rewards to push past SFT copying, (5) light harness engineering again on the trained model. Argues harness engineering will be the dominant optimization lever and most companies are still at steps 1-2; links the 'Anatomy of an Agent Harness' article.
 
-- [Thariq](https://x.com/trq212/status/2061907337154367865) — 2026-06-03: Anthropic article (linked from Thariq's tweet): 'A harness for every task: dynamic workflows in Claude Code'. Claude can now write its own harness on the fly, custom-built per task — the default Claude Code harness is coding-shaped but workflows let Claude solve research, security analysis, agent-team, and code-review tasks natively without external custom harnesses. Workflows are shareable/reusable. Caveat: they use more tokens and best practices are still developing.
+- [Chesny](https://x.com/chesnyfcb/status/2060818732654481693) — 2026-05-31: Polemical pitch (translated) for a 3D 'knowledge galaxy' second brain à la Karpathy: 378 notes auto-generated ~1,854 nodes and ~3,856 connections, surfacing hidden links and missing connections. Pragmatic takeaway: start with an automated Obsidian + Claude vault that extracts content, finds connections, and writes daily reports.
 
-- [Charly Wargnier](https://x.com/datachaz/status/2059909626532155482) — 2026-05-28: ALL CAPS hype thread about Microsoft's SkillOpt — an open-source optimizer loop that mutates agent skill prompts the same way you'd train a model: base model runs the task, optimizer rewrites the instructions, rejects edits that don't improve the benchmark. Claims SOTA over TextGrad and hand-crafted prompts; model-agnostic. Worth a look despite the framing.
+- [MacCallister Higgins](https://x.com/macjshiggins/status/2060045337679532174) — 2026-05-29: Argues classical NASA systems engineering is the ideal model for LLM-assisted coding — being explicit in docs makes it easier than ever to build, test, and verify complex codebases (planning modes only approximate it).
 
-- [Avi Chawla](https://x.com/_avichawla/status/2059556157984006187) — 2026-05-28: Avi Chawla explainer on RAG vs Graph RAG vs Agentic RAG. Standard RAG embeds chunks and retrieves by similarity — fine for direct lookups, fails on multi-hop queries. Graph RAG adds an LLM-extracted entity/relationship layer so retrieval traverses connections (e.g., 'checkout uses payments API' + 'payments API on cluster-3' + 'cluster-3 maintenance Friday' → answers 'will checkout be affected Friday?'). Agentic RAG adds an agent loop on top for planning multi-step retrieval.
+- [Charly Wargnier](https://x.com/datachaz/status/2059909626532155482) — 2026-05-28: Microsoft open-sourced SkillOpt: optimize agent skills the way you train models — a base model runs tasks while an optimizer rewrites the instructions, keeping only edits that raise the benchmark. Claims SOTA over hand-crafted prompts and TextGrad, with no model lock-in since it learns procedural logic.
 
-- [Parag pawar](https://x.com/dharmikpawar13/status/2059571098484675051) — 2026-05-27: Argues CLAUDE.md is not docs but the control layer for your AI agent — inconsistent outputs usually come from bad instruction architecture, not the model. Lays out a scope hierarchy (global = standards, project = stack/workflows, folder = local overrides) where the nearest scope wins, plus a WHAT/WHY framework for organizing context. Directly relevant since Jeremy's own AI links collection runs off a CLAUDE.md — he flagged this one with '(have a look)'.
+- [Parag pawar](https://x.com/dharmikpawar13/status/2059571098484675051) — 2026-05-27: Argues CLAUDE.md is a control layer, not a README: use scope hierarchy (global → project → folder, nearest wins) and a WHAT/WHY/HOW framing, favor specificity ('TypeScript strict mode, Zod validation' over 'production-ready code'), start with /init, keep it under ~500 lines, use hooks, and treat it as living infrastructure.
+
+- [George Nurijanian](https://x.com/nurijanian/status/2058259663238631890) — 2026-05-24: Fixed Claude's 'chart junk' by handing it a book and having it spin up a Tufte-flavored visualization skill — producing leaner, clearer visuals (github.com/gnurio/tufte-vdqi-plugin).
 
 - [Ahmad](https://x.com/theahmadosman/status/2057590791241896254) — 2026-05-22: Ahmad recommends the free 'LLMs 101: A Practical Guide (2026 Edition)' X article: covers tokens/tokenizers, transformers, attention, KV cache, prefill vs decode, decoding controls, chat templates, long context, RAG, agents/tools, fine-tuning, multimodal — then bridges to running models locally (open-weight vs opensource, quantization, VRAM math, hardware tiers, file format safety, runtimes, benchmarks). ALL-CAPS hype intro but the content is comprehensive.
 
@@ -2188,7 +2200,7 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-### Research (145)
+### Research (146)
 
 - [Alvaro Videla](https://x.com/old_sound/status/2076932819008242037) — 2026-07-14: Alvaro Videla released LeetLLM (github.com/videlalvaro/leet-llm) — a free, problem-based course of 48 lessons for building a small LLM inference engine on Apple Silicon in Swift and Metal, progressing from dot products and GEMV through attention and token generation.
 
@@ -2232,33 +2244,35 @@
 
 - [Viv](https://x.com/vtrivedy10/status/2063429138304668093) — 2026-06-07: A default recipe for optimizing Agent = Model + Harness, 'training' both: (1) build v1 on a sensible base harness with task-specific prompting/tools, (2) harness-engineer against prod-like eval tasks (often enough on its own), (3) SFT on mined traces or synthetic data (good for distilling a cheaper model), (4) RL if you can design environments/rewards to push past SFT copying, (5) light harness engineering again on the trained model. Argues harness engineering will be the dominant optimization lever and most companies are still at steps 1-2; links the 'Anatomy of an Agent Harness' article.
 
-- [Dan Roy](https://x.com/roydanroy/status/2062917394356429092) — 2026-06-06: Quotes Markus Buehler (MIT) on a breakthrough in self-evolving 'AI scientists' that move from search to principled discovery — an AI that perceives shifts in the search space itself without intervention. (Roy's own comment is a category-theory in-joke.)
+- [Dan Roy](https://x.com/roydanroy/status/2062917394356429092) — 2026-06-06: Category-theory joke quoting Markus Buehler's claim of a breakthrough in self-evolving AI 'scientists' moving from search to principled discovery — where the search space itself changes and the AI perceives that shift without intervention.
 
-- [さいぺ (cipepser)](https://x.com/cipepser/status/2062397559520502225) — 2026-06-04: Recommends mem0's article 'State of Memory in Agent Harness' (mem0ai) — a well-organized survey of agent-memory papers and benchmarks plus how memory is implemented across coding agents (Cursor, Devin, Claude Code, Codex).
+- [さいぺ (cipepser)](https://x.com/cipepser/status/2062397559520502225) — 2026-06-04: Praises mem0's 'State of Memory in Agent Harness' survey — well-organized coverage from field papers/benchmarks through memory implementations in each coding agent (Cursor, Devin, Claude Code, Codex).
 
-- [yv](https://x.com/yvbbrjdr/status/2061914706579984551) — 2026-06-03: Recommends the MAI-Thinking-1 technical paper from Microsoft as a near-complete recipe for training a SOTA LLM (translated from Chinese). Paper PDF: microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf.
+- [yv](https://x.com/yvbbrjdr/status/2061914706579984551) — 2026-06-03: Recommends the MAI-Thinking-1 technical paper as containing almost all the details for training a SOTA LLM (microsoft.ai PDF).
 
-- [恒星](https://x.com/vintcessun/status/2060897802478293013) — 2026-05-31: DeepMind open-sourced Science Skills (github.com/google-deepmind/science-skills) — 30+ scientific databases like AlphaGenome and UniProt packaged as agent skills. Each skill breaks API interactions into clear instructions + scripts so agents step through them instead of hallucinating. Installs via one npx line, plugs into Antigravity.
+- [恒星](https://x.com/vintcessun/status/2060897802478293013) — 2026-05-31: DeepMind packaged 30+ scientific databases (AlphaGenome, UniProt) into agent skills. The real bottleneck for science agents isn't model quality but knowing how to call databases correctly; skills turn each DB's API into clear instructions + scripts so agents execute step-by-step. One-line npx install (github.com/google-deepmind/science-skills).
 
-- [Yohei](https://x.com/yoheinakajima/status/2060068279574843614) — 2026-05-29: Yohei Nakajima (BabyAGI) published his first arxiv paper: 'The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems' (arxiv.org/abs/2605.21997). Case for agents that coordinate through persistent replayable state — log-centric architecture you can audit and fork.
+- [Yohei](https://x.com/yoheinakajima/status/2060068279574843614) — 2026-05-29: Yohei Nakajima's 'log-centric agent architecture' and his first arXiv paper 'The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems' — the case for agents that coordinate through persistent, replayable state.
 
-- [AVB](https://x.com/neural_avb/status/2060032255620431877) — 2026-05-29: Recommends a 45-min video on building synthetic datasets and training tiny ~100M-parameter local language models specialized for narrow tasks. Code, datasets, models, and eval harnesses linked in replies.
+- [AVB](https://x.com/neural_avb/status/2060032255620431877) — 2026-05-29: A 45-minute walkthrough on creating synthetic datasets and training tiny (~100M param) local language models specialized for narrow tasks; code, datasets, models and harnesses linked.
 
-- [Muratcan Koylan](https://x.com/koylanai/status/2059753045060395240) — 2026-05-28: Muratcan Koylan: his open-source Agent Skills for Context Engineering project was cited in 'Agent Harness Engineering: A Survey' on OpenReview (authors from CMU/Yale/Johns Hopkins/Amazon). Survey reviewed 170+ open-source projects and pulled lessons from OpenAI/Anthropic/LangChain. Core thesis: real-world agent performance = model capability + harness quality, and harness improvements (tool formats, sandboxes, automated verification loops) deliver the biggest wins on long-horizon tasks. Paper at picrew.github.io/LLM-Harness/. (Jeremy flagged this one as 'orchestration'.)
+- [Charly Wargnier](https://x.com/datachaz/status/2059909626532155482) — 2026-05-28: Microsoft open-sourced SkillOpt: optimize agent skills the way you train models — a base model runs tasks while an optimizer rewrites the instructions, keeping only edits that raise the benchmark. Claims SOTA over hand-crafted prompts and TextGrad, with no model lock-in since it learns procedural logic.
 
-- [Paul Iusztin](https://x.com/pauliusztin_/status/2059613089260003387) — 2026-05-28: Paul Iusztin breaks down Neo4j's three-layer agent memory system inside one graph: (1) short-term — active conversation as a linear chain of ordered messages; (2) long-term — persistent knowledge graph of entities, orgs, locations, preferences, facts, and relationships with embeddings on nodes so agents traverse connected knowledge rather than retrieve isolated chunks; (3) extraction lineage tying them together.
+- [Muratcan Koylan](https://x.com/koylanai/status/2059753045060395240) — 2026-05-28: On the 'Agent Harness Engineering: A Survey' paper (CMU/Yale/JHU/Amazon; 170+ projects reviewed): real-world agent performance = model capability + harness quality, and for long-horizon production tasks the harness is the main bottleneck. Simple harness tweaks (tool formats, sandboxing, verification loops) yield big benchmark gains; the biggest wins come from turning production traces into regression tests + automated harness fixes.
 
-- [Avi Chawla](https://x.com/_avichawla/status/2059556157984006187) — 2026-05-28: Avi Chawla explainer on RAG vs Graph RAG vs Agentic RAG. Standard RAG embeds chunks and retrieves by similarity — fine for direct lookups, fails on multi-hop queries. Graph RAG adds an LLM-extracted entity/relationship layer so retrieval traverses connections (e.g., 'checkout uses payments API' + 'payments API on cluster-3' + 'cluster-3 maintenance Friday' → answers 'will checkout be affected Friday?'). Agentic RAG adds an agent loop on top for planning multi-step retrieval.
+- [Paul Iusztin](https://x.com/pauliusztin_/status/2059613089260003387) — 2026-05-28: Breakdown of Neo4j's graph-native agent memory: three connected layers in one graph — short-term (ordered message chain), long-term (entity/relationship knowledge graph with embeddings, traversed relationally), and reasoning memory (per-run trees of thoughts/tool-calls/decision paths). Typed edges (:MENTIONS/:INITIATED_BY/:TOUCHED) make provenance a one-hop query; 'the ontology is the real product.'
 
-- [Theo - t3.gg](https://x.com/theo/status/2059352130289651925) — 2026-05-27: Theo endorses DeepSWE, a new agentic coding benchmark released by Datacurve (Serena Ge). Claims it 'actually aligns with how it feels to use these models coding' — i.e. surfaces real divergence between top models where public leaderboards make them look close.
+- [Avi Chawla](https://x.com/_avichawla/status/2059556157984006187) — 2026-05-28: Clear explainer of RAG vs Graph RAG vs Agentic RAG as solving different query types: standard RAG for single-hop factual lookups, Graph RAG (LLM-extracted entities/relationships + traversal) for multi-hop connections, Agentic RAG (an agent choosing tools/sources at query time) for dynamic multi-source tasks — plus binary quantization for 32x more memory-efficient vector search.
 
-- [Binfeng Xu](https://x.com/billxbf/status/2059323616009838703) — 2026-05-27: Release of Polar, an Agent RL rollout infrastructure for real-world harnesses. Takes existing harnesses (Codex, Claude Code, OpenClaw, Hermes, or custom) directly as training environments with no code changes — find a problem, design the harness, train your own agent.
+- [Theo - t3.gg](https://x.com/theo/status/2059352130289651925) — 2026-05-27: Endorses DeepSWE, a new agentic-coding benchmark that reflects the realistic day-to-day developer experience — showing where top models actually diverge rather than clustering as they do on public leaderboards.
 
-- [Tom Dörr](https://x.com/tom_doerr/status/2059316125049971017) — 2026-05-27: Pointer to a 500-hour AI infrastructure engineering curriculum on GitHub (github.com/ai-infra-curriculum/ai-infra-engineer-learning). Self-study path for ML/AI infra skills.
+- [Binfeng Xu](https://x.com/billxbf/status/2059323616009838703) — 2026-05-27: Release of Polar, Agent-RL rollout infrastructure that takes real-world harnesses (Codex, Claude Code, OpenClaw, Hermes, or your own) directly as training environments with no code change — find a problem, design the harness, train your own agents.
 
-- [Garry Tan](https://x.com/garrytan/status/2058378310254793013) — 2026-05-25: Garry Tan reacting to Thinking Machines' May 11 'interaction models' announcement (thinkingmachines.ai/blog/interaction-models): claims he fine-tuned his own Qwen3.5-397B in a couple of hours that afternoon. Hyping fast multimodal as the unlock for 'mind-blowing personal AI.'
+- [Tom Dörr](https://x.com/tom_doerr/status/2059316125049971017) — 2026-05-27: Shares a 500-hour AI infrastructure engineering curriculum (github.com/ai-infra-curriculum/ai-infra-engineer-learning).
 
-- [Kevin Simback](https://x.com/ksimback/status/2058262328496554021) — 2026-05-24: Kevin Simback's 'Hermes Agent Memory Guidebook' — long write-up cataloging memory systems for the Hermes agent ecosystem (hermesatlas.com), reviewing the proliferating tools and architecture choices. Useful as a meta-reference on agent memory patterns even if you don't use Hermes specifically.
+- [Garry Tan](https://x.com/garrytan/status/2058378310254793013) — 2026-05-25: Garry Tan: fine-tuned his own Qwen3.5-397B in a couple hours via Thinking Machines, arguing fast usable multimodal will enable mind-blowing personal AI. Cites Thinking Machines' real-time 'interaction models.'
+
+- [Kevin Simback](https://x.com/ksimback/status/2058262328496554021) — 2026-05-24: A definitive guide to memory in the Hermes Agent, structured as a 3-layer stack: Layer 1 native (two always-injected markdown files MEMORY.md/USER.md plus a searchable SQLite session DB; the 80% consolidation 'rule' is a prompt instruction, not code), Layer 2 the pluggable MemoryProvider slot (8 official providers — Honcho, Mem0, Hindsight, Holographic, OpenViking, RetainDB, ByteRover, Supermemory — one at a time, each a different architectural bet), and Layer 3 community plug-ins (GBrain, Mnemosyne, etc.). Closes with how to pick and warning signs a memory layer is too heavy.
 
 - [Ahmad](https://x.com/theahmadosman/status/2057590791241896254) — 2026-05-22: Ahmad recommends the free 'LLMs 101: A Practical Guide (2026 Edition)' X article: covers tokens/tokenizers, transformers, attention, KV cache, prefill vs decode, decoding controls, chat templates, long context, RAG, agents/tools, fine-tuning, multimodal — then bridges to running models locally (open-weight vs opensource, quantization, VRAM math, hardware tiers, file format safety, runtimes, benchmarks). ALL-CAPS hype intro but the content is comprehensive.
 
@@ -2480,7 +2494,7 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.
 
-### Industry (98)
+### Industry (94)
 
 - [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — 2026-07-14: How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with a native AI agent, built-in MCP server, Cowork-style web+local-file agents, scheduled autopilot tasks, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), and local-model (Ollama) support — drivable from Claude Code or Gemini CLI. Engagement-framed but describes a real agentic-browser tool worth evaluating.
 
@@ -2506,19 +2520,11 @@
 
 - [Rahul](https://x.com/sairahul1/status/2063544956158185927) — 2026-06-08: Long-form X article framing 'Harness Engineering' as the most important AI discipline of 2026 — OpenAI shipped 1M lines of production code in Feb 2026 using agents wrapped in a reliable system (the 'harness'); Anthropic published 3 papers on it; ThoughtWorks formalized a framework; Philipp Schmid called it the most important discipline of 2026. Article walks through what a harness is and the mental models needed to actually use it. 1.1M views — the term is breaking out of AI-infra circles fast.
 
-- [Sprytix](https://x.com/sprytixl/status/2063234969510588640) — 2026-06-07: Engagement-farmed claim that a Chinese professor runs a 170-agent dev team making 'every company decision' on Kimi K2.6 with one prompt; links an article on running 300 parallel agents. Hype framing, thin substance — flagging as questionable, with an industry/agent angle.
+- [Garry Tan](https://x.com/garrytan/status/2061878212213572083) — 2026-06-03: Garry Tan on model routing as strategy: frontier labs will want their harness to be the moat, but the consumer-best outcome is model capabilities flattening and commoditizing — 'a preview of the AI Harness Wars of 2027.' Cites Factory's auto model-router (claimed 25% cost cut at frontier performance).
 
-- [海拉鲁编程客 (hylarucoder)](https://x.com/hylarucoder/status/2062881239900766292) — 2026-06-06: Recommends Peter Pang's (intuitiveml) article on building cloud agent infrastructure: most agent frameworks assume a desktop (one user/machine/process) and break in the cloud where filesystem, API-key handling, and orchestration must change.
+- [Atenov int.](https://x.com/atenov_d/status/2058868770257416239) — 2026-05-25: Highlights MoneyPrinterTurbo (13k+ stars): give a topic/keyword and it generates a script (via any LLM), pulls copyright-free footage, and adds subtitles/music/voiceover to output a finished short video; runs locally with Web UI/API/Docker/Colab. (Author's other posts are off-topic trading/politics.)
 
-- [yv](https://x.com/yvbbrjdr/status/2061914706579984551) — 2026-06-03: Recommends the MAI-Thinking-1 technical paper from Microsoft as a near-complete recipe for training a SOTA LLM (translated from Chinese). Paper PDF: microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf.
-
-- [Garry Tan](https://x.com/garrytan/status/2061878212213572083) — 2026-06-03: Garry Tan (YC) quote-tweets Factory's new model-routing feature with a controversial take: frontier labs will fight to make their AI harness the moat, but the consumer-best outcome is model capabilities flattening into commodity. Calls it a preview of the 'AI Harness Wars of 2027'. Factory Router claims 25% cost cuts at frontier performance.
-
-- [Jerry Liu](https://x.com/jerryjliu0/status/2059710330016817501) — 2026-05-28: LlamaIndex shipped LiteParse v2 (github.com/run-llama/liteparse, blog at llamaindex.ai/blog/liteparse-v2-0-runs-everywhere) — a Rust rewrite of their PDF parser with native Python/Node packages and a WASM build for browser/edge. Claims fastest open-source model-free PDF parser, more accurate than pymupdf/pypdf/markitdown/pdftotext/pymupdf4llm, up to 100x faster, supports 50+ document types.
-
-- [Atenov int.](https://x.com/atenov_d/status/2058868770257416239) — 2026-05-25: MoneyPrinterTurbo (github.com/harry0703/MoneyPrinterTurbo) — open-source faceless-video generator pipeline. You type a topic, it writes a script via Claude/DeepSeek/Gemini/GPT, pulls copyright-free HD footage, adds subtitles/voiceover/background music, and outputs finished shorts (9:16) or YouTube (16:9). 13K+ stars. Runs locally with Docker + Google Colab, includes Web UI and API. Pitched as the same pipeline used by faceless-channel creators making $6K-10K/month.
-
-- [Garry Tan](https://x.com/garrytan/status/2058378310254793013) — 2026-05-25: Garry Tan reacting to Thinking Machines' May 11 'interaction models' announcement (thinkingmachines.ai/blog/interaction-models): claims he fine-tuned his own Qwen3.5-397B in a couple of hours that afternoon. Hyping fast multimodal as the unlock for 'mind-blowing personal AI.'
+- [Garry Tan](https://x.com/garrytan/status/2058378310254793013) — 2026-05-25: Garry Tan: fine-tuned his own Qwen3.5-397B in a couple hours via Thinking Machines, arguing fast usable multimodal will enable mind-blowing personal AI. Cites Thinking Machines' real-time 'interaction models.'
 
 - [shdu](https://x.com/shdu11546816/status/2057642195524419748) — 2026-05-22: Speculative macro thesis arguing AI agents will trigger a 'Deflationary Doom Loop' via the Paradox of Thrift: as chatbots become agents and high-income white-collar layoffs accelerate, displaced workers flood physical labor markets, wages collapse, discretionary spending collapses, deflation feeds itself. Doom-take economics, not analysis.
 
@@ -2678,7 +2684,7 @@
 
 - [Santiago](https://x.com/svpino/status/1881336934418755862) — 2025-01-21: Walks through GroundX, an open-source, self-hostable/air-gapped enterprise RAG system. Two services: Ingest (a pretrained vision model that 'understands' documents instead of feeding raw docs to the LLM) and Search (text+vector search with a fine-tuned re-ranker). Santiago's thesis: most teams need better ingestion, not better retrieval; includes a video demo and the free X-Ray inspection tool.
 
-### Management (106)
+### Management (104)
 
 - [Ryan Carson](https://x.com/ryancarson/status/2074093250399330418) — 2026-07-07: Ryan Carson (@HelloUntangle) details orchestrating the largest/riskiest engineering program in the company's history with a single Fable parent orchestrator session: 834 files, prod data mutation, DB schema update, 31 PRs, started Friday->completed Monday, zero prod incidents. One parent Devin/Fable session planned the work, spawned ~40 child sessions to execute, enforced regression gates and backup checks between phases, and escalated only owner-level decisions (scope rulings, go/no-go on irreversible steps). Distills reusable program-management patterns for large migrations. In a follow-up he asks Cognition to let child Devin sessions pick their own model/mode independent of the parent.
 
@@ -2704,17 +2710,13 @@
 
 - [Peter Yang](https://x.com/petergyang/status/2063988122720055772) — 2026-06-09: Five takeaways from a conversation with @kunchenguid (ex-Meta L8 engineer) on agentic engineering: (1) plan and validate, don't code yourself — you're the always-on team's manager; (2) plan quality determines how long agents run autonomously — a detailed spec can run for hours vs minutes for a one-liner; (3) use visual plans, not walls of markdown — Lavish (github.com/kunchenguid/lavish) generates visual HTML plans; (4 and 5 truncated in scrape — likely about validation rubrics and feedback loops).
 
-- [Elon Musk](https://x.com/elonmusk/status/2063401522327666828) — 2026-06-07: [Jeremy flagged: 'worth a look'] Endorses Eric Jorgenson's writeup of Elon's 'Magic Wand Number' and 'Idiot Index' — first-principles / 'physics thinking in the limit' mental models presented as universally applicable across industries.
+- [Elon Musk](https://x.com/elonmusk/status/2063401522327666828) — 2026-06-07: Elon Musk endorses first-principles 'physics thinking in the limit' — the 'Magic Wand Number' and 'Idiot Index' as universal cost-engineering mental models. Not AI/dev, but a useful thinking frame.
 
-- [Cat Wu (Anthropic)](https://x.com/_catwu/status/2062408623565984209) — 2026-06-06: Anthropic's data team automated ~95% of business-analytics queries with Claude; blog post covers their approach to evals, ablations, and online validation when building data-analysis agents (claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude).
+- [Garry Tan](https://x.com/garrytan/status/2061878212213572083) — 2026-06-03: Garry Tan on model routing as strategy: frontier labs will want their harness to be the moat, but the consumer-best outcome is model capabilities flattening and commoditizing — 'a preview of the AI Harness Wars of 2027.' Cites Factory's auto model-router (claimed 25% cost cut at frontier performance).
 
-- [Dave Kline](https://x.com/dklineii/status/2059634666030637286) — 2026-05-28: Dave Kline on managing up: his biggest mistake as a manager was assuming his team's impact was visible to his boss and that he'd be 'more valuable if he just handled it.' Thread on what to do instead.
+- [Dave Kline](https://x.com/dklineii/status/2059634666030637286) — 2026-05-28: Management thread: 'the biggest mistake I made as a manager was not managing up' — assuming impact is obvious and the boss is plugged in — plus how to fix it.
 
-- [Rohit](https://x.com/rohit4verse/status/2059366212501696609) — 2026-05-27: Rohit endorses a Databricks tech lead's 26-min talk at @aiDotEngineer on multi-agent coordination — argues agents break not because the model is dumb but because nothing coordinates them. 'One agent is a feature. Fifty is a distributed systems problem. Parallelism is cheap. Getting 300 agents to share one coherent brain is the entire game.' Quote tweets his own article on commanding 300 agents from one prompt.
-
-- [Movez](https://x.com/0xmovez/status/2059346354984612126) — 2026-05-27: Pointer to an Anthropic engineer's 37-min workshop on shipping production-ready AI agents, framed around 3 building blocks: brain (persona) + hands (environment) + sessions, with a server-side loop so refreshes don't break state. Engagement-farm framing — quote tweets a longer companion guide on multi-agent orchestration on Claude.
-
-- [Dave Kline](https://x.com/dklineii/status/2058538089224519806) — 2026-05-24: Dave Kline on manager training: motivation is intrinsic, so you can't really 'motivate' a team — but you can demotivate them. Sets up a thread on the 5 most common leadership missteps that kill motivation. Standard management content, useful as a quick reference for new-manager conversations.
+- [Dave Kline](https://x.com/dklineii/status/2058538089224519806) — 2026-05-24: Management thread: you can't create lasting motivation (it's intrinsic), but you can demotivate — the 5 most common leadership missteps.
 
 - [Dan Shipper](https://x.com/danshipper/status/2057514494960513272) — 2026-05-22: Dan Shipper (Every) report 'After Automation' (every.to/p/after-automation): despite automating everything they can with AI agents, Every went from 4 → 30 human employees since GPT-3. Argues AI makes expert competence cheap, which drives demand for experts UP, and the dynamic intensifies as we approach AGI. Subject was flagged '(read this today)'.
 
@@ -2892,7 +2894,7 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Points to a superengineer.net blog post as a good summary of Elon Musk's 5-step design/engineering method (DFX).
 
-### Questionable (133)
+### Questionable (122)
 
 - [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — 2026-07-14: How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with a native AI agent, built-in MCP server, Cowork-style web+local-file agents, scheduled autopilot tasks, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), and local-model (Ollama) support — drivable from Claude Code or Gemini CLI. Engagement-framed but describes a real agentic-browser tool worth evaluating.
 
@@ -2958,39 +2960,17 @@
 
 - [rari](https://x.com/0xwhrrari/status/2063244577482440978) — 2026-06-08: Engagement-farmed but useful link dump of free AI-engineering learning resources (LangChain agent architecture, Anthropic's Claude Code 101 + in-action courses, prompt engineering docs, anthropics/courses interactive prompt tutorial, claude.md docs, skills, MCP). Wrapped in 'Google's former CEO just said...' framing but the underlying link list is the substance.
 
-- [Hanako](https://x.com/hanakoxbt/status/2063305395687522702) — 2026-06-07: Engagement-styled summary of an Anthropic memory pattern: 'dreaming' agents that reopen your sessions after you log off to fact-check the primary agents, merge duplicates, and prune stale memory (up to 100 per session, ~95% of tokens cached). Links a Claude agent-team setup article (writer/reviewer/deployer).
+- [Sprytix](https://x.com/sprytixl/status/2063234969510588640) — 2026-06-07: Engagement-farmed hype ('170 AI agents make every company decision') pushing a listicle on running 170–300 parallel agents with Kimi K2.6. Clickbait framing, but the underlying topic — massed parallel agents for research/ops — is real.
 
-- [Sprytix](https://x.com/sprytixl/status/2063234969510588640) — 2026-06-07: Engagement-farmed claim that a Chinese professor runs a 170-agent dev team making 'every company decision' on Kimi K2.6 with one prompt; links an article on running 300 parallel agents. Hype framing, thin substance — flagging as questionable, with an industry/agent angle.
-
-- [hoeem](https://x.com/hooeem/status/2062443798647517197) — 2026-06-04: Engagement-styled '100x cheaper' guide on cutting token waste in agentic orchestration loops; some practical substance on reducing repeated token spend in agent workflows behind the hype framing.
-
-- [Livsun](https://x.com/l1vsun/status/2061876167687201243) — 2026-06-03: [Engagement-farmed hype] Anonymous quant-trading flex: neural net trained on 11 years of tick data, 4200 data points/sec, 847K labeled setups, $40/mo server, claims 71% win rate over 90 days. No code, no paper, no repo — pure 'you're not losing because your analysis is wrong' bait. Skip.
-
-- [darkzodchi](https://x.com/zodchiii/status/2061040686330257656) — 2026-05-31: Quote tweet promoting @0x_rody's article on building Claude Code subagents in 15 minutes — each subagent is a markdown file with instructions and a prompt. Templates given for code reviewer, test writer, security scanner, and documentation generator. Engagement-framed but the underlying template approach is real.
+- [Livsun](https://x.com/l1vsun/status/2061876167687201243) — 2026-06-03: Off-topic trading engagement-farm: a neural net trained on years of tick data supposedly calling setups hours before the open (71% win rate, built for <$500), promoting a 'win every trade' listicle. Not AI/dev material.
 
 - [Mr. Buzzoni](https://x.com/polydao/status/2060964743402455212) — 2026-05-31: Engagement-farmed ALL-CAPS thread riffing on Karpathy's 'we're in the 1960s of AI' / software-3.0 framing to push the author's own listicle article '...These Are the Ones That Matter [Full GitHub Links]' cataloguing 32 Claude skills. Clickbait wrapper, but the underlying skills roundup may be worth a skim.
 
-- [Chesny](https://x.com/chesnyfcb/status/2060818732654481693) — 2026-05-31: Hype thread (translated from Spanish) about a Karpathy-inspired '3D knowledge galaxy' note-taking system that someone replicated — 378 input notes produced 1854 nodes and 3856 connections. Frames Notion/Roam/Obsidian as inferior. Underlying idea (LLM-augmented note-graph that surfaces hidden connections) is interesting but post is engagement-bait.
-
-- [Charly Wargnier](https://x.com/datachaz/status/2059649544854327466) — 2026-05-29: Charly Wargnier recommends Akshay Pachaar's 47-min walkthrough of Hermes Agent — a setup with self-evolving skills, three-tier memory, and GEPA optimization for autonomous agents running locally 24/7. Hype framing, but technique combo (self-evolving skills + tiered memory + GEPA) is current.
-
-- [Charly Wargnier](https://x.com/datachaz/status/2059909626532155482) — 2026-05-28: ALL CAPS hype thread about Microsoft's SkillOpt — an open-source optimizer loop that mutates agent skill prompts the same way you'd train a model: base model runs the task, optimizer rewrites the instructions, rejects edits that don't improve the benchmark. Claims SOTA over TextGrad and hand-crafted prompts; model-agnostic. Worth a look despite the framing.
-
 - [Livsun](https://x.com/l1vsun/status/2059707097583906917) — 2026-05-28: Off-topic trading content dressed as a discovery: pitches Markov-chain state machines (trending/ranging/reversing transition matrix + Kelly sizing) with a Renaissance Technologies '66% annual returns' framing, promoting a quant listicle. Engagement-farmed, not AI/dev material.
 
-- [Rahul](https://x.com/sairahul1/status/2059632149716942923) — 2026-05-28: Engagement-farmed thread claiming Anthropic released a 'blueprint' for running a company with Claude Code where one human is CEO and AIs are employees that divide tasks. Underlying linked article is 'How to Build a SaaS MVP in One Afternoon Using 7 AI Agents.' The pattern is real (multi-agent dev workflows) but the framing is hype.
+- [Rahul](https://x.com/sairahul1/status/2059632149716942923) — 2026-05-28: Hype-framed ('Anthropic just released the blueprint for a company run by Claude Code; work is dying') push for a listicle on building a SaaS MVP in an afternoon with 7 AI agents. Clickbait wrapper over a real multi-agent build walkthrough.
 
-- [darkzodchi](https://x.com/zodchiii/status/2059603103070945391) — 2026-05-27: darkzodchi promotes an X article on setting up Claude Code to catch, fix, and learn from its own mistakes automatically. Pitches it as Boris Cherny's (Claude Code creator) approach: stop fixing Claude's mistakes and make Claude fix them itself. Engagement-farm framing but the underlying setup may be worth a look.
-
-- [Movez](https://x.com/0xmovez/status/2059346354984612126) — 2026-05-27: Pointer to an Anthropic engineer's 37-min workshop on shipping production-ready AI agents, framed around 3 building blocks: brain (persona) + hands (environment) + sessions, with a server-side loop so refreshes don't break state. Engagement-farm framing — quote tweets a longer companion guide on multi-agent orchestration on Claude.
-
-- [Vaishnavi](https://x.com/_vmlops/status/2059207888393138556) — 2026-05-27: Microsoft open-sourced agent-governance-toolkit (github.com/microsoft/agent-governance-toolkit) — deterministic tool-call interception with a YAML policy engine (allow/deny/require human approval), zero-trust identity via SPIFFE/DID/mTLS, a 4-level execution sandbox with privilege rings, tamper-evident Merkle audit logs, and coverage of all OWASP Agentic Top 10 risks. Works with LangChain, CrewAI, AutoGen, OpenAI Agents SDK, Semantic Kernel, etc. Python/TS/Go/Rust/.NET. ALL CAPS engagement framing but the tool is real and substantive.
-
-- [darkzodchi](https://x.com/zodchiii/status/2058928613987160287) — 2026-05-25: Quote-tweet of his own thread citing Boris Cherny (Claude Code creator): 'Every night I have like a few thousand agents running' — monitored from his phone. Frames the next workflow wave as a team of agents in a chat app that @mention each other, delegate, and persist memory across days. Hype tone, but reflects the real Anthropic direction of multi-agent + persistent context.
-
-- [Hasan Toor](https://x.com/hasantoxr/status/2058863173462352313) — 2026-05-25: Hyped engagement-style post claiming an unnamed open-source engine 'replaces agent harness, queues, sandboxing, and APIs' with three primitives across TypeScript/Python/Rust. No tool name, no repo link in the visible post — typical bait pattern of teasing the link behind a follow-up. 15K+ stars claimed, Docker setup included.
-
-- [Shubham Saboo](https://x.com/saboo_shubham_/status/2058269167372153129) — 2026-05-24: Saboo pitches an open-source 'context engineering' tool that turns any codebase into an interactive graph an AI coding agent can query — Claude Code, Codex, and Antigravity compatible. Tool name not in the visible tweet (typical Saboo hype framing with link in a follow-up); flagged for follow-up review since the underlying concept (codebase-as-graph for agents) is genuinely useful.
+- [Atenov int.](https://x.com/atenov_d/status/2058868770257416239) — 2026-05-25: Highlights MoneyPrinterTurbo (13k+ stars): give a topic/keyword and it generates a script (via any LLM), pulls copyright-free footage, and adds subtitles/music/voiceover to output a finished short video; runs locally with Web UI/API/Docker/Colab. (Author's other posts are off-topic trading/politics.)
 
 - [shdu](https://x.com/shdu11546816/status/2057642195524419748) — 2026-05-22: Speculative macro thesis arguing AI agents will trigger a 'Deflationary Doom Loop' via the Paradox of Thrift: as chatbots become agents and high-income white-collar layoffs accelerate, displaced workers flood physical labor markets, wages collapse, discretionary spending collapses, deflation feeds itself. Doom-take economics, not analysis.
 
@@ -3160,7 +3140,7 @@
 
 - [Aakash Gupta](https://x.com/aakashg0/status/1967135994228166848) — 2025-09-15: Boosts another user's step-by-step roadmap for building your first AI agent, calling it 'gold.' Engagement-style framing; the substantive content lives in the referenced roadmap rather than the post itself.
 
-### General (98)
+### General (97)
 
 - [witcheer](https://x.com/witcheer/status/2076717324585898343) — 2026-07-14: witcheer crowdsourced and hand-tallied 250+ replies on how people run Hermes (Nous Research's open model), distilling community local-deployment setups into six summary stats.
 
@@ -3180,11 +3160,9 @@
 
 - [Jeff Tang](https://x.com/jefftangx/status/2064052420888363090) — 2026-06-09: Off-topic for the AI links collection — points to a 57-page Reddit-sourced Google Doc summarizing peptide human trials (BPC-157 et al). Health/biohacking, not AI/agents. Engagement-style 'Bookmark this' framing. Probably an accidental email-to-self.
 
-- [Elon Musk](https://x.com/elonmusk/status/2063401522327666828) — 2026-06-07: [Jeremy flagged: 'worth a look'] Endorses Eric Jorgenson's writeup of Elon's 'Magic Wand Number' and 'Idiot Index' — first-principles / 'physics thinking in the limit' mental models presented as universally applicable across industries.
+- [Elon Musk](https://x.com/elonmusk/status/2063401522327666828) — 2026-06-07: Elon Musk endorses first-principles 'physics thinking in the limit' — the 'Magic Wand Number' and 'Idiot Index' as universal cost-engineering mental models. Not AI/dev, but a useful thinking frame.
 
-- [Ihtesham Ali](https://x.com/ihtesham2005/status/2063297401344147719) — 2026-06-07: [Jeremy flagged: 'worth a read' — off-topic for AI] Story of 'The Art of Problem Solving' (AoPS) by Sandor Lehoczky and Richard Rusczyk, the 1993 training manual behind a generation of US Math Olympiad competitors. Math-education history rather than AI/tech.
-
-- [Chesny](https://x.com/chesnyfcb/status/2060818732654481693) — 2026-05-31: Hype thread (translated from Spanish) about a Karpathy-inspired '3D knowledge galaxy' note-taking system that someone replicated — 378 input notes produced 1854 nodes and 3856 connections. Frames Notion/Roam/Obsidian as inferior. Underlying idea (LLM-augmented note-graph that surfaces hidden connections) is interesting but post is engagement-bait.
+- [Ihtesham Ali](https://x.com/ihtesham2005/status/2063297401344147719) — 2026-06-07: A well-written essay on The Art of Problem Solving (AoPS): problem-solving is a transferable skill, not memorized formulas; teach the difference between a formula (what to compute) and a method (how to see), and treat confusion as where learning starts. Education/thinking, not AI/dev.
 
 - [Meenakshi Yadav](https://x.com/meenakshiyacs/status/2055104295641710718) — 2026-05-15: Generic agentic-AI architecture "cheat sheet" listing the standard layer stack: goal definition, orchestration, agents, tools, memory, monitoring, reliability (retries/HITL), and governance. No new ideas — useful as a one-slide overview to hand a junior or non-engineer.
 
@@ -3648,165 +3626,165 @@
   A default recipe for optimizing Agent = Model + Harness, 'training' both: (1) build v1 on a sensible base harness with task-specific prompting/tools, (2) harness-engineer against prod-like eval tasks (often enough on its own), (3) SFT on mined traces or synthetic data (good for distilling a cheaper model), (4) RL if you can design environments/rewards to push past SFT copying, (5) light harness engineering again on the trained model. Argues harness engineering will be the dominant optimization lever and most companies are still at steps 1-2; links the 'Anatomy of an Agent Harness' article.
 
 - **2026-06-07** | [Elon Musk](https://x.com/elonmusk/status/2063401522327666828) | management, general
-  [Jeremy flagged: 'worth a look'] Endorses Eric Jorgenson's writeup of Elon's 'Magic Wand Number' and 'Idiot Index' — first-principles / 'physics thinking in the limit' mental models presented as universally applicable across industries.
+  Elon Musk endorses first-principles 'physics thinking in the limit' — the 'Magic Wand Number' and 'Idiot Index' as universal cost-engineering mental models. Not AI/dev, but a useful thinking frame.
 
-- **2026-06-07** | [Hanako](https://x.com/hanakoxbt/status/2063305395687522702) | questionable, agent-design, claude-code
-  Engagement-styled summary of an Anthropic memory pattern: 'dreaming' agents that reopen your sessions after you log off to fact-check the primary agents, merge duplicates, and prune stale memory (up to 100 per session, ~95% of tokens cached). Links a Claude agent-team setup article (writer/reviewer/deployer).
+- **2026-06-07** | [Hanako](https://x.com/hanakoxbt/status/2063305395687522702) | agent-design, claude-code
+  Describes an Anthropic 'dreaming agents' memory pattern: a second set of agents that, after you log off, reopen every session, fact-check the first agents, merge duplicates and burn stale memory — up to 100 at once, ~95% cached so a full rewrite costs almost nothing. Points to a multi-agent code/review/deploy team guide.
 
 - **2026-06-07** | [Ihtesham Ali](https://x.com/ihtesham2005/status/2063297401344147719) | general
-  [Jeremy flagged: 'worth a read' — off-topic for AI] Story of 'The Art of Problem Solving' (AoPS) by Sandor Lehoczky and Richard Rusczyk, the 1993 training manual behind a generation of US Math Olympiad competitors. Math-education history rather than AI/tech.
+  A well-written essay on The Art of Problem Solving (AoPS): problem-solving is a transferable skill, not memorized formulas; teach the difference between a formula (what to compute) and a method (how to see), and treat confusion as where learning starts. Education/thinking, not AI/dev.
 
-- **2026-06-07** | [Sprytix](https://x.com/sprytixl/status/2063234969510588640) | questionable, agent-design, industry
-  Engagement-farmed claim that a Chinese professor runs a 170-agent dev team making 'every company decision' on Kimi K2.6 with one prompt; links an article on running 300 parallel agents. Hype framing, thin substance — flagging as questionable, with an industry/agent angle.
+- **2026-06-07** | [Sprytix](https://x.com/sprytixl/status/2063234969510588640) | questionable, agent-design
+  Engagement-farmed hype ('170 AI agents make every company decision') pushing a listicle on running 170–300 parallel agents with Kimi K2.6. Clickbait framing, but the underlying topic — massed parallel agents for research/ops — is real.
 
-- **2026-06-06** | [Dan Roy](https://x.com/roydanroy/status/2062917394356429092) | research, agent-design
-  Quotes Markus Buehler (MIT) on a breakthrough in self-evolving 'AI scientists' that move from search to principled discovery — an AI that perceives shifts in the search space itself without intervention. (Roy's own comment is a category-theory in-joke.)
+- **2026-06-06** | [Dan Roy](https://x.com/roydanroy/status/2062917394356429092) | research
+  Category-theory joke quoting Markus Buehler's claim of a breakthrough in self-evolving AI 'scientists' moving from search to principled discovery — where the search space itself changes and the AI perceives that shift without intervention.
 
-- **2026-06-06** | [海拉鲁编程客 (hylarucoder)](https://x.com/hylarucoder/status/2062881239900766292) | agent-design, industry
-  Recommends Peter Pang's (intuitiveml) article on building cloud agent infrastructure: most agent frameworks assume a desktop (one user/machine/process) and break in the cloud where filesystem, API-key handling, and orchestration must change.
+- **2026-06-06** | [海拉鲁编程客 (hylarucoder)](https://x.com/hylarucoder/status/2062881239900766292) | agent-design, dev-practices
+  Recommends Peter Pang's 'Building cloud agent infrastructure' — most agent frameworks assume a desktop (one user, one machine, local filesystem, keys in env vars); cloud agent infra changes those assumptions.
 
-- **2026-06-06** | [Cat Wu (Anthropic)](https://x.com/_catwu/status/2062408623565984209) | claude-code, agent-design, dev-practices, management
-  Anthropic's data team automated ~95% of business-analytics queries with Claude; blog post covers their approach to evals, ablations, and online validation when building data-analysis agents (claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude).
+- **2026-06-06** | [Cat Wu (Anthropic)](https://x.com/_catwu/status/2062408623565984209) | claude-code, agent-design, dev-practices
+  Anthropic's data team automated ~95% of business-analytics queries with Claude; the linked blog covers their approach to skills, data foundations, evals, ablations, and online validation for data-analysis agents.
 
-- **2026-06-04** | [hoeem](https://x.com/hooeem/status/2062443798647517197) | questionable, agent-design, dev-practices
-  Engagement-styled '100x cheaper' guide on cutting token waste in agentic orchestration loops; some practical substance on reducing repeated token spend in agent workflows behind the hype framing.
+- **2026-06-04** | [hoeem](https://x.com/hooeem/status/2062443798647517197) | agent-design, dev-practices
+  Points to a guide on making agentic workflows ~100x cheaper by fixing token waste in the orchestration loop.
 
 - **2026-06-04** | [さいぺ (cipepser)](https://x.com/cipepser/status/2062397559520502225) | agent-design, research
-  Recommends mem0's article 'State of Memory in Agent Harness' (mem0ai) — a well-organized survey of agent-memory papers and benchmarks plus how memory is implemented across coding agents (Cursor, Devin, Claude Code, Codex).
+  Praises mem0's 'State of Memory in Agent Harness' survey — well-organized coverage from field papers/benchmarks through memory implementations in each coding agent (Cursor, Devin, Claude Code, Codex).
 
-- **2026-06-04** | [Ole Lehmann](https://x.com/itsolelehmann/status/2061911202830401564) | agent-design, dev-practices
-  Workflow to turn saved X bookmarks into an agent-readable 'second brain': export bookmarks with the free twitter-web-exporter userscript or BookmarkSave extension, drop the file into an Obsidian/LLM-wiki folder, then point an agent (Claude Code, Codex) at it to convert each bookmark into a tagged markdown note you can query.
+- **2026-06-04** | [Ole Lehmann](https://x.com/itsolelehmann/status/2061911202830401564) | agent-design, dev-practices, skills-mcp
+  A ~10-minute recipe to turn your X bookmarks into an agent-queryable second brain: export bookmarks (twitter-web-exporter / BookmarkSave), drop the file into your LLM wiki or Obsidian vault, and have your agent convert each into a tagged markdown note with the original link — then query across the whole pile. Directly relevant to this link collection.
 
-- **2026-06-03** | [yv](https://x.com/yvbbrjdr/status/2061914706579984551) | research, industry
-  Recommends the MAI-Thinking-1 technical paper from Microsoft as a near-complete recipe for training a SOTA LLM (translated from Chinese). Paper PDF: microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf.
+- **2026-06-03** | [yv](https://x.com/yvbbrjdr/status/2061914706579984551) | research
+  Recommends the MAI-Thinking-1 technical paper as containing almost all the details for training a SOTA LLM (microsoft.ai PDF).
 
-- **2026-06-03** | [Thariq](https://x.com/trq212/status/2061907538741006796) | claude-code, agent-design
-  Thariq hypes the new dynamic workflows feature in Claude Code as the biggest upgrade since skills and subagents, plugging his deep-dive article (quote-tweeted from his own thread). Especially excited about workflows enabling non-coding tasks like research, security analysis, agent teams, and code review natively inside Claude Code.
+- **2026-06-03** | [Thariq](https://x.com/trq212/status/2061907538741006796) | claude-code, agent-design, skills-mcp
+  Announces dynamic workflows as the biggest Claude Code upgrade since skills and subagents — Claude writing its own task-specific harness on the fly — with excitement about the non-technical tasks it unlocks.
 
-- **2026-06-03** | [Thariq](https://x.com/trq212/status/2061907337154367865) | claude-code, agent-design, prompting
-  Anthropic article (linked from Thariq's tweet): 'A harness for every task: dynamic workflows in Claude Code'. Claude can now write its own harness on the fly, custom-built per task — the default Claude Code harness is coding-shaped but workflows let Claude solve research, security analysis, agent-team, and code-review tasks natively without external custom harnesses. Workflows are shareable/reusable. Caveat: they use more tokens and best practices are still developing.
+- **2026-06-03** | [Thariq](https://x.com/trq212/status/2061907337154367865) | claude-code, agent-design, skills-mcp
+  Full Anthropic article on dynamic workflows in Claude Code: Claude writes its own JavaScript harness to spawn/coordinate subagents (own models, own worktrees, resumable), countering agentic laziness, self-preferential bias and goal drift. Covers patterns (fan-out-and-synthesize, adversarial verification, tournament, loop-until-done), many use cases (migrations, deep research, triage, root-cause, evals, model routing), the 'ultracode' trigger, token budgets, and when NOT to use it.
 
-- **2026-06-03** | [Garry Tan](https://x.com/garrytan/status/2061878212213572083) | industry, agent-design
-  Garry Tan (YC) quote-tweets Factory's new model-routing feature with a controversial take: frontier labs will fight to make their AI harness the moat, but the consumer-best outcome is model capabilities flattening into commodity. Calls it a preview of the 'AI Harness Wars of 2027'. Factory Router claims 25% cost cuts at frontier performance.
+- **2026-06-03** | [Garry Tan](https://x.com/garrytan/status/2061878212213572083) | industry, agent-design, management
+  Garry Tan on model routing as strategy: frontier labs will want their harness to be the moat, but the consumer-best outcome is model capabilities flattening and commoditizing — 'a preview of the AI Harness Wars of 2027.' Cites Factory's auto model-router (claimed 25% cost cut at frontier performance).
 
 - **2026-06-03** | [Livsun](https://x.com/l1vsun/status/2061876167687201243) | questionable
-  [Engagement-farmed hype] Anonymous quant-trading flex: neural net trained on 11 years of tick data, 4200 data points/sec, 847K labeled setups, $40/mo server, claims 71% win rate over 90 days. No code, no paper, no repo — pure 'you're not losing because your analysis is wrong' bait. Skip.
+  Off-topic trading engagement-farm: a neural net trained on years of tick data supposedly calling setups hours before the open (71% win rate, built for <$500), promoting a 'win every trade' listicle. Not AI/dev material.
 
-- **2026-06-03** | [Tom Dörr](https://x.com/tom_doerr/status/2061674811122713013) | skills-mcp, dev-practices
-  FlowForge — a Claude skill that generates professional draw.io diagrams from natural language. Repo: github.com/wentong2022-arch/flowforge-skill. Drop-in skill for producing architecture/flow diagrams without manual diagramming.
+- **2026-06-03** | [Tom Dörr](https://x.com/tom_doerr/status/2061674811122713013) | skills-mcp, dev-practices, agent-design
+  Shares FlowForge, a Skill that generates professional draw.io diagrams from natural language (github.com/wentong2022-arch/flowforge-skill).
 
 ### May 2026
 
-- **2026-05-31** | [darkzodchi](https://x.com/zodchiii/status/2061040686330257656) | claude-code, agent-design, skills-mcp, questionable
-  Quote tweet promoting @0x_rody's article on building Claude Code subagents in 15 minutes — each subagent is a markdown file with instructions and a prompt. Templates given for code reviewer, test writer, security scanner, and documentation generator. Engagement-framed but the underlying template approach is real.
+- **2026-05-31** | [darkzodchi](https://x.com/zodchiii/status/2061040686330257656) | claude-code, agent-design, skills-mcp
+  Anthropic-engineer clip: build 5 focused agents (code review, tests, docs, security) in an afternoon, each ~15 minutes as a markdown file with instructions + prompt. Links a beginner subagent-building template.
 
 - **2026-05-31** | [Mr. Buzzoni](https://x.com/polydao/status/2060964743402455212) | claude-code, questionable, skills-mcp
   Engagement-farmed ALL-CAPS thread riffing on Karpathy's 'we're in the 1960s of AI' / software-3.0 framing to push the author's own listicle article '...These Are the Ones That Matter [Full GitHub Links]' cataloguing 32 Claude skills. Clickbait wrapper, but the underlying skills roundup may be worth a skim.
 
-- **2026-05-31** | [恒星](https://x.com/vintcessun/status/2060897802478293013) | skills-mcp, agent-design, research
-  DeepMind open-sourced Science Skills (github.com/google-deepmind/science-skills) — 30+ scientific databases like AlphaGenome and UniProt packaged as agent skills. Each skill breaks API interactions into clear instructions + scripts so agents step through them instead of hallucinating. Installs via one npx line, plugs into Antigravity.
+- **2026-05-31** | [恒星](https://x.com/vintcessun/status/2060897802478293013) | skills-mcp, research, agent-design
+  DeepMind packaged 30+ scientific databases (AlphaGenome, UniProt) into agent skills. The real bottleneck for science agents isn't model quality but knowing how to call databases correctly; skills turn each DB's API into clear instructions + scripts so agents execute step-by-step. One-line npx install (github.com/google-deepmind/science-skills).
 
-- **2026-05-31** | [Chesny](https://x.com/chesnyfcb/status/2060818732654481693) | general, questionable
-  Hype thread (translated from Spanish) about a Karpathy-inspired '3D knowledge galaxy' note-taking system that someone replicated — 378 input notes produced 1854 nodes and 3856 connections. Frames Notion/Roam/Obsidian as inferior. Underlying idea (LLM-augmented note-graph that surfaces hidden connections) is interesting but post is engagement-bait.
+- **2026-05-31** | [Chesny](https://x.com/chesnyfcb/status/2060818732654481693) | agent-design, prompting
+  Polemical pitch (translated) for a 3D 'knowledge galaxy' second brain à la Karpathy: 378 notes auto-generated ~1,854 nodes and ~3,856 connections, surfacing hidden links and missing connections. Pragmatic takeaway: start with an automated Obsidian + Claude vault that extracts content, finds connections, and writes daily reports.
 
 - **2026-05-29** | [0xSero](https://x.com/0xsero/status/2060128492247740640) | agent-design, dev-practices
   Recommends Peter Steinberger's 'Just Talk To It — the no-bs Way of Agentic Engineering' (steipete.me): after trying every elaborate workflow, the author keeps returning to a conversational, no-ceremony way of working with coding agents rather than heavy prompting scaffolds.
 
 - **2026-05-29** | [Rohit Ghumare](https://x.com/ghumare64/status/2060072412868235587) | agent-design, dev-practices
-  Long essay by Mike (linked) arguing that picking LangChain/LangGraph/OpenAI Agents SDK forces you to accept a bundled harness — turn state machine, provider routing, credential vault, policy engine, approval gates, budget tracker, hook fanout, context compaction, session trees, OpenTelemetry tracing — as one block. The case for composing them as workers on a shared bus with typed function contracts so teams stop rewriting harnesses from scratch.
+  Summarizes Mike Piccolo's argument that a harness isn't one thing but ~15 separate concerns (turn state machines, provider routing, credential vaults, policy engines, approval gates, budget trackers, context compaction, session trees, tracing) bundled by frameworks out of necessity. When each layer is a worker on a shared bus with a typed contract, 'build your own harness' means swapping a worker, not forking a framework.
 
 - **2026-05-29** | [Yohei](https://x.com/yoheinakajima/status/2060068279574843614) | agent-design, research
-  Yohei Nakajima (BabyAGI) published his first arxiv paper: 'The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems' (arxiv.org/abs/2605.21997). Case for agents that coordinate through persistent replayable state — log-centric architecture you can audit and fork.
+  Yohei Nakajima's 'log-centric agent architecture' and his first arXiv paper 'The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems' — the case for agents that coordinate through persistent, replayable state.
 
-- **2026-05-29** | [MacCallister Higgins](https://x.com/macjshiggins/status/2060045337679532174) | dev-practices, agent-design
-  MacCallister Higgins argues classical NASA systems engineering is the right model for developing code with LLMs — explicit requirements/specs docs make agents reliable at building, testing, and verifying complex codebases. Quote-tweet of an old joke about a model that regenerates the whole codebase from scratch each night against the requirements doc.
+- **2026-05-29** | [MacCallister Higgins](https://x.com/macjshiggins/status/2060045337679532174) | dev-practices, prompting
+  Argues classical NASA systems engineering is the ideal model for LLM-assisted coding — being explicit in docs makes it easier than ever to build, test, and verify complex codebases (planning modes only approximate it).
 
 - **2026-05-29** | [AVB](https://x.com/neural_avb/status/2060032255620431877) | research, dev-practices
-  Recommends a 45-min video on building synthetic datasets and training tiny ~100M-parameter local language models specialized for narrow tasks. Code, datasets, models, and eval harnesses linked in replies.
+  A 45-minute walkthrough on creating synthetic datasets and training tiny (~100M param) local language models specialized for narrow tasks; code, datasets, models and harnesses linked.
 
-- **2026-05-29** | [Charly Wargnier](https://x.com/datachaz/status/2059649544854327466) | agent-design, skills-mcp, questionable
-  Charly Wargnier recommends Akshay Pachaar's 47-min walkthrough of Hermes Agent — a setup with self-evolving skills, three-tier memory, and GEPA optimization for autonomous agents running locally 24/7. Hype framing, but technique combo (self-evolving skills + tiered memory + GEPA) is current.
+- **2026-05-29** | [Charly Wargnier](https://x.com/datachaz/status/2059649544854327466) | agent-design, skills-mcp
+  Recommends Akshay Pachaar's 47-minute 'Hermes Agent Masterclass' on building self-improving, 24/7 local autonomous agents — self-evolving skills, three-tier memory, GEPA optimization, scaling from 1 to 10 agents.
 
-- **2026-05-28** | [Charly Wargnier](https://x.com/datachaz/status/2059909626532155482) | skills-mcp, agent-design, prompting, questionable
-  ALL CAPS hype thread about Microsoft's SkillOpt — an open-source optimizer loop that mutates agent skill prompts the same way you'd train a model: base model runs the task, optimizer rewrites the instructions, rejects edits that don't improve the benchmark. Claims SOTA over TextGrad and hand-crafted prompts; model-agnostic. Worth a look despite the framing.
+- **2026-05-28** | [Charly Wargnier](https://x.com/datachaz/status/2059909626532155482) | skills-mcp, research, prompting
+  Microsoft open-sourced SkillOpt: optimize agent skills the way you train models — a base model runs tasks while an optimizer rewrites the instructions, keeping only edits that raise the benchmark. Claims SOTA over hand-crafted prompts and TextGrad, with no model lock-in since it learns procedural logic.
 
-- **2026-05-28** | [Muratcan Koylan](https://x.com/koylanai/status/2059753045060395240) | agent-design, research, skills-mcp
-  Muratcan Koylan: his open-source Agent Skills for Context Engineering project was cited in 'Agent Harness Engineering: A Survey' on OpenReview (authors from CMU/Yale/Johns Hopkins/Amazon). Survey reviewed 170+ open-source projects and pulled lessons from OpenAI/Anthropic/LangChain. Core thesis: real-world agent performance = model capability + harness quality, and harness improvements (tool formats, sandboxes, automated verification loops) deliver the biggest wins on long-horizon tasks. Paper at picrew.github.io/LLM-Harness/. (Jeremy flagged this one as 'orchestration'.)
+- **2026-05-28** | [Muratcan Koylan](https://x.com/koylanai/status/2059753045060395240) | research, agent-design
+  On the 'Agent Harness Engineering: A Survey' paper (CMU/Yale/JHU/Amazon; 170+ projects reviewed): real-world agent performance = model capability + harness quality, and for long-horizon production tasks the harness is the main bottleneck. Simple harness tweaks (tool formats, sandboxing, verification loops) yield big benchmark gains; the biggest wins come from turning production traces into regression tests + automated harness fixes.
 
-- **2026-05-28** | [Kyle Jeong](https://x.com/kylejeong/status/2059753008297394245) | agent-design, skills-mcp
-  Kyle Jeong on iterative AutoResearch applied to browser skills — their /autobrowse skill gets 90% faster and cheaper after iterative self-improvement. Links to article 'Autobrowse: The Mythos moment for Browser Agents is here' arguing browser agents have an amnesia problem (re-discover every site from scratch) and how iterating on a real run fixes the discovery tax.
+- **2026-05-28** | [Kyle Jeong](https://x.com/kylejeong/status/2059753008297394245) | agent-design, skills-mcp, dev-practices
+  Browser agents have an 'amnesia problem' — re-discovering each site from scratch every run. Autobrowse uses iterative AutoResearch to let an agent improve its own browser skills (/autobrowse), reportedly up to 90% faster and cheaper.
 
-- **2026-05-28** | [Jerry Liu](https://x.com/jerryjliu0/status/2059710330016817501) | dev-practices, industry
-  LlamaIndex shipped LiteParse v2 (github.com/run-llama/liteparse, blog at llamaindex.ai/blog/liteparse-v2-0-runs-everywhere) — a Rust rewrite of their PDF parser with native Python/Node packages and a WASM build for browser/edge. Claims fastest open-source model-free PDF parser, more accurate than pymupdf/pypdf/markitdown/pdftotext/pymupdf4llm, up to 100x faster, supports 50+ document types.
+- **2026-05-28** | [Jerry Liu](https://x.com/jerryjliu0/status/2059710330016817501) | dev-practices, skills-mcp
+  LiteParse v2: LlamaIndex's PDF parser rewritten in Rust with native Python/Node (and WASM) packages — claimed fastest and most accurate open-source model-free parser, up to 100x faster, 50+ document types, installable inside an AI agent.
 
 - **2026-05-28** | [Livsun](https://x.com/l1vsun/status/2059707097583906917) | questionable
   Off-topic trading content dressed as a discovery: pitches Markov-chain state machines (trending/ranging/reversing transition matrix + Kelly sizing) with a Renaissance Technologies '66% annual returns' framing, promoting a quant listicle. Engagement-farmed, not AI/dev material.
 
 - **2026-05-28** | [John Yeo](https://x.com/johnyeo_/status/2059688796728267261) | agent-design, dev-practices
-  John Yeo (Stripe-style billing) describes an internal AI agent that automatically queries logs and investigates support tickets. Linked article covers how it works for a stateful domain (billing) where API outcomes depend on customer history. (Jeremy flagged this as 'try it'.)
+  Describes an in-house agent that automatically queries logs and investigates support tickets — with billing state/history making each case stateful. Links a build writeup.
 
 - **2026-05-28** | [Dave Kline](https://x.com/dklineii/status/2059634666030637286) | management
-  Dave Kline on managing up: his biggest mistake as a manager was assuming his team's impact was visible to his boss and that he'd be 'more valuable if he just handled it.' Thread on what to do instead.
+  Management thread: 'the biggest mistake I made as a manager was not managing up' — assuming impact is obvious and the boss is plugged in — plus how to fix it.
 
 - **2026-05-28** | [Rahul](https://x.com/sairahul1/status/2059632149716942923) | claude-code, agent-design, questionable
-  Engagement-farmed thread claiming Anthropic released a 'blueprint' for running a company with Claude Code where one human is CEO and AIs are employees that divide tasks. Underlying linked article is 'How to Build a SaaS MVP in One Afternoon Using 7 AI Agents.' The pattern is real (multi-agent dev workflows) but the framing is hype.
+  Hype-framed ('Anthropic just released the blueprint for a company run by Claude Code; work is dying') push for a listicle on building a SaaS MVP in an afternoon with 7 AI agents. Clickbait wrapper over a real multi-agent build walkthrough.
 
 - **2026-05-28** | [Paul Iusztin](https://x.com/pauliusztin_/status/2059613089260003387) | agent-design, research
-  Paul Iusztin breaks down Neo4j's three-layer agent memory system inside one graph: (1) short-term — active conversation as a linear chain of ordered messages; (2) long-term — persistent knowledge graph of entities, orgs, locations, preferences, facts, and relationships with embeddings on nodes so agents traverse connected knowledge rather than retrieve isolated chunks; (3) extraction lineage tying them together.
+  Breakdown of Neo4j's graph-native agent memory: three connected layers in one graph — short-term (ordered message chain), long-term (entity/relationship knowledge graph with embeddings, traversed relationally), and reasoning memory (per-run trees of thoughts/tool-calls/decision paths). Typed edges (:MENTIONS/:INITIATED_BY/:TOUCHED) make provenance a one-hop query; 'the ontology is the real product.'
 
-- **2026-05-28** | [Avi Chawla](https://x.com/_avichawla/status/2059556157984006187) | agent-design, research, prompting
-  Avi Chawla explainer on RAG vs Graph RAG vs Agentic RAG. Standard RAG embeds chunks and retrieves by similarity — fine for direct lookups, fails on multi-hop queries. Graph RAG adds an LLM-extracted entity/relationship layer so retrieval traverses connections (e.g., 'checkout uses payments API' + 'payments API on cluster-3' + 'cluster-3 maintenance Friday' → answers 'will checkout be affected Friday?'). Agentic RAG adds an agent loop on top for planning multi-step retrieval.
+- **2026-05-28** | [Avi Chawla](https://x.com/_avichawla/status/2059556157984006187) | research, agent-design, dev-practices
+  Clear explainer of RAG vs Graph RAG vs Agentic RAG as solving different query types: standard RAG for single-hop factual lookups, Graph RAG (LLM-extracted entities/relationships + traversal) for multi-hop connections, Agentic RAG (an agent choosing tools/sources at query time) for dynamic multi-source tasks — plus binary quantization for 32x more memory-efficient vector search.
 
-- **2026-05-27** | [darkzodchi](https://x.com/zodchiii/status/2059603103070945391) | claude-code, agent-design, dev-practices, questionable
-  darkzodchi promotes an X article on setting up Claude Code to catch, fix, and learn from its own mistakes automatically. Pitches it as Boris Cherny's (Claude Code creator) approach: stop fixing Claude's mistakes and make Claude fix them itself. Engagement-farm framing but the underlying setup may be worth a look.
+- **2026-05-27** | [darkzodchi](https://x.com/zodchiii/status/2059603103070945391) | claude-code, dev-practices, agent-design
+  Boris Cherny (Claude Code): 'we stopped fixing Claude's mistakes; we made Claude fix them itself.' Links a copyable setup for having Claude Code catch, fix, and learn from its own errors instead of the write-code/tests-fail/explain loop.
 
 - **2026-05-27** | [Parag pawar](https://x.com/dharmikpawar13/status/2059571098484675051) | claude-code, prompting, dev-practices
-  Argues CLAUDE.md is not docs but the control layer for your AI agent — inconsistent outputs usually come from bad instruction architecture, not the model. Lays out a scope hierarchy (global = standards, project = stack/workflows, folder = local overrides) where the nearest scope wins, plus a WHAT/WHY framework for organizing context. Directly relevant since Jeremy's own AI links collection runs off a CLAUDE.md — he flagged this one with '(have a look)'.
+  Argues CLAUDE.md is a control layer, not a README: use scope hierarchy (global → project → folder, nearest wins) and a WHAT/WHY/HOW framing, favor specificity ('TypeScript strict mode, Zod validation' over 'production-ready code'), start with /init, keep it under ~500 lines, use hooks, and treat it as living infrastructure.
 
-- **2026-05-27** | [Rohit](https://x.com/rohit4verse/status/2059366212501696609) | agent-design, dev-practices, management
-  Rohit endorses a Databricks tech lead's 26-min talk at @aiDotEngineer on multi-agent coordination — argues agents break not because the model is dumb but because nothing coordinates them. 'One agent is a feature. Fifty is a distributed systems problem. Parallelism is cheap. Getting 300 agents to share one coherent brain is the entire game.' Quote tweets his own article on commanding 300 agents from one prompt.
+- **2026-05-27** | [Rohit](https://x.com/rohit4verse/status/2059366212501696609) | agent-design, dev-practices
+  A Databricks tech lead's talk on the unglamorous core of multi-agent: agents fail not because the model is dumb but because nothing coordinates them — one agent is a feature, fifty is a distributed-systems problem, and getting hundreds of agents to share one coherent brain is the whole game.
 
-- **2026-05-27** | [Theo - t3.gg](https://x.com/theo/status/2059352130289651925) | research, claude-code, dev-practices
-  Theo endorses DeepSWE, a new agentic coding benchmark released by Datacurve (Serena Ge). Claims it 'actually aligns with how it feels to use these models coding' — i.e. surfaces real divergence between top models where public leaderboards make them look close.
+- **2026-05-27** | [Theo - t3.gg](https://x.com/theo/status/2059352130289651925) | research, dev-practices, claude-code
+  Endorses DeepSWE, a new agentic-coding benchmark that reflects the realistic day-to-day developer experience — showing where top models actually diverge rather than clustering as they do on public leaderboards.
 
-- **2026-05-27** | [Movez](https://x.com/0xmovez/status/2059346354984612126) | agent-design, claude-code, management, questionable
-  Pointer to an Anthropic engineer's 37-min workshop on shipping production-ready AI agents, framed around 3 building blocks: brain (persona) + hands (environment) + sessions, with a server-side loop so refreshes don't break state. Engagement-farm framing — quote tweets a longer companion guide on multi-agent orchestration on Claude.
+- **2026-05-27** | [Movez](https://x.com/0xmovez/status/2059346354984612126) | claude-code, agent-design
+  An Anthropic engineer's 37-minute masterclass on shipping production agent teams: three building blocks (brain=persona, hands=environment, sessions), a server-side loop so nothing breaks on refresh, and why agents 'die before production.' Links a 10-step multi-agent build guide.
 
-- **2026-05-27** | [Binfeng Xu](https://x.com/billxbf/status/2059323616009838703) | agent-design, research, claude-code
-  Release of Polar, an Agent RL rollout infrastructure for real-world harnesses. Takes existing harnesses (Codex, Claude Code, OpenClaw, Hermes, or custom) directly as training environments with no code changes — find a problem, design the harness, train your own agent.
+- **2026-05-27** | [Binfeng Xu](https://x.com/billxbf/status/2059323616009838703) | research, agent-design, dev-practices
+  Release of Polar, Agent-RL rollout infrastructure that takes real-world harnesses (Codex, Claude Code, OpenClaw, Hermes, or your own) directly as training environments with no code change — find a problem, design the harness, train your own agents.
 
 - **2026-05-27** | [Tom Dörr](https://x.com/tom_doerr/status/2059316125049971017) | dev-practices, research
-  Pointer to a 500-hour AI infrastructure engineering curriculum on GitHub (github.com/ai-infra-curriculum/ai-infra-engineer-learning). Self-study path for ML/AI infra skills.
+  Shares a 500-hour AI infrastructure engineering curriculum (github.com/ai-infra-curriculum/ai-infra-engineer-learning).
 
-- **2026-05-27** | [刘醒](https://x.com/xingxingli45573/status/2059258034820706541) | skills-mcp, claude-code, dev-practices
-  Highlights 'Taste Skill' — a Skill (20.3k GitHub stars) that improves AI-generated frontend UIs: better layout, fonts, animations, and whitespace for a premium feel. Offers preset directions (universal premium, minimalist, brutalism) plus an audit-and-fix variant for upgrading existing pages, and three tunable parameters for layout/animation/info-density. Includes a companion image skill to generate mockups before coding.
+- **2026-05-27** | [刘醒](https://x.com/xingxingli45573/status/2059258034820706541) | skills-mcp, dev-practices
+  Taste Skill (~20.3k stars): an install that gives AI-generated front-ends better taste — improved layout, fonts, animations, whitespace — with design directions (premium, minimalist, brutalism), an audit-and-fix skill for old projects, a mockup-first image skill, and three tunable params (layout experimentation, animation richness, info density).
 
-- **2026-05-27** | [Vaishnavi](https://x.com/_vmlops/status/2059207888393138556) | agent-design, skills-mcp, dev-practices, questionable
-  Microsoft open-sourced agent-governance-toolkit (github.com/microsoft/agent-governance-toolkit) — deterministic tool-call interception with a YAML policy engine (allow/deny/require human approval), zero-trust identity via SPIFFE/DID/mTLS, a 4-level execution sandbox with privilege rings, tamper-evident Merkle audit logs, and coverage of all OWASP Agentic Top 10 risks. Works with LangChain, CrewAI, AutoGen, OpenAI Agents SDK, Semantic Kernel, etc. Python/TS/Go/Rust/.NET. ALL CAPS engagement framing but the tool is real and substantive.
+- **2026-05-27** | [Vaishnavi](https://x.com/_vmlops/status/2059207888393138556) | agent-design, dev-practices, skills-mcp
+  Microsoft open-sourced an Agent Governance Toolkit: deterministic interception of every tool call (denied actions structurally impossible), a YAML allow/deny/human-approval policy engine, zero-trust identity (SPIFFE/DID/mTLS), a 4-level execution sandbox, tamper-evident Merkle audit logs, coverage of all OWASP Agentic Top-10 risks, and support across major frameworks and languages — because 'follow the rules' in a prompt is a suggestion, not a guardrail.
 
-- **2026-05-25** | [darkzodchi](https://x.com/zodchiii/status/2058928613987160287) | agent-design, claude-code, questionable
-  Quote-tweet of his own thread citing Boris Cherny (Claude Code creator): 'Every night I have like a few thousand agents running' — monitored from his phone. Frames the next workflow wave as a team of agents in a chat app that @mention each other, delegate, and persist memory across days. Hype tone, but reflects the real Anthropic direction of multi-agent + persistent context.
+- **2026-05-25** | [darkzodchi](https://x.com/zodchiii/status/2058928613987160287) | claude-code, agent-design
+  Boris Cherny (Claude Code): 'every night I have a few thousand agents running,' monitored from his phone. Links a piece arguing the next wave is a team of agents in a real chat app where they @mention each other, delegate, and remember — versus one sandboxed, memoryless ChatGPT tab.
 
-- **2026-05-25** | [Atenov int.](https://x.com/atenov_d/status/2058868770257416239) | agent-design, industry
-  MoneyPrinterTurbo (github.com/harry0703/MoneyPrinterTurbo) — open-source faceless-video generator pipeline. You type a topic, it writes a script via Claude/DeepSeek/Gemini/GPT, pulls copyright-free HD footage, adds subtitles/voiceover/background music, and outputs finished shorts (9:16) or YouTube (16:9). 13K+ stars. Runs locally with Docker + Google Colab, includes Web UI and API. Pitched as the same pipeline used by faceless-channel creators making $6K-10K/month.
+- **2026-05-25** | [Atenov int.](https://x.com/atenov_d/status/2058868770257416239) | industry, dev-practices, questionable
+  Highlights MoneyPrinterTurbo (13k+ stars): give a topic/keyword and it generates a script (via any LLM), pulls copyright-free footage, and adds subtitles/music/voiceover to output a finished short video; runs locally with Web UI/API/Docker/Colab. (Author's other posts are off-topic trading/politics.)
 
-- **2026-05-25** | [Hasan Toor](https://x.com/hasantoxr/status/2058863173462352313) | questionable, agent-design
-  Hyped engagement-style post claiming an unnamed open-source engine 'replaces agent harness, queues, sandboxing, and APIs' with three primitives across TypeScript/Python/Rust. No tool name, no repo link in the visible post — typical bait pattern of teasing the link behind a follow-up. 15K+ stars claimed, Docker setup included.
+- **2026-05-25** | [Hasan Toor](https://x.com/hasantoxr/status/2058863173462352313) | agent-design, dev-practices
+  Engagement-framed tool share: an open-source engine claiming to replace agent harness, queues, sandboxing and APIs with three primitives (TypeScript/Python/Rust, Docker-ready, 15k+ stars).
 
-- **2026-05-25** | [Garry Tan](https://x.com/garrytan/status/2058378310254793013) | research, industry
-  Garry Tan reacting to Thinking Machines' May 11 'interaction models' announcement (thinkingmachines.ai/blog/interaction-models): claims he fine-tuned his own Qwen3.5-397B in a couple of hours that afternoon. Hyping fast multimodal as the unlock for 'mind-blowing personal AI.'
+- **2026-05-25** | [Garry Tan](https://x.com/garrytan/status/2058378310254793013) | industry, research
+  Garry Tan: fine-tuned his own Qwen3.5-397B in a couple hours via Thinking Machines, arguing fast usable multimodal will enable mind-blowing personal AI. Cites Thinking Machines' real-time 'interaction models.'
 
 - **2026-05-24** | [Dave Kline](https://x.com/dklineii/status/2058538089224519806) | management
-  Dave Kline on manager training: motivation is intrinsic, so you can't really 'motivate' a team — but you can demotivate them. Sets up a thread on the 5 most common leadership missteps that kill motivation. Standard management content, useful as a quick reference for new-manager conversations.
+  Management thread: you can't create lasting motivation (it's intrinsic), but you can demotivate — the 5 most common leadership missteps.
 
-- **2026-05-24** | [Shubham Saboo](https://x.com/saboo_shubham_/status/2058269167372153129) | agent-design, claude-code, dev-practices, questionable
-  Saboo pitches an open-source 'context engineering' tool that turns any codebase into an interactive graph an AI coding agent can query — Claude Code, Codex, and Antigravity compatible. Tool name not in the visible tweet (typical Saboo hype framing with link in a follow-up); flagged for follow-up review since the underlying concept (codebase-as-graph for agents) is genuinely useful.
+- **2026-05-24** | [Shubham Saboo](https://x.com/saboo_shubham_/status/2058269167372153129) | agent-design, dev-practices, skills-mcp
+  Positions codebase-as-queryable-graph as the real 'context engineering' for coding agents — turning any codebase into an interactive graph the agent can query; works with Claude Code, Codex, Antigravity; fully open-source.
 
-- **2026-05-24** | [Kevin Simback](https://x.com/ksimback/status/2058262328496554021) | agent-design, research
-  Kevin Simback's 'Hermes Agent Memory Guidebook' — long write-up cataloging memory systems for the Hermes agent ecosystem (hermesatlas.com), reviewing the proliferating tools and architecture choices. Useful as a meta-reference on agent memory patterns even if you don't use Hermes specifically.
+- **2026-05-24** | [Kevin Simback](https://x.com/ksimback/status/2058262328496554021) | agent-design, research, skills-mcp
+  A definitive guide to memory in the Hermes Agent, structured as a 3-layer stack: Layer 1 native (two always-injected markdown files MEMORY.md/USER.md plus a searchable SQLite session DB; the 80% consolidation 'rule' is a prompt instruction, not code), Layer 2 the pluggable MemoryProvider slot (8 official providers — Honcho, Mem0, Hindsight, Holographic, OpenViking, RetainDB, ByteRover, Supermemory — one at a time, each a different architectural bet), and Layer 3 community plug-ins (GBrain, Mnemosyne, etc.). Closes with how to pick and warning signs a memory layer is too heavy.
 
-- **2026-05-24** | [George Nurijanian](https://x.com/nurijanian/status/2058259663238631890) | skills-mcp, claude-code, dev-practices
-  George Nurijanian dropped Claude's chart output into Tufte's Visual Display of Quantitative Information and had Claude generate a Tufte-flavored data-viz skill — leaner, clearer charts. Repo: github.com/gnurio/tufte-vdqi-plugin. Quotes Anjney Midha telling AI labs to read Tufte before shipping charts. Directly actionable as a skill to evaluate.
+- **2026-05-24** | [George Nurijanian](https://x.com/nurijanian/status/2058259663238631890) | skills-mcp, dev-practices, prompting
+  Fixed Claude's 'chart junk' by handing it a book and having it spin up a Tufte-flavored visualization skill — producing leaner, clearer visuals (github.com/gnurio/tufte-vdqi-plugin).
 
 - **2026-05-24** | [Garry Tan](https://x.com/garrytan/status/2057946119725080878) | claude-code, agent-design, dev-practices
   Garry Tan linking a Forbes profile (forbes.com/sites/josipamajic/2026/04/12/the-yc-chief-who-codes-10000-lines-a-day-has-a-simple-secret) about his agentic coding workflow — '10,000 lines a day' framing. Tease tweet; the substance is in the article.
