@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-07-16T20:24:16Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-16T20:39:19Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-09** — [Kodus](https://kodus.io/self-hosted-ai-code-review/) — *now • Dev Practices • v1 enriched*  
@@ -21,7 +21,33 @@
   Ashpreet Bedi (Agno) shares a new post, Self-Driving Agent Infrastructure (ashpreetbedi.com/self-driving-agent-infrastructure), arguing AI/software engineering is the first domain to gain autonomous 'self-driving' capabilities, and walking through how he built his self-driving agent platform.
 
 ### Recurring this week
-*No concepts gained new evidence in the last 14 days. Run mechanical discovery or seed curated concepts to populate this section.*
+*Concepts with new evidence in the last 14 days. Ranked by recent post count.*
+
+- **vector / hybrid databases as agent-memory infrastructure** (43 posts, +1 this week)  
+  HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
+    - 2026-07-07 — [How To Prompt](https://x.com/howtoprompt__/status/2074122800961614184): How To Prompt (hype framing: "China has killed the vector database industry") flags Tencent's newly open-sourced TencentDB Agent Memory — lo…
+    - 2026-06-27 — [Brady Long](https://x.com/thisguyknowsai/status/2070445026233172314): Promo-styled writeup of MemPalace, an open-source local AI memory tool (49K stars). Instead of dumping everything into semantic search, it o…
+
+- **agent identity files (SOUL.md, CLAUDE.md, persona scaffolds)** (28 posts, +1 this week)  
+  Recurring pattern of giving an agent a persistent identity file that loads automatically and shapes behavior.
+    - 2026-07-13 — [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610): Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a …
+    - 2026-06-08 — [rari](https://x.com/0xwhrrari/status/2063244577482440978): Engagement-farmed but useful link dump of free AI-engineering learning resources (LangChain agent architecture, Anthropic's Claude Code 101 …
+
+- **agentic code review at production scale** (10 posts, +1 this week)  
+  Deterministic engineering handles what must never fail; LLM only does context reading and reasoning. Alibaba open-code-review.
+    - 2026-07-09 — [Kodus](https://kodus.io/self-hosted-ai-code-review/): Kodus (github.com/kodustech/kodus-ai) — open-source AGPLv3 self-hosted AI code review. The full PR-review pipeline (Kody agent) runs on your…
+    - 2026-06-11 — [Nainsi Dwivedi](https://x.com/nainsidwiv50980/status/2064947761779208476): Alibaba open-sourced 'open-code-review' (Apache-2.0), the internal AI code reviewer that's run on their codebase for ~2 years — 20,000+ engi…
+
+- **vibecode-to-production via agent skills** (8 posts, +1 this week)  
+  Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
+    - 2026-07-13 — [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610): Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a …
+    - 2026-06-29 — [Akshay](https://x.com/akshay_pachaar/status/2071509401224261823): Walkthrough of Google's Agents CLI as tooling for Karpathy's "agentic engineering" (spec design, eval loops, security). One setup command in…
+
+- **agent harness engineering** (8 posts, +1 this week)  
+  Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
+    - 2026-07-06 — [kaize](https://x.com/0x_kaize/status/2073743517155774641): kaize shares a 'Loop engineering' reading list, arguing 2026 agents are less about smarter prompts and more about longer runs — the real que…
+    - 2026-06-07 — [Rahul](https://x.com/sairahul1/status/2063609922667815064): Rahul follow-up to his Harness Engineering article: points to walkinglabs.github.io/learn-harness-engineering as 'the best site on the inter…
+
 
 ### Revisit from last month
 - **2024-06-18** — [curvedinf](https://github.com/curvedinf/dir-assistant) — *near-term • Agent Design • v1 enriched*  
