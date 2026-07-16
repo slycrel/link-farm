@@ -1,5 +1,106 @@
 [
   {
+    "date": "2026-07-16",
+    "author": "Aaron Levie",
+    "handle": "@levie",
+    "subject": "Post by Aaron Levie on X",
+    "url": "https://x.com/levie/status/2077526010753581156",
+    "summary": "Aaron Levie's notes from a dinner with enterprise IT leaders on agent adoption: change management is the biggest blocker (processes and data pipelines must be modernized to work with agents), embedding engineers directly into business functions as internal forward-deployed engineers dramatically accelerates successful agent rollouts, and the technical function is becoming more strategically important than ever.",
+    "topics": [
+      "management",
+      "agent-design",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Hosted a dinner last night with a group of IT leaders of large enterprises around agent adoption in the enterprise. Quick notes: (1) Change management remains one of the biggest topics for driving workflow transformation — most processes need to be upgraded to modern operating models to work with agents, a mix of technology, data, and human process change, with heavy emphasis on getting structured and unstructured data into a setup that works with agents. (2) IT teams are finding increasing success embedding full engineers into business functions (essentially internal forward-deployed engineers) to implement agents into internal workflows — the technical work is so substantial that having someone technical embedded early accelerates past months of failed experiments. (3) Consensus that the tech function is becoming more important than ever.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-16",
+    "author": "0xSero",
+    "handle": "@0xsero",
+    "subject": "Post by 0xSero on X",
+    "url": "https://x.com/0xsero/status/2077488957999173936",
+    "summary": "0xSero highlights Thinking Machines' launch of Inkling (thinkingmachines.ai/news/introducing-inkling), a 950B-parameter American open-weight model that reasons across text, image, and audio modalities with full weights released. Available for fine-tuning on Thinking Machines' Tinker platform and via the Inkling Playground.",
+    "topics": [
+      "research",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "62.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "New American open weight model, 950B params, huge one. All modalities in. Possibly the coolest demo I've ever seen\n\nToday, we are introducing Inkling. Inkling reasons efficiently across text, image, and audio modalities. We are making the full weights available. Available today for fine-tuning on Tinker. Play with it in the Inkling Playground.\n\nIntroducing Inkling — Thinking Machines",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-16",
+    "author": "Superman",
+    "handle": "@thesupermanmx",
+    "subject": "Post by Superman on X",
+    "url": "https://x.com/thesupermanmx/status/2077321341490090486",
+    "summary": "turbovec (github.com/RyanCodrai/turbovec) is a vector index built on TurboQuant, written in Rust with Python bindings — a performance-oriented approximate nearest-neighbor index relevant to embedding search and RAG pipelines.",
+    "topics": [
+      "research",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "7,028",
+    "notes": "",
+    "enriched": true,
+    "content": "Shared a link to turbovec — a vector index built on TurboQuant, written in Rust with Python bindings.\n\nGitHub - RyanCodrai/turbovec: A vector index built on TurboQuant, written in Rust with Python bindings.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-15",
+    "author": "Ashpreet Bedi",
+    "handle": "@ashpreetbedi",
+    "subject": "Post by Ashpreet Bedi on X",
+    "url": "https://x.com/ashpreetbedi/status/2077169299777531942",
+    "summary": "Ashpreet Bedi (Agno) shares a new post, Self-Driving Agent Infrastructure (ashpreetbedi.com/self-driving-agent-infrastructure), arguing AI/software engineering is the first domain to gain autonomous 'self-driving' capabilities, and walking through how he built his self-driving agent platform.",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "6,019",
+    "notes": "",
+    "enriched": true,
+    "content": "New Post: Self-Driving Agent Infrastructure. Software engineering is becoming autonomous, and it makes sense that AI engineering is the first to get self-driving capabilities. Learn how I build my self-driving agent platform.\n\nSelf-Driving Agent Infrastructure — Ashpreet Bedi",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-07-14",
     "author": "Alvaro Videla",
     "handle": "@old_sound",

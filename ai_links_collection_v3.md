@@ -1,24 +1,24 @@
 # AI Links Collection
-**Total Posts**: 698  
-**Date Range**: 2024-06-11 – 2026-07-14  
-**Enriched**: 697/698 (99%)
+**Total Posts**: 702  
+**Date Range**: 2024-06-11 – 2026-07-16  
+**Enriched**: 701/702 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-07-15T21:20:35Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-16T15:08:07Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-09** — [Kodus](https://kodus.io/self-hosted-ai-code-review/) — *now • Dev Practices • v1 enriched*  
   Kodus (github.com/kodustech/kodus-ai) — open-source AGPLv3 self-hosted AI code review. The full PR-review pipeline (Kody agent) runs on your own infrastructure with bring-your-own-LLM: it posts line-anchored inline comments covering logic/security/performance (or 'deep mode' with parallel bug/security/performance specialists), keeps source code, LLM calls, and audit trails inside your VPC, and supports GitHub Enterprise Server / GitLab Self-Managed / Bitbucket DC and air-gapped deploys. Jeremy flagged it to evaluate for work code reviews.
-- **2026-07-14** — [Alvaro Videla](https://x.com/old_sound/status/2076932819008242037) — *near-term • Research • 46.8K views • v1 enriched*  
-  Alvaro Videla released LeetLLM (github.com/videlalvaro/leet-llm) — a free, problem-based course of 48 lessons for building a small LLM inference engine on Apple Silicon in Swift and Metal, progressing from dot products and GEMV through attention and token generation.
-- **2026-07-14** — [JoePro](https://x.com/joepro/status/2076877282312954311) — *near-term • Skills & MCP • 53K views • v1 enriched*  
-  JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skill spec) engineered to produce distinctive, production-grade UIs that avoid recognizable AI-generated tropes — covering success criteria (signature visual identity, complete states, WCAG AA accessibility, token-driven design systems) and a context-gathering routine before writing code.
-- **2026-07-14** — [witcheer](https://x.com/witcheer/status/2076717324585898343) — *near-term • Research • 143.3K views • v1 enriched*  
-  witcheer crowdsourced and hand-tallied 250+ replies on how people run Hermes (Nous Research's open model), distilling community local-deployment setups into six summary stats.
-- **2026-07-14** — [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — *near-term • Agent Design • 33.9K views • v1 enriched*  
-  How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with a native AI agent, built-in MCP server, Cowork-style web+local-file agents, scheduled autopilot tasks, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), and local-model (Ollama) support — drivable from Claude Code or Gemini CLI. Engagement-framed but describes a real agentic-browser tool worth evaluating.
+- **2026-07-16** — [Aaron Levie](https://x.com/levie/status/2077526010753581156) — *near-term • Management • v1 enriched*  
+  Aaron Levie's notes from a dinner with enterprise IT leaders on agent adoption: change management is the biggest blocker (processes and data pipelines must be modernized to work with agents), embedding engineers directly into business functions as internal forward-deployed engineers dramatically accelerates successful agent rollouts, and the technical function is becoming more strategically important than ever.
+- **2026-07-16** — [0xSero](https://x.com/0xsero/status/2077488957999173936) — *near-term • Research • 62.3K views • v1 enriched*  
+  0xSero highlights Thinking Machines' launch of Inkling (thinkingmachines.ai/news/introducing-inkling), a 950B-parameter American open-weight model that reasons across text, image, and audio modalities with full weights released. Available for fine-tuning on Thinking Machines' Tinker platform and via the Inkling Playground.
+- **2026-07-16** — [Superman](https://x.com/thesupermanmx/status/2077321341490090486) — *near-term • Research • 7,028 views • v1 enriched*  
+  turbovec (github.com/RyanCodrai/turbovec) is a vector index built on TurboQuant, written in Rust with Python bindings — a performance-oriented approximate nearest-neighbor index relevant to embedding search and RAG pipelines.
+- **2026-07-15** — [Ashpreet Bedi](https://x.com/ashpreetbedi/status/2077169299777531942) — *near-term • Agent Design • 6,019 views • v1 enriched*  
+  Ashpreet Bedi (Agno) shares a new post, Self-Driving Agent Infrastructure (ashpreetbedi.com/self-driving-agent-infrastructure), arguing AI/software engineering is the first domain to gain autonomous 'self-driving' capabilities, and walking through how he built his self-driving agent platform.
 
 ### Recurring this week
 *No concepts gained new evidence in the last 14 days. Run mechanical discovery or seed curated concepts to populate this section.*
@@ -33,21 +33,25 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 370 | 53.0% |
-| claude-code | 174 | 24.9% |
-| dev-practices | 253 | 36.2% |
-| skills-mcp | 146 | 20.9% |
+| agent-design | 372 | 53.0% |
+| claude-code | 174 | 24.8% |
+| dev-practices | 255 | 36.3% |
+| skills-mcp | 146 | 20.8% |
 | prompting | 105 | 15.0% |
-| research | 153 | 21.9% |
-| industry | 93 | 13.3% |
-| management | 105 | 15.0% |
-| questionable | 114 | 16.3% |
-| general | 96 | 13.8% |
+| research | 155 | 22.1% |
+| industry | 95 | 13.5% |
+| management | 106 | 15.1% |
+| questionable | 114 | 16.2% |
+| general | 96 | 13.7% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-07-16 | Aaron Levie | management | Aaron Levie's notes from a dinner with enterprise IT leaders on agent... |
+| 2026-07-16 | 0xSero | research | 0xSero highlights Thinking Machines' launch of Inkling (thinkingmachin... |
+| 2026-07-16 | Superman | research | turbovec (github.com/RyanCodrai/turbovec) is a vector index built on T... |
+| 2026-07-15 | Ashpreet Bedi | agent-design | Ashpreet Bedi (Agno) shares a new post, Self-Driving Agent Infrastruct... |
 | 2026-07-14 | Alvaro Videla | research | Alvaro Videla released LeetLLM (github.com/videlalvaro/leet-llm) — a f... |
 | 2026-07-14 | JoePro | skills-mcp | JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skil... |
 | 2026-07-14 | witcheer | research | witcheer crowdsourced and hand-tallied 250+ replies on how people run... |
@@ -94,15 +98,15 @@
 | 2026-06-27 | Prajwal Tomar | agent-design | Pro tip framed around the author's promotional "Hermes Agent" article:... |
 | 2026-06-27 | Brady Long | skills-mcp | Promo-styled writeup of MemPalace, an open-source local AI memory tool... |
 | 2026-06-25 | Alex Lieberman | management | A "5 levels of work" framework for teaching high agency (credited to @... |
-| 2026-06-25 | Jason Weston | research | Paper announcement ("Autodata", arXiv:2606.25996): agentic data creati... |
-| 2026-06-25 | hoeem | questionable | Engagement-bait post hyping a quote-tweeted "how to escape the rat rac... |
-| 2026-06-25 | Nav Toor | skills-mcp | Listicle-styled promo for MinerU, an open-source document-extraction t... |
-| 2026-06-25 | Akshay | agent-design | Breakdown of "loop engineering" (opening on a Karpathy quote about rem... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (370)
+### Agent Design (372)
+
+- [Aaron Levie](https://x.com/levie/status/2077526010753581156) — 2026-07-16: Aaron Levie's notes from a dinner with enterprise IT leaders on agent adoption: change management is the biggest blocker (processes and data pipelines must be modernized to work with agents), embedding engineers directly into business functions as internal forward-deployed engineers dramatically accelerates successful agent rollouts, and the technical function is becoming more strategically important than ever.
+
+- [Ashpreet Bedi](https://x.com/ashpreetbedi/status/2077169299777531942) — 2026-07-15: Ashpreet Bedi (Agno) shares a new post, Self-Driving Agent Infrastructure (ashpreetbedi.com/self-driving-agent-infrastructure), arguing AI/software engineering is the first domain to gain autonomous 'self-driving' capabilities, and walking through how he built his self-driving agent platform.
 
 - [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — 2026-07-14: How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with a native AI agent, built-in MCP server, Cowork-style web+local-file agents, scheduled autopilot tasks, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), and local-model (Ollama) support — drivable from Claude Code or Gemini CLI. Engagement-framed but describes a real agentic-browser tool worth evaluating.
 
@@ -1194,7 +1198,11 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (253)
+### Dev Practices (255)
+
+- [Superman](https://x.com/thesupermanmx/status/2077321341490090486) — 2026-07-16: turbovec (github.com/RyanCodrai/turbovec) is a vector index built on TurboQuant, written in Rust with Python bindings — a performance-oriented approximate nearest-neighbor index relevant to embedding search and RAG pipelines.
+
+- [Ashpreet Bedi](https://x.com/ashpreetbedi/status/2077169299777531942) — 2026-07-15: Ashpreet Bedi (Agno) shares a new post, Self-Driving Agent Infrastructure (ashpreetbedi.com/self-driving-agent-infrastructure), arguing AI/software engineering is the first domain to gain autonomous 'self-driving' capabilities, and walking through how he built his self-driving agent platform.
 
 - [Alvaro Videla](https://x.com/old_sound/status/2076932819008242037) — 2026-07-14: Alvaro Videla released LeetLLM (github.com/videlalvaro/leet-llm) — a free, problem-based course of 48 lessons for building a small LLM inference engine on Apple Silicon in Swift and Metal, progressing from dot products and GEMV through attention and token generation.
 
@@ -2208,7 +2216,11 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-### Research (153)
+### Research (155)
+
+- [0xSero](https://x.com/0xsero/status/2077488957999173936) — 2026-07-16: 0xSero highlights Thinking Machines' launch of Inkling (thinkingmachines.ai/news/introducing-inkling), a 950B-parameter American open-weight model that reasons across text, image, and audio modalities with full weights released. Available for fine-tuning on Thinking Machines' Tinker platform and via the Inkling Playground.
+
+- [Superman](https://x.com/thesupermanmx/status/2077321341490090486) — 2026-07-16: turbovec (github.com/RyanCodrai/turbovec) is a vector index built on TurboQuant, written in Rust with Python bindings — a performance-oriented approximate nearest-neighbor index relevant to embedding search and RAG pipelines.
 
 - [Alvaro Videla](https://x.com/old_sound/status/2076932819008242037) — 2026-07-14: Alvaro Videla released LeetLLM (github.com/videlalvaro/leet-llm) — a free, problem-based course of 48 lessons for building a small LLM inference engine on Apple Silicon in Swift and Metal, progressing from dot products and GEMV through attention and token generation.
 
@@ -2516,7 +2528,11 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.
 
-### Industry (93)
+### Industry (95)
+
+- [Aaron Levie](https://x.com/levie/status/2077526010753581156) — 2026-07-16: Aaron Levie's notes from a dinner with enterprise IT leaders on agent adoption: change management is the biggest blocker (processes and data pipelines must be modernized to work with agents), embedding engineers directly into business functions as internal forward-deployed engineers dramatically accelerates successful agent rollouts, and the technical function is becoming more strategically important than ever.
+
+- [0xSero](https://x.com/0xsero/status/2077488957999173936) — 2026-07-16: 0xSero highlights Thinking Machines' launch of Inkling (thinkingmachines.ai/news/introducing-inkling), a 950B-parameter American open-weight model that reasons across text, image, and audio modalities with full weights released. Available for fine-tuning on Thinking Machines' Tinker platform and via the Inkling Playground.
 
 - [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — 2026-07-14: How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with a native AI agent, built-in MCP server, Cowork-style web+local-file agents, scheduled autopilot tasks, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), and local-model (Ollama) support — drivable from Claude Code or Gemini CLI. Engagement-framed but describes a real agentic-browser tool worth evaluating.
 
@@ -2704,7 +2720,9 @@
 
 - [Santiago](https://x.com/svpino/status/1881336934418755862) — 2025-01-21: Walks through GroundX, an open-source, self-hostable/air-gapped enterprise RAG system. Two services: Ingest (a pretrained vision model that 'understands' documents instead of feeding raw docs to the LLM) and Search (text+vector search with a fine-tuned re-ranker). Santiago's thesis: most teams need better ingestion, not better retrieval; includes a video demo and the free X-Ray inspection tool.
 
-### Management (105)
+### Management (106)
+
+- [Aaron Levie](https://x.com/levie/status/2077526010753581156) — 2026-07-16: Aaron Levie's notes from a dinner with enterprise IT leaders on agent adoption: change management is the biggest blocker (processes and data pipelines must be modernized to work with agents), embedding engineers directly into business functions as internal forward-deployed engineers dramatically accelerates successful agent rollouts, and the technical function is becoming more strategically important than ever.
 
 - [Ryan Carson](https://x.com/ryancarson/status/2074093250399330418) — 2026-07-07: Ryan Carson (@HelloUntangle) details orchestrating the largest/riskiest engineering program in the company's history with a single Fable parent orchestrator session: 834 files, prod data mutation, DB schema update, 31 PRs, started Friday->completed Monday, zero prod incidents. One parent Devin/Fable session planned the work, spawned ~40 child sessions to execute, enforced regression gates and backup checks between phases, and escalated only owner-level decisions (scope rulings, go/no-go on irreversible steps). Distills reusable program-management patterns for large migrations. In a follow-up he asks Cognition to let child Devin sessions pick their own model/mode independent of the parent.
 
@@ -3352,6 +3370,18 @@
 ## Full Chronological List
 
 ### Jul 2026
+
+- **2026-07-16** | [Aaron Levie](https://x.com/levie/status/2077526010753581156) | management, agent-design, industry
+  Aaron Levie's notes from a dinner with enterprise IT leaders on agent adoption: change management is the biggest blocker (processes and data pipelines must be modernized to work with agents), embedding engineers directly into business functions as internal forward-deployed engineers dramatically accelerates successful agent rollouts, and the technical function is becoming more strategically important than ever.
+
+- **2026-07-16** | [0xSero](https://x.com/0xsero/status/2077488957999173936) | research, industry
+  0xSero highlights Thinking Machines' launch of Inkling (thinkingmachines.ai/news/introducing-inkling), a 950B-parameter American open-weight model that reasons across text, image, and audio modalities with full weights released. Available for fine-tuning on Thinking Machines' Tinker platform and via the Inkling Playground.
+
+- **2026-07-16** | [Superman](https://x.com/thesupermanmx/status/2077321341490090486) | research, dev-practices
+  turbovec (github.com/RyanCodrai/turbovec) is a vector index built on TurboQuant, written in Rust with Python bindings — a performance-oriented approximate nearest-neighbor index relevant to embedding search and RAG pipelines.
+
+- **2026-07-15** | [Ashpreet Bedi](https://x.com/ashpreetbedi/status/2077169299777531942) | agent-design, dev-practices
+  Ashpreet Bedi (Agno) shares a new post, Self-Driving Agent Infrastructure (ashpreetbedi.com/self-driving-agent-infrastructure), arguing AI/software engineering is the first domain to gain autonomous 'self-driving' capabilities, and walking through how he built his self-driving agent platform.
 
 - **2026-07-14** | [Alvaro Videla](https://x.com/old_sound/status/2076932819008242037) | research, dev-practices
   Alvaro Videla released LeetLLM (github.com/videlalvaro/leet-llm) — a free, problem-based course of 48 lessons for building a small LLM inference engine on Apple Silicon in Swift and Metal, progressing from dot products and GEMV through attention and token generation.
