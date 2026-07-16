@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-07-16T20:39:19Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-16T20:58:14Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-09** — [Kodus](https://kodus.io/self-hosted-ai-code-review/) — *now • Dev Practices • v1 enriched*  
@@ -23,7 +23,12 @@
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **vector / hybrid databases as agent-memory infrastructure** (43 posts, +1 this week)  
+- **agent harness engineering** (39 posts, +5 this week)  
+  Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
+    - 2026-07-06 — [kaize](https://x.com/0x_kaize/status/2073743517155774641): kaize shares a 'Loop engineering' reading list, arguing 2026 agents are less about smarter prompts and more about longer runs — the real que…
+    - 2026-07-06 — [Anatoli Kopadze](https://x.com/anatolikopadze/status/2068328135611822149): Anatoli Kopadze's widely-viewed piece 'Loops explained: Claude, GPT, Mira and what actually works' argues most people use AI the slow way (t…
+
+- **vector / hybrid databases as agent-memory infrastructure** (46 posts, +1 this week)  
   HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
     - 2026-07-07 — [How To Prompt](https://x.com/howtoprompt__/status/2074122800961614184): How To Prompt (hype framing: "China has killed the vector database industry") flags Tencent's newly open-sourced TencentDB Agent Memory — lo…
     - 2026-06-27 — [Brady Long](https://x.com/thisguyknowsai/status/2070445026233172314): Promo-styled writeup of MemPalace, an open-source local AI memory tool (49K stars). Instead of dumping everything into semantic search, it o…
@@ -42,11 +47,6 @@
   Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
     - 2026-07-13 — [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610): Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a …
     - 2026-06-29 — [Akshay](https://x.com/akshay_pachaar/status/2071509401224261823): Walkthrough of Google's Agents CLI as tooling for Karpathy's "agentic engineering" (spec design, eval loops, security). One setup command in…
-
-- **agent harness engineering** (8 posts, +1 this week)  
-  Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
-    - 2026-07-06 — [kaize](https://x.com/0x_kaize/status/2073743517155774641): kaize shares a 'Loop engineering' reading list, arguing 2026 agents are less about smarter prompts and more about longer runs — the real que…
-    - 2026-06-07 — [Rahul](https://x.com/sairahul1/status/2063609922667815064): Rahul follow-up to his Harness Engineering article: points to walkinglabs.github.io/learn-harness-engineering as 'the best site on the inter…
 
 
 ### Revisit from last month
