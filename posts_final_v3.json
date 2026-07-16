@@ -9888,23 +9888,24 @@
     "handle": "@alphabatcher",
     "subject": "Post by Alpha Batcher on X",
     "url": "https://x.com/alphabatcher/status/2042606770816704643",
-    "summary": "Distills architectural principles for production AI agents by quoting Rohit's article reverse-engineering Claude Code's architecture (github.com/rohit4verse). Key patterns: async generators for streaming, parallel read-only tools vs serial write tools, tools executing during generation (not after), system prompt designed for cache efficiency, hierarchical context compaction cheapest-first, isolated worktree per sub-agent. Calls it the most detailed public breakdown of a production agent architecture available.",
+    "summary": "Architectural principles for a production AI agent: async generator (streaming-native) not a while loop, read-only tools parallel / write tools serial, tools execute during generation, cache-efficient system prompt, hierarchical compaction, every error has an in-loop recovery path, each sub-agent gets an isolated worktree + context. 'Infrastructure is the fourth layer - without it you have a demo not a product.' Links Rohit's 'harness from Claude Code leaks' article.",
     "topics": [
       "agent-design",
-      "claude-code",
       "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
     "views": "33.2K",
     "notes": "",
     "enriched": true,
-    "content": "Architectural principles for building your own AI agent: async generator instead of while loop (streaming native), tools classified as read-only run parallel/write tools run serial, tools execute during generation not after, system prompt designed for cache efficiency, hierarchical compaction cheapest first, every error has recovery path inside the loop, each sub-agent gets isolated worktree and context. Infrastructure is the fourth layer without it you have a demo not a product.",
-    "enrichment_status": "legacy-ok"
+    "content": "Alpha Batcher @alphabatcher. Architectural principles for building your own AI agent: async generator instead of a while loop (streaming-native), read-only tools run parallel / write tools serial, tools execute during generation not after, cache-efficient system prompt, hierarchical compaction (cheapest first), every error has a recovery path inside the loop, each sub-agent gets an isolated worktree + context. 'Infrastructure is the fourth layer - without it you have a demo not a product.' QUOTE ARTICLE: Rohit 'How I built harness for my agent using Claude Code leaks' (Claude Code source: 55 dirs, 331 modules). 36.6K views. agent-design, dev-practices.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-10",
@@ -9912,21 +9913,25 @@
     "handle": "@akshay_pachaar",
     "subject": "Post by Akshay 🚀 on X",
     "url": "https://x.com/akshay_pachaar/status/2042586319390674994",
-    "summary": "Comparison of how Anthropic, OpenAI, CrewAI, and LangChain approach the agent harness differently. The one agreement: the model is not the product, the infrastructure around it is. Anthropic bets on a deliberately thin \"dumb loop\" harness where the model makes all decisions. OpenAI takes a similar but slightly thicker approach. CrewAI and LangChain bet on heavier orchestration infrastructure. The core architectural question: as models get smarter, do you need less infrastructure or more?",
+    "summary": "What every big company thinks about the agent harness. Agreement: the model isn't the product, the infra around it is; disagreement: how thick. Anthropic bets thin ('dumb loop'); OpenAI Agents SDK code-first, slightly thicker; CrewAI adds a deterministic backbone; LangGraph bets on explicit graph control. Scaffolding metaphor - build infra designed to be removed as models improve, but remove carefully since models are trained WITH specific harnesses. Future-proofing test: a stronger model should improve performance without added harness complexity. LangChain changed only infra and jumped to rank 5 on TerminalBench 2.0. Links 'The Anatomy of an Agent Harness.'",
     "topics": [
-      "agent-design"
+      "agent-design",
+      "dev-practices",
+      "research"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
     "enriched": true,
-    "content": "What does every big company think about the agent harness? Anthropic, OpenAI, CrewAI, LangChain. They all build agents. They all wrap their models in infrastructure to make them useful. They each call it the harness. But they agree on one thing. And disagree on everything else. The agreement: the model is not the product. The infrastructure around the model is. The disagreement: how much of that infrastructure should exist.",
-    "enrichment_status": "legacy-ok"
+    "content": "Akshay @akshay_pachaar. What every big company thinks about the agent harness. Agreement: the model isn't the product, the infrastructure around it is. Disagreement: how thick that infra should be. Anthropic bets on the model (deliberately thin 'dumb loop'); OpenAI Agents SDK is code-first, slightly thicker (priority stacks, orchestration modes, handoffs); CrewAI adds a deterministic backbone (Flows for routing/validation, Crews for autonomy); LangGraph bets on explicit control (every decision a graph node/edge). Scaffolding metaphor: temporary infra to be removed as models improve (Manus rebuilt 5x removing complexity; Anthropic deletes planning steps as new models handle them) - but models are trained WITH specific harnesses, so changing scaffolding drops performance. Future-proofing test: dropping in a stronger model should improve performance without added harness complexity. LangChain changed only infra (same model) and jumped from outside top 30 to rank 5 on TerminalBench 2.0. QUOTE ARTICLE: 'The Anatomy of an Agent Harness.' 182.5K views. agent-design, dev-practices, research.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-10",
@@ -9934,22 +9939,25 @@
     "handle": "@_vmlops",
     "subject": "Post by Vaishnavi on X",
     "url": "https://x.com/_vmlops/status/2042486942802321552",
-    "summary": "Google open-sourced MCP Toolbox (github.com/googleapis/mcp-toolbox) — an MCP server that gives AI agents direct access to 20+ enterprise databases (Postgres, MySQL, MongoDB, BigQuery, Redis, Elasticsearch, Spanner, Snowflake) in plain English. Built-in connection pooling, auth, and OpenTelemetry. Works with LangChain, LlamaIndex, Genkit, and any MCP-compatible client. Less than 10 lines of code to integrate.",
+    "summary": "Google's MCP Toolbox - open-source MCP server giving agents plain-English access to 20+ databases (Postgres, MySQL, MongoDB, BigQuery, Redis, Elasticsearch, Spanner, Snowflake) with built-in pooling, auth, and OpenTelemetry; works with LangChain/LlamaIndex/Genkit/any MCP client; <10 lines to plug in.",
     "topics": [
       "skills-mcp",
+      "dev-practices",
       "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
     "views": "30K",
     "notes": "",
     "enriched": true,
-    "content": "GOOGLE JUST MADE IT DEAD SIMPLE TO CONNECT AI AGENTS TO ANY DATABASE. postgres, mysql, mongodb, bigquery, redis, elasticsearch, spanner, snowflake. 20+ databases supported. mcp toolbox is an open source mcp server that gives your ai agents direct access to your enterprise databases in plain english.",
-    "enrichment_status": "legacy-ok"
+    "content": "Vaishnavi @_vmlops. Google's MCP Toolbox - open-source MCP server giving AI agents direct plain-English access to 20+ databases (Postgres, MySQL, MongoDB, BigQuery, Redis, Elasticsearch, Spanner, Snowflake). No custom connectors/boilerplate; built-in connection pooling, auth, OpenTelemetry; works with LangChain, LlamaIndex, Genkit, any MCP client; <10 lines to plug in. github.com/googleapis/mcp-toolbox. 64.3K views. skills-mcp, dev-practices, agent-design.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-10",
@@ -9957,22 +9965,25 @@
     "handle": "@realsigridjin",
     "subject": "Post by Sigrid Jin 🌈🙏 on X",
     "url": "https://x.com/realsigridjin/status/2042440330503733343",
-    "summary": "Summary of \"Better Harness\" paper on using evals as a flywheel for agent improvement. Key insight: evals are the new training data — instead of updating weights, you update the agent harness. Warns that agents reward-hack evals, so you need strict train/test splits. Quality over quantity in eval design. The flywheel: mine prod traces for failures, turn into evals, auto-tweak prompts/tools, validate, repeat.",
+    "summary": "On Viv's 'Better Harness' recipe: evals are the new training data (update the harness, not weights); agents reward-hack evals, so use strict train/test splits and holdout sets; quality over quantity of evals; the loop = mine prod traces for failures -> turn into evals -> auto-tweak prompts/tools -> validate -> more usage -> more evals -> self-improving agents.",
     "topics": [
       "agent-design",
+      "research",
       "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
     "enriched": true,
-    "content": "Evals are the new training data. Instead of updating weights, you are updating the agent harness. Problem is agents are famous cheaters. They will reward-hack your evals and overfit just to make the score go up. Solution is treat evals like real ML. You need strict train/test splits and holdout sets to force actual generalization. Quality over quantity.",
-    "enrichment_status": "legacy-ok"
+    "content": "Sigrid Jin @realsigridjin. On Viv's 'Better Harness' recipe: evals are the new training data (update the harness, not weights); agents reward-hack/overfit evals, so treat evals like real ML with strict train/test splits and holdout sets; quality over quantity (a few hand-curated highly-tagged evals beat thousands of noisy ones); the better-harness loop = mine prod traces for failures -> turn into evals -> auto-tweak prompts & tools -> validate; flywheel = more prod usage -> more failure traces -> more evals -> self-improving agents. QUOTE ARTICLE: Viv @Vtrivedy10 'Better Harness: A Recipe for Harness Hill-Climbing with Evals.' 21.9K views. agent-design, research, dev-practices.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-10",
@@ -9980,22 +9991,25 @@
     "handle": "@teknium",
     "subject": "Post by Teknium (e/λ) on X",
     "url": "https://x.com/teknium/status/2042396576245825543",
-    "summary": "Teknium claims Anthropic copied their \"notify when done\" feature from Hermes Agent (github.com/NousResearch/hermes-agent/pull/5779) — lets background processes notify the agent when finished instead of polling, so the agent can work on other tasks in the same session. Points to Claude Code's new Monitor tool as the equivalent. Makes the case that open source moves faster than closed companies.",
+    "summary": "Hermes added notify-when-done so a spawned background process queues a message back to the agent when finished (work on other things instead of polling). Quotes Claude's new Monitor tool doing the same. 'Open source can move faster than any closed company.'",
     "topics": [
       "agent-design",
+      "dev-practices",
       "claude-code"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "61.1K",
     "notes": "",
     "enriched": true,
-    "content": "Even anthropic is copying from us now, we must be doing something right! 3 days ago we added notify when done, so the agent does not have to poll the background process(es) that it spawns, and instead when it finishes it can queue up a new message for the agent. Work on other things in the same session while it works! Open Source can move faster than any closed centralized company.",
-    "enrichment_status": "legacy-ok"
+    "content": "Teknium @Teknium. 'Even Anthropic is copying from us' - 3 days ago Hermes added notify-when-done so a spawned background process queues a message back to the agent when finished (work on other things in the same session instead of polling). QUOTE: Noah Zweben announcing Claude's Monitor tool (background scripts that wake the agent when needed - follow logs for errors, poll PRs, big token saver). PR linked. 72.4K views. agent-design, dev-practices, claude-code.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-10",
@@ -10003,22 +10017,25 @@
     "handle": "@bniwael",
     "subject": "Post by ProxySoul on X",
     "url": "https://x.com/bniwael/status/2042364421373121018",
-    "summary": "SoulForge — an open-source AI coding agent that builds a live graph of the codebase before the agent reads any code. Uses real LSP via embedded Neovim for go-to-definition, references, and call hierarchy instead of regex hacks. Features multi-tab with cross-tab coordination where agents share context through a real-time bus, and supports mixing models (Opus, Gemini, Haiku, Ollama). Claims 1.8x faster and 2.1x cheaper than standard approaches.",
+    "summary": "SoulForge: '1.8x faster, 2.1x cheaper, same model' by building a live importance-ranked graph of your codebase; real LSP via embedded Neovim (go-to-def, references, call hierarchy, type info), surgical reads, multi-edits, multi-tab cross-tab coordination via a real-time bus, per-tab/per-agent model routing. 30+ languages, 20+ providers, $0 compaction. Proof: same Opus 4.6 bug fix 6m22s vs 11m18s, $1.70 vs $3.52.",
     "topics": [
       "agent-design",
-      "dev-practices"
+      "dev-practices",
+      "skills-mcp"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
     "enriched": true,
-    "content": "1.8x faster. 2.1x cheaper. Same model. Same repo. Same bug. Everyone fighting over Claude Code vs Codex vs OpenCode. Meanwhile their tokens are burning because the agent is grep-ing the entire repo and praying on every prompt, with 0 architectural knowledge of the codebase. SoulForge builds a live graph of your codebase. Every file, symbol, and dependency ranked by importance before the agent reads a single line. Real LSP powered by a real embedded Neovim editor.",
-    "enrichment_status": "legacy-ok"
+    "content": "ProxySoul @BniWael. SoulForge: '1.8x faster, 2.1x cheaper, same model' by building a live graph of your codebase (files/symbols/dependencies ranked by importance before the agent reads a line). Real LSP via embedded Neovim (go-to-definition, references, call hierarchy, type info), surgical reads, multi-edits, multi-tab with cross-tab coordination via a real-time bus, per-tab/per-agent model routing (Opus brain, Gemini research, Haiku edits, Ollama local). 30+ languages, 20+ providers, $0 compaction, skills, MCP. Proof: same Opus 4.6 bug fix 6m22s vs 11m18s, $1.70 vs $3.52. github.com/ProxySoul/soulforge. 76.2K views. agent-design, dev-practices, skills-mcp.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-10",
@@ -10026,9 +10043,10 @@
     "handle": "@recogard",
     "subject": "Post by Recogard on X",
     "url": "https://x.com/recogard/status/2042356576032358505",
-    "summary": "36 GB dataset of 72 million Polymarket trades available free on GitHub for prediction market analysis. Includes tools to build trading strategies from historical market data — analyze price behavior before resolution, compare category volatility, and find repeating patterns.",
+    "summary": "36GB free dataset of 72M+ Polymarket trades on GitHub plus a backtesting simulator: analyze historical prediction-market behavior, define a strategy, and backtest it across all past markets for accuracy/PnL/risk. Off-topic (prediction-market trading), not AI/dev core.",
     "topics": [
-      "general"
+      "questionable",
+      "research"
     ],
     "audience": [
       "me"
@@ -10038,8 +10056,10 @@
     "views": "",
     "notes": "",
     "enriched": true,
-    "content": "36 GB of real analytical data based on over 72 million Polymarket trades is available on GitHub and its absolutely free. This is the largest public prediction market dataset I have ever found.",
-    "enrichment_status": "legacy-ok"
+    "content": "Recogard @recogard. 36GB free dataset of 72M+ Polymarket trades on GitHub plus a backtesting simulator: analyze historical prediction-market behavior (pre-resolution price moves, category volatility, patterns), define a strategy, and backtest it across all past markets for accuracy/PnL/risk without real money. Repos: jon-becker/prediction-market-analysis, evan-kolberg/prediction-market-backtesting. Off-topic (prediction-market trading), not AI/dev core. 63.7K views. questionable, research.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-10",
@@ -10047,22 +10067,25 @@
     "handle": "@aakashgupta",
     "subject": "Post by Aakash Gupta on X",
     "url": "https://x.com/aakashgupta/status/2042334495664455848",
-    "summary": "The \"advisor pattern\" for AI agent cost optimization: run Sonnet for routine execution ($3/$15 per MTok) and fire a tool call to Opus only for genuine decision points. Both models share full context, eliminating the fragmentation problem in multi-model architectures. Claude Code has been doing this internally. Practical architecture for any company hitting the cost wall with frontier models in production agent loops.",
+    "summary": "The 'advisor pattern' for agent cost: 90% of turns are routine, so run Sonnet every turn and fire a tool call to Opus only at genuine decision points; Opus reads the full shared context and returns strategic advice, Sonnet continues. Shared context avoids fragmentation. Claude Code ran it for months - same quality, 60-80% lower cost - now a Claude Platform API primitive (Opus advisor + Sonnet/Haiku executor).",
     "topics": [
+      "claude-code",
       "agent-design",
-      "claude-code"
+      "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
     "views": "72.9K",
     "notes": "",
     "enriched": true,
-    "content": "This diagram is the entire AI agent cost problem solved in one architecture. Every company building agents in production hits the same wall. You need frontier-model reasoning for the hard decisions, but 90% of agent turns are routine execution: reading files, calling APIs, writing boilerplate. Paying Opus prices for those turns is like hiring a surgeon to take your blood pressure. The advisor pattern splits the loop. Sonnet runs every turn at $3/$15 per MTok. When the agent hits a genuine decision point, it fires a tool call to Opus. Opus reads the full shared context, sends back strategic advice, and Sonnet continues executing. The shared context is what makes this work.",
-    "enrichment_status": "legacy-ok"
+    "content": "Aakash Gupta @aakashgupta. The 'advisor pattern' solves the agent cost problem: 90% of turns are routine execution, so run Sonnet ($3/$15 per MTok) every turn and fire a tool call to Opus only at genuine decision points; Opus reads the full shared context and returns strategic advice, Sonnet continues. Shared context avoids fragmentation (both models see the same memory). Claude Code ran this quietly for months - same quality, 60-80% lower inference cost - now an API primitive. QUOTE: Claude - advisor strategy on the Claude Platform (Opus advisor + Sonnet/Haiku executor). 83.9K views. claude-code, agent-design, dev-practices.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-10",
@@ -10070,24 +10093,26 @@
     "handle": "@sebgoddijn",
     "subject": "Post by Seb Goddijn on X",
     "url": "https://x.com/sebgoddijn/status/2042286523001737545",
-    "summary": "Ramp hit 99% AI adoption company-wide but found most employees stuck in chat windows while power users ran laps. They built \"Glass\" — an internal AI productivity suite on Anthropic's Claude Agent SDK — reaching 700 DAUs in one month. Philosophy: raise the floor for all employees rather than lowering the ceiling for power users.",
+    "summary": "'We hit 99% AI adoption at Ramp but it wasn't enough' - most people stuck in a chat window while power users ran laps. Built Glass, an AI productivity suite on Anthropic's Claude Agent SDK, 700 DAUs in a month. 'We don't lower the ceiling, we raise the floor.' Links 'We Built Every Employee at Ramp Their Own AI Coworker - The Models are Good Enough, The Harness Isn't.'",
     "topics": [
       "management",
-      "claude-code",
-      "agent-design"
+      "agent-design",
+      "industry"
     ],
     "audience": [
-      "me",
       "dev-team",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
     "views": "120.8K",
     "notes": "",
     "enriched": true,
-    "content": "We hit 99% AI adoption at @tryramp but it wasn't enough. Most people were still stuck in a chat window while power users ran laps around them, and teaching everyone how to use the terminal wasn't going to scale. So we built Glass: our own AI productivity suite on Anthropic's Claude Agent SDK with 700 daily active users in one month. We don't believe in lowering the ceiling. We believe in raising the floor.",
-    "enrichment_status": "legacy-ok"
+    "content": "Seb Goddijn @sebgoddijn. 'We hit 99% AI adoption at Ramp but it wasn't enough' - most people stuck in a chat window while power users ran laps; teaching everyone the terminal doesn't scale. Built Glass, an AI productivity suite on Anthropic's Claude Agent SDK, 700 DAUs in one month. 'We don't lower the ceiling, we raise the floor.' QUOTE ARTICLE: 'We Built Every Employee at Ramp Their Own AI Coworker - The Models are Good Enough, The Harness Isn't.' 162.8K views. management, agent-design, industry.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-10",
@@ -10095,9 +10120,10 @@
     "handle": "@svpino",
     "subject": "Post by Santiago on X",
     "url": "https://x.com/svpino/status/2042275938390639069",
-    "summary": "Engramme (engramme.com) — a startup building \"Large Memory Models,\" a new architecture designed specifically for how human memory works. Instead of RAG or vector search, it's a different paradigm for memory retrieval. Founded by researchers with 160+ publications in Nature and ICLR who closed their Harvard lab to build this.",
+    "summary": "Large Memory Models - a new architecture designed for how human memory works (not RAG/vector search). Founders have 160+ Nature/ICLR publications and closed their Harvard lab to build it. Quotes Gabriel Kreiman introducing Engramme ('remember everything' - perfect/infinite memory with no searching/prompting).",
     "topics": [
       "research",
+      "agent-design",
       "industry"
     ],
     "audience": [
@@ -10108,8 +10134,10 @@
     "views": "49.9K",
     "notes": "",
     "enriched": true,
-    "content": "These guys built a completely new architecture: Large Memory Models. This is designed specifically for how human memory works. Instead of RAG or vector search, this is a different paradigm. Their founders have 160+ publications in Nature and ICLR, and closed their Harvard lab to build this.",
-    "enrichment_status": "legacy-ok"
+    "content": "Santiago @svpino. Large Memory Models - a new architecture designed for how human memory works (not RAG or vector search), a different paradigm. Founders have 160+ Nature/ICLR publications and closed their Harvard lab to build it. QUOTE: Gabriel Kreiman introducing Engramme - 'remember everything' (emails, people, conversations), perfect/infinite memory that comes to you with no searching/prompting. engramme.com. 53.2K views. research, agent-design, industry.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-10",
@@ -10117,22 +10145,25 @@
     "handle": "@av1dlive",
     "subject": "Post by Avid on X",
     "url": "https://x.com/av1dlive/status/2042172428127002906",
-    "summary": "Recommends a 16-minute talk by two Anthropic engineers who built Claude Skills, paired with a comprehensive guide by @eng_khairallah1 on building Claude Skills that actually work. Notes that most of the 80,000+ skills in the community registry are poorly built — this guide covers what separates the good from the bad.",
+    "summary": "A 16-min talk by two Anthropic engineers who built Claude Skills on how to build them right. Links Khairallah's 'How to Build Claude Skills That Actually Work' (80,000+ registry skills, most terrible - fire on wrong requests, inconsistent output, break on edge cases).",
     "topics": [
       "skills-mcp",
-      "claude-code"
+      "agent-design",
+      "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
     "views": "433.5K",
     "notes": "",
     "enriched": true,
-    "content": "This 16-minute talk by two Anthropic engineers who built Claude Skills will teach you more about building them right than most developers figure out on their own in months. Bookmark this & watch, no matter what. Then read the guide below by @eng_khairallah1. Quote: How to Build Claude Skills That Actually Work — The Complete Guide. There are 80,000+ Claude Skills in the community registry. Most of them are terrible.",
-    "enrichment_status": "legacy-ok"
+    "content": "Avid @Av1dlive. A 16-min talk by two Anthropic engineers who built Claude Skills teaches how to build them right. QUOTE ARTICLE: Khairallah @eng_khairallah1 'How to Build Claude Skills That Actually Work - The Complete Guide' - 80,000+ skills in the registry, most terrible (fire on wrong requests, inconsistent output, break on edge cases). 771K views. skills-mcp, agent-design, dev-practices.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-09",
@@ -10140,23 +10171,25 @@
     "handle": "@carsonfarmer",
     "subject": "Post by carsonfarmer on X",
     "url": "https://x.com/carsonfarmer/status/2042038527639068763",
-    "summary": "Points out that Anthropic's new managed agents API closely mirrors the Letta/MemGPT API that's been open-source for a year — including read-only memory blocks and memory block sharing. Quoting Sarah Wooders (Letta co-creator) who calls it closed-source with provider lock-in.",
+    "summary": "'So many AI-agent innovations are just Letta/MemGPT rediscovered.' Quotes Sarah Wooders: the new Anthropic managed-agents API is basically the year-old Letta API but closed-source with provider lock-in (even read-only memory blocks and memory-block sharing, long unique to Letta).",
     "topics": [
       "agent-design",
-      "claude-code",
-      "industry"
+      "industry",
+      "research"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "6,204",
     "notes": "",
     "enriched": true,
-    "content": "No joke, so many innovations in the ai agent space are just letta/memgpt rediscovered. Quote from Sarah Wooders: The new Anthropic managed agents API is basically the Letta API that we've had since a year ago, but closed source and with provider lock-in. They even have read-only memory blocks and memory block sharing.",
-    "enrichment_status": "legacy-ok"
+    "content": "carsonfarmer @carsonfarmer. 'So many innovations in the AI agent space are just Letta/MemGPT rediscovered.' QUOTE: Sarah Wooders @sarahwooders - the new Anthropic managed agents API is basically the Letta API from a year ago but closed-source with provider lock-in (even read-only memory blocks and memory-block sharing, long unique to Letta). 7,621 views. agent-design, industry, research.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-09",
@@ -10164,23 +10197,26 @@
     "handle": "@aakashgupta",
     "subject": "Post by Aakash Gupta on X",
     "url": "https://x.com/aakashgupta/status/2041984945380585785",
-    "summary": "Makes the case for \"Team OS\" — a shared GitHub repo that serves as a team's collective brain for Claude. Companies spending $200K/yr on AI seats see zero productivity gains because each person starts from scratch every conversation with no shared context. Structured context (customer calls, specs, constraints, strategy docs) compounds across the team.",
+    "summary": "Companies spending $200K/yr on AI seats with zero gains all make the same mistake: same foundation model, zero shared context. A 'Team OS' turns a GitHub repo into the team's collective brain for Claude (call summaries, specs, constraints, strategy docs). Compound effect: a team of 10 adding 2-3 artifacts/week => 250+ structured docs a quarter; a new hire gets a veteran's context in week one. DoorDash's Hannah Stulberg's team writes every doc in Claude Code, checks it in for review.",
     "topics": [
       "management",
+      "claude-code",
       "agent-design"
     ],
     "audience": [
-      "me",
+      "dev-team",
       "leadership",
-      "dev-team"
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
     "enriched": true,
-    "content": "The companies spending $200K/year on AI seats and seeing zero productivity gains are all making the same mistake. They're giving every employee access to the same foundation model with zero shared context. Each person starts from scratch every conversation. A Team OS fixes this by turning a GitHub repo into the team's collective brain for Claude.",
-    "enrichment_status": "legacy-ok"
+    "content": "Aakash Gupta @aakashgupta. Companies spending $200K/yr on AI seats with zero gains all make the same mistake: same foundation model, zero shared context, everyone starts from scratch. A 'Team OS' turns a GitHub repo into the team's collective brain for Claude (call summaries, specs, constraints, strategy docs, structured for natural-language navigation). Compound effect: team of 10 adding 2-3 artifacts/week => 250+ structured docs a quarter; a new hire has a veteran's context in week one. Hannah Stulberg's DoorDash team writes every doc in Claude Code first, checks it into the repo for review ('put up a PR for Morgan to review this PRD' - Claude knows who Morgan is). 23.6K views. management, claude-code, agent-design.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-09",
@@ -10188,22 +10224,25 @@
     "handle": "@ashpreetbedi",
     "subject": "Post by Ashpreet Bedi on X",
     "url": "https://x.com/ashpreetbedi/status/2041966288541507861",
-    "summary": "Ashpreet highlights @Vtrivedy10's LangChain article on auto-improving agent harnesses using evals as a hill-climbing signal. The approach formalizes iterative system improvement — build a harness, eval it, improve it automatically. Directly applicable to anyone building agentic workflows who wants systematic quality gains.",
+    "summary": "Praises Viv's auto-improving-systems approach ('give it to Claude Code and let it rip'). Links Viv's 'Better Harness: A Recipe for Harness Hill-Climbing with Evals' - build better agents by building better harnesses, using evals as the learning signal.",
     "topics": [
       "agent-design",
+      "research",
       "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "20.5K",
     "notes": "",
     "enriched": true,
-    "content": "So much alpha on the TL today, but this has to be the post you should take a minute to read. @Vtrivedy10 pitching an incredible approach to auto-improving systems, something i've been experimenting with, but haven't had a chance to formalize. Absolute legend, just give this to cc and let it rip on whatever you're building, you're guaranteed to end up with a better product. Quote: Better Harness: A Recipe for Harness Hill-Climbing with Evals.",
-    "enrichment_status": "legacy-ok"
+    "content": "Ashpreet Bedi @ashpreetbedi. Praises Viv's auto-improving-systems approach ('give it to Claude Code and let it rip'). QUOTE ARTICLE: Viv @Vtrivedy10 'Better Harness: A Recipe for Harness Hill-Climbing with Evals' - building better agents by building better harnesses, using evals as the learning signal to hill-climb on. 23.6K views. agent-design, research, dev-practices.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-09",
@@ -10211,22 +10250,25 @@
     "handle": "@mr_r0b0t",
     "subject": "Post by mr-r0b0t on X",
     "url": "https://x.com/mr_r0b0t/status/2041930298238087464",
-    "summary": "Endorses the same LangChain article by @Vtrivedy10 on harness hill-climbing with evals. Argues that harness evolution combined with specialist local models will be the path forward for agent development.",
+    "summary": "'Harness evolution + specialist local models will be the way forward.' Links Viv's 'Better Harness: A Recipe for Harness Hill-Climbing with Evals' (LangChain team).",
     "topics": [
       "agent-design",
+      "research",
       "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "15.9K",
     "notes": "",
     "enriched": true,
-    "content": "Another banger article from the @LangChain team! Harness evolution combined with specialist local models will be the way forward undoubtedly! Thanks for the write up @Vtrivedy10! Quote: Better Harness: A Recipe for Harness Hill-Climbing with Evals.",
-    "enrichment_status": "legacy-ok"
+    "content": "mr-r0b0t @mr_r0b0t. 'Harness evolution combined with specialist local models will be the way forward.' QUOTE ARTICLE: Viv @Vtrivedy10 'Better Harness: A Recipe for Harness Hill-Climbing with Evals' (LangChain team). 25.3K views. agent-design, research, dev-practices.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-09",
@@ -10234,9 +10276,10 @@
     "handle": "@imjustinbrooke",
     "subject": "Post by Justin Brooke on X",
     "url": "https://x.com/imjustinbrooke/status/2041890745167061245",
-    "summary": "Introduces 7 markdown files for structuring AI agent systems: SOULS.md, AGENTS.md, USER.md, TOOLS.md, MEMORY.md, HEARTBEAT.md, STYLE.md. Core thesis is \"harnesses > models\" — the orchestration layer matters more than which foundation model you use.",
+    "summary": "If you don't know what SOUL.md, AGENTS.md, USER.md, TOOLS.md, MEMORY.md, HEARTBEAT.md, STYLE.md are and how to use them, learn. Quotes @agentskills_ai: 'these 7 text files will run your business in 2027; harnesses > models' (diesel-engine-without-wheels analogy).",
     "topics": [
       "agent-design",
+      "skills-mcp",
       "prompting"
     ],
     "audience": [
@@ -10247,8 +10290,10 @@
     "views": "29.2K",
     "notes": "",
     "enriched": true,
-    "content": "If you don't know what SOULS.md, AGENTS.md, USER.md, TOOLS.md, MEMORY.md, HEARTBEAT.md, STYLE.md are and how to use them then you need to read. These 7 text files will run your business in 2027. And if you learn only 1 thing from this post let it be harnesses > models.",
-    "enrichment_status": "legacy-ok"
+    "content": "Justin Brooke @IMJustinBrooke. If you don't know what SOUL.md, AGENTS.md, USER.md, TOOLS.md, MEMORY.md, HEARTBEAT.md, STYLE.md are and how to use them, you need to learn. QUOTE: @agentskills_ai - 'these 7 text files will run your business in 2027; harnesses > models' (diesel-engine-without-wheels analogy). 33.9K views. agent-design, skills-mcp, prompting.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-09",
@@ -10256,23 +10301,25 @@
     "handle": "@_vmlops",
     "subject": "Post by Vaishnavi on X",
     "url": "https://x.com/_vmlops/status/2041869776927261024",
-    "summary": "Microsoft open-sourced markitdown (github.com/microsoft/markitdown) — a Python tool that converts PDFs, Word docs, Excel, PowerPoint, audio, and YouTube URLs into clean Markdown for LLM pipelines. One pip install replaces custom parsers for file ingestion.",
+    "summary": "Microsoft MarkItDown - converts anything (PDF, Word, Excel, PowerPoint, audio, YouTube URLs) into clean structured markdown for LLMs; one pip install, no custom parsers. github.com/microsoft/markitdown.",
     "topics": [
       "dev-practices",
       "skills-mcp",
-      "questionable"
+      "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "318.7K",
     "notes": "",
     "enriched": true,
-    "content": "MICROSOFT BUILT A TOOL THAT CONVERTS LITERALLY ANYTHING INTO CLEAN MARKDOWN FOR YOUR LLM. pdfs. word docs. excel. powerpoint. audio. youtube urls. one pip install and your AI pipeline stops choking on raw files forever. no custom parsers. no broken layouts. no garbled text. just clean, structured markdown your LLM can actually read.",
-    "enrichment_status": "legacy-ok"
+    "content": "Vaishnavi @_vmlops. Microsoft MarkItDown - converts anything (PDFs, Word, Excel, PowerPoint, audio, YouTube URLs) into clean structured markdown for LLMs. One pip install, no custom parsers/broken layouts. github.com/microsoft/markitdown. 802K views. dev-practices, skills-mcp, agent-design.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-08",
@@ -10280,23 +10327,26 @@
     "handle": "@sowmay_jain",
     "subject": "Post by Sowmay Jain on X",
     "url": "https://x.com/sowmay_jain/status/2041982135305957425",
-    "summary": "Describes using an AI agent (@laukiantonson) to fully analyze a 67GB raw genome file for $5 in compute: rented a 32-core/64GB machine, aligned 21M long reads (99.83% mapped), called 5.8M variants, phased maternal/paternal inheritance, annotated against ClinVar/PharmGKB/gnomAD, produced a health risk map across 39 conditions and drug compatibility guide for 41 medications. Striking real-world demonstration of autonomous agentic capability on complex bioinformatics tasks. Went massively viral (909K views).",
+    "summary": "Had his AI agent process his whole-genome sequence end to end: found a 2-year-old email + link, pulled 67GB raw DNA, rented a $5 machine, aligned 21M reads (99.83% mapped), called 5.8M variants via a two-pass neural net, phased maternal/paternal, annotated against ClinVar/PharmGKB/gnomAD, and produced a health-risk map (39 conditions), drug guide (141 meds), nutrient metabolism, and ancestry - $5, 8 hours, one instruction. Quotes 1B+ rows of psychiatric-genetics GWAS data on HuggingFace.",
     "topics": [
+      "research",
       "agent-design",
-      "research"
+      "industry"
     ],
     "audience": [
-      "me",
       "dev-team",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
     "views": "909.1K",
     "notes": "",
     "enriched": true,
-    "content": "i got my whole genome sequenced two years ago and forgot about it. last week i told my ai agent (@laukiantonson) to dig up my DNA files...  in compute, 8 hours, no bioinformatician, no doctor, just one instruction. rented a 32-core 64GB machine, aligned 21 million long reads to human reference genome, called 5.8 million genetic variants, phased every variant, annotated against ClinVar/PharmGKB/gnomAD, health risk map across 39 conditions, drug compatibility for 41 medications.",
-    "enrichment_status": "legacy-ok"
+    "content": "Sowmay Jain @sowmay_jain. Had his AI agent process his whole-genome sequence end to end: dug up a 2-year-old email + download link, pulled 67GB raw DNA, rented a 32-core/64GB machine (~$5), aligned 21M long reads (99.83% mapped), called 5.8M variants via two-pass neural network, phased maternal/paternal, annotated against ClinVar/PharmGKB/gnomAD, corrected population bias, and produced a health-risk map (39 conditions), drug-compatibility guide (141 meds), nutrient metabolism, ancestry/Neanderthal breakdown - $5, 8 hours, one instruction, no bioinformatician. QUOTE: Maziyar Panahi - 1B+ rows of psychiatric-genetics GWAS data on HuggingFace. 1.1M views. research, agent-design, industry.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-08",
@@ -10304,22 +10354,25 @@
     "handle": "@ashpreetbedi",
     "subject": "Post by Ashpreet Bedi on X",
     "url": "https://x.com/ashpreetbedi/status/2041568919085854847",
-    "summary": "Ashpreet Bedi argues that building agentic software requires systems engineering discipline — you can't optimize AI agent systems by optimizing individual components. Draws parallels to Bell Labs' 1940s discovery that telephone network behavior emerged from component interactions, not individual parts. The current wave of 'harness engineering' is repeating 80-year-old mistakes.",
+    "summary": "'Systems Engineering: Building Agentic Software That Works.' Lesson from 1940s Bell Labs: you can't optimize a system by optimizing components. Agentic software spans five layers - agent engineering (model/tools/context/observability), data engineering (schemas/DBs/pipelines), security engineering (auth/RBAC/isolation - 'read-only is a tool config, not a prompt'), interface engineering (REST/Slack/MCP/CLI with consistent auth), infrastructure engineering (95% same as any service; the 5%: longer timeouts, streaming, scheduled tasks). Critiques the harness fad as local optimization; demonstrated with Dash (agno-agi/dash), an open-source self-learning data agent.",
     "topics": [
       "agent-design",
-      "dev-practices"
+      "dev-practices",
+      "research"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "38K",
     "notes": "",
     "enriched": true,
-    "content": "Systems Engineering: Building Agentic Software That Works. In the early 1940s, Bell Labs was building the national telephone network and discovered you can't optimize a system by optimizing individual components. The agentic software ecosystem is repeating the same mistakes that spawned systems engineering. Current harness engineering asks you to use filesystem for storage and memory, then tries to work around limitations. The whole-system perspective matters — interactions between components determine behavior, not the components themselves.",
-    "enrichment_status": "legacy-ok"
+    "content": "Ashpreet Bedi @ashpreetbedi. X ARTICLE 'Systems Engineering: Building Agentic Software That Works.' Lesson from 1940s Bell Labs: you can't optimize a system by optimizing individual components - behavior emerges from interactions. Agentic software is systems engineering across five layers: 1) Agent engineering (model, instructions, tools, handoffs, context, observability - deterministic where possible); 2) Data engineering (memory/storage/knowledge with real schemas, DBs, pipelines); 3) Security engineering (auth/RBAC/isolation - 'read-only is a tool config, not a prompt instruction'; approval tiers; isolate requests - shared-sandbox filesystem memory is a data-breach risk); 4) Interface engineering (REST/Slack/MCP/CLI - consistent auth across surfaces); 5) Infrastructure engineering (containers/scaling - 95% same as any service; the 5%: longer timeouts, streaming, scheduled tasks). Critiques the harness fad (virtualized FS over a DB, bash + per-request sandboxes) as local optimization. Demonstrated with Dash, an open-source self-learning data agent (agno-agi/dash) with 6 context layers and a learning loop. 144.8K views. agent-design, dev-practices, research.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-08",
@@ -10327,10 +10380,10 @@
     "handle": "@antpalkin",
     "subject": "Post by cvxv666 on X",
     "url": "https://x.com/antpalkin/status/2041517093670052193",
-    "summary": "Engagement-farming thread about building a Polymarket prediction market trading bot with Claude. Claims $300→$2.38M strategy. Quote-tweets @adiix_official's viral guide on debugging Claude-built arbitrage bots. Typical crypto/trading bot hype pattern — treat with skepticism.",
+    "summary": "Engagement-farm story of failing 10x to build a Polymarket arbitrage bot then finding a 'Part 2' guide diagnosing 10 mistakes; 'the strategy was never the problem, I was the bug.' Links AdiiX 'Why your Claude bot doesn't work.' Off-topic trading-bot content.",
     "topics": [
       "questionable",
-      "general"
+      "dev-practices"
     ],
     "audience": [
       "me"
@@ -10340,8 +10393,10 @@
     "views": "",
     "notes": "",
     "enriched": true,
-    "content": "Tried 10 times to build a Polymarket bot. Copied code from articles, forked repos. Bot after bot failed or lost money. Found a Part 2 guide with the same $300 to $2.38M strategy (original got 12M views). This one diagnosed exactly 10 mistakes. Quote tweets @adiix_official article 'Why your Claude bot doesn't work' - a guide to building an arbitrage bot with Claude.",
-    "enrichment_status": "legacy-ok"
+    "content": "cvxv666 @antpalkin. Engagement-farm story of failing 10 times to build a Polymarket arbitrage bot then finding a 'Part 2' guide diagnosing 10 mistakes (1-3 prevent running, 4-6 wrong signals, 7-10 slowly kill your account); 'the strategy was never the problem, I was the bug.' QUOTE ARTICLE: AdiiX 'Why your Claude bot doesn't work' (arbitrage bot, 12M views). Off-topic trading-bot content. 317.7K views. questionable, dev-practices.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-08",
@@ -10349,22 +10404,24 @@
     "handle": "@TheTuringPost",
     "subject": "Post by Ksenia_TuringPost on X",
     "url": "https://x.com/theturingpost/status/2041455210342871094",
-    "summary": "Ksenia from TuringPost on the enterprise AI adoption gap: despite SF hype, most companies are still at ChatGPT-for-writing stage. AI adoption isn't a straight line but a stack of dependencies — you can't jump to agents if workflows aren't legible, can't act on data you don't trust. Most AI pilots fail because organizational readiness, not the technology, is the bottleneck.",
+    "summary": "'The Unsexy Truth of AI Adoption' (with @wschenk): SF creates the illusion the whole world moves at AI speed; most companies are far earlier. AI adoption is a stack of dependencies - can't jump to agents if workflows aren't legible, can't act on untrusted data, can't automate undefined decisions. It's organizational redesign: make the org legible to itself, data trustworthy, let systems act and reshape roles, close the loop so systems learn.",
     "topics": [
       "management",
       "industry"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
     "enriched": true,
-    "content": "AI feels like it's everywhere now but most companies are still at a much earlier stage. For many, AI means ChatGPT for writing, Copilot for code, maybe a few internal experiments. The real gap is the organization itself. Work inside companies is still largely invisible to machines. Processes live in people's heads, data is fragmented. That's why so many AI pilots look impressive and then quietly disappear. AI adoption is a stack of dependencies — you can't jump to agents if workflows aren't legible, can't act on data you don't trust, can't automate decisions that aren't structured.",
-    "enrichment_status": "legacy-ok"
+    "content": "Turing Post @TheTuringPost. 'The Unsexy Truth of AI Adoption' (with @wschenk). SF creates the illusion the whole world moves at AI speed; most companies are far earlier. The real gap is the organization: work is invisible to machines, processes live in people's heads, data is fragmented. AI adoption is a stack of dependencies - can't jump to agents if workflows aren't legible, can't act on untrusted data, can't automate undefined decisions. The middle work: make the org legible to itself, make data trustworthy, let systems act and reshape roles, close the loop so systems learn. It's organizational redesign more than AI. turingpost.com/p/orgage2. 12.2K views. management, industry.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-07",
@@ -10372,24 +10429,25 @@
     "handle": "@alliekmiller",
     "subject": "Post by Allie K. Miller on X",
     "url": "https://x.com/alliekmiller/status/2041577000804991485",
-    "summary": "Allie K. Miller shares a 5-level 'Proactive AI-First Team Member' framework for hiring and onboarding. Levels range from 1 (not using AI) to 5 (full ownership with AI-augmented critical thinking). Key insight: most candidates interview at level 3 (solution-oriented but not action-oriented) — she wants new hires starting at level 4 (action-oriented with technical/business tradeoff awareness). Originally from @businessbarista and @stephsmithio, with AI additions by Miller.",
+    "summary": "A hiring/onboarding maturity framework (from Alex/Steph, AI parts added): being AI-first means nothing without solving real business problems - use AI for faster experimentation, shorter iteration, better outcomes, else you're wasting tokens. Levels: many heavy users stuck at 2 (surface user); most interviewees at 3 (solution- not action-oriented); wants people to start at 4 (action + tradeoffs) and earn 5 (full ownership). AI makes your job bigger, not smaller.",
     "topics": [
-      "management",
-      "agent-design"
+      "management"
     ],
     "audience": [
-      "me",
       "dev-team",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "15.3K",
     "notes": "",
     "enriched": true,
-    "content": "I stole this framework, and it has genuinely been one of the most helpful hiring and onboarding guides my team uses.\n\nBeing AI-first means nothing without solving real business problems. It's not enough to just use AI. I know plenty of folks using AI dozens of times a day, 7 days a week, who are still working at a Level 2. Even worse, they have no idea they're stuck as a surface user.\n\nYou have to use AI for faster experimentation. To shorten the iteration cycle. To improve the actual outcome. Without those three, you're just wasting tokens.\n\nMost people I interview are at a 3 (solution-oriented, but not action-oriented). I want everyone to start at a 4 (action-oriented with a sense of technical, user, and business tradeoffs). And when they earn trust, we move up to a level 5 (full ownership of the problem, solution, and continued management of the work).\n\nUsing AI doesn't replace your critical thinking. It means the work you can pull off now wasn't on the table a year ago, and your job is getting bigger.\n\nSave this for your next new hire.\n\nSource: this was a framework first introduced to me by Alex (@businessbarista) who was introduced to it by Steph (@stephsmithio). I added the AI parts.\n\n[Includes \"The Proactive AI-First Team Member\" pyramid framework image with 5 levels]",
+    "content": "Allie K. Miller @alliekmiller. A hiring/onboarding maturity framework (from Alex/Steph, with AI parts added): being AI-first means nothing without solving real business problems - use AI for faster experimentation, shorter iteration cycles, and better outcomes, else you're wasting tokens. Levels: many heavy users are stuck at Level 2 (surface user); most interviewees are 3 (solution-oriented not action-oriented); she wants people to start at 4 (action-oriented with technical/user/business tradeoffs) and earn 5 (full ownership). AI doesn't replace critical thinking; it makes your job bigger. 33.1K views. management.",
     "source": "manual",
-    "enrichment_status": "legacy-ok"
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-06",
@@ -10397,22 +10455,25 @@
     "handle": "@ericosiu",
     "subject": "Post by ericosiu on X",
     "url": "https://x.com/ericosiu/status/2040785346120859946",
-    "summary": "Practical guide to deploying Jack Dorsey's 'world intelligence' concept — a company-wide AI knowledge layer that powers 50+ daily workflows, coordinates decisions across teams, and surfaces issues automatically. Includes a linked article with implementation details from 4 months of running this at his company.",
+    "summary": "'Every org needs a world intelligence to operate at 10x.' Links 'How to practically deploy Jack Dorsey's world intelligence today' - Dorsey published an AI-native-company blueprint; author has run a version for 4 months powering 50+ daily workflows, coordinating decisions, surfacing issues.",
     "topics": [
       "management",
-      "agent-design"
+      "agent-design",
+      "industry"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "146.1K",
     "notes": "",
     "enriched": true,
-    "content": "Every org needs a world intelligence to operate at 10x level. Article on how to practically deploy Jack Dorsey's world intelligence. Powers 50+ daily workflows, coordinates decisions across teams.",
-    "enrichment_status": "legacy-ok"
+    "content": "ericosiu @ericosiu. 'Every org needs a world intelligence to operate at 10x.' QUOTE ARTICLE: 'How to practically deploy Jack Dorsey's world intelligence today' - Dorsey published an AI-native-company blueprint; author has run a version for 4 months powering 50+ daily workflows, coordinating decisions across teams, surfacing issues. 157K views. management, agent-design, industry.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-06",
@@ -10420,45 +10481,50 @@
     "handle": "@dklineii",
     "subject": "Post by Dave Kline on X",
     "url": "https://x.com/dklineii/status/2040776601223246334",
-    "summary": "Management advice on fixing broken 1:1 meetings — 4 tests to determine if your 1:1s are actually working. Covers common anti-patterns like cancelling on top performers, using 1:1s as status reports, and doing most of the talking instead of listening.",
+    "summary": "'My 1:1s were broken for years' - cancelled on best people, used them as live status reports, did most of the talking. 4 tests to know if your 1:1s are actually working.",
     "topics": [
       "management"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "1.1M",
     "notes": "",
     "enriched": true,
-    "content": "As a manager, 1:1s were broken for years. Cancelled on best people, used as live status report, did most of the talking. 4 tests to know if your 1:1s are actually working.",
-    "enrichment_status": "legacy-ok"
+    "content": "Dave Kline @dklineii. 'My 1:1s were broken for years' - cancelled on best people, used them as live status reports, did most of the talking. 4 tests to know if your 1:1s are actually working. 1.1M views. management.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-06",
-    "author": "Alex Prompter",
-    "handle": "@alex_prompter",
+    "author": "Alex Veremeyenko",
+    "handle": "@alex_verem",
     "subject": "Post by Alex Prompter on X",
     "url": "https://x.com/alex_prompter/status/2040731938751914065",
-    "summary": "Google DeepMind published the largest empirical study of AI agent manipulation — 502 participants across 8 countries, 23 attack types tested against GPT-4o, Claude, and Gemini. Found that websites can already detect AI agents and serve them different content, with hidden instructions in HTML, malicious commands in image pixels, and jailbreaks in PDFs. Current defenses fail in predictable, invisible ways.",
+    "summary": "Google DeepMind mapped the AI-agent attack surface (502 participants, 8 countries, 23 attack types). Manipulation is already happening at scale and defenses fail predictably/invisibly. Channels: prompt injection via HTML comments / white-on-white text, steganography in image pixels, image metadata, malicious PDFs, QR codes, indirect injection via search/calendar/email/API. Detection asymmetry: sites fingerprint agents and serve them manipulated content humans never see. Categories include memory poisoning, goal hijacking, exfiltration, cross-agent injection. All standard defenses fail at agent scale; multi-agent cascade propagates an injection with legitimate trust. 'Compromise the data the model consumes, not the model.'",
     "topics": [
       "research",
-      "agent-design"
+      "agent-design",
+      "dev-practices"
     ],
     "audience": [
-      "me",
       "dev-team",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
     "enriched": true,
-    "content": "Google DeepMind mapped the AI agent attack surface. Websites can detect AI agents and serve different content. Hidden instructions in HTML, malicious commands in image pixels, jailbreaks in PDFs. 502 participants, 8 countries, 23 attack types, frontier models tested.",
-    "enrichment_status": "legacy-ok"
+    "content": "Alex Veremeyenko @alex_verem (was @alex_prompter). Google DeepMind mapped the AI-agent attack surface (largest empirical measurement: 502 participants, 8 countries, 23 attack types, frontier models). Key: manipulation is already happening at scale and defenses fail predictably/invisibly. Attack channels: prompt injection via HTML comments / white-on-white text / CSS tricks, steganography in image pixels, image metadata/alt-text, malicious PDFs, QR codes, indirect injection via search/calendar/email/API. Detection asymmetry: sites can fingerprint agents (timing, behavior, user-agent) and serve them manipulated content while humans see normal - the agent can't tell. Categories: direct/indirect/multimodal/document injection, environment manipulation, jailbreak embedding, memory poisoning, goal hijacking, exfiltration, cross-agent injection. Defenses (input sanitization, prompt-level, sandboxing, human oversight) all fail at agent scale/speed. Multi-agent cascade: an injection into Agent A propagates with legitimate trust through B and C. 'The attack doesn't need to compromise the model, just the data it consumes.' 1.9M views. research, agent-design, dev-practices.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-06",
@@ -10466,23 +10532,25 @@
     "handle": "@RoundtableSpace",
     "subject": "Post by 0xMarioNawfal on X",
     "url": "https://x.com/roundtablespace/status/2040500903296352663",
-    "summary": "Comprehensive open-source Claude Code setup with 27 agents, 64 skills, 33 commands, and built-in AgentShield with 1,282 security tests. Handles planning, code review, fixes, TDD, and token optimization. Works across Cursor, OpenCode, and Codex CLI. github.com/affaan-m/everything-claude-code",
+    "summary": "'MOST COMPLETE CLAUDE CODE SETUP OPEN SOURCED' - affaan-m/everything-claude-code: 27 agents, 64 skills, 33 commands + AgentShield (1,282 security tests); planning, code review, fixes, TDD, token optimization; works on Cursor/OpenCode/Codex CLI; free/open-source.",
     "topics": [
       "claude-code",
-      "agent-design",
-      "skills-mcp"
+      "skills-mcp",
+      "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
     "views": "533.4K",
     "notes": "",
     "enriched": true,
-    "content": "Most complete Claude Code setup open sourced. 27 agents, 64 skills, 33 commands + AgentShield with 1282 security tests. Handles planning, code review, fixes, TDD, token optimization. Works on Cursor, OpenCode, Codex CLI.",
-    "enrichment_status": "legacy-ok"
+    "content": "0xMarioNawfal @RoundtableSpace. 'MOST COMPLETE CLAUDE CODE SETUP OPEN SOURCED' - affaan-m/everything-claude-code: 27 agents, 64 skills, 33 commands + built-in AgentShield (1,282 security tests); handles planning, code review, fixes, TDD, token optimization; works on Cursor/OpenCode/Codex CLI; one repo replaces weeks of setup, free/open-source. 619.3K views. claude-code, skills-mcp, dev-practices.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-05",
@@ -10490,22 +10558,25 @@
     "handle": "@cryptopunk7213",
     "subject": "Post by Ejaaz on X",
     "url": "https://x.com/cryptopunk7213/status/2040434869399138368",
-    "summary": "Open-sourced self-improving AI agent framework: a meta-agent that autonomously tweaks an agent's harness (tools, system prompts), runs tests, and iterates until it tops benchmarks. Demonstrated on TerminalBench (code) and spreadsheets (financial modeling), reaching #1 in both domains in under 24 hours using Claude evaluating Claude for better failure analysis.",
+    "summary": "On AutoAgent, a self-improving AI: agents suck because of the harness (tools/system prompts), not the model; a Meta agent tweaks the harness, runs tests, and improves until #1 at its goal - works for any task, using the same model to evaluate (Claude managing Claude). Links Kevin Gu's 'AutoAgent: first open source library for self-optimizing agents' (#1 SpreadsheetBench 96.5%, #1 GPT-5 TerminalBench).",
     "topics": [
       "agent-design",
-      "claude-code"
+      "research",
+      "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
     "enriched": true,
-    "content": "Self-improving AI agent. Meta agent tweaks agent harness (tools, system prompts), runs tests, improves again until #1. Works for any task. Used same model (Claude) to evaluate the agent.",
-    "enrichment_status": "legacy-ok"
+    "content": "Ejaaz @cryptopunk7213. On AutoAgent, a self-improving AI: agents suck because of the harness (tools/system prompts), not the model; AutoAgent creates a Meta agent that tweaks the harness, runs tests, and improves it until #1 at its goal - works for any task, using THE SAME MODEL to evaluate (Claude managing Claude). QUOTE ARTICLE: Kevin Gu 'AutoAgent: first open source library for self-optimizing agents' - #1 on SpreadsheetBench (96.5%) and #1 GPT-5 score on TerminalBench. 230.4K views. agent-design, research, dev-practices.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-03",
@@ -10513,22 +10584,25 @@
     "handle": "@datachaz",
     "subject": "Post by Charly Wargnier on X",
     "url": "https://x.com/datachaz/status/2039963758790156555",
-    "summary": "Charly Wargnier breaks down Karpathy's new self-improving 'second brain' setup using Obsidian Markdown wikis. Instead of complex RAG, an LLM auto-compiles raw research into indexed .md files, handles its own linting and Q&A routing, and generates outputs (Marp slides, matplotlib plots) filed back into the wiki. The key insight: agents maintaining their own memory layer don't need massive context windows — just clean file organization and the ability to query their own indexes.",
+    "summary": "Breaks down Karpathy's self-improving second brain: instead of complex RAG, the LLM pulls raw research into an Obsidian markdown wiki and takes over index creation, linting, and Q&A routing. Dump sources -> LLM auto-compiles an indexed .md wiki -> ask questions -> it generates outputs (Marp slides, matplotlib) and files them back. Implication: agents maintaining their own memory layer need clean file organization + queryable indexes, not huge context. Quotes Karpathy's original 'LLM Knowledge Bases' post.",
     "topics": [
       "agent-design",
-      "dev-practices"
+      "prompting",
+      "claude-code"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "108K",
     "notes": "",
     "enriched": true,
-    "content": "Karpathy's new set-up is the ultimate self-improving second brain, and it takes zero manual editing. It acts as a living AI knowledge base that actually heals itself. Instead of relying on complex RAG, the LLM pulls raw research directly into an Obsidian Markdown wiki. It completely takes over: Index creation, System linting, Native Q&A routing. The core process: You dump raw sources into a folder, the LLM auto-compiles an indexed .md wiki, you ask complex questions, it generates outputs (Marp slides, matplotlib plots) and files them back in. When agents maintain their own memory layer, they don't need massive, expensive context limits. They just need clean file organization and the ability to query their own indexes.",
-    "enrichment_status": "legacy-ok"
+    "content": "Charly Wargnier @DataChaz. Breaks down Karpathy's self-improving second brain: instead of complex RAG, the LLM pulls raw research into an Obsidian markdown wiki and takes over index creation, system linting, and Q&A routing. Process: dump raw sources into a folder -> LLM auto-compiles an indexed .md wiki -> ask complex questions -> it generates outputs (Marp slides, matplotlib plots) and files them back. Implication: agents maintaining their own memory layer don't need huge context limits - just clean file organization + the ability to query their own indexes. Cheaper, scalable, 100% inspectable. QUOTE: Andrej Karpathy's original 'LLM Knowledge Bases' post. 272.3K views. agent-design, prompting, claude-code.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-02",
@@ -10536,21 +10610,24 @@
     "handle": "@neogoose_btw",
     "subject": "Post by Dmitriy Kovalenko on X",
     "url": "https://x.com/neogoose_btw/status/2039508756988620801",
-    "summary": "Dmitriy Kovalenko demos a blazing-fast, index-free code search tool that works on massive codebases in real time — tested on leaked Claude Code sources, Linux kernel (100k files), and Chromium repo (500k files). Claims it's the most accurate code search approach available.",
+    "summary": "Built fast, accurate, index-free code search - demonstrated on leaked Claude Code sources, Linux kernel (100k files), and Chromium (500k files). A foundational code-search primitive for agents.",
     "topics": [
-      "dev-practices"
+      "dev-practices",
+      "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
     "views": "106.7K",
     "notes": "",
     "enriched": true,
-    "content": "My dear software developers (and anyone who's interested in the future of code search): I have crawled through depths of hell to bring you, one of the more important foundational piece of programming: fast, the most accurate, index free, and correct code search. Here is a real time code search on leaked claude code sources, linux kernel 100k files, and chromium repo 500k files.",
-    "enrichment_status": "legacy-ok"
+    "content": "Dmitriy Kovalenko @neogoose_btw. Built fast, accurate, index-free code search - real-time search demonstrated on leaked Claude Code sources, Linux kernel (100k files), and Chromium (500k files). A foundational code-search primitive for agents. 190.4K views. dev-practices, agent-design.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-02",
@@ -10558,7 +10635,7 @@
     "handle": "@thecurioustales",
     "subject": "Post by The Curious Tales on X",
     "url": "https://x.com/thecurioustales/status/2039360822200442914",
-    "summary": "Self-help/life advice post recommending an article about being '3 decisions away from a completely different life.' Not AI or tech related — personal development content.",
+    "summary": "'Drop everything and read this' - recommends a Dan-Koe-style life essay. Links Darshak Rana 'You Are Just 3 Decisions Away From a Completely Different Life.' Self-improvement, not AI/dev.",
     "topics": [
       "general"
     ],
@@ -10570,8 +10647,10 @@
     "views": "95.2K",
     "notes": "",
     "enriched": true,
-    "content": "Drop everything and read this article. If you've read Dan Koe's 'How to fix your entire life in 1 day,' and liked it, you'll love this article. It's that good. MUST READ. Quote: You Are Just 3 Decisions Away From a Completely Different Life.",
-    "enrichment_status": "legacy-ok"
+    "content": "The Curious Tales @thecurioustales. 'Drop everything and read this' - recommends a Dan-Koe-style life essay. QUOTE ARTICLE: Darshak Rana @thedarshakrana 'You Are Just 3 Decisions Away From a Completely Different Life' - quit the draining thing, start the thing you've researched for months, have the conversation you keep rehearsing. Self-improvement, not AI/dev. 104.7K views. general.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-02",
@@ -10579,21 +10658,24 @@
     "handle": "@_overment",
     "subject": "Post by Adam on X",
     "url": "https://x.com/_overment/status/2039061635776618554",
-    "summary": "Adam shares his personal AI system architecture based on a dynamic dependency graph with a heartbeat loop involving LLM, code, and events. Describes it as the best architecture he's found for building personal AI systems.",
+    "summary": "'The best architecture I've found for my personal system' - based on a dynamic dependency graph plus a heartbeat involving the LLM, code, and events.",
     "topics": [
-      "agent-design"
+      "agent-design",
+      "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "86.9K",
     "notes": "",
     "enriched": true,
-    "content": "cooking. this is the best architecture I've found so far for my personal system. It's based on a dynamic dependency graph, plus a heartbeat that involves the LLM, code, and events.",
-    "enrichment_status": "legacy-ok"
+    "content": "Adam @_overment. 'The best architecture I've found for my personal system' - based on a dynamic dependency graph plus a heartbeat involving the LLM, code, and events. 92.7K views. agent-design, dev-practices.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-01",
@@ -10626,22 +10708,25 @@
     "handle": "@championswimmer",
     "subject": "Post by Arnav Gupta on X",
     "url": "https://x.com/championswimmer/status/2039109862919905719",
-    "summary": "Arnav Gupta highlights a set of extensions by @nicopreme (pi-subagents, pi-messenger, pi-mcp-adapter, pi-web-access) that together create a powerful agentic system surpassing tools like Ralph, Gstack, and Conductor.",
+    "summary": "With nicopreme's Pi extensions (pi-subagents, pi-messenger, pi-mcp-adapter, pi-web-access) you can build something far beyond Ralph/GStack/Conductor - 'the most magnificent slop machine possible' (tongue-in-cheek). Pi agent-harness extensions.",
     "topics": [
       "agent-design",
-      "skills-mcp"
+      "skills-mcp",
+      "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "37K",
     "notes": "",
     "enriched": true,
-    "content": "Once you install these extensions from @nicopreme - pi-subagents, pi-messenger, pi-mcp-adapter, pi-web-access - You can literally create a monster far far beyond the reach of Ralph/Gstack/Conductor. The most magnificent slop machine possible.",
-    "enrichment_status": "legacy-ok"
+    "content": "Arnav Gupta @championswimmer. With nicopreme's Pi extensions (pi-subagents, pi-messenger, pi-mcp-adapter, pi-web-access) you can build something far beyond Ralph/GStack/Conductor - 'the most magnificent slop machine possible' (tongue-in-cheek). Pi agent-harness extensions. 45.5K views. agent-design, skills-mcp, dev-practices.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-31",
@@ -10649,21 +10734,25 @@
     "handle": "@kloss_xyz",
     "subject": "Post by klöss on X",
     "url": "https://x.com/kloss_xyz/status/2038842907466334550",
-    "summary": "Critical supply chain attack on axios (100M+ weekly npm downloads). An attacker hijacked a maintainer's credentials and published poisoned versions (1.14.1 and 0.30.4) that inject a fake dependency installing a remote access trojan across macOS, Windows, and Linux. Pin to axios@1.14.0 or 0.30.3 and rotate all secrets on affected machines.",
+    "summary": "Supply-chain attack on axios (100M+ weekly downloads): a hijacked maintainer account published poisoned versions that inject a fake dependency (plain-crypto-js) dropping a RAT (cross-platform payloads, self-destructing traces, bypassed CI/CD). One of the most sophisticated supply-chain attacks on a top-10 npm package. Guidance: pin to 1.14.0/0.30.3, rotate secrets, check for C2, add --ignore-scripts to CI.",
     "topics": [
-      "dev-practices"
+      "dev-practices",
+      "industry",
+      "questionable"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
     "views": "742.7K",
     "notes": "",
     "enriched": true,
-    "content": "axios npm supply chain attack - poisoned versions 1.14.1 and 0.30.4 inject fake dependency plain-crypto-js that drops RAT. StepSecurity called it one of the most operationally sophisticated supply chain attacks ever against a top 10 npm package.",
-    "enrichment_status": "legacy-ok"
+    "content": "kloss @kloss_xyz. Supply-chain attack on axios (100M+ weekly downloads): attacker hijacked a lead maintainer's npm credentials, changed email, and published poisoned axios@1.14.1 and 0.30.4 that inject a fake dependency (plain-crypto-js) dropping a RAT (macOS/Windows/Linux payloads staged 18h ahead, self-destructing traces, bypassed CI/CD - no GitHub tag). StepSecurity called it one of the most sophisticated supply-chain attacks on a top-10 npm package. Guidance: pin to 1.14.0/0.30.3, rotate all secrets, check for C2 connections, add --ignore-scripts to CI. QUOTE: Feross's alert. 882.7K views. dev-practices, industry, questionable.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-31",
@@ -10671,22 +10760,25 @@
     "handle": "@hesamation",
     "subject": "Post by ℏεsam on X",
     "url": "https://x.com/hesamation/status/2038758029940654507",
-    "summary": "Ole Lehmann built a Claude skill implementing Karpathy's LLM Council method — 5 AI sub-agents critique your idea from different angles with anonymous peer review. A practical fix for the 'AI yes-man' problem where Claude just tells you what you want to hear.",
+    "summary": "Praises Ole Lehmann turning Karpathy's 'LLM Council' into a Claude skill where sub-agents critique your idea from different angles - a cure for AI sycophancy. Links 'How to finally trust Claude's advice (using Karpathy's LLM Council method)' - 5 AI advisors argue, anonymously review each other, and hand back a synthesized verdict.",
     "topics": [
       "skills-mcp",
-      "prompting"
+      "prompting",
+      "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "140.8K",
     "notes": "",
     "enriched": true,
-    "content": "Karpathy's LLM Council turned into a Claude skill. 5 AI advisors argue about your question, anonymously review each other's work. Cure for AI kiss-ass disease.",
-    "enrichment_status": "legacy-ok"
+    "content": "Hesam @Hesamation. Praises Ole Lehmann turning Karpathy's 'LLM Council' into a Claude skill where sub-agents critique your idea from different angles - a cure for AI sycophancy. QUOTE ARTICLE: Ole Lehmann 'How to finally trust Claude's advice (using Karpathy's LLM Council method)' - 5 AI advisors argue, anonymously review each other, and hand back a synthesized verdict. 205.5K views. skills-mcp, prompting, agent-design.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-31",
@@ -10694,22 +10786,25 @@
     "handle": "@voxyz_ai",
     "subject": "Post by Vox on X",
     "url": "https://x.com/voxyz_ai/status/2038677643000758466",
-    "summary": "Parallel module development pattern using Codex: break a project into 5 independent modules running in separate windows with a 'foreman' conductor writing to a shared doc. Each module reads the shared state, executes its part, and updates when done. Uses Claude for UI work and Codex for the rest.",
+    "summary": "Parallel module development with the Codex app: give AI a strategy doc and have it break the project into independent modules, each with the exact prompt to paste into a new window + commands + shared state; one 'foreman' window writes a shared doc others read/update. M1 (UI/UX) given to Claude (better for UI), the rest on Codex. 'One window -> five windows; completeness went from close enough to actually done.'",
     "topics": [
       "agent-design",
-      "dev-practices"
+      "dev-practices",
+      "claude-code"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "12.2K",
     "notes": "",
     "enriched": true,
-    "content": "Parallel module development with Codex app. AI splits project into 5 modules each in own window. One acts as foreman/conductor writing shared doc. Others read, execute, update. Claude for UI, Codex for rest.",
-    "enrichment_status": "legacy-ok"
+    "content": "Vox @Voxyz_ai. Parallel module development with the Codex app: give AI a strategy doc and have it break the project into independent modules. Prompt: 'break this into independent modules; for each give the exact prompt to paste into a new window, commands to run, and shared state to read/write; design for parallel with minimal cross-dependency; you are the conductor, modules M1-M5.' Result: 5 modules each in its own Codex window, one 'foreman' writes a shared doc others read/update; M1 (UI/UX) given to Claude (better for UI) while the rest stayed on Codex. Downside: track each window + handle text handoffs. 'One window -> five windows; completeness went from close enough to actually done.' 15.2K views. agent-design, dev-practices, claude-code.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-30",
@@ -10717,22 +10812,25 @@
     "handle": "@tom_doerr",
     "subject": "Post by Tom Dörr on X",
     "url": "https://x.com/tom_doerr/status/2038456589984690462",
-    "summary": "Cisco open-sourced DefenseClaw (github.com/cisco-ai-defense/defenseclaw), a tool that scans and blocks dangerous AI agent actions. Designed as a safety layer for autonomous AI workflows.",
+    "summary": "Scans and blocks dangerous AI agent actions - github.com/cisco-ai-defense/defenseclaw. An agent-action guardrail/security tool.",
     "topics": [
       "agent-design",
-      "dev-practices"
+      "dev-practices",
+      "skills-mcp"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "3,568",
     "notes": "",
     "enriched": true,
-    "content": "Cisco DefenseClaw - scans and blocks dangerous AI agent actions. github.com/cisco-ai-defense/defenseclaw",
-    "enrichment_status": "legacy-ok"
+    "content": "Tom Dorr @tom_doerr. Scans and blocks dangerous AI agent actions - github.com/cisco-ai-defense/defenseclaw. An agent-action guardrail/security tool. 3,982 views. agent-design, dev-practices, skills-mcp.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-30",
@@ -10740,21 +10838,25 @@
     "handle": "@vtrivedy10",
     "subject": "Post by Viv on X",
     "url": "https://x.com/vtrivedy10/status/2038346865775874285",
-    "summary": "Commentary on a writeup by @systematicls about solving problems in long-running autonomous agentic engineering workflows. Key insight: all harness design is about overcoming agent laziness (cutting corners) and confusion. Solutions involve task decomposition, looping, and human-in-the-loop for underspecified tasks.",
+    "summary": "'Let there be harnesses, each optimized for tasks models can't do alone.' All harness design overcomes agents becoming lazy/cutting corners or confused/stupid; today's issues include human under-specification + engineering for repeated task decomposition and looping to 'keep working.' deepagents' goal: everyone can build their own harness + agent. Links sysls 'How To Solve Problems Of Long Running, Autonomous Agentic Engineering Workflows.'",
     "topics": [
-      "agent-design"
+      "agent-design",
+      "dev-practices",
+      "research"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "16.8K",
     "notes": "",
     "enriched": true,
-    "content": "Writeup on failure modes of long-running autonomous agents. Harness design overcomes agent laziness and confusion. Task decomposition and looping to keep working.",
-    "enrichment_status": "legacy-ok"
+    "content": "Viv @Vtrivedy10. 'Let there be harnesses, each optimized for tasks models can't do alone today.' All harness design overcomes agents becoming lazy/cutting corners or confused/stupid; a well-written harness goes a long way. Today's issues: human under-specification + engineering for repeated task decomposition and looping to 'keep working.' deepagents' goal: everyone can build their own harness + agent for any task. QUOTE ARTICLE: sysls @systematicls 'How To Solve Problems Of Long Running, Autonomous Agentic Engineering Workflows.' 17.3K views. agent-design, dev-practices, research.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-30",
@@ -10762,22 +10864,25 @@
     "handle": "@ericksky",
     "subject": "Post by Erick on X",
     "url": "https://x.com/ericksky/status/2038301058338812119",
-    "summary": "Tome — an open-source macOS app that transcribes Zoom/Meet/Teams meetings locally with AI (no cloud), detects speakers, and generates Markdown notes directly into your Obsidian vault. No API keys, no subscriptions, 100% private.",
+    "summary": "Tome - a macOS app for Obsidian users: transcribes Zoom/Meet/Teams meetings locally with AI (on-device, no cloud), detects speakers, and drops perfect Markdown notes into your vault - ready to hand to your agent. No API keys/subscriptions, private, open-source.",
     "topics": [
       "dev-practices",
-      "general"
+      "skills-mcp",
+      "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "48.5K",
     "notes": "",
     "enriched": true,
-    "content": "Tome: macOS app that transcribes meetings locally with AI, detects speakers, generates Markdown notes into Obsidian vault. Open source, no API keys, no subscriptions, 100% private.",
-    "enrichment_status": "legacy-ok"
+    "content": "Erick @ErickSky (Translated from Spanish). Tome - a macOS app for Obsidian users: transcribes Zoom/Meet/Teams meetings locally with AI (on-device, no cloud), detects who spoke, and drops perfect Markdown notes directly into your vault - ready to hand to your agent. No API keys, no subscriptions, private, open-source. 51.5K views. dev-practices, skills-mcp, agent-design.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-30",
@@ -10811,22 +10916,25 @@
     "handle": "@meta_alchemist",
     "subject": "Post by Meta Alchemist on X",
     "url": "https://x.com/meta_alchemist/status/2038222105654022325",
-    "summary": "Detailed guide on turning Claude Code into a self-evolving system. The approach captures corrections across sessions so the CLI learns and improves over time, building persistent memory of what works and what doesn't for each project.",
+    "summary": "FULL GUIDE 'How To Transform Claude Code Into A Self-Evolving System' - a four-layer setup: cognitive core (a CLAUDE.md that programs how Claude thinks: grep-first decision framework, completion criteria), specialized subagents (architect + reviewer), path-scoped rules (security/api-design/performance that load only for matching files), and an evolution engine (memory + a skill that captures corrections/observations and graduates them into learned rules with verify: grep checks that auto-enforce). Includes settings.json permissions, slash commands (/review, /fix-issue, /evolve), a memory protocol, a session-by-session evolution loop, tests, FAQ (keep CLAUDE.md <150 lines), and a one-command setup script.",
     "topics": [
       "claude-code",
-      "agent-design"
+      "agent-design",
+      "skills-mcp"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "147K",
     "notes": "",
     "enriched": true,
-    "content": "Full guide on transforming Claude Code into a self-evolving system that captures corrections across sessions.",
-    "enrichment_status": "legacy-ok"
+    "content": "Meta Alchemist @meta_alchemist. FULL GUIDE 'How To Transform Claude Code Into A Self-Evolving System' - a Claude Code setup with four layers: 1) cognitive core (a CLAUDE.md that programs how Claude thinks - a decision framework: grep first, blast radius, smallest change; completion criteria); 2) specialized subagents (architect who plans, reviewer who validates); 3) path-scoped rules (.claude/rules/ security/api-design/performance that load only for matching files); 4) an evolution engine (a memory system + a skill that captures corrections/observations and graduates them into learned rules with verify: grep checks that auto-enforce). Includes settings.json permissions (allow/deny, block rm -rf/force push), slash commands (/project:review, /fix-issue, /evolve), a memory protocol (learned-rules.md capped ~50 lines, evolution-log, sessions.jsonl), a session-by-session evolution loop (corrections -> checks -> auto-verified rules -> promotion/pruning), testing steps, an FAQ (keep CLAUDE.md under 150 lines, project-scoped), and a one-command setup script. 157.1K views. claude-code, agent-design, skills-mcp.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-29",
@@ -10859,16 +10967,24 @@
     "handle": "@k1rallik",
     "subject": "Post by BuBBliK on X",
     "url": "https://x.com/k1rallik/status/2037936518862446694",
-    "summary": "TurboQuant — Google's algorithm for 3-bit KV cache compression that enables 100K token conversations on a 16GB M2 MacBook with quality identical to cloud APIs. Claims 6x memory compression and 8x speedup with zero accuracy loss. Free paper/algorithm.",
-    "topics": [],
-    "audience": [],
+    "summary": "Personal story: $200/mo cloud APIs on an M2 MacBook, local models garbage past 4K tokens; applied 3-bit KV cache compression (TurboQuant) and now runs 100K-token conversations at cloud-identical quality, cancelled subscriptions. Links 'The algorithm that crashed Wall Street' - TurboQuant compresses AI memory 6x, 8x faster, zero accuracy loss (hype framing).",
+    "topics": [
+      "research",
+      "dev-practices",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "2M",
     "notes": "",
     "enriched": true,
-    "content": "TurboQuant: 3-bit KV cache compression. Claims 6x memory compression, 8x speedup, zero accuracy loss. Runs 100K token conversations on 16GB M2 MacBook. Free algorithm from free paper.",
-    "enrichment_status": "legacy-ok"
+    "content": "BuBBliK @k1rallik. Personal story: paying $200/mo for cloud AI APIs on an M2 MacBook (16GB); local models were garbage past 4K tokens; applied 3-bit KV cache compression (TurboQuant) and now runs 100K-token conversations at cloud-identical quality, cancelled subscriptions. QUOTE ARTICLE: 'The algorithm that crashed Wall Street' - TurboQuant compresses AI memory 6x, 8x faster, zero accuracy loss, free (hype 'crashed memory stocks' framing). 2M views. research, dev-practices, questionable.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-29",
@@ -10876,16 +10992,24 @@
     "handle": "@suryanshti777",
     "subject": "Post by Suryansh Tiwari on X",
     "url": "https://x.com/suryanshti777/status/2037892411666645363",
-    "summary": "Cheat sheet mapping 21 real agent design patterns — prompt chaining, routing, parallelization, reflection, tool use, planning, multi-agent, memory management, MCP, RAG, guardrails, evaluation, and more. Solid reference doc for anyone building agentic systems.",
-    "topics": [],
-    "audience": [],
+    "summary": "Maps 21 agent design patterns: prompt chaining, routing, parallelization, reflection, tool use, planning, multi-agent; then memory management, learning/adaptation, MCP, goal monitoring, human-in-the-loop, RAG; and advanced: A2A, resource-aware optimization, reasoning techniques, guardrails, evaluation & monitoring, prioritization, exploration & discovery. Links Agentic-Design-Patterns.pdf.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me"
+    ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
     "enriched": true,
-    "content": "Document mapping 21 agent design patterns: prompt chaining, routing, parallelization, reflection, tool use, planning, multi-agent, memory management, learning/adaptation, MCP, goal monitoring, human-in-the-loop, RAG, guardrails, evaluation.",
-    "enrichment_status": "legacy-ok"
+    "content": "Suryansh Tiwari @Suryanshti777. Maps 21 real agent design patterns from a doc: prompt chaining, routing, parallelization, reflection, tool use, planning, multi-agent; then memory management, learning/adaptation, MCP, goal monitoring, human-in-the-loop, RAG; and advanced: inter-agent communication (A2A), resource-aware optimization, reasoning techniques, guardrails/safety, evaluation & monitoring, prioritization, exploration & discovery. A blueprint for production-grade agents. Links Agentic-Design-Patterns.pdf. 10.5K views. agent-design, dev-practices, skills-mcp.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-29",
@@ -10893,16 +11017,22 @@
     "handle": "@_chenglou",
     "subject": "Post by Cheng Lou on X",
     "url": "https://x.com/_chenglou/status/2037713766205608234",
-    "summary": "Cheng Lou (React/ReasonML creator) released a foundational piece of UI engineering: a fast, accurate, comprehensive userland text measurement algorithm in pure TypeScript that can lay out entire web pages without CSS, bypassing DOM measurements and reflow. 21M+ views, huge community response.",
-    "topics": [],
-    "audience": [],
+    "summary": "Announces a fast, accurate, comprehensive userland text-measurement algorithm in pure TypeScript - lay out entire web pages without CSS, bypassing DOM measurements and reflow. A foundational UI-engineering primitive.",
+    "topics": [
+      "dev-practices"
+    ],
+    "audience": [
+      "me"
+    ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "21.1M",
     "notes": "",
     "enriched": true,
-    "content": "Fast, accurate and comprehensive userland text measurement algorithm in pure TypeScript, usable for laying out entire web pages without CSS, bypassing DOM measurements and reflow.",
-    "enrichment_status": "legacy-ok"
+    "content": "Cheng Lou @_chenglou. Announces a fast, accurate, comprehensive userland text-measurement algorithm in pure TypeScript - lay out entire web pages without CSS, bypassing DOM measurements and reflow. A foundational UI-engineering primitive. 24M views. dev-practices.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-29",
@@ -10910,22 +11040,25 @@
     "handle": "@shannholmberg",
     "subject": "Post by Shann³ on X",
     "url": "https://x.com/shannholmberg/status/2036461256006357409",
-    "summary": "Karpathy's AutoResearch method applied to Claude skills optimization. Ole Lehmann tested it on landing page copy, improving pass rate from 56% to 92% overnight. The method auto-improves any skill on autopilot by running automated evaluations and iterating.",
+    "summary": "'Karpathy's AutoResearch is changing how campaigns get optimized' - Ole Lehmann tested it on landing-page copy: 56% -> 92% pass rate overnight. Links 'How to 10x your Claude Skills (using Karpathy's autoresearch method)' - auto-improve any skill on autopilot (skills fail ~30% of the time unnoticed).",
     "topics": [
       "skills-mcp",
-      "prompting"
+      "prompting",
+      "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "1M",
     "notes": "",
     "enriched": true,
-    "content": "Karpathy's AutoResearch applied to Claude skills. Ole Lehmann tested on landing page copy: 56% to 92% pass rate overnight. Auto-improves any skill on autopilot.",
-    "enrichment_status": "legacy-ok"
+    "content": "Shann @shannholmberg. 'Karpathy's AutoResearch is changing how campaigns get optimized.' Ole Lehmann tested it on landing-page copy: 56% -> 92% pass rate overnight. QUOTE ARTICLE: Ole Lehmann 'How to 10x your Claude Skills (using Karpathy's autoresearch method)' - auto-improve any skill on autopilot (skills fail ~30% of the time unnoticed). 1M views. skills-mcp, prompting, agent-design.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-26",
@@ -10933,22 +11066,25 @@
     "handle": "@rohit4verse",
     "subject": "Post by Rohit on X",
     "url": "https://x.com/rohit4verse/status/2036845273117581676",
-    "summary": "Rohit argues top AI teams win not on model selection but on 'harness engineering' — how you design the agent's interface, manage context windows, cap search results, run linters at edit time, and maintain persistent state files. A teaser thread for an 8,000-word deep dive covering 8 actionable principles for building more reliable AI agents; key insights include: interface shapes model reasoning, context pollution is costly, and forced query refinement beats flooding with results.",
+    "summary": "8,000-word writeup on harness engineering, 8 points: the interface is the agent's mind; the context window isn't a RAM slot (noise competes with signal); cap search results (forces query refinement); lint at edit time not test time; a persistent progress file is the cheapest continuity fix; make completion criteria explicit and binary; one agent, one git worktree; your agent's ceiling is your feedback loop. Links 'The Harness Is Everything: What Cursor, Claude Code, and Perplexity Actually Built.'",
     "topics": [
       "agent-design",
-      "dev-practices"
+      "dev-practices",
+      "claude-code"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "45K",
     "notes": "",
     "enriched": true,
-    "content": "The best AI teams are not winning on models. They are winning on harness engineering. And almost nobody is talking about it.\n\nI spent a week writing 8,000 words on harness engineering.\n\nHere's what actually matters, in 8 points:\n\n>The interface is not decoration. For an LLM agent, the interface is the mind.\n>The context window is not a RAM slot. Every irrelevant token you dump into it competes with the information that actually matters.\n>Capping search results outperforms returning everything. When you force the agent to refine its query instead of flooding it with matches, you turn a failure mode into a feedback loop.\n>Run a linter at edit time, not at test time. A syntax error caught at the moment of writing costs nothing. The same error caught ten steps later cascades into a debugging spiral that burns your entire context budget.\n>A persistent progress file is the cheapest fix in agentic systems.",
-    "enrichment_status": "legacy-ok"
+    "content": "Rohit @rohit4verse. 8,000-word writeup on harness engineering, 8 points: the interface is the agent's mind; the context window isn't a RAM slot (noise competes with signal); capping search results beats returning everything (forces query refinement -> feedback loop); run a linter at edit time not test time; a persistent progress file is the cheapest continuity fix; make completion criteria explicit and binary; one agent, one git worktree; your agent's ceiling is your feedback loop. QUOTE ARTICLE: 'The Harness Is Everything: What Cursor, Claude Code, and Perplexity Actually Built.' 56.6K views. agent-design, dev-practices, claude-code.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-25",
@@ -10956,11 +11092,10 @@
     "handle": "@CodeByPoonam",
     "subject": "Post by Poonam Soni on X",
     "url": "https://x.com/codebypoonam/status/2036517669684519362",
-    "summary": "Teaser thread claiming Anthropic demonstrated a 3-agent system that builds production-quality apps from a single prompt in under 6 hours without human intervention. Architecture details promised in thread. Engagement-farming format ('Breaking') but the underlying multi-agent app-building claim is worth verifying.",
+    "summary": "'Anthropic showed how they get Claude to build full apps in 6 hours without human intervention' - three agents, one prompt, production-quality output. Engagement-y framing of a multi-agent app-building architecture.",
     "topics": [
       "agent-design",
-      "claude-code",
-      "questionable"
+      "claude-code"
     ],
     "audience": [
       "me"
@@ -10970,8 +11105,10 @@
     "views": "78.4K",
     "notes": "",
     "enriched": true,
-    "content": "Breaking: Anthropic just showed how they get Claude to build full apps in 6 hours without human intervention. The architecture is wild. Three agents. One prompt. Production-quality output. Here's how it works:",
-    "enrichment_status": "legacy-ok"
+    "content": "Poonam Soni @CodeByPoonam. 'Anthropic showed how they get Claude to build full apps in 6 hours without human intervention' - three agents, one prompt, production-quality output. Engagement-y framing of a multi-agent app-building architecture. 131.5K views. agent-design, claude-code.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-25",
@@ -10979,23 +11116,25 @@
     "handle": "@grichadev",
     "subject": "Post by Greg Pstrucha on X",
     "url": "https://x.com/grichadev/status/2036472210152718504",
-    "summary": "Greg Pstrucha demonstrates how malicious Claude Code skills can hide instructions inside PNGs and abuse Claude Code's 'expand output' feature to fool both humans and agents — a real security threat. He improved `skill-scanner` (also available via Sentry's Warden at warden.sentry.dev) to catch these attack vectors. Only install skills from trusted sources.",
+    "summary": "Skills are a real attack vector: demonstrates malicious skills hiding instructions to fool humans and agents (gricha.dev/blog/dangerous-skills); known scanners miss many. Favorites: hiding instructions inside a PNG, abusing Claude Code's 'expand output into skills.' Improved skill-scanner (getsentry/skills) + Warden. Guidance: write your own skills, use only trusted/pinned sources or have your agent resynthesize them, don't let agents pull new skills implicitly.",
     "topics": [
       "skills-mcp",
-      "claude-code",
-      "dev-practices"
+      "dev-practices",
+      "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
     "views": "22.7K",
     "notes": "",
     "enriched": true,
-    "content": "skills are a real attack vector, i've been playing with ways in which malicious skills can hide instructions to fool humans and agents. I tested some known scanners and they haven't caught quite a few of these issues. you should only pull from trusted sources. I've improved skill-scanner (github.com/getsentry/skills) - you can run it directly in claude code or run Warden (warden.sentry.dev). Favorites: Hiding instructions inside PNG; Abusing Claude Code's expand output into skills functionality.",
-    "enrichment_status": "legacy-ok"
+    "content": "Greg Pstrucha @grichadev. Skills are a real attack vector: demonstrates malicious skills hiding instructions to fool humans and agents (gricha.dev/blog/dangerous-skills), and known scanners miss many. Favorites: hiding instructions inside a PNG, and abusing Claude Code's 'expand output into skills' functionality. Improved skill-scanner (getsentry/skills) + Warden (warden.sentry.dev). Guidance: write your own skills, use only trusted/pinned sources or have your agent resynthesize them, don't let agents pull new skills implicitly or trust marketplaces without validation. 30.9K views. skills-mcp, dev-practices, agent-design.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-25",
@@ -11003,22 +11142,25 @@
     "handle": "@denisyurchak",
     "subject": "Post by Denis Yurchak on X",
     "url": "https://x.com/denisyurchak/status/2036422883350544519",
-    "summary": "Denis Yurchak shares a Claude prompt (.md file) that fully automates secure Hetzner VPS setup in one shot — configures SSH hardening, fail2ban, UFW firewall, and optionally Tailscale. Buy the server, install Claude, paste the prompt. Open source, PRs welcome. Practical Claude-as-sysadmin pattern.",
+    "summary": "Runs 6 Hetzner servers and made a .md prompt for a one-shot secure-VPS setup via Claude (usable with Termius): SSH, fail2ban, UFW firewall, optional Tailscale. Buy a Hetzner VPS, install Claude, give it the prompt. Shout-out to levelsio.",
     "topics": [
       "dev-practices",
+      "skills-mcp",
       "claude-code"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "now",
     "sourceType": "tweet",
     "views": "60.6K",
     "notes": "",
     "enriched": true,
-    "content": "I have 6 Hetzner servers. I noticed each new server requires the same security setup steps. Created a .md file with a prompt for Claude that sets up a secure VPS usable with Termius in one prompt. Sets up SSH, fail2ban, UFW firewall, and optionally Tailscale. Buy a Hetzner VPS, install Claude, give it the prompt. Open source, shoutout to @levelsio.",
-    "enrichment_status": "legacy-ok"
+    "content": "Denis Yurchak @denisyurchak. Runs 6 Hetzner servers (OpenClaw, Claude coding, websites) and made a .md prompt that gives Claude a one-shot secure-VPS setup (usable with Termius): SSH, fail2ban, UFW firewall, optional Tailscale. Buy a Hetzner VPS, install Claude, give it the prompt. Shout-out to levelsio. 63.8K views. dev-practices, skills-mcp, claude-code.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-25",
@@ -11026,24 +11168,25 @@
     "handle": "@MillieMarconnni",
     "subject": "Post by Millie Marconi on X",
     "url": "https://x.com/milliemarconnni/status/2036363493478375797",
-    "summary": "A Claude Code skill (/last30days) scans Reddit and X from the past 30 days on any topic and generates copy-paste-ready prompts based on what's actually working in the community right now — not months-old advice. Works for any domain (Midjourney, Cursor rules, legal prompts, etc.). Open source, MIT license.",
+    "summary": "A Claude Code skill that scans Reddit and X from the last 30 days on any topic and writes copy-paste-ready prompts from what the community has actually figured out. Type /last30days <topic> for top current patterns + a ready prompt; works for prompting, Midjourney, Suno, Cursor rules, etc. Open source, MIT.",
     "topics": [
-      "claude-code",
       "skills-mcp",
       "prompting",
-      "questionable"
+      "agent-design"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "403.5K",
     "notes": "",
     "enriched": true,
-    "content": "Someone built a Claude Code skill that scans Reddit and X from the last 30 days on any topic you give it, then writes copy-paste-ready prompts based on what the community has actually figured out. You type /last30days prompting techniques for ChatGPT for legal questions and it returns the top patterns real lawyers and power users are using right now, complete with a fully written prompt. No more Googling. Works for anything - Midjourney techniques, Suno music prompts, Cursor rules, trending topics. 100% Open Source. MIT License.",
-    "enrichment_status": "legacy-ok"
+    "content": "Millie Marconi @MillieMarconnni. A Claude Code skill that scans Reddit and X from the last 30 days on any topic and writes copy-paste-ready prompts from what the community has actually figured out (not stale techniques). Type /last30days <topic> and get top current patterns + a ready prompt. Works for prompting, Midjourney, Suno, Cursor rules, etc. Open source, MIT. 485.7K views. skills-mcp, prompting, agent-design.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-24",
@@ -11051,22 +11194,25 @@
     "handle": "@FactoryAI",
     "subject": "Post by Factory on X",
     "url": "https://x.com/factoryai/status/2036184745059688923",
-    "summary": "Factory launches \"Missions\" — long-running agentic workflows now available to all users, built to automate large software tasks like app development from scratch, codebases migrations, and AI research. Strong signal that autonomous multi-step coding agents are going mainstream.",
+    "summary": "Factory Missions now available to all users - long-running agents designed to automate large software tasks like building applications from scratch, migrations, and AI research.",
     "topics": [
       "agent-design",
-      "industry"
+      "industry",
+      "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "166.6K",
     "notes": "",
     "enriched": true,
-    "content": "Factory @FactoryAI: Missions are now available to all Factory users. Long-running agents designed to automate large software tasks like building applications from scratch, migrations, and AI research.",
-    "enrichment_status": "legacy-ok"
+    "content": "Factory @FactoryAI. Missions now available to all Factory users - long-running agents designed to automate large software tasks like building applications from scratch, migrations, and AI research. 229.8K views. agent-design, industry, dev-practices.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-22",
