@@ -893,12 +893,16 @@ def run_all_mechanical_passes(db_path: Path = DEFAULT_DB,
 # ~1500 (mostly noise). 0.78 sits at the elbow of the score distribution.
 # Tune by use — the latent gate paragraph applies here too.
 #
-# 2026-07-17: raised 0.78 -> 0.83 after a curate pass. Once the latent gate
+# 2026-07-17: settled on 0.80 after a curate pass. Once the latent gate
 # opened, 0.78 produced ~15:1 noise (592 semantic candidates, only ~34 worth
-# reviewing; nothing below 0.82 survived triage). 0.83 keeps the strong,
-# genuinely on-concept matches (harness-engineering hits landed 0.83-0.89)
-# and drops the vocabulary-overlap false positives that dominated below it.
-SEMANTIC_CENTROID_THRESHOLD = 0.83
+# reviewing). Briefly tried 0.83, but that was too aggressive: genuine
+# matches promoted that day ran as low as 0.821 (e.g. a "Loop Engineering"
+# post, a CLAUDE.md-as-control-layer post), so 0.83 would have silently
+# dropped real evidence. 0.80 sits just below the observed true-positive
+# floor with a small cushion — deliberately biased toward recall, since a
+# missed match is a harder-to-recover unknown-unknown than a false positive
+# is to dismiss in curation.
+SEMANTIC_CENTROID_THRESHOLD = 0.80
 
 # Don't centroid-match concepts with too few canonical edges — a single-post
 # concept's centroid is just that post's embedding, which collapses to a
