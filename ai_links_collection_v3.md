@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-07-17T15:08:59Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-17T16:10:00Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-17** — [Tom Dörr](https://x.com/tom_doerr/status/2078092209702813714) — *now • Agent Design • 6,428 views • v1 enriched*  
@@ -23,15 +23,15 @@
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **agent harness engineering** (39 posts, +5 this week)  
+- **agent harness engineering** (53 posts, +7 this week)  
   Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
-    - 2026-07-06 — [kaize](https://x.com/0x_kaize/status/2073743517155774641): kaize shares a 'Loop engineering' reading list, arguing 2026 agents are less about smarter prompts and more about longer runs — the real que…
-    - 2026-07-06 — [Anatoli Kopadze](https://x.com/anatolikopadze/status/2068328135611822149): Anatoli Kopadze's widely-viewed piece 'Loops explained: Claude, GPT, Mira and what actually works' argues most people use AI the slow way (t…
+    - 2026-07-17 — [Alex Prompter](https://x.com/alex_prompter/status/2077774842649247903): 'Harness engineering 101' thread: argues Agent = Model + Harness, where the harness is the software layer around a model (context, tool/perm…
+    - 2026-07-13 — [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610): Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a …
 
-- **vector / hybrid databases as agent-memory infrastructure** (46 posts, +1 this week)  
+- **vector / hybrid databases as agent-memory infrastructure** (47 posts, +2 this week)  
   HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
+    - 2026-07-17 — [Paul Iusztin](https://x.com/pauliusztin_/status/2078094872717017107): On 'wiki memory' as an emerging agent-memory pattern (quoting Harrison Chase). Describes combining project-scoped LLM wikis built from perso…
     - 2026-07-07 — [How To Prompt](https://x.com/howtoprompt__/status/2074122800961614184): How To Prompt (hype framing: "China has killed the vector database industry") flags Tencent's newly open-sourced TencentDB Agent Memory — lo…
-    - 2026-06-27 — [Brady Long](https://x.com/thisguyknowsai/status/2070445026233172314): Promo-styled writeup of MemPalace, an open-source local AI memory tool (49K stars). Instead of dumping everything into semantic search, it o…
 
 - **agent identity files (SOUL.md, CLAUDE.md, persona scaffolds)** (28 posts, +1 this week)  
   Recurring pattern of giving an agent a persistent identity file that loads automatically and shapes behavior.
