@@ -1,24 +1,24 @@
 # AI Links Collection
-**Total Posts**: 702  
-**Date Range**: 2024-06-11 – 2026-07-16  
-**Enriched**: 701/702 (99%)
+**Total Posts**: 714  
+**Date Range**: 2024-06-11 – 2026-07-17  
+**Enriched**: 713/714 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-07-16T21:18:41Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-17T15:08:59Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
-- **2026-07-09** — [Kodus](https://kodus.io/self-hosted-ai-code-review/) — *now • Dev Practices • v1 enriched*  
-  Kodus (github.com/kodustech/kodus-ai) — open-source AGPLv3 self-hosted AI code review. The full PR-review pipeline (Kody agent) runs on your own infrastructure with bring-your-own-LLM: it posts line-anchored inline comments covering logic/security/performance (or 'deep mode' with parallel bug/security/performance specialists), keeps source code, LLM calls, and audit trails inside your VPC, and supports GitHub Enterprise Server / GitLab Self-Managed / Bitbucket DC and air-gapped deploys. Jeremy flagged it to evaluate for work code reviews.
-- **2026-07-16** — [Aaron Levie](https://x.com/levie/status/2077526010753581156) — *near-term • Management • v1 enriched*  
-  Aaron Levie's notes from a dinner with enterprise IT leaders on agent adoption: change management is the biggest blocker (processes and data pipelines must be modernized to work with agents), embedding engineers directly into business functions as internal forward-deployed engineers dramatically accelerates successful agent rollouts, and the technical function is becoming more strategically important than ever.
-- **2026-07-16** — [0xSero](https://x.com/0xsero/status/2077488957999173936) — *near-term • Research • 62.3K views • v1 enriched*  
-  0xSero highlights Thinking Machines' launch of Inkling (thinkingmachines.ai/news/introducing-inkling), a 950B-parameter American open-weight model that reasons across text, image, and audio modalities with full weights released. Available for fine-tuning on Thinking Machines' Tinker platform and via the Inkling Playground.
-- **2026-07-16** — [Superman](https://x.com/thesupermanmx/status/2077321341490090486) — *near-term • Research • 7,028 views • v1 enriched*  
-  turbovec (github.com/RyanCodrai/turbovec) is a vector index built on TurboQuant, written in Rust with Python bindings — a performance-oriented approximate nearest-neighbor index relevant to embedding search and RAG pipelines.
-- **2026-07-15** — [Ashpreet Bedi](https://x.com/ashpreetbedi/status/2077169299777531942) — *near-term • Agent Design • 6,019 views • v1 enriched*  
-  Ashpreet Bedi (Agno) shares a new post, Self-Driving Agent Infrastructure (ashpreetbedi.com/self-driving-agent-infrastructure), arguing AI/software engineering is the first domain to gain autonomous 'self-driving' capabilities, and walking through how he built his self-driving agent platform.
+- **2026-07-17** — [Tom Dörr](https://x.com/tom_doerr/status/2078092209702813714) — *now • Agent Design • 6,428 views • v1 enriched*  
+  Hyperresearch turns Claude Code into a deep-research agent: a 16-step pipeline that gathers web sources into a persistent vault and generates adversarially-audited reports with full source provenance. Repo: github.com/jordan-gibbs/hyperresearch.
+- **2026-07-17** — [Paul Hudson](https://x.com/twostraws/status/2078039730759811369) — *now • Prompting • 33.4K views • v1 enriched*  
+  Shares a reusable 'adversarial unit test sweep' prompt (set Codex/Sol to Ultra reasoning): deliberately target edge cases, malformed inputs, race conditions, boundary values, resource exhaustion, state corruption, and invalid assumptions; make every test earn its place, remove or consolidate weak/redundant tests, fix every failing test, add permanent regression tests for each bug found, and repeat until the suite passes cleanly with strong coverage. Argues AI-driven adversarial test review is one of the easiest high-value practices to adopt.
+- **2026-07-17** — [Bryan](https://x.com/so_sthbryan/status/2077972561464611136) — *now • Skills & MCP • 1,075 views • v1 enriched*  
+  Stripe open-sourced its internal AI toolkit at github.com/stripe/ai — a multi-IDE agent setup shipping Claude, Codex, and Cursor plugins plus providers, evals, and reusable skills; TypeScript-first, ~1.7k stars. Positioned as a production starting point for building AI-powered payments products.
+- **2026-07-17** — [ClaudeDevs](https://x.com/claudedevs/status/2077489907350856038) — *now • Claude Code • 1.4M views • v1 enriched*  
+  Announces that Claude Code artifacts can now call MCP connectors, letting you build dashboards and apps that fetch information and take actions for each viewer on demand. Available on Pro, Max, Team, and Enterprise plans; not available on publicly-shared artifacts.
+- **2026-07-17** — [Paul Iusztin](https://x.com/pauliusztin_/status/2078094872717017107) — *near-term • Agent Design • 1,554 views • v1 enriched*  
+  On 'wiki memory' as an emerging agent-memory pattern (quoting Harrison Chase). Describes combining project-scoped LLM wikis built from personal notes/research with a FastMCP server serving unified memory: instead of RAG over raw documents each time, the agent incrementally builds a small structured Markdown wiki as local working knowledge, with the MCP server handling search, build, sync, and persist. The wiki stays local so you can swap Claude Code for Codex without changing how memory works. Avoids needing GraphRAG across the whole corpus.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
@@ -59,21 +59,33 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 387 | 55.1% |
-| claude-code | 170 | 24.2% |
-| dev-practices | 291 | 41.5% |
-| skills-mcp | 162 | 23.1% |
-| prompting | 104 | 14.8% |
-| research | 171 | 24.4% |
-| industry | 96 | 13.7% |
-| management | 110 | 15.7% |
-| questionable | 102 | 14.5% |
-| general | 99 | 14.1% |
+| agent-design | 398 | 55.7% |
+| claude-code | 174 | 24.4% |
+| dev-practices | 298 | 41.7% |
+| skills-mcp | 166 | 23.2% |
+| prompting | 107 | 15.0% |
+| research | 173 | 24.2% |
+| industry | 99 | 13.9% |
+| management | 112 | 15.7% |
+| questionable | 103 | 14.4% |
+| general | 100 | 14.0% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-07-17 | Paul Iusztin | agent-design | On 'wiki memory' as an emerging agent-memory pattern (quoting Harrison... |
+| 2026-07-17 | Tom Dörr | agent-design | Hyperresearch turns Claude Code into a deep-research agent: a 16-step... |
+| 2026-07-17 | Paul Hudson | prompting | Shares a reusable 'adversarial unit test sweep' prompt (set Codex/Sol... |
+| 2026-07-17 | Bryan | skills-mcp | Stripe open-sourced its internal AI toolkit at github.com/stripe/ai —... |
+| 2026-07-17 | Boris Cherny | management | Boris Cherny (Claude Code) on AI adoption: everywhere he looks, one en... |
+| 2026-07-17 | Modal | agent-design | Modal engineering post on scaling to 1 million concurrent sandboxes, c... |
+| 2026-07-17 | Harrison Chase | agent-design | Harrison Chase (co-founder of LangChain) argues there needs to be an O... |
+| 2026-07-17 | Amjad Masad | management | Amjad Masad (Replit) on 'The Self-Driving Company': over the past six... |
+| 2026-07-17 | Alex Prompter | agent-design | 'Harness engineering 101' thread: argues Agent = Model + Harness, wher... |
+| 2026-07-17 | ClaudeDevs | claude-code | Announces that Claude Code artifacts can now call MCP connectors, lett... |
+| 2026-07-17 | h100envy | agent-design | Walks through building a 'swarm of agents' for multi-angle analysis: s... |
+| 2026-07-17 | argofowl | prompting | Introduces namethatui.com — a dictionary for UI elements you can see b... |
 | 2026-07-16 | Aaron Levie | management | Aaron Levie's notes from a dinner with enterprise IT leaders on agent... |
 | 2026-07-16 | 0xSero | research | 0xSero highlights Thinking Machines' launch of Inkling (thinkingmachin... |
 | 2026-07-16 | Superman | research | turbovec (github.com/RyanCodrai/turbovec) is a vector index built on T... |
@@ -112,23 +124,33 @@
 | 2026-07-04 | Archive | claude-code | Archive (engagement framing, 'met an Anthropic engineer making $1.2M')... |
 | 2026-07-04 | ℏεsam | management | [Jeremy flagged: read for work] hesam recommends Phil Chen's article '... |
 | 2026-07-04 | Thariq | prompting | Thariq shares his article 'A Field Guide to Fable: Finding Your Unknow... |
-| 2026-07-04 | Daniel Miessler | prompting | Daniel Miessler shares a set of 'prompts to run now that you have Fabl... |
-| 2026-07-04 | Akshay | agent-design | Akshay Pachaar summarizes a Hugging Face blog post on 'evolving the ha... |
-| 2026-07-04 | Rahul | agent-design | Rahul shares a free 'Loop Library' (signals.forwardfuture.com/loop-lib... |
-| 2026-07-02 | Dhilip Subramanian | claude-code | Dhilip walks through his 7-skill Claude Code setup and what each earns... |
-| 2026-07-02 | Andrew Ng | agent-design | Andrew Ng's 'loop engineering' letter lays out three nested loops for... |
-| 2026-06-29 | Akshay | agent-design | Walkthrough of Google's Agents CLI as tooling for Karpathy's "agentic... |
-| 2026-06-29 | Boris Cherny | management | As engineering/product/design/DS roles blur, Cherny proposes five team... |
-| 2026-06-27 | zostaff | agent-design | Long-form "Loop Engineering" article: four autonomous loops that actua... |
-| 2026-06-27 | Brian Armstrong | management | Coinbase's playbook for keeping AI spend flat while token usage grows:... |
-| 2026-06-27 | Prajwal Tomar | agent-design | Pro tip framed around the author's promotional "Hermes Agent" article:... |
-| 2026-06-27 | Brady Long | skills-mcp | Promo-styled writeup of MemPalace, an open-source local AI memory tool... |
-| 2026-06-25 | Alex Lieberman | management | A "5 levels of work" framework for teaching high agency (credited to @... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (387)
+### Agent Design (398)
+
+- [Paul Iusztin](https://x.com/pauliusztin_/status/2078094872717017107) — 2026-07-17: On 'wiki memory' as an emerging agent-memory pattern (quoting Harrison Chase). Describes combining project-scoped LLM wikis built from personal notes/research with a FastMCP server serving unified memory: instead of RAG over raw documents each time, the agent incrementally builds a small structured Markdown wiki as local working knowledge, with the MCP server handling search, build, sync, and persist. The wiki stays local so you can swap Claude Code for Codex without changing how memory works. Avoids needing GraphRAG across the whole corpus.
+
+- [Tom Dörr](https://x.com/tom_doerr/status/2078092209702813714) — 2026-07-17: Hyperresearch turns Claude Code into a deep-research agent: a 16-step pipeline that gathers web sources into a persistent vault and generates adversarially-audited reports with full source provenance. Repo: github.com/jordan-gibbs/hyperresearch.
+
+- [Paul Hudson](https://x.com/twostraws/status/2078039730759811369) — 2026-07-17: Shares a reusable 'adversarial unit test sweep' prompt (set Codex/Sol to Ultra reasoning): deliberately target edge cases, malformed inputs, race conditions, boundary values, resource exhaustion, state corruption, and invalid assumptions; make every test earn its place, remove or consolidate weak/redundant tests, fix every failing test, add permanent regression tests for each bug found, and repeat until the suite passes cleanly with strong coverage. Argues AI-driven adversarial test review is one of the easiest high-value practices to adopt.
+
+- [Bryan](https://x.com/so_sthbryan/status/2077972561464611136) — 2026-07-17: Stripe open-sourced its internal AI toolkit at github.com/stripe/ai — a multi-IDE agent setup shipping Claude, Codex, and Cursor plugins plus providers, evals, and reusable skills; TypeScript-first, ~1.7k stars. Positioned as a production starting point for building AI-powered payments products.
+
+- [Boris Cherny](https://x.com/bcherny/status/2077929379661844559) — 2026-07-17: Boris Cherny (Claude Code) on AI adoption: everywhere he looks, one engineer is 10x'ing output with Claude while the rest of the org hasn't caught up. Maps the recurring pattern into 4 steps of AI adoption, shared as a 'Steps of AI Adoption' claude.ai artifact.
+
+- [Modal](https://x.com/modal/status/2077855275046838720) — 2026-07-17: Modal engineering post on scaling to 1 million concurrent sandboxes, creating all of them in under a minute. They rebuilt the sandbox control plane to remove central coordination: horizontally-scaled scheduling servers run a fast in-memory load-balancing algorithm, each worker is its own source of truth publishing state to a Redis stream, and no datastore sits in the sandbox-creation critical path (two network hops + one CPU op). Contrasts with Kubernetes/etcd O(nodes) and O(pods) bottlenecks; median sandbox start stays under 0.5s at scale.
+
+- [Harrison Chase](https://x.com/hwchase17/status/2077806939074081259) — 2026-07-17: Harrison Chase (co-founder of LangChain) argues there needs to be an OPEN standard for agent memory and points to OKF (Open Knowledge Format), which they're now using in OpenWiki. Quotes Brace Sproul announcing OpenWiki 0.2 adopting the OKF spec — OpenWiki is an open-source CLI that generates and maintains a wiki for your codebase, connects it to your coding agent, and keeps the docs up to date.
+
+- [Amjad Masad](https://x.com/amasad/status/2077803734990815306) — 2026-07-17: Amjad Masad (Replit) on 'The Self-Driving Company': over the past six months Replit engineers nearly tripled code output while review times held steady, support resolved its hardest tickets 60% faster, and anyone could query the business like an analyst. Argues a new kind of organization is emerging — one that learns to operate itself.
+
+- [Alex Prompter](https://x.com/alex_prompter/status/2077774842649247903) — 2026-07-17: 'Harness engineering 101' thread: argues Agent = Model + Harness, where the harness is the software layer around a model (context, tool/permission, verification, memory/state, and safety/sandbox layers). Frames two July 2026 incidents (a ChatGPT Work agent wiping a home directory; xAI's Grok CLI exfiltrating developer repos) as harness failures, and profiles four setups: Anthropic's initializer/planner/coder/fresh-eyes-evaluator, OpenAI's 'repo is the only reality,' Mitchell Hashimoto's one-rule-per-failure, and Continue's shell-aware command parsing. Engagement-farmed framing (save/repost CTAs, product plug) but genuinely substantive.
+
+- [ClaudeDevs](https://x.com/claudedevs/status/2077489907350856038) — 2026-07-17: Announces that Claude Code artifacts can now call MCP connectors, letting you build dashboards and apps that fetch information and take actions for each viewer on demand. Available on Pro, Max, Team, and Enterprise plans; not available on publicly-shared artifacts.
+
+- [h100envy](https://x.com/h100envy/status/2077371640690672001) — 2026-07-17: Walks through building a 'swarm of agents' for multi-angle analysis: several LLM experts, each given a hard-set role and bias (one thinks only about money, another only technical risk, a third only the user), independently evaluate one decision and then a forced reconciliation merges their conflicting conclusions into a better outcome than any single averaged view. Ships full code for the orchestrator, experts, and merge step.
 
 - [Aaron Levie](https://x.com/levie/status/2077526010753581156) — 2026-07-16: Aaron Levie's notes from a dinner with enterprise IT leaders on agent adoption: change management is the biggest blocker (processes and data pipelines must be modernized to work with agents), embedding engineers directly into business functions as internal forward-deployed engineers dramatically accelerates successful agent rollouts, and the technical function is becoming more strategically important than ever.
 
@@ -904,7 +926,15 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Claude Code (170)
+### Claude Code (174)
+
+- [Tom Dörr](https://x.com/tom_doerr/status/2078092209702813714) — 2026-07-17: Hyperresearch turns Claude Code into a deep-research agent: a 16-step pipeline that gathers web sources into a persistent vault and generates adversarially-audited reports with full source provenance. Repo: github.com/jordan-gibbs/hyperresearch.
+
+- [Boris Cherny](https://x.com/bcherny/status/2077929379661844559) — 2026-07-17: Boris Cherny (Claude Code) on AI adoption: everywhere he looks, one engineer is 10x'ing output with Claude while the rest of the org hasn't caught up. Maps the recurring pattern into 4 steps of AI adoption, shared as a 'Steps of AI Adoption' claude.ai artifact.
+
+- [Alex Prompter](https://x.com/alex_prompter/status/2077774842649247903) — 2026-07-17: 'Harness engineering 101' thread: argues Agent = Model + Harness, where the harness is the software layer around a model (context, tool/permission, verification, memory/state, and safety/sandbox layers). Frames two July 2026 incidents (a ChatGPT Work agent wiping a home directory; xAI's Grok CLI exfiltrating developer repos) as harness failures, and profiles four setups: Anthropic's initializer/planner/coder/fresh-eyes-evaluator, OpenAI's 'repo is the only reality,' Mitchell Hashimoto's one-rule-per-failure, and Continue's shell-aware command parsing. Engagement-farmed framing (save/repost CTAs, product plug) but genuinely substantive.
+
+- [ClaudeDevs](https://x.com/claudedevs/status/2077489907350856038) — 2026-07-17: Announces that Claude Code artifacts can now call MCP connectors, letting you build dashboards and apps that fetch information and take actions for each viewer on demand. Available on Pro, Max, Team, and Enterprise plans; not available on publicly-shared artifacts.
 
 - [Alex Prompter](https://x.com/alex_prompter/status/2074198124898181121) — 2026-07-14: Alex Prompter's thread pitches 'cloning' Fable 5's reasoning into Opus 4.8 before Fable 5 shifts to pay-per-use credits — extracting a model's 'operating manual' as a portable prompt and transplanting it onto a cheaper model to keep the way it thinks rather than the model itself. Engagement-framed but a real prompt-portability technique.
 
@@ -1246,7 +1276,21 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (291)
+### Dev Practices (298)
+
+- [Tom Dörr](https://x.com/tom_doerr/status/2078092209702813714) — 2026-07-17: Hyperresearch turns Claude Code into a deep-research agent: a 16-step pipeline that gathers web sources into a persistent vault and generates adversarially-audited reports with full source provenance. Repo: github.com/jordan-gibbs/hyperresearch.
+
+- [Paul Hudson](https://x.com/twostraws/status/2078039730759811369) — 2026-07-17: Shares a reusable 'adversarial unit test sweep' prompt (set Codex/Sol to Ultra reasoning): deliberately target edge cases, malformed inputs, race conditions, boundary values, resource exhaustion, state corruption, and invalid assumptions; make every test earn its place, remove or consolidate weak/redundant tests, fix every failing test, add permanent regression tests for each bug found, and repeat until the suite passes cleanly with strong coverage. Argues AI-driven adversarial test review is one of the easiest high-value practices to adopt.
+
+- [Bryan](https://x.com/so_sthbryan/status/2077972561464611136) — 2026-07-17: Stripe open-sourced its internal AI toolkit at github.com/stripe/ai — a multi-IDE agent setup shipping Claude, Codex, and Cursor plugins plus providers, evals, and reusable skills; TypeScript-first, ~1.7k stars. Positioned as a production starting point for building AI-powered payments products.
+
+- [Modal](https://x.com/modal/status/2077855275046838720) — 2026-07-17: Modal engineering post on scaling to 1 million concurrent sandboxes, creating all of them in under a minute. They rebuilt the sandbox control plane to remove central coordination: horizontally-scaled scheduling servers run a fast in-memory load-balancing algorithm, each worker is its own source of truth publishing state to a Redis stream, and no datastore sits in the sandbox-creation critical path (two network hops + one CPU op). Contrasts with Kubernetes/etcd O(nodes) and O(pods) bottlenecks; median sandbox start stays under 0.5s at scale.
+
+- [Harrison Chase](https://x.com/hwchase17/status/2077806939074081259) — 2026-07-17: Harrison Chase (co-founder of LangChain) argues there needs to be an OPEN standard for agent memory and points to OKF (Open Knowledge Format), which they're now using in OpenWiki. Quotes Brace Sproul announcing OpenWiki 0.2 adopting the OKF spec — OpenWiki is an open-source CLI that generates and maintains a wiki for your codebase, connects it to your coding agent, and keeps the docs up to date.
+
+- [Alex Prompter](https://x.com/alex_prompter/status/2077774842649247903) — 2026-07-17: 'Harness engineering 101' thread: argues Agent = Model + Harness, where the harness is the software layer around a model (context, tool/permission, verification, memory/state, and safety/sandbox layers). Frames two July 2026 incidents (a ChatGPT Work agent wiping a home directory; xAI's Grok CLI exfiltrating developer repos) as harness failures, and profiles four setups: Anthropic's initializer/planner/coder/fresh-eyes-evaluator, OpenAI's 'repo is the only reality,' Mitchell Hashimoto's one-rule-per-failure, and Continue's shell-aware command parsing. Engagement-farmed framing (save/repost CTAs, product plug) but genuinely substantive.
+
+- [argofowl](https://x.com/argofowl/status/2076284369883615555) — 2026-07-17: Introduces namethatui.com — a dictionary for UI elements you can see but can't name, built by a designer to lower the friction of describing UI when prompting coding agents. It learns from usage: every search teaches the site new words and grows a built-in pocket dictionary.
 
 - [Superman](https://x.com/thesupermanmx/status/2077321341490090486) — 2026-07-16: turbovec (github.com/RyanCodrai/turbovec) is a vector index built on TurboQuant, written in Rust with Python bindings — a performance-oriented approximate nearest-neighbor index relevant to embedding search and RAG pipelines.
 
@@ -1830,7 +1874,15 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Skills & MCP (162)
+### Skills & MCP (166)
+
+- [Paul Iusztin](https://x.com/pauliusztin_/status/2078094872717017107) — 2026-07-17: On 'wiki memory' as an emerging agent-memory pattern (quoting Harrison Chase). Describes combining project-scoped LLM wikis built from personal notes/research with a FastMCP server serving unified memory: instead of RAG over raw documents each time, the agent incrementally builds a small structured Markdown wiki as local working knowledge, with the MCP server handling search, build, sync, and persist. The wiki stays local so you can swap Claude Code for Codex without changing how memory works. Avoids needing GraphRAG across the whole corpus.
+
+- [Bryan](https://x.com/so_sthbryan/status/2077972561464611136) — 2026-07-17: Stripe open-sourced its internal AI toolkit at github.com/stripe/ai — a multi-IDE agent setup shipping Claude, Codex, and Cursor plugins plus providers, evals, and reusable skills; TypeScript-first, ~1.7k stars. Positioned as a production starting point for building AI-powered payments products.
+
+- [Harrison Chase](https://x.com/hwchase17/status/2077806939074081259) — 2026-07-17: Harrison Chase (co-founder of LangChain) argues there needs to be an OPEN standard for agent memory and points to OKF (Open Knowledge Format), which they're now using in OpenWiki. Quotes Brace Sproul announcing OpenWiki 0.2 adopting the OKF spec — OpenWiki is an open-source CLI that generates and maintains a wiki for your codebase, connects it to your coding agent, and keeps the docs up to date.
+
+- [ClaudeDevs](https://x.com/claudedevs/status/2077489907350856038) — 2026-07-17: Announces that Claude Code artifacts can now call MCP connectors, letting you build dashboards and apps that fetch information and take actions for each viewer on demand. Available on Pro, Max, Team, and Enterprise plans; not available on publicly-shared artifacts.
 
 - [JoePro](https://x.com/joepro/status/2076877282312954311) — 2026-07-14: JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skill spec) engineered to produce distinctive, production-grade UIs that avoid recognizable AI-generated tropes — covering success criteria (signature visual identity, complete states, WCAG AA accessibility, token-driven design systems) and a context-gathering routine before writing code.
 
@@ -2156,7 +2208,13 @@
 
 - [Mervin Praison](https://x.com/mervinpraison/status/1881788246684013011) — 2025-01-22: Shows a 100% local RAG AI agent with reasoning: DeepSeek via Ollama for the LLM, PraisonAI to build the agent in a few lines, Nomic embeddings, and a Streamlit UI—code included in the thread.
 
-### Prompting (104)
+### Prompting (107)
+
+- [Paul Hudson](https://x.com/twostraws/status/2078039730759811369) — 2026-07-17: Shares a reusable 'adversarial unit test sweep' prompt (set Codex/Sol to Ultra reasoning): deliberately target edge cases, malformed inputs, race conditions, boundary values, resource exhaustion, state corruption, and invalid assumptions; make every test earn its place, remove or consolidate weak/redundant tests, fix every failing test, add permanent regression tests for each bug found, and repeat until the suite passes cleanly with strong coverage. Argues AI-driven adversarial test review is one of the easiest high-value practices to adopt.
+
+- [h100envy](https://x.com/h100envy/status/2077371640690672001) — 2026-07-17: Walks through building a 'swarm of agents' for multi-angle analysis: several LLM experts, each given a hard-set role and bias (one thinks only about money, another only technical risk, a third only the user), independently evaluate one decision and then a forced reconciliation merges their conflicting conclusions into a better outcome than any single averaged view. Ships full code for the orchestrator, experts, and merge step.
+
+- [argofowl](https://x.com/argofowl/status/2076284369883615555) — 2026-07-17: Introduces namethatui.com — a dictionary for UI elements you can see but can't name, built by a designer to lower the friction of describing UI when prompting coding agents. It learns from usage: every search teaches the site new words and grows a built-in pocket dictionary.
 
 - [JoePro](https://x.com/joepro/status/2076877282312954311) — 2026-07-14: JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skill spec) engineered to produce distinctive, production-grade UIs that avoid recognizable AI-generated tropes — covering success criteria (signature visual identity, complete states, WCAG AA accessibility, token-driven design systems) and a context-gathering routine before writing code.
 
@@ -2366,7 +2424,11 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-### Research (171)
+### Research (173)
+
+- [Paul Iusztin](https://x.com/pauliusztin_/status/2078094872717017107) — 2026-07-17: On 'wiki memory' as an emerging agent-memory pattern (quoting Harrison Chase). Describes combining project-scoped LLM wikis built from personal notes/research with a FastMCP server serving unified memory: instead of RAG over raw documents each time, the agent incrementally builds a small structured Markdown wiki as local working knowledge, with the MCP server handling search, build, sync, and persist. The wiki stays local so you can swap Claude Code for Codex without changing how memory works. Avoids needing GraphRAG across the whole corpus.
+
+- [Tom Dörr](https://x.com/tom_doerr/status/2078092209702813714) — 2026-07-17: Hyperresearch turns Claude Code into a deep-research agent: a 16-step pipeline that gathers web sources into a persistent vault and generates adversarially-audited reports with full source provenance. Repo: github.com/jordan-gibbs/hyperresearch.
 
 - [0xSero](https://x.com/0xsero/status/2077488957999173936) — 2026-07-16: 0xSero highlights Thinking Machines' launch of Inkling (thinkingmachines.ai/news/introducing-inkling), a 950B-parameter American open-weight model that reasons across text, image, and audio modalities with full weights released. Available for fine-tuning on Thinking Machines' Tinker platform and via the Inkling Playground.
 
@@ -2710,7 +2772,13 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.
 
-### Industry (96)
+### Industry (99)
+
+- [Bryan](https://x.com/so_sthbryan/status/2077972561464611136) — 2026-07-17: Stripe open-sourced its internal AI toolkit at github.com/stripe/ai — a multi-IDE agent setup shipping Claude, Codex, and Cursor plugins plus providers, evals, and reusable skills; TypeScript-first, ~1.7k stars. Positioned as a production starting point for building AI-powered payments products.
+
+- [Modal](https://x.com/modal/status/2077855275046838720) — 2026-07-17: Modal engineering post on scaling to 1 million concurrent sandboxes, creating all of them in under a minute. They rebuilt the sandbox control plane to remove central coordination: horizontally-scaled scheduling servers run a fast in-memory load-balancing algorithm, each worker is its own source of truth publishing state to a Redis stream, and no datastore sits in the sandbox-creation critical path (two network hops + one CPU op). Contrasts with Kubernetes/etcd O(nodes) and O(pods) bottlenecks; median sandbox start stays under 0.5s at scale.
+
+- [Amjad Masad](https://x.com/amasad/status/2077803734990815306) — 2026-07-17: Amjad Masad (Replit) on 'The Self-Driving Company': over the past six months Replit engineers nearly tripled code output while review times held steady, support resolved its hardest tickets 60% faster, and anyone could query the business like an analyst. Argues a new kind of organization is emerging — one that learns to operate itself.
 
 - [Aaron Levie](https://x.com/levie/status/2077526010753581156) — 2026-07-16: Aaron Levie's notes from a dinner with enterprise IT leaders on agent adoption: change management is the biggest blocker (processes and data pipelines must be modernized to work with agents), embedding engineers directly into business functions as internal forward-deployed engineers dramatically accelerates successful agent rollouts, and the technical function is becoming more strategically important than ever.
 
@@ -2904,7 +2972,11 @@
 
 - [Santiago](https://x.com/svpino/status/1881336934418755862) — 2025-01-21: Walks through GroundX, an open-source, self-hostable/air-gapped enterprise RAG system. Two services: Ingest (a pretrained vision model that 'understands' documents instead of feeding raw docs to the LLM) and Search (text+vector search with a fine-tuned re-ranker). Santiago's thesis: most teams need better ingestion, not better retrieval; includes a video demo and the free X-Ray inspection tool.
 
-### Management (110)
+### Management (112)
+
+- [Boris Cherny](https://x.com/bcherny/status/2077929379661844559) — 2026-07-17: Boris Cherny (Claude Code) on AI adoption: everywhere he looks, one engineer is 10x'ing output with Claude while the rest of the org hasn't caught up. Maps the recurring pattern into 4 steps of AI adoption, shared as a 'Steps of AI Adoption' claude.ai artifact.
+
+- [Amjad Masad](https://x.com/amasad/status/2077803734990815306) — 2026-07-17: Amjad Masad (Replit) on 'The Self-Driving Company': over the past six months Replit engineers nearly tripled code output while review times held steady, support resolved its hardest tickets 60% faster, and anyone could query the business like an analyst. Argues a new kind of organization is emerging — one that learns to operate itself.
 
 - [Aaron Levie](https://x.com/levie/status/2077526010753581156) — 2026-07-16: Aaron Levie's notes from a dinner with enterprise IT leaders on agent adoption: change management is the biggest blocker (processes and data pipelines must be modernized to work with agents), embedding engineers directly into business functions as internal forward-deployed engineers dramatically accelerates successful agent rollouts, and the technical function is becoming more strategically important than ever.
 
@@ -3126,7 +3198,9 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Points to a superengineer.net blog post as a good summary of Elon Musk's 5-step design/engineering method (DFX).
 
-### Questionable (102)
+### Questionable (103)
+
+- [Alex Prompter](https://x.com/alex_prompter/status/2077774842649247903) — 2026-07-17: 'Harness engineering 101' thread: argues Agent = Model + Harness, where the harness is the software layer around a model (context, tool/permission, verification, memory/state, and safety/sandbox layers). Frames two July 2026 incidents (a ChatGPT Work agent wiping a home directory; xAI's Grok CLI exfiltrating developer repos) as harness failures, and profiles four setups: Anthropic's initializer/planner/coder/fresh-eyes-evaluator, OpenAI's 'repo is the only reality,' Mitchell Hashimoto's one-rule-per-failure, and Continue's shell-aware command parsing. Engagement-farmed framing (save/repost CTAs, product plug) but genuinely substantive.
 
 - [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089) — 2026-07-14: How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with a native AI agent, built-in MCP server, Cowork-style web+local-file agents, scheduled autopilot tasks, 40+ app integrations (Gmail, Slack, Notion, Linear, Figma, Salesforce), and local-model (Ollama) support — drivable from Claude Code or Gemini CLI. Engagement-framed but describes a real agentic-browser tool worth evaluating.
 
@@ -3332,7 +3406,9 @@
 
 - [Aakash Gupta](https://x.com/aakashg0/status/1967135994228166848) — 2025-09-15: Boosts another user's step-by-step roadmap for building your first AI agent, calling it 'gold.' Engagement-style framing; the substantive content lives in the referenced roadmap rather than the post itself.
 
-### General (100)
+### General (101)
+
+- [argofowl](https://x.com/argofowl/status/2076284369883615555) — 2026-07-17: Introduces namethatui.com — a dictionary for UI elements you can see but can't name, built by a designer to lower the friction of describing UI when prompting coding agents. It learns from usage: every search teaches the site new words and grows a built-in pocket dictionary.
 
 - [witcheer](https://x.com/witcheer/status/2076717324585898343) — 2026-07-14: witcheer crowdsourced and hand-tallied 250+ replies on how people run Hermes (Nous Research's open model), distilling community local-deployment setups into six summary stats.
 
@@ -3538,6 +3614,42 @@
 ## Full Chronological List
 
 ### Jul 2026
+
+- **2026-07-17** | [Paul Iusztin](https://x.com/pauliusztin_/status/2078094872717017107) | agent-design, skills-mcp, research
+  On 'wiki memory' as an emerging agent-memory pattern (quoting Harrison Chase). Describes combining project-scoped LLM wikis built from personal notes/research with a FastMCP server serving unified memory: instead of RAG over raw documents each time, the agent incrementally builds a small structured Markdown wiki as local working knowledge, with the MCP server handling search, build, sync, and persist. The wiki stays local so you can swap Claude Code for Codex without changing how memory works. Avoids needing GraphRAG across the whole corpus.
+
+- **2026-07-17** | [Tom Dörr](https://x.com/tom_doerr/status/2078092209702813714) | agent-design, claude-code, research, dev-practices
+  Hyperresearch turns Claude Code into a deep-research agent: a 16-step pipeline that gathers web sources into a persistent vault and generates adversarially-audited reports with full source provenance. Repo: github.com/jordan-gibbs/hyperresearch.
+
+- **2026-07-17** | [Paul Hudson](https://x.com/twostraws/status/2078039730759811369) | prompting, dev-practices, agent-design
+  Shares a reusable 'adversarial unit test sweep' prompt (set Codex/Sol to Ultra reasoning): deliberately target edge cases, malformed inputs, race conditions, boundary values, resource exhaustion, state corruption, and invalid assumptions; make every test earn its place, remove or consolidate weak/redundant tests, fix every failing test, add permanent regression tests for each bug found, and repeat until the suite passes cleanly with strong coverage. Argues AI-driven adversarial test review is one of the easiest high-value practices to adopt.
+
+- **2026-07-17** | [Bryan](https://x.com/so_sthbryan/status/2077972561464611136) | skills-mcp, dev-practices, agent-design, industry
+  Stripe open-sourced its internal AI toolkit at github.com/stripe/ai — a multi-IDE agent setup shipping Claude, Codex, and Cursor plugins plus providers, evals, and reusable skills; TypeScript-first, ~1.7k stars. Positioned as a production starting point for building AI-powered payments products.
+
+- **2026-07-17** | [Boris Cherny](https://x.com/bcherny/status/2077929379661844559) | management, claude-code, agent-design
+  Boris Cherny (Claude Code) on AI adoption: everywhere he looks, one engineer is 10x'ing output with Claude while the rest of the org hasn't caught up. Maps the recurring pattern into 4 steps of AI adoption, shared as a 'Steps of AI Adoption' claude.ai artifact.
+
+- **2026-07-17** | [Modal](https://x.com/modal/status/2077855275046838720) | agent-design, dev-practices, industry
+  Modal engineering post on scaling to 1 million concurrent sandboxes, creating all of them in under a minute. They rebuilt the sandbox control plane to remove central coordination: horizontally-scaled scheduling servers run a fast in-memory load-balancing algorithm, each worker is its own source of truth publishing state to a Redis stream, and no datastore sits in the sandbox-creation critical path (two network hops + one CPU op). Contrasts with Kubernetes/etcd O(nodes) and O(pods) bottlenecks; median sandbox start stays under 0.5s at scale.
+
+- **2026-07-17** | [Harrison Chase](https://x.com/hwchase17/status/2077806939074081259) | agent-design, skills-mcp, dev-practices
+  Harrison Chase (co-founder of LangChain) argues there needs to be an OPEN standard for agent memory and points to OKF (Open Knowledge Format), which they're now using in OpenWiki. Quotes Brace Sproul announcing OpenWiki 0.2 adopting the OKF spec — OpenWiki is an open-source CLI that generates and maintains a wiki for your codebase, connects it to your coding agent, and keeps the docs up to date.
+
+- **2026-07-17** | [Amjad Masad](https://x.com/amasad/status/2077803734990815306) | management, industry, agent-design
+  Amjad Masad (Replit) on 'The Self-Driving Company': over the past six months Replit engineers nearly tripled code output while review times held steady, support resolved its hardest tickets 60% faster, and anyone could query the business like an analyst. Argues a new kind of organization is emerging — one that learns to operate itself.
+
+- **2026-07-17** | [Alex Prompter](https://x.com/alex_prompter/status/2077774842649247903) | agent-design, dev-practices, claude-code, questionable
+  'Harness engineering 101' thread: argues Agent = Model + Harness, where the harness is the software layer around a model (context, tool/permission, verification, memory/state, and safety/sandbox layers). Frames two July 2026 incidents (a ChatGPT Work agent wiping a home directory; xAI's Grok CLI exfiltrating developer repos) as harness failures, and profiles four setups: Anthropic's initializer/planner/coder/fresh-eyes-evaluator, OpenAI's 'repo is the only reality,' Mitchell Hashimoto's one-rule-per-failure, and Continue's shell-aware command parsing. Engagement-farmed framing (save/repost CTAs, product plug) but genuinely substantive.
+
+- **2026-07-17** | [ClaudeDevs](https://x.com/claudedevs/status/2077489907350856038) | claude-code, skills-mcp, agent-design
+  Announces that Claude Code artifacts can now call MCP connectors, letting you build dashboards and apps that fetch information and take actions for each viewer on demand. Available on Pro, Max, Team, and Enterprise plans; not available on publicly-shared artifacts.
+
+- **2026-07-17** | [h100envy](https://x.com/h100envy/status/2077371640690672001) | agent-design, prompting
+  Walks through building a 'swarm of agents' for multi-angle analysis: several LLM experts, each given a hard-set role and bias (one thinks only about money, another only technical risk, a third only the user), independently evaluate one decision and then a forced reconciliation merges their conflicting conclusions into a better outcome than any single averaged view. Ships full code for the orchestrator, experts, and merge step.
+
+- **2026-07-17** | [argofowl](https://x.com/argofowl/status/2076284369883615555) | prompting, dev-practices, general
+  Introduces namethatui.com — a dictionary for UI elements you can see but can't name, built by a designer to lower the friction of describing UI when prompting coding agents. It learns from usage: every search teaches the site new words and grows a built-in pocket dictionary.
 
 - **2026-07-16** | [Aaron Levie](https://x.com/levie/status/2077526010753581156) | management, agent-design, industry
   Aaron Levie's notes from a dinner with enterprise IT leaders on agent adoption: change management is the biggest blocker (processes and data pipelines must be modernized to work with agents), embedding engineers directly into business functions as internal forward-deployed engineers dramatically accelerates successful agent rollouts, and the technical function is becoming more strategically important than ever.
