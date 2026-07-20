@@ -1,12 +1,12 @@
 # AI Links Collection
-**Total Posts**: 714  
-**Date Range**: 2024-06-11 – 2026-07-17  
-**Enriched**: 713/714 (99%)
+**Total Posts**: 715  
+**Date Range**: 2024-06-11 – 2026-07-18  
+**Enriched**: 714/715 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-07-17T16:10:00Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-20T15:04:08Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-17** — [Tom Dörr](https://x.com/tom_doerr/status/2078092209702813714) — *now • Agent Design • 6,428 views • v1 enriched*  
@@ -17,13 +17,13 @@
   Stripe open-sourced its internal AI toolkit at github.com/stripe/ai — a multi-IDE agent setup shipping Claude, Codex, and Cursor plugins plus providers, evals, and reusable skills; TypeScript-first, ~1.7k stars. Positioned as a production starting point for building AI-powered payments products.
 - **2026-07-17** — [ClaudeDevs](https://x.com/claudedevs/status/2077489907350856038) — *now • Claude Code • 1.4M views • v1 enriched*  
   Announces that Claude Code artifacts can now call MCP connectors, letting you build dashboards and apps that fetch information and take actions for each viewer on demand. Available on Pro, Max, Team, and Enterprise plans; not available on publicly-shared artifacts.
-- **2026-07-17** — [Paul Iusztin](https://x.com/pauliusztin_/status/2078094872717017107) — *near-term • Agent Design • 1,554 views • v1 enriched*  
-  On 'wiki memory' as an emerging agent-memory pattern (quoting Harrison Chase). Describes combining project-scoped LLM wikis built from personal notes/research with a FastMCP server serving unified memory: instead of RAG over raw documents each time, the agent incrementally builds a small structured Markdown wiki as local working knowledge, with the MCP server handling search, build, sync, and persist. The wiki stays local so you can swap Claude Code for Codex without changing how memory works. Avoids needing GraphRAG across the whole corpus.
+- **2026-07-18** — [Adam Jacob](https://x.com/adamhjk/status/2077865176632897952) — *near-term • Agent Design • 6,170 views • v1 enriched*  
+  Adam Jacob argues the single best way to cut AI spend is to move deterministic logic into reusable building blocks and reserve frontier-model intelligence only where it's actually needed. He rebuilt a complex code-review skill as a 'swamp workflow' — 8x fewer tokens, half the runtime, 23 sub-agents cut to 3. Full write-up at adamhjk.com (A Practical Guide to Reducing Token Spend).
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **agent harness engineering** (53 posts, +7 this week)  
+- **agent harness engineering** (53 posts, +4 this week)  
   Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
     - 2026-07-17 — [Alex Prompter](https://x.com/alex_prompter/status/2077774842649247903): 'Harness engineering 101' thread: argues Agent = Model + Harness, where the harness is the software layer around a model (context, tool/perm…
     - 2026-07-13 — [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610): Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a …
@@ -59,14 +59,14 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 398 | 55.7% |
-| claude-code | 174 | 24.4% |
-| dev-practices | 298 | 41.7% |
+| agent-design | 399 | 55.8% |
+| claude-code | 174 | 24.3% |
+| dev-practices | 299 | 41.8% |
 | skills-mcp | 166 | 23.2% |
 | prompting | 107 | 15.0% |
 | research | 173 | 24.2% |
-| industry | 99 | 13.9% |
-| management | 112 | 15.7% |
+| industry | 99 | 13.8% |
+| management | 113 | 15.8% |
 | questionable | 103 | 14.4% |
 | general | 100 | 14.0% |
 
@@ -74,6 +74,7 @@
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-07-18 | Adam Jacob | agent-design | Adam Jacob argues the single best way to cut AI spend is to move deter... |
 | 2026-07-17 | Paul Iusztin | agent-design | On 'wiki memory' as an emerging agent-memory pattern (quoting Harrison... |
 | 2026-07-17 | Tom Dörr | agent-design | Hyperresearch turns Claude Code into a deep-research agent: a 16-step... |
 | 2026-07-17 | Paul Hudson | prompting | Shares a reusable 'adversarial unit test sweep' prompt (set Codex/Sol... |
@@ -123,12 +124,13 @@
 | 2026-07-04 | akira | agent-design | akira introduces Onyx, a VM/runtime for programmable agent orchestrati... |
 | 2026-07-04 | Archive | claude-code | Archive (engagement framing, 'met an Anthropic engineer making $1.2M')... |
 | 2026-07-04 | ℏεsam | management | [Jeremy flagged: read for work] hesam recommends Phil Chen's article '... |
-| 2026-07-04 | Thariq | prompting | Thariq shares his article 'A Field Guide to Fable: Finding Your Unknow... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (398)
+### Agent Design (399)
+
+- [Adam Jacob](https://x.com/adamhjk/status/2077865176632897952) — 2026-07-18: Adam Jacob argues the single best way to cut AI spend is to move deterministic logic into reusable building blocks and reserve frontier-model intelligence only where it's actually needed. He rebuilt a complex code-review skill as a 'swamp workflow' — 8x fewer tokens, half the runtime, 23 sub-agents cut to 3. Full write-up at adamhjk.com (A Practical Guide to Reducing Token Spend).
 
 - [Paul Iusztin](https://x.com/pauliusztin_/status/2078094872717017107) — 2026-07-17: On 'wiki memory' as an emerging agent-memory pattern (quoting Harrison Chase). Describes combining project-scoped LLM wikis built from personal notes/research with a FastMCP server serving unified memory: instead of RAG over raw documents each time, the agent incrementally builds a small structured Markdown wiki as local working knowledge, with the MCP server handling search, build, sync, and persist. The wiki stays local so you can swap Claude Code for Codex without changing how memory works. Avoids needing GraphRAG across the whole corpus.
 
@@ -1276,7 +1278,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (298)
+### Dev Practices (299)
+
+- [Adam Jacob](https://x.com/adamhjk/status/2077865176632897952) — 2026-07-18: Adam Jacob argues the single best way to cut AI spend is to move deterministic logic into reusable building blocks and reserve frontier-model intelligence only where it's actually needed. He rebuilt a complex code-review skill as a 'swamp workflow' — 8x fewer tokens, half the runtime, 23 sub-agents cut to 3. Full write-up at adamhjk.com (A Practical Guide to Reducing Token Spend).
 
 - [Tom Dörr](https://x.com/tom_doerr/status/2078092209702813714) — 2026-07-17: Hyperresearch turns Claude Code into a deep-research agent: a 16-step pipeline that gathers web sources into a persistent vault and generates adversarially-audited reports with full source provenance. Repo: github.com/jordan-gibbs/hyperresearch.
 
@@ -2972,7 +2976,9 @@
 
 - [Santiago](https://x.com/svpino/status/1881336934418755862) — 2025-01-21: Walks through GroundX, an open-source, self-hostable/air-gapped enterprise RAG system. Two services: Ingest (a pretrained vision model that 'understands' documents instead of feeding raw docs to the LLM) and Search (text+vector search with a fine-tuned re-ranker). Santiago's thesis: most teams need better ingestion, not better retrieval; includes a video demo and the free X-Ray inspection tool.
 
-### Management (112)
+### Management (113)
+
+- [Adam Jacob](https://x.com/adamhjk/status/2077865176632897952) — 2026-07-18: Adam Jacob argues the single best way to cut AI spend is to move deterministic logic into reusable building blocks and reserve frontier-model intelligence only where it's actually needed. He rebuilt a complex code-review skill as a 'swamp workflow' — 8x fewer tokens, half the runtime, 23 sub-agents cut to 3. Full write-up at adamhjk.com (A Practical Guide to Reducing Token Spend).
 
 - [Boris Cherny](https://x.com/bcherny/status/2077929379661844559) — 2026-07-17: Boris Cherny (Claude Code) on AI adoption: everywhere he looks, one engineer is 10x'ing output with Claude while the rest of the org hasn't caught up. Maps the recurring pattern into 4 steps of AI adoption, shared as a 'Steps of AI Adoption' claude.ai artifact.
 
@@ -3614,6 +3620,9 @@
 ## Full Chronological List
 
 ### Jul 2026
+
+- **2026-07-18** | [Adam Jacob](https://x.com/adamhjk/status/2077865176632897952) | agent-design, dev-practices, management
+  Adam Jacob argues the single best way to cut AI spend is to move deterministic logic into reusable building blocks and reserve frontier-model intelligence only where it's actually needed. He rebuilt a complex code-review skill as a 'swamp workflow' — 8x fewer tokens, half the runtime, 23 sub-agents cut to 3. Full write-up at adamhjk.com (A Practical Guide to Reducing Token Spend).
 
 - **2026-07-17** | [Paul Iusztin](https://x.com/pauliusztin_/status/2078094872717017107) | agent-design, skills-mcp, research
   On 'wiki memory' as an emerging agent-memory pattern (quoting Harrison Chase). Describes combining project-scoped LLM wikis built from personal notes/research with a FastMCP server serving unified memory: instead of RAG over raw documents each time, the agent incrementally builds a small structured Markdown wiki as local working knowledge, with the MCP server handling search, build, sync, and persist. The wiki stays local so you can swap Claude Code for Codex without changing how memory works. Avoids needing GraphRAG across the whole corpus.

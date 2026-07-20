@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-07-18",
+    "author": "Adam Jacob",
+    "handle": "@adamhjk",
+    "subject": "Post by Adam Jacob on X",
+    "url": "https://x.com/adamhjk/status/2077865176632897952",
+    "summary": "Adam Jacob argues the single best way to cut AI spend is to move deterministic logic into reusable building blocks and reserve frontier-model intelligence only where it's actually needed. He rebuilt a complex code-review skill as a 'swamp workflow' — 8x fewer tokens, half the runtime, 23 sub-agents cut to 3. Full write-up at adamhjk.com (A Practical Guide to Reducing Token Spend).",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "management"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "6,170",
+    "notes": "",
+    "enriched": true,
+    "content": "The single best thing you can do to rein in AI spend is to move the logic that can be deterministic into reusable building blocks, and slot the intelligence in where you need it. You are paying through the nose for a frontier intelligence to solve problems computers have been great at from the beginning. Rebuilding a complex code review skill as a swamp workflow: 8x fewer tokens, half the runtime, 23 sub-agents reduced to 3. You can too.\n\nA Practical Guide to Reducing Token Spend — Adam Jacob (adamhjk.com)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-07-17",
     "author": "Paul Iusztin",
     "handle": "@pauliusztin_",
