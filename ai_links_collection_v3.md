@@ -1,12 +1,12 @@
 # AI Links Collection
-**Total Posts**: 715  
-**Date Range**: 2024-06-11 – 2026-07-18  
-**Enriched**: 714/715 (99%)
+**Total Posts**: 716  
+**Date Range**: 2024-06-11 – 2026-07-20  
+**Enriched**: 715/716 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-07-20T15:04:08Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-20T22:47:15Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-17** — [Tom Dörr](https://x.com/tom_doerr/status/2078092209702813714) — *now • Agent Design • 6,428 views • v1 enriched*  
@@ -17,8 +17,8 @@
   Stripe open-sourced its internal AI toolkit at github.com/stripe/ai — a multi-IDE agent setup shipping Claude, Codex, and Cursor plugins plus providers, evals, and reusable skills; TypeScript-first, ~1.7k stars. Positioned as a production starting point for building AI-powered payments products.
 - **2026-07-17** — [ClaudeDevs](https://x.com/claudedevs/status/2077489907350856038) — *now • Claude Code • 1.4M views • v1 enriched*  
   Announces that Claude Code artifacts can now call MCP connectors, letting you build dashboards and apps that fetch information and take actions for each viewer on demand. Available on Pro, Max, Team, and Enterprise plans; not available on publicly-shared artifacts.
-- **2026-07-18** — [Adam Jacob](https://x.com/adamhjk/status/2077865176632897952) — *near-term • Agent Design • 6,170 views • v1 enriched*  
-  Adam Jacob argues the single best way to cut AI spend is to move deterministic logic into reusable building blocks and reserve frontier-model intelligence only where it's actually needed. He rebuilt a complex code-review skill as a 'swamp workflow' — 8x fewer tokens, half the runtime, 23 sub-agents cut to 3. Full write-up at adamhjk.com (A Practical Guide to Reducing Token Spend).
+- **2026-07-20** — [Wilson Lin](https://cursor.com/blog/agent-swarm-model-economics) — *near-term • Agent Design • v1 enriched*  
+  Cursor Research (Wilson Lin) on agent swarms and the new model economics. Their swarm splits work into a tree: planner agents (frontier models) decompose goals and delegate; worker agents (cheap/fast models) execute leaves — context efficiency, not raw parallelism, is what makes it scale. They built a custom VCS handling ~1,000 commits/second and engineered fixes for swarm-specific failure modes (split-brain planners, merge contention, 'megafiles', ossification) plus stacked 'review lenses' and a self-authored shared 'Field Guide' (stigmergy). Benchmark: reimplementing the 835-page SQLite manual in Rust from docs only, graded on sqllogictest. The new harness beat the old in every model mix (GPT-5.5, Grok 4.5, Opus 4.8+Composer 2.5, Fable 5+Composer 2.5), all new configs reaching 100%. Key economics finding: quality was similar across mixes but cost ranged from $1,339 (Opus 4.8 planner + Composer 2.5 worker) to $10,565 (GPT-5.5 solo) — workers carry 69-90%+ of tokens, but frontier planner tokens dominate cost, so a frontier planner + cheap worker is dramatically cheaper (worker fleet $411 vs $9,373). Thesis: with swarms the unit of work becomes the spec. Public output: github.com/cursor/minisqlite.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
@@ -59,13 +59,13 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 399 | 55.8% |
+| agent-design | 400 | 55.9% |
 | claude-code | 174 | 24.3% |
-| dev-practices | 299 | 41.8% |
+| dev-practices | 300 | 41.9% |
 | skills-mcp | 166 | 23.2% |
-| prompting | 107 | 15.0% |
-| research | 173 | 24.2% |
-| industry | 99 | 13.8% |
+| prompting | 107 | 14.9% |
+| research | 174 | 24.3% |
+| industry | 100 | 14.0% |
 | management | 113 | 15.8% |
 | questionable | 103 | 14.4% |
 | general | 100 | 14.0% |
@@ -74,6 +74,7 @@
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-07-20 | Wilson Lin | agent-design | Cursor Research (Wilson Lin) on agent swarms and the new model economi... |
 | 2026-07-18 | Adam Jacob | agent-design | Adam Jacob argues the single best way to cut AI spend is to move deter... |
 | 2026-07-17 | Paul Iusztin | agent-design | On 'wiki memory' as an emerging agent-memory pattern (quoting Harrison... |
 | 2026-07-17 | Tom Dörr | agent-design | Hyperresearch turns Claude Code into a deep-research agent: a 16-step... |
@@ -123,12 +124,13 @@
 | 2026-07-04 | ali | questionable | ali (@waterloo_intern) — an apparent parody of distillation hype: clai... |
 | 2026-07-04 | akira | agent-design | akira introduces Onyx, a VM/runtime for programmable agent orchestrati... |
 | 2026-07-04 | Archive | claude-code | Archive (engagement framing, 'met an Anthropic engineer making $1.2M')... |
-| 2026-07-04 | ℏεsam | management | [Jeremy flagged: read for work] hesam recommends Phil Chen's article '... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (399)
+### Agent Design (400)
+
+- [Wilson Lin](https://cursor.com/blog/agent-swarm-model-economics) — 2026-07-20: Cursor Research (Wilson Lin) on agent swarms and the new model economics. Their swarm splits work into a tree: planner agents (frontier models) decompose goals and delegate; worker agents (cheap/fast models) execute leaves — context efficiency, not raw parallelism, is what makes it scale. They built a custom VCS handling ~1,000 commits/second and engineered fixes for swarm-specific failure modes (split-brain planners, merge contention, 'megafiles', ossification) plus stacked 'review lenses' and a self-authored shared 'Field Guide' (stigmergy). Benchmark: reimplementing the 835-page SQLite manual in Rust from docs only, graded on sqllogictest. The new harness beat the old in every model mix (GPT-5.5, Grok 4.5, Opus 4.8+Composer 2.5, Fable 5+Composer 2.5), all new configs reaching 100%. Key economics finding: quality was similar across mixes but cost ranged from $1,339 (Opus 4.8 planner + Composer 2.5 worker) to $10,565 (GPT-5.5 solo) — workers carry 69-90%+ of tokens, but frontier planner tokens dominate cost, so a frontier planner + cheap worker is dramatically cheaper (worker fleet $411 vs $9,373). Thesis: with swarms the unit of work becomes the spec. Public output: github.com/cursor/minisqlite.
 
 - [Adam Jacob](https://x.com/adamhjk/status/2077865176632897952) — 2026-07-18: Adam Jacob argues the single best way to cut AI spend is to move deterministic logic into reusable building blocks and reserve frontier-model intelligence only where it's actually needed. He rebuilt a complex code-review skill as a 'swamp workflow' — 8x fewer tokens, half the runtime, 23 sub-agents cut to 3. Full write-up at adamhjk.com (A Practical Guide to Reducing Token Spend).
 
@@ -1278,7 +1280,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (299)
+### Dev Practices (300)
+
+- [Wilson Lin](https://cursor.com/blog/agent-swarm-model-economics) — 2026-07-20: Cursor Research (Wilson Lin) on agent swarms and the new model economics. Their swarm splits work into a tree: planner agents (frontier models) decompose goals and delegate; worker agents (cheap/fast models) execute leaves — context efficiency, not raw parallelism, is what makes it scale. They built a custom VCS handling ~1,000 commits/second and engineered fixes for swarm-specific failure modes (split-brain planners, merge contention, 'megafiles', ossification) plus stacked 'review lenses' and a self-authored shared 'Field Guide' (stigmergy). Benchmark: reimplementing the 835-page SQLite manual in Rust from docs only, graded on sqllogictest. The new harness beat the old in every model mix (GPT-5.5, Grok 4.5, Opus 4.8+Composer 2.5, Fable 5+Composer 2.5), all new configs reaching 100%. Key economics finding: quality was similar across mixes but cost ranged from $1,339 (Opus 4.8 planner + Composer 2.5 worker) to $10,565 (GPT-5.5 solo) — workers carry 69-90%+ of tokens, but frontier planner tokens dominate cost, so a frontier planner + cheap worker is dramatically cheaper (worker fleet $411 vs $9,373). Thesis: with swarms the unit of work becomes the spec. Public output: github.com/cursor/minisqlite.
 
 - [Adam Jacob](https://x.com/adamhjk/status/2077865176632897952) — 2026-07-18: Adam Jacob argues the single best way to cut AI spend is to move deterministic logic into reusable building blocks and reserve frontier-model intelligence only where it's actually needed. He rebuilt a complex code-review skill as a 'swamp workflow' — 8x fewer tokens, half the runtime, 23 sub-agents cut to 3. Full write-up at adamhjk.com (A Practical Guide to Reducing Token Spend).
 
@@ -2428,7 +2432,9 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-### Research (173)
+### Research (174)
+
+- [Wilson Lin](https://cursor.com/blog/agent-swarm-model-economics) — 2026-07-20: Cursor Research (Wilson Lin) on agent swarms and the new model economics. Their swarm splits work into a tree: planner agents (frontier models) decompose goals and delegate; worker agents (cheap/fast models) execute leaves — context efficiency, not raw parallelism, is what makes it scale. They built a custom VCS handling ~1,000 commits/second and engineered fixes for swarm-specific failure modes (split-brain planners, merge contention, 'megafiles', ossification) plus stacked 'review lenses' and a self-authored shared 'Field Guide' (stigmergy). Benchmark: reimplementing the 835-page SQLite manual in Rust from docs only, graded on sqllogictest. The new harness beat the old in every model mix (GPT-5.5, Grok 4.5, Opus 4.8+Composer 2.5, Fable 5+Composer 2.5), all new configs reaching 100%. Key economics finding: quality was similar across mixes but cost ranged from $1,339 (Opus 4.8 planner + Composer 2.5 worker) to $10,565 (GPT-5.5 solo) — workers carry 69-90%+ of tokens, but frontier planner tokens dominate cost, so a frontier planner + cheap worker is dramatically cheaper (worker fleet $411 vs $9,373). Thesis: with swarms the unit of work becomes the spec. Public output: github.com/cursor/minisqlite.
 
 - [Paul Iusztin](https://x.com/pauliusztin_/status/2078094872717017107) — 2026-07-17: On 'wiki memory' as an emerging agent-memory pattern (quoting Harrison Chase). Describes combining project-scoped LLM wikis built from personal notes/research with a FastMCP server serving unified memory: instead of RAG over raw documents each time, the agent incrementally builds a small structured Markdown wiki as local working knowledge, with the MCP server handling search, build, sync, and persist. The wiki stays local so you can swap Claude Code for Codex without changing how memory works. Avoids needing GraphRAG across the whole corpus.
 
@@ -2776,7 +2782,9 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.
 
-### Industry (99)
+### Industry (100)
+
+- [Wilson Lin](https://cursor.com/blog/agent-swarm-model-economics) — 2026-07-20: Cursor Research (Wilson Lin) on agent swarms and the new model economics. Their swarm splits work into a tree: planner agents (frontier models) decompose goals and delegate; worker agents (cheap/fast models) execute leaves — context efficiency, not raw parallelism, is what makes it scale. They built a custom VCS handling ~1,000 commits/second and engineered fixes for swarm-specific failure modes (split-brain planners, merge contention, 'megafiles', ossification) plus stacked 'review lenses' and a self-authored shared 'Field Guide' (stigmergy). Benchmark: reimplementing the 835-page SQLite manual in Rust from docs only, graded on sqllogictest. The new harness beat the old in every model mix (GPT-5.5, Grok 4.5, Opus 4.8+Composer 2.5, Fable 5+Composer 2.5), all new configs reaching 100%. Key economics finding: quality was similar across mixes but cost ranged from $1,339 (Opus 4.8 planner + Composer 2.5 worker) to $10,565 (GPT-5.5 solo) — workers carry 69-90%+ of tokens, but frontier planner tokens dominate cost, so a frontier planner + cheap worker is dramatically cheaper (worker fleet $411 vs $9,373). Thesis: with swarms the unit of work becomes the spec. Public output: github.com/cursor/minisqlite.
 
 - [Bryan](https://x.com/so_sthbryan/status/2077972561464611136) — 2026-07-17: Stripe open-sourced its internal AI toolkit at github.com/stripe/ai — a multi-IDE agent setup shipping Claude, Codex, and Cursor plugins plus providers, evals, and reusable skills; TypeScript-first, ~1.7k stars. Positioned as a production starting point for building AI-powered payments products.
 
@@ -3620,6 +3628,9 @@
 ## Full Chronological List
 
 ### Jul 2026
+
+- **2026-07-20** | [Wilson Lin](https://cursor.com/blog/agent-swarm-model-economics) | agent-design, research, dev-practices, industry
+  Cursor Research (Wilson Lin) on agent swarms and the new model economics. Their swarm splits work into a tree: planner agents (frontier models) decompose goals and delegate; worker agents (cheap/fast models) execute leaves — context efficiency, not raw parallelism, is what makes it scale. They built a custom VCS handling ~1,000 commits/second and engineered fixes for swarm-specific failure modes (split-brain planners, merge contention, 'megafiles', ossification) plus stacked 'review lenses' and a self-authored shared 'Field Guide' (stigmergy). Benchmark: reimplementing the 835-page SQLite manual in Rust from docs only, graded on sqllogictest. The new harness beat the old in every model mix (GPT-5.5, Grok 4.5, Opus 4.8+Composer 2.5, Fable 5+Composer 2.5), all new configs reaching 100%. Key economics finding: quality was similar across mixes but cost ranged from $1,339 (Opus 4.8 planner + Composer 2.5 worker) to $10,565 (GPT-5.5 solo) — workers carry 69-90%+ of tokens, but frontier planner tokens dominate cost, so a frontier planner + cheap worker is dramatically cheaper (worker fleet $411 vs $9,373). Thesis: with swarms the unit of work becomes the spec. Public output: github.com/cursor/minisqlite.
 
 - **2026-07-18** | [Adam Jacob](https://x.com/adamhjk/status/2077865176632897952) | agent-design, dev-practices, management
   Adam Jacob argues the single best way to cut AI spend is to move deterministic logic into reusable building blocks and reserve frontier-model intelligence only where it's actually needed. He rebuilt a complex code-review skill as a 'swamp workflow' — 8x fewer tokens, half the runtime, 23 sub-agents cut to 3. Full write-up at adamhjk.com (A Practical Guide to Reducing Token Spend).

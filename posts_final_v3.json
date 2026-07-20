@@ -1,5 +1,34 @@
 [
   {
+    "date": "2026-07-20",
+    "author": "Wilson Lin",
+    "handle": "",
+    "subject": "Agent swarms and the new model economics (Cursor)",
+    "url": "https://cursor.com/blog/agent-swarm-model-economics",
+    "summary": "Cursor Research (Wilson Lin) on agent swarms and the new model economics. Their swarm splits work into a tree: planner agents (frontier models) decompose goals and delegate; worker agents (cheap/fast models) execute leaves — context efficiency, not raw parallelism, is what makes it scale. They built a custom VCS handling ~1,000 commits/second and engineered fixes for swarm-specific failure modes (split-brain planners, merge contention, 'megafiles', ossification) plus stacked 'review lenses' and a self-authored shared 'Field Guide' (stigmergy). Benchmark: reimplementing the 835-page SQLite manual in Rust from docs only, graded on sqllogictest. The new harness beat the old in every model mix (GPT-5.5, Grok 4.5, Opus 4.8+Composer 2.5, Fable 5+Composer 2.5), all new configs reaching 100%. Key economics finding: quality was similar across mixes but cost ranged from $1,339 (Opus 4.8 planner + Composer 2.5 worker) to $10,565 (GPT-5.5 solo) — workers carry 69-90%+ of tokens, but frontier planner tokens dominate cost, so a frontier planner + cheap worker is dramatically cheaper (worker fleet $411 vs $9,373). Thesis: with swarms the unit of work becomes the spec. Public output: github.com/cursor/minisqlite.",
+    "topics": [
+      "agent-design",
+      "research",
+      "dev-practices",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "article",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Cursor blog (Research) — 'Agent swarms and the new model economics' by Wilson Lin, Jul 20 2026. Planner/worker swarm decomposition, a custom high-throughput VCS, swarm coordination failure modes and fixes, review lenses, the agent-authored 'Field Guide', a SQLite-in-Rust benchmark across model mixes, and the token/cost economics of frontier-planner + cheap-worker configurations.\n\ncursor/minisqlite — public codebase from the solo Opus 4.8 swarm run",
+    "source": "bookmark",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-07-18",
     "author": "Adam Jacob",
     "handle": "@adamhjk",
