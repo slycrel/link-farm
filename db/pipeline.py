@@ -58,6 +58,7 @@ def post_enrichment_pipeline(*,
                               embed: bool = True,
                               mechanical_discovery: bool = True,
                               semantic_discovery: bool = True,
+                              auto_curate: bool = True,
                               rebuild_outputs: bool = True,
                               progress: bool = True) -> dict:
     """Run every post-enrichment step that should happen after either a
@@ -68,6 +69,9 @@ def post_enrichment_pipeline(*,
         1. Embed any post whose embedding is missing or stale.
         2. Run mechanical discovery (shared external URLs, shared mentions).
         3. Run semantic discovery (concept-centroid matching).
+        3.5 Auto-curate: conservative conceptual-preference triage of pending
+            observations (promote high-confidence conceptual matches, dismiss
+            low-signal mechanical/per-person duplicates, leave the rest).
         4. Rebuild outputs (JSON / HTML / Markdown).
 
     Each step is a no-op when there's nothing to do. The pipeline is
@@ -83,7 +87,9 @@ def post_enrichment_pipeline(*,
         "embed": None,
         "mechanical": None,
         "semantic": None,
+        "auto_curate": None,
         "rebuild": None,
+        "split_candidates": None,
         "errors": [],
     }
 
@@ -168,6 +174,26 @@ def post_enrichment_pipeline(*,
                 if progress:
                     print(f"[pipeline] semantic FAILED: {e}")
 
+        # Step 3.5: auto-curation (acts on observations discovery just produced).
+        # Conservative, conceptual-preference triage — see db.concepts.auto_curate.
+        if auto_curate:
+            try:
+                try:
+                    from .concepts import auto_curate as _auto_curate
+                except ImportError:
+                    import sys as _sys
+                    _sys.path.insert(0, str(Path(__file__).parent))
+                    from concepts import auto_curate as _auto_curate
+                if progress:
+                    print("[pipeline] auto-curate…")
+                result["auto_curate"] = _auto_curate(
+                    db_path=db_path, with_lock=False, progress=progress,
+                )
+            except Exception as e:
+                result["errors"].append(f"auto_curate: {e}")
+                if progress:
+                    print(f"[pipeline] auto_curate FAILED: {e}")
+
         # Step 4: rebuild outputs
         if rebuild_outputs:
             try:
@@ -185,6 +211,19 @@ def post_enrichment_pipeline(*,
                 result["errors"].append(f"rebuild: {e}")
                 if progress:
                     print(f"[pipeline] rebuild FAILED: {e}")
+
+        # Advisory: flag oversized concepts as split-review candidates.
+        # Read-only — never mutates; just surfaces buckets worth vetting.
+        try:
+            try:
+                from .concepts import split_candidates
+            except ImportError:
+                import sys as _sys
+                _sys.path.insert(0, str(Path(__file__).parent))
+                from concepts import split_candidates
+            result["split_candidates"] = split_candidates(db_path=db_path)
+        except Exception as e:
+            result["errors"].append(f"split_candidates: {e}")
 
     result["finished_at"] = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
     result["summary"] = _format_summary(result)
@@ -214,8 +253,15 @@ def _format_summary(result: dict) -> str:
             parts.append(f"semantic: skipped ({s['error']})")
         else:
             parts.append(f"semantic: {s.get('concepts_considered', 0)} concepts × {s.get('posts_considered', 0)} posts → +{s.get('observations_created', 0)} obs")
+    if result.get("auto_curate"):
+        a = result["auto_curate"]
+        parts.append(f"auto-curate: +{a.get('promoted', 0)} promoted / -{a.get('dismissed', 0)} dismissed ({a.get('left_pending', 0)} left)")
     if result.get("rebuild"):
         parts.append(f"rebuild: {result['rebuild'].get('posts', 0)} posts → JSON/HTML/MD")
+    if result.get("split_candidates"):
+        cands = ", ".join(f"#{c['id']} '{c['name'][:32]}' ({c['post_count']})"
+                          for c in result["split_candidates"])
+        parts.append(f"⚑ split-review candidates: {cands}")
     if result.get("errors"):
         parts.append(f"errors: {len(result['errors'])}")
     return " | ".join(parts) if parts else "(no work)"
@@ -228,6 +274,7 @@ def main():
     parser.add_argument("--no-embed", dest="embed", action="store_false")
     parser.add_argument("--no-mechanical", dest="mechanical", action="store_false")
     parser.add_argument("--no-semantic", dest="semantic", action="store_false")
+    parser.add_argument("--no-auto-curate", dest="auto_curate", action="store_false")
     parser.add_argument("--no-rebuild", dest="rebuild", action="store_false")
     parser.add_argument("--quiet", action="store_true")
     args = parser.parse_args()
@@ -238,6 +285,7 @@ def main():
         embed=args.embed,
         mechanical_discovery=args.mechanical,
         semantic_discovery=args.semantic,
+        auto_curate=args.auto_curate,
         rebuild_outputs=args.rebuild,
         progress=not args.quiet,
     )

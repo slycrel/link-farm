@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-07-21T19:14:29Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-21T19:30:16Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-17** — [Tom Dörr](https://x.com/tom_doerr/status/2078092209702813714) — *now • Agent Design • 6,428 views • v1 enriched*  
@@ -23,9 +23,14 @@
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **agent harness engineering** (53 posts, +2 this week)  
+- **agent harness engineering** (54 posts, +3 this week)  
   Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
+    - 2026-07-20 — [Wilson Lin](https://cursor.com/blog/agent-swarm-model-economics): Cursor Research (Wilson Lin) on agent swarms and the new model economics. Their swarm splits work into a tree: planner agents (frontier mode…
     - 2026-07-17 — [Alex Prompter](https://x.com/alex_prompter/status/2077774842649247903): 'Harness engineering 101' thread: argues Agent = Model + Harness, where the harness is the software layer around a model (context, tool/perm…
+
+- **Claude Code setup & skills craft** (89 posts, +2 this week)  
+  Practical craft of setting up and getting the most from Claude Code — CLAUDE.md/skills authoring, setup cheatsheets, skill packs (grill-me, teach, etc.), and usage patterns. Conceptual successor to the drifted @mattpocockuk concept.
+    - 2026-07-17 — [Boris Cherny](https://x.com/bcherny/status/2077929379661844559): Boris Cherny (Claude Code) on AI adoption: everywhere he looks, one engineer is 10x'ing output with Claude while the rest of the org hasn't …
     - 2026-07-13 — [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610): Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a …
 
 - **vector / hybrid databases as agent-memory infrastructure** (47 posts, +2 this week)  
@@ -33,20 +38,15 @@
     - 2026-07-17 — [Paul Iusztin](https://x.com/pauliusztin_/status/2078094872717017107): On 'wiki memory' as an emerging agent-memory pattern (quoting Harrison Chase). Describes combining project-scoped LLM wikis built from perso…
     - 2026-07-07 — [How To Prompt](https://x.com/howtoprompt__/status/2074122800961614184): How To Prompt (hype framing: "China has killed the vector database industry") flags Tencent's newly open-sourced TencentDB Agent Memory — lo…
 
+- **OpenAI: harness / loop engineering** (47 posts, +1 this week)  
+  Posts referencing https://openai.com/index/harness-engineering
+    - 2026-07-13 — [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610): Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a …
+    - 2026-07-06 — [kaize](https://x.com/0x_kaize/status/2073743517155774641): kaize shares a 'Loop engineering' reading list, arguing 2026 agents are less about smarter prompts and more about longer runs — the real que…
+
 - **agent identity files (SOUL.md, CLAUDE.md, persona scaffolds)** (28 posts, +1 this week)  
   Recurring pattern of giving an agent a persistent identity file that loads automatically and shapes behavior.
     - 2026-07-13 — [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610): Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a …
     - 2026-06-08 — [rari](https://x.com/0xwhrrari/status/2063244577482440978): Engagement-farmed but useful link dump of free AI-engineering learning resources (LangChain agent architecture, Anthropic's Claude Code 101 …
-
-- **agentic code review at production scale** (10 posts, +1 this week)  
-  Deterministic engineering handles what must never fail; LLM only does context reading and reasoning. Alibaba open-code-review.
-    - 2026-07-09 — [Kodus](https://kodus.io/self-hosted-ai-code-review/): Kodus (github.com/kodustech/kodus-ai) — open-source AGPLv3 self-hosted AI code review. The full PR-review pipeline (Kody agent) runs on your…
-    - 2026-06-11 — [Nainsi Dwivedi](https://x.com/nainsidwiv50980/status/2064947761779208476): Alibaba open-sourced 'open-code-review' (Apache-2.0), the internal AI code reviewer that's run on their codebase for ~2 years — 20,000+ engi…
-
-- **vibecode-to-production via agent skills** (8 posts, +1 this week)  
-  Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
-    - 2026-07-13 — [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610): Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a …
-    - 2026-06-29 — [Akshay](https://x.com/akshay_pachaar/status/2071509401224261823): Walkthrough of Google's Agents CLI as tooling for Karpathy's "agentic engineering" (spec design, eval loops, security). One setup command in…
 
 
 ### Revisit from last month

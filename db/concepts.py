@@ -317,6 +317,142 @@ def dismiss_observation(observation_id: int, *,
         conn.commit()
 
 
+# ---- Auto-curation -----------------------------------------------------
+
+# Confidence floor for auto-promoting a semantic observation. Cosine at/above
+# this against a conceptual concept's centroid is treated as a safe auto-accept.
+# Tuned from the 2026-07-21 manual pass, where clean matches sat ~0.80–0.87.
+AUTO_PROMOTE_MIN_COSINE = 0.83
+
+
+def _is_conceptual_name(name: Optional[str]) -> bool:
+    """Heuristic: is this a *conceptual* concept (a theme/idea) rather than a
+    per-person or raw-mechanical grouping?
+
+    Jeremy's stated preference is to curate conceptual categories and leave
+    per-person ones un-grown (kept, but not actively maintained). So:
+      - "mention:@handle" and "url:https://…" mechanical concepts → not conceptual
+      - names carrying a "(@handle)" person tag → not conceptual
+      - everything else → conceptual
+    """
+    if not name:
+        return False
+    if name.startswith("mention:") or name.startswith("url:"):
+        return False
+    if re.search(r"\(@\w+\)", name):
+        return False
+    return True
+
+
+def auto_curate(*, db_path: Path = DEFAULT_DB, with_lock: bool = True,
+                min_cosine: float = AUTO_PROMOTE_MIN_COSINE,
+                progress: bool = False) -> dict:
+    """Unattended triage of pending observations, safe to run every sync.
+
+    Rules (deliberately conservative — the ambiguous middle stays pending for
+    the human):
+      - PROMOTE: semantic observations at/above `min_cosine` that attach to an
+        active *conceptual* concept.
+      - DISMISS: raw mechanical `mention:` / `url:` groupings (low-signal), and
+        per-person / non-conceptual observations whose post is *already*
+        attached to some conceptual concept (lossless de-duplication).
+      - LEAVE PENDING: mid-confidence semantic matches, and per-person matches
+        whose post is not yet covered conceptually — these want a human eye.
+
+    Returns per-run counts. Idempotent: a second run finds nothing to do.
+    """
+    result = {"promoted": 0, "dismissed": 0, "left_pending": 0}
+
+    with _connect(db_path) as conn:
+        pend = conn.execute("""
+            SELECT o.id, o.source, o.raw_score, o.post_id, o.concept_id,
+                   c.name AS cname, c.status AS cstatus
+              FROM concept_observations o
+              JOIN concepts c ON c.id = o.concept_id
+             WHERE o.status = 'pending'
+        """).fetchall()
+        # Posts already attached to at least one conceptual concept.
+        conceptual_ids = {
+            r["id"] for r in conn.execute(
+                "SELECT id, name FROM concepts").fetchall()
+            if _is_conceptual_name(r["name"])
+        }
+        covered_posts = set()
+        if conceptual_ids:
+            qmarks = ",".join("?" * len(conceptual_ids))
+            covered_posts = {
+                r["post_id"] for r in conn.execute(
+                    f"SELECT DISTINCT post_id FROM post_concepts "
+                    f"WHERE concept_id IN ({qmarks})", tuple(conceptual_ids)
+                ).fetchall()
+            }
+
+    promote_ids, dismiss_ids = [], []
+    for o in pend:
+        conceptual = _is_conceptual_name(o["cname"])
+        active = o["cstatus"] == CONCEPT_ACTIVE
+        score = o["raw_score"] or 0.0
+        if o["source"] == "semantic" and active and conceptual and score >= min_cosine:
+            promote_ids.append(o["id"])
+        elif o["source"] == "mechanical" and (
+                o["cname"].startswith("mention:") or o["cname"].startswith("url:")):
+            dismiss_ids.append(o["id"])
+        elif not conceptual and o["post_id"] in covered_posts:
+            dismiss_ids.append(o["id"])
+        else:
+            result["left_pending"] += 1
+
+    def _apply():
+        for oid in promote_ids:
+            promote_observation(oid, db_path=db_path, with_lock=False)
+            result["promoted"] += 1
+        for oid in dismiss_ids:
+            dismiss_observation(
+                oid, notes="auto-curate: conceptual-preference triage",
+                db_path=db_path, with_lock=False)
+            result["dismissed"] += 1
+
+    if with_lock:
+        with writer_lock(timeout=120):
+            _apply()
+    else:
+        _apply()
+
+    if progress:
+        print(f"[auto-curate] promoted {result['promoted']}, "
+              f"dismissed {result['dismissed']}, left {result['left_pending']} pending")
+    return result
+
+
+# ---- Split-candidate trigger -------------------------------------------
+
+# A concept this big is worth a human glance to decide whether it wants
+# sub-categorizing. This is only a *flag*, never an auto-split — overlapping /
+# broad concepts are fine; the trigger just surfaces buckets to vet.
+SPLIT_CANDIDATE_MIN_POSTS = 70
+
+
+def split_candidates(db_path: Path = DEFAULT_DB,
+                     min_posts: int = SPLIT_CANDIDATE_MIN_POSTS) -> list[dict]:
+    """Active concepts large enough to be worth vetting for sub-categorization.
+
+    Returns [{id, name, post_count}] for concepts at/above `min_posts`,
+    largest first. Purely advisory — surfaced in the pipeline report so a big
+    bucket doesn't quietly accumulate. Splitting stays a human decision.
+    """
+    with _connect(db_path) as conn:
+        rows = conn.execute("""
+            SELECT c.id, c.name, COUNT(pc.post_id) AS post_count
+              FROM concepts c
+              JOIN post_concepts pc ON pc.concept_id = c.id
+             WHERE c.status = ?
+             GROUP BY c.id
+            HAVING post_count >= ?
+             ORDER BY post_count DESC
+        """, (CONCEPT_ACTIVE, min_posts)).fetchall()
+    return [dict(r) for r in rows]
+
+
 # ---- Query helpers -----------------------------------------------------
 
 def list_active_concepts(db_path: Path = DEFAULT_DB) -> list[dict]:
