@@ -54,6 +54,7 @@ def _maybe_lock(with_lock: bool):
 def post_enrichment_pipeline(*,
                               db_path: Path = DEFAULT_DB,
                               with_lock: bool = True,
+                              subject_flags: bool = True,
                               embed: bool = True,
                               mechanical_discovery: bool = True,
                               semantic_discovery: bool = True,
@@ -63,6 +64,7 @@ def post_enrichment_pipeline(*,
     daily sync or a catch-up run.
 
     Steps (each independently skippable):
+        0. Mirror trailing-parenthetical subject flags into notes.
         1. Embed any post whose embedding is missing or stale.
         2. Run mechanical discovery (shared external URLs, shared mentions).
         3. Run semantic discovery (concept-centroid matching).
@@ -77,6 +79,7 @@ def post_enrichment_pipeline(*,
     """
     result = {
         "started_at": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "subject_flags": None,
         "embed": None,
         "mechanical": None,
         "semantic": None,
@@ -85,6 +88,26 @@ def post_enrichment_pipeline(*,
     }
 
     with _maybe_lock(with_lock):
+
+        # Step 0: mirror trailing-parenthetical subject flags into notes.
+        # Runs before rebuild so newly-captured flags land in the outputs.
+        if subject_flags:
+            try:
+                try:
+                    from .subject_flags import apply_subject_flags
+                except ImportError:
+                    import sys as _sys
+                    _sys.path.insert(0, str(Path(__file__).parent))
+                    from subject_flags import apply_subject_flags
+                if progress:
+                    print("[pipeline] subject flags…")
+                result["subject_flags"] = apply_subject_flags(
+                    db_path=db_path, with_lock=False, progress=progress,
+                )
+            except Exception as e:
+                result["errors"].append(f"subject_flags: {e}")
+                if progress:
+                    print(f"[pipeline] subject_flags FAILED: {e}")
 
         # Step 1: embeddings
         if embed:
@@ -171,6 +194,9 @@ def post_enrichment_pipeline(*,
 def _format_summary(result: dict) -> str:
     """Compact summary line suitable for the skill's end-of-run report."""
     parts = []
+    if result.get("subject_flags"):
+        f = result["subject_flags"]
+        parts.append(f"flags: +{f.get('updated', 0)} ({f.get('flagged', 0)} flagged, {f.get('already_present', 0)} already present)")
     if result.get("embed"):
         s = result["embed"]
         parts.append(f"embed: +{s.get('embedded', 0)} ({s.get('skipped_unchanged', 0)} unchanged, {s.get('errors', 0)} errors)")
@@ -198,6 +224,7 @@ def _format_summary(result: dict) -> str:
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--db", type=Path, default=DEFAULT_DB)
+    parser.add_argument("--no-subject-flags", dest="subject_flags", action="store_false")
     parser.add_argument("--no-embed", dest="embed", action="store_false")
     parser.add_argument("--no-mechanical", dest="mechanical", action="store_false")
     parser.add_argument("--no-semantic", dest="semantic", action="store_false")
@@ -207,6 +234,7 @@ def main():
 
     result = post_enrichment_pipeline(
         db_path=args.db,
+        subject_flags=args.subject_flags,
         embed=args.embed,
         mechanical_discovery=args.mechanical,
         semantic_discovery=args.semantic,

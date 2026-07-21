@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-07-21T18:54:49Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-21T19:14:29Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-17** — [Tom Dörr](https://x.com/tom_doerr/status/2078092209702813714) — *now • Agent Design • 6,428 views • v1 enriched*  
