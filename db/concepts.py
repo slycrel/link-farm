@@ -319,10 +319,21 @@ def dismiss_observation(observation_id: int, *,
 
 # ---- Auto-curation -----------------------------------------------------
 
-# Confidence floor for auto-promoting a semantic observation. Cosine at/above
-# this against a conceptual concept's centroid is treated as a safe auto-accept.
-# Tuned from the 2026-07-21 manual pass, where clean matches sat ~0.80–0.87.
-AUTO_PROMOTE_MIN_COSINE = 0.83
+# Confidence floor for auto-filing a semantic observation as a SECONDARY tag.
+# Cosine at/above this against a conceptual concept's centroid is trusted
+# enough to attach without human review; below it is dismissed as noise.
+#
+# 2026-07-22: lowered 0.83 → 0.82 and repurposed as the secondary auto-file
+# floor. This is safe now that (a) primary is derived separately by
+# assign_primaries — auto-filed edges are always secondary, never a home — and
+# (b) split-review measures primary count, so denser secondary tagging can't
+# retrigger the split churn. 0.82 is the corpus's observed true-positive floor:
+# the design notes on SEMANTIC_CENTROID_THRESHOLD record genuine matches as low
+# as 0.821, and warn 0.83 silently drops them. Auto-filing at 0.82 keeps the
+# curate queue empty of routine semantic matches — the human queue is now for
+# structural decisions (merges, naming, per-person groupings), not "is this
+# post also about X."
+AUTO_PROMOTE_MIN_COSINE = 0.82
 
 
 def _is_conceptual_name(name: Optional[str]) -> bool:
@@ -349,19 +360,24 @@ def auto_curate(*, db_path: Path = DEFAULT_DB, with_lock: bool = True,
                 progress: bool = False) -> dict:
     """Unattended triage of pending observations, safe to run every sync.
 
-    Rules (deliberately conservative — the ambiguous middle stays pending for
-    the human):
-      - PROMOTE: semantic observations at/above `min_cosine` that attach to an
-        active *conceptual* concept.
-      - DISMISS: raw mechanical `mention:` / `url:` groupings (low-signal), and
-        per-person / non-conceptual observations whose post is *already*
-        attached to some conceptual concept (lossless de-duplication).
-      - LEAVE PENDING: mid-confidence semantic matches, and per-person matches
-        whose post is not yet covered conceptually — these want a human eye.
+    Rules (post-2026-07-22: semantic matches are fully automated — with primary
+    derived separately and split-review measuring primaries, a semantic edge is
+    only ever a low-stakes *secondary* tag, so there's no reason to park it for
+    a human):
+      - AUTO-FILE (promote as secondary): semantic observations at/above
+        `min_cosine` on an active *conceptual* concept.
+      - DISMISS: semantic observations *below* `min_cosine` on a conceptual
+        concept (the recall band — too weak to tag without review, and we no
+        longer review them); raw mechanical `mention:` / `url:` groupings; and
+        per-person / non-conceptual observations whose post is already attached
+        to some conceptual concept (lossless de-duplication).
+      - LEAVE PENDING: only genuine structural decisions — e.g. a per-person /
+        mechanical grouping whose post is *not* yet covered conceptually. These
+        are the things the human curate queue should actually contain.
 
     Returns per-run counts. Idempotent: a second run finds nothing to do.
     """
-    result = {"promoted": 0, "dismissed": 0, "left_pending": 0}
+    result = {"promoted": 0, "dismissed": 0, "dismissed_lowscore": 0, "left_pending": 0}
 
     with _connect(db_path) as conn:
         pend = conn.execute("""
@@ -387,13 +403,17 @@ def auto_curate(*, db_path: Path = DEFAULT_DB, with_lock: bool = True,
                 ).fetchall()
             }
 
-    promote_ids, dismiss_ids = [], []
+    promote_ids, dismiss_ids, dismiss_lowscore_ids = [], [], []
     for o in pend:
         conceptual = _is_conceptual_name(o["cname"])
         active = o["cstatus"] == CONCEPT_ACTIVE
         score = o["raw_score"] or 0.0
         if o["source"] == "semantic" and active and conceptual and score >= min_cosine:
             promote_ids.append(o["id"])
+        elif o["source"] == "semantic" and conceptual and score < min_cosine:
+            # Recall band below the auto-file floor — too weak to tag, and we
+            # no longer review it by hand. Dismiss so it can't accumulate.
+            dismiss_lowscore_ids.append(o["id"])
         elif o["source"] == "mechanical" and (
                 o["cname"].startswith("mention:") or o["cname"].startswith("url:")):
             dismiss_ids.append(o["id"])
@@ -411,6 +431,11 @@ def auto_curate(*, db_path: Path = DEFAULT_DB, with_lock: bool = True,
                 oid, notes="auto-curate: conceptual-preference triage",
                 db_path=db_path, with_lock=False)
             result["dismissed"] += 1
+        for oid in dismiss_lowscore_ids:
+            dismiss_observation(
+                oid, notes=f"auto-curate: below secondary-tag floor ({min_cosine})",
+                db_path=db_path, with_lock=False)
+            result["dismissed_lowscore"] += 1
 
     if with_lock:
         with writer_lock(timeout=120):
@@ -419,8 +444,9 @@ def auto_curate(*, db_path: Path = DEFAULT_DB, with_lock: bool = True,
         _apply()
 
     if progress:
-        print(f"[auto-curate] promoted {result['promoted']}, "
-              f"dismissed {result['dismissed']}, left {result['left_pending']} pending")
+        print(f"[auto-curate] promoted {result['promoted']} (secondary), "
+              f"dismissed {result['dismissed']} + {result['dismissed_lowscore']} low-score, "
+              f"left {result['left_pending']} pending")
     return result
 
 
@@ -1177,11 +1203,19 @@ def run_all_mechanical_passes(db_path: Path = DEFAULT_DB,
 # reviewing). Briefly tried 0.83, but that was too aggressive: genuine
 # matches promoted that day ran as low as 0.821 (e.g. a "Loop Engineering"
 # post, a CLAUDE.md-as-control-layer post), so 0.83 would have silently
-# dropped real evidence. 0.80 sits just below the observed true-positive
-# floor with a small cushion — deliberately biased toward recall, since a
-# missed match is a harder-to-recover unknown-unknown than a false positive
-# is to dismiss in curation.
-SEMANTIC_CENTROID_THRESHOLD = 0.80
+# dropped real evidence.
+#
+# 2026-07-22: raised 0.80 → 0.82 to match the auto-file floor
+# (AUTO_PROMOTE_MIN_COSINE). The old 0.80 was deliberately recall-biased on
+# the assumption a human would review the 0.80–0.82 band in curation. That
+# review never happened at scale (the band just accumulated as hundreds of
+# stale pending rows), and semantic triage is now fully automated: matches
+# ≥0.82 auto-file as secondary, below that we don't tag. Generating sub-0.82
+# candidates only to auto-dismiss them is wasted churn, so we stop generating
+# them. 0.82 is the observed true-positive floor (matches as low as 0.821),
+# so recall loss is minimal. auto_curate still defensively dismisses anything
+# below the floor that pre-dates this change.
+SEMANTIC_CENTROID_THRESHOLD = 0.82
 
 # Don't centroid-match concepts with too few canonical edges — a single-post
 # concept's centroid is just that post's embedding, which collapses to a
