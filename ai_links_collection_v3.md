@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-07-21T19:30:16Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-22T15:19:26Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-17** — [Tom Dörr](https://x.com/tom_doerr/status/2078092209702813714) — *now • Agent Design • 6,428 views • v1 enriched*  
@@ -33,15 +33,15 @@
     - 2026-07-17 — [Boris Cherny](https://x.com/bcherny/status/2077929379661844559): Boris Cherny (Claude Code) on AI adoption: everywhere he looks, one engineer is 10x'ing output with Claude while the rest of the org hasn't …
     - 2026-07-13 — [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610): Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a …
 
-- **vector / hybrid databases as agent-memory infrastructure** (47 posts, +2 this week)  
-  HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
-    - 2026-07-17 — [Paul Iusztin](https://x.com/pauliusztin_/status/2078094872717017107): On 'wiki memory' as an emerging agent-memory pattern (quoting Harrison Chase). Describes combining project-scoped LLM wikis built from perso…
-    - 2026-07-07 — [How To Prompt](https://x.com/howtoprompt__/status/2074122800961614184): How To Prompt (hype framing: "China has killed the vector database industry") flags Tencent's newly open-sourced TencentDB Agent Memory — lo…
-
-- **OpenAI: harness / loop engineering** (47 posts, +1 this week)  
+- **OpenAI: harness / loop engineering** (51 posts, +1 this week)  
   Posts referencing https://openai.com/index/harness-engineering
     - 2026-07-13 — [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610): Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a …
     - 2026-07-06 — [kaize](https://x.com/0x_kaize/status/2073743517155774641): kaize shares a 'Loop engineering' reading list, arguing 2026 agents are less about smarter prompts and more about longer runs — the real que…
+
+- **vector / hybrid databases as agent-memory infrastructure** (47 posts, +1 this week)  
+  HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
+    - 2026-07-17 — [Paul Iusztin](https://x.com/pauliusztin_/status/2078094872717017107): On 'wiki memory' as an emerging agent-memory pattern (quoting Harrison Chase). Describes combining project-scoped LLM wikis built from perso…
+    - 2026-07-07 — [How To Prompt](https://x.com/howtoprompt__/status/2074122800961614184): How To Prompt (hype framing: "China has killed the vector database industry") flags Tencent's newly open-sourced TencentDB Agent Memory — lo…
 
 - **agent identity files (SOUL.md, CLAUDE.md, persona scaffolds)** (28 posts, +1 this week)  
   Recurring pattern of giving an agent a persistent identity file that loads automatically and shapes behavior.
