@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-07-22T16:11:33Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-22T16:36:41Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-17** — [Tom Dörr](https://x.com/tom_doerr/status/2078092209702813714) — *now • Agent Design • 6,428 views • v1 enriched*  
@@ -23,18 +23,23 @@
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **agent harness engineering** (55 posts, +4 this week)  
+- **agent harness engineering** (77 posts, +4 this week)  
   Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
     - 2026-07-20 — [Wilson Lin](https://cursor.com/blog/agent-swarm-model-economics): Cursor Research (Wilson Lin) on agent swarms and the new model economics. Their swarm splits work into a tree: planner agents (frontier mode…
     - 2026-07-20 — [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler): Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically int…
 
-- **Claude Code setup & skills craft** (91 posts, +3 this week)  
-  Practical craft of setting up and getting the most from Claude Code — CLAUDE.md/skills authoring, setup cheatsheets, skill packs (grill-me, teach, etc.), and usage patterns. Conceptual successor to the drifted @mattpocockuk concept.
+- **Claude Code setup & usage** (95 posts, +3 this week)  
+  Claude Code setup guides, cheatsheets, starter packs, and day-to-day usage / steering practices.
     - 2026-07-20 — [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler): Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically int…
     - 2026-07-17 — [Boris Cherny](https://x.com/bcherny/status/2077929379661844559): Boris Cherny (Claude Code) on AI adoption: everywhere he looks, one engineer is 10x'ing output with Claude while the rest of the org hasn't …
 
-- **OpenAI: harness / loop engineering** (53 posts, +2 this week)  
-  Posts referencing https://openai.com/index/harness-engineering
+- **managing agent teams** (79 posts, +3 this week)  
+  Running and managing fleets of agents: multi-agent teams, agent orchestration for teams, onboarding/managing agents, org adoption of coding agents.
+    - 2026-07-20 — [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler): Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically int…
+    - 2026-07-17 — [Boris Cherny](https://x.com/bcherny/status/2077929379661844559): Boris Cherny (Claude Code) on AI adoption: everywhere he looks, one engineer is 10x'ing output with Claude while the rest of the org hasn't …
+
+- **loop engineering** (67 posts, +2 this week)  
+  Feedback loops and self-running agent loops: loop design patterns, loop libraries, nested build loops, self-improving / meta-learning loops.
     - 2026-07-20 — [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler): Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically int…
     - 2026-07-13 — [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610): Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a …
 
@@ -42,11 +47,6 @@
   HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
     - 2026-07-20 — [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler): Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically int…
     - 2026-07-17 — [Paul Iusztin](https://x.com/pauliusztin_/status/2078094872717017107): On 'wiki memory' as an emerging agent-memory pattern (quoting Harrison Chase). Describes combining project-scoped LLM wikis built from perso…
-
-- **agent identity files (SOUL.md, CLAUDE.md, persona scaffolds)** (30 posts, +2 this week)  
-  Recurring pattern of giving an agent a persistent identity file that loads automatically and shapes behavior.
-    - 2026-07-20 — [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler): Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically int…
-    - 2026-07-13 — [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610): Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a …
 
 
 ### Revisit from last month
