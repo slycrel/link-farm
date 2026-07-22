@@ -88,6 +88,7 @@ def post_enrichment_pipeline(*,
         "mechanical": None,
         "semantic": None,
         "auto_curate": None,
+        "assign_primaries": None,
         "rebuild": None,
         "split_candidates": None,
         "errors": [],
@@ -194,6 +195,28 @@ def post_enrichment_pipeline(*,
                 if progress:
                     print(f"[pipeline] auto_curate FAILED: {e}")
 
+        # Step 3.6: assign primaries. After discovery + auto-curate settle the
+        # edge set, (re)derive each post's single primary home so split-review
+        # and any primary-grouped views read a clean partition. Runs before
+        # rebuild so outputs reflect the current primaries.
+        if auto_curate:
+            try:
+                try:
+                    from .concepts import assign_primaries as _assign_primaries
+                except ImportError:
+                    import sys as _sys
+                    _sys.path.insert(0, str(Path(__file__).parent))
+                    from concepts import assign_primaries as _assign_primaries
+                if progress:
+                    print("[pipeline] assign primaries…")
+                result["assign_primaries"] = _assign_primaries(
+                    db_path=db_path, with_lock=False, progress=progress,
+                )
+            except Exception as e:
+                result["errors"].append(f"assign_primaries: {e}")
+                if progress:
+                    print(f"[pipeline] assign_primaries FAILED: {e}")
+
         # Step 4: rebuild outputs
         if rebuild_outputs:
             try:
@@ -256,6 +279,12 @@ def _format_summary(result: dict) -> str:
     if result.get("auto_curate"):
         a = result["auto_curate"]
         parts.append(f"auto-curate: +{a.get('promoted', 0)} promoted / -{a.get('dismissed', 0)} dismissed ({a.get('left_pending', 0)} left)")
+    if result.get("assign_primaries"):
+        p = result["assign_primaries"]
+        if p.get("error"):
+            parts.append(f"primaries: skipped ({p['error']})")
+        else:
+            parts.append(f"primaries: {p.get('tagged_posts', 0)} homed (Δ{p.get('changed', 0)})")
     if result.get("rebuild"):
         parts.append(f"rebuild: {result['rebuild'].get('posts', 0)} posts → JSON/HTML/MD")
     if result.get("split_candidates"):

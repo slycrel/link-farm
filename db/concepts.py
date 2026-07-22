@@ -424,27 +424,170 @@ def auto_curate(*, db_path: Path = DEFAULT_DB, with_lock: bool = True,
     return result
 
 
+# ---- Primary/secondary assignment --------------------------------------
+
+# Manual pins: a post_concepts row whose notes contain this marker is a
+# human-locked primary — assign_primaries() will not recompute that post.
+PRIMARY_PIN_MARKER = "[primary-pin]"
+
+
+def assign_primaries(*, db_path: Path = DEFAULT_DB, with_lock: bool = True,
+                     respect_pins: bool = True, progress: bool = False) -> dict:
+    """Designate exactly one PRIMARY concept per concept-tagged post.
+
+    The primary/secondary axis (migration 8): multi-label overlap is kept —
+    a post can carry many concept edges — but exactly one edge is its primary
+    *home*. Primary edges partition the tagged corpus (one home per post);
+    everything else is a secondary tag that preserves cross-cutting discovery.
+
+    Primary = the post's best-fitting concept, by cosine of the post's
+    embedding against each candidate concept's *leave-one-out* centroid (the
+    post is excluded from its own concept's centroid so small concepts don't
+    trivially win by self-similarity). Deterministic fallbacks:
+      - single-edge post            → that edge is primary.
+      - no embedding / no centroid  → keep current primary if any, else the
+                                       lowest concept_id (stable).
+      - manual pin (respect_pins)   → left untouched.
+
+    Idempotent: primary is derived, so re-running reproduces the same state
+    (modulo pins and centroid drift). Returns per-run counts.
+    """
+    result = {"tagged_posts": 0, "single_edge": 0, "scored": 0,
+              "pinned_skipped": 0, "fallback": 0, "changed": 0}
+
+    # Lazy import — keep concepts.py usable without numpy/fastembed installed.
+    try:
+        import numpy as np
+        try:
+            from .embeddings import _blob_to_vector, DEFAULT_MODEL
+        except ImportError:
+            from embeddings import _blob_to_vector, DEFAULT_MODEL
+    except Exception as e:
+        result["error"] = f"embeddings unavailable: {e}"
+        if progress:
+            print(f"[assign-primaries] skipped — {result['error']}")
+        return result
+
+    def _apply():
+        with _connect(db_path) as conn:
+            model = DEFAULT_MODEL
+            # All edges on active concepts, with vectors where available.
+            rows = conn.execute("""
+                SELECT pc.post_id, pc.concept_id, pc.is_primary, pc.notes,
+                       pe.vector
+                  FROM post_concepts pc
+                  JOIN concepts c ON c.id = pc.concept_id AND c.status = ?
+                  LEFT JOIN post_embeddings pe
+                         ON pe.post_id = pc.post_id AND pe.model = ?
+            """, (CONCEPT_ACTIVE, model)).fetchall()
+
+            # Group edges by post; collect per-concept vector sums for LOO.
+            by_post: dict[int, list[dict]] = defaultdict(list)
+            csum: dict[int, np.ndarray] = {}
+            ccount: dict[int, int] = defaultdict(int)
+            vecs: dict[tuple, "np.ndarray"] = {}
+            for r in rows:
+                by_post[r["post_id"]].append(dict(r))
+                if r["vector"] is not None:
+                    v = _blob_to_vector(r["vector"])
+                    v = v / (np.linalg.norm(v) or 1.0)
+                    vecs[(r["post_id"], r["concept_id"])] = v
+                    csum[r["concept_id"]] = csum.get(r["concept_id"], 0) + v
+                    ccount[r["concept_id"]] += 1
+
+            chosen: dict[int, int] = {}   # post_id -> concept_id
+            for pid, edges in by_post.items():
+                result["tagged_posts"] += 1
+                pinned = [e for e in edges
+                          if respect_pins and (e["notes"] or "").find(PRIMARY_PIN_MARKER) >= 0]
+                if pinned:
+                    result["pinned_skipped"] += 1
+                    continue
+                if len(edges) == 1:
+                    chosen[pid] = edges[0]["concept_id"]
+                    result["single_edge"] += 1
+                    continue
+                # Score each candidate by leave-one-out centroid cosine.
+                best_cid, best_score = None, -2.0
+                for e in edges:
+                    cid = e["concept_id"]
+                    v = vecs.get((pid, cid))
+                    if v is None or ccount.get(cid, 0) < 2:
+                        continue  # can't score this candidate reliably
+                    loo = (csum[cid] - v) / (ccount[cid] - 1)
+                    loo = loo / (np.linalg.norm(loo) or 1.0)
+                    score = float(np.dot(v, loo))
+                    if score > best_score:
+                        best_score, best_cid = score, cid
+                if best_cid is not None:
+                    chosen[pid] = best_cid
+                    result["scored"] += 1
+                else:
+                    # Fallback: keep existing primary, else lowest concept_id.
+                    cur = next((e["concept_id"] for e in edges if e["is_primary"]), None)
+                    chosen[pid] = cur if cur is not None else min(e["concept_id"] for e in edges)
+                    result["fallback"] += 1
+
+            # Write: clear all, then set the chosen edge per post. Clearing
+            # first keeps the one-primary-per-post partial unique index happy.
+            conn.execute("BEGIN")
+            try:
+                # Count how many will actually change (for reporting).
+                for pid, cid in chosen.items():
+                    was = next((e["is_primary"] for e in by_post[pid]
+                                if e["concept_id"] == cid), 0)
+                    if not was:
+                        result["changed"] += 1
+                conn.execute("UPDATE post_concepts SET is_primary = 0 WHERE is_primary = 1")
+                conn.executemany(
+                    "UPDATE post_concepts SET is_primary = 1 WHERE post_id = ? AND concept_id = ?",
+                    [(pid, cid) for pid, cid in chosen.items()],
+                )
+                conn.commit()
+            except Exception:
+                conn.rollback()
+                raise
+
+    if with_lock:
+        with writer_lock(timeout=120):
+            _apply()
+    else:
+        _apply()
+
+    if progress:
+        print(f"[assign-primaries] {result['tagged_posts']} tagged posts "
+              f"({result['single_edge']} single, {result['scored']} scored, "
+              f"{result['fallback']} fallback, {result['pinned_skipped']} pinned) "
+              f"→ {result['changed']} primaries changed")
+    return result
+
+
 # ---- Split-candidate trigger -------------------------------------------
 
-# A concept this big is worth a human glance to decide whether it wants
-# sub-categorizing. This is only a *flag*, never an auto-split — overlapping /
-# broad concepts are fine; the trigger just surfaces buckets to vet.
-SPLIT_CANDIDATE_MIN_POSTS = 70
+# A concept with this many PRIMARY posts is worth a human glance to decide
+# whether it wants sub-categorizing. Measured on primaries (a partition), not
+# total edges — a concept can carry many secondary tags without being an
+# oversized *home*. Only a *flag*, never an auto-split.
+SPLIT_CANDIDATE_MIN_POSTS = 40
 
 
 def split_candidates(db_path: Path = DEFAULT_DB,
                      min_posts: int = SPLIT_CANDIDATE_MIN_POSTS) -> list[dict]:
-    """Active concepts large enough to be worth vetting for sub-categorization.
+    """Active concepts whose PRIMARY-post count is large enough to be worth
+    vetting for sub-categorization.
 
-    Returns [{id, name, post_count}] for concepts at/above `min_posts`,
-    largest first. Purely advisory — surfaced in the pipeline report so a big
-    bucket doesn't quietly accumulate. Splitting stays a human decision.
+    Returns [{id, name, post_count}] where `post_count` is the number of posts
+    for which this concept is the *primary* home (is_primary=1) — a partition,
+    not a sum of overlapping tags. A concept can accrue many secondary tags
+    without being an oversized home, so measuring primaries stops the split
+    trigger from firing on merely-popular concepts. Purely advisory — surfaced
+    in the pipeline report; splitting stays a human decision.
     """
     with _connect(db_path) as conn:
         rows = conn.execute("""
             SELECT c.id, c.name, COUNT(pc.post_id) AS post_count
               FROM concepts c
-              JOIN post_concepts pc ON pc.concept_id = c.id
+              JOIN post_concepts pc ON pc.concept_id = c.id AND pc.is_primary = 1
              WHERE c.status = ?
              GROUP BY c.id
             HAVING post_count >= ?

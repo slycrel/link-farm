@@ -277,6 +277,30 @@ def migrate_006_concept_graph(conn):
     """)
 
 
+def migrate_008_post_concepts_primary(conn):
+    """Add `is_primary` to post_concepts — the primary/secondary axis.
+
+    Per the July 2026 design revision (see CURATION_DESIGN.md "Primary vs
+    secondary"): a post keeps its overlapping concept edges (multi-label is
+    intentional), but exactly one edge is its PRIMARY home. Primary edges form
+    a partition of the concept-tagged corpus (one home per post); all other
+    edges are secondary tags that preserve cross-cutting discovery.
+
+    This is a separate axis from the qualitative `role` column
+    (evidence / counter-example / tangential / origin), which is left intact.
+
+    A partial unique index enforces the "at most one primary per post"
+    invariant at the storage layer. is_primary defaults to 0 (secondary);
+    the assign_primaries() pass in db/concepts.py sets exactly one per post.
+    """
+    conn.executescript("""
+        ALTER TABLE post_concepts ADD COLUMN is_primary INTEGER NOT NULL DEFAULT 0;
+        CREATE UNIQUE INDEX idx_post_concepts_one_primary
+            ON post_concepts(post_id) WHERE is_primary = 1;
+        CREATE INDEX idx_post_concepts_primary ON post_concepts(is_primary);
+    """)
+
+
 # ---- Migration list -----------------------------------------------------
 
 # (version_number, short_name, function). Ordered by version.
@@ -289,6 +313,8 @@ MIGRATIONS = [
      migrate_006_concept_graph),
     (7, "Perspective lenses (Layer 3): post_perspectives overlay + backfill tool-eval rows",
      migrate_007_post_perspectives),
+    (8, "Add is_primary to post_concepts (primary/secondary axis) + one-primary-per-post index",
+     migrate_008_post_concepts_primary),
 ]
 
 
