@@ -1,6 +1,34 @@
 [
   {
     "date": "2026-07-20",
+    "author": "Josh Bleecher Snyder",
+    "handle": "",
+    "subject": "Claude Is Not a Compiler",
+    "url": "https://blog.exe.dev/claude-is-not-a-compiler",
+    "summary": "Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically integrated 'multi-compiler' working across strategy, product, architecture, code, and machine code — augmenting the engineer's judgment about which decisions matter (vibe-engineering). Case study: building a geographically distributed, consistent DNS server for exe.dev via concurrent agent loops plus repeated differential spec analysis (commaok.xyz/ai/differential-spec), distilled into a terse 'scar-tissue' guidance doc. ~1 week of attention, almost no code read, zero incidents a month post-launch.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "management"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "article",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Follow-up to the author's early-2025 post 'Is Claude a Compiler?'. His answer is now: no — that's a category error; it's better than a compiler.\n\nPrograms operate at extreme precision while high-level goals are deeply underspecified. Software is built in layers (vision -> strategy -> product plans -> coding plans -> code -> binaries), each adding specification and making decisions; the bottom layer (source to binary) is the compiler's job. A good compiler frees the engineer from those decisions.\n\nIn 2025 the mental model was that a coding agent slots in as a new layer that 'compiles' natural language to code. But that stylized view is false: abstractions leak and layers rub. Working across layers is extremely valuable — mechanical sympathy matters (the Empire State Building was built fast and under budget partly by convening all layers, from owner to line metalworkers). We systematically fail at cross-layer work due to ignorance of what to ask, dismissiveness, and organizational overhead.\n\nClaude is better than a compiler because it works vertically across the stack — strategy, product, architecture, code, and machine code — without scheduling meetings or asking permission. Concrete case study: building a geographically distributed, fully consistent DNS server for exe.dev VMs. The author used LLMs to research designs, teach him DNS internals and historic security failings, game out failure modes, and plan tests; then prompted multiple concurrent agent loops to build the entire thing (with tests and adversarial review), compared implementations for interesting deviations (differential spec analysis, https://commaok.xyz/ai/differential-spec/), and codified important decisions into a terse 'scar-tissue' guidance doc. He repeated the throwaway-and-rebuild cycle twice (Brooks: 'plan to throw one away').\n\nThis is vibe-engineering, not vibe-coding: Claude augmented his ability to make decisions across levels, including which decisions mattered. Took ~a week of attention, he read a vanishingly small amount of code, could still answer every colleague's question, and had zero DNS incidents a month later. Dying software layers provide convenience without insight (e.g. Tailwind); layers that let us express important decisions comprehensibly will stay. Agents are not a free pass to relinquish understanding of deeper layers. In the near future, vibe-engineering is just engineering.",
+    "source": "manual",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-20",
     "author": "Wilson Lin",
     "handle": "",
     "subject": "Agent swarms and the new model economics (Cursor)",
@@ -15149,6 +15177,32 @@
     "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
     "enriched": true,
     "enrichment_status": "dead"
+  },
+  {
+    "date": "2026-01-12",
+    "author": "Josh Bleecher Snyder",
+    "handle": "",
+    "subject": "Differential spec analysis",
+    "url": "https://commaok.xyz/ai/differential-spec",
+    "summary": "Introduces 'differential spec analysis': write several de-novo implementations from one spec (Opus subagents, forbidden from seeing each other's code), compare their behavior, and treat every deviation as either an implementation bug (add a missing acceptance test) or a spec ambiguity (clarify the spec) — refining the spec itself without reading code. Worked example on Drew Breunig's codeless 'whenwords' repo (github.com/dbreunig/whenwords) surfaced zero-duration crashes, month-rounding errors, and a fractional-input rounding ambiguity resolved with half-up rounding.",
+    "topics": [
+      "dev-practices",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "article",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Differential techniques are chronically underappreciated in software, and they pair incredibly well with coding agents. Agents are now good enough that differential analysis can even be used to refine a spec, not just code.\n\nThe Bitter Lesson, though written about AI, applies more broadly: general methods that leverage computation are ultimately the most effective, by a large margin. Even without huge GPU budgets, leveraging computational power is phenomenally useful. Differential testing and fuzz testing are prime examples.\n\nIn differential spec analysis, you write multiple implementations from a spec and then compare their behavior. It is most powerful when paired with fuzzing but works even without it. Once harness bugs are resolved, deviations fall into two categories: implementation bugs (your spec needs more unit tests or detail) or ambiguity (your spec is under-specified). Both teach you useful things about your spec without ever reading a line of code in any language.\n\nWorked example: Drew Breunig's 'whenwords' (github.com/dbreunig/whenwords), a codeless open-source repo whose thesis is that agents are now good enough that publishing an excellent spec yields top-quality implementations on demand in any language. The author asked Opus to write de-novo implementations in a half-dozen languages using subagents (forbidding them from seeing each other's code), then write differential tests across them and investigate every deviation, keeping a running document of both bug-deviations and ambiguity-deviations.\n\nFindings: missing test cases around zero durations (Swift crashes), missing month-rounding cases (incorrect Go output), and a genuine spec ambiguity about non-integer duration inputs — resolved by specifying half-up rounding to the nearest whole second, with new tests.yaml cases. Limitation: if a spec is clear but encodes the wrong decisions, differential spec analysis won't help.",
+    "source": "manual",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-01-10",

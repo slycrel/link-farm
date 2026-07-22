@@ -1,12 +1,12 @@
 # AI Links Collection
-**Total Posts**: 716  
+**Total Posts**: 718  
 **Date Range**: 2024-06-11 – 2026-07-20  
-**Enriched**: 715/716 (99%)
+**Enriched**: 717/718 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-07-22T15:19:26Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-22T16:09:02Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-17** — [Tom Dörr](https://x.com/tom_doerr/status/2078092209702813714) — *now • Agent Design • 6,428 views • v1 enriched*  
@@ -17,36 +17,36 @@
   Stripe open-sourced its internal AI toolkit at github.com/stripe/ai — a multi-IDE agent setup shipping Claude, Codex, and Cursor plugins plus providers, evals, and reusable skills; TypeScript-first, ~1.7k stars. Positioned as a production starting point for building AI-powered payments products.
 - **2026-07-17** — [ClaudeDevs](https://x.com/claudedevs/status/2077489907350856038) — *now • Claude Code • 1.4M views • v1 enriched*  
   Announces that Claude Code artifacts can now call MCP connectors, letting you build dashboards and apps that fetch information and take actions for each viewer on demand. Available on Pro, Max, Team, and Enterprise plans; not available on publicly-shared artifacts.
-- **2026-07-20** — [Wilson Lin](https://cursor.com/blog/agent-swarm-model-economics) — *near-term • Agent Design • v1 enriched*  
-  Cursor Research (Wilson Lin) on agent swarms and the new model economics. Their swarm splits work into a tree: planner agents (frontier models) decompose goals and delegate; worker agents (cheap/fast models) execute leaves — context efficiency, not raw parallelism, is what makes it scale. They built a custom VCS handling ~1,000 commits/second and engineered fixes for swarm-specific failure modes (split-brain planners, merge contention, 'megafiles', ossification) plus stacked 'review lenses' and a self-authored shared 'Field Guide' (stigmergy). Benchmark: reimplementing the 835-page SQLite manual in Rust from docs only, graded on sqllogictest. The new harness beat the old in every model mix (GPT-5.5, Grok 4.5, Opus 4.8+Composer 2.5, Fable 5+Composer 2.5), all new configs reaching 100%. Key economics finding: quality was similar across mixes but cost ranged from $1,339 (Opus 4.8 planner + Composer 2.5 worker) to $10,565 (GPT-5.5 solo) — workers carry 69-90%+ of tokens, but frontier planner tokens dominate cost, so a frontier planner + cheap worker is dramatically cheaper (worker fleet $411 vs $9,373). Thesis: with swarms the unit of work becomes the spec. Public output: github.com/cursor/minisqlite.
+- **2026-07-20** — [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler) — *near-term • Agent Design • v1 enriched*  
+  Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically integrated 'multi-compiler' working across strategy, product, architecture, code, and machine code — augmenting the engineer's judgment about which decisions matter (vibe-engineering). Case study: building a geographically distributed, consistent DNS server for exe.dev via concurrent agent loops plus repeated differential spec analysis (commaok.xyz/ai/differential-spec), distilled into a terse 'scar-tissue' guidance doc. ~1 week of attention, almost no code read, zero incidents a month post-launch.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **agent harness engineering** (54 posts, +3 this week)  
+- **agent harness engineering** (55 posts, +4 this week)  
   Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
     - 2026-07-20 — [Wilson Lin](https://cursor.com/blog/agent-swarm-model-economics): Cursor Research (Wilson Lin) on agent swarms and the new model economics. Their swarm splits work into a tree: planner agents (frontier mode…
-    - 2026-07-17 — [Alex Prompter](https://x.com/alex_prompter/status/2077774842649247903): 'Harness engineering 101' thread: argues Agent = Model + Harness, where the harness is the software layer around a model (context, tool/perm…
+    - 2026-07-20 — [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler): Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically int…
 
-- **Claude Code setup & skills craft** (89 posts, +2 this week)  
+- **Claude Code setup & skills craft** (90 posts, +3 this week)  
   Practical craft of setting up and getting the most from Claude Code — CLAUDE.md/skills authoring, setup cheatsheets, skill packs (grill-me, teach, etc.), and usage patterns. Conceptual successor to the drifted @mattpocockuk concept.
+    - 2026-07-20 — [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler): Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically int…
     - 2026-07-17 — [Boris Cherny](https://x.com/bcherny/status/2077929379661844559): Boris Cherny (Claude Code) on AI adoption: everywhere he looks, one engineer is 10x'ing output with Claude while the rest of the org hasn't …
-    - 2026-07-13 — [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610): Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a …
 
-- **OpenAI: harness / loop engineering** (51 posts, +1 this week)  
+- **OpenAI: harness / loop engineering** (52 posts, +2 this week)  
   Posts referencing https://openai.com/index/harness-engineering
+    - 2026-07-20 — [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler): Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically int…
     - 2026-07-13 — [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610): Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a …
-    - 2026-07-06 — [kaize](https://x.com/0x_kaize/status/2073743517155774641): kaize shares a 'Loop engineering' reading list, arguing 2026 agents are less about smarter prompts and more about longer runs — the real que…
 
-- **vector / hybrid databases as agent-memory infrastructure** (47 posts, +1 this week)  
+- **vector / hybrid databases as agent-memory infrastructure** (48 posts, +2 this week)  
   HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
+    - 2026-07-20 — [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler): Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically int…
     - 2026-07-17 — [Paul Iusztin](https://x.com/pauliusztin_/status/2078094872717017107): On 'wiki memory' as an emerging agent-memory pattern (quoting Harrison Chase). Describes combining project-scoped LLM wikis built from perso…
-    - 2026-07-07 — [How To Prompt](https://x.com/howtoprompt__/status/2074122800961614184): How To Prompt (hype framing: "China has killed the vector database industry") flags Tencent's newly open-sourced TencentDB Agent Memory — lo…
 
-- **agent identity files (SOUL.md, CLAUDE.md, persona scaffolds)** (28 posts, +1 this week)  
+- **agent identity files (SOUL.md, CLAUDE.md, persona scaffolds)** (29 posts, +2 this week)  
   Recurring pattern of giving an agent a persistent identity file that loads automatically and shapes behavior.
+    - 2026-07-20 — [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler): Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically int…
     - 2026-07-13 — [Jamon Holmgren](https://x.com/jamonholmgren/status/2076001786700394610): Jamon Holmgren dumps his complete agentic coding setup as a 10+ point checklist: an AGENTS.md that acts as a router to skills/docs/tools; a …
-    - 2026-06-08 — [rari](https://x.com/0xwhrrari/status/2063244577482440978): Engagement-farmed but useful link dump of free AI-engineering learning resources (LangChain agent architecture, Anthropic's Claude Code 101 …
 
 
 ### Revisit from last month
@@ -59,21 +59,22 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 400 | 55.9% |
-| claude-code | 174 | 24.3% |
-| dev-practices | 300 | 41.9% |
-| skills-mcp | 166 | 23.2% |
+| agent-design | 402 | 56.0% |
+| claude-code | 174 | 24.2% |
+| dev-practices | 302 | 42.1% |
+| skills-mcp | 166 | 23.1% |
 | prompting | 107 | 14.9% |
-| research | 174 | 24.3% |
-| industry | 100 | 14.0% |
-| management | 113 | 15.8% |
-| questionable | 103 | 14.4% |
-| general | 100 | 14.0% |
+| research | 174 | 24.2% |
+| industry | 100 | 13.9% |
+| management | 114 | 15.9% |
+| questionable | 103 | 14.3% |
+| general | 100 | 13.9% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-07-20 | Josh Bleecher Snyder | agent-design | Argues a coding agent is better than a compiler: not a new layer that... |
 | 2026-07-20 | Wilson Lin | agent-design | Cursor Research (Wilson Lin) on agent swarms and the new model economi... |
 | 2026-07-18 | Adam Jacob | agent-design | Adam Jacob argues the single best way to cut AI spend is to move deter... |
 | 2026-07-17 | Paul Iusztin | agent-design | On 'wiki memory' as an emerging agent-memory pattern (quoting Harrison... |
@@ -123,12 +124,13 @@
 | 2026-07-04 | 0xSero | claude-code | 0xSero shares Parcels (github.com/0xSero/parcels) — a tool for 'cloud... |
 | 2026-07-04 | ali | questionable | ali (@waterloo_intern) — an apparent parody of distillation hype: clai... |
 | 2026-07-04 | akira | agent-design | akira introduces Onyx, a VM/runtime for programmable agent orchestrati... |
-| 2026-07-04 | Archive | claude-code | Archive (engagement framing, 'met an Anthropic engineer making $1.2M')... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (400)
+### Agent Design (402)
+
+- [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler) — 2026-07-20: Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically integrated 'multi-compiler' working across strategy, product, architecture, code, and machine code — augmenting the engineer's judgment about which decisions matter (vibe-engineering). Case study: building a geographically distributed, consistent DNS server for exe.dev via concurrent agent loops plus repeated differential spec analysis (commaok.xyz/ai/differential-spec), distilled into a terse 'scar-tissue' guidance doc. ~1 week of attention, almost no code read, zero incidents a month post-launch.
 
 - [Wilson Lin](https://cursor.com/blog/agent-swarm-model-economics) — 2026-07-20: Cursor Research (Wilson Lin) on agent swarms and the new model economics. Their swarm splits work into a tree: planner agents (frontier models) decompose goals and delegate; worker agents (cheap/fast models) execute leaves — context efficiency, not raw parallelism, is what makes it scale. They built a custom VCS handling ~1,000 commits/second and engineered fixes for swarm-specific failure modes (split-brain planners, merge contention, 'megafiles', ossification) plus stacked 'review lenses' and a self-authored shared 'Field Guide' (stigmergy). Benchmark: reimplementing the 835-page SQLite manual in Rust from docs only, graded on sqllogictest. The new harness beat the old in every model mix (GPT-5.5, Grok 4.5, Opus 4.8+Composer 2.5, Fable 5+Composer 2.5), all new configs reaching 100%. Key economics finding: quality was similar across mixes but cost ranged from $1,339 (Opus 4.8 planner + Composer 2.5 worker) to $10,565 (GPT-5.5 solo) — workers carry 69-90%+ of tokens, but frontier planner tokens dominate cost, so a frontier planner + cheap worker is dramatically cheaper (worker fleet $411 vs $9,373). Thesis: with swarms the unit of work becomes the spec. Public output: github.com/cursor/minisqlite.
 
@@ -868,6 +870,8 @@
 
 - [James Cowling](https://x.com/jamesacowling/status/2011924122922852599) — 2026-01-16: James Cowling points to the Software Crisis of the 1960s-70s (en.wikipedia.org/wiki/Software_crisis) as a warning: productivity ground to a halt until good abstractions for managing software complexity emerged. His thesis is that without good platforms, the same stall will happen again in the AI-coding era.
 
+- [Josh Bleecher Snyder](https://commaok.xyz/ai/differential-spec) — 2026-01-12: Introduces 'differential spec analysis': write several de-novo implementations from one spec (Opus subagents, forbidden from seeing each other's code), compare their behavior, and treat every deviation as either an implementation bug (add a missing acceptance test) or a spec ambiguity (clarify the spec) — refining the spec itself without reading code. Worked example on Drew Breunig's codeless 'whenwords' repo (github.com/dbreunig/whenwords) surfaced zero-duration crashes, month-rounding errors, and a fractional-input rounding ambiguity resolved with half-up rounding.
+
 - [Denislav Gavrilov](https://x.com/kuberdenis/status/2004934631616086417) — 2025-12-28: Denislav Gavrilov containerizes Claude Code in Kubernetes as 'Clopus-Watcher,' an autonomous monitoring agent that watches a namespace and, on application errors, writes and applies a hotfix and documents it — effectively a 24/7 on-call engineer. Repo, examples, and results at denislavgavrilov.com.
 
 - [AGENTS.md](https://agents.md/) — 2025-12-28: AGENTS.md (agents.md) is a simple, open format for guiding coding agents, now used by over 60k open-source projects. Think of it as a README for agents: a dedicated, predictable place for the build steps, tests, and conventions that coding agents need but that would clutter a human README — kept intentionally separate so agents have one clear location to look.
@@ -1280,7 +1284,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (300)
+### Dev Practices (302)
+
+- [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler) — 2026-07-20: Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically integrated 'multi-compiler' working across strategy, product, architecture, code, and machine code — augmenting the engineer's judgment about which decisions matter (vibe-engineering). Case study: building a geographically distributed, consistent DNS server for exe.dev via concurrent agent loops plus repeated differential spec analysis (commaok.xyz/ai/differential-spec), distilled into a terse 'scar-tissue' guidance doc. ~1 week of attention, almost no code read, zero incidents a month post-launch.
 
 - [Wilson Lin](https://cursor.com/blog/agent-swarm-model-economics) — 2026-07-20: Cursor Research (Wilson Lin) on agent swarms and the new model economics. Their swarm splits work into a tree: planner agents (frontier models) decompose goals and delegate; worker agents (cheap/fast models) execute leaves — context efficiency, not raw parallelism, is what makes it scale. They built a custom VCS handling ~1,000 commits/second and engineered fixes for swarm-specific failure modes (split-brain planners, merge contention, 'megafiles', ossification) plus stacked 'review lenses' and a self-authored shared 'Field Guide' (stigmergy). Benchmark: reimplementing the 835-page SQLite manual in Rust from docs only, graded on sqllogictest. The new harness beat the old in every model mix (GPT-5.5, Grok 4.5, Opus 4.8+Composer 2.5, Fable 5+Composer 2.5), all new configs reaching 100%. Key economics finding: quality was similar across mixes but cost ranged from $1,339 (Opus 4.8 planner + Composer 2.5 worker) to $10,565 (GPT-5.5 solo) — workers carry 69-90%+ of tokens, but frontier planner tokens dominate cost, so a frontier planner + cheap worker is dramatically cheaper (worker fleet $411 vs $9,373). Thesis: with swarms the unit of work becomes the spec. Public output: github.com/cursor/minisqlite.
 
@@ -1815,6 +1821,8 @@
 - [Gergely Orosz](https://x.com/gergelyorosz/status/2011956185650409558) — 2026-01-16: Gergely Orosz amplifies Cindy Sridharan's take that, outside of prototyping, engineers should aim to understand close to 100% of the production code LLMs generate. He adds that the gap between teams who do this and those who don't will be massive, and notes the tension: heavy cutting-edge AI use is easiest on throwaway prototypes where it's fine to let it rip.
 
 - [James Cowling](https://x.com/jamesacowling/status/2011924122922852599) — 2026-01-16: James Cowling points to the Software Crisis of the 1960s-70s (en.wikipedia.org/wiki/Software_crisis) as a warning: productivity ground to a halt until good abstractions for managing software complexity emerged. His thesis is that without good platforms, the same stall will happen again in the AI-coding era.
+
+- [Josh Bleecher Snyder](https://commaok.xyz/ai/differential-spec) — 2026-01-12: Introduces 'differential spec analysis': write several de-novo implementations from one spec (Opus subagents, forbidden from seeing each other's code), compare their behavior, and treat every deviation as either an implementation bug (add a missing acceptance test) or a spec ambiguity (clarify the spec) — refining the spec itself without reading code. Worked example on Drew Breunig's codeless 'whenwords' repo (github.com/dbreunig/whenwords) surfaced zero-duration crashes, month-rounding errors, and a fractional-input rounding ambiguity resolved with half-up rounding.
 
 - [Jarrod Watts](https://x.com/jarrodwatts/status/2009200810870428123) — 2026-01-08: Jarrod Watts open-sourced his 'claude-code-config' repo containing all the agents, commands, hooks, rules, skills, and plugins he's made or collected over the past few months — described as simple but effective enhancements he'll keep updating. A ready-made reference config for a team standardizing Claude Code setups.
 
@@ -2984,7 +2992,9 @@
 
 - [Santiago](https://x.com/svpino/status/1881336934418755862) — 2025-01-21: Walks through GroundX, an open-source, self-hostable/air-gapped enterprise RAG system. Two services: Ingest (a pretrained vision model that 'understands' documents instead of feeding raw docs to the LLM) and Search (text+vector search with a fine-tuned re-ranker). Santiago's thesis: most teams need better ingestion, not better retrieval; includes a video demo and the free X-Ray inspection tool.
 
-### Management (113)
+### Management (114)
+
+- [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler) — 2026-07-20: Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically integrated 'multi-compiler' working across strategy, product, architecture, code, and machine code — augmenting the engineer's judgment about which decisions matter (vibe-engineering). Case study: building a geographically distributed, consistent DNS server for exe.dev via concurrent agent loops plus repeated differential spec analysis (commaok.xyz/ai/differential-spec), distilled into a terse 'scar-tissue' guidance doc. ~1 week of attention, almost no code read, zero incidents a month post-launch.
 
 - [Adam Jacob](https://x.com/adamhjk/status/2077865176632897952) — 2026-07-18: Adam Jacob argues the single best way to cut AI spend is to move deterministic logic into reusable building blocks and reserve frontier-model intelligence only where it's actually needed. He rebuilt a complex code-review skill as a 'swamp workflow' — 8x fewer tokens, half the runtime, 23 sub-agents cut to 3. Full write-up at adamhjk.com (A Practical Guide to Reducing Token Spend).
 
@@ -3628,6 +3638,9 @@
 ## Full Chronological List
 
 ### Jul 2026
+
+- **2026-07-20** | [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler) | agent-design, dev-practices, management
+  Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically integrated 'multi-compiler' working across strategy, product, architecture, code, and machine code — augmenting the engineer's judgment about which decisions matter (vibe-engineering). Case study: building a geographically distributed, consistent DNS server for exe.dev via concurrent agent loops plus repeated differential spec analysis (commaok.xyz/ai/differential-spec), distilled into a terse 'scar-tissue' guidance doc. ~1 week of attention, almost no code read, zero incidents a month post-launch.
 
 - **2026-07-20** | [Wilson Lin](https://cursor.com/blog/agent-swarm-model-economics) | agent-design, research, dev-practices, industry
   Cursor Research (Wilson Lin) on agent swarms and the new model economics. Their swarm splits work into a tree: planner agents (frontier models) decompose goals and delegate; worker agents (cheap/fast models) execute leaves — context efficiency, not raw parallelism, is what makes it scale. They built a custom VCS handling ~1,000 commits/second and engineered fixes for swarm-specific failure modes (split-brain planners, merge contention, 'megafiles', ossification) plus stacked 'review lenses' and a self-authored shared 'Field Guide' (stigmergy). Benchmark: reimplementing the 835-page SQLite manual in Rust from docs only, graded on sqllogictest. The new harness beat the old in every model mix (GPT-5.5, Grok 4.5, Opus 4.8+Composer 2.5, Fable 5+Composer 2.5), all new configs reaching 100%. Key economics finding: quality was similar across mixes but cost ranged from $1,339 (Opus 4.8 planner + Composer 2.5 worker) to $10,565 (GPT-5.5 solo) — workers carry 69-90%+ of tokens, but frontier planner tokens dominate cost, so a frontier planner + cheap worker is dramatically cheaper (worker fleet $411 vs $9,373). Thesis: with swarms the unit of work becomes the spec. Public output: github.com/cursor/minisqlite.
@@ -5434,6 +5447,9 @@
 
 - **2026-01-12** | [Nozz](https://x.com/nozz/status/2008835341649346666) | general
   [Post deleted/unavailable — in Jan 3-16 dead zone]
+
+- **2026-01-12** | [Josh Bleecher Snyder](https://commaok.xyz/ai/differential-spec) | dev-practices, agent-design
+  Introduces 'differential spec analysis': write several de-novo implementations from one spec (Opus subagents, forbidden from seeing each other's code), compare their behavior, and treat every deviation as either an implementation bug (add a missing acceptance test) or a spec ambiguity (clarify the spec) — refining the spec itself without reading code. Worked example on Drew Breunig's codeless 'whenwords' repo (github.com/dbreunig/whenwords) surfaced zero-duration crashes, month-rounding errors, and a fractional-input rounding ambiguity resolved with half-up rounding.
 
 - **2026-01-10** | [Nick Dobos](https://x.com/dobosn/status/2008036181346656365) | general
   [Post deleted/unavailable]
