@@ -119,6 +119,22 @@ def post_enrichment_pipeline(*,
         # Step 1: embeddings
         if embed:
             try:
+                # Self-heal deps first: the sandbox doesn't persist installs
+                # between runs, so without this the embed/semantic/auto-file
+                # layer silently no-ops whenever fastembed is absent. Best-effort
+                # — if the install fails, the ImportError fallback below still
+                # keeps the rest of the pipeline running.
+                try:
+                    try:
+                        from .ensure_deps import ensure as _ensure_deps
+                    except ImportError:
+                        import sys as _sys
+                        _sys.path.insert(0, str(Path(__file__).parent))
+                        from ensure_deps import ensure as _ensure_deps
+                    _ensure_deps()
+                except Exception as _e:
+                    if progress:
+                        print(f"[pipeline] ensure_deps best-effort skip: {_e}")
                 # Lazy import — surfacing a clean error if fastembed isn't installed
                 try:
                     from .embeddings import embed_corpus

@@ -139,7 +139,7 @@ For each `post_id`:
 
 1. Get the post: `post = get_post(post_id)`. Use `post['url']`.
 2. `navigate` to the URL in Chrome.
-3. Wait 2-3s for JS rendering.
+3. Wait a jittered interval for JS rendering — `setTimeout(()=>r(true), 1500 + Math.random()*4000)` (1.5–5.5s, mean ~3.5s). The variance matters more than the duration: a fixed cadence is the loudest automation signature; the wait being human-shaped is the cheapest mitigation against rate-limiting.
 4. Extract structured segments via `javascript_tool`: enumerate `<article>` elements; for each, capture `(text, handle, urls)`. The first article is type `op`; subsequent articles whose handle matches the page handle are `self_reply`; others are `quote`. Detect external links (github / arxiv / huggingface / blog hosts) as their own `external_link` segments.
 5. On timeout/empty extraction, retry once after 3s.
 6. **Dead detection.** Still failing AND page text contains "post is unavailable" / "account suspended" / "page doesn't exist" / "this Tweet was deleted":

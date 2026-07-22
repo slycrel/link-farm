@@ -1,0 +1,13 @@
+# AI Links Collection — Python dependencies for the semantic/curation stack.
+#
+# Most of the pipeline runs on the standard library. These are the extras the
+# embedding + semantic-discovery + auto-file steps need. If they're absent the
+# pipeline still does subject-flags + mechanical discovery + rebuild, but the
+# semantic layer (and therefore auto-curation of concepts) silently no-ops.
+#
+# Install:  pip install --break-system-packages -r requirements.txt
+# Or let the skills self-install via db/ensure_deps.py at startup.
+
+fastembed==0.8.0      # embedding backbone (bge-small-en-v1.5 ONNX, ~133MB on first use)
+numpy>=1.26           # cosine similarity in db/embeddings.py
+sqlite-vec>=0.1.6     # loaded-but-not-yet-used; kept for when the corpus crosses ~10k posts

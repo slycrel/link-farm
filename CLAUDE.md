@@ -191,15 +191,17 @@ The HTML stats line (date range, counts) is computed dynamically by the viewer J
 
 ## Python Dependencies
 
-Most of the stack runs on the standard library. Two optional dependencies are needed for the semantic-discovery and curation pipelines:
+Most of the stack runs on the standard library. The semantic-discovery and curation pipelines need a few extras, pinned in **`requirements.txt`**:
 
 ```bash
-pip install --break-system-packages fastembed sqlite-vec numpy
+pip install --break-system-packages -r requirements.txt
 ```
 
-`fastembed` (~133MB including the bge-small-en-v1.5 ONNX model on first use) is the embedding backbone. `sqlite-vec` is loaded but not yet used at scale — kept available for when corpus crosses ~10k posts and numpy nearest-neighbor becomes slow. `numpy` is used by `db/embeddings.py` for cosine similarity.
+`fastembed` (~133MB including the bge-small-en-v1.5 ONNX model on first use) is the embedding backbone. `sqlite-vec` is declared but not yet imported by any code path — kept for when the corpus crosses ~10k posts and numpy nearest-neighbor becomes slow. `numpy` is used by `db/embeddings.py` for cosine similarity.
 
-The daily sync, catch-up, and curate skills check for these at startup. If they're missing, those skills can still do the non-semantic work but will skip embedding + semantic discovery.
+**Auto-bootstrap.** Because the sandbox doesn't persist installs between runs, `db/pipeline.py` calls `db/ensure_deps.py` at the top of its embed step — a `find_spec` check that pip-installs `fastembed`/`numpy` only if missing (fast no-op when present). This is why the sync/catch-up/backfill skills no longer silently skip the semantic layer when the environment is fresh. The sync/backfill skill snapshots also run `db/ensure_deps.py` in Step 0 for good measure. For a permanent install on a real machine (venv / `pip --user`), see **`SETUP.md`**.
+
+**Portability.** The repo carries all code, the DB, docs, and skills. Machine/account-specific pieces — the GitHub token (`.claude/github_token`, gitignored), the M365 + Chrome connectors, and the scheduled-task triggers — are reconstituted per the checklist in `SETUP.md`. Versioned snapshots of the scheduled tasks live in `scheduled/` (`ai-links-sync.SKILL.md`, `ai-links-backfill.SKILL.md`); the live copies are in the Cowork app store at `~/Documents/Claude/Scheduled/<id>/SKILL.md`. The `ai-links-catchup` and `ai-links-curate` skills are in the repo root.
 
 ## GitHub Backup
 
