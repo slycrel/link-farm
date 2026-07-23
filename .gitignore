@@ -5,3 +5,10 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# Persistent sandbox dep + model caches (Linux-native, machine-local — see
+# db/ensure_deps.py). Large; must never be committed or pushed.
+.deps/
+.model-cache/
+.deps_test
+.claude/github_token

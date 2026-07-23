@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-07-23T15:20:39Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-23T18:26:26Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-17** — [Tom Dörr](https://x.com/tom_doerr/status/2078092209702813714) — *now • Agent Design • 6,428 views • v1 enriched*  
@@ -43,7 +43,7 @@
     - 2026-07-20 — [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler): Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically int…
     - 2026-07-17 — [Boris Cherny](https://x.com/bcherny/status/2077929379661844559): Boris Cherny (Claude Code) on AI adoption: everywhere he looks, one engineer is 10x'ing output with Claude while the rest of the org hasn't …
 
-- **Claude skills craft** (93 posts, +3 this week)  
+- **Claude skills craft** (96 posts, +3 this week)  
   Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.
     - 2026-07-14 — [JoePro](https://x.com/joepro/status/2076877282312954311): JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skill spec) engineered to produce distinctive, production-grade UIs that a…
     - 2026-07-14 — [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089): How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with a native AI agent, built-in MCP ser…

@@ -35,6 +35,7 @@ CLI:
 import sqlite3
 import argparse
 import datetime
+import math
 import re
 from pathlib import Path
 from contextlib import contextmanager
@@ -590,24 +591,47 @@ def assign_primaries(*, db_path: Path = DEFAULT_DB, with_lock: bool = True,
 
 # ---- Split-candidate trigger -------------------------------------------
 
-# A concept with this many PRIMARY posts is worth a human glance to decide
-# whether it wants sub-categorizing. Measured on primaries (a partition), not
-# total edges — a concept can carry many secondary tags without being an
-# oversized *home*. Only a *flag*, never an auto-split.
+# The split trigger fires on a *proportional* threshold, not a flat count.
+# A concept is worth a human glance when its PRIMARY-home count runs well
+# above the typical home size for the current corpus — i.e. it's
+# disproportionately large, whatever the corpus size — so the bar auto-scales
+# as the collection grows instead of needing a magic number re-tuned by hand.
+# (This replaced the old flat SPLIT_CANDIDATE_MIN_POSTS=40, which had started
+# cutting through the natural head of the distribution once primary/secondary
+# auto-promotion made a big primary home a sign of legitimate size rather than
+# of conflated threads — Jeremy, July 2026.)
+#
+# Threshold = SPLIT_CANDIDATE_MEAN_MULTIPLE × (mean primary-home size across
+# concepts that are a primary home for ≥1 post), floored at
+# SPLIT_CANDIDATE_FLOOR so a tiny corpus doesn't flag 3-post homes. Measured on
+# primaries (a partition), never total edges — a concept can carry many
+# secondary tags without being an oversized *home*. Only a *flag*, never an
+# auto-split.
+SPLIT_CANDIDATE_MEAN_MULTIPLE = 2.0
+SPLIT_CANDIDATE_FLOOR = 20  # never flag a home smaller than this, whatever the mean
+
+# Back-compat alias: some callers/tests referenced the old flat constant. Kept
+# so `min_posts=SPLIT_CANDIDATE_MIN_POSTS` still forces the pre-July behaviour.
 SPLIT_CANDIDATE_MIN_POSTS = 40
 
 
 def split_candidates(db_path: Path = DEFAULT_DB,
-                     min_posts: int = SPLIT_CANDIDATE_MIN_POSTS) -> list[dict]:
-    """Active concepts whose PRIMARY-post count is large enough to be worth
-    vetting for sub-categorization.
+                     mean_multiple: float = SPLIT_CANDIDATE_MEAN_MULTIPLE,
+                     min_posts: Optional[int] = None) -> list[dict]:
+    """Active concepts whose PRIMARY-post count is disproportionately large for
+    the current corpus — worth vetting for sub-categorization.
+
+    The threshold scales with the corpus: it's `mean_multiple` times the mean
+    primary-home size across active concepts that home ≥1 post, floored at
+    SPLIT_CANDIDATE_FLOOR. Pass an explicit `min_posts` to override with a flat
+    threshold instead (e.g. the legacy SPLIT_CANDIDATE_MIN_POSTS).
 
     Returns [{id, name, post_count}] where `post_count` is the number of posts
     for which this concept is the *primary* home (is_primary=1) — a partition,
     not a sum of overlapping tags. A concept can accrue many secondary tags
-    without being an oversized home, so measuring primaries stops the split
-    trigger from firing on merely-popular concepts. Purely advisory — surfaced
-    in the pipeline report; splitting stays a human decision.
+    without being an oversized home, so measuring primaries stops the trigger
+    from firing on merely-popular concepts. Purely advisory — surfaced in the
+    pipeline report; splitting stays a human decision.
     """
     with _connect(db_path) as conn:
         rows = conn.execute("""
@@ -616,10 +640,17 @@ def split_candidates(db_path: Path = DEFAULT_DB,
               JOIN post_concepts pc ON pc.concept_id = c.id AND pc.is_primary = 1
              WHERE c.status = ?
              GROUP BY c.id
-            HAVING post_count >= ?
              ORDER BY post_count DESC
-        """, (CONCEPT_ACTIVE, min_posts)).fetchall()
-    return [dict(r) for r in rows]
+        """, (CONCEPT_ACTIVE,)).fetchall()
+    counts = [r["post_count"] for r in rows]
+    if not counts:
+        return []
+    if min_posts is not None:
+        threshold = min_posts
+    else:
+        mean = sum(counts) / len(counts)
+        threshold = max(SPLIT_CANDIDATE_FLOOR, math.ceil(mean_multiple * mean))
+    return [dict(r) for r in rows if r["post_count"] >= threshold]
 
 
 # ---- Query helpers -----------------------------------------------------
