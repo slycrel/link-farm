@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-07-23T18:26:26Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-24T15:13:45Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-17** — [Tom Dörr](https://x.com/tom_doerr/status/2078092209702813714) — *now • Agent Design • 6,428 views • v1 enriched*  
@@ -28,6 +28,11 @@
     - 2026-07-20 — [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler): Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically int…
     - 2026-07-17 — [Alex Prompter](https://x.com/alex_prompter/status/2077774842649247903): 'Harness engineering 101' thread: argues Agent = Model + Harness, where the harness is the software layer around a model (context, tool/perm…
 
+- **Claude skills craft** (99 posts, +4 this week)  
+  Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.
+    - 2026-07-20 — [Wilson Lin](https://cursor.com/blog/agent-swarm-model-economics): Cursor Research (Wilson Lin) on agent swarms and the new model economics. Their swarm splits work into a tree: planner agents (frontier mode…
+    - 2026-07-14 — [JoePro](https://x.com/joepro/status/2076877282312954311): JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skill spec) engineered to produce distinctive, production-grade UIs that a…
+
 - **agent harness engineering** (77 posts, +4 this week)  
   Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
     - 2026-07-20 — [Wilson Lin](https://cursor.com/blog/agent-swarm-model-economics): Cursor Research (Wilson Lin) on agent swarms and the new model economics. Their swarm splits work into a tree: planner agents (frontier mode…
@@ -42,11 +47,6 @@
   Running and managing fleets of agents: multi-agent teams, agent orchestration for teams, onboarding/managing agents, org adoption of coding agents.
     - 2026-07-20 — [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler): Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically int…
     - 2026-07-17 — [Boris Cherny](https://x.com/bcherny/status/2077929379661844559): Boris Cherny (Claude Code) on AI adoption: everywhere he looks, one engineer is 10x'ing output with Claude while the rest of the org hasn't …
-
-- **Claude skills craft** (96 posts, +3 this week)  
-  Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.
-    - 2026-07-14 — [JoePro](https://x.com/joepro/status/2076877282312954311): JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skill spec) engineered to produce distinctive, production-grade UIs that a…
-    - 2026-07-14 — [How To Prompt](https://x.com/howtoprompt__/status/2076689880026096089): How To Prompt highlights an open-source, privacy-first Chromium fork built by an ex-Google engineer with a native AI agent, built-in MCP ser…
 
 
 ### Revisit from last month
