@@ -1,12 +1,12 @@
 # AI Links Collection
-**Total Posts**: 718  
-**Date Range**: 2024-06-11 – 2026-07-20  
-**Enriched**: 717/718 (99%)
+**Total Posts**: 719  
+**Date Range**: 2024-06-11 – 2026-07-24  
+**Enriched**: 718/719 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-07-24T15:13:45Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-24T22:16:45Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-17** — [Tom Dörr](https://x.com/tom_doerr/status/2078092209702813714) — *now • Agent Design • 6,428 views • v1 enriched*  
@@ -17,36 +17,36 @@
   Stripe open-sourced its internal AI toolkit at github.com/stripe/ai — a multi-IDE agent setup shipping Claude, Codex, and Cursor plugins plus providers, evals, and reusable skills; TypeScript-first, ~1.7k stars. Positioned as a production starting point for building AI-powered payments products.
 - **2026-07-17** — [ClaudeDevs](https://x.com/claudedevs/status/2077489907350856038) — *now • Claude Code • 1.4M views • v1 enriched*  
   Announces that Claude Code artifacts can now call MCP connectors, letting you build dashboards and apps that fetch information and take actions for each viewer on demand. Available on Pro, Max, Team, and Enterprise plans; not available on publicly-shared artifacts.
-- **2026-07-20** — [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler) — *near-term • Agent Design • v1 enriched*  
-  Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically integrated 'multi-compiler' working across strategy, product, architecture, code, and machine code — augmenting the engineer's judgment about which decisions matter (vibe-engineering). Case study: building a geographically distributed, consistent DNS server for exe.dev via concurrent agent loops plus repeated differential spec analysis (commaok.xyz/ai/differential-spec), distilled into a terse 'scar-tissue' guidance doc. ~1 week of attention, almost no code read, zero incidents a month post-launch.
+- **2026-07-24** — [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making) — *near-term • Management • v1 enriched*  
+  Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI dev schism": he argues that having AI build something you initiated — code, art, prose, even a deck — isn't the same as *making* it, and the loss of "making" (distinct from loss of craft or problem-solving) is what leaves him unfulfilled. He works the gray area — a compiler or assembler feels like a tool you make *with*, while an LLM feels like a report you *delegate* to — and lands on prompting-as-skill being real (vision, judgment, communication) but closer to "asking someone to make something for you" than making it yourself. (beej.us/blog/data/ai-making)
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **loop engineering** (112 posts, +5 this week)  
+- **loop engineering** (113 posts, +6 this week)  
   Feedback loops and self-running agent loops: loop design patterns, loop libraries, nested build loops, self-improving / meta-learning loops.
+    - 2026-07-24 — [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making): Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI de…
     - 2026-07-20 — [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler): Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically int…
-    - 2026-07-17 — [Alex Prompter](https://x.com/alex_prompter/status/2077774842649247903): 'Harness engineering 101' thread: argues Agent = Model + Harness, where the harness is the software layer around a model (context, tool/perm…
 
-- **Claude skills craft** (99 posts, +4 this week)  
+- **Claude skills craft** (103 posts, +6 this week)  
   Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.
+    - 2026-07-24 — [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making): Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI de…
     - 2026-07-20 — [Wilson Lin](https://cursor.com/blog/agent-swarm-model-economics): Cursor Research (Wilson Lin) on agent swarms and the new model economics. Their swarm splits work into a tree: planner agents (frontier mode…
-    - 2026-07-14 — [JoePro](https://x.com/joepro/status/2076877282312954311): JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skill spec) engineered to produce distinctive, production-grade UIs that a…
 
-- **agent harness engineering** (77 posts, +4 this week)  
+- **agent harness engineering** (78 posts, +5 this week)  
   Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
+    - 2026-07-24 — [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making): Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI de…
     - 2026-07-20 — [Wilson Lin](https://cursor.com/blog/agent-swarm-model-economics): Cursor Research (Wilson Lin) on agent swarms and the new model economics. Their swarm splits work into a tree: planner agents (frontier mode…
-    - 2026-07-20 — [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler): Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically int…
 
-- **Claude Code setup & usage** (125 posts, +3 this week)  
+- **Claude Code setup & usage** (126 posts, +4 this week)  
   Claude Code setup guides, cheatsheets, starter packs, and day-to-day usage / steering practices.
+    - 2026-07-24 — [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making): Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI de…
     - 2026-07-20 — [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler): Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically int…
-    - 2026-07-17 — [Boris Cherny](https://x.com/bcherny/status/2077929379661844559): Boris Cherny (Claude Code) on AI adoption: everywhere he looks, one engineer is 10x'ing output with Claude while the rest of the org hasn't …
 
-- **managing agent teams** (102 posts, +3 this week)  
+- **managing agent teams** (103 posts, +4 this week)  
   Running and managing fleets of agents: multi-agent teams, agent orchestration for teams, onboarding/managing agents, org adoption of coding agents.
+    - 2026-07-24 — [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making): Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI de…
     - 2026-07-20 — [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler): Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically int…
-    - 2026-07-17 — [Boris Cherny](https://x.com/bcherny/status/2077929379661844559): Boris Cherny (Claude Code) on AI adoption: everywhere he looks, one engineer is 10x'ing output with Claude while the rest of the org hasn't …
 
 
 ### Revisit from last month
@@ -59,21 +59,22 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 402 | 56.0% |
+| agent-design | 402 | 55.9% |
 | claude-code | 174 | 24.2% |
-| dev-practices | 302 | 42.1% |
+| dev-practices | 302 | 42.0% |
 | skills-mcp | 166 | 23.1% |
-| prompting | 107 | 14.9% |
+| prompting | 108 | 15.0% |
 | research | 174 | 24.2% |
 | industry | 100 | 13.9% |
-| management | 114 | 15.9% |
+| management | 115 | 16.0% |
 | questionable | 103 | 14.3% |
-| general | 100 | 13.9% |
+| general | 101 | 14.0% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-07-24 | Brian "Beej Jorgensen" Hall | management | Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veter... |
 | 2026-07-20 | Josh Bleecher Snyder | agent-design | Argues a coding agent is better than a compiler: not a new layer that... |
 | 2026-07-20 | Wilson Lin | agent-design | Cursor Research (Wilson Lin) on agent swarms and the new model economi... |
 | 2026-07-18 | Adam Jacob | agent-design | Adam Jacob argues the single best way to cut AI spend is to move deter... |
@@ -123,7 +124,6 @@
 | 2026-07-04 | Tom Dörr | skills-mcp | Tom Dörr shares VoltAgent's awesome-claude-skills (github.com/VoltAgen... |
 | 2026-07-04 | 0xSero | claude-code | 0xSero shares Parcels (github.com/0xSero/parcels) — a tool for 'cloud... |
 | 2026-07-04 | ali | questionable | ali (@waterloo_intern) — an apparent parody of distillation hype: clai... |
-| 2026-07-04 | akira | agent-design | akira introduces Onyx, a VM/runtime for programmable agent orchestrati... |
 
 ---
 ## Posts by Topic
@@ -2224,7 +2224,9 @@
 
 - [Mervin Praison](https://x.com/mervinpraison/status/1881788246684013011) — 2025-01-22: Shows a 100% local RAG AI agent with reasoning: DeepSeek via Ollama for the LLM, PraisonAI to build the agent in a few lines, Nomic embeddings, and a Streamlit UI—code included in the thread.
 
-### Prompting (107)
+### Prompting (108)
+
+- [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making) — 2026-07-24: Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI dev schism": he argues that having AI build something you initiated — code, art, prose, even a deck — isn't the same as *making* it, and the loss of "making" (distinct from loss of craft or problem-solving) is what leaves him unfulfilled. He works the gray area — a compiler or assembler feels like a tool you make *with*, while an LLM feels like a report you *delegate* to — and lands on prompting-as-skill being real (vision, judgment, communication) but closer to "asking someone to make something for you" than making it yourself. (beej.us/blog/data/ai-making)
 
 - [Paul Hudson](https://x.com/twostraws/status/2078039730759811369) — 2026-07-17: Shares a reusable 'adversarial unit test sweep' prompt (set Codex/Sol to Ultra reasoning): deliberately target edge cases, malformed inputs, race conditions, boundary values, resource exhaustion, state corruption, and invalid assumptions; make every test earn its place, remove or consolidate weak/redundant tests, fix every failing test, add permanent regression tests for each bug found, and repeat until the suite passes cleanly with strong coverage. Argues AI-driven adversarial test review is one of the easiest high-value practices to adopt.
 
@@ -2992,7 +2994,9 @@
 
 - [Santiago](https://x.com/svpino/status/1881336934418755862) — 2025-01-21: Walks through GroundX, an open-source, self-hostable/air-gapped enterprise RAG system. Two services: Ingest (a pretrained vision model that 'understands' documents instead of feeding raw docs to the LLM) and Search (text+vector search with a fine-tuned re-ranker). Santiago's thesis: most teams need better ingestion, not better retrieval; includes a video demo and the free X-Ray inspection tool.
 
-### Management (114)
+### Management (115)
+
+- [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making) — 2026-07-24: Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI dev schism": he argues that having AI build something you initiated — code, art, prose, even a deck — isn't the same as *making* it, and the loss of "making" (distinct from loss of craft or problem-solving) is what leaves him unfulfilled. He works the gray area — a compiler or assembler feels like a tool you make *with*, while an LLM feels like a report you *delegate* to — and lands on prompting-as-skill being real (vision, judgment, communication) but closer to "asking someone to make something for you" than making it yourself. (beej.us/blog/data/ai-making)
 
 - [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler) — 2026-07-20: Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically integrated 'multi-compiler' working across strategy, product, architecture, code, and machine code — augmenting the engineer's judgment about which decisions matter (vibe-engineering). Case study: building a geographically distributed, consistent DNS server for exe.dev via concurrent agent loops plus repeated differential spec analysis (commaok.xyz/ai/differential-spec), distilled into a terse 'scar-tissue' guidance doc. ~1 week of attention, almost no code read, zero incidents a month post-launch.
 
@@ -3430,7 +3434,9 @@
 
 - [Aakash Gupta](https://x.com/aakashg0/status/1967135994228166848) — 2025-09-15: Boosts another user's step-by-step roadmap for building your first AI agent, calling it 'gold.' Engagement-style framing; the substantive content lives in the referenced roadmap rather than the post itself.
 
-### General (101)
+### General (102)
+
+- [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making) — 2026-07-24: Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI dev schism": he argues that having AI build something you initiated — code, art, prose, even a deck — isn't the same as *making* it, and the loss of "making" (distinct from loss of craft or problem-solving) is what leaves him unfulfilled. He works the gray area — a compiler or assembler feels like a tool you make *with*, while an LLM feels like a report you *delegate* to — and lands on prompting-as-skill being real (vision, judgment, communication) but closer to "asking someone to make something for you" than making it yourself. (beej.us/blog/data/ai-making)
 
 - [argofowl](https://x.com/argofowl/status/2076284369883615555) — 2026-07-17: Introduces namethatui.com — a dictionary for UI elements you can see but can't name, built by a designer to lower the friction of describing UI when prompting coding agents. It learns from usage: every search teaches the site new words and grows a built-in pocket dictionary.
 
@@ -3638,6 +3644,9 @@
 ## Full Chronological List
 
 ### Jul 2026
+
+- **2026-07-24** | [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making) | management, general, prompting
+  Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI dev schism": he argues that having AI build something you initiated — code, art, prose, even a deck — isn't the same as *making* it, and the loss of "making" (distinct from loss of craft or problem-solving) is what leaves him unfulfilled. He works the gray area — a compiler or assembler feels like a tool you make *with*, while an LLM feels like a report you *delegate* to — and lands on prompting-as-skill being real (vision, judgment, communication) but closer to "asking someone to make something for you" than making it yourself. (beej.us/blog/data/ai-making)
 
 - **2026-07-20** | [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler) | agent-design, dev-practices, management
   Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically integrated 'multi-compiler' working across strategy, product, architecture, code, and machine code — augmenting the engineer's judgment about which decisions matter (vibe-engineering). Case study: building a geographically distributed, consistent DNS server for exe.dev via concurrent agent loops plus repeated differential spec analysis (commaok.xyz/ai/differential-spec), distilled into a terse 'scar-tissue' guidance doc. ~1 week of attention, almost no code read, zero incidents a month post-launch.

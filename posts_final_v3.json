@@ -1,5 +1,33 @@
 [
   {
+    "date": "2026-07-24",
+    "author": "Brian \"Beej Jorgensen\" Hall",
+    "handle": "",
+    "subject": "On Making",
+    "url": "https://beej.us/blog/data/ai-making",
+    "summary": "Beej (Brian \"Beej Jorgensen\" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the \"AI dev schism\": he argues that having AI build something you initiated — code, art, prose, even a deck — isn't the same as *making* it, and the loss of \"making\" (distinct from loss of craft or problem-solving) is what leaves him unfulfilled. He works the gray area — a compiler or assembler feels like a tool you make *with*, while an LLM feels like a report you *delegate* to — and lands on prompting-as-skill being real (vision, judgment, communication) but closer to \"asking someone to make something for you\" than making it yourself. (beej.us/blog/data/ai-making)",
+    "topics": [
+      "management",
+      "general",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "article",
+    "views": "",
+    "notes": "manually added via chat 2026-07-24",
+    "enriched": true,
+    "content": "On Making — by Brian \"Beej Jorgensen\" Hall (beej.us), 2026-03-12.\n\nTLDR: I gain a lot of fulfillment by making things. I don't consider things built by others at my request to be made by me, and are therefore much less fulfilling. And then I feel sad.\n\nPerspective: Gen-X hacker who cut his teeth in the 80s microcomputer era; BS and MS in CS; 20 years industry experience (Hewlett-Packard, startups, cofounder, Activision); CS instructor for 9 years, now at Oregon State University-Cascades; 65% Doom on the AI-Utopia/Doom scale; a Claude Code user sometimes; codes by hand sometimes.\n\nThe essay opens with an \"interlude\" — a sci-fi excerpt (The Vorrkai Interval), a woodcut-in-pastels painting (Mirrors of the Machine), a rebuilt cedar front deck, and a Rust TUI roguelike — presenting the author as a \"prolific polymath,\" then reveals all of it (except the deck, built by paid craftsmen) was AI-generated.\n\nI Am Uncomfortable: The author initiated all that creation but doesn't feel he *made* any of it. He contrasts people who say \"I put in a new front deck\" (when contractors did the work) with his own \"I had a new front deck put in.\" When Claude builds code for him he says \"I had this code built for me\" and Unlicenses it rather than MIT-licensing. As a manager he'd say \"my team built this\"; as a manager of LLMs, \"my Agents built this.\" Completing projects is great, but having others complete projects he initiated is far less fulfilling. It's not just the loss of craft and problem-solving — it's the loss of *making*.\n\nWhat Did I Make Recently? His wife wanted a no-frills Spanish flash-card system reading words from a spreadsheet. He wrote it by hand (JavaScript/CSS/HTML, ~177 lines), using Claude only to learn basics (the Google Sheets CSV endpoint) but generating no code. It took ~50x longer than Claude would have taken, but he can put his name on it and be proud — something he's incapable of feeling for anything Claude writes.\n\nThe Art and Craft of Prompting: He grants prompting requires real human skill — vision, judgment, communication, prompting skill; not all prompts or users are equally effective. But the skill is in effectively *asking someone to make something for you* (quoting Eisenhower on leadership). Prompting for software isn't the same as making the software.\n\nCompilers, Smartypants — turtles all the way down? He wrote C, not machine code; the compiler wrote that, non-deterministically (Clang vs GCC differ), yet he feels he wrote the program. He even has Claude act as a C compiler and emit working x86_64 assembly for a recursive Fibonacci — and still feels he \"wrote that program\" because assembly→machine-code is strict, mathematically-precise translation (like a hammer driving a nail). The line hinges on *making* versus *asking to be made*. Compilers/assemblers/hammers feel like tools; LLMs feel human — you ask them in imprecise human language and the relationship is manager-report rather than colleague-with-a-tool. Peering into the gray area makes him more confident that telling AI to make something *is* an act of creation — but he still can't say he \"hammered\" a nail an AI-powered hammer drove for him, and that difference matters to him.\n\nThings he does (feels he made): write and run C code; use a hammer to drive nails; use an assembler. Things he asks others to do at his command: write software; build a deck; paint a picture.\n\nCloses with Deep Thought from The Hitchhiker's Guide to the Galaxy, and a post-script listing his \"actual contributions\" — the prompts behind the sci-fi, the painting, the roguelike, and \"Please replace my front deck.\" Em dashes deliberate (Vim digraph ^K-M).",
+    "source": "bookmark",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-07-20",
     "author": "Josh Bleecher Snyder",
     "handle": "",
