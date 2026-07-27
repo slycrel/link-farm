@@ -1,5 +1,239 @@
 [
   {
+    "date": "2026-07-25",
+    "author": "Peter Steinberger",
+    "handle": "@steipete",
+    "subject": "Post by Peter Steinberger 🦞 on X",
+    "url": "https://x.com/steipete/status/2080779917130858598",
+    "summary": "Peter Steinberger amplifies Alex Kotliarskyi's 'graph-maxing' workflow: draw a workflow graph (even on paper), hand it to Codex and ask it to write a code-mode script that implements the workflow and run it with your inputs — reportedly works with no further steps.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "777.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "am I a graph engineer now\n\nHow to graph-max with Codex: 1. Draw a graph (in any tool, even on paper) 2. Send it to Codex and say 'write a code mode script that implements this workflow, run it with <your inputs>'. There's no step 3, it just works.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-25",
+    "author": "Miles Deutscher",
+    "handle": "@milesdeutscher",
+    "subject": "Post by Miles Deutscher on X",
+    "url": "https://x.com/milesdeutscher/status/2080716896002076884",
+    "summary": "Miles Deutscher summarizes Jensen Huang's viral first X post — an open letter (signed by NVIDIA, YC, Meta, Microsoft, Palantir, a16z and others) arguing open-weight models are the future. Core thesis: just as open-source software built the internet's foundation, open weights let startups, hospitals, universities and small businesses build on advanced models without frontier prices, keep competition and gains distributed, and let organizations own their data and customizations. (Hype-framed but substantive.)",
+    "topics": [
+      "industry",
+      "research",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Jensen Huang broke X with his first post — a thesis on why open-weight models are the future, signed by NVIDIA, YC, Meta, Microsoft, Palantir, a16z and more. Open source didn't just cut costs in the 80s, it built the internet's foundation. AI is at the same inflection point: open weights let startups, hospitals, universities and small businesses build without training from scratch or paying frontier prices; competition keeps gains distributed; organizations own their data and customizations.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-25",
+    "author": "Anatoli Kopadze",
+    "handle": "@anatolikopadze",
+    "subject": "Post by Anatoli Kopadze on X",
+    "url": "https://x.com/anatolikopadze/status/2080702441809399834",
+    "summary": "Anatoli Kopadze shares a 25-minute video of an Anthropic engineer explaining 'graph engineering' — putting the model in a graph so it catches its own mistakes and runs a dozen tasks at once, with agents running in parallel, checking each other's work, and recovering when one fails — plus his companion article on what graph engineering is and when to use it. (Course-hype framing but substantive.)",
+    "topics": [
+      "agent-design",
+      "prompting",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "395.1K",
+    "notes": "",
+    "enriched": true,
+    "content": "Anthropic engineer: 'You're not supposed to babysit the model. Put it in a graph, and it catches its own mistakes and runs a dozen tasks at once.' In 25 minutes he breaks down how Anthropic builds agents that run in parallel, check each other's work, and recover when one fails.\n\nArticle: Graph Engineering explained — what it is, when to use it and when not to. Most people are using AI at 5-10% of what it can do; learn this and you can optimize enormous processes, not just personal tasks.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-25",
+    "author": "dex",
+    "handle": "@dexhorthy",
+    "subject": "Post by dex on X",
+    "url": "https://x.com/dexhorthy/status/2080697380379427275",
+    "summary": "dex's essay 'Why Software Factories Fail — the harness is not enough' (Part 1 of a series; talk version on YouTube) pushes back on the 'lights-off software factory' narrative (StrongDM, OpenAI's Symphony) where no human reads or writes code. He questions the prevailing 'you are the bottleneck, models are good enough, just write more loops' wisdom around putting AI coding into production.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "management"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "519K",
+    "notes": "",
+    "enriched": true,
+    "content": "Why Software Factories Fail (or: the harness is not enough). Part 1 in a series; talk version live on YouTube. We're all racing to put AI coding into production. Prevailing wisdom says write more loops — StrongDM's lights-off factory, OpenAI's Symphony (Ryan Lopopolo). The narrative: you are the bottleneck, models are good enough, code is free, just ship more. The cynical take: another excuse to pump VC money into the slop cannon.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-25",
+    "author": "Ben Kraus",
+    "handle": "@benkraus",
+    "subject": "Post by Ben Kraus on X",
+    "url": "https://x.com/benkraus/status/2080696750856393055",
+    "summary": "Ben Kraus endorses turbopuffer (x.com/turbopuffer) as the best vector store for agentic memory after a week of testing — rating it above pgvector, OpenSearch + S3 vectors, and AWS AgentCore.",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "30.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "went down a deep rabbit hole the past week, for agentic memory — @turbopuffer is the goat, better than: pgvector, opensearch + s3 vectors, agentcore",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-25",
+    "author": "Ruxandra Teslo",
+    "handle": "@ruxandrateslo",
+    "subject": "Post by Ruxandra Teslo 🧬 on X",
+    "url": "https://x.com/ruxandrateslo/status/2080661595802198468",
+    "summary": "Ruxandra Teslo argues intelligence isn't the only bottleneck to real-world progress, citing new Stripe Economics research showing AI's micro-productivity gains (on specific tasks) are not yet producing the expected macro-productivity gains — real-world diffusion of capable models is hard, even if that may change over time.",
+    "topics": [
+      "industry",
+      "management",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "This week I wrote about why intelligence isn't the only bottleneck to real-world progress, and why overlooking the others leads many AGI-pilled people to mistaken conclusions. New research from the Stripe Economics team shows micro-productivity gains from AI are not yet causing the macro-productivity gains one would expect. Models are impressive but real-world diffusion is incredibly hard.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-25",
+    "author": "Leon Derczynski",
+    "handle": "@leonderczynski",
+    "subject": "Post by Leon Derczynski ⚒️☁️🏔️🌲 on X (share with bob?)",
+    "url": "https://x.com/leonderczynski/status/2080654905568633081",
+    "summary": "Leon Derczynski highlights VISA's newly open-sourced cybersecurity harness — model-agnostic (bring your own hosted closed, hosted open, or on-prem model) — arguing the strength is in the harness, not the model, and praising VISA for lifting the defensive-cybersecurity poverty line.",
+    "topics": [
+      "agent-design",
+      "industry",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "116.1K",
+    "notes": "flag: share with bob?",
+    "enriched": true,
+    "content": "I keep saying the strength is in the harness, not the model - because it's true. Here's VISA's open-source cybersecurity harness. Just add model; use hosted closed models, hosted open models, run on-prem, whatever. Very cool of them to lift the defensive cybersec poverty line.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-25",
+    "author": "Letta",
+    "handle": "@letta_ai",
+    "subject": "Post by Letta on X (share with Logan and tanner)",
+    "url": "https://x.com/letta_ai/status/2080535211473850822",
+    "summary": "Letta released Trajectory, an open-source package that normalizes coding-agent sessions from Claude Code, OpenAI Codex, LangChain deepagents, Letta Code, and other harnesses into one token-efficient standard format — enabling agents to learn from past experience across harnesses and users.",
+    "topics": [
+      "agent-design",
+      "skills-mcp",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "202K",
+    "notes": "flag: share with Logan and tanner",
+    "enriched": true,
+    "content": "Introducing Trajectory: A Standard Format for Agent Experience Data. An open-source package that normalizes coding-agent sessions from Claude Code, Codex, deepagents, Letta Code and other harnesses into one token-efficient format for agents learning from past experience. Learning across harnesses requires a standard data format for the experience each harness produces.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-25",
+    "author": "Dave Fano",
+    "handle": "@davidfano",
+    "subject": "Post by Dave Fano on X",
+    "url": "https://x.com/davidfano/status/2078851264599699480",
+    "summary": "Dave Fano flags cli-printing-press (github.com/mvanhorn/cli-printing-press) by @mvanhorn and @trevin — a tool that can 'print' a CLI for any API by discovering its hidden interface and absorbing it. Useful for auto-generating command-line wrappers around APIs.",
+    "topics": [
+      "dev-practices",
+      "skills-mcp",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "10.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "Not sure if this uses the same technique but can \"print\" a CLI for you. Props to @mvanhorn @trevin\n\nGitHub - mvanhorn/cli-printing-press: Every API has a secret identity. This finds it, absorbs every endpoint, and prints a CLI.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-07-24",
     "author": "Brian \"Beej Jorgensen\" Hall",
     "handle": "",

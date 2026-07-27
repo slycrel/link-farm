@@ -1,42 +1,42 @@
 # AI Links Collection
-**Total Posts**: 719  
-**Date Range**: 2024-06-11 – 2026-07-24  
-**Enriched**: 718/719 (99%)
+**Total Posts**: 728  
+**Date Range**: 2024-06-11 – 2026-07-25  
+**Enriched**: 727/728 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-07-24T22:16:45Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-27T15:26:59Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
-- **2026-07-17** — [Tom Dörr](https://x.com/tom_doerr/status/2078092209702813714) — *now • Agent Design • 6,428 views • v1 enriched*  
-  Hyperresearch turns Claude Code into a deep-research agent: a 16-step pipeline that gathers web sources into a persistent vault and generates adversarially-audited reports with full source provenance. Repo: github.com/jordan-gibbs/hyperresearch.
-- **2026-07-17** — [Paul Hudson](https://x.com/twostraws/status/2078039730759811369) — *now • Prompting • 33.4K views • v1 enriched*  
-  Shares a reusable 'adversarial unit test sweep' prompt (set Codex/Sol to Ultra reasoning): deliberately target edge cases, malformed inputs, race conditions, boundary values, resource exhaustion, state corruption, and invalid assumptions; make every test earn its place, remove or consolidate weak/redundant tests, fix every failing test, add permanent regression tests for each bug found, and repeat until the suite passes cleanly with strong coverage. Argues AI-driven adversarial test review is one of the easiest high-value practices to adopt.
-- **2026-07-17** — [Bryan](https://x.com/so_sthbryan/status/2077972561464611136) — *now • Skills & MCP • 1,075 views • v1 enriched*  
-  Stripe open-sourced its internal AI toolkit at github.com/stripe/ai — a multi-IDE agent setup shipping Claude, Codex, and Cursor plugins plus providers, evals, and reusable skills; TypeScript-first, ~1.7k stars. Positioned as a production starting point for building AI-powered payments products.
-- **2026-07-17** — [ClaudeDevs](https://x.com/claudedevs/status/2077489907350856038) — *now • Claude Code • 1.4M views • v1 enriched*  
-  Announces that Claude Code artifacts can now call MCP connectors, letting you build dashboards and apps that fetch information and take actions for each viewer on demand. Available on Pro, Max, Team, and Enterprise plans; not available on publicly-shared artifacts.
-- **2026-07-24** — [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making) — *near-term • Management • v1 enriched*  
-  Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI dev schism": he argues that having AI build something you initiated — code, art, prose, even a deck — isn't the same as *making* it, and the loss of "making" (distinct from loss of craft or problem-solving) is what leaves him unfulfilled. He works the gray area — a compiler or assembler feels like a tool you make *with*, while an LLM feels like a report you *delegate* to — and lands on prompting-as-skill being real (vision, judgment, communication) but closer to "asking someone to make something for you" than making it yourself. (beej.us/blog/data/ai-making)
+- **2026-07-25** — [Letta](https://x.com/letta_ai/status/2080535211473850822) — *now • Agent Design • 202K views • v1 enriched*  
+  Letta released Trajectory, an open-source package that normalizes coding-agent sessions from Claude Code, OpenAI Codex, LangChain deepagents, Letta Code, and other harnesses into one token-efficient standard format — enabling agents to learn from past experience across harnesses and users.
+- **2026-07-25** — [Peter Steinberger](https://x.com/steipete/status/2080779917130858598) — *near-term • Agent Design • 777.7K views • v1 enriched*  
+  Peter Steinberger amplifies Alex Kotliarskyi's 'graph-maxing' workflow: draw a workflow graph (even on paper), hand it to Codex and ask it to write a code-mode script that implements the workflow and run it with your inputs — reportedly works with no further steps.
+- **2026-07-25** — [Miles Deutscher](https://x.com/milesdeutscher/status/2080716896002076884) — *near-term • Industry • v1 enriched*  
+  Miles Deutscher summarizes Jensen Huang's viral first X post — an open letter (signed by NVIDIA, YC, Meta, Microsoft, Palantir, a16z and others) arguing open-weight models are the future. Core thesis: just as open-source software built the internet's foundation, open weights let startups, hospitals, universities and small businesses build on advanced models without frontier prices, keep competition and gains distributed, and let organizations own their data and customizations. (Hype-framed but substantive.)
+- **2026-07-25** — [Anatoli Kopadze](https://x.com/anatolikopadze/status/2080702441809399834) — *near-term • Agent Design • 395.1K views • v1 enriched*  
+  Anatoli Kopadze shares a 25-minute video of an Anthropic engineer explaining 'graph engineering' — putting the model in a graph so it catches its own mistakes and runs a dozen tasks at once, with agents running in parallel, checking each other's work, and recovering when one fails — plus his companion article on what graph engineering is and when to use it. (Course-hype framing but substantive.)
+- **2026-07-25** — [dex](https://x.com/dexhorthy/status/2080697380379427275) — *near-term • Agent Design • 519K views • v1 enriched*  
+  dex's essay 'Why Software Factories Fail — the harness is not enough' (Part 1 of a series; talk version on YouTube) pushes back on the 'lights-off software factory' narrative (StrongDM, OpenAI's Symphony) where no human reads or writes code. He questions the prevailing 'you are the bottleneck, models are good enough, just write more loops' wisdom around putting AI coding into production.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **loop engineering** (113 posts, +6 this week)  
+- **loop engineering** (115 posts, +8 this week)  
   Feedback loops and self-running agent loops: loop design patterns, loop libraries, nested build loops, self-improving / meta-learning loops.
-    - 2026-07-24 — [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making): Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI de…
-    - 2026-07-20 — [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler): Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically int…
+    - 2026-07-25 — [dex](https://x.com/dexhorthy/status/2080697380379427275): dex's essay 'Why Software Factories Fail — the harness is not enough' (Part 1 of a series; talk version on YouTube) pushes back on the 'ligh…
+    - 2026-07-25 — [Letta](https://x.com/letta_ai/status/2080535211473850822): Letta released Trajectory, an open-source package that normalizes coding-agent sessions from Claude Code, OpenAI Codex, LangChain deepagents…
 
-- **Claude skills craft** (103 posts, +6 this week)  
+- **Claude skills craft** (108 posts, +7 this week)  
   Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.
+    - 2026-07-25 — [Letta](https://x.com/letta_ai/status/2080535211473850822): Letta released Trajectory, an open-source package that normalizes coding-agent sessions from Claude Code, OpenAI Codex, LangChain deepagents…
     - 2026-07-24 — [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making): Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI de…
-    - 2026-07-20 — [Wilson Lin](https://cursor.com/blog/agent-swarm-model-economics): Cursor Research (Wilson Lin) on agent swarms and the new model economics. Their swarm splits work into a tree: planner agents (frontier mode…
 
-- **agent harness engineering** (78 posts, +5 this week)  
+- **agent harness engineering** (80 posts, +7 this week)  
   Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
-    - 2026-07-24 — [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making): Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI de…
-    - 2026-07-20 — [Wilson Lin](https://cursor.com/blog/agent-swarm-model-economics): Cursor Research (Wilson Lin) on agent swarms and the new model economics. Their swarm splits work into a tree: planner agents (frontier mode…
+    - 2026-07-25 — [dex](https://x.com/dexhorthy/status/2080697380379427275): dex's essay 'Why Software Factories Fail — the harness is not enough' (Part 1 of a series; talk version on YouTube) pushes back on the 'ligh…
+    - 2026-07-25 — [Letta](https://x.com/letta_ai/status/2080535211473850822): Letta released Trajectory, an open-source package that normalizes coding-agent sessions from Claude Code, OpenAI Codex, LangChain deepagents…
 
 - **Claude Code setup & usage** (126 posts, +4 this week)  
   Claude Code setup guides, cheatsheets, starter packs, and day-to-day usage / steering practices.
@@ -59,21 +59,30 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 402 | 55.9% |
-| claude-code | 174 | 24.2% |
-| dev-practices | 302 | 42.0% |
-| skills-mcp | 166 | 23.1% |
-| prompting | 108 | 15.0% |
-| research | 174 | 24.2% |
-| industry | 100 | 13.9% |
-| management | 115 | 16.0% |
-| questionable | 103 | 14.3% |
-| general | 101 | 14.0% |
+| agent-design | 409 | 56.2% |
+| claude-code | 174 | 23.9% |
+| dev-practices | 308 | 42.3% |
+| skills-mcp | 168 | 23.1% |
+| prompting | 110 | 15.1% |
+| research | 176 | 24.2% |
+| industry | 103 | 14.1% |
+| management | 117 | 16.1% |
+| questionable | 105 | 14.4% |
+| general | 101 | 13.9% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-07-25 | Peter Steinberger | agent-design | Peter Steinberger amplifies Alex Kotliarskyi's 'graph-maxing' workflow... |
+| 2026-07-25 | Miles Deutscher | industry | Miles Deutscher summarizes Jensen Huang's viral first X post — an open... |
+| 2026-07-25 | Anatoli Kopadze | agent-design | Anatoli Kopadze shares a 25-minute video of an Anthropic engineer expl... |
+| 2026-07-25 | dex | agent-design | dex's essay 'Why Software Factories Fail — the harness is not enough'... |
+| 2026-07-25 | Ben Kraus | agent-design | Ben Kraus endorses turbopuffer (x.com/turbopuffer) as the best vector... |
+| 2026-07-25 | Ruxandra Teslo | industry | Ruxandra Teslo argues intelligence isn't the only bottleneck to real-w... |
+| 2026-07-25 | Leon Derczynski | agent-design | Leon Derczynski highlights VISA's newly open-sourced cybersecurity har... |
+| 2026-07-25 | Letta | agent-design | Letta released Trajectory, an open-source package that normalizes codi... |
+| 2026-07-25 | Dave Fano | dev-practices | Dave Fano flags cli-printing-press (github.com/mvanhorn/cli-printing-p... |
 | 2026-07-24 | Brian "Beej Jorgensen" Hall | management | Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veter... |
 | 2026-07-20 | Josh Bleecher Snyder | agent-design | Argues a coding agent is better than a compiler: not a new layer that... |
 | 2026-07-20 | Wilson Lin | agent-design | Cursor Research (Wilson Lin) on agent swarms and the new model economi... |
@@ -115,20 +124,25 @@
 | 2026-07-05 | Anatoli Kopadze | claude-code | Anatoli Kopadze (quote-tweeting his own Claude features guide) shares... |
 | 2026-07-05 | Nyk | agent-design | [Jeremy flagged: urgent for orchestration] Nyk released Council of Hig... |
 | 2026-07-05 | Elvis | skills-mcp | Elvis makes a meta point about eval-driven skill building that extends... |
-| 2026-07-05 | Aaron Levie | industry | Aaron Levie (Box CEO) argues the battle in AI is shaping up to be a ba... |
-| 2026-07-05 | Avid | agent-design | Avid (ALL CAPS engagement framing) makes a practical context-engineeri... |
-| 2026-07-05 | Sprytix | agent-design | Sprytix (clickbait 'Anthropic just leaked an internal engineering docu... |
-| 2026-07-05 | alex fazio | agent-design | alex fazio recommends studying ARC-AGI-winning harnesses to learn harn... |
-| 2026-07-05 | darkzodchi | claude-code | darkzodchi's 'Claude Fable 5 Setup Guide' covers which heavy tasks act... |
-| 2026-07-05 | me | questionable | Engagement-farmed clickbait promoting a 16-minute tutorial on building... |
-| 2026-07-04 | Tom Dörr | skills-mcp | Tom Dörr shares VoltAgent's awesome-claude-skills (github.com/VoltAgen... |
-| 2026-07-04 | 0xSero | claude-code | 0xSero shares Parcels (github.com/0xSero/parcels) — a tool for 'cloud... |
-| 2026-07-04 | ali | questionable | ali (@waterloo_intern) — an apparent parody of distillation hype: clai... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (402)
+### Agent Design (409)
+
+- [Peter Steinberger](https://x.com/steipete/status/2080779917130858598) — 2026-07-25: Peter Steinberger amplifies Alex Kotliarskyi's 'graph-maxing' workflow: draw a workflow graph (even on paper), hand it to Codex and ask it to write a code-mode script that implements the workflow and run it with your inputs — reportedly works with no further steps.
+
+- [Anatoli Kopadze](https://x.com/anatolikopadze/status/2080702441809399834) — 2026-07-25: Anatoli Kopadze shares a 25-minute video of an Anthropic engineer explaining 'graph engineering' — putting the model in a graph so it catches its own mistakes and runs a dozen tasks at once, with agents running in parallel, checking each other's work, and recovering when one fails — plus his companion article on what graph engineering is and when to use it. (Course-hype framing but substantive.)
+
+- [dex](https://x.com/dexhorthy/status/2080697380379427275) — 2026-07-25: dex's essay 'Why Software Factories Fail — the harness is not enough' (Part 1 of a series; talk version on YouTube) pushes back on the 'lights-off software factory' narrative (StrongDM, OpenAI's Symphony) where no human reads or writes code. He questions the prevailing 'you are the bottleneck, models are good enough, just write more loops' wisdom around putting AI coding into production.
+
+- [Ben Kraus](https://x.com/benkraus/status/2080696750856393055) — 2026-07-25: Ben Kraus endorses turbopuffer (x.com/turbopuffer) as the best vector store for agentic memory after a week of testing — rating it above pgvector, OpenSearch + S3 vectors, and AWS AgentCore.
+
+- [Leon Derczynski](https://x.com/leonderczynski/status/2080654905568633081) — 2026-07-25: Leon Derczynski highlights VISA's newly open-sourced cybersecurity harness — model-agnostic (bring your own hosted closed, hosted open, or on-prem model) — arguing the strength is in the harness, not the model, and praising VISA for lifting the defensive-cybersecurity poverty line.
+
+- [Letta](https://x.com/letta_ai/status/2080535211473850822) — 2026-07-25: Letta released Trajectory, an open-source package that normalizes coding-agent sessions from Claude Code, OpenAI Codex, LangChain deepagents, Letta Code, and other harnesses into one token-efficient standard format — enabling agents to learn from past experience across harnesses and users.
+
+- [Dave Fano](https://x.com/davidfano/status/2078851264599699480) — 2026-07-25: Dave Fano flags cli-printing-press (github.com/mvanhorn/cli-printing-press) by @mvanhorn and @trevin — a tool that can 'print' a CLI for any API by discovering its hidden interface and absorbing it. Useful for auto-generating command-line wrappers around APIs.
 
 - [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler) — 2026-07-20: Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically integrated 'multi-compiler' working across strategy, product, architecture, code, and machine code — augmenting the engineer's judgment about which decisions matter (vibe-engineering). Case study: building a geographically distributed, consistent DNS server for exe.dev via concurrent agent loops plus repeated differential spec analysis (commaok.xyz/ai/differential-spec), distilled into a terse 'scar-tissue' guidance doc. ~1 week of attention, almost no code read, zero incidents a month post-launch.
 
@@ -1284,7 +1298,19 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (302)
+### Dev Practices (308)
+
+- [Peter Steinberger](https://x.com/steipete/status/2080779917130858598) — 2026-07-25: Peter Steinberger amplifies Alex Kotliarskyi's 'graph-maxing' workflow: draw a workflow graph (even on paper), hand it to Codex and ask it to write a code-mode script that implements the workflow and run it with your inputs — reportedly works with no further steps.
+
+- [dex](https://x.com/dexhorthy/status/2080697380379427275) — 2026-07-25: dex's essay 'Why Software Factories Fail — the harness is not enough' (Part 1 of a series; talk version on YouTube) pushes back on the 'lights-off software factory' narrative (StrongDM, OpenAI's Symphony) where no human reads or writes code. He questions the prevailing 'you are the bottleneck, models are good enough, just write more loops' wisdom around putting AI coding into production.
+
+- [Ben Kraus](https://x.com/benkraus/status/2080696750856393055) — 2026-07-25: Ben Kraus endorses turbopuffer (x.com/turbopuffer) as the best vector store for agentic memory after a week of testing — rating it above pgvector, OpenSearch + S3 vectors, and AWS AgentCore.
+
+- [Leon Derczynski](https://x.com/leonderczynski/status/2080654905568633081) — 2026-07-25: Leon Derczynski highlights VISA's newly open-sourced cybersecurity harness — model-agnostic (bring your own hosted closed, hosted open, or on-prem model) — arguing the strength is in the harness, not the model, and praising VISA for lifting the defensive-cybersecurity poverty line.
+
+- [Letta](https://x.com/letta_ai/status/2080535211473850822) — 2026-07-25: Letta released Trajectory, an open-source package that normalizes coding-agent sessions from Claude Code, OpenAI Codex, LangChain deepagents, Letta Code, and other harnesses into one token-efficient standard format — enabling agents to learn from past experience across harnesses and users.
+
+- [Dave Fano](https://x.com/davidfano/status/2078851264599699480) — 2026-07-25: Dave Fano flags cli-printing-press (github.com/mvanhorn/cli-printing-press) by @mvanhorn and @trevin — a tool that can 'print' a CLI for any API by discovering its hidden interface and absorbing it. Useful for auto-generating command-line wrappers around APIs.
 
 - [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler) — 2026-07-20: Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically integrated 'multi-compiler' working across strategy, product, architecture, code, and machine code — augmenting the engineer's judgment about which decisions matter (vibe-engineering). Case study: building a geographically distributed, consistent DNS server for exe.dev via concurrent agent loops plus repeated differential spec analysis (commaok.xyz/ai/differential-spec), distilled into a terse 'scar-tissue' guidance doc. ~1 week of attention, almost no code read, zero incidents a month post-launch.
 
@@ -1890,7 +1916,11 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Skills & MCP (166)
+### Skills & MCP (168)
+
+- [Letta](https://x.com/letta_ai/status/2080535211473850822) — 2026-07-25: Letta released Trajectory, an open-source package that normalizes coding-agent sessions from Claude Code, OpenAI Codex, LangChain deepagents, Letta Code, and other harnesses into one token-efficient standard format — enabling agents to learn from past experience across harnesses and users.
+
+- [Dave Fano](https://x.com/davidfano/status/2078851264599699480) — 2026-07-25: Dave Fano flags cli-printing-press (github.com/mvanhorn/cli-printing-press) by @mvanhorn and @trevin — a tool that can 'print' a CLI for any API by discovering its hidden interface and absorbing it. Useful for auto-generating command-line wrappers around APIs.
 
 - [Paul Iusztin](https://x.com/pauliusztin_/status/2078094872717017107) — 2026-07-17: On 'wiki memory' as an emerging agent-memory pattern (quoting Harrison Chase). Describes combining project-scoped LLM wikis built from personal notes/research with a FastMCP server serving unified memory: instead of RAG over raw documents each time, the agent incrementally builds a small structured Markdown wiki as local working knowledge, with the MCP server handling search, build, sync, and persist. The wiki stays local so you can swap Claude Code for Codex without changing how memory works. Avoids needing GraphRAG across the whole corpus.
 
@@ -2224,7 +2254,11 @@
 
 - [Mervin Praison](https://x.com/mervinpraison/status/1881788246684013011) — 2025-01-22: Shows a 100% local RAG AI agent with reasoning: DeepSeek via Ollama for the LLM, PraisonAI to build the agent in a few lines, Nomic embeddings, and a Streamlit UI—code included in the thread.
 
-### Prompting (108)
+### Prompting (110)
+
+- [Peter Steinberger](https://x.com/steipete/status/2080779917130858598) — 2026-07-25: Peter Steinberger amplifies Alex Kotliarskyi's 'graph-maxing' workflow: draw a workflow graph (even on paper), hand it to Codex and ask it to write a code-mode script that implements the workflow and run it with your inputs — reportedly works with no further steps.
+
+- [Anatoli Kopadze](https://x.com/anatolikopadze/status/2080702441809399834) — 2026-07-25: Anatoli Kopadze shares a 25-minute video of an Anthropic engineer explaining 'graph engineering' — putting the model in a graph so it catches its own mistakes and runs a dozen tasks at once, with agents running in parallel, checking each other's work, and recovering when one fails — plus his companion article on what graph engineering is and when to use it. (Course-hype framing but substantive.)
 
 - [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making) — 2026-07-24: Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI dev schism": he argues that having AI build something you initiated — code, art, prose, even a deck — isn't the same as *making* it, and the loss of "making" (distinct from loss of craft or problem-solving) is what leaves him unfulfilled. He works the gray area — a compiler or assembler feels like a tool you make *with*, while an LLM feels like a report you *delegate* to — and lands on prompting-as-skill being real (vision, judgment, communication) but closer to "asking someone to make something for you" than making it yourself. (beej.us/blog/data/ai-making)
 
@@ -2442,7 +2476,11 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-### Research (174)
+### Research (176)
+
+- [Miles Deutscher](https://x.com/milesdeutscher/status/2080716896002076884) — 2026-07-25: Miles Deutscher summarizes Jensen Huang's viral first X post — an open letter (signed by NVIDIA, YC, Meta, Microsoft, Palantir, a16z and others) arguing open-weight models are the future. Core thesis: just as open-source software built the internet's foundation, open weights let startups, hospitals, universities and small businesses build on advanced models without frontier prices, keep competition and gains distributed, and let organizations own their data and customizations. (Hype-framed but substantive.)
+
+- [Ruxandra Teslo](https://x.com/ruxandrateslo/status/2080661595802198468) — 2026-07-25: Ruxandra Teslo argues intelligence isn't the only bottleneck to real-world progress, citing new Stripe Economics research showing AI's micro-productivity gains (on specific tasks) are not yet producing the expected macro-productivity gains — real-world diffusion of capable models is hard, even if that may change over time.
 
 - [Wilson Lin](https://cursor.com/blog/agent-swarm-model-economics) — 2026-07-20: Cursor Research (Wilson Lin) on agent swarms and the new model economics. Their swarm splits work into a tree: planner agents (frontier models) decompose goals and delegate; worker agents (cheap/fast models) execute leaves — context efficiency, not raw parallelism, is what makes it scale. They built a custom VCS handling ~1,000 commits/second and engineered fixes for swarm-specific failure modes (split-brain planners, merge contention, 'megafiles', ossification) plus stacked 'review lenses' and a self-authored shared 'Field Guide' (stigmergy). Benchmark: reimplementing the 835-page SQLite manual in Rust from docs only, graded on sqllogictest. The new harness beat the old in every model mix (GPT-5.5, Grok 4.5, Opus 4.8+Composer 2.5, Fable 5+Composer 2.5), all new configs reaching 100%. Key economics finding: quality was similar across mixes but cost ranged from $1,339 (Opus 4.8 planner + Composer 2.5 worker) to $10,565 (GPT-5.5 solo) — workers carry 69-90%+ of tokens, but frontier planner tokens dominate cost, so a frontier planner + cheap worker is dramatically cheaper (worker fleet $411 vs $9,373). Thesis: with swarms the unit of work becomes the spec. Public output: github.com/cursor/minisqlite.
 
@@ -2792,7 +2830,13 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.
 
-### Industry (100)
+### Industry (103)
+
+- [Miles Deutscher](https://x.com/milesdeutscher/status/2080716896002076884) — 2026-07-25: Miles Deutscher summarizes Jensen Huang's viral first X post — an open letter (signed by NVIDIA, YC, Meta, Microsoft, Palantir, a16z and others) arguing open-weight models are the future. Core thesis: just as open-source software built the internet's foundation, open weights let startups, hospitals, universities and small businesses build on advanced models without frontier prices, keep competition and gains distributed, and let organizations own their data and customizations. (Hype-framed but substantive.)
+
+- [Ruxandra Teslo](https://x.com/ruxandrateslo/status/2080661595802198468) — 2026-07-25: Ruxandra Teslo argues intelligence isn't the only bottleneck to real-world progress, citing new Stripe Economics research showing AI's micro-productivity gains (on specific tasks) are not yet producing the expected macro-productivity gains — real-world diffusion of capable models is hard, even if that may change over time.
+
+- [Leon Derczynski](https://x.com/leonderczynski/status/2080654905568633081) — 2026-07-25: Leon Derczynski highlights VISA's newly open-sourced cybersecurity harness — model-agnostic (bring your own hosted closed, hosted open, or on-prem model) — arguing the strength is in the harness, not the model, and praising VISA for lifting the defensive-cybersecurity poverty line.
 
 - [Wilson Lin](https://cursor.com/blog/agent-swarm-model-economics) — 2026-07-20: Cursor Research (Wilson Lin) on agent swarms and the new model economics. Their swarm splits work into a tree: planner agents (frontier models) decompose goals and delegate; worker agents (cheap/fast models) execute leaves — context efficiency, not raw parallelism, is what makes it scale. They built a custom VCS handling ~1,000 commits/second and engineered fixes for swarm-specific failure modes (split-brain planners, merge contention, 'megafiles', ossification) plus stacked 'review lenses' and a self-authored shared 'Field Guide' (stigmergy). Benchmark: reimplementing the 835-page SQLite manual in Rust from docs only, graded on sqllogictest. The new harness beat the old in every model mix (GPT-5.5, Grok 4.5, Opus 4.8+Composer 2.5, Fable 5+Composer 2.5), all new configs reaching 100%. Key economics finding: quality was similar across mixes but cost ranged from $1,339 (Opus 4.8 planner + Composer 2.5 worker) to $10,565 (GPT-5.5 solo) — workers carry 69-90%+ of tokens, but frontier planner tokens dominate cost, so a frontier planner + cheap worker is dramatically cheaper (worker fleet $411 vs $9,373). Thesis: with swarms the unit of work becomes the spec. Public output: github.com/cursor/minisqlite.
 
@@ -2994,7 +3038,11 @@
 
 - [Santiago](https://x.com/svpino/status/1881336934418755862) — 2025-01-21: Walks through GroundX, an open-source, self-hostable/air-gapped enterprise RAG system. Two services: Ingest (a pretrained vision model that 'understands' documents instead of feeding raw docs to the LLM) and Search (text+vector search with a fine-tuned re-ranker). Santiago's thesis: most teams need better ingestion, not better retrieval; includes a video demo and the free X-Ray inspection tool.
 
-### Management (115)
+### Management (117)
+
+- [dex](https://x.com/dexhorthy/status/2080697380379427275) — 2026-07-25: dex's essay 'Why Software Factories Fail — the harness is not enough' (Part 1 of a series; talk version on YouTube) pushes back on the 'lights-off software factory' narrative (StrongDM, OpenAI's Symphony) where no human reads or writes code. He questions the prevailing 'you are the bottleneck, models are good enough, just write more loops' wisdom around putting AI coding into production.
+
+- [Ruxandra Teslo](https://x.com/ruxandrateslo/status/2080661595802198468) — 2026-07-25: Ruxandra Teslo argues intelligence isn't the only bottleneck to real-world progress, citing new Stripe Economics research showing AI's micro-productivity gains (on specific tasks) are not yet producing the expected macro-productivity gains — real-world diffusion of capable models is hard, even if that may change over time.
 
 - [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making) — 2026-07-24: Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI dev schism": he argues that having AI build something you initiated — code, art, prose, even a deck — isn't the same as *making* it, and the loss of "making" (distinct from loss of craft or problem-solving) is what leaves him unfulfilled. He works the gray area — a compiler or assembler feels like a tool you make *with*, while an LLM feels like a report you *delegate* to — and lands on prompting-as-skill being real (vision, judgment, communication) but closer to "asking someone to make something for you" than making it yourself. (beej.us/blog/data/ai-making)
 
@@ -3226,7 +3274,11 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Points to a superengineer.net blog post as a good summary of Elon Musk's 5-step design/engineering method (DFX).
 
-### Questionable (103)
+### Questionable (105)
+
+- [Miles Deutscher](https://x.com/milesdeutscher/status/2080716896002076884) — 2026-07-25: Miles Deutscher summarizes Jensen Huang's viral first X post — an open letter (signed by NVIDIA, YC, Meta, Microsoft, Palantir, a16z and others) arguing open-weight models are the future. Core thesis: just as open-source software built the internet's foundation, open weights let startups, hospitals, universities and small businesses build on advanced models without frontier prices, keep competition and gains distributed, and let organizations own their data and customizations. (Hype-framed but substantive.)
+
+- [Anatoli Kopadze](https://x.com/anatolikopadze/status/2080702441809399834) — 2026-07-25: Anatoli Kopadze shares a 25-minute video of an Anthropic engineer explaining 'graph engineering' — putting the model in a graph so it catches its own mistakes and runs a dozen tasks at once, with agents running in parallel, checking each other's work, and recovering when one fails — plus his companion article on what graph engineering is and when to use it. (Course-hype framing but substantive.)
 
 - [Alex Prompter](https://x.com/alex_prompter/status/2077774842649247903) — 2026-07-17: 'Harness engineering 101' thread: argues Agent = Model + Harness, where the harness is the software layer around a model (context, tool/permission, verification, memory/state, and safety/sandbox layers). Frames two July 2026 incidents (a ChatGPT Work agent wiping a home directory; xAI's Grok CLI exfiltrating developer repos) as harness failures, and profiles four setups: Anthropic's initializer/planner/coder/fresh-eyes-evaluator, OpenAI's 'repo is the only reality,' Mitchell Hashimoto's one-rule-per-failure, and Continue's shell-aware command parsing. Engagement-farmed framing (save/repost CTAs, product plug) but genuinely substantive.
 
@@ -3644,6 +3696,33 @@
 ## Full Chronological List
 
 ### Jul 2026
+
+- **2026-07-25** | [Peter Steinberger](https://x.com/steipete/status/2080779917130858598) | agent-design, dev-practices, prompting
+  Peter Steinberger amplifies Alex Kotliarskyi's 'graph-maxing' workflow: draw a workflow graph (even on paper), hand it to Codex and ask it to write a code-mode script that implements the workflow and run it with your inputs — reportedly works with no further steps.
+
+- **2026-07-25** | [Miles Deutscher](https://x.com/milesdeutscher/status/2080716896002076884) | industry, research, questionable
+  Miles Deutscher summarizes Jensen Huang's viral first X post — an open letter (signed by NVIDIA, YC, Meta, Microsoft, Palantir, a16z and others) arguing open-weight models are the future. Core thesis: just as open-source software built the internet's foundation, open weights let startups, hospitals, universities and small businesses build on advanced models without frontier prices, keep competition and gains distributed, and let organizations own their data and customizations. (Hype-framed but substantive.)
+
+- **2026-07-25** | [Anatoli Kopadze](https://x.com/anatolikopadze/status/2080702441809399834) | agent-design, prompting, questionable
+  Anatoli Kopadze shares a 25-minute video of an Anthropic engineer explaining 'graph engineering' — putting the model in a graph so it catches its own mistakes and runs a dozen tasks at once, with agents running in parallel, checking each other's work, and recovering when one fails — plus his companion article on what graph engineering is and when to use it. (Course-hype framing but substantive.)
+
+- **2026-07-25** | [dex](https://x.com/dexhorthy/status/2080697380379427275) | agent-design, dev-practices, management
+  dex's essay 'Why Software Factories Fail — the harness is not enough' (Part 1 of a series; talk version on YouTube) pushes back on the 'lights-off software factory' narrative (StrongDM, OpenAI's Symphony) where no human reads or writes code. He questions the prevailing 'you are the bottleneck, models are good enough, just write more loops' wisdom around putting AI coding into production.
+
+- **2026-07-25** | [Ben Kraus](https://x.com/benkraus/status/2080696750856393055) | agent-design, dev-practices
+  Ben Kraus endorses turbopuffer (x.com/turbopuffer) as the best vector store for agentic memory after a week of testing — rating it above pgvector, OpenSearch + S3 vectors, and AWS AgentCore.
+
+- **2026-07-25** | [Ruxandra Teslo](https://x.com/ruxandrateslo/status/2080661595802198468) | industry, management, research
+  Ruxandra Teslo argues intelligence isn't the only bottleneck to real-world progress, citing new Stripe Economics research showing AI's micro-productivity gains (on specific tasks) are not yet producing the expected macro-productivity gains — real-world diffusion of capable models is hard, even if that may change over time.
+
+- **2026-07-25** | [Leon Derczynski](https://x.com/leonderczynski/status/2080654905568633081) | agent-design, industry, dev-practices
+  Leon Derczynski highlights VISA's newly open-sourced cybersecurity harness — model-agnostic (bring your own hosted closed, hosted open, or on-prem model) — arguing the strength is in the harness, not the model, and praising VISA for lifting the defensive-cybersecurity poverty line.
+
+- **2026-07-25** | [Letta](https://x.com/letta_ai/status/2080535211473850822) | agent-design, skills-mcp, dev-practices
+  Letta released Trajectory, an open-source package that normalizes coding-agent sessions from Claude Code, OpenAI Codex, LangChain deepagents, Letta Code, and other harnesses into one token-efficient standard format — enabling agents to learn from past experience across harnesses and users.
+
+- **2026-07-25** | [Dave Fano](https://x.com/davidfano/status/2078851264599699480) | dev-practices, skills-mcp, agent-design
+  Dave Fano flags cli-printing-press (github.com/mvanhorn/cli-printing-press) by @mvanhorn and @trevin — a tool that can 'print' a CLI for any API by discovering its hidden interface and absorbing it. Useful for auto-generating command-line wrappers around APIs.
 
 - **2026-07-24** | [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making) | management, general, prompting
   Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI dev schism": he argues that having AI build something you initiated — code, art, prose, even a deck — isn't the same as *making* it, and the loss of "making" (distinct from loss of craft or problem-solving) is what leaves him unfulfilled. He works the gray area — a compiler or assembler feels like a tool you make *with*, while an LLM feels like a report you *delegate* to — and lands on prompting-as-skill being real (vision, judgment, communication) but closer to "asking someone to make something for you" than making it yourself. (beej.us/blog/data/ai-making)
