@@ -1,5 +1,439 @@
 [
   {
+    "date": "2026-07-30",
+    "author": "elvis",
+    "handle": "@omarsar0",
+    "subject": "Post by elvis on X",
+    "url": "https://x.com/omarsar0/status/2082602113558077599",
+    "summary": "Summarizes new NVIDIA work (NOOA) proposing agents be built as plain Python objects — methods are actions, fields hold state, docstrings are prompts, type annotations are contracts; a '...' method body is completed at runtime by a validated LLM loop, putting the probabilistic/deterministic boundary in the source and making agents testable and refactorable.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Super interesting new work from NVIDIA. They suggest building agents as Python objects. NOOA replaces prompt templates, tool schemas, callback code, and workflow graphs with one abstraction: an agent is a Python object, its methods are actions, fields hold state, docstrings are prompts, type annotations are contracts. A method whose body is '...' gets completed at runtime by a validated LLM loop; a normal body stays deterministic Python. Agent behavior becomes testable, traceable, and refactorable.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-30",
+    "author": "Yarchi",
+    "handle": "@undefinedki",
+    "subject": "Post by Yarchi on X",
+    "url": "https://x.com/undefinedki/status/2082583659672936787",
+    "summary": "Recounts how Jarred Sumner rewrote Bun from ~500K lines of Zig to ~1M lines of Rust in 11 days by building a self-correcting AI workflow: he wrote the rules first (3 hours, no code), tested on 3 of 1,448 files, refined the rules and deleted them, and used the folder itself as the to-do list (anything without a finished version is still to do).",
+    "topics": [
+      "dev-practices",
+      "agent-design",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "An Anthropic engineer did what everyone says cannot be done. Bun, written in Zig, was rewritten in Rust — half a million lines of Zig into a million lines of Rust — by Jarred Sumner in eleven days. He built something that corrects itself: wrote the rules first (3 hours, no code), did 3 of 1,448 files as a test, improved the rules, deleted the files. He never kept a to-do list; the folder was the list.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-30",
+    "author": "Alvaro Cintas",
+    "handle": "@dr_cintas",
+    "subject": "Post by Alvaro Cintas on X",
+    "url": "https://x.com/dr_cintas/status/2082581306341224661",
+    "summary": "Highlights Agent-Reach (github.com/Panniantong/Agent-Reach), an open-source tool that lets an AI agent browse the internet without paying for APIs.",
+    "topics": [
+      "agent-design",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "repo: github.com/Panniantong/Agent-Reach — your agent browses the internet without needing to pay APIs. follow @dr_cintas for more AI tools and deep dives\n\nAgent-Reach repo",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-30",
+    "author": "Anatoli Kopadze",
+    "handle": "@anatolikopadze",
+    "subject": "Post by Anatoli Kopadze on X",
+    "url": "https://x.com/anatolikopadze/status/2082529611943219563",
+    "summary": "Promotes a 25-minute talk plus guide on 'graph engineering' for agents — wiring agents into a graph where each has a job, they run in parallel, verify each other, and share a memory that never resets.",
+    "topics": [
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Anthropic engineer: \"You don't need better prompts. You need graph engineering that makes agents remember everything.\" In 25 minutes he shows how engineers at Anthropic wire agents into a graph where each has a job, they run in parallel, verify each other, and share a memory that never resets.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-30",
+    "author": "Tibo",
+    "handle": "@thsottiaux",
+    "subject": "Post by Tibo on X",
+    "url": "https://x.com/thsottiaux/status/2082241164850364555",
+    "summary": "Announces a new open-source CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities in code — scan repositories, review changes, track findings over time, and run security checks in CI.",
+    "topics": [
+      "dev-practices",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "More opensource goodness. We have just released a CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities in your code. Scan repositories, review changes, track findings over time, and run security checks in CI.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-29",
+    "author": "Xudong Han",
+    "handle": "@xudong07452910",
+    "subject": "Post by Xudong Han on X",
+    "url": "https://x.com/xudong07452910/status/2082028299275149685",
+    "summary": "Recommends the article 'Why Software Factories Fail' — its author ran a fully automated software factory and found agents can quickly produce test-passing code, but architecture, boundaries, and long-term maintainability still require human judgment; the bill for poor architecture comes due months later.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "management"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "For those recently bombarded by Harness Engineering, Loop Engineering, and 'unmanned software factories,' I recommend the article *Why Software Factories Fail*. The author ran a fully automated software factory and found agents can quickly churn out code that passes tests, but that doesn't mean the codebase stays easy to modify, read, and maintain. Programming, boundary definitions, architectural trade-offs, and long-term maintenance still require human judgment.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-29",
+    "author": "Alex Veremeyenko",
+    "handle": "@alex_verem",
+    "subject": "Post by Alex Veremeyenko on X",
+    "url": "https://x.com/alex_verem/status/2082018678724575550",
+    "summary": "Restates Andrew Ng's finding that an older model in an agentic workflow beats a newer model answering once — gpt-3.5 zero-shot 48.1%, gpt-4 zero-shot 67.0%, gpt-3.5 in an agentic workflow up to 95.1% on HumanEval — and lists his four patterns: reflection, tool use, planning, and multi-agent collaboration.",
+    "topics": [
+      "agent-design",
+      "research",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Andrew Ng showed that an older GPT model inside an agentic workflow outperforms a newer model asked to answer once. On HumanEval: gpt-3.5 zero-shot 48.1%, gpt-4 zero-shot 67.0%, gpt-3.5 in an agentic workflow up to 95.1%. Four patterns: reflection, tool use, planning, multi-agent collaboration. None require a frontier model.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-29",
+    "author": "Matt Pocock",
+    "handle": "@mattpocockuk",
+    "subject": "Post by Matt Pocock on X",
+    "url": "https://x.com/mattpocockuk/status/2012906065856270504",
+    "summary": "Warns that bad AGENTS.md files make coding agents worse and waste tokens; shares a cleanup prompt plus a full guide (aihero.dev/s/KQLczQ).",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "prompting",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Bad AGENTS.md files can make your coding agent worse and cost you tokens. Here's a prompt you can use to clean them up - PLUS a full guide for folks wanting to learn more. Enjoy: aihero.dev/s/KQLczQ",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-29",
+    "author": "Dillon Mulroy",
+    "handle": "@dillon_mulroy",
+    "subject": "Post by Dillon Mulroy on X",
+    "url": "https://x.com/dillon_mulroy/status/2012902889249792220",
+    "summary": "Argues that building in vertical slices is a cheat code for good results with AI, recommending the Pragmatic Programmer concept and structuring agent systems around it.",
+    "topics": [
+      "dev-practices",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "it's so obvious in retrospect that building vertical slices is a cheat code to getting good results w/ ai. highly recommend reviewing this concept (and rereading the pragmatic programmer) and building systems for your agents around it",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-29",
+    "author": "Guillermo Rauch",
+    "handle": "@rauchg",
+    "subject": "Post by Guillermo Rauch on X",
+    "url": "https://x.com/rauchg/status/2012727068702711847",
+    "summary": "Recommends an API that abstracts over and manages every major coding agent — a starting point for teams building coding AI (auto-fixing, code review, testing) into their products.",
+    "topics": [
+      "agent-design",
+      "industry",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "This is extremely powerful. An API that abstracts over and manages *every major coding agent* for you. If you're looking to build coding AI into your products (think: auto-fixing, code review, testing, …), I'd start here first.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-29",
+    "author": "Siqi Chen",
+    "handle": "@blader",
+    "subject": "Post by Siqi Chen on X",
+    "url": "https://x.com/blader/status/2012667150440476851",
+    "summary": "Shares a Claude Code skill (github.com/blader/…) that learns new Claude Code skills as you use Claude Code.",
+    "topics": [
+      "claude-code",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "used claude code to make a little claude code skill that learns new claude code skills as you use claude code (github.com/blader/claude-…)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-29",
+    "author": "Oliver Prompts",
+    "handle": "@oliviscusai",
+    "subject": "Post by Oliver Prompts on X",
+    "url": "https://x.com/oliviscusai/status/2012551369488540115",
+    "summary": "Points to a repo from rednote-hilab (github.com/rednote-hilab/…), an open-source AI model/tooling release.",
+    "topics": [
+      "research",
+      "general"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Repo: github.com/rednote-hilab/…",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-29",
+    "author": "Tom Dörr",
+    "handle": "@tom_doerr",
+    "subject": "Post by Tom Dörr on X",
+    "url": "https://x.com/tom_doerr/status/2012463743494480190",
+    "summary": "Highlights AutoMem (github.com/verygoodplugins/automem), a memory system for AI assistants.",
+    "topics": [
+      "agent-design",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Memory system for AI assistants — github.com/verygoodplugins/automem\n\nAutoMem repo",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-28",
+    "author": "Tom Dörr",
+    "handle": "@tom_doerr",
+    "subject": "Post by Tom Dörr on X",
+    "url": "https://x.com/tom_doerr/status/2082047096677371979",
+    "summary": "Highlights vibe-coding-prompt-template (github.com/KhazP/vibe-coding-prompt-template) — generates deep research summaries, PRDs, and technical designs from raw ideas using structured prompt templates for AI coding workflows.",
+    "topics": [
+      "prompting",
+      "dev-practices",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Generates deep research summaries, product requirement documents, and technical designs from raw ideas using structured prompt templates for AI coding workflows. github.com/KhazP/vibe-coding-prompt-template\n\nvibe-coding-prompt-template",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-28",
+    "author": "HOPE | Engineer.",
+    "handle": "@rlaope",
+    "subject": "Post by HOPE | Engineer. on X",
+    "url": "https://x.com/rlaope/status/2081947109113385261",
+    "summary": "Details hermes-agent's layered memory system (oh-my-hermes): L0 persona, L1 capped MEMORY.md/USER.md kept as frozen snapshots for prompt caching, L2 labelled memory blocks rendered under a 6000-char budget with on-demand reference reads and no silent truncation, and L3 unlimited session logs via FTS5 — with consolidation and redundancy-only eviction.",
+    "topics": [
+      "agent-design",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "hermes-agent with oh-my-hermes memory system: layered. native L0 soul/persona; L1 MEMORY.md + USER.md hard capped, frozen snapshot for prompt caching; L3 session FTS5 unlimited raw logs. + oh-my-hermes L2 memory blocks, labelled, per-block limit, rendered every turn under a 6000-char budget, reference read on demand, overflow marked never silently truncated. Consolidation on turn count; eviction by provable redundancy only.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-28",
+    "author": "Ahmad",
+    "handle": "@theahmadosman",
+    "subject": "Post by Ahmad on X",
+    "url": "https://x.com/theahmadosman/status/2057183854444843202",
+    "summary": "Part 3 of a self-hosted/local-AI series: 'Inference Engines for LLMs & Local AI Hardware (2026 Edition).' Argues you pick a hardware strategy, workload shape, and serving model first — the engine follows — and maps engines across local portability, consumer CUDA, Apple unified memory, quantized inference, production serving, distributed orchestration, and vendor-optimized datacenter execution. Links github.com/av/harbor.",
+    "topics": [
+      "research",
+      "industry",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Inference Engines for LLMs & Local AI Hardware (2026 Edition). You don't pick an inference engine first. You pick a hardware strategy, a workload shape, and a serving model. The engine follows. Part 3 in my series teaching Self-hosted LLMs / Local AI. Engines occupy different layers: local portability, consumer CUDA, Apple unified-memory workflows, quantized inference, production serving, distributed orchestration, vendor-optimized datacenter execution.\n\nharbor",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-28",
+    "author": "Andrej Karpathy",
+    "handle": "@karpathy",
+    "subject": "Post by Andrej Karpathy on X",
+    "url": "https://x.com/karpathy/status/2040470801506541998",
+    "summary": "Introduces the 'idea file' concept — in the LLM-agent era you share an idea (as a gist) rather than specific code, and the other person's agent builds it for their needs. Example gist: gist.github.com/karpathy/442a6bf555914893e9891c11519de94f, which an agent can use to build your own LLM wiki.",
+    "topics": [
+      "agent-design",
+      "claude-code",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "I wanted to share a possibly improved version of the tweet in an 'idea file'. In this era of LLM agents, there is less need to share specific code/app — you just share the idea, then the other person's agent customizes & builds it for their needs. Here's the idea in a gist. You can give it to your agent and it can build you your own LLM wiki.\n\nidea file gist",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-07-25",
     "author": "Peter Steinberger",
     "handle": "@steipete",

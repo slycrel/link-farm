@@ -1,52 +1,52 @@
 # AI Links Collection
-**Total Posts**: 728  
-**Date Range**: 2024-06-11 – 2026-07-25  
-**Enriched**: 727/728 (99%)
+**Total Posts**: 745  
+**Date Range**: 2024-06-11 – 2026-07-30  
+**Enriched**: 744/745 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-07-27T15:26:59Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-30T15:11:07Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
+- **2026-07-30** — [Tibo](https://x.com/thsottiaux/status/2082241164850364555) — *now • Dev Practices • v1 enriched*  
+  Announces a new open-source CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities in code — scan repositories, review changes, track findings over time, and run security checks in CI.
 - **2026-07-25** — [Letta](https://x.com/letta_ai/status/2080535211473850822) — *now • Agent Design • 202K views • v1 enriched*  
   Letta released Trajectory, an open-source package that normalizes coding-agent sessions from Claude Code, OpenAI Codex, LangChain deepagents, Letta Code, and other harnesses into one token-efficient standard format — enabling agents to learn from past experience across harnesses and users.
-- **2026-07-25** — [Peter Steinberger](https://x.com/steipete/status/2080779917130858598) — *near-term • Agent Design • 777.7K views • v1 enriched*  
-  Peter Steinberger amplifies Alex Kotliarskyi's 'graph-maxing' workflow: draw a workflow graph (even on paper), hand it to Codex and ask it to write a code-mode script that implements the workflow and run it with your inputs — reportedly works with no further steps.
-- **2026-07-25** — [Miles Deutscher](https://x.com/milesdeutscher/status/2080716896002076884) — *near-term • Industry • v1 enriched*  
-  Miles Deutscher summarizes Jensen Huang's viral first X post — an open letter (signed by NVIDIA, YC, Meta, Microsoft, Palantir, a16z and others) arguing open-weight models are the future. Core thesis: just as open-source software built the internet's foundation, open weights let startups, hospitals, universities and small businesses build on advanced models without frontier prices, keep competition and gains distributed, and let organizations own their data and customizations. (Hype-framed but substantive.)
-- **2026-07-25** — [Anatoli Kopadze](https://x.com/anatolikopadze/status/2080702441809399834) — *near-term • Agent Design • 395.1K views • v1 enriched*  
-  Anatoli Kopadze shares a 25-minute video of an Anthropic engineer explaining 'graph engineering' — putting the model in a graph so it catches its own mistakes and runs a dozen tasks at once, with agents running in parallel, checking each other's work, and recovering when one fails — plus his companion article on what graph engineering is and when to use it. (Course-hype framing but substantive.)
-- **2026-07-25** — [dex](https://x.com/dexhorthy/status/2080697380379427275) — *near-term • Agent Design • 519K views • v1 enriched*  
-  dex's essay 'Why Software Factories Fail — the harness is not enough' (Part 1 of a series; talk version on YouTube) pushes back on the 'lights-off software factory' narrative (StrongDM, OpenAI's Symphony) where no human reads or writes code. He questions the prevailing 'you are the bottleneck, models are good enough, just write more loops' wisdom around putting AI coding into production.
+- **2026-07-30** — [elvis](https://x.com/omarsar0/status/2082602113558077599) — *near-term • Agent Design • v1 enriched*  
+  Summarizes new NVIDIA work (NOOA) proposing agents be built as plain Python objects — methods are actions, fields hold state, docstrings are prompts, type annotations are contracts; a '...' method body is completed at runtime by a validated LLM loop, putting the probabilistic/deterministic boundary in the source and making agents testable and refactorable.
+- **2026-07-30** — [Yarchi](https://x.com/undefinedki/status/2082583659672936787) — *near-term • Dev Practices • v1 enriched*  
+  Recounts how Jarred Sumner rewrote Bun from ~500K lines of Zig to ~1M lines of Rust in 11 days by building a self-correcting AI workflow: he wrote the rules first (3 hours, no code), tested on 3 of 1,448 files, refined the rules and deleted them, and used the folder itself as the to-do list (anything without a finished version is still to do).
+- **2026-07-30** — [Alvaro Cintas](https://x.com/dr_cintas/status/2082581306341224661) — *near-term • Agent Design • v1 enriched*  
+  Highlights Agent-Reach (github.com/Panniantong/Agent-Reach), an open-source tool that lets an AI agent browse the internet without paying for APIs.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **loop engineering** (115 posts, +8 this week)  
+- **loop engineering** (121 posts, +13 this week)  
   Feedback loops and self-running agent loops: loop design patterns, loop libraries, nested build loops, self-improving / meta-learning loops.
-    - 2026-07-25 — [dex](https://x.com/dexhorthy/status/2080697380379427275): dex's essay 'Why Software Factories Fail — the harness is not enough' (Part 1 of a series; talk version on YouTube) pushes back on the 'ligh…
-    - 2026-07-25 — [Letta](https://x.com/letta_ai/status/2080535211473850822): Letta released Trajectory, an open-source package that normalizes coding-agent sessions from Claude Code, OpenAI Codex, LangChain deepagents…
+    - 2026-07-30 — [elvis](https://x.com/omarsar0/status/2082602113558077599): Summarizes new NVIDIA work (NOOA) proposing agents be built as plain Python objects — methods are actions, fields hold state, docstrings are…
+    - 2026-07-30 — [Anatoli Kopadze](https://x.com/anatolikopadze/status/2082529611943219563): Promotes a 25-minute talk plus guide on 'graph engineering' for agents — wiring agents into a graph where each has a job, they run in parall…
 
-- **Claude skills craft** (108 posts, +7 this week)  
+- **Claude skills craft** (117 posts, +10 this week)  
   Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.
-    - 2026-07-25 — [Letta](https://x.com/letta_ai/status/2080535211473850822): Letta released Trajectory, an open-source package that normalizes coding-agent sessions from Claude Code, OpenAI Codex, LangChain deepagents…
-    - 2026-07-24 — [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making): Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI de…
+    - 2026-07-30 — [Yarchi](https://x.com/undefinedki/status/2082583659672936787): Recounts how Jarred Sumner rewrote Bun from ~500K lines of Zig to ~1M lines of Rust in 11 days by building a self-correcting AI workflow: he…
+    - 2026-07-30 — [Anatoli Kopadze](https://x.com/anatolikopadze/status/2082529611943219563): Promotes a 25-minute talk plus guide on 'graph engineering' for agents — wiring agents into a graph where each has a job, they run in parall…
 
-- **agent harness engineering** (80 posts, +7 this week)  
+- **agent harness engineering** (84 posts, +10 this week)  
   Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
-    - 2026-07-25 — [dex](https://x.com/dexhorthy/status/2080697380379427275): dex's essay 'Why Software Factories Fail — the harness is not enough' (Part 1 of a series; talk version on YouTube) pushes back on the 'ligh…
-    - 2026-07-25 — [Letta](https://x.com/letta_ai/status/2080535211473850822): Letta released Trajectory, an open-source package that normalizes coding-agent sessions from Claude Code, OpenAI Codex, LangChain deepagents…
+    - 2026-07-29 — [Xudong Han](https://x.com/xudong07452910/status/2082028299275149685): Recommends the article 'Why Software Factories Fail' — its author ran a fully automated software factory and found agents can quickly produc…
+    - 2026-07-29 — [Alex Veremeyenko](https://x.com/alex_verem/status/2082018678724575550): Restates Andrew Ng's finding that an older model in an agentic workflow beats a newer model answering once — gpt-3.5 zero-shot 48.1%, gpt-4 …
 
-- **Claude Code setup & usage** (126 posts, +4 this week)  
+- **Claude Code setup & usage** (130 posts, +7 this week)  
   Claude Code setup guides, cheatsheets, starter packs, and day-to-day usage / steering practices.
-    - 2026-07-24 — [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making): Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI de…
-    - 2026-07-20 — [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler): Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically int…
+    - 2026-07-30 — [Yarchi](https://x.com/undefinedki/status/2082583659672936787): Recounts how Jarred Sumner rewrote Bun from ~500K lines of Zig to ~1M lines of Rust in 11 days by building a self-correcting AI workflow: he…
+    - 2026-07-29 — [Xudong Han](https://x.com/xudong07452910/status/2082028299275149685): Recommends the article 'Why Software Factories Fail' — its author ran a fully automated software factory and found agents can quickly produc…
 
-- **managing agent teams** (103 posts, +4 this week)  
+- **managing agent teams** (107 posts, +7 this week)  
   Running and managing fleets of agents: multi-agent teams, agent orchestration for teams, onboarding/managing agents, org adoption of coding agents.
-    - 2026-07-24 — [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making): Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI de…
-    - 2026-07-20 — [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler): Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically int…
+    - 2026-07-29 — [Xudong Han](https://x.com/xudong07452910/status/2082028299275149685): Recommends the article 'Why Software Factories Fail' — its author ran a fully automated software factory and found agents can quickly produc…
+    - 2026-07-29 — [Alex Veremeyenko](https://x.com/alex_verem/status/2082018678724575550): Restates Andrew Ng's finding that an older model in an agentic workflow beats a newer model answering once — gpt-3.5 zero-shot 48.1%, gpt-4 …
 
 
 ### Revisit from last month
@@ -59,21 +59,38 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 409 | 56.2% |
-| claude-code | 174 | 23.9% |
-| dev-practices | 308 | 42.3% |
-| skills-mcp | 168 | 23.1% |
-| prompting | 110 | 15.1% |
-| research | 176 | 24.2% |
-| industry | 103 | 14.1% |
-| management | 117 | 16.1% |
-| questionable | 105 | 14.4% |
-| general | 101 | 13.9% |
+| agent-design | 422 | 56.6% |
+| claude-code | 178 | 23.9% |
+| dev-practices | 316 | 42.4% |
+| skills-mcp | 172 | 23.1% |
+| prompting | 114 | 15.3% |
+| research | 180 | 24.2% |
+| industry | 106 | 14.2% |
+| management | 118 | 15.8% |
+| questionable | 105 | 14.1% |
+| general | 102 | 13.7% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-07-30 | elvis | agent-design | Summarizes new NVIDIA work (NOOA) proposing agents be built as plain P... |
+| 2026-07-30 | Yarchi | dev-practices | Recounts how Jarred Sumner rewrote Bun from ~500K lines of Zig to ~1M... |
+| 2026-07-30 | Alvaro Cintas | agent-design | Highlights Agent-Reach (github.com/Panniantong/Agent-Reach), an open-s... |
+| 2026-07-30 | Anatoli Kopadze | agent-design | Promotes a 25-minute talk plus guide on 'graph engineering' for agents... |
+| 2026-07-30 | Tibo | dev-practices | Announces a new open-source CLI and TypeScript SDK for finding, valida... |
+| 2026-07-29 | Xudong Han | agent-design | Recommends the article 'Why Software Factories Fail' — its author ran... |
+| 2026-07-29 | Alex Veremeyenko | agent-design | Restates Andrew Ng's finding that an older model in an agentic workflo... |
+| 2026-07-29 | Matt Pocock | agent-design | Warns that bad AGENTS.md files make coding agents worse and waste toke... |
+| 2026-07-29 | Dillon Mulroy | dev-practices | Argues that building in vertical slices is a cheat code for good resul... |
+| 2026-07-29 | Guillermo Rauch | agent-design | Recommends an API that abstracts over and manages every major coding a... |
+| 2026-07-29 | Siqi Chen | claude-code | Shares a Claude Code skill (github.com/blader/…) that learns new Claud... |
+| 2026-07-29 | Oliver Prompts | research | Points to a repo from rednote-hilab (github.com/rednote-hilab/…), an o... |
+| 2026-07-29 | Tom Dörr | agent-design | Highlights AutoMem (github.com/verygoodplugins/automem), a memory syst... |
+| 2026-07-28 | Tom Dörr | prompting | Highlights vibe-coding-prompt-template (github.com/KhazP/vibe-coding-p... |
+| 2026-07-28 | HOPE | Engineer. | agent-design | Details hermes-agent's layered memory system (oh-my-hermes): L0 person... |
+| 2026-07-28 | Ahmad | research | Part 3 of a self-hosted/local-AI series: 'Inference Engines for LLMs &... |
+| 2026-07-28 | Andrej Karpathy | agent-design | Introduces the 'idea file' concept — in the LLM-agent era you share an... |
 | 2026-07-25 | Peter Steinberger | agent-design | Peter Steinberger amplifies Alex Kotliarskyi's 'graph-maxing' workflow... |
 | 2026-07-25 | Miles Deutscher | industry | Miles Deutscher summarizes Jensen Huang's viral first X post — an open... |
 | 2026-07-25 | Anatoli Kopadze | agent-design | Anatoli Kopadze shares a 25-minute video of an Anthropic engineer expl... |
@@ -107,28 +124,37 @@
 | 2026-07-14 | JoePro | skills-mcp | JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skil... |
 | 2026-07-14 | witcheer | research | witcheer crowdsourced and hand-tallied 250+ replies on how people run... |
 | 2026-07-14 | How To Prompt | agent-design | How To Prompt highlights an open-source, privacy-first Chromium fork b... |
-| 2026-07-14 | Alex Prompter | prompting | Alex Prompter's thread pitches 'cloning' Fable 5's reasoning into Opus... |
-| 2026-07-13 | Jamon Holmgren | agent-design | Jamon Holmgren dumps his complete agentic coding setup as a 10+ point... |
-| 2026-07-09 | Kodus | dev-practices | Kodus (github.com/kodustech/kodus-ai) — open-source AGPLv3 self-hosted... |
-| 2026-07-07 | How To Prompt | agent-design | How To Prompt (hype framing: "China has killed the vector database ind... |
-| 2026-07-07 | Ryan Carson | agent-design | Ryan Carson (@HelloUntangle) details orchestrating the largest/riskies... |
-| 2026-07-06 | Satyam Pariyar | agent-design | Satyam Pariyar shares Kybernetes (github.com/pariyar07/kybernetes), a... |
-| 2026-07-06 | leopardracer | questionable | Engagement-farmed take (ALL CAPS) claiming an Anthropic engineer said... |
-| 2026-07-06 | ericosiu | agent-design | Eric Siu shares a 7-step checklist for building a 'Company Brain' (an... |
-| 2026-07-06 | Isra | agent-design | Isra flags Alibaba's newly open-sourced Page-Agent (~22K GitHub stars,... |
-| 2026-07-06 | Akshay | agent-design | Akshay Pachaar explains building a '1-person AI company' that runs loc... |
-| 2026-07-06 | kaize | agent-design | kaize shares a 'Loop engineering' reading list, arguing 2026 agents ar... |
-| 2026-07-06 | 0xSero | research | 0xSero (quote-tweeting Rohan Paul on a Meta paper showing quantized re... |
-| 2026-07-06 | Anatoli Kopadze | agent-design | Anatoli Kopadze's widely-viewed piece 'Loops explained: Claude, GPT, M... |
-| 2026-07-05 | Dami-Defi | general | Dami-Defi promotes an Obsidian community plugin (19,184 downloads) tha... |
-| 2026-07-05 | Anatoli Kopadze | claude-code | Anatoli Kopadze (quote-tweeting his own Claude features guide) shares... |
-| 2026-07-05 | Nyk | agent-design | [Jeremy flagged: urgent for orchestration] Nyk released Council of Hig... |
-| 2026-07-05 | Elvis | skills-mcp | Elvis makes a meta point about eval-driven skill building that extends... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (409)
+### Agent Design (422)
+
+- [elvis](https://x.com/omarsar0/status/2082602113558077599) — 2026-07-30: Summarizes new NVIDIA work (NOOA) proposing agents be built as plain Python objects — methods are actions, fields hold state, docstrings are prompts, type annotations are contracts; a '...' method body is completed at runtime by a validated LLM loop, putting the probabilistic/deterministic boundary in the source and making agents testable and refactorable.
+
+- [Yarchi](https://x.com/undefinedki/status/2082583659672936787) — 2026-07-30: Recounts how Jarred Sumner rewrote Bun from ~500K lines of Zig to ~1M lines of Rust in 11 days by building a self-correcting AI workflow: he wrote the rules first (3 hours, no code), tested on 3 of 1,448 files, refined the rules and deleted them, and used the folder itself as the to-do list (anything without a finished version is still to do).
+
+- [Alvaro Cintas](https://x.com/dr_cintas/status/2082581306341224661) — 2026-07-30: Highlights Agent-Reach (github.com/Panniantong/Agent-Reach), an open-source tool that lets an AI agent browse the internet without paying for APIs.
+
+- [Anatoli Kopadze](https://x.com/anatolikopadze/status/2082529611943219563) — 2026-07-30: Promotes a 25-minute talk plus guide on 'graph engineering' for agents — wiring agents into a graph where each has a job, they run in parallel, verify each other, and share a memory that never resets.
+
+- [Xudong Han](https://x.com/xudong07452910/status/2082028299275149685) — 2026-07-29: Recommends the article 'Why Software Factories Fail' — its author ran a fully automated software factory and found agents can quickly produce test-passing code, but architecture, boundaries, and long-term maintainability still require human judgment; the bill for poor architecture comes due months later.
+
+- [Alex Veremeyenko](https://x.com/alex_verem/status/2082018678724575550) — 2026-07-29: Restates Andrew Ng's finding that an older model in an agentic workflow beats a newer model answering once — gpt-3.5 zero-shot 48.1%, gpt-4 zero-shot 67.0%, gpt-3.5 in an agentic workflow up to 95.1% on HumanEval — and lists his four patterns: reflection, tool use, planning, and multi-agent collaboration.
+
+- [Matt Pocock](https://x.com/mattpocockuk/status/2012906065856270504) — 2026-07-29: Warns that bad AGENTS.md files make coding agents worse and waste tokens; shares a cleanup prompt plus a full guide (aihero.dev/s/KQLczQ).
+
+- [Dillon Mulroy](https://x.com/dillon_mulroy/status/2012902889249792220) — 2026-07-29: Argues that building in vertical slices is a cheat code for good results with AI, recommending the Pragmatic Programmer concept and structuring agent systems around it.
+
+- [Guillermo Rauch](https://x.com/rauchg/status/2012727068702711847) — 2026-07-29: Recommends an API that abstracts over and manages every major coding agent — a starting point for teams building coding AI (auto-fixing, code review, testing) into their products.
+
+- [Tom Dörr](https://x.com/tom_doerr/status/2012463743494480190) — 2026-07-29: Highlights AutoMem (github.com/verygoodplugins/automem), a memory system for AI assistants.
+
+- [Tom Dörr](https://x.com/tom_doerr/status/2082047096677371979) — 2026-07-28: Highlights vibe-coding-prompt-template (github.com/KhazP/vibe-coding-prompt-template) — generates deep research summaries, PRDs, and technical designs from raw ideas using structured prompt templates for AI coding workflows.
+
+- [HOPE | Engineer.](https://x.com/rlaope/status/2081947109113385261) — 2026-07-28: Details hermes-agent's layered memory system (oh-my-hermes): L0 persona, L1 capped MEMORY.md/USER.md kept as frozen snapshots for prompt caching, L2 labelled memory blocks rendered under a 6000-char budget with on-demand reference reads and no silent truncation, and L3 unlimited session logs via FTS5 — with consolidation and redundancy-only eviction.
+
+- [Andrej Karpathy](https://x.com/karpathy/status/2040470801506541998) — 2026-07-28: Introduces the 'idea file' concept — in the LLM-agent era you share an idea (as a gist) rather than specific code, and the other person's agent builds it for their needs. Example gist: gist.github.com/karpathy/442a6bf555914893e9891c11519de94f, which an agent can use to build your own LLM wiki.
 
 - [Peter Steinberger](https://x.com/steipete/status/2080779917130858598) — 2026-07-25: Peter Steinberger amplifies Alex Kotliarskyi's 'graph-maxing' workflow: draw a workflow graph (even on paper), hand it to Codex and ask it to write a code-mode script that implements the workflow and run it with your inputs — reportedly works with no further steps.
 
@@ -948,7 +974,15 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Claude Code (174)
+### Claude Code (178)
+
+- [Yarchi](https://x.com/undefinedki/status/2082583659672936787) — 2026-07-30: Recounts how Jarred Sumner rewrote Bun from ~500K lines of Zig to ~1M lines of Rust in 11 days by building a self-correcting AI workflow: he wrote the rules first (3 hours, no code), tested on 3 of 1,448 files, refined the rules and deleted them, and used the folder itself as the to-do list (anything without a finished version is still to do).
+
+- [Matt Pocock](https://x.com/mattpocockuk/status/2012906065856270504) — 2026-07-29: Warns that bad AGENTS.md files make coding agents worse and waste tokens; shares a cleanup prompt plus a full guide (aihero.dev/s/KQLczQ).
+
+- [Siqi Chen](https://x.com/blader/status/2012667150440476851) — 2026-07-29: Shares a Claude Code skill (github.com/blader/…) that learns new Claude Code skills as you use Claude Code.
+
+- [Andrej Karpathy](https://x.com/karpathy/status/2040470801506541998) — 2026-07-28: Introduces the 'idea file' concept — in the LLM-agent era you share an idea (as a gist) rather than specific code, and the other person's agent builds it for their needs. Example gist: gist.github.com/karpathy/442a6bf555914893e9891c11519de94f, which an agent can use to build your own LLM wiki.
 
 - [Tom Dörr](https://x.com/tom_doerr/status/2078092209702813714) — 2026-07-17: Hyperresearch turns Claude Code into a deep-research agent: a 16-step pipeline that gathers web sources into a persistent vault and generates adversarially-audited reports with full source provenance. Repo: github.com/jordan-gibbs/hyperresearch.
 
@@ -1298,7 +1332,23 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (308)
+### Dev Practices (316)
+
+- [Yarchi](https://x.com/undefinedki/status/2082583659672936787) — 2026-07-30: Recounts how Jarred Sumner rewrote Bun from ~500K lines of Zig to ~1M lines of Rust in 11 days by building a self-correcting AI workflow: he wrote the rules first (3 hours, no code), tested on 3 of 1,448 files, refined the rules and deleted them, and used the folder itself as the to-do list (anything without a finished version is still to do).
+
+- [Tibo](https://x.com/thsottiaux/status/2082241164850364555) — 2026-07-30: Announces a new open-source CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities in code — scan repositories, review changes, track findings over time, and run security checks in CI.
+
+- [Xudong Han](https://x.com/xudong07452910/status/2082028299275149685) — 2026-07-29: Recommends the article 'Why Software Factories Fail' — its author ran a fully automated software factory and found agents can quickly produce test-passing code, but architecture, boundaries, and long-term maintainability still require human judgment; the bill for poor architecture comes due months later.
+
+- [Matt Pocock](https://x.com/mattpocockuk/status/2012906065856270504) — 2026-07-29: Warns that bad AGENTS.md files make coding agents worse and waste tokens; shares a cleanup prompt plus a full guide (aihero.dev/s/KQLczQ).
+
+- [Dillon Mulroy](https://x.com/dillon_mulroy/status/2012902889249792220) — 2026-07-29: Argues that building in vertical slices is a cheat code for good results with AI, recommending the Pragmatic Programmer concept and structuring agent systems around it.
+
+- [Guillermo Rauch](https://x.com/rauchg/status/2012727068702711847) — 2026-07-29: Recommends an API that abstracts over and manages every major coding agent — a starting point for teams building coding AI (auto-fixing, code review, testing) into their products.
+
+- [Tom Dörr](https://x.com/tom_doerr/status/2082047096677371979) — 2026-07-28: Highlights vibe-coding-prompt-template (github.com/KhazP/vibe-coding-prompt-template) — generates deep research summaries, PRDs, and technical designs from raw ideas using structured prompt templates for AI coding workflows.
+
+- [Ahmad](https://x.com/theahmadosman/status/2057183854444843202) — 2026-07-28: Part 3 of a self-hosted/local-AI series: 'Inference Engines for LLMs & Local AI Hardware (2026 Edition).' Argues you pick a hardware strategy, workload shape, and serving model first — the engine follows — and maps engines across local portability, consumer CUDA, Apple unified memory, quantized inference, production serving, distributed orchestration, and vendor-optimized datacenter execution. Links github.com/av/harbor.
 
 - [Peter Steinberger](https://x.com/steipete/status/2080779917130858598) — 2026-07-25: Peter Steinberger amplifies Alex Kotliarskyi's 'graph-maxing' workflow: draw a workflow graph (even on paper), hand it to Codex and ask it to write a code-mode script that implements the workflow and run it with your inputs — reportedly works with no further steps.
 
@@ -1916,7 +1966,15 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Skills & MCP (168)
+### Skills & MCP (172)
+
+- [Alvaro Cintas](https://x.com/dr_cintas/status/2082581306341224661) — 2026-07-30: Highlights Agent-Reach (github.com/Panniantong/Agent-Reach), an open-source tool that lets an AI agent browse the internet without paying for APIs.
+
+- [Siqi Chen](https://x.com/blader/status/2012667150440476851) — 2026-07-29: Shares a Claude Code skill (github.com/blader/…) that learns new Claude Code skills as you use Claude Code.
+
+- [Tom Dörr](https://x.com/tom_doerr/status/2012463743494480190) — 2026-07-29: Highlights AutoMem (github.com/verygoodplugins/automem), a memory system for AI assistants.
+
+- [HOPE | Engineer.](https://x.com/rlaope/status/2081947109113385261) — 2026-07-28: Details hermes-agent's layered memory system (oh-my-hermes): L0 persona, L1 capped MEMORY.md/USER.md kept as frozen snapshots for prompt caching, L2 labelled memory blocks rendered under a 6000-char budget with on-demand reference reads and no silent truncation, and L3 unlimited session logs via FTS5 — with consolidation and redundancy-only eviction.
 
 - [Letta](https://x.com/letta_ai/status/2080535211473850822) — 2026-07-25: Letta released Trajectory, an open-source package that normalizes coding-agent sessions from Claude Code, OpenAI Codex, LangChain deepagents, Letta Code, and other harnesses into one token-efficient standard format — enabling agents to learn from past experience across harnesses and users.
 
@@ -2254,7 +2312,15 @@
 
 - [Mervin Praison](https://x.com/mervinpraison/status/1881788246684013011) — 2025-01-22: Shows a 100% local RAG AI agent with reasoning: DeepSeek via Ollama for the LLM, PraisonAI to build the agent in a few lines, Nomic embeddings, and a Streamlit UI—code included in the thread.
 
-### Prompting (110)
+### Prompting (114)
+
+- [Alex Veremeyenko](https://x.com/alex_verem/status/2082018678724575550) — 2026-07-29: Restates Andrew Ng's finding that an older model in an agentic workflow beats a newer model answering once — gpt-3.5 zero-shot 48.1%, gpt-4 zero-shot 67.0%, gpt-3.5 in an agentic workflow up to 95.1% on HumanEval — and lists his four patterns: reflection, tool use, planning, and multi-agent collaboration.
+
+- [Matt Pocock](https://x.com/mattpocockuk/status/2012906065856270504) — 2026-07-29: Warns that bad AGENTS.md files make coding agents worse and waste tokens; shares a cleanup prompt plus a full guide (aihero.dev/s/KQLczQ).
+
+- [Tom Dörr](https://x.com/tom_doerr/status/2082047096677371979) — 2026-07-28: Highlights vibe-coding-prompt-template (github.com/KhazP/vibe-coding-prompt-template) — generates deep research summaries, PRDs, and technical designs from raw ideas using structured prompt templates for AI coding workflows.
+
+- [Andrej Karpathy](https://x.com/karpathy/status/2040470801506541998) — 2026-07-28: Introduces the 'idea file' concept — in the LLM-agent era you share an idea (as a gist) rather than specific code, and the other person's agent builds it for their needs. Example gist: gist.github.com/karpathy/442a6bf555914893e9891c11519de94f, which an agent can use to build your own LLM wiki.
 
 - [Peter Steinberger](https://x.com/steipete/status/2080779917130858598) — 2026-07-25: Peter Steinberger amplifies Alex Kotliarskyi's 'graph-maxing' workflow: draw a workflow graph (even on paper), hand it to Codex and ask it to write a code-mode script that implements the workflow and run it with your inputs — reportedly works with no further steps.
 
@@ -2476,7 +2542,15 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-### Research (176)
+### Research (180)
+
+- [elvis](https://x.com/omarsar0/status/2082602113558077599) — 2026-07-30: Summarizes new NVIDIA work (NOOA) proposing agents be built as plain Python objects — methods are actions, fields hold state, docstrings are prompts, type annotations are contracts; a '...' method body is completed at runtime by a validated LLM loop, putting the probabilistic/deterministic boundary in the source and making agents testable and refactorable.
+
+- [Alex Veremeyenko](https://x.com/alex_verem/status/2082018678724575550) — 2026-07-29: Restates Andrew Ng's finding that an older model in an agentic workflow beats a newer model answering once — gpt-3.5 zero-shot 48.1%, gpt-4 zero-shot 67.0%, gpt-3.5 in an agentic workflow up to 95.1% on HumanEval — and lists his four patterns: reflection, tool use, planning, and multi-agent collaboration.
+
+- [Oliver Prompts](https://x.com/oliviscusai/status/2012551369488540115) — 2026-07-29: Points to a repo from rednote-hilab (github.com/rednote-hilab/…), an open-source AI model/tooling release.
+
+- [Ahmad](https://x.com/theahmadosman/status/2057183854444843202) — 2026-07-28: Part 3 of a self-hosted/local-AI series: 'Inference Engines for LLMs & Local AI Hardware (2026 Edition).' Argues you pick a hardware strategy, workload shape, and serving model first — the engine follows — and maps engines across local portability, consumer CUDA, Apple unified memory, quantized inference, production serving, distributed orchestration, and vendor-optimized datacenter execution. Links github.com/av/harbor.
 
 - [Miles Deutscher](https://x.com/milesdeutscher/status/2080716896002076884) — 2026-07-25: Miles Deutscher summarizes Jensen Huang's viral first X post — an open letter (signed by NVIDIA, YC, Meta, Microsoft, Palantir, a16z and others) arguing open-weight models are the future. Core thesis: just as open-source software built the internet's foundation, open weights let startups, hospitals, universities and small businesses build on advanced models without frontier prices, keep competition and gains distributed, and let organizations own their data and customizations. (Hype-framed but substantive.)
 
@@ -2830,7 +2904,13 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.
 
-### Industry (103)
+### Industry (106)
+
+- [Tibo](https://x.com/thsottiaux/status/2082241164850364555) — 2026-07-30: Announces a new open-source CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities in code — scan repositories, review changes, track findings over time, and run security checks in CI.
+
+- [Guillermo Rauch](https://x.com/rauchg/status/2012727068702711847) — 2026-07-29: Recommends an API that abstracts over and manages every major coding agent — a starting point for teams building coding AI (auto-fixing, code review, testing) into their products.
+
+- [Ahmad](https://x.com/theahmadosman/status/2057183854444843202) — 2026-07-28: Part 3 of a self-hosted/local-AI series: 'Inference Engines for LLMs & Local AI Hardware (2026 Edition).' Argues you pick a hardware strategy, workload shape, and serving model first — the engine follows — and maps engines across local portability, consumer CUDA, Apple unified memory, quantized inference, production serving, distributed orchestration, and vendor-optimized datacenter execution. Links github.com/av/harbor.
 
 - [Miles Deutscher](https://x.com/milesdeutscher/status/2080716896002076884) — 2026-07-25: Miles Deutscher summarizes Jensen Huang's viral first X post — an open letter (signed by NVIDIA, YC, Meta, Microsoft, Palantir, a16z and others) arguing open-weight models are the future. Core thesis: just as open-source software built the internet's foundation, open weights let startups, hospitals, universities and small businesses build on advanced models without frontier prices, keep competition and gains distributed, and let organizations own their data and customizations. (Hype-framed but substantive.)
 
@@ -3038,7 +3118,9 @@
 
 - [Santiago](https://x.com/svpino/status/1881336934418755862) — 2025-01-21: Walks through GroundX, an open-source, self-hostable/air-gapped enterprise RAG system. Two services: Ingest (a pretrained vision model that 'understands' documents instead of feeding raw docs to the LLM) and Search (text+vector search with a fine-tuned re-ranker). Santiago's thesis: most teams need better ingestion, not better retrieval; includes a video demo and the free X-Ray inspection tool.
 
-### Management (117)
+### Management (118)
+
+- [Xudong Han](https://x.com/xudong07452910/status/2082028299275149685) — 2026-07-29: Recommends the article 'Why Software Factories Fail' — its author ran a fully automated software factory and found agents can quickly produce test-passing code, but architecture, boundaries, and long-term maintainability still require human judgment; the bill for poor architecture comes due months later.
 
 - [dex](https://x.com/dexhorthy/status/2080697380379427275) — 2026-07-25: dex's essay 'Why Software Factories Fail — the harness is not enough' (Part 1 of a series; talk version on YouTube) pushes back on the 'lights-off software factory' narrative (StrongDM, OpenAI's Symphony) where no human reads or writes code. He questions the prevailing 'you are the bottleneck, models are good enough, just write more loops' wisdom around putting AI coding into production.
 
@@ -3486,7 +3568,9 @@
 
 - [Aakash Gupta](https://x.com/aakashg0/status/1967135994228166848) — 2025-09-15: Boosts another user's step-by-step roadmap for building your first AI agent, calling it 'gold.' Engagement-style framing; the substantive content lives in the referenced roadmap rather than the post itself.
 
-### General (102)
+### General (103)
+
+- [Oliver Prompts](https://x.com/oliviscusai/status/2012551369488540115) — 2026-07-29: Points to a repo from rednote-hilab (github.com/rednote-hilab/…), an open-source AI model/tooling release.
 
 - [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making) — 2026-07-24: Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI dev schism": he argues that having AI build something you initiated — code, art, prose, even a deck — isn't the same as *making* it, and the loss of "making" (distinct from loss of craft or problem-solving) is what leaves him unfulfilled. He works the gray area — a compiler or assembler feels like a tool you make *with*, while an LLM feels like a report you *delegate* to — and lands on prompting-as-skill being real (vision, judgment, communication) but closer to "asking someone to make something for you" than making it yourself. (beej.us/blog/data/ai-making)
 
@@ -3696,6 +3780,57 @@
 ## Full Chronological List
 
 ### Jul 2026
+
+- **2026-07-30** | [elvis](https://x.com/omarsar0/status/2082602113558077599) | agent-design, research
+  Summarizes new NVIDIA work (NOOA) proposing agents be built as plain Python objects — methods are actions, fields hold state, docstrings are prompts, type annotations are contracts; a '...' method body is completed at runtime by a validated LLM loop, putting the probabilistic/deterministic boundary in the source and making agents testable and refactorable.
+
+- **2026-07-30** | [Yarchi](https://x.com/undefinedki/status/2082583659672936787) | dev-practices, agent-design, claude-code
+  Recounts how Jarred Sumner rewrote Bun from ~500K lines of Zig to ~1M lines of Rust in 11 days by building a self-correcting AI workflow: he wrote the rules first (3 hours, no code), tested on 3 of 1,448 files, refined the rules and deleted them, and used the folder itself as the to-do list (anything without a finished version is still to do).
+
+- **2026-07-30** | [Alvaro Cintas](https://x.com/dr_cintas/status/2082581306341224661) | agent-design, skills-mcp
+  Highlights Agent-Reach (github.com/Panniantong/Agent-Reach), an open-source tool that lets an AI agent browse the internet without paying for APIs.
+
+- **2026-07-30** | [Anatoli Kopadze](https://x.com/anatolikopadze/status/2082529611943219563) | agent-design
+  Promotes a 25-minute talk plus guide on 'graph engineering' for agents — wiring agents into a graph where each has a job, they run in parallel, verify each other, and share a memory that never resets.
+
+- **2026-07-30** | [Tibo](https://x.com/thsottiaux/status/2082241164850364555) | dev-practices, industry
+  Announces a new open-source CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities in code — scan repositories, review changes, track findings over time, and run security checks in CI.
+
+- **2026-07-29** | [Xudong Han](https://x.com/xudong07452910/status/2082028299275149685) | agent-design, dev-practices, management
+  Recommends the article 'Why Software Factories Fail' — its author ran a fully automated software factory and found agents can quickly produce test-passing code, but architecture, boundaries, and long-term maintainability still require human judgment; the bill for poor architecture comes due months later.
+
+- **2026-07-29** | [Alex Veremeyenko](https://x.com/alex_verem/status/2082018678724575550) | agent-design, research, prompting
+  Restates Andrew Ng's finding that an older model in an agentic workflow beats a newer model answering once — gpt-3.5 zero-shot 48.1%, gpt-4 zero-shot 67.0%, gpt-3.5 in an agentic workflow up to 95.1% on HumanEval — and lists his four patterns: reflection, tool use, planning, and multi-agent collaboration.
+
+- **2026-07-29** | [Matt Pocock](https://x.com/mattpocockuk/status/2012906065856270504) | agent-design, dev-practices, prompting, claude-code
+  Warns that bad AGENTS.md files make coding agents worse and waste tokens; shares a cleanup prompt plus a full guide (aihero.dev/s/KQLczQ).
+
+- **2026-07-29** | [Dillon Mulroy](https://x.com/dillon_mulroy/status/2012902889249792220) | dev-practices, agent-design
+  Argues that building in vertical slices is a cheat code for good results with AI, recommending the Pragmatic Programmer concept and structuring agent systems around it.
+
+- **2026-07-29** | [Guillermo Rauch](https://x.com/rauchg/status/2012727068702711847) | agent-design, industry, dev-practices
+  Recommends an API that abstracts over and manages every major coding agent — a starting point for teams building coding AI (auto-fixing, code review, testing) into their products.
+
+- **2026-07-29** | [Siqi Chen](https://x.com/blader/status/2012667150440476851) | claude-code, skills-mcp
+  Shares a Claude Code skill (github.com/blader/…) that learns new Claude Code skills as you use Claude Code.
+
+- **2026-07-29** | [Oliver Prompts](https://x.com/oliviscusai/status/2012551369488540115) | research, general
+  Points to a repo from rednote-hilab (github.com/rednote-hilab/…), an open-source AI model/tooling release.
+
+- **2026-07-29** | [Tom Dörr](https://x.com/tom_doerr/status/2012463743494480190) | agent-design, skills-mcp
+  Highlights AutoMem (github.com/verygoodplugins/automem), a memory system for AI assistants.
+
+- **2026-07-28** | [Tom Dörr](https://x.com/tom_doerr/status/2082047096677371979) | prompting, dev-practices, agent-design
+  Highlights vibe-coding-prompt-template (github.com/KhazP/vibe-coding-prompt-template) — generates deep research summaries, PRDs, and technical designs from raw ideas using structured prompt templates for AI coding workflows.
+
+- **2026-07-28** | [HOPE | Engineer.](https://x.com/rlaope/status/2081947109113385261) | agent-design, skills-mcp
+  Details hermes-agent's layered memory system (oh-my-hermes): L0 persona, L1 capped MEMORY.md/USER.md kept as frozen snapshots for prompt caching, L2 labelled memory blocks rendered under a 6000-char budget with on-demand reference reads and no silent truncation, and L3 unlimited session logs via FTS5 — with consolidation and redundancy-only eviction.
+
+- **2026-07-28** | [Ahmad](https://x.com/theahmadosman/status/2057183854444843202) | research, industry, dev-practices
+  Part 3 of a self-hosted/local-AI series: 'Inference Engines for LLMs & Local AI Hardware (2026 Edition).' Argues you pick a hardware strategy, workload shape, and serving model first — the engine follows — and maps engines across local portability, consumer CUDA, Apple unified memory, quantized inference, production serving, distributed orchestration, and vendor-optimized datacenter execution. Links github.com/av/harbor.
+
+- **2026-07-28** | [Andrej Karpathy](https://x.com/karpathy/status/2040470801506541998) | agent-design, claude-code, prompting
+  Introduces the 'idea file' concept — in the LLM-agent era you share an idea (as a gist) rather than specific code, and the other person's agent builds it for their needs. Example gist: gist.github.com/karpathy/442a6bf555914893e9891c11519de94f, which an agent can use to build your own LLM wiki.
 
 - **2026-07-25** | [Peter Steinberger](https://x.com/steipete/status/2080779917130858598) | agent-design, dev-practices, prompting
   Peter Steinberger amplifies Alex Kotliarskyi's 'graph-maxing' workflow: draw a workflow graph (even on paper), hand it to Codex and ask it to write a code-mode script that implements the workflow and run it with your inputs — reportedly works with no further steps.
