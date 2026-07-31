@@ -1,14 +1,16 @@
 # AI Links Collection
-**Total Posts**: 745  
-**Date Range**: 2024-06-11 – 2026-07-30  
-**Enriched**: 744/745 (99%)
+**Total Posts**: 747  
+**Date Range**: 2024-06-11 – 2026-07-31  
+**Enriched**: 746/747 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-07-30T15:11:07Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-07-31T15:18:35Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
+- **2026-07-31** — [Viv](https://x.com/vtrivedy10/status/2082868751276413313) — *now • Skills & MCP • 33.8K views • v1 enriched*  
+  LangChain released v2 of its eval-engineering skill (npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering). Adds multi-turn eval user simulation with instructions/examples, deeper environment-design guidance (simulating backends/databases, using prod traces), and iterative harness/verifier refinement keeping domain experts in the loop.
 - **2026-07-30** — [Tibo](https://x.com/thsottiaux/status/2082241164850364555) — *now • Dev Practices • v1 enriched*  
   Announces a new open-source CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities in code — scan repositories, review changes, track findings over time, and run security checks in CI.
 - **2026-07-25** — [Letta](https://x.com/letta_ai/status/2080535211473850822) — *now • Agent Design • 202K views • v1 enriched*  
@@ -17,8 +19,6 @@
   Summarizes new NVIDIA work (NOOA) proposing agents be built as plain Python objects — methods are actions, fields hold state, docstrings are prompts, type annotations are contracts; a '...' method body is completed at runtime by a validated LLM loop, putting the probabilistic/deterministic boundary in the source and making agents testable and refactorable.
 - **2026-07-30** — [Yarchi](https://x.com/undefinedki/status/2082583659672936787) — *near-term • Dev Practices • v1 enriched*  
   Recounts how Jarred Sumner rewrote Bun from ~500K lines of Zig to ~1M lines of Rust in 11 days by building a self-correcting AI workflow: he wrote the rules first (3 hours, no code), tested on 3 of 1,448 files, refined the rules and deleted them, and used the folder itself as the to-do list (anything without a finished version is still to do).
-- **2026-07-30** — [Alvaro Cintas](https://x.com/dr_cintas/status/2082581306341224661) — *near-term • Agent Design • v1 enriched*  
-  Highlights Agent-Reach (github.com/Panniantong/Agent-Reach), an open-source tool that lets an AI agent browse the internet without paying for APIs.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
@@ -28,15 +28,15 @@
     - 2026-07-30 — [elvis](https://x.com/omarsar0/status/2082602113558077599): Summarizes new NVIDIA work (NOOA) proposing agents be built as plain Python objects — methods are actions, fields hold state, docstrings are…
     - 2026-07-30 — [Anatoli Kopadze](https://x.com/anatolikopadze/status/2082529611943219563): Promotes a 25-minute talk plus guide on 'graph engineering' for agents — wiring agents into a graph where each has a job, they run in parall…
 
-- **Claude skills craft** (117 posts, +10 this week)  
+- **Claude skills craft** (122 posts, +12 this week)  
   Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.
+    - 2026-07-31 — [Ziran Yang](https://x.com/__zrrr__/status/2082906868054360454): Research thread on distilling the decision-making knowledge encoded in classic expert systems (solvers, planners, schedulers) into LLMs to m…
     - 2026-07-30 — [Yarchi](https://x.com/undefinedki/status/2082583659672936787): Recounts how Jarred Sumner rewrote Bun from ~500K lines of Zig to ~1M lines of Rust in 11 days by building a self-correcting AI workflow: he…
-    - 2026-07-30 — [Anatoli Kopadze](https://x.com/anatolikopadze/status/2082529611943219563): Promotes a 25-minute talk plus guide on 'graph engineering' for agents — wiring agents into a graph where each has a job, they run in parall…
 
-- **agent harness engineering** (84 posts, +10 this week)  
+- **agent harness engineering** (85 posts, +11 this week)  
   Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
+    - 2026-07-30 — [Anatoli Kopadze](https://x.com/anatolikopadze/status/2082529611943219563): Promotes a 25-minute talk plus guide on 'graph engineering' for agents — wiring agents into a graph where each has a job, they run in parall…
     - 2026-07-29 — [Xudong Han](https://x.com/xudong07452910/status/2082028299275149685): Recommends the article 'Why Software Factories Fail' — its author ran a fully automated software factory and found agents can quickly produc…
-    - 2026-07-29 — [Alex Veremeyenko](https://x.com/alex_verem/status/2082018678724575550): Restates Andrew Ng's finding that an older model in an agentic workflow beats a newer model answering once — gpt-3.5 zero-shot 48.1%, gpt-4 …
 
 - **Claude Code setup & usage** (130 posts, +7 this week)  
   Claude Code setup guides, cheatsheets, starter packs, and day-to-day usage / steering practices.
@@ -59,12 +59,12 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 422 | 56.6% |
-| claude-code | 178 | 23.9% |
-| dev-practices | 316 | 42.4% |
-| skills-mcp | 172 | 23.1% |
+| agent-design | 424 | 56.8% |
+| claude-code | 178 | 23.8% |
+| dev-practices | 317 | 42.4% |
+| skills-mcp | 173 | 23.2% |
 | prompting | 114 | 15.3% |
-| research | 180 | 24.2% |
+| research | 181 | 24.2% |
 | industry | 106 | 14.2% |
 | management | 118 | 15.8% |
 | questionable | 105 | 14.1% |
@@ -74,6 +74,8 @@
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-07-31 | Ziran Yang | research | Research thread on distilling the decision-making knowledge encoded in... |
+| 2026-07-31 | Viv | skills-mcp | LangChain released v2 of its eval-engineering skill (npx skills add gi... |
 | 2026-07-30 | elvis | agent-design | Summarizes new NVIDIA work (NOOA) proposing agents be built as plain P... |
 | 2026-07-30 | Yarchi | dev-practices | Recounts how Jarred Sumner rewrote Bun from ~500K lines of Zig to ~1M... |
 | 2026-07-30 | Alvaro Cintas | agent-design | Highlights Agent-Reach (github.com/Panniantong/Agent-Reach), an open-s... |
@@ -122,13 +124,15 @@
 | 2026-07-15 | Ashpreet Bedi | agent-design | Ashpreet Bedi (Agno) shares a new post, Self-Driving Agent Infrastruct... |
 | 2026-07-14 | Alvaro Videla | research | Alvaro Videla released LeetLLM (github.com/videlalvaro/leet-llm) — a f... |
 | 2026-07-14 | JoePro | skills-mcp | JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skil... |
-| 2026-07-14 | witcheer | research | witcheer crowdsourced and hand-tallied 250+ replies on how people run... |
-| 2026-07-14 | How To Prompt | agent-design | How To Prompt highlights an open-source, privacy-first Chromium fork b... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (422)
+### Agent Design (424)
+
+- [Ziran Yang](https://x.com/__zrrr__/status/2082906868054360454) — 2026-07-31: Research thread on distilling the decision-making knowledge encoded in classic expert systems (solvers, planners, schedulers) into LLMs to make it general-purpose and explainable. Paper: arxiv.org/abs/2607.21856.
+
+- [Viv](https://x.com/vtrivedy10/status/2082868751276413313) — 2026-07-31: LangChain released v2 of its eval-engineering skill (npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering). Adds multi-turn eval user simulation with instructions/examples, deeper environment-design guidance (simulating backends/databases, using prod traces), and iterative harness/verifier refinement keeping domain experts in the loop.
 
 - [elvis](https://x.com/omarsar0/status/2082602113558077599) — 2026-07-30: Summarizes new NVIDIA work (NOOA) proposing agents be built as plain Python objects — methods are actions, fields hold state, docstrings are prompts, type annotations are contracts; a '...' method body is completed at runtime by a validated LLM loop, putting the probabilistic/deterministic boundary in the source and making agents testable and refactorable.
 
@@ -1332,7 +1336,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (316)
+### Dev Practices (317)
+
+- [Viv](https://x.com/vtrivedy10/status/2082868751276413313) — 2026-07-31: LangChain released v2 of its eval-engineering skill (npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering). Adds multi-turn eval user simulation with instructions/examples, deeper environment-design guidance (simulating backends/databases, using prod traces), and iterative harness/verifier refinement keeping domain experts in the loop.
 
 - [Yarchi](https://x.com/undefinedki/status/2082583659672936787) — 2026-07-30: Recounts how Jarred Sumner rewrote Bun from ~500K lines of Zig to ~1M lines of Rust in 11 days by building a self-correcting AI workflow: he wrote the rules first (3 hours, no code), tested on 3 of 1,448 files, refined the rules and deleted them, and used the folder itself as the to-do list (anything without a finished version is still to do).
 
@@ -1966,7 +1972,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Skills & MCP (172)
+### Skills & MCP (173)
+
+- [Viv](https://x.com/vtrivedy10/status/2082868751276413313) — 2026-07-31: LangChain released v2 of its eval-engineering skill (npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering). Adds multi-turn eval user simulation with instructions/examples, deeper environment-design guidance (simulating backends/databases, using prod traces), and iterative harness/verifier refinement keeping domain experts in the loop.
 
 - [Alvaro Cintas](https://x.com/dr_cintas/status/2082581306341224661) — 2026-07-30: Highlights Agent-Reach (github.com/Panniantong/Agent-Reach), an open-source tool that lets an AI agent browse the internet without paying for APIs.
 
@@ -2542,7 +2550,9 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-### Research (180)
+### Research (181)
+
+- [Ziran Yang](https://x.com/__zrrr__/status/2082906868054360454) — 2026-07-31: Research thread on distilling the decision-making knowledge encoded in classic expert systems (solvers, planners, schedulers) into LLMs to make it general-purpose and explainable. Paper: arxiv.org/abs/2607.21856.
 
 - [elvis](https://x.com/omarsar0/status/2082602113558077599) — 2026-07-30: Summarizes new NVIDIA work (NOOA) proposing agents be built as plain Python objects — methods are actions, fields hold state, docstrings are prompts, type annotations are contracts; a '...' method body is completed at runtime by a validated LLM loop, putting the probabilistic/deterministic boundary in the source and making agents testable and refactorable.
 
@@ -3780,6 +3790,12 @@
 ## Full Chronological List
 
 ### Jul 2026
+
+- **2026-07-31** | [Ziran Yang](https://x.com/__zrrr__/status/2082906868054360454) | research, agent-design
+  Research thread on distilling the decision-making knowledge encoded in classic expert systems (solvers, planners, schedulers) into LLMs to make it general-purpose and explainable. Paper: arxiv.org/abs/2607.21856.
+
+- **2026-07-31** | [Viv](https://x.com/vtrivedy10/status/2082868751276413313) | skills-mcp, dev-practices, agent-design
+  LangChain released v2 of its eval-engineering skill (npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering). Adds multi-turn eval user simulation with instructions/examples, deeper environment-design guidance (simulating backends/databases, using prod traces), and iterative harness/verifier refinement keeping domain experts in the loop.
 
 - **2026-07-30** | [elvis](https://x.com/omarsar0/status/2082602113558077599) | agent-design, research
   Summarizes new NVIDIA work (NOOA) proposing agents be built as plain Python objects — methods are actions, fields hold state, docstrings are prompts, type annotations are contracts; a '...' method body is completed at runtime by a validated LLM loop, putting the probabilistic/deterministic boundary in the source and making agents testable and refactorable.

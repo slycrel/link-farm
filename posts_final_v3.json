@@ -1,5 +1,55 @@
 [
   {
+    "date": "2026-07-31",
+    "author": "Ziran Yang",
+    "handle": "@__zrrr__",
+    "subject": "Post by Ziran Yang on X",
+    "url": "https://x.com/__zrrr__/status/2082906868054360454",
+    "summary": "Research thread on distilling the decision-making knowledge encoded in classic expert systems (solvers, planners, schedulers) into LLMs to make it general-purpose and explainable. Paper: arxiv.org/abs/2607.21856.",
+    "topics": [
+      "research",
+      "agent-design"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "634",
+    "notes": "",
+    "enriched": true,
+    "content": "We've been thinking can we distill the knowledge humans encoded in expert systems into LLMs, and make it general? Decades of human engineering live inside expert systems. Solvers, planners, schedulers: each one encodes real decision-making knowledge, but as a program that acts in a single domain and explains nothing. Paper: arxiv.org/abs/2607.21856",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-07-31",
+    "author": "Viv",
+    "handle": "@vtrivedy10",
+    "subject": "Post by Viv on X",
+    "url": "https://x.com/vtrivedy10/status/2082868751276413313",
+    "summary": "LangChain released v2 of its eval-engineering skill (npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering). Adds multi-turn eval user simulation with instructions/examples, deeper environment-design guidance (simulating backends/databases, using prod traces), and iterative harness/verifier refinement keeping domain experts in the loop.",
+    "topics": [
+      "skills-mcp",
+      "dev-practices",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "33.8K",
+    "notes": "",
+    "enriched": true,
+    "content": "New version of the eval-engineering skill released, thanks for everyone's feedback on the first version. npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering. Updates: now supports simulating users in multi-turn evals with instructions + examples; more guidance on good Environment Design, examples on simulating backends/databases + how to use traces to make sure the env reflects prod; more instructions on iteratively refining the harness, environment, and verifier with the user.\n\nLangChain skills repo",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-07-30",
     "author": "elvis",
     "handle": "@omarsar0",
