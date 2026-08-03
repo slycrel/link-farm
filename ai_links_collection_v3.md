@@ -6,45 +6,45 @@
 ---
 ## Morning view
 
-*Generated 2026-07-31T15:18:35Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-03T15:02:24Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-31** — [Viv](https://x.com/vtrivedy10/status/2082868751276413313) — *now • Skills & MCP • 33.8K views • v1 enriched*  
   LangChain released v2 of its eval-engineering skill (npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering). Adds multi-turn eval user simulation with instructions/examples, deeper environment-design guidance (simulating backends/databases, using prod traces), and iterative harness/verifier refinement keeping domain experts in the loop.
 - **2026-07-30** — [Tibo](https://x.com/thsottiaux/status/2082241164850364555) — *now • Dev Practices • v1 enriched*  
   Announces a new open-source CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities in code — scan repositories, review changes, track findings over time, and run security checks in CI.
-- **2026-07-25** — [Letta](https://x.com/letta_ai/status/2080535211473850822) — *now • Agent Design • 202K views • v1 enriched*  
-  Letta released Trajectory, an open-source package that normalizes coding-agent sessions from Claude Code, OpenAI Codex, LangChain deepagents, Letta Code, and other harnesses into one token-efficient standard format — enabling agents to learn from past experience across harnesses and users.
 - **2026-07-30** — [elvis](https://x.com/omarsar0/status/2082602113558077599) — *near-term • Agent Design • v1 enriched*  
   Summarizes new NVIDIA work (NOOA) proposing agents be built as plain Python objects — methods are actions, fields hold state, docstrings are prompts, type annotations are contracts; a '...' method body is completed at runtime by a validated LLM loop, putting the probabilistic/deterministic boundary in the source and making agents testable and refactorable.
 - **2026-07-30** — [Yarchi](https://x.com/undefinedki/status/2082583659672936787) — *near-term • Dev Practices • v1 enriched*  
   Recounts how Jarred Sumner rewrote Bun from ~500K lines of Zig to ~1M lines of Rust in 11 days by building a self-correcting AI workflow: he wrote the rules first (3 hours, no code), tested on 3 of 1,448 files, refined the rules and deleted them, and used the folder itself as the to-do list (anything without a finished version is still to do).
+- **2026-07-30** — [Alvaro Cintas](https://x.com/dr_cintas/status/2082581306341224661) — *near-term • Agent Design • v1 enriched*  
+  Highlights Agent-Reach (github.com/Panniantong/Agent-Reach), an open-source tool that lets an AI agent browse the internet without paying for APIs.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **loop engineering** (121 posts, +13 this week)  
-  Feedback loops and self-running agent loops: loop design patterns, loop libraries, nested build loops, self-improving / meta-learning loops.
-    - 2026-07-30 — [elvis](https://x.com/omarsar0/status/2082602113558077599): Summarizes new NVIDIA work (NOOA) proposing agents be built as plain Python objects — methods are actions, fields hold state, docstrings are…
-    - 2026-07-30 — [Anatoli Kopadze](https://x.com/anatolikopadze/status/2082529611943219563): Promotes a 25-minute talk plus guide on 'graph engineering' for agents — wiring agents into a graph where each has a job, they run in parall…
-
-- **Claude skills craft** (122 posts, +12 this week)  
+- **Claude skills craft** (123 posts, +10 this week)  
   Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.
     - 2026-07-31 — [Ziran Yang](https://x.com/__zrrr__/status/2082906868054360454): Research thread on distilling the decision-making knowledge encoded in classic expert systems (solvers, planners, schedulers) into LLMs to m…
     - 2026-07-30 — [Yarchi](https://x.com/undefinedki/status/2082583659672936787): Recounts how Jarred Sumner rewrote Bun from ~500K lines of Zig to ~1M lines of Rust in 11 days by building a self-correcting AI workflow: he…
 
-- **agent harness engineering** (85 posts, +11 this week)  
+- **loop engineering** (121 posts, +10 this week)  
+  Feedback loops and self-running agent loops: loop design patterns, loop libraries, nested build loops, self-improving / meta-learning loops.
+    - 2026-07-30 — [elvis](https://x.com/omarsar0/status/2082602113558077599): Summarizes new NVIDIA work (NOOA) proposing agents be built as plain Python objects — methods are actions, fields hold state, docstrings are…
+    - 2026-07-30 — [Anatoli Kopadze](https://x.com/anatolikopadze/status/2082529611943219563): Promotes a 25-minute talk plus guide on 'graph engineering' for agents — wiring agents into a graph where each has a job, they run in parall…
+
+- **agent harness engineering** (85 posts, +10 this week)  
   Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
     - 2026-07-30 — [Anatoli Kopadze](https://x.com/anatolikopadze/status/2082529611943219563): Promotes a 25-minute talk plus guide on 'graph engineering' for agents — wiring agents into a graph where each has a job, they run in parall…
     - 2026-07-29 — [Xudong Han](https://x.com/xudong07452910/status/2082028299275149685): Recommends the article 'Why Software Factories Fail' — its author ran a fully automated software factory and found agents can quickly produc…
 
-- **Claude Code setup & usage** (130 posts, +7 this week)  
-  Claude Code setup guides, cheatsheets, starter packs, and day-to-day usage / steering practices.
-    - 2026-07-30 — [Yarchi](https://x.com/undefinedki/status/2082583659672936787): Recounts how Jarred Sumner rewrote Bun from ~500K lines of Zig to ~1M lines of Rust in 11 days by building a self-correcting AI workflow: he…
-    - 2026-07-29 — [Xudong Han](https://x.com/xudong07452910/status/2082028299275149685): Recommends the article 'Why Software Factories Fail' — its author ran a fully automated software factory and found agents can quickly produc…
+- **vibecode-to-production via agent skills** (16 posts, +8 this week)  
+  Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
+    - 2026-07-30 — [elvis](https://x.com/omarsar0/status/2082602113558077599): Summarizes new NVIDIA work (NOOA) proposing agents be built as plain Python objects — methods are actions, fields hold state, docstrings are…
+    - 2026-07-29 — [Alex Veremeyenko](https://x.com/alex_verem/status/2082018678724575550): Restates Andrew Ng's finding that an older model in an agentic workflow beats a newer model answering once — gpt-3.5 zero-shot 48.1%, gpt-4 …
 
-- **managing agent teams** (107 posts, +7 this week)  
-  Running and managing fleets of agents: multi-agent teams, agent orchestration for teams, onboarding/managing agents, org adoption of coding agents.
+- **agentic code review at production scale** (19 posts, +7 this week)  
+  Deterministic engineering handles what must never fail; LLM only does context reading and reasoning. Alibaba open-code-review.
     - 2026-07-29 — [Xudong Han](https://x.com/xudong07452910/status/2082028299275149685): Recommends the article 'Why Software Factories Fail' — its author ran a fully automated software factory and found agents can quickly produc…
     - 2026-07-29 — [Alex Veremeyenko](https://x.com/alex_verem/status/2082018678724575550): Restates Andrew Ng's finding that an older model in an agentic workflow beats a newer model answering once — gpt-3.5 zero-shot 48.1%, gpt-4 …
 
