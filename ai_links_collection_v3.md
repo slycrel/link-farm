@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-08-03T15:02:24Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-04T15:16:37Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-31** — [Viv](https://x.com/vtrivedy10/status/2082868751276413313) — *now • Skills & MCP • 33.8K views • v1 enriched*  
@@ -23,27 +23,27 @@
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **Claude skills craft** (123 posts, +10 this week)  
+- **Claude skills craft** (124 posts, +9 this week)  
   Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.
     - 2026-07-31 — [Ziran Yang](https://x.com/__zrrr__/status/2082906868054360454): Research thread on distilling the decision-making knowledge encoded in classic expert systems (solvers, planners, schedulers) into LLMs to m…
     - 2026-07-30 — [Yarchi](https://x.com/undefinedki/status/2082583659672936787): Recounts how Jarred Sumner rewrote Bun from ~500K lines of Zig to ~1M lines of Rust in 11 days by building a self-correcting AI workflow: he…
 
-- **loop engineering** (121 posts, +10 this week)  
+- **loop engineering** (121 posts, +9 this week)  
   Feedback loops and self-running agent loops: loop design patterns, loop libraries, nested build loops, self-improving / meta-learning loops.
     - 2026-07-30 — [elvis](https://x.com/omarsar0/status/2082602113558077599): Summarizes new NVIDIA work (NOOA) proposing agents be built as plain Python objects — methods are actions, fields hold state, docstrings are…
     - 2026-07-30 — [Anatoli Kopadze](https://x.com/anatolikopadze/status/2082529611943219563): Promotes a 25-minute talk plus guide on 'graph engineering' for agents — wiring agents into a graph where each has a job, they run in parall…
 
-- **agent harness engineering** (85 posts, +10 this week)  
+- **agent harness engineering** (85 posts, +8 this week)  
   Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
     - 2026-07-30 — [Anatoli Kopadze](https://x.com/anatolikopadze/status/2082529611943219563): Promotes a 25-minute talk plus guide on 'graph engineering' for agents — wiring agents into a graph where each has a job, they run in parall…
     - 2026-07-29 — [Xudong Han](https://x.com/xudong07452910/status/2082028299275149685): Recommends the article 'Why Software Factories Fail' — its author ran a fully automated software factory and found agents can quickly produc…
 
-- **vibecode-to-production via agent skills** (16 posts, +8 this week)  
+- **vibecode-to-production via agent skills** (16 posts, +7 this week)  
   Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
     - 2026-07-30 — [elvis](https://x.com/omarsar0/status/2082602113558077599): Summarizes new NVIDIA work (NOOA) proposing agents be built as plain Python objects — methods are actions, fields hold state, docstrings are…
     - 2026-07-29 — [Alex Veremeyenko](https://x.com/alex_verem/status/2082018678724575550): Restates Andrew Ng's finding that an older model in an agentic workflow beats a newer model answering once — gpt-3.5 zero-shot 48.1%, gpt-4 …
 
-- **agentic code review at production scale** (19 posts, +7 this week)  
+- **agentic code review at production scale** (20 posts, +6 this week)  
   Deterministic engineering handles what must never fail; LLM only does context reading and reasoning. Alibaba open-code-review.
     - 2026-07-29 — [Xudong Han](https://x.com/xudong07452910/status/2082028299275149685): Recommends the article 'Why Software Factories Fail' — its author ran a fully automated software factory and found agents can quickly produc…
     - 2026-07-29 — [Alex Veremeyenko](https://x.com/alex_verem/status/2082018678724575550): Restates Andrew Ng's finding that an older model in an agentic workflow beats a newer model answering once — gpt-3.5 zero-shot 48.1%, gpt-4 …
