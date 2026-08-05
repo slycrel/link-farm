@@ -54,6 +54,33 @@
   },
   {
     "date": "2026-08-05",
+    "author": "rvaniaaa",
+    "handle": "@rvaniaaaa",
+    "subject": "Post by rvaniaaa on X",
+    "url": "https://x.com/rvaniaaaa/status/2084589218043462126",
+    "summary": "Outlines an 8-agent pipeline for an AI agent that autonomously discovers and packages new skills, with humans only approving the final pull request. The agents split one job each — scout (find repos), filter (drop noise), reader (build context from docs not code), extractor (pull the reusable workflow), score (validate against objective criteria), generator (package into a skill with examples/commands/tests), reviewer (would an engineer install it unedited?), and publisher (open the PR). The pitch: automation proposes and humans approve, removing the manual find/read/install bottleneck so skill quality compounds. Framing is somewhat hype-driven but the architecture is concrete; full write-up in the linked article 'How to Build an AI That Never Stops Learning.'",
+    "topics": [
+      "agent-design",
+      "skills-mcp",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "manually added 2026-08-05 (missed email/discovery process)",
+    "enriched": true,
+    "content": "Describes an 8-agent pipeline that lets an AI agent discover and adopt new skills on its own, with humans only at final approval. Each agent has one job: scout finds new repositories; filter removes noise before any model touches it; reader builds context from docs (intent) not source (implementation); extractor pulls the reusable workflow; score validates it against objective criteria (fails die here); generator packages it into a complete skill with examples, commands, and tests; reviewer asks whether an experienced engineer would install it unedited; publisher opens the pull request. Automation proposes, humans approve, nothing merges automatically — removing the manual find/read/install bottleneck so improvements compound.\n\nArticle: How to Build an AI That Never Stops Learning",
+    "source": "manual",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-05",
     "author": "Shubham Mishra",
     "handle": "@shubh6200",
     "subject": "Post by Shubham Mishra 🐐 on X",

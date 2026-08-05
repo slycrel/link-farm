@@ -1,12 +1,12 @@
 # AI Links Collection
-**Total Posts**: 752  
+**Total Posts**: 753  
 **Date Range**: 2024-06-11 – 2026-08-05  
-**Enriched**: 751/752 (99%)
+**Enriched**: 752/753 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-08-05T17:28:38Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-05T17:44:07Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-08-05** — [Viv](https://x.com/Vtrivedy10/status/2084693873599594570) — *now • Skills & MCP • v1 enriched*  
@@ -17,36 +17,36 @@
   Announces a new open-source CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities in code — scan repositories, review changes, track findings over time, and run security checks in CI.
 - **2026-08-05** — [beamnxw](https://x.com/beamnxw/status/2084669307212951788) — *near-term • Research • v1 enriched*  
   Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodic/consolidation buffers that curate an agent's working memory, reporting a 58.6% memory reuse rate and 18% net efficiency gain while addressing context-window degradation without larger token limits. Companion article: 'Context vs. Memory Engineering in Agentic AI Systems.'
-- **2026-08-05** — [Yarchi](https://x.com/undefinedki/status/2084279627204235703) — *near-term • Dev Practices • v1 enriched*  
-  Breaks down Airbnb's internal LLM eval process: three layers (programmatic checks, an LLM judge, humans only to calibrate the judge), golden sets of 50-100 examples that must include failures, judge-human agreement in the high 80s/90s measured with Cohen's kappa, and 5% of live traffic sampled daily. Notably ~75% of their LLM-generated reference answers differed on every labeling run (measuring their own noise); they cut a full eval cycle from weeks to a day via output caching and tiny LoRA adapters.
+- **2026-08-05** — [rvaniaaa](https://x.com/rvaniaaaa/status/2084589218043462126) — *near-term • Agent Design • v1 enriched*  
+  Outlines an 8-agent pipeline for an AI agent that autonomously discovers and packages new skills, with humans only approving the final pull request. The agents split one job each — scout (find repos), filter (drop noise), reader (build context from docs not code), extractor (pull the reusable workflow), score (validate against objective criteria), generator (package into a skill with examples/commands/tests), reviewer (would an engineer install it unedited?), and publisher (open the PR). The pitch: automation proposes and humans approve, removing the manual find/read/install bottleneck so skill quality compounds. Framing is somewhat hype-driven but the architecture is concrete; full write-up in the linked article 'How to Build an AI That Never Stops Learning.'
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **Claude skills craft** (129 posts, +12 this week)  
+- **Claude skills craft** (130 posts, +13 this week)  
   Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.
     - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
     - 2026-08-05 — [Viv](https://x.com/Vtrivedy10/status/2084693873599594570): Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedba…
 
-- **loop engineering** (124 posts, +12 this week)  
+- **loop engineering** (125 posts, +13 this week)  
   Feedback loops and self-running agent loops: loop design patterns, loop libraries, nested build loops, self-improving / meta-learning loops.
     - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
     - 2026-08-05 — [Viv](https://x.com/Vtrivedy10/status/2084693873599594570): Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedba…
 
-- **agent harness engineering** (88 posts, +11 this week)  
-  Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
-    - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
-    - 2026-08-05 — [Viv](https://x.com/Vtrivedy10/status/2084693873599594570): Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedba…
-
-- **vibecode-to-production via agent skills** (24 posts, +10 this week)  
+- **vibecode-to-production via agent skills** (29 posts, +13 this week)  
   Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
     - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
     - 2026-08-05 — [Viv](https://x.com/Vtrivedy10/status/2084693873599594570): Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedba…
 
-- **Claude Code setup & usage** (133 posts, +8 this week)  
+- **agent harness engineering** (89 posts, +12 this week)  
+  Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
+    - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
+    - 2026-08-05 — [Viv](https://x.com/Vtrivedy10/status/2084693873599594570): Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedba…
+
+- **Claude Code setup & usage** (134 posts, +9 this week)  
   Claude Code setup guides, cheatsheets, starter packs, and day-to-day usage / steering practices.
     - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
-    - 2026-08-04 — [Pi](https://x.com/pidotdev/status/2084602909346386111): Earendil blog post (earendil.com/posts/pi-autoresearch-and-databricks) arguing that Pi — a deliberately minimal coding-agent harness with on…
+    - 2026-08-05 — [rvaniaaa](https://x.com/rvaniaaaa/status/2084589218043462126): Outlines an 8-agent pipeline for an AI agent that autonomously discovers and packages new skills, with humans only approving the final pull …
 
 
 ### Revisit from last month
@@ -59,16 +59,16 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 429 | 57.0% |
+| agent-design | 430 | 57.1% |
 | claude-code | 179 | 23.8% |
 | dev-practices | 319 | 42.4% |
-| skills-mcp | 174 | 23.1% |
-| prompting | 114 | 15.2% |
+| skills-mcp | 175 | 23.2% |
+| prompting | 114 | 15.1% |
 | research | 186 | 24.7% |
 | industry | 106 | 14.1% |
 | management | 118 | 15.7% |
-| questionable | 105 | 14.0% |
-| general | 102 | 13.6% |
+| questionable | 106 | 14.1% |
+| general | 102 | 13.5% |
 
 ---
 ## Quick Reference (50 Most Recent)
@@ -76,6 +76,7 @@
 |------|--------|-------|--------|
 | 2026-08-05 | Viv | skills-mcp | Introduces the 'eval-engineering' skill (from LangChain's langchain-sk... |
 | 2026-08-05 | beamnxw | research | Highlights a paper proposing a 'Cognitive Workspace' that replaces pas... |
+| 2026-08-05 | rvaniaaa | agent-design | Outlines an 8-agent pipeline for an AI agent that autonomously discove... |
 | 2026-08-05 | Shubham Mishra | research | Argues the path to genuine scientific discovery in AI isn't scaling te... |
 | 2026-08-05 | Yarchi | dev-practices | Breaks down Airbnb's internal LLM eval process: three layers (programm... |
 | 2026-08-04 | Pi | agent-design | Earendil blog post (earendil.com/posts/pi-autoresearch-and-databricks)... |
@@ -123,16 +124,17 @@
 | 2026-07-17 | ClaudeDevs | claude-code | Announces that Claude Code artifacts can now call MCP connectors, lett... |
 | 2026-07-17 | h100envy | agent-design | Walks through building a 'swarm of agents' for multi-angle analysis: s... |
 | 2026-07-17 | argofowl | prompting | Introduces namethatui.com — a dictionary for UI elements you can see b... |
-| 2026-07-16 | Aaron Levie | management | Aaron Levie's notes from a dinner with enterprise IT leaders on agent... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (429)
+### Agent Design (430)
 
 - [Viv](https://x.com/Vtrivedy10/status/2084693873599594570) — 2026-08-05: Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedback. The premise: agents are poor one-shot environment generators because they're misaligned with human goals, so you infuse feedback by aligning on three files — Harness.md, Environment.md, Task.md. Install via `npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering`, point it at your repo + traces, and it maps the agent surface and proposes eval directions from real production data.
 
 - [beamnxw](https://x.com/beamnxw/status/2084669307212951788) — 2026-08-05: Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodic/consolidation buffers that curate an agent's working memory, reporting a 58.6% memory reuse rate and 18% net efficiency gain while addressing context-window degradation without larger token limits. Companion article: 'Context vs. Memory Engineering in Agentic AI Systems.'
+
+- [rvaniaaa](https://x.com/rvaniaaaa/status/2084589218043462126) — 2026-08-05: Outlines an 8-agent pipeline for an AI agent that autonomously discovers and packages new skills, with humans only approving the final pull request. The agents split one job each — scout (find repos), filter (drop noise), reader (build context from docs not code), extractor (pull the reusable workflow), score (validate against objective criteria), generator (package into a skill with examples/commands/tests), reviewer (would an engineer install it unedited?), and publisher (open the PR). The pitch: automation proposes and humans approve, removing the manual find/read/install bottleneck so skill quality compounds. Framing is somewhat hype-driven but the architecture is concrete; full write-up in the linked article 'How to Build an AI That Never Stops Learning.'
 
 - [Shubham Mishra](https://x.com/shubh6200/status/2084470616976187833) — 2026-08-05: Argues the path to genuine scientific discovery in AI isn't scaling text tokens but shifting to Joint Embedding Predictive Architectures (JEPA) and world models, which represent the world as a continuous, causal system rather than a token sequence — sidestepping the wasted compute of predicting every word or pixel. References the I-JEPA paper (arxiv.org/abs/2301.08243) and VL-JEPA.
 
@@ -1988,9 +1990,11 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Skills & MCP (174)
+### Skills & MCP (175)
 
 - [Viv](https://x.com/Vtrivedy10/status/2084693873599594570) — 2026-08-05: Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedback. The premise: agents are poor one-shot environment generators because they're misaligned with human goals, so you infuse feedback by aligning on three files — Harness.md, Environment.md, Task.md. Install via `npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering`, point it at your repo + traces, and it maps the agent surface and proposes eval directions from real production data.
+
+- [rvaniaaa](https://x.com/rvaniaaaa/status/2084589218043462126) — 2026-08-05: Outlines an 8-agent pipeline for an AI agent that autonomously discovers and packages new skills, with humans only approving the final pull request. The agents split one job each — scout (find repos), filter (drop noise), reader (build context from docs not code), extractor (pull the reusable workflow), score (validate against objective criteria), generator (package into a skill with examples/commands/tests), reviewer (would an engineer install it unedited?), and publisher (open the PR). The pitch: automation proposes and humans approve, removing the manual find/read/install bottleneck so skill quality compounds. Framing is somewhat hype-driven but the architecture is concrete; full write-up in the linked article 'How to Build an AI That Never Stops Learning.'
 
 - [Viv](https://x.com/vtrivedy10/status/2082868751276413313) — 2026-07-31: LangChain released v2 of its eval-engineering skill (npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering). Adds multi-turn eval user simulation with instructions/examples, deeper environment-design guidance (simulating backends/databases, using prod traces), and iterative harness/verifier refinement keeping domain experts in the loop.
 
@@ -3394,7 +3398,9 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Points to a superengineer.net blog post as a good summary of Elon Musk's 5-step design/engineering method (DFX).
 
-### Questionable (105)
+### Questionable (106)
+
+- [rvaniaaa](https://x.com/rvaniaaaa/status/2084589218043462126) — 2026-08-05: Outlines an 8-agent pipeline for an AI agent that autonomously discovers and packages new skills, with humans only approving the final pull request. The agents split one job each — scout (find repos), filter (drop noise), reader (build context from docs not code), extractor (pull the reusable workflow), score (validate against objective criteria), generator (package into a skill with examples/commands/tests), reviewer (would an engineer install it unedited?), and publisher (open the PR). The pitch: automation proposes and humans approve, removing the manual find/read/install bottleneck so skill quality compounds. Framing is somewhat hype-driven but the architecture is concrete; full write-up in the linked article 'How to Build an AI That Never Stops Learning.'
 
 - [Miles Deutscher](https://x.com/milesdeutscher/status/2080716896002076884) — 2026-07-25: Miles Deutscher summarizes Jensen Huang's viral first X post — an open letter (signed by NVIDIA, YC, Meta, Microsoft, Palantir, a16z and others) arguing open-weight models are the future. Core thesis: just as open-source software built the internet's foundation, open weights let startups, hospitals, universities and small businesses build on advanced models without frontier prices, keep competition and gains distributed, and let organizations own their data and customizations. (Hype-framed but substantive.)
 
@@ -3824,6 +3830,9 @@
 
 - **2026-08-05** | [beamnxw](https://x.com/beamnxw/status/2084669307212951788) | research, agent-design
   Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodic/consolidation buffers that curate an agent's working memory, reporting a 58.6% memory reuse rate and 18% net efficiency gain while addressing context-window degradation without larger token limits. Companion article: 'Context vs. Memory Engineering in Agentic AI Systems.'
+
+- **2026-08-05** | [rvaniaaa](https://x.com/rvaniaaaa/status/2084589218043462126) | agent-design, skills-mcp, questionable
+  Outlines an 8-agent pipeline for an AI agent that autonomously discovers and packages new skills, with humans only approving the final pull request. The agents split one job each — scout (find repos), filter (drop noise), reader (build context from docs not code), extractor (pull the reusable workflow), score (validate against objective criteria), generator (package into a skill with examples/commands/tests), reviewer (would an engineer install it unedited?), and publisher (open the PR). The pitch: automation proposes and humans approve, removing the manual find/read/install bottleneck so skill quality compounds. Framing is somewhat hype-driven but the architecture is concrete; full write-up in the linked article 'How to Build an AI That Never Stops Learning.'
 
 - **2026-08-05** | [Shubham Mishra](https://x.com/shubh6200/status/2084470616976187833) | research, agent-design
   Argues the path to genuine scientific discovery in AI isn't scaling text tokens but shifting to Joint Embedding Predictive Architectures (JEPA) and world models, which represent the world as a continuous, causal system rather than a token sequence — sidestepping the wasted compute of predicting every word or pixel. References the I-JEPA paper (arxiv.org/abs/2301.08243) and VL-JEPA.
