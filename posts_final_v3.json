@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-08-04",
+    "author": "Pi",
+    "handle": "@pidotdev",
+    "subject": "Post by pidotdev on X",
+    "url": "https://x.com/pidotdev/status/2084602909346386111",
+    "summary": "Earendil blog post (earendil.com/posts/pi-autoresearch-and-databricks) arguing that Pi — a deliberately minimal coding-agent harness with only 4 tools and a sub-1,000-token system prompt — beats heavier harnesses on both cost and quality. Cites a Databricks benchmark on their multi-million-line codebase where Pi + Opus 4.8 (xhigh) had the highest pass-rate at lower cost than Claude Code and Codex, sending ~3x less context per turn (\"context discipline\"), plus Shopify's pi-autoresearch extension (a self-improving optimization loop) yielding large speedups. Frames minimal, extensible harnesses as the winning design as frontier models get better at terminal environments.",
+    "topics": [
+      "agent-design",
+      "claude-code",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "96.4K",
+    "notes": "",
+    "enriched": true,
+    "content": "Read the full blog post here — \"Pi, Minimal and Performant\"\n\nPi, Minimal and Performant | EARENDIL",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-07-31",
     "author": "Ziran Yang",
     "handle": "@__zrrr__",

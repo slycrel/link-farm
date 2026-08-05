@@ -1,52 +1,52 @@
 # AI Links Collection
-**Total Posts**: 747  
-**Date Range**: 2024-06-11 – 2026-07-31  
-**Enriched**: 746/747 (99%)
+**Total Posts**: 748  
+**Date Range**: 2024-06-11 – 2026-08-04  
+**Enriched**: 747/748 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-08-04T15:16:37Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-05T00:27:55Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-07-31** — [Viv](https://x.com/vtrivedy10/status/2082868751276413313) — *now • Skills & MCP • 33.8K views • v1 enriched*  
   LangChain released v2 of its eval-engineering skill (npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering). Adds multi-turn eval user simulation with instructions/examples, deeper environment-design guidance (simulating backends/databases, using prod traces), and iterative harness/verifier refinement keeping domain experts in the loop.
 - **2026-07-30** — [Tibo](https://x.com/thsottiaux/status/2082241164850364555) — *now • Dev Practices • v1 enriched*  
   Announces a new open-source CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities in code — scan repositories, review changes, track findings over time, and run security checks in CI.
+- **2026-08-04** — [Pi](https://x.com/pidotdev/status/2084602909346386111) — *near-term • Agent Design • 96.4K views • v1 enriched*  
+  Earendil blog post (earendil.com/posts/pi-autoresearch-and-databricks) arguing that Pi — a deliberately minimal coding-agent harness with only 4 tools and a sub-1,000-token system prompt — beats heavier harnesses on both cost and quality. Cites a Databricks benchmark on their multi-million-line codebase where Pi + Opus 4.8 (xhigh) had the highest pass-rate at lower cost than Claude Code and Codex, sending ~3x less context per turn ("context discipline"), plus Shopify's pi-autoresearch extension (a self-improving optimization loop) yielding large speedups. Frames minimal, extensible harnesses as the winning design as frontier models get better at terminal environments.
 - **2026-07-30** — [elvis](https://x.com/omarsar0/status/2082602113558077599) — *near-term • Agent Design • v1 enriched*  
   Summarizes new NVIDIA work (NOOA) proposing agents be built as plain Python objects — methods are actions, fields hold state, docstrings are prompts, type annotations are contracts; a '...' method body is completed at runtime by a validated LLM loop, putting the probabilistic/deterministic boundary in the source and making agents testable and refactorable.
 - **2026-07-30** — [Yarchi](https://x.com/undefinedki/status/2082583659672936787) — *near-term • Dev Practices • v1 enriched*  
   Recounts how Jarred Sumner rewrote Bun from ~500K lines of Zig to ~1M lines of Rust in 11 days by building a self-correcting AI workflow: he wrote the rules first (3 hours, no code), tested on 3 of 1,448 files, refined the rules and deleted them, and used the folder itself as the to-do list (anything without a finished version is still to do).
-- **2026-07-30** — [Alvaro Cintas](https://x.com/dr_cintas/status/2082581306341224661) — *near-term • Agent Design • v1 enriched*  
-  Highlights Agent-Reach (github.com/Panniantong/Agent-Reach), an open-source tool that lets an AI agent browse the internet without paying for APIs.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **Claude skills craft** (124 posts, +9 this week)  
+- **Claude skills craft** (127 posts, +10 this week)  
   Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.
+    - 2026-08-04 — [Pi](https://x.com/pidotdev/status/2084602909346386111): Earendil blog post (earendil.com/posts/pi-autoresearch-and-databricks) arguing that Pi — a deliberately minimal coding-agent harness with on…
     - 2026-07-31 — [Ziran Yang](https://x.com/__zrrr__/status/2082906868054360454): Research thread on distilling the decision-making knowledge encoded in classic expert systems (solvers, planners, schedulers) into LLMs to m…
-    - 2026-07-30 — [Yarchi](https://x.com/undefinedki/status/2082583659672936787): Recounts how Jarred Sumner rewrote Bun from ~500K lines of Zig to ~1M lines of Rust in 11 days by building a self-correcting AI workflow: he…
 
-- **loop engineering** (121 posts, +9 this week)  
+- **loop engineering** (122 posts, +10 this week)  
   Feedback loops and self-running agent loops: loop design patterns, loop libraries, nested build loops, self-improving / meta-learning loops.
+    - 2026-08-04 — [Pi](https://x.com/pidotdev/status/2084602909346386111): Earendil blog post (earendil.com/posts/pi-autoresearch-and-databricks) arguing that Pi — a deliberately minimal coding-agent harness with on…
     - 2026-07-30 — [elvis](https://x.com/omarsar0/status/2082602113558077599): Summarizes new NVIDIA work (NOOA) proposing agents be built as plain Python objects — methods are actions, fields hold state, docstrings are…
-    - 2026-07-30 — [Anatoli Kopadze](https://x.com/anatolikopadze/status/2082529611943219563): Promotes a 25-minute talk plus guide on 'graph engineering' for agents — wiring agents into a graph where each has a job, they run in parall…
 
-- **agent harness engineering** (85 posts, +8 this week)  
+- **agent harness engineering** (86 posts, +9 this week)  
   Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
+    - 2026-08-04 — [Pi](https://x.com/pidotdev/status/2084602909346386111): Earendil blog post (earendil.com/posts/pi-autoresearch-and-databricks) arguing that Pi — a deliberately minimal coding-agent harness with on…
     - 2026-07-30 — [Anatoli Kopadze](https://x.com/anatolikopadze/status/2082529611943219563): Promotes a 25-minute talk plus guide on 'graph engineering' for agents — wiring agents into a graph where each has a job, they run in parall…
-    - 2026-07-29 — [Xudong Han](https://x.com/xudong07452910/status/2082028299275149685): Recommends the article 'Why Software Factories Fail' — its author ran a fully automated software factory and found agents can quickly produc…
 
-- **vibecode-to-production via agent skills** (16 posts, +7 this week)  
+- **vibecode-to-production via agent skills** (17 posts, +8 this week)  
   Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
+    - 2026-08-04 — [Pi](https://x.com/pidotdev/status/2084602909346386111): Earendil blog post (earendil.com/posts/pi-autoresearch-and-databricks) arguing that Pi — a deliberately minimal coding-agent harness with on…
     - 2026-07-30 — [elvis](https://x.com/omarsar0/status/2082602113558077599): Summarizes new NVIDIA work (NOOA) proposing agents be built as plain Python objects — methods are actions, fields hold state, docstrings are…
-    - 2026-07-29 — [Alex Veremeyenko](https://x.com/alex_verem/status/2082018678724575550): Restates Andrew Ng's finding that an older model in an agentic workflow beats a newer model answering once — gpt-3.5 zero-shot 48.1%, gpt-4 …
 
-- **agentic code review at production scale** (20 posts, +6 this week)  
+- **agentic code review at production scale** (21 posts, +7 this week)  
   Deterministic engineering handles what must never fail; LLM only does context reading and reasoning. Alibaba open-code-review.
+    - 2026-08-04 — [Pi](https://x.com/pidotdev/status/2084602909346386111): Earendil blog post (earendil.com/posts/pi-autoresearch-and-databricks) arguing that Pi — a deliberately minimal coding-agent harness with on…
     - 2026-07-29 — [Xudong Han](https://x.com/xudong07452910/status/2082028299275149685): Recommends the article 'Why Software Factories Fail' — its author ran a fully automated software factory and found agents can quickly produc…
-    - 2026-07-29 — [Alex Veremeyenko](https://x.com/alex_verem/status/2082018678724575550): Restates Andrew Ng's finding that an older model in an agentic workflow beats a newer model answering once — gpt-3.5 zero-shot 48.1%, gpt-4 …
 
 
 ### Revisit from last month
@@ -59,21 +59,22 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 424 | 56.8% |
-| claude-code | 178 | 23.8% |
+| agent-design | 425 | 56.8% |
+| claude-code | 179 | 23.9% |
 | dev-practices | 317 | 42.4% |
-| skills-mcp | 173 | 23.2% |
-| prompting | 114 | 15.3% |
-| research | 181 | 24.2% |
+| skills-mcp | 173 | 23.1% |
+| prompting | 114 | 15.2% |
+| research | 182 | 24.3% |
 | industry | 106 | 14.2% |
 | management | 118 | 15.8% |
-| questionable | 105 | 14.1% |
-| general | 102 | 13.7% |
+| questionable | 105 | 14.0% |
+| general | 102 | 13.6% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-08-04 | Pi | agent-design | Earendil blog post (earendil.com/posts/pi-autoresearch-and-databricks)... |
 | 2026-07-31 | Ziran Yang | research | Research thread on distilling the decision-making knowledge encoded in... |
 | 2026-07-31 | Viv | skills-mcp | LangChain released v2 of its eval-engineering skill (npx skills add gi... |
 | 2026-07-30 | elvis | agent-design | Summarizes new NVIDIA work (NOOA) proposing agents be built as plain P... |
@@ -123,12 +124,13 @@
 | 2026-07-16 | Superman | research | turbovec (github.com/RyanCodrai/turbovec) is a vector index built on T... |
 | 2026-07-15 | Ashpreet Bedi | agent-design | Ashpreet Bedi (Agno) shares a new post, Self-Driving Agent Infrastruct... |
 | 2026-07-14 | Alvaro Videla | research | Alvaro Videla released LeetLLM (github.com/videlalvaro/leet-llm) — a f... |
-| 2026-07-14 | JoePro | skills-mcp | JoePro shares a reworked 'Frontend Design Skill' (an agent/Claude skil... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (424)
+### Agent Design (425)
+
+- [Pi](https://x.com/pidotdev/status/2084602909346386111) — 2026-08-04: Earendil blog post (earendil.com/posts/pi-autoresearch-and-databricks) arguing that Pi — a deliberately minimal coding-agent harness with only 4 tools and a sub-1,000-token system prompt — beats heavier harnesses on both cost and quality. Cites a Databricks benchmark on their multi-million-line codebase where Pi + Opus 4.8 (xhigh) had the highest pass-rate at lower cost than Claude Code and Codex, sending ~3x less context per turn ("context discipline"), plus Shopify's pi-autoresearch extension (a self-improving optimization loop) yielding large speedups. Frames minimal, extensible harnesses as the winning design as frontier models get better at terminal environments.
 
 - [Ziran Yang](https://x.com/__zrrr__/status/2082906868054360454) — 2026-07-31: Research thread on distilling the decision-making knowledge encoded in classic expert systems (solvers, planners, schedulers) into LLMs to make it general-purpose and explainable. Paper: arxiv.org/abs/2607.21856.
 
@@ -978,7 +980,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Claude Code (178)
+### Claude Code (179)
+
+- [Pi](https://x.com/pidotdev/status/2084602909346386111) — 2026-08-04: Earendil blog post (earendil.com/posts/pi-autoresearch-and-databricks) arguing that Pi — a deliberately minimal coding-agent harness with only 4 tools and a sub-1,000-token system prompt — beats heavier harnesses on both cost and quality. Cites a Databricks benchmark on their multi-million-line codebase where Pi + Opus 4.8 (xhigh) had the highest pass-rate at lower cost than Claude Code and Codex, sending ~3x less context per turn ("context discipline"), plus Shopify's pi-autoresearch extension (a self-improving optimization loop) yielding large speedups. Frames minimal, extensible harnesses as the winning design as frontier models get better at terminal environments.
 
 - [Yarchi](https://x.com/undefinedki/status/2082583659672936787) — 2026-07-30: Recounts how Jarred Sumner rewrote Bun from ~500K lines of Zig to ~1M lines of Rust in 11 days by building a self-correcting AI workflow: he wrote the rules first (3 hours, no code), tested on 3 of 1,448 files, refined the rules and deleted them, and used the folder itself as the to-do list (anything without a finished version is still to do).
 
@@ -2550,7 +2554,9 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-### Research (181)
+### Research (182)
+
+- [Pi](https://x.com/pidotdev/status/2084602909346386111) — 2026-08-04: Earendil blog post (earendil.com/posts/pi-autoresearch-and-databricks) arguing that Pi — a deliberately minimal coding-agent harness with only 4 tools and a sub-1,000-token system prompt — beats heavier harnesses on both cost and quality. Cites a Databricks benchmark on their multi-million-line codebase where Pi + Opus 4.8 (xhigh) had the highest pass-rate at lower cost than Claude Code and Codex, sending ~3x less context per turn ("context discipline"), plus Shopify's pi-autoresearch extension (a self-improving optimization loop) yielding large speedups. Frames minimal, extensible harnesses as the winning design as frontier models get better at terminal environments.
 
 - [Ziran Yang](https://x.com/__zrrr__/status/2082906868054360454) — 2026-07-31: Research thread on distilling the decision-making knowledge encoded in classic expert systems (solvers, planners, schedulers) into LLMs to make it general-purpose and explainable. Paper: arxiv.org/abs/2607.21856.
 
@@ -3788,6 +3794,11 @@
 
 ---
 ## Full Chronological List
+
+### Aug 2026
+
+- **2026-08-04** | [Pi](https://x.com/pidotdev/status/2084602909346386111) | agent-design, claude-code, research
+  Earendil blog post (earendil.com/posts/pi-autoresearch-and-databricks) arguing that Pi — a deliberately minimal coding-agent harness with only 4 tools and a sub-1,000-token system prompt — beats heavier harnesses on both cost and quality. Cites a Databricks benchmark on their multi-million-line codebase where Pi + Opus 4.8 (xhigh) had the highest pass-rate at lower cost than Claude Code and Codex, sending ~3x less context per turn ("context discipline"), plus Shopify's pi-autoresearch extension (a self-improving optimization loop) yielding large speedups. Frames minimal, extensible harnesses as the winning design as frontier models get better at terminal environments.
 
 ### Jul 2026
 
