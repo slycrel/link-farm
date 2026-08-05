@@ -1,5 +1,81 @@
 [
   {
+    "date": "2026-08-05",
+    "author": "beamnxw",
+    "handle": "@beamnxw",
+    "subject": "Post by beamnxw ./ on X",
+    "url": "https://x.com/beamnxw/status/2084669307212951788",
+    "summary": "Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodic/consolidation buffers that curate an agent's working memory, reporting a 58.6% memory reuse rate and 18% net efficiency gain while addressing context-window degradation without larger token limits. Companion article: 'Context vs. Memory Engineering in Agentic AI Systems.'",
+    "topics": [
+      "research",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "A CS paper replaces passive RAG with a 'Cognitive Workspace' for active LLM memory engineering. Hierarchical cognitive buffers and deliberate information curation achieve a 58.6% memory reuse rate and 18% net efficiency gain, solving context-window degradation without expanding token limits. Task buffers store active goal states, episodic buffers merge intermediate outputs, and consolidation layers compress long-term knowledge into structured graphs — turning agent context into an actively curated working-memory system rather than unorganized text chunks dumped into vector databases.\n\nArticle: Context vs. Memory Engineering in Agentic AI Systems",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-05",
+    "author": "Shubham Mishra",
+    "handle": "@shubh6200",
+    "subject": "Post by Shubham Mishra 🐐 on X",
+    "url": "https://x.com/shubh6200/status/2084470616976187833",
+    "summary": "Argues the path to genuine scientific discovery in AI isn't scaling text tokens but shifting to Joint Embedding Predictive Architectures (JEPA) and world models, which represent the world as a continuous, causal system rather than a token sequence — sidestepping the wasted compute of predicting every word or pixel. References the I-JEPA paper (arxiv.org/abs/2301.08243) and VL-JEPA.",
+    "topics": [
+      "research",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "If you read my earlier post on 'LLMs Can't Jump' (which argued LLMs lack the creative abductive leaps needed for breakthrough discoveries), this might change your mind. The missing piece isn't scaling to more text tokens — it's shifting to Joint Embedding Predictive Architectures (JEPA) and World Models. Standard language models treat the universe as a sequence of text tokens; world models treat it as a continuous system governed by physical laws and cause-and-effect.\n\nI-JEPA Paper\n\nVL-JEPA Paper (OpenReview)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-05",
+    "author": "Yarchi",
+    "handle": "@undefinedKi",
+    "subject": "Post by Yarchi on X",
+    "url": "https://x.com/undefinedki/status/2084279627204235703",
+    "summary": "Breaks down Airbnb's internal LLM eval process: three layers (programmatic checks, an LLM judge, humans only to calibrate the judge), golden sets of 50-100 examples that must include failures, judge-human agreement in the high 80s/90s measured with Cohen's kappa, and 5% of live traffic sampled daily. Notably ~75% of their LLM-generated reference answers differed on every labeling run (measuring their own noise); they cut a full eval cycle from weeks to a day via output caching and tiny LoRA adapters.",
+    "topics": [
+      "dev-practices",
+      "research",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Airbnb published how they run evals internally. Three layers: programmatic checks first, an LLM judge second, humans last and only to calibrate the judge. Golden sets of 50-100 examples that must include failures; judges calibrated to high-80s/90s agreement with a human, measured with Cohen's kappa; 5% of live traffic sampled daily. Roughly three quarters of their LLM-generated reference answers came out different on every labeling run — the eval was measuring its own noise. They cut a full cycle from weeks to a day, mostly by caching identical outputs and training tiny LoRA adapters.\n\nArticle: full breakdown of Airbnb's eval engineering",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-08-04",
     "author": "Pi",
     "handle": "@pidotdev",
