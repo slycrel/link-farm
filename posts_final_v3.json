@@ -1,6 +1,34 @@
 [
   {
     "date": "2026-08-05",
+    "author": "Viv",
+    "handle": "@vtrivedy10",
+    "subject": "Post by Viv on X",
+    "url": "https://x.com/Vtrivedy10/status/2084693873599594570",
+    "summary": "Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedback. The premise: agents are poor one-shot environment generators because they're misaligned with human goals, so you infuse feedback by aligning on three files — Harness.md, Environment.md, Task.md. Install via `npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering`, point it at your repo + traces, and it maps the agent surface and proposes eval directions from real production data.",
+    "topics": [
+      "skills-mcp",
+      "agent-design",
+      "dev-practices",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "manually added 2026-08-05 (missed email/discovery process)",
+    "enriched": true,
+    "content": "Synthetic Environment Generation with Human Feedback. Agents are poor 1-shot eval/environment generators because they're misaligned with human goals; good environments come from strategically infusing human feedback into the env/eval generation process. In the eval-engineering skill this is done by aligning on 3 files — Harness.md, Environment.md, Task.md. Flow: (1) install the skill (npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering); (2) point it at your repo + traces; (3) it maps the entire agent surface and proposes eval directions based on real production data; (4) it generates Harness/Environment/Task md files to align on what tools to use and how the org measures success.\n\nLangChain skills repo",
+    "source": "manual",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-05",
     "author": "beamnxw",
     "handle": "@beamnxw",
     "subject": "Post by beamnxw ./ on X",

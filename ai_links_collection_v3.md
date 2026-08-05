@@ -1,14 +1,16 @@
 # AI Links Collection
-**Total Posts**: 751  
+**Total Posts**: 752  
 **Date Range**: 2024-06-11 – 2026-08-05  
-**Enriched**: 750/751 (99%)
+**Enriched**: 751/752 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-08-05T15:04:49Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-05T17:28:38Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
+- **2026-08-05** — [Viv](https://x.com/Vtrivedy10/status/2084693873599594570) — *now • Skills & MCP • v1 enriched*  
+  Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedback. The premise: agents are poor one-shot environment generators because they're misaligned with human goals, so you infuse feedback by aligning on three files — Harness.md, Environment.md, Task.md. Install via `npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering`, point it at your repo + traces, and it maps the agent surface and proposes eval directions from real production data.
 - **2026-07-31** — [Viv](https://x.com/vtrivedy10/status/2082868751276413313) — *now • Skills & MCP • 33.8K views • v1 enriched*  
   LangChain released v2 of its eval-engineering skill (npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering). Adds multi-turn eval user simulation with instructions/examples, deeper environment-design guidance (simulating backends/databases, using prod traces), and iterative harness/verifier refinement keeping domain experts in the loop.
 - **2026-07-30** — [Tibo](https://x.com/thsottiaux/status/2082241164850364555) — *now • Dev Practices • v1 enriched*  
@@ -17,34 +19,32 @@
   Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodic/consolidation buffers that curate an agent's working memory, reporting a 58.6% memory reuse rate and 18% net efficiency gain while addressing context-window degradation without larger token limits. Companion article: 'Context vs. Memory Engineering in Agentic AI Systems.'
 - **2026-08-05** — [Yarchi](https://x.com/undefinedki/status/2084279627204235703) — *near-term • Dev Practices • v1 enriched*  
   Breaks down Airbnb's internal LLM eval process: three layers (programmatic checks, an LLM judge, humans only to calibrate the judge), golden sets of 50-100 examples that must include failures, judge-human agreement in the high 80s/90s measured with Cohen's kappa, and 5% of live traffic sampled daily. Notably ~75% of their LLM-generated reference answers differed on every labeling run (measuring their own noise); they cut a full eval cycle from weeks to a day via output caching and tiny LoRA adapters.
-- **2026-08-04** — [Pi](https://x.com/pidotdev/status/2084602909346386111) — *near-term • Agent Design • 96.4K views • v1 enriched*  
-  Earendil blog post (earendil.com/posts/pi-autoresearch-and-databricks) arguing that Pi — a deliberately minimal coding-agent harness with only 4 tools and a sub-1,000-token system prompt — beats heavier harnesses on both cost and quality. Cites a Databricks benchmark on their multi-million-line codebase where Pi + Opus 4.8 (xhigh) had the highest pass-rate at lower cost than Claude Code and Codex, sending ~3x less context per turn ("context discipline"), plus Shopify's pi-autoresearch extension (a self-improving optimization loop) yielding large speedups. Frames minimal, extensible harnesses as the winning design as frontier models get better at terminal environments.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **Claude skills craft** (128 posts, +11 this week)  
+- **Claude skills craft** (129 posts, +12 this week)  
   Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.
     - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
-    - 2026-08-04 — [Pi](https://x.com/pidotdev/status/2084602909346386111): Earendil blog post (earendil.com/posts/pi-autoresearch-and-databricks) arguing that Pi — a deliberately minimal coding-agent harness with on…
+    - 2026-08-05 — [Viv](https://x.com/Vtrivedy10/status/2084693873599594570): Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedba…
 
-- **loop engineering** (123 posts, +11 this week)  
+- **loop engineering** (124 posts, +12 this week)  
   Feedback loops and self-running agent loops: loop design patterns, loop libraries, nested build loops, self-improving / meta-learning loops.
     - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
-    - 2026-08-04 — [Pi](https://x.com/pidotdev/status/2084602909346386111): Earendil blog post (earendil.com/posts/pi-autoresearch-and-databricks) arguing that Pi — a deliberately minimal coding-agent harness with on…
+    - 2026-08-05 — [Viv](https://x.com/Vtrivedy10/status/2084693873599594570): Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedba…
 
-- **agent harness engineering** (87 posts, +10 this week)  
+- **agent harness engineering** (88 posts, +11 this week)  
   Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
     - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
-    - 2026-08-04 — [Pi](https://x.com/pidotdev/status/2084602909346386111): Earendil blog post (earendil.com/posts/pi-autoresearch-and-databricks) arguing that Pi — a deliberately minimal coding-agent harness with on…
+    - 2026-08-05 — [Viv](https://x.com/Vtrivedy10/status/2084693873599594570): Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedba…
 
-- **vibecode-to-production via agent skills** (20 posts, +9 this week)  
+- **vibecode-to-production via agent skills** (24 posts, +10 this week)  
   Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
     - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
-    - 2026-08-04 — [Pi](https://x.com/pidotdev/status/2084602909346386111): Earendil blog post (earendil.com/posts/pi-autoresearch-and-databricks) arguing that Pi — a deliberately minimal coding-agent harness with on…
+    - 2026-08-05 — [Viv](https://x.com/Vtrivedy10/status/2084693873599594570): Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedba…
 
-- **agentic code review at production scale** (22 posts, +8 this week)  
-  Deterministic engineering handles what must never fail; LLM only does context reading and reasoning. Alibaba open-code-review.
+- **Claude Code setup & usage** (133 posts, +8 this week)  
+  Claude Code setup guides, cheatsheets, starter packs, and day-to-day usage / steering practices.
     - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
     - 2026-08-04 — [Pi](https://x.com/pidotdev/status/2084602909346386111): Earendil blog post (earendil.com/posts/pi-autoresearch-and-databricks) arguing that Pi — a deliberately minimal coding-agent harness with on…
 
@@ -59,12 +59,12 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 428 | 57.0% |
+| agent-design | 429 | 57.0% |
 | claude-code | 179 | 23.8% |
-| dev-practices | 318 | 42.3% |
-| skills-mcp | 173 | 23.0% |
+| dev-practices | 319 | 42.4% |
+| skills-mcp | 174 | 23.1% |
 | prompting | 114 | 15.2% |
-| research | 185 | 24.6% |
+| research | 186 | 24.7% |
 | industry | 106 | 14.1% |
 | management | 118 | 15.7% |
 | questionable | 105 | 14.0% |
@@ -74,6 +74,7 @@
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-08-05 | Viv | skills-mcp | Introduces the 'eval-engineering' skill (from LangChain's langchain-sk... |
 | 2026-08-05 | beamnxw | research | Highlights a paper proposing a 'Cognitive Workspace' that replaces pas... |
 | 2026-08-05 | Shubham Mishra | research | Argues the path to genuine scientific discovery in AI isn't scaling te... |
 | 2026-08-05 | Yarchi | dev-practices | Breaks down Airbnb's internal LLM eval process: three layers (programm... |
@@ -123,12 +124,13 @@
 | 2026-07-17 | h100envy | agent-design | Walks through building a 'swarm of agents' for multi-angle analysis: s... |
 | 2026-07-17 | argofowl | prompting | Introduces namethatui.com — a dictionary for UI elements you can see b... |
 | 2026-07-16 | Aaron Levie | management | Aaron Levie's notes from a dinner with enterprise IT leaders on agent... |
-| 2026-07-16 | 0xSero | research | 0xSero highlights Thinking Machines' launch of Inkling (thinkingmachin... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (428)
+### Agent Design (429)
+
+- [Viv](https://x.com/Vtrivedy10/status/2084693873599594570) — 2026-08-05: Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedback. The premise: agents are poor one-shot environment generators because they're misaligned with human goals, so you infuse feedback by aligning on three files — Harness.md, Environment.md, Task.md. Install via `npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering`, point it at your repo + traces, and it maps the agent surface and proposes eval directions from real production data.
 
 - [beamnxw](https://x.com/beamnxw/status/2084669307212951788) — 2026-08-05: Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodic/consolidation buffers that curate an agent's working memory, reporting a 58.6% memory reuse rate and 18% net efficiency gain while addressing context-window degradation without larger token limits. Companion article: 'Context vs. Memory Engineering in Agentic AI Systems.'
 
@@ -1346,7 +1348,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (318)
+### Dev Practices (319)
+
+- [Viv](https://x.com/Vtrivedy10/status/2084693873599594570) — 2026-08-05: Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedback. The premise: agents are poor one-shot environment generators because they're misaligned with human goals, so you infuse feedback by aligning on three files — Harness.md, Environment.md, Task.md. Install via `npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering`, point it at your repo + traces, and it maps the agent surface and proposes eval directions from real production data.
 
 - [Yarchi](https://x.com/undefinedki/status/2084279627204235703) — 2026-08-05: Breaks down Airbnb's internal LLM eval process: three layers (programmatic checks, an LLM judge, humans only to calibrate the judge), golden sets of 50-100 examples that must include failures, judge-human agreement in the high 80s/90s measured with Cohen's kappa, and 5% of live traffic sampled daily. Notably ~75% of their LLM-generated reference answers differed on every labeling run (measuring their own noise); they cut a full eval cycle from weeks to a day via output caching and tiny LoRA adapters.
 
@@ -1984,7 +1988,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Skills & MCP (173)
+### Skills & MCP (174)
+
+- [Viv](https://x.com/Vtrivedy10/status/2084693873599594570) — 2026-08-05: Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedback. The premise: agents are poor one-shot environment generators because they're misaligned with human goals, so you infuse feedback by aligning on three files — Harness.md, Environment.md, Task.md. Install via `npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering`, point it at your repo + traces, and it maps the agent surface and proposes eval directions from real production data.
 
 - [Viv](https://x.com/vtrivedy10/status/2082868751276413313) — 2026-07-31: LangChain released v2 of its eval-engineering skill (npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering). Adds multi-turn eval user simulation with instructions/examples, deeper environment-design guidance (simulating backends/databases, using prod traces), and iterative harness/verifier refinement keeping domain experts in the loop.
 
@@ -2562,7 +2568,9 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-### Research (185)
+### Research (186)
+
+- [Viv](https://x.com/Vtrivedy10/status/2084693873599594570) — 2026-08-05: Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedback. The premise: agents are poor one-shot environment generators because they're misaligned with human goals, so you infuse feedback by aligning on three files — Harness.md, Environment.md, Task.md. Install via `npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering`, point it at your repo + traces, and it maps the agent surface and proposes eval directions from real production data.
 
 - [beamnxw](https://x.com/beamnxw/status/2084669307212951788) — 2026-08-05: Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodic/consolidation buffers that curate an agent's working memory, reporting a 58.6% memory reuse rate and 18% net efficiency gain while addressing context-window degradation without larger token limits. Companion article: 'Context vs. Memory Engineering in Agentic AI Systems.'
 
@@ -3810,6 +3818,9 @@
 ## Full Chronological List
 
 ### Aug 2026
+
+- **2026-08-05** | [Viv](https://x.com/Vtrivedy10/status/2084693873599594570) | skills-mcp, agent-design, dev-practices, research
+  Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedback. The premise: agents are poor one-shot environment generators because they're misaligned with human goals, so you infuse feedback by aligning on three files — Harness.md, Environment.md, Task.md. Install via `npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering`, point it at your repo + traces, and it maps the agent surface and proposes eval directions from real production data.
 
 - **2026-08-05** | [beamnxw](https://x.com/beamnxw/status/2084669307212951788) | research, agent-design
   Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodic/consolidation buffers that curate an agent's working memory, reporting a 58.6% memory reuse rate and 18% net efficiency gain while addressing context-window degradation without larger token limits. Companion article: 'Context vs. Memory Engineering in Agentic AI Systems.'
