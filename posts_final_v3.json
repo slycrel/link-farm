@@ -1,5 +1,81 @@
 [
   {
+    "date": "2026-08-06",
+    "author": "Avi Chawla",
+    "handle": "@_avichawla",
+    "subject": "Post by Avi Chawla on X",
+    "url": "https://x.com/_avichawla/status/2084909858386792674",
+    "summary": "A new study evaluates 12 agent memory systems across four stages (representation, extraction, retrieval, maintenance) to find which stage decides whether an agent stays correct. The finding: reliability under fact updates and cross-session reasoning is set at write time, not query time — graph-based methods that add structure as memory is written stay reliable, while flat stores fail the same way.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Are we ready for an agent-native memory system? Memory built for an agent that keeps running, not a store bolted on at the end — it must hold facts across sessions, update them when they change, drop stale ones, and return the right piece on request. A new study takes 12 agent memory systems, splits each into four stages (represented, extracted, retrieved, maintained), and checks which stage decides correctness. It's write time, not query time: systems that add structure as memory is written stay reliable under fact updates and cross-session reasoning; graph-based methods lead, flat stores fail.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-06",
+    "author": "elvis",
+    "handle": "@omarsar0",
+    "subject": "Post by elvis on X",
+    "url": "https://x.com/omarsar0/status/2084761324786172347",
+    "summary": "elvis (@omarsar0) highlights a paper testing whether LLM self-reflection loops are worth their token cost. Across 7 methods on open models (1.5B/3B/7B) and two math benchmarks (150 questions each), all 36 cost-matched comparisons showed no reliable win and 10 were reliably worse — every one of the 18 self-inspection comparisons was negative. Self-Refine and a forced Reflexion sat 3.6–10.1 points below the repeated-sampling baseline at 7B.",
+    "topics": [
+      "research",
+      "agent-design",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Finally a good paper testing whether self-reflection loops are worth it. Setup: seven methods, open models at 1.5B/3B/7B, two math benchmarks, 150 questions each. Every generated token counted — critiques, reflections, debate turns, checking — each method compared against repeated sampling at its own measured cost, paired by question, with bootstrap intervals and multiplicity correction. All 36 comparisons: no reliable win; 10 reliably worse, all self-inspection methods. Self-Refine and forced Reflexion sit 3.6 to 10.1 points below baseline at 7B. Reflexion as published never triggered its own retry on the smallest model — it judged itself correct and became a single chain of thought.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-06",
+    "author": "Shreyas",
+    "handle": "@shreyasaiyer",
+    "subject": "Post by Shreyas on X",
+    "url": "https://x.com/shreyasaiyer/status/2084679092201308339",
+    "summary": "Shreyas (@shreyasaiyer) of Antimetal describes context-compression techniques that fit 10–100x more production telemetry into engineering agents' context windows, letting them solve classes of debugging problems that were previously intractable (a single trace in a large distributed system can otherwise exhaust the whole context window). Details in Antimetal's blog post 'Compressing Production Telemetry for Agents' (antimetal.com).",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "10.1K",
+    "notes": "",
+    "enriched": true,
+    "content": "Production engineering agents are bottlenecked by context. A single trace in a large distributed system can exhaust the entire context window. At Antimetal, we built a set of compression techniques that fit 10-100x more telemetry into our agents' context windows, allowing them to solve classes of problems that were previously intractable.\n\nCompressing Production Telemetry for Agents - Antimetal (antimetal.com)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-08-05",
     "author": "Viv",
     "handle": "@vtrivedy10",

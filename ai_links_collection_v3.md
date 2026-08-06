@@ -1,12 +1,12 @@
 # AI Links Collection
-**Total Posts**: 753  
-**Date Range**: 2024-06-11 – 2026-08-05  
-**Enriched**: 752/753 (99%)
+**Total Posts**: 756  
+**Date Range**: 2024-06-11 – 2026-08-06  
+**Enriched**: 755/756 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-08-05T17:44:07Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-06T15:04:27Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-08-05** — [Viv](https://x.com/Vtrivedy10/status/2084693873599594570) — *now • Skills & MCP • v1 enriched*  
@@ -15,25 +15,25 @@
   LangChain released v2 of its eval-engineering skill (npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering). Adds multi-turn eval user simulation with instructions/examples, deeper environment-design guidance (simulating backends/databases, using prod traces), and iterative harness/verifier refinement keeping domain experts in the loop.
 - **2026-07-30** — [Tibo](https://x.com/thsottiaux/status/2082241164850364555) — *now • Dev Practices • v1 enriched*  
   Announces a new open-source CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities in code — scan repositories, review changes, track findings over time, and run security checks in CI.
-- **2026-08-05** — [beamnxw](https://x.com/beamnxw/status/2084669307212951788) — *near-term • Research • v1 enriched*  
-  Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodic/consolidation buffers that curate an agent's working memory, reporting a 58.6% memory reuse rate and 18% net efficiency gain while addressing context-window degradation without larger token limits. Companion article: 'Context vs. Memory Engineering in Agentic AI Systems.'
-- **2026-08-05** — [rvaniaaa](https://x.com/rvaniaaaa/status/2084589218043462126) — *near-term • Agent Design • v1 enriched*  
-  Outlines an 8-agent pipeline for an AI agent that autonomously discovers and packages new skills, with humans only approving the final pull request. The agents split one job each — scout (find repos), filter (drop noise), reader (build context from docs not code), extractor (pull the reusable workflow), score (validate against objective criteria), generator (package into a skill with examples/commands/tests), reviewer (would an engineer install it unedited?), and publisher (open the PR). The pitch: automation proposes and humans approve, removing the manual find/read/install bottleneck so skill quality compounds. Framing is somewhat hype-driven but the architecture is concrete; full write-up in the linked article 'How to Build an AI That Never Stops Learning.'
+- **2026-08-06** — [Avi Chawla](https://x.com/_avichawla/status/2084909858386792674) — *near-term • Agent Design • v1 enriched*  
+  A new study evaluates 12 agent memory systems across four stages (representation, extraction, retrieval, maintenance) to find which stage decides whether an agent stays correct. The finding: reliability under fact updates and cross-session reasoning is set at write time, not query time — graph-based methods that add structure as memory is written stay reliable, while flat stores fail the same way.
+- **2026-08-06** — [elvis](https://x.com/omarsar0/status/2084761324786172347) — *near-term • Research • v1 enriched*  
+  elvis (@omarsar0) highlights a paper testing whether LLM self-reflection loops are worth their token cost. Across 7 methods on open models (1.5B/3B/7B) and two math benchmarks (150 questions each), all 36 cost-matched comparisons showed no reliable win and 10 were reliably worse — every one of the 18 self-inspection comparisons was negative. Self-Refine and a forced Reflexion sat 3.6–10.1 points below the repeated-sampling baseline at 7B.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **Claude skills craft** (130 posts, +13 this week)  
+- **Claude skills craft** (131 posts, +14 this week)  
   Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.
+    - 2026-08-06 — [Avi Chawla](https://x.com/_avichawla/status/2084909858386792674): A new study evaluates 12 agent memory systems across four stages (representation, extraction, retrieval, maintenance) to find which stage de…
     - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
-    - 2026-08-05 — [Viv](https://x.com/Vtrivedy10/status/2084693873599594570): Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedba…
 
-- **loop engineering** (125 posts, +13 this week)  
+- **loop engineering** (126 posts, +14 this week)  
   Feedback loops and self-running agent loops: loop design patterns, loop libraries, nested build loops, self-improving / meta-learning loops.
+    - 2026-08-06 — [Avi Chawla](https://x.com/_avichawla/status/2084909858386792674): A new study evaluates 12 agent memory systems across four stages (representation, extraction, retrieval, maintenance) to find which stage de…
     - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
-    - 2026-08-05 — [Viv](https://x.com/Vtrivedy10/status/2084693873599594570): Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedba…
 
-- **vibecode-to-production via agent skills** (29 posts, +13 this week)  
+- **vibecode-to-production via agent skills** (32 posts, +13 this week)  
   Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
     - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
     - 2026-08-05 — [Viv](https://x.com/Vtrivedy10/status/2084693873599594570): Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedba…
@@ -59,21 +59,24 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 430 | 57.1% |
-| claude-code | 179 | 23.8% |
-| dev-practices | 319 | 42.4% |
-| skills-mcp | 175 | 23.2% |
-| prompting | 114 | 15.1% |
-| research | 186 | 24.7% |
-| industry | 106 | 14.1% |
-| management | 118 | 15.7% |
-| questionable | 106 | 14.1% |
+| agent-design | 433 | 57.3% |
+| claude-code | 179 | 23.7% |
+| dev-practices | 320 | 42.3% |
+| skills-mcp | 175 | 23.1% |
+| prompting | 115 | 15.2% |
+| research | 188 | 24.9% |
+| industry | 106 | 14.0% |
+| management | 118 | 15.6% |
+| questionable | 106 | 14.0% |
 | general | 102 | 13.5% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-08-06 | Avi Chawla | agent-design | A new study evaluates 12 agent memory systems across four stages (repr... |
+| 2026-08-06 | elvis | research | elvis (@omarsar0) highlights a paper testing whether LLM self-reflecti... |
+| 2026-08-06 | Shreyas | agent-design | Shreyas (@shreyasaiyer) of Antimetal describes context-compression tec... |
 | 2026-08-05 | Viv | skills-mcp | Introduces the 'eval-engineering' skill (from LangChain's langchain-sk... |
 | 2026-08-05 | beamnxw | research | Highlights a paper proposing a 'Cognitive Workspace' that replaces pas... |
 | 2026-08-05 | rvaniaaa | agent-design | Outlines an 8-agent pipeline for an AI agent that autonomously discove... |
@@ -121,14 +124,17 @@
 | 2026-07-17 | Harrison Chase | agent-design | Harrison Chase (co-founder of LangChain) argues there needs to be an O... |
 | 2026-07-17 | Amjad Masad | management | Amjad Masad (Replit) on 'The Self-Driving Company': over the past six... |
 | 2026-07-17 | Alex Prompter | agent-design | 'Harness engineering 101' thread: argues Agent = Model + Harness, wher... |
-| 2026-07-17 | ClaudeDevs | claude-code | Announces that Claude Code artifacts can now call MCP connectors, lett... |
-| 2026-07-17 | h100envy | agent-design | Walks through building a 'swarm of agents' for multi-angle analysis: s... |
-| 2026-07-17 | argofowl | prompting | Introduces namethatui.com — a dictionary for UI elements you can see b... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (430)
+### Agent Design (433)
+
+- [Avi Chawla](https://x.com/_avichawla/status/2084909858386792674) — 2026-08-06: A new study evaluates 12 agent memory systems across four stages (representation, extraction, retrieval, maintenance) to find which stage decides whether an agent stays correct. The finding: reliability under fact updates and cross-session reasoning is set at write time, not query time — graph-based methods that add structure as memory is written stay reliable, while flat stores fail the same way.
+
+- [elvis](https://x.com/omarsar0/status/2084761324786172347) — 2026-08-06: elvis (@omarsar0) highlights a paper testing whether LLM self-reflection loops are worth their token cost. Across 7 methods on open models (1.5B/3B/7B) and two math benchmarks (150 questions each), all 36 cost-matched comparisons showed no reliable win and 10 were reliably worse — every one of the 18 self-inspection comparisons was negative. Self-Refine and a forced Reflexion sat 3.6–10.1 points below the repeated-sampling baseline at 7B.
+
+- [Shreyas](https://x.com/shreyasaiyer/status/2084679092201308339) — 2026-08-06: Shreyas (@shreyasaiyer) of Antimetal describes context-compression techniques that fit 10–100x more production telemetry into engineering agents' context windows, letting them solve classes of debugging problems that were previously intractable (a single trace in a large distributed system can otherwise exhaust the whole context window). Details in Antimetal's blog post 'Compressing Production Telemetry for Agents' (antimetal.com).
 
 - [Viv](https://x.com/Vtrivedy10/status/2084693873599594570) — 2026-08-05: Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedback. The premise: agents are poor one-shot environment generators because they're misaligned with human goals, so you infuse feedback by aligning on three files — Harness.md, Environment.md, Task.md. Install via `npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering`, point it at your repo + traces, and it maps the agent surface and proposes eval directions from real production data.
 
@@ -1350,7 +1356,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (319)
+### Dev Practices (320)
+
+- [Shreyas](https://x.com/shreyasaiyer/status/2084679092201308339) — 2026-08-06: Shreyas (@shreyasaiyer) of Antimetal describes context-compression techniques that fit 10–100x more production telemetry into engineering agents' context windows, letting them solve classes of debugging problems that were previously intractable (a single trace in a large distributed system can otherwise exhaust the whole context window). Details in Antimetal's blog post 'Compressing Production Telemetry for Agents' (antimetal.com).
 
 - [Viv](https://x.com/Vtrivedy10/status/2084693873599594570) — 2026-08-05: Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedback. The premise: agents are poor one-shot environment generators because they're misaligned with human goals, so you infuse feedback by aligning on three files — Harness.md, Environment.md, Task.md. Install via `npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering`, point it at your repo + traces, and it maps the agent surface and proposes eval directions from real production data.
 
@@ -2342,7 +2350,9 @@
 
 - [Mervin Praison](https://x.com/mervinpraison/status/1881788246684013011) — 2025-01-22: Shows a 100% local RAG AI agent with reasoning: DeepSeek via Ollama for the LLM, PraisonAI to build the agent in a few lines, Nomic embeddings, and a Streamlit UI—code included in the thread.
 
-### Prompting (114)
+### Prompting (115)
+
+- [elvis](https://x.com/omarsar0/status/2084761324786172347) — 2026-08-06: elvis (@omarsar0) highlights a paper testing whether LLM self-reflection loops are worth their token cost. Across 7 methods on open models (1.5B/3B/7B) and two math benchmarks (150 questions each), all 36 cost-matched comparisons showed no reliable win and 10 were reliably worse — every one of the 18 self-inspection comparisons was negative. Self-Refine and a forced Reflexion sat 3.6–10.1 points below the repeated-sampling baseline at 7B.
 
 - [Alex Veremeyenko](https://x.com/alex_verem/status/2082018678724575550) — 2026-07-29: Restates Andrew Ng's finding that an older model in an agentic workflow beats a newer model answering once — gpt-3.5 zero-shot 48.1%, gpt-4 zero-shot 67.0%, gpt-3.5 in an agentic workflow up to 95.1% on HumanEval — and lists his four patterns: reflection, tool use, planning, and multi-agent collaboration.
 
@@ -2572,7 +2582,11 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-### Research (186)
+### Research (188)
+
+- [Avi Chawla](https://x.com/_avichawla/status/2084909858386792674) — 2026-08-06: A new study evaluates 12 agent memory systems across four stages (representation, extraction, retrieval, maintenance) to find which stage decides whether an agent stays correct. The finding: reliability under fact updates and cross-session reasoning is set at write time, not query time — graph-based methods that add structure as memory is written stay reliable, while flat stores fail the same way.
+
+- [elvis](https://x.com/omarsar0/status/2084761324786172347) — 2026-08-06: elvis (@omarsar0) highlights a paper testing whether LLM self-reflection loops are worth their token cost. Across 7 methods on open models (1.5B/3B/7B) and two math benchmarks (150 questions each), all 36 cost-matched comparisons showed no reliable win and 10 were reliably worse — every one of the 18 self-inspection comparisons was negative. Self-Refine and a forced Reflexion sat 3.6–10.1 points below the repeated-sampling baseline at 7B.
 
 - [Viv](https://x.com/Vtrivedy10/status/2084693873599594570) — 2026-08-05: Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedback. The premise: agents are poor one-shot environment generators because they're misaligned with human goals, so you infuse feedback by aligning on three files — Harness.md, Environment.md, Task.md. Install via `npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering`, point it at your repo + traces, and it maps the agent surface and proposes eval directions from real production data.
 
@@ -3824,6 +3838,15 @@
 ## Full Chronological List
 
 ### Aug 2026
+
+- **2026-08-06** | [Avi Chawla](https://x.com/_avichawla/status/2084909858386792674) | agent-design, research
+  A new study evaluates 12 agent memory systems across four stages (representation, extraction, retrieval, maintenance) to find which stage decides whether an agent stays correct. The finding: reliability under fact updates and cross-session reasoning is set at write time, not query time — graph-based methods that add structure as memory is written stay reliable, while flat stores fail the same way.
+
+- **2026-08-06** | [elvis](https://x.com/omarsar0/status/2084761324786172347) | research, agent-design, prompting
+  elvis (@omarsar0) highlights a paper testing whether LLM self-reflection loops are worth their token cost. Across 7 methods on open models (1.5B/3B/7B) and two math benchmarks (150 questions each), all 36 cost-matched comparisons showed no reliable win and 10 were reliably worse — every one of the 18 self-inspection comparisons was negative. Self-Refine and a forced Reflexion sat 3.6–10.1 points below the repeated-sampling baseline at 7B.
+
+- **2026-08-06** | [Shreyas](https://x.com/shreyasaiyer/status/2084679092201308339) | agent-design, dev-practices
+  Shreyas (@shreyasaiyer) of Antimetal describes context-compression techniques that fit 10–100x more production telemetry into engineering agents' context windows, letting them solve classes of debugging problems that were previously intractable (a single trace in a large distributed system can otherwise exhaust the whole context window). Details in Antimetal's blog post 'Compressing Production Telemetry for Agents' (antimetal.com).
 
 - **2026-08-05** | [Viv](https://x.com/Vtrivedy10/status/2084693873599594570) | skills-mcp, agent-design, dev-practices, research
   Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedback. The premise: agents are poor one-shot environment generators because they're misaligned with human goals, so you infuse feedback by aligning on three files — Harness.md, Environment.md, Task.md. Install via `npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering`, point it at your repo + traces, and it maps the agent surface and proposes eval directions from real production data.
