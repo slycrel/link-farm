@@ -1,12 +1,12 @@
 # AI Links Collection
-**Total Posts**: 756  
+**Total Posts**: 757  
 **Date Range**: 2024-06-11 – 2026-08-06  
-**Enriched**: 755/756 (99%)
+**Enriched**: 756/757 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-08-06T15:04:27Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-06T18:21:13Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-08-05** — [Viv](https://x.com/Vtrivedy10/status/2084693873599594570) — *now • Skills & MCP • v1 enriched*  
@@ -23,7 +23,7 @@
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **Claude skills craft** (131 posts, +14 this week)  
+- **Claude skills craft** (132 posts, +14 this week)  
   Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.
     - 2026-08-06 — [Avi Chawla](https://x.com/_avichawla/status/2084909858386792674): A new study evaluates 12 agent memory systems across four stages (representation, extraction, retrieval, maintenance) to find which stage de…
     - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
@@ -33,7 +33,7 @@
     - 2026-08-06 — [Avi Chawla](https://x.com/_avichawla/status/2084909858386792674): A new study evaluates 12 agent memory systems across four stages (representation, extraction, retrieval, maintenance) to find which stage de…
     - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
 
-- **vibecode-to-production via agent skills** (32 posts, +13 this week)  
+- **vibecode-to-production via agent skills** (38 posts, +13 this week)  
   Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
     - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
     - 2026-08-05 — [Viv](https://x.com/Vtrivedy10/status/2084693873599594570): Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedba…
@@ -59,12 +59,12 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 433 | 57.3% |
-| claude-code | 179 | 23.7% |
-| dev-practices | 320 | 42.3% |
+| agent-design | 433 | 57.2% |
+| claude-code | 179 | 23.6% |
+| dev-practices | 321 | 42.4% |
 | skills-mcp | 175 | 23.1% |
 | prompting | 115 | 15.2% |
-| research | 188 | 24.9% |
+| research | 189 | 25.0% |
 | industry | 106 | 14.0% |
 | management | 118 | 15.6% |
 | questionable | 106 | 14.0% |
@@ -1356,7 +1356,7 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (320)
+### Dev Practices (321)
 
 - [Shreyas](https://x.com/shreyasaiyer/status/2084679092201308339) — 2026-08-06: Shreyas (@shreyasaiyer) of Antimetal describes context-compression techniques that fit 10–100x more production telemetry into engineering agents' context windows, letting them solve classes of debugging problems that were previously intractable (a single trace in a large distributed system can otherwise exhaust the whole context window). Details in Antimetal's blog post 'Compressing Production Telemetry for Agents' (antimetal.com).
 
@@ -1581,6 +1581,8 @@
 - [ClaudeDevs](https://x.com/claudedevs/status/2056403446056784288) — 2026-05-19: Anthropic blog on running Claude Code at scale — best practices from teams working across multi-million-line monorepos, decades-old legacy systems, and distributed microservices.
 
 - [darkzodchi](https://x.com/zodchiii/status/2056336049589092866) — 2026-05-19: Shopify Head of Engineering Farhan Thawar: 'if you don't figure out how to harness agents in 2026, you'll be behind.' A practical enterprise-AI-coding breakdown / Shopify AI playbook, linking a 'Claude Code setup behind Shopify's 23,000 engineers' article (racing to automate 96% of coding by Q3, many parallel Claude Code agents).
+
+- [Yifeng He, Ethan Wang, Jicheng Wang, Xuanxin Ouyang, Hao Chen](https://arxiv.org/abs/2605.20473) — 2026-05-19: DiffCodeGen, a test-time scaling method for code generation that needs no existing tests and no extra LLM inference for candidate selection. It samples diverse code candidates via varied prompting/sampling strategies, uses coverage-guided fuzzing to synthesize inputs, executes all candidates to capture their dynamic behavior, clusters them by behavioral similarity, and returns the medoid of the largest cluster. This sidesteps prior methods' reliance on unavailable public test cases or heavy LLM inference. Authors: Yifeng He, Ethan Wang, Jicheng Wang, Xuanxin Ouyang, Hao Chen (arxiv.org/abs/2605.20473).
 
 - [Viv](https://x.com/vtrivedy10/status/2056066419360743479) — 2026-05-18: Viv on LangSmith Engine as an always-on self-improvement loop: tracing on for every agent, purpose-built SmithDB for agent-scale data, ambient intelligence over every trace to find errors/insights, and PRs/Evals generated with human gating — the first sparks of company-wide Continual Learning for agents.
 
@@ -2582,7 +2584,7 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-### Research (188)
+### Research (189)
 
 - [Avi Chawla](https://x.com/_avichawla/status/2084909858386792674) — 2026-08-06: A new study evaluates 12 agent memory systems across four stages (representation, extraction, retrieval, maintenance) to find which stage decides whether an agent stays correct. The finding: reliability under fact updates and cross-session reasoning is set at write time, not query time — graph-based methods that add structure as memory is written stay reliable, while flat stores fail the same way.
 
@@ -2721,6 +2723,8 @@
 - [Paul Iusztin](https://x.com/pauliusztin_/status/2056272402414211175) — 2026-05-19: Calls Neo4j's open-source 'agent-memory' the best repo for a unified graph-based memory layer for AI agents — strong modeling of short/long/reasoning memory, ontology, and extraction algorithms; full write-up on decodingai.com.
 
 - [Dami-Defi](https://x.com/damidefi/status/2056053698674270631) — 2026-05-19: Fed MIT's 12 free graduate-level AI textbooks into Claude and rebuilt his research system around them. Links 'I Fed 12 Free MIT AI Textbooks Into Claude. It Rebuilt My Entire Research System.'
+
+- [Yifeng He, Ethan Wang, Jicheng Wang, Xuanxin Ouyang, Hao Chen](https://arxiv.org/abs/2605.20473) — 2026-05-19: DiffCodeGen, a test-time scaling method for code generation that needs no existing tests and no extra LLM inference for candidate selection. It samples diverse code candidates via varied prompting/sampling strategies, uses coverage-guided fuzzing to synthesize inputs, executes all candidates to capture their dynamic behavior, clusters them by behavioral similarity, and returns the medoid of the largest cluster. This sidesteps prior methods' reliance on unavailable public test cases or heavy LLM inference. Authors: Yifeng He, Ethan Wang, Jicheng Wang, Xuanxin Ouyang, Hao Chen (arxiv.org/abs/2605.20473).
 
 - [Viv](https://x.com/vtrivedy10/status/2056066419360743479) — 2026-05-18: Viv on LangSmith Engine as an always-on self-improvement loop: tracing on for every agent, purpose-built SmithDB for agent-scale data, ambient intelligence over every trace to find errors/insights, and PRs/Evals generated with human gating — the first sparks of company-wide Continual Learning for agents.
 
@@ -4573,6 +4577,9 @@
 
 - **2026-05-19** | [Dami-Defi](https://x.com/damidefi/status/2056053698674270631) | research, claude-code, prompting
   Fed MIT's 12 free graduate-level AI textbooks into Claude and rebuilt his research system around them. Links 'I Fed 12 Free MIT AI Textbooks Into Claude. It Rebuilt My Entire Research System.'
+
+- **2026-05-19** | [Yifeng He, Ethan Wang, Jicheng Wang, Xuanxin Ouyang, Hao Chen](https://arxiv.org/abs/2605.20473) | research, dev-practices
+  DiffCodeGen, a test-time scaling method for code generation that needs no existing tests and no extra LLM inference for candidate selection. It samples diverse code candidates via varied prompting/sampling strategies, uses coverage-guided fuzzing to synthesize inputs, executes all candidates to capture their dynamic behavior, clusters them by behavioral similarity, and returns the medoid of the largest cluster. This sidesteps prior methods' reliance on unavailable public test cases or heavy LLM inference. Authors: Yifeng He, Ethan Wang, Jicheng Wang, Xuanxin Ouyang, Hao Chen (arxiv.org/abs/2605.20473).
 
 - **2026-05-18** | [Viv](https://x.com/vtrivedy10/status/2056066419360743479) | agent-design, dev-practices, research
   Viv on LangSmith Engine as an always-on self-improvement loop: tracing on for every agent, purpose-built SmithDB for agent-scale data, ambient intelligence over every trace to find errors/insights, and PRs/Evals generated with human gating — the first sparks of company-wide Continual Learning for agents.

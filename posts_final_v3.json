@@ -6234,6 +6234,32 @@
     "enrichment_attempts": 1
   },
   {
+    "date": "2026-05-19",
+    "author": "Yifeng He, Ethan Wang, Jicheng Wang, Xuanxin Ouyang, Hao Chen",
+    "handle": "",
+    "subject": "Code Generation by Differential Test Time Scaling",
+    "url": "https://arxiv.org/abs/2605.20473",
+    "summary": "DiffCodeGen, a test-time scaling method for code generation that needs no existing tests and no extra LLM inference for candidate selection. It samples diverse code candidates via varied prompting/sampling strategies, uses coverage-guided fuzzing to synthesize inputs, executes all candidates to capture their dynamic behavior, clusters them by behavioral similarity, and returns the medoid of the largest cluster. This sidesteps prior methods' reliance on unavailable public test cases or heavy LLM inference. Authors: Yifeng He, Ethan Wang, Jicheng Wang, Xuanxin Ouyang, Hao Chen (arxiv.org/abs/2605.20473).",
+    "topics": [
+      "research",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "long-term",
+    "sourceType": "article",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Test-time scaling improves code generation by exploring large solution spaces at inference, but existing methods rely on public test cases (often unavailable) or heavy LLM inference for candidate selection. DiffCodeGen uses coverage-guided differential analysis: generate diverse candidates via sampling/prompting, apply coverage-guided fuzzing to synthesize inputs without tests or LLMs, execute all candidates to capture dynamic behavior, cluster by behavioral similarity, and select the medoid of the largest cluster as the final output. Subjects: cs.SE, cs.AI, cs.LG. Submitted 19 May 2026.",
+    "source": "bookmark",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-05-18",
     "author": "Viv",
     "handle": "@vtrivedy10",
