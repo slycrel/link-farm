@@ -1,6 +1,31 @@
 [
   {
     "date": "2026-08-06",
+    "author": "Teknium",
+    "handle": "@teknium",
+    "subject": "Post by Teknium 🪽 on X",
+    "url": "https://x.com/teknium/status/2085156837561893117",
+    "summary": "Teknium's Hermes Agent now auto-converts any document — PDF, Word, PowerPoint, Excel, OpenDocument, RTF, EPUB — to clean Markdown locally the moment the agent reads a file, powered by Firecrawl's new open-source anydoc (github.com/firecrawl/anydoc). anydoc is a Rust parser doing sub-5ms Markdown conversion across 13 formats (500 docx in 1.7s), zero-setup and self-installing on first use.",
+    "topics": [
+      "agent-design",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "291K",
+    "notes": "",
+    "enriched": true,
+    "content": "Hermes Agent can now read anything you throw at it. PDF, Word, PowerPoint, Excel, OpenDocument, RTF, EPUB — all auto-converted to clean Markdown the moment the agent reads the file, all locally! Powered by @firecrawl_dev's new open-source anydoc (Rust). Zero setup, installs itself on first use.\n\nintroducing anydoc — now your agents get 100x faster local parsing for pdf, docx, pptx & 10 more formats. sub-5ms md conversion, 500 docx files in 1.7s, top quality across all 13 formats, rust-based, open source. already powering @firecrawl /parse.\n\nanydoc — Rust document parser",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-06",
     "author": "Avi Chawla",
     "handle": "@_avichawla",
     "subject": "Post by Avi Chawla on X",

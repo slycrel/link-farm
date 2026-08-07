@@ -1,20 +1,20 @@
 # AI Links Collection
-**Total Posts**: 757  
+**Total Posts**: 758  
 **Date Range**: 2024-06-11 – 2026-08-06  
-**Enriched**: 756/757 (99%)
+**Enriched**: 757/758 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-08-06T18:21:13Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-07T15:11:54Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
+- **2026-08-06** — [Teknium](https://x.com/teknium/status/2085156837561893117) — *now • Agent Design • 291K views • v1 enriched*  
+  Teknium's Hermes Agent now auto-converts any document — PDF, Word, PowerPoint, Excel, OpenDocument, RTF, EPUB — to clean Markdown locally the moment the agent reads a file, powered by Firecrawl's new open-source anydoc (github.com/firecrawl/anydoc). anydoc is a Rust parser doing sub-5ms Markdown conversion across 13 formats (500 docx in 1.7s), zero-setup and self-installing on first use.
 - **2026-08-05** — [Viv](https://x.com/Vtrivedy10/status/2084693873599594570) — *now • Skills & MCP • v1 enriched*  
   Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedback. The premise: agents are poor one-shot environment generators because they're misaligned with human goals, so you infuse feedback by aligning on three files — Harness.md, Environment.md, Task.md. Install via `npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering`, point it at your repo + traces, and it maps the agent surface and proposes eval directions from real production data.
 - **2026-07-31** — [Viv](https://x.com/vtrivedy10/status/2082868751276413313) — *now • Skills & MCP • 33.8K views • v1 enriched*  
   LangChain released v2 of its eval-engineering skill (npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering). Adds multi-turn eval user simulation with instructions/examples, deeper environment-design guidance (simulating backends/databases, using prod traces), and iterative harness/verifier refinement keeping domain experts in the loop.
-- **2026-07-30** — [Tibo](https://x.com/thsottiaux/status/2082241164850364555) — *now • Dev Practices • v1 enriched*  
-  Announces a new open-source CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities in code — scan repositories, review changes, track findings over time, and run security checks in CI.
 - **2026-08-06** — [Avi Chawla](https://x.com/_avichawla/status/2084909858386792674) — *near-term • Agent Design • v1 enriched*  
   A new study evaluates 12 agent memory systems across four stages (representation, extraction, retrieval, maintenance) to find which stage decides whether an agent stays correct. The finding: reliability under fact updates and cross-session reasoning is set at write time, not query time — graph-based methods that add structure as memory is written stay reliable, while flat stores fail the same way.
 - **2026-08-06** — [elvis](https://x.com/omarsar0/status/2084761324786172347) — *near-term • Research • v1 enriched*  
@@ -23,8 +23,13 @@
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **Claude skills craft** (132 posts, +14 this week)  
+- **Claude skills craft** (133 posts, +15 this week)  
   Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.
+    - 2026-08-06 — [Avi Chawla](https://x.com/_avichawla/status/2084909858386792674): A new study evaluates 12 agent memory systems across four stages (representation, extraction, retrieval, maintenance) to find which stage de…
+    - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
+
+- **vibecode-to-production via agent skills** (45 posts, +15 this week)  
+  Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
     - 2026-08-06 — [Avi Chawla](https://x.com/_avichawla/status/2084909858386792674): A new study evaluates 12 agent memory systems across four stages (representation, extraction, retrieval, maintenance) to find which stage de…
     - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
 
@@ -32,11 +37,6 @@
   Feedback loops and self-running agent loops: loop design patterns, loop libraries, nested build loops, self-improving / meta-learning loops.
     - 2026-08-06 — [Avi Chawla](https://x.com/_avichawla/status/2084909858386792674): A new study evaluates 12 agent memory systems across four stages (representation, extraction, retrieval, maintenance) to find which stage de…
     - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
-
-- **vibecode-to-production via agent skills** (38 posts, +13 this week)  
-  Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
-    - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
-    - 2026-08-05 — [Viv](https://x.com/Vtrivedy10/status/2084693873599594570): Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedba…
 
 - **agent harness engineering** (89 posts, +12 this week)  
   Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
@@ -59,12 +59,12 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 433 | 57.2% |
+| agent-design | 434 | 57.3% |
 | claude-code | 179 | 23.6% |
-| dev-practices | 321 | 42.4% |
-| skills-mcp | 175 | 23.1% |
+| dev-practices | 321 | 42.3% |
+| skills-mcp | 176 | 23.2% |
 | prompting | 115 | 15.2% |
-| research | 189 | 25.0% |
+| research | 189 | 24.9% |
 | industry | 106 | 14.0% |
 | management | 118 | 15.6% |
 | questionable | 106 | 14.0% |
@@ -74,6 +74,7 @@
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-08-06 | Teknium | agent-design | Teknium's Hermes Agent now auto-converts any document — PDF, Word, Pow... |
 | 2026-08-06 | Avi Chawla | agent-design | A new study evaluates 12 agent memory systems across four stages (repr... |
 | 2026-08-06 | elvis | research | elvis (@omarsar0) highlights a paper testing whether LLM self-reflecti... |
 | 2026-08-06 | Shreyas | agent-design | Shreyas (@shreyasaiyer) of Antimetal describes context-compression tec... |
@@ -123,12 +124,13 @@
 | 2026-07-17 | Modal | agent-design | Modal engineering post on scaling to 1 million concurrent sandboxes, c... |
 | 2026-07-17 | Harrison Chase | agent-design | Harrison Chase (co-founder of LangChain) argues there needs to be an O... |
 | 2026-07-17 | Amjad Masad | management | Amjad Masad (Replit) on 'The Self-Driving Company': over the past six... |
-| 2026-07-17 | Alex Prompter | agent-design | 'Harness engineering 101' thread: argues Agent = Model + Harness, wher... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (433)
+### Agent Design (434)
+
+- [Teknium](https://x.com/teknium/status/2085156837561893117) — 2026-08-06: Teknium's Hermes Agent now auto-converts any document — PDF, Word, PowerPoint, Excel, OpenDocument, RTF, EPUB — to clean Markdown locally the moment the agent reads a file, powered by Firecrawl's new open-source anydoc (github.com/firecrawl/anydoc). anydoc is a Rust parser doing sub-5ms Markdown conversion across 13 formats (500 docx in 1.7s), zero-setup and self-installing on first use.
 
 - [Avi Chawla](https://x.com/_avichawla/status/2084909858386792674) — 2026-08-06: A new study evaluates 12 agent memory systems across four stages (representation, extraction, retrieval, maintenance) to find which stage decides whether an agent stays correct. The finding: reliability under fact updates and cross-session reasoning is set at write time, not query time — graph-based methods that add structure as memory is written stay reliable, while flat stores fail the same way.
 
@@ -2000,7 +2002,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Skills & MCP (175)
+### Skills & MCP (176)
+
+- [Teknium](https://x.com/teknium/status/2085156837561893117) — 2026-08-06: Teknium's Hermes Agent now auto-converts any document — PDF, Word, PowerPoint, Excel, OpenDocument, RTF, EPUB — to clean Markdown locally the moment the agent reads a file, powered by Firecrawl's new open-source anydoc (github.com/firecrawl/anydoc). anydoc is a Rust parser doing sub-5ms Markdown conversion across 13 formats (500 docx in 1.7s), zero-setup and self-installing on first use.
 
 - [Viv](https://x.com/Vtrivedy10/status/2084693873599594570) — 2026-08-05: Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedback. The premise: agents are poor one-shot environment generators because they're misaligned with human goals, so you infuse feedback by aligning on three files — Harness.md, Environment.md, Task.md. Install via `npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering`, point it at your repo + traces, and it maps the agent surface and proposes eval directions from real production data.
 
@@ -3842,6 +3846,9 @@
 ## Full Chronological List
 
 ### Aug 2026
+
+- **2026-08-06** | [Teknium](https://x.com/teknium/status/2085156837561893117) | agent-design, skills-mcp
+  Teknium's Hermes Agent now auto-converts any document — PDF, Word, PowerPoint, Excel, OpenDocument, RTF, EPUB — to clean Markdown locally the moment the agent reads a file, powered by Firecrawl's new open-source anydoc (github.com/firecrawl/anydoc). anydoc is a Rust parser doing sub-5ms Markdown conversion across 13 formats (500 docx in 1.7s), zero-setup and self-installing on first use.
 
 - **2026-08-06** | [Avi Chawla](https://x.com/_avichawla/status/2084909858386792674) | agent-design, research
   A new study evaluates 12 agent memory systems across four stages (representation, extraction, retrieval, maintenance) to find which stage decides whether an agent stays correct. The finding: reliability under fact updates and cross-session reasoning is set at write time, not query time — graph-based methods that add structure as memory is written stay reliable, while flat stores fail the same way.
