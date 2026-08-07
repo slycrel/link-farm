@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-08-07T15:11:54Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-07T15:32:58Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-08-06** — [Teknium](https://x.com/teknium/status/2085156837561893117) — *now • Agent Design • 291K views • v1 enriched*  

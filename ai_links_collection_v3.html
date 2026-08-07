@@ -420,11 +420,9 @@
             <label class="lens-picker" title="Switch reading lens — changes which priority overlay drives filtering and the morning view">
                 <span class="lens-label">Lens:</span>
                 <select id="lensSelect" onchange="setActiveLens(this.value)">
-                    <option value="tool-eval">tool-eval</option>
-                    <option value="theme">theme</option>
-                    <option value="routing">routing</option>
-                    <option value="strategy">strategy</option>
-                    <option value="zeitgeist">zeitgeist</option>
+                    <!-- Options are populated at runtime by populateLensOptions()
+                         from the lenses that actually have data in POSTS, so the
+                         dropdown never lists an empty (non-functional) lens. -->
                 </select>
             </label>
             <button class="group-toggle active" onclick="toggleGrouping()" id="groupBtn">Grouped</button>
@@ -485,7 +483,7 @@
 
 <script>
 const MORNING_VIEW = {
-  "generated_at": "2026-08-07T15:11:54Z",
+  "generated_at": "2026-08-07T15:32:58Z",
   "read_now": [
     {
       "id": 2085156837561893117,
@@ -1944,6 +1942,38 @@ function setActiveLens(lens) {
     renderMorningView();
 }
 
+function availableLenses() {
+    // Lenses that actually have at least one row in the data, plus the
+    // default lens (tool-eval), which is always meaningful because it falls
+    // back to the legacy priority column. Returned tool-eval-first, then
+    // alphabetical. This is what keeps the dropdown honest: a lens only
+    // appears once it has data, and appears automatically when it does.
+    const seen = new Set(['tool-eval']);
+    POSTS.forEach(p => {
+        if (p.perspectives) Object.keys(p.perspectives).forEach(l => seen.add(l));
+    });
+    const rest = [...seen].filter(l => l !== 'tool-eval').sort();
+    return ['tool-eval', ...rest];
+}
+
+function populateLensOptions() {
+    const sel = document.getElementById('lensSelect');
+    if (!sel) return;
+    const lenses = availableLenses();
+    // If the persisted lens no longer has data, fall back to tool-eval.
+    if (!lenses.includes(activeLens)) {
+        activeLens = 'tool-eval';
+        try { localStorage.setItem('activeLens', activeLens); } catch (e) {}
+    }
+    sel.innerHTML = lenses.map(l =>
+        `<option value="${l}">${l}</option>`).join('');
+    sel.value = activeLens;
+    // Hide the whole picker when there's only one real lens — a one-item
+    // dropdown is just noise. It reappears the moment a second lens gets data.
+    const picker = sel.closest('.lens-picker');
+    if (picker) picker.style.display = lenses.length > 1 ? '' : 'none';
+}
+
 function renderLensCoverage() {
     // Show a small hint in the header when the active lens has thin coverage.
     const sel = document.getElementById('lensSelect');
@@ -1972,6 +2002,7 @@ function renderLensCoverage() {
 }
 
 // Init
+populateLensOptions();
 renderLensCoverage();
 renderMorningView();
 render();
