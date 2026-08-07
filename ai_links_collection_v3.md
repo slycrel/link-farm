@@ -1,12 +1,12 @@
 # AI Links Collection
-**Total Posts**: 758  
+**Total Posts**: 759  
 **Date Range**: 2024-06-11 – 2026-08-06  
-**Enriched**: 757/758 (99%)
+**Enriched**: 758/759 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-08-07T15:32:58Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-07T15:57:14Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-08-06** — [Teknium](https://x.com/teknium/status/2085156837561893117) — *now • Agent Design • 291K views • v1 enriched*  
@@ -23,13 +23,13 @@
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **Claude skills craft** (133 posts, +15 this week)  
-  Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.
+- **vibecode-to-production via agent skills** (51 posts, +16 this week)  
+  Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
     - 2026-08-06 — [Avi Chawla](https://x.com/_avichawla/status/2084909858386792674): A new study evaluates 12 agent memory systems across four stages (representation, extraction, retrieval, maintenance) to find which stage de…
     - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
 
-- **vibecode-to-production via agent skills** (45 posts, +15 this week)  
-  Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
+- **Claude skills craft** (134 posts, +15 this week)  
+  Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.
     - 2026-08-06 — [Avi Chawla](https://x.com/_avichawla/status/2084909858386792674): A new study evaluates 12 agent memory systems across four stages (representation, extraction, retrieval, maintenance) to find which stage de…
     - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
 
@@ -59,16 +59,16 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 434 | 57.3% |
+| agent-design | 434 | 57.2% |
 | claude-code | 179 | 23.6% |
 | dev-practices | 321 | 42.3% |
 | skills-mcp | 176 | 23.2% |
 | prompting | 115 | 15.2% |
 | research | 189 | 24.9% |
-| industry | 106 | 14.0% |
-| management | 118 | 15.6% |
+| industry | 107 | 14.1% |
+| management | 119 | 15.7% |
 | questionable | 106 | 14.0% |
-| general | 102 | 13.5% |
+| general | 102 | 13.4% |
 
 ---
 ## Quick Reference (50 Most Recent)
@@ -2968,7 +2968,7 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.
 
-### Industry (106)
+### Industry (107)
 
 - [Tibo](https://x.com/thsottiaux/status/2082241164850364555) — 2026-07-30: Announces a new open-source CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities in code — scan repositories, review changes, track findings over time, and run security checks in CI.
 
@@ -3061,6 +3061,8 @@
 - [コムテ (Komte)](https://x.com/commte/status/2054136870016356408) — 2026-05-13: Google's official Skills have arrived: 13 skills, standard-compliant with Agent Skills and supported by Claude Code, Antigravity, Gemini CLI, Cursor, and GitHub Copilot (github.com/google/skills).
 
 - [Muhammad Ayan](https://x.com/socialwithaayan/status/2053875867487777175) — 2026-05-12: ALL-CAPS 'BREAKING' claim that Anthropic open-sourced 'the entire Wall Street workflow' as Claude agents (DCF/LBO models, equity research, merger analysis, KYC) connecting to Bloomberg/FactSet/S&P/Morningstar/PitchBook and building live Excel models - a one-line Claude Code plugin (19.8K stars, Apache-2.0).
+
+- [Tom Verrilli](https://x.com/tdrobbo/status/2053836764997959898) — 2026-05-11: Tom Verrilli (product exec at Whatnot) argues the PM role is being reset by AI: of 31,832 PM applicants in two years Whatnot hired one, and it runs ~20 PMs for 1,200+ employees, mapping PMs to problems (not to EMs) and requiring every employee to sell, buy, and handle CX tickets. His thesis — 'product is a trade, not a qualification'; the ZIRP-era PM boom minted ~80,000 mostly-average PMs far from customers, and AI's real disruption is that coaching-through-people is no longer the singular source of leverage, so the leverage now accrues to 'T-shaped' ICs who still know how to do the work. PRDs aren't dead — they're a vessel for thinking clearly.
 
 - [Himanshu Kumar](https://x.com/codewithimanshu/status/2052573291131589101) — 2026-05-08: Engagement-heavy framing around a free MIT lecture from Jim Simons on quant trading math. Claims Renaissance Technologies-style pattern recognition is now buildable in a weekend with Claude Code (no team of 50 PhDs needed). Hype style; the lecture link itself is the real reference.
 
@@ -3182,7 +3184,7 @@
 
 - [Santiago](https://x.com/svpino/status/1881336934418755862) — 2025-01-21: Walks through GroundX, an open-source, self-hostable/air-gapped enterprise RAG system. Two services: Ingest (a pretrained vision model that 'understands' documents instead of feeding raw docs to the LLM) and Search (text+vector search with a fine-tuned re-ranker). Santiago's thesis: most teams need better ingestion, not better retrieval; includes a video demo and the free X-Ray inspection tool.
 
-### Management (118)
+### Management (119)
 
 - [Xudong Han](https://x.com/xudong07452910/status/2082028299275149685) — 2026-07-29: Recommends the article 'Why Software Factories Fail' — its author ran a fully automated software factory and found agents can quickly produce test-passing code, but architecture, boundaries, and long-term maintainability still require human judgment; the bill for poor architecture comes due months later.
 
@@ -3277,6 +3279,8 @@
 - [Charly Wargnier](https://x.com/datachaz/status/2054225085100151163) — 2026-05-13: 'Karpathy was right - 90% of AI advice dies in 6 months'; links Rohit's 'What to Learn, Build, and Skip in AI Agents (2026)' on separating signal from noise amid endless frameworks and '10x' launches.
 
 - [Rahul](https://x.com/sairahul1/status/2054171777119801764) — 2026-05-12: 'If you're building AI agents and haven't watched this Anthropic talk, you're behind' - a 22-min talk on tool orchestration, memory, observability, long-running agents, and production infra; links a 2026 'AI Agent Engineer roadmap.'
+
+- [Tom Verrilli](https://x.com/tdrobbo/status/2053836764997959898) — 2026-05-11: Tom Verrilli (product exec at Whatnot) argues the PM role is being reset by AI: of 31,832 PM applicants in two years Whatnot hired one, and it runs ~20 PMs for 1,200+ employees, mapping PMs to problems (not to EMs) and requiring every employee to sell, buy, and handle CX tickets. His thesis — 'product is a trade, not a qualification'; the ZIRP-era PM boom minted ~80,000 mostly-average PMs far from customers, and AI's real disruption is that coaching-through-people is no longer the singular source of leverage, so the leverage now accrues to 'T-shaped' ICs who still know how to do the work. PRDs aren't dead — they're a vessel for thinking clearly.
 
 - [Dave Kline](https://x.com/dklineii/status/2052372231800439054) — 2026-05-08: Dave Kline teases 5 AI prompts for 1:1 prep — claims his 5-minute pre-meeting AI ritual changed the quality of his 1:1s. Listicle framing; substance in the thread.
 
@@ -4755,6 +4759,9 @@
 
 - **2026-05-12** | [Muhammad Ayan](https://x.com/socialwithaayan/status/2053875867487777175) | claude-code, industry, questionable
   ALL-CAPS 'BREAKING' claim that Anthropic open-sourced 'the entire Wall Street workflow' as Claude agents (DCF/LBO models, equity research, merger analysis, KYC) connecting to Bloomberg/FactSet/S&P/Morningstar/PitchBook and building live Excel models - a one-line Claude Code plugin (19.8K stars, Apache-2.0).
+
+- **2026-05-11** | [Tom Verrilli](https://x.com/tdrobbo/status/2053836764997959898) | management, industry
+  Tom Verrilli (product exec at Whatnot) argues the PM role is being reset by AI: of 31,832 PM applicants in two years Whatnot hired one, and it runs ~20 PMs for 1,200+ employees, mapping PMs to problems (not to EMs) and requiring every employee to sell, buy, and handle CX tickets. His thesis — 'product is a trade, not a qualification'; the ZIRP-era PM boom minted ~80,000 mostly-average PMs far from customers, and AI's real disruption is that coaching-through-people is no longer the singular source of leverage, so the leverage now accrues to 'T-shaped' ICs who still know how to do the work. PRDs aren't dead — they're a vessel for thinking clearly.
 
 - **2026-05-11** | [Garry Tan](https://x.com/garrytan/status/2053538847795880414) | agent-design, skills-mcp, claude-code
   'Code as memory' (via @finbarr): work with the agent non-deterministically the first time (research + write a script), then just execute the script on every future run. Links 'How to really stop your agents from making the same mistakes.'

@@ -7708,6 +7708,31 @@
   },
   {
     "date": "2026-05-11",
+    "author": "Tom Verrilli",
+    "handle": "@tdrobbo",
+    "subject": "Post by tdrobbo on X",
+    "url": "https://x.com/tdrobbo/status/2053836764997959898",
+    "summary": "Tom Verrilli (product exec at Whatnot) argues the PM role is being reset by AI: of 31,832 PM applicants in two years Whatnot hired one, and it runs ~20 PMs for 1,200+ employees, mapping PMs to problems (not to EMs) and requiring every employee to sell, buy, and handle CX tickets. His thesis — 'product is a trade, not a qualification'; the ZIRP-era PM boom minted ~80,000 mostly-average PMs far from customers, and AI's real disruption is that coaching-through-people is no longer the singular source of leverage, so the leverage now accrues to 'T-shaped' ICs who still know how to do the work. PRDs aren't dead — they're a vessel for thinking clearly.",
+    "topics": [
+      "management",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "463K",
+    "notes": "",
+    "enriched": true,
+    "content": "In the last two years, 31,832 people applied to be a Product Manager at Whatnot. We hired one. That's not a process failure. No one knows what it means to be a PM in the world of AI, but everything I see says the industry is moving towards us and how we build here — because no tool will make you useful if you aren't doing the right job.\n\nFirst, the average PM is deeply average: the function ballooned during the FAANG-scale, ZIRP era, minting ~80,000 PMs buried in gargantuan teams, far from customers, taught paint-by-number PM'ing. Second, we made our best worse — supervising five people, the job devolves into story-telling and shepherding reviews.\n\nWhatnot runs a deliberately lean product culture: ~20 PMs for 1200+ employees (a Twitch+eBay comp would run >400). Product is a trade, not a qualification. PMs are mapped to problems, not to EMs, and are 'T-shaped' — breadth of context plus depth in their area. Every employee must sell, buy, and do CX tickets.\n\nOn AI: PRDs aren't dead — a PRD is a vessel for thinking clearly. AI gives PMs leverage across the whole development process (untangling data that needed a data scientist, turning a PRD into every CX SOP, building triage bots, finding localization gaps). The most disruptive thing: coaching/working-through-people is no longer the singular source of leverage — but that leverage is only available to people who still know how to do the work. This will entice the best PMs back to actual PM work. The bar for hiring only goes up as AI rewards great ICs with leverage.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-05-11",
     "author": "Garry Tan",
     "handle": "@garrytan",
     "subject": "Post by Garry Tan on X",
