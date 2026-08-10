@@ -1,5 +1,234 @@
 [
   {
+    "date": "2026-08-08",
+    "author": "Aaron Levie",
+    "handle": "@levie",
+    "subject": "Post by Aaron Levie on X",
+    "url": "https://x.com/levie/status/2086115009915142648",
+    "summary": "Box CEO Aaron Levie argues enterprise AI productivity gains will vary far more widely than expected, because frontier gains require fundamentally reworking workflows around agents — which most orgs won't do. The bigger win is wiring agents invisibly into existing systems of record so employees never have to change how they work.",
+    "topics": [
+      "management",
+      "industry",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Aaron Levie (@levie): AI productivity gains will vary wildly — frontier gains are huge if you change workflows to support agents, but most people won't/can't due to complexity. So most automation will come from wiring agents into workflows the user never notices: don't require the human to prompt — find the most repetitive processes and build agents into existing systems of record employees already use.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-08",
+    "author": "Alex Prompter",
+    "handle": "@alex_prompter",
+    "subject": "Post by Alex Prompter on X (read for panel-review)",
+    "url": "https://x.com/alex_prompter/status/2086102111742464412",
+    "summary": "Argues a multi-agent council is worthless if the agents just agree — you must structure the disagreement. Four design choices: three rounds (isolated positions, then cross-examination, then a vote with mandatory dissent recording) and two fixed anchor voters (e.g. a Strategist) present in every council regardless of domain.",
+    "topics": [
+      "agent-design",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "flag: read for panel-review",
+    "enriched": true,
+    "content": "Alex Prompter (@alex_prompter): A council of five AI agents agreeing is an echo chamber. Structure the disagreement or the consensus is worthless. Four design choices: 1) Three rounds — isolated positions, then cross-examination, then a vote with mandatory dissent recording. 2) Two anchor voters (e.g. a Strategist) in every council regardless of domain. Dissent matters as much as consensus because it tells you what you're choosing to ignore.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-08",
+    "author": "Akshay",
+    "handle": "@akshay_pachaar",
+    "subject": "Post by Akshay on X",
+    "url": "https://x.com/akshay_pachaar/status/2086079311279493389",
+    "summary": "Describes a Stanford system that is effectively an agent-native version of Git: it snapshots the full run state (edited files, dev server, database, installed packages, KV cache) so that when an agent goes off track at some step it can roll back to a known-good checkpoint instead of fixing forward or restarting — avoiding wasted tokens and re-prefilled context.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Akshay (@akshay_pachaar): Stanford built the agent-native version of Git. A long agent run accumulates state: files edited/created, dev server, database, installed packages, KV cache. If the agent errs at step 10 (e.g. misreads a traceback and rewrites a good file), tests fail and the run derails though steps 1-8 were correct. Fixing forward burns tokens and grows context; a human redirect or full restart is wasteful. Instead, checkpoint and roll back to a good step.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-08",
+    "author": "0xSero",
+    "handle": "@0xsero",
+    "subject": "Post by 0xSero on X",
+    "url": "https://x.com/0xsero/status/2085976251018457398",
+    "summary": "Quote-tweets Tom Greenwald's launch of Magnitude, a fully local, private, offline open-source agent (no API keys, no token costs) with the harness bundled into the inference engine — framed as a response to today's agents shipping every prompt, file, and secret to Anthropic/OpenAI.",
+    "topics": [
+      "agent-design",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "0xSero (@0xSero): amazing work by Tom — harness bundled with the inference engine. Quoting Tom Greenwald (@tomgreenwald): Introducing Magnitude, your actually local agent. 100% private and offline. No token costs, no API keys. Open source. Today's agents are local, the model isn't — every prompt, file, and secret gets sent to Anthropic/OpenAI. Magnitude is built around local. (84K views)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-08",
+    "author": "Xudong Han",
+    "handle": "@xudong07452910",
+    "subject": "Post by Xudong Han on X",
+    "url": "https://x.com/xudong07452910/status/2085939058237432019",
+    "summary": "Highlights Scale AI's article \"Model or Harness?\", which studies failure localization for AI agents — deciding whether a given failure calls for retraining the model or fixing the harness (context, memory, tools, grader, runtime). It organizes 41 common failure types and maps each to specific component interactions and the responsible party.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Xudong Han (@Xudong07452910): After an Agent fails, should we fix the model or the harness? Scale AI's article \"Model or Harness?\" investigates failure localization for Agents. Beyond the model there are Context, Memory, Tool, Grader, users, runtime. Same failure, different causes: context compression may have deleted an instruction (harness fix) or the model ignored present info (needs training). The paper organizes 41 failure types and maps each to component interactions + responsible party.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-08",
+    "author": "Yarchi",
+    "handle": "@undefinedki",
+    "subject": "Post by Yarchi on X",
+    "url": "https://x.com/undefinedki/status/2085832862817820988",
+    "summary": "Summarizes how NVIDIA builds agent harnesses internally: 82.2% on SWE-bench Verified using only 29 model calls / 1.1M tokens (vs ~78% competitors at up to 66 calls / 2.2M tokens). Six design commitments, no framework — typechecked Python tool signatures, objects held by reference with bounded previews, actions returned as executable Python with control flow, typed durable state outside the transcript, and a plain-Python orchestration loop; an agent is one class.",
+    "topics": [
+      "agent-design",
+      "research",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Yarchi (@undefinedKi): NVIDIA published how they build agent harnesses internally. Harness scores 82.2% on SWE-bench Verified vs 78.2%/78.6% competitors (one at 66 calls, 2.2M tokens); theirs uses 29 calls, 1.1M tokens. Six design commitments, no framework: tool calls are validated Python signatures (typecheck-fail never reaches model); model holds objects by reference with bounded previews; actions come back as executable Python with control flow (one call runs a whole loop); durable state is typed and outside conversation history; orchestration loop is plain Python; an agent is one class, methods are capabilities, docstrings are tool docs.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-08",
+    "author": "ClaudeDevs",
+    "handle": "@claudedevs",
+    "subject": "Post by ClaudeDevs on X",
+    "url": "https://x.com/claudedevs/status/2085817074816070014",
+    "summary": "Announces a new Claude Code feature: sessions can now message each other. Rather than re-explaining context in a second session, you can have one session send a summary (not your history or files) that the other session picks up mid-task.",
+    "topics": [
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "7.2M",
+    "notes": "",
+    "enriched": true,
+    "content": "ClaudeDevs (@ClaudeDevs): New in Claude Code — your sessions can now message each other. Instead of re-explaining yourself in another session, tell Claude to do it. It sends a summary (not your history or files), and the other session picks it up mid-task. (7.2M views)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-08",
+    "author": "beamnxw ./",
+    "handle": "@beamnxw",
+    "subject": "Post by beamnxw ./ on X",
+    "url": "https://x.com/beamnxw/status/2085787859680637092",
+    "summary": "Summarizes a CS paper formalizing the filesystem as long-term memory for autonomous agents: a management agent organizes incoming experience into hierarchical markdown files, a search agent retrieves paths with citations, and an execution agent distills trajectories into skills — roughly halving retrieval costs on large context stores. Notably, the tool harness reshapes memory organization as strongly as swapping the underlying LLM.",
+    "topics": [
+      "research",
+      "agent-design",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "beamnxw ./ (@beamnxw): A CS paper formalizes filesystem-based memory as long-term storage for autonomous AI agents. Agents organizing their own memory trees as markdown files roughly halve retrieval costs on large context stores. The tool harness reshapes memory organization as strongly as swapping the underlying LLM. A management agent organizes incoming experience into hierarchical markdown files, a search agent retrieves paths with citations, and an execution agent distills trajectories into skills. Converts the local file system into a structured, inspectable memory store vs opaque vector stores/flat logs.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-08",
+    "author": "NO1ennn",
+    "handle": "@n01ennn",
+    "subject": "Post by NO1ennn on X",
+    "url": "https://x.com/n01ennn/status/2085758307495498103",
+    "summary": "Engagement-styled but substantive writeup of HippoRAG (Stanford): a brain-inspired LLM memory that builds a knowledge graph and spreads activation via Personalized PageRank (\"pattern completion\") instead of retrieving isolated chunks. Reported up to 20% better on multi-hop questions, 10-30x cheaper and 6-13x faster than iterative retrieval.",
+    "topics": [
+      "research",
+      "agent-design",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "NO1ennn (@N01ennn): STANFORD BUILT AN LLM MEMORY THAT WORKS LIKE A BRAIN. HippoRAG: no fine-tuning, no bigger model — the brain indexes and links memories so one cue pulls the whole memory. HippoRAG stops treating documents as isolated chunks; it builds a knowledge graph then spreads activation (Personalized PageRank) to pull a full answer from one cue (\"pattern completion\"). Results: up to 20% better on hard multi-hop questions, 10-30x cheaper and 6-13x faster than iterative retrieval, connects facts split across documents in one step.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-08-06",
     "author": "Teknium",
     "handle": "@teknium",

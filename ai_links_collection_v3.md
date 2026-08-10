@@ -1,52 +1,52 @@
 # AI Links Collection
-**Total Posts**: 759  
-**Date Range**: 2024-06-11 – 2026-08-06  
-**Enriched**: 758/759 (99%)
+**Total Posts**: 768  
+**Date Range**: 2024-06-11 – 2026-08-08  
+**Enriched**: 767/768 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-08-07T15:57:14Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-10T15:10:28Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-08-06** — [Teknium](https://x.com/teknium/status/2085156837561893117) — *now • Agent Design • 291K views • v1 enriched*  
   Teknium's Hermes Agent now auto-converts any document — PDF, Word, PowerPoint, Excel, OpenDocument, RTF, EPUB — to clean Markdown locally the moment the agent reads a file, powered by Firecrawl's new open-source anydoc (github.com/firecrawl/anydoc). anydoc is a Rust parser doing sub-5ms Markdown conversion across 13 formats (500 docx in 1.7s), zero-setup and self-installing on first use.
 - **2026-08-05** — [Viv](https://x.com/Vtrivedy10/status/2084693873599594570) — *now • Skills & MCP • v1 enriched*  
   Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedback. The premise: agents are poor one-shot environment generators because they're misaligned with human goals, so you infuse feedback by aligning on three files — Harness.md, Environment.md, Task.md. Install via `npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering`, point it at your repo + traces, and it maps the agent surface and proposes eval directions from real production data.
-- **2026-07-31** — [Viv](https://x.com/vtrivedy10/status/2082868751276413313) — *now • Skills & MCP • 33.8K views • v1 enriched*  
-  LangChain released v2 of its eval-engineering skill (npx skills add github.com/langchain-ai/langchain-skills --skill eval-engineering). Adds multi-turn eval user simulation with instructions/examples, deeper environment-design guidance (simulating backends/databases, using prod traces), and iterative harness/verifier refinement keeping domain experts in the loop.
-- **2026-08-06** — [Avi Chawla](https://x.com/_avichawla/status/2084909858386792674) — *near-term • Agent Design • v1 enriched*  
-  A new study evaluates 12 agent memory systems across four stages (representation, extraction, retrieval, maintenance) to find which stage decides whether an agent stays correct. The finding: reliability under fact updates and cross-session reasoning is set at write time, not query time — graph-based methods that add structure as memory is written stay reliable, while flat stores fail the same way.
-- **2026-08-06** — [elvis](https://x.com/omarsar0/status/2084761324786172347) — *near-term • Research • v1 enriched*  
-  elvis (@omarsar0) highlights a paper testing whether LLM self-reflection loops are worth their token cost. Across 7 methods on open models (1.5B/3B/7B) and two math benchmarks (150 questions each), all 36 cost-matched comparisons showed no reliable win and 10 were reliably worse — every one of the 18 self-inspection comparisons was negative. Self-Refine and a forced Reflexion sat 3.6–10.1 points below the repeated-sampling baseline at 7B.
+- **2026-08-08** — [Aaron Levie](https://x.com/levie/status/2086115009915142648) — *near-term • Management • v1 enriched*  
+  Box CEO Aaron Levie argues enterprise AI productivity gains will vary far more widely than expected, because frontier gains require fundamentally reworking workflows around agents — which most orgs won't do. The bigger win is wiring agents invisibly into existing systems of record so employees never have to change how they work.
+- **2026-08-08** — [Alex Prompter](https://x.com/alex_prompter/status/2086102111742464412) — *near-term • Agent Design • v1 enriched*  
+  Argues a multi-agent council is worthless if the agents just agree — you must structure the disagreement. Four design choices: three rounds (isolated positions, then cross-examination, then a vote with mandatory dissent recording) and two fixed anchor voters (e.g. a Strategist) present in every council regardless of domain.
+- **2026-08-08** — [Akshay](https://x.com/akshay_pachaar/status/2086079311279493389) — *near-term • Agent Design • v1 enriched*  
+  Describes a Stanford system that is effectively an agent-native version of Git: it snapshots the full run state (edited files, dev server, database, installed packages, KV cache) so that when an agent goes off track at some step it can roll back to a known-good checkpoint instead of fixing forward or restarting — avoiding wasted tokens and re-prefilled context.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **vibecode-to-production via agent skills** (51 posts, +16 this week)  
-  Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
-    - 2026-08-06 — [Avi Chawla](https://x.com/_avichawla/status/2084909858386792674): A new study evaluates 12 agent memory systems across four stages (representation, extraction, retrieval, maintenance) to find which stage de…
-    - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
-
-- **Claude skills craft** (134 posts, +15 this week)  
+- **Claude skills craft** (137 posts, +16 this week)  
   Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.
-    - 2026-08-06 — [Avi Chawla](https://x.com/_avichawla/status/2084909858386792674): A new study evaluates 12 agent memory systems across four stages (representation, extraction, retrieval, maintenance) to find which stage de…
-    - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
+    - 2026-08-08 — [Xudong Han](https://x.com/xudong07452910/status/2085939058237432019): Highlights Scale AI's article "Model or Harness?", which studies failure localization for AI agents — deciding whether a given failure calls…
+    - 2026-08-08 — [Yarchi](https://x.com/undefinedki/status/2085832862817820988): Summarizes how NVIDIA builds agent harnesses internally: 82.2% on SWE-bench Verified using only 29 model calls / 1.1M tokens (vs ~78% compet…
 
-- **loop engineering** (126 posts, +14 this week)  
+- **vibecode-to-production via agent skills** (61 posts, +16 this week)  
+  Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
+    - 2026-08-08 — [Xudong Han](https://x.com/xudong07452910/status/2085939058237432019): Highlights Scale AI's article "Model or Harness?", which studies failure localization for AI agents — deciding whether a given failure calls…
+    - 2026-08-08 — [Yarchi](https://x.com/undefinedki/status/2085832862817820988): Summarizes how NVIDIA builds agent harnesses internally: 82.2% on SWE-bench Verified using only 29 model calls / 1.1M tokens (vs ~78% compet…
+
+- **loop engineering** (129 posts, +14 this week)  
   Feedback loops and self-running agent loops: loop design patterns, loop libraries, nested build loops, self-improving / meta-learning loops.
-    - 2026-08-06 — [Avi Chawla](https://x.com/_avichawla/status/2084909858386792674): A new study evaluates 12 agent memory systems across four stages (representation, extraction, retrieval, maintenance) to find which stage de…
-    - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
+    - 2026-08-08 — [Xudong Han](https://x.com/xudong07452910/status/2085939058237432019): Highlights Scale AI's article "Model or Harness?", which studies failure localization for AI agents — deciding whether a given failure calls…
+    - 2026-08-08 — [Yarchi](https://x.com/undefinedki/status/2085832862817820988): Summarizes how NVIDIA builds agent harnesses internally: 82.2% on SWE-bench Verified using only 29 model calls / 1.1M tokens (vs ~78% compet…
 
-- **agent harness engineering** (89 posts, +12 this week)  
+- **agent harness engineering** (92 posts, +12 this week)  
   Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
-    - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
-    - 2026-08-05 — [Viv](https://x.com/Vtrivedy10/status/2084693873599594570): Introduces the 'eval-engineering' skill (from LangChain's langchain-skills repo) for synthetic environment/eval generation with human feedba…
+    - 2026-08-08 — [Xudong Han](https://x.com/xudong07452910/status/2085939058237432019): Highlights Scale AI's article "Model or Harness?", which studies failure localization for AI agents — deciding whether a given failure calls…
+    - 2026-08-08 — [Yarchi](https://x.com/undefinedki/status/2085832862817820988): Summarizes how NVIDIA builds agent harnesses internally: 82.2% on SWE-bench Verified using only 29 model calls / 1.1M tokens (vs ~78% compet…
 
-- **Claude Code setup & usage** (134 posts, +9 this week)  
-  Claude Code setup guides, cheatsheets, starter packs, and day-to-day usage / steering practices.
-    - 2026-08-05 — [beamnxw](https://x.com/beamnxw/status/2084669307212951788): Highlights a paper proposing a 'Cognitive Workspace' that replaces passive RAG with active LLM memory engineering: hierarchical task/episodi…
-    - 2026-08-05 — [rvaniaaa](https://x.com/rvaniaaaa/status/2084589218043462126): Outlines an 8-agent pipeline for an AI agent that autonomously discovers and packages new skills, with humans only approving the final pull …
+- **agents-as-judges-of-agents — bossman supervisor / self-verification** (24 posts, +12 this week)  
+  Critical supervisor agent judges worker agents rather than doing the work. Boris Cherny on self-verification loops; Viv on bossman supervisor.
+    - 2026-08-08 — [Xudong Han](https://x.com/xudong07452910/status/2085939058237432019): Highlights Scale AI's article "Model or Harness?", which studies failure localization for AI agents — deciding whether a given failure calls…
+    - 2026-08-08 — [Yarchi](https://x.com/undefinedki/status/2085832862817820988): Summarizes how NVIDIA builds agent harnesses internally: 82.2% on SWE-bench Verified using only 29 model calls / 1.1M tokens (vs ~78% compet…
 
 
 ### Revisit from last month
@@ -59,21 +59,30 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 434 | 57.2% |
-| claude-code | 179 | 23.6% |
-| dev-practices | 321 | 42.3% |
-| skills-mcp | 176 | 23.2% |
-| prompting | 115 | 15.2% |
-| research | 189 | 24.9% |
-| industry | 107 | 14.1% |
-| management | 119 | 15.7% |
-| questionable | 106 | 14.0% |
-| general | 102 | 13.4% |
+| agent-design | 442 | 57.6% |
+| claude-code | 180 | 23.4% |
+| dev-practices | 323 | 42.1% |
+| skills-mcp | 177 | 23.0% |
+| prompting | 116 | 15.1% |
+| research | 194 | 25.3% |
+| industry | 109 | 14.2% |
+| management | 120 | 15.6% |
+| questionable | 107 | 13.9% |
+| general | 102 | 13.3% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-08-08 | Aaron Levie | management | Box CEO Aaron Levie argues enterprise AI productivity gains will vary... |
+| 2026-08-08 | Alex Prompter | agent-design | Argues a multi-agent council is worthless if the agents just agree — y... |
+| 2026-08-08 | Akshay | agent-design | Describes a Stanford system that is effectively an agent-native versio... |
+| 2026-08-08 | 0xSero | agent-design | Quote-tweets Tom Greenwald's launch of Magnitude, a fully local, priva... |
+| 2026-08-08 | Xudong Han | agent-design | Highlights Scale AI's article "Model or Harness?", which studies failu... |
+| 2026-08-08 | Yarchi | agent-design | Summarizes how NVIDIA builds agent harnesses internally: 82.2% on SWE-... |
+| 2026-08-08 | ClaudeDevs | claude-code | Announces a new Claude Code feature: sessions can now message each oth... |
+| 2026-08-08 | beamnxw ./ | research | Summarizes a CS paper formalizing the filesystem as long-term memory f... |
+| 2026-08-08 | NO1ennn | research | Engagement-styled but substantive writeup of HippoRAG (Stanford): a br... |
 | 2026-08-06 | Teknium | agent-design | Teknium's Hermes Agent now auto-converts any document — PDF, Word, Pow... |
 | 2026-08-06 | Avi Chawla | agent-design | A new study evaluates 12 agent memory systems across four stages (repr... |
 | 2026-08-06 | elvis | research | elvis (@omarsar0) highlights a paper testing whether LLM self-reflecti... |
@@ -115,20 +124,27 @@
 | 2026-07-24 | Brian "Beej Jorgensen" Hall | management | Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veter... |
 | 2026-07-20 | Josh Bleecher Snyder | agent-design | Argues a coding agent is better than a compiler: not a new layer that... |
 | 2026-07-20 | Wilson Lin | agent-design | Cursor Research (Wilson Lin) on agent swarms and the new model economi... |
-| 2026-07-18 | Adam Jacob | agent-design | Adam Jacob argues the single best way to cut AI spend is to move deter... |
-| 2026-07-17 | Paul Iusztin | agent-design | On 'wiki memory' as an emerging agent-memory pattern (quoting Harrison... |
-| 2026-07-17 | Tom Dörr | agent-design | Hyperresearch turns Claude Code into a deep-research agent: a 16-step... |
-| 2026-07-17 | Paul Hudson | prompting | Shares a reusable 'adversarial unit test sweep' prompt (set Codex/Sol... |
-| 2026-07-17 | Bryan | skills-mcp | Stripe open-sourced its internal AI toolkit at github.com/stripe/ai —... |
-| 2026-07-17 | Boris Cherny | management | Boris Cherny (Claude Code) on AI adoption: everywhere he looks, one en... |
-| 2026-07-17 | Modal | agent-design | Modal engineering post on scaling to 1 million concurrent sandboxes, c... |
-| 2026-07-17 | Harrison Chase | agent-design | Harrison Chase (co-founder of LangChain) argues there needs to be an O... |
-| 2026-07-17 | Amjad Masad | management | Amjad Masad (Replit) on 'The Self-Driving Company': over the past six... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (434)
+### Agent Design (442)
+
+- [Aaron Levie](https://x.com/levie/status/2086115009915142648) — 2026-08-08: Box CEO Aaron Levie argues enterprise AI productivity gains will vary far more widely than expected, because frontier gains require fundamentally reworking workflows around agents — which most orgs won't do. The bigger win is wiring agents invisibly into existing systems of record so employees never have to change how they work.
+
+- [Alex Prompter](https://x.com/alex_prompter/status/2086102111742464412) — 2026-08-08: Argues a multi-agent council is worthless if the agents just agree — you must structure the disagreement. Four design choices: three rounds (isolated positions, then cross-examination, then a vote with mandatory dissent recording) and two fixed anchor voters (e.g. a Strategist) present in every council regardless of domain.
+
+- [Akshay](https://x.com/akshay_pachaar/status/2086079311279493389) — 2026-08-08: Describes a Stanford system that is effectively an agent-native version of Git: it snapshots the full run state (edited files, dev server, database, installed packages, KV cache) so that when an agent goes off track at some step it can roll back to a known-good checkpoint instead of fixing forward or restarting — avoiding wasted tokens and re-prefilled context.
+
+- [0xSero](https://x.com/0xsero/status/2085976251018457398) — 2026-08-08: Quote-tweets Tom Greenwald's launch of Magnitude, a fully local, private, offline open-source agent (no API keys, no token costs) with the harness bundled into the inference engine — framed as a response to today's agents shipping every prompt, file, and secret to Anthropic/OpenAI.
+
+- [Xudong Han](https://x.com/xudong07452910/status/2085939058237432019) — 2026-08-08: Highlights Scale AI's article "Model or Harness?", which studies failure localization for AI agents — deciding whether a given failure calls for retraining the model or fixing the harness (context, memory, tools, grader, runtime). It organizes 41 common failure types and maps each to specific component interactions and the responsible party.
+
+- [Yarchi](https://x.com/undefinedki/status/2085832862817820988) — 2026-08-08: Summarizes how NVIDIA builds agent harnesses internally: 82.2% on SWE-bench Verified using only 29 model calls / 1.1M tokens (vs ~78% competitors at up to 66 calls / 2.2M tokens). Six design commitments, no framework — typechecked Python tool signatures, objects held by reference with bounded previews, actions returned as executable Python with control flow, typed durable state outside the transcript, and a plain-Python orchestration loop; an agent is one class.
+
+- [beamnxw ./](https://x.com/beamnxw/status/2085787859680637092) — 2026-08-08: Summarizes a CS paper formalizing the filesystem as long-term memory for autonomous agents: a management agent organizes incoming experience into hierarchical markdown files, a search agent retrieves paths with citations, and an execution agent distills trajectories into skills — roughly halving retrieval costs on large context stores. Notably, the tool harness reshapes memory organization as strongly as swapping the underlying LLM.
+
+- [NO1ennn](https://x.com/n01ennn/status/2085758307495498103) — 2026-08-08: Engagement-styled but substantive writeup of HippoRAG (Stanford): a brain-inspired LLM memory that builds a knowledge graph and spreads activation via Personalized PageRank ("pattern completion") instead of retrieving isolated chunks. Reported up to 20% better on multi-hop questions, 10-30x cheaper and 6-13x faster than iterative retrieval.
 
 - [Teknium](https://x.com/teknium/status/2085156837561893117) — 2026-08-06: Teknium's Hermes Agent now auto-converts any document — PDF, Word, PowerPoint, Excel, OpenDocument, RTF, EPUB — to clean Markdown locally the moment the agent reads a file, powered by Firecrawl's new open-source anydoc (github.com/firecrawl/anydoc). anydoc is a Rust parser doing sub-5ms Markdown conversion across 13 formats (500 docx in 1.7s), zero-setup and self-installing on first use.
 
@@ -998,7 +1014,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Claude Code (179)
+### Claude Code (180)
+
+- [ClaudeDevs](https://x.com/claudedevs/status/2085817074816070014) — 2026-08-08: Announces a new Claude Code feature: sessions can now message each other. Rather than re-explaining context in a second session, you can have one session send a summary (not your history or files) that the other session picks up mid-task.
 
 - [Pi](https://x.com/pidotdev/status/2084602909346386111) — 2026-08-04: Earendil blog post (earendil.com/posts/pi-autoresearch-and-databricks) arguing that Pi — a deliberately minimal coding-agent harness with only 4 tools and a sub-1,000-token system prompt — beats heavier harnesses on both cost and quality. Cites a Databricks benchmark on their multi-million-line codebase where Pi + Opus 4.8 (xhigh) had the highest pass-rate at lower cost than Claude Code and Codex, sending ~3x less context per turn ("context discipline"), plus Shopify's pi-autoresearch extension (a self-improving optimization loop) yielding large speedups. Frames minimal, extensible harnesses as the winning design as frontier models get better at terminal environments.
 
@@ -1358,7 +1376,11 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (321)
+### Dev Practices (323)
+
+- [Akshay](https://x.com/akshay_pachaar/status/2086079311279493389) — 2026-08-08: Describes a Stanford system that is effectively an agent-native version of Git: it snapshots the full run state (edited files, dev server, database, installed packages, KV cache) so that when an agent goes off track at some step it can roll back to a known-good checkpoint instead of fixing forward or restarting — avoiding wasted tokens and re-prefilled context.
+
+- [Yarchi](https://x.com/undefinedki/status/2085832862817820988) — 2026-08-08: Summarizes how NVIDIA builds agent harnesses internally: 82.2% on SWE-bench Verified using only 29 model calls / 1.1M tokens (vs ~78% competitors at up to 66 calls / 2.2M tokens). Six design commitments, no framework — typechecked Python tool signatures, objects held by reference with bounded previews, actions returned as executable Python with control flow, typed durable state outside the transcript, and a plain-Python orchestration loop; an agent is one class.
 
 - [Shreyas](https://x.com/shreyasaiyer/status/2084679092201308339) — 2026-08-06: Shreyas (@shreyasaiyer) of Antimetal describes context-compression techniques that fit 10–100x more production telemetry into engineering agents' context windows, letting them solve classes of debugging problems that were previously intractable (a single trace in a large distributed system can otherwise exhaust the whole context window). Details in Antimetal's blog post 'Compressing Production Telemetry for Agents' (antimetal.com).
 
@@ -2002,7 +2024,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Skills & MCP (176)
+### Skills & MCP (177)
+
+- [beamnxw ./](https://x.com/beamnxw/status/2085787859680637092) — 2026-08-08: Summarizes a CS paper formalizing the filesystem as long-term memory for autonomous agents: a management agent organizes incoming experience into hierarchical markdown files, a search agent retrieves paths with citations, and an execution agent distills trajectories into skills — roughly halving retrieval costs on large context stores. Notably, the tool harness reshapes memory organization as strongly as swapping the underlying LLM.
 
 - [Teknium](https://x.com/teknium/status/2085156837561893117) — 2026-08-06: Teknium's Hermes Agent now auto-converts any document — PDF, Word, PowerPoint, Excel, OpenDocument, RTF, EPUB — to clean Markdown locally the moment the agent reads a file, powered by Firecrawl's new open-source anydoc (github.com/firecrawl/anydoc). anydoc is a Rust parser doing sub-5ms Markdown conversion across 13 formats (500 docx in 1.7s), zero-setup and self-installing on first use.
 
@@ -2356,7 +2380,9 @@
 
 - [Mervin Praison](https://x.com/mervinpraison/status/1881788246684013011) — 2025-01-22: Shows a 100% local RAG AI agent with reasoning: DeepSeek via Ollama for the LLM, PraisonAI to build the agent in a few lines, Nomic embeddings, and a Streamlit UI—code included in the thread.
 
-### Prompting (115)
+### Prompting (116)
+
+- [Alex Prompter](https://x.com/alex_prompter/status/2086102111742464412) — 2026-08-08: Argues a multi-agent council is worthless if the agents just agree — you must structure the disagreement. Four design choices: three rounds (isolated positions, then cross-examination, then a vote with mandatory dissent recording) and two fixed anchor voters (e.g. a Strategist) present in every council regardless of domain.
 
 - [elvis](https://x.com/omarsar0/status/2084761324786172347) — 2026-08-06: elvis (@omarsar0) highlights a paper testing whether LLM self-reflection loops are worth their token cost. Across 7 methods on open models (1.5B/3B/7B) and two math benchmarks (150 questions each), all 36 cost-matched comparisons showed no reliable win and 10 were reliably worse — every one of the 18 self-inspection comparisons was negative. Self-Refine and a forced Reflexion sat 3.6–10.1 points below the repeated-sampling baseline at 7B.
 
@@ -2588,7 +2614,17 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-### Research (189)
+### Research (194)
+
+- [Akshay](https://x.com/akshay_pachaar/status/2086079311279493389) — 2026-08-08: Describes a Stanford system that is effectively an agent-native version of Git: it snapshots the full run state (edited files, dev server, database, installed packages, KV cache) so that when an agent goes off track at some step it can roll back to a known-good checkpoint instead of fixing forward or restarting — avoiding wasted tokens and re-prefilled context.
+
+- [Xudong Han](https://x.com/xudong07452910/status/2085939058237432019) — 2026-08-08: Highlights Scale AI's article "Model or Harness?", which studies failure localization for AI agents — deciding whether a given failure calls for retraining the model or fixing the harness (context, memory, tools, grader, runtime). It organizes 41 common failure types and maps each to specific component interactions and the responsible party.
+
+- [Yarchi](https://x.com/undefinedki/status/2085832862817820988) — 2026-08-08: Summarizes how NVIDIA builds agent harnesses internally: 82.2% on SWE-bench Verified using only 29 model calls / 1.1M tokens (vs ~78% competitors at up to 66 calls / 2.2M tokens). Six design commitments, no framework — typechecked Python tool signatures, objects held by reference with bounded previews, actions returned as executable Python with control flow, typed durable state outside the transcript, and a plain-Python orchestration loop; an agent is one class.
+
+- [beamnxw ./](https://x.com/beamnxw/status/2085787859680637092) — 2026-08-08: Summarizes a CS paper formalizing the filesystem as long-term memory for autonomous agents: a management agent organizes incoming experience into hierarchical markdown files, a search agent retrieves paths with citations, and an execution agent distills trajectories into skills — roughly halving retrieval costs on large context stores. Notably, the tool harness reshapes memory organization as strongly as swapping the underlying LLM.
+
+- [NO1ennn](https://x.com/n01ennn/status/2085758307495498103) — 2026-08-08: Engagement-styled but substantive writeup of HippoRAG (Stanford): a brain-inspired LLM memory that builds a knowledge graph and spreads activation via Personalized PageRank ("pattern completion") instead of retrieving isolated chunks. Reported up to 20% better on multi-hop questions, 10-30x cheaper and 6-13x faster than iterative retrieval.
 
 - [Avi Chawla](https://x.com/_avichawla/status/2084909858386792674) — 2026-08-06: A new study evaluates 12 agent memory systems across four stages (representation, extraction, retrieval, maintenance) to find which stage decides whether an agent stays correct. The finding: reliability under fact updates and cross-session reasoning is set at write time, not query time — graph-based methods that add structure as memory is written stay reliable, while flat stores fail the same way.
 
@@ -2968,7 +3004,11 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.
 
-### Industry (107)
+### Industry (109)
+
+- [Aaron Levie](https://x.com/levie/status/2086115009915142648) — 2026-08-08: Box CEO Aaron Levie argues enterprise AI productivity gains will vary far more widely than expected, because frontier gains require fundamentally reworking workflows around agents — which most orgs won't do. The bigger win is wiring agents invisibly into existing systems of record so employees never have to change how they work.
+
+- [0xSero](https://x.com/0xsero/status/2085976251018457398) — 2026-08-08: Quote-tweets Tom Greenwald's launch of Magnitude, a fully local, private, offline open-source agent (no API keys, no token costs) with the harness bundled into the inference engine — framed as a response to today's agents shipping every prompt, file, and secret to Anthropic/OpenAI.
 
 - [Tibo](https://x.com/thsottiaux/status/2082241164850364555) — 2026-07-30: Announces a new open-source CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities in code — scan repositories, review changes, track findings over time, and run security checks in CI.
 
@@ -3184,7 +3224,9 @@
 
 - [Santiago](https://x.com/svpino/status/1881336934418755862) — 2025-01-21: Walks through GroundX, an open-source, self-hostable/air-gapped enterprise RAG system. Two services: Ingest (a pretrained vision model that 'understands' documents instead of feeding raw docs to the LLM) and Search (text+vector search with a fine-tuned re-ranker). Santiago's thesis: most teams need better ingestion, not better retrieval; includes a video demo and the free X-Ray inspection tool.
 
-### Management (119)
+### Management (120)
+
+- [Aaron Levie](https://x.com/levie/status/2086115009915142648) — 2026-08-08: Box CEO Aaron Levie argues enterprise AI productivity gains will vary far more widely than expected, because frontier gains require fundamentally reworking workflows around agents — which most orgs won't do. The bigger win is wiring agents invisibly into existing systems of record so employees never have to change how they work.
 
 - [Xudong Han](https://x.com/xudong07452910/status/2082028299275149685) — 2026-07-29: Recommends the article 'Why Software Factories Fail' — its author ran a fully automated software factory and found agents can quickly produce test-passing code, but architecture, boundaries, and long-term maintainability still require human judgment; the bill for poor architecture comes due months later.
 
@@ -3424,7 +3466,9 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Points to a superengineer.net blog post as a good summary of Elon Musk's 5-step design/engineering method (DFX).
 
-### Questionable (106)
+### Questionable (107)
+
+- [NO1ennn](https://x.com/n01ennn/status/2085758307495498103) — 2026-08-08: Engagement-styled but substantive writeup of HippoRAG (Stanford): a brain-inspired LLM memory that builds a knowledge graph and spreads activation via Personalized PageRank ("pattern completion") instead of retrieving isolated chunks. Reported up to 20% better on multi-hop questions, 10-30x cheaper and 6-13x faster than iterative retrieval.
 
 - [rvaniaaa](https://x.com/rvaniaaaa/status/2084589218043462126) — 2026-08-05: Outlines an 8-agent pipeline for an AI agent that autonomously discovers and packages new skills, with humans only approving the final pull request. The agents split one job each — scout (find repos), filter (drop noise), reader (build context from docs not code), extractor (pull the reusable workflow), score (validate against objective criteria), generator (package into a skill with examples/commands/tests), reviewer (would an engineer install it unedited?), and publisher (open the PR). The pitch: automation proposes and humans approve, removing the manual find/read/install bottleneck so skill quality compounds. Framing is somewhat hype-driven but the architecture is concrete; full write-up in the linked article 'How to Build an AI That Never Stops Learning.'
 
@@ -3850,6 +3894,33 @@
 ## Full Chronological List
 
 ### Aug 2026
+
+- **2026-08-08** | [Aaron Levie](https://x.com/levie/status/2086115009915142648) | management, industry, agent-design
+  Box CEO Aaron Levie argues enterprise AI productivity gains will vary far more widely than expected, because frontier gains require fundamentally reworking workflows around agents — which most orgs won't do. The bigger win is wiring agents invisibly into existing systems of record so employees never have to change how they work.
+
+- **2026-08-08** | [Alex Prompter](https://x.com/alex_prompter/status/2086102111742464412) | agent-design, prompting
+  Argues a multi-agent council is worthless if the agents just agree — you must structure the disagreement. Four design choices: three rounds (isolated positions, then cross-examination, then a vote with mandatory dissent recording) and two fixed anchor voters (e.g. a Strategist) present in every council regardless of domain.
+
+- **2026-08-08** | [Akshay](https://x.com/akshay_pachaar/status/2086079311279493389) | agent-design, dev-practices, research
+  Describes a Stanford system that is effectively an agent-native version of Git: it snapshots the full run state (edited files, dev server, database, installed packages, KV cache) so that when an agent goes off track at some step it can roll back to a known-good checkpoint instead of fixing forward or restarting — avoiding wasted tokens and re-prefilled context.
+
+- **2026-08-08** | [0xSero](https://x.com/0xsero/status/2085976251018457398) | agent-design, industry
+  Quote-tweets Tom Greenwald's launch of Magnitude, a fully local, private, offline open-source agent (no API keys, no token costs) with the harness bundled into the inference engine — framed as a response to today's agents shipping every prompt, file, and secret to Anthropic/OpenAI.
+
+- **2026-08-08** | [Xudong Han](https://x.com/xudong07452910/status/2085939058237432019) | agent-design, research
+  Highlights Scale AI's article "Model or Harness?", which studies failure localization for AI agents — deciding whether a given failure calls for retraining the model or fixing the harness (context, memory, tools, grader, runtime). It organizes 41 common failure types and maps each to specific component interactions and the responsible party.
+
+- **2026-08-08** | [Yarchi](https://x.com/undefinedki/status/2085832862817820988) | agent-design, research, dev-practices
+  Summarizes how NVIDIA builds agent harnesses internally: 82.2% on SWE-bench Verified using only 29 model calls / 1.1M tokens (vs ~78% competitors at up to 66 calls / 2.2M tokens). Six design commitments, no framework — typechecked Python tool signatures, objects held by reference with bounded previews, actions returned as executable Python with control flow, typed durable state outside the transcript, and a plain-Python orchestration loop; an agent is one class.
+
+- **2026-08-08** | [ClaudeDevs](https://x.com/claudedevs/status/2085817074816070014) | claude-code
+  Announces a new Claude Code feature: sessions can now message each other. Rather than re-explaining context in a second session, you can have one session send a summary (not your history or files) that the other session picks up mid-task.
+
+- **2026-08-08** | [beamnxw ./](https://x.com/beamnxw/status/2085787859680637092) | research, agent-design, skills-mcp
+  Summarizes a CS paper formalizing the filesystem as long-term memory for autonomous agents: a management agent organizes incoming experience into hierarchical markdown files, a search agent retrieves paths with citations, and an execution agent distills trajectories into skills — roughly halving retrieval costs on large context stores. Notably, the tool harness reshapes memory organization as strongly as swapping the underlying LLM.
+
+- **2026-08-08** | [NO1ennn](https://x.com/n01ennn/status/2085758307495498103) | research, agent-design, questionable
+  Engagement-styled but substantive writeup of HippoRAG (Stanford): a brain-inspired LLM memory that builds a knowledge graph and spreads activation via Personalized PageRank ("pattern completion") instead of retrieving isolated chunks. Reported up to 20% better on multi-hop questions, 10-30x cheaper and 6-13x faster than iterative retrieval.
 
 - **2026-08-06** | [Teknium](https://x.com/teknium/status/2085156837561893117) | agent-design, skills-mcp
   Teknium's Hermes Agent now auto-converts any document — PDF, Word, PowerPoint, Excel, OpenDocument, RTF, EPUB — to clean Markdown locally the moment the agent reads a file, powered by Firecrawl's new open-source anydoc (github.com/firecrawl/anydoc). anydoc is a Rust parser doing sub-5ms Markdown conversion across 13 formats (500 docx in 1.7s), zero-setup and self-installing on first use.
