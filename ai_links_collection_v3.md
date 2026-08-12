@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-08-11T15:01:38Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-12T15:02:36Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-08-06** — [Teknium](https://x.com/teknium/status/2085156837561893117) — *now • Agent Design • 291K views • v1 enriched*  
@@ -28,7 +28,7 @@
     - 2026-08-08 — [Xudong Han](https://x.com/xudong07452910/status/2085939058237432019): Highlights Scale AI's article "Model or Harness?", which studies failure localization for AI agents — deciding whether a given failure calls…
     - 2026-08-08 — [Yarchi](https://x.com/undefinedki/status/2085832862817820988): Summarizes how NVIDIA builds agent harnesses internally: 82.2% on SWE-bench Verified using only 29 model calls / 1.1M tokens (vs ~78% compet…
 
-- **vibecode-to-production via agent skills** (65 posts, +16 this week)  
+- **vibecode-to-production via agent skills** (66 posts, +16 this week)  
   Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
     - 2026-08-08 — [Xudong Han](https://x.com/xudong07452910/status/2085939058237432019): Highlights Scale AI's article "Model or Harness?", which studies failure localization for AI agents — deciding whether a given failure calls…
     - 2026-08-08 — [Yarchi](https://x.com/undefinedki/status/2085832862817820988): Summarizes how NVIDIA builds agent harnesses internally: 82.2% on SWE-bench Verified using only 29 model calls / 1.1M tokens (vs ~78% compet…
@@ -43,10 +43,10 @@
     - 2026-08-08 — [Xudong Han](https://x.com/xudong07452910/status/2085939058237432019): Highlights Scale AI's article "Model or Harness?", which studies failure localization for AI agents — deciding whether a given failure calls…
     - 2026-08-08 — [Yarchi](https://x.com/undefinedki/status/2085832862817820988): Summarizes how NVIDIA builds agent harnesses internally: 82.2% on SWE-bench Verified using only 29 model calls / 1.1M tokens (vs ~78% compet…
 
-- **agent identity files (SOUL.md, CLAUDE.md, persona scaffolds)** (44 posts, +12 this week)  
-  Recurring pattern of giving an agent a persistent identity file that loads automatically and shapes behavior.
+- **agentic code review at production scale** (31 posts, +13 this week)  
+  Deterministic engineering handles what must never fail; LLM only does context reading and reasoning. Alibaba open-code-review.
     - 2026-08-08 — [Xudong Han](https://x.com/xudong07452910/status/2085939058237432019): Highlights Scale AI's article "Model or Harness?", which studies failure localization for AI agents — deciding whether a given failure calls…
-    - 2026-08-08 — [beamnxw ./](https://x.com/beamnxw/status/2085787859680637092): Summarizes a CS paper formalizing the filesystem as long-term memory for autonomous agents: a management agent organizes incoming experience…
+    - 2026-08-08 — [Yarchi](https://x.com/undefinedki/status/2085832862817820988): Summarizes how NVIDIA builds agent harnesses internally: 82.2% on SWE-bench Verified using only 29 model calls / 1.1M tokens (vs ~78% compet…
 
 
 ### Revisit from last month
