@@ -1,5 +1,285 @@
 [
   {
+    "date": "2026-08-13",
+    "author": "marfin",
+    "handle": "@marfinxx",
+    "subject": "Post by marfin on X",
+    "url": "https://x.com/marfinxx/status/2087671840596459629",
+    "summary": "Google and Cambridge researchers automate multi-agent topology design by jointly searching over sub-agent prompts and inter-agent communication graphs, rather than hand-crafting static topologies. Four pillars: joint search space, automated graph mutation (pruning unproductive message channels), role-aware prompt tuning by structural position, and topology benchmark gains — finding a compute-optimal topology per target task.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Google and Cambridge researchers just automated multi-agent topology design by searching over prompt instructions and communication graphs. Jointly optimizing sub-agent prompts and network routing graphs to find the compute-optimal topology for any target task.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-13",
+    "author": "Khushi",
+    "handle": "@khushiirl",
+    "subject": "Post by Khushi on X",
+    "url": "https://x.com/khushiirl/status/2087591328725213225",
+    "summary": "Points to a free resource for learning 'harness engineering' (agent harness design): walkinglabs.github.io/learn-harness-engineering.",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "58.5K",
+    "notes": "",
+    "enriched": true,
+    "content": "Found the best resource to learn Harness Engineering: walkinglabs.github.io/learn-harness-engineering/en/",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-13",
+    "author": "Yarchi",
+    "handle": "@undefinedKi",
+    "subject": "Post by Yarchi on X",
+    "url": "https://x.com/undefinedki/status/2087585693547598310",
+    "summary": "DoorDash detailed how AI agents handled 130,000 engineering tasks in one month (25k code reviews/week) by moving agents off laptops into four components: a Firecracker microVM sandbox per task (cold-to-ready under 5s p95), a gateway providing least-privilege access to CI/tickets/monitoring with full logging, a YAML playbook declaring task/tools/permissions/output, and surfaces that fire the same playbook from Slack, GitHub, or cron.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "DoorDash published how their AI agents automated 130,000 engineering tasks in a single month — sandbox (Firecracker microVM per task), gateway, playbook (YAML), surfaces.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-13",
+    "author": "dex",
+    "handle": "@dexhorthy",
+    "subject": "Post by dex on X",
+    "url": "https://x.com/dexhorthy/status/2087569590268391897",
+    "summary": "HumanLayer's /show-me skill makes coding agents converse with compact visual representations instead of walls of prose — lighter and faster than HTML for most dev-shaped problems. Install: npx skills add humanlayer/skills --skill show-me. Framed against widespread complaints about coding agents' unreadable text output.",
+    "topics": [
+      "claude-code",
+      "skills-mcp",
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "477K",
+    "notes": "",
+    "enriched": true,
+    "content": "/show-me: compact visual representations for coding agents. Make your agent converse visually instead of in walls of prose. npx skills add humanlayer/skills --skill show-me",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-13",
+    "author": "beamnxw ./",
+    "handle": "@beamnxw",
+    "subject": "Post by beamnxw ./ on X",
+    "url": "https://x.com/beamnxw/status/2087506344911720711",
+    "summary": "Highlights a 90-page CS survey mapping 150+ agent memory architectures into a 3D taxonomy for self-evolving long-horizon agents, arguing action-based memory and self-evolving structures boost long-horizon retention ~50%. Memory reframed from passive database lookup to training models to execute tool actions, update parametric weights, and consolidate episodic traces into skills. Quote-tweets an accompanying article, 'Context vs. Memory Engineering in Agentic AI Systems.'",
+    "topics": [
+      "research",
+      "agent-design",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "A computer science survey mapped 150+ agent memory architectures across 90 pages to build self-evolving long-horizon agents. 3D taxonomy; memory is no longer passive database lookup.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-13",
+    "author": "HOPE | Engineer.",
+    "handle": "@rlaope",
+    "subject": "Post by HOPE | Engineer. on X",
+    "url": "https://x.com/rlaope/status/2087417054085443931",
+    "summary": "Argues for using hermes-agent as an orchestration entry point rather than a coding tool: Hermes conducts a deep technical interview to lock the goal, then plans, splits tasks in parallel, and routes them to specialized coding harnesses (Claude, Pi, Codex), which are stronger at raw coding. Hermes's strengths are web search, human-friendly output, messenger endpoints, and its self-looping memory system.",
+    "topics": [
+      "agent-design",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Spent 30 Billion Tokens with hermes-agent. Shift perspective: Hermes as entry point that interviews the user, plans, splits tasks in parallel, and routes to specialized coding harnesses (Claude, Pi, Codex).",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-13",
+    "author": "nevian",
+    "handle": "@neviannn",
+    "subject": "Post by nevian on X",
+    "url": "https://x.com/neviannn/status/2087254502210490739",
+    "summary": "Highlights a Stanford AI Systems Lab paper formalizing why multi-agent pipelines fail and proposing the 'Control Plane Pattern' for autonomous research — deterministic signal queues, a single centralized reasoning agent, and knowledge-graph control planes replacing brittle handoff chains. Claims investigation latency cut from ~4 weeks to 30 minutes with ~10x lower token usage and no context-handoff decay. Quote-tweets a monokern article on the same topic.",
+    "topics": [
+      "research",
+      "agent-design",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Stanford AI Systems Lab formalizes why multi-agent pipelines fail and introduces the Control Plane Pattern for autonomous research. Deterministic signal queues, centralized reasoning agents, knowledge graph control planes.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-13",
+    "author": "Bessemer",
+    "handle": "@BessemerVP",
+    "subject": "Post by Bessemer on X",
+    "url": "https://x.com/bessemervp/status/2087182936651313398",
+    "summary": "Bessemer Venture Partners launched 'The Agentic Awakening,' a 63-page research report and playbook on agentic development drawn from 20+ engineering teams, offering frameworks to guide a company's AI transformation and benchmark how teams measure up. Site: theagenticawakening.com.",
+    "topics": [
+      "industry",
+      "management",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "164.9K",
+    "notes": "",
+    "enriched": true,
+    "content": "Today we launch The Agentic Awakening — deep-dive research and playbook on agentic development. 20+ AI-pilled engineering teams, 63 pages of insights and frameworks. theagenticawakening.com",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-13",
+    "author": "Superman",
+    "handle": "@thesupermanmx",
+    "subject": "Post by Superman on X",
+    "url": "https://x.com/thesupermanmx/status/2087047234093560102",
+    "summary": "Popularizes Anthropic's paper 'Emergent Introspective Awareness in Large Language Models,' which used mechanistic interpretability to inject raw concept activations (e.g. loudness) into Claude's internal layers and found the model could sometimes recognize and report the injected thought before acting on it — evidence of limited introspective awareness of its own internal states.",
+    "topics": [
+      "research",
+      "claude-code",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Anthropic scientists reached inside Claude's neural network and planted a thought; before speaking Claude said it noticed an injected thought relating to loudness. Paper: emergent introspective awareness in large language models.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-13",
+    "author": "Hermes Release Watch",
+    "handle": "@HermesWatcher",
+    "subject": "Post by Hermes Release Watch on X",
+    "url": "https://x.com/hermeswatcher/status/2086854830266675329",
+    "summary": "An X-article guide, 'From Chat to Agent System: 9 Steps to Make Hermes Actually Work for You,' on turning a capable chat into a durable personal agent system by moving work out of the conversation into persistent homes — project rules, persistent facts, reusable procedures, re-runnable workflows, delegated temporary work, and bounded high-stakes actions. Worked example: a recurring research brief built in nine steps.",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "21K",
+    "notes": "",
+    "enriched": true,
+    "content": "From Chat to Agent System: 9 Steps to Make Hermes Actually Work for You. Move the right parts of work out of the conversation into durable places: project rules, persistent facts, reusable procedures, re-runnable stable work.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-13",
+    "author": "Alex Prompter",
+    "handle": "@alex_prompter",
+    "subject": "Post by Alex Prompter on X",
+    "url": "https://x.com/alex_prompter/status/2086807496942068197",
+    "summary": "'Reverse Prompting 101' — an X article arguing that as models grow more capable the bottleneck shifts from their answers to your questions, so let the AI interview you first to gather context instead of you rewriting prompts. Credits Alex Finn (Creator Buddy) with naming 'reverse prompting' in a late-July post and references Vanderbilt research reaching the same idea from another angle.",
+    "topics": [
+      "prompting",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "30K",
+    "notes": "",
+    "enriched": true,
+    "content": "Reverse Prompting 101: stop rewriting your prompts, start answering the model's questions. A model that interviews you first collects context that improves everything after. Term coined by Alex Finn; Vanderbilt research echoes it.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-08-08",
     "author": "Aaron Levie",
     "handle": "@levie",
