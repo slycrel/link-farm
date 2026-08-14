@@ -1,5 +1,358 @@
 [
   {
+    "date": "2026-08-14",
+    "author": "Brian Roemmele",
+    "handle": "@brianroemmele",
+    "subject": "Post by Brian Roemmele on X",
+    "url": "https://x.com/brianroemmele/status/2088069286850179288",
+    "summary": "Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved paper arguing RLHF alignment induces mode collapse and typicality bias that flattens model creativity. Offers a training-free prompt-side fix to recover output diversity without retraining.",
+    "topics": [
+      "research",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "—",
+    "notes": "",
+    "enriched": true,
+    "content": "All AI Models Are Only Using A Fraction Of Its Abilities — How Stanford Research Reveals Mode Collapse and a Simple Prompt Fix. LLMs feel polished yet predictable: fluent, safe, competent, but missing genuine surprise. A new paper involving Stanford researchers explains why and offers a practical, training-free way to recover much of that lost creativity. After pre-training, alignment techniques such as RLHF make outputs more helpful and less harmful, but at the cost of diversity — mode collapse and typicality bias.\n\nVerbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-14",
+    "author": "Teknium",
+    "handle": "@teknium",
+    "subject": "Post by Teknium 🪽 on X",
+    "url": "https://x.com/teknium/status/2088003994904113614",
+    "summary": "Nous Research shipped Bot Mode for Hermes Agent (github.com/NousResearch/Hermes-Bot-Mode) as a one-day public beta plugin for Hermes Desktop. Instead of sessions, each agent profile is a persistent 'bot' with its own job, description and avatar, and bots can communicate with each other — a multi-agent persona layer over the desktop app.",
+    "topics": [
+      "agent-design",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "441.9K",
+    "notes": "",
+    "enriched": true,
+    "content": "Introducing Bot Mode for Hermes Agent. Bot Mode is an alternative to sessions mode, where you have one chat with each agent profile, or 'bot'. These bots can be given jobs, descriptions, profile pics, and communicate with your other bots! For one day we will do a public beta test of Bot Mode for Hermes Desktop through this plugin. Give me all your feedback here on how it does for you, if it works as expected, any bugs. Then we'll address the feedback and get it into the main Desktop App for everyone!\n\nNousResearch/Hermes-Bot-Mode",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-14",
+    "author": "Viv",
+    "handle": "@vtrivedy10",
+    "subject": "Post by Viv on X",
+    "url": "https://x.com/vtrivedy10/status/2087962694565368092",
+    "summary": "Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in walls of prose (lighter and faster than HTML). Viv's argument: agents need to design UX for human consumption, because the bottleneck on human-in-the-loop intervention is our ability to understand the work well enough to give feedback.",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "7,041",
+    "notes": "",
+    "enriched": true,
+    "content": "this is dope & woohoo to better tooling for agents to communicate their work to humans. agents need to be good at designing UX for human consumption. often there's small but super high value intervention points for humans to add their knowledge into agents doing work -> our input is basically the thing that makes everything work. but we're limited by our ability to understand the work that we need to give feedback on. so the easier we can give feedback the better our outcome.\n\n/show-me: compact visual representations for coding agents. tl;dr make your agent converse visually instead of in walls of prose. Lighter and faster than HTML, good enough for most dev-work shaped problems. Coding agents are pretty much unreadable.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-14",
+    "author": "Granite",
+    "handle": "@granite0x",
+    "subject": "Post by Granite on X",
+    "url": "https://x.com/granite0x/status/2087960767287230592",
+    "summary": "Vercel shipped Foreman, an open-source 'software factory' that splits the agentic coding loop into four sandboxed stations — Classifier, Analyst, Implementer, Reviewer — so no agent reviews its own work. The reviewer deliberately runs on a different model vendor and sees only the pushed branch, never the implementer's reasoning, so the agents can't collude; label an issue 'factory' and you get back a draft PR.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "—",
+    "notes": "",
+    "enriched": true,
+    "content": "Vercel just solved the biggest problem with trusting agents to write your code. Yesterday they shipped Foreman - an open-source software factory. Instead of one agent writing, reviewing and merging its own work - rubber-stamping its own bugs - Foreman splits the loop into four stations, each one an agent in its own sandbox. And the reviewer runs on a DIFFERENT model vendor: it never sees the implementer's reasoning, only the pushed branch. The agents can't collude. The flow: label an issue 'factory' -> Classifier triages it, asks questions if vague; Analyst turns it into a plan with acceptance criteria; Implementer codes it in a sandbox, runs your repo's own checks; Reviewer judges the branch against the criteria, can send it back twice; you get a draft PR, review, mark ready, merge.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-14",
+    "author": "mentalium",
+    "handle": "@mentalium_",
+    "subject": "Post by mentalium on X",
+    "url": "https://x.com/mentalium_/status/2087954681242734824",
+    "summary": "Not AI or engineering related — a viral repost of a 1992 Tony Robbins persuasion/sales masterclass, framed with scarcity hooks ('this rare tape disappears regularly'). Classic engagement farming; no technical content. Flagged questionable for review or removal.",
+    "topics": [
+      "questionable",
+      "general"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "1.2M",
+    "notes": "",
+    "enriched": true,
+    "content": "Jane street pays $600,000 for the skill of selling anything to anyone, and now this 21 minute Tony Robbins masterclass filmed 30 years ago in his castle gives it to you completely free. This is the uncut 1992 session. Just raw persuasion from the master who coached presidents and billionaires. You will learn how to find anyone's buying state and anchor your offer to that feeling. No scripts. No tricks. Just psychology that works on everyone. This rare tape disappears regularly. Save it while you can.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-14",
+    "author": "Harrison Chase",
+    "handle": "@hwchase17",
+    "subject": "Post by Harrison Chase on X",
+    "url": "https://x.com/hwchase17/status/2087950696457162837",
+    "summary": "LangChain's Harrison Chase, at Sequoia's 'Own Your Intelligence' event, frames owning your intelligence as three things: an open agent system (the harness), a compounding loop (evals), and a governed runtime. Notes managed harnesses are growing rapidly — useful framing for build-vs-buy decisions on agent infrastructure.",
+    "topics": [
+      "agent-design",
+      "management"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "18.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "talked about how harnesses & evals help you own your intelligence. how they fit in to the big picture: owning your intelligence means three things: - open agent system (harness is a big part of this!) - compounding loop (evals are a big part of this!) - governed runtime (harness also important here - we see managed harnesses growing rapidly)\n\nAn agent is three things: a harness, a model, and context. If you're serious about owning your intelligence, you probably want to own all three. LangChain founder Harrison Chase joined us at our Sequoia Own Your Intelligence event.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-14",
+    "author": "Bilal Bakr",
+    "handle": "@bil0090",
+    "subject": "Post by Bilal Bakr on X",
+    "url": "https://x.com/bil0090/status/2087947117411099073",
+    "summary": "A shareable rules-file snippet for tightening agent behavior on Opus 5 (author claims it transfers to other models), targeting drift, slowness and laziness. Two representative rules: 'Done means done' — five things asked means five delivered, and name the specific blocker in one sentence if genuinely stuck; and 'Act, don't ask' — do reversible, cheap work then report, since a question costs the user more than a re-run costs the agent.",
+    "topics": [
+      "prompting",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "—",
+    "notes": "",
+    "enriched": true,
+    "content": "I just fixed Opus 5, here's how. You can apply the same to 5.6 Sol to get better results. Opus 5 is a great model, it just needs some minor fixes. It drifts sometimes, its slow, & its lazy, heres how to fix this. Add these to your rules file: ## Done means done — Not half done. Not done except for the part you decided to skip. And not a report about how it will be done. Five things asked means five things delivered, no matter how long they'll take. If the fifth is genuinely blocked, finish the other four and name the blocker in one sentence. The specific blocker. Not 'this needs more investigation.' ## Act. Don't ask. — Reversible and cheap? Do it, then tell me. Research, data pulls, analysis, drafts, refactors inside the scope I gave you, testing an API. A question costs me more than a re-run costs you.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-14",
+    "author": "lifcc",
+    "handle": "@mylifcc",
+    "subject": "Post by lifcc on X",
+    "url": "https://x.com/mylifcc/status/2087920167216906410",
+    "summary": "Source-code read of DeepSeek Harness (translated from Chinese): it does not treat the prompt as a single system prompt but assembles a runtime from Identity + Persona + Tool Guidance + Runtime Context + Tool Schema + Variables + Middleware. The consequence is that a capability becomes Tool + Schema + Prompt Guidance — each module (shell, filesystem, web) owns its own model-facing instructions, mirroring interface/implementation separation in software engineering.",
+    "topics": [
+      "agent-design",
+      "prompting",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "—",
+    "notes": "",
+    "enriched": true,
+    "content": "I went through the source code of DeepSeek Harness and discovered a pretty interesting change: It doesn't treat the Prompt as a single System Prompt at all. Instead, it turns the Prompt into a Runtime. Roughly: Identity + Persona + Tool Guidance + Runtime Context + Tool Schema + Variables + Middleware, dynamically assembled into what the model sees. This means a capability is no longer just Tool + Code but Tool + Schema + Prompt Guidance. Whoever is responsible for that capability is also responsible for telling the model how it should be used. shell owns its own shell Prompt, filesystem owns its own filesystem Prompt, web owns its own web Prompt. This is a lot like modularity in software engineering: Capability = Implementation + Interface + Model-facing Instructions.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-14",
+    "author": "ℏεsam",
+    "handle": "@hesamation",
+    "subject": "Post by ℏεsam on X",
+    "url": "https://x.com/hesamation/status/2087917006448173519",
+    "summary": "DeepSeek open-sourced DeepSeek Harness v0.1 (MIT, Developer Preview, powered by their Cordis meta-framework) and it hit 24K stars fast. It's a React web app designed so every component is a plugin — agent loops, models, tools, even sessions — so you swap parts rather than fork the source. Notable as a highly modular alternative harness worth watching for community extensions.",
+    "topics": [
+      "agent-design",
+      "skills-mcp",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "224.4K",
+    "notes": "",
+    "enriched": true,
+    "content": "DeepSeek published their harness. 24K stars already. it's a React web app with everything designed to be a plugin: from agent loops, models, tools, to even sessions. what does it mean? HIGH MODULARITY. you can swap any component with another one rather than edit the source code itself. so it's more of a harness garage where you can plug in your custom parts and enjoy. the community work on this is gonna be so interesting.\n\nDeepSeek Harness v0.1 is now available in Developer Preview! We're opening it up to developers building agent harnesses worldwide and open-sourcing the codebase in MIT license. Powered by the Cordis meta-framework.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-14",
+    "author": "rvaniaaa",
+    "handle": "@rvaniaaaa",
+    "subject": "Post by rvaniaaa on X",
+    "url": "https://x.com/rvaniaaaa/status/2087908921864323112",
+    "summary": "A one-page introduction to graph engineering for AI systems: model the world as a graph rather than linear lists and isolated records, with nodes (entities/concepts) and edges (relationships) as the entire vocabulary. Argues the payoff is context across systems, multi-hop reasoning, adaptability as new information arrives, and observability — relevant to concept-graph and memory design.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "—",
+    "notes": "",
+    "enriched": true,
+    "content": "someone just published the clearest introduction to graph engineering i've seen. one page. the whole idea explained. model the world as a graph, not a list. many AI systems still work with linear lists and isolated records. a graph captures entities, relationships, and context together. when AI can see the full structure, it can make better decisions. graphs mirror how real systems actually work. everything is connected. two elements form the basic vocabulary. node: an entity or concept. edge: a relationship or connection. why it matters in practice: context — connect the dots across systems, data, and people; reasoning — enable multi-hop inference and deeper understanding; adaptability — evolve the graph as new information emerges; observability.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-14",
+    "author": "David Ondrej",
+    "handle": "@davidondrej1",
+    "subject": "Post by David Ondrej on X (review)",
+    "url": "https://x.com/davidondrej1/status/2087862257279459422",
+    "summary": "Recommends vercel-labs/deepsec (github.com/vercel-labs/deepsec), a security harness for finding vulnerabilities in your code — pitched as essential tooling for anyone doing agentic engineering. Post itself is a one-liner endorsement; the value is the repo.",
+    "topics": [
+      "dev-practices",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "151.6K",
+    "notes": "flag: review",
+    "enriched": true,
+    "content": "every Agentic Engineer should use this repo. it's not even a debate. GitHub - vercel-labs/deepsec: Deepsec is a security harness for finding vulnerabilities in your code.\n\nvercel-labs/deepsec — security harness for finding vulnerabilities",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-14",
+    "author": "Ruben Hassid",
+    "handle": "@rubenhassid",
+    "subject": "Post by Ruben Hassid on X (add to review)",
+    "url": "https://x.com/rubenhassid/status/2087856703773508025",
+    "summary": "A running list of AI-writing tells that have replaced the em-dash as giveaways, with concrete rewrites: the 'That's not X. That's Y.' construction (say only the second half), stacked two-word fragments ('Fast. Simple.'), empty contrast metaphors ('less a hammer, more a scalpel'), and self-congratulatory filler ('And that matters.', 'That's the part everyone misses.') which can be deleted with no loss. Useful as an editing checklist for anything AI-drafted that goes out under a human name.",
+    "topics": [
+      "prompting",
+      "general"
+    ],
+    "audience": [
+      "me",
+      "team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "—",
+    "notes": "flag: add to review",
+    "enriched": true,
+    "content": "I absolutely hate AI writing. And my entire job is to write about AI. So I keep a file of the new em-dash to recognize AI writing instantly: Everyone learned the em dash trick. AI is trained to not write with em dashes anymore. Now you can get accused of using AI if you write in perfectly structured sentences. These are some of the dead giveaways of using AI: 1. 'That's not X. That's Y.' Say the second half only. 2. Two short bits stuck together. 'Fast. Simple.' 'No fluff. Just answers.' Pick only one to write like a real person. 3. 'Less a hammer, more a scalpel.' Visualizing two pictures with no advice. Directly say what to do instead. 4. Clapping for itself. 'And that matters.' 'That's the part everyone misses.' 'Which is exactly the point.' Delete them all. You lose nothing.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-14",
+    "author": "Yarchi",
+    "handle": "@undefinedki",
+    "subject": "Post by Yarchi on X",
+    "url": "https://x.com/undefinedki/status/2087634870260449474",
+    "summary": "Google Research, DeepMind and MIT ran 260 agent configurations across six benchmarks, five architectures and three model families, holding tools, prompts and compute fixed so only topology varied. Headline finding: once a single agent already scores above 45% on a task, adding agents makes it worse — coordination cost overtakes the remaining upside. Error amplification by topology was 1.0x single, 4.4x centralized, 5.1x hybrid, 7.8x decentralized, 17.2x independent; success per thousand tokens was 67.7 single vs 21.5 centralized and 13.6 hybrid, and on SWE-bench every multi-agent variant underperformed one agent.",
+    "topics": [
+      "research",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "—",
+    "notes": "",
+    "enriched": true,
+    "content": "This paper should be required reading in universities. Google Research, DeepMind and MIT ran 260 agent configurations across six benchmarks, five architectures and three model families, holding tools, prompts and compute fixed so the only thing that changed was the topology. Everyone building agents is guessing at one decision. This is the first work that measures it instead of arguing it. The rule is buried in section 4. Once your single agent already scores above 45% on a task, adding agents makes it worse. Coordination cost overtakes the remaining upside. Error amplification by topology: one agent 1.0x, centralized 4.4x, hybrid 5.1x, decentralized 7.8x, independent 17.2x. Success per thousand tokens: 67.7 for a single agent, 21.5 centralized, 13.6 hybrid. On SWE-bench every multi-agent variant scored worse than one agent.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-14",
+    "author": "Kevin Patrick Murphy",
+    "handle": "@sirbayes",
+    "subject": "Post by Kevin Patrick Murphy on X",
+    "url": "https://x.com/sirbayes/status/2087392620129796488",
+    "summary": "Introduces the Model Discovery Agent (MDA). Murphy's framing: answering interventional 'what if?' questions about actions never taken requires a mechanistic model rather than a curve fit, and you can only learn one by experimenting — so since experiments are costly, the real objective is data efficiency.",
+    "topics": [
+      "research",
+      "agent-design"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "170.8K",
+    "notes": "",
+    "enriched": true,
+    "content": "Predicting the answer to interventional 'what if?' questions — the outcome of an action you never took — need a *mechanistic* model, not a curve fit. And you can only learn one by *experimenting*. Experiments are costly, so the real game is **data efficiency**. Meet the Model Discovery Agent (MDA).",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-08-13",
     "author": "marfin",
     "handle": "@marfinxx",

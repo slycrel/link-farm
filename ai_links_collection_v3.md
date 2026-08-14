@@ -1,52 +1,52 @@
 # AI Links Collection
-**Total Posts**: 779  
-**Date Range**: 2024-06-11 – 2026-08-13  
-**Enriched**: 778/779 (99%)
+**Total Posts**: 793  
+**Date Range**: 2024-06-11 – 2026-08-14  
+**Enriched**: 792/793 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-08-13T15:22:53Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-14T15:09:48Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
+- **2026-08-14** — [Granite](https://x.com/granite0x/status/2087960767287230592) — *now • Agent Design • — views • v1 enriched*  
+  Vercel shipped Foreman, an open-source 'software factory' that splits the agentic coding loop into four sandboxed stations — Classifier, Analyst, Implementer, Reviewer — so no agent reviews its own work. The reviewer deliberately runs on a different model vendor and sees only the pushed branch, never the implementer's reasoning, so the agents can't collude; label an issue 'factory' and you get back a draft PR.
+- **2026-08-14** — [Bilal Bakr](https://x.com/bil0090/status/2087947117411099073) — *now • Prompting • — views • v1 enriched*  
+  A shareable rules-file snippet for tightening agent behavior on Opus 5 (author claims it transfers to other models), targeting drift, slowness and laziness. Two representative rules: 'Done means done' — five things asked means five delivered, and name the specific blocker in one sentence if genuinely stuck; and 'Act, don't ask' — do reversible, cheap work then report, since a question costs the user more than a re-run costs the agent.
+- **2026-08-14** — [David Ondrej](https://x.com/davidondrej1/status/2087862257279459422) — *now • Dev Practices • 151.6K views • v1 enriched*  
+  Recommends vercel-labs/deepsec (github.com/vercel-labs/deepsec), a security harness for finding vulnerabilities in your code — pitched as essential tooling for anyone doing agentic engineering. Post itself is a one-liner endorsement; the value is the repo.
 - **2026-08-13** — [dex](https://x.com/dexhorthy/status/2087569590268391897) — *now • Claude Code • 477K views • v1 enriched*  
   HumanLayer's /show-me skill makes coding agents converse with compact visual representations instead of walls of prose — lighter and faster than HTML for most dev-shaped problems. Install: npx skills add humanlayer/skills --skill show-me. Framed against widespread complaints about coding agents' unreadable text output.
-- **2026-08-06** — [Teknium](https://x.com/teknium/status/2085156837561893117) — *now • Agent Design • 291K views • v1 enriched*  
-  Teknium's Hermes Agent now auto-converts any document — PDF, Word, PowerPoint, Excel, OpenDocument, RTF, EPUB — to clean Markdown locally the moment the agent reads a file, powered by Firecrawl's new open-source anydoc (github.com/firecrawl/anydoc). anydoc is a Rust parser doing sub-5ms Markdown conversion across 13 formats (500 docx in 1.7s), zero-setup and self-installing on first use.
-- **2026-08-13** — [marfin](https://x.com/marfinxx/status/2087671840596459629) — *near-term • Agent Design • v1 enriched*  
-  Google and Cambridge researchers automate multi-agent topology design by jointly searching over sub-agent prompts and inter-agent communication graphs, rather than hand-crafting static topologies. Four pillars: joint search space, automated graph mutation (pruning unproductive message channels), role-aware prompt tuning by structural position, and topology benchmark gains — finding a compute-optimal topology per target task.
-- **2026-08-13** — [Khushi](https://x.com/khushiirl/status/2087591328725213225) — *near-term • Agent Design • 58.5K views • v1 enriched*  
-  Points to a free resource for learning 'harness engineering' (agent harness design): walkinglabs.github.io/learn-harness-engineering.
-- **2026-08-13** — [Yarchi](https://x.com/undefinedki/status/2087585693547598310) — *near-term • Agent Design • v1 enriched*  
-  DoorDash detailed how AI agents handled 130,000 engineering tasks in one month (25k code reviews/week) by moving agents off laptops into four components: a Firecracker microVM sandbox per task (cold-to-ready under 5s p95), a gateway providing least-privilege access to CI/tickets/monitoring with full logging, a YAML playbook declaring task/tools/permissions/output, and surfaces that fire the same playbook from Slack, GitHub, or cron.
+- **2026-08-14** — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288) — *near-term • Research • — views • v1 enriched*  
+  Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved paper arguing RLHF alignment induces mode collapse and typicality bias that flattens model creativity. Offers a training-free prompt-side fix to recover output diversity without retraining.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **Claude skills craft** (141 posts, +14 this week)  
-  Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.
-    - 2026-08-13 — [beamnxw ./](https://x.com/beamnxw/status/2087506344911720711): Highlights a 90-page CS survey mapping 150+ agent memory architectures into a 3D taxonomy for self-evolving long-horizon agents, arguing act…
-    - 2026-08-13 — [nevian](https://x.com/neviannn/status/2087254502210490739): Highlights a Stanford AI Systems Lab paper formalizing why multi-agent pipelines fail and proposing the 'Control Plane Pattern' for autonomo…
-
-- **vibecode-to-production via agent skills** (68 posts, +13 this week)  
+- **vibecode-to-production via agent skills** (76 posts, +19 this week)  
   Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
-    - 2026-08-13 — [beamnxw ./](https://x.com/beamnxw/status/2087506344911720711): Highlights a 90-page CS survey mapping 150+ agent memory architectures into a 3D taxonomy for self-evolving long-horizon agents, arguing act…
-    - 2026-08-13 — [nevian](https://x.com/neviannn/status/2087254502210490739): Highlights a Stanford AI Systems Lab paper formalizing why multi-agent pipelines fail and proposing the 'Control Plane Pattern' for autonomo…
+    - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
+    - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
 
-- **loop engineering** (131 posts, +12 this week)  
-  Feedback loops and self-running agent loops: loop design patterns, loop libraries, nested build loops, self-improving / meta-learning loops.
-    - 2026-08-13 — [beamnxw ./](https://x.com/beamnxw/status/2087506344911720711): Highlights a 90-page CS survey mapping 150+ agent memory architectures into a 3D taxonomy for self-evolving long-horizon agents, arguing act…
-    - 2026-08-13 — [nevian](https://x.com/neviannn/status/2087254502210490739): Highlights a Stanford AI Systems Lab paper formalizing why multi-agent pipelines fail and proposing the 'Control Plane Pattern' for autonomo…
+- **Claude skills craft** (149 posts, +17 this week)  
+  Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.
+    - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
+    - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
 
-- **agent harness engineering** (96 posts, +12 this week)  
+- **agents-as-judges-of-agents — bossman supervisor / self-verification** (36 posts, +16 this week)  
+  Critical supervisor agent judges worker agents rather than doing the work. Boris Cherny on self-verification loops; Viv on bossman supervisor.
+    - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
+    - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
+
+- **agent harness engineering** (100 posts, +15 this week)  
   Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
-    - 2026-08-13 — [Khushi](https://x.com/khushiirl/status/2087591328725213225): Points to a free resource for learning 'harness engineering' (agent harness design): walkinglabs.github.io/learn-harness-engineering.
-    - 2026-08-13 — [beamnxw ./](https://x.com/beamnxw/status/2087506344911720711): Highlights a 90-page CS survey mapping 150+ agent memory architectures into a 3D taxonomy for self-evolving long-horizon agents, arguing act…
+    - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
+    - 2026-08-14 — [Granite](https://x.com/granite0x/status/2087960767287230592): Vercel shipped Foreman, an open-source 'software factory' that splits the agentic coding loop into four sandboxed stations — Classifier, Ana…
 
-- **agentic code review at production scale** (33 posts, +11 this week)  
-  Deterministic engineering handles what must never fail; LLM only does context reading and reasoning. Alibaba open-code-review.
-    - 2026-08-13 — [beamnxw ./](https://x.com/beamnxw/status/2087506344911720711): Highlights a 90-page CS survey mapping 150+ agent memory architectures into a 3D taxonomy for self-evolving long-horizon agents, arguing act…
-    - 2026-08-13 — [nevian](https://x.com/neviannn/status/2087254502210490739): Highlights a Stanford AI Systems Lab paper formalizing why multi-agent pipelines fail and proposing the 'Control Plane Pattern' for autonomo…
+- **loop engineering** (135 posts, +14 this week)  
+  Feedback loops and self-running agent loops: loop design patterns, loop libraries, nested build loops, self-improving / meta-learning loops.
+    - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
+    - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
 
 
 ### Revisit from last month
@@ -59,21 +59,35 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 452 | 58.0% |
-| claude-code | 183 | 23.5% |
-| dev-practices | 327 | 42.0% |
-| skills-mcp | 178 | 22.8% |
-| prompting | 117 | 15.0% |
-| research | 198 | 25.4% |
-| industry | 111 | 14.2% |
-| management | 121 | 15.5% |
-| questionable | 110 | 14.1% |
-| general | 102 | 13.1% |
+| agent-design | 462 | 58.3% |
+| claude-code | 184 | 23.2% |
+| dev-practices | 330 | 41.6% |
+| skills-mcp | 180 | 22.7% |
+| prompting | 121 | 15.3% |
+| research | 202 | 25.5% |
+| industry | 113 | 14.2% |
+| management | 122 | 15.4% |
+| questionable | 112 | 14.1% |
+| general | 104 | 13.1% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-08-14 | Brian Roemmele | research | Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and... |
+| 2026-08-14 | Teknium | agent-design | Nous Research shipped Bot Mode for Hermes Agent (github.com/NousResear... |
+| 2026-08-14 | Viv | agent-design | Commentary on dexhorthy's /show-me proposal — compact visual represent... |
+| 2026-08-14 | Granite | agent-design | Vercel shipped Foreman, an open-source 'software factory' that splits... |
+| 2026-08-14 | mentalium | questionable | Not AI or engineering related — a viral repost of a 1992 Tony Robbins... |
+| 2026-08-14 | Harrison Chase | agent-design | LangChain's Harrison Chase, at Sequoia's 'Own Your Intelligence' event... |
+| 2026-08-14 | Bilal Bakr | prompting | A shareable rules-file snippet for tightening agent behavior on Opus 5... |
+| 2026-08-14 | lifcc | agent-design | Source-code read of DeepSeek Harness (translated from Chinese): it doe... |
+| 2026-08-14 | ℏεsam | agent-design | DeepSeek open-sourced DeepSeek Harness v0.1 (MIT, Developer Preview, p... |
+| 2026-08-14 | rvaniaaa | agent-design | A one-page introduction to graph engineering for AI systems: model the... |
+| 2026-08-14 | David Ondrej | dev-practices | Recommends vercel-labs/deepsec (github.com/vercel-labs/deepsec), a sec... |
+| 2026-08-14 | Ruben Hassid | prompting | A running list of AI-writing tells that have replaced the em-dash as g... |
+| 2026-08-14 | Yarchi | research | Google Research, DeepMind and MIT ran 260 agent configurations across... |
+| 2026-08-14 | Kevin Patrick Murphy | research | Introduces the Model Discovery Agent (MDA). Murphy's framing: answerin... |
 | 2026-08-13 | marfin | agent-design | Google and Cambridge researchers automate multi-agent topology design... |
 | 2026-08-13 | Khushi | agent-design | Points to a free resource for learning 'harness engineering' (agent ha... |
 | 2026-08-13 | Yarchi | agent-design | DoorDash detailed how AI agents handled 130,000 engineering tasks in o... |
@@ -110,25 +124,31 @@
 | 2026-07-30 | Yarchi | dev-practices | Recounts how Jarred Sumner rewrote Bun from ~500K lines of Zig to ~1M... |
 | 2026-07-30 | Alvaro Cintas | agent-design | Highlights Agent-Reach (github.com/Panniantong/Agent-Reach), an open-s... |
 | 2026-07-30 | Anatoli Kopadze | agent-design | Promotes a 25-minute talk plus guide on 'graph engineering' for agents... |
-| 2026-07-30 | Tibo | dev-practices | Announces a new open-source CLI and TypeScript SDK for finding, valida... |
-| 2026-07-29 | Xudong Han | agent-design | Recommends the article 'Why Software Factories Fail' — its author ran... |
-| 2026-07-29 | Alex Veremeyenko | agent-design | Restates Andrew Ng's finding that an older model in an agentic workflo... |
-| 2026-07-29 | Matt Pocock | agent-design | Warns that bad AGENTS.md files make coding agents worse and waste toke... |
-| 2026-07-29 | Dillon Mulroy | dev-practices | Argues that building in vertical slices is a cheat code for good resul... |
-| 2026-07-29 | Guillermo Rauch | agent-design | Recommends an API that abstracts over and manages every major coding a... |
-| 2026-07-29 | Siqi Chen | claude-code | Shares a Claude Code skill (github.com/blader/…) that learns new Claud... |
-| 2026-07-29 | Oliver Prompts | research | Points to a repo from rednote-hilab (github.com/rednote-hilab/…), an o... |
-| 2026-07-29 | Tom Dörr | agent-design | Highlights AutoMem (github.com/verygoodplugins/automem), a memory syst... |
-| 2026-07-28 | Tom Dörr | prompting | Highlights vibe-coding-prompt-template (github.com/KhazP/vibe-coding-p... |
-| 2026-07-28 | HOPE | Engineer. | agent-design | Details hermes-agent's layered memory system (oh-my-hermes): L0 person... |
-| 2026-07-28 | Ahmad | research | Part 3 of a self-hosted/local-AI series: 'Inference Engines for LLMs &... |
-| 2026-07-28 | Andrej Karpathy | agent-design | Introduces the 'idea file' concept — in the LLM-agent era you share an... |
-| 2026-07-25 | Peter Steinberger | agent-design | Peter Steinberger amplifies Alex Kotliarskyi's 'graph-maxing' workflow... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (452)
+### Agent Design (462)
+
+- [Teknium](https://x.com/teknium/status/2088003994904113614) — 2026-08-14: Nous Research shipped Bot Mode for Hermes Agent (github.com/NousResearch/Hermes-Bot-Mode) as a one-day public beta plugin for Hermes Desktop. Instead of sessions, each agent profile is a persistent 'bot' with its own job, description and avatar, and bots can communicate with each other — a multi-agent persona layer over the desktop app.
+
+- [Viv](https://x.com/vtrivedy10/status/2087962694565368092) — 2026-08-14: Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in walls of prose (lighter and faster than HTML). Viv's argument: agents need to design UX for human consumption, because the bottleneck on human-in-the-loop intervention is our ability to understand the work well enough to give feedback.
+
+- [Granite](https://x.com/granite0x/status/2087960767287230592) — 2026-08-14: Vercel shipped Foreman, an open-source 'software factory' that splits the agentic coding loop into four sandboxed stations — Classifier, Analyst, Implementer, Reviewer — so no agent reviews its own work. The reviewer deliberately runs on a different model vendor and sees only the pushed branch, never the implementer's reasoning, so the agents can't collude; label an issue 'factory' and you get back a draft PR.
+
+- [Harrison Chase](https://x.com/hwchase17/status/2087950696457162837) — 2026-08-14: LangChain's Harrison Chase, at Sequoia's 'Own Your Intelligence' event, frames owning your intelligence as three things: an open agent system (the harness), a compounding loop (evals), and a governed runtime. Notes managed harnesses are growing rapidly — useful framing for build-vs-buy decisions on agent infrastructure.
+
+- [lifcc](https://x.com/mylifcc/status/2087920167216906410) — 2026-08-14: Source-code read of DeepSeek Harness (translated from Chinese): it does not treat the prompt as a single system prompt but assembles a runtime from Identity + Persona + Tool Guidance + Runtime Context + Tool Schema + Variables + Middleware. The consequence is that a capability becomes Tool + Schema + Prompt Guidance — each module (shell, filesystem, web) owns its own model-facing instructions, mirroring interface/implementation separation in software engineering.
+
+- [ℏεsam](https://x.com/hesamation/status/2087917006448173519) — 2026-08-14: DeepSeek open-sourced DeepSeek Harness v0.1 (MIT, Developer Preview, powered by their Cordis meta-framework) and it hit 24K stars fast. It's a React web app designed so every component is a plugin — agent loops, models, tools, even sessions — so you swap parts rather than fork the source. Notable as a highly modular alternative harness worth watching for community extensions.
+
+- [rvaniaaa](https://x.com/rvaniaaaa/status/2087908921864323112) — 2026-08-14: A one-page introduction to graph engineering for AI systems: model the world as a graph rather than linear lists and isolated records, with nodes (entities/concepts) and edges (relationships) as the entire vocabulary. Argues the payoff is context across systems, multi-hop reasoning, adaptability as new information arrives, and observability — relevant to concept-graph and memory design.
+
+- [David Ondrej](https://x.com/davidondrej1/status/2087862257279459422) — 2026-08-14: Recommends vercel-labs/deepsec (github.com/vercel-labs/deepsec), a security harness for finding vulnerabilities in your code — pitched as essential tooling for anyone doing agentic engineering. Post itself is a one-liner endorsement; the value is the repo.
+
+- [Yarchi](https://x.com/undefinedki/status/2087634870260449474) — 2026-08-14: Google Research, DeepMind and MIT ran 260 agent configurations across six benchmarks, five architectures and three model families, holding tools, prompts and compute fixed so only topology varied. Headline finding: once a single agent already scores above 45% on a task, adding agents makes it worse — coordination cost overtakes the remaining upside. Error amplification by topology was 1.0x single, 4.4x centralized, 5.1x hybrid, 7.8x decentralized, 17.2x independent; success per thousand tokens was 67.7 single vs 21.5 centralized and 13.6 hybrid, and on SWE-bench every multi-agent variant underperformed one agent.
+
+- [Kevin Patrick Murphy](https://x.com/sirbayes/status/2087392620129796488) — 2026-08-14: Introduces the Model Discovery Agent (MDA). Murphy's framing: answering interventional 'what if?' questions about actions never taken requires a mechanistic model rather than a curve fit, and you can only learn one by experimenting — so since experiments are costly, the real objective is data efficiency.
 
 - [marfin](https://x.com/marfinxx/status/2087671840596459629) — 2026-08-13: Google and Cambridge researchers automate multi-agent topology design by jointly searching over sub-agent prompts and inter-agent communication graphs, rather than hand-crafting static topologies. Four pillars: joint search space, automated graph mutation (pruning unproductive message channels), role-aware prompt tuning by structural position, and topology benchmark gains — finding a compute-optimal topology per target task.
 
@@ -1034,7 +1054,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Claude Code (183)
+### Claude Code (184)
+
+- [Bilal Bakr](https://x.com/bil0090/status/2087947117411099073) — 2026-08-14: A shareable rules-file snippet for tightening agent behavior on Opus 5 (author claims it transfers to other models), targeting drift, slowness and laziness. Two representative rules: 'Done means done' — five things asked means five delivered, and name the specific blocker in one sentence if genuinely stuck; and 'Act, don't ask' — do reversible, cheap work then report, since a question costs the user more than a re-run costs the agent.
 
 - [dex](https://x.com/dexhorthy/status/2087569590268391897) — 2026-08-13: HumanLayer's /show-me skill makes coding agents converse with compact visual representations instead of walls of prose — lighter and faster than HTML for most dev-shaped problems. Install: npx skills add humanlayer/skills --skill show-me. Framed against widespread complaints about coding agents' unreadable text output.
 
@@ -1402,7 +1424,13 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (327)
+### Dev Practices (330)
+
+- [Viv](https://x.com/vtrivedy10/status/2087962694565368092) — 2026-08-14: Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in walls of prose (lighter and faster than HTML). Viv's argument: agents need to design UX for human consumption, because the bottleneck on human-in-the-loop intervention is our ability to understand the work well enough to give feedback.
+
+- [Granite](https://x.com/granite0x/status/2087960767287230592) — 2026-08-14: Vercel shipped Foreman, an open-source 'software factory' that splits the agentic coding loop into four sandboxed stations — Classifier, Analyst, Implementer, Reviewer — so no agent reviews its own work. The reviewer deliberately runs on a different model vendor and sees only the pushed branch, never the implementer's reasoning, so the agents can't collude; label an issue 'factory' and you get back a draft PR.
+
+- [David Ondrej](https://x.com/davidondrej1/status/2087862257279459422) — 2026-08-14: Recommends vercel-labs/deepsec (github.com/vercel-labs/deepsec), a security harness for finding vulnerabilities in your code — pitched as essential tooling for anyone doing agentic engineering. Post itself is a one-liner endorsement; the value is the repo.
 
 - [Khushi](https://x.com/khushiirl/status/2087591328725213225) — 2026-08-13: Points to a free resource for learning 'harness engineering' (agent harness design): walkinglabs.github.io/learn-harness-engineering.
 
@@ -2058,7 +2086,11 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Skills & MCP (178)
+### Skills & MCP (180)
+
+- [lifcc](https://x.com/mylifcc/status/2087920167216906410) — 2026-08-14: Source-code read of DeepSeek Harness (translated from Chinese): it does not treat the prompt as a single system prompt but assembles a runtime from Identity + Persona + Tool Guidance + Runtime Context + Tool Schema + Variables + Middleware. The consequence is that a capability becomes Tool + Schema + Prompt Guidance — each module (shell, filesystem, web) owns its own model-facing instructions, mirroring interface/implementation separation in software engineering.
+
+- [ℏεsam](https://x.com/hesamation/status/2087917006448173519) — 2026-08-14: DeepSeek open-sourced DeepSeek Harness v0.1 (MIT, Developer Preview, powered by their Cordis meta-framework) and it hit 24K stars fast. It's a React web app designed so every component is a plugin — agent loops, models, tools, even sessions — so you swap parts rather than fork the source. Notable as a highly modular alternative harness worth watching for community extensions.
 
 - [dex](https://x.com/dexhorthy/status/2087569590268391897) — 2026-08-13: HumanLayer's /show-me skill makes coding agents converse with compact visual representations instead of walls of prose — lighter and faster than HTML for most dev-shaped problems. Install: npx skills add humanlayer/skills --skill show-me. Framed against widespread complaints about coding agents' unreadable text output.
 
@@ -2416,7 +2448,15 @@
 
 - [Mervin Praison](https://x.com/mervinpraison/status/1881788246684013011) — 2025-01-22: Shows a 100% local RAG AI agent with reasoning: DeepSeek via Ollama for the LLM, PraisonAI to build the agent in a few lines, Nomic embeddings, and a Streamlit UI—code included in the thread.
 
-### Prompting (117)
+### Prompting (121)
+
+- [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288) — 2026-08-14: Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved paper arguing RLHF alignment induces mode collapse and typicality bias that flattens model creativity. Offers a training-free prompt-side fix to recover output diversity without retraining.
+
+- [Bilal Bakr](https://x.com/bil0090/status/2087947117411099073) — 2026-08-14: A shareable rules-file snippet for tightening agent behavior on Opus 5 (author claims it transfers to other models), targeting drift, slowness and laziness. Two representative rules: 'Done means done' — five things asked means five delivered, and name the specific blocker in one sentence if genuinely stuck; and 'Act, don't ask' — do reversible, cheap work then report, since a question costs the user more than a re-run costs the agent.
+
+- [lifcc](https://x.com/mylifcc/status/2087920167216906410) — 2026-08-14: Source-code read of DeepSeek Harness (translated from Chinese): it does not treat the prompt as a single system prompt but assembles a runtime from Identity + Persona + Tool Guidance + Runtime Context + Tool Schema + Variables + Middleware. The consequence is that a capability becomes Tool + Schema + Prompt Guidance — each module (shell, filesystem, web) owns its own model-facing instructions, mirroring interface/implementation separation in software engineering.
+
+- [Ruben Hassid](https://x.com/rubenhassid/status/2087856703773508025) — 2026-08-14: A running list of AI-writing tells that have replaced the em-dash as giveaways, with concrete rewrites: the 'That's not X. That's Y.' construction (say only the second half), stacked two-word fragments ('Fast. Simple.'), empty contrast metaphors ('less a hammer, more a scalpel'), and self-congratulatory filler ('And that matters.', 'That's the part everyone misses.') which can be deleted with no loss. Useful as an editing checklist for anything AI-drafted that goes out under a human name.
 
 - [Alex Prompter](https://x.com/alex_prompter/status/2086807496942068197) — 2026-08-13: 'Reverse Prompting 101' — an X article arguing that as models grow more capable the bottleneck shifts from their answers to your questions, so let the AI interview you first to gather context instead of you rewriting prompts. Credits Alex Finn (Creator Buddy) with naming 'reverse prompting' in a late-July post and references Vanderbilt research reaching the same idea from another angle.
 
@@ -2652,7 +2692,15 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-### Research (198)
+### Research (202)
+
+- [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288) — 2026-08-14: Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved paper arguing RLHF alignment induces mode collapse and typicality bias that flattens model creativity. Offers a training-free prompt-side fix to recover output diversity without retraining.
+
+- [rvaniaaa](https://x.com/rvaniaaaa/status/2087908921864323112) — 2026-08-14: A one-page introduction to graph engineering for AI systems: model the world as a graph rather than linear lists and isolated records, with nodes (entities/concepts) and edges (relationships) as the entire vocabulary. Argues the payoff is context across systems, multi-hop reasoning, adaptability as new information arrives, and observability — relevant to concept-graph and memory design.
+
+- [Yarchi](https://x.com/undefinedki/status/2087634870260449474) — 2026-08-14: Google Research, DeepMind and MIT ran 260 agent configurations across six benchmarks, five architectures and three model families, holding tools, prompts and compute fixed so only topology varied. Headline finding: once a single agent already scores above 45% on a task, adding agents makes it worse — coordination cost overtakes the remaining upside. Error amplification by topology was 1.0x single, 4.4x centralized, 5.1x hybrid, 7.8x decentralized, 17.2x independent; success per thousand tokens was 67.7 single vs 21.5 centralized and 13.6 hybrid, and on SWE-bench every multi-agent variant underperformed one agent.
+
+- [Kevin Patrick Murphy](https://x.com/sirbayes/status/2087392620129796488) — 2026-08-14: Introduces the Model Discovery Agent (MDA). Murphy's framing: answering interventional 'what if?' questions about actions never taken requires a mechanistic model rather than a curve fit, and you can only learn one by experimenting — so since experiments are costly, the real objective is data efficiency.
 
 - [marfin](https://x.com/marfinxx/status/2087671840596459629) — 2026-08-13: Google and Cambridge researchers automate multi-agent topology design by jointly searching over sub-agent prompts and inter-agent communication graphs, rather than hand-crafting static topologies. Four pillars: joint search space, automated graph mutation (pruning unproductive message channels), role-aware prompt tuning by structural position, and topology benchmark gains — finding a compute-optimal topology per target task.
 
@@ -3050,7 +3098,11 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.
 
-### Industry (111)
+### Industry (113)
+
+- [Teknium](https://x.com/teknium/status/2088003994904113614) — 2026-08-14: Nous Research shipped Bot Mode for Hermes Agent (github.com/NousResearch/Hermes-Bot-Mode) as a one-day public beta plugin for Hermes Desktop. Instead of sessions, each agent profile is a persistent 'bot' with its own job, description and avatar, and bots can communicate with each other — a multi-agent persona layer over the desktop app.
+
+- [ℏεsam](https://x.com/hesamation/status/2087917006448173519) — 2026-08-14: DeepSeek open-sourced DeepSeek Harness v0.1 (MIT, Developer Preview, powered by their Cordis meta-framework) and it hit 24K stars fast. It's a React web app designed so every component is a plugin — agent loops, models, tools, even sessions — so you swap parts rather than fork the source. Notable as a highly modular alternative harness worth watching for community extensions.
 
 - [Yarchi](https://x.com/undefinedki/status/2087585693547598310) — 2026-08-13: DoorDash detailed how AI agents handled 130,000 engineering tasks in one month (25k code reviews/week) by moving agents off laptops into four components: a Firecracker microVM sandbox per task (cold-to-ready under 5s p95), a gateway providing least-privilege access to CI/tickets/monitoring with full logging, a YAML playbook declaring task/tools/permissions/output, and surfaces that fire the same playbook from Slack, GitHub, or cron.
 
@@ -3274,7 +3326,9 @@
 
 - [Santiago](https://x.com/svpino/status/1881336934418755862) — 2025-01-21: Walks through GroundX, an open-source, self-hostable/air-gapped enterprise RAG system. Two services: Ingest (a pretrained vision model that 'understands' documents instead of feeding raw docs to the LLM) and Search (text+vector search with a fine-tuned re-ranker). Santiago's thesis: most teams need better ingestion, not better retrieval; includes a video demo and the free X-Ray inspection tool.
 
-### Management (121)
+### Management (122)
+
+- [Harrison Chase](https://x.com/hwchase17/status/2087950696457162837) — 2026-08-14: LangChain's Harrison Chase, at Sequoia's 'Own Your Intelligence' event, frames owning your intelligence as three things: an open agent system (the harness), a compounding loop (evals), and a governed runtime. Notes managed harnesses are growing rapidly — useful framing for build-vs-buy decisions on agent infrastructure.
 
 - [Bessemer](https://x.com/bessemervp/status/2087182936651313398) — 2026-08-13: Bessemer Venture Partners launched 'The Agentic Awakening,' a 63-page research report and playbook on agentic development drawn from 20+ engineering teams, offering frameworks to guide a company's AI transformation and benchmark how teams measure up. Site: theagenticawakening.com.
 
@@ -3518,7 +3572,11 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Points to a superengineer.net blog post as a good summary of Elon Musk's 5-step design/engineering method (DFX).
 
-### Questionable (110)
+### Questionable (112)
+
+- [Granite](https://x.com/granite0x/status/2087960767287230592) — 2026-08-14: Vercel shipped Foreman, an open-source 'software factory' that splits the agentic coding loop into four sandboxed stations — Classifier, Analyst, Implementer, Reviewer — so no agent reviews its own work. The reviewer deliberately runs on a different model vendor and sees only the pushed branch, never the implementer's reasoning, so the agents can't collude; label an issue 'factory' and you get back a draft PR.
+
+- [mentalium](https://x.com/mentalium_/status/2087954681242734824) — 2026-08-14: Not AI or engineering related — a viral repost of a 1992 Tony Robbins persuasion/sales masterclass, framed with scarcity hooks ('this rare tape disappears regularly'). Classic engagement farming; no technical content. Flagged questionable for review or removal.
 
 - [beamnxw ./](https://x.com/beamnxw/status/2087506344911720711) — 2026-08-13: Highlights a 90-page CS survey mapping 150+ agent memory architectures into a 3D taxonomy for self-evolving long-horizon agents, arguing action-based memory and self-evolving structures boost long-horizon retention ~50%. Memory reframed from passive database lookup to training models to execute tool actions, update parametric weights, and consolidate episodic traces into skills. Quote-tweets an accompanying article, 'Context vs. Memory Engineering in Agentic AI Systems.'
 
@@ -3740,7 +3798,11 @@
 
 - [Aakash Gupta](https://x.com/aakashg0/status/1967135994228166848) — 2025-09-15: Boosts another user's step-by-step roadmap for building your first AI agent, calling it 'gold.' Engagement-style framing; the substantive content lives in the referenced roadmap rather than the post itself.
 
-### General (103)
+### General (105)
+
+- [mentalium](https://x.com/mentalium_/status/2087954681242734824) — 2026-08-14: Not AI or engineering related — a viral repost of a 1992 Tony Robbins persuasion/sales masterclass, framed with scarcity hooks ('this rare tape disappears regularly'). Classic engagement farming; no technical content. Flagged questionable for review or removal.
+
+- [Ruben Hassid](https://x.com/rubenhassid/status/2087856703773508025) — 2026-08-14: A running list of AI-writing tells that have replaced the em-dash as giveaways, with concrete rewrites: the 'That's not X. That's Y.' construction (say only the second half), stacked two-word fragments ('Fast. Simple.'), empty contrast metaphors ('less a hammer, more a scalpel'), and self-congratulatory filler ('And that matters.', 'That's the part everyone misses.') which can be deleted with no loss. Useful as an editing checklist for anything AI-drafted that goes out under a human name.
 
 - [Oliver Prompts](https://x.com/oliviscusai/status/2012551369488540115) — 2026-07-29: Points to a repo from rednote-hilab (github.com/rednote-hilab/…), an open-source AI model/tooling release.
 
@@ -3952,6 +4014,48 @@
 ## Full Chronological List
 
 ### Aug 2026
+
+- **2026-08-14** | [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288) | research, prompting
+  Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved paper arguing RLHF alignment induces mode collapse and typicality bias that flattens model creativity. Offers a training-free prompt-side fix to recover output diversity without retraining.
+
+- **2026-08-14** | [Teknium](https://x.com/teknium/status/2088003994904113614) | agent-design, industry
+  Nous Research shipped Bot Mode for Hermes Agent (github.com/NousResearch/Hermes-Bot-Mode) as a one-day public beta plugin for Hermes Desktop. Instead of sessions, each agent profile is a persistent 'bot' with its own job, description and avatar, and bots can communicate with each other — a multi-agent persona layer over the desktop app.
+
+- **2026-08-14** | [Viv](https://x.com/vtrivedy10/status/2087962694565368092) | agent-design, dev-practices
+  Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in walls of prose (lighter and faster than HTML). Viv's argument: agents need to design UX for human consumption, because the bottleneck on human-in-the-loop intervention is our ability to understand the work well enough to give feedback.
+
+- **2026-08-14** | [Granite](https://x.com/granite0x/status/2087960767287230592) | agent-design, dev-practices, questionable
+  Vercel shipped Foreman, an open-source 'software factory' that splits the agentic coding loop into four sandboxed stations — Classifier, Analyst, Implementer, Reviewer — so no agent reviews its own work. The reviewer deliberately runs on a different model vendor and sees only the pushed branch, never the implementer's reasoning, so the agents can't collude; label an issue 'factory' and you get back a draft PR.
+
+- **2026-08-14** | [mentalium](https://x.com/mentalium_/status/2087954681242734824) | questionable, general
+  Not AI or engineering related — a viral repost of a 1992 Tony Robbins persuasion/sales masterclass, framed with scarcity hooks ('this rare tape disappears regularly'). Classic engagement farming; no technical content. Flagged questionable for review or removal.
+
+- **2026-08-14** | [Harrison Chase](https://x.com/hwchase17/status/2087950696457162837) | agent-design, management
+  LangChain's Harrison Chase, at Sequoia's 'Own Your Intelligence' event, frames owning your intelligence as three things: an open agent system (the harness), a compounding loop (evals), and a governed runtime. Notes managed harnesses are growing rapidly — useful framing for build-vs-buy decisions on agent infrastructure.
+
+- **2026-08-14** | [Bilal Bakr](https://x.com/bil0090/status/2087947117411099073) | prompting, claude-code
+  A shareable rules-file snippet for tightening agent behavior on Opus 5 (author claims it transfers to other models), targeting drift, slowness and laziness. Two representative rules: 'Done means done' — five things asked means five delivered, and name the specific blocker in one sentence if genuinely stuck; and 'Act, don't ask' — do reversible, cheap work then report, since a question costs the user more than a re-run costs the agent.
+
+- **2026-08-14** | [lifcc](https://x.com/mylifcc/status/2087920167216906410) | agent-design, prompting, skills-mcp
+  Source-code read of DeepSeek Harness (translated from Chinese): it does not treat the prompt as a single system prompt but assembles a runtime from Identity + Persona + Tool Guidance + Runtime Context + Tool Schema + Variables + Middleware. The consequence is that a capability becomes Tool + Schema + Prompt Guidance — each module (shell, filesystem, web) owns its own model-facing instructions, mirroring interface/implementation separation in software engineering.
+
+- **2026-08-14** | [ℏεsam](https://x.com/hesamation/status/2087917006448173519) | agent-design, skills-mcp, industry
+  DeepSeek open-sourced DeepSeek Harness v0.1 (MIT, Developer Preview, powered by their Cordis meta-framework) and it hit 24K stars fast. It's a React web app designed so every component is a plugin — agent loops, models, tools, even sessions — so you swap parts rather than fork the source. Notable as a highly modular alternative harness worth watching for community extensions.
+
+- **2026-08-14** | [rvaniaaa](https://x.com/rvaniaaaa/status/2087908921864323112) | agent-design, research
+  A one-page introduction to graph engineering for AI systems: model the world as a graph rather than linear lists and isolated records, with nodes (entities/concepts) and edges (relationships) as the entire vocabulary. Argues the payoff is context across systems, multi-hop reasoning, adaptability as new information arrives, and observability — relevant to concept-graph and memory design.
+
+- **2026-08-14** | [David Ondrej](https://x.com/davidondrej1/status/2087862257279459422) | dev-practices, agent-design
+  Recommends vercel-labs/deepsec (github.com/vercel-labs/deepsec), a security harness for finding vulnerabilities in your code — pitched as essential tooling for anyone doing agentic engineering. Post itself is a one-liner endorsement; the value is the repo.
+
+- **2026-08-14** | [Ruben Hassid](https://x.com/rubenhassid/status/2087856703773508025) | prompting, general
+  A running list of AI-writing tells that have replaced the em-dash as giveaways, with concrete rewrites: the 'That's not X. That's Y.' construction (say only the second half), stacked two-word fragments ('Fast. Simple.'), empty contrast metaphors ('less a hammer, more a scalpel'), and self-congratulatory filler ('And that matters.', 'That's the part everyone misses.') which can be deleted with no loss. Useful as an editing checklist for anything AI-drafted that goes out under a human name.
+
+- **2026-08-14** | [Yarchi](https://x.com/undefinedki/status/2087634870260449474) | research, agent-design
+  Google Research, DeepMind and MIT ran 260 agent configurations across six benchmarks, five architectures and three model families, holding tools, prompts and compute fixed so only topology varied. Headline finding: once a single agent already scores above 45% on a task, adding agents makes it worse — coordination cost overtakes the remaining upside. Error amplification by topology was 1.0x single, 4.4x centralized, 5.1x hybrid, 7.8x decentralized, 17.2x independent; success per thousand tokens was 67.7 single vs 21.5 centralized and 13.6 hybrid, and on SWE-bench every multi-agent variant underperformed one agent.
+
+- **2026-08-14** | [Kevin Patrick Murphy](https://x.com/sirbayes/status/2087392620129796488) | research, agent-design
+  Introduces the Model Discovery Agent (MDA). Murphy's framing: answering interventional 'what if?' questions about actions never taken requires a mechanistic model rather than a curve fit, and you can only learn one by experimenting — so since experiments are costly, the real objective is data efficiency.
 
 - **2026-08-13** | [marfin](https://x.com/marfinxx/status/2087671840596459629) | agent-design, research
   Google and Cambridge researchers automate multi-agent topology design by jointly searching over sub-agent prompts and inter-agent communication graphs, rather than hand-crafting static topologies. Four pillars: joint search space, automated graph mutation (pruning unproductive message channels), role-aware prompt tuning by structural position, and topology benchmark gains — finding a compute-optimal topology per target task.
