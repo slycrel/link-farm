@@ -18,7 +18,7 @@ Jeremy emails himself links from his phone (slycrel@gmail.com → jstone@taxhawk
 
 - **db/ai_links.db** — SQLite database. Single source of truth for all posts. All capture paths write here; all output artifacts are generated from it.
 - **db/migrate.py** — One-shot rebuild-from-JSON bootstrap script. Used only when rebuilding the DB from `posts_final_v3.json` from scratch. **Not** the runner for incremental schema changes.
-- **db/migrate_runner.py** — Incremental schema migration runner. Transactional per-migration, idempotent, advances `schema_version`. Add a new migration here whenever the schema needs to change. Currently at version 8 (v8 added `post_concepts.is_primary` — the primary/secondary axis).
+- **db/migrate_runner.py** — Incremental schema migration runner. Transactional per-migration, idempotent, advances `schema_version`. Add a new migration here whenever the schema needs to change. Currently at version 9 (v8 added `post_concepts.is_primary` — the primary/secondary axis; v9 added `gate_history`, a per-run snapshot of the latent-gate ratio).
 - **db/enrich.py** — Canonical persistence layer for enrichment work. All writers (sync, catch-up, curate) go through these helpers — never write directly to `posts.enriched`, `posts.content`, or `posts.summary`. Exposes `record_enrichment` / `record_partial` / `record_failed` / `record_dead`, work-queue queries (`pending_enrichment_ids`), and `gate_ratio` for the latent-discovery threshold.
 - **db/concepts.py** — Concept-graph layer (Layer 2). Concept lifecycle (create/merge/archive/rename), observation lifecycle (record/promote/dismiss/bulk_promote/bulk_dismiss/filter), mechanical discovery passes (shared external URLs, shared @mentions), semantic discovery (concept-centroid matching via embeddings). Also holds `auto_curate()` (unattended conceptual-preference triage — see below), `discover_orphan_clusters()` (the only pass that creates *new* concepts from theme — see the orphan-clustering section below), `assign_primaries()` (derives each post's single primary concept — see the primary/secondary note below), and `split_candidates()` (advisory large-*home* flag, threshold `SPLIT_CANDIDATE_MIN_POSTS`, default 40, measured on primary posts). CLI: `python3 -m db.concepts {list,pending,promote,dismiss,merge,discover,semantic,stats}`. Curation surface: chat-mediated via the `ai-links-curate` skill.
 
@@ -182,7 +182,32 @@ Everything created here is reversible: `archive_concept(id)` retires a cluster t
 
 **First run (2026-08-14)** created six concepts over 41 posts — *document parsing & extraction tooling*, *self-improving skills (autoresearch pattern)*, *Fable 5 access & usage*, *prediction-market & crypto trading bots*, *elite-skill masterclass content*, *founder philosophy & life-design essays* — and correctly skipped the Dave Kline management cluster on author concentration. None of those six existed in the fixed topic taxonomy; all would have been `general`.
 
-**Still unbuilt: the latent pass.** `CURATION_DESIGN.md` specs a blinded LLM pass (hide existing tags to force fresh framing, sample cross-category for non-obvious threads). `SOURCE_LATENT` and the schema enums exist; the pass does not. It was gated behind the enrichment ratio, which stayed ~47% for months and only reached 0.0 on 2026-08-14 — so it was blocked the entire time it went unwritten. Orphan clustering is the cheap half of that idea; the blinded pass is the expensive half and is the next thing to build.
+**Relationship to the latent pass.** Orphan clustering is the cheap half of what `CURATION_DESIGN.md` calls latent discovery — it finds themes in the material that fit *nowhere*. The blinded pass (below) is the expensive half, and finds threads that cut *across* categories that already exist.
+
+### Latent discovery — the blinded pass (Aug 2026)
+
+The pass `CURATION_DESIGN.md` specced and nothing implemented for months. Where orphan clustering finds themes in material that fits *nowhere*, latent finds threads that cut *across* categories that already exist.
+
+**It is split in two around the model.** The pipeline is plain Python with no LLM available to it, so rather than calling out to one:
+
+```python
+b  = prepare_latent_batch(batch_size=48, sampling='biased-cross-category',
+                          blinding='blind-tags-author', model='claude-opus-5')
+# ... a Cowork skill run reads b['items'] and proposes threads ...
+st = record_latent_findings(b['run_id'], findings, b['key'], model='claude-opus-5')
+```
+
+Sampling, blinding, gating and provenance stay deterministic and testable in Python; the expensive judgement happens where a model actually exists. **This pass only runs inside a skill session — it is deliberately NOT in `post_enrichment_pipeline`,** because an unattended pipeline has no reader.
+
+**Blinding is the whole point.** Semantic discovery already tells you what resembles what you have named. Latent exists to find threads that cross those boundaries, so the reader must not see them — otherwise it re-derives your existing taxonomy and reports it back as insight. Strategies: `blind-tags` (hide topics + concept membership), `blind-tags-author`, `blind-tags-author-date`. Posts are handed over as opaque refs (`P001`…) with the ref→post_id map held server-side, so the reader can't look one up and re-acquire the context just hidden.
+
+**Known blinding leak:** summaries frequently name their author inline ("Ole Lehmann shares…"), so `blind-tags-author` is partial at best. Fixing it means either author-stripped summaries or a scrub pass at batch time. Not yet done — treat author-blinding as best-effort.
+
+**Guards.** The gate (`< 0.05`) is enforced at batch time unless `enforce_gate=False`. A finding that proposes a *new* concept must cite at least `auto_create_min_posts` (3) posts; findings that attach to an existing concept have no floor, since corroborating a known idea with two posts is legitimate. Every edge lands secondary; `assign_primaries()` decides homes. Observations carry `source='latent'`, `score_kind='llm-self-report'`, plus run/persona/model, so latent-derived structure stays separable and auditable — `SELECT * FROM concept_observations WHERE source='latent'`.
+
+**Roles.** A finding may set `role` (`counter-example`, `tangential`, `origin`). This is how a reader says "these belong with that concept because they argue the opposite" — e.g. filesystem-as-memory papers attached to *vector / hybrid databases as agent-memory infrastructure* as counter-examples, so the concept carries its own dissent. If the edge already exists with the default `evidence` role, the more specific role is applied; a deliberately-chosen non-default role is never clobbered.
+
+**First run (2026-08-14, run 252, 48 posts, cross-category, blind-tags-author)** produced two new concepts — *context economy — routing tables beat big context* and *agents as constrained software — making bad shapes unexpressible* — grew *Forward Deployed Engineers* and *self-improving skills*, and attached the two counter-examples above. One single-post finding was correctly rejected by the floor. Both new concepts then attracted substantially more evidence on the next semantic run (4→14 and 3→26 posts), which is the convergence surge documented under auto-curation and a decent signal the threads were real.
 
 ### Split-review trigger
 

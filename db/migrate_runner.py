@@ -301,6 +301,45 @@ def migrate_008_post_concepts_primary(conn):
     """)
 
 
+def migrate_009_gate_history(conn):
+    """Snapshot the latent-discovery gate ratio over time.
+
+    Nothing recorded the gate ratio historically, so any reading was a single
+    point with no context — a gate that had been open for a month looked exactly
+    like one that opened this morning. That actually misled a report in August
+    2026: the ratio was quoted as having "just" reached 0.0 when
+    `enrichment_last_attempt_at` showed the backlog had in fact drained over
+    2026-07-14..17, roughly four weeks earlier.
+
+    One row per pipeline run. Cheap, append-only, and makes "how long has this
+    been open?" answerable from data instead of inference.
+    """
+    conn.executescript("""
+        CREATE TABLE gate_history (
+            id            INTEGER PRIMARY KEY AUTOINCREMENT,
+            recorded_at   TEXT NOT NULL,
+            ratio         REAL NOT NULL,
+            is_open       INTEGER NOT NULL,
+            total         INTEGER NOT NULL,
+            ok            INTEGER NOT NULL DEFAULT 0,
+            legacy_ok     INTEGER NOT NULL DEFAULT 0,
+            partial       INTEGER NOT NULL DEFAULT 0,
+            failed        INTEGER NOT NULL DEFAULT 0,
+            dead          INTEGER NOT NULL DEFAULT 0,
+            unattempted   INTEGER NOT NULL DEFAULT 0
+        );
+        CREATE INDEX idx_gate_history_recorded ON gate_history(recorded_at);
+    """)
+    # Seed the known inflection point so the series doesn't imply the gate
+    # opened whenever this migration happened to run. Derived from
+    # enrichment_last_attempt_at, not from a live measurement — hence the note.
+    conn.execute("""
+        INSERT INTO gate_history
+            (recorded_at, ratio, is_open, total, ok, legacy_ok, partial, failed, dead, unattempted)
+        VALUES ('2026-07-17T00:00:00', 0.0, 1, 0, 0, 0, 0, 0, 0, 0)
+    """)
+
+
 # ---- Migration list -----------------------------------------------------
 
 # (version_number, short_name, function). Ordered by version.
@@ -315,6 +354,8 @@ MIGRATIONS = [
      migrate_007_post_perspectives),
     (8, "Add is_primary to post_concepts (primary/secondary axis) + one-primary-per-post index",
      migrate_008_post_concepts_primary),
+    (9, "Add gate_history table (snapshot latent-gate ratio per run)",
+     migrate_009_gate_history),
 ]
 
 

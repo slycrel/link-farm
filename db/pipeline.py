@@ -217,6 +217,34 @@ def post_enrichment_pipeline(*,
                 if progress:
                     print(f"[pipeline] auto_curate FAILED: {e}")
 
+        # Step 3.5b: snapshot the latent gate. One cheap row per run, so
+        # "how long has the gate been open?" is answerable from data. Without
+        # this the ratio is a single point with no history, and a gate that
+        # opened a month ago reads exactly like one that opened today.
+        try:
+            try:
+                from .enrich import gate_ratio, status_breakdown
+            except ImportError:
+                import sys as _sys
+                _sys.path.insert(0, str(Path(__file__).parent))
+                from enrich import gate_ratio, status_breakdown
+            import sqlite3 as _sq
+            ratio, _ = gate_ratio(db_path=db_path)
+            bd = status_breakdown(db_path=db_path)
+            _c = _sq.connect(str(db_path))
+            _c.execute("""
+                INSERT INTO gate_history (recorded_at, ratio, is_open, total,
+                       ok, legacy_ok, partial, failed, dead, unattempted)
+                VALUES (?,?,?,?,?,?,?,?,?,?)
+            """, (datetime.datetime.now().isoformat(timespec="seconds"),
+                  float(ratio), 1 if ratio < 0.05 else 0, sum(bd.values()),
+                  bd.get("ok", 0), bd.get("legacy-ok", 0), bd.get("partial", 0),
+                  bd.get("failed", 0), bd.get("dead", 0), bd.get("unattempted", 0)))
+            _c.commit(); _c.close()
+            result["gate"] = {"ratio": ratio, "open": ratio < 0.05}
+        except Exception as e:
+            result["errors"].append(f"gate_history: {e}")
+
         # Step 3.55: orphan clustering — the only pass that can invent a NEW
         # concept from theme rather than from structural coincidence. It runs
         # HERE, after auto-curate, on purpose: semantic discovery only writes

@@ -1687,6 +1687,276 @@ def discover_orphan_clusters(db_path: Path = DEFAULT_DB,
     return stats
 
 
+# ---- Latent discovery (blinded, model-in-the-loop) --------------------
+#
+# The design doc specs latent as "a blinded LLM pass". The pipeline is plain
+# Python with no model available to it, so the pass is split in two around the
+# model rather than trying to call one from inside the pipeline:
+#
+#     prepare_latent_batch()   -> a blinded payload + an open discovery_run
+#     ... a Cowork skill run (or a human) reads it and proposes threads ...
+#     record_latent_findings() -> concepts + observations, full provenance
+#
+# This keeps the expensive judgement where a model actually exists, while the
+# sampling, blinding, gating and provenance stay deterministic and testable.
+#
+# BLINDING IS THE POINT. Semantic discovery already tells us what looks like
+# what we've already named. The latent pass exists to find threads that cut
+# ACROSS the categories we drew, so the reader must not see those categories —
+# otherwise it just re-derives them and reports them back as insight.
+
+LATENT_DEFAULT_BATCH = 45
+LATENT_GATE_THRESHOLD = 0.05
+
+SAMPLING_RANDOM = "random"
+SAMPLING_CROSS_CATEGORY = "biased-cross-category"
+SAMPLING_ORPHAN_HEAVY = "orphan-heavy"
+
+BLIND_TAGS = "blind-tags"                # hide topics + concept membership
+BLIND_TAGS_AUTHOR = "blind-tags-author"  # also hide author/handle
+BLIND_ALL = "blind-tags-author-date"     # also hide dates
+
+
+def prepare_latent_batch(db_path: Path = DEFAULT_DB,
+                         batch_size: int = LATENT_DEFAULT_BATCH,
+                         sampling: str = SAMPLING_CROSS_CATEGORY,
+                         blinding: str = BLIND_TAGS,
+                         persona: Optional[str] = None,
+                         model: Optional[str] = None,
+                         seed: Optional[int] = None,
+                         enforce_gate: bool = True,
+                         with_lock: bool = True) -> dict:
+    """Assemble a blinded batch of posts for a latent discovery pass.
+
+    Opens a `discovery_runs` row and returns the run id alongside the blinded
+    items. Nothing is written to the graph here — call `record_latent_findings`
+    with the same run_id once the reader has proposed threads.
+
+    Sampling strategies:
+      - `biased-cross-category` (default): round-robin across primary concept
+        homes, plus a slice of unhomed posts. Maximises the chance that any
+        thread the reader spots genuinely crosses an existing boundary rather
+        than restating one concept.
+      - `orphan-heavy`: draw mostly from posts with no concept edge.
+      - `random`: uniform over live posts.
+
+    Blinding removes the fields named by the strategy from the returned items.
+    The mapping from opaque `ref` back to post_id is kept server-side in the
+    returned `key` dict — the reader works only with refs, so it cannot
+    accidentally look a post up and re-acquire the context we just hid.
+
+    Gate: refuses to run while recoverable incompleteness is above 5% unless
+    `enforce_gate=False`. Clever threads found in noise are worse than none.
+    """
+    import random as _random
+    try:
+        from .enrich import gate_ratio
+    except ImportError:
+        import sys as _sys
+        _sys.path.insert(0, str(Path(__file__).parent))
+        from enrich import gate_ratio
+
+    ratio, breakdown = gate_ratio(db_path=db_path) if _gr_takes_db() else gate_ratio()
+    if enforce_gate and ratio >= LATENT_GATE_THRESHOLD:
+        return {"error": f"latent gate closed: ratio {ratio:.4f} >= {LATENT_GATE_THRESHOLD}",
+                "gate_ratio": ratio, "items": [], "run_id": None}
+
+    rng = _random.Random(seed)
+
+    with _maybe_lock(with_lock), _connect(db_path) as conn:
+        rows = conn.execute("""
+            SELECT p.id, p.date, p.author, p.handle, p.summary, p.content, p.url,
+                   (SELECT c.name FROM post_concepts pc JOIN concepts c ON c.id = pc.concept_id
+                     WHERE pc.post_id = p.id AND pc.is_primary = 1) AS home
+              FROM posts p
+             WHERE p.enrichment_status IN ('ok', 'legacy-ok')
+               AND COALESCE(p.summary, '') <> ''
+        """).fetchall()
+        if not rows:
+            return {"error": "no live posts", "items": [], "run_id": None}
+
+        by_home: dict = {}
+        for r in rows:
+            by_home.setdefault(r["home"], []).append(r)
+        for bucket in by_home.values():
+            rng.shuffle(bucket)
+
+        picked = []
+        if sampling == SAMPLING_RANDOM:
+            picked = rng.sample(rows, min(batch_size, len(rows)))
+        elif sampling == SAMPLING_ORPHAN_HEAVY:
+            orphans = by_home.get(None, [])
+            picked = orphans[:batch_size]
+            if len(picked) < batch_size:
+                rest = [r for r in rows if r["home"] is not None]
+                rng.shuffle(rest)
+                picked += rest[:batch_size - len(picked)]
+        else:
+            # Round-robin across homes so no single concept dominates the batch.
+            homes = sorted(by_home.keys(), key=lambda h: (h is None, str(h)))
+            i = 0
+            while len(picked) < batch_size and any(by_home[h] for h in homes):
+                h = homes[i % len(homes)]
+                if by_home[h]:
+                    picked.append(by_home[h].pop())
+                i += 1
+
+        run_id = _start_run(conn, SOURCE_LATENT, sampling,
+                            persona=persona, model=model)
+        conn.execute("UPDATE discovery_runs SET blinding_strategy=? WHERE id=?",
+                     (blinding, run_id))
+
+        items, key = [], {}
+        for n, r in enumerate(picked, 1):
+            ref = f"P{n:03d}"
+            key[ref] = int(r["id"])
+            item = {"ref": ref,
+                    "text": (r["summary"] or "").strip(),
+                    "excerpt": (r["content"] or "")[:500].strip()}
+            if blinding == BLIND_TAGS:
+                item["author"] = r["author"]
+                item["date"] = r["date"]
+            elif blinding == BLIND_TAGS_AUTHOR:
+                item["date"] = r["date"]
+            # BLIND_ALL adds neither.
+            items.append(item)
+
+        conn.commit()
+
+    return {"run_id": run_id, "items": items, "key": key,
+            "sampling": sampling, "blinding": blinding,
+            "persona": persona, "model": model,
+            "gate_ratio": ratio, "batch_size": len(items)}
+
+
+def _gr_takes_db() -> bool:
+    """gate_ratio's signature has varied; probe once rather than guess."""
+    import inspect
+    try:
+        from .enrich import gate_ratio
+    except ImportError:
+        from enrich import gate_ratio
+    return "db_path" in inspect.signature(gate_ratio).parameters
+
+
+def record_latent_findings(run_id: int,
+                           findings: Sequence[dict],
+                           key: dict,
+                           db_path: Path = DEFAULT_DB,
+                           persona: Optional[str] = None,
+                           model: Optional[str] = None,
+                           auto_create_min_posts: int = 3,
+                           attach_to_existing: bool = True,
+                           with_lock: bool = True) -> dict:
+    """Write the threads a latent reader proposed back into the graph.
+
+    Each finding is a dict:
+        {"name": str,
+         "description": str,
+         "refs": ["P003", "P017", ...],      # opaque refs from the batch
+         "confidence": float,                 # 0-1, the reader's own estimate
+         "existing_concept_id": int | None}   # set to attach to a known concept
+
+    A finding with `existing_concept_id` attaches evidence to that concept. One
+    without creates a new concept, provided it cites at least
+    `auto_create_min_posts` posts — a "thread" of two is usually a coincidence.
+
+    Every edge lands as SECONDARY (is_primary=0); `assign_primaries()` decides
+    homes afterwards, same contract as auto_curate and orphan clustering. All
+    observations carry source='latent', score_kind='llm-self-report', and the
+    run/persona/model provenance, so latent-derived structure stays auditable
+    and separable from mechanical and semantic work.
+    """
+    stats = {"concepts_created": 0, "concepts_attached": 0, "edges": 0,
+             "skipped_too_small": 0, "skipped_bad_refs": 0, "details": []}
+
+    with _maybe_lock(with_lock), _connect(db_path) as conn:
+        for f in findings:
+            refs = [r for r in f.get("refs", []) if r in key]
+            if len(refs) != len(f.get("refs", [])):
+                stats["skipped_bad_refs"] += 1
+            post_ids = [key[r] for r in refs]
+            # A post can be cited once per finding, no more.
+            post_ids = list(dict.fromkeys(post_ids))
+
+            existing_id = f.get("existing_concept_id")
+            if existing_id is None and len(post_ids) < auto_create_min_posts:
+                stats["skipped_too_small"] += 1
+                stats["details"].append(
+                    {"name": f.get("name"), "skipped": "too-few-posts",
+                     "n": len(post_ids)})
+                continue
+            if existing_id is not None and not attach_to_existing:
+                continue
+            if not post_ids:
+                continue
+
+            if existing_id is not None:
+                concept_id = int(existing_id)
+                stats["concepts_attached"] += 1
+            else:
+                desc = (f.get("description") or "").strip()
+                desc += (f"\n\n[latent] Proposed by a blinded latent pass "
+                         f"(run {run_id}) from {len(post_ids)} posts read without "
+                         f"their existing topic or concept tags.")
+                cur = conn.execute("""
+                    INSERT INTO concepts (name, description, source, status, created_at, updated_at)
+                    VALUES (?, ?, ?, 'active', ?, ?)
+                """, (f["name"].strip(), desc, CONCEPT_SOURCE_DISCOVERED, _now(), _now()))
+                concept_id = cur.lastrowid
+                stats["concepts_created"] += 1
+
+            conf = float(f.get("confidence", 0.6))
+            # A latent reader can legitimately say "these posts belong with that
+            # concept because they argue the opposite" — the role vocabulary
+            # already exists for exactly this, so honour it.
+            role = f.get("role", ROLE_EVIDENCE)
+            for pid in post_ids:
+                obs_id = _record_obs_in_txn(
+                    conn, post_id=pid, concept_id=concept_id,
+                    source=SOURCE_LATENT, score_kind=SCORE_LATENT,
+                    raw_score=conf, discovery_run_id=run_id,
+                    discovery_persona=persona, discovery_model=model,
+                    notes=f.get("why"), role_suggestion=role)
+                conn.execute("""
+                    INSERT OR IGNORE INTO post_concepts
+                        (post_id, concept_id, role, promoted_from_observation_id,
+                         notes, promoted_at, is_primary)
+                    VALUES (?, ?, ?, ?, 'latent pass', ?, 0)
+                """, (pid, concept_id, role, obs_id, _now()))
+                # If the edge already existed, INSERT OR IGNORE just dropped the
+                # role on the floor. 'evidence' is the schema default and so
+                # carries no information; anything more specific does. Upgrade
+                # in that one direction only — never clobber a role someone
+                # already chose deliberately.
+                if role != ROLE_EVIDENCE:
+                    upd = conn.execute("""
+                        UPDATE post_concepts
+                           SET role = ?, notes = COALESCE(notes || ' | ', '') || 'role refined by latent pass'
+                         WHERE post_id = ? AND concept_id = ? AND role = ?
+                    """, (role, pid, concept_id, ROLE_EVIDENCE))
+                    if upd.rowcount:
+                        stats["roles_refined"] = stats.get("roles_refined", 0) + 1
+                if obs_id is not None:
+                    conn.execute(
+                        "UPDATE concept_observations SET status='promoted' WHERE id=?",
+                        (obs_id,))
+                stats["edges"] += 1
+
+            stats["details"].append({"concept_id": concept_id,
+                                     "name": f.get("name"),
+                                     "posts": len(post_ids),
+                                     "new": existing_id is None})
+
+        _finish_run(conn, run_id, len(key), stats["edges"],
+                    notes=(f"latent: +{stats['concepts_created']} concepts, "
+                           f"{stats['concepts_attached']} attached, "
+                           f"{stats['edges']} edges"))
+        conn.commit()
+
+    return stats
+
+
 # ---- CLI --------------------------------------------------------------
 
 def _cmd_list(args):
