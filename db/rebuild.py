@@ -34,7 +34,8 @@ DEFAULT_OUT = SCRIPT_DIR.parent  # project root
 
 TOPIC_ORDER = [
     'agent-design', 'claude-code', 'dev-practices', 'skills-mcp',
-    'prompting', 'research', 'industry', 'management', 'questionable', 'general'
+    'prompting', 'research', 'industry', 'management',
+    'adjacent', 'solo-operator', 'questionable', 'general'
 ]
 
 TOPIC_LABELS = {
@@ -46,6 +47,8 @@ TOPIC_LABELS = {
     'research': 'Research',
     'industry': 'Industry',
     'management': 'Management',
+    'adjacent': 'Adjacent',
+    'solo-operator': 'Solo Operator',
     'general': 'General',
     'questionable': 'Questionable',
 }

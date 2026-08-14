@@ -24,6 +24,8 @@
             --accent-cyan: #22d3ee;
             --accent-teal: #2dd4bf;
             --accent-orange: #fb923c;
+            --accent-lime: #a3e635;
+            --accent-pink: #f0abfc;
             --radius: 8px;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -113,6 +115,8 @@
         .pill.active-cyan { background: rgba(34,211,238,0.2); border-color: var(--accent-cyan); color: var(--accent-cyan); }
         .pill.active-teal { background: rgba(45,212,191,0.2); border-color: var(--accent-teal); color: var(--accent-teal); }
         .pill.active-orange { background: rgba(251,146,60,0.2); border-color: var(--accent-orange); color: var(--accent-orange); }
+        .pill.active-lime { background: rgba(163,230,53,0.2); border-color: var(--accent-lime); color: var(--accent-lime); }
+        .pill.active-pink { background: rgba(240,171,252,0.2); border-color: var(--accent-pink); color: var(--accent-pink); }
 
         /* VIEW TOGGLE */
         .view-controls {
@@ -449,6 +453,8 @@
             <button class="pill" data-filter="topic" data-value="research" data-active="active-cyan" onclick="toggleFilter(this)">Research</button>
             <button class="pill" data-filter="topic" data-value="industry" data-active="active-rose" onclick="toggleFilter(this)">Industry</button>
             <button class="pill" data-filter="topic" data-value="management" data-active="active-orange" onclick="toggleFilter(this)">Management</button>
+            <button class="pill" data-filter="topic" data-value="adjacent" data-active="active-lime" onclick="toggleFilter(this)">Adjacent</button>
+            <button class="pill" data-filter="topic" data-value="solo-operator" data-active="active-pink" onclick="toggleFilter(this)">Solo Operator</button>
             <button class="pill" data-filter="topic" data-value="questionable" data-active="active-rose" onclick="toggleFilter(this)">Questionable</button>
         </div>
         <div class="filter-group">
@@ -483,7 +489,7 @@
 
 <script>
 const MORNING_VIEW = {
-  "generated_at": "2026-08-14T15:09:48Z",
+  "generated_at": "2026-08-14T16:09:36Z",
   "read_now": [
     {
       "id": 2087960767287230592,
@@ -572,39 +578,8 @@ const MORNING_VIEW = {
         "id": 6,
         "name": "vibecode-to-production via agent skills",
         "description": "Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.",
-        "count": 76,
+        "count": 77,
         "recent_count": 19,
-        "last_post_date": "2026-08-14",
-        "top_posts": [
-          {
-            "id": 2088069286850179288,
-            "date": "2026-08-14",
-            "author": "Brian Roemmele",
-            "url": "https://x.com/brianroemmele/status/2088069286850179288",
-            "summary": "Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved paper arguing RLHF "
-          },
-          {
-            "id": 2087962694565368092,
-            "date": "2026-08-14",
-            "author": "Viv",
-            "url": "https://x.com/vtrivedy10/status/2087962694565368092",
-            "summary": "Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in walls of prose (lighte"
-          },
-          {
-            "id": 2087960767287230592,
-            "date": "2026-08-14",
-            "author": "Granite",
-            "url": "https://x.com/granite0x/status/2087960767287230592",
-            "summary": "Vercel shipped Foreman, an open-source 'software factory' that splits the agentic coding loop into four sandboxed stations — Classifier, Analyst, Implementer, R"
-          }
-        ]
-      },
-      {
-        "id": 40,
-        "name": "Claude skills craft",
-        "description": "Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.",
-        "count": 149,
-        "recent_count": 17,
         "last_post_date": "2026-08-14",
         "top_posts": [
           {
@@ -634,8 +609,70 @@ const MORNING_VIEW = {
         "id": 4,
         "name": "agents-as-judges-of-agents — bossman supervisor / self-verification",
         "description": "Critical supervisor agent judges worker agents rather than doing the work. Boris Cherny on self-verification loops; Viv on bossman supervisor.",
-        "count": 36,
-        "recent_count": 16,
+        "count": 44,
+        "recent_count": 18,
+        "last_post_date": "2026-08-14",
+        "top_posts": [
+          {
+            "id": 2088069286850179288,
+            "date": "2026-08-14",
+            "author": "Brian Roemmele",
+            "url": "https://x.com/brianroemmele/status/2088069286850179288",
+            "summary": "Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved paper arguing RLHF "
+          },
+          {
+            "id": 2087962694565368092,
+            "date": "2026-08-14",
+            "author": "Viv",
+            "url": "https://x.com/vtrivedy10/status/2087962694565368092",
+            "summary": "Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in walls of prose (lighte"
+          },
+          {
+            "id": 2087960767287230592,
+            "date": "2026-08-14",
+            "author": "Granite",
+            "url": "https://x.com/granite0x/status/2087960767287230592",
+            "summary": "Vercel shipped Foreman, an open-source 'software factory' that splits the agentic coding loop into four sandboxed stations — Classifier, Analyst, Implementer, R"
+          }
+        ]
+      },
+      {
+        "id": 40,
+        "name": "Claude skills craft",
+        "description": "Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.",
+        "count": 150,
+        "recent_count": 17,
+        "last_post_date": "2026-08-14",
+        "top_posts": [
+          {
+            "id": 2088069286850179288,
+            "date": "2026-08-14",
+            "author": "Brian Roemmele",
+            "url": "https://x.com/brianroemmele/status/2088069286850179288",
+            "summary": "Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved paper arguing RLHF "
+          },
+          {
+            "id": 2087962694565368092,
+            "date": "2026-08-14",
+            "author": "Viv",
+            "url": "https://x.com/vtrivedy10/status/2087962694565368092",
+            "summary": "Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in walls of prose (lighte"
+          },
+          {
+            "id": 2087960767287230592,
+            "date": "2026-08-14",
+            "author": "Granite",
+            "url": "https://x.com/granite0x/status/2087960767287230592",
+            "summary": "Vercel shipped Foreman, an open-source 'software factory' that splits the agentic coding loop into four sandboxed stations — Classifier, Analyst, Implementer, R"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "agentic code review at production scale",
+        "description": "Deterministic engineering handles what must never fail; LLM only does context reading and reasoning. Alibaba open-code-review.",
+        "count": 51,
+        "recent_count": 17,
         "last_post_date": "2026-08-14",
         "top_posts": [
           {
@@ -691,37 +728,6 @@ const MORNING_VIEW = {
             "summary": "LangChain's Harrison Chase, at Sequoia's 'Own Your Intelligence' event, frames owning your intelligence as three things: an open agent system (the harness), a c"
           }
         ]
-      },
-      {
-        "id": 39,
-        "name": "loop engineering",
-        "description": "Feedback loops and self-running agent loops: loop design patterns, loop libraries, nested build loops, self-improving / meta-learning loops.",
-        "count": 135,
-        "recent_count": 14,
-        "last_post_date": "2026-08-14",
-        "top_posts": [
-          {
-            "id": 2088069286850179288,
-            "date": "2026-08-14",
-            "author": "Brian Roemmele",
-            "url": "https://x.com/brianroemmele/status/2088069286850179288",
-            "summary": "Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved paper arguing RLHF "
-          },
-          {
-            "id": 2087962694565368092,
-            "date": "2026-08-14",
-            "author": "Viv",
-            "url": "https://x.com/vtrivedy10/status/2087962694565368092",
-            "summary": "Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in walls of prose (lighte"
-          },
-          {
-            "id": 2087960767287230592,
-            "date": "2026-08-14",
-            "author": "Granite",
-            "url": "https://x.com/granite0x/status/2087960767287230592",
-            "summary": "Vercel shipped Foreman, an open-source 'software factory' that splits the agentic coding loop into four sandboxed stations — Classifier, Analyst, Implementer, R"
-          }
-        ]
       }
     ]
   },
@@ -768,7 +774,7 @@ const POSTS = [
   { id: 'post-1', date: '2026-08-14', author: 'Teknium', handle: '@teknium', subject: 'Post by Teknium 🪽 on X', url: 'https://x.com/teknium/status/2088003994904113614', summary: 'Nous Research shipped Bot Mode for Hermes Agent (github.com/NousResearch/Hermes-Bot-Mode) as a one-day public beta plugin for Hermes Desktop. Instead of sessions, each agent profile is a persistent \'bot\' with its own job, description and avatar, and bots can communicate with each other — a multi-agent persona layer over the desktop app.', topics: ["agent-design", "industry"], audience: ["me", "dev-team"], priority: 'near-term', perspectives: {"tool-eval": "near-term"}, sourceType: 'tweet', views: '441.9K', notes: '', enriched: true, content: 'Introducing Bot Mode for Hermes Agent. Bot Mode is an alternative to sessions mode, where you have one chat with each agent profile, or \'bot\'. These bots can be given jobs, descriptions, profile pics, and communicate with your other bots! For one day we will do a public beta test of Bot Mode for Hermes Desktop through this plugin. Give me all your feedback here on how it does for you, if it works as expected, any bugs. Then we\'ll address the feedback and get it into the main Desktop App for everyone!\n\nNousResearch/Hermes-Bot-Mode' },
   { id: 'post-2', date: '2026-08-14', author: 'Viv', handle: '@vtrivedy10', subject: 'Post by Viv on X', url: 'https://x.com/vtrivedy10/status/2087962694565368092', summary: 'Commentary on dexhorthy\'s /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in walls of prose (lighter and faster than HTML). Viv\'s argument: agents need to design UX for human consumption, because the bottleneck on human-in-the-loop intervention is our ability to understand the work well enough to give feedback.', topics: ["agent-design", "dev-practices"], audience: ["me", "dev-team"], priority: 'near-term', perspectives: {"tool-eval": "near-term"}, sourceType: 'tweet', views: '7,041', notes: '', enriched: true, content: 'this is dope & woohoo to better tooling for agents to communicate their work to humans. agents need to be good at designing UX for human consumption. often there\'s small but super high value intervention points for humans to add their knowledge into agents doing work -> our input is basically the thing that makes everything work. but we\'re limited by our ability to understand the work that we need to give feedback on. so the easier we can give feedback the better our outcome.\n\n/show-me: compact visual representations for coding agents. tl;dr make your agent converse visually instead of in walls of prose. Lighter and faster than HTML, good enough for most dev-work shaped problems. Coding agents are pretty much unreadable.' },
   { id: 'post-3', date: '2026-08-14', author: 'Granite', handle: '@granite0x', subject: 'Post by Granite on X', url: 'https://x.com/granite0x/status/2087960767287230592', summary: 'Vercel shipped Foreman, an open-source \'software factory\' that splits the agentic coding loop into four sandboxed stations — Classifier, Analyst, Implementer, Reviewer — so no agent reviews its own work. The reviewer deliberately runs on a different model vendor and sees only the pushed branch, never the implementer\'s reasoning, so the agents can\'t collude; label an issue \'factory\' and you get back a draft PR.', topics: ["agent-design", "dev-practices", "questionable"], audience: ["me", "dev-team"], priority: 'now', perspectives: {"tool-eval": "now"}, sourceType: 'tweet', views: '—', notes: '', enriched: true, content: 'Vercel just solved the biggest problem with trusting agents to write your code. Yesterday they shipped Foreman - an open-source software factory. Instead of one agent writing, reviewing and merging its own work - rubber-stamping its own bugs - Foreman splits the loop into four stations, each one an agent in its own sandbox. And the reviewer runs on a DIFFERENT model vendor: it never sees the implementer\'s reasoning, only the pushed branch. The agents can\'t collude. The flow: label an issue \'factory\' -> Classifier triages it, asks questions if vague; Analyst turns it into a plan with acceptance criteria; Implementer codes it in a sandbox, runs your repo\'s own checks; Reviewer judges the branch against the criteria, can send it back twice; you get a draft PR, review, mark ready, merge.' },
-  { id: 'post-4', date: '2026-08-14', author: 'mentalium', handle: '@mentalium_', subject: 'Post by mentalium on X', url: 'https://x.com/mentalium_/status/2087954681242734824', summary: 'Not AI or engineering related — a viral repost of a 1992 Tony Robbins persuasion/sales masterclass, framed with scarcity hooks (\'this rare tape disappears regularly\'). Classic engagement farming; no technical content. Flagged questionable for review or removal.', topics: ["questionable", "general"], audience: ["me"], priority: 'long-term', perspectives: {"tool-eval": "long-term"}, sourceType: 'tweet', views: '1.2M', notes: '', enriched: true, content: 'Jane street pays $600,000 for the skill of selling anything to anyone, and now this 21 minute Tony Robbins masterclass filmed 30 years ago in his castle gives it to you completely free. This is the uncut 1992 session. Just raw persuasion from the master who coached presidents and billionaires. You will learn how to find anyone\'s buying state and anchor your offer to that feeling. No scripts. No tricks. Just psychology that works on everyone. This rare tape disappears regularly. Save it while you can.' },
+  { id: 'post-4', date: '2026-08-14', author: 'mentalium', handle: '@mentalium_', subject: 'Post by mentalium on X', url: 'https://x.com/mentalium_/status/2087954681242734824', summary: 'A repost of an uncut 1992 Tony Robbins persuasion session, pitched around reading a buyer\'s emotional state and anchoring an offer to it rather than working from scripts. Non-technical, and packaged with heavy scarcity framing (\'this rare tape disappears regularly\') — but the underlying sales-psychology material is the kind of thing that matters to anyone weighing a solo or side-hustle venture, where selling the work is as load-bearing as building it.', topics: ["adjacent", "solo-operator", "questionable"], audience: ["me"], priority: 'long-term', perspectives: {"tool-eval": "long-term"}, sourceType: 'tweet', views: '1.2M', notes: '', enriched: true, content: 'Jane street pays $600,000 for the skill of selling anything to anyone, and now this 21 minute Tony Robbins masterclass filmed 30 years ago in his castle gives it to you completely free. This is the uncut 1992 session. Just raw persuasion from the master who coached presidents and billionaires. You will learn how to find anyone\'s buying state and anchor your offer to that feeling. No scripts. No tricks. Just psychology that works on everyone. This rare tape disappears regularly. Save it while you can.' },
   { id: 'post-5', date: '2026-08-14', author: 'Harrison Chase', handle: '@hwchase17', subject: 'Post by Harrison Chase on X', url: 'https://x.com/hwchase17/status/2087950696457162837', summary: 'LangChain\'s Harrison Chase, at Sequoia\'s \'Own Your Intelligence\' event, frames owning your intelligence as three things: an open agent system (the harness), a compounding loop (evals), and a governed runtime. Notes managed harnesses are growing rapidly — useful framing for build-vs-buy decisions on agent infrastructure.', topics: ["agent-design", "management"], audience: ["me", "dev-team", "leadership"], priority: 'near-term', perspectives: {"tool-eval": "near-term"}, sourceType: 'tweet', views: '18.7K', notes: '', enriched: true, content: 'talked about how harnesses & evals help you own your intelligence. how they fit in to the big picture: owning your intelligence means three things: - open agent system (harness is a big part of this!) - compounding loop (evals are a big part of this!) - governed runtime (harness also important here - we see managed harnesses growing rapidly)\n\nAn agent is three things: a harness, a model, and context. If you\'re serious about owning your intelligence, you probably want to own all three. LangChain founder Harrison Chase joined us at our Sequoia Own Your Intelligence event.' },
   { id: 'post-6', date: '2026-08-14', author: 'Bilal Bakr', handle: '@bil0090', subject: 'Post by Bilal Bakr on X', url: 'https://x.com/bil0090/status/2087947117411099073', summary: 'A shareable rules-file snippet for tightening agent behavior on Opus 5 (author claims it transfers to other models), targeting drift, slowness and laziness. Two representative rules: \'Done means done\' — five things asked means five delivered, and name the specific blocker in one sentence if genuinely stuck; and \'Act, don\'t ask\' — do reversible, cheap work then report, since a question costs the user more than a re-run costs the agent.', topics: ["prompting", "claude-code"], audience: ["me", "dev-team"], priority: 'now', perspectives: {"tool-eval": "now"}, sourceType: 'tweet', views: '—', notes: '', enriched: true, content: 'I just fixed Opus 5, here\'s how. You can apply the same to 5.6 Sol to get better results. Opus 5 is a great model, it just needs some minor fixes. It drifts sometimes, its slow, & its lazy, heres how to fix this. Add these to your rules file: ## Done means done — Not half done. Not done except for the part you decided to skip. And not a report about how it will be done. Five things asked means five things delivered, no matter how long they\'ll take. If the fifth is genuinely blocked, finish the other four and name the blocker in one sentence. The specific blocker. Not \'this needs more investigation.\' ## Act. Don\'t ask. — Reversible and cheap? Do it, then tell me. Research, data pulls, analysis, drafts, refactors inside the scope I gave you, testing an API. A question costs me more than a re-run costs you.' },
   { id: 'post-7', date: '2026-08-14', author: 'lifcc', handle: '@mylifcc', subject: 'Post by lifcc on X', url: 'https://x.com/mylifcc/status/2087920167216906410', summary: 'Source-code read of DeepSeek Harness (translated from Chinese): it does not treat the prompt as a single system prompt but assembles a runtime from Identity + Persona + Tool Guidance + Runtime Context + Tool Schema + Variables + Middleware. The consequence is that a capability becomes Tool + Schema + Prompt Guidance — each module (shell, filesystem, web) owns its own model-facing instructions, mirroring interface/implementation separation in software engineering.', topics: ["agent-design", "prompting", "skills-mcp"], audience: ["me", "dev-team"], priority: 'near-term', perspectives: {"tool-eval": "near-term"}, sourceType: 'tweet', views: '—', notes: '', enriched: true, content: 'I went through the source code of DeepSeek Harness and discovered a pretty interesting change: It doesn\'t treat the Prompt as a single System Prompt at all. Instead, it turns the Prompt into a Runtime. Roughly: Identity + Persona + Tool Guidance + Runtime Context + Tool Schema + Variables + Middleware, dynamically assembled into what the model sees. This means a capability is no longer just Tool + Code but Tool + Schema + Prompt Guidance. Whoever is responsible for that capability is also responsible for telling the model how it should be used. shell owns its own shell Prompt, filesystem owns its own filesystem Prompt, web owns its own web Prompt. This is a lot like modularity in software engineering: Capability = Implementation + Interface + Model-facing Instructions.' },
@@ -1567,6 +1573,8 @@ const TOPIC_LABELS = {
     'research': 'Research',
     'industry': 'Industry',
     'management': 'Management',
+    'adjacent': 'Adjacent',
+    'solo-operator': 'Solo Operator',
     'general': 'General',
     'questionable': 'Questionable'
 };
@@ -1580,6 +1588,8 @@ const TOPIC_COLORS = {
     'research': 'var(--accent-cyan)',
     'industry': 'var(--accent-rose)',
     'management': 'var(--accent-orange)',
+    'adjacent': 'var(--accent-lime)',
+    'solo-operator': 'var(--accent-pink)',
     'general': 'var(--text-muted)',
     'questionable': 'var(--accent-rose)'
 };

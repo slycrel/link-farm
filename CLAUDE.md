@@ -1,6 +1,14 @@
 # AI Links Collection — Project Context
 
-This folder contains Jeremy's curated collection of AI-related links, sourced from emails he sends himself (X/Twitter posts, articles, tools) and organized with rich metadata for sharing with his team at TaxHawk.
+This folder contains Jeremy's curated collection of AI-related links, sourced from emails he sends himself (X/Twitter posts, articles, tools) and organized with rich metadata.
+
+## What This Collection Is For
+
+**Primarily Jeremy's own research corpus, secondarily a sharing artifact** (Jeremy, August 2026). It began as a curation project to share with the TaxHawk team, but in practice only a few people have read it a couple of times. The working assumption is now: this is Jeremy's personal research library, and the `audience` tags are a convenience for the occasional share rather than the organizing principle.
+
+**Consequence for intake — keep what he sends.** Anything Jeremy pushes through the iPhone share sheet is a deliberate act and is presumed intentional. Do not drop a link for being off-topic, low-brow, or hype-packaged. Tangential material earns its place: persuasion and sales content, creator-economy and indie-studio material, writing craft, business logistics. Jeremy's example — a Tony Robbins sales tape is genuinely useful to a friend weighing whether an AI-enabled solo game studio is viable, and dismissing it as marketing throws away the insight with the packaging.
+
+The intake filter should therefore drop only **true noise**: Sentry alerts, receipts, shipping notifications, family mail, car listings — things that are not links Jeremy is collecting at all. Everything else gets enriched and tagged, then judged with full content in hand. The bar is "would I be embarrassed by the *tagging*," not "would I be embarrassed by the *content*" — a hype-farmed post tagged `questionable` is honestly labeled and fine to keep; an unlabeled one is the actual problem.
 
 ## How It Works
 
@@ -113,7 +121,9 @@ Post IDs are derived from the URL — not autoincrement. For X/Twitter posts, th
 - **research** — Papers, benchmarks, training methods, fine-tuning, alignment, academic work
 - **industry** — Startups, funding, acquisitions, product launches, market analysis
 - **management** — Team leadership, hiring, productivity, engineering culture, AI adoption strategy
-- **questionable** — Engagement farming (ALL CAPS hype, "BREAKING", listicles with fire emojis). Some may still have good content behind the clickbait — if so, keep relevant topic tags alongside "questionable"
+- **adjacent** — Not about engineering, useful anyway. Persuasion and sales, writing and communication, negotiation, pricing, creative craft, career and life-logistics material that informs how the technical work gets used or sold. The test is "would I want to find this again," not "is this about code."
+- **solo-operator** — The business and craft of building alone or very small: indie studios, side hustles, one-person-does-what-took-a-team, the practical realities of going independent. Frequently overlaps `adjacent` and `industry`; tag all that apply.
+- **questionable** — **A credibility signal, not a relevance signal.** Engagement farming: ALL CAPS hype, "BREAKING", scarcity hooks ("save this before it's gone"), listicles with fire emojis, engineered outrage. It marks *how the content is packaged*, and says nothing about whether the post belongs in the collection. Hype-packaged posts frequently contain real substance — keep every relevant topic tag alongside `questionable`, and never let the tag alone drive a post to `long-term` or imply it should be removed.
 - **general** — Fallback when no strong topic signal
 
 ## Audience & Priority

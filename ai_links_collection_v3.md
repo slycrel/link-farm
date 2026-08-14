@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-08-14T15:09:48Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-14T16:09:36Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-08-14** — [Granite](https://x.com/granite0x/status/2087960767287230592) — *now • Agent Design • — views • v1 enriched*  
@@ -23,18 +23,23 @@
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **vibecode-to-production via agent skills** (76 posts, +19 this week)  
+- **vibecode-to-production via agent skills** (77 posts, +19 this week)  
   Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
     - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
     - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
 
-- **Claude skills craft** (149 posts, +17 this week)  
+- **agents-as-judges-of-agents — bossman supervisor / self-verification** (44 posts, +18 this week)  
+  Critical supervisor agent judges worker agents rather than doing the work. Boris Cherny on self-verification loops; Viv on bossman supervisor.
+    - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
+    - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
+
+- **Claude skills craft** (150 posts, +17 this week)  
   Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.
     - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
     - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
 
-- **agents-as-judges-of-agents — bossman supervisor / self-verification** (36 posts, +16 this week)  
-  Critical supervisor agent judges worker agents rather than doing the work. Boris Cherny on self-verification loops; Viv on bossman supervisor.
+- **agentic code review at production scale** (51 posts, +17 this week)  
+  Deterministic engineering handles what must never fail; LLM only does context reading and reasoning. Alibaba open-code-review.
     - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
     - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
 
@@ -42,11 +47,6 @@
   Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
     - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
     - 2026-08-14 — [Granite](https://x.com/granite0x/status/2087960767287230592): Vercel shipped Foreman, an open-source 'software factory' that splits the agentic coding loop into four sandboxed stations — Classifier, Ana…
-
-- **loop engineering** (135 posts, +14 this week)  
-  Feedback loops and self-running agent loops: loop design patterns, loop libraries, nested build loops, self-improving / meta-learning loops.
-    - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
-    - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
 
 
 ### Revisit from last month
@@ -67,8 +67,10 @@
 | research | 202 | 25.5% |
 | industry | 113 | 14.2% |
 | management | 122 | 15.4% |
+| adjacent | 1 | 0.1% |
+| solo-operator | 1 | 0.1% |
 | questionable | 112 | 14.1% |
-| general | 104 | 13.1% |
+| general | 103 | 13.0% |
 
 ---
 ## Quick Reference (50 Most Recent)
@@ -78,7 +80,7 @@
 | 2026-08-14 | Teknium | agent-design | Nous Research shipped Bot Mode for Hermes Agent (github.com/NousResear... |
 | 2026-08-14 | Viv | agent-design | Commentary on dexhorthy's /show-me proposal — compact visual represent... |
 | 2026-08-14 | Granite | agent-design | Vercel shipped Foreman, an open-source 'software factory' that splits... |
-| 2026-08-14 | mentalium | questionable | Not AI or engineering related — a viral repost of a 1992 Tony Robbins... |
+| 2026-08-14 | mentalium | adjacent | A repost of an uncut 1992 Tony Robbins persuasion session, pitched aro... |
 | 2026-08-14 | Harrison Chase | agent-design | LangChain's Harrison Chase, at Sequoia's 'Own Your Intelligence' event... |
 | 2026-08-14 | Bilal Bakr | prompting | A shareable rules-file snippet for tightening agent behavior on Opus 5... |
 | 2026-08-14 | lifcc | agent-design | Source-code read of DeepSeek Harness (translated from Chinese): it doe... |
@@ -3572,11 +3574,19 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Points to a superengineer.net blog post as a good summary of Elon Musk's 5-step design/engineering method (DFX).
 
+### Adjacent (1)
+
+- [mentalium](https://x.com/mentalium_/status/2087954681242734824) — 2026-08-14: A repost of an uncut 1992 Tony Robbins persuasion session, pitched around reading a buyer's emotional state and anchoring an offer to it rather than working from scripts. Non-technical, and packaged with heavy scarcity framing ('this rare tape disappears regularly') — but the underlying sales-psychology material is the kind of thing that matters to anyone weighing a solo or side-hustle venture, where selling the work is as load-bearing as building it.
+
+### Solo Operator (1)
+
+- [mentalium](https://x.com/mentalium_/status/2087954681242734824) — 2026-08-14: A repost of an uncut 1992 Tony Robbins persuasion session, pitched around reading a buyer's emotional state and anchoring an offer to it rather than working from scripts. Non-technical, and packaged with heavy scarcity framing ('this rare tape disappears regularly') — but the underlying sales-psychology material is the kind of thing that matters to anyone weighing a solo or side-hustle venture, where selling the work is as load-bearing as building it.
+
 ### Questionable (112)
 
 - [Granite](https://x.com/granite0x/status/2087960767287230592) — 2026-08-14: Vercel shipped Foreman, an open-source 'software factory' that splits the agentic coding loop into four sandboxed stations — Classifier, Analyst, Implementer, Reviewer — so no agent reviews its own work. The reviewer deliberately runs on a different model vendor and sees only the pushed branch, never the implementer's reasoning, so the agents can't collude; label an issue 'factory' and you get back a draft PR.
 
-- [mentalium](https://x.com/mentalium_/status/2087954681242734824) — 2026-08-14: Not AI or engineering related — a viral repost of a 1992 Tony Robbins persuasion/sales masterclass, framed with scarcity hooks ('this rare tape disappears regularly'). Classic engagement farming; no technical content. Flagged questionable for review or removal.
+- [mentalium](https://x.com/mentalium_/status/2087954681242734824) — 2026-08-14: A repost of an uncut 1992 Tony Robbins persuasion session, pitched around reading a buyer's emotional state and anchoring an offer to it rather than working from scripts. Non-technical, and packaged with heavy scarcity framing ('this rare tape disappears regularly') — but the underlying sales-psychology material is the kind of thing that matters to anyone weighing a solo or side-hustle venture, where selling the work is as load-bearing as building it.
 
 - [beamnxw ./](https://x.com/beamnxw/status/2087506344911720711) — 2026-08-13: Highlights a 90-page CS survey mapping 150+ agent memory architectures into a 3D taxonomy for self-evolving long-horizon agents, arguing action-based memory and self-evolving structures boost long-horizon retention ~50%. Memory reframed from passive database lookup to training models to execute tool actions, update parametric weights, and consolidate episodic traces into skills. Quote-tweets an accompanying article, 'Context vs. Memory Engineering in Agentic AI Systems.'
 
@@ -3798,9 +3808,7 @@
 
 - [Aakash Gupta](https://x.com/aakashg0/status/1967135994228166848) — 2025-09-15: Boosts another user's step-by-step roadmap for building your first AI agent, calling it 'gold.' Engagement-style framing; the substantive content lives in the referenced roadmap rather than the post itself.
 
-### General (105)
-
-- [mentalium](https://x.com/mentalium_/status/2087954681242734824) — 2026-08-14: Not AI or engineering related — a viral repost of a 1992 Tony Robbins persuasion/sales masterclass, framed with scarcity hooks ('this rare tape disappears regularly'). Classic engagement farming; no technical content. Flagged questionable for review or removal.
+### General (104)
 
 - [Ruben Hassid](https://x.com/rubenhassid/status/2087856703773508025) — 2026-08-14: A running list of AI-writing tells that have replaced the em-dash as giveaways, with concrete rewrites: the 'That's not X. That's Y.' construction (say only the second half), stacked two-word fragments ('Fast. Simple.'), empty contrast metaphors ('less a hammer, more a scalpel'), and self-congratulatory filler ('And that matters.', 'That's the part everyone misses.') which can be deleted with no loss. Useful as an editing checklist for anything AI-drafted that goes out under a human name.
 
@@ -4027,8 +4035,8 @@
 - **2026-08-14** | [Granite](https://x.com/granite0x/status/2087960767287230592) | agent-design, dev-practices, questionable
   Vercel shipped Foreman, an open-source 'software factory' that splits the agentic coding loop into four sandboxed stations — Classifier, Analyst, Implementer, Reviewer — so no agent reviews its own work. The reviewer deliberately runs on a different model vendor and sees only the pushed branch, never the implementer's reasoning, so the agents can't collude; label an issue 'factory' and you get back a draft PR.
 
-- **2026-08-14** | [mentalium](https://x.com/mentalium_/status/2087954681242734824) | questionable, general
-  Not AI or engineering related — a viral repost of a 1992 Tony Robbins persuasion/sales masterclass, framed with scarcity hooks ('this rare tape disappears regularly'). Classic engagement farming; no technical content. Flagged questionable for review or removal.
+- **2026-08-14** | [mentalium](https://x.com/mentalium_/status/2087954681242734824) | adjacent, solo-operator, questionable
+  A repost of an uncut 1992 Tony Robbins persuasion session, pitched around reading a buyer's emotional state and anchoring an offer to it rather than working from scripts. Non-technical, and packaged with heavy scarcity framing ('this rare tape disappears regularly') — but the underlying sales-psychology material is the kind of thing that matters to anyone weighing a solo or side-hustle venture, where selling the work is as load-bearing as building it.
 
 - **2026-08-14** | [Harrison Chase](https://x.com/hwchase17/status/2087950696457162837) | agent-design, management
   LangChain's Harrison Chase, at Sequoia's 'Own Your Intelligence' event, frames owning your intelligence as three things: an open agent system (the harness), a compounding loop (evals), and a governed runtime. Notes managed harnesses are growing rapidly — useful framing for build-vs-buy decisions on agent infrastructure.

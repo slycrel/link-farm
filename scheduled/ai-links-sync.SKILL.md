@@ -67,7 +67,11 @@ Idempotent — no-op if everything is current. Surfaces failures early before an
 
 Microsoft 365 MCP, sender `slycrel@gmail.com`, after CUTOFF. `limit: 25` (the connector caps at 25 — paginate with `offset` if a page is full). No recipient filter — it breaks pagination.
 
-Filter out non-AI/tech: Ford trucks, Sentry alerts, math tutorials, family. Keep AI / coding / LLM / agents / dev-tools / Claude / GPT / MCPs etc.
+**Keep what Jeremy sends.** Anything pushed through the iPhone share sheet is deliberate and presumed intentional. Do NOT drop a link for being off-topic, non-technical, low-brow, or hype-packaged — that judgment happens later, with content in hand, via topic tags.
+
+Drop only **true noise**: Sentry alerts, receipts, shipping and delivery notices, family mail, car listings — mail that isn't a link Jeremy is collecting at all. When genuinely unsure, keep it; a mis-tagged post is cheap and visible, a silently dropped one is neither.
+
+Tangential material is wanted, not tolerated. Persuasion and sales, writing craft, creator-economy and indie-studio content, business logistics — these get the `adjacent` and/or `solo-operator` topics (see CLAUDE.md) alongside any technical tags that apply. Hype packaging earns `questionable`, which is a *credibility* label only and never a reason to drop, deprioritize, or suggest removing a post.
 
 ### Step 5 — Extract URLs
 
@@ -121,7 +125,7 @@ For each post:
    - Good: `"NVIDIA open-sourced OpenShell (github.com/nvidia/openshell) — a sandbox for AI coding agents that locks filesystem, blocks network by default, and injects API keys at runtime only."`
    - Bad: `"Post about a security tool."`
 8. Re-classify with content in hand:
-   - **topics**: apply all relevant tags from CLAUDE.md. Add `questionable` alongside real topics when engagement-farmed-but-substantive.
+   - **topics**: apply all relevant tags from CLAUDE.md. Add `questionable` alongside real topics when engagement-farmed-but-substantive — it flags packaging, not worth. Use `adjacent` for non-engineering material that's useful anyway, and `solo-operator` for indie/side-hustle/business-of-one content; both combine freely with technical tags. Never write a summary that recommends removing a post — if it's in the corpus, describe what value it might hold and let the tags carry the caveat.
    - **audiences**: upgrade `['me']` → `['me', 'dev-team']` for practical tools/patterns, `['me', 'leadership']` for strategy/industry signals.
    - **priority**: `now` for directly-actionable tools to evaluate; `near-term` for explore-soon; `long-term` for research/future.
    - **views**: extract from page if visible.
