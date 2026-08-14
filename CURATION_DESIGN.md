@@ -135,6 +135,8 @@ Both the daily sync skill and the catch-up skill call the unified `enrich()` fun
 - Some passes are blind to existing structure (topics, prior concepts) so we keep finding non-obvious threads instead of just reinforcing the categories we already drew.
 - The most expensive discovery pass (latent) doesn't run against partial data, because clever threads found in noise are worse than no threads at all.
 
+> **Status note (August 2026).** The bullet above — "new concepts emerge when posts cluster in ways that don't match anything yet" — went unimplemented for months. Mechanical discovery created concepts only from shared URLs/mentions, and the semantic pass could only match *existing* centroids, so 51% of live posts held no concept edge. `discover_orphan_clusters()` (pipeline step 3.55) now covers the clustering half of that intent. The **blinded latent pass is still unbuilt**: it was gated on the enrichment ratio, which only reached 0.0 on 2026-08-14, so the gate was shut the whole time. It is now open and the pass is the next piece of work. See CLAUDE.md for the tuned constants and the mean-centering rationale.
+
 ### Shape
 
 Four tables structure the graph (one new, one renamed/restructured, two as before):

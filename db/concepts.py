@@ -1364,6 +1364,329 @@ def discover_semantic_neighbors(db_path: Path = DEFAULT_DB,
     return stats
 
 
+# ---- Orphan clustering (new-concept discovery) ------------------------
+#
+# The gap this closes: mechanical passes create concepts only from structural
+# coincidence (shared URL, shared @mention), and the semantic pass scores posts
+# against centroids of concepts that ALREADY EXIST. Neither can propose a new
+# category, so the vocabulary could only ever grow by hand. Roughly half the
+# live corpus sat with no concept edge at all as a result.
+#
+# Why the vectors are centered first. Raw bge-small cosines on this corpus have
+# mean 0.61 / p99 0.73 — every post is "AI stuff", so the shared topical
+# direction swamps the differences and absolute-threshold clustering returns one
+# blob of 366. Subtracting the corpus mean (the classic all-but-the-top trick)
+# removes that common direction: mean pairwise drops to 0.008 and real structure
+# separates. THRESHOLD below is therefore a cosine on CENTERED vectors and is not
+# comparable to SEMANTIC_CENTROID_THRESHOLD, which is measured on raw ones.
+#
+# Tuned 2026-08-14 against 367 orphans: 0.40 yields ~7 clusters over ~15% of the
+# orphan pool, which is the conservative end. Lower it to widen the net.
+ORPHAN_CLUSTER_THRESHOLD = 0.40
+
+# Below 4 posts a "theme" is usually a coincidence or one author's crossposts.
+ORPHAN_CLUSTER_MIN_SIZE = 4
+
+# Mean cosine of members to their own centroid. Guards against a technically
+# large but semantically loose blob.
+ORPHAN_CLUSTER_MIN_COHESION = 0.55
+
+# Concepts created per run. The first run over a large orphan backlog would
+# otherwise create a dozen at once; a cap turns that into a trickle that can be
+# judged (and archived) a few at a time.
+ORPHAN_CLUSTER_MAX_PER_RUN = 6
+
+# CLAUDE.md: favour conceptual categories over per-person ones. A cluster that is
+# mostly one prolific author is a per-person grouping wearing a theme's clothes,
+# so skip it rather than grow one automatically. 0.55 rather than something
+# looser because a 15-post cluster that was 60% one management writer sailed
+# through the first 0.70 pass and even named itself after him.
+ORPHAN_CLUSTER_MAX_AUTHOR_SHARE = 0.55
+
+# A theme that three different people independently posted about is a theme; two
+# people is usually a conversation.
+ORPHAN_CLUSTER_MIN_AUTHORS = 3
+
+SOURCE_CLUSTER = "cluster"
+SCORE_CLUSTER = "centroid-cohesion"
+CONCEPT_SOURCE_CLUSTER = "discovered-cluster"
+
+_NAME_STOPWORDS = {
+    'the','a','an','and','or','but','if','then','than','that','this','these','those',
+    'is','are','was','were','be','been','being','have','has','had','do','does','did',
+    'to','of','in','on','at','by','for','with','from','into','about','as','it','its',
+    'you','your','he','she','they','them','their','his','her','we','our','us','i',
+    'not','no','so','can','will','just','more','most','other','some','such','only',
+    'own','same','too','very','s','t','don','now','one','two','three','post','posts',
+    'thread','x','via','how','what','why','when','where','which','who','whom',
+    'new','use','using','used','make','makes','get','gets','also','out','up','down',
+    'over','under','after','before','because','while','all','any','each','both',
+    'shares','share','claims','claim','says','said','notes','note','argues','points',
+    'ai','llm','llms','model','models','agent','agents',   # corpus-universal, carry no signal
+}
+
+
+def _cluster_name_terms(texts: Sequence[str], corpus_df: dict, n_docs: int,
+                        top_n: int = 3, banned: Optional[set] = None) -> list[str]:
+    """Pick the most distinctive terms for a cluster (crude TF-IDF).
+
+    Scores a term by how concentrated it is inside the cluster relative to how
+    common it is across the whole corpus, so generic vocabulary loses to the
+    handful of words that actually mark this group out.
+
+    `banned` carries the cluster's own author names and handles. Without it a
+    single prolific writer's name is by construction the most distinctive token
+    in the group, and the concept ends up named after the person rather than the
+    idea — which is the per-person grouping CLAUDE.md tells us not to grow.
+    """
+    import math
+    from collections import Counter
+    banned = banned or set()
+    tf = Counter()
+    for t in texts:
+        seen = {w for w in re.findall(r"[a-z][a-z0-9+/.-]{2,}", (t or "").lower())
+                if w not in _NAME_STOPWORDS and w not in banned and not w.isdigit()}
+        tf.update(seen)
+    if not tf:
+        return []
+    scored = []
+    for term, count in tf.items():
+        if count < 2:
+            continue
+        idf = math.log(n_docs / (1 + corpus_df.get(term, 0)))
+        scored.append((count / len(texts) * idf, count, term))
+    scored.sort(reverse=True)
+    out, seen_stems = [], set()
+    for _, _, term in scored:
+        stem = term[:5]
+        if stem in seen_stems:
+            continue
+        seen_stems.add(stem)
+        out.append(term)
+        if len(out) >= top_n:
+            break
+    return out
+
+
+def discover_orphan_clusters(db_path: Path = DEFAULT_DB,
+                             model: Optional[str] = None,
+                             threshold: float = ORPHAN_CLUSTER_THRESHOLD,
+                             min_size: int = ORPHAN_CLUSTER_MIN_SIZE,
+                             min_cohesion: float = ORPHAN_CLUSTER_MIN_COHESION,
+                             max_per_run: int = ORPHAN_CLUSTER_MAX_PER_RUN,
+                             max_author_share: float = ORPHAN_CLUSTER_MAX_AUTHOR_SHARE,
+                             min_authors: int = ORPHAN_CLUSTER_MIN_AUTHORS,
+                             dry_run: bool = False,
+                             with_lock: bool = True) -> dict:
+    """Cluster concept-less posts and create a concept for each tight group.
+
+    This is the pass that lets the vocabulary grow on its own. Posts with no
+    `post_concepts` edge are clustered on their (mean-centered) embeddings; any
+    group that clears the size, cohesion and author-diversity bars becomes a new
+    active concept, with its members attached as SECONDARY edges. Primary homes
+    are left to `assign_primaries()`, exactly as with `auto_curate()`.
+
+    New concepts are auto-named from distinctive terms and marked `[auto-named]`
+    in their description, so a rename sweep can find them:
+        SELECT * FROM concepts WHERE description LIKE '%[auto-named]%'
+    Any concept created here is reversible with `archive_concept(id)`.
+
+    Set dry_run=True to get the same report with nothing written.
+
+    Returns {orphans_examined, clusters_found, concepts_created, posts_attached,
+             skipped_low_cohesion, skipped_author_concentration, clusters:[...]}.
+    """
+    try:
+        try:
+            from .embeddings import _blob_to_vector, DEFAULT_MODEL
+        except ImportError:
+            import sys as _sys
+            _sys.path.insert(0, str(Path(__file__).parent))
+            from embeddings import _blob_to_vector, DEFAULT_MODEL
+        import numpy as np
+    except ImportError as e:
+        return {"error": f"orphan clustering requires fastembed + numpy: {e}",
+                "orphans_examined": 0, "clusters_found": 0,
+                "concepts_created": 0, "posts_attached": 0, "clusters": []}
+
+    if model is None:
+        model = DEFAULT_MODEL
+
+    stats = {"orphans_examined": 0, "clusters_found": 0, "concepts_created": 0,
+             "posts_attached": 0, "skipped_low_cohesion": 0,
+             "skipped_author_concentration": 0, "clusters": []}
+
+    with _maybe_lock(with_lock), _connect(db_path) as conn:
+        # The corpus mean is the "AI content" direction we subtract out. Take it
+        # over every embedded post, not just orphans, so it stays stable as the
+        # orphan pool drains.
+        all_rows = conn.execute(
+            "SELECT vector FROM post_embeddings WHERE model=?", (model,)).fetchall()
+        if len(all_rows) < 50:
+            return {**stats, "error": "too few embeddings for a stable corpus mean"}
+        A = np.vstack([_blob_to_vector(r["vector"]) for r in all_rows]).astype("float32")
+        A /= (np.linalg.norm(A, axis=1, keepdims=True) + 1e-9)
+        mu = A.mean(0)
+
+        rows = conn.execute("""
+            SELECT e.post_id, e.vector, p.author, p.handle, p.summary, p.content
+              FROM post_embeddings e
+              JOIN posts p ON p.id = e.post_id
+             WHERE e.model = ?
+               AND p.enrichment_status IN ('ok', 'legacy-ok')
+               AND NOT EXISTS (SELECT 1 FROM post_concepts pc WHERE pc.post_id = p.id)
+        """, (model,)).fetchall()
+        stats["orphans_examined"] = len(rows)
+        if len(rows) < min_size:
+            return stats
+
+        M = np.vstack([_blob_to_vector(r["vector"]) for r in rows]).astype("float32")
+        M /= (np.linalg.norm(M, axis=1, keepdims=True) + 1e-9)
+        M = M - mu
+        M /= (np.linalg.norm(M, axis=1, keepdims=True) + 1e-9)
+        S = M @ M.T
+        np.fill_diagonal(S, -1.0)
+
+        # Greedy leader clustering: seed on the densest unassigned post, then
+        # refine the membership against a recomputed centroid a few times.
+        assigned: set = set()
+        found = []
+        degree = (S >= threshold).sum(1)
+        for seed in np.argsort(-degree):
+            seed = int(seed)
+            if seed in assigned or degree[seed] < min_size - 1:
+                continue
+            members = [int(i) for i in np.where(S[seed] >= threshold)[0]
+                       if int(i) not in assigned] + [seed]
+            for _ in range(3):
+                if not members:
+                    break
+                cen = M[members].mean(0)
+                cen /= (np.linalg.norm(cen) + 1e-9)
+                sims = M @ cen
+                members = [int(i) for i in np.argsort(-sims)
+                           if sims[i] >= threshold and int(i) not in assigned]
+            if len(members) < min_size:
+                continue
+            cen = M[members].mean(0)
+            cen /= (np.linalg.norm(cen) + 1e-9)
+            cohesion = float((M[members] @ cen).mean())
+            found.append({"members": members, "cohesion": cohesion})
+            assigned |= set(members)
+        stats["clusters_found"] = len(found)
+
+        # Corpus document frequencies, for naming.
+        from collections import Counter
+        corpus_df: Counter = Counter()
+        df_rows = conn.execute(
+            "SELECT summary FROM posts WHERE enrichment_status IN ('ok','legacy-ok')"
+        ).fetchall()
+        for r in df_rows:
+            corpus_df.update({w for w in re.findall(
+                r"[a-z][a-z0-9+/.-]{2,}", (r["summary"] or "").lower())})
+        n_docs = max(len(df_rows), 1)
+
+        found.sort(key=lambda c: -c["cohesion"])
+        run_id = None
+        if not dry_run:
+            run_id = _start_run(conn, SOURCE_CLUSTER, "orphan-cluster", model=model)
+
+        for cl in found:
+            if stats["concepts_created"] >= max_per_run:
+                break
+            members = cl["members"]
+            if cl["cohesion"] < min_cohesion:
+                stats["skipped_low_cohesion"] += 1
+                continue
+
+            authors = [(rows[i]["author"] or "?") for i in members]
+            top_author, top_count = Counter(authors).most_common(1)[0]
+            share = top_count / len(members)
+            n_authors = len(set(authors))
+            if share > max_author_share or n_authors < min_authors:
+                stats["skipped_author_concentration"] += 1
+                stats["clusters"].append({
+                    "skipped": "author-concentration", "size": len(members),
+                    "cohesion": round(cl["cohesion"], 3),
+                    "dominant_author": top_author,
+                    "author_share": round(share, 2),
+                    "distinct_authors": n_authors})
+                continue
+
+            # Keep the authors' own names out of the running for the label.
+            banned = set()
+            for i in members:
+                for field in (rows[i]["author"], rows[i]["handle"]):
+                    for w in re.findall(r"[a-z][a-z0-9+/.-]{2,}", (field or "").lower()):
+                        banned.add(w)
+
+            terms = _cluster_name_terms(
+                [f'{rows[i]["summary"] or ""} {(rows[i]["content"] or "")[:400]}'
+                 for i in members], corpus_df, n_docs, banned=banned)
+            name = " / ".join(terms) if terms else f"unnamed cluster ({len(members)} posts)"
+            cen = M[members].mean(0)
+            cen /= (np.linalg.norm(cen) + 1e-9)
+            ordered = sorted(members, key=lambda i: -float(M[i] @ cen))
+            post_ids = [int(rows[i]["post_id"]) for i in ordered]
+
+            entry = {"name": name, "size": len(members),
+                     "cohesion": round(cl["cohesion"], 3),
+                     "dominant_author": top_author,
+                     "author_share": round(share, 2),
+                     "post_ids": post_ids,
+                     "sample": [(rows[i]["summary"] or "")[:110] for i in ordered[:3]]}
+
+            if dry_run:
+                entry["concept_id"] = None
+                stats["clusters"].append(entry)
+                stats["concepts_created"] += 1
+                stats["posts_attached"] += len(members)
+                continue
+
+            desc = (f"[auto-named] Discovered by orphan clustering on "
+                    f"{_now()[:10]} from {len(members)} posts with no prior concept "
+                    f"(cohesion {cl['cohesion']:.2f}). Rename or archive if this "
+                    f"isn't a real theme.")
+            cur = conn.execute("""
+                INSERT INTO concepts (name, description, source, status, created_at, updated_at)
+                VALUES (?, ?, ?, 'active', ?, ?)
+            """, (name, desc, CONCEPT_SOURCE_CLUSTER, _now(), _now()))
+            concept_id = cur.lastrowid
+
+            for i in ordered:
+                pid = int(rows[i]["post_id"])
+                obs_id = _record_obs_in_txn(
+                    conn, post_id=pid, concept_id=concept_id,
+                    source=SOURCE_CLUSTER, score_kind=SCORE_CLUSTER,
+                    raw_score=float(M[i] @ cen), discovery_run_id=run_id,
+                    discovery_model=model,
+                    notes=f"orphan cluster seed (cohesion {cl['cohesion']:.2f})")
+                conn.execute("""
+                    INSERT OR IGNORE INTO post_concepts
+                        (post_id, concept_id, role, promoted_from_observation_id,
+                         notes, promoted_at, is_primary)
+                    VALUES (?, ?, 'evidence', ?, 'auto-filed by orphan clustering', ?, 0)
+                """, (pid, concept_id, obs_id, _now()))
+                if obs_id is not None:
+                    conn.execute(
+                        "UPDATE concept_observations SET status='promoted' WHERE id=?",
+                        (obs_id,))
+                stats["posts_attached"] += 1
+
+            entry["concept_id"] = concept_id
+            stats["clusters"].append(entry)
+            stats["concepts_created"] += 1
+
+        if not dry_run:
+            _finish_run(conn, run_id, stats["orphans_examined"],
+                        stats["posts_attached"],
+                        notes=(f"threshold={threshold} min_size={min_size} "
+                               f"min_cohesion={min_cohesion} created={stats['concepts_created']}"))
+            conn.commit()
+
+    return stats
+
+
 # ---- CLI --------------------------------------------------------------
 
 def _cmd_list(args):

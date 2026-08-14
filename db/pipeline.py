@@ -59,6 +59,7 @@ def post_enrichment_pipeline(*,
                               mechanical_discovery: bool = True,
                               semantic_discovery: bool = True,
                               auto_curate: bool = True,
+                              orphan_clustering: bool = True,
                               rebuild_outputs: bool = True,
                               progress: bool = True) -> dict:
     """Run every post-enrichment step that should happen after either a
@@ -72,6 +73,10 @@ def post_enrichment_pipeline(*,
         3.5 Auto-curate: conservative conceptual-preference triage of pending
             observations (promote high-confidence conceptual matches, dismiss
             low-signal mechanical/per-person duplicates, leave the rest).
+        3.55 Orphan clustering: cluster posts that found no home at all and
+            create a new concept for each tight, multi-author group. This is
+            the only pass that can grow the vocabulary from theme.
+        3.6 Assign primaries.
         4. Rebuild outputs (JSON / HTML / Markdown).
 
     Each step is a no-op when there's nothing to do. The pipeline is
@@ -88,6 +93,7 @@ def post_enrichment_pipeline(*,
         "mechanical": None,
         "semantic": None,
         "auto_curate": None,
+        "orphan_clusters": None,
         "assign_primaries": None,
         "rebuild": None,
         "split_candidates": None,
@@ -211,6 +217,30 @@ def post_enrichment_pipeline(*,
                 if progress:
                     print(f"[pipeline] auto_curate FAILED: {e}")
 
+        # Step 3.55: orphan clustering — the only pass that can invent a NEW
+        # concept from theme rather than from structural coincidence. It runs
+        # HERE, after auto-curate, on purpose: semantic discovery only writes
+        # observations, so before auto-curate promotes them a post that is about
+        # to attach to an existing concept still looks like an orphan. Running
+        # last means we only cluster posts that genuinely found no home.
+        if orphan_clustering:
+            try:
+                try:
+                    from .concepts import discover_orphan_clusters
+                except ImportError:
+                    import sys as _sys
+                    _sys.path.insert(0, str(Path(__file__).parent))
+                    from concepts import discover_orphan_clusters
+                if progress:
+                    print("[pipeline] orphan clustering…")
+                result["orphan_clusters"] = discover_orphan_clusters(
+                    db_path=db_path, with_lock=False,
+                )
+            except Exception as e:
+                result["errors"].append(f"orphan_clustering: {e}")
+                if progress:
+                    print(f"[pipeline] orphan_clustering FAILED: {e}")
+
         # Step 3.6: assign primaries. After discovery + auto-curate settle the
         # edge set, (re)derive each post's single primary home so split-review
         # and any primary-grouped views read a clean partition. Runs before
@@ -295,6 +325,20 @@ def _format_summary(result: dict) -> str:
     if result.get("auto_curate"):
         a = result["auto_curate"]
         parts.append(f"auto-curate: +{a.get('promoted', 0)} promoted / -{a.get('dismissed', 0)} dismissed ({a.get('left_pending', 0)} left)")
+    if result.get("orphan_clusters"):
+        o = result["orphan_clusters"]
+        if o.get("error"):
+            parts.append(f"orphan-clusters: skipped ({o['error']})")
+        else:
+            bit = (f"orphan-clusters: {o.get('orphans_examined', 0)} orphans → "
+                   f"+{o.get('concepts_created', 0)} concepts / "
+                   f"{o.get('posts_attached', 0)} posts")
+            skipped = (o.get('skipped_author_concentration', 0)
+                       + o.get('skipped_low_cohesion', 0))
+            if skipped:
+                bit += f" ({skipped} skipped)"
+            parts.append(bit)
+
     if result.get("assign_primaries"):
         p = result["assign_primaries"]
         if p.get("error"):
