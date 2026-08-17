@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-08-14T20:15:39Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-17T15:03:33Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-08-14** — [Granite](https://x.com/granite0x/status/2087960767287230592) — *now • Agent Design • — views • v1 enriched*  
@@ -23,30 +23,30 @@
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **agents-as-judges-of-agents — bossman supervisor / self-verification** (53 posts, +20 this week)  
+- **agents-as-judges-of-agents — bossman supervisor / self-verification** (53 posts, +19 this week)  
   Critical supervisor agent judges worker agents rather than doing the work. Boris Cherny on self-verification loops; Viv on bossman supervisor.
     - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
     - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
 
-- **vibecode-to-production via agent skills** (77 posts, +19 this week)  
+- **vibecode-to-production via agent skills** (77 posts, +18 this week)  
   Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
     - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
     - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
 
-- **agentic code review at production scale** (61 posts, +19 this week)  
+- **agentic code review at production scale** (61 posts, +18 this week)  
   Deterministic engineering handles what must never fail; LLM only does context reading and reasoning. Alibaba open-code-review.
     - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
     - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
 
-- **Claude skills craft** (151 posts, +17 this week)  
-  Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.
+- **self-improving skills (autoresearch pattern)** (239 posts, +16 this week)  
+  Skills and harnesses that improve themselves or each other, mostly downstream of Karpathy's autoresearch method — meta-skills that optimise other skills, /autobrowse, recursive self-improvement loops, and agents that accumulate site knowledge instead of rediscovering it.
     - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
     - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
 
-- **agent harness engineering** (100 posts, +15 this week)  
-  Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
+- **Claude skills craft** (151 posts, +16 this week)  
+  Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.
+    - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
     - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
-    - 2026-08-14 — [Granite](https://x.com/granite0x/status/2087960767287230592): Vercel shipped Foreman, an open-source 'software factory' that splits the agentic coding loop into four sandboxed stations — Classifier, Ana…
 
 
 ### Revisit from last month
