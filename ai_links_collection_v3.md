@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-08-17T15:03:33Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-18T15:16:01Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-08-14** — [Granite](https://x.com/granite0x/status/2087960767287230592) — *now • Agent Design • — views • v1 enriched*  
@@ -38,13 +38,15 @@
     - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
     - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
 
-- **self-improving skills (autoresearch pattern)** (239 posts, +16 this week)  
+- **self-improving skills (autoresearch pattern)** (256 posts, +17 this week)  
   Skills and harnesses that improve themselves or each other, mostly downstream of Karpathy's autoresearch method — meta-skills that optimise other skills, /autobrowse, recursive self-improvement loops, and agents that accumulate site knowledge instead of rediscovering it.
     - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
     - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
 
-- **Claude skills craft** (151 posts, +16 this week)  
-  Building, sharing, and using Claude skills — skill design, skill libraries, meta-skills, skill-building pipelines.
+- **context economy — routing tables beat big context** (247 posts, +17 this week)  
+  The recurring finding that agent instruction files should ROUTE rather than CONTAIN: a resolver or decision tree that points at the right skill/document outperforms a large monolithic context. One report replaced a 20,000-line CLAUDE.md that measurably degraded the model with a ~200-line decision tree; others converge on small fixed-slot routing tables and a dedicated RESOLVER.md. Cuts across identity-file, skills-craft and Claude Code setup material, and argues against the accumulate-more-context instinct all three encourage.
+
+[latent] Proposed by a blinded latent pass (run 252) from 4 posts read without their existing topic or concept tags.
     - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
     - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
 
