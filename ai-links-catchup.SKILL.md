@@ -200,10 +200,16 @@ print(pipeline_result['summary'])
 
 This single call does, in order:
 
+0. **Subject flags** — lifts trailing-parenthetical importance flags from email subjects into `posts.notes` as `flag: <text>`.
 1. **Embed** any post whose content changed (or is missing an embedding) using fastembed + bge-small-en-v1.5 (384d). Skips partial/dead posts.
 2. **Mechanical discovery** — shared external URLs + shared @mentions → new `concept_observations` rows.
-3. **Semantic discovery** — concept-centroid matching at threshold 0.78. Surfaces new candidate evidence for existing concepts.
+3. **Semantic discovery** — concept-centroid matching at `SEMANTIC_CENTROID_THRESHOLD` (0.82, on raw cosines). Surfaces new candidate evidence for existing concepts.
+3.5. **Auto-curate** — triages what discovery just produced: auto-files matches ≥ `AUTO_PROMOTE_MIN_COSINE` (0.82) as *secondary* edges on conceptual concepts, dismisses the rest. The queue self-clears, so pending stays ~0.
+3.55. **Orphan clustering** — the only pass that invents a *new* concept from theme, clustering edge-less posts on mean-centered embeddings. Fresh clusters are auto-named and marked `[auto-named]` in their description; since a skill run has a model in the loop, **rename them before finishing** (`SELECT id, name FROM concepts WHERE description LIKE '%[auto-named]%'`).
+3.6. **Assign primaries** — derives each post's single primary concept by cosine against leave-one-out centroids. Split-review counts primaries, not total edges.
 4. **Rebuild** — regenerates `posts_final_v3.json`, `ai_links_collection_v3.html`, `ai_links_collection_v3.md`.
+
+Note: the **latent** (blinded) pass is *not* part of this pipeline — it needs a reader in the loop and is invoked explicitly. See CLAUDE.md.
 
 Each step is idempotent; running the pipeline twice in a row produces the same result as running it once. The pipeline is cheap when there's nothing to do — running it even on a no-enrichment day still cycles mechanical discovery (which may catch newly-correlated URLs as the corpus grows) at trivial cost.
 
