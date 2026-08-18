@@ -287,7 +287,8 @@
     "summary": "A running list of AI-writing tells that have replaced the em-dash as giveaways, with concrete rewrites: the 'That's not X. That's Y.' construction (say only the second half), stacked two-word fragments ('Fast. Simple.'), empty contrast metaphors ('less a hammer, more a scalpel'), and self-congratulatory filler ('And that matters.', 'That's the part everyone misses.') which can be deleted with no loss. Useful as an editing checklist for anything AI-drafted that goes out under a human name.",
     "topics": [
       "prompting",
-      "general"
+      "general",
+      "adjacent"
     ],
     "audience": [
       "me",
@@ -1848,7 +1849,8 @@
     "topics": [
       "management",
       "general",
-      "prompting"
+      "prompting",
+      "adjacent"
     ],
     "audience": [
       "me",
@@ -3201,7 +3203,8 @@
     "summary": "[Jeremy flagged: read for work] hesam recommends Phil Chen's article 'Career advice in the age of AI' (Chen: a researcher from OpenAI, DeepMind, and Stanford). TL;DR: AI makes execution cheaper, so the durable edge is choosing the right problems, building strong connections, and investing real time — the argument being that AI models improve at anything you can write a loss function for, and school is mostly loss functions (well-defined problems graded against known answers), so the valuable work shifts elsewhere.",
     "topics": [
       "management",
-      "industry"
+      "industry",
+      "adjacent"
     ],
     "audience": [
       "me",
@@ -3544,7 +3547,8 @@
     "summary": "A \"5 levels of work\" framework for teaching high agency (credited to @stephsmithio): L1 name a problem; L2 add causes; L3 add possible solutions; L4 add a recommended pick; L5 already fixed it, just keeping you in the loop. Lieberman tells new hires to operate at Level 4 from day one and rise to Level 5 as trust builds.",
     "topics": [
       "management",
-      "general"
+      "general",
+      "adjacent"
     ],
     "audience": [
       "leadership",
@@ -4806,7 +4810,8 @@
     "summary": "Elon Musk endorses first-principles 'physics thinking in the limit' — the 'Magic Wand Number' and 'Idiot Index' as universal cost-engineering mental models. Not AI/dev, but a useful thinking frame.",
     "topics": [
       "management",
-      "general"
+      "general",
+      "adjacent"
     ],
     "audience": [
       "leadership",
@@ -4855,7 +4860,8 @@
     "url": "https://x.com/ihtesham2005/status/2063297401344147719",
     "summary": "A well-written essay on The Art of Problem Solving (AoPS): problem-solving is a transferable skill, not memorized formulas; teach the difference between a formula (what to compute) and a method (how to see), and treat confusion as where learning starts. Education/thinking, not AI/dev.",
     "topics": [
-      "general"
+      "general",
+      "adjacent"
     ],
     "audience": [
       "me"
@@ -5966,7 +5972,8 @@
     "topics": [
       "industry",
       "dev-practices",
-      "questionable"
+      "questionable",
+      "solo-operator"
     ],
     "audience": [
       "me"
@@ -6547,7 +6554,8 @@
     "topics": [
       "management",
       "industry",
-      "research"
+      "research",
+      "adjacent"
     ],
     "audience": [
       "leadership",
@@ -6877,7 +6885,8 @@
     "topics": [
       "management",
       "claude-code",
-      "industry"
+      "industry",
+      "solo-operator"
     ],
     "audience": [
       "leadership",
@@ -7313,7 +7322,8 @@
     "topics": [
       "prompting",
       "general",
-      "claude-code"
+      "claude-code",
+      "adjacent"
     ],
     "audience": [
       "me"
@@ -7945,7 +7955,8 @@
     "summary": "Executive-coaching content on moving from 'dirty fuel' (motivation from fear/pressure) to 'clean fuel' (joy/curiosity), summarized on one page. Not AI/dev.",
     "topics": [
       "management",
-      "general"
+      "general",
+      "adjacent"
     ],
     "audience": [
       "me"
@@ -8047,7 +8058,8 @@
     "topics": [
       "general",
       "management",
-      "prompting"
+      "prompting",
+      "adjacent"
     ],
     "audience": [
       "me"
@@ -8097,7 +8109,8 @@
     "summary": "Five methods to complement simplicity without confusing it with reality: face the limits of a framework, zoom in and out, check convergence across frameworks, think probabilistically, and hold conclusions humbly. Links 'Beware of Reductionist Thinking.'",
     "topics": [
       "management",
-      "general"
+      "general",
+      "adjacent"
     ],
     "audience": [
       "leadership",
@@ -8199,7 +8212,8 @@
     "topics": [
       "general",
       "management",
-      "industry"
+      "industry",
+      "adjacent"
     ],
     "audience": [
       "leadership",
@@ -8323,7 +8337,9 @@
     "topics": [
       "agent-design",
       "management",
-      "industry"
+      "industry",
+      "adjacent",
+      "solo-operator"
     ],
     "audience": [
       "dev-team",
@@ -9332,7 +9348,8 @@
     "summary": "On agency: 'Low-agency asks Can I? High-agency says I'm doing this unless someone stops me.' Most permissions are granted retroactively - easier to get forgiveness than permission; much organizational authority was never formally granted, just assumed and later legitimized because it worked.",
     "topics": [
       "management",
-      "general"
+      "general",
+      "adjacent"
     ],
     "audience": [
       "dev-team",
@@ -9815,7 +9832,8 @@
     "summary": "A long self-improvement essay ('Your Next 5 Years Will Be an Exact Copy of Your Last 5') on the marshmallow test as environment design over willpower, the 'end of history illusion,' affective-forecasting error, basal-ganglia habit chunking, and chronos vs kairos time. Not AI/dev.",
     "topics": [
       "general",
-      "management"
+      "management",
+      "adjacent"
     ],
     "audience": [
       "me"
@@ -10628,7 +10646,8 @@
     "summary": "Essay on George Polya's 'How to Solve It' (1945): understand the problem (restate it in your own words - the real filter), make a plan (solve a simpler related problem first for a foothold), carry it out, and 'look back' (verify by another method, reuse it - build a transferable library of methods). Diagnosis: people conflate reading with understanding, method with starting, and answer with learning. Not AI/dev.",
     "topics": [
       "general",
-      "management"
+      "management",
+      "adjacent"
     ],
     "audience": [
       "dev-team",
@@ -11142,7 +11161,8 @@
     "topics": [
       "prompting",
       "management",
-      "general"
+      "general",
+      "adjacent"
     ],
     "audience": [
       "me"
@@ -11464,7 +11484,8 @@
     "summary": "Garry Tan amplifies Alfred Lin's article 'Heat Seeking Missile for Pain': the realest founders actively hunt the hairiest, gnarliest problems and surgically destroy them, citing an interview with Keller of Zipline.",
     "topics": [
       "management",
-      "industry"
+      "industry",
+      "adjacent"
     ],
     "audience": [
       "me",
@@ -11591,7 +11612,8 @@
     "summary": "Growth/marketing content (mostly off the AI/dev core): endorses Michel Lieben's article on running a 4-layer funnel instead of a bare 'book a call', citing a $7M-ARR bootstrapped funnel (330k visitors, 1,500+ meetings, $4M new ARR). Relevant only as go-to-market reading.",
     "topics": [
       "industry",
-      "management"
+      "management",
+      "adjacent"
     ],
     "audience": [
       "leadership",
@@ -12953,7 +12975,8 @@
     "url": "https://x.com/thecurioustales/status/2039360822200442914",
     "summary": "'Drop everything and read this' - recommends a Dan-Koe-style life essay. Links Darshak Rana 'You Are Just 3 Decisions Away From a Completely Different Life.' Self-improvement, not AI/dev.",
     "topics": [
-      "general"
+      "general",
+      "adjacent"
     ],
     "audience": [
       "me"
@@ -13855,7 +13878,8 @@
     "topics": [
       "agent-design",
       "industry",
-      "questionable"
+      "questionable",
+      "solo-operator"
     ],
     "audience": [
       "me"
@@ -14659,7 +14683,8 @@
     "summary": "Opinion piece: AI does not make work easier — it strips away the easy 99% of jobs so everyone now competes on the hard 1%, raising cognitive load and stress sharply. A take on how AI reshapes knowledge work.",
     "topics": [
       "industry",
-      "management"
+      "management",
+      "adjacent"
     ],
     "audience": [
       "me",
@@ -14912,7 +14937,8 @@
     "summary": "Reflects on \"mid season\" knowledge — many roles require grappling with a problem mid-stream without enough runway to catch up on missing context, something even smart people underestimate.",
     "topics": [
       "management",
-      "general"
+      "general",
+      "adjacent"
     ],
     "audience": [
       "me"
@@ -16215,7 +16241,8 @@
     "topics": [
       "management",
       "general",
-      "industry"
+      "industry",
+      "adjacent"
     ],
     "audience": [
       "me"
@@ -17041,7 +17068,8 @@
     "summary": "fintechjunkie gives a glowing, no-edits endorsement of a Dan Koe (@thedankoe) long-form article titled 'How to fix your entire life in 1 day' — a self-improvement/productivity piece rather than an AI or engineering topic. Off-theme for the collection; kept for completeness.",
     "topics": [
       "general",
-      "questionable"
+      "questionable",
+      "adjacent"
     ],
     "audience": [
       "me"
@@ -17962,7 +17990,8 @@
     "summary": "A reflective essay on career fulfillment in software engineering: you don't magically know whether backend, frontend, infra, ML, startups, big tech, or management will fulfill you — you only find out through reps. Early on people confuse novelty (new frameworks, jobs, titles) with fulfillment; real self-knowledge is earned by shipping boring features, debugging 3am outages, owning systems, and sticking with things long enough to feel the responsibility.",
     "topics": [
       "management",
-      "general"
+      "general",
+      "adjacent"
     ],
     "audience": [
       "me"
@@ -18771,7 +18800,8 @@
     "url": "https://x.com/businessbarista/status/1978988763620741503",
     "summary": "Alex Lieberman shares a '5 levels of work' framework for teaching high agency, from L1 'there is a problem' to L5 'I found it, fixed it, just keeping you in the loop.' He tells new hires to operate at Level 4 from day one and grow into Level 5. Credits Steph Smith.",
     "topics": [
-      "management"
+      "management",
+      "adjacent"
     ],
     "audience": [
       "leadership",
@@ -18895,7 +18925,8 @@
     "summary": "Post (likely video/thread) on Steve Jobs's principles for designing insanely great products.",
     "topics": [
       "management",
-      "general"
+      "general",
+      "adjacent"
     ],
     "audience": [
       "leadership",

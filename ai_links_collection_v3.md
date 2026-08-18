@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-08-18T15:16:01Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-18T18:16:32Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-08-14** — [Granite](https://x.com/granite0x/status/2087960767287230592) — *now • Agent Design • — views • v1 enriched*  
@@ -28,6 +28,11 @@
     - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
     - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
 
+- **founder philosophy & life-design essays** (248 posts, +18 this week)  
+  First-principles method and life-design content: Musk's 5-step algorithm, Jobs on product design, Dan Koe-style essays, systems thinking, 'the right way to build a startup'. Mostly endorsement posts pointing at a longer read; quality varies widely.
+    - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
+    - 2026-08-14 — [Ruben Hassid](https://x.com/rubenhassid/status/2087856703773508025): A running list of AI-writing tells that have replaced the em-dash as giveaways, with concrete rewrites: the 'That's not X. That's Y.' constr…
+
 - **vibecode-to-production via agent skills** (77 posts, +18 this week)  
   Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
     - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
@@ -40,13 +45,6 @@
 
 - **self-improving skills (autoresearch pattern)** (256 posts, +17 this week)  
   Skills and harnesses that improve themselves or each other, mostly downstream of Karpathy's autoresearch method — meta-skills that optimise other skills, /autobrowse, recursive self-improvement loops, and agents that accumulate site knowledge instead of rediscovering it.
-    - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
-    - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
-
-- **context economy — routing tables beat big context** (247 posts, +17 this week)  
-  The recurring finding that agent instruction files should ROUTE rather than CONTAIN: a resolver or decision tree that points at the right skill/document outperforms a large monolithic context. One report replaced a 20,000-line CLAUDE.md that measurably degraded the model with a ~200-line decision tree; others converge on small fixed-slot routing tables and a dedicated RESOLVER.md. Cuts across identity-file, skills-craft and Claude Code setup material, and argues against the accumulate-more-context instinct all three encourage.
-
-[latent] Proposed by a blinded latent pass (run 252) from 4 posts read without their existing topic or concept tags.
     - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
     - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
 
@@ -69,8 +67,8 @@
 | research | 202 | 25.5% |
 | industry | 113 | 14.2% |
 | management | 122 | 15.4% |
-| adjacent | 1 | 0.1% |
-| solo-operator | 1 | 0.1% |
+| adjacent | 28 | 3.5% |
+| solo-operator | 5 | 0.6% |
 | questionable | 112 | 14.1% |
 | general | 103 | 13.0% |
 
@@ -3576,13 +3574,75 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Points to a superengineer.net blog post as a good summary of Elon Musk's 5-step design/engineering method (DFX).
 
-### Adjacent (1)
+### Adjacent (28)
 
 - [mentalium](https://x.com/mentalium_/status/2087954681242734824) — 2026-08-14: A repost of an uncut 1992 Tony Robbins persuasion session, pitched around reading a buyer's emotional state and anchoring an offer to it rather than working from scripts. Non-technical, and packaged with heavy scarcity framing ('this rare tape disappears regularly') — but the underlying sales-psychology material is the kind of thing that matters to anyone weighing a solo or side-hustle venture, where selling the work is as load-bearing as building it.
 
-### Solo Operator (1)
+- [Ruben Hassid](https://x.com/rubenhassid/status/2087856703773508025) — 2026-08-14: A running list of AI-writing tells that have replaced the em-dash as giveaways, with concrete rewrites: the 'That's not X. That's Y.' construction (say only the second half), stacked two-word fragments ('Fast. Simple.'), empty contrast metaphors ('less a hammer, more a scalpel'), and self-congratulatory filler ('And that matters.', 'That's the part everyone misses.') which can be deleted with no loss. Useful as an editing checklist for anything AI-drafted that goes out under a human name.
+
+- [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making) — 2026-07-24: Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI dev schism": he argues that having AI build something you initiated — code, art, prose, even a deck — isn't the same as *making* it, and the loss of "making" (distinct from loss of craft or problem-solving) is what leaves him unfulfilled. He works the gray area — a compiler or assembler feels like a tool you make *with*, while an LLM feels like a report you *delegate* to — and lands on prompting-as-skill being real (vision, judgment, communication) but closer to "asking someone to make something for you" than making it yourself. (beej.us/blog/data/ai-making)
+
+- [ℏεsam](https://x.com/hesamation/status/2073104617706008840) — 2026-07-04: [Jeremy flagged: read for work] hesam recommends Phil Chen's article 'Career advice in the age of AI' (Chen: a researcher from OpenAI, DeepMind, and Stanford). TL;DR: AI makes execution cheaper, so the durable edge is choosing the right problems, building strong connections, and investing real time — the argument being that AI models improve at anything you can write a loss function for, and school is mostly loss functions (well-defined problems graded against known answers), so the valuable work shifts elsewhere.
+
+- [Alex Lieberman](https://x.com/businessbarista/status/2070194343034360004) — 2026-06-25: A "5 levels of work" framework for teaching high agency (credited to @stephsmithio): L1 name a problem; L2 add causes; L3 add possible solutions; L4 add a recommended pick; L5 already fixed it, just keeping you in the loop. Lieberman tells new hires to operate at Level 4 from day one and rise to Level 5 as trust builds.
+
+- [Elon Musk](https://x.com/elonmusk/status/2063401522327666828) — 2026-06-07: Elon Musk endorses first-principles 'physics thinking in the limit' — the 'Magic Wand Number' and 'Idiot Index' as universal cost-engineering mental models. Not AI/dev, but a useful thinking frame.
+
+- [Ihtesham Ali](https://x.com/ihtesham2005/status/2063297401344147719) — 2026-06-07: A well-written essay on The Art of Problem Solving (AoPS): problem-solving is a transferable skill, not memorized formulas; teach the difference between a formula (what to compute) and a method (how to see), and treat confusion as where learning starts. Education/thinking, not AI/dev.
+
+- [James Cogan](https://x.com/cogan/status/2056702063992607071) — 2026-05-22: A thoughtful essay, 'Machine Time,' arguing AI compresses the unit of meaningful time — shrinking the buffer between noticing a change and having to respond. AI compresses the front end of cognitive work, so the bottleneck moves to human review, judgment, and taste; the danger isn't speed but speed without scaffolding, and institutions increasingly answer with machine-speed coordination rather than restoring the human clock.
+
+- [Jaynit Makwana](https://x.com/jaynitmakwana/status/2055594459426070640) — 2026-05-18: Turns Barbara Oakley's 'Learning How to Learn' science (rereading and highlighting don't work; intuition about learning misleads) into 10 Claude prompts that build a personalized study system from how the brain actually acquires skill.
+
+- [Joe Hudson](https://x.com/fu_joehudson/status/2054264609683689941) — 2026-05-14: Executive-coaching content on moving from 'dirty fuel' (motivation from fear/pressure) to 'clean fuel' (joy/curiosity), summarized on one page. Not AI/dev.
+
+- [Jaynit](https://x.com/jaynitx/status/2054200520575967698) — 2026-05-14: A long essay on pattern recognition as the basis of expertise (de Groot's chess studies, chunking, Klein's recognition-primed decisions, Buffett reading annual reports), how tight feedback loops build it fast, and how to avoid false patterns. General/thinking, not AI/dev.
+
+- [Alfred Lin](https://x.com/alfred_lin/status/2054556828118245710) — 2026-05-13: Five methods to complement simplicity without confusing it with reality: face the limits of a framework, zoom in and out, check convergence across frameworks, think probabilistically, and hold conclusions humbly. Links 'Beware of Reductionist Thinking.'
+
+- [Michael Eisenberg](https://x.com/mikeeisenberg/status/2054431554240201008) — 2026-05-13: Recommends 'When Knowledge Is Cheap, Insight Is Everything' - applying Jevons paradox (cheaper resource -> more use) to argue that as AI makes knowledge cheap, insight becomes the scarce, valuable thing.
+
+- [GREG ISENBERG](https://x.com/gregisenberg/status/2054261832718889216) — 2026-05-13: A free 47-min course on building a managed AI-agent business solo: sell a 'digital employee' (unlimited agents/usage, infra+security included), don't niche down too fast, solve universal exec pain first, and use a Hermes + Codex/Claude Code + Orgo + Composio + Agent Mail + Obsidian stack (GPT-5.5 default, GLM 5.1 for cheap tasks).
+
+- [Kpaxs](https://x.com/kpaxs/status/2050470605804216695) — 2026-05-02: On agency: 'Low-agency asks Can I? High-agency says I'm doing this unless someone stops me.' Most permissions are granted retroactively - easier to get forgiveness than permission; much organizational authority was never formally granted, just assumed and later legitimized because it worked.
+
+- [Darshak Rana](https://x.com/thedarshakrana/status/2049151671692136778) — 2026-04-30: A long self-improvement essay ('Your Next 5 Years Will Be an Exact Copy of Your Last 5') on the marshmallow test as environment design over willpower, the 'end of history illusion,' affective-forecasting error, basal-ganglia habit chunking, and chronos vs kairos time. Not AI/dev.
+
+- [Ihtesham Ali](https://x.com/ihtesham2005/status/2046197374855582157) — 2026-04-21: Essay on George Polya's 'How to Solve It' (1945): understand the problem (restate it in your own words - the real filter), make a plan (solve a simpler related problem first for a foothold), carry it out, and 'look back' (verify by another method, reuse it - build a transferable library of methods). Diagnosis: people conflate reading with understanding, method with starting, and answer with learning. Not AI/dev.
+
+- [Millie Marconi](https://x.com/milliemarconnni/status/2044358003714097601) — 2026-04-15: 'Inversion is the most powerful thinking tool most people never use correctly - they invert the goal, not the system.' Turned Claude into an inversion engine running Munger's method: map every path to failure so the path to success becomes obvious by elimination. Shares 5 prompts.
+
+- [Garry Tan](https://x.com/garrytan/status/2044059516497711522) — 2026-04-15: Garry Tan amplifies Alfred Lin's article 'Heat Seeking Missile for Pain': the realest founders actively hunt the hairiest, gnarliest problems and surgically destroy them, citing an interview with Keller of Zipline.
+
+- [Alex Vacca](https://x.com/itsalexvacca/status/2043834187095150673) — 2026-04-14: Growth/marketing content (mostly off the AI/dev core): endorses Michel Lieben's article on running a 4-layer funnel instead of a bare 'book a call', citing a $7M-ARR bootstrapped funnel (330k visitors, 1,500+ meetings, $4M new ARR). Relevant only as go-to-market reading.
+
+- [The Curious Tales](https://x.com/thecurioustales/status/2039360822200442914) — 2026-04-02: 'Drop everything and read this' - recommends a Dan-Koe-style life essay. Links Darshak Rana 'You Are Just 3 Decisions Away From a Completely Different Life.' Self-improvement, not AI/dev.
+
+- [John Rush](https://x.com/johnrushx/status/2029406051716743354) — 2026-03-05: Opinion piece: AI does not make work easier — it strips away the easy 99% of jobs so everyone now competes on the hard 1%, raising cognitive load and stress sharply. A take on how AI reshapes knowledge work.
+
+- [Bojan Tunguz](https://x.com/tunguz/status/2029164042028236942) — 2026-03-05: Reflects on "mid season" knowledge — many roles require grappling with a problem mid-stream without enough runway to catch up on missing context, something even smart people underestimate.
+
+- [Machina](https://x.com/exm7777/status/2019787951530725396) — 2026-02-07: Machina's thread on how to stop feeling behind in AI: the relentless cadence of releases (GPT-5.3 Codex, Opus 4.6, Kling 3.0, all 'redefining everything') creates a low-grade, never-ending pressure. His reframe is that the problem isn't too much happening, it's the lack of a personal filter for what actually matters to your work.
+
+- [fintechjunkie](https://x.com/fintechjunkie/status/2010910565279961423) — 2026-01-13: fintechjunkie gives a glowing, no-edits endorsement of a Dan Koe (@thedankoe) long-form article titled 'How to fix your entire life in 1 day' — a self-improvement/productivity piece rather than an AI or engineering topic. Off-theme for the collection; kept for completeness.
+
+- [Abhishek Singh](https://x.com/0xlelouch_/status/2002673253912113644) — 2025-12-22: A reflective essay on career fulfillment in software engineering: you don't magically know whether backend, frontend, infra, ML, startups, big tech, or management will fulfill you — you only find out through reps. Early on people confuse novelty (new frameworks, jobs, titles) with fulfillment; real self-knowledge is earned by shipping boring features, debugging 3am outages, owning systems, and sticking with things long enough to feel the responsibility.
+
+- [Alex Lieberman](https://x.com/businessbarista/status/1978988763620741503) — 2025-10-17: Alex Lieberman shares a '5 levels of work' framework for teaching high agency, from L1 'there is a problem' to L5 'I found it, fixed it, just keeping you in the loop.' He tells new hires to operate at Level 4 from day one and grow into Level 5. Credits Steph Smith.
+
+- [keshav](https://x.com/kshvbgde/status/1974835291358969895) — 2025-10-07: Post (likely video/thread) on Steve Jobs's principles for designing insanely great products.
+
+### Solo Operator (5)
 
 - [mentalium](https://x.com/mentalium_/status/2087954681242734824) — 2026-08-14: A repost of an uncut 1992 Tony Robbins persuasion session, pitched around reading a buyer's emotional state and anchoring an offer to it rather than working from scripts. Non-technical, and packaged with heavy scarcity framing ('this rare tape disappears regularly') — but the underlying sales-psychology material is the kind of thing that matters to anyone weighing a solo or side-hustle venture, where selling the work is as load-bearing as building it.
+
+- [Atenov int.](https://x.com/atenov_d/status/2058868770257416239) — 2026-05-25: Highlights MoneyPrinterTurbo (13k+ stars): give a topic/keyword and it generates a script (via any LLM), pulls copyright-free footage, and adds subtitles/music/voiceover to output a finished short video; runs locally with Web UI/API/Docker/Colab. (Author's other posts are off-topic trading/politics.)
+
+- [Linas Beliūnas](https://x.com/linasbeliunas/status/2056679329484927356) — 2026-05-20: Summarizes Anthropic's free AI-native founder playbook: build AROUND Claude across Idea → MVP → Launch → Scale (pressure-test the idea, Claude Code builds the product, Claude Cowork handles ops, Claude turns knowledge into compounding context). 'AI compresses execution but not judgment' — the edge becomes knowing what NOT to build; best AI-native startups have the best AI operating systems, not the biggest teams.
+
+- [GREG ISENBERG](https://x.com/gregisenberg/status/2054261832718889216) — 2026-05-13: A free 47-min course on building a managed AI-agent business solo: sell a 'digital employee' (unlimited agents/usage, infra+security included), don't niche down too fast, solve universal exec pain first, and use a Hermes + Codex/Claude Code + Orgo + Composio + Agent Mail + Obsidian stack (GPT-5.5 default, GLM 5.1 for cheap tasks).
+
+- [zostaff](https://x.com/zostaff/status/2033930728044372275) — 2026-03-18: zostaff's clickbait-titled ('How to Quit Your Job in One Day') walkthrough of an autonomous Polymarket trading system built from three agents: Claude (strategist — probability/recommendation/confidence), Codex (engineer — writes and debugs bot code), and OpenClaw (orchestrator — persistent memory, cron, modular skills, Telegram interface that executes trades and logs everything).
 
 ### Questionable (112)
 
@@ -4058,7 +4118,7 @@
 - **2026-08-14** | [David Ondrej](https://x.com/davidondrej1/status/2087862257279459422) | dev-practices, agent-design
   Recommends vercel-labs/deepsec (github.com/vercel-labs/deepsec), a security harness for finding vulnerabilities in your code — pitched as essential tooling for anyone doing agentic engineering. Post itself is a one-liner endorsement; the value is the repo.
 
-- **2026-08-14** | [Ruben Hassid](https://x.com/rubenhassid/status/2087856703773508025) | prompting, general
+- **2026-08-14** | [Ruben Hassid](https://x.com/rubenhassid/status/2087856703773508025) | prompting, general, adjacent
   A running list of AI-writing tells that have replaced the em-dash as giveaways, with concrete rewrites: the 'That's not X. That's Y.' construction (say only the second half), stacked two-word fragments ('Fast. Simple.'), empty contrast metaphors ('less a hammer, more a scalpel'), and self-congratulatory filler ('And that matters.', 'That's the part everyone misses.') which can be deleted with no loss. Useful as an editing checklist for anything AI-drafted that goes out under a human name.
 
 - **2026-08-14** | [Yarchi](https://x.com/undefinedki/status/2087634870260449474) | research, agent-design
@@ -4243,7 +4303,7 @@
 - **2026-07-25** | [Dave Fano](https://x.com/davidfano/status/2078851264599699480) | dev-practices, skills-mcp, agent-design
   Dave Fano flags cli-printing-press (github.com/mvanhorn/cli-printing-press) by @mvanhorn and @trevin — a tool that can 'print' a CLI for any API by discovering its hidden interface and absorbing it. Useful for auto-generating command-line wrappers around APIs.
 
-- **2026-07-24** | [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making) | management, general, prompting
+- **2026-07-24** | [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making) | management, general, prompting, adjacent
   Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI dev schism": he argues that having AI build something you initiated — code, art, prose, even a deck — isn't the same as *making* it, and the loss of "making" (distinct from loss of craft or problem-solving) is what leaves him unfulfilled. He works the gray area — a compiler or assembler feels like a tool you make *with*, while an LLM feels like a report you *delegate* to — and lands on prompting-as-skill being real (vision, judgment, communication) but closer to "asking someone to make something for you" than making it yourself. (beej.us/blog/data/ai-making)
 
 - **2026-07-20** | [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler) | agent-design, dev-practices, management
@@ -4399,7 +4459,7 @@
 - **2026-07-04** | [Archive](https://x.com/archiveexplorer/status/2073136973162872897) | claude-code, agent-design, skills-mcp, dev-practices, questionable
   Archive (engagement framing, 'met an Anthropic engineer making $1.2M') argues the real lever isn't Opus vs Sonnet but 'what the model wakes up into' — the .claude/ folder: CLAUDE.md (the contract), settings.json (permissions), hooks/ (reflexes), agents/verifier (a shift-notes checker subagent), skills/ (~33 reusable 'muscle memories'), .mcp.json (tools), and MEMORY.md (shift log). 'You write the folder once; the folder runs the model.' Quote-tweets his own article 'Loop and Harness engineering: 7 files, 5 steps.'
 
-- **2026-07-04** | [ℏεsam](https://x.com/hesamation/status/2073104617706008840) | management, industry
+- **2026-07-04** | [ℏεsam](https://x.com/hesamation/status/2073104617706008840) | management, industry, adjacent
   [Jeremy flagged: read for work] hesam recommends Phil Chen's article 'Career advice in the age of AI' (Chen: a researcher from OpenAI, DeepMind, and Stanford). TL;DR: AI makes execution cheaper, so the durable edge is choosing the right problems, building strong connections, and investing real time — the argument being that AI models improve at anything you can write a loss function for, and school is mostly loss functions (well-defined problems graded against known answers), so the valuable work shifts elsewhere.
 
 - **2026-07-04** | [Thariq](https://x.com/trq212/status/2073101078145724589) | prompting, claude-code, agent-design
@@ -4440,7 +4500,7 @@
 - **2026-06-27** | [Brady Long](https://x.com/thisguyknowsai/status/2070445026233172314) | skills-mcp, agent-design, claude-code, questionable
   Promo-styled writeup of MemPalace, an open-source local AI memory tool (49K stars). Instead of dumping everything into semantic search, it organizes memory into a structured "palace" (people/projects as wings, topics as rooms, verbatim text in searchable drawers). Claims 96.6% retrieval recall on LongMemEval with zero LLM/API/cloud, 98.4% with a hybrid pipeline; ships 29 MCP tools and auto-save hooks for Claude Code. Python 3.9 + ChromaDB, ~300MB, MIT.
 
-- **2026-06-25** | [Alex Lieberman](https://x.com/businessbarista/status/2070194343034360004) | management, general
+- **2026-06-25** | [Alex Lieberman](https://x.com/businessbarista/status/2070194343034360004) | management, general, adjacent
   A "5 levels of work" framework for teaching high agency (credited to @stephsmithio): L1 name a problem; L2 add causes; L3 add possible solutions; L4 add a recommended pick; L5 already fixed it, just keeping you in the loop. Lieberman tells new hires to operate at Level 4 from day one and rise to Level 5 as trust builds.
 
 - **2026-06-25** | [Jason Weston](https://x.com/jaseweston/status/2070117091521204521) | research, agent-design
@@ -4587,13 +4647,13 @@
 - **2026-06-07** | [Viv](https://x.com/vtrivedy10/status/2063429138304668093) | agent-design, prompting, research
   A default recipe for optimizing Agent = Model + Harness, 'training' both: (1) build v1 on a sensible base harness with task-specific prompting/tools, (2) harness-engineer against prod-like eval tasks (often enough on its own), (3) SFT on mined traces or synthetic data (good for distilling a cheaper model), (4) RL if you can design environments/rewards to push past SFT copying, (5) light harness engineering again on the trained model. Argues harness engineering will be the dominant optimization lever and most companies are still at steps 1-2; links the 'Anatomy of an Agent Harness' article.
 
-- **2026-06-07** | [Elon Musk](https://x.com/elonmusk/status/2063401522327666828) | management, general
+- **2026-06-07** | [Elon Musk](https://x.com/elonmusk/status/2063401522327666828) | management, general, adjacent
   Elon Musk endorses first-principles 'physics thinking in the limit' — the 'Magic Wand Number' and 'Idiot Index' as universal cost-engineering mental models. Not AI/dev, but a useful thinking frame.
 
 - **2026-06-07** | [Hanako](https://x.com/hanakoxbt/status/2063305395687522702) | agent-design, claude-code
   Describes an Anthropic 'dreaming agents' memory pattern: a second set of agents that, after you log off, reopen every session, fact-check the first agents, merge duplicates and burn stale memory — up to 100 at once, ~95% cached so a full rewrite costs almost nothing. Points to a multi-agent code/review/deploy team guide.
 
-- **2026-06-07** | [Ihtesham Ali](https://x.com/ihtesham2005/status/2063297401344147719) | general
+- **2026-06-07** | [Ihtesham Ali](https://x.com/ihtesham2005/status/2063297401344147719) | general, adjacent
   A well-written essay on The Art of Problem Solving (AoPS): problem-solving is a transferable skill, not memorized formulas; teach the difference between a formula (what to compute) and a method (how to see), and treat confusion as where learning starts. Education/thinking, not AI/dev.
 
 - **2026-06-07** | [Sprytix](https://x.com/sprytixl/status/2063234969510588640) | questionable, agent-design
@@ -4727,7 +4787,7 @@
 - **2026-05-25** | [darkzodchi](https://x.com/zodchiii/status/2058928613987160287) | claude-code, agent-design
   Boris Cherny (Claude Code): 'every night I have a few thousand agents running,' monitored from his phone. Links a piece arguing the next wave is a team of agents in a real chat app where they @mention each other, delegate, and remember — versus one sandboxed, memoryless ChatGPT tab.
 
-- **2026-05-25** | [Atenov int.](https://x.com/atenov_d/status/2058868770257416239) | industry, dev-practices, questionable
+- **2026-05-25** | [Atenov int.](https://x.com/atenov_d/status/2058868770257416239) | industry, dev-practices, questionable, solo-operator
   Highlights MoneyPrinterTurbo (13k+ stars): give a topic/keyword and it generates a script (via any LLM), pulls copyright-free footage, and adds subtitles/music/voiceover to output a finished short video; runs locally with Web UI/API/Docker/Colab. (Author's other posts are off-topic trading/politics.)
 
 - **2026-05-25** | [Hasan Toor](https://x.com/hasantoxr/status/2058863173462352313) | agent-design, dev-practices
@@ -4796,7 +4856,7 @@
 - **2026-05-22** | [Tom Dörr](https://x.com/tom_doerr/status/2057217338844336627) | dev-practices, research
   Shares turbovec, a vector store that fits 10 million documents into 4GB of RAM (github.com/RyanCodrai/turbovec).
 
-- **2026-05-22** | [James Cogan](https://x.com/cogan/status/2056702063992607071) | management, industry, research
+- **2026-05-22** | [James Cogan](https://x.com/cogan/status/2056702063992607071) | management, industry, research, adjacent
   A thoughtful essay, 'Machine Time,' arguing AI compresses the unit of meaningful time — shrinking the buffer between noticing a change and having to respond. AI compresses the front end of cognitive work, so the bottleneck moves to human review, judgment, and taste; the danger isn't speed but speed without scaffolding, and institutions increasingly answer with machine-speed coordination rather than restoring the human clock.
 
 - **2026-05-20** | [Viv](https://x.com/vtrivedy10/status/2056993505386622987) | agent-design, dev-practices, research
@@ -4835,7 +4895,7 @@
 - **2026-05-20** | [Garry Tan](https://x.com/garrytan/status/2056711154224034125) | skills-mcp, agent-design, claude-code
   Garry Tan on dynamic, just-in-time skills for personal AI: 'markdown is code,' and the agent can change its own skills when new cases appear — 'just-in-time personal software is the most powerful idea of 2026.' A reply notes skill bundles carrying their own tests that the agent modifies in-flight create the compounding effect.
 
-- **2026-05-20** | [Linas Beliūnas](https://x.com/linasbeliunas/status/2056679329484927356) | management, claude-code, industry
+- **2026-05-20** | [Linas Beliūnas](https://x.com/linasbeliunas/status/2056679329484927356) | management, claude-code, industry, solo-operator
   Summarizes Anthropic's free AI-native founder playbook: build AROUND Claude across Idea → MVP → Launch → Scale (pressure-test the idea, Claude Code builds the product, Claude Cowork handles ops, Claude turns knowledge into compounding context). 'AI compresses execution but not judgment' — the edge becomes knowing what NOT to build; best AI-native startups have the best AI operating systems, not the biggest teams.
 
 - **2026-05-19** | [Sapient Intelligence](https://x.com/sapient_int/status/2056510383935172798) | research, industry
@@ -4886,7 +4946,7 @@
 - **2026-05-18** | [santi](https://x.com/santtiagom_/status/2055751665345798628) | dev-practices, agent-design, research
   Praises an OpenAI article on Harness Engineering and Codex — how they used agents to build an internal ~1M-line product: preventing agent-generated code from degrading, using tests/CI as more reliable constraints than prompts, keeping code/docs readable for agents, and how engineers' work changes when agents program.
 
-- **2026-05-18** | [Jaynit Makwana](https://x.com/jaynitmakwana/status/2055594459426070640) | prompting, general, claude-code
+- **2026-05-18** | [Jaynit Makwana](https://x.com/jaynitmakwana/status/2055594459426070640) | prompting, general, claude-code, adjacent
   Turns Barbara Oakley's 'Learning How to Learn' science (rereading and highlighting don't work; intuition about learning misleads) into 10 Claude prompts that build a personalized study system from how the brain actually acquires skill.
 
 - **2026-05-16** | [Dan McAteer](https://x.com/daniel_mac8/status/2055838212069773456) | research
@@ -4961,7 +5021,7 @@
 - **2026-05-14** | [송준 Jun Song](https://x.com/jun_song/status/2054379887608402199) | industry, questionable, research
   Hype-y local-LLM claim that a 128GB Mac will soon run an 'uncensored Opus-4.6' locally (a cracked Minimax variant), with the community fitting models into 24GB VRAM.
 
-- **2026-05-14** | [Joe Hudson](https://x.com/fu_joehudson/status/2054264609683689941) | management, general
+- **2026-05-14** | [Joe Hudson](https://x.com/fu_joehudson/status/2054264609683689941) | management, general, adjacent
   Executive-coaching content on moving from 'dirty fuel' (motivation from fear/pressure) to 'clean fuel' (joy/curiosity), summarized on one page. Not AI/dev.
 
 - **2026-05-14** | [George from prodmgmt.world](https://x.com/nurijanian/status/2054244221352325359) | skills-mcp, dev-practices, prompting
@@ -4973,13 +5033,13 @@
 - **2026-05-14** | [Khairallah AL-Awady](https://x.com/eng_khairallah1/status/2054211760631185485) | claude-code, questionable
   Engagement-framed promo of a 30-min Boris Cherny session on using Claude Code, claiming most daily users miss 40+ features; links a 'Claude as full-time AI employee in 7 days' course.
 
-- **2026-05-14** | [Jaynit](https://x.com/jaynitx/status/2054200520575967698) | general, management, prompting
+- **2026-05-14** | [Jaynit](https://x.com/jaynitx/status/2054200520575967698) | general, management, prompting, adjacent
   A long essay on pattern recognition as the basis of expertise (de Groot's chess studies, chunking, Klein's recognition-primed decisions, Buffett reading annual reports), how tight feedback loops build it fast, and how to avoid false patterns. General/thinking, not AI/dev.
 
 - **2026-05-14** | [Geek Lite](https://x.com/qingq77/status/2054056472477307084) | skills-mcp, agent-design, dev-practices
   Oh My Hermes - an opinionated workflow layer that installs an 'operating system' on Hermes: 20 skills across the full app lifecycle and 5 agents (CTO/PM/Dev/QA/Ops) collaborating on a kanban board, with Claude Code/Codex as optional deep-coding accelerators.
 
-- **2026-05-13** | [Alfred Lin](https://x.com/alfred_lin/status/2054556828118245710) | management, general
+- **2026-05-13** | [Alfred Lin](https://x.com/alfred_lin/status/2054556828118245710) | management, general, adjacent
   Five methods to complement simplicity without confusing it with reality: face the limits of a framework, zoom in and out, check convergence across frameworks, think probabilistically, and hold conclusions humbly. Links 'Beware of Reductionist Thinking.'
 
 - **2026-05-13** | [darkzodchi](https://x.com/zodchiii/status/2054526937561796939) | claude-code, dev-practices
@@ -4991,7 +5051,7 @@
 - **2026-05-13** | [Ihtesham Ali](https://x.com/ihtesham2005/status/2054458335215395223) | research, agent-design, claude-code
   A Google+Meta paper where Claude Code proposes, tests, and refines its own reasoning algorithms with no human in the loop after setup - in 5 rounds discovering a controller with four coordinated mechanisms 'difficult to arrive at through manual intuition alone,' for a total discovery cost of $39.90.
 
-- **2026-05-13** | [Michael Eisenberg](https://x.com/mikeeisenberg/status/2054431554240201008) | general, management, industry
+- **2026-05-13** | [Michael Eisenberg](https://x.com/mikeeisenberg/status/2054431554240201008) | general, management, industry, adjacent
   Recommends 'When Knowledge Is Cheap, Insight Is Everything' - applying Jevons paradox (cheaper resource -> more use) to argue that as AI makes knowledge cheap, insight becomes the scarce, valuable thing.
 
 - **2026-05-13** | [ericosiu](https://x.com/ericosiu/status/2054413343776223393) | industry, management
@@ -5006,7 +5066,7 @@
 - **2026-05-13** | [Founder Thoughts & Strategies](https://x.com/mogulinfluence/status/2054274159706853837) | management, industry
   'How the best product teams will be built (and ship 10x faster) in the AI era'; quotes 'Building, and Whatnot' (31,832 PM applicants in two years, one hired).
 
-- **2026-05-13** | [GREG ISENBERG](https://x.com/gregisenberg/status/2054261832718889216) | agent-design, management, industry
+- **2026-05-13** | [GREG ISENBERG](https://x.com/gregisenberg/status/2054261832718889216) | agent-design, management, industry, adjacent, solo-operator
   A free 47-min course on building a managed AI-agent business solo: sell a 'digital employee' (unlimited agents/usage, infra+security included), don't niche down too fast, solve universal exec pain first, and use a Hermes + Codex/Claude Code + Orgo + Composio + Agent Mail + Obsidian stack (GPT-5.5 default, GLM 5.1 for cheap tasks).
 
 - **2026-05-13** | [Joseph Viviano](https://x.com/josephdviviano/status/2054253118943363506) | agent-design, dev-practices, research
@@ -5126,7 +5186,7 @@
 - **2026-05-02** | [Muhammad Ayan](https://x.com/socialwithaayan/status/2050484688968724820) | dev-practices, agent-design
   Repo share: warpdotdev/warp - 'an agentic development environment, born out of the terminal.'
 
-- **2026-05-02** | [Kpaxs](https://x.com/kpaxs/status/2050470605804216695) | management, general
+- **2026-05-02** | [Kpaxs](https://x.com/kpaxs/status/2050470605804216695) | management, general, adjacent
   On agency: 'Low-agency asks Can I? High-agency says I'm doing this unless someone stops me.' Most permissions are granted retroactively - easier to get forgiveness than permission; much organizational authority was never formally granted, just assumed and later legitimized because it worked.
 
 - **2026-05-02** | [Om Patel](https://x.com/om_patel5/status/2050441119003971683) | skills-mcp, agent-design, dev-practices
@@ -5185,7 +5245,7 @@
 - **2026-04-30** | [Akshay](https://x.com/akshay_pachaar/status/2049476617144287719) | agent-design, skills-mcp, dev-practices
   Rebuilt most of OpenClaw's core as a single open-source Sim workflow ('SimClaw') - 25 blocks, 29 connections, short + long-term memory, multi-channel (Telegram + Slack), self-hostable with local models, built from a single prompt. Framed as 'an OS for your AI workforce.'
 
-- **2026-04-30** | [Darshak Rana](https://x.com/thedarshakrana/status/2049151671692136778) | general, management
+- **2026-04-30** | [Darshak Rana](https://x.com/thedarshakrana/status/2049151671692136778) | general, management, adjacent
   A long self-improvement essay ('Your Next 5 Years Will Be an Exact Copy of Your Last 5') on the marshmallow test as environment design over willpower, the 'end of history illusion,' affective-forecasting error, basal-ganglia habit chunking, and chronos vs kairos time. Not AI/dev.
 
 - **2026-04-28** | [Aparna Dhinakaran](https://x.com/aparnadhinak/status/2047849364547420382) | agent-design, dev-practices
@@ -5281,7 +5341,7 @@
 - **2026-04-21** | [Raymond Weitekamp](https://x.com/raw_works/status/2046240194999755153) | agent-design, prompting, research
   Long-form X article 'RLMs are the new reasoning models': Recursive Language Models let a root model treat its own prompt as an environment it inspects/slices/recursively subqueries via a REPL, collapsing reasoning and tool use into one inference abstraction and processing inputs orders of magnitude beyond the context window. Traces the reasoning-vs-tool-use history (CoT, ReAct, Toolformer, o1) and the Oolong/LongMemEval/LongCoT benchmark arc where RLM scaffolds post leading numbers — including small models (Qwen3-8B/27B) jumping well past their base, hinting the frontier stops being GPU-rich-only. Flags cost/time and 'models are bad at acting recursively' as open limits.
 
-- **2026-04-21** | [Ihtesham Ali](https://x.com/ihtesham2005/status/2046197374855582157) | general, management
+- **2026-04-21** | [Ihtesham Ali](https://x.com/ihtesham2005/status/2046197374855582157) | general, management, adjacent
   Essay on George Polya's 'How to Solve It' (1945): understand the problem (restate it in your own words - the real filter), make a plan (solve a simpler related problem first for a foothold), carry it out, and 'look back' (verify by another method, reuse it - build a transferable library of methods). Diagnosis: people conflate reading with understanding, method with starting, and answer with learning. Not AI/dev.
 
 - **2026-04-21** | [Vox](https://x.com/voxyz_ai/status/2045899539526148193) | claude-code, dev-practices, prompting
@@ -5341,7 +5401,7 @@
 - **2026-04-15** | [Shann³](https://x.com/shannholmberg/status/2044413638388363272) | agent-design, skills-mcp, dev-practices
   Connected an Obsidian knowledge base (230+ cross-referenced pages) to every project so every agent reads the wiki first: indexed with qmd (hybrid BM25 + vector + LLM re-ranking, local) and a global /knowledge-shann skill any agent can call to load voice rules, frameworks, and metrics before working. Same pattern for company/client KBs. All markdown, one CLI command, works with any bash-capable agent.
 
-- **2026-04-15** | [Millie Marconi](https://x.com/milliemarconnni/status/2044358003714097601) | prompting, management, general
+- **2026-04-15** | [Millie Marconi](https://x.com/milliemarconnni/status/2044358003714097601) | prompting, management, general, adjacent
   'Inversion is the most powerful thinking tool most people never use correctly - they invert the goal, not the system.' Turned Claude into an inversion engine running Munger's method: map every path to failure so the path to success becomes obvious by elimination. Shares 5 prompts.
 
 - **2026-04-15** | [Akshay](https://x.com/akshay_pachaar/status/2044329897603244093) | agent-design, research, skills-mcp, dev-practices
@@ -5380,7 +5440,7 @@
 - **2026-04-15** | [StacyOnChain](https://x.com/stacyonchain/status/2044069002192847200) | questionable, general
   [Engagement-farming / crypto promo] StacyOnChain hypes an institutional-grade Polymarket bot architecture (fractional Kelly sizing, latency optimizations), urging readers to bookmark and download before it is pulled, and quote-tweets their own how-we-built-a-Polymarket-bot article. Off-topic relative to the AI tooling collection.
 
-- **2026-04-15** | [Garry Tan](https://x.com/garrytan/status/2044059516497711522) | management, industry
+- **2026-04-15** | [Garry Tan](https://x.com/garrytan/status/2044059516497711522) | management, industry, adjacent
   Garry Tan amplifies Alfred Lin's article 'Heat Seeking Missile for Pain': the realest founders actively hunt the hairiest, gnarliest problems and surgically destroy them, citing an interview with Keller of Zipline.
 
 - **2026-04-15** | [Ihtesham Ali](https://x.com/ihtesham2005/status/2044056849272705246) | agent-design, skills-mcp
@@ -5395,7 +5455,7 @@
 - **2026-04-15** | [Mario Zechner](https://x.com/badlogicgames/status/2043757216885256463) | dev-practices, agent-design, prompting
   Mario Zechner recommends Alex Volkov's article 'The Z/L Continuum — Do AI engineers even need to read code anymore?' (thursdai.news/zl), which asks how much code AI engineers still need to read in 2026 and beyond.
 
-- **2026-04-14** | [Alex Vacca](https://x.com/itsalexvacca/status/2043834187095150673) | industry, management
+- **2026-04-14** | [Alex Vacca](https://x.com/itsalexvacca/status/2043834187095150673) | industry, management, adjacent
   Growth/marketing content (mostly off the AI/dev core): endorses Michel Lieben's article on running a 4-layer funnel instead of a bare 'book a call', citing a $7M-ARR bootstrapped funnel (330k visitors, 1,500+ meetings, $4M new ARR). Relevant only as go-to-market reading.
 
 - **2026-04-14** | [am.will](https://x.com/llmjunky/status/2043817254152814785) | dev-practices, industry
@@ -5554,7 +5614,7 @@
 - **2026-04-02** | [Dmitriy Kovalenko](https://x.com/neogoose_btw/status/2039508756988620801) | dev-practices, agent-design
   Built fast, accurate, index-free code search - demonstrated on leaked Claude Code sources, Linux kernel (100k files), and Chromium (500k files). A foundational code-search primitive for agents.
 
-- **2026-04-02** | [The Curious Tales](https://x.com/thecurioustales/status/2039360822200442914) | general
+- **2026-04-02** | [The Curious Tales](https://x.com/thecurioustales/status/2039360822200442914) | general, adjacent
   'Drop everything and read this' - recommends a Dan-Koe-style life essay. Links Darshak Rana 'You Are Just 3 Decisions Away From a Completely Different Life.' Self-improvement, not AI/dev.
 
 - **2026-04-02** | [Adam](https://x.com/_overment/status/2039061635776618554) | agent-design, dev-practices
@@ -5661,7 +5721,7 @@
 - **2026-03-18** | [Rohit](https://x.com/rohit4verse/status/2033945654377283643) | agent-design, dev-practices, claude-code
   Rohit's essay 'The Harness Is Everything: What Cursor, Claude Code, and Perplexity Actually Built' argues you're not using AI wrong because of the model — you're using it wrong because you haven't built the right environment; the difference between teams shipping millions of lines and those struggling is the harness, not GPT-5 vs Claude Opus, temperature, or the prompt.
 
-- **2026-03-18** | [zostaff](https://x.com/zostaff/status/2033930728044372275) | agent-design, industry, questionable
+- **2026-03-18** | [zostaff](https://x.com/zostaff/status/2033930728044372275) | agent-design, industry, questionable, solo-operator
   zostaff's clickbait-titled ('How to Quit Your Job in One Day') walkthrough of an autonomous Polymarket trading system built from three agents: Claude (strategist — probability/recommendation/confidence), Codex (engineer — writes and debugs bot code), and OpenClaw (orchestrator — persistent memory, cron, modular skills, Telegram interface that executes trades and logs everything).
 
 - **2026-03-17** | [Akhilesh Mishra](https://x.com/livingdevops/status/2033845127244825041) | dev-practices, agent-design, skills-mcp, industry
@@ -5757,7 +5817,7 @@
 - **2026-03-05** | [Meta Alchemist](https://x.com/meta_alchemist/status/2029430826128293906) | agent-design, skills-mcp, questionable
   Roundup of 10 open-source AI memory layers (free, popular on GitHub, some YC-funded) to give coding agents like Claude and Codex better recall than plain memory.md files, with notes on what each is good at and how to combine them. Engagement-styled listicle but substantive.
 
-- **2026-03-05** | [John Rush](https://x.com/johnrushx/status/2029406051716743354) | industry, management
+- **2026-03-05** | [John Rush](https://x.com/johnrushx/status/2029406051716743354) | industry, management, adjacent
   Opinion piece: AI does not make work easier — it strips away the easy 99% of jobs so everyone now competes on the hard 1%, raising cognitive load and stress sharply. A take on how AI reshapes knowledge work.
 
 - **2026-03-05** | [Sukh Sroay](https://x.com/sukh_saroy/status/2029400474739458379) | questionable, skills-mcp, agent-design, dev-practices
@@ -5787,7 +5847,7 @@
 - **2026-03-05** | [hoeem](https://x.com/hooeem/status/2029167629076676955) | general, research
   A free, beginner-to-expert ranked list of AI learning resources: Anthropic Academy (Claude 101 & AI Fluency), Google AI Essentials, AWS Generative AI Essentials, Elements of AI (University of Helsinki), DeepLearning.AI short courses, and Harvard CS50s Intro to AI with Python.
 
-- **2026-03-05** | [Bojan Tunguz](https://x.com/tunguz/status/2029164042028236942) | management, general
+- **2026-03-05** | [Bojan Tunguz](https://x.com/tunguz/status/2029164042028236942) | management, general, adjacent
   Reflects on "mid season" knowledge — many roles require grappling with a problem mid-stream without enough runway to catch up on missing context, something even smart people underestimate.
 
 - **2026-03-05** | [witcheer ☯︎](https://x.com/witcheer/status/2029013946701381978) | agent-design, skills-mcp
@@ -5945,7 +6005,7 @@
 - **2026-02-09** | [Peter Steinberger](https://x.com/steipete/status/2020704611640705485) | prompting, agent-design, claude-code
   Peter Steinberger shares a SOUL.md rewrite prompt (via Molty) to give a coding agent a stronger personality: hold strong opinions instead of hedging, delete corporate-handbook rules, never open with filler like 'Great question', enforce brevity, allow natural humor, call out bad ideas (charm over cruelty), and permit well-placed swearing.
 
-- **2026-02-07** | [Machina](https://x.com/exm7777/status/2019787951530725396) | management, general, industry
+- **2026-02-07** | [Machina](https://x.com/exm7777/status/2019787951530725396) | management, general, industry, adjacent
   Machina's thread on how to stop feeling behind in AI: the relentless cadence of releases (GPT-5.3 Codex, Opus 4.6, Kling 3.0, all 'redefining everything') creates a low-grade, never-ending pressure. His reframe is that the problem isn't too much happening, it's the lack of a personal filter for what actually matters to your work.
 
 - **2026-02-07** | [chiefofautism](https://x.com/chiefofautism/status/2019608146692673886) | agent-design, dev-practices, research
@@ -6052,7 +6112,7 @@
 - **2026-01-14** | [Matt Pocock](https://x.com/mpocock/status/2009888462821732368) | general
   [Post deleted/unavailable — in Jan 3-16 dead zone]
 
-- **2026-01-13** | [fintechjunkie](https://x.com/fintechjunkie/status/2010910565279961423) | general, questionable
+- **2026-01-13** | [fintechjunkie](https://x.com/fintechjunkie/status/2010910565279961423) | general, questionable, adjacent
   fintechjunkie gives a glowing, no-edits endorsement of a Dan Koe (@thedankoe) long-form article titled 'How to fix your entire life in 1 day' — a self-improvement/productivity piece rather than an AI or engineering topic. Off-theme for the collection; kept for completeness.
 
 - **2026-01-12** | [bluecow](https://x.com/bluecow/status/2009065743606194185) | general
@@ -6186,7 +6246,7 @@
 - **2025-12-22** | [Tech with Mak](https://x.com/technmak/status/2002713140757496299) | agent-design, skills-mcp, dev-practices, questionable
   A structured LangGraph learning path (pitched as filling the gap since LangGraph appears in ~half of AI job descriptions). Progresses from basic agent concepts (Pydantic data validation, agentic chatbots, multi-agent coordination) through production systems (a 2.5-hour LangGraph+MCP crash course, debugging/monitoring, deployment architecture) to RAG pipelines (multimodal RAG, hallucination fixes, end-to-end retrieval, Typesense search).
 
-- **2025-12-22** | [Abhishek Singh](https://x.com/0xlelouch_/status/2002673253912113644) | management, general
+- **2025-12-22** | [Abhishek Singh](https://x.com/0xlelouch_/status/2002673253912113644) | management, general, adjacent
   A reflective essay on career fulfillment in software engineering: you don't magically know whether backend, frontend, infra, ML, startups, big tech, or management will fulfill you — you only find out through reps. Early on people confuse novelty (new frameworks, jobs, titles) with fulfillment; real self-knowledge is earned by shipping boring features, debugging 3am outages, owning systems, and sticking with things long enough to feel the responsibility.
 
 - **2025-12-21** | [Claire Silver](https://x.com/clairesilver12/status/2002443560898208162) | skills-mcp, claude-code, agent-design
@@ -6289,7 +6349,7 @@
 - **2025-10-19** | [Always Keep Learning](https://x.com/alwayskeepl/status/1979452892059967974) | management
   Infographic-style post outlining servant leadership as an alternative model for leading teams differently.
 
-- **2025-10-17** | [Alex Lieberman](https://x.com/businessbarista/status/1978988763620741503) | management
+- **2025-10-17** | [Alex Lieberman](https://x.com/businessbarista/status/1978988763620741503) | management, adjacent
   Alex Lieberman shares a '5 levels of work' framework for teaching high agency, from L1 'there is a problem' to L5 'I found it, fixed it, just keeping you in the loop.' He tells new hires to operate at Level 4 from day one and grow into Level 5. Credits Steph Smith.
 
 - **2025-10-11** | [Kevin Box](https://x.com/fuel_yourgrowth/status/1977008526867546245) | management
@@ -6304,7 +6364,7 @@
 - **2025-10-07** | [Vivek Galatage](https://x.com/vivekgalatage/status/1974894313948758373) | dev-practices, research
   Vivek Galatage recommends Richard Hipp's 2024 'SQLite: How it works' lecture on database internals from the creator himself, in a thread noting SQLite's ubiquity (including in Chromium browser engines).
 
-- **2025-10-07** | [keshav](https://x.com/kshvbgde/status/1974835291358969895) | management, general
+- **2025-10-07** | [keshav](https://x.com/kshvbgde/status/1974835291358969895) | management, general, adjacent
   Post (likely video/thread) on Steve Jobs's principles for designing insanely great products.
 
 - **2025-10-05** | [Prompter](https://x.com/promptllm/status/1974518025211818291) | prompting, questionable

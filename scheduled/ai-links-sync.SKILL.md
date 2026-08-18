@@ -1,15 +1,16 @@
 ---
 name: ai-links-sync
-description: Pull-first daily AI Links sync from Outlook → SQLite via unified db/enrich.py helpers, structured thread capture, status-enum tracking, then push to GitHub.
+description: Pull-first daily AI Links sync from Outlook → SQLite via unified db/enrich.py helpers, structured thread capture, status-enum tracking, full post-enrichment pipeline (incl. orphan clustering + primaries), then push to GitHub.
 ---
 
 > **Versioned snapshot.** The *live* task runs from the Cowork app store at
 > `~/Documents/Claude/Scheduled/ai-links-sync/SKILL.md` (not this file). This
 > copy exists so the automation trigger is reproducible on another machine or
-> the CLI — see `SETUP.md` for how to (re)create the scheduled task from it.
-> Keep the two in sync when you change either. Semantic-stack deps
-> (fastembed/numpy) are auto-ensured by the pipeline via `db/ensure_deps.py`,
-> so no manual install step is needed here.
+> the CLI — see `SETUP.md`. **Keep the two in sync when you change either;**
+> they drifted badly once (the live copy sat on a June vintage carrying a stale
+> intake filter that suppressed `adjacent` / `solo-operator` tagging for weeks).
+> Semantic-stack deps (fastembed/numpy) are auto-ensured by the pipeline via
+> `db/ensure_deps.py`, so no manual install step is needed here.
 
 Run the daily AI Links sync — pull-first + import + unified enrichment + post-enrichment pipeline + push.
 
@@ -17,7 +18,7 @@ Refer to `CLAUDE.md` for project background and `CURATION_DESIGN.md` for the cur
 
 The schema and helpers landed in June 2026 are the canonical write path. Do NOT write directly to `posts.enriched`, `posts.content`, or `posts.summary` from this skill — go through `db/enrich.py` so the schema layer can evolve underneath us without breaking sync runs.
 
-The daily sync and the catch-up skill now run the same post-enrichment pipeline (`db/pipeline.py`) at the end. Capture differs (sync from Outlook, catch-up from the partial/failed queue), but what happens after — embeddings, mechanical + semantic discovery, auto-curate, assign-primaries, rebuild — is identical.
+The daily sync and the catch-up skill now run the same post-enrichment pipeline (`db/pipeline.py`) at the end. Capture differs (sync from Outlook, catch-up from the partial/failed queue), but what happens after — subject flags, embeddings, mechanical + semantic discovery, auto-curate, orphan clustering, assign-primaries, rebuild — is identical.
 
 ### Step 0 — Locate Cowork folder, configure git
 
@@ -73,6 +74,8 @@ Drop only **true noise**: Sentry alerts, receipts, shipping and delivery notices
 
 Tangential material is wanted, not tolerated. Persuasion and sales, writing craft, creator-economy and indie-studio content, business logistics — these get the `adjacent` and/or `solo-operator` topics (see CLAUDE.md) alongside any technical tags that apply. Hype packaging earns `questionable`, which is a *credibility* label only and never a reason to drop, deprioritize, or suggest removing a post.
 
+Note: some self-sent mail carries attachments and no URL at all (e.g. Jeremy moving a skill zip or a diff between his machines). That isn't noise and isn't a link — there's nothing to insert. Skip it and say so in the report rather than forcing a row.
+
 ### Step 5 — Extract URLs
 
 For each email, read body via `mail:///messages/{messageId}` if needed (the summary is usually accurate for the iPhone share-sheet shape). Extract primary URL (x.com, twitter.com, github.com, arxiv.org, blog posts). Strip tracking params (`?s=`, `?t=`, `&utm_*`). Normalize x.com URLs to `https://x.com/{handle}/status/{id}`.
@@ -113,6 +116,7 @@ Chrome runs on the user's Mac. Detect connectivity once:
 Work list (newest-first):
 - All NEW_IDS from Step 6.
 - If `len(NEW_IDS) <= 5`, also append `pending_enrichment_ids(limit=25, statuses=('partial','failed'))` — light-day backlog. Cap total wallclock at ~15 minutes.
+- If the work list comes out empty (no new posts and an empty backlog), skip Chrome entirely — don't open a tab just to prove there's nothing to scrape. Note it in the report and go straight to Step 8.
 
 For each post:
 1. `navigate` to URL in Chrome.
@@ -150,17 +154,31 @@ pipeline_result = post_enrichment_pipeline(with_lock=False, progress=True)
 print(pipeline_result['summary'])
 ```
 
-This single call does:
+This single call does, in pipeline order:
+0. **Subject flags** — lifts the trailing-parenthetical importance flag from email subjects into `posts.notes` as a searchable `flag: <text>` fragment. Idempotent; never clobbers existing curation notes.
 1. **Embed** any post whose content_hash changed (or is missing an embedding) using fastembed + bge-small-en-v1.5 (384d). Skips partial/dead posts. (Deps auto-ensured via `db/ensure_deps.py`.)
 2. **Mechanical discovery** — shared external URLs (min 2 co-citing posts) + shared @mentions (min 3) → new `concept_observations` rows.
-3. **Semantic discovery** — concept-centroid matching at threshold 0.82. Surfaces new candidate evidence for existing concepts.
-4. **Auto-curate** — auto-files conceptual semantic matches ≥0.82 as *secondary* tags, dismisses the sub-floor band and low-signal mechanical/per-person duplicates. Queue self-clears; pending stays ~0.
-5. **Assign primaries** — derives each post's single primary home (one per post).
-6. **Rebuild** — regenerates `posts_final_v3.json`, `ai_links_collection_v3.html`, `ai_links_collection_v3.md`.
+3. **Semantic discovery** — concept-centroid matching at `SEMANTIC_CENTROID_THRESHOLD` (0.82, measured on *raw* cosines). Surfaces new candidate evidence for existing concepts.
+4. **Auto-curate** (step 3.5) — auto-files conceptual semantic matches ≥ `AUTO_PROMOTE_MIN_COSINE` (0.82) as *secondary* tags, dismisses the sub-floor band and low-signal mechanical/per-person duplicates. Queue self-clears; pending stays ~0.
+5. **Orphan clustering** (step 3.55) — the only pass that invents a *new* concept from theme, clustering edge-less posts on **mean-centered** embeddings (`ORPHAN_CLUSTER_THRESHOLD` = 0.40 is a centered cosine and is *not* comparable to the semantic threshold). Guards: min size 4, min cohesion 0.55, max 6 per run, max 55% single-author share, min 3 distinct authors.
+6. **Assign primaries** (step 3.6) — derives each post's single primary home (exactly one per post) by cosine against each candidate concept's leave-one-out centroid. Split-review counts *primaries*, not total edges.
+7. **Rebuild** — regenerates `posts_final_v3.json`, `ai_links_collection_v3.html`, `ai_links_collection_v3.md`.
+
+**If orphan clustering created concepts, rename them before finishing.** Unattended runs auto-name from crude TF-IDF and mark the description `[auto-named]`; this task has a model in the loop, so do better. Find and fix them:
+
+```python
+import sqlite3
+con = sqlite3.connect(f'{cowork}/db/ai_links.db')
+fresh = con.execute("SELECT id, name FROM concepts WHERE description LIKE '%[auto-named]%'").fetchall()
+```
+
+Read a few member posts of each, then use `db.concepts.rename_concept()` to give it a name that names the *idea*, not the loudest author (author and handle tokens are already excluded from the naming vocabulary, but auto-names are still crude). `archive_concept(id)` retires a cluster that isn't a real theme; `merge_concepts()` folds a duplicate into an existing home. Both are reversible.
 
 Each step is idempotent; running the pipeline twice is a no-op the second time. Errors in one step don't abort the others — the result dict has `errors` listing what went wrong.
 
 If deps can't be installed for some reason, the embed + semantic steps surface a clean error and the pipeline still runs mechanical + rebuild. Tell Jeremy in the report.
+
+**A large jump in new semantic observations is expected, not alarming,** if a manual restructure, an orphan-clustering run, or a latent pass recently reshaped centroids. Those auto-file as *secondary* edges and settle to a trickle over the next 1–2 runs (the convergence surge — e.g. 134 → 4 → ~0). Report the number and move on.
 
 ### Step 9 — Push to GitHub (still inside the lock)
 
@@ -191,17 +209,21 @@ if diff.stdout.strip():
 
 Release the writer lock by exiting the `with` block.
 
+**Housekeeping.** The cowork mount denies `unlink`, so deleted-but-open files accumulate in `db/` as `.fuse_hidden*` orphans (they reached ~5,200 files / 284 MB once and made the directory unlistable). If `find {cowork}/db -maxdepth 1 -name '.fuse_hidden*' | wc -l` exceeds ~500, delete them — never touching `ai_links.db`, `ai_links.db-wal`, or `ai_links.db-shm` — and mention it in the report. Use `mcp__cowork__allow_cowork_file_delete` if `rm` returns "Operation not permitted". Also checkpoint the WAL (`PRAGMA wal_checkpoint(TRUNCATE)`) before the push so the committed `.db` file is self-contained.
+
 ### Step 10 — Report
 
 Tell Jeremy:
 - Pull-first result (was the remote ahead? did we restore local?)
 - Migration runner — were any pending? Final schema version.
-- Emails found, posts inserted (after dedup), topic breakdown of new posts.
-- Enrichment counts: `ok` / `partial` / `dead` / `failed` for this run.
+- Emails found, posts inserted (after dedup), topic breakdown of new posts. Note any mail skipped as noise or as attachment-only-with-no-URL.
+- Enrichment counts: `ok` / `partial` / `dead` / `failed` for this run — or that Chrome was skipped because the work list was empty.
 - Status breakdown for the whole corpus (`status_breakdown()`).
 - Latent gate ratio (`gate_ratio()`): is it open?
-- **Pipeline summary** (from `pipeline_result['summary']`) — embed counts, new mechanical/semantic observations, auto-curate + primaries, rebuild post count.
+- **Pipeline summary** (from `pipeline_result['summary']`) — flags, embed counts, new mechanical/semantic observations, auto-curate, orphan clusters, primaries, rebuild post count.
 - Pending observation count (should be ~0 in steady state — semantic triage is automated).
+- **Any concepts created by orphan clustering this run, and what you renamed them to** (or that none were created). Flag any left `[auto-named]`.
+- Split-review candidates from `pipeline_result['split_candidates']` (advisory only — never auto-split).
 - Modified subject lines (Jeremy's importance flags — `(implement!)`, `(read this today)`, `(mgmt)`).
 - GitHub push status.
 - Any failures (Chrome unreachable, lock timeout, unparseable subjects, dedup hits, pipeline errors).
@@ -215,3 +237,4 @@ Tell Jeremy:
 - If no new emails since CUTOFF AND no backlog of `partial`/`failed`, still run the pipeline (it's cheap and may surface new concept evidence as the graph evolves) — but skip commit/push if `git diff --cached` is empty.
 - If the DB is locked or anything goes wrong inside the writer-lock block, abort before pushing and report.
 - Never delete posts; only insert and update. `dead` status is the closest we get to a tombstone.
+- If you change this task, mirror the change into `scheduled/ai-links-sync.SKILL.md` in the repo and push it, so the live copy and the snapshot don't drift again.
