@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-08-18T19:29:20Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-19T15:01:42Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-08-14** — [Granite](https://x.com/granite0x/status/2087960767287230592) — *now • Agent Design • — views • v1 enriched*  
@@ -23,28 +23,28 @@
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **agents-as-judges-of-agents — bossman supervisor / self-verification** (53 posts, +19 this week)  
-  Critical supervisor agent judges worker agents rather than doing the work. Boris Cherny on self-verification loops; Viv on bossman supervisor.
-    - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
-    - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
-
-- **founder philosophy & life-design essays** (251 posts, +18 this week)  
-  First-principles method and life-design content: Musk's 5-step algorithm, Jobs on product design, Dan Koe-style essays, systems thinking, 'the right way to build a startup'. Mostly endorsement posts pointing at a longer read; quality varies widely.
-    - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
-    - 2026-08-14 — [Ruben Hassid](https://x.com/rubenhassid/status/2087856703773508025): A running list of AI-writing tells that have replaced the em-dash as giveaways, with concrete rewrites: the 'That's not X. That's Y.' constr…
-
-- **Forward Deployed Engineers — the durable AI-era role** (228 posts, +18 this week)  
+- **Forward Deployed Engineers — the durable AI-era role** (238 posts, +18 this week)  
   Argument that FDEs are the right shape of role for the AI rollout era. Touches every employee's workflow.
     - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
     - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
 
-- **vibecode-to-production via agent skills** (77 posts, +18 this week)  
-  Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
+- **agents-as-judges-of-agents — bossman supervisor / self-verification** (53 posts, +18 this week)  
+  Critical supervisor agent judges worker agents rather than doing the work. Boris Cherny on self-verification loops; Viv on bossman supervisor.
     - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
     - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
 
-- **agentic code review at production scale** (61 posts, +18 this week)  
-  Deterministic engineering handles what must never fail; LLM only does context reading and reasoning. Alibaba open-code-review.
+- **prediction-market & crypto trading bots** (257 posts, +17 this week)  
+  Polymarket and crypto trading-bot content: sweeper and arbitrage bots, Markov-chain trade models, tick-data neural nets, plus one genuinely useful 72M-trade dataset. Heavily promotional and largely off-topic for AI engineering — kept and labelled rather than dropped.
+    - 2026-08-14 — [Yarchi](https://x.com/undefinedki/status/2087634870260449474): Google Research, DeepMind and MIT ran 260 agent configurations across six benchmarks, five architectures and three model families, holding t…
+    - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
+
+- **founder philosophy & life-design essays** (255 posts, +17 this week)  
+  First-principles method and life-design content: Musk's 5-step algorithm, Jobs on product design, Dan Koe-style essays, systems thinking, 'the right way to build a startup'. Mostly endorsement posts pointing at a longer read; quality varies widely.
+    - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
+    - 2026-08-14 — [Ruben Hassid](https://x.com/rubenhassid/status/2087856703773508025): A running list of AI-writing tells that have replaced the em-dash as giveaways, with concrete rewrites: the 'That's not X. That's Y.' constr…
+
+- **vibecode-to-production via agent skills** (77 posts, +17 this week)  
+  Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
     - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
     - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
 
