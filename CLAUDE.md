@@ -2,6 +2,26 @@
 
 This folder contains Jeremy's curated collection of AI-related links, sourced from emails he sends himself (X/Twitter posts, articles, tools) and organized with rich metadata.
 
+## ⏳ Open work queue (resume here — as of 2026-08-21)
+
+Two known-bad data populations, both mid-remediation. Both are *detected by query*, so nothing here depends on remembering a list.
+
+**1. Legacy description-blob content — 186 posts remaining (of 236).** A capture-logic vintage from roughly March–May 2026 wrote an editorial *description* into the `op` segment instead of the post's actual text, shaped `Author @handle. <description>. 7.4M views. topic1, topic2.` All are marked `v1`/`ok`, so they are invisible to `pending_enrichment_ids()`, and all are embedded — meaning a large slice of the semantic layer votes on concept assignment using paraphrase rather than source text. Find them:
+
+```python
+import sqlite3, re
+con = sqlite3.connect('db/ai_links.db')
+pat = re.compile(r'\b[\d.,KM]+\s+views\.\s*[a-z][a-z-]*(?:,\s*[a-z][a-z-]*)*\.?\s*$', re.I)
+hits = [pid for pid, t in con.execute("SELECT post_id, text FROM post_thread_segments WHERE type='op'")
+        if t and pat.search(t)]
+```
+
+Remaining by month: 2026-03: 17 · 2026-04: 64 · 2026-05: 105. Fix by re-scraping with the `ai-links-catchup` extractor (which now captures quoted posts and link cards — essential here, since roughly half these are endorsement posts whose whole meaning lives in the quoted article) and re-persisting via `record_enrichment` with **existing topics/audiences passed back unchanged**; the goal is content fidelity, not re-tagging. Batches of 50 are comfortable; the binding cost is writing real summaries, not the scraping. Expect a large `semantic → auto-curate` surge afterwards (the 50-post batch produced +144 observations and moved 32 primary homes) — that is real content displacing paraphrase, not churn.
+
+**2. Unverified `dead` tombstones — 48 remaining, all Jan 3–16 2026.** An audit on 2026-08-21 found 58 of 78 `dead` posts had `enrichment_attempts=0` and no recorded error: bulk-tombstoned, never scrape-tested. Of the 10 outside January, **5 were fully alive** — Kpaxs (521.7K views, and carrying a Jeremy-renamed subject plus a "likely important" curation note), Josh Kale (285.8K), hunvreus (95K), ericksky (47.6K), 0xSero (18K). All five are now resurrected. The 25 non-January `dead` are now individually verified. The 48 January ones sit in the documented Jan 3–16 dead zone; a 4-post sample was genuinely gone, but given the 50% false-positive rate outside January they are worth probing individually before being trusted. `dead` is never retried, so a wrong tombstone is permanent and silent — treat verification as the higher-value job of the two.
+
+Both remediations follow the same tail: `post_enrichment_pipeline()` → rename any `[auto-named]` concepts → pull-rebase → push per the GitHub Backup section below.
+
 ## What This Collection Is For
 
 **Primarily Jeremy's own research corpus, secondarily a sharing artifact** (Jeremy, August 2026). It began as a curation project to share with the TaxHawk team, but in practice only a few people have read it a couple of times. The working assumption is now: this is Jeremy's personal research library, and the `audience` tags are a convenience for the occasional share rather than the organizing principle.
