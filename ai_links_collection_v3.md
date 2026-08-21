@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-08-21T19:32:07Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-21T19:36:28Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-08-21** — [Matt Pocock](https://x.com/mattpocockuk/status/2090744569960824949) — *now • Skills & MCP • 72.5K views • v1 enriched*  
@@ -28,7 +28,7 @@
     - 2026-08-21 — [Xudong Han](https://x.com/xudong07452910/status/2090760827230187782): Chinese-language post recommending a Julie Yoo essay on where an AI startup's moat can still sit. Argument: models improve every few months,…
     - 2026-08-21 — [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784): Five patterns for long-running agents, from an Addy Osmani and Shubham Saboo piece: checkpoints, approval gates, governed memory, event-driv…
 
-- **agents-as-judges-of-agents — bossman supervisor / self-verification** (63 posts, +19 this week)  
+- **agents-as-judges-of-agents — bossman supervisor / self-verification** (64 posts, +19 this week)  
   Critical supervisor agent judges worker agents rather than doing the work. Boris Cherny on self-verification loops; Viv on bossman supervisor.
     - 2026-08-21 — [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784): Five patterns for long-running agents, from an Addy Osmani and Shubham Saboo piece: checkpoints, approval gates, governed memory, event-driv…
     - 2026-08-21 — [Aaron Levie](https://x.com/levie/status/2090664811185205722): Levie on when domain-specific post-training beats a general frontier model for applied AI: once you understand a domain well enough and have…
@@ -43,7 +43,7 @@
     - 2026-08-21 — [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784): Five patterns for long-running agents, from an Addy Osmani and Shubham Saboo piece: checkpoints, approval gates, governed memory, event-driv…
     - 2026-08-21 — [0xSero](https://x.com/0xsero/status/2090543697398038876): Recommends reading the Pi repo as the fastest way to understand agent architecture, with a specific reading order: packages/ai, then package…
 
-- **self-improving skills (autoresearch pattern)** (262 posts, +17 this week)  
+- **self-improving skills (autoresearch pattern)** (263 posts, +17 this week)  
   Skills and harnesses that improve themselves or each other, mostly downstream of Karpathy's autoresearch method — meta-skills that optimise other skills, /autobrowse, recursive self-improvement loops, and agents that accumulate site knowledge instead of rediscovering it.
     - 2026-08-21 — [Matt Pocock](https://x.com/mattpocockuk/status/2090744569960824949): Pocock shares an /implement-spec skill: a multi-agent implementer that takes a spec plus tickets, does codebase research in a subagent, impl…
     - 2026-08-21 — [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784): Five patterns for long-running agents, from an Addy Osmani and Shubham Saboo piece: checkpoints, approval gates, governed memory, event-driv…
