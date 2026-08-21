@@ -1,12 +1,12 @@
 # AI Links Collection
-**Total Posts**: 793  
-**Date Range**: 2024-06-11 – 2026-08-14  
-**Enriched**: 792/793 (99%)
+**Total Posts**: 816  
+**Date Range**: 2024-06-11 – 2026-08-21  
+**Enriched**: 792/816 (97%)
 
 ---
 ## Morning view
 
-*Generated 2026-08-20T15:02:58Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-21T17:32:17Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-08-14** — [Granite](https://x.com/granite0x/status/2087960767287230592) — *now • Agent Design • — views • v1 enriched*  
@@ -15,35 +15,35 @@
   A shareable rules-file snippet for tightening agent behavior on Opus 5 (author claims it transfers to other models), targeting drift, slowness and laziness. Two representative rules: 'Done means done' — five things asked means five delivered, and name the specific blocker in one sentence if genuinely stuck; and 'Act, don't ask' — do reversible, cheap work then report, since a question costs the user more than a re-run costs the agent.
 - **2026-08-14** — [David Ondrej](https://x.com/davidondrej1/status/2087862257279459422) — *now • Dev Practices • 151.6K views • v1 enriched*  
   Recommends vercel-labs/deepsec (github.com/vercel-labs/deepsec), a security harness for finding vulnerabilities in your code — pitched as essential tooling for anyone doing agentic engineering. Post itself is a one-liner endorsement; the value is the repo.
-- **2026-08-13** — [dex](https://x.com/dexhorthy/status/2087569590268391897) — *now • Claude Code • 477K views • v1 enriched*  
-  HumanLayer's /show-me skill makes coding agents converse with compact visual representations instead of walls of prose — lighter and faster than HTML for most dev-shaped problems. Install: npx skills add humanlayer/skills --skill show-me. Framed against widespread complaints about coding agents' unreadable text output.
 - **2026-08-14** — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288) — *near-term • Research • — views • v1 enriched*  
   Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved paper arguing RLHF alignment induces mode collapse and typicality bias that flattens model creativity. Offers a training-free prompt-side fix to recover output diversity without retraining.
+- **2026-08-14** — [Teknium](https://x.com/teknium/status/2088003994904113614) — *near-term • Agent Design • 441.9K views • v1 enriched*  
+  Nous Research shipped Bot Mode for Hermes Agent (github.com/NousResearch/Hermes-Bot-Mode) as a one-day public beta plugin for Hermes Desktop. Instead of sessions, each agent profile is a persistent 'bot' with its own job, description and avatar, and bots can communicate with each other — a multi-agent persona layer over the desktop app.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **Forward Deployed Engineers — the durable AI-era role** (241 posts, +14 this week)  
+- **Forward Deployed Engineers — the durable AI-era role** (241 posts, +13 this week)  
   Argument that FDEs are the right shape of role for the AI rollout era. Touches every employee's workflow.
     - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
     - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
 
-- **agents-as-judges-of-agents — bossman supervisor / self-verification** (53 posts, +14 this week)  
+- **agents-as-judges-of-agents — bossman supervisor / self-verification** (53 posts, +13 this week)  
   Critical supervisor agent judges worker agents rather than doing the work. Boris Cherny on self-verification loops; Viv on bossman supervisor.
     - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
     - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
 
-- **prediction-market & crypto trading bots** (257 posts, +13 this week)  
+- **prediction-market & crypto trading bots** (257 posts, +12 this week)  
   Polymarket and crypto trading-bot content: sweeper and arbitrage bots, Markov-chain trade models, tick-data neural nets, plus one genuinely useful 72M-trade dataset. Heavily promotional and largely off-topic for AI engineering — kept and labelled rather than dropped.
     - 2026-08-14 — [Yarchi](https://x.com/undefinedki/status/2087634870260449474): Google Research, DeepMind and MIT ran 260 agent configurations across six benchmarks, five architectures and three model families, holding t…
     - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
 
-- **founder philosophy & life-design essays** (257 posts, +13 this week)  
+- **founder philosophy & life-design essays** (257 posts, +12 this week)  
   First-principles method and life-design content: Musk's 5-step algorithm, Jobs on product design, Dan Koe-style essays, systems thinking, 'the right way to build a startup'. Mostly endorsement posts pointing at a longer read; quality varies widely.
     - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
     - 2026-08-14 — [Ruben Hassid](https://x.com/rubenhassid/status/2087856703773508025): A running list of AI-writing tells that have replaced the em-dash as giveaways, with concrete rewrites: the 'That's not X. That's Y.' constr…
 
-- **self-improving skills (autoresearch pattern)** (256 posts, +13 this week)  
+- **self-improving skills (autoresearch pattern)** (256 posts, +12 this week)  
   Skills and harnesses that improve themselves or each other, mostly downstream of Karpathy's autoresearch method — meta-skills that optimise other skills, /autobrowse, recursive self-improvement loops, and agents that accumulate site knowledge instead of rediscovering it.
     - 2026-08-14 — [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288): Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved…
     - 2026-08-14 — [Viv](https://x.com/vtrivedy10/status/2087962694565368092): Commentary on dexhorthy's /show-me proposal — compact visual representations for coding agents, so agents converse visually instead of in wa…
@@ -59,23 +59,46 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 462 | 58.3% |
-| claude-code | 184 | 23.2% |
-| dev-practices | 330 | 41.6% |
-| skills-mcp | 180 | 22.7% |
-| prompting | 121 | 15.3% |
-| research | 202 | 25.5% |
-| industry | 113 | 14.2% |
-| management | 122 | 15.4% |
-| adjacent | 28 | 3.5% |
+| agent-design | 462 | 56.6% |
+| claude-code | 184 | 22.5% |
+| dev-practices | 330 | 40.4% |
+| skills-mcp | 180 | 22.1% |
+| prompting | 121 | 14.8% |
+| research | 202 | 24.8% |
+| industry | 113 | 13.8% |
+| management | 122 | 15.0% |
+| adjacent | 28 | 3.4% |
 | solo-operator | 5 | 0.6% |
-| questionable | 112 | 14.1% |
-| general | 103 | 13.0% |
+| questionable | 112 | 13.7% |
+| general | 126 | 15.4% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-08-21 | Xudong Han | general |  |
+| 2026-08-21 | Matt Pocock | general |  |
+| 2026-08-21 | rvaniaaa | general |  |
+| 2026-08-21 | 0xSero | general |  |
+| 2026-08-21 | Bilgin Ibryam | general |  |
+| 2026-08-21 | hraness | general |  |
+| 2026-08-21 | Aaron Levie | general |  |
+| 2026-08-21 | Tony Simons | general |  |
+| 2026-08-21 | Latent.Space | general |  |
+| 2026-08-21 | 0xSero | general |  |
+| 2026-08-21 | ClaudeDevs | general |  |
+| 2026-08-21 | Boris Cherny | general |  |
+| 2026-08-21 | elvis | general |  |
+| 2026-08-21 | Derrick Wippler | general |  |
+| 2026-08-21 | ericosiu | general |  |
+| 2026-08-21 | Eron | general |  |
+| 2026-08-21 | Ivan Fioravanti | general |  |
+| 2026-08-21 | Pi | general |  |
+| 2026-08-21 | alexei | general |  |
+| 2026-08-21 | Elon Musk | general |  |
+| 2026-08-21 | Mia | general |  |
+| 2026-08-21 | James Zou | general |  |
+| 2026-08-21 | BasedBiohacker | general |  |
 | 2026-08-14 | Brian Roemmele | research | Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and... |
 | 2026-08-14 | Teknium | agent-design | Nous Research shipped Bot Mode for Hermes Agent (github.com/NousResear... |
 | 2026-08-14 | Viv | agent-design | Commentary on dexhorthy's /show-me proposal — compact visual represent... |
@@ -103,29 +126,6 @@
 | 2026-08-13 | Alex Prompter | prompting | 'Reverse Prompting 101' — an X article arguing that as models grow mor... |
 | 2026-08-08 | Aaron Levie | management | Box CEO Aaron Levie argues enterprise AI productivity gains will vary... |
 | 2026-08-08 | Alex Prompter | agent-design | Argues a multi-agent council is worthless if the agents just agree — y... |
-| 2026-08-08 | Akshay | agent-design | Describes a Stanford system that is effectively an agent-native versio... |
-| 2026-08-08 | 0xSero | agent-design | Quote-tweets Tom Greenwald's launch of Magnitude, a fully local, priva... |
-| 2026-08-08 | Xudong Han | agent-design | Highlights Scale AI's article "Model or Harness?", which studies failu... |
-| 2026-08-08 | Yarchi | agent-design | Summarizes how NVIDIA builds agent harnesses internally: 82.2% on SWE-... |
-| 2026-08-08 | ClaudeDevs | claude-code | Announces a new Claude Code feature: sessions can now message each oth... |
-| 2026-08-08 | beamnxw ./ | research | Summarizes a CS paper formalizing the filesystem as long-term memory f... |
-| 2026-08-08 | NO1ennn | research | Engagement-styled but substantive writeup of HippoRAG (Stanford): a br... |
-| 2026-08-06 | Teknium | agent-design | Teknium's Hermes Agent now auto-converts any document — PDF, Word, Pow... |
-| 2026-08-06 | Avi Chawla | agent-design | A new study evaluates 12 agent memory systems across four stages (repr... |
-| 2026-08-06 | elvis | research | elvis (@omarsar0) highlights a paper testing whether LLM self-reflecti... |
-| 2026-08-06 | Shreyas | agent-design | Shreyas (@shreyasaiyer) of Antimetal describes context-compression tec... |
-| 2026-08-05 | Viv | skills-mcp | Introduces the 'eval-engineering' skill (from LangChain's langchain-sk... |
-| 2026-08-05 | beamnxw | research | Highlights a paper proposing a 'Cognitive Workspace' that replaces pas... |
-| 2026-08-05 | rvaniaaa | agent-design | Outlines an 8-agent pipeline for an AI agent that autonomously discove... |
-| 2026-08-05 | Shubham Mishra | research | Argues the path to genuine scientific discovery in AI isn't scaling te... |
-| 2026-08-05 | Yarchi | dev-practices | Breaks down Airbnb's internal LLM eval process: three layers (programm... |
-| 2026-08-04 | Pi | agent-design | Earendil blog post (earendil.com/posts/pi-autoresearch-and-databricks)... |
-| 2026-07-31 | Ziran Yang | research | Research thread on distilling the decision-making knowledge encoded in... |
-| 2026-07-31 | Viv | skills-mcp | LangChain released v2 of its eval-engineering skill (npx skills add gi... |
-| 2026-07-30 | elvis | agent-design | Summarizes new NVIDIA work (NOOA) proposing agents be built as plain P... |
-| 2026-07-30 | Yarchi | dev-practices | Recounts how Jarred Sumner rewrote Bun from ~500K lines of Zig to ~1M... |
-| 2026-07-30 | Alvaro Cintas | agent-design | Highlights Agent-Reach (github.com/Panniantong/Agent-Reach), an open-s... |
-| 2026-07-30 | Anatoli Kopadze | agent-design | Promotes a 25-minute talk plus guide on 'graph engineering' for agents... |
 
 ---
 ## Posts by Topic
@@ -3870,7 +3870,53 @@
 
 - [Aakash Gupta](https://x.com/aakashg0/status/1967135994228166848) — 2025-09-15: Boosts another user's step-by-step roadmap for building your first AI agent, calling it 'gold.' Engagement-style framing; the substantive content lives in the referenced roadmap rather than the post itself.
 
-### General (104)
+### General (127)
+
+- [Xudong Han](https://x.com/xudong07452910/status/2090760827230187782) — 2026-08-21: 
+
+- [Matt Pocock](https://x.com/mattpocockuk/status/2090744569960824949) — 2026-08-21: 
+
+- [rvaniaaa](https://x.com/rvaniaaaa/status/2090722810674975071) — 2026-08-21: 
+
+- [0xSero](https://x.com/0xsero/status/2090721689428533258) — 2026-08-21: 
+
+- [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784) — 2026-08-21: 
+
+- [hraness](https://x.com/hraness/status/2090680065528901919) — 2026-08-21: 
+
+- [Aaron Levie](https://x.com/levie/status/2090664811185205722) — 2026-08-21: 
+
+- [Tony Simons](https://x.com/tonysimons_/status/2090612261349908991) — 2026-08-21: 
+
+- [Latent.Space](https://x.com/latentspacepod/status/2090546052847763862) — 2026-08-21: 
+
+- [0xSero](https://x.com/0xsero/status/2090543697398038876) — 2026-08-21: 
+
+- [ClaudeDevs](https://x.com/claudedevs/status/2090540270219567575) — 2026-08-21: 
+
+- [Boris Cherny](https://x.com/bcherny/status/2090537902912815536) — 2026-08-21: 
+
+- [elvis](https://x.com/omarsar0/status/2090533587066249514) — 2026-08-21: 
+
+- [Derrick Wippler](https://x.com/thrawn01/status/2090524752599462091) — 2026-08-21: 
+
+- [ericosiu](https://x.com/ericosiu/status/2090475762495185337) — 2026-08-21: 
+
+- [Eron](https://x.com/0xeronn/status/2090454335750644120) — 2026-08-21: 
+
+- [Ivan Fioravanti](https://x.com/ivanfioravanti/status/2090444479840854106) — 2026-08-21: 
+
+- [Pi](https://x.com/pidotdev/status/2090416055273542141) — 2026-08-21: 
+
+- [alexei](https://x.com/alexeixbt/status/2090407882508394889) — 2026-08-21: 
+
+- [Elon Musk](https://x.com/elonmusk/status/2090393510956401073) — 2026-08-21: 
+
+- [Mia](https://x.com/miaai_lab/status/2090327658508763516) — 2026-08-21: 
+
+- [James Zou](https://x.com/james_y_zou/status/2090094352307736801) — 2026-08-21: 
+
+- [BasedBiohacker](https://x.com/basedbiohacker/status/2071982410082734111) — 2026-08-21: 
 
 - [Ruben Hassid](https://x.com/rubenhassid/status/2087856703773508025) — 2026-08-14: A running list of AI-writing tells that have replaced the em-dash as giveaways, with concrete rewrites: the 'That's not X. That's Y.' construction (say only the second half), stacked two-word fragments ('Fast. Simple.'), empty contrast metaphors ('less a hammer, more a scalpel'), and self-congratulatory filler ('And that matters.', 'That's the part everyone misses.') which can be deleted with no loss. Useful as an editing checklist for anything AI-drafted that goes out under a human name.
 
@@ -4084,6 +4130,75 @@
 ## Full Chronological List
 
 ### Aug 2026
+
+- **2026-08-21** | [Xudong Han](https://x.com/xudong07452910/status/2090760827230187782) | general
+  
+
+- **2026-08-21** | [Matt Pocock](https://x.com/mattpocockuk/status/2090744569960824949) | general
+  
+
+- **2026-08-21** | [rvaniaaa](https://x.com/rvaniaaaa/status/2090722810674975071) | general
+  
+
+- **2026-08-21** | [0xSero](https://x.com/0xsero/status/2090721689428533258) | general
+  
+
+- **2026-08-21** | [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784) | general
+  
+
+- **2026-08-21** | [hraness](https://x.com/hraness/status/2090680065528901919) | general
+  
+
+- **2026-08-21** | [Aaron Levie](https://x.com/levie/status/2090664811185205722) | general
+  
+
+- **2026-08-21** | [Tony Simons](https://x.com/tonysimons_/status/2090612261349908991) | general
+  
+
+- **2026-08-21** | [Latent.Space](https://x.com/latentspacepod/status/2090546052847763862) | general
+  
+
+- **2026-08-21** | [0xSero](https://x.com/0xsero/status/2090543697398038876) | general
+  
+
+- **2026-08-21** | [ClaudeDevs](https://x.com/claudedevs/status/2090540270219567575) | general
+  
+
+- **2026-08-21** | [Boris Cherny](https://x.com/bcherny/status/2090537902912815536) | general
+  
+
+- **2026-08-21** | [elvis](https://x.com/omarsar0/status/2090533587066249514) | general
+  
+
+- **2026-08-21** | [Derrick Wippler](https://x.com/thrawn01/status/2090524752599462091) | general
+  
+
+- **2026-08-21** | [ericosiu](https://x.com/ericosiu/status/2090475762495185337) | general
+  
+
+- **2026-08-21** | [Eron](https://x.com/0xeronn/status/2090454335750644120) | general
+  
+
+- **2026-08-21** | [Ivan Fioravanti](https://x.com/ivanfioravanti/status/2090444479840854106) | general
+  
+
+- **2026-08-21** | [Pi](https://x.com/pidotdev/status/2090416055273542141) | general
+  
+
+- **2026-08-21** | [alexei](https://x.com/alexeixbt/status/2090407882508394889) | general
+  
+
+- **2026-08-21** | [Elon Musk](https://x.com/elonmusk/status/2090393510956401073) | general
+  
+
+- **2026-08-21** | [Mia](https://x.com/miaai_lab/status/2090327658508763516) | general
+  
+
+- **2026-08-21** | [James Zou](https://x.com/james_y_zou/status/2090094352307736801) | general
+  
+
+- **2026-08-21** | [BasedBiohacker](https://x.com/basedbiohacker/status/2071982410082734111) | general
+  
 
 - **2026-08-14** | [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288) | research, prompting
   Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved paper arguing RLHF alignment induces mode collapse and typicality bias that flattens model creativity. Offers a training-free prompt-side fix to recover output diversity without retraining.
