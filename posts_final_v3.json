@@ -17303,7 +17303,7 @@
     "handle": "@yishan",
     "subject": "Post by Yishan on X",
     "url": "https://x.com/yishan/status/2012067968331710639",
-    "summary": "[Post deleted/unavailable]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17313,9 +17313,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Post confirmed deleted as of 2026-03-19",
+    "notes": "Post confirmed deleted as of 2026-03-19 | Re-verified 2026-08-21: still returns \"this page doesn't exist\".",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-16",
@@ -17425,7 +17427,7 @@
     "handle": "@tunguz",
     "subject": "Post by Bojan Tunguz on X",
     "url": "https://x.com/tunguz/status/2011949233658925298",
-    "summary": "[Post deleted/unavailable]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17435,9 +17437,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Post confirmed deleted as of 2026-03-19",
+    "notes": "Post confirmed deleted as of 2026-03-19 | Re-verified 2026-08-21: still returns \"this page doesn't exist\".",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-16",
@@ -17471,7 +17475,7 @@
     "handle": "@meta_alchemist",
     "subject": "Post by Meta Alchemist on X",
     "url": "https://x.com/meta_alchemist/status/2010882913784070231",
-    "summary": "[Post deleted/unavailable]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17481,9 +17485,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Post confirmed deleted as of 2026-03-19",
+    "notes": "Post confirmed deleted as of 2026-03-19 | Re-verified 2026-08-21: still returns \"this page doesn't exist\".",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-16",
@@ -17491,7 +17497,7 @@
     "handle": "@simplifyinAI",
     "subject": "Post by Simplifying AI on X",
     "url": "https://x.com/simplifyinAI/status/2010878423325364233",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17501,9 +17507,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-16",
@@ -17511,7 +17519,7 @@
     "handle": "@SahilBloom",
     "subject": "Post by Sahil Bloom on X",
     "url": "https://x.com/SahilBloom/status/2010703181900464151",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17521,9 +17529,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-15",
@@ -17531,7 +17541,7 @@
     "handle": "@GeoffreyHuntley",
     "subject": "Post by geoff on X",
     "url": "https://x.com/GeoffreyHuntley/status/2010567043629113814",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17541,9 +17551,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-15",
@@ -17551,7 +17563,7 @@
     "handle": "@willccbb",
     "subject": "Post by will brown on X",
     "url": "https://x.com/willccbb/status/2010547008387408150",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17561,9 +17573,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-15",
@@ -17571,7 +17585,7 @@
     "handle": "@scaling_shields",
     "subject": "Post by James Shields on X",
     "url": "https://x.com/scaling_shields/status/2010413738506264649",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17581,9 +17595,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-15",
@@ -17591,7 +17607,7 @@
     "handle": "@justsiddaay",
     "subject": "Look at this one…!",
     "url": "https://x.com/siddhisurana/status/2010361699087921253",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17601,9 +17617,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-15",
@@ -17611,7 +17629,7 @@
     "handle": "@jaimefjorge",
     "subject": "Post by Jaime Jorge on X",
     "url": "https://x.com/jaimefjorge/status/2010254648389550243",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17621,9 +17639,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-14",
@@ -17631,7 +17651,7 @@
     "handle": "@KingBootoshi",
     "subject": "Post by BOOTOSHI on X",
     "url": "https://x.com/KingBootoshi/status/2010002905316757751",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17641,9 +17661,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-14",
@@ -17651,7 +17673,7 @@
     "handle": "@mattpocockuk",
     "subject": "Post by Matt Pocock on X",
     "url": "https://x.com/mpocock/status/2009888462821732368",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17661,9 +17683,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-13",
@@ -17696,7 +17720,7 @@
     "handle": "@BLUECOW009",
     "subject": "Post by bluecow on X",
     "url": "https://x.com/bluecow/status/2009065743606194185",
-    "summary": "[Post deleted/unavailable]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17706,9 +17730,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Post confirmed deleted as of 2026-03-19",
+    "notes": "Post confirmed deleted as of 2026-03-19 | Re-verified 2026-08-21: still returns \"this page doesn't exist\".",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-12",
@@ -17716,7 +17742,7 @@
     "handle": "@NoahEpstein_",
     "subject": "Post by Nozz on X",
     "url": "https://x.com/nozz/status/2008835341649346666",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17726,9 +17752,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-12",
@@ -17762,7 +17790,7 @@
     "handle": "@NickADobos",
     "subject": "Post by Nick Dobos on X",
     "url": "https://x.com/dobosn/status/2008036181346656365",
-    "summary": "[Post deleted/unavailable]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17772,9 +17800,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Post confirmed deleted as of 2026-03-19",
+    "notes": "Post confirmed deleted as of 2026-03-19 | Re-verified 2026-08-21: still returns \"this page doesn't exist\".",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-10",
@@ -17782,7 +17812,7 @@
     "handle": "@Param_eth",
     "subject": "Post by Param on X",
     "url": "https://x.com/param_bharadwaj/status/2007915284024619160",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17792,9 +17822,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-10",
@@ -17802,7 +17834,7 @@
     "handle": "@fcoury",
     "subject": "Post by Felipe Coury on X",
     "url": "https://x.com/felipecoury/status/2007882656892014636",
-    "summary": "[Post deleted/unavailable]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17812,9 +17844,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Post confirmed deleted as of 2026-03-19",
+    "notes": "Post confirmed deleted as of 2026-03-19 | Re-verified 2026-08-21: still returns \"this page doesn't exist\".",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-10",
@@ -17822,7 +17856,7 @@
     "handle": "@thekitze",
     "subject": "Post by kitze on X",
     "url": "https://x.com/kitze/status/2007809540919521316",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17832,9 +17866,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-10",
@@ -17842,7 +17878,7 @@
     "handle": "@rohit4verse",
     "subject": "Post by Rohit on X",
     "url": "https://x.com/rohitxo/status/2007748502661742686",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17852,9 +17888,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-10",
@@ -17862,7 +17900,7 @@
     "handle": "@aakashgupta",
     "subject": "Post by Aakash Gupta on X",
     "url": "https://x.com/AakashGuptaGH/status/2007704814065365016",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17872,9 +17910,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-10",
@@ -17882,7 +17922,7 @@
     "handle": "@omarsar0",
     "subject": "Post by elvis on X",
     "url": "https://x.com/elvisnguyen/status/2007665597046087848",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17892,9 +17932,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-10",
@@ -17902,7 +17944,7 @@
     "handle": "@dabit3",
     "subject": "Post by nader dabit on X",
     "url": "https://x.com/dabit3/status/2007623542340276413",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17912,9 +17954,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-10",
@@ -17922,7 +17966,7 @@
     "handle": "@parcadei",
     "subject": "Post by dei on X",
     "url": "https://x.com/delilahime/status/2007599629893906627",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17932,9 +17976,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-10",
@@ -17942,7 +17988,7 @@
     "handle": "@bran_don_gell",
     "subject": "Post by Brandon Gell on X",
     "url": "https://x.com/brandongell/status/2007537024606646369",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17952,9 +17998,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-09",
@@ -17962,7 +18010,7 @@
     "handle": "@alexhillman",
     "subject": "Post by Alex Hillman on X",
     "url": "https://x.com/alexhillman/status/2007195403503431942",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17972,9 +18020,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-09",
@@ -17982,7 +18032,7 @@
     "handle": "@parcadei",
     "subject": "Post by dei on X",
     "url": "https://x.com/delilahime/status/2007112398968512604",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -17992,9 +18042,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-08",
@@ -18028,7 +18080,7 @@
     "handle": "@LiorOnAI",
     "subject": "Post by Lior Alexander on X",
     "url": "https://x.com/lioralexander/status/2006763456879984843",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -18038,9 +18090,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-08",
@@ -18048,7 +18102,7 @@
     "handle": "@Shpigford",
     "subject": "Post by Josh Pigford on X",
     "url": "https://x.com/joshpigford/status/2006722184752509040",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -18058,9 +18112,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-08",
@@ -18068,7 +18124,7 @@
     "handle": "@tom_doerr",
     "subject": "Post by Tom Dörr on X",
     "url": "https://x.com/tom_dorr/status/2006640889625956454",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -18078,9 +18134,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-08",
@@ -18088,7 +18146,7 @@
     "handle": "@ryancarson",
     "subject": "Post by Ryan Carson on X",
     "url": "https://x.com/ryancarson/status/2006579357155549261",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -18098,9 +18156,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-07",
@@ -18108,7 +18168,7 @@
     "handle": "@doodlestein",
     "subject": "Post by Jeffrey Emanuel on X",
     "url": "https://x.com/jfemanuel13/status/2006283589341868394",
-    "summary": "[Post deleted/unavailable]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -18118,9 +18178,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Post confirmed deleted as of 2026-03-19",
+    "notes": "Post confirmed deleted as of 2026-03-19 | Re-verified 2026-08-21: still returns \"this page doesn't exist\".",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-07",
@@ -18128,7 +18190,7 @@
     "handle": "@techNmak",
     "subject": "Post by Tech with Mak on X",
     "url": "https://x.com/TechWithMak/status/2006215651880165597",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -18138,9 +18200,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-07",
@@ -18148,7 +18212,7 @@
     "handle": "@obie",
     "subject": "Post by Obie Fernandez on X",
     "url": "https://x.com/obiefernandez/status/2006152066925707274",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -18158,9 +18222,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-07",
@@ -18168,7 +18234,7 @@
     "handle": "@donvito",
     "subject": "Post by Melvin Vivas on X",
     "url": "https://x.com/melvinator/status/2006020697936482443",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -18178,9 +18244,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-07",
@@ -18188,7 +18256,7 @@
     "handle": "@Sumanth_077",
     "subject": "Post by Sumanth on X",
     "url": "https://x.com/Sumanth_077/status/2005956018357575750",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -18198,9 +18266,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-06",
@@ -18208,7 +18278,7 @@
     "handle": "@0x0SojalSec",
     "subject": "Post by Md Ismail on X",
     "url": "https://x.com/mdismail/status/2005671283621953665",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -18218,9 +18288,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-06",
@@ -18228,7 +18300,7 @@
     "handle": "@simplifyinAI",
     "subject": "Post by Simplifying AI on X",
     "url": "https://x.com/simplifyinAI/status/2005513621646409748",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -18238,9 +18310,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-06",
@@ -18248,7 +18322,7 @@
     "handle": "@joshuamschultz",
     "subject": "Post by Josh Schultz on X",
     "url": "https://x.com/jschultzme/status/2005421815916028959",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -18258,9 +18332,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-06",
@@ -18268,7 +18344,7 @@
     "handle": "@trending_repos",
     "subject": "Post by Trending GitHub on X",
     "url": "https://x.com/TrendingGitHubl/status/2005310239286649010",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -18278,9 +18354,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-06",
@@ -18288,7 +18366,7 @@
     "handle": "@boringmarketer",
     "subject": "Post by The Boring Marketer on X",
     "url": "https://x.com/BoringMarketer/status/2005239063816110289",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -18298,9 +18376,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-06",
@@ -18308,7 +18388,7 @@
     "handle": "@tom_doerr",
     "subject": "Post by Tom Dörr on X",
     "url": "https://x.com/tom_dorr/status/2005167892304969882",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -18318,9 +18398,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-06",
@@ -18328,7 +18410,7 @@
     "handle": "@svpino",
     "subject": "Post by Santiago on X",
     "url": "https://x.com/santiagoemeli/status/2005035706842611040",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -18338,9 +18420,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-06",
@@ -18348,7 +18432,7 @@
     "handle": "@hooeem",
     "subject": "Post by hoeem on X",
     "url": "https://x.com/hoeemlim/status/2004948633556197506",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -18358,9 +18442,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-05",
@@ -18368,7 +18454,7 @@
     "handle": "@mattpocockuk",
     "subject": "Post by Matt Pocock on X",
     "url": "https://x.com/mpocock/status/2004505491297665063",
-    "summary": "[Post deleted/unavailable]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -18378,9 +18464,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Post confirmed deleted as of 2026-03-19",
+    "notes": "Post confirmed deleted as of 2026-03-19 | Re-verified 2026-08-21: still returns \"this page doesn't exist\".",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-03",
@@ -18388,7 +18476,7 @@
     "handle": "@dani_avila7",
     "subject": "Post by Daniel San on X",
     "url": "https://x.com/dcsan/status/2003544127356903508",
-    "summary": "[Post deleted/unavailable]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -18398,9 +18486,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Post confirmed deleted. Original URL was @dcsan handle (not @dani_avila7). Handle @dcsan may have been a different person or repurposed account. Suggested replacement (poetengineer__/status/2009336065346457846) is a different author — not a match.",
+    "notes": "Post confirmed deleted. Original URL was @dcsan handle (not @dani_avila7). Handle @dcsan may have been a different person or repurposed account. Suggested replacement (poetengineer__/status/2009336065346457846) is a different author — not a match. | Re-verified 2026-08-21: still returns \"this page doesn't exist\".",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-03",
@@ -18408,7 +18498,7 @@
     "handle": "@dejavucoder",
     "subject": "Post by sankalp on X",
     "url": "https://x.com/sankalpdev/status/2003384719234969898",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -18418,9 +18508,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-03",
@@ -18428,7 +18520,7 @@
     "handle": "@cloudxdev",
     "subject": "Post by CloudAI-X on X",
     "url": "https://x.com/CloudAI_X/status/2003298874369306643",
-    "summary": "[Post deleted/unavailable — in Jan 3-16 dead zone]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -18438,9 +18530,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Untested but in confirmed dead zone (Jan 3-16 2026). May have replacement URL.",
+    "notes": "Individually scrape-verified 2026-08-21: X returns \"this page doesn't exist\". Retested with the stored handle as well as the URL handle; both 404. Session validated with live controls before, during and after the sweep.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2026-01-03",
@@ -18448,7 +18542,7 @@
     "handle": "@grok",
     "subject": "Post by Grok on X",
     "url": "https://x.com/XAI/status/2003101023145590851",
-    "summary": "[Post deleted/unavailable]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -18458,9 +18552,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Post confirmed deleted as of 2026-03-19",
+    "notes": "Post confirmed deleted as of 2026-03-19 | Re-verified 2026-08-21: still returns \"this page doesn't exist\".",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2025-12-28",
@@ -18546,7 +18642,7 @@
     "handle": "@yulintwt",
     "subject": "Post by Yu Lin on X",
     "url": "https://x.com/yulintwt/status/2004537183978590695",
-    "summary": "[Account suspended]",
+    "summary": "[Post unavailable — account suspended; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -18556,9 +18652,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Account suspended as of 2026-03-19",
+    "notes": "Account suspended as of 2026-03-19 | Re-verified 2026-08-21.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "account-suspended (verified 2026-08-21)"
   },
   {
     "date": "2025-12-22",
@@ -18942,7 +19040,7 @@
     "handle": "@hayesdev_",
     "subject": "Post by Hayes on X",
     "url": "https://x.com/hayesdev_/status/1996897853642592428",
-    "summary": "[Account suspended]",
+    "summary": "[Post unavailable — account suspended; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -18952,9 +19050,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Account suspended as of 2026-03-19",
+    "notes": "Account suspended as of 2026-03-19 | Re-verified 2026-08-21.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "account-suspended (verified 2026-08-21)"
   },
   {
     "date": "2025-12-01",
@@ -19286,7 +19386,7 @@
     "handle": "@neatprompts",
     "subject": "Post by Hayes on X",
     "url": "https://x.com/neatprompts/status/1981241949173825687",
-    "summary": "[Account suspended]",
+    "summary": "[Post unavailable — account suspended; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -19296,9 +19396,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Account suspended as of 2026-03-19",
+    "notes": "Account suspended as of 2026-03-19 | Re-verified 2026-08-21.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "account-suspended (verified 2026-08-21)"
   },
   {
     "date": "2025-10-21",
@@ -20008,7 +20110,7 @@
     "handle": "@aaditsh",
     "subject": "Post by Aadit Sheth on X",
     "url": "https://x.com/aaditsh/status/1953462911961374889",
-    "summary": "[Post deleted/unavailable]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -20018,9 +20120,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Post confirmed deleted as of 2026-03-19",
+    "notes": "Post confirmed deleted as of 2026-03-19 | Re-verified 2026-08-21.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2025-07-31",
@@ -20407,7 +20511,7 @@
     "handle": "@paulabartabajo_",
     "subject": "fine tuning LLMs",
     "url": "https://x.com/paulabartabajo_/status/1815990574580699209",
-    "summary": "[Post deleted/unavailable]",
+    "summary": "[Post unavailable — page doesn't exist; verified 2026-08-21]",
     "topics": [
       "general"
     ],
@@ -20417,9 +20521,11 @@
     "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
-    "notes": "Post confirmed deleted as of 2026-03-19",
+    "notes": "Post confirmed deleted as of 2026-03-19 | Re-verified 2026-08-21.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "enrichment_status": "dead",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "page-doesn't-exist (verified 2026-08-21)"
   },
   {
     "date": "2024-07-24",

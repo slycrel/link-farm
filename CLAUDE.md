@@ -4,7 +4,7 @@ This folder contains Jeremy's curated collection of AI-related links, sourced fr
 
 ## ⏳ Open work queue (resume here — as of 2026-08-21)
 
-Two known-bad data populations, both mid-remediation. Both are *detected by query*, so nothing here depends on remembering a list.
+One known-bad data population remaining. It is *detected by query*, so nothing here depends on remembering a list. (The `dead`-tombstone remediation is **closed** — see item 2.)
 
 **1. Legacy description-blob content — 186 posts remaining (of 236).** A capture-logic vintage from roughly March–May 2026 wrote an editorial *description* into the `op` segment instead of the post's actual text, shaped `Author @handle. <description>. 7.4M views. topic1, topic2.` All are marked `v1`/`ok`, so they are invisible to `pending_enrichment_ids()`, and all are embedded — meaning a large slice of the semantic layer votes on concept assignment using paraphrase rather than source text. Find them:
 
@@ -18,9 +18,21 @@ hits = [pid for pid, t in con.execute("SELECT post_id, text FROM post_thread_seg
 
 Remaining by month: 2026-03: 17 · 2026-04: 64 · 2026-05: 105. Fix by re-scraping with the `ai-links-catchup` extractor (which now captures quoted posts and link cards — essential here, since roughly half these are endorsement posts whose whole meaning lives in the quoted article) and re-persisting via `record_enrichment` with **existing topics/audiences passed back unchanged**; the goal is content fidelity, not re-tagging. Batches of 50 are comfortable; the binding cost is writing real summaries, not the scraping. Expect a large `semantic → auto-curate` surge afterwards (the 50-post batch produced +144 observations and moved 32 primary homes) — that is real content displacing paraphrase, not churn.
 
-**2. Unverified `dead` tombstones — 48 remaining, all Jan 3–16 2026.** An audit on 2026-08-21 found 58 of 78 `dead` posts had `enrichment_attempts=0` and no recorded error: bulk-tombstoned, never scrape-tested. Of the 10 outside January, **5 were fully alive** — Kpaxs (521.7K views, and carrying a Jeremy-renamed subject plus a "likely important" curation note), Josh Kale (285.8K), hunvreus (95K), ericksky (47.6K), 0xSero (18K). All five are now resurrected. The 25 non-January `dead` are now individually verified. The 48 January ones sit in the documented Jan 3–16 dead zone; a 4-post sample was genuinely gone, but given the 50% false-positive rate outside January they are worth probing individually before being trusted. `dead` is never retried, so a wrong tombstone is permanent and silent — treat verification as the higher-value job of the two.
+**2. Unverified `dead` tombstones — ✅ CLOSED 2026-08-21.** All 73 `dead` posts are now individually scrape-verified; `SELECT COUNT(*) FROM posts WHERE enrichment_status='dead' AND enrichment_attempts=0` returns **0**, and every one carries a real marker in `enrichment_last_error`.
 
-Both remediations follow the same tail: `post_enrichment_pipeline()` → rename any `[auto-named]` concepts → pull-rebase → push per the GitHub Backup section below.
+History: an audit on 2026-08-21 found 58 of 78 `dead` posts at `enrichment_attempts=0` with no recorded error — bulk-tombstoned, never scrape-tested. Of the 10 outside January, **5 were fully alive** (Kpaxs 521.7K views, Josh Kale 285.8K, hunvreus 95K, ericksky 47.6K, 0xSero 18K) and were resurrected. That 50% false-positive rate is what motivated probing the rest.
+
+The January sweep found the opposite result: **48 of 48 genuinely gone** (46 "page doesn't exist", plus the pre-noted Daniel San handle-mismatch case). Five non-January stragglers were also closed out — 2 deleted, 3 suspended accounts. Net: **0 resurrections in January, 5 outside it.**
+
+Three findings worth keeping:
+
+- **`enrichment_attempts=0` overcounted the problem.** 10 of the 48 January posts already carried hand-written "confirmed deleted as of 2026-03-19" notes — verified in March, just never run through `db/enrich.py`. The audit metric measures *whether the write path was used*, not *whether anyone looked*. Both cohorts have now been re-recorded through `record_dead()` so the metric and reality agree.
+- **The Jan 3–16 dead zone is real and total, not a scraping artifact.** Its 100% death rate is a genuine property of that window, and is qualitatively different from the scattered non-January tombstones where half were false. Do not generalize the 50% false-positive rate to it.
+- **A mismatched handle in a status URL is harmless.** Several January rows have a URL handle disagreeing with the stored handle (`@tom_doerr` vs `tom_dorr`, `@svpino` vs `santiagoemeli`, `@omarsar0` vs `elvisnguyen`). Verified directly: `x.com/wronghandle12345/status/<valid-id>` 302s to the correct handle and renders. X ignores the handle segment — only the status ID matters, so a mangled handle is never the cause of a 404 and is not worth chasing as a repair path.
+
+**Verification method, for whoever reruns this.** Interleave known-live control posts through the sweep (before, during, after). X rate-limiting and genuine deletion both produce empty `<article>` lists, and the controls are what separate them — all three controls here rendered full content, which is why 53 consecutive failures could be trusted rather than treated as throttling. Also retry a sample using the *stored* handle, not just the URL handle.
+
+The remaining remediation follows this tail: `post_enrichment_pipeline()` → rename any `[auto-named]` concepts → pull-rebase → push per the GitHub Backup section below.
 
 ## What This Collection Is For
 

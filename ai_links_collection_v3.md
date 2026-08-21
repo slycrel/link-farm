@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-08-21T23:08:56Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-21T23:21:31Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-08-21** — [Matt Pocock](https://x.com/mattpocockuk/status/2090744569960824949) — *now • Skills & MCP • 72.5K views • v1 enriched*  
@@ -23,7 +23,7 @@
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **persistent always-on agents — bot mode & agent desktops** (251 posts, +22 this week)  
+- **persistent always-on agents — bot mode & agent desktops** (257 posts, +23 this week)  
   Agents that outlive a chat session: persistent bot profiles with their own job and memory, remote/self-hosted execution that survives closing the laptop, and the desktop workspaces around them (Hermes/Nous, Grok bot mode, OpenClaw). Renamed from auto-named cluster on 2026-08-21.
     - 2026-08-21 — [Tony Simons](https://x.com/tonysimons_/status/2090612261349908991): Part 3 of a Hermes Desktop masterclass series, covering the move from treating it as a chatbot to using it as a workspace: sessions, project…
     - 2026-08-21 — [Elon Musk](https://x.com/elonmusk/status/2090393510956401073): Musk pitches Grok's bot mode as having its own remote computer via SpaceXAI, so the agent keeps executing after you close your laptop or reb…
@@ -4076,111 +4076,111 @@
 
 - [Machina](https://x.com/exm7777/status/2019787951530725396) — 2026-02-07: Machina's thread on how to stop feeling behind in AI: the relentless cadence of releases (GPT-5.3 Codex, Opus 4.6, Kling 3.0, all 'redefining everything') creates a low-grade, never-ending pressure. His reframe is that the problem isn't too much happening, it's the lack of a personal filter for what actually matters to your work.
 
-- [Yishan](https://x.com/yishan/status/2012067968331710639) — 2026-01-16: [Post deleted/unavailable]
+- [Yishan](https://x.com/yishan/status/2012067968331710639) — 2026-01-16: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Bojan Tunguz](https://x.com/tunguz/status/2011949233658925298) — 2026-01-16: [Post deleted/unavailable]
+- [Bojan Tunguz](https://x.com/tunguz/status/2011949233658925298) — 2026-01-16: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Meta Alchemist](https://x.com/meta_alchemist/status/2010882913784070231) — 2026-01-16: [Post deleted/unavailable]
+- [Meta Alchemist](https://x.com/meta_alchemist/status/2010882913784070231) — 2026-01-16: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Simplifying AI](https://x.com/simplifyinAI/status/2010878423325364233) — 2026-01-16: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [Simplifying AI](https://x.com/simplifyinAI/status/2010878423325364233) — 2026-01-16: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Sahil Bloom](https://x.com/SahilBloom/status/2010703181900464151) — 2026-01-16: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [Sahil Bloom](https://x.com/SahilBloom/status/2010703181900464151) — 2026-01-16: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [geoff](https://x.com/GeoffreyHuntley/status/2010567043629113814) — 2026-01-15: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [geoff](https://x.com/GeoffreyHuntley/status/2010567043629113814) — 2026-01-15: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [will brown](https://x.com/willccbb/status/2010547008387408150) — 2026-01-15: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [will brown](https://x.com/willccbb/status/2010547008387408150) — 2026-01-15: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [James Shields](https://x.com/scaling_shields/status/2010413738506264649) — 2026-01-15: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [James Shields](https://x.com/scaling_shields/status/2010413738506264649) — 2026-01-15: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [siddhi surana](https://x.com/siddhisurana/status/2010361699087921253) — 2026-01-15: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [siddhi surana](https://x.com/siddhisurana/status/2010361699087921253) — 2026-01-15: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Jaime Jorge](https://x.com/jaimefjorge/status/2010254648389550243) — 2026-01-15: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [Jaime Jorge](https://x.com/jaimefjorge/status/2010254648389550243) — 2026-01-15: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [BOOTOSHI](https://x.com/KingBootoshi/status/2010002905316757751) — 2026-01-14: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [BOOTOSHI](https://x.com/KingBootoshi/status/2010002905316757751) — 2026-01-14: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Matt Pocock](https://x.com/mpocock/status/2009888462821732368) — 2026-01-14: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [Matt Pocock](https://x.com/mpocock/status/2009888462821732368) — 2026-01-14: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - [fintechjunkie](https://x.com/fintechjunkie/status/2010910565279961423) — 2026-01-13: fintechjunkie gives a glowing, no-edits endorsement of a Dan Koe (@thedankoe) long-form article titled 'How to fix your entire life in 1 day' — a self-improvement/productivity piece rather than an AI or engineering topic. Off-theme for the collection; kept for completeness.
 
-- [bluecow](https://x.com/bluecow/status/2009065743606194185) — 2026-01-12: [Post deleted/unavailable]
+- [bluecow](https://x.com/bluecow/status/2009065743606194185) — 2026-01-12: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Nozz](https://x.com/nozz/status/2008835341649346666) — 2026-01-12: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [Nozz](https://x.com/nozz/status/2008835341649346666) — 2026-01-12: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Nick Dobos](https://x.com/dobosn/status/2008036181346656365) — 2026-01-10: [Post deleted/unavailable]
+- [Nick Dobos](https://x.com/dobosn/status/2008036181346656365) — 2026-01-10: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Param](https://x.com/param_bharadwaj/status/2007915284024619160) — 2026-01-10: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [Param](https://x.com/param_bharadwaj/status/2007915284024619160) — 2026-01-10: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Felipe Coury](https://x.com/felipecoury/status/2007882656892014636) — 2026-01-10: [Post deleted/unavailable]
+- [Felipe Coury](https://x.com/felipecoury/status/2007882656892014636) — 2026-01-10: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [kitze](https://x.com/kitze/status/2007809540919521316) — 2026-01-10: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [kitze](https://x.com/kitze/status/2007809540919521316) — 2026-01-10: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Rohit](https://x.com/rohitxo/status/2007748502661742686) — 2026-01-10: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [Rohit](https://x.com/rohitxo/status/2007748502661742686) — 2026-01-10: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Aakash Gupta](https://x.com/AakashGuptaGH/status/2007704814065365016) — 2026-01-10: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [Aakash Gupta](https://x.com/AakashGuptaGH/status/2007704814065365016) — 2026-01-10: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [elvis](https://x.com/elvisnguyen/status/2007665597046087848) — 2026-01-10: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [elvis](https://x.com/elvisnguyen/status/2007665597046087848) — 2026-01-10: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [nader dabit](https://x.com/dabit3/status/2007623542340276413) — 2026-01-10: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [nader dabit](https://x.com/dabit3/status/2007623542340276413) — 2026-01-10: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [dei](https://x.com/delilahime/status/2007599629893906627) — 2026-01-10: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [dei](https://x.com/delilahime/status/2007599629893906627) — 2026-01-10: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Brandon Gell](https://x.com/brandongell/status/2007537024606646369) — 2026-01-10: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [Brandon Gell](https://x.com/brandongell/status/2007537024606646369) — 2026-01-10: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Alex Hillman](https://x.com/alexhillman/status/2007195403503431942) — 2026-01-09: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [Alex Hillman](https://x.com/alexhillman/status/2007195403503431942) — 2026-01-09: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [dei](https://x.com/delilahime/status/2007112398968512604) — 2026-01-09: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [dei](https://x.com/delilahime/status/2007112398968512604) — 2026-01-09: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Lior Alexander](https://x.com/lioralexander/status/2006763456879984843) — 2026-01-08: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [Lior Alexander](https://x.com/lioralexander/status/2006763456879984843) — 2026-01-08: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Josh Pigford](https://x.com/joshpigford/status/2006722184752509040) — 2026-01-08: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [Josh Pigford](https://x.com/joshpigford/status/2006722184752509040) — 2026-01-08: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Tom Dörr](https://x.com/tom_dorr/status/2006640889625956454) — 2026-01-08: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [Tom Dörr](https://x.com/tom_dorr/status/2006640889625956454) — 2026-01-08: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Ryan Carson](https://x.com/ryancarson/status/2006579357155549261) — 2026-01-08: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [Ryan Carson](https://x.com/ryancarson/status/2006579357155549261) — 2026-01-08: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Jeffrey Emanuel](https://x.com/jfemanuel13/status/2006283589341868394) — 2026-01-07: [Post deleted/unavailable]
+- [Jeffrey Emanuel](https://x.com/jfemanuel13/status/2006283589341868394) — 2026-01-07: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Tech with Mak](https://x.com/TechWithMak/status/2006215651880165597) — 2026-01-07: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [Tech with Mak](https://x.com/TechWithMak/status/2006215651880165597) — 2026-01-07: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Obie Fernandez](https://x.com/obiefernandez/status/2006152066925707274) — 2026-01-07: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [Obie Fernandez](https://x.com/obiefernandez/status/2006152066925707274) — 2026-01-07: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Melvin Vivas](https://x.com/melvinator/status/2006020697936482443) — 2026-01-07: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [Melvin Vivas](https://x.com/melvinator/status/2006020697936482443) — 2026-01-07: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Sumanth](https://x.com/Sumanth_077/status/2005956018357575750) — 2026-01-07: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [Sumanth](https://x.com/Sumanth_077/status/2005956018357575750) — 2026-01-07: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Md Ismail](https://x.com/mdismail/status/2005671283621953665) — 2026-01-06: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [Md Ismail](https://x.com/mdismail/status/2005671283621953665) — 2026-01-06: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Simplifying AI](https://x.com/simplifyinAI/status/2005513621646409748) — 2026-01-06: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [Simplifying AI](https://x.com/simplifyinAI/status/2005513621646409748) — 2026-01-06: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Josh Schultz](https://x.com/jschultzme/status/2005421815916028959) — 2026-01-06: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [Josh Schultz](https://x.com/jschultzme/status/2005421815916028959) — 2026-01-06: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Trending GitHub](https://x.com/TrendingGitHubl/status/2005310239286649010) — 2026-01-06: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [Trending GitHub](https://x.com/TrendingGitHubl/status/2005310239286649010) — 2026-01-06: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [The Boring Marketer](https://x.com/BoringMarketer/status/2005239063816110289) — 2026-01-06: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [The Boring Marketer](https://x.com/BoringMarketer/status/2005239063816110289) — 2026-01-06: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Tom Dörr](https://x.com/tom_dorr/status/2005167892304969882) — 2026-01-06: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [Tom Dörr](https://x.com/tom_dorr/status/2005167892304969882) — 2026-01-06: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Santiago](https://x.com/santiagoemeli/status/2005035706842611040) — 2026-01-06: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [Santiago](https://x.com/santiagoemeli/status/2005035706842611040) — 2026-01-06: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [hoeem](https://x.com/hoeemlim/status/2004948633556197506) — 2026-01-06: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [hoeem](https://x.com/hoeemlim/status/2004948633556197506) — 2026-01-06: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Matt Pocock](https://x.com/mpocock/status/2004505491297665063) — 2026-01-05: [Post deleted/unavailable]
+- [Matt Pocock](https://x.com/mpocock/status/2004505491297665063) — 2026-01-05: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Daniel San](https://x.com/dcsan/status/2003544127356903508) — 2026-01-03: [Post deleted/unavailable]
+- [Daniel San](https://x.com/dcsan/status/2003544127356903508) — 2026-01-03: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [sankalp](https://x.com/sankalpdev/status/2003384719234969898) — 2026-01-03: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [sankalp](https://x.com/sankalpdev/status/2003384719234969898) — 2026-01-03: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [CloudAI-X](https://x.com/CloudAI_X/status/2003298874369306643) — 2026-01-03: [Post deleted/unavailable — in Jan 3-16 dead zone]
+- [CloudAI-X](https://x.com/CloudAI_X/status/2003298874369306643) — 2026-01-03: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Grok](https://x.com/XAI/status/2003101023145590851) — 2026-01-03: [Post deleted/unavailable]
+- [Grok](https://x.com/XAI/status/2003101023145590851) — 2026-01-03: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Yu Lin](https://x.com/yulintwt/status/2004537183978590695) — 2025-12-27: [Account suspended]
+- [Yu Lin](https://x.com/yulintwt/status/2004537183978590695) — 2025-12-27: [Post unavailable — account suspended; verified 2026-08-21]
 
 - [Abhishek Singh](https://x.com/0xlelouch_/status/2002673253912113644) — 2025-12-22: A reflective essay on career fulfillment in software engineering: you don't magically know whether backend, frontend, infra, ML, startups, big tech, or management will fulfill you — you only find out through reps. Early on people confuse novelty (new frameworks, jobs, titles) with fulfillment; real self-knowledge is earned by shipping boring features, debugging 3am outages, owning systems, and sticking with things long enough to feel the responsibility.
 
-- [Hayes](https://x.com/hayesdev_/status/1996897853642592428) — 2025-12-07: [Account suspended]
+- [Hayes](https://x.com/hayesdev_/status/1996897853642592428) — 2025-12-07: [Post unavailable — account suspended; verified 2026-08-21]
 
-- [Hayes](https://x.com/neatprompts/status/1981241949173825687) — 2025-10-24: [Account suspended]
+- [Hayes](https://x.com/neatprompts/status/1981241949173825687) — 2025-10-24: [Post unavailable — account suspended; verified 2026-08-21]
 
 - [keshav](https://x.com/kshvbgde/status/1974835291358969895) — 2025-10-07: Post (likely video/thread) on Steve Jobs's principles for designing insanely great products.
 
@@ -4188,9 +4188,9 @@
 
 - [maxleedev](https://x.com/maxleedev/status/1962938769914658984) — 2025-09-03: Announces a canvas-style interface for LLMs, built in response to a viral post arguing chat UIs need git-like branching/forking of conversations to explore alternate threads without derailing the main one.
 
-- [Aadit Sheth](https://x.com/aaditsh/status/1953462911961374889) — 2025-08-09: [Post deleted/unavailable]
+- [Aadit Sheth](https://x.com/aaditsh/status/1953462911961374889) — 2025-08-09: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
-- [Pau Labarta Bajo](https://x.com/paulabartabajo_/status/1815990574580699209) — 2024-07-25: [Post deleted/unavailable]
+- [Pau Labarta Bajo](https://x.com/paulabartabajo_/status/1815990574580699209) — 2024-07-25: [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.
 
@@ -6245,7 +6245,7 @@
   giyu_codes recommends cogsec (@affaan)'s article 'The Shorthand Guide to Everything Claude Code' - a complete setup after 10 months of daily use covering skills, hooks, subagents, MCPs, plugins, and what actually works. High-reach post (~806K views).
 
 - **2026-01-16** | [Yishan](https://x.com/yishan/status/2012067968331710639) | general
-  [Post deleted/unavailable]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-16** | [Gregor Zunic](https://x.com/gregpr07/status/2012052139384979773) | agent-design, dev-practices, claude-code
   Gregor Zunic (Browser Use) argues 'The Bitter Lesson of Agent Frameworks': all the value is in the RL'd model, not thousands of lines of abstractions. An agent is just a for-loop of tool calls that runs until the model stops. Abstractions freeze assumptions and fight what the model already learned; agent frameworks fail because their action spaces are incomplete, not because models are weak. Their fix: start with maximal capability then restrict ('vibe-restrict' via evals). BU Agent gives the model raw Chrome DevTools Protocol + extension APIs for a near-complete action space. Also covers a minimal model-agnostic Chat wrapper (Anthropic/OpenAI/Google), ephemeral messages to keep massive DOM/screenshot state out of context, and the done() tool for explicit completion. Reliability (retries, rate limits, compaction) is ops, not the agent. Open-sourcing as agent-sdk (includes a Claude Code re-implementation).
@@ -6260,157 +6260,157 @@
   Gergely Orosz amplifies Cindy Sridharan's take that, outside of prototyping, engineers should aim to understand close to 100% of the production code LLMs generate. He adds that the gap between teams who do this and those who don't will be massive, and notes the tension: heavy cutting-edge AI use is easiest on throwaway prototypes where it's fine to let it rip.
 
 - **2026-01-16** | [Bojan Tunguz](https://x.com/tunguz/status/2011949233658925298) | general
-  [Post deleted/unavailable]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-16** | [James Cowling](https://x.com/jamesacowling/status/2011924122922852599) | dev-practices, industry, agent-design
   James Cowling points to the Software Crisis of the 1960s-70s (en.wikipedia.org/wiki/Software_crisis) as a warning: productivity ground to a halt until good abstractions for managing software complexity emerged. His thesis is that without good platforms, the same stall will happen again in the AI-coding era.
 
 - **2026-01-16** | [Meta Alchemist](https://x.com/meta_alchemist/status/2010882913784070231) | general
-  [Post deleted/unavailable]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-16** | [Simplifying AI](https://x.com/simplifyinAI/status/2010878423325364233) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-16** | [Sahil Bloom](https://x.com/SahilBloom/status/2010703181900464151) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-15** | [geoff](https://x.com/GeoffreyHuntley/status/2010567043629113814) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-15** | [will brown](https://x.com/willccbb/status/2010547008387408150) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-15** | [James Shields](https://x.com/scaling_shields/status/2010413738506264649) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-15** | [siddhi surana](https://x.com/siddhisurana/status/2010361699087921253) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-15** | [Jaime Jorge](https://x.com/jaimefjorge/status/2010254648389550243) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-14** | [BOOTOSHI](https://x.com/KingBootoshi/status/2010002905316757751) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-14** | [Matt Pocock](https://x.com/mpocock/status/2009888462821732368) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-13** | [fintechjunkie](https://x.com/fintechjunkie/status/2010910565279961423) | general, questionable, adjacent
   fintechjunkie gives a glowing, no-edits endorsement of a Dan Koe (@thedankoe) long-form article titled 'How to fix your entire life in 1 day' — a self-improvement/productivity piece rather than an AI or engineering topic. Off-theme for the collection; kept for completeness.
 
 - **2026-01-12** | [bluecow](https://x.com/bluecow/status/2009065743606194185) | general
-  [Post deleted/unavailable]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-12** | [Nozz](https://x.com/nozz/status/2008835341649346666) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-12** | [Josh Bleecher Snyder](https://commaok.xyz/ai/differential-spec) | dev-practices, agent-design
   Introduces 'differential spec analysis': write several de-novo implementations from one spec (Opus subagents, forbidden from seeing each other's code), compare their behavior, and treat every deviation as either an implementation bug (add a missing acceptance test) or a spec ambiguity (clarify the spec) — refining the spec itself without reading code. Worked example on Drew Breunig's codeless 'whenwords' repo (github.com/dbreunig/whenwords) surfaced zero-duration crashes, month-rounding errors, and a fractional-input rounding ambiguity resolved with half-up rounding.
 
 - **2026-01-10** | [Nick Dobos](https://x.com/dobosn/status/2008036181346656365) | general
-  [Post deleted/unavailable]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-10** | [Param](https://x.com/param_bharadwaj/status/2007915284024619160) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-10** | [Felipe Coury](https://x.com/felipecoury/status/2007882656892014636) | general
-  [Post deleted/unavailable]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-10** | [kitze](https://x.com/kitze/status/2007809540919521316) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-10** | [Rohit](https://x.com/rohitxo/status/2007748502661742686) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-10** | [Aakash Gupta](https://x.com/AakashGuptaGH/status/2007704814065365016) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-10** | [elvis](https://x.com/elvisnguyen/status/2007665597046087848) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-10** | [nader dabit](https://x.com/dabit3/status/2007623542340276413) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-10** | [dei](https://x.com/delilahime/status/2007599629893906627) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-10** | [Brandon Gell](https://x.com/brandongell/status/2007537024606646369) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-09** | [Alex Hillman](https://x.com/alexhillman/status/2007195403503431942) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-09** | [dei](https://x.com/delilahime/status/2007112398968512604) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-08** | [Jarrod Watts](https://x.com/jarrodwatts/status/2009200810870428123) | claude-code, skills-mcp, dev-practices
   Jarrod Watts open-sourced his 'claude-code-config' repo containing all the agents, commands, hooks, rules, skills, and plugins he's made or collected over the past few months — described as simple but effective enhancements he'll keep updating. A ready-made reference config for a team standardizing Claude Code setups.
 
 - **2026-01-08** | [Lior Alexander](https://x.com/lioralexander/status/2006763456879984843) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-08** | [Josh Pigford](https://x.com/joshpigford/status/2006722184752509040) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-08** | [Tom Dörr](https://x.com/tom_dorr/status/2006640889625956454) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-08** | [Ryan Carson](https://x.com/ryancarson/status/2006579357155549261) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-07** | [Jeffrey Emanuel](https://x.com/jfemanuel13/status/2006283589341868394) | general
-  [Post deleted/unavailable]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-07** | [Tech with Mak](https://x.com/TechWithMak/status/2006215651880165597) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-07** | [Obie Fernandez](https://x.com/obiefernandez/status/2006152066925707274) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-07** | [Melvin Vivas](https://x.com/melvinator/status/2006020697936482443) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-07** | [Sumanth](https://x.com/Sumanth_077/status/2005956018357575750) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-06** | [Md Ismail](https://x.com/mdismail/status/2005671283621953665) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-06** | [Simplifying AI](https://x.com/simplifyinAI/status/2005513621646409748) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-06** | [Josh Schultz](https://x.com/jschultzme/status/2005421815916028959) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-06** | [Trending GitHub](https://x.com/TrendingGitHubl/status/2005310239286649010) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-06** | [The Boring Marketer](https://x.com/BoringMarketer/status/2005239063816110289) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-06** | [Tom Dörr](https://x.com/tom_dorr/status/2005167892304969882) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-06** | [Santiago](https://x.com/santiagoemeli/status/2005035706842611040) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-06** | [hoeem](https://x.com/hoeemlim/status/2004948633556197506) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-05** | [Matt Pocock](https://x.com/mpocock/status/2004505491297665063) | general
-  [Post deleted/unavailable]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-03** | [Daniel San](https://x.com/dcsan/status/2003544127356903508) | general
-  [Post deleted/unavailable]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-03** | [sankalp](https://x.com/sankalpdev/status/2003384719234969898) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-03** | [CloudAI-X](https://x.com/CloudAI_X/status/2003298874369306643) | general
-  [Post deleted/unavailable — in Jan 3-16 dead zone]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2026-01-03** | [Grok](https://x.com/XAI/status/2003101023145590851) | general
-  [Post deleted/unavailable]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 ### Dec 2025
 
@@ -6424,7 +6424,7 @@
   An essay arguing software engineering is undergoing a 'phase transition' in human leverage: for decades leverage came from writing more correct instructions faster, but the unit of leverage has shifted from writing code to orchestrating intelligence. The programmer becomes a systems integrator of probabilistic entities whose reasoning can't be fully inspected or controlled — which the author says explains why even Karpathy feels 'behind.'
 
 - **2025-12-27** | [Yu Lin](https://x.com/yulintwt/status/2004537183978590695) | general
-  [Account suspended]
+  [Post unavailable — account suspended; verified 2026-08-21]
 
 - **2025-12-22** | [Tech with Mak](https://x.com/technmak/status/2002713140757496299) | agent-design, skills-mcp, dev-practices, questionable
   A structured LangGraph learning path (pitched as filling the gap since LangGraph appears in ~half of AI job descriptions). Progresses from basic agent concepts (Pydantic data validation, agentic chatbots, multi-agent coordination) through production systems (a 2.5-hour LangGraph+MCP crash course, debugging/monitoring, deployment architecture) to RAG pipelines (multimodal RAG, hallucination fixes, end-to-end retrieval, Typesense search).
@@ -6472,7 +6472,7 @@
   Rohan Paul summarizes Google's guide on context engineering for multi-agent systems (built around ADK). Instead of giant prompts, it compiles a view over state split into Working Context, Session, Memory, and Artifacts; each call rebuilds Working Context from instructions, selected session events, memory results, and artifact references. ADK controls context growth via compaction, filtering, and caching — summarizing old spans, dropping useless events, and reusing a stable prefix — and pushes large payloads out to Artifacts to keep systems fast, affordable, and less hallucination-prone.
 
 - **2025-12-07** | [Hayes](https://x.com/hayesdev_/status/1996897853642592428) | general
-  [Account suspended]
+  [Post unavailable — account suspended; verified 2026-08-21]
 
 - **2025-12-01** | [AWS Containers](https://github.com/aws-containers/reinvent) | dev-practices, industry
   The aws-containers/reinvent GitHub repo collects AWS re:Invent 2025 Kubernetes Track assets — slides, the latest EKS launches, and demos from the sessions. A reference for what AWS shipped for Kubernetes/EKS at re:Invent 2025.
@@ -6518,7 +6518,7 @@
   Thomas Ptacek, reacting to the AWS outage postmortem and its HN discussion, evangelizes 'How Complex Systems Fail' (howcomplexsystems.fail) as essential reading on how failures emerge in complex socio-technical systems.
 
 - **2025-10-24** | [Hayes](https://x.com/neatprompts/status/1981241949173825687) | general
-  [Account suspended]
+  [Post unavailable — account suspended; verified 2026-08-21]
 
 - **2025-10-21** | [Raul Junco](https://x.com/rauljuncov/status/1980243241783197925) | dev-practices, questionable
   Raul Junco frames system design as a staircase to climb step by step rather than jumping to distributed systems: foundations (networking, databases, caching, APIs), then mechanics (queues, consistency, observability, failures), then architecture (trade-offs, evolution, resilience).
@@ -6609,7 +6609,7 @@
   A recipe for using Claude Code as a DevOps agent with its new background jobs: run Claude in a tmux session, have it spawn a background process to tail server logs and summarize them, then a second process that pings Claude to 'check logs' on an interval.
 
 - **2025-08-09** | [Aadit Sheth](https://x.com/aaditsh/status/1953462911961374889) | general
-  [Post deleted/unavailable]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 ### Jul 2025
 
@@ -6671,7 +6671,7 @@
   Tutorial for building a no-code RAG chatbot to chat with any GitHub repo, powered by open-source Llama 3.1 405B.
 
 - **2024-07-25** | [Pau Labarta Bajo](https://x.com/paulabartabajo_/status/1815990574580699209) | general
-  [Post deleted/unavailable]
+  [Post unavailable — page doesn't exist; verified 2026-08-21]
 
 - **2024-07-24** | [Akshay](https://x.com/akshay_pachaar/status/1816088785152848028) | agent-design, research
   A tutorial thread on building a 100% local RAG app using Meta's Llama 3.1.
