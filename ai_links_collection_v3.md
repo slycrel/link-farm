@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-08-21T19:18:54Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-21T19:32:07Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-08-21** — [Matt Pocock](https://x.com/mattpocockuk/status/2090744569960824949) — *now • Skills & MCP • 72.5K views • v1 enriched*  
@@ -28,22 +28,22 @@
     - 2026-08-21 — [Xudong Han](https://x.com/xudong07452910/status/2090760827230187782): Chinese-language post recommending a Julie Yoo essay on where an AI startup's moat can still sit. Argument: models improve every few months,…
     - 2026-08-21 — [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784): Five patterns for long-running agents, from an Addy Osmani and Shubham Saboo piece: checkpoints, approval gates, governed memory, event-driv…
 
-- **agents-as-judges-of-agents — bossman supervisor / self-verification** (59 posts, +19 this week)  
+- **agents-as-judges-of-agents — bossman supervisor / self-verification** (63 posts, +19 this week)  
   Critical supervisor agent judges worker agents rather than doing the work. Boris Cherny on self-verification loops; Viv on bossman supervisor.
     - 2026-08-21 — [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784): Five patterns for long-running agents, from an Addy Osmani and Shubham Saboo piece: checkpoints, approval gates, governed memory, event-driv…
     - 2026-08-21 — [Aaron Levie](https://x.com/levie/status/2090664811185205722): Levie on when domain-specific post-training beats a general frontier model for applied AI: once you understand a domain well enough and have…
 
-- **prediction-market & crypto trading bots** (263 posts, +18 this week)  
+- **prediction-market & crypto trading bots** (264 posts, +18 this week)  
   Polymarket and crypto trading-bot content: sweeper and arbitrage bots, Markov-chain trade models, tick-data neural nets, plus one genuinely useful 72M-trade dataset. Heavily promotional and largely off-topic for AI engineering — kept and labelled rather than dropped.
     - 2026-08-21 — [0xSero](https://x.com/0xsero/status/2090721689428533258): Organizes a same-day community study session on the Pi agent framework with a three-step onramp: read the Pi repo, set it up locally, then p…
     - 2026-08-21 — [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784): Five patterns for long-running agents, from an Addy Osmani and Shubham Saboo piece: checkpoints, approval gates, governed memory, event-driv…
 
-- **founder philosophy & life-design essays** (262 posts, +17 this week)  
-  First-principles method and life-design content: Musk's 5-step algorithm, Jobs on product design, Dan Koe-style essays, systems thinking, 'the right way to build a startup'. Mostly endorsement posts pointing at a longer read; quality varies widely.
+- **Forward Deployed Engineers — the durable AI-era role** (247 posts, +18 this week)  
+  Argument that FDEs are the right shape of role for the AI rollout era. Touches every employee's workflow.
     - 2026-08-21 — [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784): Five patterns for long-running agents, from an Addy Osmani and Shubham Saboo piece: checkpoints, approval gates, governed memory, event-driv…
-    - 2026-08-21 — [hraness](https://x.com/hraness/status/2090680065528901919): Long-form X article on running a personal 'software factory': 15 Codex Pro 20x subscriptions driving a dozen-plus projects, with a self-repo…
+    - 2026-08-21 — [0xSero](https://x.com/0xsero/status/2090543697398038876): Recommends reading the Pi repo as the fastest way to understand agent architecture, with a specific reading order: packages/ai, then package…
 
-- **self-improving skills (autoresearch pattern)** (261 posts, +17 this week)  
+- **self-improving skills (autoresearch pattern)** (262 posts, +17 this week)  
   Skills and harnesses that improve themselves or each other, mostly downstream of Karpathy's autoresearch method — meta-skills that optimise other skills, /autobrowse, recursive self-improvement loops, and agents that accumulate site knowledge instead of rediscovering it.
     - 2026-08-21 — [Matt Pocock](https://x.com/mattpocockuk/status/2090744569960824949): Pocock shares an /implement-spec skill: a multi-agent implementer that takes a spec plus tickets, does codebase research in a subagent, impl…
     - 2026-08-21 — [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784): Five patterns for long-running agents, from an Addy Osmani and Shubham Saboo piece: checkpoints, approval gates, governed memory, event-driv…
@@ -70,7 +70,7 @@
 | adjacent | 30 | 3.7% |
 | solo-operator | 6 | 0.7% |
 | questionable | 115 | 14.1% |
-| general | 105 | 12.9% |
+| general | 101 | 12.4% |
 
 ---
 ## Quick Reference (50 Most Recent)
@@ -94,11 +94,11 @@
 | 2026-08-21 | Eron | research | Promotes a 20-minute explainer video visualizing loss landscapes insid... |
 | 2026-08-21 | Ivan Fioravanti | research | Fioravanti strongly endorses @Blackwellboy's multi-day benchmarking de... |
 | 2026-08-21 | Pi | agent-design | Defines the 'harness' as the thing that turns a model into an agent, c... |
-| 2026-08-21 | alexei | adjacent | Motivational thread on self-talk and neuroplasticity: repeated negativ... |
+| 2026-08-21 | alexei | adjacent | Motivational thread on self-talk: repeated statements are framed as ca... |
 | 2026-08-21 | Elon Musk | agent-design | Musk pitches Grok's bot mode as having its own remote computer via Spa... |
 | 2026-08-21 | Mia | research | Updated local-inference recipe hitting ~300 tok/s for Qwen3.8-27B on a... |
 | 2026-08-21 | James Zou | research | Zou announces 'Physics of Agents,' new work on what happens when many... |
-| 2026-08-21 | BasedBiohacker | general | Nootropics thread arguing modafinil plus bromantane is a complementary... |
+| 2026-08-21 | BasedBiohacker | biohacking | Nootropics thread arguing modafinil plus bromantane is a complementary... |
 | 2026-08-14 | Brian Roemmele | research | Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and... |
 | 2026-08-14 | Teknium | agent-design | Nous Research shipped Bot Mode for Hermes Agent (github.com/NousResear... |
 | 2026-08-14 | Viv | agent-design | Commentary on dexhorthy's /show-me proposal — compact visual represent... |
@@ -386,7 +386,7 @@
 
 - [Matthew Berman](https://x.com/matthewberman/status/2069098257444434425) — 2026-06-23: Matthew Berman announces a new Loop Library feature, Lazy Loops (aka Discover), which scans your codebase and chat threads to find potential agentic loops and designs them for you. Links the Forward-Future/loop-library GitHub repo of practical, repeatable AI-agent workflows.
 
-- [Ethan](https://x.com/lambethethan/status/2068958764276051987) — 2026-06-23: Ethan describes a personal wiki of ~1,000 supplements built from 150k papers and 200k health-influencer mentions, and floats handing the entire dataset to an AI agent next.
+- [Ethan](https://x.com/lambethethan/status/2068958764276051987) — 2026-06-23: Ethan describes a personal wiki of roughly 1,000 supplements assembled from 150k papers and 200k health-influencer mentions, and offers to hand the whole dataset to an agent. Sits on the seam between the biohacking material and the corpus's agent work — the interesting part is the pipeline (large-scale literature plus influencer-claim extraction into a queryable store), which is the same shape as a research-corpus problem regardless of the subject matter.
 
 - [冬天](https://x.com/seventhoce56019/status/2068901168940745088) — 2026-06-23: Translated from Chinese: a writeup of reverse-skill (GitHub zhaoxuya520/reverse-skill), an AI skill package that puts reverse-engineering and security tasks behind a routing.md file so the agent self-triages across 20+ sub-skills (APK reversing, IDA static analysis, JS frontend reversing, firmware security, EDR evasion, vulnerability exploitation). Framed as lowering the barrier to security offense/defense.
 
@@ -1688,7 +1688,7 @@
 
 - [Vaishnavi](https://x.com/_vmlops/status/2059207888393138556) — 2026-05-27: Microsoft open-sourced an Agent Governance Toolkit: deterministic interception of every tool call (denied actions structurally impossible), a YAML allow/deny/human-approval policy engine, zero-trust identity (SPIFFE/DID/mTLS), a 4-level execution sandbox, tamper-evident Merkle audit logs, coverage of all OWASP Agentic Top-10 risks, and support across major frameworks and languages — because 'follow the rules' in a prompt is a suggestion, not a guardrail.
 
-- [Atenov int.](https://x.com/atenov_d/status/2058868770257416239) — 2026-05-25: Highlights MoneyPrinterTurbo (13k+ stars): give a topic/keyword and it generates a script (via any LLM), pulls copyright-free footage, and adds subtitles/music/voiceover to output a finished short video; runs locally with Web UI/API/Docker/Colab. (Author's other posts are off-topic trading/politics.)
+- [Atenov int.](https://x.com/atenov_d/status/2058868770257416239) — 2026-05-25: Highlights MoneyPrinterTurbo (13k+ stars): give it a topic or keyword and it generates a script via any LLM, pulls copyright-free footage, and adds subtitles, music and voiceover to produce a finished short video. Runs locally with a Web UI, API, Docker and Colab paths.
 
 - [Hasan Toor](https://x.com/hasantoxr/status/2058863173462352313) — 2026-05-25: Engagement-framed tool share: an open-source engine claiming to replace agent harness, queues, sandboxing and APIs with three primitives (TypeScript/Python/Rust, Docker-ready, 15k+ stars).
 
@@ -1916,7 +1916,7 @@
 
 - [Ashpreet Bedi](https://x.com/ashpreetbedi/status/2041568919085854847) — 2026-04-08: 'Systems Engineering: Building Agentic Software That Works.' Lesson from 1940s Bell Labs: you can't optimize a system by optimizing components. Agentic software spans five layers - agent engineering (model/tools/context/observability), data engineering (schemas/DBs/pipelines), security engineering (auth/RBAC/isolation - 'read-only is a tool config, not a prompt'), interface engineering (REST/Slack/MCP/CLI with consistent auth), infrastructure engineering (95% same as any service; the 5%: longer timeouts, streaming, scheduled tasks). Critiques the harness fad as local optimization; demonstrated with Dash (agno-agi/dash), an open-source self-learning data agent.
 
-- [cvxv666](https://x.com/antpalkin/status/2041517093670052193) — 2026-04-08: Engagement-farm story of failing 10x to build a Polymarket arbitrage bot then finding a 'Part 2' guide diagnosing 10 mistakes; 'the strategy was never the problem, I was the bug.' Links AdiiX 'Why your Claude bot doesn't work.' Off-topic trading-bot content.
+- [cvxv666](https://x.com/antpalkin/status/2041517093670052193) — 2026-04-08: First-person account of failing ten times to build a Polymarket arbitrage bot, then finding a 'Part 2' guide diagnosing ten specific mistakes — landing on 'the strategy was never the problem, I was the bug.' Links AdiiX's 'Why your Claude bot doesn't work.' The debugging-your-own-assumptions lesson generalizes past the trading context; the confessional framing is engagement-shaped.
 
 - [Alex Veremeyenko](https://x.com/alex_prompter/status/2040731938751914065) — 2026-04-06: Google DeepMind mapped the AI-agent attack surface (502 participants, 8 countries, 23 attack types). Manipulation is already happening at scale and defenses fail predictably/invisibly. Channels: prompt injection via HTML comments / white-on-white text, steganography in image pixels, image metadata, malicious PDFs, QR codes, indirect injection via search/calendar/email/API. Detection asymmetry: sites fingerprint agents and serve them manipulated content humans never see. Categories include memory poisoning, goal hijacking, exfiltration, cross-agent injection. All standard defenses fail at agent scale; multi-agent cascade propagates an injection with legitimate trust. 'Compromise the data the model consumes, not the model.'
 
@@ -2646,7 +2646,7 @@
 
 - [George from prodmgmt.world](https://x.com/nurijanian/status/2054244221352325359) — 2026-05-14: 'adversarial PRD reviews slap' - links an article on using AI for adversarial requirements review, since the flaws that ship are the ones you can't see from inside your own PRD.
 
-- [Jaynit](https://x.com/jaynitx/status/2054200520575967698) — 2026-05-14: A long essay on pattern recognition as the basis of expertise (de Groot's chess studies, chunking, Klein's recognition-primed decisions, Buffett reading annual reports), how tight feedback loops build it fast, and how to avoid false patterns. General/thinking, not AI/dev.
+- [Jaynit](https://x.com/jaynitx/status/2054200520575967698) — 2026-05-14: Long essay on pattern recognition as the substrate of expertise — de Groot's chess studies and chunking, Klein's recognition-primed decision model, Buffett reading annual reports — on how tight feedback loops build it quickly, and on how to avoid locking in false patterns.
 
 - [George from prodmgmt.world](https://x.com/nurijanian/status/2054216035503587396) — 2026-05-13: Wishes someone would productize his repeated 'AI skill-building pipeline for non-experts' (built two AI skills from two PDFs plus a tool) instead of stitching it across tools and skills.
 
@@ -3070,7 +3070,7 @@
 
 - [Sigrid Jin](https://x.com/realsigridjin/status/2042440330503733343) — 2026-04-10: On Viv's 'Better Harness' recipe: evals are the new training data (update the harness, not weights); agents reward-hack evals, so use strict train/test splits and holdout sets; quality over quantity of evals; the loop = mine prod traces for failures -> turn into evals -> auto-tweak prompts/tools -> validate -> more usage -> more evals -> self-improving agents.
 
-- [Recogard](https://x.com/recogard/status/2042356576032358505) — 2026-04-10: 36GB free dataset of 72M+ Polymarket trades on GitHub plus a backtesting simulator: analyze historical prediction-market behavior, define a strategy, and backtest it across all past markets for accuracy/PnL/risk. Off-topic (prediction-market trading), not AI/dev core.
+- [Recogard](https://x.com/recogard/status/2042356576032358505) — 2026-04-10: A free 36GB dataset of 72M+ Polymarket trades on GitHub, paired with a backtesting simulator that lets you define a strategy and replay it across all historical markets for accuracy, PnL and risk. Substantial public dataset and eval harness, whatever you think of the domain.
 
 - [Santiago](https://x.com/svpino/status/2042275938390639069) — 2026-04-10: Large Memory Models - a new architecture designed for how human memory works (not RAG/vector search). Founders have 160+ Nature/ICLR publications and closed their Harvard lab to build it. Quotes Gabriel Kreiman introducing Engramme ('remember everything' - perfect/infinite memory with no searching/prompting).
 
@@ -3254,7 +3254,7 @@
 
 - [Garry Tan](https://x.com/garrytan/status/2061878212213572083) — 2026-06-03: Garry Tan on model routing as strategy: frontier labs will want their harness to be the moat, but the consumer-best outcome is model capabilities flattening and commoditizing — 'a preview of the AI Harness Wars of 2027.' Cites Factory's auto model-router (claimed 25% cost cut at frontier performance).
 
-- [Atenov int.](https://x.com/atenov_d/status/2058868770257416239) — 2026-05-25: Highlights MoneyPrinterTurbo (13k+ stars): give a topic/keyword and it generates a script (via any LLM), pulls copyright-free footage, and adds subtitles/music/voiceover to output a finished short video; runs locally with Web UI/API/Docker/Colab. (Author's other posts are off-topic trading/politics.)
+- [Atenov int.](https://x.com/atenov_d/status/2058868770257416239) — 2026-05-25: Highlights MoneyPrinterTurbo (13k+ stars): give it a topic or keyword and it generates a script via any LLM, pulls copyright-free footage, and adds subtitles, music and voiceover to produce a finished short video. Runs locally with a Web UI, API, Docker and Colab paths.
 
 - [Garry Tan](https://x.com/garrytan/status/2058378310254793013) — 2026-05-25: Garry Tan: fine-tuned his own Qwen3.5-397B in a couple hours via Thinking Machines, arguing fast usable multimodal will enable mind-blowing personal AI. Cites Thinking Machines' real-time 'interaction models.'
 
@@ -3302,7 +3302,7 @@
 
 - [divyansh tiwari](https://x.com/divyansht91162/status/2052474052841984110) — 2026-05-08: TinyFish drops web search to $0 for AI agents. divyansh switched OpenClaw and Hermes agents to it and reports they can now browse, research, and retrieve live info at scale for free — a real shift in agent-cost economics if it holds up.
 
-- [Mgoes](https://x.com/m_goes_distance/status/2052433497575293307) — 2026-05-08: Biotech-progress digest for 2026 — Japan endorsing iPS cell therapies for heart failure / Parkinson's, Altos Labs' Atlas of Rejuvenation, rapalink-1 as longevity drug, Retro Biosciences dosing brain-cleanup pill, peptides moving from banned to federal policy, psychedelics executive order, GLP-1s at 12.4% adult adoption. Off-topic for the AI links collection but Jeremy emailed it, so capturing it honestly.
+- [Mgoes](https://x.com/m_goes_distance/status/2052433497575293307) — 2026-05-08: Biotech-progress digest for 2026: Japan endorsing iPS cell therapies for heart failure and Parkinson's, Altos Labs' Atlas of Rejuvenation, rapalink-1 as a longevity drug, Retro Biosciences dosing a brain-cleanup pill, peptides moving from banned toward federal policy, a psychedelics executive order, and GLP-1s at 12.4% adult adoption. A useful once-a-year survey of where the longevity and biotech field actually moved.
 
 - [Allen Braden](https://x.com/allen_explains/status/2052340555942924368) — 2026-05-08: Allen Braden points to a free 1-hour UC Berkeley lecture on systematic-trading fundamentals (the math Jane Street quants use). Engagement-style framing without the actual lecture link — finding it requires follow-through outside the post.
 
@@ -3312,7 +3312,7 @@
 
 - [Keith Rabois](https://x.com/rabois/status/2050250243552239956) — 2026-05-02: Keith Rabois flags Ann Miura-Ko's 'Everyone wants to be AI-pilled. Most Companies Are Still Level 1' - office visits to scaled companies (e.g. Ramp) vs AI-native startups, framing a maturity-level view of AI adoption.
 
-- [StacyOnChain](https://x.com/stacyonchain/status/2047278412922831260) — 2026-04-23: Off-topic for AI links — promotional content for centpro.bot (Polymarket trading framework supposedly extracted from 327 real tests). ALL-CAPS engagement framing, crypto-twitter signal. Capturing for completeness but not useful as AI/agents reference.
+- [StacyOnChain](https://x.com/stacyonchain/status/2047278412922831260) — 2026-04-23: Promotional post for centpro.bot, a Polymarket trading framework the author says was extracted from 327 real tests. ALL-CAPS crypto-Twitter framing with little verifiable detail behind the claim.
 
 - [Alex Volkov](https://x.com/altryne/status/2046977133013311814) — 2026-04-23: OpenAI open-sourced Privacy Filter — a 1.5B-param (50M active) PII detection model on HuggingFace under Apache 2.0. Not a new general LLM; a focused safety-utility model for detecting private info in text. Volkov calls it interesting; useful as a building block in agent pipelines that touch user data.
 
@@ -3476,7 +3476,7 @@
 
 - [Peter Yang](https://x.com/petergyang/status/2063988122720055772) — 2026-06-09: Five takeaways from a conversation with @kunchenguid (ex-Meta L8 engineer) on agentic engineering: (1) plan and validate, don't code yourself — you're the always-on team's manager; (2) plan quality determines how long agents run autonomously — a detailed spec can run for hours vs minutes for a one-liner; (3) use visual plans, not walls of markdown — Lavish (github.com/kunchenguid/lavish) generates visual HTML plans; (4 and 5 truncated in scrape — likely about validation rubrics and feedback loops).
 
-- [Elon Musk](https://x.com/elonmusk/status/2063401522327666828) — 2026-06-07: Elon Musk endorses first-principles 'physics thinking in the limit' — the 'Magic Wand Number' and 'Idiot Index' as universal cost-engineering mental models. Not AI/dev, but a useful thinking frame.
+- [Elon Musk](https://x.com/elonmusk/status/2063401522327666828) — 2026-06-07: Musk endorses first-principles 'physics thinking in the limit,' with the 'Magic Wand Number' (what the theoretical floor would be if physics were the only constraint) and the 'Idiot Index' (a part's cost divided by its raw-material cost) as general cost-engineering mental models.
 
 - [Garry Tan](https://x.com/garrytan/status/2061878212213572083) — 2026-06-03: Garry Tan on model routing as strategy: frontier labs will want their harness to be the moat, but the consumer-best outcome is model capabilities flattening and commoditizing — 'a preview of the AI Harness Wars of 2027.' Cites Factory's auto model-router (claimed 25% cost cut at frontier performance).
 
@@ -3508,11 +3508,11 @@
 
 - [Petra Donka](https://x.com/petradonka/status/2054897826149101588) — 2026-05-15: 'Agents Need Feedback Loops, Not Perfect Prompts' - Warp's 'Buzz' monitors mentions and drafts replies while learning from the team. Lessons: principles beat rules; feedback isn't learning unless the agent generalizes (a separate skill turns corrections into transferable principles); the feedback loop must live where the team works (Slack emoji + daily PR); treat agent skills like code.
 
-- [Joe Hudson](https://x.com/fu_joehudson/status/2054264609683689941) — 2026-05-14: Executive-coaching content on moving from 'dirty fuel' (motivation from fear/pressure) to 'clean fuel' (joy/curiosity), summarized on one page. Not AI/dev.
+- [Joe Hudson](https://x.com/fu_joehudson/status/2054264609683689941) — 2026-05-14: Executive-coaching material on shifting from 'dirty fuel' (motivation sourced from fear and pressure) to 'clean fuel' (joy and curiosity), condensed to a single page.
 
 - [Jamie Signorile](https://x.com/sigsnyc/status/2054238175758111156) — 2026-05-14: 'AI Doesn't Make Anyone Good. It Makes Good People Harder to Catch' - a framework for where enterprise GTM roles are headed: a technical-fluency x commercial-acumen map, roles converging on the Forward Deployed Engineer archetype, and technical curiosity as the variable AI amplifies. Author built an underwriting agent cutting manual workflows 90%.
 
-- [Jaynit](https://x.com/jaynitx/status/2054200520575967698) — 2026-05-14: A long essay on pattern recognition as the basis of expertise (de Groot's chess studies, chunking, Klein's recognition-primed decisions, Buffett reading annual reports), how tight feedback loops build it fast, and how to avoid false patterns. General/thinking, not AI/dev.
+- [Jaynit](https://x.com/jaynitx/status/2054200520575967698) — 2026-05-14: Long essay on pattern recognition as the substrate of expertise — de Groot's chess studies and chunking, Klein's recognition-primed decision model, Buffett reading annual reports — on how tight feedback loops build it quickly, and on how to avoid locking in false patterns.
 
 - [Alfred Lin](https://x.com/alfred_lin/status/2054556828118245710) — 2026-05-13: Five methods to complement simplicity without confusing it with reality: face the limits of a framework, zoom in and out, check convergence across frameworks, think probabilistically, and hold conclusions humbly. Links 'Beware of Reductionist Thinking.'
 
@@ -3542,11 +3542,11 @@
 
 - [Dan Shipper](https://x.com/danshipper/status/2050235671466606665) — 2026-05-02: Dan Shipper flags Marcus's 'definitive' AI product-management guide (every.to) - a former PM shipping product like a madman with coding agents.
 
-- [Darshak Rana](https://x.com/thedarshakrana/status/2049151671692136778) — 2026-04-30: A long self-improvement essay ('Your Next 5 Years Will Be an Exact Copy of Your Last 5') on the marshmallow test as environment design over willpower, the 'end of history illusion,' affective-forecasting error, basal-ganglia habit chunking, and chronos vs kairos time. Not AI/dev.
+- [Darshak Rana](https://x.com/thedarshakrana/status/2049151671692136778) — 2026-04-30: Long essay ('Your Next 5 Years Will Be an Exact Copy of Your Last 5') arguing environment design beats willpower, drawing on the marshmallow test, the 'end of history illusion,' affective-forecasting error, basal-ganglia habit chunking, and chronos vs kairos time.
 
 - [Ethan Mollick](https://x.com/emollick/status/2047828327856030047) — 2026-04-25: Ethan Mollick: 'Organizational design for agents is hard, benchmarking agents working in concert is hard. Together, this is the next critical frontier for making AI matter in economically valuable tasks, and we really don't know very much about it.' Quote-tweets @krishnanrohit's essay 'Aligned Agents Still Build Misaligned Organisations.'
 
-- [Ihtesham Ali](https://x.com/ihtesham2005/status/2046197374855582157) — 2026-04-21: Essay on George Polya's 'How to Solve It' (1945): understand the problem (restate it in your own words - the real filter), make a plan (solve a simpler related problem first for a foothold), carry it out, and 'look back' (verify by another method, reuse it - build a transferable library of methods). Diagnosis: people conflate reading with understanding, method with starting, and answer with learning. Not AI/dev.
+- [Ihtesham Ali](https://x.com/ihtesham2005/status/2046197374855582157) — 2026-04-21: Essay on George Polya's 'How to Solve It' (1945): understand the problem (restating it in your own words is the real filter), make a plan (solve a simpler related problem first for a foothold), carry it out, then 'look back' — verify by another method and reuse it, building a transferable library of methods. Diagnosis: people conflate reading with understanding, method with starting, and the answer with the learning.
 
 - [Hamudi](https://x.com/hamudinaanaa/status/2044872907072164304) — 2026-04-17: Hamudi ties into Sequoia's "$1T thesis" that AI sells outcomes (work) rather than software tools, introducing "Outcome Primitives" as a way to measure economic outcomes, citing a published paper tracking 1,300 agents over 21 days that created $32M in value (jobs secured, $200k grants won, e-commerce shops shipped). Framing: copilots compete on software margins and lose to big labs; outcome engines compete on services margins.
 
@@ -3676,7 +3676,7 @@
 
 - [ericosiu](https://x.com/ericosiu/status/2090475762495185337) — 2026-08-21: Shares a reusable meta-prompt for picking which business workflow to automate first: feed an agent your SOPs, briefs, templates and examples, then have it identify the highest-leverage repetitive workflow and map trigger, inputs, process, output, human gate, success metric, and stop condition before writing the bot instructions. The 'human gate' and 'stop condition' slots are the transferable part - they generalize well beyond the marketing context and beyond Grok Bot specifically. Quote-tweets the author's own article on running marketing through Grok Bot.
 
-- [alexei](https://x.com/alexeixbt/status/2090407882508394889) — 2026-08-21: Motivational thread on self-talk and neuroplasticity: repeated negative statements are framed as literally carving neural 'superhighways,' and the fix is holding a new signal with 'quiet certainty' until reality reorganizes around it. Mixes a real premise (repetition shapes habitual thought) with a pseudo-scientific 'quantum perspective' claim that focused attention turns possibility into experience. Tagged questionable for the mechanism claims, not the underlying mindset material.
+- [alexei](https://x.com/alexeixbt/status/2090407882508394889) — 2026-08-21: Motivational thread on self-talk: repeated statements are framed as carving neural 'superhighways,' and the remedy is holding a new signal with 'quiet certainty' until reality reorganizes around it. The repetition-shapes-habit premise is real, but it is fused to a 'from a quantum perspective' claim that focused attention turns possibility into experience — that is manifestation language wearing physics vocabulary, and it's why the credibility tag is here. Kept for the mindset material, not the mechanism.
 
 - [mentalium](https://x.com/mentalium_/status/2087954681242734824) — 2026-08-14: A repost of an uncut 1992 Tony Robbins persuasion session, pitched around reading a buyer's emotional state and anchoring an offer to it rather than working from scripts. Non-technical, and packaged with heavy scarcity framing ('this rare tape disappears regularly') — but the underlying sales-psychology material is the kind of thing that matters to anyone weighing a solo or side-hustle venture, where selling the work is as load-bearing as building it.
 
@@ -3688,17 +3688,17 @@
 
 - [Alex Lieberman](https://x.com/businessbarista/status/2070194343034360004) — 2026-06-25: A "5 levels of work" framework for teaching high agency (credited to @stephsmithio): L1 name a problem; L2 add causes; L3 add possible solutions; L4 add a recommended pick; L5 already fixed it, just keeping you in the loop. Lieberman tells new hires to operate at Level 4 from day one and rise to Level 5 as trust builds.
 
-- [Elon Musk](https://x.com/elonmusk/status/2063401522327666828) — 2026-06-07: Elon Musk endorses first-principles 'physics thinking in the limit' — the 'Magic Wand Number' and 'Idiot Index' as universal cost-engineering mental models. Not AI/dev, but a useful thinking frame.
+- [Elon Musk](https://x.com/elonmusk/status/2063401522327666828) — 2026-06-07: Musk endorses first-principles 'physics thinking in the limit,' with the 'Magic Wand Number' (what the theoretical floor would be if physics were the only constraint) and the 'Idiot Index' (a part's cost divided by its raw-material cost) as general cost-engineering mental models.
 
-- [Ihtesham Ali](https://x.com/ihtesham2005/status/2063297401344147719) — 2026-06-07: A well-written essay on The Art of Problem Solving (AoPS): problem-solving is a transferable skill, not memorized formulas; teach the difference between a formula (what to compute) and a method (how to see), and treat confusion as where learning starts. Education/thinking, not AI/dev.
+- [Ihtesham Ali](https://x.com/ihtesham2005/status/2063297401344147719) — 2026-06-07: Essay on The Art of Problem Solving (AoPS): problem-solving is a transferable skill rather than a set of memorized formulas, the difference between a formula (what to compute) and a method (how to see) is the thing worth teaching, and confusion is where the learning starts rather than a sign of failure.
 
 - [James Cogan](https://x.com/cogan/status/2056702063992607071) — 2026-05-22: A thoughtful essay, 'Machine Time,' arguing AI compresses the unit of meaningful time — shrinking the buffer between noticing a change and having to respond. AI compresses the front end of cognitive work, so the bottleneck moves to human review, judgment, and taste; the danger isn't speed but speed without scaffolding, and institutions increasingly answer with machine-speed coordination rather than restoring the human clock.
 
 - [Jaynit Makwana](https://x.com/jaynitmakwana/status/2055594459426070640) — 2026-05-18: Turns Barbara Oakley's 'Learning How to Learn' science (rereading and highlighting don't work; intuition about learning misleads) into 10 Claude prompts that build a personalized study system from how the brain actually acquires skill.
 
-- [Joe Hudson](https://x.com/fu_joehudson/status/2054264609683689941) — 2026-05-14: Executive-coaching content on moving from 'dirty fuel' (motivation from fear/pressure) to 'clean fuel' (joy/curiosity), summarized on one page. Not AI/dev.
+- [Joe Hudson](https://x.com/fu_joehudson/status/2054264609683689941) — 2026-05-14: Executive-coaching material on shifting from 'dirty fuel' (motivation sourced from fear and pressure) to 'clean fuel' (joy and curiosity), condensed to a single page.
 
-- [Jaynit](https://x.com/jaynitx/status/2054200520575967698) — 2026-05-14: A long essay on pattern recognition as the basis of expertise (de Groot's chess studies, chunking, Klein's recognition-primed decisions, Buffett reading annual reports), how tight feedback loops build it fast, and how to avoid false patterns. General/thinking, not AI/dev.
+- [Jaynit](https://x.com/jaynitx/status/2054200520575967698) — 2026-05-14: Long essay on pattern recognition as the substrate of expertise — de Groot's chess studies and chunking, Klein's recognition-primed decision model, Buffett reading annual reports — on how tight feedback loops build it quickly, and on how to avoid locking in false patterns.
 
 - [Alfred Lin](https://x.com/alfred_lin/status/2054556828118245710) — 2026-05-13: Five methods to complement simplicity without confusing it with reality: face the limits of a framework, zoom in and out, check convergence across frameworks, think probabilistically, and hold conclusions humbly. Links 'Beware of Reductionist Thinking.'
 
@@ -3708,9 +3708,9 @@
 
 - [Kpaxs](https://x.com/kpaxs/status/2050470605804216695) — 2026-05-02: On agency: 'Low-agency asks Can I? High-agency says I'm doing this unless someone stops me.' Most permissions are granted retroactively - easier to get forgiveness than permission; much organizational authority was never formally granted, just assumed and later legitimized because it worked.
 
-- [Darshak Rana](https://x.com/thedarshakrana/status/2049151671692136778) — 2026-04-30: A long self-improvement essay ('Your Next 5 Years Will Be an Exact Copy of Your Last 5') on the marshmallow test as environment design over willpower, the 'end of history illusion,' affective-forecasting error, basal-ganglia habit chunking, and chronos vs kairos time. Not AI/dev.
+- [Darshak Rana](https://x.com/thedarshakrana/status/2049151671692136778) — 2026-04-30: Long essay ('Your Next 5 Years Will Be an Exact Copy of Your Last 5') arguing environment design beats willpower, drawing on the marshmallow test, the 'end of history illusion,' affective-forecasting error, basal-ganglia habit chunking, and chronos vs kairos time.
 
-- [Ihtesham Ali](https://x.com/ihtesham2005/status/2046197374855582157) — 2026-04-21: Essay on George Polya's 'How to Solve It' (1945): understand the problem (restate it in your own words - the real filter), make a plan (solve a simpler related problem first for a foothold), carry it out, and 'look back' (verify by another method, reuse it - build a transferable library of methods). Diagnosis: people conflate reading with understanding, method with starting, and answer with learning. Not AI/dev.
+- [Ihtesham Ali](https://x.com/ihtesham2005/status/2046197374855582157) — 2026-04-21: Essay on George Polya's 'How to Solve It' (1945): understand the problem (restating it in your own words is the real filter), make a plan (solve a simpler related problem first for a foothold), carry it out, then 'look back' — verify by another method and reuse it, building a transferable library of methods. Diagnosis: people conflate reading with understanding, method with starting, and the answer with the learning.
 
 - [Millie Marconi](https://x.com/milliemarconnni/status/2044358003714097601) — 2026-04-15: 'Inversion is the most powerful thinking tool most people never use correctly - they invert the goal, not the system.' Turned Claude into an inversion engine running Munger's method: map every path to failure so the path to success becomes obvious by elimination. Shares 5 prompts.
 
@@ -3718,7 +3718,7 @@
 
 - [Alex Vacca](https://x.com/itsalexvacca/status/2043834187095150673) — 2026-04-14: Growth/marketing content (mostly off the AI/dev core): endorses Michel Lieben's article on running a 4-layer funnel instead of a bare 'book a call', citing a $7M-ARR bootstrapped funnel (330k visitors, 1,500+ meetings, $4M new ARR). Relevant only as go-to-market reading.
 
-- [The Curious Tales](https://x.com/thecurioustales/status/2039360822200442914) — 2026-04-02: 'Drop everything and read this' - recommends a Dan-Koe-style life essay. Links Darshak Rana 'You Are Just 3 Decisions Away From a Completely Different Life.' Self-improvement, not AI/dev.
+- [The Curious Tales](https://x.com/thecurioustales/status/2039360822200442914) — 2026-04-02: A 'drop everything and read this' recommendation of Darshak Rana's life-design essay 'You Are Just 3 Decisions Away From a Completely Different Life.' Life-direction material in the Dan Koe register rather than engineering writing.
 
 - [John Rush](https://x.com/johnrushx/status/2029406051716743354) — 2026-03-05: Opinion piece: AI does not make work easier — it strips away the easy 99% of jobs so everyone now competes on the hard 1%, raising cognitive load and stress sharply. A take on how AI reshapes knowledge work.
 
@@ -3740,7 +3740,7 @@
 
 - [mentalium](https://x.com/mentalium_/status/2087954681242734824) — 2026-08-14: A repost of an uncut 1992 Tony Robbins persuasion session, pitched around reading a buyer's emotional state and anchoring an offer to it rather than working from scripts. Non-technical, and packaged with heavy scarcity framing ('this rare tape disappears regularly') — but the underlying sales-psychology material is the kind of thing that matters to anyone weighing a solo or side-hustle venture, where selling the work is as load-bearing as building it.
 
-- [Atenov int.](https://x.com/atenov_d/status/2058868770257416239) — 2026-05-25: Highlights MoneyPrinterTurbo (13k+ stars): give a topic/keyword and it generates a script (via any LLM), pulls copyright-free footage, and adds subtitles/music/voiceover to output a finished short video; runs locally with Web UI/API/Docker/Colab. (Author's other posts are off-topic trading/politics.)
+- [Atenov int.](https://x.com/atenov_d/status/2058868770257416239) — 2026-05-25: Highlights MoneyPrinterTurbo (13k+ stars): give it a topic or keyword and it generates a script via any LLM, pulls copyright-free footage, and adds subtitles, music and voiceover to produce a finished short video. Runs locally with a Web UI, API, Docker and Colab paths.
 
 - [Linas Beliūnas](https://x.com/linasbeliunas/status/2056679329484927356) — 2026-05-20: Summarizes Anthropic's free AI-native founder playbook: build AROUND Claude across Idea → MVP → Launch → Scale (pressure-test the idea, Claude Code builds the product, Claude Cowork handles ops, Claude turns knowledge into compounding context). 'AI compresses execution but not judgment' — the edge becomes knowing what NOT to build; best AI-native startups have the best AI operating systems, not the biggest teams.
 
@@ -3752,9 +3752,9 @@
 
 - [Eron](https://x.com/0xeronn/status/2090454335750644120) — 2026-08-21: Promotes a 20-minute explainer video visualizing loss landscapes inside Llama 3.2 and why gradient descent does not get stuck in local minima the way early critics expected. Framing is pop-science and loose - the Hinton anecdote and the 'parameters fell through a wormhole' description are dramatized rather than accurate, and the post leans on a bookmark-and-watch hook. Quote-tweets the author's own companion article on next-token prediction.
 
-- [alexei](https://x.com/alexeixbt/status/2090407882508394889) — 2026-08-21: Motivational thread on self-talk and neuroplasticity: repeated negative statements are framed as literally carving neural 'superhighways,' and the fix is holding a new signal with 'quiet certainty' until reality reorganizes around it. Mixes a real premise (repetition shapes habitual thought) with a pseudo-scientific 'quantum perspective' claim that focused attention turns possibility into experience. Tagged questionable for the mechanism claims, not the underlying mindset material.
+- [alexei](https://x.com/alexeixbt/status/2090407882508394889) — 2026-08-21: Motivational thread on self-talk: repeated statements are framed as carving neural 'superhighways,' and the remedy is holding a new signal with 'quiet certainty' until reality reorganizes around it. The repetition-shapes-habit premise is real, but it is fused to a 'from a quantum perspective' claim that focused attention turns possibility into experience — that is manifestation language wearing physics vocabulary, and it's why the credibility tag is here. Kept for the mindset material, not the mechanism.
 
-- [BasedBiohacker](https://x.com/basedbiohacker/status/2071982410082734111) — 2026-08-21: Nootropics thread arguing modafinil plus bromantane is a complementary stack because modafinil prolongs synaptic dopamine while bromantane upregulates tyrosine hydroxylase to increase dopamine production, claiming 12+ hours of focus with no tolerance or dependency. Entirely self-reported with no citations, and the safety claims (zero abuse risk, no depletion) are asserted rather than sourced; author appends 'not medical advice.' Part of the health/biohacking vein that currently has no taxonomy home.
+- [BasedBiohacker](https://x.com/basedbiohacker/status/2071982410082734111) — 2026-08-21: Nootropics thread arguing modafinil plus bromantane is a complementary pairing because modafinil prolongs synaptic dopamine while bromantane upregulates tyrosine hydroxylase to increase production, with the author claiming 12+ hours of focus and no tolerance or dependency. The mechanism sketch is the substantive part; the safety claims are asserted rather than sourced and the author appends 'not medical advice.' Modafinil is a prescription-only Schedule IV drug in the US and bromantane is not approved there at all, though both are regulated differently elsewhere.
 
 - [Granite](https://x.com/granite0x/status/2087960767287230592) — 2026-08-14: Vercel shipped Foreman, an open-source 'software factory' that splits the agentic coding loop into four sandboxed stations — Classifier, Analyst, Implementer, Reviewer — so no agent reviews its own work. The reviewer deliberately runs on a different model vendor and sees only the pushed branch, never the implementer's reasoning, so the agents can't collude; label an issue 'factory' and you get back a draft PR.
 
@@ -3822,7 +3822,7 @@
 
 - [Olivia Chowdhury](https://x.com/oliviacoder1/status/2066064093552038070) — 2026-06-15: Hype-framed thread on a Dec 31, 2025 MIT CSAIL paper that claims to 'solve' AI memory not by building bigger context windows but by teaching models how to read/retrieve — positioning the result against the industry's context-window arms race and the 'context rot' problem, where a model's performance on information already in context degrades as more is packed in.
 
-- [Lorwen Harris Nagle, PhD](https://x.com/lorwen108/status/2065852553208992218) — 2026-06-14: Off-topic motivational thread on Elon Musk, Nietzsche, and overcoming teenage depression/anxiety through imagination rather than analysis — pop-psychology engagement content with no AI or technical substance.
+- [Lorwen Harris Nagle, PhD](https://x.com/lorwen108/status/2065852553208992218) — 2026-06-14: Motivational thread linking Elon Musk and Nietzsche to overcoming teenage depression and anxiety through imagination rather than analysis. Pop-psychology framing with no sourcing behind the psychological claims.
 
 - [Avid](https://x.com/av1dlive/status/2065747876005937416) — 2026-06-14: Promotes a 'second brain' pattern attributed to Karpathy: let an LLM maintain a wiki of your notes so knowledge compounds as you dump sources and it reads, links, and files them. Points to a free Claude Code plugin, claude-obsidian by AgriciDaniel (claude plugin marketplace add AgriciDaniel/claude-obsidian; claude plugin install claude-obsidian@agricidaniel-claude-obsidian), then run /wiki inside an Obsidian folder. Quote-tweets the author's own article on building Obsidian from scratch with 13+ Kimi agents.
 
@@ -3836,21 +3836,21 @@
 
 - [Meta Alchemist](https://x.com/meta_alchemist/status/2064431279383433646) — 2026-06-11: Shares a copy-paste 'Repo Audit & Improvement Plan' prompt — a structured, 4-phase principal-engineer audit (Phase 1 discovery/mapping before judging, then a prioritized, actionable improvement plan), with instructions to cite file paths and line numbers and to flag anything unverifiable. Useful prompt template, but wrapped in hype framing around a nonexistent 'Claude Fable 5' model.
 
-- [Jeff Tang](https://x.com/jefftangx/status/2064052420888363090) — 2026-06-09: Off-topic for the AI links collection — points to a 57-page Reddit-sourced Google Doc summarizing peptide human trials (BPC-157 et al). Health/biohacking, not AI/agents. Engagement-style 'Bookmark this' framing. Probably an accidental email-to-self.
+- [Jeff Tang](https://x.com/jefftangx/status/2064052420888363090) — 2026-06-09: Points to a 57-page community-compiled Google Doc summarizing the human-trial literature on peptides including BPC-157. Value is as an index into primary trials rather than as a source itself — it is a Reddit-sourced compilation, so the selection and reading of those trials is unvetted, and BPC-157 in particular is not an approved drug in the US. Framed with a 'Bookmark this' engagement hook.
 
 - [rari](https://x.com/0xwhrrari/status/2063244577482440978) — 2026-06-08: Engagement-farmed but useful link dump of free AI-engineering learning resources (LangChain agent architecture, Anthropic's Claude Code 101 + in-action courses, prompt engineering docs, anthropics/courses interactive prompt tutorial, claude.md docs, skills, MCP). Wrapped in 'Google's former CEO just said...' framing but the underlying link list is the substance.
 
 - [Sprytix](https://x.com/sprytixl/status/2063234969510588640) — 2026-06-07: Engagement-farmed hype ('170 AI agents make every company decision') pushing a listicle on running 170–300 parallel agents with Kimi K2.6. Clickbait framing, but the underlying topic — massed parallel agents for research/ops — is real.
 
-- [Livsun](https://x.com/l1vsun/status/2061876167687201243) — 2026-06-03: Off-topic trading engagement-farm: a neural net trained on years of tick data supposedly calling setups hours before the open (71% win rate, built for <$500), promoting a 'win every trade' listicle. Not AI/dev material.
+- [Livsun](https://x.com/l1vsun/status/2061876167687201243) — 2026-06-03: Claims a neural net trained on years of tick data calls setups hours before the open at a 71% win rate, built for under $500, promoting a 'win every trade' listicle. No methodology, holdout or drawdown figures are given, and the win-rate framing omits position sizing entirely.
 
 - [Mr. Buzzoni](https://x.com/polydao/status/2060964743402455212) — 2026-05-31: Engagement-farmed ALL-CAPS thread riffing on Karpathy's 'we're in the 1960s of AI' / software-3.0 framing to push the author's own listicle article '...These Are the Ones That Matter [Full GitHub Links]' cataloguing 32 Claude skills. Clickbait wrapper, but the underlying skills roundup may be worth a skim.
 
-- [Livsun](https://x.com/l1vsun/status/2059707097583906917) — 2026-05-28: Off-topic trading content dressed as a discovery: pitches Markov-chain state machines (trending/ranging/reversing transition matrix + Kelly sizing) with a Renaissance Technologies '66% annual returns' framing, promoting a quant listicle. Engagement-farmed, not AI/dev material.
+- [Livsun](https://x.com/l1vsun/status/2059707097583906917) — 2026-05-28: Pitches Markov-chain state machines for markets — a trending/ranging/reversing transition matrix with Kelly sizing — framed around Renaissance Technologies' '66% annual returns' and promoting a quant listicle. The state-machine framing is a legitimate modeling idea; the returns framing and listicle funnel are not evidence for it.
 
 - [Rahul](https://x.com/sairahul1/status/2059632149716942923) — 2026-05-28: Hype-framed ('Anthropic just released the blueprint for a company run by Claude Code; work is dying') push for a listicle on building a SaaS MVP in an afternoon with 7 AI agents. Clickbait wrapper over a real multi-agent build walkthrough.
 
-- [Atenov int.](https://x.com/atenov_d/status/2058868770257416239) — 2026-05-25: Highlights MoneyPrinterTurbo (13k+ stars): give a topic/keyword and it generates a script (via any LLM), pulls copyright-free footage, and adds subtitles/music/voiceover to output a finished short video; runs locally with Web UI/API/Docker/Colab. (Author's other posts are off-topic trading/politics.)
+- [Atenov int.](https://x.com/atenov_d/status/2058868770257416239) — 2026-05-25: Highlights MoneyPrinterTurbo (13k+ stars): give it a topic or keyword and it generates a script via any LLM, pulls copyright-free footage, and adds subtitles, music and voiceover to produce a finished short video. Runs locally with a Web UI, API, Docker and Colab paths.
 
 - [Khairallah AL-Awady](https://x.com/eng_khairallah1/status/2057433528363811098) — 2026-05-22: Engagement-framed roundup of a Boris Cherny podcast on why most people don't get results from Claude — they never set it up (CLAUDE.md, features that change how Claude thinks, unopened settings) — claiming ~30-38 untouched features. Links a '40 Features Most Users Have Never Touched' article.
 
@@ -3870,7 +3870,7 @@
 
 - [Miles Deutscher](https://x.com/milesdeutscher/status/2054310749884002348) — 2026-05-13: Promotes an 'agent skills marketplace' claiming over a million ready-to-use skills and plug-ins (search a type, hundreds of files appear). Volume-hype framing.
 
-- [Roan](https://x.com/rohonchain/status/2054245904258142593) — 2026-05-12: Promotes a Stanford Markov Decision Processes lecture and a 'win every trade' Markov-chains quant listicle. Off-topic trading engagement-farm.
+- [Roan](https://x.com/rohonchain/status/2054245904258142593) — 2026-05-12: Promotes a Stanford lecture on Markov Decision Processes alongside a 'win every trade' Markov-chains quant listicle. The lecture is real coursework; the trading listicle wrapped around it is the engagement-farmed part.
 
 - [Muhammad Ayan](https://x.com/socialwithaayan/status/2053875867487777175) — 2026-05-12: ALL-CAPS 'BREAKING' claim that Anthropic open-sourced 'the entire Wall Street workflow' as Claude agents (DCF/LBO models, equity research, merger analysis, KYC) connecting to Bloomberg/FactSet/S&P/Morningstar/PitchBook and building live Excel models - a one-line Claude Code plugin (19.8K stars, Apache-2.0).
 
@@ -3882,7 +3882,7 @@
 
 - [Kanika](https://x.com/kanikabk/status/2052032420954927357) — 2026-05-08: Kanika points to a 424-page 'Agentic Design Patterns' guide written by a senior Google engineer — every chapter ships working code, all Amazon royalties go to Save the Children, $40 print price. Engagement-bait framing ('bookmark before it's buried') but the reference itself is a real, comprehensive resource.
 
-- [BasedBiohacker](https://x.com/basedbiohacker/status/2049235599874200049) — 2026-05-02: Nootropics/cognitive-enhancement resource (vendors, dosages, EU source, consulting). Off-topic supplements, not AI/dev.
+- [BasedBiohacker](https://x.com/basedbiohacker/status/2049235599874200049) — 2026-05-02: Pointer to the author's own cognitive-enhancement reference covering vendors and dosages for a range of nootropic compounds, attached to a paid one-on-one consulting offer for personalized compound selection. Useful mainly as a map of what this corner of the space sells and how it's packaged — it is a commercial funnel, not an evidence review, and no trials or sourcing are cited. Several of the compound categories referenced are prescription-only or legally grey in the US.
 
 - [Allen Braden](https://x.com/allen_explains/status/2050163013165224332) — 2026-05-01: Claims a Jane Street junior landed a $220-600K role using AI on trillions of data points, with a 1-hour lecture. A Community Note corrects it: the video is actually a 2024 Horace He talk on ML systems/infrastructure (guest speaker, not employee); the trading/hiring story is fabricated.
 
@@ -3892,15 +3892,15 @@
 
 - [Atal](https://x.com/zabihullahatal/status/2047692175019008019) — 2026-04-25: Engagement-framed ('BREAKING') summary of 'Agent Behavioral Contracts' paper — applies Design-by-Contract (preconditions, invariants, governance rules, recovery mechanisms) as runtime constraints on AI agents instead of prompt-only control. Tested across 1,980 sessions. Real concept (formal verification meets agent runtime) worth tracking under the agents-as-judges concept thread.
 
-- [StacyOnChain](https://x.com/stacyonchain/status/2047278412922831260) — 2026-04-23: Off-topic for AI links — promotional content for centpro.bot (Polymarket trading framework supposedly extracted from 327 real tests). ALL-CAPS engagement framing, crypto-twitter signal. Capturing for completeness but not useful as AI/agents reference.
+- [StacyOnChain](https://x.com/stacyonchain/status/2047278412922831260) — 2026-04-23: Promotional post for centpro.bot, a Polymarket trading framework the author says was extracted from 327 real tests. ALL-CAPS crypto-Twitter framing with little verifiable detail behind the claim.
 
 - [Sigrid Jin](https://x.com/realsigridjin/status/2046266374948069387) — 2026-04-21: Points to a harness method from someone who mass-merged into kubernetes/huggingface then got banned from GitHub: two stages did 80% of the work - reproduce the bug locally (or drop it) and read merge history instead of CONTRIBUTING.md. Links 'How I got banned from GitHub due to my harness pipeline' (500+ commits across 100+ repos in 72 hours -> suspension).
 
 - [Alter Ego](https://x.com/alterego_eth/status/2045093809886020058) — 2026-04-17: Alter Ego promotes Nous Research's Hermes Agent, a self-hosted agent that writes its own skills after each task, keeps persistent memory (MEMORY.md/USER.md/SQLite), and runs 24/7 on a VPS with a closed learn-improve loop every ~15 tool calls, using it to build a self-learning Polymarket weather-trading bot. Heavy promotional/profit framing.
 
-- [Punisher](https://x.com/0x_punisher/status/2044100729133019416) — 2026-04-15: [Promotional / paid partnership] A guide to a Polymarket sweeper bot that profits not by prediction but by FIFO-queueing bids near $0.999 on already-decided markets to absorb mispriced liquidity, covering resolution detection, latency, and capital allocation. Ends with wallet/PnL claims and a Telegram funnel. Off-topic crypto money-making content rather than AI tooling.
+- [Punisher](https://x.com/0x_punisher/status/2044100729133019416) — 2026-04-15: Describes a Polymarket 'sweeper' bot that profits from queue mechanics rather than prediction: FIFO-queueing bids near $0.999 on already-decided markets to absorb mispriced liquidity, covering resolution detection, latency and capital allocation. Closes with wallet/PnL screenshots and a Telegram funnel, and is disclosed as a paid partnership.
 
-- [StacyOnChain](https://x.com/stacyonchain/status/2044069002192847200) — 2026-04-15: [Engagement-farming / crypto promo] StacyOnChain hypes an institutional-grade Polymarket bot architecture (fractional Kelly sizing, latency optimizations), urging readers to bookmark and download before it is pulled, and quote-tweets their own how-we-built-a-Polymarket-bot article. Off-topic relative to the AI tooling collection.
+- [StacyOnChain](https://x.com/stacyonchain/status/2044069002192847200) — 2026-04-15: Walks through an institutional-grade Polymarket bot architecture — fractional Kelly position sizing, latency optimizations — and quote-tweets the author's own build writeup. Packaged with bookmark-and-download-before-it's-pulled scarcity framing, which is what the credibility tag is for.
 
 - [How To Prompt](https://x.com/howtoai_/status/2043753502850351525) — 2026-04-14: Hype-framed math claim ('God Particle for calculus'): a paper reportedly shows every elementary function can be generated by one binary operator eml(x,y)=exp(x)-ln(y) plus the constant 1, found by exhaustive search, analogous to the NAND gate. Pitches an AI angle — one uniform trainable circuit instead of juggling math primitives. Interesting if true, but clickbait presentation warrants skepticism.
 
@@ -3908,9 +3908,9 @@
 
 - [Nav Toor](https://x.com/heynavtoor/status/2042879339256254689) — 2026-04-11: Kronos - first open-source foundation model for financial markets ('reads candlestick charts the way GPT reads English'). Trained on 12B records from 45 exchanges; price/volatility forecasting, zero-shot, 4 model sizes. Claims 93% accuracy gains (hype framing). Tsinghua, AAAI 2026, HuggingFace, MIT.
 
-- [Recogard](https://x.com/recogard/status/2042356576032358505) — 2026-04-10: 36GB free dataset of 72M+ Polymarket trades on GitHub plus a backtesting simulator: analyze historical prediction-market behavior, define a strategy, and backtest it across all past markets for accuracy/PnL/risk. Off-topic (prediction-market trading), not AI/dev core.
+- [Recogard](https://x.com/recogard/status/2042356576032358505) — 2026-04-10: A free 36GB dataset of 72M+ Polymarket trades on GitHub, paired with a backtesting simulator that lets you define a strategy and replay it across all historical markets for accuracy, PnL and risk. Substantial public dataset and eval harness, whatever you think of the domain.
 
-- [cvxv666](https://x.com/antpalkin/status/2041517093670052193) — 2026-04-08: Engagement-farm story of failing 10x to build a Polymarket arbitrage bot then finding a 'Part 2' guide diagnosing 10 mistakes; 'the strategy was never the problem, I was the bug.' Links AdiiX 'Why your Claude bot doesn't work.' Off-topic trading-bot content.
+- [cvxv666](https://x.com/antpalkin/status/2041517093670052193) — 2026-04-08: First-person account of failing ten times to build a Polymarket arbitrage bot, then finding a 'Part 2' guide diagnosing ten specific mistakes — landing on 'the strategy was never the problem, I was the bug.' Links AdiiX's 'Why your Claude bot doesn't work.' The debugging-your-own-assumptions lesson generalizes past the trading context; the confessional framing is engagement-shaped.
 
 - [klöss](https://x.com/kloss_xyz/status/2038842907466334550) — 2026-03-31: Supply-chain attack on axios (100M+ weekly downloads): a hijacked maintainer account published poisoned versions that inject a fake dependency (plain-crypto-js) dropping a RAT (cross-platform payloads, self-destructing traces, bypassed CI/CD). One of the most sophisticated supply-chain attacks on a top-10 npm package. Guidance: pin to 1.14.0/0.30.3, rotate secrets, check for C2, add --ignore-scripts to CI.
 
@@ -3980,11 +3980,9 @@
 
 - [Aakash Gupta](https://x.com/aakashg0/status/1967135994228166848) — 2025-09-15: Boosts another user's step-by-step roadmap for building your first AI agent, calling it 'gold.' Engagement-style framing; the substantive content lives in the referenced roadmap rather than the post itself.
 
-### General (106)
+### General (102)
 
 - [Tony Simons](https://x.com/tonysimons_/status/2090612261349908991) — 2026-08-21: Part 3 of a Hermes Desktop masterclass series, covering the move from treating it as a chatbot to using it as a workspace: sessions, projects, files, previews, attachments, multiple windows, model switching, queues, interruptions, and persistent workspaces. Parts 1 and 2 covered what Hermes Desktop is and how to install and configure it. Product-usage material rather than architecture.
-
-- [BasedBiohacker](https://x.com/basedbiohacker/status/2071982410082734111) — 2026-08-21: Nootropics thread arguing modafinil plus bromantane is a complementary stack because modafinil prolongs synaptic dopamine while bromantane upregulates tyrosine hydroxylase to increase dopamine production, claiming 12+ hours of focus with no tolerance or dependency. Entirely self-reported with no citations, and the safety claims (zero abuse risk, no depletion) are asserted rather than sourced; author appends 'not medical advice.' Part of the health/biohacking vein that currently has no taxonomy home.
 
 - [Ruben Hassid](https://x.com/rubenhassid/status/2087856703773508025) — 2026-08-14: A running list of AI-writing tells that have replaced the em-dash as giveaways, with concrete rewrites: the 'That's not X. That's Y.' construction (say only the second half), stacked two-word fragments ('Fast. Simple.'), empty contrast metaphors ('less a hammer, more a scalpel'), and self-congratulatory filler ('And that matters.', 'That's the part everyone misses.') which can be deleted with no loss. Useful as an editing checklist for anything AI-drafted that goes out under a human name.
 
@@ -4002,19 +4000,15 @@
 
 - [hoeem](https://x.com/hooeem/status/2070072775201444118) — 2026-06-25: Engagement-bait post hyping a quote-tweeted "how to escape the rat race and become financially free" article. No substantive AI content; clickbait framing ("most important article you'll read").
 
-- [Ethan](https://x.com/lambethethan/status/2068958764276051987) — 2026-06-23: Ethan describes a personal wiki of ~1,000 supplements built from 150k papers and 200k health-influencer mentions, and floats handing the entire dataset to an AI agent next.
-
 - [Shenyang Deng](https://x.com/dengshenyang24/status/2065853130567279073) — 2026-06-15: [Post unavailable - page doesn't exist]
 
-- [Lorwen Harris Nagle, PhD](https://x.com/lorwen108/status/2065852553208992218) — 2026-06-14: Off-topic motivational thread on Elon Musk, Nietzsche, and overcoming teenage depression/anxiety through imagination rather than analysis — pop-psychology engagement content with no AI or technical substance.
+- [Lorwen Harris Nagle, PhD](https://x.com/lorwen108/status/2065852553208992218) — 2026-06-14: Motivational thread linking Elon Musk and Nietzsche to overcoming teenage depression and anxiety through imagination rather than analysis. Pop-psychology framing with no sourcing behind the psychological claims.
 
 - [Nav Toor](https://x.com/heynavtoor/status/2065427656112505017) — 2026-06-14: Spotlights Clone-Wars, an open-source GitHub collection (~34,555 stars) by developer Gourav Goyal that catalogues 100+ open-source clones of major apps (Netflix, Spotify, Instagram, Airbnb, WhatsApp, TikTok, Amazon) with source code, demos, and tech stacks listed — e.g., a Netflix clone in React + TMDB API. Started December 2020 and hit GitHub Trending and Hacker News #1.
 
-- [Jeff Tang](https://x.com/jefftangx/status/2064052420888363090) — 2026-06-09: Off-topic for the AI links collection — points to a 57-page Reddit-sourced Google Doc summarizing peptide human trials (BPC-157 et al). Health/biohacking, not AI/agents. Engagement-style 'Bookmark this' framing. Probably an accidental email-to-self.
+- [Elon Musk](https://x.com/elonmusk/status/2063401522327666828) — 2026-06-07: Musk endorses first-principles 'physics thinking in the limit,' with the 'Magic Wand Number' (what the theoretical floor would be if physics were the only constraint) and the 'Idiot Index' (a part's cost divided by its raw-material cost) as general cost-engineering mental models.
 
-- [Elon Musk](https://x.com/elonmusk/status/2063401522327666828) — 2026-06-07: Elon Musk endorses first-principles 'physics thinking in the limit' — the 'Magic Wand Number' and 'Idiot Index' as universal cost-engineering mental models. Not AI/dev, but a useful thinking frame.
-
-- [Ihtesham Ali](https://x.com/ihtesham2005/status/2063297401344147719) — 2026-06-07: A well-written essay on The Art of Problem Solving (AoPS): problem-solving is a transferable skill, not memorized formulas; teach the difference between a formula (what to compute) and a method (how to see), and treat confusion as where learning starts. Education/thinking, not AI/dev.
+- [Ihtesham Ali](https://x.com/ihtesham2005/status/2063297401344147719) — 2026-06-07: Essay on The Art of Problem Solving (AoPS): problem-solving is a transferable skill rather than a set of memorized formulas, the difference between a formula (what to compute) and a method (how to see) is the thing worth teaching, and confusion is where the learning starts rather than a sign of failure.
 
 - [shdu](https://x.com/shdu11546816/status/2057642195524419748) — 2026-05-22: Macro speculation that AI triggers a 'Deflationary Doom Loop' via the Paradox of Thrift: agent-driven layoffs push white-collar workers into physical-labor markets, wages crash, and discretionary spending collapses because intelligence isn't the bottleneck for land, energy, and calories. A pessimistic counter to 'everything becomes cheap and abundant.'
 
@@ -4026,9 +4020,9 @@
 
 - [Anatoli Kopadze](https://x.com/anatolikopadze/status/2054568935274549597) — 2026-05-15: 'How to Actually Use Claude. 18 steps' - a setup-and-usage guide: Projects + who-you-are template + Custom Instructions; treat Claude as a thinking partner and sparring partner; style cloning; Extended Thinking; token-efficiency habits; plus ready prompts (Feynman analogies, expense analysis, business-idea stress test).
 
-- [Joe Hudson](https://x.com/fu_joehudson/status/2054264609683689941) — 2026-05-14: Executive-coaching content on moving from 'dirty fuel' (motivation from fear/pressure) to 'clean fuel' (joy/curiosity), summarized on one page. Not AI/dev.
+- [Joe Hudson](https://x.com/fu_joehudson/status/2054264609683689941) — 2026-05-14: Executive-coaching material on shifting from 'dirty fuel' (motivation sourced from fear and pressure) to 'clean fuel' (joy and curiosity), condensed to a single page.
 
-- [Jaynit](https://x.com/jaynitx/status/2054200520575967698) — 2026-05-14: A long essay on pattern recognition as the basis of expertise (de Groot's chess studies, chunking, Klein's recognition-primed decisions, Buffett reading annual reports), how tight feedback loops build it fast, and how to avoid false patterns. General/thinking, not AI/dev.
+- [Jaynit](https://x.com/jaynitx/status/2054200520575967698) — 2026-05-14: Long essay on pattern recognition as the substrate of expertise — de Groot's chess studies and chunking, Klein's recognition-primed decision model, Buffett reading annual reports — on how tight feedback loops build it quickly, and on how to avoid locking in false patterns.
 
 - [Alfred Lin](https://x.com/alfred_lin/status/2054556828118245710) — 2026-05-13: Five methods to complement simplicity without confusing it with reality: face the limits of a framework, zoom in and out, check convergence across frameworks, think probabilistically, and hold conclusions humbly. Links 'Beware of Reductionist Thinking.'
 
@@ -4040,11 +4034,9 @@
 
 - [Kpaxs](https://x.com/kpaxs/status/2050470605804216695) — 2026-05-02: On agency: 'Low-agency asks Can I? High-agency says I'm doing this unless someone stops me.' Most permissions are granted retroactively - easier to get forgiveness than permission; much organizational authority was never formally granted, just assumed and later legitimized because it worked.
 
-- [BasedBiohacker](https://x.com/basedbiohacker/status/2049235599874200049) — 2026-05-02: Nootropics/cognitive-enhancement resource (vendors, dosages, EU source, consulting). Off-topic supplements, not AI/dev.
+- [Darshak Rana](https://x.com/thedarshakrana/status/2049151671692136778) — 2026-04-30: Long essay ('Your Next 5 Years Will Be an Exact Copy of Your Last 5') arguing environment design beats willpower, drawing on the marshmallow test, the 'end of history illusion,' affective-forecasting error, basal-ganglia habit chunking, and chronos vs kairos time.
 
-- [Darshak Rana](https://x.com/thedarshakrana/status/2049151671692136778) — 2026-04-30: A long self-improvement essay ('Your Next 5 Years Will Be an Exact Copy of Your Last 5') on the marshmallow test as environment design over willpower, the 'end of history illusion,' affective-forecasting error, basal-ganglia habit chunking, and chronos vs kairos time. Not AI/dev.
-
-- [Ihtesham Ali](https://x.com/ihtesham2005/status/2046197374855582157) — 2026-04-21: Essay on George Polya's 'How to Solve It' (1945): understand the problem (restate it in your own words - the real filter), make a plan (solve a simpler related problem first for a foothold), carry it out, and 'look back' (verify by another method, reuse it - build a transferable library of methods). Diagnosis: people conflate reading with understanding, method with starting, and answer with learning. Not AI/dev.
+- [Ihtesham Ali](https://x.com/ihtesham2005/status/2046197374855582157) — 2026-04-21: Essay on George Polya's 'How to Solve It' (1945): understand the problem (restating it in your own words is the real filter), make a plan (solve a simpler related problem first for a foothold), carry it out, then 'look back' — verify by another method and reuse it, building a transferable library of methods. Diagnosis: people conflate reading with understanding, method with starting, and the answer with the learning.
 
 - [PolyArb](https://x.com/usepolyarb/status/2045109166599963026) — 2026-04-18: [Post unavailable — page doesn't exist]
 
@@ -4056,13 +4048,13 @@
 
 - [Paul Bakaus](https://x.com/pbakaus/status/2044118871326765541) — 2026-04-15: Paul Bakaus praises Matt Sims (English PhD plus ML/startup background) for building in the open at the intersection of creativity, storytelling, and AI. Quote-tweets Sims on teaching Claude Code to think systematically, getting consistent answers to recurring review-for-security / sufficient-tests / update-instruction-files prompts.
 
-- [Punisher](https://x.com/0x_punisher/status/2044100729133019416) — 2026-04-15: [Promotional / paid partnership] A guide to a Polymarket sweeper bot that profits not by prediction but by FIFO-queueing bids near $0.999 on already-decided markets to absorb mispriced liquidity, covering resolution detection, latency, and capital allocation. Ends with wallet/PnL claims and a Telegram funnel. Off-topic crypto money-making content rather than AI tooling.
+- [Punisher](https://x.com/0x_punisher/status/2044100729133019416) — 2026-04-15: Describes a Polymarket 'sweeper' bot that profits from queue mechanics rather than prediction: FIFO-queueing bids near $0.999 on already-decided markets to absorb mispriced liquidity, covering resolution detection, latency and capital allocation. Closes with wallet/PnL screenshots and a Telegram funnel, and is disclosed as a paid partnership.
 
-- [StacyOnChain](https://x.com/stacyonchain/status/2044069002192847200) — 2026-04-15: [Engagement-farming / crypto promo] StacyOnChain hypes an institutional-grade Polymarket bot architecture (fractional Kelly sizing, latency optimizations), urging readers to bookmark and download before it is pulled, and quote-tweets their own how-we-built-a-Polymarket-bot article. Off-topic relative to the AI tooling collection.
+- [StacyOnChain](https://x.com/stacyonchain/status/2044069002192847200) — 2026-04-15: Walks through an institutional-grade Polymarket bot architecture — fractional Kelly position sizing, latency optimizations — and quote-tweets the author's own build writeup. Packaged with bookmark-and-download-before-it's-pulled scarcity framing, which is what the credibility tag is for.
 
 - [Defileo](https://x.com/defileo/status/2043437202190024912) — 2026-04-13: On f/prompts.chat (~159k stars, #33 most-starred repo): the 'I want you to act as...' role-prompt collection cited by Harvard/Columbia, proving people knew AI could be more than search. Contrast: a costume ('act as a therapist') vs a methodology (phased psychological excavation, 7-domain money audit targeting beliefs before numbers).
 
-- [The Curious Tales](https://x.com/thecurioustales/status/2039360822200442914) — 2026-04-02: 'Drop everything and read this' - recommends a Dan-Koe-style life essay. Links Darshak Rana 'You Are Just 3 Decisions Away From a Completely Different Life.' Self-improvement, not AI/dev.
+- [The Curious Tales](https://x.com/thecurioustales/status/2039360822200442914) — 2026-04-02: A 'drop everything and read this' recommendation of Darshak Rana's life-design essay 'You Are Just 3 Decisions Away From a Completely Different Life.' Life-direction material in the Dan Koe register rather than engineering writing.
 
 - [hoeem](https://x.com/hooeem/status/2033146416428708168) — 2026-03-16: A low-substance reaction post ('hoeem style takeover kek') quoting another post that now comes from a suspended account; little usable content beyond the meta-commentary.
 
@@ -4254,7 +4246,7 @@
   Defines the 'harness' as the thing that turns a model into an agent, comprising exactly four parts: a system prompt, tools, an agentic loop, and a translation layer across models. Points to a new blog post by Earendil co-founder Colin Daymond (@colindaymond) on what a harness is and how to own yours rather than renting someone else's. Useful vocabulary anchor - the same 'harness' framing the continual-learning paper (post 2090533587066249514) builds on.
 
 - **2026-08-21** | [alexei](https://x.com/alexeixbt/status/2090407882508394889) | adjacent, questionable
-  Motivational thread on self-talk and neuroplasticity: repeated negative statements are framed as literally carving neural 'superhighways,' and the fix is holding a new signal with 'quiet certainty' until reality reorganizes around it. Mixes a real premise (repetition shapes habitual thought) with a pseudo-scientific 'quantum perspective' claim that focused attention turns possibility into experience. Tagged questionable for the mechanism claims, not the underlying mindset material.
+  Motivational thread on self-talk: repeated statements are framed as carving neural 'superhighways,' and the remedy is holding a new signal with 'quiet certainty' until reality reorganizes around it. The repetition-shapes-habit premise is real, but it is fused to a 'from a quantum perspective' claim that focused attention turns possibility into experience — that is manifestation language wearing physics vocabulary, and it's why the credibility tag is here. Kept for the mindset material, not the mechanism.
 
 - **2026-08-21** | [Elon Musk](https://x.com/elonmusk/status/2090393510956401073) | agent-design, industry
   Musk pitches Grok's bot mode as having its own remote computer via SpaceXAI, so the agent keeps executing after you close your laptop or reboot your desktop. Quote-tweets Avi Chawla's comparison of OpenClaw vs. Hermes vs. Grok bot, where all three give an agent a persistent job plus files and logins that survive between sessions, but OpenClaw and Hermes are self-hosted (laptop, VPS, or container) while Grok's is hosted. The persistent-execution-substrate distinction is the actual point.
@@ -4265,8 +4257,8 @@
 - **2026-08-21** | [James Zou](https://x.com/james_y_zou/status/2090094352307736801) | research, agent-design
   Zou announces 'Physics of Agents,' new work on what happens when many AI agents interact and influence each other at scale. The claim is that the collective dynamics of interacting agent populations follow compact, predictive laws borrowed from statistical physics, making emergent multi-agent behavior forecastable rather than purely empirical. No paper link in the post itself.
 
-- **2026-08-21** | [BasedBiohacker](https://x.com/basedbiohacker/status/2071982410082734111) | general, questionable
-  Nootropics thread arguing modafinil plus bromantane is a complementary stack because modafinil prolongs synaptic dopamine while bromantane upregulates tyrosine hydroxylase to increase dopamine production, claiming 12+ hours of focus with no tolerance or dependency. Entirely self-reported with no citations, and the safety claims (zero abuse risk, no depletion) are asserted rather than sourced; author appends 'not medical advice.' Part of the health/biohacking vein that currently has no taxonomy home.
+- **2026-08-21** | [BasedBiohacker](https://x.com/basedbiohacker/status/2071982410082734111) | biohacking, questionable
+  Nootropics thread arguing modafinil plus bromantane is a complementary pairing because modafinil prolongs synaptic dopamine while bromantane upregulates tyrosine hydroxylase to increase production, with the author claiming 12+ hours of focus and no tolerance or dependency. The mechanism sketch is the substantive part; the safety claims are asserted rather than sourced and the author appends 'not medical advice.' Modafinil is a prescription-only Schedule IV drug in the US and bromantane is not approved there at all, though both are regulated differently elsewhere.
 
 - **2026-08-14** | [Brian Roemmele](https://x.com/brianroemmele/status/2088069286850179288) | research, prompting
   Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity' (arxiv.org/pdf/2510.01171), a Stanford-involved paper arguing RLHF alignment induces mode collapse and typicality bias that flattens model creativity. Offers a training-free prompt-side fix to recover output diversity without retraining.
@@ -4713,8 +4705,8 @@
 - **2026-06-23** | [Matthew Berman](https://x.com/matthewberman/status/2069098257444434425) | agent-design, skills-mcp, dev-practices
   Matthew Berman announces a new Loop Library feature, Lazy Loops (aka Discover), which scans your codebase and chat threads to find potential agentic loops and designs them for you. Links the Forward-Future/loop-library GitHub repo of practical, repeatable AI-agent workflows.
 
-- **2026-06-23** | [Ethan](https://x.com/lambethethan/status/2068958764276051987) | agent-design, general
-  Ethan describes a personal wiki of ~1,000 supplements built from 150k papers and 200k health-influencer mentions, and floats handing the entire dataset to an AI agent next.
+- **2026-06-23** | [Ethan](https://x.com/lambethethan/status/2068958764276051987) | biohacking, agent-design
+  Ethan describes a personal wiki of roughly 1,000 supplements assembled from 150k papers and 200k health-influencer mentions, and offers to hand the whole dataset to an agent. Sits on the seam between the biohacking material and the corpus's agent work — the interesting part is the pipeline (large-scale literature plus influencer-claim extraction into a queryable store), which is the same shape as a research-corpus problem regardless of the subject matter.
 
 - **2026-06-23** | [冬天](https://x.com/seventhoce56019/status/2068901168940745088) | skills-mcp, agent-design, research
   Translated from Chinese: a writeup of reverse-skill (GitHub zhaoxuya520/reverse-skill), an AI skill package that puts reverse-engineering and security tasks behind a routing.md file so the agent self-triages across 20+ sub-skills (APK reversing, IDA static analysis, JS frontend reversing, firmware security, EDR evasion, vulnerability exploitation). Framed as lowering the barrier to security offense/defense.
@@ -4758,8 +4750,8 @@
 - **2026-06-15** | [Shenyang Deng](https://x.com/dengshenyang24/status/2065853130567279073) | general
   [Post unavailable - page doesn't exist]
 
-- **2026-06-14** | [Lorwen Harris Nagle, PhD](https://x.com/lorwen108/status/2065852553208992218) | questionable, general
-  Off-topic motivational thread on Elon Musk, Nietzsche, and overcoming teenage depression/anxiety through imagination rather than analysis — pop-psychology engagement content with no AI or technical substance.
+- **2026-06-14** | [Lorwen Harris Nagle, PhD](https://x.com/lorwen108/status/2065852553208992218) | general, questionable
+  Motivational thread linking Elon Musk and Nietzsche to overcoming teenage depression and anxiety through imagination rather than analysis. Pop-psychology framing with no sourcing behind the psychological claims.
 
 - **2026-06-14** | [Harry Tandy](https://x.com/harrytandy/status/2065818850633932996) | agent-design, dev-practices, claude-code
   Opens with a Sam Altman quote that the cost to use a given level of AI falls ~10x every 12 months, then lays out a 10-step agentic-coding sprint: pick the heaviest backlog item, write a FABLE_RUN.md spec (goal/scope/commands/review rules/done criteria), map the repo first, break the job into checkpoints that each end with diff + test output + next decision, split builder and checker agents, use git worktrees for parallel attempts, and keep a RUN_LOG.md of every failed command and accepted fix.
@@ -4800,8 +4792,8 @@
 - **2026-06-09** | [hoeem](https://x.com/hooeem/status/2064099329342640285) | skills-mcp, prompting
   hoeem hypes Matt Pocock's new /teach skill — pours 10 years of teaching experience into a Claude skill that teaches you anything (Pocock's demo: it taught him to solve a Rubik's cube). Worth a look as a reusable Claude Code skill pattern.
 
-- **2026-06-09** | [Jeff Tang](https://x.com/jefftangx/status/2064052420888363090) | general, questionable
-  Off-topic for the AI links collection — points to a 57-page Reddit-sourced Google Doc summarizing peptide human trials (BPC-157 et al). Health/biohacking, not AI/agents. Engagement-style 'Bookmark this' framing. Probably an accidental email-to-self.
+- **2026-06-09** | [Jeff Tang](https://x.com/jefftangx/status/2064052420888363090) | biohacking, questionable
+  Points to a 57-page community-compiled Google Doc summarizing the human-trial literature on peptides including BPC-157. Value is as an index into primary trials rather than as a source itself — it is a Reddit-sourced compilation, so the selection and reading of those trials is unvetted, and BPC-157 in particular is not an approved drug in the US. Framed with a 'Bookmark this' engagement hook.
 
 - **2026-06-09** | [BOOTOSHI](https://x.com/kingbootoshi/status/2063999432077795579) | claude-code, agent-design, prompting
   Long personal write-up: BOOTOSHI claims the agent-orchestrating-subagents pattern (token-maxxing across parallel work) was right for opus-4.5/gpt-5 but is no longer optimal with the newer generation (gpt-5.5, opus-4.8). Argues the extended context window + intelligence means these models are now more capable as a single 'MEGA THREAD' with a single operator. Counter-trend to the multi-agent enthusiasm of early 2026.
@@ -4830,14 +4822,14 @@
 - **2026-06-07** | [Viv](https://x.com/vtrivedy10/status/2063429138304668093) | agent-design, prompting, research
   A default recipe for optimizing Agent = Model + Harness, 'training' both: (1) build v1 on a sensible base harness with task-specific prompting/tools, (2) harness-engineer against prod-like eval tasks (often enough on its own), (3) SFT on mined traces or synthetic data (good for distilling a cheaper model), (4) RL if you can design environments/rewards to push past SFT copying, (5) light harness engineering again on the trained model. Argues harness engineering will be the dominant optimization lever and most companies are still at steps 1-2; links the 'Anatomy of an Agent Harness' article.
 
-- **2026-06-07** | [Elon Musk](https://x.com/elonmusk/status/2063401522327666828) | management, general, adjacent
-  Elon Musk endorses first-principles 'physics thinking in the limit' — the 'Magic Wand Number' and 'Idiot Index' as universal cost-engineering mental models. Not AI/dev, but a useful thinking frame.
+- **2026-06-07** | [Elon Musk](https://x.com/elonmusk/status/2063401522327666828) | adjacent, general, management
+  Musk endorses first-principles 'physics thinking in the limit,' with the 'Magic Wand Number' (what the theoretical floor would be if physics were the only constraint) and the 'Idiot Index' (a part's cost divided by its raw-material cost) as general cost-engineering mental models.
 
 - **2026-06-07** | [Hanako](https://x.com/hanakoxbt/status/2063305395687522702) | agent-design, claude-code
   Describes an Anthropic 'dreaming agents' memory pattern: a second set of agents that, after you log off, reopen every session, fact-check the first agents, merge duplicates and burn stale memory — up to 100 at once, ~95% cached so a full rewrite costs almost nothing. Points to a multi-agent code/review/deploy team guide.
 
-- **2026-06-07** | [Ihtesham Ali](https://x.com/ihtesham2005/status/2063297401344147719) | general, adjacent
-  A well-written essay on The Art of Problem Solving (AoPS): problem-solving is a transferable skill, not memorized formulas; teach the difference between a formula (what to compute) and a method (how to see), and treat confusion as where learning starts. Education/thinking, not AI/dev.
+- **2026-06-07** | [Ihtesham Ali](https://x.com/ihtesham2005/status/2063297401344147719) | adjacent, general
+  Essay on The Art of Problem Solving (AoPS): problem-solving is a transferable skill rather than a set of memorized formulas, the difference between a formula (what to compute) and a method (how to see) is the thing worth teaching, and confusion is where the learning starts rather than a sign of failure.
 
 - **2026-06-07** | [Sprytix](https://x.com/sprytixl/status/2063234969510588640) | questionable, agent-design
   Engagement-farmed hype ('170 AI agents make every company decision') pushing a listicle on running 170–300 parallel agents with Kimi K2.6. Clickbait framing, but the underlying topic — massed parallel agents for research/ops — is real.
@@ -4873,7 +4865,7 @@
   Garry Tan on model routing as strategy: frontier labs will want their harness to be the moat, but the consumer-best outcome is model capabilities flattening and commoditizing — 'a preview of the AI Harness Wars of 2027.' Cites Factory's auto model-router (claimed 25% cost cut at frontier performance).
 
 - **2026-06-03** | [Livsun](https://x.com/l1vsun/status/2061876167687201243) | questionable
-  Off-topic trading engagement-farm: a neural net trained on years of tick data supposedly calling setups hours before the open (71% win rate, built for <$500), promoting a 'win every trade' listicle. Not AI/dev material.
+  Claims a neural net trained on years of tick data calls setups hours before the open at a 71% win rate, built for under $500, promoting a 'win every trade' listicle. No methodology, holdout or drawdown figures are given, and the win-rate framing omits position sizing entirely.
 
 - **2026-06-03** | [Tom Dörr](https://x.com/tom_doerr/status/2061674811122713013) | skills-mcp, dev-practices, agent-design
   Shares FlowForge, a Skill that generates professional draw.io diagrams from natural language (github.com/wentong2022-arch/flowforge-skill).
@@ -4923,7 +4915,7 @@
   LiteParse v2: LlamaIndex's PDF parser rewritten in Rust with native Python/Node (and WASM) packages — claimed fastest and most accurate open-source model-free parser, up to 100x faster, 50+ document types, installable inside an AI agent.
 
 - **2026-05-28** | [Livsun](https://x.com/l1vsun/status/2059707097583906917) | questionable
-  Off-topic trading content dressed as a discovery: pitches Markov-chain state machines (trending/ranging/reversing transition matrix + Kelly sizing) with a Renaissance Technologies '66% annual returns' framing, promoting a quant listicle. Engagement-farmed, not AI/dev material.
+  Pitches Markov-chain state machines for markets — a trending/ranging/reversing transition matrix with Kelly sizing — framed around Renaissance Technologies' '66% annual returns' and promoting a quant listicle. The state-machine framing is a legitimate modeling idea; the returns framing and listicle funnel are not evidence for it.
 
 - **2026-05-28** | [John Yeo](https://x.com/johnyeo_/status/2059688796728267261) | agent-design, dev-practices
   Describes an in-house agent that automatically queries logs and investigates support tickets — with billing state/history making each case stateful. Links a build writeup.
@@ -4970,8 +4962,8 @@
 - **2026-05-25** | [darkzodchi](https://x.com/zodchiii/status/2058928613987160287) | claude-code, agent-design
   Boris Cherny (Claude Code): 'every night I have a few thousand agents running,' monitored from his phone. Links a piece arguing the next wave is a team of agents in a real chat app where they @mention each other, delegate, and remember — versus one sandboxed, memoryless ChatGPT tab.
 
-- **2026-05-25** | [Atenov int.](https://x.com/atenov_d/status/2058868770257416239) | industry, dev-practices, questionable, solo-operator
-  Highlights MoneyPrinterTurbo (13k+ stars): give a topic/keyword and it generates a script (via any LLM), pulls copyright-free footage, and adds subtitles/music/voiceover to output a finished short video; runs locally with Web UI/API/Docker/Colab. (Author's other posts are off-topic trading/politics.)
+- **2026-05-25** | [Atenov int.](https://x.com/atenov_d/status/2058868770257416239) | dev-practices, industry, questionable, solo-operator
+  Highlights MoneyPrinterTurbo (13k+ stars): give it a topic or keyword and it generates a script via any LLM, pulls copyright-free footage, and adds subtitles, music and voiceover to produce a finished short video. Runs locally with a Web UI, API, Docker and Colab paths.
 
 - **2026-05-25** | [Hasan Toor](https://x.com/hasantoxr/status/2058863173462352313) | agent-design, dev-practices
   Engagement-framed tool share: an open-source engine claiming to replace agent harness, queues, sandboxing and APIs with three primitives (TypeScript/Python/Rust, Docker-ready, 15k+ stars).
@@ -5204,8 +5196,8 @@
 - **2026-05-14** | [송준 Jun Song](https://x.com/jun_song/status/2054379887608402199) | industry, questionable, research
   Hype-y local-LLM claim that a 128GB Mac will soon run an 'uncensored Opus-4.6' locally (a cracked Minimax variant), with the community fitting models into 24GB VRAM.
 
-- **2026-05-14** | [Joe Hudson](https://x.com/fu_joehudson/status/2054264609683689941) | management, general, adjacent
-  Executive-coaching content on moving from 'dirty fuel' (motivation from fear/pressure) to 'clean fuel' (joy/curiosity), summarized on one page. Not AI/dev.
+- **2026-05-14** | [Joe Hudson](https://x.com/fu_joehudson/status/2054264609683689941) | adjacent, general, management
+  Executive-coaching material on shifting from 'dirty fuel' (motivation sourced from fear and pressure) to 'clean fuel' (joy and curiosity), condensed to a single page.
 
 - **2026-05-14** | [George from prodmgmt.world](https://x.com/nurijanian/status/2054244221352325359) | skills-mcp, dev-practices, prompting
   'adversarial PRD reviews slap' - links an article on using AI for adversarial requirements review, since the flaws that ship are the ones you can't see from inside your own PRD.
@@ -5216,8 +5208,8 @@
 - **2026-05-14** | [Khairallah AL-Awady](https://x.com/eng_khairallah1/status/2054211760631185485) | claude-code, questionable
   Engagement-framed promo of a 30-min Boris Cherny session on using Claude Code, claiming most daily users miss 40+ features; links a 'Claude as full-time AI employee in 7 days' course.
 
-- **2026-05-14** | [Jaynit](https://x.com/jaynitx/status/2054200520575967698) | general, management, prompting, adjacent
-  A long essay on pattern recognition as the basis of expertise (de Groot's chess studies, chunking, Klein's recognition-primed decisions, Buffett reading annual reports), how tight feedback loops build it fast, and how to avoid false patterns. General/thinking, not AI/dev.
+- **2026-05-14** | [Jaynit](https://x.com/jaynitx/status/2054200520575967698) | adjacent, general, management, prompting
+  Long essay on pattern recognition as the substrate of expertise — de Groot's chess studies and chunking, Klein's recognition-primed decision model, Buffett reading annual reports — on how tight feedback loops build it quickly, and on how to avoid locking in false patterns.
 
 - **2026-05-14** | [Geek Lite](https://x.com/qingq77/status/2054056472477307084) | skills-mcp, agent-design, dev-practices
   Oh My Hermes - an opinionated workflow layer that installs an 'operating system' on Hermes: 20 skills across the full app lifecycle and 5 agents (CTO/PM/Dev/QA/Ops) collaborating on a kanban board, with Claude Code/Codex as optional deep-coding accelerators.
@@ -5268,7 +5260,7 @@
   10 things senior AI engineers stopped wasting tokens on (auto-loading files, running Opus on trivial tasks, retry loops re-sending the repo, Sonnet-by-default, streaming on stable prefixes, 'just in case' includes, per-session knowledge rebuilding, single premium tier, one-at-a-time questions, redundant subscriptions) - what compounds is context discipline, prompt caching, and multi-model routing. Links 'Cut Your AI Coding Bill by 80%.'
 
 - **2026-05-12** | [Roan](https://x.com/rohonchain/status/2054245904258142593) | questionable
-  Promotes a Stanford Markov Decision Processes lecture and a 'win every trade' Markov-chains quant listicle. Off-topic trading engagement-farm.
+  Promotes a Stanford lecture on Markov Decision Processes alongside a 'win every trade' Markov-chains quant listicle. The lecture is real coursework; the trading listicle wrapped around it is the engagement-farmed part.
 
 - **2026-05-12** | [Rahul](https://x.com/sairahul1/status/2054171777119801764) | agent-design, claude-code, management
   'If you're building AI agents and haven't watched this Anthropic talk, you're behind' - a 22-min talk on tool orchestration, memory, observability, long-running agents, and production infra; links a 2026 'AI Agent Engineer roadmap.'
@@ -5312,8 +5304,8 @@
 - **2026-05-08** | [Tom Dörr](https://x.com/tom_doerr/status/2052440598452359394) | claude-code, agent-design, skills-mcp
   Tom Dörr surfaces 'agentmemory' (github.com/rohitg00/agentmemory) — a knowledge-graph memory layer for Claude Code. Pair with the other agent-memory tools in the corpus (HelixDB, turbovec, mem0).
 
-- **2026-05-08** | [Mgoes](https://x.com/m_goes_distance/status/2052433497575293307) | industry
-  Biotech-progress digest for 2026 — Japan endorsing iPS cell therapies for heart failure / Parkinson's, Altos Labs' Atlas of Rejuvenation, rapalink-1 as longevity drug, Retro Biosciences dosing brain-cleanup pill, peptides moving from banned to federal policy, psychedelics executive order, GLP-1s at 12.4% adult adoption. Off-topic for the AI links collection but Jeremy emailed it, so capturing it honestly.
+- **2026-05-08** | [Mgoes](https://x.com/m_goes_distance/status/2052433497575293307) | biohacking, industry
+  Biotech-progress digest for 2026: Japan endorsing iPS cell therapies for heart failure and Parkinson's, Altos Labs' Atlas of Rejuvenation, rapalink-1 as a longevity drug, Retro Biosciences dosing a brain-cleanup pill, peptides moving from banned toward federal policy, a psychedelics executive order, and GLP-1s at 12.4% adult adoption. A useful once-a-year survey of where the longevity and biotech field actually moved.
 
 - **2026-05-08** | [Goodfire](https://x.com/goodfireai/status/2052420446910644616) | research
   Goodfire (interpretability research lab) kicks off a series of blog posts on 'neural geometry' — the framing that networks 'speak English but think in shapes,' and that understanding their geometric structure is key to debugging and controlling them. 3.1M views — interpretability research breaking out of the lab into general attention.
@@ -5399,8 +5391,8 @@
 - **2026-05-02** | [Xiangyi Li](https://x.com/xdotli/status/2049903693143609627) | agent-design, research
   Short endorsement — 'must read for everyone who wants to reduce the entropy of their agentic systems' — pointing at evals/environments work (benchflow_ai). Framing: disciplined evals as the way to tame nondeterminism in agent systems.
 
-- **2026-05-02** | [BasedBiohacker](https://x.com/basedbiohacker/status/2049235599874200049) | general, questionable
-  Nootropics/cognitive-enhancement resource (vendors, dosages, EU source, consulting). Off-topic supplements, not AI/dev.
+- **2026-05-02** | [BasedBiohacker](https://x.com/basedbiohacker/status/2049235599874200049) | biohacking, questionable
+  Pointer to the author's own cognitive-enhancement reference covering vendors and dosages for a range of nootropic compounds, attached to a paid one-on-one consulting offer for personalized compound selection. Useful mainly as a map of what this corner of the space sells and how it's packaged — it is a commercial funnel, not an evidence review, and no trials or sourcing are cited. Several of the compound categories referenced are prescription-only or legally grey in the US.
 
 - **2026-05-01** | [Akshay](https://x.com/akshay_pachaar/status/2050201509821063576) | skills-mcp, agent-design, dev-practices
   'How to write Skills that never fail.' Skills use progressive disclosure (metadata always loaded, body on trigger, resources on demand) so the description does 90% of the work. Six practices: pushy directive descriptions (100% vs 37% activation), explicit exclusion clauses, keep SKILL.md under 200 lines, pair every generation skill with a verifier, iterate on the right layer (description vs body vs scripts), and build a regression fixture per skill. 'Maturation is removing something, not adding it.'
@@ -5428,8 +5420,8 @@
 - **2026-04-30** | [Akshay](https://x.com/akshay_pachaar/status/2049476617144287719) | agent-design, skills-mcp, dev-practices
   Rebuilt most of OpenClaw's core as a single open-source Sim workflow ('SimClaw') - 25 blocks, 29 connections, short + long-term memory, multi-channel (Telegram + Slack), self-hostable with local models, built from a single prompt. Framed as 'an OS for your AI workforce.'
 
-- **2026-04-30** | [Darshak Rana](https://x.com/thedarshakrana/status/2049151671692136778) | general, management, adjacent
-  A long self-improvement essay ('Your Next 5 Years Will Be an Exact Copy of Your Last 5') on the marshmallow test as environment design over willpower, the 'end of history illusion,' affective-forecasting error, basal-ganglia habit chunking, and chronos vs kairos time. Not AI/dev.
+- **2026-04-30** | [Darshak Rana](https://x.com/thedarshakrana/status/2049151671692136778) | adjacent, general, management
+  Long essay ('Your Next 5 Years Will Be an Exact Copy of Your Last 5') arguing environment design beats willpower, drawing on the marshmallow test, the 'end of history illusion,' affective-forecasting error, basal-ganglia habit chunking, and chronos vs kairos time.
 
 - **2026-04-28** | [Aparna Dhinakaran](https://x.com/aparnadhinak/status/2047849364547420382) | agent-design, dev-practices
   Aparna Dhinakaran (Arize) on harnesses converging on similar context-passing problems — letting the agent decide context dynamically. Quote-tweets Aran Komatsuzaki on Anthropic's forked subagents (introduced Apr 23, 2026): forked subagents can inherit the same context as the main agent, useful when richer context matters more than minimal context. Direct relevant to the bossman-supervisor concept.
@@ -5453,7 +5445,7 @@
   Engagement-framed ('BREAKING') summary of 'Agent Behavioral Contracts' paper — applies Design-by-Contract (preconditions, invariants, governance rules, recovery mechanisms) as runtime constraints on AI agents instead of prompt-only control. Tested across 1,980 sessions. Real concept (formal verification meets agent runtime) worth tracking under the agents-as-judges concept thread.
 
 - **2026-04-23** | [StacyOnChain](https://x.com/stacyonchain/status/2047278412922831260) | industry, questionable
-  Off-topic for AI links — promotional content for centpro.bot (Polymarket trading framework supposedly extracted from 327 real tests). ALL-CAPS engagement framing, crypto-twitter signal. Capturing for completeness but not useful as AI/agents reference.
+  Promotional post for centpro.bot, a Polymarket trading framework the author says was extracted from 327 real tests. ALL-CAPS crypto-Twitter framing with little verifiable detail behind the claim.
 
 - **2026-04-23** | [Tom Dörr](https://x.com/tom_doerr/status/2047258779821949384) | research, agent-design
   Tom Dörr points to CORAL (github.com/Human-Agent-Society/CORAL) — infrastructure for multi-agent self-evolution. Worth a look as a research substrate for agents-that-improve-themselves work.
@@ -5524,8 +5516,8 @@
 - **2026-04-21** | [Raymond Weitekamp](https://x.com/raw_works/status/2046240194999755153) | agent-design, prompting, research
   Long-form X article 'RLMs are the new reasoning models': Recursive Language Models let a root model treat its own prompt as an environment it inspects/slices/recursively subqueries via a REPL, collapsing reasoning and tool use into one inference abstraction and processing inputs orders of magnitude beyond the context window. Traces the reasoning-vs-tool-use history (CoT, ReAct, Toolformer, o1) and the Oolong/LongMemEval/LongCoT benchmark arc where RLM scaffolds post leading numbers — including small models (Qwen3-8B/27B) jumping well past their base, hinting the frontier stops being GPU-rich-only. Flags cost/time and 'models are bad at acting recursively' as open limits.
 
-- **2026-04-21** | [Ihtesham Ali](https://x.com/ihtesham2005/status/2046197374855582157) | general, management, adjacent
-  Essay on George Polya's 'How to Solve It' (1945): understand the problem (restate it in your own words - the real filter), make a plan (solve a simpler related problem first for a foothold), carry it out, and 'look back' (verify by another method, reuse it - build a transferable library of methods). Diagnosis: people conflate reading with understanding, method with starting, and answer with learning. Not AI/dev.
+- **2026-04-21** | [Ihtesham Ali](https://x.com/ihtesham2005/status/2046197374855582157) | adjacent, general, management
+  Essay on George Polya's 'How to Solve It' (1945): understand the problem (restating it in your own words is the real filter), make a plan (solve a simpler related problem first for a foothold), carry it out, then 'look back' — verify by another method and reuse it, building a transferable library of methods. Diagnosis: people conflate reading with understanding, method with starting, and the answer with the learning.
 
 - **2026-04-21** | [Vox](https://x.com/voxyz_ai/status/2045899539526148193) | claude-code, dev-practices, prompting
   GitHub's #1 trending repo this week is a CLAUDE.md file (44,465 new stars) distilling Karpathy's LLM coding pitfalls into 4 principles: think before coding, simplicity first, surgical edits, goal-driven execution.
@@ -5617,11 +5609,11 @@
 - **2026-04-15** | [kwindla](https://x.com/kwindla/status/2044106314612408437) | agent-design, research, dev-practices
   kwindla introduces Gradient Bang, claimed to be the first massively-multiplayer, fully LLM-driven game: a retro space-trading game (Factorio-like) where you cajole a ship AI into tasking other AIs. Built to explore sub-agent orchestration, partial context sharing across inference loops, long contexts and episodic memory, LLM-generated dynamic UIs, and voice input. Built on pipecat_ai plus Supabase and Vercel, fully open source.
 
-- **2026-04-15** | [Punisher](https://x.com/0x_punisher/status/2044100729133019416) | questionable, general
-  [Promotional / paid partnership] A guide to a Polymarket sweeper bot that profits not by prediction but by FIFO-queueing bids near $0.999 on already-decided markets to absorb mispriced liquidity, covering resolution detection, latency, and capital allocation. Ends with wallet/PnL claims and a Telegram funnel. Off-topic crypto money-making content rather than AI tooling.
+- **2026-04-15** | [Punisher](https://x.com/0x_punisher/status/2044100729133019416) | general, questionable
+  Describes a Polymarket 'sweeper' bot that profits from queue mechanics rather than prediction: FIFO-queueing bids near $0.999 on already-decided markets to absorb mispriced liquidity, covering resolution detection, latency and capital allocation. Closes with wallet/PnL screenshots and a Telegram funnel, and is disclosed as a paid partnership.
 
-- **2026-04-15** | [StacyOnChain](https://x.com/stacyonchain/status/2044069002192847200) | questionable, general
-  [Engagement-farming / crypto promo] StacyOnChain hypes an institutional-grade Polymarket bot architecture (fractional Kelly sizing, latency optimizations), urging readers to bookmark and download before it is pulled, and quote-tweets their own how-we-built-a-Polymarket-bot article. Off-topic relative to the AI tooling collection.
+- **2026-04-15** | [StacyOnChain](https://x.com/stacyonchain/status/2044069002192847200) | general, questionable
+  Walks through an institutional-grade Polymarket bot architecture — fractional Kelly position sizing, latency optimizations — and quote-tweets the author's own build writeup. Packaged with bookmark-and-download-before-it's-pulled scarcity framing, which is what the credibility tag is for.
 
 - **2026-04-15** | [Garry Tan](https://x.com/garrytan/status/2044059516497711522) | management, industry, adjacent
   Garry Tan amplifies Alfred Lin's article 'Heat Seeking Missile for Pain': the realest founders actively hunt the hairiest, gnarliest problems and surgically destroy them, citing an interview with Keller of Zipline.
@@ -5729,7 +5721,7 @@
   SoulForge: '1.8x faster, 2.1x cheaper, same model' by building a live importance-ranked graph of your codebase; real LSP via embedded Neovim (go-to-def, references, call hierarchy, type info), surgical reads, multi-edits, multi-tab cross-tab coordination via a real-time bus, per-tab/per-agent model routing. 30+ languages, 20+ providers, $0 compaction. Proof: same Opus 4.6 bug fix 6m22s vs 11m18s, $1.70 vs $3.52.
 
 - **2026-04-10** | [Recogard](https://x.com/recogard/status/2042356576032358505) | questionable, research
-  36GB free dataset of 72M+ Polymarket trades on GitHub plus a backtesting simulator: analyze historical prediction-market behavior, define a strategy, and backtest it across all past markets for accuracy/PnL/risk. Off-topic (prediction-market trading), not AI/dev core.
+  A free 36GB dataset of 72M+ Polymarket trades on GitHub, paired with a backtesting simulator that lets you define a strategy and replay it across all historical markets for accuracy, PnL and risk. Substantial public dataset and eval harness, whatever you think of the domain.
 
 - **2026-04-10** | [Aakash Gupta](https://x.com/aakashgupta/status/2042334495664455848) | claude-code, agent-design, dev-practices
   The 'advisor pattern' for agent cost: 90% of turns are routine, so run Sonnet every turn and fire a tool call to Opus only at genuine decision points; Opus reads the full shared context and returns strategic advice, Sonnet continues. Shared context avoids fragmentation. Claude Code ran it for months - same quality, 60-80% lower cost - now a Claude Platform API primitive (Opus advisor + Sonnet/Haiku executor).
@@ -5767,8 +5759,8 @@
 - **2026-04-08** | [Ashpreet Bedi](https://x.com/ashpreetbedi/status/2041568919085854847) | agent-design, dev-practices, research
   'Systems Engineering: Building Agentic Software That Works.' Lesson from 1940s Bell Labs: you can't optimize a system by optimizing components. Agentic software spans five layers - agent engineering (model/tools/context/observability), data engineering (schemas/DBs/pipelines), security engineering (auth/RBAC/isolation - 'read-only is a tool config, not a prompt'), interface engineering (REST/Slack/MCP/CLI with consistent auth), infrastructure engineering (95% same as any service; the 5%: longer timeouts, streaming, scheduled tasks). Critiques the harness fad as local optimization; demonstrated with Dash (agno-agi/dash), an open-source self-learning data agent.
 
-- **2026-04-08** | [cvxv666](https://x.com/antpalkin/status/2041517093670052193) | questionable, dev-practices
-  Engagement-farm story of failing 10x to build a Polymarket arbitrage bot then finding a 'Part 2' guide diagnosing 10 mistakes; 'the strategy was never the problem, I was the bug.' Links AdiiX 'Why your Claude bot doesn't work.' Off-topic trading-bot content.
+- **2026-04-08** | [cvxv666](https://x.com/antpalkin/status/2041517093670052193) | dev-practices, questionable
+  First-person account of failing ten times to build a Polymarket arbitrage bot, then finding a 'Part 2' guide diagnosing ten specific mistakes — landing on 'the strategy was never the problem, I was the bug.' Links AdiiX's 'Why your Claude bot doesn't work.' The debugging-your-own-assumptions lesson generalizes past the trading context; the confessional framing is engagement-shaped.
 
 - **2026-04-08** | [Ksenia Se](https://x.com/theturingpost/status/2041455210342871094) | management, industry
   'The Unsexy Truth of AI Adoption' (with @wschenk): SF creates the illusion the whole world moves at AI speed; most companies are far earlier. AI adoption is a stack of dependencies - can't jump to agents if workflows aren't legible, can't act on untrusted data, can't automate undefined decisions. It's organizational redesign: make the org legible to itself, data trustworthy, let systems act and reshape roles, close the loop so systems learn.
@@ -5797,8 +5789,8 @@
 - **2026-04-02** | [Dmitriy Kovalenko](https://x.com/neogoose_btw/status/2039508756988620801) | dev-practices, agent-design
   Built fast, accurate, index-free code search - demonstrated on leaked Claude Code sources, Linux kernel (100k files), and Chromium (500k files). A foundational code-search primitive for agents.
 
-- **2026-04-02** | [The Curious Tales](https://x.com/thecurioustales/status/2039360822200442914) | general, adjacent
-  'Drop everything and read this' - recommends a Dan-Koe-style life essay. Links Darshak Rana 'You Are Just 3 Decisions Away From a Completely Different Life.' Self-improvement, not AI/dev.
+- **2026-04-02** | [The Curious Tales](https://x.com/thecurioustales/status/2039360822200442914) | adjacent, general
+  A 'drop everything and read this' recommendation of Darshak Rana's life-design essay 'You Are Just 3 Decisions Away From a Completely Different Life.' Life-direction material in the Dan Koe register rather than engineering writing.
 
 - **2026-04-02** | [Adam](https://x.com/_overment/status/2039061635776618554) | agent-design, dev-practices
   'The best architecture I've found for my personal system' - based on a dynamic dependency graph plus a heartbeat involving the LLM, code, and events.

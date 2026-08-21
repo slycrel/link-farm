@@ -467,7 +467,7 @@
     "handle": "@alexeixbt",
     "subject": "Post by alexei on X",
     "url": "https://x.com/alexeixbt/status/2090407882508394889",
-    "summary": "Motivational thread on self-talk and neuroplasticity: repeated negative statements are framed as literally carving neural 'superhighways,' and the fix is holding a new signal with 'quiet certainty' until reality reorganizes around it. Mixes a real premise (repetition shapes habitual thought) with a pseudo-scientific 'quantum perspective' claim that focused attention turns possibility into experience. Tagged questionable for the mechanism claims, not the underlying mindset material.",
+    "summary": "Motivational thread on self-talk: repeated statements are framed as carving neural 'superhighways,' and the remedy is holding a new signal with 'quiet certainty' until reality reorganizes around it. The repetition-shapes-habit premise is real, but it is fused to a 'from a quantum perspective' claim that focused attention turns possibility into experience — that is manifestation language wearing physics vocabulary, and it's why the credibility tag is here. Kept for the mindset material, not the mechanism.",
     "topics": [
       "adjacent",
       "questionable"
@@ -477,13 +477,13 @@
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "2M",
     "notes": "",
     "enriched": true,
     "content": "that's neuron.\nit doesn't know fear.\nit doesn't know lack.\nit just repeats what you tell it.\n\nyou tell it \"i'm not enough\" 500 times. the neuron fires. then fires again. then builds a superhighway for that belief.\n\nyou tell it \"nothing ever works for me\" every morning. the neuron doesn't argue. it just memorizes.\n\nyou tell it \"i can't change\" long enough, the neuron believes you. and then your reality matches.\n\nthat's neuroplasticity.\n\nfrom a quantum perspective, your focused attention is what turns possibility into experience. the neuron is the bridge, but the bridge only appears when you choose a direction.\n\nthe good news? the same neuron doesn't know truth from a lie. it just repeats. so you can overwrite the lie with a new signal. when you hold that new signal with quiet certainty, reality reorganizes around it, without you forcing it.\n\nwhat most people get wrong: they try to \"think positive\" once. then wonder why nothing changes. one weak signal doesn't build a highway.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 2
+    "enrichment_attempts": 3
   },
   {
     "date": "2026-08-21",
@@ -566,9 +566,9 @@
     "handle": "@BasedBiohacker",
     "subject": "Post by BasedBiohacker on X",
     "url": "https://x.com/basedbiohacker/status/2071982410082734111",
-    "summary": "Nootropics thread arguing modafinil plus bromantane is a complementary stack because modafinil prolongs synaptic dopamine while bromantane upregulates tyrosine hydroxylase to increase dopamine production, claiming 12+ hours of focus with no tolerance or dependency. Entirely self-reported with no citations, and the safety claims (zero abuse risk, no depletion) are asserted rather than sourced; author appends 'not medical advice.' Part of the health/biohacking vein that currently has no taxonomy home.",
+    "summary": "Nootropics thread arguing modafinil plus bromantane is a complementary pairing because modafinil prolongs synaptic dopamine while bromantane upregulates tyrosine hydroxylase to increase production, with the author claiming 12+ hours of focus and no tolerance or dependency. The mechanism sketch is the substantive part; the safety claims are asserted rather than sourced and the author appends 'not medical advice.' Modafinil is a prescription-only Schedule IV drug in the US and bromantane is not approved there at all, though both are regulated differently elsewhere.",
     "topics": [
-      "general",
+      "biohacking",
       "questionable"
     ],
     "audience": [
@@ -582,7 +582,7 @@
     "content": "the reason modafinil + bromantane is the golden duo is because modafinil keeps dopamine in the synapse longer and bromantane increases your brain's ability to PRODUCE dopamine by upregulating tyrosine hydroxylase (and some reuptake inhibition)\n\nyou're optimizing supply AND retention simultaneously with virtually zero tolerance buildup\n\nand no dependency or risk of abuse either because we're not depleting reserves or flooding our brains with dopamine. no euphoria. just smooth but unstoppable performance. 12+ hours of deep focus feels as intuitive as riding a bike.\n\nmoda + broma allows acute enhancement AND long-term cognition in focus.\n\nand it's not just hitting the dopamine pathway, it's working in your favour through histamine and orexin, too.\n\nnot medical advice. few.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 2
+    "enrichment_attempts": 3
   },
   {
     "date": "2026-08-14",
@@ -4385,15 +4385,16 @@
     "handle": "@LambethEthan",
     "subject": "Post by Ethan on X",
     "url": "https://x.com/lambethethan/status/2068958764276051987",
-    "summary": "Ethan describes a personal wiki of ~1,000 supplements built from 150k papers and 200k health-influencer mentions, and floats handing the entire dataset to an AI agent next.",
+    "summary": "Ethan describes a personal wiki of roughly 1,000 supplements assembled from 150k papers and 200k health-influencer mentions, and offers to hand the whole dataset to an agent. Sits on the seam between the biohacking material and the corpus's agent work — the interesting part is the pipeline (large-scale literature plus influencer-claim extraction into a queryable store), which is the same shape as a research-corpus problem regardless of the subject matter.",
     "topics": [
-      "agent-design",
-      "general"
+      "biohacking",
+      "agent-design"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
-    "priority": "long-term",
+    "priority": "near-term",
     "sourceType": "tweet",
     "views": "30.8K",
     "notes": "",
@@ -4401,7 +4402,7 @@
     "content": "I have a wiki of ~1000 supplements, 150k papers and 200k health influencer mentions. I want to give all my data to your agent next.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 2
+    "enrichment_attempts": 3
   },
   {
     "date": "2026-06-23",
@@ -4769,10 +4770,10 @@
     "handle": "@lorwen108",
     "subject": "Post by Lorwen Harris Nagle, PhD on X",
     "url": "https://x.com/lorwen108/status/2065852553208992218",
-    "summary": "Off-topic motivational thread on Elon Musk, Nietzsche, and overcoming teenage depression/anxiety through imagination rather than analysis — pop-psychology engagement content with no AI or technical substance.",
+    "summary": "Motivational thread linking Elon Musk and Nietzsche to overcoming teenage depression and anxiety through imagination rather than analysis. Pop-psychology framing with no sourcing behind the psychological claims.",
     "topics": [
-      "questionable",
-      "general"
+      "general",
+      "questionable"
     ],
     "audience": [
       "me"
@@ -4785,7 +4786,7 @@
     "content": "Lorwen Harris Nagle, PhD @LORWEN108: Elon Musk fell into depression as a teenager; Nietzsche made it worse. Then imagination did what analysis couldn't. Here are Musk's secrets that will change how you see anxiety forever. 1. You need a world bigger than your pain.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-06-14",
@@ -5135,9 +5136,9 @@
     "handle": "@jefftangx",
     "subject": "Post by Jeff Tang on X",
     "url": "https://x.com/jefftangx/status/2064052420888363090",
-    "summary": "Off-topic for the AI links collection — points to a 57-page Reddit-sourced Google Doc summarizing peptide human trials (BPC-157 et al). Health/biohacking, not AI/agents. Engagement-style 'Bookmark this' framing. Probably an accidental email-to-self.",
+    "summary": "Points to a 57-page community-compiled Google Doc summarizing the human-trial literature on peptides including BPC-157. Value is as an index into primary trials rather than as a source itself — it is a Reddit-sourced compilation, so the selection and reading of those trials is unvetted, and BPC-157 in particular is not an approved drug in the US. Framed with a 'Bookmark this' engagement hook.",
     "topics": [
-      "general",
+      "biohacking",
       "questionable"
     ],
     "audience": [
@@ -5151,7 +5152,7 @@
     "content": "This guy on Reddit just dropped a 57-page Google Doc summarizing peptides like BPC-157, and all the human trials that have been done so far. Link below. Bookmark this.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-06-09",
@@ -5392,11 +5393,11 @@
     "handle": "@elonmusk",
     "subject": "Post by Elon Musk on X ( worth a look)",
     "url": "https://x.com/elonmusk/status/2063401522327666828",
-    "summary": "Elon Musk endorses first-principles 'physics thinking in the limit' — the 'Magic Wand Number' and 'Idiot Index' as universal cost-engineering mental models. Not AI/dev, but a useful thinking frame.",
+    "summary": "Musk endorses first-principles 'physics thinking in the limit,' with the 'Magic Wand Number' (what the theoretical floor would be if physics were the only constraint) and the 'Idiot Index' (a part's cost divided by its raw-material cost) as general cost-engineering mental models.",
     "topics": [
-      "management",
+      "adjacent",
       "general",
-      "adjacent"
+      "management"
     ],
     "audience": [
       "leadership",
@@ -5410,7 +5411,7 @@
     "content": "Elon Musk @elonmusk. 'Helpful tool for improvement. It's just physics thinking in the limit.' QUOTE: Eric Jorgenson @EricJorgenson - everyone can use Elon's 'Magic Wand Number' and 'Idiot Index', universal ideas helpful in any industry. First-principles / cost-engineering mental models. 7.4M views. Not AI/dev core.\n\nEveryone can use Elon's 'Magic Wand Number' and 'Idiot Index' — universal ideas.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-06-07",
@@ -5443,10 +5444,10 @@
     "handle": "@ihtesham2005",
     "subject": "Post by Ihtesham Ali on X (worth a read)",
     "url": "https://x.com/ihtesham2005/status/2063297401344147719",
-    "summary": "A well-written essay on The Art of Problem Solving (AoPS): problem-solving is a transferable skill, not memorized formulas; teach the difference between a formula (what to compute) and a method (how to see), and treat confusion as where learning starts. Education/thinking, not AI/dev.",
+    "summary": "Essay on The Art of Problem Solving (AoPS): problem-solving is a transferable skill rather than a set of memorized formulas, the difference between a formula (what to compute) and a method (how to see) is the thing worth teaching, and confusion is where the learning starts rather than a sign of failure.",
     "topics": [
-      "general",
-      "adjacent"
+      "adjacent",
+      "general"
     ],
     "audience": [
       "me"
@@ -5459,7 +5460,7 @@
     "content": "Ihtesham Ali @ihtesham2005. Essay on The Art of Problem Solving (AoPS) by Sandor Lehoczky & Richard Rusczyk (1993). Since 2015 every US IMO team member has been an AoPS student. Premise: problem-solving is a transferable skill, not memorized tricks; teach the difference between a formula (what to compute) and a method (how to see); 'learning to read the problem' - what it's really asking. Tolerance for being stuck: confusion is the starting point, learning happens past the edge of what you know. 1M+ users. Motivational close. 278.1K views. Education/thinking, not AI/dev.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-06-07",
@@ -5744,7 +5745,7 @@
     "handle": "@l1vsun",
     "subject": "Post by Livsun on X",
     "url": "https://x.com/l1vsun/status/2061876167687201243",
-    "summary": "Off-topic trading engagement-farm: a neural net trained on years of tick data supposedly calling setups hours before the open (71% win rate, built for <$500), promoting a 'win every trade' listicle. Not AI/dev material.",
+    "summary": "Claims a neural net trained on years of tick data calls setups hours before the open at a 71% win rate, built for under $500, promoting a 'win every trade' listicle. No methodology, holdout or drawdown figures are given, and the win-rate framing omits position sizing entirely.",
     "topics": [
       "questionable"
     ],
@@ -5759,7 +5760,7 @@
     "content": "Livsun @L1vsun. Trading engagement-farm: neural net trained on 11 years of tick data calls setups 5 hours before the candle forms; 4,200 data points/sec, 847k labeled historical setups, $40/mo server; surfaces 3-4 trades/day, 71% win rate over 90 days, 2.3 avg R/R; built for under $500 in 3 weeks of evenings. QUOTE ARTICLE: Roan @RohOnChain 'How to Use Neural Networks to Win Every Trade Before It Even Starts'. 70.5K views. Off-topic trading hype. questionable.\n\nArticle: 'How to Use Neural Networks to Win Every Trade Before It Even Starts.'",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-06-03",
@@ -6147,7 +6148,7 @@
     "handle": "@l1vsun",
     "subject": "Post by Livsun on X",
     "url": "https://x.com/l1vsun/status/2059707097583906917",
-    "summary": "Off-topic trading content dressed as a discovery: pitches Markov-chain state machines (trending/ranging/reversing transition matrix + Kelly sizing) with a Renaissance Technologies '66% annual returns' framing, promoting a quant listicle. Engagement-farmed, not AI/dev material.",
+    "summary": "Pitches Markov-chain state machines for markets — a trending/ranging/reversing transition matrix with Kelly sizing — framed around Renaissance Technologies' '66% annual returns' and promoting a quant listicle. The state-machine framing is a legitimate modeling idea; the returns framing and listicle funnel are not evidence for it.",
     "topics": [
       "questionable"
     ],
@@ -6162,7 +6163,7 @@
     "content": "Livsun @L1vsun. a russian mathematician solved trading in 1906. andrei markov proved markets aren't random - state machines. trending/ranging/reversing states, transition matrix, kelly sizing. renaissance 37 yrs 66% returns. 200 lines python. QUOTE: Alex @de1lymoon article 'How To Use Markov Chains To Win Every Single Trade + [Quant Framework]' Polymarket quants. 375.9K views. Off-topic trading engagement farming, not AI/dev.\n\nArticle: 'How To Use Markov Chains To Win Every Single Trade + [Quant Framework]' — Polymarket state-model framing.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-05-28",
@@ -6553,10 +6554,10 @@
     "handle": "@atenov_d",
     "subject": "Post by Atenov int. on X",
     "url": "https://x.com/atenov_d/status/2058868770257416239",
-    "summary": "Highlights MoneyPrinterTurbo (13k+ stars): give a topic/keyword and it generates a script (via any LLM), pulls copyright-free footage, and adds subtitles/music/voiceover to output a finished short video; runs locally with Web UI/API/Docker/Colab. (Author's other posts are off-topic trading/politics.)",
+    "summary": "Highlights MoneyPrinterTurbo (13k+ stars): give it a topic or keyword and it generates a script via any LLM, pulls copyright-free footage, and adds subtitles, music and voiceover to produce a finished short video. Runs locally with a Web UI, API, Docker and Colab paths.",
     "topics": [
-      "industry",
       "dev-practices",
+      "industry",
       "questionable",
       "solo-operator"
     ],
@@ -6571,7 +6572,7 @@
     "content": "Atenov int. @Atenov_D. A Chinese developer built MoneyPrinterTurbo, 13,000+ GitHub stars: type a topic/keyword, it generates the script (via Claude/DeepSeek/Gemini/GPT), finds HD copyright-free footage, adds subtitles/music/voiceover, outputs a finished short video. Batch generation, 9:16 and 16:9, voice synthesis w/ preview, custom subtitles, background music. Runs locally, Web UI + API, Docker, Colab. GitHub: harry0703/MoneyPrinterTurbo. (Author's other posts are off-topic trading/politics engagement.) 582.1K views. industry, dev-practices, questionable.\n\nharry0703/MoneyPrinterTurbo",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-05-25",
@@ -8537,11 +8538,11 @@
     "handle": "@fu_joehudson",
     "subject": "Post by Joe Hudson on X",
     "url": "https://x.com/fu_joehudson/status/2054264609683689941",
-    "summary": "Executive-coaching content on moving from 'dirty fuel' (motivation from fear/pressure) to 'clean fuel' (joy/curiosity), summarized on one page. Not AI/dev.",
+    "summary": "Executive-coaching material on shifting from 'dirty fuel' (motivation sourced from fear and pressure) to 'clean fuel' (joy and curiosity), condensed to a single page.",
     "topics": [
-      "management",
+      "adjacent",
       "general",
-      "adjacent"
+      "management"
     ],
     "audience": [
       "me"
@@ -8554,7 +8555,7 @@
     "content": "Joe Hudson @FU_joehudson. After helping thousands go from 'dirty fuel' to 'clean fuel' (motivation from fear/pressure vs joy/curiosity), 'everything I've learned on one page.' Executive-coaching/personal-development content, not AI/dev. 12.9K views. management, general.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-05-14",
@@ -8639,12 +8640,12 @@
     "handle": "@jaynitx",
     "subject": "Post by Jaynit on X",
     "url": "https://x.com/jaynitx/status/2054200520575967698",
-    "summary": "A long essay on pattern recognition as the basis of expertise (de Groot's chess studies, chunking, Klein's recognition-primed decisions, Buffett reading annual reports), how tight feedback loops build it fast, and how to avoid false patterns. General/thinking, not AI/dev.",
+    "summary": "Long essay on pattern recognition as the substrate of expertise — de Groot's chess studies and chunking, Klein's recognition-primed decision model, Buffett reading annual reports — on how tight feedback loops build it quickly, and on how to avoid locking in false patterns.",
     "topics": [
+      "adjacent",
       "general",
       "management",
-      "prompting",
-      "adjacent"
+      "prompting"
     ],
     "audience": [
       "me"
@@ -8657,7 +8658,7 @@
     "content": "Jaynit @jaynitx. X ARTICLE 'pattern recognition: how to build the skill of seeing what others miss.' Expertise is better seeing, not better thinking: de Groot's chess studies (masters recall real positions far better but not random ones - they chunk patterns); Simon estimated masters store 50k-100k patterns. Chunking appears in reading, programming, investing, content. Building patterns needs time + deliberate practice, but especially tight feedback loops (Klein: weather forecasters develop intuition, clinicians often don't; Kahneman on quality/speed of feedback). Recognition-primed decision model: experts recognize-and-act rather than compare options (firefighters, Buffett reading annual reports 50 years). Watch for false patterns/narrative fallacy (Taleb); guard with feedback, sample size, multiple domains, mechanism. Speed it up via volume+variety, active analysis, immediate feedback, deliberate comparison, articulation, domain crossing. Limitation: patterns can become a prison (Kuhn paradigm shifts); hold them loosely. 494.1K views. general, management, prompting.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-05-14",
@@ -9075,7 +9076,7 @@
     "handle": "@rohonchain",
     "subject": "Post by Roan on X",
     "url": "https://x.com/rohonchain/status/2054245904258142593",
-    "summary": "Promotes a Stanford Markov Decision Processes lecture and a 'win every trade' Markov-chains quant listicle. Off-topic trading engagement-farm.",
+    "summary": "Promotes a Stanford lecture on Markov Decision Processes alongside a 'win every trade' Markov-chains quant listicle. The lecture is real coursework; the trading listicle wrapped around it is the engagement-farmed part.",
     "topics": [
       "questionable"
     ],
@@ -9090,7 +9091,7 @@
     "content": "Roan @RohOnChain. Promotes a 1-hour Stanford lecture on Markov Decision Processes as teaching more about systematic-trading math than a 3-month Jane Street/JPMorgan internship. QUOTE ARTICLE: 'How To Use Markov Chains To Win Every Single Trade (Quant Framework)'. Off-topic trading engagement-farm. 352.3K views. questionable.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-05-12",
@@ -9456,8 +9457,9 @@
     "handle": "@m_goes_distance",
     "subject": "Post by Mgoes (bio/acc 🤖💉) on X",
     "url": "https://x.com/m_goes_distance/status/2052433497575293307",
-    "summary": "Biotech-progress digest for 2026 — Japan endorsing iPS cell therapies for heart failure / Parkinson's, Altos Labs' Atlas of Rejuvenation, rapalink-1 as longevity drug, Retro Biosciences dosing brain-cleanup pill, peptides moving from banned to federal policy, psychedelics executive order, GLP-1s at 12.4% adult adoption. Off-topic for the AI links collection but Jeremy emailed it, so capturing it honestly.",
+    "summary": "Biotech-progress digest for 2026: Japan endorsing iPS cell therapies for heart failure and Parkinson's, Altos Labs' Atlas of Rejuvenation, rapalink-1 as a longevity drug, Retro Biosciences dosing a brain-cleanup pill, peptides moving from banned toward federal policy, a psychedelics executive order, and GLP-1s at 12.4% adult adoption. A useful once-a-year survey of where the longevity and biotech field actually moved.",
     "topics": [
+      "biohacking",
       "industry"
     ],
     "audience": [
@@ -9471,7 +9473,7 @@
     "content": "it's genuinely insane how much progress biotech is making in 2026: - Japan just endorsed the first iPS cell therapies for heart failure and Parkinson's. reprogrammed cells from your own body replacing damaged tissue - Altos Labs built an Atlas of Rejuvenation. 100+ genes linked to cellular youth. they are now repurposing existing drugs to hit them - a cancer drug accidentally became a longevity drug. rapalink-1 extends lifespan through the same pathway as rapamycin but cleaner - Retro Biosciences dosed the first humans with a pill that reactivates the brain's cellular cleanup machinery. results Q3 - peptides went from felony to federal policy. 14 of 19 banned compounds are coming back - psychedelics just got a presidential executive order. first FDA approval of a psychedelic is weeks away - GLP-1s hit 12.4% of US adults. fastest mainstream drug adoption of any class in history",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 3
   },
   {
     "date": "2026-05-08",
@@ -10188,9 +10190,9 @@
     "handle": "@basedbiohacker",
     "subject": "Post by BasedBiohacker on X",
     "url": "https://x.com/basedbiohacker/status/2049235599874200049",
-    "summary": "Nootropics/cognitive-enhancement resource (vendors, dosages, EU source, consulting). Off-topic supplements, not AI/dev.",
+    "summary": "Pointer to the author's own cognitive-enhancement reference covering vendors and dosages for a range of nootropic compounds, attached to a paid one-on-one consulting offer for personalized compound selection. Useful mainly as a map of what this corner of the space sells and how it's packaged — it is a commercial funnel, not an evidence review, and no trials or sourcing are cited. Several of the compound categories referenced are prescription-only or legally grey in the US.",
     "topics": [
-      "general",
+      "biohacking",
       "questionable"
     ],
     "audience": [
@@ -10198,13 +10200,13 @@
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "1,663",
+    "views": "1,842",
     "notes": "",
     "enriched": true,
-    "content": "BasedBiohacker @BasedBiohacker. Nootropics/cognitive-enhancement resource with vendors, dosages, an EU source and discount code, plus consulting. Off-topic (supplements), not AI/dev. 1,837 views. general, questionable.",
+    "content": "vendors, dosages, everything you need to know about all of these is in here:\n\nbasedbiohacker.any.org — 'cognitive enhancement - updated': vendors and dosages, plus an offer of one-on-one consulting to pick 'the exact right strategy and compounds for you - and your unique situation, goals and biology'",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-05-01",
@@ -10414,11 +10416,11 @@
     "handle": "@thedarshakrana",
     "subject": "Post by Darshak Rana ⚡️ on X",
     "url": "https://x.com/thedarshakrana/status/2049151671692136778",
-    "summary": "A long self-improvement essay ('Your Next 5 Years Will Be an Exact Copy of Your Last 5') on the marshmallow test as environment design over willpower, the 'end of history illusion,' affective-forecasting error, basal-ganglia habit chunking, and chronos vs kairos time. Not AI/dev.",
+    "summary": "Long essay ('Your Next 5 Years Will Be an Exact Copy of Your Last 5') arguing environment design beats willpower, drawing on the marshmallow test, the 'end of history illusion,' affective-forecasting error, basal-ganglia habit chunking, and chronos vs kairos time.",
     "topics": [
+      "adjacent",
       "general",
-      "management",
-      "adjacent"
+      "management"
     ],
     "audience": [
       "me"
@@ -10431,7 +10433,7 @@
     "content": "Darshak Rana @thedarshakrana. Long self-improvement essay 'Your Next 5 Years Will Be an Exact Copy of Your Last 5': the marshmallow test is really about strategic distraction / environment design over willpower; Gilbert's 'end of history illusion'; affective-forecasting error (external change fails without updating internal patterns); basal-ganglia 'chunking' of emotional patterns; chronos vs kairos time; change via pattern-recognition, belief archaeology, conscious belief replacement. Not AI/dev. 1.2M views. general, management.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-28",
@@ -10619,7 +10621,7 @@
     "handle": "@stacyonchain",
     "subject": "Post by StacyOnChain on X",
     "url": "https://x.com/stacyonchain/status/2047278412922831260",
-    "summary": "Off-topic for AI links — promotional content for centpro.bot (Polymarket trading framework supposedly extracted from 327 real tests). ALL-CAPS engagement framing, crypto-twitter signal. Capturing for completeness but not useful as AI/agents reference.",
+    "summary": "Promotional post for centpro.bot, a Polymarket trading framework the author says was extracted from 327 real tests. ALL-CAPS crypto-Twitter framing with little verifiable detail behind the claim.",
     "topics": [
       "industry",
       "questionable"
@@ -10635,7 +10637,7 @@
     "content": "THIS IS THE EXACT 4-STEP FRAMEWORK INSTITUTIONAL QUANT DESKS USE TO FIND THE 6% OF TRADES WHERE THE CROWD IS WRONG. Bookmark this, build your models on it, or just pass it directly to your AI agent. Full breakdown of the high-alpha strategy extracted from 327 real tests is below. Learn more: centpro.bot. QT (own article): I Tested 327 Strategies on Polymarket. Here's How to Find the Ones That Actually Work.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-23",
@@ -11228,11 +11230,11 @@
     "handle": "@ihtesham2005",
     "subject": "Post by Ihtesham Ali on X (important for planner?)",
     "url": "https://x.com/ihtesham2005/status/2046197374855582157",
-    "summary": "Essay on George Polya's 'How to Solve It' (1945): understand the problem (restate it in your own words - the real filter), make a plan (solve a simpler related problem first for a foothold), carry it out, and 'look back' (verify by another method, reuse it - build a transferable library of methods). Diagnosis: people conflate reading with understanding, method with starting, and answer with learning. Not AI/dev.",
+    "summary": "Essay on George Polya's 'How to Solve It' (1945): understand the problem (restating it in your own words is the real filter), make a plan (solve a simpler related problem first for a foothold), carry it out, then 'look back' — verify by another method and reuse it, building a transferable library of methods. Diagnosis: people conflate reading with understanding, method with starting, and the answer with the learning.",
     "topics": [
+      "adjacent",
       "general",
-      "management",
-      "adjacent"
+      "management"
     ],
     "audience": [
       "dev-team",
@@ -11246,7 +11248,7 @@
     "content": "Ihtesham Ali @ihtesham2005. Essay on George Polya's 'How to Solve It' (1945): the neglected steps in problem solving. 1) Understand the problem (restate it in your own words without looking - the filter for real understanding); 2) Make a plan (if a problem feels impossible, solve a simpler related version first for a foothold); 3) Carry out the plan (the obvious, least-important step); 4) Look back (verify by another method, reuse the method elsewhere - build a transferable library of methods). Diagnosis: people conflate reading a problem with understanding it, having a method with starting work, and getting an answer with learning. Slow down at the beginning and end. Not AI/dev. 303.7K views. general, management.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-21",
@@ -12018,10 +12020,10 @@
     "handle": "@0x_Punisher",
     "subject": "Post by Punisher on X",
     "url": "https://x.com/0x_punisher/status/2044100729133019416",
-    "summary": "[Promotional / paid partnership] A guide to a Polymarket sweeper bot that profits not by prediction but by FIFO-queueing bids near $0.999 on already-decided markets to absorb mispriced liquidity, covering resolution detection, latency, and capital allocation. Ends with wallet/PnL claims and a Telegram funnel. Off-topic crypto money-making content rather than AI tooling.",
+    "summary": "Describes a Polymarket 'sweeper' bot that profits from queue mechanics rather than prediction: FIFO-queueing bids near $0.999 on already-decided markets to absorb mispriced liquidity, covering resolution detection, latency and capital allocation. Closes with wallet/PnL screenshots and a Telegram funnel, and is disclosed as a paid partnership.",
     "topics": [
-      "questionable",
-      "general"
+      "general",
+      "questionable"
     ],
     "audience": [
       "me"
@@ -12034,7 +12036,7 @@
     "content": "Polymarket sweeper bot makes ~$525/day passively (paid partnership). Exploits the post-resolution gap by FIFO-queueing bids at 0.999 on outcomes that are effectively decided. Covers resolution detection, queue/latency mechanics, and capital allocation. Ends with public wallet, PnL claims, and a Telegram channel funnel.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 2
+    "enrichment_attempts": 3
   },
   {
     "date": "2026-04-15",
@@ -12042,10 +12044,10 @@
     "handle": "@stacyonchain",
     "subject": "Post by StacyOnChain on X",
     "url": "https://x.com/stacyonchain/status/2044069002192847200",
-    "summary": "[Engagement-farming / crypto promo] StacyOnChain hypes an institutional-grade Polymarket bot architecture (fractional Kelly sizing, latency optimizations), urging readers to bookmark and download before it is pulled, and quote-tweets their own how-we-built-a-Polymarket-bot article. Off-topic relative to the AI tooling collection.",
+    "summary": "Walks through an institutional-grade Polymarket bot architecture — fractional Kelly position sizing, latency optimizations — and quote-tweets the author's own build writeup. Packaged with bookmark-and-download-before-it's-pulled scarcity framing, which is what the credibility tag is for.",
     "topics": [
-      "questionable",
-      "general"
+      "general",
+      "questionable"
     ],
     "audience": [
       "me"
@@ -12058,7 +12060,7 @@
     "content": "Institutional-grade systematic execution for dominating Polymarket: fractional Kelly formula and latency optimizations. Bookmark and download before it's pulled.\n\nHow We Built a Polymarket Bot That Works: ~3 months, multiple failed strategies, one result.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 2
+    "enrichment_attempts": 3
   },
   {
     "date": "2026-04-15",
@@ -12966,7 +12968,7 @@
     "handle": "@recogard",
     "subject": "Post by Recogard on X",
     "url": "https://x.com/recogard/status/2042356576032358505",
-    "summary": "36GB free dataset of 72M+ Polymarket trades on GitHub plus a backtesting simulator: analyze historical prediction-market behavior, define a strategy, and backtest it across all past markets for accuracy/PnL/risk. Off-topic (prediction-market trading), not AI/dev core.",
+    "summary": "A free 36GB dataset of 72M+ Polymarket trades on GitHub, paired with a backtesting simulator that lets you define a strategy and replay it across all historical markets for accuracy, PnL and risk. Substantial public dataset and eval harness, whatever you think of the domain.",
     "topics": [
       "questionable",
       "research"
@@ -12982,7 +12984,7 @@
     "content": "Recogard @recogard. 36GB free dataset of 72M+ Polymarket trades on GitHub plus a backtesting simulator: analyze historical prediction-market behavior (pre-resolution price moves, category volatility, patterns), define a strategy, and backtest it across all past markets for accuracy/PnL/risk without real money. Repos: jon-becker/prediction-market-analysis, evan-kolberg/prediction-market-backtesting. Off-topic (prediction-market trading), not AI/dev core. 63.7K views. questionable, research.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-10",
@@ -13303,10 +13305,10 @@
     "handle": "@antpalkin",
     "subject": "Post by cvxv666 on X",
     "url": "https://x.com/antpalkin/status/2041517093670052193",
-    "summary": "Engagement-farm story of failing 10x to build a Polymarket arbitrage bot then finding a 'Part 2' guide diagnosing 10 mistakes; 'the strategy was never the problem, I was the bug.' Links AdiiX 'Why your Claude bot doesn't work.' Off-topic trading-bot content.",
+    "summary": "First-person account of failing ten times to build a Polymarket arbitrage bot, then finding a 'Part 2' guide diagnosing ten specific mistakes — landing on 'the strategy was never the problem, I was the bug.' Links AdiiX's 'Why your Claude bot doesn't work.' The debugging-your-own-assumptions lesson generalizes past the trading context; the confessional framing is engagement-shaped.",
     "topics": [
-      "questionable",
-      "dev-practices"
+      "dev-practices",
+      "questionable"
     ],
     "audience": [
       "me"
@@ -13319,7 +13321,7 @@
     "content": "cvxv666 @antpalkin. Engagement-farm story of failing 10 times to build a Polymarket arbitrage bot then finding a 'Part 2' guide diagnosing 10 mistakes (1-3 prevent running, 4-6 wrong signals, 7-10 slowly kill your account); 'the strategy was never the problem, I was the bug.' QUOTE ARTICLE: AdiiX 'Why your Claude bot doesn't work' (arbitrage bot, 12M views). Off-topic trading-bot content. 317.7K views. questionable, dev-practices.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-08",
@@ -13558,10 +13560,10 @@
     "handle": "@thecurioustales",
     "subject": "Post by The Curious Tales on X",
     "url": "https://x.com/thecurioustales/status/2039360822200442914",
-    "summary": "'Drop everything and read this' - recommends a Dan-Koe-style life essay. Links Darshak Rana 'You Are Just 3 Decisions Away From a Completely Different Life.' Self-improvement, not AI/dev.",
+    "summary": "A 'drop everything and read this' recommendation of Darshak Rana's life-design essay 'You Are Just 3 Decisions Away From a Completely Different Life.' Life-direction material in the Dan Koe register rather than engineering writing.",
     "topics": [
-      "general",
-      "adjacent"
+      "adjacent",
+      "general"
     ],
     "audience": [
       "me"
@@ -13574,7 +13576,7 @@
     "content": "The Curious Tales @thecurioustales. 'Drop everything and read this' - recommends a Dan-Koe-style life essay. QUOTE ARTICLE: Darshak Rana @thedarshakrana 'You Are Just 3 Decisions Away From a Completely Different Life' - quit the draining thing, start the thing you've researched for months, have the conversation you keep rehearsing. Self-improvement, not AI/dev. 104.7K views. general.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-02",
