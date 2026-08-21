@@ -2,24 +2,28 @@
   {
     "date": "2026-08-21",
     "author": "Xudong Han",
-    "handle": "@xudong07452910",
+    "handle": "@Xudong07452910",
     "subject": "Post by Xudong Han on X",
     "url": "https://x.com/xudong07452910/status/2090760827230187782",
-    "summary": "",
+    "summary": "Chinese-language post recommending a Julie Yoo essay on where an AI startup's moat can still sit. Argument: models improve every few months, so any product whose main value is 'answering questions more smartly' or automating a process will get absorbed by the foundation models over time - the layer that's much harder to replace is being accountable for outcomes. Healthcare is the worked example, where actually delivering services requires licenses, insurance, payment rails, and liability for errors, and insurers carry real financial risk. Aimed at people building agents, vertical AI, or healthtech; the accountability-as-moat framing transfers directly to other regulated verticals.",
     "topics": [
-      "general"
+      "industry",
+      "management",
+      "agent-design"
     ],
     "audience": [
-      "me"
+      "me",
+      "leadership"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "failed",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "chrome-unreachable"
+    "enriched": true,
+    "content": "[Translated from Chinese] If you've been wondering lately where exactly the moat for an AI startup can still be placed, I highly recommend reading this article by Julie Yoo.\n\nEspecially for those building Agents, vertical AI, or Healthtech, I think there's a key insight in there that's worth mulling over repeatedly.\n\nModels get a significant boost in strength every few months. If a product's main value comes from \"answering questions more smartly\" or automating a process for users, that capability can easily get eaten up by the underlying foundational models over time.\n\nShe argues that the layer that's much harder to replace is \"being accountable for the outcomes.\"\n\nThis makes perfect sense when applied to healthcare.\n\nAI can help with diagnostics, writing medical records, and operations, but actually delivering healthcare services requires licenses, insurance, payment systems, and taking responsibility for any errors.\n\nInsurers have to shoulder real financial risks, and drug and diagnostic products need clinical validation.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-08-21",
@@ -27,21 +31,26 @@
     "handle": "@mattpocockuk",
     "subject": "Post by Matt Pocock on X",
     "url": "https://x.com/mattpocockuk/status/2090744569960824949",
-    "summary": "",
+    "summary": "Pocock shares an /implement-spec skill: a multi-agent implementer that takes a spec plus tickets, does codebase research in a subagent, implements all tickets in subagents at maximum concurrency, reviews the final code against the spec, then cleans up all worktrees. Aimed at autonomous execution of large chunks of work with minimal supervision. Source: github.com/mattpocock/skills at skills/in-progress/implement-spec/SKILL.md",
     "topics": [
-      "general"
+      "skills-mcp",
+      "agent-design",
+      "dev-practices",
+      "claude-code"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "now",
     "sourceType": "tweet",
-    "views": "",
+    "views": "72.5K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "failed",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "chrome-unreachable"
+    "enriched": true,
+    "content": "I'm trying out an /implement-spec skill\n\nEssentially a multi-agent implementer that:\n\n- Takes in a spec and tickets\n- Does codebase research in a subagent\n- Implements all the tickets in subagents with maximum concurrency\n- Reviews the final code against the spec\n- Cleans up all worktrees\n\nShould be able to smash out huge chunks of work autonomously with minimal supervision.\n\nmattpocock/skills - implement-spec SKILL.md",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-08-21",
@@ -49,43 +58,49 @@
     "handle": "@rvaniaaaa",
     "subject": "Post by rvaniaaa on X",
     "url": "https://x.com/rvaniaaaa/status/2090722810674975071",
-    "summary": "",
+    "summary": "Architecture diagram for a 'compiled wiki' second brain, framed on Karpathy's line that the system should be a compiler rather than a storage system. Three zones: raw holds immutable unstructured source material as ground truth, wiki is where the model converts raw into structured linked evergreen knowledge (the human reads it, the model writes it), and output is where finished work lands - built from compiled knowledge rather than from memory. CLAUDE.md sits at the center carrying identity, preferences, goals and project context so the model reads it before every session, and five automations (ingest, write, and three others) close the loop so the system improves each cycle. Close cousin to Jeremy's own link-farm architecture.",
     "topics": [
-      "general"
+      "agent-design",
+      "claude-code",
+      "dev-practices"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "failed",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "chrome-unreachable"
+    "enriched": true,
+    "content": "Andrej Karpathy called it a compiler, not a storage system. this diagram shows the architecture he described.\n\nmost people who build a second brain treat it like a filing cabinet. they drop notes in. they search when needed. the library gets bigger over time but never smarter.\n\na compiled wiki works differently. raw holds the source materials. unstructured. immutable. ground truth. wiki is where the model converts everything in raw into structured, linked, evergreen knowledge. the human reads it. the model writes it. output is where finished work lands. built from compiled knowledge, not from memory.\n\nat the center: CLAUDE.md. identity, preferences, goals, project context. the model reads it before every session. automatically. you never explain yourself again.\n\nthe loop closes through update. every new source gets ingested, compiled, linked, and integrated. the system improves with every cycle.\n\nfive automations run the whole thing. ingest captures and extracts. write retrieves and drafts.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-08-21",
     "author": "0xSero",
-    "handle": "@0xsero",
+    "handle": "@0xSero",
     "subject": "Post by 0xSero on X",
     "url": "https://x.com/0xsero/status/2090721689428533258",
-    "summary": "",
+    "summary": "Organizes a same-day community study session on the Pi agent framework with a three-step onramp: read the Pi repo, set it up locally, then point it at a free or local model. Recommends openrouter.ai/stealth/ox-alpha for a free endpoint and lmstudio.ai for fully local. Companion to the author's earlier reading-order post on the same repo; the time-boxed deadline and Discord link are ephemeral, the onramp is the durable part.",
     "topics": [
-      "general"
+      "agent-design",
+      "dev-practices"
     ],
     "audience": [
       "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "17.5K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "failed",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "chrome-unreachable"
+    "enriched": true,
+    "content": "Do you want to learn AI? Doing a study session on Pi\n\n1. Read the pi repo\n2. Setup pi on your machine\n3. Setup a free model or local model\n\nRecommended:\n\nopenrouter.ai/stealth/ox-alpha <-- free\nlmstudio.ai <-- local\n\nDo this by 2PM CET today and join: discord.gg/kUCzhejnz\n\nLM Studio - local models",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-08-21",
@@ -93,21 +108,24 @@
     "handle": "@bibryam",
     "subject": "Post by Bilgin Ibryam on X",
     "url": "https://x.com/bibryam/status/2090710180287647784",
-    "summary": "",
+    "summary": "Five patterns for long-running agents, from an Addy Osmani and Shubham Saboo piece: checkpoints, approval gates, governed memory, event-driven processing, and specialist fleets. Framed as the shift from stateless request handler to durable, governed system - which is the actual production gap for agents that run longer than a single request. Article: turingpost.com/p/the-production-gap-5-patterns-for-building-long-running-ai-agents",
     "topics": [
-      "general"
+      "agent-design",
+      "dev-practices"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "now",
     "sourceType": "tweet",
-    "views": "",
+    "views": "2,707",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "failed",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "chrome-unreachable"
+    "enriched": true,
+    "content": "Five patterns for long-running agents:\n\n- checkpoints\n- approval gates\n- governed memory\n- event-driven processing\n- specialist fleets\n\nThe shift: stateless request handler -> durable, governed system.\n\nBy @addyosmani + @Saboo_Shubham_:\n\nturingpost.com/p/the-production-gap-5-patterns-for-building-long-running-ai-agents\n\nThe Production Gap: 5 Patterns for Building Long-Running AI Agents",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-08-21",
@@ -115,21 +133,27 @@
     "handle": "@hraness",
     "subject": "Post by hraness on X",
     "url": "https://x.com/hraness/status/2090680065528901919",
-    "summary": "",
+    "summary": "Long-form X article on running a personal 'software factory': 15 Codex Pro 20x subscriptions driving a dozen-plus projects, with a self-reported 30-day yield of +6.7M and -4.7M lines across 25 projects. Notes the economics openly - roughly $210k/mo of list-price capacity for $36k paid, citing a 70x subsidy figure from SemiAnalysis - and organizes the method around relentlessly seeking leverage so time goes to hard problems rather than babysitting execution. Stack and templates are public: github.com/hraness/hra, github.com/hraness/kb, hraness.com/kb, plus WRITING.md and STYLE.md in github.com/hraness/personal-monorepo-template and google/embeddinggemma-300m for embeddings.",
     "topics": [
-      "general"
+      "dev-practices",
+      "agent-design",
+      "solo-operator",
+      "management"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team",
+      "leadership"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "9.1K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "failed",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "chrome-unreachable"
+    "enriched": true,
+    "content": "Building a software factory\n\nI've been building a software factory with 15 Codex subscriptions, working across a dozen software projects over the last month. In this post, I'll dive deep into my philosophy on coding with AI, how I built my software factory (including my complete tech stack), and an overview of my projects.\n\nStep 1: Use the best tokens most efficiently. You must relentlessly seek leverage so that most of your time is working on hard problems, not babysitting execution. Token efficiency is key.\n\na portrait of my software factory\n\nover the last 30d my yield was +6.7M and -4.7M lines of code over 25 projects\n\nmy factory is 2x more productive in the afternoon and least productive in the morning\n\nsome days i just let it ride but i'm trying to be on the factory floor more\n\nI currently have 15 Codex Pro 20x subscriptions.\n\nThis means I'm leveraging $210k/mo cooking with the finest models - a run rate of $2.5M yearly.\n\nAnd I'm paying $36k, which is less than minimum wage in Washington State.\n\n(70x subsidy reported by @SemiAnalysis_ in June)\n\nhraness/hra\n\nhraness/kb - search and connect with bounded signals\n\npersonal-monorepo-template WRITING.md\n\npersonal-monorepo-template STYLE.md\n\ngoogle/embeddinggemma-300m",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-08-21",
@@ -137,21 +161,26 @@
     "handle": "@levie",
     "subject": "Post by Aaron Levie on X",
     "url": "https://x.com/levie/status/2090664811185205722",
-    "summary": "",
+    "summary": "Levie on when domain-specific post-training beats a general frontier model for applied AI: once you understand a domain well enough and have enough volume on similar tasks, purpose-designing a model for that work starts to pay. Quotes the underlying post - 'we incentivized efficient tool use and reasoning through reward shaping, preferring trajectories that would reduce tokens consumed at inference-time given equivalent performance' - i.e. co-optimizing cost and quality rather than trading one for the other. Caveat included: this won't make sense in every domain, since general models are often good enough or necessary out of the box.",
     "topics": [
-      "general"
+      "research",
+      "industry",
+      "management"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team",
+      "leadership"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "failed",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "chrome-unreachable"
+    "enriched": true,
+    "content": "Great post on what post training looks like for applied AI use-cases to bring down costs and improve accuracy on certain tasks. This will increasingly be an approach that companies that can get closer to the underlying workflow in an enterprise will take.\n\nThe key is that once you understand a domain well enough and have enough volume on a set of similar tasks, it can start to make sense to purpose design models just for that work.\n\n\"In post-training, we incentivized efficient tool use and reasoning through reward shaping, preferring trajectories that would reduce tokens consumed at inference-time given equivalent performance. This allowed us to co-optimize for both cost and quality, gaining significant performance while keeping cost stable.\"\n\nNow, this won't make sense in every domain, as general purpose frontier closed or open models will be good enough out of the box -or necessary- for the work at hand. But once you have deep enough vertical expertise, and either the costs are too high...",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-08-21",
@@ -159,8 +188,9 @@
     "handle": "@tonysimons_",
     "subject": "Post by Tony Simons on X",
     "url": "https://x.com/tonysimons_/status/2090612261349908991",
-    "summary": "",
+    "summary": "Part 3 of a Hermes Desktop masterclass series, covering the move from treating it as a chatbot to using it as a workspace: sessions, projects, files, previews, attachments, multiple windows, model switching, queues, interruptions, and persistent workspaces. Parts 1 and 2 covered what Hermes Desktop is and how to install and configure it. Product-usage material rather than architecture.",
     "topics": [
+      "dev-practices",
       "general"
     ],
     "audience": [
@@ -168,12 +198,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "7,110",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "failed",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "chrome-unreachable"
+    "enriched": true,
+    "content": "If you installed Hermes Desktop, opened a chat, and thought:\n\n\"Okay... now what?\"\n\nI wrote this for you.\n\nPart 1 explained what Hermes Desktop actually is.\nPart 2 got it installed and configured properly.\nPart 3 is where we move in.\n\nSessions, projects, files, previews, attachments, multiple windows, model switching, queues, interruptions, persistent workspaces, the whole thing.\n\nHermes Desktop Masterclass Part 3 is LIVE.\n\nArticle: Hermes Desktop Masterclass, Part 3: Mastering the Desktop Workspace. Installing Hermes Desktop is the easy part. Picking a model is the easy part. The real jump happens when you stop treating Hermes Desktop like a chatbot with some fancy buttons bolted onto the sides....",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-08-21",
@@ -181,65 +212,75 @@
     "handle": "@latentspacepod",
     "subject": "Post by Latent.Space on X (4 maro)",
     "url": "https://x.com/latentspacepod/status/2090546052847763862",
-    "summary": "",
+    "summary": "Latent.Space interviews Matt Pocock (@mattpocockuk) about his /wayfinder skill, built for the 'fog of war' problem - needing to figure out a project when the end state isn't clear yet, which is where most planning skills fall down. Billed as the first in a series examining individual skills in depth. Post: latent.space",
     "topics": [
-      "general"
+      "skills-mcp",
+      "agent-design"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "81K",
     "notes": "flag: 4 maro",
-    "enriched": false,
-    "enrichment_status": "failed",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "chrome-unreachable"
+    "enriched": true,
+    "content": "We chat to @mattpocockuk about his /wayfinder skill, which he designed for the \"fog of war\" - when you need to figure out a project but the end state isn't entirely clear. This is the first in a series of skills we'll be exploring in the coming weeks.\n\nThe /wayfinder Skill: Navigating the \"Fog of War\" of Planning - latent.space",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-08-21",
     "author": "0xSero",
-    "handle": "@0xsero",
+    "handle": "@0xSero",
     "subject": "Post by 0xSero on X",
     "url": "https://x.com/0xsero/status/2090543697398038876",
-    "summary": "",
+    "summary": "Recommends reading the Pi repo as the fastest way to understand agent architecture, with a specific reading order: packages/ai, then packages/agent, then packages/coding-agent. Pairs it with two Karpathy repos for adjacent skills - github.com/karpathy/nanoGPT to learn model training and github.com/karpathy/autoresearch to learn research. Quote-tweets the pidotdev harness definition from the same day.",
     "topics": [
-      "general"
+      "agent-design",
+      "dev-practices"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "123.2K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "failed",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "chrome-unreachable"
+    "enriched": true,
+    "content": "Read this repo. Start from:\n\n1. packages/ai\n2. packages/agent\n3. packages/coding-agent\n\nWill teach you more about this technology than most other repos.\n\nTo learn to train a model: github.com/karpathy/nanoGPT\n\nTo learn research: github.com/karpathy/autoresearch\n\nLearn the craft well\n\nA harness turns a model into an agent. At it's core it provides 4 things: a system prompt, tools, an agentic loop, a translation layer across models. New blog post from Earendil co-founder @colindaymond on what a harness is, and how you can own yours.\n\nkarpathy/nanoGPT\n\nkarpathy/autoresearch",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-08-21",
     "author": "ClaudeDevs",
-    "handle": "@claudedevs",
+    "handle": "@ClaudeDevs",
     "subject": "Post by ClaudeDevs on X",
     "url": "https://x.com/claudedevs/status/2090540270219567575",
-    "summary": "",
+    "summary": "Computer use, the browser tool, the Skills API, and the Files API are now generally available on the Claude Platform. Pitch is automating work in applications that have no API with fewer round trips per task, and building Claude Managed Agents on versioned skills and reusable files. Versioned skills plus a Files API is the piece worth reading closely - it makes skills a deployable artifact rather than a local folder.",
     "topics": [
-      "general"
+      "claude-code",
+      "skills-mcp",
+      "agent-design"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "now",
     "sourceType": "tweet",
-    "views": "",
+    "views": "1.5M",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "failed",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "chrome-unreachable"
+    "enriched": true,
+    "content": "Computer use, the browser tool, the Skills API, and the Files API are now generally available on the Claude Platform.\n\nAutomate work in applications that have no API with fewer round trips per task, and build Claude Managed Agents on versioned skills and reusable files.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-08-21",
@@ -247,21 +288,25 @@
     "handle": "@bcherny",
     "subject": "Post by Boris Cherny on X",
     "url": "https://x.com/bcherny/status/2090537902912815536",
-    "summary": "",
+    "summary": "Cherny confirms Anthropic is changing its data retention policy this fall: Mythos-class models require additional safety measures, and enterprises with their own privacy and compliance obligations will be able to own and control their own data with Anthropic retaining none. Quote-tweets the Bloomberg story breaking it. Directly relevant to any regulated-data deployment discussion.",
     "topics": [
-      "general"
+      "claude-code",
+      "industry"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team",
+      "leadership"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "446.7K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "failed",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "chrome-unreachable"
+    "enriched": true,
+    "content": "We've been working on this with customers for a while. Mythos-class models require additional safety measures and enterprises need to meet their own privacy and compliance rules. Customers can own and control their own data and Anthropic retains none. It's coming this fall.\n\nAnthropic Plans to Change Data Retention Policy for Advanced AI - bloomberg.com/news/articles/2026-08-20/anthropic-plans-to-change-data-retention-policy-fo",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-08-21",
@@ -269,21 +314,25 @@
     "handle": "@omarsar0",
     "subject": "Post by elvis on X",
     "url": "https://x.com/omarsar0/status/2090533587066249514",
-    "summary": "",
+    "summary": "Paper on continual learning at the harness level rather than the weights: modern agents accumulate experience across prompts, memories, tools, skills and routing rules, so updating any harness component can break previously reliable behavior with the model completely untouched - which the paper names harness-level forgetting and gives a way to measure. Proposes guarded harness evolution, separating proposing an update from committing it: a Continual Optimizer drafts a candidate harness from post-execution feedback, and a Continual Evaluator commits only after checking current improvement, historical retention, and validity. Relative gains exceed 10% across textual reasoning, multimodal perception, and open-world interaction. Paper: arxiv.org/abs/2608.19013",
     "topics": [
-      "general"
+      "research",
+      "agent-design",
+      "skills-mcp"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "18.8K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "failed",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "chrome-unreachable"
+    "enriched": true,
+    "content": "Banger paper on harness continual learning.\n\nIf you already are allowing your agents to rewrite their own prompts, skills, or memory files, this one is worth your time.\n\nContinual learning has always tracked what changes in the weights. Modern agents accumulate experience in the harness instead, across prompts, memories, tools, skills, and routing rules.\n\nWhat this means is that if you update any harness component, previously reliable behavior can break with the model completely untouched. The paper names that harness-level forgetting and provides a way to measure it.\n\nGuarded harness evolution separates proposing an update from committing it. A Continual Optimizer drafts a candidate harness from post-execution feedback, and a Continual Evaluator commits only after checking current improvement, historical retention, and validity.\n\nRelative gains exceed 10% across textual reasoning, multimodal perception, and open-world interaction.\n\nPaper: arxiv.org/abs/2608.19013\n\narXiv: harness continual learning / guarded harness evolution",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-08-21",
@@ -291,21 +340,26 @@
     "handle": "@thrawn01",
     "subject": "Post by Derrick Wippler on X (review)",
     "url": "https://x.com/thrawn01/status/2090524752599462091",
-    "summary": "",
+    "summary": "Wippler flags David (@dzhng)'s article 'Building software factories (with no slop)' as the best single synthesis of where AI and the SDLC have been converging for months. The article's premise: the volume of code being written now far outpaces our capacity to review it, and we are visibly losing ground to AI slop - so the interesting design question is what review and quality gating look like at that volume. Pairs directly with the hraness 'software factory' post from the same batch.",
     "topics": [
-      "general"
+      "dev-practices",
+      "agent-design",
+      "management"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team",
+      "leadership"
     ],
-    "priority": "near-term",
+    "priority": "now",
     "sourceType": "tweet",
-    "views": "",
+    "views": "77.2K",
     "notes": "flag: review",
-    "enriched": false,
-    "enrichment_status": "failed",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "chrome-unreachable"
+    "enriched": true,
+    "content": "This post brings what everyone has be converging on for months about AI and SDLC into one well explained and reasoned article, with some new ideas sprinkled in.\n\nYou must read!\n\nArticle: Building software factories (with no slop). The amount of code being written today far outpaces our ability to review it. That part isn't controversial. What's more interesting is that we're visibly losing - the amount of AI slop in modern...",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-08-21",
@@ -313,43 +367,49 @@
     "handle": "@ericosiu",
     "subject": "Post by ericosiu on X (hawkmind)",
     "url": "https://x.com/ericosiu/status/2090475762495185337",
-    "summary": "",
+    "summary": "Shares a reusable meta-prompt for picking which business workflow to automate first: feed an agent your SOPs, briefs, templates and examples, then have it identify the highest-leverage repetitive workflow and map trigger, inputs, process, output, human gate, success metric, and stop condition before writing the bot instructions. The 'human gate' and 'stop condition' slots are the transferable part - they generalize well beyond the marketing context and beyond Grok Bot specifically. Quote-tweets the author's own article on running marketing through Grok Bot.",
     "topics": [
-      "general"
+      "prompting",
+      "adjacent",
+      "agent-design"
     ],
     "audience": [
-      "me"
+      "me",
+      "leadership"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "flag: hawkmind",
-    "enriched": false,
-    "enrichment_status": "failed",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "chrome-unreachable"
+    "enriched": true,
+    "content": "Pro tip: Feed Grok Bot this article along with your best SOPs, briefs, templates, and examples.\n\nThen ask it to find the best workflow in your business to turn into a bot.\n\nThis may be the best way to level up your workflows.\n\nPrompt:\n\"Use the attached article as the framework and my company materials as the source of truth. Identify the highest-leverage repetitive marketing workflow I should turn into a Grok Bot first. Map the trigger, inputs, process, output, human gate, success metric, and stop condition. Then write the exact bot instructions needed to run it.\"\n\nArticle: How I Use Grok Bot to Run Marketing (and how you can too). I spent a week putting marketing work through Grok Bot. Here's the system I ended up with, and how to build your own. TL;DR - Start with a workflow you already know works instead of inventing a bot...",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-08-21",
     "author": "Eron",
-    "handle": "@0xeronn",
+    "handle": "@0xEronn",
     "subject": "Post by Eron on X",
     "url": "https://x.com/0xeronn/status/2090454335750644120",
-    "summary": "",
+    "summary": "Promotes a 20-minute explainer video visualizing loss landscapes inside Llama 3.2 and why gradient descent does not get stuck in local minima the way early critics expected. Framing is pop-science and loose - the Hinton anecdote and the 'parameters fell through a wormhole' description are dramatized rather than accurate, and the post leans on a bookmark-and-watch hook. Quote-tweets the author's own companion article on next-token prediction.",
     "topics": [
-      "general"
+      "research",
+      "questionable"
     ],
     "audience": [
       "me"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "failed",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "chrome-unreachable"
+    "enriched": true,
+    "content": "Jeff Hinton dismissed gradient descent in the 1970s because he thought models would get stuck. He won the Nobel Prize in 2024 partly for being wrong about that.\n\nEvery time ChatGPT gets better after a training run, it's because 1.2 billion parameters fell through a wormhole in a loss landscape - not because they crawled downhill one step at a time. This video visualizes exactly what that looks like inside Llama 3.2.\n\n20 minutes. Bookmark & watch today. The misconception that almost stopped AI is more interesting than the solution.\n\nArticle: LLMs do one thing: predict the next word. Here's how that creates something that feels like thinking. Every time you send a message to ChatGPT, Claude or Gemini the same thing happens. The model looks at everything you wrote and makes one decision: what word probably comes next. Then it does it again...",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-08-21",
@@ -357,21 +417,24 @@
     "handle": "@ivanfioravanti",
     "subject": "Post by Ivan Fioravanti on X",
     "url": "https://x.com/ivanfioravanti/status/2090444479840854106",
-    "summary": "",
+    "summary": "Fioravanti strongly endorses @Blackwellboy's multi-day benchmarking deep dive on Qwen 3.8 27B run across 5 DGX Sparks and an RTX 5090. Core finding: 'Qwen 3.8 27B is not one number' - identical weights produce wildly different results depending on reasoning mode, runtime, context length, quantization, and serving stack, so single-number tok/s claims are close to meaningless. Methodology point (which numbers actually mean anything) matters more than the benchmarks themselves.",
     "topics": [
-      "general"
+      "research",
+      "dev-practices"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "28.3K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "failed",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "chrome-unreachable"
+    "enriched": true,
+    "content": "This has really been one of the best article I read recently. @Blackwellboy did an amazing deep dive on Qwen 3.8 27B with various hardware, engines, benchmarks.\n\nRead it all, because it's full of great findings and open minds to new ideas. Like this latency chart that made my brain go crazy on something that I have to test asap!\n\nQwen 3.8 27B is not one number. Same weights, wildly different results depending on reasoning, runtime, context, quant and serving stack. Several days of testing across 5 DGX Sparks + RTX 5090.\n\nThe hardest part of benchmarking this thing wasn't getting numbers. I had plenty of numbers. It was working out which ones actually meant anything. I didn't want to run Qwen once, post a tok/s...",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-08-21",
@@ -379,21 +442,24 @@
     "handle": "@pidotdev",
     "subject": "Post by Pi on X",
     "url": "https://x.com/pidotdev/status/2090416055273542141",
-    "summary": "",
+    "summary": "Defines the 'harness' as the thing that turns a model into an agent, comprising exactly four parts: a system prompt, tools, an agentic loop, and a translation layer across models. Points to a new blog post by Earendil co-founder Colin Daymond (@colindaymond) on what a harness is and how to own yours rather than renting someone else's. Useful vocabulary anchor - the same 'harness' framing the continual-learning paper (post 2090533587066249514) builds on.",
     "topics": [
-      "general"
+      "agent-design",
+      "dev-practices"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "now",
     "sourceType": "tweet",
-    "views": "",
+    "views": "349.3K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "failed",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "chrome-unreachable"
+    "enriched": true,
+    "content": "A harness turns a model into an agent. At it's core it provides 4 things:\n\n- a system prompt\n- tools\n- an agentic loop\n- a translation layer across models\n\nNew blog post from Earendil co-founder @colindaymond on what a harness is, and how you can own yours. Full post below",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-08-21",
@@ -401,21 +467,23 @@
     "handle": "@alexeixbt",
     "subject": "Post by alexei on X",
     "url": "https://x.com/alexeixbt/status/2090407882508394889",
-    "summary": "",
+    "summary": "Motivational thread on self-talk and neuroplasticity: repeated negative statements are framed as literally carving neural 'superhighways,' and the fix is holding a new signal with 'quiet certainty' until reality reorganizes around it. Mixes a real premise (repetition shapes habitual thought) with a pseudo-scientific 'quantum perspective' claim that focused attention turns possibility into experience. Tagged questionable for the mechanism claims, not the underlying mindset material.",
     "topics": [
-      "general"
+      "adjacent",
+      "questionable"
     ],
     "audience": [
       "me"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
     "views": "",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "failed",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "chrome-unreachable"
+    "enriched": true,
+    "content": "that's neuron.\nit doesn't know fear.\nit doesn't know lack.\nit just repeats what you tell it.\n\nyou tell it \"i'm not enough\" 500 times. the neuron fires. then fires again. then builds a superhighway for that belief.\n\nyou tell it \"nothing ever works for me\" every morning. the neuron doesn't argue. it just memorizes.\n\nyou tell it \"i can't change\" long enough, the neuron believes you. and then your reality matches.\n\nthat's neuroplasticity.\n\nfrom a quantum perspective, your focused attention is what turns possibility into experience. the neuron is the bridge, but the bridge only appears when you choose a direction.\n\nthe good news? the same neuron doesn't know truth from a lie. it just repeats. so you can overwrite the lie with a new signal. when you hold that new signal with quiet certainty, reality reorganizes around it, without you forcing it.\n\nwhat most people get wrong: they try to \"think positive\" once. then wonder why nothing changes. one weak signal doesn't build a highway.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-08-21",
@@ -423,43 +491,49 @@
     "handle": "@elonmusk",
     "subject": "Post by Elon Musk on X",
     "url": "https://x.com/elonmusk/status/2090393510956401073",
-    "summary": "",
+    "summary": "Musk pitches Grok's bot mode as having its own remote computer via SpaceXAI, so the agent keeps executing after you close your laptop or reboot your desktop. Quote-tweets Avi Chawla's comparison of OpenClaw vs. Hermes vs. Grok bot, where all three give an agent a persistent job plus files and logins that survive between sessions, but OpenClaw and Hermes are self-hosted (laptop, VPS, or container) while Grok's is hosted. The persistent-execution-substrate distinction is the actual point.",
     "topics": [
-      "general"
+      "agent-design",
+      "industry"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "3.9M",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "failed",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "chrome-unreachable"
+    "enriched": true,
+    "content": "Grok @Bot has its own remote computer @SpaceXAI, so keeps working even when you close your laptop or reboot your desktop.\n\nBig difference.\n\nOpenClaw vs. Hermes vs. Grok @bot, clearly explained:\n\nAll three let you set up an agent with a specific job, and it keeps its files and logins between sessions instead of starting fresh.\n\nOpenClaw and Hermes are self-hosted, so the machine can be a laptop, a VPS, or a container",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-08-21",
     "author": "Mia",
-    "handle": "@miaai_lab",
+    "handle": "@MiaAI_lab",
     "subject": "Post by Mia on X",
     "url": "https://x.com/miaai_lab/status/2090327658508763516",
-    "summary": "",
+    "summary": "Updated local-inference recipe hitting ~300 tok/s for Qwen3.8-27B on a single RTX PRO 6000 by adding DFlash2, up from the 200-223 tok/s single-stream the same stack produced a few days earlier. Runs NVFP4 quantization on SGLang + DSpark, shipping by default with 256k context and 8 concurrencies. Recipe: github.com/MiaAI-Lab/Qwen3.8-27B-RTX-6000-PRO-SGLang-DSpark",
     "topics": [
-      "general"
+      "research",
+      "dev-practices"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "47K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "failed",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "chrome-unreachable"
+    "enriched": true,
+    "content": "Enjoy ~300 tok/s on your RTX PRO 6000 running Qwen3.8-27B with DFlash2\n\nGet the updated recipe here:\n\ngithub.com/MiaAI-Lab/Qwen3.8-27B-RTX-6000-PRO-SGLang-DSpark\n\nRun Qwen3.8-27B NVFP4 on your @NVIDIAAI RTX 6000 PRO\n\nRuns on SGLang + DSpark, and ships by default with 256k context and 8 concurrencies.\n\nYou'll get around 200-223 tok/s single stream\n\nGet it here: github.com/MiaAI-Lab/Qwen3.8-27B-RTX-6000-PRO-SGLang-DSpark\n\ngithub.com/MiaAI-Lab/Qwen3.8-27B-RTX-6000-PRO-SGLang-DSpark",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-08-21",
@@ -467,43 +541,48 @@
     "handle": "@james_y_zou",
     "subject": "Post by James Zou on X",
     "url": "https://x.com/james_y_zou/status/2090094352307736801",
-    "summary": "",
+    "summary": "Zou announces 'Physics of Agents,' new work on what happens when many AI agents interact and influence each other at scale. The claim is that the collective dynamics of interacting agent populations follow compact, predictive laws borrowed from statistical physics, making emergent multi-agent behavior forecastable rather than purely empirical. No paper link in the post itself.",
     "topics": [
-      "general"
+      "research",
+      "agent-design"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "117.6K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "failed",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "chrome-unreachable"
+    "enriched": true,
+    "content": "New work I'm very excited about: Physics of Agents!\n\nAs AI agents become more prevalent, they'll interact and influence one another.\n\nCan we predict the collective behavior that emerges?\n\nSurprisingly, their dynamics follow compact, predictive laws of statistical physics",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-08-21",
     "author": "BasedBiohacker",
-    "handle": "@basedbiohacker",
+    "handle": "@BasedBiohacker",
     "subject": "Post by BasedBiohacker on X",
     "url": "https://x.com/basedbiohacker/status/2071982410082734111",
-    "summary": "",
+    "summary": "Nootropics thread arguing modafinil plus bromantane is a complementary stack because modafinil prolongs synaptic dopamine while bromantane upregulates tyrosine hydroxylase to increase dopamine production, claiming 12+ hours of focus with no tolerance or dependency. Entirely self-reported with no citations, and the safety claims (zero abuse risk, no depletion) are asserted rather than sourced; author appends 'not medical advice.' Part of the health/biohacking vein that currently has no taxonomy home.",
     "topics": [
-      "general"
+      "general",
+      "questionable"
     ],
     "audience": [
       "me"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "56.1K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "failed",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "chrome-unreachable"
+    "enriched": true,
+    "content": "the reason modafinil + bromantane is the golden duo is because modafinil keeps dopamine in the synapse longer and bromantane increases your brain's ability to PRODUCE dopamine by upregulating tyrosine hydroxylase (and some reuptake inhibition)\n\nyou're optimizing supply AND retention simultaneously with virtually zero tolerance buildup\n\nand no dependency or risk of abuse either because we're not depleting reserves or flooding our brains with dopamine. no euphoria. just smooth but unstoppable performance. 12+ hours of deep focus feels as intuitive as riding a bike.\n\nmoda + broma allows acute enhancement AND long-term cognition in focus.\n\nand it's not just hitting the dopamine pathway, it's working in your favour through histamine and orexin, too.\n\nnot medical advice. few.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-08-14",
