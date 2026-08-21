@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-08-21T22:15:57Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-21T22:25:37Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-08-21** — [Matt Pocock](https://x.com/mattpocockuk/status/2090744569960824949) — *now • Skills & MCP • 72.5K views • v1 enriched*  
@@ -23,32 +23,32 @@
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **vibecode-to-production via agent skills** (89 posts, +19 this week)  
+- **persistent always-on agents — bot mode & agent desktops** (222 posts, +19 this week)  
+  Agents that outlive a chat session: persistent bot profiles with their own job and memory, remote/self-hosted execution that survives closing the laptop, and the desktop workspaces around them (Hermes/Nous, Grok bot mode, OpenClaw). Renamed from auto-named cluster on 2026-08-21.
+    - 2026-08-21 — [Tony Simons](https://x.com/tonysimons_/status/2090612261349908991): Part 3 of a Hermes Desktop masterclass series, covering the move from treating it as a chatbot to using it as a workspace: sessions, project…
+    - 2026-08-21 — [Elon Musk](https://x.com/elonmusk/status/2090393510956401073): Musk pitches Grok's bot mode as having its own remote computer via SpaceXAI, so the agent keeps executing after you close your laptop or reb…
+
+- **vibecode-to-production via agent skills** (90 posts, +19 this week)  
   Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
     - 2026-08-21 — [Xudong Han](https://x.com/xudong07452910/status/2090760827230187782): Chinese-language post recommending a Julie Yoo essay on where an AI startup's moat can still sit. Argument: models improve every few months,…
     - 2026-08-21 — [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784): Five patterns for long-running agents, from an Addy Osmani and Shubham Saboo piece: checkpoints, approval gates, governed memory, event-driv…
 
-- **agents-as-judges-of-agents — bossman supervisor / self-verification** (72 posts, +19 this week)  
+- **agents-as-judges-of-agents — bossman supervisor / self-verification** (77 posts, +19 this week)  
   Critical supervisor agent judges worker agents rather than doing the work. Boris Cherny on self-verification loops; Viv on bossman supervisor.
     - 2026-08-21 — [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784): Five patterns for long-running agents, from an Addy Osmani and Shubham Saboo piece: checkpoints, approval gates, governed memory, event-driv…
     - 2026-08-21 — [Aaron Levie](https://x.com/levie/status/2090664811185205722): Levie on when domain-specific post-training beats a general frontier model for applied AI: once you understand a domain well enough and have…
 
-- **prediction-market & crypto trading bots** (269 posts, +18 this week)  
+- **prediction-market & crypto trading bots** (271 posts, +18 this week)  
   Polymarket and crypto trading-bot content: sweeper and arbitrage bots, Markov-chain trade models, tick-data neural nets, plus one genuinely useful 72M-trade dataset. Heavily promotional and largely off-topic for AI engineering — kept and labelled rather than dropped.
     - 2026-08-21 — [0xSero](https://x.com/0xsero/status/2090721689428533258): Organizes a same-day community study session on the Pi agent framework with a three-step onramp: read the Pi repo, set it up locally, then p…
     - 2026-08-21 — [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784): Five patterns for long-running agents, from an Addy Osmani and Shubham Saboo piece: checkpoints, approval gates, governed memory, event-driv…
 
-- **context economy — routing tables beat big context** (267 posts, +18 this week)  
+- **context economy — routing tables beat big context** (268 posts, +18 this week)  
   The recurring finding that agent instruction files should ROUTE rather than CONTAIN: a resolver or decision tree that points at the right skill/document outperforms a large monolithic context. One report replaced a 20,000-line CLAUDE.md that measurably degraded the model with a ~200-line decision tree; others converge on small fixed-slot routing tables and a dedicated RESOLVER.md. Cuts across identity-file, skills-craft and Claude Code setup material, and argues against the accumulate-more-context instinct all three encourage.
 
 [latent] Proposed by a blinded latent pass (run 252) from 4 posts read without their existing topic or concept tags.
     - 2026-08-21 — [Matt Pocock](https://x.com/mattpocockuk/status/2090744569960824949): Pocock shares an /implement-spec skill: a multi-agent implementer that takes a spec plus tickets, does codebase research in a subagent, impl…
     - 2026-08-21 — [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784): Five patterns for long-running agents, from an Addy Osmani and Shubham Saboo piece: checkpoints, approval gates, governed memory, event-driv…
-
-- **Forward Deployed Engineers — the durable AI-era role** (253 posts, +18 this week)  
-  Argument that FDEs are the right shape of role for the AI rollout era. Touches every employee's workflow.
-    - 2026-08-21 — [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784): Five patterns for long-running agents, from an Addy Osmani and Shubham Saboo piece: checkpoints, approval gates, governed memory, event-driv…
-    - 2026-08-21 — [0xSero](https://x.com/0xsero/status/2090543697398038876): Recommends reading the Pi repo as the fastest way to understand agent architecture, with a specific reading order: packages/ai, then package…
 
 
 ### Revisit from last month
@@ -63,16 +63,16 @@
 |-------|-------|---|
 | agent-design | 477 | 58.5% |
 | claude-code | 188 | 23.0% |
-| dev-practices | 341 | 41.8% |
+| dev-practices | 342 | 41.9% |
 | skills-mcp | 184 | 22.5% |
 | prompting | 122 | 15.0% |
 | research | 208 | 25.5% |
 | industry | 117 | 14.3% |
-| management | 126 | 15.4% |
-| adjacent | 30 | 3.7% |
+| management | 127 | 15.6% |
+| adjacent | 31 | 3.8% |
 | solo-operator | 6 | 0.7% |
-| questionable | 115 | 14.1% |
-| general | 101 | 12.4% |
+| questionable | 116 | 14.2% |
+| general | 100 | 12.3% |
 
 ---
 ## Quick Reference (50 Most Recent)
@@ -534,7 +534,7 @@
 
 - [Lotte](https://x.com/lotte_verheyden/status/2056754091817361670) — 2026-05-20: 'Evals, explained' (Langfuse Academy): offline eval sits between running an experiment and shipping. Three methods — manual review (build intuition + ground-truth labels), code-based (deterministic checks: schema, keywords, length, SQL executes), and LLM-as-a-judge (language-understanding qualities, needs calibration against human labels). Prefer binary pass/fail over 1-5 scales; one evaluator per quality; start manual then automate repeatable checks.
 
-- [Ronan Berder](https://x.com/hunvreus/status/2056742771386638454) — 2026-05-20: Pushback on Spec-Driven Development: agents are faster at writing code and (some) humans are better at system thinking, but humans suck at planning. Argument: you can't sit down, write all the specs upfront, and then write code — experienced engineers know that doesn't work. Quote-tweets a now-unavailable @iamsahaj_xyz post.
+- [Ronan Berder](https://x.com/hunvreus/status/2056742771386638454) — 2026-05-20: Argues against spec-driven development for agent-assisted work: you cannot write a full spec up front and then build to it, because understanding a problem's boundaries is what the building is for. Proposes exploiting cheap code instead — prototype, document learnings, rewrite from them, document the solution, refactor, document changes — and claims that loop reaches a good design faster than SDD even when you repeat it. A direct counterweight to the NASA-systems-engineering and spec-first arguments elsewhere in this collection.
 
 - [Garry Tan](https://x.com/garrytan/status/2056711154224034125) — 2026-05-20: Garry Tan on dynamic, just-in-time skills for personal AI: 'markdown is code,' and the agent can change its own skills when new cases appear — 'just-in-time personal software is the most powerful idea of 2026.' A reply notes skill bundles carrying their own tests that the agent modifies in-flight create the compounding effect.
 
@@ -1286,7 +1286,7 @@
 
 - [Rohit Ghumare](https://x.com/ghumare64/status/2052313902214476192) — 2026-05-08: Rohit Ghumare highlights agentmemory — a memory layer for Hermes / Claude Code / Codex that records session observations, compresses them with AI, and injects relevant context back into future sessions. Claims 95% fewer tokens per session and 200x more tool calls before hitting context limits, benchmarked on 240 real coding sessions. MIT-licensed, ~1,000 GitHub stars in its first week. Worth evaluating as a CLAUDE.md alternative for long-running agent work.
 
-- [0xSero](https://x.com/0xsero/status/2050544304360165585) — 2026-05-02: Reminder that Claude Code session history is auto-deleted monthly unless you change settings.json — that's all valuable training/context data. 0xSero shares a backup repo (github.com/0xSero/ai-data-extraction) to help you preserve it.
+- [0xSero](https://x.com/0xsero/status/2050544304360165585) — 2026-05-02: Flags that Claude Code session history is pruned on a rolling monthly basis unless you change the retention setting in settings.json, and argues those transcripts are worth keeping as your own training and reference data. Points at github.com/0xSero/ai-data-extraction for pulling them out. Actionable as a one-time settings change.
 
 - [darkzodchi](https://x.com/zodchiii/status/2050537397377532341) — 2026-05-02: Boris Cherny on how developers leak secrets; links a '.gitignore that saves your career' template, citing Anthropic accidentally exposing 512,000 lines of source over a missing ignore line.
 
@@ -1466,7 +1466,7 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (341)
+### Dev Practices (342)
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/2090744569960824949) — 2026-08-21: Pocock shares an /implement-spec skill: a multi-agent implementer that takes a spec plus tickets, does codebase research in a subagent, implements all tickets in subagents at maximum concurrency, reviews the final code against the spec, then cleans up all worktrees. Aimed at autonomous execution of large chunks of work with minimal supervision. Source: github.com/mattpocock/skills at skills/in-progress/implement-spec/SKILL.md
 
@@ -1722,7 +1722,7 @@
 
 - [Lotte](https://x.com/lotte_verheyden/status/2056754091817361670) — 2026-05-20: 'Evals, explained' (Langfuse Academy): offline eval sits between running an experiment and shipping. Three methods — manual review (build intuition + ground-truth labels), code-based (deterministic checks: schema, keywords, length, SQL executes), and LLM-as-a-judge (language-understanding qualities, needs calibration against human labels). Prefer binary pass/fail over 1-5 scales; one evaluator per quality; start manual then automate repeatable checks.
 
-- [Ronan Berder](https://x.com/hunvreus/status/2056742771386638454) — 2026-05-20: Pushback on Spec-Driven Development: agents are faster at writing code and (some) humans are better at system thinking, but humans suck at planning. Argument: you can't sit down, write all the specs upfront, and then write code — experienced engineers know that doesn't work. Quote-tweets a now-unavailable @iamsahaj_xyz post.
+- [Ronan Berder](https://x.com/hunvreus/status/2056742771386638454) — 2026-05-20: Argues against spec-driven development for agent-assisted work: you cannot write a full spec up front and then build to it, because understanding a problem's boundaries is what the building is for. Proposes exploiting cheap code instead — prototype, document learnings, rewrite from them, document the solution, refactor, document changes — and claims that loop reaches a good design faster than SDD even when you repeat it. A direct counterweight to the NASA-systems-engineering and spec-first arguments elsewhere in this collection.
 
 - [Akshay](https://x.com/akshay_pachaar/status/2056714042455343160) — 2026-05-20: RAG vs CAG explained: Cache-Augmented Generation keeps static, high-value knowledge in the model's KV memory instead of hitting the vector DB every query. Combine them — cache 'cold' static data (policies/docs), retrieve 'hot' dynamic data — for faster, cheaper inference. OpenAI and Anthropic already support prompt caching.
 
@@ -1788,7 +1788,7 @@
 
 - [Adam Ghowiba](https://x.com/adamghowiba/status/2050886233921061281) — 2026-05-05: JP Morgan's investment-research team shared how they built their 'Ask David' multi-agent system - the increasingly canonical pattern: supervisor orchestrator, specialized subagents for retrieval/structured-data/analytics, an LLM-as-judge reflection node before shipping, and human-in-the-loop for the last accuracy gap.
 
-- [0xSero](https://x.com/0xsero/status/2050544304360165585) — 2026-05-02: Reminder that Claude Code session history is auto-deleted monthly unless you change settings.json — that's all valuable training/context data. 0xSero shares a backup repo (github.com/0xSero/ai-data-extraction) to help you preserve it.
+- [0xSero](https://x.com/0xsero/status/2050544304360165585) — 2026-05-02: Flags that Claude Code session history is pruned on a rolling monthly basis unless you change the retention setting in settings.json, and argues those transcripts are worth keeping as your own training and reference data. Points at github.com/0xSero/ai-data-extraction for pulling them out. Actionable as a one-time settings change.
 
 - [darkzodchi](https://x.com/zodchiii/status/2050537397377532341) — 2026-05-02: Boris Cherny on how developers leak secrets; links a '.gitignore that saves your career' template, citing Anthropic accidentally exposing 512,000 lines of source over a missing ignore line.
 
@@ -1863,6 +1863,8 @@
 - [Garry Tan](https://x.com/garrytan/status/2044291663213015491) — 2026-04-15: Garry Tan releases GBrain v0.10.0, packaging his personal OpenClaw "brain" for others: refined RESOLVER.md and SOUL.md, ACLs for multi-user brain access, and 24 distinct "fat" skills shipped with e2e tests, evals, and unit tests.
 
 - [Shaw (spirit/acc)](https://x.com/shawmakesmagic/status/2044269097647779990) — 2026-04-15: Shaw shares a reusable prompt for cleaning up "vibecoded" codebases by spawning 8 parallel subagents, each owning one cleanup task: DRY/dedup, consolidating shared types, removing unused code (knip), untangling circular deps (madge), replacing weak types (any/unknown), stripping needless defensive try/catch, removing legacy/fallback paths, and cutting AI-slop comments. Each subagent researches, writes a critical assessment, then implements high-confidence fixes.
+
+- [Erick](https://x.com/ericksky/status/2044225008419922270) — 2026-04-15: Spanish-language writeup of oMLX (9.9k+ stars), an LLM inference server for Apple Silicon. The notable features are real continuous batching and a tiered KV cache spilling to SSD, so context persists to disk and reloads in milliseconds across prompt switches — plus a native menu-bar app rather than a terminal workflow, and full OpenAI and Anthropic API compatibility so existing agents can point at it unchanged. Relevant to anyone running local models on M-series hardware.
 
 - [mr-r0b0t](https://x.com/mr_r0b0t/status/2044199154004472009) — 2026-04-15: Recommends Ahmad's agent web-scraping stack: SearXNG (source discovery), Firecrawl (known-URL scrape/crawl), Camofox (browser fallback for JS/interaction) - Search -> Extract -> Interact, set up with local models.
 
@@ -3050,6 +3052,8 @@
 
 - [Akshay](https://x.com/akshay_pachaar/status/2044329897603244093) — 2026-04-15: Akshay argues agent memory is three-dimensional, needing a relational store for provenance, a vector store for semantics, and a graph store for relationships, because flat vector search misses multi-hop connections (the "bridge" fact that links two entities). He points to Cognee, an open-source project that unifies all three behind four async calls (default embedded SQLite+LanceDB+Kuzu, swappable for Postgres/Qdrant/Neo4j).
 
+- [Erick](https://x.com/ericksky/status/2044225008419922270) — 2026-04-15: Spanish-language writeup of oMLX (9.9k+ stars), an LLM inference server for Apple Silicon. The notable features are real continuous batching and a tiered KV cache spilling to SSD, so context persists to disk and reloads in milliseconds across prompt switches — plus a native menu-bar app rather than a terminal workflow, and full OpenAI and Anthropic API compatibility so existing agents can point at it unchanged. Relevant to anyone running local models on M-series hardware.
+
 - [0xSero](https://x.com/0xsero/status/2044165332928213243) — 2026-04-15: Guide to running big models on small hardware: REAPs (up to 50% savings), quantizations (75%; AWQ/GPTQ/W4A16/FP8 fast, GGUF/EXL3 slower, MLX best for Apple), and 8-bit KV cache (50-75%).
 
 - [kwindla](https://x.com/kwindla/status/2044106314612408437) — 2026-04-15: kwindla introduces Gradient Bang, claimed to be the first massively-multiplayer, fully LLM-driven game: a retro space-trading game (Factorio-like) where you cajole a ship AI into tasking other AIs. Built to explore sub-agent orchestration, partial context sharing across inference loops, long contexts and episodic memory, LLM-generated dynamic UIs, and voice input. Built on pipecat_ai plus Supabase and Vercel, fully open source.
@@ -3100,11 +3104,9 @@
 
 - [Avi Chawla](https://x.com/_avichawla/status/2033797863948632384) — 2026-03-17: Avi Chawla explains the SKILLRL paper: rather than stuffing long, noisy raw trajectories into agent memory, it distills experiences into compact, reusable skills the agent retrieves and applies to future tasks — analogous to how humans turn driving experience into transferable instincts.
 
-- [Josh Kale](https://x.com/joshkale/status/2033183463759626261) — 2026-03-16: Karpathy scored every job in America on AI replacement risk, then deleted it. Josh cloned the repo before it went down — 342 occupations scored 0-10 on AI exposure. Average across US economy: 5.3/10. Community note: Karpathy called it a casual 2-hour 'vibe code experiment' and deleted because it was 'wildly misinterpreted.'
+- [Josh Kale](https://x.com/joshkale/status/2033183463759626261) — 2026-03-16: Re-hosts a repo Karpathy built and then deleted, scoring 342 US occupations 0-10 on AI exposure with an average of 5.3/10, mirrored at github.com/JoshKale/jobs. Read with the attached Community Note: Karpathy called it a casual two-hour 'vibe code experiment' and pulled it because it was being wildly misinterpreted despite README disclaimers. Kept as an artifact of how a throwaway experiment becomes a cited statistic, not as a defensible dataset — the credibility tag is about the republication, not the author.
 
 - [Huaxiu Yao](https://x.com/huaxiuyaoml/status/2033038170653405308) — 2026-03-15: Huaxiu Yao announces AutoResearchClaw, which automates the full research loop beyond Karpathy's autoresearch experiment loop: one message in, a full conference paper out with real experiments, verified citations, and code. It mines arXiv and Semantic Scholar (50+ papers), has three agents fight over the best hypothesis, writes and self-debugs experiment code, and pivots when results are weak — no human in the loop.
-
-- [kpaxs](https://x.com/kpaxs/status/2032345995095179680) — 2026-03-13: [Login wall — content not extracted. Custom subject suggests a mental model or heuristic worth revisiting.]
 
 - [elvis](https://x.com/omarsar0/status/2031727864199208972) — 2026-03-12: elvis highlights EvoSkill, a self-evolving multi-agent framework that automatically discovers and refines agent skills through iterative failure analysis. Three agents (Executor, Proposer, Skill-Builder) drive the loop, with a Pareto frontier retaining only skills that improve held-out validation while the base model stays frozen. Reported gains: Claude Code w/ Opus 4.5 from 60.6%->67.9% on OfficeQA, +12.1% on SealQA, and +5.3% zero-shot transfer to BrowseComp.
 
@@ -3366,7 +3368,7 @@
 
 - [Akhilesh Mishra](https://x.com/livingdevops/status/2033845127244825041) — 2026-03-17: Akhilesh Mishra reports NVIDIA open-sourced OpenShell at GTC — an infrastructure-layer sandbox/guardrail for coding agents: filesystem locked at sandbox creation, network blocked by default with whitelisting, API keys injected only at runtime (never on disk), policies in simple YAML, running a full K3s cluster inside a single Docker container. One command sandboxes Claude Code, Codex, or Cursor; Adobe, Atlassian, Cisco, CrowdStrike, and Salesforce are integrating it.
 
-- [Josh Kale](https://x.com/joshkale/status/2033183463759626261) — 2026-03-16: Karpathy scored every job in America on AI replacement risk, then deleted it. Josh cloned the repo before it went down — 342 occupations scored 0-10 on AI exposure. Average across US economy: 5.3/10. Community note: Karpathy called it a casual 2-hour 'vibe code experiment' and deleted because it was 'wildly misinterpreted.'
+- [Josh Kale](https://x.com/joshkale/status/2033183463759626261) — 2026-03-16: Re-hosts a repo Karpathy built and then deleted, scoring 342 US occupations 0-10 on AI exposure with an average of 5.3/10, mirrored at github.com/JoshKale/jobs. Read with the attached Community Note: Karpathy called it a casual two-hour 'vibe code experiment' and pulled it because it was being wildly misinterpreted despite README disclaimers. Kept as an artifact of how a throwaway experiment becomes a cited statistic, not as a defensible dataset — the credibility tag is about the republication, not the author.
 
 - [Suhail Gupta](https://x.com/audiinidesign/status/2031213732941230240) — 2026-03-10: Suhail Gupta endorses Harrison Chase's article 'How Coding Agents Are Reshaping Engineering, Product and Design,' agreeing the EPD blur toward functional software over separate roles will only become more visible and obvious in the coming months.
 
@@ -3420,7 +3422,7 @@
 
 - [Santiago](https://x.com/svpino/status/1881336934418755862) — 2025-01-21: Walks through GroundX, an open-source, self-hostable/air-gapped enterprise RAG system. Two services: Ingest (a pretrained vision model that 'understands' documents instead of feeding raw docs to the LLM) and Search (text+vector search with a fine-tuned re-ranker). Santiago's thesis: most teams need better ingestion, not better retrieval; includes a video demo and the free X-Ray inspection tool.
 
-### Management (126)
+### Management (127)
 
 - [Xudong Han](https://x.com/xudong07452910/status/2090760827230187782) — 2026-08-21: Chinese-language post recommending a Julie Yoo essay on where an AI startup's moat can still sit. Argument: models improve every few months, so any product whose main value is 'answering questions more smartly' or automating a process will get absorbed by the foundation models over time - the layer that's much harder to replace is being accountable for outcomes. Healthcare is the worked example, where actually delivering services requires licenses, insurance, payment rails, and liability for errors, and insurers carry real financial risk. Aimed at people building agents, vertical AI, or healthtech; the accountability-as-moat framing transfers directly to other regulated verticals.
 
@@ -3498,7 +3500,7 @@
 
 - [Tom Blomfield](https://x.com/t_blom/status/2056909934156280088) — 2026-05-20: Tom Blomfield breaks down what YC is seeing in recursively self-improving companies — creating recursive self-improving AI loops so founders 'run companies that improve while they sleep.'
 
-- [Ronan Berder](https://x.com/hunvreus/status/2056742771386638454) — 2026-05-20: Pushback on Spec-Driven Development: agents are faster at writing code and (some) humans are better at system thinking, but humans suck at planning. Argument: you can't sit down, write all the specs upfront, and then write code — experienced engineers know that doesn't work. Quote-tweets a now-unavailable @iamsahaj_xyz post.
+- [Ronan Berder](https://x.com/hunvreus/status/2056742771386638454) — 2026-05-20: Argues against spec-driven development for agent-assisted work: you cannot write a full spec up front and then build to it, because understanding a problem's boundaries is what the building is for. Proposes exploiting cheap code instead — prototype, document learnings, rewrite from them, document the solution, refactor, document changes — and claims that loop reaches a good design faster than SDD even when you repeat it. A direct counterweight to the NASA-systems-engineering and spec-first arguments elsewhere in this collection.
 
 - [Linas Beliūnas](https://x.com/linasbeliunas/status/2056679329484927356) — 2026-05-20: Summarizes Anthropic's free AI-native founder playbook: build AROUND Claude across Idea → MVP → Launch → Scale (pressure-test the idea, Claude Code builds the product, Claude Cowork handles ops, Claude turns knowledge into compounding context). 'AI compresses execution but not judgment' — the edge becomes knowing what NOT to build; best AI-native startups have the best AI operating systems, not the biggest teams.
 
@@ -3581,6 +3583,8 @@
 - [Matt Stockton](https://x.com/mstockton/status/2035179208872202320) — 2026-03-22: Matt Stockton argues building AI-enabled products inverts classical software engineering: the 'right way to build' changes every ~3 months, it is often better to burn the system down and rebuild than to adapt, and modern tools make that cheap — warning against sunk-cost V1 RAG systems that stuff a static context window.
 
 - [Beacon](https://x.com/0xxbeacon/status/2033224402070810940) — 2026-03-16: Beacon links Anthropic's Skilljar course catalog (anthropic.skilljar.com) and the access-request page for the Claude Certified Architect: Foundations certification.
+
+- [Kpaxs](https://x.com/kpaxs/status/2032345995095179680) — 2026-03-13: The 'Refrigerator Principle': most authority in an organization was never formally granted — it was assumed, exercised, and then legitimized retroactively because it worked. The corollary is the useful half: much organizational dysfunction persists because everyone assumes someone else owns the fix, so the unblocking move is acting as though you have the authority and handling it as forgiveness rather than permission. Jeremy retitled this one on intake, which flags it as one he wanted to find again.
 
 - [Suhail Gupta](https://x.com/audiinidesign/status/2031213732941230240) — 2026-03-10: Suhail Gupta endorses Harrison Chase's article 'How Coding Agents Are Reshaping Engineering, Product and Design,' agreeing the EPD blur toward functional software over separate roles will only become more visible and obvious in the coming months.
 
@@ -3674,7 +3678,7 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Points to a superengineer.net blog post as a good summary of Elon Musk's 5-step design/engineering method (DFX).
 
-### Adjacent (30)
+### Adjacent (31)
 
 - [ericosiu](https://x.com/ericosiu/status/2090475762495185337) — 2026-08-21: Shares a reusable meta-prompt for picking which business workflow to automate first: feed an agent your SOPs, briefs, templates and examples, then have it identify the highest-leverage repetitive workflow and map trigger, inputs, process, output, human gate, success metric, and stop condition before writing the bot instructions. The 'human gate' and 'stop condition' slots are the transferable part - they generalize well beyond the marketing context and beyond Grok Bot specifically. Quote-tweets the author's own article on running marketing through Grok Bot.
 
@@ -3722,6 +3726,8 @@
 
 - [The Curious Tales](https://x.com/thecurioustales/status/2039360822200442914) — 2026-04-02: A 'drop everything and read this' recommendation of Darshak Rana's life-design essay 'You Are Just 3 Decisions Away From a Completely Different Life.' Life-direction material in the Dan Koe register rather than engineering writing.
 
+- [Kpaxs](https://x.com/kpaxs/status/2032345995095179680) — 2026-03-13: The 'Refrigerator Principle': most authority in an organization was never formally granted — it was assumed, exercised, and then legitimized retroactively because it worked. The corollary is the useful half: much organizational dysfunction persists because everyone assumes someone else owns the fix, so the unblocking move is acting as though you have the authority and handling it as forgiveness rather than permission. Jeremy retitled this one on intake, which flags it as one he wanted to find again.
+
 - [John Rush](https://x.com/johnrushx/status/2029406051716743354) — 2026-03-05: Opinion piece: AI does not make work easier — it strips away the easy 99% of jobs so everyone now competes on the hard 1%, raising cognitive load and stress sharply. A take on how AI reshapes knowledge work.
 
 - [Bojan Tunguz](https://x.com/tunguz/status/2029164042028236942) — 2026-03-05: Reflects on "mid season" knowledge — many roles require grappling with a problem mid-stream without enough runway to catch up on missing context, something even smart people underestimate.
@@ -3750,7 +3756,7 @@
 
 - [zostaff](https://x.com/zostaff/status/2033930728044372275) — 2026-03-18: zostaff's clickbait-titled ('How to Quit Your Job in One Day') walkthrough of an autonomous Polymarket trading system built from three agents: Claude (strategist — probability/recommendation/confidence), Codex (engineer — writes and debugs bot code), and OpenClaw (orchestrator — persistent memory, cron, modular skills, Telegram interface that executes trades and logs everything).
 
-### Questionable (115)
+### Questionable (116)
 
 - [Eron](https://x.com/0xeronn/status/2090454335750644120) — 2026-08-21: Promotes a 20-minute explainer video visualizing loss landscapes inside Llama 3.2 and why gradient descent does not get stuck in local minima the way early critics expected. Framing is pop-science and loose - the Hinton anecdote and the 'parameters fell through a wormhole' description are dramatized rather than accurate, and the post leans on a bookmark-and-watch hook. Quote-tweets the author's own companion article on next-token prediction.
 
@@ -3930,6 +3936,8 @@
 
 - [0xMarioNawfal](https://x.com/roundtablespace/status/2033238044900298844) — 2026-03-16: 0xMarioNawfal amplifies Corey Ganim's article 'Ultimate Claude Cowork Starter Pack: Every Plugin, Skill, and Workflow You Need,' which argues most people install Claude Cowork, poke around for 10 minutes, and revert to ChatGPT because the setup is the hard part.
 
+- [Josh Kale](https://x.com/joshkale/status/2033183463759626261) — 2026-03-16: Re-hosts a repo Karpathy built and then deleted, scoring 342 US occupations 0-10 on AI exposure with an average of 5.3/10, mirrored at github.com/JoshKale/jobs. Read with the attached Community Note: Karpathy called it a casual two-hour 'vibe code experiment' and pulled it because it was being wildly misinterpreted despite README disclaimers. Kept as an artifact of how a throwaway experiment becomes a cited statistic, not as a defensible dataset — the credibility tag is about the republication, not the author.
+
 - [hoeem](https://x.com/hooeem/status/2033146416428708168) — 2026-03-16: A low-substance reaction post ('hoeem style takeover kek') quoting another post that now comes from a suspended account; little usable content beyond the meta-commentary.
 
 - [Meta Alchemist](https://x.com/meta_alchemist/status/2029430826128293906) — 2026-03-05: Roundup of 10 open-source AI memory layers (free, popular on GitHub, some YC-funded) to give coding agents like Claude and Codex better recall than plain memory.md files, with notes on what each is good at and how to combine them. Engagement-styled listicle but substantive.
@@ -3982,7 +3990,7 @@
 
 - [Aakash Gupta](https://x.com/aakashg0/status/1967135994228166848) — 2025-09-15: Boosts another user's step-by-step roadmap for building your first AI agent, calling it 'gold.' Engagement-style framing; the substantive content lives in the referenced roadmap rather than the post itself.
 
-### General (102)
+### General (101)
 
 - [Tony Simons](https://x.com/tonysimons_/status/2090612261349908991) — 2026-08-21: Part 3 of a Hermes Desktop masterclass series, covering the move from treating it as a chatbot to using it as a workspace: sessions, projects, files, previews, attachments, multiple windows, model switching, queues, interruptions, and persistent workspaces. Parts 1 and 2 covered what Hermes Desktop is and how to install and configure it. Product-usage material rather than architecture.
 
@@ -4045,8 +4053,6 @@
 - [Viv](https://x.com/vtrivedy10/status/2044430694458310870) — 2026-04-15: On X you can learn directly from frontier builders; points to Hunter Leath for storage/filesystems alpha. Links 'Bash is the SQL for file systems' (egress fees, querying file systems).
 
 - [Millie Marconi](https://x.com/milliemarconnni/status/2044358003714097601) — 2026-04-15: 'Inversion is the most powerful thinking tool most people never use correctly - they invert the goal, not the system.' Turned Claude into an inversion engine running Munger's method: map every path to failure so the path to success becomes obvious by elimination. Shares 5 prompts.
-
-- [Erick](https://x.com/ericksky/status/2044225008419922270) — 2026-04-15: [Post unavailable — login wall or deleted]
 
 - [Paul Bakaus](https://x.com/pbakaus/status/2044118871326765541) — 2026-04-15: Paul Bakaus praises Matt Sims (English PhD plus ML/startup background) for building in the open at the intersection of creativity, storytelling, and AI. Quote-tweets Sims on teaching Claude Code to think systematically, getting consistent answers to recurring review-for-security / sufficient-tests / update-instruction-files prompts.
 
@@ -5064,7 +5070,7 @@
   'Evals, explained' (Langfuse Academy): offline eval sits between running an experiment and shipping. Three methods — manual review (build intuition + ground-truth labels), code-based (deterministic checks: schema, keywords, length, SQL executes), and LLM-as-a-judge (language-understanding qualities, needs calibration against human labels). Prefer binary pass/fail over 1-5 scales; one evaluator per quality; start manual then automate repeatable checks.
 
 - **2026-05-20** | [Ronan Berder](https://x.com/hunvreus/status/2056742771386638454) | dev-practices, agent-design, management
-  Pushback on Spec-Driven Development: agents are faster at writing code and (some) humans are better at system thinking, but humans suck at planning. Argument: you can't sit down, write all the specs upfront, and then write code — experienced engineers know that doesn't work. Quote-tweets a now-unavailable @iamsahaj_xyz post.
+  Argues against spec-driven development for agent-assisted work: you cannot write a full spec up front and then build to it, because understanding a problem's boundaries is what the building is for. Proposes exploiting cheap code instead — prototype, document learnings, rewrite from them, document the solution, refactor, document changes — and claims that loop reaches a good design faster than SDD even when you repeat it. A direct counterweight to the NASA-systems-engineering and spec-first arguments elsewhere in this collection.
 
 - **2026-05-20** | [Akshay](https://x.com/akshay_pachaar/status/2056714042455343160) | research, dev-practices, claude-code
   RAG vs CAG explained: Cache-Augmented Generation keeps static, high-value knowledge in the model's KV memory instead of hitting the vector DB every query. Combine them — cache 'cold' static data (policies/docs), retrieve 'hot' dynamic data — for faster, cheaper inference. OpenAI and Anthropic already support prompt caching.
@@ -5352,7 +5358,7 @@
   The 'premortem' as a Claude skill: instead of asking 'is this a good plan?' (which triggers optimism), tell Claude 'it's 6 months from now and this is already dead - tell me how it died.' Kahneman's favorite decision technique. Returns each failure mode with a story + early warning signs, then synthesizes most-likely/most-dangerous failures, the biggest hidden assumption, and a revised plan.
 
 - **2026-05-02** | [0xSero](https://x.com/0xsero/status/2050544304360165585) | claude-code, dev-practices
-  Reminder that Claude Code session history is auto-deleted monthly unless you change settings.json — that's all valuable training/context data. 0xSero shares a backup repo (github.com/0xSero/ai-data-extraction) to help you preserve it.
+  Flags that Claude Code session history is pruned on a rolling monthly basis unless you change the retention setting in settings.json, and argues those transcripts are worth keeping as your own training and reference data. Points at github.com/0xSero/ai-data-extraction for pulling them out. Actionable as a one-time settings change.
 
 - **2026-05-02** | [darkzodchi](https://x.com/zodchiii/status/2050537397377532341) | dev-practices, claude-code
   Boris Cherny on how developers leak secrets; links a '.gitignore that saves your career' template, citing Anthropic accidentally exposing 512,000 lines of source over a missing ignore line.
@@ -5593,8 +5599,8 @@
 - **2026-04-15** | [Shaw (spirit/acc)](https://x.com/shawmakesmagic/status/2044269097647779990) | prompting, dev-practices, agent-design
   Shaw shares a reusable prompt for cleaning up "vibecoded" codebases by spawning 8 parallel subagents, each owning one cleanup task: DRY/dedup, consolidating shared types, removing unused code (knip), untangling circular deps (madge), replacing weak types (any/unknown), stripping needless defensive try/catch, removing legacy/fallback paths, and cutting AI-slop comments. Each subagent researches, writes a critical assessment, then implements high-confidence fixes.
 
-- **2026-04-15** | [Erick](https://x.com/ericksky/status/2044225008419922270) | general
-  [Post unavailable — login wall or deleted]
+- **2026-04-15** | [Erick](https://x.com/ericksky/status/2044225008419922270) | dev-practices, research
+  Spanish-language writeup of oMLX (9.9k+ stars), an LLM inference server for Apple Silicon. The notable features are real continuous batching and a tiered KV cache spilling to SSD, so context persists to disk and reloads in milliseconds across prompt switches — plus a native menu-bar app rather than a terminal workflow, and full OpenAI and Anthropic API compatibility so existing agents can point at it unchanged. Relevant to anyone running local models on M-series hardware.
 
 - **2026-04-15** | [mr-r0b0t](https://x.com/mr_r0b0t/status/2044199154004472009) | dev-practices, agent-design, skills-mcp
   Recommends Ahmad's agent web-scraping stack: SearXNG (source discovery), Firecrawl (known-URL scrape/crawl), Camofox (browser fallback for JS/interaction) - Search -> Extract -> Interact, set up with local models.
@@ -5913,8 +5919,8 @@
 - **2026-03-16** | [Beacon](https://x.com/0xxbeacon/status/2033224402070810940) | claude-code, management
   Beacon links Anthropic's Skilljar course catalog (anthropic.skilljar.com) and the access-request page for the Claude Certified Architect: Foundations certification.
 
-- **2026-03-16** | [Josh Kale](https://x.com/joshkale/status/2033183463759626261) | industry, research
-  Karpathy scored every job in America on AI replacement risk, then deleted it. Josh cloned the repo before it went down — 342 occupations scored 0-10 on AI exposure. Average across US economy: 5.3/10. Community note: Karpathy called it a casual 2-hour 'vibe code experiment' and deleted because it was 'wildly misinterpreted.'
+- **2026-03-16** | [Josh Kale](https://x.com/joshkale/status/2033183463759626261) | industry, research, questionable
+  Re-hosts a repo Karpathy built and then deleted, scoring 342 US occupations 0-10 on AI exposure with an average of 5.3/10, mirrored at github.com/JoshKale/jobs. Read with the attached Community Note: Karpathy called it a casual two-hour 'vibe code experiment' and pulled it because it was being wildly misinterpreted despite README disclaimers. Kept as an artifact of how a throwaway experiment becomes a cited statistic, not as a defensible dataset — the credibility tag is about the republication, not the author.
 
 - **2026-03-16** | [hoeem](https://x.com/hooeem/status/2033146416428708168) | questionable, general
   A low-substance reaction post ('hoeem style takeover kek') quoting another post that now comes from a suspended account; little usable content beyond the meta-commentary.
@@ -5922,8 +5928,8 @@
 - **2026-03-15** | [Huaxiu Yao](https://x.com/huaxiuyaoml/status/2033038170653405308) | research, agent-design
   Huaxiu Yao announces AutoResearchClaw, which automates the full research loop beyond Karpathy's autoresearch experiment loop: one message in, a full conference paper out with real experiments, verified citations, and code. It mines arXiv and Semantic Scholar (50+ papers), has three agents fight over the best hypothesis, writes and self-debugs experiment code, and pivots when results are weak — no human in the loop.
 
-- **2026-03-13** | [kpaxs](https://x.com/kpaxs/status/2032345995095179680) | research
-  [Login wall — content not extracted. Custom subject suggests a mental model or heuristic worth revisiting.]
+- **2026-03-13** | [Kpaxs](https://x.com/kpaxs/status/2032345995095179680) | management, adjacent
+  The 'Refrigerator Principle': most authority in an organization was never formally granted — it was assumed, exercised, and then legitimized retroactively because it worked. The corollary is the useful half: much organizational dysfunction persists because everyone assumes someone else owns the fix, so the unblocking move is acting as though you have the authority and handling it as forgiveness rather than permission. Jeremy retitled this one on intake, which flags it as one he wanted to find again.
 
 - **2026-03-13** | [Garry Tan](https://x.com/garrytan/status/2032196172430131498) | claude-code, skills-mcp, dev-practices, agent-design
   Garry Tan shares a CTO's testimonial that his open-source gstack ('god mode') flagged a subtle cross-site-scripting vulnerability the team wasn't aware of, predicting 90%+ of new repos will adopt it. gstack is MIT-licensed at github.com/garrytan/gstack and installs into local Claude Code and into a repo for teammates with two pastes.

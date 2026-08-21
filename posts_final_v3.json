@@ -7391,7 +7391,7 @@
     "handle": "@hunvreus",
     "subject": "Post by Ronan Berder on X",
     "url": "https://x.com/hunvreus/status/2056742771386638454",
-    "summary": "Pushback on Spec-Driven Development: agents are faster at writing code and (some) humans are better at system thinking, but humans suck at planning. Argument: you can't sit down, write all the specs upfront, and then write code — experienced engineers know that doesn't work. Quote-tweets a now-unavailable @iamsahaj_xyz post.",
+    "summary": "Argues against spec-driven development for agent-assisted work: you cannot write a full spec up front and then build to it, because understanding a problem's boundaries is what the building is for. Proposes exploiting cheap code instead — prototype, document learnings, rewrite from them, document the solution, refactor, document changes — and claims that loop reaches a good design faster than SDD even when you repeat it. A direct counterweight to the NASA-systems-engineering and spec-first arguments elsewhere in this collection.",
     "topics": [
       "dev-practices",
       "agent-design",
@@ -7403,11 +7403,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "95K",
     "notes": "",
     "enriched": true,
-    "content": "Why on earth would you want to revert to Spec-Driven Development? Yes, agents are way faster at writing code. And (some) humans are better at system thinking. But we also suck at planning. Any experienced engineer knows you simply cannot sit down, write the specs and then write [Quote: @iamsahaj_xyz - This post is unavailable.]",
-    "enrichment_status": "dead"
+    "content": "Why on earth would you want to revert to Spec-Driven Development?\n\nYes, agents are way faster at writing code. And (some) humans are better at system thinking. But we also suck at planning.\n\nAny experienced engineer knows you simply cannot sit down, write the specs and then write the software that matches it. At least not if you plan on writing something \"good\".\n\nYou need to work through the problem to understand its boundaries and shape a solution that makes sense.\n\nJust leverage the fact that writing code is cheap:\n\n1. Prototype,\n2. Document learnings,\n3. Rewrite based on learnings,\n4. Document solution,\n5. Refactor,\n6. Document changes.\n\nEven if you have to repeat parts or all of this, you'll get to a good solution faster than with SDD.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-20",
@@ -9831,10 +9833,10 @@
   {
     "date": "2026-05-02",
     "author": "0xSero",
-    "handle": "@0xsero",
+    "handle": "@0xSero",
     "subject": "Post by 0xSero on X",
     "url": "https://x.com/0xsero/status/2050544304360165585",
-    "summary": "Reminder that Claude Code session history is auto-deleted monthly unless you change settings.json — that's all valuable training/context data. 0xSero shares a backup repo (github.com/0xSero/ai-data-extraction) to help you preserve it.",
+    "summary": "Flags that Claude Code session history is pruned on a rolling monthly basis unless you change the retention setting in settings.json, and argues those transcripts are worth keeping as your own training and reference data. Points at github.com/0xSero/ai-data-extraction for pulling them out. Actionable as a one-time settings change.",
     "topics": [
       "claude-code",
       "dev-practices"
@@ -9845,11 +9847,13 @@
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "17.3K",
+    "views": "18K",
     "notes": "",
     "enriched": true,
-    "content": "Everyone should save their session history, did u know all your Claude code sessions get deleted every month unless you change that in settings.json? All that is valuable training data they're keeping\\! So you should too.",
-    "enrichment_status": "dead"
+    "content": "Everyone should save their session history, did u know all your Claude code sessions get deleted every month unless you change that in settings.json?\n\nAll that is valuable training data they're keeping! So you should too.\n\nI have a few repos on GH to help you do this. Share it\n\nthank you @0xSero for making github.com/0xSero/ai-data-extraction — now i can tinker with @UnslothAI studio\n\n0xSero/ai-data-extraction",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-05-02",
@@ -11869,22 +11873,27 @@
   {
     "date": "2026-04-15",
     "author": "Erick",
-    "handle": "@ericksky",
+    "handle": "@ErickSky",
     "subject": "Post by Erick on X",
     "url": "https://x.com/ericksky/status/2044225008419922270",
-    "summary": "[Post unavailable — login wall or deleted]",
+    "summary": "Spanish-language writeup of oMLX (9.9k+ stars), an LLM inference server for Apple Silicon. The notable features are real continuous batching and a tiered KV cache spilling to SSD, so context persists to disk and reloads in milliseconds across prompt switches — plus a native menu-bar app rather than a terminal workflow, and full OpenAI and Anthropic API compatibility so existing agents can point at it unchanged. Relevant to anyone running local models on M-series hardware.",
     "topics": [
-      "general"
+      "dev-practices",
+      "research"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "47.6K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "dead"
+    "content": "[Spanish] MAC USERS QUE USAN AGENTES DE IA PARA CODEAR... ESTO LES VA A CAMBIAR LA VIDA.\n\n[oMLX 9.9k+]\n\nEl servidor de inferencia LLM mas bestia para Apple Silicon jamas creado:\n\n- Continuous batching real\n- KV cache tiered (RAM + SSD): el contexto se guarda en disco y vuelve en milisegundos aunque cambies prompt\n- App nativa en la barra de menu (nada de terminal)\n- Compatible 100% con OpenAI + Anthropic API\n- Dashboard brutal + descarga de modelos desde la web\n\nSi tienes Mac M1/M2/M3/M4 y codeas con IA... este es el santo grial de la IA local.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-04-15",
@@ -14591,20 +14600,25 @@
     "handle": "@JoshKale",
     "subject": "Post by Josh Kale on X",
     "url": "https://x.com/joshkale/status/2033183463759626261",
-    "summary": "Karpathy scored every job in America on AI replacement risk, then deleted it. Josh cloned the repo before it went down — 342 occupations scored 0-10 on AI exposure. Average across US economy: 5.3/10. Community note: Karpathy called it a casual 2-hour 'vibe code experiment' and deleted because it was 'wildly misinterpreted.'",
+    "summary": "Re-hosts a repo Karpathy built and then deleted, scoring 342 US occupations 0-10 on AI exposure with an average of 5.3/10, mirrored at github.com/JoshKale/jobs. Read with the attached Community Note: Karpathy called it a casual two-hour 'vibe code experiment' and pulled it because it was being wildly misinterpreted despite README disclaimers. Kept as an artifact of how a throwaway experiment becomes a cited statistic, not as a defensible dataset — the credibility tag is about the republication, not the author.",
     "topics": [
       "industry",
-      "research"
+      "research",
+      "questionable"
     ],
     "audience": [
-      "me"
+      "me",
+      "leadership"
     ],
-    "priority": "near-term",
+    "priority": "long-term",
     "sourceType": "tweet",
-    "views": "274.5K",
+    "views": "285.8K",
     "notes": "",
     "enriched": true,
-    "enrichment_status": "dead"
+    "content": "Karpathy scored every job in America on AI replacement risk. Then he deleted it.\n\nIt went viral last night. Elon replied. News outlets picked it up. So I brought it back to life.\n\nCloned the entire repo to play with before it went down. Every file. The scoring data, the full pipeline, the interactive visualization. All of it.\n\nIt's back up here: https://github.com/JoshKale/jobs\n\nThe data was too noteworthy to let vanish. 342 occupations scored 0-10 on how much AI will reshape them. Average exposure across the entire US economy: 5.3/10.\n\nIf your job lives on a screen, it's worth taking a look.\n\nAndrej Karpathy described this as a casual 2-hour 'vibe code experiment'. He deleted the repo because it was 'wildly misinterpreted' despite README disclaimers. Such simplistic scoring risks fueling unnecessary career anxiety or oversimplified policy views on AI's impact.\n\nJoshKale/jobs (re-hosted mirror)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-16",
@@ -14657,23 +14671,28 @@
   },
   {
     "date": "2026-03-13",
-    "author": "kpaxs",
-    "handle": "@kpaxs",
+    "author": "Kpaxs",
+    "handle": "@Kpaxs",
     "subject": "The refrigerator principle",
     "url": "https://x.com/kpaxs/status/2032345995095179680",
-    "summary": "[Login wall — content not extracted. Custom subject suggests a mental model or heuristic worth revisiting.]",
+    "summary": "The 'Refrigerator Principle': most authority in an organization was never formally granted — it was assumed, exercised, and then legitimized retroactively because it worked. The corollary is the useful half: much organizational dysfunction persists because everyone assumes someone else owns the fix, so the unblocking move is acting as though you have the authority and handling it as forgiveness rather than permission. Jeremy retitled this one on intake, which flags it as one he wanted to find again.",
     "topics": [
-      "research"
+      "management",
+      "adjacent"
     ],
     "audience": [
-      "me"
+      "me",
+      "leadership"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "521.7K",
     "notes": "Jeremy renamed subject — likely important. Revisit when logged in.",
     "enriched": true,
-    "enrichment_status": "dead"
+    "content": "Here a controversial take: most of the authority that exists in any organization was never formally granted to anyone. It was assumed, exercised, and then retroactively legitimized by the fact that it worked.\n\nI call it the \"Refrigerator Principle\": most organizational dysfunction exists because everyone assumes someone else has the authority to fix it, and the fastest path forward is often just pretending you have that authority and dealing with forgiveness rather than permission.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-03-13",
