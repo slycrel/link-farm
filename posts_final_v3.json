@@ -9759,11 +9759,11 @@
     "handle": "@adamghowiba",
     "subject": "Post by Adam Ghowiba on X",
     "url": "https://x.com/adamghowiba/status/2050886233921061281",
-    "summary": "JP Morgan's investment-research team shared how they built their 'Ask David' multi-agent system - the increasingly canonical pattern: supervisor orchestrator, specialized subagents for retrieval/structured-data/analytics, an LLM-as-judge reflection node before shipping, and human-in-the-loop for the last accuracy gap.",
+    "summary": "JP Morgan's investment research team detailed 'Ask David,' their production multi-agent system, and the architecture is the now-standard one: a supervisor agent orchestrating specialized subagents for retrieval, structured data, and analytics, an LLM-as-judge reflection node gating the answer, and human-in-the-loop closing the last accuracy gap. Valuable as a regulated-industry production reference rather than a startup demo, and as evidence the pattern has converged.",
     "topics": [
       "agent-design",
-      "industry",
-      "dev-practices"
+      "dev-practices",
+      "industry"
     ],
     "audience": [
       "dev-team",
@@ -9774,10 +9774,10 @@
     "views": "1.9M",
     "notes": "",
     "enriched": true,
-    "content": "Adam Ghowiba @adamghowiba. JP Morgan's investment research team shared how they built their multi-agent system 'Ask David' - the same architecture pattern showing up everywhere: supervisor agent orchestrates; specialized subagents handle retrieval, structured data, analytics; an LLM-as-judge reflection node before the answer ships; human-in-the-loop for the last accuracy gap. 1.9M views. agent-design, industry, dev-practices.",
+    "content": "JP Morgan's investment research team just shared exactly how they built their multi-agent system 'Ask David', and it's the same architecture pattern showing up everywhere: supervisor agent orchestrates; specialized subagents handle retrieval, structured data, analytics; LLM-as-judge reflection node before the answer ships; human-in-the-loop for the last accuracy gap. worth watching for anyone building.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-05-02",
@@ -9785,7 +9785,7 @@
     "handle": "@dklineii",
     "subject": "Post by Dave Kline on X (read plz)",
     "url": "https://x.com/dklineii/status/2050563237490344194",
-    "summary": "Management playbook: 95% of work problems come from unclear expectations; a simple 15-minute process to get and stay aligned.",
+    "summary": "Management thread attributing most workplace friction to unclear expectations — manager frustrated, employee confused, both stuck — with a 15-minute playbook for getting and staying aligned. Third Dave Kline management post in the collection; the specifics live in the thread replies. The expectation-clarity framing maps neatly onto agent instruction design too.",
     "topics": [
       "management"
     ],
@@ -9795,13 +9795,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "52.3K",
+    "views": "53.8K",
     "notes": "Subject modified — Jeremy flagged as worth reading | flag: read plz",
     "enriched": true,
-    "content": "Dave Kline @dklineii. '95% of work problems are caused by one thing: unclear expectations.' Manager frustrated, employee confused. A simple playbook to get and stay on the same page in 15 minutes. 53.8K views. management.",
+    "content": "95% of work problems are caused by one thing: unclear expectations. The manager is frustrated. The employee is confused. Everyone's stuck. Here's my simple playbook you can run to get (and stay) on the same page in 15 minutes:",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-05-02",
@@ -9809,11 +9809,11 @@
     "handle": "@itsolelehmann",
     "subject": "Post by Ole Lehmann on X",
     "url": "https://x.com/itsolelehmann/status/2050548948419645488",
-    "summary": "The 'premortem' as a Claude skill: instead of asking 'is this a good plan?' (which triggers optimism), tell Claude 'it's 6 months from now and this is already dead - tell me how it died.' Kahneman's favorite decision technique. Returns each failure mode with a story + early warning signs, then synthesizes most-likely/most-dangerous failures, the biggest hidden assumption, and a revised plan.",
+    "summary": "Applies the premortem — imagine the plan has already failed, then explain why — as a countermeasure to model sycophancy: asking Claude 'is this a good plan?' reliably surfaces reasons to say yes, so you inherit false confidence. Kahneman called premortems his single most valuable decision technique. This is Lehmann's third technique in the collection following autoresearch and the LLM Council, all attacking the same problem: getting genuine critique out of a model trained to agree.",
     "topics": [
-      "prompting",
+      "agent-design",
       "management",
-      "agent-design"
+      "prompting"
     ],
     "audience": [
       "dev-team",
@@ -9822,13 +9822,13 @@
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "",
+    "views": "683.1K",
     "notes": "",
     "enriched": true,
-    "content": "Ole Lehmann @itsolelehmann. The 'premortem' technique as a Claude skill: instead of asking 'is this a good plan?' (which triggers Claude's optimism), tell it 'it's 6 months from now and this is already dead - tell me how it died.' Kahneman called it his single most valuable decision technique (used at Google, Goldman, P&G). Claude returns each failure mode with a full failure story + early warning signs, then a synthesis: most likely failure, most dangerous failure, biggest hidden assumption, and a revised plan. Say 'premortem this.' 680.7K views. prompting, management, agent-design.",
+    "content": "POV: claude traveled 6 months into the future and told you exactly how your next move failed. it's called a premortem. daniel kahneman (nobel prize-winning psychologist behind 'thinking fast and slow') called it his single most valuable decision-making technique. google, goldman sachs, and procter & gamble all use it before major launches. here's the problem it solves. when you ask claude 'is this a good plan?' it finds all the reasons to say yes. that's what it was trained to do. so you walk away feeling confident. you execute, and spend weeks or months building on top of that plan. then it blows up. and you realize the problem was obvious in hindsight, you just never stress-tested it.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-05-02",
@@ -9861,10 +9861,10 @@
     "handle": "@zodchiii",
     "subject": "Post by darkzodchi on X",
     "url": "https://x.com/zodchiii/status/2050537397377532341",
-    "summary": "Boris Cherny on how developers leak secrets; links a '.gitignore that saves your career' template, citing Anthropic accidentally exposing 512,000 lines of source over a missing ignore line.",
+    "summary": "Uses the Claude Code source leak — reportedly 512,000 lines exposed because of a missing .gitignore entry, mirrored within hours — as the setup for a hardened .gitignore template and a Boris Cherny explanation of how secret leakage happens. Scarcity-flavored packaging ('saves your career'), but the incident is real and the underlying practice is basic hygiene worth having a template for. Related: several posts in this collection analyse the leaked source for harness architecture.",
     "topics": [
-      "dev-practices",
-      "claude-code"
+      "claude-code",
+      "dev-practices"
     ],
     "audience": [
       "dev-team",
@@ -9872,13 +9872,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "40.9K",
+    "views": "42.4K",
     "notes": "",
     "enriched": true,
-    "content": "darkzodchi @zodchiii. Boris Cherny on why most developers leak secrets. QUOTE ARTICLE: 'The .gitignore That Saves Your Career (Full File Included)' - Anthropic leaked 512,000 lines of their own source code because someone forgot one line in an ignore file; includes a .gitignore template. 42.3K views. dev-practices, claude-code.",
+    "content": "The Creator of Claude Code, Boris Cherny, just explained why most developers are likely to leak every secret they have. If it happened to the people who built Claude, it's probably already happening to you. Watch it, then grab the .gitignore template below.\n\nArticle — The .gitignore That Saves Your Career (Full File Included). Anthropic leaked 512,000 lines of their own source code because someone forgot to add one line to an ignore file. If it happens to them, it's happening to you. Within hours the code was mirrored on...",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-05-02",
@@ -9886,7 +9886,7 @@
     "handle": "@browomo",
     "subject": "Post by Blaze on X",
     "url": "https://x.com/browomo/status/2050509770604331510",
-    "summary": "A French teenager built a voice+gesture-controlled 3D map of his knowledge via Claude + Google Antigravity - no VR/controllers. Stack: Three.js, MediaPipe Hands, local Whisper, Claude API, assembled in a weekend. 217 mental models, 1,284 connections, 80ms gesture-to-redraw, ~1.4s voice-to-graph, zero mouse clicks. A clean prototype of a future PKM system.",
+    "summary": "A gesture-and-voice-controlled 3D knowledge map of 200+ mental models, running in a browser at localhost with no VR headset or paid tooling — five components: Three.js for rendering, MediaPipe Hands for gesture recognition, a local Whisper server for voice, and the Claude API as the reasoning layer. Notable for how ordinary the parts are; the novelty is the assembly, not any single piece.",
     "topics": [
       "agent-design",
       "dev-practices"
@@ -9897,13 +9897,13 @@
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "24.6K",
     "notes": "",
     "enriched": true,
-    "content": "Blaze @browomo. A French teenager built a 3D map of his knowledge controlled by voice and hand gestures via Claude + Google Antigravity - no VR headset, no Notion, no controllers. 5 components: Three.js (3D render), MediaPipe Hands (gestures), local Whisper (voice), Claude API (brain), Antigravity assembled it in a weekend. 217 mental models, 1,284 connections, 60fps face recognition, 80ms gesture-to-redraw, 47MB Obsidian vault. Includes the navigator system prompt (tools: get_node, get_connections, highlight, zoom_to, search_semantic). ~1.4s voice-to-graph loop, zero mouse clicks. A clean prototype of a future PKM system. 24.5K views. agent-design, dev-practices.",
+    "content": "This French teenager built a 3D map of his knowledge and controls it with voice and fingers through Claude + Antigravity. He sits in a regular school room with a MacBook on his lap, opens a web page in the browser at localhost:8765, and raises his hand in front of the laptop camera. On the screen is a 3D cloud of 200+ mental models hanging in space like a starry sky. No VR headset, no Notion subscription, and no separate controllers. His entire loop runs on 5 components: Three.js for 3D rendering, MediaPipe Hands for gesture recognition, a local Whisper server for voice, the Claude API as the brain.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-05-02",
@@ -9911,10 +9911,10 @@
     "handle": "@socialwithaayan",
     "subject": "Post by Muhammad Ayan on X",
     "url": "https://x.com/socialwithaayan/status/2050484688968724820",
-    "summary": "Repo share: warpdotdev/warp - 'an agentic development environment, born out of the terminal.'",
+    "summary": "Bare repo pointer to github.com/warpdotdev/warp — Warp, an agentic development environment built out of the terminal. No commentary; the artifact is the content.",
     "topics": [
-      "dev-practices",
-      "agent-design"
+      "agent-design",
+      "dev-practices"
     ],
     "audience": [
       "dev-team",
@@ -9922,13 +9922,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "2,763",
+    "views": "2,972",
     "notes": "",
     "enriched": true,
-    "content": "Muhammad Ayan @socialwithaayan. Repo share: warpdotdev/warp - 'Warp is an agentic development environment, born out of the terminal.' 2,965 views. dev-practices, agent-design.",
+    "content": "repo: GitHub - warpdotdev/warp: Warp is an agentic development environment, born out of the terminal.\n\nhttps://github.com/warpdotdev/warp",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-05-02",
@@ -9936,11 +9936,11 @@
     "handle": "@kpaxs",
     "subject": "Post by Kpaxs on X",
     "url": "https://x.com/kpaxs/status/2050470605804216695",
-    "summary": "On agency: 'Low-agency asks Can I? High-agency says I'm doing this unless someone stops me.' Most permissions are granted retroactively - easier to get forgiveness than permission; much organizational authority was never formally granted, just assumed and later legitimized because it worked.",
+    "summary": "Organizational-agency argument: the difference between low and high agency is not permission but the direction of the default — once something is done, the organizational answer flips from 'no' to 'that's fine.' The quoted companion post extends it: most authority in any organization was never formally granted, it was assumed, exercised, and retroactively legitimized by working. Worth reading with the counterweight that this scales badly in regulated or safety-critical contexts, where the retroactive default does not hold.",
     "topics": [
-      "management",
+      "adjacent",
       "general",
-      "adjacent"
+      "management"
     ],
     "audience": [
       "dev-team",
@@ -9949,13 +9949,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "120.5K",
+    "views": "128K",
     "notes": "",
     "enriched": true,
-    "content": "Kpaxs @Kpaxs. 'Low-agency: Can I do this? High-agency: I'm doing this unless someone stops me.' Most permissions are granted retroactively - easier to get forgiveness than permission; once something's done the default flips from no to fine. Quote: most organizational authority was never formally granted, just assumed, exercised, and retroactively legitimized because it worked. 127.5K views. management, general.",
+    "content": "Low-agency: 'Can I do this?' High-agency: 'I'm doing this unless someone stops me.' The high-agency person has realized that most permissions are granted retroactively. It's easier to get forgiveness than permission because once something is already done, the default switches from 'no' to 'well, I guess it's fine.'\n\nHere's a controversial take: most of the authority that exists in any organization was never formally granted to anyone. It was assumed, exercised, and then retroactively legitimized by the fact that it worked.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-05-02",
@@ -9963,11 +9963,11 @@
     "handle": "@om_patel5",
     "subject": "Post by Om Patel on X (worth a look)",
     "url": "https://x.com/om_patel5/status/2050441119003971683",
-    "summary": "Engagement-y claim that /graphify makes Claude 71.5x more token-efficient at understanding a codebase - maps every function/dependency upfront, extracts structure locally, transcribes media via Whisper, uses Claude + subagents for docs/images, tags relationships EXTRACTED/INFERRED/AMBIGUOUS, exports HTML/JSON. Handles 25 languages, PDFs, SQL, docx/xlsx; post-commit hooks rebuild the graph. 40k stars.",
+    "summary": "/graphify builds a dependency and concept graph of a project upfront — extracting code structure locally with no AI calls, transcribing video and audio via local Whisper, then using parallel subagents to pull concepts from docs, papers, and images — merging everything into one clustered graph exported as interactive HTML, queryable JSON, and a graph database. The premise matches SoulForge elsewhere in this collection: give the agent structural knowledge instead of letting it explore file by file. The 71.5x figure is unsourced marketing; the local-first extraction design is the substance.",
     "topics": [
-      "skills-mcp",
       "agent-design",
-      "dev-practices"
+      "dev-practices",
+      "skills-mcp"
     ],
     "audience": [
       "dev-team",
@@ -9978,10 +9978,10 @@
     "views": "",
     "notes": "Subject modified — Jeremy flagged as worth a look | flag: worth a look",
     "enriched": true,
-    "content": "Om Patel @om_patel5. Engagement-y: '/graphify makes Claude 71.5x more efficient at understanding your codebase.' Maps every function/dependency/connection upfront; extracts structure locally (no AI calls), transcribes video/audio via Whisper, uses Claude + parallel subagents for docs/papers/images. Handles code in 25 languages (tree-sitter AST), markdown/HTML/YAML, PDFs (citation mining), images (Claude vision), YouTube, SQL, docx/xlsx; tags relationships EXTRACTED/INFERRED/AMBIGUOUS; exports interactive HTML + queryable JSON + report. Post-commit hooks rebuild the graph. Works with Claude Code, Codex, Cursor, Gemini CLI, Copilot, etc. 40k stars, 450k downloads. 27.7K views. skills-mcp, agent-design, dev-practices.",
+    "content": "THIS CLAUDE CODE SKILL MAKES CLAUDE 71.5X MORE EFFICIENT AT UNDERSTANDING YOUR CODEBASE. it's called /graphify and it went viral in 26 days. instead of claude guessing what your project looks like or wasting tokens exploring files one by one, the skill maps every function, every dependency, and every connection upfront. claude gets full context immediately. here's how it works: it extracts structure from code files locally with no AI calls. transcribes any video or audio locally with whisper. then uses claude to pull concepts and relationships from docs, papers, and images with parallel subagents. everything merges into one graph, gets clustered, and exports as interactive HTML, queryable JSON, and a graph database.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-05-02",
@@ -10014,10 +10014,10 @@
     "handle": "@rabois",
     "subject": "Post by Keith Rabois on X",
     "url": "https://x.com/rabois/status/2050250243552239956",
-    "summary": "Keith Rabois flags Ann Miura-Ko's 'Everyone wants to be AI-pilled. Most Companies Are Still Level 1' - office visits to scaled companies (e.g. Ramp) vs AI-native startups, framing a maturity-level view of AI adoption.",
+    "summary": "One-word endorsement; the content is entirely Ann Miura-Ko's piece arguing most companies remain at Level 1 of AI adoption despite wanting to be AI-native, based on office visits extended from AI-pilled startups to scaled organizations including Ramp (1,500 people). Pairs directly with the Turing Post organizational-legibility argument and the Ramp harness post elsewhere in this collection — three independent takes on the same adoption gap.",
     "topics": [
-      "management",
-      "industry"
+      "industry",
+      "management"
     ],
     "audience": [
       "leadership",
@@ -10025,13 +10025,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "227.7K",
+    "views": "232.3K",
     "notes": "",
     "enriched": true,
-    "content": "Keith Rabois @rabois. 'Useful.' QUOTE ARTICLE: Ann Miura-Ko @annimaniac 'Everyone wants to be AI-pilled. Most Companies Are Still Level 1' - office visits to scaled companies (e.g. Ramp, 1,500 people) vs AI-native startups; a maturity-level view of AI adoption. 232.2K views. management, industry.",
+    "content": "Useful.\n\nArticle — Everyone wants to be AI-pilled. Most Companies Are Still Level 1. Over the last few weeks I've expanded our office visits beyond AI-pilled startups to scaled companies — most recently Ramp, a 1,500-person organization. The earlier visits showed me what AI-native...",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-05-02",
@@ -10039,11 +10039,11 @@
     "handle": "@danshipper",
     "subject": "Post by Dan Shipper 📧 on X",
     "url": "https://x.com/danshipper/status/2050235671466606665",
-    "summary": "Dan Shipper flags Marcus's 'definitive' AI product-management guide (every.to) - a former PM shipping product like a madman with coding agents.",
+    "summary": "Points at Every's AI product management guide, written by a PM at Every who moved from managing product to shipping it directly using coding agents. Relevant to the role-boundary question the collection keeps circling — what a product manager becomes when the implementation bottleneck substantially loosens.",
     "topics": [
-      "management",
+      "agent-design",
       "dev-practices",
-      "agent-design"
+      "management"
     ],
     "audience": [
       "dev-team",
@@ -10052,13 +10052,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "212.7K",
+    "views": "224.4K",
     "notes": "",
     "enriched": true,
-    "content": "Dan Shipper @danshipper. 'must read' - Marcus went from PM to shipping product like a madman at Every with coding agents; wrote the definitive AI product-management guide (every.to/guides/ai-product-management-guide). 224K views. management, dev-practices, agent-design.",
+    "content": "must read. Marcus went from product manager to shipping product like a madman @every with coding agents. he wrote the definitive guide for how to do it: https://every.to/guides/ai-product-management-guide",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-05-02",
@@ -10066,7 +10066,7 @@
     "handle": "@regent0x_",
     "subject": "Post by regent0x on X",
     "url": "https://x.com/regent0x_/status/2050143341656838449",
-    "summary": "Story of a solo contractor making $320k/yr with 5 parallel specialist Claude Code agents (architect/coder/reviewer/tester/ops) that don't share context and coordinate via a shared task queue - taking team-sized projects solo, ~13x return on API spend. 'Don't compete with teams; become the team.'",
+    "summary": "Describes a solo contractor running five specialist agents in parallel — architect, coder, reviewer, tester, ops — deliberately not sharing context so they don't collide, taking on work sized for teams of 5-8. The $320k/year figure is second-hand from a bilibili video and unverifiable, and the post funnels to the author's own guide, so treat the economics as marketing. The role-separation-without-shared-context pattern is the part worth extracting, and it contrasts usefully with the shared-memory approaches elsewhere in this collection.",
     "topics": [
       "agent-design",
       "claude-code",
@@ -10079,13 +10079,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "190.9K",
     "notes": "",
     "enriched": true,
-    "content": "regent0x @regent0x_. Story of a Chinese solo contractor making $320k/yr with 5 parallel specialist Claude Code agents (architect, coder, reviewer, tester, ops) that don't share context and communicate via a shared task queue - no shared context = no conflicts. Takes team-sized projects (3D rendering pipeline $25k, trading dashboard $33k, CRM rebuild $44k), delivers early solo. ~$2k/mo API cost, ~$26k/mo revenue (13x). 'Don't compete with teams; become the team.' QUOTE ARTICLE: 'How I Turned My Claude Code Into a 24/7 Dev Team (Full Guide + Repos).' 189.8K views. agent-design, claude-code, dev-practices.",
+    "content": "this chinese developer making $320k/year as a solo contractor. his secret: 5 AI agents running in parallel, each one a specialist - architect, coder, reviewer, tester, ops. they don't share context, don't step on each other, just ship. he takes on projects meant for teams of 5-8 engineers, delivers in half the time, keeps the entire budget. found this video on bilibili at 3am and watched it four times. guy sitting at his desk, two monitors filled with code, and he's barely touching the keyboard.\n\nArticle — How I Turned My Claude Code Into 24/7 Dev Team (Full Guide + Repos). most people use claude code like a chatbot. i turned mine into a 24/7 dev team that remembers everything and gets smarter every session. bookmark this so as not to forget. i mass used claude code...",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-05-02",
@@ -10093,7 +10093,7 @@
     "handle": "@sheriyuo",
     "subject": "Post by Xiuyu Li on X",
     "url": "https://x.com/sheriyuo/status/2050067900820840791",
-    "summary": "Xiuyu Li recommends will brown's 'On SFT, RL, and on-policy distillation' (with Claude Opus 4.7) - why the SFT-RL pipeline works, where on-policy distillation fits, and how self-distillation goes wrong.",
+    "summary": "Endorsement of Will Brown's writeup 'On SFT, RL, and on-policy distillation' — why the SFT-then-RL pipeline works, where on-policy distillation fits into it, and the specific ways self-distillation fails. Notable as a training-methods piece in a corpus otherwise dominated by harness and tooling material, and for being co-credited to Claude Opus 4.7 with the author noting the arguments are his.",
     "topics": [
       "research"
     ],
@@ -10103,13 +10103,13 @@
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "158.3K",
+    "views": "162.4K",
     "notes": "",
     "enriched": true,
-    "content": "Xiuyu Li @sheriyuo. 'Exceptionally well-written - if you're into RL, read it.' QUOTE ARTICLE: will brown @willccbb 'On SFT, RL, and on-policy distillation' (with Claude Opus 4.7) - why the SFT-RL pipeline works, where on-policy distillation fits, and how self-distillation goes wrong. 162.2K views. research.",
+    "content": "This is exceptionally well-written. If you're into RL, definitely give it a read.\n\nArticle — On SFT, RL, and on-policy distillation. Why the SFT-RL pipeline works, where on-policy distillation fits, and how self-distillation goes wrong. Authors: Will Brown & Claude Opus 4.7, April 30, 2026.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-05-02",
@@ -10117,11 +10117,11 @@
     "handle": "@gptmaestro",
     "subject": "Post by GPT Maestro on X",
     "url": "https://x.com/gptmaestro/status/2050060105052561681",
-    "summary": "Points to 'Exploring GEPA' - how GEPA optimizes prompts/programs before inference (rather than cramming more context), addressing the same limitation RLMs target.",
+    "summary": "Points at a Quarq Labs explainer on GEPA, which optimizes the prompt itself before inference rather than expanding what gets stuffed into the context window. The article situates GEPA alongside Recursive Language Models as two approaches to the same underlying limitation. Same family as the harness-optimization and context-economy work elsewhere in the collection — improve the input rather than enlarge the window.",
     "topics": [
-      "research",
+      "agent-design",
       "prompting",
-      "agent-design"
+      "research"
     ],
     "audience": [
       "dev-team",
@@ -10129,13 +10129,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "16.4K",
+    "views": "17.7K",
     "notes": "",
     "enriched": true,
-    "content": "GPT Maestro @GptMaestro. 'Clear explanation of how GEPA optimizes prompts before inference instead of cramming more into the context window.' QUOTE ARTICLE: Quarq @quarqlabs 'Exploring GEPA' - RLMs and GEPA both address that today's LLM systems don't improve their own prompts/programs. 17.6K views. research, prompting, agent-design.",
+    "content": "Clear explanation of how GEPA optimizes prompts before inference instead of just cramming more into the context window.\n\nArticle — Exploring GEPA. There's been a spike in discussion around Recursive Language Models (RLMs) and GEPA on this platform. Both of these are trying to address the same underlying limitation: today's LLM systems don't...",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-05-02",
@@ -10143,11 +10143,11 @@
     "handle": "@bbssppllvv",
     "subject": "Post by Mike Bespalov on X",
     "url": "https://x.com/bbssppllvv/status/2049924037111841027",
-    "summary": "'Agents make ugly UIs because they've never seen good design.' Released 2,000 DESIGN.md files from the world's best products, structured for a model to read - colors, type, spacing, layouts. Free at styles.refero.design.",
+    "summary": "styles.refero.design — 2,000 DESIGN.md files distilled from well-designed products (colors, typography, spacing, layout) formatted for a model to read, addressing why coding agents produce ugly interfaces: they have no reference for good design. Free. A neat instance of the broader pattern in this collection of encoding tacit professional judgment as markdown an agent loads.",
     "topics": [
-      "skills-mcp",
+      "agent-design",
       "dev-practices",
-      "agent-design"
+      "skills-mcp"
     ],
     "audience": [
       "dev-team",
@@ -10155,13 +10155,13 @@
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "1.4M",
+    "views": "1.5M",
     "notes": "",
     "enriched": true,
-    "content": "Mike Bespalov @bbssppllvv. 'Agents make ugly UIs because they've never seen good design.' Released 2,000 DESIGN.md files from the world's best products, structured for a model to read and learn - colors, type, spacing, layouts. Free at styles.refero.design. 1.5M views. skills-mcp, dev-practices, agent-design.",
+    "content": "Agents make ugly UIs because they've never seen good design. We've been fixing that: 2,000 DESIGN.md files from the world's best products, structured for a model to read and learn. Colors, type, spacing, layouts and more. Free. http://styles.refero.design",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-05-02",
@@ -10218,11 +10218,11 @@
     "handle": "@akshay_pachaar",
     "subject": "Post by Akshay 🚀 on X",
     "url": "https://x.com/akshay_pachaar/status/2050201509821063576",
-    "summary": "'How to write Skills that never fail.' Skills use progressive disclosure (metadata always loaded, body on trigger, resources on demand) so the description does 90% of the work. Six practices: pushy directive descriptions (100% vs 37% activation), explicit exclusion clauses, keep SKILL.md under 200 lines, pair every generation skill with a verifier, iterate on the right layer (description vs body vs scripts), and build a regression fixture per skill. 'Maturation is removing something, not adding it.'",
+    "summary": "Explains why Claude skills fail silently — never triggering, triggering on wrong prompts, or skipping the steps they were meant to enforce — by working from how skills actually load. The mechanism is progressive disclosure across three tiers: YAML frontmatter (name and description) always resident in the system prompt at ~100 tokens per skill, the SKILL.md body loaded on trigger, and deeper resources beyond that. Understanding the tier boundary is what makes description-writing tractable. Practical and directly applicable to skill authoring.",
     "topics": [
-      "skills-mcp",
       "agent-design",
-      "dev-practices"
+      "dev-practices",
+      "skills-mcp"
     ],
     "audience": [
       "dev-team",
@@ -10230,13 +10230,13 @@
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "",
+    "views": "11.8K",
     "notes": "",
     "enriched": true,
-    "content": "Akshay @akshay_pachaar. 'How to write Skills that never fail.' Skills use progressive disclosure (3 tiers): Tier 1 metadata (YAML name/description always loaded, ~100 tokens), Tier 2 SKILL.md body (loaded on trigger from description alone), Tier 3 bundled resources (scripts/reference files/assets loaded on demand) - so the description does 90% of the work. Six practices: 1) write pushy not passive descriptions ('<Domain> expert. ALWAYS invoke when the user asks about <triggers>. Do not <alt> directly, use this skill first' - a 650-trial experiment: directive 100% activation vs passive 37%); 2) add explicit exclusion clauses (like Anthropic's docx skill) so skills don't fight over vocabulary; 3) keep SKILL.md under 200 lines (500 is a max; pure-judgment skills 30-60 lines); 4) pair every generation skill with a verifier (binary mechanical assertions; LLM-as-judge only for subjective dims); 5) iterate on the right layer (never fires->description; wrong prompts->exclusions; wrong format->body; repeated helper code->scripts/); 6) build a regression fixture per skill (3 saved prompts, re-run on model updates). 'Maturation is removing something, not adding it.' 11.7K views. skills-mcp, agent-design, dev-practices.",
+    "content": "How to write Skills that never fail. Writing good skills for agents is one of the highest-leverage skills you can develop today. But many Claude skills fail silently. They never trigger, they trigger on the wrong prompts, or they skip the steps they were written to enforce. The fix starts with understanding how skills actually load. Skills run on progressive disclosure, a 3-tier loading system that keeps your context lean. Tier 1: Metadata (always loaded) - the YAML frontmatter (name and description) sits in the system prompt at session start, roughly 100 tokens per skill. Tier 2: SKILL.md body (loaded on trigger).",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-05-01",
@@ -10244,7 +10244,7 @@
     "handle": "@allen_explains",
     "subject": "Post by Allen Braden on X",
     "url": "https://x.com/allen_explains/status/2050163013165224332",
-    "summary": "Claims a Jane Street junior landed a $220-600K role using AI on trillions of data points, with a 1-hour lecture. A Community Note corrects it: the video is actually a 2024 Horace He talk on ML systems/infrastructure (guest speaker, not employee); the trading/hiring story is fabricated.",
+    "summary": "Carries a Community Note that contradicts its central claim. The post presents a lecture as a Jane Street junior explaining how he used AI to land a $220K-$600K role; the note establishes that it is a 2024 guest talk by Horace He, who does not work at Jane Street and did not get hired that way, and that the actual subject is ML systems and infrastructure. The underlying talk is legitimate and worth watching on its real topic — the framing around it is fabricated. A clean example of why the questionable tag tracks packaging separately from content.",
     "topics": [
       "questionable",
       "research"
@@ -10254,13 +10254,13 @@
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "860K",
+    "views": "885.9K",
     "notes": "",
     "enriched": true,
-    "content": "Allen Braden @allen_explains. Claims a Jane Street junior landed a $220K-$600K role using AI to analyze trillions of data points, with a 1-hour lecture on his 'system.' NOTE (Community Note correction): the video is actually a 2024 Horace He talk at Jane Street (guest speaker, not employee) about ML systems and infrastructure - the trading/hiring story is fabricated. 883.7K views. questionable, research.",
+    "content": "A junior at Jane Street reportedly landed a $220K-$600K role because he used AI to analyze trillions of data points faster than most teams ever could. In this 1-hour lecture, he breaks down the exact system behind it: how he researches massive datasets, how AI finds patterns humans miss, how his machine turns raw data into decisions, how you can apply the same thinking yourself. Skip Netflix tonight. Watch this instead.\n\nReaders added context to this video: The video is a 2024 talk by Horace He at Jane Street as a guest speaker. He is not an employee there and did not land a role using AI for data analysis. The talk is about ML systems and infrastructure. janestreet.com/tech-talks/",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-05-01",
@@ -10268,7 +10268,7 @@
     "handle": "@wanerfu",
     "subject": "Post by 摆烂程序媛 on X",
     "url": "https://x.com/wanerfu/status/2050158295911137370",
-    "summary": "Scrapling (github.com/D4Vinci/Scrapling): scrape any site without being blocked - native Cloudflare bypass, no bot detection, no selectors to maintain, claimed 774x faster than BeautifulSoup, open-source.",
+    "summary": "Scrapling (github.com/D4Vinci/Scrapling) wired into OpenClaw for web scraping — claimed Cloudflare bypass, bot-detection evasion, adaptive selectors that don't need maintenance when pages change, and 774x faster parsing than BeautifulSoup. The speed figure is a parser benchmark rather than end-to-end, and the anti-detection framing raises the usual terms-of-service questions; the self-healing selector behaviour is the durable part. Original post in Chinese.",
     "topics": [
       "dev-practices",
       "skills-mcp"
@@ -10279,13 +10279,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "270.2K",
+    "views": "290.7K",
     "notes": "",
     "enriched": true,
-    "content": "wanerfu @wanerfu (Translated from Chinese). Scrapling (github.com/D4Vinci/Scrapling): scrape any website without being blocked - native Cloudflare bypass, no bot detection, no selectors to maintain, claimed 774x faster than BeautifulSoup, open-source. 288.7K views. dev-practices, skills-mcp.",
+    "content": "OpenClaw can now scrape any website without being blocked - zero bot detection, native bypass of Cloudflare, 774 times faster than BeautifulSoup. No need to maintain selectors. No workarounds. Just data. This is an unfair advantage, and it's completely open-source. https://github.com/D4Vinci/Scrapling (Originally posted in Chinese.)\n\nhttps://github.com/D4Vinci/Scrapling",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-05-01",
@@ -10293,7 +10293,7 @@
     "handle": "@teknium",
     "subject": "Post by Teknium 🪽 on X",
     "url": "https://x.com/teknium/status/2050098631907434871",
-    "summary": "New Hermes feature (inspired by ralph loops and Codex's /goal): /goal <prompt> runs a loop with a supervisor model checking whether the task completed at the end of each agent loop, forcing it to continue until done. PR linked.",
+    "summary": "hermes-agent added /goal: a supervisor model evaluates at the end of each agent loop whether the task is actually complete and forces continuation if not — inspired by ralph loops and Codex's forthcoming /goal. A compact answer to premature-stopping, one of the failure modes the harness literature in this collection keeps naming. PR github.com/NousResearch/hermes-agent/pull/18262.",
     "topics": [
       "agent-design",
       "dev-practices",
@@ -10305,13 +10305,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "360.5K",
+    "views": "368K",
     "notes": "",
     "enriched": true,
-    "content": "Teknium @Teknium. New Hermes feature inspired by ralph loops and Codex's upcoming /goal: /goal <prompt> starts a loop with a supervisor model determining whether the task completed at the end of an agent loop; if not, it forces the agent to keep going until done. PR: github.com/NousResearch/hermes-agent/pull/18262. 367.7K views. agent-design, dev-practices, prompting.",
+    "content": "I have to go out of town for a funeral thru the weekend but I am leaving everyone with one new cool feature inspired by ralph loops and Codex's upcoming /goal feature. If you use /goal <prompt>, it will start a loop with a supervisor model determining whether the task completed at the end of an agent loop - if it hasn't it will force it to keep going until it's done! PR: https://github.com/NousResearch/hermes-agent/pull/18262\n\nhttps://github.com/NousResearch/hermes-agent/pull/18262",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-05-01",
@@ -10319,7 +10319,7 @@
     "handle": "@alibaba_qwen",
     "subject": "Post by Qwen on X",
     "url": "https://x.com/alibaba_qwen/status/2049861145574690992",
-    "summary": "Qwen released Qwen-Scope, an open suite of sparse autoencoders for the Qwen family turning SAE features into tools: steer outputs by manipulating internal features (no prompt engineering), classify/synthesize targeted data, trace code-switching/repetition to source, and analyze feature activations for smarter benchmarks.",
+    "summary": "Alibaba released Qwen-Scope, an open suite of sparse autoencoders for the Qwen family, framed as interpretability turned into tooling rather than a research artifact: steer outputs by manipulating internal features instead of prompt engineering, synthesize targeted data from minimal seeds, trace failure modes like code-switching and repetition back to their source features, and use activation patterns to prune redundant benchmarks. One of the more concrete attempts to make mechanistic interpretability operationally useful.",
     "topics": [
       "research"
     ],
@@ -10329,13 +10329,13 @@
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "377.4K",
     "notes": "",
     "enriched": true,
-    "content": "Qwen @Alibaba_Qwen. Released Qwen-Scope, an open suite of sparse autoencoders (SAEs) for the Qwen model family turning SAE features into practical tools: Inference (steer outputs by manipulating internal features, no prompt engineering), Data (classify/synthesize targeted data from minimal seeds for long-tail capabilities), Training (trace code-switching/repetitive generation to source and fix at root), Evaluation (analyze feature activation to select smarter benchmarks). Blog/HuggingFace/ModelScope + technical report. 375.2K views. research.",
+    "content": "Today we're releasing Qwen-Scope, an open suite of sparse autoencoders for the Qwen model family. It turns SAE features into practical tools: Inference - steer model outputs by directly manipulating internal features, no prompt engineering needed. Data - classify and synthesize targeted data with minimal seed examples, boosting long-tail capabilities. Training - trace code-switching and repetitive generation back to their source, fix them at the root. Evaluation - analyze feature activation patterns to select smarter benchmarks and cut redundancy. We hope the community uses Qwen-Scope to uncover new mechanisms inside Qwen models.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-30",
@@ -10343,24 +10343,24 @@
     "handle": "@garrytan",
     "subject": "Post by Garry Tan on X",
     "url": "https://x.com/garrytan/status/2049720409965392052",
-    "summary": "Garry Tan shipping GBrain quality-of-life PRs needed to make it work on a brain pushing 74k markdown files.",
+    "summary": "Shipping note on GBrain, notable for one number: the target corpus is 74,000 markdown files. Read alongside Tan's earlier post about integrations being the barrier to reaching 1,000-10,000 files, it marks how far the personal-knowledge-base scale had moved, and that most of the work at that size is unglamorous quality-of-life fixes rather than new capability.",
     "topics": [
-      "skills-mcp",
       "agent-design",
-      "dev-practices"
+      "dev-practices",
+      "skills-mcp"
     ],
     "audience": [
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "10.4K",
+    "views": "12.6K",
     "notes": "",
     "enriched": true,
-    "content": "Garry Tan @garrytan. 'Literally have 10 PRs to drop tonight on GBrain' - first is quality-of-life work needed to make GBrain work on a brain pushing 74k markdown files. 12.6K views. skills-mcp, agent-design, dev-practices.",
+    "content": "Literally have 10 PRs to drop tonight on GBrain, here's the first one. Lots of quality of life stuff, this is what it takes to make GBrain work on a brain pushing 74k markdown files.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-30",
@@ -10368,11 +10368,11 @@
     "handle": "@howtoai_",
     "subject": "Post by How To AI on X",
     "url": "https://x.com/howtoai_/status/2049567036003795269",
-    "summary": "'Tencent killed fine-tuning and RL with an $18 budget' via Training-Free GRPO: instead of updating weights (expensive, causes base-model amnesia), extract the 'semantic advantage' of why one answer beat another, compress it into a 'token prior,' and attach it in the API call. On DeepSeek-V3, a few dozen samples produced a specialized expert outperforming fine-tuned models - zero parameter updates. Hype framing but a real technique.",
+    "summary": "Explains Tencent research claiming task specialization comparable to RL fine-tuning for roughly $18, without touching model weights — sidestepping both the GPU cost of GRPO-style training (the method behind DeepSeek's reasoning models) and the catastrophic-forgetting problem where specializing a model degrades its general ability. 'Killed fine-tuning and RL' is hype framing, but the weight-free specialization direction is the same one the harness-optimization work in this collection approaches from the engineering side. Posted under the handle @HowToPrompt__.",
     "topics": [
-      "research",
+      "agent-design",
       "prompting",
-      "agent-design"
+      "research"
     ],
     "audience": [
       "dev-team",
@@ -10380,13 +10380,13 @@
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "64.6K",
     "notes": "",
     "enriched": true,
-    "content": "How To Prompt @HowToPrompt__ (was @howtoai_). 'Tencent killed fine-tuning and RL with an $18 budget' via Training-Free GRPO. Instead of updating weights (expensive, causes overfitting/base-model amnesia), they run the same trial-and-error but extract the 'semantic advantage' (the logic of why one answer beat another), compress it into a 'token prior' of experiential knowledge, and attach it in the API call. On DeepSeek-V3 a few dozen samples turned it into a specialized expert at complex math and web search, outperforming fine-tuned models - zero parameter updates, zero base-model amnesia. Hype framing but a real technique. 64.3K views. research, prompting, agent-design.",
+    "content": "Tencent has killed fine-tuning and RL with an $18 budget. Right now, if you want an AI agent to become an expert at a specific, complex real-world task, you have to use Reinforcement Learning. You let it try, fail, and update its internal parameters over and over again. This is the exact optimization technique (GRPO) that DeepSeek used to build their massive reasoning models. But there is a massive problem. Updating model weights is insanely expensive. It requires massive GPU clusters. And worst of all, when you train a model to be highly specialized at one thing, it often overfits and forgets how to be good at everything else. Tencent killed this bottleneck.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-30",
@@ -10394,11 +10394,11 @@
     "handle": "@akshay_pachaar",
     "subject": "Post by Akshay 🚀 on X",
     "url": "https://x.com/akshay_pachaar/status/2049476617144287719",
-    "summary": "Rebuilt most of OpenClaw's core as a single open-source Sim workflow ('SimClaw') - 25 blocks, 29 connections, short + long-term memory, multi-channel (Telegram + Slack), self-hostable with local models, built from a single prompt. Framed as 'an OS for your AI workforce.'",
+    "summary": "Reimplements most of OpenClaw's core as a single 25-block, 29-connection workflow with short- and long-term memory and Telegram/Slack channels — generated rather than hand-built, fully open source and self-hostable against local models. The companion article argues managing a fleet of agents needs an OS layer rather than a better framework. Timestamped walkthrough included; the 'built the whole workflow from a single prompt' section is the notable claim.",
     "topics": [
       "agent-design",
-      "skills-mcp",
-      "dev-practices"
+      "dev-practices",
+      "skills-mcp"
     ],
     "audience": [
       "dev-team",
@@ -10406,13 +10406,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "65.7K",
     "notes": "",
     "enriched": true,
-    "content": "Akshay @akshay_pachaar. Rebuilt most of OpenClaw's core in a single Sim workflow: 25 blocks, 29 connections, short + long-term memory, multi-channel (Telegram + Slack) - 'SimClaw', not built manually, fully open-source, self-host with local models. Walkthrough covers planning a day, finding meetings, sending email, long-term memory, and building a whole workflow from a single prompt ('an OS for your AI workforce'). github.com/simstudioai/sim. QUOTE ARTICLE: 'How to Build an OS for Your AI Workforce?' 65.6K views. agent-design, skills-mcp, dev-practices.",
+    "content": "I rebuilt most of OpenClaw's core in a single workflow: 25 blocks, 29 connections, short + long-term memory, multi-channel (Telegram + Slack). Didn't build it manually. Stack is fully open-source. Self-host, run local models, own it end-to-end. Full walkthrough chapters: 00:00 Intro; 01:00 SimClaw in action - planning my day, finding meetings, sending email; 04:05 Long-term memory capability; 05:52 Inside the workflow: how it's wired; 12:09 The plot twist; 12:50 Building an entire workflow using a single prompt.\n\nArticle — How to Build an OS for Your AI Workforce? A first-principles look at why managing a fleet of AI agents requires an OS layer, not a better framework, and what that layer actually needs to do. We've spent two years getting really good at...",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-30",
@@ -10420,7 +10420,7 @@
     "handle": "@thedarshakrana",
     "subject": "Post by Darshak Rana ⚡️ on X",
     "url": "https://x.com/thedarshakrana/status/2049151671692136778",
-    "summary": "Long essay ('Your Next 5 Years Will Be an Exact Copy of Your Last 5') arguing environment design beats willpower, drawing on the marshmallow test, the 'end of history illusion,' affective-forecasting error, basal-ganglia habit chunking, and chronos vs kairos time.",
+    "summary": "Life-design essay arguing the popular reading of Mischel's marshmallow test — that winners simply have more willpower — is the wrong lesson, and that structural conditions rather than raw self-control explain the outcomes. Worth noting the underlying research is contested: later replications found the original effect shrinks substantially once family background and socioeconomic status are controlled for, which arguably strengthens the author's anti-willpower framing while undercutting the study as evidence. Non-technical; same genre as the other Darshak Rana material in the collection.",
     "topics": [
       "adjacent",
       "general",
@@ -10431,13 +10431,13 @@
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "1.1M",
+    "views": "1.3M",
     "notes": "",
     "enriched": true,
-    "content": "Darshak Rana @thedarshakrana. Long self-improvement essay 'Your Next 5 Years Will Be an Exact Copy of Your Last 5': the marshmallow test is really about strategic distraction / environment design over willpower; Gilbert's 'end of history illusion'; affective-forecasting error (external change fails without updating internal patterns); basal-ganglia 'chunking' of emotional patterns; chronos vs kairos time; change via pattern-recognition, belief archaeology, conscious belief replacement. Not AI/dev. 1.2M views. general, management.",
+    "content": "Your Next 5 Years Will Be an Exact Copy Of Your Last 5. 99.99% of people are failing a test designed for four-year-olds. Every single day. Here's the test: In the 1960s, Stanford psychologist Walter Mischel sat children in a room with a single marshmallow. The deal was simple: eat it now, or wait fifteen minutes and get two. The results became legendary. Kids who waited performed better academically decades later. Lower obesity rates. Reduced substance abuse. Better careers. The 'marshmallow test' became shorthand for why some people win at life and others don't. But everyone draws the wrong lesson. The popular interpretation: successful people have more willpower.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 2
+    "enrichment_attempts": 3
   },
   {
     "date": "2026-04-28",
@@ -11002,11 +11002,11 @@
     "handle": "@saboo_shubham_",
     "subject": "Post by Shubham Saboo on X",
     "url": "https://x.com/saboo_shubham_/status/2046473615118672325",
-    "summary": "Repo share: codejunkie99/agentic-stack - 'One brain, many harnesses. Portable .agent/ folder (memory + ...)' - a portable agent memory/config folder usable across harnesses.",
+    "summary": "github.com/codejunkie99/agentic-stack — 'one brain, many harnesses': a portable .agent/ folder holding memory and skills that travels between different agent harnesses rather than being locked to one tool. A bare repo drop with almost no commentary, but the portability premise directly addresses the lock-in problem implicit in the harness-configuration posts elsewhere in this collection.",
     "topics": [
       "agent-design",
-      "skills-mcp",
-      "dev-practices"
+      "dev-practices",
+      "skills-mcp"
     ],
     "audience": [
       "dev-team",
@@ -11014,13 +11014,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "3,249",
+    "views": "7,825",
     "notes": "",
     "enriched": true,
-    "content": "Shubham Saboo @Saboo_Shubham_. GitHub repo share: codejunkie99/agentic-stack - 'One brain, many harnesses. Portable .agent/ folder (memory + ...)'. A portable agent memory/config folder usable across harnesses. 7,814 views. agent-design, skills-mcp, dev-practices.",
+    "content": "GitHub Repo: codejunkie99/agentic-stack — One brain, many harnesses. Portable .agent/ folder (memory + skills) that moves between harnesses.\n\nhttps://github.com/codejunkie99/agentic-stack",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-21",
@@ -11028,11 +11028,11 @@
     "handle": "@technmak",
     "subject": "Post by Tech with Mak on X",
     "url": "https://x.com/technmak/status/2046414820241760620",
-    "summary": "'Meta solved RAG's biggest bottleneck' - REFRAG compresses context chunks into single embeddings (process ~1,024 chunk embeddings instead of 16,384 tokens), exploiting sparse attention in RAG contexts via cached embeddings + an RL-based compression policy. Claims 30.85x faster time-to-first-token, zero perplexity loss, 16x context extension, no architecture changes.",
+    "summary": "Meta's REFRAG attacks a specific RAG inefficiency: of ~80 retrieved passages typically only 5-10 matter, yet attention is computed over all of them. It compresses context chunks into single embeddings — 16,384 tokens becoming 1,024 chunk embeddings — reporting 30.85x faster time-to-first-token at zero perplexity loss, 16x context extension (4K to 64K), and 3.75x over previous SOTA. Concrete numbers and a clearly stated mechanism; sits with the KV-compression and context-economy material elsewhere in the collection.",
     "topics": [
-      "research",
+      "agent-design",
       "dev-practices",
-      "agent-design"
+      "research"
     ],
     "audience": [
       "dev-team",
@@ -11040,13 +11040,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "19.3K",
     "notes": "",
     "enriched": true,
-    "content": "Tech with Mak @techNmak. 'Meta solved RAG's biggest bottleneck' - REFRAG: 30.85x faster time-to-first-token, zero perplexity loss, 16x context extension (4K->64K), 3.75x better than prior SOTA. Problem: feeding 80 retrieved passages but only 5-10 useful, computing attention for all. REFRAG compresses context chunks into single embeddings (process ~1,024 chunk embeddings instead of 16,384 tokens), exploiting sparse attention in RAG contexts via precomputable/cached embeddings + RL-based compression policy; works at any position, no architecture changes. Meta paper. 19.2K views. research, dev-practices, agent-design.",
+    "content": "Meta solved RAG's biggest bottleneck. 30x faster decoding. Zero accuracy loss. The problem nobody talks about: when you feed an LLM 80 retrieved passages, only 5-10 are actually useful. The rest? Dead weight. But you're computing attention for ALL of them. Traditional RAG with 16K context: 100+ seconds to first token, 10x throughput drop, massive memory waste. What REFRAG does: compresses context chunks into single embeddings. Instead of processing 16,384 tokens, process 1,024 chunk embeddings. Results: 30.85x faster time-to-first-token, zero perplexity loss, 16x context extension (4K to 64K tokens), 3.75x better than previous SOTA.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-21",
@@ -11103,7 +11103,7 @@
     "handle": "@sydneyrunkle",
     "subject": "Post by Sydney Runkle on X",
     "url": "https://x.com/sydneyrunkle/status/2046277232537256002",
-    "summary": "'The runtime behind production deep agents' - harness (prompts/tools/skills) vs runtime (durable execution, memory, multi-tenancy, observability). Walks LangSmith Deployment / Agent Server: checkpointed durable execution, short- vs long-term memory, auth/RBAC/Agent Auth, human-in-the-loop (interrupt/resume), streaming + double-texting strategies, middleware guardrails, tracing + online evals (+13.7 pts on Terminal Bench 2.0 from harness changes alone), time travel, sandboxed code execution, MCP/A2A/webhooks, and cron. Packaged by 'deepagents deploy' as an open, MIT-licensed harness.",
+    "summary": "Draws a clean distinction the harness discourse usually blurs: the harness is what you build around the model to make the agent succeed in its domain (prompts, tools, skills, the tool-calling loop), while the runtime is everything underneath — durable execution, memory, multi-tenancy, observability. The guide covers the production requirements that only surface after deployment and the runtime capabilities that meet them, with github.com/langchain-ai/deepagents as the reference implementation. The most precise vocabulary contribution in this batch.",
     "topics": [
       "agent-design",
       "dev-practices",
@@ -11116,13 +11116,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "118K",
+    "views": "160.3K",
     "notes": "",
     "enriched": true,
-    "content": "Sydney Runkle @sydneyrunkle. X ARTICLE 'The runtime behind production deep agents.' Harness (prompts/tools/skills around the model) vs runtime (durable execution, memory, multi-tenancy, observability). Walks LangSmith Deployment + Agent Server capabilities: durable execution (managed task queue, per-super-step checkpoints keyed by thread_id, resume after crash, sleep for HITL); memory (short-term in thread checkpoints vs long-term key-value store by namespace with semantic search); multi-tenancy (auth middleware, Agent Auth OAuth for acting on user's behalf, RBAC); human-in-the-loop (interrupt()/Command(resume=...)); real-time (streaming modes, double-texting strategies: enqueue/reject/interrupt/rollback); guardrails via middleware (PII redaction, tool-call limits, model fallback); observability (auto tracing, Polly, online evals - improved Deep Agents +13.7 pts on Terminal Bench 2.0 by changing only the harness); time travel (fork from any checkpoint); sandboxed code execution (Daytona/Modal/Runloop/LangSmith Sandboxes, auth proxy so secrets never enter sandbox); integrations (MCP, A2A, webhooks); cron (sleep-time compute, monitoring loops). 'deepagents deploy' packages it, MIT-licensed open harness, AGENTS.md, no model/sandbox lock-in. 159.8K views. agent-design, dev-practices, research.",
+    "content": "The runtime behind production deep agents. To build a good agent, you need a good harness. To deploy that agent, you need a good runtime. The harness is the system you build around the model to help your agent be successful in its domain. That includes prompts, tools, skills, and anything else supporting the model and tool calling loop that defines an agent. The runtime is everything underneath: durable execution, memory, multi-tenancy, observability, the machinery that keeps an agent running in production without your team reinventing it. This guide walks through the production requirements that surface once you deploy agents, the runtime capabilities that meet them.\n\nhttps://github.com/langchain-ai/deepagents",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-21",
@@ -11130,11 +11130,11 @@
     "handle": "@heynavtoor",
     "subject": "Post by Nav Toor on X",
     "url": "https://x.com/heynavtoor/status/2046276160930414976",
-    "summary": "'PoisonedRAG': researchers showed 5 documents planted in a 2.6M-document database can hijack an LLM's answer 97% of the time - the attacker never touches the model or retriever, just writes a document. A retrieval-layer trust vulnerability.",
+    "summary": "PoisonedRAG: research showing five planted documents in a 2.6-million-document corpus can hijack an LLM's answer 97% of the time — without the attacker touching the model or seeing the retriever, just by writing text that will be retrieved. Names the blind spot directly: RAG systems marketed as hallucination-free simply relocate the trust assumption into the retrieval layer. Pairs with the malicious-skills and agent-manipulation research elsewhere in the collection.",
     "topics": [
-      "research",
+      "agent-design",
       "dev-practices",
-      "agent-design"
+      "research"
     ],
     "audience": [
       "dev-team",
@@ -11142,13 +11142,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "31.6K",
+    "views": "44.9K",
     "notes": "",
     "enriched": true,
-    "content": "Nav Toor @heynavtoor. 'PoisonedRAG': researchers proved 5 documents planted in a database of 2.6 million can hijack an LLM's answer 97% of the time - the attacker never touches the model or retriever, just writes a document. A retrieval-layer security/trust vulnerability for RAG systems. 44.9K views. research, dev-practices, agent-design.",
+    "content": "Your 'hallucination-free' RAG system trusts its retrieval layer. Researchers just proved that 5 documents, planted in a database of 2.6 million, can hijack the LLM's answer 97% of the time. The attacker never touches your model. They never see your retriever. They just write a document. This is PoisonedRAG.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-21",
@@ -11156,10 +11156,10 @@
     "handle": "@simplifyinai",
     "subject": "Post by Simplifying AI on X",
     "url": "https://x.com/simplifyinai/status/2046271932035645599",
-    "summary": "'Microsoft solved the context window problem' - paper MEMENTO teaches models to forget: reason in blocks, write a dense summary ('memento') after each, then physically delete the previous block from the KV cache and carry only the memento forward. Claims 6x context compression, 2.5x less KV-cache memory, zero accuracy loss - enabling local multi-step agents.",
+    "summary": "Explainer on Microsoft's MEMENTO paper, which addresses KV-cache growth during long chain-of-thought reasoning: rather than provisioning more GPU memory to hold everything, the model learns to manage what it retains. Clear articulation of why long reasoning gets progressively slower and more expensive. 'Microsoft just solved the context window problem' overstates it, but the underlying paper is real and sits alongside the KV-compression work elsewhere in the collection.",
     "topics": [
-      "research",
-      "agent-design"
+      "agent-design",
+      "research"
     ],
     "audience": [
       "dev-team",
@@ -11167,13 +11167,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "31.6K",
+    "views": "60.7K",
     "notes": "",
     "enriched": true,
-    "content": "Simplifying AI @simplifyinAI. 'Microsoft just solved the context window problem' - paper MEMENTO teaches models to forget: break reasoning into blocks, write a dense compressed summary ('memento') after each, then physically delete the previous reasoning block from the KV cache, carrying only the memento forward. Results: 6x context compression, 2.5x less KV-cache memory, zero loss in math/science/coding accuracy - enabling local multi-step agents without huge cloud GPUs. 60.6K views. research, agent-design.",
+    "content": "Microsoft just solved the context window problem. Right now, every AI suffers from a fatal flaw: the 'context window problem.' When an AI reasons through a complex problem, it generates a massive chain-of-thought. But there is a catch. It has to keep every single token of that thought in its active memory. The technical term is the 'KV Cache.' The longer the AI thinks, the heavier it gets. It slows down. It gets expensive. Eventually, it runs out of space. We thought the only fix was renting bigger, more expensive cloud GPUs to hold all that context. Microsoft just proved us wrong. They published a paper called 'MEMENTO.' Instead of giving the AI a bigger memory, they taught it how to manage what it keeps.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-21",
@@ -11181,10 +11181,10 @@
     "handle": "@realsigridjin",
     "subject": "Post by Sigrid Jin on X (worth extracting a skill)",
     "url": "https://x.com/realsigridjin/status/2046266374948069387",
-    "summary": "Points to a harness method from someone who mass-merged into kubernetes/huggingface then got banned from GitHub: two stages did 80% of the work - reproduce the bug locally (or drop it) and read merge history instead of CONTRIBUTING.md. Links 'How I got banned from GitHub due to my harness pipeline' (500+ commits across 100+ repos in 72 hours -> suspension).",
+    "summary": "Junghwan NA published the harness pipeline that landed 500+ commits across 100+ open-source repos in 72 hours — merged by Kubernetes and Hugging Face among others — and got his GitHub account suspended for it. Two stages did most of the work: reproduce the bug locally or drop the task, and read merge history rather than CONTRIBUTING.md to infer what maintainers actually accept. A useful and cautionary datapoint on automated contribution at volume: the technique worked, the volume was the problem.",
     "topics": [
-      "dev-practices",
       "agent-design",
+      "dev-practices",
       "questionable"
     ],
     "audience": [
@@ -11193,13 +11193,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "163K",
+    "views": "179.8K",
     "notes": "Jeremy modified subject: 'worth extracting a skill' | flag: worth extracting a skill",
     "enriched": true,
-    "content": "Sigrid Jin @realsigridjin. Points to a harness method from someone who mass-merged into kubernetes/huggingface then got banned from GitHub: two stages did 80% of the work - reproduce the bug locally (or drop it) and read merge history instead of CONTRIBUTING.md. QUOTE ARTICLE: Junghwan Na 'How I got banned from GitHub due to my harness pipeline' - 500+ commits across 100+ repos in 72 hours -> account suspended. 179.7K views. dev-practices, agent-design, questionable.",
+    "content": "the guy who got mass-merged by kubernetes and huggingface then banned from github just dropped his full harness method. two stages did 80% of the work: > reproduce the bug locally or drop it > read merge history instead of CONTRIBUTING.md. the harness is public now. worth reading.\n\nArticle — How I got banned from GitHub due to my harness pipeline. In 72 hours, I pushed 500+ commits across 100+ public open-source repositories. And GitHub suspended my account. I accept the outcome as a matter of course. I'm writing this down because the...",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-21",
@@ -11234,7 +11234,7 @@
     "handle": "@ihtesham2005",
     "subject": "Post by Ihtesham Ali on X (important for planner?)",
     "url": "https://x.com/ihtesham2005/status/2046197374855582157",
-    "summary": "Essay on George Polya's 'How to Solve It' (1945): understand the problem (restating it in your own words is the real filter), make a plan (solve a simpler related problem first for a foothold), carry it out, then 'look back' — verify by another method and reuse it, building a transferable library of methods. Diagnosis: people conflate reading with understanding, method with starting, and the answer with the learning.",
+    "summary": "Popularizes George Pólya's 'How to Solve It' (1945) — the problem-solving framework about what to do before you start solving, which Minsky publicly recommended and which has stayed in print for eighty years. Non-engineering in origin but directly applicable to prompting and agent task decomposition, where the same failure appears: jumping to a solution without first characterizing the problem.",
     "topics": [
       "adjacent",
       "general",
@@ -11246,13 +11246,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "304.7K",
     "notes": "Jeremy modified subject: 'important for planner?' | flag: important for planner?",
     "enriched": true,
-    "content": "Ihtesham Ali @ihtesham2005. Essay on George Polya's 'How to Solve It' (1945): the neglected steps in problem solving. 1) Understand the problem (restate it in your own words without looking - the filter for real understanding); 2) Make a plan (if a problem feels impossible, solve a simpler related version first for a foothold); 3) Carry out the plan (the obvious, least-important step); 4) Look back (verify by another method, reuse the method elsewhere - build a transferable library of methods). Diagnosis: people conflate reading a problem with understanding it, having a method with starting work, and getting an answer with learning. Slow down at the beginning and end. Not AI/dev. 303.7K views. general, management.",
+    "content": "A Stanford mathematician spent 40 years watching brilliant students freeze in front of hard problems. Not because they lacked intelligence. Because nobody had ever taught them what to do before they started solving. His name is George Pólya, and the book he wrote in 1945 has never gone out of print. It has sold over a million copies. Marvin Minsky, the man who built the first neural network machine at MIT, said publicly that everyone should know this work. Engineers, mathematicians, and computer scientists treat it as scripture. Most people have never heard of it. Here is the framework buried inside it that changed how I think about every hard problem I face.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 2
+    "enrichment_attempts": 3
   },
   {
     "date": "2026-04-21",
@@ -11260,7 +11260,7 @@
     "handle": "@voxyz_ai",
     "subject": "Post by Vox on X",
     "url": "https://x.com/voxyz_ai/status/2045899539526148193",
-    "summary": "GitHub's #1 trending repo this week is a CLAUDE.md file (44,465 new stars) distilling Karpathy's LLM coding pitfalls into 4 principles: think before coding, simplicity first, surgical edits, goal-driven execution.",
+    "summary": "The #1 trending GitHub repo of the week was a CLAUDE.md file (44,465 stars in seven days) distilling Karpathy's catalogue of LLM coding failures into four principles: think before coding rather than silently picking an interpretation; simplicity first so overengineering is visible at a glance; surgical edits that don't touch neighbouring code; and goal-driven work that converts fuzzy instructions into verifiable targets before starting. Includes a first-hand note that it tightened output after swapping in. Both a useful artifact and a signal about what the ecosystem was valuing.",
     "topics": [
       "claude-code",
       "dev-practices",
@@ -11272,13 +11272,13 @@
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "824.4K",
+    "views": "977.2K",
     "notes": "",
     "enriched": true,
-    "content": "Vox @Voxyz_ai. GitHub's #1 trending repo this week is a CLAUDE.md file (44,465 new stars): a skill distilling Karpathy's LLM coding pitfalls into 4 principles - think before coding (ask when unsure), simplicity first (minimum code), surgical edits (only touch what's required), goal-driven (translate fuzzy instructions into verifiable targets). 976.1K views. claude-code, dev-practices, prompting.",
+    "content": "just checked github trending, the #1 repo this week is a CLAUDE.md file. 44,465 new stars this week. a skill distilling Andrej Karpathy's LLM coding pitfalls into 4 principles: think before coding - ask when unsure, don't silently pick one interpretation and run with it; simplicity first - minimum code, any overengineering shows at a glance; surgical edits - only touch what's required, don't fix up neighboring code on the way by; goal-driven - translate fuzzy instructions into verifiable targets before starting. swapped it into my claude.md, a few tasks in it feels tighter.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-20",
@@ -11564,14 +11564,14 @@
   {
     "date": "2026-04-17",
     "author": "0xSero",
-    "handle": "@0xSero",
+    "handle": "@0xsero",
     "subject": "Post by 0xSero on X",
     "url": "https://x.com/0xsero/status/2044879665001595263",
-    "summary": "0xSero 'went 180' on multi-agents/subagents after analyzing hundreds of AI coding sessions - it helps a lot. Links 'Single-agent AI coding is a nightmare for engineers' on the pain of one slow single agent.",
+    "summary": "A documented reversal: after analysing hundreds of AI coding agent sessions, the author flipped from multi-agent skeptic to advocate. The companion article co-written with Sarah Chieng, 'Single-agent AI coding is a nightmare for engineers,' makes the case from the user's side — paying $200/month, carefully engineering one prompt, then waiting 35 minutes on a single opaque agent. Valuable because it's an argued change of mind backed by session analysis rather than a launch pitch.",
     "topics": [
       "agent-design",
-      "dev-practices",
-      "claude-code"
+      "claude-code",
+      "dev-practices"
     ],
     "audience": [
       "dev-team",
@@ -11579,13 +11579,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "103.6K",
+    "views": "105.8K",
     "notes": "",
     "enriched": true,
-    "content": "0xSero @0xSero. 'Everything I know about multi-agents/subagents - I've gone 180 on it.' Analyzed hundreds of AI coding agent sessions and found multi-agent actually helps a lot. QUOTE ARTICLE: Sarah Chieng & 0xSero 'Single-agent AI coding is a nightmare for engineers' - the pain of $200/mo subscription, prompt+context engineering, then waiting 35 min for a single agent. 105.7K views. agent-design, dev-practices, claude-code.",
+    "content": "Here's everything I know about multi-agents, subagents, etc. I feel like I've gone 180 on it. I analyzed hundreds of AI coding agent sessions, and saw that it actually helps a lot.\n\nArticle — Single-agent AI coding is a nightmare for engineers. Created by @MilksandMatcha and @0xSero. I pay my upfront subscription ($200/month), write what I hope is the right prompt (prompt AND context engineer), and wait. 35 minutes later, the agent is still...",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-17",
@@ -11620,11 +11620,11 @@
     "handle": "@garrytan",
     "subject": "Post by Garry Tan on X",
     "url": "https://x.com/garrytan/status/2044479509874020852",
-    "summary": "'Resolvers: The Routing Table for Intelligence' - a resolver maps task/content types to which document/skill to load. Confession: a 20,000-line CLAUDE.md degraded the model; a ~200-line decision tree replaced it and improved everything. A misfiling revealed only 3 of 13 skills consulted the resolver; fix = shared filing rules + mandate. 'Invisible skill' problem (skills that exist but aren't reachable) -> trigger evals + a check-resolvable meta-skill (found 6 unreachable skills). Resolvers decay ('context rot'); endgame is an RLM rewriting them from traffic. Resolvers are fractal and are the governance/management layer of an agent 'organization.' Open-sourced in GBrain/GStack.",
+    "summary": "Argues the least-discussed idea from 'Thin Harness, Fat Skills' is the most important: resolvers, a routing table for context that says when task type X appears, load document Y first. Tan's point is that resolvers are invisible when correct and catastrophic when wrong, which is exactly why they get overlooked next to flashier ideas like skill-as-method-call and thin-harness architecture. Related repos: github.com/garrytan/gbrain and gstack. Directly connected to the 'context economy — routing tables beat big context' thread in this collection.",
     "topics": [
       "agent-design",
-      "skills-mcp",
-      "claude-code"
+      "claude-code",
+      "skills-mcp"
     ],
     "audience": [
       "dev-team",
@@ -11632,13 +11632,13 @@
     ],
     "priority": "now",
     "sourceType": "article",
-    "views": "21K",
+    "views": "334.1K",
     "notes": "",
     "enriched": true,
-    "content": "Garry Tan @garrytan. X ARTICLE 'Resolvers: The Routing Table for Intelligence.' A resolver = a routing table for context ('when task type X appears, load document Y first'). Confession: his CLAUDE.md hit 20,000 lines and degraded the model ('you can't make someone smarter by shouting louder'); replaced with a ~200-line numbered decision tree pointing to directories - system got faster/more accurate. A misfiled article (policy analysis dumped in sources/ instead of civic/) revealed only 3 of 13 brain-writing skills consulted the resolver; fix = a shared _brain-filing-rules.md + mandate every skill reads RESOLVER.md. 'Invisible skill problem': skills that exist but aren't reachable create the illusion of capability - built resolver trigger evals (50 sample inputs) and a check-resolvable meta-skill that walks AGENTS.md -> skill -> code to find dead links (first run found 6 unreachable skills). Resolvers decay ('context rot') over ~90 days; endgame is an RLM that rewrites the resolver from observed task-dispatch traffic. Resolvers are fractal (skill resolver in AGENTS.md, filing resolver in RESOLVER.md, context resolver inside each skill) and are really the management/governance layer of an agent 'organization' (skills=employees, resolver=org chart, filing rules=process, check-resolvable=audit, trigger evals=performance reviews). Open-sourced in GBrain (gbrain init ships RESOLVER.md + check-resolvable) and GStack. 332.5K views. agent-design, skills-mcp, claude-code.",
+    "content": "Resolvers: The Routing Table for Intelligence. In 'Thin Harness, Fat Skills', I introduced five definitions for building agent systems that actually work. Skills got all the attention. People bookmarked the skill-as-method-call pattern, the diarization concept, the thin harness architecture. Good. Those matter. But the one that got almost no attention is the one that matters most. Resolvers. And the reason they got ignored is the same reason they're so important: they're invisible when they work, and catastrophic when they don't. A resolver is a routing table for context. When task type X appears, load document Y first. That's it. One sentence.\n\nhttps://github.com/garrytan/gbrain\n\nhttps://github.com/garrytan/gstack",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-15",
@@ -11671,11 +11671,11 @@
     "handle": "@yoonholeee",
     "subject": "Post by Yoonho Lee on X",
     "url": "https://x.com/yoonholeee/status/2044442372864700510",
-    "summary": "Released code for Meta-Harness (stanford-iris-lab/meta-harness) - a method for optimizing LLM harnesses end-to-end (long-horizon credit assignment over prior code/traces/scores). Point your agent at ONBOARDING.md to implement good Meta-Harnesses in new domains.",
+    "summary": "Stanford IRIS Lab released code for Meta-Harness (github.com/stanford-iris-lab/meta-harness), a method for optimizing LLM harnesses end to end on problems humans are actively working on. The hard part it targets is long-horizon credit assignment across all prior code, traces, and scores — attributing improvement to the right change. The repo is built for porting to new domains: point an agent at ONBOARDING.md and converse. The academic counterpart to the eval-driven harness hill-climbing work elsewhere in the collection.",
     "topics": [
-      "research",
       "agent-design",
-      "dev-practices"
+      "dev-practices",
+      "research"
     ],
     "audience": [
       "dev-team",
@@ -11683,21 +11683,21 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "35.2K",
+    "views": "125.8K",
     "notes": "",
     "enriched": true,
-    "content": "Yoonho Lee @yoonholeee. Released code for Meta-Harness (github.com/stanford-iris-lab/meta-harness) - a method for optimizing LLM harnesses end-to-end (solving long-horizon credit assignment over prior code, traces, and scores). Repo helps implement good Meta-Harnesses in new domains: point your agent at ONBOARDING.md and have a conversation. 125.3K views. research, agent-design, dev-practices.",
+    "content": "We just released code for Meta-Harness! https://github.com/stanford-iris-lab/meta-harness. Aside from replicating paper experiments, the repo is designed to help users implement good Meta-Harnesses in completely new domains! Just point your agent at ONBOARDING.md and have a conversation.\n\nHow can we autonomously improve LLM harnesses on problems humans are actively working on? Doing so requires solving a hard, long-horizon credit-assignment problem over all prior code, traces, and scores. Announcing Meta-Harness: a method for optimizing harnesses end-to-end.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-15",
     "author": "Viv",
-    "handle": "@Vtrivedy10",
+    "handle": "@vtrivedy10",
     "subject": "Post by Viv on X",
     "url": "https://x.com/vtrivedy10/status/2044430694458310870",
-    "summary": "On X you can learn directly from frontier builders; points to Hunter Leath for storage/filesystems alpha. Links 'Bash is the SQL for file systems' (egress fees, querying file systems).",
+    "summary": "Recommends Hunter Leath (@jhleath) as a frontier practitioner writing openly about storage and filesystems, pointing at his article 'Bash is the SQL for file systems' — which frames shell tooling as the query language for filesystems and opens on cloud egress fees. A pointer to a person and a body of writing rather than a single artifact.",
     "topics": [
       "dev-practices",
       "general"
@@ -11708,13 +11708,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "12.5K",
+    "views": "48.7K",
     "notes": "",
     "enriched": true,
-    "content": "Viv @Vtrivedy10. On X, frontier builders openly share and you can ask them questions. Points to Hunter Leath (@jhleath) for storage/filesystems alpha. QUOTE ARTICLE: Hunter Leath 'Bash is the SQL for file systems' - on egress fees and querying file systems. 48.6K views. dev-practices, general.",
+    "content": "X is a crazy place because there'll be builders at the frontier of their domain just openly sharing stuff on X, and you can just ask them questions, learn, disagree, etc. Hunter's that for storage/filesystems, go scroll his profile and read the last few articles for alpha and fire mental models.\n\nArticle — Bash is the SQL for file systems. When onboarding, almost all of our customers ask me about egress fees from the clouds. This makes sense, any public service (not running in your cloud account) gets charged full egress when you talk...",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-15",
@@ -11722,11 +11722,11 @@
     "handle": "@shannholmberg",
     "subject": "Post by Shann³ on X",
     "url": "https://x.com/shannholmberg/status/2044413638388363272",
-    "summary": "Connected an Obsidian knowledge base (230+ cross-referenced pages) to every project so every agent reads the wiki first: indexed with qmd (hybrid BM25 + vector + LLM re-ranking, local) and a global /knowledge-shann skill any agent can call to load voice rules, frameworks, and metrics before working. Same pattern for company/client KBs. All markdown, one CLI command, works with any bash-capable agent.",
+    "summary": "Solves the portability problem with a personal knowledge base: a 230+ page Obsidian wiki compiled from tweets, bookmarks, articles, and notes was only useful while working inside that folder, so the author indexed it with qmd (Tobi Lütke's tool) — hybrid BM25 plus vector search with LLM re-ranking, running locally — making every agent in any project able to read it first. Directly relevant to the same problem the AI Links collection itself has.",
     "topics": [
       "agent-design",
-      "skills-mcp",
-      "dev-practices"
+      "dev-practices",
+      "skills-mcp"
     ],
     "audience": [
       "dev-team",
@@ -11734,39 +11734,39 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "—",
+    "views": "113K",
     "notes": "",
     "enriched": true,
-    "content": "Shann @shannholmberg. Connected an Obsidian knowledge base (230+ pages: tweets, bookmarks, articles, notes as cross-referenced wiki pages) to every project so every agent reads the wiki first. Used qmd (by Tobi Lutke) to index it - hybrid BM25 + vector search with LLM re-ranking, runs locally - plus a global skill any agent can call: /knowledge-shann 'topic' searches the wiki, returns concept pages/summaries/metrics, agent loads brand foundation (banned AI words, voice rules) before working. Same pattern for company/client KBs (/knowledge-espressio, /knowledge-lunar). All markdown indexed by qmd, one CLI command, token-efficient, works with any bash-capable agent. QUOTE ARTICLE: 'AI Knowledge Layer (and why your agents are useless without it).' 112.8K views. agent-design, skills-mcp, dev-practices.",
+    "content": "I connected my knowledge base to every project I work on. every agent reads my wiki before doing anything. I built a knowledge base in obsidian with 230+ pages - my tweets, bookmarks, articles, ideas, notes, all compiled into structured wiki pages with cross-references. the knowledge only worked when I was inside that folder. if I started a new project or opened a different codebase, the agent had no idea what I know or how I think. so I set up qmd (by tobi lutke) to index the wiki. hybrid BM25 + vector search with LLM re-ranking, runs locally.\n\nArticle — AI Knowledge Layer (and why your agents are useless without it). this article gives you a two-layer system that makes every AI agent you run smarter. 20 minute setup, gets better every day, fully open source. karpathy recently talked about shifting most of his...",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-15",
     "author": "Millie Marconi",
-    "handle": "@MillieMarconnni",
+    "handle": "@milliemarconnni",
     "subject": "Post by Millie Marconi on X",
     "url": "https://x.com/milliemarconnni/status/2044358003714097601",
-    "summary": "'Inversion is the most powerful thinking tool most people never use correctly - they invert the goal, not the system.' Turned Claude into an inversion engine running Munger's method: map every path to failure so the path to success becomes obvious by elimination. Shares 5 prompts.",
+    "summary": "Packages Charlie Munger's inversion method as five Claude prompts that enumerate failure paths for a problem until the successful path is obvious by elimination. The distinction it draws is the substantive one — most people invert the goal ('how do I fail at this?') when they should invert the system (what structural conditions produce failure). A reasoning-technique prompt pattern rather than a tool.",
     "topics": [
-      "prompting",
-      "management",
+      "adjacent",
       "general",
-      "adjacent"
+      "management",
+      "prompting"
     ],
     "audience": [
       "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "37.3K",
+    "views": "71.9K",
     "notes": "",
     "enriched": true,
-    "content": "Millie Marconi @MillieMarconnni. 'Inversion is the most powerful thinking tool most people never use correctly - they invert the goal, not the system.' Turned Claude into an inversion engine running Charlie Munger's method: map every path to failure so precisely that the path to success becomes obvious by elimination. Shares 5 prompts. 71.8K views. prompting, management, general.",
+    "content": "Inversion is the most powerful thinking tool most people never use correctly. They invert the goal. They don't invert the system. I turned Claude into a full inversion engine that runs Charlie Munger's method on any problem, mapping every path to failure so precisely that the path to success becomes obvious by elimination. Here are the 5 prompts:",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-15",
@@ -11901,10 +11901,10 @@
     "handle": "@mr_r0b0t",
     "subject": "Post by mr-r0b0t on X",
     "url": "https://x.com/mr_r0b0t/status/2044199154004472009",
-    "summary": "Recommends Ahmad's agent web-scraping stack: SearXNG (source discovery), Firecrawl (known-URL scrape/crawl), Camofox (browser fallback for JS/interaction) - Search -> Extract -> Interact, set up with local models.",
+    "summary": "Endorsement pointing at Ahmad Osman's agent web stack, which splits web access into three stages with a tool for each: SearXNG for candidate source discovery, Firecrawl for scraping and crawling known URLs, and Camofox as the browser fallback when JavaScript or interaction is required — Search → Extract → Interact. A clean decomposition for any agent that browses, and it runs against local models.",
     "topics": [
-      "dev-practices",
       "agent-design",
+      "dev-practices",
       "skills-mcp"
     ],
     "audience": [
@@ -11913,13 +11913,13 @@
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "2,600",
+    "views": "4,003",
     "notes": "",
     "enriched": true,
-    "content": "mr-r0b0t @mr_r0b0t. Recommends Ahmad's agent web-scraping stack. QUOTE: Ahmad @TheAhmadOsman 'My Agent Web Stack' - SearXNG (candidate source discovery), Firecrawl (known-URL scrape/crawl), Camofox (browser fallback for JS/interaction): Search -> Extract -> Interact; give it to your agent to set up with local models. 3,999 views. dev-practices, agent-design, skills-mcp.",
+    "content": "This is an amazingly informative post if you're running agents that are doing web search/scraping! That's basically everyone! Definitely worth the read and the infographic is 11/10!\n\nPRO TIP — My Agent Web Stack: SearXNG for candidate source discovery; Firecrawl for known-URL scrape and crawl; Camofox as browser fallback for JS/interaction. Search -> Extract -> Interact. P.S. Give this to your favorite agent & tell it to setup these tools to use with local models.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-15",
@@ -11950,10 +11950,10 @@
   {
     "date": "2026-04-15",
     "author": "0xSero",
-    "handle": "@0xSero",
+    "handle": "@0xsero",
     "subject": "Post by 0xSero on X",
     "url": "https://x.com/0xsero/status/2044165332928213243",
-    "summary": "Guide to running big models on small hardware: REAPs (up to 50% savings), quantizations (75%; AWQ/GPTQ/W4A16/FP8 fast, GGUF/EXL3 slower, MLX best for Apple), and 8-bit KV cache (50-75%).",
+    "summary": "Compact cheat sheet for running large models on constrained hardware: REAPs for up to 50% savings, quantization for ~75% (AWQ/GPTQ/W4A16/FP8 for fast inference, GGUF/EXL3 slower but reliable, MLX best on Apple silicon), and 8-bit KV cache for another 50-75%. Terse but the format-to-tradeoff mapping is the useful part — it's the practical companion to the TurboQuant/KV-compression material elsewhere in the collection.",
     "topics": [
       "dev-practices",
       "research"
@@ -11963,13 +11963,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "12.1K",
+    "views": "16.4K",
     "notes": "",
     "enriched": true,
-    "content": "0xSero @0xSero. Guide to running big models on small hardware: 1) REAPs (up to 50% savings); 2) quantizations (75% savings) - AWQ/GPTQ/W4A16/FP8 for fast inference, GGUF/EXL3 slower but just works, MLX best for Apple; 3) 8-bit KV cache (50-75% savings). 16.4K views. dev-practices, research.",
+    "content": "Guide to running BIG B0Is on your small hardware. 1. Use REAPs: up to 50% savings. 2. Use quantisations: 75% savings - AWQ / GPTQ / W4A16 / FP8 = FAST inference; GGUF / EXL3 = Slow but just works; MLX = Best for apple. 3. Use 8bit KV cache: 50-75% savings.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-15",
@@ -12332,11 +12332,11 @@
     "handle": "@akshay_pachaar",
     "subject": "Post by Akshay 🚀 on X",
     "url": "https://x.com/akshay_pachaar/status/2043745099792953508",
-    "summary": "'Build Agents that never forget' - a first-principles walk through agent memory. LLMs are stateless; 7 failure modes without memory; bigger context isn't the fix ('lost in the middle'). Cognitive-science frame (sensory/working/long-term; episodic/semantic/procedural; consolidation). Layers from Python list -> markdown files -> vector search (each fixing then revealing a limit, e.g. vectors miss multi-hop 'bridge' facts). Solution: Cognee, open-source engine combining relational + vector + graph stores in four calls (add/cognify/memify/search), deduped knowledge graph with dual indexing, RL-inspired memify, 14 retrieval modes.",
+    "summary": "First-principles walkthrough of agent memory, escalating through Python lists, markdown files, vector search, and graph-vector hybrids, landing on cognee (github.com/topoteretes/cognee) as an open-source implementation. Frames the core problem clearly: LLMs are stateless and the felt memory of a chat product is just conversation history being re-sent, which stops working for real agents — then enumerates seven failure modes including context amnesia and zero personalization. One of the better structured explainers on agent-memory infrastructure.",
     "topics": [
       "agent-design",
-      "research",
-      "dev-practices"
+      "dev-practices",
+      "research"
     ],
     "audience": [
       "dev-team",
@@ -12344,13 +12344,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "103K",
+    "views": "629.8K",
     "notes": "",
     "enriched": true,
-    "content": "Akshay @akshay_pachaar. X ARTICLE 'Build Agents that never forget' - first-principles walk through agent memory. LLMs are stateless; the 'memory' in chat is re-sending history. 7 failure modes without memory (context amnesia, zero personalization, multi-step failure, repeated mistakes, no knowledge accumulation, hallucination from gaps, identity collapse). Bigger context isn't the fix ('lost in the middle', ~30% accuracy drop; shared token budget). Cognitive-science frame (Weng: Agent = LLM + Memory + Planning + Tool Use; sensory/working/long-term; episodic/semantic/procedural; consolidation). Layers: Python list (grows unbounded, RAM only) -> markdown files (persistent but keyword retrieval is brittle at scale, e.g. OpenClaw checkpoints slip away) -> vector search (solves synonyms but misses multi-hop relational 'bridge' facts). Solution: Cognee, open-source knowledge engine combining relational (provenance) + vector (semantics) + graph (relationships) stores; four calls (add/cognify/memify/search); cognify builds a deduped knowledge graph with dual vector+graph indexing; memify is an RL-inspired pass that strengthens useful paths and prunes stale nodes; 14 retrieval modes; SQLite+LanceDB+Kuzu embedded default, swappable to Postgres/Qdrant/Neo4j. GitHub: cognee. 627.7K views. agent-design, research, dev-practices.",
+    "content": "Build Agents that never forget. A first-principles walk through agent memory: from Python lists to markdown files to vector search to graph-vector hybrids, and finally, a clean, open-source solution for all of this. An LLM is stateless by design. Every API call starts fresh. The 'memory' you feel when chatting with ChatGPT is an illusion created by re-sending the entire conversation history with every request. That trick works for casual chat. It falls apart the moment you try to build a real agent. Here are 7 failure modes that show up the instant you skip memory: context amnesia (the agent asks for information you already gave it), zero personalization, and more.\n\nhttps://github.com/topoteretes/cognee",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-14",
@@ -12358,11 +12358,11 @@
     "handle": "@alexfinn",
     "subject": "Post by Alex Finn on X",
     "url": "https://x.com/alexfinn/status/2043719233213980922",
-    "summary": "'Read a tweet, give it to your agent, and it upgrades.' Copy-paste SOUL.md prompt (from Garry Tan): 'The marginal cost of completeness is near zero with AI. Do the whole thing, do it right, with tests and docs... never present a workaround when the real fix exists. Search before building, test before shipping, ship the complete thing.'",
+    "summary": "Transcribes and operationalizes Garry Tan's SOUL.md entry as a copy-paste agent instruction: because the marginal cost of completeness is near zero with AI, the agent should do the whole thing — tests, documentation — aim for genuinely impressed rather than politely satisfied, never defer work when the permanent fix is reachable, and never leave a dangling thread. Also a nice illustration of the loop where an agent instruction spreads by screenshot and gets pasted into other people's configs.",
     "topics": [
-      "prompting",
       "agent-design",
-      "claude-code"
+      "claude-code",
+      "prompting"
     ],
     "audience": [
       "dev-team",
@@ -12370,13 +12370,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "245.2K",
     "notes": "",
     "enriched": true,
-    "content": "Alex Finn @AlexFinn. 'Read a tweet, give it to your agent, and it upgrades.' Screenshotted Garry Tan's SOUL.md addition and had his agent adopt it. Copy-paste prompt for OpenClaw/Hermes SOUL.md: 'The marginal cost of completeness is near zero with AI. Do the whole thing, do it right, with tests and documentation... Never present a workaround when the real fix exists. Search before building. Test before shipping. Ship the complete thing... The standard isn't good enough, it's holy shit that's done.' QUOTE: Garry Tan's SOUL.md item. 244.2K views. prompting, agent-design, claude-code.",
+    "content": "By far the coolest part about X is you can read a tweet, give it to your agent, and then it just upgrades. I screenshotted this post from Garry and gave it to my agent Henry. Instantly started performing 10x better. Copy and paste this prompt to your OpenClaw/Hermes immediately: 'Please add this to our SOUL.md file. Replace Alex with my name: The marginal cost of completeness is near zero with AI. Do the whole thing. Do it right. Do it with tests. Do it with documentation. Do it so well that Alex is genuinely impressed - not politely satisfied, actually impressed. Never offer to table this for later when the permanent solve is within reach. Never leave a dangling thread when tying it off takes five minutes.'\n\nNew item in my SOUL md tonight",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-14",
@@ -12486,7 +12486,7 @@
     "handle": "@_vmlops",
     "subject": "Post by Vaishnavi on X",
     "url": "https://x.com/_vmlops/status/2043624154646409708",
-    "summary": "Google open-sourced Magika - AI file content-type detection run internally for years (Gmail, Drive, Safe Browsing). Detects what files really are regardless of extension (malware renamed .pdf, script disguised as image). 100M files trained, 200+ types, 99% accuracy, 5ms/file. pip install magika.",
+    "summary": "Google open-sourced Magika (github.com/google/magika), the ML file-type detector it runs internally across Gmail, Drive, and Safe Browsing at hundreds of billions of files per week. It identifies true content type regardless of extension — catching malware renamed to resume.pdf or a script disguised as an image — trained on 100M files across 200+ content types at ~99% accuracy and ~5ms per file, installable via pip. All-caps packaging on a genuinely battle-tested security utility.",
     "topics": [
       "dev-practices",
       "research",
@@ -12498,13 +12498,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "426.4K",
+    "views": "512.8K",
     "notes": "",
     "enriched": true,
-    "content": "Vaishnavi @_vmlops. Google open-sourced Magika - AI-powered file content-type detection run internally for years (Gmail, Drive, Safe Browsing, hundreds of billions of files/week). Detects what files really are regardless of extension (malware renamed resume.pdf, script disguised as image). Trained on 100M files, 200+ content types, 99% accuracy, 5ms/file. pip install magika. GitHub: google/magika. 512.1K views. dev-practices, research, skills-mcp.",
+    "content": "GOOGLE BUILT A SECRET WEAPON FOR FILE DETECTION. they ran it internally for years - gmail, drive, safe browsing, hundreds of billions of files every week - then they open sourced it. it's called magika and it exposes what files really are, not what they pretend to be. rename malware to 'resume.pdf'? magika sees through it. disguise a script as an image? magika sees through it. ai trained on 100 million files. 200+ content types. 99% accuracy. 5ms per file. one command: pip install magika. the same tool protecting google's billion users is now protecting yours.\n\nhttps://github.com/google/magika",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-14",
@@ -12512,7 +12512,7 @@
     "handle": "@noisyb0y1",
     "subject": "Post by Noisy on X",
     "url": "https://x.com/noisyb0y1/status/2043609541477044439",
-    "summary": "Long guide: 'Google engineer automated 80% of his work with Claude Code.' Part 1 Karpathy-principles CLAUDE.md (violations 40%->3%); Part 2 the 'Everything Claude Code' repo (30+ agents, 180+ skills, AgentShield); Part 3 a claim that Claude Code v2.1.100 charges ~20k more tokens server-side (downgrade fix). Case study: a dotnet app polls GitLab every 15 min, Claude classifies issues, subagents implement + open PRs. Several claims are hype/unverified.",
+    "summary": "Viral thread (3.4M views) claiming a Google engineer automated 80% of his job with Claude Code and a small .NET app, now working 2-3 hours a day with $28,000 in passive income. The salvageable technical content is Part 1: a CLAUDE.md built from Karpathy's catalogue of common LLM coding failures — over-engineering, ignoring existing patterns, adding unrequested dependencies — turned into explicit rules. Points at github.com/affaan-m/everything-claude-code. Income and automation claims are unverified and shaped for reach; the CLAUDE.md rules are the part worth lifting.",
     "topics": [
       "claude-code",
       "dev-practices",
@@ -12524,13 +12524,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "2.1M",
+    "views": "3.4M",
     "notes": "",
     "enriched": true,
-    "content": "Noisy @noisyb0y1. Long guide: 'Google engineer automated 80% of his work with Claude Code.' Part 1: Karpathy-principles CLAUDE.md (Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution; violations 40%->3%; command to auto-generate one). Part 2: 'Everything Claude Code' repo (affaan-m/everything-claude-code) - 30+ specialized agents, 180+ skills, AgentShield security tests; install via /plugin marketplace, don't load everything at once. Part 3: claim that Claude Code v2.1.100 charges ~20k more tokens server-side than v2.1.98 (downgrade fix). Case study: a dotnet app polls GitLab every 15 min, Claude classifies issues, subagents implement and open PRs, handles PR comments - 8h/day coding -> 2-3h review. (Note: several claims are hype/unverified, esp. the token-'scandal' and passive-income framing.) 3.4M views. claude-code, dev-practices, questionable.",
+    "content": "Google engineer automated 80% of his work with Claude Code. here's the exact system he built. Google engineer with 11 years of experience automated 80% of his work using Claude Code and a simple dotnet app. Now he works 2-3 hours a day instead of 8 and chills the rest of the time while the system runs itself making $28,000 in passive income. Here's what he knows that you don't. Part 1 - CLAUDE.md by Karpathy's rules. Andrej Karpathy documented the most common mistakes LLMs make when writing code: over-engineering, ignoring existing patterns, adding dependencies nobody asked for. Someone took these observations and turned them into rules.\n\nhttps://github.com/affaan-m/everything-claude-code",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-13",
@@ -12538,11 +12538,11 @@
     "handle": "@garrytan",
     "subject": "Post by Garry Tan on X",
     "url": "https://x.com/garrytan/status/2043581361798500602",
-    "summary": "'New item in my SOUL.md tonight' (shared as an image) - the widely-quoted SOUL.md addition on the 'marginal cost of completeness is near zero with AI: do the whole thing, do it right, ship the complete thing, not a plan.'",
+    "summary": "Garry Tan shares a new entry for his agent's SOUL.md, posted as an image. The text was transcribed by Alex Finn in a widely-shared follow-up: the marginal cost of completeness is near zero with AI, so do the whole thing — with tests, with documentation — never offer to table something when the permanent fix is within reach, and never leave a dangling thread. At 498K views this became one of the more copied agent-instruction snippets of the period; see the Alex Finn post in this collection for the full text.",
     "topics": [
-      "prompting",
       "agent-design",
-      "claude-code"
+      "claude-code",
+      "prompting"
     ],
     "audience": [
       "dev-team",
@@ -12551,13 +12551,13 @@
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "433.1K",
+    "views": "498.1K",
     "notes": "",
     "enriched": true,
-    "content": "Garry Tan @garrytan. 'New item in my SOUL.md tonight' (content shared as an image). This is the widely-quoted SOUL.md addition on the 'marginal cost of completeness is near zero with AI - do the whole thing, do it right, with tests and docs; ship the complete thing, not a plan' (later amplified by Alex Finn). 496.2K views. prompting, agent-design, claude-code.",
+    "content": "New item in my SOUL md tonight [content shared as an image]",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-13",
@@ -12565,24 +12565,24 @@
     "handle": "@defileo",
     "subject": "Post by Defileo🔮 on X",
     "url": "https://x.com/defileo/status/2043437202190024912",
-    "summary": "On f/prompts.chat (~159k stars, #33 most-starred repo): the 'I want you to act as...' role-prompt collection cited by Harvard/Columbia, proving people knew AI could be more than search. Contrast: a costume ('act as a therapist') vs a methodology (phased psychological excavation, 7-domain money audit targeting beliefs before numbers).",
+    "summary": "History of f/prompts.chat — the role-prompting repo ('I want you to act as a…') launched days after ChatGPT's public release, now ~159k stars and the #33 most-starred repo on GitHub, cited by Harvard and Columbia. The argument is that role-assignment prompting proved early that people wanted AI to be more than a Q&A box. Companion article makes the usage-depth case. Prompting history rather than new technique.",
     "topics": [
-      "prompting",
+      "claude-code",
       "general",
-      "claude-code"
+      "prompting"
     ],
     "audience": [
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "22.2K",
     "notes": "",
     "enriched": true,
-    "content": "Defileo @defileo. On f/prompts.chat (launched Dec 5 2022, ~159k GitHub stars, #33 most-starred repo) - the 'I want you to act as...' role-prompt collection cited by Harvard/Columbia; proved people knew AI could be more than search but lacked prompts. Contrast: a costume ('act as a therapist') vs a methodology (phased psychological excavation, 7-domain money audit that targets beliefs before numbers). QUOTE ARTICLE: 'Stop using 1% of your Claude, be the 1%.' 22.2K views. prompting, general, claude-code.",
+    "content": "Just found the GitHub repo that 159k developers already starred and realizing I've been prompting Claude like an idiot. f/prompts.chat, launched December 5, 2022, within days of ChatGPT going public. The idea was dead simple but genius: 'I want you to act as a therapist', 'I want you to act as a life coach', 'I want you to act as a financial advisor'. OpenAI's co-founders tweeted about it in the first week. Harvard cited it, Columbia cited it, then it became the #33 most-starred repo on all of GitHub. What it proved is that people already knew AI could be more than a chatbot.\n\nArticle — Stop using 1% of your Claude, be the 1%. Most people use Claude the same way they used Google: type a question, read the answer, close the tab. It's useful in the same way a calculator is useful, it saves you a few minutes and then you move...",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-13",
@@ -12590,11 +12590,11 @@
     "handle": "@datachaz",
     "subject": "Post by Charly Wargnier on X",
     "url": "https://x.com/datachaz/status/2043246635996807300",
-    "summary": "Addy Osmani (Google) dropped Agent Skills: 19 engineering skills + 7 commands encoding senior-engineer quality gates across the lifecycle (Define/Plan/Build/Verify/Review/Ship) with slash commands (/spec /plan /build /test /review /code-simplify /ship). Bakes in Shift Left, Chesterton's Fence, Hyrum's Law; works with Claude Code/Cursor/Antigravity. npx skills add addyosmani/agent-skills.",
+    "summary": "Addy Osmani released a set of 19 engineering skills plus 7 commands for AI coding agents, encoding Google engineering practice as enforceable quality gates. The premise is that unsupervised agents optimize for 'done' over 'correct' — skipping specs, tests, and security review — so each skill imposes a senior-engineer discipline: spec before code, test before merge, measure before optimize, across a Define/Plan/Build lifecycle. Concrete, adoptable, and low view count relative to its usefulness.",
     "topics": [
-      "skills-mcp",
+      "agent-design",
       "dev-practices",
-      "agent-design"
+      "skills-mcp"
     ],
     "audience": [
       "dev-team",
@@ -12602,13 +12602,13 @@
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "",
+    "views": "12.4K",
     "notes": "",
     "enriched": true,
-    "content": "Charly Wargnier @DataChaz. Addy Osmani (Google) dropped Agent Skills: 19 engineering skills + 7 commands for AI coding agents, inspired by Google best practices, to stop agents optimizing for 'done' over 'correct.' Encodes senior-engineer quality gates across the lifecycle: Define (specs before code), Plan (small verifiable tasks), Build (incremental, context engineering, clean APIs), Verify (TDD, browser testing, systematic debugging), Review (quality, security, performance), Ship (git, CI/CD, ADRs, pre-launch checklists). 7 slash commands (/spec /plan /build /test /review /code-simplify /ship); bakes in Shift Left, Chesterton's Fence, Hyrum's Law. Works with Claude Code, Cursor, Antigravity, any Markdown agent. npx skills add addyosmani/agent-skills. 12.4K views. skills-mcp, dev-practices, agent-design.",
+    "content": "ICYMI @addyosmani from Google just dropped his new Agent Skills and it's incredible. It brings 19 engineering skills + 7 commands to AI coding agents, all inspired by Google best practices. AI coding agents are powerful, but left alone, they take shortcuts. They skip specs, tests, and security reviews, optimizing for 'done' over 'correct.' Addy built this to fix that. Each skill encodes the workflows and quality gates that senior engineers actually use: spec before code, test before merge, measure before optimize. The full lifecycle is covered: Define - refine ideas, write specs before a single line of code. Plan - decompose into small, verifiable tasks. Build - incremental implementation.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-12",
@@ -12667,11 +12667,11 @@
     "handle": "@heynavtoor",
     "subject": "Post by Nav Toor on X",
     "url": "https://x.com/heynavtoor/status/2043321909971202403",
-    "summary": "LLM Wiki v2 extends Karpathy's LLM Wiki with the features it lacked: confidence scoring (facts decay), memory tiers (working/episodic/semantic/procedural), a typed knowledge graph, hybrid search (BM25 + vector + graph, RRF-fused), automated hooks (auto-ingest/compress/decay), forgetting curves, and contradiction resolution by source recency/authority. Turns a flat wiki into a living memory that strengthens, weakens, consolidates, and forgets.",
+    "summary": "LLM Wiki v2 extends Karpathy's LLM-wiki pattern (5,000 GitHub stars in 48 hours) by fixing its main weakness: the original treats all recorded knowledge as equally valid forever. V2 adds confidence scoring per fact (source count, recency of confirmation, contradiction detection), knowledge that decays over time, tiered memory (working vs episodic), knowledge graphs, automated hooks, and forgetting curves. The staleness problem it names is the interesting bit — a knowledge base without decay quietly poisons itself.",
     "topics": [
       "agent-design",
-      "skills-mcp",
-      "research"
+      "research",
+      "skills-mcp"
     ],
     "audience": [
       "dev-team",
@@ -12679,13 +12679,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "186.2K",
     "notes": "",
     "enriched": true,
-    "content": "Nav Toor @heynavtoor. LLM Wiki v2 extends Karpathy's LLM Wiki with the features it lacked (which treated all knowledge as equally valid forever): confidence scoring (per-fact score by source count/recency/contradiction, decaying over time); memory tiers (working/episodic/semantic/procedural, each more compressed and longer-lived); knowledge graph (typed entities/relationships, e.g. 'A caused B, 3 sources, confidence 0.9'); hybrid search (BM25 + vector + graph traversal fused via reciprocal rank fusion, replacing the index.md that breaks past 200 pages); automated hooks (auto-ingest on new source, compress/file on session end, scheduled lint/consolidate/decay); forgetting curves (unaccessed facts fade, not deleted - architecture decisions decay slowly, transient bugs fast); contradiction resolution by source recency/authority/evidence. 'The Memex is finally buildable... because we have librarians that actually do the work.' Built on agentmemory. Open source. 185.7K views. agent-design, skills-mcp, research.",
+    "content": "Karpathy's LLM Wiki got 5,000 stars in 48 hours. Now someone extended it with the features it was missing. Memory lifecycle. Confidence scoring. Knowledge graphs. Automated hooks. Forgetting curves. It's called LLM Wiki v2. The original pattern was brilliant. AI builds a wiki instead of re-deriving knowledge from scratch every time. But it treated all knowledge as equally valid forever. In practice, that breaks. Here's what v2 adds: Confidence scoring - every fact carries a score: how many sources support it, how recently confirmed, whether anything contradicts it. Knowledge that decays over time. Memory tiers - working memory for recent observations, episodic memory for events.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-12",
@@ -12720,10 +12720,10 @@
     "handle": "@nickspisak_",
     "subject": "Post by Nick Spisak on X",
     "url": "https://x.com/nickspisak_/status/2043060265823146202",
-    "summary": "Claude Code shipped /ultraplan: sends planning to four Opus 4.6 cloud agents (three explorers + one critic) instead of one terminal agent. Covers why the review workflow matters more than the 4x speed, 5 scenarios where it prevents rework, and when to use local plan mode instead.",
+    "summary": "Explains Claude Code's /ultraplan: instead of one local planning agent, it dispatches four Opus 4.6 agents in Anthropic's cloud — three exploring the project in parallel plus a critic. The author's argument is that the review workflow, not the 4x speed, is the real gain, and he covers five scenarios where it prevents rework plus when to skip it for local plan mode. Practical feature guidance including its limits.",
     "topics": [
-      "claude-code",
       "agent-design",
+      "claude-code",
       "dev-practices"
     ],
     "audience": [
@@ -12732,13 +12732,13 @@
     ],
     "priority": "now",
     "sourceType": "tweet",
-    "views": "250.3K",
+    "views": "257.3K",
     "notes": "",
     "enriched": true,
-    "content": "Nick Spisak @NickSpisak_. Claude Code shipped /ultraplan: instead of one agent planning in your terminal, it sends the work to four Opus 4.6 agents in Anthropic's cloud - three explore your project in parallel, one critic reviews. Covers the review workflow (more important than the 4x speed), 5 scenarios where it prevents rework, and when to skip it for local plan mode. QUOTE ARTICLE: 'Claude Code Ultraplan. Clearly Explained.' 257.1K views. claude-code, agent-design, dev-practices.",
+    "content": "claude code just shipped /ultraplan. the speed isn't the interesting part. in under 5 minutes you'll learn: 1. how 4 opus agents plan your project in parallel (3 explorers + 1 critic) 2. why the review workflow matters more than the 4x speed boost 3. 5 scenarios where ultraplan prevents hours of rework 4. when to skip it and use local plan mode instead\n\nArticle — Claude Code Ultraplan. Clearly Explained. Claude Code just shipped /ultraplan. Instead of one agent planning in your terminal, it sends the work to four Opus 4.6 agents running in Anthropic's cloud. Three explore your project in parallel. A...",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-12",
@@ -12746,11 +12746,11 @@
     "handle": "@garrytan",
     "subject": "Post by Garry Tan on X",
     "url": "https://x.com/garrytan/status/2042919242283258072",
-    "summary": "New OpenClaw/Hermes users struggle with integrations, and you can't reach 1,000+ markdown files without proper mail/calendar integrations - GBrain now ships guided integration recipes on first install.",
+    "summary": "GBrain added guided integration recipes at first install, addressing a specific onboarding failure: new OpenClaw and Hermes Agent users stall on wiring up mail, calendar, and similar sources, and without those you never accumulate the thousands of markdown files the system needs to be useful. A note about corpus size being the real activation barrier for personal-knowledge agents, not model quality.",
     "topics": [
       "agent-design",
-      "skills-mcp",
-      "dev-practices"
+      "dev-practices",
+      "skills-mcp"
     ],
     "audience": [
       "dev-team",
@@ -12758,13 +12758,13 @@
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "36.5K",
+    "views": "37.6K",
     "notes": "",
     "enriched": true,
-    "content": "Garry Tan @garrytan. New OpenClaw/Hermes users struggle to set up integrations, and you can't reach 1,000 (let alone 10,000) markdown files without proper mail/calendar integrations. GBrain now ships guided integration recipes on first install. 37.6K views. agent-design, skills-mcp, dev-practices.",
+    "content": "New OpenClaw and Hermes Agent users struggle to get all your integrations set up. And you can't get to 1,000 markdown files let alone 10,000 without proper integrations with mail, calendar etc. GBrain now makes it very easy with guided integration recipes on first install.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-11",
@@ -12772,24 +12772,24 @@
     "handle": "@heynavtoor",
     "subject": "Post by Nav Toor on X",
     "url": "https://x.com/heynavtoor/status/2042879339256254689",
-    "summary": "Kronos - first open-source foundation model for financial markets ('reads candlestick charts the way GPT reads English'). Trained on 12B records from 45 exchanges; price/volatility forecasting, zero-shot, 4 model sizes. Claims 93% accuracy gains (hype framing). Tsinghua, AAAI 2026, HuggingFace, MIT.",
+    "summary": "Kronos, pitched as the first open-source foundation model trained natively on financial market data — 12 billion records across 45 exchanges — for candlestick price forecasting and volatility prediction, working zero-shot without fine-tuning, with a live BTC demo. The '93% better than every model' claim is unsourced and the genre is promotional; the interesting part is the architectural argument that market data deserves a domain-native model rather than a repurposed general one.",
     "topics": [
-      "research",
+      "industry",
       "questionable",
-      "industry"
+      "research"
     ],
     "audience": [
       "me"
     ],
     "priority": "long-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "374.8K",
     "notes": "",
     "enriched": true,
-    "content": "Nav Toor @heynavtoor. Kronos - first open-source foundation model built for financial markets ('reads candlestick charts the way GPT reads English'). Trained on 12B records from 45 exchanges; price forecasting, volatility prediction, zero-shot on any asset/market/timeframe; 4 model sizes (4M-499M params). Claims 93% more accurate than leading time-series model, 87% over best non-pretrained baseline (hype framing). Built at Tsinghua, accepted AAAI 2026, models on HuggingFace, 11.6K stars, MIT. 373.4K views. research, questionable, industry.",
+    "content": "Someone built an AI that reads candlestick charts the way GPT reads English. Trained on 12 billion records from 45 exchanges. Outperforms every model by 93%. Live BTC demo. Free. It's called Kronos. The first open source foundation model built for financial markets. Not a general AI repurposed for finance. An AI that speaks the native language of candlestick patterns. Every other model treats financial data like weather data. Kronos treats financial data like financial data. Here's what it does: Price forecasting - feed it candlesticks, it predicts where price goes next. Volatility prediction - forecasts how volatile an asset will be before it happens. Zero-shot - no fine-tuning, works out of the box.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-04-10",
