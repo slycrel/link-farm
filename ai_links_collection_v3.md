@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-08-22T00:26:08Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-24T15:24:46Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-08-21** — [Matt Pocock](https://x.com/mattpocockuk/status/2090744569960824949) — *now • Skills & MCP • 72.5K views • v1 enriched*  
@@ -23,29 +23,29 @@
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **persistent always-on agents — bot mode & agent desktops** (280 posts, +23 this week)  
+- **persistent always-on agents — bot mode & agent desktops** (282 posts, +21 this week)  
   Agents that outlive a chat session: persistent bot profiles with their own job and memory, remote/self-hosted execution that survives closing the laptop, and the desktop workspaces around them (Hermes/Nous, Grok bot mode, OpenClaw). Renamed from auto-named cluster on 2026-08-21.
     - 2026-08-21 — [Tony Simons](https://x.com/tonysimons_/status/2090612261349908991): Part 3 of a Hermes Desktop masterclass series, covering the move from treating it as a chatbot to using it as a workspace: sessions, project…
     - 2026-08-21 — [Elon Musk](https://x.com/elonmusk/status/2090393510956401073): Musk pitches Grok's bot mode as having its own remote computer via SpaceXAI, so the agent keeps executing after you close your laptop or reb…
 
-- **agents-as-judges-of-agents — bossman supervisor / self-verification** (94 posts, +21 this week)  
+- **elite-skill masterclass content** (286 posts, +19 this week)  
+  Free lectures and 'masterclass' reposts promising an elite skill — quant trading maths (Jane Street, Jim Simons, Berkeley), high-stakes persuasion. Aspirational skill-acquisition material, usually hype-packaged, occasionally with a real lecture behind it.
+    - 2026-08-21 — [hraness](https://x.com/hraness/status/2090680065528901919): Long-form X article on running a personal 'software factory': 15 Codex Pro 20x subscriptions driving a dozen-plus projects, with a self-repo…
+    - 2026-08-21 — [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784): Five patterns for long-running agents, from an Addy Osmani and Shubham Saboo piece: checkpoints, approval gates, governed memory, event-driv…
+
+- **agents-as-judges-of-agents — bossman supervisor / self-verification** (95 posts, +18 this week)  
   Critical supervisor agent judges worker agents rather than doing the work. Boris Cherny on self-verification loops; Viv on bossman supervisor.
     - 2026-08-21 — [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784): Five patterns for long-running agents, from an Addy Osmani and Shubham Saboo piece: checkpoints, approval gates, governed memory, event-driv…
     - 2026-08-21 — [Aaron Levie](https://x.com/levie/status/2090664811185205722): Levie on when domain-specific post-training beats a general frontier model for applied AI: once you understand a domain well enough and have…
 
-- **prediction-market & crypto trading bots** (298 posts, +20 this week)  
-  Polymarket and crypto trading-bot content: sweeper and arbitrage bots, Markov-chain trade models, tick-data neural nets, plus one genuinely useful 72M-trade dataset. Heavily promotional and largely off-topic for AI engineering — kept and labelled rather than dropped.
-    - 2026-08-21 — [0xSero](https://x.com/0xsero/status/2090721689428533258): Organizes a same-day community study session on the Pi agent framework with a three-step onramp: read the Pi repo, set it up locally, then p…
-    - 2026-08-21 — [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784): Five patterns for long-running agents, from an Addy Osmani and Shubham Saboo piece: checkpoints, approval gates, governed memory, event-driv…
-
-- **vibecode-to-production via agent skills** (103 posts, +20 this week)  
+- **vibecode-to-production via agent skills** (105 posts, +17 this week)  
   Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
     - 2026-08-21 — [Xudong Han](https://x.com/xudong07452910/status/2090760827230187782): Chinese-language post recommending a Julie Yoo essay on where an AI startup's moat can still sit. Argument: models improve every few months,…
     - 2026-08-21 — [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784): Five patterns for long-running agents, from an Addy Osmani and Shubham Saboo piece: checkpoints, approval gates, governed memory, event-driv…
 
-- **self-improving skills (autoresearch pattern)** (289 posts, +19 this week)  
-  Skills and harnesses that improve themselves or each other, mostly downstream of Karpathy's autoresearch method — meta-skills that optimise other skills, /autobrowse, recursive self-improvement loops, and agents that accumulate site knowledge instead of rediscovering it.
-    - 2026-08-21 — [Matt Pocock](https://x.com/mattpocockuk/status/2090744569960824949): Pocock shares an /implement-spec skill: a multi-agent implementer that takes a spec plus tickets, does codebase research in a subagent, impl…
+- **prediction-market & crypto trading bots** (299 posts, +16 this week)  
+  Polymarket and crypto trading-bot content: sweeper and arbitrage bots, Markov-chain trade models, tick-data neural nets, plus one genuinely useful 72M-trade dataset. Heavily promotional and largely off-topic for AI engineering — kept and labelled rather than dropped.
+    - 2026-08-21 — [0xSero](https://x.com/0xsero/status/2090721689428533258): Organizes a same-day community study session on the Pi agent framework with a three-step onramp: read the Pi repo, set it up locally, then p…
     - 2026-08-21 — [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784): Five patterns for long-running agents, from an Addy Osmani and Shubham Saboo piece: checkpoints, approval gates, governed memory, event-driv…
 
 
