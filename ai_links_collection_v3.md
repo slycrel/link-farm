@@ -1,52 +1,52 @@
 # AI Links Collection
-**Total Posts**: 816  
-**Date Range**: 2024-06-11 – 2026-08-21  
-**Enriched**: 815/816 (99%)
+**Total Posts**: 836  
+**Date Range**: 2024-06-11 – 2026-08-25  
+**Enriched**: 835/836 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-08-24T15:56:32Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-25T15:39:13Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
+- **2026-08-25** — [Igor bedesqui](https://x.com/bedesqui/status/2092036341630394449) — *now • Dev Practices • 101.4K views • v1 enriched*  
+  Shares what the author calls his 'magnum opus of unslopping PRs' (gist.github.com/bdsqqq/1e7e6f454271d5f856a1176d0e800d89) — a review-standards file he pastes repeatedly into an agent's context until the agent can demonstrate its change couldn't have broken anything. A concrete, copyable artifact for agent-driven code review. Flagged by Jeremy as 'reviews'.
+- **2026-08-25** — [rvaniaaa](https://x.com/rvaniaaaa/status/2091991026139361633) — *now • Agent Design • 52.5K views • v1 enriched*  
+  Argues personal-knowledge systems die when maintenance cost crosses value — you spend more time filing than thinking (the claimed 90%-abandoned-in-three-months figure is asserted, not sourced). Proposes a 'compiler' architecture instead: raw holds immutable unstructured source material as ground truth, wiki holds structured linked evergreen knowledge that the model writes and the human reads, output holds finished work built from compiled knowledge rather than memory — with a CLAUDE.md at the center carrying identity, preferences, goals and project context that the model reads automatically before every session. Direct sibling of post 2090722810674975071 by the same author, and close to how this collection itself is structured.
+- **2026-08-25** — [ClaudeDevs](https://x.com/claudedevs/status/2091953609185657251) — *now • Claude Code • 443.6K views • v1 enriched*  
+  Anthropic announced general availability of enterprise-managed auth for MCP connectors: Claude Team and Enterprise admins centralize authorization through their own identity provider, and users get tools and data connected automatically with no individual OAuth step. Removes the per-user connector-consent friction that blocks org-wide MCP rollouts. Flagged by Jeremy for Tanner.
+- **2026-08-25** — [Matt Pocock](https://x.com/mattpocockuk/status/2091897608293753169) — *now • Skills & MCP • 34.9K views • v1 enriched*  
+  Matt Pocock moved his /retro skill to in-progress in github.com/mattpocock/skills — run it after a session, or across a batch of sessions, to have the agent diagnose and repair its own mistakes for next time. It targets four axes: agent navigation (better exploration), CODING_STANDARDS (better review), tool economy, and information access. A concrete instance of the self-improving-skill pattern, and a companion to his /implement-spec and /wayfinder skills already in the collection.
 - **2026-08-21** — [Matt Pocock](https://x.com/mattpocockuk/status/2090744569960824949) — *now • Skills & MCP • 72.5K views • v1 enriched*  
   Pocock shares an /implement-spec skill: a multi-agent implementer that takes a spec plus tickets, does codebase research in a subagent, implements all tickets in subagents at maximum concurrency, reviews the final code against the spec, then cleans up all worktrees. Aimed at autonomous execution of large chunks of work with minimal supervision. Source: github.com/mattpocock/skills at skills/in-progress/implement-spec/SKILL.md
-- **2026-08-21** — [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784) — *now • Agent Design • 2,707 views • v1 enriched*  
-  Five patterns for long-running agents, from an Addy Osmani and Shubham Saboo piece: checkpoints, approval gates, governed memory, event-driven processing, and specialist fleets. Framed as the shift from stateless request handler to durable, governed system - which is the actual production gap for agents that run longer than a single request. Article: turingpost.com/p/the-production-gap-5-patterns-for-building-long-running-ai-agents
-- **2026-08-21** — [ClaudeDevs](https://x.com/claudedevs/status/2090540270219567575) — *now • Claude Code • 1.5M views • v1 enriched*  
-  Computer use, the browser tool, the Skills API, and the Files API are now generally available on the Claude Platform. Pitch is automating work in applications that have no API with fewer round trips per task, and building Claude Managed Agents on versioned skills and reusable files. Versioned skills plus a Files API is the piece worth reading closely - it makes skills a deployable artifact rather than a local folder.
-- **2026-08-21** — [Derrick Wippler](https://x.com/thrawn01/status/2090524752599462091) — *now • Dev Practices • 77.2K views • v1 enriched*  
-  Wippler flags David (@dzhng)'s article 'Building software factories (with no slop)' as the best single synthesis of where AI and the SDLC have been converging for months. The article's premise: the volume of code being written now far outpaces our capacity to review it, and we are visibly losing ground to AI slop - so the interesting design question is what review and quality gating look like at that volume. Pairs directly with the hraness 'software factory' post from the same batch.
-- **2026-08-21** — [Pi](https://x.com/pidotdev/status/2090416055273542141) — *now • Agent Design • 349.3K views • v1 enriched*  
-  Defines the 'harness' as the thing that turns a model into an agent, comprising exactly four parts: a system prompt, tools, an agentic loop, and a translation layer across models. Points to a new blog post by Earendil co-founder Colin Daymond (@colindaymond) on what a harness is and how to own yours rather than renting someone else's. Useful vocabulary anchor - the same 'harness' framing the continual-learning paper (post 2090533587066249514) builds on.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **persistent always-on agents — bot mode & agent desktops** (306 posts, +22 this week)  
+- **persistent always-on agents — bot mode & agent desktops** (319 posts, +33 this week)  
   Agents that outlive a chat session: persistent bot profiles with their own job and memory, remote/self-hosted execution that survives closing the laptop, and the desktop workspaces around them (Hermes/Nous, Grok bot mode, OpenClaw). Renamed from auto-named cluster on 2026-08-21.
-    - 2026-08-21 — [Tony Simons](https://x.com/tonysimons_/status/2090612261349908991): Part 3 of a Hermes Desktop masterclass series, covering the move from treating it as a chatbot to using it as a workspace: sessions, project…
-    - 2026-08-21 — [Elon Musk](https://x.com/elonmusk/status/2090393510956401073): Musk pitches Grok's bot mode as having its own remote computer via SpaceXAI, so the agent keeps executing after you close your laptop or reb…
+    - 2026-08-25 — [Matt Stockton](https://x.com/mstockton/status/2092076777615102400): Commentary on dynamic agent workflows: the strongest use of LLMs is graphs with *uncorrelated* starting context, and the six workflow patter…
+    - 2026-08-25 — [Madhu Guru](https://x.com/realmadhuguru/status/2092058332735693264): Part 8 of a series on building evals, on discriminatory power: a hill-climbing eval only earns its keep if it separates systems you already …
 
-- **elite-skill masterclass content** (314 posts, +19 this week)  
+- **local model serving on consumer GPUs — quantization & throughput** (332 posts, +32 this week)  
+  Running capable open models on single-box prosumer hardware: quantization formats (NVFP4/AWQ/GPTQ/GGUF/MLX), KV-cache compression, serving stacks (SGLang, DSpark), and the tok/s benchmarking that goes with it. Renamed from auto-named cluster on 2026-08-21.
+    - 2026-08-25 — [Matt Stockton](https://x.com/mstockton/status/2092076777615102400): Commentary on dynamic agent workflows: the strongest use of LLMs is graphs with *uncorrelated* starting context, and the six workflow patter…
+    - 2026-08-25 — [Madhu Guru](https://x.com/realmadhuguru/status/2092058332735693264): Part 8 of a series on building evals, on discriminatory power: a hill-climbing eval only earns its keep if it separates systems you already …
+
+- **elite-skill masterclass content** (329 posts, +30 this week)  
   Free lectures and 'masterclass' reposts promising an elite skill — quant trading maths (Jane Street, Jim Simons, Berkeley), high-stakes persuasion. Aspirational skill-acquisition material, usually hype-packaged, occasionally with a real lecture behind it.
-    - 2026-08-21 — [hraness](https://x.com/hraness/status/2090680065528901919): Long-form X article on running a personal 'software factory': 15 Codex Pro 20x subscriptions driving a dozen-plus projects, with a self-repo…
-    - 2026-08-21 — [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784): Five patterns for long-running agents, from an Addy Osmani and Shubham Saboo piece: checkpoints, approval gates, governed memory, event-driv…
+    - 2026-08-25 — [Matt Stockton](https://x.com/mstockton/status/2092076777615102400): Commentary on dynamic agent workflows: the strongest use of LLMs is graphs with *uncorrelated* starting context, and the six workflow patter…
+    - 2026-08-25 — [Madhu Guru](https://x.com/realmadhuguru/status/2092058332735693264): Part 8 of a series on building evals, on discriminatory power: a hill-climbing eval only earns its keep if it separates systems you already …
 
-- **agents-as-judges-of-agents — bossman supervisor / self-verification** (103 posts, +18 this week)  
+- **agents-as-judges-of-agents — bossman supervisor / self-verification** (118 posts, +30 this week)  
   Critical supervisor agent judges worker agents rather than doing the work. Boris Cherny on self-verification loops; Viv on bossman supervisor.
-    - 2026-08-21 — [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784): Five patterns for long-running agents, from an Addy Osmani and Shubham Saboo piece: checkpoints, approval gates, governed memory, event-driv…
-    - 2026-08-21 — [Aaron Levie](https://x.com/levie/status/2090664811185205722): Levie on when domain-specific post-training beats a general frontier model for applied AI: once you understand a domain well enough and have…
+    - 2026-08-25 — [Matt Stockton](https://x.com/mstockton/status/2092076777615102400): Commentary on dynamic agent workflows: the strongest use of LLMs is graphs with *uncorrelated* starting context, and the six workflow patter…
+    - 2026-08-25 — [Madhu Guru](https://x.com/realmadhuguru/status/2092058332735693264): Part 8 of a series on building evals, on discriminatory power: a hill-climbing eval only earns its keep if it separates systems you already …
 
-- **vibecode-to-production via agent skills** (113 posts, +17 this week)  
-  Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
-    - 2026-08-21 — [Xudong Han](https://x.com/xudong07452910/status/2090760827230187782): Chinese-language post recommending a Julie Yoo essay on where an AI startup's moat can still sit. Argument: models improve every few months,…
-    - 2026-08-21 — [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784): Five patterns for long-running agents, from an Addy Osmani and Shubham Saboo piece: checkpoints, approval gates, governed memory, event-driv…
-
-- **agentic code review at production scale** (88 posts, +17 this week)  
-  Deterministic engineering handles what must never fail; LLM only does context reading and reasoning. Alibaba open-code-review.
-    - 2026-08-21 — [Bilgin Ibryam](https://x.com/bibryam/status/2090710180287647784): Five patterns for long-running agents, from an Addy Osmani and Shubham Saboo piece: checkpoints, approval gates, governed memory, event-driv…
-    - 2026-08-21 — [Aaron Levie](https://x.com/levie/status/2090664811185205722): Levie on when domain-specific post-training beats a general frontier model for applied AI: once you understand a domain well enough and have…
+- **prediction-market & crypto trading bots** (334 posts, +27 this week)  
+  Polymarket and crypto trading-bot content: sweeper and arbitrage bots, Markov-chain trade models, tick-data neural nets, plus one genuinely useful 72M-trade dataset. Heavily promotional and largely off-topic for AI engineering — kept and labelled rather than dropped.
+    - 2026-08-25 — [Matt Stockton](https://x.com/mstockton/status/2092076777615102400): Commentary on dynamic agent workflows: the strongest use of LLMs is graphs with *uncorrelated* starting context, and the six workflow patter…
+    - 2026-08-25 — [Madhu Guru](https://x.com/realmadhuguru/status/2092058332735693264): Part 8 of a series on building evals, on discriminatory power: a hill-climbing eval only earns its keep if it separates systems you already …
 
 
 ### Revisit from last month
@@ -59,23 +59,43 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 477 | 58.5% |
-| claude-code | 188 | 23.0% |
-| dev-practices | 342 | 41.9% |
-| skills-mcp | 184 | 22.5% |
-| prompting | 122 | 15.0% |
-| research | 208 | 25.5% |
-| industry | 117 | 14.3% |
-| management | 127 | 15.6% |
-| adjacent | 31 | 3.8% |
-| solo-operator | 6 | 0.7% |
-| questionable | 116 | 14.2% |
-| general | 100 | 12.3% |
+| agent-design | 489 | 58.5% |
+| claude-code | 191 | 22.8% |
+| dev-practices | 354 | 42.3% |
+| skills-mcp | 190 | 22.7% |
+| prompting | 125 | 15.0% |
+| research | 211 | 25.2% |
+| industry | 121 | 14.5% |
+| management | 131 | 15.7% |
+| adjacent | 38 | 4.5% |
+| solo-operator | 8 | 1.0% |
+| questionable | 122 | 14.6% |
+| general | 100 | 12.0% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-08-25 | Matt Stockton | agent-design | Commentary on dynamic agent workflows: the strongest use of LLMs is gr... |
+| 2026-08-25 | Madhu Guru | dev-practices | Part 8 of a series on building evals, on discriminatory power: a hill-... |
+| 2026-08-25 | Igor bedesqui | dev-practices | Shares what the author calls his 'magnum opus of unslopping PRs' (gist... |
+| 2026-08-25 | Grace Clarke | prompting | Grace Clarke shares 'eli5-for-grownups', her variant of @trq212's ELI5... |
+| 2026-08-25 | rvaniaaa | agent-design | Argues personal-knowledge systems die when maintenance cost crosses va... |
+| 2026-08-25 | Kun Chen | agent-design | Describes a 'multi-brain' harness architecture developed with @pidotde... |
+| 2026-08-25 | Mark Ajzenstadt | agent-design | Argues most companies are stuck in the 'Death Valley' between agent PO... |
+| 2026-08-25 | ClaudeDevs | claude-code | Anthropic announced general availability of enterprise-managed auth fo... |
+| 2026-08-25 | Luke Pierce | management | Lead-magnet post giving away the implementation-and-adoption playbook... |
+| 2026-08-25 | Ryan Christensen | biohacking | X article reporting a 28-day self-experiment with Pinealon, a research... |
+| 2026-08-25 | 苯 Carbon | skills-mcp | Short endorsement of Archify (github.com/tt-a1i/archify), a skill that... |
+| 2026-08-25 | Matt Pocock | skills-mcp | Matt Pocock moved his /retro skill to in-progress in github.com/mattpo... |
+| 2026-08-25 | divyansh tiwari | agent-design | Listicle of repos for agent builders, with real pointers: OpenViking (... |
+| 2026-08-25 | pilvar (Philippe Dourassov) | agent-design | Aikido claims it found more vulnerabilities than Anthropic's Mythos (C... |
+| 2026-08-25 | elvis | research | NVIDIA's ACES paper argues the usual skill-review gate — a scanner che... |
+| 2026-08-25 | Mia | skills-mcp | Recommends Ponytail (github.com/dietrichgebert/ponytail), a harness sk... |
+| 2026-08-25 | Shubham Saboo | research | Reports a Stanford 'LLM-as-a-Verifier' result: sample five swe-agent t... |
+| 2026-08-25 | CyrilXBT | claude-code | X article walking hour-by-hour through shipping a live product that ta... |
+| 2026-08-25 | Matt Slotnick | industry | X article 'Intention Is All You Need' arguing businesses are fundament... |
+| 2026-08-25 | BasedBiohacker | biohacking | Long-form 'modafinil bible' covering claimed mechanisms, dosing protoc... |
 | 2026-08-21 | Xudong Han | industry | Chinese-language post recommending a Julie Yoo essay on where an AI st... |
 | 2026-08-21 | Matt Pocock | skills-mcp | Pocock shares an /implement-spec skill: a multi-agent implementer that... |
 | 2026-08-21 | rvaniaaa | agent-design | Architecture diagram for a 'compiled wiki' second brain, framed on Kar... |
@@ -106,31 +126,35 @@
 | 2026-08-14 | mentalium | adjacent | A repost of an uncut 1992 Tony Robbins persuasion session, pitched aro... |
 | 2026-08-14 | Harrison Chase | agent-design | LangChain's Harrison Chase, at Sequoia's 'Own Your Intelligence' event... |
 | 2026-08-14 | Bilal Bakr | prompting | A shareable rules-file snippet for tightening agent behavior on Opus 5... |
-| 2026-08-14 | lifcc | agent-design | Source-code read of DeepSeek Harness (translated from Chinese): it doe... |
-| 2026-08-14 | ℏεsam | agent-design | DeepSeek open-sourced DeepSeek Harness v0.1 (MIT, Developer Preview, p... |
-| 2026-08-14 | rvaniaaa | agent-design | A one-page introduction to graph engineering for AI systems: model the... |
-| 2026-08-14 | David Ondrej | dev-practices | Recommends vercel-labs/deepsec (github.com/vercel-labs/deepsec), a sec... |
-| 2026-08-14 | Ruben Hassid | prompting | A running list of AI-writing tells that have replaced the em-dash as g... |
-| 2026-08-14 | Yarchi | research | Google Research, DeepMind and MIT ran 260 agent configurations across... |
-| 2026-08-14 | Kevin Patrick Murphy | research | Introduces the Model Discovery Agent (MDA). Murphy's framing: answerin... |
-| 2026-08-13 | marfin | agent-design | Google and Cambridge researchers automate multi-agent topology design... |
-| 2026-08-13 | Khushi | agent-design | Points to a free resource for learning 'harness engineering' (agent ha... |
-| 2026-08-13 | Yarchi | agent-design | DoorDash detailed how AI agents handled 130,000 engineering tasks in o... |
-| 2026-08-13 | dex | claude-code | HumanLayer's /show-me skill makes coding agents converse with compact... |
-| 2026-08-13 | beamnxw ./ | research | Highlights a 90-page CS survey mapping 150+ agent memory architectures... |
-| 2026-08-13 | HOPE | Engineer. | agent-design | Argues for using hermes-agent as an orchestration entry point rather t... |
-| 2026-08-13 | nevian | research | Highlights a Stanford AI Systems Lab paper formalizing why multi-agent... |
-| 2026-08-13 | Bessemer | industry | Bessemer Venture Partners launched 'The Agentic Awakening,' a 63-page... |
-| 2026-08-13 | Superman | research | Popularizes Anthropic's paper 'Emergent Introspective Awareness in Lar... |
-| 2026-08-13 | Hermes Release Watch | agent-design | An X-article guide, 'From Chat to Agent System: 9 Steps to Make Hermes... |
-| 2026-08-13 | Alex Prompter | prompting | 'Reverse Prompting 101' — an X article arguing that as models grow mor... |
-| 2026-08-08 | Aaron Levie | management | Box CEO Aaron Levie argues enterprise AI productivity gains will vary... |
-| 2026-08-08 | Alex Prompter | agent-design | Argues a multi-agent council is worthless if the agents just agree — y... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (477)
+### Agent Design (489)
+
+- [Matt Stockton](https://x.com/mstockton/status/2092076777615102400) — 2026-08-25: Commentary on dynamic agent workflows: the strongest use of LLMs is graphs with *uncorrelated* starting context, and the six workflow patterns in the linked post are good examples. Key mechanism — adversarial verification works precisely because it runs in a fresh context window; asking the same agent with the same context to check its own work invites confirmation bias. Argues the critical design question is deciding what context travels along each edge of the graph, and why, because attention stays a delicate resource. Flagged by Jeremy for Maro.
+
+- [Madhu Guru](https://x.com/realmadhuguru/status/2092058332735693264) — 2026-08-25: Part 8 of a series on building evals, on discriminatory power: a hill-climbing eval only earns its keep if it separates systems you already know are meaningfully different. Illustrated with five systems scoring 92-95 where the eval fails to distinguish the two known-better ones — the analogy is a fifth-grade math test given to PhDs. Argues the sweet spot is realistic + difficult + sensitive to capability differences, and raises the open question of what to do when good evals saturate as harness and models improve.
+
+- [Igor bedesqui](https://x.com/bedesqui/status/2092036341630394449) — 2026-08-25: Shares what the author calls his 'magnum opus of unslopping PRs' (gist.github.com/bdsqqq/1e7e6f454271d5f856a1176d0e800d89) — a review-standards file he pastes repeatedly into an agent's context until the agent can demonstrate its change couldn't have broken anything. A concrete, copyable artifact for agent-driven code review. Flagged by Jeremy as 'reviews'.
+
+- [rvaniaaa](https://x.com/rvaniaaaa/status/2091991026139361633) — 2026-08-25: Argues personal-knowledge systems die when maintenance cost crosses value — you spend more time filing than thinking (the claimed 90%-abandoned-in-three-months figure is asserted, not sourced). Proposes a 'compiler' architecture instead: raw holds immutable unstructured source material as ground truth, wiki holds structured linked evergreen knowledge that the model writes and the human reads, output holds finished work built from compiled knowledge rather than memory — with a CLAUDE.md at the center carrying identity, preferences, goals and project context that the model reads automatically before every session. Direct sibling of post 2090722810674975071 by the same author, and close to how this collection itself is structured.
+
+- [Kun Chen](https://x.com/kunchenguid/status/2091988752847823133) — 2026-08-25: Describes a 'multi-brain' harness architecture developed with @pidotdev for agents that service background event loops — e.g. babysitting a PR by polling every five minutes for CI errors or human feedback. The failure mode is an orchestrator agent so saturated triaging events that it can no longer hold a conversation with you; the fix is one agent with several parallel sessions, a main session you talk to plus cheaper background sessions absorbing the event traffic. Context is Firstmate, which orchestrates a whole agent fleet.
+
+- [Mark Ajzenstadt](https://x.com/mardehaym/status/2091963865718231069) — 2026-08-25: Argues most companies are stuck in the 'Death Valley' between agent POC and production — 99% say they're deploying agents, 9% actually have, while OpenAI enterprise data reportedly puts agentic products at 64% of corporate output tokens. Drawing on 14 production agent systems shipped across healthcare and financial services, names four recurring engineering gaps: no code graph (the agent can't see how the codebase connects, so it invents APIs), no knowledge base (it answers from training data instead of yours), no closed feedback loop (production errors go unlogged, so Monday's mistake repeats Tuesday), and no approval gates (the agent takes irreversible actions). The percentages are the author's and unsourced; the four gaps overlap the long-running-agent patterns in the Bilgin Ibryam post.
+
+- [Matt Pocock](https://x.com/mattpocockuk/status/2091897608293753169) — 2026-08-25: Matt Pocock moved his /retro skill to in-progress in github.com/mattpocock/skills — run it after a session, or across a batch of sessions, to have the agent diagnose and repair its own mistakes for next time. It targets four axes: agent navigation (better exploration), CODING_STANDARDS (better review), tool economy, and information access. A concrete instance of the self-improving-skill pattern, and a companion to his /implement-spec and /wayfinder skills already in the collection.
+
+- [divyansh tiwari](https://x.com/divyansht91162/status/2091879586045018406) — 2026-08-25: Listicle of repos for agent builders, with real pointers: OpenViking (github.com/volcengine/OpenViking — a context database unifying memory, knowledge and skills), AgentMemory (github.com/rohitg00/agentmemory — persistent memory for coding agents), Anthropic Skills (github.com/anthropics/skills), Diagram Design (github.com/cathrynlavery/diagram-design, aimed at Claude Code workflows), Scientific Agent Skills (github.com/K-Dense-AI/scientific-agent-skills, 160+ research skills and databases), and Awesome Harness Engineering (agent memory, skills, security, evals, orchestration patterns). 'Top 10 you must know' framing is engagement packaging; the repo list itself is substantive and overlaps the harness-engineering and agent-memory veins already in the collection.
+
+- [pilvar (Philippe Dourassov)](https://x.com/pilvar222/status/2091879005708320814) — 2026-08-25: Aikido claims it found more vulnerabilities than Anthropic's Mythos (Claude Security) without burning ~$10k in tokens, with the takeaway that many agents running small models beat a few agents running big ones. Writeup at aikido.dev/blog/aikido-finds-more-vulnerabilities-claude-security-mythos — a concrete cost/architecture data point for fan-out agent design, from a vendor with a competing product.
+
+- [elvis](https://x.com/omarsar0/status/2091869893339812222) — 2026-08-25: NVIDIA's ACES paper argues the usual skill-review gate — a scanner checking structure, style and security — predicts almost nothing about actual skill quality: across 145 real skills from internal and public catalogs, scan scores correlate with LLM-judge quality at Spearman rho 0.14. It proposes 'Skill Lift' instead: run the same task twice under identical model, sandbox, workspace and scorer, once with the skill loaded and once without, and measure the difference in what the agent completed. Scored over 947 paired cases from 58 production skills across four harnesses, normalized into a shared Agent Trajectory Interchange Format; largest gains appeared in skill execution, behavior check, and skill efficiency.
+
+- [Mia](https://x.com/miaai_lab/status/2091858917307421009) — 2026-08-25: Recommends Ponytail (github.com/dietrichgebert/ponytail), a harness skill that pushes the agent to behave like a maximally lazy senior dev — the one who reads 50 lines and replaces them with one — as a defense against agents generating volume instead of solutions. Claimed to work across Claude Code, Codex, Hermes Agent, Copilot CLI, Pi, OMP, OpenCode, Cursor and Gemini.
+
+- [Shubham Saboo](https://x.com/saboo_shubham_/status/2091713863368802322) — 2026-08-25: Reports a Stanford 'LLM-as-a-Verifier' result: sample five swe-agent trajectories, rank them with the same model, keep the winner — taking deepseek-v4-flash from 78.7% to 88% on terminal-bench with no fine-tuning, and open source. The underlying technique is best-of-N with self-ranking rather than anything exotic; the ALL-CAPS 'WILD...' framing is engagement packaging around a real and cheap inference-time win.
 
 - [Xudong Han](https://x.com/xudong07452910/status/2090760827230187782) — 2026-08-21: Chinese-language post recommending a Julie Yoo essay on where an AI startup's moat can still sit. Argument: models improve every few months, so any product whose main value is 'answering questions more smartly' or automating a process will get absorbed by the foundation models over time - the layer that's much harder to replace is being accountable for outcomes. Healthcare is the worked example, where actually delivering services requires licenses, insurance, payment rails, and liability for errors, and insurers carry real financial risk. Aimed at people building agents, vertical AI, or healthtech; the accountability-as-moat framing transfers directly to other regulated verticals.
 
@@ -1086,7 +1110,13 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Claude Code (188)
+### Claude Code (191)
+
+- [rvaniaaa](https://x.com/rvaniaaaa/status/2091991026139361633) — 2026-08-25: Argues personal-knowledge systems die when maintenance cost crosses value — you spend more time filing than thinking (the claimed 90%-abandoned-in-three-months figure is asserted, not sourced). Proposes a 'compiler' architecture instead: raw holds immutable unstructured source material as ground truth, wiki holds structured linked evergreen knowledge that the model writes and the human reads, output holds finished work built from compiled knowledge rather than memory — with a CLAUDE.md at the center carrying identity, preferences, goals and project context that the model reads automatically before every session. Direct sibling of post 2090722810674975071 by the same author, and close to how this collection itself is structured.
+
+- [ClaudeDevs](https://x.com/claudedevs/status/2091953609185657251) — 2026-08-25: Anthropic announced general availability of enterprise-managed auth for MCP connectors: Claude Team and Enterprise admins centralize authorization through their own identity provider, and users get tools and data connected automatically with no individual OAuth step. Removes the per-user connector-consent friction that blocks org-wide MCP rollouts. Flagged by Jeremy for Tanner.
+
+- [CyrilXBT](https://x.com/cyrilxbt/status/2091331618979905582) — 2026-08-25: X article walking hour-by-hour through shipping a live product that takes real payments (ranknow.lol — a pay-to-rank leaderboard with outbidding) end to end with Claude Code in a single day, starting from not considering himself a developer. The transferable lesson is scope discipline: pick one narrow mechanic with a single core loop, small enough that finishing it is realistic. The '24 hours' transformation framing is hype, but it is a real solo-build account with a shipped, paying product behind it.
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/2090744569960824949) — 2026-08-21: Pocock shares an /implement-spec skill: a multi-agent implementer that takes a spec plus tickets, does codebase research in a subagent, implements all tickets in subagents at maximum concurrency, reviews the final code against the spec, then cleans up all worktrees. Aimed at autonomous execution of large chunks of work with minimal supervision. Source: github.com/mattpocock/skills at skills/in-progress/implement-spec/SKILL.md
 
@@ -1464,7 +1494,31 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (342)
+### Dev Practices (354)
+
+- [Matt Stockton](https://x.com/mstockton/status/2092076777615102400) — 2026-08-25: Commentary on dynamic agent workflows: the strongest use of LLMs is graphs with *uncorrelated* starting context, and the six workflow patterns in the linked post are good examples. Key mechanism — adversarial verification works precisely because it runs in a fresh context window; asking the same agent with the same context to check its own work invites confirmation bias. Argues the critical design question is deciding what context travels along each edge of the graph, and why, because attention stays a delicate resource. Flagged by Jeremy for Maro.
+
+- [Madhu Guru](https://x.com/realmadhuguru/status/2092058332735693264) — 2026-08-25: Part 8 of a series on building evals, on discriminatory power: a hill-climbing eval only earns its keep if it separates systems you already know are meaningfully different. Illustrated with five systems scoring 92-95 where the eval fails to distinguish the two known-better ones — the analogy is a fifth-grade math test given to PhDs. Argues the sweet spot is realistic + difficult + sensitive to capability differences, and raises the open question of what to do when good evals saturate as harness and models improve.
+
+- [Igor bedesqui](https://x.com/bedesqui/status/2092036341630394449) — 2026-08-25: Shares what the author calls his 'magnum opus of unslopping PRs' (gist.github.com/bdsqqq/1e7e6f454271d5f856a1176d0e800d89) — a review-standards file he pastes repeatedly into an agent's context until the agent can demonstrate its change couldn't have broken anything. A concrete, copyable artifact for agent-driven code review. Flagged by Jeremy as 'reviews'.
+
+- [rvaniaaa](https://x.com/rvaniaaaa/status/2091991026139361633) — 2026-08-25: Argues personal-knowledge systems die when maintenance cost crosses value — you spend more time filing than thinking (the claimed 90%-abandoned-in-three-months figure is asserted, not sourced). Proposes a 'compiler' architecture instead: raw holds immutable unstructured source material as ground truth, wiki holds structured linked evergreen knowledge that the model writes and the human reads, output holds finished work built from compiled knowledge rather than memory — with a CLAUDE.md at the center carrying identity, preferences, goals and project context that the model reads automatically before every session. Direct sibling of post 2090722810674975071 by the same author, and close to how this collection itself is structured.
+
+- [Kun Chen](https://x.com/kunchenguid/status/2091988752847823133) — 2026-08-25: Describes a 'multi-brain' harness architecture developed with @pidotdev for agents that service background event loops — e.g. babysitting a PR by polling every five minutes for CI errors or human feedback. The failure mode is an orchestrator agent so saturated triaging events that it can no longer hold a conversation with you; the fix is one agent with several parallel sessions, a main session you talk to plus cheaper background sessions absorbing the event traffic. Context is Firstmate, which orchestrates a whole agent fleet.
+
+- [Mark Ajzenstadt](https://x.com/mardehaym/status/2091963865718231069) — 2026-08-25: Argues most companies are stuck in the 'Death Valley' between agent POC and production — 99% say they're deploying agents, 9% actually have, while OpenAI enterprise data reportedly puts agentic products at 64% of corporate output tokens. Drawing on 14 production agent systems shipped across healthcare and financial services, names four recurring engineering gaps: no code graph (the agent can't see how the codebase connects, so it invents APIs), no knowledge base (it answers from training data instead of yours), no closed feedback loop (production errors go unlogged, so Monday's mistake repeats Tuesday), and no approval gates (the agent takes irreversible actions). The percentages are the author's and unsourced; the four gaps overlap the long-running-agent patterns in the Bilgin Ibryam post.
+
+- [苯 Carbon](https://x.com/eg4htb5i41jueri/status/2091927264208597215) — 2026-08-25: Short endorsement of Archify (github.com/tt-a1i/archify), a skill that generates architecture flowcharts from a codebase. Minimal commentary — the value is the pointer.
+
+- [Matt Pocock](https://x.com/mattpocockuk/status/2091897608293753169) — 2026-08-25: Matt Pocock moved his /retro skill to in-progress in github.com/mattpocock/skills — run it after a session, or across a batch of sessions, to have the agent diagnose and repair its own mistakes for next time. It targets four axes: agent navigation (better exploration), CODING_STANDARDS (better review), tool economy, and information access. A concrete instance of the self-improving-skill pattern, and a companion to his /implement-spec and /wayfinder skills already in the collection.
+
+- [divyansh tiwari](https://x.com/divyansht91162/status/2091879586045018406) — 2026-08-25: Listicle of repos for agent builders, with real pointers: OpenViking (github.com/volcengine/OpenViking — a context database unifying memory, knowledge and skills), AgentMemory (github.com/rohitg00/agentmemory — persistent memory for coding agents), Anthropic Skills (github.com/anthropics/skills), Diagram Design (github.com/cathrynlavery/diagram-design, aimed at Claude Code workflows), Scientific Agent Skills (github.com/K-Dense-AI/scientific-agent-skills, 160+ research skills and databases), and Awesome Harness Engineering (agent memory, skills, security, evals, orchestration patterns). 'Top 10 you must know' framing is engagement packaging; the repo list itself is substantive and overlaps the harness-engineering and agent-memory veins already in the collection.
+
+- [pilvar (Philippe Dourassov)](https://x.com/pilvar222/status/2091879005708320814) — 2026-08-25: Aikido claims it found more vulnerabilities than Anthropic's Mythos (Claude Security) without burning ~$10k in tokens, with the takeaway that many agents running small models beat a few agents running big ones. Writeup at aikido.dev/blog/aikido-finds-more-vulnerabilities-claude-security-mythos — a concrete cost/architecture data point for fan-out agent design, from a vendor with a competing product.
+
+- [elvis](https://x.com/omarsar0/status/2091869893339812222) — 2026-08-25: NVIDIA's ACES paper argues the usual skill-review gate — a scanner checking structure, style and security — predicts almost nothing about actual skill quality: across 145 real skills from internal and public catalogs, scan scores correlate with LLM-judge quality at Spearman rho 0.14. It proposes 'Skill Lift' instead: run the same task twice under identical model, sandbox, workspace and scorer, once with the skill loaded and once without, and measure the difference in what the agent completed. Scored over 947 paired cases from 58 production skills across four harnesses, normalized into a shared Agent Trajectory Interchange Format; largest gains appeared in skill execution, behavior check, and skill efficiency.
+
+- [Mia](https://x.com/miaai_lab/status/2091858917307421009) — 2026-08-25: Recommends Ponytail (github.com/dietrichgebert/ponytail), a harness skill that pushes the agent to behave like a maximally lazy senior dev — the one who reads 50 lines and replaces them with one — as a defense against agents generating volume instead of solutions. Claimed to work across Claude Code, Codex, Hermes Agent, Copilot CLI, Pi, OMP, OpenCode, Cursor and Gemini.
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/2090744569960824949) — 2026-08-21: Pocock shares an /implement-spec skill: a multi-agent implementer that takes a spec plus tickets, does codebase research in a subagent, implements all tickets in subagents at maximum concurrency, reviews the final code against the spec, then cleans up all worktrees. Aimed at autonomous execution of large chunks of work with minimal supervision. Source: github.com/mattpocock/skills at skills/in-progress/implement-spec/SKILL.md
 
@@ -2150,7 +2204,19 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Skills & MCP (184)
+### Skills & MCP (190)
+
+- [ClaudeDevs](https://x.com/claudedevs/status/2091953609185657251) — 2026-08-25: Anthropic announced general availability of enterprise-managed auth for MCP connectors: Claude Team and Enterprise admins centralize authorization through their own identity provider, and users get tools and data connected automatically with no individual OAuth step. Removes the per-user connector-consent friction that blocks org-wide MCP rollouts. Flagged by Jeremy for Tanner.
+
+- [苯 Carbon](https://x.com/eg4htb5i41jueri/status/2091927264208597215) — 2026-08-25: Short endorsement of Archify (github.com/tt-a1i/archify), a skill that generates architecture flowcharts from a codebase. Minimal commentary — the value is the pointer.
+
+- [Matt Pocock](https://x.com/mattpocockuk/status/2091897608293753169) — 2026-08-25: Matt Pocock moved his /retro skill to in-progress in github.com/mattpocock/skills — run it after a session, or across a batch of sessions, to have the agent diagnose and repair its own mistakes for next time. It targets four axes: agent navigation (better exploration), CODING_STANDARDS (better review), tool economy, and information access. A concrete instance of the self-improving-skill pattern, and a companion to his /implement-spec and /wayfinder skills already in the collection.
+
+- [divyansh tiwari](https://x.com/divyansht91162/status/2091879586045018406) — 2026-08-25: Listicle of repos for agent builders, with real pointers: OpenViking (github.com/volcengine/OpenViking — a context database unifying memory, knowledge and skills), AgentMemory (github.com/rohitg00/agentmemory — persistent memory for coding agents), Anthropic Skills (github.com/anthropics/skills), Diagram Design (github.com/cathrynlavery/diagram-design, aimed at Claude Code workflows), Scientific Agent Skills (github.com/K-Dense-AI/scientific-agent-skills, 160+ research skills and databases), and Awesome Harness Engineering (agent memory, skills, security, evals, orchestration patterns). 'Top 10 you must know' framing is engagement packaging; the repo list itself is substantive and overlaps the harness-engineering and agent-memory veins already in the collection.
+
+- [elvis](https://x.com/omarsar0/status/2091869893339812222) — 2026-08-25: NVIDIA's ACES paper argues the usual skill-review gate — a scanner checking structure, style and security — predicts almost nothing about actual skill quality: across 145 real skills from internal and public catalogs, scan scores correlate with LLM-judge quality at Spearman rho 0.14. It proposes 'Skill Lift' instead: run the same task twice under identical model, sandbox, workspace and scorer, once with the skill loaded and once without, and measure the difference in what the agent completed. Scored over 947 paired cases from 58 production skills across four harnesses, normalized into a shared Agent Trajectory Interchange Format; largest gains appeared in skill execution, behavior check, and skill efficiency.
+
+- [Mia](https://x.com/miaai_lab/status/2091858917307421009) — 2026-08-25: Recommends Ponytail (github.com/dietrichgebert/ponytail), a harness skill that pushes the agent to behave like a maximally lazy senior dev — the one who reads 50 lines and replaces them with one — as a defense against agents generating volume instead of solutions. Claimed to work across Claude Code, Codex, Hermes Agent, Copilot CLI, Pi, OMP, OpenCode, Cursor and Gemini.
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/2090744569960824949) — 2026-08-21: Pocock shares an /implement-spec skill: a multi-agent implementer that takes a spec plus tickets, does codebase research in a subagent, implements all tickets in subagents at maximum concurrency, reviews the final code against the spec, then cleans up all worktrees. Aimed at autonomous execution of large chunks of work with minimal supervision. Source: github.com/mattpocock/skills at skills/in-progress/implement-spec/SKILL.md
 
@@ -2520,7 +2586,13 @@
 
 - [Mervin Praison](https://x.com/mervinpraison/status/1881788246684013011) — 2025-01-22: Shows a 100% local RAG AI agent with reasoning: DeepSeek via Ollama for the LLM, PraisonAI to build the agent in a few lines, Nomic embeddings, and a Streamlit UI—code included in the thread.
 
-### Prompting (122)
+### Prompting (125)
+
+- [Matt Stockton](https://x.com/mstockton/status/2092076777615102400) — 2026-08-25: Commentary on dynamic agent workflows: the strongest use of LLMs is graphs with *uncorrelated* starting context, and the six workflow patterns in the linked post are good examples. Key mechanism — adversarial verification works precisely because it runs in a fresh context window; asking the same agent with the same context to check its own work invites confirmation bias. Argues the critical design question is deciding what context travels along each edge of the graph, and why, because attention stays a delicate resource. Flagged by Jeremy for Maro.
+
+- [Igor bedesqui](https://x.com/bedesqui/status/2092036341630394449) — 2026-08-25: Shares what the author calls his 'magnum opus of unslopping PRs' (gist.github.com/bdsqqq/1e7e6f454271d5f856a1176d0e800d89) — a review-standards file he pastes repeatedly into an agent's context until the agent can demonstrate its change couldn't have broken anything. A concrete, copyable artifact for agent-driven code review. Flagged by Jeremy as 'reviews'.
+
+- [Grace Clarke](https://x.com/graceclarke/status/2091999661565325497) — 2026-08-25: Grace Clarke shares 'eli5-for-grownups', her variant of @trq212's ELI5 prompt with tighter direction on what 'explain like I'm five' should and shouldn't mean — the point being that consistency comes from constraining the failure modes, not just asking for simplicity. Full text in a public Google Doc (docs.google.com/document/d/1biJttYJFjWVWJOvzhmnlsOgZkaoElLoNRp4FfyUGtcw).
 
 - [ericosiu](https://x.com/ericosiu/status/2090475762495185337) — 2026-08-21: Shares a reusable meta-prompt for picking which business workflow to automate first: feed an agent your SOPs, briefs, templates and examples, then have it identify the highest-leverage repetitive workflow and map trigger, inputs, process, output, human gate, success metric, and stop condition before writing the bot instructions. The 'human gate' and 'stop condition' slots are the transferable part - they generalize well beyond the marketing context and beyond Grok Bot specifically. Quote-tweets the author's own article on running marketing through Grok Bot.
 
@@ -2766,7 +2838,13 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-### Research (208)
+### Research (211)
+
+- [Madhu Guru](https://x.com/realmadhuguru/status/2092058332735693264) — 2026-08-25: Part 8 of a series on building evals, on discriminatory power: a hill-climbing eval only earns its keep if it separates systems you already know are meaningfully different. Illustrated with five systems scoring 92-95 where the eval fails to distinguish the two known-better ones — the analogy is a fifth-grade math test given to PhDs. Argues the sweet spot is realistic + difficult + sensitive to capability differences, and raises the open question of what to do when good evals saturate as harness and models improve.
+
+- [elvis](https://x.com/omarsar0/status/2091869893339812222) — 2026-08-25: NVIDIA's ACES paper argues the usual skill-review gate — a scanner checking structure, style and security — predicts almost nothing about actual skill quality: across 145 real skills from internal and public catalogs, scan scores correlate with LLM-judge quality at Spearman rho 0.14. It proposes 'Skill Lift' instead: run the same task twice under identical model, sandbox, workspace and scorer, once with the skill loaded and once without, and measure the difference in what the agent completed. Scored over 947 paired cases from 58 production skills across four harnesses, normalized into a shared Agent Trajectory Interchange Format; largest gains appeared in skill execution, behavior check, and skill efficiency.
+
+- [Shubham Saboo](https://x.com/saboo_shubham_/status/2091713863368802322) — 2026-08-25: Reports a Stanford 'LLM-as-a-Verifier' result: sample five swe-agent trajectories, rank them with the same model, keep the winner — taking deepseek-v4-flash from 78.7% to 88% on terminal-bench with no fine-tuning, and open source. The underlying technique is best-of-N with self-ranking rather than anything exotic; the ALL-CAPS 'WILD...' framing is engagement packaging around a real and cheap inference-time win.
 
 - [Aaron Levie](https://x.com/levie/status/2090664811185205722) — 2026-08-21: Levie on when domain-specific post-training beats a general frontier model for applied AI: once you understand a domain well enough and have enough volume on similar tasks, purpose-designing a model for that work starts to pay. Quotes the underlying post - 'we incentivized efficient tool use and reasoning through reward shaping, preferring trajectories that would reduce tokens consumed at inference-time given equivalent performance' - i.e. co-optimizing cost and quality rather than trading one for the other. Caveat included: this won't make sense in every domain, since general models are often good enough or necessary out of the box.
 
@@ -3184,7 +3262,15 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.
 
-### Industry (117)
+### Industry (121)
+
+- [Mark Ajzenstadt](https://x.com/mardehaym/status/2091963865718231069) — 2026-08-25: Argues most companies are stuck in the 'Death Valley' between agent POC and production — 99% say they're deploying agents, 9% actually have, while OpenAI enterprise data reportedly puts agentic products at 64% of corporate output tokens. Drawing on 14 production agent systems shipped across healthcare and financial services, names four recurring engineering gaps: no code graph (the agent can't see how the codebase connects, so it invents APIs), no knowledge base (it answers from training data instead of yours), no closed feedback loop (production errors go unlogged, so Monday's mistake repeats Tuesday), and no approval gates (the agent takes irreversible actions). The percentages are the author's and unsourced; the four gaps overlap the long-running-agent patterns in the Bilgin Ibryam post.
+
+- [ClaudeDevs](https://x.com/claudedevs/status/2091953609185657251) — 2026-08-25: Anthropic announced general availability of enterprise-managed auth for MCP connectors: Claude Team and Enterprise admins centralize authorization through their own identity provider, and users get tools and data connected automatically with no individual OAuth step. Removes the per-user connector-consent friction that blocks org-wide MCP rollouts. Flagged by Jeremy for Tanner.
+
+- [pilvar (Philippe Dourassov)](https://x.com/pilvar222/status/2091879005708320814) — 2026-08-25: Aikido claims it found more vulnerabilities than Anthropic's Mythos (Claude Security) without burning ~$10k in tokens, with the takeaway that many agents running small models beat a few agents running big ones. Writeup at aikido.dev/blog/aikido-finds-more-vulnerabilities-claude-security-mythos — a concrete cost/architecture data point for fan-out agent design, from a vendor with a competing product.
+
+- [Matt Slotnick](https://x.com/matt_slotnick/status/2022428696595108152) — 2026-08-25: X article 'Intention Is All You Need' arguing businesses are fundamentally resource-allocation machines, so the most valuable software is whatever owns the core objects those resources get deployed against — Salesforce owns the customer, Workday the employee, ServiceNow the technology. The central claim is that systems of record aren't databases but representations of organizational truth: how an object is defined, how it's measured, its set of valid states, and how it's managed. Strategy-layer framing for where durable value sits as AI arrives; pairs with the Xudong Han / Julie Yoo 'accountability as moat' post.
 
 - [Xudong Han](https://x.com/xudong07452910/status/2090760827230187782) — 2026-08-21: Chinese-language post recommending a Julie Yoo essay on where an AI startup's moat can still sit. Argument: models improve every few months, so any product whose main value is 'answering questions more smartly' or automating a process will get absorbed by the foundation models over time - the layer that's much harder to replace is being accountable for outcomes. Healthcare is the worked example, where actually delivering services requires licenses, insurance, payment rails, and liability for errors, and insurers carry real financial risk. Aimed at people building agents, vertical AI, or healthtech; the accountability-as-moat framing transfers directly to other regulated verticals.
 
@@ -3420,7 +3506,15 @@
 
 - [Santiago](https://x.com/svpino/status/1881336934418755862) — 2025-01-21: Walks through GroundX, an open-source, self-hostable/air-gapped enterprise RAG system. Two services: Ingest (a pretrained vision model that 'understands' documents instead of feeding raw docs to the LLM) and Search (text+vector search with a fine-tuned re-ranker). Santiago's thesis: most teams need better ingestion, not better retrieval; includes a video demo and the free X-Ray inspection tool.
 
-### Management (127)
+### Management (131)
+
+- [Mark Ajzenstadt](https://x.com/mardehaym/status/2091963865718231069) — 2026-08-25: Argues most companies are stuck in the 'Death Valley' between agent POC and production — 99% say they're deploying agents, 9% actually have, while OpenAI enterprise data reportedly puts agentic products at 64% of corporate output tokens. Drawing on 14 production agent systems shipped across healthcare and financial services, names four recurring engineering gaps: no code graph (the agent can't see how the codebase connects, so it invents APIs), no knowledge base (it answers from training data instead of yours), no closed feedback loop (production errors go unlogged, so Monday's mistake repeats Tuesday), and no approval gates (the agent takes irreversible actions). The percentages are the author's and unsourced; the four gaps overlap the long-running-agent patterns in the Bilgin Ibryam post.
+
+- [ClaudeDevs](https://x.com/claudedevs/status/2091953609185657251) — 2026-08-25: Anthropic announced general availability of enterprise-managed auth for MCP connectors: Claude Team and Enterprise admins centralize authorization through their own identity provider, and users get tools and data connected automatically with no individual OAuth step. Removes the per-user connector-consent friction that blocks org-wide MCP rollouts. Flagged by Jeremy for Tanner.
+
+- [Luke Pierce](https://x.com/lukepierceops/status/2091949409231880377) — 2026-08-25: Lead-magnet post giving away the implementation-and-adoption playbook behind the author's $25K-$60K AI builds: adoption is won before the build starts; the migration protocol is backfill, parallel week, dated cutover, kill date, so nobody quietly stays on the old tool; migrate the heaviest department first because each win sells the next; keep the client never more than a day from visible progress; run AI in the background with humans approving outcomes so nobody has to learn to prompt; and measure manual hours eliminated rather than logins. Scarcity/funnel packaging, but the adoption mechanics are specific and transferable to internal AI rollouts.
+
+- [Matt Slotnick](https://x.com/matt_slotnick/status/2022428696595108152) — 2026-08-25: X article 'Intention Is All You Need' arguing businesses are fundamentally resource-allocation machines, so the most valuable software is whatever owns the core objects those resources get deployed against — Salesforce owns the customer, Workday the employee, ServiceNow the technology. The central claim is that systems of record aren't databases but representations of organizational truth: how an object is defined, how it's measured, its set of valid states, and how it's managed. Strategy-layer framing for where durable value sits as AI arrives; pairs with the Xudong Han / Julie Yoo 'accountability as moat' post.
 
 - [Xudong Han](https://x.com/xudong07452910/status/2090760827230187782) — 2026-08-21: Chinese-language post recommending a Julie Yoo essay on where an AI startup's moat can still sit. Argument: models improve every few months, so any product whose main value is 'answering questions more smartly' or automating a process will get absorbed by the foundation models over time - the layer that's much harder to replace is being accountable for outcomes. Healthcare is the worked example, where actually delivering services requires licenses, insurance, payment rails, and liability for errors, and insurers carry real financial risk. Aimed at people building agents, vertical AI, or healthtech; the accountability-as-moat framing transfers directly to other regulated verticals.
 
@@ -3676,7 +3770,21 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Points to a superengineer.net blog post as a good summary of Elon Musk's 5-step design/engineering method (DFX).
 
-### Adjacent (31)
+### Adjacent (38)
+
+- [Grace Clarke](https://x.com/graceclarke/status/2091999661565325497) — 2026-08-25: Grace Clarke shares 'eli5-for-grownups', her variant of @trq212's ELI5 prompt with tighter direction on what 'explain like I'm five' should and shouldn't mean — the point being that consistency comes from constraining the failure modes, not just asking for simplicity. Full text in a public Google Doc (docs.google.com/document/d/1biJttYJFjWVWJOvzhmnlsOgZkaoElLoNRp4FfyUGtcw).
+
+- [rvaniaaa](https://x.com/rvaniaaaa/status/2091991026139361633) — 2026-08-25: Argues personal-knowledge systems die when maintenance cost crosses value — you spend more time filing than thinking (the claimed 90%-abandoned-in-three-months figure is asserted, not sourced). Proposes a 'compiler' architecture instead: raw holds immutable unstructured source material as ground truth, wiki holds structured linked evergreen knowledge that the model writes and the human reads, output holds finished work built from compiled knowledge rather than memory — with a CLAUDE.md at the center carrying identity, preferences, goals and project context that the model reads automatically before every session. Direct sibling of post 2090722810674975071 by the same author, and close to how this collection itself is structured.
+
+- [Luke Pierce](https://x.com/lukepierceops/status/2091949409231880377) — 2026-08-25: Lead-magnet post giving away the implementation-and-adoption playbook behind the author's $25K-$60K AI builds: adoption is won before the build starts; the migration protocol is backfill, parallel week, dated cutover, kill date, so nobody quietly stays on the old tool; migrate the heaviest department first because each win sells the next; keep the client never more than a day from visible progress; run AI in the background with humans approving outcomes so nobody has to learn to prompt; and measure manual hours eliminated rather than logins. Scarcity/funnel packaging, but the adoption mechanics are specific and transferable to internal AI rollouts.
+
+- [Ryan Christensen](https://x.com/belief_engineer/status/2091934305597481096) — 2026-08-25: X article reporting a 28-day self-experiment with Pinealon, a research peptide, written by someone attempting to recover cognitive function they attribute to multiple bipolar manic episodes. Methodologically it is more instrumented than most such write-ups — longitudinal EEG via a Muse 2 and the NeuroSkill app rather than HRV or sleep proxies — but it remains uncontrolled single-subject self-report, the outcome claims are the author's own, and Pinealon is not an approved therapeutic. Of interest as an example of quantified n=1 methodology rather than as evidence about the compound.
+
+- [CyrilXBT](https://x.com/cyrilxbt/status/2091331618979905582) — 2026-08-25: X article walking hour-by-hour through shipping a live product that takes real payments (ranknow.lol — a pay-to-rank leaderboard with outbidding) end to end with Claude Code in a single day, starting from not considering himself a developer. The transferable lesson is scope discipline: pick one narrow mechanic with a single core loop, small enough that finishing it is realistic. The '24 hours' transformation framing is hype, but it is a real solo-build account with a shipped, paying product behind it.
+
+- [Matt Slotnick](https://x.com/matt_slotnick/status/2022428696595108152) — 2026-08-25: X article 'Intention Is All You Need' arguing businesses are fundamentally resource-allocation machines, so the most valuable software is whatever owns the core objects those resources get deployed against — Salesforce owns the customer, Workday the employee, ServiceNow the technology. The central claim is that systems of record aren't databases but representations of organizational truth: how an object is defined, how it's measured, its set of valid states, and how it's managed. Strategy-layer framing for where durable value sits as AI arrives; pairs with the Xudong Han / Julie Yoo 'accountability as moat' post.
+
+- [BasedBiohacker](https://x.com/basedbiohacker/status/2015559542528971036) — 2026-08-25: Long-form 'modafinil bible' covering claimed mechanisms, dosing protocols, side effects and fixes, stacking and cycling, framed as 'responsible enhancement' for high achievers. It cites a real Oxford review of modafinil and cognition (ox.ac.uk/news/2015-08-20-review-smart-drug-shows-modafinil-does-enhance-cognition) but also links directly to grey-market vendors (modafinilxl.com, modawhale.to, kimerachems.co), so it doubles as a purchase funnel. Modafinil is prescription-only in the US and most jurisdictions and the 'near-perfect safety profile' line is the author's characterization; the protocols described are his claims, not clinical guidance. Same author as post 2071982410082734111.
 
 - [ericosiu](https://x.com/ericosiu/status/2090475762495185337) — 2026-08-21: Shares a reusable meta-prompt for picking which business workflow to automate first: feed an agent your SOPs, briefs, templates and examples, then have it identify the highest-leverage repetitive workflow and map trigger, inputs, process, output, human gate, success metric, and stop condition before writing the bot instructions. The 'human gate' and 'stop condition' slots are the transferable part - they generalize well beyond the marketing context and beyond Grok Bot specifically. Quote-tweets the author's own article on running marketing through Grok Bot.
 
@@ -3740,7 +3848,11 @@
 
 - [keshav](https://x.com/kshvbgde/status/1974835291358969895) — 2025-10-07: Post (likely video/thread) on Steve Jobs's principles for designing insanely great products.
 
-### Solo Operator (6)
+### Solo Operator (8)
+
+- [Luke Pierce](https://x.com/lukepierceops/status/2091949409231880377) — 2026-08-25: Lead-magnet post giving away the implementation-and-adoption playbook behind the author's $25K-$60K AI builds: adoption is won before the build starts; the migration protocol is backfill, parallel week, dated cutover, kill date, so nobody quietly stays on the old tool; migrate the heaviest department first because each win sells the next; keep the client never more than a day from visible progress; run AI in the background with humans approving outcomes so nobody has to learn to prompt; and measure manual hours eliminated rather than logins. Scarcity/funnel packaging, but the adoption mechanics are specific and transferable to internal AI rollouts.
+
+- [CyrilXBT](https://x.com/cyrilxbt/status/2091331618979905582) — 2026-08-25: X article walking hour-by-hour through shipping a live product that takes real payments (ranknow.lol — a pay-to-rank leaderboard with outbidding) end to end with Claude Code in a single day, starting from not considering himself a developer. The transferable lesson is scope discipline: pick one narrow mechanic with a single core loop, small enough that finishing it is realistic. The '24 hours' transformation framing is hype, but it is a real solo-build account with a shipped, paying product behind it.
 
 - [hraness](https://x.com/hraness/status/2090680065528901919) — 2026-08-21: Long-form X article on running a personal 'software factory': 15 Codex Pro 20x subscriptions driving a dozen-plus projects, with a self-reported 30-day yield of +6.7M and -4.7M lines across 25 projects. Notes the economics openly - roughly $210k/mo of list-price capacity for $36k paid, citing a 70x subsidy figure from SemiAnalysis - and organizes the method around relentlessly seeking leverage so time goes to hard problems rather than babysitting execution. Stack and templates are public: github.com/hraness/hra, github.com/hraness/kb, hraness.com/kb, plus WRITING.md and STYLE.md in github.com/hraness/personal-monorepo-template and google/embeddinggemma-300m for embeddings.
 
@@ -3754,7 +3866,19 @@
 
 - [zostaff](https://x.com/zostaff/status/2033930728044372275) — 2026-03-18: zostaff's clickbait-titled ('How to Quit Your Job in One Day') walkthrough of an autonomous Polymarket trading system built from three agents: Claude (strategist — probability/recommendation/confidence), Codex (engineer — writes and debugs bot code), and OpenClaw (orchestrator — persistent memory, cron, modular skills, Telegram interface that executes trades and logs everything).
 
-### Questionable (116)
+### Questionable (122)
+
+- [Luke Pierce](https://x.com/lukepierceops/status/2091949409231880377) — 2026-08-25: Lead-magnet post giving away the implementation-and-adoption playbook behind the author's $25K-$60K AI builds: adoption is won before the build starts; the migration protocol is backfill, parallel week, dated cutover, kill date, so nobody quietly stays on the old tool; migrate the heaviest department first because each win sells the next; keep the client never more than a day from visible progress; run AI in the background with humans approving outcomes so nobody has to learn to prompt; and measure manual hours eliminated rather than logins. Scarcity/funnel packaging, but the adoption mechanics are specific and transferable to internal AI rollouts.
+
+- [Ryan Christensen](https://x.com/belief_engineer/status/2091934305597481096) — 2026-08-25: X article reporting a 28-day self-experiment with Pinealon, a research peptide, written by someone attempting to recover cognitive function they attribute to multiple bipolar manic episodes. Methodologically it is more instrumented than most such write-ups — longitudinal EEG via a Muse 2 and the NeuroSkill app rather than HRV or sleep proxies — but it remains uncontrolled single-subject self-report, the outcome claims are the author's own, and Pinealon is not an approved therapeutic. Of interest as an example of quantified n=1 methodology rather than as evidence about the compound.
+
+- [divyansh tiwari](https://x.com/divyansht91162/status/2091879586045018406) — 2026-08-25: Listicle of repos for agent builders, with real pointers: OpenViking (github.com/volcengine/OpenViking — a context database unifying memory, knowledge and skills), AgentMemory (github.com/rohitg00/agentmemory — persistent memory for coding agents), Anthropic Skills (github.com/anthropics/skills), Diagram Design (github.com/cathrynlavery/diagram-design, aimed at Claude Code workflows), Scientific Agent Skills (github.com/K-Dense-AI/scientific-agent-skills, 160+ research skills and databases), and Awesome Harness Engineering (agent memory, skills, security, evals, orchestration patterns). 'Top 10 you must know' framing is engagement packaging; the repo list itself is substantive and overlaps the harness-engineering and agent-memory veins already in the collection.
+
+- [Shubham Saboo](https://x.com/saboo_shubham_/status/2091713863368802322) — 2026-08-25: Reports a Stanford 'LLM-as-a-Verifier' result: sample five swe-agent trajectories, rank them with the same model, keep the winner — taking deepseek-v4-flash from 78.7% to 88% on terminal-bench with no fine-tuning, and open source. The underlying technique is best-of-N with self-ranking rather than anything exotic; the ALL-CAPS 'WILD...' framing is engagement packaging around a real and cheap inference-time win.
+
+- [CyrilXBT](https://x.com/cyrilxbt/status/2091331618979905582) — 2026-08-25: X article walking hour-by-hour through shipping a live product that takes real payments (ranknow.lol — a pay-to-rank leaderboard with outbidding) end to end with Claude Code in a single day, starting from not considering himself a developer. The transferable lesson is scope discipline: pick one narrow mechanic with a single core loop, small enough that finishing it is realistic. The '24 hours' transformation framing is hype, but it is a real solo-build account with a shipped, paying product behind it.
+
+- [BasedBiohacker](https://x.com/basedbiohacker/status/2015559542528971036) — 2026-08-25: Long-form 'modafinil bible' covering claimed mechanisms, dosing protocols, side effects and fixes, stacking and cycling, framed as 'responsible enhancement' for high achievers. It cites a real Oxford review of modafinil and cognition (ox.ac.uk/news/2015-08-20-review-smart-drug-shows-modafinil-does-enhance-cognition) but also links directly to grey-market vendors (modafinilxl.com, modawhale.to, kimerachems.co), so it doubles as a purchase funnel. Modafinil is prescription-only in the US and most jurisdictions and the 'near-perfect safety profile' line is the author's characterization; the protocols described are his claims, not clinical guidance. Same author as post 2071982410082734111.
 
 - [Eron](https://x.com/0xeronn/status/2090454335750644120) — 2026-08-21: Promotes a 20-minute explainer video visualizing loss landscapes inside Llama 3.2 and why gradient descent does not get stuck in local minima the way early critics expected. Framing is pop-science and loose - the Hinton anecdote and the 'parameters fell through a wormhole' description are dramatized rather than accurate, and the post leans on a bookmark-and-watch hook. Quote-tweets the author's own companion article on next-token prediction.
 
@@ -4196,6 +4320,66 @@
 ## Full Chronological List
 
 ### Aug 2026
+
+- **2026-08-25** | [Matt Stockton](https://x.com/mstockton/status/2092076777615102400) | agent-design, prompting, dev-practices
+  Commentary on dynamic agent workflows: the strongest use of LLMs is graphs with *uncorrelated* starting context, and the six workflow patterns in the linked post are good examples. Key mechanism — adversarial verification works precisely because it runs in a fresh context window; asking the same agent with the same context to check its own work invites confirmation bias. Argues the critical design question is deciding what context travels along each edge of the graph, and why, because attention stays a delicate resource. Flagged by Jeremy for Maro.
+
+- **2026-08-25** | [Madhu Guru](https://x.com/realmadhuguru/status/2092058332735693264) | dev-practices, agent-design, research
+  Part 8 of a series on building evals, on discriminatory power: a hill-climbing eval only earns its keep if it separates systems you already know are meaningfully different. Illustrated with five systems scoring 92-95 where the eval fails to distinguish the two known-better ones — the analogy is a fifth-grade math test given to PhDs. Argues the sweet spot is realistic + difficult + sensitive to capability differences, and raises the open question of what to do when good evals saturate as harness and models improve.
+
+- **2026-08-25** | [Igor bedesqui](https://x.com/bedesqui/status/2092036341630394449) | dev-practices, agent-design, prompting
+  Shares what the author calls his 'magnum opus of unslopping PRs' (gist.github.com/bdsqqq/1e7e6f454271d5f856a1176d0e800d89) — a review-standards file he pastes repeatedly into an agent's context until the agent can demonstrate its change couldn't have broken anything. A concrete, copyable artifact for agent-driven code review. Flagged by Jeremy as 'reviews'.
+
+- **2026-08-25** | [Grace Clarke](https://x.com/graceclarke/status/2091999661565325497) | prompting, adjacent
+  Grace Clarke shares 'eli5-for-grownups', her variant of @trq212's ELI5 prompt with tighter direction on what 'explain like I'm five' should and shouldn't mean — the point being that consistency comes from constraining the failure modes, not just asking for simplicity. Full text in a public Google Doc (docs.google.com/document/d/1biJttYJFjWVWJOvzhmnlsOgZkaoElLoNRp4FfyUGtcw).
+
+- **2026-08-25** | [rvaniaaa](https://x.com/rvaniaaaa/status/2091991026139361633) | agent-design, claude-code, dev-practices, adjacent
+  Argues personal-knowledge systems die when maintenance cost crosses value — you spend more time filing than thinking (the claimed 90%-abandoned-in-three-months figure is asserted, not sourced). Proposes a 'compiler' architecture instead: raw holds immutable unstructured source material as ground truth, wiki holds structured linked evergreen knowledge that the model writes and the human reads, output holds finished work built from compiled knowledge rather than memory — with a CLAUDE.md at the center carrying identity, preferences, goals and project context that the model reads automatically before every session. Direct sibling of post 2090722810674975071 by the same author, and close to how this collection itself is structured.
+
+- **2026-08-25** | [Kun Chen](https://x.com/kunchenguid/status/2091988752847823133) | agent-design, dev-practices
+  Describes a 'multi-brain' harness architecture developed with @pidotdev for agents that service background event loops — e.g. babysitting a PR by polling every five minutes for CI errors or human feedback. The failure mode is an orchestrator agent so saturated triaging events that it can no longer hold a conversation with you; the fix is one agent with several parallel sessions, a main session you talk to plus cheaper background sessions absorbing the event traffic. Context is Firstmate, which orchestrates a whole agent fleet.
+
+- **2026-08-25** | [Mark Ajzenstadt](https://x.com/mardehaym/status/2091963865718231069) | agent-design, management, dev-practices, industry
+  Argues most companies are stuck in the 'Death Valley' between agent POC and production — 99% say they're deploying agents, 9% actually have, while OpenAI enterprise data reportedly puts agentic products at 64% of corporate output tokens. Drawing on 14 production agent systems shipped across healthcare and financial services, names four recurring engineering gaps: no code graph (the agent can't see how the codebase connects, so it invents APIs), no knowledge base (it answers from training data instead of yours), no closed feedback loop (production errors go unlogged, so Monday's mistake repeats Tuesday), and no approval gates (the agent takes irreversible actions). The percentages are the author's and unsourced; the four gaps overlap the long-running-agent patterns in the Bilgin Ibryam post.
+
+- **2026-08-25** | [ClaudeDevs](https://x.com/claudedevs/status/2091953609185657251) | claude-code, skills-mcp, industry, management
+  Anthropic announced general availability of enterprise-managed auth for MCP connectors: Claude Team and Enterprise admins centralize authorization through their own identity provider, and users get tools and data connected automatically with no individual OAuth step. Removes the per-user connector-consent friction that blocks org-wide MCP rollouts. Flagged by Jeremy for Tanner.
+
+- **2026-08-25** | [Luke Pierce](https://x.com/lukepierceops/status/2091949409231880377) | management, adjacent, solo-operator, questionable
+  Lead-magnet post giving away the implementation-and-adoption playbook behind the author's $25K-$60K AI builds: adoption is won before the build starts; the migration protocol is backfill, parallel week, dated cutover, kill date, so nobody quietly stays on the old tool; migrate the heaviest department first because each win sells the next; keep the client never more than a day from visible progress; run AI in the background with humans approving outcomes so nobody has to learn to prompt; and measure manual hours eliminated rather than logins. Scarcity/funnel packaging, but the adoption mechanics are specific and transferable to internal AI rollouts.
+
+- **2026-08-25** | [Ryan Christensen](https://x.com/belief_engineer/status/2091934305597481096) | biohacking, questionable, adjacent
+  X article reporting a 28-day self-experiment with Pinealon, a research peptide, written by someone attempting to recover cognitive function they attribute to multiple bipolar manic episodes. Methodologically it is more instrumented than most such write-ups — longitudinal EEG via a Muse 2 and the NeuroSkill app rather than HRV or sleep proxies — but it remains uncontrolled single-subject self-report, the outcome claims are the author's own, and Pinealon is not an approved therapeutic. Of interest as an example of quantified n=1 methodology rather than as evidence about the compound.
+
+- **2026-08-25** | [苯 Carbon](https://x.com/eg4htb5i41jueri/status/2091927264208597215) | skills-mcp, dev-practices
+  Short endorsement of Archify (github.com/tt-a1i/archify), a skill that generates architecture flowcharts from a codebase. Minimal commentary — the value is the pointer.
+
+- **2026-08-25** | [Matt Pocock](https://x.com/mattpocockuk/status/2091897608293753169) | skills-mcp, dev-practices, agent-design
+  Matt Pocock moved his /retro skill to in-progress in github.com/mattpocock/skills — run it after a session, or across a batch of sessions, to have the agent diagnose and repair its own mistakes for next time. It targets four axes: agent navigation (better exploration), CODING_STANDARDS (better review), tool economy, and information access. A concrete instance of the self-improving-skill pattern, and a companion to his /implement-spec and /wayfinder skills already in the collection.
+
+- **2026-08-25** | [divyansh tiwari](https://x.com/divyansht91162/status/2091879586045018406) | agent-design, skills-mcp, dev-practices, questionable
+  Listicle of repos for agent builders, with real pointers: OpenViking (github.com/volcengine/OpenViking — a context database unifying memory, knowledge and skills), AgentMemory (github.com/rohitg00/agentmemory — persistent memory for coding agents), Anthropic Skills (github.com/anthropics/skills), Diagram Design (github.com/cathrynlavery/diagram-design, aimed at Claude Code workflows), Scientific Agent Skills (github.com/K-Dense-AI/scientific-agent-skills, 160+ research skills and databases), and Awesome Harness Engineering (agent memory, skills, security, evals, orchestration patterns). 'Top 10 you must know' framing is engagement packaging; the repo list itself is substantive and overlaps the harness-engineering and agent-memory veins already in the collection.
+
+- **2026-08-25** | [pilvar (Philippe Dourassov)](https://x.com/pilvar222/status/2091879005708320814) | agent-design, dev-practices, industry
+  Aikido claims it found more vulnerabilities than Anthropic's Mythos (Claude Security) without burning ~$10k in tokens, with the takeaway that many agents running small models beat a few agents running big ones. Writeup at aikido.dev/blog/aikido-finds-more-vulnerabilities-claude-security-mythos — a concrete cost/architecture data point for fan-out agent design, from a vendor with a competing product.
+
+- **2026-08-25** | [elvis](https://x.com/omarsar0/status/2091869893339812222) | research, skills-mcp, agent-design, dev-practices
+  NVIDIA's ACES paper argues the usual skill-review gate — a scanner checking structure, style and security — predicts almost nothing about actual skill quality: across 145 real skills from internal and public catalogs, scan scores correlate with LLM-judge quality at Spearman rho 0.14. It proposes 'Skill Lift' instead: run the same task twice under identical model, sandbox, workspace and scorer, once with the skill loaded and once without, and measure the difference in what the agent completed. Scored over 947 paired cases from 58 production skills across four harnesses, normalized into a shared Agent Trajectory Interchange Format; largest gains appeared in skill execution, behavior check, and skill efficiency.
+
+- **2026-08-25** | [Mia](https://x.com/miaai_lab/status/2091858917307421009) | skills-mcp, agent-design, dev-practices
+  Recommends Ponytail (github.com/dietrichgebert/ponytail), a harness skill that pushes the agent to behave like a maximally lazy senior dev — the one who reads 50 lines and replaces them with one — as a defense against agents generating volume instead of solutions. Claimed to work across Claude Code, Codex, Hermes Agent, Copilot CLI, Pi, OMP, OpenCode, Cursor and Gemini.
+
+- **2026-08-25** | [Shubham Saboo](https://x.com/saboo_shubham_/status/2091713863368802322) | research, agent-design, questionable
+  Reports a Stanford 'LLM-as-a-Verifier' result: sample five swe-agent trajectories, rank them with the same model, keep the winner — taking deepseek-v4-flash from 78.7% to 88% on terminal-bench with no fine-tuning, and open source. The underlying technique is best-of-N with self-ranking rather than anything exotic; the ALL-CAPS 'WILD...' framing is engagement packaging around a real and cheap inference-time win.
+
+- **2026-08-25** | [CyrilXBT](https://x.com/cyrilxbt/status/2091331618979905582) | claude-code, solo-operator, adjacent, questionable
+  X article walking hour-by-hour through shipping a live product that takes real payments (ranknow.lol — a pay-to-rank leaderboard with outbidding) end to end with Claude Code in a single day, starting from not considering himself a developer. The transferable lesson is scope discipline: pick one narrow mechanic with a single core loop, small enough that finishing it is realistic. The '24 hours' transformation framing is hype, but it is a real solo-build account with a shipped, paying product behind it.
+
+- **2026-08-25** | [Matt Slotnick](https://x.com/matt_slotnick/status/2022428696595108152) | industry, management, adjacent
+  X article 'Intention Is All You Need' arguing businesses are fundamentally resource-allocation machines, so the most valuable software is whatever owns the core objects those resources get deployed against — Salesforce owns the customer, Workday the employee, ServiceNow the technology. The central claim is that systems of record aren't databases but representations of organizational truth: how an object is defined, how it's measured, its set of valid states, and how it's managed. Strategy-layer framing for where durable value sits as AI arrives; pairs with the Xudong Han / Julie Yoo 'accountability as moat' post.
+
+- **2026-08-25** | [BasedBiohacker](https://x.com/basedbiohacker/status/2015559542528971036) | biohacking, questionable, adjacent
+  Long-form 'modafinil bible' covering claimed mechanisms, dosing protocols, side effects and fixes, stacking and cycling, framed as 'responsible enhancement' for high achievers. It cites a real Oxford review of modafinil and cognition (ox.ac.uk/news/2015-08-20-review-smart-drug-shows-modafinil-does-enhance-cognition) but also links directly to grey-market vendors (modafinilxl.com, modawhale.to, kimerachems.co), so it doubles as a purchase funnel. Modafinil is prescription-only in the US and most jurisdictions and the 'near-perfect safety profile' line is the author's characterization; the protocols described are his claims, not clinical guidance. Same author as post 2071982410082734111.
 
 - **2026-08-21** | [Xudong Han](https://x.com/xudong07452910/status/2090760827230187782) | industry, management, agent-design
   Chinese-language post recommending a Julie Yoo essay on where an AI startup's moat can still sit. Argument: models improve every few months, so any product whose main value is 'answering questions more smartly' or automating a process will get absorbed by the foundation models over time - the layer that's much harder to replace is being accountable for outcomes. Healthcare is the worked example, where actually delivering services requires licenses, insurance, payment rails, and liability for errors, and insurers carry real financial risk. Aimed at people building agents, vertical AI, or healthtech; the accountability-as-moat framing transfers directly to other regulated verticals.

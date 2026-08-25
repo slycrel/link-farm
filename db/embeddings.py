@@ -357,7 +357,16 @@ def find_neighbors(post_id: int, k: int = 10,
 def concept_centroids(model: str = DEFAULT_MODEL,
                        db_path: Path = DEFAULT_DB) -> dict[int, np.ndarray]:
     """Average embedding of the canonical posts attached to each active
-    concept. Used to score a new post's fit to existing concepts."""
+    concept. Used to score a new post's fit to existing concepts.
+
+    **Only load-bearing roles feed the centroid** (`evidence` / `origin`; see
+    `db.concepts.CANONICAL_ROLES`). Weak, counter-example and tangential edges
+    are deliberately excluded: a `counter-example` argues the *opposite* of its
+    concept and a `weak` edge is an unconfirmed association, so letting either
+    into the mean would drag the centroid away from what the concept means and
+    corrupt every subsequent semantic match and primary assignment. This filter
+    is what makes generous weak-edge attachment safe.
+    """
     with _connect(db_path) as conn:
         rows = conn.execute("""
             SELECT pc.concept_id, pe.vector
@@ -365,6 +374,7 @@ def concept_centroids(model: str = DEFAULT_MODEL,
               JOIN post_embeddings pe ON pe.post_id = pc.post_id
               JOIN concepts c ON c.id = pc.concept_id
              WHERE pe.model = ? AND c.status = 'active'
+               AND pc.role IN ('evidence', 'origin')
         """, (model,)).fetchall()
     by_concept: dict[int, list[np.ndarray]] = {}
     for r in rows:

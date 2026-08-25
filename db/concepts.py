@@ -71,6 +71,22 @@ ROLE_EVIDENCE = "evidence"
 ROLE_COUNTER = "counter-example"
 ROLE_TANGENTIAL = "tangential"
 ROLE_ORIGIN = "origin"
+ROLE_WEAK = "weak"
+
+# Roles that count as *load-bearing* membership. Only these feed concept
+# centroids, qualify a concept for semantic scoring, and are eligible to become
+# a post's primary home. Everything else (weak / counter-example / tangential)
+# is a recorded association that a reader can act on but that must not vote on
+# what a concept *means* — otherwise recall improvements silently degrade the
+# precision of every downstream pass.
+#
+# Rationale (Jeremy, Aug 2026): "low signal" was doing too much work as a
+# reason to discard. A sub-threshold match is usually a real association that
+# the 0.82 floor can't confirm, not noise — and this corpus is a personal
+# research library where the cost of losing a thread is higher than the cost
+# of carrying a weak one. So the recall band is now *attached and labelled*
+# rather than dismissed, and the role vocabulary is what keeps that honest.
+CANONICAL_ROLES = (ROLE_EVIDENCE, ROLE_ORIGIN)
 
 SOURCE_MECHANICAL = "mechanical"
 SOURCE_SEMANTIC = "semantic"
@@ -361,24 +377,43 @@ def auto_curate(*, db_path: Path = DEFAULT_DB, with_lock: bool = True,
                 progress: bool = False) -> dict:
     """Unattended triage of pending observations, safe to run every sync.
 
-    Rules (post-2026-07-22: semantic matches are fully automated — with primary
-    derived separately and split-review measuring primaries, a semantic edge is
-    only ever a low-stakes *secondary* tag, so there's no reason to park it for
-    a human):
-      - AUTO-FILE (promote as secondary): semantic observations at/above
-        `min_cosine` on an active *conceptual* concept.
-      - DISMISS: semantic observations *below* `min_cosine` on a conceptual
-        concept (the recall band — too weak to tag without review, and we no
-        longer review them); raw mechanical `mention:` / `url:` groupings; and
-        per-person / non-conceptual observations whose post is already attached
-        to some conceptual concept (lossless de-duplication).
-      - LEAVE PENDING: only genuine structural decisions — e.g. a per-person /
-        mechanical grouping whose post is *not* yet covered conceptually. These
-        are the things the human curate queue should actually contain.
+    **Attach-and-label, never discard (Jeremy, Aug 2026).** This pass used to
+    dismiss two large buckets: the sub-threshold semantic "recall band", and raw
+    mechanical `mention:` / `url:` groupings. That was wrong for this corpus.
+    Every post here is something Jeremy deliberately sent himself, so a match
+    the 0.82 floor can't *confirm* is usually a real association rather than
+    noise — and dismissing it meant nothing downstream would ever reconsider
+    it. Measured cost of the old policy: `adjacent`-tagged posts were ~1.6x
+    more likely than the corpus baseline to end up with no concept edge at all,
+    i.e. the triage was biased against exactly the tangential material the
+    taxonomy was extended to capture.
 
-    Returns per-run counts. Idempotent: a second run finds nothing to do.
+    So automation no longer decides that something isn't worth thinking about.
+    It records what it found and how much to trust it; `role` carries the
+    caveat. Only a human calls `dismiss_observation()`, for genuine junk
+    (scams, content-free engagement bait).
+
+    Rules:
+      - EVIDENCE (load-bearing; feeds centroids, can become a primary home):
+        semantic observations at/above `min_cosine` on an active *conceptual*
+        concept, plus mechanical shared-external-URL groupings — two posts
+        citing the same repo or article are concretely about the same thing.
+      - WEAK (recorded association; excluded from centroids, never primary):
+        semantic observations *below* `min_cosine` on a conceptual concept (the
+        recall band), mechanical `mention:` groupings (a shared @handle is a
+        much looser signal than a shared URL, and per-person grouping is
+        deprioritised by preference — but not deleted), and non-conceptual
+        observations whose post is already conceptually covered.
+      - LEAVE PENDING: genuine structural decisions — e.g. a mechanical
+        grouping on an archived concept. The human queue should only ever
+        contain things a human actually has to decide.
+
+    Because weak edges can't move centroids or primaries, attaching them
+    generously is safe: recall goes up, precision of every downstream pass is
+    unchanged. Returns per-run counts. Idempotent: a second run finds nothing.
     """
-    result = {"promoted": 0, "dismissed": 0, "dismissed_lowscore": 0, "left_pending": 0}
+    result = {"promoted": 0, "dismissed": 0, "dismissed_lowscore": 0,
+              "left_pending": 0, "weak": 0, "evidence": 0}
 
     with _connect(db_path) as conn:
         pend = conn.execute("""
@@ -404,39 +439,46 @@ def auto_curate(*, db_path: Path = DEFAULT_DB, with_lock: bool = True,
                 ).fetchall()
             }
 
-    promote_ids, dismiss_ids, dismiss_lowscore_ids = [], [], []
+    # (observation_id, role, note) — nothing is dismissed here by design.
+    to_attach: list[tuple[int, str, str]] = []
     for o in pend:
         conceptual = _is_conceptual_name(o["cname"])
         active = o["cstatus"] == CONCEPT_ACTIVE
         score = o["raw_score"] or 0.0
+        name = o["cname"]
         if o["source"] == "semantic" and active and conceptual and score >= min_cosine:
-            promote_ids.append(o["id"])
+            to_attach.append((o["id"], ROLE_EVIDENCE,
+                              f"auto-curate: cosine {score:.3f} >= floor {min_cosine}"))
         elif o["source"] == "semantic" and conceptual and score < min_cosine:
-            # Recall band below the auto-file floor — too weak to tag, and we
-            # no longer review it by hand. Dismiss so it can't accumulate.
-            dismiss_lowscore_ids.append(o["id"])
-        elif o["source"] == "mechanical" and (
-                o["cname"].startswith("mention:") or o["cname"].startswith("url:")):
-            dismiss_ids.append(o["id"])
-        elif not conceptual and o["post_id"] in covered_posts:
-            dismiss_ids.append(o["id"])
+            # The recall band. Previously dismissed; now kept as a labelled
+            # association so it stays findable and can be upgraded by hand.
+            to_attach.append((o["id"], ROLE_WEAK,
+                              f"auto-curate: recall band, cosine {score:.3f} "
+                              f"< floor {min_cosine} — association recorded, "
+                              f"not load-bearing"))
+        elif o["source"] == "mechanical" and name.startswith("url:") and active:
+            # Shared external URL: concrete co-citation, treat as real evidence.
+            to_attach.append((o["id"], ROLE_EVIDENCE,
+                              "auto-curate: shared external URL (co-citation)"))
+        elif o["source"] == "mechanical" and name.startswith("mention:") and active:
+            # Shared @handle: much looser, and per-person grouping is
+            # deprioritised by preference — kept weak rather than dropped.
+            to_attach.append((o["id"], ROLE_WEAK,
+                              "auto-curate: shared @mention — loose signal, "
+                              "per-person grouping deprioritised"))
+        elif not conceptual and o["post_id"] in covered_posts and active:
+            to_attach.append((o["id"], ROLE_WEAK,
+                              "auto-curate: non-conceptual grouping, post "
+                              "already conceptually covered"))
         else:
             result["left_pending"] += 1
 
     def _apply():
-        for oid in promote_ids:
-            promote_observation(oid, db_path=db_path, with_lock=False)
+        for oid, role, note in to_attach:
+            promote_observation(oid, role=role, notes=note,
+                                db_path=db_path, with_lock=False)
             result["promoted"] += 1
-        for oid in dismiss_ids:
-            dismiss_observation(
-                oid, notes="auto-curate: conceptual-preference triage",
-                db_path=db_path, with_lock=False)
-            result["dismissed"] += 1
-        for oid in dismiss_lowscore_ids:
-            dismiss_observation(
-                oid, notes=f"auto-curate: below secondary-tag floor ({min_cosine})",
-                db_path=db_path, with_lock=False)
-            result["dismissed_lowscore"] += 1
+            result["evidence" if role == ROLE_EVIDENCE else "weak"] += 1
 
     if with_lock:
         with writer_lock(timeout=120):
@@ -445,8 +487,9 @@ def auto_curate(*, db_path: Path = DEFAULT_DB, with_lock: bool = True,
         _apply()
 
     if progress:
-        print(f"[auto-curate] promoted {result['promoted']} (secondary), "
-              f"dismissed {result['dismissed']} + {result['dismissed_lowscore']} low-score, "
+        print(f"[auto-curate] attached {result['promoted']} "
+              f"({result['evidence']} evidence, {result['weak']} weak), "
+              f"dismissed {result['dismissed']}, "
               f"left {result['left_pending']} pending")
     return result
 
@@ -499,14 +542,20 @@ def assign_primaries(*, db_path: Path = DEFAULT_DB, with_lock: bool = True,
         with _connect(db_path) as conn:
             model = DEFAULT_MODEL
             # All edges on active concepts, with vectors where available.
-            rows = conn.execute("""
+            # Only load-bearing edges are eligible to be a post's home. A weak
+            # or counter-example edge is a recorded association, not a claim
+            # about where the post belongs — so a post whose *only* edges are
+            # weak is intentionally left unhomed and stays visible to orphan
+            # clustering, which can still invent a real concept for it.
+            rows = conn.execute(f"""
                 SELECT pc.post_id, pc.concept_id, pc.is_primary, pc.notes,
-                       pe.vector
+                       c.name AS cname, pe.vector
                   FROM post_concepts pc
                   JOIN concepts c ON c.id = pc.concept_id AND c.status = ?
                   LEFT JOIN post_embeddings pe
                          ON pe.post_id = pc.post_id AND pe.model = ?
-            """, (CONCEPT_ACTIVE, model)).fetchall()
+                 WHERE pc.role IN ({','.join('?' * len(CANONICAL_ROLES))})
+            """, (CONCEPT_ACTIVE, model, *CANONICAL_ROLES)).fetchall()
 
             # Group edges by post; collect per-concept vector sums for LOO.
             by_post: dict[int, list[dict]] = defaultdict(list)
@@ -530,13 +579,22 @@ def assign_primaries(*, db_path: Path = DEFAULT_DB, with_lock: bool = True,
                 if pinned:
                     result["pinned_skipped"] += 1
                     continue
-                if len(edges) == 1:
-                    chosen[pid] = edges[0]["concept_id"]
+                # Conceptual-preference on the *home* axis. A raw `url:` /
+                # `mention:` grouping or a per-person concept is a legitimate
+                # association but a poor answer to "what is this post about",
+                # so it only wins a home when nothing thematic is available.
+                # (Without this, making shared-URL edges load-bearing quietly
+                # promoted url: groupings into homes for a handful of posts.)
+                conceptual_edges = [e for e in edges
+                                    if _is_conceptual_name(e["cname"])]
+                candidates = conceptual_edges or edges
+                if len(candidates) == 1:
+                    chosen[pid] = candidates[0]["concept_id"]
                     result["single_edge"] += 1
                     continue
                 # Score each candidate by leave-one-out centroid cosine.
                 best_cid, best_score = None, -2.0
-                for e in edges:
+                for e in candidates:
                     cid = e["concept_id"]
                     v = vecs.get((pid, cid))
                     if v is None or ccount.get(cid, 0) < 2:
@@ -551,8 +609,10 @@ def assign_primaries(*, db_path: Path = DEFAULT_DB, with_lock: bool = True,
                     result["scored"] += 1
                 else:
                     # Fallback: keep existing primary, else lowest concept_id.
-                    cur = next((e["concept_id"] for e in edges if e["is_primary"]), None)
-                    chosen[pid] = cur if cur is not None else min(e["concept_id"] for e in edges)
+                    # Drawn from `candidates`, so the conceptual preference
+                    # still holds when nothing could be scored.
+                    cur = next((e["concept_id"] for e in candidates if e["is_primary"]), None)
+                    chosen[pid] = cur if cur is not None else min(e["concept_id"] for e in candidates)
                     result["fallback"] += 1
 
             # Write: clear all, then set the chosen edge per post. Clearing
@@ -639,17 +699,28 @@ def split_candidates(db_path: Path = DEFAULT_DB,
 # ---- Query helpers -----------------------------------------------------
 
 def list_active_concepts(db_path: Path = DEFAULT_DB) -> list[dict]:
-    """List active concepts with promoted-evidence counts."""
+    """List active concepts with promoted-evidence counts.
+
+    `post_count` is total edges (what the concept touches); `evidence_count` is
+    the load-bearing subset (what it actually rests on) and `weak_count` the
+    recorded-but-unconfirmed remainder. Report `evidence_count` when describing
+    how big a concept is — quoting the total overstates it, which is the same
+    mistake the old "49 active concepts" figure made by counting empty shells.
+    """
     with _connect(db_path) as conn:
         rows = conn.execute("""
             SELECT
                 c.id, c.name, c.description, c.source, c.created_at, c.updated_at,
                 (SELECT COUNT(*) FROM post_concepts pc WHERE pc.concept_id = c.id) AS post_count,
+                (SELECT COUNT(*) FROM post_concepts pc WHERE pc.concept_id = c.id
+                   AND pc.role IN ('evidence', 'origin')) AS evidence_count,
+                (SELECT COUNT(*) FROM post_concepts pc WHERE pc.concept_id = c.id
+                   AND pc.role NOT IN ('evidence', 'origin')) AS weak_count,
                 (SELECT COUNT(*) FROM concept_observations o
                   WHERE o.concept_id = c.id AND o.status = 'pending') AS pending_count
               FROM concepts c
              WHERE c.status = 'active'
-             ORDER BY post_count DESC, c.updated_at DESC
+             ORDER BY evidence_count DESC, post_count DESC, c.updated_at DESC
         """).fetchall()
     return [dict(r) for r in rows]
 
@@ -711,26 +782,34 @@ def recent_active_concepts(days: int = 7, db_path: Path = DEFAULT_DB,
     surface here — they're still browseable via the concepts list.
     """
     with _connect(db_path) as conn:
+        # "Gained new evidence" means exactly that — load-bearing edges only.
+        # Weak edges are attached generously, so counting them here would make
+        # every concept look freshly active and drown the morning view.
         rows = conn.execute(f"""
             SELECT
                 c.id, c.name, c.description,
-                (SELECT COUNT(*) FROM post_concepts pc WHERE pc.concept_id = c.id) AS post_count,
+                (SELECT COUNT(*) FROM post_concepts pc
+                  WHERE pc.concept_id = c.id
+                    AND pc.role IN ('evidence', 'origin')) AS post_count,
                 (SELECT COUNT(DISTINCT pc.post_id)
                    FROM post_concepts pc
                    JOIN posts p ON p.id = pc.post_id
                   WHERE pc.concept_id = c.id
+                    AND pc.role IN ('evidence', 'origin')
                     AND p.date >= date('now', ?)
                 ) AS recent_post_count,
                 (SELECT MAX(p.date)
                    FROM post_concepts pc
                    JOIN posts p ON p.id = pc.post_id
-                  WHERE pc.concept_id = c.id) AS last_post_date
+                  WHERE pc.concept_id = c.id
+                    AND pc.role IN ('evidence', 'origin')) AS last_post_date
               FROM concepts c
              WHERE c.status = 'active'
                AND EXISTS (
                    SELECT 1 FROM post_concepts pc
                      JOIN posts p ON p.id = pc.post_id
                     WHERE pc.concept_id = c.id
+                      AND pc.role IN ('evidence', 'origin')
                       AND p.date >= date('now', ?)
                )
              ORDER BY recent_post_count DESC, post_count DESC, last_post_date DESC
@@ -741,15 +820,20 @@ def recent_active_concepts(days: int = 7, db_path: Path = DEFAULT_DB,
 
 def top_posts_for_concept(concept_id: int, limit: int = 3,
                            db_path: Path = DEFAULT_DB) -> list[dict]:
-    """Top promoted posts attached to a concept, newest first."""
+    """Top promoted posts attached to a concept, newest first.
+
+    Load-bearing edges are surfaced ahead of weak ones so a concept's shortlist
+    shows what it actually rests on; weak associations still appear once the
+    evidence is exhausted, which is the point of keeping them.
+    """
     with _connect(db_path) as conn:
         rows = conn.execute("""
-            SELECT p.id, p.date, p.author, p.handle, p.url,
+            SELECT p.id, p.date, p.author, p.handle, p.url, pc.role,
                    SUBSTR(COALESCE(p.summary,''), 1, 200) AS summary
               FROM post_concepts pc
               JOIN posts p ON p.id = pc.post_id
              WHERE pc.concept_id = ?
-             ORDER BY p.date DESC
+             ORDER BY (pc.role IN ('evidence', 'origin')) DESC, p.date DESC
              LIMIT ?
         """, (concept_id, limit)).fetchall()
     return [dict(r) for r in rows]
@@ -1286,14 +1370,18 @@ def discover_semantic_neighbors(db_path: Path = DEFAULT_DB,
                              model=model)
 
         # Concepts with enough canonical edges to have a meaningful centroid.
+        # Counted on load-bearing roles only, to match concept_centroids():
+        # a concept held up entirely by weak edges has no trustworthy centroid
+        # and must not be scored against.
         active_with_enough = conn.execute(f"""
             SELECT c.id, c.name, COUNT(pc.post_id) AS n
               FROM concepts c
               JOIN post_concepts pc ON pc.concept_id = c.id
              WHERE c.status = 'active'
+               AND pc.role IN ({','.join('?' * len(CANONICAL_ROLES))})
              GROUP BY c.id
             HAVING n >= ?
-        """, (min_concept_edges,)).fetchall()
+        """, (*CANONICAL_ROLES, min_concept_edges)).fetchall()
         eligible_concept_ids = {r["id"] for r in active_with_enough}
         if not eligible_concept_ids:
             _finish_run(conn, run_id, 0, 0,
@@ -1528,14 +1616,23 @@ def discover_orphan_clusters(db_path: Path = DEFAULT_DB,
         A /= (np.linalg.norm(A, axis=1, keepdims=True) + 1e-9)
         mu = A.mean(0)
 
-        rows = conn.execute("""
+        # "Orphan" means *no load-bearing home*, not "no edges at all". A post
+        # carrying only weak edges has an association recorded but nowhere it
+        # belongs, so it stays eligible here — otherwise generous weak-edge
+        # attachment would quietly starve the one pass that can invent the
+        # concept such a post actually needs.
+        rows = conn.execute(f"""
             SELECT e.post_id, e.vector, p.author, p.handle, p.summary, p.content
               FROM post_embeddings e
               JOIN posts p ON p.id = e.post_id
              WHERE e.model = ?
                AND p.enrichment_status IN ('ok', 'legacy-ok')
-               AND NOT EXISTS (SELECT 1 FROM post_concepts pc WHERE pc.post_id = p.id)
-        """, (model,)).fetchall()
+               AND NOT EXISTS (
+                   SELECT 1 FROM post_concepts pc
+                    WHERE pc.post_id = p.id
+                      AND pc.role IN ({','.join('?' * len(CANONICAL_ROLES))})
+               )
+        """, (model, *CANONICAL_ROLES)).fetchall()
         stats["orphans_examined"] = len(rows)
         if len(rows) < min_size:
             return stats

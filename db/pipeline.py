@@ -352,7 +352,10 @@ def _format_summary(result: dict) -> str:
             parts.append(f"semantic: {s.get('concepts_considered', 0)} concepts × {s.get('posts_considered', 0)} posts → +{s.get('observations_created', 0)} obs")
     if result.get("auto_curate"):
         a = result["auto_curate"]
-        parts.append(f"auto-curate: +{a.get('promoted', 0)} promoted / -{a.get('dismissed', 0)} dismissed ({a.get('left_pending', 0)} left)")
+        parts.append(
+            f"auto-curate: +{a.get('promoted', 0)} attached "
+            f"({a.get('evidence', 0)} evidence / {a.get('weak', 0)} weak) "
+            f"/ -{a.get('dismissed', 0)} dismissed ({a.get('left_pending', 0)} left)")
     if result.get("orphan_clusters"):
         o = result["orphan_clusters"]
         if o.get("error"):
