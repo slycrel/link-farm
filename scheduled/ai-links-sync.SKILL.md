@@ -1,6 +1,6 @@
 ---
 name: ai-links-sync
-description: Pull-first daily AI Links sync from Outlook → SQLite via unified db/enrich.py helpers, structured thread capture, status-enum tracking, full post-enrichment pipeline (incl. orphan clustering + primaries), then push to GitHub.
+description: Pull-first daily AI Links sync from Outlook → SQLite via unified db/enrich.py helpers, structured thread capture, status-enum tracking, full post-enrichment pipeline (incl. orphan clustering, provisional growth + primaries), then push to GitHub.
 ---
 
 > **Versioned snapshot.** The *live* task runs from the Cowork app store at
@@ -18,7 +18,7 @@ Refer to `CLAUDE.md` for project background and `CURATION_DESIGN.md` for the cur
 
 The schema and helpers landed in June 2026 are the canonical write path. Do NOT write directly to `posts.enriched`, `posts.content`, or `posts.summary` from this skill — go through `db/enrich.py` so the schema layer can evolve underneath us without breaking sync runs.
 
-The daily sync and the catch-up skill now run the same post-enrichment pipeline (`db/pipeline.py`) at the end. Capture differs (sync from Outlook, catch-up from the partial/failed queue), but what happens after — subject flags, embeddings, mechanical + semantic discovery, auto-curate, orphan clustering, assign-primaries, rebuild — is identical.
+The daily sync and the catch-up skill now run the same post-enrichment pipeline (`db/pipeline.py`) at the end. Capture differs (sync from Outlook, catch-up from the partial/failed queue), but what happens after — subject flags, embeddings, mechanical + semantic discovery, auto-curate, orphan clustering, provisional exemplar growth, assign-primaries, rebuild — is identical.
 
 ### Step 0 — Locate Cowork folder, configure git
 
@@ -123,18 +123,19 @@ For each post:
 2. **Jittered render wait** — `new Promise(r => setTimeout(()=>r(true), 1500 + Math.random()*4000))`. Range 1.5–5.5s, mean ~3.5s. Fixed-cadence waits are the loudest automation signature; human-shaped variance is the cheapest mitigation against X rate-limiting at sustained read volume.
 3. Extract via `javascript_tool`: enumerate all `<article>` elements; for each, capture `(text, handle, urls)`. The first article is type `op`; subsequent articles whose handle matches the page handle are `self_reply`; others are `quote`. Detect external links (github/arxiv/huggingface/blog hosts) as their own `external_link` segments.
 4. On timeout/empty extraction, retry once after 3s.
-5. Still failing AND page text contains "post is unavailable" / "account suspended" / "page doesn't exist" / "this Tweet was deleted" → `record_dead(post_id, reason=<detected marker>, summary="[Post unavailable — {marker}]")`. Move on.
-6. Still failing without a dead marker → `record_partial(post_id, error="empty capture")`. Move on; next sync will retry.
-7. Otherwise, compose a 1–3 sentence summary capturing what it's about, why it matters, key details. Include notable URLs inline as plain text (no markdown linking). Skip generic x.com self-links. Prioritize GitHub repos, arxiv papers, product/tool homepages.
+5. **If `javascript_tool` returns `[BLOCKED: Cookie/query string data]`, fall back to `get_page_text` immediately.** That string is the Chrome extension's own content guard redacting the payload — it is *not* a dead post and *not* a rate limit. The guard fires on the **tool**, not on what the tool returns, so reshaping the payload does not help: verified 2026-08-26 on post `2055064462844219603`, where scrubbing every URL and query-string pattern out of the returned JSON was blocked identically to the unscrubbed version. `get_page_text` reads the article element directly, is not subject to the same guard, and recovered the full 14K-char article in one call. It trades segment structure (no quote/link-card separation) for actually getting the text — so prefer `javascript_tool` when it works, and consider `get_page_text` the *first* move on X Article URLs, which is where this shape shows up. Never mark a `[BLOCKED: …]` post `dead`.
+6. Still failing AND page text contains "post is unavailable" / "account suspended" / "page doesn't exist" / "this Tweet was deleted" → `record_dead(post_id, reason=<detected marker>, summary="[Post unavailable — {marker}]")`. Move on.
+7. Still failing without a dead marker → `record_partial(post_id, error="empty capture")`. Move on; next sync will retry.
+8. Otherwise, compose a 1–3 sentence summary capturing what it's about, why it matters, key details. Include notable URLs inline as plain text (no markdown linking). Skip generic x.com self-links. Prioritize GitHub repos, arxiv papers, product/tool homepages.
    - Good: `"NVIDIA open-sourced OpenShell (github.com/nvidia/openshell) — a sandbox for AI coding agents that locks filesystem, blocks network by default, and injects API keys at runtime only."`
    - Bad: `"Post about a security tool."`
-8. Re-classify with content in hand:
+9. Re-classify with content in hand:
    - **topics**: apply all relevant tags from CLAUDE.md. Add `questionable` alongside real topics when engagement-farmed-but-substantive — it flags packaging, not worth. Use `adjacent` for non-engineering material that's useful anyway, `solo-operator` for indie/side-hustle/business-of-one content, and `biohacking` for nootropics/peptides/supplements/sleep/longevity/biotech material; all three combine freely with technical tags and with each other. Never write a summary that recommends removing a post, and never call a post "off-topic," "not AI/dev," or "probably an accidental email" — that phrasing is the old aggressive intake filter talking, and it produced summaries that had to be rewritten in August 2026. If it's in the corpus, describe what value it might hold and let the tags carry the caveat.
    - **audiences**: upgrade `['me']` → `['me', 'dev-team']` for practical tools/patterns, `['me', 'leadership']` for strategy/industry signals.
    - **priority**: `now` for directly-actionable tools to evaluate; `near-term` for explore-soon; `long-term` for research/future.
    - **views**: extract from page if visible.
    - **author**: update to display name if it differs from email subject.
-9. Persist via `record_enrichment(post_id, segments=[...], summary=..., topics=[...], audiences=[...], author=..., handle=..., views=..., priority=..., with_lock=False)` — `with_lock=False` because the batch already holds the writer lock.
+10. Persist via `record_enrichment(post_id, segments=[...], summary=..., topics=[...], audiences=[...], author=..., handle=..., views=..., priority=..., with_lock=False)` — `with_lock=False` because the batch already holds the writer lock.
 
 **Rate-limit watch.** If 3+ posts in a row return empty articles or page-shell content (no text in the OP article element), stop the batch early — that's the most-likely shape of X rate-limiting. Persist already-scraped posts and report. Next run picks up where this one left off.
 
@@ -158,11 +159,14 @@ This single call does, in pipeline order:
 0. **Subject flags** — lifts the trailing-parenthetical importance flag from email subjects into `posts.notes` as a searchable `flag: <text>` fragment. Idempotent; never clobbers existing curation notes.
 1. **Embed** any post whose content_hash changed (or is missing an embedding) using fastembed + bge-small-en-v1.5 (384d). Skips partial/dead posts. (Deps auto-ensured via `db/ensure_deps.py`.)
 2. **Mechanical discovery** — shared external URLs (min 2 co-citing posts) + shared @mentions (min 3) → new `concept_observations` rows.
-3. **Semantic discovery** — concept-centroid matching at `SEMANTIC_CENTROID_THRESHOLD` (0.82, measured on *raw* cosines). Surfaces new candidate evidence for existing concepts.
-4. **Auto-curate** (step 3.5) — auto-files conceptual semantic matches ≥ `AUTO_PROMOTE_MIN_COSINE` (0.82) as *secondary* tags, dismisses the sub-floor band and low-signal mechanical/per-person duplicates. Queue self-clears; pending stays ~0.
-5. **Orphan clustering** (step 3.55) — the only pass that invents a *new* concept from theme, clustering edge-less posts on **mean-centered** embeddings (`ORPHAN_CLUSTER_THRESHOLD` = 0.40 is a centered cosine and is *not* comparable to the semantic threshold). Guards: min size 4, min cohesion 0.55, max 6 per run, max 55% single-author share, min 3 distinct authors.
-6. **Assign primaries** (step 3.6) — derives each post's single primary home (exactly one per post) by cosine against each candidate concept's leave-one-out centroid. Split-review counts *primaries*, not total edges.
-7. **Rebuild** — regenerates `posts_final_v3.json`, `ai_links_collection_v3.html`, `ai_links_collection_v3.md`.
+3. **Semantic discovery** — concept-centroid matching. Two bands, and the gap between them is the point: propose at `SEMANTIC_CENTROID_THRESHOLD` (**0.75**), auto-file as evidence at `AUTO_PROMOTE_MIN_COSINE` (**0.82**) — both measured on *raw* cosines. Anything landing in between is recorded as a `weak` edge. `SEMANTIC_MAX_WEAK_PER_POST` (3) caps weak edges as a **per-post total, not per-run**, so a weak edge means "one of this post's closest concepts"; the evidence band is uncapped. A concept needs at least `SEMANTIC_MIN_CONCEPT_EDGES` (2) *canonical* edges to be scoreable at all.
+4. **Auto-curate** (step 3.5) — **attaches and labels; it no longer discards anything.** Every post here is something Jeremy deliberately sent himself, so "low signal" is not a high enough bar to decide we never think about it again. Automation records what it found and how much to trust it; only a human calls `dismiss_observation()`, and only for genuine junk (scams, content-free bait). Do not "clean up" weak edges in an unattended run.
+5. **Orphan clustering** (step 3.55) — the only pass that invents a *new* concept from theme, clustering edge-less posts on **mean-centered** embeddings (`ORPHAN_CLUSTER_THRESHOLD` = 0.40 is a centered cosine and is *not* comparable to the semantic threshold). Guards: min size 4, min cohesion 0.55, max 6 per run, max 55% single-author share, min 3 distinct authors. "Orphan" means *no canonical home* — a weak-only post stays eligible.
+6. **Provisional exemplar growth** (step 3.56) — grows the nursery tier. A `provisional` concept holds edges and is fully browseable but is inert by construction: it is not a candidate primary home, and it does not feed centroids or semantic scoring. It graduates to `active` automatically at `PROVISIONAL_GRADUATION_MIN_EDGES` (4) **canonical** edges — weak edges don't buy graduation. Centroid matching structurally can't grow a 1–2 member concept, so this pass scores candidates by **max similarity to any single existing member** on **mean-centered** vectors at `PROVISIONAL_EXEMPLAR_THRESHOLD` (0.40, centered — *not* comparable to the semantic threshold), capped at `PROVISIONAL_EXEMPLAR_MAX_PER_RUN` (3).
+7. **Assign primaries** (step 3.6) — derives each post's single primary home (exactly one per post) by cosine against each candidate concept's leave-one-out centroid. Only `active` concepts and only **canonical** (`evidence`/`origin`) edges can be a home. Split-review counts *primaries*, not total edges.
+8. **Rebuild** — regenerates `posts_final_v3.json`, `ai_links_collection_v3.html`, `ai_links_collection_v3.md`.
+
+**Edge roles are load-bearing — don't let generous attachment corrupt the graph.** `CANONICAL_ROLES = ('evidence', 'origin')` vote on what a concept *means*; `weak`, `counter-example` and `tangential` are recorded associations that must not. That distinction is enforced in four separate places (centroids, semantic scoring, primary assignment, orphan eligibility) and each is a *silent* failure if it regresses — `db/test_roles.py` (15 tests) exists for exactly this reason. If you touch role handling, run it.
 
 **If orphan clustering created concepts, rename them before finishing.** Unattended runs auto-name from crude TF-IDF and mark the description `[auto-named]`; this task has a model in the loop, so do better. Find and fix them:
 
@@ -173,6 +177,8 @@ fresh = con.execute("SELECT id, name FROM concepts WHERE description LIKE '%[aut
 ```
 
 Read a few member posts of each, then use `db.concepts.rename_concept()` to give it a name that names the *idea*, not the loudest author (author and handle tokens are already excluded from the naming vocabulary, but auto-names are still crude). `archive_concept(id)` retires a cluster that isn't a real theme; `merge_concepts()` folds a duplicate into an existing home. Both are reversible.
+
+**While you're there, check whether the fresh cluster is lexically diffuse** — members that share a *purpose* but not a *vocabulary*. Averaging those yields a centroid near the corpus mean, which matches everything, and matches ≥0.82 become evidence, so the concept feeds on its own diffuseness and becomes a magnet. Concept #65 absorbed 26 unrelated evidence edges and 18 primaries within two runs this way. The fix is to put `NO_CENTROID_SCORING_MARKER` (`[no-centroid-scoring]`) in the description: the concept keeps its edges and stays fully browseable, but nothing is ever matched *into* it by cosine. Rule of thumb — **if a concept exists only because a reader could see it, mark it.** Note the interaction with the nursery: a provisional concept that graduates while still lexically diffuse becomes a magnet the moment it earns a centroid.
 
 Each step is idempotent; running the pipeline twice is a no-op the second time. Errors in one step don't abort the others — the result dict has `errors` listing what went wrong.
 
@@ -220,9 +226,11 @@ Tell Jeremy:
 - Enrichment counts: `ok` / `partial` / `dead` / `failed` for this run — or that Chrome was skipped because the work list was empty.
 - Status breakdown for the whole corpus (`status_breakdown()`).
 - Latent gate ratio (`gate_ratio()`): is it open?
-- **Pipeline summary** (from `pipeline_result['summary']`) — flags, embed counts, new mechanical/semantic observations, auto-curate, orphan clusters, primaries, rebuild post count.
+- **Pipeline summary** (from `pipeline_result['summary']`) — flags, embed counts, new mechanical/semantic observations, auto-curate, orphan clusters, provisional growth, primaries, rebuild post count.
 - Pending observation count (should be ~0 in steady state — semantic triage is automated).
-- **Any concepts created by orphan clustering this run, and what you renamed them to** (or that none were created). Flag any left `[auto-named]`.
+- **Any concepts created by orphan clustering this run, and what you renamed them to** (or that none were created). Flag any left `[auto-named]`, and say whether you marked any `[no-centroid-scoring]`.
+- **Any provisional concepts that graduated to `active` this run** (4+ canonical edges), and any still sitting below the bar. A nursery concept holding at 2 for several runs is the threshold doing its job, not a failure.
+- When you quote how big a concept is, **quote the `evidence` count, not total edges** — the total includes the deliberately-generous weak layer and overstates it by roughly 40%.
 - Split-review candidates from `pipeline_result['split_candidates']` (advisory only — never auto-split).
 - Modified subject lines (Jeremy's importance flags — `(implement!)`, `(read this today)`, `(mgmt)`).
 - GitHub push status.
@@ -237,4 +245,6 @@ Tell Jeremy:
 - If no new emails since CUTOFF AND no backlog of `partial`/`failed`, still run the pipeline (it's cheap and may surface new concept evidence as the graph evolves) — but skip commit/push if `git diff --cached` is empty.
 - If the DB is locked or anything goes wrong inside the writer-lock block, abort before pushing and report.
 - Never delete posts; only insert and update. `dead` status is the closest we get to a tombstone.
+- Never call `dismiss_observation()` from this task. Automation attaches and labels; discarding is a human decision. A weak edge is a recorded association, not a mistake to clean up.
+- Don't retune `SEMANTIC_CENTROID_THRESHOLD`, `AUTO_PROMOTE_MIN_COSINE`, `SEMANTIC_MAX_WEAK_PER_POST` or the orphan/provisional constants from a sync run. They were calibrated against this corpus's actual cosine distribution (pairwise mean 0.61 / p99 0.73), and the failure modes are non-obvious — an uncapped 0.75 proposed 8,825 observations in a single run, ~26% of every possible (post, concept) pair. Surface a concern in the report instead.
 - If you change this task, mirror the change into `scheduled/ai-links-sync.SKILL.md` in the repo and push it, so the live copy and the snapshot don't drift again.
