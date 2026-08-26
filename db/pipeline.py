@@ -60,6 +60,7 @@ def post_enrichment_pipeline(*,
                               semantic_discovery: bool = True,
                               auto_curate: bool = True,
                               orphan_clustering: bool = True,
+                              provisional_growth: bool = True,
                               rebuild_outputs: bool = True,
                               progress: bool = True) -> dict:
     """Run every post-enrichment step that should happen after either a
@@ -76,6 +77,9 @@ def post_enrichment_pipeline(*,
         3.55 Orphan clustering: cluster posts that found no home at all and
             create a new concept for each tight, multi-author group. This is
             the only pass that can grow the vocabulary from theme.
+        3.56 Provisional growth: grow nursery concepts by mean-centered
+            exemplar matching, then graduate any that reached the canonical-edge
+            bar. No-op when there are no provisional concepts.
         3.6 Assign primaries.
         4. Rebuild outputs (JSON / HTML / Markdown).
 
@@ -94,6 +98,9 @@ def post_enrichment_pipeline(*,
         "semantic": None,
         "auto_curate": None,
         "orphan_clusters": None,
+        "provisional_exemplar": None,
+        "provisional_curate": None,
+        "graduated": None,
         "assign_primaries": None,
         "rebuild": None,
         "split_candidates": None,
@@ -269,6 +276,40 @@ def post_enrichment_pipeline(*,
                 if progress:
                     print(f"[pipeline] orphan_clustering FAILED: {e}")
 
+        # Step 3.56: grow PROVISIONAL concepts by exemplar matching, then
+        # graduate any that have earned their gravity. This runs after orphan
+        # clustering (so a brand-new cluster isn't immediately poached) and
+        # before assign_primaries (so a concept that graduates in this run can
+        # compete for homes in the same run rather than lagging by one).
+        #
+        # Both passes are cheap no-ops when there are no provisional concepts,
+        # which is the steady state.
+        if provisional_growth:
+            try:
+                try:
+                    from .concepts import (discover_provisional_exemplar_matches,
+                                           graduate_provisional_concepts,
+                                           auto_curate as _ac)
+                except ImportError:
+                    import sys as _sys
+                    _sys.path.insert(0, str(Path(__file__).parent))
+                    from concepts import (discover_provisional_exemplar_matches,
+                                          graduate_provisional_concepts,
+                                          auto_curate as _ac)
+                if progress:
+                    print("[pipeline] provisional exemplar growth…")
+                result["provisional_exemplar"] = discover_provisional_exemplar_matches(
+                    db_path=db_path, with_lock=False)
+                # File the exemplar observations this pass just created; the
+                # earlier auto-curate ran before they existed.
+                result["provisional_curate"] = _ac(db_path=db_path, with_lock=False)
+                result["graduated"] = graduate_provisional_concepts(
+                    db_path=db_path, with_lock=False, progress=progress)
+            except Exception as e:
+                result["errors"].append(f"provisional_growth: {e}")
+                if progress:
+                    print(f"[pipeline] provisional_growth FAILED: {e}")
+
         # Step 3.6: assign primaries. After discovery + auto-curate settle the
         # edge set, (re)derive each post's single primary home so split-review
         # and any primary-grouped views read a clean partition. Runs before
@@ -368,6 +409,22 @@ def _format_summary(result: dict) -> str:
                        + o.get('skipped_low_cohesion', 0))
             if skipped:
                 bit += f" ({skipped} skipped)"
+            parts.append(bit)
+
+    if result.get("provisional_exemplar"):
+        pe = result["provisional_exemplar"]
+        if pe.get("error"):
+            parts.append(f"provisional: skipped ({pe['error']})")
+        elif pe.get("provisional_concepts"):
+            bit = (f"provisional: {pe['provisional_concepts']} nursery concepts → "
+                   f"+{pe.get('observations_created', 0)} exemplar matches")
+            if pe.get("capped"):
+                bit += f" ({pe['capped']} over per-run cap)"
+            grad = (result.get("graduated") or {}).get("graduated") or []
+            if grad:
+                bit += (" | graduated: "
+                        + ", ".join(f"#{g['id']} {g['name']} ({g['edges']})"
+                                    for g in grad))
             parts.append(bit)
 
     if result.get("assign_primaries"):

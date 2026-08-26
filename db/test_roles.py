@@ -394,6 +394,135 @@ class WeakCapIsPerPostTotal(unittest.TestCase):
                              f"{weak_count()}")
 
 
+class ProvisionalTier(unittest.TestCase):
+    """A nursery concept must be inert: no centroid, no home, until it graduates."""
+
+    def setUp(self):
+        self.db = _make_db()
+        conn = sqlite3.connect(self.db)
+        conn.execute("INSERT INTO concepts (id, name, status) VALUES (1,'settled theme','active')")
+        conn.execute("INSERT INTO concepts (id, name, status) VALUES (2,'baby theme','provisional')")
+        for pid, vec in [(10, _vec(1, 0)), (11, _vec(1, 0)),
+                         (20, _vec(0, 1)), (21, _vec(0, 1))]:
+            conn.execute("INSERT INTO posts (id, summary, enrichment_status) VALUES (?,'s','ok')", (pid,))
+            conn.execute(
+                "INSERT INTO post_embeddings (post_id, model, dim, vector) VALUES (?,?,?,?)",
+                (pid, E.DEFAULT_MODEL, 2, E._vector_to_blob(vec)))
+        for pid in (10, 11):
+            conn.execute("INSERT INTO post_concepts (post_id, concept_id, role) VALUES (?,1,'evidence')", (pid,))
+        for pid in (20, 21):
+            conn.execute("INSERT INTO post_concepts (post_id, concept_id, role) VALUES (?,2,'evidence')", (pid,))
+        conn.commit(); conn.close()
+
+    def test_provisional_gets_no_centroid(self):
+        cents = E.concept_centroids(db_path=self.db)
+        self.assertIn(1, cents)
+        self.assertNotIn(2, cents,
+                         "a provisional concept must not produce a centroid")
+
+    def test_provisional_is_never_a_primary_home(self):
+        C.assign_primaries(db_path=self.db, with_lock=False)
+        conn = sqlite3.connect(self.db)
+        n = conn.execute(
+            "SELECT COUNT(*) FROM post_concepts WHERE concept_id=2 AND is_primary=1"
+        ).fetchone()[0]
+        conn.close()
+        self.assertEqual(n, 0, "provisional concept became a primary home")
+
+    def test_graduates_at_the_bar_and_not_before(self):
+        r = C.graduate_provisional_concepts(db_path=self.db, min_edges=4,
+                                            with_lock=False)
+        self.assertEqual(r["graduated"], [], "graduated with only 2 edges")
+        conn = sqlite3.connect(self.db)
+        for pid in (30, 31):
+            conn.execute("INSERT INTO posts (id, summary) VALUES (?, 's')", (pid,))
+            conn.execute(
+                "INSERT INTO post_concepts (post_id, concept_id, role) VALUES (?,2,'evidence')",
+                (pid,))
+        conn.commit(); conn.close()
+        r = C.graduate_provisional_concepts(db_path=self.db, min_edges=4,
+                                            with_lock=False)
+        self.assertEqual([g["id"] for g in r["graduated"]], [2])
+        conn = sqlite3.connect(self.db)
+        st = conn.execute("SELECT status FROM concepts WHERE id=2").fetchone()[0]
+        conn.close()
+        self.assertEqual(st, "active")
+
+    def test_weak_edges_do_not_count_toward_graduation(self):
+        conn = sqlite3.connect(self.db)
+        for pid in (30, 31, 32):
+            conn.execute("INSERT INTO posts (id, summary) VALUES (?, 's')", (pid,))
+            conn.execute(
+                "INSERT INTO post_concepts (post_id, concept_id, role) VALUES (?,2,'weak')",
+                (pid,))
+        conn.commit(); conn.close()
+        r = C.graduate_provisional_concepts(db_path=self.db, min_edges=4,
+                                            with_lock=False)
+        self.assertEqual(r["graduated"], [],
+                         "weak edges must not buy graduation")
+
+    def test_exemplar_pass_is_noop_without_provisional_concepts(self):
+        conn = sqlite3.connect(self.db)
+        conn.execute("UPDATE concepts SET status='active' WHERE id=2")
+        conn.commit(); conn.close()
+        r = C.discover_provisional_exemplar_matches(db_path=self.db, with_lock=False)
+        self.assertEqual(r["provisional_concepts"], 0)
+        self.assertEqual(r["observations_created"], 0)
+
+
+class ExemplarMatching(unittest.TestCase):
+    def test_single_member_concept_can_grow(self):
+        """The whole point of the tier: centroid scoring can't do this."""
+        db = _make_db()
+        conn = sqlite3.connect(db)
+        conn.execute("INSERT INTO concepts (id,name,status) VALUES (1,'seed','provisional')")
+        # 60 filler posts spread around, needed for a stable corpus mean.
+        import math
+        for i in range(60):
+            pid = 100 + i
+            th = (i / 60.0) * 2 * math.pi
+            conn.execute("INSERT INTO posts (id,summary,enrichment_status) VALUES (?,'s','ok')", (pid,))
+            conn.execute(
+                "INSERT INTO post_embeddings (post_id, model, dim, vector) VALUES (?,?,?,?)",
+                (pid, E.DEFAULT_MODEL, 2, E._vector_to_blob(_vec(math.cos(th), math.sin(th)))))
+        # One exemplar, and a near-twin that should be found.
+        conn.execute("INSERT INTO posts (id,summary,enrichment_status) VALUES (500,'s','ok')")
+        conn.execute("INSERT INTO post_embeddings (post_id,model,dim,vector) VALUES (500,?,2,?)",
+                     (E.DEFAULT_MODEL, E._vector_to_blob(_vec(1, 0))))
+        conn.execute("INSERT INTO post_concepts (post_id,concept_id,role) VALUES (500,1,'evidence')")
+        conn.execute("INSERT INTO posts (id,summary,enrichment_status) VALUES (501,'s','ok')")
+        conn.execute("INSERT INTO post_embeddings (post_id,model,dim,vector) VALUES (501,?,2,?)",
+                     (E.DEFAULT_MODEL, E._vector_to_blob(_vec(0.999, 0.045))))
+        conn.commit(); conn.close()
+        r = C.discover_provisional_exemplar_matches(db_path=db, with_lock=False)
+        self.assertNotIn("error", r, f"pass bailed: {r.get('error')}")
+        self.assertEqual(r["provisional_concepts"], 1)
+        found = {m["post_id"] for m in r["matches"]}
+        self.assertIn(501, found,
+                      "near-twin of the single exemplar was not matched")
+
+    def test_respects_per_run_cap(self):
+        db = _make_db()
+        conn = sqlite3.connect(db)
+        conn.execute("INSERT INTO concepts (id,name,status) VALUES (1,'seed','provisional')")
+        import math
+        for i in range(60):
+            pid = 100 + i
+            th = (i / 60.0) * 2 * math.pi
+            conn.execute("INSERT INTO posts (id,summary,enrichment_status) VALUES (?,'s','ok')", (pid,))
+            conn.execute("INSERT INTO post_embeddings (post_id,model,dim,vector) VALUES (?,?,2,?)",
+                         (pid, E.DEFAULT_MODEL, E._vector_to_blob(_vec(math.cos(th), math.sin(th)))))
+        conn.execute("INSERT INTO posts (id,summary,enrichment_status) VALUES (500,'s','ok')")
+        conn.execute("INSERT INTO post_embeddings (post_id,model,dim,vector) VALUES (500,?,2,?)",
+                     (E.DEFAULT_MODEL, E._vector_to_blob(_vec(1, 0))))
+        conn.execute("INSERT INTO post_concepts (post_id,concept_id,role) VALUES (500,1,'evidence')")
+        conn.commit(); conn.close()
+        r = C.discover_provisional_exemplar_matches(
+            db_path=db, threshold=-1.0, max_per_concept=2, with_lock=False)
+        self.assertLessEqual(r["observations_created"], 2)
+        self.assertGreater(r["capped"], 0, "cap should have bitten with threshold=-1")
+
+
 class ReviveGuards(unittest.TestCase):
     def test_revive_refuses_without_role_filters(self):
         """The revive script must abort if centroids aren't role-filtered."""

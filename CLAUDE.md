@@ -222,6 +222,30 @@ Regression tests: **`db/test_roles.py`** (15 tests). It exists because every one
 
 **Known pre-existing issue, not caused by the above: concept centroids are barely discriminative.** 175 of 946 centroid pairs sit above 0.99 cosine — several large concepts have effectively converged on the same direction. This predates the role work (141 of 378 pairs were already >0.99 on 2026-08-24, i.e. 37% vs 18.5% now) and is the raw-cosine problem the orphan-clustering note describes: on this corpus everything is "AI stuff", so un-centered centroid similarity is dominated by that shared direction. Semantic discovery is therefore weaker here than its numbers suggest, and it is the likely reason the big concepts (#3, #45, #47, #48, #50, #51, #55) all hover around 320 members. **Worth a dedicated look:** mean-centering the semantic pass the way orphan clustering already does would be the obvious experiment.
 
+### The provisional tier — a nursery for small concepts (Aug 2026)
+
+**The problem it solves.** The concept graph was bimodal: 26 concepts at 2–3 evidence edges, 4 at 4–9, **zero between 10 and 99**, then 20 concepts at 100+. There was no way to be small and legitimate. The guards (orphan clustering: 4 posts / 3 authors; semantic scoring: 2 canonical edges) meant a theme either arrived fully formed or never — while anything that *did* exist could immediately become a primary home and, if lexically diffuse, a magnet.
+
+`CONCEPT_PROVISIONAL` decouples the two things that were fused: **naming a category** and **being a home for posts**. A provisional concept holds edges and is fully browseable, but:
+
+- it is **not** a candidate primary home (`assign_primaries` filters on `active`)
+- it does **not** feed centroids or semantic scoring (both filter on `active`)
+- it graduates to `active` automatically at `PROVISIONAL_GRADUATION_MIN_EDGES` (4) **canonical** edges — weak edges don't buy graduation
+
+So a nursery concept is *inert by construction*. That's what makes it safe to name something speculatively: a bad seed can't distort discovery or steal homes, and costs a handful of edges to undo.
+
+**Growth: `discover_provisional_exemplar_matches()`, pipeline step 3.56.** Centroid matching structurally cannot grow a 1–2 member concept — a centroid of one post is just that post's vector, which is exactly why `SEMANTIC_MIN_CONCEPT_EDGES = 2` exists. Two choices carry the weight:
+
+- **Mean-centered vectors.** Raw cosines here have pairwise mean 0.61; a raw neighbourhood around one exemplar matches nearly everything. `PROVISIONAL_EXEMPLAR_THRESHOLD = 0.40` is a *centered* cosine, deliberately equal to `ORPHAN_CLUSTER_THRESHOLD` since both passes work the same geometry. **Not comparable to `SEMANTIC_CENTROID_THRESHOLD`, which is raw.**
+- **Max similarity to any single member, not to their mean.** Averaging re-introduces the diffuseness that made #65 a magnet. Scoring against the nearest exemplar keeps a purpose-coherent category workable — a post joins because it resembles *one* thing already there. Capped at `PROVISIONAL_EXEMPLAR_MAX_PER_RUN = 3`.
+
+**Seeded 2026-08-26, and what each demonstrates:**
+
+- **#66 `cognitive enhancement & longevity protocols`** — 5 unhomed `biohacking` posts. Orphan clustering could never form it: 3 of 5 are one author, tripping `ORPHAN_CLUSTER_MAX_AUTHOR_SHARE=0.55`. The nursery has no such guard and doesn't need one. **Graduated on the first pipeline run** (5→6 edges) and now homes 6 posts.
+- **#67 `organizational agency — authority taken vs authority granted`** — 2 posts, same author, deliberately below the bar. Still provisional after three runs; exemplar matching found nothing at 0.40. Its nearest candidate is **0.393** — a Dave Kline management post, a near-miss. That's the threshold doing real work: the vein is *adjacent* to management content, not identical, and the tier is holding it honestly at 2 rather than either discarding it or inflating it.
+
+**When to reach for it.** Prefer `status=CONCEPT_PROVISIONAL` for anything you're naming speculatively; it is the low-risk way to add vocabulary. Promote to `active` by hand only if you're confident it should start competing for homes immediately. And note the interaction with `NO_CENTROID_SCORING_MARKER`: a concept that graduates while still being *lexically* diffuse will become a magnet the moment it earns a centroid — #65 is the worked example.
+
 ### Auto-curation (daily)
 
 `db/concepts.auto_curate()` runs as step 3.5 of the pipeline (after discovery, before rebuild), so every sync/catch-up/backfill triages the observations discovery just produced. Encodes the conceptual-over-per-person preference (see the `db/concepts.py` note above): auto-file semantic matches ≥ `AUTO_PROMOTE_MIN_COSINE` (0.82) as *secondary* tags on conceptual concepts, dismiss conceptual matches below that floor, dismiss low-signal `mention:`/`url:` groupings and per-person duplicates already covered conceptually. **Semantic triage is fully automated** — the queue self-clears each run, so pending stays ~0 in steady state (as of 2026-07-22; previously the un-reviewed mid-confidence band accumulated into hundreds of stale pending rows). This is safe because auto-filed edges are always *secondary* (primary is derived by `assign_primaries`) and split-review counts primaries, so denser secondary tagging can't retrigger split churn. Manual `ai-links-curate` now handles only structural decisions (merges, naming, uncovered per-person groupings). Note: a large *manual* restructure reshapes centroids and makes the next run's discovery surface a burst of new matches, which auto-file as secondary and settle to a trickle over the next 1–2 runs (a self-resolving convergence surge — e.g. 134 → 4 → ~0).
@@ -326,7 +350,7 @@ Regenerate these numbers from the DB rather than trusting them blind — they dr
 - Note: concept #50 is named *founder philosophy & life-design essays* but its primary members are mostly technical "recommended reading" endorsement posts — the name overpromises and is a rename/split candidate independent of the size trigger.
 - Priority breakdown: near-term (548), long-term (178), now (110).
 - Audiences: me (828), dev-team (586), leadership (156), team (5).
-- Concept graph: 50 active concepts (10 archived, 4 merged-into), **7,041 edges**, 516 primary homes, 0 pending observations. 254 posts still carry no concept edge (183 of them embedded and thus eligible for orphan clustering; the rest are `dead` and never embedded).
+- Concept graph: **52 active + 1 provisional** (10 archived, 4 merged-into). **6,833 edges — 4,790 `evidence` + 2,041 `weak` + 2 `counter-example`.** Quote the *evidence* count when describing how big a concept is; the total includes the deliberately-generous weak layer. 528 primary homes, 0 pending observations. 126 posts carry no edge at all (73 of those are `dead` and never embedded, so 53 live posts are genuinely unhomed — down from 318).
 - **The empty-shell caveat is resolved — as of 2026-08-26 there are 0 zero-edge active concepts** (it was 20 of 49 on 2026-08-24). All 50 active concepts now carry edges, so the active count is finally an honest measure of the conceptual vocabulary. The regression query is worth keeping, since mechanical discovery can recreate shells at any time: `SELECT id,name FROM concepts c WHERE status='active' AND NOT EXISTS(SELECT 1 FROM post_concepts pc WHERE pc.concept_id=c.id)`.
 - Observation provenance: semantic 6,899 promoted / 416 dismissed, mechanical 120 / 19, cluster 58 promoted, latent 16 promoted. Note the semantic dismissed count *fell* (2,560 → 416) while promoted rose sharply — the blob-remediation campaign replaced paraphrase with real content, so matches that previously scored under the 0.82 floor now clear it.
 - 36 posts carry a subject `flag:` in `notes`.

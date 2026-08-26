@@ -58,6 +58,32 @@ CONCEPT_ACTIVE = "active"
 CONCEPT_ARCHIVED = "archived"
 CONCEPT_MERGED = "merged-into"
 
+# A *nursery* tier (Jeremy, Aug 2026). A provisional concept is a category
+# someone has noticed and named but that hasn't yet earned the right to be a
+# home. It holds edges and is fully browseable, but:
+#   - it is NOT a candidate primary home (`assign_primaries` filters on active)
+#   - it does NOT feed concept centroids or semantic scoring (both filter active)
+#   - it graduates to `active` automatically at PROVISIONAL_GRADUATION_MIN_EDGES
+#     canonical edges, via graduate_provisional_concepts()
+#
+# Why this tier exists. The concept graph was bimodal: 26 concepts at 2-3
+# evidence edges, 4 at 4-9, **zero between 10 and 99**, then 20 concepts at
+# 100+. There was no way for a category to be small and legitimate — the guards
+# (orphan clustering: 4 posts / 3 authors; semantic scoring: 2 canonical edges)
+# meant a real theme either arrived fully formed or not at all, while anything
+# that *did* exist could immediately become a primary home and, if diffuse,
+# a magnet (see NO_CENTROID_SCORING_MARKER and the #65 incident).
+#
+# Provisional decouples the two things that were fused: *naming* a category and
+# *being a home for* posts. You can name it the moment you see it; it earns
+# gravity by accumulating members, and only then starts competing for homes.
+CONCEPT_PROVISIONAL = "provisional"
+
+# Canonical edges a provisional concept needs before it graduates to `active`.
+# Matches ORPHAN_CLUSTER_MIN_SIZE so a hand-seeded concept and a machine-found
+# one clear the same bar — below 4, a "theme" is usually coincidence.
+PROVISIONAL_GRADUATION_MIN_EDGES = 4
+
 CONCEPT_SOURCE_DISCOVERED = "discovered"
 CONCEPT_SOURCE_CURATED = "curated"
 CONCEPT_SOURCE_MERGED = "merged"
@@ -127,14 +153,25 @@ def _now() -> str:
 
 def create_concept(name: str, description: str = "",
                    source: str = CONCEPT_SOURCE_CURATED,
+                   status: str = CONCEPT_ACTIVE,
                    db_path: Path = DEFAULT_DB,
                    with_lock: bool = True) -> int:
-    """Create a new concept. Returns the new concept id."""
+    """Create a new concept. Returns the new concept id.
+
+    Pass `status=CONCEPT_PROVISIONAL` for a nursery concept: it can hold edges
+    and is browseable, but cannot be a primary home and does not feed centroid
+    scoring until it graduates. Prefer provisional for anything you're naming
+    speculatively — it is the low-risk way to add vocabulary, because a
+    provisional concept cannot distort discovery or steal homes.
+    """
+    if status not in (CONCEPT_ACTIVE, CONCEPT_PROVISIONAL,
+                      CONCEPT_ARCHIVED, CONCEPT_MERGED):
+        raise ValueError(f"unknown concept status: {status!r}")
     with _maybe_lock(with_lock), _connect(db_path) as conn:
         cur = conn.execute("""
             INSERT INTO concepts (name, description, source, status, created_at, updated_at)
-            VALUES (?, ?, ?, 'active', ?, ?)
-        """, (name, description, source, _now(), _now()))
+            VALUES (?, ?, ?, ?, ?, ?)
+        """, (name, description, source, status, _now(), _now()))
         conn.commit()
         return cur.lastrowid
 
@@ -446,7 +483,15 @@ def auto_curate(*, db_path: Path = DEFAULT_DB, with_lock: bool = True,
         active = o["cstatus"] == CONCEPT_ACTIVE
         score = o["raw_score"] or 0.0
         name = o["cname"]
-        if o["source"] == "semantic" and active and conceptual and score >= min_cosine:
+        if o["source"] == SOURCE_EXEMPLAR:
+            # Exemplar matches target PROVISIONAL concepts, which are inert by
+            # construction (no centroid scoring, never a primary home), so they
+            # can be filed as evidence without risk — and they must be, or the
+            # concept could never reach the graduation bar.
+            to_attach.append((o["id"], ROLE_EVIDENCE,
+                              f"auto-curate: exemplar match {score:.3f} "
+                              f"(centered) on a provisional concept"))
+        elif o["source"] == "semantic" and active and conceptual and score >= min_cosine:
             to_attach.append((o["id"], ROLE_EVIDENCE,
                               f"auto-curate: cosine {score:.3f} >= floor {min_cosine}"))
         elif o["source"] == "semantic" and conceptual and score < min_cosine:
@@ -1611,6 +1656,31 @@ ORPHAN_CLUSTER_MAX_AUTHOR_SHARE = 0.55
 # people is usually a conversation.
 ORPHAN_CLUSTER_MIN_AUTHORS = 3
 
+SOURCE_EXEMPLAR = "exemplar"
+SCORE_EXEMPLAR = "cosine-centered-exemplar"
+
+# Threshold for exemplar matching against PROVISIONAL concepts, measured on
+# MEAN-CENTERED cosines. Not comparable to SEMANTIC_CENTROID_THRESHOLD, which is
+# a raw cosine — see the orphan-clustering note in CLAUDE.md for why the two
+# spaces have completely different scales (raw pairwise mean 0.61 vs centered
+# mean 0.008 on this corpus).
+#
+# Set to match ORPHAN_CLUSTER_THRESHOLD (0.40), since this pass is doing the
+# same job on the same geometry: deciding whether two posts are close *after*
+# the shared "this is all AI content" direction is removed. Raw cosines cannot
+# be used here — a single exemplar's raw neighbourhood is dominated by that
+# shared direction and would match nearly everything, which is exactly the
+# failure that made the uncapped 0.75 semantic band useless.
+PROVISIONAL_EXEMPLAR_THRESHOLD = 0.40
+
+# Max new members proposed per provisional concept per run. A nursery concept
+# should grow in small, reviewable increments — if it's really a theme it will
+# keep growing across runs and graduate; if a bad seed pulls in junk, the damage
+# is a handful of edges rather than hundreds (cf. the #65 magnet incident, where
+# an unbounded pass added 26 wrong evidence edges in two runs).
+PROVISIONAL_EXEMPLAR_MAX_PER_RUN = 3
+
+
 SOURCE_CLUSTER = "cluster"
 SCORE_CLUSTER = "centroid-cohesion"
 CONCEPT_SOURCE_CLUSTER = "discovered-cluster"
@@ -2297,3 +2367,216 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# ---- Provisional tier: exemplar growth + graduation -------------------
+
+def discover_provisional_exemplar_matches(
+        db_path: Path = DEFAULT_DB,
+        model: Optional[str] = None,
+        threshold: float = PROVISIONAL_EXEMPLAR_THRESHOLD,
+        max_per_concept: int = PROVISIONAL_EXEMPLAR_MAX_PER_RUN,
+        dry_run: bool = False,
+        with_lock: bool = True) -> dict:
+    """Grow PROVISIONAL concepts by matching posts against their member posts.
+
+    This is the only pass that can grow a concept with just one or two members,
+    and it exists because centroid matching structurally cannot. A centroid of
+    one post is just that post's vector, and `SEMANTIC_MIN_CONCEPT_EDGES = 2`
+    exists precisely because a mean over fewer than two members carries no
+    information about a *category*. So a nursery of singletons would sit inert
+    forever under centroid scoring — the tier only works if something matches
+    against the exemplars themselves.
+
+    Two design choices carry the weight:
+
+    **Mean-centered vectors.** Raw bge cosines on this corpus have pairwise mean
+    0.61 — every post is "AI content", and that shared direction dominates. A
+    raw-cosine neighbourhood around a single exemplar therefore matches nearly
+    everything (the same failure that made the uncapped 0.75 semantic band
+    useless). Subtracting the corpus mean removes the common direction, which is
+    the trick `discover_orphan_clusters()` already relies on; centered pairwise
+    mean drops to ~0.008 and real structure separates.
+
+    **Max similarity to ANY member, not to their mean.** Averaging members
+    re-introduces exactly the diffuseness problem that turned #65 into a magnet:
+    members sharing a purpose but not a vocabulary average out to a vector near
+    the corpus mean. Scoring against the single nearest exemplar keeps a
+    purpose-coherent category workable — a post joins because it genuinely
+    resembles *one* thing already in the concept.
+
+    Proposals land as `evidence` (they must, or the concept could never reach
+    PROVISIONAL_GRADUATION_MIN_EDGES and would never graduate), but they land on
+    a *provisional* concept, which cannot be a primary home and cannot feed
+    centroid scoring. So the blast radius of a bad seed is bounded, and capped
+    further by `max_per_concept` per run.
+    """
+    try:
+        try:
+            from .embeddings import _blob_to_vector, DEFAULT_MODEL
+        except ImportError:
+            import sys as _sys
+            _sys.path.insert(0, str(Path(__file__).parent))
+            from embeddings import _blob_to_vector, DEFAULT_MODEL
+        import numpy as np
+    except ImportError as e:
+        return {"error": f"exemplar matching requires fastembed + numpy: {e}",
+                "provisional_concepts": 0, "observations_created": 0}
+
+    if model is None:
+        model = DEFAULT_MODEL
+    stats = {"provisional_concepts": 0, "candidates_considered": 0,
+             "observations_created": 0, "capped": 0, "matches": []}
+
+    with _maybe_lock(with_lock), _connect(db_path) as conn:
+        prov = conn.execute(
+            "SELECT id, name FROM concepts WHERE status = ?",
+            (CONCEPT_PROVISIONAL,)).fetchall()
+        if not prov:
+            return stats
+        stats["provisional_concepts"] = len(prov)
+
+        rows = conn.execute(
+            "SELECT post_id, vector FROM post_embeddings WHERE model = ?",
+            (model,)).fetchall()
+        if len(rows) < 50:
+            return {**stats, "error": "too few embeddings for a stable corpus mean"}
+        pids = [r["post_id"] for r in rows]
+        A = np.vstack([_blob_to_vector(r["vector"]) for r in rows]).astype("float32")
+        A /= (np.linalg.norm(A, axis=1, keepdims=True) + 1e-9)
+        mu = A.mean(0)
+        C = A - mu
+        C /= (np.linalg.norm(C, axis=1, keepdims=True) + 1e-9)
+        idx = {p: i for i, p in enumerate(pids)}
+
+        # Posts that already have a canonical home on an ACTIVE concept are not
+        # candidates — a provisional concept shouldn't poach settled material.
+        settled = {r["post_id"] for r in conn.execute(f"""
+            SELECT DISTINCT pc.post_id FROM post_concepts pc
+              JOIN concepts c ON c.id = pc.concept_id
+             WHERE c.status = ? AND pc.role IN ({','.join('?' * len(CANONICAL_ROLES))})
+        """, (CONCEPT_ACTIVE, *CANONICAL_ROLES))}
+
+        run_id = _start_run(conn, SOURCE_EXEMPLAR, "provisional-exemplar",
+                            model=model)
+        for c in prov:
+            cid = c["id"]
+            members = [r["post_id"] for r in conn.execute(
+                f"""SELECT post_id FROM post_concepts
+                     WHERE concept_id = ?
+                       AND role IN ({','.join('?' * len(CANONICAL_ROLES))})""",
+                (cid, *CANONICAL_ROLES))]
+            mem_idx = [idx[m] for m in members if m in idx]
+            if not mem_idx:
+                continue
+            attached = {r["post_id"] for r in conn.execute(
+                "SELECT post_id FROM post_concepts WHERE concept_id = ?", (cid,))}
+            M = C[mem_idx]                      # centered member vectors
+            sims = C @ M.T                      # (all posts) x (members)
+            best = sims.max(axis=1)             # nearest exemplar, not the mean
+            cands = []
+            for p, s in zip(pids, best.tolist()):
+                if p in attached or p in members or p in settled:
+                    continue
+                if s < threshold:
+                    continue
+                cands.append((float(s), p))
+            stats["candidates_considered"] += len(cands)
+            cands.sort(reverse=True)
+            keep, surplus = cands[:max_per_concept], cands[max_per_concept:]
+            stats["capped"] += len(surplus)
+            for s, p in keep:
+                if dry_run:
+                    stats["observations_created"] += 1
+                    stats["matches"].append({"concept_id": cid, "name": c["name"],
+                                             "post_id": p, "score": round(s, 3)})
+                    continue
+                obs_id = _record_obs_in_txn(
+                    conn, post_id=p, concept_id=cid,
+                    source=SOURCE_EXEMPLAR, score_kind=SCORE_EXEMPLAR,
+                    raw_score=s, discovery_run_id=run_id, discovery_model=model,
+                    notes=(f"centered cosine {s:.3f} to nearest exemplar "
+                           f"(provisional concept)"),
+                    role_suggestion=ROLE_EVIDENCE)
+                if obs_id is not None:
+                    stats["observations_created"] += 1
+                    stats["matches"].append({"concept_id": cid, "name": c["name"],
+                                             "post_id": p, "score": round(s, 3)})
+        _finish_run(conn, run_id, len(pids), stats["observations_created"],
+                    notes=(f"threshold={threshold} (centered) "
+                           f"max_per_concept={max_per_concept} "
+                           f"provisional={len(prov)}"))
+        if not dry_run:
+            conn.commit()
+    return stats
+
+
+def graduate_provisional_concepts(
+        db_path: Path = DEFAULT_DB,
+        min_edges: int = PROVISIONAL_GRADUATION_MIN_EDGES,
+        with_lock: bool = True,
+        progress: bool = False) -> dict:
+    """Promote provisional concepts that have earned their gravity.
+
+    A provisional concept graduates to `active` once it carries `min_edges`
+    canonical edges. Graduation is what makes it eligible to be a primary home
+    and to feed centroid scoring, so it is deliberately the moment the concept
+    starts affecting everything else — before this point a nursery concept is
+    inert by construction.
+
+    Note the interaction with NO_CENTROID_SCORING_MARKER: a graduated concept
+    that is *lexically* diffuse (members share a purpose, not a vocabulary) will
+    become a magnet the moment it gets a centroid. Graduation therefore carries
+    the marker forward if it was set, and flags concepts that look diffuse so a
+    human can decide. Idempotent.
+    """
+    result = {"graduated": [], "checked": 0}
+
+    def _apply():
+        with _connect(db_path) as conn:
+            rows = conn.execute(f"""
+                SELECT c.id, c.name, c.description,
+                       COUNT(pc.post_id) AS n
+                  FROM concepts c
+                  JOIN post_concepts pc ON pc.concept_id = c.id
+                 WHERE c.status = ?
+                   AND pc.role IN ({','.join('?' * len(CANONICAL_ROLES))})
+                 GROUP BY c.id
+                HAVING n >= ?
+            """, (CONCEPT_PROVISIONAL, *CANONICAL_ROLES, min_edges)).fetchall()
+            result["checked"] = len(rows)
+            conn.execute("BEGIN")
+            try:
+                for r in rows:
+                    conn.execute("""
+                        UPDATE concepts
+                           SET status = ?, updated_at = ?,
+                               description = COALESCE(description, '') || ?
+                         WHERE id = ?
+                    """, (CONCEPT_ACTIVE, _now(),
+                          f"\n\n[graduated {_now()[:10]}] reached {r['n']} canonical "
+                          f"edges (bar: {min_edges}) and is now an active concept: "
+                          f"eligible to be a primary home and to feed centroid "
+                          f"scoring.",
+                          r["id"]))
+                    result["graduated"].append({"id": r["id"], "name": r["name"],
+                                                "edges": r["n"]})
+                conn.commit()
+            except Exception:
+                conn.rollback()
+                raise
+
+    if with_lock:
+        with writer_lock(timeout=120):
+            _apply()
+    else:
+        _apply()
+
+    if progress:
+        if result["graduated"]:
+            for g in result["graduated"]:
+                print(f"[graduate] #{g['id']} '{g['name']}' → active "
+                      f"({g['edges']} canonical edges)")
+        else:
+            print("[graduate] no provisional concepts ready")
+    return result
