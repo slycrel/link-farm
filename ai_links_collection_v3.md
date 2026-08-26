@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-08-25T15:39:13Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-26T15:03:56Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-08-25** — [Igor bedesqui](https://x.com/bedesqui/status/2092036341630394449) — *now • Dev Practices • 101.4K views • v1 enriched*  
@@ -23,7 +23,7 @@
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **persistent always-on agents — bot mode & agent desktops** (319 posts, +33 this week)  
+- **persistent always-on agents — bot mode & agent desktops** (320 posts, +33 this week)  
   Agents that outlive a chat session: persistent bot profiles with their own job and memory, remote/self-hosted execution that survives closing the laptop, and the desktop workspaces around them (Hermes/Nous, Grok bot mode, OpenClaw). Renamed from auto-named cluster on 2026-08-21.
     - 2026-08-25 — [Matt Stockton](https://x.com/mstockton/status/2092076777615102400): Commentary on dynamic agent workflows: the strongest use of LLMs is graphs with *uncorrelated* starting context, and the six workflow patter…
     - 2026-08-25 — [Madhu Guru](https://x.com/realmadhuguru/status/2092058332735693264): Part 8 of a series on building evals, on discriminatory power: a hill-climbing eval only earns its keep if it separates systems you already …
@@ -38,13 +38,13 @@
     - 2026-08-25 — [Matt Stockton](https://x.com/mstockton/status/2092076777615102400): Commentary on dynamic agent workflows: the strongest use of LLMs is graphs with *uncorrelated* starting context, and the six workflow patter…
     - 2026-08-25 — [Madhu Guru](https://x.com/realmadhuguru/status/2092058332735693264): Part 8 of a series on building evals, on discriminatory power: a hill-climbing eval only earns its keep if it separates systems you already …
 
-- **agents-as-judges-of-agents — bossman supervisor / self-verification** (118 posts, +30 this week)  
+- **agents-as-judges-of-agents — bossman supervisor / self-verification** (120 posts, +30 this week)  
   Critical supervisor agent judges worker agents rather than doing the work. Boris Cherny on self-verification loops; Viv on bossman supervisor.
     - 2026-08-25 — [Matt Stockton](https://x.com/mstockton/status/2092076777615102400): Commentary on dynamic agent workflows: the strongest use of LLMs is graphs with *uncorrelated* starting context, and the six workflow patter…
     - 2026-08-25 — [Madhu Guru](https://x.com/realmadhuguru/status/2092058332735693264): Part 8 of a series on building evals, on discriminatory power: a hill-climbing eval only earns its keep if it separates systems you already …
 
-- **prediction-market & crypto trading bots** (334 posts, +27 this week)  
-  Polymarket and crypto trading-bot content: sweeper and arbitrage bots, Markov-chain trade models, tick-data neural nets, plus one genuinely useful 72M-trade dataset. Heavily promotional and largely off-topic for AI engineering — kept and labelled rather than dropped.
+- **vibecode-to-production via agent skills** (130 posts, +28 this week)  
+  Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
     - 2026-08-25 — [Matt Stockton](https://x.com/mstockton/status/2092076777615102400): Commentary on dynamic agent workflows: the strongest use of LLMs is graphs with *uncorrelated* starting context, and the six workflow patter…
     - 2026-08-25 — [Madhu Guru](https://x.com/realmadhuguru/status/2092058332735693264): Part 8 of a series on building evals, on discriminatory power: a hill-climbing eval only earns its keep if it separates systems you already …
 
@@ -592,7 +592,7 @@
 
 - [Meenakshi Yadav](https://x.com/meenakshiyacs/status/2055104295641710718) — 2026-05-15: A layer-by-layer cheat sheet for designing and explaining agentic AI architecture: define the goal; Orchestration Layer as the control panel deciding flow, logic and coordination; Agents Layer as the workforce of single or multi-agents on specialized tasks; Tools Layer for execution (APIs, web search, databases, external systems); Memory as short- and long-term context storage; Monitoring to track every step and detect issues in real time; Reliability & Failure covering retries, fallbacks and human-in-the-loop; and Governance & Security for auth and compliance guardrails. Useful as a shared vocabulary for explaining agent design to non-specialists.
 
-- [Sam Hogan](https://x.com/samhogan/status/2055064462844219603) — 2026-05-15: 'HALO: Using RLMs to build self-improving agents' - an agent that optimizes other agents by mining execution traces (via an RLM) for recurring harness failure modes and recommending fixes. Harness-only benchmark gains: Terminal-Bench 46->57%, Finance-Agent 56->72%, AppWorld up to 73.7->89.5%, SWE-Bench 65->74%; tau3-Bench exposed a model-capability (not harness) bottleneck.
+- [Sam Hogan](https://x.com/samhogan/status/2055064462844219603) — 2026-05-15: X Article: 'HALO: Using RLMs to build self-improving agents' (github.com/context-labs/halo) — an agent that optimizes other agents' harnesses by having an RLM decompose hundreds of thousands of execution traces to find recurring failure modes, then feeding harness fixes to a coding agent and re-running the loop. Harness-only gains: Terminal-Bench 46->57.1% (gemini-3-flash on terminus-2, vs Claude Code on Opus 4.6 at 58%), Finance-Agent 56->72% (claude-opus-4-7), AppWorld 73.7->89.5% (Sonnet 4.6) and 36.8->52.6% (Gemini 3 Flash), SWE-Bench Verified 65->74%. Builds on the 'Mismanaged Genius Hypothesis' (@a1zhang). Key negative result: on tau3-Bench the banking_knowledge domain capped near 10% regardless of prompting — HALO's value there was diagnosing a model-capability bottleneck rather than a harness one. Also finds the best harness is model-specific: the same coverage rubric that lifted Opus degraded Kimi-K2.6.
 
 - [Avid](https://x.com/av1dlive/status/2054948286403150017) — 2026-05-15: Points at a 15-minute live lecture on agentic coding by two Senior Staff Engineers at Airbnb, noting Airbnb has already shipped one of the more ambitious LLM-agent migrations in production. Quotes the author's own article "How to Build AI Agents in 2026 (Full Course)", whose framing is that most builders ship demos rather than production-level agents. The Airbnb engineers' talk is the substantive item here.
 
@@ -1810,7 +1810,7 @@
 
 - [charmaine](https://x.com/charmaine_klee/status/2055106811225931883) — 2026-05-15: Anthropic's own writeup of how Claude Code behaves in large codebases — best practices and where to start — shared by one of the people behind it, at claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start. First-party guidance rather than community inference, which makes it a better default reference than most of the tips posts in this collection.
 
-- [Sam Hogan](https://x.com/samhogan/status/2055064462844219603) — 2026-05-15: 'HALO: Using RLMs to build self-improving agents' - an agent that optimizes other agents by mining execution traces (via an RLM) for recurring harness failure modes and recommending fixes. Harness-only benchmark gains: Terminal-Bench 46->57%, Finance-Agent 56->72%, AppWorld up to 73.7->89.5%, SWE-Bench 65->74%; tau3-Bench exposed a model-capability (not harness) bottleneck.
+- [Sam Hogan](https://x.com/samhogan/status/2055064462844219603) — 2026-05-15: X Article: 'HALO: Using RLMs to build self-improving agents' (github.com/context-labs/halo) — an agent that optimizes other agents' harnesses by having an RLM decompose hundreds of thousands of execution traces to find recurring failure modes, then feeding harness fixes to a coding agent and re-running the loop. Harness-only gains: Terminal-Bench 46->57.1% (gemini-3-flash on terminus-2, vs Claude Code on Opus 4.6 at 58%), Finance-Agent 56->72% (claude-opus-4-7), AppWorld 73.7->89.5% (Sonnet 4.6) and 36.8->52.6% (Gemini 3 Flash), SWE-Bench Verified 65->74%. Builds on the 'Mismanaged Genius Hypothesis' (@a1zhang). Key negative result: on tau3-Bench the banking_knowledge domain capped near 10% regardless of prompting — HALO's value there was diagnosing a model-capability bottleneck rather than a harness one. Also finds the best harness is model-specific: the same coverage rubric that lifted Opus degraded Kimi-K2.6.
 
 - [Avid](https://x.com/av1dlive/status/2054948286403150017) — 2026-05-15: Points at a 15-minute live lecture on agentic coding by two Senior Staff Engineers at Airbnb, noting Airbnb has already shipped one of the more ambitious LLM-agent migrations in production. Quotes the author's own article "How to Build AI Agents in 2026 (Full Course)", whose framing is that most builders ship demos rather than production-level agents. The Airbnb engineers' talk is the substantive item here.
 
@@ -3036,7 +3036,7 @@
 
 - [Arpit Bhayani](https://x.com/arpit_bhayani/status/2055265636390207784) — 2026-05-15: Arpit Bhayani on why production RAG failures are mostly not LLM failures — demos look rock solid and break on ship, which happened to him too. Announces a practical deep dive with code snippets on what production-grade agentic RAG actually requires beyond tutorials: how retrieval really works, why chunking is where most systems fail, embedding-model lock-in, reindexing, document registries and chunk identity, and index management. A useful counterweight to the RAG-is-solved framing.
 
-- [Sam Hogan](https://x.com/samhogan/status/2055064462844219603) — 2026-05-15: 'HALO: Using RLMs to build self-improving agents' - an agent that optimizes other agents by mining execution traces (via an RLM) for recurring harness failure modes and recommending fixes. Harness-only benchmark gains: Terminal-Bench 46->57%, Finance-Agent 56->72%, AppWorld up to 73.7->89.5%, SWE-Bench 65->74%; tau3-Bench exposed a model-capability (not harness) bottleneck.
+- [Sam Hogan](https://x.com/samhogan/status/2055064462844219603) — 2026-05-15: X Article: 'HALO: Using RLMs to build self-improving agents' (github.com/context-labs/halo) — an agent that optimizes other agents' harnesses by having an RLM decompose hundreds of thousands of execution traces to find recurring failure modes, then feeding harness fixes to a coding agent and re-running the loop. Harness-only gains: Terminal-Bench 46->57.1% (gemini-3-flash on terminus-2, vs Claude Code on Opus 4.6 at 58%), Finance-Agent 56->72% (claude-opus-4-7), AppWorld 73.7->89.5% (Sonnet 4.6) and 36.8->52.6% (Gemini 3 Flash), SWE-Bench Verified 65->74%. Builds on the 'Mismanaged Genius Hypothesis' (@a1zhang). Key negative result: on tau3-Bench the banking_knowledge domain capped near 10% regardless of prompting — HALO's value there was diagnosing a model-capability bottleneck rather than a harness one. Also finds the best harness is model-specific: the same coverage rubric that lifted Opus degraded Kimi-K2.6.
 
 - [Berryxia.AI](https://x.com/berryxia/status/2054924976835510337) — 2026-05-15: Chinese-language writeup of Tencent AI's open-sourced agent memory system (github.com/Tencent/TencentDB-Agent-Memory), the product of six months on one problem: agents losing context in long sessions. Three reported results — compressing stale context mid-session cut token usage 61%; giving agents a structured mermaid-based task map sharply reduced losing the thread in 30+ step flows; and a dedicated Persona memory raised persona consistency from 48% to 76%. The author's framing: 99% of people are still chasing context length, when the real problem is recalling the right thing the right way at the right time.
 
@@ -5353,8 +5353,8 @@
 - **2026-05-15** | [Meenakshi Yadav](https://x.com/meenakshiyacs/status/2055104295641710718) | agent-design, general
   A layer-by-layer cheat sheet for designing and explaining agentic AI architecture: define the goal; Orchestration Layer as the control panel deciding flow, logic and coordination; Agents Layer as the workforce of single or multi-agents on specialized tasks; Tools Layer for execution (APIs, web search, databases, external systems); Memory as short- and long-term context storage; Monitoring to track every step and detect issues in real time; Reliability & Failure covering retries, fallbacks and human-in-the-loop; and Governance & Security for auth and compliance guardrails. Useful as a shared vocabulary for explaining agent design to non-specialists.
 
-- **2026-05-15** | [Sam Hogan](https://x.com/samhogan/status/2055064462844219603) | agent-design, research, dev-practices
-  'HALO: Using RLMs to build self-improving agents' - an agent that optimizes other agents by mining execution traces (via an RLM) for recurring harness failure modes and recommending fixes. Harness-only benchmark gains: Terminal-Bench 46->57%, Finance-Agent 56->72%, AppWorld up to 73.7->89.5%, SWE-Bench 65->74%; tau3-Bench exposed a model-capability (not harness) bottleneck.
+- **2026-05-15** | [Sam Hogan](https://x.com/samhogan/status/2055064462844219603) | agent-design, dev-practices, research
+  X Article: 'HALO: Using RLMs to build self-improving agents' (github.com/context-labs/halo) — an agent that optimizes other agents' harnesses by having an RLM decompose hundreds of thousands of execution traces to find recurring failure modes, then feeding harness fixes to a coding agent and re-running the loop. Harness-only gains: Terminal-Bench 46->57.1% (gemini-3-flash on terminus-2, vs Claude Code on Opus 4.6 at 58%), Finance-Agent 56->72% (claude-opus-4-7), AppWorld 73.7->89.5% (Sonnet 4.6) and 36.8->52.6% (Gemini 3 Flash), SWE-Bench Verified 65->74%. Builds on the 'Mismanaged Genius Hypothesis' (@a1zhang). Key negative result: on tau3-Bench the banking_knowledge domain capped near 10% regardless of prompting — HALO's value there was diagnosing a model-capability bottleneck rather than a harness one. Also finds the best harness is model-specific: the same coverage rubric that lifted Opus degraded Kimi-K2.6.
 
 - **2026-05-15** | [Avid](https://x.com/av1dlive/status/2054948286403150017) | agent-design, claude-code, dev-practices
   Points at a 15-minute live lecture on agentic coding by two Senior Staff Engineers at Airbnb, noting Airbnb has already shipped one of the more ambitious LLM-agent migrations in production. Quotes the author's own article "How to Build AI Agents in 2026 (Full Course)", whose framing is that most builders ship demos rather than production-level agents. The Airbnb engineers' talk is the substantive item here.
