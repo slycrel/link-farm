@@ -466,10 +466,19 @@ def auto_curate(*, db_path: Path = DEFAULT_DB, with_lock: bool = True,
             to_attach.append((o["id"], ROLE_WEAK,
                               "auto-curate: shared @mention — loose signal, "
                               "per-person grouping deprioritised"))
-        elif not conceptual and o["post_id"] in covered_posts and active:
+        elif not conceptual and active:
+            # Non-conceptual concept (url:/mention:/per-person). Weak either
+            # way: if the post is already conceptually covered this is a
+            # duplicate association, and if it isn't, a raw grouping still
+            # isn't the thematic home it needs — orphan clustering and the
+            # latent pass should stay free to find that. Previously the
+            # not-yet-covered case fell through to `left_pending` and sat in
+            # the human queue forever (91 such rows accumulated in one run).
+            covered = o["post_id"] in covered_posts
             to_attach.append((o["id"], ROLE_WEAK,
                               "auto-curate: non-conceptual grouping, post "
-                              "already conceptually covered"))
+                              + ("already conceptually covered"
+                                 if covered else "not yet conceptually homed")))
         else:
             result["left_pending"] += 1
 
@@ -495,6 +504,30 @@ def auto_curate(*, db_path: Path = DEFAULT_DB, with_lock: bool = True,
 
 
 # ---- Primary/secondary assignment --------------------------------------
+
+# A concept whose description carries this marker is excluded from semantic
+# centroid scoring: it keeps its edges and shows up everywhere else, but no
+# post is ever matched *into* it by cosine.
+#
+# Why this is needed. A concept assembled by hand from a lexically DIFFUSE
+# cluster gets a centroid that sits near the corpus mean — its members share a
+# purpose, not a vocabulary, so averaging them points at "general AI writing"
+# rather than at the theme. Such a centroid then matches almost everything, and
+# because matches at/above AUTO_PROMOTE_MIN_COSINE become *evidence*, the
+# concept feeds on its own diffuseness and grows without bound.
+#
+# Observed 2026-08-26: #65 "thinking tools & problem-solving method" was
+# hand-created with 7 carefully chosen members (raw cohesion 0.840) and within
+# two pipeline runs had absorbed 26 unrelated evidence edges — Markov-chain
+# trading lectures, "Chain of Thought is dead", a Google/Meta agent paper — and
+# hijacked 18 posts' primary homes. Marking it fixed that while keeping the
+# hand-curated membership intact.
+#
+# Rule of thumb: if a concept only exists because a *reader* could see it, it
+# should carry this marker. Membership is then curated deliberately (by hand or
+# by the latent pass), which is the honest way to maintain a category that
+# embeddings cannot represent.
+NO_CENTROID_SCORING_MARKER = "[no-centroid-scoring]"
 
 # Manual pins: a post_concepts row whose notes contain this marker is a
 # human-locked primary — assign_primaries() will not recompute that post.
@@ -1313,7 +1346,44 @@ def run_all_mechanical_passes(db_path: Path = DEFAULT_DB,
 # them. 0.82 is the observed true-positive floor (matches as low as 0.821),
 # so recall loss is minimal. auto_curate still defensively dismisses anything
 # below the floor that pre-dates this change.
-SEMANTIC_CENTROID_THRESHOLD = 0.82
+#
+# 2026-08-26: lowered 0.82 → 0.75, reopening the recall band deliberately.
+# The 2026-07-22 reasoning was locally sound but had a structural side effect:
+# setting the *proposal* threshold equal to the *auto-file* floor made the band
+# ZERO WIDTH, so nothing could ever land in it and no pass could surface an
+# association it wasn't already confident about. Measured consequence:
+# `adjacent`-tagged posts were ~1.6x more likely than the corpus baseline to
+# carry no concept edge at all (52% vs 33%), and the 16 edge-less `adjacent`
+# posts all scored 0.67–0.80 against their nearest conceptual centroid — real
+# associations sitting just under a floor that had been closed to them.
+# Munger's inversion method, Pólya's *How to Solve It*, first-principles
+# thinking: material Jeremy deliberately sent himself, invisible to the graph.
+#
+# Why 0.75 specifically: this corpus's *pairwise* post-post cosine distribution
+# has mean 0.61 and p99 0.73 (see the orphan-clustering note in CLAUDE.md), so
+# 0.75 sits above the 99th percentile of ordinary similarity. A 0.75 hit on a
+# concept centroid is therefore distinctive rather than generic "this is all AI
+# content" overlap. Below ~0.73 that stops being true and the weak layer starts
+# carrying noise instead of signal — 0.70 would attach 162 of 173 edge-less
+# posts, which is close enough to "everything" that the label stops informing.
+#
+# This is only safe because the 0.75–0.82 band lands as `weak` edges, which are
+# excluded from centroids, semantic eligibility and primary assignment (see
+# CANONICAL_ROLES). Recall rises; nothing downstream is distorted. If you raise
+# this back toward the floor, understand you are re-closing the band, not just
+# tightening a knob.
+SEMANTIC_CENTROID_THRESHOLD = 0.75
+
+# Max sub-floor ("weak band") matches proposed per post, per run. The evidence
+# band (>= AUTO_PROMOTE_MIN_COSINE) is uncapped; only the weak band is ranked
+# and truncated. See the rationale in discover_semantic_neighbors(): an
+# absolute threshold on raw cosines is far too permissive on this corpus —
+# uncapped, 0.75 proposed 8,825 observations in one run (~26% of every possible
+# post/concept pair). Capping makes a weak edge mean "one of this post's
+# closest concepts" instead of "cleared a bar everything clears". 3 is enough
+# to give an otherwise-homeless post a few real leads without carpet-bombing;
+# raise it if weak edges start feeling too sparse to be useful.
+SEMANTIC_MAX_WEAK_PER_POST = 3
 
 # Don't centroid-match concepts with too few canonical edges — a single-post
 # concept's centroid is just that post's embedding, which collapses to a
@@ -1326,6 +1396,7 @@ def discover_semantic_neighbors(db_path: Path = DEFAULT_DB,
                                  model: Optional[str] = None,
                                  threshold: float = SEMANTIC_CENTROID_THRESHOLD,
                                  min_concept_edges: int = SEMANTIC_MIN_CONCEPT_EDGES,
+                                 max_weak_per_post: int = SEMANTIC_MAX_WEAK_PER_POST,
                                  with_lock: bool = True) -> dict:
     """Mechanical semantic pass: match embedded posts against existing
     active concepts' centroids; propose new observations for posts that
@@ -1379,9 +1450,11 @@ def discover_semantic_neighbors(db_path: Path = DEFAULT_DB,
               JOIN post_concepts pc ON pc.concept_id = c.id
              WHERE c.status = 'active'
                AND pc.role IN ({','.join('?' * len(CANONICAL_ROLES))})
+               AND COALESCE(c.description, '') NOT LIKE ?
              GROUP BY c.id
             HAVING n >= ?
-        """, (*CANONICAL_ROLES, min_concept_edges)).fetchall()
+        """, (*CANONICAL_ROLES, f'%{NO_CENTROID_SCORING_MARKER}%',
+              min_concept_edges)).fetchall()
         eligible_concept_ids = {r["id"] for r in active_with_enough}
         if not eligible_concept_ids:
             _finish_run(conn, run_id, 0, 0,
@@ -1424,6 +1497,37 @@ def discover_semantic_neighbors(db_path: Path = DEFAULT_DB,
         ):
             already_attached[r["concept_id"]].add(r["post_id"])
 
+        # Weak edges a post ALREADY carries from a previous semantic run. The
+        # cap has to be a per-post *total*, not per-run: `already_attached`
+        # excludes existing edges, so a per-run cap just hands each post its
+        # next-best 3 every time and converges on the same everything-attached
+        # carpet, only slowly (observed: 2024 → 1910 → 1444 edges per run).
+        weak_held = defaultdict(int)
+        for r in conn.execute(f"""
+            SELECT post_id, COUNT(*) AS n FROM post_concepts
+             WHERE role = ? AND promoted_from_observation_id IN
+                   (SELECT id FROM concept_observations WHERE source = ?)
+             GROUP BY post_id
+        """, (ROLE_WEAK, SOURCE_SEMANTIC)):
+            weak_held[r["post_id"]] = r["n"]
+
+        # Collect candidates first, then apply a PER-POST CAP to the sub-floor
+        # band before writing anything.
+        #
+        # Why the cap exists: an absolute threshold is the wrong instrument for
+        # the weak band. Raw bge cosines on this corpus are high and concept
+        # centroids are denoised, so post-to-centroid similarity clears 0.75 for
+        # a large fraction of ALL (post, concept) pairs — the first run at 0.75
+        # proposed 8,825 observations, ~26% of every possible pair, i.e. "almost
+        # everything is weakly related to almost everything". True in a trivial
+        # sense, useless as information, and it buries the handful of weak edges
+        # that actually mean something.
+        #
+        # So a weak edge means "among this post's closest concepts", not "above
+        # a bar". The evidence band (>= AUTO_PROMOTE_MIN_COSINE) is left
+        # UNCAPPED — a confident match should always be recorded, and genuine
+        # cross-cutting membership is the whole point of the secondary axis.
+        candidates: dict[int, list[tuple[float, int]]] = defaultdict(list)
         for cid, centroid in centroids.items():
             sims = post_matrix_normed @ centroid  # already normalized
             for pid, sim in zip(post_ids, sims.tolist()):
@@ -1431,6 +1535,18 @@ def discover_semantic_neighbors(db_path: Path = DEFAULT_DB,
                     continue
                 if pid in already_attached.get(cid, set()):
                     continue
+                candidates[pid].append((float(sim), cid))
+
+        floor = AUTO_PROMOTE_MIN_COSINE
+        for pid, cands in candidates.items():
+            cands.sort(reverse=True)  # best first
+            strong = [c for c in cands if c[0] >= floor]
+            budget = max(0, max_weak_per_post - weak_held.get(pid, 0))
+            weakish = [c for c in cands if c[0] < floor][:budget]
+            skipped = len(cands) - len(strong) - len(weakish)
+            stats["weak_capped"] = stats.get("weak_capped", 0) + skipped
+            for sim, cid in strong + weakish:
+                band = "evidence" if sim >= floor else "weak-band"
                 obs_id = _record_obs_in_txn(
                     conn,
                     post_id=pid, concept_id=cid,
@@ -1439,7 +1555,7 @@ def discover_semantic_neighbors(db_path: Path = DEFAULT_DB,
                     raw_score=float(sim),
                     discovery_run_id=run_id,
                     discovery_model=model,
-                    notes=f"cosine={sim:.3f} vs centroid",
+                    notes=f"cosine={sim:.3f} vs centroid ({band})",
                 )
                 if obs_id is not None:
                     stats["observations_created"] += 1

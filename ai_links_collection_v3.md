@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-08-26T15:03:56Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-26T18:38:28Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-08-25** — [Igor bedesqui](https://x.com/bedesqui/status/2092036341630394449) — *now • Dev Practices • 101.4K views • v1 enriched*  
@@ -43,7 +43,7 @@
     - 2026-08-25 — [Matt Stockton](https://x.com/mstockton/status/2092076777615102400): Commentary on dynamic agent workflows: the strongest use of LLMs is graphs with *uncorrelated* starting context, and the six workflow patter…
     - 2026-08-25 — [Madhu Guru](https://x.com/realmadhuguru/status/2092058332735693264): Part 8 of a series on building evals, on discriminatory power: a hill-climbing eval only earns its keep if it separates systems you already …
 
-- **vibecode-to-production via agent skills** (130 posts, +28 this week)  
+- **vibecode-to-production via agent skills** (131 posts, +28 this week)  
   Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
     - 2026-08-25 — [Matt Stockton](https://x.com/mstockton/status/2092076777615102400): Commentary on dynamic agent workflows: the strongest use of LLMs is graphs with *uncorrelated* starting context, and the six workflow patter…
     - 2026-08-25 — [Madhu Guru](https://x.com/realmadhuguru/status/2092058332735693264): Part 8 of a series on building evals, on discriminatory power: a hill-climbing eval only earns its keep if it separates systems you already …
