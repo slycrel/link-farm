@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-08-26T23:26:00Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-27T15:02:18Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-08-25** — [Igor bedesqui](https://x.com/bedesqui/status/2092036341630394449) — *now • Dev Practices • 101.4K views • v1 enriched*  
