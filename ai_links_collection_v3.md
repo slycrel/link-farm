@@ -1,12 +1,12 @@
 # AI Links Collection
-**Total Posts**: 836  
-**Date Range**: 2024-06-11 – 2026-08-25  
-**Enriched**: 835/836 (99%)
+**Total Posts**: 840  
+**Date Range**: 2024-06-11 – 2026-08-28  
+**Enriched**: 839/840 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-08-27T15:02:18Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-28T18:19:52Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-08-25** — [Igor bedesqui](https://x.com/bedesqui/status/2092036341630394449) — *now • Dev Practices • 101.4K views • v1 enriched*  
@@ -23,30 +23,30 @@
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **persistent always-on agents — bot mode & agent desktops** (320 posts, +33 this week)  
-  Agents that outlive a chat session: persistent bot profiles with their own job and memory, remote/self-hosted execution that survives closing the laptop, and the desktop workspaces around them (Hermes/Nous, Grok bot mode, OpenClaw). Renamed from auto-named cluster on 2026-08-21.
-    - 2026-08-25 — [Matt Stockton](https://x.com/mstockton/status/2092076777615102400): Commentary on dynamic agent workflows: the strongest use of LLMs is graphs with *uncorrelated* starting context, and the six workflow patter…
-    - 2026-08-25 — [Madhu Guru](https://x.com/realmadhuguru/status/2092058332735693264): Part 8 of a series on building evals, on discriminatory power: a hill-climbing eval only earns its keep if it separates systems you already …
-
-- **local model serving on consumer GPUs — quantization & throughput** (332 posts, +32 this week)  
+- **local model serving on consumer GPUs — quantization & throughput** (336 posts, +34 this week)  
   Running capable open models on single-box prosumer hardware: quantization formats (NVFP4/AWQ/GPTQ/GGUF/MLX), KV-cache compression, serving stacks (SGLang, DSpark), and the tok/s benchmarking that goes with it. Renamed from auto-named cluster on 2026-08-21.
-    - 2026-08-25 — [Matt Stockton](https://x.com/mstockton/status/2092076777615102400): Commentary on dynamic agent workflows: the strongest use of LLMs is graphs with *uncorrelated* starting context, and the six workflow patter…
-    - 2026-08-25 — [Madhu Guru](https://x.com/realmadhuguru/status/2092058332735693264): Part 8 of a series on building evals, on discriminatory power: a hill-climbing eval only earns its keep if it separates systems you already …
+    - 2026-08-28 — [marfin](https://x.com/marfinxx/status/2093106368957776231): marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dens…
+    - 2026-08-28 — [elvis](https://x.com/omarsar0/status/2093056965568332236): elvis (DAIR.AI) flags JIT-Agent (arxiv.org/abs/2608.25593) - a model whose *output* is an agent harness, formalizing the harness as a compos…
 
-- **elite-skill masterclass content** (329 posts, +30 this week)  
+- **persistent always-on agents — bot mode & agent desktops** (324 posts, +33 this week)  
+  Agents that outlive a chat session: persistent bot profiles with their own job and memory, remote/self-hosted execution that survives closing the laptop, and the desktop workspaces around them (Hermes/Nous, Grok bot mode, OpenClaw). Renamed from auto-named cluster on 2026-08-21.
+    - 2026-08-28 — [marfin](https://x.com/marfinxx/status/2093106368957776231): marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dens…
+    - 2026-08-28 — [elvis](https://x.com/omarsar0/status/2093056965568332236): elvis (DAIR.AI) flags JIT-Agent (arxiv.org/abs/2608.25593) - a model whose *output* is an agent harness, formalizing the harness as a compos…
+
+- **elite-skill masterclass content** (332 posts, +31 this week)  
   Free lectures and 'masterclass' reposts promising an elite skill — quant trading maths (Jane Street, Jim Simons, Berkeley), high-stakes persuasion. Aspirational skill-acquisition material, usually hype-packaged, occasionally with a real lecture behind it.
-    - 2026-08-25 — [Matt Stockton](https://x.com/mstockton/status/2092076777615102400): Commentary on dynamic agent workflows: the strongest use of LLMs is graphs with *uncorrelated* starting context, and the six workflow patter…
-    - 2026-08-25 — [Madhu Guru](https://x.com/realmadhuguru/status/2092058332735693264): Part 8 of a series on building evals, on discriminatory power: a hill-climbing eval only earns its keep if it separates systems you already …
+    - 2026-08-28 — [marfin](https://x.com/marfinxx/status/2093106368957776231): marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dens…
+    - 2026-08-27 — [0xSero](https://x.com/0xsero/status/2092927775208264181): 0xSero shares a free digital copy of 'Inference Engineering' by Philip Kiely (via scribd.com) - a book on optimizing the deployment and runt…
 
-- **agents-as-judges-of-agents — bossman supervisor / self-verification** (120 posts, +30 this week)  
+- **agents-as-judges-of-agents — bossman supervisor / self-verification** (123 posts, +31 this week)  
   Critical supervisor agent judges worker agents rather than doing the work. Boris Cherny on self-verification loops; Viv on bossman supervisor.
-    - 2026-08-25 — [Matt Stockton](https://x.com/mstockton/status/2092076777615102400): Commentary on dynamic agent workflows: the strongest use of LLMs is graphs with *uncorrelated* starting context, and the six workflow patter…
-    - 2026-08-25 — [Madhu Guru](https://x.com/realmadhuguru/status/2092058332735693264): Part 8 of a series on building evals, on discriminatory power: a hill-climbing eval only earns its keep if it separates systems you already …
+    - 2026-08-28 — [marfin](https://x.com/marfinxx/status/2093106368957776231): marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dens…
+    - 2026-08-27 — [0xSero](https://x.com/0xsero/status/2092927775208264181): 0xSero shares a free digital copy of 'Inference Engineering' by Philip Kiely (via scribd.com) - a book on optimizing the deployment and runt…
 
-- **vibecode-to-production via agent skills** (131 posts, +28 this week)  
-  Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
-    - 2026-08-25 — [Matt Stockton](https://x.com/mstockton/status/2092076777615102400): Commentary on dynamic agent workflows: the strongest use of LLMs is graphs with *uncorrelated* starting context, and the six workflow patter…
-    - 2026-08-25 — [Madhu Guru](https://x.com/realmadhuguru/status/2092058332735693264): Part 8 of a series on building evals, on discriminatory power: a hill-climbing eval only earns its keep if it separates systems you already …
+- **prediction-market & crypto trading bots** (338 posts, +29 this week)  
+  Polymarket and crypto trading-bot content: sweeper and arbitrage bots, Markov-chain trade models, tick-data neural nets, plus one genuinely useful 72M-trade dataset. Heavily promotional and largely off-topic for AI engineering — kept and labelled rather than dropped.
+    - 2026-08-28 — [marfin](https://x.com/marfinxx/status/2093106368957776231): marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dens…
+    - 2026-08-28 — [elvis](https://x.com/omarsar0/status/2093056965568332236): elvis (DAIR.AI) flags JIT-Agent (arxiv.org/abs/2608.25593) - a model whose *output* is an agent harness, formalizing the harness as a compos…
 
 
 ### Revisit from last month
@@ -59,23 +59,27 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 489 | 58.5% |
-| claude-code | 191 | 22.8% |
-| dev-practices | 354 | 42.3% |
-| skills-mcp | 190 | 22.7% |
-| prompting | 125 | 15.0% |
-| research | 211 | 25.2% |
-| industry | 121 | 14.5% |
-| management | 131 | 15.7% |
+| agent-design | 492 | 58.6% |
+| claude-code | 191 | 22.7% |
+| dev-practices | 358 | 42.6% |
+| skills-mcp | 192 | 22.9% |
+| prompting | 125 | 14.9% |
+| research | 214 | 25.5% |
+| industry | 122 | 14.5% |
+| management | 131 | 15.6% |
 | adjacent | 38 | 4.5% |
 | solo-operator | 8 | 1.0% |
-| questionable | 122 | 14.6% |
-| general | 100 | 12.0% |
+| questionable | 124 | 14.8% |
+| general | 100 | 11.9% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-08-28 | marfin | agent-design | marfin summarizes a Microsoft paper introducing Mandol, an in-memory a... |
+| 2026-08-28 | elvis | agent-design | elvis (DAIR.AI) flags JIT-Agent (arxiv.org/abs/2608.25593) - a model w... |
+| 2026-08-27 | 0xSero | research | 0xSero shares a free digital copy of 'Inference Engineering' by Philip... |
+| 2026-08-27 | Femke Plantinga | agent-design | A comparative teardown of 9+ 'company brain' / organizational-memory s... |
 | 2026-08-25 | Matt Stockton | agent-design | Commentary on dynamic agent workflows: the strongest use of LLMs is gr... |
 | 2026-08-25 | Madhu Guru | dev-practices | Part 8 of a series on building evals, on discriminatory power: a hill-... |
 | 2026-08-25 | Igor bedesqui | dev-practices | Shares what the author calls his 'magnum opus of unslopping PRs' (gist... |
@@ -122,15 +126,17 @@
 | 2026-08-14 | Brian Roemmele | research | Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and... |
 | 2026-08-14 | Teknium | agent-design | Nous Research shipped Bot Mode for Hermes Agent (github.com/NousResear... |
 | 2026-08-14 | Viv | agent-design | Commentary on dexhorthy's /show-me proposal — compact visual represent... |
-| 2026-08-14 | Granite | agent-design | Vercel shipped Foreman, an open-source 'software factory' that splits... |
-| 2026-08-14 | mentalium | adjacent | A repost of an uncut 1992 Tony Robbins persuasion session, pitched aro... |
-| 2026-08-14 | Harrison Chase | agent-design | LangChain's Harrison Chase, at Sequoia's 'Own Your Intelligence' event... |
-| 2026-08-14 | Bilal Bakr | prompting | A shareable rules-file snippet for tightening agent behavior on Opus 5... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (489)
+### Agent Design (492)
+
+- [marfin](https://x.com/marfinxx/status/2093106368957776231) — 2026-08-28: marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dense/sparse vector indexes and graph topology into a single address space instead of stitching together separate vector and graph databases. Claims 92.21% peak accuracy on LoCoMo/LongMemEval, 5.4x search speedup (P99 94.8ms vs 777.1ms), 20% prompt-token reduction and +7.2% on multi-hop queries, with denoising via Median Absolute Deviation and temporal-contradiction arbitration that avoids LLM inference cost. Framed as 'persistent agent memory is an engineering problem, not a context window problem'; the numbers are quoted secondhand from a hype-styled thread rather than verified against the paper, and no paper link is given in the post.
+
+- [elvis](https://x.com/omarsar0/status/2093056965568332236) — 2026-08-28: elvis (DAIR.AI) flags JIT-Agent (arxiv.org/abs/2608.25593) - a model whose *output* is an agent harness, formalizing the harness as a composable artifact under a fixed four-module protocol (memory, planning, action protocol, tool orchestration) and synthesizing one on the fly for any off-the-shelf agentic LLM. It repairs harnesses mid-execution and self-evolves by distilling performance signals from an archive of prior configurations. Reported gains: DeepSeek-V4-Flash passes GPT-5.6 on DeepSearchQA (+9.1) and OdysseyBench (+4.3), GLM-5.2 up to +20.2, with generated harnesses competitive against OpenCode and Claude Code. Directly relevant if you maintain a hand-built harness.
+
+- [Femke Plantinga](https://x.com/femke_plantinga/status/2092918452423983363) — 2026-08-27: A comparative teardown of 9+ 'company brain' / organizational-memory systems - GBrain, mem0, Letta, Zep/Graphiti, Sylph, DIY Claude Code + git, Pletor, Gorgias Cortex and Slite Agent - argued to share four functions: signal intake, remembering, dreaming/pruning, and speaking/searching. Useful as a landscape map of the agent-memory vein, and the recurring pattern is notable: most store markdown in git and gate writes behind human review or PRs (Gorgias runs 12,000 markdown nodes with nightly wrong-answer PRs). Published by Slite as lead-gen for a gated ebook (slite.com/ebooks/company-brain), so read the framing as vendor-shaped even though the survey itself is substantive.
 
 - [Matt Stockton](https://x.com/mstockton/status/2092076777615102400) — 2026-08-25: Commentary on dynamic agent workflows: the strongest use of LLMs is graphs with *uncorrelated* starting context, and the six workflow patterns in the linked post are good examples. Key mechanism — adversarial verification works precisely because it runs in a fresh context window; asking the same agent with the same context to check its own work invites confirmation bias. Argues the critical design question is deciding what context travels along each edge of the graph, and why, because attention stays a delicate resource. Flagged by Jeremy for Maro.
 
@@ -1494,7 +1500,15 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (354)
+### Dev Practices (358)
+
+- [marfin](https://x.com/marfinxx/status/2093106368957776231) — 2026-08-28: marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dense/sparse vector indexes and graph topology into a single address space instead of stitching together separate vector and graph databases. Claims 92.21% peak accuracy on LoCoMo/LongMemEval, 5.4x search speedup (P99 94.8ms vs 777.1ms), 20% prompt-token reduction and +7.2% on multi-hop queries, with denoising via Median Absolute Deviation and temporal-contradiction arbitration that avoids LLM inference cost. Framed as 'persistent agent memory is an engineering problem, not a context window problem'; the numbers are quoted secondhand from a hype-styled thread rather than verified against the paper, and no paper link is given in the post.
+
+- [elvis](https://x.com/omarsar0/status/2093056965568332236) — 2026-08-28: elvis (DAIR.AI) flags JIT-Agent (arxiv.org/abs/2608.25593) - a model whose *output* is an agent harness, formalizing the harness as a composable artifact under a fixed four-module protocol (memory, planning, action protocol, tool orchestration) and synthesizing one on the fly for any off-the-shelf agentic LLM. It repairs harnesses mid-execution and self-evolves by distilling performance signals from an archive of prior configurations. Reported gains: DeepSeek-V4-Flash passes GPT-5.6 on DeepSearchQA (+9.1) and OdysseyBench (+4.3), GLM-5.2 up to +20.2, with generated harnesses competitive against OpenCode and Claude Code. Directly relevant if you maintain a hand-built harness.
+
+- [0xSero](https://x.com/0xsero/status/2092927775208264181) — 2026-08-27: 0xSero shares a free digital copy of 'Inference Engineering' by Philip Kiely (via scribd.com) - a book on optimizing the deployment and runtime performance of generative AI models. His suggested use is agent-mediated: hand it to your agents, have them build skills from it and explain the material back to you, noting you can experiment on almost any hardware. Worth noting the copy is redistributed rather than published free by the author, so provenance is unclear.
+
+- [Femke Plantinga](https://x.com/femke_plantinga/status/2092918452423983363) — 2026-08-27: A comparative teardown of 9+ 'company brain' / organizational-memory systems - GBrain, mem0, Letta, Zep/Graphiti, Sylph, DIY Claude Code + git, Pletor, Gorgias Cortex and Slite Agent - argued to share four functions: signal intake, remembering, dreaming/pruning, and speaking/searching. Useful as a landscape map of the agent-memory vein, and the recurring pattern is notable: most store markdown in git and gate writes behind human review or PRs (Gorgias runs 12,000 markdown nodes with nightly wrong-answer PRs). Published by Slite as lead-gen for a gated ebook (slite.com/ebooks/company-brain), so read the framing as vendor-shaped even though the survey itself is substantive.
 
 - [Matt Stockton](https://x.com/mstockton/status/2092076777615102400) — 2026-08-25: Commentary on dynamic agent workflows: the strongest use of LLMs is graphs with *uncorrelated* starting context, and the six workflow patterns in the linked post are good examples. Key mechanism — adversarial verification works precisely because it runs in a fresh context window; asking the same agent with the same context to check its own work invites confirmation bias. Argues the critical design question is deciding what context travels along each edge of the graph, and why, because attention stays a delicate resource. Flagged by Jeremy for Maro.
 
@@ -2204,7 +2218,11 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Skills & MCP (190)
+### Skills & MCP (192)
+
+- [0xSero](https://x.com/0xsero/status/2092927775208264181) — 2026-08-27: 0xSero shares a free digital copy of 'Inference Engineering' by Philip Kiely (via scribd.com) - a book on optimizing the deployment and runtime performance of generative AI models. His suggested use is agent-mediated: hand it to your agents, have them build skills from it and explain the material back to you, noting you can experiment on almost any hardware. Worth noting the copy is redistributed rather than published free by the author, so provenance is unclear.
+
+- [Femke Plantinga](https://x.com/femke_plantinga/status/2092918452423983363) — 2026-08-27: A comparative teardown of 9+ 'company brain' / organizational-memory systems - GBrain, mem0, Letta, Zep/Graphiti, Sylph, DIY Claude Code + git, Pletor, Gorgias Cortex and Slite Agent - argued to share four functions: signal intake, remembering, dreaming/pruning, and speaking/searching. Useful as a landscape map of the agent-memory vein, and the recurring pattern is notable: most store markdown in git and gate writes behind human review or PRs (Gorgias runs 12,000 markdown nodes with nightly wrong-answer PRs). Published by Slite as lead-gen for a gated ebook (slite.com/ebooks/company-brain), so read the framing as vendor-shaped even though the survey itself is substantive.
 
 - [ClaudeDevs](https://x.com/claudedevs/status/2091953609185657251) — 2026-08-25: Anthropic announced general availability of enterprise-managed auth for MCP connectors: Claude Team and Enterprise admins centralize authorization through their own identity provider, and users get tools and data connected automatically with no individual OAuth step. Removes the per-user connector-consent friction that blocks org-wide MCP rollouts. Flagged by Jeremy for Tanner.
 
@@ -2838,7 +2856,13 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-### Research (211)
+### Research (214)
+
+- [marfin](https://x.com/marfinxx/status/2093106368957776231) — 2026-08-28: marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dense/sparse vector indexes and graph topology into a single address space instead of stitching together separate vector and graph databases. Claims 92.21% peak accuracy on LoCoMo/LongMemEval, 5.4x search speedup (P99 94.8ms vs 777.1ms), 20% prompt-token reduction and +7.2% on multi-hop queries, with denoising via Median Absolute Deviation and temporal-contradiction arbitration that avoids LLM inference cost. Framed as 'persistent agent memory is an engineering problem, not a context window problem'; the numbers are quoted secondhand from a hype-styled thread rather than verified against the paper, and no paper link is given in the post.
+
+- [elvis](https://x.com/omarsar0/status/2093056965568332236) — 2026-08-28: elvis (DAIR.AI) flags JIT-Agent (arxiv.org/abs/2608.25593) - a model whose *output* is an agent harness, formalizing the harness as a composable artifact under a fixed four-module protocol (memory, planning, action protocol, tool orchestration) and synthesizing one on the fly for any off-the-shelf agentic LLM. It repairs harnesses mid-execution and self-evolves by distilling performance signals from an archive of prior configurations. Reported gains: DeepSeek-V4-Flash passes GPT-5.6 on DeepSearchQA (+9.1) and OdysseyBench (+4.3), GLM-5.2 up to +20.2, with generated harnesses competitive against OpenCode and Claude Code. Directly relevant if you maintain a hand-built harness.
+
+- [0xSero](https://x.com/0xsero/status/2092927775208264181) — 2026-08-27: 0xSero shares a free digital copy of 'Inference Engineering' by Philip Kiely (via scribd.com) - a book on optimizing the deployment and runtime performance of generative AI models. His suggested use is agent-mediated: hand it to your agents, have them build skills from it and explain the material back to you, noting you can experiment on almost any hardware. Worth noting the copy is redistributed rather than published free by the author, so provenance is unclear.
 
 - [Madhu Guru](https://x.com/realmadhuguru/status/2092058332735693264) — 2026-08-25: Part 8 of a series on building evals, on discriminatory power: a hill-climbing eval only earns its keep if it separates systems you already know are meaningfully different. Illustrated with five systems scoring 92-95 where the eval fails to distinguish the two known-better ones — the analogy is a fifth-grade math test given to PhDs. Argues the sweet spot is realistic + difficult + sensitive to capability differences, and raises the open question of what to do when good evals saturate as harness and models improve.
 
@@ -3262,7 +3286,9 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.
 
-### Industry (121)
+### Industry (122)
+
+- [Femke Plantinga](https://x.com/femke_plantinga/status/2092918452423983363) — 2026-08-27: A comparative teardown of 9+ 'company brain' / organizational-memory systems - GBrain, mem0, Letta, Zep/Graphiti, Sylph, DIY Claude Code + git, Pletor, Gorgias Cortex and Slite Agent - argued to share four functions: signal intake, remembering, dreaming/pruning, and speaking/searching. Useful as a landscape map of the agent-memory vein, and the recurring pattern is notable: most store markdown in git and gate writes behind human review or PRs (Gorgias runs 12,000 markdown nodes with nightly wrong-answer PRs). Published by Slite as lead-gen for a gated ebook (slite.com/ebooks/company-brain), so read the framing as vendor-shaped even though the survey itself is substantive.
 
 - [Mark Ajzenstadt](https://x.com/mardehaym/status/2091963865718231069) — 2026-08-25: Argues most companies are stuck in the 'Death Valley' between agent POC and production — 99% say they're deploying agents, 9% actually have, while OpenAI enterprise data reportedly puts agentic products at 64% of corporate output tokens. Drawing on 14 production agent systems shipped across healthcare and financial services, names four recurring engineering gaps: no code graph (the agent can't see how the codebase connects, so it invents APIs), no knowledge base (it answers from training data instead of yours), no closed feedback loop (production errors go unlogged, so Monday's mistake repeats Tuesday), and no approval gates (the agent takes irreversible actions). The percentages are the author's and unsourced; the four gaps overlap the long-running-agent patterns in the Bilgin Ibryam post.
 
@@ -3866,7 +3892,11 @@
 
 - [zostaff](https://x.com/zostaff/status/2033930728044372275) — 2026-03-18: zostaff's clickbait-titled ('How to Quit Your Job in One Day') walkthrough of an autonomous Polymarket trading system built from three agents: Claude (strategist — probability/recommendation/confidence), Codex (engineer — writes and debugs bot code), and OpenClaw (orchestrator — persistent memory, cron, modular skills, Telegram interface that executes trades and logs everything).
 
-### Questionable (122)
+### Questionable (124)
+
+- [marfin](https://x.com/marfinxx/status/2093106368957776231) — 2026-08-28: marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dense/sparse vector indexes and graph topology into a single address space instead of stitching together separate vector and graph databases. Claims 92.21% peak accuracy on LoCoMo/LongMemEval, 5.4x search speedup (P99 94.8ms vs 777.1ms), 20% prompt-token reduction and +7.2% on multi-hop queries, with denoising via Median Absolute Deviation and temporal-contradiction arbitration that avoids LLM inference cost. Framed as 'persistent agent memory is an engineering problem, not a context window problem'; the numbers are quoted secondhand from a hype-styled thread rather than verified against the paper, and no paper link is given in the post.
+
+- [Femke Plantinga](https://x.com/femke_plantinga/status/2092918452423983363) — 2026-08-27: A comparative teardown of 9+ 'company brain' / organizational-memory systems - GBrain, mem0, Letta, Zep/Graphiti, Sylph, DIY Claude Code + git, Pletor, Gorgias Cortex and Slite Agent - argued to share four functions: signal intake, remembering, dreaming/pruning, and speaking/searching. Useful as a landscape map of the agent-memory vein, and the recurring pattern is notable: most store markdown in git and gate writes behind human review or PRs (Gorgias runs 12,000 markdown nodes with nightly wrong-answer PRs). Published by Slite as lead-gen for a gated ebook (slite.com/ebooks/company-brain), so read the framing as vendor-shaped even though the survey itself is substantive.
 
 - [Luke Pierce](https://x.com/lukepierceops/status/2091949409231880377) — 2026-08-25: Lead-magnet post giving away the implementation-and-adoption playbook behind the author's $25K-$60K AI builds: adoption is won before the build starts; the migration protocol is backfill, parallel week, dated cutover, kill date, so nobody quietly stays on the old tool; migrate the heaviest department first because each win sells the next; keep the client never more than a day from visible progress; run AI in the background with humans approving outcomes so nobody has to learn to prompt; and measure manual hours eliminated rather than logins. Scarcity/funnel packaging, but the adoption mechanics are specific and transferable to internal AI rollouts.
 
@@ -4320,6 +4350,18 @@
 ## Full Chronological List
 
 ### Aug 2026
+
+- **2026-08-28** | [marfin](https://x.com/marfinxx/status/2093106368957776231) | agent-design, research, dev-practices, questionable
+  marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dense/sparse vector indexes and graph topology into a single address space instead of stitching together separate vector and graph databases. Claims 92.21% peak accuracy on LoCoMo/LongMemEval, 5.4x search speedup (P99 94.8ms vs 777.1ms), 20% prompt-token reduction and +7.2% on multi-hop queries, with denoising via Median Absolute Deviation and temporal-contradiction arbitration that avoids LLM inference cost. Framed as 'persistent agent memory is an engineering problem, not a context window problem'; the numbers are quoted secondhand from a hype-styled thread rather than verified against the paper, and no paper link is given in the post.
+
+- **2026-08-28** | [elvis](https://x.com/omarsar0/status/2093056965568332236) | agent-design, research, dev-practices
+  elvis (DAIR.AI) flags JIT-Agent (arxiv.org/abs/2608.25593) - a model whose *output* is an agent harness, formalizing the harness as a composable artifact under a fixed four-module protocol (memory, planning, action protocol, tool orchestration) and synthesizing one on the fly for any off-the-shelf agentic LLM. It repairs harnesses mid-execution and self-evolves by distilling performance signals from an archive of prior configurations. Reported gains: DeepSeek-V4-Flash passes GPT-5.6 on DeepSearchQA (+9.1) and OdysseyBench (+4.3), GLM-5.2 up to +20.2, with generated harnesses competitive against OpenCode and Claude Code. Directly relevant if you maintain a hand-built harness.
+
+- **2026-08-27** | [0xSero](https://x.com/0xsero/status/2092927775208264181) | research, dev-practices, skills-mcp
+  0xSero shares a free digital copy of 'Inference Engineering' by Philip Kiely (via scribd.com) - a book on optimizing the deployment and runtime performance of generative AI models. His suggested use is agent-mediated: hand it to your agents, have them build skills from it and explain the material back to you, noting you can experiment on almost any hardware. Worth noting the copy is redistributed rather than published free by the author, so provenance is unclear.
+
+- **2026-08-27** | [Femke Plantinga](https://x.com/femke_plantinga/status/2092918452423983363) | agent-design, skills-mcp, industry, dev-practices, questionable
+  A comparative teardown of 9+ 'company brain' / organizational-memory systems - GBrain, mem0, Letta, Zep/Graphiti, Sylph, DIY Claude Code + git, Pletor, Gorgias Cortex and Slite Agent - argued to share four functions: signal intake, remembering, dreaming/pruning, and speaking/searching. Useful as a landscape map of the agent-memory vein, and the recurring pattern is notable: most store markdown in git and gate writes behind human review or PRs (Gorgias runs 12,000 markdown nodes with nightly wrong-answer PRs). Published by Slite as lead-gen for a gated ebook (slite.com/ebooks/company-brain), so read the framing as vendor-shaped even though the survey itself is substantive.
 
 - **2026-08-25** | [Matt Stockton](https://x.com/mstockton/status/2092076777615102400) | agent-design, prompting, dev-practices
   Commentary on dynamic agent workflows: the strongest use of LLMs is graphs with *uncorrelated* starting context, and the six workflow patterns in the linked post are good examples. Key mechanism — adversarial verification works precisely because it runs in a fresh context window; asking the same agent with the same context to check its own work invites confirmation bias. Argues the critical design question is deciding what context travels along each edge of the graph, and why, because attention stays a delicate resource. Flagged by Jeremy for Maro.

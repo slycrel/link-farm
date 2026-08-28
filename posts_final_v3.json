@@ -1,5 +1,113 @@
 [
   {
+    "date": "2026-08-28",
+    "author": "marfin",
+    "handle": "@marfinxx",
+    "subject": "Post by marfin on X",
+    "url": "https://x.com/marfinxx/status/2093106368957776231",
+    "summary": "marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dense/sparse vector indexes and graph topology into a single address space instead of stitching together separate vector and graph databases. Claims 92.21% peak accuracy on LoCoMo/LongMemEval, 5.4x search speedup (P99 94.8ms vs 777.1ms), 20% prompt-token reduction and +7.2% on multi-hop queries, with denoising via Median Absolute Deviation and temporal-contradiction arbitration that avoids LLM inference cost. Framed as 'persistent agent memory is an engineering problem, not a context window problem'; the numbers are quoted secondhand from a hype-styled thread rather than verified against the paper, and no paper link is given in the post.",
+    "topics": [
+      "agent-design",
+      "research",
+      "dev-practices",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "11.1K",
+    "notes": "",
+    "enriched": true,
+    "content": "This Microsoft paper is f*cking wonderful\n\nMicrosoft researchers just proved that Frankenstein multi-database setups are killing AI agent memory\n\nWhy current agent memory architectures fail:\n-> Vector databases lack temporal order and multi-hop relational topology\n-> Graph databases introduce massive cross-database serialization I/O latency\n-> Traditional RAG pipelines flood LLM context windows with outdated conflicting evidence\n\nMicrosoft solved this by introducing Mandol, an in-memory agglomerative engine:\n\n01. Hierarchical Semantic Graphs (Unified Representation)\nAgglomerates raw interactions into episodic event chains, entity graphs, and preference trajectories with traceable back-links to source evidence\n\n02. SemanticMap & SemanticGraph (Native Storage Fusion)\nFuses key-value pairs, dense/sparse vector indexes, and graph topology within a single address space, eliminating external database roundtrips\n\n03. Quantitative Denoising & Zero-LLM Arbitration (Smart Retrieval)\nFilters noise via Median Absolute Deviation and resolves temporal contradictions across sources without burning expensive LLM inference tokens\n\nOperational telemetry across LoCoMo and LongMemEval under 10 QPS load:\n\n92.21% SOTA accuracy peak -> 5.4x search speedup (P99: 94.8ms vs 777.1ms) -> 20% prompt token reduction\n\nHypothesis Verification & Practical Validation:\nMicrosoft hypothesized that unifying memory representation and replacing similarity search with quantitative in-memory arbitration eliminates cross-session context drift. Practical validation confirmed the findings: Mandol drove a +7.2% accuracy leap on complex multi-hop queries while cutting tail latency by 8.2x\n\nPersistent agent memory is an engineering problem, not a context window problem. The leverage comes from native in-memory fusion, deterministic graph traversal, and mathematical conflict resolution\n\nRead the complete breakdown in the article below\n\n[Quoted: marfin @marfinxx, Aug 14, 2026 - X Article \"Autonomous Agent...\"]\n...ction encounters the exact same silent wall. You open a new chat session with Claude Fable 5, GPT-5.6, or Gemini 3.7 Flash, and you are forced to re-explain your...",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-28",
+    "author": "elvis",
+    "handle": "@omarsar0",
+    "subject": "Post by elvis on X",
+    "url": "https://x.com/omarsar0/status/2093056965568332236",
+    "summary": "elvis (DAIR.AI) flags JIT-Agent (arxiv.org/abs/2608.25593) - a model whose *output* is an agent harness, formalizing the harness as a composable artifact under a fixed four-module protocol (memory, planning, action protocol, tool orchestration) and synthesizing one on the fly for any off-the-shelf agentic LLM. It repairs harnesses mid-execution and self-evolves by distilling performance signals from an archive of prior configurations. Reported gains: DeepSeek-V4-Flash passes GPT-5.6 on DeepSearchQA (+9.1) and OdysseyBench (+4.3), GLM-5.2 up to +20.2, with generated harnesses competitive against OpenCode and Claude Code. Directly relevant if you maintain a hand-built harness.",
+    "topics": [
+      "agent-design",
+      "research",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "22.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "If you maintain a hand-built agent harness, this one is worth your time.\n\n(bookmark it)\n\nI feel like everyone is sleeping on the idea of dynamically generating agent harnesses on the fly.\n\nAs you aim to own your harness, this is a topic more devs will lean into. Here is a great report discussing this topic.\n\nJIT-Agent is a model whose output is an agent harness.\n\nIt formalizes the harness as a composable artifact under a fixed four-module protocol covering memory, planning, action protocol, and tool orchestration, then synthesizes one on the fly for any off-the-shelf agentic LLM.\n\nIt also repairs harnesses mid-execution and self-evolves by distilling performance signals from an expanding archive of prior configurations.\n\nWith JIT-Agent attached, DeepSeek-V4-Flash surpasses GPT-5.6 on DeepSearchQA (+9.1) and OdysseyBench (+4.3). GLM-5.2 gains up to +20.2 points.\n\nThe generated harnesses are also performance-competitive with mature runtimes like OpenCode and Claude Code.\n\nPaper: arxiv.org/abs/2608.25593\nChat with Paper: academy.dair.ai/papers/jit-agent-a-model-that-writes-your-agent-harness-2608.25593\n\nJIT-Agent paper on arXiv\n\nChat with Paper - DAIR.AI Academy",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-27",
+    "author": "0xSero",
+    "handle": "@0xsero",
+    "subject": "Post by 0xSero on X",
+    "url": "https://x.com/0xsero/status/2092927775208264181",
+    "summary": "0xSero shares a free digital copy of 'Inference Engineering' by Philip Kiely (via scribd.com) - a book on optimizing the deployment and runtime performance of generative AI models. His suggested use is agent-mediated: hand it to your agents, have them build skills from it and explain the material back to you, noting you can experiment on almost any hardware. Worth noting the copy is redistributed rather than published free by the author, so provenance is unclear.",
+    "topics": [
+      "research",
+      "dev-practices",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "87.1K",
+    "notes": "",
+    "enriched": true,
+    "content": "Free digital copy.\n\nDownload it, give it to your agents.\nHave them make skills and teach you what this means.\n\nYou can experiment on any hardware really, so level yourself up.\n\n[Link card] scribd.com - Inference Engineering\nInference Engineering by Philip Kiely explores the emerging field of inference engineering, which focuses on optimizing the deployment and performance of generative AI models.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-08-27",
+    "author": "Femke Plantinga",
+    "handle": "@femke_plantinga",
+    "subject": "Post by Femke Plantinga on X",
+    "url": "https://x.com/femke_plantinga/status/2092918452423983363",
+    "summary": "A comparative teardown of 9+ 'company brain' / organizational-memory systems - GBrain, mem0, Letta, Zep/Graphiti, Sylph, DIY Claude Code + git, Pletor, Gorgias Cortex and Slite Agent - argued to share four functions: signal intake, remembering, dreaming/pruning, and speaking/searching. Useful as a landscape map of the agent-memory vein, and the recurring pattern is notable: most store markdown in git and gate writes behind human review or PRs (Gorgias runs 12,000 markdown nodes with nightly wrong-answer PRs). Published by Slite as lead-gen for a gated ebook (slite.com/ebooks/company-brain), so read the framing as vendor-shaped even though the survey itself is substantive.",
+    "topics": [
+      "agent-design",
+      "skills-mcp",
+      "industry",
+      "dev-practices",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "120K",
+    "notes": "",
+    "enriched": true,
+    "content": "Everyone's suddenly building company brains.\n\nNobody agrees on what's inside one.\n\nSo we opened up 9+ company brains to see how they're actually built.\n\nEvery single one does the same four things: getting signals, remembering, dreaming & pruning, speaking & searching.\n\n1. GBrain - Garry Tan's open-source personal brain. Your email and calendar flow into a git repo, and a nightly job re-links everything and flags what's gone stale.\n\n2. mem0 - A memory library you call from your own code. It only stores what you explicitly tell it to, and ranks fresh facts above idle ones at search time.\n\n3. Letta - For building agents that remember across sessions. The agent decides what's worth keeping, and a second agent tidies up its memory in the background.\n\n4. Zep / Graphiti - A knowledge graph with a clock in it. When a fact changes, the old one gets an end date instead of being overwritten, so you can still ask what was true last March.\n\n5. Sylph - A content brain that lives entirely in a git repo. Agents write drafts, humans publish, and afterwards the agent reads your edits to learn what it got wrong.\n\n6. DIY (Claude Code + git) - What most engineering teams actually do. Markdown in the repo, grep instead of search, and pull requests as the only thing keeping it honest.\n\n7. Pletor - A brand brain for marketing teams. Campaigns, assets and performance data in one tree, and the brand rules only move when a human signs off.\n\n8. Gorgias Cortex - Built in-house by an eight-person AI team. 12,000 markdown nodes in GitHub, and every night the questions it got wrong become PRs that fix it.\n\n9. Slite Agent - For teams whose knowledge lives in docs and across sources. It watches ~20 connected tools (Slack, Drive, GitHub, Jira, etc.) for what's gone stale and sends the diff to whoever owns the page. Nothing changes without human approval.\n\nWe just launched an interactive ebook with architecture notes from real 149 teams of builders and users, interview insights, and the complete research.\n\nThe ebook is free, get it here: slite.com/ebooks/company-brain\n\nWhich brain would you pick?\n\nSlite - Company Brain ebook (gated, tracking params stripped)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-08-25",
     "author": "Matt Stockton",
     "handle": "@mstockton",
