@@ -1,12 +1,12 @@
 # AI Links Collection
-**Total Posts**: 840  
-**Date Range**: 2024-06-11 – 2026-08-28  
-**Enriched**: 839/840 (99%)
+**Total Posts**: 841  
+**Date Range**: 2024-06-11 – 2026-08-30  
+**Enriched**: 840/841 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-08-28T18:19:52Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-08-31T15:31:46Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-08-25** — [Igor bedesqui](https://x.com/bedesqui/status/2092036341630394449) — *now • Dev Practices • 101.4K views • v1 enriched*  
@@ -17,36 +17,36 @@
   Anthropic announced general availability of enterprise-managed auth for MCP connectors: Claude Team and Enterprise admins centralize authorization through their own identity provider, and users get tools and data connected automatically with no individual OAuth step. Removes the per-user connector-consent friction that blocks org-wide MCP rollouts. Flagged by Jeremy for Tanner.
 - **2026-08-25** — [Matt Pocock](https://x.com/mattpocockuk/status/2091897608293753169) — *now • Skills & MCP • 34.9K views • v1 enriched*  
   Matt Pocock moved his /retro skill to in-progress in github.com/mattpocock/skills — run it after a session, or across a batch of sessions, to have the agent diagnose and repair its own mistakes for next time. It targets four axes: agent navigation (better exploration), CODING_STANDARDS (better review), tool economy, and information access. A concrete instance of the self-improving-skill pattern, and a companion to his /implement-spec and /wayfinder skills already in the collection.
-- **2026-08-21** — [Matt Pocock](https://x.com/mattpocockuk/status/2090744569960824949) — *now • Skills & MCP • 72.5K views • v1 enriched*  
-  Pocock shares an /implement-spec skill: a multi-agent implementer that takes a spec plus tickets, does codebase research in a subagent, implements all tickets in subagents at maximum concurrency, reviews the final code against the spec, then cleans up all worktrees. Aimed at autonomous execution of large chunks of work with minimal supervision. Source: github.com/mattpocock/skills at skills/in-progress/implement-spec/SKILL.md
+- **2026-08-30** — [DAIR.AI](https://x.com/dair_ai/status/2093324233158045788) — *near-term • Research • 489.7K views • v1 enriched*  
+  Google's WikiSkill paper (arxiv.org/abs/2608.27454) separates three things that agent skill-evolution systems usually collapse together: raw execution traces, a persistent wiki of consolidated knowledge, and the executable skills themselves — each skill update builds on the wiki rather than on a scattered optimization history. Ablations attribute much of the gain to the wiki itself, and two results stand out: smaller models with evolved skills beat substantially larger models without them, and skills transfer across model families, sometimes outperforming self-evolved ones. Directly relevant to anyone maintaining a skill library for agents; DAIR.AI also hosts a 'Chat with Paper' companion at academy.dair.ai.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **local model serving on consumer GPUs — quantization & throughput** (336 posts, +34 this week)  
+- **local model serving on consumer GPUs — quantization & throughput** (337 posts, +28 this week)  
   Running capable open models on single-box prosumer hardware: quantization formats (NVFP4/AWQ/GPTQ/GGUF/MLX), KV-cache compression, serving stacks (SGLang, DSpark), and the tok/s benchmarking that goes with it. Renamed from auto-named cluster on 2026-08-21.
+    - 2026-08-30 — [DAIR.AI](https://x.com/dair_ai/status/2093324233158045788): Google's WikiSkill paper (arxiv.org/abs/2608.27454) separates three things that agent skill-evolution systems usually collapse together: raw…
     - 2026-08-28 — [marfin](https://x.com/marfinxx/status/2093106368957776231): marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dens…
-    - 2026-08-28 — [elvis](https://x.com/omarsar0/status/2093056965568332236): elvis (DAIR.AI) flags JIT-Agent (arxiv.org/abs/2608.25593) - a model whose *output* is an agent harness, formalizing the harness as a compos…
 
-- **persistent always-on agents — bot mode & agent desktops** (324 posts, +33 this week)  
+- **persistent always-on agents — bot mode & agent desktops** (325 posts, +26 this week)  
   Agents that outlive a chat session: persistent bot profiles with their own job and memory, remote/self-hosted execution that survives closing the laptop, and the desktop workspaces around them (Hermes/Nous, Grok bot mode, OpenClaw). Renamed from auto-named cluster on 2026-08-21.
+    - 2026-08-30 — [DAIR.AI](https://x.com/dair_ai/status/2093324233158045788): Google's WikiSkill paper (arxiv.org/abs/2608.27454) separates three things that agent skill-evolution systems usually collapse together: raw…
     - 2026-08-28 — [marfin](https://x.com/marfinxx/status/2093106368957776231): marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dens…
-    - 2026-08-28 — [elvis](https://x.com/omarsar0/status/2093056965568332236): elvis (DAIR.AI) flags JIT-Agent (arxiv.org/abs/2608.25593) - a model whose *output* is an agent harness, formalizing the harness as a compos…
 
-- **elite-skill masterclass content** (332 posts, +31 this week)  
-  Free lectures and 'masterclass' reposts promising an elite skill — quant trading maths (Jane Street, Jim Simons, Berkeley), high-stakes persuasion. Aspirational skill-acquisition material, usually hype-packaged, occasionally with a real lecture behind it.
-    - 2026-08-28 — [marfin](https://x.com/marfinxx/status/2093106368957776231): marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dens…
-    - 2026-08-27 — [0xSero](https://x.com/0xsero/status/2092927775208264181): 0xSero shares a free digital copy of 'Inference Engineering' by Philip Kiely (via scribd.com) - a book on optimizing the deployment and runt…
-
-- **agents-as-judges-of-agents — bossman supervisor / self-verification** (123 posts, +31 this week)  
+- **agents-as-judges-of-agents — bossman supervisor / self-verification** (124 posts, +24 this week)  
   Critical supervisor agent judges worker agents rather than doing the work. Boris Cherny on self-verification loops; Viv on bossman supervisor.
+    - 2026-08-30 — [DAIR.AI](https://x.com/dair_ai/status/2093324233158045788): Google's WikiSkill paper (arxiv.org/abs/2608.27454) separates three things that agent skill-evolution systems usually collapse together: raw…
     - 2026-08-28 — [marfin](https://x.com/marfinxx/status/2093106368957776231): marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dens…
-    - 2026-08-27 — [0xSero](https://x.com/0xsero/status/2092927775208264181): 0xSero shares a free digital copy of 'Inference Engineering' by Philip Kiely (via scribd.com) - a book on optimizing the deployment and runt…
 
-- **prediction-market & crypto trading bots** (338 posts, +29 this week)  
+- **prediction-market & crypto trading bots** (339 posts, +23 this week)  
   Polymarket and crypto trading-bot content: sweeper and arbitrage bots, Markov-chain trade models, tick-data neural nets, plus one genuinely useful 72M-trade dataset. Heavily promotional and largely off-topic for AI engineering — kept and labelled rather than dropped.
+    - 2026-08-30 — [DAIR.AI](https://x.com/dair_ai/status/2093324233158045788): Google's WikiSkill paper (arxiv.org/abs/2608.27454) separates three things that agent skill-evolution systems usually collapse together: raw…
     - 2026-08-28 — [marfin](https://x.com/marfinxx/status/2093106368957776231): marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dens…
-    - 2026-08-28 — [elvis](https://x.com/omarsar0/status/2093056965568332236): elvis (DAIR.AI) flags JIT-Agent (arxiv.org/abs/2608.25593) - a model whose *output* is an agent harness, formalizing the harness as a compos…
+
+- **self-improving skills (autoresearch pattern)** (334 posts, +23 this week)  
+  Skills and harnesses that improve themselves or each other, mostly downstream of Karpathy's autoresearch method — meta-skills that optimise other skills, /autobrowse, recursive self-improvement loops, and agents that accumulate site knowledge instead of rediscovering it.
+    - 2026-08-30 — [DAIR.AI](https://x.com/dair_ai/status/2093324233158045788): Google's WikiSkill paper (arxiv.org/abs/2608.27454) separates three things that agent skill-evolution systems usually collapse together: raw…
+    - 2026-08-28 — [marfin](https://x.com/marfinxx/status/2093106368957776231): marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dens…
 
 
 ### Revisit from last month
@@ -59,23 +59,24 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 492 | 58.6% |
+| agent-design | 493 | 58.6% |
 | claude-code | 191 | 22.7% |
 | dev-practices | 358 | 42.6% |
-| skills-mcp | 192 | 22.9% |
+| skills-mcp | 193 | 22.9% |
 | prompting | 125 | 14.9% |
-| research | 214 | 25.5% |
+| research | 215 | 25.6% |
 | industry | 122 | 14.5% |
 | management | 131 | 15.6% |
 | adjacent | 38 | 4.5% |
 | solo-operator | 8 | 1.0% |
-| questionable | 124 | 14.8% |
+| questionable | 124 | 14.7% |
 | general | 100 | 11.9% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-08-30 | DAIR.AI | research | Google's WikiSkill paper (arxiv.org/abs/2608.27454) separates three th... |
 | 2026-08-28 | marfin | agent-design | marfin summarizes a Microsoft paper introducing Mandol, an in-memory a... |
 | 2026-08-28 | elvis | agent-design | elvis (DAIR.AI) flags JIT-Agent (arxiv.org/abs/2608.25593) - a model w... |
 | 2026-08-27 | 0xSero | research | 0xSero shares a free digital copy of 'Inference Engineering' by Philip... |
@@ -125,12 +126,13 @@
 | 2026-08-21 | BasedBiohacker | biohacking | Nootropics thread arguing modafinil plus bromantane is a complementary... |
 | 2026-08-14 | Brian Roemmele | research | Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and... |
 | 2026-08-14 | Teknium | agent-design | Nous Research shipped Bot Mode for Hermes Agent (github.com/NousResear... |
-| 2026-08-14 | Viv | agent-design | Commentary on dexhorthy's /show-me proposal — compact visual represent... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (492)
+### Agent Design (493)
+
+- [DAIR.AI](https://x.com/dair_ai/status/2093324233158045788) — 2026-08-30: Google's WikiSkill paper (arxiv.org/abs/2608.27454) separates three things that agent skill-evolution systems usually collapse together: raw execution traces, a persistent wiki of consolidated knowledge, and the executable skills themselves — each skill update builds on the wiki rather than on a scattered optimization history. Ablations attribute much of the gain to the wiki itself, and two results stand out: smaller models with evolved skills beat substantially larger models without them, and skills transfer across model families, sometimes outperforming self-evolved ones. Directly relevant to anyone maintaining a skill library for agents; DAIR.AI also hosts a 'Chat with Paper' companion at academy.dair.ai.
 
 - [marfin](https://x.com/marfinxx/status/2093106368957776231) — 2026-08-28: marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dense/sparse vector indexes and graph topology into a single address space instead of stitching together separate vector and graph databases. Claims 92.21% peak accuracy on LoCoMo/LongMemEval, 5.4x search speedup (P99 94.8ms vs 777.1ms), 20% prompt-token reduction and +7.2% on multi-hop queries, with denoising via Median Absolute Deviation and temporal-contradiction arbitration that avoids LLM inference cost. Framed as 'persistent agent memory is an engineering problem, not a context window problem'; the numbers are quoted secondhand from a hype-styled thread rather than verified against the paper, and no paper link is given in the post.
 
@@ -2218,7 +2220,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Skills & MCP (192)
+### Skills & MCP (193)
+
+- [DAIR.AI](https://x.com/dair_ai/status/2093324233158045788) — 2026-08-30: Google's WikiSkill paper (arxiv.org/abs/2608.27454) separates three things that agent skill-evolution systems usually collapse together: raw execution traces, a persistent wiki of consolidated knowledge, and the executable skills themselves — each skill update builds on the wiki rather than on a scattered optimization history. Ablations attribute much of the gain to the wiki itself, and two results stand out: smaller models with evolved skills beat substantially larger models without them, and skills transfer across model families, sometimes outperforming self-evolved ones. Directly relevant to anyone maintaining a skill library for agents; DAIR.AI also hosts a 'Chat with Paper' companion at academy.dair.ai.
 
 - [0xSero](https://x.com/0xsero/status/2092927775208264181) — 2026-08-27: 0xSero shares a free digital copy of 'Inference Engineering' by Philip Kiely (via scribd.com) - a book on optimizing the deployment and runtime performance of generative AI models. His suggested use is agent-mediated: hand it to your agents, have them build skills from it and explain the material back to you, noting you can experiment on almost any hardware. Worth noting the copy is redistributed rather than published free by the author, so provenance is unclear.
 
@@ -2856,7 +2860,9 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-### Research (214)
+### Research (215)
+
+- [DAIR.AI](https://x.com/dair_ai/status/2093324233158045788) — 2026-08-30: Google's WikiSkill paper (arxiv.org/abs/2608.27454) separates three things that agent skill-evolution systems usually collapse together: raw execution traces, a persistent wiki of consolidated knowledge, and the executable skills themselves — each skill update builds on the wiki rather than on a scattered optimization history. Ablations attribute much of the gain to the wiki itself, and two results stand out: smaller models with evolved skills beat substantially larger models without them, and skills transfer across model families, sometimes outperforming self-evolved ones. Directly relevant to anyone maintaining a skill library for agents; DAIR.AI also hosts a 'Chat with Paper' companion at academy.dair.ai.
 
 - [marfin](https://x.com/marfinxx/status/2093106368957776231) — 2026-08-28: marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dense/sparse vector indexes and graph topology into a single address space instead of stitching together separate vector and graph databases. Claims 92.21% peak accuracy on LoCoMo/LongMemEval, 5.4x search speedup (P99 94.8ms vs 777.1ms), 20% prompt-token reduction and +7.2% on multi-hop queries, with denoising via Median Absolute Deviation and temporal-contradiction arbitration that avoids LLM inference cost. Framed as 'persistent agent memory is an engineering problem, not a context window problem'; the numbers are quoted secondhand from a hype-styled thread rather than verified against the paper, and no paper link is given in the post.
 
@@ -4350,6 +4356,9 @@
 ## Full Chronological List
 
 ### Aug 2026
+
+- **2026-08-30** | [DAIR.AI](https://x.com/dair_ai/status/2093324233158045788) | research, agent-design, skills-mcp
+  Google's WikiSkill paper (arxiv.org/abs/2608.27454) separates three things that agent skill-evolution systems usually collapse together: raw execution traces, a persistent wiki of consolidated knowledge, and the executable skills themselves — each skill update builds on the wiki rather than on a scattered optimization history. Ablations attribute much of the gain to the wiki itself, and two results stand out: smaller models with evolved skills beat substantially larger models without them, and skills transfer across model families, sometimes outperforming self-evolved ones. Directly relevant to anyone maintaining a skill library for agents; DAIR.AI also hosts a 'Chat with Paper' companion at academy.dair.ai.
 
 - **2026-08-28** | [marfin](https://x.com/marfinxx/status/2093106368957776231) | agent-design, research, dev-practices, questionable
   marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dense/sparse vector indexes and graph topology into a single address space instead of stitching together separate vector and graph databases. Claims 92.21% peak accuracy on LoCoMo/LongMemEval, 5.4x search speedup (P99 94.8ms vs 777.1ms), 20% prompt-token reduction and +7.2% on multi-hop queries, with denoising via Median Absolute Deviation and temporal-contradiction arbitration that avoids LLM inference cost. Framed as 'persistent agent memory is an engineering problem, not a context window problem'; the numbers are quoted secondhand from a hype-styled thread rather than verified against the paper, and no paper link is given in the post.

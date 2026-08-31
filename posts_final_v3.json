@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-08-30",
+    "author": "DAIR.AI",
+    "handle": "@dair_ai",
+    "subject": "Post by DAIR.AI on X",
+    "url": "https://x.com/dair_ai/status/2093324233158045788",
+    "summary": "Google's WikiSkill paper (arxiv.org/abs/2608.27454) separates three things that agent skill-evolution systems usually collapse together: raw execution traces, a persistent wiki of consolidated knowledge, and the executable skills themselves — each skill update builds on the wiki rather than on a scattered optimization history. Ablations attribute much of the gain to the wiki itself, and two results stand out: smaller models with evolved skills beat substantially larger models without them, and skills transfer across model families, sometimes outperforming self-evolved ones. Directly relevant to anyone maintaining a skill library for agents; DAIR.AI also hosts a 'Chat with Paper' companion at academy.dair.ai.",
+    "topics": [
+      "research",
+      "agent-design",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "489.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "Banger paper from Google.\n\nIf you maintain a skill library for your agents, you might want to check this out.\n\n(bookmark it)\n\nThis work separates three things that skill-evolution systems usually collapse into one. Raw execution traces, a persistent wiki of accumulated knowledge, and the executable skills themselves.\n\nExperience gets consolidated into the wiki, and every later skill update builds on that wiki instead of on a scattered optimization history.\n\nAblations confirm the wiki is what carries a lot of the gain. Two results stand out in particular. Smaller models with evolved skills beat substantially larger models without them. And skills evolved by one model transfer across families, where skills evolved elsewhere sometimes beat self-evolved ones.\n\nPaper: arxiv.org/abs/2608.27454\nChat with Paper: academy.dair.ai/papers/wikiskill-compiles-agent-experience-into-a-persistent-wiki-2608.27454\n\nWikiSkill paper (arXiv 2608.27454) — Google research on compiling agent experience into a persistent wiki that skill evolution builds on.\n\nDAIR.AI Academy 'Chat with Paper' companion page for WikiSkill.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-08-28",
     "author": "marfin",
     "handle": "@marfinxx",
