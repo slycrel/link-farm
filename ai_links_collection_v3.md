@@ -1,14 +1,16 @@
 # AI Links Collection
-**Total Posts**: 841  
-**Date Range**: 2024-06-11 – 2026-08-30  
-**Enriched**: 840/841 (99%)
+**Total Posts**: 842  
+**Date Range**: 2024-06-11 – 2026-08-31  
+**Enriched**: 841/842 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-08-31T15:31:46Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-09-01T19:06:52Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
+- **2026-08-31** — [lauren](https://x.com/poteto/status/2094457600259842065) — *now • Agent Design • 645.5K views • v1 enriched*  
+  Part 1 of Cursor engineer lauren's (@poteto) "Complete Guide to pstack", her personal skill stack: the argument is that an agent verification skill is critical infrastructure rather than "just" a skill, and the way to build one is to give agents a small purpose-built CLI that drives and debugs your app (Chrome DevTools Protocol for Electron/web, the simulator for iOS) instead of markdown instructions — pstack's "Build the Lever" principle, on the reasoning that a CLI command costs far fewer tokens than a throwaway script and is reproducible and testable. Pairs it with a "Feature Map": a markdown catalog under references/features/ of every feature and how to reach it from a user's POV, framed as "materialized memory" (with the codebase itself as the real memory), plus /maintain-verification-skill run daily, /swarm to fan verification out across cloud agents, and a recommendation of Cursor cloud agents over git worktrees for parallelism. Reference implementation at github.com/poteto/verification-skill-example and the meta-skill at github.com/cursor/plugins (pstack/skills/create-verification-skill); worth reading with the vendor angle in mind — the author works at Cursor, the piece doubles as a pitch for Cursor cloud agents and her pstack plugin, and the headline "2,000 PRs a month" and "100-1000x your whole team's output" figures are self-reported rather than measured.
 - **2026-08-25** — [Igor bedesqui](https://x.com/bedesqui/status/2092036341630394449) — *now • Dev Practices • 101.4K views • v1 enriched*  
   Shares what the author calls his 'magnum opus of unslopping PRs' (gist.github.com/bdsqqq/1e7e6f454271d5f856a1176d0e800d89) — a review-standards file he pastes repeatedly into an agent's context until the agent can demonstrate its change couldn't have broken anything. A concrete, copyable artifact for agent-driven code review. Flagged by Jeremy as 'reviews'.
 - **2026-08-25** — [rvaniaaa](https://x.com/rvaniaaaa/status/2091991026139361633) — *now • Agent Design • 52.5K views • v1 enriched*  
@@ -17,36 +19,34 @@
   Anthropic announced general availability of enterprise-managed auth for MCP connectors: Claude Team and Enterprise admins centralize authorization through their own identity provider, and users get tools and data connected automatically with no individual OAuth step. Removes the per-user connector-consent friction that blocks org-wide MCP rollouts. Flagged by Jeremy for Tanner.
 - **2026-08-25** — [Matt Pocock](https://x.com/mattpocockuk/status/2091897608293753169) — *now • Skills & MCP • 34.9K views • v1 enriched*  
   Matt Pocock moved his /retro skill to in-progress in github.com/mattpocock/skills — run it after a session, or across a batch of sessions, to have the agent diagnose and repair its own mistakes for next time. It targets four axes: agent navigation (better exploration), CODING_STANDARDS (better review), tool economy, and information access. A concrete instance of the self-improving-skill pattern, and a companion to his /implement-spec and /wayfinder skills already in the collection.
-- **2026-08-30** — [DAIR.AI](https://x.com/dair_ai/status/2093324233158045788) — *near-term • Research • 489.7K views • v1 enriched*  
-  Google's WikiSkill paper (arxiv.org/abs/2608.27454) separates three things that agent skill-evolution systems usually collapse together: raw execution traces, a persistent wiki of consolidated knowledge, and the executable skills themselves — each skill update builds on the wiki rather than on a scattered optimization history. Ablations attribute much of the gain to the wiki itself, and two results stand out: smaller models with evolved skills beat substantially larger models without them, and skills transfer across model families, sometimes outperforming self-evolved ones. Directly relevant to anyone maintaining a skill library for agents; DAIR.AI also hosts a 'Chat with Paper' companion at academy.dair.ai.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **local model serving on consumer GPUs — quantization & throughput** (337 posts, +28 this week)  
+- **local model serving on consumer GPUs — quantization & throughput** (338 posts, +29 this week)  
   Running capable open models on single-box prosumer hardware: quantization formats (NVFP4/AWQ/GPTQ/GGUF/MLX), KV-cache compression, serving stacks (SGLang, DSpark), and the tok/s benchmarking that goes with it. Renamed from auto-named cluster on 2026-08-21.
+    - 2026-08-31 — [lauren](https://x.com/poteto/status/2094457600259842065): Part 1 of Cursor engineer lauren's (@poteto) "Complete Guide to pstack", her personal skill stack: the argument is that an agent verificatio…
     - 2026-08-30 — [DAIR.AI](https://x.com/dair_ai/status/2093324233158045788): Google's WikiSkill paper (arxiv.org/abs/2608.27454) separates three things that agent skill-evolution systems usually collapse together: raw…
-    - 2026-08-28 — [marfin](https://x.com/marfinxx/status/2093106368957776231): marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dens…
 
-- **persistent always-on agents — bot mode & agent desktops** (325 posts, +26 this week)  
+- **persistent always-on agents — bot mode & agent desktops** (326 posts, +27 this week)  
   Agents that outlive a chat session: persistent bot profiles with their own job and memory, remote/self-hosted execution that survives closing the laptop, and the desktop workspaces around them (Hermes/Nous, Grok bot mode, OpenClaw). Renamed from auto-named cluster on 2026-08-21.
+    - 2026-08-31 — [lauren](https://x.com/poteto/status/2094457600259842065): Part 1 of Cursor engineer lauren's (@poteto) "Complete Guide to pstack", her personal skill stack: the argument is that an agent verificatio…
     - 2026-08-30 — [DAIR.AI](https://x.com/dair_ai/status/2093324233158045788): Google's WikiSkill paper (arxiv.org/abs/2608.27454) separates three things that agent skill-evolution systems usually collapse together: raw…
-    - 2026-08-28 — [marfin](https://x.com/marfinxx/status/2093106368957776231): marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dens…
 
-- **agents-as-judges-of-agents — bossman supervisor / self-verification** (124 posts, +24 this week)  
+- **agents-as-judges-of-agents — bossman supervisor / self-verification** (125 posts, +25 this week)  
   Critical supervisor agent judges worker agents rather than doing the work. Boris Cherny on self-verification loops; Viv on bossman supervisor.
+    - 2026-08-31 — [lauren](https://x.com/poteto/status/2094457600259842065): Part 1 of Cursor engineer lauren's (@poteto) "Complete Guide to pstack", her personal skill stack: the argument is that an agent verificatio…
     - 2026-08-30 — [DAIR.AI](https://x.com/dair_ai/status/2093324233158045788): Google's WikiSkill paper (arxiv.org/abs/2608.27454) separates three things that agent skill-evolution systems usually collapse together: raw…
-    - 2026-08-28 — [marfin](https://x.com/marfinxx/status/2093106368957776231): marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dens…
 
-- **prediction-market & crypto trading bots** (339 posts, +23 this week)  
+- **prediction-market & crypto trading bots** (340 posts, +24 this week)  
   Polymarket and crypto trading-bot content: sweeper and arbitrage bots, Markov-chain trade models, tick-data neural nets, plus one genuinely useful 72M-trade dataset. Heavily promotional and largely off-topic for AI engineering — kept and labelled rather than dropped.
+    - 2026-08-31 — [lauren](https://x.com/poteto/status/2094457600259842065): Part 1 of Cursor engineer lauren's (@poteto) "Complete Guide to pstack", her personal skill stack: the argument is that an agent verificatio…
     - 2026-08-30 — [DAIR.AI](https://x.com/dair_ai/status/2093324233158045788): Google's WikiSkill paper (arxiv.org/abs/2608.27454) separates three things that agent skill-evolution systems usually collapse together: raw…
-    - 2026-08-28 — [marfin](https://x.com/marfinxx/status/2093106368957776231): marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dens…
 
-- **self-improving skills (autoresearch pattern)** (334 posts, +23 this week)  
+- **self-improving skills (autoresearch pattern)** (335 posts, +24 this week)  
   Skills and harnesses that improve themselves or each other, mostly downstream of Karpathy's autoresearch method — meta-skills that optimise other skills, /autobrowse, recursive self-improvement loops, and agents that accumulate site knowledge instead of rediscovering it.
+    - 2026-08-31 — [lauren](https://x.com/poteto/status/2094457600259842065): Part 1 of Cursor engineer lauren's (@poteto) "Complete Guide to pstack", her personal skill stack: the argument is that an agent verificatio…
     - 2026-08-30 — [DAIR.AI](https://x.com/dair_ai/status/2093324233158045788): Google's WikiSkill paper (arxiv.org/abs/2608.27454) separates three things that agent skill-evolution systems usually collapse together: raw…
-    - 2026-08-28 — [marfin](https://x.com/marfinxx/status/2093106368957776231): marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dens…
 
 
 ### Revisit from last month
@@ -59,14 +59,14 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 493 | 58.6% |
+| agent-design | 494 | 58.7% |
 | claude-code | 191 | 22.7% |
-| dev-practices | 358 | 42.6% |
-| skills-mcp | 193 | 22.9% |
-| prompting | 125 | 14.9% |
-| research | 215 | 25.6% |
+| dev-practices | 359 | 42.6% |
+| skills-mcp | 194 | 23.0% |
+| prompting | 125 | 14.8% |
+| research | 215 | 25.5% |
 | industry | 122 | 14.5% |
-| management | 131 | 15.6% |
+| management | 132 | 15.7% |
 | adjacent | 38 | 4.5% |
 | solo-operator | 8 | 1.0% |
 | questionable | 124 | 14.7% |
@@ -76,6 +76,7 @@
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-08-31 | lauren | agent-design | Part 1 of Cursor engineer lauren's (@poteto) "Complete Guide to pstack... |
 | 2026-08-30 | DAIR.AI | research | Google's WikiSkill paper (arxiv.org/abs/2608.27454) separates three th... |
 | 2026-08-28 | marfin | agent-design | marfin summarizes a Microsoft paper introducing Mandol, an in-memory a... |
 | 2026-08-28 | elvis | agent-design | elvis (DAIR.AI) flags JIT-Agent (arxiv.org/abs/2608.25593) - a model w... |
@@ -125,12 +126,13 @@
 | 2026-08-21 | James Zou | research | Zou announces 'Physics of Agents,' new work on what happens when many... |
 | 2026-08-21 | BasedBiohacker | biohacking | Nootropics thread arguing modafinil plus bromantane is a complementary... |
 | 2026-08-14 | Brian Roemmele | research | Walkthrough of 'Verbalized Sampling: How to Mitigate Mode Collapse and... |
-| 2026-08-14 | Teknium | agent-design | Nous Research shipped Bot Mode for Hermes Agent (github.com/NousResear... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (493)
+### Agent Design (494)
+
+- [lauren](https://x.com/poteto/status/2094457600259842065) — 2026-08-31: Part 1 of Cursor engineer lauren's (@poteto) "Complete Guide to pstack", her personal skill stack: the argument is that an agent verification skill is critical infrastructure rather than "just" a skill, and the way to build one is to give agents a small purpose-built CLI that drives and debugs your app (Chrome DevTools Protocol for Electron/web, the simulator for iOS) instead of markdown instructions — pstack's "Build the Lever" principle, on the reasoning that a CLI command costs far fewer tokens than a throwaway script and is reproducible and testable. Pairs it with a "Feature Map": a markdown catalog under references/features/ of every feature and how to reach it from a user's POV, framed as "materialized memory" (with the codebase itself as the real memory), plus /maintain-verification-skill run daily, /swarm to fan verification out across cloud agents, and a recommendation of Cursor cloud agents over git worktrees for parallelism. Reference implementation at github.com/poteto/verification-skill-example and the meta-skill at github.com/cursor/plugins (pstack/skills/create-verification-skill); worth reading with the vendor angle in mind — the author works at Cursor, the piece doubles as a pitch for Cursor cloud agents and her pstack plugin, and the headline "2,000 PRs a month" and "100-1000x your whole team's output" figures are self-reported rather than measured.
 
 - [DAIR.AI](https://x.com/dair_ai/status/2093324233158045788) — 2026-08-30: Google's WikiSkill paper (arxiv.org/abs/2608.27454) separates three things that agent skill-evolution systems usually collapse together: raw execution traces, a persistent wiki of consolidated knowledge, and the executable skills themselves — each skill update builds on the wiki rather than on a scattered optimization history. Ablations attribute much of the gain to the wiki itself, and two results stand out: smaller models with evolved skills beat substantially larger models without them, and skills transfer across model families, sometimes outperforming self-evolved ones. Directly relevant to anyone maintaining a skill library for agents; DAIR.AI also hosts a 'Chat with Paper' companion at academy.dair.ai.
 
@@ -1502,7 +1504,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (358)
+### Dev Practices (359)
+
+- [lauren](https://x.com/poteto/status/2094457600259842065) — 2026-08-31: Part 1 of Cursor engineer lauren's (@poteto) "Complete Guide to pstack", her personal skill stack: the argument is that an agent verification skill is critical infrastructure rather than "just" a skill, and the way to build one is to give agents a small purpose-built CLI that drives and debugs your app (Chrome DevTools Protocol for Electron/web, the simulator for iOS) instead of markdown instructions — pstack's "Build the Lever" principle, on the reasoning that a CLI command costs far fewer tokens than a throwaway script and is reproducible and testable. Pairs it with a "Feature Map": a markdown catalog under references/features/ of every feature and how to reach it from a user's POV, framed as "materialized memory" (with the codebase itself as the real memory), plus /maintain-verification-skill run daily, /swarm to fan verification out across cloud agents, and a recommendation of Cursor cloud agents over git worktrees for parallelism. Reference implementation at github.com/poteto/verification-skill-example and the meta-skill at github.com/cursor/plugins (pstack/skills/create-verification-skill); worth reading with the vendor angle in mind — the author works at Cursor, the piece doubles as a pitch for Cursor cloud agents and her pstack plugin, and the headline "2,000 PRs a month" and "100-1000x your whole team's output" figures are self-reported rather than measured.
 
 - [marfin](https://x.com/marfinxx/status/2093106368957776231) — 2026-08-28: marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dense/sparse vector indexes and graph topology into a single address space instead of stitching together separate vector and graph databases. Claims 92.21% peak accuracy on LoCoMo/LongMemEval, 5.4x search speedup (P99 94.8ms vs 777.1ms), 20% prompt-token reduction and +7.2% on multi-hop queries, with denoising via Median Absolute Deviation and temporal-contradiction arbitration that avoids LLM inference cost. Framed as 'persistent agent memory is an engineering problem, not a context window problem'; the numbers are quoted secondhand from a hype-styled thread rather than verified against the paper, and no paper link is given in the post.
 
@@ -2220,7 +2224,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Skills & MCP (193)
+### Skills & MCP (194)
+
+- [lauren](https://x.com/poteto/status/2094457600259842065) — 2026-08-31: Part 1 of Cursor engineer lauren's (@poteto) "Complete Guide to pstack", her personal skill stack: the argument is that an agent verification skill is critical infrastructure rather than "just" a skill, and the way to build one is to give agents a small purpose-built CLI that drives and debugs your app (Chrome DevTools Protocol for Electron/web, the simulator for iOS) instead of markdown instructions — pstack's "Build the Lever" principle, on the reasoning that a CLI command costs far fewer tokens than a throwaway script and is reproducible and testable. Pairs it with a "Feature Map": a markdown catalog under references/features/ of every feature and how to reach it from a user's POV, framed as "materialized memory" (with the codebase itself as the real memory), plus /maintain-verification-skill run daily, /swarm to fan verification out across cloud agents, and a recommendation of Cursor cloud agents over git worktrees for parallelism. Reference implementation at github.com/poteto/verification-skill-example and the meta-skill at github.com/cursor/plugins (pstack/skills/create-verification-skill); worth reading with the vendor angle in mind — the author works at Cursor, the piece doubles as a pitch for Cursor cloud agents and her pstack plugin, and the headline "2,000 PRs a month" and "100-1000x your whole team's output" figures are self-reported rather than measured.
 
 - [DAIR.AI](https://x.com/dair_ai/status/2093324233158045788) — 2026-08-30: Google's WikiSkill paper (arxiv.org/abs/2608.27454) separates three things that agent skill-evolution systems usually collapse together: raw execution traces, a persistent wiki of consolidated knowledge, and the executable skills themselves — each skill update builds on the wiki rather than on a scattered optimization history. Ablations attribute much of the gain to the wiki itself, and two results stand out: smaller models with evolved skills beat substantially larger models without them, and skills transfer across model families, sometimes outperforming self-evolved ones. Directly relevant to anyone maintaining a skill library for agents; DAIR.AI also hosts a 'Chat with Paper' companion at academy.dair.ai.
 
@@ -3538,7 +3544,9 @@
 
 - [Santiago](https://x.com/svpino/status/1881336934418755862) — 2025-01-21: Walks through GroundX, an open-source, self-hostable/air-gapped enterprise RAG system. Two services: Ingest (a pretrained vision model that 'understands' documents instead of feeding raw docs to the LLM) and Search (text+vector search with a fine-tuned re-ranker). Santiago's thesis: most teams need better ingestion, not better retrieval; includes a video demo and the free X-Ray inspection tool.
 
-### Management (131)
+### Management (132)
+
+- [lauren](https://x.com/poteto/status/2094457600259842065) — 2026-08-31: Part 1 of Cursor engineer lauren's (@poteto) "Complete Guide to pstack", her personal skill stack: the argument is that an agent verification skill is critical infrastructure rather than "just" a skill, and the way to build one is to give agents a small purpose-built CLI that drives and debugs your app (Chrome DevTools Protocol for Electron/web, the simulator for iOS) instead of markdown instructions — pstack's "Build the Lever" principle, on the reasoning that a CLI command costs far fewer tokens than a throwaway script and is reproducible and testable. Pairs it with a "Feature Map": a markdown catalog under references/features/ of every feature and how to reach it from a user's POV, framed as "materialized memory" (with the codebase itself as the real memory), plus /maintain-verification-skill run daily, /swarm to fan verification out across cloud agents, and a recommendation of Cursor cloud agents over git worktrees for parallelism. Reference implementation at github.com/poteto/verification-skill-example and the meta-skill at github.com/cursor/plugins (pstack/skills/create-verification-skill); worth reading with the vendor angle in mind — the author works at Cursor, the piece doubles as a pitch for Cursor cloud agents and her pstack plugin, and the headline "2,000 PRs a month" and "100-1000x your whole team's output" figures are self-reported rather than measured.
 
 - [Mark Ajzenstadt](https://x.com/mardehaym/status/2091963865718231069) — 2026-08-25: Argues most companies are stuck in the 'Death Valley' between agent POC and production — 99% say they're deploying agents, 9% actually have, while OpenAI enterprise data reportedly puts agentic products at 64% of corporate output tokens. Drawing on 14 production agent systems shipped across healthcare and financial services, names four recurring engineering gaps: no code graph (the agent can't see how the codebase connects, so it invents APIs), no knowledge base (it answers from training data instead of yours), no closed feedback loop (production errors go unlogged, so Monday's mistake repeats Tuesday), and no approval gates (the agent takes irreversible actions). The percentages are the author's and unsourced; the four gaps overlap the long-running-agent patterns in the Bilgin Ibryam post.
 
@@ -4356,6 +4364,9 @@
 ## Full Chronological List
 
 ### Aug 2026
+
+- **2026-08-31** | [lauren](https://x.com/poteto/status/2094457600259842065) | agent-design, dev-practices, skills-mcp, management
+  Part 1 of Cursor engineer lauren's (@poteto) "Complete Guide to pstack", her personal skill stack: the argument is that an agent verification skill is critical infrastructure rather than "just" a skill, and the way to build one is to give agents a small purpose-built CLI that drives and debugs your app (Chrome DevTools Protocol for Electron/web, the simulator for iOS) instead of markdown instructions — pstack's "Build the Lever" principle, on the reasoning that a CLI command costs far fewer tokens than a throwaway script and is reproducible and testable. Pairs it with a "Feature Map": a markdown catalog under references/features/ of every feature and how to reach it from a user's POV, framed as "materialized memory" (with the codebase itself as the real memory), plus /maintain-verification-skill run daily, /swarm to fan verification out across cloud agents, and a recommendation of Cursor cloud agents over git worktrees for parallelism. Reference implementation at github.com/poteto/verification-skill-example and the meta-skill at github.com/cursor/plugins (pstack/skills/create-verification-skill); worth reading with the vendor angle in mind — the author works at Cursor, the piece doubles as a pitch for Cursor cloud agents and her pstack plugin, and the headline "2,000 PRs a month" and "100-1000x your whole team's output" figures are self-reported rather than measured.
 
 - **2026-08-30** | [DAIR.AI](https://x.com/dair_ai/status/2093324233158045788) | research, agent-design, skills-mcp
   Google's WikiSkill paper (arxiv.org/abs/2608.27454) separates three things that agent skill-evolution systems usually collapse together: raw execution traces, a persistent wiki of consolidated knowledge, and the executable skills themselves — each skill update builds on the wiki rather than on a scattered optimization history. Ablations attribute much of the gain to the wiki itself, and two results stand out: smaller models with evolved skills beat substantially larger models without them, and skills transfer across model families, sometimes outperforming self-evolved ones. Directly relevant to anyone maintaining a skill library for agents; DAIR.AI also hosts a 'Chat with Paper' companion at academy.dair.ai.

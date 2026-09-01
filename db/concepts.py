@@ -655,6 +655,13 @@ def assign_primaries(*, db_path: Path = DEFAULT_DB, with_lock: bool = True,
                 pinned = [e for e in edges
                           if respect_pins and (e["notes"] or "").find(PRIMARY_PIN_MARKER) >= 0]
                 if pinned:
+                    # Skipped from *scoring*, not from writing. The write step
+                    # below clears every is_primary flag and re-sets only what
+                    # lands in `chosen`, so a pinned post that never enters
+                    # `chosen` silently loses its home on every run — i.e. a
+                    # pin would delete the primary it was meant to protect.
+                    # (Latent until 2026-09-01; there were no pinned posts.)
+                    chosen[pid] = pinned[0]["concept_id"]
                     result["pinned_skipped"] += 1
                     continue
                 # Conceptual-preference on the *home* axis. A raw `url:` /

@@ -235,6 +235,69 @@ class ConceptualPreferenceOnHomeAxis(unittest.TestCase):
         self.assertEqual(prim[0], 2)
 
 
+class PrimaryPinIsHonoured(unittest.TestCase):
+    """A [primary-pin] must PRESERVE a home, not delete it.
+
+    Regression for a latent bug found 2026-09-01. Pinned posts were skipped
+    with `continue` before entering `chosen`, but the write step clears every
+    is_primary flag and re-sets only what's in `chosen` — so each run silently
+    stripped the primary off exactly the posts a human had pinned. It went
+    unnoticed because the corpus had no pinned posts until then.
+    """
+
+    def setUp(self):
+        self.db = _make_db()
+        conn = sqlite3.connect(self.db)
+        conn.execute("INSERT INTO concepts (id, name) VALUES (1, 'good vector fit')")
+        conn.execute("INSERT INTO concepts (id, name) VALUES (2, 'the pinned home')")
+        for pid, vec in [(10, _vec(1, 0)), (11, _vec(1, 0)), (12, _vec(1, 0)),
+                         (20, _vec(0, 1)), (21, _vec(0, 1))]:
+            conn.execute("INSERT INTO posts (id, summary) VALUES (?, 's')", (pid,))
+            conn.execute(
+                "INSERT INTO post_embeddings (post_id, model, dim, vector) VALUES (?,?,?,?)",
+                (pid, E.DEFAULT_MODEL, 2, E._vector_to_blob(vec)))
+        for pid in (11, 12):
+            conn.execute("INSERT INTO post_concepts (post_id, concept_id, role) VALUES (?,1,'evidence')", (pid,))
+        for pid in (20, 21):
+            conn.execute("INSERT INTO post_concepts (post_id, concept_id, role) VALUES (?,2,'evidence')", (pid,))
+        # Post 10's vector (+x) makes concept 1 the runaway scoring winner,
+        # but the human pinned concept 2. The pin must beat the cosine.
+        conn.execute("INSERT INTO post_concepts (post_id, concept_id, role) VALUES (10,1,'evidence')")
+        conn.execute(
+            "INSERT INTO post_concepts (post_id, concept_id, role, notes) VALUES (10,2,'evidence',?)",
+            (f"{C.PRIMARY_PIN_MARKER} hand-filed",))
+        conn.commit(); conn.close()
+
+    def _primary(self):
+        conn = sqlite3.connect(self.db)
+        row = conn.execute(
+            "SELECT concept_id FROM post_concepts WHERE post_id=10 AND is_primary=1"
+        ).fetchone()
+        conn.close()
+        return row[0] if row else None
+
+    def test_pinned_post_keeps_a_primary(self):
+        C.assign_primaries(db_path=self.db, with_lock=False)
+        self.assertIsNotNone(
+            self._primary(),
+            "pinned post lost its primary — the pin deleted the home it protected")
+
+    def test_pin_beats_the_better_scoring_candidate(self):
+        C.assign_primaries(db_path=self.db, with_lock=False)
+        self.assertEqual(self._primary(), 2,
+                         "cosine overrode an explicit [primary-pin]")
+
+    def test_pin_survives_repeated_runs(self):
+        for _ in range(3):
+            C.assign_primaries(db_path=self.db, with_lock=False)
+            self.assertEqual(self._primary(), 2, "pin eroded across runs")
+
+    def test_respect_pins_false_lets_scoring_win(self):
+        C.assign_primaries(db_path=self.db, with_lock=False, respect_pins=False)
+        self.assertEqual(self._primary(), 1,
+                         "respect_pins=False should fall back to cosine")
+
+
 class WeakDoesNotHideFromOrphanClustering(unittest.TestCase):
     def test_weak_only_post_is_still_an_orphan(self):
         db = _make_db()
