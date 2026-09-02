@@ -489,7 +489,7 @@
 
 <script>
 const MORNING_VIEW = {
-  "generated_at": "2026-09-01T19:06:52Z",
+  "generated_at": "2026-09-02T15:04:17Z",
   "read_now": [
     {
       "id": 2094457600259842065,
@@ -509,70 +509,69 @@ const MORNING_VIEW = {
       "reason": "now • Agent Design • 645.5K views • v1 enriched"
     },
     {
-      "id": 2092036341630394449,
-      "date": "2026-08-25",
-      "author": "Igor bedesqui",
-      "handle": "@bedesqui",
-      "url": "https://x.com/bedesqui/status/2092036341630394449",
-      "summary": "Shares what the author calls his 'magnum opus of unslopping PRs' (gist.github.com/bdsqqq/1e7e6f454271d5f856a1176d0e800d89) — a review-standards file he pastes repeatedly into an agent's context until the agent can demonstrate its change couldn't have broken anything. A concrete, copyable artifact for agent-driven code review. Flagged by Jeremy as 'reviews'.",
+      "id": 2093324233158045788,
+      "date": "2026-08-30",
+      "author": "DAIR.AI",
+      "handle": "@dair_ai",
+      "url": "https://x.com/dair_ai/status/2093324233158045788",
+      "summary": "Google's WikiSkill paper (arxiv.org/abs/2608.27454) separates three things that agent skill-evolution systems usually collapse together: raw execution traces, a persistent wiki of consolidated knowledge, and the executable skills themselves — each skill update builds on the wiki rather than on a scattered optimization history. Ablations attribute much of the gain to the wiki itself, and two results stand out: smaller models with evolved skills beat substantially larger models without them, and skills transfer across model families, sometimes outperforming self-evolved ones. Directly relevant to anyone maintaining a skill library for agents; DAIR.AI also hosts a 'Chat with Paper' companion at academy.dair.ai.",
       "topics": [
-        "dev-practices",
+        "research",
         "agent-design",
-        "prompting"
+        "skills-mcp"
       ],
-      "priority": "now",
-      "views": "101.4K",
-      "reason": "now • Dev Practices • 101.4K views • v1 enriched"
+      "priority": "near-term",
+      "views": "489.7K",
+      "reason": "near-term • Research • 489.7K views • v1 enriched"
     },
     {
-      "id": 2091991026139361633,
-      "date": "2026-08-25",
-      "author": "rvaniaaa",
-      "handle": "@rvaniaaaa",
-      "url": "https://x.com/rvaniaaaa/status/2091991026139361633",
-      "summary": "Argues personal-knowledge systems die when maintenance cost crosses value — you spend more time filing than thinking (the claimed 90%-abandoned-in-three-months figure is asserted, not sourced). Proposes a 'compiler' architecture instead: raw holds immutable unstructured source material as ground truth, wiki holds structured linked evergreen knowledge that the model writes and the human reads, output holds finished work built from compiled knowledge rather than memory — with a CLAUDE.md at the center carrying identity, preferences, goals and project context that the model reads automatically before every session. Direct sibling of post 2090722810674975071 by the same author, and close to how this collection itself is structured.",
+      "id": 2093106368957776231,
+      "date": "2026-08-28",
+      "author": "marfin",
+      "handle": "@marfinxx",
+      "url": "https://x.com/marfinxx/status/2093106368957776231",
+      "summary": "marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dense/sparse vector indexes and graph topology into a single address space instead of stitching together separate vector and graph databases. Claims 92.21% peak accuracy on LoCoMo/LongMemEval, 5.4x search speedup (P99 94.8ms vs 777.1ms), 20% prompt-token reduction and +7.2% on multi-hop queries, with denoising via Median Absolute Deviation and temporal-contradiction arbitration that avoids LLM inference cost. Framed as 'persistent agent memory is an engineering problem, not a context window problem'; the numbers are quoted secondhand from a hype-styled thread rather than verified against the paper, and no paper link is given in the post.",
       "topics": [
         "agent-design",
-        "claude-code",
+        "research",
         "dev-practices",
-        "adjacent"
+        "questionable"
       ],
-      "priority": "now",
-      "views": "52.5K",
-      "reason": "now • Agent Design • 52.5K views • v1 enriched"
+      "priority": "near-term",
+      "views": "11.1K",
+      "reason": "near-term • Agent Design • 11.1K views • v1 enriched"
     },
     {
-      "id": 2091953609185657251,
-      "date": "2026-08-25",
-      "author": "ClaudeDevs",
-      "handle": "@claudedevs",
-      "url": "https://x.com/claudedevs/status/2091953609185657251",
-      "summary": "Anthropic announced general availability of enterprise-managed auth for MCP connectors: Claude Team and Enterprise admins centralize authorization through their own identity provider, and users get tools and data connected automatically with no individual OAuth step. Removes the per-user connector-consent friction that blocks org-wide MCP rollouts. Flagged by Jeremy for Tanner.",
+      "id": 2093056965568332236,
+      "date": "2026-08-28",
+      "author": "elvis",
+      "handle": "@omarsar0",
+      "url": "https://x.com/omarsar0/status/2093056965568332236",
+      "summary": "elvis (DAIR.AI) flags JIT-Agent (arxiv.org/abs/2608.25593) - a model whose *output* is an agent harness, formalizing the harness as a composable artifact under a fixed four-module protocol (memory, planning, action protocol, tool orchestration) and synthesizing one on the fly for any off-the-shelf agentic LLM. It repairs harnesses mid-execution and self-evolves by distilling performance signals from an archive of prior configurations. Reported gains: DeepSeek-V4-Flash passes GPT-5.6 on DeepSearchQA (+9.1) and OdysseyBench (+4.3), GLM-5.2 up to +20.2, with generated harnesses competitive against OpenCode and Claude Code. Directly relevant if you maintain a hand-built harness.",
       "topics": [
-        "claude-code",
-        "skills-mcp",
-        "industry",
-        "management"
+        "agent-design",
+        "research",
+        "dev-practices"
       ],
-      "priority": "now",
-      "views": "443.6K",
-      "reason": "now • Claude Code • 443.6K views • v1 enriched"
+      "priority": "near-term",
+      "views": "22.3K",
+      "reason": "near-term • Agent Design • 22.3K views • v1 enriched"
     },
     {
-      "id": 2091897608293753169,
-      "date": "2026-08-25",
-      "author": "Matt Pocock",
-      "handle": "@mattpocockuk",
-      "url": "https://x.com/mattpocockuk/status/2091897608293753169",
-      "summary": "Matt Pocock moved his /retro skill to in-progress in github.com/mattpocock/skills — run it after a session, or across a batch of sessions, to have the agent diagnose and repair its own mistakes for next time. It targets four axes: agent navigation (better exploration), CODING_STANDARDS (better review), tool economy, and information access. A concrete instance of the self-improving-skill pattern, and a companion to his /implement-spec and /wayfinder skills already in the collection.",
+      "id": 2092927775208264181,
+      "date": "2026-08-27",
+      "author": "0xSero",
+      "handle": "@0xsero",
+      "url": "https://x.com/0xsero/status/2092927775208264181",
+      "summary": "0xSero shares a free digital copy of 'Inference Engineering' by Philip Kiely (via scribd.com) - a book on optimizing the deployment and runtime performance of generative AI models. His suggested use is agent-mediated: hand it to your agents, have them build skills from it and explain the material back to you, noting you can experiment on almost any hardware. Worth noting the copy is redistributed rather than published free by the author, so provenance is unclear.",
       "topics": [
-        "skills-mcp",
+        "research",
         "dev-practices",
-        "agent-design"
+        "skills-mcp"
       ],
-      "priority": "now",
-      "views": "34.9K",
-      "reason": "now • Skills & MCP • 34.9K views • v1 enriched"
+      "priority": "near-term",
+      "views": "87.1K",
+      "reason": "near-term • Research • 87.1K views • v1 enriched"
     }
   ],
   "recurring": {
