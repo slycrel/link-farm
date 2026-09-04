@@ -1,5 +1,245 @@
 [
   {
+    "date": "2026-09-04",
+    "author": "Annatar.md",
+    "handle": "@annatarxbt",
+    "subject": "Post by Annatar.md on X",
+    "url": "https://x.com/annatarxbt/status/2095540725022654658",
+    "summary": "Claims NVIDIA is offering free year-long API access to 140+ hosted models via build.nvidia.com/models (register, bind phone, copy key), served from integrate.api.nvidia.com/v1 at 40 req/min for $0. Lists GLM 5.2, MiniMax M3, Nemotron-3-ultra-550b-a55b and Kimi K2.7 among the available models and gives a three-step setup for pointing Hermes, Cursor or OpenCode at the endpoint as a custom provider. Concrete and actionable if the terms hold, but the free-tier claim and expiry are the author's and worth verifying at the source before depending on them.",
+    "topics": [
+      "industry",
+      "dev-practices",
+      "agent-design",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "15.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "NVIDIA is giving away free access to 140+ AI models for a full year\n\n> a lot of people building agents are paying $50-200/month just for API access\n\nNVIDIA just made that argument irrelevant\n\nmodels you get: GLM 5.2, MiniMax M3, Nemotron-3.5-lightning-30b-a3b, Muse-glimmer-30b from Meta and 130+ more\n\nsetup:\n\n> step 1 - get your free key\n> go to build.nvidia.com/models\n> register -> bind phone -> copy API key\n\n> step 2 - add to Hermes agent\n> open Settings -> Model Provider -> Custom\n\nbase_url = \"https://integrate.api.nvidia.com/v1\"\napi_key  = \"nvapi-xxxxxxxxxxxxxxxxxxxx\"\n\n> step 3 - pick a model\n\nmodel = \"z-ai/glm-5.2\"\nmodel = \"minimaxai/minimax-m3\"\nmodel = \"nvidia/nemotron-3-ultra-550b-a55b\"\nmodel = \"moonshot-ai/kimi-k2.7\"\n\n> Hermes already has NVIDIA set as default base_url\n> paste the key and you're running instantly\n> works the same in Cursor and OpenCode\n\n> cost: $0\n> limit: 40 req/min\n> expires: 1 year\n\nNVIDIA model catalog / free API key registration",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-04",
+    "author": "hoeem",
+    "handle": "@hooeem",
+    "subject": "Post by hoeem on X",
+    "url": "https://x.com/hooeem/status/2095531746720633267",
+    "summary": "Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first automation -> workflow design -> bot team -> subagents/rooms/routines -> reliability and cost -> debug and scale. The phase list is a reasonable curriculum shape for onboarding someone into multi-agent orchestration; the post itself is the pitch rather than the material, and the delivery is engagement-shaped.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "adjacent",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "20K",
+    "notes": "",
+    "enriched": true,
+    "content": "dude holy smokes hahaha... okay, don't bully me for spending so much time on this but I just put together a full course in 8 phases:\n\nPhase 1: Setting it up\nPhase 2: Reach, Tools and Memory\nPhase 3: Your First Automation\nPhase 4: Design the Workflow\nPhase 5: Build the Bot Team\nPhase 6: Subagents, Rooms and Routines\nPhase 7: Make It Reliable and Cheap\nPhase 8: Debug and Scale\n\nAnd boom, you've just gone from someone who may have never used Hermes to someone who can say:\n\n\"I understand and can build an automated multi-agent workflow\"\n\nIT IS A LONG READ - so break this article up and complete maybe 1 phase a day.\n\nThere's no rush, go easy on yourself!",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-04",
+    "author": "elvis",
+    "handle": "@omarsar0",
+    "subject": "Post by elvis on X",
+    "url": "https://x.com/omarsar0/status/2095518433865777600",
+    "summary": "Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommender serving billions of users, with reported A/B results. Each cycle the agent observes operating signals, reasons over a memory of its own past decisions and their measured outcomes, and invokes tools including a numerical optimizer constrained to a fixed operating budget -- the policy improves in context from prior actions with no parameter updates. Across two large social platforms the same harness raised engagement at no additional serving cost on one and cut serving cost without degrading engagement on the other, improving as the loop iterates. elvis's read is that the guardrail design carries as much weight as the agent: the bounded change budget is what makes it safe to run against production. Also linked: academy.dair.ai chat-with-paper for 2609.02730.",
+    "topics": [
+      "research",
+      "agent-design",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "28.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "Massive paper from Meta.\n\nI like this one because it shows the use of agent harnesses for production-grade recommender systems.\n\nDetails below:\n\nThis is one of the more convincing agent deployments I've seen.\n\nIt runs against a live production recommender serving billions of people and reports A/B results.\n\nSustaining a recommender is continual optimization work. Content shifts, user behavior shifts, upstream models shift, and the choices governing retrieval, ranking and serving have to be revisited.\n\nHuman engineers test those changes through online experiments, which is slow enough that parts of the system go unrevised.\n\nIn CORAL, each cycle the agent observes operating signals, reasons over a memory of past decisions and their measured outcomes, and invokes tools including a numerical optimizer that keeps every change inside a fixed operating budget.\n\nThe policy improves in context from its own prior actions, with no parameter updates.\n\nAcross two large social platforms, the same harness improves engagement at no additional serving cost on one and reduces serving cost without degrading engagement on the other.\n\nPerformance improves as the loop iterates.\n\nThe guardrail design carries as much weight as the agent. A bounded change budget makes this safe to run against production.\n\nPaper: https://arxiv.org/abs/2609.02730\n\nCORAL: An LLM-Native Harness for Production Recommender Systems (arXiv)\n\nDAIR.AI Academy chat-with-paper for CORAL",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-04",
+    "author": "Akshay",
+    "handle": "@akshay_pachaar",
+    "subject": "Post by Akshay 🚀 on X",
+    "url": "https://x.com/akshay_pachaar/status/2095502659075871066",
+    "summary": "Explains JIT-Agent, an open-source 27B model that writes the harness instead of running inside one: given a task and a tool registry it emits four Python files plus a prompt config, once, before the task starts, and a second untrained model then does the work by being called step by step from inside those files (never writing or seeing the code). The four files implement a fixed contract -- memory decides what slice of history the executor sees, planning turns that view into a directive, tool policy decides which tools are exposed for it, and action assembles the prompt, calls the model and interprets the reply as a tool call or final answer. Because the code is generated per task, the same generator produces structurally different agents: a dependency graph with artifact verification gating delivery for a multi-step contact/workbook/email task, a synthesized delegate tool opening a private research subagent with its own memory and five-step budget for a multi-hop identity question, and arithmetic pushed out of the model into executed code for a ranking task. The sharpest framing yet of the fixed-versus-generated harness question.",
+    "topics": [
+      "agent-design",
+      "research",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "37.9K",
+    "notes": "",
+    "enriched": true,
+    "content": "self-evolving harnesses are here.\n\n(100% open-source)\n\ntoday you pick a fixed harness, and every task runs through it. a deep research question and a file-renaming task get the same memory strategy, the same planner, and the same tools exposed at every step.\n\nJIT-Agent is a 27B open-source model that writes the harness instead. you hand it the task and the tool registry, and it emits four Python files plus a prompt config.\n\nthat happens once, before the task starts. then a second model, one you don't train or modify, does the actual work by being called step by step from inside those files. it never writes any of the code and never sees it.\n\neach file covers one part of a fixed four-module contract:\n\n-> memory decides what slice of the history that second model sees at the current step.\n-> planning turns that view into a directive for the next action.\n-> tool policy decides which tools are exposed for that directive.\n-> action assembles the prompt from all of it, calls the model, and interprets the reply as either a tool call to run or a final answer.\n\nbecause the code is written per task, the same generator produces structurally different agents.\n\nhere are a few tasks from the JIT-Agent paper, and the harness each one produced:\n\n1) for a request that had to find contact records, build a workbook, and email it, it compiled the requirements into a dependency graph where delivery waits on artifact verification, and stored intermediate artifacts so later nodes consume finished results instead of rebuilding them from the transcript.\n\n2) for a multi-hop identity question, a fixed graph would commit too early to one evidence path, so it synthesized a delegate tool that opens a private research subagent with its own memory and a five-step budget. the returned answer re-enters the parent loop as an ordinary observation.\n\n3) for a task built around comparing numbers and ranking the results, it kept the arithmetic out of the model. the harness computes the numbers by running code.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-04",
+    "author": "Tom Dorr",
+    "handle": "@tom_doerr",
+    "subject": "Post by Tom Dörr on X",
+    "url": "https://x.com/tom_doerr/status/2095482993779363951",
+    "summary": "Points at ai-knowledge-graph (github.com/robert-mcdermott/ai-knowledge-graph), a tool that extracts subject-predicate-object triplets from unstructured text and renders them as an interactive knowledge graph. Small and directly evaluable; relevant to the repo-as-knowledge-graph pattern showing up in agent context-acquisition work.",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "13.8K",
+    "notes": "",
+    "enriched": true,
+    "content": "Extracts Subject-Predicate-Object triplets from unstructured text to generate interactive knowledge graphs.\n\nhttps://github.com/robert-mcdermott/ai-knowledge-graph\n\nrobert-mcdermott/ai-knowledge-graph on GitHub",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-04",
+    "author": "Yarchi",
+    "handle": "@undefinedki",
+    "subject": "Post by Yarchi on X",
+    "url": "https://x.com/undefinedki/status/2095482394513924178",
+    "summary": "Describes Meta's published 'organizational second brain': 200+ files split into two strictly separated layers -- knowledge files stating what the organization has decided (no steps) and recipes stating how to work a problem through (no facts) -- with each file declaring its dependencies and dependents in YAML so a change can be traced. Retrieval is not embeddings: routing indexes map input traits to the files that apply, so the same input deterministically loads the same files. Splitting the original flat instruction file plus semantic search into recipe stages that load only what the current step needs cut tokens per turn by roughly 80%. Failures get a single blame-assignment test -- could it have reached the right answer from the files it loaded? yes means the recipe is broken, no means knowledge is missing, experts disagreeing means neither -- and fixes are compiled into minimal edits reviewed by a separate agent that sees only the diff, replayed blind against the original failure, then folded into a regression suite. Six weeks, hundreds of expert corrections, zero retraining. Close to the knowledge-layer problem this collection itself is solving.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "skills-mcp",
+      "management"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "36.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "Meta just published how their organizational second brain works. Six weeks, hundreds of expert corrections, zero retraining. Here is how it works.\n\nTwo layers, kept strictly apart. Knowledge files state what the organization has decided. Recipes state how to work a problem through. Knowledge files prescribe no steps, recipes carry no facts. Over 200 files in the taxonomy.\n\nEvery file declares what it depends on and what depends on it, in YAML at the top. Change one and you can trace what else moves.\n\nRetrieval is not embeddings. Routing indexes map input traits to the files that apply, so the same input loads the same files every time.\n\nThe first version was one flat instruction file with semantic search over everything. Splitting it into recipe stages that load only what the current step needs cut tokens per turn by around 80 percent.\n\nWhen the agent is wrong, one test assigns blame: could it have reached the right answer from the files it loaded? Yes means the recipe is broken. No means knowledge is missing. Experts disagreeing means neither.\n\nFixes get compiled into minimal edits, reviewed by a separate agent that sees only the diff, replayed blind against the original failure, then folded into the regression suite.\n\nNo retraining anywhere. Every improvement is a text edit an expert reviews in 30 seconds.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-04",
+    "author": "Mark Ajzenstadt",
+    "handle": "@mardehaym",
+    "subject": "Post by Mark Ajzenstadt on X",
+    "url": "https://x.com/mardehaym/status/2095455919337333008",
+    "summary": "A brownfield case study: a delivery-orchestration platform supplying FedEx estimated 7-8 months to rebuild its core billing/payout system; the author's two-engineer pod reports having the core rebuilt in 3.5 months, 122 merged PRs in the first 90 days, live in production at month 6, and 330+ PRs by launch. The mechanism he credits is week-one context acquisition before any code -- scanning the repo into a markdown knowledge graph of every module, dependency, data flow and domain term that agents read before touching anything -- plus a 'V.U.E. gate' (an engineer must be able to verify, understand and explain the change without the agent), tight spec-to-PR scope discipline, and ~$200/developer/month of AI compute. Review-friction metric worth stealing: 104 of 122 PRs merged with fewer than 5 reviewer comments. Numbers are self-reported and the post closes by pitching the author's own Velocity Framework.",
+    "topics": [
+      "dev-practices",
+      "management",
+      "agent-design",
+      "industry",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "54.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "A delivery orchestration platform that supplies FedEx estimated 7 to 8 months to rebuild their core system.\n\nWe had the core rebuilt in 3.5 months with 2 engineers and 122 merged pull requests in the first 90 days. It was live in production by month 6.\n\nI want to walk through how, because \"we used AI and it was faster\" doesn't help anyone.\n\nTheir codebase had real users, real logistics operations, and real consequences if something broke. The system bills shippers and pays couriers.\n\nThis is brownfield, not a weekend prototype demo.\n\nWeek one, we didn't write code. We scanned the entire repo and built a knowledge graph: markdown files documenting every module, dependency, data flow, and domain term. Our agents read that graph before touching anything.\n\nTeams skip this constantly. They point an agent at a repo, hand it a ticket, and get code that compiles but misunderstands the architecture. When someone says \"AI doesn't work on our codebase,\" they almost always skipped context acquisition.\n\nEvery change had to be one an engineer could verify, explain, and debug without the agent. We call that the V.U.E. gate.\n\nThe 50% time reduction came from three things: upfront context eliminated false starts, the agent handled mechanical coding so engineers focused on design and review, and tight spec-to-PR discipline kept scope from drifting.\n\n104 of those 122 PRs merged with fewer than 5 reviewer comments. Volume without review friction is the number I'd check on any AI team.\n\nAI compute: about $200 per developer per month.\n\nTheir CTO called our pod the \"top performing team\" inside the company.\n\nTheir tech lead called them \"true engineers capable of closing requirement gaps through fast domain discovery and iteration.\"\n\nBoth engineers got discretionary bonuses, twice.\n\nA year on, the same two engineers are still shipping for them. More than 330 PRs by the time it went live.\n\nThat's what our Velocity Framework was built for.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-04",
+    "author": "alphaXiv",
+    "handle": "@askalphaxiv",
+    "subject": "Post by alphaXiv on X",
+    "url": "https://x.com/askalphaxiv/status/2095337735330443622",
+    "summary": "Summarizes 'Harness-of-Harness: Multi-Day Autonomous Software Development with Continual Improvement' (alphaxiv.org/abs/2609.01481), which wraps existing coding agents in repeated planning, coding and independent testing loops that carry forward both the artifact and the evidence of what worked or failed. The claim is that this outer structure turns one-shot coding agents into continually improving developers; the demo built a playable FPS over 70+ iterations. Directly continues the harness-engineering thread in the collection.",
+    "topics": [
+      "research",
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "12K",
+    "notes": "",
+    "enriched": true,
+    "content": "\"Harness-of-Harness: Multi-Day Autonomous Software Development with Continual Improvement\"\n\nCoding agents right now struggle to build software continuously over long horizons.\n\nThis paper wraps existing coding agents in repeated planning, coding, and independent testing loops, carrying forward both the software and evidence of what worked or failed.\n\nThat simple structure turns one-shot coding agents into continually improving developers, and even autonomously built a playable FPS over 70+ iterations.\n\nhttps://alphaxiv.org/abs/2609.01481\n\nHarness-of-Harness paper on alphaXiv",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-04",
+    "author": "Tim Denning",
+    "handle": "@tim_denning",
+    "subject": "Post by Tim Denning on X",
+    "url": "https://x.com/tim_denning/status/2095261217816473683",
+    "summary": "A quoted claim that the fastest route to neuroplasticity is repeatedly failing at something you have no natural talent for, with high frustration framed as the chemical signal that drives synaptic rewiring. Presented as an aphorism with no study, source or author attribution, and the frustration-as-mechanism framing is a considerable simplification of the learning literature. Kept as a data point on the deliberate-difficulty idea, not as evidence for it.",
+    "topics": [
+      "biohacking",
+      "adjacent",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "661.6K",
+    "notes": "",
+    "enriched": true,
+    "content": "\"The fastest way to trigger neuroplasticity isn't playing brain games or reading research papers.\n\nIt's forcing your brain to fail repeatedly at something you have zero natural talent for. high frustration is the literal chemical signal that forces synaptic rewiring.\"",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-08-31",
     "author": "lauren",
     "handle": "@poteto",
