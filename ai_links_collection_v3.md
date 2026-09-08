@@ -6,45 +6,47 @@
 ---
 ## Morning view
 
-*Generated 2026-09-04T15:07:09Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-09-08T15:55:12Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-09-04** — [Annatar.md](https://x.com/annatarxbt/status/2095540725022654658) — *now • Industry • 15.7K views • v1 enriched*  
   Claims NVIDIA is offering free year-long API access to 140+ hosted models via build.nvidia.com/models (register, bind phone, copy key), served from integrate.api.nvidia.com/v1 at 40 req/min for $0. Lists GLM 5.2, MiniMax M3, Nemotron-3-ultra-550b-a55b and Kimi K2.7 among the available models and gives a three-step setup for pointing Hermes, Cursor or OpenCode at the endpoint as a custom provider. Concrete and actionable if the terms hold, but the free-tier claim and expiry are the author's and worth verifying at the source before depending on them.
 - **2026-09-04** — [Tom Dorr](https://x.com/tom_doerr/status/2095482993779363951) — *now • Agent Design • 13.8K views • v1 enriched*  
   Points at ai-knowledge-graph (github.com/robert-mcdermott/ai-knowledge-graph), a tool that extracts subject-predicate-object triplets from unstructured text and renders them as an interactive knowledge graph. Small and directly evaluable; relevant to the repo-as-knowledge-graph pattern showing up in agent context-acquisition work.
-- **2026-08-31** — [lauren](https://x.com/poteto/status/2094457600259842065) — *now • Agent Design • 645.5K views • v1 enriched*  
-  Part 1 of Cursor engineer lauren's (@poteto) "Complete Guide to pstack", her personal skill stack: the argument is that an agent verification skill is critical infrastructure rather than "just" a skill, and the way to build one is to give agents a small purpose-built CLI that drives and debugs your app (Chrome DevTools Protocol for Electron/web, the simulator for iOS) instead of markdown instructions — pstack's "Build the Lever" principle, on the reasoning that a CLI command costs far fewer tokens than a throwaway script and is reproducible and testable. Pairs it with a "Feature Map": a markdown catalog under references/features/ of every feature and how to reach it from a user's POV, framed as "materialized memory" (with the codebase itself as the real memory), plus /maintain-verification-skill run daily, /swarm to fan verification out across cloud agents, and a recommendation of Cursor cloud agents over git worktrees for parallelism. Reference implementation at github.com/poteto/verification-skill-example and the meta-skill at github.com/cursor/plugins (pstack/skills/create-verification-skill); worth reading with the vendor angle in mind — the author works at Cursor, the piece doubles as a pitch for Cursor cloud agents and her pstack plugin, and the headline "2,000 PRs a month" and "100-1000x your whole team's output" figures are self-reported rather than measured.
 - **2026-09-04** — [hoeem](https://x.com/hooeem/status/2095531746720633267) — *near-term • Agent Design • 20K views • v1 enriched*  
   Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first automation -> workflow design -> bot team -> subagents/rooms/routines -> reliability and cost -> debug and scale. The phase list is a reasonable curriculum shape for onboarding someone into multi-agent orchestration; the post itself is the pitch rather than the material, and the delivery is engagement-shaped.
 - **2026-09-04** — [elvis](https://x.com/omarsar0/status/2095518433865777600) — *near-term • Research • 28.3K views • v1 enriched*  
   Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommender serving billions of users, with reported A/B results. Each cycle the agent observes operating signals, reasons over a memory of its own past decisions and their measured outcomes, and invokes tools including a numerical optimizer constrained to a fixed operating budget -- the policy improves in context from prior actions with no parameter updates. Across two large social platforms the same harness raised engagement at no additional serving cost on one and cut serving cost without degrading engagement on the other, improving as the loop iterates. elvis's read is that the guardrail design carries as much weight as the agent: the bounded change budget is what makes it safe to run against production. Also linked: academy.dair.ai chat-with-paper for 2609.02730.
+- **2026-09-04** — [Akshay](https://x.com/akshay_pachaar/status/2095502659075871066) — *near-term • Agent Design • 37.9K views • v1 enriched*  
+  Explains JIT-Agent, an open-source 27B model that writes the harness instead of running inside one: given a task and a tool registry it emits four Python files plus a prompt config, once, before the task starts, and a second untrained model then does the work by being called step by step from inside those files (never writing or seeing the code). The four files implement a fixed contract -- memory decides what slice of history the executor sees, planning turns that view into a directive, tool policy decides which tools are exposed for it, and action assembles the prompt, calls the model and interprets the reply as a tool call or final answer. Because the code is generated per task, the same generator produces structurally different agents: a dependency graph with artifact verification gating delivery for a multi-step contact/workbook/email task, a synthesized delegate tool opening a private research subagent with its own memory and five-step budget for a multi-hop identity question, and arithmetic pushed out of the model into executed code for a ranking task. The sharpest framing yet of the fixed-versus-generated harness question.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **local model serving on consumer GPUs — quantization & throughput** (344 posts, +35 this week)  
-  Running capable open models on single-box prosumer hardware: quantization formats (NVFP4/AWQ/GPTQ/GGUF/MLX), KV-cache compression, serving stacks (SGLang, DSpark), and the tok/s benchmarking that goes with it. Renamed from auto-named cluster on 2026-08-21.
-    - 2026-09-04 — [hoeem](https://x.com/hooeem/status/2095531746720633267): Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first auto…
-    - 2026-09-04 — [elvis](https://x.com/omarsar0/status/2095518433865777600): Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommende…
-
-- **persistent always-on agents — bot mode & agent desktops** (332 posts, +33 this week)  
-  Agents that outlive a chat session: persistent bot profiles with their own job and memory, remote/self-hosted execution that survives closing the laptop, and the desktop workspaces around them (Hermes/Nous, Grok bot mode, OpenClaw). Renamed from auto-named cluster on 2026-08-21.
-    - 2026-09-04 — [hoeem](https://x.com/hooeem/status/2095531746720633267): Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first auto…
-    - 2026-09-04 — [elvis](https://x.com/omarsar0/status/2095518433865777600): Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommende…
-
-- **agents-as-judges-of-agents — bossman supervisor / self-verification** (131 posts, +31 this week)  
-  Critical supervisor agent judges worker agents rather than doing the work. Boris Cherny on self-verification loops; Viv on bossman supervisor.
-    - 2026-09-04 — [hoeem](https://x.com/hooeem/status/2095531746720633267): Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first auto…
-    - 2026-09-04 — [elvis](https://x.com/omarsar0/status/2095518433865777600): Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommende…
-
-- **prediction-market & crypto trading bots** (346 posts, +30 this week)  
+- **prediction-market & crypto trading bots** (346 posts, +23 this week)  
   Polymarket and crypto trading-bot content: sweeper and arbitrage bots, Markov-chain trade models, tick-data neural nets, plus one genuinely useful 72M-trade dataset. Heavily promotional and largely off-topic for AI engineering — kept and labelled rather than dropped.
     - 2026-09-04 — [hoeem](https://x.com/hooeem/status/2095531746720633267): Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first auto…
     - 2026-09-04 — [elvis](https://x.com/omarsar0/status/2095518433865777600): Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommende…
 
-- **self-improving skills (autoresearch pattern)** (341 posts, +30 this week)  
+- **local model serving on consumer GPUs — quantization & throughput** (344 posts, +23 this week)  
+  Running capable open models on single-box prosumer hardware: quantization formats (NVFP4/AWQ/GPTQ/GGUF/MLX), KV-cache compression, serving stacks (SGLang, DSpark), and the tok/s benchmarking that goes with it. Renamed from auto-named cluster on 2026-08-21.
+    - 2026-09-04 — [hoeem](https://x.com/hooeem/status/2095531746720633267): Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first auto…
+    - 2026-09-04 — [elvis](https://x.com/omarsar0/status/2095518433865777600): Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommende…
+
+- **self-improving skills (autoresearch pattern)** (341 posts, +23 this week)  
   Skills and harnesses that improve themselves or each other, mostly downstream of Karpathy's autoresearch method — meta-skills that optimise other skills, /autobrowse, recursive self-improvement loops, and agents that accumulate site knowledge instead of rediscovering it.
+    - 2026-09-04 — [hoeem](https://x.com/hooeem/status/2095531746720633267): Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first auto…
+    - 2026-09-04 — [elvis](https://x.com/omarsar0/status/2095518433865777600): Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommende…
+
+- **founder philosophy & life-design essays** (341 posts, +23 this week)  
+  First-principles method and life-design content: Musk's 5-step algorithm, Jobs on product design, Dan Koe-style essays, systems thinking, 'the right way to build a startup'. Mostly endorsement posts pointing at a longer read; quality varies widely.
+    - 2026-09-04 — [hoeem](https://x.com/hooeem/status/2095531746720633267): Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first auto…
+    - 2026-09-04 — [elvis](https://x.com/omarsar0/status/2095518433865777600): Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommende…
+
+- **context economy — routing tables beat big context** (334 posts, +23 this week)  
+  The recurring finding that agent instruction files should ROUTE rather than CONTAIN: a resolver or decision tree that points at the right skill/document outperforms a large monolithic context. One report replaced a 20,000-line CLAUDE.md that measurably degraded the model with a ~200-line decision tree; others converge on small fixed-slot routing tables and a dedicated RESOLVER.md. Cuts across identity-file, skills-craft and Claude Code setup material, and argues against the accumulate-more-context instinct all three encourage.
+
+[latent] Proposed by a blinded latent pass (run 252) from 4 posts read without their existing topic or concept tags.
     - 2026-09-04 — [hoeem](https://x.com/hooeem/status/2095531746720633267): Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first auto…
     - 2026-09-04 — [elvis](https://x.com/omarsar0/status/2095518433865777600): Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommende…
 

@@ -489,7 +489,7 @@
 
 <script>
 const MORNING_VIEW = {
-  "generated_at": "2026-09-04T15:07:09Z",
+  "generated_at": "2026-09-08T15:55:12Z",
   "read_now": [
     {
       "id": 2095540725022654658,
@@ -524,23 +524,6 @@ const MORNING_VIEW = {
       "reason": "now • Agent Design • 13.8K views • v1 enriched"
     },
     {
-      "id": 2094457600259842065,
-      "date": "2026-08-31",
-      "author": "lauren",
-      "handle": "@poteto",
-      "url": "https://x.com/poteto/status/2094457600259842065",
-      "summary": "Part 1 of Cursor engineer lauren's (@poteto) \"Complete Guide to pstack\", her personal skill stack: the argument is that an agent verification skill is critical infrastructure rather than \"just\" a skill, and the way to build one is to give agents a small purpose-built CLI that drives and debugs your app (Chrome DevTools Protocol for Electron/web, the simulator for iOS) instead of markdown instructions — pstack's \"Build the Lever\" principle, on the reasoning that a CLI command costs far fewer tokens than a throwaway script and is reproducible and testable. Pairs it with a \"Feature Map\": a markdown catalog under references/features/ of every feature and how to reach it from a user's POV, framed as \"materialized memory\" (with the codebase itself as the real memory), plus /maintain-verification-skill run daily, /swarm to fan verification out across cloud agents, and a recommendation of Cursor cloud agents over git worktrees for parallelism. Reference implementation at github.com/poteto/verification-skill-example and the meta-skill at github.com/cursor/plugins (pstack/skills/create-verification-skill); worth reading with the vendor angle in mind — the author works at Cursor, the piece doubles as a pitch for Cursor cloud agents and her pstack plugin, and the headline \"2,000 PRs a month\" and \"100-1000x your whole team's output\" figures are self-reported rather than measured.",
-      "topics": [
-        "agent-design",
-        "dev-practices",
-        "skills-mcp",
-        "management"
-      ],
-      "priority": "now",
-      "views": "645.5K",
-      "reason": "now • Agent Design • 645.5K views • v1 enriched"
-    },
-    {
       "id": 2095531746720633267,
       "date": "2026-09-04",
       "author": "hoeem",
@@ -572,6 +555,22 @@ const MORNING_VIEW = {
       "priority": "near-term",
       "views": "28.3K",
       "reason": "near-term • Research • 28.3K views • v1 enriched"
+    },
+    {
+      "id": 2095502659075871066,
+      "date": "2026-09-04",
+      "author": "Akshay",
+      "handle": "@akshay_pachaar",
+      "url": "https://x.com/akshay_pachaar/status/2095502659075871066",
+      "summary": "Explains JIT-Agent, an open-source 27B model that writes the harness instead of running inside one: given a task and a tool registry it emits four Python files plus a prompt config, once, before the task starts, and a second untrained model then does the work by being called step by step from inside those files (never writing or seeing the code). The four files implement a fixed contract -- memory decides what slice of history the executor sees, planning turns that view into a directive, tool policy decides which tools are exposed for it, and action assembles the prompt, calls the model and interprets the reply as a tool call or final answer. Because the code is generated per task, the same generator produces structurally different agents: a dependency graph with artifact verification gating delivery for a multi-step contact/workbook/email task, a synthesized delegate tool opening a private research subagent with its own memory and five-step budget for a multi-hop identity question, and arithmetic pushed out of the model into executed code for a ranking task. The sharpest framing yet of the fixed-versus-generated harness question.",
+      "topics": [
+        "agent-design",
+        "research",
+        "dev-practices"
+      ],
+      "priority": "near-term",
+      "views": "37.9K",
+      "reason": "near-term • Agent Design • 37.9K views • v1 enriched"
     }
   ],
   "recurring": {
@@ -579,104 +578,42 @@ const MORNING_VIEW = {
     "window_days": 14,
     "items": [
       {
-        "id": 55,
-        "name": "local model serving on consumer GPUs — quantization & throughput",
-        "description": "Running capable open models on single-box prosumer hardware: quantization formats (NVFP4/AWQ/GPTQ/GGUF/MLX), KV-cache compression, serving stacks (SGLang, DSpark), and the tok/s benchmarking that goes with it. Renamed from auto-named cluster on 2026-08-21.",
-        "count": 344,
-        "recent_count": 35,
-        "last_post_date": "2026-09-04",
-        "top_posts": [
-          {
-            "id": 2095531746720633267,
-            "date": "2026-09-04",
-            "author": "hoeem",
-            "url": "https://x.com/hooeem/status/2095531746720633267",
-            "summary": "Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first automation -> workflow d"
-          },
-          {
-            "id": 2095518433865777600,
-            "date": "2026-09-04",
-            "author": "elvis",
-            "url": "https://x.com/omarsar0/status/2095518433865777600",
-            "summary": "Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommender serving billions o"
-          },
-          {
-            "id": 2095502659075871066,
-            "date": "2026-09-04",
-            "author": "Akshay",
-            "url": "https://x.com/akshay_pachaar/status/2095502659075871066",
-            "summary": "Explains JIT-Agent, an open-source 27B model that writes the harness instead of running inside one: given a task and a tool registry it emits four Python files "
-          }
-        ]
-      },
-      {
-        "id": 56,
-        "name": "persistent always-on agents — bot mode & agent desktops",
-        "description": "Agents that outlive a chat session: persistent bot profiles with their own job and memory, remote/self-hosted execution that survives closing the laptop, and the desktop workspaces around them (Hermes/Nous, Grok bot mode, OpenClaw). Renamed from auto-named cluster on 2026-08-21.",
-        "count": 332,
-        "recent_count": 33,
-        "last_post_date": "2026-09-04",
-        "top_posts": [
-          {
-            "id": 2095531746720633267,
-            "date": "2026-09-04",
-            "author": "hoeem",
-            "url": "https://x.com/hooeem/status/2095531746720633267",
-            "summary": "Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first automation -> workflow d"
-          },
-          {
-            "id": 2095518433865777600,
-            "date": "2026-09-04",
-            "author": "elvis",
-            "url": "https://x.com/omarsar0/status/2095518433865777600",
-            "summary": "Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommender serving billions o"
-          },
-          {
-            "id": 2095502659075871066,
-            "date": "2026-09-04",
-            "author": "Akshay",
-            "url": "https://x.com/akshay_pachaar/status/2095502659075871066",
-            "summary": "Explains JIT-Agent, an open-source 27B model that writes the harness instead of running inside one: given a task and a tool registry it emits four Python files "
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "name": "agents-as-judges-of-agents — bossman supervisor / self-verification",
-        "description": "Critical supervisor agent judges worker agents rather than doing the work. Boris Cherny on self-verification loops; Viv on bossman supervisor.",
-        "count": 131,
-        "recent_count": 31,
-        "last_post_date": "2026-09-04",
-        "top_posts": [
-          {
-            "id": 2095531746720633267,
-            "date": "2026-09-04",
-            "author": "hoeem",
-            "url": "https://x.com/hooeem/status/2095531746720633267",
-            "summary": "Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first automation -> workflow d"
-          },
-          {
-            "id": 2095518433865777600,
-            "date": "2026-09-04",
-            "author": "elvis",
-            "url": "https://x.com/omarsar0/status/2095518433865777600",
-            "summary": "Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommender serving billions o"
-          },
-          {
-            "id": 2095502659075871066,
-            "date": "2026-09-04",
-            "author": "Akshay",
-            "url": "https://x.com/akshay_pachaar/status/2095502659075871066",
-            "summary": "Explains JIT-Agent, an open-source 27B model that writes the harness instead of running inside one: given a task and a tool registry it emits four Python files "
-          }
-        ]
-      },
-      {
         "id": 48,
         "name": "prediction-market & crypto trading bots",
         "description": "Polymarket and crypto trading-bot content: sweeper and arbitrage bots, Markov-chain trade models, tick-data neural nets, plus one genuinely useful 72M-trade dataset. Heavily promotional and largely off-topic for AI engineering — kept and labelled rather than dropped.",
         "count": 346,
-        "recent_count": 30,
+        "recent_count": 23,
+        "last_post_date": "2026-09-04",
+        "top_posts": [
+          {
+            "id": 2095531746720633267,
+            "date": "2026-09-04",
+            "author": "hoeem",
+            "url": "https://x.com/hooeem/status/2095531746720633267",
+            "summary": "Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first automation -> workflow d"
+          },
+          {
+            "id": 2095518433865777600,
+            "date": "2026-09-04",
+            "author": "elvis",
+            "url": "https://x.com/omarsar0/status/2095518433865777600",
+            "summary": "Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommender serving billions o"
+          },
+          {
+            "id": 2095502659075871066,
+            "date": "2026-09-04",
+            "author": "Akshay",
+            "url": "https://x.com/akshay_pachaar/status/2095502659075871066",
+            "summary": "Explains JIT-Agent, an open-source 27B model that writes the harness instead of running inside one: given a task and a tool registry it emits four Python files "
+          }
+        ]
+      },
+      {
+        "id": 55,
+        "name": "local model serving on consumer GPUs — quantization & throughput",
+        "description": "Running capable open models on single-box prosumer hardware: quantization formats (NVFP4/AWQ/GPTQ/GGUF/MLX), KV-cache compression, serving stacks (SGLang, DSpark), and the tok/s benchmarking that goes with it. Renamed from auto-named cluster on 2026-08-21.",
+        "count": 344,
+        "recent_count": 23,
         "last_post_date": "2026-09-04",
         "top_posts": [
           {
@@ -707,7 +644,69 @@ const MORNING_VIEW = {
         "name": "self-improving skills (autoresearch pattern)",
         "description": "Skills and harnesses that improve themselves or each other, mostly downstream of Karpathy's autoresearch method — meta-skills that optimise other skills, /autobrowse, recursive self-improvement loops, and agents that accumulate site knowledge instead of rediscovering it.",
         "count": 341,
-        "recent_count": 30,
+        "recent_count": 23,
+        "last_post_date": "2026-09-04",
+        "top_posts": [
+          {
+            "id": 2095531746720633267,
+            "date": "2026-09-04",
+            "author": "hoeem",
+            "url": "https://x.com/hooeem/status/2095531746720633267",
+            "summary": "Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first automation -> workflow d"
+          },
+          {
+            "id": 2095518433865777600,
+            "date": "2026-09-04",
+            "author": "elvis",
+            "url": "https://x.com/omarsar0/status/2095518433865777600",
+            "summary": "Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommender serving billions o"
+          },
+          {
+            "id": 2095502659075871066,
+            "date": "2026-09-04",
+            "author": "Akshay",
+            "url": "https://x.com/akshay_pachaar/status/2095502659075871066",
+            "summary": "Explains JIT-Agent, an open-source 27B model that writes the harness instead of running inside one: given a task and a tool registry it emits four Python files "
+          }
+        ]
+      },
+      {
+        "id": 50,
+        "name": "founder philosophy & life-design essays",
+        "description": "First-principles method and life-design content: Musk's 5-step algorithm, Jobs on product design, Dan Koe-style essays, systems thinking, 'the right way to build a startup'. Mostly endorsement posts pointing at a longer read; quality varies widely.",
+        "count": 341,
+        "recent_count": 23,
+        "last_post_date": "2026-09-04",
+        "top_posts": [
+          {
+            "id": 2095531746720633267,
+            "date": "2026-09-04",
+            "author": "hoeem",
+            "url": "https://x.com/hooeem/status/2095531746720633267",
+            "summary": "Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first automation -> workflow d"
+          },
+          {
+            "id": 2095518433865777600,
+            "date": "2026-09-04",
+            "author": "elvis",
+            "url": "https://x.com/omarsar0/status/2095518433865777600",
+            "summary": "Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommender serving billions o"
+          },
+          {
+            "id": 2095502659075871066,
+            "date": "2026-09-04",
+            "author": "Akshay",
+            "url": "https://x.com/akshay_pachaar/status/2095502659075871066",
+            "summary": "Explains JIT-Agent, an open-source 27B model that writes the harness instead of running inside one: given a task and a tool registry it emits four Python files "
+          }
+        ]
+      },
+      {
+        "id": 51,
+        "name": "context economy — routing tables beat big context",
+        "description": "The recurring finding that agent instruction files should ROUTE rather than CONTAIN: a resolver or decision tree that points at the right skill/document outperforms a large monolithic context. One report replaced a 20,000-line CLAUDE.md that measurably degraded the model with a ~200-line decision tree; others converge on small fixed-slot routing tables and a dedicated RESOLVER.md. Cuts across identity-file, skills-craft and Claude Code setup material, and argues against the accumulate-more-context instinct all three encourage.\n\n[latent] Proposed by a blinded latent pass (run 252) from 4 posts read without their existing topic or concept tags.",
+        "count": 334,
+        "recent_count": 23,
         "last_post_date": "2026-09-04",
         "top_posts": [
           {
