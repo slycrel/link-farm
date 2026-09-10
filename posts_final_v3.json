@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-09-10",
+    "author": "Akshay",
+    "handle": "@akshay_pachaar",
+    "subject": "Post by Akshay on X",
+    "url": "https://x.com/akshay_pachaar/status/2097421509220561028",
+    "summary": "Akshay breaks down an NVIDIA paper (arxiv.org/abs/2608.03893) that makes KV cache transferable between models, so a target model can skip prefill entirely — conversion runs 2.7–25x faster than re-processing the context. The mapper is closed-form and training-free: a per-layer/per-head linear map plus cross-layer selection (top-8 source layers) reconstructs 79% of the target's key variance for Qwen3 14B→32B. Directly relevant to LLM routing economics, where switching models today invalidates the cached prefix and forces full-rate re-billing; limitations are that all tested pairs are same-family, share KV head count/dim, and are dense full-attention only. Quotes his own first-principles X Article on KV caching.",
+    "topics": [
+      "research",
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "224.4K",
+    "notes": "",
+    "enriched": true,
+    "content": "Brilliant paper by NVIDIA.\n\nthey found a way to make KV cache transferable between models.\n\nthe target model skips prefill entirely, and the conversion runs 2.7 to 25x faster than processing the context again.\n\nlet's understand why this is so important today.\n\nLLM APIs are stateless, so every turn sends the entire conversation back to the model. the model reads it again before generating a new token, and all of it is billed as input.\n\nprompt caching lets providers hold the KV cache for a stable prefix and bill cache hits at roughly 10% of the base input rate because that compute was already done.\n\nthis 90% reduction is one of the biggest levers in LLM serving.\n\nbut the cache only works on the model that produced it. since keys and values depend on that model's weights, another model cannot directly reuse them.\n\nthis becomes a problem with LLM routing.\n\nif traffic moves to another model for cost or capability reasons, the accumulated KV cache becomes invalid.\n\nthe entire context must be processed again and billed at full rate.\n\nNVIDIA's recent paper treats this as a representation problem.\n\nprefill's main output is the KV cache, so transferring it means converting one model's cache into the representation another model expects.\n\nthey first checked whether this conversion had enough structure to exploit.\n\nfor Qwen3 14B -> 32B, a linear regression from a single source layer reconstructed 56% of the variance in the target model's keys.\n\nbecause models can have different layer counts, there is no natural one-to-one layer mapping.\n\nso, for every target layer, they rank the source layers by predictive power and use the top eight together.\n\nthat pushes reconstruction to 79%.\n\nthe mapper has three parts:\n\n> each target layer and head gets its own linear map, solved in closed form instead of with gradient descent.\n\n> cross-layer selection chooses the most predictive source layers per target layer.\n\nconversion is also 3 to 25x faster than processing the context again.\n\nprior cross-model KV reuse methods either train a neural adapter for every pair or require architecturally identical models.\n\nthis approach is closed-form and training-free, but there are still important limitations.\n\nevery tested pair belongs to the same model family, such as Qwen -> Qwen or Llama -> Llama.\n\ncross-family transfer is still future work.\n\nthe tested pairs also share KV head count and per-head dimension. mismatched configurations remain untested.\n\nand the work currently covers dense full-attention models only, not sliding-window or attention-recurrent hybrids.\n\nlink to the paper: arxiv.org/abs/2608.03893\n\ni wrote a first-principles breakdown of how KV caching works\n\nthe article is quoted below.\n\nAkshay @akshay_pachaar - Feb 9 - X Article\nKV Caching in LLMs, Clearly Explained\nYou've seen it every time you use ChatGPT or Claude. The first token takes noticeably longer to appear. Then the rest stream out almost instantly. That's not a UI quirk. It's a deliberate engineering...\n\nNVIDIA paper on training-free cross-model KV cache transfer (closed-form linear mapping, cross-layer selection).",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-09-04",
     "author": "Annatar.md",
     "handle": "@annatarxbt",
