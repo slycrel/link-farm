@@ -489,40 +489,8 @@
 
 <script>
 const MORNING_VIEW = {
-  "generated_at": "2026-09-10T15:11:08Z",
+  "generated_at": "2026-09-14T16:19:57Z",
   "read_now": [
-    {
-      "id": 2095540725022654658,
-      "date": "2026-09-04",
-      "author": "Annatar.md",
-      "handle": "@annatarxbt",
-      "url": "https://x.com/annatarxbt/status/2095540725022654658",
-      "summary": "Claims NVIDIA is offering free year-long API access to 140+ hosted models via build.nvidia.com/models (register, bind phone, copy key), served from integrate.api.nvidia.com/v1 at 40 req/min for $0. Lists GLM 5.2, MiniMax M3, Nemotron-3-ultra-550b-a55b and Kimi K2.7 among the available models and gives a three-step setup for pointing Hermes, Cursor or OpenCode at the endpoint as a custom provider. Concrete and actionable if the terms hold, but the free-tier claim and expiry are the author's and worth verifying at the source before depending on them.",
-      "topics": [
-        "industry",
-        "dev-practices",
-        "agent-design",
-        "questionable"
-      ],
-      "priority": "now",
-      "views": "15.7K",
-      "reason": "now • Industry • 15.7K views • v1 enriched"
-    },
-    {
-      "id": 2095482993779363951,
-      "date": "2026-09-04",
-      "author": "Tom Dorr",
-      "handle": "@tom_doerr",
-      "url": "https://x.com/tom_doerr/status/2095482993779363951",
-      "summary": "Points at ai-knowledge-graph (github.com/robert-mcdermott/ai-knowledge-graph), a tool that extracts subject-predicate-object triplets from unstructured text and renders them as an interactive knowledge graph. Small and directly evaluable; relevant to the repo-as-knowledge-graph pattern showing up in agent context-acquisition work.",
-      "topics": [
-        "agent-design",
-        "dev-practices"
-      ],
-      "priority": "now",
-      "views": "13.8K",
-      "reason": "now • Agent Design • 13.8K views • v1 enriched"
-    },
     {
       "id": 2097421509220561028,
       "date": "2026-09-10",
@@ -538,39 +506,6 @@ const MORNING_VIEW = {
       "priority": "near-term",
       "views": "224.4K",
       "reason": "near-term • Research • 224.4K views • v1 enriched"
-    },
-    {
-      "id": 2095531746720633267,
-      "date": "2026-09-04",
-      "author": "hoeem",
-      "handle": "@hooeem",
-      "url": "https://x.com/hooeem/status/2095531746720633267",
-      "summary": "Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first automation -> workflow design -> bot team -> subagents/rooms/routines -> reliability and cost -> debug and scale. The phase list is a reasonable curriculum shape for onboarding someone into multi-agent orchestration; the post itself is the pitch rather than the material, and the delivery is engagement-shaped.",
-      "topics": [
-        "agent-design",
-        "dev-practices",
-        "adjacent",
-        "questionable"
-      ],
-      "priority": "near-term",
-      "views": "20K",
-      "reason": "near-term • Agent Design • 20K views • v1 enriched"
-    },
-    {
-      "id": 2095518433865777600,
-      "date": "2026-09-04",
-      "author": "elvis",
-      "handle": "@omarsar0",
-      "url": "https://x.com/omarsar0/status/2095518433865777600",
-      "summary": "Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommender serving billions of users, with reported A/B results. Each cycle the agent observes operating signals, reasons over a memory of its own past decisions and their measured outcomes, and invokes tools including a numerical optimizer constrained to a fixed operating budget -- the policy improves in context from prior actions with no parameter updates. Across two large social platforms the same harness raised engagement at no additional serving cost on one and cut serving cost without degrading engagement on the other, improving as the loop iterates. elvis's read is that the guardrail design carries as much weight as the agent: the bounded change budget is what makes it safe to run against production. Also linked: academy.dair.ai chat-with-paper for 2609.02730.",
-      "topics": [
-        "research",
-        "agent-design",
-        "industry"
-      ],
-      "priority": "near-term",
-      "views": "28.3K",
-      "reason": "near-term • Research • 28.3K views • v1 enriched"
     }
   ],
   "recurring": {
@@ -582,7 +517,7 @@ const MORNING_VIEW = {
         "name": "prediction-market & crypto trading bots",
         "description": "Polymarket and crypto trading-bot content: sweeper and arbitrage bots, Markov-chain trade models, tick-data neural nets, plus one genuinely useful 72M-trade dataset. Heavily promotional and largely off-topic for AI engineering — kept and labelled rather than dropped.",
         "count": 346,
-        "recent_count": 12,
+        "recent_count": 7,
         "last_post_date": "2026-09-04",
         "top_posts": [
           {
@@ -613,7 +548,7 @@ const MORNING_VIEW = {
         "name": "local model serving on consumer GPUs — quantization & throughput",
         "description": "Running capable open models on single-box prosumer hardware: quantization formats (NVFP4/AWQ/GPTQ/GGUF/MLX), KV-cache compression, serving stacks (SGLang, DSpark), and the tok/s benchmarking that goes with it. Renamed from auto-named cluster on 2026-08-21.",
         "count": 344,
-        "recent_count": 12,
+        "recent_count": 7,
         "last_post_date": "2026-09-04",
         "top_posts": [
           {
@@ -644,7 +579,7 @@ const MORNING_VIEW = {
         "name": "self-improving skills (autoresearch pattern)",
         "description": "Skills and harnesses that improve themselves or each other, mostly downstream of Karpathy's autoresearch method — meta-skills that optimise other skills, /autobrowse, recursive self-improvement loops, and agents that accumulate site knowledge instead of rediscovering it.",
         "count": 341,
-        "recent_count": 12,
+        "recent_count": 7,
         "last_post_date": "2026-09-04",
         "top_posts": [
           {
@@ -675,7 +610,7 @@ const MORNING_VIEW = {
         "name": "founder philosophy & life-design essays",
         "description": "First-principles method and life-design content: Musk's 5-step algorithm, Jobs on product design, Dan Koe-style essays, systems thinking, 'the right way to build a startup'. Mostly endorsement posts pointing at a longer read; quality varies widely.",
         "count": 341,
-        "recent_count": 12,
+        "recent_count": 7,
         "last_post_date": "2026-09-04",
         "top_posts": [
           {
@@ -702,11 +637,11 @@ const MORNING_VIEW = {
         ]
       },
       {
-        "id": 51,
-        "name": "context economy — routing tables beat big context",
-        "description": "The recurring finding that agent instruction files should ROUTE rather than CONTAIN: a resolver or decision tree that points at the right skill/document outperforms a large monolithic context. One report replaced a 20,000-line CLAUDE.md that measurably degraded the model with a ~200-line decision tree; others converge on small fixed-slot routing tables and a dedicated RESOLVER.md. Cuts across identity-file, skills-craft and Claude Code setup material, and argues against the accumulate-more-context instinct all three encourage.\n\n[latent] Proposed by a blinded latent pass (run 252) from 4 posts read without their existing topic or concept tags.",
-        "count": 334,
-        "recent_count": 12,
+        "id": 45,
+        "name": "elite-skill masterclass content",
+        "description": "Free lectures and 'masterclass' reposts promising an elite skill — quant trading maths (Jane Street, Jim Simons, Berkeley), high-stakes persuasion. Aspirational skill-acquisition material, usually hype-packaged, occasionally with a real lecture behind it.",
+        "count": 340,
+        "recent_count": 7,
         "last_post_date": "2026-09-04",
         "top_posts": [
           {

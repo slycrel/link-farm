@@ -6,47 +6,37 @@
 ---
 ## Morning view
 
-*Generated 2026-09-10T15:11:08Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-09-14T16:19:57Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
-- **2026-09-04** — [Annatar.md](https://x.com/annatarxbt/status/2095540725022654658) — *now • Industry • 15.7K views • v1 enriched*  
-  Claims NVIDIA is offering free year-long API access to 140+ hosted models via build.nvidia.com/models (register, bind phone, copy key), served from integrate.api.nvidia.com/v1 at 40 req/min for $0. Lists GLM 5.2, MiniMax M3, Nemotron-3-ultra-550b-a55b and Kimi K2.7 among the available models and gives a three-step setup for pointing Hermes, Cursor or OpenCode at the endpoint as a custom provider. Concrete and actionable if the terms hold, but the free-tier claim and expiry are the author's and worth verifying at the source before depending on them.
-- **2026-09-04** — [Tom Dorr](https://x.com/tom_doerr/status/2095482993779363951) — *now • Agent Design • 13.8K views • v1 enriched*  
-  Points at ai-knowledge-graph (github.com/robert-mcdermott/ai-knowledge-graph), a tool that extracts subject-predicate-object triplets from unstructured text and renders them as an interactive knowledge graph. Small and directly evaluable; relevant to the repo-as-knowledge-graph pattern showing up in agent context-acquisition work.
 - **2026-09-10** — [Akshay](https://x.com/akshay_pachaar/status/2097421509220561028) — *near-term • Research • 224.4K views • v1 enriched*  
   Akshay breaks down an NVIDIA paper (arxiv.org/abs/2608.03893) that makes KV cache transferable between models, so a target model can skip prefill entirely — conversion runs 2.7–25x faster than re-processing the context. The mapper is closed-form and training-free: a per-layer/per-head linear map plus cross-layer selection (top-8 source layers) reconstructs 79% of the target's key variance for Qwen3 14B→32B. Directly relevant to LLM routing economics, where switching models today invalidates the cached prefix and forces full-rate re-billing; limitations are that all tested pairs are same-family, share KV head count/dim, and are dense full-attention only. Quotes his own first-principles X Article on KV caching.
-- **2026-09-04** — [hoeem](https://x.com/hooeem/status/2095531746720633267) — *near-term • Agent Design • 20K views • v1 enriched*  
-  Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first automation -> workflow design -> bot team -> subagents/rooms/routines -> reliability and cost -> debug and scale. The phase list is a reasonable curriculum shape for onboarding someone into multi-agent orchestration; the post itself is the pitch rather than the material, and the delivery is engagement-shaped.
-- **2026-09-04** — [elvis](https://x.com/omarsar0/status/2095518433865777600) — *near-term • Research • 28.3K views • v1 enriched*  
-  Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommender serving billions of users, with reported A/B results. Each cycle the agent observes operating signals, reasons over a memory of its own past decisions and their measured outcomes, and invokes tools including a numerical optimizer constrained to a fixed operating budget -- the policy improves in context from prior actions with no parameter updates. Across two large social platforms the same harness raised engagement at no additional serving cost on one and cut serving cost without degrading engagement on the other, improving as the loop iterates. elvis's read is that the guardrail design carries as much weight as the agent: the bounded change budget is what makes it safe to run against production. Also linked: academy.dair.ai chat-with-paper for 2609.02730.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **prediction-market & crypto trading bots** (346 posts, +12 this week)  
+- **prediction-market & crypto trading bots** (346 posts, +7 this week)  
   Polymarket and crypto trading-bot content: sweeper and arbitrage bots, Markov-chain trade models, tick-data neural nets, plus one genuinely useful 72M-trade dataset. Heavily promotional and largely off-topic for AI engineering — kept and labelled rather than dropped.
     - 2026-09-04 — [hoeem](https://x.com/hooeem/status/2095531746720633267): Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first auto…
     - 2026-09-04 — [elvis](https://x.com/omarsar0/status/2095518433865777600): Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommende…
 
-- **local model serving on consumer GPUs — quantization & throughput** (344 posts, +12 this week)  
+- **local model serving on consumer GPUs — quantization & throughput** (344 posts, +7 this week)  
   Running capable open models on single-box prosumer hardware: quantization formats (NVFP4/AWQ/GPTQ/GGUF/MLX), KV-cache compression, serving stacks (SGLang, DSpark), and the tok/s benchmarking that goes with it. Renamed from auto-named cluster on 2026-08-21.
     - 2026-09-04 — [hoeem](https://x.com/hooeem/status/2095531746720633267): Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first auto…
     - 2026-09-04 — [elvis](https://x.com/omarsar0/status/2095518433865777600): Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommende…
 
-- **self-improving skills (autoresearch pattern)** (341 posts, +12 this week)  
+- **self-improving skills (autoresearch pattern)** (341 posts, +7 this week)  
   Skills and harnesses that improve themselves or each other, mostly downstream of Karpathy's autoresearch method — meta-skills that optimise other skills, /autobrowse, recursive self-improvement loops, and agents that accumulate site knowledge instead of rediscovering it.
     - 2026-09-04 — [hoeem](https://x.com/hooeem/status/2095531746720633267): Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first auto…
     - 2026-09-04 — [elvis](https://x.com/omarsar0/status/2095518433865777600): Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommende…
 
-- **founder philosophy & life-design essays** (341 posts, +12 this week)  
+- **founder philosophy & life-design essays** (341 posts, +7 this week)  
   First-principles method and life-design content: Musk's 5-step algorithm, Jobs on product design, Dan Koe-style essays, systems thinking, 'the right way to build a startup'. Mostly endorsement posts pointing at a longer read; quality varies widely.
     - 2026-09-04 — [hoeem](https://x.com/hooeem/status/2095531746720633267): Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first auto…
     - 2026-09-04 — [elvis](https://x.com/omarsar0/status/2095518433865777600): Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommende…
 
-- **context economy — routing tables beat big context** (334 posts, +12 this week)  
-  The recurring finding that agent instruction files should ROUTE rather than CONTAIN: a resolver or decision tree that points at the right skill/document outperforms a large monolithic context. One report replaced a 20,000-line CLAUDE.md that measurably degraded the model with a ~200-line decision tree; others converge on small fixed-slot routing tables and a dedicated RESOLVER.md. Cuts across identity-file, skills-craft and Claude Code setup material, and argues against the accumulate-more-context instinct all three encourage.
-
-[latent] Proposed by a blinded latent pass (run 252) from 4 posts read without their existing topic or concept tags.
+- **elite-skill masterclass content** (340 posts, +7 this week)  
+  Free lectures and 'masterclass' reposts promising an elite skill — quant trading maths (Jane Street, Jim Simons, Berkeley), high-stakes persuasion. Aspirational skill-acquisition material, usually hype-packaged, occasionally with a real lecture behind it.
     - 2026-09-04 — [hoeem](https://x.com/hooeem/status/2095531746720633267): Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first auto…
     - 2026-09-04 — [elvis](https://x.com/omarsar0/status/2095518433865777600): Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommende…
 
