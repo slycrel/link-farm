@@ -862,39 +862,45 @@ def recent_active_concepts(days: int = 7, db_path: Path = DEFAULT_DB,
     when the idea actually appeared in Jeremy's feed. The morning view
     cares about the latter.
 
-    Concepts with no recent evidence at all are excluded. Concepts that
-    only have older evidence (long-term threads that aren't moving) won't
+    Concepts that are home to nothing recent are excluded. Concepts that
+    only have older members (long-term threads that aren't moving) won't
     surface here — they're still browseable via the concepts list.
+
+    Measured on **primary homes**, not evidence edges (changed 2026-09-15).
+    Evidence attachment is uncapped, so by this date the seven largest
+    concepts carried 320-346 evidence edges each and shared 84-93% of their
+    members — the morning view was listing four "different" concepts whose
+    recent evidence was literally the same two posts. Primary homes are a
+    partition (exactly one per post, enforced by a partial unique index), so
+    counting them makes "recurring" mean "became the home of new posts" and
+    makes the printed size the number of posts that actually live there.
     """
     with _connect(db_path) as conn:
-        # "Gained new evidence" means exactly that — load-bearing edges only.
-        # Weak edges are attached generously, so counting them here would make
-        # every concept look freshly active and drown the morning view.
         rows = conn.execute(f"""
             SELECT
                 c.id, c.name, c.description,
                 (SELECT COUNT(*) FROM post_concepts pc
                   WHERE pc.concept_id = c.id
-                    AND pc.role IN ('evidence', 'origin')) AS post_count,
+                    AND pc.is_primary = 1) AS post_count,
                 (SELECT COUNT(DISTINCT pc.post_id)
                    FROM post_concepts pc
                    JOIN posts p ON p.id = pc.post_id
                   WHERE pc.concept_id = c.id
-                    AND pc.role IN ('evidence', 'origin')
+                    AND pc.is_primary = 1
                     AND p.date >= date('now', ?)
                 ) AS recent_post_count,
                 (SELECT MAX(p.date)
                    FROM post_concepts pc
                    JOIN posts p ON p.id = pc.post_id
                   WHERE pc.concept_id = c.id
-                    AND pc.role IN ('evidence', 'origin')) AS last_post_date
+                    AND pc.is_primary = 1) AS last_post_date
               FROM concepts c
              WHERE c.status = 'active'
                AND EXISTS (
                    SELECT 1 FROM post_concepts pc
                      JOIN posts p ON p.id = pc.post_id
                     WHERE pc.concept_id = c.id
-                      AND pc.role IN ('evidence', 'origin')
+                      AND pc.is_primary = 1
                       AND p.date >= date('now', ?)
                )
              ORDER BY recent_post_count DESC, post_count DESC, last_post_date DESC
@@ -905,20 +911,26 @@ def recent_active_concepts(days: int = 7, db_path: Path = DEFAULT_DB,
 
 def top_posts_for_concept(concept_id: int, limit: int = 3,
                            db_path: Path = DEFAULT_DB) -> list[dict]:
-    """Top promoted posts attached to a concept, newest first.
+    """Top posts attached to a concept, newest first.
 
-    Load-bearing edges are surfaced ahead of weak ones so a concept's shortlist
-    shows what it actually rests on; weak associations still appear once the
-    evidence is exhausted, which is the point of keeping them.
+    Ordering is home → load-bearing → weak (changed 2026-09-15). Posts that
+    are *homed* here come first, so a concept's shortlist shows what actually
+    lives in it rather than what merely resembles it. Without this, the
+    generous evidence layer meant the same handful of recent posts appeared
+    as the shortlist for every large concept. Evidence and weak edges still
+    appear once homed posts run out, which is the point of keeping them.
     """
     with _connect(db_path) as conn:
         rows = conn.execute("""
             SELECT p.id, p.date, p.author, p.handle, p.url, pc.role,
+                   pc.is_primary,
                    SUBSTR(COALESCE(p.summary,''), 1, 200) AS summary
               FROM post_concepts pc
               JOIN posts p ON p.id = pc.post_id
              WHERE pc.concept_id = ?
-             ORDER BY (pc.role IN ('evidence', 'origin')) DESC, p.date DESC
+             ORDER BY pc.is_primary DESC,
+                      (pc.role IN ('evidence', 'origin')) DESC,
+                      p.date DESC
              LIMIT ?
         """, (concept_id, limit)).fetchall()
     return [dict(r) for r in rows]
