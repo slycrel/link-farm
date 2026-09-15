@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-09-15",
+    "author": "Salvatore Sanfilippo",
+    "handle": "@antirez",
+    "subject": "antirez/ds4 (DwarfStar) GitHub",
+    "url": "https://github.com/antirez/ds4",
+    "summary": "DwarfStar (github.com/antirez/ds4) is Salvatore Sanfilippo's self-contained C inference engine for running DeepSeek V4 Flash/PRO and GLM 5.2/5.3 on hardware people actually own — Metal on 96GB+ Macs, CUDA including DGX Spark and multi-GPU Ada/L40S, ROCm on Strix Halo — with SSD streaming for models larger than RAM, compressed KV caches, and tensor/pipeline parallelism to glue several machines together. It ships a native coding agent (ds4-agent, with its own KV-cache session save/switch/strip commands) and an HTTP server that Claude Code, Codex CLI, OpenCode and Pi can point at; it is deliberately narrow rather than a general GGUF runner and only runs the GGUF files the project itself produces. 22.3k stars, MIT, beta-quality and fast-moving — notable beyond the code for antirez's explicit 'developed with strong assistance from AI coding agents' disclosure and his argument that software should now ship as a modifiable template you adapt with a coding agent rather than a finished product trying to cover every setup.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "article",
+    "views": "",
+    "notes": "Added manually 2026-09-15 at Jeremy's request in chat (not from email intake).",
+    "enriched": true,
+    "content": "DwarfStar aims to be the best way to run a few excellent large language models on consumer hardware (that is, hardware that people can actually own). A small native inference engine optimized first for DeepSeek V4 Flash (including the experimental vision model), and additionally GLM 5.2 and 5.3, GLM 5.3 Flash and DeepSeek V4 PRO. The code is self-contained and deliberately narrow, not a general GGUF runner: you need to use the GGUF files the project produces.\n\nSupported hardware: Metal, the primary target, on Macs with 96 GB or more (smaller machines can use SSD streaming); NVIDIA CUDA, with the DGX Spark as the main goal, plus multi-GPU systems unsupported by other backends such as Ada Lovelace / L40S; ROCm on Strix Halo systems such as the Framework Desktop. An eight-L40S Flash setup reached about 126 t/s aggregate generation across 16 sessions. Two 128 GB Macs connected with RDMA can run 4-bit DeepSeek Flash or GLM 5.3 Flash with tensor parallelism; pipeline parallelism can sum the RAM of multiple systems.\n\nMotivations: capable open-weight models now fit on high-end personal machines; DeepSeek V4 Flash/PRO and GLM 5.2 tolerate aggressive routed-expert quantization; compressed KV caches and fast local SSDs make long contexts practical; the idea of an inference system specialized for a few models.\n\nAI full disclosure: this software is developed with strong assistance from AI coding agents, with humans leading the ideas, testing and debugging. 'We say this openly because it shaped how the project was built. If you are not happy with AI-developed code, this software is not for you.'\n\nHow to use this project: 'I (Salvatore) believe that the way projects should be shipped and used changed because of AI.' With AI, users can modify software in significant ways with low effort and without deep domain knowledge — so software should be shipped more as a working template for the biggest use cases rather than trying to cover every possible setup. Users with coding agents are asked to use those agents as the interface for discovering the project and building personalized setups.\n\nBinaries: ./ds4 (interactive CLI with /help, /read FILE, /ctx N), ./ds4-agent (native coding agent, runs inference directly without a separate HTTP server, native tool format, sessions in ~/.ds4/kvcache with /save /list /switch /del /strip), ./ds4-server (listens on 127.0.0.1:8000), ./ds4-eval (embedded capability regression suites: core, hard, hard-smoke). Speculative decoding is opt-in (GLM --mtp; Flash DSpark needs a matching support GGUF). Directional steering via --dir-steering-file with /steer to adjust scale without rebuilding the KV cache. --power N trades throughput for lower sustained GPU load. Thinking is on by default; --nothink disables.\n\nAcknowledges llama.cpp and GGML heavily — ds4.c does not link against GGML but retains MIT-licensed GGUF quant layouts, CPU quant/dot logic and certain kernels, and keeps the GGML authors' copyright notice.\n\nllama.cpp / GGML — the project DwarfStar credits as the path-opener; quant layouts, kernels and GGUF ecosystem adapted under MIT.",
+    "source": "bookmark",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-09-10",
     "author": "Akshay",
     "handle": "@akshay_pachaar",

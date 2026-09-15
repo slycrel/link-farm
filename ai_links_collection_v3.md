@@ -1,27 +1,29 @@
 # AI Links Collection
-**Total Posts**: 852  
-**Date Range**: 2024-06-11 – 2026-09-10  
-**Enriched**: 851/852 (99%)
+**Total Posts**: 853  
+**Date Range**: 2024-06-11 – 2026-09-15  
+**Enriched**: 852/853 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-09-15T15:01:32Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-09-15T21:14:20Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
+- **2026-09-15** — [Salvatore Sanfilippo](https://github.com/antirez/ds4) — *near-term • Agent Design • v1 enriched*  
+  DwarfStar (github.com/antirez/ds4) is Salvatore Sanfilippo's self-contained C inference engine for running DeepSeek V4 Flash/PRO and GLM 5.2/5.3 on hardware people actually own — Metal on 96GB+ Macs, CUDA including DGX Spark and multi-GPU Ada/L40S, ROCm on Strix Halo — with SSD streaming for models larger than RAM, compressed KV caches, and tensor/pipeline parallelism to glue several machines together. It ships a native coding agent (ds4-agent, with its own KV-cache session save/switch/strip commands) and an HTTP server that Claude Code, Codex CLI, OpenCode and Pi can point at; it is deliberately narrow rather than a general GGUF runner and only runs the GGUF files the project itself produces. 22.3k stars, MIT, beta-quality and fast-moving — notable beyond the code for antirez's explicit 'developed with strong assistance from AI coding agents' disclosure and his argument that software should now ship as a modifiable template you adapt with a coding agent rather than a finished product trying to cover every setup.
 - **2026-09-10** — [Akshay](https://x.com/akshay_pachaar/status/2097421509220561028) — *near-term • Research • 224.4K views • v1 enriched*  
   Akshay breaks down an NVIDIA paper (arxiv.org/abs/2608.03893) that makes KV cache transferable between models, so a target model can skip prefill entirely — conversion runs 2.7–25x faster than re-processing the context. The mapper is closed-form and training-free: a per-layer/per-head linear map plus cross-layer selection (top-8 source layers) reconstructs 79% of the target's key variance for Qwen3 14B→32B. Directly relevant to LLM routing economics, where switching models today invalidates the cached prefix and forces full-rate re-billing; limitations are that all tested pairs are same-family, share KV head count/dim, and are dense full-attention only. Quotes his own first-principles X Article on KV caching.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
+- **local model serving on consumer GPUs — quantization & throughput** (345 posts, +7 this week)  
+  Running capable open models on single-box prosumer hardware: quantization formats (NVFP4/AWQ/GPTQ/GGUF/MLX), KV-cache compression, serving stacks (SGLang, DSpark), and the tok/s benchmarking that goes with it. Renamed from auto-named cluster on 2026-08-21.
+    - 2026-09-15 — [Salvatore Sanfilippo](https://github.com/antirez/ds4): DwarfStar (github.com/antirez/ds4) is Salvatore Sanfilippo's self-contained C inference engine for running DeepSeek V4 Flash/PRO and GLM 5.2…
+    - 2026-09-04 — [hoeem](https://x.com/hooeem/status/2095531746720633267): Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first auto…
+
 - **prediction-market & crypto trading bots** (346 posts, +6 this week)  
   Polymarket and crypto trading-bot content: sweeper and arbitrage bots, Markov-chain trade models, tick-data neural nets, plus one genuinely useful 72M-trade dataset. Heavily promotional and largely off-topic for AI engineering — kept and labelled rather than dropped.
-    - 2026-09-04 — [hoeem](https://x.com/hooeem/status/2095531746720633267): Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first auto…
-    - 2026-09-04 — [elvis](https://x.com/omarsar0/status/2095518433865777600): Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommende…
-
-- **local model serving on consumer GPUs — quantization & throughput** (344 posts, +6 this week)  
-  Running capable open models on single-box prosumer hardware: quantization formats (NVFP4/AWQ/GPTQ/GGUF/MLX), KV-cache compression, serving stacks (SGLang, DSpark), and the tok/s benchmarking that goes with it. Renamed from auto-named cluster on 2026-08-21.
     - 2026-09-04 — [hoeem](https://x.com/hooeem/status/2095531746720633267): Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first auto…
     - 2026-09-04 — [elvis](https://x.com/omarsar0/status/2095518433865777600): Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommende…
 
@@ -51,9 +53,9 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 503 | 59.0% |
-| claude-code | 191 | 22.4% |
-| dev-practices | 367 | 43.1% |
+| agent-design | 504 | 59.1% |
+| claude-code | 192 | 22.5% |
+| dev-practices | 368 | 43.1% |
 | skills-mcp | 195 | 22.9% |
 | prompting | 125 | 14.7% |
 | research | 219 | 25.7% |
@@ -68,6 +70,7 @@
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-09-15 | Salvatore Sanfilippo | agent-design | DwarfStar (github.com/antirez/ds4) is Salvatore Sanfilippo's self-cont... |
 | 2026-09-10 | Akshay | research | Akshay breaks down an NVIDIA paper (arxiv.org/abs/2608.03893) that mak... |
 | 2026-09-04 | Annatar.md | industry | Claims NVIDIA is offering free year-long API access to 140+ hosted mod... |
 | 2026-09-04 | hoeem | agent-design | Announces a free long-form 8-phase course on building multi-agent auto... |
@@ -117,12 +120,13 @@
 | 2026-08-21 | ClaudeDevs | claude-code | Computer use, the browser tool, the Skills API, and the Files API are... |
 | 2026-08-21 | Boris Cherny | claude-code | Cherny confirms Anthropic is changing its data retention policy this f... |
 | 2026-08-21 | elvis | research | Paper on continual learning at the harness level rather than the weigh... |
-| 2026-08-21 | Derrick Wippler | dev-practices | Wippler flags David (@dzhng)'s article 'Building software factories (w... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (503)
+### Agent Design (504)
+
+- [Salvatore Sanfilippo](https://github.com/antirez/ds4) — 2026-09-15: DwarfStar (github.com/antirez/ds4) is Salvatore Sanfilippo's self-contained C inference engine for running DeepSeek V4 Flash/PRO and GLM 5.2/5.3 on hardware people actually own — Metal on 96GB+ Macs, CUDA including DGX Spark and multi-GPU Ada/L40S, ROCm on Strix Halo — with SSD streaming for models larger than RAM, compressed KV caches, and tensor/pipeline parallelism to glue several machines together. It ships a native coding agent (ds4-agent, with its own KV-cache session save/switch/strip commands) and an HTTP server that Claude Code, Codex CLI, OpenCode and Pi can point at; it is deliberately narrow rather than a general GGUF runner and only runs the GGUF files the project itself produces. 22.3k stars, MIT, beta-quality and fast-moving — notable beyond the code for antirez's explicit 'developed with strong assistance from AI coding agents' disclosure and his argument that software should now ship as a modifiable template you adapt with a coding agent rather than a finished product trying to cover every setup.
 
 - [Akshay](https://x.com/akshay_pachaar/status/2097421509220561028) — 2026-09-10: Akshay breaks down an NVIDIA paper (arxiv.org/abs/2608.03893) that makes KV cache transferable between models, so a target model can skip prefill entirely — conversion runs 2.7–25x faster than re-processing the context. The mapper is closed-form and training-free: a per-layer/per-head linear map plus cross-layer selection (top-8 source layers) reconstructs 79% of the target's key variance for Qwen3 14B→32B. Directly relevant to LLM routing economics, where switching models today invalidates the cached prefix and forces full-rate re-billing; limitations are that all tested pairs are same-family, share KV head count/dim, and are dense full-attention only. Quotes his own first-principles X Article on KV caching.
 
@@ -1130,7 +1134,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Claude Code (191)
+### Claude Code (192)
+
+- [Salvatore Sanfilippo](https://github.com/antirez/ds4) — 2026-09-15: DwarfStar (github.com/antirez/ds4) is Salvatore Sanfilippo's self-contained C inference engine for running DeepSeek V4 Flash/PRO and GLM 5.2/5.3 on hardware people actually own — Metal on 96GB+ Macs, CUDA including DGX Spark and multi-GPU Ada/L40S, ROCm on Strix Halo — with SSD streaming for models larger than RAM, compressed KV caches, and tensor/pipeline parallelism to glue several machines together. It ships a native coding agent (ds4-agent, with its own KV-cache session save/switch/strip commands) and an HTTP server that Claude Code, Codex CLI, OpenCode and Pi can point at; it is deliberately narrow rather than a general GGUF runner and only runs the GGUF files the project itself produces. 22.3k stars, MIT, beta-quality and fast-moving — notable beyond the code for antirez's explicit 'developed with strong assistance from AI coding agents' disclosure and his argument that software should now ship as a modifiable template you adapt with a coding agent rather than a finished product trying to cover every setup.
 
 - [rvaniaaa](https://x.com/rvaniaaaa/status/2091991026139361633) — 2026-08-25: Argues personal-knowledge systems die when maintenance cost crosses value — you spend more time filing than thinking (the claimed 90%-abandoned-in-three-months figure is asserted, not sourced). Proposes a 'compiler' architecture instead: raw holds immutable unstructured source material as ground truth, wiki holds structured linked evergreen knowledge that the model writes and the human reads, output holds finished work built from compiled knowledge rather than memory — with a CLAUDE.md at the center carrying identity, preferences, goals and project context that the model reads automatically before every session. Direct sibling of post 2090722810674975071 by the same author, and close to how this collection itself is structured.
 
@@ -1514,7 +1520,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (367)
+### Dev Practices (368)
+
+- [Salvatore Sanfilippo](https://github.com/antirez/ds4) — 2026-09-15: DwarfStar (github.com/antirez/ds4) is Salvatore Sanfilippo's self-contained C inference engine for running DeepSeek V4 Flash/PRO and GLM 5.2/5.3 on hardware people actually own — Metal on 96GB+ Macs, CUDA including DGX Spark and multi-GPU Ada/L40S, ROCm on Strix Halo — with SSD streaming for models larger than RAM, compressed KV caches, and tensor/pipeline parallelism to glue several machines together. It ships a native coding agent (ds4-agent, with its own KV-cache session save/switch/strip commands) and an HTTP server that Claude Code, Codex CLI, OpenCode and Pi can point at; it is deliberately narrow rather than a general GGUF runner and only runs the GGUF files the project itself produces. 22.3k stars, MIT, beta-quality and fast-moving — notable beyond the code for antirez's explicit 'developed with strong assistance from AI coding agents' disclosure and his argument that software should now ship as a modifiable template you adapt with a coding agent rather than a finished product trying to cover every setup.
 
 - [Akshay](https://x.com/akshay_pachaar/status/2097421509220561028) — 2026-09-10: Akshay breaks down an NVIDIA paper (arxiv.org/abs/2608.03893) that makes KV cache transferable between models, so a target model can skip prefill entirely — conversion runs 2.7–25x faster than re-processing the context. The mapper is closed-form and training-free: a per-layer/per-head linear map plus cross-layer selection (top-8 source layers) reconstructs 79% of the target's key variance for Qwen3 14B→32B. Directly relevant to LLM routing economics, where switching models today invalidates the cached prefix and forces full-rate re-billing; limitations are that all tested pairs are same-family, share KV head count/dim, and are dense full-attention only. Quotes his own first-principles X Article on KV caching.
 
@@ -4422,6 +4430,9 @@
 ## Full Chronological List
 
 ### Sep 2026
+
+- **2026-09-15** | [Salvatore Sanfilippo](https://github.com/antirez/ds4) | agent-design, dev-practices, claude-code
+  DwarfStar (github.com/antirez/ds4) is Salvatore Sanfilippo's self-contained C inference engine for running DeepSeek V4 Flash/PRO and GLM 5.2/5.3 on hardware people actually own — Metal on 96GB+ Macs, CUDA including DGX Spark and multi-GPU Ada/L40S, ROCm on Strix Halo — with SSD streaming for models larger than RAM, compressed KV caches, and tensor/pipeline parallelism to glue several machines together. It ships a native coding agent (ds4-agent, with its own KV-cache session save/switch/strip commands) and an HTTP server that Claude Code, Codex CLI, OpenCode and Pi can point at; it is deliberately narrow rather than a general GGUF runner and only runs the GGUF files the project itself produces. 22.3k stars, MIT, beta-quality and fast-moving — notable beyond the code for antirez's explicit 'developed with strong assistance from AI coding agents' disclosure and his argument that software should now ship as a modifiable template you adapt with a coding agent rather than a finished product trying to cover every setup.
 
 - **2026-09-10** | [Akshay](https://x.com/akshay_pachaar/status/2097421509220561028) | research, agent-design, dev-practices
   Akshay breaks down an NVIDIA paper (arxiv.org/abs/2608.03893) that makes KV cache transferable between models, so a target model can skip prefill entirely — conversion runs 2.7–25x faster than re-processing the context. The mapper is closed-form and training-free: a per-layer/per-head linear map plus cross-layer selection (top-8 source layers) reconstructs 79% of the target's key variance for Qwen3 14B→32B. Directly relevant to LLM routing economics, where switching models today invalidates the cached prefix and forces full-rate re-billing; limitations are that all tested pairs are same-family, share KV head count/dim, and are dense full-attention only. Quotes his own first-principles X Article on KV caching.
