@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-09-14T16:19:57Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-09-15T15:01:32Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-09-10** — [Akshay](https://x.com/akshay_pachaar/status/2097421509220561028) — *near-term • Research • 224.4K views • v1 enriched*  
@@ -15,27 +15,27 @@
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **prediction-market & crypto trading bots** (346 posts, +7 this week)  
+- **prediction-market & crypto trading bots** (346 posts, +6 this week)  
   Polymarket and crypto trading-bot content: sweeper and arbitrage bots, Markov-chain trade models, tick-data neural nets, plus one genuinely useful 72M-trade dataset. Heavily promotional and largely off-topic for AI engineering — kept and labelled rather than dropped.
     - 2026-09-04 — [hoeem](https://x.com/hooeem/status/2095531746720633267): Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first auto…
     - 2026-09-04 — [elvis](https://x.com/omarsar0/status/2095518433865777600): Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommende…
 
-- **local model serving on consumer GPUs — quantization & throughput** (344 posts, +7 this week)  
+- **local model serving on consumer GPUs — quantization & throughput** (344 posts, +6 this week)  
   Running capable open models on single-box prosumer hardware: quantization formats (NVFP4/AWQ/GPTQ/GGUF/MLX), KV-cache compression, serving stacks (SGLang, DSpark), and the tok/s benchmarking that goes with it. Renamed from auto-named cluster on 2026-08-21.
     - 2026-09-04 — [hoeem](https://x.com/hooeem/status/2095531746720633267): Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first auto…
     - 2026-09-04 — [elvis](https://x.com/omarsar0/status/2095518433865777600): Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommende…
 
-- **self-improving skills (autoresearch pattern)** (341 posts, +7 this week)  
+- **self-improving skills (autoresearch pattern)** (341 posts, +6 this week)  
   Skills and harnesses that improve themselves or each other, mostly downstream of Karpathy's autoresearch method — meta-skills that optimise other skills, /autobrowse, recursive self-improvement loops, and agents that accumulate site knowledge instead of rediscovering it.
     - 2026-09-04 — [hoeem](https://x.com/hooeem/status/2095531746720633267): Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first auto…
     - 2026-09-04 — [elvis](https://x.com/omarsar0/status/2095518433865777600): Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommende…
 
-- **founder philosophy & life-design essays** (341 posts, +7 this week)  
+- **founder philosophy & life-design essays** (341 posts, +6 this week)  
   First-principles method and life-design content: Musk's 5-step algorithm, Jobs on product design, Dan Koe-style essays, systems thinking, 'the right way to build a startup'. Mostly endorsement posts pointing at a longer read; quality varies widely.
     - 2026-09-04 — [hoeem](https://x.com/hooeem/status/2095531746720633267): Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first auto…
     - 2026-09-04 — [elvis](https://x.com/omarsar0/status/2095518433865777600): Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommende…
 
-- **elite-skill masterclass content** (340 posts, +7 this week)  
+- **elite-skill masterclass content** (340 posts, +6 this week)  
   Free lectures and 'masterclass' reposts promising an elite skill — quant trading maths (Jane Street, Jim Simons, Berkeley), high-stakes persuasion. Aspirational skill-acquisition material, usually hype-packaged, occasionally with a real lecture behind it.
     - 2026-09-04 — [hoeem](https://x.com/hooeem/status/2095531746720633267): Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first auto…
     - 2026-09-04 — [elvis](https://x.com/omarsar0/status/2095518433865777600): Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommende…
