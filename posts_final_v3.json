@@ -1,5 +1,956 @@
 [
   {
+    "date": "2026-09-16",
+    "author": "Yarchi",
+    "handle": "@undefinedki",
+    "subject": "Post by Yarchi on X",
+    "url": "https://x.com/undefinedki/status/2100206342942187620",
+    "summary": "Describes Google's Stellar Colosseum, a multi-agent setup published for unsolved math problems and already built into Antigravity, Google's agent development tool. Running on Gemini models it reportedly proved 71% of research-level theorems drawn from top CS conference papers and solved 218 of 222 competitive programming puzzles. The transferable structure for long agent tasks: explore several routes and have agents attack each other's before building; gate progress on surviving review; split the plan into sections with dependencies so a failure retries only that section; pair every generator with a falsifier whose only job is breaking the output; then merge candidates.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "4,142",
+    "notes": "",
+    "enriched": true,
+    "content": "Yarchi @undefinedKi\nIf your agents keep falling apart on long tasks, Google's team has a fix.\n\nThey just published the multi-agent setup they use on unsolved math problems. Google already built it into Antigravity, its agent development tool.\n\nIt's called Stellar Colosseum. Running on Google's Gemini models, it correctly proved 71% of research-level theorems taken from papers at the top computer science conferences. On competitive programming puzzles, it solved 218 out of 222.\n\nThe structure works for any long agent task:\n\n1. Explore several routes before building. Agents propose approaches and attack each other's.\n\n2. Add a readiness gate. A route moves forward only after it survives review. Otherwise, back to exploring.\n\n3. Split the plan into sections with dependencies. When one fails, retry that section and keep the rest.\n\n4. Pair every generator with a falsifier whose only job is breaking the output.\n\n5. Merge candidates together",
+    "source": "bookmark",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Nathan Flurry",
+    "handle": "@nathanflurry",
+    "subject": "Post by Nathan Flurry 🔩 on X",
+    "url": "https://x.com/nathanflurry/status/2100036101809619314",
+    "summary": "A deliberately hype-free framing of Jev: not a replacement for GPT or Claude, but 'a really smart switch statement' — 2016-era ML classifiers at 2026 intelligence levels, which the author notes is rebranded rather than genuinely new. It needs a predefined option set and returns which to take. It cannot write code, generate natural language, reason step by step, produce undefined output, or pick from more than ~255 options in one shot; it can classify, route, score, rank, give confidence, pick the right branch/tool/model/sub-agent, judge or guardrail an LLM's output, and label large volumes of rows. Suggests the shape: LLM proposes options -> Jev decides -> code executes. A useful skeptical counterweight to the Jev launch posts.",
+    "topics": [
+      "industry",
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "457.6K",
+    "notes": "",
+    "enriched": true,
+    "content": "Nathan Flurry 🔩 @NathanFlurry\nhype-free explanation of jev:\n\njev does not replace gpt / claude\n\njev is just a *really* smart switch statement\n\nlike if 2016 ml classifiers got 2026 levels of intelligence\n\nit's a new* type of tool that will make a lot of workloads insanely fast, cheap, and accurate\n\n* = and by new, i mean rebranded\n\n~~~\n\nit needs a predefined set of options and it will tell you which one to take\n\nit cannot:\n\n- write code\n- generate natural language\n- reason step by step / show its work\n- produce any output you didn't define in advance\n- pick from more than ~255 options in one shot\n\nbut it can:\n\n- classify, route, score, rank\n- give confidence\n- pick the right branch, tool, model, or sub-agent\n- judge / verify / guardrail an llm's output\n- label tons and tons of rows\n\n~~~\n\ni'd imagine a lot of workflows that look like:\n\nllm proposes options → jev decides → code executes",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Michael",
+    "handle": "@michaellee04",
+    "subject": "Post by Michael on X",
+    "url": "https://x.com/michaellee04/status/2100003037150683593",
+    "summary": "Hands-on report of roughly 5,000 Jev requests for about $2, spanning classification, model routing, intent detection and steering. The author's argument is that Jev is a new decision-making primitive distinct from both deterministic code and LLM calls, covering decisions too nuanced for dumb code but not worth a slow, expensive LLM. He expects to make several Jev calls per LLM call and suggests most companies using LLMs could add a Jev call before and/or after existing calls to improve tool-calling behaviour cheaply. Compares against his own prior classification benchmark.",
+    "topics": [
+      "industry",
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "416.8K",
+    "notes": "",
+    "enriched": true,
+    "content": "Michael @MichaelLee04\nI got access to Jev earlier today (thank you @hackgoofer). I have run ~5,000 requests so far, (which cost me around $2!), across classification, model routing, intent, steering, and many other things.\n\ntl;dr, Jev enables a new intelligent decision-making primitive, separate from deterministic code and LLM calls. This allows a class of decision-making that was neither suited to dumb, unintelligent code, nor to slow, expensive LLMs.\n\nIt is super fast and cheap, and I think I will likely end up making a few Jev calls to every LLM call I make in my product. I think probably any company using LLM requests today can probably add a Jev call pre and/or post LLM calls to quite literally make their product much better for free, and have better tool calling behavior in many cases.\n\nI happened to have a personal benchmark for this as I’d been working on a ton of proactivity and classification tasks. I have been using the deepseek flash an",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Teknium",
+    "handle": "@teknium",
+    "subject": "Post by Teknium 🪽 on X",
+    "url": "https://x.com/teknium/status/2099996435324518533",
+    "summary": "Teknium's first blog post covers running roughly 1,393 Hermes Agent subagents over 19 hours to refactor about 400,000 lines out of Hermes Agent's million-line Python repo, ending 34.4% smaller and, by Nous Research's estimate, saving nearly $2m in engineering hours (nousresearch.com/refactoring-hermes-with-1393-agents). A concrete large-scale data point on massively parallel subagent refactoring.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "127.6K",
+    "notes": "",
+    "enriched": true,
+    "content": "Teknium 🩽 @Teknium\nMy first blog - Hermes powered almost 1400 subagents over 19 hours to refactor 400,000 LOC out of Hermes Agent's repo.\n\nRead the full story below!\n\nQuote: Nous Research @NousResearch · 16h — New blog post: We had a million lines of Python to clean up. On September 2nd @Teknium asked Hermes Agent to do it. 1,393 subagents and nineteen hours later, the codebase was 34.4% smaller, saving us nearly $2m in engineering hours. https://nousresearch.com/refactoring-hermes-with-1393-agents",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Nate Berkopec",
+    "handle": "@nateberkopec",
+    "subject": "Post by Nate Berkopec on X",
+    "url": "https://x.com/nateberkopec/status/2099995262802641129",
+    "summary": "Nate Berkopec says he has spent three months telling all his clients to move everything to MCPs and executor.sh, having been convinced by an internal 'MCP proxy' built at a client and by large companies like Ramp adopting the same 'MCP of MCPs' approach. Quotes Rhys Sullivan's case for MCP over CLIs: an indexable tool catalog that scales agents to unlimited tools, no requirement to run a full sandbox, and consistent auth across servers instead of each CLI inventing its own.",
+    "topics": [
+      "skills-mcp",
+      "dev-practices",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "46.9K",
+    "notes": "",
+    "enriched": true,
+    "content": "Nate Berkopec @nateberkopec\nFor the last 3 months I've been telling all my clients to move everything to MCPs and https://executor.sh. I saw the light when @jsharkey showed me an internal \"mcp proxy\" they had built that was similar, and saw big co's like Ramp adopt the same \"mcp of mcps\" approach\n\nQuote: Rhys @RhysSullivan · 17h — total MCP victory, some quick misc thoughts about why MCP is so much better than CLIs: - indexable tool catalog letting agents scale to unlimited tools - no requirements to be running a full sandbox - consistent auth across all MCPs rather than each CLI inventing its own auth",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Chi Wang",
+    "handle": "@chi_wang_",
+    "subject": "Post by Chi Wang on X",
+    "url": "https://x.com/chi_wang_/status/2099988069642604556",
+    "summary": "Notes that NVIDIA's OpenShell uses the Z3 theorem prover to verify agent actions, and that when it denies a path it returns the exact constraint adjustment needed. The argument is that binary guardrails just halt the loop whereas structured counterexamples turn a block into a solvable recovery step. Links nvidia.github.io/OpenShell-Research dev notes on formal methods for agent policy.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "3,278",
+    "notes": "",
+    "enriched": true,
+    "content": "Chi Wang @Chi_Wang_\nNVIDIA's OpenShell uses the Z3 theorem prover to verify agent actions. When denying a path, it returns the exact constraint adjustment needed.\n\nBinary guardrails just halt the loop. Returning structured counterexamples turns a block into a solvable recovery step.\n\nhttps://nvidia.github.io/OpenShell-Research/dev-notes/posts/2026-09-10-learning-formal-methods-agent-policy-prover/",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "klöss",
+    "handle": "@kloss_xyz",
+    "subject": "Post by klöss on X",
+    "url": "https://x.com/kloss_xyz/status/2099979132616778121",
+    "summary": "Distills a Grok Bot Galaxy session into a 22-rule playbook for running a fleet of bots, where an 'engineer bot' onboards other bots by passing fleet rules in a single message and the bots detect conflicts between their own rules. 'Steal it' framing and quote-boosting a launch event, but the bot-onboards-bot and self-detected-rule-conflict patterns are the substantive part.",
+    "topics": [
+      "agent-design",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "13.1K",
+    "notes": "",
+    "enriched": true,
+    "content": "klöss @kloss_xyz\nRewatched @lingxi's Grok Bot Galaxy session.\n\nHis engineer bot onboards bots with fleet rules in one message. Bots even catch their own rule conflicts.\n\nSo I turned his system into a 22-rule playbook.\n\nSteal it.\n\nQuote: Grok Bot @bot · 23h — Three SpaceXAI employees are building a company in 3 days with Grok Bot. This is Day 1. Matt Palmer (@mattyp), Lauren Tan (@poteto), and Roshan Sadanani (@roshan_s) start with research, a plan, and a product. Live now, plus sessions for engineering, product, and founders.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Aaron Levie",
+    "handle": "@levie",
+    "subject": "Post by Aaron Levie on X",
+    "url": "https://x.com/levie/status/2099976021311398230",
+    "summary": "Aaron Levie (Box) argues there is a large gap between raw model capability and the workflows enterprises actually want automated, and that the 'applied AI layer' filling it must connect intelligence to workflows, re-engineer processes, aggregate context and data, design human-in-the-loop steps, drive change management, run domain-specific evals, and handle data/process security and governance. His claim is that this layer becomes more important as models improve, since greater capability invites more complex tasks.",
+    "topics": [
+      "industry",
+      "agent-design",
+      "management"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Aaron Levie @levie\nThere’s a massive chasm between the power of AI models and the ultimate workflows that enterprises are trying to automate. This gap is the opportunity for the applied AI layer to fill.\n\nYou need to connect the intelligence to workflows, often reengineer processes, aggregate the right context and data, allow for the right human in the loop experiences, drive change management, do domain specific evals, manage the security and governance of the data and process, and much more.\n\nWe’re going to see this layer emerge in every vertical and horizontal category. And ironically, even as models improve at incredible rates, this layer still must exist - and may become even more important and useful. Greater capability enables even more complex tasks to be tackled, amplifying the challenges if you don’t do this well.\n\nWas super fun chatting with @sonyatweetybird on all the things going into AI diffusion.\n\nQuote: Sonya Huang @sonyatweetybird",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Raj Singh",
+    "handle": "@mobileraj",
+    "subject": "Post by Raj Singh on X (workflow)",
+    "url": "https://x.com/mobileraj/status/2099959137438503252",
+    "summary": "Quote-boosts Gergely Orosz's diagram of OpenAI's agentic software factory and argues it should reduce anxiety about team velocity, since he suspects many product teams already operate close to this today. Useful as a calibration point for leaders benchmarking their own agent adoption.",
+    "topics": [
+      "management",
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "64.6K",
+    "notes": "flag: workflow",
+    "enriched": true,
+    "content": "Raj Singh @mobileraj\nThere is a constant fear that your team is moving too slow. This diagram should quell some of that anxiety. I suspect this is already pretty close to how many product teams operate today.\n\nQuote: Gergely Orosz @GergelyOrosz · 19h — Here's what OpenAI's agentic software factory looks like, today. Details: https://newsletter.pragmaticengineer.com/p/openai-software-factory (thanks to all the OpenAI folks who explained how it works! And Perf Factory looks especially interesting to me)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Yarchi",
+    "handle": "@undefinedki",
+    "subject": "Post by Yarchi on X",
+    "url": "https://x.com/undefinedki/status/2099952282217615827",
+    "summary": "Summarizes Airbnb's published method for mapping what a support assistant will face before launch, which they encoded as a reusable pipeline after redoing the work per language and country. The core loop is extract -> embed -> cluster: a single structured-output labelling pass over every item (the only step touching the model at scale, so it sets cost), then embedding the labels rather than the raw text, so clusters group by what the model decided instead of by sentence phrasing. Applies to any unstructured corpus: tickets, survey answers, reviews, sales calls, or a model's own failures.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Yarchi @undefinedKi\nAirbnb just published the AI agent setup their own teams run. Task that took months now takes days.\n\nThey needed to map what their support assistant would face before launch. That work lived scattered across notebooks, and they had to redo it for every new language and country.\n\nSo they encoded the method itself. It runs over any unstructured text, so this works for anything you would otherwise read by hand: support tickets, survey answers, reviews, sales calls, your own model's failures.\n\nHere is the shape, and what it takes to build one.\n\nThe core loop is: extract -> embed -> cluster.\n\nExtract runs a labelling pass over every item in the corpus. One schema, structured output, no free text. This is the only step that touches the model at scale, so it sets your cost.\n\nEmbed the labels, not the raw text. That single choice is what makes the clusters mean anything, because you are grouping by what the model decided, not by how the sentence was written.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Dan Shipper",
+    "handle": "@danshipper",
+    "subject": "Post by Dan Shipper on X",
+    "url": "https://x.com/danshipper/status/2099947471518474522",
+    "summary": "Reports that Every has spent about a week testing Jev, a model they consider indispensable within 6-12 months, noting they almost never test new foundation models. The distinguishing property is that it outputs probabilities rather than words, letting it act as a judge where you would otherwise need a Fable-level model, and in their testing it was 25x faster and 600x lower priced. Links a vibe check on every.to.",
+    "topics": [
+      "industry",
+      "research",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "203.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "Dan Shipper @danshipper\nwe almost never test new foundation models but we've been testing this for ~a week @every and it's pretty wild.\n\nthe kind of things that will be obviously indispensible in 6-12 months\n\nit doesn't produce words as output, it produces probabilities. so it can efficiently act as a judge in cases where you'd need a Fable-level model—but in our testing was 25x faster and 600x lower priced\n\nexcellent vibe check by @hammer_mt on @every: https://every.to/also-true-for-humans/mini-vibe-check-typesafe-s-jev-judged-everything-i-ve-written-in-0-7-seconds\n\nQuote: Diogo Almeida @CompleteSkeptic · 20h — After co-inventing ChatGPT, I kept asking myself: why have superhuman chat models not led to AGI? I’ve spent the last 2 years in stealth building a new way to train models (RLCD), and a new type of frontier AI model that we are releasing today: Jev • 20-200x faster • 40-400x",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Gergely Orosz",
+    "handle": "@gergelyorosz",
+    "subject": "Post by Gergely Orosz on X",
+    "url": "https://x.com/gergelyorosz/status/2099945497377091902",
+    "summary": "Publishes a breakdown of OpenAI's agentic software factory as it operates today, based on explanations from OpenAI engineers (newsletter.pragmaticengineer.com/p/openai-software-factory). Orosz singles out their 'Perf Factory' as especially interesting.",
+    "topics": [
+      "management",
+      "dev-practices",
+      "industry",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "292K",
+    "notes": "",
+    "enriched": true,
+    "content": "Gergely Orosz @GergelyOrosz\nHere's what OpenAI's agentic software factory looks like, today.\n\nDetails: https://newsletter.pragmaticengineer.com/p/openai-software-factory\n\n(thanks to all the OpenAI folks who explained how it works! And Perf Factory looks especially interesting to me)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Zach Lloyd",
+    "handle": "@zachlloydtweets",
+    "subject": "Post by Zach Lloyd on X",
+    "url": "https://x.com/zachlloydtweets/status/2099941244063432720",
+    "summary": "X Article laying out crawl/walk/run steps for moving from local interactive agents to a software factory (a closed agentic loop running in the cloud). The 'crawl' stage is simple Trigger -> Agent Activity automations that many eng leaders have already started: agents that reproduce and label new issues, review PRs as they open, respond to a Sentry alert and debug it, or self-heal CI by identifying PRs to roll back. Written for eng leaders and platform engineers who find the full model daunting.",
+    "topics": [
+      "management",
+      "dev-practices",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "133.1K",
+    "notes": "",
+    "enriched": true,
+    "content": "Zach Lloyd @zachlloydtweets\nAdopting the software factory model: crawl, walk, run\n\nThe software factory approach (a closed agentic loop that runs in the cloud) is growing in popularity, but it can be daunting to adopt. In this post I’ll go through “crawl, walk, run” steps for making the transition from local, interactive agents to automated cloud development.\n\nCrawl\n\nMany eng leaders and platform engineers I speak with have already started on the “crawl” part of building a software factory by building simple automations using cloud agents.\n\nThink of these automations as Trigger → Agent Activity.\n\nFor example:\nIssue reproduction and triage: have an agent look at all new issues that are filed and reproduce them and label them.\nCode review: Automatically review PRs as they are opened and leave comments\nMonitoring: have an agent that responds to a Sentry alert and debugs and fixes an issue\nSelf-heal CI: fix broken CI by identifying PRs to roll",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Hermes Agent Super-Intel",
+    "handle": "@bkashjosi",
+    "subject": "Post by Hermes Agent Super-Intel on X",
+    "url": "https://x.com/bkashjosi/status/2099926011303625207",
+    "summary": "Pitches a 'library' interface for Hermes Agent: a complete guide, skills books installable directly, and a click-to-activate plugin list. Concept post about packaging agent capabilities as browsable, one-click-installable units rather than a shipped artifact; emoji-heavy promotional framing, so treat the specifics as aspirational.",
+    "topics": [
+      "skills-mcp",
+      "agent-design",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "3,918",
+    "notes": "",
+    "enriched": true,
+    "content": "Hermes Agent Super-Intel @BkashJosi\nWhat if your Hermes Agent has a complete Library of all the things related to Hermes Agent ? 🚀🩽\n\nYou got stuck need help. Pick a book. 📕. It has :\n\n1. Complete Hermes Agent Guide\n2. Skills Books which can be directly installed.\n3. List of plugins and click to activate. 🚀\n\nAnd many more to be added. 🔥🌟\nTeknium 🩽 and Nous Research",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Diogo Almeida",
+    "handle": "@completeskeptic",
+    "subject": "Post by Diogo Almeida on X",
+    "url": "https://x.com/completeskeptic/status/2099925690682630371",
+    "summary": "Follow-up to the Jev announcement pointing at the technical release blog (typesafe.ai/blog/introducing-system-one-models-and-jev), an early-access waitlist at typesafe.ai, and a Discord. Opens by acknowledging that extraordinary claims require extraordinary evidence — the blog is the place to check the numbers claimed in the launch post.",
+    "topics": [
+      "industry",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "489.5K",
+    "notes": "",
+    "enriched": true,
+    "content": "Diogo Almeida @CompleteSkeptic\nExtraordinary claims require extraordinary evidence so check out our release blog for more technical info: https://typesafe.ai/blog/introducing-system-one-models-and-jev\n\nJoin our waitlist for early access: https://typesafe.ai\n\nHave technical chats and meme with us on Discord (rumors are good memers skip the line): https://discord.gg/WUujKYBp8s\n\nWe are so pumped this is in the hands of developers now, and we are just getting started!!!\n\nLink card: Introducing System One Models & Jev - TypeSafe AI Blog (typesafe.ai)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Diogo Almeida",
+    "handle": "@completeskeptic",
+    "subject": "Post by Diogo Almeida on X",
+    "url": "https://x.com/completeskeptic/status/2099925682726002904",
+    "summary": "Launch announcement for Jev from TypeSafe AI. Almeida, who describes himself as a ChatGPT co-inventor, says he spent two years in stealth on a new training method (RLCD) and a model type optimized for decisions rather than chat, claiming 20-200x faster, 40-400x cheaper with output tokens free, and 'frontier composable intelligence.' His framing question is why superhuman chat models have not led to AGI. At 22.4M views this is the anchor post for the Jev launch cluster in this batch; the performance figures are the company's own.",
+    "topics": [
+      "industry",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "22.4M",
+    "notes": "",
+    "enriched": true,
+    "content": "Diogo Almeida @CompleteSkeptic\nAfter co-inventing ChatGPT, I kept asking myself: why have superhuman chat models not led to AGI?\n\nI’ve spent the last 2 years in stealth building a new way to train models (RLCD), and a new type of frontier AI model that we are releasing today: Jev\n\n• 20-200x faster\n• 40-400x cheaper (w/ output tokens free)\n• Frontier composable intelligence optimized for decisions\n\nAFAICT the shortest path to AI-based economic revolution",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "beamnxw ./",
+    "handle": "@beamnxw",
+    "subject": "Post by beamnxw ./ on X",
+    "url": "https://x.com/beamnxw/status/2099920164397699464",
+    "summary": "Covers WikiSkill from Google engineers, which turns an agent's execution history into persistent knowledge and compiles it into reusable skills — an 'experience compiler' for agents. The loop: run tasks, preserve raw traces, consolidate recurring failures and successful strategies into a wiki, propose one atomic skill update, validate, then keep or roll back. The design point the author highlights is that skills can roll back but the wiki never does, so successful strategies, recurring failures, rejected edits and skill impact history all survive into the next iteration.",
+    "topics": [
+      "agent-design",
+      "skills-mcp",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "28.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "beamnxw ./ @beamnxw\nthis work from Google engineers is pure f*cking treasure\n\nthey built WikiSkill: a system that turns an agent's execution history into persistent knowledge, then compiles it into reusable skills\n\nthis is basically an experience compiler for agents\n\nthe loop:\n\nrun tasks ➜ preserve raw traces ➜ consolidate recurring failures + successful strategies into a wiki ➜ propose one atomic skill update ➜ validate ➜ keep or rollback\n\nthe clever part:\n\nskills can roll back\nthe wiki never does\n\nsuccessful strategies, recurring failures, rejected edits and skill impact history survive into the next iteration\n\nthe result is f*cking amazing\n\nmy takeaway:\n\nthe next agent memory layer should distill experience into procedures an agent can execute, validate and transfer\n\nraw traces ➜ persistent knowledge ➜ validated skills ➜ a better next run",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Viv",
+    "handle": "@vtrivedy10",
+    "subject": "Post by Viv on X",
+    "url": "https://x.com/vtrivedy10/status/2099902899341926641",
+    "summary": "Argues that continuously converting production data into evals is one of the most promising directions in AI, and that teams should staff it. Running agents in production yields both failure/inefficiency signal and large-scale understanding of how people actually want to use the agent; pairing human experts with agents turns that data into tasks reflecting what the company actually wants agents to be good at. Frames this as a continual-learning loop teams should own themselves via open recipes.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "11.5K",
+    "notes": "",
+    "enriched": true,
+    "content": "Viv @Vtrivedy10\nContinuously converting your valuable Data into Evals that improve your agent over time\n\nthe “Eval God Mode” that Alex & I riff on is one of the most exciting research + product directions in AI\n\nteams should focus energy + people on figuring out what this looks like for them, we’d love to help!\n\nthe more we run our agents in production - the more data we gather about how they perform on real world tasks\n\n2 important things come from this:\n\n1. Identifying any mistakes or inefficiencies\n2. Understanding User behavior at scale -> how do people actually want to use your agent and why?\n\none view of Continual Learning is pairing Human Experts with Agents to turn that valuable real world data into Tasks that reflect what your company actually wants agents to be good at\n\nAgents improve at this with every generation, but they’re not perfect\n\nWe work a lot on open recipes for helping teams own this loop themselves\n\nYour data is the most v",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Yarchi",
+    "handle": "@undefinedki",
+    "subject": "Post by Yarchi on X",
+    "url": "https://x.com/undefinedki/status/2099893390309515770",
+    "summary": "Points at 'i-have-adhd' (github.com/ayghri/i-have-adhd), an MIT-licensed Claude skill that constrains assistant output to ten rules: lead with the next action, number the steps, cap lists at five, give time in minutes rather than vague terms, no preamble/recap/pleasantries, and end every reply with one concrete next step. Installs with a single CLI line and is forkable if you want different rules.",
+    "topics": [
+      "claude-code",
+      "skills-mcp",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "2,522",
+    "notes": "",
+    "enriched": true,
+    "content": "Yarchi @undefinedKi\nThis might be the best skill for Claude you can install today\n\nIt is called i-have-adhd. A skill that stops your coding assistant burying the answer.\n\nTen rules. Lead with the next action. Number the steps. Cap lists at five. Give time in minutes, not \"a bit\". No preamble, no recap, no \"Hope this helps!\"\n\nEvery reply ends with one concrete next step.\n\nInstall by pasting one line into your CLI. MIT, and you can fork it and rewrite the rules.\n\nLink: https://github.com/ayghri/i-have-adhd\n\nQuote: Yarchi @undefinedKi · Aug 29 — Article: How to Set Up Claude Once and Get 10x Out of It (You Have No Idea What Your Chat Can Actually Do). There is a version of Claude that already knows who you are, and you are one evening away from it. Right now you probably open a chat, explain who you are, explain the project, paste the same context,...",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "rvaniaaa",
+    "handle": "@rvaniaaaa",
+    "subject": "Post by rvaniaaa on X",
+    "url": "https://x.com/rvaniaaaa/status/2099881788826902678",
+    "summary": "Compares two teams on the same task with the same model where one spent $200 on compute and one $9, and attributes the quality gap to who checked the work. The better setup split the job across three separate agents (one writes a spec, one builds, one drives the result in a browser and grades it with no memory of having built it) and took 6 hours versus 20 minutes. Three decisions explain the gap: the builder never grades its own work, dangerous actions are removed from the environment rather than prompted about (a sealed folder with no network dropped permission prompts 84%), and rules live outside the context window.",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "996",
+    "notes": "",
+    "enriched": true,
+    "content": "rvaniaaa @rvaniaaaa\nA team running $200 in AI compute got a noticeably better result than the team running $9. Same task. Same model. The only difference was who checked the work.\n\nTheir setup split the job across three separate AIs instead of one. One turned the request into a spec. One built it. One drove the finished thing in a browser and graded it, with no memory of having built it.\n\nThe unharnessed version finished the same task in 20 minutes. The split version took 6 hours and cost 20 times as much.\n\nThree decisions explain the gap:\n\n1. The builder never grades its own work. A fresh session checks it, carrying none of the reasoning that produced the bug in the first place.\n\n2. Dangerous actions aren’t asked about, they’re removed. One team boxed their agent into an environment with no network access and no reach outside a sealed folder, and permission prompts dropped 84% because there was nothing left to click through.\n\n3. Rules live outside compr",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Charlie Hills",
+    "handle": "@charliejhills",
+    "subject": "Post by Charlie Hills on X",
+    "url": "https://x.com/charliejhills/status/2099879785363304546",
+    "summary": "A four-step method for imposing a graph on an overloaded Claude Code folder (charliehills.substack.com/p/graph-engineering-claude-code): prompt one writes MAP.md, then check for conflicts, duplicates and unlinked work, approve the smallest fixes, and use a third prompt to update CLAUDE.md. The author ran it on his own folders and found 1,840 of 2,364 documents (78%) with nothing pointing at them. Notes he verifies whether each connection is FOUND or GUESSED before trusting it, and frames the goal as onboarding a team into his system without him in the middle.",
+    "topics": [
+      "claude-code",
+      "dev-practices",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "57K",
+    "notes": "",
+    "enriched": true,
+    "content": "Charlie Hills @charliejhills\nYou dumped everything into your Claude Code folder.\n\nHere's how to (actually) set up a graph in four steps:\n\nFull walkthrough here → https://charliehills.substack.com/p/graph-engineering-claude-code\n\nI ignored graphs for months (context, loop, and now this).\n\nIt was the thing standing between me and getting my team into my system without me in the middle.\n\nSo I ran the check on my own folders and 1,840 of 2,364 documents had nothing pointing at them.\n\nThat's 78% (and I do this full time).\n\n1. Draw the map. Prompt one writes MAP.md.\n2. Check for conflicts, duplicates and unlinked work.\n3. Use prompt two, then approve the smallest fixes.\n4. Use prompt three to update CLAUDE.md.\n\nAnd I check whether each connection is FOUND or GUESSED before I trust it.\n\nRepost ♻️ to help someone in your network.\n\nQuote: Charlie Hills @charliejhills · Sep 13 — Article: Graph engineering (for normal people)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "George from prodmgmt.world",
+    "handle": "@nurijanian",
+    "subject": "Post by George from 🕹prodmgmt.world on X",
+    "url": "https://x.com/nurijanian/status/2099876646400753923",
+    "summary": "Argues against asking an agent 'what should we build next?' (which returns a feature list) and instead prompting it to build a MECE issue tree for the opportunity, withholding solutions until the tree is complete and flagging any branch with no evidence. Packaged as a reusable /mckinsey-issue-tree command; quotes the author's own longer X Article on issue trees.",
+    "topics": [
+      "prompting",
+      "agent-design",
+      "management"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "29.2K",
+    "notes": "",
+    "enriched": true,
+    "content": "George from 🕹prodmgmt.world @nurijanian\nSTOP ASKING “what should we build next?”\nYou get a feature list every time.\n\nAsk this instead:\n“Build an issue tree for this opportunity. MECE branches. No solutions until the tree is complete. Flag any branch with no evidence.”\n\n/mckinsey-issue-tree\n\nQuote: George from prodmgmt.world @nurijanian · Jul 27 — Article: /mckinsey-issue-tree: trees to solve any problem. Many product and business problems go wrong before people even start to study them. This happens because the team has not agreed on what problem they are trying to solve. One question can make people...",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Navaneeth Krishnan",
+    "handle": "@navaneethvb",
+    "subject": "Post by Navaneeth Krishnan on X",
+    "url": "https://x.com/navaneethvb/status/2099861736857989507",
+    "summary": "Explains that production LLM sampling is more than temperature/top-k/top-p once continuous batching is involved: four concurrent requests decoding together (greedy; temp+top_p; top_k+repetition penalty; seeded with JSON constraints) share one model forward pass producing a logits matrix with one row per active request, but each row needs different selection rules. Walks through how vLLM handles this. Author is writing an inference-engineering repo with a sampling chapter to follow.",
+    "topics": [
+      "research",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Navaneeth Krishnan @navaneethvb\nOne of the core concepts in production LLM inference is sampling but most people explain temperature, top-k, top-p and leave it there and thats the basic gist, but production sampling is much more than this and gets a lot messier once stuff like continuous batching comes in.\n\nso to understand this, lets say u have 4 requests that are decoding together.\n\n[Note: this assumes you already know the basics of sampling in inference. If not, wait for the sampling chapter in my inference engineering repo, I’ll cover the basics there first.]\n\n- A is greedy\n- B has temp 0.7 + top_p 0.9\n- C has top_k 50 + repetition penalty\n- D has its own seed and needs valid JSON output\n\nso logically they can all still go through the same model forward pass which basically gives us a logits matrix with one row per active request.\n\nbut the issue is every row has different rules for how its next token should be picked. So we will take example of how vLLM handles this.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Matt Pocock",
+    "handle": "@mattpocockuk",
+    "subject": "Post by Matt Pocock on X",
+    "url": "https://x.com/mattpocockuk/status/2099859946053533933",
+    "summary": "Matt Pocock's /retro command now actively looks for chances to convert fuzzy rules into deterministic checks, proposing custom lint rules, pre-commit hooks or CI workflows. The pattern: when you hit an error, run a retro and make that error impossible next time rather than writing another guideline.",
+    "topics": [
+      "claude-code",
+      "dev-practices",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "89K",
+    "notes": "",
+    "enriched": true,
+    "content": "Matt Pocock @mattpocockuk\n/retro will now aggressively look for opportunities to turn fuzzy rules into deterministic checks\n\nIt'll propose custom lint rules, pre-commit hooks, or CI workflows.\n\nFound an error? Do a /retro, and make it impossible next time",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Akshay",
+    "handle": "@akshay_pachaar",
+    "subject": "Post by Akshay 🚀 on X (read for security local llm)",
+    "url": "https://x.com/akshay_pachaar/status/2099857657872122108",
+    "summary": "Walks through Magnitude, an open-source tool for running agent harnesses (Claude Code, Codex, OpenCode, Pi) on local models. The argument is that local setup is not the hard part — picking which local model your machine can actually handle is, given RAM, model size, quantization, context length, KV cache, speed and accuracy trade-offs. Magnitude profiles your hardware, benchmarks what it can realistically run, recommends models, and connects them to your harness in two commands. Video covers profiling through to running.",
+    "topics": [
+      "claude-code",
+      "dev-practices",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "15.3K",
+    "notes": "flag: read for security local llm",
+    "enriched": true,
+    "content": "Akshay 🚀 @akshay_pachaar\nThe easiest way to run your agent harnesses using local models:\n\nWhether you're using Claude Code, Codex, OpenCode, or Pi, the local setup itself isn't really the hard part.\n\nThe harder problem is figuring out which local model your machine can actually handle well.\n\nYou have to think about RAM, model size, quantization, context length, KV cache, speed, accuracy, and a bunch of other trade-offs before you even start.\n\nMagnitude is an open-source solution that removes all of that guesswork for you.\n\nIt profiles your machine, benchmarks what it can realistically run, recommends the best models for your hardware, and then lets you connect them to your preferred agent harness.\n\nThe entire setup takes just two commands.\n\nIn this video, I walk through the full process from hardware profiling to running a harness on a local model.\n\nChapters:\n00:00 Intro\n00:17 What Magnitude is\n00:45 Setup in two commands",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Founder Thoughts & Strategies",
+    "handle": "@mogulinfluence",
+    "subject": "Post by Founder Thoughts & Strategies on X",
+    "url": "https://x.com/mogulinfluence/status/2099857044077486524",
+    "summary": "Repackages Callum's articulation article as an 'EXACT communication system' promising to command a room 10x faster with half as many words. Essentially a hook on top of the quoted piece — the underlying article (also in this collection) is the substance.",
+    "topics": [
+      "adjacent",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "213.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "Founder Thoughts & Strategies @mogulinfluence\nYou’d command a room 10x faster with half as many words if you followed this EXACT communication system: (start today)\n\nQuote: Callum @callumhyman24 · Sep 12 — Article: How To Articulate Thoughts Like The Top 0.01%. \"As long as you're smart, you'll be successful!\" Right? Then James comes along, steals your idea, simply says it better, and wins the $5,500 prize from your debate competition. 4 years later, I'm...",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Alex",
+    "handle": "@de1lymoon",
+    "subject": "Post by Alex on X",
+    "url": "https://x.com/de1lymoon/status/2099856242948657161",
+    "summary": "Proposes a two-model architecture (Kimi K3 + GPT-6 Astra) built on clean roles rather than one large context window: 'Two-Brain OS = Specialization + Shared State + Relay + Verification.' Research/planning and execution are split across models, only useful state is preserved (goal, evidence, decisions, failures, next action) and passed as a structured handoff packet instead of the full conversation, and completion requires proof such as a passing test. Presented in a percentage-milestone hype format, but the handoff-packet and proof-of-completion points are substantive.",
+    "topics": [
+      "agent-design",
+      "prompting",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Alex @de1lymoon\nThe fastest way to break a two-model system is to make both models do everything\n\nKimi K3 + GPT-6 Astra does not need one giant context window. it needs clean roles, durable state and a loop that proves real progress\n\nthe formula: Two-Brain OS = Specialization + Shared State + Relay + Verification\n\n5% -> remove the overloaded core. research, planning, coding and verification should not compete inside one model and one growing chat.\n\n25% -> specialize the brains. Kimi K3 explores sources, resolves uncertainty and creates the plan. GPT-6 Astra uses tools, executes code and produces artifacts.\n\n45% -> preserve only useful state: goal, evidence, decisions, failures and next action. the models pass a structured handoff packet instead of the full conversation.\n\n75% -> run the relay: research -> commit state -> route -> execute -> inspect. unclear tasks return to Kimi. executable tasks move to Astra.\n\n100% -> require proof before completion. a passed test, cr",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "wast3",
+    "handle": "@0xwast3",
+    "subject": "Post by wast3 on X",
+    "url": "https://x.com/0xwast3/status/2099851294684922336",
+    "summary": "Describes MEMENTO, an MIT-licensed agent memory layer with 41 memory types, 9 write gates and 6 decay curves, positioned against stuffing recent messages into the prompt. Design points: intake splits a claim from its source so fact and speaker never fuse; nine checks run before a write, including whether the fact already exists in another wording; a contradicting fact does not overwrite the old one, both persist with timestamps; facts about a person, project and preference go to separate stores; and anything unread long enough decays until retrieval stops finding it. The 'Anthropic engineer' attribution and 'makes vector search look like a toy' framing are the author's, not verified here.",
+    "topics": [
+      "agent-design",
+      "skills-mcp",
+      "research",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "9,073",
+    "notes": "",
+    "enriched": true,
+    "content": "wast3 @0xWast3\nAnthropic engineer open sourced the memory layer he runs behind every agent he ships - and it makes vector search look like a toy\n\n41 memory types, 9 write gates, 6 decay curves, MIT license\n\nMEMENTO replaces \"stuff the last 50 messages into the prompt\" with something that decides what deserves to survive\n\nnothing is remembered because it happened. every fact has to earn a slot, and every slot has an expiry attached to it\n\n• how a fact gets in\n\n> intake - a claim is split from its source, so the fact and who said it never fuse into one blob\n> gate - nine checks before a write, including whether the fact already exists in another wording\n> conflict - a new fact that contradicts an old one does not overwrite it. both stay, with a timestamp\n> scope - facts about a person, a project and a preference go to separate stores, never one pile\n> decay - anything unread for long enough loses weight until retrieval stops finding it\n\nthe conflic",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "AYi",
+    "handle": "@ayi_ainotes",
+    "subject": "Post by AYi on X",
+    "url": "https://x.com/ayi_ainotes/status/2099833846350942385",
+    "summary": "Chinese-language walkthrough of Anthropic's 13-page agent memory whitepaper, which the author rates the most useful production-grade treatment of agent memory engineering this year. Centers on a five-layer memory pyramid and the claim that it cuts large-model invocation costs by around 90%. The framing problem: agents that never forget get more contradictory the longer they run, rereading the same files daily and repeating yesterday's mistakes. Cost-reduction figure is as reported by the post.",
+    "topics": [
+      "agent-design",
+      "research",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "36.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "AYi @AYi_AInotes (translated from Chinese)\nAnthropic's 13-page Agent Memory whitepaper is pretty badass—it's the most insightful, most valuable production-grade handbook I've seen this year on breaking down \"agent memory engineering\":\n\nA lot of people building Agents can't figure it out for the life of them: Why does their robot get dumber and dumber the more it runs, full of contradictions?\nBecause your Agent never forgets anything,\nOnce you grasp this 5-layer memory pyramid that slashes large model invocation costs by 90%, you'll finally see where the line lies between life and death for industrial-grade Agents:\n\nIts opening line hits every developer's soul-deep pain point right away:\nLarge models have gotten 10 times smarter in the past two years, but Agents without memory are stuck reliving *Groundhog Day* in your codebase every single day—\nRereading the same 12 files every morning, stepping in yesterday's pitfalls all over agai",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "marfin",
+    "handle": "@marfinxx",
+    "subject": "Post by marfin on X",
+    "url": "https://x.com/marfinxx/status/2099830820466831586",
+    "summary": "Summarizes a Microsoft paper introducing LoopsBench (112 multi-step tasks, 5,300+ development units) which reports Claude Opus 4.7 running inside Claude Code resolving 25.00% of authentic repositories. The argued failure chain is flat prompt execution -> omitted prerequisite edges -> patch bloat -> regression cascade -> a 25% resolve wall, and the claim is that terminal benchmarks like SWE-bench hide this by judging isolated patches rather than an agent loop's ability to manage accumulating obligations over time. Frames the needed shift as Harness Engineering to Loop Engineering.",
+    "topics": [
+      "research",
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "2,879",
+    "notes": "",
+    "enriched": true,
+    "content": "marfin @marfinxx\nMicrosoft tested Claude Code across 5,300 development units and exposed why autonomous coding agents fail 75% of the time\n\nA new research paper from Microsoft proves that the AI industry has hit a wall with standard agent harnesses\n\nTerminal benchmarks like SWE-bench judge models on isolated patches, hiding the real failure point of autonomous software development: the inability of agent loops to manage accumulating obligations over time\n\nIn LoopsBench (112 multi-step tasks, 5,300+ development units), Microsoft discovered that even Claude Opus 4.7 running inside Claude Code resolves only 25.00% of authentic repositories\n\nflat prompt execution → omitted prerequisite edges → patch bloat → regression cascade → 25% resolve wall\n\nMicrosoft formalized why autonomous software engineering must shift from Harness Engineering to Loop Engineering:\n\n[1] The Dependency Planning Gap\n→ Frontier models recover only a fraction of required prerequisite",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Daniel Ch",
+    "handle": "@chddaniel",
+    "subject": "Post by Daniel Ch on X",
+    "url": "https://x.com/chddaniel/status/2099805928061297041",
+    "summary": "Endorsement post: the author says he rereads Dan Koe's article 'How to articulate yourself intelligently' twice a week and that the clickbait-sounding title undersells it. Value is in the quoted essay on explaining deep ideas clearly rather than in the post itself.",
+    "topics": [
+      "adjacent"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "1.1M",
+    "notes": "",
+    "enriched": true,
+    "content": "Daniel Ch @chddaniel\nI still read this twice a week.\n\nTitle sounds like clickbait, but it's legitimately one of the best things you will ever read.\n\nQuote: DAN KOE @thedankoe · Jan 15 — Article: How to articulate yourself intelligently. When I was young, I was always drawn to people who sounded intelligent. People like Alan Watts, Jordan Peterson, Daniel Schmachtenberger, or other individuals who could explain deep ideas in an...",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "rvaniaaa",
+    "handle": "@rvaniaaaa",
+    "subject": "Post by rvaniaaa on X",
+    "url": "https://x.com/rvaniaaaa/status/2099805315361395172",
+    "summary": "Argues that repeatedly reintroducing yourself to an AI is an abnormality we have built habits around rather than a minor flaw, and that the real cost is starting every conversation by rebuilding context that already existed. Draws a distinction between a system that searches (finds an old file once you ask) and one that keeps up with you continuously. Framing is rhetorical rather than technical, but the search-versus-continuity distinction is the useful takeaway.",
+    "topics": [
+      "agent-design",
+      "adjacent"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "3,372",
+    "notes": "",
+    "enriched": true,
+    "content": "rvaniaaa @rvaniaaaa\nyou've introduced yourself to an AI a hundred times this year. it forgot you a hundred times, and you just kept doing it anyway, like that was ever supposed to be normal\n\nno one else in your life gets away with this. a coworker doesn't need reintroducing every Monday. a friend doesn't forget your job the moment you stop talking about it. one relationship resets completely, every single session, and you built a habit around covering for it\n\nhere's what that habit actually costs you. every conversation starts by rebuilding context that already existed the day before. you ask something, get an answer, close the tab, and none of it survives long enough to make tomorrow easier. that's not memory with a flaw in it. that's forgetting you, on a schedule, dressed up as a feature\n\nthere's a real difference between a system that searches and one that actually keeps up with you. searching finds an old file after you ask for it. keeping up means it al",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Superman",
+    "handle": "@thesupermannx",
+    "subject": "Post by Superman on X",
+    "url": "https://x.com/thesupermanmx/status/2099799588018516010",
+    "summary": "Claims MIT and NASA researchers published a gold futures strategy reporting a Sharpe ratio of 2.88, 43% CAGR and 0.52% maximum drawdown over ten years out-of-sample, using a physics-inspired architecture that treats market liquidity and pricing pressure like fluid dynamics and trades structural imbalances rather than predicting price. The post itself notes a Sharpe above 3.0 is usually considered fraud or a statistical mirage, which applies to these figures too — no paper is linked and the numbers are extraordinary, so treat as an unverified claim.",
+    "topics": [
+      "adjacent",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "1,220",
+    "notes": "",
+    "enriched": true,
+    "content": "Superman @thesupermannx\nResearchers from MIT and NASA cracked the gold market..\n\nThey published a gold futures strategy that hits a Sharpe of 2.88, 43% CAGR, and 0.52% max drawdown over 10 years out-of-sample.\n\nFor context, a Sharpe ratio above 3.0 is usually considered institutional fraud or a statistical mirage.\n\nMost hedge funds dream of a 1.5 Sharpe with a 15% drawdown.\n\nThis model achieved institutional-grade alpha while barely flinching.\n\nHow they did it is the real story.\n\nInstead of traditional technical indicators or macro-sentiment guessing, they built a physics-inspired predictive architecture. They treated market liquidity and pricing pressure like fluid dynamics, mapping out how capital flows through gold futures under extreme stress.\n\nThe model doesn't try to predict where the price of gold is going tomorrow.\n\nIt calculates structural imbalances in real time and exploits them before the market can reprice.\n\nThe out-of-sample results",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "rody",
+    "handle": "@0x_rody",
+    "subject": "Post by rody on X",
+    "url": "https://x.com/0x_rody/status/2099790134547751115",
+    "summary": "X Article listing ten agent roles to build first, ordered by dependency rather than alphabetically or by glamour: each exists because the previous one produces output that needs handling, and each has a single owner for a single outcome. Argues narrow roles are worth more now that models follow long instructions better, since one agent handed everything drifts by step forty, and names the field that keeps each role from wandering. Includes exact prompts; funnels to the author's Substack.",
+    "topics": [
+      "agent-design",
+      "prompting",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "62.2K",
+    "notes": "",
+    "enriched": true,
+    "content": "rody @0x_rody\nTop 10 Astra Agents Worth Building First (Exact Prompts Inside)\n\nMost people build one agent, hand it everything, and watch it drift by step forty. Astra follows long instructions better than any prior OpenAI model, which makes narrow roles worth more than they were.\n\nTen roles in build order, the effort each earns, and the field that stops a role wandering.\n\nBuilt in this order, the system holds without you.\n\nBefore we dive in, I share configs, model breakdowns and agent setups on my Substack: https://zodchiii.substack.com/\n\nWhy the order matters more than the list\n\nEvery roster you have seen lists agents alphabetically or by glamour. That produces a set of capable specialists with nothing connecting them.\n\nThese ten are ordered by dependency. Each one exists because the one before it produced something that needs handling, and each one has a single owner for a single outcome. Build them out of order and you get a coordinator with n",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Sakana AI",
+    "handle": "@sakanaailabs",
+    "subject": "Post by Sakana AI on X",
+    "url": "https://x.com/sakanaailabs/status/2099468208231399687",
+    "summary": "Introduces PC-ALM (pub.sakana.ai/pc-alm/), a local-learning alternative to backpropagation that trains 1000-layer networks using only local dynamics. Motivated by the observation that the brain cannot implement backprop exactly, it draws on distributed optimization and NeuroAI: predictive coding treats each layer as a dynamical system solving an energy-based inference problem via local prediction errors. Addresses the known problem that predictive coding has not scaled with depth because credit signals degrade across distant layers.",
+    "topics": [
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "419.8K",
+    "notes": "",
+    "enriched": true,
+    "content": "Sakana AI @SakanaAILabs\nIntroducing PC-ALM, a local-learning alternative to backpropagation.\n\nOur method trains 1000-layer neural nets using only local dynamics, and without backprop.\n\nBlog: https://pub.sakana.ai/pc-alm/\n\nStandard deep learning relies on backpropagation. The brain, however, cannot implement backpropagation, at least not exactly. How can a physical system, such as the brain, solve multilayer credit assignment without explicit use of backprop?\n\nWe look for inspiration in two related fields: distributed optimization and NeuroAI.\n\nIn NeuroAI, predictive coding asks each neuron activation to solve an energy-based inference problem instead of using a standard forward pass. That inference step can be implemented as energy-minimization dynamics on local prediction errors.\n\nThis perspective -- each layer as a dynamical system -- has proven promising, but performance of predictive coding hasn't scaled well with depth. Credit signals at far",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "Callum",
+    "handle": "@callumhyman24",
+    "subject": "Post by Callum on X",
+    "url": "https://x.com/callumhyman24/status/2098902833525391716",
+    "summary": "X Article on articulating thoughts clearly, opening with the author losing a debate prize to someone who said the same idea better. Promises three communication frameworks for turning complex thoughts into structured ideas anyone can understand, plus delivery advice. Heavy on credential-dropping (consulting 50+ companies at 19), but this is the source article that several other posts in this batch repackage.",
+    "topics": [
+      "adjacent",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "470.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "Callum @callumhyman24\nHow To Articulate Thoughts Like The Top 0.01%\n\n\"As long as you're smart, you'll be successful!\"\n\nRight?\n\nThen James comes along, steals your idea, simply says it better, and wins the $5,500 prize from your debate competition.\n\n4 years later, I'm still salty about this. He mogged me.\n\nBut James wasn't even special.\n\nAll he did was articulate his thoughts more intelligently than me.\n\nI've since consulted 50+ different companies on marketing and growth (several worth $10B+), all at the age of 19 years old.\n\nArticulation is one of the main skills I've learned that allows my speech to be respected and heard, even by billionaire CEOs.\n\nBy the time you finish this article:\n\n-> You'll understand how to also turn your complex thoughts into structured ideas that ANYONE can understand.\n\n-> Learn the 3 communication frameworks that improved my articulation by 250%\n\n-> How to improve your delivery (making co",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-09-16",
+    "author": "harshatheg",
+    "handle": "",
+    "subject": "harshatheg/Qwen-2.5-1B-RLCD · Hugging Face",
+    "url": "https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD",
+    "summary": "Hugging Face model card for Qwen-2.5-1B-RLCD / Atomic Chat, an Apache-2.0 parallel constrained decoding engine for Apple Silicon via MLX. Instead of generating structured output token by token, it prefills the context and schema once into an MLX KV cache, broadcasts that cache across all schema fields in parallel, and slices logits to only the valid candidate tokens per field, assembling JSON programmatically so syntax is valid by construction. Reported on an M4 Max with Qwen2.5-1.5B-Instruct-4bit: 5.6x to 7.0x latency reductions (e.g. 28-field support triage 1,900ms -> 270ms; a 255-choice tariff field 500ms -> 89ms), 100% schema validity, and calibrated per-field confidence scores. Directly relevant to the Jev-style 'constrained decision primitive' thread running through this batch, as a local open-source analogue.",
+    "topics": [
+      "research",
+      "dev-practices",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "article",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "harshatheg/Qwen-2.5-1B-RLCD — Atomic Chat: Parallel Constrained Decoding for Apple Silicon (MLX). Apache-2.0. Tags: text-generation, MLX, structured-generation, parallel-decoding, constrained-decoding, apple-silicon, classification, json.\n\nA high-throughput inference engine for structured information extraction, decision routing, and categorical classification on Apple Silicon using MLX. Parallel Constrained Decoding evaluates multi-field JSON schemas simultaneously rather than generating tokens sequentially. On an Apple Silicon M4 Max, it delivers 5.6x to 7.0x latency reductions compared to standard autoregressive decoding with 100% schema validity and calibrated field-level confidence scores.\n\nBenchmarks (M4 Max, mlx-community/Qwen2.5-1.5B-Instruct-4bit): Fintech Fraud Routing 4 fields 420ms -> 75ms (5.6x); Code Security Audit 4 fields 380ms -> 68ms (5.6x); High-Cardinality Tariff 1 field/255 choices 500ms -> 89ms (5.6x); Enterprise Support Triage 28 fields 1,900ms -> 270ms (7.0x). All 100% syntax validity guaranteed.\n\nThe problem with autoregressive structured generation: JSON mode or grammar-guided sampling decodes token by token, requiring 150 to 500 sequential forward passes, each a distinct GPU/NPU pass with sequential memory bandwidth roundtrips. Latency scales linearly with output token length, and it is susceptible to syntax degradation, field omission, and hallucinated keys.\n\nThe solution: parallel evaluation via KV-cache broadcasting. In structured extraction and classification, field values belong to bounded candidate sets (booleans or categorical enums). Single broadcast prefill: context document and semantic schema descriptions prefilled once into an MLX KV cache. KV-cache broadcasting across all M schema fields in parallel. Sub-vocabulary logit slicing: only candidate token IDs belonging to valid schema choices are evaluated, remaining vocabulary masked. Calibrated softmax probabilities over the candidate slice. Token tree disambiguation when candidates share multi-token prefix roots, using sliced cache states with zero memory reallocation. Programmatic assembly: output JSON constructed directly from verified values, guaranteeing 100% valid syntax without JSON parsing errors.\n\nSchemas defined via StructuredSchema / FieldDefinition with enum (up to 255 choices) or boolean types plus a description to guide model reasoning. Response includes elapsed_ms, prefill_ms, sequential_forward_passes, is_valid_json, schema_match, parsed_json with per-field value and probability, and field_telemetry with confidence, cardinality and ranked top_choices. Base model Qwen/Qwen2.5-1.5B-Instruct; any decoder LLM supported by mlx-lm can be loaded.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
     "date": "2026-09-15",
     "author": "Salvatore Sanfilippo",
     "handle": "@antirez",

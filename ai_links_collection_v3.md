@@ -1,46 +1,52 @@
 # AI Links Collection
-**Total Posts**: 853  
-**Date Range**: 2024-06-11 – 2026-09-15  
-**Enriched**: 852/853 (99%)
+**Total Posts**: 890  
+**Date Range**: 2024-06-11 – 2026-09-16  
+**Enriched**: 889/890 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-09-15T21:22:13Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-09-16T21:12:39Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
-- **2026-09-15** — [Salvatore Sanfilippo](https://github.com/antirez/ds4) — *near-term • Agent Design • v1 enriched*  
-  DwarfStar (github.com/antirez/ds4) is Salvatore Sanfilippo's self-contained C inference engine for running DeepSeek V4 Flash/PRO and GLM 5.2/5.3 on hardware people actually own — Metal on 96GB+ Macs, CUDA including DGX Spark and multi-GPU Ada/L40S, ROCm on Strix Halo — with SSD streaming for models larger than RAM, compressed KV caches, and tensor/pipeline parallelism to glue several machines together. It ships a native coding agent (ds4-agent, with its own KV-cache session save/switch/strip commands) and an HTTP server that Claude Code, Codex CLI, OpenCode and Pi can point at; it is deliberately narrow rather than a general GGUF runner and only runs the GGUF files the project itself produces. 22.3k stars, MIT, beta-quality and fast-moving — notable beyond the code for antirez's explicit 'developed with strong assistance from AI coding agents' disclosure and his argument that software should now ship as a modifiable template you adapt with a coding agent rather than a finished product trying to cover every setup.
-- **2026-09-10** — [Akshay](https://x.com/akshay_pachaar/status/2097421509220561028) — *near-term • Research • 224.4K views • v1 enriched*  
-  Akshay breaks down an NVIDIA paper (arxiv.org/abs/2608.03893) that makes KV cache transferable between models, so a target model can skip prefill entirely — conversion runs 2.7–25x faster than re-processing the context. The mapper is closed-form and training-free: a per-layer/per-head linear map plus cross-layer selection (top-8 source layers) reconstructs 79% of the target's key variance for Qwen3 14B→32B. Directly relevant to LLM routing economics, where switching models today invalidates the cached prefix and forces full-rate re-billing; limitations are that all tested pairs are same-family, share KV head count/dim, and are dense full-attention only. Quotes his own first-principles X Article on KV caching.
+- **2026-09-16** — [Yarchi](https://x.com/undefinedki/status/2100206342942187620) — *near-term • Agent Design • 4,142 views • v1 enriched*  
+  Describes Google's Stellar Colosseum, a multi-agent setup published for unsolved math problems and already built into Antigravity, Google's agent development tool. Running on Gemini models it reportedly proved 71% of research-level theorems drawn from top CS conference papers and solved 218 of 222 competitive programming puzzles. The transferable structure for long agent tasks: explore several routes and have agents attack each other's before building; gate progress on surviving review; split the plan into sections with dependencies so a failure retries only that section; pair every generator with a falsifier whose only job is breaking the output; then merge candidates.
+- **2026-09-16** — [Nathan Flurry](https://x.com/nathanflurry/status/2100036101809619314) — *near-term • Industry • 457.6K views • v1 enriched*  
+  A deliberately hype-free framing of Jev: not a replacement for GPT or Claude, but 'a really smart switch statement' — 2016-era ML classifiers at 2026 intelligence levels, which the author notes is rebranded rather than genuinely new. It needs a predefined option set and returns which to take. It cannot write code, generate natural language, reason step by step, produce undefined output, or pick from more than ~255 options in one shot; it can classify, route, score, rank, give confidence, pick the right branch/tool/model/sub-agent, judge or guardrail an LLM's output, and label large volumes of rows. Suggests the shape: LLM proposes options -> Jev decides -> code executes. A useful skeptical counterweight to the Jev launch posts.
+- **2026-09-16** — [Michael](https://x.com/michaellee04/status/2100003037150683593) — *near-term • Industry • 416.8K views • v1 enriched*  
+  Hands-on report of roughly 5,000 Jev requests for about $2, spanning classification, model routing, intent detection and steering. The author's argument is that Jev is a new decision-making primitive distinct from both deterministic code and LLM calls, covering decisions too nuanced for dumb code but not worth a slow, expensive LLM. He expects to make several Jev calls per LLM call and suggests most companies using LLMs could add a Jev call before and/or after existing calls to improve tool-calling behaviour cheaply. Compares against his own prior classification benchmark.
+- **2026-09-16** — [Teknium](https://x.com/teknium/status/2099996435324518533) — *near-term • Agent Design • 127.6K views • v1 enriched*  
+  Teknium's first blog post covers running roughly 1,393 Hermes Agent subagents over 19 hours to refactor about 400,000 lines out of Hermes Agent's million-line Python repo, ending 34.4% smaller and, by Nous Research's estimate, saving nearly $2m in engineering hours (nousresearch.com/refactoring-hermes-with-1393-agents). A concrete large-scale data point on massively parallel subagent refactoring.
+- **2026-09-16** — [Nate Berkopec](https://x.com/nateberkopec/status/2099995262802641129) — *near-term • Skills & MCP • 46.9K views • v1 enriched*  
+  Nate Berkopec says he has spent three months telling all his clients to move everything to MCPs and executor.sh, having been convinced by an internal 'MCP proxy' built at a client and by large companies like Ramp adopting the same 'MCP of MCPs' approach. Quotes Rhys Sullivan's case for MCP over CLIs: an indexable tool catalog that scales agents to unlimited tools, no requirement to run a full sandbox, and consistent auth across servers instead of each CLI inventing its own.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **agent harness engineering** (52 posts, +3 this week)  
-  Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
-    - 2026-09-04 — [elvis](https://x.com/omarsar0/status/2095518433865777600): Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommende…
-    - 2026-09-04 — [Akshay](https://x.com/akshay_pachaar/status/2095502659075871066): Explains JIT-Agent, an open-source 27B model that writes the harness instead of running inside one: given a task and a tool registry it emit…
-
-- **vector / hybrid databases as agent-memory infrastructure** (50 posts, +1 this week)  
-  HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
-    - 2026-09-04 — [Yarchi](https://x.com/undefinedki/status/2095482394513924178): Describes Meta's published 'organizational second brain': 200+ files split into two strictly separated layers -- knowledge files stating wha…
-    - 2026-08-28 — [marfin](https://x.com/marfinxx/status/2093106368957776231): marfin summarizes a Microsoft paper introducing Mandol, an in-memory agglomerative memory engine for agents that fuses key-value pairs, dens…
-
-- **persistent always-on agents — bot mode & agent desktops** (45 posts, +1 this week)  
-  Agents that outlive a chat session: persistent bot profiles with their own job and memory, remote/self-hosted execution that survives closing the laptop, and the desktop workspaces around them (Hermes/Nous, Grok bot mode, OpenClaw). Renamed from auto-named cluster on 2026-08-21.
-    - 2026-09-04 — [hoeem](https://x.com/hooeem/status/2095531746720633267): Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first auto…
-    - 2026-08-21 — [Tony Simons](https://x.com/tonysimons_/status/2090612261349908991): Part 3 of a Hermes Desktop masterclass series, covering the move from treating it as a chatbot to using it as a workspace: sessions, project…
-
-- **vibecode-to-production via agent skills** (44 posts, +1 this week)  
+- **vibecode-to-production via agent skills** (47 posts, +6 this week)  
   Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
-    - 2026-09-04 — [Mark Ajzenstadt](https://x.com/mardehaym/status/2095455919337333008): A brownfield case study: a delivery-orchestration platform supplying FedEx estimated 7-8 months to rebuild its core billing/payout system; t…
-    - 2026-08-25 — [Madhu Guru](https://x.com/realmadhuguru/status/2092058332735693264): Part 8 of a series on building evals, on discriminatory power: a hill-climbing eval only earns its keep if it separates systems you already …
+    - 2026-09-16 — [Nathan Flurry](https://x.com/nathanflurry/status/2100036101809619314): A deliberately hype-free framing of Jev: not a replacement for GPT or Claude, but 'a really smart switch statement' — 2016-era ML classifier…
+    - 2026-09-16 — [Aaron Levie](https://x.com/levie/status/2099976021311398230): Aaron Levie (Box) argues there is a large gap between raw model capability and the workflows enterprises actually want automated, and that t…
 
-- **local model serving on consumer GPUs — quantization & throughput** (33 posts, +1 this week)  
-  Running capable open models on single-box prosumer hardware: quantization formats (NVFP4/AWQ/GPTQ/GGUF/MLX), KV-cache compression, serving stacks (SGLang, DSpark), and the tok/s benchmarking that goes with it. Renamed from auto-named cluster on 2026-08-21.
-    - 2026-09-15 — [Salvatore Sanfilippo](https://github.com/antirez/ds4): DwarfStar (github.com/antirez/ds4) is Salvatore Sanfilippo's self-contained C inference engine for running DeepSeek V4 Flash/PRO and GLM 5.2…
-    - 2026-08-21 — [Mia](https://x.com/miaai_lab/status/2090327658508763516): Updated local-inference recipe hitting ~300 tok/s for Qwen3.8-27B on a single RTX PRO 6000 by adding DFlash2, up from the 200-223 tok/s sing…
+- **persistent always-on agents — bot mode & agent desktops** (47 posts, +5 this week)  
+  Agents that outlive a chat session: persistent bot profiles with their own job and memory, remote/self-hosted execution that survives closing the laptop, and the desktop workspaces around them (Hermes/Nous, Grok bot mode, OpenClaw). Renamed from auto-named cluster on 2026-08-21.
+    - 2026-09-16 — [Yarchi](https://x.com/undefinedki/status/2100206342942187620): Describes Google's Stellar Colosseum, a multi-agent setup published for unsolved math problems and already built into Antigravity, Google's …
+    - 2026-09-16 — [Teknium](https://x.com/teknium/status/2099996435324518533): Teknium's first blog post covers running roughly 1,393 Hermes Agent subagents over 19 hours to refactor about 400,000 lines out of Hermes Ag…
+
+- **vector / hybrid databases as agent-memory infrastructure** (54 posts, +4 this week)  
+  HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
+    - 2026-09-16 — [Yarchi](https://x.com/undefinedki/status/2099952282217615827): Summarizes Airbnb's published method for mapping what a support assistant will face before launch, which they encoded as a reusable pipeline…
+    - 2026-09-16 — [wast3](https://x.com/0xwast3/status/2099851294684922336): Describes MEMENTO, an MIT-licensed agent memory layer with 41 memory types, 9 write gates and 6 decay curves, positioned against stuffing re…
+
+- **agent harness engineering** (54 posts, +4 this week)  
+  Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
+    - 2026-09-16 — [Akshay](https://x.com/akshay_pachaar/status/2099857657872122108): Walks through Magnitude, an open-source tool for running agent harnesses (Claude Code, Codex, OpenCode, Pi) on local models. The argument is…
+    - 2026-09-04 — [elvis](https://x.com/omarsar0/status/2095518433865777600): Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommende…
+
+- **agentic code review at production scale** (24 posts, +2 this week)  
+  Deterministic engineering handles what must never fail; LLM only does context reading and reasoning. Alibaba open-code-review.
+    - 2026-09-16 — [Dan Shipper](https://x.com/danshipper/status/2099947471518474522): Reports that Every has spent about a week testing Jev, a model they consider indispensable within 6-12 months, noting they almost never test…
+    - 2026-09-16 — [Alex](https://x.com/de1lymoon/status/2099856242948657161): Proposes a two-model architecture (Kimi K3 + GPT-6 Astra) built on clean roles rather than one large context window: 'Two-Brain OS = Special…
 
 
 ### Revisit from last month
@@ -53,23 +59,60 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 504 | 59.1% |
-| claude-code | 192 | 22.5% |
-| dev-practices | 368 | 43.1% |
-| skills-mcp | 195 | 22.9% |
-| prompting | 125 | 14.7% |
-| research | 219 | 25.7% |
-| industry | 125 | 14.7% |
-| management | 134 | 15.7% |
-| adjacent | 40 | 4.7% |
+| agent-design | 529 | 59.4% |
+| claude-code | 197 | 22.1% |
+| dev-practices | 383 | 43.0% |
+| skills-mcp | 200 | 22.5% |
+| prompting | 131 | 14.7% |
+| research | 235 | 26.4% |
+| industry | 134 | 15.1% |
+| management | 139 | 15.6% |
+| adjacent | 45 | 5.1% |
 | solo-operator | 8 | 0.9% |
-| questionable | 128 | 15.0% |
-| general | 100 | 11.7% |
+| questionable | 136 | 15.3% |
+| general | 100 | 11.2% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-09-16 | Yarchi | agent-design | Describes Google's Stellar Colosseum, a multi-agent setup published fo... |
+| 2026-09-16 | Nathan Flurry | industry | A deliberately hype-free framing of Jev: not a replacement for GPT or... |
+| 2026-09-16 | Michael | industry | Hands-on report of roughly 5,000 Jev requests for about $2, spanning c... |
+| 2026-09-16 | Teknium | agent-design | Teknium's first blog post covers running roughly 1,393 Hermes Agent su... |
+| 2026-09-16 | Nate Berkopec | skills-mcp | Nate Berkopec says he has spent three months telling all his clients t... |
+| 2026-09-16 | Chi Wang | agent-design | Notes that NVIDIA's OpenShell uses the Z3 theorem prover to verify age... |
+| 2026-09-16 | klöss | agent-design | Distills a Grok Bot Galaxy session into a 22-rule playbook for running... |
+| 2026-09-16 | Aaron Levie | industry | Aaron Levie (Box) argues there is a large gap between raw model capabi... |
+| 2026-09-16 | Raj Singh | management | Quote-boosts Gergely Orosz's diagram of OpenAI's agentic software fact... |
+| 2026-09-16 | Yarchi | agent-design | Summarizes Airbnb's published method for mapping what a support assist... |
+| 2026-09-16 | Dan Shipper | industry | Reports that Every has spent about a week testing Jev, a model they co... |
+| 2026-09-16 | Gergely Orosz | management | Publishes a breakdown of OpenAI's agentic software factory as it opera... |
+| 2026-09-16 | Zach Lloyd | management | X Article laying out crawl/walk/run steps for moving from local intera... |
+| 2026-09-16 | Hermes Agent Super-Intel | skills-mcp | Pitches a 'library' interface for Hermes Agent: a complete guide, skil... |
+| 2026-09-16 | Diogo Almeida | industry | Follow-up to the Jev announcement pointing at the technical release bl... |
+| 2026-09-16 | Diogo Almeida | industry | Launch announcement for Jev from TypeSafe AI. Almeida, who describes h... |
+| 2026-09-16 | beamnxw ./ | agent-design | Covers WikiSkill from Google engineers, which turns an agent's executi... |
+| 2026-09-16 | Viv | agent-design | Argues that continuously converting production data into evals is one... |
+| 2026-09-16 | Yarchi | claude-code | Points at 'i-have-adhd' (github.com/ayghri/i-have-adhd), an MIT-licens... |
+| 2026-09-16 | rvaniaaa | agent-design | Compares two teams on the same task with the same model where one spen... |
+| 2026-09-16 | Charlie Hills | claude-code | A four-step method for imposing a graph on an overloaded Claude Code f... |
+| 2026-09-16 | George from prodmgmt.world | prompting | Argues against asking an agent 'what should we build next?' (which ret... |
+| 2026-09-16 | Navaneeth Krishnan | research | Explains that production LLM sampling is more than temperature/top-k/t... |
+| 2026-09-16 | Matt Pocock | claude-code | Matt Pocock's /retro command now actively looks for chances to convert... |
+| 2026-09-16 | Akshay | claude-code | Walks through Magnitude, an open-source tool for running agent harness... |
+| 2026-09-16 | Founder Thoughts & Strategies | adjacent | Repackages Callum's articulation article as an 'EXACT communication sy... |
+| 2026-09-16 | Alex | agent-design | Proposes a two-model architecture (Kimi K3 + GPT-6 Astra) built on cle... |
+| 2026-09-16 | wast3 | agent-design | Describes MEMENTO, an MIT-licensed agent memory layer with 41 memory t... |
+| 2026-09-16 | AYi | agent-design | Chinese-language walkthrough of Anthropic's 13-page agent memory white... |
+| 2026-09-16 | marfin | research | Summarizes a Microsoft paper introducing LoopsBench (112 multi-step ta... |
+| 2026-09-16 | Daniel Ch | adjacent | Endorsement post: the author says he rereads Dan Koe's article 'How to... |
+| 2026-09-16 | rvaniaaa | agent-design | Argues that repeatedly reintroducing yourself to an AI is an abnormali... |
+| 2026-09-16 | Superman | adjacent | Claims MIT and NASA researchers published a gold futures strategy repo... |
+| 2026-09-16 | rody | agent-design | X Article listing ten agent roles to build first, ordered by dependenc... |
+| 2026-09-16 | Sakana AI | research | Introduces PC-ALM (pub.sakana.ai/pc-alm/), a local-learning alternativ... |
+| 2026-09-16 | Callum | adjacent | X Article on articulating thoughts clearly, opening with the author lo... |
+| 2026-09-16 | harshatheg | research | Hugging Face model card for Qwen-2.5-1B-RLCD / Atomic Chat, an Apache-... |
 | 2026-09-15 | Salvatore Sanfilippo | agent-design | DwarfStar (github.com/antirez/ds4) is Salvatore Sanfilippo's self-cont... |
 | 2026-09-10 | Akshay | research | Akshay breaks down an NVIDIA paper (arxiv.org/abs/2608.03893) that mak... |
 | 2026-09-04 | Annatar.md | industry | Claims NVIDIA is offering free year-long API access to 140+ hosted mod... |
@@ -83,48 +126,61 @@
 | 2026-09-04 | Tim Denning | biohacking | A quoted claim that the fastest route to neuroplasticity is repeatedly... |
 | 2026-08-31 | lauren | agent-design | Part 1 of Cursor engineer lauren's (@poteto) "Complete Guide to pstack... |
 | 2026-08-30 | DAIR.AI | research | Google's WikiSkill paper (arxiv.org/abs/2608.27454) separates three th... |
-| 2026-08-28 | marfin | agent-design | marfin summarizes a Microsoft paper introducing Mandol, an in-memory a... |
-| 2026-08-28 | elvis | agent-design | elvis (DAIR.AI) flags JIT-Agent (arxiv.org/abs/2608.25593) - a model w... |
-| 2026-08-27 | 0xSero | research | 0xSero shares a free digital copy of 'Inference Engineering' by Philip... |
-| 2026-08-27 | Femke Plantinga | agent-design | A comparative teardown of 9+ 'company brain' / organizational-memory s... |
-| 2026-08-25 | Matt Stockton | agent-design | Commentary on dynamic agent workflows: the strongest use of LLMs is gr... |
-| 2026-08-25 | Madhu Guru | dev-practices | Part 8 of a series on building evals, on discriminatory power: a hill-... |
-| 2026-08-25 | Igor bedesqui | dev-practices | Shares what the author calls his 'magnum opus of unslopping PRs' (gist... |
-| 2026-08-25 | Grace Clarke | prompting | Grace Clarke shares 'eli5-for-grownups', her variant of @trq212's ELI5... |
-| 2026-08-25 | rvaniaaa | agent-design | Argues personal-knowledge systems die when maintenance cost crosses va... |
-| 2026-08-25 | Kun Chen | agent-design | Describes a 'multi-brain' harness architecture developed with @pidotde... |
-| 2026-08-25 | Mark Ajzenstadt | agent-design | Argues most companies are stuck in the 'Death Valley' between agent PO... |
-| 2026-08-25 | ClaudeDevs | claude-code | Anthropic announced general availability of enterprise-managed auth fo... |
-| 2026-08-25 | Luke Pierce | management | Lead-magnet post giving away the implementation-and-adoption playbook... |
-| 2026-08-25 | Ryan Christensen | biohacking | X article reporting a 28-day self-experiment with Pinealon, a research... |
-| 2026-08-25 | 苯 Carbon | skills-mcp | Short endorsement of Archify (github.com/tt-a1i/archify), a skill that... |
-| 2026-08-25 | Matt Pocock | skills-mcp | Matt Pocock moved his /retro skill to in-progress in github.com/mattpo... |
-| 2026-08-25 | divyansh tiwari | agent-design | Listicle of repos for agent builders, with real pointers: OpenViking (... |
-| 2026-08-25 | pilvar (Philippe Dourassov) | agent-design | Aikido claims it found more vulnerabilities than Anthropic's Mythos (C... |
-| 2026-08-25 | elvis | research | NVIDIA's ACES paper argues the usual skill-review gate — a scanner che... |
-| 2026-08-25 | Mia | skills-mcp | Recommends Ponytail (github.com/dietrichgebert/ponytail), a harness sk... |
-| 2026-08-25 | Shubham Saboo | research | Reports a Stanford 'LLM-as-a-Verifier' result: sample five swe-agent t... |
-| 2026-08-25 | CyrilXBT | claude-code | X article walking hour-by-hour through shipping a live product that ta... |
-| 2026-08-25 | Matt Slotnick | industry | X article 'Intention Is All You Need' arguing businesses are fundament... |
-| 2026-08-25 | BasedBiohacker | biohacking | Long-form 'modafinil bible' covering claimed mechanisms, dosing protoc... |
-| 2026-08-21 | Xudong Han | industry | Chinese-language post recommending a Julie Yoo essay on where an AI st... |
-| 2026-08-21 | Matt Pocock | skills-mcp | Pocock shares an /implement-spec skill: a multi-agent implementer that... |
-| 2026-08-21 | rvaniaaa | agent-design | Architecture diagram for a 'compiled wiki' second brain, framed on Kar... |
-| 2026-08-21 | 0xSero | agent-design | Organizes a same-day community study session on the Pi agent framework... |
-| 2026-08-21 | Bilgin Ibryam | agent-design | Five patterns for long-running agents, from an Addy Osmani and Shubham... |
-| 2026-08-21 | hraness | dev-practices | Long-form X article on running a personal 'software factory': 15 Codex... |
-| 2026-08-21 | Aaron Levie | research | Levie on when domain-specific post-training beats a general frontier m... |
-| 2026-08-21 | Tony Simons | dev-practices | Part 3 of a Hermes Desktop masterclass series, covering the move from... |
-| 2026-08-21 | Latent.Space | skills-mcp | Latent.Space interviews Matt Pocock (@mattpocockuk) about his /wayfind... |
-| 2026-08-21 | 0xSero | agent-design | Recommends reading the Pi repo as the fastest way to understand agent... |
-| 2026-08-21 | ClaudeDevs | claude-code | Computer use, the browser tool, the Skills API, and the Files API are... |
-| 2026-08-21 | Boris Cherny | claude-code | Cherny confirms Anthropic is changing its data retention policy this f... |
-| 2026-08-21 | elvis | research | Paper on continual learning at the harness level rather than the weigh... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (504)
+### Agent Design (529)
+
+- [Yarchi](https://x.com/undefinedki/status/2100206342942187620) — 2026-09-16: Describes Google's Stellar Colosseum, a multi-agent setup published for unsolved math problems and already built into Antigravity, Google's agent development tool. Running on Gemini models it reportedly proved 71% of research-level theorems drawn from top CS conference papers and solved 218 of 222 competitive programming puzzles. The transferable structure for long agent tasks: explore several routes and have agents attack each other's before building; gate progress on surviving review; split the plan into sections with dependencies so a failure retries only that section; pair every generator with a falsifier whose only job is breaking the output; then merge candidates.
+
+- [Nathan Flurry](https://x.com/nathanflurry/status/2100036101809619314) — 2026-09-16: A deliberately hype-free framing of Jev: not a replacement for GPT or Claude, but 'a really smart switch statement' — 2016-era ML classifiers at 2026 intelligence levels, which the author notes is rebranded rather than genuinely new. It needs a predefined option set and returns which to take. It cannot write code, generate natural language, reason step by step, produce undefined output, or pick from more than ~255 options in one shot; it can classify, route, score, rank, give confidence, pick the right branch/tool/model/sub-agent, judge or guardrail an LLM's output, and label large volumes of rows. Suggests the shape: LLM proposes options -> Jev decides -> code executes. A useful skeptical counterweight to the Jev launch posts.
+
+- [Michael](https://x.com/michaellee04/status/2100003037150683593) — 2026-09-16: Hands-on report of roughly 5,000 Jev requests for about $2, spanning classification, model routing, intent detection and steering. The author's argument is that Jev is a new decision-making primitive distinct from both deterministic code and LLM calls, covering decisions too nuanced for dumb code but not worth a slow, expensive LLM. He expects to make several Jev calls per LLM call and suggests most companies using LLMs could add a Jev call before and/or after existing calls to improve tool-calling behaviour cheaply. Compares against his own prior classification benchmark.
+
+- [Teknium](https://x.com/teknium/status/2099996435324518533) — 2026-09-16: Teknium's first blog post covers running roughly 1,393 Hermes Agent subagents over 19 hours to refactor about 400,000 lines out of Hermes Agent's million-line Python repo, ending 34.4% smaller and, by Nous Research's estimate, saving nearly $2m in engineering hours (nousresearch.com/refactoring-hermes-with-1393-agents). A concrete large-scale data point on massively parallel subagent refactoring.
+
+- [Chi Wang](https://x.com/chi_wang_/status/2099988069642604556) — 2026-09-16: Notes that NVIDIA's OpenShell uses the Z3 theorem prover to verify agent actions, and that when it denies a path it returns the exact constraint adjustment needed. The argument is that binary guardrails just halt the loop whereas structured counterexamples turn a block into a solvable recovery step. Links nvidia.github.io/OpenShell-Research dev notes on formal methods for agent policy.
+
+- [klöss](https://x.com/kloss_xyz/status/2099979132616778121) — 2026-09-16: Distills a Grok Bot Galaxy session into a 22-rule playbook for running a fleet of bots, where an 'engineer bot' onboards other bots by passing fleet rules in a single message and the bots detect conflicts between their own rules. 'Steal it' framing and quote-boosting a launch event, but the bot-onboards-bot and self-detected-rule-conflict patterns are the substantive part.
+
+- [Aaron Levie](https://x.com/levie/status/2099976021311398230) — 2026-09-16: Aaron Levie (Box) argues there is a large gap between raw model capability and the workflows enterprises actually want automated, and that the 'applied AI layer' filling it must connect intelligence to workflows, re-engineer processes, aggregate context and data, design human-in-the-loop steps, drive change management, run domain-specific evals, and handle data/process security and governance. His claim is that this layer becomes more important as models improve, since greater capability invites more complex tasks.
+
+- [Raj Singh](https://x.com/mobileraj/status/2099959137438503252) — 2026-09-16: Quote-boosts Gergely Orosz's diagram of OpenAI's agentic software factory and argues it should reduce anxiety about team velocity, since he suspects many product teams already operate close to this today. Useful as a calibration point for leaders benchmarking their own agent adoption.
+
+- [Yarchi](https://x.com/undefinedki/status/2099952282217615827) — 2026-09-16: Summarizes Airbnb's published method for mapping what a support assistant will face before launch, which they encoded as a reusable pipeline after redoing the work per language and country. The core loop is extract -> embed -> cluster: a single structured-output labelling pass over every item (the only step touching the model at scale, so it sets cost), then embedding the labels rather than the raw text, so clusters group by what the model decided instead of by sentence phrasing. Applies to any unstructured corpus: tickets, survey answers, reviews, sales calls, or a model's own failures.
+
+- [Dan Shipper](https://x.com/danshipper/status/2099947471518474522) — 2026-09-16: Reports that Every has spent about a week testing Jev, a model they consider indispensable within 6-12 months, noting they almost never test new foundation models. The distinguishing property is that it outputs probabilities rather than words, letting it act as a judge where you would otherwise need a Fable-level model, and in their testing it was 25x faster and 600x lower priced. Links a vibe check on every.to.
+
+- [Gergely Orosz](https://x.com/gergelyorosz/status/2099945497377091902) — 2026-09-16: Publishes a breakdown of OpenAI's agentic software factory as it operates today, based on explanations from OpenAI engineers (newsletter.pragmaticengineer.com/p/openai-software-factory). Orosz singles out their 'Perf Factory' as especially interesting.
+
+- [Zach Lloyd](https://x.com/zachlloydtweets/status/2099941244063432720) — 2026-09-16: X Article laying out crawl/walk/run steps for moving from local interactive agents to a software factory (a closed agentic loop running in the cloud). The 'crawl' stage is simple Trigger -> Agent Activity automations that many eng leaders have already started: agents that reproduce and label new issues, review PRs as they open, respond to a Sentry alert and debug it, or self-heal CI by identifying PRs to roll back. Written for eng leaders and platform engineers who find the full model daunting.
+
+- [Hermes Agent Super-Intel](https://x.com/bkashjosi/status/2099926011303625207) — 2026-09-16: Pitches a 'library' interface for Hermes Agent: a complete guide, skills books installable directly, and a click-to-activate plugin list. Concept post about packaging agent capabilities as browsable, one-click-installable units rather than a shipped artifact; emoji-heavy promotional framing, so treat the specifics as aspirational.
+
+- [beamnxw ./](https://x.com/beamnxw/status/2099920164397699464) — 2026-09-16: Covers WikiSkill from Google engineers, which turns an agent's execution history into persistent knowledge and compiles it into reusable skills — an 'experience compiler' for agents. The loop: run tasks, preserve raw traces, consolidate recurring failures and successful strategies into a wiki, propose one atomic skill update, validate, then keep or roll back. The design point the author highlights is that skills can roll back but the wiki never does, so successful strategies, recurring failures, rejected edits and skill impact history all survive into the next iteration.
+
+- [Viv](https://x.com/vtrivedy10/status/2099902899341926641) — 2026-09-16: Argues that continuously converting production data into evals is one of the most promising directions in AI, and that teams should staff it. Running agents in production yields both failure/inefficiency signal and large-scale understanding of how people actually want to use the agent; pairing human experts with agents turns that data into tasks reflecting what the company actually wants agents to be good at. Frames this as a continual-learning loop teams should own themselves via open recipes.
+
+- [rvaniaaa](https://x.com/rvaniaaaa/status/2099881788826902678) — 2026-09-16: Compares two teams on the same task with the same model where one spent $200 on compute and one $9, and attributes the quality gap to who checked the work. The better setup split the job across three separate agents (one writes a spec, one builds, one drives the result in a browser and grades it with no memory of having built it) and took 6 hours versus 20 minutes. Three decisions explain the gap: the builder never grades its own work, dangerous actions are removed from the environment rather than prompted about (a sealed folder with no network dropped permission prompts 84%), and rules live outside the context window.
+
+- [George from prodmgmt.world](https://x.com/nurijanian/status/2099876646400753923) — 2026-09-16: Argues against asking an agent 'what should we build next?' (which returns a feature list) and instead prompting it to build a MECE issue tree for the opportunity, withholding solutions until the tree is complete and flagging any branch with no evidence. Packaged as a reusable /mckinsey-issue-tree command; quotes the author's own longer X Article on issue trees.
+
+- [Akshay](https://x.com/akshay_pachaar/status/2099857657872122108) — 2026-09-16: Walks through Magnitude, an open-source tool for running agent harnesses (Claude Code, Codex, OpenCode, Pi) on local models. The argument is that local setup is not the hard part — picking which local model your machine can actually handle is, given RAM, model size, quantization, context length, KV cache, speed and accuracy trade-offs. Magnitude profiles your hardware, benchmarks what it can realistically run, recommends models, and connects them to your harness in two commands. Video covers profiling through to running.
+
+- [Alex](https://x.com/de1lymoon/status/2099856242948657161) — 2026-09-16: Proposes a two-model architecture (Kimi K3 + GPT-6 Astra) built on clean roles rather than one large context window: 'Two-Brain OS = Specialization + Shared State + Relay + Verification.' Research/planning and execution are split across models, only useful state is preserved (goal, evidence, decisions, failures, next action) and passed as a structured handoff packet instead of the full conversation, and completion requires proof such as a passing test. Presented in a percentage-milestone hype format, but the handoff-packet and proof-of-completion points are substantive.
+
+- [wast3](https://x.com/0xwast3/status/2099851294684922336) — 2026-09-16: Describes MEMENTO, an MIT-licensed agent memory layer with 41 memory types, 9 write gates and 6 decay curves, positioned against stuffing recent messages into the prompt. Design points: intake splits a claim from its source so fact and speaker never fuse; nine checks run before a write, including whether the fact already exists in another wording; a contradicting fact does not overwrite the old one, both persist with timestamps; facts about a person, project and preference go to separate stores; and anything unread long enough decays until retrieval stops finding it. The 'Anthropic engineer' attribution and 'makes vector search look like a toy' framing are the author's, not verified here.
+
+- [AYi](https://x.com/ayi_ainotes/status/2099833846350942385) — 2026-09-16: Chinese-language walkthrough of Anthropic's 13-page agent memory whitepaper, which the author rates the most useful production-grade treatment of agent memory engineering this year. Centers on a five-layer memory pyramid and the claim that it cuts large-model invocation costs by around 90%. The framing problem: agents that never forget get more contradictory the longer they run, rereading the same files daily and repeating yesterday's mistakes. Cost-reduction figure is as reported by the post.
+
+- [marfin](https://x.com/marfinxx/status/2099830820466831586) — 2026-09-16: Summarizes a Microsoft paper introducing LoopsBench (112 multi-step tasks, 5,300+ development units) which reports Claude Opus 4.7 running inside Claude Code resolving 25.00% of authentic repositories. The argued failure chain is flat prompt execution -> omitted prerequisite edges -> patch bloat -> regression cascade -> a 25% resolve wall, and the claim is that terminal benchmarks like SWE-bench hide this by judging isolated patches rather than an agent loop's ability to manage accumulating obligations over time. Frames the needed shift as Harness Engineering to Loop Engineering.
+
+- [rvaniaaa](https://x.com/rvaniaaaa/status/2099805315361395172) — 2026-09-16: Argues that repeatedly reintroducing yourself to an AI is an abnormality we have built habits around rather than a minor flaw, and that the real cost is starting every conversation by rebuilding context that already existed. Draws a distinction between a system that searches (finds an old file once you ask) and one that keeps up with you continuously. Framing is rhetorical rather than technical, but the search-versus-continuity distinction is the useful takeaway.
+
+- [rody](https://x.com/0x_rody/status/2099790134547751115) — 2026-09-16: X Article listing ten agent roles to build first, ordered by dependency rather than alphabetically or by glamour: each exists because the previous one produces output that needs handling, and each has a single owner for a single outcome. Argues narrow roles are worth more now that models follow long instructions better, since one agent handed everything drifts by step forty, and names the field that keeps each role from wandering. Includes exact prompts; funnels to the author's Substack.
+
+- [harshatheg](https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD) — 2026-09-16: Hugging Face model card for Qwen-2.5-1B-RLCD / Atomic Chat, an Apache-2.0 parallel constrained decoding engine for Apple Silicon via MLX. Instead of generating structured output token by token, it prefills the context and schema once into an MLX KV cache, broadcasts that cache across all schema fields in parallel, and slices logits to only the valid candidate tokens per field, assembling JSON programmatically so syntax is valid by construction. Reported on an M4 Max with Qwen2.5-1.5B-Instruct-4bit: 5.6x to 7.0x latency reductions (e.g. 28-field support triage 1,900ms -> 270ms; a 255-choice tariff field 500ms -> 89ms), 100% schema validity, and calibrated per-field confidence scores. Directly relevant to the Jev-style 'constrained decision primitive' thread running through this batch, as a local open-source analogue.
 
 - [Salvatore Sanfilippo](https://github.com/antirez/ds4) — 2026-09-15: DwarfStar (github.com/antirez/ds4) is Salvatore Sanfilippo's self-contained C inference engine for running DeepSeek V4 Flash/PRO and GLM 5.2/5.3 on hardware people actually own — Metal on 96GB+ Macs, CUDA including DGX Spark and multi-GPU Ada/L40S, ROCm on Strix Halo — with SSD streaming for models larger than RAM, compressed KV caches, and tensor/pipeline parallelism to glue several machines together. It ships a native coding agent (ds4-agent, with its own KV-cache session save/switch/strip commands) and an HTTP server that Claude Code, Codex CLI, OpenCode and Pi can point at; it is deliberately narrow rather than a general GGUF runner and only runs the GGUF files the project itself produces. 22.3k stars, MIT, beta-quality and fast-moving — notable beyond the code for antirez's explicit 'developed with strong assistance from AI coding agents' disclosure and his argument that software should now ship as a modifiable template you adapt with a coding agent rather than a finished product trying to cover every setup.
 
@@ -1134,7 +1190,17 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Claude Code (192)
+### Claude Code (197)
+
+- [Yarchi](https://x.com/undefinedki/status/2099893390309515770) — 2026-09-16: Points at 'i-have-adhd' (github.com/ayghri/i-have-adhd), an MIT-licensed Claude skill that constrains assistant output to ten rules: lead with the next action, number the steps, cap lists at five, give time in minutes rather than vague terms, no preamble/recap/pleasantries, and end every reply with one concrete next step. Installs with a single CLI line and is forkable if you want different rules.
+
+- [Charlie Hills](https://x.com/charliejhills/status/2099879785363304546) — 2026-09-16: A four-step method for imposing a graph on an overloaded Claude Code folder (charliehills.substack.com/p/graph-engineering-claude-code): prompt one writes MAP.md, then check for conflicts, duplicates and unlinked work, approve the smallest fixes, and use a third prompt to update CLAUDE.md. The author ran it on his own folders and found 1,840 of 2,364 documents (78%) with nothing pointing at them. Notes he verifies whether each connection is FOUND or GUESSED before trusting it, and frames the goal as onboarding a team into his system without him in the middle.
+
+- [Matt Pocock](https://x.com/mattpocockuk/status/2099859946053533933) — 2026-09-16: Matt Pocock's /retro command now actively looks for chances to convert fuzzy rules into deterministic checks, proposing custom lint rules, pre-commit hooks or CI workflows. The pattern: when you hit an error, run a retro and make that error impossible next time rather than writing another guideline.
+
+- [Akshay](https://x.com/akshay_pachaar/status/2099857657872122108) — 2026-09-16: Walks through Magnitude, an open-source tool for running agent harnesses (Claude Code, Codex, OpenCode, Pi) on local models. The argument is that local setup is not the hard part — picking which local model your machine can actually handle is, given RAM, model size, quantization, context length, KV cache, speed and accuracy trade-offs. Magnitude profiles your hardware, benchmarks what it can realistically run, recommends models, and connects them to your harness in two commands. Video covers profiling through to running.
+
+- [AYi](https://x.com/ayi_ainotes/status/2099833846350942385) — 2026-09-16: Chinese-language walkthrough of Anthropic's 13-page agent memory whitepaper, which the author rates the most useful production-grade treatment of agent memory engineering this year. Centers on a five-layer memory pyramid and the claim that it cuts large-model invocation costs by around 90%. The framing problem: agents that never forget get more contradictory the longer they run, rereading the same files daily and repeating yesterday's mistakes. Cost-reduction figure is as reported by the post.
 
 - [Salvatore Sanfilippo](https://github.com/antirez/ds4) — 2026-09-15: DwarfStar (github.com/antirez/ds4) is Salvatore Sanfilippo's self-contained C inference engine for running DeepSeek V4 Flash/PRO and GLM 5.2/5.3 on hardware people actually own — Metal on 96GB+ Macs, CUDA including DGX Spark and multi-GPU Ada/L40S, ROCm on Strix Halo — with SSD streaming for models larger than RAM, compressed KV caches, and tensor/pipeline parallelism to glue several machines together. It ships a native coding agent (ds4-agent, with its own KV-cache session save/switch/strip commands) and an HTTP server that Claude Code, Codex CLI, OpenCode and Pi can point at; it is deliberately narrow rather than a general GGUF runner and only runs the GGUF files the project itself produces. 22.3k stars, MIT, beta-quality and fast-moving — notable beyond the code for antirez's explicit 'developed with strong assistance from AI coding agents' disclosure and his argument that software should now ship as a modifiable template you adapt with a coding agent rather than a finished product trying to cover every setup.
 
@@ -1520,7 +1586,37 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (368)
+### Dev Practices (383)
+
+- [Teknium](https://x.com/teknium/status/2099996435324518533) — 2026-09-16: Teknium's first blog post covers running roughly 1,393 Hermes Agent subagents over 19 hours to refactor about 400,000 lines out of Hermes Agent's million-line Python repo, ending 34.4% smaller and, by Nous Research's estimate, saving nearly $2m in engineering hours (nousresearch.com/refactoring-hermes-with-1393-agents). A concrete large-scale data point on massively parallel subagent refactoring.
+
+- [Nate Berkopec](https://x.com/nateberkopec/status/2099995262802641129) — 2026-09-16: Nate Berkopec says he has spent three months telling all his clients to move everything to MCPs and executor.sh, having been convinced by an internal 'MCP proxy' built at a client and by large companies like Ramp adopting the same 'MCP of MCPs' approach. Quotes Rhys Sullivan's case for MCP over CLIs: an indexable tool catalog that scales agents to unlimited tools, no requirement to run a full sandbox, and consistent auth across servers instead of each CLI inventing its own.
+
+- [Chi Wang](https://x.com/chi_wang_/status/2099988069642604556) — 2026-09-16: Notes that NVIDIA's OpenShell uses the Z3 theorem prover to verify agent actions, and that when it denies a path it returns the exact constraint adjustment needed. The argument is that binary guardrails just halt the loop whereas structured counterexamples turn a block into a solvable recovery step. Links nvidia.github.io/OpenShell-Research dev notes on formal methods for agent policy.
+
+- [Raj Singh](https://x.com/mobileraj/status/2099959137438503252) — 2026-09-16: Quote-boosts Gergely Orosz's diagram of OpenAI's agentic software factory and argues it should reduce anxiety about team velocity, since he suspects many product teams already operate close to this today. Useful as a calibration point for leaders benchmarking their own agent adoption.
+
+- [Yarchi](https://x.com/undefinedki/status/2099952282217615827) — 2026-09-16: Summarizes Airbnb's published method for mapping what a support assistant will face before launch, which they encoded as a reusable pipeline after redoing the work per language and country. The core loop is extract -> embed -> cluster: a single structured-output labelling pass over every item (the only step touching the model at scale, so it sets cost), then embedding the labels rather than the raw text, so clusters group by what the model decided instead of by sentence phrasing. Applies to any unstructured corpus: tickets, survey answers, reviews, sales calls, or a model's own failures.
+
+- [Gergely Orosz](https://x.com/gergelyorosz/status/2099945497377091902) — 2026-09-16: Publishes a breakdown of OpenAI's agentic software factory as it operates today, based on explanations from OpenAI engineers (newsletter.pragmaticengineer.com/p/openai-software-factory). Orosz singles out their 'Perf Factory' as especially interesting.
+
+- [Zach Lloyd](https://x.com/zachlloydtweets/status/2099941244063432720) — 2026-09-16: X Article laying out crawl/walk/run steps for moving from local interactive agents to a software factory (a closed agentic loop running in the cloud). The 'crawl' stage is simple Trigger -> Agent Activity automations that many eng leaders have already started: agents that reproduce and label new issues, review PRs as they open, respond to a Sentry alert and debug it, or self-heal CI by identifying PRs to roll back. Written for eng leaders and platform engineers who find the full model daunting.
+
+- [Viv](https://x.com/vtrivedy10/status/2099902899341926641) — 2026-09-16: Argues that continuously converting production data into evals is one of the most promising directions in AI, and that teams should staff it. Running agents in production yields both failure/inefficiency signal and large-scale understanding of how people actually want to use the agent; pairing human experts with agents turns that data into tasks reflecting what the company actually wants agents to be good at. Frames this as a continual-learning loop teams should own themselves via open recipes.
+
+- [rvaniaaa](https://x.com/rvaniaaaa/status/2099881788826902678) — 2026-09-16: Compares two teams on the same task with the same model where one spent $200 on compute and one $9, and attributes the quality gap to who checked the work. The better setup split the job across three separate agents (one writes a spec, one builds, one drives the result in a browser and grades it with no memory of having built it) and took 6 hours versus 20 minutes. Three decisions explain the gap: the builder never grades its own work, dangerous actions are removed from the environment rather than prompted about (a sealed folder with no network dropped permission prompts 84%), and rules live outside the context window.
+
+- [Charlie Hills](https://x.com/charliejhills/status/2099879785363304546) — 2026-09-16: A four-step method for imposing a graph on an overloaded Claude Code folder (charliehills.substack.com/p/graph-engineering-claude-code): prompt one writes MAP.md, then check for conflicts, duplicates and unlinked work, approve the smallest fixes, and use a third prompt to update CLAUDE.md. The author ran it on his own folders and found 1,840 of 2,364 documents (78%) with nothing pointing at them. Notes he verifies whether each connection is FOUND or GUESSED before trusting it, and frames the goal as onboarding a team into his system without him in the middle.
+
+- [Navaneeth Krishnan](https://x.com/navaneethvb/status/2099861736857989507) — 2026-09-16: Explains that production LLM sampling is more than temperature/top-k/top-p once continuous batching is involved: four concurrent requests decoding together (greedy; temp+top_p; top_k+repetition penalty; seeded with JSON constraints) share one model forward pass producing a logits matrix with one row per active request, but each row needs different selection rules. Walks through how vLLM handles this. Author is writing an inference-engineering repo with a sampling chapter to follow.
+
+- [Matt Pocock](https://x.com/mattpocockuk/status/2099859946053533933) — 2026-09-16: Matt Pocock's /retro command now actively looks for chances to convert fuzzy rules into deterministic checks, proposing custom lint rules, pre-commit hooks or CI workflows. The pattern: when you hit an error, run a retro and make that error impossible next time rather than writing another guideline.
+
+- [Akshay](https://x.com/akshay_pachaar/status/2099857657872122108) — 2026-09-16: Walks through Magnitude, an open-source tool for running agent harnesses (Claude Code, Codex, OpenCode, Pi) on local models. The argument is that local setup is not the hard part — picking which local model your machine can actually handle is, given RAM, model size, quantization, context length, KV cache, speed and accuracy trade-offs. Magnitude profiles your hardware, benchmarks what it can realistically run, recommends models, and connects them to your harness in two commands. Video covers profiling through to running.
+
+- [marfin](https://x.com/marfinxx/status/2099830820466831586) — 2026-09-16: Summarizes a Microsoft paper introducing LoopsBench (112 multi-step tasks, 5,300+ development units) which reports Claude Opus 4.7 running inside Claude Code resolving 25.00% of authentic repositories. The argued failure chain is flat prompt execution -> omitted prerequisite edges -> patch bloat -> regression cascade -> a 25% resolve wall, and the claim is that terminal benchmarks like SWE-bench hide this by judging isolated patches rather than an agent loop's ability to manage accumulating obligations over time. Frames the needed shift as Harness Engineering to Loop Engineering.
+
+- [harshatheg](https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD) — 2026-09-16: Hugging Face model card for Qwen-2.5-1B-RLCD / Atomic Chat, an Apache-2.0 parallel constrained decoding engine for Apple Silicon via MLX. Instead of generating structured output token by token, it prefills the context and schema once into an MLX KV cache, broadcasts that cache across all schema fields in parallel, and slices logits to only the valid candidate tokens per field, assembling JSON programmatically so syntax is valid by construction. Reported on an M4 Max with Qwen2.5-1.5B-Instruct-4bit: 5.6x to 7.0x latency reductions (e.g. 28-field support triage 1,900ms -> 270ms; a 255-choice tariff field 500ms -> 89ms), 100% schema validity, and calibrated per-field confidence scores. Directly relevant to the Jev-style 'constrained decision primitive' thread running through this batch, as a local open-source analogue.
 
 - [Salvatore Sanfilippo](https://github.com/antirez/ds4) — 2026-09-15: DwarfStar (github.com/antirez/ds4) is Salvatore Sanfilippo's self-contained C inference engine for running DeepSeek V4 Flash/PRO and GLM 5.2/5.3 on hardware people actually own — Metal on 96GB+ Macs, CUDA including DGX Spark and multi-GPU Ada/L40S, ROCm on Strix Halo — with SSD streaming for models larger than RAM, compressed KV caches, and tensor/pipeline parallelism to glue several machines together. It ships a native coding agent (ds4-agent, with its own KV-cache session save/switch/strip commands) and an HTTP server that Claude Code, Codex CLI, OpenCode and Pi can point at; it is deliberately narrow rather than a general GGUF runner and only runs the GGUF files the project itself produces. 22.3k stars, MIT, beta-quality and fast-moving — notable beyond the code for antirez's explicit 'developed with strong assistance from AI coding agents' disclosure and his argument that software should now ship as a modifiable template you adapt with a coding agent rather than a finished product trying to cover every setup.
 
@@ -2258,7 +2354,17 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Skills & MCP (195)
+### Skills & MCP (200)
+
+- [Nate Berkopec](https://x.com/nateberkopec/status/2099995262802641129) — 2026-09-16: Nate Berkopec says he has spent three months telling all his clients to move everything to MCPs and executor.sh, having been convinced by an internal 'MCP proxy' built at a client and by large companies like Ramp adopting the same 'MCP of MCPs' approach. Quotes Rhys Sullivan's case for MCP over CLIs: an indexable tool catalog that scales agents to unlimited tools, no requirement to run a full sandbox, and consistent auth across servers instead of each CLI inventing its own.
+
+- [Hermes Agent Super-Intel](https://x.com/bkashjosi/status/2099926011303625207) — 2026-09-16: Pitches a 'library' interface for Hermes Agent: a complete guide, skills books installable directly, and a click-to-activate plugin list. Concept post about packaging agent capabilities as browsable, one-click-installable units rather than a shipped artifact; emoji-heavy promotional framing, so treat the specifics as aspirational.
+
+- [beamnxw ./](https://x.com/beamnxw/status/2099920164397699464) — 2026-09-16: Covers WikiSkill from Google engineers, which turns an agent's execution history into persistent knowledge and compiles it into reusable skills — an 'experience compiler' for agents. The loop: run tasks, preserve raw traces, consolidate recurring failures and successful strategies into a wiki, propose one atomic skill update, validate, then keep or roll back. The design point the author highlights is that skills can roll back but the wiki never does, so successful strategies, recurring failures, rejected edits and skill impact history all survive into the next iteration.
+
+- [Yarchi](https://x.com/undefinedki/status/2099893390309515770) — 2026-09-16: Points at 'i-have-adhd' (github.com/ayghri/i-have-adhd), an MIT-licensed Claude skill that constrains assistant output to ten rules: lead with the next action, number the steps, cap lists at five, give time in minutes rather than vague terms, no preamble/recap/pleasantries, and end every reply with one concrete next step. Installs with a single CLI line and is forkable if you want different rules.
+
+- [wast3](https://x.com/0xwast3/status/2099851294684922336) — 2026-09-16: Describes MEMENTO, an MIT-licensed agent memory layer with 41 memory types, 9 write gates and 6 decay curves, positioned against stuffing recent messages into the prompt. Design points: intake splits a claim from its source so fact and speaker never fuse; nine checks run before a write, including whether the fact already exists in another wording; a contradicting fact does not overwrite the old one, both persist with timestamps; facts about a person, project and preference go to separate stores; and anything unread long enough decays until retrieval stops finding it. The 'Anthropic engineer' attribution and 'makes vector search look like a toy' framing are the author's, not verified here.
 
 - [Yarchi](https://x.com/undefinedki/status/2095482394513924178) — 2026-09-04: Describes Meta's published 'organizational second brain': 200+ files split into two strictly separated layers -- knowledge files stating what the organization has decided (no steps) and recipes stating how to work a problem through (no facts) -- with each file declaring its dependencies and dependents in YAML so a change can be traced. Retrieval is not embeddings: routing indexes map input traits to the files that apply, so the same input deterministically loads the same files. Splitting the original flat instruction file plus semantic search into recipe stages that load only what the current step needs cut tokens per turn by roughly 80%. Failures get a single blame-assignment test -- could it have reached the right answer from the files it loaded? yes means the recipe is broken, no means knowledge is missing, experts disagreeing means neither -- and fixes are compiled into minimal edits reviewed by a separate agent that sees only the diff, replayed blind against the original failure, then folded into a regression suite. Six weeks, hundreds of expert corrections, zero retraining. Close to the knowledge-layer problem this collection itself is solving.
 
@@ -2650,7 +2756,19 @@
 
 - [Mervin Praison](https://x.com/mervinpraison/status/1881788246684013011) — 2025-01-22: Shows a 100% local RAG AI agent with reasoning: DeepSeek via Ollama for the LLM, PraisonAI to build the agent in a few lines, Nomic embeddings, and a Streamlit UI—code included in the thread.
 
-### Prompting (125)
+### Prompting (131)
+
+- [Yarchi](https://x.com/undefinedki/status/2099893390309515770) — 2026-09-16: Points at 'i-have-adhd' (github.com/ayghri/i-have-adhd), an MIT-licensed Claude skill that constrains assistant output to ten rules: lead with the next action, number the steps, cap lists at five, give time in minutes rather than vague terms, no preamble/recap/pleasantries, and end every reply with one concrete next step. Installs with a single CLI line and is forkable if you want different rules.
+
+- [Charlie Hills](https://x.com/charliejhills/status/2099879785363304546) — 2026-09-16: A four-step method for imposing a graph on an overloaded Claude Code folder (charliehills.substack.com/p/graph-engineering-claude-code): prompt one writes MAP.md, then check for conflicts, duplicates and unlinked work, approve the smallest fixes, and use a third prompt to update CLAUDE.md. The author ran it on his own folders and found 1,840 of 2,364 documents (78%) with nothing pointing at them. Notes he verifies whether each connection is FOUND or GUESSED before trusting it, and frames the goal as onboarding a team into his system without him in the middle.
+
+- [George from prodmgmt.world](https://x.com/nurijanian/status/2099876646400753923) — 2026-09-16: Argues against asking an agent 'what should we build next?' (which returns a feature list) and instead prompting it to build a MECE issue tree for the opportunity, withholding solutions until the tree is complete and flagging any branch with no evidence. Packaged as a reusable /mckinsey-issue-tree command; quotes the author's own longer X Article on issue trees.
+
+- [Matt Pocock](https://x.com/mattpocockuk/status/2099859946053533933) — 2026-09-16: Matt Pocock's /retro command now actively looks for chances to convert fuzzy rules into deterministic checks, proposing custom lint rules, pre-commit hooks or CI workflows. The pattern: when you hit an error, run a retro and make that error impossible next time rather than writing another guideline.
+
+- [Alex](https://x.com/de1lymoon/status/2099856242948657161) — 2026-09-16: Proposes a two-model architecture (Kimi K3 + GPT-6 Astra) built on clean roles rather than one large context window: 'Two-Brain OS = Specialization + Shared State + Relay + Verification.' Research/planning and execution are split across models, only useful state is preserved (goal, evidence, decisions, failures, next action) and passed as a structured handoff packet instead of the full conversation, and completion requires proof such as a passing test. Presented in a percentage-milestone hype format, but the handoff-packet and proof-of-completion points are substantive.
+
+- [rody](https://x.com/0x_rody/status/2099790134547751115) — 2026-09-16: X Article listing ten agent roles to build first, ordered by dependency rather than alphabetically or by glamour: each exists because the previous one produces output that needs handling, and each has a single owner for a single outcome. Argues narrow roles are worth more now that models follow long instructions better, since one agent handed everything drifts by step forty, and names the field that keeps each role from wandering. Includes exact prompts; funnels to the author's Substack.
 
 - [Matt Stockton](https://x.com/mstockton/status/2092076777615102400) — 2026-08-25: Commentary on dynamic agent workflows: the strongest use of LLMs is graphs with *uncorrelated* starting context, and the six workflow patterns in the linked post are good examples. Key mechanism — adversarial verification works precisely because it runs in a fresh context window; asking the same agent with the same context to check its own work invites confirmation bias. Argues the critical design question is deciding what context travels along each edge of the graph, and why, because attention stays a delicate resource. Flagged by Jeremy for Maro.
 
@@ -2902,7 +3020,39 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-### Research (219)
+### Research (235)
+
+- [Yarchi](https://x.com/undefinedki/status/2100206342942187620) — 2026-09-16: Describes Google's Stellar Colosseum, a multi-agent setup published for unsolved math problems and already built into Antigravity, Google's agent development tool. Running on Gemini models it reportedly proved 71% of research-level theorems drawn from top CS conference papers and solved 218 of 222 competitive programming puzzles. The transferable structure for long agent tasks: explore several routes and have agents attack each other's before building; gate progress on surviving review; split the plan into sections with dependencies so a failure retries only that section; pair every generator with a falsifier whose only job is breaking the output; then merge candidates.
+
+- [Nathan Flurry](https://x.com/nathanflurry/status/2100036101809619314) — 2026-09-16: A deliberately hype-free framing of Jev: not a replacement for GPT or Claude, but 'a really smart switch statement' — 2016-era ML classifiers at 2026 intelligence levels, which the author notes is rebranded rather than genuinely new. It needs a predefined option set and returns which to take. It cannot write code, generate natural language, reason step by step, produce undefined output, or pick from more than ~255 options in one shot; it can classify, route, score, rank, give confidence, pick the right branch/tool/model/sub-agent, judge or guardrail an LLM's output, and label large volumes of rows. Suggests the shape: LLM proposes options -> Jev decides -> code executes. A useful skeptical counterweight to the Jev launch posts.
+
+- [Michael](https://x.com/michaellee04/status/2100003037150683593) — 2026-09-16: Hands-on report of roughly 5,000 Jev requests for about $2, spanning classification, model routing, intent detection and steering. The author's argument is that Jev is a new decision-making primitive distinct from both deterministic code and LLM calls, covering decisions too nuanced for dumb code but not worth a slow, expensive LLM. He expects to make several Jev calls per LLM call and suggests most companies using LLMs could add a Jev call before and/or after existing calls to improve tool-calling behaviour cheaply. Compares against his own prior classification benchmark.
+
+- [Chi Wang](https://x.com/chi_wang_/status/2099988069642604556) — 2026-09-16: Notes that NVIDIA's OpenShell uses the Z3 theorem prover to verify agent actions, and that when it denies a path it returns the exact constraint adjustment needed. The argument is that binary guardrails just halt the loop whereas structured counterexamples turn a block into a solvable recovery step. Links nvidia.github.io/OpenShell-Research dev notes on formal methods for agent policy.
+
+- [Yarchi](https://x.com/undefinedki/status/2099952282217615827) — 2026-09-16: Summarizes Airbnb's published method for mapping what a support assistant will face before launch, which they encoded as a reusable pipeline after redoing the work per language and country. The core loop is extract -> embed -> cluster: a single structured-output labelling pass over every item (the only step touching the model at scale, so it sets cost), then embedding the labels rather than the raw text, so clusters group by what the model decided instead of by sentence phrasing. Applies to any unstructured corpus: tickets, survey answers, reviews, sales calls, or a model's own failures.
+
+- [Dan Shipper](https://x.com/danshipper/status/2099947471518474522) — 2026-09-16: Reports that Every has spent about a week testing Jev, a model they consider indispensable within 6-12 months, noting they almost never test new foundation models. The distinguishing property is that it outputs probabilities rather than words, letting it act as a judge where you would otherwise need a Fable-level model, and in their testing it was 25x faster and 600x lower priced. Links a vibe check on every.to.
+
+- [Diogo Almeida](https://x.com/completeskeptic/status/2099925690682630371) — 2026-09-16: Follow-up to the Jev announcement pointing at the technical release blog (typesafe.ai/blog/introducing-system-one-models-and-jev), an early-access waitlist at typesafe.ai, and a Discord. Opens by acknowledging that extraordinary claims require extraordinary evidence — the blog is the place to check the numbers claimed in the launch post.
+
+- [Diogo Almeida](https://x.com/completeskeptic/status/2099925682726002904) — 2026-09-16: Launch announcement for Jev from TypeSafe AI. Almeida, who describes himself as a ChatGPT co-inventor, says he spent two years in stealth on a new training method (RLCD) and a model type optimized for decisions rather than chat, claiming 20-200x faster, 40-400x cheaper with output tokens free, and 'frontier composable intelligence.' His framing question is why superhuman chat models have not led to AGI. At 22.4M views this is the anchor post for the Jev launch cluster in this batch; the performance figures are the company's own.
+
+- [beamnxw ./](https://x.com/beamnxw/status/2099920164397699464) — 2026-09-16: Covers WikiSkill from Google engineers, which turns an agent's execution history into persistent knowledge and compiles it into reusable skills — an 'experience compiler' for agents. The loop: run tasks, preserve raw traces, consolidate recurring failures and successful strategies into a wiki, propose one atomic skill update, validate, then keep or roll back. The design point the author highlights is that skills can roll back but the wiki never does, so successful strategies, recurring failures, rejected edits and skill impact history all survive into the next iteration.
+
+- [Viv](https://x.com/vtrivedy10/status/2099902899341926641) — 2026-09-16: Argues that continuously converting production data into evals is one of the most promising directions in AI, and that teams should staff it. Running agents in production yields both failure/inefficiency signal and large-scale understanding of how people actually want to use the agent; pairing human experts with agents turns that data into tasks reflecting what the company actually wants agents to be good at. Frames this as a continual-learning loop teams should own themselves via open recipes.
+
+- [Navaneeth Krishnan](https://x.com/navaneethvb/status/2099861736857989507) — 2026-09-16: Explains that production LLM sampling is more than temperature/top-k/top-p once continuous batching is involved: four concurrent requests decoding together (greedy; temp+top_p; top_k+repetition penalty; seeded with JSON constraints) share one model forward pass producing a logits matrix with one row per active request, but each row needs different selection rules. Walks through how vLLM handles this. Author is writing an inference-engineering repo with a sampling chapter to follow.
+
+- [wast3](https://x.com/0xwast3/status/2099851294684922336) — 2026-09-16: Describes MEMENTO, an MIT-licensed agent memory layer with 41 memory types, 9 write gates and 6 decay curves, positioned against stuffing recent messages into the prompt. Design points: intake splits a claim from its source so fact and speaker never fuse; nine checks run before a write, including whether the fact already exists in another wording; a contradicting fact does not overwrite the old one, both persist with timestamps; facts about a person, project and preference go to separate stores; and anything unread long enough decays until retrieval stops finding it. The 'Anthropic engineer' attribution and 'makes vector search look like a toy' framing are the author's, not verified here.
+
+- [AYi](https://x.com/ayi_ainotes/status/2099833846350942385) — 2026-09-16: Chinese-language walkthrough of Anthropic's 13-page agent memory whitepaper, which the author rates the most useful production-grade treatment of agent memory engineering this year. Centers on a five-layer memory pyramid and the claim that it cuts large-model invocation costs by around 90%. The framing problem: agents that never forget get more contradictory the longer they run, rereading the same files daily and repeating yesterday's mistakes. Cost-reduction figure is as reported by the post.
+
+- [marfin](https://x.com/marfinxx/status/2099830820466831586) — 2026-09-16: Summarizes a Microsoft paper introducing LoopsBench (112 multi-step tasks, 5,300+ development units) which reports Claude Opus 4.7 running inside Claude Code resolving 25.00% of authentic repositories. The argued failure chain is flat prompt execution -> omitted prerequisite edges -> patch bloat -> regression cascade -> a 25% resolve wall, and the claim is that terminal benchmarks like SWE-bench hide this by judging isolated patches rather than an agent loop's ability to manage accumulating obligations over time. Frames the needed shift as Harness Engineering to Loop Engineering.
+
+- [Sakana AI](https://x.com/sakanaailabs/status/2099468208231399687) — 2026-09-16: Introduces PC-ALM (pub.sakana.ai/pc-alm/), a local-learning alternative to backpropagation that trains 1000-layer networks using only local dynamics. Motivated by the observation that the brain cannot implement backprop exactly, it draws on distributed optimization and NeuroAI: predictive coding treats each layer as a dynamical system solving an energy-based inference problem via local prediction errors. Addresses the known problem that predictive coding has not scaled with depth because credit signals degrade across distant layers.
+
+- [harshatheg](https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD) — 2026-09-16: Hugging Face model card for Qwen-2.5-1B-RLCD / Atomic Chat, an Apache-2.0 parallel constrained decoding engine for Apple Silicon via MLX. Instead of generating structured output token by token, it prefills the context and schema once into an MLX KV cache, broadcasts that cache across all schema fields in parallel, and slices logits to only the valid candidate tokens per field, assembling JSON programmatically so syntax is valid by construction. Reported on an M4 Max with Qwen2.5-1.5B-Instruct-4bit: 5.6x to 7.0x latency reductions (e.g. 28-field support triage 1,900ms -> 270ms; a 255-choice tariff field 500ms -> 89ms), 100% schema validity, and calibrated per-field confidence scores. Directly relevant to the Jev-style 'constrained decision primitive' thread running through this batch, as a local open-source analogue.
 
 - [Akshay](https://x.com/akshay_pachaar/status/2097421509220561028) — 2026-09-10: Akshay breaks down an NVIDIA paper (arxiv.org/abs/2608.03893) that makes KV cache transferable between models, so a target model can skip prefill entirely — conversion runs 2.7–25x faster than re-processing the context. The mapper is closed-form and training-free: a per-layer/per-head linear map plus cross-layer selection (top-8 source layers) reconstructs 79% of the target's key variance for Qwen3 14B→32B. Directly relevant to LLM routing economics, where switching models today invalidates the cached prefix and forces full-rate re-billing; limitations are that all tested pairs are same-family, share KV head count/dim, and are dense full-attention only. Quotes his own first-principles X Article on KV caching.
 
@@ -3342,7 +3492,25 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.
 
-### Industry (125)
+### Industry (134)
+
+- [Nathan Flurry](https://x.com/nathanflurry/status/2100036101809619314) — 2026-09-16: A deliberately hype-free framing of Jev: not a replacement for GPT or Claude, but 'a really smart switch statement' — 2016-era ML classifiers at 2026 intelligence levels, which the author notes is rebranded rather than genuinely new. It needs a predefined option set and returns which to take. It cannot write code, generate natural language, reason step by step, produce undefined output, or pick from more than ~255 options in one shot; it can classify, route, score, rank, give confidence, pick the right branch/tool/model/sub-agent, judge or guardrail an LLM's output, and label large volumes of rows. Suggests the shape: LLM proposes options -> Jev decides -> code executes. A useful skeptical counterweight to the Jev launch posts.
+
+- [Michael](https://x.com/michaellee04/status/2100003037150683593) — 2026-09-16: Hands-on report of roughly 5,000 Jev requests for about $2, spanning classification, model routing, intent detection and steering. The author's argument is that Jev is a new decision-making primitive distinct from both deterministic code and LLM calls, covering decisions too nuanced for dumb code but not worth a slow, expensive LLM. He expects to make several Jev calls per LLM call and suggests most companies using LLMs could add a Jev call before and/or after existing calls to improve tool-calling behaviour cheaply. Compares against his own prior classification benchmark.
+
+- [Teknium](https://x.com/teknium/status/2099996435324518533) — 2026-09-16: Teknium's first blog post covers running roughly 1,393 Hermes Agent subagents over 19 hours to refactor about 400,000 lines out of Hermes Agent's million-line Python repo, ending 34.4% smaller and, by Nous Research's estimate, saving nearly $2m in engineering hours (nousresearch.com/refactoring-hermes-with-1393-agents). A concrete large-scale data point on massively parallel subagent refactoring.
+
+- [Nate Berkopec](https://x.com/nateberkopec/status/2099995262802641129) — 2026-09-16: Nate Berkopec says he has spent three months telling all his clients to move everything to MCPs and executor.sh, having been convinced by an internal 'MCP proxy' built at a client and by large companies like Ramp adopting the same 'MCP of MCPs' approach. Quotes Rhys Sullivan's case for MCP over CLIs: an indexable tool catalog that scales agents to unlimited tools, no requirement to run a full sandbox, and consistent auth across servers instead of each CLI inventing its own.
+
+- [Aaron Levie](https://x.com/levie/status/2099976021311398230) — 2026-09-16: Aaron Levie (Box) argues there is a large gap between raw model capability and the workflows enterprises actually want automated, and that the 'applied AI layer' filling it must connect intelligence to workflows, re-engineer processes, aggregate context and data, design human-in-the-loop steps, drive change management, run domain-specific evals, and handle data/process security and governance. His claim is that this layer becomes more important as models improve, since greater capability invites more complex tasks.
+
+- [Dan Shipper](https://x.com/danshipper/status/2099947471518474522) — 2026-09-16: Reports that Every has spent about a week testing Jev, a model they consider indispensable within 6-12 months, noting they almost never test new foundation models. The distinguishing property is that it outputs probabilities rather than words, letting it act as a judge where you would otherwise need a Fable-level model, and in their testing it was 25x faster and 600x lower priced. Links a vibe check on every.to.
+
+- [Gergely Orosz](https://x.com/gergelyorosz/status/2099945497377091902) — 2026-09-16: Publishes a breakdown of OpenAI's agentic software factory as it operates today, based on explanations from OpenAI engineers (newsletter.pragmaticengineer.com/p/openai-software-factory). Orosz singles out their 'Perf Factory' as especially interesting.
+
+- [Diogo Almeida](https://x.com/completeskeptic/status/2099925690682630371) — 2026-09-16: Follow-up to the Jev announcement pointing at the technical release blog (typesafe.ai/blog/introducing-system-one-models-and-jev), an early-access waitlist at typesafe.ai, and a Discord. Opens by acknowledging that extraordinary claims require extraordinary evidence — the blog is the place to check the numbers claimed in the launch post.
+
+- [Diogo Almeida](https://x.com/completeskeptic/status/2099925682726002904) — 2026-09-16: Launch announcement for Jev from TypeSafe AI. Almeida, who describes himself as a ChatGPT co-inventor, says he spent two years in stealth on a new training method (RLCD) and a model type optimized for decisions rather than chat, claiming 20-200x faster, 40-400x cheaper with output tokens free, and 'frontier composable intelligence.' His framing question is why superhuman chat models have not led to AGI. At 22.4M views this is the anchor post for the Jev launch cluster in this batch; the performance figures are the company's own.
 
 - [Annatar.md](https://x.com/annatarxbt/status/2095540725022654658) — 2026-09-04: Claims NVIDIA is offering free year-long API access to 140+ hosted models via build.nvidia.com/models (register, bind phone, copy key), served from integrate.api.nvidia.com/v1 at 40 req/min for $0. Lists GLM 5.2, MiniMax M3, Nemotron-3-ultra-550b-a55b and Kimi K2.7 among the available models and gives a three-step setup for pointing Hermes, Cursor or OpenCode at the endpoint as a custom provider. Concrete and actionable if the terms hold, but the free-tier claim and expiry are the author's and worth verifying at the source before depending on them.
 
@@ -3594,7 +3762,17 @@
 
 - [Santiago](https://x.com/svpino/status/1881336934418755862) — 2025-01-21: Walks through GroundX, an open-source, self-hostable/air-gapped enterprise RAG system. Two services: Ingest (a pretrained vision model that 'understands' documents instead of feeding raw docs to the LLM) and Search (text+vector search with a fine-tuned re-ranker). Santiago's thesis: most teams need better ingestion, not better retrieval; includes a video demo and the free X-Ray inspection tool.
 
-### Management (134)
+### Management (139)
+
+- [Aaron Levie](https://x.com/levie/status/2099976021311398230) — 2026-09-16: Aaron Levie (Box) argues there is a large gap between raw model capability and the workflows enterprises actually want automated, and that the 'applied AI layer' filling it must connect intelligence to workflows, re-engineer processes, aggregate context and data, design human-in-the-loop steps, drive change management, run domain-specific evals, and handle data/process security and governance. His claim is that this layer becomes more important as models improve, since greater capability invites more complex tasks.
+
+- [Raj Singh](https://x.com/mobileraj/status/2099959137438503252) — 2026-09-16: Quote-boosts Gergely Orosz's diagram of OpenAI's agentic software factory and argues it should reduce anxiety about team velocity, since he suspects many product teams already operate close to this today. Useful as a calibration point for leaders benchmarking their own agent adoption.
+
+- [Gergely Orosz](https://x.com/gergelyorosz/status/2099945497377091902) — 2026-09-16: Publishes a breakdown of OpenAI's agentic software factory as it operates today, based on explanations from OpenAI engineers (newsletter.pragmaticengineer.com/p/openai-software-factory). Orosz singles out their 'Perf Factory' as especially interesting.
+
+- [Zach Lloyd](https://x.com/zachlloydtweets/status/2099941244063432720) — 2026-09-16: X Article laying out crawl/walk/run steps for moving from local interactive agents to a software factory (a closed agentic loop running in the cloud). The 'crawl' stage is simple Trigger -> Agent Activity automations that many eng leaders have already started: agents that reproduce and label new issues, review PRs as they open, respond to a Sentry alert and debug it, or self-heal CI by identifying PRs to roll back. Written for eng leaders and platform engineers who find the full model daunting.
+
+- [George from prodmgmt.world](https://x.com/nurijanian/status/2099876646400753923) — 2026-09-16: Argues against asking an agent 'what should we build next?' (which returns a feature list) and instead prompting it to build a MECE issue tree for the opportunity, withholding solutions until the tree is complete and flagging any branch with no evidence. Packaged as a reusable /mckinsey-issue-tree command; quotes the author's own longer X Article on issue trees.
 
 - [Yarchi](https://x.com/undefinedki/status/2095482394513924178) — 2026-09-04: Describes Meta's published 'organizational second brain': 200+ files split into two strictly separated layers -- knowledge files stating what the organization has decided (no steps) and recipes stating how to work a problem through (no facts) -- with each file declaring its dependencies and dependents in YAML so a change can be traced. Retrieval is not embeddings: routing indexes map input traits to the files that apply, so the same input deterministically loads the same files. Splitting the original flat instruction file plus semantic search into recipe stages that load only what the current step needs cut tokens per turn by roughly 80%. Failures get a single blame-assignment test -- could it have reached the right answer from the files it loaded? yes means the recipe is broken, no means knowledge is missing, experts disagreeing means neither -- and fixes are compiled into minimal edits reviewed by a separate agent that sees only the diff, replayed blind against the original failure, then folded into a regression suite. Six weeks, hundreds of expert corrections, zero retraining. Close to the knowledge-layer problem this collection itself is solving.
 
@@ -3864,7 +4042,17 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Points to a superengineer.net blog post as a good summary of Elon Musk's 5-step design/engineering method (DFX).
 
-### Adjacent (40)
+### Adjacent (45)
+
+- [Founder Thoughts & Strategies](https://x.com/mogulinfluence/status/2099857044077486524) — 2026-09-16: Repackages Callum's articulation article as an 'EXACT communication system' promising to command a room 10x faster with half as many words. Essentially a hook on top of the quoted piece — the underlying article (also in this collection) is the substance.
+
+- [Daniel Ch](https://x.com/chddaniel/status/2099805928061297041) — 2026-09-16: Endorsement post: the author says he rereads Dan Koe's article 'How to articulate yourself intelligently' twice a week and that the clickbait-sounding title undersells it. Value is in the quoted essay on explaining deep ideas clearly rather than in the post itself.
+
+- [rvaniaaa](https://x.com/rvaniaaaa/status/2099805315361395172) — 2026-09-16: Argues that repeatedly reintroducing yourself to an AI is an abnormality we have built habits around rather than a minor flaw, and that the real cost is starting every conversation by rebuilding context that already existed. Draws a distinction between a system that searches (finds an old file once you ask) and one that keeps up with you continuously. Framing is rhetorical rather than technical, but the search-versus-continuity distinction is the useful takeaway.
+
+- [Superman](https://x.com/thesupermanmx/status/2099799588018516010) — 2026-09-16: Claims MIT and NASA researchers published a gold futures strategy reporting a Sharpe ratio of 2.88, 43% CAGR and 0.52% maximum drawdown over ten years out-of-sample, using a physics-inspired architecture that treats market liquidity and pricing pressure like fluid dynamics and trades structural imbalances rather than predicting price. The post itself notes a Sharpe above 3.0 is usually considered fraud or a statistical mirage, which applies to these figures too — no paper is linked and the numbers are extraordinary, so treat as an unverified claim.
+
+- [Callum](https://x.com/callumhyman24/status/2098902833525391716) — 2026-09-16: X Article on articulating thoughts clearly, opening with the author losing a debate prize to someone who said the same idea better. Promises three communication frameworks for turning complex thoughts into structured ideas anyone can understand, plus delivery advice. Heavy on credential-dropping (consulting 50+ companies at 19), but this is the source article that several other posts in this batch repackage.
 
 - [hoeem](https://x.com/hooeem/status/2095531746720633267) — 2026-09-04: Announces a free long-form 8-phase course on building multi-agent automations in Hermes, sequenced setup -> reach/tools/memory -> first automation -> workflow design -> bot team -> subagents/rooms/routines -> reliability and cost -> debug and scale. The phase list is a reasonable curriculum shape for onboarding someone into multi-agent orchestration; the post itself is the pitch rather than the material, and the delivery is engagement-shaped.
 
@@ -3964,7 +4152,23 @@
 
 - [zostaff](https://x.com/zostaff/status/2033930728044372275) — 2026-03-18: zostaff's clickbait-titled ('How to Quit Your Job in One Day') walkthrough of an autonomous Polymarket trading system built from three agents: Claude (strategist — probability/recommendation/confidence), Codex (engineer — writes and debugs bot code), and OpenClaw (orchestrator — persistent memory, cron, modular skills, Telegram interface that executes trades and logs everything).
 
-### Questionable (128)
+### Questionable (136)
+
+- [klöss](https://x.com/kloss_xyz/status/2099979132616778121) — 2026-09-16: Distills a Grok Bot Galaxy session into a 22-rule playbook for running a fleet of bots, where an 'engineer bot' onboards other bots by passing fleet rules in a single message and the bots detect conflicts between their own rules. 'Steal it' framing and quote-boosting a launch event, but the bot-onboards-bot and self-detected-rule-conflict patterns are the substantive part.
+
+- [Hermes Agent Super-Intel](https://x.com/bkashjosi/status/2099926011303625207) — 2026-09-16: Pitches a 'library' interface for Hermes Agent: a complete guide, skills books installable directly, and a click-to-activate plugin list. Concept post about packaging agent capabilities as browsable, one-click-installable units rather than a shipped artifact; emoji-heavy promotional framing, so treat the specifics as aspirational.
+
+- [Founder Thoughts & Strategies](https://x.com/mogulinfluence/status/2099857044077486524) — 2026-09-16: Repackages Callum's articulation article as an 'EXACT communication system' promising to command a room 10x faster with half as many words. Essentially a hook on top of the quoted piece — the underlying article (also in this collection) is the substance.
+
+- [Alex](https://x.com/de1lymoon/status/2099856242948657161) — 2026-09-16: Proposes a two-model architecture (Kimi K3 + GPT-6 Astra) built on clean roles rather than one large context window: 'Two-Brain OS = Specialization + Shared State + Relay + Verification.' Research/planning and execution are split across models, only useful state is preserved (goal, evidence, decisions, failures, next action) and passed as a structured handoff packet instead of the full conversation, and completion requires proof such as a passing test. Presented in a percentage-milestone hype format, but the handoff-packet and proof-of-completion points are substantive.
+
+- [wast3](https://x.com/0xwast3/status/2099851294684922336) — 2026-09-16: Describes MEMENTO, an MIT-licensed agent memory layer with 41 memory types, 9 write gates and 6 decay curves, positioned against stuffing recent messages into the prompt. Design points: intake splits a claim from its source so fact and speaker never fuse; nine checks run before a write, including whether the fact already exists in another wording; a contradicting fact does not overwrite the old one, both persist with timestamps; facts about a person, project and preference go to separate stores; and anything unread long enough decays until retrieval stops finding it. The 'Anthropic engineer' attribution and 'makes vector search look like a toy' framing are the author's, not verified here.
+
+- [Superman](https://x.com/thesupermanmx/status/2099799588018516010) — 2026-09-16: Claims MIT and NASA researchers published a gold futures strategy reporting a Sharpe ratio of 2.88, 43% CAGR and 0.52% maximum drawdown over ten years out-of-sample, using a physics-inspired architecture that treats market liquidity and pricing pressure like fluid dynamics and trades structural imbalances rather than predicting price. The post itself notes a Sharpe above 3.0 is usually considered fraud or a statistical mirage, which applies to these figures too — no paper is linked and the numbers are extraordinary, so treat as an unverified claim.
+
+- [rody](https://x.com/0x_rody/status/2099790134547751115) — 2026-09-16: X Article listing ten agent roles to build first, ordered by dependency rather than alphabetically or by glamour: each exists because the previous one produces output that needs handling, and each has a single owner for a single outcome. Argues narrow roles are worth more now that models follow long instructions better, since one agent handed everything drifts by step forty, and names the field that keeps each role from wandering. Includes exact prompts; funnels to the author's Substack.
+
+- [Callum](https://x.com/callumhyman24/status/2098902833525391716) — 2026-09-16: X Article on articulating thoughts clearly, opening with the author losing a debate prize to someone who said the same idea better. Promises three communication frameworks for turning complex thoughts into structured ideas anyone can understand, plus delivery advice. Heavy on credential-dropping (consulting 50+ companies at 19), but this is the source article that several other posts in this batch repackage.
 
 - [Annatar.md](https://x.com/annatarxbt/status/2095540725022654658) — 2026-09-04: Claims NVIDIA is offering free year-long API access to 140+ hosted models via build.nvidia.com/models (register, bind phone, copy key), served from integrate.api.nvidia.com/v1 at 40 req/min for $0. Lists GLM 5.2, MiniMax M3, Nemotron-3-ultra-550b-a55b and Kimi K2.7 among the available models and gives a three-step setup for pointing Hermes, Cursor or OpenCode at the endpoint as a custom provider. Concrete and actionable if the terms hold, but the free-tier claim and expiry are the author's and worth verifying at the source before depending on them.
 
@@ -4430,6 +4634,117 @@
 ## Full Chronological List
 
 ### Sep 2026
+
+- **2026-09-16** | [Yarchi](https://x.com/undefinedki/status/2100206342942187620) | agent-design, research
+  Describes Google's Stellar Colosseum, a multi-agent setup published for unsolved math problems and already built into Antigravity, Google's agent development tool. Running on Gemini models it reportedly proved 71% of research-level theorems drawn from top CS conference papers and solved 218 of 222 competitive programming puzzles. The transferable structure for long agent tasks: explore several routes and have agents attack each other's before building; gate progress on surviving review; split the plan into sections with dependencies so a failure retries only that section; pair every generator with a falsifier whose only job is breaking the output; then merge candidates.
+
+- **2026-09-16** | [Nathan Flurry](https://x.com/nathanflurry/status/2100036101809619314) | industry, agent-design, research
+  A deliberately hype-free framing of Jev: not a replacement for GPT or Claude, but 'a really smart switch statement' — 2016-era ML classifiers at 2026 intelligence levels, which the author notes is rebranded rather than genuinely new. It needs a predefined option set and returns which to take. It cannot write code, generate natural language, reason step by step, produce undefined output, or pick from more than ~255 options in one shot; it can classify, route, score, rank, give confidence, pick the right branch/tool/model/sub-agent, judge or guardrail an LLM's output, and label large volumes of rows. Suggests the shape: LLM proposes options -> Jev decides -> code executes. A useful skeptical counterweight to the Jev launch posts.
+
+- **2026-09-16** | [Michael](https://x.com/michaellee04/status/2100003037150683593) | industry, agent-design, research
+  Hands-on report of roughly 5,000 Jev requests for about $2, spanning classification, model routing, intent detection and steering. The author's argument is that Jev is a new decision-making primitive distinct from both deterministic code and LLM calls, covering decisions too nuanced for dumb code but not worth a slow, expensive LLM. He expects to make several Jev calls per LLM call and suggests most companies using LLMs could add a Jev call before and/or after existing calls to improve tool-calling behaviour cheaply. Compares against his own prior classification benchmark.
+
+- **2026-09-16** | [Teknium](https://x.com/teknium/status/2099996435324518533) | agent-design, dev-practices, industry
+  Teknium's first blog post covers running roughly 1,393 Hermes Agent subagents over 19 hours to refactor about 400,000 lines out of Hermes Agent's million-line Python repo, ending 34.4% smaller and, by Nous Research's estimate, saving nearly $2m in engineering hours (nousresearch.com/refactoring-hermes-with-1393-agents). A concrete large-scale data point on massively parallel subagent refactoring.
+
+- **2026-09-16** | [Nate Berkopec](https://x.com/nateberkopec/status/2099995262802641129) | skills-mcp, dev-practices, industry
+  Nate Berkopec says he has spent three months telling all his clients to move everything to MCPs and executor.sh, having been convinced by an internal 'MCP proxy' built at a client and by large companies like Ramp adopting the same 'MCP of MCPs' approach. Quotes Rhys Sullivan's case for MCP over CLIs: an indexable tool catalog that scales agents to unlimited tools, no requirement to run a full sandbox, and consistent auth across servers instead of each CLI inventing its own.
+
+- **2026-09-16** | [Chi Wang](https://x.com/chi_wang_/status/2099988069642604556) | agent-design, dev-practices, research
+  Notes that NVIDIA's OpenShell uses the Z3 theorem prover to verify agent actions, and that when it denies a path it returns the exact constraint adjustment needed. The argument is that binary guardrails just halt the loop whereas structured counterexamples turn a block into a solvable recovery step. Links nvidia.github.io/OpenShell-Research dev notes on formal methods for agent policy.
+
+- **2026-09-16** | [klöss](https://x.com/kloss_xyz/status/2099979132616778121) | agent-design, questionable
+  Distills a Grok Bot Galaxy session into a 22-rule playbook for running a fleet of bots, where an 'engineer bot' onboards other bots by passing fleet rules in a single message and the bots detect conflicts between their own rules. 'Steal it' framing and quote-boosting a launch event, but the bot-onboards-bot and self-detected-rule-conflict patterns are the substantive part.
+
+- **2026-09-16** | [Aaron Levie](https://x.com/levie/status/2099976021311398230) | industry, agent-design, management
+  Aaron Levie (Box) argues there is a large gap between raw model capability and the workflows enterprises actually want automated, and that the 'applied AI layer' filling it must connect intelligence to workflows, re-engineer processes, aggregate context and data, design human-in-the-loop steps, drive change management, run domain-specific evals, and handle data/process security and governance. His claim is that this layer becomes more important as models improve, since greater capability invites more complex tasks.
+
+- **2026-09-16** | [Raj Singh](https://x.com/mobileraj/status/2099959137438503252) | management, agent-design, dev-practices
+  Quote-boosts Gergely Orosz's diagram of OpenAI's agentic software factory and argues it should reduce anxiety about team velocity, since he suspects many product teams already operate close to this today. Useful as a calibration point for leaders benchmarking their own agent adoption.
+
+- **2026-09-16** | [Yarchi](https://x.com/undefinedki/status/2099952282217615827) | agent-design, dev-practices, research
+  Summarizes Airbnb's published method for mapping what a support assistant will face before launch, which they encoded as a reusable pipeline after redoing the work per language and country. The core loop is extract -> embed -> cluster: a single structured-output labelling pass over every item (the only step touching the model at scale, so it sets cost), then embedding the labels rather than the raw text, so clusters group by what the model decided instead of by sentence phrasing. Applies to any unstructured corpus: tickets, survey answers, reviews, sales calls, or a model's own failures.
+
+- **2026-09-16** | [Dan Shipper](https://x.com/danshipper/status/2099947471518474522) | industry, research, agent-design
+  Reports that Every has spent about a week testing Jev, a model they consider indispensable within 6-12 months, noting they almost never test new foundation models. The distinguishing property is that it outputs probabilities rather than words, letting it act as a judge where you would otherwise need a Fable-level model, and in their testing it was 25x faster and 600x lower priced. Links a vibe check on every.to.
+
+- **2026-09-16** | [Gergely Orosz](https://x.com/gergelyorosz/status/2099945497377091902) | management, dev-practices, industry, agent-design
+  Publishes a breakdown of OpenAI's agentic software factory as it operates today, based on explanations from OpenAI engineers (newsletter.pragmaticengineer.com/p/openai-software-factory). Orosz singles out their 'Perf Factory' as especially interesting.
+
+- **2026-09-16** | [Zach Lloyd](https://x.com/zachlloydtweets/status/2099941244063432720) | management, dev-practices, agent-design
+  X Article laying out crawl/walk/run steps for moving from local interactive agents to a software factory (a closed agentic loop running in the cloud). The 'crawl' stage is simple Trigger -> Agent Activity automations that many eng leaders have already started: agents that reproduce and label new issues, review PRs as they open, respond to a Sentry alert and debug it, or self-heal CI by identifying PRs to roll back. Written for eng leaders and platform engineers who find the full model daunting.
+
+- **2026-09-16** | [Hermes Agent Super-Intel](https://x.com/bkashjosi/status/2099926011303625207) | skills-mcp, agent-design, questionable
+  Pitches a 'library' interface for Hermes Agent: a complete guide, skills books installable directly, and a click-to-activate plugin list. Concept post about packaging agent capabilities as browsable, one-click-installable units rather than a shipped artifact; emoji-heavy promotional framing, so treat the specifics as aspirational.
+
+- **2026-09-16** | [Diogo Almeida](https://x.com/completeskeptic/status/2099925690682630371) | industry, research
+  Follow-up to the Jev announcement pointing at the technical release blog (typesafe.ai/blog/introducing-system-one-models-and-jev), an early-access waitlist at typesafe.ai, and a Discord. Opens by acknowledging that extraordinary claims require extraordinary evidence — the blog is the place to check the numbers claimed in the launch post.
+
+- **2026-09-16** | [Diogo Almeida](https://x.com/completeskeptic/status/2099925682726002904) | industry, research
+  Launch announcement for Jev from TypeSafe AI. Almeida, who describes himself as a ChatGPT co-inventor, says he spent two years in stealth on a new training method (RLCD) and a model type optimized for decisions rather than chat, claiming 20-200x faster, 40-400x cheaper with output tokens free, and 'frontier composable intelligence.' His framing question is why superhuman chat models have not led to AGI. At 22.4M views this is the anchor post for the Jev launch cluster in this batch; the performance figures are the company's own.
+
+- **2026-09-16** | [beamnxw ./](https://x.com/beamnxw/status/2099920164397699464) | agent-design, skills-mcp, research
+  Covers WikiSkill from Google engineers, which turns an agent's execution history into persistent knowledge and compiles it into reusable skills — an 'experience compiler' for agents. The loop: run tasks, preserve raw traces, consolidate recurring failures and successful strategies into a wiki, propose one atomic skill update, validate, then keep or roll back. The design point the author highlights is that skills can roll back but the wiki never does, so successful strategies, recurring failures, rejected edits and skill impact history all survive into the next iteration.
+
+- **2026-09-16** | [Viv](https://x.com/vtrivedy10/status/2099902899341926641) | agent-design, dev-practices, research
+  Argues that continuously converting production data into evals is one of the most promising directions in AI, and that teams should staff it. Running agents in production yields both failure/inefficiency signal and large-scale understanding of how people actually want to use the agent; pairing human experts with agents turns that data into tasks reflecting what the company actually wants agents to be good at. Frames this as a continual-learning loop teams should own themselves via open recipes.
+
+- **2026-09-16** | [Yarchi](https://x.com/undefinedki/status/2099893390309515770) | claude-code, skills-mcp, prompting
+  Points at 'i-have-adhd' (github.com/ayghri/i-have-adhd), an MIT-licensed Claude skill that constrains assistant output to ten rules: lead with the next action, number the steps, cap lists at five, give time in minutes rather than vague terms, no preamble/recap/pleasantries, and end every reply with one concrete next step. Installs with a single CLI line and is forkable if you want different rules.
+
+- **2026-09-16** | [rvaniaaa](https://x.com/rvaniaaaa/status/2099881788826902678) | agent-design, dev-practices
+  Compares two teams on the same task with the same model where one spent $200 on compute and one $9, and attributes the quality gap to who checked the work. The better setup split the job across three separate agents (one writes a spec, one builds, one drives the result in a browser and grades it with no memory of having built it) and took 6 hours versus 20 minutes. Three decisions explain the gap: the builder never grades its own work, dangerous actions are removed from the environment rather than prompted about (a sealed folder with no network dropped permission prompts 84%), and rules live outside the context window.
+
+- **2026-09-16** | [Charlie Hills](https://x.com/charliejhills/status/2099879785363304546) | claude-code, dev-practices, prompting
+  A four-step method for imposing a graph on an overloaded Claude Code folder (charliehills.substack.com/p/graph-engineering-claude-code): prompt one writes MAP.md, then check for conflicts, duplicates and unlinked work, approve the smallest fixes, and use a third prompt to update CLAUDE.md. The author ran it on his own folders and found 1,840 of 2,364 documents (78%) with nothing pointing at them. Notes he verifies whether each connection is FOUND or GUESSED before trusting it, and frames the goal as onboarding a team into his system without him in the middle.
+
+- **2026-09-16** | [George from prodmgmt.world](https://x.com/nurijanian/status/2099876646400753923) | prompting, agent-design, management
+  Argues against asking an agent 'what should we build next?' (which returns a feature list) and instead prompting it to build a MECE issue tree for the opportunity, withholding solutions until the tree is complete and flagging any branch with no evidence. Packaged as a reusable /mckinsey-issue-tree command; quotes the author's own longer X Article on issue trees.
+
+- **2026-09-16** | [Navaneeth Krishnan](https://x.com/navaneethvb/status/2099861736857989507) | research, dev-practices
+  Explains that production LLM sampling is more than temperature/top-k/top-p once continuous batching is involved: four concurrent requests decoding together (greedy; temp+top_p; top_k+repetition penalty; seeded with JSON constraints) share one model forward pass producing a logits matrix with one row per active request, but each row needs different selection rules. Walks through how vLLM handles this. Author is writing an inference-engineering repo with a sampling chapter to follow.
+
+- **2026-09-16** | [Matt Pocock](https://x.com/mattpocockuk/status/2099859946053533933) | claude-code, dev-practices, prompting
+  Matt Pocock's /retro command now actively looks for chances to convert fuzzy rules into deterministic checks, proposing custom lint rules, pre-commit hooks or CI workflows. The pattern: when you hit an error, run a retro and make that error impossible next time rather than writing another guideline.
+
+- **2026-09-16** | [Akshay](https://x.com/akshay_pachaar/status/2099857657872122108) | claude-code, dev-practices, agent-design
+  Walks through Magnitude, an open-source tool for running agent harnesses (Claude Code, Codex, OpenCode, Pi) on local models. The argument is that local setup is not the hard part — picking which local model your machine can actually handle is, given RAM, model size, quantization, context length, KV cache, speed and accuracy trade-offs. Magnitude profiles your hardware, benchmarks what it can realistically run, recommends models, and connects them to your harness in two commands. Video covers profiling through to running.
+
+- **2026-09-16** | [Founder Thoughts & Strategies](https://x.com/mogulinfluence/status/2099857044077486524) | adjacent, questionable
+  Repackages Callum's articulation article as an 'EXACT communication system' promising to command a room 10x faster with half as many words. Essentially a hook on top of the quoted piece — the underlying article (also in this collection) is the substance.
+
+- **2026-09-16** | [Alex](https://x.com/de1lymoon/status/2099856242948657161) | agent-design, prompting, questionable
+  Proposes a two-model architecture (Kimi K3 + GPT-6 Astra) built on clean roles rather than one large context window: 'Two-Brain OS = Specialization + Shared State + Relay + Verification.' Research/planning and execution are split across models, only useful state is preserved (goal, evidence, decisions, failures, next action) and passed as a structured handoff packet instead of the full conversation, and completion requires proof such as a passing test. Presented in a percentage-milestone hype format, but the handoff-packet and proof-of-completion points are substantive.
+
+- **2026-09-16** | [wast3](https://x.com/0xwast3/status/2099851294684922336) | agent-design, skills-mcp, research, questionable
+  Describes MEMENTO, an MIT-licensed agent memory layer with 41 memory types, 9 write gates and 6 decay curves, positioned against stuffing recent messages into the prompt. Design points: intake splits a claim from its source so fact and speaker never fuse; nine checks run before a write, including whether the fact already exists in another wording; a contradicting fact does not overwrite the old one, both persist with timestamps; facts about a person, project and preference go to separate stores; and anything unread long enough decays until retrieval stops finding it. The 'Anthropic engineer' attribution and 'makes vector search look like a toy' framing are the author's, not verified here.
+
+- **2026-09-16** | [AYi](https://x.com/ayi_ainotes/status/2099833846350942385) | agent-design, research, claude-code
+  Chinese-language walkthrough of Anthropic's 13-page agent memory whitepaper, which the author rates the most useful production-grade treatment of agent memory engineering this year. Centers on a five-layer memory pyramid and the claim that it cuts large-model invocation costs by around 90%. The framing problem: agents that never forget get more contradictory the longer they run, rereading the same files daily and repeating yesterday's mistakes. Cost-reduction figure is as reported by the post.
+
+- **2026-09-16** | [marfin](https://x.com/marfinxx/status/2099830820466831586) | research, agent-design, dev-practices
+  Summarizes a Microsoft paper introducing LoopsBench (112 multi-step tasks, 5,300+ development units) which reports Claude Opus 4.7 running inside Claude Code resolving 25.00% of authentic repositories. The argued failure chain is flat prompt execution -> omitted prerequisite edges -> patch bloat -> regression cascade -> a 25% resolve wall, and the claim is that terminal benchmarks like SWE-bench hide this by judging isolated patches rather than an agent loop's ability to manage accumulating obligations over time. Frames the needed shift as Harness Engineering to Loop Engineering.
+
+- **2026-09-16** | [Daniel Ch](https://x.com/chddaniel/status/2099805928061297041) | adjacent
+  Endorsement post: the author says he rereads Dan Koe's article 'How to articulate yourself intelligently' twice a week and that the clickbait-sounding title undersells it. Value is in the quoted essay on explaining deep ideas clearly rather than in the post itself.
+
+- **2026-09-16** | [rvaniaaa](https://x.com/rvaniaaaa/status/2099805315361395172) | agent-design, adjacent
+  Argues that repeatedly reintroducing yourself to an AI is an abnormality we have built habits around rather than a minor flaw, and that the real cost is starting every conversation by rebuilding context that already existed. Draws a distinction between a system that searches (finds an old file once you ask) and one that keeps up with you continuously. Framing is rhetorical rather than technical, but the search-versus-continuity distinction is the useful takeaway.
+
+- **2026-09-16** | [Superman](https://x.com/thesupermanmx/status/2099799588018516010) | adjacent, questionable
+  Claims MIT and NASA researchers published a gold futures strategy reporting a Sharpe ratio of 2.88, 43% CAGR and 0.52% maximum drawdown over ten years out-of-sample, using a physics-inspired architecture that treats market liquidity and pricing pressure like fluid dynamics and trades structural imbalances rather than predicting price. The post itself notes a Sharpe above 3.0 is usually considered fraud or a statistical mirage, which applies to these figures too — no paper is linked and the numbers are extraordinary, so treat as an unverified claim.
+
+- **2026-09-16** | [rody](https://x.com/0x_rody/status/2099790134547751115) | agent-design, prompting, questionable
+  X Article listing ten agent roles to build first, ordered by dependency rather than alphabetically or by glamour: each exists because the previous one produces output that needs handling, and each has a single owner for a single outcome. Argues narrow roles are worth more now that models follow long instructions better, since one agent handed everything drifts by step forty, and names the field that keeps each role from wandering. Includes exact prompts; funnels to the author's Substack.
+
+- **2026-09-16** | [Sakana AI](https://x.com/sakanaailabs/status/2099468208231399687) | research
+  Introduces PC-ALM (pub.sakana.ai/pc-alm/), a local-learning alternative to backpropagation that trains 1000-layer networks using only local dynamics. Motivated by the observation that the brain cannot implement backprop exactly, it draws on distributed optimization and NeuroAI: predictive coding treats each layer as a dynamical system solving an energy-based inference problem via local prediction errors. Addresses the known problem that predictive coding has not scaled with depth because credit signals degrade across distant layers.
+
+- **2026-09-16** | [Callum](https://x.com/callumhyman24/status/2098902833525391716) | adjacent, questionable
+  X Article on articulating thoughts clearly, opening with the author losing a debate prize to someone who said the same idea better. Promises three communication frameworks for turning complex thoughts into structured ideas anyone can understand, plus delivery advice. Heavy on credential-dropping (consulting 50+ companies at 19), but this is the source article that several other posts in this batch repackage.
+
+- **2026-09-16** | [harshatheg](https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD) | research, dev-practices, agent-design
+  Hugging Face model card for Qwen-2.5-1B-RLCD / Atomic Chat, an Apache-2.0 parallel constrained decoding engine for Apple Silicon via MLX. Instead of generating structured output token by token, it prefills the context and schema once into an MLX KV cache, broadcasts that cache across all schema fields in parallel, and slices logits to only the valid candidate tokens per field, assembling JSON programmatically so syntax is valid by construction. Reported on an M4 Max with Qwen2.5-1.5B-Instruct-4bit: 5.6x to 7.0x latency reductions (e.g. 28-field support triage 1,900ms -> 270ms; a 255-choice tariff field 500ms -> 89ms), 100% schema validity, and calibrated per-field confidence scores. Directly relevant to the Jev-style 'constrained decision primitive' thread running through this batch, as a local open-source analogue.
 
 - **2026-09-15** | [Salvatore Sanfilippo](https://github.com/antirez/ds4) | agent-design, dev-practices, claude-code
   DwarfStar (github.com/antirez/ds4) is Salvatore Sanfilippo's self-contained C inference engine for running DeepSeek V4 Flash/PRO and GLM 5.2/5.3 on hardware people actually own — Metal on 96GB+ Macs, CUDA including DGX Spark and multi-GPU Ada/L40S, ROCm on Strix Halo — with SSD streaming for models larger than RAM, compressed KV caches, and tensor/pipeline parallelism to glue several machines together. It ships a native coding agent (ds4-agent, with its own KV-cache session save/switch/strip commands) and an HTTP server that Claude Code, Codex CLI, OpenCode and Pi can point at; it is deliberately narrow rather than a general GGUF runner and only runs the GGUF files the project itself produces. 22.3k stars, MIT, beta-quality and fast-moving — notable beyond the code for antirez's explicit 'developed with strong assistance from AI coding agents' disclosure and his argument that software should now ship as a modifiable template you adapt with a coding agent rather than a finished product trying to cover every setup.
