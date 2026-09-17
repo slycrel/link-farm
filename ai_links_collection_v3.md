@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-09-16T21:12:39Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-09-17T15:05:13Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-09-16** — [Yarchi](https://x.com/undefinedki/status/2100206342942187620) — *near-term • Agent Design • 4,142 views • v1 enriched*  
