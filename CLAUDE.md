@@ -195,9 +195,13 @@ Runs weekday mornings at 9 AM (Cowork scheduled task `ai-links-sync`). Pulls the
 
 Bulk enrichment tool invoked by saying things like "catch up on links" or "enrich my links." Three phases: (1) backfill missing URLs from Outlook email bodies, (2) scrape post content via Chrome and summarize/reclassify, (3) post-enrichment pipeline (embed + mechanical/semantic discovery + rebuild via `db/pipeline.post_enrichment_pipeline`). Handles all content types: direct posts, quote tweets (unified context), X articles, videos (bookmark only), and follow-up posts with thread awareness for GitHub links.
 
-### Weekday Backfill (ai-links-backfill)
+### Backfill (ai-links-backfill) — campaign complete, task dormant
 
-Unattended weekday background re-enrichment, scheduled for 10:30 AM local Monday through Friday (cron `30 10 * * 1-5`) — after the 9 AM morning sync settles. Processes a fixed BATCH_LIMIT (currently 15) of `partial` / `failed` / `unattempted` posts per run via Chrome + `db/enrich.py` helpers, then runs the same `post_enrichment_pipeline` the sync and catch-up skills use. Drives down the recoverable-incompleteness ratio so the latent-discovery gate (`(partial + failed) / (total − dead) < 0.05`) eventually opens. Skips `legacy-ok` posts (they have usable content already) — that's a separate concern when `ENRICHMENT_VERSION` bumps. Cleanly no-ops when the queue is empty. At 75 posts/week, the backlog drains in roughly 3 weeks under typical conditions; the cadence can be slowed back to weekly once the gate opens.
+**The backfill campaign is finished.** It existed to drain a recoverable-incompleteness backlog so the latent-discovery gate (`(partial + failed) / (total − dead) < 0.05`) could open. The gate opened on 2026-08-14 and the queue hit zero on 2026-08-26; every post has been `ok` or `dead` ever since. The task is **disabled** in the Cowork app store (last run 2026-08-03, cron `30 10 * * 1`) and is kept as a dormant tool, not a standing cadence — there is nothing for it to do, and the 9 AM sync already picks up any stray `partial`/`failed` post on the next light day via its own backlog append.
+
+Earlier vintages of this file described it as running weekdays (`30 10 * * 1-5`). That was the drain-the-backlog cadence and is no longer accurate; don't recreate it on a schedule from that description.
+
+**When to wake it up.** If a run of bad scrapes ever rebuilds a real queue — say `pending_enrichment_ids(statuses=('partial','failed'))` returns more than a couple dozen, or `gate_ratio()` climbs back above 0.05 — re-enable the existing task rather than writing a new one. It processes a fixed BATCH_LIMIT (currently 15) of `partial` / `failed` / `unattempted` posts per run via Chrome + `db/enrich.py` helpers, then runs the same `post_enrichment_pipeline` the sync and catch-up skills use. It skips `legacy-ok` posts (they have usable content already — that's a separate concern when `ENRICHMENT_VERSION` bumps) and cleanly no-ops on an empty queue. At 75 posts/week a backlog drains in roughly 3 weeks; slow the cadence back down or disable it again once the gate reopens. The prompt body is snapshotted at `scheduled/ai-links-backfill.SKILL.md`.
 
 ### Curate Skill (ai-links-curate)
 
@@ -358,26 +362,32 @@ The HTML stats line (date range, counts) is computed dynamically by the viewer J
 4. **Videos** — Low priority. Mark as sourceType "video" and bookmark for manual review.
 5. **Follow-up posts** — Authors often reply to their own tweets with GitHub links or additional context. Check thread for same-author replies.
 
-## Collection Stats (as of August 26, 2026)
+## Collection Stats (as of September 17, 2026)
 
-Regenerate these numbers from the DB rather than trusting them blind — they drift between refreshes. The queries are one-liners against `db/ai_links.db`.
+Regenerate these numbers from the DB rather than trusting them blind — they drift between refreshes. The queries are one-liners against `db/ai_links.db`. **`db/stats.py` prints this whole block** (`python3 -m db.stats`) — use it rather than hand-editing, so the numbers and the date stay honest together.
 
-- **836 total posts** in SQLite (live count). Date range: June 11, 2024 – August 25, 2026.
-- Enrichment status: **763 `ok`** (current `ENRICHMENT_VERSION=1`), 73 `dead` (permanent floor — deleted/suspended/login-walled). **Zero `partial` / `failed` / `unattempted` / `legacy-ok` — the enrichment queue is completely empty** as of 2026-08-26, so `ai-links-backfill` no-ops until new mail arrives.
+- **890 total posts** in SQLite (live count). Date range: June 11, 2024 – September 16, 2026.
+- Enrichment status: **817 `ok`** (current `ENRICHMENT_VERSION=1`), 73 `dead` (permanent floor — deleted/suspended/login-walled). **Zero `partial` / `failed` / `unattempted` / `legacy-ok` — the enrichment queue has been completely empty since 2026-08-26**, which is why the backfill task is dormant (see the Automation section).
 - **Latent gate ratio: 0.00% — the gate is OPEN** (open since 2026-08-14; see `gate_history`). With no recoverable-incomplete posts left, the numerator is zero. Latent discovery is available on demand, but only inside a skill session — it is deliberately not in `post_enrichment_pipeline` because an unattended run has no reader.
-- Top topics: agent-design (490), dev-practices (354), research (211), claude-code (191), skills-mcp (191), management (131), prompting (125), questionable (122), industry (121), general (100), `adjacent` (38), `solo-operator` (8), `biohacking` (7).
+- Top topics: agent-design (530), dev-practices (383), research (235), skills-mcp (201), claude-code (197), management (139), questionable (136), industry (134), prompting (131), general (100), `adjacent` (45), `biohacking` (8), `solo-operator` (8).
 - **Re-tag pass, 2026-08-18.** `adjacent` and `solo-operator` had 1 post each despite being deliberate taxonomy additions. A review of the 151 live `general`/`industry` posts (cross-checked against concepts #45/#50) added 27 `adjacent` and 4 `solo-operator` tags, additively — existing topics were preserved, nothing was retagged away. Root cause was upstream: the *live* `ai-links-sync` scheduled task had drifted to a June vintage carrying the old aggressive intake filter ("filter out non-AI/tech") and no mention of either topic, so the enricher never had them in its working vocabulary. Live task and repo snapshot are now back in sync and both name the two topics explicitly.
 - Two known gaps left after that pass, both judgment calls rather than oversights: (a) a **quant-trading / masterclass vein** (concept #45, ~5 posts — Jane Street / Jim Simons / Markov-chain lectures) is non-engineering but doesn't fit `adjacent`'s "informs how the technical work gets used or sold" test; (b) a **health / biohacking vein** (~4-5 posts — peptides, nootropics, longevity, biotech digests) has no taxonomy home at all and currently sits in `general`. Both are honestly-labelled where they are; a new topic would be the fix if either keeps growing.
 - Note: concept #50 is named *founder philosophy & life-design essays* but its primary members are mostly technical "recommended reading" endorsement posts — the name overpromises and is a rename/split candidate independent of the size trigger.
-- Priority breakdown: near-term (548), long-term (178), now (110).
-- Audiences: me (828), dev-team (586), leadership (156), team (5).
-- Concept graph (2026-09-15): **48 active + 1 provisional** (10 archived, 8 merged-into). ~7,130 edges — ~5,020 `evidence` + ~2,100 `weak` + 2 `counter-example`. **Quote the primary-home count, not the evidence count and not the total** — see the set-identity finding above; evidence overstates a concept by 10–60x and the totals include the generous weak layer. **541 primary homes across 32 concepts**, 0 pending observations.
-- **20 of the (then) 52 active concepts were home to zero posts** — they existed only as secondary tags. 13 were `url:` groupings. This is the empty-shell problem in a second form: the regression query in the bullet below checks for concepts with *no edges*, which these pass. The sharper query is `SELECT id,name FROM concepts c WHERE status='active' AND NOT EXISTS(SELECT 1 FROM post_concepts pc WHERE pc.concept_id=c.id AND pc.is_primary=1)`.
+- Priority breakdown: near-term (602), long-term (178), now (110).
+- Audiences: me (882), dev-team (632), leadership (168), team (5).
+- Concept graph (2026-09-17): **54 active + 1 provisional** (10 archived, 8 merged-into). 7,540 edges — 5,317 `evidence` + 2,221 `weak` + 2 `counter-example`. **Quote the primary-home count, not the evidence count and not the total** — see the set-identity finding above; evidence overstates a concept by 10–60x and the totals include the generous weak layer. **562 primary homes across 33 concepts**, 0 pending observations. Largest homes: #41 *Claude Code setup & usage* (65), *vector / hybrid databases as agent-memory infrastructure* (54), #19 *agent harness engineering* (54).
+- **21 of the 54 active concepts are home to zero posts** (2026-09-17; was 20 of 52 on 2026-09-15) — they exist only as secondary tags, and many are `url:` groupings. This is the empty-shell problem in a second form: the regression query in the bullet below checks for concepts with *no edges*, which these pass. The sharper query is `SELECT id,name FROM concepts c WHERE status='active' AND NOT EXISTS(SELECT 1 FROM post_concepts pc WHERE pc.concept_id=c.id AND pc.is_primary=1)`.
 - **Merged 2026-09-15:** four `url:` concepts that were exact duplicates of their named twins (identical member sets) — #30→#21 `awesome-claude-skills`, #33→#24 `Feynman`, #35→#26 `turbovec`, #34→#25 `learn-harness-engineering`. 541 primaries unchanged by the merge.
-- Orphans (no canonical home): **239 live posts**, of which only 53 have *no edge at all* — **186 have edges that are all `weak`**. 63 sit at a best-candidate cosine of 0.80–0.81, just under the 0.82 floor. The topic bias the role work fixed has stayed fixed (`adjacent` is 1.06x baseline, was 1.6x). Known narrow gap: a post whose *only* edges came from `revive_dismissed.py` can never be homed, since that script deliberately attaches recovered history as `weak` regardless of cosine — this strands exactly 3 posts whose best revived edge cleared 0.82 (Garry Tan 0.824/#19, Phil Chen 0.825/#5, Avid 0.827/#2). Not a bug; a policy edge case.
+- Orphans (no canonical home): **253 live posts** (2026-09-17), of which only 53 have *no edge at all* — **200 have edges that are all `weak`**. 63 sit at a best-candidate cosine of 0.80–0.81, just under the 0.82 floor. The topic bias the role work fixed has stayed fixed (`adjacent` is 1.06x baseline, was 1.6x). Known narrow gap: a post whose *only* edges came from `revive_dismissed.py` can never be homed, since that script deliberately attaches recovered history as `weak` regardless of cosine — this strands exactly 3 posts whose best revived edge cleared 0.82 (Garry Tan 0.824/#19, Phil Chen 0.825/#5, Avid 0.827/#2). Not a bug; a policy edge case.
 - **#41 `Claude Code setup & usage` was vetted for splitting on 2026-09-15 and should NOT be split.** Sub-clustering its 61 homes on mean-centered embeddings at 0.30 (deliberately *below* the 0.40 orphan threshold) yields a largest sub-cluster of 3 and 46 singleton/pair groups. It is broad-and-popular, not conflated — exactly the case the trigger is documented not to act on. Treat the recurring advisory flag on #41 as noise.
 - **The empty-shell caveat is resolved — as of 2026-08-26 there are 0 zero-edge active concepts** (it was 20 of 49 on 2026-08-24). All 50 active concepts now carry edges, so the active count is finally an honest measure of the conceptual vocabulary. The regression query is worth keeping, since mechanical discovery can recreate shells at any time: `SELECT id,name FROM concepts c WHERE status='active' AND NOT EXISTS(SELECT 1 FROM post_concepts pc WHERE pc.concept_id=c.id)`.
-- Observation provenance: semantic 6,899 promoted / 416 dismissed, mechanical 120 / 19, cluster 58 promoted, latent 16 promoted. Note the semantic dismissed count *fell* (2,560 → 416) while promoted rose sharply — the blob-remediation campaign replaced paraphrase with real content, so matches that previously scored under the 0.82 floor now clear it.
+- Observation provenance (2026-09-17): semantic 7,383 promoted / 6,017 dismissed, mechanical 134 / 19, cluster 58 promoted, latent 16 promoted, curated 14 promoted.
+- **The no-discard policy is holding, and the dismissed count is a historical archive — not a live behaviour.** Earlier vintages of this file quoted a much smaller dismissed figure (416) measured a different way; the honest number is 6,017, essentially all of it predating the policy. Grouping dismissals by date makes this unambiguous: **4,119 on 2026-08-26, then zero on every run since.** That date is exactly when `auto_curate()` stopped discarding. If a future audit ever shows a nonzero dismissal on a recent date, something regressed — automation is supposed to attach and label only. The check:
+
+```sql
+SELECT substr(observed_at,1,10) d, source, COUNT(*) FROM concept_observations
+WHERE status='dismissed' GROUP BY d, source ORDER BY d DESC LIMIT 5;
+```
 - 36 posts carry a subject `flag:` in `notes`.
 - Known dead zone: Jan 3–16, 2026 — many X posts return "page doesn't exist." Some have replacement URLs (authors may have deleted and reposted). Two confirmed replacements found so far (James Cowling, fintechjunkie).
 
@@ -401,43 +411,73 @@ The collection is mirrored to **https://github.com/slycrel/link-farm** after eac
 
 ### Pushing to GitHub
 
-A GitHub OAuth token is stored at `.claude/github_token`. At the start of any session that needs to push:
+A GitHub OAuth token is stored at `.claude/github_token` (gitignored — see `SETUP.md` §2 to recreate it on a new box). At the start of any session that needs to push:
 
 ```python
-import subprocess, pathlib
-token = pathlib.Path('/sessions/inspiring-clever-keller/mnt/cowork/.claude/github_token').read_text().strip()
-subprocess.run(['git', 'config', '--global', 'credential.helper', 'store'], check=True)
+import subprocess, pathlib, glob
+
+# Never hardcode the session path — the sandbox mount name changes every session.
+# Discover the folder by looking for the one that actually has CLAUDE.md in it.
+candidates = sorted(glob.glob('/sessions/*/mnt/cowork'))
+cowork = next((c for c in candidates if (pathlib.Path(c) / 'CLAUDE.md').exists()), candidates[0])
+
+token = (pathlib.Path(cowork) / '.claude/github_token').read_text().strip()
 creds_path = pathlib.Path.home() / '.git-credentials'
 creds_path.write_text(f'https://slycrel:{token}@github.com\n')
 creds_path.chmod(0o600)
+subprocess.run(['git', 'config', '--global', 'credential.helper', 'store'], check=True)
 subprocess.run(['git', 'config', '--global', 'user.name', 'Jeremy Stone'], check=True)
 subprocess.run(['git', 'config', '--global', 'user.email', 'jstone@taxhawk.com'], check=True)
 ```
 
-Then clone (if not already present), copy the output files, commit, and push:
+On a normal machine (not the Cowork sandbox) `cowork` is just the clone directory — drop the glob.
+
+Then clone, mirror the tracked tree into it, commit, and push. **Sync by path pattern, not by a hand-listed set of filenames.** The sync task used an explicit filename allowlist for months, and everything outside it — `SETUP.md`, `README.md`, `scheduled/`, `skills/`, `db/test_*.py`, `ARCHITECTURE_PLAN.md` — silently never reached the remote. They only matched because somebody pushed them by hand. The canonical spec now lives in **`db/repo_sync.py`** (`PUSH_SPEC`), so both the sync task and any ad-hoc push use the same definition:
+
+```python
+from db.repo_sync import mirror_to_clone
+mirror_to_clone(cowork, push_dir)   # returns the list of copied paths
+```
+
+The spec is directory-glob based, which is the part that matters: a new file dropped into `db/`, `scheduled/`, or `skills/` propagates on the next sync without anyone editing a list. Excluded on purpose: `.claude/` (the token), `__pycache__/`, `*.bak` and `db/_*` (local scratch and DB backups), `.fuse_hidden*`, and the SQLite `-wal`/`-shm` sidecars.
 
 ```bash
-# Clone once per session if needed
-git clone https://github.com/slycrel/link-farm.git /tmp/link-farm
-
-# After rebuild, sync files
-cp posts_final_v3.json ai_links_collection_v3.html ai_links_collection_v3.md /tmp/link-farm/
-cp db/ai_links.db /tmp/link-farm/db/
-cd /tmp/link-farm && git add -A && git commit -m "Sync: $(date +%Y-%m-%d)" && git push origin main
+cd ~/work/link-farm && git add -A && git commit -m "Sync: $(date +%Y-%m-%d)" && git push origin main
 ```
+
+Checkpoint the WAL (`PRAGMA wal_checkpoint(TRUNCATE)`) before copying `db/ai_links.db` so the committed file is self-contained.
 
 ### Repo Structure
 
 ```
 link-farm/
-├── posts_final_v3.json          # Full dataset (JSON)
-├── ai_links_collection_v3.html  # Self-contained viewer
-├── ai_links_collection_v3.md    # Markdown companion
+├── README.md                    # Repo front door
+├── CLAUDE.md                    # This file — project context
+├── SETUP.md                     # Reconstitute on a new machine
+├── ARCHITECTURE_PLAN.md         # Workstream plan (screenshots etc.)
+├── CURATION_DESIGN.md           # Curation-layer design
+├── CURATION_REVIEW.md           # Curation review notes
+├── requirements.txt
+├── posts_final_v3.json          # Full dataset (JSON, generated)
+├── ai_links_collection_v3.html  # Self-contained viewer (generated)
+├── ai_links_collection_v3.md    # Markdown companion (generated)
+├── ai-links-catchup.SKILL.md    # Skills (also ai-links-catchup/SKILL.md)
+├── ai-links-curate.SKILL.md
+├── scheduled/                   # Snapshots of the live scheduled tasks
+│   ├── ai-links-sync.SKILL.md
+│   └── ai-links-backfill.SKILL.md
+├── skills/                      # Other skills carried with the repo
 ├── db/
 │   ├── ai_links.db              # SQLite source of truth
 │   ├── rebuild.py               # Regenerate outputs from SQLite
-│   └── migrate.py               # One-time import script
-└── .gitignore
+│   ├── pipeline.py              # post_enrichment_pipeline
+│   ├── enrich.py concepts.py embeddings.py lock.py subject_flags.py
+│   ├── perspectives.py recover.py revive_dismissed.py ensure_deps.py
+│   ├── repo_sync.py             # PUSH_SPEC — what gets mirrored to the remote
+│   ├── migrate.py               # One-time JSON→SQLite bootstrap
+│   ├── migrate_runner.py        # Incremental migration runner
+│   └── test_*.py                # test_roles / test_lock / test_recover
+└── .gitignore                   # .claude/ (token), backups, __pycache__
 ```
 
 ## Jeremy's Wiki

@@ -71,25 +71,76 @@ The live tasks live in the Cowork app store at
 `~/Documents/Claude/Scheduled/<taskId>/SKILL.md` — **not** in the repo. Versioned
 snapshots are kept here under `scheduled/`:
 
-- `scheduled/ai-links-sync.SKILL.md` — weekdays 09:00, cron `0 9 * * 1-5`
-- `scheduled/ai-links-backfill.SKILL.md` — Mondays 10:30, cron `30 10 * * 1`
+| snapshot | cron | state | recreate? |
+|---|---|---|---|
+| `scheduled/ai-links-sync.SKILL.md` | `0 9 * * 1-5` (weekdays 09:00) | **enabled** — the one that matters | yes |
+| `scheduled/ai-links-backfill.SKILL.md` | `30 10 * * 1` (Mondays 10:30) | **disabled**, campaign complete | no — leave it off |
 
-To recreate them, ask Claude to "create a scheduled task" with the cron above and
-the prompt body from the matching snapshot (or paste the file). Keep the live
-copy and the `scheduled/` snapshot in sync when either changes.
+To recreate the sync, ask Claude to "create a scheduled task" with the cron above
+and the prompt body from the snapshot (or paste the file). Keep the live copy and
+the `scheduled/` snapshot in sync when either changes — they drifted for weeks
+once, and the stale copy silently suppressed two topic tags.
+
+**Don't schedule the backfill on a fresh box.** It existed to drain a backlog of
+`partial`/`failed` posts so the latent-discovery gate could open. The gate opened
+2026-08-14, the queue emptied 2026-08-26, and it has been dormant since (last run
+2026-08-03). Recreate it *disabled*, or not at all, and wake it only if a real
+queue reappears:
+
+```bash
+python3 -c "from db.enrich import gate_ratio, status_breakdown; print(gate_ratio(), status_breakdown())"
+# gate above 0.05, or more than a couple dozen partial/failed -> re-enable it
+```
+
+Some older text in `CLAUDE.md` described it as a weekday task (`30 10 * * 1-5`).
+That was the drain cadence and is no longer accurate.
 
 ## 5. Skills
 
-- `ai-links-catchup.SKILL.md` and `ai-links-curate.SKILL.md` are in the repo.
-  Install them as skills in the app (or invoke their logic directly).
+- `ai-links-catchup.SKILL.md` and `ai-links-curate.SKILL.md` are in the repo
+  root. Install them as skills in the app (or invoke their logic directly).
+- `ai-links-catchup/SKILL.md` is the same catch-up skill in directory form —
+  which is what the app installs. The flat `.SKILL.md` is the readable copy.
+- `skills/` carries anything else that travels with the repo (e.g. `skills/ste`).
+
+## 6. What actually gets pushed
+
+`db/repo_sync.py` holds `PUSH_SPEC`, the single definition of which paths are
+mirrored to the remote. It is glob-based on purpose: a new file in `db/`,
+`scheduled/` or `skills/` propagates without anyone editing a list. `.claude/`
+(the token), `__pycache__/`, `*.bak`, `db/_*` scratch and the SQLite `-wal`/`-shm`
+sidecars are excluded.
+
+Before trusting a push, check for drift:
+
+```bash
+git clone https://github.com/slycrel/link-farm.git /tmp/lf-check
+python3 -m db.repo_sync --check . /tmp/lf-check   # exits 1 if anything is missing
+python3 -m db.repo_sync --list .                  # what would be copied
+```
+
+This exists because the sync task previously pushed a hardcoded filename list,
+so `SETUP.md`, `README.md`, `scheduled/`, `skills/` and `db/test_*.py` never
+reached the remote except by hand.
 
 ## Sanity check
 
 ```bash
 python3 db/ensure_deps.py                      # {'ok': True, ...}
-python3 -m db.concepts stats                   # concept graph summary
+python3 db/migrate_runner.py                   # schema current (expect "Nothing to do")
+python3 -m db.stats                            # corpus + concept graph summary
+python3 -m db.concepts stats                   # concept graph detail
+python3 -m db.repo_sync --check . /tmp/lf-check # nothing missing from the remote
+python3 -m unittest discover -s db -p 'test_*.py' -v
 python3 -c "from db.pipeline import post_enrichment_pipeline as p; print(p()['summary'])"
 ```
 
-If the last line shows `embed:` and `semantic:` with real counts (not a skip),
-the semantic layer is live and portable.
+If the pipeline line shows `embed:` and `semantic:` with real counts (not a
+skip), the semantic layer is live and portable. `db/test_roles.py` is the one
+worth caring about — it guards the four places where the canonical/weak edge
+distinction is enforced, and every one of them is a *silent* failure if it
+regresses.
+
+`python3 -m db.stats --markdown` regenerates the Collection Stats block in
+`CLAUDE.md`; paste over it rather than hand-editing, so the numbers and the
+as-of date stay honest together.

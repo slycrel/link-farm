@@ -44,13 +44,13 @@ if token_path.exists():
     subprocess.run(['git', 'config', '--global', 'user.email', 'jstone@taxhawk.com'], check=True)
 ```
 
-Use `cowork` for every later file path.
+Use `cowork` for every later file path. Note `/tmp` is not reliably writable in the sandbox (other sessions own paths there) — use `~/work/` for clones and scratch.
 
 **Writer lock.** All SQLite writes and the rebuild step run inside one `writer_lock()` context, acquired at Step 6 and held through Step 8. `curate.py` and any other writer take the same lock — they're allowed to interleave between batches but not inside one. If acquisition times out (60s default), the sync should bail out, log the contention, and let the next scheduled run try.
 
 ### Step 1 — Pull canonical state from GitHub first
 
-(Unchanged from prior runs.) Another runner may have pushed since our last sync. Clone to `/tmp/lf-pull-{ts}`, compare local vs remote post counts and MAX(created_at). If remote is fresher, delete any local `db/ai_links.db-wal` / `-shm` / `-journal` (use `mcp__cowork__allow_cowork_file_delete` if needed), then copy `db/ai_links.db`, `posts_final_v3.json`, `ai_links_collection_v3.html`, `ai_links_collection_v3.md` from the clone back into `{cowork}/`.
+(Unchanged from prior runs.) Another runner may have pushed since our last sync. Clone to `~/work/lf-pull-{ts}`, compare local vs remote post counts and MAX(created_at). If remote is fresher, delete any local `db/ai_links.db-wal` / `-shm` / `-journal` (use `mcp__cowork__allow_cowork_file_delete` if needed), then copy `db/ai_links.db`, `posts_final_v3.json`, `ai_links_collection_v3.html`, `ai_links_collection_v3.md` from the clone back into `{cowork}/`.
 
 ### Step 2 — Apply pending migrations
 
@@ -188,30 +188,41 @@ If deps can't be installed for some reason, the embed + semantic steps surface a
 
 ### Step 9 — Push to GitHub (still inside the lock)
 
+**Sync by path pattern, not by a hardcoded filename list.** `db/repo_sync.py`
+holds `PUSH_SPEC`, the single definition of what belongs on the remote. Earlier
+vintages of this task copied an explicit list of filenames, and everything
+outside it — `SETUP.md`, `README.md`, `scheduled/`, `skills/`, `db/test_*.py`,
+`ARCHITECTURE_PLAN.md` — never reached GitHub except when a human pushed by
+hand. That is the same silent-drift class that let the live copy of *this task*
+sit on a stale June vintage for weeks. Don't reintroduce a filename list.
+
 ```python
-push_dir = f'/tmp/lf-sync-{int(time.time())}'
+import subprocess, datetime, time, os, sys
+sys.path.insert(0, cowork)
+from db.repo_sync import mirror_to_clone
+
+push_dir = os.path.expanduser(f'~/work/lf-sync-{int(time.time())}')
 subprocess.run(['git', 'clone', 'https://github.com/slycrel/link-farm.git', push_dir], check=True)
 subprocess.run(['git', 'config', '--global', '--add', 'safe.directory', push_dir], check=True)
-for fname in ['posts_final_v3.json', 'ai_links_collection_v3.html', 'ai_links_collection_v3.md',
-              'CLAUDE.md', 'CURATION_DESIGN.md', 'requirements.txt']:
-    src = f'{cowork}/{fname}'
-    if os.path.exists(src):
-        shutil.copy(src, f'{push_dir}/{fname}')
-os.makedirs(f'{push_dir}/db', exist_ok=True)
-for fname in ['ai_links.db', 'migrate.py', 'migrate_runner.py', 'rebuild.py', 'enrich.py',
-              'lock.py', '__init__.py', 'concepts.py', 'embeddings.py', 'pipeline.py',
-              'perspectives.py', 'subject_flags.py', 'recover.py', 'ensure_deps.py']:
-    src = f'{cowork}/db/{fname}'
-    if os.path.exists(src):
-        shutil.copy(src, f'{push_dir}/db/{fname}')
+
+copied = mirror_to_clone(cowork, push_dir)
+print(f'mirrored {len(copied)} files')
 
 today = datetime.date.today().isoformat()
 subprocess.run(['git', '-C', push_dir, 'add', '-A'], check=True)
-diff = subprocess.run(['git', '-C', push_dir, 'diff', '--cached', '--stat'], capture_output=True, text=True)
+diff = subprocess.run(['git', '-C', push_dir, 'diff', '--cached', '--stat'],
+                      capture_output=True, text=True)
 if diff.stdout.strip():
     subprocess.run(['git', '-C', push_dir, 'commit', '-m', f'Sync {today}'], check=True)
     subprocess.run(['git', '-C', push_dir, 'push', 'origin', 'main'], check=True)
+else:
+    print('no changes to push')
 ```
+
+`mirror_to_clone` never deletes from the clone — `git add -A` plus the diff
+review is the safety net, and an accidental mass-delete is far worse than a
+stale file. If a push ever looks suspiciously large or small, diagnose with
+`python3 -m db.repo_sync --check {cowork} {push_dir}` before committing.
 
 Release the writer lock by exiting the `with` block.
 
@@ -230,10 +241,10 @@ Tell Jeremy:
 - Pending observation count (should be ~0 in steady state — semantic triage is automated).
 - **Any concepts created by orphan clustering this run, and what you renamed them to** (or that none were created). Flag any left `[auto-named]`, and say whether you marked any `[no-centroid-scoring]`.
 - **Any provisional concepts that graduated to `active` this run** (4+ canonical edges), and any still sitting below the bar. A nursery concept holding at 2 for several runs is the threshold doing its job, not a failure.
-- When you quote how big a concept is, **quote the `evidence` count, not total edges** — the total includes the deliberately-generous weak layer and overstates it by roughly 40%.
-- Split-review candidates from `pipeline_result['split_candidates']` (advisory only — never auto-split).
+- When you quote how big a concept is, **quote the primary-home count**, not total edges and not the evidence count — the total includes the deliberately-generous weak layer, and evidence overstates a concept by 10–60x (see the set-identity finding in CLAUDE.md).
+- Split-review candidates from `pipeline_result['split_candidates']` (advisory only — never auto-split). #41 `Claude Code setup & usage` was vetted on 2026-09-15 and should NOT be split; treat its recurring flag as noise.
 - Modified subject lines (Jeremy's importance flags — `(implement!)`, `(read this today)`, `(mgmt)`).
-- GitHub push status.
+- GitHub push status, including how many files `mirror_to_clone` copied.
 - Any failures (Chrome unreachable, lock timeout, unparseable subjects, dedup hits, pipeline errors).
 - **Whether the rate-limit watch fired** — if it did, what got captured and what didn't.
 
@@ -245,6 +256,7 @@ Tell Jeremy:
 - If no new emails since CUTOFF AND no backlog of `partial`/`failed`, still run the pipeline (it's cheap and may surface new concept evidence as the graph evolves) — but skip commit/push if `git diff --cached` is empty.
 - If the DB is locked or anything goes wrong inside the writer-lock block, abort before pushing and report.
 - Never delete posts; only insert and update. `dead` status is the closest we get to a tombstone.
-- Never call `dismiss_observation()` from this task. Automation attaches and labels; discarding is a human decision. A weak edge is a recorded association, not a mistake to clean up.
+- Never call `dismiss_observation()` from this task. Automation attaches and labels; discarding is a human decision. A weak edge is a recorded association, not a mistake to clean up. (Audit: there have been zero dismissals since 2026-08-26 — a nonzero recent date means something regressed.)
 - Don't retune `SEMANTIC_CENTROID_THRESHOLD`, `AUTO_PROMOTE_MIN_COSINE`, `SEMANTIC_MAX_WEAK_PER_POST` or the orphan/provisional constants from a sync run. They were calibrated against this corpus's actual cosine distribution (pairwise mean 0.61 / p99 0.73), and the failure modes are non-obvious — an uncapped 0.75 proposed 8,825 observations in a single run, ~26% of every possible (post, concept) pair. Surface a concern in the report instead.
+- Don't push a hand-picked list of filenames. `db/repo_sync.PUSH_SPEC` is the definition; extend it there if something genuinely new needs to ship.
 - If you change this task, mirror the change into `scheduled/ai-links-sync.SKILL.md` in the repo and push it, so the live copy and the snapshot don't drift again.

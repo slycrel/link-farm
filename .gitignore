@@ -1,14 +1,28 @@
+# Secrets — never commit
+.claude/github_token
+
+# Persistent sandbox dep + model caches (Linux-native, machine-local — see
+# db/ensure_deps.py). Large, and must never be committed or pushed.
+.deps/
+.model-cache/
+.deps_test
+
+# SQLite sidecars — checkpoint the WAL before committing the .db instead
 *.db-wal
 *.db-shm
 *.db-journal
 *.db-journal.bak*
+
+# Local scratch and DB backups (db/_* are one-off compose/run scripts)
+*.bak
+db/_*
+
+# The cowork mount denies unlink, so deleted-but-open files pile up here
+.fuse_hidden*
+
+# Python
 __pycache__/
 *.pyc
-.DS_Store
 
-# Persistent sandbox dep + model caches (Linux-native, machine-local — see
-# db/ensure_deps.py). Large; must never be committed or pushed.
-.deps/
-.model-cache/
-.deps_test
-.claude/github_token
+# macOS
+.DS_Store
