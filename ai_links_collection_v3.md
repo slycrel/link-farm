@@ -1,14 +1,16 @@
 # AI Links Collection
-**Total Posts**: 890  
-**Date Range**: 2024-06-11 – 2026-09-16  
-**Enriched**: 889/890 (99%)
+**Total Posts**: 891  
+**Date Range**: 2024-06-11 – 2026-09-21  
+**Enriched**: 890/891 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-09-18T15:05:34Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-09-21T15:18:10Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
+- **2026-09-21** — [Annatar.md](https://x.com/annatarxbt/status/2101925393322091005) — *near-term • Agent Design • 10.7K views • v1 enriched*  
+  Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowledge graph), procedural (successful approaches promoted to reusable skills), and forgetting (deletion so stale facts stop contradicting new ones). Cites Mem0 at 1,800 tokens per query versus 26,000 with 91% lower latency, and a Snowflake ontology layer at 20% more accuracy with 39% fewer tool calls. Argues the forgetting engine is the layer nobody builds and the one that decides whether the other four stay trustworthy; quotes Mr. Buzzoni's Kimi K3 harness-guide article as the 13-page companion. ALL-CAPS hook and 'full breakdown below' packaging, but the layer model and the cited numbers are real.
 - **2026-09-16** — [Yarchi](https://x.com/undefinedki/status/2100206342942187620) — *near-term • Agent Design • 4,142 views • v1 enriched*  
   Describes Google's Stellar Colosseum, a multi-agent setup published for unsolved math problems and already built into Antigravity, Google's agent development tool. Running on Gemini models it reportedly proved 71% of research-level theorems drawn from top CS conference papers and solved 218 of 222 competitive programming puzzles. The transferable structure for long agent tasks: explore several routes and have agents attack each other's before building; gate progress on surviving review; split the plan into sections with dependencies so a failure retries only that section; pair every generator with a falsifier whose only job is breaking the output; then merge candidates.
 - **2026-09-16** — [Nathan Flurry](https://x.com/nathanflurry/status/2100036101809619314) — *near-term • Industry • 457.6K views • v1 enriched*  
@@ -17,36 +19,34 @@
   Hands-on report of roughly 5,000 Jev requests for about $2, spanning classification, model routing, intent detection and steering. The author's argument is that Jev is a new decision-making primitive distinct from both deterministic code and LLM calls, covering decisions too nuanced for dumb code but not worth a slow, expensive LLM. He expects to make several Jev calls per LLM call and suggests most companies using LLMs could add a Jev call before and/or after existing calls to improve tool-calling behaviour cheaply. Compares against his own prior classification benchmark.
 - **2026-09-16** — [Teknium](https://x.com/teknium/status/2099996435324518533) — *near-term • Agent Design • 127.6K views • v1 enriched*  
   Teknium's first blog post covers running roughly 1,393 Hermes Agent subagents over 19 hours to refactor about 400,000 lines out of Hermes Agent's million-line Python repo, ending 34.4% smaller and, by Nous Research's estimate, saving nearly $2m in engineering hours (nousresearch.com/refactoring-hermes-with-1393-agents). A concrete large-scale data point on massively parallel subagent refactoring.
-- **2026-09-16** — [Nate Berkopec](https://x.com/nateberkopec/status/2099995262802641129) — *near-term • Skills & MCP • 46.9K views • v1 enriched*  
-  Nate Berkopec says he has spent three months telling all his clients to move everything to MCPs and executor.sh, having been convinced by an internal 'MCP proxy' built at a client and by large companies like Ramp adopting the same 'MCP of MCPs' approach. Quotes Rhys Sullivan's case for MCP over CLIs: an indexable tool catalog that scales agents to unlimited tools, no requirement to run a full sandbox, and consistent auth across servers instead of each CLI inventing its own.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **vibecode-to-production via agent skills** (47 posts, +6 this week)  
+- **vibecode-to-production via agent skills** (48 posts, +5 this week)  
   Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
     - 2026-09-16 — [Nathan Flurry](https://x.com/nathanflurry/status/2100036101809619314): A deliberately hype-free framing of Jev: not a replacement for GPT or Claude, but 'a really smart switch statement' — 2016-era ML classifier…
     - 2026-09-16 — [Aaron Levie](https://x.com/levie/status/2099976021311398230): Aaron Levie (Box) argues there is a large gap between raw model capability and the workflows enterprises actually want automated, and that t…
 
-- **persistent always-on agents — bot mode & agent desktops** (47 posts, +5 this week)  
+- **vector / hybrid databases as agent-memory infrastructure** (55 posts, +4 this week)  
+  HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
+    - 2026-09-21 — [Annatar.md](https://x.com/annatarxbt/status/2101925393322091005): Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowl…
+    - 2026-09-16 — [Yarchi](https://x.com/undefinedki/status/2099952282217615827): Summarizes Airbnb's published method for mapping what a support assistant will face before launch, which they encoded as a reusable pipeline…
+
+- **persistent always-on agents — bot mode & agent desktops** (47 posts, +4 this week)  
   Agents that outlive a chat session: persistent bot profiles with their own job and memory, remote/self-hosted execution that survives closing the laptop, and the desktop workspaces around them (Hermes/Nous, Grok bot mode, OpenClaw). Renamed from auto-named cluster on 2026-08-21.
     - 2026-09-16 — [Yarchi](https://x.com/undefinedki/status/2100206342942187620): Describes Google's Stellar Colosseum, a multi-agent setup published for unsolved math problems and already built into Antigravity, Google's …
     - 2026-09-16 — [Teknium](https://x.com/teknium/status/2099996435324518533): Teknium's first blog post covers running roughly 1,393 Hermes Agent subagents over 19 hours to refactor about 400,000 lines out of Hermes Ag…
 
-- **vector / hybrid databases as agent-memory infrastructure** (54 posts, +4 this week)  
-  HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
-    - 2026-09-16 — [Yarchi](https://x.com/undefinedki/status/2099952282217615827): Summarizes Airbnb's published method for mapping what a support assistant will face before launch, which they encoded as a reusable pipeline…
-    - 2026-09-16 — [wast3](https://x.com/0xwast3/status/2099851294684922336): Describes MEMENTO, an MIT-licensed agent memory layer with 41 memory types, 9 write gates and 6 decay curves, positioned against stuffing re…
-
-- **agent harness engineering** (54 posts, +4 this week)  
-  Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
-    - 2026-09-16 — [Akshay](https://x.com/akshay_pachaar/status/2099857657872122108): Walks through Magnitude, an open-source tool for running agent harnesses (Claude Code, Codex, OpenCode, Pi) on local models. The argument is…
-    - 2026-09-04 — [elvis](https://x.com/omarsar0/status/2095518433865777600): Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-native harness driving continual optimization of a production recommende…
-
-- **agentic code review at production scale** (24 posts, +2 this week)  
+- **agentic code review at production scale** (23 posts, +2 this week)  
   Deterministic engineering handles what must never fail; LLM only does context reading and reasoning. Alibaba open-code-review.
     - 2026-09-16 — [Dan Shipper](https://x.com/danshipper/status/2099947471518474522): Reports that Every has spent about a week testing Jev, a model they consider indispensable within 6-12 months, noting they almost never test…
     - 2026-09-16 — [Alex](https://x.com/de1lymoon/status/2099856242948657161): Proposes a two-model architecture (Kimi K3 + GPT-6 Astra) built on clean roles rather than one large context window: 'Two-Brain OS = Special…
+
+- **Claude Code setup & usage** (65 posts, +1 this week)  
+  Claude Code setup guides, cheatsheets, starter packs, and day-to-day usage / steering practices.
+    - 2026-09-16 — [Charlie Hills](https://x.com/charliejhills/status/2099879785363304546): A four-step method for imposing a graph on an overloaded Claude Code folder (charliehills.substack.com/p/graph-engineering-claude-code): pro…
+    - 2026-08-25 — [CyrilXBT](https://x.com/cyrilxbt/status/2091331618979905582): X article walking hour-by-hour through shipping a live product that takes real payments (ranknow.lol — a pay-to-rank leaderboard with outbid…
 
 
 ### Revisit from last month
@@ -59,23 +59,24 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 529 | 59.4% |
+| agent-design | 530 | 59.5% |
 | claude-code | 197 | 22.1% |
 | dev-practices | 383 | 43.0% |
-| skills-mcp | 200 | 22.5% |
+| skills-mcp | 200 | 22.4% |
 | prompting | 131 | 14.7% |
-| research | 235 | 26.4% |
-| industry | 134 | 15.1% |
+| research | 236 | 26.5% |
+| industry | 134 | 15.0% |
 | management | 139 | 15.6% |
 | adjacent | 45 | 5.1% |
 | solo-operator | 8 | 0.9% |
-| questionable | 136 | 15.3% |
+| questionable | 137 | 15.4% |
 | general | 100 | 11.2% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-09-21 | Annatar.md | agent-design | Five-layer taxonomy for agent memory - working (context window), episo... |
 | 2026-09-16 | Yarchi | agent-design | Describes Google's Stellar Colosseum, a multi-agent setup published fo... |
 | 2026-09-16 | Nathan Flurry | industry | A deliberately hype-free framing of Jev: not a replacement for GPT or... |
 | 2026-09-16 | Michael | industry | Hands-on report of roughly 5,000 Jev requests for about $2, spanning c... |
@@ -125,12 +126,13 @@
 | 2026-09-04 | alphaXiv | research | Summarizes 'Harness-of-Harness: Multi-Day Autonomous Software Developm... |
 | 2026-09-04 | Tim Denning | biohacking | A quoted claim that the fastest route to neuroplasticity is repeatedly... |
 | 2026-08-31 | lauren | agent-design | Part 1 of Cursor engineer lauren's (@poteto) "Complete Guide to pstack... |
-| 2026-08-30 | DAIR.AI | research | Google's WikiSkill paper (arxiv.org/abs/2608.27454) separates three th... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (529)
+### Agent Design (530)
+
+- [Annatar.md](https://x.com/annatarxbt/status/2101925393322091005) — 2026-09-21: Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowledge graph), procedural (successful approaches promoted to reusable skills), and forgetting (deletion so stale facts stop contradicting new ones). Cites Mem0 at 1,800 tokens per query versus 26,000 with 91% lower latency, and a Snowflake ontology layer at 20% more accuracy with 39% fewer tool calls. Argues the forgetting engine is the layer nobody builds and the one that decides whether the other four stay trustworthy; quotes Mr. Buzzoni's Kimi K3 harness-guide article as the 13-page companion. ALL-CAPS hook and 'full breakdown below' packaging, but the layer model and the cited numbers are real.
 
 - [Yarchi](https://x.com/undefinedki/status/2100206342942187620) — 2026-09-16: Describes Google's Stellar Colosseum, a multi-agent setup published for unsolved math problems and already built into Antigravity, Google's agent development tool. Running on Gemini models it reportedly proved 71% of research-level theorems drawn from top CS conference papers and solved 218 of 222 competitive programming puzzles. The transferable structure for long agent tasks: explore several routes and have agents attack each other's before building; gate progress on surviving review; split the plan into sections with dependencies so a failure retries only that section; pair every generator with a falsifier whose only job is breaking the output; then merge candidates.
 
@@ -3020,7 +3022,9 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-### Research (235)
+### Research (236)
+
+- [Annatar.md](https://x.com/annatarxbt/status/2101925393322091005) — 2026-09-21: Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowledge graph), procedural (successful approaches promoted to reusable skills), and forgetting (deletion so stale facts stop contradicting new ones). Cites Mem0 at 1,800 tokens per query versus 26,000 with 91% lower latency, and a Snowflake ontology layer at 20% more accuracy with 39% fewer tool calls. Argues the forgetting engine is the layer nobody builds and the one that decides whether the other four stay trustworthy; quotes Mr. Buzzoni's Kimi K3 harness-guide article as the 13-page companion. ALL-CAPS hook and 'full breakdown below' packaging, but the layer model and the cited numbers are real.
 
 - [Yarchi](https://x.com/undefinedki/status/2100206342942187620) — 2026-09-16: Describes Google's Stellar Colosseum, a multi-agent setup published for unsolved math problems and already built into Antigravity, Google's agent development tool. Running on Gemini models it reportedly proved 71% of research-level theorems drawn from top CS conference papers and solved 218 of 222 competitive programming puzzles. The transferable structure for long agent tasks: explore several routes and have agents attack each other's before building; gate progress on surviving review; split the plan into sections with dependencies so a failure retries only that section; pair every generator with a falsifier whose only job is breaking the output; then merge candidates.
 
@@ -4152,7 +4156,9 @@
 
 - [zostaff](https://x.com/zostaff/status/2033930728044372275) — 2026-03-18: zostaff's clickbait-titled ('How to Quit Your Job in One Day') walkthrough of an autonomous Polymarket trading system built from three agents: Claude (strategist — probability/recommendation/confidence), Codex (engineer — writes and debugs bot code), and OpenClaw (orchestrator — persistent memory, cron, modular skills, Telegram interface that executes trades and logs everything).
 
-### Questionable (136)
+### Questionable (137)
+
+- [Annatar.md](https://x.com/annatarxbt/status/2101925393322091005) — 2026-09-21: Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowledge graph), procedural (successful approaches promoted to reusable skills), and forgetting (deletion so stale facts stop contradicting new ones). Cites Mem0 at 1,800 tokens per query versus 26,000 with 91% lower latency, and a Snowflake ontology layer at 20% more accuracy with 39% fewer tool calls. Argues the forgetting engine is the layer nobody builds and the one that decides whether the other four stay trustworthy; quotes Mr. Buzzoni's Kimi K3 harness-guide article as the 13-page companion. ALL-CAPS hook and 'full breakdown below' packaging, but the layer model and the cited numbers are real.
 
 - [klöss](https://x.com/kloss_xyz/status/2099979132616778121) — 2026-09-16: Distills a Grok Bot Galaxy session into a 22-rule playbook for running a fleet of bots, where an 'engineer bot' onboards other bots by passing fleet rules in a single message and the bots detect conflicts between their own rules. 'Steal it' framing and quote-boosting a launch event, but the bot-onboards-bot and self-detected-rule-conflict patterns are the substantive part.
 
@@ -4634,6 +4640,9 @@
 ## Full Chronological List
 
 ### Sep 2026
+
+- **2026-09-21** | [Annatar.md](https://x.com/annatarxbt/status/2101925393322091005) | agent-design, research, questionable
+  Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowledge graph), procedural (successful approaches promoted to reusable skills), and forgetting (deletion so stale facts stop contradicting new ones). Cites Mem0 at 1,800 tokens per query versus 26,000 with 91% lower latency, and a Snowflake ontology layer at 20% more accuracy with 39% fewer tool calls. Argues the forgetting engine is the layer nobody builds and the one that decides whether the other four stay trustworthy; quotes Mr. Buzzoni's Kimi K3 harness-guide article as the 13-page companion. ALL-CAPS hook and 'full breakdown below' packaging, but the layer model and the cited numbers are real.
 
 - **2026-09-16** | [Yarchi](https://x.com/undefinedki/status/2100206342942187620) | agent-design, research
   Describes Google's Stellar Colosseum, a multi-agent setup published for unsolved math problems and already built into Antigravity, Google's agent development tool. Running on Gemini models it reportedly proved 71% of research-level theorems drawn from top CS conference papers and solved 218 of 222 competitive programming puzzles. The transferable structure for long agent tasks: explore several routes and have agents attack each other's before building; gate progress on surviving review; split the plan into sections with dependencies so a failure retries only that section; pair every generator with a falsifier whose only job is breaking the output; then merge candidates.

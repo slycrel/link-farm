@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-09-21",
+    "author": "Annatar.md",
+    "handle": "@annatarxbt",
+    "subject": "Post by Annatar.md on X",
+    "url": "https://x.com/annatarxbt/status/2101925393322091005",
+    "summary": "Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowledge graph), procedural (successful approaches promoted to reusable skills), and forgetting (deletion so stale facts stop contradicting new ones). Cites Mem0 at 1,800 tokens per query versus 26,000 with 91% lower latency, and a Snowflake ontology layer at 20% more accuracy with 39% fewer tool calls. Argues the forgetting engine is the layer nobody builds and the one that decides whether the other four stay trustworthy; quotes Mr. Buzzoni's Kimi K3 harness-guide article as the 13-page companion. ALL-CAPS hook and 'full breakdown below' packaging, but the layer model and the cited numbers are real.",
+    "topics": [
+      "agent-design",
+      "research",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "10.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "A 13-PAGE BREAKDOWN OF AGENT MEMORY THAT CUTS TOKEN COST BY 90%\n\nyour agent reads the same 12 files every morning\nreaches the same conclusions\nand charges you for it again\n\nthe model got 10x smarter in two years\nit still forgets everything the second a session ends\n\nfive layers fix that:\n\n1. working memory - what it sees right now\n> the context window\n> when it fills, the old context drops out\n> most agents live here and never leave\n\n2. episodic memory - what happened\n> the full interaction log, timestamped\n> the deploy that died tuesday at 3am over a typo stays remembered\n> you explain it once\n\n3. semantic memory - what is true\n> facts, entities and relationships in a knowledge graph\n> \"this user prefers TypeScript\" survives the session\n\n4. procedural memory - how to do things\n> three approaches tried, one worked\n> that one becomes a reusable skill\n> the next run starts there\n\n5. forgetting - what to delete\n> an agent that remembers everything collects contradictions\n> you move cities, it keeps recommending the old restaurants\n\nthe numbers:\n> Mem0 - 1,800 tokens per query instead of 26,000\n> 91% lower latency\n> Snowflake - one ontology layer, 20% more accuracy, 39% fewer tool calls\n\nmemory pays for itself on day one\n\nthe layer nobody builds is the forgetting engine\nit decides whether the other four stay worth trusting\n\nfull 13-page breakdown below\n\nMr. Buzzoni @polydao - Sep 17 - X Article\nHow to Put the #1 Open Source Frontend Model to Work: The Kimi K3 Harness Guide\nPrompt, context, loop and graph engineering each turned out to be one piece of the same machine. The harness is where they finally live together.\nEvery stretch of building with AI got its own job...",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-09-16",
     "author": "Yarchi",
     "handle": "@undefinedki",
