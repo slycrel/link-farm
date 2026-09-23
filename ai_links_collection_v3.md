@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-09-22T15:14:09Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-09-23T15:02:22Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-09-21** — [Annatar.md](https://x.com/annatarxbt/status/2101925393322091005) — *near-term • Agent Design • 10.7K views • v1 enriched*  
