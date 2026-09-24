@@ -6,19 +6,11 @@
 ---
 ## Morning view
 
-*Generated 2026-09-23T15:02:22Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-09-24T15:14:11Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-09-21** — [Annatar.md](https://x.com/annatarxbt/status/2101925393322091005) — *near-term • Agent Design • 10.7K views • v1 enriched*  
   Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowledge graph), procedural (successful approaches promoted to reusable skills), and forgetting (deletion so stale facts stop contradicting new ones). Cites Mem0 at 1,800 tokens per query versus 26,000 with 91% lower latency, and a Snowflake ontology layer at 20% more accuracy with 39% fewer tool calls. Argues the forgetting engine is the layer nobody builds and the one that decides whether the other four stay trustworthy; quotes Mr. Buzzoni's Kimi K3 harness-guide article as the 13-page companion. ALL-CAPS hook and 'full breakdown below' packaging, but the layer model and the cited numbers are real.
-- **2026-09-16** — [Yarchi](https://x.com/undefinedki/status/2100206342942187620) — *near-term • Agent Design • 4,142 views • v1 enriched*  
-  Describes Google's Stellar Colosseum, a multi-agent setup published for unsolved math problems and already built into Antigravity, Google's agent development tool. Running on Gemini models it reportedly proved 71% of research-level theorems drawn from top CS conference papers and solved 218 of 222 competitive programming puzzles. The transferable structure for long agent tasks: explore several routes and have agents attack each other's before building; gate progress on surviving review; split the plan into sections with dependencies so a failure retries only that section; pair every generator with a falsifier whose only job is breaking the output; then merge candidates.
-- **2026-09-16** — [Nathan Flurry](https://x.com/nathanflurry/status/2100036101809619314) — *near-term • Industry • 457.6K views • v1 enriched*  
-  A deliberately hype-free framing of Jev: not a replacement for GPT or Claude, but 'a really smart switch statement' — 2016-era ML classifiers at 2026 intelligence levels, which the author notes is rebranded rather than genuinely new. It needs a predefined option set and returns which to take. It cannot write code, generate natural language, reason step by step, produce undefined output, or pick from more than ~255 options in one shot; it can classify, route, score, rank, give confidence, pick the right branch/tool/model/sub-agent, judge or guardrail an LLM's output, and label large volumes of rows. Suggests the shape: LLM proposes options -> Jev decides -> code executes. A useful skeptical counterweight to the Jev launch posts.
-- **2026-09-16** — [Michael](https://x.com/michaellee04/status/2100003037150683593) — *near-term • Industry • 416.8K views • v1 enriched*  
-  Hands-on report of roughly 5,000 Jev requests for about $2, spanning classification, model routing, intent detection and steering. The author's argument is that Jev is a new decision-making primitive distinct from both deterministic code and LLM calls, covering decisions too nuanced for dumb code but not worth a slow, expensive LLM. He expects to make several Jev calls per LLM call and suggests most companies using LLMs could add a Jev call before and/or after existing calls to improve tool-calling behaviour cheaply. Compares against his own prior classification benchmark.
-- **2026-09-16** — [Teknium](https://x.com/teknium/status/2099996435324518533) — *near-term • Agent Design • 127.6K views • v1 enriched*  
-  Teknium's first blog post covers running roughly 1,393 Hermes Agent subagents over 19 hours to refactor about 400,000 lines out of Hermes Agent's million-line Python repo, ending 34.4% smaller and, by Nous Research's estimate, saving nearly $2m in engineering hours (nousresearch.com/refactoring-hermes-with-1393-agents). A concrete large-scale data point on massively parallel subagent refactoring.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
