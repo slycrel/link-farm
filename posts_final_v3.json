@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-09-24",
+    "author": "elvis",
+    "handle": "@omarsar0",
+    "subject": "Post by elvis on X",
+    "url": "https://x.com/omarsar0/status/2103139055013646646",
+    "summary": "elvis flags a second entrant in the 'System One model' category behind Jev: Jacky Kwok's Contrastive Language Model (CLM), quoted here announcing CLM-8B as internet-scale pre-trained and up to 9x faster inference than Jev at comparable quality, and reportedly a better verifier on long-horizon tasks. The useful part is the mechanism contrast: Jev is trained with Reinforcement Learning for Calibrated Decisions (RLCD) and takes a situation plus predefined questions, returning typed decisions with probabilities; CLM embeds the situation and candidate actions, compares similarity, then ranks or selects. Links his own guide on pairing System One and System Two models in a custom harness (academy.dair.ai/resources/jev-decisions-in-a-pi-sdk-harness).",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "71.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "Pay attention to this new wave of System One models if you are building custom harnesses.\n\nFirst Jev. Now, Contrastive Language Model (CLM).\n\nCLM is 9x faster than Jev.\n\nCLM seems to be a better verifier than Jev, particularly at long-horizon tasks.\n\nHow do Jev and CLM differ?\n\nCLM is contrastive, and Jev is trained with Reinforcement Learning for Calibrated Decisions (RLCD).\n\nJev receives a situation plus predefined questions, and returns typed decisions with probabilities. CLM embeds the situation and candidate actions, compares their similarity, then ranks or selects the best match.\n\nThe point is that there are several ways to attack this problem, which is exciting.\n\nYou can see my recent guide on combining System One and System Two models for building custom harnesses.\nacademy.dair.ai/resources/jev-decisions-in-a-pi-sdk-harness\n\nIntroducing Contrastive Language Model (CLM): an ultra-fast System One Model trained with a contrastive learning objective that connects states and actions.\n\nCLM-8B is pre-trained on internet-scale data and delivers up to 9x faster inference than Jev while achieving comparable [quality]\n\nDAIR.AI Academy — Jev decisions in a pi-SDK harness (guide on combining System One and System Two models)",
+    "source": "manual",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-09-21",
     "author": "Annatar.md",
     "handle": "@annatarxbt",

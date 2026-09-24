@@ -1,14 +1,16 @@
 # AI Links Collection
-**Total Posts**: 891  
-**Date Range**: 2024-06-11 – 2026-09-21  
-**Enriched**: 890/891 (99%)
+**Total Posts**: 892  
+**Date Range**: 2024-06-11 – 2026-09-24  
+**Enriched**: 891/892 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-09-24T15:14:11Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-09-24T23:07:32Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
+- **2026-09-24** — [elvis](https://x.com/omarsar0/status/2103139055013646646) — *near-term • Agent Design • 71.3K views • v1 enriched*  
+  elvis flags a second entrant in the 'System One model' category behind Jev: Jacky Kwok's Contrastive Language Model (CLM), quoted here announcing CLM-8B as internet-scale pre-trained and up to 9x faster inference than Jev at comparable quality, and reportedly a better verifier on long-horizon tasks. The useful part is the mechanism contrast: Jev is trained with Reinforcement Learning for Calibrated Decisions (RLCD) and takes a situation plus predefined questions, returning typed decisions with probabilities; CLM embeds the situation and candidate actions, compares similarity, then ranks or selects. Links his own guide on pairing System One and System Two models in a custom harness (academy.dair.ai/resources/jev-decisions-in-a-pi-sdk-harness).
 - **2026-09-21** — [Annatar.md](https://x.com/annatarxbt/status/2101925393322091005) — *near-term • Agent Design • 10.7K views • v1 enriched*  
   Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowledge graph), procedural (successful approaches promoted to reusable skills), and forgetting (deletion so stale facts stop contradicting new ones). Cites Mem0 at 1,800 tokens per query versus 26,000 with 91% lower latency, and a Snowflake ontology layer at 20% more accuracy with 39% fewer tool calls. Argues the forgetting engine is the layer nobody builds and the one that decides whether the other four stay trustworthy; quotes Mr. Buzzoni's Kimi K3 harness-guide article as the 13-page companion. ALL-CAPS hook and 'full breakdown below' packaging, but the layer model and the cited numbers are real.
 
@@ -51,15 +53,15 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 530 | 59.5% |
+| agent-design | 531 | 59.5% |
 | claude-code | 197 | 22.1% |
-| dev-practices | 383 | 43.0% |
+| dev-practices | 383 | 42.9% |
 | skills-mcp | 200 | 22.4% |
 | prompting | 131 | 14.7% |
-| research | 236 | 26.5% |
+| research | 237 | 26.6% |
 | industry | 134 | 15.0% |
 | management | 139 | 15.6% |
-| adjacent | 45 | 5.1% |
+| adjacent | 45 | 5.0% |
 | solo-operator | 8 | 0.9% |
 | questionable | 137 | 15.4% |
 | general | 100 | 11.2% |
@@ -68,6 +70,7 @@
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-09-24 | elvis | agent-design | elvis flags a second entrant in the 'System One model' category behind... |
 | 2026-09-21 | Annatar.md | agent-design | Five-layer taxonomy for agent memory - working (context window), episo... |
 | 2026-09-16 | Yarchi | agent-design | Describes Google's Stellar Colosseum, a multi-agent setup published fo... |
 | 2026-09-16 | Nathan Flurry | industry | A deliberately hype-free framing of Jev: not a replacement for GPT or... |
@@ -117,12 +120,13 @@
 | 2026-09-04 | Mark Ajzenstadt | dev-practices | A brownfield case study: a delivery-orchestration platform supplying F... |
 | 2026-09-04 | alphaXiv | research | Summarizes 'Harness-of-Harness: Multi-Day Autonomous Software Developm... |
 | 2026-09-04 | Tim Denning | biohacking | A quoted claim that the fastest route to neuroplasticity is repeatedly... |
-| 2026-08-31 | lauren | agent-design | Part 1 of Cursor engineer lauren's (@poteto) "Complete Guide to pstack... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (530)
+### Agent Design (531)
+
+- [elvis](https://x.com/omarsar0/status/2103139055013646646) — 2026-09-24: elvis flags a second entrant in the 'System One model' category behind Jev: Jacky Kwok's Contrastive Language Model (CLM), quoted here announcing CLM-8B as internet-scale pre-trained and up to 9x faster inference than Jev at comparable quality, and reportedly a better verifier on long-horizon tasks. The useful part is the mechanism contrast: Jev is trained with Reinforcement Learning for Calibrated Decisions (RLCD) and takes a situation plus predefined questions, returning typed decisions with probabilities; CLM embeds the situation and candidate actions, compares similarity, then ranks or selects. Links his own guide on pairing System One and System Two models in a custom harness (academy.dair.ai/resources/jev-decisions-in-a-pi-sdk-harness).
 
 - [Annatar.md](https://x.com/annatarxbt/status/2101925393322091005) — 2026-09-21: Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowledge graph), procedural (successful approaches promoted to reusable skills), and forgetting (deletion so stale facts stop contradicting new ones). Cites Mem0 at 1,800 tokens per query versus 26,000 with 91% lower latency, and a Snowflake ontology layer at 20% more accuracy with 39% fewer tool calls. Argues the forgetting engine is the layer nobody builds and the one that decides whether the other four stay trustworthy; quotes Mr. Buzzoni's Kimi K3 harness-guide article as the 13-page companion. ALL-CAPS hook and 'full breakdown below' packaging, but the layer model and the cited numbers are real.
 
@@ -3014,7 +3018,9 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-### Research (236)
+### Research (237)
+
+- [elvis](https://x.com/omarsar0/status/2103139055013646646) — 2026-09-24: elvis flags a second entrant in the 'System One model' category behind Jev: Jacky Kwok's Contrastive Language Model (CLM), quoted here announcing CLM-8B as internet-scale pre-trained and up to 9x faster inference than Jev at comparable quality, and reportedly a better verifier on long-horizon tasks. The useful part is the mechanism contrast: Jev is trained with Reinforcement Learning for Calibrated Decisions (RLCD) and takes a situation plus predefined questions, returning typed decisions with probabilities; CLM embeds the situation and candidate actions, compares similarity, then ranks or selects. Links his own guide on pairing System One and System Two models in a custom harness (academy.dair.ai/resources/jev-decisions-in-a-pi-sdk-harness).
 
 - [Annatar.md](https://x.com/annatarxbt/status/2101925393322091005) — 2026-09-21: Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowledge graph), procedural (successful approaches promoted to reusable skills), and forgetting (deletion so stale facts stop contradicting new ones). Cites Mem0 at 1,800 tokens per query versus 26,000 with 91% lower latency, and a Snowflake ontology layer at 20% more accuracy with 39% fewer tool calls. Argues the forgetting engine is the layer nobody builds and the one that decides whether the other four stay trustworthy; quotes Mr. Buzzoni's Kimi K3 harness-guide article as the 13-page companion. ALL-CAPS hook and 'full breakdown below' packaging, but the layer model and the cited numbers are real.
 
@@ -4632,6 +4638,9 @@
 ## Full Chronological List
 
 ### Sep 2026
+
+- **2026-09-24** | [elvis](https://x.com/omarsar0/status/2103139055013646646) | agent-design, research
+  elvis flags a second entrant in the 'System One model' category behind Jev: Jacky Kwok's Contrastive Language Model (CLM), quoted here announcing CLM-8B as internet-scale pre-trained and up to 9x faster inference than Jev at comparable quality, and reportedly a better verifier on long-horizon tasks. The useful part is the mechanism contrast: Jev is trained with Reinforcement Learning for Calibrated Decisions (RLCD) and takes a situation plus predefined questions, returning typed decisions with probabilities; CLM embeds the situation and candidate actions, compares similarity, then ranks or selects. Links his own guide on pairing System One and System Two models in a custom harness (academy.dair.ai/resources/jev-decisions-in-a-pi-sdk-harness).
 
 - **2026-09-21** | [Annatar.md](https://x.com/annatarxbt/status/2101925393322091005) | agent-design, research, questionable
   Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowledge graph), procedural (successful approaches promoted to reusable skills), and forgetting (deletion so stale facts stop contradicting new ones). Cites Mem0 at 1,800 tokens per query versus 26,000 with 91% lower latency, and a Snowflake ontology layer at 20% more accuracy with 39% fewer tool calls. Argues the forgetting engine is the layer nobody builds and the one that decides whether the other four stay trustworthy; quotes Mr. Buzzoni's Kimi K3 harness-guide article as the 13-page companion. ALL-CAPS hook and 'full breakdown below' packaging, but the layer model and the cited numbers are real.
