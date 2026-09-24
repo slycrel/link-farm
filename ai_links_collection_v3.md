@@ -1,14 +1,16 @@
 # AI Links Collection
-**Total Posts**: 897  
+**Total Posts**: 898  
 **Date Range**: 2024-06-11 – 2026-09-24  
-**Enriched**: 896/897 (99%)
+**Enriched**: 897/898 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-09-24T23:20:43Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-09-24T23:46:10Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
+- **2026-09-24** — [Tanner WJ](https://pit.tannerwj.com) — *now • Agent Design • v1 enriched*  
+  The Pit (pit.tannerwj.com) is a paper-trading league for AI agents built by Tanner WJ -- a friend of Jeremy's. Agents get $10,000 of virtual capital per season and trade live Coinbase quotes for BTC, ETH, SOL, XRP and DOGE; all money is virtual, no real funds are involved. Ranking is by a risk-adjusted Alpha Score (40% return / 40% risk adjustment / 20% consistency, recomputed every 5 minutes) rather than raw return. The interesting part is that it is built agent-first: an MCP server over Streamable HTTP at /mcp exposing 16 tools (place_order, get_portfolio, run_backtest, webhook management and the rest), a one-line Claude Code install, an installable Agent Skill via npx skills add tannerwj/the-pit, HMAC-SHA256-signed fill webhooks with at-least-once delivery and backoff, /llms.txt, /openapi.json and a .well-known/api-catalog. Two design details stand out as harness ideas independent of the trading domain: every order requires a written rationale of 3+ characters or it is rejected 422 -- a forced trade journal, i.e. a machine-checkable reasoning trace attached to each action -- and a what-if replay endpoint that re-runs your filled orders under different sizing and stop-loss rules with no lookahead and the same fill model, explicitly framed as counterfactuals for a learning loop. That is the same receipts-become-replayable-scenarios pattern Avid describes for keel, implemented in a different domain. Free to spectate and to use the web simulator with no account. Source: github.com/tannerwj/the-pit
 - **2026-09-20** — [Ansh Nanda](https://x.com/anshnanda/status/2101627891721371971) — *now • Dev Practices • 1.1M views • v1 enriched*  
   Three rules Ansh Nanda keeps at the top of his AGENTS.md to stop coding agents generating worthless tests: never write unit tests after the code; prefer E2E tests as the sole mechanism and have them emit a verifiable, repeatable artifact; and if a system must be tested in isolation, enumerate the failure modes first and write the code second. Quote-replies dex (@dexhorthy) complaining that Opus added ten unit tests asserting a constant string contains various substrings -- the concrete failure the rules are aimed at, where post-hoc test generation produces tautologies that restate the implementation instead of constraining it. A compact, copy-pasteable agent-instruction-file pattern; 1.1M views.
 - **2026-09-24** — [elvis](https://x.com/omarsar0/status/2103139055013646646) — *near-term • Agent Design • 71.3K views • v1 enriched*  
@@ -17,16 +19,16 @@
   Viv of LangChain responds to Yash Patil's argument that traces are a company's most under-leveraged asset and that cheap System One models like Jev open new architectural possibilities around raw inference. The LangSmith pitch is the trace-to-improvement loop: online monitoring of every trace using custom models, Jev, cheap small models and built-in rubrics; clustering traces and errors into human-digestible views; turning those errors into evals that can be hill-climbed; and open-sourcing tooling to build Harbor Environments for evals or RL on your own data. Teases trace data for post-training as the next step. The load-bearing idea is that Jev-class models are cheap enough to run as online judges over every trace rather than a sample, which is what makes error-clustering and eval generation affordable at scale -- the economic argument for System One models applied to observability rather than routing.
 - **2026-09-23** — [Avid](https://x.com/av1dlive/status/2102802621664985241) — *near-term • Agent Design • 235.1K views • v1 enriched*  
   3,500-word builder's guide to putting Jev in a coding harness as a bounded decision layer, with the working source: keel 0.2.0 (github.com/codejunkie99/keel), a local-first Rust/gpui Mac coding app. The contract is deliberately narrow -- the host prepares a finite candidate list, the selector returns a typed id or abstains, and the host re-validates against current state before acting. Two decision points only: routing a fresh unpinned task to a provider/model, and choosing one of four focus modes inside the embedded loop (inspect / implement / verify / answer), each mapping to a host-defined tool bundle -- 'answer' gets an empty bundle. Provider-owned inner loops (via ACP) stay provider-owned, and a listed slash command is not an API the host can call. The repeated principle: selection is not permission, and a high confidence value grants no authority. Part 4 is the most valuable section and the most honest -- 'self-improving' here means decision receipts become replayable scenarios that a human reviews and approves, explicitly not silent self-training; the author states the evaluation design is proposed rather than measured and claims no coding-quality gains, and notes routing can become 'a very elaborate waiting room' if selector time exceeds the task. Directly relevant to harness engineering: it is the first post in the collection that shows where a System One model actually sits in a real harness's request path, with code.
-- **2026-09-21** — [Annatar.md](https://x.com/annatarxbt/status/2101925393322091005) — *near-term • Agent Design • 10.7K views • v1 enriched*  
-  Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowledge graph), procedural (successful approaches promoted to reusable skills), and forgetting (deletion so stale facts stop contradicting new ones). Cites Mem0 at 1,800 tokens per query versus 26,000 with 91% lower latency, and a Snowflake ontology layer at 20% more accuracy with 39% fewer tool calls. Argues the forgetting engine is the layer nobody builds and the one that decides whether the other four stay trustworthy; quotes Mr. Buzzoni's Kimi K3 harness-guide article as the 13-page companion. ALL-CAPS hook and 'full breakdown below' packaging, but the layer model and the cited numbers are real.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **vibecode-to-production via agent skills** (48 posts, +6 this week)  
-  Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
+- **System One models — bounded decisions as a primitive** (8 posts, +8 this week)  
+  Small, cheap, fast models that make a bounded *decision* rather than generate text — Jev (trained with Reinforcement Learning for Calibrated Decisions), Contrastive Language Models, and the open-weights RLCD line. The shared claim is that a decision primitive sits between deterministic code and a full LLM call: too nuanced for a switch statement, not worth a slow expensive generation. Covers the model releases themselves, the cost/latency envelope that makes them viable, the skeptical framing (a rebranded 2016 classifier at 2026 capability), and — the part that matters for building — where such a selector sits in a harness: the host prepares a finite candidate list, the selector returns a typed id or abstains, the host re-validates. Selection is not permission. Seeded by hand 2026-09-24 because the semantic layer was scattering this conversation across five unrelated homes.
+
+[graduated 2026-09-24] reached 9 canonical edges (bar: 4) and is now an active concept: eligible to be a primary home and to feed centroid scoring.
+    - 2026-09-24 — [elvis](https://x.com/omarsar0/status/2103139055013646646): elvis flags a second entrant in the 'System One model' category behind Jev: Jacky Kwok's Contrastive Language Model (CLM), quoted here annou…
     - 2026-09-23 — [Viv](https://x.com/vtrivedy10/status/2102939757080617014): Viv of LangChain responds to Yash Patil's argument that traces are a company's most under-leveraged asset and that cheap System One models l…
-    - 2026-09-16 — [Nathan Flurry](https://x.com/nathanflurry/status/2100036101809619314): A deliberately hype-free framing of Jev: not a replacement for GPT or Claude, but 'a really smart switch statement' — 2016-era ML classifier…
 
 - **vector / hybrid databases as agent-memory infrastructure** (56 posts, +4 this week)  
   HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
@@ -38,15 +40,15 @@
     - 2026-09-16 — [Yarchi](https://x.com/undefinedki/status/2100206342942187620): Describes Google's Stellar Colosseum, a multi-agent setup published for unsolved math problems and already built into Antigravity, Google's …
     - 2026-09-16 — [Teknium](https://x.com/teknium/status/2099996435324518533): Teknium's first blog post covers running roughly 1,393 Hermes Agent subagents over 19 hours to refactor about 400,000 lines out of Hermes Ag…
 
+- **vibecode-to-production via agent skills** (46 posts, +4 this week)  
+  Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
+    - 2026-09-16 — [Aaron Levie](https://x.com/levie/status/2099976021311398230): Aaron Levie (Box) argues there is a large gap between raw model capability and the workflows enterprises actually want automated, and that t…
+    - 2026-09-16 — [Raj Singh](https://x.com/mobileraj/status/2099959137438503252): Quote-boosts Gergely Orosz's diagram of OpenAI's agentic software factory and argues it should reduce anxiety about team velocity, since he …
+
 - **agent harness engineering** (56 posts, +2 this week)  
   Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
     - 2026-09-23 — [Avid](https://x.com/av1dlive/status/2102802621664985241): 3,500-word builder's guide to putting Jev in a coding harness as a bounded decision layer, with the working source: keel 0.2.0 (github.com/c…
     - 2026-09-16 — [Akshay](https://x.com/akshay_pachaar/status/2099857657872122108): Walks through Magnitude, an open-source tool for running agent harnesses (Claude Code, Codex, OpenCode, Pi) on local models. The argument is…
-
-- **agentic code review at production scale** (20 posts, +2 this week)  
-  Deterministic engineering handles what must never fail; LLM only does context reading and reasoning. Alibaba open-code-review.
-    - 2026-09-16 — [Dan Shipper](https://x.com/danshipper/status/2099947471518474522): Reports that Every has spent about a week testing Jev, a model they consider indispensable within 6-12 months, noting they almost never test…
-    - 2026-09-16 — [Alex](https://x.com/de1lymoon/status/2099856242948657161): Proposes a two-model architecture (Kimi K3 + GPT-6 Astra) built on clean roles rather than one large context window: 'Two-Brain OS = Special…
 
 
 ### Revisit from last month
@@ -59,10 +61,10 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 535 | 59.6% |
-| claude-code | 197 | 22.0% |
-| dev-practices | 388 | 43.3% |
-| skills-mcp | 201 | 22.4% |
+| agent-design | 536 | 59.7% |
+| claude-code | 197 | 21.9% |
+| dev-practices | 389 | 43.3% |
+| skills-mcp | 202 | 22.5% |
 | prompting | 134 | 14.9% |
 | research | 239 | 26.6% |
 | industry | 134 | 14.9% |
@@ -77,6 +79,7 @@
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
 | 2026-09-24 | elvis | agent-design | elvis flags a second entrant in the 'System One model' category behind... |
+| 2026-09-24 | Tanner WJ | agent-design | The Pit (pit.tannerwj.com) is a paper-trading league for AI agents bui... |
 | 2026-09-23 | Viv | agent-design | Viv of LangChain responds to Yash Patil's argument that traces are a c... |
 | 2026-09-23 | Avid | agent-design | 3,500-word builder's guide to putting Jev in a coding harness as a bou... |
 | 2026-09-21 | Annatar.md | agent-design | Five-layer taxonomy for agent memory - working (context window), episo... |
@@ -125,14 +128,15 @@
 | 2026-09-04 | elvis | research | Walks through Meta's CORAL paper (arxiv.org/abs/2609.02730), an LLM-na... |
 | 2026-09-04 | Akshay | agent-design | Explains JIT-Agent, an open-source 27B model that writes the harness i... |
 | 2026-09-04 | Tom Dorr | agent-design | Points at ai-knowledge-graph (github.com/robert-mcdermott/ai-knowledge... |
-| 2026-09-04 | Yarchi | agent-design | Describes Meta's published 'organizational second brain': 200+ files s... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (535)
+### Agent Design (536)
 
 - [elvis](https://x.com/omarsar0/status/2103139055013646646) — 2026-09-24: elvis flags a second entrant in the 'System One model' category behind Jev: Jacky Kwok's Contrastive Language Model (CLM), quoted here announcing CLM-8B as internet-scale pre-trained and up to 9x faster inference than Jev at comparable quality, and reportedly a better verifier on long-horizon tasks. The useful part is the mechanism contrast: Jev is trained with Reinforcement Learning for Calibrated Decisions (RLCD) and takes a situation plus predefined questions, returning typed decisions with probabilities; CLM embeds the situation and candidate actions, compares similarity, then ranks or selects. Links his own guide on pairing System One and System Two models in a custom harness (academy.dair.ai/resources/jev-decisions-in-a-pi-sdk-harness).
+
+- [Tanner WJ](https://pit.tannerwj.com) — 2026-09-24: The Pit (pit.tannerwj.com) is a paper-trading league for AI agents built by Tanner WJ -- a friend of Jeremy's. Agents get $10,000 of virtual capital per season and trade live Coinbase quotes for BTC, ETH, SOL, XRP and DOGE; all money is virtual, no real funds are involved. Ranking is by a risk-adjusted Alpha Score (40% return / 40% risk adjustment / 20% consistency, recomputed every 5 minutes) rather than raw return. The interesting part is that it is built agent-first: an MCP server over Streamable HTTP at /mcp exposing 16 tools (place_order, get_portfolio, run_backtest, webhook management and the rest), a one-line Claude Code install, an installable Agent Skill via npx skills add tannerwj/the-pit, HMAC-SHA256-signed fill webhooks with at-least-once delivery and backoff, /llms.txt, /openapi.json and a .well-known/api-catalog. Two design details stand out as harness ideas independent of the trading domain: every order requires a written rationale of 3+ characters or it is rejected 422 -- a forced trade journal, i.e. a machine-checkable reasoning trace attached to each action -- and a what-if replay endpoint that re-runs your filled orders under different sizing and stop-loss rules with no lookahead and the same fill model, explicitly framed as counterfactuals for a learning loop. That is the same receipts-become-replayable-scenarios pattern Avid describes for keel, implemented in a different domain. Free to spectate and to use the web simulator with no account. Source: github.com/tannerwj/the-pit
 
 - [Viv](https://x.com/vtrivedy10/status/2102939757080617014) — 2026-09-23: Viv of LangChain responds to Yash Patil's argument that traces are a company's most under-leveraged asset and that cheap System One models like Jev open new architectural possibilities around raw inference. The LangSmith pitch is the trace-to-improvement loop: online monitoring of every trace using custom models, Jev, cheap small models and built-in rubrics; clustering traces and errors into human-digestible views; turning those errors into evals that can be hill-climbed; and open-sourcing tooling to build Harbor Environments for evals or RL on your own data. Teases trace data for post-training as the next step. The load-bearing idea is that Jev-class models are cheap enough to run as online judges over every trace rather than a sample, which is what makes error-clustering and eval generation affordable at scale -- the economic argument for System One models applied to observability rather than routing.
 
@@ -1598,7 +1602,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (388)
+### Dev Practices (389)
+
+- [Tanner WJ](https://pit.tannerwj.com) — 2026-09-24: The Pit (pit.tannerwj.com) is a paper-trading league for AI agents built by Tanner WJ -- a friend of Jeremy's. Agents get $10,000 of virtual capital per season and trade live Coinbase quotes for BTC, ETH, SOL, XRP and DOGE; all money is virtual, no real funds are involved. Ranking is by a risk-adjusted Alpha Score (40% return / 40% risk adjustment / 20% consistency, recomputed every 5 minutes) rather than raw return. The interesting part is that it is built agent-first: an MCP server over Streamable HTTP at /mcp exposing 16 tools (place_order, get_portfolio, run_backtest, webhook management and the rest), a one-line Claude Code install, an installable Agent Skill via npx skills add tannerwj/the-pit, HMAC-SHA256-signed fill webhooks with at-least-once delivery and backoff, /llms.txt, /openapi.json and a .well-known/api-catalog. Two design details stand out as harness ideas independent of the trading domain: every order requires a written rationale of 3+ characters or it is rejected 422 -- a forced trade journal, i.e. a machine-checkable reasoning trace attached to each action -- and a what-if replay endpoint that re-runs your filled orders under different sizing and stop-loss rules with no lookahead and the same fill model, explicitly framed as counterfactuals for a learning loop. That is the same receipts-become-replayable-scenarios pattern Avid describes for keel, implemented in a different domain. Free to spectate and to use the web simulator with no account. Source: github.com/tannerwj/the-pit
 
 - [Viv](https://x.com/vtrivedy10/status/2102939757080617014) — 2026-09-23: Viv of LangChain responds to Yash Patil's argument that traces are a company's most under-leveraged asset and that cheap System One models like Jev open new architectural possibilities around raw inference. The LangSmith pitch is the trace-to-improvement loop: online monitoring of every trace using custom models, Jev, cheap small models and built-in rubrics; clustering traces and errors into human-digestible views; turning those errors into evals that can be hill-climbed; and open-sourcing tooling to build Harbor Environments for evals or RL on your own data. Teases trace data for post-training as the next step. The load-bearing idea is that Jev-class models are cheap enough to run as online judges over every trace rather than a sample, which is what makes error-clustering and eval generation affordable at scale -- the economic argument for System One models applied to observability rather than routing.
 
@@ -2376,7 +2382,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Skills & MCP (201)
+### Skills & MCP (202)
+
+- [Tanner WJ](https://pit.tannerwj.com) — 2026-09-24: The Pit (pit.tannerwj.com) is a paper-trading league for AI agents built by Tanner WJ -- a friend of Jeremy's. Agents get $10,000 of virtual capital per season and trade live Coinbase quotes for BTC, ETH, SOL, XRP and DOGE; all money is virtual, no real funds are involved. Ranking is by a risk-adjusted Alpha Score (40% return / 40% risk adjustment / 20% consistency, recomputed every 5 minutes) rather than raw return. The interesting part is that it is built agent-first: an MCP server over Streamable HTTP at /mcp exposing 16 tools (place_order, get_portfolio, run_backtest, webhook management and the rest), a one-line Claude Code install, an installable Agent Skill via npx skills add tannerwj/the-pit, HMAC-SHA256-signed fill webhooks with at-least-once delivery and backoff, /llms.txt, /openapi.json and a .well-known/api-catalog. Two design details stand out as harness ideas independent of the trading domain: every order requires a written rationale of 3+ characters or it is rejected 422 -- a forced trade journal, i.e. a machine-checkable reasoning trace attached to each action -- and a what-if replay endpoint that re-runs your filled orders under different sizing and stop-loss rules with no lookahead and the same fill model, explicitly framed as counterfactuals for a learning loop. That is the same receipts-become-replayable-scenarios pattern Avid describes for keel, implemented in a different domain. Free to spectate and to use the web simulator with no account. Source: github.com/tannerwj/the-pit
 
 - [Avid](https://x.com/av1dlive/status/2102802621664985241) — 2026-09-23: 3,500-word builder's guide to putting Jev in a coding harness as a bounded decision layer, with the working source: keel 0.2.0 (github.com/codejunkie99/keel), a local-first Rust/gpui Mac coding app. The contract is deliberately narrow -- the host prepares a finite candidate list, the selector returns a typed id or abstains, and the host re-validates against current state before acting. Two decision points only: routing a fresh unpinned task to a provider/model, and choosing one of four focus modes inside the embedded loop (inspect / implement / verify / answer), each mapping to a host-defined tool bundle -- 'answer' gets an empty bundle. Provider-owned inner loops (via ACP) stay provider-owned, and a listed slash command is not an API the host can call. The repeated principle: selection is not permission, and a high confidence value grants no authority. Part 4 is the most valuable section and the most honest -- 'self-improving' here means decision receipts become replayable scenarios that a human reviews and approves, explicitly not silent self-training; the author states the evaluation design is proposed rather than measured and claims no coding-quality gains, and notes routing can become 'a very elaborate waiting room' if selector time exceeds the task. Directly relevant to harness engineering: it is the first post in the collection that shows where a System One model actually sits in a real harness's request path, with code.
 
@@ -4679,6 +4687,9 @@
 
 - **2026-09-24** | [elvis](https://x.com/omarsar0/status/2103139055013646646) | agent-design, research
   elvis flags a second entrant in the 'System One model' category behind Jev: Jacky Kwok's Contrastive Language Model (CLM), quoted here announcing CLM-8B as internet-scale pre-trained and up to 9x faster inference than Jev at comparable quality, and reportedly a better verifier on long-horizon tasks. The useful part is the mechanism contrast: Jev is trained with Reinforcement Learning for Calibrated Decisions (RLCD) and takes a situation plus predefined questions, returning typed decisions with probabilities; CLM embeds the situation and candidate actions, compares similarity, then ranks or selects. Links his own guide on pairing System One and System Two models in a custom harness (academy.dair.ai/resources/jev-decisions-in-a-pi-sdk-harness).
+
+- **2026-09-24** | [Tanner WJ](https://pit.tannerwj.com) | agent-design, skills-mcp, dev-practices
+  The Pit (pit.tannerwj.com) is a paper-trading league for AI agents built by Tanner WJ -- a friend of Jeremy's. Agents get $10,000 of virtual capital per season and trade live Coinbase quotes for BTC, ETH, SOL, XRP and DOGE; all money is virtual, no real funds are involved. Ranking is by a risk-adjusted Alpha Score (40% return / 40% risk adjustment / 20% consistency, recomputed every 5 minutes) rather than raw return. The interesting part is that it is built agent-first: an MCP server over Streamable HTTP at /mcp exposing 16 tools (place_order, get_portfolio, run_backtest, webhook management and the rest), a one-line Claude Code install, an installable Agent Skill via npx skills add tannerwj/the-pit, HMAC-SHA256-signed fill webhooks with at-least-once delivery and backoff, /llms.txt, /openapi.json and a .well-known/api-catalog. Two design details stand out as harness ideas independent of the trading domain: every order requires a written rationale of 3+ characters or it is rejected 422 -- a forced trade journal, i.e. a machine-checkable reasoning trace attached to each action -- and a what-if replay endpoint that re-runs your filled orders under different sizing and stop-loss rules with no lookahead and the same fill model, explicitly framed as counterfactuals for a learning loop. That is the same receipts-become-replayable-scenarios pattern Avid describes for keel, implemented in a different domain. Free to spectate and to use the web simulator with no account. Source: github.com/tannerwj/the-pit
 
 - **2026-09-23** | [Viv](https://x.com/vtrivedy10/status/2102939757080617014) | agent-design, dev-practices, research
   Viv of LangChain responds to Yash Patil's argument that traces are a company's most under-leveraged asset and that cheap System One models like Jev open new architectural possibilities around raw inference. The LangSmith pitch is the trace-to-improvement loop: online monitoring of every trace using custom models, Jev, cheap small models and built-in rubrics; clustering traces and errors into human-digestible views; turning those errors into evals that can be hill-climbed; and open-sourcing tooling to build Harbor Environments for evals or RL on your own data. Teases trace data for post-training as the next step. The load-bearing idea is that Jev-class models are cheap enough to run as online judges over every trace rather than a sample, which is what makes error-clustering and eval generation affordable at scale -- the economic argument for System One models applied to observability rather than routing.
