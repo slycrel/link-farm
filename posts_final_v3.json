@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-09-25",
+    "author": "Akshay",
+    "handle": "@akshay_pachaar",
+    "subject": "Post by Akshay on X",
+    "url": "https://x.com/akshay_pachaar/status/2103483160382386234",
+    "summary": "Mechanism explainer for the Contrastive Language Model (CLM) out of NVIDIA and Stanford, the System One architecture elvis flagged on 2026-09-24 as the second entrant behind Jev (contrastive-lm.notion.site, open-source including code). Where Jev generates a typed decision token by token, CLM treats the decision as retrieval: a frozen Qwen3-8B plus a trainable state head embeds the situation, a separate action head embeds each candidate into the same space, InfoNCE contrastive training (the CLIP / dense-retrieval mechanism) pulls correct state-action pairs together, and inference is cosine similarity plus a softmax over the supplied candidates. The speed claim rests on that separation -- action vectors are embedded once and cached, so a repeated choice over the same tool set costs one embedding pass and a set of dot products rather than repeated generation; CLM-8B is reported to match Jev on computer-use, gaming and tool-calling evals at up to 9x lower latency, with the gap widening as candidate sets grow. Akshay states the limits plainly: CLM cannot invent an action outside the supplied list, its probabilities are relative to that list, and the strongest verifier results need task-specific fine-tuning. Quotes his own Sep 18 'Jev Clearly Explained' article, which is not yet in this collection.",
+    "topics": [
+      "agent-design",
+      "research",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "26.2K",
+    "notes": "rhyme: fourth thread in the Jev / System One cluster of 2026-09-16..25. Same CLM release elvis covered 2026-09-24 (71.3K views) -- the 9x figure and the Jev-parity claim match across both, and the attributions are compatible (Jacky Kwok is the researcher; NVIDIA + Stanford the institutions), so this is independent corroboration rather than a second story. Complements rather than repeats: elvis gave the Jev-vs-CLM mechanism contrast (RLCD typed decisions vs embed-and-rank), Akshay gives the training objective, the caching argument behind the latency number, and the stated limits. Also rhymes with Hassan's tev1-4B $17 clone (09-23) and Avid's keel guide (09-23) -- the candidate list CLM scores over is exactly the 'finite candidate list, typed id or abstain' contract Avid's harness defines, so CLM is a drop-in for that slot. Gap worth filling: Akshay's quoted Sep 18 'Jev Clearly Explained' article is not in the corpus. (Jeremy asked to add this, 2026-09-25)",
+    "enriched": true,
+    "content": "NVIDIA and Stanford just challenged Jev.\n\n(their new System 1 architecture runs up to 9x faster.)\n\nIt is called a Contrastive Language Model, or CLM.\n\nLike Jev, CLM is not designed to generate text. It handles the small, repeated decisions inside AI systems, such as choosing a tool, ranking a patch, routing a request, or selecting the next action.\n\nBut CLM reaches those decisions differently.\n\nInstead of generating an answer token by token, it treats decision-making as a retrieval problem.\n\nHere is how it works.\n\n1) Encode the state\n\nCLM takes the current situation, such as an agent's context or the state of a game, and converts it into a vector.\n\nIt uses a frozen Qwen3-8B model with a small trainable state projection head.\n\n2) Encode every possible action\n\nA separate action head converts each candidate into the same vector space.\n\nIn the Mario example, the candidates are left, jump, and right run. CLM does not invent a fourth option. It only evaluates the actions supplied by the application.\n\n3) Learn which states and actions belong together\n\nDuring training, the correct state-action pair is pulled closer while incorrect pairs are pushed apart.\n\nA batch of B examples produces a B x B similarity matrix. The matching pairs sit on the diagonal. Every other pairing becomes a negative example.\n\nThis contrastive training uses InfoNCE, the same general mechanism behind systems such as CLIP and dense retrieval.\n\n4) Turn similarity into a decision\n\nAt inference, CLM measures the cosine similarity between the state and every candidate action.\n\nA softmax converts those scores into a probability distribution. The application can choose the winner, apply a confidence threshold, or escalate an uncertain result.\n\nThe real speed advantage comes from separating states and actions.\n\nActions can be embedded once and cached. If an agent repeatedly chooses between the same tools, CLM only needs to encode the changing state and compare it with stored action vectors.\n\nThat replaces repeated generation with one embedding pass and a set of cheap dot products.\n\nThe researchers report that CLM-8B matches Jev across computer-use, gaming, and tool-calling evaluations while reaching up to 9x lower latency. The improvement is largest when actions repeat or the candidate set grows.\n\nCLM still has limits. It cannot generate new actions, its probabilities are relative to the supplied candidates, and its strongest verifier results require task-specific fine-tuning.\n\nBut its central idea is powerful.\n\nThe entire research is open-source, including the code.\n\nRead more here: https://contrastive-lm.notion.site\n\nWhen software already knows the possible answers, an AI model should score them instead of generating more words.\n\nAkshay @akshay_pachaar - Sep 18 - X Article: \"Jev Clearly Explained\"\nWe have been using LLMs like a hammer for every AI problem, even simple decisions. Jev handles those decisions in milliseconds at a fraction of the cost. Let's understand how it works and where it fits.\n\nContrastive Language Model - open-source research writeup, code and evaluations: contrastive-lm.notion.site",
+    "source": "manual",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-09-24",
     "author": "elvis",
     "handle": "@omarsar0",

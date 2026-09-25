@@ -1,12 +1,12 @@
 # AI Links Collection
-**Total Posts**: 902  
-**Date Range**: 2024-06-11 – 2026-09-24  
-**Enriched**: 901/902 (99%)
+**Total Posts**: 903  
+**Date Range**: 2024-06-11 – 2026-09-25  
+**Enriched**: 902/903 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-09-25T15:26:40Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-09-25T16:05:12Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-09-24** — [Tanner WJ](https://pit.tannerwj.com) — *now • Agent Design • v1 enriched*  
@@ -17,18 +17,20 @@
   Anthropic's engineering writeup of a two-week sprint that made claude.ai and the desktop app ~3x faster (geometric mean over 13 p75 measurements; claude.ai fresh load 3,085 -> 550 ms, Cowork cloud session load 2,566 -> 728 ms, Cowork send 928 -> 48 ms). Run entirely from one Slack channel with Claude Tag in every thread on an internal model comparable to Opus 5.5: 3,000+ changes merged, 150+ concurrent threads, 200+ changes on busy days, zero customer-facing incidents or rollbacks. The transferable idea is the inversion of measurement -- 'measurement used to be step zero, with Claude it's step one of the climb', so the highest-leverage act is finding more things to measure. Every new benchmark had two jobs: a lab metric Claude could move, and a CI ratchet that can only tighten; benchmarks that couldn't be proven to correlate with wall-clock were unshipped ('please prove that hill climbing against each of these can result in measurable wall clock perf wins'). Deterministic lab proxies replaced noisy wall-clock: Valgrind instruction counts under node --predictable, V8 precise-coverage call counts, React commits, style recalcs, DOM mutations, and a 120Hz headless-Chrome rig driven by DevTools begin-frame control so 'did this frame fit 8.33ms' is an exact read. Steering is explicitly not autonomy and has three named parts -- ambition ('please be braver'), taste (a named human owner rules on every user-perceptible change), and direction ('a hundred and fifty hammers seeking nails'). Guardrails: automated review plus human approval, tests before optimizations, ~200 short-lived flags, jsdom-vs-React drift tests, 14-viewport 1px alignment assertions, staged rollout. Includes the verbatim standing-instructions prompt for the channel. Best single war story: em dashes forcing V8 to UTF-16 and putting every highlighting regex on its two-byte path, fixed in twenty lines.
 - **2026-09-20** — [Ansh Nanda](https://x.com/anshnanda/status/2101627891721371971) — *now • Dev Practices • 1.1M views • v1 enriched*  
   Three rules Ansh Nanda keeps at the top of his AGENTS.md to stop coding agents generating worthless tests: never write unit tests after the code; prefer E2E tests as the sole mechanism and have them emit a verifiable, repeatable artifact; and if a system must be tested in isolation, enumerate the failure modes first and write the code second. Quote-replies dex (@dexhorthy) complaining that Opus added ten unit tests asserting a constant string contains various substrings -- the concrete failure the rules are aimed at, where post-hoc test generation produces tautologies that restate the implementation instead of constraining it. A compact, copy-pasteable agent-instruction-file pattern; 1.1M views.
-- **2026-09-24** — [elvis](https://x.com/omarsar0/status/2103139055013646646) — *near-term • Agent Design • 71.3K views • v1 enriched*  
-  elvis flags a second entrant in the 'System One model' category behind Jev: Jacky Kwok's Contrastive Language Model (CLM), quoted here announcing CLM-8B as internet-scale pre-trained and up to 9x faster inference than Jev at comparable quality, and reportedly a better verifier on long-horizon tasks. The useful part is the mechanism contrast: Jev is trained with Reinforcement Learning for Calibrated Decisions (RLCD) and takes a situation plus predefined questions, returning typed decisions with probabilities; CLM embeds the situation and candidate actions, compares similarity, then ranks or selects. Links his own guide on pairing System One and System Two models in a custom harness (academy.dair.ai/resources/jev-decisions-in-a-pi-sdk-harness).
+- **2026-09-25** — [Akshay](https://x.com/akshay_pachaar/status/2103483160382386234) — *near-term • Agent Design • 26.2K views • v1 enriched*  
+  Mechanism explainer for the Contrastive Language Model (CLM) out of NVIDIA and Stanford, the System One architecture elvis flagged on 2026-09-24 as the second entrant behind Jev (contrastive-lm.notion.site, open-source including code). Where Jev generates a typed decision token by token, CLM treats the decision as retrieval: a frozen Qwen3-8B plus a trainable state head embeds the situation, a separate action head embeds each candidate into the same space, InfoNCE contrastive training (the CLIP / dense-retrieval mechanism) pulls correct state-action pairs together, and inference is cosine similarity plus a softmax over the supplied candidates. The speed claim rests on that separation -- action vectors are embedded once and cached, so a repeated choice over the same tool set costs one embedding pass and a set of dot products rather than repeated generation; CLM-8B is reported to match Jev on computer-use, gaming and tool-calling evals at up to 9x lower latency, with the gap widening as candidate sets grow. Akshay states the limits plainly: CLM cannot invent an action outside the supplied list, its probabilities are relative to that list, and the strongest verifier results need task-specific fine-tuning. Quotes his own Sep 18 'Jev Clearly Explained' article, which is not yet in this collection.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **System One models — bounded decisions as a primitive** (25 posts, +9 this week)  
+- **System One models — bounded decisions as a primitive** (11 posts, +11 this week)  
   Small, cheap, fast models that make a bounded *decision* rather than generate text — Jev (trained with Reinforcement Learning for Calibrated Decisions), Contrastive Language Models, and the open-weights RLCD line. The shared claim is that a decision primitive sits between deterministic code and a full LLM call: too nuanced for a switch statement, not worth a slow expensive generation. Covers the model releases themselves, the cost/latency envelope that makes them viable, the skeptical framing (a rebranded 2016 classifier at 2026 capability), and — the part that matters for building — where such a selector sits in a harness: the host prepares a finite candidate list, the selector returns a typed id or abstains, the host re-validates. Selection is not permission. Seeded by hand 2026-09-24 because the semantic layer was scattering this conversation across five unrelated homes.
 
 [graduated 2026-09-24] reached 9 canonical edges (bar: 4) and is now an active concept: eligible to be a primary home and to feed centroid scoring.
+
+[no-centroid-scoring] applied 2026-09-25. This concept was seeded by hand on 2026-09-24 and graduated the same day; within 48h raw-cosine matching had attached 328 evidence edges, of which only 10 actually concerned Jev / CLM / RLCD. The absorbed material (agent memory, agent factories, eval pipelines, harness recipes) pulled the centroid so far off-subject that a squarely on-topic CLM explainer scored 0.8036 against it -- below the 0.82 floor and rank 6 -- while scoring 0.8397 against the original nine seeds. Classic lexically-diffuse magnet (cf. #65): members share a purpose, not a vocabulary. The 318 over-attached edges were demoted evidence->weak (not dismissed; see _rollback_74_20260925 for the exact reversible set). Attach to this concept by hand.
+    - 2026-09-25 — [Akshay](https://x.com/akshay_pachaar/status/2103483160382386234): Mechanism explainer for the Contrastive Language Model (CLM) out of NVIDIA and Stanford, the System One architecture elvis flagged on 2026-0…
     - 2026-09-24 — [elvis](https://x.com/omarsar0/status/2103139055013646646): elvis flags a second entrant in the 'System One model' category behind Jev: Jacky Kwok's Contrastive Language Model (CLM), quoted here annou…
-    - 2026-09-23 — [Viv](https://x.com/vtrivedy10/status/2102939757080617014): Viv of LangChain responds to Yash Patil's argument that traces are a company's most under-leveraged asset and that cheap System One models l…
 
 - **vector / hybrid databases as agent-memory infrastructure** (57 posts, +5 this week)  
   HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
@@ -61,12 +63,12 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 539 | 59.8% |
-| claude-code | 198 | 22.0% |
-| dev-practices | 391 | 43.3% |
+| agent-design | 540 | 59.8% |
+| claude-code | 198 | 21.9% |
+| dev-practices | 392 | 43.4% |
 | skills-mcp | 202 | 22.4% |
 | prompting | 135 | 15.0% |
-| research | 242 | 26.8% |
+| research | 243 | 26.9% |
 | industry | 135 | 15.0% |
 | management | 140 | 15.5% |
 | adjacent | 45 | 5.0% |
@@ -78,6 +80,7 @@
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-09-25 | Akshay | agent-design | Mechanism explainer for the Contrastive Language Model (CLM) out of NV... |
 | 2026-09-24 | elvis | agent-design | elvis flags a second entrant in the 'System One model' category behind... |
 | 2026-09-24 | Alex Veremeyenko | research | Summary of 'The Tasteful Agent' (Microsoft + City University of Hong K... |
 | 2026-09-24 | Tanner WJ | agent-design | The Pit (pit.tannerwj.com) is a paper-trading league for AI agents bui... |
@@ -127,12 +130,13 @@
 | 2026-09-16 | harshatheg | research | Hugging Face model card for Qwen-2.5-1B-RLCD / Atomic Chat, an Apache-... |
 | 2026-09-15 | Salvatore Sanfilippo | agent-design | DwarfStar (github.com/antirez/ds4) is Salvatore Sanfilippo's self-cont... |
 | 2026-09-10 | Akshay | research | Akshay breaks down an NVIDIA paper (arxiv.org/abs/2608.03893) that mak... |
-| 2026-09-04 | Annatar.md | industry | Claims NVIDIA is offering free year-long API access to 140+ hosted mod... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (539)
+### Agent Design (540)
+
+- [Akshay](https://x.com/akshay_pachaar/status/2103483160382386234) — 2026-09-25: Mechanism explainer for the Contrastive Language Model (CLM) out of NVIDIA and Stanford, the System One architecture elvis flagged on 2026-09-24 as the second entrant behind Jev (contrastive-lm.notion.site, open-source including code). Where Jev generates a typed decision token by token, CLM treats the decision as retrieval: a frozen Qwen3-8B plus a trainable state head embeds the situation, a separate action head embeds each candidate into the same space, InfoNCE contrastive training (the CLIP / dense-retrieval mechanism) pulls correct state-action pairs together, and inference is cosine similarity plus a softmax over the supplied candidates. The speed claim rests on that separation -- action vectors are embedded once and cached, so a repeated choice over the same tool set costs one embedding pass and a set of dot products rather than repeated generation; CLM-8B is reported to match Jev on computer-use, gaming and tool-calling evals at up to 9x lower latency, with the gap widening as candidate sets grow. Akshay states the limits plainly: CLM cannot invent an action outside the supplied list, its probabilities are relative to that list, and the strongest verifier results need task-specific fine-tuning. Quotes his own Sep 18 'Jev Clearly Explained' article, which is not yet in this collection.
 
 - [elvis](https://x.com/omarsar0/status/2103139055013646646) — 2026-09-24: elvis flags a second entrant in the 'System One model' category behind Jev: Jacky Kwok's Contrastive Language Model (CLM), quoted here announcing CLM-8B as internet-scale pre-trained and up to 9x faster inference than Jev at comparable quality, and reportedly a better verifier on long-horizon tasks. The useful part is the mechanism contrast: Jev is trained with Reinforcement Learning for Calibrated Decisions (RLCD) and takes a situation plus predefined questions, returning typed decisions with probabilities; CLM embeds the situation and candidate actions, compares similarity, then ranks or selects. Links his own guide on pairing System One and System Two models in a custom harness (academy.dair.ai/resources/jev-decisions-in-a-pi-sdk-harness).
 
@@ -1610,7 +1614,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (391)
+### Dev Practices (392)
+
+- [Akshay](https://x.com/akshay_pachaar/status/2103483160382386234) — 2026-09-25: Mechanism explainer for the Contrastive Language Model (CLM) out of NVIDIA and Stanford, the System One architecture elvis flagged on 2026-09-24 as the second entrant behind Jev (contrastive-lm.notion.site, open-source including code). Where Jev generates a typed decision token by token, CLM treats the decision as retrieval: a frozen Qwen3-8B plus a trainable state head embeds the situation, a separate action head embeds each candidate into the same space, InfoNCE contrastive training (the CLIP / dense-retrieval mechanism) pulls correct state-action pairs together, and inference is cosine similarity plus a softmax over the supplied candidates. The speed claim rests on that separation -- action vectors are embedded once and cached, so a repeated choice over the same tool set costs one embedding pass and a set of dot products rather than repeated generation; CLM-8B is reported to match Jev on computer-use, gaming and tool-calling evals at up to 9x lower latency, with the gap widening as candidate sets grow. Akshay states the limits plainly: CLM cannot invent an action outside the supplied list, its probabilities are relative to that list, and the strongest verifier results need task-specific fine-tuning. Quotes his own Sep 18 'Jev Clearly Explained' article, which is not yet in this collection.
 
 - [Alex Veremeyenko](https://x.com/alex_verem/status/2103136883933065609) — 2026-09-24: Summary of 'The Tasteful Agent' (Microsoft + City University of Hong Kong), which isolates the decision quality that decides whether a long agent run succeeds. Method: mine 2,677 coding and 1,132 research runs for forks where two attempts diverged and one turned out better, then ask a model which branch to take given only what the agent knew at the time; 502 of 4,657 candidate forks survived filtering, with 98.8% human-reviewer agreement, and a model must answer consistently under both option orderings to score (chance = 25%). Results worth knowing: the best of 14 frontier models (GPT-5.6 Sol) scored 59.7%; when the deciding clue was already in context models averaged 62.3%, but when it only emerged after further work they dropped to 21% -- BELOW CHANCE -- and long tasks are mostly made of that second kind. More reasoning budget did not help: two models at three reasoning levels showed no improvement, and both spent the most tokens on the forks they most often got wrong. The constructive half: fine-tuning a 27B Qwen3.6 on how past forks actually turned out raised unseen-task accuracy 17.9 points, and using it as an advisor took a coding agent from 14.6% to 33.7% on 41 held-out SWE-bench Pro tasks (oracle advice would give 39%). Practical implication stated plainly: keep your failed runs, they are the training data. Note the post gives no arXiv link.
 
@@ -3072,7 +3078,9 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-### Research (242)
+### Research (243)
+
+- [Akshay](https://x.com/akshay_pachaar/status/2103483160382386234) — 2026-09-25: Mechanism explainer for the Contrastive Language Model (CLM) out of NVIDIA and Stanford, the System One architecture elvis flagged on 2026-09-24 as the second entrant behind Jev (contrastive-lm.notion.site, open-source including code). Where Jev generates a typed decision token by token, CLM treats the decision as retrieval: a frozen Qwen3-8B plus a trainable state head embeds the situation, a separate action head embeds each candidate into the same space, InfoNCE contrastive training (the CLIP / dense-retrieval mechanism) pulls correct state-action pairs together, and inference is cosine similarity plus a softmax over the supplied candidates. The speed claim rests on that separation -- action vectors are embedded once and cached, so a repeated choice over the same tool set costs one embedding pass and a set of dot products rather than repeated generation; CLM-8B is reported to match Jev on computer-use, gaming and tool-calling evals at up to 9x lower latency, with the gap widening as candidate sets grow. Akshay states the limits plainly: CLM cannot invent an action outside the supplied list, its probabilities are relative to that list, and the strongest verifier results need task-specific fine-tuning. Quotes his own Sep 18 'Jev Clearly Explained' article, which is not yet in this collection.
 
 - [elvis](https://x.com/omarsar0/status/2103139055013646646) — 2026-09-24: elvis flags a second entrant in the 'System One model' category behind Jev: Jacky Kwok's Contrastive Language Model (CLM), quoted here announcing CLM-8B as internet-scale pre-trained and up to 9x faster inference than Jev at comparable quality, and reportedly a better verifier on long-horizon tasks. The useful part is the mechanism contrast: Jev is trained with Reinforcement Learning for Calibrated Decisions (RLCD) and takes a situation plus predefined questions, returning typed decisions with probabilities; CLM embeds the situation and candidate actions, compares similarity, then ranks or selects. Links his own guide on pairing System One and System Two models in a custom harness (academy.dair.ai/resources/jev-decisions-in-a-pi-sdk-harness).
 
@@ -4708,6 +4716,9 @@
 ## Full Chronological List
 
 ### Sep 2026
+
+- **2026-09-25** | [Akshay](https://x.com/akshay_pachaar/status/2103483160382386234) | agent-design, research, dev-practices
+  Mechanism explainer for the Contrastive Language Model (CLM) out of NVIDIA and Stanford, the System One architecture elvis flagged on 2026-09-24 as the second entrant behind Jev (contrastive-lm.notion.site, open-source including code). Where Jev generates a typed decision token by token, CLM treats the decision as retrieval: a frozen Qwen3-8B plus a trainable state head embeds the situation, a separate action head embeds each candidate into the same space, InfoNCE contrastive training (the CLIP / dense-retrieval mechanism) pulls correct state-action pairs together, and inference is cosine similarity plus a softmax over the supplied candidates. The speed claim rests on that separation -- action vectors are embedded once and cached, so a repeated choice over the same tool set costs one embedding pass and a set of dot products rather than repeated generation; CLM-8B is reported to match Jev on computer-use, gaming and tool-calling evals at up to 9x lower latency, with the gap widening as candidate sets grow. Akshay states the limits plainly: CLM cannot invent an action outside the supplied list, its probabilities are relative to that list, and the strongest verifier results need task-specific fine-tuning. Quotes his own Sep 18 'Jev Clearly Explained' article, which is not yet in this collection.
 
 - **2026-09-24** | [elvis](https://x.com/omarsar0/status/2103139055013646646) | agent-design, research
   elvis flags a second entrant in the 'System One model' category behind Jev: Jacky Kwok's Contrastive Language Model (CLM), quoted here announcing CLM-8B as internet-scale pre-trained and up to 9x faster inference than Jev at comparable quality, and reportedly a better verifier on long-horizon tasks. The useful part is the mechanism contrast: Jev is trained with Reinforcement Learning for Calibrated Decisions (RLCD) and takes a situation plus predefined questions, returning typed decisions with probabilities; CLM embeds the situation and candidate actions, compares similarity, then ranks or selects. Links his own guide on pairing System One and System Two models in a custom harness (academy.dair.ai/resources/jev-decisions-in-a-pi-sdk-harness).
