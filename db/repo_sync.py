@@ -43,6 +43,12 @@ PUSH_SPEC: tuple[str, ...] = (
     "CURATION_REVIEW.md",
     "requirements.txt",
     ".gitignore",
+    # Dated decision records — why a structural change was made, kept separate
+    # from CLAUDE.md because reasoning compresses away once it becomes a rule.
+    # Directory glob on purpose: a new record must propagate without anyone
+    # editing this list, which is the whole reason PUSH_SPEC stopped being a
+    # hand-maintained set of filenames.
+    "decisions/**",
     # --- generated artifacts ---------------------------------------------
     "posts_final_v3.json",
     "ai_links_collection_v3.html",
