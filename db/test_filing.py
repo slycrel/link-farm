@@ -248,5 +248,79 @@ class Centering(unittest.TestCase):
                            "centering must widen the margin raw cosine reports")
 
 
+class StabilityHarness(unittest.TestCase):
+    """The label-free eval. Ground truth doesn't exist on this corpus — of 577
+    homes, 139 are forced and 380 of the rest were sub-0.01 coin flips — so the
+    classifier is validated by asking whether a decision survives resampling
+    the concept membership it depended on, not by scoring it against homes that
+    are themselves noise.
+    """
+
+    def _two_clusters(self, probe, jitter=0.01):
+        a = _spread(0, jitter, 5, seed=1)
+        b = _spread(4, jitter, 5, seed=2)
+        posts = {i + 1: v for i, v in enumerate(a + b)}
+        posts[99] = probe
+        edges = [(i + 1, 1) for i in range(5)] + [(i + 6, 2) for i in range(5)]
+        edges += [(99, 1), (99, 2)]
+        return _make_db(posts, {1: ("alpha", "active"), 2: ("beta", "active")}, edges)
+
+    def test_stability_is_deterministic(self):
+        """A threshold derived from a number that moves each run isn't a
+        calibration."""
+        db = self._two_clusters(np.eye(8, dtype=np.float32)[0] + 0.05)
+        a = F.stability(db_path=db, resamples=10)
+        b = F.stability(db_path=db, resamples=10)
+        self.assertEqual(a, b)
+
+    def test_single_candidate_is_trivially_stable(self):
+        a = _spread(0, 0.01, 4, seed=1)
+        posts = {i + 1: v for i, v in enumerate(a)}
+        posts[99] = np.eye(8, dtype=np.float32)[0]
+        edges = [(i + 1, 1) for i in range(4)] + [(99, 1)]
+        db = _make_db(posts, {1: ("alpha", "active")}, edges)
+        self.assertEqual(F.stability(db_path=db, resamples=5)[99], 1.0)
+
+    def test_clear_winner_more_stable_than_ambiguous(self):
+        """The property the whole margin design rests on.
+
+        The ambiguous fixture needs *overlapping* clusters, not merely a probe
+        placed between two tight ones: with tight clusters the midpoint still
+        lands on the same side under every resample, which is correct behaviour
+        and precisely why it isn't a test of instability.
+        """
+        clear = F.stability(
+            db_path=self._two_clusters(np.eye(8, dtype=np.float32)[0]),
+            resamples=20)[99]
+        mid = (np.eye(8, dtype=np.float32)[0] + np.eye(8, dtype=np.float32)[4]) / 2
+        ambiguous = F.stability(
+            db_path=self._two_clusters(mid, jitter=0.8), resamples=20)[99]
+        self.assertEqual(clear, 1.0)
+        self.assertLess(ambiguous, clear,
+                        "overlapping clusters must not yield a stable home")
+
+    def test_calibrate_respects_the_target(self):
+        db = self._two_clusters(np.eye(8, dtype=np.float32)[0] + 0.05)
+        r = F.calibrate(db_path=db, target_stability=0.8, resamples=10)
+        self.assertIn("curve", r)
+        self.assertEqual(r["current_margin"], F.ABSTAIN_MARGIN)
+        if r["recommended_margin"] is not None:
+            self.assertGreaterEqual(r["stability_at_recommended"], 0.8)
+
+    def test_calibrate_reports_no_threshold_when_target_unreachable(self):
+        """Honest failure: if the geometry can't support the confidence asked
+        for, say so rather than returning the least-bad number."""
+        mid = (np.eye(8, dtype=np.float32)[0] + np.eye(8, dtype=np.float32)[4]) / 2
+        db = self._two_clusters(mid)
+        r = F.calibrate(db_path=db, target_stability=1.01, resamples=10)
+        self.assertIsNone(r["recommended_margin"])
+
+    def test_scorer_bootstrap_only_perturbs_membership(self):
+        """Without an rng the scorer must be exact — bootstrap is opt-in."""
+        db = self._two_clusters(np.eye(8, dtype=np.float32)[0] + 0.05)
+        sc = F._Scorer(db)
+        self.assertEqual(sc.score(99), sc.score(99))
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

@@ -195,39 +195,68 @@ def _candidate_ids(post_id: int, edges, names) -> list[int]:
     return conceptual if conceptual else cids
 
 
+class _Scorer:
+    """Loaded corpus state plus the one scoring routine everything shares.
+
+    `score(pid)` is the real decision. `score(pid, rng=...)` resamples each
+    candidate concept's membership with replacement before averaging, which is
+    what `stability()` uses — a bootstrap over *who is in the concept*, since
+    that is the quantity a filing decision is actually sensitive to.
+    """
+
+    def __init__(self, db_path: Path = DEFAULT_DB):
+        (self.vecs, self.names, self.edges,
+         self.members, self.current, self.pins) = _load(db_path)
+
+    def candidates(self, pid: int) -> list[int]:
+        return _candidate_ids(pid, self.edges, self.names)
+
+    def score(self, pid: int, rng=None) -> list[tuple[float, int]]:
+        out: list[tuple[float, int]] = []
+        for cid in self.candidates(pid):
+            # Leave-one-out: a post must not vote for its own home.
+            peers = [q for q in self.members.get(cid, [])
+                     if q != pid and q in self.vecs]
+            if not peers:
+                continue
+            if rng is not None:
+                peers = list(rng.choice(peers, size=len(peers), replace=True))
+            centroid = _unit(np.mean([self.vecs[q] for q in peers], axis=0))
+            out.append((float(self.vecs[pid] @ centroid), cid))
+        out.sort(reverse=True)
+        return out
+
+
 def classify(db_path: Path = DEFAULT_DB,
              post_ids: Optional[Iterable[int]] = None,
              abstain_margin: float = ABSTAIN_MARGIN,
              abstain_min_top: float = ABSTAIN_MIN_TOP,
-             respect_pins: bool = True) -> list[Decision]:
-    """Score every post against its bounded candidate set; abstain when thin."""
-    cvecs, names, edges, members, current, pins = _load(db_path)
-    targets = list(post_ids) if post_ids is not None else list(edges)
+             respect_pins: bool = True,
+             _scorer: "Optional[_Scorer]" = None) -> list[Decision]:
+    """Score every post against its bounded candidate set; abstain when thin.
+
+    `_scorer` lets a caller reuse loaded corpus state across many calls (the
+    calibration sweep does this); it is otherwise an implementation detail.
+    """
+    sc = _scorer if _scorer is not None else _Scorer(db_path)
+    targets = list(post_ids) if post_ids is not None else list(sc.edges)
 
     out: list[Decision] = []
     for pid in targets:
-        d = Decision(post_id=pid, current=current.get(pid))
-        if respect_pins and pid in pins:
+        d = Decision(post_id=pid, current=sc.current.get(pid))
+        if respect_pins and pid in sc.pins:
             d.pinned = True
             d.abstained = True
             d.reason = "hand-pinned primary; never recomputed"
             out.append(d)
             continue
-        if pid not in cvecs:
+        if pid not in sc.vecs:
             d.abstained = True
             d.reason = "no embedding"
             out.append(d)
             continue
 
-        scored: list[tuple[float, int]] = []
-        for cid in _candidate_ids(pid, edges, names):
-            # Leave-one-out: a post must not vote for its own home.
-            peers = [q for q in members.get(cid, []) if q != pid and q in cvecs]
-            if not peers:
-                continue
-            centroid = _unit(np.mean([cvecs[q] for q in peers], axis=0))
-            scored.append((float(cvecs[pid] @ centroid), cid))
-        scored.sort(reverse=True)
+        scored = sc.score(pid)
         d.candidates = scored
 
         if not scored:
@@ -274,6 +303,119 @@ def report(db_path: Path = DEFAULT_DB, **kw) -> dict:
     }
 
 
+# --- stability: the label-free eval ----------------------------------------
+# The obvious eval — score the classifier against the existing primary homes —
+# is invalid on this corpus and it is worth being explicit about why. Of 577
+# homes, 139 are single-candidate (forced, so they carry no information about
+# discrimination) and 380 of the remaining 442 were decided on a sub-0.01 raw
+# margin. That leaves ~62 homes that represent a defensible decision. An
+# accuracy number measured against the rest would *rise* as the classifier got
+# better at reproducing coin flips.
+#
+# So: measure stability instead, which needs no labels. Resample each candidate
+# concept's membership with replacement and ask whether the same home wins. A
+# decision that does not survive resampling was never a decision — the centroid
+# it depended on was an artifact of which posts happened to be attached.
+#
+# Measured 2026-09-25, 15 resamples per post:
+#
+#     centered margin     n     home survives
+#         < 0.01         131        29.4%
+#       0.01 - 0.03      119        44.2%
+#       0.03 - 0.08       95        70.8%
+#         > 0.08          92        97.8%
+#
+# Monotonic, which is the result that justifies the whole margin-based design:
+# margin is measuring something real, and it can be checked without ground
+# truth. Note the 0.03-0.08 band is only ~71% stable, so the default threshold
+# buys "usually reproducible", not "settled".
+
+STABILITY_RESAMPLES = 15
+STABILITY_SEED = 20260925
+
+
+def stability(db_path: Path = DEFAULT_DB,
+              post_ids: Optional[Iterable[int]] = None,
+              resamples: int = STABILITY_RESAMPLES,
+              seed: int = STABILITY_SEED,
+              _scorer: "Optional[_Scorer]" = None) -> dict[int, float]:
+    """Fraction of bootstrap resamples that reproduce each post's chosen home.
+
+    Seeded, so a calibration run is reproducible — a threshold derived from a
+    number that moves every invocation is not a calibration.
+    """
+    sc = _scorer if _scorer is not None else _Scorer(db_path)
+    rng = np.random.default_rng(seed)
+    targets = list(post_ids) if post_ids is not None else list(sc.edges)
+
+    out: dict[int, float] = {}
+    for pid in targets:
+        if pid not in sc.vecs:
+            continue
+        base = sc.score(pid)
+        if not base:
+            continue
+        if len(base) == 1:
+            out[pid] = 1.0          # nothing to be unstable between
+            continue
+        hits = sum(1 for _ in range(resamples)
+                   if (b := sc.score(pid, rng=rng)) and b[0][1] == base[0][1])
+        out[pid] = hits / resamples
+    return out
+
+
+def calibrate(db_path: Path = DEFAULT_DB,
+              target_stability: float = 0.80,
+              bands: Sequence[float] = (0.0, 0.01, 0.02, 0.03, 0.05, 0.08, 0.12),
+              resamples: int = STABILITY_RESAMPLES,
+              seed: int = STABILITY_SEED) -> dict:
+    """Derive ABSTAIN_MARGIN from measured stability rather than from a sweep.
+
+    Returns the per-band stability curve and the lowest margin threshold whose
+    *retained* decisions clear `target_stability` on average. That is a real
+    calibration: pick the confidence you want, read off the threshold.
+    """
+    sc = _Scorer(db_path)
+    contested = [p for p in sc.edges if p in sc.vecs and len(sc.candidates(p)) > 1]
+    stab = stability(db_path, post_ids=contested, resamples=resamples,
+                     seed=seed, _scorer=sc)
+
+    margins: dict[int, float] = {}
+    for pid in contested:
+        s = sc.score(pid)
+        if len(s) > 1:
+            margins[pid] = s[0][0] - s[1][0]
+
+    curve = []
+    for lo, hi in zip(bands, list(bands[1:]) + [float("inf")]):
+        ids = [p for p, m in margins.items() if lo <= m < hi and p in stab]
+        if ids:
+            curve.append({"lo": lo, "hi": hi, "n": len(ids),
+                          "stability": float(np.mean([stab[p] for p in ids]))})
+
+    recommended = None
+    for t in bands:
+        kept = [p for p, m in margins.items() if m >= t and p in stab]
+        if kept and float(np.mean([stab[p] for p in kept])) >= target_stability:
+            recommended = t
+            break
+
+    kept = [p for p, m in margins.items()
+            if recommended is not None and m >= recommended and p in stab]
+    return {
+        "contested": len(contested),
+        "curve": curve,
+        "target_stability": target_stability,
+        "recommended_margin": recommended,
+        "current_margin": ABSTAIN_MARGIN,
+        "retained_at_recommended": len(kept),
+        "stability_at_recommended": (
+            float(np.mean([stab[p] for p in kept])) if kept else None),
+        "resamples": resamples,
+        "seed": seed,
+    }
+
+
 def apply(db_path: Path = DEFAULT_DB, dry_run: bool = True,
           with_lock: bool = True, **kw) -> dict:
     """Write only the confident decisions. Abstentions leave the graph alone.
@@ -312,16 +454,41 @@ class _nullctx:
 
 def main(argv: Optional[Sequence[str]] = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("command", choices=["report", "review", "apply"])
+    ap.add_argument("command", choices=["report", "review", "apply", "calibrate"])
     ap.add_argument("--db", type=Path, default=DEFAULT_DB)
     ap.add_argument("--limit", type=int, default=25)
     ap.add_argument("--margin", type=float, default=ABSTAIN_MARGIN)
     ap.add_argument("--confirm", action="store_true",
                     help="actually write (apply only)")
+    ap.add_argument("--target", type=float, default=0.80,
+                    help="target bootstrap stability (calibrate only)")
+    ap.add_argument("--resamples", type=int, default=STABILITY_RESAMPLES,
+                    help="bootstrap resamples per post (calibrate only)")
     a = ap.parse_args(argv)
 
     conn = sqlite3.connect(a.db)
     names = {r[0]: r[1] for r in conn.execute("SELECT id, name FROM concepts")}
+
+    if a.command == "calibrate":
+        r = calibrate(db_path=a.db, target_stability=a.target,
+                      resamples=a.resamples)
+        print(f"contested posts   : {r['contested']}")
+        print(f"resamples / seed  : {r['resamples']} / {r['seed']}")
+        print(f"\n{'margin band':>14} {'n':>5} {'home survives resampling':>26}")
+        for b in r["curve"]:
+            hi = "inf" if b["hi"] == float("inf") else f"{b['hi']:.2f}"
+            print(f"{b['lo']:>7.2f}-{hi:<6} {b['n']:>5} {b['stability']:>25.1%}")
+        print(f"\ntarget stability  : {r['target_stability']:.0%}")
+        if r["recommended_margin"] is None:
+            print("recommended margin: none of the swept thresholds reach the "
+                  "target — the geometry cannot support that confidence here")
+        else:
+            print(f"recommended margin: {r['recommended_margin']:.2f}  "
+                  f"(currently {r['current_margin']:.2f})")
+            print(f"  retains {r['retained_at_recommended']} contested decisions "
+                  f"at {r['stability_at_recommended']:.1%} mean stability")
+        conn.close()
+        return 0
 
     if a.command == "apply":
         r = apply(db_path=a.db, dry_run=not a.confirm, abstain_margin=a.margin)

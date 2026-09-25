@@ -33,8 +33,31 @@ Two corrections underneath it, and the second is easy to get wrong:
 ```bash
 python3 -m db.filing report              # distribution + what would change
 python3 -m db.filing review --limit 25   # the abstain queue, unfiled first
+python3 -m db.filing calibrate           # stability curve + recommended margin
 python3 -m db.filing apply --confirm     # write confident decisions only
 ```
+
+## Calibration — how the threshold is justified
+
+The obvious eval (score the classifier against the existing homes) is **invalid here**, and it matters that you know why before quoting any accuracy number. Of 577 homes, 139 are single-candidate (forced — no discrimination) and 380 of the remaining 442 were decided on a sub-0.01 raw margin. Only ~62 represent a defensible decision. An accuracy score against that set would *rise* as the classifier learned to reproduce coin flips.
+
+So `calibrate` measures **stability** instead, which needs no labels: resample each candidate concept's membership with replacement and ask whether the same home still wins. A decision that doesn't survive resampling was never a decision — it depended on which posts happened to be attached. Measured 2026-09-25, 15 resamples, seeded:
+
+| centered margin | n | home survives resampling |
+|---|---:|---:|
+| 0.00–0.01 | 131 | 32.3% |
+| 0.01–0.02 | 73 | 38.7% |
+| 0.02–0.03 | 46 | 54.2% |
+| 0.03–0.05 | 54 | 61.7% |
+| 0.05–0.08 | 41 | 78.9% |
+| 0.08–0.12 | 18 | 92.2% |
+| > 0.12 | 73 | 99.5% |
+
+Monotonic — which is the result that justifies the margin-based design at all. At an 80% target, `calibrate` recommends **0.03**, independently reproducing the default that was originally picked because it was where reassignments hit zero. Two different arguments, same number.
+
+**Quote the mean honestly.** 0.03 clears 80% *on average* (83.3% over 186 retained decisions), but the 0.03–0.05 band inside it is only 61.7%. The average is carried by the high-margin tail. If Jeremy wants every retained decision to be individually trustworthy, `--target 0.9` recommends 0.05 and retains 132 at 92.1%. Say which you're reporting.
+
+Re-run `calibrate` after any large merge, split or re-home — those reshape centroids, and a threshold derived from the old membership no longer describes the new one.
 
 Or in-process, which is what you usually want so you can read summaries alongside scores:
 
