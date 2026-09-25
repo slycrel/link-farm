@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-09-24T23:53:56Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-09-25T15:26:40Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-09-24** — [Tanner WJ](https://pit.tannerwj.com) — *now • Agent Design • v1 enriched*  
@@ -23,14 +23,14 @@
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **System One models — bounded decisions as a primitive** (26 posts, +11 this week)  
+- **System One models — bounded decisions as a primitive** (25 posts, +9 this week)  
   Small, cheap, fast models that make a bounded *decision* rather than generate text — Jev (trained with Reinforcement Learning for Calibrated Decisions), Contrastive Language Models, and the open-weights RLCD line. The shared claim is that a decision primitive sits between deterministic code and a full LLM call: too nuanced for a switch statement, not worth a slow expensive generation. Covers the model releases themselves, the cost/latency envelope that makes them viable, the skeptical framing (a rebranded 2016 classifier at 2026 capability), and — the part that matters for building — where such a selector sits in a harness: the host prepares a finite candidate list, the selector returns a typed id or abstains, the host re-validates. Selection is not permission. Seeded by hand 2026-09-24 because the semantic layer was scattering this conversation across five unrelated homes.
 
 [graduated 2026-09-24] reached 9 canonical edges (bar: 4) and is now an active concept: eligible to be a primary home and to feed centroid scoring.
     - 2026-09-24 — [elvis](https://x.com/omarsar0/status/2103139055013646646): elvis flags a second entrant in the 'System One model' category behind Jev: Jacky Kwok's Contrastive Language Model (CLM), quoted here annou…
-    - 2026-09-23 — [Avid](https://x.com/av1dlive/status/2102802621664985241): 3,500-word builder's guide to putting Jev in a coding harness as a bounded decision layer, with the working source: keel 0.2.0 (github.com/c…
+    - 2026-09-23 — [Viv](https://x.com/vtrivedy10/status/2102939757080617014): Viv of LangChain responds to Yash Patil's argument that traces are a company's most under-leveraged asset and that cheap System One models l…
 
-- **vector / hybrid databases as agent-memory infrastructure** (56 posts, +5 this week)  
+- **vector / hybrid databases as agent-memory infrastructure** (57 posts, +5 this week)  
   HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
     - 2026-09-23 — [Gill](https://x.com/gurtej__gill_/status/2102777314551410833): Endorsement of a Berkeley + DeepMind paper (arxiv.org/pdf/2609.19717) proposing an Abstract Token Curriculum (ATC) as an alternative to chai…
     - 2026-09-21 — [Annatar.md](https://x.com/annatarxbt/status/2101925393322091005): Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowl…
@@ -45,7 +45,7 @@
     - 2026-09-16 — [Aaron Levie](https://x.com/levie/status/2099976021311398230): Aaron Levie (Box) argues there is a large gap between raw model capability and the workflows enterprises actually want automated, and that t…
     - 2026-09-16 — [Raj Singh](https://x.com/mobileraj/status/2099959137438503252): Quote-boosts Gergely Orosz's diagram of OpenAI's agentic software factory and argues it should reduce anxiety about team velocity, since he …
 
-- **Claude Code setup & usage** (66 posts, +2 this week)  
+- **Claude Code setup & usage** (67 posts, +2 this week)  
   Claude Code setup guides, cheatsheets, starter packs, and day-to-day usage / steering practices.
     - 2026-09-23 — [ClaudeDevs](https://x.com/claudedevs/status/2102839691154427983): Anthropic's engineering writeup of a two-week sprint that made claude.ai and the desktop app ~3x faster (geometric mean over 13 p75 measurem…
     - 2026-09-16 — [Charlie Hills](https://x.com/charliejhills/status/2099879785363304546): A four-step method for imposing a graph on an overloaded Claude Code folder (charliehills.substack.com/p/graph-engineering-claude-code): pro…
