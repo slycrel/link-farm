@@ -178,7 +178,21 @@ fresh = con.execute("SELECT id, name FROM concepts WHERE description LIKE '%[aut
 
 Read a few member posts of each, then use `db.concepts.rename_concept()` to give it a name that names the *idea*, not the loudest author (author and handle tokens are already excluded from the naming vocabulary, but auto-names are still crude). `archive_concept(id)` retires a cluster that isn't a real theme; `merge_concepts()` folds a duplicate into an existing home. Both are reversible.
 
-**While you're there, check whether the fresh cluster is lexically diffuse** — members that share a *purpose* but not a *vocabulary*. Averaging those yields a centroid near the corpus mean, which matches everything, and matches ≥0.82 become evidence, so the concept feeds on its own diffuseness and becomes a magnet. Concept #65 absorbed 26 unrelated evidence edges and 18 primaries within two runs this way. The fix is to put `NO_CENTROID_SCORING_MARKER` (`[no-centroid-scoring]`) in the description: the concept keeps its edges and stays fully browseable, but nothing is ever matched *into* it by cosine. Rule of thumb — **if a concept exists only because a reader could see it, mark it.** Note the interaction with the nursery: a provisional concept that graduates while still lexically diffuse becomes a magnet the moment it earns a centroid.
+**Orphan clusters are exempt from the marker default and you don't need to mark them** — they're derived from the embedding geometry and cohesion-guarded, so their centroids are trustworthy. Since 2026-09-25 the `[no-centroid-scoring]` marker is applied **by default** on the two *reader-seeded* paths instead: `create_concept()` and `record_latent_findings()`, both opt-out via `centroid_scoring=True`. So a sync run no longer has to remember to mark anything.
+
+**What a sync run should still do is watch for a magnet that already exists.** A concept whose canonical-edge count vastly exceeds its primary-home count has been over-recruiting, and the failure is self-defeating rather than merely noisy: #74 absorbed 318 unrelated evidence edges in 48 hours and drifted so far off-subject that a squarely on-topic post scored *below* the 0.82 promote floor against it (0.8036, rank 6 of 55) while scoring 0.8397 against its own original seeds. By the time a magnet is visibly too big it is already rejecting the posts it was created for. Detector:
+
+```sql
+SELECT c.id, c.name,
+       SUM(pc.role IN ('evidence','origin')) AS canonical,
+       SUM(pc.is_primary)                    AS homes
+  FROM concepts c JOIN post_concepts pc ON pc.concept_id = c.id
+ WHERE c.status='active'
+   AND COALESCE(c.description,'') NOT LIKE '%[no-centroid-scoring]%'
+ GROUP BY c.id HAVING canonical > 40 AND canonical > homes * 10;
+```
+
+**Report a hit; do not remediate it from an unattended run.** The fix (demote the over-attached edges `evidence → weak`, never dismiss, then mark the concept) changes what concepts *mean* and is a human decision — same reasoning as the never-call-`dismiss_observation()` constraint below.
 
 Each step is idempotent; running the pipeline twice is a no-op the second time. Errors in one step don't abort the others — the result dict has `errors` listing what went wrong.
 

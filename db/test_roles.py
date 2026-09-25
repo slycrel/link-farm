@@ -614,5 +614,87 @@ class ReviveGuards(unittest.TestCase):
                          "observations on archived concepts must not be revived")
 
 
+class CentroidScoringDefault(unittest.TestCase):
+    """Reader-seeded concepts must not recruit by cosine unless asked.
+
+    Two incidents produced this default: #65 (2026-08-26) and #74 (2026-09-25).
+    Both were hand-seeded from a coherent *purpose* whose members shared no
+    vocabulary; both averaged into a centroid near the corpus mean; both then
+    grew without bound because matches >= AUTO_PROMOTE_MIN_COSINE become
+    evidence, which feeds the centroid further. #74 absorbed 318 unrelated
+    evidence edges in 48 hours and drifted so far off-subject that a squarely
+    on-topic post scored *below* the promote floor against it (0.8036) while
+    scoring 0.8397 against its own original seeds.
+    """
+
+    def test_create_concept_marks_by_default(self):
+        db = _make_db()
+        cid = C.create_concept("hand-seeded thing", "a purpose, not a vocabulary",
+                               db_path=db, with_lock=False)
+        desc = sqlite3.connect(db).execute(
+            "SELECT description FROM concepts WHERE id=?", (cid,)).fetchone()[0]
+        self.assertIn(C.NO_CENTROID_SCORING_MARKER, desc)
+        self.assertIn("a purpose, not a vocabulary", desc,
+                      "the caller's own description must survive marking")
+
+    def test_create_concept_marks_when_description_empty(self):
+        db = _make_db()
+        cid = C.create_concept("bare", db_path=db, with_lock=False)
+        desc = sqlite3.connect(db).execute(
+            "SELECT description FROM concepts WHERE id=?", (cid,)).fetchone()[0]
+        self.assertTrue(desc.startswith(C.NO_CENTROID_SCORING_MARKER),
+                        "an empty description must not yield leading blank lines")
+
+    def test_create_concept_opt_in_is_unmarked(self):
+        db = _make_db()
+        cid = C.create_concept("lexically tight", "shares vocabulary",
+                               centroid_scoring=True, db_path=db, with_lock=False)
+        desc = sqlite3.connect(db).execute(
+            "SELECT description FROM concepts WHERE id=?", (cid,)).fetchone()[0]
+        self.assertNotIn(C.NO_CENTROID_SCORING_MARKER, desc)
+
+    def test_marker_not_duplicated_when_caller_supplies_it(self):
+        """A caller stamping its own richer rationale must not be double-marked."""
+        db = _make_db()
+        own = f"{C.NO_CENTROID_SCORING_MARKER} applied by hand, here is why..."
+        cid = C.create_concept("already marked", own, db_path=db, with_lock=False)
+        desc = sqlite3.connect(db).execute(
+            "SELECT description FROM concepts WHERE id=?", (cid,)).fetchone()[0]
+        self.assertEqual(desc.count(C.NO_CENTROID_SCORING_MARKER), 1)
+        self.assertNotIn(C._MARKER_DEFAULT_NOTE, desc)
+
+    def test_marked_concept_is_excluded_from_semantic_scoring(self):
+        """The marker must actually stop recruitment — the whole point."""
+        db = _make_db()
+        cid = C.create_concept("magnet risk", "purpose only", db_path=db, with_lock=False)
+        conn = sqlite3.connect(db)
+        # Give it enough canonical edges to otherwise be scoreable.
+        for pid in (1, 2, 3):
+            conn.execute("INSERT INTO posts (id, summary) VALUES (?,'s')", (pid,))
+            conn.execute("""INSERT INTO post_concepts (post_id, concept_id, role, is_primary)
+                            VALUES (?,?,'evidence',0)""", (pid, cid))
+        conn.commit(); conn.close()
+        res = C.discover_semantic_neighbors(db_path=db, with_lock=False)
+        self.assertEqual(res.get("concepts_considered", 0), 0,
+                         "a marked concept must never be scored against")
+
+    def test_orphan_clustering_is_not_marked(self):
+        """Cluster concepts come *from* the geometry and stay scoreable."""
+        import inspect
+        src = inspect.getsource(C.discover_orphan_clusters)
+        self.assertNotIn("_apply_centroid_scoring_default", src,
+                         "orphan clusters are cohesion-guarded and must keep "
+                         "their centroids; marking them would freeze the only "
+                         "pass that grows vocabulary from theme")
+
+    def test_latent_findings_default_to_marked(self):
+        import inspect
+        src = inspect.getsource(C.record_latent_findings)
+        self.assertIn("_apply_centroid_scoring_default", src)
+        self.assertIs(
+            inspect.signature(C.record_latent_findings)
+            .parameters["centroid_scoring"].default, False)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

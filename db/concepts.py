@@ -154,19 +154,39 @@ def _now() -> str:
 def create_concept(name: str, description: str = "",
                    source: str = CONCEPT_SOURCE_CURATED,
                    status: str = CONCEPT_ACTIVE,
+                   centroid_scoring: bool = False,
                    db_path: Path = DEFAULT_DB,
                    with_lock: bool = True) -> int:
-    """Create a new concept. Returns the new concept id.
+    """Create a new concept by hand. Returns the new concept id.
 
     Pass `status=CONCEPT_PROVISIONAL` for a nursery concept: it can hold edges
     and is browseable, but cannot be a primary home and does not feed centroid
     scoring until it graduates. Prefer provisional for anything you're naming
     speculatively — it is the low-risk way to add vocabulary, because a
     provisional concept cannot distort discovery or steal homes.
+
+    `centroid_scoring` defaults to **False**, which stamps
+    NO_CENTROID_SCORING_MARKER onto the description: the concept holds edges and
+    is fully browseable, but nothing is ever matched *into* it by cosine. This
+    is the default because a hand-seeded concept is by definition one a *reader*
+    could see, and twice now (#65 on 2026-08-26, #74 on 2026-09-25) such a
+    concept has averaged into a centroid near the corpus mean and grown without
+    bound — #74 absorbed 318 unrelated evidence edges in 48 hours and drifted so
+    far that it no longer matched its own subject.
+
+    Note this makes the *nursery* tier and the *marker* orthogonal, and they
+    compose well: `status=CONCEPT_PROVISIONAL` keeps a concept inert until it
+    earns 4 canonical edges, while the marker keeps it from recruiting by cosine
+    after it graduates — which is precisely the gap #74 fell through.
+
+    Set `centroid_scoring=True` only for a category you have reason to believe
+    is lexically tight (members share vocabulary, not merely purpose), and
+    prefer to measure cohesion before assuming it.
     """
     if status not in (CONCEPT_ACTIVE, CONCEPT_PROVISIONAL,
                       CONCEPT_ARCHIVED, CONCEPT_MERGED):
         raise ValueError(f"unknown concept status: {status!r}")
+    description = _apply_centroid_scoring_default(description, centroid_scoring)
     with _maybe_lock(with_lock), _connect(db_path) as conn:
         cur = conn.execute("""
             INSERT INTO concepts (name, description, source, status, created_at, updated_at)
@@ -572,7 +592,53 @@ def auto_curate(*, db_path: Path = DEFAULT_DB, with_lock: bool = True,
 # should carry this marker. Membership is then curated deliberately (by hand or
 # by the latent pass), which is the honest way to maintain a category that
 # embeddings cannot represent.
+#
+# 2026-09-25: that rule of thumb is now the DEFAULT, not a reminder. #74
+# "System One models" repeated the #65 failure one month later — hand-seeded
+# 2026-09-24 with 9 Jev posts, graduated the same day, and inside 48h raw-cosine
+# matching had attached 328 evidence edges of which only 10 concerned Jev. The
+# drift was severe enough to be self-defeating: a squarely on-topic CLM
+# explainer scored 0.8036 against the polluted centroid (below the 0.82 floor,
+# rank 6 of 55) versus 0.8397 against the original nine seeds. The concept ate
+# enough unrelated material to stop recognising its own subject.
+#
+# Two incidents, one shape: a *reader-seeded* concept whose members share a
+# purpose but not a vocabulary. So reader-seeded concepts now carry the marker
+# unless the caller explicitly opts in to centroid scoring:
+#
+#   - create_concept()          — the hand/curation path. Default: marked.
+#   - record_latent_findings()  — the blinded reader pass. Default: marked.
+#
+# Deliberately NOT defaulted: discover_orphan_clusters(). Those concepts are
+# derived *from* the embedding geometry and are cohesion-guarded
+# (ORPHAN_CLUSTER_MIN_COHESION), so they are vocabulary-coherent by
+# construction — exactly the case where a centroid is trustworthy.
+#
+# Opt back in with centroid_scoring=True when a hand-made concept really is
+# lexically tight and you want it to recruit. Prefer measuring first.
 NO_CENTROID_SCORING_MARKER = "[no-centroid-scoring]"
+
+# Appended after the marker when it was applied by default rather than by an
+# explicit decision, so an auditor can tell the two apart.
+_MARKER_DEFAULT_NOTE = (
+    "Applied by default for a reader-seeded concept (see NO_CENTROID_SCORING_MARKER "
+    "in db/concepts.py). Attach members deliberately; nothing is matched in by cosine. "
+    "Pass centroid_scoring=True at creation if this category is lexically tight "
+    "enough to recruit its own members safely."
+)
+
+
+def _apply_centroid_scoring_default(description: str, centroid_scoring: bool) -> str:
+    """Stamp the no-centroid-scoring marker onto a reader-seeded concept.
+
+    No-op when the caller opted in to centroid scoring, or when the description
+    already carries the marker (so callers that stamp their own richer rationale
+    are not double-marked).
+    """
+    if centroid_scoring or NO_CENTROID_SCORING_MARKER in (description or ""):
+        return description
+    prefix = f"{description.rstrip()}\n\n" if (description or "").strip() else ""
+    return f"{prefix}{NO_CENTROID_SCORING_MARKER} {_MARKER_DEFAULT_NOTE}"
 
 # Manual pins: a post_concepts row whose notes contain this marker is a
 # human-locked primary — assign_primaries() will not recompute that post.
@@ -2149,6 +2215,7 @@ def record_latent_findings(run_id: int,
                            model: Optional[str] = None,
                            auto_create_min_posts: int = 3,
                            attach_to_existing: bool = True,
+                           centroid_scoring: bool = False,
                            with_lock: bool = True) -> dict:
     """Write the threads a latent reader proposed back into the graph.
 
@@ -2162,6 +2229,13 @@ def record_latent_findings(run_id: int,
     A finding with `existing_concept_id` attaches evidence to that concept. One
     without creates a new concept, provided it cites at least
     `auto_create_min_posts` posts — a "thread" of two is usually a coincidence.
+
+    Concepts created here carry NO_CENTROID_SCORING_MARKER by default
+    (`centroid_scoring=False`). A latent thread is found precisely because it
+    cuts across what the embeddings already group, so its members tend to share
+    a purpose rather than a vocabulary — the exact profile that produced the #65
+    and #74 magnets. The concept keeps every edge and stays browseable; it just
+    never recruits by cosine. Attaching to an *existing* concept is unaffected.
 
     Every edge lands as SECONDARY (is_primary=0); `assign_primaries()` decides
     homes afterwards, same contract as auto_curate and orphan clustering. All
@@ -2201,6 +2275,13 @@ def record_latent_findings(run_id: int,
                 desc += (f"\n\n[latent] Proposed by a blinded latent pass "
                          f"(run {run_id}) from {len(post_ids)} posts read without "
                          f"their existing topic or concept tags.")
+                # A latent concept is the purest case of "exists only because a
+                # reader could see it" — the pass is defined by finding threads
+                # that cut *across* what the embedding geometry already groups.
+                # So it is exactly the shape that averages into a diffuse,
+                # everything-matching centroid. Marked by default; pass
+                # centroid_scoring=True to opt a run back in.
+                desc = _apply_centroid_scoring_default(desc, centroid_scoring)
                 cur = conn.execute("""
                     INSERT INTO concepts (name, description, source, status, created_at, updated_at)
                     VALUES (?, ?, ?, 'active', ?, ?)

@@ -226,7 +226,34 @@ Regression tests: **`db/test_roles.py`** (15 tests). It exists because every one
 
 - **The recall band had zero width.** `SEMANTIC_CENTROID_THRESHOLD` (propose at) had been raised to *equal* `AUTO_PROMOTE_MIN_COSINE` (auto-file at) = 0.82, so nothing could ever land between them and no pass could surface an association it wasn't already confident about. Now 0.75 vs 0.82. 0.75 is chosen because this corpus's *pairwise* cosine distribution is mean 0.61 / p99 0.73 — so 0.75 clears the 99th percentile of ordinary similarity. Below ~0.73 that stops being true.
 - **An absolute threshold is the wrong instrument for the weak band.** Uncapped, 0.75 proposed **8,825 observations in one run** — ~26% of every possible (post, concept) pair. "Almost everything is weakly related to almost everything" is true and useless. `SEMANTIC_MAX_WEAK_PER_POST = 3` makes a weak edge mean *"one of this post's closest concepts"*. **The cap must be a per-post TOTAL, not per-run** — `already_attached` excludes what a post already has, so a per-run cap just hands out the next-best 3 every time and converges on the same carpet slowly (observed 2024 → 1910 → 1444 before the fix). The evidence band stays uncapped.
-- **A hand-created concept from a lexically diffuse cluster becomes a magnet.** #65 was created with 7 chosen members and absorbed 26 unrelated evidence edges and 18 primaries within two runs, because averaging members that share a *purpose* but not a *vocabulary* yields a centroid near the corpus mean, which matches everything — and matches ≥0.82 become evidence, so it feeds on its own diffuseness. Fix: `NO_CENTROID_SCORING_MARKER` (`[no-centroid-scoring]`) in the description. The concept keeps its edges and stays fully browseable; nothing is ever matched *into* it by cosine. **If a concept exists only because a reader could see it, mark it.**
+- **A hand-created concept from a lexically diffuse cluster becomes a magnet.** #65 was created with 7 chosen members and absorbed 26 unrelated evidence edges and 18 primaries within two runs, because averaging members that share a *purpose* but not a *vocabulary* yields a centroid near the corpus mean, which matches everything — and matches ≥0.82 become evidence, so it feeds on its own diffuseness. Fix: `NO_CENTROID_SCORING_MARKER` (`[no-centroid-scoring]`) in the description. The concept keeps its edges and stays fully browseable; nothing is ever matched *into* it by cosine. **If a concept exists only because a reader could see it, mark it.** — **as of 2026-09-25 this is the default and no longer something to remember; see below.**
+
+**The marker is now opt-out, not opt-in (2026-09-25).** #74 repeated #65 one month later and worse, which settled the question. `create_concept()` (the hand path) and `record_latent_findings()` (the blinded reader pass) both stamp the marker unless the caller passes `centroid_scoring=True`. `discover_orphan_clusters()` is deliberately **not** defaulted — those concepts are derived *from* the embedding geometry and are cohesion-guarded (`ORPHAN_CLUSTER_MIN_COHESION`), so they are vocabulary-coherent by construction and their centroids are trustworthy; marking them would freeze the only pass that grows vocabulary from theme. Regression coverage is `CentroidScoringDefault` in `db/test_roles.py` (7 tests; 3 verified failing against the old default before the change). Helper is `_apply_centroid_scoring_default()`, which is a no-op when the description already carries the marker, so a caller writing its own richer rationale isn't double-stamped.
+
+**The #74 incident, 2026-09-25 — the sharpest version of this failure yet, because it became self-defeating.** #74 *System One models — bounded decisions as a primitive* was hand-seeded 2026-09-24 23:28 with 9 Jev posts, precisely because the semantic layer was scattering that conversation across five unrelated homes. It graduated the same day and within 48 hours held **328 evidence edges (93 on 09-24, 244 on 09-25), of which only 10 concerned Jev / CLM / RLCD.** The rest reached back to 2025-01-04: agent memory, agent factories, eval pipelines, harness recipes. The diagnostic that matters:
+
+| a squarely on-topic CLM explainer scored against | cosine | outcome |
+|---|---:|---|
+| the original 9 hand-seeded members | **0.8397** | clears the 0.82 floor |
+| #74's centroid after absorption | **0.8036** | below floor, rank **6 of 55** |
+
+**A magnet doesn't just over-recruit — it eventually stops recognising its own subject.** That asymmetry is the reason to default the marker rather than rely on spotting diffuseness by eye: by the time the concept is visibly too big, it is already rejecting the posts it was created for. Note also that neither the nursery tier nor graduation caught this; `status`/`is_primary` gating and the marker are **orthogonal**, and #74 fell through the gap between them (graduated on 9 real edges, *then* became a magnet). Remediation was a demote-not-dismiss rollback: 318 edges `evidence → weak` (recorded, reversible via table `_rollback_74_20260925`, no-discard policy intact — last dismissal is still 2026-08-26), marker applied, and the CLM post attached by hand as `source='curated'`. Verification that it worked: the next pipeline run scored 45 concepts instead of 46 and proposed **+0** observations, down from +244 that same day. #74 is now 11 evidence edges, all 11 homed, Sep 16 → Sep 25.
+
+**Detector, if this shape recurs.** A concept whose evidence count vastly exceeds its primary-home count, and whose members' date range far exceeds the span of the conversation it was created for:
+
+```sql
+SELECT c.id, c.name,
+       SUM(pc.role IN ('evidence','origin'))       AS canonical,
+       SUM(pc.is_primary)                          AS homes,
+       MIN(p.date) || ' -> ' || MAX(p.date)        AS span
+  FROM concepts c
+  JOIN post_concepts pc ON pc.concept_id = c.id
+  JOIN posts p          ON p.id = pc.post_id
+ WHERE c.status = 'active'
+   AND COALESCE(c.description,'') NOT LIKE '%[no-centroid-scoring]%'
+ GROUP BY c.id HAVING canonical > 40 AND canonical > homes * 10
+ ORDER BY canonical DESC;
+```
 
 **Known pre-existing issue: concept centroids are barely discriminative.** 185 of 990 centroid pairs sit above 0.99 cosine — several large concepts have effectively converged on the same direction. This predates the role work (141 of 378 pairs were already >0.99 on 2026-08-24, i.e. 37% vs 18.7% now) and is the raw-cosine problem the orphan-clustering note describes: on this corpus everything is "AI stuff", so un-centered centroid similarity is dominated by that shared direction.
 
