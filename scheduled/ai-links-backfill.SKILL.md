@@ -3,15 +3,31 @@ name: ai-links-backfill
 description: Weekday background re-enrichment of partial/failed AI Links posts at 10:30 AM, after the 9 AM sync settles. Also auto-recovers url-less posts (backfills the URL from Outlook + re-keys to the correct status ID). Chips at the recoverable-incompleteness backlog so the latent-discovery gate can open.
 ---
 
-> **Versioned snapshot.** The *live* task runs from the Cowork app store at
-> `~/Documents/Claude/Scheduled/ai-links-backfill/SKILL.md` (not this file).
-> This copy exists so the automation trigger is reproducible on another machine
-> or the CLI — see `SETUP.md`. Keep the two in sync. Semantic-stack deps
-> (fastembed/numpy) are auto-ensured by the pipeline via `db/ensure_deps.py`.
+> **This file exists in two places and they must stay identical.** The live
+> task runs from the Cowork app store at
+> `~/Documents/Claude/Scheduled/ai-links-backfill/SKILL.md`; the versioned
+> snapshot lives in the repo at `scheduled/ai-links-backfill.SKILL.md` so the
+> automation trigger is reproducible on another machine or the CLI (see
+> `SETUP.md`). This header is deliberately written to be true in both
+> locations — keeping them in sync means pasting one over the other verbatim,
+> and wording that names "this file" as one copy becomes self-contradictory the
+> moment it is pasted into the other. A sandbox session can update the snapshot
+> but cannot write the live copy, so changes are always two steps.
+>
+> Semantic-stack deps (fastembed/numpy) are auto-ensured by the pipeline via
+> `db/ensure_deps.py`.
+
+> **This task is currently DISABLED and dormant.** The backfill campaign
+> finished on 2026-08-26 — the enrichment queue has been empty ever since, so
+> there is nothing for it to do and the 9 AM sync picks up any stray
+> `partial`/`failed` post via its own light-day backlog. Kept as a tool, not a
+> cadence. Wake it up (re-enable the existing task rather than writing a new
+> one) only if `pending_enrichment_ids(statuses=('partial','failed'))` rebuilds
+> past a couple dozen, or `gate_ratio()` climbs back above 0.05.
 
 Weekly background re-enrichment for the AI Links collection (step 8 of `CURATION_DESIGN.md`).
 
-This task runs unattended on weekday mornings at 10:30 local time — about 90 minutes after the 9 AM `ai-links-sync` task. The buffer is intentional: the sync acquires the writer lock and may take 5–15 minutes when it has new emails to enrich. By 10:30 it's reliably done, so this task isn't racing it for Chrome time.
+When enabled, this task runs unattended at 10:30 local time on the schedule its cron carries — currently `30 10 * * 1` (Mondays only), **not** the weekday cadence earlier vintages of this file described. That weekday cadence was the drain-the-backlog setting and is no longer accurate; don't recreate it from an old copy of this text. The 90-minute buffer after the 9 AM `ai-links-sync` task is intentional whatever the day: the sync acquires the writer lock and may take 5–15 minutes when it has new emails to enrich, so by 10:30 it's reliably done and this task isn't racing it for Chrome time.
 
 Process a small fixed batch of posts in `partial`, `failed`, or `unattempted` status — drives down the recoverable-incompleteness ratio so the latent-discovery gate (`(partial + failed) / (total − dead) < 0.05`) can eventually open. Different from the interactive `ai-links-catchup` skill — no chat-style back-and-forth, no asks for confirmation. Pick the batch, do the work, report.
 

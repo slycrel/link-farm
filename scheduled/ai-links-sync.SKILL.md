@@ -3,12 +3,24 @@ name: ai-links-sync
 description: Pull-first daily AI Links sync from Outlook → SQLite via unified db/enrich.py helpers, structured thread capture, status-enum tracking, full post-enrichment pipeline (incl. orphan clustering, provisional growth + primaries), then push to GitHub.
 ---
 
-> **Versioned snapshot.** The *live* task runs from the Cowork app store at
-> `~/Documents/Claude/Scheduled/ai-links-sync/SKILL.md` (not this file). This
-> copy exists so the automation trigger is reproducible on another machine or
-> the CLI — see `SETUP.md`. **Keep the two in sync when you change either;**
-> they drifted badly once (the live copy sat on a June vintage carrying a stale
-> intake filter that suppressed `adjacent` / `solo-operator` tagging for weeks).
+> **This file exists in two places and they must stay identical.** The live
+> task runs from the Cowork app store at
+> `~/Documents/Claude/Scheduled/ai-links-sync/SKILL.md`; the versioned snapshot
+> lives in the repo at `scheduled/ai-links-sync.SKILL.md` so the automation
+> trigger is reproducible on another machine or the CLI (see `SETUP.md`).
+>
+> **This header is deliberately written to be true in both locations**, because
+> keeping them in sync means pasting one over the other verbatim — and an
+> earlier version that announced *which* copy it was became self-contradictory
+> the moment it was pasted into the other one. Don't reintroduce wording that
+> names "this file" as one copy or the other.
+>
+> A sandbox session can update the repo snapshot but **cannot write to the live
+> copy**, so changing this task is always two steps: edit the snapshot, then
+> paste it over the live task by hand. They drifted badly once (the live copy
+> sat on a June vintage carrying a stale intake filter that suppressed
+> `adjacent` / `solo-operator` tagging for weeks).
+>
 > Semantic-stack deps (fastembed/numpy) are auto-ensured by the pipeline via
 > `db/ensure_deps.py`, so no manual install step is needed here.
 
@@ -166,7 +178,7 @@ This single call does, in pipeline order:
 7. **Assign primaries** (step 3.6) — derives each post's single primary home (exactly one per post) by cosine against each candidate concept's leave-one-out centroid. Only `active` concepts and only **canonical** (`evidence`/`origin`) edges can be a home. Split-review counts *primaries*, not total edges.
 8. **Rebuild** — regenerates `posts_final_v3.json`, `ai_links_collection_v3.html`, `ai_links_collection_v3.md`.
 
-**Edge roles are load-bearing — don't let generous attachment corrupt the graph.** `CANONICAL_ROLES = ('evidence', 'origin')` vote on what a concept *means*; `weak`, `counter-example` and `tangential` are recorded associations that must not. That distinction is enforced in four separate places (centroids, semantic scoring, primary assignment, orphan eligibility) and each is a *silent* failure if it regresses — `db/test_roles.py` (15 tests) exists for exactly this reason. If you touch role handling, run it.
+**Edge roles are load-bearing — don't let generous attachment corrupt the graph.** `CANONICAL_ROLES = ('evidence', 'origin')` vote on what a concept *means*; `weak`, `counter-example` and `tangential` are recorded associations that must not. That distinction is enforced in four separate places (centroids, semantic scoring, primary assignment, orphan eligibility) and each is a *silent* failure if it regresses — `db/test_roles.py` (33 tests as of 2026-09-25) exists for exactly this reason. If you touch role handling, run it.
 
 **If orphan clustering created concepts, rename them before finishing.** Unattended runs auto-name from crude TF-IDF and mark the description `[auto-named]`; this task has a model in the loop, so do better. Find and fix them:
 
