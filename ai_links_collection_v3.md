@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-09-28T15:18:22Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-09-28T15:33:04Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-09-26** — [Mr. Buzzoni](https://x.com/polydao/status/2103689373774483815) — *now • Claude Code • 309K views • v1 enriched*  
@@ -23,24 +23,15 @@
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **System One models — bounded decisions as a primitive** (11 posts, +11 this week)  
-  Small, cheap, fast models that make a bounded *decision* rather than generate text — Jev (trained with Reinforcement Learning for Calibrated Decisions), Contrastive Language Models, and the open-weights RLCD line. The shared claim is that a decision primitive sits between deterministic code and a full LLM call: too nuanced for a switch statement, not worth a slow expensive generation. Covers the model releases themselves, the cost/latency envelope that makes them viable, the skeptical framing (a rebranded 2016 classifier at 2026 capability), and — the part that matters for building — where such a selector sits in a harness: the host prepares a finite candidate list, the selector returns a typed id or abstains, the host re-validates. Selection is not permission. Seeded by hand 2026-09-24 because the semantic layer was scattering this conversation across five unrelated homes.
-
-[graduated 2026-09-24] reached 9 canonical edges (bar: 4) and is now an active concept: eligible to be a primary home and to feed centroid scoring.
-
-[no-centroid-scoring] applied 2026-09-25. This concept was seeded by hand on 2026-09-24 and graduated the same day; within 48h raw-cosine matching had attached 328 evidence edges, of which only 10 actually concerned Jev / CLM / RLCD. The absorbed material (agent memory, agent factories, eval pipelines, harness recipes) pulled the centroid so far off-subject that a squarely on-topic CLM explainer scored 0.8036 against it -- below the 0.82 floor and rank 6 -- while scoring 0.8397 against the original nine seeds. Classic lexically-diffuse magnet (cf. #65): members share a purpose, not a vocabulary. The 318 over-attached edges were demoted evidence->weak (not dismissed; see _rollback_74_20260925 for the exact reversible set). Attach to this concept by hand.
-    - 2026-09-25 — [Akshay](https://x.com/akshay_pachaar/status/2103483160382386234): Mechanism explainer for the Contrastive Language Model (CLM) out of NVIDIA and Stanford, the System One architecture elvis flagged on 2026-0…
-    - 2026-09-24 — [elvis](https://x.com/omarsar0/status/2103139055013646646): elvis flags a second entrant in the 'System One model' category behind Jev: Jacky Kwok's Contrastive Language Model (CLM), quoted here annou…
-
-- **vector / hybrid databases as agent-memory infrastructure** (58 posts, +6 this week)  
-  HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
-    - 2026-09-26 — [Mike Taylor](https://x.com/hammer_mt/status/2103579428072865841): Mike Taylor flagging Kieran Klaassen's 'How to use jev #1: As an embedder' as the most novel Jev-based idea he's seen — repurposing a decisi…
-    - 2026-09-23 — [Gill](https://x.com/gurtej__gill_/status/2102777314551410833): Endorsement of a Berkeley + DeepMind paper (arxiv.org/pdf/2609.19717) proposing an Abstract Token Curriculum (ATC) as an alternative to chai…
-
-- **jev / decision / returns** (6 posts, +6 this week)  
-  [auto-named] Discovered by orphan clustering on 2026-09-28 from 6 posts with no prior concept (cohesion 0.66). Rename or archive if this isn't a real theme.
+- **applied decision-model routing — gating agents with Jev** (19 posts, +18 this week)  
+  Discovered by orphan clustering on 2026-09-28 (6 posts, cohesion 0.66); renamed in-session. The *applied* side of System One / decision models: putting a non-generative decision model in front of an agent as a gate, router, verifier or judge, plus the libraries and framework integrations that make that practical (AnyJev, DSPy, LangGraph, Claude Code hooks). Deliberately distinct from #74 'System One models — bounded decisions as a primitive', which holds the concept itself and was frozen out of centroid scoring after the 2026-09-25 magnet rollback; because #74 can no longer recruit by cosine, the live Jev conversation could not reach it and formed this cluster instead. On 2026-09-28 #74's 11 canonical edges were demoted to weak so it became a secondary-only grouping tag, releasing its members to re-home here or elsewhere. NOTE: do not write the centroid-scoring opt-out marker as a literal string in this description — the eligibility check is a plain substring match over the whole description, so merely mentioning it silently disables semantic scoring for this concept (hit for real on 2026-09-28).
     - 2026-09-26 — [Yarchi](https://x.com/undefinedki/status/2103577751924207831): A concrete gating setup: put a decision model in front of the agent so ~90% of requests never reach the frontier model, reportedly cutting t…
     - 2026-09-26 — [alphaXiv](https://x.com/askalphaxiv/status/2103368968014848400): Paper 'JEV-as-a-Judge: Accept When Confident, Escalate When Unsure' (alphaxiv.org/abs/2609.26550) proposes using a cheap decision model as t…
+
+- **vector / hybrid databases as agent-memory infrastructure** (57 posts, +5 this week)  
+  HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
+    - 2026-09-23 — [Gill](https://x.com/gurtej__gill_/status/2102777314551410833): Endorsement of a Berkeley + DeepMind paper (arxiv.org/pdf/2609.19717) proposing an Abstract Token Curriculum (ATC) as an alternative to chai…
+    - 2026-09-21 — [Annatar.md](https://x.com/annatarxbt/status/2101925393322091005): Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowl…
 
 - **vibecode-to-production via agent skills** (51 posts, +5 this week)  
   Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
@@ -51,6 +42,11 @@
   Claude Code setup guides, cheatsheets, starter packs, and day-to-day usage / steering practices.
     - 2026-09-26 — [Vox](https://x.com/voxyz_ai/status/2103586663393853636): Turns Thariq's effort findings into a concrete two-subagent Claude Code workflow. The four-step loop for new features: have Claude ask quest…
     - 2026-09-26 — [darkzodchi](https://x.com/zodchiii/status/2103457649526206529): Hype-packaged endorsement ('beats any paid agent course I've seen') of an hour-long talk by an Anthropic engineer on Opus 5.5 agent engineer…
+
+- **persistent always-on agents — bot mode & agent desktops** (46 posts, +4 this week)  
+  Agents that outlive a chat session: persistent bot profiles with their own job and memory, remote/self-hosted execution that survives closing the laptop, and the desktop workspaces around them (Hermes/Nous, Grok bot mode, OpenClaw). Renamed from auto-named cluster on 2026-08-21.
+    - 2026-09-16 — [Yarchi](https://x.com/undefinedki/status/2100206342942187620): Describes Google's Stellar Colosseum, a multi-agent setup published for unsolved math problems and already built into Antigravity, Google's …
+    - 2026-09-16 — [Teknium](https://x.com/teknium/status/2099996435324518533): Teknium's first blog post covers running roughly 1,393 Hermes Agent subagents over 19 hours to refactor about 400,000 lines out of Hermes Ag…
 
 
 ### Revisit from last month

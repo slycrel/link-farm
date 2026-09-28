@@ -2,16 +2,25 @@
 
 This folder contains Jeremy's curated collection of AI-related links, sourced from emails he sends himself (X/Twitter posts, articles, tools) and organized with rich metadata.
 
-## ⏳ Open work queue (resume here — as of 2026-09-25)
+## ⏳ Open work queue (resume here — as of 2026-09-28)
 
-**The enrichment queue is EMPTY and has been since 2026-08-26.** Every post is `ok` (830) or `dead` (73) — **zero `partial` / `failed` / `unattempted` / `legacy-ok`**, so `ai-links-backfill` no-ops until new mail arrives. Items 1, 1a and 2 below are closed and kept only for their detectors.
+**The enrichment queue is EMPTY and has been since 2026-08-26.** Every post is `ok` (854) or `dead` (73) — **zero `partial` / `failed` / `unattempted` / `legacy-ok`**, so `ai-links-backfill` no-ops until new mail arrives. Items 1, 1a and 2 below are closed and kept only for their detectors.
 
 **What is actually open is structural, not data quality.** Two items, both deliberately deferred rather than forgotten:
 
 - **A. Eleven concepts trip the magnet detector** (see the Collection Stats section for the list and the detector SQL). They have canonical edge counts 11.8–89× their primary-home counts, and the seven long-documented ones share 82–94% of their members — substantially the same posts under several names. The `[no-centroid-scoring]` default added 2026-09-25 stops *new* magnets forming; it does nothing for these. **The home layer is unaffected** — primaries are still a clean partition with disjoint sets — so this is a secondary-edge problem, not a filing problem, which is why it can wait. The untried lever is capping evidence attachment per post (`SEMANTIC_MAX_WEAK_PER_POST` caps weak edges; nothing caps evidence), and it needs a backfill decision for the ~5,500 existing evidence edges. Deferred to the next redesign (Jeremy, 2026-09-25).
 - **B. A gold label set for the filing classifier.** `db/filing.py` is calibrated label-free by bootstrap stability, which is honest but caps what it can learn. The trained head — the real CLM-shaped upgrade — needs labels, and today's primary homes cannot serve: 139 of 577 are forced single-candidate and 373 of the 435 contested (86%) were sub-0.01 coin flips, leaving ~62 usable. **Sample any gold set stratified across margin bands**, never randomly; a random sample is dominated by easy cases and would flatter any classifier. Explicitly on hold (Jeremy, 2026-09-25) pending real usage of the abstain queue.
 
-**Also outstanding, and the kind of thing that rots quietly:** the **live** `ai-links-sync` task in the Cowork app store (`~/Documents/Claude/Scheduled/<id>/SKILL.md`) was *not* updated on 2026-09-25 — only the repo snapshot at `scheduled/ai-links-sync.SKILL.md` was, because a sandbox session cannot write to the live copy. This is exactly the drift that let the live task sit on a stale June vintage for weeks in August. **Paste the snapshot over the live task by hand.** The changed section is the orphan-cluster/marker guidance and the new magnet detector.
+**Live `ai-links-sync` task: ✅ IN SYNC — verified 2026-09-28, and the verification is the point.** Earlier vintages of this section warned that the live task in the Cowork app store had *not* been updated on 2026-09-25. Jeremy had in fact updated it by hand (twice) that week; the warning was simply never cleared, and the 2026-09-28 sync run repeated it as fact. Diffed the live copy (which a scheduled run receives as its own task file) against `scheduled/ai-links-sync.SKILL.md`: **identical apart from a trailing newline** — 27,761 vs 27,762 bytes, one diff hunk, no content difference. Both carry the orphan-cluster/marker guidance and the magnet detector.
+
+**The lesson is about this file, not about the task.** A drift warning is a claim about the present, and unlike everything else here it is *not* detected by query — so it survives its own resolution and gets re-reported by whoever reads it next. Don't restate a drift warning without re-checking it. The check is cheap and a scheduled run can always do it, because the run is handed the live copy:
+
+```bash
+diff <(sed 's/[[:space:]]*$//' "$LIVE_TASK_FILE") \
+     <(sed 's/[[:space:]]*$//' scheduled/ai-links-sync.SKILL.md)
+```
+
+The underlying constraint is still real — a sandbox session cannot write to `~/Documents/Claude/Scheduled/<id>/SKILL.md`, so changing the task remains two steps (edit snapshot, paste over live by hand). But assume they match until a diff says otherwise.
 
 Everything below is *detected by query*, so nothing depends on remembering a list.
 
@@ -62,6 +71,7 @@ The remaining remediation follows this tail: `post_enrichment_pipeline()` → re
 `decisions/` holds dated write-ups of *why* a structural change was made — the measurements taken, the options rejected, and the limits of what was built. CLAUDE.md is the reference (what is true now); a decision record is the reasoning (how we got here), which otherwise compresses into a one-line rule and becomes uncheckable. Add one when a change alters what the graph *means* or encodes a new default; skip it for routine data work.
 
 - **`2026-09-25-filing-and-the-74-magnet.md`** — the #74 magnet and its rollback, why `[no-centroid-scoring]` became opt-out, and the abstain-aware filing classifier. Contains the finding that 86% of raw filing decisions were sub-0.01-margin coin flips, and why the existing primary homes cannot be used as an eval set.
+- **`2026-09-28-74-demoted-to-secondary-tag.md`** — the sequel: the marker meant the live Jev conversation could no longer reach #74, so it formed a second concept (#77) instead. Why #74 became a secondary-only grouping tag, the four options weighed, and the accidental self-exclusion bug caused by naming the marker in prose.
 
 ## What This Collection Is For
 
@@ -280,6 +290,21 @@ Regression tests: **`db/test_roles.py`** (33 tests as of 2026-09-25). It exists 
 | #74's centroid after absorption | **0.8036** | below floor, rank **6 of 55** |
 
 **A magnet doesn't just over-recruit — it eventually stops recognising its own subject.** That asymmetry is the reason to default the marker rather than rely on spotting diffuseness by eye: by the time the concept is visibly too big, it is already rejecting the posts it was created for. Note also that neither the nursery tier nor graduation caught this; `status`/`is_primary` gating and the marker are **orthogonal**, and #74 fell through the gap between them (graduated on 9 real edges, *then* became a magnet). Remediation was a demote-not-dismiss rollback: 318 edges `evidence → weak` (recorded, reversible via table `_rollback_74_20260925`, no-discard policy intact — last dismissal is still 2026-08-26), marker applied, and the CLM post attached by hand as `source='curated'`. Verification that it worked: the next pipeline run scored 45 concepts instead of 46 and proposed **+0** observations, down from +244 that same day. #74 is now 11 evidence edges, all 11 homed, Sep 16 → Sep 25.
+
+**Epilogue — the marker has a second-order cost, and #74 paid it (2026-09-28).** Freezing a concept out of cosine does not just stop it over-recruiting; it stops the *live conversation* reaching it at all. When 24 new posts arrived on 2026-09-28, ten of them squarely about Jev, **#74 took zero of them** — it cannot be matched into — and the thread instead formed a brand-new orphan cluster, #77. The corpus had two homes for one idea, and the one built for it by hand was the one nothing could find. Jeremy's call: **demote #74 to a secondary-only grouping tag** and let the theme re-seed its own home. All 11 canonical edges went `evidence → weak` with primaries cleared (reversible via `_rollback_74_20260928`; nothing dismissed, no-discard intact), leaving #74 at **0 canonical / 0 homes / 338 weak** — fully browseable, permanently not a home. Ten of the 11 released posts re-homed onto #77 within one pipeline pass at raw cosines of 0.82–0.91; the eleventh (a Qwen-RLCD model card, 0.7716) is honestly unhomed. #77 settled at **24 canonical / 19 homes** — a ~1.3:1 ratio, nowhere near the magnet trigger.
+
+**Generalized rule: the marker is a terminal state, not a pause.** A marked concept can only ever lose relevance, because the material that would refresh it accumulates elsewhere. So when you mark one, decide whether you are freezing an *archive* or crippling a *home* — and if it is a live thread, demote it to a secondary tag and let a scoreable concept form, rather than leaving a hand-made home that silently stops matching its own subject.
+
+**Trap, hit for real on 2026-09-28: never write the marker as a literal string in a description that isn't opting out.** Eligibility is a plain SQL substring match over the *whole* description (`COALESCE(c.description,'') NOT LIKE '%[no-centroid-scoring]%'`), so a concept that merely *mentions* the marker in prose — e.g. a rationale explaining that some *other* concept carries it — silently excludes itself from centroid scoring. #77's first description did exactly this, and the symptom is quiet and misleading: `discover_semantic_neighbors` reports a plausible `concepts_considered` (47 instead of 48) and `observations_created: 0`, while twelve posts sitting at 0.82–0.91 against that concept's centroid are never proposed, because the concept was dropped from `centroids` before scoring. Refer to it as "the centroid-scoring opt-out marker" in prose. Detector for a concept that mentions the marker but has canonical edges and looks like it should be growing:
+
+```sql
+SELECT c.id, c.name, SUM(pc.role IN ('evidence','origin')) canonical
+  FROM concepts c JOIN post_concepts pc ON pc.concept_id = c.id
+ WHERE c.status='active' AND c.description LIKE '%[no-centroid-scoring]%'
+ GROUP BY c.id HAVING canonical >= 2;
+```
+
+Anything this returns is *either* a deliberate opt-out (#65, #74) *or* an accidental self-exclusion — check which, because they look identical to every downstream pass.
 
 **Detector, if this shape recurs.** A concept whose evidence count vastly exceeds its primary-home count, and whose members' date range far exceeds the span of the conversation it was created for:
 

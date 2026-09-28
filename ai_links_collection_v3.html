@@ -489,7 +489,7 @@
 
 <script>
 const MORNING_VIEW = {
-  "generated_at": "2026-09-28T15:18:22Z",
+  "generated_at": "2026-09-28T15:33:04Z",
   "read_now": [
     {
       "id": 2103689373774483815,
@@ -578,73 +578,11 @@ const MORNING_VIEW = {
     "window_days": 14,
     "items": [
       {
-        "id": 74,
-        "name": "System One models — bounded decisions as a primitive",
-        "description": "Small, cheap, fast models that make a bounded *decision* rather than generate text — Jev (trained with Reinforcement Learning for Calibrated Decisions), Contrastive Language Models, and the open-weights RLCD line. The shared claim is that a decision primitive sits between deterministic code and a full LLM call: too nuanced for a switch statement, not worth a slow expensive generation. Covers the model releases themselves, the cost/latency envelope that makes them viable, the skeptical framing (a rebranded 2016 classifier at 2026 capability), and — the part that matters for building — where such a selector sits in a harness: the host prepares a finite candidate list, the selector returns a typed id or abstains, the host re-validates. Selection is not permission. Seeded by hand 2026-09-24 because the semantic layer was scattering this conversation across five unrelated homes.\n\n[graduated 2026-09-24] reached 9 canonical edges (bar: 4) and is now an active concept: eligible to be a primary home and to feed centroid scoring.\n\n[no-centroid-scoring] applied 2026-09-25. This concept was seeded by hand on 2026-09-24 and graduated the same day; within 48h raw-cosine matching had attached 328 evidence edges, of which only 10 actually concerned Jev / CLM / RLCD. The absorbed material (agent memory, agent factories, eval pipelines, harness recipes) pulled the centroid so far off-subject that a squarely on-topic CLM explainer scored 0.8036 against it -- below the 0.82 floor and rank 6 -- while scoring 0.8397 against the original nine seeds. Classic lexically-diffuse magnet (cf. #65): members share a purpose, not a vocabulary. The 318 over-attached edges were demoted evidence->weak (not dismissed; see _rollback_74_20260925 for the exact reversible set). Attach to this concept by hand.",
-        "count": 11,
-        "recent_count": 11,
-        "last_post_date": "2026-09-25",
-        "top_posts": [
-          {
-            "id": 2103483160382386234,
-            "date": "2026-09-25",
-            "author": "Akshay",
-            "url": "https://x.com/akshay_pachaar/status/2103483160382386234",
-            "summary": "Mechanism explainer for the Contrastive Language Model (CLM) out of NVIDIA and Stanford, the System One architecture elvis flagged on 2026-09-24 as the second e"
-          },
-          {
-            "id": 2103139055013646646,
-            "date": "2026-09-24",
-            "author": "elvis",
-            "url": "https://x.com/omarsar0/status/2103139055013646646",
-            "summary": "elvis flags a second entrant in the 'System One model' category behind Jev: Jacky Kwok's Contrastive Language Model (CLM), quoted here announcing CLM-8B as inte"
-          },
-          {
-            "id": 2102802621664985241,
-            "date": "2026-09-23",
-            "author": "Avid",
-            "url": "https://x.com/av1dlive/status/2102802621664985241",
-            "summary": "3,500-word builder's guide to putting Jev in a coding harness as a bounded decision layer, with the working source: keel 0.2.0 (github.com/codejunkie99/keel), a"
-          }
-        ]
-      },
-      {
-        "id": 7,
-        "name": "vector / hybrid databases as agent-memory infrastructure",
-        "description": "HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.",
-        "count": 58,
-        "recent_count": 6,
-        "last_post_date": "2026-09-26",
-        "top_posts": [
-          {
-            "id": 2103579428072865841,
-            "date": "2026-09-26",
-            "author": "Mike Taylor",
-            "url": "https://x.com/hammer_mt/status/2103579428072865841",
-            "summary": "Mike Taylor flagging Kieran Klaassen's 'How to use jev #1: As an embedder' as the most novel Jev-based idea he's seen — repurposing a decision model as an embed"
-          },
-          {
-            "id": 2102777314551410833,
-            "date": "2026-09-23",
-            "author": "Gill",
-            "url": "https://x.com/gurtej__gill_/status/2102777314551410833",
-            "summary": "Endorsement of a Berkeley + DeepMind paper (arxiv.org/pdf/2609.19717) proposing an Abstract Token Curriculum (ATC) as an alternative to chain-of-thought. Rather"
-          },
-          {
-            "id": 2101925393322091005,
-            "date": "2026-09-21",
-            "author": "Annatar.md",
-            "url": "https://x.com/annatarxbt/status/2101925393322091005",
-            "summary": "Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowledge graph), procedu"
-          }
-        ]
-      },
-      {
         "id": 77,
-        "name": "jev / decision / returns",
-        "description": "[auto-named] Discovered by orphan clustering on 2026-09-28 from 6 posts with no prior concept (cohesion 0.66). Rename or archive if this isn't a real theme.",
-        "count": 6,
-        "recent_count": 6,
+        "name": "applied decision-model routing — gating agents with Jev",
+        "description": "Discovered by orphan clustering on 2026-09-28 (6 posts, cohesion 0.66); renamed in-session. The *applied* side of System One / decision models: putting a non-generative decision model in front of an agent as a gate, router, verifier or judge, plus the libraries and framework integrations that make that practical (AnyJev, DSPy, LangGraph, Claude Code hooks). Deliberately distinct from #74 'System One models — bounded decisions as a primitive', which holds the concept itself and was frozen out of centroid scoring after the 2026-09-25 magnet rollback; because #74 can no longer recruit by cosine, the live Jev conversation could not reach it and formed this cluster instead. On 2026-09-28 #74's 11 canonical edges were demoted to weak so it became a secondary-only grouping tag, releasing its members to re-home here or elsewhere. NOTE: do not write the centroid-scoring opt-out marker as a literal string in this description — the eligibility check is a plain substring match over the whole description, so merely mentioning it silently disables semantic scoring for this concept (hit for real on 2026-09-28).",
+        "count": 19,
+        "recent_count": 18,
         "last_post_date": "2026-09-26",
         "top_posts": [
           {
@@ -667,6 +605,37 @@ const MORNING_VIEW = {
             "author": "LangChain",
             "url": "https://x.com/langchain/status/2103561339398730153",
             "summary": "LangChain announcing Jev/LangGraph integration, pointing at Sydney Runkle's article 'Building Prod with Jev and LangGraph'. Jev, released by TypeSafe AI, is a m"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "vector / hybrid databases as agent-memory infrastructure",
+        "description": "HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.",
+        "count": 57,
+        "recent_count": 5,
+        "last_post_date": "2026-09-23",
+        "top_posts": [
+          {
+            "id": 2102777314551410833,
+            "date": "2026-09-23",
+            "author": "Gill",
+            "url": "https://x.com/gurtej__gill_/status/2102777314551410833",
+            "summary": "Endorsement of a Berkeley + DeepMind paper (arxiv.org/pdf/2609.19717) proposing an Abstract Token Curriculum (ATC) as an alternative to chain-of-thought. Rather"
+          },
+          {
+            "id": 2101925393322091005,
+            "date": "2026-09-21",
+            "author": "Annatar.md",
+            "url": "https://x.com/annatarxbt/status/2101925393322091005",
+            "summary": "Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowledge graph), procedu"
+          },
+          {
+            "id": 2099952282217615827,
+            "date": "2026-09-16",
+            "author": "Yarchi",
+            "url": "https://x.com/undefinedki/status/2099952282217615827",
+            "summary": "Summarizes Airbnb's published method for mapping what a support assistant will face before launch, which they encoded as a reusable pipeline after redoing the w"
           }
         ]
       },
@@ -729,6 +698,37 @@ const MORNING_VIEW = {
             "author": "ClaudeDevs",
             "url": "https://x.com/claudedevs/status/2102839691154427983",
             "summary": "Anthropic's engineering writeup of a two-week sprint that made claude.ai and the desktop app ~3x faster (geometric mean over 13 p75 measurements; claude.ai fres"
+          }
+        ]
+      },
+      {
+        "id": 56,
+        "name": "persistent always-on agents — bot mode & agent desktops",
+        "description": "Agents that outlive a chat session: persistent bot profiles with their own job and memory, remote/self-hosted execution that survives closing the laptop, and the desktop workspaces around them (Hermes/Nous, Grok bot mode, OpenClaw). Renamed from auto-named cluster on 2026-08-21.",
+        "count": 46,
+        "recent_count": 4,
+        "last_post_date": "2026-09-16",
+        "top_posts": [
+          {
+            "id": 2100206342942187620,
+            "date": "2026-09-16",
+            "author": "Yarchi",
+            "url": "https://x.com/undefinedki/status/2100206342942187620",
+            "summary": "Describes Google's Stellar Colosseum, a multi-agent setup published for unsolved math problems and already built into Antigravity, Google's agent development to"
+          },
+          {
+            "id": 2099996435324518533,
+            "date": "2026-09-16",
+            "author": "Teknium",
+            "url": "https://x.com/teknium/status/2099996435324518533",
+            "summary": "Teknium's first blog post covers running roughly 1,393 Hermes Agent subagents over 19 hours to refactor about 400,000 lines out of Hermes Agent's million-line P"
+          },
+          {
+            "id": 2099941244063432720,
+            "date": "2026-09-16",
+            "author": "Zach Lloyd",
+            "url": "https://x.com/zachlloydtweets/status/2099941244063432720",
+            "summary": "X Article laying out crawl/walk/run steps for moving from local interactive agents to a software factory (a closed agentic loop running in the cloud). The 'craw"
           }
         ]
       }
