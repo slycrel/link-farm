@@ -1,5 +1,629 @@
 [
   {
+    "date": "2026-09-26",
+    "author": "Boris Cherny",
+    "handle": "@bcherny",
+    "subject": "Post by Boris Cherny on X",
+    "url": "https://x.com/bcherny/status/2103691327699550598",
+    "summary": "Boris Cherny endorsing Anthropic's new plugin submission portal — submit a plugin, track review, and see usage. ClaudeDevs' announcement notes plugins package MCP and skills and are becoming the way to build for Claude, with MCP usage across Claude products up 110x this year. Details at claude.com/blog/build-plugins-for-claude",
+    "topics": [
+      "claude-code",
+      "skills-mcp",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "327.6K",
+    "notes": "",
+    "enriched": true,
+    "content": "Can't wait to see what you build.\n\nIt's now easier to build plugins for Claude. We built a new portal to submit your plugin, track review, and see usage. Plugins package MCP and skills, and are becoming the way to build for Claude. MCP usage across Claude products is up 110x this year! https://claude.com/blog/build-plugins-for-claude\n\nBuild plugins for Claude",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-26",
+    "author": "Mr. Buzzoni",
+    "handle": "@polydao",
+    "subject": "Post by Mr. Buzzoni on X",
+    "url": "https://x.com/polydao/status/2103689373774483815",
+    "summary": "X Article on 'jev engineering' for Claude Code — routing the loop's constant small decisions away from the model that writes code, and into a cheap decision model via Claude Code's existing hooks. The concrete build: a 100ms safety gate, a stop hook that knows when work is really done, and a triage filter that only wakes Claude when there's something to fix, with full code and the resulting bill ($765 to $3 a month). The framing that makes it worth reading: a busy overnight loop asks ~600 yes/no questions over 4,000-token states, at ~4 cents each on Fable 5.1, so it spends more deciding than building. Background: TypeSafe AI shipped Jev on September 15 from Diogo Almeida (InstructGPT co-author), trained with RLCD, out of stealth on a $40M seed led by DCVC; it takes state plus typed questions and returns Choice (up to 255 options), Score (2-10 levels) or Noul (probability of yes) with the full distribution.",
+    "topics": [
+      "claude-code",
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "309K",
+    "notes": "",
+    "enriched": true,
+    "content": "Loop Engineering Meets Jev Engineering: How to Cut Your Claude Bill From $765 to $3 a Month\n\nJev engineering for Claude Code: a 100-millisecond safety gate, a stop hook that knows when the work is really done, and a triage filter that only wakes Claude when there's something to fix. Full code, real builds, the bill.\n\nLeave a Claude loop running overnight and read the transcript in the morning. Most turns open with a small question. Is this command safe. Which file next. Did that test output mean anything. Is the goal met, or should it keep going.\n\nEvery one of those questions goes to the same model that writes your code. On Fable 5.1, a yes-or-no over a 4,000-token state costs about 4 cents and takes seconds. A busy loop asks around 600 of them a night, so it ends up spending more on deciding than on building.\n\nOn September 15 TypeSafe AI shipped Jev, a model that only does the deciding. Moving those questions out of your loops and into Jev is what people have started calling jev engineering, and it plugs straight into the hooks Claude Code already has.\n\n1/ The Model That Only Answers Questions\nJev comes from Diogo Almeida, a co-author of InstructGPT, the work that taught GPT-3 to follow instructions and became the basis for ChatGPT. TypeSafe came out of stealth with a $40M seed led by DCVC.\n\n[ WHAT YOU SEND ] state as text or JSON, plus a set of typed questions\n[ WHAT COMES BACK ] Choice (up to 255 options), Score (2 to 10 levels) or Noul (probability of yes), each with the full distribution\n\nAfter co-inventing ChatGPT, I kept asking myself: why have superhuman chat models not led to AGI? I've spent the last 2 years in stealth building a new way to train models (RLCD), and a new type of frontier AI model that we are releasing today: Jev. 20-200x faster, 40-400x cheaper.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-26",
+    "author": "Dhravya Shah",
+    "handle": "@dhravyashah",
+    "subject": "Post by Dhravya Shah on X",
+    "url": "https://x.com/dhravyashah/status/2103668051468300701",
+    "summary": "Supermemory open-sourced its discontinued 'company brain' product — a multi-player agent harness — at github.com/supermemoryai/company-brain, one-click deployable to Cloudflare so you own the data. The X Article walks the architecture: built on the Cloudflare Agents SDK, with the interesting engineering in permissioning and proactiveness, and Dhravya's framing of the difference between dropping a model into Slack and building an actual AI teammate. Credit to @maheshthedev for the harness work.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "skills-mcp",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "500.8K",
+    "notes": "",
+    "enriched": true,
+    "content": "We're open sourcing the company brain. Here's how we designed the multi-player harness.\n\nIt's been just 2 weeks since we discontinued the company brain harness. We had to offboard tons of people to other products, but many of our customers, and others suggested us to open source our work on the company brain.\n\nSo, we have decided to open source it. You can use it here: https://github.com/supermemoryai/company-brain\n\nIt's just one click to deploy on cloudflare, and will take less than 5 minutes to setup. You'll own all the data.\n\nIn this blog, I wanted to talk through the architecture and some of the work we (mainly @maheshthedev, legend) did on the harness. It's honestly great engineering, built on top of Cloudflare Agents SDK, with many little cool things around permissioning, proactiveness, and more.\n\n[...] the difference between placing a model inside Slack and building an AI teammate!!\n\nBored you enough. Now, try it! Everything I mentioned is open sourced, so you can try it, change it, hack it, give us feedback, whatever works :) I also tried to make the onboarding super simple so it should literally just be one click deploy (the deploy to cloudflare button!)\n\nsupermemoryai/company-brain",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-26",
+    "author": "Xudong Han",
+    "handle": "@xudong07452910",
+    "subject": "Post by Xudong Han on X (read for co/cd)",
+    "url": "https://x.com/xudong07452910/status/2103650764912476432",
+    "summary": "Summary (translated from Chinese) of Anthropic's guide on preparing for AI-driven code modernization. The argument: modernization projects that used to take a full team years can now land in months or weeks with agents, but the bottleneck shifts to the organization — testing, review, approval and deployment can't keep pace with the rate of change. Anthropic's six-step framework says to define what 'done right' means first (certificates spelling out verification conditions for testing, performance, compatibility and security), then let agents act at scale, with review and deployment rules keyed to change risk, because agent-generated volume will exceed line-by-line human diff review. Source article: claude.com, 'How to prepare for AI-driven code modernization projects'.",
+    "topics": [
+      "management",
+      "dev-practices",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "16.5K",
+    "notes": "flag: read for co/cd",
+    "enriched": true,
+    "content": "[Translated from Chinese] Anthropic's frontline engineers shared an observation that's incredibly valuable for individuals and teams to learn from.\n\nPreviously, code modernization projects that required years of full-team commitment can now potentially be completed in months or even weeks with the help of Agents.\n\nBut once speed picks up, new bottlenecks start shifting toward the organization itself. The code changes too quickly, while testing, review, approval, and deployment processes can't keep pace.\n\nSo they've distilled it into a six-step framework. The core idea is actually quite simple—first clearly define what counts as \"doing it right,\" then let Agents take large-scale action.\n\nFor example, establish certificates in advance, spelling out verification conditions for testing, performance, compatibility, security, and more; then design review and deployment rules based on change risks. Because the volume of code generated by Agents will soon exceed humans' ability to review diffs line by line.\n\nI also agree with one of their practical approaches. The shorter AI compresses the code-changing step, the greater the importance of verification, understanding, and organizational coordination becomes.\n\nAI Coding has already transitioned from \"helping people write code\" to the stage of \"how to manage machines making large-scale code changes.\"\n\nFor many engineering teams, what truly needs a redesign might be the entire development process.\n\nHow to prepare for AI-driven code modernization projects — Claude by Anthropic",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-26",
+    "author": "Ryven",
+    "handle": "@imryven",
+    "subject": "Post by Ryven on X",
+    "url": "https://x.com/imryven/status/2103596797063242013",
+    "summary": "Argument against building agent workflows as a straight line when most steps don't actually depend on the previous one's output. The 90-second test: walk the workflow step by step and at each seam ask whether the step needs the last one's output — if yes it's a real edge, if no the wait was fake. What's left becomes fan out (one agent per independent piece, all at once), reduce (plain code, zero model tokens, flatten and dedupe), verify (a fresh agent with no memory of the work, whose only job is to try to kill it), and synthesize. His rule with no exceptions: worker and verifier always in separate contexts — most people build the fan-out and never notice the thing checking their work has been the same hand all along.",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "41.2K",
+    "notes": "",
+    "enriched": true,
+    "content": "I still don't understand why people are still building agents as a straight line.\n\nyou write \"do A, then B, then C.\" half those steps never needed to wait on the one before them. you just paid for the wait anyway, every single run.\n\none test tells you everything, ninety seconds, before you write a single line of orchestration code: walk your workflow step by step → ask one question at every seam → does this step actually need the last one's output. if yes → keep the order, it's a real edge. if no → cut it, that wait was fake and cost you nothing but time.\n\nnow split what's left into the pattern that actually scales:\nfan out → one agent per independent piece, all running at once\nreduce → plain code, zero model tokens, just flatten and dedupe\nverify → a fresh agent with no memory of the work, one job: try to kill it\nsynthesize → one final agent writes the answer from what survived\n\n[the] rule, no exceptions → worker and verifier, separate context, always.\n\nmost people build the fan-out, call it done, and never notice the thing checking their work has been the exact same hand the entire time.\n\nninety seconds to run the test. you never queue a fake wait again.\n\nArticle: Graph Engineering: My System Checked Its Own Work. It Was Lying About It. I didn't set out to learn graph engineering. I set out to stop babysitting an agent that forgot what it was doing every twenty minutes. One agent, one long conversation, one task at a time.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-26",
+    "author": "Vox",
+    "handle": "@voxyz_ai",
+    "subject": "Post by Vox on X",
+    "url": "https://x.com/voxyz_ai/status/2103586663393853636",
+    "summary": "Turns Thariq's effort findings into a concrete two-subagent Claude Code workflow. The four-step loop for new features: have Claude ask questions and fill gaps in the spec first; build on low effort (fast, easy to interrupt); review and keep changes on low; switch to high at the end to verify and test. Includes the copy-paste prompt that creates a 'builder' subagent (opus, effort low) and a 'verifier' subagent (opus, effort high) in ~/.claude/agents.",
+    "topics": [
+      "claude-code",
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "72.9K",
+    "notes": "",
+    "enriched": true,
+    "content": "Thariq from Anthropic's Claude Code team just published his tests on effort: turning effort up mostly buys more verification and edge-case testing. You can turn his approach into two subagents and have Claude Code follow it.\n\nFor new features, he works in four steps:\n→ Have Claude ask you questions first and fill in what the spec is missing\n→ Build it on low. It's fast, and you can step in anytime\n→ Look it over, and if it needs changes, stay on low\n→ Switch to high at the end to verify and test\n\nIf you want to try it, send this image and the prompt below to Claude Code:\n\n\"Set up the workflow in this image in my Claude Code: 1. Create two subagents in ~/.claude/agents: - builder: writes the code. model: opus, effort: low. It implements the spec I've approved and stops when it's done. - verifier: checks the work. model: opus, effort: high. It runs the feature first to see it work.\"\n\nWhat is effort really? When do you change it and why not just use max effort for everything? I dove deep into this problem, looking into evals and doing my own tests and I was quite surprised by the results. Article: Using Claude Code: Spending your effort.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-26",
+    "author": "0xSero",
+    "handle": "@0xsero",
+    "subject": "Post by 0xSero on X",
+    "url": "https://x.com/0xsero/status/2103581378654990726",
+    "summary": "0xSero on hitting usage limits with Codex and moving to local models — using GLM Flash for computer use and browser-use CUA. Wrapped around Cua's announcement of a stable Cua Driver release for Omarchy, a native synthetic cursor built into the OS at the Hyprland layer, developed with @dhh, @SpencerGBull and @vaxryy. Relevant to anyone weighing local model serving against metered frontier usage for agent workloads.",
+    "topics": [
+      "agent-design",
+      "industry",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "50.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "We're going to make local AI so incredible everything else looks like a waste of time.\n\nI can't believe I let codex run my life and now I can't even use it because anything I do drains me to 0 usage.\n\nNow I have been using GLM Flash for computer use and browser use CUA.\n\n1/ Today we're announcing the stable Cua Driver release for Omarchy - a new foundation for computer use, built into the OS from the ground up. Over the last month, we worked directly with @dhh, @SpencerGBull and @vaxryy to bring a native synthetic cursor to Omarchy's Hyprland.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-26",
+    "author": "Mike Taylor",
+    "handle": "@hammer_mt",
+    "subject": "Post by Mike Taylor on X",
+    "url": "https://x.com/hammer_mt/status/2103579428072865841",
+    "summary": "Mike Taylor flagging Kieran Klaassen's 'How to use jev #1: As an embedder' as the most novel Jev-based idea he's seen — repurposing a decision model as an embedding source rather than a router or gate. Worth following for the pattern, since most Jev material this week is gating and routing.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "162.8K",
+    "notes": "",
+    "enriched": true,
+    "content": "This is the most novel Jev-based idea I've heard so far\n\nHow to use jev #1: As an embedder",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-26",
+    "author": "Yarchi",
+    "handle": "@undefinedki",
+    "subject": "Post by Yarchi on X",
+    "url": "https://x.com/undefinedki/status/2103577751924207831",
+    "summary": "A concrete gating setup: put a decision model in front of the agent so ~90% of requests never reach the frontier model, reportedly cutting token spend by about 90% without a quality drop. Every request goes to Jev first with a state plus closed-set questions of three types — Noul (yes/no), Choice (one option from a list), and Score (a 2-to-10 scale) — answered in 70-500ms at $0.042 per million input tokens with free output. If Jev is confident the request needs no real work, it stops there; only the uncertain or genuine-work cases reach the model that writes. Quotes Gipp's fuller 'Jev Desk' build guide.",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "10K",
+    "notes": "",
+    "enriched": true,
+    "content": "I put Jev in front of my agent, and now it cuts about 90% of my token spend without any drop in quality. Here is the setup.\n\nMost of what an agent gets is a decision. Is this email worth answering, does this ticket need a human, etc. I was paying frontier prices for every one of them.\n\nSo I added a gate. Every request goes to Jev first. Jev does not write anything. You send it two things:\n> State: any text, like with any other model\n> Questions: not open ones, only ones with a known set of answers\n\nThere are three types of questions:\n> Noul: yes or no\n> Choice: one option from a list\n> Score: a scale from 2 to 10\n\nIt answers in 70 to 500 milliseconds, at $0.042 per million input tokens, and output is free.\n\nSo, how my setup works:\n1. A request comes in and goes to Jev, never straight to the main model\n2. Jev answers one question: does this need real work\n3. If it is confident the answer is no, it stops there, or if it is not sure, it goes to the frontier model. Only that model writes anything\n\nAbout 10% of requests make it through. The other 90% never touch the expensive model, and the ones that matter still get it. The saving comes from what you skip.\n\nArticle: Jev Desk: How to Build a 24/7 AI Agent That Decides for Free and Only Pays to Write (Full Guide). Every Jev post this week has the same line: up to 400x cheaper than an LLM. So I built a 24/7 desk on it and priced every lane before scaling it up.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-26",
+    "author": "Thariq",
+    "handle": "@trq212",
+    "subject": "Post by Thariq on X",
+    "url": "https://x.com/trq212/status/2103576349499855160",
+    "summary": "Thariq (Anthropic Claude Code team) published a deep dive on effort levels — what effort actually buys and when to change it, backed by eval runs and his own task tests. Core finding: higher effort mostly buys more verification, edge-case testing and independent judgment, so it pays off in hardware, code review and security work, while low/medium is better for ordinary building. Includes Terminal Bench 3.0 scores by effort for Fable 5.1 and Opus 5.5, and the analogy that effort is like telling someone how long they have for a task. Interactive diagrams at claude.dev/blog/spending-your-effort/",
+    "topics": [
+      "claude-code",
+      "dev-practices",
+      "prompting",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "1.4M",
+    "notes": "",
+    "enriched": true,
+    "content": "Using Claude Code: Spending your effort\n\nOne of the best parts of our newest Claude models is how they respond to effort without breaking the prompt cache in Claude Code, but I've received a lot of questions on this from users. What is effort really and when do you use which effort level? Why do we need effort at all?\n\nTo answer this, I decided to do a deep dive into the evals and do my own tests of effort across normal work.\n\nnote: you can see more interactive diagrams and explainers for this post on https://claude.dev/blog/spending-your-effort/\n\nAt a high level, I found that effort was a great way of changing how much verification and edgecase testing Claude did and how much of its own judgement it used.\n\nExtra effort gave better results in areas where verification and edgecase testing was more useful like hardware, code review, and security. But low and medium effort was perfect for getting things done in ordinary work.\n\n[On the analogy] If someone asked you to do a task straight, you might assume they just want you to do it and try very hard. If someone asked you to do the same task in 1 hour, you'd try to get them the best version that meets their task and then expect to iterate from there. Or, you might push back and say the task requires at least 3 hours and then work for 3 hours to deliver it. You should think of effort in the same way. Claude will always try and do your task reasonably, but higher effort will involve Claude taking more independent action for judgement and verification.\n\nEffort curves\nFable 5.1 and Opus 5.5's effort curves are our best yet, at each level if there is an uptick in benchmark scores and tokens consumed. Below is a graph of Terminal Bench 3.0 scores by effort, measured during my eval runs for this post.\n\nSpending your effort (interactive version)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-26",
+    "author": "LangChain",
+    "handle": "@langchain",
+    "subject": "Post by LangChain on X",
+    "url": "https://x.com/langchain/status/2103561339398730153",
+    "summary": "LangChain announcing Jev/LangGraph integration, pointing at Sydney Runkle's article 'Building Prod with Jev and LangGraph'. Jev, released by TypeSafe AI, is a model that doesn't generate text — it returns decisions code can act on directly, which TypeSafe frames as AI-powered control flow rather than AI-powered writing.",
+    "topics": [
+      "agent-design",
+      "skills-mcp",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "36.4K",
+    "notes": "",
+    "enriched": true,
+    "content": "Jev 🤝 LangGraph\n\nArticle: Building Prod with Jev and LangGraph. Last week, TypeSafe AI released Jev, a new kind of model. Unlike traditional LLMs, Jev doesn't generate text. It makes decisions your code can act on directly, for what TypeSafe calls AI-powered control flow.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-26",
+    "author": "qwinsi",
+    "handle": "@qwinsi0x",
+    "subject": "Post by qwinsi on X",
+    "url": "https://x.com/qwinsi0x/status/2103551860590116904",
+    "summary": "Engagement-farmed pitch for an AI backtesting product (join.horizon.trade affiliate link), built around Liang Wenfeng and the DeepSeek-affiliated hedge fund. The usable idea underneath the return claims: the quant research loop — form an idea, test it on history, kill it if it fails, repeat — used to cost millions and now costs near zero, and the author reproduced the Moskowitz/Ooi/Pedersen Time Series Momentum paper on six years of data in ten minutes of backtesting. Treat the performance figures (+56.6%/yr, +1,537% on Bitcoin) as marketing claims, not evidence.",
+    "topics": [
+      "questionable",
+      "adjacent",
+      "research"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "82.6K",
+    "notes": "",
+    "enriched": true,
+    "content": "The founder of the hedge fund behind DeepSeek built an AI machine that wrecks human traders. Now that same principle is available to anyone.\n\n+56.6% a year. $10 billion under management. Almost no people in the room. Liang Wenfeng did to trading what DeepSeek did to AI. Replaced the smartest people with a machine that doesn't sleep.\n\nThe edge was never brains. One cycle: idea, test it on history, kill it if it doesn't work, repeat. A thousand times a night, while you test one idea a week.\n\nThat cycle used to cost millions and only lived inside hedge funds. This year the price dropped to zero.\n\nI took Time Series Momentum, the paper by Moskowitz, Ooi, and Pedersen, one of the most-cited in quant trading. Just told AI to reproduce it on real data from the last 6 years. 10 minutes of backtesting. +1,537% on Bitcoin.\n\nThe same cycle Liang's hedge fund runs on now fits into a text box. Describe a strategy in one sentence, see if it survives: https://join.horizon.trade/qwinsiiii\n\nArticle: The entire hedge fund is six steps. AI just ate four of them. Strip away the marble lobby, the Bloomberg terminals, and the $650,000 salaries, and any hedge fund comes down to one thing it does better than you: it tests ideas.\n\nHorizon (affiliate funnel)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-26",
+    "author": "GREG ISENBERG",
+    "handle": "@gregisenberg",
+    "subject": "Post by GREG ISENBERG on X",
+    "url": "https://x.com/gregisenberg/status/2103547170997538982",
+    "summary": "A one-page guide to becoming a top 1% speaker, whether on a panel or anywhere else — communication craft rather than engineering, shared off a swyx post about how much high-value conference time gets wasted without thought. Useful for anyone doing conference panels, internal talks or demos.",
+    "topics": [
+      "adjacent",
+      "management"
+    ],
+    "audience": [
+      "me",
+      "team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "184.2K",
+    "notes": "",
+    "enriched": true,
+    "content": "How to become a top 1% speaker, in 1 page, whether you're on a panel or anywhere else\n\nmore conferences could implement this. so much high value time wasted without thought",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-26",
+    "author": "rvaniaaa",
+    "handle": "@rvaniaaaa",
+    "subject": "Post by rvaniaaa on X",
+    "url": "https://x.com/rvaniaaaa/status/2103539346829709453",
+    "summary": "Writeup of Nace AI's Drex, a small diffusion decision model trained with RLAF, taking #1 on the Decision Index at 51.73 against Jev's 51.67 and winning 23 of 40 benchmarks (official scores tbd). Priced at $0.04 per 1M input tokens with sub-second latency. The framing worth keeping: a model that only scores options returns no reasoning paragraph and no JSON to repair — you hand it a state and a list of options and get back a probability for each. Note the quoted announcement is marked a paid partnership and the post links nace.ai/drex, so treat the leaderboard claim as vendor-sourced.",
+    "topics": [
+      "questionable",
+      "research",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "2,508",
+    "notes": "",
+    "enriched": true,
+    "content": "Drex just beat Jev at the one thing Jev was supposed to be the best at.\n\nIt took #1 on the Decision Index, the actual leaderboard for models that decide instead of write. 51.73 against Jev's 51.67, winning 23 of 40 benchmarks. not a chat model pretending to be fast. a diffusion model built from the ground up to score options and nothing else.\n\nHere's what changes the moment a model stops trying to write. no paragraph of reasoning before the answer. no JSON to repair when it explains itself first. hand it a state and a list of options, it hands back a probability for each one. the decision is the entire product, not a byproduct of a sentence it didn't need to write.\n\nI watched it run Doom deathmatch and Armada back to back to see what that actually looks like under pressure, and the pattern never broke: same shape, same speed, whether the decision was which weapon to hold or which ship to send into a regroup.\n\nIf you've been writing essays to answer questions that only ever had two or three valid options, you've been paying language prices for something that was never language in the first place. it was just a number, wearing a sentence as a disguise.\n\ntry it yourself: http://nace.ai/drex\n\n[Paid partnership] Introducing Drex - a lightning-fast decision model built to rival Jev. #1 on the Decision Index. (official scores tbd) winning 23 out of 40 benchmarks. Architecture: Small Diffusion Model with RLAF. Price: $0.04 per 1M input tokens (cheaper than Jev). Latency: less than a second.\n\nDrex",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-26",
+    "author": "elvis",
+    "handle": "@omarsar0",
+    "subject": "Post by elvis on X",
+    "url": "https://x.com/omarsar0/status/2103529287676567888",
+    "summary": "elvis on why System One models matter for anyone building custom harnesses: DSPy 3.4.0 added native support for Jev and System One models with compatible signatures, plus a new ReAnchor optimizer for calibrating outputs with confidence. He reports success using Jev for guardrails, routing and verifiers, and sees further applications in structuring and optimizing skills, more efficient tool calling, dynamically generated harnesses (orchestrator + subagents) that use Jev-like models to structure information moving between workflow stages, and RLM + System One combinations. His own harness writeup: academy.dair.ai/resources/jev-decisions-in-a-pi-sdk-harness",
+    "topics": [
+      "agent-design",
+      "skills-mcp",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "12.2K",
+    "notes": "",
+    "enriched": true,
+    "content": "Pay attention to System One models if you are building custom harnesses and agentic workflows.\n\nGreat to see DSPy integrate Jev and now support System One models for calibrating agentic workflows. I'm amazed at how naturally System One models like Jev fit into these frameworks.\n\nI am using Jev to build my own custom harnesses like here: https://academy.dair.ai/resources/jev-decisions-in-a-pi-sdk-harness\n\nSo far, I've had great success with guardrails, routing, and verifiers. However, I am starting to see other interesting applications in other parts of the agent harness, like:\n\n> structuring skills and better optimizing them\n> more efficient tool calling for agents\n> dynamic workflows (i.e., dynamically generating harnesses with orchestrator + subagents patterns) that leverage Jev-like models for more optimally structuring outputs/information traveling between these workflows\n> enhance coordination between agents that benefit from smarter and faster decision-making capabilities\n> RLM + System One Models\n\nAnd the list goes on and on. Just a wonderful time to explore new ways to work with agents.\n\nDSPy 3.4.0 was just released! This release includes native support for Jev and System one models inside of DSPy! Use it with compatible signatures. This release also includes a brand new optimizer, ReAnchor, specifically for calibrating outputs with confidence.\n\nJev decisions in a PI SDK harness",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-26",
+    "author": "Rahul",
+    "handle": "@sairahul1",
+    "subject": "Post by Rahul on X",
+    "url": "https://x.com/sairahul1/status/2103494988029964591",
+    "summary": "Engagement-farmed repackaging of Anthropic's Opus 5.5 prompting guidance into a 12-tip list, funneling to the author's own 'Opus 5.5 Prompting Masterclass' article. The underlying claims track the official guidance: delete 'think step by step' (adds latency, not quality), 'show your reasoning' is now declined because it is already built in, medium effort matches Opus 5's high, rewrite CLAUDE.md for autonomy rather than supervision, task checklists get mistaken for finish lines, and a stated time budget makes it pace itself.",
+    "topics": [
+      "questionable",
+      "prompting",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "46K",
+    "notes": "",
+    "enriched": true,
+    "content": "ANTHROPIC JUST DROPPED A 12-TIP MANUAL FOR PROMPTING CLAUDE OPUS 5.5\n\nAnd almost everything you know about prompting Claude is now wrong.\n\nThe mistake everyone is making? Prompting Opus 5.5 like Opus 5. More instructions. More guardrails. More control. Opus 5.5 needs the opposite.\n\n→ \"think step by step\" - delete it, you're adding latency not quality\n→ \"show your reasoning\" - gets declined now, it's in your prompts already\n→ medium effort - matches Opus 5 at high, you're overpaying by default\n→ CLAUDE.md - rewrite it for autonomy, not supervision\n→ task checklist - it mistakes progress updates for finish lines\n→ time budget - two words and it paces itself to finish faster\n→ free reset - expiring in Settings right now and you don't know\n\nThree things that will surprise you:\n→ the effort level you're running is almost certainly wrong\n→ the prompts making it stop early are ones you wrote on purpose\n\nBookmark before your next session.\n\nArticle: Claude Opus 5.5 Prompting Masterclass. Opus 5.5 is the most powerful model Anthropic has ever shipped. Most people are using it exactly like they used Opus 5 (or even 4.8). That is the mistake. The prompts that worked before now slow it down.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-26",
+    "author": "DAIR.AI",
+    "handle": "@dair_ai",
+    "subject": "Post by DAIR.AI on X",
+    "url": "https://x.com/dair_ai/status/2103479392106352910",
+    "summary": "Microsoft paper (CASD) arguing that handing a coding agent your full set of agent logs and letting it write the analysis code beats running a search loop over small batches of trajectories. The agent computes statistics over the whole trajectory corpus, finds recurring failure modes, reads representative episodes, and writes the findings as rules in one prompt — needing no environment access and no validation data. Across ALFWorld, tau2-bench retail/telecom and SpreadsheetBench-Verified, one pass beats the unoptimized baseline by 16.6 points on average, against GEPA's 10.9 and SkillOpt's 5.3, at roughly $1.60 per optimized prompt (22x cheaper than validation-gated search). Paper: academy.dair.ai/papers/coding-agents-are-strong-prompt-optimizers-2609.26261",
+    "topics": [
+      "research",
+      "prompting",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "15.9K",
+    "notes": "",
+    "enriched": true,
+    "content": "Banger paper from Microsoft on prompt optimization. (bookmark it)\n\nThe claim that a coding agent reading your logs beats GEPA at prompt optimization.\n\nThe overall finding is that you want to give a coding agent your full set of agent logs and let it write the analysis code, instead of running a search loop over small batches of trajectories.\n\nCASD has an off-the-shelf coding agent compute statistics over the whole trajectory corpus, find recurring failure modes, read representative episodes and write the findings as rules in one prompt. It needs no environment access and no validation data.\n\nAcross ALFWorld, tau2-bench retail and telecom, and Spreadsheet Bench-Verified, one pass improves the unoptimized baseline by 16.6 points on average. GEPA improves it by 10.9 and SkillOpt by 5.3.\n\nEach optimized prompt costs about $1.60, more than 22x cheaper than validation-gated search.\n\nPaper: https://academy.dair.ai/papers/coding-agents-are-strong-prompt-optimizers-2609.26261\n\nCoding Agents Are Strong Prompt Optimizers",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-26",
+    "author": "Maxime Rivest",
+    "handle": "@maximerivest",
+    "subject": "Post by Maxime Rivest on X",
+    "url": "https://x.com/maximerivest/status/2103477572126605604",
+    "summary": "One-line argument for finetuning small specialized classifiers rather than routing every classification through a frontier model: if it takes 42 seconds to finetune a specialized classifier that is the best, fastest and cheapest option, there's no reason not to. Sits alongside the System One / decision-model thread — same premise that not every decision deserves language-model pricing.",
+    "topics": [
+      "research",
+      "dev-practices",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "56.9K",
+    "notes": "",
+    "enriched": true,
+    "content": "if it takes 42 seconds to finetune a specialized classifier that is: the best, fastest and cheapest, why not do it?",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-26",
+    "author": "geoff",
+    "handle": "@geoffreyhuntley",
+    "subject": "Post by geoff on X",
+    "url": "https://x.com/geoffreyhuntley/status/2103470149450022989",
+    "summary": "Geoffrey Huntley's argument that a 'software factory' is not an external system but a product pattern — the product builds the product, inception style, with any external system or dependency internalized into the product so it can build itself. His test: if you can't build the product in the product, from the product, you're missing the mark. Leans on the Factorio framing that a factory should build the factory. Relevant to how much agent tooling should live inside a codebase versus alongside it.",
+    "topics": [
+      "dev-practices",
+      "agent-design",
+      "management"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "19.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "As it stands now, here is my hottest take:\n\nA software factory is actually an applied automation practice in the actual product. It's not some external thing. It's a product pattern where the product builds the product inception style. Any external system or dependency should be internalized into the product to enable the product to build the product.\n\nIf you can't build the product in the product, from the product, then you are missing the mark.\n\nI don't know how to explain this more clearly at this stage. It's a bit mind-bending, but if you understand meta programming, macros and understand the Factorio reference that a factory should build the factory so it can build the factory. It might be a little bit easier to follow along....\n\n>Your product is the factory<",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-26",
+    "author": "darkzodchi",
+    "handle": "@zodchiii",
+    "subject": "Post by darkzodchi on X",
+    "url": "https://x.com/zodchiii/status/2103457649526206529",
+    "summary": "Hype-packaged endorsement ('beats any paid agent course I've seen') of an hour-long talk by an Anthropic engineer on Opus 5.5 agent engineering — how Anthropic structures work with agents so the agent doesn't lose context. Funnels to the author's own 'Claude Opus 5.5 Setup Guide', which claims Opus 5.5 shipped at $4 in / $20 out (40% cheaper than Opus 5) and that copying an old config over raises the bill because of how the effort setting and cache reads now price out.",
+    "topics": [
+      "questionable",
+      "claude-code",
+      "agent-design",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "56.1K",
+    "notes": "",
+    "enriched": true,
+    "content": "Anthropic engineer: \"You don't need better prompts. You need to master Opus 5.5 engineering: so your agent never forgets anything.\"\n\nIn 1 hour he explains what Anthropic does differently, how to build and structure work with agents.\n\nThis beats any paid agent course I've seen.\n\nWatch it, then save the exact Claude Code Opus 5.5 setup guide below.\n\nArticle: The Claude Opus 5.5 Setup Guide: How to Get Maximum Quality for Minimum Cost (Exact Config Inside). Opus 5.5 shipped yesterday at $4 in and $20 out, 40% cheaper than Opus 5. Copy your old config over and your bill goes up. Inside: why the old effort setting now costs more, the cache read that...",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-26",
+    "author": "Avi Chawla",
+    "handle": "@_avichawla",
+    "subject": "Post by Avi Chawla on X",
+    "url": "https://x.com/_avichawla/status/2103393403207901217",
+    "summary": "Researchers open-sourced AnyJev (github.com/nokia-applied-research/AnyJev), a Python library that turns any open causal LLM into a Jev-style decision model — extracting typed choices, yes/no judgments, scores and probabilities instead of generated text. Three levels: L0 needs no labels and rotates answer options to reduce position bias but stays uncalibrated; L1 uses 100-500 labels per question for temperature scaling; L2 fits a closed-form head on an intermediate hidden state using 100-300 labels, leaving weights untouched and able to stop inference before the full forward pass. Constraint: it needs logits or hidden-state access, so open models only, and L2 heads are model- and question-specific.",
+    "topics": [
+      "research",
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "54.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "Turn any open LLM into a Jev-style model:\n\nResearchers just open-sourced AnyJev, a Python library that extracts typed choices, yes/no judgments, scores, and probabilities from causal LLMs.\n\nBeyond its raw baseline, AnyJev offers three levels depending on how much labeled data and calibration you need:\n\n- L0 requires no labels. It rotates the answer options to reduce position bias, but its probabilities remain uncalibrated.\n\n- L1 uses 100-500 labeled examples per question to calibrate those probabilities through temperature scaling. It improves confidence estimates without changing the answer ranking.\n\n- L2 uses 100-300 labels to fit a closed-form head on an intermediate hidden state. It leaves model weights untouched and can stop inference before the full forward pass completes.\n\nThe main constraint is model access. AnyJev requires access to logits or hidden states, so it is built for open models. L2 heads are also specific to a model and question.\n\nIt is compatible with several open causal LLMs.\n\nRepo: github.com/nokia-applied-research/AnyJev\n\nArticle: Build your own Jev (100% local). Everything you need to turn an open-source LLM into a fast, local decision engine without retraining it. It covers next-token scoring, fixed choices with probability distributions, SGLang.\n\nAnyJev repo",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-26",
+    "author": "CyrilXBT",
+    "handle": "@cyrilxbt",
+    "subject": "Post by CyrilXBT on X",
+    "url": "https://x.com/cyrilxbt/status/2103371457082671427",
+    "summary": "Promotional post funneling to the author's own 'How to Use Opus 5.5 to Become an SEO Expert (Full Course)' article. The claim worth noting under the marketing: pairing Jev to audit a site with Opus 5.5 to identify technical issues, content gaps and fixes lets one person cover work that used to need an SEO department — an instance of the broader decision-model-plus-frontier-model split being applied outside engineering.",
+    "topics": [
+      "questionable",
+      "adjacent",
+      "solo-operator"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "14.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "The actual SEO advantage isn't another keyword tool. It's having Jev audit your site and Opus 5.5 identify the technical issues, content gaps, and fixes most teams overlook. This is how one person starts operating like an entire SEO department.\n\nArticle: How to Use Opus 5.5 to Become an SEO Expert (Full Course). SEO used to take years to learn. You needed to understand keyword research, search intent, technical audits, content briefs, internal linking, schema, link building and reporting.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-26",
+    "author": "alphaXiv",
+    "handle": "@askalphaxiv",
+    "subject": "Post by alphaXiv on X",
+    "url": "https://x.com/askalphaxiv/status/2103368968014848400",
+    "summary": "Paper 'JEV-as-a-Judge: Accept When Confident, Escalate When Unsure' (alphaxiv.org/abs/2609.26550) proposes using a cheap decision model as the first-pass evaluator instead of an expensive LLM judge. Jev returns both a verdict and a confidence; high confidence keeps the answer, low confidence escalates to a stronger model. The routing reportedly retains ~99% of GPT-6's accuracy at substantially lower evaluation cost — directly applicable to eval pipelines and LLM-as-judge setups.",
+    "topics": [
+      "research",
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "250.1K",
+    "notes": "",
+    "enriched": true,
+    "content": "\"JEV-as-a-Judge: Accept When Confident, Escalate When Unsure\"\n\nThis paper shows you can just use JEV for every evaluation instead of expensive LLM.\n\nJEV basically acts as a cheap first-pass judge, returning both a verdict and how confident it is.\n\nWhen confidence is high, keep the answer. When it's low, escalate to a stronger LLM.\n\nThis simple routing keeps ~99% of GPT-6's accuracy while reducing evaluation cost by a lot.\n\nhttps://alphaxiv.org/abs/2609.26550\n\nJEV-as-a-Judge",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-26",
+    "author": "Vox",
+    "handle": "@voxyz_ai",
+    "subject": "Post by Vox on X",
+    "url": "https://x.com/voxyz_ai/status/2103232997461786803",
+    "summary": "Claude Code tip: once Opus 5.5 is the main model, put an idle Fable quota to work with /advisor fable, which parks Fable on the sidelines as a reviewer while Opus keeps writing the code. Opus calls it in at three moments — before committing to a plan, when the same error recurs, and before declaring done. Includes the full setup tree (Opus 5.5 on high for the main session, three medium subagents split across reading code, editing/testing, and doc lookup) plus a copy-paste prompt that has Claude Code configure the agents and add the matching CLAUDE.md rule. Docs: code.claude.com/docs/en/advisor",
+    "topics": [
+      "claude-code",
+      "agent-design",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "598.9K",
+    "notes": "",
+    "enriched": true,
+    "content": "Claude Code tip: once Opus 5.5 is your main model, don't let your Fable quota sit idle. Put Fable on call with /advisor.\n\nRun /advisor fable and Claude Code gets an advisor on the sidelines. Opus 5.5 keeps doing the work and usually calls Fable in at three moments:\n\n→ Before committing to a plan: is it right?\n→ When the same error keeps coming back: am I heading the wrong way?\n→ Before saying \"done\": did I miss anything?\n\nFable reads the whole session and gives advice. Opus still writes the code.\n\nThe tree is the full setup. Opus 5.5 on high runs the main session. Three subagents on medium split the rest: one reads code, one edits and runs tests, one looks up docs. Fable waits on the sidelines. Hand the tree and this prompt to Claude Code to set it up:\n\n\"Set up my Claude Code to match this tree: 1. For the three subagents, reuse fitting ones from ~/.claude/agents and .claude/agents... 4. Add one rule to ~/.claude/CLAUDE.md: ask the advisor before committing to a big plan, when the same error shows up a second time, and before calling a long task done. Show me the changes first. Don't edit any files yet.\"\n\nAnthropic just published a guide to using Opus 5.5. It tells you to delete \"think carefully\" from your prompts. It already thinks before every reply, and it decides how much.\n\nClaude Code /advisor docs",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-09-25",
     "author": "Akshay",
     "handle": "@akshay_pachaar",
