@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-09-30T15:14:31Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-09-30T20:09:32Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-09-26** — [Mr. Buzzoni](https://x.com/polydao/status/2103689373774483815) — *now • Claude Code • 309K views • v1 enriched*  
@@ -23,20 +23,20 @@
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **applied decision-model routing — gating agents with Jev** (33 posts, +18 this week)  
+- **applied decision-model routing — gating agents with Jev** (32 posts, +16 this week)  
   Discovered by orphan clustering on 2026-09-28 (6 posts, cohesion 0.66); renamed in-session. The *applied* side of System One / decision models: putting a non-generative decision model in front of an agent as a gate, router, verifier or judge, plus the libraries and framework integrations that make that practical (AnyJev, DSPy, LangGraph, Claude Code hooks). Deliberately distinct from #74 'System One models — bounded decisions as a primitive', which holds the concept itself and was frozen out of centroid scoring after the 2026-09-25 magnet rollback; because #74 can no longer recruit by cosine, the live Jev conversation could not reach it and formed this cluster instead. On 2026-09-28 #74's 11 canonical edges were demoted to weak so it became a secondary-only grouping tag, releasing its members to re-home here or elsewhere. NOTE: do not write the centroid-scoring opt-out marker as a literal string in this description — the eligibility check is a plain substring match over the whole description, so merely mentioning it silently disables semantic scoring for this concept (hit for real on 2026-09-28).
     - 2026-09-26 — [Yarchi](https://x.com/undefinedki/status/2103577751924207831): A concrete gating setup: put a decision model in front of the agent so ~90% of requests never reach the frontier model, reportedly cutting t…
     - 2026-09-26 — [alphaXiv](https://x.com/askalphaxiv/status/2103368968014848400): Paper 'JEV-as-a-Judge: Accept When Confident, Escalate When Unsure' (alphaxiv.org/abs/2609.26550) proposes using a cheap decision model as t…
+
+- **vibecode-to-production via agent skills** (52 posts, +6 this week)  
+  Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
+    - 2026-09-26 — [qwinsi](https://x.com/qwinsi0x/status/2103551860590116904): Engagement-farmed pitch for an AI backtesting product (join.horizon.trade affiliate link), built around Liang Wenfeng and the DeepSeek-affil…
+    - 2026-09-23 — [Viv](https://x.com/vtrivedy10/status/2102939757080617014): Viv of LangChain responds to Yash Patil's argument that traces are a company's most under-leveraged asset and that cheap System One models l…
 
 - **vector / hybrid databases as agent-memory infrastructure** (57 posts, +5 this week)  
   HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
     - 2026-09-23 — [Gill](https://x.com/gurtej__gill_/status/2102777314551410833): Endorsement of a Berkeley + DeepMind paper (arxiv.org/pdf/2609.19717) proposing an Abstract Token Curriculum (ATC) as an alternative to chai…
     - 2026-09-21 — [Annatar.md](https://x.com/annatarxbt/status/2101925393322091005): Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowl…
-
-- **vibecode-to-production via agent skills** (51 posts, +5 this week)  
-  Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
-    - 2026-09-26 — [qwinsi](https://x.com/qwinsi0x/status/2103551860590116904): Engagement-farmed pitch for an AI backtesting product (join.horizon.trade affiliate link), built around Liang Wenfeng and the DeepSeek-affil…
-    - 2026-09-16 — [Aaron Levie](https://x.com/levie/status/2099976021311398230): Aaron Levie (Box) argues there is a large gap between raw model capability and the workflows enterprises actually want automated, and that t…
 
 - **Claude Code setup & usage** (69 posts, +4 this week)  
   Claude Code setup guides, cheatsheets, starter packs, and day-to-day usage / steering practices.
