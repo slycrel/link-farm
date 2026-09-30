@@ -1,12 +1,12 @@
 # AI Links Collection
-**Total Posts**: 927  
-**Date Range**: 2024-06-11 – 2026-09-26  
-**Enriched**: 926/927 (99%)
+**Total Posts**: 939  
+**Date Range**: 2024-06-11 – 2026-09-29  
+**Enriched**: 928/939 (98%)
 
 ---
 ## Morning view
 
-*Generated 2026-09-28T15:33:04Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-09-30T15:14:31Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-09-26** — [Mr. Buzzoni](https://x.com/polydao/status/2103689373774483815) — *now • Claude Code • 309K views • v1 enriched*  
@@ -23,7 +23,7 @@
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **applied decision-model routing — gating agents with Jev** (19 posts, +18 this week)  
+- **applied decision-model routing — gating agents with Jev** (33 posts, +18 this week)  
   Discovered by orphan clustering on 2026-09-28 (6 posts, cohesion 0.66); renamed in-session. The *applied* side of System One / decision models: putting a non-generative decision model in front of an agent as a gate, router, verifier or judge, plus the libraries and framework integrations that make that practical (AnyJev, DSPy, LangGraph, Claude Code hooks). Deliberately distinct from #74 'System One models — bounded decisions as a primitive', which holds the concept itself and was frozen out of centroid scoring after the 2026-09-25 magnet rollback; because #74 can no longer recruit by cosine, the live Jev conversation could not reach it and formed this cluster instead. On 2026-09-28 #74's 11 canonical edges were demoted to weak so it became a secondary-only grouping tag, releasing its members to re-home here or elsewhere. NOTE: do not write the centroid-scoring opt-out marker as a literal string in this description — the eligibility check is a plain substring match over the whole description, so merely mentioning it silently disables semantic scoring for this concept (hit for real on 2026-09-28).
     - 2026-09-26 — [Yarchi](https://x.com/undefinedki/status/2103577751924207831): A concrete gating setup: put a decision model in front of the agent so ~90% of requests never reach the frontier model, reportedly cutting t…
     - 2026-09-26 — [alphaXiv](https://x.com/askalphaxiv/status/2103368968014848400): Paper 'JEV-as-a-Judge: Accept When Confident, Escalate When Unsure' (alphaxiv.org/abs/2609.26550) proposes using a cheap decision model as t…
@@ -43,10 +43,10 @@
     - 2026-09-26 — [Vox](https://x.com/voxyz_ai/status/2103586663393853636): Turns Thariq's effort findings into a concrete two-subagent Claude Code workflow. The four-step loop for new features: have Claude ask quest…
     - 2026-09-26 — [darkzodchi](https://x.com/zodchiii/status/2103457649526206529): Hype-packaged endorsement ('beats any paid agent course I've seen') of an hour-long talk by an Anthropic engineer on Opus 5.5 agent engineer…
 
-- **persistent always-on agents — bot mode & agent desktops** (46 posts, +4 this week)  
-  Agents that outlive a chat session: persistent bot profiles with their own job and memory, remote/self-hosted execution that survives closing the laptop, and the desktop workspaces around them (Hermes/Nous, Grok bot mode, OpenClaw). Renamed from auto-named cluster on 2026-08-21.
-    - 2026-09-16 — [Yarchi](https://x.com/undefinedki/status/2100206342942187620): Describes Google's Stellar Colosseum, a multi-agent setup published for unsolved math problems and already built into Antigravity, Google's …
-    - 2026-09-16 — [Teknium](https://x.com/teknium/status/2099996435324518533): Teknium's first blog post covers running roughly 1,393 Hermes Agent subagents over 19 hours to refactor about 400,000 lines out of Hermes Ag…
+- **agent harness engineering** (57 posts, +4 this week)  
+  Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
+    - 2026-09-29 — [OpenAI](https://developers.openai.com/blog/codex-as-a-platform): OpenAI Codex as an agent harness platform. Open-source harness for building domain-specific agent applications. Separates the reusable agent…
+    - 2026-09-26 — [Dhravya Shah](https://x.com/dhravyashah/status/2103668051468300701): Supermemory open-sourced its discontinued 'company brain' product — a multi-player agent harness — at github.com/supermemoryai/company-brain…
 
 
 ### Revisit from last month
@@ -59,23 +59,35 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 558 | 60.2% |
-| claude-code | 205 | 22.1% |
-| dev-practices | 404 | 43.6% |
-| skills-mcp | 206 | 22.2% |
-| prompting | 140 | 15.1% |
-| research | 253 | 27.3% |
-| industry | 138 | 14.9% |
-| management | 143 | 15.4% |
-| adjacent | 48 | 5.2% |
+| agent-design | 559 | 59.5% |
+| claude-code | 206 | 21.9% |
+| dev-practices | 406 | 43.2% |
+| skills-mcp | 207 | 22.0% |
+| prompting | 141 | 15.0% |
+| research | 264 | 28.1% |
+| industry | 138 | 14.7% |
+| management | 143 | 15.2% |
+| adjacent | 48 | 5.1% |
 | solo-operator | 9 | 1.0% |
-| questionable | 143 | 15.4% |
-| general | 100 | 10.8% |
+| questionable | 143 | 15.2% |
+| general | 100 | 10.6% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-09-29 | Kisson | research |  |
+| 2026-09-29 | elvis | research |  |
+| 2026-09-29 | Diogo Almeida | research |  |
+| 2026-09-29 | ClaudeDevs | research |  |
+| 2026-09-29 | Harrison Chase | research |  |
+| 2026-09-29 | Jason Weston | research | Solving AI slop via expert-aligned rubrics (RL-XAR). Trained on expert... |
+| 2026-09-29 | marfin | research |  |
+| 2026-09-29 | Ryven | research |  |
+| 2026-09-29 | MIKE | research |  |
+| 2026-09-29 | Residual | research |  |
+| 2026-09-29 | Rohit Ghumare | research |  |
+| 2026-09-29 | OpenAI | agent-design | OpenAI Codex as an agent harness platform. Open-source harness for bui... |
 | 2026-09-26 | Boris Cherny | claude-code | Boris Cherny endorsing Anthropic's new plugin submission portal — subm... |
 | 2026-09-26 | Mr. Buzzoni | claude-code | X Article on 'jev engineering' for Claude Code — routing the loop's co... |
 | 2026-09-26 | Dhravya Shah | agent-design | Supermemory open-sourced its discontinued 'company brain' product — a... |
@@ -114,23 +126,13 @@
 | 2026-09-16 | Yarchi | agent-design | Describes Google's Stellar Colosseum, a multi-agent setup published fo... |
 | 2026-09-16 | Nathan Flurry | industry | A deliberately hype-free framing of Jev: not a replacement for GPT or... |
 | 2026-09-16 | Michael | industry | Hands-on report of roughly 5,000 Jev requests for about $2, spanning c... |
-| 2026-09-16 | Teknium | agent-design | Teknium's first blog post covers running roughly 1,393 Hermes Agent su... |
-| 2026-09-16 | Nate Berkopec | skills-mcp | Nate Berkopec says he has spent three months telling all his clients t... |
-| 2026-09-16 | Chi Wang | agent-design | Notes that NVIDIA's OpenShell uses the Z3 theorem prover to verify age... |
-| 2026-09-16 | klöss | agent-design | Distills a Grok Bot Galaxy session into a 22-rule playbook for running... |
-| 2026-09-16 | Aaron Levie | industry | Aaron Levie (Box) argues there is a large gap between raw model capabi... |
-| 2026-09-16 | Raj Singh | management | Quote-boosts Gergely Orosz's diagram of OpenAI's agentic software fact... |
-| 2026-09-16 | Yarchi | agent-design | Summarizes Airbnb's published method for mapping what a support assist... |
-| 2026-09-16 | Dan Shipper | industry | Reports that Every has spent about a week testing Jev, a model they co... |
-| 2026-09-16 | Gergely Orosz | management | Publishes a breakdown of OpenAI's agentic software factory as it opera... |
-| 2026-09-16 | Zach Lloyd | management | X Article laying out crawl/walk/run steps for moving from local intera... |
-| 2026-09-16 | Hermes Agent Super-Intel | skills-mcp | Pitches a 'library' interface for Hermes Agent: a complete guide, skil... |
-| 2026-09-16 | Diogo Almeida | industry | Follow-up to the Jev announcement pointing at the technical release bl... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (558)
+### Agent Design (559)
+
+- [OpenAI](https://developers.openai.com/blog/codex-as-a-platform) — 2026-09-29: OpenAI Codex as an agent harness platform. Open-source harness for building domain-specific agent applications. Separates the reusable agent loop (Codex) from application-specific context, tools, and approval flows. Integration options: exec, SDK, app-server.
 
 - [Mr. Buzzoni](https://x.com/polydao/status/2103689373774483815) — 2026-09-26: X Article on 'jev engineering' for Claude Code — routing the loop's constant small decisions away from the model that writes code, and into a cheap decision model via Claude Code's existing hooks. The concrete build: a 100ms safety gate, a stop hook that knows when work is really done, and a triage filter that only wakes Claude when there's something to fix, with full code and the resulting bill ($765 to $3 a month). The framing that makes it worth reading: a busy overnight loop asks ~600 yes/no questions over 4,000-token states, at ~4 cents each on Fable 5.1, so it spends more deciding than building. Background: TypeSafe AI shipped Jev on September 15 from Diogo Almeida (InstructGPT co-author), trained with RLCD, out of stealth on a $40M seed led by DCVC; it takes state plus typed questions and returns Choice (up to 255 options), Score (2-10 levels) or Noul (probability of yes) with the full distribution.
 
@@ -1248,7 +1250,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Claude Code (205)
+### Claude Code (206)
+
+- [OpenAI](https://developers.openai.com/blog/codex-as-a-platform) — 2026-09-29: OpenAI Codex as an agent harness platform. Open-source harness for building domain-specific agent applications. Separates the reusable agent loop (Codex) from application-specific context, tools, and approval flows. Integration options: exec, SDK, app-server.
 
 - [Boris Cherny](https://x.com/bcherny/status/2103691327699550598) — 2026-09-26: Boris Cherny endorsing Anthropic's new plugin submission portal — submit a plugin, track review, and see usage. ClaudeDevs' announcement notes plugins package MCP and skills and are becoming the way to build for Claude, with MCP usage across Claude products up 110x this year. Details at claude.com/blog/build-plugins-for-claude
 
@@ -1660,7 +1664,11 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (404)
+### Dev Practices (406)
+
+- [Jason Weston](https://x.com/jaseweston/status/2104564368792854860) — 2026-09-29: Solving AI slop via expert-aligned rubrics (RL-XAR). Trained on expert writing to find gaps between expert and model output. Shows gains on scientific papers, novel continuations, Wikipedia.
+
+- [OpenAI](https://developers.openai.com/blog/codex-as-a-platform) — 2026-09-29: OpenAI Codex as an agent harness platform. Open-source harness for building domain-specific agent applications. Separates the reusable agent loop (Codex) from application-specific context, tools, and approval flows. Integration options: exec, SDK, app-server.
 
 - [Mr. Buzzoni](https://x.com/polydao/status/2103689373774483815) — 2026-09-26: X Article on 'jev engineering' for Claude Code — routing the loop's constant small decisions away from the model that writes code, and into a cheap decision model via Claude Code's existing hooks. The concrete build: a 100ms safety gate, a stop hook that knows when work is really done, and a triage filter that only wakes Claude when there's something to fix, with full code and the resulting bill ($765 to $3 a month). The framing that makes it worth reading: a busy overnight loop asks ~600 yes/no questions over 4,000-token states, at ~4 cents each on Fable 5.1, so it spends more deciding than building. Background: TypeSafe AI shipped Jev on September 15 from Diogo Almeida (InstructGPT co-author), trained with RLCD, out of stealth on a $40M seed led by DCVC; it takes state plus typed questions and returns Choice (up to 255 options), Score (2-10 levels) or Noul (probability of yes) with the full distribution.
 
@@ -2470,7 +2478,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Skills & MCP (206)
+### Skills & MCP (207)
+
+- [OpenAI](https://developers.openai.com/blog/codex-as-a-platform) — 2026-09-29: OpenAI Codex as an agent harness platform. Open-source harness for building domain-specific agent applications. Separates the reusable agent loop (Codex) from application-specific context, tools, and approval flows. Integration options: exec, SDK, app-server.
 
 - [Boris Cherny](https://x.com/bcherny/status/2103691327699550598) — 2026-09-26: Boris Cherny endorsing Anthropic's new plugin submission portal — submit a plugin, track review, and see usage. ClaudeDevs' announcement notes plugins package MCP and skills and are becoming the way to build for Claude, with MCP usage across Claude products up 110x this year. Details at claude.com/blog/build-plugins-for-claude
 
@@ -2884,7 +2894,9 @@
 
 - [Mervin Praison](https://x.com/mervinpraison/status/1881788246684013011) — 2025-01-22: Shows a 100% local RAG AI agent with reasoning: DeepSeek via Ollama for the LLM, PraisonAI to build the agent in a few lines, Nomic embeddings, and a Streamlit UI—code included in the thread.
 
-### Prompting (140)
+### Prompting (141)
+
+- [Jason Weston](https://x.com/jaseweston/status/2104564368792854860) — 2026-09-29: Solving AI slop via expert-aligned rubrics (RL-XAR). Trained on expert writing to find gaps between expert and model output. Shows gains on scientific papers, novel continuations, Wikipedia.
 
 - [Thariq](https://x.com/trq212/status/2103576349499855160) — 2026-09-26: Thariq (Anthropic Claude Code team) published a deep dive on effort levels — what effort actually buys and when to change it, backed by eval runs and his own task tests. Core finding: higher effort mostly buys more verification, edge-case testing and independent judgment, so it pays off in hardware, code review and security work, while low/medium is better for ordinary building. Includes Terminal Bench 3.0 scores by effort for Fable 5.1 and Opus 5.5, and the analogy that effort is like telling someone how long they have for a task. Interactive diagrams at claude.dev/blog/spending-your-effort/
 
@@ -3166,7 +3178,29 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-### Research (253)
+### Research (264)
+
+- [Kisson](https://x.com/kissonl/status/2104726600747213235) — 2026-09-29: 
+
+- [elvis](https://x.com/omarsar0/status/2104706308163420452) — 2026-09-29: 
+
+- [Diogo Almeida](https://x.com/completeskeptic/status/2104682600103284917) — 2026-09-29: 
+
+- [ClaudeDevs](https://x.com/claudedevs/status/2104676099083190435) — 2026-09-29: 
+
+- [Harrison Chase](https://x.com/hwchase17/status/2104610254000635952) — 2026-09-29: 
+
+- [Jason Weston](https://x.com/jaseweston/status/2104564368792854860) — 2026-09-29: Solving AI slop via expert-aligned rubrics (RL-XAR). Trained on expert writing to find gaps between expert and model output. Shows gains on scientific papers, novel continuations, Wikipedia.
+
+- [marfin](https://x.com/marfinxx/status/2104546903488647179) — 2026-09-29: 
+
+- [Ryven](https://x.com/imryven/status/2104483221228421380) — 2026-09-29: 
+
+- [MIKE](https://x.com/mikenevermiss/status/2104436761032057204) — 2026-09-29: 
+
+- [Residual](https://x.com/res1dualedge/status/2104300857928098075) — 2026-09-29: 
+
+- [Rohit Ghumare](https://x.com/ghumare64/status/2104112175425950177) — 2026-09-29: 
 
 - [Mike Taylor](https://x.com/hammer_mt/status/2103579428072865841) — 2026-09-26: Mike Taylor flagging Kieran Klaassen's 'How to use jev #1: As an embedder' as the most novel Jev-based idea he's seen — repurposing a decision model as an embedding source rather than a router or gate. Worth following for the pattern, since most Jev material this week is gating and routing.
 
@@ -4854,6 +4888,42 @@
 ## Full Chronological List
 
 ### Sep 2026
+
+- **2026-09-29** | [Kisson](https://x.com/kissonl/status/2104726600747213235) | research
+  
+
+- **2026-09-29** | [elvis](https://x.com/omarsar0/status/2104706308163420452) | research
+  
+
+- **2026-09-29** | [Diogo Almeida](https://x.com/completeskeptic/status/2104682600103284917) | research
+  
+
+- **2026-09-29** | [ClaudeDevs](https://x.com/claudedevs/status/2104676099083190435) | research
+  
+
+- **2026-09-29** | [Harrison Chase](https://x.com/hwchase17/status/2104610254000635952) | research
+  
+
+- **2026-09-29** | [Jason Weston](https://x.com/jaseweston/status/2104564368792854860) | research, prompting, dev-practices
+  Solving AI slop via expert-aligned rubrics (RL-XAR). Trained on expert writing to find gaps between expert and model output. Shows gains on scientific papers, novel continuations, Wikipedia.
+
+- **2026-09-29** | [marfin](https://x.com/marfinxx/status/2104546903488647179) | research
+  
+
+- **2026-09-29** | [Ryven](https://x.com/imryven/status/2104483221228421380) | research
+  
+
+- **2026-09-29** | [MIKE](https://x.com/mikenevermiss/status/2104436761032057204) | research
+  
+
+- **2026-09-29** | [Residual](https://x.com/res1dualedge/status/2104300857928098075) | research
+  
+
+- **2026-09-29** | [Rohit Ghumare](https://x.com/ghumare64/status/2104112175425950177) | research
+  
+
+- **2026-09-29** | [OpenAI](https://developers.openai.com/blog/codex-as-a-platform) | agent-design, dev-practices, skills-mcp, claude-code
+  OpenAI Codex as an agent harness platform. Open-source harness for building domain-specific agent applications. Separates the reusable agent loop (Codex) from application-specific context, tools, and approval flows. Integration options: exec, SDK, app-server.
 
 - **2026-09-26** | [Boris Cherny](https://x.com/bcherny/status/2103691327699550598) | claude-code, skills-mcp, industry
   Boris Cherny endorsing Anthropic's new plugin submission portal — submit a plugin, track review, and see usage. ClaudeDevs' announcement notes plugins package MCP and skills and are becoming the way to build for Claude, with MCP usage across Claude products up 110x this year. Details at claude.com/blog/build-plugins-for-claude

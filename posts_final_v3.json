@@ -1,5 +1,259 @@
 [
   {
+    "date": "2026-09-29",
+    "author": "Kisson",
+    "handle": "@kissonl",
+    "subject": "Post by Kisson on X",
+    "url": "https://x.com/kissonl/status/2104726600747213235",
+    "summary": "",
+    "topics": [
+      "research"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": false,
+    "enrichment_status": "unattempted"
+  },
+  {
+    "date": "2026-09-29",
+    "author": "elvis",
+    "handle": "@omarsar0",
+    "subject": "Post by elvis on X",
+    "url": "https://x.com/omarsar0/status/2104706308163420452",
+    "summary": "",
+    "topics": [
+      "research"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": false,
+    "enrichment_status": "unattempted"
+  },
+  {
+    "date": "2026-09-29",
+    "author": "Diogo Almeida",
+    "handle": "@completeskeptic",
+    "subject": "Post by Diogo Almeida on X",
+    "url": "https://x.com/completeskeptic/status/2104682600103284917",
+    "summary": "",
+    "topics": [
+      "research"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": false,
+    "enrichment_status": "unattempted"
+  },
+  {
+    "date": "2026-09-29",
+    "author": "ClaudeDevs",
+    "handle": "@claudedevs",
+    "subject": "Post by ClaudeDevs on X",
+    "url": "https://x.com/claudedevs/status/2104676099083190435",
+    "summary": "",
+    "topics": [
+      "research"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": false,
+    "enrichment_status": "unattempted"
+  },
+  {
+    "date": "2026-09-29",
+    "author": "Harrison Chase",
+    "handle": "@hwchase17",
+    "subject": "Post by Harrison Chase on X",
+    "url": "https://x.com/hwchase17/status/2104610254000635952",
+    "summary": "",
+    "topics": [
+      "research"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": false,
+    "enrichment_status": "unattempted"
+  },
+  {
+    "date": "2026-09-29",
+    "author": "Jason Weston",
+    "handle": "@jaseweston",
+    "subject": "Post by Jason Weston on X (read this)",
+    "url": "https://x.com/jaseweston/status/2104564368792854860",
+    "summary": "Solving AI slop via expert-aligned rubrics (RL-XAR). Trained on expert writing to find gaps between expert and model output. Shows gains on scientific papers, novel continuations, Wikipedia.",
+    "topics": [
+      "research",
+      "prompting",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "202.8K",
+    "notes": "flag: read this",
+    "enriched": true,
+    "content": "Jason Weston\n@jaseweston\nClaim: we've solved the AI slop problem (!) 💩🧹✨\n\nBlog post: https://facebookresearch.github.io/RAM/blogs/unslop/\n\n🧵1/5\nKey idea: take *expert* human writing and learn rubrics that find the gap between experts and models. Train with those rubrics.\n\nWe train with RL-XAR (RL with eXpert Aligned Rubrics) & see large performance gains on writing scientific paper sections, Pulitzer prize novel continuations and high quality Wikipedia pages.\nSwarnadeep Saha and 2 others\n\nfacebookresearch.github.io/RAM/blogs/unslop/",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-09-29",
+    "author": "marfin",
+    "handle": "@marfinxx",
+    "subject": "Post by marfin on X",
+    "url": "https://x.com/marfinxx/status/2104546903488647179",
+    "summary": "",
+    "topics": [
+      "research"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": false,
+    "enrichment_status": "unattempted"
+  },
+  {
+    "date": "2026-09-29",
+    "author": "Ryven",
+    "handle": "@imryven",
+    "subject": "Post by Ryven on X",
+    "url": "https://x.com/imryven/status/2104483221228421380",
+    "summary": "",
+    "topics": [
+      "research"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": false,
+    "enrichment_status": "unattempted"
+  },
+  {
+    "date": "2026-09-29",
+    "author": "MIKE",
+    "handle": "@mikenevermiss",
+    "subject": "Post by MIKE on X",
+    "url": "https://x.com/mikenevermiss/status/2104436761032057204",
+    "summary": "",
+    "topics": [
+      "research"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": false,
+    "enrichment_status": "unattempted"
+  },
+  {
+    "date": "2026-09-29",
+    "author": "Residual",
+    "handle": "@res1dualedge",
+    "subject": "Post by Residual on X",
+    "url": "https://x.com/res1dualedge/status/2104300857928098075",
+    "summary": "",
+    "topics": [
+      "research"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": false,
+    "enrichment_status": "unattempted"
+  },
+  {
+    "date": "2026-09-29",
+    "author": "Rohit Ghumare",
+    "handle": "@ghumare64",
+    "subject": "Post by Rohit Ghumare on X",
+    "url": "https://x.com/ghumare64/status/2104112175425950177",
+    "summary": "",
+    "topics": [
+      "research"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": false,
+    "enrichment_status": "unattempted"
+  },
+  {
+    "date": "2026-09-29",
+    "author": "OpenAI",
+    "handle": "",
+    "subject": "Codex as a Platform — OpenAI Blog",
+    "url": "https://developers.openai.com/blog/codex-as-a-platform",
+    "summary": "OpenAI Codex as an agent harness platform. Open-source harness for building domain-specific agent applications. Separates the reusable agent loop (Codex) from application-specific context, tools, and approval flows. Integration options: exec, SDK, app-server.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "skills-mcp",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Codex as a Platform — Build on the Open Agent Harness\n\nThe open-source Codex harness powers App, CLI, and IDE Extension experiences. It helps models gather context, reason through tasks, use tools, operate within boundaries, request approval, and carry work forward.\n\nKey insights:\n- Capable agents need more than prompt + response: context, tools, approval flows, sandboxing\n- Harness design materially affects results (ARC-AGI-3: 13.3% → 38.3% with retained reasoning)\n- Codex harness manages: conversation state, streaming, tool use, sandbox/approval policies, multi-turn work\n- Developers can build domain-specific software around the agent harness, not force work into generic chat\n\nIntegration patterns:\n- codex exec: bounded workflows, structured output\n- Codex SDK: programmatic agent workflows\n- Codex app-server: persistent conversations, streamed events, approval handling\n\nReal-world pattern: application owns context/tools/approvals, Codex provides agent loop.\nExample (Relay): Agent embedded in shipment operations dashboard with application-owned MCP tools.\n\nAlready in use: GitHub, JetBrains, Cisco, Thrive Holdings (tax prep), Crete.",
+    "source": "manual",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-09-26",
     "author": "Boris Cherny",
     "handle": "@bcherny",
