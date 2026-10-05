@@ -6,47 +6,41 @@
 ---
 ## Morning view
 
-*Generated 2026-09-30T20:09:32Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-10-05T15:03:44Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
-- **2026-09-26** — [Mr. Buzzoni](https://x.com/polydao/status/2103689373774483815) — *now • Claude Code • 309K views • v1 enriched*  
-  X Article on 'jev engineering' for Claude Code — routing the loop's constant small decisions away from the model that writes code, and into a cheap decision model via Claude Code's existing hooks. The concrete build: a 100ms safety gate, a stop hook that knows when work is really done, and a triage filter that only wakes Claude when there's something to fix, with full code and the resulting bill ($765 to $3 a month). The framing that makes it worth reading: a busy overnight loop asks ~600 yes/no questions over 4,000-token states, at ~4 cents each on Fable 5.1, so it spends more deciding than building. Background: TypeSafe AI shipped Jev on September 15 from Diogo Almeida (InstructGPT co-author), trained with RLCD, out of stealth on a $40M seed led by DCVC; it takes state plus typed questions and returns Choice (up to 255 options), Score (2-10 levels) or Noul (probability of yes) with the full distribution.
-- **2026-09-26** — [Xudong Han](https://x.com/xudong07452910/status/2103650764912476432) — *now • Management • 16.5K views • v1 enriched*  
-  Summary (translated from Chinese) of Anthropic's guide on preparing for AI-driven code modernization. The argument: modernization projects that used to take a full team years can now land in months or weeks with agents, but the bottleneck shifts to the organization — testing, review, approval and deployment can't keep pace with the rate of change. Anthropic's six-step framework says to define what 'done right' means first (certificates spelling out verification conditions for testing, performance, compatibility and security), then let agents act at scale, with review and deployment rules keyed to change risk, because agent-generated volume will exceed line-by-line human diff review. Source article: claude.com, 'How to prepare for AI-driven code modernization projects'.
-- **2026-09-26** — [Vox](https://x.com/voxyz_ai/status/2103586663393853636) — *now • Claude Code • 72.9K views • v1 enriched*  
-  Turns Thariq's effort findings into a concrete two-subagent Claude Code workflow. The four-step loop for new features: have Claude ask questions and fill gaps in the spec first; build on low effort (fast, easy to interrupt); review and keep changes on low; switch to high at the end to verify and test. Includes the copy-paste prompt that creates a 'builder' subagent (opus, effort low) and a 'verifier' subagent (opus, effort high) in ~/.claude/agents.
-- **2026-09-26** — [Thariq](https://x.com/trq212/status/2103576349499855160) — *now • Claude Code • 1.4M views • v1 enriched*  
-  Thariq (Anthropic Claude Code team) published a deep dive on effort levels — what effort actually buys and when to change it, backed by eval runs and his own task tests. Core finding: higher effort mostly buys more verification, edge-case testing and independent judgment, so it pays off in hardware, code review and security work, while low/medium is better for ordinary building. Includes Terminal Bench 3.0 scores by effort for Fable 5.1 and Opus 5.5, and the analogy that effort is like telling someone how long they have for a task. Interactive diagrams at claude.dev/blog/spending-your-effort/
-- **2026-09-26** — [elvis](https://x.com/omarsar0/status/2103529287676567888) — *now • Agent Design • 12.2K views • v1 enriched*  
-  elvis on why System One models matter for anyone building custom harnesses: DSPy 3.4.0 added native support for Jev and System One models with compatible signatures, plus a new ReAnchor optimizer for calibrating outputs with confidence. He reports success using Jev for guardrails, routing and verifiers, and sees further applications in structuring and optimizing skills, more efficient tool calling, dynamically generated harnesses (orchestrator + subagents) that use Jev-like models to structure information moving between workflow stages, and RLM + System One combinations. His own harness writeup: academy.dair.ai/resources/jev-decisions-in-a-pi-sdk-harness
+- **2026-09-29** — [Jason Weston](https://x.com/jaseweston/status/2104564368792854860) — *near-term • Research • 202.8K views • v1 enriched*  
+  Solving AI slop via expert-aligned rubrics (RL-XAR). Trained on expert writing to find gaps between expert and model output. Shows gains on scientific papers, novel continuations, Wikipedia.
+- **2026-09-29** — [OpenAI](https://developers.openai.com/blog/codex-as-a-platform) — *near-term • Agent Design • v1 enriched*  
+  OpenAI Codex as an agent harness platform. Open-source harness for building domain-specific agent applications. Separates the reusable agent loop (Codex) from application-specific context, tools, and approval flows. Integration options: exec, SDK, app-server.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **applied decision-model routing — gating agents with Jev** (32 posts, +16 this week)  
+- **applied decision-model routing — gating agents with Jev** (32 posts, +11 this week)  
   Discovered by orphan clustering on 2026-09-28 (6 posts, cohesion 0.66); renamed in-session. The *applied* side of System One / decision models: putting a non-generative decision model in front of an agent as a gate, router, verifier or judge, plus the libraries and framework integrations that make that practical (AnyJev, DSPy, LangGraph, Claude Code hooks). Deliberately distinct from #74 'System One models — bounded decisions as a primitive', which holds the concept itself and was frozen out of centroid scoring after the 2026-09-25 magnet rollback; because #74 can no longer recruit by cosine, the live Jev conversation could not reach it and formed this cluster instead. On 2026-09-28 #74's 11 canonical edges were demoted to weak so it became a secondary-only grouping tag, releasing its members to re-home here or elsewhere. NOTE: do not write the centroid-scoring opt-out marker as a literal string in this description — the eligibility check is a plain substring match over the whole description, so merely mentioning it silently disables semantic scoring for this concept (hit for real on 2026-09-28).
     - 2026-09-26 — [Yarchi](https://x.com/undefinedki/status/2103577751924207831): A concrete gating setup: put a decision model in front of the agent so ~90% of requests never reach the frontier model, reportedly cutting t…
     - 2026-09-26 — [alphaXiv](https://x.com/askalphaxiv/status/2103368968014848400): Paper 'JEV-as-a-Judge: Accept When Confident, Escalate When Unsure' (alphaxiv.org/abs/2609.26550) proposes using a cheap decision model as t…
 
-- **vibecode-to-production via agent skills** (52 posts, +6 this week)  
-  Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
-    - 2026-09-26 — [qwinsi](https://x.com/qwinsi0x/status/2103551860590116904): Engagement-farmed pitch for an AI backtesting product (join.horizon.trade affiliate link), built around Liang Wenfeng and the DeepSeek-affil…
-    - 2026-09-23 — [Viv](https://x.com/vtrivedy10/status/2102939757080617014): Viv of LangChain responds to Yash Patil's argument that traces are a company's most under-leveraged asset and that cheap System One models l…
-
-- **vector / hybrid databases as agent-memory infrastructure** (57 posts, +5 this week)  
-  HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
-    - 2026-09-23 — [Gill](https://x.com/gurtej__gill_/status/2102777314551410833): Endorsement of a Berkeley + DeepMind paper (arxiv.org/pdf/2609.19717) proposing an Abstract Token Curriculum (ATC) as an alternative to chai…
-    - 2026-09-21 — [Annatar.md](https://x.com/annatarxbt/status/2101925393322091005): Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowl…
-
-- **Claude Code setup & usage** (69 posts, +4 this week)  
+- **Claude Code setup & usage** (69 posts, +3 this week)  
   Claude Code setup guides, cheatsheets, starter packs, and day-to-day usage / steering practices.
     - 2026-09-26 — [Vox](https://x.com/voxyz_ai/status/2103586663393853636): Turns Thariq's effort findings into a concrete two-subagent Claude Code workflow. The four-step loop for new features: have Claude ask quest…
     - 2026-09-26 — [darkzodchi](https://x.com/zodchiii/status/2103457649526206529): Hype-packaged endorsement ('beats any paid agent course I've seen') of an hour-long talk by an Anthropic engineer on Opus 5.5 agent engineer…
 
-- **agent harness engineering** (57 posts, +4 this week)  
+- **agent harness engineering** (57 posts, +3 this week)  
   Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
     - 2026-09-29 — [OpenAI](https://developers.openai.com/blog/codex-as-a-platform): OpenAI Codex as an agent harness platform. Open-source harness for building domain-specific agent applications. Separates the reusable agent…
     - 2026-09-26 — [Dhravya Shah](https://x.com/dhravyashah/status/2103668051468300701): Supermemory open-sourced its discontinued 'company brain' product — a multi-player agent harness — at github.com/supermemoryai/company-brain…
+
+- **vector / hybrid databases as agent-memory infrastructure** (57 posts, +2 this week)  
+  HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
+    - 2026-09-23 — [Gill](https://x.com/gurtej__gill_/status/2102777314551410833): Endorsement of a Berkeley + DeepMind paper (arxiv.org/pdf/2609.19717) proposing an Abstract Token Curriculum (ATC) as an alternative to chai…
+    - 2026-09-21 — [Annatar.md](https://x.com/annatarxbt/status/2101925393322091005): Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowl…
+
+- **vibecode-to-production via agent skills** (52 posts, +2 this week)  
+  Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
+    - 2026-09-26 — [qwinsi](https://x.com/qwinsi0x/status/2103551860590116904): Engagement-farmed pitch for an AI backtesting product (join.horizon.trade affiliate link), built around Liang Wenfeng and the DeepSeek-affil…
+    - 2026-09-23 — [Viv](https://x.com/vtrivedy10/status/2102939757080617014): Viv of LangChain responds to Yash Patil's argument that traces are a company's most under-leveraged asset and that cheap System One models l…
 
 
 ### Revisit from last month

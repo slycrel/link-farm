@@ -489,88 +489,40 @@
 
 <script>
 const MORNING_VIEW = {
-  "generated_at": "2026-09-30T20:09:32Z",
+  "generated_at": "2026-10-05T15:03:44Z",
   "read_now": [
     {
-      "id": 2103689373774483815,
-      "date": "2026-09-26",
-      "author": "Mr. Buzzoni",
-      "handle": "@polydao",
-      "url": "https://x.com/polydao/status/2103689373774483815",
-      "summary": "X Article on 'jev engineering' for Claude Code — routing the loop's constant small decisions away from the model that writes code, and into a cheap decision model via Claude Code's existing hooks. The concrete build: a 100ms safety gate, a stop hook that knows when work is really done, and a triage filter that only wakes Claude when there's something to fix, with full code and the resulting bill ($765 to $3 a month). The framing that makes it worth reading: a busy overnight loop asks ~600 yes/no questions over 4,000-token states, at ~4 cents each on Fable 5.1, so it spends more deciding than building. Background: TypeSafe AI shipped Jev on September 15 from Diogo Almeida (InstructGPT co-author), trained with RLCD, out of stealth on a $40M seed led by DCVC; it takes state plus typed questions and returns Choice (up to 255 options), Score (2-10 levels) or Noul (probability of yes) with the full distribution.",
+      "id": 2104564368792854860,
+      "date": "2026-09-29",
+      "author": "Jason Weston",
+      "handle": "@jaseweston",
+      "url": "https://x.com/jaseweston/status/2104564368792854860",
+      "summary": "Solving AI slop via expert-aligned rubrics (RL-XAR). Trained on expert writing to find gaps between expert and model output. Shows gains on scientific papers, novel continuations, Wikipedia.",
       "topics": [
-        "claude-code",
-        "agent-design",
-        "dev-practices"
-      ],
-      "priority": "now",
-      "views": "309K",
-      "reason": "now • Claude Code • 309K views • v1 enriched"
-    },
-    {
-      "id": 2103650764912476432,
-      "date": "2026-09-26",
-      "author": "Xudong Han",
-      "handle": "@xudong07452910",
-      "url": "https://x.com/xudong07452910/status/2103650764912476432",
-      "summary": "Summary (translated from Chinese) of Anthropic's guide on preparing for AI-driven code modernization. The argument: modernization projects that used to take a full team years can now land in months or weeks with agents, but the bottleneck shifts to the organization — testing, review, approval and deployment can't keep pace with the rate of change. Anthropic's six-step framework says to define what 'done right' means first (certificates spelling out verification conditions for testing, performance, compatibility and security), then let agents act at scale, with review and deployment rules keyed to change risk, because agent-generated volume will exceed line-by-line human diff review. Source article: claude.com, 'How to prepare for AI-driven code modernization projects'.",
-      "topics": [
-        "management",
-        "dev-practices",
-        "agent-design"
-      ],
-      "priority": "now",
-      "views": "16.5K",
-      "reason": "now • Management • 16.5K views • v1 enriched"
-    },
-    {
-      "id": 2103586663393853636,
-      "date": "2026-09-26",
-      "author": "Vox",
-      "handle": "@voxyz_ai",
-      "url": "https://x.com/voxyz_ai/status/2103586663393853636",
-      "summary": "Turns Thariq's effort findings into a concrete two-subagent Claude Code workflow. The four-step loop for new features: have Claude ask questions and fill gaps in the spec first; build on low effort (fast, easy to interrupt); review and keep changes on low; switch to high at the end to verify and test. Includes the copy-paste prompt that creates a 'builder' subagent (opus, effort low) and a 'verifier' subagent (opus, effort high) in ~/.claude/agents.",
-      "topics": [
-        "claude-code",
-        "agent-design",
-        "dev-practices"
-      ],
-      "priority": "now",
-      "views": "72.9K",
-      "reason": "now • Claude Code • 72.9K views • v1 enriched"
-    },
-    {
-      "id": 2103576349499855160,
-      "date": "2026-09-26",
-      "author": "Thariq",
-      "handle": "@trq212",
-      "url": "https://x.com/trq212/status/2103576349499855160",
-      "summary": "Thariq (Anthropic Claude Code team) published a deep dive on effort levels — what effort actually buys and when to change it, backed by eval runs and his own task tests. Core finding: higher effort mostly buys more verification, edge-case testing and independent judgment, so it pays off in hardware, code review and security work, while low/medium is better for ordinary building. Includes Terminal Bench 3.0 scores by effort for Fable 5.1 and Opus 5.5, and the analogy that effort is like telling someone how long they have for a task. Interactive diagrams at claude.dev/blog/spending-your-effort/",
-      "topics": [
-        "claude-code",
-        "dev-practices",
+        "research",
         "prompting",
-        "research"
+        "dev-practices"
       ],
-      "priority": "now",
-      "views": "1.4M",
-      "reason": "now • Claude Code • 1.4M views • v1 enriched"
+      "priority": "near-term",
+      "views": "202.8K",
+      "reason": "near-term • Research • 202.8K views • v1 enriched"
     },
     {
-      "id": 2103529287676567888,
-      "date": "2026-09-26",
-      "author": "elvis",
-      "handle": "@omarsar0",
-      "url": "https://x.com/omarsar0/status/2103529287676567888",
-      "summary": "elvis on why System One models matter for anyone building custom harnesses: DSPy 3.4.0 added native support for Jev and System One models with compatible signatures, plus a new ReAnchor optimizer for calibrating outputs with confidence. He reports success using Jev for guardrails, routing and verifiers, and sees further applications in structuring and optimizing skills, more efficient tool calling, dynamically generated harnesses (orchestrator + subagents) that use Jev-like models to structure information moving between workflow stages, and RLM + System One combinations. His own harness writeup: academy.dair.ai/resources/jev-decisions-in-a-pi-sdk-harness",
+      "id": 191052956353173,
+      "date": "2026-09-29",
+      "author": "OpenAI",
+      "handle": "",
+      "url": "https://developers.openai.com/blog/codex-as-a-platform",
+      "summary": "OpenAI Codex as an agent harness platform. Open-source harness for building domain-specific agent applications. Separates the reusable agent loop (Codex) from application-specific context, tools, and approval flows. Integration options: exec, SDK, app-server.",
       "topics": [
         "agent-design",
+        "dev-practices",
         "skills-mcp",
-        "research"
+        "claude-code"
       ],
-      "priority": "now",
-      "views": "12.2K",
-      "reason": "now • Agent Design • 12.2K views • v1 enriched"
+      "priority": "near-term",
+      "views": "",
+      "reason": "near-term • Agent Design • v1 enriched"
     }
   ],
   "recurring": {
@@ -582,7 +534,7 @@ const MORNING_VIEW = {
         "name": "applied decision-model routing — gating agents with Jev",
         "description": "Discovered by orphan clustering on 2026-09-28 (6 posts, cohesion 0.66); renamed in-session. The *applied* side of System One / decision models: putting a non-generative decision model in front of an agent as a gate, router, verifier or judge, plus the libraries and framework integrations that make that practical (AnyJev, DSPy, LangGraph, Claude Code hooks). Deliberately distinct from #74 'System One models — bounded decisions as a primitive', which holds the concept itself and was frozen out of centroid scoring after the 2026-09-25 magnet rollback; because #74 can no longer recruit by cosine, the live Jev conversation could not reach it and formed this cluster instead. On 2026-09-28 #74's 11 canonical edges were demoted to weak so it became a secondary-only grouping tag, releasing its members to re-home here or elsewhere. NOTE: do not write the centroid-scoring opt-out marker as a literal string in this description — the eligibility check is a plain substring match over the whole description, so merely mentioning it silently disables semantic scoring for this concept (hit for real on 2026-09-28).",
         "count": 32,
-        "recent_count": 16,
+        "recent_count": 11,
         "last_post_date": "2026-09-26",
         "top_posts": [
           {
@@ -609,73 +561,11 @@ const MORNING_VIEW = {
         ]
       },
       {
-        "id": 6,
-        "name": "vibecode-to-production via agent skills",
-        "description": "Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.",
-        "count": 52,
-        "recent_count": 6,
-        "last_post_date": "2026-09-26",
-        "top_posts": [
-          {
-            "id": 2103551860590116904,
-            "date": "2026-09-26",
-            "author": "qwinsi",
-            "url": "https://x.com/qwinsi0x/status/2103551860590116904",
-            "summary": "Engagement-farmed pitch for an AI backtesting product (join.horizon.trade affiliate link), built around Liang Wenfeng and the DeepSeek-affiliated hedge fund. Th"
-          },
-          {
-            "id": 2102939757080617014,
-            "date": "2026-09-23",
-            "author": "Viv",
-            "url": "https://x.com/vtrivedy10/status/2102939757080617014",
-            "summary": "Viv of LangChain responds to Yash Patil's argument that traces are a company's most under-leveraged asset and that cheap System One models like Jev open new arc"
-          },
-          {
-            "id": 2099976021311398230,
-            "date": "2026-09-16",
-            "author": "Aaron Levie",
-            "url": "https://x.com/levie/status/2099976021311398230",
-            "summary": "Aaron Levie (Box) argues there is a large gap between raw model capability and the workflows enterprises actually want automated, and that the 'applied AI layer"
-          }
-        ]
-      },
-      {
-        "id": 7,
-        "name": "vector / hybrid databases as agent-memory infrastructure",
-        "description": "HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.",
-        "count": 57,
-        "recent_count": 5,
-        "last_post_date": "2026-09-23",
-        "top_posts": [
-          {
-            "id": 2102777314551410833,
-            "date": "2026-09-23",
-            "author": "Gill",
-            "url": "https://x.com/gurtej__gill_/status/2102777314551410833",
-            "summary": "Endorsement of a Berkeley + DeepMind paper (arxiv.org/pdf/2609.19717) proposing an Abstract Token Curriculum (ATC) as an alternative to chain-of-thought. Rather"
-          },
-          {
-            "id": 2101925393322091005,
-            "date": "2026-09-21",
-            "author": "Annatar.md",
-            "url": "https://x.com/annatarxbt/status/2101925393322091005",
-            "summary": "Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowledge graph), procedu"
-          },
-          {
-            "id": 2099952282217615827,
-            "date": "2026-09-16",
-            "author": "Yarchi",
-            "url": "https://x.com/undefinedki/status/2099952282217615827",
-            "summary": "Summarizes Airbnb's published method for mapping what a support assistant will face before launch, which they encoded as a reusable pipeline after redoing the w"
-          }
-        ]
-      },
-      {
         "id": 41,
         "name": "Claude Code setup & usage",
         "description": "Claude Code setup guides, cheatsheets, starter packs, and day-to-day usage / steering practices.",
         "count": 69,
-        "recent_count": 4,
+        "recent_count": 3,
         "last_post_date": "2026-09-26",
         "top_posts": [
           {
@@ -706,7 +596,7 @@ const MORNING_VIEW = {
         "name": "agent harness engineering",
         "description": "Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.",
         "count": 57,
-        "recent_count": 4,
+        "recent_count": 3,
         "last_post_date": "2026-09-29",
         "top_posts": [
           {
@@ -729,6 +619,68 @@ const MORNING_VIEW = {
             "author": "Avid",
             "url": "https://x.com/av1dlive/status/2102802621664985241",
             "summary": "3,500-word builder's guide to putting Jev in a coding harness as a bounded decision layer, with the working source: keel 0.2.0 (github.com/codejunkie99/keel), a"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "vector / hybrid databases as agent-memory infrastructure",
+        "description": "HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.",
+        "count": 57,
+        "recent_count": 2,
+        "last_post_date": "2026-09-23",
+        "top_posts": [
+          {
+            "id": 2102777314551410833,
+            "date": "2026-09-23",
+            "author": "Gill",
+            "url": "https://x.com/gurtej__gill_/status/2102777314551410833",
+            "summary": "Endorsement of a Berkeley + DeepMind paper (arxiv.org/pdf/2609.19717) proposing an Abstract Token Curriculum (ATC) as an alternative to chain-of-thought. Rather"
+          },
+          {
+            "id": 2101925393322091005,
+            "date": "2026-09-21",
+            "author": "Annatar.md",
+            "url": "https://x.com/annatarxbt/status/2101925393322091005",
+            "summary": "Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowledge graph), procedu"
+          },
+          {
+            "id": 2099952282217615827,
+            "date": "2026-09-16",
+            "author": "Yarchi",
+            "url": "https://x.com/undefinedki/status/2099952282217615827",
+            "summary": "Summarizes Airbnb's published method for mapping what a support assistant will face before launch, which they encoded as a reusable pipeline after redoing the w"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "vibecode-to-production via agent skills",
+        "description": "Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.",
+        "count": 52,
+        "recent_count": 2,
+        "last_post_date": "2026-09-26",
+        "top_posts": [
+          {
+            "id": 2103551860590116904,
+            "date": "2026-09-26",
+            "author": "qwinsi",
+            "url": "https://x.com/qwinsi0x/status/2103551860590116904",
+            "summary": "Engagement-farmed pitch for an AI backtesting product (join.horizon.trade affiliate link), built around Liang Wenfeng and the DeepSeek-affiliated hedge fund. Th"
+          },
+          {
+            "id": 2102939757080617014,
+            "date": "2026-09-23",
+            "author": "Viv",
+            "url": "https://x.com/vtrivedy10/status/2102939757080617014",
+            "summary": "Viv of LangChain responds to Yash Patil's argument that traces are a company's most under-leveraged asset and that cheap System One models like Jev open new arc"
+          },
+          {
+            "id": 2099976021311398230,
+            "date": "2026-09-16",
+            "author": "Aaron Levie",
+            "url": "https://x.com/levie/status/2099976021311398230",
+            "summary": "Aaron Levie (Box) argues there is a large gap between raw model capability and the workflows enterprises actually want automated, and that the 'applied AI layer"
           }
         ]
       }
