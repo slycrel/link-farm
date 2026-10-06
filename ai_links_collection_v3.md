@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-10-05T15:03:44Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-10-06T15:12:58Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-09-29** — [Jason Weston](https://x.com/jaseweston/status/2104564368792854860) — *near-term • Research • 202.8K views • v1 enriched*  
@@ -32,15 +32,15 @@
     - 2026-09-29 — [OpenAI](https://developers.openai.com/blog/codex-as-a-platform): OpenAI Codex as an agent harness platform. Open-source harness for building domain-specific agent applications. Separates the reusable agent…
     - 2026-09-26 — [Dhravya Shah](https://x.com/dhravyashah/status/2103668051468300701): Supermemory open-sourced its discontinued 'company brain' product — a multi-player agent harness — at github.com/supermemoryai/company-brain…
 
-- **vector / hybrid databases as agent-memory infrastructure** (57 posts, +2 this week)  
-  HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
-    - 2026-09-23 — [Gill](https://x.com/gurtej__gill_/status/2102777314551410833): Endorsement of a Berkeley + DeepMind paper (arxiv.org/pdf/2609.19717) proposing an Abstract Token Curriculum (ATC) as an alternative to chai…
-    - 2026-09-21 — [Annatar.md](https://x.com/annatarxbt/status/2101925393322091005): Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowl…
-
 - **vibecode-to-production via agent skills** (52 posts, +2 this week)  
   Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
     - 2026-09-26 — [qwinsi](https://x.com/qwinsi0x/status/2103551860590116904): Engagement-farmed pitch for an AI backtesting product (join.horizon.trade affiliate link), built around Liang Wenfeng and the DeepSeek-affil…
     - 2026-09-23 — [Viv](https://x.com/vtrivedy10/status/2102939757080617014): Viv of LangChain responds to Yash Patil's argument that traces are a company's most under-leveraged asset and that cheap System One models l…
+
+- **managing agent teams** (25 posts, +2 this week)  
+  Running and managing fleets of agents: multi-agent teams, agent orchestration for teams, onboarding/managing agents, org adoption of coding agents.
+    - 2026-09-26 — [Xudong Han](https://x.com/xudong07452910/status/2103650764912476432): Summary (translated from Chinese) of Anthropic's guide on preparing for AI-driven code modernization. The argument: modernization projects t…
+    - 2026-09-26 — [Ryven](https://x.com/imryven/status/2103596797063242013): Argument against building agent workflows as a straight line when most steps don't actually depend on the previous one's output. The 90-seco…
 
 
 ### Revisit from last month
