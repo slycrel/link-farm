@@ -1,23 +1,282 @@
 [
   {
+    "date": "2026-10-08",
+    "author": "Kun Chen",
+    "handle": "@kunchenguid",
+    "subject": "Post by Kun Chen on X",
+    "url": "https://x.com/kunchenguid/status/2108030810691629403",
+    "summary": "Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5.5 from writing its own tests slightly improved success rate (non-significant) while significantly cutting time and tokens — agent-written unit/integration tests add no value because both the tests and the implementation are the same interpretation of intent. Disabling execution of even existing tests on a 44-task subset also had no effect. Explicitly scoped: doesn't cover human-specified test cases or e2e tests (a follow-up eval is planned). 184.9K views.",
+    "topics": [
+      "dev-practices",
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "184.9K",
+    "notes": "",
+    "enriched": true,
+    "content": "AI-written unit tests and integration tests are empirically proven to be unhelpful — tell your agents to stop writing tests by themselves. On the deepswe eval set, banning Sonnet 5.5 high from writing any tests resulted in slightly higher success rate (non stat-sig) with less time and tokens (stat-sig). Of tests written by the tests-allowed baseline arm, 65% unit / 35% integration — neither bucket improved outcomes. A 44-task subset with even existing-test execution disabled showed no effect on success rate. Spot-checking: most agent tests simply repeat the implementation — both are the agent's interpretation of intent, so the tests are no more accurate than the implementation. Open questions: human-articulated test cases may still add value; e2e tests untested (only 17 written vs 3000+ unit/integration) — separate eval coming.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-08",
+    "author": "Juncheng Yang",
+    "handle": "@1a1a11a",
+    "subject": "Post by Juncheng Yang on X",
+    "url": "https://x.com/1a1a11a/status/2107960379917652296",
+    "summary": "Juncheng Yang (Harvard MAD Systems) releases the largest agentic LLM inference trace dataset: 206B tokens, 12,002 sessions, 1.19M LLM requests and 1.21M tool calls with tool names, arguments and durations (huggingface.co/datasets/harvardMadsys/freeinference_agentic_trace; opendata.agentic-system.org). Paper forthcoming — raw material for anyone studying real agent workload shapes, caching, or serving economics.",
+    "topics": [
+      "research",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "12.4K",
+    "notes": "",
+    "enriched": true,
+    "content": "The largest agentic LLM inference dataset has arrived! 206B tokens, 12,002 sessions, 1,186,582 LLM requests, 1,213,347 tool calls. Traces include tool names, arguments, durations, and more. Paper coming soon.\n\nDataset on Hugging Face\n\nProject site",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-08",
+    "author": "Akshay Pachaar",
+    "handle": "@akshay_pachaar",
+    "subject": "Post by Akshay 🚀 on X",
+    "url": "https://x.com/akshay_pachaar/status/2107933081093210124",
+    "summary": "Akshay Pachaar introduces Laya (github.com/NandhaKishorM/laya, Apache 2.0) — an open-source local alternative to Jev for typed decision-making: encoder-based scoring of fixed answer sets with [MASK] markers, returning calibratable probabilities, ~35ms locally vs ~380ms for Jev over the network. Honest trade-off framing: Jev gives stronger zero-shot decisions; Laya gives speed, privacy and control but needs fine-tuning and calibration on your own task. Quotes his earlier 'Jev Clearly Explained' article.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "15.2K",
+    "notes": "",
+    "enriched": true,
+    "content": "A faster, 100% open-source alternative to Jev: Laya. Both solve the same problem — unstructured state plus typed questions, returning probabilities instead of prose. Jev is a closed hosted API, zero-shot, up to 255 options. Laya is Apache 2.0, runs locally on open-weight encoder models: routes by language, creates one sequence per question with [MASK] markers per option, scores with a bidirectional encoder + decision head, softmax to probabilities, batches questions in one call. Independent test: ~35ms local GPU vs ~380ms Jev over network. Not a drop-in replacement: Jev is a hosted generalist strong zero-shot; Laya is a fast base you fine-tune and calibrate for a stable answer set, routing uncertain decisions to a stronger model or human.\n\nLaya repo\n\n(Quoted: his own Sep 18 X article \"Jev Clearly Explained\")",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-08",
+    "author": "ClaudeDevs",
+    "handle": "@claudedevs",
+    "subject": "Post by ClaudeDevs on X",
+    "url": "https://x.com/claudedevs/status/2107925762720326090",
+    "summary": "ClaudeDevs: computer-use and browser-use toolsets are now built into the Claude Python and TypeScript SDKs — the SDK runs the action loop and dispatches clicks/keystrokes to drivers, replacing the hand-written mapping loop previously required. 326.4K views.",
+    "topics": [
+      "claude-code",
+      "agent-design",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "326.4K",
+    "notes": "",
+    "enriched": true,
+    "content": "Computer use and browser use toolsets are now built into the Python and TypeScript SDKs for Claude. The API tells you what Claude wants to click or type. Previously you had to write your own loop and map clicks and keystrokes to commands; the SDKs now run the loop and send actions to drivers.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-08",
+    "author": "Mark Ajzenstadt",
+    "handle": "@mardehaym",
+    "subject": "Post by Mark Ajzenstadt on X",
+    "url": "https://x.com/mardehaym/status/2107902643490222168",
+    "summary": "Mark Ajzenstadt (decade running an embedded-engineering firm) pushes back on the FDE hype: cites a Gartner prediction that 70% of enterprises will abandon vendor-FDE-built agentic AI by 2028 over cost and inability to evolve systems independently. His standard: the engagement succeeds only if the client's own team gains capability while decisions are being made — 'what will my team be able to do without you six months from now?' A useful counter-example to the pro-FDE material in the collection.",
+    "topics": [
+      "management",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "24.8K",
+    "notes": "",
+    "enriched": true,
+    "content": "Hot take: forward-deployed engineering is overrated. Gartner predicts by 2028, 70% of enterprises will abandon agentic AI built by vendor forward-deployed engineers, citing rising costs and inability to evolve those systems independently. A decade running an embedded engineering company: shipping the first version tells you very little about what the client can do next. If your engineer becomes indispensable while the client's team learns nothing, question how successful that engagement really is. We embed engineers and transfer how we work — scoping, code review, surfacing blockers, connecting technical decisions to business results. A handover document won't achieve that; their people need to be involved while decisions are made. Before you hire an FDE, ask: what will my team be able to do without you six months from now?",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-08",
+    "author": "mem0",
+    "handle": "@mem0ai",
+    "subject": "Post by mem0 on X",
+    "url": "https://x.com/mem0ai/status/2107873474517889201",
+    "summary": "mem0's X-article breakdown of Jev-Mem (arxiv.org/pdf/2609.23986, github.com/libingzheren/Jev-Mem) — a UT Dallas architecture that uses Jev as a System One controller for agent memory: typed/batched/bounded decisions (memory typing, relation edges, retrieval routing and stopping) replace LLM calls on the memory path, with the LLM only writing final answers. Reports +11% LoCoMo answer quality, 6.6x faster memory construction, 36.7% lower latency vs baselines, but mem0 is candid that the thresholds (0.60 edge, 0.95 stop) are uncalibrated and tested on one benchmark with one model — calibrate on your own data before trusting them. Ends with a pattern for dropping a typed classifier between Mem0 search and your LLM.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "38K",
+    "notes": "",
+    "enriched": true,
+    "content": "Jev-Mem: Memory Decisions Without an LLM. Jev-Mem shows that memory decisions don't need an LLM that writes sentences. A new paper from UT Dallas (Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents, arXiv:2609.23986) uses Jev — TypeSafe AI's model that answers structured questions (Noul yes/no, Choice) with numbers instead of prose — as a System One controller for agent memory. Write path: Jev types each memory (episodic/semantic/procedural/preference, overlapping), cheap search picks <=10 candidates, Jev judges relations (edge at 0.60). Read path: Jev scores which relation types a query needs, sets search budget, scores candidates, decides when to stop; only then does the LLM see anything. Two strong ideas: keep everything + pick later (no admission filtering), and consolidation that links rather than deletes. Results on LoCoMo w/ GPT-4o-mini: 0.777 vs 0.700 judge score (+11%), 6.6x faster memory construction, 36.7% lower query latency. Caveats mem0 raises: one benchmark/one model, construction-time vs query speed conflation, no tail latency, controller contribution only partly isolated (baseline MAGMA is same group), and the whole design runs on uncalibrated thresholds (edge 0.60, stop at 0.95) tested with one model on one benchmark. Takeaway: a fast classifier can make memory decisions, but calibrate its scores on your own data before trusting its thresholds.\n\nJev-Mem paper\n\nJev-Mem repo\n\nTypeSafe AI System One models / Jev intro",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-08",
+    "author": "AI Edge",
+    "handle": "@aiedge_",
+    "subject": "Post by AI Edge on X",
+    "url": "https://x.com/aiedge_/status/2107835983735787568",
+    "summary": "AI Edge's hype-packaged but concretely useful setup guide for pairing Opus 5.5 with Jev in Claude Code: Jev scores/sorts/filters so Opus only sees what needs real reasoning, with the TypeSafe skill pack (claude plugin install typesafe@typesafe-ai), confidence-based routing (high=auto, medium=Opus, low=human), atomic questions, and all thresholds in one reviewable config. Includes full prompts for inbox-triage, research-filter and content-grader workflows. Newsletter-funnel packaging ('10x Your Output'), hence the questionable tag — the workflow patterns themselves are real.",
+    "topics": [
+      "agent-design",
+      "claude-code",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "160.2K",
+    "notes": "",
+    "enriched": true,
+    "content": "Opus 5.5 + Jev: The Complete Setup (10x Your Output). X article: run Opus 5.5 for deep reasoning and route small tasks through Jev for cheap fast decisions. Jev judges (choice/score/true-false with confidence), Opus thinks, code executes. Setup walkthrough: test at jevplayground.com, get API key at console.typesafe.ai/keys, set Claude Code to Opus 5.5, install the TypeSafe skill pack (claude plugin marketplace add typesafe-ai/skills; claude plugin install typesafe@typesafe-ai), connect apps. Principles: map workflow steps into judgment (Jev) vs thinking (Opus) vs action (code); write atomic questions; route by confidence (high=code acts, medium=Opus reviews, low=human); keep questions and thresholds in one config file; test small then schedule. Example workflows: inbox triage, research filter, content grader. Pro tip: Jev as a final-pass quality check (Jev -> Opus -> Jev).",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-08",
+    "author": "Tech with Mak",
+    "handle": "@technmak",
+    "subject": "Post by Tech with Mak on X",
+    "url": "https://x.com/technmak/status/2107678022094790933",
+    "summary": "A thorough primer arguing inference engineering is an underrated skill set: the prefill/decode split (compute-bound vs memory-bandwidth-bound) and how it motivates FlashAttention, PagedAttention, MQA/GQA, continuous batching, chunked prefill, prefix caching, quantization and speculative decoding; multi-GPU parallelism trade-offs; and why TTFT/ITL/goodput beat raw tokens-per-second for evaluating a serving system, with a diagnostic map from each metric to its likely bottleneck.",
+    "topics": [
+      "research",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "15.4K",
+    "notes": "",
+    "enriched": true,
+    "content": "Inference Engineering is becoming one of the most important skill sets in AI. Once a model serves real traffic: queueing, batching, KV-cache capacity, GPU memory, scheduling, kernel efficiency, tail latency. Prefill (parallel, compute-bound) vs decode (autoregressive, memory-bandwidth-bound) split explains most of modern inference engineering: FlashAttention, PagedAttention, MQA/GQA, continuous batching, chunked prefill, prefix caching, quantization, speculative decoding. Scaling adds tensor/pipeline/data/expert parallelism; DistServe separates prefill and decode GPU pools. Tokens/sec is incomplete — watch TTFT, ITL, goodput, KV-cache occupancy, tail latency. High TTFT points at queueing/scheduling/prefill; poor ITL at decode/memory bandwidth; OOMs under concurrency at combined memory pressure. No single optimization fixes everything.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-08",
+    "author": "Boris Cherny",
+    "handle": "@bcherny",
+    "subject": "Post by Boris Cherny on X",
+    "url": "https://x.com/bcherny/status/2107565388250874193",
+    "summary": "Boris Cherny (creator of Claude Code) on how he actually prompts Claude: talk to it like a coworker — no heavy scaffolding. The prompt-engineering era mattered in Sonnet 3.5 days; now what matters is communicating (1) what you want done, (2) how much effort to spend, (3) how the model should verify it did the right thing. 1.2M views.",
+    "topics": [
+      "prompting",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "1.2M",
+    "notes": "",
+    "enriched": true,
+    "content": "I am surprised that people are surprised this is how I prompt Claude. Talk to Claude the way you would a coworker. There's no secret to prompting. There's no need to be overly scaffolded or prescriptive for most tasks -- give Claude a goal, and it will figure it out. Back in the Sonnet 3.5 days, your prompt mattered a lot. Nowadays, it's much more important to communicate to the model: 1. What you want it to do 2. How much effort you want it to spend 3. How it should verify that it did the right thing\n\n(Quoted: his own Oct 6 post showing the actual prompt he used — \"Prompt\")",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-08",
+    "author": "Gipp",
+    "handle": "@gippp69",
+    "subject": "Post by Gipp 🦅 on X",
+    "url": "https://x.com/gippp69/status/2106744347836153989",
+    "summary": "Gipp's cost-math deep dive on Opus 5.5 vs Sonnet 5.5 in agent loops: because cache reads price identically ($0.20/M), the effective per-turn gap falls from 2x to ~1.26x at 400K context, and the real money sink is the escalation tax — switching models at 300K context costs $1.50 in re-caching vs $0.10 with a clean 20K handoff (task + failing check + 3 files, never the transcript). Worked break-even math, a Python script to compute $/turn and $/pass from your own usage logs, a model-routing decision table, and a candid untested-assumptions section. Directly relevant to anyone running long Claude Code sessions.",
+    "topics": [
+      "claude-code",
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "186.9K",
+    "notes": "",
+    "enriched": true,
+    "content": "Opus 5.5 Is 2x the Price on Paper. In a Long Agent Loop It's 1.26x. Cache reads cost $0.20/M on both Sonnet 5.5 and Opus 5.5, so as context grows the per-turn cost ratio shrinks from ~1.9x (20K context) to 1.26x (400K). Cost per task = cost per turn x turns to finish: at 150K context Opus breaks even by finishing in ~33% fewer turns (30 Sonnet turns at $0.0588 = $1.76 vs 20 Opus turns at $0.0875 = $1.75). The escalation tax: caches are per-model, so switching a 300K session mid-task costs $1.50 just to re-cache — escalate early (decide by turn ~6) or escalate clean (new session with a 20K handoff: task, failing check, 3 files — not the transcript). Coffee-break tax: 5-min cache miss at 150K costs $0.38/$0.75; 1-hour cache pays off at one avoided miss per ~45 turns. Includes a usage.jsonl analysis script to measure $/turn, avg turns and $/pass per model on your own logs, a decision table, and an honest what-I-haven't-tested section (turn shape, turn-count gap, miss rates are assumptions).",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-09-29",
     "author": "Kisson",
     "handle": "@kissonl",
     "subject": "Post by Kisson on X",
     "url": "https://x.com/kissonl/status/2104726600747213235",
-    "summary": "",
+    "summary": "Kisson flags CLM (github.com/Contrastive-LM/CLM), a contrastive 'System One' decision model competing with Jev: it embeds states and actions separately and scores them contrastively, so action embeddings are cached and reused across calls — claiming up to 9x faster than Jev on their own benchmark. Small post (235 views) but adds a second architecture to the decision-model space Jeremy has been tracking.",
     "topics": [
+      "agent-design",
       "research"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "235",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "unattempted"
+    "enriched": true,
+    "content": "came across CLM today, another fast 'system one' decision model, and I think the trick is neat. it embeds states and actions separately and scores them contrastively, so action embeddings get cached and reused. up to 9x faster than Jev on their bench.\n\nCLM repo",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-09-29",
@@ -25,19 +284,23 @@
     "handle": "@omarsar0",
     "subject": "Post by elvis on X",
     "url": "https://x.com/omarsar0/status/2104706308163420452",
-    "summary": "",
+    "summary": "elvis (omarsar0) recommends David George's essay 'OpenAI Understands Something Important and Rare': beneath the modest title, an argument about what actually drives AI product distribution and defensibility in a crowded market, built on Drucker's 'the purpose of a business is to create a customer' as the lens on OpenAI's strategy. Useful strategy reading for anyone positioning AI products.",
     "topics": [
-      "research"
+      "industry"
     ],
     "audience": [
-      "me"
+      "me",
+      "leadership"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "17.7K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "unattempted"
+    "enriched": true,
+    "content": "Recommended read if you are building AI products. Title doesn't say much. There is a lot of great insights on what drives AI distribution and how to build defensibility in a super competitive AI landscape.\n\n(Quoted: David George, Sep 28 X article \"OpenAI Understands Something Important and Rare\" — on Drucker's 'the purpose of a business is to create a customer' applied to OpenAI's distribution strategy.)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-09-29",
@@ -45,19 +308,24 @@
     "handle": "@completeskeptic",
     "subject": "Post by Diogo Almeida on X",
     "url": "https://x.com/completeskeptic/status/2104682600103284917",
-    "summary": "",
+    "summary": "TypeSafe founder Diogo Almeida responds to Zhaorun Chen's red-team of Jev 1.13 on the DecodingTrust-Agent Platform — 70.1% attack success rate under direct misuse and 43.5% under indirect prompt injection — by endorsing the work and arguing the mitigation is engineering around the primitive ('program the behavior you want') rather than trusting the model. A notable data point that System One decision models inherit prompt-injection exposure, and the vendor's own framing of where safety responsibility sits.",
     "topics": [
+      "agent-design",
       "research"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "36K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "unattempted"
+    "enriched": true,
+    "content": "great example of doing real engineering around a simple primitive!!! don't just plug jev into high-level decisions, but program the behavior you want! (sounds so weird to tell people to program, but man is it cool)\n\n(Quoted: Zhaorun Chen, Sep 26 — red-teamed Jev 1.13 on DTap (DecodingTrust-Agent Platform) and found a serious safety gap: 70.1% attack success rate under direct misuse, 43.5% under indirect prompt injection.)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-09-29",
@@ -65,19 +333,25 @@
     "handle": "@claudedevs",
     "subject": "Post by ClaudeDevs on X",
     "url": "https://x.com/claudedevs/status/2104676099083190435",
-    "summary": "",
+    "summary": "ClaudeDevs announcement (2M views): official guidance plus skills for having Claude Code design evaluations and hillclimb on them to improve your applications — eval design as an automatable loop rather than a hand-built artifact. Blog post on claude.dev. Directly actionable for the team's eval work.",
     "topics": [
-      "research"
+      "claude-code",
+      "dev-practices",
+      "agent-design"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
-    "priority": "near-term",
+    "priority": "now",
     "sourceType": "tweet",
-    "views": "",
+    "views": "2M",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "unattempted"
+    "enriched": true,
+    "content": "Claude can now help you build evaluations and hillclimb on them. In this article, we share guidance on eval design & skills that Claude Code can use to improve your applications. (Links claude.dev blog: Automating eval design and hillclimbing with Claude)\n\nAutomating eval design and hillclimbing with Claude — claude.dev blog",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-09-29",
@@ -85,19 +359,24 @@
     "handle": "@hwchase17",
     "subject": "Post by Harrison Chase on X",
     "url": "https://x.com/hwchase17/status/2104610254000635952",
-    "summary": "",
+    "summary": "Harrison Chase (LangChain) amplifies Assaf Elovic's experiment replacing embeddings with Jev in GPT Researcher's RAG pipeline: 73% vs 46% relevant context across 28 SimpleQA/open-ended research tasks, with reports preferred on every measure. Chase's framing — 'retrieval is a decision problem, not just a similarity problem; decision models will show up all over the harness' — is a notable third-party endorsement of the decision-model-in-the-harness thesis.",
     "topics": [
+      "agent-design",
       "research"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "46.4K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "unattempted"
+    "enriched": true,
+    "content": "retrieval is a decision problem, not just a similarity problem. cool experiment from @assaf_elovic swapping embeddings for Jev in GPT Researcher — 73% vs 46% relevant context. decision models will show up all over the harness\n\n(Quoted: Assaf Elovic, Sep 28 — replaced embeddings with Jev in GPT Researcher's RAG pipeline, tested on 28 research tasks from SimpleQA and open-ended research; Jev beat embeddings on every quality measure: 59% more relevant context (73% vs 46%), reports preferred.)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-09-29",
@@ -131,19 +410,24 @@
     "handle": "@marfinxx",
     "subject": "Post by marfin on X",
     "url": "https://x.com/marfinxx/status/2104546903488647179",
-    "summary": "",
+    "summary": "marfin's three-model stack for long-horizon agents — Jev for bounded decisions before any token is sampled, GPT-6 Astra for cheap fast execution, Opus 5.5 for deep reasoning — claiming 43.8% token-burn reduction and 0.93s latency, with adaptive retrieval stopping (s_d >= 0.85) and stale-record purging. The suspiciously precise unsourced stats and low reach (1.7K views) earn the questionable tag; the quoted 'Anti-Aging Architecture' article and its $48,600 50-agent failure case study are the interesting part.",
     "topics": [
-      "research"
+      "agent-design",
+      "questionable"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "1,664",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "unattempted"
+    "enriched": true,
+    "content": "jev + opus 5.5 + gpt-6 astra — hard to comprehend why teams still build long-horizon agents without this stack. In production this cuts token burn by 43.8% and drops latency to 0.93s: pre-filter project notes before paying for context; route fast execution to gpt-6 astra at $0.10/M tokens; purge stale records on code mutation with 98.6% freshness; halt retrieval with adaptive stopping when evidence hits s_d >= 0.85. Opus 5.5 handles deep reasoning, Astra high-speed triage, Jev every bounded decision before a single token is sampled.\n\n(Quoted: his own Sep 26 X article \"The Anti-Aging Architecture: Jev Engineering and Long-Horizon Agent Lifespans\" — opens with a 50-agent cluster that burned $48,600 before turn 25 broke their memory, on a 14M-line codebase.)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-09-29",
@@ -151,19 +435,24 @@
     "handle": "@imryven",
     "subject": "Post by Ryven on X",
     "url": "https://x.com/imryven/status/2104483221228421380",
-    "summary": "",
+    "summary": "Ryven's 10-step practical ladder for adopting Jev ('the Bitcoin moment for AI' — hype framing, modest 1.6K views): a triage test for which agent calls should leave the LLM (answers enumerable, human-at-a-glance, high frequency), the three primitives, playground-first testing, batching ~8 questions per call, rebuilding the option menu in code every turn, and the overriding rule 'if code already solves it, keep the code.' Quotes his fuller article 'Jev Engineering'.",
     "topics": [
-      "research"
+      "agent-design",
+      "questionable"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "1,619",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "unattempted"
+    "enriched": true,
+    "content": "Jev is the Bitcoin moment for AI: 10,000 decisions cost 42 cents instead of $300. Ten steps: (1) sort your agent's calls — every valid answer listable, human settles at a glance, fires often: three yeses and the call leaves the LLM; (2) state + typed questions -> typed probabilities, nothing to parse; (3) three primitives: Choice (up to 255 options), Score, Noul (probability of yes); (4) pip install typesafe-sdk, key in env, official skill via npx; (5) test one decision in the Playground first; (6) wire end to end — questions evaluated in parallel, your code owns every branch; (7) build the ship/return/escalate gate with blast-radius check; (8) ask eight questions in one call — marginal latency is tiny; (9) rebuild the choice menu every turn, filtered in code before Jev chooses; (10) add the harness: middleware checking every tool call, router picking the cheapest capable model. Rule above all ten: if code already solves it, keep the code. Receipts: Browser Use flight search 7s/$0.0039; 1,018 papers classified for $0.08; 500 emails for 3.5 cents.\n\n(Quoted: his own Sep 27 X article \"Jev Engineering: How a Model With No Words Is Cutting Agent Bills by 90%\")",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-09-29",
@@ -171,19 +460,25 @@
     "handle": "@mikenevermiss",
     "subject": "Post by MIKE on X",
     "url": "https://x.com/mikenevermiss/status/2104436761032057204",
-    "summary": "",
+    "summary": "MIKE's 'Jev Masterclass' X article (221.8K views): the most complete single write-up of TypeSafe AI's Jev in the collection — origin story (Diogo Almeida, ex-OpenAI RLHF, $40M launch Sept 15 2026), the RLCD calibration bet (0.95 confidence ≈ 95% accuracy, which is what makes decisions automatable), schema-constrained typed outputs, setup across LangChain middleware / Pydantic AI / direct API, four production patterns (model routing, context pruning, command safety gates, intent routing), and an unusually honest numbers section separating TypeSafe's self-reported 193x/444x ceilings from independent 5-18x / 10-20x results. Ends in a follow-me funnel, hence questionable; the content itself is dense and sourced.",
     "topics": [
-      "research"
+      "agent-design",
+      "industry",
+      "questionable"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "221.8K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "unattempted"
+    "enriched": true,
+    "content": "Jev Masterclass — a complete guide to TypeSafe AI's System One model. Diogo Almeida (ex-OpenAI, built RLHF methods behind ChatGPT) launched Jev Sept 15 2026 with a $40M round: a model that gives up text generation entirely — read a state, answer typed questions (Choice up to 255 options, Score, Boolean/Noul), return calibrated probabilities. 'A frontier-intelligence function call: unstructured state in, typed probabilistic decisions out.' Fastest-adopted model in Vercel AI Gateway history (13% of paid teams in 24h). Trained with Reinforcement Learning for Calibrated Decisions (RLCD) so a 0.95-confidence answer is right ~95% of the time — that is what makes decisions automatable (act above threshold, route below to human). Schema-constrained output: no parsing, no retries, no type errors. Named for Jevons paradox: cheaper intelligence unlocks more demand. Model jev-1.13.0, POST /v1/systemone, 64k context, text only. Integrations: LangChain AutoModeMiddleware (pre-execution tool-call gating), Pydantic AI TypeSafeModel with FallbackModel confidence routing, direct API; plugins for Cursor, Codex, OpenCode, Vercel AI Gateway. Four patterns: model routing (Vercel engineer: 5-18x faster than a GPT-5.6 Luna safety classifier), context pruning (1M-token Claude session compacted to 86K in under a second), command safety gates, intent routing (Bryo AI: 10-20x cheaper than Gemini, and the only one returning actionable probabilities). TypeSafe's own numbers (193.6x faster / 444.6x cheaper) are self-reported ceilings; independent data is 5-18x and 10-20x.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-09-29",
@@ -191,19 +486,24 @@
     "handle": "@res1dualedge",
     "subject": "Post by Residual on X",
     "url": "https://x.com/res1dualedge/status/2104300857928098075",
-    "summary": "",
+    "summary": "Engagement-farmed pointer (1.6M views, 'save this' hook, attributes the course to Andrew Ng while actually quoting Hanako's Aug 23 X article 'Loops and Graphs') to a 2-hour course on progressing Prompts -> Agents -> Loops -> Graphs: loop engineering for self-checking agents, graph engineering for composing them, ending with agents that rewrite themselves and a full graph system that runs without babysitting. The progression framing is useful; verify the Ng attribution before citing.",
     "topics": [
-      "research"
+      "agent-design",
+      "questionable"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "1.6M",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "unattempted"
+    "enriched": true,
+    "content": "Andrew Ng just dropped the best 2-hour course on Graph Engineering: from single agent to full automation. 9:14 your first agent; 33:11 loop engineering; 1:02:46 graph engineering; 1:30:15 agents that rewrite themselves; 1:49:05 full graph system. Prompts -> Agents -> Loops -> Graphs. Most people will stop after the first agent and call it automation; he saves the last forty minutes for the graph that runs it without him. Save it while it is still early.\n\n(Quoted: Hanako X article, Aug 23 — \"Loops and Graphs: how to stop babysitting agents and only approve the last step (full course)\" — a loop makes agents self-checking; a graph composes loops so you only approve the final step.)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-09-29",
@@ -211,19 +511,24 @@
     "handle": "@ghumare64",
     "subject": "Post by Rohit Ghumare on X",
     "url": "https://x.com/ghumare64/status/2104112175425950177",
-    "summary": "",
+    "summary": "Rohit Ghumare's checklist of what AI engineers should actually learn: a ~24-item syllabus spanning harness and context engineering, inference economics (KV cache, prefill/decode, quantization), structured-output and tool-calling reliability, guardrails and loop budgets, RAG and retrieval evals, observability, cost attribution, safety engineering, and production failure modes — framed as shipping LLM systems as reliable infrastructure rather than demos wrapped around prompts. Links aiengineeringfromscratch.com.",
     "topics": [
-      "research"
+      "dev-practices",
+      "agent-design"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "184.6K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "unattempted"
+    "enriched": true,
+    "content": "As an AI Engineer, please learn: harness engineering not just prompt engineering; context engineering not just long prompts; prompt caching vs semantic caching tradeoffs; KV cache management; prefill vs decode latency; continuous batching, paged attention; speculative decoding vs quantization vs distillation; INT8/INT4/FP8/AWQ/GPTQ and when quantization hurts; structured output failures, schema validation, repair loops; function calling reliability, tool contracts, idempotency; agent guardrails, loop budgets, termination conditions; model routing and degraded-mode UX; RAG architecture and retrieval evals; evals (golden sets, regression, adversarial, LLM-as-judge); LLM observability as first-class; cost attribution per feature/tenant; safety engineering (prompt injection defense, data leakage, permission boundaries); multi-tenant isolation and cache safety; fine-tuning vs ICL vs RAG vs distillation; production failure modes (hallucinated tool calls, malformed JSON, stale retrieval, runaway agents, silent eval regressions); shipping LLM systems as reliable infrastructure, not demos wrapped around prompts. From aiengineeringfromscratch.com",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
   },
   {
     "date": "2026-09-29",

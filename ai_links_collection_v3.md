@@ -1,46 +1,52 @@
 # AI Links Collection
-**Total Posts**: 939  
-**Date Range**: 2024-06-11 – 2026-09-29  
-**Enriched**: 928/939 (98%)
+**Total Posts**: 949  
+**Date Range**: 2024-06-11 – 2026-10-08  
+**Enriched**: 948/949 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-10-06T15:12:58Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-10-08T15:23:07Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
-- **2026-09-29** — [Jason Weston](https://x.com/jaseweston/status/2104564368792854860) — *near-term • Research • 202.8K views • v1 enriched*  
-  Solving AI slop via expert-aligned rubrics (RL-XAR). Trained on expert writing to find gaps between expert and model output. Shows gains on scientific papers, novel continuations, Wikipedia.
-- **2026-09-29** — [OpenAI](https://developers.openai.com/blog/codex-as-a-platform) — *near-term • Agent Design • v1 enriched*  
-  OpenAI Codex as an agent harness platform. Open-source harness for building domain-specific agent applications. Separates the reusable agent loop (Codex) from application-specific context, tools, and approval flows. Integration options: exec, SDK, app-server.
+- **2026-10-08** — [Kun Chen](https://x.com/kunchenguid/status/2108030810691629403) — *now • Dev Practices • 184.9K views • v1 enriched*  
+  Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5.5 from writing its own tests slightly improved success rate (non-significant) while significantly cutting time and tokens — agent-written unit/integration tests add no value because both the tests and the implementation are the same interpretation of intent. Disabling execution of even existing tests on a 44-task subset also had no effect. Explicitly scoped: doesn't cover human-specified test cases or e2e tests (a follow-up eval is planned). 184.9K views.
+- **2026-10-08** — [ClaudeDevs](https://x.com/claudedevs/status/2107925762720326090) — *now • Claude Code • 326.4K views • v1 enriched*  
+  ClaudeDevs: computer-use and browser-use toolsets are now built into the Claude Python and TypeScript SDKs — the SDK runs the action loop and dispatches clicks/keystrokes to drivers, replacing the hand-written mapping loop previously required. 326.4K views.
+- **2026-10-08** — [Juncheng Yang](https://x.com/1a1a11a/status/2107960379917652296) — *near-term • Research • 12.4K views • v1 enriched*  
+  Juncheng Yang (Harvard MAD Systems) releases the largest agentic LLM inference trace dataset: 206B tokens, 12,002 sessions, 1.19M LLM requests and 1.21M tool calls with tool names, arguments and durations (huggingface.co/datasets/harvardMadsys/freeinference_agentic_trace; opendata.agentic-system.org). Paper forthcoming — raw material for anyone studying real agent workload shapes, caching, or serving economics.
+- **2026-10-08** — [Akshay Pachaar](https://x.com/akshay_pachaar/status/2107933081093210124) — *near-term • Agent Design • 15.2K views • v1 enriched*  
+  Akshay Pachaar introduces Laya (github.com/NandhaKishorM/laya, Apache 2.0) — an open-source local alternative to Jev for typed decision-making: encoder-based scoring of fixed answer sets with [MASK] markers, returning calibratable probabilities, ~35ms locally vs ~380ms for Jev over the network. Honest trade-off framing: Jev gives stronger zero-shot decisions; Laya gives speed, privacy and control but needs fine-tuning and calibration on your own task. Quotes his earlier 'Jev Clearly Explained' article.
+- **2026-10-08** — [Mark Ajzenstadt](https://x.com/mardehaym/status/2107902643490222168) — *near-term • Management • 24.8K views • v1 enriched*  
+  Mark Ajzenstadt (decade running an embedded-engineering firm) pushes back on the FDE hype: cites a Gartner prediction that 70% of enterprises will abandon vendor-FDE-built agentic AI by 2028 over cost and inability to evolve systems independently. His standard: the engagement succeeds only if the client's own team gains capability while decisions are being made — 'what will my team be able to do without you six months from now?' A useful counter-example to the pro-FDE material in the collection.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **applied decision-model routing — gating agents with Jev** (32 posts, +11 this week)  
+- **applied decision-model routing — gating agents with Jev** (30 posts, +12 this week)  
   Discovered by orphan clustering on 2026-09-28 (6 posts, cohesion 0.66); renamed in-session. The *applied* side of System One / decision models: putting a non-generative decision model in front of an agent as a gate, router, verifier or judge, plus the libraries and framework integrations that make that practical (AnyJev, DSPy, LangGraph, Claude Code hooks). Deliberately distinct from #74 'System One models — bounded decisions as a primitive', which holds the concept itself and was frozen out of centroid scoring after the 2026-09-25 magnet rollback; because #74 can no longer recruit by cosine, the live Jev conversation could not reach it and formed this cluster instead. On 2026-09-28 #74's 11 canonical edges were demoted to weak so it became a secondary-only grouping tag, releasing its members to re-home here or elsewhere. NOTE: do not write the centroid-scoring opt-out marker as a literal string in this description — the eligibility check is a plain substring match over the whole description, so merely mentioning it silently disables semantic scoring for this concept (hit for real on 2026-09-28).
-    - 2026-09-26 — [Yarchi](https://x.com/undefinedki/status/2103577751924207831): A concrete gating setup: put a decision model in front of the agent so ~90% of requests never reach the frontier model, reportedly cutting t…
-    - 2026-09-26 — [alphaXiv](https://x.com/askalphaxiv/status/2103368968014848400): Paper 'JEV-as-a-Judge: Accept When Confident, Escalate When Unsure' (alphaxiv.org/abs/2609.26550) proposes using a cheap decision model as t…
+    - 2026-09-29 — [Diogo Almeida](https://x.com/completeskeptic/status/2104682600103284917): TypeSafe founder Diogo Almeida responds to Zhaorun Chen's red-team of Jev 1.13 on the DecodingTrust-Agent Platform — 70.1% attack success ra…
+    - 2026-09-29 — [Ryven](https://x.com/imryven/status/2104483221228421380): Ryven's 10-step practical ladder for adopting Jev ('the Bitcoin moment for AI' — hype framing, modest 1.6K views): a triage test for which a…
 
-- **Claude Code setup & usage** (69 posts, +3 this week)  
+- **vector / hybrid databases as agent-memory infrastructure** (62 posts, +5 this week)  
+  HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
+    - 2026-10-08 — [Juncheng Yang](https://x.com/1a1a11a/status/2107960379917652296): Juncheng Yang (Harvard MAD Systems) releases the largest agentic LLM inference trace dataset: 206B tokens, 12,002 sessions, 1.19M LLM reques…
+    - 2026-10-08 — [mem0](https://x.com/mem0ai/status/2107873474517889201): mem0's X-article breakdown of Jev-Mem (arxiv.org/pdf/2609.23986, github.com/libingzheren/Jev-Mem) — a UT Dallas architecture that uses Jev a…
+
+- **Claude Code setup & usage** (72 posts, +4 this week)  
   Claude Code setup guides, cheatsheets, starter packs, and day-to-day usage / steering practices.
-    - 2026-09-26 — [Vox](https://x.com/voxyz_ai/status/2103586663393853636): Turns Thariq's effort findings into a concrete two-subagent Claude Code workflow. The four-step loop for new features: have Claude ask quest…
-    - 2026-09-26 — [darkzodchi](https://x.com/zodchiii/status/2103457649526206529): Hype-packaged endorsement ('beats any paid agent course I've seen') of an hour-long talk by an Anthropic engineer on Opus 5.5 agent engineer…
+    - 2026-09-29 — [ClaudeDevs](https://x.com/claudedevs/status/2104676099083190435): ClaudeDevs announcement (2M views): official guidance plus skills for having Claude Code design evaluations and hillclimb on them to improve…
+    - 2026-09-29 — [Residual](https://x.com/res1dualedge/status/2104300857928098075): Engagement-farmed pointer (1.6M views, 'save this' hook, attributes the course to Andrew Ng while actually quoting Hanako's Aug 23 X article…
 
-- **agent harness engineering** (57 posts, +3 this week)  
+- **agent harness engineering** (58 posts, +3 this week)  
   Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
     - 2026-09-29 — [OpenAI](https://developers.openai.com/blog/codex-as-a-platform): OpenAI Codex as an agent harness platform. Open-source harness for building domain-specific agent applications. Separates the reusable agent…
-    - 2026-09-26 — [Dhravya Shah](https://x.com/dhravyashah/status/2103668051468300701): Supermemory open-sourced its discontinued 'company brain' product — a multi-player agent harness — at github.com/supermemoryai/company-brain…
+    - 2026-09-29 — [Rohit Ghumare](https://x.com/ghumare64/status/2104112175425950177): Rohit Ghumare's checklist of what AI engineers should actually learn: a ~24-item syllabus spanning harness and context engineering, inferenc…
 
-- **vibecode-to-production via agent skills** (52 posts, +2 this week)  
-  Long-form agent refactors a sloppy MVP into production-ready code. swyx 16-hour 103-commit experiment.
-    - 2026-09-26 — [qwinsi](https://x.com/qwinsi0x/status/2103551860590116904): Engagement-farmed pitch for an AI backtesting product (join.horizon.trade affiliate link), built around Liang Wenfeng and the DeepSeek-affil…
-    - 2026-09-23 — [Viv](https://x.com/vtrivedy10/status/2102939757080617014): Viv of LangChain responds to Yash Patil's argument that traces are a company's most under-leveraged asset and that cheap System One models l…
-
-- **managing agent teams** (25 posts, +2 this week)  
-  Running and managing fleets of agents: multi-agent teams, agent orchestration for teams, onboarding/managing agents, org adoption of coding agents.
-    - 2026-09-26 — [Xudong Han](https://x.com/xudong07452910/status/2103650764912476432): Summary (translated from Chinese) of Anthropic's guide on preparing for AI-driven code modernization. The argument: modernization projects t…
-    - 2026-09-26 — [Ryven](https://x.com/imryven/status/2103596797063242013): Argument against building agent workflows as a straight line when most steps don't actually depend on the previous one's output. The 90-seco…
+- **agent identity files (SOUL.md, CLAUDE.md, persona scaffolds)** (20 posts, +3 this week)  
+  Recurring pattern of giving an agent a persistent identity file that loads automatically and shapes behavior.
+    - 2026-10-08 — [Kun Chen](https://x.com/kunchenguid/status/2108030810691629403): Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5.5 from writing its own tests slightly improved success rate (non-sign…
+    - 2026-09-26 — [DAIR.AI](https://x.com/dair_ai/status/2103479392106352910): Microsoft paper (CASD) arguing that handing a coding agent your full set of agent logs and letting it write the analysis code beats running …
 
 
 ### Revisit from last month
@@ -53,34 +59,44 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 559 | 59.5% |
-| claude-code | 206 | 21.9% |
-| dev-practices | 406 | 43.2% |
-| skills-mcp | 207 | 22.0% |
-| prompting | 141 | 15.0% |
-| research | 264 | 28.1% |
-| industry | 138 | 14.7% |
-| management | 143 | 15.2% |
+| agent-design | 575 | 60.6% |
+| claude-code | 211 | 22.2% |
+| dev-practices | 411 | 43.3% |
+| skills-mcp | 208 | 21.9% |
+| prompting | 142 | 15.0% |
+| research | 262 | 27.6% |
+| industry | 141 | 14.9% |
+| management | 144 | 15.2% |
 | adjacent | 48 | 5.1% |
-| solo-operator | 9 | 1.0% |
-| questionable | 143 | 15.2% |
-| general | 100 | 10.6% |
+| solo-operator | 9 | 0.9% |
+| questionable | 148 | 15.6% |
+| general | 100 | 10.5% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
-| 2026-09-29 | Kisson | research |  |
-| 2026-09-29 | elvis | research |  |
-| 2026-09-29 | Diogo Almeida | research |  |
-| 2026-09-29 | ClaudeDevs | research |  |
-| 2026-09-29 | Harrison Chase | research |  |
+| 2026-10-08 | Kun Chen | dev-practices | Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5... |
+| 2026-10-08 | Juncheng Yang | research | Juncheng Yang (Harvard MAD Systems) releases the largest agentic LLM i... |
+| 2026-10-08 | Akshay Pachaar | agent-design | Akshay Pachaar introduces Laya (github.com/NandhaKishorM/laya, Apache... |
+| 2026-10-08 | ClaudeDevs | claude-code | ClaudeDevs: computer-use and browser-use toolsets are now built into t... |
+| 2026-10-08 | Mark Ajzenstadt | management | Mark Ajzenstadt (decade running an embedded-engineering firm) pushes b... |
+| 2026-10-08 | mem0 | agent-design | mem0's X-article breakdown of Jev-Mem (arxiv.org/pdf/2609.23986, githu... |
+| 2026-10-08 | AI Edge | agent-design | AI Edge's hype-packaged but concretely useful setup guide for pairing... |
+| 2026-10-08 | Tech with Mak | research | A thorough primer arguing inference engineering is an underrated skill... |
+| 2026-10-08 | Boris Cherny | prompting | Boris Cherny (creator of Claude Code) on how he actually prompts Claud... |
+| 2026-10-08 | Gipp | claude-code | Gipp's cost-math deep dive on Opus 5.5 vs Sonnet 5.5 in agent loops: b... |
+| 2026-09-29 | Kisson | agent-design | Kisson flags CLM (github.com/Contrastive-LM/CLM), a contrastive 'Syste... |
+| 2026-09-29 | elvis | industry | elvis (omarsar0) recommends David George's essay 'OpenAI Understands S... |
+| 2026-09-29 | Diogo Almeida | agent-design | TypeSafe founder Diogo Almeida responds to Zhaorun Chen's red-team of... |
+| 2026-09-29 | ClaudeDevs | claude-code | ClaudeDevs announcement (2M views): official guidance plus skills for... |
+| 2026-09-29 | Harrison Chase | agent-design | Harrison Chase (LangChain) amplifies Assaf Elovic's experiment replaci... |
 | 2026-09-29 | Jason Weston | research | Solving AI slop via expert-aligned rubrics (RL-XAR). Trained on expert... |
-| 2026-09-29 | marfin | research |  |
-| 2026-09-29 | Ryven | research |  |
-| 2026-09-29 | MIKE | research |  |
-| 2026-09-29 | Residual | research |  |
-| 2026-09-29 | Rohit Ghumare | research |  |
+| 2026-09-29 | marfin | agent-design | marfin's three-model stack for long-horizon agents — Jev for bounded d... |
+| 2026-09-29 | Ryven | agent-design | Ryven's 10-step practical ladder for adopting Jev ('the Bitcoin moment... |
+| 2026-09-29 | MIKE | agent-design | MIKE's 'Jev Masterclass' X article (221.8K views): the most complete s... |
+| 2026-09-29 | Residual | agent-design | Engagement-farmed pointer (1.6M views, 'save this' hook, attributes th... |
+| 2026-09-29 | Rohit Ghumare | dev-practices | Rohit Ghumare's checklist of what AI engineers should actually learn:... |
 | 2026-09-29 | OpenAI | agent-design | OpenAI Codex as an agent harness platform. Open-source harness for bui... |
 | 2026-09-26 | Boris Cherny | claude-code | Boris Cherny endorsing Anthropic's new plugin submission portal — subm... |
 | 2026-09-26 | Mr. Buzzoni | claude-code | X Article on 'jev engineering' for Claude Code — routing the loop's co... |
@@ -110,21 +126,43 @@
 | 2026-09-24 | elvis | agent-design | elvis flags a second entrant in the 'System One model' category behind... |
 | 2026-09-24 | Alex Veremeyenko | research | Summary of 'The Tasteful Agent' (Microsoft + City University of Hong K... |
 | 2026-09-24 | Tanner WJ | agent-design | The Pit (pit.tannerwj.com) is a paper-trading league for AI agents bui... |
-| 2026-09-23 | Viv | agent-design | Viv of LangChain responds to Yash Patil's argument that traces are a c... |
-| 2026-09-23 | Hassan | research | Hassan (Together AI) releases tev1-4B-experimental, a Jev-like decisio... |
-| 2026-09-23 | ClaudeDevs | dev-practices | Anthropic's engineering writeup of a two-week sprint that made claude.... |
-| 2026-09-23 | Avid | agent-design | 3,500-word builder's guide to putting Jev in a coding harness as a bou... |
-| 2026-09-23 | Gill | research | Endorsement of a Berkeley + DeepMind paper (arxiv.org/pdf/2609.19717)... |
-| 2026-09-21 | Annatar.md | agent-design | Five-layer taxonomy for agent memory - working (context window), episo... |
-| 2026-09-20 | Ansh Nanda | dev-practices | Three rules Ansh Nanda keeps at the top of his AGENTS.md to stop codin... |
-| 2026-09-16 | Yarchi | agent-design | Describes Google's Stellar Colosseum, a multi-agent setup published fo... |
-| 2026-09-16 | Nathan Flurry | industry | A deliberately hype-free framing of Jev: not a replacement for GPT or... |
-| 2026-09-16 | Michael | industry | Hands-on report of roughly 5,000 Jev requests for about $2, spanning c... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (559)
+### Agent Design (575)
+
+- [Kun Chen](https://x.com/kunchenguid/status/2108030810691629403) — 2026-10-08: Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5.5 from writing its own tests slightly improved success rate (non-significant) while significantly cutting time and tokens — agent-written unit/integration tests add no value because both the tests and the implementation are the same interpretation of intent. Disabling execution of even existing tests on a 44-task subset also had no effect. Explicitly scoped: doesn't cover human-specified test cases or e2e tests (a follow-up eval is planned). 184.9K views.
+
+- [Juncheng Yang](https://x.com/1a1a11a/status/2107960379917652296) — 2026-10-08: Juncheng Yang (Harvard MAD Systems) releases the largest agentic LLM inference trace dataset: 206B tokens, 12,002 sessions, 1.19M LLM requests and 1.21M tool calls with tool names, arguments and durations (huggingface.co/datasets/harvardMadsys/freeinference_agentic_trace; opendata.agentic-system.org). Paper forthcoming — raw material for anyone studying real agent workload shapes, caching, or serving economics.
+
+- [Akshay Pachaar](https://x.com/akshay_pachaar/status/2107933081093210124) — 2026-10-08: Akshay Pachaar introduces Laya (github.com/NandhaKishorM/laya, Apache 2.0) — an open-source local alternative to Jev for typed decision-making: encoder-based scoring of fixed answer sets with [MASK] markers, returning calibratable probabilities, ~35ms locally vs ~380ms for Jev over the network. Honest trade-off framing: Jev gives stronger zero-shot decisions; Laya gives speed, privacy and control but needs fine-tuning and calibration on your own task. Quotes his earlier 'Jev Clearly Explained' article.
+
+- [ClaudeDevs](https://x.com/claudedevs/status/2107925762720326090) — 2026-10-08: ClaudeDevs: computer-use and browser-use toolsets are now built into the Claude Python and TypeScript SDKs — the SDK runs the action loop and dispatches clicks/keystrokes to drivers, replacing the hand-written mapping loop previously required. 326.4K views.
+
+- [mem0](https://x.com/mem0ai/status/2107873474517889201) — 2026-10-08: mem0's X-article breakdown of Jev-Mem (arxiv.org/pdf/2609.23986, github.com/libingzheren/Jev-Mem) — a UT Dallas architecture that uses Jev as a System One controller for agent memory: typed/batched/bounded decisions (memory typing, relation edges, retrieval routing and stopping) replace LLM calls on the memory path, with the LLM only writing final answers. Reports +11% LoCoMo answer quality, 6.6x faster memory construction, 36.7% lower latency vs baselines, but mem0 is candid that the thresholds (0.60 edge, 0.95 stop) are uncalibrated and tested on one benchmark with one model — calibrate on your own data before trusting them. Ends with a pattern for dropping a typed classifier between Mem0 search and your LLM.
+
+- [AI Edge](https://x.com/aiedge_/status/2107835983735787568) — 2026-10-08: AI Edge's hype-packaged but concretely useful setup guide for pairing Opus 5.5 with Jev in Claude Code: Jev scores/sorts/filters so Opus only sees what needs real reasoning, with the TypeSafe skill pack (claude plugin install typesafe@typesafe-ai), confidence-based routing (high=auto, medium=Opus, low=human), atomic questions, and all thresholds in one reviewable config. Includes full prompts for inbox-triage, research-filter and content-grader workflows. Newsletter-funnel packaging ('10x Your Output'), hence the questionable tag — the workflow patterns themselves are real.
+
+- [Gipp](https://x.com/gippp69/status/2106744347836153989) — 2026-10-08: Gipp's cost-math deep dive on Opus 5.5 vs Sonnet 5.5 in agent loops: because cache reads price identically ($0.20/M), the effective per-turn gap falls from 2x to ~1.26x at 400K context, and the real money sink is the escalation tax — switching models at 300K context costs $1.50 in re-caching vs $0.10 with a clean 20K handoff (task + failing check + 3 files, never the transcript). Worked break-even math, a Python script to compute $/turn and $/pass from your own usage logs, a model-routing decision table, and a candid untested-assumptions section. Directly relevant to anyone running long Claude Code sessions.
+
+- [Kisson](https://x.com/kissonl/status/2104726600747213235) — 2026-09-29: Kisson flags CLM (github.com/Contrastive-LM/CLM), a contrastive 'System One' decision model competing with Jev: it embeds states and actions separately and scores them contrastively, so action embeddings are cached and reused across calls — claiming up to 9x faster than Jev on their own benchmark. Small post (235 views) but adds a second architecture to the decision-model space Jeremy has been tracking.
+
+- [Diogo Almeida](https://x.com/completeskeptic/status/2104682600103284917) — 2026-09-29: TypeSafe founder Diogo Almeida responds to Zhaorun Chen's red-team of Jev 1.13 on the DecodingTrust-Agent Platform — 70.1% attack success rate under direct misuse and 43.5% under indirect prompt injection — by endorsing the work and arguing the mitigation is engineering around the primitive ('program the behavior you want') rather than trusting the model. A notable data point that System One decision models inherit prompt-injection exposure, and the vendor's own framing of where safety responsibility sits.
+
+- [ClaudeDevs](https://x.com/claudedevs/status/2104676099083190435) — 2026-09-29: ClaudeDevs announcement (2M views): official guidance plus skills for having Claude Code design evaluations and hillclimb on them to improve your applications — eval design as an automatable loop rather than a hand-built artifact. Blog post on claude.dev. Directly actionable for the team's eval work.
+
+- [Harrison Chase](https://x.com/hwchase17/status/2104610254000635952) — 2026-09-29: Harrison Chase (LangChain) amplifies Assaf Elovic's experiment replacing embeddings with Jev in GPT Researcher's RAG pipeline: 73% vs 46% relevant context across 28 SimpleQA/open-ended research tasks, with reports preferred on every measure. Chase's framing — 'retrieval is a decision problem, not just a similarity problem; decision models will show up all over the harness' — is a notable third-party endorsement of the decision-model-in-the-harness thesis.
+
+- [marfin](https://x.com/marfinxx/status/2104546903488647179) — 2026-09-29: marfin's three-model stack for long-horizon agents — Jev for bounded decisions before any token is sampled, GPT-6 Astra for cheap fast execution, Opus 5.5 for deep reasoning — claiming 43.8% token-burn reduction and 0.93s latency, with adaptive retrieval stopping (s_d >= 0.85) and stale-record purging. The suspiciously precise unsourced stats and low reach (1.7K views) earn the questionable tag; the quoted 'Anti-Aging Architecture' article and its $48,600 50-agent failure case study are the interesting part.
+
+- [Ryven](https://x.com/imryven/status/2104483221228421380) — 2026-09-29: Ryven's 10-step practical ladder for adopting Jev ('the Bitcoin moment for AI' — hype framing, modest 1.6K views): a triage test for which agent calls should leave the LLM (answers enumerable, human-at-a-glance, high frequency), the three primitives, playground-first testing, batching ~8 questions per call, rebuilding the option menu in code every turn, and the overriding rule 'if code already solves it, keep the code.' Quotes his fuller article 'Jev Engineering'.
+
+- [MIKE](https://x.com/mikenevermiss/status/2104436761032057204) — 2026-09-29: MIKE's 'Jev Masterclass' X article (221.8K views): the most complete single write-up of TypeSafe AI's Jev in the collection — origin story (Diogo Almeida, ex-OpenAI RLHF, $40M launch Sept 15 2026), the RLCD calibration bet (0.95 confidence ≈ 95% accuracy, which is what makes decisions automatable), schema-constrained typed outputs, setup across LangChain middleware / Pydantic AI / direct API, four production patterns (model routing, context pruning, command safety gates, intent routing), and an unusually honest numbers section separating TypeSafe's self-reported 193x/444x ceilings from independent 5-18x / 10-20x results. Ends in a follow-me funnel, hence questionable; the content itself is dense and sourced.
+
+- [Residual](https://x.com/res1dualedge/status/2104300857928098075) — 2026-09-29: Engagement-farmed pointer (1.6M views, 'save this' hook, attributes the course to Andrew Ng while actually quoting Hanako's Aug 23 X article 'Loops and Graphs') to a 2-hour course on progressing Prompts -> Agents -> Loops -> Graphs: loop engineering for self-checking agents, graph engineering for composing them, ending with agents that rewrite themselves and a full graph system that runs without babysitting. The progression framing is useful; verify the Ng attribution before citing.
+
+- [Rohit Ghumare](https://x.com/ghumare64/status/2104112175425950177) — 2026-09-29: Rohit Ghumare's checklist of what AI engineers should actually learn: a ~24-item syllabus spanning harness and context engineering, inference economics (KV cache, prefill/decode, quantization), structured-output and tool-calling reliability, guardrails and loop budgets, RAG and retrieval evals, observability, cost attribution, safety engineering, and production failure modes — framed as shipping LLM systems as reliable infrastructure rather than demos wrapped around prompts. Links aiengineeringfromscratch.com.
 
 - [OpenAI](https://developers.openai.com/blog/codex-as-a-platform) — 2026-09-29: OpenAI Codex as an agent harness platform. Open-source harness for building domain-specific agent applications. Separates the reusable agent loop (Codex) from application-specific context, tools, and approval flows. Integration options: exec, SDK, app-server.
 
@@ -1244,7 +1282,17 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Claude Code (206)
+### Claude Code (211)
+
+- [ClaudeDevs](https://x.com/claudedevs/status/2107925762720326090) — 2026-10-08: ClaudeDevs: computer-use and browser-use toolsets are now built into the Claude Python and TypeScript SDKs — the SDK runs the action loop and dispatches clicks/keystrokes to drivers, replacing the hand-written mapping loop previously required. 326.4K views.
+
+- [AI Edge](https://x.com/aiedge_/status/2107835983735787568) — 2026-10-08: AI Edge's hype-packaged but concretely useful setup guide for pairing Opus 5.5 with Jev in Claude Code: Jev scores/sorts/filters so Opus only sees what needs real reasoning, with the TypeSafe skill pack (claude plugin install typesafe@typesafe-ai), confidence-based routing (high=auto, medium=Opus, low=human), atomic questions, and all thresholds in one reviewable config. Includes full prompts for inbox-triage, research-filter and content-grader workflows. Newsletter-funnel packaging ('10x Your Output'), hence the questionable tag — the workflow patterns themselves are real.
+
+- [Boris Cherny](https://x.com/bcherny/status/2107565388250874193) — 2026-10-08: Boris Cherny (creator of Claude Code) on how he actually prompts Claude: talk to it like a coworker — no heavy scaffolding. The prompt-engineering era mattered in Sonnet 3.5 days; now what matters is communicating (1) what you want done, (2) how much effort to spend, (3) how the model should verify it did the right thing. 1.2M views.
+
+- [Gipp](https://x.com/gippp69/status/2106744347836153989) — 2026-10-08: Gipp's cost-math deep dive on Opus 5.5 vs Sonnet 5.5 in agent loops: because cache reads price identically ($0.20/M), the effective per-turn gap falls from 2x to ~1.26x at 400K context, and the real money sink is the escalation tax — switching models at 300K context costs $1.50 in re-caching vs $0.10 with a clean 20K handoff (task + failing check + 3 files, never the transcript). Worked break-even math, a Python script to compute $/turn and $/pass from your own usage logs, a model-routing decision table, and a candid untested-assumptions section. Directly relevant to anyone running long Claude Code sessions.
+
+- [ClaudeDevs](https://x.com/claudedevs/status/2104676099083190435) — 2026-09-29: ClaudeDevs announcement (2M views): official guidance plus skills for having Claude Code design evaluations and hillclimb on them to improve your applications — eval design as an automatable loop rather than a hand-built artifact. Blog post on claude.dev. Directly actionable for the team's eval work.
 
 - [OpenAI](https://developers.openai.com/blog/codex-as-a-platform) — 2026-09-29: OpenAI Codex as an agent harness platform. Open-source harness for building domain-specific agent applications. Separates the reusable agent loop (Codex) from application-specific context, tools, and approval flows. Integration options: exec, SDK, app-server.
 
@@ -1658,9 +1706,19 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (406)
+### Dev Practices (411)
+
+- [Kun Chen](https://x.com/kunchenguid/status/2108030810691629403) — 2026-10-08: Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5.5 from writing its own tests slightly improved success rate (non-significant) while significantly cutting time and tokens — agent-written unit/integration tests add no value because both the tests and the implementation are the same interpretation of intent. Disabling execution of even existing tests on a 44-task subset also had no effect. Explicitly scoped: doesn't cover human-specified test cases or e2e tests (a follow-up eval is planned). 184.9K views.
+
+- [Tech with Mak](https://x.com/technmak/status/2107678022094790933) — 2026-10-08: A thorough primer arguing inference engineering is an underrated skill set: the prefill/decode split (compute-bound vs memory-bandwidth-bound) and how it motivates FlashAttention, PagedAttention, MQA/GQA, continuous batching, chunked prefill, prefix caching, quantization and speculative decoding; multi-GPU parallelism trade-offs; and why TTFT/ITL/goodput beat raw tokens-per-second for evaluating a serving system, with a diagnostic map from each metric to its likely bottleneck.
+
+- [Gipp](https://x.com/gippp69/status/2106744347836153989) — 2026-10-08: Gipp's cost-math deep dive on Opus 5.5 vs Sonnet 5.5 in agent loops: because cache reads price identically ($0.20/M), the effective per-turn gap falls from 2x to ~1.26x at 400K context, and the real money sink is the escalation tax — switching models at 300K context costs $1.50 in re-caching vs $0.10 with a clean 20K handoff (task + failing check + 3 files, never the transcript). Worked break-even math, a Python script to compute $/turn and $/pass from your own usage logs, a model-routing decision table, and a candid untested-assumptions section. Directly relevant to anyone running long Claude Code sessions.
+
+- [ClaudeDevs](https://x.com/claudedevs/status/2104676099083190435) — 2026-09-29: ClaudeDevs announcement (2M views): official guidance plus skills for having Claude Code design evaluations and hillclimb on them to improve your applications — eval design as an automatable loop rather than a hand-built artifact. Blog post on claude.dev. Directly actionable for the team's eval work.
 
 - [Jason Weston](https://x.com/jaseweston/status/2104564368792854860) — 2026-09-29: Solving AI slop via expert-aligned rubrics (RL-XAR). Trained on expert writing to find gaps between expert and model output. Shows gains on scientific papers, novel continuations, Wikipedia.
+
+- [Rohit Ghumare](https://x.com/ghumare64/status/2104112175425950177) — 2026-09-29: Rohit Ghumare's checklist of what AI engineers should actually learn: a ~24-item syllabus spanning harness and context engineering, inference economics (KV cache, prefill/decode, quantization), structured-output and tool-calling reliability, guardrails and loop budgets, RAG and retrieval evals, observability, cost attribution, safety engineering, and production failure modes — framed as shipping LLM systems as reliable infrastructure rather than demos wrapped around prompts. Links aiengineeringfromscratch.com.
 
 - [OpenAI](https://developers.openai.com/blog/codex-as-a-platform) — 2026-09-29: OpenAI Codex as an agent harness platform. Open-source harness for building domain-specific agent applications. Separates the reusable agent loop (Codex) from application-specific context, tools, and approval flows. Integration options: exec, SDK, app-server.
 
@@ -2472,7 +2530,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Skills & MCP (207)
+### Skills & MCP (208)
+
+- [ClaudeDevs](https://x.com/claudedevs/status/2107925762720326090) — 2026-10-08: ClaudeDevs: computer-use and browser-use toolsets are now built into the Claude Python and TypeScript SDKs — the SDK runs the action loop and dispatches clicks/keystrokes to drivers, replacing the hand-written mapping loop previously required. 326.4K views.
 
 - [OpenAI](https://developers.openai.com/blog/codex-as-a-platform) — 2026-09-29: OpenAI Codex as an agent harness platform. Open-source harness for building domain-specific agent applications. Separates the reusable agent loop (Codex) from application-specific context, tools, and approval flows. Integration options: exec, SDK, app-server.
 
@@ -2888,7 +2948,9 @@
 
 - [Mervin Praison](https://x.com/mervinpraison/status/1881788246684013011) — 2025-01-22: Shows a 100% local RAG AI agent with reasoning: DeepSeek via Ollama for the LLM, PraisonAI to build the agent in a few lines, Nomic embeddings, and a Streamlit UI—code included in the thread.
 
-### Prompting (141)
+### Prompting (142)
+
+- [Boris Cherny](https://x.com/bcherny/status/2107565388250874193) — 2026-10-08: Boris Cherny (creator of Claude Code) on how he actually prompts Claude: talk to it like a coworker — no heavy scaffolding. The prompt-engineering era mattered in Sonnet 3.5 days; now what matters is communicating (1) what you want done, (2) how much effort to spend, (3) how the model should verify it did the right thing. 1.2M views.
 
 - [Jason Weston](https://x.com/jaseweston/status/2104564368792854860) — 2026-09-29: Solving AI slop via expert-aligned rubrics (RL-XAR). Trained on expert writing to find gaps between expert and model output. Shows gains on scientific papers, novel continuations, Wikipedia.
 
@@ -3172,29 +3234,25 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-### Research (264)
+### Research (262)
 
-- [Kisson](https://x.com/kissonl/status/2104726600747213235) — 2026-09-29: 
+- [Kun Chen](https://x.com/kunchenguid/status/2108030810691629403) — 2026-10-08: Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5.5 from writing its own tests slightly improved success rate (non-significant) while significantly cutting time and tokens — agent-written unit/integration tests add no value because both the tests and the implementation are the same interpretation of intent. Disabling execution of even existing tests on a 44-task subset also had no effect. Explicitly scoped: doesn't cover human-specified test cases or e2e tests (a follow-up eval is planned). 184.9K views.
 
-- [elvis](https://x.com/omarsar0/status/2104706308163420452) — 2026-09-29: 
+- [Juncheng Yang](https://x.com/1a1a11a/status/2107960379917652296) — 2026-10-08: Juncheng Yang (Harvard MAD Systems) releases the largest agentic LLM inference trace dataset: 206B tokens, 12,002 sessions, 1.19M LLM requests and 1.21M tool calls with tool names, arguments and durations (huggingface.co/datasets/harvardMadsys/freeinference_agentic_trace; opendata.agentic-system.org). Paper forthcoming — raw material for anyone studying real agent workload shapes, caching, or serving economics.
 
-- [Diogo Almeida](https://x.com/completeskeptic/status/2104682600103284917) — 2026-09-29: 
+- [Akshay Pachaar](https://x.com/akshay_pachaar/status/2107933081093210124) — 2026-10-08: Akshay Pachaar introduces Laya (github.com/NandhaKishorM/laya, Apache 2.0) — an open-source local alternative to Jev for typed decision-making: encoder-based scoring of fixed answer sets with [MASK] markers, returning calibratable probabilities, ~35ms locally vs ~380ms for Jev over the network. Honest trade-off framing: Jev gives stronger zero-shot decisions; Laya gives speed, privacy and control but needs fine-tuning and calibration on your own task. Quotes his earlier 'Jev Clearly Explained' article.
 
-- [ClaudeDevs](https://x.com/claudedevs/status/2104676099083190435) — 2026-09-29: 
+- [mem0](https://x.com/mem0ai/status/2107873474517889201) — 2026-10-08: mem0's X-article breakdown of Jev-Mem (arxiv.org/pdf/2609.23986, github.com/libingzheren/Jev-Mem) — a UT Dallas architecture that uses Jev as a System One controller for agent memory: typed/batched/bounded decisions (memory typing, relation edges, retrieval routing and stopping) replace LLM calls on the memory path, with the LLM only writing final answers. Reports +11% LoCoMo answer quality, 6.6x faster memory construction, 36.7% lower latency vs baselines, but mem0 is candid that the thresholds (0.60 edge, 0.95 stop) are uncalibrated and tested on one benchmark with one model — calibrate on your own data before trusting them. Ends with a pattern for dropping a typed classifier between Mem0 search and your LLM.
 
-- [Harrison Chase](https://x.com/hwchase17/status/2104610254000635952) — 2026-09-29: 
+- [Tech with Mak](https://x.com/technmak/status/2107678022094790933) — 2026-10-08: A thorough primer arguing inference engineering is an underrated skill set: the prefill/decode split (compute-bound vs memory-bandwidth-bound) and how it motivates FlashAttention, PagedAttention, MQA/GQA, continuous batching, chunked prefill, prefix caching, quantization and speculative decoding; multi-GPU parallelism trade-offs; and why TTFT/ITL/goodput beat raw tokens-per-second for evaluating a serving system, with a diagnostic map from each metric to its likely bottleneck.
+
+- [Kisson](https://x.com/kissonl/status/2104726600747213235) — 2026-09-29: Kisson flags CLM (github.com/Contrastive-LM/CLM), a contrastive 'System One' decision model competing with Jev: it embeds states and actions separately and scores them contrastively, so action embeddings are cached and reused across calls — claiming up to 9x faster than Jev on their own benchmark. Small post (235 views) but adds a second architecture to the decision-model space Jeremy has been tracking.
+
+- [Diogo Almeida](https://x.com/completeskeptic/status/2104682600103284917) — 2026-09-29: TypeSafe founder Diogo Almeida responds to Zhaorun Chen's red-team of Jev 1.13 on the DecodingTrust-Agent Platform — 70.1% attack success rate under direct misuse and 43.5% under indirect prompt injection — by endorsing the work and arguing the mitigation is engineering around the primitive ('program the behavior you want') rather than trusting the model. A notable data point that System One decision models inherit prompt-injection exposure, and the vendor's own framing of where safety responsibility sits.
+
+- [Harrison Chase](https://x.com/hwchase17/status/2104610254000635952) — 2026-09-29: Harrison Chase (LangChain) amplifies Assaf Elovic's experiment replacing embeddings with Jev in GPT Researcher's RAG pipeline: 73% vs 46% relevant context across 28 SimpleQA/open-ended research tasks, with reports preferred on every measure. Chase's framing — 'retrieval is a decision problem, not just a similarity problem; decision models will show up all over the harness' — is a notable third-party endorsement of the decision-model-in-the-harness thesis.
 
 - [Jason Weston](https://x.com/jaseweston/status/2104564368792854860) — 2026-09-29: Solving AI slop via expert-aligned rubrics (RL-XAR). Trained on expert writing to find gaps between expert and model output. Shows gains on scientific papers, novel continuations, Wikipedia.
-
-- [marfin](https://x.com/marfinxx/status/2104546903488647179) — 2026-09-29: 
-
-- [Ryven](https://x.com/imryven/status/2104483221228421380) — 2026-09-29: 
-
-- [MIKE](https://x.com/mikenevermiss/status/2104436761032057204) — 2026-09-29: 
-
-- [Residual](https://x.com/res1dualedge/status/2104300857928098075) — 2026-09-29: 
-
-- [Rohit Ghumare](https://x.com/ghumare64/status/2104112175425950177) — 2026-09-29: 
 
 - [Mike Taylor](https://x.com/hammer_mt/status/2103579428072865841) — 2026-09-26: Mike Taylor flagging Kieran Klaassen's 'How to use jev #1: As an embedder' as the most novel Jev-based idea he's seen — repurposing a decision model as an embedding source rather than a router or gate. Worth following for the pattern, since most Jev material this week is gating and routing.
 
@@ -3702,7 +3760,13 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.
 
-### Industry (138)
+### Industry (141)
+
+- [Mark Ajzenstadt](https://x.com/mardehaym/status/2107902643490222168) — 2026-10-08: Mark Ajzenstadt (decade running an embedded-engineering firm) pushes back on the FDE hype: cites a Gartner prediction that 70% of enterprises will abandon vendor-FDE-built agentic AI by 2028 over cost and inability to evolve systems independently. His standard: the engagement succeeds only if the client's own team gains capability while decisions are being made — 'what will my team be able to do without you six months from now?' A useful counter-example to the pro-FDE material in the collection.
+
+- [elvis](https://x.com/omarsar0/status/2104706308163420452) — 2026-09-29: elvis (omarsar0) recommends David George's essay 'OpenAI Understands Something Important and Rare': beneath the modest title, an argument about what actually drives AI product distribution and defensibility in a crowded market, built on Drucker's 'the purpose of a business is to create a customer' as the lens on OpenAI's strategy. Useful strategy reading for anyone positioning AI products.
+
+- [MIKE](https://x.com/mikenevermiss/status/2104436761032057204) — 2026-09-29: MIKE's 'Jev Masterclass' X article (221.8K views): the most complete single write-up of TypeSafe AI's Jev in the collection — origin story (Diogo Almeida, ex-OpenAI RLHF, $40M launch Sept 15 2026), the RLCD calibration bet (0.95 confidence ≈ 95% accuracy, which is what makes decisions automatable), schema-constrained typed outputs, setup across LangChain middleware / Pydantic AI / direct API, four production patterns (model routing, context pruning, command safety gates, intent routing), and an unusually honest numbers section separating TypeSafe's self-reported 193x/444x ceilings from independent 5-18x / 10-20x results. Ends in a follow-me funnel, hence questionable; the content itself is dense and sourced.
 
 - [Boris Cherny](https://x.com/bcherny/status/2103691327699550598) — 2026-09-26: Boris Cherny endorsing Anthropic's new plugin submission portal — submit a plugin, track review, and see usage. ClaudeDevs' announcement notes plugins package MCP and skills and are becoming the way to build for Claude, with MCP usage across Claude products up 110x this year. Details at claude.com/blog/build-plugins-for-claude
 
@@ -3980,7 +4044,9 @@
 
 - [Santiago](https://x.com/svpino/status/1881336934418755862) — 2025-01-21: Walks through GroundX, an open-source, self-hostable/air-gapped enterprise RAG system. Two services: Ingest (a pretrained vision model that 'understands' documents instead of feeding raw docs to the LLM) and Search (text+vector search with a fine-tuned re-ranker). Santiago's thesis: most teams need better ingestion, not better retrieval; includes a video demo and the free X-Ray inspection tool.
 
-### Management (143)
+### Management (144)
+
+- [Mark Ajzenstadt](https://x.com/mardehaym/status/2107902643490222168) — 2026-10-08: Mark Ajzenstadt (decade running an embedded-engineering firm) pushes back on the FDE hype: cites a Gartner prediction that 70% of enterprises will abandon vendor-FDE-built agentic AI by 2028 over cost and inability to evolve systems independently. His standard: the engagement succeeds only if the client's own team gains capability while decisions are being made — 'what will my team be able to do without you six months from now?' A useful counter-example to the pro-FDE material in the collection.
 
 - [Xudong Han](https://x.com/xudong07452910/status/2103650764912476432) — 2026-09-26: Summary (translated from Chinese) of Anthropic's guide on preparing for AI-driven code modernization. The argument: modernization projects that used to take a full team years can now land in months or weeks with agents, but the bottleneck shifts to the organization — testing, review, approval and deployment can't keep pace with the rate of change. Anthropic's six-step framework says to define what 'done right' means first (certificates spelling out verification conditions for testing, performance, compatibility and security), then let agents act at scale, with review and deployment rules keyed to change risk, because agent-generated volume will exceed line-by-line human diff review. Source article: claude.com, 'How to prepare for AI-driven code modernization projects'.
 
@@ -4386,7 +4452,17 @@
 
 - [zostaff](https://x.com/zostaff/status/2033930728044372275) — 2026-03-18: zostaff's clickbait-titled ('How to Quit Your Job in One Day') walkthrough of an autonomous Polymarket trading system built from three agents: Claude (strategist — probability/recommendation/confidence), Codex (engineer — writes and debugs bot code), and OpenClaw (orchestrator — persistent memory, cron, modular skills, Telegram interface that executes trades and logs everything).
 
-### Questionable (143)
+### Questionable (148)
+
+- [AI Edge](https://x.com/aiedge_/status/2107835983735787568) — 2026-10-08: AI Edge's hype-packaged but concretely useful setup guide for pairing Opus 5.5 with Jev in Claude Code: Jev scores/sorts/filters so Opus only sees what needs real reasoning, with the TypeSafe skill pack (claude plugin install typesafe@typesafe-ai), confidence-based routing (high=auto, medium=Opus, low=human), atomic questions, and all thresholds in one reviewable config. Includes full prompts for inbox-triage, research-filter and content-grader workflows. Newsletter-funnel packaging ('10x Your Output'), hence the questionable tag — the workflow patterns themselves are real.
+
+- [marfin](https://x.com/marfinxx/status/2104546903488647179) — 2026-09-29: marfin's three-model stack for long-horizon agents — Jev for bounded decisions before any token is sampled, GPT-6 Astra for cheap fast execution, Opus 5.5 for deep reasoning — claiming 43.8% token-burn reduction and 0.93s latency, with adaptive retrieval stopping (s_d >= 0.85) and stale-record purging. The suspiciously precise unsourced stats and low reach (1.7K views) earn the questionable tag; the quoted 'Anti-Aging Architecture' article and its $48,600 50-agent failure case study are the interesting part.
+
+- [Ryven](https://x.com/imryven/status/2104483221228421380) — 2026-09-29: Ryven's 10-step practical ladder for adopting Jev ('the Bitcoin moment for AI' — hype framing, modest 1.6K views): a triage test for which agent calls should leave the LLM (answers enumerable, human-at-a-glance, high frequency), the three primitives, playground-first testing, batching ~8 questions per call, rebuilding the option menu in code every turn, and the overriding rule 'if code already solves it, keep the code.' Quotes his fuller article 'Jev Engineering'.
+
+- [MIKE](https://x.com/mikenevermiss/status/2104436761032057204) — 2026-09-29: MIKE's 'Jev Masterclass' X article (221.8K views): the most complete single write-up of TypeSafe AI's Jev in the collection — origin story (Diogo Almeida, ex-OpenAI RLHF, $40M launch Sept 15 2026), the RLCD calibration bet (0.95 confidence ≈ 95% accuracy, which is what makes decisions automatable), schema-constrained typed outputs, setup across LangChain middleware / Pydantic AI / direct API, four production patterns (model routing, context pruning, command safety gates, intent routing), and an unusually honest numbers section separating TypeSafe's self-reported 193x/444x ceilings from independent 5-18x / 10-20x results. Ends in a follow-me funnel, hence questionable; the content itself is dense and sourced.
+
+- [Residual](https://x.com/res1dualedge/status/2104300857928098075) — 2026-09-29: Engagement-farmed pointer (1.6M views, 'save this' hook, attributes the course to Andrew Ng while actually quoting Hanako's Aug 23 X article 'Loops and Graphs') to a 2-hour course on progressing Prompts -> Agents -> Loops -> Graphs: loop engineering for self-checking agents, graph engineering for composing them, ending with agents that rewrite themselves and a full graph system that runs without babysitting. The progression framing is useful; verify the Ng attribution before citing.
 
 - [qwinsi](https://x.com/qwinsi0x/status/2103551860590116904) — 2026-09-26: Engagement-farmed pitch for an AI backtesting product (join.horizon.trade affiliate link), built around Liang Wenfeng and the DeepSeek-affiliated hedge fund. The usable idea underneath the return claims: the quant research loop — form an idea, test it on history, kill it if it fails, repeat — used to cost millions and now costs near zero, and the author reproduced the Moskowitz/Ooi/Pedersen Time Series Momentum paper on six years of data in ten minutes of backtesting. Treat the performance figures (+56.6%/yr, +1,537% on Bitcoin) as marketing claims, not evidence.
 
@@ -4881,40 +4957,72 @@
 ---
 ## Full Chronological List
 
+### Oct 2026
+
+- **2026-10-08** | [Kun Chen](https://x.com/kunchenguid/status/2108030810691629403) | dev-practices, agent-design, research
+  Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5.5 from writing its own tests slightly improved success rate (non-significant) while significantly cutting time and tokens — agent-written unit/integration tests add no value because both the tests and the implementation are the same interpretation of intent. Disabling execution of even existing tests on a 44-task subset also had no effect. Explicitly scoped: doesn't cover human-specified test cases or e2e tests (a follow-up eval is planned). 184.9K views.
+
+- **2026-10-08** | [Juncheng Yang](https://x.com/1a1a11a/status/2107960379917652296) | research, agent-design
+  Juncheng Yang (Harvard MAD Systems) releases the largest agentic LLM inference trace dataset: 206B tokens, 12,002 sessions, 1.19M LLM requests and 1.21M tool calls with tool names, arguments and durations (huggingface.co/datasets/harvardMadsys/freeinference_agentic_trace; opendata.agentic-system.org). Paper forthcoming — raw material for anyone studying real agent workload shapes, caching, or serving economics.
+
+- **2026-10-08** | [Akshay Pachaar](https://x.com/akshay_pachaar/status/2107933081093210124) | agent-design, research
+  Akshay Pachaar introduces Laya (github.com/NandhaKishorM/laya, Apache 2.0) — an open-source local alternative to Jev for typed decision-making: encoder-based scoring of fixed answer sets with [MASK] markers, returning calibratable probabilities, ~35ms locally vs ~380ms for Jev over the network. Honest trade-off framing: Jev gives stronger zero-shot decisions; Laya gives speed, privacy and control but needs fine-tuning and calibration on your own task. Quotes his earlier 'Jev Clearly Explained' article.
+
+- **2026-10-08** | [ClaudeDevs](https://x.com/claudedevs/status/2107925762720326090) | claude-code, agent-design, skills-mcp
+  ClaudeDevs: computer-use and browser-use toolsets are now built into the Claude Python and TypeScript SDKs — the SDK runs the action loop and dispatches clicks/keystrokes to drivers, replacing the hand-written mapping loop previously required. 326.4K views.
+
+- **2026-10-08** | [Mark Ajzenstadt](https://x.com/mardehaym/status/2107902643490222168) | management, industry
+  Mark Ajzenstadt (decade running an embedded-engineering firm) pushes back on the FDE hype: cites a Gartner prediction that 70% of enterprises will abandon vendor-FDE-built agentic AI by 2028 over cost and inability to evolve systems independently. His standard: the engagement succeeds only if the client's own team gains capability while decisions are being made — 'what will my team be able to do without you six months from now?' A useful counter-example to the pro-FDE material in the collection.
+
+- **2026-10-08** | [mem0](https://x.com/mem0ai/status/2107873474517889201) | agent-design, research
+  mem0's X-article breakdown of Jev-Mem (arxiv.org/pdf/2609.23986, github.com/libingzheren/Jev-Mem) — a UT Dallas architecture that uses Jev as a System One controller for agent memory: typed/batched/bounded decisions (memory typing, relation edges, retrieval routing and stopping) replace LLM calls on the memory path, with the LLM only writing final answers. Reports +11% LoCoMo answer quality, 6.6x faster memory construction, 36.7% lower latency vs baselines, but mem0 is candid that the thresholds (0.60 edge, 0.95 stop) are uncalibrated and tested on one benchmark with one model — calibrate on your own data before trusting them. Ends with a pattern for dropping a typed classifier between Mem0 search and your LLM.
+
+- **2026-10-08** | [AI Edge](https://x.com/aiedge_/status/2107835983735787568) | agent-design, claude-code, questionable
+  AI Edge's hype-packaged but concretely useful setup guide for pairing Opus 5.5 with Jev in Claude Code: Jev scores/sorts/filters so Opus only sees what needs real reasoning, with the TypeSafe skill pack (claude plugin install typesafe@typesafe-ai), confidence-based routing (high=auto, medium=Opus, low=human), atomic questions, and all thresholds in one reviewable config. Includes full prompts for inbox-triage, research-filter and content-grader workflows. Newsletter-funnel packaging ('10x Your Output'), hence the questionable tag — the workflow patterns themselves are real.
+
+- **2026-10-08** | [Tech with Mak](https://x.com/technmak/status/2107678022094790933) | research, dev-practices
+  A thorough primer arguing inference engineering is an underrated skill set: the prefill/decode split (compute-bound vs memory-bandwidth-bound) and how it motivates FlashAttention, PagedAttention, MQA/GQA, continuous batching, chunked prefill, prefix caching, quantization and speculative decoding; multi-GPU parallelism trade-offs; and why TTFT/ITL/goodput beat raw tokens-per-second for evaluating a serving system, with a diagnostic map from each metric to its likely bottleneck.
+
+- **2026-10-08** | [Boris Cherny](https://x.com/bcherny/status/2107565388250874193) | prompting, claude-code
+  Boris Cherny (creator of Claude Code) on how he actually prompts Claude: talk to it like a coworker — no heavy scaffolding. The prompt-engineering era mattered in Sonnet 3.5 days; now what matters is communicating (1) what you want done, (2) how much effort to spend, (3) how the model should verify it did the right thing. 1.2M views.
+
+- **2026-10-08** | [Gipp](https://x.com/gippp69/status/2106744347836153989) | claude-code, agent-design, dev-practices
+  Gipp's cost-math deep dive on Opus 5.5 vs Sonnet 5.5 in agent loops: because cache reads price identically ($0.20/M), the effective per-turn gap falls from 2x to ~1.26x at 400K context, and the real money sink is the escalation tax — switching models at 300K context costs $1.50 in re-caching vs $0.10 with a clean 20K handoff (task + failing check + 3 files, never the transcript). Worked break-even math, a Python script to compute $/turn and $/pass from your own usage logs, a model-routing decision table, and a candid untested-assumptions section. Directly relevant to anyone running long Claude Code sessions.
+
 ### Sep 2026
 
-- **2026-09-29** | [Kisson](https://x.com/kissonl/status/2104726600747213235) | research
-  
+- **2026-09-29** | [Kisson](https://x.com/kissonl/status/2104726600747213235) | agent-design, research
+  Kisson flags CLM (github.com/Contrastive-LM/CLM), a contrastive 'System One' decision model competing with Jev: it embeds states and actions separately and scores them contrastively, so action embeddings are cached and reused across calls — claiming up to 9x faster than Jev on their own benchmark. Small post (235 views) but adds a second architecture to the decision-model space Jeremy has been tracking.
 
-- **2026-09-29** | [elvis](https://x.com/omarsar0/status/2104706308163420452) | research
-  
+- **2026-09-29** | [elvis](https://x.com/omarsar0/status/2104706308163420452) | industry
+  elvis (omarsar0) recommends David George's essay 'OpenAI Understands Something Important and Rare': beneath the modest title, an argument about what actually drives AI product distribution and defensibility in a crowded market, built on Drucker's 'the purpose of a business is to create a customer' as the lens on OpenAI's strategy. Useful strategy reading for anyone positioning AI products.
 
-- **2026-09-29** | [Diogo Almeida](https://x.com/completeskeptic/status/2104682600103284917) | research
-  
+- **2026-09-29** | [Diogo Almeida](https://x.com/completeskeptic/status/2104682600103284917) | agent-design, research
+  TypeSafe founder Diogo Almeida responds to Zhaorun Chen's red-team of Jev 1.13 on the DecodingTrust-Agent Platform — 70.1% attack success rate under direct misuse and 43.5% under indirect prompt injection — by endorsing the work and arguing the mitigation is engineering around the primitive ('program the behavior you want') rather than trusting the model. A notable data point that System One decision models inherit prompt-injection exposure, and the vendor's own framing of where safety responsibility sits.
 
-- **2026-09-29** | [ClaudeDevs](https://x.com/claudedevs/status/2104676099083190435) | research
-  
+- **2026-09-29** | [ClaudeDevs](https://x.com/claudedevs/status/2104676099083190435) | claude-code, dev-practices, agent-design
+  ClaudeDevs announcement (2M views): official guidance plus skills for having Claude Code design evaluations and hillclimb on them to improve your applications — eval design as an automatable loop rather than a hand-built artifact. Blog post on claude.dev. Directly actionable for the team's eval work.
 
-- **2026-09-29** | [Harrison Chase](https://x.com/hwchase17/status/2104610254000635952) | research
-  
+- **2026-09-29** | [Harrison Chase](https://x.com/hwchase17/status/2104610254000635952) | agent-design, research
+  Harrison Chase (LangChain) amplifies Assaf Elovic's experiment replacing embeddings with Jev in GPT Researcher's RAG pipeline: 73% vs 46% relevant context across 28 SimpleQA/open-ended research tasks, with reports preferred on every measure. Chase's framing — 'retrieval is a decision problem, not just a similarity problem; decision models will show up all over the harness' — is a notable third-party endorsement of the decision-model-in-the-harness thesis.
 
 - **2026-09-29** | [Jason Weston](https://x.com/jaseweston/status/2104564368792854860) | research, prompting, dev-practices
   Solving AI slop via expert-aligned rubrics (RL-XAR). Trained on expert writing to find gaps between expert and model output. Shows gains on scientific papers, novel continuations, Wikipedia.
 
-- **2026-09-29** | [marfin](https://x.com/marfinxx/status/2104546903488647179) | research
-  
+- **2026-09-29** | [marfin](https://x.com/marfinxx/status/2104546903488647179) | agent-design, questionable
+  marfin's three-model stack for long-horizon agents — Jev for bounded decisions before any token is sampled, GPT-6 Astra for cheap fast execution, Opus 5.5 for deep reasoning — claiming 43.8% token-burn reduction and 0.93s latency, with adaptive retrieval stopping (s_d >= 0.85) and stale-record purging. The suspiciously precise unsourced stats and low reach (1.7K views) earn the questionable tag; the quoted 'Anti-Aging Architecture' article and its $48,600 50-agent failure case study are the interesting part.
 
-- **2026-09-29** | [Ryven](https://x.com/imryven/status/2104483221228421380) | research
-  
+- **2026-09-29** | [Ryven](https://x.com/imryven/status/2104483221228421380) | agent-design, questionable
+  Ryven's 10-step practical ladder for adopting Jev ('the Bitcoin moment for AI' — hype framing, modest 1.6K views): a triage test for which agent calls should leave the LLM (answers enumerable, human-at-a-glance, high frequency), the three primitives, playground-first testing, batching ~8 questions per call, rebuilding the option menu in code every turn, and the overriding rule 'if code already solves it, keep the code.' Quotes his fuller article 'Jev Engineering'.
 
-- **2026-09-29** | [MIKE](https://x.com/mikenevermiss/status/2104436761032057204) | research
-  
+- **2026-09-29** | [MIKE](https://x.com/mikenevermiss/status/2104436761032057204) | agent-design, industry, questionable
+  MIKE's 'Jev Masterclass' X article (221.8K views): the most complete single write-up of TypeSafe AI's Jev in the collection — origin story (Diogo Almeida, ex-OpenAI RLHF, $40M launch Sept 15 2026), the RLCD calibration bet (0.95 confidence ≈ 95% accuracy, which is what makes decisions automatable), schema-constrained typed outputs, setup across LangChain middleware / Pydantic AI / direct API, four production patterns (model routing, context pruning, command safety gates, intent routing), and an unusually honest numbers section separating TypeSafe's self-reported 193x/444x ceilings from independent 5-18x / 10-20x results. Ends in a follow-me funnel, hence questionable; the content itself is dense and sourced.
 
-- **2026-09-29** | [Residual](https://x.com/res1dualedge/status/2104300857928098075) | research
-  
+- **2026-09-29** | [Residual](https://x.com/res1dualedge/status/2104300857928098075) | agent-design, questionable
+  Engagement-farmed pointer (1.6M views, 'save this' hook, attributes the course to Andrew Ng while actually quoting Hanako's Aug 23 X article 'Loops and Graphs') to a 2-hour course on progressing Prompts -> Agents -> Loops -> Graphs: loop engineering for self-checking agents, graph engineering for composing them, ending with agents that rewrite themselves and a full graph system that runs without babysitting. The progression framing is useful; verify the Ng attribution before citing.
 
-- **2026-09-29** | [Rohit Ghumare](https://x.com/ghumare64/status/2104112175425950177) | research
-  
+- **2026-09-29** | [Rohit Ghumare](https://x.com/ghumare64/status/2104112175425950177) | dev-practices, agent-design
+  Rohit Ghumare's checklist of what AI engineers should actually learn: a ~24-item syllabus spanning harness and context engineering, inference economics (KV cache, prefill/decode, quantization), structured-output and tool-calling reliability, guardrails and loop budgets, RAG and retrieval evals, observability, cost attribution, safety engineering, and production failure modes — framed as shipping LLM systems as reliable infrastructure rather than demos wrapped around prompts. Links aiengineeringfromscratch.com.
 
 - **2026-09-29** | [OpenAI](https://developers.openai.com/blog/codex-as-a-platform) | agent-design, dev-practices, skills-mcp, claude-code
   OpenAI Codex as an agent harness platform. Open-source harness for building domain-specific agent applications. Separates the reusable agent loop (Codex) from application-specific context, tools, and approval flows. Integration options: exec, SDK, app-server.
