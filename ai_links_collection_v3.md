@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-10-08T15:23:07Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-10-09T16:01:54Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-10-08** — [Kun Chen](https://x.com/kunchenguid/status/2108030810691629403) — *now • Dev Practices • 184.9K views • v1 enriched*  
@@ -23,30 +23,30 @@
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **applied decision-model routing — gating agents with Jev** (30 posts, +12 this week)  
+- **applied decision-model routing — gating agents with Jev** (32 posts, +13 this week)  
   Discovered by orphan clustering on 2026-09-28 (6 posts, cohesion 0.66); renamed in-session. The *applied* side of System One / decision models: putting a non-generative decision model in front of an agent as a gate, router, verifier or judge, plus the libraries and framework integrations that make that practical (AnyJev, DSPy, LangGraph, Claude Code hooks). Deliberately distinct from #74 'System One models — bounded decisions as a primitive', which holds the concept itself and was frozen out of centroid scoring after the 2026-09-25 magnet rollback; because #74 can no longer recruit by cosine, the live Jev conversation could not reach it and formed this cluster instead. On 2026-09-28 #74's 11 canonical edges were demoted to weak so it became a secondary-only grouping tag, releasing its members to re-home here or elsewhere. NOTE: do not write the centroid-scoring opt-out marker as a literal string in this description — the eligibility check is a plain substring match over the whole description, so merely mentioning it silently disables semantic scoring for this concept (hit for real on 2026-09-28).
     - 2026-09-29 — [Diogo Almeida](https://x.com/completeskeptic/status/2104682600103284917): TypeSafe founder Diogo Almeida responds to Zhaorun Chen's red-team of Jev 1.13 on the DecodingTrust-Agent Platform — 70.1% attack success ra…
-    - 2026-09-29 — [Ryven](https://x.com/imryven/status/2104483221228421380): Ryven's 10-step practical ladder for adopting Jev ('the Bitcoin moment for AI' — hype framing, modest 1.6K views): a triage test for which a…
+    - 2026-09-29 — [marfin](https://x.com/marfinxx/status/2104546903488647179): marfin's three-model stack for long-horizon agents — Jev for bounded decisions before any token is sampled, GPT-6 Astra for cheap fast execu…
 
-- **vector / hybrid databases as agent-memory infrastructure** (62 posts, +5 this week)  
-  HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
-    - 2026-10-08 — [Juncheng Yang](https://x.com/1a1a11a/status/2107960379917652296): Juncheng Yang (Harvard MAD Systems) releases the largest agentic LLM inference trace dataset: 206B tokens, 12,002 sessions, 1.19M LLM reques…
-    - 2026-10-08 — [mem0](https://x.com/mem0ai/status/2107873474517889201): mem0's X-article breakdown of Jev-Mem (arxiv.org/pdf/2609.23986, github.com/libingzheren/Jev-Mem) — a UT Dallas architecture that uses Jev a…
-
-- **Claude Code setup & usage** (72 posts, +4 this week)  
+- **Claude Code setup & usage** (40 posts, +3 this week)  
   Claude Code setup guides, cheatsheets, starter packs, and day-to-day usage / steering practices.
     - 2026-09-29 — [ClaudeDevs](https://x.com/claudedevs/status/2104676099083190435): ClaudeDevs announcement (2M views): official guidance plus skills for having Claude Code design evaluations and hillclimb on them to improve…
+    - 2026-09-26 — [Vox](https://x.com/voxyz_ai/status/2103586663393853636): Turns Thariq's effort findings into a concrete two-subagent Claude Code workflow. The four-step loop for new features: have Claude ask quest…
+
+- **loop engineering** (31 posts, +3 this week)  
+  Feedback loops and self-running agent loops: loop design patterns, loop libraries, nested build loops, self-improving / meta-learning loops.
     - 2026-09-29 — [Residual](https://x.com/res1dualedge/status/2104300857928098075): Engagement-farmed pointer (1.6M views, 'save this' hook, attributes the course to Andrew Ng while actually quoting Hanako's Aug 23 X article…
+    - 2026-09-26 — [Xudong Han](https://x.com/xudong07452910/status/2103650764912476432): Summary (translated from Chinese) of Anthropic's guide on preparing for AI-driven code modernization. The argument: modernization projects t…
 
-- **agent harness engineering** (58 posts, +3 this week)  
+- **agent harness engineering** (42 posts, +2 this week)  
   Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
-    - 2026-09-29 — [OpenAI](https://developers.openai.com/blog/codex-as-a-platform): OpenAI Codex as an agent harness platform. Open-source harness for building domain-specific agent applications. Separates the reusable agent…
     - 2026-09-29 — [Rohit Ghumare](https://x.com/ghumare64/status/2104112175425950177): Rohit Ghumare's checklist of what AI engineers should actually learn: a ~24-item syllabus spanning harness and context engineering, inferenc…
+    - 2026-09-26 — [Dhravya Shah](https://x.com/dhravyashah/status/2103668051468300701): Supermemory open-sourced its discontinued 'company brain' product — a multi-player agent harness — at github.com/supermemoryai/company-brain…
 
-- **agent identity files (SOUL.md, CLAUDE.md, persona scaffolds)** (20 posts, +3 this week)  
-  Recurring pattern of giving an agent a persistent identity file that loads automatically and shapes behavior.
-    - 2026-10-08 — [Kun Chen](https://x.com/kunchenguid/status/2108030810691629403): Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5.5 from writing its own tests slightly improved success rate (non-sign…
-    - 2026-09-26 — [DAIR.AI](https://x.com/dair_ai/status/2103479392106352910): Microsoft paper (CASD) arguing that handing a coding agent your full set of agent logs and letting it write the analysis code beats running …
+- **elite-skill masterclass content** (24 posts, +2 this week)  
+  Free lectures and 'masterclass' reposts promising an elite skill — quant trading maths (Jane Street, Jim Simons, Berkeley), high-stakes persuasion. Aspirational skill-acquisition material, usually hype-packaged, occasionally with a real lecture behind it.
+    - 2026-09-29 — [Ryven](https://x.com/imryven/status/2104483221228421380): Ryven's 10-step practical ladder for adopting Jev ('the Bitcoin moment for AI' — hype framing, modest 1.6K views): a triage test for which a…
+    - 2026-09-26 — [qwinsi](https://x.com/qwinsi0x/status/2103551860590116904): Engagement-farmed pitch for an AI backtesting product (join.horizon.trade affiliate link), built around Liang Wenfeng and the DeepSeek-affil…
 
 
 ### Revisit from last month

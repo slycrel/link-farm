@@ -409,6 +409,24 @@ def dismiss_observation(observation_id: int, *,
 # post also about X."
 AUTO_PROMOTE_MIN_COSINE = 0.82
 
+# Max canonical (evidence/origin) edges a post may hold via SEMANTIC
+# auto-promotion — a per-post TOTAL, like SEMANTIC_MAX_WEAK_PER_POST, counted
+# against everything canonical the post already carries from any source.
+# Added 2026-10-09 after the magnet cleanup: the evidence band was the only
+# uncapped attachment path, and with a median of 12 canonical edges per post
+# the big concepts had accreted most of the corpus as secondary evidence —
+# 13 concepts tripped the magnet detector, seven of them sharing 82–94% of
+# their members. Overflow matches are NOT dropped (no-discard policy): they
+# file as `weak` with a note, stay browseable, and can be upgraded by hand.
+# Exemplar matches (provisional nursery) and mechanical url: co-citations are
+# deliberately exempt — the former are inert by construction and need evidence
+# to graduate, the latter are concrete and rare. 3 mirrors the weak cap: a
+# post carries up to 3 load-bearing homes-candidates + 3 recorded leads.
+# Backfill of the pre-existing carpet: _rollback_evidence_cap_20261009
+# (4,683 edges demoted evidence→weak; see
+# decisions/2026-10-09-evidence-cap-and-magnet-cleanup.md).
+SEMANTIC_MAX_EVIDENCE_PER_POST = 3
+
 
 def _is_conceptual_name(name: Optional[str]) -> bool:
     """Heuristic: is this a *conceptual* concept (a theme/idea) rather than a
@@ -470,7 +488,8 @@ def auto_curate(*, db_path: Path = DEFAULT_DB, with_lock: bool = True,
     unchanged. Returns per-run counts. Idempotent: a second run finds nothing.
     """
     result = {"promoted": 0, "dismissed": 0, "dismissed_lowscore": 0,
-              "left_pending": 0, "weak": 0, "evidence": 0}
+              "left_pending": 0, "weak": 0, "evidence": 0,
+              "evidence_capped": 0}
 
     with _connect(db_path) as conn:
         pend = conn.execute("""
@@ -480,6 +499,12 @@ def auto_curate(*, db_path: Path = DEFAULT_DB, with_lock: bool = True,
               JOIN concepts c ON c.id = o.concept_id
              WHERE o.status = 'pending'
         """).fetchall()
+        # Canonical edges each post already holds (any source) — the baseline
+        # for the per-post evidence cap below.
+        canonical_held = dict(conn.execute(
+            "SELECT post_id, COUNT(*) FROM post_concepts "
+            "WHERE role IN ('evidence','origin') GROUP BY post_id"
+        ).fetchall())
         # Posts already attached to at least one conceptual concept.
         conceptual_ids = {
             r["id"] for r in conn.execute(
@@ -495,6 +520,24 @@ def auto_curate(*, db_path: Path = DEFAULT_DB, with_lock: bool = True,
                     f"WHERE concept_id IN ({qmarks})", tuple(conceptual_ids)
                 ).fetchall()
             }
+
+    # Per-post evidence cap (SEMANTIC_MAX_EVIDENCE_PER_POST). Rank each
+    # post's competing semantic-evidence candidates best-first so the cap
+    # keeps the strongest matches; everything past the budget files as weak
+    # below — recorded, labelled, upgradeable by hand, never discarded.
+    sem_evidence_cands: dict[int, list[tuple[float, int]]] = defaultdict(list)
+    for o in pend:
+        if (o["source"] == "semantic" and o["cstatus"] == CONCEPT_ACTIVE
+                and _is_conceptual_name(o["cname"])
+                and (o["raw_score"] or 0.0) >= min_cosine):
+            sem_evidence_cands[o["post_id"]].append(
+                (-(o["raw_score"] or 0.0), o["id"]))
+    capped_to_weak: set[int] = set()
+    for pid, cands in sem_evidence_cands.items():
+        cands.sort()
+        budget = max(0, SEMANTIC_MAX_EVIDENCE_PER_POST
+                     - canonical_held.get(pid, 0))
+        capped_to_weak.update(oid for _, oid in cands[budget:])
 
     # (observation_id, role, note) — nothing is dismissed here by design.
     to_attach: list[tuple[int, str, str]] = []
@@ -512,8 +555,16 @@ def auto_curate(*, db_path: Path = DEFAULT_DB, with_lock: bool = True,
                               f"auto-curate: exemplar match {score:.3f} "
                               f"(centered) on a provisional concept"))
         elif o["source"] == "semantic" and active and conceptual and score >= min_cosine:
-            to_attach.append((o["id"], ROLE_EVIDENCE,
-                              f"auto-curate: cosine {score:.3f} >= floor {min_cosine}"))
+            if o["id"] in capped_to_weak:
+                result["evidence_capped"] += 1
+                to_attach.append((o["id"], ROLE_WEAK,
+                                  f"auto-curate: cosine {score:.3f} >= floor "
+                                  f"{min_cosine} but post at evidence cap "
+                                  f"({SEMANTIC_MAX_EVIDENCE_PER_POST}) — "
+                                  f"attached weak, upgradeable by hand"))
+            else:
+                to_attach.append((o["id"], ROLE_EVIDENCE,
+                                  f"auto-curate: cosine {score:.3f} >= floor {min_cosine}"))
         elif o["source"] == "semantic" and conceptual and score < min_cosine:
             # The recall band. Previously dismissed; now kept as a labelled
             # association so it stays findable and can be upgraded by hand.
@@ -562,7 +613,8 @@ def auto_curate(*, db_path: Path = DEFAULT_DB, with_lock: bool = True,
 
     if progress:
         print(f"[auto-curate] attached {result['promoted']} "
-              f"({result['evidence']} evidence, {result['weak']} weak), "
+              f"({result['evidence']} evidence, {result['weak']} weak, "
+              f"{result['evidence_capped']} capped to weak), "
               f"dismissed {result['dismissed']}, "
               f"left {result['left_pending']} pending")
     return result
@@ -933,7 +985,8 @@ def recent_active_concepts(days: int = 7, db_path: Path = DEFAULT_DB,
     surface here — they're still browseable via the concepts list.
 
     Measured on **primary homes**, not evidence edges (changed 2026-09-15).
-    Evidence attachment is uncapped, so by this date the seven largest
+    Evidence attachment was uncapped then (capped per-post on 2026-10-09 via
+    SEMANTIC_MAX_EVIDENCE_PER_POST), so by this date the seven largest
     concepts carried 320-346 evidence edges each and shared 84-93% of their
     members — the morning view was listing four "different" concepts whose
     recent evidence was literally the same two posts. Primary homes are a
@@ -1505,8 +1558,10 @@ def run_all_mechanical_passes(db_path: Path = DEFAULT_DB,
 SEMANTIC_CENTROID_THRESHOLD = 0.75
 
 # Max sub-floor ("weak band") matches proposed per post, per run. The evidence
-# band (>= AUTO_PROMOTE_MIN_COSINE) is uncapped; only the weak band is ranked
-# and truncated. See the rationale in discover_semantic_neighbors(): an
+# band (>= AUTO_PROMOTE_MIN_COSINE) is uncapped at PROPOSAL time; since
+# 2026-10-09 it is capped at FILING time by SEMANTIC_MAX_EVIDENCE_PER_POST in
+# auto_curate (overflow files as weak). Only the weak band is ranked
+# and truncated here. See the rationale in discover_semantic_neighbors(): an
 # absolute threshold on raw cosines is far too permissive on this corpus —
 # uncapped, 0.75 proposed 8,825 observations in one run (~26% of every possible
 # post/concept pair). Capping makes a weak edge mean "one of this post's
@@ -1655,8 +1710,11 @@ def discover_semantic_neighbors(db_path: Path = DEFAULT_DB,
         #
         # So a weak edge means "among this post's closest concepts", not "above
         # a bar". The evidence band (>= AUTO_PROMOTE_MIN_COSINE) is left
-        # UNCAPPED — a confident match should always be recorded, and genuine
-        # cross-cutting membership is the whole point of the secondary axis.
+        # uncapped at proposal time — a confident match should always be
+        # RECORDED — but since 2026-10-09 auto_curate caps how many can be
+        # FILED as evidence per post (SEMANTIC_MAX_EVIDENCE_PER_POST);
+        # overflow lands as weak. Uncapped filing is how 13 concepts became
+        # magnets sharing 82–94% of their members.
         candidates: dict[int, list[tuple[float, int]]] = defaultdict(list)
         for cid, centroid in centroids.items():
             sims = post_matrix_normed @ centroid  # already normalized

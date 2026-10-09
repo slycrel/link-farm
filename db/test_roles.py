@@ -457,6 +457,110 @@ class WeakCapIsPerPostTotal(unittest.TestCase):
                              f"{weak_count()}")
 
 
+class EvidenceCapIsPerPostTotal(unittest.TestCase):
+    """The evidence cap (SEMANTIC_MAX_EVIDENCE_PER_POST, 2026-10-09) must
+    bound a post's TOTAL canonical edges acquired via semantic auto-promotion,
+    keep the strongest matches, file overflow as weak (never dismiss), and
+    exempt the mechanical url: and exemplar paths."""
+
+    def _db_with_concepts(self, n):
+        db = _make_db()
+        conn = sqlite3.connect(db)
+        for cid in range(1, n + 1):
+            conn.execute("INSERT INTO concepts (id, name) VALUES (?, ?)",
+                         (cid, f'theme {cid}'))
+        conn.execute("INSERT INTO posts (id, summary) VALUES (500, 's')")
+        conn.commit(); conn.close()
+        return db
+
+    def test_overflow_files_as_weak_keeping_strongest(self):
+        db = self._db_with_concepts(5)
+        conn = sqlite3.connect(db)
+        # 5 above-floor semantic matches with distinct scores
+        for cid, score in zip(range(1, 6), (0.95, 0.93, 0.91, 0.89, 0.87)):
+            conn.execute("""INSERT INTO concept_observations
+                (post_id, concept_id, raw_score, score_kind, source, status)
+                VALUES (500, ?, ?, 'cosine-similarity', 'semantic', 'pending')""",
+                (cid, score))
+        conn.commit(); conn.close()
+        r = C.auto_curate(db_path=db, with_lock=False)
+        self.assertEqual(r["dismissed"], 0)
+        self.assertEqual(r["evidence_capped"], 2)
+        conn = sqlite3.connect(db)
+        roles = dict(conn.execute(
+            "SELECT concept_id, role FROM post_concepts WHERE post_id=500"))
+        conn.close()
+        self.assertEqual([roles[c] for c in (1, 2, 3)],
+                         [C.ROLE_EVIDENCE] * 3, "strongest 3 should be evidence")
+        self.assertEqual([roles[c] for c in (4, 5)],
+                         [C.ROLE_WEAK] * 2, "overflow must file as weak, not vanish")
+
+    def test_existing_canonical_edges_count_against_cap(self):
+        db = self._db_with_concepts(5)
+        conn = sqlite3.connect(db)
+        # post already holds 2 canonical edges (any source)
+        conn.execute("INSERT INTO post_concepts (post_id, concept_id, role) "
+                     "VALUES (500, 4, 'evidence')")
+        conn.execute("INSERT INTO post_concepts (post_id, concept_id, role) "
+                     "VALUES (500, 5, 'origin')")
+        for cid, score in zip(range(1, 4), (0.95, 0.93, 0.91)):
+            conn.execute("""INSERT INTO concept_observations
+                (post_id, concept_id, raw_score, score_kind, source, status)
+                VALUES (500, ?, ?, 'cosine-similarity', 'semantic', 'pending')""",
+                (cid, score))
+        conn.commit(); conn.close()
+        C.auto_curate(db_path=db, with_lock=False)
+        conn = sqlite3.connect(db)
+        n_canon = conn.execute(
+            "SELECT COUNT(*) FROM post_concepts WHERE post_id=500 "
+            "AND role IN ('evidence','origin')").fetchone()[0]
+        conn.close()
+        self.assertEqual(n_canon, 3,
+                         "cap is a per-post TOTAL including pre-existing canonical edges")
+
+    def test_cap_holds_across_runs(self):
+        db = self._db_with_concepts(6)
+        for batch in ((1, 2, 3), (4, 5, 6)):
+            conn = sqlite3.connect(db)
+            for cid in batch:
+                conn.execute("""INSERT INTO concept_observations
+                    (post_id, concept_id, raw_score, score_kind, source, status)
+                    VALUES (500, ?, 0.90, 'cosine-similarity', 'semantic', 'pending')""",
+                    (cid,))
+            conn.commit(); conn.close()
+            C.auto_curate(db_path=db, with_lock=False)
+        conn = sqlite3.connect(db)
+        n_canon = conn.execute(
+            "SELECT COUNT(*) FROM post_concepts WHERE post_id=500 "
+            "AND role IN ('evidence','origin')").fetchone()[0]
+        n_weak = conn.execute(
+            "SELECT COUNT(*) FROM post_concepts WHERE post_id=500 "
+            "AND role='weak'").fetchone()[0]
+        conn.close()
+        self.assertEqual(n_canon, 3, "a second run must not grow canonical past the cap")
+        self.assertEqual(n_weak, 3, "second batch should have landed weak")
+
+    def test_mechanical_url_evidence_is_exempt(self):
+        db = self._db_with_concepts(4)
+        conn = sqlite3.connect(db)
+        conn.execute("INSERT INTO concepts (id, name) VALUES (9, 'url:https://ex.com/r')")
+        # post already at the cap
+        for cid in (1, 2, 3):
+            conn.execute("INSERT INTO post_concepts (post_id, concept_id, role) "
+                         "VALUES (500, ?, 'evidence')", (cid,))
+        conn.execute("""INSERT INTO concept_observations
+            (post_id, concept_id, raw_score, score_kind, source, status)
+            VALUES (500, 9, 1.0, 'mechanical-overlap', 'mechanical', 'pending')""")
+        conn.commit(); conn.close()
+        C.auto_curate(db_path=db, with_lock=False)
+        conn = sqlite3.connect(db)
+        role = conn.execute("SELECT role FROM post_concepts WHERE post_id=500 "
+                            "AND concept_id=9").fetchone()[0]
+        conn.close()
+        self.assertEqual(role, C.ROLE_EVIDENCE,
+                         "url: co-citation evidence is concrete and exempt from the cap")
+
+
 class ProvisionalTier(unittest.TestCase):
     """A nursery concept must be inert: no centroid, no home, until it graduates."""
 
