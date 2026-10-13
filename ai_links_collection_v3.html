@@ -489,7 +489,7 @@
 
 <script>
 const MORNING_VIEW = {
-  "generated_at": "2026-10-09T16:01:54Z",
+  "generated_at": "2026-10-13T15:18:25Z",
   "read_now": [
     {
       "id": 2108030810691629403,
@@ -577,8 +577,8 @@ const MORNING_VIEW = {
         "id": 77,
         "name": "applied decision-model routing — gating agents with Jev",
         "description": "Discovered by orphan clustering on 2026-09-28 (6 posts, cohesion 0.66); renamed in-session. The *applied* side of System One / decision models: putting a non-generative decision model in front of an agent as a gate, router, verifier or judge, plus the libraries and framework integrations that make that practical (AnyJev, DSPy, LangGraph, Claude Code hooks). Deliberately distinct from #74 'System One models — bounded decisions as a primitive', which holds the concept itself and was frozen out of centroid scoring after the 2026-09-25 magnet rollback; because #74 can no longer recruit by cosine, the live Jev conversation could not reach it and formed this cluster instead. On 2026-09-28 #74's 11 canonical edges were demoted to weak so it became a secondary-only grouping tag, releasing its members to re-home here or elsewhere. NOTE: do not write the centroid-scoring opt-out marker as a literal string in this description — the eligibility check is a plain substring match over the whole description, so merely mentioning it silently disables semantic scoring for this concept (hit for real on 2026-09-28).",
-        "count": 32,
-        "recent_count": 13,
+        "count": 34,
+        "recent_count": 4,
         "last_post_date": "2026-09-29",
         "top_posts": [
           {
@@ -605,64 +605,95 @@ const MORNING_VIEW = {
         ]
       },
       {
-        "id": 41,
-        "name": "Claude Code setup & usage",
-        "description": "Claude Code setup guides, cheatsheets, starter packs, and day-to-day usage / steering practices.",
-        "count": 40,
-        "recent_count": 3,
-        "last_post_date": "2026-09-29",
+        "id": 5,
+        "name": "agentic code review at production scale",
+        "description": "Deterministic engineering handles what must never fail; LLM only does context reading and reasoning. Alibaba open-code-review.",
+        "count": 16,
+        "recent_count": 2,
+        "last_post_date": "2026-10-08",
         "top_posts": [
           {
-            "id": 2104676099083190435,
-            "date": "2026-09-29",
-            "author": "ClaudeDevs",
-            "url": "https://x.com/claudedevs/status/2104676099083190435",
-            "summary": "ClaudeDevs announcement (2M views): official guidance plus skills for having Claude Code design evaluations and hillclimb on them to improve your applications —"
+            "id": 2108030810691629403,
+            "date": "2026-10-08",
+            "author": "Kun Chen",
+            "url": "https://x.com/kunchenguid/status/2108030810691629403",
+            "summary": "Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5.5 from writing its own tests slightly improved success rate (non-significant) while signi"
           },
           {
-            "id": 2103586663393853636,
-            "date": "2026-09-26",
-            "author": "Vox",
-            "url": "https://x.com/voxyz_ai/status/2103586663393853636",
-            "summary": "Turns Thariq's effort findings into a concrete two-subagent Claude Code workflow. The four-step loop for new features: have Claude ask questions and fill gaps i"
+            "id": 2107678022094790933,
+            "date": "2026-10-08",
+            "author": "Tech with Mak",
+            "url": "https://x.com/technmak/status/2107678022094790933",
+            "summary": "A thorough primer arguing inference engineering is an underrated skill set: the prefill/decode split (compute-bound vs memory-bandwidth-bound) and how it motiva"
           },
           {
-            "id": 2103494988029964591,
-            "date": "2026-09-26",
-            "author": "Rahul",
-            "url": "https://x.com/sairahul1/status/2103494988029964591",
-            "summary": "Engagement-farmed repackaging of Anthropic's Opus 5.5 prompting guidance into a 12-tip list, funneling to the author's own 'Opus 5.5 Prompting Masterclass' arti"
+            "id": 2102777314551410833,
+            "date": "2026-09-23",
+            "author": "Gill",
+            "url": "https://x.com/gurtej__gill_/status/2102777314551410833",
+            "summary": "Endorsement of a Berkeley + DeepMind paper (arxiv.org/pdf/2609.19717) proposing an Abstract Token Curriculum (ATC) as an alternative to chain-of-thought. Rather"
           }
         ]
       },
       {
-        "id": 39,
-        "name": "loop engineering",
-        "description": "Feedback loops and self-running agent loops: loop design patterns, loop libraries, nested build loops, self-improving / meta-learning loops.",
-        "count": 31,
-        "recent_count": 3,
+        "id": 52,
+        "name": "agents as constrained software — making bad shapes unexpressible",
+        "description": "Applying real software-engineering formalism to agent systems so that the wrong design becomes impossible to write rather than merely discouraged. Instances: agents as plain Python objects where methods are actions, fields are state, docstrings are prompts and type annotations are contracts; an orchestration VM that turns agent coordination into ordinary software engineering; and the argument that codebases surviving past month six do so because the architecture forbids the bad shape, not because the team stayed disciplined.\n\n[latent] Proposed by a blinded latent pass (run 252) from 3 posts read without their existing topic or concept tags.",
+        "count": 43,
+        "recent_count": 1,
         "last_post_date": "2026-09-29",
         "top_posts": [
           {
-            "id": 2104300857928098075,
+            "id": 191052956353173,
             "date": "2026-09-29",
-            "author": "Residual",
-            "url": "https://x.com/res1dualedge/status/2104300857928098075",
-            "summary": "Engagement-farmed pointer (1.6M views, 'save this' hook, attributes the course to Andrew Ng while actually quoting Hanako's Aug 23 X article 'Loops and Graphs')"
+            "author": "OpenAI",
+            "url": "https://developers.openai.com/blog/codex-as-a-platform",
+            "summary": "OpenAI Codex as an agent harness platform. Open-source harness for building domain-specific agent applications. Separates the reusable agent loop (Codex) from a"
           },
           {
-            "id": 2103650764912476432,
-            "date": "2026-09-26",
-            "author": "Xudong Han",
-            "url": "https://x.com/xudong07452910/status/2103650764912476432",
-            "summary": "Summary (translated from Chinese) of Anthropic's guide on preparing for AI-driven code modernization. The argument: modernization projects that used to take a f"
+            "id": 2099941244063432720,
+            "date": "2026-09-16",
+            "author": "Zach Lloyd",
+            "url": "https://x.com/zachlloydtweets/status/2099941244063432720",
+            "summary": "X Article laying out crawl/walk/run steps for moving from local interactive agents to a software factory (a closed agentic loop running in the cloud). The 'craw"
           },
           {
-            "id": 2103596797063242013,
-            "date": "2026-09-26",
-            "author": "Ryven",
-            "url": "https://x.com/imryven/status/2103596797063242013",
-            "summary": "Argument against building agent workflows as a straight line when most steps don't actually depend on the previous one's output. The 90-second test: walk the wo"
+            "id": 2090744569960824949,
+            "date": "2026-08-21",
+            "author": "Matt Pocock",
+            "url": "https://x.com/mattpocockuk/status/2090744569960824949",
+            "summary": "Pocock shares an /implement-spec skill: a multi-agent implementer that takes a spec plus tickets, does codebase research in a subagent, implements all tickets i"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "vector / hybrid databases as agent-memory infrastructure",
+        "description": "HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.",
+        "count": 41,
+        "recent_count": 1,
+        "last_post_date": "2026-10-08",
+        "top_posts": [
+          {
+            "id": 2107873474517889201,
+            "date": "2026-10-08",
+            "author": "mem0",
+            "url": "https://x.com/mem0ai/status/2107873474517889201",
+            "summary": "mem0's X-article breakdown of Jev-Mem (arxiv.org/pdf/2609.23986, github.com/libingzheren/Jev-Mem) — a UT Dallas architecture that uses Jev as a System One contr"
+          },
+          {
+            "id": 2101925393322091005,
+            "date": "2026-09-21",
+            "author": "Annatar.md",
+            "url": "https://x.com/annatarxbt/status/2101925393322091005",
+            "summary": "Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowledge graph), procedu"
+          },
+          {
+            "id": 2099851294684922336,
+            "date": "2026-09-16",
+            "author": "wast3",
+            "url": "https://x.com/0xwast3/status/2099851294684922336",
+            "summary": "Describes MEMENTO, an MIT-licensed agent memory layer with 41 memory types, 9 write gates and 6 decay curves, positioned against stuffing recent messages into t"
           }
         ]
       },
@@ -670,8 +701,8 @@ const MORNING_VIEW = {
         "id": 19,
         "name": "agent harness engineering",
         "description": "Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.",
-        "count": 42,
-        "recent_count": 2,
+        "count": 41,
+        "recent_count": 1,
         "last_post_date": "2026-09-29",
         "top_posts": [
           {
@@ -682,49 +713,18 @@ const MORNING_VIEW = {
             "summary": "Rohit Ghumare's checklist of what AI engineers should actually learn: a ~24-item syllabus spanning harness and context engineering, inference economics (KV cach"
           },
           {
-            "id": 2103668051468300701,
-            "date": "2026-09-26",
-            "author": "Dhravya Shah",
-            "url": "https://x.com/dhravyashah/status/2103668051468300701",
-            "summary": "Supermemory open-sourced its discontinued 'company brain' product — a multi-player agent harness — at github.com/supermemoryai/company-brain, one-click deployab"
-          },
-          {
             "id": 2095337735330443622,
             "date": "2026-09-04",
             "author": "alphaXiv",
             "url": "https://x.com/askalphaxiv/status/2095337735330443622",
             "summary": "Summarizes 'Harness-of-Harness: Multi-Day Autonomous Software Development with Continual Improvement' (alphaxiv.org/abs/2609.01481), which wraps existing coding"
-          }
-        ]
-      },
-      {
-        "id": 45,
-        "name": "elite-skill masterclass content",
-        "description": "Free lectures and 'masterclass' reposts promising an elite skill — quant trading maths (Jane Street, Jim Simons, Berkeley), high-stakes persuasion. Aspirational skill-acquisition material, usually hype-packaged, occasionally with a real lecture behind it.",
-        "count": 24,
-        "recent_count": 2,
-        "last_post_date": "2026-09-29",
-        "top_posts": [
-          {
-            "id": 2104483221228421380,
-            "date": "2026-09-29",
-            "author": "Ryven",
-            "url": "https://x.com/imryven/status/2104483221228421380",
-            "summary": "Ryven's 10-step practical ladder for adopting Jev ('the Bitcoin moment for AI' — hype framing, modest 1.6K views): a triage test for which agent calls should le"
           },
           {
-            "id": 2103551860590116904,
-            "date": "2026-09-26",
-            "author": "qwinsi",
-            "url": "https://x.com/qwinsi0x/status/2103551860590116904",
-            "summary": "Engagement-farmed pitch for an AI backtesting product (join.horizon.trade affiliate link), built around Liang Wenfeng and the DeepSeek-affiliated hedge fund. Th"
-          },
-          {
-            "id": 2099881788826902678,
-            "date": "2026-09-16",
-            "author": "rvaniaaa",
-            "url": "https://x.com/rvaniaaaa/status/2099881788826902678",
-            "summary": "Compares two teams on the same task with the same model where one spent $200 on compute and one $9, and attributes the quality gap to who checked the work. The "
+            "id": 2094457600259842065,
+            "date": "2026-08-31",
+            "author": "lauren",
+            "url": "https://x.com/poteto/status/2094457600259842065",
+            "summary": "Part 1 of Cursor engineer lauren's (@poteto) \"Complete Guide to pstack\", her personal skill stack: the argument is that an agent verification skill is critical "
           }
         ]
       }
