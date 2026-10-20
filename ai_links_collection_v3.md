@@ -1,54 +1,44 @@
 # AI Links Collection
-**Total Posts**: 949  
-**Date Range**: 2024-06-11 – 2026-10-08  
-**Enriched**: 948/949 (99%)
+**Total Posts**: 951  
+**Date Range**: 2024-06-11 – 2026-10-20  
+**Enriched**: 949/951 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-10-13T15:18:25Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-10-20T15:32:46Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
-- **2026-10-08** — [Kun Chen](https://x.com/kunchenguid/status/2108030810691629403) — *now • Dev Practices • 184.9K views • v1 enriched*  
-  Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5.5 from writing its own tests slightly improved success rate (non-significant) while significantly cutting time and tokens — agent-written unit/integration tests add no value because both the tests and the implementation are the same interpretation of intent. Disabling execution of even existing tests on a 44-task subset also had no effect. Explicitly scoped: doesn't cover human-specified test cases or e2e tests (a follow-up eval is planned). 184.9K views.
-- **2026-10-08** — [ClaudeDevs](https://x.com/claudedevs/status/2107925762720326090) — *now • Claude Code • 326.4K views • v1 enriched*  
-  ClaudeDevs: computer-use and browser-use toolsets are now built into the Claude Python and TypeScript SDKs — the SDK runs the action loop and dispatches clicks/keystrokes to drivers, replacing the hand-written mapping loop previously required. 326.4K views.
-- **2026-10-08** — [Juncheng Yang](https://x.com/1a1a11a/status/2107960379917652296) — *near-term • Research • 12.4K views • v1 enriched*  
-  Juncheng Yang (Harvard MAD Systems) releases the largest agentic LLM inference trace dataset: 206B tokens, 12,002 sessions, 1.19M LLM requests and 1.21M tool calls with tool names, arguments and durations (huggingface.co/datasets/harvardMadsys/freeinference_agentic_trace; opendata.agentic-system.org). Paper forthcoming — raw material for anyone studying real agent workload shapes, caching, or serving economics.
-- **2026-10-08** — [Akshay Pachaar](https://x.com/akshay_pachaar/status/2107933081093210124) — *near-term • Agent Design • 15.2K views • v1 enriched*  
-  Akshay Pachaar introduces Laya (github.com/NandhaKishorM/laya, Apache 2.0) — an open-source local alternative to Jev for typed decision-making: encoder-based scoring of fixed answer sets with [MASK] markers, returning calibratable probabilities, ~35ms locally vs ~380ms for Jev over the network. Honest trade-off framing: Jev gives stronger zero-shot decisions; Laya gives speed, privacy and control but needs fine-tuning and calibration on your own task. Quotes his earlier 'Jev Clearly Explained' article.
-- **2026-10-08** — [Mark Ajzenstadt](https://x.com/mardehaym/status/2107902643490222168) — *near-term • Management • 24.8K views • v1 enriched*  
-  Mark Ajzenstadt (decade running an embedded-engineering firm) pushes back on the FDE hype: cites a Gartner prediction that 70% of enterprises will abandon vendor-FDE-built agentic AI by 2028 over cost and inability to evolve systems independently. His standard: the engagement succeeds only if the client's own team gains capability while decisions are being made — 'what will my team be able to do without you six months from now?' A useful counter-example to the pro-FDE material in the collection.
+- **2026-10-20** — [morluto](https://github.com/morluto/rea) — *now • Skills & MCP • v1 enriched*  
+  REA (github.com/morluto/rea, rea.tools) is an MIT-licensed MCP server + CLI that lets coding agents reverse engineer software without source — native binaries via Hopper/Ghidra/IDA, Electron/JS apps, .NET, APKs, firmware, pcaps, WASM, EVM bytecode and more — returning pseudocode and findings with evidence so the agent can explain a feature and rebuild it. One-line setup (npx rea-agents setup) wires it into Claude Code, Codex, Cursor and Gemini CLI; analysis runs locally. At ~345K stars it's one of the largest agent-tooling repos on GitHub — worth evaluating as a skill/MCP for 'how does app X do this' questions.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **applied decision-model routing — gating agents with Jev** (34 posts, +4 this week)  
-  Discovered by orphan clustering on 2026-09-28 (6 posts, cohesion 0.66); renamed in-session. The *applied* side of System One / decision models: putting a non-generative decision model in front of an agent as a gate, router, verifier or judge, plus the libraries and framework integrations that make that practical (AnyJev, DSPy, LangGraph, Claude Code hooks). Deliberately distinct from #74 'System One models — bounded decisions as a primitive', which holds the concept itself and was frozen out of centroid scoring after the 2026-09-25 magnet rollback; because #74 can no longer recruit by cosine, the live Jev conversation could not reach it and formed this cluster instead. On 2026-09-28 #74's 11 canonical edges were demoted to weak so it became a secondary-only grouping tag, releasing its members to re-home here or elsewhere. NOTE: do not write the centroid-scoring opt-out marker as a literal string in this description — the eligibility check is a plain substring match over the whole description, so merely mentioning it silently disables semantic scoring for this concept (hit for real on 2026-09-28).
-    - 2026-09-29 — [Diogo Almeida](https://x.com/completeskeptic/status/2104682600103284917): TypeSafe founder Diogo Almeida responds to Zhaorun Chen's red-team of Jev 1.13 on the DecodingTrust-Agent Platform — 70.1% attack success ra…
-    - 2026-09-29 — [marfin](https://x.com/marfinxx/status/2104546903488647179): marfin's three-model stack for long-horizon agents — Jev for bounded decisions before any token is sampled, GPT-6 Astra for cheap fast execu…
+- **Claude Code session workflows — handoffs, messaging & retention** (17 posts, +2 this week)  
+  Discovered by orphan clustering on 2026-10-08 from 6 posts with no prior concept (cohesion 0.66). Rename or archive if this isn't a real theme.
+    - 2026-10-08 — [Boris Cherny](https://x.com/bcherny/status/2107565388250874193): Boris Cherny (creator of Claude Code) on how he actually prompts Claude: talk to it like a coworker — no heavy scaffolding. The prompt-engin…
+    - 2026-10-08 — [AI Edge](https://x.com/aiedge_/status/2107835983735787568): AI Edge's hype-packaged but concretely useful setup guide for pairing Opus 5.5 with Jev in Claude Code: Jev scores/sorts/filters so Opus onl…
 
 - **agentic code review at production scale** (16 posts, +2 this week)  
   Deterministic engineering handles what must never fail; LLM only does context reading and reasoning. Alibaba open-code-review.
     - 2026-10-08 — [Kun Chen](https://x.com/kunchenguid/status/2108030810691629403): Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5.5 from writing its own tests slightly improved success rate (non-sign…
     - 2026-10-08 — [Tech with Mak](https://x.com/technmak/status/2107678022094790933): A thorough primer arguing inference engineering is an underrated skill set: the prefill/decode split (compute-bound vs memory-bandwidth-boun…
 
-- **agents as constrained software — making bad shapes unexpressible** (43 posts, +1 this week)  
-  Applying real software-engineering formalism to agent systems so that the wrong design becomes impossible to write rather than merely discouraged. Instances: agents as plain Python objects where methods are actions, fields are state, docstrings are prompts and type annotations are contracts; an orchestration VM that turns agent coordination into ordinary software engineering; and the argument that codebases surviving past month six do so because the architecture forbids the bad shape, not because the team stayed disciplined.
-
-[latent] Proposed by a blinded latent pass (run 252) from 3 posts read without their existing topic or concept tags.
-    - 2026-09-29 — [OpenAI](https://developers.openai.com/blog/codex-as-a-platform): OpenAI Codex as an agent harness platform. Open-source harness for building domain-specific agent applications. Separates the reusable agent…
-    - 2026-09-16 — [Zach Lloyd](https://x.com/zachlloydtweets/status/2099941244063432720): X Article laying out crawl/walk/run steps for moving from local interactive agents to a software factory (a closed agentic loop running in t…
-
 - **vector / hybrid databases as agent-memory infrastructure** (41 posts, +1 this week)  
   HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
     - 2026-10-08 — [mem0](https://x.com/mem0ai/status/2107873474517889201): mem0's X-article breakdown of Jev-Mem (arxiv.org/pdf/2609.23986, github.com/libingzheren/Jev-Mem) — a UT Dallas architecture that uses Jev a…
     - 2026-09-21 — [Annatar.md](https://x.com/annatarxbt/status/2101925393322091005): Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowl…
 
-- **agent harness engineering** (41 posts, +1 this week)  
-  Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
-    - 2026-09-29 — [Rohit Ghumare](https://x.com/ghumare64/status/2104112175425950177): Rohit Ghumare's checklist of what AI engineers should actually learn: a ~24-item syllabus spanning harness and context engineering, inferenc…
-    - 2026-09-04 — [alphaXiv](https://x.com/askalphaxiv/status/2095337735330443622): Summarizes 'Harness-of-Harness: Multi-Day Autonomous Software Development with Continual Improvement' (alphaxiv.org/abs/2609.01481), which w…
+- **local model serving on consumer GPUs — quantization & throughput** (34 posts, +1 this week)  
+  Running capable open models on single-box prosumer hardware: quantization formats (NVFP4/AWQ/GPTQ/GGUF/MLX), KV-cache compression, serving stacks (SGLang, DSpark), and the tok/s benchmarking that goes with it. Renamed from auto-named cluster on 2026-08-21.
+    - 2026-10-08 — [Juncheng Yang](https://x.com/1a1a11a/status/2107960379917652296): Juncheng Yang (Harvard MAD Systems) releases the largest agentic LLM inference trace dataset: 206B tokens, 12,002 sessions, 1.19M LLM reques…
+    - 2026-09-15 — [Salvatore Sanfilippo](https://github.com/antirez/ds4): DwarfStar (github.com/antirez/ds4) is Salvatore Sanfilippo's self-contained C inference engine for running DeepSeek V4 Flash/PRO and GLM 5.2…
+
+- **Forward Deployed Engineers — the durable AI-era role** (24 posts, +1 this week)  
+  Argument that FDEs are the right shape of role for the AI rollout era. Touches every employee's workflow.
+    - 2026-10-08 — [Mark Ajzenstadt](https://x.com/mardehaym/status/2107902643490222168): Mark Ajzenstadt (decade running an embedded-engineering firm) pushes back on the FDE hype: cites a Gartner prediction that 70% of enterprise…
+    - 2026-09-16 — [rody](https://x.com/0x_rody/status/2099790134547751115): X Article listing ten agent roles to build first, ordered by dependency rather than alphabetically or by glamour: each exists because the pr…
 
 
 ### Revisit from last month
@@ -61,15 +51,15 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 575 | 60.6% |
+| agent-design | 576 | 60.6% |
 | claude-code | 211 | 22.2% |
-| dev-practices | 411 | 43.3% |
-| skills-mcp | 208 | 21.9% |
-| prompting | 142 | 15.0% |
-| research | 262 | 27.6% |
-| industry | 141 | 14.9% |
-| management | 144 | 15.2% |
-| adjacent | 48 | 5.1% |
+| dev-practices | 412 | 43.3% |
+| skills-mcp | 209 | 22.0% |
+| prompting | 142 | 14.9% |
+| research | 263 | 27.7% |
+| industry | 141 | 14.8% |
+| management | 144 | 15.1% |
+| adjacent | 48 | 5.0% |
 | solo-operator | 9 | 0.9% |
 | questionable | 148 | 15.6% |
 | general | 100 | 10.5% |
@@ -78,6 +68,8 @@
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-10-20 | morluto | skills-mcp | REA (github.com/morluto/rea, rea.tools) is an MIT-licensed MCP server... |
+| 2026-10-15 | elvis | research |  |
 | 2026-10-08 | Kun Chen | dev-practices | Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5... |
 | 2026-10-08 | Juncheng Yang | research | Juncheng Yang (Harvard MAD Systems) releases the largest agentic LLM i... |
 | 2026-10-08 | Akshay Pachaar | agent-design | Akshay Pachaar introduces Laya (github.com/NandhaKishorM/laya, Apache... |
@@ -126,13 +118,13 @@
 | 2026-09-26 | Vox | claude-code | Claude Code tip: once Opus 5.5 is the main model, put an idle Fable qu... |
 | 2026-09-25 | Akshay | agent-design | Mechanism explainer for the Contrastive Language Model (CLM) out of NV... |
 | 2026-09-24 | elvis | agent-design | elvis flags a second entrant in the 'System One model' category behind... |
-| 2026-09-24 | Alex Veremeyenko | research | Summary of 'The Tasteful Agent' (Microsoft + City University of Hong K... |
-| 2026-09-24 | Tanner WJ | agent-design | The Pit (pit.tannerwj.com) is a paper-trading league for AI agents bui... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (575)
+### Agent Design (576)
+
+- [morluto](https://github.com/morluto/rea) — 2026-10-20: REA (github.com/morluto/rea, rea.tools) is an MIT-licensed MCP server + CLI that lets coding agents reverse engineer software without source — native binaries via Hopper/Ghidra/IDA, Electron/JS apps, .NET, APKs, firmware, pcaps, WASM, EVM bytecode and more — returning pseudocode and findings with evidence so the agent can explain a feature and rebuild it. One-line setup (npx rea-agents setup) wires it into Claude Code, Codex, Cursor and Gemini CLI; analysis runs locally. At ~345K stars it's one of the largest agent-tooling repos on GitHub — worth evaluating as a skill/MCP for 'how does app X do this' questions.
 
 - [Kun Chen](https://x.com/kunchenguid/status/2108030810691629403) — 2026-10-08: Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5.5 from writing its own tests slightly improved success rate (non-significant) while significantly cutting time and tokens — agent-written unit/integration tests add no value because both the tests and the implementation are the same interpretation of intent. Disabling execution of even existing tests on a 44-task subset also had no effect. Explicitly scoped: doesn't cover human-specified test cases or e2e tests (a follow-up eval is planned). 184.9K views.
 
@@ -1708,7 +1700,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (411)
+### Dev Practices (412)
+
+- [morluto](https://github.com/morluto/rea) — 2026-10-20: REA (github.com/morluto/rea, rea.tools) is an MIT-licensed MCP server + CLI that lets coding agents reverse engineer software without source — native binaries via Hopper/Ghidra/IDA, Electron/JS apps, .NET, APKs, firmware, pcaps, WASM, EVM bytecode and more — returning pseudocode and findings with evidence so the agent can explain a feature and rebuild it. One-line setup (npx rea-agents setup) wires it into Claude Code, Codex, Cursor and Gemini CLI; analysis runs locally. At ~345K stars it's one of the largest agent-tooling repos on GitHub — worth evaluating as a skill/MCP for 'how does app X do this' questions.
 
 - [Kun Chen](https://x.com/kunchenguid/status/2108030810691629403) — 2026-10-08: Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5.5 from writing its own tests slightly improved success rate (non-significant) while significantly cutting time and tokens — agent-written unit/integration tests add no value because both the tests and the implementation are the same interpretation of intent. Disabling execution of even existing tests on a 44-task subset also had no effect. Explicitly scoped: doesn't cover human-specified test cases or e2e tests (a follow-up eval is planned). 184.9K views.
 
@@ -2532,7 +2526,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Skills & MCP (208)
+### Skills & MCP (209)
+
+- [morluto](https://github.com/morluto/rea) — 2026-10-20: REA (github.com/morluto/rea, rea.tools) is an MIT-licensed MCP server + CLI that lets coding agents reverse engineer software without source — native binaries via Hopper/Ghidra/IDA, Electron/JS apps, .NET, APKs, firmware, pcaps, WASM, EVM bytecode and more — returning pseudocode and findings with evidence so the agent can explain a feature and rebuild it. One-line setup (npx rea-agents setup) wires it into Claude Code, Codex, Cursor and Gemini CLI; analysis runs locally. At ~345K stars it's one of the largest agent-tooling repos on GitHub — worth evaluating as a skill/MCP for 'how does app X do this' questions.
 
 - [ClaudeDevs](https://x.com/claudedevs/status/2107925762720326090) — 2026-10-08: ClaudeDevs: computer-use and browser-use toolsets are now built into the Claude Python and TypeScript SDKs — the SDK runs the action loop and dispatches clicks/keystrokes to drivers, replacing the hand-written mapping loop previously required. 326.4K views.
 
@@ -3236,7 +3232,9 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-### Research (262)
+### Research (263)
+
+- [elvis](https://x.com/omarsar0/status/2110083302728323346) — 2026-10-15: 
 
 - [Kun Chen](https://x.com/kunchenguid/status/2108030810691629403) — 2026-10-08: Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5.5 from writing its own tests slightly improved success rate (non-significant) while significantly cutting time and tokens — agent-written unit/integration tests add no value because both the tests and the implementation are the same interpretation of intent. Disabling execution of even existing tests on a 44-task subset also had no effect. Explicitly scoped: doesn't cover human-specified test cases or e2e tests (a follow-up eval is planned). 184.9K views.
 
@@ -4960,6 +4958,12 @@
 ## Full Chronological List
 
 ### Oct 2026
+
+- **2026-10-20** | [morluto](https://github.com/morluto/rea) | skills-mcp, agent-design, dev-practices
+  REA (github.com/morluto/rea, rea.tools) is an MIT-licensed MCP server + CLI that lets coding agents reverse engineer software without source — native binaries via Hopper/Ghidra/IDA, Electron/JS apps, .NET, APKs, firmware, pcaps, WASM, EVM bytecode and more — returning pseudocode and findings with evidence so the agent can explain a feature and rebuild it. One-line setup (npx rea-agents setup) wires it into Claude Code, Codex, Cursor and Gemini CLI; analysis runs locally. At ~345K stars it's one of the largest agent-tooling repos on GitHub — worth evaluating as a skill/MCP for 'how does app X do this' questions.
+
+- **2026-10-15** | [elvis](https://x.com/omarsar0/status/2110083302728323346) | research
+  
 
 - **2026-10-08** | [Kun Chen](https://x.com/kunchenguid/status/2108030810691629403) | dev-practices, agent-design, research
   Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5.5 from writing its own tests slightly improved success rate (non-significant) while significantly cutting time and tokens — agent-written unit/integration tests add no value because both the tests and the implementation are the same interpretation of intent. Disabling execution of even existing tests on a 44-task subset also had no effect. Explicitly scoped: doesn't cover human-specified test cases or e2e tests (a follow-up eval is planned). 184.9K views.

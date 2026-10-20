@@ -1,5 +1,53 @@
 [
   {
+    "date": "2026-10-20",
+    "author": "morluto",
+    "handle": "",
+    "subject": "GitHub: morluto/rea",
+    "url": "https://github.com/morluto/rea",
+    "summary": "REA (github.com/morluto/rea, rea.tools) is an MIT-licensed MCP server + CLI that lets coding agents reverse engineer software without source — native binaries via Hopper/Ghidra/IDA, Electron/JS apps, .NET, APKs, firmware, pcaps, WASM, EVM bytecode and more — returning pseudocode and findings with evidence so the agent can explain a feature and rebuild it. One-line setup (npx rea-agents setup) wires it into Claude Code, Codex, Cursor and Gemini CLI; analysis runs locally. At ~345K stars it's one of the largest agent-tooling repos on GitHub — worth evaluating as a skill/MCP for 'how does app X do this' questions.",
+    "topics": [
+      "skills-mcp",
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "repo",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "REA: Reverse Engineer Anything — one MCP for reverse engineering across binaries, applications, and runtime behavior. See a feature in an app that you want in your own product? Ask your agent to investigate it with REA. It can inspect the app without its source code, explain how the feature works, show the evidence, and build a version for your project. REA connects your agent to tools for inspecting native binaries, JavaScript and Electron apps, .NET assemblies, and websites. You can also use the same tools from your terminal. Analysis runs locally, and results include the evidence and limitations behind each conclusion. Setup (npx rea-agents setup) registers REA with your agent (Claude Code, Codex, Cursor, Gemini CLI, Grok Build and others) and installs matching workflow instructions. Native analysis can use an existing Hopper, Ghidra, or IDA installation; static JavaScript analysis needs no native engine. Targets: desktop installations, native binaries (pseudocode/assembly/strings/symbols), ELF layout, Go/Rust binaries, IL2CPP metadata, Godot PCK, WASM, EVM bytecode, SQLite databases, Linux crashes, JavaScript/Electron (modules, IPC, source maps), websites, HAR/SAZ captures, .NET assemblies, Android APKs/devices, JEB projects, Flutter apps, firmware, pcap/packet captures, logic-signal recordings, Apple bundles, and process behavior capture. Showcases: DX-Ball sound-pan reconstruction (passes 3,205 x86 cases, reproduces all 63 compiled bytes), Notion Electron clipboard bridge trace, TH04 PC-98 bullet-ring calculation recovery. MIT licensed; 344.7k stars, 86.9k forks, 3,869 commits, 805 open issues. Website rea.tools; npm package rea-agents; skill on skills.sh/morluto/rea.\n\nREA website — setup, guides, showcases\n\nrea-agents npm package",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-15",
+    "author": "elvis",
+    "handle": "@omarsar0",
+    "subject": "Post by elvis on X",
+    "url": "https://x.com/omarsar0/status/2110083302728323346",
+    "summary": "",
+    "topics": [
+      "research"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": false,
+    "enrichment_status": "failed",
+    "enrichment_attempts": 1,
+    "enrichment_last_error": "chrome-unreachable"
+  },
+  {
     "date": "2026-10-08",
     "author": "Kun Chen",
     "handle": "@kunchenguid",
