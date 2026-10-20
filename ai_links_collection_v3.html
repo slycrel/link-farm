@@ -489,7 +489,7 @@
 
 <script>
 const MORNING_VIEW = {
-  "generated_at": "2026-10-20T15:32:46Z",
+  "generated_at": "2026-10-20T18:58:59Z",
   "read_now": [
     {
       "id": 122881363139239,
@@ -506,6 +506,22 @@ const MORNING_VIEW = {
       "priority": "now",
       "views": "",
       "reason": "now • Skills & MCP • v1 enriched"
+    },
+    {
+      "id": 2110083302728323346,
+      "date": "2026-10-15",
+      "author": "elvis",
+      "handle": "@omarsar0",
+      "url": "https://x.com/omarsar0/status/2110083302728323346",
+      "summary": "elvis highlights the LongHarness paper (arxiv.org/abs/2610.13075): a model-agnostic agent harness for 100M+ token corpora that takes GLM-5.3-Flash from 4.4% to 61.1% exact match on OfficeQA Pro V2 with the same model, and beats Claude Code by 12.1 pts (V1) and Codex by 18.9 pts (V2). The mechanism: instead of letting evidence and conclusions pile up in one chat history, LongHarness keeps both as explicit state — open conclusions drive what to retrieve next, and each new piece of evidence confirms or revises the conclusion that requested it. Strong quantitative evidence for the 'harness-bound, not model-bound' thesis already running through the corpus.",
+      "topics": [
+        "agent-design",
+        "research",
+        "dev-practices"
+      ],
+      "priority": "near-term",
+      "views": "29.4K",
+      "reason": "near-term • Agent Design • 29.4K views • v1 enriched"
     }
   ],
   "recurring": {
@@ -516,7 +532,7 @@ const MORNING_VIEW = {
         "id": 81,
         "name": "Claude Code session workflows — handoffs, messaging & retention",
         "description": "Discovered by orphan clustering on 2026-10-08 from 6 posts with no prior concept (cohesion 0.66). Rename or archive if this isn't a real theme.",
-        "count": 17,
+        "count": 18,
         "recent_count": 2,
         "last_post_date": "2026-10-08",
         "top_posts": [
@@ -547,7 +563,7 @@ const MORNING_VIEW = {
         "id": 5,
         "name": "agentic code review at production scale",
         "description": "Deterministic engineering handles what must never fail; LLM only does context reading and reasoning. Alibaba open-code-review.",
-        "count": 16,
+        "count": 15,
         "recent_count": 2,
         "last_post_date": "2026-10-08",
         "top_posts": [
@@ -578,7 +594,7 @@ const MORNING_VIEW = {
         "id": 7,
         "name": "vector / hybrid databases as agent-memory infrastructure",
         "description": "HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.",
-        "count": 41,
+        "count": 40,
         "recent_count": 1,
         "last_post_date": "2026-10-08",
         "top_posts": [
@@ -606,10 +622,41 @@ const MORNING_VIEW = {
         ]
       },
       {
+        "id": 77,
+        "name": "applied decision-model routing — gating agents with Jev",
+        "description": "Discovered by orphan clustering on 2026-09-28 (6 posts, cohesion 0.66); renamed in-session. The *applied* side of System One / decision models: putting a non-generative decision model in front of an agent as a gate, router, verifier or judge, plus the libraries and framework integrations that make that practical (AnyJev, DSPy, LangGraph, Claude Code hooks). Deliberately distinct from #74 'System One models — bounded decisions as a primitive', which holds the concept itself and was frozen out of centroid scoring after the 2026-09-25 magnet rollback; because #74 can no longer recruit by cosine, the live Jev conversation could not reach it and formed this cluster instead. On 2026-09-28 #74's 11 canonical edges were demoted to weak so it became a secondary-only grouping tag, releasing its members to re-home here or elsewhere. NOTE: do not write the centroid-scoring opt-out marker as a literal string in this description — the eligibility check is a plain substring match over the whole description, so merely mentioning it silently disables semantic scoring for this concept (hit for real on 2026-09-28).",
+        "count": 35,
+        "recent_count": 1,
+        "last_post_date": "2026-10-15",
+        "top_posts": [
+          {
+            "id": 2110083302728323346,
+            "date": "2026-10-15",
+            "author": "elvis",
+            "url": "https://x.com/omarsar0/status/2110083302728323346",
+            "summary": "elvis highlights the LongHarness paper (arxiv.org/abs/2610.13075): a model-agnostic agent harness for 100M+ token corpora that takes GLM-5.3-Flash from 4.4% to "
+          },
+          {
+            "id": 2104682600103284917,
+            "date": "2026-09-29",
+            "author": "Diogo Almeida",
+            "url": "https://x.com/completeskeptic/status/2104682600103284917",
+            "summary": "TypeSafe founder Diogo Almeida responds to Zhaorun Chen's red-team of Jev 1.13 on the DecodingTrust-Agent Platform — 70.1% attack success rate under direct misu"
+          },
+          {
+            "id": 2104546903488647179,
+            "date": "2026-09-29",
+            "author": "marfin",
+            "url": "https://x.com/marfinxx/status/2104546903488647179",
+            "summary": "marfin's three-model stack for long-horizon agents — Jev for bounded decisions before any token is sampled, GPT-6 Astra for cheap fast execution, Opus 5.5 for d"
+          }
+        ]
+      },
+      {
         "id": 55,
         "name": "local model serving on consumer GPUs — quantization & throughput",
         "description": "Running capable open models on single-box prosumer hardware: quantization formats (NVFP4/AWQ/GPTQ/GGUF/MLX), KV-cache compression, serving stacks (SGLang, DSpark), and the tok/s benchmarking that goes with it. Renamed from auto-named cluster on 2026-08-21.",
-        "count": 34,
+        "count": 35,
         "recent_count": 1,
         "last_post_date": "2026-10-08",
         "top_posts": [
@@ -621,49 +668,18 @@ const MORNING_VIEW = {
             "summary": "Juncheng Yang (Harvard MAD Systems) releases the largest agentic LLM inference trace dataset: 206B tokens, 12,002 sessions, 1.19M LLM requests and 1.21M tool ca"
           },
           {
+            "id": 2099833846350942385,
+            "date": "2026-09-16",
+            "author": "AYi",
+            "url": "https://x.com/ayi_ainotes/status/2099833846350942385",
+            "summary": "Chinese-language walkthrough of Anthropic's 13-page agent memory whitepaper, which the author rates the most useful production-grade treatment of agent memory e"
+          },
+          {
             "id": 68911481838266,
             "date": "2026-09-15",
             "author": "Salvatore Sanfilippo",
             "url": "https://github.com/antirez/ds4",
             "summary": "DwarfStar (github.com/antirez/ds4) is Salvatore Sanfilippo's self-contained C inference engine for running DeepSeek V4 Flash/PRO and GLM 5.2/5.3 on hardware peo"
-          },
-          {
-            "id": 2090327658508763516,
-            "date": "2026-08-21",
-            "author": "Mia",
-            "url": "https://x.com/miaai_lab/status/2090327658508763516",
-            "summary": "Updated local-inference recipe hitting ~300 tok/s for Qwen3.8-27B on a single RTX PRO 6000 by adding DFlash2, up from the 200-223 tok/s single-stream the same s"
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "name": "Forward Deployed Engineers — the durable AI-era role",
-        "description": "Argument that FDEs are the right shape of role for the AI rollout era. Touches every employee's workflow.",
-        "count": 24,
-        "recent_count": 1,
-        "last_post_date": "2026-10-08",
-        "top_posts": [
-          {
-            "id": 2107902643490222168,
-            "date": "2026-10-08",
-            "author": "Mark Ajzenstadt",
-            "url": "https://x.com/mardehaym/status/2107902643490222168",
-            "summary": "Mark Ajzenstadt (decade running an embedded-engineering firm) pushes back on the FDE hype: cites a Gartner prediction that 70% of enterprises will abandon vendo"
-          },
-          {
-            "id": 2099790134547751115,
-            "date": "2026-09-16",
-            "author": "rody",
-            "url": "https://x.com/0x_rody/status/2099790134547751115",
-            "summary": "X Article listing ten agent roles to build first, ordered by dependency rather than alphabetically or by glamour: each exists because the previous one produces "
-          },
-          {
-            "id": 2086115009915142648,
-            "date": "2026-08-08",
-            "author": "Aaron Levie",
-            "url": "https://x.com/levie/status/2086115009915142648",
-            "summary": "Box CEO Aaron Levie argues enterprise AI productivity gains will vary far more widely than expected, because frontier gains require fundamentally reworking work"
           }
         ]
       }
@@ -709,7 +725,7 @@ const MORNING_VIEW = {
 
 const POSTS = [
   { id: 'post-0', date: '2026-10-20', author: 'morluto', handle: '', subject: 'GitHub: morluto/rea', url: 'https://github.com/morluto/rea', summary: 'REA (github.com/morluto/rea, rea.tools) is an MIT-licensed MCP server + CLI that lets coding agents reverse engineer software without source — native binaries via Hopper/Ghidra/IDA, Electron/JS apps, .NET, APKs, firmware, pcaps, WASM, EVM bytecode and more — returning pseudocode and findings with evidence so the agent can explain a feature and rebuild it. One-line setup (npx rea-agents setup) wires it into Claude Code, Codex, Cursor and Gemini CLI; analysis runs locally. At ~345K stars it\'s one of the largest agent-tooling repos on GitHub — worth evaluating as a skill/MCP for \'how does app X do this\' questions.', topics: ["skills-mcp", "agent-design", "dev-practices"], audience: ["me", "dev-team"], priority: 'now', perspectives: {"tool-eval": "now"}, sourceType: 'repo', views: '', notes: '', enriched: true, content: 'REA: Reverse Engineer Anything — one MCP for reverse engineering across binaries, applications, and runtime behavior. See a feature in an app that you want in your own product? Ask your agent to investigate it with REA. It can inspect the app without its source code, explain how the feature works, show the evidence, and build a version for your project. REA connects your agent to tools for inspecting native binaries, JavaScript and Electron apps, .NET assemblies, and websites. You can also use the same tools from your terminal. Analysis runs locally, and results include the evidence and limitations behind each conclusion. Setup (npx rea-agents setup) registers REA with your agent (Claude Code, Codex, Cursor, Gemini CLI, Grok Build and others) and installs matching workflow instructions. Native analysis can use an existing Hopper, Ghidra, or IDA installation; static JavaScript analysis needs no native engine. Targets: desktop installations, native binaries (pseudocode/assembly/strings/symbols), ELF layout, Go/Rust binaries, IL2CPP metadata, Godot PCK, WASM, EVM bytecode, SQLite databases, Linux crashes, JavaScript/Electron (modules, IPC, source maps), websites, HAR/SAZ captures, .NET assemblies, Android APKs/devices, JEB projects, Flutter apps, firmware, pcap/packet captures, logic-signal recordings, Apple bundles, and process behavior capture. Showcases: DX-Ball sound-pan reconstruction (passes 3,205 x86 cases, reproduces all 63 compiled bytes), Notion Electron clipboard bridge trace, TH04 PC-98 bullet-ring calculation recovery. MIT licensed; 344.7k stars, 86.9k forks, 3,869 commits, 805 open issues. Website rea.tools; npm package rea-agents; skill on skills.sh/morluto/rea.\n\nREA website — setup, guides, showcases\n\nrea-agents npm package' },
-  { id: 'post-1', date: '2026-10-15', author: 'elvis', handle: '@omarsar0', subject: 'Post by elvis on X', url: 'https://x.com/omarsar0/status/2110083302728323346', summary: '', topics: ["research"], audience: ["me"], priority: 'near-term', perspectives: {}, sourceType: 'tweet', views: '', notes: '', enriched: false, content: '' },
+  { id: 'post-1', date: '2026-10-15', author: 'elvis', handle: '@omarsar0', subject: 'Post by elvis on X', url: 'https://x.com/omarsar0/status/2110083302728323346', summary: 'elvis highlights the LongHarness paper (arxiv.org/abs/2610.13075): a model-agnostic agent harness for 100M+ token corpora that takes GLM-5.3-Flash from 4.4% to 61.1% exact match on OfficeQA Pro V2 with the same model, and beats Claude Code by 12.1 pts (V1) and Codex by 18.9 pts (V2). The mechanism: instead of letting evidence and conclusions pile up in one chat history, LongHarness keeps both as explicit state — open conclusions drive what to retrieve next, and each new piece of evidence confirms or revises the conclusion that requested it. Strong quantitative evidence for the \'harness-bound, not model-bound\' thesis already running through the corpus.', topics: ["agent-design", "research", "dev-practices"], audience: ["me", "dev-team"], priority: 'near-term', perspectives: {"tool-eval": "near-term"}, sourceType: 'tweet', views: '29.4K', notes: '', enriched: true, content: 'Learn to build custom harnesses, folks!\n\nHere is an impressive paper showing the impact of a good custom harness on long-context work.\n\nGLM-5.3-Flash goes from 4.4% to 61.1% exact match on OfficeQA Pro V2 with the same model.\n\nThe authors report that the gain comes from the harness.\n\nThe model-agnostic harness name is LongHarness, built for corpora of 100M tokens and more.\n\nWhy it works:\n\nStandard agent harnesses keep evidence and conclusions mixed into one growing chat history. Retrieval keeps expanding without closing the actual gap, and corrections stop reaching the answer.\n\nLongHarness stores both as explicit state. Open conclusions decide what to retrieve next, and each new piece of evidence confirms or revises the conclusions that asked for it.\n\nOn the same benchmark, it beats Claude Code by 12.1 points on V1 and Codex by 18.9 points on V2.\n\nhttps://arxiv.org/abs/2610.13075\n\nChat with Paper: https://academy.dair.ai/papers/longharness-advancing-agentic-reasoning-over-100m-token-corpora-via-stateful-evi-2610.13075\n\nLongHarness: Advancing Agentic Reasoning over 100M-Token Corpora via Stateful Evidence (arxiv 2610.13075)\n\nDAIR Academy — chat with paper' },
   { id: 'post-2', date: '2026-10-08', author: 'Kun Chen', handle: '@kunchenguid', subject: 'Post by Kun Chen on X', url: 'https://x.com/kunchenguid/status/2108030810691629403', summary: 'Kun Chen\'s empirical result: on the deepswe eval set, banning Sonnet 5.5 from writing its own tests slightly improved success rate (non-significant) while significantly cutting time and tokens — agent-written unit/integration tests add no value because both the tests and the implementation are the same interpretation of intent. Disabling execution of even existing tests on a 44-task subset also had no effect. Explicitly scoped: doesn\'t cover human-specified test cases or e2e tests (a follow-up eval is planned). 184.9K views.', topics: ["dev-practices", "agent-design", "research"], audience: ["me", "dev-team"], priority: 'now', perspectives: {"tool-eval": "now"}, sourceType: 'tweet', views: '184.9K', notes: '', enriched: true, content: 'AI-written unit tests and integration tests are empirically proven to be unhelpful — tell your agents to stop writing tests by themselves. On the deepswe eval set, banning Sonnet 5.5 high from writing any tests resulted in slightly higher success rate (non stat-sig) with less time and tokens (stat-sig). Of tests written by the tests-allowed baseline arm, 65% unit / 35% integration — neither bucket improved outcomes. A 44-task subset with even existing-test execution disabled showed no effect on success rate. Spot-checking: most agent tests simply repeat the implementation — both are the agent\'s interpretation of intent, so the tests are no more accurate than the implementation. Open questions: human-articulated test cases may still add value; e2e tests untested (only 17 written vs 3000+ unit/integration) — separate eval coming.' },
   { id: 'post-3', date: '2026-10-08', author: 'Juncheng Yang', handle: '@1a1a11a', subject: 'Post by Juncheng Yang on X', url: 'https://x.com/1a1a11a/status/2107960379917652296', summary: 'Juncheng Yang (Harvard MAD Systems) releases the largest agentic LLM inference trace dataset: 206B tokens, 12,002 sessions, 1.19M LLM requests and 1.21M tool calls with tool names, arguments and durations (huggingface.co/datasets/harvardMadsys/freeinference_agentic_trace; opendata.agentic-system.org). Paper forthcoming — raw material for anyone studying real agent workload shapes, caching, or serving economics.', topics: ["research", "agent-design"], audience: ["me", "dev-team"], priority: 'near-term', perspectives: {"tool-eval": "near-term"}, sourceType: 'tweet', views: '12.4K', notes: '', enriched: true, content: 'The largest agentic LLM inference dataset has arrived! 206B tokens, 12,002 sessions, 1,186,582 LLM requests, 1,213,347 tool calls. Traces include tool names, arguments, durations, and more. Paper coming soon.\n\nDataset on Hugging Face\n\nProject site' },
   { id: 'post-4', date: '2026-10-08', author: 'Akshay Pachaar', handle: '@akshay_pachaar', subject: 'Post by Akshay 🚀 on X', url: 'https://x.com/akshay_pachaar/status/2107933081093210124', summary: 'Akshay Pachaar introduces Laya (github.com/NandhaKishorM/laya, Apache 2.0) — an open-source local alternative to Jev for typed decision-making: encoder-based scoring of fixed answer sets with [MASK] markers, returning calibratable probabilities, ~35ms locally vs ~380ms for Jev over the network. Honest trade-off framing: Jev gives stronger zero-shot decisions; Laya gives speed, privacy and control but needs fine-tuning and calibration on your own task. Quotes his earlier \'Jev Clearly Explained\' article.', topics: ["agent-design", "research"], audience: ["me", "dev-team"], priority: 'near-term', perspectives: {"tool-eval": "near-term"}, sourceType: 'tweet', views: '15.2K', notes: '', enriched: true, content: 'A faster, 100% open-source alternative to Jev: Laya. Both solve the same problem — unstructured state plus typed questions, returning probabilities instead of prose. Jev is a closed hosted API, zero-shot, up to 255 options. Laya is Apache 2.0, runs locally on open-weight encoder models: routes by language, creates one sequence per question with [MASK] markers per option, scores with a bidirectional encoder + decision head, softmax to probabilities, batches questions in one call. Independent test: ~35ms local GPU vs ~380ms Jev over network. Not a drop-in replacement: Jev is a hosted generalist strong zero-shot; Laya is a fast base you fine-tune and calibrate for a stable answer set, routing uncertain decisions to a stronger model or human.\n\nLaya repo\n\n(Quoted: his own Sep 18 X article "Jev Clearly Explained")' },

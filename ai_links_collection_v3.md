@@ -1,44 +1,46 @@
 # AI Links Collection
 **Total Posts**: 951  
 **Date Range**: 2024-06-11 – 2026-10-20  
-**Enriched**: 949/951 (99%)
+**Enriched**: 950/951 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-10-20T15:32:46Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-10-20T18:58:59Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-10-20** — [morluto](https://github.com/morluto/rea) — *now • Skills & MCP • v1 enriched*  
   REA (github.com/morluto/rea, rea.tools) is an MIT-licensed MCP server + CLI that lets coding agents reverse engineer software without source — native binaries via Hopper/Ghidra/IDA, Electron/JS apps, .NET, APKs, firmware, pcaps, WASM, EVM bytecode and more — returning pseudocode and findings with evidence so the agent can explain a feature and rebuild it. One-line setup (npx rea-agents setup) wires it into Claude Code, Codex, Cursor and Gemini CLI; analysis runs locally. At ~345K stars it's one of the largest agent-tooling repos on GitHub — worth evaluating as a skill/MCP for 'how does app X do this' questions.
+- **2026-10-15** — [elvis](https://x.com/omarsar0/status/2110083302728323346) — *near-term • Agent Design • 29.4K views • v1 enriched*  
+  elvis highlights the LongHarness paper (arxiv.org/abs/2610.13075): a model-agnostic agent harness for 100M+ token corpora that takes GLM-5.3-Flash from 4.4% to 61.1% exact match on OfficeQA Pro V2 with the same model, and beats Claude Code by 12.1 pts (V1) and Codex by 18.9 pts (V2). The mechanism: instead of letting evidence and conclusions pile up in one chat history, LongHarness keeps both as explicit state — open conclusions drive what to retrieve next, and each new piece of evidence confirms or revises the conclusion that requested it. Strong quantitative evidence for the 'harness-bound, not model-bound' thesis already running through the corpus.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **Claude Code session workflows — handoffs, messaging & retention** (17 posts, +2 this week)  
+- **Claude Code session workflows — handoffs, messaging & retention** (18 posts, +2 this week)  
   Discovered by orphan clustering on 2026-10-08 from 6 posts with no prior concept (cohesion 0.66). Rename or archive if this isn't a real theme.
     - 2026-10-08 — [Boris Cherny](https://x.com/bcherny/status/2107565388250874193): Boris Cherny (creator of Claude Code) on how he actually prompts Claude: talk to it like a coworker — no heavy scaffolding. The prompt-engin…
     - 2026-10-08 — [AI Edge](https://x.com/aiedge_/status/2107835983735787568): AI Edge's hype-packaged but concretely useful setup guide for pairing Opus 5.5 with Jev in Claude Code: Jev scores/sorts/filters so Opus onl…
 
-- **agentic code review at production scale** (16 posts, +2 this week)  
+- **agentic code review at production scale** (15 posts, +2 this week)  
   Deterministic engineering handles what must never fail; LLM only does context reading and reasoning. Alibaba open-code-review.
     - 2026-10-08 — [Kun Chen](https://x.com/kunchenguid/status/2108030810691629403): Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5.5 from writing its own tests slightly improved success rate (non-sign…
     - 2026-10-08 — [Tech with Mak](https://x.com/technmak/status/2107678022094790933): A thorough primer arguing inference engineering is an underrated skill set: the prefill/decode split (compute-bound vs memory-bandwidth-boun…
 
-- **vector / hybrid databases as agent-memory infrastructure** (41 posts, +1 this week)  
+- **vector / hybrid databases as agent-memory infrastructure** (40 posts, +1 this week)  
   HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
     - 2026-10-08 — [mem0](https://x.com/mem0ai/status/2107873474517889201): mem0's X-article breakdown of Jev-Mem (arxiv.org/pdf/2609.23986, github.com/libingzheren/Jev-Mem) — a UT Dallas architecture that uses Jev a…
     - 2026-09-21 — [Annatar.md](https://x.com/annatarxbt/status/2101925393322091005): Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowl…
 
-- **local model serving on consumer GPUs — quantization & throughput** (34 posts, +1 this week)  
+- **applied decision-model routing — gating agents with Jev** (35 posts, +1 this week)  
+  Discovered by orphan clustering on 2026-09-28 (6 posts, cohesion 0.66); renamed in-session. The *applied* side of System One / decision models: putting a non-generative decision model in front of an agent as a gate, router, verifier or judge, plus the libraries and framework integrations that make that practical (AnyJev, DSPy, LangGraph, Claude Code hooks). Deliberately distinct from #74 'System One models — bounded decisions as a primitive', which holds the concept itself and was frozen out of centroid scoring after the 2026-09-25 magnet rollback; because #74 can no longer recruit by cosine, the live Jev conversation could not reach it and formed this cluster instead. On 2026-09-28 #74's 11 canonical edges were demoted to weak so it became a secondary-only grouping tag, releasing its members to re-home here or elsewhere. NOTE: do not write the centroid-scoring opt-out marker as a literal string in this description — the eligibility check is a plain substring match over the whole description, so merely mentioning it silently disables semantic scoring for this concept (hit for real on 2026-09-28).
+    - 2026-10-15 — [elvis](https://x.com/omarsar0/status/2110083302728323346): elvis highlights the LongHarness paper (arxiv.org/abs/2610.13075): a model-agnostic agent harness for 100M+ token corpora that takes GLM-5.3…
+    - 2026-09-29 — [Diogo Almeida](https://x.com/completeskeptic/status/2104682600103284917): TypeSafe founder Diogo Almeida responds to Zhaorun Chen's red-team of Jev 1.13 on the DecodingTrust-Agent Platform — 70.1% attack success ra…
+
+- **local model serving on consumer GPUs — quantization & throughput** (35 posts, +1 this week)  
   Running capable open models on single-box prosumer hardware: quantization formats (NVFP4/AWQ/GPTQ/GGUF/MLX), KV-cache compression, serving stacks (SGLang, DSpark), and the tok/s benchmarking that goes with it. Renamed from auto-named cluster on 2026-08-21.
     - 2026-10-08 — [Juncheng Yang](https://x.com/1a1a11a/status/2107960379917652296): Juncheng Yang (Harvard MAD Systems) releases the largest agentic LLM inference trace dataset: 206B tokens, 12,002 sessions, 1.19M LLM reques…
-    - 2026-09-15 — [Salvatore Sanfilippo](https://github.com/antirez/ds4): DwarfStar (github.com/antirez/ds4) is Salvatore Sanfilippo's self-contained C inference engine for running DeepSeek V4 Flash/PRO and GLM 5.2…
-
-- **Forward Deployed Engineers — the durable AI-era role** (24 posts, +1 this week)  
-  Argument that FDEs are the right shape of role for the AI rollout era. Touches every employee's workflow.
-    - 2026-10-08 — [Mark Ajzenstadt](https://x.com/mardehaym/status/2107902643490222168): Mark Ajzenstadt (decade running an embedded-engineering firm) pushes back on the FDE hype: cites a Gartner prediction that 70% of enterprise…
-    - 2026-09-16 — [rody](https://x.com/0x_rody/status/2099790134547751115): X Article listing ten agent roles to build first, ordered by dependency rather than alphabetically or by glamour: each exists because the pr…
+    - 2026-09-16 — [AYi](https://x.com/ayi_ainotes/status/2099833846350942385): Chinese-language walkthrough of Anthropic's 13-page agent memory whitepaper, which the author rates the most useful production-grade treatme…
 
 
 ### Revisit from last month
@@ -51,9 +53,9 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 576 | 60.6% |
+| agent-design | 577 | 60.7% |
 | claude-code | 211 | 22.2% |
-| dev-practices | 412 | 43.3% |
+| dev-practices | 413 | 43.4% |
 | skills-mcp | 209 | 22.0% |
 | prompting | 142 | 14.9% |
 | research | 263 | 27.7% |
@@ -69,7 +71,7 @@
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
 | 2026-10-20 | morluto | skills-mcp | REA (github.com/morluto/rea, rea.tools) is an MIT-licensed MCP server... |
-| 2026-10-15 | elvis | research |  |
+| 2026-10-15 | elvis | agent-design | elvis highlights the LongHarness paper (arxiv.org/abs/2610.13075): a m... |
 | 2026-10-08 | Kun Chen | dev-practices | Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5... |
 | 2026-10-08 | Juncheng Yang | research | Juncheng Yang (Harvard MAD Systems) releases the largest agentic LLM i... |
 | 2026-10-08 | Akshay Pachaar | agent-design | Akshay Pachaar introduces Laya (github.com/NandhaKishorM/laya, Apache... |
@@ -122,9 +124,11 @@
 ---
 ## Posts by Topic
 
-### Agent Design (576)
+### Agent Design (577)
 
 - [morluto](https://github.com/morluto/rea) — 2026-10-20: REA (github.com/morluto/rea, rea.tools) is an MIT-licensed MCP server + CLI that lets coding agents reverse engineer software without source — native binaries via Hopper/Ghidra/IDA, Electron/JS apps, .NET, APKs, firmware, pcaps, WASM, EVM bytecode and more — returning pseudocode and findings with evidence so the agent can explain a feature and rebuild it. One-line setup (npx rea-agents setup) wires it into Claude Code, Codex, Cursor and Gemini CLI; analysis runs locally. At ~345K stars it's one of the largest agent-tooling repos on GitHub — worth evaluating as a skill/MCP for 'how does app X do this' questions.
+
+- [elvis](https://x.com/omarsar0/status/2110083302728323346) — 2026-10-15: elvis highlights the LongHarness paper (arxiv.org/abs/2610.13075): a model-agnostic agent harness for 100M+ token corpora that takes GLM-5.3-Flash from 4.4% to 61.1% exact match on OfficeQA Pro V2 with the same model, and beats Claude Code by 12.1 pts (V1) and Codex by 18.9 pts (V2). The mechanism: instead of letting evidence and conclusions pile up in one chat history, LongHarness keeps both as explicit state — open conclusions drive what to retrieve next, and each new piece of evidence confirms or revises the conclusion that requested it. Strong quantitative evidence for the 'harness-bound, not model-bound' thesis already running through the corpus.
 
 - [Kun Chen](https://x.com/kunchenguid/status/2108030810691629403) — 2026-10-08: Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5.5 from writing its own tests slightly improved success rate (non-significant) while significantly cutting time and tokens — agent-written unit/integration tests add no value because both the tests and the implementation are the same interpretation of intent. Disabling execution of even existing tests on a 44-task subset also had no effect. Explicitly scoped: doesn't cover human-specified test cases or e2e tests (a follow-up eval is planned). 184.9K views.
 
@@ -1700,9 +1704,11 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (412)
+### Dev Practices (413)
 
 - [morluto](https://github.com/morluto/rea) — 2026-10-20: REA (github.com/morluto/rea, rea.tools) is an MIT-licensed MCP server + CLI that lets coding agents reverse engineer software without source — native binaries via Hopper/Ghidra/IDA, Electron/JS apps, .NET, APKs, firmware, pcaps, WASM, EVM bytecode and more — returning pseudocode and findings with evidence so the agent can explain a feature and rebuild it. One-line setup (npx rea-agents setup) wires it into Claude Code, Codex, Cursor and Gemini CLI; analysis runs locally. At ~345K stars it's one of the largest agent-tooling repos on GitHub — worth evaluating as a skill/MCP for 'how does app X do this' questions.
+
+- [elvis](https://x.com/omarsar0/status/2110083302728323346) — 2026-10-15: elvis highlights the LongHarness paper (arxiv.org/abs/2610.13075): a model-agnostic agent harness for 100M+ token corpora that takes GLM-5.3-Flash from 4.4% to 61.1% exact match on OfficeQA Pro V2 with the same model, and beats Claude Code by 12.1 pts (V1) and Codex by 18.9 pts (V2). The mechanism: instead of letting evidence and conclusions pile up in one chat history, LongHarness keeps both as explicit state — open conclusions drive what to retrieve next, and each new piece of evidence confirms or revises the conclusion that requested it. Strong quantitative evidence for the 'harness-bound, not model-bound' thesis already running through the corpus.
 
 - [Kun Chen](https://x.com/kunchenguid/status/2108030810691629403) — 2026-10-08: Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5.5 from writing its own tests slightly improved success rate (non-significant) while significantly cutting time and tokens — agent-written unit/integration tests add no value because both the tests and the implementation are the same interpretation of intent. Disabling execution of even existing tests on a 44-task subset also had no effect. Explicitly scoped: doesn't cover human-specified test cases or e2e tests (a follow-up eval is planned). 184.9K views.
 
@@ -3234,7 +3240,7 @@
 
 ### Research (263)
 
-- [elvis](https://x.com/omarsar0/status/2110083302728323346) — 2026-10-15: 
+- [elvis](https://x.com/omarsar0/status/2110083302728323346) — 2026-10-15: elvis highlights the LongHarness paper (arxiv.org/abs/2610.13075): a model-agnostic agent harness for 100M+ token corpora that takes GLM-5.3-Flash from 4.4% to 61.1% exact match on OfficeQA Pro V2 with the same model, and beats Claude Code by 12.1 pts (V1) and Codex by 18.9 pts (V2). The mechanism: instead of letting evidence and conclusions pile up in one chat history, LongHarness keeps both as explicit state — open conclusions drive what to retrieve next, and each new piece of evidence confirms or revises the conclusion that requested it. Strong quantitative evidence for the 'harness-bound, not model-bound' thesis already running through the corpus.
 
 - [Kun Chen](https://x.com/kunchenguid/status/2108030810691629403) — 2026-10-08: Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5.5 from writing its own tests slightly improved success rate (non-significant) while significantly cutting time and tokens — agent-written unit/integration tests add no value because both the tests and the implementation are the same interpretation of intent. Disabling execution of even existing tests on a 44-task subset also had no effect. Explicitly scoped: doesn't cover human-specified test cases or e2e tests (a follow-up eval is planned). 184.9K views.
 
@@ -4962,8 +4968,8 @@
 - **2026-10-20** | [morluto](https://github.com/morluto/rea) | skills-mcp, agent-design, dev-practices
   REA (github.com/morluto/rea, rea.tools) is an MIT-licensed MCP server + CLI that lets coding agents reverse engineer software without source — native binaries via Hopper/Ghidra/IDA, Electron/JS apps, .NET, APKs, firmware, pcaps, WASM, EVM bytecode and more — returning pseudocode and findings with evidence so the agent can explain a feature and rebuild it. One-line setup (npx rea-agents setup) wires it into Claude Code, Codex, Cursor and Gemini CLI; analysis runs locally. At ~345K stars it's one of the largest agent-tooling repos on GitHub — worth evaluating as a skill/MCP for 'how does app X do this' questions.
 
-- **2026-10-15** | [elvis](https://x.com/omarsar0/status/2110083302728323346) | research
-  
+- **2026-10-15** | [elvis](https://x.com/omarsar0/status/2110083302728323346) | agent-design, research, dev-practices
+  elvis highlights the LongHarness paper (arxiv.org/abs/2610.13075): a model-agnostic agent harness for 100M+ token corpora that takes GLM-5.3-Flash from 4.4% to 61.1% exact match on OfficeQA Pro V2 with the same model, and beats Claude Code by 12.1 pts (V1) and Codex by 18.9 pts (V2). The mechanism: instead of letting evidence and conclusions pile up in one chat history, LongHarness keeps both as explicit state — open conclusions drive what to retrieve next, and each new piece of evidence confirms or revises the conclusion that requested it. Strong quantitative evidence for the 'harness-bound, not model-bound' thesis already running through the corpus.
 
 - **2026-10-08** | [Kun Chen](https://x.com/kunchenguid/status/2108030810691629403) | dev-practices, agent-design, research
   Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5.5 from writing its own tests slightly improved success rate (non-significant) while significantly cutting time and tokens — agent-written unit/integration tests add no value because both the tests and the implementation are the same interpretation of intent. Disabling execution of even existing tests on a 44-task subset also had no effect. Explicitly scoped: doesn't cover human-specified test cases or e2e tests (a follow-up eval is planned). 184.9K views.

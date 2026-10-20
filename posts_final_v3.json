@@ -31,21 +31,25 @@
     "handle": "@omarsar0",
     "subject": "Post by elvis on X",
     "url": "https://x.com/omarsar0/status/2110083302728323346",
-    "summary": "",
+    "summary": "elvis highlights the LongHarness paper (arxiv.org/abs/2610.13075): a model-agnostic agent harness for 100M+ token corpora that takes GLM-5.3-Flash from 4.4% to 61.1% exact match on OfficeQA Pro V2 with the same model, and beats Claude Code by 12.1 pts (V1) and Codex by 18.9 pts (V2). The mechanism: instead of letting evidence and conclusions pile up in one chat history, LongHarness keeps both as explicit state — open conclusions drive what to retrieve next, and each new piece of evidence confirms or revises the conclusion that requested it. Strong quantitative evidence for the 'harness-bound, not model-bound' thesis already running through the corpus.",
     "topics": [
-      "research"
+      "agent-design",
+      "research",
+      "dev-practices"
     ],
     "audience": [
-      "me"
+      "me",
+      "dev-team"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "29.4K",
     "notes": "",
-    "enriched": false,
-    "enrichment_status": "failed",
-    "enrichment_attempts": 1,
-    "enrichment_last_error": "chrome-unreachable"
+    "enriched": true,
+    "content": "Learn to build custom harnesses, folks!\n\nHere is an impressive paper showing the impact of a good custom harness on long-context work.\n\nGLM-5.3-Flash goes from 4.4% to 61.1% exact match on OfficeQA Pro V2 with the same model.\n\nThe authors report that the gain comes from the harness.\n\nThe model-agnostic harness name is LongHarness, built for corpora of 100M tokens and more.\n\nWhy it works:\n\nStandard agent harnesses keep evidence and conclusions mixed into one growing chat history. Retrieval keeps expanding without closing the actual gap, and corrections stop reaching the answer.\n\nLongHarness stores both as explicit state. Open conclusions decide what to retrieve next, and each new piece of evidence confirms or revises the conclusions that asked for it.\n\nOn the same benchmark, it beats Claude Code by 12.1 points on V1 and Codex by 18.9 points on V2.\n\nhttps://arxiv.org/abs/2610.13075\n\nChat with Paper: https://academy.dair.ai/papers/longharness-advancing-agentic-reasoning-over-100m-token-corpora-via-stateful-evi-2610.13075\n\nLongHarness: Advancing Agentic Reasoning over 100M-Token Corpora via Stateful Evidence (arxiv 2610.13075)\n\nDAIR Academy — chat with paper",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-10-08",
