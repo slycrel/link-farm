@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-10-21T19:24:36Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-10-21T19:45:11Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-10-21** — [Anže Pečar](https://x.com/anze3db/status/2112616425693266153) — *now • Dev Practices • v1 enriched*  
@@ -28,7 +28,7 @@
     - 2026-10-21 — [Anthony Kroeger](https://x.com/kr0der/status/2106429105671643587): Practical Claude Code Projects tip: tell the project's coordinator to post updates whenever a thread is blocked or finishes a milestone, and…
     - 2026-10-08 — [Boris Cherny](https://x.com/bcherny/status/2107565388250874193): Boris Cherny (creator of Claude Code) on how he actually prompts Claude: talk to it like a coworker — no heavy scaffolding. The prompt-engin…
 
-- **agent harness engineering** (45 posts, +2 this week)  
+- **agent harness engineering** (44 posts, +2 this week)  
   Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
     - 2026-10-21 — [Caspar](https://x.com/caspar_br/status/2112644945697976630): Caspar (LangChain) lists the shared primitives of a 'company harness' for internal agents: lives where people work (Slack), knows who is ask…
     - 2026-10-21 — [Harrison Chase](https://x.com/hwchase17/status/2112489626061738209): Harrison Chase (LangChain) endorses a layered approach to building agents: start with an off-the-shelf harness (he likes deepagents), add co…
