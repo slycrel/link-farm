@@ -5,11 +5,10 @@
     "handle": "@marfinxx",
     "subject": "Post by marfinxx on X",
     "url": "https://x.com/marfinxx/status/2112891671834673156",
-    "summary": "marfin's hype-packaged claim that Anthropic 'just showed' a 100-agent tri-model tournament in Claude Code (/arena): Sonnet builders in isolated git worktrees, a Haiku red-team fuzzer, and an Opus blind judge scoring on a 100-point rubric, with one survivor merged to main. The substantive idea is isolation and role separation to avoid self-review confirmation bias and shared-context bleed, with a ready-made setup prompt and a third-party skill repo (github.com/Jakeschincariol/arena-skill). The 'Anthropic showed this' framing and the specific throughput numbers are the author's unverified claims. Quotes marfin's earlier article on unifying harness, loop and graph engineering.",
+    "summary": "marfin's article 'Master Agent Architecture: Unifying Harness, Loop, and Graph Engineering' (Jul 27), resurfaced here as the quoted post. Its premise: most developers use Claude Code and LLM agents like an expensive intern, one prompt, one response, then manual checking, and teams tend to fall into three common failure modes that harness, loop and graph engineering address together. Only the article's opening was visible in the capture, not the full text.",
     "topics": [
       "agent-design",
-      "claude-code",
-      "questionable"
+      "claude-code"
     ],
     "audience": [
       "me",
@@ -20,15 +19,12 @@
     "views": "2,279",
     "notes": "",
     "enriched": true,
-    "content": "Anthropic just showed what running 100 agents simultaneously inside Claude Code looks like: a tri-model elimination tournament splits 100 sandboxes across Haiku 5.5, Sonnet 5.5 and Opus 5.5, run with /arena (--fuzzer haiku-5.5 --builders sonnet-5.5 --judge opus-5.5). Haiku acts as adversarial fuzzer, Sonnet runs 100 parallel builders in isolated git worktrees, Opus is a blind judge scoring AST diffs on a 100-point rubric. 100 spawn, 50 survive round 1 duels, 13 clear fuzzing, 1 survivor merges to main. Core shift: zero context bleeding - a model reviewing its own work confirms its own hallucinations, and 100 agents sharing one chat copy each other's faulty assumptions; Arena locks each agent in its own worktree, adds a separate fuzzer, and a blind judge. Includes a setup prompt referencing github.com/Jakeschincariol/arena-skill.\n\narena-skill\n\nMaster Agent Architecture: Unifying Harness, Loop, and Graph Engineering (article, Jul 27)",
+    "content": "Master Agent Architecture: Unifying Harness, Loop, and Graph Engineering (article, Jul 27). Most developers use Claude Code and LLM agents like an expensive intern. They provide one prompt, wait for one response, and manually check what happens next. Other teams fall into three common failure modes...",
     "posted_at": "2026-10-21T13:00:04",
-    "links": [
-      "https://github.com/Jakeschincariol/arena-skill"
-    ],
     "concept": "managing agent teams",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-10-21",

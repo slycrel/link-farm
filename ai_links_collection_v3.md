@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-10-21T23:27:55Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-10-21T23:31:20Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-10-21** — [Anže Pečar](https://x.com/anze3db/status/2112616425693266153) — *now • Dev Practices • v1 enriched*  
@@ -69,14 +69,14 @@
 | management | 145 | 16.2% |
 | adjacent | 49 | 5.5% |
 | solo-operator | 10 | 1.1% |
-| questionable | 150 | 16.8% |
+| questionable | 149 | 16.7% |
 | general | 45 | 5.0% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
-| 2026-10-21 | marfin | agent-design | marfin's hype-packaged claim that Anthropic 'just showed' a 100-agent... |
+| 2026-10-21 | marfin | agent-design | marfin's article 'Master Agent Architecture: Unifying Harness, Loop, a... |
 | 2026-10-21 | Mia | industry | Mia reports hands-on impressions of Drama TensorFold (github.com/plota... |
 | 2026-10-21 | Caspar | agent-design | Caspar (LangChain) lists the shared primitives of a 'company harness'... |
 | 2026-10-21 | elvis | research | Elvis (DAIR.AI) says to learn to build evals and recommends Hamel Husa... |
@@ -132,8 +132,8 @@
 
 ### Agent Design (574)
 
-- [marfin](https://x.com/marfinxx/status/2112891671834673156) — 2026-10-21: marfin's hype-packaged claim that Anthropic 'just showed' a 100-agent tri-model tournament in Claude Code (/arena): Sonnet builders in isolated git worktrees, a Haiku red-team fuzzer, and an Opus blind judge scoring on a 100-point rubric, with one survivor merged to main. The substantive idea is isolation and role separation to avoid self-review confirmation bias and shared-context bleed, with a ready-made setup prompt and a third-party skill repo (github.com/Jakeschincariol/arena-skill). The 'Anthropic showed this' framing and the specific throughput numbers are the author's unverified claims. Quotes marfin's earlier article on unifying harness, loop and graph engineering.
-  posted 2026-10-21 · @marfinxx · 2,279 views · concept: managing agent teams · url: https://x.com/marfinxx/status/2112891671834673156 · links: https://github.com/Jakeschincariol/arena-skill
+- [marfin](https://x.com/marfinxx/status/2112891671834673156) — 2026-10-21: marfin's article 'Master Agent Architecture: Unifying Harness, Loop, and Graph Engineering' (Jul 27), resurfaced here as the quoted post. Its premise: most developers use Claude Code and LLM agents like an expensive intern, one prompt, one response, then manual checking, and teams tend to fall into three common failure modes that harness, loop and graph engineering address together. Only the article's opening was visible in the capture, not the full text.
+  posted 2026-10-21 · @marfinxx · 2,279 views · concept: managing agent teams · url: https://x.com/marfinxx/status/2112891671834673156
 
 - [Caspar](https://x.com/caspar_br/status/2112644945697976630) — 2026-10-21: Caspar (LangChain) lists the shared primitives of a 'company harness' for internal agents: lives where people work (Slack), knows who is asking and acts on-behalf-of vs. under its own identity, scoped memory, a sandbox with authenticated CLIs, and many scheduled/ambient runs. LangChain packages these as Managed Deep Agents, pitched as the easiest way to build a company harness (vendor claim).
   posted 2026-10-20 · @caspar_br · concept: agent harness engineering · url: https://x.com/caspar_br/status/2112644945697976630
@@ -1856,8 +1856,8 @@
 
 ### Claude Code (213)
 
-- [marfin](https://x.com/marfinxx/status/2112891671834673156) — 2026-10-21: marfin's hype-packaged claim that Anthropic 'just showed' a 100-agent tri-model tournament in Claude Code (/arena): Sonnet builders in isolated git worktrees, a Haiku red-team fuzzer, and an Opus blind judge scoring on a 100-point rubric, with one survivor merged to main. The substantive idea is isolation and role separation to avoid self-review confirmation bias and shared-context bleed, with a ready-made setup prompt and a third-party skill repo (github.com/Jakeschincariol/arena-skill). The 'Anthropic showed this' framing and the specific throughput numbers are the author's unverified claims. Quotes marfin's earlier article on unifying harness, loop and graph engineering.
-  posted 2026-10-21 · @marfinxx · 2,279 views · concept: managing agent teams · url: https://x.com/marfinxx/status/2112891671834673156 · links: https://github.com/Jakeschincariol/arena-skill
+- [marfin](https://x.com/marfinxx/status/2112891671834673156) — 2026-10-21: marfin's article 'Master Agent Architecture: Unifying Harness, Loop, and Graph Engineering' (Jul 27), resurfaced here as the quoted post. Its premise: most developers use Claude Code and LLM agents like an expensive intern, one prompt, one response, then manual checking, and teams tend to fall into three common failure modes that harness, loop and graph engineering address together. Only the article's opening was visible in the capture, not the full text.
+  posted 2026-10-21 · @marfinxx · 2,279 views · concept: managing agent teams · url: https://x.com/marfinxx/status/2112891671834673156
 
 - [Anthony Kroeger](https://x.com/kr0der/status/2106429105671643587) — 2026-10-21: Practical Claude Code Projects tip: tell the project's coordinator to post updates whenever a thread is blocked or finishes a milestone, and save that instruction to project memory. Kroeger says it made the coordinator genuinely useful; the saved memory line asks for a one-line note in project chat linking the thread. A reply asks how to apply it across all projects.
   posted 2026-10-03 · @kr0der · 73K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/kr0der/status/2106429105671643587
@@ -6627,10 +6627,7 @@
 - [zostaff](https://x.com/zostaff/status/2033930728044372275) — 2026-03-18: zostaff's clickbait-titled ('How to Quit Your Job in One Day') walkthrough of an autonomous Polymarket trading system built from three agents: Claude (strategist — probability/recommendation/confidence), Codex (engineer — writes and debugs bot code), and OpenClaw (orchestrator — persistent memory, cron, modular skills, Telegram interface that executes trades and logs everything).
   posted 2026-03-17 · @zostaff · 3M views · concept: prediction-market & crypto trading bots · url: https://x.com/zostaff/status/2033930728044372275
 
-### Questionable (150)
-
-- [marfin](https://x.com/marfinxx/status/2112891671834673156) — 2026-10-21: marfin's hype-packaged claim that Anthropic 'just showed' a 100-agent tri-model tournament in Claude Code (/arena): Sonnet builders in isolated git worktrees, a Haiku red-team fuzzer, and an Opus blind judge scoring on a 100-point rubric, with one survivor merged to main. The substantive idea is isolation and role separation to avoid self-review confirmation bias and shared-context bleed, with a ready-made setup prompt and a third-party skill repo (github.com/Jakeschincariol/arena-skill). The 'Anthropic showed this' framing and the specific throughput numbers are the author's unverified claims. Quotes marfin's earlier article on unifying harness, loop and graph engineering.
-  posted 2026-10-21 · @marfinxx · 2,279 views · concept: managing agent teams · url: https://x.com/marfinxx/status/2112891671834673156 · links: https://github.com/Jakeschincariol/arena-skill
+### Questionable (149)
 
 - [rody](https://x.com/0x_rody/status/2112588144944062840) — 2026-10-21: Hype post claiming 'grok bot' plus 'jev' will make more millionaires than crypto, pointing to the author's article 'How To Wire Jev Into Grok Bot': give the bot a router skill, leave it logging for a week so it stops retrying the same failures on its cloud shell. Engagement-bait packaging ('don't scroll past', 'thank me later'); the underlying idea is a router skill plus decision-logging loop for agents.
   posted 2026-10-20 · @0x_rody · 145.3K views · url: https://x.com/0x_rody/status/2112588144944062840
@@ -7221,9 +7218,9 @@
 
 ### Oct 2026
 
-- **2026-10-21** | [marfin](https://x.com/marfinxx/status/2112891671834673156) | agent-design, claude-code, questionable
-  marfin's hype-packaged claim that Anthropic 'just showed' a 100-agent tri-model tournament in Claude Code (/arena): Sonnet builders in isolated git worktrees, a Haiku red-team fuzzer, and an Opus blind judge scoring on a 100-point rubric, with one survivor merged to main. The substantive idea is isolation and role separation to avoid self-review confirmation bias and shared-context bleed, with a ready-made setup prompt and a third-party skill repo (github.com/Jakeschincariol/arena-skill). The 'Anthropic showed this' framing and the specific throughput numbers are the author's unverified claims. Quotes marfin's earlier article on unifying harness, loop and graph engineering.
-  posted 2026-10-21 · @marfinxx · 2,279 views · concept: managing agent teams · url: https://x.com/marfinxx/status/2112891671834673156 · links: https://github.com/Jakeschincariol/arena-skill
+- **2026-10-21** | [marfin](https://x.com/marfinxx/status/2112891671834673156) | agent-design, claude-code
+  marfin's article 'Master Agent Architecture: Unifying Harness, Loop, and Graph Engineering' (Jul 27), resurfaced here as the quoted post. Its premise: most developers use Claude Code and LLM agents like an expensive intern, one prompt, one response, then manual checking, and teams tend to fall into three common failure modes that harness, loop and graph engineering address together. Only the article's opening was visible in the capture, not the full text.
+  posted 2026-10-21 · @marfinxx · 2,279 views · concept: managing agent teams · url: https://x.com/marfinxx/status/2112891671834673156
 
 - **2026-10-21** | [Mia](https://x.com/miaai_lab/status/2112678922412241245) | industry
   Mia reports hands-on impressions of Drama TensorFold (github.com/plotarmordev/drama-tensorfold), an open voice-cloning/speech tool that runs locally on a GPU (about 38.2 GB memory), supports multiple languages in one cloned voice. Quotes the creator (netrunner/plotarmordev) who notes a quantized version is in the works. Enthusiastic first-person review, so take the 'blown away' framing as unverified.
