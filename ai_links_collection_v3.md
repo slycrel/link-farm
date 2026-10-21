@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-10-21T23:31:40Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-10-21T23:35:45Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-10-21** — [Anže Pečar](https://x.com/anze3db/status/2112616425693266153) — *now • Dev Practices • v1 enriched*  
@@ -23,6 +23,11 @@
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
+- **agent harness engineering** (46 posts, +3 this week)  
+  Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
+    - 2026-10-21 — [Caspar](https://x.com/caspar_br/status/2112644945697976630): Caspar (LangChain) lists the shared primitives of a 'company harness' for internal agents: lives where people work (Slack), knows who is ask…
+    - 2026-10-21 — [Harrison Chase](https://x.com/hwchase17/status/2112489626061738209): Harrison Chase (LangChain) endorses a layered approach to building agents: start with an off-the-shelf harness (he likes deepagents), add co…
+
 - **Claude Code session workflows — handoffs, messaging & retention** (20 posts, +3 this week)  
   Discovered by orphan clustering on 2026-10-08 from 6 posts with no prior concept (cohesion 0.66). Rename or archive if this isn't a real theme.
     - 2026-10-21 — [Anthony Kroeger](https://x.com/kr0der/status/2106429105671643587): Practical Claude Code Projects tip: tell the project's coordinator to post updates whenever a thread is blocked or finishes a milestone, and…
@@ -33,20 +38,15 @@
     - 2026-10-21 — [Andrej Karpathy](https://x.com/karpathy/status/2036487306585268612): Karpathy on the litellm PyPI supply-chain attack: a plain `pip install litellm` could exfiltrate SSH keys, cloud credentials, Kubernetes con…
     - 2026-10-21 — [Anže Pečar](https://x.com/anze3db/status/2112616425693266153): Security alert: private keys for 8 intermediate CA certificates were reportedly compromised. Pečar urges upgrading certifi everywhere (uv se…
 
-- **agent harness engineering** (45 posts, +2 this week)  
-  Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
-    - 2026-10-21 — [Caspar](https://x.com/caspar_br/status/2112644945697976630): Caspar (LangChain) lists the shared primitives of a 'company harness' for internal agents: lives where people work (Slack), knows who is ask…
-    - 2026-10-21 — [Harrison Chase](https://x.com/hwchase17/status/2112489626061738209): Harrison Chase (LangChain) endorses a layered approach to building agents: start with an off-the-shelf harness (he likes deepagents), add co…
-
-- **applied decision-model routing — gating agents with Jev** (37 posts, +2 this week)  
-  Discovered by orphan clustering on 2026-09-28 (6 posts, cohesion 0.66); renamed in-session. The *applied* side of System One / decision models: putting a non-generative decision model in front of an agent as a gate, router, verifier or judge, plus the libraries and framework integrations that make that practical (AnyJev, DSPy, LangGraph, Claude Code hooks). Deliberately distinct from #74 'System One models — bounded decisions as a primitive', which holds the concept itself and was frozen out of centroid scoring after the 2026-09-25 magnet rollback; because #74 can no longer recruit by cosine, the live Jev conversation could not reach it and formed this cluster instead. On 2026-09-28 #74's 11 canonical edges were demoted to weak so it became a secondary-only grouping tag, releasing its members to re-home here or elsewhere. NOTE: do not write the centroid-scoring opt-out marker as a literal string in this description — the eligibility check is a plain substring match over the whole description, so merely mentioning it silently disables semantic scoring for this concept (hit for real on 2026-09-28).
-    - 2026-10-21 — [elvis](https://x.com/omarsar0/status/2112632133357346889): Elvis (DAIR.AI) says to learn to build evals and recommends Hamel Husain's new post on using decision models for evals (choosing a model and…
-    - 2026-10-15 — [elvis](https://x.com/omarsar0/status/2110083302728323346): elvis highlights the LongHarness paper (arxiv.org/abs/2610.13075): a model-agnostic agent harness for 100M+ token corpora that takes GLM-5.3…
-
-- **local model serving on consumer GPUs — quantization & throughput** (36 posts, +2 this week)  
+- **local model serving on consumer GPUs — quantization & throughput** (37 posts, +2 this week)  
   Running capable open models on single-box prosumer hardware: quantization formats (NVFP4/AWQ/GPTQ/GGUF/MLX), KV-cache compression, serving stacks (SGLang, DSpark), and the tok/s benchmarking that goes with it. Renamed from auto-named cluster on 2026-08-21.
     - 2026-10-21 — [Mia](https://x.com/miaai_lab/status/2112678922412241245): Mia reports hands-on impressions of Drama TensorFold (github.com/plotarmordev/drama-tensorfold), an open voice-cloning/speech tool that runs…
     - 2026-10-08 — [Juncheng Yang](https://x.com/1a1a11a/status/2107960379917652296): Juncheng Yang (Harvard MAD Systems) releases the largest agentic LLM inference trace dataset: 206B tokens, 12,002 sessions, 1.19M LLM reques…
+
+- **applied decision-model routing — gating agents with Jev** (36 posts, +2 this week)  
+  Discovered by orphan clustering on 2026-09-28 (6 posts, cohesion 0.66); renamed in-session. The *applied* side of System One / decision models: putting a non-generative decision model in front of an agent as a gate, router, verifier or judge, plus the libraries and framework integrations that make that practical (AnyJev, DSPy, LangGraph, Claude Code hooks). Deliberately distinct from #74 'System One models — bounded decisions as a primitive', which holds the concept itself and was frozen out of centroid scoring after the 2026-09-25 magnet rollback; because #74 can no longer recruit by cosine, the live Jev conversation could not reach it and formed this cluster instead. On 2026-09-28 #74's 11 canonical edges were demoted to weak so it became a secondary-only grouping tag, releasing its members to re-home here or elsewhere. NOTE: do not write the centroid-scoring opt-out marker as a literal string in this description — the eligibility check is a plain substring match over the whole description, so merely mentioning it silently disables semantic scoring for this concept (hit for real on 2026-09-28).
+    - 2026-10-21 — [elvis](https://x.com/omarsar0/status/2112632133357346889): Elvis (DAIR.AI) says to learn to build evals and recommends Hamel Husain's new post on using decision models for evals (choosing a model and…
+    - 2026-10-15 — [elvis](https://x.com/omarsar0/status/2110083302728323346): elvis highlights the LongHarness paper (arxiv.org/abs/2610.13075): a model-agnostic agent harness for 100M+ token corpora that takes GLM-5.3…
 
 
 ### Revisit from last month
@@ -61,7 +61,7 @@
 |-------|-------|---|
 | agent-design | 574 | 64.3% |
 | claude-code | 213 | 23.9% |
-| dev-practices | 415 | 46.5% |
+| dev-practices | 416 | 46.6% |
 | skills-mcp | 207 | 23.2% |
 | prompting | 143 | 16.0% |
 | research | 260 | 29.1% |
@@ -69,14 +69,13 @@
 | management | 145 | 16.2% |
 | adjacent | 49 | 5.5% |
 | solo-operator | 10 | 1.1% |
-| questionable | 149 | 16.7% |
+| questionable | 150 | 16.8% |
 | general | 45 | 5.0% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
-| 2026-10-21 | marfin | agent-design | marfin's article 'Master Agent Architecture: Unifying Harness, Loop, a... |
 | 2026-10-21 | Mia | industry | Mia reports hands-on impressions of Drama TensorFold (github.com/plota... |
 | 2026-10-21 | Caspar | agent-design | Caspar (LangChain) lists the shared primitives of a 'company harness'... |
 | 2026-10-21 | elvis | research | Elvis (DAIR.AI) says to learn to build evals and recommends Hamel Husa... |
@@ -87,6 +86,7 @@
 | 2026-10-21 | Mark Ajzenstadt | management | Mark Ajzenstadt shares an 8-step playbook for AI transformation in reg... |
 | 2026-10-21 | Harrison Chase | agent-design | Harrison Chase (LangChain) endorses a layered approach to building age... |
 | 2026-10-21 | Anthony Kroeger | claude-code | Practical Claude Code Projects tip: tell the project's coordinator to... |
+| 2026-10-21 | marfin | agent-design | marfin's long-form X article unifying harness, loop and graph engineer... |
 | 2026-10-21 | Andrej Karpathy | dev-practices | Karpathy on the litellm PyPI supply-chain attack: a plain `pip install... |
 | 2026-10-21 | Andrej Karpathy | claude-code | Karpathy on DeepWiki and the growing malleability of software: pointin... |
 | 2026-10-20 | morluto | skills-mcp | REA (github.com/morluto/rea, rea.tools) is an MIT-licensed MCP server... |
@@ -132,9 +132,6 @@
 
 ### Agent Design (574)
 
-- [marfin](https://x.com/marfinxx/status/2112891671834673156) — 2026-10-21: marfin's article 'Master Agent Architecture: Unifying Harness, Loop, and Graph Engineering' (Jul 27), resurfaced here as the quoted post. Its premise: most developers use Claude Code and LLM agents like an expensive intern, one prompt, one response, then manual checking, and teams tend to fall into three common failure modes that harness, loop and graph engineering address together. Only the article's opening was visible in the capture, not the full text.
-  posted 2026-10-21 · @marfinxx · 2,279 views · concept: loop engineering · url: https://x.com/marfinxx/status/2112891671834673156
-
 - [Caspar](https://x.com/caspar_br/status/2112644945697976630) — 2026-10-21: Caspar (LangChain) lists the shared primitives of a 'company harness' for internal agents: lives where people work (Slack), knows who is asking and acts on-behalf-of vs. under its own identity, scoped memory, a sandbox with authenticated CLIs, and many scheduled/ambient runs. LangChain packages these as Managed Deep Agents, pitched as the easiest way to build a company harness (vendor claim).
   posted 2026-10-20 · @caspar_br · concept: agent harness engineering · url: https://x.com/caspar_br/status/2112644945697976630
 
@@ -152,6 +149,9 @@
 
 - [Anthony Kroeger](https://x.com/kr0der/status/2106429105671643587) — 2026-10-21: Practical Claude Code Projects tip: tell the project's coordinator to post updates whenever a thread is blocked or finishes a milestone, and save that instruction to project memory. Kroeger says it made the coordinator genuinely useful; the saved memory line asks for a one-line note in project chat linking the thread. A reply asks how to apply it across all projects.
   posted 2026-10-03 · @kr0der · 73K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/kr0der/status/2106429105671643587
+
+- [marfin](https://x.com/marfinxx/status/2081687570488954915) — 2026-10-21: marfin's long-form X article unifying harness, loop and graph engineering as three nested layers of one production agent system: harness = environment, sandbox, state and tool caching (a .claude/ layout with hooks and memory files, plus a file-hash cache to avoid redundant reads); loop = evidence-gated retries on tests and linters, not model confidence; graph = parallel fan-out, routing and sync joins. Pulls it together into a five-stage pipeline ending in an adversarial red-team verifier node, with anti-patterns, a failure-diagnosis matrix and a readiness checklist. The architecture framing and checklist are useful; the benchmark table (6.7x faster, 80% cheaper, zero hallucinated edits) is unsourced and the post ends in a Telegram 'alpha' funnel, hence the questionable tag.
+  posted 2026-07-27 · @marfinxx · 574K views · concept: agent harness engineering · url: https://x.com/marfinxx/status/2081687570488954915
 
 - [Andrej Karpathy](https://x.com/karpathy/status/2021633574089416993) — 2026-10-21: Karpathy on DeepWiki and the growing malleability of software: pointing an agent at DeepWiki (via MCP) plus the GitHub CLI let Claude 'rip out' torchao's fp8 training into a self-contained 150-line nanochat/fp8.py in ~5 minutes, with equivalence tests, 3% faster, removing the dependency. He argues for writing 'bacterial code' (small, self-contained, dependency-free) and asks whether projects really need 100MB of dependencies. Pairs with his litellm supply-chain post (x.com/karpathy/status/2036487306585268612), which is the security side of the same dependency-skepticism argument.
   posted 2026-02-11 · @karpathy · 1.1M views · concept: dependency risk & supply-chain trust — poisoned packages, compromised CAs, and ripping out what you need · url: https://x.com/karpathy/status/2021633574089416993 · links: https://x.com/karpathy/status/2036487306585268612 https://github.com/karpathy/nanochat https://x.com/karpathy/status/1941616674094170287
@@ -451,7 +451,7 @@
   posted 2026-08-24 · @miaai_lab · 60.7K views · url: https://x.com/miaai_lab/status/2091858917307421009 · links: https://github.com/dietrichgebert/ponytail
 
 - [Shubham Saboo](https://x.com/saboo_shubham_/status/2091713863368802322) — 2026-08-25: Reports a Stanford 'LLM-as-a-Verifier' result: sample five swe-agent trajectories, rank them with the same model, keep the winner — taking deepseek-v4-flash from 78.7% to 88% on terminal-bench with no fine-tuning, and open source. The underlying technique is best-of-N with self-ranking rather than anything exotic; the ALL-CAPS 'WILD...' framing is engagement packaging around a real and cheap inference-time win.
-  posted 2026-08-24 · @saboo_shubham_ · 28.1K views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/saboo_shubham_/status/2091713863368802322
+  posted 2026-08-24 · @saboo_shubham_ · 28.1K views · concept: local model serving on consumer GPUs — quantization & throughput · url: https://x.com/saboo_shubham_/status/2091713863368802322
 
 - [Xudong Han](https://x.com/xudong07452910/status/2090760827230187782) — 2026-08-21: Chinese-language post recommending a Julie Yoo essay on where an AI startup's moat can still sit. Argument: models improve every few months, so any product whose main value is 'answering questions more smartly' or automating a process will get absorbed by the foundation models over time - the layer that's much harder to replace is being accountable for outcomes. Healthcare is the worked example, where actually delivering services requires licenses, insurance, payment rails, and liability for errors, and insurers carry real financial risk. Aimed at people building agents, vertical AI, or healthtech; the accountability-as-moat framing transfers directly to other regulated verticals.
   posted 2026-08-21 · @Xudong07452910 · concept: vibecode-to-production via agent skills · url: https://x.com/xudong07452910/status/2090760827230187782
@@ -1856,11 +1856,11 @@
 
 ### Claude Code (213)
 
-- [marfin](https://x.com/marfinxx/status/2112891671834673156) — 2026-10-21: marfin's article 'Master Agent Architecture: Unifying Harness, Loop, and Graph Engineering' (Jul 27), resurfaced here as the quoted post. Its premise: most developers use Claude Code and LLM agents like an expensive intern, one prompt, one response, then manual checking, and teams tend to fall into three common failure modes that harness, loop and graph engineering address together. Only the article's opening was visible in the capture, not the full text.
-  posted 2026-10-21 · @marfinxx · 2,279 views · concept: loop engineering · url: https://x.com/marfinxx/status/2112891671834673156
-
 - [Anthony Kroeger](https://x.com/kr0der/status/2106429105671643587) — 2026-10-21: Practical Claude Code Projects tip: tell the project's coordinator to post updates whenever a thread is blocked or finishes a milestone, and save that instruction to project memory. Kroeger says it made the coordinator genuinely useful; the saved memory line asks for a one-line note in project chat linking the thread. A reply asks how to apply it across all projects.
   posted 2026-10-03 · @kr0der · 73K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/kr0der/status/2106429105671643587
+
+- [marfin](https://x.com/marfinxx/status/2081687570488954915) — 2026-10-21: marfin's long-form X article unifying harness, loop and graph engineering as three nested layers of one production agent system: harness = environment, sandbox, state and tool caching (a .claude/ layout with hooks and memory files, plus a file-hash cache to avoid redundant reads); loop = evidence-gated retries on tests and linters, not model confidence; graph = parallel fan-out, routing and sync joins. Pulls it together into a five-stage pipeline ending in an adversarial red-team verifier node, with anti-patterns, a failure-diagnosis matrix and a readiness checklist. The architecture framing and checklist are useful; the benchmark table (6.7x faster, 80% cheaper, zero hallucinated edits) is unsourced and the post ends in a Telegram 'alpha' funnel, hence the questionable tag.
+  posted 2026-07-27 · @marfinxx · 574K views · concept: agent harness engineering · url: https://x.com/marfinxx/status/2081687570488954915
 
 - [Andrej Karpathy](https://x.com/karpathy/status/2021633574089416993) — 2026-10-21: Karpathy on DeepWiki and the growing malleability of software: pointing an agent at DeepWiki (via MCP) plus the GitHub CLI let Claude 'rip out' torchao's fp8 training into a self-contained 150-line nanochat/fp8.py in ~5 minutes, with equivalence tests, 3% faster, removing the dependency. He argues for writing 'bacterial code' (small, self-contained, dependency-free) and asks whether projects really need 100MB of dependencies. Pairs with his litellm supply-chain post (x.com/karpathy/status/2036487306585268612), which is the security side of the same dependency-skepticism argument.
   posted 2026-02-11 · @karpathy · 1.1M views · concept: dependency risk & supply-chain trust — poisoned packages, compromised CAs, and ripping out what you need · url: https://x.com/karpathy/status/2021633574089416993 · links: https://x.com/karpathy/status/2036487306585268612 https://github.com/karpathy/nanochat https://x.com/karpathy/status/1941616674094170287
@@ -2495,7 +2495,7 @@
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
   @curvedinf · url: https://github.com/curvedinf/dir-assistant
 
-### Dev Practices (415)
+### Dev Practices (416)
 
 - [elvis](https://x.com/omarsar0/status/2112632133357346889) — 2026-10-21: Elvis (DAIR.AI) says to learn to build evals and recommends Hamel Husain's new post on using decision models for evals (choosing a model and tuning its threshold rather than defaulting to 0.5), plus his own resources on using fast 'System One' decision models like Jev as LLM judges: academy.dair.ai Jev-as-a-Judge resources and arxiv.org/abs/2609.26550.
   posted 2026-10-20 · @omarsar0 · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/omarsar0/status/2112632133357346889 · links: https://arxiv.org/abs/2609.26550
@@ -2505,6 +2505,9 @@
 
 - [Harrison Chase](https://x.com/hwchase17/status/2112489626061738209) — 2026-10-21: Harrison Chase (LangChain) endorses a layered approach to building agents: start with an off-the-shelf harness (he likes deepagents), add context via skills and tools, tweak the harness with middleware if needed, and only then reach for a langgraph workflow. Quotes verrsane's advice to prefer harnesses like Claude Code, Codex, deep agents or Glean over hand-built multi-step if/else workflows.
   posted 2026-10-20 · @hwchase17 · 20.4K views · concept: agent harness engineering · url: https://x.com/hwchase17/status/2112489626061738209
+
+- [marfin](https://x.com/marfinxx/status/2081687570488954915) — 2026-10-21: marfin's long-form X article unifying harness, loop and graph engineering as three nested layers of one production agent system: harness = environment, sandbox, state and tool caching (a .claude/ layout with hooks and memory files, plus a file-hash cache to avoid redundant reads); loop = evidence-gated retries on tests and linters, not model confidence; graph = parallel fan-out, routing and sync joins. Pulls it together into a five-stage pipeline ending in an adversarial red-team verifier node, with anti-patterns, a failure-diagnosis matrix and a readiness checklist. The architecture framing and checklist are useful; the benchmark table (6.7x faster, 80% cheaper, zero hallucinated edits) is unsourced and the post ends in a Telegram 'alpha' funnel, hence the questionable tag.
+  posted 2026-07-27 · @marfinxx · 574K views · concept: agent harness engineering · url: https://x.com/marfinxx/status/2081687570488954915
 
 - [Andrej Karpathy](https://x.com/karpathy/status/2036487306585268612) — 2026-10-21: Karpathy on the litellm PyPI supply-chain attack: a plain `pip install litellm` could exfiltrate SSH keys, cloud credentials, Kubernetes configs, env-var API keys, shell history, wallets and CI/CD secrets; litellm has ~97M downloads/month and the compromise spreads transitively (e.g. dspy). The poisoned 1.82.8 was live under an hour and was caught only because it crashed a machine via an MCP plugin in Cursor that pulled litellm in transitively. His takeaway is that the dependency-tree risk is scary enough to re-evaluate dependencies, and he increasingly prefers having LLMs 'yoink' simple functionality instead of taking a dependency. Quotes Daniel Hnyk's original compromise alert (66.6M views). Companion to his DeepWiki 'rip out the functionality' post (x.com/karpathy/status/2021633574089416993).
   posted 2026-03-24 · @karpathy · concept: dependency risk & supply-chain trust — poisoned packages, compromised CAs, and ripping out what you need · url: https://x.com/karpathy/status/2036487306585268612 · links: https://x.com/karpathy/status/2021633574089416993
@@ -4964,7 +4967,7 @@
   posted 2026-08-24 · @omarsar0 · 29.4K views · concept: self-improving skills (autoresearch pattern) · url: https://x.com/omarsar0/status/2091869893339812222
 
 - [Shubham Saboo](https://x.com/saboo_shubham_/status/2091713863368802322) — 2026-08-25: Reports a Stanford 'LLM-as-a-Verifier' result: sample five swe-agent trajectories, rank them with the same model, keep the winner — taking deepseek-v4-flash from 78.7% to 88% on terminal-bench with no fine-tuning, and open source. The underlying technique is best-of-N with self-ranking rather than anything exotic; the ALL-CAPS 'WILD...' framing is engagement packaging around a real and cheap inference-time win.
-  posted 2026-08-24 · @saboo_shubham_ · 28.1K views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/saboo_shubham_/status/2091713863368802322
+  posted 2026-08-24 · @saboo_shubham_ · 28.1K views · concept: local model serving on consumer GPUs — quantization & throughput · url: https://x.com/saboo_shubham_/status/2091713863368802322
 
 - [Aaron Levie](https://x.com/levie/status/2090664811185205722) — 2026-08-21: Levie on when domain-specific post-training beats a general frontier model for applied AI: once you understand a domain well enough and have enough volume on similar tasks, purpose-designing a model for that work starts to pay. Quotes the underlying post - 'we incentivized efficient tool use and reasoning through reward shaping, preferring trajectories that would reduce tokens consumed at inference-time given equivalent performance' - i.e. co-optimizing cost and quality rather than trading one for the other. Caveat included: this won't make sense in every domain, since general models are often good enough or necessary out of the box.
   posted 2026-08-21 · @levie · concept: vibecode-to-production via agent skills · url: https://x.com/levie/status/2090664811185205722
@@ -6627,7 +6630,7 @@
 - [zostaff](https://x.com/zostaff/status/2033930728044372275) — 2026-03-18: zostaff's clickbait-titled ('How to Quit Your Job in One Day') walkthrough of an autonomous Polymarket trading system built from three agents: Claude (strategist — probability/recommendation/confidence), Codex (engineer — writes and debugs bot code), and OpenClaw (orchestrator — persistent memory, cron, modular skills, Telegram interface that executes trades and logs everything).
   posted 2026-03-17 · @zostaff · 3M views · concept: prediction-market & crypto trading bots · url: https://x.com/zostaff/status/2033930728044372275
 
-### Questionable (149)
+### Questionable (150)
 
 - [rody](https://x.com/0x_rody/status/2112588144944062840) — 2026-10-21: Hype post claiming 'grok bot' plus 'jev' will make more millionaires than crypto, pointing to the author's article 'How To Wire Jev Into Grok Bot': give the bot a router skill, leave it logging for a week so it stops retrying the same failures on its cloud shell. Engagement-bait packaging ('don't scroll past', 'thank me later'); the underlying idea is a router skill plus decision-logging loop for agents.
   posted 2026-10-20 · @0x_rody · 145.3K views · url: https://x.com/0x_rody/status/2112588144944062840
@@ -6637,6 +6640,9 @@
 
 - [BasedBiohacker](https://x.com/basedbiohacker/status/2112530774998315342) — 2026-10-21: BasedBiohacker's self-reported Q4 nootropic stack, framed with a money-making hook: a 30-day oral BPC-157 gut-brain reset, then a daily stack of pinealon, modafinil, bromantane, L-tyrosine and citicoline, with optional fasoracetam. These are the author's claims (mechanisms asserted without trial evidence), several compounds are prescription-only or legally grey, so treat as a forum-style reference list rather than guidance.
   posted 2026-10-20 · @basedbiohacker · concept: cognitive enhancement & longevity protocols · url: https://x.com/basedbiohacker/status/2112530774998315342
+
+- [marfin](https://x.com/marfinxx/status/2081687570488954915) — 2026-10-21: marfin's long-form X article unifying harness, loop and graph engineering as three nested layers of one production agent system: harness = environment, sandbox, state and tool caching (a .claude/ layout with hooks and memory files, plus a file-hash cache to avoid redundant reads); loop = evidence-gated retries on tests and linters, not model confidence; graph = parallel fan-out, routing and sync joins. Pulls it together into a five-stage pipeline ending in an adversarial red-team verifier node, with anti-patterns, a failure-diagnosis matrix and a readiness checklist. The architecture framing and checklist are useful; the benchmark table (6.7x faster, 80% cheaper, zero hallucinated edits) is unsourced and the post ends in a Telegram 'alpha' funnel, hence the questionable tag.
+  posted 2026-07-27 · @marfinxx · 574K views · concept: agent harness engineering · url: https://x.com/marfinxx/status/2081687570488954915
 
 - [AI Edge](https://x.com/aiedge_/status/2107835983735787568) — 2026-10-08: AI Edge's hype-packaged but concretely useful setup guide for pairing Opus 5.5 with Jev in Claude Code: Jev scores/sorts/filters so Opus only sees what needs real reasoning, with the TypeSafe skill pack (claude plugin install typesafe@typesafe-ai), confidence-based routing (high=auto, medium=Opus, low=human), atomic questions, and all thresholds in one reviewable config. Includes full prompts for inbox-triage, research-filter and content-grader workflows. Newsletter-funnel packaging ('10x Your Output'), hence the questionable tag — the workflow patterns themselves are real.
   posted 2026-10-07 · @aiedge_ · 160.2K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/aiedge_/status/2107835983735787568
@@ -6723,7 +6729,7 @@
   posted 2026-08-24 · @divyansht91162 · 17.5K views · concept: self-improving skills (autoresearch pattern) · url: https://x.com/divyansht91162/status/2091879586045018406 · links: https://github.com/volcengine/OpenViking https://github.com/rohitg00/agentmemory https://github.com/anthropics/skills https://github.com/cathrynlavery/diagram-design https://github.com/K-Dense-AI/scientific-agent-skills
 
 - [Shubham Saboo](https://x.com/saboo_shubham_/status/2091713863368802322) — 2026-08-25: Reports a Stanford 'LLM-as-a-Verifier' result: sample five swe-agent trajectories, rank them with the same model, keep the winner — taking deepseek-v4-flash from 78.7% to 88% on terminal-bench with no fine-tuning, and open source. The underlying technique is best-of-N with self-ranking rather than anything exotic; the ALL-CAPS 'WILD...' framing is engagement packaging around a real and cheap inference-time win.
-  posted 2026-08-24 · @saboo_shubham_ · 28.1K views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/saboo_shubham_/status/2091713863368802322
+  posted 2026-08-24 · @saboo_shubham_ · 28.1K views · concept: local model serving on consumer GPUs — quantization & throughput · url: https://x.com/saboo_shubham_/status/2091713863368802322
 
 - [CyrilXBT](https://x.com/cyrilxbt/status/2091331618979905582) — 2026-08-25: X article walking hour-by-hour through shipping a live product that takes real payments (ranknow.lol — a pay-to-rank leaderboard with outbidding) end to end with Claude Code in a single day, starting from not considering himself a developer. The transferable lesson is scope discipline: pick one narrow mechanic with a single core loop, small enough that finishing it is realistic. The '24 hours' transformation framing is hype, but it is a real solo-build account with a shipped, paying product behind it.
   posted 2026-08-23 · @cyrilxbt · 559.6K views · concept: managing agent teams · url: https://x.com/cyrilxbt/status/2091331618979905582 · links: https://ranknow.lol
@@ -7218,10 +7224,6 @@
 
 ### Oct 2026
 
-- **2026-10-21** | [marfin](https://x.com/marfinxx/status/2112891671834673156) | agent-design, claude-code
-  marfin's article 'Master Agent Architecture: Unifying Harness, Loop, and Graph Engineering' (Jul 27), resurfaced here as the quoted post. Its premise: most developers use Claude Code and LLM agents like an expensive intern, one prompt, one response, then manual checking, and teams tend to fall into three common failure modes that harness, loop and graph engineering address together. Only the article's opening was visible in the capture, not the full text.
-  posted 2026-10-21 · @marfinxx · 2,279 views · concept: loop engineering · url: https://x.com/marfinxx/status/2112891671834673156
-
 - **2026-10-21** | [Mia](https://x.com/miaai_lab/status/2112678922412241245) | industry
   Mia reports hands-on impressions of Drama TensorFold (github.com/plotarmordev/drama-tensorfold), an open voice-cloning/speech tool that runs locally on a GPU (about 38.2 GB memory), supports multiple languages in one cloned voice. Quotes the creator (netrunner/plotarmordev) who notes a quantized version is in the works. Enthusiastic first-person review, so take the 'blown away' framing as unverified.
   posted 2026-10-20 · @miaai_lab · concept: local model serving on consumer GPUs — quantization & throughput · url: https://x.com/miaai_lab/status/2112678922412241245 · links: https://github.com/plotarmordev/drama-tensorfold
@@ -7261,6 +7263,10 @@
 - **2026-10-21** | [Anthony Kroeger](https://x.com/kr0der/status/2106429105671643587) | claude-code, agent-design, prompting
   Practical Claude Code Projects tip: tell the project's coordinator to post updates whenever a thread is blocked or finishes a milestone, and save that instruction to project memory. Kroeger says it made the coordinator genuinely useful; the saved memory line asks for a one-line note in project chat linking the thread. A reply asks how to apply it across all projects.
   posted 2026-10-03 · @kr0der · 73K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/kr0der/status/2106429105671643587
+
+- **2026-10-21** | [marfin](https://x.com/marfinxx/status/2081687570488954915) | agent-design, claude-code, dev-practices, questionable
+  marfin's long-form X article unifying harness, loop and graph engineering as three nested layers of one production agent system: harness = environment, sandbox, state and tool caching (a .claude/ layout with hooks and memory files, plus a file-hash cache to avoid redundant reads); loop = evidence-gated retries on tests and linters, not model confidence; graph = parallel fan-out, routing and sync joins. Pulls it together into a five-stage pipeline ending in an adversarial red-team verifier node, with anti-patterns, a failure-diagnosis matrix and a readiness checklist. The architecture framing and checklist are useful; the benchmark table (6.7x faster, 80% cheaper, zero hallucinated edits) is unsourced and the post ends in a Telegram 'alpha' funnel, hence the questionable tag.
+  posted 2026-07-27 · @marfinxx · 574K views · concept: agent harness engineering · url: https://x.com/marfinxx/status/2081687570488954915
 
 - **2026-10-21** | [Andrej Karpathy](https://x.com/karpathy/status/2036487306585268612) | dev-practices, skills-mcp, industry
   Karpathy on the litellm PyPI supply-chain attack: a plain `pip install litellm` could exfiltrate SSH keys, cloud credentials, Kubernetes configs, env-var API keys, shell history, wallets and CI/CD secrets; litellm has ~97M downloads/month and the compromise spreads transitively (e.g. dspy). The poisoned 1.82.8 was live under an hour and was caught only because it crashed a machine via an MCP plugin in Cursor that pulled litellm in transitively. His takeaway is that the dependency-tree risk is scary enough to re-evaluate dependencies, and he increasingly prefers having LLMs 'yoink' simple functionality instead of taking a dependency. Quotes Daniel Hnyk's original compromise alert (66.6M views). Companion to his DeepWiki 'rip out the functionality' post (x.com/karpathy/status/2021633574089416993).
@@ -7796,7 +7802,7 @@
 
 - **2026-08-25** | [Shubham Saboo](https://x.com/saboo_shubham_/status/2091713863368802322) | research, agent-design, questionable
   Reports a Stanford 'LLM-as-a-Verifier' result: sample five swe-agent trajectories, rank them with the same model, keep the winner — taking deepseek-v4-flash from 78.7% to 88% on terminal-bench with no fine-tuning, and open source. The underlying technique is best-of-N with self-ranking rather than anything exotic; the ALL-CAPS 'WILD...' framing is engagement packaging around a real and cheap inference-time win.
-  posted 2026-08-24 · @saboo_shubham_ · 28.1K views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/saboo_shubham_/status/2091713863368802322
+  posted 2026-08-24 · @saboo_shubham_ · 28.1K views · concept: local model serving on consumer GPUs — quantization & throughput · url: https://x.com/saboo_shubham_/status/2091713863368802322
 
 - **2026-08-25** | [CyrilXBT](https://x.com/cyrilxbt/status/2091331618979905582) | claude-code, solo-operator, adjacent, questionable
   X article walking hour-by-hour through shipping a live product that takes real payments (ranknow.lol — a pay-to-rank leaderboard with outbidding) end to end with Claude Code in a single day, starting from not considering himself a developer. The transferable lesson is scope discipline: pick one narrow mechanic with a single core loop, small enough that finishing it is realistic. The '24 hours' transformation framing is hype, but it is a real solo-build account with a shipped, paying product behind it.

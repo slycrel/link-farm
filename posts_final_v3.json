@@ -1,33 +1,6 @@
 [
   {
     "date": "2026-10-21",
-    "author": "marfin",
-    "handle": "@marfinxx",
-    "subject": "Post by marfinxx on X",
-    "url": "https://x.com/marfinxx/status/2112891671834673156",
-    "summary": "marfin's article 'Master Agent Architecture: Unifying Harness, Loop, and Graph Engineering' (Jul 27), resurfaced here as the quoted post. Its premise: most developers use Claude Code and LLM agents like an expensive intern, one prompt, one response, then manual checking, and teams tend to fall into three common failure modes that harness, loop and graph engineering address together. Only the article's opening was visible in the capture, not the full text.",
-    "topics": [
-      "agent-design",
-      "claude-code"
-    ],
-    "audience": [
-      "me",
-      "dev-team"
-    ],
-    "priority": "near-term",
-    "sourceType": "tweet",
-    "views": "2,279",
-    "notes": "",
-    "enriched": true,
-    "content": "Master Agent Architecture: Unifying Harness, Loop, and Graph Engineering (article, Jul 27). Most developers use Claude Code and LLM agents like an expensive intern. They provide one prompt, wait for one response, and manually check what happens next. Other teams fall into three common failure modes...",
-    "posted_at": "2026-10-21T13:00:04",
-    "concept": "loop engineering",
-    "enrichment_status": "ok",
-    "enrichment_version": 1,
-    "enrichment_attempts": 2
-  },
-  {
-    "date": "2026-10-21",
     "author": "Mia",
     "handle": "@miaai_lab",
     "subject": "Post by Mia on X",
@@ -297,6 +270,35 @@
     "content": "if you use Claude Code projects, tell your coordinator something like: i want you to send me more updates on what's going on with the threads including when they're blocked and when they finish something, save this to the project memory. Coordinator memory: post a one-line note in the project chat whenever a thread is blocked on him or finishes a milestone, linking the thread.",
     "posted_at": "2026-10-03T17:00:09",
     "concept": "Claude Code session workflows — handoffs, messaging & retention",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-21",
+    "author": "marfin",
+    "handle": "@marfinxx",
+    "subject": "Post by marfin on X",
+    "url": "https://x.com/marfinxx/status/2081687570488954915",
+    "summary": "marfin's long-form X article unifying harness, loop and graph engineering as three nested layers of one production agent system: harness = environment, sandbox, state and tool caching (a .claude/ layout with hooks and memory files, plus a file-hash cache to avoid redundant reads); loop = evidence-gated retries on tests and linters, not model confidence; graph = parallel fan-out, routing and sync joins. Pulls it together into a five-stage pipeline ending in an adversarial red-team verifier node, with anti-patterns, a failure-diagnosis matrix and a readiness checklist. The architecture framing and checklist are useful; the benchmark table (6.7x faster, 80% cheaper, zero hallucinated edits) is unsourced and the post ends in a Telegram 'alpha' funnel, hence the questionable tag.",
+    "topics": [
+      "agent-design",
+      "claude-code",
+      "dev-practices",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "574K",
+    "notes": "",
+    "enriched": true,
+    "content": "Master Agent Architecture: Unifying Harness, Loop, and Graph Engineering. Most developers use Claude Code and LLM agents like an expensive intern: one prompt, one response, manual checking. Teams that go further fall into three failure modes: endless retry loops that burn money without checking the code compiles, huge 50-node workflow graphs drawn before understanding a single sub-agent, and endless prompt rewrites that ignore the environment. Thesis: Harness, Loop and Graph engineering are not competing ideas but three nested layers of one production system. Harness layer (environment, sandboxes, state persistence, tool caching): a .claude/ directory with CLAUDE.md rules, settings.json budget caps, pre/post tool hooks and memory files (progress.json, tool_cache.json, git_checkpoint.log); includes a state-hashing hook that avoids re-reading unchanged files. Loop layer (feedback and quality gates): loop on evidence, not confidence - deterministic pytest/linter results rather than the model saying it is done. Graph layer (flow control and concurrency): scoped nodes, parallel sub-agent fan-out, routing and sync joins. Unified five-stage pipeline: sandbox init, parallel fan-out and scoping, evidence-gated retry loops, state hashing and token de-duplication, and an adversarial red-team verifier node that writes edge-case tests before a PR opens. Also an anti-pattern list (looping on confidence, noisy harness context, unconstrained graph cycles, forcing deterministic work into models), a layer-by-layer failure diagnosis matrix, and a five-point production-readiness checklist (harness, loop, graph, evaluation, monitoring). The benchmark table (e.g. 6.7x faster, 80% cheaper, zero hallucinated edits) is unsourced.",
+    "posted_at": "2026-07-27T10:26:07",
+    "concept": "agent harness engineering",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -4200,7 +4202,7 @@
     "enriched": true,
     "content": "WILD...the model grades its own answers and beats itself. Stanford's LLM-as-a-Verifier sampled 5 swe-agent trajectories, ranked them with the same model, kept the winner. deepseek-v4-flash went from 78.7% to 88% on terminal-bench without fine-tuning. 100% Opensource.",
     "posted_at": "2026-08-24T02:27:01",
-    "concept": "applied decision-model routing — gating agents with Jev",
+    "concept": "local model serving on consumer GPUs — quantization & throughput",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
