@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-10-21T23:31:20Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-10-21T23:31:40Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-10-21** — [Anže Pečar](https://x.com/anze3db/status/2112616425693266153) — *now • Dev Practices • v1 enriched*  
@@ -33,7 +33,7 @@
     - 2026-10-21 — [Andrej Karpathy](https://x.com/karpathy/status/2036487306585268612): Karpathy on the litellm PyPI supply-chain attack: a plain `pip install litellm` could exfiltrate SSH keys, cloud credentials, Kubernetes con…
     - 2026-10-21 — [Anže Pečar](https://x.com/anze3db/status/2112616425693266153): Security alert: private keys for 8 intermediate CA certificates were reportedly compromised. Pečar urges upgrading certifi everywhere (uv se…
 
-- **agent harness engineering** (44 posts, +2 this week)  
+- **agent harness engineering** (45 posts, +2 this week)  
   Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
     - 2026-10-21 — [Caspar](https://x.com/caspar_br/status/2112644945697976630): Caspar (LangChain) lists the shared primitives of a 'company harness' for internal agents: lives where people work (Slack), knows who is ask…
     - 2026-10-21 — [Harrison Chase](https://x.com/hwchase17/status/2112489626061738209): Harrison Chase (LangChain) endorses a layered approach to building agents: start with an off-the-shelf harness (he likes deepagents), add co…
@@ -133,7 +133,7 @@
 ### Agent Design (574)
 
 - [marfin](https://x.com/marfinxx/status/2112891671834673156) — 2026-10-21: marfin's article 'Master Agent Architecture: Unifying Harness, Loop, and Graph Engineering' (Jul 27), resurfaced here as the quoted post. Its premise: most developers use Claude Code and LLM agents like an expensive intern, one prompt, one response, then manual checking, and teams tend to fall into three common failure modes that harness, loop and graph engineering address together. Only the article's opening was visible in the capture, not the full text.
-  posted 2026-10-21 · @marfinxx · 2,279 views · concept: managing agent teams · url: https://x.com/marfinxx/status/2112891671834673156
+  posted 2026-10-21 · @marfinxx · 2,279 views · concept: loop engineering · url: https://x.com/marfinxx/status/2112891671834673156
 
 - [Caspar](https://x.com/caspar_br/status/2112644945697976630) — 2026-10-21: Caspar (LangChain) lists the shared primitives of a 'company harness' for internal agents: lives where people work (Slack), knows who is asking and acts on-behalf-of vs. under its own identity, scoped memory, a sandbox with authenticated CLIs, and many scheduled/ambient runs. LangChain packages these as Managed Deep Agents, pitched as the easiest way to build a company harness (vendor claim).
   posted 2026-10-20 · @caspar_br · concept: agent harness engineering · url: https://x.com/caspar_br/status/2112644945697976630
@@ -928,7 +928,7 @@
   posted 2026-06-04 · @hooeem · 14.6K views · url: https://x.com/hooeem/status/2062443798647517197
 
 - [さいぺ (cipepser)](https://x.com/cipepser/status/2062397559520502225) — 2026-06-04: Points to mem0's 'State of Memory in Agent Harness' survey, which covers the field's papers and benchmarks alongside how memory is actually implemented in each shipping coding agent (Cursor, Devin, Claude Code, Codex). Useful as a comparative map rather than a single-system writeup.
-  posted 2026-06-04 · @cipepser · 49K views · concept: vector / hybrid databases as agent-memory infrastructure · url: https://x.com/cipepser/status/2062397559520502225
+  posted 2026-06-04 · @cipepser · 49K views · concept: agent harness engineering · url: https://x.com/cipepser/status/2062397559520502225
 
 - [Ole Lehmann](https://x.com/itsolelehmann/status/2061911202830401564) — 2026-06-04: A ~10-minute recipe to turn your X bookmarks into an agent-queryable second brain: export bookmarks (twitter-web-exporter / BookmarkSave), drop the file into your LLM wiki or Obsidian vault, and have your agent convert each into a tagged markdown note with the original link — then query across the whole pile. Directly relevant to this link collection.
   posted 2026-06-02 · @itsolelehmann · 273.2K views · url: https://x.com/itsolelehmann/status/2061911202830401564
@@ -1857,7 +1857,7 @@
 ### Claude Code (213)
 
 - [marfin](https://x.com/marfinxx/status/2112891671834673156) — 2026-10-21: marfin's article 'Master Agent Architecture: Unifying Harness, Loop, and Graph Engineering' (Jul 27), resurfaced here as the quoted post. Its premise: most developers use Claude Code and LLM agents like an expensive intern, one prompt, one response, then manual checking, and teams tend to fall into three common failure modes that harness, loop and graph engineering address together. Only the article's opening was visible in the capture, not the full text.
-  posted 2026-10-21 · @marfinxx · 2,279 views · concept: managing agent teams · url: https://x.com/marfinxx/status/2112891671834673156
+  posted 2026-10-21 · @marfinxx · 2,279 views · concept: loop engineering · url: https://x.com/marfinxx/status/2112891671834673156
 
 - [Anthony Kroeger](https://x.com/kr0der/status/2106429105671643587) — 2026-10-21: Practical Claude Code Projects tip: tell the project's coordinator to post updates whenever a thread is blocked or finishes a milestone, and save that instruction to project memory. Kroeger says it made the coordinator genuinely useful; the saved memory line asks for a one-line note in project chat linking the thread. A reply asks how to apply it across all projects.
   posted 2026-10-03 · @kr0der · 73K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/kr0der/status/2106429105671643587
@@ -5147,7 +5147,7 @@
   posted 2026-06-05 · @roydanroy · 456.3K views · url: https://x.com/roydanroy/status/2062917394356429092
 
 - [さいぺ (cipepser)](https://x.com/cipepser/status/2062397559520502225) — 2026-06-04: Points to mem0's 'State of Memory in Agent Harness' survey, which covers the field's papers and benchmarks alongside how memory is actually implemented in each shipping coding agent (Cursor, Devin, Claude Code, Codex). Useful as a comparative map rather than a single-system writeup.
-  posted 2026-06-04 · @cipepser · 49K views · concept: vector / hybrid databases as agent-memory infrastructure · url: https://x.com/cipepser/status/2062397559520502225
+  posted 2026-06-04 · @cipepser · 49K views · concept: agent harness engineering · url: https://x.com/cipepser/status/2062397559520502225
 
 - [yv](https://x.com/yvbbrjdr/status/2061914706579984551) — 2026-06-03: Recommends the MAI-Thinking-1 technical report as an unusually complete public account of training a frontier-class model — the claim being it withholds very little of the recipe. Paper: microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf
   posted 2026-06-02 · @yvbbrjdr · 185.3K views · url: https://x.com/yvbbrjdr/status/2061914706579984551 · links: https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf
@@ -7220,7 +7220,7 @@
 
 - **2026-10-21** | [marfin](https://x.com/marfinxx/status/2112891671834673156) | agent-design, claude-code
   marfin's article 'Master Agent Architecture: Unifying Harness, Loop, and Graph Engineering' (Jul 27), resurfaced here as the quoted post. Its premise: most developers use Claude Code and LLM agents like an expensive intern, one prompt, one response, then manual checking, and teams tend to fall into three common failure modes that harness, loop and graph engineering address together. Only the article's opening was visible in the capture, not the full text.
-  posted 2026-10-21 · @marfinxx · 2,279 views · concept: managing agent teams · url: https://x.com/marfinxx/status/2112891671834673156
+  posted 2026-10-21 · @marfinxx · 2,279 views · concept: loop engineering · url: https://x.com/marfinxx/status/2112891671834673156
 
 - **2026-10-21** | [Mia](https://x.com/miaai_lab/status/2112678922412241245) | industry
   Mia reports hands-on impressions of Drama TensorFold (github.com/plotarmordev/drama-tensorfold), an open voice-cloning/speech tool that runs locally on a GPU (about 38.2 GB memory), supports multiple languages in one cloned voice. Quotes the creator (netrunner/plotarmordev) who notes a quantized version is in the works. Enthusiastic first-person review, so take the 'blown away' framing as unverified.
@@ -8684,7 +8684,7 @@
 
 - **2026-06-04** | [さいぺ (cipepser)](https://x.com/cipepser/status/2062397559520502225) | agent-design, research
   Points to mem0's 'State of Memory in Agent Harness' survey, which covers the field's papers and benchmarks alongside how memory is actually implemented in each shipping coding agent (Cursor, Devin, Claude Code, Codex). Useful as a comparative map rather than a single-system writeup.
-  posted 2026-06-04 · @cipepser · 49K views · concept: vector / hybrid databases as agent-memory infrastructure · url: https://x.com/cipepser/status/2062397559520502225
+  posted 2026-06-04 · @cipepser · 49K views · concept: agent harness engineering · url: https://x.com/cipepser/status/2062397559520502225
 
 - **2026-06-04** | [Ole Lehmann](https://x.com/itsolelehmann/status/2061911202830401564) | agent-design, dev-practices, skills-mcp
   A ~10-minute recipe to turn your X bookmarks into an agent-queryable second brain: export bookmarks (twitter-web-exporter / BookmarkSave), drop the file into your LLM wiki or Obsidian vault, and have your agent convert each into a tagged markdown note with the original link — then query across the whole pile. Directly relevant to this link collection.

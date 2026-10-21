@@ -21,7 +21,7 @@
     "enriched": true,
     "content": "Master Agent Architecture: Unifying Harness, Loop, and Graph Engineering (article, Jul 27). Most developers use Claude Code and LLM agents like an expensive intern. They provide one prompt, wait for one response, and manually check what happens next. Other teams fall into three common failure modes...",
     "posted_at": "2026-10-21T13:00:04",
-    "concept": "managing agent teams",
+    "concept": "loop engineering",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2
@@ -10483,7 +10483,7 @@
     "enriched": true,
     "content": "The notes on Agent Harness's memory were insanely well-organized, covering everything from overviews of papers and benchmarks in the field to implementations in each Coding Agent.\n\nArticle: State of Memory in Agent Harness. Agent harnesses are where AI software actually runs. Cursor, Devin, Claude Code, Codex: these environments handle context, orchestrate tools, coordinate agents, and increasingly, manage memory.",
     "posted_at": "2026-06-04T04:54:30",
-    "concept": "vector / hybrid databases as agent-memory infrastructure",
+    "concept": "agent harness engineering",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2
