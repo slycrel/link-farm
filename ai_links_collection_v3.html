@@ -489,7 +489,7 @@
 
 <script>
 const MORNING_VIEW = {
-  "generated_at": "2026-10-21T23:35:45Z",
+  "generated_at": "2026-10-21T23:36:03Z",
   "read_now": [
     {
       "id": 2112616425693266153,
@@ -669,41 +669,10 @@ const MORNING_VIEW = {
         ]
       },
       {
-        "id": 55,
-        "name": "local model serving on consumer GPUs — quantization & throughput",
-        "description": "Running capable open models on single-box prosumer hardware: quantization formats (NVFP4/AWQ/GPTQ/GGUF/MLX), KV-cache compression, serving stacks (SGLang, DSpark), and the tok/s benchmarking that goes with it. Renamed from auto-named cluster on 2026-08-21.",
-        "count": 37,
-        "recent_count": 2,
-        "last_post_date": "2026-10-21",
-        "top_posts": [
-          {
-            "id": 2112678922412241245,
-            "date": "2026-10-21",
-            "author": "Mia",
-            "url": "https://x.com/miaai_lab/status/2112678922412241245",
-            "summary": "Mia reports hands-on impressions of Drama TensorFold (github.com/plotarmordev/drama-tensorfold), an open voice-cloning/speech tool that runs locally on a GPU (a"
-          },
-          {
-            "id": 2107960379917652296,
-            "date": "2026-10-08",
-            "author": "Juncheng Yang",
-            "url": "https://x.com/1a1a11a/status/2107960379917652296",
-            "summary": "Juncheng Yang (Harvard MAD Systems) releases the largest agentic LLM inference trace dataset: 206B tokens, 12,002 sessions, 1.19M LLM requests and 1.21M tool ca"
-          },
-          {
-            "id": 2099833846350942385,
-            "date": "2026-09-16",
-            "author": "AYi",
-            "url": "https://x.com/ayi_ainotes/status/2099833846350942385",
-            "summary": "Chinese-language walkthrough of Anthropic's 13-page agent memory whitepaper, which the author rates the most useful production-grade treatment of agent memory e"
-          }
-        ]
-      },
-      {
         "id": 77,
         "name": "applied decision-model routing — gating agents with Jev",
         "description": "Discovered by orphan clustering on 2026-09-28 (6 posts, cohesion 0.66); renamed in-session. The *applied* side of System One / decision models: putting a non-generative decision model in front of an agent as a gate, router, verifier or judge, plus the libraries and framework integrations that make that practical (AnyJev, DSPy, LangGraph, Claude Code hooks). Deliberately distinct from #74 'System One models — bounded decisions as a primitive', which holds the concept itself and was frozen out of centroid scoring after the 2026-09-25 magnet rollback; because #74 can no longer recruit by cosine, the live Jev conversation could not reach it and formed this cluster instead. On 2026-09-28 #74's 11 canonical edges were demoted to weak so it became a secondary-only grouping tag, releasing its members to re-home here or elsewhere. NOTE: do not write the centroid-scoring opt-out marker as a literal string in this description — the eligibility check is a plain substring match over the whole description, so merely mentioning it silently disables semantic scoring for this concept (hit for real on 2026-09-28).",
-        "count": 36,
+        "count": 37,
         "recent_count": 2,
         "last_post_date": "2026-10-21",
         "top_posts": [
@@ -727,6 +696,37 @@ const MORNING_VIEW = {
             "author": "Diogo Almeida",
             "url": "https://x.com/completeskeptic/status/2104682600103284917",
             "summary": "TypeSafe founder Diogo Almeida responds to Zhaorun Chen's red-team of Jev 1.13 on the DecodingTrust-Agent Platform — 70.1% attack success rate under direct misu"
+          }
+        ]
+      },
+      {
+        "id": 55,
+        "name": "local model serving on consumer GPUs — quantization & throughput",
+        "description": "Running capable open models on single-box prosumer hardware: quantization formats (NVFP4/AWQ/GPTQ/GGUF/MLX), KV-cache compression, serving stacks (SGLang, DSpark), and the tok/s benchmarking that goes with it. Renamed from auto-named cluster on 2026-08-21.",
+        "count": 36,
+        "recent_count": 2,
+        "last_post_date": "2026-10-21",
+        "top_posts": [
+          {
+            "id": 2112678922412241245,
+            "date": "2026-10-21",
+            "author": "Mia",
+            "url": "https://x.com/miaai_lab/status/2112678922412241245",
+            "summary": "Mia reports hands-on impressions of Drama TensorFold (github.com/plotarmordev/drama-tensorfold), an open voice-cloning/speech tool that runs locally on a GPU (a"
+          },
+          {
+            "id": 2107960379917652296,
+            "date": "2026-10-08",
+            "author": "Juncheng Yang",
+            "url": "https://x.com/1a1a11a/status/2107960379917652296",
+            "summary": "Juncheng Yang (Harvard MAD Systems) releases the largest agentic LLM inference trace dataset: 206B tokens, 12,002 sessions, 1.19M LLM requests and 1.21M tool ca"
+          },
+          {
+            "id": 2099833846350942385,
+            "date": "2026-09-16",
+            "author": "AYi",
+            "url": "https://x.com/ayi_ainotes/status/2099833846350942385",
+            "summary": "Chinese-language walkthrough of Anthropic's 13-page agent memory whitepaper, which the author rates the most useful production-grade treatment of agent memory e"
           }
         ]
       }
@@ -914,7 +914,7 @@ const POSTS = [
   { id: 'post-140', date: '2026-08-25', author: 'pilvar (Philippe Dourassov)', handle: '@pilvar222', subject: 'Post by pilvar (Philippe Dourassov) on X', url: 'https://x.com/pilvar222/status/2091879005708320814', summary: 'Aikido claims it found more vulnerabilities than Anthropic\'s Mythos (Claude Security) without burning ~$10k in tokens, with the takeaway that many agents running small models beat a few agents running big ones. Writeup at aikido.dev/blog/aikido-finds-more-vulnerabilities-claude-security-mythos — a concrete cost/architecture data point for fan-out agent design, from a vendor with a competing product.', topics: ["agent-design", "dev-practices", "industry"], audience: ["me", "dev-team"], priority: 'near-term', perspectives: {"tool-eval": "near-term"}, sourceType: 'tweet', views: '90.8K', notes: '', enriched: true, posted: '2026-08-24T13:23:14', concept: '', links: ["https://aikido.dev/blog/aikido-finds-more-vulnerabilities-claude-security-mythos"], related: [], content: 'We found a way to find more vulnerabilities than Mythos (Claude Security) without burning $10k worth of tokens. TLDR: it\'s much better to use many agents with small models than to use a few agents with big models. Full blog post on how we did it.' },
   { id: 'post-141', date: '2026-08-25', author: 'elvis', handle: '@omarsar0', subject: 'Post by elvis on X', url: 'https://x.com/omarsar0/status/2091869893339812222', summary: 'NVIDIA\'s ACES paper argues the usual skill-review gate — a scanner checking structure, style and security — predicts almost nothing about actual skill quality: across 145 real skills from internal and public catalogs, scan scores correlate with LLM-judge quality at Spearman rho 0.14. It proposes \'Skill Lift\' instead: run the same task twice under identical model, sandbox, workspace and scorer, once with the skill loaded and once without, and measure the difference in what the agent completed. Scored over 947 paired cases from 58 production skills across four harnesses, normalized into a shared Agent Trajectory Interchange Format; largest gains appeared in skill execution, behavior check, and skill efficiency.', topics: ["research", "skills-mcp", "agent-design", "dev-practices"], audience: ["me", "dev-team"], priority: 'near-term', perspectives: {"tool-eval": "near-term"}, sourceType: 'tweet', views: '29.4K', notes: '', enriched: true, posted: '2026-08-24T12:47:02', concept: 'self-improving skills (autoresearch pattern)', links: [], related: [], content: 'Very interesting new paper from NVIDIA. (bookmark it) It takes a closer look at evaluating agent skills. Enterprise teams are starting to leverage shared skill libraries, and the review gate is typically a scanner that checks structure, style, and security. NVIDIA measured whether that gate predicts anything. Across 145 real skills from internal and public catalogs, structural scan scores correlate with LLM-judge quality at a Spearman rho of 0.14. ACES proposes Skill Lift instead. In other words, run the same task twice under the same model, sandbox, workspace, and scorer, once with the skill loaded and once without. Then you measure the difference in what the agent completed. They scored 947 paired cases from 58 production skills across four harnesses, normalizing trajectories into a shared Agent Trajectory Interchange Format, so results compare across harnesses. They find that the largest process-metric gains appear in skill execution, behavior check, and skill efficiency.' },
   { id: 'post-142', date: '2026-08-25', author: 'Mia', handle: '@miaai_lab', subject: 'Post by Mia on X', url: 'https://x.com/miaai_lab/status/2091858917307421009', summary: 'Recommends Ponytail (github.com/dietrichgebert/ponytail), a harness skill that pushes the agent to behave like a maximally lazy senior dev — the one who reads 50 lines and replaces them with one — as a defense against agents generating volume instead of solutions. Claimed to work across Claude Code, Codex, Hermes Agent, Copilot CLI, Pi, OMP, OpenCode, Cursor and Gemini.', topics: ["skills-mcp", "agent-design", "dev-practices"], audience: ["me", "dev-team"], priority: 'near-term', perspectives: {"tool-eval": "near-term"}, sourceType: 'tweet', views: '60.7K', notes: '', enriched: true, posted: '2026-08-24T12:03:25', concept: '', links: ["https://github.com/dietrichgebert/ponytail"], related: [], content: '#1 underrated skill for your harness? Ponytail. It forces your agent to think like the laziest senior dev. It can save you HOURS of research and work. It\'s like the developer who looks at 50 lines… says nothing… and replaces them with one. Works with Claude Code, Codex, Hermes Agent, Copilot CLI, Pi, OMP, OpenCode, Cursor, Gemini, and more.' },
-  { id: 'post-143', date: '2026-08-25', author: 'Shubham Saboo', handle: '@saboo_shubham_', subject: 'Post by Shubham Saboo on X', url: 'https://x.com/saboo_shubham_/status/2091713863368802322', summary: 'Reports a Stanford \'LLM-as-a-Verifier\' result: sample five swe-agent trajectories, rank them with the same model, keep the winner — taking deepseek-v4-flash from 78.7% to 88% on terminal-bench with no fine-tuning, and open source. The underlying technique is best-of-N with self-ranking rather than anything exotic; the ALL-CAPS \'WILD...\' framing is engagement packaging around a real and cheap inference-time win.', topics: ["research", "agent-design", "questionable"], audience: ["me", "dev-team"], priority: 'near-term', perspectives: {"tool-eval": "near-term"}, sourceType: 'tweet', views: '28.1K', notes: '', enriched: true, posted: '2026-08-24T02:27:01', concept: 'local model serving on consumer GPUs — quantization & throughput', links: [], related: [109], content: 'WILD...the model grades its own answers and beats itself. Stanford\'s LLM-as-a-Verifier sampled 5 swe-agent trajectories, ranked them with the same model, kept the winner. deepseek-v4-flash went from 78.7% to 88% on terminal-bench without fine-tuning. 100% Opensource.' },
+  { id: 'post-143', date: '2026-08-25', author: 'Shubham Saboo', handle: '@saboo_shubham_', subject: 'Post by Shubham Saboo on X', url: 'https://x.com/saboo_shubham_/status/2091713863368802322', summary: 'Reports a Stanford \'LLM-as-a-Verifier\' result: sample five swe-agent trajectories, rank them with the same model, keep the winner — taking deepseek-v4-flash from 78.7% to 88% on terminal-bench with no fine-tuning, and open source. The underlying technique is best-of-N with self-ranking rather than anything exotic; the ALL-CAPS \'WILD...\' framing is engagement packaging around a real and cheap inference-time win.', topics: ["research", "agent-design", "questionable"], audience: ["me", "dev-team"], priority: 'near-term', perspectives: {"tool-eval": "near-term"}, sourceType: 'tweet', views: '28.1K', notes: '', enriched: true, posted: '2026-08-24T02:27:01', concept: 'applied decision-model routing — gating agents with Jev', links: [], related: [109], content: 'WILD...the model grades its own answers and beats itself. Stanford\'s LLM-as-a-Verifier sampled 5 swe-agent trajectories, ranked them with the same model, kept the winner. deepseek-v4-flash went from 78.7% to 88% on terminal-bench without fine-tuning. 100% Opensource.' },
   { id: 'post-144', date: '2026-08-25', author: 'CyrilXBT', handle: '@cyrilxbt', subject: 'Post by CyrilXBT on X', url: 'https://x.com/cyrilxbt/status/2091331618979905582', summary: 'X article walking hour-by-hour through shipping a live product that takes real payments (ranknow.lol — a pay-to-rank leaderboard with outbidding) end to end with Claude Code in a single day, starting from not considering himself a developer. The transferable lesson is scope discipline: pick one narrow mechanic with a single core loop, small enough that finishing it is realistic. The \'24 hours\' transformation framing is hype, but it is a real solo-build account with a shipped, paying product behind it.', topics: ["claude-code", "solo-operator", "adjacent", "questionable"], audience: ["me"], priority: 'near-term', perspectives: {"tool-eval": "near-term"}, sourceType: 'tweet', views: '559.6K', notes: '', enriched: true, posted: '2026-08-23T01:08:07', concept: 'managing agent teams', links: ["https://ranknow.lol"], related: [483, 38], content: 'How I Became An AI Dev With Claude In The Last 24 Hours (Step By Step Guide). 24 hours ago I didn\'t consider myself a developer. Today there\'s a live product taking real payments at ranknow.lol, built end to end with Claude Code. This is the actual, honest step by step of how that happened, not a highlight reel, the real sequence, including the parts that were hard. Hour 0 To 1: Pick One Idea Small Enough To Actually Finish. The biggest mistake people make on day one is picking something too ambitious. I didn\'t try to build a platform. I picked one specific, narrow mechanic: a leaderboard where people pay to be on it, sorted purely by what they paid, with the option to outbid whoever\'s above them. That\'s it. One page. One core loop. Small enough that finishing it in a day was actually realistic.' },
   { id: 'post-145', date: '2026-08-25', author: 'Matt Slotnick', handle: '@matt_slotnick', subject: 'Post by Matt Slotnick on X', url: 'https://x.com/matt_slotnick/status/2022428696595108152', summary: 'X article \'Intention Is All You Need\' arguing businesses are fundamentally resource-allocation machines, so the most valuable software is whatever owns the core objects those resources get deployed against — Salesforce owns the customer, Workday the employee, ServiceNow the technology. The central claim is that systems of record aren\'t databases but representations of organizational truth: how an object is defined, how it\'s measured, its set of valid states, and how it\'s managed. Strategy-layer framing for where durable value sits as AI arrives; pairs with the Xudong Han / Julie Yoo \'accountability as moat\' post.', topics: ["industry", "management", "adjacent"], audience: ["me", "leadership"], priority: 'long-term', perspectives: {"tool-eval": "long-term"}, sourceType: 'tweet', views: '320.3K', notes: '', enriched: true, posted: '2026-02-13T21:52:30', concept: '', links: [], related: [666], content: 'Intention Is All You Need. Systems of shared understanding. At their core, businesses are resource allocation and optimization machines. Accordingly, the most valuable software systems are those that enable the deployment and management of these resources. Historically, these have been called systems of record. They own the core objects that a business runs on. These objects represent a shared understanding across the organization, and allow for the management of resources deployed against complicated, long running, and cross functional workflows. Salesforce owns the customer. Workday owns the employee. ServiceNow owns the technology. Contrary to popular belief, these aren\'t just databases. They\'re representations of organizational truth around what a customer is, what an employee is, what a technology asset is. They represent how each is defined, how each is measured, the set of potential states, and how each is managed.' },
   { id: 'post-146', date: '2026-08-25', author: 'BasedBiohacker', handle: '@basedbiohacker', subject: 'Post by BasedBiohacker on X', url: 'https://x.com/basedbiohacker/status/2015559542528971036', summary: 'Long-form \'modafinil bible\' covering claimed mechanisms, dosing protocols, side effects and fixes, stacking and cycling, framed as \'responsible enhancement\' for high achievers. It cites a real Oxford review of modafinil and cognition (ox.ac.uk/news/2015-08-20-review-smart-drug-shows-modafinil-does-enhance-cognition) but also links directly to grey-market vendors (modafinilxl.com, modawhale.to, kimerachems.co), so it doubles as a purchase funnel. Modafinil is prescription-only in the US and most jurisdictions and the \'near-perfect safety profile\' line is the author\'s characterization; the protocols described are his claims, not clinical guidance. Same author as post 2071982410082734111.', topics: ["biohacking", "questionable", "adjacent"], audience: ["me"], priority: 'long-term', perspectives: {"tool-eval": "long-term"}, sourceType: 'tweet', views: '2.1M', notes: '', enriched: true, posted: '2026-01-25T22:56:56', concept: 'cognitive enhancement & longevity protocols', links: ["https://www.ox.ac.uk/news/2015-08-20-review-smart-drug-shows-modafinil-does-enhance-cognition", "https://modafinilxl.com", "https://modawhale.to", "https://kimerachems.co"], related: [545, 169, 6, 346, 136], content: 'the modafinil bible: enhancing focus, longevity & brain health. i am a firm believer that there is no price for not being enhanced, and through years of research and experimentation, i\'ve written the recipe for responsible enhancement. but most people who want to perform better are doing it completely wrong. they either fear anything that actually works because someone on reddit scared them, or they go straight to the nuclear option and fry their dopamine receptors before they\'re 25. there\'s a middle path. an FDA approved compound that\'s been studied for over 25 years with a near-perfect safety profile. this is everything i know about modafinil. the mechanisms. the protocols. the side effects and how to fix them. what to stack. how to cycle. the complete picture for high-achievers who want sustainable cognitive enhancement.' },

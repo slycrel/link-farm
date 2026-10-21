@@ -4202,7 +4202,7 @@
     "enriched": true,
     "content": "WILD...the model grades its own answers and beats itself. Stanford's LLM-as-a-Verifier sampled 5 swe-agent trajectories, ranked them with the same model, kept the winner. deepseek-v4-flash went from 78.7% to 88% on terminal-bench without fine-tuning. 100% Opensource.",
     "posted_at": "2026-08-24T02:27:01",
-    "concept": "local model serving on consumer GPUs — quantization & throughput",
+    "concept": "applied decision-model routing — gating agents with Jev",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1

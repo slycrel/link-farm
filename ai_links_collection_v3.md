@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-10-21T23:35:45Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-10-21T23:36:03Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-10-21** — [Anže Pečar](https://x.com/anze3db/status/2112616425693266153) — *now • Dev Practices • v1 enriched*  
@@ -38,15 +38,15 @@
     - 2026-10-21 — [Andrej Karpathy](https://x.com/karpathy/status/2036487306585268612): Karpathy on the litellm PyPI supply-chain attack: a plain `pip install litellm` could exfiltrate SSH keys, cloud credentials, Kubernetes con…
     - 2026-10-21 — [Anže Pečar](https://x.com/anze3db/status/2112616425693266153): Security alert: private keys for 8 intermediate CA certificates were reportedly compromised. Pečar urges upgrading certifi everywhere (uv se…
 
-- **local model serving on consumer GPUs — quantization & throughput** (37 posts, +2 this week)  
-  Running capable open models on single-box prosumer hardware: quantization formats (NVFP4/AWQ/GPTQ/GGUF/MLX), KV-cache compression, serving stacks (SGLang, DSpark), and the tok/s benchmarking that goes with it. Renamed from auto-named cluster on 2026-08-21.
-    - 2026-10-21 — [Mia](https://x.com/miaai_lab/status/2112678922412241245): Mia reports hands-on impressions of Drama TensorFold (github.com/plotarmordev/drama-tensorfold), an open voice-cloning/speech tool that runs…
-    - 2026-10-08 — [Juncheng Yang](https://x.com/1a1a11a/status/2107960379917652296): Juncheng Yang (Harvard MAD Systems) releases the largest agentic LLM inference trace dataset: 206B tokens, 12,002 sessions, 1.19M LLM reques…
-
-- **applied decision-model routing — gating agents with Jev** (36 posts, +2 this week)  
+- **applied decision-model routing — gating agents with Jev** (37 posts, +2 this week)  
   Discovered by orphan clustering on 2026-09-28 (6 posts, cohesion 0.66); renamed in-session. The *applied* side of System One / decision models: putting a non-generative decision model in front of an agent as a gate, router, verifier or judge, plus the libraries and framework integrations that make that practical (AnyJev, DSPy, LangGraph, Claude Code hooks). Deliberately distinct from #74 'System One models — bounded decisions as a primitive', which holds the concept itself and was frozen out of centroid scoring after the 2026-09-25 magnet rollback; because #74 can no longer recruit by cosine, the live Jev conversation could not reach it and formed this cluster instead. On 2026-09-28 #74's 11 canonical edges were demoted to weak so it became a secondary-only grouping tag, releasing its members to re-home here or elsewhere. NOTE: do not write the centroid-scoring opt-out marker as a literal string in this description — the eligibility check is a plain substring match over the whole description, so merely mentioning it silently disables semantic scoring for this concept (hit for real on 2026-09-28).
     - 2026-10-21 — [elvis](https://x.com/omarsar0/status/2112632133357346889): Elvis (DAIR.AI) says to learn to build evals and recommends Hamel Husain's new post on using decision models for evals (choosing a model and…
     - 2026-10-15 — [elvis](https://x.com/omarsar0/status/2110083302728323346): elvis highlights the LongHarness paper (arxiv.org/abs/2610.13075): a model-agnostic agent harness for 100M+ token corpora that takes GLM-5.3…
+
+- **local model serving on consumer GPUs — quantization & throughput** (36 posts, +2 this week)  
+  Running capable open models on single-box prosumer hardware: quantization formats (NVFP4/AWQ/GPTQ/GGUF/MLX), KV-cache compression, serving stacks (SGLang, DSpark), and the tok/s benchmarking that goes with it. Renamed from auto-named cluster on 2026-08-21.
+    - 2026-10-21 — [Mia](https://x.com/miaai_lab/status/2112678922412241245): Mia reports hands-on impressions of Drama TensorFold (github.com/plotarmordev/drama-tensorfold), an open voice-cloning/speech tool that runs…
+    - 2026-10-08 — [Juncheng Yang](https://x.com/1a1a11a/status/2107960379917652296): Juncheng Yang (Harvard MAD Systems) releases the largest agentic LLM inference trace dataset: 206B tokens, 12,002 sessions, 1.19M LLM reques…
 
 
 ### Revisit from last month
@@ -451,7 +451,7 @@
   posted 2026-08-24 · @miaai_lab · 60.7K views · url: https://x.com/miaai_lab/status/2091858917307421009 · links: https://github.com/dietrichgebert/ponytail
 
 - [Shubham Saboo](https://x.com/saboo_shubham_/status/2091713863368802322) — 2026-08-25: Reports a Stanford 'LLM-as-a-Verifier' result: sample five swe-agent trajectories, rank them with the same model, keep the winner — taking deepseek-v4-flash from 78.7% to 88% on terminal-bench with no fine-tuning, and open source. The underlying technique is best-of-N with self-ranking rather than anything exotic; the ALL-CAPS 'WILD...' framing is engagement packaging around a real and cheap inference-time win.
-  posted 2026-08-24 · @saboo_shubham_ · 28.1K views · concept: local model serving on consumer GPUs — quantization & throughput · url: https://x.com/saboo_shubham_/status/2091713863368802322
+  posted 2026-08-24 · @saboo_shubham_ · 28.1K views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/saboo_shubham_/status/2091713863368802322
 
 - [Xudong Han](https://x.com/xudong07452910/status/2090760827230187782) — 2026-08-21: Chinese-language post recommending a Julie Yoo essay on where an AI startup's moat can still sit. Argument: models improve every few months, so any product whose main value is 'answering questions more smartly' or automating a process will get absorbed by the foundation models over time - the layer that's much harder to replace is being accountable for outcomes. Healthcare is the worked example, where actually delivering services requires licenses, insurance, payment rails, and liability for errors, and insurers carry real financial risk. Aimed at people building agents, vertical AI, or healthtech; the accountability-as-moat framing transfers directly to other regulated verticals.
   posted 2026-08-21 · @Xudong07452910 · concept: vibecode-to-production via agent skills · url: https://x.com/xudong07452910/status/2090760827230187782
@@ -4967,7 +4967,7 @@
   posted 2026-08-24 · @omarsar0 · 29.4K views · concept: self-improving skills (autoresearch pattern) · url: https://x.com/omarsar0/status/2091869893339812222
 
 - [Shubham Saboo](https://x.com/saboo_shubham_/status/2091713863368802322) — 2026-08-25: Reports a Stanford 'LLM-as-a-Verifier' result: sample five swe-agent trajectories, rank them with the same model, keep the winner — taking deepseek-v4-flash from 78.7% to 88% on terminal-bench with no fine-tuning, and open source. The underlying technique is best-of-N with self-ranking rather than anything exotic; the ALL-CAPS 'WILD...' framing is engagement packaging around a real and cheap inference-time win.
-  posted 2026-08-24 · @saboo_shubham_ · 28.1K views · concept: local model serving on consumer GPUs — quantization & throughput · url: https://x.com/saboo_shubham_/status/2091713863368802322
+  posted 2026-08-24 · @saboo_shubham_ · 28.1K views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/saboo_shubham_/status/2091713863368802322
 
 - [Aaron Levie](https://x.com/levie/status/2090664811185205722) — 2026-08-21: Levie on when domain-specific post-training beats a general frontier model for applied AI: once you understand a domain well enough and have enough volume on similar tasks, purpose-designing a model for that work starts to pay. Quotes the underlying post - 'we incentivized efficient tool use and reasoning through reward shaping, preferring trajectories that would reduce tokens consumed at inference-time given equivalent performance' - i.e. co-optimizing cost and quality rather than trading one for the other. Caveat included: this won't make sense in every domain, since general models are often good enough or necessary out of the box.
   posted 2026-08-21 · @levie · concept: vibecode-to-production via agent skills · url: https://x.com/levie/status/2090664811185205722
@@ -6729,7 +6729,7 @@
   posted 2026-08-24 · @divyansht91162 · 17.5K views · concept: self-improving skills (autoresearch pattern) · url: https://x.com/divyansht91162/status/2091879586045018406 · links: https://github.com/volcengine/OpenViking https://github.com/rohitg00/agentmemory https://github.com/anthropics/skills https://github.com/cathrynlavery/diagram-design https://github.com/K-Dense-AI/scientific-agent-skills
 
 - [Shubham Saboo](https://x.com/saboo_shubham_/status/2091713863368802322) — 2026-08-25: Reports a Stanford 'LLM-as-a-Verifier' result: sample five swe-agent trajectories, rank them with the same model, keep the winner — taking deepseek-v4-flash from 78.7% to 88% on terminal-bench with no fine-tuning, and open source. The underlying technique is best-of-N with self-ranking rather than anything exotic; the ALL-CAPS 'WILD...' framing is engagement packaging around a real and cheap inference-time win.
-  posted 2026-08-24 · @saboo_shubham_ · 28.1K views · concept: local model serving on consumer GPUs — quantization & throughput · url: https://x.com/saboo_shubham_/status/2091713863368802322
+  posted 2026-08-24 · @saboo_shubham_ · 28.1K views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/saboo_shubham_/status/2091713863368802322
 
 - [CyrilXBT](https://x.com/cyrilxbt/status/2091331618979905582) — 2026-08-25: X article walking hour-by-hour through shipping a live product that takes real payments (ranknow.lol — a pay-to-rank leaderboard with outbidding) end to end with Claude Code in a single day, starting from not considering himself a developer. The transferable lesson is scope discipline: pick one narrow mechanic with a single core loop, small enough that finishing it is realistic. The '24 hours' transformation framing is hype, but it is a real solo-build account with a shipped, paying product behind it.
   posted 2026-08-23 · @cyrilxbt · 559.6K views · concept: managing agent teams · url: https://x.com/cyrilxbt/status/2091331618979905582 · links: https://ranknow.lol
@@ -7802,7 +7802,7 @@
 
 - **2026-08-25** | [Shubham Saboo](https://x.com/saboo_shubham_/status/2091713863368802322) | research, agent-design, questionable
   Reports a Stanford 'LLM-as-a-Verifier' result: sample five swe-agent trajectories, rank them with the same model, keep the winner — taking deepseek-v4-flash from 78.7% to 88% on terminal-bench with no fine-tuning, and open source. The underlying technique is best-of-N with self-ranking rather than anything exotic; the ALL-CAPS 'WILD...' framing is engagement packaging around a real and cheap inference-time win.
-  posted 2026-08-24 · @saboo_shubham_ · 28.1K views · concept: local model serving on consumer GPUs — quantization & throughput · url: https://x.com/saboo_shubham_/status/2091713863368802322
+  posted 2026-08-24 · @saboo_shubham_ · 28.1K views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/saboo_shubham_/status/2091713863368802322
 
 - **2026-08-25** | [CyrilXBT](https://x.com/cyrilxbt/status/2091331618979905582) | claude-code, solo-operator, adjacent, questionable
   X article walking hour-by-hour through shipping a live product that takes real payments (ranknow.lol — a pay-to-rank leaderboard with outbidding) end to end with Claude Code in a single day, starting from not considering himself a developer. The transferable lesson is scope discipline: pick one narrow mechanic with a single core loop, small enough that finishing it is realistic. The '24 hours' transformation framing is hype, but it is a real solo-build account with a shipped, paying product behind it.
