@@ -597,3 +597,11 @@ The `image` field on each post points to a screenshot PNG (e.g., `screenshots/po
 **Storage**: `screenshots/` subdirectory. Lazy-load in the HTML viewer.
 
 See `ARCHITECTURE_PLAN.md` for the full workstream details.
+
+
+## Searching (added 2026-10-21)
+
+`python3 -m db.search "<fts5 query>" [--since YYYY-MM-DD] [--until ...] [--handle h] [--topic t] [--concept name-substring] [--links]`
+queries `post_search`, a standalone FTS5 index rebuilt on every `db/rebuild.py` run. It covers summary, captured text, topics, **all** concept names (evidence/origin edges, not just the primary), extracted external links, the post URL and posted date; `--since/--until` use `posted_at` and fall back to capture `date`. Column filters work in the query itself (`links:arxiv`, `concepts:harness`).
+
+The legacy `posts_fts` has no triggers and went stale after the initial migration (recent subjects like "deepwiki" returned nothing). `rebuild` now refreshes it with the FTS5 `rebuild` command each run, so both indexes are current after every sync.

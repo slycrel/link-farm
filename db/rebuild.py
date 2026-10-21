@@ -777,6 +777,53 @@ def generate_markdown(posts: list[dict], out_path: Path, morning_view: dict = No
 
 # --- Main ---
 
+def refresh_search_index(db_path: Path, posts: list[dict]) -> None:
+    """Rebuild the full-text indexes from current data.
+
+    Two things, both derived (safe to rebuild every run):
+      * `posts_fts` (external-content, legacy) — has NO triggers, so it silently
+        went stale after the initial migration: by 2026-10 searches for recent
+        subjects (e.g. 'deepwiki', 'certifi') returned nothing from it. Refresh
+        with the FTS5 'rebuild' command.
+      * `post_search` — a standalone index that also covers what posts_fts
+        cannot see: topics, ALL concept names (not just the primary), external
+        links, the post URL, and posted date. Query it with `python3 -m db.search`.
+    """
+    conn = sqlite3.connect(str(db_path))
+    try:
+        try:
+            conn.execute("INSERT INTO posts_fts(posts_fts) VALUES('rebuild')")
+        except sqlite3.OperationalError:
+            pass
+        concepts_by_post: dict[int, list[str]] = {}
+        try:
+            for pid, name in conn.execute("""
+                SELECT pc.post_id, c.name FROM post_concepts pc
+                  JOIN concepts c ON c.id = pc.concept_id
+                 WHERE c.status IN ('active', 'provisional')
+                   AND pc.role IN ('evidence', 'origin')"""):
+                concepts_by_post.setdefault(pid, []).append(name)
+        except sqlite3.OperationalError:
+            pass
+        conn.execute("DROP TABLE IF EXISTS post_search")
+        conn.execute("""CREATE VIRTUAL TABLE post_search USING fts5(
+            author, handle, subject, summary, content, notes,
+            topics, concepts, links, url, posted,
+            tokenize = "porter unicode61")""")
+        conn.executemany(
+            "INSERT INTO post_search(rowid, author, handle, subject, summary, content, notes,"
+            " topics, concepts, links, url, posted) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
+            [(p['id'], p['author'], p['handle'], p['subject'], p['summary'], p.get('content', ''),
+              p['notes'], ' '.join(p['topics']),
+              ' | '.join(concepts_by_post.get(p['id'], [])),
+              ' '.join(p.get('links') or []), p['url'], p.get('posted_at', ''))
+             for p in posts])
+        conn.commit()
+        print(f"  Search index: {len(posts)} posts → posts_fts (refreshed) + post_search")
+    finally:
+        conn.close()
+
+
 def rebuild(db_path: Path = None, out_dir: Path = None, with_lock: bool = True):
     """Main rebuild function — can be called from other scripts.
 
@@ -808,6 +855,7 @@ def rebuild(db_path: Path = None, out_dir: Path = None, with_lock: bool = True):
                       morning_view=morning_view)
         generate_markdown(posts, out_dir / 'ai_links_collection_v3.md',
                           morning_view=morning_view)
+        refresh_search_index(db_path, posts)
 
         print(f"\n✓ Rebuild complete ({len(posts)} posts)")
         return posts
