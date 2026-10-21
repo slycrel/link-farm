@@ -1,46 +1,52 @@
 # AI Links Collection
-**Total Posts**: 951  
-**Date Range**: 2024-06-11 – 2026-10-20  
-**Enriched**: 950/951 (99%)
+**Total Posts**: 961  
+**Date Range**: 2024-06-11 – 2026-10-21  
+**Enriched**: 960/961 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-10-20T18:58:59Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-10-21T16:36:01Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
+- **2026-10-21** — [Anže Pečar](https://x.com/anze3db/status/2112616425693266153) — *now • Dev Practices • v1 enriched*  
+  Security alert: private keys for 8 intermediate CA certificates were reportedly compromised. Pečar urges upgrading certifi everywhere (uv self update; uv lock --upgrade-package certifi) and lists fixed versions: Go 1.27.3/1.26.10, rustls-webpki 0.103.16, webpki-roots 1.0.10, Electron 44.9.1/43.8.1/42.11.16, NSS 3.131.1, Firefox 158.0.1, Ubuntu ca-certificates 20260816, Homebrew 2026-09-25_1; Chrome/Apple/Windows block automatically; Debian, Node.js, Composer and macOS curl still need manual fixes. Source thread: x.com/astuyve/status/2112559796914167931. Jeremy flagged it 'for AJ'.
+- **2026-10-21** — [Anthony Kroeger](https://x.com/kr0der/status/2106429105671643587) — *now • Claude Code • 73K views • v1 enriched*  
+  Practical Claude Code Projects tip: tell the project's coordinator to post updates whenever a thread is blocked or finishes a milestone, and save that instruction to project memory. Kroeger says it made the coordinator genuinely useful; the saved memory line asks for a one-line note in project chat linking the thread. A reply asks how to apply it across all projects.
 - **2026-10-20** — [morluto](https://github.com/morluto/rea) — *now • Skills & MCP • v1 enriched*  
   REA (github.com/morluto/rea, rea.tools) is an MIT-licensed MCP server + CLI that lets coding agents reverse engineer software without source — native binaries via Hopper/Ghidra/IDA, Electron/JS apps, .NET, APKs, firmware, pcaps, WASM, EVM bytecode and more — returning pseudocode and findings with evidence so the agent can explain a feature and rebuild it. One-line setup (npx rea-agents setup) wires it into Claude Code, Codex, Cursor and Gemini CLI; analysis runs locally. At ~345K stars it's one of the largest agent-tooling repos on GitHub — worth evaluating as a skill/MCP for 'how does app X do this' questions.
-- **2026-10-15** — [elvis](https://x.com/omarsar0/status/2110083302728323346) — *near-term • Agent Design • 29.4K views • v1 enriched*  
-  elvis highlights the LongHarness paper (arxiv.org/abs/2610.13075): a model-agnostic agent harness for 100M+ token corpora that takes GLM-5.3-Flash from 4.4% to 61.1% exact match on OfficeQA Pro V2 with the same model, and beats Claude Code by 12.1 pts (V1) and Codex by 18.9 pts (V2). The mechanism: instead of letting evidence and conclusions pile up in one chat history, LongHarness keeps both as explicit state — open conclusions drive what to retrieve next, and each new piece of evidence confirms or revises the conclusion that requested it. Strong quantitative evidence for the 'harness-bound, not model-bound' thesis already running through the corpus.
+- **2026-10-21** — [Caspar](https://x.com/caspar_br/status/2112644945697976630) — *near-term • Agent Design • v1 enriched*  
+  Caspar (LangChain) lists the shared primitives of a 'company harness' for internal agents: lives where people work (Slack), knows who is asking and acts on-behalf-of vs. under its own identity, scoped memory, a sandbox with authenticated CLIs, and many scheduled/ambient runs. LangChain packages these as Managed Deep Agents, pitched as the easiest way to build a company harness (vendor claim).
+- **2026-10-21** — [elvis](https://x.com/omarsar0/status/2112632133357346889) — *near-term • Research • v1 enriched*  
+  Elvis (DAIR.AI) says to learn to build evals and recommends Hamel Husain's new post on using decision models for evals (choosing a model and tuning its threshold rather than defaulting to 0.5), plus his own resources on using fast 'System One' decision models like Jev as LLM judges: academy.dair.ai Jev-as-a-Judge resources and arxiv.org/abs/2609.26550.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **Claude Code session workflows — handoffs, messaging & retention** (18 posts, +2 this week)  
+- **Claude Code session workflows — handoffs, messaging & retention** (20 posts, +3 this week)  
   Discovered by orphan clustering on 2026-10-08 from 6 posts with no prior concept (cohesion 0.66). Rename or archive if this isn't a real theme.
+    - 2026-10-21 — [Anthony Kroeger](https://x.com/kr0der/status/2106429105671643587): Practical Claude Code Projects tip: tell the project's coordinator to post updates whenever a thread is blocked or finishes a milestone, and…
     - 2026-10-08 — [Boris Cherny](https://x.com/bcherny/status/2107565388250874193): Boris Cherny (creator of Claude Code) on how he actually prompts Claude: talk to it like a coworker — no heavy scaffolding. The prompt-engin…
-    - 2026-10-08 — [AI Edge](https://x.com/aiedge_/status/2107835983735787568): AI Edge's hype-packaged but concretely useful setup guide for pairing Opus 5.5 with Jev in Claude Code: Jev scores/sorts/filters so Opus onl…
 
-- **agentic code review at production scale** (15 posts, +2 this week)  
-  Deterministic engineering handles what must never fail; LLM only does context reading and reasoning. Alibaba open-code-review.
-    - 2026-10-08 — [Kun Chen](https://x.com/kunchenguid/status/2108030810691629403): Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5.5 from writing its own tests slightly improved success rate (non-sign…
-    - 2026-10-08 — [Tech with Mak](https://x.com/technmak/status/2107678022094790933): A thorough primer arguing inference engineering is an underrated skill set: the prefill/decode split (compute-bound vs memory-bandwidth-boun…
+- **agent harness engineering** (44 posts, +2 this week)  
+  Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
+    - 2026-10-21 — [Caspar](https://x.com/caspar_br/status/2112644945697976630): Caspar (LangChain) lists the shared primitives of a 'company harness' for internal agents: lives where people work (Slack), knows who is ask…
+    - 2026-10-21 — [Harrison Chase](https://x.com/hwchase17/status/2112489626061738209): Harrison Chase (LangChain) endorses a layered approach to building agents: start with an off-the-shelf harness (he likes deepagents), add co…
 
-- **vector / hybrid databases as agent-memory infrastructure** (40 posts, +1 this week)  
-  HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
-    - 2026-10-08 — [mem0](https://x.com/mem0ai/status/2107873474517889201): mem0's X-article breakdown of Jev-Mem (arxiv.org/pdf/2609.23986, github.com/libingzheren/Jev-Mem) — a UT Dallas architecture that uses Jev a…
-    - 2026-09-21 — [Annatar.md](https://x.com/annatarxbt/status/2101925393322091005): Five-layer taxonomy for agent memory - working (context window), episodic (timestamped interaction log), semantic (facts/entities in a knowl…
-
-- **applied decision-model routing — gating agents with Jev** (35 posts, +1 this week)  
-  Discovered by orphan clustering on 2026-09-28 (6 posts, cohesion 0.66); renamed in-session. The *applied* side of System One / decision models: putting a non-generative decision model in front of an agent as a gate, router, verifier or judge, plus the libraries and framework integrations that make that practical (AnyJev, DSPy, LangGraph, Claude Code hooks). Deliberately distinct from #74 'System One models — bounded decisions as a primitive', which holds the concept itself and was frozen out of centroid scoring after the 2026-09-25 magnet rollback; because #74 can no longer recruit by cosine, the live Jev conversation could not reach it and formed this cluster instead. On 2026-09-28 #74's 11 canonical edges were demoted to weak so it became a secondary-only grouping tag, releasing its members to re-home here or elsewhere. NOTE: do not write the centroid-scoring opt-out marker as a literal string in this description — the eligibility check is a plain substring match over the whole description, so merely mentioning it silently disables semantic scoring for this concept (hit for real on 2026-09-28).
-    - 2026-10-15 — [elvis](https://x.com/omarsar0/status/2110083302728323346): elvis highlights the LongHarness paper (arxiv.org/abs/2610.13075): a model-agnostic agent harness for 100M+ token corpora that takes GLM-5.3…
-    - 2026-09-29 — [Diogo Almeida](https://x.com/completeskeptic/status/2104682600103284917): TypeSafe founder Diogo Almeida responds to Zhaorun Chen's red-team of Jev 1.13 on the DecodingTrust-Agent Platform — 70.1% attack success ra…
-
-- **local model serving on consumer GPUs — quantization & throughput** (35 posts, +1 this week)  
+- **local model serving on consumer GPUs — quantization & throughput** (37 posts, +2 this week)  
   Running capable open models on single-box prosumer hardware: quantization formats (NVFP4/AWQ/GPTQ/GGUF/MLX), KV-cache compression, serving stacks (SGLang, DSpark), and the tok/s benchmarking that goes with it. Renamed from auto-named cluster on 2026-08-21.
+    - 2026-10-21 — [Mia](https://x.com/miaai_lab/status/2112678922412241245): Mia reports hands-on impressions of Drama TensorFold (github.com/plotarmordev/drama-tensorfold), an open voice-cloning/speech tool that runs…
     - 2026-10-08 — [Juncheng Yang](https://x.com/1a1a11a/status/2107960379917652296): Juncheng Yang (Harvard MAD Systems) releases the largest agentic LLM inference trace dataset: 206B tokens, 12,002 sessions, 1.19M LLM reques…
-    - 2026-09-16 — [AYi](https://x.com/ayi_ainotes/status/2099833846350942385): Chinese-language walkthrough of Anthropic's 13-page agent memory whitepaper, which the author rates the most useful production-grade treatme…
+
+- **applied decision-model routing — gating agents with Jev** (36 posts, +2 this week)  
+  Discovered by orphan clustering on 2026-09-28 (6 posts, cohesion 0.66); renamed in-session. The *applied* side of System One / decision models: putting a non-generative decision model in front of an agent as a gate, router, verifier or judge, plus the libraries and framework integrations that make that practical (AnyJev, DSPy, LangGraph, Claude Code hooks). Deliberately distinct from #74 'System One models — bounded decisions as a primitive', which holds the concept itself and was frozen out of centroid scoring after the 2026-09-25 magnet rollback; because #74 can no longer recruit by cosine, the live Jev conversation could not reach it and formed this cluster instead. On 2026-09-28 #74's 11 canonical edges were demoted to weak so it became a secondary-only grouping tag, releasing its members to re-home here or elsewhere. NOTE: do not write the centroid-scoring opt-out marker as a literal string in this description — the eligibility check is a plain substring match over the whole description, so merely mentioning it silently disables semantic scoring for this concept (hit for real on 2026-09-28).
+    - 2026-10-21 — [elvis](https://x.com/omarsar0/status/2112632133357346889): Elvis (DAIR.AI) says to learn to build evals and recommends Hamel Husain's new post on using decision models for evals (choosing a model and…
+    - 2026-10-15 — [elvis](https://x.com/omarsar0/status/2110083302728323346): elvis highlights the LongHarness paper (arxiv.org/abs/2610.13075): a model-agnostic agent harness for 100M+ token corpora that takes GLM-5.3…
+
+- **Forward Deployed Engineers — the durable AI-era role** (24 posts, +2 this week)  
+  Argument that FDEs are the right shape of role for the AI rollout era. Touches every employee's workflow.
+    - 2026-10-21 — [Mark Ajzenstadt](https://x.com/mardehaym/status/2112514104833475045): Mark Ajzenstadt shares an 8-step playbook for AI transformation in regulated companies, drawn from his team's builds and what goes wrong whe…
+    - 2026-10-08 — [Mark Ajzenstadt](https://x.com/mardehaym/status/2107902643490222168): Mark Ajzenstadt (decade running an embedded-engineering firm) pushes back on the FDE hype: cites a Gartner prediction that 70% of enterprise…
 
 
 ### Revisit from last month
@@ -53,23 +59,33 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 577 | 60.7% |
-| claude-code | 211 | 22.2% |
-| dev-practices | 413 | 43.4% |
-| skills-mcp | 209 | 22.0% |
-| prompting | 142 | 14.9% |
-| research | 263 | 27.7% |
-| industry | 141 | 14.8% |
-| management | 144 | 15.1% |
-| adjacent | 48 | 5.0% |
-| solo-operator | 9 | 0.9% |
-| questionable | 148 | 15.6% |
-| general | 100 | 10.5% |
+| agent-design | 583 | 60.7% |
+| claude-code | 212 | 22.1% |
+| dev-practices | 416 | 43.3% |
+| skills-mcp | 209 | 21.7% |
+| prompting | 143 | 14.9% |
+| research | 264 | 27.5% |
+| industry | 144 | 15.0% |
+| management | 145 | 15.1% |
+| adjacent | 49 | 5.1% |
+| solo-operator | 10 | 1.0% |
+| questionable | 151 | 15.7% |
+| general | 100 | 10.4% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-10-21 | Mia | industry | Mia reports hands-on impressions of Drama TensorFold (github.com/plota... |
+| 2026-10-21 | Caspar | agent-design | Caspar (LangChain) lists the shared primitives of a 'company harness'... |
+| 2026-10-21 | elvis | research | Elvis (DAIR.AI) says to learn to build evals and recommends Hamel Husa... |
+| 2026-10-21 | Anže Pečar | dev-practices | Security alert: private keys for 8 intermediate CA certificates were r... |
+| 2026-10-21 | rody | agent-design | Hype post claiming 'grok bot' plus 'jev' will make more millionaires t... |
+| 2026-10-21 | John Song | adjacent | John Song's engagement-style pitch for a side business: bring local bu... |
+| 2026-10-21 | BasedBiohacker | biohacking | BasedBiohacker's self-reported Q4 nootropic stack, framed with a money... |
+| 2026-10-21 | Mark Ajzenstadt | management | Mark Ajzenstadt shares an 8-step playbook for AI transformation in reg... |
+| 2026-10-21 | Harrison Chase | agent-design | Harrison Chase (LangChain) endorses a layered approach to building age... |
+| 2026-10-21 | Anthony Kroeger | claude-code | Practical Claude Code Projects tip: tell the project's coordinator to... |
 | 2026-10-20 | morluto | skills-mcp | REA (github.com/morluto/rea, rea.tools) is an MIT-licensed MCP server... |
 | 2026-10-15 | elvis | agent-design | elvis highlights the LongHarness paper (arxiv.org/abs/2610.13075): a m... |
 | 2026-10-08 | Kun Chen | dev-practices | Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5... |
@@ -110,21 +126,23 @@
 | 2026-09-26 | rvaniaaa | questionable | Writeup of Nace AI's Drex, a small diffusion decision model trained wi... |
 | 2026-09-26 | elvis | agent-design | elvis on why System One models matter for anyone building custom harne... |
 | 2026-09-26 | Rahul | questionable | Engagement-farmed repackaging of Anthropic's Opus 5.5 prompting guidan... |
-| 2026-09-26 | DAIR.AI | research | Microsoft paper (CASD) arguing that handing a coding agent your full s... |
-| 2026-09-26 | Maxime Rivest | research | One-line argument for finetuning small specialized classifiers rather... |
-| 2026-09-26 | geoff | dev-practices | Geoffrey Huntley's argument that a 'software factory' is not an extern... |
-| 2026-09-26 | darkzodchi | questionable | Hype-packaged endorsement ('beats any paid agent course I've seen') of... |
-| 2026-09-26 | Avi Chawla | research | Researchers open-sourced AnyJev (github.com/nokia-applied-research/Any... |
-| 2026-09-26 | CyrilXBT | questionable | Promotional post funneling to the author's own 'How to Use Opus 5.5 to... |
-| 2026-09-26 | alphaXiv | research | Paper 'JEV-as-a-Judge: Accept When Confident, Escalate When Unsure' (a... |
-| 2026-09-26 | Vox | claude-code | Claude Code tip: once Opus 5.5 is the main model, put an idle Fable qu... |
-| 2026-09-25 | Akshay | agent-design | Mechanism explainer for the Contrastive Language Model (CLM) out of NV... |
-| 2026-09-24 | elvis | agent-design | elvis flags a second entrant in the 'System One model' category behind... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (577)
+### Agent Design (583)
+
+- [Caspar](https://x.com/caspar_br/status/2112644945697976630) — 2026-10-21: Caspar (LangChain) lists the shared primitives of a 'company harness' for internal agents: lives where people work (Slack), knows who is asking and acts on-behalf-of vs. under its own identity, scoped memory, a sandbox with authenticated CLIs, and many scheduled/ambient runs. LangChain packages these as Managed Deep Agents, pitched as the easiest way to build a company harness (vendor claim).
+
+- [elvis](https://x.com/omarsar0/status/2112632133357346889) — 2026-10-21: Elvis (DAIR.AI) says to learn to build evals and recommends Hamel Husain's new post on using decision models for evals (choosing a model and tuning its threshold rather than defaulting to 0.5), plus his own resources on using fast 'System One' decision models like Jev as LLM judges: academy.dair.ai Jev-as-a-Judge resources and arxiv.org/abs/2609.26550.
+
+- [rody](https://x.com/0x_rody/status/2112588144944062840) — 2026-10-21: Hype post claiming 'grok bot' plus 'jev' will make more millionaires than crypto, pointing to the author's article 'How To Wire Jev Into Grok Bot': give the bot a router skill, leave it logging for a week so it stops retrying the same failures on its cloud shell. Engagement-bait packaging ('don't scroll past', 'thank me later'); the underlying idea is a router skill plus decision-logging loop for agents.
+
+- [Mark Ajzenstadt](https://x.com/mardehaym/status/2112514104833475045) — 2026-10-21: Mark Ajzenstadt shares an 8-step playbook for AI transformation in regulated companies, drawn from his team's builds and what goes wrong when steps are skipped. Step 1: name a business sponsor (about an hour a week to decide priorities and acceptance) before choosing a use case, otherwise pilots keep getting funded without anyone deciding if they are useful.
+
+- [Harrison Chase](https://x.com/hwchase17/status/2112489626061738209) — 2026-10-21: Harrison Chase (LangChain) endorses a layered approach to building agents: start with an off-the-shelf harness (he likes deepagents), add context via skills and tools, tweak the harness with middleware if needed, and only then reach for a langgraph workflow. Quotes verrsane's advice to prefer harnesses like Claude Code, Codex, deep agents or Glean over hand-built multi-step if/else workflows.
+
+- [Anthony Kroeger](https://x.com/kr0der/status/2106429105671643587) — 2026-10-21: Practical Claude Code Projects tip: tell the project's coordinator to post updates whenever a thread is blocked or finishes a milestone, and save that instruction to project memory. Kroeger says it made the coordinator genuinely useful; the saved memory line asks for a one-line note in project chat linking the thread. A reply asks how to apply it across all projects.
 
 - [morluto](https://github.com/morluto/rea) — 2026-10-20: REA (github.com/morluto/rea, rea.tools) is an MIT-licensed MCP server + CLI that lets coding agents reverse engineer software without source — native binaries via Hopper/Ghidra/IDA, Electron/JS apps, .NET, APKs, firmware, pcaps, WASM, EVM bytecode and more — returning pseudocode and findings with evidence so the agent can explain a feature and rebuild it. One-line setup (npx rea-agents setup) wires it into Claude Code, Codex, Cursor and Gemini CLI; analysis runs locally. At ~345K stars it's one of the largest agent-tooling repos on GitHub — worth evaluating as a skill/MCP for 'how does app X do this' questions.
 
@@ -1280,7 +1298,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Claude Code (211)
+### Claude Code (212)
+
+- [Anthony Kroeger](https://x.com/kr0der/status/2106429105671643587) — 2026-10-21: Practical Claude Code Projects tip: tell the project's coordinator to post updates whenever a thread is blocked or finishes a milestone, and save that instruction to project memory. Kroeger says it made the coordinator genuinely useful; the saved memory line asks for a one-line note in project chat linking the thread. A reply asks how to apply it across all projects.
 
 - [ClaudeDevs](https://x.com/claudedevs/status/2107925762720326090) — 2026-10-08: ClaudeDevs: computer-use and browser-use toolsets are now built into the Claude Python and TypeScript SDKs — the SDK runs the action loop and dispatches clicks/keystrokes to drivers, replacing the hand-written mapping loop previously required. 326.4K views.
 
@@ -1704,7 +1724,13 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (413)
+### Dev Practices (416)
+
+- [elvis](https://x.com/omarsar0/status/2112632133357346889) — 2026-10-21: Elvis (DAIR.AI) says to learn to build evals and recommends Hamel Husain's new post on using decision models for evals (choosing a model and tuning its threshold rather than defaulting to 0.5), plus his own resources on using fast 'System One' decision models like Jev as LLM judges: academy.dair.ai Jev-as-a-Judge resources and arxiv.org/abs/2609.26550.
+
+- [Anže Pečar](https://x.com/anze3db/status/2112616425693266153) — 2026-10-21: Security alert: private keys for 8 intermediate CA certificates were reportedly compromised. Pečar urges upgrading certifi everywhere (uv self update; uv lock --upgrade-package certifi) and lists fixed versions: Go 1.27.3/1.26.10, rustls-webpki 0.103.16, webpki-roots 1.0.10, Electron 44.9.1/43.8.1/42.11.16, NSS 3.131.1, Firefox 158.0.1, Ubuntu ca-certificates 20260816, Homebrew 2026-09-25_1; Chrome/Apple/Windows block automatically; Debian, Node.js, Composer and macOS curl still need manual fixes. Source thread: x.com/astuyve/status/2112559796914167931. Jeremy flagged it 'for AJ'.
+
+- [Harrison Chase](https://x.com/hwchase17/status/2112489626061738209) — 2026-10-21: Harrison Chase (LangChain) endorses a layered approach to building agents: start with an off-the-shelf harness (he likes deepagents), add context via skills and tools, tweak the harness with middleware if needed, and only then reach for a langgraph workflow. Quotes verrsane's advice to prefer harnesses like Claude Code, Codex, deep agents or Glean over hand-built multi-step if/else workflows.
 
 - [morluto](https://github.com/morluto/rea) — 2026-10-20: REA (github.com/morluto/rea, rea.tools) is an MIT-licensed MCP server + CLI that lets coding agents reverse engineer software without source — native binaries via Hopper/Ghidra/IDA, Electron/JS apps, .NET, APKs, firmware, pcaps, WASM, EVM bytecode and more — returning pseudocode and findings with evidence so the agent can explain a feature and rebuild it. One-line setup (npx rea-agents setup) wires it into Claude Code, Codex, Cursor and Gemini CLI; analysis runs locally. At ~345K stars it's one of the largest agent-tooling repos on GitHub — worth evaluating as a skill/MCP for 'how does app X do this' questions.
 
@@ -2952,7 +2978,9 @@
 
 - [Mervin Praison](https://x.com/mervinpraison/status/1881788246684013011) — 2025-01-22: Shows a 100% local RAG AI agent with reasoning: DeepSeek via Ollama for the LLM, PraisonAI to build the agent in a few lines, Nomic embeddings, and a Streamlit UI—code included in the thread.
 
-### Prompting (142)
+### Prompting (143)
+
+- [Anthony Kroeger](https://x.com/kr0der/status/2106429105671643587) — 2026-10-21: Practical Claude Code Projects tip: tell the project's coordinator to post updates whenever a thread is blocked or finishes a milestone, and save that instruction to project memory. Kroeger says it made the coordinator genuinely useful; the saved memory line asks for a one-line note in project chat linking the thread. A reply asks how to apply it across all projects.
 
 - [Boris Cherny](https://x.com/bcherny/status/2107565388250874193) — 2026-10-08: Boris Cherny (creator of Claude Code) on how he actually prompts Claude: talk to it like a coworker — no heavy scaffolding. The prompt-engineering era mattered in Sonnet 3.5 days; now what matters is communicating (1) what you want done, (2) how much effort to spend, (3) how the model should verify it did the right thing. 1.2M views.
 
@@ -3238,7 +3266,9 @@
 
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
 
-### Research (263)
+### Research (264)
+
+- [elvis](https://x.com/omarsar0/status/2112632133357346889) — 2026-10-21: Elvis (DAIR.AI) says to learn to build evals and recommends Hamel Husain's new post on using decision models for evals (choosing a model and tuning its threshold rather than defaulting to 0.5), plus his own resources on using fast 'System One' decision models like Jev as LLM judges: academy.dair.ai Jev-as-a-Judge resources and arxiv.org/abs/2609.26550.
 
 - [elvis](https://x.com/omarsar0/status/2110083302728323346) — 2026-10-15: elvis highlights the LongHarness paper (arxiv.org/abs/2610.13075): a model-agnostic agent harness for 100M+ token corpora that takes GLM-5.3-Flash from 4.4% to 61.1% exact match on OfficeQA Pro V2 with the same model, and beats Claude Code by 12.1 pts (V1) and Codex by 18.9 pts (V2). The mechanism: instead of letting evidence and conclusions pile up in one chat history, LongHarness keeps both as explicit state — open conclusions drive what to retrieve next, and each new piece of evidence confirms or revises the conclusion that requested it. Strong quantitative evidence for the 'harness-bound, not model-bound' thesis already running through the corpus.
 
@@ -3766,7 +3796,13 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.
 
-### Industry (141)
+### Industry (144)
+
+- [Mia](https://x.com/miaai_lab/status/2112678922412241245) — 2026-10-21: Mia reports hands-on impressions of Drama TensorFold (github.com/plotarmordev/drama-tensorfold), an open voice-cloning/speech tool that runs locally on a GPU (about 38.2 GB memory), supports multiple languages in one cloned voice. Quotes the creator (netrunner/plotarmordev) who notes a quantized version is in the works. Enthusiastic first-person review, so take the 'blown away' framing as unverified.
+
+- [Caspar](https://x.com/caspar_br/status/2112644945697976630) — 2026-10-21: Caspar (LangChain) lists the shared primitives of a 'company harness' for internal agents: lives where people work (Slack), knows who is asking and acts on-behalf-of vs. under its own identity, scoped memory, a sandbox with authenticated CLIs, and many scheduled/ambient runs. LangChain packages these as Managed Deep Agents, pitched as the easiest way to build a company harness (vendor claim).
+
+- [Mark Ajzenstadt](https://x.com/mardehaym/status/2112514104833475045) — 2026-10-21: Mark Ajzenstadt shares an 8-step playbook for AI transformation in regulated companies, drawn from his team's builds and what goes wrong when steps are skipped. Step 1: name a business sponsor (about an hour a week to decide priorities and acceptance) before choosing a use case, otherwise pilots keep getting funded without anyone deciding if they are useful.
 
 - [Mark Ajzenstadt](https://x.com/mardehaym/status/2107902643490222168) — 2026-10-08: Mark Ajzenstadt (decade running an embedded-engineering firm) pushes back on the FDE hype: cites a Gartner prediction that 70% of enterprises will abandon vendor-FDE-built agentic AI by 2028 over cost and inability to evolve systems independently. His standard: the engagement succeeds only if the client's own team gains capability while decisions are being made — 'what will my team be able to do without you six months from now?' A useful counter-example to the pro-FDE material in the collection.
 
@@ -4050,7 +4086,9 @@
 
 - [Santiago](https://x.com/svpino/status/1881336934418755862) — 2025-01-21: Walks through GroundX, an open-source, self-hostable/air-gapped enterprise RAG system. Two services: Ingest (a pretrained vision model that 'understands' documents instead of feeding raw docs to the LLM) and Search (text+vector search with a fine-tuned re-ranker). Santiago's thesis: most teams need better ingestion, not better retrieval; includes a video demo and the free X-Ray inspection tool.
 
-### Management (144)
+### Management (145)
+
+- [Mark Ajzenstadt](https://x.com/mardehaym/status/2112514104833475045) — 2026-10-21: Mark Ajzenstadt shares an 8-step playbook for AI transformation in regulated companies, drawn from his team's builds and what goes wrong when steps are skipped. Step 1: name a business sponsor (about an hour a week to decide priorities and acceptance) before choosing a use case, otherwise pilots keep getting funded without anyone deciding if they are useful.
 
 - [Mark Ajzenstadt](https://x.com/mardehaym/status/2107902643490222168) — 2026-10-08: Mark Ajzenstadt (decade running an embedded-engineering firm) pushes back on the FDE hype: cites a Gartner prediction that 70% of enterprises will abandon vendor-FDE-built agentic AI by 2028 over cost and inability to evolve systems independently. His standard: the engagement succeeds only if the client's own team gains capability while decisions are being made — 'what will my team be able to do without you six months from now?' A useful counter-example to the pro-FDE material in the collection.
 
@@ -4340,7 +4378,9 @@
 
 - [Sarah Cone](https://x.com/sarah_cone/status/1847322215907545129) — 2024-10-19: Points to a superengineer.net blog post as a good summary of Elon Musk's 5-step design/engineering method (DFX).
 
-### Adjacent (48)
+### Adjacent (49)
+
+- [John Song](https://x.com/jsongonline/status/2112577901350502740) — 2026-10-21: John Song's engagement-style pitch for a side business: bring local business owners (roofers, medspas) 0% business credit cards and collect large fees, by going to a bank Business Relationship Manager via LinkedIn instead of the public application to get limits raised to $50-70K. Quotes his earlier post about opening your state's Secretary of State site (LLC formation). Hype-packaged with big income claims; useful mainly as an example of the solo-operator/sales-funnel genre, and the credit-stacking tactic deserves skepticism and legal care.
 
 - [qwinsi](https://x.com/qwinsi0x/status/2103551860590116904) — 2026-09-26: Engagement-farmed pitch for an AI backtesting product (join.horizon.trade affiliate link), built around Liang Wenfeng and the DeepSeek-affiliated hedge fund. The usable idea underneath the return claims: the quant research loop — form an idea, test it on history, kill it if it fails, repeat — used to cost millions and now costs near zero, and the author reproduced the Moskowitz/Ooi/Pedersen Time Series Momentum paper on six years of data in ten minutes of backtesting. Treat the performance figures (+56.6%/yr, +1,537% on Bitcoin) as marketing claims, not evidence.
 
@@ -4438,7 +4478,9 @@
 
 - [keshav](https://x.com/kshvbgde/status/1974835291358969895) — 2025-10-07: Post (likely video/thread) on Steve Jobs's principles for designing insanely great products.
 
-### Solo Operator (9)
+### Solo Operator (10)
+
+- [John Song](https://x.com/jsongonline/status/2112577901350502740) — 2026-10-21: John Song's engagement-style pitch for a side business: bring local business owners (roofers, medspas) 0% business credit cards and collect large fees, by going to a bank Business Relationship Manager via LinkedIn instead of the public application to get limits raised to $50-70K. Quotes his earlier post about opening your state's Secretary of State site (LLC formation). Hype-packaged with big income claims; useful mainly as an example of the solo-operator/sales-funnel genre, and the credit-stacking tactic deserves skepticism and legal care.
 
 - [CyrilXBT](https://x.com/cyrilxbt/status/2103371457082671427) — 2026-09-26: Promotional post funneling to the author's own 'How to Use Opus 5.5 to Become an SEO Expert (Full Course)' article. The claim worth noting under the marketing: pairing Jev to audit a site with Opus 5.5 to identify technical issues, content gaps and fixes lets one person cover work that used to need an SEO department — an instance of the broader decision-model-plus-frontier-model split being applied outside engineering.
 
@@ -4458,7 +4500,13 @@
 
 - [zostaff](https://x.com/zostaff/status/2033930728044372275) — 2026-03-18: zostaff's clickbait-titled ('How to Quit Your Job in One Day') walkthrough of an autonomous Polymarket trading system built from three agents: Claude (strategist — probability/recommendation/confidence), Codex (engineer — writes and debugs bot code), and OpenClaw (orchestrator — persistent memory, cron, modular skills, Telegram interface that executes trades and logs everything).
 
-### Questionable (148)
+### Questionable (151)
+
+- [rody](https://x.com/0x_rody/status/2112588144944062840) — 2026-10-21: Hype post claiming 'grok bot' plus 'jev' will make more millionaires than crypto, pointing to the author's article 'How To Wire Jev Into Grok Bot': give the bot a router skill, leave it logging for a week so it stops retrying the same failures on its cloud shell. Engagement-bait packaging ('don't scroll past', 'thank me later'); the underlying idea is a router skill plus decision-logging loop for agents.
+
+- [John Song](https://x.com/jsongonline/status/2112577901350502740) — 2026-10-21: John Song's engagement-style pitch for a side business: bring local business owners (roofers, medspas) 0% business credit cards and collect large fees, by going to a bank Business Relationship Manager via LinkedIn instead of the public application to get limits raised to $50-70K. Quotes his earlier post about opening your state's Secretary of State site (LLC formation). Hype-packaged with big income claims; useful mainly as an example of the solo-operator/sales-funnel genre, and the credit-stacking tactic deserves skepticism and legal care.
+
+- [BasedBiohacker](https://x.com/basedbiohacker/status/2112530774998315342) — 2026-10-21: BasedBiohacker's self-reported Q4 nootropic stack, framed with a money-making hook: a 30-day oral BPC-157 gut-brain reset, then a daily stack of pinealon, modafinil, bromantane, L-tyrosine and citicoline, with optional fasoracetam. These are the author's claims (mechanisms asserted without trial evidence), several compounds are prescription-only or legally grey, so treat as a forum-style reference list rather than guidance.
 
 - [AI Edge](https://x.com/aiedge_/status/2107835983735787568) — 2026-10-08: AI Edge's hype-packaged but concretely useful setup guide for pairing Opus 5.5 with Jev in Claude Code: Jev scores/sorts/filters so Opus only sees what needs real reasoning, with the TypeSafe skill pack (claude plugin install typesafe@typesafe-ai), confidence-based routing (high=auto, medium=Opus, low=human), atomic questions, and all thresholds in one reviewable config. Includes full prompts for inbox-triage, research-filter and content-grader workflows. Newsletter-funnel packaging ('10x Your Output'), hence the questionable tag — the workflow patterns themselves are real.
 
@@ -4964,6 +5012,36 @@
 ## Full Chronological List
 
 ### Oct 2026
+
+- **2026-10-21** | [Mia](https://x.com/miaai_lab/status/2112678922412241245) | industry
+  Mia reports hands-on impressions of Drama TensorFold (github.com/plotarmordev/drama-tensorfold), an open voice-cloning/speech tool that runs locally on a GPU (about 38.2 GB memory), supports multiple languages in one cloned voice. Quotes the creator (netrunner/plotarmordev) who notes a quantized version is in the works. Enthusiastic first-person review, so take the 'blown away' framing as unverified.
+
+- **2026-10-21** | [Caspar](https://x.com/caspar_br/status/2112644945697976630) | agent-design, industry
+  Caspar (LangChain) lists the shared primitives of a 'company harness' for internal agents: lives where people work (Slack), knows who is asking and acts on-behalf-of vs. under its own identity, scoped memory, a sandbox with authenticated CLIs, and many scheduled/ambient runs. LangChain packages these as Managed Deep Agents, pitched as the easiest way to build a company harness (vendor claim).
+
+- **2026-10-21** | [elvis](https://x.com/omarsar0/status/2112632133357346889) | research, dev-practices, agent-design
+  Elvis (DAIR.AI) says to learn to build evals and recommends Hamel Husain's new post on using decision models for evals (choosing a model and tuning its threshold rather than defaulting to 0.5), plus his own resources on using fast 'System One' decision models like Jev as LLM judges: academy.dair.ai Jev-as-a-Judge resources and arxiv.org/abs/2609.26550.
+
+- **2026-10-21** | [Anže Pečar](https://x.com/anze3db/status/2112616425693266153) | dev-practices
+  Security alert: private keys for 8 intermediate CA certificates were reportedly compromised. Pečar urges upgrading certifi everywhere (uv self update; uv lock --upgrade-package certifi) and lists fixed versions: Go 1.27.3/1.26.10, rustls-webpki 0.103.16, webpki-roots 1.0.10, Electron 44.9.1/43.8.1/42.11.16, NSS 3.131.1, Firefox 158.0.1, Ubuntu ca-certificates 20260816, Homebrew 2026-09-25_1; Chrome/Apple/Windows block automatically; Debian, Node.js, Composer and macOS curl still need manual fixes. Source thread: x.com/astuyve/status/2112559796914167931. Jeremy flagged it 'for AJ'.
+
+- **2026-10-21** | [rody](https://x.com/0x_rody/status/2112588144944062840) | agent-design, questionable
+  Hype post claiming 'grok bot' plus 'jev' will make more millionaires than crypto, pointing to the author's article 'How To Wire Jev Into Grok Bot': give the bot a router skill, leave it logging for a week so it stops retrying the same failures on its cloud shell. Engagement-bait packaging ('don't scroll past', 'thank me later'); the underlying idea is a router skill plus decision-logging loop for agents.
+
+- **2026-10-21** | [John Song](https://x.com/jsongonline/status/2112577901350502740) | adjacent, solo-operator, questionable
+  John Song's engagement-style pitch for a side business: bring local business owners (roofers, medspas) 0% business credit cards and collect large fees, by going to a bank Business Relationship Manager via LinkedIn instead of the public application to get limits raised to $50-70K. Quotes his earlier post about opening your state's Secretary of State site (LLC formation). Hype-packaged with big income claims; useful mainly as an example of the solo-operator/sales-funnel genre, and the credit-stacking tactic deserves skepticism and legal care.
+
+- **2026-10-21** | [BasedBiohacker](https://x.com/basedbiohacker/status/2112530774998315342) | biohacking, questionable
+  BasedBiohacker's self-reported Q4 nootropic stack, framed with a money-making hook: a 30-day oral BPC-157 gut-brain reset, then a daily stack of pinealon, modafinil, bromantane, L-tyrosine and citicoline, with optional fasoracetam. These are the author's claims (mechanisms asserted without trial evidence), several compounds are prescription-only or legally grey, so treat as a forum-style reference list rather than guidance.
+
+- **2026-10-21** | [Mark Ajzenstadt](https://x.com/mardehaym/status/2112514104833475045) | management, industry, agent-design
+  Mark Ajzenstadt shares an 8-step playbook for AI transformation in regulated companies, drawn from his team's builds and what goes wrong when steps are skipped. Step 1: name a business sponsor (about an hour a week to decide priorities and acceptance) before choosing a use case, otherwise pilots keep getting funded without anyone deciding if they are useful.
+
+- **2026-10-21** | [Harrison Chase](https://x.com/hwchase17/status/2112489626061738209) | agent-design, dev-practices
+  Harrison Chase (LangChain) endorses a layered approach to building agents: start with an off-the-shelf harness (he likes deepagents), add context via skills and tools, tweak the harness with middleware if needed, and only then reach for a langgraph workflow. Quotes verrsane's advice to prefer harnesses like Claude Code, Codex, deep agents or Glean over hand-built multi-step if/else workflows.
+
+- **2026-10-21** | [Anthony Kroeger](https://x.com/kr0der/status/2106429105671643587) | claude-code, agent-design, prompting
+  Practical Claude Code Projects tip: tell the project's coordinator to post updates whenever a thread is blocked or finishes a milestone, and save that instruction to project memory. Kroeger says it made the coordinator genuinely useful; the saved memory line asks for a one-line note in project chat linking the thread. A reply asks how to apply it across all projects.
 
 - **2026-10-20** | [morluto](https://github.com/morluto/rea) | skills-mcp, agent-design, dev-practices
   REA (github.com/morluto/rea, rea.tools) is an MIT-licensed MCP server + CLI that lets coding agents reverse engineer software without source — native binaries via Hopper/Ghidra/IDA, Electron/JS apps, .NET, APKs, firmware, pcaps, WASM, EVM bytecode and more — returning pseudocode and findings with evidence so the agent can explain a feature and rebuild it. One-line setup (npx rea-agents setup) wires it into Claude Code, Codex, Cursor and Gemini CLI; analysis runs locally. At ~345K stars it's one of the largest agent-tooling repos on GitHub — worth evaluating as a skill/MCP for 'how does app X do this' questions.

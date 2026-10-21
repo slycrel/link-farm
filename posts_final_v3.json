@@ -1,5 +1,253 @@
 [
   {
+    "date": "2026-10-21",
+    "author": "Mia",
+    "handle": "@miaai_lab",
+    "subject": "Post by Mia on X",
+    "url": "https://x.com/miaai_lab/status/2112678922412241245",
+    "summary": "Mia reports hands-on impressions of Drama TensorFold (github.com/plotarmordev/drama-tensorfold), an open voice-cloning/speech tool that runs locally on a GPU (about 38.2 GB memory), supports multiple languages in one cloned voice. Quotes the creator (netrunner/plotarmordev) who notes a quantized version is in the works. Enthusiastic first-person review, so take the 'blown away' framing as unverified.",
+    "topics": [
+      "industry"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "OK I tried Drama TensorFold myself... Extremely powerful. You can create your own voice and generate speeches in seconds. Takes around 38.2 GB of memory on the GPU. Also it's multilanguage, on the same voice.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-21",
+    "author": "Caspar",
+    "handle": "@caspar_br",
+    "subject": "Post by Caspar on X",
+    "url": "https://x.com/caspar_br/status/2112644945697976630",
+    "summary": "Caspar (LangChain) lists the shared primitives of a 'company harness' for internal agents: lives where people work (Slack), knows who is asking and acts on-behalf-of vs. under its own identity, scoped memory, a sandbox with authenticated CLIs, and many scheduled/ambient runs. LangChain packages these as Managed Deep Agents, pitched as the easiest way to build a company harness (vendor claim).",
+    "topics": [
+      "agent-design",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "How do you build a company harness? We've built internal agents at LangChain across marketing, sales, and engineering. Core primitives: lives where people work (Slack); knows who's asking and acts OBO; memory scoped globally and/or per user; runs code in a sandbox with authenticated CLIs; large % of runs are scheduled (ambient agents). We built Managed Deep Agents.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-21",
+    "author": "elvis",
+    "handle": "@omarsar0",
+    "subject": "Post by elvis on X",
+    "url": "https://x.com/omarsar0/status/2112632133357346889",
+    "summary": "Elvis (DAIR.AI) says to learn to build evals and recommends Hamel Husain's new post on using decision models for evals (choosing a model and tuning its threshold rather than defaulting to 0.5), plus his own resources on using fast 'System One' decision models like Jev as LLM judges: academy.dair.ai Jev-as-a-Judge resources and arxiv.org/abs/2609.26550.",
+    "topics": [
+      "research",
+      "dev-practices",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Learn to build evals, folks. Highly recommended reading on using decision models for evals. System One models like Jev are a great fit for LLM Judges. Resources: academy.dair.ai Jev-as-a-Judge for Agent Evaluations; paper arxiv.org/abs/2609.26550. Quote: Hamel Husain - How To Use Decision Models For Evals.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-21",
+    "author": "Anže Pečar",
+    "handle": "@anze3db",
+    "subject": "Post by Anže Pečar on X (for AJ)",
+    "url": "https://x.com/anze3db/status/2112616425693266153",
+    "summary": "Security alert: private keys for 8 intermediate CA certificates were reportedly compromised. Pečar urges upgrading certifi everywhere (uv self update; uv lock --upgrade-package certifi) and lists fixed versions: Go 1.27.3/1.26.10, rustls-webpki 0.103.16, webpki-roots 1.0.10, Electron 44.9.1/43.8.1/42.11.16, NSS 3.131.1, Firefox 158.0.1, Ubuntu ca-certificates 20260816, Homebrew 2026-09-25_1; Chrome/Apple/Windows block automatically; Debian, Node.js, Composer and macOS curl still need manual fixes. Source thread: x.com/astuyve/status/2112559796914167931. Jeremy flagged it 'for AJ'.",
+    "topics": [
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "flag: for AJ",
+    "enriched": true,
+    "content": "Python friends, upgrade every certifi package across all your projects and machines! Private keys from 8 intermediate CA certs have been compromised. Other upgrades: Go 1.27.3 or 1.26.10, rustls-webpki 0.103.16, webpki-roots 1.0.10, Electron, NSS 3.131.1, Firefox 158.0.1, Ubuntu ca-certificates, Homebrew ca-certificates. Still waiting for a fix: Debian ca-certificates, Node.js, Composer ca-bundle, macOS curl.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-21",
+    "author": "rody",
+    "handle": "@0x_rody",
+    "subject": "Post by rody on X",
+    "url": "https://x.com/0x_rody/status/2112588144944062840",
+    "summary": "Hype post claiming 'grok bot' plus 'jev' will make more millionaires than crypto, pointing to the author's article 'How To Wire Jev Into Grok Bot': give the bot a router skill, leave it logging for a week so it stops retrying the same failures on its cloud shell. Engagement-bait packaging ('don't scroll past', 'thank me later'); the underlying idea is a router skill plus decision-logging loop for agents.",
+    "topics": [
+      "agent-design",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "145.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "you can call me crazy but.. grok bot + jev is going to create more millionaires in 2026 than crypto ever did. idea -> grokbot -> jev decisions -> grokbot execution. Article: How To Wire Jev Into Grok Bot: add one router skill, leave it logging for a week.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-21",
+    "author": "John Song",
+    "handle": "@jsongonline",
+    "subject": "Post by John Song on X",
+    "url": "https://x.com/jsongonline/status/2112577901350502740",
+    "summary": "John Song's engagement-style pitch for a side business: bring local business owners (roofers, medspas) 0% business credit cards and collect large fees, by going to a bank Business Relationship Manager via LinkedIn instead of the public application to get limits raised to $50-70K. Quotes his earlier post about opening your state's Secretary of State site (LLC formation). Hype-packaged with big income claims; useful mainly as an example of the solo-operator/sales-funnel genre, and the credit-stacking tactic deserves skepticism and legal care.",
+    "topics": [
+      "adjacent",
+      "solo-operator",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "This is hands down the easiest way to make $20K-$30K/mo in America right now... go on LinkedIn and type Business Relationship Manager + Chase, Truist, Citizens, or BoA; send the file directly to an inside banker; the banker manually overrides the limit to $50,000-$70,000 at 0% interest; stack 2 banks in one morning; collect a $8,000-$12,000 fee for 1 hour of paperwork.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-21",
+    "author": "BasedBiohacker",
+    "handle": "@basedbiohacker",
+    "subject": "Post by BasedBiohacker on X",
+    "url": "https://x.com/basedbiohacker/status/2112530774998315342",
+    "summary": "BasedBiohacker's self-reported Q4 nootropic stack, framed with a money-making hook: a 30-day oral BPC-157 gut-brain reset, then a daily stack of pinealon, modafinil, bromantane, L-tyrosine and citicoline, with optional fasoracetam. These are the author's claims (mechanisms asserted without trial evidence), several compounds are prescription-only or legally grey, so treat as a forum-style reference list rather than guidance.",
+    "topics": [
+      "biohacking",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "if i wanted to make a lot of money this Q4 and starting from scratch with nootropics, this is the stack: step 1 oral BPC-157 for 30 days; step 2 daily stack: pinealon, modafinil, bromantane, l-tyrosine, citicoline, optional fasoracetam.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-21",
+    "author": "Mark Ajzenstadt",
+    "handle": "@mardehaym",
+    "subject": "Post by Mark Ajzenstadt on X",
+    "url": "https://x.com/mardehaym/status/2112514104833475045",
+    "summary": "Mark Ajzenstadt shares an 8-step playbook for AI transformation in regulated companies, drawn from his team's builds and what goes wrong when steps are skipped. Step 1: name a business sponsor (about an hour a week to decide priorities and acceptance) before choosing a use case, otherwise pilots keep getting funded without anyone deciding if they are useful.",
+    "topics": [
+      "management",
+      "industry",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "15.5K",
+    "notes": "",
+    "enriched": true,
+    "content": "There's a lot of bad advice on AI transformation from people who've never made this work in a regulated company. Here are the 8 steps behind our builds. 1. Name a sponsor before you name a use case. One person owns priorities and acceptance, with about an hour a week to make decisions.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-21",
+    "author": "Harrison Chase",
+    "handle": "@hwchase17",
+    "subject": "Post by Harrison Chase on X",
+    "url": "https://x.com/hwchase17/status/2112489626061738209",
+    "summary": "Harrison Chase (LangChain) endorses a layered approach to building agents: start with an off-the-shelf harness (he likes deepagents), add context via skills and tools, tweak the harness with middleware if needed, and only then reach for a langgraph workflow. Quotes verrsane's advice to prefer harnesses like Claude Code, Codex, deep agents or Glean over hand-built multi-step if/else workflows.",
+    "topics": [
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "20.4K",
+    "notes": "",
+    "enriched": true,
+    "content": "Would agree with this. Start with a harness (I like deepagents); add context (skills, tools); then if needed modify harness slightly (middleware in deepagents); then if needed make workflow with langgraph. Quote: verrsane - always go the harness route first, do not build a complicated 20 step workflow using if else statements or langgraph; use a harness as your agent eg. Claude code, codex, deep agents, glean.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-21",
+    "author": "Anthony Kroeger",
+    "handle": "@kr0der",
+    "subject": "Post by Anthony Kroeger on X",
+    "url": "https://x.com/kr0der/status/2106429105671643587",
+    "summary": "Practical Claude Code Projects tip: tell the project's coordinator to post updates whenever a thread is blocked or finishes a milestone, and save that instruction to project memory. Kroeger says it made the coordinator genuinely useful; the saved memory line asks for a one-line note in project chat linking the thread. A reply asks how to apply it across all projects.",
+    "topics": [
+      "claude-code",
+      "agent-design",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "73K",
+    "notes": "",
+    "enriched": true,
+    "content": "if you use Claude Code projects, tell your coordinator something like: i want you to send me more updates on what's going on with the threads including when they're blocked and when they finish something, save this to the project memory. Coordinator memory: post a one-line note in the project chat whenever a thread is blocked on him or finishes a milestone, linking the thread.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-10-20",
     "author": "morluto",
     "handle": "",
