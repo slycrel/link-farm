@@ -248,59 +248,6 @@
     "enrichment_attempts": 1
   },
   {
-    "date": "2026-10-21",
-    "author": "Andrej Karpathy",
-    "handle": "@karpathy",
-    "subject": "Post by Andrej Karpathy on X",
-    "url": "https://x.com/karpathy/status/2036487306585268612",
-    "summary": "Karpathy on the litellm PyPI supply-chain attack: a plain `pip install litellm` could exfiltrate SSH keys, cloud credentials, Kubernetes configs, env-var API keys, shell history, wallets and CI/CD secrets; litellm has ~97M downloads/month and the compromise spreads transitively (e.g. dspy). The poisoned 1.82.8 was live under an hour and was caught only because it crashed a machine via an MCP plugin in Cursor that pulled litellm in transitively. His takeaway is that the dependency-tree risk is scary enough to re-evaluate dependencies, and he increasingly prefers having LLMs 'yoink' simple functionality instead of taking a dependency. Quotes Daniel Hnyk's original compromise alert (66.6M views). Companion to his DeepWiki 'rip out the functionality' post (x.com/karpathy/status/2021633574089416993).",
-    "topics": [
-      "dev-practices",
-      "skills-mcp",
-      "industry"
-    ],
-    "audience": [
-      "me",
-      "dev-team"
-    ],
-    "priority": "now",
-    "sourceType": "tweet",
-    "views": "",
-    "notes": "",
-    "enriched": true,
-    "content": "Software horror: litellm PyPI supply chain attack. Simple pip install litellm was enough to exfiltrate SSH keys, AWS/GCP/Azure creds, Kubernetes configs, git credentials, env vars (all your API keys), shell history, crypto wallets, SSL private keys, CI/CD secrets, database passwords. LiteLLM itself has 97 million downloads per month, and the contagion spreads to any project that depends on litellm, e.g. dspy (litellm>=1.64.0). Afaict the poisoned version was up for less than ~1 hour. The attack had a bug which led to its discovery - Callum McMahon was using an MCP plugin inside Cursor that pulled in litellm as a transitive dependency; when litellm 1.82.8 installed, their machine ran out of RAM and crashed. So if the attacker didn't vibe code this attack it could have been undetected for many days or weeks.\n\nSupply chain attacks like this are basically the scariest thing imaginable in modern software. Every time you install any dependency you could be pulling in a poisoned package anywhere deep inside its dependency tree. The credentials stolen in each attack can then be used to take over more accounts and compromise more packages. Classical software engineering would have you believe dependencies are good (building pyramids from bricks), but imo this has to be re-evaluated, and it's why I've been growingly averse to them, preferring to use LLMs to 'yoink' functionality when it's simple enough and possible.\n\nLiteLLM HAS BEEN COMPROMISED, DO NOT UPDATE. We just discovered that LiteLLM pypi release 1.82.8 has been compromised, it contains litellm_init.pth with base64 encoded instructions to send all the credentials it can find to remote server + self-replicate.",
-    "enrichment_status": "ok",
-    "enrichment_version": 1,
-    "enrichment_attempts": 2
-  },
-  {
-    "date": "2026-10-21",
-    "author": "Andrej Karpathy",
-    "handle": "@karpathy",
-    "subject": "Post by Andrej Karpathy on X",
-    "url": "https://x.com/karpathy/status/2021633574089416993",
-    "summary": "Karpathy on DeepWiki and the growing malleability of software: pointing an agent at DeepWiki (via MCP) plus the GitHub CLI let Claude 'rip out' torchao's fp8 training into a self-contained 150-line nanochat/fp8.py in ~5 minutes, with equivalence tests, 3% faster, removing the dependency. He argues for writing 'bacterial code' (small, self-contained, dependency-free) and asks whether projects really need 100MB of dependencies. Pairs with his litellm supply-chain post (x.com/karpathy/status/2036487306585268612), which is the security side of the same dependency-skepticism argument.",
-    "topics": [
-      "claude-code",
-      "skills-mcp",
-      "dev-practices",
-      "agent-design"
-    ],
-    "audience": [
-      "me",
-      "dev-team"
-    ],
-    "priority": "now",
-    "sourceType": "tweet",
-    "views": "1.1M",
-    "notes": "",
-    "enriched": true,
-    "content": "On DeepWiki and increasing malleability of software. DeepWiki auto-builds wiki pages for github repos with quick Q&A; swap 'github' for 'deepwiki' in any repo URL (deepwiki.com/karpathy/nanochat). Asking questions of the code beats spotty library docs because the code is the source of truth and LLMs increasingly understand it.\n\nMore powerful still: give your agent DeepWiki via MCP. Prompt used: 'Use DeepWiki MCP and Github CLI to look at how torchao implements fp8 training. Is it possible to rip out the functionality? Implement nanochat/fp8.py that has identical API but is fully self-contained.' Claude went off for 5 minutes and returned 150 lines of clean code that worked out of the box, with tests proving equivalent results, letting him drop torchao as a dependency; the simple version runs 3% faster, and the agent surfaced numerics, dtype, autocast, meta device and torch compile details docs would never capture. Now the default fp8 training implementation for nanochat (github.com/karpathy/nanochat commit e569b59).\n\nTLDR: DeepWiki MCP + GitHub CLI is powerful to rip out specific functionality from any github repo for your exact use case. Maybe don't take a dependency on a giant monolithic library; point your agent at it and rip out the part you need. This could inform how we write software: more 'bacterial code' (small, modular, self-contained, dependency-free, stateless, easy to rip out; x.com/karpathy/status/1941616674094170287). Obvious downsides and risks, but a fundamentally new option. 'Libraries are over, LLMs are the new compiler :). And does your project really need its 100MB of dependencies?'\n\nHow to build a thriving open source community by writing code like bacteria do (Jul 5, 2025): bacterial code is small, modular, self-contained, easily copy-pasteable.",
-    "enrichment_status": "ok",
-    "enrichment_version": 1,
-    "enrichment_attempts": 1
-  },
-  {
     "date": "2026-10-20",
     "author": "morluto",
     "handle": "",
@@ -17941,6 +17888,32 @@
   },
   {
     "date": "2026-03-24",
+    "author": "Andrej Karpathy",
+    "handle": "@karpathy",
+    "subject": "Post by Andrej Karpathy on X",
+    "url": "https://x.com/karpathy/status/2036487306585268612",
+    "summary": "Karpathy on the litellm PyPI supply-chain attack: a plain `pip install litellm` could exfiltrate SSH keys, cloud credentials, Kubernetes configs, env-var API keys, shell history, wallets and CI/CD secrets; litellm has ~97M downloads/month and the compromise spreads transitively (e.g. dspy). The poisoned 1.82.8 was live under an hour and was caught only because it crashed a machine via an MCP plugin in Cursor that pulled litellm in transitively. His takeaway is that the dependency-tree risk is scary enough to re-evaluate dependencies, and he increasingly prefers having LLMs 'yoink' simple functionality instead of taking a dependency. Quotes Daniel Hnyk's original compromise alert (66.6M views). Companion to his DeepWiki 'rip out the functionality' post (x.com/karpathy/status/2021633574089416993).",
+    "topics": [
+      "dev-practices",
+      "skills-mcp",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Software horror: litellm PyPI supply chain attack. Simple pip install litellm was enough to exfiltrate SSH keys, AWS/GCP/Azure creds, Kubernetes configs, git credentials, env vars (all your API keys), shell history, crypto wallets, SSL private keys, CI/CD secrets, database passwords. LiteLLM itself has 97 million downloads per month, and the contagion spreads to any project that depends on litellm, e.g. dspy (litellm>=1.64.0). Afaict the poisoned version was up for less than ~1 hour. The attack had a bug which led to its discovery - Callum McMahon was using an MCP plugin inside Cursor that pulled in litellm as a transitive dependency; when litellm 1.82.8 installed, their machine ran out of RAM and crashed. So if the attacker didn't vibe code this attack it could have been undetected for many days or weeks.\n\nSupply chain attacks like this are basically the scariest thing imaginable in modern software. Every time you install any dependency you could be pulling in a poisoned package anywhere deep inside its dependency tree. The credentials stolen in each attack can then be used to take over more accounts and compromise more packages. Classical software engineering would have you believe dependencies are good (building pyramids from bricks), but imo this has to be re-evaluated, and it's why I've been growingly averse to them, preferring to use LLMs to 'yoink' functionality when it's simple enough and possible.\n\nLiteLLM HAS BEEN COMPROMISED, DO NOT UPDATE. We just discovered that LiteLLM pypi release 1.82.8 has been compromised, it contains litellm_init.pth with base64 encoded instructions to send all the credentials it can find to remote server + self-replicate.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 2
+  },
+  {
+    "date": "2026-03-24",
     "author": "Factory",
     "handle": "@factoryai",
     "subject": "Post by Factory on X",
@@ -20623,6 +20596,33 @@
     "notes": "WebMCP in Chrome — huge deal. Browser-native MCP support for web apps.",
     "enriched": true,
     "content": "calling this early: this is the new 'responsive design'. 'open up or die a slow death' is the motto for web apps in 2026. Quote of Maximiliano Firtman: Chrome 146 includes an early preview of WebMCP via a flag that lets AI agents query and execute services without browsing the web app like a user. Services declared through an imperative navigator.modelContext API or declaratively through a form.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-02-11",
+    "author": "Andrej Karpathy",
+    "handle": "@karpathy",
+    "subject": "Post by Andrej Karpathy on X",
+    "url": "https://x.com/karpathy/status/2021633574089416993",
+    "summary": "Karpathy on DeepWiki and the growing malleability of software: pointing an agent at DeepWiki (via MCP) plus the GitHub CLI let Claude 'rip out' torchao's fp8 training into a self-contained 150-line nanochat/fp8.py in ~5 minutes, with equivalence tests, 3% faster, removing the dependency. He argues for writing 'bacterial code' (small, self-contained, dependency-free) and asks whether projects really need 100MB of dependencies. Pairs with his litellm supply-chain post (x.com/karpathy/status/2036487306585268612), which is the security side of the same dependency-skepticism argument.",
+    "topics": [
+      "claude-code",
+      "skills-mcp",
+      "dev-practices",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "1.1M",
+    "notes": "",
+    "enriched": true,
+    "content": "On DeepWiki and increasing malleability of software. DeepWiki auto-builds wiki pages for github repos with quick Q&A; swap 'github' for 'deepwiki' in any repo URL (deepwiki.com/karpathy/nanochat). Asking questions of the code beats spotty library docs because the code is the source of truth and LLMs increasingly understand it.\n\nMore powerful still: give your agent DeepWiki via MCP. Prompt used: 'Use DeepWiki MCP and Github CLI to look at how torchao implements fp8 training. Is it possible to rip out the functionality? Implement nanochat/fp8.py that has identical API but is fully self-contained.' Claude went off for 5 minutes and returned 150 lines of clean code that worked out of the box, with tests proving equivalent results, letting him drop torchao as a dependency; the simple version runs 3% faster, and the agent surfaced numerics, dtype, autocast, meta device and torch compile details docs would never capture. Now the default fp8 training implementation for nanochat (github.com/karpathy/nanochat commit e569b59).\n\nTLDR: DeepWiki MCP + GitHub CLI is powerful to rip out specific functionality from any github repo for your exact use case. Maybe don't take a dependency on a giant monolithic library; point your agent at it and rip out the part you need. This could inform how we write software: more 'bacterial code' (small, modular, self-contained, dependency-free, stateless, easy to rip out; x.com/karpathy/status/1941616674094170287). Obvious downsides and risks, but a fundamentally new option. 'Libraries are over, LLMs are the new compiler :). And does your project really need its 100MB of dependencies?'\n\nHow to build a thriving open source community by writing code like bacteria do (Jul 5, 2025): bacterial code is small, modular, self-contained, easily copy-pasteable.",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
