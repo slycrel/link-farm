@@ -1,24 +1,24 @@
 # AI Links Collection
-**Total Posts**: 961  
+**Total Posts**: 962  
 **Date Range**: 2024-06-11 – 2026-10-21  
-**Enriched**: 960/961 (99%)
+**Enriched**: 961/962 (99%)
 
 ---
 ## Morning view
 
-*Generated 2026-10-21T16:36:01Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-10-21T19:00:04Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-10-21** — [Anže Pečar](https://x.com/anze3db/status/2112616425693266153) — *now • Dev Practices • v1 enriched*  
   Security alert: private keys for 8 intermediate CA certificates were reportedly compromised. Pečar urges upgrading certifi everywhere (uv self update; uv lock --upgrade-package certifi) and lists fixed versions: Go 1.27.3/1.26.10, rustls-webpki 0.103.16, webpki-roots 1.0.10, Electron 44.9.1/43.8.1/42.11.16, NSS 3.131.1, Firefox 158.0.1, Ubuntu ca-certificates 20260816, Homebrew 2026-09-25_1; Chrome/Apple/Windows block automatically; Debian, Node.js, Composer and macOS curl still need manual fixes. Source thread: x.com/astuyve/status/2112559796914167931. Jeremy flagged it 'for AJ'.
 - **2026-10-21** — [Anthony Kroeger](https://x.com/kr0der/status/2106429105671643587) — *now • Claude Code • 73K views • v1 enriched*  
   Practical Claude Code Projects tip: tell the project's coordinator to post updates whenever a thread is blocked or finishes a milestone, and save that instruction to project memory. Kroeger says it made the coordinator genuinely useful; the saved memory line asks for a one-line note in project chat linking the thread. A reply asks how to apply it across all projects.
+- **2026-10-21** — [Andrej Karpathy](https://x.com/karpathy/status/2036487306585268612) — *now • Dev Practices • v1 enriched*  
+  Karpathy on the litellm PyPI supply-chain attack: a plain `pip install litellm` could exfiltrate SSH keys, cloud credentials, Kubernetes configs, git credentials, env-var API keys, shell history, wallets and CI/CD secrets. litellm sees ~97M downloads a month and the compromise spreads transitively (e.g. dspy via litellm>=1.64.0). The poisoned release (1.82.8) was live under an hour and was discovered because it crashed a machine via an MCP plugin in Cursor that pulled litellm in as a transitive dependency.
 - **2026-10-20** — [morluto](https://github.com/morluto/rea) — *now • Skills & MCP • v1 enriched*  
   REA (github.com/morluto/rea, rea.tools) is an MIT-licensed MCP server + CLI that lets coding agents reverse engineer software without source — native binaries via Hopper/Ghidra/IDA, Electron/JS apps, .NET, APKs, firmware, pcaps, WASM, EVM bytecode and more — returning pseudocode and findings with evidence so the agent can explain a feature and rebuild it. One-line setup (npx rea-agents setup) wires it into Claude Code, Codex, Cursor and Gemini CLI; analysis runs locally. At ~345K stars it's one of the largest agent-tooling repos on GitHub — worth evaluating as a skill/MCP for 'how does app X do this' questions.
 - **2026-10-21** — [Caspar](https://x.com/caspar_br/status/2112644945697976630) — *near-term • Agent Design • v1 enriched*  
   Caspar (LangChain) lists the shared primitives of a 'company harness' for internal agents: lives where people work (Slack), knows who is asking and acts on-behalf-of vs. under its own identity, scoped memory, a sandbox with authenticated CLIs, and many scheduled/ambient runs. LangChain packages these as Managed Deep Agents, pitched as the easiest way to build a company harness (vendor claim).
-- **2026-10-21** — [elvis](https://x.com/omarsar0/status/2112632133357346889) — *near-term • Research • v1 enriched*  
-  Elvis (DAIR.AI) says to learn to build evals and recommends Hamel Husain's new post on using decision models for evals (choosing a model and tuning its threshold rather than defaulting to 0.5), plus his own resources on using fast 'System One' decision models like Jev as LLM judges: academy.dair.ai Jev-as-a-Judge resources and arxiv.org/abs/2609.26550.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
@@ -33,15 +33,15 @@
     - 2026-10-21 — [Caspar](https://x.com/caspar_br/status/2112644945697976630): Caspar (LangChain) lists the shared primitives of a 'company harness' for internal agents: lives where people work (Slack), knows who is ask…
     - 2026-10-21 — [Harrison Chase](https://x.com/hwchase17/status/2112489626061738209): Harrison Chase (LangChain) endorses a layered approach to building agents: start with an off-the-shelf harness (he likes deepagents), add co…
 
-- **local model serving on consumer GPUs — quantization & throughput** (37 posts, +2 this week)  
-  Running capable open models on single-box prosumer hardware: quantization formats (NVFP4/AWQ/GPTQ/GGUF/MLX), KV-cache compression, serving stacks (SGLang, DSpark), and the tok/s benchmarking that goes with it. Renamed from auto-named cluster on 2026-08-21.
-    - 2026-10-21 — [Mia](https://x.com/miaai_lab/status/2112678922412241245): Mia reports hands-on impressions of Drama TensorFold (github.com/plotarmordev/drama-tensorfold), an open voice-cloning/speech tool that runs…
-    - 2026-10-08 — [Juncheng Yang](https://x.com/1a1a11a/status/2107960379917652296): Juncheng Yang (Harvard MAD Systems) releases the largest agentic LLM inference trace dataset: 206B tokens, 12,002 sessions, 1.19M LLM reques…
-
-- **applied decision-model routing — gating agents with Jev** (36 posts, +2 this week)  
+- **applied decision-model routing — gating agents with Jev** (37 posts, +2 this week)  
   Discovered by orphan clustering on 2026-09-28 (6 posts, cohesion 0.66); renamed in-session. The *applied* side of System One / decision models: putting a non-generative decision model in front of an agent as a gate, router, verifier or judge, plus the libraries and framework integrations that make that practical (AnyJev, DSPy, LangGraph, Claude Code hooks). Deliberately distinct from #74 'System One models — bounded decisions as a primitive', which holds the concept itself and was frozen out of centroid scoring after the 2026-09-25 magnet rollback; because #74 can no longer recruit by cosine, the live Jev conversation could not reach it and formed this cluster instead. On 2026-09-28 #74's 11 canonical edges were demoted to weak so it became a secondary-only grouping tag, releasing its members to re-home here or elsewhere. NOTE: do not write the centroid-scoring opt-out marker as a literal string in this description — the eligibility check is a plain substring match over the whole description, so merely mentioning it silently disables semantic scoring for this concept (hit for real on 2026-09-28).
     - 2026-10-21 — [elvis](https://x.com/omarsar0/status/2112632133357346889): Elvis (DAIR.AI) says to learn to build evals and recommends Hamel Husain's new post on using decision models for evals (choosing a model and…
     - 2026-10-15 — [elvis](https://x.com/omarsar0/status/2110083302728323346): elvis highlights the LongHarness paper (arxiv.org/abs/2610.13075): a model-agnostic agent harness for 100M+ token corpora that takes GLM-5.3…
+
+- **local model serving on consumer GPUs — quantization & throughput** (36 posts, +2 this week)  
+  Running capable open models on single-box prosumer hardware: quantization formats (NVFP4/AWQ/GPTQ/GGUF/MLX), KV-cache compression, serving stacks (SGLang, DSpark), and the tok/s benchmarking that goes with it. Renamed from auto-named cluster on 2026-08-21.
+    - 2026-10-21 — [Mia](https://x.com/miaai_lab/status/2112678922412241245): Mia reports hands-on impressions of Drama TensorFold (github.com/plotarmordev/drama-tensorfold), an open voice-cloning/speech tool that runs…
+    - 2026-10-08 — [Juncheng Yang](https://x.com/1a1a11a/status/2107960379917652296): Juncheng Yang (Harvard MAD Systems) releases the largest agentic LLM inference trace dataset: 206B tokens, 12,002 sessions, 1.19M LLM reques…
 
 - **Forward Deployed Engineers — the durable AI-era role** (24 posts, +2 this week)  
   Argument that FDEs are the right shape of role for the AI rollout era. Touches every employee's workflow.
@@ -59,13 +59,13 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 583 | 60.7% |
-| claude-code | 212 | 22.1% |
-| dev-practices | 416 | 43.3% |
-| skills-mcp | 209 | 21.7% |
+| agent-design | 583 | 60.6% |
+| claude-code | 212 | 22.0% |
+| dev-practices | 417 | 43.3% |
+| skills-mcp | 210 | 21.8% |
 | prompting | 143 | 14.9% |
-| research | 264 | 27.5% |
-| industry | 144 | 15.0% |
+| research | 264 | 27.4% |
+| industry | 145 | 15.1% |
 | management | 145 | 15.1% |
 | adjacent | 49 | 5.1% |
 | solo-operator | 10 | 1.0% |
@@ -86,6 +86,7 @@
 | 2026-10-21 | Mark Ajzenstadt | management | Mark Ajzenstadt shares an 8-step playbook for AI transformation in reg... |
 | 2026-10-21 | Harrison Chase | agent-design | Harrison Chase (LangChain) endorses a layered approach to building age... |
 | 2026-10-21 | Anthony Kroeger | claude-code | Practical Claude Code Projects tip: tell the project's coordinator to... |
+| 2026-10-21 | Andrej Karpathy | dev-practices | Karpathy on the litellm PyPI supply-chain attack: a plain `pip install... |
 | 2026-10-20 | morluto | skills-mcp | REA (github.com/morluto/rea, rea.tools) is an MIT-licensed MCP server... |
 | 2026-10-15 | elvis | agent-design | elvis highlights the LongHarness paper (arxiv.org/abs/2610.13075): a m... |
 | 2026-10-08 | Kun Chen | dev-practices | Kun Chen's empirical result: on the deepswe eval set, banning Sonnet 5... |
@@ -125,7 +126,6 @@
 | 2026-09-26 | GREG ISENBERG | adjacent | A one-page guide to becoming a top 1% speaker, whether on a panel or a... |
 | 2026-09-26 | rvaniaaa | questionable | Writeup of Nace AI's Drex, a small diffusion decision model trained wi... |
 | 2026-09-26 | elvis | agent-design | elvis on why System One models matter for anyone building custom harne... |
-| 2026-09-26 | Rahul | questionable | Engagement-farmed repackaging of Anthropic's Opus 5.5 prompting guidan... |
 
 ---
 ## Posts by Topic
@@ -1724,13 +1724,15 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Dev Practices (416)
+### Dev Practices (417)
 
 - [elvis](https://x.com/omarsar0/status/2112632133357346889) — 2026-10-21: Elvis (DAIR.AI) says to learn to build evals and recommends Hamel Husain's new post on using decision models for evals (choosing a model and tuning its threshold rather than defaulting to 0.5), plus his own resources on using fast 'System One' decision models like Jev as LLM judges: academy.dair.ai Jev-as-a-Judge resources and arxiv.org/abs/2609.26550.
 
 - [Anže Pečar](https://x.com/anze3db/status/2112616425693266153) — 2026-10-21: Security alert: private keys for 8 intermediate CA certificates were reportedly compromised. Pečar urges upgrading certifi everywhere (uv self update; uv lock --upgrade-package certifi) and lists fixed versions: Go 1.27.3/1.26.10, rustls-webpki 0.103.16, webpki-roots 1.0.10, Electron 44.9.1/43.8.1/42.11.16, NSS 3.131.1, Firefox 158.0.1, Ubuntu ca-certificates 20260816, Homebrew 2026-09-25_1; Chrome/Apple/Windows block automatically; Debian, Node.js, Composer and macOS curl still need manual fixes. Source thread: x.com/astuyve/status/2112559796914167931. Jeremy flagged it 'for AJ'.
 
 - [Harrison Chase](https://x.com/hwchase17/status/2112489626061738209) — 2026-10-21: Harrison Chase (LangChain) endorses a layered approach to building agents: start with an off-the-shelf harness (he likes deepagents), add context via skills and tools, tweak the harness with middleware if needed, and only then reach for a langgraph workflow. Quotes verrsane's advice to prefer harnesses like Claude Code, Codex, deep agents or Glean over hand-built multi-step if/else workflows.
+
+- [Andrej Karpathy](https://x.com/karpathy/status/2036487306585268612) — 2026-10-21: Karpathy on the litellm PyPI supply-chain attack: a plain `pip install litellm` could exfiltrate SSH keys, cloud credentials, Kubernetes configs, git credentials, env-var API keys, shell history, wallets and CI/CD secrets. litellm sees ~97M downloads a month and the compromise spreads transitively (e.g. dspy via litellm>=1.64.0). The poisoned release (1.82.8) was live under an hour and was discovered because it crashed a machine via an MCP plugin in Cursor that pulled litellm in as a transitive dependency.
 
 - [morluto](https://github.com/morluto/rea) — 2026-10-20: REA (github.com/morluto/rea, rea.tools) is an MIT-licensed MCP server + CLI that lets coding agents reverse engineer software without source — native binaries via Hopper/Ghidra/IDA, Electron/JS apps, .NET, APKs, firmware, pcaps, WASM, EVM bytecode and more — returning pseudocode and findings with evidence so the agent can explain a feature and rebuild it. One-line setup (npx rea-agents setup) wires it into Claude Code, Codex, Cursor and Gemini CLI; analysis runs locally. At ~345K stars it's one of the largest agent-tooling repos on GitHub — worth evaluating as a skill/MCP for 'how does app X do this' questions.
 
@@ -2558,7 +2560,9 @@
 
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
 
-### Skills & MCP (209)
+### Skills & MCP (210)
+
+- [Andrej Karpathy](https://x.com/karpathy/status/2036487306585268612) — 2026-10-21: Karpathy on the litellm PyPI supply-chain attack: a plain `pip install litellm` could exfiltrate SSH keys, cloud credentials, Kubernetes configs, git credentials, env-var API keys, shell history, wallets and CI/CD secrets. litellm sees ~97M downloads a month and the compromise spreads transitively (e.g. dspy via litellm>=1.64.0). The poisoned release (1.82.8) was live under an hour and was discovered because it crashed a machine via an MCP plugin in Cursor that pulled litellm in as a transitive dependency.
 
 - [morluto](https://github.com/morluto/rea) — 2026-10-20: REA (github.com/morluto/rea, rea.tools) is an MIT-licensed MCP server + CLI that lets coding agents reverse engineer software without source — native binaries via Hopper/Ghidra/IDA, Electron/JS apps, .NET, APKs, firmware, pcaps, WASM, EVM bytecode and more — returning pseudocode and findings with evidence so the agent can explain a feature and rebuild it. One-line setup (npx rea-agents setup) wires it into Claude Code, Codex, Cursor and Gemini CLI; analysis runs locally. At ~345K stars it's one of the largest agent-tooling repos on GitHub — worth evaluating as a skill/MCP for 'how does app X do this' questions.
 
@@ -3796,13 +3800,15 @@
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.
 
-### Industry (144)
+### Industry (145)
 
 - [Mia](https://x.com/miaai_lab/status/2112678922412241245) — 2026-10-21: Mia reports hands-on impressions of Drama TensorFold (github.com/plotarmordev/drama-tensorfold), an open voice-cloning/speech tool that runs locally on a GPU (about 38.2 GB memory), supports multiple languages in one cloned voice. Quotes the creator (netrunner/plotarmordev) who notes a quantized version is in the works. Enthusiastic first-person review, so take the 'blown away' framing as unverified.
 
 - [Caspar](https://x.com/caspar_br/status/2112644945697976630) — 2026-10-21: Caspar (LangChain) lists the shared primitives of a 'company harness' for internal agents: lives where people work (Slack), knows who is asking and acts on-behalf-of vs. under its own identity, scoped memory, a sandbox with authenticated CLIs, and many scheduled/ambient runs. LangChain packages these as Managed Deep Agents, pitched as the easiest way to build a company harness (vendor claim).
 
 - [Mark Ajzenstadt](https://x.com/mardehaym/status/2112514104833475045) — 2026-10-21: Mark Ajzenstadt shares an 8-step playbook for AI transformation in regulated companies, drawn from his team's builds and what goes wrong when steps are skipped. Step 1: name a business sponsor (about an hour a week to decide priorities and acceptance) before choosing a use case, otherwise pilots keep getting funded without anyone deciding if they are useful.
+
+- [Andrej Karpathy](https://x.com/karpathy/status/2036487306585268612) — 2026-10-21: Karpathy on the litellm PyPI supply-chain attack: a plain `pip install litellm` could exfiltrate SSH keys, cloud credentials, Kubernetes configs, git credentials, env-var API keys, shell history, wallets and CI/CD secrets. litellm sees ~97M downloads a month and the compromise spreads transitively (e.g. dspy via litellm>=1.64.0). The poisoned release (1.82.8) was live under an hour and was discovered because it crashed a machine via an MCP plugin in Cursor that pulled litellm in as a transitive dependency.
 
 - [Mark Ajzenstadt](https://x.com/mardehaym/status/2107902643490222168) — 2026-10-08: Mark Ajzenstadt (decade running an embedded-engineering firm) pushes back on the FDE hype: cites a Gartner prediction that 70% of enterprises will abandon vendor-FDE-built agentic AI by 2028 over cost and inability to evolve systems independently. His standard: the engagement succeeds only if the client's own team gains capability while decisions are being made — 'what will my team be able to do without you six months from now?' A useful counter-example to the pro-FDE material in the collection.
 
@@ -5042,6 +5048,9 @@
 
 - **2026-10-21** | [Anthony Kroeger](https://x.com/kr0der/status/2106429105671643587) | claude-code, agent-design, prompting
   Practical Claude Code Projects tip: tell the project's coordinator to post updates whenever a thread is blocked or finishes a milestone, and save that instruction to project memory. Kroeger says it made the coordinator genuinely useful; the saved memory line asks for a one-line note in project chat linking the thread. A reply asks how to apply it across all projects.
+
+- **2026-10-21** | [Andrej Karpathy](https://x.com/karpathy/status/2036487306585268612) | dev-practices, skills-mcp, industry
+  Karpathy on the litellm PyPI supply-chain attack: a plain `pip install litellm` could exfiltrate SSH keys, cloud credentials, Kubernetes configs, git credentials, env-var API keys, shell history, wallets and CI/CD secrets. litellm sees ~97M downloads a month and the compromise spreads transitively (e.g. dspy via litellm>=1.64.0). The poisoned release (1.82.8) was live under an hour and was discovered because it crashed a machine via an MCP plugin in Cursor that pulled litellm in as a transitive dependency.
 
 - **2026-10-20** | [morluto](https://github.com/morluto/rea) | skills-mcp, agent-design, dev-practices
   REA (github.com/morluto/rea, rea.tools) is an MIT-licensed MCP server + CLI that lets coding agents reverse engineer software without source — native binaries via Hopper/Ghidra/IDA, Electron/JS apps, .NET, APKs, firmware, pcaps, WASM, EVM bytecode and more — returning pseudocode and findings with evidence so the agent can explain a feature and rebuild it. One-line setup (npx rea-agents setup) wires it into Claude Code, Codex, Cursor and Gemini CLI; analysis runs locally. At ~345K stars it's one of the largest agent-tooling repos on GitHub — worth evaluating as a skill/MCP for 'how does app X do this' questions.

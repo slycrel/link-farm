@@ -248,6 +248,32 @@
     "enrichment_attempts": 1
   },
   {
+    "date": "2026-10-21",
+    "author": "Andrej Karpathy",
+    "handle": "@karpathy",
+    "subject": "Post by Andrej Karpathy on X",
+    "url": "https://x.com/karpathy/status/2036487306585268612",
+    "summary": "Karpathy on the litellm PyPI supply-chain attack: a plain `pip install litellm` could exfiltrate SSH keys, cloud credentials, Kubernetes configs, git credentials, env-var API keys, shell history, wallets and CI/CD secrets. litellm sees ~97M downloads a month and the compromise spreads transitively (e.g. dspy via litellm>=1.64.0). The poisoned release (1.82.8) was live under an hour and was discovered because it crashed a machine via an MCP plugin in Cursor that pulled litellm in as a transitive dependency.",
+    "topics": [
+      "dev-practices",
+      "skills-mcp",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Software horror: litellm PyPI supply chain attack. Simple pip install litellm was enough to exfiltrate SSH keys, AWS/GCP/Azure creds, Kubernetes configs, git credentials, env vars (all your API keys), shell history, crypto wallets, SSL private keys, CI/CD secrets, database passwords. LiteLLM has 97 million downloads per month; the contagion spreads to any project that depends on litellm, e.g. dspy (litellm>=1.64.0). The poisoned version was up for less than ~1 hour. The attack had a bug which led to its discovery: Callum McMahon was using an MCP plugin inside Cursor that pulled in litellm as a transitive dependency; when litellm 1.82.8 installed, their machine ran out of RAM and crashed.",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-10-20",
     "author": "morluto",
     "handle": "",
