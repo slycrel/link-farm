@@ -1,12 +1,12 @@
 # AI Links Collection
-**Total Posts**: 963  
+**Total Posts**: 892  
 **Date Range**: 2024-06-11 – 2026-10-21  
-**Enriched**: 962/963 (99%)
+**Enriched**: 892/892 (100%)
 
 ---
 ## Morning view
 
-*Generated 2026-10-21T20:10:08Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-10-21T20:16:24Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-10-21** — [Anže Pečar](https://x.com/anze3db/status/2112616425693266153) — *now • Dev Practices • v1 enriched*  
@@ -59,18 +59,18 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 584 | 60.6% |
-| claude-code | 213 | 22.1% |
-| dev-practices | 418 | 43.4% |
-| skills-mcp | 211 | 21.9% |
-| prompting | 143 | 14.8% |
-| research | 264 | 27.4% |
-| industry | 145 | 15.1% |
-| management | 145 | 15.1% |
-| adjacent | 49 | 5.1% |
-| solo-operator | 10 | 1.0% |
-| questionable | 151 | 15.7% |
-| general | 100 | 10.4% |
+| agent-design | 573 | 64.2% |
+| claude-code | 212 | 23.8% |
+| dev-practices | 415 | 46.5% |
+| skills-mcp | 207 | 23.2% |
+| prompting | 143 | 16.0% |
+| research | 260 | 29.1% |
+| industry | 143 | 16.0% |
+| management | 145 | 16.3% |
+| adjacent | 49 | 5.5% |
+| solo-operator | 10 | 1.1% |
+| questionable | 149 | 16.7% |
+| general | 45 | 5.0% |
 
 ---
 ## Quick Reference (50 Most Recent)
@@ -130,7 +130,7 @@
 ---
 ## Posts by Topic
 
-### Agent Design (584)
+### Agent Design (573)
 
 - [Caspar](https://x.com/caspar_br/status/2112644945697976630) — 2026-10-21: Caspar (LangChain) lists the shared primitives of a 'company harness' for internal agents: lives where people work (Slack), knows who is asking and acts on-behalf-of vs. under its own identity, scoped memory, a sandbox with authenticated CLIs, and many scheduled/ambient runs. LangChain packages these as Managed Deep Agents, pitched as the easiest way to build a company harness (vendor claim).
   posted 2026-10-20 · @caspar_br · concept: agent harness engineering · url: https://x.com/caspar_br/status/2112644945697976630
@@ -1257,9 +1257,6 @@
 - [Akshay](https://x.com/akshay_pachaar/status/2047220248081015110) — 2026-04-23: Akshay extends Karpathy's wiki idea: a markdown wiki works for static knowledge but breaks for multi-entity questions like 'which authors moved from Google to Anthropic between 2022-2024 and what did they publish after?' A wiki can only answer that if someone already wrote the article; a graph (entities + relations + dates) lets you ask any variation directly. Argues the next step beyond LLM-maintained wikis is LLM-maintained knowledge graphs.
   posted 2026-04-23 · @akshay_pachaar · url: https://x.com/akshay_pachaar/status/2047220248081015110
 
-- [How To AI](https://x.com/howtoai_/status/2047187640781541882) — 2026-04-23: [Post unavailable — page doesn't exist]
-  posted 2026-04-23 · @HowToAI_ · url: https://x.com/howtoai_/status/2047187640781541882
-
 - [TRAE](https://x.com/trae_ai/status/2047145274200768969) — 2026-04-23: TRAE's 'Definitive Guide to Harness Engineering' X article — frames harness engineering as the 2026 successor to prompt + context engineering. Term coined by Mitchell Hashimoto (HashiCorp co-founder); gained traction via an OpenAI report. Horse-and-reins metaphor: AI Agent = SOTA Model (wild horse) + Harness (control system) = Elite Performer. Foundational reading for the harness-engineering concept thread alongside Rahul/walkinglabs/Anthropic papers.
   posted 2026-04-23 · @trae_ai · 372K views · concept: agent harness engineering · url: https://x.com/trae_ai/status/2047145274200768969
 
@@ -1638,9 +1635,6 @@
 - [Meta Alchemist](https://x.com/meta_alchemist/status/2029430826128293906) — 2026-03-05: Roundup of 10 open-source AI memory layers (free, popular on GitHub, some YC-funded) to give coding agents like Claude and Codex better recall than plain memory.md files, with notes on what each is good at and how to combine them. Engagement-styled listicle but substantive.
   posted 2026-03-05 · @meta_alchemist · concept: vector / hybrid databases as agent-memory infrastructure · url: https://x.com/meta_alchemist/status/2029430826128293906
 
-- [Sukh Sroay](https://x.com/sukh_saroy/status/2029400474739458379) — 2026-03-05: [Post unavailable — account suspended]
-  posted 2026-03-05 · @sukh_saroy · url: https://x.com/sukh_saroy/status/2029400474739458379
-
 - [0xSero](https://x.com/0xsero/status/2029305128084218265) — 2026-03-05: Argues real-time, very fast inference (e.g. models served by Cerebras, used via "Spark") is a major shift that requires changing your working strategy, pointing to companion articles for details.
   posted 2026-03-04 · @0xsero · 38.2K views · url: https://x.com/0xsero/status/2029305128084218265
 
@@ -1650,20 +1644,11 @@
 - [swarit](https://x.com/swaritjoshipura/status/2029219363749020051) — 2026-03-05: Curated links on agent context and evaluation: Foundation Capital on "context graphs" as AIs trillion-dollar opportunity (foundationcapital.com/context-graphs-ais-trillion-dollar-opportunity/), Anthropics guide to demystifying evals for AI agents (anthropic.com/engineering/demystifying-evals-for-ai-agents), a YouTube talk, and resolve.ai.
   posted 2026-03-04 · @swaritjoshipura · 51K views · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/swaritjoshipura/status/2029219363749020051 · links: https://foundationcapital.com/context-graphs-ais-trillion-dollar-opportunity https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents https://www.youtube.com/watch?v=Zyw-YA0k3xo https://resolve.ai
 
-- [witcheer ☯︎](https://x.com/witcheer/status/2029013946701381978) — 2026-03-05: [Post unavailable — page doesn’t exist (same status as nummanali)]
-  posted 2026-03-04 · @witcheer · 100000 views · url: https://x.com/witcheer/status/2029013946701381978
-
-- [Numman Ali](https://x.com/nummanali/status/2029013946701381978) — 2026-03-05: [Post unavailable — page doesn’t exist]
-  posted 2026-03-04 · @nummanali · 122K views · url: https://x.com/nummanali/status/2029013946701381978
-
 - [Dan Robinson](https://x.com/danlovesproofs/status/2028890694837039202) — 2026-03-05: Argues issue tracking/backlogs are dying: forward-thinking AI-augmented teams skip Linear/tickets entirely because the cost to fix an issue now approaches the cost to understand it. Works for small, flat, high-context teams with strong dev infra; framed as part of the 'death of midwit software engineering.'
   posted 2026-03-03 · @danlovesproofs · 321.9K views · concept: vibecode-to-production via agent skills · url: https://x.com/danlovesproofs/status/2028890694837039202
 
 - [Avid](https://x.com/av1dlive/status/2027429188471558475) — 2026-03-05: Engagement-style 'AI will take your job' listicle, but with a usable career playbook: audit which tasks AI can replicate, learn local agent tooling and stackable 'skills', layer AI-native competence (prompting, orchestration, RAG, automation), shift from executor to system designer, double down on human edge, and build a product/brand.
   posted 2026-02-27 · @Av1dlive · 58.3K views · concept: Forward Deployed Engineers — the durable AI-era role · url: https://x.com/av1dlive/status/2027429188471558475
-
-- [Muratcan Koylan](https://x.com/koylanai/status/2032671843) — 2026-03-05: [Post unavailable — corrupt status id resolves to unrelated @BizBlogger account]
-  @koylanai · 112K views · url: https://x.com/koylanai/status/2032671843
 
 - [Atharva](https://x.com/atharvaxdevs/status/2028903519802232991) — 2026-03-04: A teaser post aimed at engineers chasing the top 0.01% of "agentic engineering" skill (thread/resource hook).
   posted 2026-03-03 · @atharvaxdevs · 468.3K views · concept: founder philosophy & life-design essays · url: https://x.com/atharvaxdevs/status/2028903519802232991
@@ -1680,9 +1665,6 @@
 - [Nyk](https://x.com/nyk_builderz/status/2028022503319203926) — 2026-03-02: Announces open-sourcing Mission Control, a self-hosted AI agent orchestration dashboard: 26 panels, real-time WebSocket+SSE, SQLite (no external services), kanban board, cost tracking, role-based access, quality gates, multi-gateway support. Repo: github.com/builderz-labs/mission-control.
   posted 2026-03-01 · @nyk_builderz · 466.4K views · url: https://x.com/nyk_builderz/status/2028022503319203926 · links: https://github.com/builderz-labs/mission-control
 
-- [AVB](https://x.com/neural_avb/status/2027957534159835443) — 2026-03-01: [Post unavailable — page doesn't exist]
-  posted 2026-03-01 · @neural_avb · 4K views · url: https://x.com/neural_avb/status/2027957534159835443
-
 - [Joseph Thacker](https://x.com/rez0__/status/2027448137133264955) — 2026-03-01: Argues bug bounty / security research changed step-function fast in late 2025: coding agents went from not working to genuinely working. Example: pointed Claude Code at a target's scope (enumerate subdomains, analyze JS bundles, fuzz, test IDORs/GraphQL, write an HTML report); it ran ~30 min, self-recovered from auth/WAF errors, and returned two confirmed vulns. Hunters now build and share custom Claude Code skill libraries (JS static analysis, authenticated fuzzing, IDOR, GraphQL introspection). Quote-tweets Karpathy's parallel observation about programming.
   posted 2026-02-27 · @rez0__ · 86.2K views · concept: managing agent teams · url: https://x.com/rez0__/status/2027448137133264955 · links: https://x.com/karpathy
 
@@ -1695,14 +1677,8 @@
 - [SightBringer](https://x.com/_the_prophet__/status/2027235489930191056) — 2026-02-27: Critique of AI auto-memory (quote-tweeting Anthropic's Claude auto-memory announcement) as a "power grab disguised as convenience": capturing your patterns, defaults, and definitions of 'good' shifts the model from serving you to shaping you, and dependency is the business model. Counter-playbook: treat memory as a controlled instrument — scope it like permissions, separate persona from operations, keep a purge cycle, audit what the model believes about you, and never let it silently rewrite your intent. Frames the AI era as shifting from intelligence to custody of context/continuity.
   posted 2026-02-27 · @_The_Prophet__ · 34.8K views · concept: vibecode-to-production via agent skills · url: https://x.com/_the_prophet__/status/2027235489930191056 · links: https://x.com/trq212/status/2027... 
 
-- [Kirk Borne](https://x.com/KirkDBorne/status/2027031353849852309) — 2026-02-27: [Post unavailable — page doesn't exist]
-  posted 2026-02-26 · @kirkdborne · 103K views · url: https://x.com/KirkDBorne/status/2027031353849852309
-
 - [Avi Chawla](https://x.com/_avichawla/status/2026907616337883612) — 2026-02-27: Avi Chawla revives Norm Hardy's 1988 'confused deputy problem' as the defining security issue for autonomous agents that hold real credentials but can't judge intent. He points to Teleport's open-source Agentic Identity Framework, which gives each agent a unique cryptographic identity, evaluates access in real time, auto-discovers shadow agents and unmanaged MCP servers, and keeps full audit trails.
   posted 2026-02-26 · @_avichawla · 8524 views · concept: agents as constrained software — making bad shapes unexpressible · url: https://x.com/_avichawla/status/2026907616337883612
-
-- [Sukh Sroay](https://x.com/sukh_saroy/status/2026624254800965848) — 2026-02-27: [Post unavailable — account suspended]
-  posted 2026-02-25 · @sukh_saroy · url: https://x.com/sukh_saroy/status/2026624254800965848
 
 - [Atlas Forge](https://x.com/atlasforgeai/status/2026380335249002843) — 2026-02-25: Long-form piece on nine 'meta-learning loops' that let an agent improve across sessions, not just within one: failure-to-guardrail pipelines, tiered memory with trust scoring and decay, prediction-outcome calibration, nightly extraction, friction detection, expiring context holds, plus cognitive loops (epistemic tagging, creative-mode directives, recursive self-improvement). Start with a regressions list; the key is closing the loops so learning compounds.
   posted 2026-02-24 · @AtlasForgeAI · 163.3K views · concept: self-improving skills (autoresearch pattern) · url: https://x.com/atlasforgeai/status/2026380335249002843 · links: https://x.com/AtlasForgeAI/status/2026380335249002843
@@ -1719,9 +1695,6 @@
 - [Jeremy Daly](https://x.com/jeremy_daly/status/2025677417398821351) — 2026-02-23: Jeremy Daly wrote a 100+ page guide on building multi-tenant, commercial AI agent systems from ~18 months running them inside a large SaaS platform serving hundreds of enterprise customers. Covers hard requirements around tenant isolation, auditability, retention, and cost control, plus orchestration models, retrieval architectures, and evaluation harnesses.
   posted 2026-02-22 · @jeremy_daly · concept: prediction-market & crypto trading bots · url: https://x.com/jeremy_daly/status/2025677417398821351
 
-- [Akshay 🚀](https://x.com/akshay_pachaar/status/2025767534159835443) — 2026-02-21: [Post unavailable - page doesn't exist]
-  posted 2026-02-23 · @akshay_pachaar · 83000 views · url: https://x.com/akshay_pachaar/status/2025767534159835443
-
 - [tuna](https://x.com/tunahorse21/status/2024974148259512677) — 2026-02-21: tuna signal-boosts Alex Fazio introducing Plankton, a 'slop guard' for LLM coding agents. It aims to break the loop of copy-pasting pre-commit/linting errors back into the agent by enforcing lint rules the model can't cheat around.
   posted 2026-02-20 · @tunahorse21 · 24.7K views · url: https://x.com/tunahorse21/status/2024974148259512677
 
@@ -1730,9 +1703,6 @@
 
 - [Adam](https://x.com/adamdotdev/status/2024525246993506346) — 2026-02-20: Adam (working on OpenCode since early 2025) offers an honest, ambivalent reflection on agentic programming: the models are an incredible tool and a real productivity boost, but the shift is confusing and emotionally mixed. He misses the flow of banging out mundane code by hand and notes the growing distance between the developer and the code.
   posted 2026-02-19 · @adamdotdev · concept: founder philosophy & life-design essays · url: https://x.com/adamdotdev/status/2024525246993506346
-
-- [Viv](https://x.com/Vtrivedy10/status/2029576534159835443) — 2026-02-18: [Post unavailable - page doesn't exist]
-  posted 2026-03-05 · @vtrivedy10 · 12K views · url: https://x.com/Vtrivedy10/status/2029576534159835443
 
 - [Tech with Mak](https://x.com/technmak/status/2023990222027915746) — 2026-02-18: Tech with Mak boosts Matthew Berman's 'OpenClaw masterclass' video, in which Berman claims to have spent 2.54 billion tokens perfecting the OpenClaw coding agent and walks through 21 daily use cases (markdown files, memory system, CRM, and more). Quoted post had ~1.3M views.
   posted 2026-02-18 · @techNmak · 1.3M views · url: https://x.com/technmak/status/2023990222027915746
@@ -1833,9 +1803,6 @@
 - [Ruslan Beskorovainiy](https://x.com/chemobyazan/status/1975326044271079509) — 2025-10-07: Points to the contains-studio/agents GitHub repo, a shared collection of AI agents currently in use.
   posted 2025-10-06 · @ChemObyazan · 3,011 views · concept: agents as constrained software — making bad shapes unexpressible · url: https://x.com/chemobyazan/status/1975326044271079509 · links: https://github.com/contains-studio/agents
 
-- [Agentic Design Patterns](https://github.com/sarwarbeing-ai/Agentic_Design_Patterns/blob/main/Agentic_Design_Patterns.pdf) — 2025-10-05: [Post unavailable — Agentic Design Patterns GitHub repo removed via DMCA takedown]
-  @na · url: https://github.com/sarwarbeing-ai/Agentic_Design_Patterns/blob/main/Agentic_Design_Patterns.pdf
-
 - [Dan McAteer](https://x.com/daniel_mac8/status/1970120352664605124) — 2025-09-22: Shares a four-step agentic-coding pattern with an added Verification step (build feedback loops that test the plan was implemented correctly, since models still fail on execution), meant to be copied into an AGENTS.md file. Works with AmpCode or any AGENTS.md-aware coding agent.
   posted 2025-09-22 · @daniel_mac8 · 44.9K views · concept: loop engineering · url: https://x.com/daniel_mac8/status/1970120352664605124
 
@@ -1884,7 +1851,7 @@
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
   @curvedinf · url: https://github.com/curvedinf/dir-assistant
 
-### Claude Code (213)
+### Claude Code (212)
 
 - [Anthony Kroeger](https://x.com/kr0der/status/2106429105671643587) — 2026-10-21: Practical Claude Code Projects tip: tell the project's coordinator to post updates whenever a thread is blocked or finishes a milestone, and save that instruction to project memory. Kroeger says it made the coordinator genuinely useful; the saved memory line asks for a one-line note in project chat linking the thread. A reply asks how to apply it across all projects.
   posted 2026-10-03 · @kr0der · 73K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/kr0der/status/2106429105671643587
@@ -2453,9 +2420,6 @@
 - [Matt Dancho (Business Science)](https://x.com/mdancho84/status/2023738764841894352) — 2026-02-18: Matt Dancho argues that becoming a '10X engineer' now comes down to a well-crafted SKILLS.md file, teasing a thread/resource on how to build one. High-engagement post (~1.1M views) with a lead-gen hook.
   posted 2026-02-17 · @mdancho84 · 1.1M views · concept: founder philosophy & life-design essays · url: https://x.com/mdancho84/status/2023738764841894352
 
-- [Pavol Lupták](https://x.com/wilderko/status/2025159534159835443) — 2026-02-15: [Post unavailable - page doesn't exist]
-  posted 2026-02-21 · @wilderko · 130K views · url: https://x.com/wilderko/status/2025159534159835443
-
 - [Peter Steinberger](https://x.com/steipete/status/2020704611640705485) — 2026-02-09: Peter Steinberger shares a SOUL.md rewrite prompt (via Molty) to give a coding agent a stronger personality: hold strong opinions instead of hedging, delete corporate-handbook rules, never open with filler like 'Great question', enforce brevity, allow natural humor, call out bad ideas (charm over cruelty), and permit well-placed swearing.
   posted 2026-02-09 · @steipete · concept: agent identity files (SOUL.md, CLAUDE.md, persona scaffolds) · url: https://x.com/steipete/status/2020704611640705485
 
@@ -2525,7 +2489,7 @@
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
   @curvedinf · url: https://github.com/curvedinf/dir-assistant
 
-### Dev Practices (418)
+### Dev Practices (415)
 
 - [elvis](https://x.com/omarsar0/status/2112632133357346889) — 2026-10-21: Elvis (DAIR.AI) says to learn to build evals and recommends Hamel Husain's new post on using decision models for evals (choosing a model and tuning its threshold rather than defaulting to 0.5), plus his own resources on using fast 'System One' decision models like Jev as LLM judges: academy.dair.ai Jev-as-a-Judge resources and arxiv.org/abs/2609.26550.
   posted 2026-10-20 · @omarsar0 · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/omarsar0/status/2112632133357346889 · links: https://arxiv.org/abs/2609.26550
@@ -3544,17 +3508,11 @@
 - [Philipp Schmid](https://x.com/_philschmid/status/2029570052530360719) — 2026-03-06: Practical guide to evaluating agent Skills, which are often AI-generated and untested: define success criteria (outcome/style/efficiency), build 10-12 prompts with deterministic checks, add an LLM-as-judge for qualitative checks, and iterate on the skill from eval failures.
   posted 2026-03-05 · @_philschmid · 40.1K views · concept: self-improving skills (autoresearch pattern) · url: https://x.com/_philschmid/status/2029570052530360719
 
-- [Sukh Sroay](https://x.com/sukh_saroy/status/2029400474739458379) — 2026-03-05: [Post unavailable — account suspended]
-  posted 2026-03-05 · @sukh_saroy · url: https://x.com/sukh_saroy/status/2029400474739458379
-
 - [yenkel](https://x.com/yenkel/status/2029299384832209259) — 2026-03-05: Crisp engineering-leadership advice for the AI era: fewer handoffs and faster decisions, more exploration, willingness to throw away code/tokens, learning by building, and picking leads who can own design, engineering and product together.
   posted 2026-03-04 · @yenkel · 420.6K views · concept: Forward Deployed Engineers — the durable AI-era role · url: https://x.com/yenkel/status/2029299384832209259
 
 - [Dan Robinson](https://x.com/danlovesproofs/status/2028890694837039202) — 2026-03-05: Argues issue tracking/backlogs are dying: forward-thinking AI-augmented teams skip Linear/tickets entirely because the cost to fix an issue now approaches the cost to understand it. Works for small, flat, high-context teams with strong dev infra; framed as part of the 'death of midwit software engineering.'
   posted 2026-03-03 · @danlovesproofs · 321.9K views · concept: vibecode-to-production via agent skills · url: https://x.com/danlovesproofs/status/2028890694837039202
-
-- [Nate Kohari](https://x.com/nkohari/status/2028525461689176325) — 2026-03-02: [Post unavailable — page doesn't exist]
-  posted 2026-03-02 · @nkohari · 81K views · url: https://x.com/nkohari/status/2028525461689176325
 
 - [tetsuo](https://x.com/tetsuoai/status/2028068322106097773) — 2026-03-02: Technical breakdown of recurring agentic failure modes in fast/distilled code models: wrong direct-exec vs shell selection, structured-output (JSON-only) non-compliance, and tool-result grounding failures (reporting success after a tool error). Fix: distill full agent trajectories (request→tool→output→grounded response), add contrastive near-miss examples, and gate on concrete agentic evals.
   posted 2026-03-01 · @tetsuoai · 49.8K views · concept: loop engineering · url: https://x.com/tetsuoai/status/2028068322106097773
@@ -3754,9 +3712,6 @@
 - [Imrat](https://x.com/imrat/status/1954497164589056090) — 2025-08-11: A recipe for using Claude Code as a DevOps agent with its new background jobs: run Claude in a tmux session, have it spawn a background process to tail server logs and summarize them, then a second process that pings Claude to 'check logs' on an interval.
   posted 2025-08-10 · @imrat · 167.3K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/imrat/status/1954497164589056090
 
-- [K Srinivas Rao](https://x.com/sriniously/status/1950432839474012456) — 2025-07-31: [Post unavailable — page doesn't exist]
-  posted 2025-07-30 · @sriniously · 60.6K views · url: https://x.com/sriniously/status/1950432839474012456
-
 - [Graham Helton](https://x.com/grahamhelton3/status/1936462167751921698) — 2025-06-23: Before leaving Google for Snowflake, Graham Helton braindumped ~34 personal guidelines/principles he follows for work and productivity; the thread lists them.
   posted 2025-06-21 · @GrahamHelton3 · 1M views · url: https://x.com/grahamhelton3/status/1936462167751921698
 
@@ -3781,7 +3736,7 @@
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
   @curvedinf · url: https://github.com/curvedinf/dir-assistant
 
-### Skills & MCP (211)
+### Skills & MCP (207)
 
 - [Andrej Karpathy](https://x.com/karpathy/status/2036487306585268612) — 2026-10-21: Karpathy on the litellm PyPI supply-chain attack: a plain `pip install litellm` could exfiltrate SSH keys, cloud credentials, Kubernetes configs, env-var API keys, shell history, wallets and CI/CD secrets; litellm has ~97M downloads/month and the compromise spreads transitively (e.g. dspy). The poisoned 1.82.8 was live under an hour and was caught only because it crashed a machine via an MCP plugin in Cursor that pulled litellm in transitively. His takeaway is that the dependency-tree risk is scary enough to re-evaluate dependencies, and he increasingly prefers having LLMs 'yoink' simple functionality instead of taking a dependency. Quotes Daniel Hnyk's original compromise alert (66.6M views). Companion to his DeepWiki 'rip out the functionality' post (x.com/karpathy/status/2021633574089416993).
   posted 2026-03-24 · @karpathy · concept: dependency risk & supply-chain trust — poisoned packages, compromised CAs, and ripping out what you need · url: https://x.com/karpathy/status/2036487306585268612 · links: https://x.com/karpathy/status/2021633574089416993
@@ -4317,17 +4272,11 @@
 - [Meta Alchemist](https://x.com/meta_alchemist/status/2029430826128293906) — 2026-03-05: Roundup of 10 open-source AI memory layers (free, popular on GitHub, some YC-funded) to give coding agents like Claude and Codex better recall than plain memory.md files, with notes on what each is good at and how to combine them. Engagement-styled listicle but substantive.
   posted 2026-03-05 · @meta_alchemist · concept: vector / hybrid databases as agent-memory infrastructure · url: https://x.com/meta_alchemist/status/2029430826128293906
 
-- [Sukh Sroay](https://x.com/sukh_saroy/status/2029400474739458379) — 2026-03-05: [Post unavailable — account suspended]
-  posted 2026-03-05 · @sukh_saroy · url: https://x.com/sukh_saroy/status/2029400474739458379
-
 - [Daniel San](https://x.com/dani_avila7/status/2029399100240674929) — 2026-03-05: Points to a full Skill in the Anthropic repo as a reference for SKILL.md structure and language support, arguing every company should maintain an internal repository of reusable Skills and components.
   posted 2026-03-05 · @dani_avila7 · 27.3K views · concept: context economy — routing tables beat big context · url: https://x.com/dani_avila7/status/2029399100240674929
 
 - [Dickson Tsai](https://x.com/dickson_tsai/status/2029235808235078095) — 2026-03-05: Dickson Tsai (Anthropic) announced HTTP hooks in Claude Code — a more secure, easier alternative to command hooks: CC POSTs each hook event to a URL you choose and awaits a response, so you can build a web app to view progress, manage permissions, run hook logic server-side, and manage state across agents via a DB. Works everywhere hooks are supported, including plugins, custom agents, and enterprise managed settings. Docs: code.claude.com/docs/en/hooks
   posted 2026-03-04 · @dickson_tsai · 398.3K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/dickson_tsai/status/2029235808235078095 · links: https://code.claude.com/docs/en/hooks
-
-- [witcheer ☯︎](https://x.com/witcheer/status/2029013946701381978) — 2026-03-05: [Post unavailable — page doesn’t exist (same status as nummanali)]
-  posted 2026-03-04 · @witcheer · 100000 views · url: https://x.com/witcheer/status/2029013946701381978
 
 - [klöss](https://x.com/kloss_xyz/status/2028237936848994369) — 2026-03-02: Flags Anthropic's free AI academy — 13 courses with official certificates covering MCP, APIs, Claude Code, and AI fluency, at anthropic.skilljar.com. Hype framing ('stop what you're doing') but a genuinely useful free resource.
   posted 2026-03-01 · @kloss_xyz · 1.6M views · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/kloss_xyz/status/2028237936848994369 · links: https://anthropic.skilljar.com
@@ -4350,9 +4299,6 @@
 - [Aakash Gupta](https://x.com/aakashgupta/status/2026367615602667784) — 2026-02-25: Aakash Gupta, building on a Karpathy quote, argues agents are the new distribution channel for software: they call CLIs and MCP servers and read docs programmatically rather than browsing marketing sites. MCP hit 97M monthly SDK downloads and 10k+ servers in a year and was donated to the Linux Foundation. Winners of the next 24 months build agent-accessible surface area (CLIs, MCP endpoints, machine-readable docs) now.
   posted 2026-02-24 · @aakashgupta · 504.7K views · url: https://x.com/aakashgupta/status/2026367615602667784
 
-- [Akshay 🚀](https://x.com/akshay_pachaar/status/2025767534159835443) — 2026-02-21: [Post unavailable - page doesn't exist]
-  posted 2026-02-23 · @akshay_pachaar · 83000 views · url: https://x.com/akshay_pachaar/status/2025767534159835443
-
 - [tuna](https://x.com/tunahorse21/status/2024974148259512677) — 2026-02-21: tuna signal-boosts Alex Fazio introducing Plankton, a 'slop guard' for LLM coding agents. It aims to break the loop of copy-pasting pre-commit/linting errors back into the agent by enforcing lint rules the model can't cheat around.
   posted 2026-02-20 · @tunahorse21 · 24.7K views · url: https://x.com/tunahorse21/status/2024974148259512677
 
@@ -4361,9 +4307,6 @@
 
 - [Matt Dancho (Business Science)](https://x.com/mdancho84/status/2023738764841894352) — 2026-02-18: Matt Dancho argues that becoming a '10X engineer' now comes down to a well-crafted SKILLS.md file, teasing a thread/resource on how to build one. High-engagement post (~1.1M views) with a lead-gen hook.
   posted 2026-02-17 · @mdancho84 · 1.1M views · concept: founder philosophy & life-design essays · url: https://x.com/mdancho84/status/2023738764841894352
-
-- [Pavol Lupták](https://x.com/wilderko/status/2025159534159835443) — 2026-02-15: [Post unavailable - page doesn't exist]
-  posted 2026-02-21 · @wilderko · 130K views · url: https://x.com/wilderko/status/2025159534159835443
 
 - [kitze](https://x.com/thekitze/status/2021494167113990464) — 2026-02-12: kitze boosts Maximiliano Firtman's note that Chrome 146 ships an early flagged preview of WebMCP, which lets AI agents query and execute a web app's services without driving the UI like a human. Services are declared imperatively via a navigator.modelContext API or declaratively through a form; kitze calls exposing them 'the new responsive design.'
   posted 2026-02-11 · @thekitze · 84.8K views · url: https://x.com/thekitze/status/2021494167113990464
@@ -4847,7 +4790,7 @@
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
   @tom-doerr · concept: agent identity files (SOUL.md, CLAUDE.md, persona scaffolds) · url: https://github.com/tom-doerr/dotfiles/blob/master/instruction.md
 
-### Research (264)
+### Research (260)
 
 - [elvis](https://x.com/omarsar0/status/2112632133357346889) — 2026-10-21: Elvis (DAIR.AI) says to learn to build evals and recommends Hamel Husain's new post on using decision models for evals (choosing a model and tuning its threshold rather than defaulting to 0.5), plus his own resources on using fast 'System One' decision models like Jev as LLM judges: academy.dair.ai Jev-as-a-Judge resources and arxiv.org/abs/2609.26550.
   posted 2026-10-20 · @omarsar0 · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/omarsar0/status/2112632133357346889 · links: https://arxiv.org/abs/2609.26550
@@ -5389,9 +5332,6 @@
 - [Akshay](https://x.com/akshay_pachaar/status/2047220248081015110) — 2026-04-23: Akshay extends Karpathy's wiki idea: a markdown wiki works for static knowledge but breaks for multi-entity questions like 'which authors moved from Google to Anthropic between 2022-2024 and what did they publish after?' A wiki can only answer that if someone already wrote the article; a graph (entities + relations + dates) lets you ask any variation directly. Argues the next step beyond LLM-maintained wikis is LLM-maintained knowledge graphs.
   posted 2026-04-23 · @akshay_pachaar · url: https://x.com/akshay_pachaar/status/2047220248081015110
 
-- [How To AI](https://x.com/howtoai_/status/2047187640781541882) — 2026-04-23: [Post unavailable — page doesn't exist]
-  posted 2026-04-23 · @HowToAI_ · url: https://x.com/howtoai_/status/2047187640781541882
-
 - [TRAE](https://x.com/trae_ai/status/2047145274200768969) — 2026-04-23: TRAE's 'Definitive Guide to Harness Engineering' X article — frames harness engineering as the 2026 successor to prompt + context engineering. Term coined by Mitchell Hashimoto (HashiCorp co-founder); gained traction via an OpenAI report. Horse-and-reins metaphor: AI Agent = SOTA Model (wild horse) + Harness (control system) = Elite Performer. Foundational reading for the harness-engineering concept thread alongside Rahul/walkinglabs/Anthropic papers.
   posted 2026-04-23 · @trae_ai · 372K views · concept: agent harness engineering · url: https://x.com/trae_ai/status/2047145274200768969
 
@@ -5551,20 +5491,11 @@
 - [Sandhya](https://x.com/agenticgirl/status/2028006725538967614) — 2026-03-02: 'BREAKING'-style but substantive thread on LMCache, an open-source KV-cache layer (6.9K stars, used by Google Cloud, CoreWeave, NVIDIA) that makes the LLM KV cache persistent and shareable across engine instances, tiered GPU→DRAM→disk→S3. Enables instant RAG, disaggregated prefill, and context sharing; integrates with vLLM and SGLang. Apache-2.0, pip install lmcache.
   posted 2026-03-01 · @agenticgirl · 141.9K views · url: https://x.com/agenticgirl/status/2028006725538967614
 
-- [AVB](https://x.com/neural_avb/status/2027957534159835443) — 2026-03-01: [Post unavailable — page doesn't exist]
-  posted 2026-03-01 · @neural_avb · 4K views · url: https://x.com/neural_avb/status/2027957534159835443
-
 - [Sudo su](https://x.com/sudoingx/status/2027264446989848613) — 2026-02-27: Practical steering tips for local coding agents: tell the model its own architecture/constraints (e.g. Qwen3.5 fires 8 of 256 experts/token), give project structure over single prompts, iterate in layers (scaffold → refine → polish), let it debug its own failures, and use long context (262K) to hold the whole project. Notes Claude Code as a solid harness and that llama.cpp merged native Anthropic endpoints (no proxy/LiteLLM). Argues the skill gap in local inference is now the harness and steering, not the models — all on a single RTX 3090.
   posted 2026-02-27 · @sudoingX · 7,948 views · concept: loop engineering · url: https://x.com/sudoingx/status/2027264446989848613
 
-- [Brian Roemmele](https://x.com/BrianRoemmele/status/2027169646485729698) — 2026-02-27: [Post unavailable — page doesn't exist]
-  posted 2026-02-26 · @brianroemmele · 507K views · url: https://x.com/BrianRoemmele/status/2027169646485729698
-
 - [Fernando](https://x.com/franc0fernand0/status/2026701684106313791) — 2026-02-27: Fernando summarizes a Microsoft study (Kalliamvakou et al., TSE 2018) on what makes a great manager of software engineers: technical skill is required but not sufficient; what distinguished great managers was availability, granting autonomy, supporting experimentation, and setting clear ways of working.
   posted 2026-02-25 · @Franc0Fernand0 · 84.5K views · url: https://x.com/franc0fernand0/status/2026701684106313791 · links: https://x.com/Franc0Fernand0/status/2026701684106313791
-
-- [Sukh Sroay](https://x.com/sukh_saroy/status/2026624254800965848) — 2026-02-27: [Post unavailable — account suspended]
-  posted 2026-02-25 · @sukh_saroy · url: https://x.com/sukh_saroy/status/2026624254800965848
 
 - [Ejaaz](https://x.com/cryptopunk7213/status/2025761121328582814) — 2026-02-23: Ejaaz's weekly AI recap: Google shipped Gemini 3.1 (underwhelming to critics) but followed with Lyria 3 song generation and Pomelli one-shot product photoshoots; Microsoft demoed data storage on glass (~10,000-year retention, cheaper than silica); and Taalus fused an AI model directly into silicon at ~17,000 tokens/sec (~17x faster than typical inference).
   posted 2026-02-23 · @cryptopunk7213 · url: https://x.com/cryptopunk7213/status/2025761121328582814
@@ -5641,7 +5572,7 @@
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.
   posted 2024-06-10 · @svpino · 1M views · url: https://x.com/svpino/status/1800151091461652740
 
-### Industry (145)
+### Industry (143)
 
 - [Mia](https://x.com/miaai_lab/status/2112678922412241245) — 2026-10-21: Mia reports hands-on impressions of Drama TensorFold (github.com/plotarmordev/drama-tensorfold), an open voice-cloning/speech tool that runs locally on a GPU (about 38.2 GB memory), supports multiple languages in one cloned voice. Quotes the creator (netrunner/plotarmordev) who notes a quantized version is in the works. Enthusiastic first-person review, so take the 'blown away' framing as unverified.
   posted 2026-10-20 · @miaai_lab · concept: local model serving on consumer GPUs — quantization & throughput · url: https://x.com/miaai_lab/status/2112678922412241245 · links: https://github.com/plotarmordev/drama-tensorfold
@@ -5931,9 +5862,6 @@
 - [Kevin Simback](https://x.com/ksimback/status/2045120939680038923) — 2026-04-18: Kevin Simback shares his article "The AI Agent Moat Is Real, but Narrower Than You Think," arguing that the durable moat in the agent space isn't the harness itself but lies elsewhere, after going deep on where to invest and build in the agent space.
   posted 2026-04-17 · @KSimback · 569 views · concept: agent harness engineering · url: https://x.com/ksimback/status/2045120939680038923
 
-- [PolyArb](https://x.com/usepolyarb/status/2045109166599963026) — 2026-04-18: [Post unavailable — page doesn't exist]
-  posted 2026-04-17 · @usepolyarb · 219K views · url: https://x.com/usepolyarb/status/2045109166599963026
-
 - [Eric Hartford](https://x.com/quixiai/status/2044952124568527298) — 2026-04-18: Eric Hartford releases Clearwing, an MIT-licensed open-source vulnerability-discovery engine that reproduces Anthropic's "Project Glasswing" results with any LLM. His argument: the real innovation isn't the gated Claude Mythos model but the model-agnostic pipeline, rank files by attack surface, fan out hundreds of file-scoped agents, use crash oracles (AddressSanitizer/UBSan) as ground truth, and run a verification agent to filter noise. Reproduced findings with OpenAI Codex 5.4 and a Qwen3.5 finetune.
   posted 2026-04-17 · @QuixiAI · 211.6K views · concept: local model serving on consumer GPUs — quantization & throughput · url: https://x.com/quixiai/status/2044952124568527298 · links: https://github.com/Lazarus-AI/clearwing
 
@@ -6035,9 +5963,6 @@
 
 - [SightBringer](https://x.com/_the_prophet__/status/2027235489930191056) — 2026-02-27: Critique of AI auto-memory (quote-tweeting Anthropic's Claude auto-memory announcement) as a "power grab disguised as convenience": capturing your patterns, defaults, and definitions of 'good' shifts the model from serving you to shaping you, and dependency is the business model. Counter-playbook: treat memory as a controlled instrument — scope it like permissions, separate persona from operations, keep a purge cycle, audit what the model believes about you, and never let it silently rewrite your intent. Frames the AI era as shifting from intelligence to custody of context/continuity.
   posted 2026-02-27 · @_The_Prophet__ · 34.8K views · concept: vibecode-to-production via agent skills · url: https://x.com/_the_prophet__/status/2027235489930191056 · links: https://x.com/trq212/status/2027... 
-
-- [Brian Roemmele](https://x.com/BrianRoemmele/status/2027169646485729698) — 2026-02-27: [Post unavailable — page doesn't exist]
-  posted 2026-02-26 · @brianroemmele · 507K views · url: https://x.com/BrianRoemmele/status/2027169646485729698
 
 - [Aakash Gupta](https://x.com/aakashgupta/status/2026367615602667784) — 2026-02-25: Aakash Gupta, building on a Karpathy quote, argues agents are the new distribution channel for software: they call CLIs and MCP servers and read docs programmatically rather than browsing marketing sites. MCP hit 97M monthly SDK downloads and 10k+ servers in a year and was donated to the Linux Foundation. Winners of the next 24 months build agent-accessible surface area (CLIs, MCP endpoints, machine-readable docs) now.
   posted 2026-02-24 · @aakashgupta · 504.7K views · url: https://x.com/aakashgupta/status/2026367615602667784
@@ -6696,7 +6621,7 @@
 - [zostaff](https://x.com/zostaff/status/2033930728044372275) — 2026-03-18: zostaff's clickbait-titled ('How to Quit Your Job in One Day') walkthrough of an autonomous Polymarket trading system built from three agents: Claude (strategist — probability/recommendation/confidence), Codex (engineer — writes and debugs bot code), and OpenClaw (orchestrator — persistent memory, cron, modular skills, Telegram interface that executes trades and logs everything).
   posted 2026-03-17 · @zostaff · 3M views · concept: prediction-market & crypto trading bots · url: https://x.com/zostaff/status/2033930728044372275
 
-### Questionable (151)
+### Questionable (149)
 
 - [rody](https://x.com/0x_rody/status/2112588144944062840) — 2026-10-21: Hype post claiming 'grok bot' plus 'jev' will make more millionaires than crypto, pointing to the author's article 'How To Wire Jev Into Grok Bot': give the bot a router skill, leave it logging for a week so it stops retrying the same failures on its cloud shell. Engagement-bait packaging ('don't scroll past', 'thank me later'); the underlying idea is a router skill plus decision-logging loop for agents.
   posted 2026-10-20 · @0x_rody · 145.3K views · url: https://x.com/0x_rody/status/2112588144944062840
@@ -7079,9 +7004,6 @@
 - [Meta Alchemist](https://x.com/meta_alchemist/status/2029430826128293906) — 2026-03-05: Roundup of 10 open-source AI memory layers (free, popular on GitHub, some YC-funded) to give coding agents like Claude and Codex better recall than plain memory.md files, with notes on what each is good at and how to combine them. Engagement-styled listicle but substantive.
   posted 2026-03-05 · @meta_alchemist · concept: vector / hybrid databases as agent-memory infrastructure · url: https://x.com/meta_alchemist/status/2029430826128293906
 
-- [Sukh Sroay](https://x.com/sukh_saroy/status/2029400474739458379) — 2026-03-05: [Post unavailable — account suspended]
-  posted 2026-03-05 · @sukh_saroy · url: https://x.com/sukh_saroy/status/2029400474739458379
-
 - [Tech Layoff Tracker](https://x.com/techlayofflover/status/2029261882834501665) — 2026-03-05: Shares a venting DM from a senior Big Tech SWE (~$350k TC): leadership now touts an "AI leverage ratio" of 4.2x — each engineer shipping the output of a former four-person team — fueling job anxiety. Engagement-styled but a real signal on AI-driven productivity expectations and layoffs.
   posted 2026-03-04 · @techlayofflover · concept: elite-skill masterclass content · url: https://x.com/techlayofflover/status/2029261882834501665
 
@@ -7099,9 +7021,6 @@
 
 - [Machina](https://x.com/exm7777/status/2026666140987175221) — 2026-02-27: Engagement-farming post ('the ONLY skill you will ever need for Claude, Codex or Openclaw', 'this skill will change your life') quote-tweeting the author's own X article. Behind the hype the underlying topic is a meta-skill/prompting framework meant to change how AI reasons for you; content quality behind the clickbait is unverified.
   posted 2026-02-25 · @EXM7777 · 65.1K views · concept: context economy — routing tables beat big context · url: https://x.com/exm7777/status/2026666140987175221 · links: https://x.com/EXM7777/status/2026666140987175221
-
-- [Sukh Sroay](https://x.com/sukh_saroy/status/2026624254800965848) — 2026-02-27: [Post unavailable — account suspended]
-  posted 2026-02-25 · @sukh_saroy · url: https://x.com/sukh_saroy/status/2026624254800965848
 
 - [Ejaaz](https://x.com/cryptopunk7213/status/2025761121328582814) — 2026-02-23: Ejaaz's weekly AI recap: Google shipped Gemini 3.1 (underwhelming to critics) but followed with Lyria 3 song generation and Pomelli one-shot product photoshoots; Microsoft demoed data storage on glass (~10,000-year retention, cheaper than silica); and Taalus fused an AI model directly into silicon at ~17,000 tokens/sec (~17x faster than typical inference).
   posted 2026-02-23 · @cryptopunk7213 · url: https://x.com/cryptopunk7213/status/2025761121328582814
@@ -7151,7 +7070,7 @@
 - [Aakash Gupta](https://x.com/aakashg0/status/1967135994228166848) — 2025-09-15: Boosts another user's step-by-step roadmap for building your first AI agent, calling it 'gold.' Engagement-style framing; the substantive content lives in the referenced roadmap rather than the post itself.
   posted 2025-09-14 · @aakashgupta · 573.1K views · url: https://x.com/aakashg0/status/1967135994228166848
 
-### General (101)
+### General (45)
 
 - [Tony Simons](https://x.com/tonysimons_/status/2090612261349908991) — 2026-08-21: Part 3 of a Hermes Desktop masterclass series, covering the move from treating it as a chatbot to using it as a workspace: sessions, projects, files, previews, attachments, multiple windows, model switching, queues, interruptions, and persistent workspaces. Parts 1 and 2 covered what Hermes Desktop is and how to install and configure it. Product-usage material rather than architecture.
   posted 2026-08-21 · @tonysimons_ · 7,110 views · concept: persistent always-on agents — bot mode & agent desktops · url: https://x.com/tonysimons_/status/2090612261349908991
@@ -7179,9 +7098,6 @@
 
 - [hoeem](https://x.com/hooeem/status/2070072775201444118) — 2026-06-25: Engagement-bait post hyping a quote-tweeted "how to escape the rat race and become financially free" article. No substantive AI content; clickbait framing ("most important article you'll read").
   posted 2026-06-25 · @hooeem · 62.5K views · concept: founder philosophy & life-design essays · url: https://x.com/hooeem/status/2070072775201444118
-
-- [Shenyang Deng](https://x.com/dengshenyang24/status/2065853130567279073) — 2026-06-15: [Post unavailable - page doesn't exist]
-  posted 2026-06-13 · @dengshenyang24 · url: https://x.com/dengshenyang24/status/2065853130567279073
 
 - [Lorwen Harris Nagle, PhD](https://x.com/lorwen108/status/2065852553208992218) — 2026-06-14: Motivational thread linking Elon Musk and Nietzsche to overcoming teenage depression and anxiety through imagination rather than analysis. Pop-psychology framing with no sourcing behind the psychological claims.
   posted 2026-06-13 · @lorwen108 · 201.6K views · url: https://x.com/lorwen108/status/2065852553208992218
@@ -7237,9 +7153,6 @@
 - [Ihtesham Ali](https://x.com/ihtesham2005/status/2046197374855582157) — 2026-04-21: Popularizes George Pólya's 'How to Solve It' (1945) — the problem-solving framework about what to do before you start solving, which Minsky publicly recommended and which has stayed in print for eighty years. Non-engineering in origin but directly applicable to prompting and agent task decomposition, where the same failure appears: jumping to a solution without first characterizing the problem.
   posted 2026-04-20 · @ihtesham2005 · 304.7K views · concept: thinking tools & problem-solving method · url: https://x.com/ihtesham2005/status/2046197374855582157
 
-- [PolyArb](https://x.com/usepolyarb/status/2045109166599963026) — 2026-04-18: [Post unavailable — page doesn't exist]
-  posted 2026-04-17 · @usepolyarb · 219K views · url: https://x.com/usepolyarb/status/2045109166599963026
-
 - [Viv](https://x.com/vtrivedy10/status/2044430694458310870) — 2026-04-15: Recommends Hunter Leath (@jhleath) as a frontier practitioner writing openly about storage and filesystems, pointing at his article 'Bash is the SQL for file systems' — which frames shell tooling as the query language for filesystems and opens on cloud egress fees. A pointer to a person and a body of writing rather than a single artifact.
   posted 2026-04-15 · @vtrivedy10 · 48.7K views · url: https://x.com/vtrivedy10/status/2044430694458310870
 
@@ -7270,173 +7183,17 @@
 - [Bojan Tunguz](https://x.com/tunguz/status/2029164042028236942) — 2026-03-05: Reflects on "mid season" knowledge — many roles require grappling with a problem mid-stream without enough runway to catch up on missing context, something even smart people underestimate.
   posted 2026-03-04 · @tunguz · 17.5K views · concept: management & organizational culture · url: https://x.com/tunguz/status/2029164042028236942
 
-- [Dickson Tsai]([not found]) — 2026-03-05: [Superseded — re-keyed to canonical post 2029235808235078095]
-  @dickson_tsai · [not found] views · url: [not found]
-
 - [vixhaℓ](https://x.com/thevixhal/status/2027763453679841311) — 2026-03-02: Promotes a popular step-by-step article on building a 16-bit CPU from scratch in C (4,000+ bookmarks). A from-scratch systems/architecture learning project rather than AI content.
   posted 2026-02-28 · @TheVixhal · 161.3K views · url: https://x.com/thevixhal/status/2027763453679841311
 
 - [Machina](https://x.com/exm7777/status/2019787951530725396) — 2026-02-07: Machina's thread on how to stop feeling behind in AI: the relentless cadence of releases (GPT-5.3 Codex, Opus 4.6, Kling 3.0, all 'redefining everything') creates a low-grade, never-ending pressure. His reframe is that the problem isn't too much happening, it's the lack of a personal filter for what actually matters to your work.
   posted 2026-02-06 · @EXM7777 · 817K views · concept: vibecode-to-production via agent skills · url: https://x.com/exm7777/status/2019787951530725396
 
-- [Yishan](https://x.com/yishan/status/2012067968331710639) — 2026-01-16: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-16 · @yishan · url: https://x.com/yishan/status/2012067968331710639
-
-- [Bojan Tunguz](https://x.com/tunguz/status/2011949233658925298) — 2026-01-16: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-15 · @tunguz · url: https://x.com/tunguz/status/2011949233658925298
-
-- [Meta Alchemist](https://x.com/meta_alchemist/status/2010882913784070231) — 2026-01-16: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-13 · @meta_alchemist · url: https://x.com/meta_alchemist/status/2010882913784070231
-
-- [Simplifying AI](https://x.com/simplifyinAI/status/2010878423325364233) — 2026-01-16: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-13 · @simplifyinAI · url: https://x.com/simplifyinAI/status/2010878423325364233
-
-- [Sahil Bloom](https://x.com/SahilBloom/status/2010703181900464151) — 2026-01-16: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-12 · @SahilBloom · url: https://x.com/SahilBloom/status/2010703181900464151
-
-- [geoff](https://x.com/GeoffreyHuntley/status/2010567043629113814) — 2026-01-15: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-12 · @GeoffreyHuntley · url: https://x.com/GeoffreyHuntley/status/2010567043629113814
-
-- [will brown](https://x.com/willccbb/status/2010547008387408150) — 2026-01-15: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-12 · @willccbb · url: https://x.com/willccbb/status/2010547008387408150
-
-- [James Shields](https://x.com/scaling_shields/status/2010413738506264649) — 2026-01-15: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-11 · @scaling_shields · url: https://x.com/scaling_shields/status/2010413738506264649
-
-- [siddhi surana](https://x.com/siddhisurana/status/2010361699087921253) — 2026-01-15: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-11 · @justsiddaay · url: https://x.com/siddhisurana/status/2010361699087921253
-
-- [Jaime Jorge](https://x.com/jaimefjorge/status/2010254648389550243) — 2026-01-15: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-11 · @jaimefjorge · url: https://x.com/jaimefjorge/status/2010254648389550243
-
-- [BOOTOSHI](https://x.com/KingBootoshi/status/2010002905316757751) — 2026-01-14: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-10 · @KingBootoshi · url: https://x.com/KingBootoshi/status/2010002905316757751
-
-- [Matt Pocock](https://x.com/mpocock/status/2009888462821732368) — 2026-01-14: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-10 · @mattpocockuk · url: https://x.com/mpocock/status/2009888462821732368
-
 - [fintechjunkie](https://x.com/fintechjunkie/status/2010910565279961423) — 2026-01-13: fintechjunkie gives a glowing, no-edits endorsement of a Dan Koe (@thedankoe) long-form article titled 'How to fix your entire life in 1 day' — a self-improvement/productivity piece rather than an AI or engineering topic. Off-theme for the collection; kept for completeness.
   posted 2026-01-13 · @fintechjunkie · 1M views · concept: founder philosophy & life-design essays · url: https://x.com/fintechjunkie/status/2010910565279961423
 
-- [bluecow](https://x.com/bluecow/status/2009065743606194185) — 2026-01-12: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-08 · @BLUECOW009 · url: https://x.com/bluecow/status/2009065743606194185
-
-- [Nozz](https://x.com/nozz/status/2008835341649346666) — 2026-01-12: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-07 · @NoahEpstein_ · url: https://x.com/nozz/status/2008835341649346666
-
-- [Nick Dobos](https://x.com/dobosn/status/2008036181346656365) — 2026-01-10: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-05 · @NickADobos · url: https://x.com/dobosn/status/2008036181346656365
-
-- [Param](https://x.com/param_bharadwaj/status/2007915284024619160) — 2026-01-10: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-04 · @Param_eth · url: https://x.com/param_bharadwaj/status/2007915284024619160
-
-- [Felipe Coury](https://x.com/felipecoury/status/2007882656892014636) — 2026-01-10: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-04 · @fcoury · url: https://x.com/felipecoury/status/2007882656892014636
-
-- [kitze](https://x.com/kitze/status/2007809540919521316) — 2026-01-10: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-04 · @thekitze · url: https://x.com/kitze/status/2007809540919521316
-
-- [Rohit](https://x.com/rohitxo/status/2007748502661742686) — 2026-01-10: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-04 · @rohit4verse · url: https://x.com/rohitxo/status/2007748502661742686
-
-- [Aakash Gupta](https://x.com/AakashGuptaGH/status/2007704814065365016) — 2026-01-10: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-04 · @aakashgupta · url: https://x.com/AakashGuptaGH/status/2007704814065365016
-
-- [elvis](https://x.com/elvisnguyen/status/2007665597046087848) — 2026-01-10: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-04 · @omarsar0 · url: https://x.com/elvisnguyen/status/2007665597046087848
-
-- [nader dabit](https://x.com/dabit3/status/2007623542340276413) — 2026-01-10: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-04 · @dabit3 · url: https://x.com/dabit3/status/2007623542340276413
-
-- [dei](https://x.com/delilahime/status/2007599629893906627) — 2026-01-10: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-03 · @parcadei · url: https://x.com/delilahime/status/2007599629893906627
-
-- [Brandon Gell](https://x.com/brandongell/status/2007537024606646369) — 2026-01-10: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-03 · @bran_don_gell · url: https://x.com/brandongell/status/2007537024606646369
-
-- [Alex Hillman](https://x.com/alexhillman/status/2007195403503431942) — 2026-01-09: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-02 · @alexhillman · url: https://x.com/alexhillman/status/2007195403503431942
-
-- [dei](https://x.com/delilahime/status/2007112398968512604) — 2026-01-09: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-02 · @parcadei · url: https://x.com/delilahime/status/2007112398968512604
-
-- [Lior Alexander](https://x.com/lioralexander/status/2006763456879984843) — 2026-01-08: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-01 · @LiorOnAI · url: https://x.com/lioralexander/status/2006763456879984843
-
-- [Josh Pigford](https://x.com/joshpigford/status/2006722184752509040) — 2026-01-08: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-01 · @Shpigford · url: https://x.com/joshpigford/status/2006722184752509040
-
-- [Tom Dörr](https://x.com/tom_dorr/status/2006640889625956454) — 2026-01-08: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-01 · @tom_doerr · url: https://x.com/tom_dorr/status/2006640889625956454
-
-- [Ryan Carson](https://x.com/ryancarson/status/2006579357155549261) — 2026-01-08: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-01 · @ryancarson · url: https://x.com/ryancarson/status/2006579357155549261
-
-- [Jeffrey Emanuel](https://x.com/jfemanuel13/status/2006283589341868394) — 2026-01-07: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-31 · @doodlestein · url: https://x.com/jfemanuel13/status/2006283589341868394
-
-- [Tech with Mak](https://x.com/TechWithMak/status/2006215651880165597) — 2026-01-07: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-31 · @techNmak · url: https://x.com/TechWithMak/status/2006215651880165597
-
-- [Obie Fernandez](https://x.com/obiefernandez/status/2006152066925707274) — 2026-01-07: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-30 · @obie · url: https://x.com/obiefernandez/status/2006152066925707274
-
-- [Melvin Vivas](https://x.com/melvinator/status/2006020697936482443) — 2026-01-07: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-30 · @donvito · url: https://x.com/melvinator/status/2006020697936482443
-
-- [Sumanth](https://x.com/Sumanth_077/status/2005956018357575750) — 2026-01-07: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-30 · @Sumanth_077 · url: https://x.com/Sumanth_077/status/2005956018357575750
-
-- [Md Ismail](https://x.com/mdismail/status/2005671283621953665) — 2026-01-06: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-29 · @0x0SojalSec · url: https://x.com/mdismail/status/2005671283621953665
-
-- [Simplifying AI](https://x.com/simplifyinAI/status/2005513621646409748) — 2026-01-06: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-29 · @simplifyinAI · url: https://x.com/simplifyinAI/status/2005513621646409748
-
-- [Josh Schultz](https://x.com/jschultzme/status/2005421815916028959) — 2026-01-06: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-28 · @joshuamschultz · url: https://x.com/jschultzme/status/2005421815916028959
-
-- [Trending GitHub](https://x.com/TrendingGitHubl/status/2005310239286649010) — 2026-01-06: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-28 · @trending_repos · url: https://x.com/TrendingGitHubl/status/2005310239286649010
-
-- [The Boring Marketer](https://x.com/BoringMarketer/status/2005239063816110289) — 2026-01-06: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-28 · @boringmarketer · url: https://x.com/BoringMarketer/status/2005239063816110289
-
-- [Tom Dörr](https://x.com/tom_dorr/status/2005167892304969882) — 2026-01-06: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-28 · @tom_doerr · url: https://x.com/tom_dorr/status/2005167892304969882
-
-- [Santiago](https://x.com/santiagoemeli/status/2005035706842611040) — 2026-01-06: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-27 · @svpino · url: https://x.com/santiagoemeli/status/2005035706842611040
-
-- [hoeem](https://x.com/hoeemlim/status/2004948633556197506) — 2026-01-06: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-27 · @hooeem · url: https://x.com/hoeemlim/status/2004948633556197506
-
-- [Matt Pocock](https://x.com/mpocock/status/2004505491297665063) — 2026-01-05: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-26 · @mattpocockuk · url: https://x.com/mpocock/status/2004505491297665063
-
-- [Daniel San](https://x.com/dcsan/status/2003544127356903508) — 2026-01-03: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-23 · @dani_avila7 · url: https://x.com/dcsan/status/2003544127356903508
-
-- [sankalp](https://x.com/sankalpdev/status/2003384719234969898) — 2026-01-03: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-23 · @dejavucoder · url: https://x.com/sankalpdev/status/2003384719234969898
-
-- [CloudAI-X](https://x.com/CloudAI_X/status/2003298874369306643) — 2026-01-03: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-23 · @cloudxdev · url: https://x.com/CloudAI_X/status/2003298874369306643
-
-- [Grok](https://x.com/XAI/status/2003101023145590851) — 2026-01-03: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-22 · @grok · url: https://x.com/XAI/status/2003101023145590851
-
-- [Yu Lin](https://x.com/yulintwt/status/2004537183978590695) — 2025-12-27: [Post unavailable — account suspended; verified 2026-08-21]
-  posted 2025-12-26 · @yulintwt · url: https://x.com/yulintwt/status/2004537183978590695
-
 - [Abhishek Singh](https://x.com/0xlelouch_/status/2002673253912113644) — 2025-12-22: A reflective essay on career fulfillment in software engineering: you don't magically know whether backend, frontend, infra, ML, startups, big tech, or management will fulfill you — you only find out through reps. Early on people confuse novelty (new frameworks, jobs, titles) with fulfillment; real self-knowledge is earned by shipping boring features, debugging 3am outages, owning systems, and sticking with things long enough to feel the responsibility.
   posted 2025-12-21 · @0xlelouch_ · 25.7K views · url: https://x.com/0xlelouch_/status/2002673253912113644
-
-- [Hayes](https://x.com/hayesdev_/status/1996897853642592428) — 2025-12-07: [Post unavailable — account suspended; verified 2026-08-21]
-  posted 2025-12-05 · @hayesdev_ · url: https://x.com/hayesdev_/status/1996897853642592428
-
-- [Hayes](https://x.com/neatprompts/status/1981241949173825687) — 2025-10-24: [Post unavailable — account suspended; verified 2026-08-21]
-  posted 2025-10-23 · @neatprompts · url: https://x.com/neatprompts/status/1981241949173825687
 
 - [keshav](https://x.com/kshvbgde/status/1974835291358969895) — 2025-10-07: Post (likely video/thread) on Steve Jobs's principles for designing insanely great products.
   posted 2025-10-05 · @kshvbgde · 783.8K views · concept: founder philosophy & life-design essays · url: https://x.com/kshvbgde/status/1974835291358969895
@@ -7446,12 +7203,6 @@
 
 - [maxleedev](https://x.com/maxleedev/status/1962938769914658984) — 2025-09-03: Announces a canvas-style interface for LLMs, built in response to a viral post arguing chat UIs need git-like branching/forking of conversations to explore alternate threads without derailing the main one.
   posted 2025-09-02 · @maxleedev · 2.1M views · url: https://x.com/maxleedev/status/1962938769914658984
-
-- [Aadit Sheth](https://x.com/aaditsh/status/1953462911961374889) — 2025-08-09: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-08-07 · @aaditsh · url: https://x.com/aaditsh/status/1953462911961374889
-
-- [Pau Labarta Bajo](https://x.com/paulabartabajo_/status/1815990574580699209) — 2024-07-25: [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2024-07-24 · @paulabartabajo_ · url: https://x.com/paulabartabajo_/status/1815990574580699209
 
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.
   posted 2024-06-10 · @svpino · 1M views · url: https://x.com/svpino/status/1800151091461652740
@@ -8793,10 +8544,6 @@
   Hype-framed thread on a Dec 31, 2025 MIT CSAIL paper that claims to 'solve' AI memory not by building bigger context windows but by teaching models how to read/retrieve — positioning the result against the industry's context-window arms race and the 'context rot' problem, where a model's performance on information already in context degrades as more is packed in.
   posted 2026-06-14 · @oliviacoder1 · 55.1K views · concept: vector / hybrid databases as agent-memory infrastructure · url: https://x.com/oliviacoder1/status/2066064093552038070
 
-- **2026-06-15** | [Shenyang Deng](https://x.com/dengshenyang24/status/2065853130567279073) | general
-  [Post unavailable - page doesn't exist]
-  posted 2026-06-13 · @dengshenyang24 · url: https://x.com/dengshenyang24/status/2065853130567279073
-
 - **2026-06-14** | [Lorwen Harris Nagle, PhD](https://x.com/lorwen108/status/2065852553208992218) | general, questionable
   Motivational thread linking Elon Musk and Nietzsche to overcoming teenage depression and anxiety through imagination rather than analysis. Pop-psychology framing with no sourcing behind the psychological claims.
   posted 2026-06-13 · @lorwen108 · 201.6K views · url: https://x.com/lorwen108/status/2065852553208992218
@@ -9733,10 +9480,6 @@
   Akshay extends Karpathy's wiki idea: a markdown wiki works for static knowledge but breaks for multi-entity questions like 'which authors moved from Google to Anthropic between 2022-2024 and what did they publish after?' A wiki can only answer that if someone already wrote the article; a graph (entities + relations + dates) lets you ask any variation directly. Argues the next step beyond LLM-maintained wikis is LLM-maintained knowledge graphs.
   posted 2026-04-23 · @akshay_pachaar · url: https://x.com/akshay_pachaar/status/2047220248081015110
 
-- **2026-04-23** | [How To AI](https://x.com/howtoai_/status/2047187640781541882) | research, agent-design
-  [Post unavailable — page doesn't exist]
-  posted 2026-04-23 · @HowToAI_ · url: https://x.com/howtoai_/status/2047187640781541882
-
 - **2026-04-23** | [TRAE](https://x.com/trae_ai/status/2047145274200768969) | agent-design, dev-practices, research
   TRAE's 'Definitive Guide to Harness Engineering' X article — frames harness engineering as the 2026 successor to prompt + context engineering. Term coined by Mitchell Hashimoto (HashiCorp co-founder); gained traction via an OpenAI report. Horse-and-reins metaphor: AI Agent = SOTA Model (wild horse) + Harness (control system) = Elite Performer. Foundational reading for the harness-engineering concept thread alongside Rahul/walkinglabs/Anthropic papers.
   posted 2026-04-23 · @trae_ai · 372K views · concept: agent harness engineering · url: https://x.com/trae_ai/status/2047145274200768969
@@ -9856,10 +9599,6 @@
 - **2026-04-18** | [Kevin Simback](https://x.com/ksimback/status/2045120939680038923) | industry, agent-design
   Kevin Simback shares his article "The AI Agent Moat Is Real, but Narrower Than You Think," arguing that the durable moat in the agent space isn't the harness itself but lies elsewhere, after going deep on where to invest and build in the agent space.
   posted 2026-04-17 · @KSimback · 569 views · concept: agent harness engineering · url: https://x.com/ksimback/status/2045120939680038923
-
-- **2026-04-18** | [PolyArb](https://x.com/usepolyarb/status/2045109166599963026) | industry, general
-  [Post unavailable — page doesn't exist]
-  posted 2026-04-17 · @usepolyarb · 219K views · url: https://x.com/usepolyarb/status/2045109166599963026
 
 - **2026-04-18** | [Eric Hartford](https://x.com/quixiai/status/2044952124568527298) | research, agent-design, dev-practices, industry
   Eric Hartford releases Clearwing, an MIT-licensed open-source vulnerability-discovery engine that reproduces Anthropic's "Project Glasswing" results with any LLM. His argument: the real innovation isn't the gated Claude Mythos model but the model-agnostic pipeline, rank files by attack surface, fan out hundreds of file-scoped agents, use crash oracles (AddressSanitizer/UBSan) as ground truth, and run a verification agent to filter noise. Reproduced findings with OpenAI Codex 5.4 and a Qwen3.5 finetune.
@@ -10455,10 +10194,6 @@
   Opinion piece: AI does not make work easier — it strips away the easy 99% of jobs so everyone now competes on the hard 1%, raising cognitive load and stress sharply. A take on how AI reshapes knowledge work.
   posted 2026-03-05 · @johnrushx · url: https://x.com/johnrushx/status/2029406051716743354
 
-- **2026-03-05** | [Sukh Sroay](https://x.com/sukh_saroy/status/2029400474739458379) | questionable, skills-mcp, agent-design, dev-practices
-  [Post unavailable — account suspended]
-  posted 2026-03-05 · @sukh_saroy · url: https://x.com/sukh_saroy/status/2029400474739458379
-
 - **2026-03-05** | [Daniel San](https://x.com/dani_avila7/status/2029399100240674929) | skills-mcp, claude-code
   Points to a full Skill in the Anthropic repo as a reference for SKILL.md structure and language support, arguing every company should maintain an internal repository of reusable Skills and components.
   posted 2026-03-05 · @dani_avila7 · 27.3K views · concept: context economy — routing tables beat big context · url: https://x.com/dani_avila7/status/2029399100240674929
@@ -10495,14 +10230,6 @@
   Reflects on "mid season" knowledge — many roles require grappling with a problem mid-stream without enough runway to catch up on missing context, something even smart people underestimate.
   posted 2026-03-04 · @tunguz · 17.5K views · concept: management & organizational culture · url: https://x.com/tunguz/status/2029164042028236942
 
-- **2026-03-05** | [witcheer ☯︎](https://x.com/witcheer/status/2029013946701381978) | agent-design, skills-mcp
-  [Post unavailable — page doesn’t exist (same status as nummanali)]
-  posted 2026-03-04 · @witcheer · 100000 views · url: https://x.com/witcheer/status/2029013946701381978
-
-- **2026-03-05** | [Numman Ali](https://x.com/nummanali/status/2029013946701381978) | agent-design
-  [Post unavailable — page doesn’t exist]
-  posted 2026-03-04 · @nummanali · 122K views · url: https://x.com/nummanali/status/2029013946701381978
-
 - **2026-03-05** | [Dan Robinson](https://x.com/danlovesproofs/status/2028890694837039202) | management, dev-practices, agent-design, industry
   Argues issue tracking/backlogs are dying: forward-thinking AI-augmented teams skip Linear/tickets entirely because the cost to fix an issue now approaches the cost to understand it. Works for small, flat, high-context teams with strong dev infra; framed as part of the 'death of midwit software engineering.'
   posted 2026-03-03 · @danlovesproofs · 321.9K views · concept: vibecode-to-production via agent skills · url: https://x.com/danlovesproofs/status/2028890694837039202
@@ -10510,14 +10237,6 @@
 - **2026-03-05** | [Avid](https://x.com/av1dlive/status/2027429188471558475) | questionable, management, agent-design
   Engagement-style 'AI will take your job' listicle, but with a usable career playbook: audit which tasks AI can replicate, learn local agent tooling and stackable 'skills', layer AI-native competence (prompting, orchestration, RAG, automation), shift from executor to system designer, double down on human edge, and build a product/brand.
   posted 2026-02-27 · @Av1dlive · 58.3K views · concept: Forward Deployed Engineers — the durable AI-era role · url: https://x.com/av1dlive/status/2027429188471558475
-
-- **2026-03-05** | [Dickson Tsai]([not found]) | general
-  [Superseded — re-keyed to canonical post 2029235808235078095]
-  @dickson_tsai · [not found] views · url: [not found]
-
-- **2026-03-05** | [Muratcan Koylan](https://x.com/koylanai/status/2032671843) | agent-design
-  [Post unavailable — corrupt status id resolves to unrelated @BizBlogger account]
-  @koylanai · 112K views · url: https://x.com/koylanai/status/2032671843
 
 - **2026-03-04** | [Atharva](https://x.com/atharvaxdevs/status/2028903519802232991) | agent-design, questionable
   A teaser post aimed at engineers chasing the top 0.01% of "agentic engineering" skill (thread/resource hook).
@@ -10530,10 +10249,6 @@
 - **2026-03-03** | [Aarno](https://x.com/theglobalminima/status/2028432457784340950) | research, agent-design
   Suggests software engineers working on agentic AI should study reinforcement learning. As coding agents make custom harnesses/tools easy, the real challenges are behavior control, consistency, memory, and correction — areas where traditional RL on 'agents' intersects fruitfully with LLM agents.
   posted 2026-03-02 · @TheGlobalMinima · 19.8K views · concept: agents as constrained software — making bad shapes unexpressible · url: https://x.com/theglobalminima/status/2028432457784340950
-
-- **2026-03-02** | [Nate Kohari](https://x.com/nkohari/status/2028525461689176325) | dev-practices
-  [Post unavailable — page doesn't exist]
-  posted 2026-03-02 · @nkohari · 81K views · url: https://x.com/nkohari/status/2028525461689176325
 
 - **2026-03-02** | [klöss](https://x.com/kloss_xyz/status/2028237936848994369) | claude-code, skills-mcp, questionable
   Flags Anthropic's free AI academy — 13 courses with official certificates covering MCP, APIs, Claude Code, and AI fluency, at anthropic.skilljar.com. Hype framing ('stop what you're doing') but a genuinely useful free resource.
@@ -10559,10 +10274,6 @@
   Promotes a popular step-by-step article on building a 16-bit CPU from scratch in C (4,000+ bookmarks). A from-scratch systems/architecture learning project rather than AI content.
   posted 2026-02-28 · @TheVixhal · 161.3K views · url: https://x.com/thevixhal/status/2027763453679841311
 
-- **2026-03-01** | [AVB](https://x.com/neural_avb/status/2027957534159835443) | agent-design, research
-  [Post unavailable — page doesn't exist]
-  posted 2026-03-01 · @neural_avb · 4K views · url: https://x.com/neural_avb/status/2027957534159835443
-
 - **2026-03-01** | [Joseph Thacker](https://x.com/rez0__/status/2027448137133264955) | agent-design, claude-code, dev-practices, skills-mcp
   Argues bug bounty / security research changed step-function fast in late 2025: coding agents went from not working to genuinely working. Example: pointed Claude Code at a target's scope (enumerate subdomains, analyze JS bundles, fuzz, test IDORs/GraphQL, write an HTML report); it ran ~30 min, self-recovered from auth/WAF errors, and returned two confirmed vulns. Hunters now build and share custom Claude Code skill libraries (JS static analysis, authenticated fuzzing, IDOR, GraphQL introspection). Quote-tweets Karpathy's parallel observation about programming.
   posted 2026-02-27 · @rez0__ · 86.2K views · concept: managing agent teams · url: https://x.com/rez0__/status/2027448137133264955 · links: https://x.com/karpathy
@@ -10581,14 +10292,6 @@
   Critique of AI auto-memory (quote-tweeting Anthropic's Claude auto-memory announcement) as a "power grab disguised as convenience": capturing your patterns, defaults, and definitions of 'good' shifts the model from serving you to shaping you, and dependency is the business model. Counter-playbook: treat memory as a controlled instrument — scope it like permissions, separate persona from operations, keep a purge cycle, audit what the model believes about you, and never let it silently rewrite your intent. Frames the AI era as shifting from intelligence to custody of context/continuity.
   posted 2026-02-27 · @_The_Prophet__ · 34.8K views · concept: vibecode-to-production via agent skills · url: https://x.com/_the_prophet__/status/2027235489930191056 · links: https://x.com/trq212/status/2027... 
 
-- **2026-02-27** | [Brian Roemmele](https://x.com/BrianRoemmele/status/2027169646485729698) | research, industry
-  [Post unavailable — page doesn't exist]
-  posted 2026-02-26 · @brianroemmele · 507K views · url: https://x.com/BrianRoemmele/status/2027169646485729698
-
-- **2026-02-27** | [Kirk Borne](https://x.com/KirkDBorne/status/2027031353849852309) | agent-design
-  [Post unavailable — page doesn't exist]
-  posted 2026-02-26 · @kirkdborne · 103K views · url: https://x.com/KirkDBorne/status/2027031353849852309
-
 - **2026-02-27** | [George from prodmgmt.world](https://x.com/nurijanian/status/2027020091418890613) | management, dev-practices
   George argues elite PMs escalate documentation with validation rather than starting with a 10-page PRD: 1-pagers are decision docs (write ~10, ~3 get approved), 3-pagers validate and align, and 5-pagers add execution detail only for ideas that survived two rounds. Documentation should match your confidence level, not your anxiety level.
   posted 2026-02-26 · @nurijanian · 15.4K views · url: https://x.com/nurijanian/status/2027020091418890613
@@ -10604,10 +10307,6 @@
 - **2026-02-27** | [Machina](https://x.com/exm7777/status/2026666140987175221) | questionable, skills-mcp, claude-code, prompting
   Engagement-farming post ('the ONLY skill you will ever need for Claude, Codex or Openclaw', 'this skill will change your life') quote-tweeting the author's own X article. Behind the hype the underlying topic is a meta-skill/prompting framework meant to change how AI reasons for you; content quality behind the clickbait is unverified.
   posted 2026-02-25 · @EXM7777 · 65.1K views · concept: context economy — routing tables beat big context · url: https://x.com/exm7777/status/2026666140987175221 · links: https://x.com/EXM7777/status/2026666140987175221
-
-- **2026-02-27** | [Sukh Sroay](https://x.com/sukh_saroy/status/2026624254800965848) | questionable, research, agent-design
-  [Post unavailable — account suspended]
-  posted 2026-02-25 · @sukh_saroy · url: https://x.com/sukh_saroy/status/2026624254800965848
 
 - **2026-02-25** | [Atlas Forge](https://x.com/atlasforgeai/status/2026380335249002843) | agent-design, prompting, dev-practices
   Long-form piece on nine 'meta-learning loops' that let an agent improve across sessions, not just within one: failure-to-guardrail pipelines, tiered memory with trust scoring and decay, prediction-outcome calibration, nightly extraction, friction detection, expiring context holds, plus cognitive loops (epistemic tagging, creative-mode directives, recursive self-improvement). Start with a regressions list; the key is closing the loops so learning compounds.
@@ -10637,10 +10336,6 @@
   Jeremy Daly wrote a 100+ page guide on building multi-tenant, commercial AI agent systems from ~18 months running them inside a large SaaS platform serving hundreds of enterprise customers. Covers hard requirements around tenant isolation, auditability, retention, and cost control, plus orchestration models, retrieval architectures, and evaluation harnesses.
   posted 2026-02-22 · @jeremy_daly · concept: prediction-market & crypto trading bots · url: https://x.com/jeremy_daly/status/2025677417398821351
 
-- **2026-02-21** | [Akshay 🚀](https://x.com/akshay_pachaar/status/2025767534159835443) | agent-design, skills-mcp
-  [Post unavailable - page doesn't exist]
-  posted 2026-02-23 · @akshay_pachaar · 83000 views · url: https://x.com/akshay_pachaar/status/2025767534159835443
-
 - **2026-02-21** | [tuna](https://x.com/tunahorse21/status/2024974148259512677) | dev-practices, agent-design, skills-mcp
   tuna signal-boosts Alex Fazio introducing Plankton, a 'slop guard' for LLM coding agents. It aims to break the loop of copy-pasting pre-commit/linting errors back into the agent by enforcing lint rules the model can't cheat around.
   posted 2026-02-20 · @tunahorse21 · 24.7K views · url: https://x.com/tunahorse21/status/2024974148259512677
@@ -10661,10 +10356,6 @@
   J.B. (VibeMarketer) describes a 'recursive self-improvement loop' skill for Claude: instead of prompting once and shipping, the skill generates output, scores it against explicit criteria, diagnoses weaknesses, rewrites, and re-scores until it clears the bar. Cites @maxwellfinn's image-ad skill that grades concepts on 10 criteria (thumb-stop power, curiosity gap, emotional trigger, persona recognition) and won't stop below 9/10.
   posted 2026-02-05 · @VibeMarketer_ · 977K views · concept: self-improving skills (autoresearch pattern) · url: https://x.com/vibemarketer_/status/2019435524532904205
 
-- **2026-02-18** | [Viv](https://x.com/Vtrivedy10/status/2029576534159835443) | agent-design
-  [Post unavailable - page doesn't exist]
-  posted 2026-03-05 · @vtrivedy10 · 12K views · url: https://x.com/Vtrivedy10/status/2029576534159835443
-
 - **2026-02-18** | [Tech with Mak](https://x.com/technmak/status/2023990222027915746) | agent-design, claude-code, questionable
   Tech with Mak boosts Matthew Berman's 'OpenClaw masterclass' video, in which Berman claims to have spent 2.54 billion tokens perfecting the OpenClaw coding agent and walks through 21 daily use cases (markdown files, memory system, CRM, and more). Quoted post had ~1.3M views.
   posted 2026-02-18 · @techNmak · 1.3M views · url: https://x.com/technmak/status/2023990222027915746
@@ -10676,10 +10367,6 @@
 - **2026-02-17** | [Dr Milan Milanovic](https://x.com/milan_milanovic/status/2023381859489767772) | management, dev-practices, industry
   Milan Milanovic's thesis: AI won't replace developers so much as the software-development process we're used to. Code is becoming cheap while decisions become expensive; AI reduces typing, not thinking. Developers who only implement tasks will struggle, while those who understand the product, domain, and system architecture will thrive.
   posted 2026-02-16 · @milan_milanovic · concept: vibecode-to-production via agent skills · url: https://x.com/milan_milanovic/status/2023381859489767772
-
-- **2026-02-15** | [Pavol Lupták](https://x.com/wilderko/status/2025159534159835443) | claude-code, skills-mcp
-  [Post unavailable - page doesn't exist]
-  posted 2026-02-21 · @wilderko · 130K views · url: https://x.com/wilderko/status/2025159534159835443
 
 - **2026-02-14** | [dax](https://x.com/thdxr/status/2022574719694758147) | management, dev-practices, industry
   dax (thdxr) offers a contrarian take on AI coding hype: orgs are rarely bottlenecked by code-production ability. Most workers use AI to do their tasks with less effort rather than to become 10x; the few who genuinely push are getting buried under everyone else's 'slop code' and may quit; teams remain bottlenecked by bureaucracy; and CFOs are noticing each engineer now costs ~$2,000/month more in LLM bills.
@@ -10775,10 +10462,6 @@
   giyu_codes recommends cogsec (@affaan)'s article 'The Shorthand Guide to Everything Claude Code' - a complete setup after 10 months of daily use covering skills, hooks, subagents, MCPs, plugins, and what actually works. High-reach post (~806K views).
   posted 2026-01-17 · @giyu_codes · 805.9K views · concept: Claude Code setup & usage · url: https://x.com/giyu_codes/status/2012420750855012428 · links: https://x.com/affaan
 
-- **2026-01-16** | [Yishan](https://x.com/yishan/status/2012067968331710639) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-16 · @yishan · url: https://x.com/yishan/status/2012067968331710639
-
 - **2026-01-16** | [Gregor Zunic](https://x.com/gregpr07/status/2012052139384979773) | agent-design, dev-practices, claude-code
   Gregor Zunic (Browser Use) argues 'The Bitter Lesson of Agent Frameworks': all the value is in the RL'd model, not thousands of lines of abstractions. An agent is just a for-loop of tool calls that runs until the model stops. Abstractions freeze assumptions and fight what the model already learned; agent frameworks fail because their action spaces are incomplete, not because models are weak. Their fix: start with maximal capability then restrict ('vibe-restrict' via evals). BU Agent gives the model raw Chrome DevTools Protocol + extension APIs for a near-complete action space. Also covers a minimal model-agnostic Chat wrapper (Anthropic/OpenAI/Google), ephemeral messages to keep massive DOM/screenshot state out of context, and the done() tool for explicit completion. Reliability (retries, rate limits, compaction) is ops, not the agent. Open-sourcing as agent-sdk (includes a Claude Code re-implementation).
   posted 2026-01-16 · @gregpr07 · 255.4K views · concept: agents as constrained software — making bad shapes unexpressible · url: https://x.com/gregpr07/status/2012052139384979773
@@ -10795,209 +10478,21 @@
   Gergely Orosz amplifies Cindy Sridharan's take that, outside of prototyping, engineers should aim to understand close to 100% of the production code LLMs generate. He adds that the gap between teams who do this and those who don't will be massive, and notes the tension: heavy cutting-edge AI use is easiest on throwaway prototypes where it's fine to let it rip.
   posted 2026-01-16 · @GergelyOrosz · 73.1K views · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/gergelyorosz/status/2011956185650409558
 
-- **2026-01-16** | [Bojan Tunguz](https://x.com/tunguz/status/2011949233658925298) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-15 · @tunguz · url: https://x.com/tunguz/status/2011949233658925298
-
 - **2026-01-16** | [James Cowling](https://x.com/jamesacowling/status/2011924122922852599) | dev-practices, industry, agent-design
   James Cowling points to the Software Crisis of the 1960s-70s (en.wikipedia.org/wiki/Software_crisis) as a warning: productivity ground to a halt until good abstractions for managing software complexity emerged. His thesis is that without good platforms, the same stall will happen again in the AI-coding era.
   posted 2026-01-15 · @jamesacowling · 263.2K views · url: https://x.com/jamesacowling/status/2011924122922852599
-
-- **2026-01-16** | [Meta Alchemist](https://x.com/meta_alchemist/status/2010882913784070231) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-13 · @meta_alchemist · url: https://x.com/meta_alchemist/status/2010882913784070231
-
-- **2026-01-16** | [Simplifying AI](https://x.com/simplifyinAI/status/2010878423325364233) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-13 · @simplifyinAI · url: https://x.com/simplifyinAI/status/2010878423325364233
-
-- **2026-01-16** | [Sahil Bloom](https://x.com/SahilBloom/status/2010703181900464151) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-12 · @SahilBloom · url: https://x.com/SahilBloom/status/2010703181900464151
-
-- **2026-01-15** | [geoff](https://x.com/GeoffreyHuntley/status/2010567043629113814) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-12 · @GeoffreyHuntley · url: https://x.com/GeoffreyHuntley/status/2010567043629113814
-
-- **2026-01-15** | [will brown](https://x.com/willccbb/status/2010547008387408150) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-12 · @willccbb · url: https://x.com/willccbb/status/2010547008387408150
-
-- **2026-01-15** | [James Shields](https://x.com/scaling_shields/status/2010413738506264649) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-11 · @scaling_shields · url: https://x.com/scaling_shields/status/2010413738506264649
-
-- **2026-01-15** | [siddhi surana](https://x.com/siddhisurana/status/2010361699087921253) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-11 · @justsiddaay · url: https://x.com/siddhisurana/status/2010361699087921253
-
-- **2026-01-15** | [Jaime Jorge](https://x.com/jaimefjorge/status/2010254648389550243) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-11 · @jaimefjorge · url: https://x.com/jaimefjorge/status/2010254648389550243
-
-- **2026-01-14** | [BOOTOSHI](https://x.com/KingBootoshi/status/2010002905316757751) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-10 · @KingBootoshi · url: https://x.com/KingBootoshi/status/2010002905316757751
-
-- **2026-01-14** | [Matt Pocock](https://x.com/mpocock/status/2009888462821732368) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-10 · @mattpocockuk · url: https://x.com/mpocock/status/2009888462821732368
 
 - **2026-01-13** | [fintechjunkie](https://x.com/fintechjunkie/status/2010910565279961423) | general, questionable, adjacent
   fintechjunkie gives a glowing, no-edits endorsement of a Dan Koe (@thedankoe) long-form article titled 'How to fix your entire life in 1 day' — a self-improvement/productivity piece rather than an AI or engineering topic. Off-theme for the collection; kept for completeness.
   posted 2026-01-13 · @fintechjunkie · 1M views · concept: founder philosophy & life-design essays · url: https://x.com/fintechjunkie/status/2010910565279961423
 
-- **2026-01-12** | [bluecow](https://x.com/bluecow/status/2009065743606194185) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-08 · @BLUECOW009 · url: https://x.com/bluecow/status/2009065743606194185
-
-- **2026-01-12** | [Nozz](https://x.com/nozz/status/2008835341649346666) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-07 · @NoahEpstein_ · url: https://x.com/nozz/status/2008835341649346666
-
 - **2026-01-12** | [Josh Bleecher Snyder](https://commaok.xyz/ai/differential-spec) | dev-practices, agent-design
   Introduces 'differential spec analysis': write several de-novo implementations from one spec (Opus subagents, forbidden from seeing each other's code), compare their behavior, and treat every deviation as either an implementation bug (add a missing acceptance test) or a spec ambiguity (clarify the spec) — refining the spec itself without reading code. Worked example on Drew Breunig's codeless 'whenwords' repo (github.com/dbreunig/whenwords) surfaced zero-duration crashes, month-rounding errors, and a fractional-input rounding ambiguity resolved with half-up rounding.
   concept: applied decision-model routing — gating agents with Jev · url: https://commaok.xyz/ai/differential-spec · links: https://github.com/dbreunig/whenwords
 
-- **2026-01-10** | [Nick Dobos](https://x.com/dobosn/status/2008036181346656365) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-05 · @NickADobos · url: https://x.com/dobosn/status/2008036181346656365
-
-- **2026-01-10** | [Param](https://x.com/param_bharadwaj/status/2007915284024619160) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-04 · @Param_eth · url: https://x.com/param_bharadwaj/status/2007915284024619160
-
-- **2026-01-10** | [Felipe Coury](https://x.com/felipecoury/status/2007882656892014636) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-04 · @fcoury · url: https://x.com/felipecoury/status/2007882656892014636
-
-- **2026-01-10** | [kitze](https://x.com/kitze/status/2007809540919521316) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-04 · @thekitze · url: https://x.com/kitze/status/2007809540919521316
-
-- **2026-01-10** | [Rohit](https://x.com/rohitxo/status/2007748502661742686) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-04 · @rohit4verse · url: https://x.com/rohitxo/status/2007748502661742686
-
-- **2026-01-10** | [Aakash Gupta](https://x.com/AakashGuptaGH/status/2007704814065365016) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-04 · @aakashgupta · url: https://x.com/AakashGuptaGH/status/2007704814065365016
-
-- **2026-01-10** | [elvis](https://x.com/elvisnguyen/status/2007665597046087848) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-04 · @omarsar0 · url: https://x.com/elvisnguyen/status/2007665597046087848
-
-- **2026-01-10** | [nader dabit](https://x.com/dabit3/status/2007623542340276413) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-04 · @dabit3 · url: https://x.com/dabit3/status/2007623542340276413
-
-- **2026-01-10** | [dei](https://x.com/delilahime/status/2007599629893906627) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-03 · @parcadei · url: https://x.com/delilahime/status/2007599629893906627
-
-- **2026-01-10** | [Brandon Gell](https://x.com/brandongell/status/2007537024606646369) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-03 · @bran_don_gell · url: https://x.com/brandongell/status/2007537024606646369
-
-- **2026-01-09** | [Alex Hillman](https://x.com/alexhillman/status/2007195403503431942) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-02 · @alexhillman · url: https://x.com/alexhillman/status/2007195403503431942
-
-- **2026-01-09** | [dei](https://x.com/delilahime/status/2007112398968512604) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-02 · @parcadei · url: https://x.com/delilahime/status/2007112398968512604
-
 - **2026-01-08** | [Jarrod Watts](https://x.com/jarrodwatts/status/2009200810870428123) | claude-code, skills-mcp, dev-practices
   Jarrod Watts open-sourced his 'claude-code-config' repo containing all the agents, commands, hooks, rules, skills, and plugins he's made or collected over the past few months — described as simple but effective enhancements he'll keep updating. A ready-made reference config for a team standardizing Claude Code setups.
   posted 2026-01-08 · @jarrodwatts · 168.1K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/jarrodwatts/status/2009200810870428123
-
-- **2026-01-08** | [Lior Alexander](https://x.com/lioralexander/status/2006763456879984843) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-01 · @LiorOnAI · url: https://x.com/lioralexander/status/2006763456879984843
-
-- **2026-01-08** | [Josh Pigford](https://x.com/joshpigford/status/2006722184752509040) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-01 · @Shpigford · url: https://x.com/joshpigford/status/2006722184752509040
-
-- **2026-01-08** | [Tom Dörr](https://x.com/tom_dorr/status/2006640889625956454) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-01 · @tom_doerr · url: https://x.com/tom_dorr/status/2006640889625956454
-
-- **2026-01-08** | [Ryan Carson](https://x.com/ryancarson/status/2006579357155549261) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2026-01-01 · @ryancarson · url: https://x.com/ryancarson/status/2006579357155549261
-
-- **2026-01-07** | [Jeffrey Emanuel](https://x.com/jfemanuel13/status/2006283589341868394) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-31 · @doodlestein · url: https://x.com/jfemanuel13/status/2006283589341868394
-
-- **2026-01-07** | [Tech with Mak](https://x.com/TechWithMak/status/2006215651880165597) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-31 · @techNmak · url: https://x.com/TechWithMak/status/2006215651880165597
-
-- **2026-01-07** | [Obie Fernandez](https://x.com/obiefernandez/status/2006152066925707274) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-30 · @obie · url: https://x.com/obiefernandez/status/2006152066925707274
-
-- **2026-01-07** | [Melvin Vivas](https://x.com/melvinator/status/2006020697936482443) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-30 · @donvito · url: https://x.com/melvinator/status/2006020697936482443
-
-- **2026-01-07** | [Sumanth](https://x.com/Sumanth_077/status/2005956018357575750) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-30 · @Sumanth_077 · url: https://x.com/Sumanth_077/status/2005956018357575750
-
-- **2026-01-06** | [Md Ismail](https://x.com/mdismail/status/2005671283621953665) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-29 · @0x0SojalSec · url: https://x.com/mdismail/status/2005671283621953665
-
-- **2026-01-06** | [Simplifying AI](https://x.com/simplifyinAI/status/2005513621646409748) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-29 · @simplifyinAI · url: https://x.com/simplifyinAI/status/2005513621646409748
-
-- **2026-01-06** | [Josh Schultz](https://x.com/jschultzme/status/2005421815916028959) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-28 · @joshuamschultz · url: https://x.com/jschultzme/status/2005421815916028959
-
-- **2026-01-06** | [Trending GitHub](https://x.com/TrendingGitHubl/status/2005310239286649010) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-28 · @trending_repos · url: https://x.com/TrendingGitHubl/status/2005310239286649010
-
-- **2026-01-06** | [The Boring Marketer](https://x.com/BoringMarketer/status/2005239063816110289) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-28 · @boringmarketer · url: https://x.com/BoringMarketer/status/2005239063816110289
-
-- **2026-01-06** | [Tom Dörr](https://x.com/tom_dorr/status/2005167892304969882) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-28 · @tom_doerr · url: https://x.com/tom_dorr/status/2005167892304969882
-
-- **2026-01-06** | [Santiago](https://x.com/santiagoemeli/status/2005035706842611040) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-27 · @svpino · url: https://x.com/santiagoemeli/status/2005035706842611040
-
-- **2026-01-06** | [hoeem](https://x.com/hoeemlim/status/2004948633556197506) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-27 · @hooeem · url: https://x.com/hoeemlim/status/2004948633556197506
-
-- **2026-01-05** | [Matt Pocock](https://x.com/mpocock/status/2004505491297665063) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-26 · @mattpocockuk · url: https://x.com/mpocock/status/2004505491297665063
-
-- **2026-01-03** | [Daniel San](https://x.com/dcsan/status/2003544127356903508) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-23 · @dani_avila7 · url: https://x.com/dcsan/status/2003544127356903508
-
-- **2026-01-03** | [sankalp](https://x.com/sankalpdev/status/2003384719234969898) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-23 · @dejavucoder · url: https://x.com/sankalpdev/status/2003384719234969898
-
-- **2026-01-03** | [CloudAI-X](https://x.com/CloudAI_X/status/2003298874369306643) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-23 · @cloudxdev · url: https://x.com/CloudAI_X/status/2003298874369306643
-
-- **2026-01-03** | [Grok](https://x.com/XAI/status/2003101023145590851) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-12-22 · @grok · url: https://x.com/XAI/status/2003101023145590851
 
 ### Dec 2025
 
@@ -11012,10 +10507,6 @@
 - **2025-12-27** | [SightBringer](https://x.com/_the_prophet__/status/2004796159299084424) | industry, management, agent-design
   An essay arguing software engineering is undergoing a 'phase transition' in human leverage: for decades leverage came from writing more correct instructions faster, but the unit of leverage has shifted from writing code to orchestrating intelligence. The programmer becomes a systems integrator of probabilistic entities whose reasoning can't be fully inspected or controlled — which the author says explains why even Karpathy feels 'behind.'
   posted 2025-12-27 · @_The_Prophet__ · 246K views · concept: Forward Deployed Engineers — the durable AI-era role · url: https://x.com/_the_prophet__/status/2004796159299084424
-
-- **2025-12-27** | [Yu Lin](https://x.com/yulintwt/status/2004537183978590695) | general
-  [Post unavailable — account suspended; verified 2026-08-21]
-  posted 2025-12-26 · @yulintwt · url: https://x.com/yulintwt/status/2004537183978590695
 
 - **2025-12-22** | [Tech with Mak](https://x.com/technmak/status/2002713140757496299) | agent-design, skills-mcp, dev-practices, questionable
   A structured LangGraph learning path (pitched as filling the gap since LangGraph appears in ~half of AI job descriptions). Progresses from basic agent concepts (Pydantic data validation, agentic chatbots, multi-agent coordination) through production systems (a 2.5-hour LangGraph+MCP crash course, debugging/monitoring, deployment architecture) to RAG pipelines (multimodal RAG, hallucination fixes, end-to-end retrieval, Typesense search).
@@ -11077,10 +10568,6 @@
   Rohan Paul summarizes Google's guide on context engineering for multi-agent systems (built around ADK). Instead of giant prompts, it compiles a view over state split into Working Context, Session, Memory, and Artifacts; each call rebuilds Working Context from instructions, selected session events, memory results, and artifact references. ADK controls context growth via compaction, filtering, and caching — summarizing old spans, dropping useless events, and reusing a stable prefix — and pushes large payloads out to Artifacts to keep systems fast, affordable, and less hallucination-prone.
   posted 2025-12-06 · @rohanpaul_ai · 64.7K views · concept: persistent always-on agents — bot mode & agent desktops · url: https://x.com/rohanpaul_ai/status/1997405403987222642
 
-- **2025-12-07** | [Hayes](https://x.com/hayesdev_/status/1996897853642592428) | general
-  [Post unavailable — account suspended; verified 2026-08-21]
-  posted 2025-12-05 · @hayesdev_ · url: https://x.com/hayesdev_/status/1996897853642592428
-
 - **2025-12-01** | [AWS Containers](https://github.com/aws-containers/reinvent) | dev-practices, industry
   The aws-containers/reinvent GitHub repo collects AWS re:Invent 2025 Kubernetes Track assets — slides, the latest EKS launches, and demos from the sessions. A reference for what AWS shipped for Kubernetes/EKS at re:Invent 2025.
   @na · url: https://github.com/aws-containers/reinvent
@@ -11137,10 +10624,6 @@
   Thomas Ptacek, reacting to the AWS outage postmortem and its HN discussion, evangelizes 'How Complex Systems Fail' (howcomplexsystems.fail) as essential reading on how failures emerge in complex socio-technical systems.
   posted 2025-10-23 · @tqbf · 70.7K views · url: https://x.com/tqbf/status/1981439969370558803 · links: https://howcomplexsystems.fail
 
-- **2025-10-24** | [Hayes](https://x.com/neatprompts/status/1981241949173825687) | general
-  [Post unavailable — account suspended; verified 2026-08-21]
-  posted 2025-10-23 · @neatprompts · url: https://x.com/neatprompts/status/1981241949173825687
-
 - **2025-10-21** | [Raul Junco](https://x.com/rauljuncov/status/1980243241783197925) | dev-practices, questionable
   Raul Junco frames system design as a staircase to climb step by step rather than jumping to distributed systems: foundations (networking, databases, caching, APIs), then mechanics (queues, consistency, observability, failures), then architecture (trade-offs, evolution, resilience).
   posted 2025-10-20 · @rauljuncov · 130.7K views · url: https://x.com/rauljuncov/status/1980243241783197925
@@ -11184,10 +10667,6 @@
 - **2025-10-05** | [Prompter](https://x.com/promptllm/status/1974518025211818291) | prompting, questionable
   Engagement-style post promoting a prompt for learning to think in systems.
   posted 2025-10-04 · @PromptLLM · 36.2K views · concept: founder philosophy & life-design essays · url: https://x.com/promptllm/status/1974518025211818291
-
-- **2025-10-05** | [Agentic Design Patterns](https://github.com/sarwarbeing-ai/Agentic_Design_Patterns/blob/main/Agentic_Design_Patterns.pdf) | agent-design
-  [Post unavailable — Agentic Design Patterns GitHub repo removed via DMCA takedown]
-  @na · url: https://github.com/sarwarbeing-ai/Agentic_Design_Patterns/blob/main/Agentic_Design_Patterns.pdf
 
 - **2025-10-04** | [Prompter](https://x.com/promptllm/status/1974206336511394165) | prompting, questionable
   Engagement-style post promoting a prompt that claims to teach 'NLP' (Neuro-Linguistic Programming) techniques used by high performers.
@@ -11257,15 +10736,7 @@
   A recipe for using Claude Code as a DevOps agent with its new background jobs: run Claude in a tmux session, have it spawn a background process to tail server logs and summarize them, then a second process that pings Claude to 'check logs' on an interval.
   posted 2025-08-10 · @imrat · 167.3K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/imrat/status/1954497164589056090
 
-- **2025-08-09** | [Aadit Sheth](https://x.com/aaditsh/status/1953462911961374889) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2025-08-07 · @aaditsh · url: https://x.com/aaditsh/status/1953462911961374889
-
 ### Jul 2025
-
-- **2025-07-31** | [K Srinivas Rao](https://x.com/sriniously/status/1950432839474012456) | dev-practices
-  [Post unavailable — page doesn't exist]
-  posted 2025-07-30 · @sriniously · 60.6K views · url: https://x.com/sriniously/status/1950432839474012456
 
 - **2025-07-11** | [Book Therapy](https://x.com/book_therapy223/status/1943651617976283236) | management
   Shares content on the distinction 'A Plan is Not a Strategy' (the Roger Martin / HBR theme): strategy is an integrated set of choices about where to play and how to win, not merely a list of planned activities. Post text is just the headline; the substance is in the attached media.
@@ -11334,10 +10805,6 @@
 - **2024-07-30** | [Shubham Saboo](https://x.com/saboo_shubham_/status/1818111127286579448) | agent-design, research
   Tutorial for building a no-code RAG chatbot to chat with any GitHub repo, powered by open-source Llama 3.1 405B.
   posted 2024-07-30 · @Saboo_Shubham_ · 82.4K views · url: https://x.com/saboo_shubham_/status/1818111127286579448
-
-- **2024-07-25** | [Pau Labarta Bajo](https://x.com/paulabartabajo_/status/1815990574580699209) | general
-  [Post unavailable — page doesn't exist; verified 2026-08-21]
-  posted 2024-07-24 · @paulabartabajo_ · url: https://x.com/paulabartabajo_/status/1815990574580699209
 
 - **2024-07-24** | [Akshay](https://x.com/akshay_pachaar/status/1816088785152848028) | agent-design, research
   A tutorial thread on building a 100% local RAG app using Meta's Llama 3.1.

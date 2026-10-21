@@ -6,6 +6,7 @@
     python3 -m db.search mcp --handle karpathy --topic claude-code
     python3 -m db.search "github.com/mattpocock" --links      # show every extracted link
     python3 -m db.search --concept "dependency risk" --limit 50   # members of a concept (name substring)
+    python3 -m db.search --similar 2036487306585268612       # embedding neighbours of a post (id or URL)
 
 Reads the `post_search` index that db/rebuild.py refreshes on every run (covers
 summary, captured text, topics, ALL concept names, external links, URL and posted
@@ -62,7 +63,20 @@ def main(argv=None):
     ap.add_argument("--handle"); ap.add_argument("--topic"); ap.add_argument("--concept")
     ap.add_argument("--limit", type=int, default=20)
     ap.add_argument("--links", action="store_true", help="print extracted links for each hit")
+    ap.add_argument("--similar", metavar="ID_OR_URL", help="posts most similar to this one (embedding neighbours)")
     a = ap.parse_args(argv)
+    if a.similar:
+        import re
+        sys.path.insert(0, str(Path(__file__).parent.parent))
+        from db.related import related_to
+        m = re.search(r"status/(\d+)", a.similar)
+        pid = int(m.group(1)) if m else int(a.similar)
+        conn = sqlite3.connect(f"file:{DB}?mode=ro", uri=True)
+        for nid, score in related_to(pid, k=a.limit):
+            r = conn.execute("SELECT date, posted_at, handle, author, url, summary FROM posts WHERE id=?", (nid,)).fetchone()
+            print(f"{score:.2f}  {(r[1] or '')[:10] or '?'} (added {r[0]}) {r[2] or r[3]}  {r[4]}")
+            print(f"      {(r[5] or '')[:180]}")
+        return
     if not any([a.query, a.concept, a.handle, a.topic, a.since, a.until]):
         ap.error("give a query or at least one filter")
     rows, conn = search(a.query, a.since, a.until, a.handle, a.topic, a.concept, a.limit)

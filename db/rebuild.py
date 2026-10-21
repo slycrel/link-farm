@@ -28,6 +28,11 @@ except ImportError:
     sys.path.insert(0, str(Path(__file__).parent))
     from lock import writer_lock
 
+try:
+    from .related import related_for_all
+except ImportError:
+    from related import related_for_all
+
 SCRIPT_DIR = Path(__file__).parent
 DEFAULT_DB = SCRIPT_DIR / "ai_links.db"
 DEFAULT_OUT = SCRIPT_DIR.parent  # project root
@@ -340,6 +345,8 @@ def load_posts(db_path: Path) -> list[dict]:
     except sqlite3.OperationalError:
         pass
 
+    related = related_for_all(db_path)   # {post_id: [(neighbour_id, score)]} — see db/related.py
+
     posts = []
     rows = conn.execute("SELECT * FROM posts ORDER BY date DESC, id DESC").fetchall()
 
@@ -383,6 +390,7 @@ def load_posts(db_path: Path) -> list[dict]:
             'links': _extract_links(row['url'] or '', seg_urls.get(post_id, []),
                                     [row['summary']] + seg_texts.get(post_id, [])),
             'concept': primary_concept.get(post_id, ''),
+            'related': [n for n, _ in related.get(post_id, [])],
             # Additive — present once migration 2 has run.
             'enrichment_status': row_dict.get('enrichment_status') or '',
             'enrichment_version': row_dict.get('enrichment_version') or 0,
@@ -489,8 +497,10 @@ def js_escape(s: str) -> str:
 def generate_posts_js_array(posts: list[dict]) -> str:
     """Generate the JS POSTS array content (without the const declaration)."""
     lines = []
+    _idx = {p['id']: i for i, p in enumerate(posts)}
     for i, p in enumerate(posts):
         topics_js = json.dumps(p['topics'])
+        related_js = json.dumps([_idx[n] for n in (p.get('related') or []) if n in _idx])
         audience_js = json.dumps(p['audience'])
         # Compact JSON for perspectives — usually empty or 1-2 keys.
         perspectives_js = json.dumps(p.get('perspectives') or {})
@@ -514,6 +524,7 @@ def generate_posts_js_array(posts: list[dict]) -> str:
             f"posted: '{js_escape(p.get('posted_at',''))}', "
             f"concept: '{js_escape(p.get('concept',''))}', "
             f"links: {json.dumps(p.get('links') or [])}, "
+            f"related: {related_js}, "
             f"content: '{js_escape(p.get('content', ''))}' }}"
         )
         if i < len(posts) - 1:
@@ -556,7 +567,6 @@ def generate_html(posts: list[dict], html_template_path: Path, out_path: Path,
     with open(html_template_path) as f:
         html = f.read()
 
-    # Replace POSTS array.
     new_array = generate_posts_js_array(posts)
     html = _replace_js_const(html, 'const POSTS = [', '[', ']', f'\n{new_array}\n')
 

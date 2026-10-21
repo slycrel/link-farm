@@ -605,3 +605,7 @@ See `ARCHITECTURE_PLAN.md` for the full workstream details.
 queries `post_search`, a standalone FTS5 index rebuilt on every `db/rebuild.py` run. It covers summary, captured text, topics, **all** concept names (evidence/origin edges, not just the primary), extracted external links, the post URL and posted date; `--since/--until` use `posted_at` and fall back to capture `date`. Column filters work in the query itself (`links:arxiv`, `concepts:harness`).
 
 The legacy `posts_fts` has no triggers and went stale after the initial migration (recent subjects like "deepwiki" returned nothing). `rebuild` now refreshes it with the FTS5 `rebuild` command each run, so both indexes are current after every sync.
+
+`--similar <post id or URL>` lists a post's nearest neighbours by embedding (mean-centered cosine — see `db/related.py` for why raw cosine is misleading here). The HTML viewer's expanded rows show a "See also" list from the same computation, precomputed at rebuild (floor 0.35, up to 5) as post indices; nothing is stored in the DB, JSON or markdown.
+
+Dead posts with no recoverable content were culled on 2026-10-21 (71 rows; the git history before that commit has them). Two dead posts that still carry some captured text were kept.
