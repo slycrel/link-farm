@@ -112,7 +112,7 @@ with writer_lock(timeout=60):
 For each extracted URL:
 - Derive deterministic post ID per CLAUDE.md (X status ID for x.com/twitter.com; SHA-256 of normalized URL truncated to 48 bits otherwise).
 - Skip if ID already in `posts` table.
-- INSERT a skeleton row: `date` (email date YYYY-MM-DD), `author` (from "Post by X on Y"), `handle` (lowercased with `@` if present), `subject`, `url`, `source='email'`, `priority='near-term'`, `enrichment_status='unattempted'`, `enrichment_version=0`. (The `enriched` legacy boolean defaults to 0 — leave it alone; `db/enrich.py` syncs both columns on successful enrichment.)
+- INSERT a skeleton row: `date` (email date YYYY-MM-DD — this is the *capture* date. **For a link added without an email**, e.g. one Jeremy hands over in chat, there is no email date: use the post's own date instead, decoded from the X status ID — `datetime.utcfromtimestamp(((id >> 22) + 1288834974657)/1000).date()` — or the page's published date for non-X URLs. Never default to today's date; that mis-dates old posts as new, which hurts date-based search and the "recent" views), `author` (from "Post by X on Y"), `handle` (lowercased with `@` if present), `subject`, `url`, `source='email'`, `priority='near-term'`, `enrichment_status='unattempted'`, `enrichment_version=0`. (The `enriched` legacy boolean defaults to 0 — leave it alone; `db/enrich.py` syncs both columns on successful enrichment.)
 - Insert default-topic `post_topics` row (best-guess from subject keywords) and `post_audiences` row (`'me'`).
 
 Track NEW_IDS for the enrichment pass.
