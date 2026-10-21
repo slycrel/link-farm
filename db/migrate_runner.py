@@ -340,6 +340,33 @@ def migrate_009_gate_history(conn):
     """)
 
 
+def migrate_010_posted_at(conn):
+    """Add posts.posted_at: when the post was actually published on X.
+
+    `posts.date` is the *capture* date (when it entered the corpus) and stays
+    that way. `posted_at` is the source's own publish time, decoded from the X
+    status ID (a Snowflake: ms since 2010-11-04T01:42:54.657Z in the high bits),
+    so it needs no scrape. Non-X URLs stay NULL until something knows better.
+    Stored as 'YYYY-MM-DDTHH:MM:SS' UTC. New rows are filled by
+    db.enrich.record_enrichment.
+    """
+    import re, datetime
+    cols = {r[1] for r in conn.execute("PRAGMA table_info(posts)")}
+    if "posted_at" not in cols:
+        conn.execute("ALTER TABLE posts ADD COLUMN posted_at TEXT")
+    conn.execute("CREATE INDEX IF NOT EXISTS idx_posts_posted_at ON posts(posted_at)")
+    pat = re.compile(r"https?://(?:www\.)?(?:x|twitter)\.com/[^/]+/status/(\d+)")
+    for pid, url in conn.execute("SELECT id, url FROM posts WHERE posted_at IS NULL AND url IS NOT NULL").fetchall():
+        m = pat.match(url)
+        if not m:
+            continue
+        sid = int(m.group(1))
+        if sid < (1 << 40):   # pre-Snowflake status IDs carry no timestamp
+            continue
+        ts = datetime.datetime.utcfromtimestamp(((sid >> 22) + 1288834974657) / 1000)
+        conn.execute("UPDATE posts SET posted_at=? WHERE id=?", (ts.strftime("%Y-%m-%dT%H:%M:%S"), pid))
+
+
 # ---- Migration list -----------------------------------------------------
 
 # (version_number, short_name, function). Ordered by version.
@@ -356,6 +383,8 @@ MIGRATIONS = [
      migrate_008_post_concepts_primary),
     (9, "Add gate_history table (snapshot latent-gate ratio per run)",
      migrate_009_gate_history),
+    (10, "Add posts.posted_at (source publish time, decoded from X status ID)",
+     migrate_010_posted_at),
 ]
 
 

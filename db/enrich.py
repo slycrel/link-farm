@@ -53,6 +53,7 @@ Usage sketch (in a skill):
                 record_partial(post_id, error=str(e), with_lock=False)
 """
 
+import re
 import sqlite3
 import datetime
 from pathlib import Path
@@ -97,6 +98,27 @@ RECOVERABLE_STATUSES = {STATUS_PARTIAL, STATUS_FAILED, STATUS_UNATTEMPTED}
 
 
 # ---- Connection helper -------------------------------------------------
+
+_X_STATUS_RE = re.compile(r"https?://(?:www\.)?(?:x|twitter)\.com/[^/]+/status/(\d+)")
+
+
+def posted_at_from_url(url: Optional[str]) -> Optional[str]:
+    """Publish time (UTC, 'YYYY-MM-DDTHH:MM:SS') decoded from an X status URL.
+
+    X status IDs are Snowflakes: the high bits are ms since 2010-11-04T01:42:54.657Z.
+    Returns None for non-X URLs and for pre-Snowflake IDs. This is the *source's*
+    time, distinct from posts.date (capture date).
+    """
+    m = _X_STATUS_RE.match(url or "")
+    if not m:
+        return None
+    sid = int(m.group(1))
+    if sid < (1 << 40):
+        return None
+    ts = datetime.datetime.utcfromtimestamp(((sid >> 22) + 1288834974657) / 1000)
+    return ts.strftime("%Y-%m-%dT%H:%M:%S")
+
+
 
 @contextmanager
 def _connect(db_path: Path = DEFAULT_DB):
@@ -290,6 +312,12 @@ def record_enrichment(post_id: int, *,
             if views is not None:
                 updates.append("views = ?")
                 params.append(views)
+            # Source publish time, decoded from the X status ID. Never overwrites.
+            _row = conn.execute("SELECT url FROM posts WHERE id = ?", (post_id,)).fetchone()
+            _pa = posted_at_from_url(_row[0] if _row else None)
+            if _pa:
+                updates.append("posted_at = COALESCE(posted_at, ?)")
+                params.append(_pa)
             params.append(post_id)
             conn.execute(f"UPDATE posts SET {', '.join(updates)} WHERE id = ?", params)
 

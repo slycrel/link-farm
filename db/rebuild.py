@@ -248,6 +248,44 @@ def _compute_recurring_section() -> dict:
 
 # --- Data access ---
 
+_URL_RE = re.compile(r'https?://[^\s<>"\')\]]+')
+_BARE_RE = re.compile(r'(?<![/\w.@-])((?:github\.com|arxiv\.org|huggingface\.co|x\.com|twitter\.com|gist\.github\.com)/[^\s<>"\')\]]+)')
+
+
+def _clean_url(u: str) -> str:
+    u = u.rstrip('.,;:!?\u2026')
+    u = re.sub(r'[?&](?:utm_[a-z]+|s|t)=[^&#]*', '', u)
+    u = re.sub(r'\?&', '?', u).rstrip('?&')
+    return u.rstrip('/')
+
+
+def _extract_links(own_url: str, segment_urls, texts) -> list:
+    """Full URLs a post points at, for search/discovery: external_link segment
+    URLs, full URLs in captured text, and bare github/arxiv/huggingface/x paths
+    that summaries write without a scheme. Deduped, own URL and t.co excluded."""
+    seen, out = set(), []
+    own = _clean_url(own_url or '')
+
+    def add(u):
+        u = _clean_url(u)
+        if not u or u == own or 't.co/' in u or u in seen:
+            return
+        seen.add(u)
+        out.append(u)
+
+    for u in segment_urls:
+        if u:
+            add(u)
+    for t in texts:
+        if not t:
+            continue
+        for m in _URL_RE.findall(t):
+            add(m)
+        for m in _BARE_RE.findall(t):
+            add('https://' + m)
+    return out
+
+
 def load_posts(db_path: Path) -> list[dict]:
     """Load all posts from SQLite with topics, audiences, and perspectives joined.
 
@@ -282,6 +320,24 @@ def load_posts(db_path: Path) -> list[dict]:
             perspectives_by_post.setdefault(r['post_id'], {})[r['lens']] = r['priority']
     except sqlite3.OperationalError:
         # Table doesn't exist yet — pre-migration-7
+        pass
+
+    seg_urls: dict[int, list[str]] = {}
+    seg_texts: dict[int, list[str]] = {}
+    try:
+        for r in conn.execute("SELECT post_id, type, url, text FROM post_thread_segments ORDER BY post_id, ordinal"):
+            if r['url'] and r['type'] in ('external_link', 'quote', 'op', 'self_reply'):
+                seg_urls.setdefault(r['post_id'], []).append(r['url'])
+            seg_texts.setdefault(r['post_id'], []).append(r['text'])
+    except sqlite3.OperationalError:
+        pass
+    primary_concept: dict[int, str] = {}
+    try:
+        for r in conn.execute("""SELECT pc.post_id, c.name FROM post_concepts pc
+                                 JOIN concepts c ON c.id = pc.concept_id
+                                 WHERE pc.is_primary = 1 AND c.status = 'active'"""):
+            primary_concept[r['post_id']] = r['name']
+    except sqlite3.OperationalError:
         pass
 
     posts = []
@@ -322,6 +378,11 @@ def load_posts(db_path: Path) -> list[dict]:
             'enriched': bool(row['enriched']),
             'image': row['image'] or '',
             'source': row['source'] or 'email',
+            # Additive — migration 10 (posted_at) / discovery aids.
+            'posted_at': row_dict.get('posted_at') or '',
+            'links': _extract_links(row['url'] or '', seg_urls.get(post_id, []),
+                                    [row['summary']] + seg_texts.get(post_id, [])),
+            'concept': primary_concept.get(post_id, ''),
             # Additive — present once migration 2 has run.
             'enrichment_status': row_dict.get('enrichment_status') or '',
             'enrichment_version': row_dict.get('enrichment_version') or 0,
@@ -387,6 +448,12 @@ def generate_json(posts: list[dict], out_path: Path):
             entry['image'] = p['image']
         if p.get('source') and p['source'] != 'email':
             entry['source'] = p['source']
+        if p.get('posted_at'):
+            entry['posted_at'] = p['posted_at']
+        if p.get('links'):
+            entry['links'] = p['links']
+        if p.get('concept'):
+            entry['concept'] = p['concept']
         # Additive (post-migration 2) — only emit when meaningfully populated
         # so old consumers reading the JSON keep their expected shape.
         if p.get('enrichment_status'):
@@ -444,6 +511,9 @@ def generate_posts_js_array(posts: list[dict]) -> str:
             f"views: '{js_escape(p['views'])}', "
             f"notes: '{js_escape(p['notes'])}', "
             f"enriched: {'true' if p['enriched'] else 'false'}, "
+            f"posted: '{js_escape(p.get('posted_at',''))}', "
+            f"concept: '{js_escape(p.get('concept',''))}', "
+            f"links: {json.dumps(p.get('links') or [])}, "
             f"content: '{js_escape(p.get('content', ''))}' }}"
         )
         if i < len(posts) - 1:
@@ -514,6 +584,25 @@ def truncate(s: str, max_len: int = 70) -> str:
     if not s or len(s) <= max_len:
         return s
     return s[:max_len].rstrip() + '...'
+
+
+def _md_meta(p: dict) -> str:
+    """One searchable metadata line: posted date, handle, views, concept, full URLs.
+    Plain-text URLs on purpose — a markdown link hides its target from text search."""
+    bits = []
+    if p.get('posted_at'):
+        bits.append(f"posted {p['posted_at'][:10]}")
+    if p.get('handle'):
+        bits.append(p['handle'])
+    if p.get('views'):
+        bits.append(f"{p['views']} views")
+    if p.get('concept'):
+        bits.append(f"concept: {p['concept']}")
+    if p.get('url'):
+        bits.append(f"url: {p['url']}")
+    if p.get('links'):
+        bits.append('links: ' + ' '.join(p['links']))
+    return ' · '.join(bits)
 
 
 def generate_markdown(posts: list[dict], out_path: Path, morning_view: dict = None):
@@ -638,6 +727,9 @@ def generate_markdown(posts: list[dict], out_path: Path, morning_view: dict = No
         for p in topic_posts:
             url_part = f'[{p["author"]}]({p["url"]})' if p['url'] else p['author']
             lines.append(f'- {url_part} — {p["date"]}: {p["summary"]}')
+            _m = _md_meta(p)
+            if _m:
+                lines.append(f'  {_m}')
             lines.append('')
 
     # Full Chronological List
@@ -673,6 +765,9 @@ def generate_markdown(posts: list[dict], out_path: Path, morning_view: dict = No
             url_part = f'[{p["author"]}]({p["url"]})' if p['url'] else p['author']
             lines.append(f'- **{p["date"]}** | {url_part} | {topics_str}')
             lines.append(f'  {p["summary"]}')
+            _m = _md_meta(p)
+            if _m:
+                lines.append(f'  {_m}')
             lines.append('')
 
     _atomic_write(out_path, '\n'.join(lines))

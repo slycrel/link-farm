@@ -136,7 +136,8 @@ Jeremy emails himself links from his phone (slycrel@gmail.com → jstone@taxhawk
 ```sql
 posts (
     id                          INTEGER PRIMARY KEY,  -- deterministic: X status ID or URL hash
-    date                        TEXT NOT NULL,
+    date                        TEXT NOT NULL,        -- CAPTURE date (when it entered the corpus), not when it was posted
+    posted_at                   TEXT,                 -- source publish time (UTC), decoded from the X status ID; NULL for non-X (migration 10). Filled by db/enrich.record_enrichment
     author                      TEXT,
     handle                      TEXT,
     subject                     TEXT,
