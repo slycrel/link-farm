@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-10-21T19:45:11Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-10-21T19:50:18Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-10-21** — [Anže Pečar](https://x.com/anze3db/status/2112616425693266153) — *now • Dev Practices • v1 enriched*  
