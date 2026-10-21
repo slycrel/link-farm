@@ -1,12 +1,12 @@
 # AI Links Collection
-**Total Posts**: 892  
+**Total Posts**: 893  
 **Date Range**: 2024-06-11 – 2026-10-21  
-**Enriched**: 892/892 (100%)
+**Enriched**: 893/893 (100%)
 
 ---
 ## Morning view
 
-*Generated 2026-10-21T20:16:24Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-10-21T23:27:55Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-10-21** — [Anže Pečar](https://x.com/anze3db/status/2112616425693266153) — *now • Dev Practices • v1 enriched*  
@@ -59,23 +59,24 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 573 | 64.2% |
-| claude-code | 212 | 23.8% |
+| agent-design | 574 | 64.3% |
+| claude-code | 213 | 23.9% |
 | dev-practices | 415 | 46.5% |
 | skills-mcp | 207 | 23.2% |
 | prompting | 143 | 16.0% |
 | research | 260 | 29.1% |
 | industry | 143 | 16.0% |
-| management | 145 | 16.3% |
+| management | 145 | 16.2% |
 | adjacent | 49 | 5.5% |
 | solo-operator | 10 | 1.1% |
-| questionable | 149 | 16.7% |
+| questionable | 150 | 16.8% |
 | general | 45 | 5.0% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-10-21 | marfin | agent-design | marfin's hype-packaged claim that Anthropic 'just showed' a 100-agent... |
 | 2026-10-21 | Mia | industry | Mia reports hands-on impressions of Drama TensorFold (github.com/plota... |
 | 2026-10-21 | Caspar | agent-design | Caspar (LangChain) lists the shared primitives of a 'company harness'... |
 | 2026-10-21 | elvis | research | Elvis (DAIR.AI) says to learn to build evals and recommends Hamel Husa... |
@@ -125,12 +126,14 @@
 | 2026-09-26 | LangChain | agent-design | LangChain announcing Jev/LangGraph integration, pointing at Sydney Run... |
 | 2026-09-26 | qwinsi | questionable | Engagement-farmed pitch for an AI backtesting product (join.horizon.tr... |
 | 2026-09-26 | GREG ISENBERG | adjacent | A one-page guide to becoming a top 1% speaker, whether on a panel or a... |
-| 2026-09-26 | rvaniaaa | questionable | Writeup of Nace AI's Drex, a small diffusion decision model trained wi... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (573)
+### Agent Design (574)
+
+- [marfin](https://x.com/marfinxx/status/2112891671834673156) — 2026-10-21: marfin's hype-packaged claim that Anthropic 'just showed' a 100-agent tri-model tournament in Claude Code (/arena): Sonnet builders in isolated git worktrees, a Haiku red-team fuzzer, and an Opus blind judge scoring on a 100-point rubric, with one survivor merged to main. The substantive idea is isolation and role separation to avoid self-review confirmation bias and shared-context bleed, with a ready-made setup prompt and a third-party skill repo (github.com/Jakeschincariol/arena-skill). The 'Anthropic showed this' framing and the specific throughput numbers are the author's unverified claims. Quotes marfin's earlier article on unifying harness, loop and graph engineering.
+  posted 2026-10-21 · @marfinxx · 2,279 views · concept: managing agent teams · url: https://x.com/marfinxx/status/2112891671834673156 · links: https://github.com/Jakeschincariol/arena-skill
 
 - [Caspar](https://x.com/caspar_br/status/2112644945697976630) — 2026-10-21: Caspar (LangChain) lists the shared primitives of a 'company harness' for internal agents: lives where people work (Slack), knows who is asking and acts on-behalf-of vs. under its own identity, scoped memory, a sandbox with authenticated CLIs, and many scheduled/ambient runs. LangChain packages these as Managed Deep Agents, pitched as the easiest way to build a company harness (vendor claim).
   posted 2026-10-20 · @caspar_br · concept: agent harness engineering · url: https://x.com/caspar_br/status/2112644945697976630
@@ -1851,7 +1854,10 @@
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
   @curvedinf · url: https://github.com/curvedinf/dir-assistant
 
-### Claude Code (212)
+### Claude Code (213)
+
+- [marfin](https://x.com/marfinxx/status/2112891671834673156) — 2026-10-21: marfin's hype-packaged claim that Anthropic 'just showed' a 100-agent tri-model tournament in Claude Code (/arena): Sonnet builders in isolated git worktrees, a Haiku red-team fuzzer, and an Opus blind judge scoring on a 100-point rubric, with one survivor merged to main. The substantive idea is isolation and role separation to avoid self-review confirmation bias and shared-context bleed, with a ready-made setup prompt and a third-party skill repo (github.com/Jakeschincariol/arena-skill). The 'Anthropic showed this' framing and the specific throughput numbers are the author's unverified claims. Quotes marfin's earlier article on unifying harness, loop and graph engineering.
+  posted 2026-10-21 · @marfinxx · 2,279 views · concept: managing agent teams · url: https://x.com/marfinxx/status/2112891671834673156 · links: https://github.com/Jakeschincariol/arena-skill
 
 - [Anthony Kroeger](https://x.com/kr0der/status/2106429105671643587) — 2026-10-21: Practical Claude Code Projects tip: tell the project's coordinator to post updates whenever a thread is blocked or finishes a milestone, and save that instruction to project memory. Kroeger says it made the coordinator genuinely useful; the saved memory line asks for a one-line note in project chat linking the thread. A reply asks how to apply it across all projects.
   posted 2026-10-03 · @kr0der · 73K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/kr0der/status/2106429105671643587
@@ -6621,7 +6627,10 @@
 - [zostaff](https://x.com/zostaff/status/2033930728044372275) — 2026-03-18: zostaff's clickbait-titled ('How to Quit Your Job in One Day') walkthrough of an autonomous Polymarket trading system built from three agents: Claude (strategist — probability/recommendation/confidence), Codex (engineer — writes and debugs bot code), and OpenClaw (orchestrator — persistent memory, cron, modular skills, Telegram interface that executes trades and logs everything).
   posted 2026-03-17 · @zostaff · 3M views · concept: prediction-market & crypto trading bots · url: https://x.com/zostaff/status/2033930728044372275
 
-### Questionable (149)
+### Questionable (150)
+
+- [marfin](https://x.com/marfinxx/status/2112891671834673156) — 2026-10-21: marfin's hype-packaged claim that Anthropic 'just showed' a 100-agent tri-model tournament in Claude Code (/arena): Sonnet builders in isolated git worktrees, a Haiku red-team fuzzer, and an Opus blind judge scoring on a 100-point rubric, with one survivor merged to main. The substantive idea is isolation and role separation to avoid self-review confirmation bias and shared-context bleed, with a ready-made setup prompt and a third-party skill repo (github.com/Jakeschincariol/arena-skill). The 'Anthropic showed this' framing and the specific throughput numbers are the author's unverified claims. Quotes marfin's earlier article on unifying harness, loop and graph engineering.
+  posted 2026-10-21 · @marfinxx · 2,279 views · concept: managing agent teams · url: https://x.com/marfinxx/status/2112891671834673156 · links: https://github.com/Jakeschincariol/arena-skill
 
 - [rody](https://x.com/0x_rody/status/2112588144944062840) — 2026-10-21: Hype post claiming 'grok bot' plus 'jev' will make more millionaires than crypto, pointing to the author's article 'How To Wire Jev Into Grok Bot': give the bot a router skill, leave it logging for a week so it stops retrying the same failures on its cloud shell. Engagement-bait packaging ('don't scroll past', 'thank me later'); the underlying idea is a router skill plus decision-logging loop for agents.
   posted 2026-10-20 · @0x_rody · 145.3K views · url: https://x.com/0x_rody/status/2112588144944062840
@@ -7211,6 +7220,10 @@
 ## Full Chronological List
 
 ### Oct 2026
+
+- **2026-10-21** | [marfin](https://x.com/marfinxx/status/2112891671834673156) | agent-design, claude-code, questionable
+  marfin's hype-packaged claim that Anthropic 'just showed' a 100-agent tri-model tournament in Claude Code (/arena): Sonnet builders in isolated git worktrees, a Haiku red-team fuzzer, and an Opus blind judge scoring on a 100-point rubric, with one survivor merged to main. The substantive idea is isolation and role separation to avoid self-review confirmation bias and shared-context bleed, with a ready-made setup prompt and a third-party skill repo (github.com/Jakeschincariol/arena-skill). The 'Anthropic showed this' framing and the specific throughput numbers are the author's unverified claims. Quotes marfin's earlier article on unifying harness, loop and graph engineering.
+  posted 2026-10-21 · @marfinxx · 2,279 views · concept: managing agent teams · url: https://x.com/marfinxx/status/2112891671834673156 · links: https://github.com/Jakeschincariol/arena-skill
 
 - **2026-10-21** | [Mia](https://x.com/miaai_lab/status/2112678922412241245) | industry
   Mia reports hands-on impressions of Drama TensorFold (github.com/plotarmordev/drama-tensorfold), an open voice-cloning/speech tool that runs locally on a GPU (about 38.2 GB memory), supports multiple languages in one cloned voice. Quotes the creator (netrunner/plotarmordev) who notes a quantized version is in the works. Enthusiastic first-person review, so take the 'blown away' framing as unverified.
