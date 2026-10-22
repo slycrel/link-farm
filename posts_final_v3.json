@@ -64,24 +64,24 @@
     "handle": "@coffeedev",
     "subject": "Post by Steve on X",
     "url": "https://x.com/coffeedev/status/2113089284563693676",
-    "summary": "Steve (@coffeedev) urges moving private keys out of environment variables into AWS KMS or secure enclaves, saying the era of keeping private keys in backends is over. Short security-practice reminder; capture was thin (only the post title text, page showed an ad).",
+    "summary": "Steve (@coffeedev) urges moving private keys out of environment variables into AWS KMS or secure enclaves, saying the era of keeping private keys in backends is over. Short security-practice reminder.",
     "topics": [
       "dev-practices"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "23.9K",
     "notes": "",
     "enriched": true,
-    "content": "Steve (@coffeedev): 'If you are still putting private keys in envs, now is your chance to switch to something more secure. Use AWS-KMS, secure enclaves, something - the age of getting away with having private keys in the backend is done.' (Page capture returned an ad card; text taken from the post title.)",
+    "content": "Steve (@coffeedev): If you are still putting private keys in envs, now is your chance to switch to something more secure. Use AWS-KMS, secure enclaves, something - the age of getting away with having private keys in the backend is done.",
     "posted_at": "2026-10-22T02:05:19",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-10-22",

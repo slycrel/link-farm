@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-10-22T15:19:28Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-10-22T16:55:08Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-10-22** — [Matt Pocock](https://x.com/mattpocockuk/status/2113196247964074322) — *now • Skills & MCP • 64.5K views • v1 enriched*  
@@ -2521,8 +2521,8 @@
 - [Arvid Kahl](https://x.com/arvidkahl/status/2113090822115889410) — 2026-10-22: Arvid Kahl endorses Proof Driven Development: GitHub Next / Microsoft Research's PDD Kit turns a plan into a formal spec and proves agent-written code satisfies it for every input, as an answer to cheap, rarely-reviewed agent-written tests. Flagged 'read today'.
   posted 2026-10-22 · @arvidkahl · 26.6K views · url: https://x.com/arvidkahl/status/2113090822115889410
 
-- [Steve](https://x.com/coffeedev/status/2113089284563693676) — 2026-10-22: Steve (@coffeedev) urges moving private keys out of environment variables into AWS KMS or secure enclaves, saying the era of keeping private keys in backends is over. Short security-practice reminder; capture was thin (only the post title text, page showed an ad).
-  posted 2026-10-22 · @coffeedev · url: https://x.com/coffeedev/status/2113089284563693676
+- [Steve](https://x.com/coffeedev/status/2113089284563693676) — 2026-10-22: Steve (@coffeedev) urges moving private keys out of environment variables into AWS KMS or secure enclaves, saying the era of keeping private keys in backends is over. Short security-practice reminder.
+  posted 2026-10-22 · @coffeedev · 23.9K views · url: https://x.com/coffeedev/status/2113089284563693676
 
 - [Claude](https://x.com/claudeai/status/2112962248218148878) — 2026-10-22: Anthropic's @claudeai announces Claude Security continuous scanning (public beta, Claude Enterprise): one-time repo connection, deep first scan then re-scans on change, multi-provider repos, findings via API and MCP connector, plus $25K/month credits for eligible orgs through Dec 31, 2026.
   posted 2026-10-21 · @claudeai · 57K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/claudeai/status/2112962248218148878
@@ -7326,8 +7326,8 @@
   posted 2026-10-22 · @arvidkahl · 26.6K views · url: https://x.com/arvidkahl/status/2113090822115889410
 
 - **2026-10-22** | [Steve](https://x.com/coffeedev/status/2113089284563693676) | dev-practices
-  Steve (@coffeedev) urges moving private keys out of environment variables into AWS KMS or secure enclaves, saying the era of keeping private keys in backends is over. Short security-practice reminder; capture was thin (only the post title text, page showed an ad).
-  posted 2026-10-22 · @coffeedev · url: https://x.com/coffeedev/status/2113089284563693676
+  Steve (@coffeedev) urges moving private keys out of environment variables into AWS KMS or secure enclaves, saying the era of keeping private keys in backends is over. Short security-practice reminder.
+  posted 2026-10-22 · @coffeedev · 23.9K views · url: https://x.com/coffeedev/status/2113089284563693676
 
 - **2026-10-22** | [Sarah Wooders](https://x.com/sarahwooders/status/2112964548533907613) | agent-design, research
   Sarah Wooders on Letta's FrontierMemory benchmark: existing memory benchmarks only test recall, so it adapts coding/knowledge-work tasks so context must be learned from prior related tasks, comparing how models and harnesses learn from experience over time.
