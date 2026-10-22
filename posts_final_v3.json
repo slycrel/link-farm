@@ -1,5 +1,330 @@
 [
   {
+    "date": "2026-10-22",
+    "author": "Matt Pocock",
+    "handle": "@mattpocockuk",
+    "subject": "Post by Matt Pocock on X",
+    "url": "https://x.com/mattpocockuk/status/2113196247964074322",
+    "summary": "Matt Pocock's /software-factory skill (github PR #1316 in his skills repo) paired with /grill-me: an interview-style prompt that helps you decide whether a software factory suits your team and brainstorm the infrastructure. Pairs naturally with Josh Rosen's factory-debate article.",
+    "topics": [
+      "skills-mcp",
+      "agent-design",
+      "prompting",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "64.5K",
+    "notes": "",
+    "enriched": true,
+    "content": "Matt Pocock: 'Prompt of the day: /grill-me on how a /software-factory might help us' — helps you decide if a software factory fits and brainstorms the infra needed. Link card: software-factory glossary skill for designing a factory (github.com/mattpocock PR #1316).\n\ngithub.com/mattpocock — software-factory: glossary skill for designing a factory (PR #1316)",
+    "posted_at": "2026-10-22T09:10:21",
+    "links": [
+      "https://github.com/mattpocock"
+    ],
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-22",
+    "author": "Arvid Kahl",
+    "handle": "@arvidkahl",
+    "subject": "Post by Arvid Kahl on X (read today)",
+    "url": "https://x.com/arvidkahl/status/2113090822115889410",
+    "summary": "Arvid Kahl endorses Proof Driven Development: GitHub Next / Microsoft Research's PDD Kit turns a plan into a formal spec and proves agent-written code satisfies it for every input, as an answer to cheap, rarely-reviewed agent-written tests. Flagged 'read today'.",
+    "topics": [
+      "dev-practices",
+      "agent-design",
+      "research",
+      "solo-operator"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "26.6K",
+    "notes": "flag: read today",
+    "enriched": true,
+    "content": "Arvid Kahl: 'This looks like the path forward. TDD is great, but agent-written tests are so cheap that many devs skip the review process. PDD might just be what is needed to increase clarity and specificity.' Quoting GitHub Next on Proof Driven Development Kit (PDD Kit) from Microsoft Research: turns a plan into a formal spec and proves agent code meets it for every input.\n\nGitHub Next: Introducing Proof Driven Development Kit (PDD Kit) from MSFT Research — formal spec from plan, proof that agent code meets it for every input.",
+    "posted_at": "2026-10-22T02:11:25",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-22",
+    "author": "Steve",
+    "handle": "@coffeedev",
+    "subject": "Post by Steve on X",
+    "url": "https://x.com/coffeedev/status/2113089284563693676",
+    "summary": "Steve (@coffeedev) urges moving private keys out of environment variables into AWS KMS or secure enclaves, saying the era of keeping private keys in backends is over. Short security-practice reminder; capture was thin (only the post title text, page showed an ad).",
+    "topics": [
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Steve (@coffeedev): 'If you are still putting private keys in envs, now is your chance to switch to something more secure. Use AWS-KMS, secure enclaves, something - the age of getting away with having private keys in the backend is done.' (Page capture returned an ad card; text taken from the post title.)",
+    "posted_at": "2026-10-22T02:05:19",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-22",
+    "author": "Sarah Wooders",
+    "handle": "@sarahwooders",
+    "subject": "Post by Sarah Wooders on X",
+    "url": "https://x.com/sarahwooders/status/2112964548533907613",
+    "summary": "Sarah Wooders on Letta's FrontierMemory benchmark: existing memory benchmarks only test recall, so it adapts coding/knowledge-work tasks so context must be learned from prior related tasks, comparing how models and harnesses learn from experience over time.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "12.5K",
+    "notes": "",
+    "enriched": true,
+    "content": "Sarah Wooders (Letta): agent memory is core to harnesses (Devin, Hermes, openclaw, Deep Agents, Letta) but existing benchmarks measure only recall. FrontierMemory adapts coding/knowledge-work tasks so required context must be learned from past related tasks, measuring cross-task learning.\n\nLetta: Introducing FrontierMemory — evaluating agent memory through downstream task performance rather than recall.",
+    "posted_at": "2026-10-21T17:49:40",
+    "concept": "vector / hybrid databases as agent-memory infrastructure",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-22",
+    "author": "Claude",
+    "handle": "@claudeai",
+    "subject": "Post by Claude on X",
+    "url": "https://x.com/claudeai/status/2112962248218148878",
+    "summary": "Anthropic's @claudeai announces Claude Security continuous scanning (public beta, Claude Enterprise): one-time repo connection, deep first scan then re-scans on change, multi-provider repos, findings via API and MCP connector, plus $25K/month credits for eligible orgs through Dec 31, 2026.",
+    "topics": [
+      "claude-code",
+      "dev-practices",
+      "skills-mcp",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "57K",
+    "notes": "",
+    "enriched": true,
+    "content": "Claude: Claude Security now keeps up with your code as it changes — connect repos once, deep first scan, then re-scans as changes land. Public beta on Claude Enterprise. Projects span GitHub, GitLab and other Git providers; findings reach tools via a new API and MCP connector. Eligible orgs get $25K usage credits per month for two months through Dec 31, 2026.",
+    "posted_at": "2026-10-21T17:40:31",
+    "concept": "Claude Code session workflows — handoffs, messaging & retention",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-22",
+    "author": "foobar/",
+    "handle": "@0xfoobar",
+    "subject": "Post by foobar/ on X (for today)",
+    "url": "https://x.com/0xfoobar/status/2112953224713969746",
+    "summary": "@0xfoobar's opinionated security checklist (minimumReleaseAge for npm deps, shrink dependency count, continuous AI red-teaming with abliterated GLM-5.3, smaller blast radius), quoting an NSA Cyber advisory about two critical PHP vulnerabilities. Strongly-worded take; the dependency-age and AI red-team ideas are the practical parts.",
+    "topics": [
+      "dev-practices",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "16.5K",
+    "notes": "flag: for today",
+    "enriched": true,
+    "content": "foobar/: critical software hygiene — minimumReleaseAge 3-7 days on dependencies, cut dependencies 80% (AI can reimplement), stay on latest versions, move off PHP, run abliterated GLM-5.3 red-team models over your codebase, reduce blast radius with edge-to-edge auth. Quoting NSA Cyber advisory on two critical PHP vulnerabilities.\n\nNSA Cyber: organizations using PHP advised to prepare for an update addressing two critical vulnerabilities.",
+    "posted_at": "2026-10-21T17:04:40",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-22",
+    "author": "Dr. Eric Berg DC",
+    "handle": "@dr_ericberg",
+    "subject": "Post by Dr. Eric Berg DC on X (verify)",
+    "url": "https://x.com/dr_ericberg/status/2112926143430922577",
+    "summary": "Dr. Eric Berg (chiropractor, not MD) claims L. reuteri is absent in ~95% of people and that restoring it raises oxytocin with effects on skin, muscle, sleep and body composition. Self-reported/popular-health framing with no cited studies — Jeremy flagged it 'verify'; worth checking against actual trials.",
+    "topics": [
+      "biohacking",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "69.8K",
+    "notes": "flag: verify",
+    "enriched": true,
+    "content": "Dr. Eric Berg: claims Lactobacillus reuteri is missing in 95-96% of people, that restoring it raises oxytocin and may affect skin thickness, muscle mass, sleep and body composition; says it was found widely in the 1960s and has declined due to antibiotics and modern living. Footer: 'DC, not MD; information only'.",
+    "posted_at": "2026-10-21T15:17:03",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-22",
+    "author": "Cameron R. Wolfe, Ph.D.",
+    "handle": "@cwolferesearch",
+    "subject": "Post by Cameron R. Wolfe, Ph.D. on X (might be dup, need to lvl up here)",
+    "url": "https://x.com/cwolferesearch/status/2112915508148232571",
+    "summary": "Cameron Wolfe's roadmap for evals on subjective agent tasks (cameronrwolfe.substack.com/p/subjective-evals): tiered offline LLM-judge -> human eval -> production A/B, with statistical hygiene (power analysis, CIs, paired comparisons) to separate real capability gains from noise. Practical reference for building eval suites.",
+    "topics": [
+      "research",
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "34.5K",
+    "notes": "flag: might be dup, need to lvl up here",
+    "enriched": true,
+    "content": "Cameron Wolfe: roadmap for building evals on highly subjective tasks — human evaluation as north star (calibrated evaluators), offline evaluation via calibrated LLM judges/rubrics, production monitoring + A/B tests; sampling diverse discriminative tasks (IRT, taxonomies); handling noise via power analysis, confidence intervals, re-sampling, paired comparisons. Blog: cameronrwolfe.substack.com/p/subjective-evals",
+    "posted_at": "2026-10-21T14:34:47",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-22",
+    "author": "Ryan Walker",
+    "handle": "@rwalk_xyz",
+    "subject": "Post by Ryan Walker on X",
+    "url": "https://x.com/rwalk_xyz/status/2112910553848938922",
+    "summary": "Ryan Walker's free CC0 legal template library for startups (MSAs, employment agreements, privacy policies) passed 3,100 GitHub stars. Handy reference for business logistics when going solo or building a small studio.",
+    "topics": [
+      "adjacent",
+      "solo-operator"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "45.5K",
+    "notes": "",
+    "enriched": true,
+    "content": "Ryan Walker: free CC0-licensed startup legal template library (MSAs, employment agreements, privacy policies) passed 3,100 GitHub stars; made free to give back to the startup community.\n\nAug 19 original: free CC0-licensed legal template library for startups — MSAs, employment agreements, privacy policies.",
+    "posted_at": "2026-10-21T14:15:06",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-22",
+    "author": "Josh Rosen",
+    "handle": "@josharosen",
+    "subject": "Post by Josh Rosen on X",
+    "url": "https://x.com/josharosen/status/2112902388302467493",
+    "summary": "Josh Rosen's article weighing four software-factory approaches — build (Temporal/Modal + Claude Code), buy (Warp, Factory, Port), fork (Open SWE), delegate (always-on agent) — across intake, coordination, verification and self-improvement; argues delegation loses measurability and proposes checkpoints (ThruWire). Useful framing for agent-orchestration decisions.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "20.8K",
+    "notes": "",
+    "enriched": true,
+    "content": "Josh Rosen, 'The Software Factory Debate: Build, Buy, Fork or Delegate' (X article). Compares four ways to build a software factory around coding agents (Warp/Factory/Port platforms, Open SWE fork, always-on agents like Grok Bot/OpenAI Dots) across intake, coordination, verification and improvement loops; argues Delegate lacks instrumentation and proposes checkpoints (ThruWire).",
+    "posted_at": "2026-10-21T13:42:39",
+    "concept": "agents as constrained software — making bad shapes unexpressible",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-22",
+    "author": "Jeff Tang",
+    "handle": "@jefftangx",
+    "subject": "Post by Jeff Tang on X",
+    "url": "https://x.com/jefftangx/status/2112761040819913123",
+    "summary": "Jeff Tang's roundup of people using tumor sequencing, AI agents and personalized vaccines to treat their own (or family's) cancers, led by GitLab's Sid Sijbrandij. A self-reported, anecdote-driven look at AI-enabled personal medicine and the founders building around it.",
+    "topics": [
+      "biohacking",
+      "industry",
+      "adjacent"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "391.8K",
+    "notes": "",
+    "enriched": true,
+    "content": "Jeff Tang: list of people who cured / are curing their own cancer on X — Sid Sijbrandij (GitLab) with 10+ personalized therapies, Paul Conyngham's dog Rosie, and others sequencing tumors and designing personalized vaccines, including one building an AI health agent startup. 'We're going to make it.'",
+    "posted_at": "2026-10-21T04:20:59",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-22",
+    "author": "Abliteration",
+    "handle": "@abliteration_ai",
+    "subject": "Post by Abliteration on X",
+    "url": "https://x.com/abliteration_ai/status/2094458081451393287",
+    "summary": "Abliteration (@abliteration_ai) launches a hosted abliterated GLM-5.3 model aimed at offensive-cyber, red-team and agent-testing work other models refuse (US-hosted, FP8, 1M context, no prompt retention). Vendor launch post with self-reported benchmark claims; relevant to the AI red-teaming idea in @0xfoobar's post.",
+    "topics": [
+      "industry",
+      "research",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "2.9M",
+    "notes": "",
+    "enriched": true,
+    "content": "Abliteration: releasing abliterated-model-large-v2, based on GLM-5.3 (#3 on Terminal-Bench 4.0 behind Opus 5 and Fable, 2x cyber exploitation of 5.2), abliterated and hosted to do offensive cyber, red teaming and agent testing work other models refuse. US-hosted, FP8, 1M context, zero prompt retention.",
+    "posted_at": "2026-08-31T16:11:34",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-10-21",
     "author": "Mia",
     "handle": "@miaai_lab",
@@ -2926,7 +3251,7 @@
     "enriched": true,
     "content": "AYi @AYi_AInotes (translated from Chinese)\nAnthropic's 13-page Agent Memory whitepaper is pretty badass—it's the most insightful, most valuable production-grade handbook I've seen this year on breaking down \"agent memory engineering\":\n\nA lot of people building Agents can't figure it out for the life of them: Why does their robot get dumber and dumber the more it runs, full of contradictions?\nBecause your Agent never forgets anything,\nOnce you grasp this 5-layer memory pyramid that slashes large model invocation costs by 90%, you'll finally see where the line lies between life and death for industrial-grade Agents:\n\nIts opening line hits every developer's soul-deep pain point right away:\nLarge models have gotten 10 times smarter in the past two years, but Agents without memory are stuck reliving *Groundhog Day* in your codebase every single day—\nRereading the same 12 files every morning, stepping in yesterday's pitfalls all over agai",
     "posted_at": "2026-09-15T12:12:56",
-    "concept": "local model serving on consumer GPUs — quantization & throughput",
+    "concept": "vector / hybrid databases as agent-memory infrastructure",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2
@@ -6983,7 +7308,7 @@
     "enriched": true,
     "content": "Introducing Trajectory: A Standard Format for Agent Experience Data. An open-source package that normalizes coding-agent sessions from Claude Code, Codex, deepagents, Letta Code and other harnesses into one token-efficient format for agents learning from past experience. Learning across harnesses requires a standard data format for the experience each harness produces.",
     "posted_at": "2026-07-24T06:07:03",
-    "concept": "agents as constrained software — making bad shapes unexpressible",
+    "concept": "persistent always-on agents — bot mode & agent desktops",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -10485,7 +10810,7 @@
     "enriched": true,
     "content": "The notes on Agent Harness's memory were insanely well-organized, covering everything from overviews of papers and benchmarks in the field to implementations in each Coding Agent.\n\nArticle: State of Memory in Agent Harness. Agent harnesses are where AI software actually runs. Cursor, Devin, Claude Code, Codex: these environments handle context, orchestrate tools, coordinate agents, and increasingly, manage memory.",
     "posted_at": "2026-06-04T04:54:30",
-    "concept": "agent harness engineering",
+    "concept": "vector / hybrid databases as agent-memory infrastructure",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2
@@ -15903,7 +16228,7 @@
     "links": [
       "https://github.com/Trampoline-AI/predict-rlm"
     ],
-    "concept": "agents-as-judges-of-agents — bossman supervisor / self-verification",
+    "concept": "vector / hybrid databases as agent-memory infrastructure",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -20297,7 +20622,7 @@
     "enriched": true,
     "content": "A new learning paradigm for AI agents that learns like humans. Most memory systems store raw trajectories (long, noisy, redundant), which hurts in-context. The SKILLRL paper distills experiences into compact reusable skills the agent retrieves and applies to future tasks, like human driving instincts.",
     "posted_at": "2026-03-17T06:49:31",
-    "concept": "self-improving skills (autoresearch pattern)",
+    "concept": "agentic code review at production scale",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -21413,7 +21738,7 @@
     "enriched": true,
     "content": "Dan Robinson (@danlovesproofs) — \"The Death of Issue Tracking\". Notices forward-thinking engineering teams running with no Linear, no backlog, no issue tracking at all, scaling this to 30+ engineers. Post-backlog thinking: if it matters it'll come up again; why write a ticket when you can just fix it (cost to fix is converging on cost to understand); a blank page forces a real OODA loop and better prioritization. Tailwind is AI — 7 capable engineers running agent swarms deliver what took 50+. Requires small flat teams, high ambient context, engineers trusted to make independent judgment calls and do their own PM, and agent-ready dev infra. Cites Tuomas Artman (Linear) and Quinn Slack (Amp 'Fix Bugs Now'). Part of the broader 'death of Midwit Software Engineering.'",
     "posted_at": "2026-03-03T17:50:11",
-    "concept": "vibecode-to-production via agent skills",
+    "concept": "agents as constrained software — making bad shapes unexpressible",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2
@@ -22204,7 +22529,7 @@
     "enriched": true,
     "content": "I find it funny when anyone feels confident they've figured out agentic programming. I've worked on OpenCode since last May and still have days where I'm not sure any of this is a good idea. I land on 'these models are an incredible tool' but it's confusing. I miss the mundane coding tasks; replacing hours with minutes of waiting on an agent is worth being excited about despite mixed emotions. There's a distance that can creep in between you and the code.",
     "posted_at": "2026-02-19T16:43:27",
-    "concept": "founder philosophy & life-design essays",
+    "concept": "Claude skills craft",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -23032,7 +23357,7 @@
     "enriched": true,
     "content": "The Bitter Lesson of Agent Frameworks. All the value is in the RL'd model, not your 10,000 lines of abstractions. An agent is just a for-loop of messages: keep going until the model stops calling tools. Browser Use's first agents had thousands of lines of abstractions - worked until we tried to change anything; every experiment fought the framework. Abstractions freeze assumptions about how intelligence should work; RL breaks them. The Bitter Lesson: general methods that leverage computation beat hand-crafted knowledge. 99% of the work is in the model - Claude Code can just write AppleScript directly instead of needing a bespoke tool. Key insight: frameworks fail because action spaces are incomplete; start from 'the model can do almost anything' then restrict based on evals. We threw everything away and reverse-engineered Claude Code and Gemini CLI (good simple primitives). BU Agent gives the model raw Chrome DevTools Protocol instructions plus browser extension APIs = nearly complete action space; the model routes around failures. Inversion: start with maximal capability, then layer safety/structure. Wrote our own minimal model-agnostic Chat classes (ChatAnthropic/ChatOpenAI/ChatGoogle, same ainvoke interface) for full control over caching/serialization. Ephemeral messages keep only the last N huge browser-state outputs so context doesn't balloon. The naive for-loop finishes prematurely - use a done() tool that raises TaskComplete; CLI mode stops on no tool calls, autonomous mode stops only on done(). Robustness (retries, backoff, rate limits, compaction, token tracking) is ops, not the agent. The less you build, the more it works. Open-sourcing as agent-sdk; prefer to paste the context into Claude Code and build your own.",
     "posted_at": "2026-01-16T06:39:46",
-    "concept": "agents as constrained software — making bad shapes unexpressible",
+    "concept": "persistent always-on agents — bot mode & agent desktops",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
