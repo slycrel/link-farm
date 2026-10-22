@@ -1,6 +1,34 @@
 [
   {
     "date": "2026-10-22",
+    "author": "Yarchi",
+    "handle": "@undefinedki",
+    "subject": "Post by Yarchi on X (added manually)",
+    "url": "https://x.com/undefinedKi/status/2113253566295027888",
+    "summary": "Yarchi's thread summarizing Meta's reported internal agent setup (3-4 days down to under 1 hour): a rule-driven router agent in front of 14 siloed expert agents with a uniform structure and on-demand knowledge files, plus tips for copying it. Secondhand summary of Meta's claims; quotes his own agent-harness design article.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "6.9K",
+    "notes": "flag: added manually",
+    "enriched": true,
+    "content": "Yarchi: Meta shared the internal AI agent setup cutting a 3-4 day task to under 1 hour. One agent with all knowledge got confused, so they split into two layers: a boss/router agent that does no real work (6 of 7 steps fixed rules: read request, dedupe, collect inputs, safety checks, hand off) and 14 expert agents that each see only their own area. To copy: keep main agent as router; give every expert the same structure (knowledge, needs, steps, common errors/fixes); store knowledge in separate files loaded on demand; reorder existing agents before building new ones. Result: under 1 hour vs 3-4 days; ~2/3 of changes land without major human edits.\n\nAug 15 article: How to Design an Agent Harness: six decisions that turn a model into a worker you can leave alone.",
+    "posted_at": "2026-10-22T12:58:07",
+    "concept": "persistent always-on agents — bot mode & agent desktops",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-22",
     "author": "Matt Pocock",
     "handle": "@mattpocockuk",
     "subject": "Post by Matt Pocock on X",
@@ -21738,7 +21766,7 @@
     "enriched": true,
     "content": "Dan Robinson (@danlovesproofs) — \"The Death of Issue Tracking\". Notices forward-thinking engineering teams running with no Linear, no backlog, no issue tracking at all, scaling this to 30+ engineers. Post-backlog thinking: if it matters it'll come up again; why write a ticket when you can just fix it (cost to fix is converging on cost to understand); a blank page forces a real OODA loop and better prioritization. Tailwind is AI — 7 capable engineers running agent swarms deliver what took 50+. Requires small flat teams, high ambient context, engineers trusted to make independent judgment calls and do their own PM, and agent-ready dev infra. Cites Tuomas Artman (Linear) and Quinn Slack (Amp 'Fix Bugs Now'). Part of the broader 'death of Midwit Software Engineering.'",
     "posted_at": "2026-03-03T17:50:11",
-    "concept": "agents as constrained software — making bad shapes unexpressible",
+    "concept": "vibecode-to-production via agent skills",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2

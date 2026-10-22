@@ -1,12 +1,12 @@
 # AI Links Collection
-**Total Posts**: 905  
+**Total Posts**: 906  
 **Date Range**: 2024-06-11 – 2026-10-22  
-**Enriched**: 905/905 (100%)
+**Enriched**: 906/906 (100%)
 
 ---
 ## Morning view
 
-*Generated 2026-10-22T16:55:08Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-10-22T19:40:55Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-10-22** — [Matt Pocock](https://x.com/mattpocockuk/status/2113196247964074322) — *now • Skills & MCP • 64.5K views • v1 enriched*  
@@ -59,13 +59,13 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 579 | 64.0% |
-| claude-code | 215 | 23.8% |
-| dev-practices | 422 | 46.6% |
+| agent-design | 580 | 64.0% |
+| claude-code | 215 | 23.7% |
+| dev-practices | 423 | 46.7% |
 | skills-mcp | 209 | 23.1% |
 | prompting | 144 | 15.9% |
-| research | 264 | 29.2% |
-| industry | 148 | 16.4% |
+| research | 264 | 29.1% |
+| industry | 149 | 16.4% |
 | management | 145 | 16.0% |
 | adjacent | 51 | 5.6% |
 | solo-operator | 12 | 1.3% |
@@ -76,6 +76,7 @@
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-10-22 | Yarchi | agent-design | Yarchi's thread summarizing Meta's reported internal agent setup (3-4... |
 | 2026-10-22 | Matt Pocock | skills-mcp | Matt Pocock's /software-factory skill (github PR #1316 in his skills r... |
 | 2026-10-22 | Arvid Kahl | dev-practices | Arvid Kahl endorses Proof Driven Development: GitHub Next / Microsoft... |
 | 2026-10-22 | Steve | dev-practices | Steve (@coffeedev) urges moving private keys out of environment variab... |
@@ -125,12 +126,14 @@
 | 2026-09-29 | Residual | agent-design | Engagement-farmed pointer (1.6M views, 'save this' hook, attributes th... |
 | 2026-09-29 | Rohit Ghumare | dev-practices | Rohit Ghumare's checklist of what AI engineers should actually learn:... |
 | 2026-09-29 | OpenAI | agent-design | OpenAI Codex as an agent harness platform. Open-source harness for bui... |
-| 2026-09-26 | Boris Cherny | claude-code | Boris Cherny endorsing Anthropic's new plugin submission portal — subm... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (579)
+### Agent Design (580)
+
+- [Yarchi](https://x.com/undefinedKi/status/2113253566295027888) — 2026-10-22: Yarchi's thread summarizing Meta's reported internal agent setup (3-4 days down to under 1 hour): a rule-driven router agent in front of 14 siloed expert agents with a uniform structure and on-demand knowledge files, plus tips for copying it. Secondhand summary of Meta's claims; quotes his own agent-harness design article.
+  posted 2026-10-22 · @undefinedki · 6.9K views · concept: persistent always-on agents — bot mode & agent desktops · url: https://x.com/undefinedKi/status/2113253566295027888
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/2113196247964074322) — 2026-10-22: Matt Pocock's /software-factory skill (github PR #1316 in his skills repo) paired with /grill-me: an interview-style prompt that helps you decide whether a software factory suits your team and brainstorm the infrastructure. Pairs naturally with Josh Rosen's factory-debate article.
   posted 2026-10-22 · @mattpocockuk · 64.5K views · url: https://x.com/mattpocockuk/status/2113196247964074322 · links: https://github.com/mattpocock
@@ -1663,7 +1666,7 @@
   posted 2026-03-04 · @swaritjoshipura · 51K views · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/swaritjoshipura/status/2029219363749020051 · links: https://foundationcapital.com/context-graphs-ais-trillion-dollar-opportunity https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents https://www.youtube.com/watch?v=Zyw-YA0k3xo https://resolve.ai
 
 - [Dan Robinson](https://x.com/danlovesproofs/status/2028890694837039202) — 2026-03-05: Argues issue tracking/backlogs are dying: forward-thinking AI-augmented teams skip Linear/tickets entirely because the cost to fix an issue now approaches the cost to understand it. Works for small, flat, high-context teams with strong dev infra; framed as part of the 'death of midwit software engineering.'
-  posted 2026-03-03 · @danlovesproofs · 321.9K views · concept: agents as constrained software — making bad shapes unexpressible · url: https://x.com/danlovesproofs/status/2028890694837039202
+  posted 2026-03-03 · @danlovesproofs · 321.9K views · concept: vibecode-to-production via agent skills · url: https://x.com/danlovesproofs/status/2028890694837039202
 
 - [Avid](https://x.com/av1dlive/status/2027429188471558475) — 2026-03-05: Engagement-style 'AI will take your job' listicle, but with a usable career playbook: audit which tasks AI can replicate, learn local agent tooling and stackable 'skills', layer AI-native competence (prompting, orchestration, RAG, automation), shift from executor to system designer, double down on human edge, and build a product/brand.
   posted 2026-02-27 · @Av1dlive · 58.3K views · concept: Forward Deployed Engineers — the durable AI-era role · url: https://x.com/av1dlive/status/2027429188471558475
@@ -2516,7 +2519,10 @@
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
   @curvedinf · url: https://github.com/curvedinf/dir-assistant
 
-### Dev Practices (422)
+### Dev Practices (423)
+
+- [Yarchi](https://x.com/undefinedKi/status/2113253566295027888) — 2026-10-22: Yarchi's thread summarizing Meta's reported internal agent setup (3-4 days down to under 1 hour): a rule-driven router agent in front of 14 siloed expert agents with a uniform structure and on-demand knowledge files, plus tips for copying it. Secondhand summary of Meta's claims; quotes his own agent-harness design article.
+  posted 2026-10-22 · @undefinedki · 6.9K views · concept: persistent always-on agents — bot mode & agent desktops · url: https://x.com/undefinedKi/status/2113253566295027888
 
 - [Arvid Kahl](https://x.com/arvidkahl/status/2113090822115889410) — 2026-10-22: Arvid Kahl endorses Proof Driven Development: GitHub Next / Microsoft Research's PDD Kit turns a plan into a formal spec and proves agent-written code satisfies it for every input, as an answer to cheap, rarely-reviewed agent-written tests. Flagged 'read today'.
   posted 2026-10-22 · @arvidkahl · 26.6K views · url: https://x.com/arvidkahl/status/2113090822115889410
@@ -3560,7 +3566,7 @@
   posted 2026-03-04 · @yenkel · 420.6K views · concept: Forward Deployed Engineers — the durable AI-era role · url: https://x.com/yenkel/status/2029299384832209259
 
 - [Dan Robinson](https://x.com/danlovesproofs/status/2028890694837039202) — 2026-03-05: Argues issue tracking/backlogs are dying: forward-thinking AI-augmented teams skip Linear/tickets entirely because the cost to fix an issue now approaches the cost to understand it. Works for small, flat, high-context teams with strong dev infra; framed as part of the 'death of midwit software engineering.'
-  posted 2026-03-03 · @danlovesproofs · 321.9K views · concept: agents as constrained software — making bad shapes unexpressible · url: https://x.com/danlovesproofs/status/2028890694837039202
+  posted 2026-03-03 · @danlovesproofs · 321.9K views · concept: vibecode-to-production via agent skills · url: https://x.com/danlovesproofs/status/2028890694837039202
 
 - [tetsuo](https://x.com/tetsuoai/status/2028068322106097773) — 2026-03-02: Technical breakdown of recurring agentic failure modes in fast/distilled code models: wrong direct-exec vs shell selection, structured-output (JSON-only) non-compliance, and tool-result grounding failures (reporting success after a tool error). Fix: distill full agent trajectories (request→tool→output→grounded response), add contrastive near-miss examples, and gate on concrete agentic evals.
   posted 2026-03-01 · @tetsuoai · 49.8K views · concept: loop engineering · url: https://x.com/tetsuoai/status/2028068322106097773
@@ -5641,7 +5647,10 @@
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.
   posted 2024-06-10 · @svpino · 1M views · url: https://x.com/svpino/status/1800151091461652740
 
-### Industry (148)
+### Industry (149)
+
+- [Yarchi](https://x.com/undefinedKi/status/2113253566295027888) — 2026-10-22: Yarchi's thread summarizing Meta's reported internal agent setup (3-4 days down to under 1 hour): a rule-driven router agent in front of 14 siloed expert agents with a uniform structure and on-demand knowledge files, plus tips for copying it. Secondhand summary of Meta's claims; quotes his own agent-harness design article.
+  posted 2026-10-22 · @undefinedki · 6.9K views · concept: persistent always-on agents — bot mode & agent desktops · url: https://x.com/undefinedKi/status/2113253566295027888
 
 - [Claude](https://x.com/claudeai/status/2112962248218148878) — 2026-10-22: Anthropic's @claudeai announces Claude Security continuous scanning (public beta, Claude Enterprise): one-time repo connection, deep first scan then re-scans on change, multi-provider repos, findings via API and MCP connector, plus $25K/month credits for eligible orgs through Dec 31, 2026.
   posted 2026-10-21 · @claudeai · 57K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/claudeai/status/2112962248218148878
@@ -6037,7 +6046,7 @@
   posted 2026-03-04 · @swaritjoshipura · 51K views · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/swaritjoshipura/status/2029219363749020051 · links: https://foundationcapital.com/context-graphs-ais-trillion-dollar-opportunity https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents https://www.youtube.com/watch?v=Zyw-YA0k3xo https://resolve.ai
 
 - [Dan Robinson](https://x.com/danlovesproofs/status/2028890694837039202) — 2026-03-05: Argues issue tracking/backlogs are dying: forward-thinking AI-augmented teams skip Linear/tickets entirely because the cost to fix an issue now approaches the cost to understand it. Works for small, flat, high-context teams with strong dev infra; framed as part of the 'death of midwit software engineering.'
-  posted 2026-03-03 · @danlovesproofs · 321.9K views · concept: agents as constrained software — making bad shapes unexpressible · url: https://x.com/danlovesproofs/status/2028890694837039202
+  posted 2026-03-03 · @danlovesproofs · 321.9K views · concept: vibecode-to-production via agent skills · url: https://x.com/danlovesproofs/status/2028890694837039202
 
 - [David Byttow](https://x.com/davidbyttow/status/2028233578329600449) — 2026-03-02: Essay arguing AI agents are collapsing the coordination layer of organizations. As execution and coordination costs approach zero, the remaining scarce skill is goal clarity, taste, and ownership. Warns bad judgment now scales faster — strategic mistakes show up as fast delivery of the wrong thing.
   posted 2026-03-01 · @davidbyttow · 19.5K views · concept: vibecode-to-production via agent skills · url: https://x.com/davidbyttow/status/2028233578329600449
@@ -6417,7 +6426,7 @@
   posted 2026-03-04 · @tunguz · 17.5K views · concept: management & organizational culture · url: https://x.com/tunguz/status/2029164042028236942
 
 - [Dan Robinson](https://x.com/danlovesproofs/status/2028890694837039202) — 2026-03-05: Argues issue tracking/backlogs are dying: forward-thinking AI-augmented teams skip Linear/tickets entirely because the cost to fix an issue now approaches the cost to understand it. Works for small, flat, high-context teams with strong dev infra; framed as part of the 'death of midwit software engineering.'
-  posted 2026-03-03 · @danlovesproofs · 321.9K views · concept: agents as constrained software — making bad shapes unexpressible · url: https://x.com/danlovesproofs/status/2028890694837039202
+  posted 2026-03-03 · @danlovesproofs · 321.9K views · concept: vibecode-to-production via agent skills · url: https://x.com/danlovesproofs/status/2028890694837039202
 
 - [Avid](https://x.com/av1dlive/status/2027429188471558475) — 2026-03-05: Engagement-style 'AI will take your job' listicle, but with a usable career playbook: audit which tasks AI can replicate, learn local agent tooling and stackable 'skills', layer AI-native competence (prompting, orchestration, RAG, automation), shift from executor to system designer, double down on human edge, and build a product/brand.
   posted 2026-02-27 · @Av1dlive · 58.3K views · concept: Forward Deployed Engineers — the durable AI-era role · url: https://x.com/av1dlive/status/2027429188471558475
@@ -7316,6 +7325,10 @@
 ## Full Chronological List
 
 ### Oct 2026
+
+- **2026-10-22** | [Yarchi](https://x.com/undefinedKi/status/2113253566295027888) | agent-design, dev-practices, industry
+  Yarchi's thread summarizing Meta's reported internal agent setup (3-4 days down to under 1 hour): a rule-driven router agent in front of 14 siloed expert agents with a uniform structure and on-demand knowledge files, plus tips for copying it. Secondhand summary of Meta's claims; quotes his own agent-harness design article.
+  posted 2026-10-22 · @undefinedki · 6.9K views · concept: persistent always-on agents — bot mode & agent desktops · url: https://x.com/undefinedKi/status/2113253566295027888
 
 - **2026-10-22** | [Matt Pocock](https://x.com/mattpocockuk/status/2113196247964074322) | skills-mcp, agent-design, prompting, claude-code
   Matt Pocock's /software-factory skill (github PR #1316 in his skills repo) paired with /grill-me: an interview-style prompt that helps you decide whether a software factory suits your team and brainstorm the infrastructure. Pairs naturally with Josh Rosen's factory-debate article.
@@ -10389,7 +10402,7 @@
 
 - **2026-03-05** | [Dan Robinson](https://x.com/danlovesproofs/status/2028890694837039202) | management, dev-practices, agent-design, industry
   Argues issue tracking/backlogs are dying: forward-thinking AI-augmented teams skip Linear/tickets entirely because the cost to fix an issue now approaches the cost to understand it. Works for small, flat, high-context teams with strong dev infra; framed as part of the 'death of midwit software engineering.'
-  posted 2026-03-03 · @danlovesproofs · 321.9K views · concept: agents as constrained software — making bad shapes unexpressible · url: https://x.com/danlovesproofs/status/2028890694837039202
+  posted 2026-03-03 · @danlovesproofs · 321.9K views · concept: vibecode-to-production via agent skills · url: https://x.com/danlovesproofs/status/2028890694837039202
 
 - **2026-03-05** | [Avid](https://x.com/av1dlive/status/2027429188471558475) | questionable, management, agent-design
   Engagement-style 'AI will take your job' listicle, but with a usable career playbook: audit which tasks AI can replicate, learn local agent tooling and stackable 'skills', layer AI-native competence (prompting, orchestration, RAG, automation), shift from executor to system designer, double down on human edge, and build a product/brand.
