@@ -1,12 +1,12 @@
 # AI Links Collection
-**Total Posts**: 906  
-**Date Range**: 2024-06-11 – 2026-10-22  
-**Enriched**: 906/906 (100%)
+**Total Posts**: 908  
+**Date Range**: 2024-06-11 – 2026-10-23  
+**Enriched**: 908/908 (100%)
 
 ---
 ## Morning view
 
-*Generated 2026-10-22T19:40:55Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-10-23T15:17:14Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-10-22** — [Matt Pocock](https://x.com/mattpocockuk/status/2113196247964074322) — *now • Skills & MCP • 64.5K views • v1 enriched*  
@@ -23,11 +23,6 @@
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
 
-- **Claude Code session workflows — handoffs, messaging & retention** (21 posts, +4 this week)  
-  Discovered by orphan clustering on 2026-10-08 from 6 posts with no prior concept (cohesion 0.66). Rename or archive if this isn't a real theme.
-    - 2026-10-22 — [Claude](https://x.com/claudeai/status/2112962248218148878): Anthropic's @claudeai announces Claude Security continuous scanning (public beta, Claude Enterprise): one-time repo connection, deep first s…
-    - 2026-10-21 — [Anthony Kroeger](https://x.com/kr0der/status/2106429105671643587): Practical Claude Code Projects tip: tell the project's coordinator to post updates whenever a thread is blocked or finishes a milestone, and…
-
 - **agent harness engineering** (45 posts, +3 this week)  
   Engineering the harness around a model — loops, tools, context management, evals — as the main lever on agent performance.
     - 2026-10-21 — [Caspar](https://x.com/caspar_br/status/2112644945697976630): Caspar (LangChain) lists the shared primitives of a 'company harness' for internal agents: lives where people work (Slack), knows who is ask…
@@ -38,15 +33,20 @@
     - 2026-10-21 — [Andrej Karpathy](https://x.com/karpathy/status/2036487306585268612): Karpathy on the litellm PyPI supply-chain attack: a plain `pip install litellm` could exfiltrate SSH keys, cloud credentials, Kubernetes con…
     - 2026-10-21 — [Anže Pečar](https://x.com/anze3db/status/2112616425693266153): Security alert: private keys for 8 intermediate CA certificates were reportedly compromised. Pečar urges upgrading certifi everywhere (uv se…
 
-- **vector / hybrid databases as agent-memory infrastructure** (44 posts, +2 this week)  
-  HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
-    - 2026-10-22 — [Sarah Wooders](https://x.com/sarahwooders/status/2112964548533907613): Sarah Wooders on Letta's FrontierMemory benchmark: existing memory benchmarks only test recall, so it adapts coding/knowledge-work tasks so …
-    - 2026-10-08 — [mem0](https://x.com/mem0ai/status/2107873474517889201): mem0's X-article breakdown of Jev-Mem (arxiv.org/pdf/2609.23986, github.com/libingzheren/Jev-Mem) — a UT Dallas architecture that uses Jev a…
-
 - **applied decision-model routing — gating agents with Jev** (37 posts, +2 this week)  
   Discovered by orphan clustering on 2026-09-28 (6 posts, cohesion 0.66); renamed in-session. The *applied* side of System One / decision models: putting a non-generative decision model in front of an agent as a gate, router, verifier or judge, plus the libraries and framework integrations that make that practical (AnyJev, DSPy, LangGraph, Claude Code hooks). Deliberately distinct from #74 'System One models — bounded decisions as a primitive', which holds the concept itself and was frozen out of centroid scoring after the 2026-09-25 magnet rollback; because #74 can no longer recruit by cosine, the live Jev conversation could not reach it and formed this cluster instead. On 2026-09-28 #74's 11 canonical edges were demoted to weak so it became a secondary-only grouping tag, releasing its members to re-home here or elsewhere. NOTE: do not write the centroid-scoring opt-out marker as a literal string in this description — the eligibility check is a plain substring match over the whole description, so merely mentioning it silently disables semantic scoring for this concept (hit for real on 2026-09-28).
     - 2026-10-21 — [elvis](https://x.com/omarsar0/status/2112632133357346889): Elvis (DAIR.AI) says to learn to build evals and recommends Hamel Husain's new post on using decision models for evals (choosing a model and…
     - 2026-10-15 — [elvis](https://x.com/omarsar0/status/2110083302728323346): elvis highlights the LongHarness paper (arxiv.org/abs/2610.13075): a model-agnostic agent harness for 100M+ token corpora that takes GLM-5.3…
+
+- **Claude Code session workflows — handoffs, messaging & retention** (21 posts, +2 this week)  
+  Discovered by orphan clustering on 2026-10-08 from 6 posts with no prior concept (cohesion 0.66). Rename or archive if this isn't a real theme.
+    - 2026-10-22 — [Claude](https://x.com/claudeai/status/2112962248218148878): Anthropic's @claudeai announces Claude Security continuous scanning (public beta, Claude Enterprise): one-time repo connection, deep first s…
+    - 2026-10-21 — [Anthony Kroeger](https://x.com/kr0der/status/2106429105671643587): Practical Claude Code Projects tip: tell the project's coordinator to post updates whenever a thread is blocked or finishes a milestone, and…
+
+- **persistent always-on agents — bot mode & agent desktops** (46 posts, +1 this week)  
+  Agents that outlive a chat session: persistent bot profiles with their own job and memory, remote/self-hosted execution that survives closing the laptop, and the desktop workspaces around them (Hermes/Nous, Grok bot mode, OpenClaw). Renamed from auto-named cluster on 2026-08-21.
+    - 2026-10-22 — [Yarchi](https://x.com/undefinedKi/status/2113253566295027888): Yarchi's thread summarizing Meta's reported internal agent setup (3-4 days down to under 1 hour): a rule-driven router agent in front of 14 …
+    - 2026-09-16 — [Yarchi](https://x.com/undefinedki/status/2100206342942187620): Describes Google's Stellar Colosseum, a multi-agent setup published for unsolved math problems and already built into Antigravity, Google's …
 
 
 ### Revisit from last month
@@ -59,23 +59,25 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 580 | 64.0% |
+| agent-design | 580 | 63.9% |
 | claude-code | 215 | 23.7% |
-| dev-practices | 423 | 46.7% |
-| skills-mcp | 209 | 23.1% |
+| dev-practices | 424 | 46.7% |
+| skills-mcp | 209 | 23.0% |
 | prompting | 144 | 15.9% |
-| research | 264 | 29.1% |
-| industry | 149 | 16.4% |
+| research | 266 | 29.3% |
+| industry | 151 | 16.6% |
 | management | 145 | 16.0% |
 | adjacent | 51 | 5.6% |
 | solo-operator | 12 | 1.3% |
-| questionable | 152 | 16.8% |
+| questionable | 153 | 16.9% |
 | general | 45 | 5.0% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-10-23 | The Curious Tales | industry | The Curious Tales (security practitioner) describes a honeypot hit 14,... |
+| 2026-10-23 | Anthropic | research | Anthropic's Frontier Red Team blog post, done with Theorem Labs: Claud... |
 | 2026-10-22 | Yarchi | agent-design | Yarchi's thread summarizing Meta's reported internal agent setup (3-4... |
 | 2026-10-22 | Matt Pocock | skills-mcp | Matt Pocock's /software-factory skill (github PR #1316 in his skills r... |
 | 2026-10-22 | Arvid Kahl | dev-practices | Arvid Kahl endorses Proof Driven Development: GitHub Next / Microsoft... |
@@ -124,8 +126,6 @@
 | 2026-09-29 | Ryven | agent-design | Ryven's 10-step practical ladder for adopting Jev ('the Bitcoin moment... |
 | 2026-09-29 | MIKE | agent-design | MIKE's 'Jev Masterclass' X article (221.8K views): the most complete s... |
 | 2026-09-29 | Residual | agent-design | Engagement-farmed pointer (1.6M views, 'save this' hook, attributes th... |
-| 2026-09-29 | Rohit Ghumare | dev-practices | Rohit Ghumare's checklist of what AI engineers should actually learn:... |
-| 2026-09-29 | OpenAI | agent-design | OpenAI Codex as an agent harness platform. Open-source harness for bui... |
 
 ---
 ## Posts by Topic
@@ -2519,7 +2519,10 @@
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
   @curvedinf · url: https://github.com/curvedinf/dir-assistant
 
-### Dev Practices (423)
+### Dev Practices (424)
+
+- [Anthropic](https://x.com/anthropicai/status/2113390212911083894) — 2026-10-23: Anthropic's Frontier Red Team blog post, done with Theorem Labs: Claude was used to prove security properties in 100+ real-world open-source libraries over a few weeks, arguing AI is making formal verification feasible at scale (anthropic.com blog 'LLMs are making formal software verification feasible at a much larger scale'). Replies mention Ada/SPARK and an SMT/Z3 language, github.com/slop-lang/slop.
+  posted 2026-10-22 · @anthropicai · 1.3M views · concept: Claude Code setup & usage · url: https://x.com/anthropicai/status/2113390212911083894 · links: https://github.com/slop-lang/slop
 
 - [Yarchi](https://x.com/undefinedKi/status/2113253566295027888) — 2026-10-22: Yarchi's thread summarizing Meta's reported internal agent setup (3-4 days down to under 1 hour): a rule-driven router agent in front of 14 siloed expert agents with a uniform structure and on-demand knowledge files, plus tips for copying it. Secondhand summary of Meta's claims; quotes his own agent-harness design article.
   posted 2026-10-22 · @undefinedki · 6.9K views · concept: persistent always-on agents — bot mode & agent desktops · url: https://x.com/undefinedKi/status/2113253566295027888
@@ -4853,7 +4856,13 @@
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
   @tom-doerr · concept: agent identity files (SOUL.md, CLAUDE.md, persona scaffolds) · url: https://github.com/tom-doerr/dotfiles/blob/master/instruction.md
 
-### Research (264)
+### Research (266)
+
+- [The Curious Tales](https://x.com/thecurioustales/status/2113417486762955073) — 2026-10-23: The Curious Tales (security practitioner) describes a honeypot hit 14,000 times in six hours by mostly non-human traffic, arguing the threat landscape is now autonomous agents; cites a 4.2 Tbps Cloudflare DDoS, ransomware up 41% in a month, and agents attacking RubyGems. Dramatic framing with unverified stats, but relevant to agent-driven attack surface.
+  posted 2026-10-22 · @thecurioustales · url: https://x.com/thecurioustales/status/2113417486762955073
+
+- [Anthropic](https://x.com/anthropicai/status/2113390212911083894) — 2026-10-23: Anthropic's Frontier Red Team blog post, done with Theorem Labs: Claude was used to prove security properties in 100+ real-world open-source libraries over a few weeks, arguing AI is making formal verification feasible at scale (anthropic.com blog 'LLMs are making formal software verification feasible at a much larger scale'). Replies mention Ada/SPARK and an SMT/Z3 language, github.com/slop-lang/slop.
+  posted 2026-10-22 · @anthropicai · 1.3M views · concept: Claude Code setup & usage · url: https://x.com/anthropicai/status/2113390212911083894 · links: https://github.com/slop-lang/slop
 
 - [Arvid Kahl](https://x.com/arvidkahl/status/2113090822115889410) — 2026-10-22: Arvid Kahl endorses Proof Driven Development: GitHub Next / Microsoft Research's PDD Kit turns a plan into a formal spec and proves agent-written code satisfies it for every input, as an answer to cheap, rarely-reviewed agent-written tests. Flagged 'read today'.
   posted 2026-10-22 · @arvidkahl · 26.6K views · url: https://x.com/arvidkahl/status/2113090822115889410
@@ -5647,7 +5656,13 @@
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.
   posted 2024-06-10 · @svpino · 1M views · url: https://x.com/svpino/status/1800151091461652740
 
-### Industry (149)
+### Industry (151)
+
+- [The Curious Tales](https://x.com/thecurioustales/status/2113417486762955073) — 2026-10-23: The Curious Tales (security practitioner) describes a honeypot hit 14,000 times in six hours by mostly non-human traffic, arguing the threat landscape is now autonomous agents; cites a 4.2 Tbps Cloudflare DDoS, ransomware up 41% in a month, and agents attacking RubyGems. Dramatic framing with unverified stats, but relevant to agent-driven attack surface.
+  posted 2026-10-22 · @thecurioustales · url: https://x.com/thecurioustales/status/2113417486762955073
+
+- [Anthropic](https://x.com/anthropicai/status/2113390212911083894) — 2026-10-23: Anthropic's Frontier Red Team blog post, done with Theorem Labs: Claude was used to prove security properties in 100+ real-world open-source libraries over a few weeks, arguing AI is making formal verification feasible at scale (anthropic.com blog 'LLMs are making formal software verification feasible at a much larger scale'). Replies mention Ada/SPARK and an SMT/Z3 language, github.com/slop-lang/slop.
+  posted 2026-10-22 · @anthropicai · 1.3M views · concept: Claude Code setup & usage · url: https://x.com/anthropicai/status/2113390212911083894 · links: https://github.com/slop-lang/slop
 
 - [Yarchi](https://x.com/undefinedKi/status/2113253566295027888) — 2026-10-22: Yarchi's thread summarizing Meta's reported internal agent setup (3-4 days down to under 1 hour): a rule-driven router agent in front of 14 siloed expert agents with a uniform structure and on-demand knowledge files, plus tips for copying it. Secondhand summary of Meta's claims; quotes his own agent-harness design article.
   posted 2026-10-22 · @undefinedki · 6.9K views · concept: persistent always-on agents — bot mode & agent desktops · url: https://x.com/undefinedKi/status/2113253566295027888
@@ -6726,7 +6741,10 @@
 - [zostaff](https://x.com/zostaff/status/2033930728044372275) — 2026-03-18: zostaff's clickbait-titled ('How to Quit Your Job in One Day') walkthrough of an autonomous Polymarket trading system built from three agents: Claude (strategist — probability/recommendation/confidence), Codex (engineer — writes and debugs bot code), and OpenClaw (orchestrator — persistent memory, cron, modular skills, Telegram interface that executes trades and logs everything).
   posted 2026-03-17 · @zostaff · 3M views · concept: prediction-market & crypto trading bots · url: https://x.com/zostaff/status/2033930728044372275
 
-### Questionable (152)
+### Questionable (153)
+
+- [The Curious Tales](https://x.com/thecurioustales/status/2113417486762955073) — 2026-10-23: The Curious Tales (security practitioner) describes a honeypot hit 14,000 times in six hours by mostly non-human traffic, arguing the threat landscape is now autonomous agents; cites a 4.2 Tbps Cloudflare DDoS, ransomware up 41% in a month, and agents attacking RubyGems. Dramatic framing with unverified stats, but relevant to agent-driven attack surface.
+  posted 2026-10-22 · @thecurioustales · url: https://x.com/thecurioustales/status/2113417486762955073
 
 - [Dr. Eric Berg DC](https://x.com/dr_ericberg/status/2112926143430922577) — 2026-10-22: Dr. Eric Berg (chiropractor, not MD) claims L. reuteri is absent in ~95% of people and that restoring it raises oxytocin with effects on skin, muscle, sleep and body composition. Self-reported/popular-health framing with no cited studies — Jeremy flagged it 'verify'; worth checking against actual trials.
   posted 2026-10-21 · @dr_ericberg · 69.8K views · url: https://x.com/dr_ericberg/status/2112926143430922577
@@ -7325,6 +7343,14 @@
 ## Full Chronological List
 
 ### Oct 2026
+
+- **2026-10-23** | [The Curious Tales](https://x.com/thecurioustales/status/2113417486762955073) | industry, research, questionable
+  The Curious Tales (security practitioner) describes a honeypot hit 14,000 times in six hours by mostly non-human traffic, arguing the threat landscape is now autonomous agents; cites a 4.2 Tbps Cloudflare DDoS, ransomware up 41% in a month, and agents attacking RubyGems. Dramatic framing with unverified stats, but relevant to agent-driven attack surface.
+  posted 2026-10-22 · @thecurioustales · url: https://x.com/thecurioustales/status/2113417486762955073
+
+- **2026-10-23** | [Anthropic](https://x.com/anthropicai/status/2113390212911083894) | research, industry, dev-practices
+  Anthropic's Frontier Red Team blog post, done with Theorem Labs: Claude was used to prove security properties in 100+ real-world open-source libraries over a few weeks, arguing AI is making formal verification feasible at scale (anthropic.com blog 'LLMs are making formal software verification feasible at a much larger scale'). Replies mention Ada/SPARK and an SMT/Z3 language, github.com/slop-lang/slop.
+  posted 2026-10-22 · @anthropicai · 1.3M views · concept: Claude Code setup & usage · url: https://x.com/anthropicai/status/2113390212911083894 · links: https://github.com/slop-lang/slop
 
 - **2026-10-22** | [Yarchi](https://x.com/undefinedKi/status/2113253566295027888) | agent-design, dev-practices, industry
   Yarchi's thread summarizing Meta's reported internal agent setup (3-4 days down to under 1 hour): a rule-driven router agent in front of 14 siloed expert agents with a uniform structure and on-demand knowledge files, plus tips for copying it. Secondhand summary of Meta's claims; quotes his own agent-harness design article.

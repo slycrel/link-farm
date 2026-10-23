@@ -1,5 +1,63 @@
 [
   {
+    "date": "2026-10-23",
+    "author": "The Curious Tales",
+    "handle": "@thecurioustales",
+    "subject": "Post by The Curious Tales on X",
+    "url": "https://x.com/thecurioustales/status/2113417486762955073",
+    "summary": "The Curious Tales (security practitioner) describes a honeypot hit 14,000 times in six hours by mostly non-human traffic, arguing the threat landscape is now autonomous agents; cites a 4.2 Tbps Cloudflare DDoS, ransomware up 41% in a month, and agents attacking RubyGems. Dramatic framing with unverified stats, but relevant to agent-driven attack surface.",
+    "topics": [
+      "industry",
+      "research",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "I spent last night watching my honeypot server get hit 14,000 times in six hours. And almost none of the traffic was human. Autonomous agents swarm login pages with the patience and discipline of machines. October numbers: Cloudflare absorbed a 4.2 Tbps DDoS, the largest recorded; ransomware incidents up 41% in a month; in September OpenAI-powered agents were caught attacking RubyGems.",
+    "posted_at": "2026-10-22T23:49:28",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-23",
+    "author": "Anthropic",
+    "handle": "@anthropicai",
+    "subject": "Post by Anthropic on X",
+    "url": "https://x.com/anthropicai/status/2113390212911083894",
+    "summary": "Anthropic's Frontier Red Team blog post, done with Theorem Labs: Claude was used to prove security properties in 100+ real-world open-source libraries over a few weeks, arguing AI is making formal verification feasible at scale (anthropic.com blog 'LLMs are making formal software verification feasible at a much larger scale'). Replies mention Ada/SPARK and an SMT/Z3 language, github.com/slop-lang/slop.",
+    "topics": [
+      "research",
+      "industry",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "1.3M",
+    "notes": "",
+    "enriched": true,
+    "content": "New on our Frontier Red Team blog: using Claude to formally verify software at large scale. Formal verification can prove that code is free of certain bugs, but historically it has only been feasible for small codebases (or required a lot of expert time). With AI models, however, this is beginning to change. In collaboration with @theoremlabs, we used Claude to prove security properties in over one hundred real-world open-source libraries over the span of a few weeks.\n\nLLMs are making formal software verification feasible at a much larger scale (anthropic.com)",
+    "posted_at": "2026-10-22T22:01:06",
+    "links": [
+      "https://github.com/slop-lang/slop"
+    ],
+    "concept": "Claude Code setup & usage",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-10-22",
     "author": "Yarchi",
     "handle": "@undefinedki",
