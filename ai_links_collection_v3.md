@@ -1,12 +1,12 @@
 # AI Links Collection
-**Total Posts**: 913  
+**Total Posts**: 914  
 **Date Range**: 2024-06-11 – 2026-10-23  
-**Enriched**: 913/913 (100%)
+**Enriched**: 914/914 (100%)
 
 ---
 ## Morning view
 
-*Generated 2026-10-23T19:25:06Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-10-23T19:47:35Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-10-22** — [Matt Pocock](https://x.com/mattpocockuk/status/2113196247964074322) — *now • Skills & MCP • 64.5K views • v1 enriched*  
@@ -59,17 +59,17 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 583 | 63.9% |
-| claude-code | 217 | 23.8% |
-| dev-practices | 429 | 47.0% |
+| agent-design | 584 | 63.9% |
+| claude-code | 217 | 23.7% |
+| dev-practices | 430 | 47.0% |
 | skills-mcp | 210 | 23.0% |
 | prompting | 145 | 15.9% |
-| research | 268 | 29.4% |
+| research | 269 | 29.4% |
 | industry | 152 | 16.6% |
 | management | 145 | 15.9% |
 | adjacent | 51 | 5.6% |
 | solo-operator | 12 | 1.3% |
-| questionable | 153 | 16.8% |
+| questionable | 153 | 16.7% |
 | general | 45 | 4.9% |
 
 ---
@@ -83,6 +83,7 @@
 | 2026-10-23 | The Curious Tales | industry | The Curious Tales (security practitioner) describes a honeypot hit 14,... |
 | 2026-10-23 | Anthropic | research | Anthropic's Frontier Red Team blog post, done with Theorem Labs: Claud... |
 | 2026-10-23 | chuplung | agent-design | Claims Anthropic released a 15-page PDF on building your own Claude Du... |
+| 2026-10-23 | Junyao Yang et al. | research | arXiv paper (Oct 15, 2026, cs.AI) from Junyao Yang et al.: Terminal-RS... |
 | 2026-10-22 | Yarchi | agent-design | Yarchi's thread summarizing Meta's reported internal agent setup (3-4... |
 | 2026-10-22 | Matt Pocock | skills-mcp | Matt Pocock's /software-factory skill (github PR #1316 in his skills r... |
 | 2026-10-22 | Arvid Kahl | dev-practices | Arvid Kahl endorses Proof Driven Development: GitHub Next / Microsoft... |
@@ -125,12 +126,11 @@
 | 2026-09-29 | elvis | industry | elvis (omarsar0) recommends David George's essay 'OpenAI Understands S... |
 | 2026-09-29 | Diogo Almeida | agent-design | TypeSafe founder Diogo Almeida responds to Zhaorun Chen's red-team of... |
 | 2026-09-29 | ClaudeDevs | claude-code | ClaudeDevs announcement (2M views): official guidance plus skills for... |
-| 2026-09-29 | Harrison Chase | agent-design | Harrison Chase (LangChain) amplifies Assaf Elovic's experiment replaci... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (583)
+### Agent Design (584)
 
 - [Dan Kornas](https://x.com/DanKornas/status/2113577787026010403) — 2026-10-23: Dan Kornas highlights 'Harness Engineering and Best Practices for Coding Agents', a reference guide and Claude Code plugin for long-running coding-agent workflows: an 8-pillar / 5-level readiness assessment, Socratic guided setup, mechanical enforcement (secrets, file size, test colocation, doc drift), and scoped CLAUDE.md files with path-scoped rules.
   posted 2026-10-23 · @DanKornas · concept: context economy — routing tables beat big context · url: https://x.com/DanKornas/status/2113577787026010403
@@ -140,6 +140,9 @@
 
 - [chuplung](https://x.com/choopyplug1/status/2113379716975538332) — 2026-10-23: Claims Anthropic released a 15-page PDF on building your own Claude Duet, a proactive agent that works overnight and messages you first. Formula: Proactive Agent = Context + Watch + Judgment + Gate, in 8 layers: context, watch (one event schema, dedupe keys), judge (anomaly score in code plus rubric), speak (one 8am brief, max 3 interruptions/day), prepare (sandboxed overnight tasks with turn budgets), gate (every action is an approval packet), defend (fetched text is data, a broker holds credentials), learn. Secondhand thread summary; verify against the PDF.
   posted 2026-10-22 · @choopyplug1 · concept: managing agent teams · url: https://x.com/choopyplug1/status/2113379716975538332
+
+- [Junyao Yang et al.](https://arxiv.org/abs/2610.22192) — 2026-10-23: arXiv paper (Oct 15, 2026, cs.AI) from Junyao Yang et al.: Terminal-RSI trains terminal agents by alternating Recursive Self-Rewrite of verified trajectories with critic-inheriting Recursive Policy-Refine (RL with TB-GAE and dense/success-prioritized rewards). The resulting 27B model (Qwen3.8 base) scores 19.84% on Terminal-Bench 4.0 and 86.52% on 2.1, with strict completion on LHTB rising from 0/46 to 5/46. Self-improvement and RL recipe for agentic terminal/coding tasks.
+  concept: loop engineering · url: https://arxiv.org/abs/2610.22192
 
 - [Yarchi](https://x.com/undefinedKi/status/2113253566295027888) — 2026-10-22: Yarchi's thread summarizing Meta's reported internal agent setup (3-4 days down to under 1 hour): a rule-driven router agent in front of 14 siloed expert agents with a uniform structure and on-demand knowledge files, plus tips for copying it. Secondhand summary of Meta's claims; quotes his own agent-harness design article.
   posted 2026-10-22 · @undefinedki · 6.9K views · concept: persistent always-on agents — bot mode & agent desktops · url: https://x.com/undefinedKi/status/2113253566295027888
@@ -1534,7 +1537,7 @@
   posted 2026-04-02 · @neogoose_btw · 190.6K views · concept: local model serving on consumer GPUs — quantization & throughput · url: https://x.com/neogoose_btw/status/2039508756988620801
 
 - [Adam](https://x.com/_overment/status/2039061635776618554) — 2026-04-02: Sketch of a personal AI system architecture built on a dynamic dependency graph plus a heartbeat loop that interleaves the LLM, ordinary code, and events. Brief and diagram-led rather than a writeup, but a useful shape to compare against: scheduled/event-driven agent state rather than request-response.
-  posted 2026-03-31 · @_overment · 92.9K views · concept: persistent always-on agents — bot mode & agent desktops · url: https://x.com/_overment/status/2039061635776618554
+  posted 2026-03-31 · @_overment · 92.9K views · concept: agents as constrained software — making bad shapes unexpressible · url: https://x.com/_overment/status/2039061635776618554
 
 - [Tom Dörr](https://x.com/tom_doerr/status/2039115357839929610) — 2026-04-01: Shares an open-source AI research agent, Feynman (github.com/getcompanion-ai/feynman) — an autonomous research-assistant agent.
   posted 2026-03-31 · @tom_doerr · 15K views · concept: Feynman — open-source deep-research agent · url: https://x.com/tom_doerr/status/2039115357839929610 · links: https://github.com/getcompanion-ai/feynman
@@ -1831,7 +1834,7 @@
   posted 2025-10-24 · @pontusab · 11.2K views · url: https://x.com/pontusab/status/1981700333857636550 · links: https://github.com/midday-ai/ai-sdk-tools
 
 - [Ruslan Beskorovainiy](https://x.com/chemobyazan/status/1975326044271079509) — 2025-10-07: Points to the contains-studio/agents GitHub repo, a shared collection of AI agents currently in use.
-  posted 2025-10-06 · @ChemObyazan · 3,011 views · concept: agents as constrained software — making bad shapes unexpressible · url: https://x.com/chemobyazan/status/1975326044271079509 · links: https://github.com/contains-studio/agents
+  posted 2025-10-06 · @ChemObyazan · 3,011 views · concept: Claude skills craft · url: https://x.com/chemobyazan/status/1975326044271079509 · links: https://github.com/contains-studio/agents
 
 - [Dan McAteer](https://x.com/daniel_mac8/status/1970120352664605124) — 2025-09-22: Shares a four-step agentic-coding pattern with an added Verification step (build feedback loops that test the plan was implemented correctly, since models still fail on execution), meant to be copied into an AGENTS.md file. Works with AmpCode or any AGENTS.md-aware coding agent.
   posted 2025-09-22 · @daniel_mac8 · 44.9K views · concept: loop engineering · url: https://x.com/daniel_mac8/status/1970120352664605124
@@ -2534,7 +2537,7 @@
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
   @curvedinf · url: https://github.com/curvedinf/dir-assistant
 
-### Dev Practices (429)
+### Dev Practices (430)
 
 - [Hillel](https://x.com/hillelogram/status/2113646046840558000) — 2026-10-23: Hillel Wayne (formal methods) reacts to the Anthropic and Theorem Labs formal-verification post (anthropic.com/research/formal-verification): the main innovation is verifying a later stage, compiling code to assembly and then to a theorem language (LPS), which sidesteps source-semantics translation errors; he notes you still must trust the translation process, hardware, OS, compiler and LPS model. Companion commentary to the Anthropic formal verification post already in the collection.
   posted 2026-10-23 · @hillelogram · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/hillelogram/status/2113646046840558000
@@ -2553,6 +2556,9 @@
 
 - [chuplung](https://x.com/choopyplug1/status/2113379716975538332) — 2026-10-23: Claims Anthropic released a 15-page PDF on building your own Claude Duet, a proactive agent that works overnight and messages you first. Formula: Proactive Agent = Context + Watch + Judgment + Gate, in 8 layers: context, watch (one event schema, dedupe keys), judge (anomaly score in code plus rubric), speak (one 8am brief, max 3 interruptions/day), prepare (sandboxed overnight tasks with turn budgets), gate (every action is an approval packet), defend (fetched text is data, a broker holds credentials), learn. Secondhand thread summary; verify against the PDF.
   posted 2026-10-22 · @choopyplug1 · concept: managing agent teams · url: https://x.com/choopyplug1/status/2113379716975538332
+
+- [Junyao Yang et al.](https://arxiv.org/abs/2610.22192) — 2026-10-23: arXiv paper (Oct 15, 2026, cs.AI) from Junyao Yang et al.: Terminal-RSI trains terminal agents by alternating Recursive Self-Rewrite of verified trajectories with critic-inheriting Recursive Policy-Refine (RL with TB-GAE and dense/success-prioritized rewards). The resulting 27B model (Qwen3.8 base) scores 19.84% on Terminal-Bench 4.0 and 86.52% on 2.1, with strict completion on LHTB rising from 0/46 to 5/46. Self-improvement and RL recipe for agentic terminal/coding tasks.
+  concept: loop engineering · url: https://arxiv.org/abs/2610.22192
 
 - [Yarchi](https://x.com/undefinedKi/status/2113253566295027888) — 2026-10-22: Yarchi's thread summarizing Meta's reported internal agent setup (3-4 days down to under 1 hour): a rule-driven router agent in front of 14 siloed expert agents with a uniform structure and on-demand knowledge files, plus tips for copying it. Secondhand summary of Meta's claims; quotes his own agent-harness design article.
   posted 2026-10-22 · @undefinedki · 6.9K views · concept: persistent always-on agents — bot mode & agent desktops · url: https://x.com/undefinedKi/status/2113253566295027888
@@ -3500,7 +3506,7 @@
   posted 2026-04-02 · @neogoose_btw · 190.6K views · concept: local model serving on consumer GPUs — quantization & throughput · url: https://x.com/neogoose_btw/status/2039508756988620801
 
 - [Adam](https://x.com/_overment/status/2039061635776618554) — 2026-04-02: Sketch of a personal AI system architecture built on a dynamic dependency graph plus a heartbeat loop that interleaves the LLM, ordinary code, and events. Brief and diagram-led rather than a writeup, but a useful shape to compare against: scheduled/event-driven agent state rather than request-response.
-  posted 2026-03-31 · @_overment · 92.9K views · concept: persistent always-on agents — bot mode & agent desktops · url: https://x.com/_overment/status/2039061635776618554
+  posted 2026-03-31 · @_overment · 92.9K views · concept: agents as constrained software — making bad shapes unexpressible · url: https://x.com/_overment/status/2039061635776618554
 
 - [Arnav Gupta](https://x.com/championswimmer/status/2039109862919905719) — 2026-04-01: Points at four pi extensions from @nicopreme — pi-subagents, pi-messenger, pi-mcp-adapter, pi-web-access — as a stack that outreaches Ralph, Gstack, and Conductor for agent orchestration. The 'most magnificent slop machine' line is self-aware about output quality, so read it as a capability claim rather than an endorsement of the results.
   posted 2026-03-31 · @championswimmer · 45.5K views · concept: agentic code review at production scale · url: https://x.com/championswimmer/status/2039109862919905719
@@ -4441,7 +4447,7 @@
   posted 2025-10-24 · @pontusab · 11.2K views · url: https://x.com/pontusab/status/1981700333857636550 · links: https://github.com/midday-ai/ai-sdk-tools
 
 - [Ruslan Beskorovainiy](https://x.com/chemobyazan/status/1975326044271079509) — 2025-10-07: Points to the contains-studio/agents GitHub repo, a shared collection of AI agents currently in use.
-  posted 2025-10-06 · @ChemObyazan · 3,011 views · concept: agents as constrained software — making bad shapes unexpressible · url: https://x.com/chemobyazan/status/1975326044271079509 · links: https://github.com/contains-studio/agents
+  posted 2025-10-06 · @ChemObyazan · 3,011 views · concept: Claude skills craft · url: https://x.com/chemobyazan/status/1975326044271079509 · links: https://github.com/contains-studio/agents
 
 - [Asterisk (getAsterisk)](https://github.com/getAsterisk/claudia) — 2025-08-18: opcode (formerly Claudia, by Asterisk) is an open-source Tauri 2 desktop GUI and toolkit for Claude Code: visual project/session management, custom CC agents with per-agent file/network permissions and background execution, a usage/cost analytics dashboard, MCP server management (with Claude Desktop import), session timeline/checkpoints with diff and fork, and a built-in CLAUDE.md editor. Note: the repo has been renamed from getAsterisk/claudia to winfunc/opcode.
   @getAsterisk · url: https://github.com/getAsterisk/claudia
@@ -4892,7 +4898,7 @@
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
   @tom-doerr · concept: agent identity files (SOUL.md, CLAUDE.md, persona scaffolds) · url: https://github.com/tom-doerr/dotfiles/blob/master/instruction.md
 
-### Research (268)
+### Research (269)
 
 - [Hillel](https://x.com/hillelogram/status/2113646046840558000) — 2026-10-23: Hillel Wayne (formal methods) reacts to the Anthropic and Theorem Labs formal-verification post (anthropic.com/research/formal-verification): the main innovation is verifying a later stage, compiling code to assembly and then to a theorem language (LPS), which sidesteps source-semantics translation errors; he notes you still must trust the translation process, hardware, OS, compiler and LPS model. Companion commentary to the Anthropic formal verification post already in the collection.
   posted 2026-10-23 · @hillelogram · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/hillelogram/status/2113646046840558000
@@ -4905,6 +4911,9 @@
 
 - [Anthropic](https://x.com/anthropicai/status/2113390212911083894) — 2026-10-23: Anthropic's Frontier Red Team blog post, done with Theorem Labs: Claude was used to prove security properties in 100+ real-world open-source libraries over a few weeks, arguing AI is making formal verification feasible at scale (anthropic.com blog 'LLMs are making formal software verification feasible at a much larger scale'). Replies mention Ada/SPARK and an SMT/Z3 language, github.com/slop-lang/slop.
   posted 2026-10-22 · @anthropicai · 1.3M views · concept: Claude Code setup & usage · url: https://x.com/anthropicai/status/2113390212911083894 · links: https://github.com/slop-lang/slop
+
+- [Junyao Yang et al.](https://arxiv.org/abs/2610.22192) — 2026-10-23: arXiv paper (Oct 15, 2026, cs.AI) from Junyao Yang et al.: Terminal-RSI trains terminal agents by alternating Recursive Self-Rewrite of verified trajectories with critic-inheriting Recursive Policy-Refine (RL with TB-GAE and dense/success-prioritized rewards). The resulting 27B model (Qwen3.8 base) scores 19.84% on Terminal-Bench 4.0 and 86.52% on 2.1, with strict completion on LHTB rising from 0/46 to 5/46. Self-improvement and RL recipe for agentic terminal/coding tasks.
+  concept: loop engineering · url: https://arxiv.org/abs/2610.22192
 
 - [Arvid Kahl](https://x.com/arvidkahl/status/2113090822115889410) — 2026-10-22: Arvid Kahl endorses Proof Driven Development: GitHub Next / Microsoft Research's PDD Kit turns a plan into a formal spec and proves agent-written code satisfies it for every input, as an answer to cheap, rarely-reviewed agent-written tests. Flagged 'read today'.
   posted 2026-10-22 · @arvidkahl · 26.6K views · url: https://x.com/arvidkahl/status/2113090822115889410
@@ -7416,6 +7425,10 @@
 - **2026-10-23** | [chuplung](https://x.com/choopyplug1/status/2113379716975538332) | agent-design, dev-practices, prompting
   Claims Anthropic released a 15-page PDF on building your own Claude Duet, a proactive agent that works overnight and messages you first. Formula: Proactive Agent = Context + Watch + Judgment + Gate, in 8 layers: context, watch (one event schema, dedupe keys), judge (anomaly score in code plus rubric), speak (one 8am brief, max 3 interruptions/day), prepare (sandboxed overnight tasks with turn budgets), gate (every action is an approval packet), defend (fetched text is data, a broker holds credentials), learn. Secondhand thread summary; verify against the PDF.
   posted 2026-10-22 · @choopyplug1 · concept: managing agent teams · url: https://x.com/choopyplug1/status/2113379716975538332
+
+- **2026-10-23** | [Junyao Yang et al.](https://arxiv.org/abs/2610.22192) | research, agent-design, dev-practices
+  arXiv paper (Oct 15, 2026, cs.AI) from Junyao Yang et al.: Terminal-RSI trains terminal agents by alternating Recursive Self-Rewrite of verified trajectories with critic-inheriting Recursive Policy-Refine (RL with TB-GAE and dense/success-prioritized rewards). The resulting 27B model (Qwen3.8 base) scores 19.84% on Terminal-Bench 4.0 and 86.52% on 2.1, with strict completion on LHTB rising from 0/46 to 5/46. Self-improvement and RL recipe for agentic terminal/coding tasks.
+  concept: loop engineering · url: https://arxiv.org/abs/2610.22192
 
 - **2026-10-22** | [Yarchi](https://x.com/undefinedKi/status/2113253566295027888) | agent-design, dev-practices, industry
   Yarchi's thread summarizing Meta's reported internal agent setup (3-4 days down to under 1 hour): a rule-driven router agent in front of 14 siloed expert agents with a uniform structure and on-demand knowledge files, plus tips for copying it. Secondhand summary of Meta's claims; quotes his own agent-harness design article.
@@ -10187,7 +10200,7 @@
 
 - **2026-04-02** | [Adam](https://x.com/_overment/status/2039061635776618554) | agent-design, dev-practices
   Sketch of a personal AI system architecture built on a dynamic dependency graph plus a heartbeat loop that interleaves the LLM, ordinary code, and events. Brief and diagram-led rather than a writeup, but a useful shape to compare against: scheduled/event-driven agent state rather than request-response.
-  posted 2026-03-31 · @_overment · 92.9K views · concept: persistent always-on agents — bot mode & agent desktops · url: https://x.com/_overment/status/2039061635776618554
+  posted 2026-03-31 · @_overment · 92.9K views · concept: agents as constrained software — making bad shapes unexpressible · url: https://x.com/_overment/status/2039061635776618554
 
 - **2026-04-01** | [Tom Dörr](https://x.com/tom_doerr/status/2039115357839929610) | agent-design, research
   Shares an open-source AI research agent, Feynman (github.com/getcompanion-ai/feynman) — an autonomous research-assistant agent.
@@ -10915,7 +10928,7 @@
 
 - **2025-10-07** | [Ruslan Beskorovainiy](https://x.com/chemobyazan/status/1975326044271079509) | agent-design, skills-mcp
   Points to the contains-studio/agents GitHub repo, a shared collection of AI agents currently in use.
-  posted 2025-10-06 · @ChemObyazan · 3,011 views · concept: agents as constrained software — making bad shapes unexpressible · url: https://x.com/chemobyazan/status/1975326044271079509 · links: https://github.com/contains-studio/agents
+  posted 2025-10-06 · @ChemObyazan · 3,011 views · concept: Claude skills craft · url: https://x.com/chemobyazan/status/1975326044271079509 · links: https://github.com/contains-studio/agents
 
 - **2025-10-07** | [Vivek Galatage](https://x.com/vivekgalatage/status/1974894313948758373) | dev-practices, research
   Vivek Galatage recommends Richard Hipp's 2024 'SQLite: How it works' lecture on database internals from the creator himself, in a thread noting SQLite's ubiquity (including in Chromium browser engines).

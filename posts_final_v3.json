@@ -200,6 +200,33 @@
     "enrichment_attempts": 1
   },
   {
+    "date": "2026-10-23",
+    "author": "Junyao Yang et al.",
+    "handle": "",
+    "subject": "Terminal-RSI: Recursive Self-Improving Terminal Agents via Recursive Self-Rewrite and Policy-Refine (added manually)",
+    "url": "https://arxiv.org/abs/2610.22192",
+    "summary": "arXiv paper (Oct 15, 2026, cs.AI) from Junyao Yang et al.: Terminal-RSI trains terminal agents by alternating Recursive Self-Rewrite of verified trajectories with critic-inheriting Recursive Policy-Refine (RL with TB-GAE and dense/success-prioritized rewards). The resulting 27B model (Qwen3.8 base) scores 19.84% on Terminal-Bench 4.0 and 86.52% on 2.1, with strict completion on LHTB rising from 0/46 to 5/46. Self-improvement and RL recipe for agentic terminal/coding tasks.",
+    "topics": [
+      "research",
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "article",
+    "views": "",
+    "notes": "flag: added manually",
+    "enriched": true,
+    "content": "Terminal-RSI: Recursive Self-Improving Terminal Agents via Recursive Self-Rewrite and Policy-Refine. Converting verifier outcomes into useful policy updates and partial progress into complete task resolution is crucial for terminal agents. We present Terminal-RSI, which alternates Recursive Self-Rewrite (RSR) of verified trajectories with critic-inheriting Recursive Policy-Refine (RPR). The five-stage sequence from Qwen3.8-27B base through RSR-1, RPR-1, RSR-2, RPR-2 yields Terminal-RSI-27B: 19.84% on Terminal-Bench 4.0, 86.52% on Terminal-Bench 2.1, 16.95% on Terminal-Bench 3.0, 79.00% on Terminal-Bench Hard. On LHTB, process reward rises from 0.21 to 0.37 and strict completion from 0/46 to 5/46.",
+    "concept": "loop engineering",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-10-22",
     "author": "Yarchi",
     "handle": "@undefinedki",
@@ -19836,7 +19863,7 @@
     "enriched": true,
     "content": "cooking. this is the best architecture I've found so far for my personal system. It's based on a dynamic dependency graph, plus a heartbeat that involves the LLM, code, and events.",
     "posted_at": "2026-03-31T19:25:52",
-    "concept": "persistent always-on agents — bot mode & agent desktops",
+    "concept": "agents as constrained software — making bad shapes unexpressible",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2
@@ -24840,7 +24867,7 @@
     "links": [
       "https://github.com/contains-studio/agents"
     ],
-    "concept": "agents as constrained software — making bad shapes unexpressible",
+    "concept": "Claude skills craft",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
