@@ -1,12 +1,12 @@
 # AI Links Collection
-**Total Posts**: 908  
+**Total Posts**: 913  
 **Date Range**: 2024-06-11 – 2026-10-23  
-**Enriched**: 908/908 (100%)
+**Enriched**: 913/913 (100%)
 
 ---
 ## Morning view
 
-*Generated 2026-10-23T15:17:14Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-10-23T19:25:06Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-10-22** — [Matt Pocock](https://x.com/mattpocockuk/status/2113196247964074322) — *now • Skills & MCP • 64.5K views • v1 enriched*  
@@ -33,6 +33,11 @@
     - 2026-10-21 — [Andrej Karpathy](https://x.com/karpathy/status/2036487306585268612): Karpathy on the litellm PyPI supply-chain attack: a plain `pip install litellm` could exfiltrate SSH keys, cloud credentials, Kubernetes con…
     - 2026-10-21 — [Anže Pečar](https://x.com/anze3db/status/2112616425693266153): Security alert: private keys for 8 intermediate CA certificates were reportedly compromised. Pečar urges upgrading certifi everywhere (uv se…
 
+- **vector / hybrid databases as agent-memory infrastructure** (45 posts, +2 this week)  
+  HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
+    - 2026-10-23 — [Xudong Han](https://x.com/Xudong07452910/status/2113472731542954118): Xudong Han (posting in Chinese, translated) summarizes the 'MemoryTax' article on agent memory cost: building a memory setup cost $25.88 vs …
+    - 2026-10-22 — [Sarah Wooders](https://x.com/sarahwooders/status/2112964548533907613): Sarah Wooders on Letta's FrontierMemory benchmark: existing memory benchmarks only test recall, so it adapts coding/knowledge-work tasks so …
+
 - **applied decision-model routing — gating agents with Jev** (37 posts, +2 this week)  
   Discovered by orphan clustering on 2026-09-28 (6 posts, cohesion 0.66); renamed in-session. The *applied* side of System One / decision models: putting a non-generative decision model in front of an agent as a gate, router, verifier or judge, plus the libraries and framework integrations that make that practical (AnyJev, DSPy, LangGraph, Claude Code hooks). Deliberately distinct from #74 'System One models — bounded decisions as a primitive', which holds the concept itself and was frozen out of centroid scoring after the 2026-09-25 magnet rollback; because #74 can no longer recruit by cosine, the live Jev conversation could not reach it and formed this cluster instead. On 2026-09-28 #74's 11 canonical edges were demoted to weak so it became a secondary-only grouping tag, releasing its members to re-home here or elsewhere. NOTE: do not write the centroid-scoring opt-out marker as a literal string in this description — the eligibility check is a plain substring match over the whole description, so merely mentioning it silently disables semantic scoring for this concept (hit for real on 2026-09-28).
     - 2026-10-21 — [elvis](https://x.com/omarsar0/status/2112632133357346889): Elvis (DAIR.AI) says to learn to build evals and recommends Hamel Husain's new post on using decision models for evals (choosing a model and…
@@ -42,11 +47,6 @@
   Discovered by orphan clustering on 2026-10-08 from 6 posts with no prior concept (cohesion 0.66). Rename or archive if this isn't a real theme.
     - 2026-10-22 — [Claude](https://x.com/claudeai/status/2112962248218148878): Anthropic's @claudeai announces Claude Security continuous scanning (public beta, Claude Enterprise): one-time repo connection, deep first s…
     - 2026-10-21 — [Anthony Kroeger](https://x.com/kr0der/status/2106429105671643587): Practical Claude Code Projects tip: tell the project's coordinator to post updates whenever a thread is blocked or finishes a milestone, and…
-
-- **persistent always-on agents — bot mode & agent desktops** (46 posts, +1 this week)  
-  Agents that outlive a chat session: persistent bot profiles with their own job and memory, remote/self-hosted execution that survives closing the laptop, and the desktop workspaces around them (Hermes/Nous, Grok bot mode, OpenClaw). Renamed from auto-named cluster on 2026-08-21.
-    - 2026-10-22 — [Yarchi](https://x.com/undefinedKi/status/2113253566295027888): Yarchi's thread summarizing Meta's reported internal agent setup (3-4 days down to under 1 hour): a rule-driven router agent in front of 14 …
-    - 2026-09-16 — [Yarchi](https://x.com/undefinedki/status/2100206342942187620): Describes Google's Stellar Colosseum, a multi-agent setup published for unsolved math problems and already built into Antigravity, Google's …
 
 
 ### Revisit from last month
@@ -59,25 +59,30 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 580 | 63.9% |
-| claude-code | 215 | 23.7% |
-| dev-practices | 424 | 46.7% |
-| skills-mcp | 209 | 23.0% |
-| prompting | 144 | 15.9% |
-| research | 266 | 29.3% |
-| industry | 151 | 16.6% |
-| management | 145 | 16.0% |
+| agent-design | 583 | 63.9% |
+| claude-code | 217 | 23.8% |
+| dev-practices | 429 | 47.0% |
+| skills-mcp | 210 | 23.0% |
+| prompting | 145 | 15.9% |
+| research | 268 | 29.4% |
+| industry | 152 | 16.6% |
+| management | 145 | 15.9% |
 | adjacent | 51 | 5.6% |
 | solo-operator | 12 | 1.3% |
-| questionable | 153 | 16.9% |
-| general | 45 | 5.0% |
+| questionable | 153 | 16.8% |
+| general | 45 | 4.9% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-10-23 | Hillel | research | Hillel Wayne (formal methods) reacts to the Anthropic and Theorem Labs... |
+| 2026-10-23 | Dan Kornas | agent-design | Dan Kornas highlights 'Harness Engineering and Best Practices for Codi... |
+| 2026-10-23 | Ivan | claude-code | Ivan (posting in Chinese, translated) notes Anthropic open-sourced san... |
+| 2026-10-23 | Xudong Han | agent-design | Xudong Han (posting in Chinese, translated) summarizes the 'MemoryTax'... |
 | 2026-10-23 | The Curious Tales | industry | The Curious Tales (security practitioner) describes a honeypot hit 14,... |
 | 2026-10-23 | Anthropic | research | Anthropic's Frontier Red Team blog post, done with Theorem Labs: Claud... |
+| 2026-10-23 | chuplung | agent-design | Claims Anthropic released a 15-page PDF on building your own Claude Du... |
 | 2026-10-22 | Yarchi | agent-design | Yarchi's thread summarizing Meta's reported internal agent setup (3-4... |
 | 2026-10-22 | Matt Pocock | skills-mcp | Matt Pocock's /software-factory skill (github PR #1316 in his skills r... |
 | 2026-10-22 | Arvid Kahl | dev-practices | Arvid Kahl endorses Proof Driven Development: GitHub Next / Microsoft... |
@@ -121,16 +126,20 @@
 | 2026-09-29 | Diogo Almeida | agent-design | TypeSafe founder Diogo Almeida responds to Zhaorun Chen's red-team of... |
 | 2026-09-29 | ClaudeDevs | claude-code | ClaudeDevs announcement (2M views): official guidance plus skills for... |
 | 2026-09-29 | Harrison Chase | agent-design | Harrison Chase (LangChain) amplifies Assaf Elovic's experiment replaci... |
-| 2026-09-29 | Jason Weston | research | Solving AI slop via expert-aligned rubrics (RL-XAR). Trained on expert... |
-| 2026-09-29 | marfin | agent-design | marfin's three-model stack for long-horizon agents — Jev for bounded d... |
-| 2026-09-29 | Ryven | agent-design | Ryven's 10-step practical ladder for adopting Jev ('the Bitcoin moment... |
-| 2026-09-29 | MIKE | agent-design | MIKE's 'Jev Masterclass' X article (221.8K views): the most complete s... |
-| 2026-09-29 | Residual | agent-design | Engagement-farmed pointer (1.6M views, 'save this' hook, attributes th... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (580)
+### Agent Design (583)
+
+- [Dan Kornas](https://x.com/DanKornas/status/2113577787026010403) — 2026-10-23: Dan Kornas highlights 'Harness Engineering and Best Practices for Coding Agents', a reference guide and Claude Code plugin for long-running coding-agent workflows: an 8-pillar / 5-level readiness assessment, Socratic guided setup, mechanical enforcement (secrets, file size, test colocation, doc drift), and scoped CLAUDE.md files with path-scoped rules.
+  posted 2026-10-23 · @DanKornas · concept: context economy — routing tables beat big context · url: https://x.com/DanKornas/status/2113577787026010403
+
+- [Xudong Han](https://x.com/Xudong07452910/status/2113472731542954118) — 2026-10-23: Xudong Han (posting in Chinese, translated) summarizes the 'MemoryTax' article on agent memory cost: building a memory setup cost $25.88 vs $17.84 for just passing full history; structured memory (Mem0 78% vs full context 74% on GPT-4o-mini) helps weak models but the advantage vanishes as models strengthen (Full Context 92% vs Mem0 80% on one model; both 95% on Claude Opus 5.5), and information lost at write time caps later recovery.
+  posted 2026-10-23 · @Xudong07452910 · concept: vector / hybrid databases as agent-memory infrastructure · url: https://x.com/Xudong07452910/status/2113472731542954118
+
+- [chuplung](https://x.com/choopyplug1/status/2113379716975538332) — 2026-10-23: Claims Anthropic released a 15-page PDF on building your own Claude Duet, a proactive agent that works overnight and messages you first. Formula: Proactive Agent = Context + Watch + Judgment + Gate, in 8 layers: context, watch (one event schema, dedupe keys), judge (anomaly score in code plus rubric), speak (one 8am brief, max 3 interruptions/day), prepare (sandboxed overnight tasks with turn budgets), gate (every action is an approval packet), defend (fetched text is data, a broker holds credentials), learn. Secondhand thread summary; verify against the PDF.
+  posted 2026-10-22 · @choopyplug1 · concept: managing agent teams · url: https://x.com/choopyplug1/status/2113379716975538332
 
 - [Yarchi](https://x.com/undefinedKi/status/2113253566295027888) — 2026-10-22: Yarchi's thread summarizing Meta's reported internal agent setup (3-4 days down to under 1 hour): a rule-driven router agent in front of 14 siloed expert agents with a uniform structure and on-demand knowledge files, plus tips for copying it. Secondhand summary of Meta's claims; quotes his own agent-harness design article.
   posted 2026-10-22 · @undefinedki · 6.9K views · concept: persistent always-on agents — bot mode & agent desktops · url: https://x.com/undefinedKi/status/2113253566295027888
@@ -1872,7 +1881,13 @@
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
   @curvedinf · url: https://github.com/curvedinf/dir-assistant
 
-### Claude Code (215)
+### Claude Code (217)
+
+- [Dan Kornas](https://x.com/DanKornas/status/2113577787026010403) — 2026-10-23: Dan Kornas highlights 'Harness Engineering and Best Practices for Coding Agents', a reference guide and Claude Code plugin for long-running coding-agent workflows: an 8-pillar / 5-level readiness assessment, Socratic guided setup, mechanical enforcement (secrets, file size, test colocation, doc drift), and scoped CLAUDE.md files with path-scoped rules.
+  posted 2026-10-23 · @DanKornas · concept: context economy — routing tables beat big context · url: https://x.com/DanKornas/status/2113577787026010403
+
+- [Ivan](https://x.com/thebitcode/status/2113541133431349503) — 2026-10-23: Ivan (posting in Chinese, translated) notes Anthropic open-sourced sandbox-runtime (github.com/anthropics/sandbox-runtime), the sandbox used by Claude Code: Seatbelt on macOS, bubblewrap on Linux, restricting agent filesystem and network access without a full container, usable for custom agents, MCP servers and CLI programs. Points out the real tension: too strict a network allowlist breaks tasks, too loose undermines security.
+  posted 2026-10-23 · @thebitcode · url: https://x.com/thebitcode/status/2113541133431349503 · links: https://github.com/anthropics/sandbox-runtime
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/2113196247964074322) — 2026-10-22: Matt Pocock's /software-factory skill (github PR #1316 in his skills repo) paired with /grill-me: an interview-style prompt that helps you decide whether a software factory suits your team and brainstorm the infrastructure. Pairs naturally with Josh Rosen's factory-debate article.
   posted 2026-10-22 · @mattpocockuk · 64.5K views · url: https://x.com/mattpocockuk/status/2113196247964074322 · links: https://github.com/mattpocock
@@ -2391,7 +2406,7 @@
   posted 2026-03-09 · @bcherny · 1.2M views · concept: managing agent teams · url: https://x.com/bcherny/status/2031089411820228645
 
 - [Anish Moonka](https://x.com/anisha_moonka/status/2030015356383691121) — 2026-03-07: Anish Moonka's 12-point notes from Boris Cherny (Head of Claude Code) on Lenny's Podcast: coding is largely solved (Boris ships 10-30 PRs/day, no hand-written code since Nov 2025); the next frontier is AI deciding what to build; productivity per Anthropic engineer is up 200%; underfund teams on purpose; give engineers unlimited tokens; the Bitter Lesson favors general models over rigid orchestration; build for the model six months out; latent demand is the best product signal; 'software engineer' is becoming 'builder'; mechanistic interpretability enables layered safety; and 70% of engineers/PMs enjoy their jobs more now.
-  posted 2026-03-06 · @anishmoonka · 257.2K views · concept: managing agent teams · url: https://x.com/anisha_moonka/status/2030015356383691121
+  posted 2026-03-06 · @anishmoonka · 257.2K views · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/anisha_moonka/status/2030015356383691121
 
 - [Nate.Google](https://x.com/nate_google_/status/2029941042133262721) — 2026-03-07: Nate.Google highlights a walkthrough he calls the best guide to Claude Cowork, wishing such hands-on guides existed when he started with AI.
   posted 2026-03-06 · @nate_google_ · 1.3M views · concept: founder philosophy & life-design essays · url: https://x.com/nate_google_/status/2029941042133262721
@@ -2400,7 +2415,7 @@
   posted 2026-03-06 · @thejayden · 2.1M views · concept: founder philosophy & life-design essays · url: https://x.com/thejayden/status/2029899328400109732
 
 - [Daniel San](https://x.com/dani_avila7/status/2029399100240674929) — 2026-03-05: Points to a full Skill in the Anthropic repo as a reference for SKILL.md structure and language support, arguing every company should maintain an internal repository of reusable Skills and components.
-  posted 2026-03-05 · @dani_avila7 · 27.3K views · concept: context economy — routing tables beat big context · url: https://x.com/dani_avila7/status/2029399100240674929
+  posted 2026-03-05 · @dani_avila7 · 27.3K views · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/dani_avila7/status/2029399100240674929
 
 - [Dickson Tsai](https://x.com/dickson_tsai/status/2029235808235078095) — 2026-03-05: Dickson Tsai (Anthropic) announced HTTP hooks in Claude Code — a more secure, easier alternative to command hooks: CC POSTs each hook event to a URL you choose and awaits a response, so you can build a web app to view progress, manage permissions, run hook logic server-side, and manage state across agents via a DB. Works everywhere hooks are supported, including plugins, custom agents, and enterprise managed settings. Docs: code.claude.com/docs/en/hooks
   posted 2026-03-04 · @dickson_tsai · 398.3K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/dickson_tsai/status/2029235808235078095 · links: https://code.claude.com/docs/en/hooks
@@ -2519,10 +2534,25 @@
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
   @curvedinf · url: https://github.com/curvedinf/dir-assistant
 
-### Dev Practices (424)
+### Dev Practices (429)
+
+- [Hillel](https://x.com/hillelogram/status/2113646046840558000) — 2026-10-23: Hillel Wayne (formal methods) reacts to the Anthropic and Theorem Labs formal-verification post (anthropic.com/research/formal-verification): the main innovation is verifying a later stage, compiling code to assembly and then to a theorem language (LPS), which sidesteps source-semantics translation errors; he notes you still must trust the translation process, hardware, OS, compiler and LPS model. Companion commentary to the Anthropic formal verification post already in the collection.
+  posted 2026-10-23 · @hillelogram · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/hillelogram/status/2113646046840558000
+
+- [Dan Kornas](https://x.com/DanKornas/status/2113577787026010403) — 2026-10-23: Dan Kornas highlights 'Harness Engineering and Best Practices for Coding Agents', a reference guide and Claude Code plugin for long-running coding-agent workflows: an 8-pillar / 5-level readiness assessment, Socratic guided setup, mechanical enforcement (secrets, file size, test colocation, doc drift), and scoped CLAUDE.md files with path-scoped rules.
+  posted 2026-10-23 · @DanKornas · concept: context economy — routing tables beat big context · url: https://x.com/DanKornas/status/2113577787026010403
+
+- [Ivan](https://x.com/thebitcode/status/2113541133431349503) — 2026-10-23: Ivan (posting in Chinese, translated) notes Anthropic open-sourced sandbox-runtime (github.com/anthropics/sandbox-runtime), the sandbox used by Claude Code: Seatbelt on macOS, bubblewrap on Linux, restricting agent filesystem and network access without a full container, usable for custom agents, MCP servers and CLI programs. Points out the real tension: too strict a network allowlist breaks tasks, too loose undermines security.
+  posted 2026-10-23 · @thebitcode · url: https://x.com/thebitcode/status/2113541133431349503 · links: https://github.com/anthropics/sandbox-runtime
+
+- [Xudong Han](https://x.com/Xudong07452910/status/2113472731542954118) — 2026-10-23: Xudong Han (posting in Chinese, translated) summarizes the 'MemoryTax' article on agent memory cost: building a memory setup cost $25.88 vs $17.84 for just passing full history; structured memory (Mem0 78% vs full context 74% on GPT-4o-mini) helps weak models but the advantage vanishes as models strengthen (Full Context 92% vs Mem0 80% on one model; both 95% on Claude Opus 5.5), and information lost at write time caps later recovery.
+  posted 2026-10-23 · @Xudong07452910 · concept: vector / hybrid databases as agent-memory infrastructure · url: https://x.com/Xudong07452910/status/2113472731542954118
 
 - [Anthropic](https://x.com/anthropicai/status/2113390212911083894) — 2026-10-23: Anthropic's Frontier Red Team blog post, done with Theorem Labs: Claude was used to prove security properties in 100+ real-world open-source libraries over a few weeks, arguing AI is making formal verification feasible at scale (anthropic.com blog 'LLMs are making formal software verification feasible at a much larger scale'). Replies mention Ada/SPARK and an SMT/Z3 language, github.com/slop-lang/slop.
   posted 2026-10-22 · @anthropicai · 1.3M views · concept: Claude Code setup & usage · url: https://x.com/anthropicai/status/2113390212911083894 · links: https://github.com/slop-lang/slop
+
+- [chuplung](https://x.com/choopyplug1/status/2113379716975538332) — 2026-10-23: Claims Anthropic released a 15-page PDF on building your own Claude Duet, a proactive agent that works overnight and messages you first. Formula: Proactive Agent = Context + Watch + Judgment + Gate, in 8 layers: context, watch (one event schema, dedupe keys), judge (anomaly score in code plus rubric), speak (one 8am brief, max 3 interruptions/day), prepare (sandboxed overnight tasks with turn budgets), gate (every action is an approval packet), defend (fetched text is data, a broker holds credentials), learn. Secondhand thread summary; verify against the PDF.
+  posted 2026-10-22 · @choopyplug1 · concept: managing agent teams · url: https://x.com/choopyplug1/status/2113379716975538332
 
 - [Yarchi](https://x.com/undefinedKi/status/2113253566295027888) — 2026-10-22: Yarchi's thread summarizing Meta's reported internal agent setup (3-4 days down to under 1 hour): a rule-driven router agent in front of 14 siloed expert agents with a uniform structure and on-demand knowledge files, plus tips for copying it. Secondhand summary of Meta's claims; quotes his own agent-harness design article.
   posted 2026-10-22 · @undefinedki · 6.9K views · concept: persistent always-on agents — bot mode & agent desktops · url: https://x.com/undefinedKi/status/2113253566295027888
@@ -3793,7 +3823,10 @@
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
   @curvedinf · url: https://github.com/curvedinf/dir-assistant
 
-### Skills & MCP (209)
+### Skills & MCP (210)
+
+- [Ivan](https://x.com/thebitcode/status/2113541133431349503) — 2026-10-23: Ivan (posting in Chinese, translated) notes Anthropic open-sourced sandbox-runtime (github.com/anthropics/sandbox-runtime), the sandbox used by Claude Code: Seatbelt on macOS, bubblewrap on Linux, restricting agent filesystem and network access without a full container, usable for custom agents, MCP servers and CLI programs. Points out the real tension: too strict a network allowlist breaks tasks, too loose undermines security.
+  posted 2026-10-23 · @thebitcode · url: https://x.com/thebitcode/status/2113541133431349503 · links: https://github.com/anthropics/sandbox-runtime
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/2113196247964074322) — 2026-10-22: Matt Pocock's /software-factory skill (github PR #1316 in his skills repo) paired with /grill-me: an interview-style prompt that helps you decide whether a software factory suits your team and brainstorm the infrastructure. Pairs naturally with Josh Rosen's factory-debate article.
   posted 2026-10-22 · @mattpocockuk · 64.5K views · url: https://x.com/mattpocockuk/status/2113196247964074322 · links: https://github.com/mattpocock
@@ -4336,7 +4369,7 @@
   posted 2026-03-05 · @meta_alchemist · concept: vector / hybrid databases as agent-memory infrastructure · url: https://x.com/meta_alchemist/status/2029430826128293906
 
 - [Daniel San](https://x.com/dani_avila7/status/2029399100240674929) — 2026-03-05: Points to a full Skill in the Anthropic repo as a reference for SKILL.md structure and language support, arguing every company should maintain an internal repository of reusable Skills and components.
-  posted 2026-03-05 · @dani_avila7 · 27.3K views · concept: context economy — routing tables beat big context · url: https://x.com/dani_avila7/status/2029399100240674929
+  posted 2026-03-05 · @dani_avila7 · 27.3K views · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/dani_avila7/status/2029399100240674929
 
 - [Dickson Tsai](https://x.com/dickson_tsai/status/2029235808235078095) — 2026-03-05: Dickson Tsai (Anthropic) announced HTTP hooks in Claude Code — a more secure, easier alternative to command hooks: CC POSTs each hook event to a URL you choose and awaits a response, so you can build a web app to view progress, manage permissions, run hook logic server-side, and manage state across agents via a DB. Works everywhere hooks are supported, including plugins, custom agents, and enterprise managed settings. Docs: code.claude.com/docs/en/hooks
   posted 2026-03-04 · @dickson_tsai · 398.3K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/dickson_tsai/status/2029235808235078095 · links: https://code.claude.com/docs/en/hooks
@@ -4422,7 +4455,10 @@
 - [Mervin Praison](https://x.com/mervinpraison/status/1881788246684013011) — 2025-01-22: Shows a 100% local RAG AI agent with reasoning: DeepSeek via Ollama for the LLM, PraisonAI to build the agent in a few lines, Nomic embeddings, and a Streamlit UI—code included in the thread.
   posted 2025-01-21 · @MervinPraison · 59.8K views · url: https://x.com/mervinpraison/status/1881788246684013011
 
-### Prompting (144)
+### Prompting (145)
+
+- [chuplung](https://x.com/choopyplug1/status/2113379716975538332) — 2026-10-23: Claims Anthropic released a 15-page PDF on building your own Claude Duet, a proactive agent that works overnight and messages you first. Formula: Proactive Agent = Context + Watch + Judgment + Gate, in 8 layers: context, watch (one event schema, dedupe keys), judge (anomaly score in code plus rubric), speak (one 8am brief, max 3 interruptions/day), prepare (sandboxed overnight tasks with turn budgets), gate (every action is an approval packet), defend (fetched text is data, a broker holds credentials), learn. Secondhand thread summary; verify against the PDF.
+  posted 2026-10-22 · @choopyplug1 · concept: managing agent teams · url: https://x.com/choopyplug1/status/2113379716975538332
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/2113196247964074322) — 2026-10-22: Matt Pocock's /software-factory skill (github PR #1316 in his skills repo) paired with /grill-me: an interview-style prompt that helps you decide whether a software factory suits your team and brainstorm the infrastructure. Pairs naturally with Josh Rosen's factory-debate article.
   posted 2026-10-22 · @mattpocockuk · 64.5K views · url: https://x.com/mattpocockuk/status/2113196247964074322 · links: https://github.com/mattpocock
@@ -4833,7 +4869,7 @@
   posted 2025-11-05 · @PromptLLM · 54.8K views · url: https://x.com/promptllm/status/1986173095896621150
 
 - [Charly Wargnier](https://x.com/datachaz/status/1984276199309484409) — 2025-11-01: Charly Wargnier boosts a claim that someone put in 1,000 hours of prompt engineering to distill the 6 prompt patterns that actually matter. Hook post pointing to the six patterns (detailed in the referenced content).
-  posted 2025-10-31 · @DataChaz · 348.2K views · concept: context economy — routing tables beat big context · url: https://x.com/datachaz/status/1984276199309484409
+  posted 2025-10-31 · @DataChaz · 348.2K views · concept: founder philosophy & life-design essays · url: https://x.com/datachaz/status/1984276199309484409
 
 - [Matt Pocock](https://x.com/mattpocockuk/status/1983255353597870285) — 2025-10-29: Matt Pocock shares his favorite AI coding tip: add 'Be extremely concise. Sacrifice grammar for the sake of concision.' to your global claude.md file for noticeably better output.
   posted 2025-10-28 · @mattpocockuk · 82.3K views · concept: founder philosophy & life-design essays · url: https://x.com/mattpocockuk/status/1983255353597870285
@@ -4856,7 +4892,13 @@
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
   @tom-doerr · concept: agent identity files (SOUL.md, CLAUDE.md, persona scaffolds) · url: https://github.com/tom-doerr/dotfiles/blob/master/instruction.md
 
-### Research (266)
+### Research (268)
+
+- [Hillel](https://x.com/hillelogram/status/2113646046840558000) — 2026-10-23: Hillel Wayne (formal methods) reacts to the Anthropic and Theorem Labs formal-verification post (anthropic.com/research/formal-verification): the main innovation is verifying a later stage, compiling code to assembly and then to a theorem language (LPS), which sidesteps source-semantics translation errors; he notes you still must trust the translation process, hardware, OS, compiler and LPS model. Companion commentary to the Anthropic formal verification post already in the collection.
+  posted 2026-10-23 · @hillelogram · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/hillelogram/status/2113646046840558000
+
+- [Xudong Han](https://x.com/Xudong07452910/status/2113472731542954118) — 2026-10-23: Xudong Han (posting in Chinese, translated) summarizes the 'MemoryTax' article on agent memory cost: building a memory setup cost $25.88 vs $17.84 for just passing full history; structured memory (Mem0 78% vs full context 74% on GPT-4o-mini) helps weak models but the advantage vanishes as models strengthen (Full Context 92% vs Mem0 80% on one model; both 95% on Claude Opus 5.5), and information lost at write time caps later recovery.
+  posted 2026-10-23 · @Xudong07452910 · concept: vector / hybrid databases as agent-memory infrastructure · url: https://x.com/Xudong07452910/status/2113472731542954118
 
 - [The Curious Tales](https://x.com/thecurioustales/status/2113417486762955073) — 2026-10-23: The Curious Tales (security practitioner) describes a honeypot hit 14,000 times in six hours by mostly non-human traffic, arguing the threat landscape is now autonomous agents; cites a 4.2 Tbps Cloudflare DDoS, ransomware up 41% in a month, and agents attacking RubyGems. Dramatic framing with unverified stats, but relevant to agent-driven attack surface.
   posted 2026-10-22 · @thecurioustales · url: https://x.com/thecurioustales/status/2113417486762955073
@@ -5656,7 +5698,10 @@
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.
   posted 2024-06-10 · @svpino · 1M views · url: https://x.com/svpino/status/1800151091461652740
 
-### Industry (151)
+### Industry (152)
+
+- [Hillel](https://x.com/hillelogram/status/2113646046840558000) — 2026-10-23: Hillel Wayne (formal methods) reacts to the Anthropic and Theorem Labs formal-verification post (anthropic.com/research/formal-verification): the main innovation is verifying a later stage, compiling code to assembly and then to a theorem language (LPS), which sidesteps source-semantics translation errors; he notes you still must trust the translation process, hardware, OS, compiler and LPS model. Companion commentary to the Anthropic formal verification post already in the collection.
+  posted 2026-10-23 · @hillelogram · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/hillelogram/status/2113646046840558000
 
 - [The Curious Tales](https://x.com/thecurioustales/status/2113417486762955073) — 2026-10-23: The Curious Tales (security practitioner) describes a honeypot hit 14,000 times in six hours by mostly non-human traffic, arguing the threat landscape is now autonomous agents; cites a 4.2 Tbps Cloudflare DDoS, ransomware up 41% in a month, and agents attacking RubyGems. Dramatic framing with unverified stats, but relevant to agent-driven attack surface.
   posted 2026-10-22 · @thecurioustales · url: https://x.com/thecurioustales/status/2113417486762955073
@@ -6040,7 +6085,7 @@
   posted 2026-03-10 · @audiinidesign · 53K views · url: https://x.com/audiinidesign/status/2031213732941230240
 
 - [Anish Moonka](https://x.com/anisha_moonka/status/2030015356383691121) — 2026-03-07: Anish Moonka's 12-point notes from Boris Cherny (Head of Claude Code) on Lenny's Podcast: coding is largely solved (Boris ships 10-30 PRs/day, no hand-written code since Nov 2025); the next frontier is AI deciding what to build; productivity per Anthropic engineer is up 200%; underfund teams on purpose; give engineers unlimited tokens; the Bitter Lesson favors general models over rigid orchestration; build for the model six months out; latent demand is the best product signal; 'software engineer' is becoming 'builder'; mechanistic interpretability enables layered safety; and 70% of engineers/PMs enjoy their jobs more now.
-  posted 2026-03-06 · @anishmoonka · 257.2K views · concept: managing agent teams · url: https://x.com/anisha_moonka/status/2030015356383691121
+  posted 2026-03-06 · @anishmoonka · 257.2K views · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/anisha_moonka/status/2030015356383691121
 
 - [Jamie Quint](https://x.com/jamiequint/status/2029951631534739951) — 2026-03-07: Jamie Quint (built Notion's early data stack in 2020) shares his article 'How to Build a Data Agent in 2026,' claiming the approach can cut a company's projected data-team headcount by ~80% this year.
   posted 2026-03-06 · @jamiequint · 73.5K views · url: https://x.com/jamiequint/status/2029951631534739951
@@ -6414,7 +6459,7 @@
   posted 2026-03-10 · @audiinidesign · 53K views · url: https://x.com/audiinidesign/status/2031213732941230240
 
 - [Anish Moonka](https://x.com/anisha_moonka/status/2030015356383691121) — 2026-03-07: Anish Moonka's 12-point notes from Boris Cherny (Head of Claude Code) on Lenny's Podcast: coding is largely solved (Boris ships 10-30 PRs/day, no hand-written code since Nov 2025); the next frontier is AI deciding what to build; productivity per Anthropic engineer is up 200%; underfund teams on purpose; give engineers unlimited tokens; the Bitter Lesson favors general models over rigid orchestration; build for the model six months out; latent demand is the best product signal; 'software engineer' is becoming 'builder'; mechanistic interpretability enables layered safety; and 70% of engineers/PMs enjoy their jobs more now.
-  posted 2026-03-06 · @anishmoonka · 257.2K views · concept: managing agent teams · url: https://x.com/anisha_moonka/status/2030015356383691121
+  posted 2026-03-06 · @anishmoonka · 257.2K views · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/anisha_moonka/status/2030015356383691121
 
 - [staysaasy](https://x.com/staysaasy/status/2029965845548462281) — 2026-03-07: staysaasy long-form article 'Avoiding a Culture of Emergencies': the best managers have far fewer preventable emergencies because they know how hard things actually are, know what's important and can say no, hold a strong mental model of their team and company to forecast needs, and genuinely care. Emergencies are largely a management choice, and avoiding them is one of the best talent-retention mechanisms.
   posted 2026-03-06 · @staysaasy · 115.2K views · url: https://x.com/staysaasy/status/2029965845548462281
@@ -7185,7 +7230,7 @@
   posted 2025-11-05 · @PromptLLM · 54.8K views · url: https://x.com/promptllm/status/1986173095896621150
 
 - [Charly Wargnier](https://x.com/datachaz/status/1984276199309484409) — 2025-11-01: Charly Wargnier boosts a claim that someone put in 1,000 hours of prompt engineering to distill the 6 prompt patterns that actually matter. Hook post pointing to the six patterns (detailed in the referenced content).
-  posted 2025-10-31 · @DataChaz · 348.2K views · concept: context economy — routing tables beat big context · url: https://x.com/datachaz/status/1984276199309484409
+  posted 2025-10-31 · @DataChaz · 348.2K views · concept: founder philosophy & life-design essays · url: https://x.com/datachaz/status/1984276199309484409
 
 - [Raul Junco](https://x.com/rauljuncov/status/1980243241783197925) — 2025-10-21: Raul Junco frames system design as a staircase to climb step by step rather than jumping to distributed systems: foundations (networking, databases, caching, APIs), then mechanics (queues, consistency, observability, failures), then architecture (trade-offs, evolution, resilience).
   posted 2025-10-20 · @rauljuncov · 130.7K views · url: https://x.com/rauljuncov/status/1980243241783197925
@@ -7344,6 +7389,22 @@
 
 ### Oct 2026
 
+- **2026-10-23** | [Hillel](https://x.com/hillelogram/status/2113646046840558000) | research, industry, dev-practices
+  Hillel Wayne (formal methods) reacts to the Anthropic and Theorem Labs formal-verification post (anthropic.com/research/formal-verification): the main innovation is verifying a later stage, compiling code to assembly and then to a theorem language (LPS), which sidesteps source-semantics translation errors; he notes you still must trust the translation process, hardware, OS, compiler and LPS model. Companion commentary to the Anthropic formal verification post already in the collection.
+  posted 2026-10-23 · @hillelogram · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/hillelogram/status/2113646046840558000
+
+- **2026-10-23** | [Dan Kornas](https://x.com/DanKornas/status/2113577787026010403) | agent-design, claude-code, dev-practices
+  Dan Kornas highlights 'Harness Engineering and Best Practices for Coding Agents', a reference guide and Claude Code plugin for long-running coding-agent workflows: an 8-pillar / 5-level readiness assessment, Socratic guided setup, mechanical enforcement (secrets, file size, test colocation, doc drift), and scoped CLAUDE.md files with path-scoped rules.
+  posted 2026-10-23 · @DanKornas · concept: context economy — routing tables beat big context · url: https://x.com/DanKornas/status/2113577787026010403
+
+- **2026-10-23** | [Ivan](https://x.com/thebitcode/status/2113541133431349503) | claude-code, dev-practices, skills-mcp
+  Ivan (posting in Chinese, translated) notes Anthropic open-sourced sandbox-runtime (github.com/anthropics/sandbox-runtime), the sandbox used by Claude Code: Seatbelt on macOS, bubblewrap on Linux, restricting agent filesystem and network access without a full container, usable for custom agents, MCP servers and CLI programs. Points out the real tension: too strict a network allowlist breaks tasks, too loose undermines security.
+  posted 2026-10-23 · @thebitcode · url: https://x.com/thebitcode/status/2113541133431349503 · links: https://github.com/anthropics/sandbox-runtime
+
+- **2026-10-23** | [Xudong Han](https://x.com/Xudong07452910/status/2113472731542954118) | agent-design, research, dev-practices
+  Xudong Han (posting in Chinese, translated) summarizes the 'MemoryTax' article on agent memory cost: building a memory setup cost $25.88 vs $17.84 for just passing full history; structured memory (Mem0 78% vs full context 74% on GPT-4o-mini) helps weak models but the advantage vanishes as models strengthen (Full Context 92% vs Mem0 80% on one model; both 95% on Claude Opus 5.5), and information lost at write time caps later recovery.
+  posted 2026-10-23 · @Xudong07452910 · concept: vector / hybrid databases as agent-memory infrastructure · url: https://x.com/Xudong07452910/status/2113472731542954118
+
 - **2026-10-23** | [The Curious Tales](https://x.com/thecurioustales/status/2113417486762955073) | industry, research, questionable
   The Curious Tales (security practitioner) describes a honeypot hit 14,000 times in six hours by mostly non-human traffic, arguing the threat landscape is now autonomous agents; cites a 4.2 Tbps Cloudflare DDoS, ransomware up 41% in a month, and agents attacking RubyGems. Dramatic framing with unverified stats, but relevant to agent-driven attack surface.
   posted 2026-10-22 · @thecurioustales · url: https://x.com/thecurioustales/status/2113417486762955073
@@ -7351,6 +7412,10 @@
 - **2026-10-23** | [Anthropic](https://x.com/anthropicai/status/2113390212911083894) | research, industry, dev-practices
   Anthropic's Frontier Red Team blog post, done with Theorem Labs: Claude was used to prove security properties in 100+ real-world open-source libraries over a few weeks, arguing AI is making formal verification feasible at scale (anthropic.com blog 'LLMs are making formal software verification feasible at a much larger scale'). Replies mention Ada/SPARK and an SMT/Z3 language, github.com/slop-lang/slop.
   posted 2026-10-22 · @anthropicai · 1.3M views · concept: Claude Code setup & usage · url: https://x.com/anthropicai/status/2113390212911083894 · links: https://github.com/slop-lang/slop
+
+- **2026-10-23** | [chuplung](https://x.com/choopyplug1/status/2113379716975538332) | agent-design, dev-practices, prompting
+  Claims Anthropic released a 15-page PDF on building your own Claude Duet, a proactive agent that works overnight and messages you first. Formula: Proactive Agent = Context + Watch + Judgment + Gate, in 8 layers: context, watch (one event schema, dedupe keys), judge (anomaly score in code plus rubric), speak (one 8am brief, max 3 interruptions/day), prepare (sandboxed overnight tasks with turn budgets), gate (every action is an approval packet), defend (fetched text is data, a broker holds credentials), learn. Secondhand thread summary; verify against the PDF.
+  posted 2026-10-22 · @choopyplug1 · concept: managing agent teams · url: https://x.com/choopyplug1/status/2113379716975538332
 
 - **2026-10-22** | [Yarchi](https://x.com/undefinedKi/status/2113253566295027888) | agent-design, dev-practices, industry
   Yarchi's thread summarizing Meta's reported internal agent setup (3-4 days down to under 1 hour): a rule-driven router agent in front of 14 siloed expert agents with a uniform structure and on-demand knowledge files, plus tips for copying it. Secondhand summary of Meta's claims; quotes his own agent-harness design article.
@@ -10344,7 +10409,7 @@
 
 - **2026-03-07** | [Anish Moonka](https://x.com/anisha_moonka/status/2030015356383691121) | management, claude-code, industry
   Anish Moonka's 12-point notes from Boris Cherny (Head of Claude Code) on Lenny's Podcast: coding is largely solved (Boris ships 10-30 PRs/day, no hand-written code since Nov 2025); the next frontier is AI deciding what to build; productivity per Anthropic engineer is up 200%; underfund teams on purpose; give engineers unlimited tokens; the Bitter Lesson favors general models over rigid orchestration; build for the model six months out; latent demand is the best product signal; 'software engineer' is becoming 'builder'; mechanistic interpretability enables layered safety; and 70% of engineers/PMs enjoy their jobs more now.
-  posted 2026-03-06 · @anishmoonka · 257.2K views · concept: managing agent teams · url: https://x.com/anisha_moonka/status/2030015356383691121
+  posted 2026-03-06 · @anishmoonka · 257.2K views · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/anisha_moonka/status/2030015356383691121
 
 - **2026-03-07** | [Numman Ali](https://x.com/nummanali/status/2030012892192309461) | dev-practices, research, prompting
   Numman Ali strongly recommends a deeply technical article, 'Your LLM Doesn't Write Correct Code. It Writes Plausible Code,' praising its articulation of the plausible-vs-correct distinction in LLM output — illustrated by a 100-row primary-key lookup where SQLite takes 0.09ms but an LLM-generated Rust rewrite takes 1,815.43ms.
@@ -10392,7 +10457,7 @@
 
 - **2026-03-05** | [Daniel San](https://x.com/dani_avila7/status/2029399100240674929) | skills-mcp, claude-code
   Points to a full Skill in the Anthropic repo as a reference for SKILL.md structure and language support, arguing every company should maintain an internal repository of reusable Skills and components.
-  posted 2026-03-05 · @dani_avila7 · 27.3K views · concept: context economy — routing tables beat big context · url: https://x.com/dani_avila7/status/2029399100240674929
+  posted 2026-03-05 · @dani_avila7 · 27.3K views · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/dani_avila7/status/2029399100240674929
 
 - **2026-03-05** | [0xSero](https://x.com/0xsero/status/2029305128084218265) | industry, agent-design
   Argues real-time, very fast inference (e.g. models served by Cerebras, used via "Spark") is a major shift that requires changing your working strategy, pointing to companion articles for details.
@@ -10796,7 +10861,7 @@
 
 - **2025-11-01** | [Charly Wargnier](https://x.com/datachaz/status/1984276199309484409) | prompting, questionable
   Charly Wargnier boosts a claim that someone put in 1,000 hours of prompt engineering to distill the 6 prompt patterns that actually matter. Hook post pointing to the six patterns (detailed in the referenced content).
-  posted 2025-10-31 · @DataChaz · 348.2K views · concept: context economy — routing tables beat big context · url: https://x.com/datachaz/status/1984276199309484409
+  posted 2025-10-31 · @DataChaz · 348.2K views · concept: founder philosophy & life-design essays · url: https://x.com/datachaz/status/1984276199309484409
 
 ### Oct 2025
 

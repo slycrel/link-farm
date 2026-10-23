@@ -1,6 +1,120 @@
 [
   {
     "date": "2026-10-23",
+    "author": "Hillel",
+    "handle": "@hillelogram",
+    "subject": "Post by hillelogram on X (added manually)",
+    "url": "https://x.com/hillelogram/status/2113646046840558000",
+    "summary": "Hillel Wayne (formal methods) reacts to the Anthropic and Theorem Labs formal-verification post (anthropic.com/research/formal-verification): the main innovation is verifying a later stage, compiling code to assembly and then to a theorem language (LPS), which sidesteps source-semantics translation errors; he notes you still must trust the translation process, hardware, OS, compiler and LPS model. Companion commentary to the Anthropic formal verification post already in the collection.",
+    "topics": [
+      "research",
+      "industry",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "flag: added manually",
+    "enriched": true,
+    "content": "Some unorganized thoughts on the new Anthropic and Theorem Labs formal verification post: main innovation is verifying a later stage by compiling code to assembly, then to a theorem language (LPS), avoiding the source-translation divergence problem.",
+    "posted_at": "2026-10-23T14:57:41",
+    "concept": "Anthropic Skilljar — free AI academy & courses",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-23",
+    "author": "Dan Kornas",
+    "handle": "@DanKornas",
+    "subject": "Post by DanKornas on X (added manually)",
+    "url": "https://x.com/DanKornas/status/2113577787026010403",
+    "summary": "Dan Kornas highlights 'Harness Engineering and Best Practices for Coding Agents', a reference guide and Claude Code plugin for long-running coding-agent workflows: an 8-pillar / 5-level readiness assessment, Socratic guided setup, mechanical enforcement (secrets, file size, test colocation, doc drift), and scoped CLAUDE.md files with path-scoped rules.",
+    "topics": [
+      "agent-design",
+      "claude-code",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "flag: added manually",
+    "enriched": true,
+    "content": "Coding agents won't follow a wall of instructions. This repo adds guardrails: readiness assessment across 8 pillars and 5 maturity levels, guided setup, mechanical enforcement, scoped agent context (CLAUDE.md and path-scoped rules).",
+    "posted_at": "2026-10-23T10:26:27",
+    "concept": "context economy — routing tables beat big context",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-23",
+    "author": "Ivan",
+    "handle": "@thebitcode",
+    "subject": "Post by thebitcode on X (added manually)",
+    "url": "https://x.com/thebitcode/status/2113541133431349503",
+    "summary": "Ivan (posting in Chinese, translated) notes Anthropic open-sourced sandbox-runtime (github.com/anthropics/sandbox-runtime), the sandbox used by Claude Code: Seatbelt on macOS, bubblewrap on Linux, restricting agent filesystem and network access without a full container, usable for custom agents, MCP servers and CLI programs. Points out the real tension: too strict a network allowlist breaks tasks, too loose undermines security.",
+    "topics": [
+      "claude-code",
+      "dev-practices",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "flag: added manually",
+    "enriched": true,
+    "content": "Anthropic has open-sourced sandbox-runtime. macOS uses Seatbelt, Linux uses bubblewrap, restricting file system and network access without a full container. The real challenge is balancing security and usability of the network allowlist.",
+    "posted_at": "2026-10-23T08:00:48",
+    "links": [
+      "https://github.com/anthropics/sandbox-runtime"
+    ],
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-23",
+    "author": "Xudong Han",
+    "handle": "@Xudong07452910",
+    "subject": "Post by Xudong07452910 on X (added manually)",
+    "url": "https://x.com/Xudong07452910/status/2113472731542954118",
+    "summary": "Xudong Han (posting in Chinese, translated) summarizes the 'MemoryTax' article on agent memory cost: building a memory setup cost $25.88 vs $17.84 for just passing full history; structured memory (Mem0 78% vs full context 74% on GPT-4o-mini) helps weak models but the advantage vanishes as models strengthen (Full Context 92% vs Mem0 80% on one model; both 95% on Claude Opus 5.5), and information lost at write time caps later recovery.",
+    "topics": [
+      "agent-design",
+      "research",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "flag: added manually",
+    "enriched": true,
+    "content": "Spent $25.88 to build a Memory setup, which did worse than $17.84 handing the full history to the model. As models get stronger the advantage of structured memory (Mem0, Zep) disappears; memory leaks at write time create a ceiling.",
+    "posted_at": "2026-10-23T03:29:00",
+    "concept": "vector / hybrid databases as agent-memory infrastructure",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-23",
     "author": "The Curious Tales",
     "handle": "@thecurioustales",
     "subject": "Post by The Curious Tales on X",
@@ -53,6 +167,34 @@
       "https://github.com/slop-lang/slop"
     ],
     "concept": "Claude Code setup & usage",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-23",
+    "author": "chuplung",
+    "handle": "@choopyplug1",
+    "subject": "Post by choopyplug1 on X (added manually)",
+    "url": "https://x.com/choopyplug1/status/2113379716975538332",
+    "summary": "Claims Anthropic released a 15-page PDF on building your own Claude Duet, a proactive agent that works overnight and messages you first. Formula: Proactive Agent = Context + Watch + Judgment + Gate, in 8 layers: context, watch (one event schema, dedupe keys), judge (anomaly score in code plus rubric), speak (one 8am brief, max 3 interruptions/day), prepare (sandboxed overnight tasks with turn budgets), gate (every action is an approval packet), defend (fetched text is data, a broker holds credentials), learn. Secondhand thread summary; verify against the PDF.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "flag: added manually",
+    "enriched": true,
+    "content": "Proactive Agent = Context + Watch + Judgment + Gate; 8 layers: context, watch, judge, speak, prepare, gate, defend, learn. Alerts only for P0, max 3 interruptions a day; every action is a packet needing a yes; fetched text is data, never orders.",
+    "posted_at": "2026-10-22T21:19:23",
+    "concept": "managing agent teams",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -21245,7 +21387,7 @@
     "enriched": true,
     "content": "Notes from Boris Cherny (Head of Claude Code, Anthropic) on Lenny's Podcast on what happens after coding is solved. 1) Coding is largely solved — Boris hasn't hand-edited code since Nov 2025 and ships 10-30 PRs/day via Claude Code. 2) The next frontier is AI deciding what to build (scanning Slack feedback, bug reports, telemetry, proposing its own PRs). 3) Productivity per engineer at Anthropic is up 200%. 4) Underfund your teams on purpose — one engineer with unlimited tokens ships faster; Cowork was built by a small team in 10 days. 5) Give engineers unlimited tokens as the new hiring perk. 6) The Bitter Lesson applies to everything — rigid orchestration gives 10-20% gains that get wiped by the next model; give the model tools and a goal. 7) Build for the model six months from now. 8) Latent demand is the best product signal (Marketplace, Cowork). 9) 'Software engineer' is going away, replaced by 'builder'; the strongest people are generalists. 10) The printing press is the right analogy — we are the scribes, freed from tedious copying. 11) Anthropic can peek inside the model's brain via mechanistic interpretability; three layers of safety. 12) 70% of engineers and PMs enjoy their jobs more now (designers less so).\n\nBoris Cherny ~90 min on Lenny's Podcast about what happens after coding is solved.",
     "posted_at": "2026-03-06T20:19:11",
-    "concept": "managing agent teams",
+    "concept": "Anthropic Skilljar — free AI academy & courses",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -21569,7 +21711,7 @@
     "enriched": true,
     "content": "Found the full skill in the Anthropic repo to see how the SKILL.md is structured and each language it supports. Every company should already have a full repository of Skills and components within their stacks. Thanks Claude Code team for sharing how you build your documentation.",
     "posted_at": "2026-03-05T03:30:24",
-    "concept": "context economy — routing tables beat big context",
+    "concept": "Anthropic Skilljar — free AI academy & courses",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -24345,7 +24487,7 @@
     "enriched": true,
     "content": "This guy literally put in 1000 hours of prompt engineering to nail down the 6 patterns that actually matter.",
     "posted_at": "2025-10-31T15:08:06",
-    "concept": "context economy — routing tables beat big context",
+    "concept": "founder philosophy & life-design essays",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
