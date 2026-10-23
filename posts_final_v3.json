@@ -218,7 +218,7 @@
     "priority": "near-term",
     "sourceType": "article",
     "views": "",
-    "notes": "flag: added manually",
+    "notes": "flag: added manually | related: AI-assistant fact-check of a viral X post about this paper (shared by Jeremy, secondhand, unverified): paper is real, from Tencent Hy Frontier plus NUS/UMD/UGA/Indiana collaborators, base model Qwen3.8-27B; gains are verifier-driven and specific to terminal agents (four-suite Terminal-Bench avg ~20.7% to ~50.6%; modest on long-horizon LHTB); the 'cracking RSI' / data-center-moat / alignment-doom framing was judged hype, not from the paper.",
     "enriched": true,
     "content": "Terminal-RSI: Recursive Self-Improving Terminal Agents via Recursive Self-Rewrite and Policy-Refine. Converting verifier outcomes into useful policy updates and partial progress into complete task resolution is crucial for terminal agents. We present Terminal-RSI, which alternates Recursive Self-Rewrite (RSR) of verified trajectories with critic-inheriting Recursive Policy-Refine (RPR). The five-stage sequence from Qwen3.8-27B base through RSR-1, RPR-1, RSR-2, RPR-2 yields Terminal-RSI-27B: 19.84% on Terminal-Bench 4.0, 86.52% on Terminal-Bench 2.1, 16.95% on Terminal-Bench 3.0, 79.00% on Terminal-Bench Hard. On LHTB, process reward rises from 0.21 to 0.37 and strict completion from 0/46 to 5/46.",
     "concept": "loop engineering",
