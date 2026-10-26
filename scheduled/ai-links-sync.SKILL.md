@@ -34,6 +34,12 @@ The daily sync and the catch-up skill now run the same post-enrichment pipeline 
 
 ### Step 0 — Locate Cowork folder, configure git
 
+**Where this runs.** Two environments have been seen, and the code below must work in whichever one you're in:
+- **Local sandbox** — the folder is mounted at `/sessions/*/mnt/cowork` and plain `python3`/`git` reach it. Use the snippet below as written.
+- **Cloud session + device bridge** (October 2026 onward) — there is no `/sessions` mount; the connected folder lives on the user's Mac. Run *every* Python/git/sqlite step through `mcp__remote-devices__device_bash`, with the folder at `$HOME/mnt/cowork` (`cowork = os.path.expanduser('~/mnt/cowork')`). Don't stage the DB into the cloud — work on it in place. Each `device_bash` call is a fresh shell with a ~120s limit, so write scripts to `~/work/` and run them there; `~/work/` on that VM is also where clones and scratch go. Deps in `.deps/` are picked up by `db/ensure_deps.py` even though a bare `python3 -c "import fastembed"` fails.
+- Tell which one you're in with `ls /sessions`; if it doesn't exist, you're on the bridge.
+- **Load deferred tools up front, in one ToolSearch call:** the Chrome tools (`mcp__claude-in-chrome__tabs_context_mcp, navigate, javascript_tool, get_page_text`) and the Microsoft 365 mail search (`outlook_email_search`). Calling a deferred tool before loading it fails.
+
 ```python
 import subprocess, pathlib, glob, sys
 candidates = sorted(glob.glob('/sessions/*/mnt/cowork'))
@@ -62,7 +68,7 @@ Use `cowork` for every later file path. Note `/tmp` is not reliably writable in 
 
 ### Step 1 — Pull canonical state from GitHub first
 
-(Unchanged from prior runs.) Another runner may have pushed since our last sync. Clone to `~/work/lf-pull-{ts}`, compare local vs remote post counts and MAX(created_at). If remote is fresher, delete any local `db/ai_links.db-wal` / `-shm` / `-journal` (use `mcp__cowork__allow_cowork_file_delete` if needed), then copy `db/ai_links.db`, `posts_final_v3.json`, `ai_links_collection_v3.html`, `ai_links_collection_v3.md` from the clone back into `{cowork}/`.
+(Unchanged from prior runs.) Another runner may have pushed since our last sync. Clone to `~/work/lf-pull-{ts}`, compare local vs remote post counts and MAX(created_at). If remote is fresher, delete any local `db/ai_links.db-wal` / `-shm` / `-journal` (on the device bridge, use `mcp__remote-devices__device_request_delete_permission` if `rm` is refused; in the local sandbox, `mcp__cowork__allow_cowork_file_delete`), then copy `db/ai_links.db`, `posts_final_v3.json`, `ai_links_collection_v3.html`, `ai_links_collection_v3.md` from the clone back into `{cowork}/`.
 
 ### Step 2 — Apply pending migrations
 
@@ -94,7 +100,7 @@ For each email, read body via `mail:///messages/{messageId}` if needed (the summ
 
 ### Step 6 — Insert new posts (skeleton rows, acquire the lock here)
 
-Acquire the writer lock NOW and hold it through enrichment, the pipeline, and rebuild:
+Acquire the writer lock NOW — **the skeleton INSERTs are writes and belong inside it too** (an October 2026 run inserted them before taking the lock; nothing broke, but it's exactly the interleaving the lock exists to prevent). Hold it through enrichment, the pipeline, and rebuild. Across separate `device_bash` calls you can't hold one Python `with` block open, so take the lock per script (insert script, then enrichment script, then pipeline script) — that is allowed; the rule is *no write outside a lock*, not *one lock for the whole run*.
 
 ```python
 from db.lock import writer_lock
@@ -121,7 +127,7 @@ Track NEW_IDS for the enrichment pass.
 
 Chrome runs on the user's Mac. Detect connectivity once:
 
-1. `tabs_context_mcp` with `createIfEmpty: true`.
+1. `tabs_context_mcp` with `createIfEmpty: true` (load the Chrome tools first — see Step 0).
 2. On "not connected", wait 10s, retry. **5 attempts total** (~50s wallclock).
 3. Still not connected → call `db.enrich.record_failed(post_id, error="chrome-unreachable")` for every NEW_ID and jump to Step 7b.
 
@@ -133,9 +139,9 @@ Work list (newest-first):
 For each post:
 1. `navigate` to URL in Chrome.
 2. **Jittered render wait** — `new Promise(r => setTimeout(()=>r(true), 1500 + Math.random()*4000))`. Range 1.5–5.5s, mean ~3.5s. Fixed-cadence waits are the loudest automation signature; human-shaped variance is the cheapest mitigation against X rate-limiting at sustained read volume.
-3. Extract via `javascript_tool`: enumerate all `<article>` elements; for each, capture `(text, handle, urls)`. The first article is type `op`; subsequent articles whose handle matches the page handle are `self_reply`; others are `quote`. Detect external links (github/arxiv/huggingface/blog hosts) as their own `external_link` segments.
+3. **Extract with `get_page_text` first.** It returns the full article text, any quoted post (with its author, date and linked-article title), the view count and the engagement row, with no length cap. `javascript_tool` output is **hard-truncated at roughly 1,800 characters** (`[TRUNCATED]`), which silently drops the back half of long posts, quoted posts and link cards — an October 2026 run enriched nine posts from truncated captures and had to redo all of them. Split the `get_page_text` result into segments yourself: the main text is `op`; a block starting `Quote` followed by an author/handle is a `quote` segment; an `Article` title card or a named external site is an `external_link` segment; text after the post that the same handle wrote is a `self_reply`. Use `javascript_tool` only when you specifically need per-article handles/hrefs (e.g. a long self-reply thread), and then keep each return under ~1,500 characters. Pull **views** from the `NNK Views` line.
 4. On timeout/empty extraction, retry once after 3s.
-5. **If `javascript_tool` returns `[BLOCKED: Cookie/query string data]`, fall back to `get_page_text` immediately.** That string is the Chrome extension's own content guard redacting the payload — it is *not* a dead post and *not* a rate limit. The guard fires on the **tool**, not on what the tool returns, so reshaping the payload does not help: verified 2026-08-26 on post `2055064462844219603`, where scrubbing every URL and query-string pattern out of the returned JSON was blocked identically to the unscrubbed version. `get_page_text` reads the article element directly, is not subject to the same guard, and recovered the full 14K-char article in one call. It trades segment structure (no quote/link-card separation) for actually getting the text — so prefer `javascript_tool` when it works, and consider `get_page_text` the *first* move on X Article URLs, which is where this shape shows up. Never mark a `[BLOCKED: …]` post `dead`.
+5. **If `javascript_tool` returns `[BLOCKED: Cookie/query string data]`, fall back to `get_page_text` immediately.** That string is the Chrome extension's own content guard redacting the payload — it is *not* a dead post and *not* a rate limit. The guard fires on the **tool**, not on what the tool returns, so reshaping the payload does not help: verified 2026-08-26 on post `2055064462844219603`, where scrubbing every URL and query-string pattern out of the returned JSON was blocked identically to the unscrubbed version. `get_page_text` reads the article element directly, is not subject to the same guard, and recovered the full 14K-char article in one call. (Since the truncation finding above, `get_page_text` is already the default capture, so this is now mostly a note on why a `[BLOCKED: …]` is never a reason to give up.) Never mark a `[BLOCKED: …]` post `dead`.
 6. Still failing AND page text contains "post is unavailable" / "account suspended" / "page doesn't exist" / "this Tweet was deleted" → `record_dead(post_id, reason=<detected marker>, summary="[Post unavailable — {marker}]")`. Move on.
 7. Still failing without a dead marker → `record_partial(post_id, error="empty capture")`. Move on; next sync will retry.
 8. Otherwise, compose a 1–3 sentence summary capturing what it's about, why it matters, key details. Include notable URLs inline as plain text (no markdown linking). Skip generic x.com self-links. Prioritize GitHub repos, arxiv papers, product/tool homepages.
@@ -157,7 +163,7 @@ If Chrome rate-limits or persistently times out, stop early — don't burn budge
 
 If Step 7 preflight failed entirely, the import work from Steps 4–6 is still valuable. Don't lose it:
 
-1. Use `mcp__scheduled-tasks__create_scheduled_task` to schedule a one-time follow-up in 2 hours. `taskId`: `ai-links-enrich-retry-YYYYMMDD-HHMM`. `fireAt`: now+2h ISO with local offset. Prompt: "Run the ai-links-catchup skill — Chrome was unreachable on the morning sync, finish enriching any posts in `partial` or `failed` status."
+1. Schedule a one-time follow-up in 2 hours with `mcp__claude-code-remote__create_trigger` (`run_once_at` = now+2h as RFC3339; `name`: `ai-links-enrich-retry-YYYYMMDD-HHMM`; `initiation: own_followup`). Never use the local Cron tools — they die with the session. In a local-sandbox run that still has `mcp__scheduled-tasks__create_scheduled_task`, that works too. Prompt: "Run the ai-links-catchup skill — Chrome was unreachable on the morning sync, finish enriching any posts in `partial` or `failed` status."
 2. Skip to Step 8.
 
 ### Step 8 — Post-enrichment pipeline (still inside the lock)
@@ -166,6 +172,8 @@ If Step 7 preflight failed entirely, the import work from Steps 4–6 is still v
 pipeline_result = post_enrichment_pipeline(with_lock=False, progress=True)
 print(pipeline_result['summary'])
 ```
+
+**Run it in the background on the device bridge.** Embedding + semantic + rebuild takes ~90s on a normal day and longer after a big import, which is uncomfortably close to the 120s `device_bash` limit. Put the call (inside `with writer_lock(timeout=60):`) in `~/work/pipe.py`, start it with `nohup python3 ~/work/pipe.py > ~/work/pipe.out 2>&1 &`, then `sleep` and `tail` the output file until you see the rebuild line and the printed summary. Print `pipeline_result['summary']`, `['errors']` and `['split_candidates']` at the end of the script so they land in the file.
 
 This single call does, in pipeline order:
 0. **Subject flags** — lifts the trailing-parenthetical importance flag from email subjects into `posts.notes` as a searchable `flag: <text>` fragment. Idempotent; never clobbers existing curation notes.
@@ -252,7 +260,11 @@ stale file. If a push ever looks suspiciously large or small, diagnose with
 
 Release the writer lock by exiting the `with` block.
 
-**Housekeeping.** The cowork mount denies `unlink`, so deleted-but-open files accumulate in `db/` as `.fuse_hidden*` orphans (they reached ~5,200 files / 284 MB once and made the directory unlistable). If `find {cowork}/db -maxdepth 1 -name '.fuse_hidden*' | wc -l` exceeds ~500, delete them — never touching `ai_links.db`, `ai_links.db-wal`, or `ai_links.db-shm` — and mention it in the report. Use `mcp__cowork__allow_cowork_file_delete` if `rm` returns "Operation not permitted". Also checkpoint the WAL (`PRAGMA wal_checkpoint(TRUNCATE)`) before the push so the committed `.db` file is self-contained.
+**Housekeeping.** The cowork mount denies `unlink`, so deleted-but-open files accumulate in `db/` as `.fuse_hidden*` orphans (they reached ~5,200 files / 284 MB once and made the directory unlistable). If `find {cowork}/db -maxdepth 1 -name '.fuse_hidden*' | wc -l` exceeds ~500, delete them — never touching `ai_links.db`, `ai_links.db-wal`, or `ai_links.db-shm` — and mention it in the report. On the device bridge call `mcp__remote-devices__device_request_delete_permission` (once, with the connected folder root and a one-line reason) if `rm` returns "Operation not permitted"; in the local sandbox use `mcp__cowork__allow_cowork_file_delete`. Also checkpoint the WAL (`PRAGMA wal_checkpoint(TRUNCATE)`) before the push so the committed `.db` file is self-contained.
+
+### Step 9b — Notify only when there's something to act on
+
+This runs as a scheduled routine with nobody watching, so the report below lands in a transcript no one reads. Use `PushNotification` (message wrapped in `<routine_summary>…</routine_summary>`, most important sentence first) **only** for: Chrome unreachable, writer-lock timeout, any pipeline `errors`, a magnet-detector hit, the rate-limit watch firing, a push that failed, a nonzero `dismiss_observation()` audit, a skipped/failed Step 4 search, or posts left `partial`/`failed`. A clean run — new posts enriched, no errors, push succeeded — gets **no** notification; silence is the correct result. Still write the full report.
 
 ### Step 10 — Report
 
@@ -273,9 +285,11 @@ Tell Jeremy:
 - GitHub push status, including how many files `mirror_to_clone` copied.
 - Any failures (Chrome unreachable, lock timeout, unparseable subjects, dedup hits, pipeline errors).
 - **Whether the rate-limit watch fired** — if it did, what got captured and what didn't.
+- **Which environment ran it** (local sandbox vs cloud + device bridge), and whether anything in Step 0's tool-loading or path assumptions needed correcting — if so, fix the skill (see last constraint).
 
 ### Constraints
 
+- Capture with `get_page_text`, not a long `javascript_tool` return — a truncated capture that gets marked `ok` is invisible to `pending_enrichment_ids()` and will never be retried. If a capture ends mid-sentence or shows `[TRUNCATED]`, it is not done.
 - Never write `posts.enriched`, `posts.content`, or `posts.summary` directly — always go through `db/enrich.py` so the persistence semantics stay consistent.
 - The post-enrichment pipeline call is idempotent — safe to run even if Step 7 found nothing to enrich. The mechanical pass will re-scan the corpus cheaply; the semantic pass will surface new candidates as concepts gain evidence.
 - If pull-first revealed the remote was ahead and we restored from it, that alone is not a reason to commit. We commit only when local has changes the remote doesn't have.
