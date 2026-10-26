@@ -7,14 +7,14 @@
     "url": "https://x.com/howtoprompt__/status/2113934324496257212",
     "summary": "Viral thread claiming researchers 'killed vector databases' with ResonanceDB, a wave-based semantic memory that stores memories as complex-valued waveforms (amplitude and phase) so negation/polarity (\"happy\" vs \"not happy\") isn't collapsed like in standard embeddings. Hype-packaged framing, but the underlying idea (phase-aware retrieval memory) is a research lead worth checking against the paper.",
     "topics": [
-      "research",
       "agent-design",
-      "questionable"
+      "questionable",
+      "research"
     ],
     "audience": [
       "me"
     ],
-    "priority": "long-term",
+    "priority": "near-term",
     "sourceType": "tweet",
     "views": "41.2K",
     "notes": "",
@@ -23,7 +23,7 @@
     "posted_at": "2026-10-24T10:03:12",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-10-24",
@@ -31,32 +31,27 @@
     "handle": "@thedelost",
     "subject": "Post by delost on X",
     "url": "https://x.com/thedelost/status/2114016386896773177",
-    "summary": "Hype-styled list of 10 GitHub repos of ready-made Claude Code agents/skills after Agent Skills became an open spec: github.com/wshobson/agents (plugin marketplace across Claude Code, Codex, Cursor, Copilot), github.com/VoltAgent/awesome-claude-code-subagents (100+ subagents), github.com/rohitg00/awesome-claude-code-toolkit (135 agents, 35 skills, 42 commands, 176+ plugins, 20 hooks). Useful as a discovery list despite the packaging.",
+    "summary": "Hype-styled list of 10 GitHub repos of ready-made Claude Code agents/skills/hooks after Agent Skills became an open spec: wshobson/agents (cross-tool plugin marketplace), VoltAgent/awesome-claude-code-subagents (100+), rohitg00/awesome-claude-code-toolkit (135 agents, 35 skills, 42 commands, 176+ plugins), anthropics/skills (official SKILL.md examples), netresearch/claude-code-marketplace, disler/claude-code-hooks-mastery, karanb192/claude-code-hooks, affaan-m/claude-swarm, am-will/swarms (orchestration as skills), eugeniughelbur/obsidian-second-brain (markdown memory across agents). Closing advice: give a team a job with a clear finish line and measure output kept vs cost. Quotes Hanako's article 'How to Build an AI Quant Research Team with Claude Code' (lead, test-running agents, a skeptic, a ledger). Good discovery list despite the packaging.",
     "topics": [
       "claude-code",
-      "skills-mcp",
-      "questionable"
+      "questionable",
+      "skills-mcp"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "85.6K",
     "notes": "",
     "enriched": true,
-    "content": "Anthropic turned Agent Skills into an open spec and GitHub filled up with ready-made Claude Code teams. 10 GitHub projects: wshobson/agents plugin marketplace; VoltAgent/awesome-claude-code-subagents 100+ subagents; rohitg00/awesome-claude-code-toolkit with 135 agents, 35 skills, 42 commands, 176+ plugins, 20 hooks and 14 MCP configs.",
+    "content": "Anthropic turned Agent Skills into an open spec and GitHub filled up with ready-made Claude Code teams. 10 repos: wshobson/agents; VoltAgent/awesome-claude-code-subagents; rohitg00/awesome-claude-code-toolkit; anthropics/skills; netresearch/claude-code-marketplace; disler/claude-code-hooks-mastery; karanb192/claude-code-hooks; affaan-m/claude-swarm; am-will/swarms; eugeniughelbur/obsidian-second-brain. Advice: give the first team a job with an obvious finish line (one reviewed PR, researched brief, failing test turned green), then check how much output you kept and what it cost; a bigger roster must move that number.\n\nArticle: How to Build an AI Quant Research Team with Claude Code (Full Course): a lead that plans, agents that run the tests, a skeptic that tries to kill every result, and a ledger.",
     "posted_at": "2026-10-24T15:29:17",
-    "links": [
-      "https://github.com/wshobson/agents",
-      "https://github.com/VoltAgent/awesome-claude-code-subagents",
-      "https://github.com/rohitg00/awesome-claude-code-toolkit"
-    ],
-    "concept": "context economy — routing tables beat big context",
+    "concept": "Claude Code setup & usage",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-10-24",
@@ -64,25 +59,25 @@
     "handle": "@yacinemtb",
     "subject": "Post by kache on X",
     "url": "https://x.com/yacinemtb/status/2113963713208201575",
-    "summary": "kache (yacineMTB) quote-posts log4j's live-tweeted findings from agents reverse engineering a Samsung TV (Tizen) on a live device, claiming it phones home abroad; log4j says the resulting document is the most comprehensive breakdown of Tizen security concerns he's seen. Example of LLM agents applied to reverse engineering/security research; the privacy claims are unverified.",
+    "summary": "kache (yacineMTB) quote-posts log4j's live-tweeted findings from agents reverse engineering a Samsung TV (Tizen) on a live device; kache claims the TV microphone phones home outside the country. log4j says the resulting document is the most comprehensive breakdown of Tizen security concerns he has seen run on a live device. Example of LLM agents applied to reverse engineering/security research; the privacy claims are unverified.",
     "topics": [
       "adjacent",
-      "industry",
-      "dev-practices"
+      "dev-practices",
+      "industry"
     ],
     "audience": [
       "me"
     ],
-    "priority": "long-term",
+    "priority": "near-term",
     "sourceType": "tweet",
     "views": "160.2K",
     "notes": "",
     "enriched": true,
-    "content": "Cyber LLMs finding out that Samsung spies on you illegally. Reverse engineer, decompile, and hack everything. Quoting log4j: live-tweeting on samsung findings were fun; agents are running longer; the document is the most comprehensive breakdown of key concerns of Tizen run on a live device.",
+    "content": "Cyber LLMs finding out that Samsung spies on you illegally. Reverse engineer, decompile, and hack everything. Because your home and family has already been hacked, you are spied on -- the microphone in your TV is phoning outside of your country.\n\n(Oct 23) live-tweeting on samsung findings were fun. i'll let my agents give it a bit more time, but this document is already the most comprehensive breakdown of some key concerns of tizen i've seen run on a live device.",
     "posted_at": "2026-10-24T11:59:59",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-10-24",
@@ -90,19 +85,19 @@
     "handle": "@dankornas",
     "subject": "Post by Dan Kornas on X",
     "url": "https://x.com/dankornas/status/2113860880592966054",
-    "summary": "skill-up: an open-source (Apache 2.0) CLI for evaluating Agent Skills, agents and workspaces via YAML-defined environments, engines and cases, with local/Docker/OpenSandbox runtimes, rule/script/agent judges, and JSON/JUnit/HTML reports. Includes a 'skill-upper' eval-to-evolution loop that creates evals, diagnoses failures and reruns; directly relevant to testing our skills.",
+    "summary": "skill-up: an open-source (Apache 2.0) CLI for evaluating Agent Skills, agents and workspaces via YAML-defined environments, engines and cases, with local/Docker/OpenSandbox runtimes, rule/script/agent judges, and JSON/JUnit/HTML/benchmark reports. Its 'skill-upper' eval-to-evolution loop creates evals, diagnoses failures, expands cases and reruns through conversation. Repo link is in a reply (not captured). Directly relevant to testing our skills; low views so far (4.5K).",
     "topics": [
-      "skills-mcp",
+      "agent-design",
       "dev-practices",
-      "agent-design"
+      "skills-mcp"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
-    "priority": "now",
+    "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "4,477",
     "notes": "",
     "enriched": true,
     "content": "Agent skills improve faster when failures are reproducible. skill-up is a CLI for evaluating Agent Skills, agents, and their workspaces: define environments, engines and cases in YAML; per-case local, Docker or OpenSandbox runtimes; rule-based, script or agent judges; JSON, JUnit XML, HTML and benchmark reports; eval-to-evolution loop. Open source, Apache License 2.0.",
@@ -110,7 +105,7 @@
     "concept": "self-improving skills (autoresearch pattern)",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-10-24",
@@ -118,27 +113,27 @@
     "handle": "@xudong07452910",
     "subject": "Post by Xudong Han on X",
     "url": "https://x.com/xudong07452910/status/2113800139005460534",
-    "summary": "Chinese-language post (translated) saying Anthropic now advises enterprises to use fewer subagents: a single main agent loop that plans, executes and dynamically loads Skills/Tools often beats multi-agent setups (one client saw ~2x runtime speedup), since handoffs lose context and add latency/cost. Notes a caveat about a customer-service system where merging subagents had a catch.",
+    "summary": "Chinese-language post (translated, 575K views) summarizing Anthropic's claude.com article 'Building agents: When to fold subagents into your main agent loop': a single main agent + Skills often beats multi-agent setups (one client ~2x faster), since handoffs lose context and add latency/cost. Key caveat: merging subagents in a customer-service system broke a previously passing task (the main agent skipped confirming delivery time with the logistics expert), so validate every merge with end-to-end evals. Subagents still win for parallel research, independent verification and context isolation. Anthropic also open-sourced a migration toolkit to merge subagents progressively and compare quality/cost/latency.",
     "topics": [
       "agent-design",
       "claude-code",
       "skills-mcp"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "575.7K",
     "notes": "",
     "enriched": true,
-    "content": "Anthropic has started recommending 'use fewer Subagents', merging expert agents back into the main agent loop. Single agent + Skills often outperforms complex multi-agent architectures; one client got ~2x runtime speed. Handoffs require repeatedly passing and summarizing context, causing information loss, latency and cost.",
+    "content": "Anthropic has started advising companies to use fewer subagents, merging expert agents back into the main agent loop; single agent + Skills often outperforms complex multi-agent architectures (one client ~2x runtime speed). Handoffs require passing and summarizing context repeatedly, causing information loss, latency and cost. Main agent should plan/execute and dynamically load Skills and Tools. Caveat: a merge in a customer-service system caused a previously successful task to fail because the main agent skipped confirming delivery time with the logistics expert; validate each merge with end-to-end Evals. Subagents still valuable for parallel research, independent verification, context isolation. Anthropic open-sourced a migration toolkit to analyze architecture, progressively merge subagents, and compare quality, cost and latency.\n\nBuilding agents: When to fold subagents into your main agent loop (claude.com)",
     "posted_at": "2026-10-24T01:10:00",
-    "concept": "persistent always-on agents — bot mode & agent desktops",
+    "concept": "agents as constrained software — making bad shapes unexpressible",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-10-24",
@@ -146,27 +141,27 @@
     "handle": "@hayatomaruu",
     "subject": "Post by hayato on X",
     "url": "https://x.com/hayatomaruu/status/2113719510985269442",
-    "summary": "Hype-framed post pointing to a short workshop on building an agent harness from scratch: loops + sandboxed tools, brain/hands separation, server-side runs that resume from the log after crashes, cheap retry/replay, and turning yesterday's logs into new memory ('dreaming'). The five steps are a usable checklist for harness design even though the salary/credential framing is promotional.",
+    "summary": "Hype-framed post (500K views) pointing to a short workshop on building an agent harness from scratch: loops + sandboxed tools, brain/hands separation, server-side runs that resume from the log after crashes, cheap retry/replay, and yesterday's logs turned into new memory ('dreaming'). Quotes beamnxw's article 'Make Opus 5.5 Finish Long Tasks: A Reusable Harness Engineering Setup' (a 7-layer harness: save progress, verify results, reuse the workflow). The five steps are a usable harness checklist; the salary/credential framing is promotional.",
     "topics": [
       "agent-design",
       "claude-code",
       "questionable"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "500.1K",
     "notes": "",
     "enriched": true,
-    "content": "Anthropic engineer claims harnesses are the key skill: run loops + sandbox tools + turn yesterday's logs into new skills. Workshop steps: harness handles loops/context/sandboxing; brain and hands separated; runs server-side and resumes from the log after crashes; failure is cheap via retry and replay; logs become new memory ('dreaming').",
+    "content": "Anthropic engineer claims harnesses are the key skill: loops + sandboxed tools + turning yesterday's logs into skills. Workshop steps: harness handles loops/context/sandboxing; brain and hands separated (60% faster to first token); runs server-side and resumes from the log after crashes; failure is cheap via retry and replay; logs become new memory ('dreaming').\n\nStop letting unfinished Opus 5.5 runs eat your budget. Set up the harness before your next long task: save progress, verify results, reuse the workflow. Article: Make Opus 5.5 Finish Long Tasks: A Reusable Harness Engineering Setup - leave a result you can open, evidence you can inspect, and enough saved progress to continue tomorrow.",
     "posted_at": "2026-10-23T19:49:37",
     "concept": "agent harness engineering",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-10-24",
@@ -180,8 +175,8 @@
       "research"
     ],
     "audience": [
-      "me",
-      "leadership"
+      "leadership",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
@@ -192,7 +187,7 @@
     "posted_at": "2026-10-23T18:23:45",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-10-24",
@@ -200,27 +195,27 @@
     "handle": "@garrytan",
     "subject": "Post by Garry Tan on X",
     "url": "https://x.com/garrytan/status/2113668801565008120",
-    "summary": "Garry Tan says Grep open-sourcing big parts of their harness is a big deal, quoting Miguel Ríos Berríos's 'day 4' post about an improved workflow DSL used in their self-improving loop to turn agentic loops into more deterministic recipes. Worth a look for harness-engineering ideas.",
+    "summary": "Garry Tan: Grep open-sourcing big parts of their harness is a big deal. Quotes Miguel Ríos Berríos's 'day 4 of open sourcing parts of our harness' post (Oct 22): improved workflow DSL used in their self-improving loop, turning agentic loops into more deterministic recipes; includes a short video. Worth a look for harness-engineering ideas.",
     "topics": [
       "agent-design",
-      "industry",
-      "dev-practices"
+      "dev-practices",
+      "industry"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
     "priority": "near-term",
     "sourceType": "tweet",
     "views": "48.3K",
     "notes": "",
     "enriched": true,
-    "content": "Grep open sourcing big parts of their harness is a big deal. Quote: Miguel Ríos Berríos (Oct 22): Day 4 of open sourcing parts of our harness; significant improvements to our workflow DSL, used in our self-improving loop, turning agentic loops into more deterministic recipes.",
+    "content": "Grep open sourcing big parts of their harness is a big deal.\n\nDay 4 of open sourcing parts of our harness. Significant improvements to our workflow DSL, used in our self-improving loop, turning agentic loops into more deterministic recipes.",
     "posted_at": "2026-10-23T16:28:07",
     "concept": "agent harness engineering",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-10-24",
@@ -228,27 +223,27 @@
     "handle": "@annatarxbt",
     "subject": "Post by Annatar.md on X",
     "url": "https://x.com/annatarxbt/status/2113634548378374458",
-    "summary": "Wavestone AI Lab harness-engineering paper that read the source of 11 coding agents (Claude Code, Codex included) and found the same 7-part harness in each: loop, LLM layer, tools, memory, safety, orchestration, extensions (SKILL.md in 9 of 11, MCP in 8). Includes 18 design rules (p.67) and a 90-line reference harness (p.71); strong fit with the harness-engineering thread.",
+    "summary": "Wavestone AI Lab paper that read the source of 11 coding agents (Claude Code, Codex included) and found the same 7-part harness in each: loop, LLM layer (up to 29 provider profiles), tools (bash alone up to 43 typed tools), memory, safety, orchestration (Aider skips sub-agents), extensions (SKILL.md in 9 of 11, MCP in 8). Key pages: p.4 7-part map, p.12 three loop types, p.67 18 design rules, p.71 90-line harness. Quotes Lunar's 'Harness Engineering: The Complete Guide to Building AI Agents That Don't Fall Apart' (fix the layer, not the prompt).",
     "topics": [
       "agent-design",
-      "research",
-      "claude-code"
+      "claude-code",
+      "research"
     ],
     "audience": [
-      "me",
-      "dev-team"
+      "dev-team",
+      "me"
     ],
-    "priority": "now",
+    "priority": "near-term",
     "sourceType": "tweet",
-    "views": "",
+    "views": "56.9K",
     "notes": "",
     "enriched": true,
-    "content": "Harness engineering paper required reading if you run Claude Code: Wavestone AI Lab read the source of 11 coding agents and found the same 7-part harness: loop, LLM layer, tools, memory, safety, orchestration, extensions. Agent = model + harness. Key pages: p.4 7-part map, p.12 three loop types, p.67 18 design rules, p.71 90-line harness.",
+    "content": "Harness engineering paper required reading for Claude Code users: Wavestone AI Lab read the source of 11 coding agents and found the same 7-part harness: loop, LLM layer, tools, memory, safety, orchestration, extensions. agent = model + harness. Pages: p.4 map, p.12 loop types, p.67 18 design rules, p.71 90-line harness covering all 7 parts.\n\nArticle (Sep 6): Harness Engineering: The Complete Guide to Building AI Agents That Don't Fall Apart. Most people try to improve agents at the wrong layer; when an agent fails they rewrite the prompt instead of fixing the harness.",
     "posted_at": "2026-10-23T14:12:00",
     "concept": "agent harness engineering",
     "enrichment_status": "ok",
     "enrichment_version": 1,
-    "enrichment_attempts": 1
+    "enrichment_attempts": 2
   },
   {
     "date": "2026-10-23",
@@ -500,7 +495,7 @@
     "enriched": true,
     "content": "Yarchi: Meta shared the internal AI agent setup cutting a 3-4 day task to under 1 hour. One agent with all knowledge got confused, so they split into two layers: a boss/router agent that does no real work (6 of 7 steps fixed rules: read request, dedupe, collect inputs, safety checks, hand off) and 14 expert agents that each see only their own area. To copy: keep main agent as router; give every expert the same structure (knowledge, needs, steps, common errors/fixes); store knowledge in separate files loaded on demand; reorder existing agents before building new ones. Result: under 1 hour vs 3-4 days; ~2/3 of changes land without major human edits.\n\nAug 15 article: How to Design an Agent Harness: six decisions that turn a model into a worker you can leave alone.",
     "posted_at": "2026-10-22T12:58:07",
-    "concept": "persistent always-on agents — bot mode & agent desktops",
+    "concept": "agents as constrained software — making bad shapes unexpressible",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -4276,7 +4271,7 @@
     "links": [
       "https://alphaxiv.org/abs/2609.01481"
     ],
-    "concept": "loop engineering",
+    "concept": "agent harness engineering",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -23896,7 +23891,7 @@
       "https://github.com/PaulSolt/DocSetQuery",
       "https://github.com/steipete/agent-scripts"
     ],
-    "concept": "agents as constrained software — making bad shapes unexpressible",
+    "concept": "persistent always-on agents — bot mode & agent desktops",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -25118,7 +25113,7 @@
     "links": [
       "https://github.com/contains-studio/agents"
     ],
-    "concept": "Claude skills craft",
+    "concept": "agents as constrained software — making bad shapes unexpressible",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
