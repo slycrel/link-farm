@@ -1,5 +1,256 @@
 [
   {
+    "date": "2026-10-25",
+    "author": "How To Prompt",
+    "handle": "@howtoprompt__",
+    "subject": "Post by How To Prompt on X",
+    "url": "https://x.com/howtoprompt__/status/2113934324496257212",
+    "summary": "Viral thread claiming researchers 'killed vector databases' with ResonanceDB, a wave-based semantic memory that stores memories as complex-valued waveforms (amplitude and phase) so negation/polarity (\"happy\" vs \"not happy\") isn't collapsed like in standard embeddings. Hype-packaged framing, but the underlying idea (phase-aware retrieval memory) is a research lead worth checking against the paper.",
+    "topics": [
+      "research",
+      "agent-design",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "41.2K",
+    "notes": "",
+    "enriched": true,
+    "content": "Researchers killed vector databases with a quantum mechanics. They introduced ResonanceDB: wave-based semantic memory storing memories as complex-valued waveforms with amplitude and phase, so opposites like 'happy' and 'not happy' are not placed together as in standard vector embeddings.",
+    "posted_at": "2026-10-24T10:03:12",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-24",
+    "author": "delost",
+    "handle": "@thedelost",
+    "subject": "Post by delost on X",
+    "url": "https://x.com/thedelost/status/2114016386896773177",
+    "summary": "Hype-styled list of 10 GitHub repos of ready-made Claude Code agents/skills after Agent Skills became an open spec: github.com/wshobson/agents (plugin marketplace across Claude Code, Codex, Cursor, Copilot), github.com/VoltAgent/awesome-claude-code-subagents (100+ subagents), github.com/rohitg00/awesome-claude-code-toolkit (135 agents, 35 skills, 42 commands, 176+ plugins, 20 hooks). Useful as a discovery list despite the packaging.",
+    "topics": [
+      "claude-code",
+      "skills-mcp",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Anthropic turned Agent Skills into an open spec and GitHub filled up with ready-made Claude Code teams. 10 GitHub projects: wshobson/agents plugin marketplace; VoltAgent/awesome-claude-code-subagents 100+ subagents; rohitg00/awesome-claude-code-toolkit with 135 agents, 35 skills, 42 commands, 176+ plugins, 20 hooks and 14 MCP configs.",
+    "posted_at": "2026-10-24T15:29:17",
+    "links": [
+      "https://github.com/wshobson/agents",
+      "https://github.com/VoltAgent/awesome-claude-code-subagents",
+      "https://github.com/rohitg00/awesome-claude-code-toolkit"
+    ],
+    "concept": "context economy — routing tables beat big context",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-24",
+    "author": "kache",
+    "handle": "@yacinemtb",
+    "subject": "Post by kache on X",
+    "url": "https://x.com/yacinemtb/status/2113963713208201575",
+    "summary": "kache (yacineMTB) quote-posts log4j's live-tweeted findings from agents reverse engineering a Samsung TV (Tizen) on a live device, claiming it phones home abroad; log4j says the resulting document is the most comprehensive breakdown of Tizen security concerns he's seen. Example of LLM agents applied to reverse engineering/security research; the privacy claims are unverified.",
+    "topics": [
+      "adjacent",
+      "industry",
+      "dev-practices"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "160.2K",
+    "notes": "",
+    "enriched": true,
+    "content": "Cyber LLMs finding out that Samsung spies on you illegally. Reverse engineer, decompile, and hack everything. Quoting log4j: live-tweeting on samsung findings were fun; agents are running longer; the document is the most comprehensive breakdown of key concerns of Tizen run on a live device.",
+    "posted_at": "2026-10-24T11:59:59",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-24",
+    "author": "Dan Kornas",
+    "handle": "@dankornas",
+    "subject": "Post by Dan Kornas on X",
+    "url": "https://x.com/dankornas/status/2113860880592966054",
+    "summary": "skill-up: an open-source (Apache 2.0) CLI for evaluating Agent Skills, agents and workspaces via YAML-defined environments, engines and cases, with local/Docker/OpenSandbox runtimes, rule/script/agent judges, and JSON/JUnit/HTML reports. Includes a 'skill-upper' eval-to-evolution loop that creates evals, diagnoses failures and reruns; directly relevant to testing our skills.",
+    "topics": [
+      "skills-mcp",
+      "dev-practices",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Agent skills improve faster when failures are reproducible. skill-up is a CLI for evaluating Agent Skills, agents, and their workspaces: define environments, engines and cases in YAML; per-case local, Docker or OpenSandbox runtimes; rule-based, script or agent judges; JSON, JUnit XML, HTML and benchmark reports; eval-to-evolution loop. Open source, Apache License 2.0.",
+    "posted_at": "2026-10-24T05:11:22",
+    "concept": "self-improving skills (autoresearch pattern)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-24",
+    "author": "Xudong Han",
+    "handle": "@xudong07452910",
+    "subject": "Post by Xudong Han on X",
+    "url": "https://x.com/xudong07452910/status/2113800139005460534",
+    "summary": "Chinese-language post (translated) saying Anthropic now advises enterprises to use fewer subagents: a single main agent loop that plans, executes and dynamically loads Skills/Tools often beats multi-agent setups (one client saw ~2x runtime speedup), since handoffs lose context and add latency/cost. Notes a caveat about a customer-service system where merging subagents had a catch.",
+    "topics": [
+      "agent-design",
+      "claude-code",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Anthropic has started recommending 'use fewer Subagents', merging expert agents back into the main agent loop. Single agent + Skills often outperforms complex multi-agent architectures; one client got ~2x runtime speed. Handoffs require repeatedly passing and summarizing context, causing information loss, latency and cost.",
+    "posted_at": "2026-10-24T01:10:00",
+    "concept": "persistent always-on agents — bot mode & agent desktops",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-24",
+    "author": "hayato",
+    "handle": "@hayatomaruu",
+    "subject": "Post by hayato on X",
+    "url": "https://x.com/hayatomaruu/status/2113719510985269442",
+    "summary": "Hype-framed post pointing to a short workshop on building an agent harness from scratch: loops + sandboxed tools, brain/hands separation, server-side runs that resume from the log after crashes, cheap retry/replay, and turning yesterday's logs into new memory ('dreaming'). The five steps are a usable checklist for harness design even though the salary/credential framing is promotional.",
+    "topics": [
+      "agent-design",
+      "claude-code",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Anthropic engineer claims harnesses are the key skill: run loops + sandbox tools + turn yesterday's logs into new skills. Workshop steps: harness handles loops/context/sandboxing; brain and hands separated; runs server-side and resumes from the log after crashes; failure is cheap via retry and replay; logs become new memory ('dreaming').",
+    "posted_at": "2026-10-23T19:49:37",
+    "concept": "agent harness engineering",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-24",
+    "author": "jack",
+    "handle": "@jack",
+    "subject": "Post by jack on X",
+    "url": "https://x.com/jack/status/2113697902916751661",
+    "summary": "Jack Dorsey announces Dessa (block.xyz), a full-duplex conversation model trained only on speech, pitched as the most authentic voice model with natural emotion, pauses and cadence. Industry signal on speech-native models from Block.",
+    "topics": [
+      "industry",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "13.3M",
+    "notes": "",
+    "enriched": true,
+    "content": "We believe voice is the most natural way to interact with intelligence, so we created Dessa, the most authentic full-duplex speech model ever built. Talking with it feels like talking with a person, full of emotion, nuance, pauses, and a natural cadence. block.xyz: Dessa - the Conversation Model trained only on speech.",
+    "posted_at": "2026-10-23T18:23:45",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-24",
+    "author": "Garry Tan",
+    "handle": "@garrytan",
+    "subject": "Post by Garry Tan on X",
+    "url": "https://x.com/garrytan/status/2113668801565008120",
+    "summary": "Garry Tan says Grep open-sourcing big parts of their harness is a big deal, quoting Miguel Ríos Berríos's 'day 4' post about an improved workflow DSL used in their self-improving loop to turn agentic loops into more deterministic recipes. Worth a look for harness-engineering ideas.",
+    "topics": [
+      "agent-design",
+      "industry",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "48.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "Grep open sourcing big parts of their harness is a big deal. Quote: Miguel Ríos Berríos (Oct 22): Day 4 of open sourcing parts of our harness; significant improvements to our workflow DSL, used in our self-improving loop, turning agentic loops into more deterministic recipes.",
+    "posted_at": "2026-10-23T16:28:07",
+    "concept": "agent harness engineering",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-24",
+    "author": "Annatar.md",
+    "handle": "@annatarxbt",
+    "subject": "Post by Annatar.md on X",
+    "url": "https://x.com/annatarxbt/status/2113634548378374458",
+    "summary": "Wavestone AI Lab harness-engineering paper that read the source of 11 coding agents (Claude Code, Codex included) and found the same 7-part harness in each: loop, LLM layer, tools, memory, safety, orchestration, extensions (SKILL.md in 9 of 11, MCP in 8). Includes 18 design rules (p.67) and a 90-line reference harness (p.71); strong fit with the harness-engineering thread.",
+    "topics": [
+      "agent-design",
+      "research",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Harness engineering paper required reading if you run Claude Code: Wavestone AI Lab read the source of 11 coding agents and found the same 7-part harness: loop, LLM layer, tools, memory, safety, orchestration, extensions. Agent = model + harness. Key pages: p.4 7-part map, p.12 three loop types, p.67 18 design rules, p.71 90-line harness.",
+    "posted_at": "2026-10-23T14:12:00",
+    "concept": "agent harness engineering",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-10-23",
     "author": "Hillel",
     "handle": "@hillelogram",
@@ -1747,7 +1998,7 @@
     "links": [
       "https://claude.com"
     ],
-    "concept": "loop engineering",
+    "concept": "Anthropic Skilljar — free AI academy & courses",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -3395,7 +3646,7 @@
     "enriched": true,
     "content": "Akshay 🚀 @akshay_pachaar\nThe easiest way to run your agent harnesses using local models:\n\nWhether you're using Claude Code, Codex, OpenCode, or Pi, the local setup itself isn't really the hard part.\n\nThe harder problem is figuring out which local model your machine can actually handle well.\n\nYou have to think about RAM, model size, quantization, context length, KV cache, speed, accuracy, and a bunch of other trade-offs before you even start.\n\nMagnitude is an open-source solution that removes all of that guesswork for you.\n\nIt profiles your machine, benchmarks what it can realistically run, recommends the best models for your hardware, and then lets you connect them to your preferred agent harness.\n\nThe entire setup takes just two commands.\n\nIn this video, I walk through the full process from hardware profiling to running a harness on a local model.\n\nChapters:\n00:00 Intro\n00:17 What Magnitude is\n00:45 Setup in two commands",
     "posted_at": "2026-09-15T13:47:33",
-    "concept": "applied decision-model routing — gating agents with Jev",
+    "concept": "agent harness engineering",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2
@@ -4025,7 +4276,7 @@
     "links": [
       "https://alphaxiv.org/abs/2609.01481"
     ],
-    "concept": "agent harness engineering",
+    "concept": "loop engineering",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -9869,7 +10120,7 @@
     "enriched": true,
     "content": "Andrew Ng: 100% of my tasks are now done by AI agents; loops are next; in 3-6 months everyone will use self-improving loops, no more prompting. A 30-min talk on building self-improving agentic systems from scratch.\n\nThe Self-Improving Loop: a 300-agent swarm on Kimi K2.6, verified by Opus 4.8. A free open-source model running 300 parallel agents across 4,000 coordinated steps from a single prompt, scoring higher on real research tasks than pricier models.",
     "posted_at": "2026-06-21T18:29:25",
-    "concept": "loop engineering",
+    "concept": "persistent always-on agents — bot mode & agent desktops",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2
@@ -10373,7 +10624,7 @@
     "enriched": true,
     "content": "Codez @0xCodez: Anthropic Managed Agents team - Fable 5 is our best model for running self-improving agent systems. Add /loops, dynamic workflows, dreaming and you are unstoppable. In 13 minutes the Anthropic team shows how to build self-improving agent systems with Fable 5 from scratch. Live from the last Anthropic stage in Japan.",
     "posted_at": "2026-06-11T15:42:44",
-    "concept": "persistent always-on agents — bot mode & agent desktops",
+    "concept": "Anthropic Skilljar — free AI academy & courses",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -10764,7 +11015,7 @@
     "links": [
       "https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial"
     ],
-    "concept": "Anthropic Skilljar — free AI academy & courses",
+    "concept": "Claude Code setup & usage",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -13118,7 +13369,7 @@
     "enriched": true,
     "content": "Dynamic skills are one of the coolest and most powerful parts of the new way to make personal AI work. Just in time and markdown is code, and the agent can just change it when you discover new cases to handle. Just in time personal software is the most powerful idea of 2026\n\nMarcus (May 19, replying): The skillpack architecture is the right call. We run something similar where each skill bundle carries its own tests and the agent can modify them in-flight. The part people miss: letting the agent update its own tooling is what creates the compounding effect. Static skill...",
     "posted_at": "2026-05-19T12:18:45",
-    "concept": "self-improving skills (autoresearch pattern)",
+    "concept": "Forward Deployed Engineers — the durable AI-era role",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2
@@ -22784,7 +23035,7 @@
     "enriched": true,
     "content": "I find it funny when anyone feels confident they've figured out agentic programming. I've worked on OpenCode since last May and still have days where I'm not sure any of this is a good idea. I land on 'these models are an incredible tool' but it's confusing. I miss the mundane coding tasks; replacing hours with minutes of waiting on an agent is worth being excited about despite mixed emotions. There's a distance that can creep in between you and the code.",
     "posted_at": "2026-02-19T16:43:27",
-    "concept": "Claude skills craft",
+    "concept": "founder philosophy & life-design essays",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
