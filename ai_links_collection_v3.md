@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-10-26T15:54:52Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-10-27T18:28:50Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-10-22** — [Matt Pocock](https://x.com/mattpocockuk/status/2113196247964074322) — *now • Skills & MCP • 64.5K views • v1 enriched*  
