@@ -1,5 +1,225 @@
 [
   {
+    "date": "2026-10-28",
+    "author": "Mo Elgaraihy",
+    "handle": "@engmoelgaraihy",
+    "subject": "Post by Mo Elgaraihy on X",
+    "url": "https://x.com/engmoelgaraihy/status/2115278200313901488",
+    "summary": "Engagement-bait post claiming Anthropic released a free guide/workshop for building a 'no employees' company run entirely by autonomous cloud agents; no link to the actual material. A reply pushes back that agents still need humans to set boundaries and handle exceptions. Possibly a pointer to Anthropic agent-workflow content, but unverified.",
+    "topics": [
+      "questionable",
+      "adjacent",
+      "solo-operator",
+      "agent-design"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Anthropic releases for free the complete guide to establishing a 'No Employees' company — autonomous, continuously running cloud agents (hype post; replies push back on human oversight).",
+    "posted_at": "2026-10-28T03:03:17",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-28",
+    "author": "Allie the Icon",
+    "handle": "@allietheicon",
+    "subject": "Post by Allie the Icon on X",
+    "url": "https://x.com/allietheicon/status/2115206109271331044",
+    "summary": "Allie the Icon describes a 'line-by-line search' pattern (from a Jev cookbook): put an entire document in state and ask a question per line/paragraph, using nulls for a single dominant answer or scores for all relevant passages. Points to a cookbook for trying it in your own project; a reply notes edge cases where exceptions drop out.",
+    "topics": [
+      "prompting",
+      "dev-practices",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Line-by-line search pattern: put a whole document in state, ask a question per line; use nulls for one dominant answer, scores to find all relevant passages.",
+    "posted_at": "2026-10-27T22:16:49",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-28",
+    "author": "Alex Tamkin",
+    "handle": "@alextamkin",
+    "subject": "Post by Alex Tamkin on X",
+    "url": "https://x.com/alextamkin/status/2115190541688398184",
+    "summary": "Anthropic research thread (Alex Tamkin): randomized trial of 50 professional data analysts using Claude Code to advise a fictional farming co-op on four decisions; analysts went with the agent's randomly-assigned lean 86% of the time vs 50% expected. Studies how delegating to agents shapes experts' judgment calls; full post linked via t.co.",
+    "topics": [
+      "research",
+      "agent-design",
+      "claude-code",
+      "management"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "New Anthropic research: How AI agents shape experts' judgment calls — randomized trial with 50 data analysts using Claude Code; analysts followed the agent's lean 86% of the time.",
+    "posted_at": "2026-10-27T21:14:58",
+    "concept": "managing agent teams",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-28",
+    "author": "Yarchi",
+    "handle": "@undefinedki",
+    "subject": "Post by Yarchi on X",
+    "url": "https://x.com/undefinedki/status/2115181735340384528",
+    "summary": "Yarchi built a skill that makes AI explain topics in ASD-STE100 (the simplified English of airplane manuals), inspired by a Karpathy post. The skill picks among four formats — plain text, engineering-style diagram, interactive web page, video — and saves results to a folder; one-command install.",
+    "topics": [
+      "skills-mcp",
+      "prompting",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Skill that makes AI explain anything in ASD-STE100 simple English plus diagram/web page/video formats, based on a Karpathy post; one-command install.",
+    "posted_at": "2026-10-27T20:39:58",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-28",
+    "author": "Noctus",
+    "handle": "@noctus91",
+    "subject": "Post by Noctus on X",
+    "url": "https://x.com/noctus91/status/2115134294276571501",
+    "summary": "Noctus marvels that Liquid AI's 1.7B model reportedly beats models 2-5x larger on phones and laptops (vs Gemma and Qwen); a reply says earlier LFM models were unusably bad but bookmarked to test. Small on-device model benchmarking claim, unverified.",
+    "topics": [
+      "industry",
+      "ai-general",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Liquid AI 1.7B model reportedly beating Gemma/Qwen models 2-5x its size on phones and laptops.",
+    "posted_at": "2026-10-27T17:31:27",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-28",
+    "author": "Tony",
+    "handle": "@tonycueva",
+    "subject": "Post by Tony on X",
+    "url": "https://x.com/tonycueva/status/2115089591824744957",
+    "summary": "Tony's 'Build Your Eval Harness' (Part 2 of an evals and tracing guide for engineers, QAs and PMs): after a first eval works, an eval harness re-asks every test question after each change and reports what got fixed vs broke. Anecdote: a shoe-store support bot passed only 33 of 60 live-traffic runs even though five test questions passed.",
+    "topics": [
+      "dev-practices",
+      "agent-design",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "75K",
+    "notes": "",
+    "enriched": true,
+    "content": "Build Your Eval Harness — Part 2 of evals and tracing guide: re-run every test question after each prompt/code change to see what got fixed and what broke.",
+    "posted_at": "2026-10-27T14:33:49",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-28",
+    "author": "Ryan Hart",
+    "handle": "@thisdudelikesai",
+    "subject": "Post by Ryan Hart on X",
+    "url": "https://x.com/thisdudelikesai/status/2115010135588589932",
+    "summary": "Ryan Hart on Alibaba's open-sourced 'Open Code Review' (link via t.co): an AI code reviewer used internally for two years, claimed to use 9x fewer tokens than Claude Code; line-pinned diff comments, built-in rules (null pointers, thread safety, XSS, SQLi), full-file/codebase context, plugs into Claude Code, Codex, Cursor, Kimi Code, OpenCode, runs in GitHub Actions/GitLab CI. Hype framing; the token claim is 'reportedly'.",
+    "topics": [
+      "dev-practices",
+      "claude-code",
+      "industry",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Alibaba open-sourced Open Code Review — AI PR reviewer, reportedly 9x fewer tokens than Claude Code; integrates with Claude Code/Codex/Cursor and CI.",
+    "posted_at": "2026-10-27T09:18:05",
+    "concept": "Claude Code setup & usage",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-28",
+    "author": "m4lka",
+    "handle": "@m4lkxx",
+    "subject": "Post by m4lka on X",
+    "url": "https://x.com/m4lkxx/status/2114338456750997922",
+    "summary": "m4lka's long article 'Harness, Loops, Graphs: What Each Layer Fixes and What It Breaks' — a seven-level ladder where each layer (harness, loop, graph) exists because the one below fails predictably, run through one example of an agent fixing a bug report and opening a PR. Frames 'autonomous' setups as a human quietly acting as the loop.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "371K",
+    "notes": "",
+    "enriched": true,
+    "content": "Harness, Loops, Graphs: a 7-level ladder where each agent layer fixes the failure of the one below, illustrated with a bug-fix-to-PR example.",
+    "posted_at": "2026-10-25T12:49:05",
+    "concept": "agent harness engineering",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-10-25",
     "author": "How To Prompt",
     "handle": "@howtoprompt__",
@@ -1961,7 +2181,7 @@
     "links": [
       "https://github.com/supermemoryai/company-brain"
     ],
-    "concept": "agent harness engineering",
+    "concept": "prediction-market & crypto trading bots",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -3641,7 +3861,7 @@
     "enriched": true,
     "content": "Akshay 🚀 @akshay_pachaar\nThe easiest way to run your agent harnesses using local models:\n\nWhether you're using Claude Code, Codex, OpenCode, or Pi, the local setup itself isn't really the hard part.\n\nThe harder problem is figuring out which local model your machine can actually handle well.\n\nYou have to think about RAM, model size, quantization, context length, KV cache, speed, accuracy, and a bunch of other trade-offs before you even start.\n\nMagnitude is an open-source solution that removes all of that guesswork for you.\n\nIt profiles your machine, benchmarks what it can realistically run, recommends the best models for your hardware, and then lets you connect them to your preferred agent harness.\n\nThe entire setup takes just two commands.\n\nIn this video, I walk through the full process from hardware profiling to running a harness on a local model.\n\nChapters:\n00:00 Intro\n00:17 What Magnitude is\n00:45 Setup in two commands",
     "posted_at": "2026-09-15T13:47:33",
-    "concept": "agent harness engineering",
+    "concept": "applied decision-model routing — gating agents with Jev",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2
@@ -7869,7 +8089,7 @@
     "enriched": true,
     "content": "On Making — by Brian \"Beej Jorgensen\" Hall (beej.us), 2026-03-12.\n\nTLDR: I gain a lot of fulfillment by making things. I don't consider things built by others at my request to be made by me, and are therefore much less fulfilling. And then I feel sad.\n\nPerspective: Gen-X hacker who cut his teeth in the 80s microcomputer era; BS and MS in CS; 20 years industry experience (Hewlett-Packard, startups, cofounder, Activision); CS instructor for 9 years, now at Oregon State University-Cascades; 65% Doom on the AI-Utopia/Doom scale; a Claude Code user sometimes; codes by hand sometimes.\n\nThe essay opens with an \"interlude\" — a sci-fi excerpt (The Vorrkai Interval), a woodcut-in-pastels painting (Mirrors of the Machine), a rebuilt cedar front deck, and a Rust TUI roguelike — presenting the author as a \"prolific polymath,\" then reveals all of it (except the deck, built by paid craftsmen) was AI-generated.\n\nI Am Uncomfortable: The author initiated all that creation but doesn't feel he *made* any of it. He contrasts people who say \"I put in a new front deck\" (when contractors did the work) with his own \"I had a new front deck put in.\" When Claude builds code for him he says \"I had this code built for me\" and Unlicenses it rather than MIT-licensing. As a manager he'd say \"my team built this\"; as a manager of LLMs, \"my Agents built this.\" Completing projects is great, but having others complete projects he initiated is far less fulfilling. It's not just the loss of craft and problem-solving — it's the loss of *making*.\n\nWhat Did I Make Recently? His wife wanted a no-frills Spanish flash-card system reading words from a spreadsheet. He wrote it by hand (JavaScript/CSS/HTML, ~177 lines), using Claude only to learn basics (the Google Sheets CSV endpoint) but generating no code. It took ~50x longer than Claude would have taken, but he can put his name on it and be proud — something he's incapable of feeling for anything Claude writes.\n\nThe Art and Craft of Prompting: He grants prompting requires real human skill — vision, judgment, communication, prompting skill; not all prompts or users are equally effective. But the skill is in effectively *asking someone to make something for you* (quoting Eisenhower on leadership). Prompting for software isn't the same as making the software.\n\nCompilers, Smartypants — turtles all the way down? He wrote C, not machine code; the compiler wrote that, non-deterministically (Clang vs GCC differ), yet he feels he wrote the program. He even has Claude act as a C compiler and emit working x86_64 assembly for a recursive Fibonacci — and still feels he \"wrote that program\" because assembly→machine-code is strict, mathematically-precise translation (like a hammer driving a nail). The line hinges on *making* versus *asking to be made*. Compilers/assemblers/hammers feel like tools; LLMs feel human — you ask them in imprecise human language and the relationship is manager-report rather than colleague-with-a-tool. Peering into the gray area makes him more confident that telling AI to make something *is* an act of creation — but he still can't say he \"hammered\" a nail an AI-powered hammer drove for him, and that difference matters to him.\n\nThings he does (feels he made): write and run C code; use a hammer to drive nails; use an assembler. Things he asks others to do at his command: write software; build a deck; paint a picture.\n\nCloses with Deep Thought from The Hitchhiker's Guide to the Galaxy, and a post-script listing his \"actual contributions\" — the prompts behind the sci-fi, the painting, the roguelike, and \"Please replace my front deck.\" Em dashes deliberate (Vim digraph ^K-M).",
     "source": "bookmark",
-    "concept": "Anthropic Skilljar — free AI academy & courses",
+    "concept": "founder philosophy & life-design essays",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -9503,7 +9723,7 @@
     "enriched": true,
     "content": "Dhilip Subramanian @sdhilip\nMy Claude Code setup used to be 3 skills. Now it's 7. Each one earned its spot.\ndata engineering (@AnthropicAI) → dbt and Airflow skills that slot into data pipeline work.\ngstack (@garrytan) → Turns Claude Code into a virtual team that questions what you're building before code starts.\ngrill me (@mattpocockuk) → Asks sharp questions first, so Claude builds what you actually meant.\nsuperpowers (obra) → Forces spec, plan, then test-driven development. Solid code, not vibe-coded slop.\nimpeccable (@pbakaus) → One command to audit and polish a dashboard or UI.\nlast30days (@mvanhorn) → Finds what's working now across Reddit, X, YouTube, HN.\nprinting press (@mvanhorn @trevin) → Turns any API or website into a clean, token-light CLI.\nStart small. Add one only when you hit a job your current skills can't do.\nNext: compound engineering (@trevin).",
     "posted_at": "2026-07-01T15:00:03",
-    "concept": "Claude Code setup & usage",
+    "concept": "context economy — routing tables beat big context",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 3
@@ -10674,7 +10894,7 @@
     "enriched": true,
     "content": "Alibaba open-sourced its internal AI code reviewer (open-code-review), running their codebase for 2 years; battle-tested by 20,000+ engineers, 1M+ reviews, Apache-2.0, one command to install. Not yet another LLM wrapper. Generic-agent pain: skips files on big changesets, line numbers drift, quality changes with prompt tweaks. Alibaba's fix: don't let the LLM do everything. Deterministic engineering handles file selection, smart bundling, rule matching, comment positioning; the agent handles context reading, codebase search, deep reasoning. Result: ~1/5 token cost, precise line-level comments that don't drift, stable on massive changesets.",
     "posted_at": "2026-06-11T05:48:05",
-    "concept": "persistent always-on agents — bot mode & agent desktops",
+    "concept": "context economy — routing tables beat big context",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -11010,7 +11230,7 @@
     "links": [
       "https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial"
     ],
-    "concept": "Claude Code setup & usage",
+    "concept": "Anthropic Skilljar — free AI academy & courses",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -17291,7 +17511,7 @@
     "links": [
       "https://github.com/codejunkie99/agentic-stack"
     ],
-    "concept": "agents as constrained software — making bad shapes unexpressible",
+    "concept": "self-improving skills (autoresearch pattern)",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2
