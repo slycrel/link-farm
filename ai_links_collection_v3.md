@@ -6,19 +6,19 @@
 ---
 ## Morning view
 
-*Generated 2026-10-29T15:49:26Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-10-30T15:37:16Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-10-28** — [Ryan Hart](https://x.com/thisdudelikesai/status/2115010135588589932) — *now • Dev Practices • v1 enriched*  
   Ryan Hart on Alibaba's open-sourced 'Open Code Review' (link via t.co): an AI code reviewer used internally for two years, claimed to use 9x fewer tokens than Claude Code; line-pinned diff comments, built-in rules (null pointers, thread safety, XSS, SQLi), full-file/codebase context, plugs into Claude Code, Codex, Cursor, Kimi Code, OpenCode, runs in GitHub Actions/GitLab CI. Hype framing; the token claim is 'reportedly'.
-- **2026-10-22** — [Matt Pocock](https://x.com/mattpocockuk/status/2113196247964074322) — *now • Skills & MCP • 64.5K views • v1 enriched*  
-  Matt Pocock's /software-factory skill (github PR #1316 in his skills repo) paired with /grill-me: an interview-style prompt that helps you decide whether a software factory suits your team and brainstorm the infrastructure. Pairs naturally with Josh Rosen's factory-debate article.
-- **2026-10-22** — [Arvid Kahl](https://x.com/arvidkahl/status/2113090822115889410) — *now • Dev Practices • 26.6K views • v1 enriched*  
-  Arvid Kahl endorses Proof Driven Development: GitHub Next / Microsoft Research's PDD Kit turns a plan into a formal spec and proves agent-written code satisfies it for every input, as an answer to cheap, rarely-reviewed agent-written tests. Flagged 'read today'.
-- **2026-10-22** — [Claude](https://x.com/claudeai/status/2112962248218148878) — *now • Claude Code • 57K views • v1 enriched*  
-  Anthropic's @claudeai announces Claude Security continuous scanning (public beta, Claude Enterprise): one-time repo connection, deep first scan then re-scans on change, multi-provider repos, findings via API and MCP connector, plus $25K/month credits for eligible orgs through Dec 31, 2026.
-- **2026-10-22** — [Josh Rosen](https://x.com/josharosen/status/2112902388302467493) — *now • Agent Design • 20.8K views • v1 enriched*  
-  Josh Rosen's article weighing four software-factory approaches — build (Temporal/Modal + Claude Code), buy (Warp, Factory, Port), fork (Open SWE), delegate (always-on agent) — across intake, coordination, verification and self-improvement; argues delegation loses measurability and proposes checkpoints (ThruWire). Useful framing for agent-orchestration decisions.
+- **2026-10-28** — [Allie the Icon](https://x.com/allietheicon/status/2115206109271331044) — *near-term • Prompting • v1 enriched*  
+  Allie the Icon describes a 'line-by-line search' pattern (from a Jev cookbook): put an entire document in state and ask a question per line/paragraph, using nulls for a single dominant answer or scores for all relevant passages. Points to a cookbook for trying it in your own project; a reply notes edge cases where exceptions drop out.
+- **2026-10-28** — [Alex Tamkin](https://x.com/alextamkin/status/2115190541688398184) — *near-term • Research • v1 enriched*  
+  Anthropic research thread (Alex Tamkin): randomized trial of 50 professional data analysts using Claude Code to advise a fictional farming co-op on four decisions; analysts went with the agent's randomly-assigned lean 86% of the time vs 50% expected. Studies how delegating to agents shapes experts' judgment calls; full post linked via t.co.
+- **2026-10-28** — [Yarchi](https://x.com/undefinedki/status/2115181735340384528) — *near-term • Skills & MCP • v1 enriched*  
+  Yarchi built a skill that makes AI explain topics in ASD-STE100 (the simplified English of airplane manuals), inspired by a Karpathy post. The skill picks among four formats — plain text, engineering-style diagram, interactive web page, video — and saves results to a folder; one-command install.
+- **2026-10-28** — [Tony](https://x.com/tonycueva/status/2115089591824744957) — *near-term • Dev Practices • 75K views • v1 enriched*  
+  Tony's 'Build Your Eval Harness' (Part 2 of an evals and tracing guide for engineers, QAs and PMs): after a first eval works, an eval harness re-asks every test question after each change and reports what got fixed vs broke. Anecdote: a shoe-store support bot passed only 33 of 60 live-traffic runs even though five test questions passed.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
