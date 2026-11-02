@@ -1,5 +1,118 @@
 [
   {
+    "date": "2026-10-30",
+    "author": "hayato",
+    "handle": "@hayatomaruu",
+    "subject": "Post by hayato on X",
+    "url": "https://x.com/hayatomaruu/status/2115937640730022139",
+    "summary": "Thread (attributed to an unnamed Anthropic engineer, hype-packaged with 'save this' framing) laying out a self-improving eval loop: target ~50% pass rate, mine failed transcripts for new eval cases, score answer plus path, rerun on each new model, gate deploys on evals in CI. The method is practical for agent evals even though the sourcing is unverified; it also quotes beamnxw's article on building a harness around an AI employee.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "26K",
+    "notes": "",
+    "enriched": true,
+    "content": "Claims an Anthropic senior engineer says building /graphs and /loops without a self-improving eval agent is the biggest AI mistake. Five-step eval method: 100 real prompts tuned to ~50% pass rate, feed failed transcripts to the model to grow the eval set, score right answer AND right path, rerun on new models (a claimed +9% was 6% model dodging a bug), plug evals into CI as a deploy gate. Quotes an article by @beamnxw about an AI employee building a studio dashboard.",
+    "posted_at": "2026-10-29T22:43:40",
+    "concept": "Anthropic Skilljar — free AI academy & courses",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-30",
+    "author": "Onur Solmaz",
+    "handle": "@onusoz",
+    "subject": "Post by Onur Solmaz on X",
+    "url": "https://x.com/onusoz/status/2115868447834042415",
+    "summary": "Onur Solmaz open-sourced Switch (github.com/osolmaz/switch), a harness framework for decision models that programmatically generates finite choice sets so the model only picks among them, rather than emitting tool calls. Aimed at eval judging and narrow looping agents; early results show the tested decision model lags GPT 6.1 Sol as a judge.",
+    "topics": [
+      "agent-design",
+      "research",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "106.9K",
+    "notes": "",
+    "enriched": true,
+    "content": "Introduces Switch, a harness framework for decision models: because a decision model cannot emit tool calls, Switch generates a finite set of choices programmatically from state and the model picks among them. Domains include chess and a rubric judge for evals (e.g. navigating a 200-page document set by image). Notes the model he tested is weak at chess and as a judge versus GPT 6.1 Sol, but sees promise for fine-tuning open models in such a harness for cheaper specialised agent loops.\n\ngithub.com/osolmaz/switch",
+    "posted_at": "2026-10-29T18:08:43",
+    "links": [
+      "https://github.com/osolmaz/switch"
+    ],
+    "concept": "applied decision-model routing — gating agents with Jev",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-30",
+    "author": "Joseph Cox",
+    "handle": "@josephfcox",
+    "subject": "Post by Joseph Cox on X",
+    "url": "https://x.com/josephfcox/status/2115868430897385497",
+    "summary": "Joseph Cox (404 Media) reports on Proton's CTO's internal AI manifesto (404media.co), quoting a line about winning on perception over truth when communicating Proton Mail's encryption. Useful as a window into how a privacy-focused company's leadership is steering an AI pivot and its internal messaging.",
+    "topics": [
+      "industry",
+      "management"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "109K",
+    "notes": "",
+    "enriched": true,
+    "content": "Joseph Cox on Proton CTO Andy Yen's AI manifesto (obtained copies); Yen on communicating about Proton Mail encryption: \"Perception is more important than truth, the truth doesn't matter if you don't win on perception.\" Links 404media.co article \"Manifestos, fear, and loser thinking inside Proton's AI reckoning\".",
+    "posted_at": "2026-10-29T18:08:39",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-10-30",
+    "author": "Alexander Yue",
+    "handle": "@Alezander9",
+    "subject": "Post by Alexander Yue on X (compare with existing solution)",
+    "url": "https://x.com/alezander9/status/2115842962521509968",
+    "summary": "Alexander Yue argues context compaction in Claude Code/Codex is a mistake: on a ~400k-token Opus 5.5 session it costs $0.17-$1.99 and loses exact details. His open-source (MIT) Mainplane starts a fresh session that retrieves exact lines from the full prior session file, resuming in 15s for $0.10. Tagged 'compare with existing solution' in the subject line.",
+    "topics": [
+      "agent-design",
+      "claude-code",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "550K",
+    "notes": "flag: compare with existing solution",
+    "enriched": true,
+    "content": "\"Compaction is a mistake.\" Agent tools like Codex and Claude Code compact by re-prefilling the session and summarising. Measured on a ~400k-token Opus 5.5 session: 38s/$1.99 with expired cache, 29s/$0.17 cached, and summaries are lossy. His Mainplane instead keeps the full session as a file and starts a new session told to retrieve key context from it: 15s/$0.10, no cache dependence, nothing paraphrased. Framed as the bitter lesson applied to agent memory. Mainplane is open source (MIT).\n\nEarlier post: \"Context compaction was a mistake\" - let the LLM manage its own context.",
+    "posted_at": "2026-10-29T16:27:27",
+    "concept": "agent identity files (SOUL.md, CLAUDE.md, persona scaffolds)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-10-28",
     "author": "Mo Elgaraihy",
     "handle": "@engmoelgaraihy",
@@ -3861,7 +3974,7 @@
     "enriched": true,
     "content": "Akshay 🚀 @akshay_pachaar\nThe easiest way to run your agent harnesses using local models:\n\nWhether you're using Claude Code, Codex, OpenCode, or Pi, the local setup itself isn't really the hard part.\n\nThe harder problem is figuring out which local model your machine can actually handle well.\n\nYou have to think about RAM, model size, quantization, context length, KV cache, speed, accuracy, and a bunch of other trade-offs before you even start.\n\nMagnitude is an open-source solution that removes all of that guesswork for you.\n\nIt profiles your machine, benchmarks what it can realistically run, recommends the best models for your hardware, and then lets you connect them to your preferred agent harness.\n\nThe entire setup takes just two commands.\n\nIn this video, I walk through the full process from hardware profiling to running a harness on a local model.\n\nChapters:\n00:00 Intro\n00:17 What Magnitude is\n00:45 Setup in two commands",
     "posted_at": "2026-09-15T13:47:33",
-    "concept": "applied decision-model routing — gating agents with Jev",
+    "concept": "agent harness engineering",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2
@@ -7513,7 +7626,7 @@
     "enriched": true,
     "content": "Andrew Ng showed that an older GPT model inside an agentic workflow outperforms a newer model asked to answer once. On HumanEval: gpt-3.5 zero-shot 48.1%, gpt-4 zero-shot 67.0%, gpt-3.5 in an agentic workflow up to 95.1%. Four patterns: reflection, tool use, planning, multi-agent collaboration. None require a frontier model.",
     "posted_at": "2026-07-28T08:21:49",
-    "concept": "applied decision-model routing — gating agents with Jev",
+    "concept": "agentic code review at production scale",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -8699,7 +8812,7 @@
     "enriched": true,
     "content": "I Brutally Modified My Front-End Design Skill — Now My UIs Don't Look Like AI Crap. A 'Frontend Design Skill': create distinctive, production-grade frontend interfaces that feel authored by a strong human designer, not averaged from templates. Success criteria: distinct visual identity with signature element; production-grade functionality with complete states and responsive behavior; accessibility by default (WCAG AA intent); token-driven design system rather than one-off styling; zero reliance on recognizable AI tropes. Includes a before-writing-code context-gathering routine (purpose, constraints, brand anchors).",
     "posted_at": "2026-07-14T03:51:45",
-    "concept": "self-improving skills (autoresearch pattern)",
+    "concept": "Claude skills craft",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2
@@ -10335,7 +10448,7 @@
     "enriched": true,
     "content": "Andrew Ng: 100% of my tasks are now done by AI agents; loops are next; in 3-6 months everyone will use self-improving loops, no more prompting. A 30-min talk on building self-improving agentic systems from scratch.\n\nThe Self-Improving Loop: a 300-agent swarm on Kimi K2.6, verified by Opus 4.8. A free open-source model running 300 parallel agents across 4,000 coordinated steps from a single prompt, scoring higher on real research tasks than pricier models.",
     "posted_at": "2026-06-21T18:29:25",
-    "concept": "persistent always-on agents — bot mode & agent desktops",
+    "concept": "loop engineering",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2
@@ -11230,7 +11343,7 @@
     "links": [
       "https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial"
     ],
-    "concept": "Anthropic Skilljar — free AI academy & courses",
+    "concept": "Claude Code setup & usage",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -16949,7 +17062,7 @@
     "links": [
       "https://github.com/Trampoline-AI/predict-rlm"
     ],
-    "concept": "vector / hybrid databases as agent-memory infrastructure",
+    "concept": "agents-as-judges-of-agents — bossman supervisor / self-verification",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -17511,7 +17624,7 @@
     "links": [
       "https://github.com/codejunkie99/agentic-stack"
     ],
-    "concept": "self-improving skills (autoresearch pattern)",
+    "concept": "agents as constrained software — making bad shapes unexpressible",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2
