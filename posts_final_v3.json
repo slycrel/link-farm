@@ -1,6 +1,35 @@
 [
   {
     "date": "2026-11-03",
+    "author": "Avid",
+    "handle": "@Av1dlive",
+    "subject": "Post by Avid on X",
+    "url": "https://x.com/av1dlive/status/2117660576575066412",
+    "summary": "Avid (@Av1dlive) advises spending a day teaching your coding agent system design before it writes any code, and shares '7 rules + the 12-step prompt' as four image slides (image text not captured). A top reply from Adam Wright adds that a per-agent 'never touch' list matters more than the rules. Hook-style packaging, but the idea (design-first prompting for agents) is on-theme.",
+    "topics": [
+      "agent-design",
+      "prompting",
+      "dev-practices",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "10.8K",
+    "notes": "",
+    "enriched": true,
+    "content": "if i were you... i'd spend a day teaching your agent system design before it writes a single line\n\nhere's everything you need: 7 rules + the 12-step prompt\n\n[4 attached images carry the 7 rules and the 12-step prompt; image text not transcribed]\n\nAdam Wright (reply): the thing that's helped me most running a bunch of agents: one job each, plus a short written list of what it must never touch. that never list has mattered more for me than the rules. do your 7 rules cover what the agent shouldn't do?",
+    "posted_at": "2026-11-03T09:50:00",
+    "concept": "agent identity files (SOUL.md, CLAUDE.md, persona scaffolds)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-03",
     "author": "beamnxw ./",
     "handle": "@beamnxw",
     "subject": "Post by beamnxw on X",
@@ -9866,7 +9895,7 @@
     "enriched": true,
     "content": "Dhilip Subramanian @sdhilip\nMy Claude Code setup used to be 3 skills. Now it's 7. Each one earned its spot.\ndata engineering (@AnthropicAI) → dbt and Airflow skills that slot into data pipeline work.\ngstack (@garrytan) → Turns Claude Code into a virtual team that questions what you're building before code starts.\ngrill me (@mattpocockuk) → Asks sharp questions first, so Claude builds what you actually meant.\nsuperpowers (obra) → Forces spec, plan, then test-driven development. Solid code, not vibe-coded slop.\nimpeccable (@pbakaus) → One command to audit and polish a dashboard or UI.\nlast30days (@mvanhorn) → Finds what's working now across Reddit, X, YouTube, HN.\nprinting press (@mvanhorn @trevin) → Turns any API or website into a clean, token-light CLI.\nStart small. Add one only when you hit a job your current skills can't do.\nNext: compound engineering (@trevin).",
     "posted_at": "2026-07-01T15:00:03",
-    "concept": "context economy — routing tables beat big context",
+    "concept": "Claude Code setup & usage",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 3
