@@ -1,5 +1,35 @@
 [
   {
+    "date": "2026-11-03",
+    "author": "beamnxw ./",
+    "handle": "@beamnxw",
+    "subject": "Post by beamnxw on X",
+    "url": "https://x.com/beamnxw/status/2107522996046905797",
+    "summary": "Long X Article (2.7M views) giving a seven-layer reusable Claude Code harness for Opus 5.5 long tasks: CLAUDE.md facts, a SKILL.md procedure, MCP source access, permission/hook action rules, an evidence-reviewer subagent, per-job effort settings, and a /goal completion condition, plus a progress.md handoff for resuming across sessions. Packaged as 'save this / follow for alpha' but grounded in documented Claude Code features and Anthropic docs, with copy-paste snippets.",
+    "topics": [
+      "claude-code",
+      "agent-design",
+      "dev-practices",
+      "skills-mcp",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "2.7M",
+    "notes": "",
+    "enriched": true,
+    "content": "Make Opus 5.5 Finish Long Tasks: A Reusable Harness Engineering Setup (X Article, 2.7M views)\n\nYour next Opus 5.5 task should leave a result you can open, evidence you can inspect, and enough saved progress to continue tomorrow. A harness coordinates the instructions, tools, permissions, state, and checks around the model. Seven layers form a practical setup using documented Claude Code features, illustrated with a document workflow (sources/, drafts/, published/):\n1. Workspace facts: keep root CLAUDE.md to durable cross-task info (output locations, source requirements, conventions); temporary facts go with the task; save decisions and next action in progress.md; path-scoped .claude/rules/; @path imports still load at session start; use /memory.\n2. Procedure as a skill: .claude/skills/write-draft/SKILL.md with $ARGUMENTS and observable steps (read sources, outline, draft, reviewer check, claim table, update progress, return paths); keep publication approval separate from draft prep.\n3. Source access via MCP (example: claude mcp add --transport http notion), verify with /mcp, retrieve one known page first, preserve doc id and failure reason, disable unused servers.\n4. Action rules in the execution layer: permissions deny rules (Read(.env), Edit(published/**)), PreToolUse hooks for argument-dependent decisions; file-tool rules don't bind arbitrary Python/Node processes, OS sandboxing does; inspect destination before retrying an external write.\n5. Reviewer subagent (.claude/agents/evidence-reviewer.md, read/search tools, effort high) returns a table: claim, verdict (verified/incorrect/unresolved), source URL, required correction.\n6. Reasoning effort per job: claude --model claude-opus-5-5 --effort medium for the main session, high for the reviewer; check /context, /agents, /permissions before the first run.\n7. Tell the run what it must prove: a /goal with completion criteria (drafts/article.md, drafts/checks.md exist, incorrect claims corrected, unresolved marked, paths and results shown in conversation, stop after 12 turns); /rewind for tracked-file recovery.\nThen run the whole workflow once with a sources/task.md brief, test recovery in a fresh session from a progress.md note (Task/Outputs/Completed/Decisions/Open issues/Next action), and measure on accepted work with /usage and /context rather than trusting the 60% token-reduction figure from Anthropic's early-tester report. Closes with 'Save this so you don't lose it. Follow @beamnxw for more alpha :)' plus Substack and Telegram links.\n\nAnthropic docs cited throughout: Claude Code features/skills/memory/hooks/permissions/subagents/goal/checkpoints, context engineering, writing effective tools, agent evals, long-running agent harnesses, and the Opus 5.5 announcement.",
+    "posted_at": "2026-10-06T11:26:00",
+    "concept": "Claude Code setup & usage",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-10-30",
     "author": "hayato",
     "handle": "@hayatomaruu",

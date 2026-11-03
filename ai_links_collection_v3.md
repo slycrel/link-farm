@@ -1,24 +1,24 @@
 # AI Links Collection
-**Total Posts**: 935  
-**Date Range**: 2024-06-11 – 2026-10-30  
-**Enriched**: 935/935 (100%)
+**Total Posts**: 936  
+**Date Range**: 2024-06-11 – 2026-11-03  
+**Enriched**: 936/936 (100%)
 
 ---
 ## Morning view
 
-*Generated 2026-11-03T16:12:49Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-11-03T21:01:46Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-10-30** — [Alexander Yue](https://x.com/alezander9/status/2115842962521509968) — *now • Agent Design • 550K views • v1 enriched*  
   Alexander Yue argues context compaction in Claude Code/Codex is a mistake: on a ~400k-token Opus 5.5 session it costs $0.17-$1.99 and loses exact details. His open-source (MIT) Mainplane starts a fresh session that retrieves exact lines from the full prior session file, resuming in 15s for $0.10. Tagged 'compare with existing solution' in the subject line.
 - **2026-10-28** — [Ryan Hart](https://x.com/thisdudelikesai/status/2115010135588589932) — *now • Dev Practices • v1 enriched*  
   Ryan Hart on Alibaba's open-sourced 'Open Code Review' (link via t.co): an AI code reviewer used internally for two years, claimed to use 9x fewer tokens than Claude Code; line-pinned diff comments, built-in rules (null pointers, thread safety, XSS, SQLi), full-file/codebase context, plugs into Claude Code, Codex, Cursor, Kimi Code, OpenCode, runs in GitHub Actions/GitLab CI. Hype framing; the token claim is 'reportedly'.
+- **2026-11-03** — [beamnxw ./](https://x.com/beamnxw/status/2107522996046905797) — *near-term • Claude Code • 2.7M views • v1 enriched*  
+  Long X Article (2.7M views) giving a seven-layer reusable Claude Code harness for Opus 5.5 long tasks: CLAUDE.md facts, a SKILL.md procedure, MCP source access, permission/hook action rules, an evidence-reviewer subagent, per-job effort settings, and a /goal completion condition, plus a progress.md handoff for resuming across sessions. Packaged as 'save this / follow for alpha' but grounded in documented Claude Code features and Anthropic docs, with copy-paste snippets.
 - **2026-10-30** — [hayato](https://x.com/hayatomaruu/status/2115937640730022139) — *near-term • Agent Design • 26K views • v1 enriched*  
   Thread (attributed to an unnamed Anthropic engineer, hype-packaged with 'save this' framing) laying out a self-improving eval loop: target ~50% pass rate, mine failed transcripts for new eval cases, score answer plus path, rerun on each new model, gate deploys on evals in CI. The method is practical for agent evals even though the sourcing is unverified; it also quotes beamnxw's article on building a harness around an AI employee.
 - **2026-10-30** — [Onur Solmaz](https://x.com/onusoz/status/2115868447834042415) — *near-term • Agent Design • 106.9K views • v1 enriched*  
   Onur Solmaz open-sourced Switch (github.com/osolmaz/switch), a harness framework for decision models that programmatically generates finite choice sets so the model only picks among them, rather than emitting tool calls. Aimed at eval judging and narrow looping agents; early results show the tested decision model lags GPT 6.1 Sol as a judge.
-- **2026-10-28** — [Allie the Icon](https://x.com/allietheicon/status/2115206109271331044) — *near-term • Prompting • v1 enriched*  
-  Allie the Icon describes a 'line-by-line search' pattern (from a Jev cookbook): put an entire document in state and ask a question per line/paragraph, using nulls for a single dominant answer or scores for all relevant passages. Points to a cookbook for trying it in your own project; a reply notes edge cases where exceptions drop out.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
@@ -28,17 +28,17 @@
     - 2026-10-28 — [m4lka](https://x.com/m4lkxx/status/2114338456750997922): m4lka's long article 'Harness, Loops, Graphs: What Each Layer Fixes and What It Breaks' — a seven-level ladder where each layer (harness, lo…
     - 2026-10-24 — [hayato](https://x.com/hayatomaruu/status/2113719510985269442): Hype-framed post (500K views) pointing to a short workshop on building an agent harness from scratch: loops + sandboxed tools, brain/hands s…
 
+- **Claude Code setup & usage** (39 posts, +4 this week)  
+  Claude Code setup guides, cheatsheets, starter packs, and day-to-day usage / steering practices.
+    - 2026-11-03 — [beamnxw ./](https://x.com/beamnxw/status/2107522996046905797): Long X Article (2.7M views) giving a seven-layer reusable Claude Code harness for Opus 5.5 long tasks: CLAUDE.md facts, a SKILL.md procedure…
+    - 2026-10-28 — [Ryan Hart](https://x.com/thisdudelikesai/status/2115010135588589932): Ryan Hart on Alibaba's open-sourced 'Open Code Review' (link via t.co): an AI code reviewer used internally for two years, claimed to use 9x…
+
 - **agents as constrained software — making bad shapes unexpressible** (43 posts, +3 this week)  
   Applying real software-engineering formalism to agent systems so that the wrong design becomes impossible to write rather than merely discouraged. Instances: agents as plain Python objects where methods are actions, fields are state, docstrings are prompts and type annotations are contracts; an orchestration VM that turns agent coordination into ordinary software engineering; and the argument that codebases surviving past month six do so because the architecture forbids the bad shape, not because the team stayed disciplined.
 
 [latent] Proposed by a blinded latent pass (run 252) from 3 posts read without their existing topic or concept tags.
     - 2026-10-24 — [Xudong Han](https://x.com/xudong07452910/status/2113800139005460534): Chinese-language post (translated, 575K views) summarizing Anthropic's claude.com article 'Building agents: When to fold subagents into your…
     - 2026-10-22 — [Josh Rosen](https://x.com/josharosen/status/2112902388302467493): Josh Rosen's article weighing four software-factory approaches — build (Temporal/Modal + Claude Code), buy (Warp, Factory, Port), fork (Open…
-
-- **Claude Code setup & usage** (38 posts, +3 this week)  
-  Claude Code setup guides, cheatsheets, starter packs, and day-to-day usage / steering practices.
-    - 2026-10-28 — [Ryan Hart](https://x.com/thisdudelikesai/status/2115010135588589932): Ryan Hart on Alibaba's open-sourced 'Open Code Review' (link via t.co): an AI code reviewer used internally for two years, claimed to use 9x…
-    - 2026-10-24 — [delost](https://x.com/thedelost/status/2114016386896773177): Hype-styled list of 10 GitHub repos of ready-made Claude Code agents/skills/hooks after Agent Skills became an open spec: wshobson/agents (c…
 
 - **dependency risk & supply-chain trust — poisoned packages, compromised CAs, and ripping out what you need** (4 posts, +3 this week)  
   Supply-chain attacks on package registries and trust roots (litellm on PyPI, axios on npm, compromised intermediate CA certs) and the counter-movement they motivate: take fewer dependencies, have an agent extract only the functionality you need ('bacterial code', DeepWiki MCP rip-outs). Seeded provisional 2026-10-21 by hand from reviewer feedback that no dependency/supply-chain concept existed and that the Feb 2026 Karpathy DeepWiki post was mis-homed under local model serving.
@@ -61,23 +61,24 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 597 | 63.9% |
-| claude-code | 225 | 24.1% |
-| dev-practices | 440 | 47.1% |
-| skills-mcp | 215 | 23.0% |
+| agent-design | 598 | 63.9% |
+| claude-code | 226 | 24.1% |
+| dev-practices | 441 | 47.1% |
+| skills-mcp | 216 | 23.1% |
 | prompting | 148 | 15.8% |
 | research | 275 | 29.4% |
 | industry | 158 | 16.9% |
 | management | 147 | 15.7% |
 | adjacent | 53 | 5.7% |
 | solo-operator | 13 | 1.4% |
-| questionable | 160 | 17.1% |
+| questionable | 161 | 17.2% |
 | general | 45 | 4.8% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-11-03 | beamnxw ./ | claude-code | Long X Article (2.7M views) giving a seven-layer reusable Claude Code... |
 | 2026-10-30 | hayato | agent-design | Thread (attributed to an unnamed Anthropic engineer, hype-packaged wit... |
 | 2026-10-30 | Onur Solmaz | agent-design | Onur Solmaz open-sourced Switch (github.com/osolmaz/switch), a harness... |
 | 2026-10-30 | Joseph Cox | industry | Joseph Cox (404 Media) reports on Proton's CTO's internal AI manifesto... |
@@ -127,12 +128,14 @@
 | 2026-10-21 | rody | agent-design | Hype post claiming 'grok bot' plus 'jev' will make more millionaires t... |
 | 2026-10-21 | John Song | adjacent | John Song's engagement-style pitch for a side business: bring local bu... |
 | 2026-10-21 | BasedBiohacker | biohacking | BasedBiohacker's self-reported Q4 nootropic stack, framed with a money... |
-| 2026-10-21 | Mark Ajzenstadt | management | Mark Ajzenstadt shares an 8-step playbook for AI transformation in reg... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (597)
+### Agent Design (598)
+
+- [beamnxw ./](https://x.com/beamnxw/status/2107522996046905797) — 2026-11-03: Long X Article (2.7M views) giving a seven-layer reusable Claude Code harness for Opus 5.5 long tasks: CLAUDE.md facts, a SKILL.md procedure, MCP source access, permission/hook action rules, an evidence-reviewer subagent, per-job effort settings, and a /goal completion condition, plus a progress.md handoff for resuming across sessions. Packaged as 'save this / follow for alpha' but grounded in documented Claude Code features and Anthropic docs, with copy-paste snippets.
+  posted 2026-10-06 · @beamnxw · 2.7M views · concept: Claude Code setup & usage · url: https://x.com/beamnxw/status/2107522996046905797
 
 - [hayato](https://x.com/hayatomaruu/status/2115937640730022139) — 2026-10-30: Thread (attributed to an unnamed Anthropic engineer, hype-packaged with 'save this' framing) laying out a self-improving eval loop: target ~50% pass rate, mine failed transcripts for new eval cases, score answer plus path, rerun on each new model, gate deploys on evals in CI. The method is practical for agent evals even though the sourcing is unverified; it also quotes beamnxw's article on building a harness around an AI employee.
   posted 2026-10-29 · @hayatomaruu · 26K views · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/hayatomaruu/status/2115937640730022139
@@ -1925,7 +1928,10 @@
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
   @curvedinf · url: https://github.com/curvedinf/dir-assistant
 
-### Claude Code (225)
+### Claude Code (226)
+
+- [beamnxw ./](https://x.com/beamnxw/status/2107522996046905797) — 2026-11-03: Long X Article (2.7M views) giving a seven-layer reusable Claude Code harness for Opus 5.5 long tasks: CLAUDE.md facts, a SKILL.md procedure, MCP source access, permission/hook action rules, an evidence-reviewer subagent, per-job effort settings, and a /goal completion condition, plus a progress.md handoff for resuming across sessions. Packaged as 'save this / follow for alpha' but grounded in documented Claude Code features and Anthropic docs, with copy-paste snippets.
+  posted 2026-10-06 · @beamnxw · 2.7M views · concept: Claude Code setup & usage · url: https://x.com/beamnxw/status/2107522996046905797
 
 - [Alexander Yue](https://x.com/alezander9/status/2115842962521509968) — 2026-10-30: Alexander Yue argues context compaction in Claude Code/Codex is a mistake: on a ~400k-token Opus 5.5 session it costs $0.17-$1.99 and loses exact details. His open-source (MIT) Mainplane starts a fresh session that retrieves exact lines from the full prior session file, resuming in 15s for $0.10. Tagged 'compare with existing solution' in the subject line.
   posted 2026-10-29 · @Alezander9 · 550K views · concept: agent identity files (SOUL.md, CLAUDE.md, persona scaffolds) · url: https://x.com/alezander9/status/2115842962521509968
@@ -2602,7 +2608,10 @@
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
   @curvedinf · url: https://github.com/curvedinf/dir-assistant
 
-### Dev Practices (440)
+### Dev Practices (441)
+
+- [beamnxw ./](https://x.com/beamnxw/status/2107522996046905797) — 2026-11-03: Long X Article (2.7M views) giving a seven-layer reusable Claude Code harness for Opus 5.5 long tasks: CLAUDE.md facts, a SKILL.md procedure, MCP source access, permission/hook action rules, an evidence-reviewer subagent, per-job effort settings, and a /goal completion condition, plus a progress.md handoff for resuming across sessions. Packaged as 'save this / follow for alpha' but grounded in documented Claude Code features and Anthropic docs, with copy-paste snippets.
+  posted 2026-10-06 · @beamnxw · 2.7M views · concept: Claude Code setup & usage · url: https://x.com/beamnxw/status/2107522996046905797
 
 - [hayato](https://x.com/hayatomaruu/status/2115937640730022139) — 2026-10-30: Thread (attributed to an unnamed Anthropic engineer, hype-packaged with 'save this' framing) laying out a self-improving eval loop: target ~50% pass rate, mine failed transcripts for new eval cases, score answer plus path, rerun on each new model, gate deploys on evals in CI. The method is practical for agent evals even though the sourcing is unverified; it also quotes beamnxw's article on building a harness around an AI employee.
   posted 2026-10-29 · @hayatomaruu · 26K views · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/hayatomaruu/status/2115937640730022139
@@ -3924,7 +3933,10 @@
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
   @curvedinf · url: https://github.com/curvedinf/dir-assistant
 
-### Skills & MCP (215)
+### Skills & MCP (216)
+
+- [beamnxw ./](https://x.com/beamnxw/status/2107522996046905797) — 2026-11-03: Long X Article (2.7M views) giving a seven-layer reusable Claude Code harness for Opus 5.5 long tasks: CLAUDE.md facts, a SKILL.md procedure, MCP source access, permission/hook action rules, an evidence-reviewer subagent, per-job effort settings, and a /goal completion condition, plus a progress.md handoff for resuming across sessions. Packaged as 'save this / follow for alpha' but grounded in documented Claude Code features and Anthropic docs, with copy-paste snippets.
+  posted 2026-10-06 · @beamnxw · 2.7M views · concept: Claude Code setup & usage · url: https://x.com/beamnxw/status/2107522996046905797
 
 - [Allie the Icon](https://x.com/allietheicon/status/2115206109271331044) — 2026-10-28: Allie the Icon describes a 'line-by-line search' pattern (from a Jev cookbook): put an entire document in state and ask a question per line/paragraph, using nulls for a single dominant answer or scores for all relevant passages. Points to a cookbook for trying it in your own project; a reply notes edge cases where exceptions drop out.
   posted 2026-10-27 · @allietheicon · url: https://x.com/allietheicon/status/2115206109271331044
@@ -6965,7 +6977,10 @@
 - [zostaff](https://x.com/zostaff/status/2033930728044372275) — 2026-03-18: zostaff's clickbait-titled ('How to Quit Your Job in One Day') walkthrough of an autonomous Polymarket trading system built from three agents: Claude (strategist — probability/recommendation/confidence), Codex (engineer — writes and debugs bot code), and OpenClaw (orchestrator — persistent memory, cron, modular skills, Telegram interface that executes trades and logs everything).
   posted 2026-03-17 · @zostaff · 3M views · concept: prediction-market & crypto trading bots · url: https://x.com/zostaff/status/2033930728044372275
 
-### Questionable (160)
+### Questionable (161)
+
+- [beamnxw ./](https://x.com/beamnxw/status/2107522996046905797) — 2026-11-03: Long X Article (2.7M views) giving a seven-layer reusable Claude Code harness for Opus 5.5 long tasks: CLAUDE.md facts, a SKILL.md procedure, MCP source access, permission/hook action rules, an evidence-reviewer subagent, per-job effort settings, and a /goal completion condition, plus a progress.md handoff for resuming across sessions. Packaged as 'save this / follow for alpha' but grounded in documented Claude Code features and Anthropic docs, with copy-paste snippets.
+  posted 2026-10-06 · @beamnxw · 2.7M views · concept: Claude Code setup & usage · url: https://x.com/beamnxw/status/2107522996046905797
 
 - [hayato](https://x.com/hayatomaruu/status/2115937640730022139) — 2026-10-30: Thread (attributed to an unnamed Anthropic engineer, hype-packaged with 'save this' framing) laying out a self-improving eval loop: target ~50% pass rate, mine failed transcripts for new eval cases, score answer plus path, rerun on each new model, gate deploys on evals in CI. The method is practical for agent evals even though the sourcing is unverified; it also quotes beamnxw's article on building a harness around an AI employee.
   posted 2026-10-29 · @hayatomaruu · 26K views · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/hayatomaruu/status/2115937640730022139
@@ -7586,6 +7601,12 @@
 
 ---
 ## Full Chronological List
+
+### Nov 2026
+
+- **2026-11-03** | [beamnxw ./](https://x.com/beamnxw/status/2107522996046905797) | claude-code, agent-design, dev-practices, skills-mcp, questionable
+  Long X Article (2.7M views) giving a seven-layer reusable Claude Code harness for Opus 5.5 long tasks: CLAUDE.md facts, a SKILL.md procedure, MCP source access, permission/hook action rules, an evidence-reviewer subagent, per-job effort settings, and a /goal completion condition, plus a progress.md handoff for resuming across sessions. Packaged as 'save this / follow for alpha' but grounded in documented Claude Code features and Anthropic docs, with copy-paste snippets.
+  posted 2026-10-06 · @beamnxw · 2.7M views · concept: Claude Code setup & usage · url: https://x.com/beamnxw/status/2107522996046905797
 
 ### Oct 2026
 
