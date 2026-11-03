@@ -30,6 +30,37 @@
   },
   {
     "date": "2026-11-03",
+    "author": "Viv",
+    "handle": "@Vtrivedy10",
+    "subject": "Post by Viv on X",
+    "url": "https://x.com/vtrivedy10/status/2117644876854505981",
+    "summary": "Viv (@Vtrivedy10) recommends Max Bittker's RuneScape Bench talk (youtube.com/watch?v=cNm4zyUtWj0, Recurse Center) and shares notes on benchmark design and multi-agent systems: move gradually from raw APIs to higher-level tools so agents reason at the layer you care about, shorten feedback loops, judge evals on difficulty/cost/interestingness, measure cheating/collaboration/exploitation in multi-agent simulations, build tooling to parse massive trajectory dumps, and note that environment design (e.g. scarcity) shapes incentives.",
+    "topics": [
+      "research",
+      "agent-design",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "4K",
+    "notes": "",
+    "enriched": true,
+    "content": "genuinely one of the best AI talks this year. super entertaining, hits 2 of the most important domains in AI today: 1. Good Benchmark Design 2. Multi-Agent systems. Some notes:\n- In environment/harness design, progressively move between raw APIs and higher-level tools so agents can focus on the interesting parts of the task. Don't make the world easy, but make sure agents are reasoning at the layer you care about.\n- Reduce your time to feedback as much as possible so you can iterate quickly on benchmark design.\n- Think about 'good' evals across the axes of difficulty, cost, and interestingness to humans.\n- Measure multi-agent dynamics like cheating, collaboration, exploitation and study how they emerge in simulation.\n- A big part of understanding multi-agent systems is having a system to parse massive dumps of trajectories; we need more efficient tooling here.\n- Environment design dictates behavior/incentives: item scarcity means certain goods are valuable in the economy.\nWorth listening to the whole thing.\n\nmax (@maxbittker) - Oct 17: Runescape Bench talk now up on youtube! Covers results from the benchmark, design of the harness, and economic swarm experiments I've been doing. Thanks @recursecenter",
+    "posted_at": "2026-11-03T08:47:00",
+    "links": [
+      "youtube.com/watch?v=cNm4zyUtWj0"
+    ],
+    "concept": "Claude skills craft",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-03",
     "author": "beamnxw ./",
     "handle": "@beamnxw",
     "subject": "Post by beamnxw on X",
@@ -8261,7 +8292,7 @@
     "enriched": true,
     "content": "On Making — by Brian \"Beej Jorgensen\" Hall (beej.us), 2026-03-12.\n\nTLDR: I gain a lot of fulfillment by making things. I don't consider things built by others at my request to be made by me, and are therefore much less fulfilling. And then I feel sad.\n\nPerspective: Gen-X hacker who cut his teeth in the 80s microcomputer era; BS and MS in CS; 20 years industry experience (Hewlett-Packard, startups, cofounder, Activision); CS instructor for 9 years, now at Oregon State University-Cascades; 65% Doom on the AI-Utopia/Doom scale; a Claude Code user sometimes; codes by hand sometimes.\n\nThe essay opens with an \"interlude\" — a sci-fi excerpt (The Vorrkai Interval), a woodcut-in-pastels painting (Mirrors of the Machine), a rebuilt cedar front deck, and a Rust TUI roguelike — presenting the author as a \"prolific polymath,\" then reveals all of it (except the deck, built by paid craftsmen) was AI-generated.\n\nI Am Uncomfortable: The author initiated all that creation but doesn't feel he *made* any of it. He contrasts people who say \"I put in a new front deck\" (when contractors did the work) with his own \"I had a new front deck put in.\" When Claude builds code for him he says \"I had this code built for me\" and Unlicenses it rather than MIT-licensing. As a manager he'd say \"my team built this\"; as a manager of LLMs, \"my Agents built this.\" Completing projects is great, but having others complete projects he initiated is far less fulfilling. It's not just the loss of craft and problem-solving — it's the loss of *making*.\n\nWhat Did I Make Recently? His wife wanted a no-frills Spanish flash-card system reading words from a spreadsheet. He wrote it by hand (JavaScript/CSS/HTML, ~177 lines), using Claude only to learn basics (the Google Sheets CSV endpoint) but generating no code. It took ~50x longer than Claude would have taken, but he can put his name on it and be proud — something he's incapable of feeling for anything Claude writes.\n\nThe Art and Craft of Prompting: He grants prompting requires real human skill — vision, judgment, communication, prompting skill; not all prompts or users are equally effective. But the skill is in effectively *asking someone to make something for you* (quoting Eisenhower on leadership). Prompting for software isn't the same as making the software.\n\nCompilers, Smartypants — turtles all the way down? He wrote C, not machine code; the compiler wrote that, non-deterministically (Clang vs GCC differ), yet he feels he wrote the program. He even has Claude act as a C compiler and emit working x86_64 assembly for a recursive Fibonacci — and still feels he \"wrote that program\" because assembly→machine-code is strict, mathematically-precise translation (like a hammer driving a nail). The line hinges on *making* versus *asking to be made*. Compilers/assemblers/hammers feel like tools; LLMs feel human — you ask them in imprecise human language and the relationship is manager-report rather than colleague-with-a-tool. Peering into the gray area makes him more confident that telling AI to make something *is* an act of creation — but he still can't say he \"hammered\" a nail an AI-powered hammer drove for him, and that difference matters to him.\n\nThings he does (feels he made): write and run C code; use a hammer to drive nails; use an assembler. Things he asks others to do at his command: write software; build a deck; paint a picture.\n\nCloses with Deep Thought from The Hitchhiker's Guide to the Galaxy, and a post-script listing his \"actual contributions\" — the prompts behind the sci-fi, the painting, the roguelike, and \"Please replace my front deck.\" Em dashes deliberate (Vim digraph ^K-M).",
     "source": "bookmark",
-    "concept": "founder philosophy & life-design essays",
+    "concept": "Anthropic Skilljar — free AI academy & courses",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -23422,7 +23453,7 @@
     "enriched": true,
     "content": "I find it funny when anyone feels confident they've figured out agentic programming. I've worked on OpenCode since last May and still have days where I'm not sure any of this is a good idea. I land on 'these models are an incredible tool' but it's confusing. I miss the mundane coding tasks; replacing hours with minutes of waiting on an agent is worth being excited about despite mixed emotions. There's a distance that can creep in between you and the code.",
     "posted_at": "2026-02-19T16:43:27",
-    "concept": "founder philosophy & life-design essays",
+    "concept": "Claude skills craft",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1

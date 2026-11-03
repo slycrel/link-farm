@@ -1,12 +1,12 @@
 # AI Links Collection
-**Total Posts**: 937  
+**Total Posts**: 938  
 **Date Range**: 2024-06-11 – 2026-11-03  
-**Enriched**: 937/937 (100%)
+**Enriched**: 938/938 (100%)
 
 ---
 ## Morning view
 
-*Generated 2026-11-03T23:29:03Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-11-03T23:42:17Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-10-30** — [Alexander Yue](https://x.com/alezander9/status/2115842962521509968) — *now • Agent Design • 550K views • v1 enriched*  
@@ -15,10 +15,10 @@
   Ryan Hart on Alibaba's open-sourced 'Open Code Review' (link via t.co): an AI code reviewer used internally for two years, claimed to use 9x fewer tokens than Claude Code; line-pinned diff comments, built-in rules (null pointers, thread safety, XSS, SQLi), full-file/codebase context, plugs into Claude Code, Codex, Cursor, Kimi Code, OpenCode, runs in GitHub Actions/GitLab CI. Hype framing; the token claim is 'reportedly'.
 - **2026-11-03** — [Avid](https://x.com/av1dlive/status/2117660576575066412) — *near-term • Agent Design • 10.8K views • v1 enriched*  
   Avid (@Av1dlive) advises spending a day teaching your coding agent system design before it writes any code, and shares '7 rules + the 12-step prompt' as four image slides (image text not captured). A top reply from Adam Wright adds that a per-agent 'never touch' list matters more than the rules. Hook-style packaging, but the idea (design-first prompting for agents) is on-theme.
+- **2026-11-03** — [Viv](https://x.com/vtrivedy10/status/2117644876854505981) — *near-term • Research • 4K views • v1 enriched*  
+  Viv (@Vtrivedy10) recommends Max Bittker's RuneScape Bench talk (youtube.com/watch?v=cNm4zyUtWj0, Recurse Center) and shares notes on benchmark design and multi-agent systems: move gradually from raw APIs to higher-level tools so agents reason at the layer you care about, shorten feedback loops, judge evals on difficulty/cost/interestingness, measure cheating/collaboration/exploitation in multi-agent simulations, build tooling to parse massive trajectory dumps, and note that environment design (e.g. scarcity) shapes incentives.
 - **2026-11-03** — [beamnxw ./](https://x.com/beamnxw/status/2107522996046905797) — *near-term • Claude Code • 2.7M views • v1 enriched*  
   Long X Article (2.7M views) giving a seven-layer reusable Claude Code harness for Opus 5.5 long tasks: CLAUDE.md facts, a SKILL.md procedure, MCP source access, permission/hook action rules, an evidence-reviewer subagent, per-job effort settings, and a /goal completion condition, plus a progress.md handoff for resuming across sessions. Packaged as 'save this / follow for alpha' but grounded in documented Claude Code features and Anthropic docs, with copy-paste snippets.
-- **2026-10-30** — [hayato](https://x.com/hayatomaruu/status/2115937640730022139) — *near-term • Agent Design • 26K views • v1 enriched*  
-  Thread (attributed to an unnamed Anthropic engineer, hype-packaged with 'save this' framing) laying out a self-improving eval loop: target ~50% pass rate, mine failed transcripts for new eval cases, score answer plus path, rerun on each new model, gate deploys on evals in CI. The method is practical for agent evals even though the sourcing is unverified; it also quotes beamnxw's article on building a harness around an AI employee.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
@@ -61,13 +61,13 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 599 | 63.9% |
+| agent-design | 600 | 64.0% |
 | claude-code | 226 | 24.1% |
-| dev-practices | 442 | 47.2% |
-| skills-mcp | 216 | 23.1% |
+| dev-practices | 443 | 47.2% |
+| skills-mcp | 216 | 23.0% |
 | prompting | 149 | 15.9% |
-| research | 275 | 29.3% |
-| industry | 158 | 16.9% |
+| research | 276 | 29.4% |
+| industry | 158 | 16.8% |
 | management | 147 | 15.7% |
 | adjacent | 53 | 5.7% |
 | solo-operator | 13 | 1.4% |
@@ -79,6 +79,7 @@
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
 | 2026-11-03 | Avid | agent-design | Avid (@Av1dlive) advises spending a day teaching your coding agent sys... |
+| 2026-11-03 | Viv | research | Viv (@Vtrivedy10) recommends Max Bittker's RuneScape Bench talk (youtu... |
 | 2026-11-03 | beamnxw ./ | claude-code | Long X Article (2.7M views) giving a seven-layer reusable Claude Code... |
 | 2026-10-30 | hayato | agent-design | Thread (attributed to an unnamed Anthropic engineer, hype-packaged wit... |
 | 2026-10-30 | Onur Solmaz | agent-design | Onur Solmaz open-sourced Switch (github.com/osolmaz/switch), a harness... |
@@ -127,15 +128,17 @@
 | 2026-10-21 | elvis | research | Elvis (DAIR.AI) says to learn to build evals and recommends Hamel Husa... |
 | 2026-10-21 | Anže Pečar | dev-practices | Security alert: private keys for 8 intermediate CA certificates were r... |
 | 2026-10-21 | rody | agent-design | Hype post claiming 'grok bot' plus 'jev' will make more millionaires t... |
-| 2026-10-21 | John Song | adjacent | John Song's engagement-style pitch for a side business: bring local bu... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (599)
+### Agent Design (600)
 
 - [Avid](https://x.com/av1dlive/status/2117660576575066412) — 2026-11-03: Avid (@Av1dlive) advises spending a day teaching your coding agent system design before it writes any code, and shares '7 rules + the 12-step prompt' as four image slides (image text not captured). A top reply from Adam Wright adds that a per-agent 'never touch' list matters more than the rules. Hook-style packaging, but the idea (design-first prompting for agents) is on-theme.
   posted 2026-11-03 · @Av1dlive · 10.8K views · concept: agent identity files (SOUL.md, CLAUDE.md, persona scaffolds) · url: https://x.com/av1dlive/status/2117660576575066412
+
+- [Viv](https://x.com/vtrivedy10/status/2117644876854505981) — 2026-11-03: Viv (@Vtrivedy10) recommends Max Bittker's RuneScape Bench talk (youtube.com/watch?v=cNm4zyUtWj0, Recurse Center) and shares notes on benchmark design and multi-agent systems: move gradually from raw APIs to higher-level tools so agents reason at the layer you care about, shorten feedback loops, judge evals on difficulty/cost/interestingness, measure cheating/collaboration/exploitation in multi-agent simulations, build tooling to parse massive trajectory dumps, and note that environment design (e.g. scarcity) shapes incentives.
+  posted 2026-11-03 · @Vtrivedy10 · 4K views · concept: Claude skills craft · url: https://x.com/vtrivedy10/status/2117644876854505981 · links: youtube.com/watch?v=cNm4zyUtWj0
 
 - [beamnxw ./](https://x.com/beamnxw/status/2107522996046905797) — 2026-11-03: Long X Article (2.7M views) giving a seven-layer reusable Claude Code harness for Opus 5.5 long tasks: CLAUDE.md facts, a SKILL.md procedure, MCP source access, permission/hook action rules, an evidence-reviewer subagent, per-job effort settings, and a /goal completion condition, plus a progress.md handoff for resuming across sessions. Packaged as 'save this / follow for alpha' but grounded in documented Claude Code features and Anthropic docs, with copy-paste snippets.
   posted 2026-10-06 · @beamnxw · 2.7M views · concept: Claude Code setup & usage · url: https://x.com/beamnxw/status/2107522996046905797
@@ -1782,7 +1785,7 @@
   posted 2026-02-20 · @DataChaz · 54.1K views · concept: context economy — routing tables beat big context · url: https://x.com/datachaz/status/2024803152730423685
 
 - [Adam](https://x.com/adamdotdev/status/2024525246993506346) — 2026-02-20: Adam (working on OpenCode since early 2025) offers an honest, ambivalent reflection on agentic programming: the models are an incredible tool and a real productivity boost, but the shift is confusing and emotionally mixed. He misses the flow of banging out mundane code by hand and notes the growing distance between the developer and the code.
-  posted 2026-02-19 · @adamdotdev · concept: founder philosophy & life-design essays · url: https://x.com/adamdotdev/status/2024525246993506346
+  posted 2026-02-19 · @adamdotdev · concept: Claude skills craft · url: https://x.com/adamdotdev/status/2024525246993506346
 
 - [Tech with Mak](https://x.com/technmak/status/2023990222027915746) — 2026-02-18: Tech with Mak boosts Matthew Berman's 'OpenClaw masterclass' video, in which Berman claims to have spent 2.54 billion tokens perfecting the OpenClaw coding agent and walks through 21 daily use cases (markdown files, memory system, CRM, and more). Quoted post had ~1.3M views.
   posted 2026-02-18 · @techNmak · 1.3M views · url: https://x.com/technmak/status/2023990222027915746
@@ -2611,10 +2614,13 @@
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
   @curvedinf · url: https://github.com/curvedinf/dir-assistant
 
-### Dev Practices (442)
+### Dev Practices (443)
 
 - [Avid](https://x.com/av1dlive/status/2117660576575066412) — 2026-11-03: Avid (@Av1dlive) advises spending a day teaching your coding agent system design before it writes any code, and shares '7 rules + the 12-step prompt' as four image slides (image text not captured). A top reply from Adam Wright adds that a per-agent 'never touch' list matters more than the rules. Hook-style packaging, but the idea (design-first prompting for agents) is on-theme.
   posted 2026-11-03 · @Av1dlive · 10.8K views · concept: agent identity files (SOUL.md, CLAUDE.md, persona scaffolds) · url: https://x.com/av1dlive/status/2117660576575066412
+
+- [Viv](https://x.com/vtrivedy10/status/2117644876854505981) — 2026-11-03: Viv (@Vtrivedy10) recommends Max Bittker's RuneScape Bench talk (youtube.com/watch?v=cNm4zyUtWj0, Recurse Center) and shares notes on benchmark design and multi-agent systems: move gradually from raw APIs to higher-level tools so agents reason at the layer you care about, shorten feedback loops, judge evals on difficulty/cost/interestingness, measure cheating/collaboration/exploitation in multi-agent simulations, build tooling to parse massive trajectory dumps, and note that environment design (e.g. scarcity) shapes incentives.
+  posted 2026-11-03 · @Vtrivedy10 · 4K views · concept: Claude skills craft · url: https://x.com/vtrivedy10/status/2117644876854505981 · links: youtube.com/watch?v=cNm4zyUtWj0
 
 - [beamnxw ./](https://x.com/beamnxw/status/2107522996046905797) — 2026-11-03: Long X Article (2.7M views) giving a seven-layer reusable Claude Code harness for Opus 5.5 long tasks: CLAUDE.md facts, a SKILL.md procedure, MCP source access, permission/hook action rules, an evidence-reviewer subagent, per-job effort settings, and a /goal completion condition, plus a progress.md handoff for resuming across sessions. Packaged as 'save this / follow for alpha' but grounded in documented Claude Code features and Anthropic docs, with copy-paste snippets.
   posted 2026-10-06 · @beamnxw · 2.7M views · concept: Claude Code setup & usage · url: https://x.com/beamnxw/status/2107522996046905797
@@ -3766,7 +3772,7 @@
   posted 2026-02-20 · @DataChaz · 54.1K views · concept: context economy — routing tables beat big context · url: https://x.com/datachaz/status/2024803152730423685
 
 - [Adam](https://x.com/adamdotdev/status/2024525246993506346) — 2026-02-20: Adam (working on OpenCode since early 2025) offers an honest, ambivalent reflection on agentic programming: the models are an incredible tool and a real productivity boost, but the shift is confusing and emotionally mixed. He misses the flow of banging out mundane code by hand and notes the growing distance between the developer and the code.
-  posted 2026-02-19 · @adamdotdev · concept: founder philosophy & life-design essays · url: https://x.com/adamdotdev/status/2024525246993506346
+  posted 2026-02-19 · @adamdotdev · concept: Claude skills craft · url: https://x.com/adamdotdev/status/2024525246993506346
 
 - [Aman](https://x.com/amank1412/status/2023754885473394918) — 2026-02-19: Aman shares Garry Tan's (CEO of Y Combinator) CLAUDE.md prompt for Claude Code, which he uses to ship 4,000+ line features with full tests in about an hour. The prompt makes Claude act like a senior engineer: judge whether a plan is over/under-engineered before coding, do a structured review (architecture -> code quality -> tests -> performance), present tradeoffs with opinionated recommendations, and pause for feedback before implementing.
   posted 2026-02-17 · @Amank1412 · concept: Claude Code setup & usage · url: https://x.com/amank1412/status/2023754885473394918
@@ -4715,7 +4721,7 @@
   posted 2026-07-24 · @anatolikopadze · 395.1K views · url: https://x.com/anatolikopadze/status/2080702441809399834
 
 - [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making) — 2026-07-24: Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI dev schism": he argues that having AI build something you initiated — code, art, prose, even a deck — isn't the same as *making* it, and the loss of "making" (distinct from loss of craft or problem-solving) is what leaves him unfulfilled. He works the gray area — a compiler or assembler feels like a tool you make *with*, while an LLM feels like a report you *delegate* to — and lands on prompting-as-skill being real (vision, judgment, communication) but closer to "asking someone to make something for you" than making it yourself. (beej.us/blog/data/ai-making)
-  concept: founder philosophy & life-design essays · url: https://beej.us/blog/data/ai-making
+  concept: Anthropic Skilljar — free AI academy & courses · url: https://beej.us/blog/data/ai-making
 
 - [Paul Hudson](https://x.com/twostraws/status/2078039730759811369) — 2026-07-17: Shares a reusable 'adversarial unit test sweep' prompt (set Codex/Sol to Ultra reasoning): deliberately target edge cases, malformed inputs, race conditions, boundary values, resource exhaustion, state corruption, and invalid assumptions; make every test earn its place, remove or consolidate weak/redundant tests, fix every failing test, add permanent regression tests for each bug found, and repeat until the suite passes cleanly with strong coverage. Argues AI-driven adversarial test review is one of the easiest high-value practices to adopt.
   posted 2026-07-17 · @twostraws · 33.4K views · concept: agentic code review at production scale · url: https://x.com/twostraws/status/2078039730759811369
@@ -5038,7 +5044,10 @@
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
   @tom-doerr · concept: agent identity files (SOUL.md, CLAUDE.md, persona scaffolds) · url: https://github.com/tom-doerr/dotfiles/blob/master/instruction.md
 
-### Research (275)
+### Research (276)
+
+- [Viv](https://x.com/vtrivedy10/status/2117644876854505981) — 2026-11-03: Viv (@Vtrivedy10) recommends Max Bittker's RuneScape Bench talk (youtube.com/watch?v=cNm4zyUtWj0, Recurse Center) and shares notes on benchmark design and multi-agent systems: move gradually from raw APIs to higher-level tools so agents reason at the layer you care about, shorten feedback loops, judge evals on difficulty/cost/interestingness, measure cheating/collaboration/exploitation in multi-agent simulations, build tooling to parse massive trajectory dumps, and note that environment design (e.g. scarcity) shapes incentives.
+  posted 2026-11-03 · @Vtrivedy10 · 4K views · concept: Claude skills craft · url: https://x.com/vtrivedy10/status/2117644876854505981 · links: youtube.com/watch?v=cNm4zyUtWj0
 
 - [Onur Solmaz](https://x.com/onusoz/status/2115868447834042415) — 2026-10-30: Onur Solmaz open-sourced Switch (github.com/osolmaz/switch), a harness framework for decision models that programmatically generates finite choice sets so the model only picks among them, rather than emitting tool calls. Aimed at eval judging and narrow looping agents; early results show the tested decision model lags GPT 6.1 Sol as a judge.
   posted 2026-10-29 · @onusoz · 106.9K views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/onusoz/status/2115868447834042415 · links: https://github.com/osolmaz/switch
@@ -6434,7 +6443,7 @@
   posted 2026-07-24 · @ruxandrateslo · concept: vibecode-to-production via agent skills · url: https://x.com/ruxandrateslo/status/2080661595802198468
 
 - [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making) — 2026-07-24: Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI dev schism": he argues that having AI build something you initiated — code, art, prose, even a deck — isn't the same as *making* it, and the loss of "making" (distinct from loss of craft or problem-solving) is what leaves him unfulfilled. He works the gray area — a compiler or assembler feels like a tool you make *with*, while an LLM feels like a report you *delegate* to — and lands on prompting-as-skill being real (vision, judgment, communication) but closer to "asking someone to make something for you" than making it yourself. (beej.us/blog/data/ai-making)
-  concept: founder philosophy & life-design essays · url: https://beej.us/blog/data/ai-making
+  concept: Anthropic Skilljar — free AI academy & courses · url: https://beej.us/blog/data/ai-making
 
 - [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler) — 2026-07-20: Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically integrated 'multi-compiler' working across strategy, product, architecture, code, and machine code — augmenting the engineer's judgment about which decisions matter (vibe-engineering). Case study: building a geographically distributed, consistent DNS server for exe.dev via concurrent agent loops plus repeated differential spec analysis (commaok.xyz/ai/differential-spec), distilled into a terse 'scar-tissue' guidance doc. ~1 week of attention, almost no code read, zero incidents a month post-launch.
   concept: loop engineering · url: https://blog.exe.dev/claude-is-not-a-compiler · links: https://commaok.xyz/ai/differential-spec
@@ -6865,7 +6874,7 @@
   posted 2026-08-13 · @rubenhassid · — views · concept: agents-as-judges-of-agents — bossman supervisor / self-verification · url: https://x.com/rubenhassid/status/2087856703773508025
 
 - [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making) — 2026-07-24: Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI dev schism": he argues that having AI build something you initiated — code, art, prose, even a deck — isn't the same as *making* it, and the loss of "making" (distinct from loss of craft or problem-solving) is what leaves him unfulfilled. He works the gray area — a compiler or assembler feels like a tool you make *with*, while an LLM feels like a report you *delegate* to — and lands on prompting-as-skill being real (vision, judgment, communication) but closer to "asking someone to make something for you" than making it yourself. (beej.us/blog/data/ai-making)
-  concept: founder philosophy & life-design essays · url: https://beej.us/blog/data/ai-making
+  concept: Anthropic Skilljar — free AI academy & courses · url: https://beej.us/blog/data/ai-making
 
 - [ℏεsam](https://x.com/hesamation/status/2073104617706008840) — 2026-07-04: [Jeremy flagged: read for work] hesam recommends Phil Chen's article 'Career advice in the age of AI' (Chen: a researcher from OpenAI, DeepMind, and Stanford). TL;DR: AI makes execution cheaper, so the durable edge is choosing the right problems, building strong connections, and investing real time — the argument being that AI models improve at anything you can write a loss function for, and school is mostly loss functions (well-defined problems graded against known answers), so the valuable work shifts elsewhere.
   posted 2026-07-03 · @hesamation · 689.8K views · concept: vibecode-to-production via agent skills · url: https://x.com/hesamation/status/2073104617706008840
@@ -7486,7 +7495,7 @@
   posted 2026-01-17 · @oliviscusai · concept: agents-as-judges-of-agents — bossman supervisor / self-verification · url: https://x.com/oliviscusai/status/2012551369488540115 · links: https://github.com/rednote-hilab
 
 - [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making) — 2026-07-24: Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI dev schism": he argues that having AI build something you initiated — code, art, prose, even a deck — isn't the same as *making* it, and the loss of "making" (distinct from loss of craft or problem-solving) is what leaves him unfulfilled. He works the gray area — a compiler or assembler feels like a tool you make *with*, while an LLM feels like a report you *delegate* to — and lands on prompting-as-skill being real (vision, judgment, communication) but closer to "asking someone to make something for you" than making it yourself. (beej.us/blog/data/ai-making)
-  concept: founder philosophy & life-design essays · url: https://beej.us/blog/data/ai-making
+  concept: Anthropic Skilljar — free AI academy & courses · url: https://beej.us/blog/data/ai-making
 
 - [argofowl](https://x.com/argofowl/status/2076284369883615555) — 2026-07-17: Introduces namethatui.com — a dictionary for UI elements you can see but can't name, built by a designer to lower the friction of describing UI when prompting coding agents. It learns from usage: every search teaches the site new words and grows a built-in pocket dictionary.
   posted 2026-07-12 · @argofowl · 756.2K views · url: https://x.com/argofowl/status/2076284369883615555 · links: https://namethatui.com
@@ -7619,6 +7628,10 @@
 - **2026-11-03** | [Avid](https://x.com/av1dlive/status/2117660576575066412) | agent-design, prompting, dev-practices, questionable
   Avid (@Av1dlive) advises spending a day teaching your coding agent system design before it writes any code, and shares '7 rules + the 12-step prompt' as four image slides (image text not captured). A top reply from Adam Wright adds that a per-agent 'never touch' list matters more than the rules. Hook-style packaging, but the idea (design-first prompting for agents) is on-theme.
   posted 2026-11-03 · @Av1dlive · 10.8K views · concept: agent identity files (SOUL.md, CLAUDE.md, persona scaffolds) · url: https://x.com/av1dlive/status/2117660576575066412
+
+- **2026-11-03** | [Viv](https://x.com/vtrivedy10/status/2117644876854505981) | research, agent-design, dev-practices
+  Viv (@Vtrivedy10) recommends Max Bittker's RuneScape Bench talk (youtube.com/watch?v=cNm4zyUtWj0, Recurse Center) and shares notes on benchmark design and multi-agent systems: move gradually from raw APIs to higher-level tools so agents reason at the layer you care about, shorten feedback loops, judge evals on difficulty/cost/interestingness, measure cheating/collaboration/exploitation in multi-agent simulations, build tooling to parse massive trajectory dumps, and note that environment design (e.g. scarcity) shapes incentives.
+  posted 2026-11-03 · @Vtrivedy10 · 4K views · concept: Claude skills craft · url: https://x.com/vtrivedy10/status/2117644876854505981 · links: youtube.com/watch?v=cNm4zyUtWj0
 
 - **2026-11-03** | [beamnxw ./](https://x.com/beamnxw/status/2107522996046905797) | claude-code, agent-design, dev-practices, skills-mcp, questionable
   Long X Article (2.7M views) giving a seven-layer reusable Claude Code harness for Opus 5.5 long tasks: CLAUDE.md facts, a SKILL.md procedure, MCP source access, permission/hook action rules, an evidence-reviewer subagent, per-job effort settings, and a /goal completion condition, plus a progress.md handoff for resuming across sessions. Packaged as 'save this / follow for alpha' but grounded in documented Claude Code features and Anthropic docs, with copy-paste snippets.
@@ -8774,7 +8787,7 @@
 
 - **2026-07-24** | [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making) | management, general, prompting, adjacent
   Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI dev schism": he argues that having AI build something you initiated — code, art, prose, even a deck — isn't the same as *making* it, and the loss of "making" (distinct from loss of craft or problem-solving) is what leaves him unfulfilled. He works the gray area — a compiler or assembler feels like a tool you make *with*, while an LLM feels like a report you *delegate* to — and lands on prompting-as-skill being real (vision, judgment, communication) but closer to "asking someone to make something for you" than making it yourself. (beej.us/blog/data/ai-making)
-  concept: founder philosophy & life-design essays · url: https://beej.us/blog/data/ai-making
+  concept: Anthropic Skilljar — free AI academy & courses · url: https://beej.us/blog/data/ai-making
 
 - **2026-07-20** | [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler) | agent-design, dev-practices, management
   Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically integrated 'multi-compiler' working across strategy, product, architecture, code, and machine code — augmenting the engineer's judgment about which decisions matter (vibe-engineering). Case study: building a geographically distributed, consistent DNS server for exe.dev via concurrent agent loops plus repeated differential spec analysis (commaok.xyz/ai/differential-spec), distilled into a terse 'scar-tissue' guidance doc. ~1 week of attention, almost no code read, zero incidents a month post-launch.
@@ -10932,7 +10945,7 @@
 
 - **2026-02-20** | [Adam](https://x.com/adamdotdev/status/2024525246993506346) | agent-design, dev-practices
   Adam (working on OpenCode since early 2025) offers an honest, ambivalent reflection on agentic programming: the models are an incredible tool and a real productivity boost, but the shift is confusing and emotionally mixed. He misses the flow of banging out mundane code by hand and notes the growing distance between the developer and the code.
-  posted 2026-02-19 · @adamdotdev · concept: founder philosophy & life-design essays · url: https://x.com/adamdotdev/status/2024525246993506346
+  posted 2026-02-19 · @adamdotdev · concept: Claude skills craft · url: https://x.com/adamdotdev/status/2024525246993506346
 
 - **2026-02-19** | [Aman](https://x.com/amank1412/status/2023754885473394918) | claude-code, prompting, dev-practices
   Aman shares Garry Tan's (CEO of Y Combinator) CLAUDE.md prompt for Claude Code, which he uses to ship 4,000+ line features with full tests in about an hour. The prompt makes Claude act like a senior engineer: judge whether a plan is over/under-engineered before coding, do a structured review (architecture -> code quality -> tests -> performance), present tradeoffs with opinionated recommendations, and pause for feedback before implementing.
