@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-11-02T16:50:31Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-11-03T16:12:49Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-10-30** — [Alexander Yue](https://x.com/alezander9/status/2115842962521509968) — *now • Agent Design • 550K views • v1 enriched*  
