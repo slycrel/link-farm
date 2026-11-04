@@ -1,5 +1,65 @@
 [
   {
+    "date": "2026-11-04",
+    "author": "Blum",
+    "handle": "@blum_og",
+    "subject": "Post by Blum on X",
+    "url": "https://x.com/blum_og/status/2117722452457586810",
+    "summary": "Blum (@Blum_OG) shares an 8-step single prompt for Claude Code that adds hooks requiring proof of work (commands plus output), a fresh reviewer agent, a list of decisions made on the user's behalf, a 5-question quiz that gates git push, and CLAUDE.md logging of rejected changes. Hype-packaged, but the self-verification and comprehension-gate pattern has real substance; the 'creator of Claude Code' claim is the author's.",
+    "topics": [
+      "claude-code",
+      "dev-practices",
+      "agent-design",
+      "prompting",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "F*cking genius. The creator of Claude Code says its work gets 2-3x better when it can check itself. Set that up with one prompt, and make Claude Code quiz you before you ship. If you can't explain the code, git won't let you push it. Step 1 paste the prompt into Claude Code on Opus 5.5; step 2 it adds hooks so Opus can't finish a task until it shows proof it works; step 3 proof is the exact commands run and their output, shown before the summary; step 4 a fresh reviewer agent says what would have to be true for the change to be wrong; step 5 Opus lists what it decided for you (defaults picked, parts left out); step 6 you get 5 questions on the change and only 5/5 unlocks git push; step 7 every rejected change goes into CLAUDE.md with the reason; step 8 every Friday it reports which skill you've stopped using.",
+    "posted_at": "2026-11-03T20:55:52",
+    "concept": "Claude Code session workflows — handoffs, messaging & retention",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-04",
+    "author": "Yarchi",
+    "handle": "@undefinedki",
+    "subject": "Post by Yarchi on X",
+    "url": "https://x.com/undefinedki/status/2117620474981101940",
+    "summary": "Yarchi (@undefinedKi) summarizes Anthropic's write-up on rebuilding its dev workflow around agents: code merges grew from ~2,500/day in May to 30,000+/day by September, so human-era tooling like git and merge queues became the bottleneck. Five practices: engineers decide and review intent rather than lines, a 'superfan' Claude per component, test-after-merge, and agent-native tools (infra cost down 200x).",
+    "topics": [
+      "claude-code",
+      "agent-design",
+      "dev-practices",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "12.4K",
+    "notes": "",
+    "enriched": true,
+    "content": "Anthropic just shared their new way of building software with Claude. In May they merged ~2,500 code changes a day; by September 30,000+. Claude writes so much code that tools built for humans, even git, became the bottleneck. A team of 7 rebuilt their dev setup around agents in 5 months. 1. Claude writes, engineers say \"no\": every engineer rates Claude better at writing code than themselves; their job is design decisions, catching agents that break system rules, and stopping over-engineering. 2. Review intent: humans check every change but look at what it is meant to do rather than every line. 3. One Claude per component: each part has its own Slack channel with a \"superfan\" Claude watching logs and charts. 4. Test after merge: with thousands of changes landing while tests run, a classic merge queue stops making sense; they test after merge and before deploy, and Claude fixes conflicts. 5. Tools built for agents: agents ask the server for what they need instead of cloning the repo; infrastructure costs dropped 200x. An early Claude Mythos Preview rewrote a handwritten ingestion pipeline with 20x less memory and 4x faster. Anthropic expects most teams to hit the same limits within 6-12 months.",
+    "posted_at": "2026-11-03T14:10:39",
+    "concept": "managing agent teams",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-11-03",
     "author": "Avid",
     "handle": "@Av1dlive",
@@ -84,7 +144,7 @@
     "enriched": true,
     "content": "Make Opus 5.5 Finish Long Tasks: A Reusable Harness Engineering Setup (X Article, 2.7M views)\n\nYour next Opus 5.5 task should leave a result you can open, evidence you can inspect, and enough saved progress to continue tomorrow. A harness coordinates the instructions, tools, permissions, state, and checks around the model. Seven layers form a practical setup using documented Claude Code features, illustrated with a document workflow (sources/, drafts/, published/):\n1. Workspace facts: keep root CLAUDE.md to durable cross-task info (output locations, source requirements, conventions); temporary facts go with the task; save decisions and next action in progress.md; path-scoped .claude/rules/; @path imports still load at session start; use /memory.\n2. Procedure as a skill: .claude/skills/write-draft/SKILL.md with $ARGUMENTS and observable steps (read sources, outline, draft, reviewer check, claim table, update progress, return paths); keep publication approval separate from draft prep.\n3. Source access via MCP (example: claude mcp add --transport http notion), verify with /mcp, retrieve one known page first, preserve doc id and failure reason, disable unused servers.\n4. Action rules in the execution layer: permissions deny rules (Read(.env), Edit(published/**)), PreToolUse hooks for argument-dependent decisions; file-tool rules don't bind arbitrary Python/Node processes, OS sandboxing does; inspect destination before retrying an external write.\n5. Reviewer subagent (.claude/agents/evidence-reviewer.md, read/search tools, effort high) returns a table: claim, verdict (verified/incorrect/unresolved), source URL, required correction.\n6. Reasoning effort per job: claude --model claude-opus-5-5 --effort medium for the main session, high for the reviewer; check /context, /agents, /permissions before the first run.\n7. Tell the run what it must prove: a /goal with completion criteria (drafts/article.md, drafts/checks.md exist, incorrect claims corrected, unresolved marked, paths and results shown in conversation, stop after 12 turns); /rewind for tracked-file recovery.\nThen run the whole workflow once with a sources/task.md brief, test recovery in a fresh session from a progress.md note (Task/Outputs/Completed/Decisions/Open issues/Next action), and measure on accepted work with /usage and /context rather than trusting the 60% token-reduction figure from Anthropic's early-tester report. Closes with 'Save this so you don't lose it. Follow @beamnxw for more alpha :)' plus Substack and Telegram links.\n\nAnthropic docs cited throughout: Claude Code features/skills/memory/hooks/permissions/subagents/goal/checkpoints, context engineering, writing effective tools, agent evals, long-running agent harnesses, and the Opus 5.5 announcement.",
     "posted_at": "2026-10-06T11:26:00",
-    "concept": "Claude Code setup & usage",
+    "concept": "Claude Code session workflows — handoffs, messaging & retention",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -8292,7 +8352,7 @@
     "enriched": true,
     "content": "On Making — by Brian \"Beej Jorgensen\" Hall (beej.us), 2026-03-12.\n\nTLDR: I gain a lot of fulfillment by making things. I don't consider things built by others at my request to be made by me, and are therefore much less fulfilling. And then I feel sad.\n\nPerspective: Gen-X hacker who cut his teeth in the 80s microcomputer era; BS and MS in CS; 20 years industry experience (Hewlett-Packard, startups, cofounder, Activision); CS instructor for 9 years, now at Oregon State University-Cascades; 65% Doom on the AI-Utopia/Doom scale; a Claude Code user sometimes; codes by hand sometimes.\n\nThe essay opens with an \"interlude\" — a sci-fi excerpt (The Vorrkai Interval), a woodcut-in-pastels painting (Mirrors of the Machine), a rebuilt cedar front deck, and a Rust TUI roguelike — presenting the author as a \"prolific polymath,\" then reveals all of it (except the deck, built by paid craftsmen) was AI-generated.\n\nI Am Uncomfortable: The author initiated all that creation but doesn't feel he *made* any of it. He contrasts people who say \"I put in a new front deck\" (when contractors did the work) with his own \"I had a new front deck put in.\" When Claude builds code for him he says \"I had this code built for me\" and Unlicenses it rather than MIT-licensing. As a manager he'd say \"my team built this\"; as a manager of LLMs, \"my Agents built this.\" Completing projects is great, but having others complete projects he initiated is far less fulfilling. It's not just the loss of craft and problem-solving — it's the loss of *making*.\n\nWhat Did I Make Recently? His wife wanted a no-frills Spanish flash-card system reading words from a spreadsheet. He wrote it by hand (JavaScript/CSS/HTML, ~177 lines), using Claude only to learn basics (the Google Sheets CSV endpoint) but generating no code. It took ~50x longer than Claude would have taken, but he can put his name on it and be proud — something he's incapable of feeling for anything Claude writes.\n\nThe Art and Craft of Prompting: He grants prompting requires real human skill — vision, judgment, communication, prompting skill; not all prompts or users are equally effective. But the skill is in effectively *asking someone to make something for you* (quoting Eisenhower on leadership). Prompting for software isn't the same as making the software.\n\nCompilers, Smartypants — turtles all the way down? He wrote C, not machine code; the compiler wrote that, non-deterministically (Clang vs GCC differ), yet he feels he wrote the program. He even has Claude act as a C compiler and emit working x86_64 assembly for a recursive Fibonacci — and still feels he \"wrote that program\" because assembly→machine-code is strict, mathematically-precise translation (like a hammer driving a nail). The line hinges on *making* versus *asking to be made*. Compilers/assemblers/hammers feel like tools; LLMs feel human — you ask them in imprecise human language and the relationship is manager-report rather than colleague-with-a-tool. Peering into the gray area makes him more confident that telling AI to make something *is* an act of creation — but he still can't say he \"hammered\" a nail an AI-powered hammer drove for him, and that difference matters to him.\n\nThings he does (feels he made): write and run C code; use a hammer to drive nails; use an assembler. Things he asks others to do at his command: write software; build a deck; paint a picture.\n\nCloses with Deep Thought from The Hitchhiker's Guide to the Galaxy, and a post-script listing his \"actual contributions\" — the prompts behind the sci-fi, the painting, the roguelike, and \"Please replace my front deck.\" Em dashes deliberate (Vim digraph ^K-M).",
     "source": "bookmark",
-    "concept": "Anthropic Skilljar — free AI academy & courses",
+    "concept": "founder philosophy & life-design essays",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -9926,7 +9986,7 @@
     "enriched": true,
     "content": "Dhilip Subramanian @sdhilip\nMy Claude Code setup used to be 3 skills. Now it's 7. Each one earned its spot.\ndata engineering (@AnthropicAI) → dbt and Airflow skills that slot into data pipeline work.\ngstack (@garrytan) → Turns Claude Code into a virtual team that questions what you're building before code starts.\ngrill me (@mattpocockuk) → Asks sharp questions first, so Claude builds what you actually meant.\nsuperpowers (obra) → Forces spec, plan, then test-driven development. Solid code, not vibe-coded slop.\nimpeccable (@pbakaus) → One command to audit and polish a dashboard or UI.\nlast30days (@mvanhorn) → Finds what's working now across Reddit, X, YouTube, HN.\nprinting press (@mvanhorn @trevin) → Turns any API or website into a clean, token-light CLI.\nStart small. Add one only when you hit a job your current skills can't do.\nNext: compound engineering (@trevin).",
     "posted_at": "2026-07-01T15:00:03",
-    "concept": "Claude Code setup & usage",
+    "concept": "context economy — routing tables beat big context",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 3
@@ -13028,7 +13088,7 @@
     "links": [
       "https://github.com/addyosmani/agent-skills"
     ],
-    "concept": "Anthropic Skilljar — free AI academy & courses",
+    "concept": "Claude skills craft",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2
@@ -19269,7 +19329,7 @@
     "enriched": true,
     "content": "Tech with Mak @techNmak. Andrej Karpathy on what every Claude Code user feels: models make wrong assumptions without checking, don't seek clarification/surface inconsistencies/push back; overcomplicate code, bloat abstractions, don't clean dead code (1000 lines when 100 would do); change/remove code they don't understand. Someone turned this into a CLAUDE.md with 4 principles: 1) Think before coding (state ambiguity, present interpretations, push back, ask not guess), 2) Simplicity first (no unasked features/abstractions/flexibility/error-handling; senior-engineer test), 3) Surgical changes (don't improve adjacent code, don't refactor unbroken, match style, mention dead code don't delete, every line traces to request), 4) Goal-driven execution (turn 'fix bug' into 'write failing test then pass'; give success criteria and loop). Single drop-in file. 190.4K views.",
     "posted_at": "2026-04-13T13:30:00",
-    "concept": "Claude Code setup & usage",
+    "concept": "context economy — routing tables beat big context",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1

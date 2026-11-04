@@ -1,24 +1,24 @@
 # AI Links Collection
-**Total Posts**: 938  
-**Date Range**: 2024-06-11 – 2026-11-03  
-**Enriched**: 938/938 (100%)
+**Total Posts**: 940  
+**Date Range**: 2024-06-11 – 2026-11-04  
+**Enriched**: 940/940 (100%)
 
 ---
 ## Morning view
 
-*Generated 2026-11-03T23:42:17Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-11-04T16:13:08Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
+- **2026-11-04** — [Blum](https://x.com/blum_og/status/2117722452457586810) — *now • Claude Code • v1 enriched*  
+  Blum (@Blum_OG) shares an 8-step single prompt for Claude Code that adds hooks requiring proof of work (commands plus output), a fresh reviewer agent, a list of decisions made on the user's behalf, a 5-question quiz that gates git push, and CLAUDE.md logging of rejected changes. Hype-packaged, but the self-verification and comprehension-gate pattern has real substance; the 'creator of Claude Code' claim is the author's.
+- **2026-11-04** — [Yarchi](https://x.com/undefinedki/status/2117620474981101940) — *now • Claude Code • 12.4K views • v1 enriched*  
+  Yarchi (@undefinedKi) summarizes Anthropic's write-up on rebuilding its dev workflow around agents: code merges grew from ~2,500/day in May to 30,000+/day by September, so human-era tooling like git and merge queues became the bottleneck. Five practices: engineers decide and review intent rather than lines, a 'superfan' Claude per component, test-after-merge, and agent-native tools (infra cost down 200x).
 - **2026-10-30** — [Alexander Yue](https://x.com/alezander9/status/2115842962521509968) — *now • Agent Design • 550K views • v1 enriched*  
   Alexander Yue argues context compaction in Claude Code/Codex is a mistake: on a ~400k-token Opus 5.5 session it costs $0.17-$1.99 and loses exact details. His open-source (MIT) Mainplane starts a fresh session that retrieves exact lines from the full prior session file, resuming in 15s for $0.10. Tagged 'compare with existing solution' in the subject line.
 - **2026-10-28** — [Ryan Hart](https://x.com/thisdudelikesai/status/2115010135588589932) — *now • Dev Practices • v1 enriched*  
   Ryan Hart on Alibaba's open-sourced 'Open Code Review' (link via t.co): an AI code reviewer used internally for two years, claimed to use 9x fewer tokens than Claude Code; line-pinned diff comments, built-in rules (null pointers, thread safety, XSS, SQLi), full-file/codebase context, plugs into Claude Code, Codex, Cursor, Kimi Code, OpenCode, runs in GitHub Actions/GitLab CI. Hype framing; the token claim is 'reportedly'.
 - **2026-11-03** — [Avid](https://x.com/av1dlive/status/2117660576575066412) — *near-term • Agent Design • 10.8K views • v1 enriched*  
   Avid (@Av1dlive) advises spending a day teaching your coding agent system design before it writes any code, and shares '7 rules + the 12-step prompt' as four image slides (image text not captured). A top reply from Adam Wright adds that a per-agent 'never touch' list matters more than the rules. Hook-style packaging, but the idea (design-first prompting for agents) is on-theme.
-- **2026-11-03** — [Viv](https://x.com/vtrivedy10/status/2117644876854505981) — *near-term • Research • 4K views • v1 enriched*  
-  Viv (@Vtrivedy10) recommends Max Bittker's RuneScape Bench talk (youtube.com/watch?v=cNm4zyUtWj0, Recurse Center) and shares notes on benchmark design and multi-agent systems: move gradually from raw APIs to higher-level tools so agents reason at the layer you care about, shorten feedback loops, judge evals on difficulty/cost/interestingness, measure cheating/collaboration/exploitation in multi-agent simulations, build tooling to parse massive trajectory dumps, and note that environment design (e.g. scarcity) shapes incentives.
-- **2026-11-03** — [beamnxw ./](https://x.com/beamnxw/status/2107522996046905797) — *near-term • Claude Code • 2.7M views • v1 enriched*  
-  Long X Article (2.7M views) giving a seven-layer reusable Claude Code harness for Opus 5.5 long tasks: CLAUDE.md facts, a SKILL.md procedure, MCP source access, permission/hook action rules, an evidence-reviewer subagent, per-job effort settings, and a /goal completion condition, plus a progress.md handoff for resuming across sessions. Packaged as 'save this / follow for alpha' but grounded in documented Claude Code features and Anthropic docs, with copy-paste snippets.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
@@ -28,10 +28,10 @@
     - 2026-10-28 — [m4lka](https://x.com/m4lkxx/status/2114338456750997922): m4lka's long article 'Harness, Loops, Graphs: What Each Layer Fixes and What It Breaks' — a seven-level ladder where each layer (harness, lo…
     - 2026-10-24 — [hayato](https://x.com/hayatomaruu/status/2113719510985269442): Hype-framed post (500K views) pointing to a short workshop on building an agent harness from scratch: loops + sandboxed tools, brain/hands s…
 
-- **Claude Code setup & usage** (40 posts, +4 this week)  
-  Claude Code setup guides, cheatsheets, starter packs, and day-to-day usage / steering practices.
+- **Claude Code session workflows — handoffs, messaging & retention** (23 posts, +4 this week)  
+  Discovered by orphan clustering on 2026-10-08 from 6 posts with no prior concept (cohesion 0.66). Rename or archive if this isn't a real theme.
+    - 2026-11-04 — [Blum](https://x.com/blum_og/status/2117722452457586810): Blum (@Blum_OG) shares an 8-step single prompt for Claude Code that adds hooks requiring proof of work (commands plus output), a fresh revie…
     - 2026-11-03 — [beamnxw ./](https://x.com/beamnxw/status/2107522996046905797): Long X Article (2.7M views) giving a seven-layer reusable Claude Code harness for Opus 5.5 long tasks: CLAUDE.md facts, a SKILL.md procedure…
-    - 2026-10-28 — [Ryan Hart](https://x.com/thisdudelikesai/status/2115010135588589932): Ryan Hart on Alibaba's open-sourced 'Open Code Review' (link via t.co): an AI code reviewer used internally for two years, claimed to use 9x…
 
 - **agents as constrained software — making bad shapes unexpressible** (43 posts, +3 this week)  
   Applying real software-engineering formalism to agent systems so that the wrong design becomes impossible to write rather than merely discouraged. Instances: agents as plain Python objects where methods are actions, fields are state, docstrings are prompts and type annotations are contracts; an orchestration VM that turns agent coordination into ordinary software engineering; and the argument that codebases surviving past month six do so because the architecture forbids the bad shape, not because the team stayed disciplined.
@@ -40,15 +40,15 @@
     - 2026-10-24 — [Xudong Han](https://x.com/xudong07452910/status/2113800139005460534): Chinese-language post (translated, 575K views) summarizing Anthropic's claude.com article 'Building agents: When to fold subagents into your…
     - 2026-10-22 — [Josh Rosen](https://x.com/josharosen/status/2112902388302467493): Josh Rosen's article weighing four software-factory approaches — build (Temporal/Modal + Claude Code), buy (Warp, Factory, Port), fork (Open…
 
-- **dependency risk & supply-chain trust — poisoned packages, compromised CAs, and ripping out what you need** (4 posts, +3 this week)  
-  Supply-chain attacks on package registries and trust roots (litellm on PyPI, axios on npm, compromised intermediate CA certs) and the counter-movement they motivate: take fewer dependencies, have an agent extract only the functionality you need ('bacterial code', DeepWiki MCP rip-outs). Seeded provisional 2026-10-21 by hand from reviewer feedback that no dependency/supply-chain concept existed and that the Feb 2026 Karpathy DeepWiki post was mis-homed under local model serving.
-    - 2026-10-21 — [Andrej Karpathy](https://x.com/karpathy/status/2036487306585268612): Karpathy on the litellm PyPI supply-chain attack: a plain `pip install litellm` could exfiltrate SSH keys, cloud credentials, Kubernetes con…
-    - 2026-10-21 — [Anže Pečar](https://x.com/anze3db/status/2112616425693266153): Security alert: private keys for 8 intermediate CA certificates were reportedly compromised. Pečar urges upgrading certifi everywhere (uv se…
+- **Claude Code setup & usage** (37 posts, +3 this week)  
+  Claude Code setup guides, cheatsheets, starter packs, and day-to-day usage / steering practices.
+    - 2026-10-28 — [Ryan Hart](https://x.com/thisdudelikesai/status/2115010135588589932): Ryan Hart on Alibaba's open-sourced 'Open Code Review' (link via t.co): an AI code reviewer used internally for two years, claimed to use 9x…
+    - 2026-10-24 — [delost](https://x.com/thedelost/status/2114016386896773177): Hype-styled list of 10 GitHub repos of ready-made Claude Code agents/skills/hooks after Agent Skills became an open spec: wshobson/agents (c…
 
-- **vector / hybrid databases as agent-memory infrastructure** (44 posts, +2 this week)  
-  HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
-    - 2026-10-23 — [Xudong Han](https://x.com/Xudong07452910/status/2113472731542954118): Xudong Han (posting in Chinese, translated) summarizes the 'MemoryTax' article on agent memory cost: building a memory setup cost $25.88 vs …
-    - 2026-10-22 — [Sarah Wooders](https://x.com/sarahwooders/status/2112964548533907613): Sarah Wooders on Letta's FrontierMemory benchmark: existing memory benchmarks only test recall, so it adapts coding/knowledge-work tasks so …
+- **managing agent teams** (26 posts, +3 this week)  
+  Running and managing fleets of agents: multi-agent teams, agent orchestration for teams, onboarding/managing agents, org adoption of coding agents.
+    - 2026-11-04 — [Yarchi](https://x.com/undefinedki/status/2117620474981101940): Yarchi (@undefinedKi) summarizes Anthropic's write-up on rebuilding its dev workflow around agents: code merges grew from ~2,500/day in May …
+    - 2026-10-28 — [Alex Tamkin](https://x.com/alextamkin/status/2115190541688398184): Anthropic research thread (Alex Tamkin): randomized trial of 50 professional data analysts using Claude Code to advise a fictional farming c…
 
 
 ### Revisit from last month
@@ -61,23 +61,25 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 600 | 64.0% |
-| claude-code | 226 | 24.1% |
-| dev-practices | 443 | 47.2% |
+| agent-design | 602 | 64.0% |
+| claude-code | 228 | 24.3% |
+| dev-practices | 445 | 47.3% |
 | skills-mcp | 216 | 23.0% |
-| prompting | 149 | 15.9% |
+| prompting | 150 | 16.0% |
 | research | 276 | 29.4% |
-| industry | 158 | 16.8% |
-| management | 147 | 15.7% |
-| adjacent | 53 | 5.7% |
+| industry | 159 | 16.9% |
+| management | 147 | 15.6% |
+| adjacent | 53 | 5.6% |
 | solo-operator | 13 | 1.4% |
-| questionable | 162 | 17.3% |
+| questionable | 163 | 17.3% |
 | general | 45 | 4.8% |
 
 ---
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-11-04 | Blum | claude-code | Blum (@Blum_OG) shares an 8-step single prompt for Claude Code that ad... |
+| 2026-11-04 | Yarchi | claude-code | Yarchi (@undefinedKi) summarizes Anthropic's write-up on rebuilding it... |
 | 2026-11-03 | Avid | agent-design | Avid (@Av1dlive) advises spending a day teaching your coding agent sys... |
 | 2026-11-03 | Viv | research | Viv (@Vtrivedy10) recommends Max Bittker's RuneScape Bench talk (youtu... |
 | 2026-11-03 | beamnxw ./ | claude-code | Long X Article (2.7M views) giving a seven-layer reusable Claude Code... |
@@ -126,13 +128,17 @@
 | 2026-10-21 | Mia | industry | Mia reports hands-on impressions of Drama TensorFold (github.com/plota... |
 | 2026-10-21 | Caspar | agent-design | Caspar (LangChain) lists the shared primitives of a 'company harness'... |
 | 2026-10-21 | elvis | research | Elvis (DAIR.AI) says to learn to build evals and recommends Hamel Husa... |
-| 2026-10-21 | Anže Pečar | dev-practices | Security alert: private keys for 8 intermediate CA certificates were r... |
-| 2026-10-21 | rody | agent-design | Hype post claiming 'grok bot' plus 'jev' will make more millionaires t... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (600)
+### Agent Design (602)
+
+- [Blum](https://x.com/blum_og/status/2117722452457586810) — 2026-11-04: Blum (@Blum_OG) shares an 8-step single prompt for Claude Code that adds hooks requiring proof of work (commands plus output), a fresh reviewer agent, a list of decisions made on the user's behalf, a 5-question quiz that gates git push, and CLAUDE.md logging of rejected changes. Hype-packaged, but the self-verification and comprehension-gate pattern has real substance; the 'creator of Claude Code' claim is the author's.
+  posted 2026-11-03 · @blum_og · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/blum_og/status/2117722452457586810
+
+- [Yarchi](https://x.com/undefinedki/status/2117620474981101940) — 2026-11-04: Yarchi (@undefinedKi) summarizes Anthropic's write-up on rebuilding its dev workflow around agents: code merges grew from ~2,500/day in May to 30,000+/day by September, so human-era tooling like git and merge queues became the bottleneck. Five practices: engineers decide and review intent rather than lines, a 'superfan' Claude per component, test-after-merge, and agent-native tools (infra cost down 200x).
+  posted 2026-11-03 · @undefinedki · 12.4K views · concept: managing agent teams · url: https://x.com/undefinedki/status/2117620474981101940
 
 - [Avid](https://x.com/av1dlive/status/2117660576575066412) — 2026-11-03: Avid (@Av1dlive) advises spending a day teaching your coding agent system design before it writes any code, and shares '7 rules + the 12-step prompt' as four image slides (image text not captured). A top reply from Adam Wright adds that a per-agent 'never touch' list matters more than the rules. Hook-style packaging, but the idea (design-first prompting for agents) is on-theme.
   posted 2026-11-03 · @Av1dlive · 10.8K views · concept: agent identity files (SOUL.md, CLAUDE.md, persona scaffolds) · url: https://x.com/av1dlive/status/2117660576575066412
@@ -141,7 +147,7 @@
   posted 2026-11-03 · @Vtrivedy10 · 4K views · concept: Claude skills craft · url: https://x.com/vtrivedy10/status/2117644876854505981 · links: youtube.com/watch?v=cNm4zyUtWj0
 
 - [beamnxw ./](https://x.com/beamnxw/status/2107522996046905797) — 2026-11-03: Long X Article (2.7M views) giving a seven-layer reusable Claude Code harness for Opus 5.5 long tasks: CLAUDE.md facts, a SKILL.md procedure, MCP source access, permission/hook action rules, an evidence-reviewer subagent, per-job effort settings, and a /goal completion condition, plus a progress.md handoff for resuming across sessions. Packaged as 'save this / follow for alpha' but grounded in documented Claude Code features and Anthropic docs, with copy-paste snippets.
-  posted 2026-10-06 · @beamnxw · 2.7M views · concept: Claude Code setup & usage · url: https://x.com/beamnxw/status/2107522996046905797
+  posted 2026-10-06 · @beamnxw · 2.7M views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/beamnxw/status/2107522996046905797
 
 - [hayato](https://x.com/hayatomaruu/status/2115937640730022139) — 2026-10-30: Thread (attributed to an unnamed Anthropic engineer, hype-packaged with 'save this' framing) laying out a self-improving eval loop: target ~50% pass rate, mine failed transcripts for new eval cases, score answer plus path, rerun on each new model, gate deploys on evals in CI. The method is practical for agent evals even though the sourcing is unverified; it also quotes beamnxw's article on building a harness around an AI employee.
   posted 2026-10-29 · @hayatomaruu · 26K views · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/hayatomaruu/status/2115937640730022139
@@ -1934,10 +1940,16 @@
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
   @curvedinf · url: https://github.com/curvedinf/dir-assistant
 
-### Claude Code (226)
+### Claude Code (228)
+
+- [Blum](https://x.com/blum_og/status/2117722452457586810) — 2026-11-04: Blum (@Blum_OG) shares an 8-step single prompt for Claude Code that adds hooks requiring proof of work (commands plus output), a fresh reviewer agent, a list of decisions made on the user's behalf, a 5-question quiz that gates git push, and CLAUDE.md logging of rejected changes. Hype-packaged, but the self-verification and comprehension-gate pattern has real substance; the 'creator of Claude Code' claim is the author's.
+  posted 2026-11-03 · @blum_og · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/blum_og/status/2117722452457586810
+
+- [Yarchi](https://x.com/undefinedki/status/2117620474981101940) — 2026-11-04: Yarchi (@undefinedKi) summarizes Anthropic's write-up on rebuilding its dev workflow around agents: code merges grew from ~2,500/day in May to 30,000+/day by September, so human-era tooling like git and merge queues became the bottleneck. Five practices: engineers decide and review intent rather than lines, a 'superfan' Claude per component, test-after-merge, and agent-native tools (infra cost down 200x).
+  posted 2026-11-03 · @undefinedki · 12.4K views · concept: managing agent teams · url: https://x.com/undefinedki/status/2117620474981101940
 
 - [beamnxw ./](https://x.com/beamnxw/status/2107522996046905797) — 2026-11-03: Long X Article (2.7M views) giving a seven-layer reusable Claude Code harness for Opus 5.5 long tasks: CLAUDE.md facts, a SKILL.md procedure, MCP source access, permission/hook action rules, an evidence-reviewer subagent, per-job effort settings, and a /goal completion condition, plus a progress.md handoff for resuming across sessions. Packaged as 'save this / follow for alpha' but grounded in documented Claude Code features and Anthropic docs, with copy-paste snippets.
-  posted 2026-10-06 · @beamnxw · 2.7M views · concept: Claude Code setup & usage · url: https://x.com/beamnxw/status/2107522996046905797
+  posted 2026-10-06 · @beamnxw · 2.7M views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/beamnxw/status/2107522996046905797
 
 - [Alexander Yue](https://x.com/alezander9/status/2115842962521509968) — 2026-10-30: Alexander Yue argues context compaction in Claude Code/Codex is a mistake: on a ~400k-token Opus 5.5 session it costs $0.17-$1.99 and loses exact details. His open-source (MIT) Mainplane starts a fresh session that retrieves exact lines from the full prior session file, resuming in 15s for $0.10. Tagged 'compare with existing solution' in the subject line.
   posted 2026-10-29 · @Alezander9 · 550K views · concept: agent identity files (SOUL.md, CLAUDE.md, persona scaffolds) · url: https://x.com/alezander9/status/2115842962521509968
@@ -2147,7 +2159,7 @@
   posted 2026-07-03 · @danielmiessler · 21.6K views · concept: Fable 5 access & usage · url: https://x.com/danielmiessler/status/2073076322390384798
 
 - [Dhilip Subramanian](https://x.com/sdhilip/status/2072334422414876957) — 2026-07-02: Dhilip walks through his 7-skill Claude Code setup and what each earns its spot for: data engineering (dbt/Airflow), gstack, grill-me, superpowers (spec/plan/TDD), impeccable (UI audit), last30days, and printing-press (API/site to token-light CLI). Advice: start small, add a skill only when you hit a job your current ones can't do.
-  posted 2026-07-01 · @sdhilip · 26.6K views · concept: Claude Code setup & usage · url: https://x.com/sdhilip/status/2072334422414876957
+  posted 2026-07-01 · @sdhilip · 26.6K views · concept: context economy — routing tables beat big context · url: https://x.com/sdhilip/status/2072334422414876957
 
 - [Andrew Ng](https://x.com/andrewyng/status/2071988145667928442) — 2026-07-02: Andrew Ng's 'loop engineering' letter lays out three nested loops for building 0-to-1 products: the fast agentic coding loop (agent writes/tests/iterates every few minutes), the developer feedback loop (human steers over tens of minutes to hours), and the slow external feedback loop (alpha testers, A/B tests over days). Humans retain a context advantage, so engineers increasingly play a partial product-management role.
   posted 2026-06-30 · @AndrewYNg · 622.9K views · concept: loop engineering · url: https://x.com/andrewyng/status/2071988145667928442 · links: https://x.com/AndrewYNg/status/2071988145667928442
@@ -2402,7 +2414,7 @@
   posted 2026-04-13 · @alexfinn · 245.2K views · concept: agent identity files (SOUL.md, CLAUDE.md, persona scaffolds) · url: https://x.com/alexfinn/status/2043719233213980922 · links: https://x.com/garrytan/status/2043581361798500602
 
 - [Tech with Mak](https://x.com/technmak/status/2043683120319520806) — 2026-04-14: Distills three Karpathy critiques of coding agents (wrong assumptions unchecked, overcomplication/bloat, editing code they don't understand) into a drop-in CLAUDE.md with four principles: (1) think before coding / surface ambiguity and push back, (2) simplicity first / no unrequested abstractions, (3) surgical changes / don't touch adjacent code, (4) goal-driven execution / turn tasks into failing tests then loop to green. Practical, copy-paste engineering guardrails.
-  posted 2026-04-13 · @technmak · 190.4K views · concept: Claude Code setup & usage · url: https://x.com/technmak/status/2043683120319520806
+  posted 2026-04-13 · @technmak · 190.4K views · concept: context economy — routing tables beat big context · url: https://x.com/technmak/status/2043683120319520806
 
 - [Noisy](https://x.com/noisyb0y1/status/2043609541477044439) — 2026-04-14: Viral thread (3.4M views) claiming a Google engineer automated 80% of his job with Claude Code and a small .NET app, now working 2-3 hours a day with $28,000 in passive income. The salvageable technical content is Part 1: a CLAUDE.md built from Karpathy's catalogue of common LLM coding failures — over-engineering, ignoring existing patterns, adding unrequested dependencies — turned into explicit rules. Points at github.com/affaan-m/everything-claude-code. Income and automation claims are unverified and shaped for reach; the CLAUDE.md rules are the part worth lifting.
   posted 2026-04-13 · @noisyb0y1 · 3.4M views · concept: Claude Code setup & usage · url: https://x.com/noisyb0y1/status/2043609541477044439 · links: https://github.com/affaan-m/everything-claude-code
@@ -2614,7 +2626,13 @@
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
   @curvedinf · url: https://github.com/curvedinf/dir-assistant
 
-### Dev Practices (443)
+### Dev Practices (445)
+
+- [Blum](https://x.com/blum_og/status/2117722452457586810) — 2026-11-04: Blum (@Blum_OG) shares an 8-step single prompt for Claude Code that adds hooks requiring proof of work (commands plus output), a fresh reviewer agent, a list of decisions made on the user's behalf, a 5-question quiz that gates git push, and CLAUDE.md logging of rejected changes. Hype-packaged, but the self-verification and comprehension-gate pattern has real substance; the 'creator of Claude Code' claim is the author's.
+  posted 2026-11-03 · @blum_og · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/blum_og/status/2117722452457586810
+
+- [Yarchi](https://x.com/undefinedki/status/2117620474981101940) — 2026-11-04: Yarchi (@undefinedKi) summarizes Anthropic's write-up on rebuilding its dev workflow around agents: code merges grew from ~2,500/day in May to 30,000+/day by September, so human-era tooling like git and merge queues became the bottleneck. Five practices: engineers decide and review intent rather than lines, a 'superfan' Claude per component, test-after-merge, and agent-native tools (infra cost down 200x).
+  posted 2026-11-03 · @undefinedki · 12.4K views · concept: managing agent teams · url: https://x.com/undefinedki/status/2117620474981101940
 
 - [Avid](https://x.com/av1dlive/status/2117660576575066412) — 2026-11-03: Avid (@Av1dlive) advises spending a day teaching your coding agent system design before it writes any code, and shares '7 rules + the 12-step prompt' as four image slides (image text not captured). A top reply from Adam Wright adds that a per-agent 'never touch' list matters more than the rules. Hook-style packaging, but the idea (design-first prompting for agents) is on-theme.
   posted 2026-11-03 · @Av1dlive · 10.8K views · concept: agent identity files (SOUL.md, CLAUDE.md, persona scaffolds) · url: https://x.com/av1dlive/status/2117660576575066412
@@ -2623,7 +2641,7 @@
   posted 2026-11-03 · @Vtrivedy10 · 4K views · concept: Claude skills craft · url: https://x.com/vtrivedy10/status/2117644876854505981 · links: youtube.com/watch?v=cNm4zyUtWj0
 
 - [beamnxw ./](https://x.com/beamnxw/status/2107522996046905797) — 2026-11-03: Long X Article (2.7M views) giving a seven-layer reusable Claude Code harness for Opus 5.5 long tasks: CLAUDE.md facts, a SKILL.md procedure, MCP source access, permission/hook action rules, an evidence-reviewer subagent, per-job effort settings, and a /goal completion condition, plus a progress.md handoff for resuming across sessions. Packaged as 'save this / follow for alpha' but grounded in documented Claude Code features and Anthropic docs, with copy-paste snippets.
-  posted 2026-10-06 · @beamnxw · 2.7M views · concept: Claude Code setup & usage · url: https://x.com/beamnxw/status/2107522996046905797
+  posted 2026-10-06 · @beamnxw · 2.7M views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/beamnxw/status/2107522996046905797
 
 - [hayato](https://x.com/hayatomaruu/status/2115937640730022139) — 2026-10-30: Thread (attributed to an unnamed Anthropic engineer, hype-packaged with 'save this' framing) laying out a self-improving eval loop: target ~50% pass rate, mine failed transcripts for new eval cases, score answer plus path, rerun on each new model, gate deploys on evals in CI. The method is practical for agent evals even though the sourcing is unverified; it also quotes beamnxw's article on building a harness around an AI employee.
   posted 2026-10-29 · @hayatomaruu · 26K views · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/hayatomaruu/status/2115937640730022139
@@ -3121,7 +3139,7 @@
   posted 2026-07-02 · @sairahul1 · 241.3K views · concept: loop engineering · url: https://x.com/sairahul1/status/2072749611471835229 · links: https://signals.forwardfuture.com/loop-library
 
 - [Dhilip Subramanian](https://x.com/sdhilip/status/2072334422414876957) — 2026-07-02: Dhilip walks through his 7-skill Claude Code setup and what each earns its spot for: data engineering (dbt/Airflow), gstack, grill-me, superpowers (spec/plan/TDD), impeccable (UI audit), last30days, and printing-press (API/site to token-light CLI). Advice: start small, add a skill only when you hit a job your current ones can't do.
-  posted 2026-07-01 · @sdhilip · 26.6K views · concept: Claude Code setup & usage · url: https://x.com/sdhilip/status/2072334422414876957
+  posted 2026-07-01 · @sdhilip · 26.6K views · concept: context economy — routing tables beat big context · url: https://x.com/sdhilip/status/2072334422414876957
 
 - [Andrew Ng](https://x.com/andrewyng/status/2071988145667928442) — 2026-07-02: Andrew Ng's 'loop engineering' letter lays out three nested loops for building 0-to-1 products: the fast agentic coding loop (agent writes/tests/iterates every few minutes), the developer feedback loop (human steers over tens of minutes to hours), and the slow external feedback loop (alpha testers, A/B tests over days). Humans retain a context advantage, so engineers increasingly play a partial product-management role.
   posted 2026-06-30 · @AndrewYNg · 622.9K views · concept: loop engineering · url: https://x.com/andrewyng/status/2071988145667928442 · links: https://x.com/AndrewYNg/status/2071988145667928442
@@ -3277,7 +3295,7 @@
   posted 2026-05-22 · @garrytan · 118.1K views · concept: founder philosophy & life-design essays · url: https://x.com/garrytan/status/2057946119725080878 · links: https://forbes.com/sites/josipamajic/2026/04/12/the-yc-chief-who-codes-10000-lines-a-day-has-a-simple-secret
 
 - [Charly Wargnier](https://x.com/datachaz/status/2057787509728522463) — 2026-05-23: Repo pointer to addyosmani/agent-skills, a collection of production-grade engineering skills for AI coding agents. github.com/addyosmani/agent-skills
-  posted 2026-05-22 · @DataChaz · 1,504 views · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/datachaz/status/2057787509728522463 · links: https://github.com/addyosmani/agent-skills
+  posted 2026-05-22 · @DataChaz · 1,504 views · concept: Claude skills craft · url: https://x.com/datachaz/status/2057787509728522463 · links: https://github.com/addyosmani/agent-skills
 
 - [Ahmad](https://x.com/theahmadosman/status/2057590791241896254) — 2026-05-22: 'LLMs 101: A Practical Guide (2026 Edition)', free to read, covering model mechanics (tokenizers, transformers, attention, KV cache, prefill vs decode, decoding controls, chat templates, long context, RAG, tool use, fine-tuning, multimodal) and then connecting them to local deployment (open-weight vs open-source, quantization, VRAM math, hardware tiers, file formats and load safety, runtimes, model selection, privacy, failure modes, benchmarks). Unusually complete single-source reference.
   posted 2026-05-21 · @TheAhmadOsman · 188K views · concept: local model serving on consumer GPUs — quantization & throughput · url: https://x.com/theahmadosman/status/2057590791241896254
@@ -3550,7 +3568,7 @@
   posted 2026-04-13 · @akshay_pachaar · 629.8K views · concept: vector / hybrid databases as agent-memory infrastructure · url: https://x.com/akshay_pachaar/status/2043745099792953508 · links: https://github.com/topoteretes/cognee
 
 - [Tech with Mak](https://x.com/technmak/status/2043683120319520806) — 2026-04-14: Distills three Karpathy critiques of coding agents (wrong assumptions unchecked, overcomplication/bloat, editing code they don't understand) into a drop-in CLAUDE.md with four principles: (1) think before coding / surface ambiguity and push back, (2) simplicity first / no unrequested abstractions, (3) surgical changes / don't touch adjacent code, (4) goal-driven execution / turn tasks into failing tests then loop to green. Practical, copy-paste engineering guardrails.
-  posted 2026-04-13 · @technmak · 190.4K views · concept: Claude Code setup & usage · url: https://x.com/technmak/status/2043683120319520806
+  posted 2026-04-13 · @technmak · 190.4K views · concept: context economy — routing tables beat big context · url: https://x.com/technmak/status/2043683120319520806
 
 - [Vaishnavi](https://x.com/_vmlops/status/2043624154646409708) — 2026-04-14: Google open-sourced Magika (github.com/google/magika), the ML file-type detector it runs internally across Gmail, Drive, and Safe Browsing at hundreds of billions of files per week. It identifies true content type regardless of extension — catching malware renamed to resume.pdf or a script disguised as an image — trained on 100M files across 200+ content types at ~99% accuracy and ~5ms per file, installable via pip. All-caps packaging on a genuinely battle-tested security utility.
   posted 2026-04-13 · @_vmlops · 512.8K views · concept: document parsing & extraction tooling · url: https://x.com/_vmlops/status/2043624154646409708 · links: https://github.com/google/magika
@@ -3948,7 +3966,7 @@
 ### Skills & MCP (216)
 
 - [beamnxw ./](https://x.com/beamnxw/status/2107522996046905797) — 2026-11-03: Long X Article (2.7M views) giving a seven-layer reusable Claude Code harness for Opus 5.5 long tasks: CLAUDE.md facts, a SKILL.md procedure, MCP source access, permission/hook action rules, an evidence-reviewer subagent, per-job effort settings, and a /goal completion condition, plus a progress.md handoff for resuming across sessions. Packaged as 'save this / follow for alpha' but grounded in documented Claude Code features and Anthropic docs, with copy-paste snippets.
-  posted 2026-10-06 · @beamnxw · 2.7M views · concept: Claude Code setup & usage · url: https://x.com/beamnxw/status/2107522996046905797
+  posted 2026-10-06 · @beamnxw · 2.7M views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/beamnxw/status/2107522996046905797
 
 - [Allie the Icon](https://x.com/allietheicon/status/2115206109271331044) — 2026-10-28: Allie the Icon describes a 'line-by-line search' pattern (from a Jev cookbook): put an entire document in state and ask a question per line/paragraph, using nulls for a single dominant answer or scores for all relevant passages. Points to a cookbook for trying it in your own project; a reply notes edge cases where exceptions drop out.
   posted 2026-10-27 · @allietheicon · url: https://x.com/allietheicon/status/2115206109271331044
@@ -4155,7 +4173,7 @@
   posted 2026-07-03 · @archiveexplorer · concept: Claude Code setup & usage · url: https://x.com/archiveexplorer/status/2073136973162872897
 
 - [Dhilip Subramanian](https://x.com/sdhilip/status/2072334422414876957) — 2026-07-02: Dhilip walks through his 7-skill Claude Code setup and what each earns its spot for: data engineering (dbt/Airflow), gstack, grill-me, superpowers (spec/plan/TDD), impeccable (UI audit), last30days, and printing-press (API/site to token-light CLI). Advice: start small, add a skill only when you hit a job your current ones can't do.
-  posted 2026-07-01 · @sdhilip · 26.6K views · concept: Claude Code setup & usage · url: https://x.com/sdhilip/status/2072334422414876957
+  posted 2026-07-01 · @sdhilip · 26.6K views · concept: context economy — routing tables beat big context · url: https://x.com/sdhilip/status/2072334422414876957
 
 - [Akshay](https://x.com/akshay_pachaar/status/2071509401224261823) — 2026-06-29: Walkthrough of Google's Agents CLI as tooling for Karpathy's "agentic engineering" (spec design, eval loops, security). One setup command injects 7 ADK-specific skills into a coding agent; author built and deployed a RAG agent end-to-end with Claude Code, including 20 LLM-as-judge eval scenarios and enterprise registration.
   posted 2026-06-29 · @akshay_pachaar · 224.1K views · concept: agents as constrained software — making bad shapes unexpressible · url: https://x.com/akshay_pachaar/status/2071509401224261823
@@ -4248,7 +4266,7 @@
   posted 2026-05-23 · @nurijanian · 151.3K views · url: https://x.com/nurijanian/status/2058259663238631890 · links: https://github.com/gnurio/tufte-vdqi-plugin
 
 - [Charly Wargnier](https://x.com/datachaz/status/2057787509728522463) — 2026-05-23: Repo pointer to addyosmani/agent-skills, a collection of production-grade engineering skills for AI coding agents. github.com/addyosmani/agent-skills
-  posted 2026-05-22 · @DataChaz · 1,504 views · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/datachaz/status/2057787509728522463 · links: https://github.com/addyosmani/agent-skills
+  posted 2026-05-22 · @DataChaz · 1,504 views · concept: Claude skills craft · url: https://x.com/datachaz/status/2057787509728522463 · links: https://github.com/addyosmani/agent-skills
 
 - [swyx](https://x.com/swyx/status/2057559570177007912) — 2026-05-22: swyx is building a skill that converts a vibecoded prototype into a production-ready, end-to-end tested, maintainable, parallelizable agent repo. Reported run: ~16 hours and 103 commits producing functionally the same app on a foundation he can keep building on. A concrete data point on long-horizon autonomous refactoring, and the practical counterpart to the software-factory and no-slop material elsewhere in the collection.
   posted 2026-05-21 · @swyx · 83.7K views · concept: agents as constrained software — making bad shapes unexpressible · url: https://x.com/swyx/status/2057559570177007912
@@ -4595,7 +4613,10 @@
 - [Mervin Praison](https://x.com/mervinpraison/status/1881788246684013011) — 2025-01-22: Shows a 100% local RAG AI agent with reasoning: DeepSeek via Ollama for the LLM, PraisonAI to build the agent in a few lines, Nomic embeddings, and a Streamlit UI—code included in the thread.
   posted 2025-01-21 · @MervinPraison · 59.8K views · url: https://x.com/mervinpraison/status/1881788246684013011
 
-### Prompting (149)
+### Prompting (150)
+
+- [Blum](https://x.com/blum_og/status/2117722452457586810) — 2026-11-04: Blum (@Blum_OG) shares an 8-step single prompt for Claude Code that adds hooks requiring proof of work (commands plus output), a fresh reviewer agent, a list of decisions made on the user's behalf, a 5-question quiz that gates git push, and CLAUDE.md logging of rejected changes. Hype-packaged, but the self-verification and comprehension-gate pattern has real substance; the 'creator of Claude Code' claim is the author's.
+  posted 2026-11-03 · @blum_og · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/blum_og/status/2117722452457586810
 
 - [Avid](https://x.com/av1dlive/status/2117660576575066412) — 2026-11-03: Avid (@Av1dlive) advises spending a day teaching your coding agent system design before it writes any code, and shares '7 rules + the 12-step prompt' as four image slides (image text not captured). A top reply from Adam Wright adds that a per-agent 'never touch' list matters more than the rules. Hook-style packaging, but the idea (design-first prompting for agents) is on-theme.
   posted 2026-11-03 · @Av1dlive · 10.8K views · concept: agent identity files (SOUL.md, CLAUDE.md, persona scaffolds) · url: https://x.com/av1dlive/status/2117660576575066412
@@ -4721,7 +4742,7 @@
   posted 2026-07-24 · @anatolikopadze · 395.1K views · url: https://x.com/anatolikopadze/status/2080702441809399834
 
 - [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making) — 2026-07-24: Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI dev schism": he argues that having AI build something you initiated — code, art, prose, even a deck — isn't the same as *making* it, and the loss of "making" (distinct from loss of craft or problem-solving) is what leaves him unfulfilled. He works the gray area — a compiler or assembler feels like a tool you make *with*, while an LLM feels like a report you *delegate* to — and lands on prompting-as-skill being real (vision, judgment, communication) but closer to "asking someone to make something for you" than making it yourself. (beej.us/blog/data/ai-making)
-  concept: Anthropic Skilljar — free AI academy & courses · url: https://beej.us/blog/data/ai-making
+  concept: founder philosophy & life-design essays · url: https://beej.us/blog/data/ai-making
 
 - [Paul Hudson](https://x.com/twostraws/status/2078039730759811369) — 2026-07-17: Shares a reusable 'adversarial unit test sweep' prompt (set Codex/Sol to Ultra reasoning): deliberately target edge cases, malformed inputs, race conditions, boundary values, resource exhaustion, state corruption, and invalid assumptions; make every test earn its place, remove or consolidate weak/redundant tests, fix every failing test, add permanent regression tests for each bug found, and repeat until the suite passes cleanly with strong coverage. Argues AI-driven adversarial test review is one of the easiest high-value practices to adopt.
   posted 2026-07-17 · @twostraws · 33.4K views · concept: agentic code review at production scale · url: https://x.com/twostraws/status/2078039730759811369
@@ -4922,7 +4943,7 @@
   posted 2026-04-13 · @alexfinn · 245.2K views · concept: agent identity files (SOUL.md, CLAUDE.md, persona scaffolds) · url: https://x.com/alexfinn/status/2043719233213980922 · links: https://x.com/garrytan/status/2043581361798500602
 
 - [Tech with Mak](https://x.com/technmak/status/2043683120319520806) — 2026-04-14: Distills three Karpathy critiques of coding agents (wrong assumptions unchecked, overcomplication/bloat, editing code they don't understand) into a drop-in CLAUDE.md with four principles: (1) think before coding / surface ambiguity and push back, (2) simplicity first / no unrequested abstractions, (3) surgical changes / don't touch adjacent code, (4) goal-driven execution / turn tasks into failing tests then loop to green. Practical, copy-paste engineering guardrails.
-  posted 2026-04-13 · @technmak · 190.4K views · concept: Claude Code setup & usage · url: https://x.com/technmak/status/2043683120319520806
+  posted 2026-04-13 · @technmak · 190.4K views · concept: context economy — routing tables beat big context · url: https://x.com/technmak/status/2043683120319520806
 
 - [Garry Tan](https://x.com/garrytan/status/2043581361798500602) — 2026-04-13: Garry Tan shares a new entry for his agent's SOUL.md, posted as an image. The text was transcribed by Alex Finn in a widely-shared follow-up: the marginal cost of completeness is near zero with AI, so do the whole thing — with tests, with documentation — never offer to table something when the permanent fix is within reach, and never leave a dangling thread. At 498K views this became one of the more copied agent-instruction snippets of the period; see the Alex Finn post in this collection for the full text.
   posted 2026-04-13 · @garrytan · 498.1K views · concept: agents-as-judges-of-agents — bossman supervisor / self-verification · url: https://x.com/garrytan/status/2043581361798500602
@@ -5874,7 +5895,10 @@
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.
   posted 2024-06-10 · @svpino · 1M views · url: https://x.com/svpino/status/1800151091461652740
 
-### Industry (158)
+### Industry (159)
+
+- [Yarchi](https://x.com/undefinedki/status/2117620474981101940) — 2026-11-04: Yarchi (@undefinedKi) summarizes Anthropic's write-up on rebuilding its dev workflow around agents: code merges grew from ~2,500/day in May to 30,000+/day by September, so human-era tooling like git and merge queues became the bottleneck. Five practices: engineers decide and review intent rather than lines, a 'superfan' Claude per component, test-after-merge, and agent-native tools (infra cost down 200x).
+  posted 2026-11-03 · @undefinedki · 12.4K views · concept: managing agent teams · url: https://x.com/undefinedki/status/2117620474981101940
 
 - [Joseph Cox](https://x.com/josephfcox/status/2115868430897385497) — 2026-10-30: Joseph Cox (404 Media) reports on Proton's CTO's internal AI manifesto (404media.co), quoting a line about winning on perception over truth when communicating Proton Mail's encryption. Useful as a window into how a privacy-focused company's leadership is steering an AI pivot and its internal messaging.
   posted 2026-10-29 · @josephfcox · 109K views · url: https://x.com/josephfcox/status/2115868430897385497
@@ -6443,7 +6467,7 @@
   posted 2026-07-24 · @ruxandrateslo · concept: vibecode-to-production via agent skills · url: https://x.com/ruxandrateslo/status/2080661595802198468
 
 - [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making) — 2026-07-24: Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI dev schism": he argues that having AI build something you initiated — code, art, prose, even a deck — isn't the same as *making* it, and the loss of "making" (distinct from loss of craft or problem-solving) is what leaves him unfulfilled. He works the gray area — a compiler or assembler feels like a tool you make *with*, while an LLM feels like a report you *delegate* to — and lands on prompting-as-skill being real (vision, judgment, communication) but closer to "asking someone to make something for you" than making it yourself. (beej.us/blog/data/ai-making)
-  concept: Anthropic Skilljar — free AI academy & courses · url: https://beej.us/blog/data/ai-making
+  concept: founder philosophy & life-design essays · url: https://beej.us/blog/data/ai-making
 
 - [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler) — 2026-07-20: Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically integrated 'multi-compiler' working across strategy, product, architecture, code, and machine code — augmenting the engineer's judgment about which decisions matter (vibe-engineering). Case study: building a geographically distributed, consistent DNS server for exe.dev via concurrent agent loops plus repeated differential spec analysis (commaok.xyz/ai/differential-spec), distilled into a terse 'scar-tissue' guidance doc. ~1 week of attention, almost no code read, zero incidents a month post-launch.
   concept: loop engineering · url: https://blog.exe.dev/claude-is-not-a-compiler · links: https://commaok.xyz/ai/differential-spec
@@ -6874,7 +6898,7 @@
   posted 2026-08-13 · @rubenhassid · — views · concept: agents-as-judges-of-agents — bossman supervisor / self-verification · url: https://x.com/rubenhassid/status/2087856703773508025
 
 - [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making) — 2026-07-24: Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI dev schism": he argues that having AI build something you initiated — code, art, prose, even a deck — isn't the same as *making* it, and the loss of "making" (distinct from loss of craft or problem-solving) is what leaves him unfulfilled. He works the gray area — a compiler or assembler feels like a tool you make *with*, while an LLM feels like a report you *delegate* to — and lands on prompting-as-skill being real (vision, judgment, communication) but closer to "asking someone to make something for you" than making it yourself. (beej.us/blog/data/ai-making)
-  concept: Anthropic Skilljar — free AI academy & courses · url: https://beej.us/blog/data/ai-making
+  concept: founder philosophy & life-design essays · url: https://beej.us/blog/data/ai-making
 
 - [ℏεsam](https://x.com/hesamation/status/2073104617706008840) — 2026-07-04: [Jeremy flagged: read for work] hesam recommends Phil Chen's article 'Career advice in the age of AI' (Chen: a researcher from OpenAI, DeepMind, and Stanford). TL;DR: AI makes execution cheaper, so the durable edge is choosing the right problems, building strong connections, and investing real time — the argument being that AI models improve at anything you can write a loss function for, and school is mostly loss functions (well-defined problems graded against known answers), so the valuable work shifts elsewhere.
   posted 2026-07-03 · @hesamation · 689.8K views · concept: vibecode-to-production via agent skills · url: https://x.com/hesamation/status/2073104617706008840
@@ -6995,13 +7019,16 @@
 - [zostaff](https://x.com/zostaff/status/2033930728044372275) — 2026-03-18: zostaff's clickbait-titled ('How to Quit Your Job in One Day') walkthrough of an autonomous Polymarket trading system built from three agents: Claude (strategist — probability/recommendation/confidence), Codex (engineer — writes and debugs bot code), and OpenClaw (orchestrator — persistent memory, cron, modular skills, Telegram interface that executes trades and logs everything).
   posted 2026-03-17 · @zostaff · 3M views · concept: prediction-market & crypto trading bots · url: https://x.com/zostaff/status/2033930728044372275
 
-### Questionable (162)
+### Questionable (163)
+
+- [Blum](https://x.com/blum_og/status/2117722452457586810) — 2026-11-04: Blum (@Blum_OG) shares an 8-step single prompt for Claude Code that adds hooks requiring proof of work (commands plus output), a fresh reviewer agent, a list of decisions made on the user's behalf, a 5-question quiz that gates git push, and CLAUDE.md logging of rejected changes. Hype-packaged, but the self-verification and comprehension-gate pattern has real substance; the 'creator of Claude Code' claim is the author's.
+  posted 2026-11-03 · @blum_og · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/blum_og/status/2117722452457586810
 
 - [Avid](https://x.com/av1dlive/status/2117660576575066412) — 2026-11-03: Avid (@Av1dlive) advises spending a day teaching your coding agent system design before it writes any code, and shares '7 rules + the 12-step prompt' as four image slides (image text not captured). A top reply from Adam Wright adds that a per-agent 'never touch' list matters more than the rules. Hook-style packaging, but the idea (design-first prompting for agents) is on-theme.
   posted 2026-11-03 · @Av1dlive · 10.8K views · concept: agent identity files (SOUL.md, CLAUDE.md, persona scaffolds) · url: https://x.com/av1dlive/status/2117660576575066412
 
 - [beamnxw ./](https://x.com/beamnxw/status/2107522996046905797) — 2026-11-03: Long X Article (2.7M views) giving a seven-layer reusable Claude Code harness for Opus 5.5 long tasks: CLAUDE.md facts, a SKILL.md procedure, MCP source access, permission/hook action rules, an evidence-reviewer subagent, per-job effort settings, and a /goal completion condition, plus a progress.md handoff for resuming across sessions. Packaged as 'save this / follow for alpha' but grounded in documented Claude Code features and Anthropic docs, with copy-paste snippets.
-  posted 2026-10-06 · @beamnxw · 2.7M views · concept: Claude Code setup & usage · url: https://x.com/beamnxw/status/2107522996046905797
+  posted 2026-10-06 · @beamnxw · 2.7M views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/beamnxw/status/2107522996046905797
 
 - [hayato](https://x.com/hayatomaruu/status/2115937640730022139) — 2026-10-30: Thread (attributed to an unnamed Anthropic engineer, hype-packaged with 'save this' framing) laying out a self-improving eval loop: target ~50% pass rate, mine failed transcripts for new eval cases, score answer plus path, rerun on each new model, gate deploys on evals in CI. The method is practical for agent evals even though the sourcing is unverified; it also quotes beamnxw's article on building a harness around an AI employee.
   posted 2026-10-29 · @hayatomaruu · 26K views · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/hayatomaruu/status/2115937640730022139
@@ -7495,7 +7522,7 @@
   posted 2026-01-17 · @oliviscusai · concept: agents-as-judges-of-agents — bossman supervisor / self-verification · url: https://x.com/oliviscusai/status/2012551369488540115 · links: https://github.com/rednote-hilab
 
 - [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making) — 2026-07-24: Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI dev schism": he argues that having AI build something you initiated — code, art, prose, even a deck — isn't the same as *making* it, and the loss of "making" (distinct from loss of craft or problem-solving) is what leaves him unfulfilled. He works the gray area — a compiler or assembler feels like a tool you make *with*, while an LLM feels like a report you *delegate* to — and lands on prompting-as-skill being real (vision, judgment, communication) but closer to "asking someone to make something for you" than making it yourself. (beej.us/blog/data/ai-making)
-  concept: Anthropic Skilljar — free AI academy & courses · url: https://beej.us/blog/data/ai-making
+  concept: founder philosophy & life-design essays · url: https://beej.us/blog/data/ai-making
 
 - [argofowl](https://x.com/argofowl/status/2076284369883615555) — 2026-07-17: Introduces namethatui.com — a dictionary for UI elements you can see but can't name, built by a designer to lower the friction of describing UI when prompting coding agents. It learns from usage: every search teaches the site new words and grows a built-in pocket dictionary.
   posted 2026-07-12 · @argofowl · 756.2K views · url: https://x.com/argofowl/status/2076284369883615555 · links: https://namethatui.com
@@ -7625,6 +7652,14 @@
 
 ### Nov 2026
 
+- **2026-11-04** | [Blum](https://x.com/blum_og/status/2117722452457586810) | claude-code, dev-practices, agent-design, prompting, questionable
+  Blum (@Blum_OG) shares an 8-step single prompt for Claude Code that adds hooks requiring proof of work (commands plus output), a fresh reviewer agent, a list of decisions made on the user's behalf, a 5-question quiz that gates git push, and CLAUDE.md logging of rejected changes. Hype-packaged, but the self-verification and comprehension-gate pattern has real substance; the 'creator of Claude Code' claim is the author's.
+  posted 2026-11-03 · @blum_og · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/blum_og/status/2117722452457586810
+
+- **2026-11-04** | [Yarchi](https://x.com/undefinedki/status/2117620474981101940) | claude-code, agent-design, dev-practices, industry
+  Yarchi (@undefinedKi) summarizes Anthropic's write-up on rebuilding its dev workflow around agents: code merges grew from ~2,500/day in May to 30,000+/day by September, so human-era tooling like git and merge queues became the bottleneck. Five practices: engineers decide and review intent rather than lines, a 'superfan' Claude per component, test-after-merge, and agent-native tools (infra cost down 200x).
+  posted 2026-11-03 · @undefinedki · 12.4K views · concept: managing agent teams · url: https://x.com/undefinedki/status/2117620474981101940
+
 - **2026-11-03** | [Avid](https://x.com/av1dlive/status/2117660576575066412) | agent-design, prompting, dev-practices, questionable
   Avid (@Av1dlive) advises spending a day teaching your coding agent system design before it writes any code, and shares '7 rules + the 12-step prompt' as four image slides (image text not captured). A top reply from Adam Wright adds that a per-agent 'never touch' list matters more than the rules. Hook-style packaging, but the idea (design-first prompting for agents) is on-theme.
   posted 2026-11-03 · @Av1dlive · 10.8K views · concept: agent identity files (SOUL.md, CLAUDE.md, persona scaffolds) · url: https://x.com/av1dlive/status/2117660576575066412
@@ -7635,7 +7670,7 @@
 
 - **2026-11-03** | [beamnxw ./](https://x.com/beamnxw/status/2107522996046905797) | claude-code, agent-design, dev-practices, skills-mcp, questionable
   Long X Article (2.7M views) giving a seven-layer reusable Claude Code harness for Opus 5.5 long tasks: CLAUDE.md facts, a SKILL.md procedure, MCP source access, permission/hook action rules, an evidence-reviewer subagent, per-job effort settings, and a /goal completion condition, plus a progress.md handoff for resuming across sessions. Packaged as 'save this / follow for alpha' but grounded in documented Claude Code features and Anthropic docs, with copy-paste snippets.
-  posted 2026-10-06 · @beamnxw · 2.7M views · concept: Claude Code setup & usage · url: https://x.com/beamnxw/status/2107522996046905797
+  posted 2026-10-06 · @beamnxw · 2.7M views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/beamnxw/status/2107522996046905797
 
 ### Oct 2026
 
@@ -8787,7 +8822,7 @@
 
 - **2026-07-24** | [Brian "Beej Jorgensen" Hall](https://beej.us/blog/data/ai-making) | management, general, prompting, adjacent
   Beej (Brian "Beej Jorgensen" Hall — Gen-X hacker, 20-yr industry veteran, and CS instructor at Oregon State-Cascades) reflects on the "AI dev schism": he argues that having AI build something you initiated — code, art, prose, even a deck — isn't the same as *making* it, and the loss of "making" (distinct from loss of craft or problem-solving) is what leaves him unfulfilled. He works the gray area — a compiler or assembler feels like a tool you make *with*, while an LLM feels like a report you *delegate* to — and lands on prompting-as-skill being real (vision, judgment, communication) but closer to "asking someone to make something for you" than making it yourself. (beej.us/blog/data/ai-making)
-  concept: Anthropic Skilljar — free AI academy & courses · url: https://beej.us/blog/data/ai-making
+  concept: founder philosophy & life-design essays · url: https://beej.us/blog/data/ai-making
 
 - **2026-07-20** | [Josh Bleecher Snyder](https://blog.exe.dev/claude-is-not-a-compiler) | agent-design, dev-practices, management
   Argues a coding agent is better than a compiler: not a new layer that 'compiles' language to code (that's vibe-coding), but a vertically integrated 'multi-compiler' working across strategy, product, architecture, code, and machine code — augmenting the engineer's judgment about which decisions matter (vibe-engineering). Case study: building a geographically distributed, consistent DNS server for exe.dev via concurrent agent loops plus repeated differential spec analysis (commaok.xyz/ai/differential-spec), distilled into a terse 'scar-tissue' guidance doc. ~1 week of attention, almost no code read, zero incidents a month post-launch.
@@ -9015,7 +9050,7 @@
 
 - **2026-07-02** | [Dhilip Subramanian](https://x.com/sdhilip/status/2072334422414876957) | claude-code, skills-mcp, dev-practices
   Dhilip walks through his 7-skill Claude Code setup and what each earns its spot for: data engineering (dbt/Airflow), gstack, grill-me, superpowers (spec/plan/TDD), impeccable (UI audit), last30days, and printing-press (API/site to token-light CLI). Advice: start small, add a skill only when you hit a job your current ones can't do.
-  posted 2026-07-01 · @sdhilip · 26.6K views · concept: Claude Code setup & usage · url: https://x.com/sdhilip/status/2072334422414876957
+  posted 2026-07-01 · @sdhilip · 26.6K views · concept: context economy — routing tables beat big context · url: https://x.com/sdhilip/status/2072334422414876957
 
 - **2026-07-02** | [Andrew Ng](https://x.com/andrewyng/status/2071988145667928442) | agent-design, dev-practices, claude-code, management
   Andrew Ng's 'loop engineering' letter lays out three nested loops for building 0-to-1 products: the fast agentic coding loop (agent writes/tests/iterates every few minutes), the developer feedback loop (human steers over tens of minutes to hours), and the slow external feedback loop (alpha testers, A/B tests over days). Humans retain a context advantage, so engineers increasingly play a partial product-management role.
@@ -9459,7 +9494,7 @@
 
 - **2026-05-23** | [Charly Wargnier](https://x.com/datachaz/status/2057787509728522463) | dev-practices, skills-mcp
   Repo pointer to addyosmani/agent-skills, a collection of production-grade engineering skills for AI coding agents. github.com/addyosmani/agent-skills
-  posted 2026-05-22 · @DataChaz · 1,504 views · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/datachaz/status/2057787509728522463 · links: https://github.com/addyosmani/agent-skills
+  posted 2026-05-22 · @DataChaz · 1,504 views · concept: Claude skills craft · url: https://x.com/datachaz/status/2057787509728522463 · links: https://github.com/addyosmani/agent-skills
 
 - **2026-05-22** | [Viv](https://x.com/vtrivedy10/status/2057673225702937059) | agent-design, prompting
   Ranks three verification patterns from experience: a supervisor persona orchestrating worker agents beats a fresh external judge, which in turn beats self-reflection. The mechanism proposed is that the main agent must sit in the distribution of judging rather than doing — if it believes it is doing the work, it loses the critical stance needed to correct its workers. Explicitly anecdotal; the author notes evals are still needed.
@@ -10345,7 +10380,7 @@
 
 - **2026-04-14** | [Tech with Mak](https://x.com/technmak/status/2043683120319520806) | claude-code, dev-practices, prompting
   Distills three Karpathy critiques of coding agents (wrong assumptions unchecked, overcomplication/bloat, editing code they don't understand) into a drop-in CLAUDE.md with four principles: (1) think before coding / surface ambiguity and push back, (2) simplicity first / no unrequested abstractions, (3) surgical changes / don't touch adjacent code, (4) goal-driven execution / turn tasks into failing tests then loop to green. Practical, copy-paste engineering guardrails.
-  posted 2026-04-13 · @technmak · 190.4K views · concept: Claude Code setup & usage · url: https://x.com/technmak/status/2043683120319520806
+  posted 2026-04-13 · @technmak · 190.4K views · concept: context economy — routing tables beat big context · url: https://x.com/technmak/status/2043683120319520806
 
 - **2026-04-14** | [Lorenzo Rondan](https://x.com/lorenrd/status/2043677918262395235) | agent-design
   Highlights Viv (@Vtrivedy10)'s diagram/mental-model of an agent harness — memory, context fragments, and the search 'bitter lesson' — calling it one of the best harness diagrams around. Pointer into the harness-design discourse.
