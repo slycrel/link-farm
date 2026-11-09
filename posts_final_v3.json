@@ -1,5 +1,503 @@
 [
   {
+    "date": "2026-11-09",
+    "author": "Garry Tan",
+    "handle": "@garrytan",
+    "subject": "Post by Garry Tan on X",
+    "url": "https://x.com/garrytan/status/2119624260675350605",
+    "summary": "Garry Tan says his gstack-evals project replicated Mr_Buzzoni's article on cutting agent cost ~90% by routing easy decisions to a cheap system-one model and escalating hard cases to Kimi K3, and that 'particle-1' did even better. Useful as an eval-driven cost-routing pattern for agents.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "31.2K",
+    "notes": "",
+    "enriched": true,
+    "content": "My gstack-evals project took a look at this Jev Engineering article and tried to replicate it, and I also told it to try particle-1 and it turns out this article replicates, and particle-1 is even better\n\nHow to Cut Your Agent Bill by 90% With Jev Engineering and Kimi K3 — find the decisions hiding inside your agents, write questions a system one model answers well, route on calibrated confidence and hand the hard cases to Kimi K3.",
+    "posted_at": "2026-11-09T02:52:59",
+    "concept": "applied decision-model routing — gating agents with Jev",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-09",
+    "author": "Rudraj Mehta",
+    "handle": "@rudrajmehta",
+    "subject": "Post by Rudraj Mehta on X",
+    "url": "https://x.com/rudrajmehta/status/2119589472115515407",
+    "summary": "TLDR of a paper on agent memory 'dreaming': wiki alone 48%, search alone 53%, both 61%, with an implied build order of transcripts, notes, a small injected layer (Claude Code loads only the first 200 lines/25 KB of MEMORY.md), then a wiki last. Practical evidence for designing agent memory stacks.",
+    "topics": [
+      "agent-design",
+      "research",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "It's a great read. After 128 dreaming sessions over a 420M token corpus, a wiki alone scored 48%. Plain search scored 53%. Both together got 61%. Implied build order: transcripts first, notes next with light guidance, a small injected layer, wiki last for questions spanning documents (87% vs 73% on multi-document merger questions).",
+    "posted_at": "2026-11-09T00:34:44",
+    "concept": "vector / hybrid databases as agent-memory infrastructure",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-09",
+    "author": "Shaun Maguire",
+    "handle": "@shaunmmaguire",
+    "subject": "Post by Shaun Maguire on X",
+    "url": "https://x.com/shaunmmaguire/status/2119582151985574371",
+    "summary": "Shaun Maguire describes how nation-state actors (China, per his example, incl. the 2013 NYT hack) run long social-engineering chains through friends-of-friends to compromise high-value targets. A threat-model reminder for security-minded founders and leadership; personal-security framing rather than technical.",
+    "topics": [
+      "adjacent",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "People have no idea how sophisticated nation state activities are. If you are a target of opportunity for China it's not unheard of for them to dedicate O(1000) humans to compromising you... Nation state kompromat is a system designed to find any individual's weakness and force a situation of maximum amplification of it.",
+    "posted_at": "2026-11-09T00:05:39",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-09",
+    "author": "beamnxw ./",
+    "handle": "@beamnxw",
+    "subject": "Post by beamnxw ./ on X",
+    "url": "https://x.com/beamnxw/status/2119382127040987266",
+    "summary": "Engagement-packaged share of Addy Osmani's article 'Your coding agents made you a manager', framing agent supervision as team management (context, plan, delegate, verify, decide). The underlying article is substantive; the repost wrapper is hype, hence questionable.",
+    "topics": [
+      "agent-design",
+      "management",
+      "dev-practices",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "81.1K",
+    "notes": "",
+    "enriched": true,
+    "content": "THIS IS PURE GOLD. Addy Osmani just shared how to run AI coding agents like a team without babysitting every session: give agents context, verify their work, set guardrails, decide what ships. context → plan → delegate → verify → decide.\n\nYour coding agents made you a manager — the skills for managing agents are pretty much the skills for managing a team, and you don't need to be a manager to learn them.",
+    "posted_at": "2026-11-08T10:50:49",
+    "concept": "Claude skills craft",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-09",
+    "author": "Andrei Maxim",
+    "handle": "@rockatanescu",
+    "subject": "Post by Andrei Maxim on X",
+    "url": "https://x.com/rockatanescu/status/2119346657511014591",
+    "summary": "Thread on an Amazon research paper arguing that giving a model pseudocode-like implementation structure beats prose specs, and even beats test suites or oracles, for code generation accuracy. Directly relevant to spec-driven development practice.",
+    "topics": [
+      "dev-practices",
+      "research",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "22.9K",
+    "notes": "",
+    "enriched": true,
+    "content": "Amazon researchers recently published a paper which I think is notable considering that Amazon has put a lot of effort into spec-driven development. The paper argues that specifying how a model should implement a specific solution is significantly superior to writing prose.\n\nEven tactics like providing a test suite or an oracle is inferior to defining the behavior using a high-level pseudocode-like solution. When developers define the intended structure, the error rate can drop dramatically, though gains eventually stop making financial sense.",
+    "posted_at": "2026-11-08T08:29:53",
+    "concept": "agents-as-judges-of-agents — bossman supervisor / self-verification",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-08",
+    "author": "Riley Coyote",
+    "handle": "@rileyralmuto",
+    "subject": "Post by Riley Coyote on X",
+    "url": "https://x.com/rileyralmuto/status/2119256603148890197",
+    "summary": "Riley Coyote reports early traction for the Mnemos memory MCP (133 GitHub stars in under 48 hours, outside contributors, agents emailing in) and a coming v0.6.5 with better recall and Hermes support. Useful as a signal in the agent-memory MCP space and an indie open-source launch.",
+    "topics": [
+      "skills-mcp",
+      "agent-design",
+      "solo-operator"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "the feedback on the Mnemos MCP thus far has been incredible. folks have begun contributing to the repository. The first version was public 6-9 months and got ~120 GitHub stars; this time we passed that in under 48 hours, 133 stars. A new wave of agents reaching out by email. About to publish v0.6.5 with improved recall and a bigger update for Hermes.",
+    "posted_at": "2026-11-08T02:32:02",
+    "concept": "local model serving on consumer GPUs — quantization & throughput",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-08",
+    "author": "Matt Stockton",
+    "handle": "@mstockton",
+    "subject": "Post by Matt Stockton on X",
+    "url": "https://x.com/mstockton/status/2119129806084210844",
+    "summary": "Matt Stockton reacts to Brian Armstrong's post on changing how he works with AI, arguing autonomous human-in-the-loop-on-demand systems now work in software and will reshape how leaders operate companies generally. A leadership and operating-model signal.",
+    "topics": [
+      "management",
+      "industry",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "This type of setup is starting to work in software. If you build the system correctly it keeps you out of the loop, knows when to ask for expert guidance, identifies your blind spots, learns your preferences, and lets you own a much broader area of operations. These patterns will apply to companies well beyond software and change what it means to lead.\n\nI've changed how I work over the las[t...] (Brian Armstrong, Nov 7)",
+    "posted_at": "2026-11-07T18:08:11",
+    "concept": "Forward Deployed Engineers — the durable AI-era role",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-08",
+    "author": "Anurag Jha",
+    "handle": "@anuragdotdev",
+    "subject": "Post by Anurag Jha on X",
+    "url": "https://x.com/anuragdotdev/status/2119128333955002864",
+    "summary": "A 15-item checklist for AI evals: error analysis first, golden datasets, synthetic data, deterministic assertions before LLM judges, RAG metrics, and agent trajectory evaluation. Good quick reference for an eval practice.",
+    "topics": [
+      "dev-practices",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Evals are what separate AI engineers from people who just know how to call LLM APIs. 15 things to learn: error analysis before metrics, golden datasets, synthetic data generation, deterministic assertions, RAG evaluation (Recall@K, MRR, nDCG), agent trajectory evaluation, and more.",
+    "posted_at": "2026-11-07T18:02:20",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-08",
+    "author": "Sergii Makarevych",
+    "handle": "@sermakarevich",
+    "subject": "Post by Sergii Makarevych on X",
+    "url": "https://x.com/sermakarevich/status/2119024563086397503",
+    "summary": "Article mapping eight failure modes of multi-step agents to structural architecture fixes (planner/worker/reviewer/guard nodes, context policies, tool budgets), with measured costs and benefits. Dense reference for agent design.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "21K",
+    "notes": "",
+    "enriched": true,
+    "content": "Which architecture fixes which failure. Eight ways multi-step agents go wrong, the structural answers teams have tried, and what each one measurably buys and costs. An agent architecture is a set of model calls plus the rules that decide what each call sees, what it may do, and what it returns; the useful unit is the node (one role, one context policy, one tool list, one budget, one output format).",
+    "posted_at": "2026-11-07T11:10:00",
+    "concept": "agents as constrained software — making bad shapes unexpressible",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-08",
+    "author": "OpenCode",
+    "handle": "@opencode",
+    "subject": "Post by OpenCode on X",
+    "url": "https://x.com/opencode/status/2118895128152621153",
+    "summary": "OpenCode announces 'Browse', which lets coding agents drive the user's real browser including tabs, logins and extensions (opencode.ai). Replies link it to the anomalyco/browser-control repo. Open-source analog to Claude in Chrome style computer use; worth evaluating.",
+    "topics": [
+      "skills-mcp",
+      "agent-design",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "323.6K",
+    "notes": "",
+    "enriched": true,
+    "content": "OpenCode Browse is now available. It lets your agent control your real browser with your tabs and logins and extensions.",
+    "posted_at": "2026-11-07T02:35:40",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-08",
+    "author": "pedram.md",
+    "handle": "@pdrmnvd",
+    "subject": "Post by pedram.md on X (evals—watch)",
+    "url": "https://x.com/pdrmnvd/status/2118753972207198349",
+    "summary": "Free four-lesson 'Introduction to Evals' course on Claude Academy (academy.claude.com) for measuring prompts with structured feedback. Flagged by Jeremy as 'evals—watch'; a good onboarding resource for the dev team.",
+    "topics": [
+      "prompting",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "45.1K",
+    "notes": "flag: evals—watch",
+    "enriched": true,
+    "content": "We just released a free course on Claude Academy: Introduction to Evals. If you have a working prompt but no way to measure it, this short four-lesson course will walk you through getting more structured feedback from your prompts.\n\nCompletely free to view, sign-in if you want to save progress and earn a badge. (academy.claude.com)",
+    "posted_at": "2026-11-06T17:14:46",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-08",
+    "author": "Suraj Sharma",
+    "handle": "@suraj_sharma14",
+    "subject": "Post by Suraj Sharma on X (scout this?)",
+    "url": "https://x.com/suraj_sharma14/status/2118682313479573689",
+    "summary": "Hype-packaged checklist of agent engineering projects: computer-use agents, generative UI, cheap System-One routing with escalation, durable Temporal state machines, raw JSON-RPC MCP servers, grammar-constrained decoding and CI trajectory graders. Substantive list of patterns behind the packaging; Jeremy flagged it as 'scout this?'.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "skills-mcp",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "flag: scout this?",
+    "enriched": true,
+    "content": "CANCEL your weekend plans. The 2027 meta just dropped. Build a computer-use agent that parses the DOM and diffs screenshots; ship generative UI; wire a System-One router that resolves 95% of requests cheaply and escalates the hard 5%; rebuild your while-True loop as a Temporal state machine; write a raw MCP server in pure JSON-RPC; add grammar-constrained decoding; build a trajectory grader in CI that blocks merges.",
+    "posted_at": "2026-11-06T12:30:01",
+    "concept": "agents as constrained software — making bad shapes unexpressible",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-08",
+    "author": "Guillaume Bardet",
+    "handle": "@guillaumebardet",
+    "subject": "Post by Guillaume Bardet on X",
+    "url": "https://x.com/guillaumebardet/status/2118657239217041552",
+    "summary": "Claude-driven go-to-market research recipe: load competitor sites, earnings calls, reviews and forum threads, ask adversarial questions, then have Claude steelman against your own angle. Packaged as a YC method (unverified) but the workflow is practical for market research and solo-operator validation.",
+    "topics": [
+      "adjacent",
+      "solo-operator",
+      "prompting",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "There's a method taught at Y Combinator that turns 4 weeks of GTM research into 3 hrs. Feed it raw material: 25-40 competitor sites scraped, recent earnings calls from incumbents, 100+ customer reviews, forum threads. Then ask forcing questions: what do winners know that customers would never admit, which industry beliefs are taken for granted. Then flip it and have Claude tear your best angle apart.",
+    "posted_at": "2026-11-06T10:50:23",
+    "concept": "prediction-market & crypto trading bots",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-08",
+    "author": "Andrej Karpathy",
+    "handle": "@karpathy",
+    "subject": "Post by Andrej Karpathy on X",
+    "url": "https://x.com/karpathy/status/2116957135661945283",
+    "summary": "Karpathy built HackerTube (hackertube.org) in ~2 hours with Claude Code and Opus 5.5, filtering 43M HN comments down to 6,454 repeatedly recommended videos, and shares his workflow of talking only to Claude. A good example of a solo, weekend-scale AI-built product with open data.",
+    "topics": [
+      "claude-code",
+      "dev-practices",
+      "solo-operator"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Weekend hack: HackerTube. I was annoyed with YouTube's recommendations so I had Claude filter down 43M comments over 20 years of HN to 6,454 videos that keep being recommended. Significantly better viewing experience, ~2 hours with Opus 5.5 (hackertube.org). Underlying data is one zip file; point your Claude at it for your own version. Process: Claude Code desktop app, Opus 5.5 on Medium effort.",
+    "posted_at": "2026-11-01T18:14:46",
+    "concept": "Claude Code setup & usage",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-07",
+    "author": "Eno Reyes",
+    "handle": "@enoreyes",
+    "subject": "Post by Eno Reyes on X",
+    "url": "https://x.com/enoreyes/status/2118767454721851680",
+    "summary": "Factory's Eno Reyes defines a software factory as standardizing the process, not the output: every piece of work flows from a 'signal' (ticket, alert, failing CI) through the same stages, picked up by people or autonomous workstreams using Droid. Pushes back on poteto's thesis; part of the software-factory discourse.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "I actually agree with a lot of what @poteto is saying except for the central point. IMO most people don't have actual software factory systems. Our conceptualization of a software factory is a system where every piece of work goes through the same stages to standardize the process not the work output. It begins with a 'signal' (a Slack thread, Linear ticket, Sentry alert, failing CI job, a tweet, an idea), picked up by a person with Droid or by a workstream that triages it against a goal and has droids write the spec and open the PR.",
+    "posted_at": "2026-11-06T18:08:20",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-06",
+    "author": "Josh Rosen",
+    "handle": "@josharosen",
+    "subject": "Post by Josh Rosen on X",
+    "url": "https://x.com/josharosen/status/2118338245989662838",
+    "summary": "Josh Rosen highlights Judgment Labs' 'evals-as-indexes' idea: store LLM-judge eval results alongside raw agent traces so agents can query traces by those metrics. Relevant to observability and search over large agent trace corpora.",
+    "topics": [
+      "agent-design",
+      "research",
+      "dev-practices"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "15.5K",
+    "notes": "",
+    "enriched": true,
+    "content": "Fascinating. Evals-as-indexes. It basically means structuring and storing the output of evals and allowing agents to query by those metrics later. You need LLM-as-a-judge plus a storage layer capable of storing and querying those indexes along with the raw trace data.\n\nSearching a billion tokens of agent data — how our data agent uses evals-as-indexes for better, faster, cheaper search.",
+    "posted_at": "2026-11-05T13:42:49",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-06",
+    "author": "Cory House",
+    "handle": "@housecor",
+    "subject": "Post by Cory House on X",
+    "url": "https://x.com/housecor/status/2118323416545591360",
+    "summary": "Cory House lays out a leveled maturity ladder toward an AI 'software factory': guardrails, skills, chained skills, ticket-triggered agents, PR-watching agents and release-on-merge. Practical incremental roadmap for the dev team.",
+    "topics": [
+      "dev-practices",
+      "agent-design",
+      "skills-mcp"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "An incremental path to a software factory: Level 0 add strong automated guardrails. Level 1 create skills for repeated prompts. Level 2 a skill that calls skills in order. Level 3 parent skills call child skills conditionally. Level 4 agent monitors tickets and starts automatically. Level 5 agent watches PRs and auto-responds. Level 6 release pipeline releases on merge.",
+    "posted_at": "2026-11-05T12:43:53",
+    "concept": "Forward Deployed Engineers — the durable AI-era role",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-05",
+    "author": "Sergii Makarevych",
+    "handle": "@sermakarevich",
+    "subject": "Post by Sergii Makarevych on X",
+    "url": "https://x.com/sermakarevich/status/2118272177023938646",
+    "summary": "Sergii Makarevych's evals cheat sheet, a condensed companion to his plain-language article on how to tell whether an LLM-based system actually works, aimed at engineers, PMs and executives. 106K views; pairs with the other evals posts in this batch.",
+    "topics": [
+      "dev-practices",
+      "research",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "106.4K",
+    "notes": "",
+    "enriched": true,
+    "content": "Evals cheat sheet\n\nEvals: how to know whether an AI system actually works — an article for everyone who ships, buys, or signs off on software built on LLMs: engineers, product managers, and the CEO. Written in plain language, from the big picture down to the details.",
+    "posted_at": "2026-11-05T09:20:17",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-11-04",
     "author": "Blum",
     "handle": "@blum_og",
@@ -2444,7 +2942,7 @@
     "links": [
       "https://github.com/supermemoryai/company-brain"
     ],
-    "concept": "prediction-market & crypto trading bots",
+    "concept": "agent harness engineering",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -5511,7 +6009,7 @@
     "enriched": true,
     "content": "WILD...the model grades its own answers and beats itself. Stanford's LLM-as-a-Verifier sampled 5 swe-agent trajectories, ranked them with the same model, kept the winner. deepseek-v4-flash went from 78.7% to 88% on terminal-bench without fine-tuning. 100% Opensource.",
     "posted_at": "2026-08-24T02:27:01",
-    "concept": "applied decision-model routing — gating agents with Jev",
+    "concept": "local model serving on consumer GPUs — quantization & throughput",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -5789,7 +6287,7 @@
       "https://github.com/hraness/kb",
       "https://github.com/hraness/personal-monorepo-template"
     ],
-    "concept": "prediction-market & crypto trading bots",
+    "concept": "elite-skill masterclass content",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 3
@@ -7776,7 +8274,7 @@
     "enriched": true,
     "content": "Andrew Ng showed that an older GPT model inside an agentic workflow outperforms a newer model asked to answer once. On HumanEval: gpt-3.5 zero-shot 48.1%, gpt-4 zero-shot 67.0%, gpt-3.5 in an agentic workflow up to 95.1%. Four patterns: reflection, tool use, planning, multi-agent collaboration. None require a frontier model.",
     "posted_at": "2026-07-28T08:21:49",
-    "concept": "agentic code review at production scale",
+    "concept": "applied decision-model routing — gating agents with Jev",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -8384,7 +8882,7 @@
     "links": [
       "https://commaok.xyz/ai/differential-spec"
     ],
-    "concept": "loop engineering",
+    "concept": "agent identity files (SOUL.md, CLAUDE.md, persona scaffolds)",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -8509,6 +9007,7 @@
     "links": [
       "https://github.com/jordan-gibbs/hyperresearch"
     ],
+    "concept": "Claude Code session workflows — handoffs, messaging & retention",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -9986,7 +10485,7 @@
     "enriched": true,
     "content": "Dhilip Subramanian @sdhilip\nMy Claude Code setup used to be 3 skills. Now it's 7. Each one earned its spot.\ndata engineering (@AnthropicAI) → dbt and Airflow skills that slot into data pipeline work.\ngstack (@garrytan) → Turns Claude Code into a virtual team that questions what you're building before code starts.\ngrill me (@mattpocockuk) → Asks sharp questions first, so Claude builds what you actually meant.\nsuperpowers (obra) → Forces spec, plan, then test-driven development. Solid code, not vibe-coded slop.\nimpeccable (@pbakaus) → One command to audit and polish a dashboard or UI.\nlast30days (@mvanhorn) → Finds what's working now across Reddit, X, YouTube, HN.\nprinting press (@mvanhorn @trevin) → Turns any API or website into a clean, token-light CLI.\nStart small. Add one only when you hit a job your current skills can't do.\nNext: compound engineering (@trevin).",
     "posted_at": "2026-07-01T15:00:03",
-    "concept": "context economy — routing tables beat big context",
+    "concept": "Claude Code setup & usage",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 3
@@ -11957,7 +12456,7 @@
     "enriched": true,
     "content": "Livsun @L1vsun. Trading engagement-farm: neural net trained on 11 years of tick data calls setups 5 hours before the candle forms; 4,200 data points/sec, 847k labeled historical setups, $40/mo server; surfaces 3-4 trades/day, 71% win rate over 90 days, 2.3 avg R/R; built for under $500 in 3 weeks of evenings. QUOTE ARTICLE: Roan @RohOnChain 'How to Use Neural Networks to Win Every Trade Before It Even Starts'. 70.5K views. Off-topic trading hype. questionable.\n\nArticle: 'How to Use Neural Networks to Win Every Trade Before It Even Starts.'",
     "posted_at": "2026-06-02T18:22:40",
-    "concept": "elite-skill masterclass content",
+    "concept": "prediction-market & crypto trading bots",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2
@@ -17212,7 +17711,7 @@
     "links": [
       "https://github.com/Trampoline-AI/predict-rlm"
     ],
-    "concept": "agents-as-judges-of-agents — bossman supervisor / self-verification",
+    "concept": "vector / hybrid databases as agent-memory infrastructure",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -19329,7 +19828,7 @@
     "enriched": true,
     "content": "Tech with Mak @techNmak. Andrej Karpathy on what every Claude Code user feels: models make wrong assumptions without checking, don't seek clarification/surface inconsistencies/push back; overcomplicate code, bloat abstractions, don't clean dead code (1000 lines when 100 would do); change/remove code they don't understand. Someone turned this into a CLAUDE.md with 4 principles: 1) Think before coding (state ambiguity, present interpretations, push back, ask not guess), 2) Simplicity first (no unasked features/abstractions/flexibility/error-handling; senior-engineer test), 3) Surgical changes (don't improve adjacent code, don't refactor unbroken, match style, mention dead code don't delete, every line traces to request), 4) Goal-driven execution (turn 'fix bug' into 'write failing test then pass'; give success criteria and loop). Single drop-in file. 190.4K views.",
     "posted_at": "2026-04-13T13:30:00",
-    "concept": "context economy — routing tables beat big context",
+    "concept": "Claude Code setup & usage",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -23513,7 +24012,7 @@
     "enriched": true,
     "content": "I find it funny when anyone feels confident they've figured out agentic programming. I've worked on OpenCode since last May and still have days where I'm not sure any of this is a good idea. I land on 'these models are an incredible tool' but it's confusing. I miss the mundane coding tasks; replacing hours with minutes of waiting on an agent is worth being excited about despite mixed emotions. There's a distance that can creep in between you and the code.",
     "posted_at": "2026-02-19T16:43:27",
-    "concept": "Claude skills craft",
+    "concept": "founder philosophy & life-design essays",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -24341,7 +24840,7 @@
     "enriched": true,
     "content": "The Bitter Lesson of Agent Frameworks. All the value is in the RL'd model, not your 10,000 lines of abstractions. An agent is just a for-loop of messages: keep going until the model stops calling tools. Browser Use's first agents had thousands of lines of abstractions - worked until we tried to change anything; every experiment fought the framework. Abstractions freeze assumptions about how intelligence should work; RL breaks them. The Bitter Lesson: general methods that leverage computation beat hand-crafted knowledge. 99% of the work is in the model - Claude Code can just write AppleScript directly instead of needing a bespoke tool. Key insight: frameworks fail because action spaces are incomplete; start from 'the model can do almost anything' then restrict based on evals. We threw everything away and reverse-engineered Claude Code and Gemini CLI (good simple primitives). BU Agent gives the model raw Chrome DevTools Protocol instructions plus browser extension APIs = nearly complete action space; the model routes around failures. Inversion: start with maximal capability, then layer safety/structure. Wrote our own minimal model-agnostic Chat classes (ChatAnthropic/ChatOpenAI/ChatGoogle, same ainvoke interface) for full control over caching/serialization. Ephemeral messages keep only the last N huge browser-state outputs so context doesn't balloon. The naive for-loop finishes prematurely - use a done() tool that raises TaskComplete; CLI mode stops on no tool calls, autonomous mode stops only on done(). Robustness (retries, backoff, rate limits, compaction, token tracking) is ops, not the agent. The less you build, the more it works. Open-sourcing as agent-sdk; prefer to paste the context into Claude Code and build your own.",
     "posted_at": "2026-01-16T06:39:46",
-    "concept": "persistent always-on agents — bot mode & agent desktops",
+    "concept": "agents as constrained software — making bad shapes unexpressible",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
