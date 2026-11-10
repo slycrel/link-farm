@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-11-09T16:16:57Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-11-10T16:13:26Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-11-08** — [OpenCode](https://x.com/opencode/status/2118895128152621153) — *now • Skills & MCP • 323.6K views • v1 enriched*  
@@ -1317,7 +1317,7 @@
   posted 2026-05-02 · @socialwithaayan · 2,972 views · url: https://x.com/socialwithaayan/status/2050484688968724820 · links: https://github.com/warpdotdev/warp
 
 - [Om Patel](https://x.com/om_patel5/status/2050441119003971683) — 2026-05-02: /graphify builds a dependency and concept graph of a project upfront — extracting code structure locally with no AI calls, transcribing video and audio via local Whisper, then using parallel subagents to pull concepts from docs, papers, and images — merging everything into one clustered graph exported as interactive HTML, queryable JSON, and a graph database. The premise matches SoulForge elsewhere in this collection: give the agent structural knowledge instead of letting it explore file by file. The 71.5x figure is unsourced marketing; the local-first extraction design is the substance.
-  posted 2026-05-02 · @om_patel5 · concept: Claude Code setup & usage · url: https://x.com/om_patel5/status/2050441119003971683
+  posted 2026-05-02 · @om_patel5 · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/om_patel5/status/2050441119003971683
 
 - [Tom Doerr](https://x.com/tom_doerr/status/2050312101504094651) — 2026-05-02: Points to a curated GitHub list on AI agent evolution, memory systems, and self-improvement (github.com/EvoMap/awesome-agent-evolution) — a reference index for the self-improving-agent literature.
   posted 2026-05-01 · @tom_doerr · 5,835 views · concept: founder philosophy & life-design essays · url: https://x.com/tom_doerr/status/2050312101504094651 · links: https://github.com/EvoMap/awesome-agent-evolution
@@ -2249,7 +2249,7 @@
   posted 2026-06-07 · @0x_rody · 261.8K views · concept: Claude Code setup & usage · url: https://x.com/0x_rody/status/2063722061126651935
 
 - [darkzodchi](https://x.com/zodchiii/status/2063559498078278109) — 2026-06-08: Quotes 'Anthropic engineer Margot van Laer': 'Every prompt you type more than twice should be a file. The ones we use internally aren't memorized, they're saved.' Points to a 33-min talk on the prompt patterns Anthropic packages and reuses across every Claude Code session — links the same Claude Code slash-command-library template from rody.
-  posted 2026-06-07 · @zodchiii · 68.8K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/zodchiii/status/2063559498078278109
+  posted 2026-06-07 · @zodchiii · 68.8K views · concept: Claude Code setup & usage · url: https://x.com/zodchiii/status/2063559498078278109
 
 - [rari](https://x.com/0xwhrrari/status/2063244577482440978) — 2026-06-08: Engagement-farmed but useful link dump of free AI-engineering learning resources (LangChain agent architecture, Anthropic's Claude Code 101 + in-action courses, prompt engineering docs, anthropics/courses interactive prompt tutorial, claude.md docs, skills, MCP). Wrapped in 'Google's former CEO just said...' framing but the underlying link list is the substance.
   posted 2026-06-06 · @0xwhrrari · concept: Claude Code setup & usage · url: https://x.com/0xwhrrari/status/2063244577482440978 · links: https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial
@@ -2402,7 +2402,7 @@
   posted 2026-05-02 · @0xSero · 18K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/0xsero/status/2050544304360165585 · links: https://github.com/0xSero/ai-data-extraction
 
 - [darkzodchi](https://x.com/zodchiii/status/2050537397377532341) — 2026-05-02: Uses the Claude Code source leak — reportedly 512,000 lines exposed because of a missing .gitignore entry, mirrored within hours — as the setup for a hardened .gitignore template and a Boris Cherny explanation of how secret leakage happens. Scarcity-flavored packaging ('saves your career'), but the incident is real and the underlying practice is basic hygiene worth having a template for. Related: several posts in this collection analyse the leaked source for harness architecture.
-  posted 2026-05-02 · @zodchiii · 42.4K views · url: https://x.com/zodchiii/status/2050537397377532341
+  posted 2026-05-02 · @zodchiii · 42.4K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/zodchiii/status/2050537397377532341
 
 - [regent0x](https://x.com/regent0x_/status/2050143341656838449) — 2026-05-02: Describes a solo contractor running five specialist agents in parallel — architect, coder, reviewer, tester, ops — deliberately not sharing context so they don't collide, taking on work sized for teams of 5-8. The $320k/year figure is second-hand from a bilibili video and unverifiable, and the post funnels to the author's own guide, so treat the economics as marketing. The role-separation-without-shared-context pattern is the part worth extracting, and it contrasts usefully with the shared-memory approaches elsewhere in this collection.
   posted 2026-05-01 · @regent0x_ · 190.9K views · concept: managing agent teams · url: https://x.com/regent0x_/status/2050143341656838449
@@ -2531,7 +2531,7 @@
   posted 2026-03-12 · @garrytan · 876.6K views · concept: url:https://github.com/garrytan/gstack · url: https://x.com/garrytan/status/2032196172430131498 · links: https://github.com/garrytan/gstack
 
 - [Ming "Tommy" Tang](https://x.com/tangming2005/status/2031358195558658266) — 2026-03-11: Tommy Tang's single biggest CLAUDE.md improvement: when a bug is reported, don't start by fixing it. Start by writing a test that reproduces the bug, then have subagents try to fix it and prove the fix with a passing test.
-  posted 2026-03-10 · @tangming2005 · 590.1K views · concept: agent identity files (SOUL.md, CLAUDE.md, persona scaffolds) · url: https://x.com/tangming2005/status/2031358195558658266
+  posted 2026-03-10 · @tangming2005 · 590.1K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/tangming2005/status/2031358195558658266
 
 - [Boris Cherny](https://x.com/bcherny/status/2031089411820228645) — 2026-03-10: Boris Cherny announces Code Review in Claude Code: when a PR opens, a team of agents runs a deep review to hunt for bugs. Built internally first because code output per Anthropic engineer is up 200% this year and review had become the bottleneck; he says it catches many real bugs he'd otherwise miss.
   posted 2026-03-09 · @bcherny · 1.2M views · concept: managing agent teams · url: https://x.com/bcherny/status/2031089411820228645
@@ -3502,7 +3502,7 @@
   posted 2026-05-02 · @0xSero · 18K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/0xsero/status/2050544304360165585 · links: https://github.com/0xSero/ai-data-extraction
 
 - [darkzodchi](https://x.com/zodchiii/status/2050537397377532341) — 2026-05-02: Uses the Claude Code source leak — reportedly 512,000 lines exposed because of a missing .gitignore entry, mirrored within hours — as the setup for a hardened .gitignore template and a Boris Cherny explanation of how secret leakage happens. Scarcity-flavored packaging ('saves your career'), but the incident is real and the underlying practice is basic hygiene worth having a template for. Related: several posts in this collection analyse the leaked source for harness architecture.
-  posted 2026-05-02 · @zodchiii · 42.4K views · url: https://x.com/zodchiii/status/2050537397377532341
+  posted 2026-05-02 · @zodchiii · 42.4K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/zodchiii/status/2050537397377532341
 
 - [Blaze](https://x.com/browomo/status/2050509770604331510) — 2026-05-02: A gesture-and-voice-controlled 3D knowledge map of 200+ mental models, running in a browser at localhost with no VR headset or paid tooling — five components: Three.js for rendering, MediaPipe Hands for gesture recognition, a local Whisper server for voice, and the Claude API as the reasoning layer. Notable for how ordinary the parts are; the novelty is the assembly, not any single piece.
   posted 2026-05-02 · @browomo · 24.6K views · concept: thinking tools & problem-solving method · url: https://x.com/browomo/status/2050509770604331510
@@ -3511,7 +3511,7 @@
   posted 2026-05-02 · @socialwithaayan · 2,972 views · url: https://x.com/socialwithaayan/status/2050484688968724820 · links: https://github.com/warpdotdev/warp
 
 - [Om Patel](https://x.com/om_patel5/status/2050441119003971683) — 2026-05-02: /graphify builds a dependency and concept graph of a project upfront — extracting code structure locally with no AI calls, transcribing video and audio via local Whisper, then using parallel subagents to pull concepts from docs, papers, and images — merging everything into one clustered graph exported as interactive HTML, queryable JSON, and a graph database. The premise matches SoulForge elsewhere in this collection: give the agent structural knowledge instead of letting it explore file by file. The 71.5x figure is unsourced marketing; the local-first extraction design is the substance.
-  posted 2026-05-02 · @om_patel5 · concept: Claude Code setup & usage · url: https://x.com/om_patel5/status/2050441119003971683
+  posted 2026-05-02 · @om_patel5 · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/om_patel5/status/2050441119003971683
 
 - [Dan Shipper](https://x.com/danshipper/status/2050235671466606665) — 2026-05-02: Points at Every's AI product management guide, written by a PM at Every who moved from managing product to shipping it directly using coding agents. Relevant to the role-boundary question the collection keeps circling — what a product manager becomes when the implementation bottleneck substantially loosens.
   posted 2026-05-01 · @danshipper · 224.4K views · concept: Forward Deployed Engineers — the durable AI-era role · url: https://x.com/danshipper/status/2050235671466606665 · links: https://every.to/guides/ai-product-management-guide
@@ -3781,7 +3781,7 @@
   posted 2026-03-10 · @Vtrivedy10 · 53K views · concept: agent harness engineering · url: https://x.com/vtrivedy10/status/2031411814232187109
 
 - [Ming "Tommy" Tang](https://x.com/tangming2005/status/2031358195558658266) — 2026-03-11: Tommy Tang's single biggest CLAUDE.md improvement: when a bug is reported, don't start by fixing it. Start by writing a test that reproduces the bug, then have subagents try to fix it and prove the fix with a passing test.
-  posted 2026-03-10 · @tangming2005 · 590.1K views · concept: agent identity files (SOUL.md, CLAUDE.md, persona scaffolds) · url: https://x.com/tangming2005/status/2031358195558658266
+  posted 2026-03-10 · @tangming2005 · 590.1K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/tangming2005/status/2031358195558658266
 
 - [Dominik Tornow](https://x.com/dominiktornow/status/2031233587819983096) — 2026-03-10: Dominik Tornow: the new core skill in software engineering is designing feedback loops. He quotes OpenAI Developers on a small team steering Codex to open and merge 1,500 pull requests for a product used by hundreds of internal users, with zero manual coding.
   posted 2026-03-10 · @DominikTornow · 23K views · concept: Forward Deployed Engineers — the durable AI-era role · url: https://x.com/dominiktornow/status/2031233587819983096 · links: https://openai.com/index/harness-engineering
@@ -4425,7 +4425,7 @@
   posted 2026-05-07 · @ghumare64 · concept: vector / hybrid databases as agent-memory infrastructure · url: https://x.com/ghumare64/status/2052313902214476192
 
 - [Om Patel](https://x.com/om_patel5/status/2050441119003971683) — 2026-05-02: /graphify builds a dependency and concept graph of a project upfront — extracting code structure locally with no AI calls, transcribing video and audio via local Whisper, then using parallel subagents to pull concepts from docs, papers, and images — merging everything into one clustered graph exported as interactive HTML, queryable JSON, and a graph database. The premise matches SoulForge elsewhere in this collection: give the agent structural knowledge instead of letting it explore file by file. The 71.5x figure is unsourced marketing; the local-first extraction design is the substance.
-  posted 2026-05-02 · @om_patel5 · concept: Claude Code setup & usage · url: https://x.com/om_patel5/status/2050441119003971683
+  posted 2026-05-02 · @om_patel5 · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/om_patel5/status/2050441119003971683
 
 - [Mike Bespalov](https://x.com/bbssppllvv/status/2049924037111841027) — 2026-05-02: styles.refero.design — 2,000 DESIGN.md files distilled from well-designed products (colors, typography, spacing, layout) formatted for a model to read, addressing why coding agents produce ugly interfaces: they have no reference for good design. Free. A neat instance of the broader pattern in this collection of encoding tacit professional judgment as markdown an agent loads.
   posted 2026-04-30 · @bbssppllvv · 1.5M views · url: https://x.com/bbssppllvv/status/2049924037111841027 · links: http://styles.refero.design
@@ -4922,7 +4922,7 @@
   posted 2026-06-07 · @0x_rody · 261.8K views · concept: Claude Code setup & usage · url: https://x.com/0x_rody/status/2063722061126651935
 
 - [darkzodchi](https://x.com/zodchiii/status/2063559498078278109) — 2026-06-08: Quotes 'Anthropic engineer Margot van Laer': 'Every prompt you type more than twice should be a file. The ones we use internally aren't memorized, they're saved.' Points to a 33-min talk on the prompt patterns Anthropic packages and reuses across every Claude Code session — links the same Claude Code slash-command-library template from rody.
-  posted 2026-06-07 · @zodchiii · 68.8K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/zodchiii/status/2063559498078278109
+  posted 2026-06-07 · @zodchiii · 68.8K views · concept: Claude Code setup & usage · url: https://x.com/zodchiii/status/2063559498078278109
 
 - [Viv](https://x.com/vtrivedy10/status/2063429138304668093) — 2026-06-07: A default recipe for optimizing Agent = Model + Harness, 'training' both: (1) build v1 on a sensible base harness with task-specific prompting/tools, (2) harness-engineer against prod-like eval tasks (often enough on its own), (3) SFT on mined traces or synthetic data (good for distilling a cheaper model), (4) RL if you can design environments/rewards to push past SFT copying, (5) light harness engineering again on the trained model. Argues harness engineering will be the dominant optimization lever and most companies are still at steps 1-2; links the 'Anatomy of an Agent Harness' article.
   posted 2026-06-07 · @vtrivedy10 · 57.3K views · concept: agent harness engineering · url: https://x.com/vtrivedy10/status/2063429138304668093
@@ -5069,7 +5069,7 @@
   posted 2026-03-17 · @itsolelehmann · 167.4K views · concept: self-improving skills (autoresearch pattern) · url: https://x.com/itsolelehmann/status/2033982679423848802
 
 - [Ming "Tommy" Tang](https://x.com/tangming2005/status/2031358195558658266) — 2026-03-11: Tommy Tang's single biggest CLAUDE.md improvement: when a bug is reported, don't start by fixing it. Start by writing a test that reproduces the bug, then have subagents try to fix it and prove the fix with a passing test.
-  posted 2026-03-10 · @tangming2005 · 590.1K views · concept: agent identity files (SOUL.md, CLAUDE.md, persona scaffolds) · url: https://x.com/tangming2005/status/2031358195558658266
+  posted 2026-03-10 · @tangming2005 · 590.1K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/tangming2005/status/2031358195558658266
 
 - [kapilansh](https://x.com/kapilansh_twt/status/2031262184442130863) — 2026-03-11: kapilansh argues most devs learning AI only know how to call an API and write a prompt without understanding what happens inside, and recommends Karpathy's 'Neural Networks: Zero to Hero' playlist (micrograd, makemore, attention from scratch, tokenization, training GPT-2) as the genuine fix for that knowledge gap.
   posted 2026-03-10 · @kapilansh_twt · 47.4K views · concept: Forward Deployed Engineers — the durable AI-era role · url: https://x.com/kapilansh_twt/status/2031262184442130863
@@ -9487,7 +9487,7 @@
 
 - **2026-06-08** | [darkzodchi](https://x.com/zodchiii/status/2063559498078278109) | claude-code, prompting
   Quotes 'Anthropic engineer Margot van Laer': 'Every prompt you type more than twice should be a file. The ones we use internally aren't memorized, they're saved.' Points to a 33-min talk on the prompt patterns Anthropic packages and reuses across every Claude Code session — links the same Claude Code slash-command-library template from rody.
-  posted 2026-06-07 · @zodchiii · 68.8K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/zodchiii/status/2063559498078278109
+  posted 2026-06-07 · @zodchiii · 68.8K views · concept: Claude Code setup & usage · url: https://x.com/zodchiii/status/2063559498078278109
 
 - **2026-06-08** | [Rahul](https://x.com/sairahul1/status/2063544956158185927) | agent-design, dev-practices, industry
   Long-form X article framing 'Harness Engineering' as the most important AI discipline of 2026 — OpenAI shipped 1M lines of production code in Feb 2026 using agents wrapped in a reliable system (the 'harness'); Anthropic published 3 papers on it; ThoughtWorks formalized a framework; Philipp Schmid called it the most important discipline of 2026. Article walks through what a harness is and the mental models needed to actually use it. 1.1M views — the term is breaking out of AI-infra circles fast.
@@ -10213,7 +10213,7 @@
 
 - **2026-05-02** | [darkzodchi](https://x.com/zodchiii/status/2050537397377532341) | claude-code, dev-practices
   Uses the Claude Code source leak — reportedly 512,000 lines exposed because of a missing .gitignore entry, mirrored within hours — as the setup for a hardened .gitignore template and a Boris Cherny explanation of how secret leakage happens. Scarcity-flavored packaging ('saves your career'), but the incident is real and the underlying practice is basic hygiene worth having a template for. Related: several posts in this collection analyse the leaked source for harness architecture.
-  posted 2026-05-02 · @zodchiii · 42.4K views · url: https://x.com/zodchiii/status/2050537397377532341
+  posted 2026-05-02 · @zodchiii · 42.4K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/zodchiii/status/2050537397377532341
 
 - **2026-05-02** | [Blaze](https://x.com/browomo/status/2050509770604331510) | agent-design, dev-practices
   A gesture-and-voice-controlled 3D knowledge map of 200+ mental models, running in a browser at localhost with no VR headset or paid tooling — five components: Three.js for rendering, MediaPipe Hands for gesture recognition, a local Whisper server for voice, and the Claude API as the reasoning layer. Notable for how ordinary the parts are; the novelty is the assembly, not any single piece.
@@ -10229,7 +10229,7 @@
 
 - **2026-05-02** | [Om Patel](https://x.com/om_patel5/status/2050441119003971683) | agent-design, dev-practices, skills-mcp
   /graphify builds a dependency and concept graph of a project upfront — extracting code structure locally with no AI calls, transcribing video and audio via local Whisper, then using parallel subagents to pull concepts from docs, papers, and images — merging everything into one clustered graph exported as interactive HTML, queryable JSON, and a graph database. The premise matches SoulForge elsewhere in this collection: give the agent structural knowledge instead of letting it explore file by file. The 71.5x figure is unsourced marketing; the local-first extraction design is the substance.
-  posted 2026-05-02 · @om_patel5 · concept: Claude Code setup & usage · url: https://x.com/om_patel5/status/2050441119003971683
+  posted 2026-05-02 · @om_patel5 · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/om_patel5/status/2050441119003971683
 
 - **2026-05-02** | [Tom Doerr](https://x.com/tom_doerr/status/2050312101504094651) | agent-design, research
   Points to a curated GitHub list on AI agent evolution, memory systems, and self-improvement (github.com/EvoMap/awesome-agent-evolution) — a reference index for the self-improving-agent literature.
@@ -10977,7 +10977,7 @@
 
 - **2026-03-11** | [Ming "Tommy" Tang](https://x.com/tangming2005/status/2031358195558658266) | claude-code, dev-practices, prompting
   Tommy Tang's single biggest CLAUDE.md improvement: when a bug is reported, don't start by fixing it. Start by writing a test that reproduces the bug, then have subagents try to fix it and prove the fix with a passing test.
-  posted 2026-03-10 · @tangming2005 · 590.1K views · concept: agent identity files (SOUL.md, CLAUDE.md, persona scaffolds) · url: https://x.com/tangming2005/status/2031358195558658266
+  posted 2026-03-10 · @tangming2005 · 590.1K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/tangming2005/status/2031358195558658266
 
 - **2026-03-11** | [kapilansh](https://x.com/kapilansh_twt/status/2031262184442130863) | research, prompting
   kapilansh argues most devs learning AI only know how to call an API and write a prompt without understanding what happens inside, and recommends Karpathy's 'Neural Networks: Zero to Hero' playlist (micrograd, makemore, attention from scratch, tokenization, training GPT-2) as the genuine fix for that knowledge gap.

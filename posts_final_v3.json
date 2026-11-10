@@ -11932,7 +11932,7 @@
     "enriched": true,
     "content": "Anthropic engineer Margot van Laer: 'Every prompt you type more than twice should be a file. The ones we use internally aren't memorized, they're saved.' In 33 minutes, she walks through the prompt patterns Anthropic packages and reuses across every Claude Code session. Watch the full talk, then save the exact template below. QT @0x_rody: How to Build a Claude Code Slash Command Library (Exact Template Inside).",
     "posted_at": "2026-06-07T09:51:38",
-    "concept": "Claude Code session workflows — handoffs, messaging & retention",
+    "concept": "Claude Code setup & usage",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -17034,6 +17034,7 @@
     "enriched": true,
     "content": "The Creator of Claude Code, Boris Cherny, just explained why most developers are likely to leak every secret they have. If it happened to the people who built Claude, it's probably already happening to you. Watch it, then grab the .gitignore template below.\n\nArticle — The .gitignore That Saves Your Career (Full File Included). Anthropic leaked 512,000 lines of their own source code because someone forgot to add one line to an ignore file. If it happens to them, it's happening to you. Within hours the code was mirrored on...",
     "posted_at": "2026-05-02T11:26:27",
+    "concept": "Claude Code session workflows — handoffs, messaging & retention",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2
@@ -17145,7 +17146,7 @@
     "enriched": true,
     "content": "THIS CLAUDE CODE SKILL MAKES CLAUDE 71.5X MORE EFFICIENT AT UNDERSTANDING YOUR CODEBASE. it's called /graphify and it went viral in 26 days. instead of claude guessing what your project looks like or wasting tokens exploring files one by one, the skill maps every function, every dependency, and every connection upfront. claude gets full context immediately. here's how it works: it extracts structure from code files locally with no AI calls. transcribes any video or audio locally with whisper. then uses claude to pull concepts and relationships from docs, papers, and images with parallel subagents. everything merges into one graph, gets clustered, and exports as interactive HTML, queryable JSON, and a graph database.",
     "posted_at": "2026-05-02T05:03:52",
-    "concept": "Claude Code setup & usage",
+    "concept": "Claude Code session workflows — handoffs, messaging & retention",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2
@@ -22391,7 +22392,7 @@
     "enriched": true,
     "content": "Single biggest improvement I made to my CLAUDE.md: \"When I report a bug, don't start by trying to fix it. Instead, start by writing a test that reproduces the bug. Then, have subagents try to fix the bug and prove it with a passing test.\"",
     "posted_at": "2026-03-10T13:15:09",
-    "concept": "agent identity files (SOUL.md, CLAUDE.md, persona scaffolds)",
+    "concept": "Claude Code session workflows — handoffs, messaging & retention",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
