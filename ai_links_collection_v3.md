@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-11-10T16:13:26Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-11-11T16:12:21Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-11-08** — [OpenCode](https://x.com/opencode/status/2118895128152621153) — *now • Skills & MCP • 323.6K views • v1 enriched*  
