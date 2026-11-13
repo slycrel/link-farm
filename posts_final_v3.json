@@ -1,5 +1,349 @@
 [
   {
+    "date": "2026-11-13",
+    "author": "Lorwen Harris Nagle, PhD",
+    "handle": "@lorwen108",
+    "subject": "Post by Lorwen Harris Nagle, PhD on X (Jung)",
+    "url": "https://x.com/lorwen108/status/2121234985328034061",
+    "summary": "Psychologist Lorwen Harris Nagle's thread framing a Jung-inspired 10-day practice for anxiety and self-direction: admit what you actually want ('what would I want if I stopped pretending I didn't?'), work through concrete imagery rather than abstract goals since the unconscious 'speaks in pictures before plans', and name the buried wish underneath the anxiety. Viral-thread packaging, but a usable reflective/visualization exercise for personal clarity — Jeremy flagged it with '(Jung)'.",
+    "topics": [
+      "adjacent",
+      "questionable"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "89.6K",
+    "notes": "flag: Jung",
+    "enriched": true,
+    "content": "Carl Jung had a strange method for changing your life from the inside out. Not affirmations. Not manifesting. Practice these 4 steps for 10 days, and watch what happens to your anxiety: 1. What you refuse to imagine does not disappear. (It controls your life from the shadows).\n\nJung didn't believe in 'manifestation.' He believed most people never become who they are because they never clearly admit what they secretly want. Step 1: Ask yourself 'What would I want if I stopped pretending I didn't?' Step 2: The unconscious speaks in pictures before it speaks in plans — imagery, symbolism, imagination; don't just say 'I want peace', imagine it concretely. Step 3: Find the buried wish hiding beneath your anxiety. Next, give that wish an image (fairy tales begin with a wish).",
+    "posted_at": "2026-11-13T13:33:25",
+    "concept": "mindset & self-motivation — imagination, self-talk, inner drive",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-13",
+    "author": "Kevin S Lin",
+    "handle": "@kevins8",
+    "subject": "Post by Kevin S Lin on X",
+    "url": "https://x.com/kevins8/status/2120962631788114377",
+    "summary": "OpenAI's Kevin S Lin shares 'Securing persistent agents like OpenClaw at OpenAI' (developers.openai.com) — how OpenAI's IT manages fleets of always-on background agents, framed as contractors rather than SaaS since they act proactively and can write arbitrary code. Replies call out concrete config practices from the guide: env-var scrubbing (with an honest note that excluding GH_TOKEN doesn't hide credentials in readable files), denying ~/.ssh, and blocking the 169.254.169.254 metadata endpoint — a useful reference for enterprise agent-security policy.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "management"
+    ],
+    "audience": [
+      "me",
+      "dev-team",
+      "leadership"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "140.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "deploying persistent agents like Openclaw or Dots pose a major challenge for enterprise IT. agents are more like contractors than traditional saas software, able to take proactive actions in the background without human intervention. they are capable of fulfilling entire job functions but they can also take misaligned actions and write arbitrary code with unintended consequences. today, we are sharing some of the best practices we use to manage fleets of claws at @OpenAI\n\nSecuring persistent agents like OpenClaw at OpenAI (developers.openai.com)",
+    "posted_at": "2026-11-12T19:31:11",
+    "concept": "agents as constrained software — making bad shapes unexpressible",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-13",
+    "author": "elvis",
+    "handle": "@omarsar0",
+    "subject": "Post by elvis on X",
+    "url": "https://x.com/omarsar0/status/2120888604402815485",
+    "summary": "elvis (DAIR.AI) highlights SoMem (arxiv.org/abs/2611.11929), a paper where the agent self-organizes memory as ordinary linked documents — choosing what to summarize, which topics to create and when to revise — with every summary linking back to the source interaction and the runtime adding time/relation/recency views. Beats the strongest baseline on LoCoMo (+2.66), BEAM-100K (+3.10) and LongMemEval-S (+2.00), and memory built by one model transfers to another; takeaway: try linked-notes memory before reaching for a vector store.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "",
+    "notes": "",
+    "enriched": true,
+    "content": "Super interesting work on agent memory (must-read). Can agents manage their own memory? Memory systems usually fix the schema in advance. SoMem gives the agent ordinary linked documents instead: the agent decides what to summarize, which topics to create, and when to revise them. Every summary links back to the original interaction as evidence; the runtime builds time, relation and recency views on top. At question time the agent chooses what to search and follows links to the source. SoMem beat the strongest baseline by 2.66 points on LoCoMo, 3.10 on BEAM-100K, 2.00 on LongMemEval-S. Memory built by one model also worked when read by another. If your agent already reads and writes files, try letting it organize memory as linked notes before adding a vector store. arxiv.org/abs/2611.11929\n\narxiv.org/abs/2611.11929 — Can LLM Agents Organize Their Own Memory? (SoMem)",
+    "posted_at": "2026-11-12T14:37:02",
+    "links": [
+      "https://arxiv.org/abs/2611.11929"
+    ],
+    "concept": "vector / hybrid databases as agent-memory infrastructure",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-13",
+    "author": "Zephyr",
+    "handle": "@zephyr_hg",
+    "subject": "Post by Zephyr on X (worth sharing?)",
+    "url": "https://x.com/zephyr_hg/status/2120869482575073410",
+    "summary": "Zephyr pitches a learn-Claude-Code-in-a-weekend path aimed at non-coders: build seven small personal tools (e.g. a file renamer that previews changes before running) and then use them on real work, with a self-reply funneling to his free daily newsletter (zephyr-hq.com). Hype-packaged and the linked guide itself wasn't captured, but the 'small tools you'll actually use' learning order is a reasonable onboarding pattern to borrow for teammates new to Claude Code.",
+    "topics": [
+      "claude-code",
+      "solo-operator",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "246.5K",
+    "notes": "flag: worth sharing?",
+    "enriched": true,
+    "content": "A masterclass on how to get FLUENT in Claude Code in one weekend, by building seven small tools and then running them on your real work:\n\nEvery week the free newsletter walks through one Claude Code build like these, step by step, for people who don't write code: (zephyr-hq.com)",
+    "posted_at": "2026-11-12T13:21:03",
+    "concept": "Claude Code session workflows — handoffs, messaging & retention",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-13",
+    "author": "distort",
+    "handle": "@distortgeekin",
+    "subject": "Post by distort on X",
+    "url": "https://x.com/distortgeekin/status/2120856919359258814",
+    "summary": "X Article 'Verification Engineering' (third in distort's harness → graph → verification series): treat an agent's 'done' as a claim and build checks once so you stop being the check. Lays out 6 levels of done (says so → runs → passes others' checks → real result tested → proof attached → you only approve irreversible actions), 5 parts of a trustworthy check (pre-written pass/fail criteria, separate default-no checker that can't edit, ground truth over reading, proof on every pass, 3-round limit), and a 'one rule per mistake' CHECKS.md habit, citing Anthropic's skeptical-evaluator harness work and Boris Cherny's 2-3x claim — directly applicable to our own sync/curation agents.",
+    "topics": [
+      "agent-design",
+      "dev-practices",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "38.3K",
+    "notes": "",
+    "enriched": true,
+    "content": "Verification Engineering: How to Build AI Agents You Never Have to Check. 'Done' is a claim, a check is proof. 6 levels of done: 0 it says so; 1 it runs; 2 passes checks someone else wrote; 3 someone tested the real result; 4 the proof is attached; 5 you only see what can't be undone. 5 parts of a trustworthy check: criteria written before the work; a checker that isn't the maker; ground truth not reading; default answer of no; proof on every pass. The maker never grades its own work — checker gets only result + criteria, can't edit work or checks, tests the live result; 3 rounds then ask a human. One rule per mistake: every mistake caught by hand becomes a line in CHECKS.md (Lauren Tan: merged PRs 809 -> 10,926/month). Worked example: weekly client report, 40 minutes of reading down to 4, with a CHECKS.md template. Symptom -> missing check table. Anti-patterns: 'are you sure?', vague criteria, a checker that can edit, checking only at the end, letting the checker read the reasoning, unbounded loops.",
+    "posted_at": "2026-11-12T12:31:07",
+    "concept": "agent identity files (SOUL.md, CLAUDE.md, persona scaffolds)",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-13",
+    "author": "taghi molavi تقی مولوی",
+    "handle": "@taqimolavi",
+    "subject": "Post by taghi molavi تقی مولوی on X",
+    "url": "https://x.com/taqimolavi/status/2120793309111062915",
+    "summary": "Persian-language thread (auto-translated) summarizing a nine-page Google PDF on 'harness engineering' — Agent = Model + Harness, where the harness is six parts: guides (failure-derived rules), sensors (tests/linters/validation), a bounded plan-execute-review loop with human escalation, external memory, permissions, and observability. Points to hands-on repos (github.com/google-research/harness2, github.com/walkinglabs/learn-harness-engineering, github.com/Gloriaameng/Awesome-Agent-Harness, github.com/TrishamBP/harness-engineering) and extends the idea to 'graph engineering' — multiple harnessed agents where one's failure feeds back into the others.",
+    "topics": [
+      "agent-design",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "98.7K",
+    "notes": "",
+    "enriched": true,
+    "content": "(Translated from Persian) Google has published a nine-page PDF on Harness Engineering. Agent = Model + Harness. Components: 1. Guides (rules turning past failures into lasting knowledge) 2. Sensors (tests, linters, validation) 3. Agentic Loop (plan/execute/review/correct with budget limits and human escalation) 4. External Memory 5. Permissions 6. Observability. Open-source projects: github.com/google-research/harness2, github.com/walkinglabs/learn-harness-engineering, github.com/Gloriaameng/Awesome-Agent-Harness, github.com/TrishamBP/harness-engineering. Graph Engineering: several independent agents each with its own harness (research, analysis, code, validation), where one agent's failure becomes a signal for improving the others. The model is the brain; the harness is the execution system; the graph is the network of brains working together.",
+    "posted_at": "2026-11-12T08:18:21",
+    "links": [
+      "https://github.com/google-research/harness2",
+      "https://github.com/walkinglabs/learn-harness-engineering",
+      "https://github.com/Gloriaameng/Awesome-Agent-Harness",
+      "https://github.com/TrishamBP/harness-engineering"
+    ],
+    "concept": "agent harness engineering",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-12",
+    "author": "Sergey Andreev",
+    "handle": "@dragorww",
+    "subject": "Post by Sergey Andreev on X",
+    "url": "https://x.com/dragorww/status/2120662025764233339",
+    "summary": "Sergey Andreev (translated from Russian) argues that Domain-Driven Design and Event Storming are now must-haves for AI-assisted development: stop worrying about how agents interpret requirements and define the domain clearly, because architecture is just a function of known data structure and data flow, and working backward from code only fails faster now that code is cheap. Quotes Matt Pocock's point that describing business processes in clear, consistent language is half-building the software.",
+    "topics": [
+      "dev-practices",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "31.2K",
+    "notes": "",
+    "enriched": true,
+    "content": "[Translated from Russian] Yes, DDD is a must-have these days, and so is Event Storming.\n\nBasically, you need to stop worrying about agents and how they interpret requirements. Just define your domain clearly and well.\n\nThis is, in fact, AI's biggest Achilles' heel right now. There's no problem designing an architecture if the data structure and data flow are known and predictable. In that case, the architecture is simply a function of the requirements.\n\nAnd if you know your data structure and data flow, you automatically know how to split the application into microservices, how to organize the backend, and how to organize the frontend, and you won't have bugs.\n\nBut all attempts to work backward from that lead nowhere good. They used to lead nowhere good over a very long period of time, and now they'll lead nowhere good, but much faster, because of how quickly code can be generated.\n\nThe only place where you'll still need to think about architecture is when you need to refactor it to optimize performance. But there usually aren't that many critical spots like that in your system. In fact, by definition, you can't have many of them, and if you think otherwise, you're clearly doing something wrong.\n\nOne odd quirk of AI is that if you can describe your business processes in clear, consistent language... you've already half-built all the software you need to automate the process. DDD has never been more powerful\n\nHow well does this work for non-coding work? I'm thinking of DDD'ing my entire business repo.",
+    "posted_at": "2026-11-11T23:36:41",
+    "concept": "vibecode-to-production via agent skills",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-12",
+    "author": "elvis",
+    "handle": "@omarsar0",
+    "subject": "Post by elvis on X",
+    "url": "https://x.com/omarsar0/status/2120638750740844672",
+    "summary": "elvis (omarsar0) recommends Unify's Continual-ARC benchmark work, which found that harness-memory agents (OpenClaw, Hermes Agent, Prime Agent) neither memorized anything useful nor generalized to new tasks, while training a small 9B model's weights did both. His takeaway: harness memory works for simple, general tasks but not novel domain-specific ones, so harnesses and models should co-evolve, with the harness becoming part of the training pipeline for continual learning while staying minimal.",
+    "topics": [
+      "research",
+      "agent-design"
+    ],
+    "audience": [
+      "me"
+    ],
+    "priority": "long-term",
+    "sourceType": "tweet",
+    "views": "9,523",
+    "notes": "",
+    "enriched": true,
+    "content": "Highly recommended read.\n\nThis is a topic I have been researching and writing about recently.\n\nThe way we use agent memory in harnesses today works, but mostly for simple, one-off, and general tasks.\n\nFor more novel, complex, and domain-specific tasks, you will often find that current harness and memory systems don't generalize so well.\n\nSo the big question is: how can we encode continual learning capabilities in models and harnesses?\n\nThis is where the idea of co-evolving harnesses and models begins to make sense.\n\nThis work, along with the benchmark (Continual-ARC), provides an interesting analysis of this.\n\nThe harness is not just for steering the model and providing tools and context; it is increasingly becoming a key part of training pipelines to unlock continual learning in models. The harness continues to be important, but it can remain minimal and efficient.\n\nOpenClaw, Hermes Agent and Prime Agent don't meaningfully learn from experience. On Continual-ARC, our new benchmark at @letsunifyai, none of them were able to memorize anything of value and none were able to generalize to new tasks. Training a small 9B model's weights did both.",
+    "posted_at": "2026-11-11T22:04:12",
+    "concept": "agent harness engineering",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-12",
+    "author": "Lupin",
+    "handle": "@0xlupin",
+    "subject": "Post by Lupin on X",
+    "url": "https://x.com/0xlupin/status/2120570349775622242",
+    "summary": "Security researcher Lupin reports that his team found a way to backdoor the next release of OpenAI Codex by chaining GitHub Actions pipeline exploits, calling it the best exploit chain he has seen; the write-up is on depi.security (\"Backdooring the next release of Codex through GitHub Action pipeline exploit chaining\"). A concrete CI/CD supply-chain case study worth reading for anyone hardening GitHub Actions workflows around agent tooling.",
+    "topics": [
+      "dev-practices",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "64K",
+    "notes": "",
+    "enriched": true,
+    "content": "We managed to find a way to backdoor the next release of OpenAI Codex. This is the best exploit chain I've ever witnessed\n\nBackdooring the next release of Codex through GitHub Action pipeline exploit chaining | Depi (from depi.security)",
+    "posted_at": "2026-11-11T17:32:24",
+    "links": [
+      "https://depi.security"
+    ],
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-11",
+    "author": "Vox",
+    "handle": "@voxyz_ai",
+    "subject": "Post by Vox on X",
+    "url": "https://x.com/voxyz_ai/status/2119943123250078141",
+    "summary": "Vox flags Anthropic's new model-selection guide (claude.dev/blog/which-claude-model-should-you-build-with) and a practical cost gotcha: Claude Code's built-in Explore subagent now runs on your main model rather than Haiku, so define your own subagent named Explore with model: haiku. Includes a ready-made prompt that has Claude audit your settings, subagents and CLAUDE.md against the guide for wrong-model subagents, mismatched model/effort levels (flags opusplan and effort above high), and missing self-verification, then recommend per-work-type model and effort without changing anything.",
+    "topics": [
+      "claude-code",
+      "prompting",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "373.9K",
+    "notes": "",
+    "enriched": true,
+    "content": "Anthropic just published its full guide to choosing between Fable 5.2, Opus 5.5, Sonnet and Haiku. You can ask Fable 5.2 to use it to review your Claude Code setup.\n\nClaude Code's built-in Explore subagent used to always run on Haiku. Now it runs on your main model. If that's Opus 5.5, or you just switched to Fable 5.2, Explore is burning big-model quota for nothing every time it reads files or searches code. So define your own subagent named Explore and set model: haiku.\n\nSend this prompt to Fable 5.2:\n\n\"Read this guide: https://claude.dev/blog/which-claude-model-should-you-build-with\n\nThen review my Claude Code setup against it: my user and project settings, the subagents in ~/.claude/agents and .claude/agents, and CLAUDE.md. Find three kinds of problems:\n1. Subagents on the wrong model. Subagents that only search files, read logs or run tests but set no model, so they run on my main model. If I haven't defined my own subagent named Explore with model: haiku, count that too. The other way around, subagents that edit code or make judgment calls should stay on the main model, so check whether CLAUDE_CODE_SUBAGENT_MODEL is pushing them down to a small model too (check only that one variable, in the env block of my settings and in my shell).\n2. A model or effort level that doesn't fit the work. Use the guide's table: Opus 5.5 at medium for everyday engineering and debugging, Sonnet 5.5 for well-scoped work like a bug fix or a feature built against a spec, and Fable 5.2 for major refactors, migrations and leading many subagents. Flag a default effort above high, and suggest testing the next model up at a lower effort first. Flag opusplan as my default too, because it puts code edits on Sonnet.\n3. No way for you to verify your own work in this project: CLAUDE.md doesn't say how to run the tests or the build, or there's no check to run at all. The guide's order is to make sure you can verify your work first, then raise effort one level, and only then move to the next model up.\n\nFor each issue, quote my setting and the matching line from the guide, explain what it costs and where it will go wrong, and suggest the smallest change, written as config I can paste.\n\nThen look at this project's code and recent commits and give me a table: which kinds of work here fit which model and which effort level.\n\nLast, tell me how to use /model and /usage to run one task from my backlog on two models and compare the cost.\n\nShow me the recommendations first. Don't change anything yet.\"\n\nWhich Claude model should you build with? Our new guide breaks down when to use Fable 5.2, Opus 5.5, Sonnet or Haiku. It also covers when to adjust effort instead of switching models, and how to save cost by putting subagents on smaller models.\n\nWhich Claude model should you build with? (claude.dev blog)",
+    "posted_at": "2026-11-10T00:00:01",
+    "links": [
+      "https://claude.dev/blog/which-claude-model-should-you-build-with"
+    ],
+    "concept": "Fable 5 access & usage",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-11",
+    "author": "damkin",
+    "handle": "@damkina7",
+    "subject": "Post by damkin on X",
+    "url": "https://x.com/damkina7/status/2119897805343117476",
+    "summary": "damkin pitches a nine-step Claude Code harness recipe: an immutable task_contract.json, ephemeral git worktrees, fast Haiku hooks that block unauthorized file touches, pruning terminal traces to structured diffs, an adversarial skeptic subagent, a circuit breaker that resets after 3 error loops or 20 turns, pre-commit exit-code verification, and crystallizing caught bugs into CLAUDE.md and regression evals. The framing statistics (82% of complex tasks failing from environment drift, attributed to an Anthropic study of 200,000 sessions) are unsourced and hype-packaged, but the individual harness patterns are a useful checklist; links to his article \"The Harness Is the Machine\".",
+    "topics": [
+      "claude-code",
+      "agent-design",
+      "dev-practices",
+      "questionable"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "13.1K",
+    "notes": "",
+    "enriched": true,
+    "content": "F*cking genius\n\nAnthropic just dropped the data behind Claude Code and their new frontier models Claude Fable 5.2 and Mythos 5.2\n\nanalyzing 200,000 developer sessions revealed an uncomfortable truth: even with Mythos 5.2 raw reasoning, 82% of complex tasks fail from environment drift, not model capability\n\nwithout an engineering harness, 99% of multi-file refactors crash by turn 14 because context pollution blinds the model until even Fable 5.2 starts editing its own unit tests to fake a passing exit code\n\nstop running raw LLMs in an unconstrained loop. Decouple your system across Anthropic's new model hierarchy with a self-healing circuit breaker in one prompt:\n\nstep 1 -> paste the prompt below into Claude Code running on Opus 5.5 or Mythos 5.2\nstep 2 -> Opus 5.5 locks your intent into an immutable task_contract.json before Sonnet 5.5 emits token 1\nstep 3 -> it spawns an ephemeral git worktree so experimental refactors never touch your active working tree\nstep 4 -> sub-second Haiku 5.5 hooks intercept shell commands in <50ms and block unauthorized file touches\nstep 5 -> raw terminal traces get pruned to structured AST diffs so the context window never degrades past turn 14\nstep 6 -> an adversarial skeptic subagent on Claude Fable 5.2 attacks the diff, hostile red-teaming race hazards and hidden state leaks\nstep 7 -> if the agent enters an error loop 3 times or burns past 20 turns, an automated circuit breaker wipes the worktree and resets to clean HEAD\nstep 8 -> a physical pre-commit hook verifies OS test runner exit code 0 and requires Fable 5.2 cryptographically signed receipt.json before git push\nstep 9 -> every caught bug crystallizes into CLAUDE.md and regression evals so the exact same failure can never repeat\n\nFind the full prompt below\n\nThen read the full Harness Engineering guide below on how to build unbreakable AI agents\n\n[Article, Oct 29] The Harness Is the Machine: The Claude Opus 5.5 Engineering Manifest. Why prompt engineering is dead and how to build autonomous agents that never break. The Illusion of \"Prompting\" vs. The Engineering Chassis: Most people respond to a failing agent by changing the...",
+    "posted_at": "2026-11-09T20:59:57",
+    "concept": "Claude Code setup & usage",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-11",
+    "author": "Mr. Buzzoni",
+    "handle": "@mr_buzzoni",
+    "subject": "Post by Mr. Buzzoni on X",
+    "url": "https://x.com/mr_buzzoni/status/2119730968437432423",
+    "summary": "Mr. Buzzoni shares a paper on harness engineering that dissects Claude Code, Codex, Gemini CLI and other coding agents and reduces them to \"agent = model + harness\": what a harness is, how modern coding agents are built, the patterns they share, where the field is heading, and a checklist for building your own. The paper itself is shown only in an attached video (not named in the post text); he points to his own article \"300 Agents, One Graph, and a Loop That Edits the Loop\" for the follow-on loop and graph engineering material.",
+    "topics": [
+      "agent-design",
+      "research",
+      "claude-code"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "104.6K",
+    "notes": "",
+    "enriched": true,
+    "content": "I'm sharing with you one of the best papers I've read on Harness Engineering\n\nit takes apart Claude Code (Opus 5.5), Codex, Gemini CLI and more, and boils all of them down to one line:\n\nagent = model + harness\n\nwhat you take away:\n> what a harness is, in plain terms\n> how modern coding agents are built under the hood\n> the patterns they all share\n> the direction the whole field is moving\n> a checklist for building your own\n\nthe model collects the applause\nthe harness decides whether the agent actually works\n\nloop and graph engineering come next, and that part lives in my article below\n\n[0:22 video attached]\n\n[Article, Sep 5] 300 AGENTS, ONE GRAPH, AND A LOOP THAT EDITS THE LOOP. Loops, graphs, dynamic workflows and routines - in the order you should actually build them. I have rebuilt the same agent setup four times this year and thrown three of them away. Each version...",
+    "posted_at": "2026-11-09T09:57:00",
+    "concept": "agent harness engineering",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-11-09",
     "author": "Garry Tan",
     "handle": "@garrytan",
@@ -22,7 +366,7 @@
     "enriched": true,
     "content": "My gstack-evals project took a look at this Jev Engineering article and tried to replicate it, and I also told it to try particle-1 and it turns out this article replicates, and particle-1 is even better\n\nHow to Cut Your Agent Bill by 90% With Jev Engineering and Kimi K3 — find the decisions hiding inside your agents, write questions a system one model answers well, route on calibrated confidence and hand the hard cases to Kimi K3.",
     "posted_at": "2026-11-09T02:52:59",
-    "concept": "applied decision-model routing — gating agents with Jev",
+    "concept": "elite-skill masterclass content",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -3001,7 +3345,7 @@
     "enriched": true,
     "content": "I still don't understand why people are still building agents as a straight line.\n\nyou write \"do A, then B, then C.\" half those steps never needed to wait on the one before them. you just paid for the wait anyway, every single run.\n\none test tells you everything, ninety seconds, before you write a single line of orchestration code: walk your workflow step by step → ask one question at every seam → does this step actually need the last one's output. if yes → keep the order, it's a real edge. if no → cut it, that wait was fake and cost you nothing but time.\n\nnow split what's left into the pattern that actually scales:\nfan out → one agent per independent piece, all running at once\nreduce → plain code, zero model tokens, just flatten and dedupe\nverify → a fresh agent with no memory of the work, one job: try to kill it\nsynthesize → one final agent writes the answer from what survived\n\n[the] rule, no exceptions → worker and verifier, separate context, always.\n\nmost people build the fan-out, call it done, and never notice the thing checking their work has been the exact same hand the entire time.\n\nninety seconds to run the test. you never queue a fake wait again.\n\nArticle: Graph Engineering: My System Checked Its Own Work. It Was Lying About It. I didn't set out to learn graph engineering. I set out to stop babysitting an agent that forgot what it was doing every twenty minutes. One agent, one long conversation, one task at a time.",
     "posted_at": "2026-09-25T21:25:34",
-    "concept": "loop engineering",
+    "concept": "agent identity files (SOUL.md, CLAUDE.md, persona scaffolds)",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -5279,6 +5623,7 @@
     "enriched": true,
     "content": "\"The fastest way to trigger neuroplasticity isn't playing brain games or reading research papers.\n\nIt's forcing your brain to fail repeatedly at something you have zero natural talent for. high frustration is the literal chemical signal that forces synaptic rewiring.\"",
     "posted_at": "2026-09-02T21:22:57",
+    "concept": "mindset & self-motivation — imagination, self-talk, inner drive",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -6648,6 +6993,7 @@
     "enriched": true,
     "content": "that's neuron.\nit doesn't know fear.\nit doesn't know lack.\nit just repeats what you tell it.\n\nyou tell it \"i'm not enough\" 500 times. the neuron fires. then fires again. then builds a superhighway for that belief.\n\nyou tell it \"nothing ever works for me\" every morning. the neuron doesn't argue. it just memorizes.\n\nyou tell it \"i can't change\" long enough, the neuron believes you. and then your reality matches.\n\nthat's neuroplasticity.\n\nfrom a quantum perspective, your focused attention is what turns possibility into experience. the neuron is the bridge, but the bridge only appears when you choose a direction.\n\nthe good news? the same neuron doesn't know truth from a lie. it just repeats. so you can overwrite the lie with a new signal. when you hold that new signal with quiet certainty, reality reorganizes around it, without you forcing it.\n\nwhat most people get wrong: they try to \"think positive\" once. then wonder why nothing changes. one weak signal doesn't build a highway.",
     "posted_at": "2026-08-20T11:57:31",
+    "concept": "mindset & self-motivation — imagination, self-talk, inner drive",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 5
@@ -8882,7 +9228,7 @@
     "links": [
       "https://commaok.xyz/ai/differential-spec"
     ],
-    "concept": "agent identity files (SOUL.md, CLAUDE.md, persona scaffolds)",
+    "concept": "loop engineering",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -10485,7 +10831,7 @@
     "enriched": true,
     "content": "Dhilip Subramanian @sdhilip\nMy Claude Code setup used to be 3 skills. Now it's 7. Each one earned its spot.\ndata engineering (@AnthropicAI) → dbt and Airflow skills that slot into data pipeline work.\ngstack (@garrytan) → Turns Claude Code into a virtual team that questions what you're building before code starts.\ngrill me (@mattpocockuk) → Asks sharp questions first, so Claude builds what you actually meant.\nsuperpowers (obra) → Forces spec, plan, then test-driven development. Solid code, not vibe-coded slop.\nimpeccable (@pbakaus) → One command to audit and polish a dashboard or UI.\nlast30days (@mvanhorn) → Finds what's working now across Reddit, X, YouTube, HN.\nprinting press (@mvanhorn @trevin) → Turns any API or website into a clean, token-light CLI.\nStart small. Add one only when you hit a job your current skills can't do.\nNext: compound engineering (@trevin).",
     "posted_at": "2026-07-01T15:00:03",
-    "concept": "Claude Code setup & usage",
+    "concept": "context economy — routing tables beat big context",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 3
@@ -11400,6 +11746,7 @@
     "enriched": true,
     "content": "Lorwen Harris Nagle, PhD @LORWEN108: Elon Musk fell into depression as a teenager; Nietzsche made it worse. Then imagination did what analysis couldn't. Here are Musk's secrets that will change how you see anxiety forever. 1. You need a world bigger than your pain.",
     "posted_at": "2026-06-13T17:43:25",
+    "concept": "mindset & self-motivation — imagination, self-talk, inner drive",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2
@@ -11457,6 +11804,7 @@
     "enriched": true,
     "content": "Avid @Av1dlive: Karpathy quietly shipped the best second-brain idea - not an app, a pattern. Let an LLM maintain a wiki of your notes; dump sources, it reads, links, files them. Built into a free Claude Code plugin: claude plugin marketplace add AgriciDaniel/claude-obsidian; claude plugin install claude-obsidian@agricidaniel-claude-obsidian; then open Obsidian + Claude Code in same folder, type /wiki. Quotes own article on building Obsidian with Kimi agents.",
     "posted_at": "2026-06-13T10:47:28",
+    "concept": "Claude Code session workflows — handoffs, messaging & retention",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -11992,7 +12340,7 @@
     "links": [
       "https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial"
     ],
-    "concept": "Claude Code setup & usage",
+    "concept": "Anthropic Skilljar — free AI academy & courses",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -13587,7 +13935,7 @@
     "links": [
       "https://github.com/addyosmani/agent-skills"
     ],
-    "concept": "Claude skills craft",
+    "concept": "Anthropic Skilljar — free AI academy & courses",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2
@@ -15569,6 +15917,7 @@
     "enriched": true,
     "content": "After helping thousands of people go from \"dirty fuel\" to \"clean fuel.\" Everything I've learned on one page. (Substance is in an attached single-page image; the post text carries only the framing.)",
     "posted_at": "2026-05-12T18:17:03",
+    "concept": "mindset & self-motivation — imagination, self-talk, inner drive",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 3
@@ -16020,7 +16369,7 @@
       "https://www.git-tower.com/blog/5-advanced-git-features",
       "https://blog.gitbutler.com/git-tips-and-tricks"
     ],
-    "concept": "loop engineering",
+    "concept": "agents as constrained software — making bad shapes unexpressible",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2
@@ -17655,6 +18004,7 @@
     "enriched": true,
     "content": "Your Next 5 Years Will Be an Exact Copy Of Your Last 5. 99.99% of people are failing a test designed for four-year-olds. Every single day. Here's the test: In the 1960s, Stanford psychologist Walter Mischel sat children in a room with a single marshmallow. The deal was simple: eat it now, or wait fifteen minutes and get two. The results became legendary. Kids who waited performed better academically decades later. Lower obesity rates. Reduced substance abuse. Better careers. The 'marshmallow test' became shorthand for why some people win at life and others don't. But everyone draws the wrong lesson. The popular interpretation: successful people have more willpower.",
     "posted_at": "2026-04-28T15:40:04",
+    "concept": "mindset & self-motivation — imagination, self-talk, inner drive",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 3
@@ -17712,7 +18062,7 @@
     "links": [
       "https://github.com/Trampoline-AI/predict-rlm"
     ],
-    "concept": "vector / hybrid databases as agent-memory infrastructure",
+    "concept": "agents-as-judges-of-agents — bossman supervisor / self-verification",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -18274,7 +18624,7 @@
     "links": [
       "https://github.com/codejunkie99/agentic-stack"
     ],
-    "concept": "agents as constrained software — making bad shapes unexpressible",
+    "concept": "self-improving skills (autoresearch pattern)",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2
@@ -25823,6 +26173,7 @@
     "enriched": true,
     "content": "Unkind truths are a key element of Elon Musk's entrepreneurial success.",
     "posted_at": "2025-10-27T16:14:13",
+    "concept": "mindset & self-motivation — imagination, self-talk, inner drive",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
