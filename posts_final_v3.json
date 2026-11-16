@@ -1,5 +1,63 @@
 [
   {
+    "date": "2026-11-16",
+    "author": "Viv",
+    "handle": "@vtrivedy10",
+    "subject": "Post by Viv on X (evals)",
+    "url": "https://x.com/vtrivedy10/status/2122089550529151126",
+    "summary": "Viv (LangChain) on an easy win for eval-building: agents design far more reliable evals and benchmarks when seeded with examples of good and bad eval design (Terminal Bench, HLE, Harvey LAB, internal evals) rather than starting from scratch, because agents amplify whatever patterns are in their context. He lists the design space (verifier design, environment fidelity, synthetic data, task-description vagueness), says his team embeds liked examples into skills as concrete references, and warns about overfitting to existing evals.",
+    "topics": [
+      "dev-practices",
+      "agent-design",
+      "skills-mcp",
+      "research"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "8,645",
+    "notes": "flag: evals",
+    "enriched": true,
+    "content": "easy win for building evals:\nagents build way better & more reliable Evals/Benchmarks if you seed them with examples of good/bad design across tasks (Terminal Bench, HLE, Harvey LAB, internal evals, etc)\n\nthe design space for a single Eval is huge\n- verifier design (rubrics, programmatic vs judge,\n- environment fidelity (container settings, realistic tools)\n- synthetic data creation\n- vagueness vs enough information in task descriptions\n\nagents are amplifiers of their context -> ex: in codebases, they copy all the good/bad patterns that already exist\n\nso we should use this to our advantage by seeding\n\nno benchmark is perfect - but lots of time went into getting stuff right, agents are hopelessly bad at designing from scratch\n\nwe embed examples we like into skills which gives agents something concrete to reference\n\nbe wary of “overfitting” to existing evals, it’s a delicate balance between stability & diversity",
+    "posted_at": "2026-11-15T22:09:10",
+    "concept": "applied decision-model routing — gating agents with Jev",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
+    "date": "2026-11-16",
+    "author": "Steve Yegge",
+    "handle": "@steve_yegge",
+    "subject": "Post by Steve Yegge on X",
+    "url": "https://x.com/steve_yegge/status/2121671447810888185",
+    "summary": "Steve Yegge distills three hot takes from his two conference talks on software factories: (1) slow down and pace AI output to human speeds, since his agents have overwhelmed players, his accountant, his merge queue and his machines; (2) you probably don't need a software factory, they are bespoke, upkeep-heavy 'garbage mountains' (he burned down five), so build rather than buy and only if you really need one; (3) next year brings personal chief-of-staff agents and agent entourages that people bring to work, with human/agent office drama and negotiation protocols to follow.",
+    "topics": [
+      "agent-design",
+      "management",
+      "dev-practices",
+      "industry"
+    ],
+    "audience": [
+      "me",
+      "leadership"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "318.4K",
+    "notes": "",
+    "enriched": true,
+    "content": "I just finished talks about my software factories at two conferences. Afterwards a bunch of people came up and told me what they were surprised about. Here is a distillation of what people thought were hot takes from my two talks.\n\nFirst hot take: I tell everyone to slow down. Most speakers go on about how fast they're going, but I strongly believe in pacing AI outputs to human speeds. I regularly tell AI-pilled CIOs and CTOs to chill: almost nobody is _actually_ going fast with AI. Engineering still moves at engineering speeds, and business moves even slower. The ones pushing too hard are starting to see downtime for it.\n\nIf you don't pace your AI to human speeds, everything starts breaking around you, even at small operations like my online video game. I only have about a dozen humans working with my factory, and only a few hundred active old-timer players in the community who get along well, and still, introducing AI has still been very rocky.\n\nMy agents have, at times, overwhelmed my players with features, my accountant with emails, my merge queue with tickets, and my machines with load. Agents have pissed off my admins, resulting in name-calling, they've made messes in the game, and they've launched broken OSS without permission. The list goes on.\n\nI can get away with all this chaos because everyone involved in my operation is very forgiving. They're excited by the potential. But even so, I had to learn to slow down, real fast. And so that's what I preach.\n\nHot take #2: Should you buy a software factory? Do you even need one? No. You probably don't need one. Factories take an extraordinary amount of upkeep. They turn into garbage mountains unless you put a frightening amount of time and tokens into curating them. I had to burn my previous five factories down since it eventually became cheaper to rewrite them than to fix them. So I'm not out there advocating for software factories or swarms just yet. If you do want one, be aware that it is a significant commitment of both money and human leadership to keep one running.\n\nSeveral people told me that I was the only one who stood up onstage, at either conference, and said Build, don't Buy. But my experience is that software factories grow to be highly bespoke to your domain. Mine is super tangled up with my game, and I think that's inevitable. Because the factory is not just building my product, it's supporting it too. It's a company in a box. And they're easy for Claude to build for you.\n\nThird and arguably hottest take: Next year will have a lot of human/agent and agent/agent office drama, resulting from bringing in AI employees, and it will be gloriously funny, but also frustrating.\n\nMany of you are already on this bandwagon, but everyone next year will have a personal chief-of-staff agent. Busy people, even hobbyists, will have whole entourages of helper agents. The hot take is that people will become so dependent on these little private entourages, that they'll bring them to work. Your people will talk to my people, etc. Whole protocols will emerge for private entourages negotiating work between humans, inside companies big and small.\n\nNearly all humans will wind up having to start working with AI employees next year, and it'll be the beginning of the biggest cultural change we've seen in a hundred years.\n\nSo that's the hot takes. Slow down. Only build a factory if you think you really need one. And focus on empowering yourself with your own agentic chief of staff (or team). Your entourage will define how you work with others, so start by perfecting how you work with them yourself.",
+    "posted_at": "2026-11-14T18:27:46",
+    "concept": "elite-skill masterclass content",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-11-13",
     "author": "Lorwen Harris Nagle, PhD",
     "handle": "@lorwen108",
@@ -366,7 +424,7 @@
     "enriched": true,
     "content": "My gstack-evals project took a look at this Jev Engineering article and tried to replicate it, and I also told it to try particle-1 and it turns out this article replicates, and particle-1 is even better\n\nHow to Cut Your Agent Bill by 90% With Jev Engineering and Kimi K3 — find the decisions hiding inside your agents, write questions a system one model answers well, route on calibrated confidence and hand the hard cases to Kimi K3.",
     "posted_at": "2026-11-09T02:52:59",
-    "concept": "elite-skill masterclass content",
+    "concept": "applied decision-model routing — gating agents with Jev",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -6354,7 +6412,7 @@
     "enriched": true,
     "content": "WILD...the model grades its own answers and beats itself. Stanford's LLM-as-a-Verifier sampled 5 swe-agent trajectories, ranked them with the same model, kept the winner. deepseek-v4-flash went from 78.7% to 88% on terminal-bench without fine-tuning. 100% Opensource.",
     "posted_at": "2026-08-24T02:27:01",
-    "concept": "local model serving on consumer GPUs — quantization & throughput",
+    "concept": "applied decision-model routing — gating agents with Jev",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -11443,7 +11501,7 @@
     "enriched": true,
     "content": "Andrew Ng: 100% of my tasks are now done by AI agents; loops are next; in 3-6 months everyone will use self-improving loops, no more prompting. A 30-min talk on building self-improving agentic systems from scratch.\n\nThe Self-Improving Loop: a 300-agent swarm on Kimi K2.6, verified by Opus 4.8. A free open-source model running 300 parallel agents across 4,000 coordinated steps from a single prompt, scoring higher on real research tasks than pricier models.",
     "posted_at": "2026-06-21T18:29:25",
-    "concept": "loop engineering",
+    "concept": "persistent always-on agents — bot mode & agent desktops",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2
@@ -13336,7 +13394,7 @@
     "enriched": true,
     "content": "Anthropic just officially released the blueprint for creating a company with Claude Code and it's mind-blowing\n\nCEO: 1 human (who sleeps)\nEmployees: several AIs\nActivities: the AIs divide up the tasks and move forward on their own\n\nWork is literally dying... I've summarized the full guide below, read it when you've got 5 min\n\nIf you want the AI to work while you sleep - save this as a bookmark\n\nArticle: How to Build a SaaS MVP in One Afternoon Using 7 AI Agents. I have shipped products for years. I know what slow looks like. The first week of any SaaS is the worst part. You are switching roles in your head all day: Founder, Researcher, Product...",
     "posted_at": "2026-05-27T13:45:45",
-    "concept": "managing agent teams",
+    "concept": "Forward Deployed Engineers — the durable AI-era role",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2
@@ -13874,6 +13932,7 @@
     "links": [
       "https://github.com/gnurio/tufte-vdqi-plugin"
     ],
+    "concept": "Claude Code session workflows — handoffs, messaging & retention",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 2

@@ -1,12 +1,12 @@
 # AI Links Collection
-**Total Posts**: 970  
-**Date Range**: 2024-06-11 – 2026-11-13  
-**Enriched**: 970/970 (100%)
+**Total Posts**: 972  
+**Date Range**: 2024-06-11 – 2026-11-16  
+**Enriched**: 972/972 (100%)
 
 ---
 ## Morning view
 
-*Generated 2026-11-13T20:00:50Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-11-16T17:46:23Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-11-13** — [Kevin S Lin](https://x.com/kevins8/status/2120962631788114377) — *now • Agent Design • 140.3K views • v1 enriched*  
@@ -15,10 +15,10 @@
   X Article 'Verification Engineering' (third in distort's harness → graph → verification series): treat an agent's 'done' as a claim and build checks once so you stop being the check. Lays out 6 levels of done (says so → runs → passes others' checks → real result tested → proof attached → you only approve irreversible actions), 5 parts of a trustworthy check (pre-written pass/fail criteria, separate default-no checker that can't edit, ground truth over reading, proof on every pass, 3-round limit), and a 'one rule per mistake' CHECKS.md habit, citing Anthropic's skeptical-evaluator harness work and Boris Cherny's 2-3x claim — directly applicable to our own sync/curation agents.
 - **2026-11-11** — [Vox](https://x.com/voxyz_ai/status/2119943123250078141) — *now • Claude Code • 373.9K views • v1 enriched*  
   Vox flags Anthropic's new model-selection guide (claude.dev/blog/which-claude-model-should-you-build-with) and a practical cost gotcha: Claude Code's built-in Explore subagent now runs on your main model rather than Haiku, so define your own subagent named Explore with model: haiku. Includes a ready-made prompt that has Claude audit your settings, subagents and CLAUDE.md against the guide for wrong-model subagents, mismatched model/effort levels (flags opusplan and effort above high), and missing self-verification, then recommend per-work-type model and effort without changing anything.
-- **2026-11-08** — [OpenCode](https://x.com/opencode/status/2118895128152621153) — *now • Skills & MCP • 323.6K views • v1 enriched*  
-  OpenCode announces 'Browse', which lets coding agents drive the user's real browser including tabs, logins and extensions (opencode.ai). Replies link it to the anomalyco/browser-control repo. Open-source analog to Claude in Chrome style computer use; worth evaluating.
-- **2026-11-08** — [pedram.md](https://x.com/pdrmnvd/status/2118753972207198349) — *now • Prompting • 45.1K views • v1 enriched*  
-  Free four-lesson 'Introduction to Evals' course on Claude Academy (academy.claude.com) for measuring prompts with structured feedback. Flagged by Jeremy as 'evals—watch'; a good onboarding resource for the dev team.
+- **2026-11-16** — [Viv](https://x.com/vtrivedy10/status/2122089550529151126) — *near-term • Dev Practices • 8,645 views • v1 enriched*  
+  Viv (LangChain) on an easy win for eval-building: agents design far more reliable evals and benchmarks when seeded with examples of good and bad eval design (Terminal Bench, HLE, Harvey LAB, internal evals) rather than starting from scratch, because agents amplify whatever patterns are in their context. He lists the design space (verifier design, environment fidelity, synthetic data, task-description vagueness), says his team embeds liked examples into skills as concrete references, and warns about overfitting to existing evals.
+- **2026-11-16** — [Steve Yegge](https://x.com/steve_yegge/status/2121671447810888185) — *near-term • Agent Design • 318.4K views • v1 enriched*  
+  Steve Yegge distills three hot takes from his two conference talks on software factories: (1) slow down and pace AI output to human speeds, since his agents have overwhelmed players, his accountant, his merge queue and his machines; (2) you probably don't need a software factory, they are bespoke, upkeep-heavy 'garbage mountains' (he burned down five), so build rather than buy and only if you really need one; (3) next year brings personal chief-of-staff agents and agent entourages that people bring to work, with human/agent office drama and negotiation protocols to follow.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
@@ -35,20 +35,20 @@
     - 2026-11-13 — [Kevin S Lin](https://x.com/kevins8/status/2120962631788114377): OpenAI's Kevin S Lin shares 'Securing persistent agents like OpenClaw at OpenAI' (developers.openai.com) — how OpenAI's IT manages fleets of…
     - 2026-11-08 — [Sergii Makarevych](https://x.com/sermakarevich/status/2119024563086397503): Article mapping eight failure modes of multi-step agents to structural architecture fixes (planner/worker/reviewer/guard nodes, context poli…
 
-- **Claude Code session workflows — handoffs, messaging & retention** (28 posts, +3 this week)  
+- **Claude Code session workflows — handoffs, messaging & retention** (29 posts, +3 this week)  
   Discovered by orphan clustering on 2026-10-08 from 6 posts with no prior concept (cohesion 0.66). Rename or archive if this isn't a real theme.
     - 2026-11-13 — [Zephyr](https://x.com/zephyr_hg/status/2120869482575073410): Zephyr pitches a learn-Claude-Code-in-a-weekend path aimed at non-coders: build seven small personal tools (e.g. a file renamer that preview…
     - 2026-11-04 — [Blum](https://x.com/blum_og/status/2117722452457586810): Blum (@Blum_OG) shares an 8-step single prompt for Claude Code that adds hooks requiring proof of work (commands plus output), a fresh revie…
-
-- **agent identity files (SOUL.md, CLAUDE.md, persona scaffolds)** (21 posts, +3 this week)  
-  Recurring pattern of giving an agent a persistent identity file that loads automatically and shapes behavior.
-    - 2026-11-13 — [distort](https://x.com/distortgeekin/status/2120856919359258814): X Article 'Verification Engineering' (third in distort's harness → graph → verification series): treat an agent's 'done' as a claim and buil…
-    - 2026-11-03 — [Avid](https://x.com/av1dlive/status/2117660576575066412): Avid (@Av1dlive) advises spending a day teaching your coding agent system design before it writes any code, and shares '7 rules + the 12-ste…
 
 - **vector / hybrid databases as agent-memory infrastructure** (46 posts, +2 this week)  
   HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
     - 2026-11-13 — [elvis](https://x.com/omarsar0/status/2120888604402815485): elvis (DAIR.AI) highlights SoMem (arxiv.org/abs/2611.11929), a paper where the agent self-organizes memory as ordinary linked documents — ch…
     - 2026-11-09 — [Rudraj Mehta](https://x.com/rudrajmehta/status/2119589472115515407): TLDR of a paper on agent memory 'dreaming': wiki alone 48%, search alone 53%, both 61%, with an implied build order of transcripts, notes, a…
+
+- **applied decision-model routing — gating agents with Jev** (39 posts, +2 this week)  
+  Discovered by orphan clustering on 2026-09-28 (6 posts, cohesion 0.66); renamed in-session. The *applied* side of System One / decision models: putting a non-generative decision model in front of an agent as a gate, router, verifier or judge, plus the libraries and framework integrations that make that practical (AnyJev, DSPy, LangGraph, Claude Code hooks). Deliberately distinct from #74 'System One models — bounded decisions as a primitive', which holds the concept itself and was frozen out of centroid scoring after the 2026-09-25 magnet rollback; because #74 can no longer recruit by cosine, the live Jev conversation could not reach it and formed this cluster instead. On 2026-09-28 #74's 11 canonical edges were demoted to weak so it became a secondary-only grouping tag, releasing its members to re-home here or elsewhere. NOTE: do not write the centroid-scoring opt-out marker as a literal string in this description — the eligibility check is a plain substring match over the whole description, so merely mentioning it silently disables semantic scoring for this concept (hit for real on 2026-09-28).
+    - 2026-11-16 — [Viv](https://x.com/vtrivedy10/status/2122089550529151126): Viv (LangChain) on an easy win for eval-building: agents design far more reliable evals and benchmarks when seeded with examples of good and…
+    - 2026-11-09 — [Garry Tan](https://x.com/garrytan/status/2119624260675350605): Garry Tan says his gstack-evals project replicated Mr_Buzzoni's article on cutting agent cost ~90% by routing easy decisions to a cheap syst…
 
 
 ### Revisit from last month
@@ -61,16 +61,16 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 622 | 64.1% |
+| agent-design | 624 | 64.2% |
 | claude-code | 235 | 24.2% |
-| dev-practices | 461 | 47.5% |
-| skills-mcp | 220 | 22.7% |
-| prompting | 155 | 16.0% |
-| research | 287 | 29.6% |
-| industry | 164 | 16.9% |
-| management | 150 | 15.5% |
+| dev-practices | 463 | 47.6% |
+| skills-mcp | 221 | 22.7% |
+| prompting | 155 | 15.9% |
+| research | 288 | 29.6% |
+| industry | 165 | 17.0% |
+| management | 151 | 15.5% |
 | adjacent | 56 | 5.8% |
-| solo-operator | 17 | 1.8% |
+| solo-operator | 17 | 1.7% |
 | questionable | 169 | 17.4% |
 | general | 45 | 4.6% |
 
@@ -78,6 +78,8 @@
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-11-16 | Viv | dev-practices | Viv (LangChain) on an easy win for eval-building: agents design far mo... |
+| 2026-11-16 | Steve Yegge | agent-design | Steve Yegge distills three hot takes from his two conference talks on... |
 | 2026-11-13 | Lorwen Harris Nagle, PhD | adjacent | Psychologist Lorwen Harris Nagle's thread framing a Jung-inspired 10-d... |
 | 2026-11-13 | Kevin S Lin | agent-design | OpenAI's Kevin S Lin shares 'Securing persistent agents like OpenClaw... |
 | 2026-11-13 | elvis | agent-design | elvis (DAIR.AI) highlights SoMem (arxiv.org/abs/2611.11929), a paper w... |
@@ -126,13 +128,17 @@
 | 2026-10-28 | Ryan Hart | dev-practices | Ryan Hart on Alibaba's open-sourced 'Open Code Review' (link via t.co)... |
 | 2026-10-28 | m4lka | agent-design | m4lka's long article 'Harness, Loops, Graphs: What Each Layer Fixes an... |
 | 2026-10-25 | How To Prompt | agent-design | Viral thread claiming researchers 'killed vector databases' with Reson... |
-| 2026-10-24 | delost | claude-code | Hype-styled list of 10 GitHub repos of ready-made Claude Code agents/s... |
-| 2026-10-24 | kache | adjacent | kache (yacineMTB) quote-posts log4j's live-tweeted findings from agent... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (622)
+### Agent Design (624)
+
+- [Viv](https://x.com/vtrivedy10/status/2122089550529151126) — 2026-11-16: Viv (LangChain) on an easy win for eval-building: agents design far more reliable evals and benchmarks when seeded with examples of good and bad eval design (Terminal Bench, HLE, Harvey LAB, internal evals) rather than starting from scratch, because agents amplify whatever patterns are in their context. He lists the design space (verifier design, environment fidelity, synthetic data, task-description vagueness), says his team embeds liked examples into skills as concrete references, and warns about overfitting to existing evals.
+  posted 2026-11-15 · @vtrivedy10 · 8,645 views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/vtrivedy10/status/2122089550529151126
+
+- [Steve Yegge](https://x.com/steve_yegge/status/2121671447810888185) — 2026-11-16: Steve Yegge distills three hot takes from his two conference talks on software factories: (1) slow down and pace AI output to human speeds, since his agents have overwhelmed players, his accountant, his merge queue and his machines; (2) you probably don't need a software factory, they are bespoke, upkeep-heavy 'garbage mountains' (he burned down five), so build rather than buy and only if you really need one; (3) next year brings personal chief-of-staff agents and agent entourages that people bring to work, with human/agent office drama and negotiation protocols to follow.
+  posted 2026-11-14 · @steve_yegge · 318.4K views · concept: elite-skill masterclass content · url: https://x.com/steve_yegge/status/2121671447810888185
 
 - [Kevin S Lin](https://x.com/kevins8/status/2120962631788114377) — 2026-11-13: OpenAI's Kevin S Lin shares 'Securing persistent agents like OpenClaw at OpenAI' (developers.openai.com) — how OpenAI's IT manages fleets of always-on background agents, framed as contractors rather than SaaS since they act proactively and can write arbitrary code. Replies call out concrete config practices from the guide: env-var scrubbing (with an honest note that excluding GH_TOKEN doesn't hide credentials in readable files), denying ~/.ssh, and blocking the 169.254.169.254 metadata endpoint — a useful reference for enterprise agent-security policy.
   posted 2026-11-12 · @kevins8 · 140.3K views · concept: agents as constrained software — making bad shapes unexpressible · url: https://x.com/kevins8/status/2120962631788114377
@@ -162,7 +168,7 @@
   posted 2026-11-09 · @mr_buzzoni · 104.6K views · concept: agent harness engineering · url: https://x.com/mr_buzzoni/status/2119730968437432423
 
 - [Garry Tan](https://x.com/garrytan/status/2119624260675350605) — 2026-11-09: Garry Tan says his gstack-evals project replicated Mr_Buzzoni's article on cutting agent cost ~90% by routing easy decisions to a cheap system-one model and escalating hard cases to Kimi K3, and that 'particle-1' did even better. Useful as an eval-driven cost-routing pattern for agents.
-  posted 2026-11-09 · @garrytan · 31.2K views · concept: elite-skill masterclass content · url: https://x.com/garrytan/status/2119624260675350605
+  posted 2026-11-09 · @garrytan · 31.2K views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/garrytan/status/2119624260675350605
 
 - [Rudraj Mehta](https://x.com/rudrajmehta/status/2119589472115515407) — 2026-11-09: TLDR of a paper on agent memory 'dreaming': wiki alone 48%, search alone 53%, both 61%, with an implied build order of transcripts, notes, a small injected layer (Claude Code loads only the first 200 lines/25 KB of MEMORY.md), then a wiki last. Practical evidence for designing agent memory stacks.
   posted 2026-11-09 · @rudrajmehta · concept: vector / hybrid databases as agent-memory infrastructure · url: https://x.com/rudrajmehta/status/2119589472115515407
@@ -597,7 +603,7 @@
   posted 2026-08-24 · @miaai_lab · 60.7K views · url: https://x.com/miaai_lab/status/2091858917307421009 · links: https://github.com/dietrichgebert/ponytail
 
 - [Shubham Saboo](https://x.com/saboo_shubham_/status/2091713863368802322) — 2026-08-25: Reports a Stanford 'LLM-as-a-Verifier' result: sample five swe-agent trajectories, rank them with the same model, keep the winner — taking deepseek-v4-flash from 78.7% to 88% on terminal-bench with no fine-tuning, and open source. The underlying technique is best-of-N with self-ranking rather than anything exotic; the ALL-CAPS 'WILD...' framing is engagement packaging around a real and cheap inference-time win.
-  posted 2026-08-24 · @saboo_shubham_ · 28.1K views · concept: local model serving on consumer GPUs — quantization & throughput · url: https://x.com/saboo_shubham_/status/2091713863368802322
+  posted 2026-08-24 · @saboo_shubham_ · 28.1K views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/saboo_shubham_/status/2091713863368802322
 
 - [Xudong Han](https://x.com/xudong07452910/status/2090760827230187782) — 2026-08-21: Chinese-language post recommending a Julie Yoo essay on where an AI startup's moat can still sit. Argument: models improve every few months, so any product whose main value is 'answering questions more smartly' or automating a process will get absorbed by the foundation models over time - the layer that's much harder to replace is being accountable for outcomes. Healthcare is the worked example, where actually delivering services requires licenses, insurance, payment rails, and liability for errors, and insurers carry real financial risk. Aimed at people building agents, vertical AI, or healthtech; the accountability-as-moat framing transfers directly to other regulated verticals.
   posted 2026-08-21 · @Xudong07452910 · concept: vibecode-to-production via agent skills · url: https://x.com/xudong07452910/status/2090760827230187782
@@ -993,7 +999,7 @@
   posted 2026-06-22 · @SakanaAILabs · 1.3M views · url: https://x.com/sakanaailabs/status/2068862070062485867 · links: https://sakana.ai/fugu-release
 
 - [Movez](https://x.com/0xmovez/status/2068763235587694769) — 2026-06-23: Movez highlights an Andrew Ng talk on building self-improving agentic systems from scratch, quoting Ng that AI agents now handle 100% of his tasks and that self-improving loops will replace prompting within 3-6 months. Quote-tweets his own article on a 300-agent swarm running on Kimi K2.6 verified by Opus 4.8. Heavy promotional framing.
-  posted 2026-06-21 · @0xMovez · 922.4K views · concept: loop engineering · url: https://x.com/0xmovez/status/2068763235587694769
+  posted 2026-06-21 · @0xMovez · 922.4K views · concept: persistent always-on agents — bot mode & agent desktops · url: https://x.com/0xmovez/status/2068763235587694769
 
 - [Avi Chawla](https://x.com/_avichawla/status/2068657496936616314) — 2026-06-23: Avi Chawla explains why BM25, a 30-year-old keyword ranking algorithm with no training or embeddings, still powers Elasticsearch/OpenSearch and excels at exact-match retrieval where embeddings struggle, making hybrid (BM25 + vector) search the default in top RAG systems. He closes on the UX problem of highlighting which span actually drove a semantic match, pointing to his co-founder's article.
   posted 2026-06-21 · @_avichawla · 61.5K views · concept: vector / hybrid databases as agent-memory infrastructure · url: https://x.com/_avichawla/status/2068657496936616314
@@ -1122,7 +1128,7 @@
   posted 2026-05-27 · @johnyeo_ · 29K views · url: https://x.com/johnyeo_/status/2059688796728267261
 
 - [Rahul](https://x.com/sairahul1/status/2059632149716942923) — 2026-05-28: Frames an Anthropic guide as a blueprint for a one-human company with AI employees dividing tasks autonomously, and links the author's own walkthrough of building a SaaS MVP in an afternoon with seven agents. The role-switching observation underneath — that the first week of a product is painful because one person cycles through founder, researcher and product roles all day — is the real claim; 'work is literally dying' and the bookmark hook are not.
-  posted 2026-05-27 · @sairahul1 · 569.1K views · concept: managing agent teams · url: https://x.com/sairahul1/status/2059632149716942923
+  posted 2026-05-27 · @sairahul1 · 569.1K views · concept: Forward Deployed Engineers — the durable AI-era role · url: https://x.com/sairahul1/status/2059632149716942923
 
 - [Paul Iusztin](https://x.com/pauliusztin_/status/2059613089260003387) — 2026-05-28: Breaks down Neo4j's agent memory design as three connected layers inside one graph: short-term memory as a linear ordered chain of conversation turns that preserves extraction lineage, and long-term memory as a persistent knowledge graph storing entities, preferences, facts and relationships as nodes with embeddings attached. The consequence is that retrieval becomes traversal of connected knowledge rather than similarity search over isolated chunks.
   posted 2026-05-27 · @pauliusztin_ · 2,126 views · concept: vector / hybrid databases as agent-memory infrastructure · url: https://x.com/pauliusztin_/status/2059613089260003387 · links: https://decodingaimagazine.substack.com/p/understanding-neo4j-graph-agent-memory-system
@@ -2315,7 +2321,7 @@
   posted 2026-05-31 · @polydao · 565.9K views · concept: Forward Deployed Engineers — the durable AI-era role · url: https://x.com/polydao/status/2060964743402455212
 
 - [Rahul](https://x.com/sairahul1/status/2059632149716942923) — 2026-05-28: Frames an Anthropic guide as a blueprint for a one-human company with AI employees dividing tasks autonomously, and links the author's own walkthrough of building a SaaS MVP in an afternoon with seven agents. The role-switching observation underneath — that the first week of a product is painful because one person cycles through founder, researcher and product roles all day — is the real claim; 'work is literally dying' and the bookmark hook are not.
-  posted 2026-05-27 · @sairahul1 · 569.1K views · concept: managing agent teams · url: https://x.com/sairahul1/status/2059632149716942923
+  posted 2026-05-27 · @sairahul1 · 569.1K views · concept: Forward Deployed Engineers — the durable AI-era role · url: https://x.com/sairahul1/status/2059632149716942923
 
 - [darkzodchi](https://x.com/zodchiii/status/2059603103070945391) — 2026-05-27: Builds on a Boris Cherny line — 'we stopped fixing Claude's mistakes, we made Claude fix them itself' — into a copyable setup for closing the error loop so failures feed back into the agent rather than into you re-explaining. Same territory as the guarded-harness-evolution paper elsewhere in the collection, at the practical end. Comparison framing is engagement-shaped.
   posted 2026-05-27 · @zodchiii · 116.7K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/zodchiii/status/2059603103070945391
@@ -2707,7 +2713,13 @@
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
   @curvedinf · url: https://github.com/curvedinf/dir-assistant
 
-### Dev Practices (461)
+### Dev Practices (463)
+
+- [Viv](https://x.com/vtrivedy10/status/2122089550529151126) — 2026-11-16: Viv (LangChain) on an easy win for eval-building: agents design far more reliable evals and benchmarks when seeded with examples of good and bad eval design (Terminal Bench, HLE, Harvey LAB, internal evals) rather than starting from scratch, because agents amplify whatever patterns are in their context. He lists the design space (verifier design, environment fidelity, synthetic data, task-description vagueness), says his team embeds liked examples into skills as concrete references, and warns about overfitting to existing evals.
+  posted 2026-11-15 · @vtrivedy10 · 8,645 views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/vtrivedy10/status/2122089550529151126
+
+- [Steve Yegge](https://x.com/steve_yegge/status/2121671447810888185) — 2026-11-16: Steve Yegge distills three hot takes from his two conference talks on software factories: (1) slow down and pace AI output to human speeds, since his agents have overwhelmed players, his accountant, his merge queue and his machines; (2) you probably don't need a software factory, they are bespoke, upkeep-heavy 'garbage mountains' (he burned down five), so build rather than buy and only if you really need one; (3) next year brings personal chief-of-staff agents and agent entourages that people bring to work, with human/agent office drama and negotiation protocols to follow.
+  posted 2026-11-14 · @steve_yegge · 318.4K views · concept: elite-skill masterclass content · url: https://x.com/steve_yegge/status/2121671447810888185
 
 - [Kevin S Lin](https://x.com/kevins8/status/2120962631788114377) — 2026-11-13: OpenAI's Kevin S Lin shares 'Securing persistent agents like OpenClaw at OpenAI' (developers.openai.com) — how OpenAI's IT manages fleets of always-on background agents, framed as contractors rather than SaaS since they act proactively and can write arbitrary code. Replies call out concrete config practices from the guide: env-var scrubbing (with an honest note that excluding GH_TOKEN doesn't hide credentials in readable files), denying ~/.ssh, and blocking the 169.254.169.254 metadata endpoint — a useful reference for enterprise agent-security policy.
   posted 2026-11-12 · @kevins8 · 140.3K views · concept: agents as constrained software — making bad shapes unexpressible · url: https://x.com/kevins8/status/2120962631788114377
@@ -2725,7 +2737,7 @@
   posted 2026-11-09 · @damkina7 · 13.1K views · concept: Claude Code setup & usage · url: https://x.com/damkina7/status/2119897805343117476
 
 - [Garry Tan](https://x.com/garrytan/status/2119624260675350605) — 2026-11-09: Garry Tan says his gstack-evals project replicated Mr_Buzzoni's article on cutting agent cost ~90% by routing easy decisions to a cheap system-one model and escalating hard cases to Kimi K3, and that 'particle-1' did even better. Useful as an eval-driven cost-routing pattern for agents.
-  posted 2026-11-09 · @garrytan · 31.2K views · concept: elite-skill masterclass content · url: https://x.com/garrytan/status/2119624260675350605
+  posted 2026-11-09 · @garrytan · 31.2K views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/garrytan/status/2119624260675350605
 
 - [beamnxw ./](https://x.com/beamnxw/status/2119382127040987266) — 2026-11-09: Engagement-packaged share of Addy Osmani's article 'Your coding agents made you a manager', framing agent supervision as team management (context, plan, delegate, verify, decide). The underlying article is substantive; the repost wrapper is hype, hence questionable.
   posted 2026-11-08 · @beamnxw · 81.1K views · concept: Claude skills craft · url: https://x.com/beamnxw/status/2119382127040987266
@@ -3418,7 +3430,7 @@
   posted 2026-05-23 · @saboo_shubham_ · 33.2K views · concept: persistent always-on agents — bot mode & agent desktops · url: https://x.com/saboo_shubham_/status/2058269167372153129
 
 - [George Nurijanian](https://x.com/nurijanian/status/2058259663238631890) — 2026-05-24: Feeding Tufte's Visual Display of Quantitative Information to Claude and having it generate a skill from the book produced markedly cleaner charts. A nice worked example of turning a reference text into a reusable skill rather than re-prompting style preferences each time. github.com/gnurio/tufte-vdqi-plugin
-  posted 2026-05-23 · @nurijanian · 151.3K views · url: https://x.com/nurijanian/status/2058259663238631890 · links: https://github.com/gnurio/tufte-vdqi-plugin
+  posted 2026-05-23 · @nurijanian · 151.3K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/nurijanian/status/2058259663238631890 · links: https://github.com/gnurio/tufte-vdqi-plugin
 
 - [Garry Tan](https://x.com/garrytan/status/2057946119725080878) — 2026-05-24: Tan points at a Forbes profile of his own agentic coding practice, pitched around a 10,000-lines-a-day figure.
   posted 2026-05-22 · @garrytan · 118.1K views · concept: founder philosophy & life-design essays · url: https://x.com/garrytan/status/2057946119725080878 · links: https://forbes.com/sites/josipamajic/2026/04/12/the-yc-chief-who-codes-10000-lines-a-day-has-a-simple-secret
@@ -4092,7 +4104,10 @@
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
   @curvedinf · url: https://github.com/curvedinf/dir-assistant
 
-### Skills & MCP (220)
+### Skills & MCP (221)
+
+- [Viv](https://x.com/vtrivedy10/status/2122089550529151126) — 2026-11-16: Viv (LangChain) on an easy win for eval-building: agents design far more reliable evals and benchmarks when seeded with examples of good and bad eval design (Terminal Bench, HLE, Harvey LAB, internal evals) rather than starting from scratch, because agents amplify whatever patterns are in their context. He lists the design space (verifier design, environment fidelity, synthetic data, task-description vagueness), says his team embeds liked examples into skills as concrete references, and warns about overfitting to existing evals.
+  posted 2026-11-15 · @vtrivedy10 · 8,645 views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/vtrivedy10/status/2122089550529151126
 
 - [Riley Coyote](https://x.com/rileyralmuto/status/2119256603148890197) — 2026-11-08: Riley Coyote reports early traction for the Mnemos memory MCP (133 GitHub stars in under 48 hours, outside contributors, agents emailing in) and a coming v0.6.5 with better recall and Hermes support. Useful as a signal in the agent-memory MCP space and an indie open-source launch.
   posted 2026-11-08 · @rileyralmuto · concept: local model serving on consumer GPUs — quantization & throughput · url: https://x.com/rileyralmuto/status/2119256603148890197
@@ -4404,7 +4419,7 @@
   posted 2026-05-23 · @KSimback · 84.8K views · concept: vector / hybrid databases as agent-memory infrastructure · url: https://x.com/ksimback/status/2058262328496554021
 
 - [George Nurijanian](https://x.com/nurijanian/status/2058259663238631890) — 2026-05-24: Feeding Tufte's Visual Display of Quantitative Information to Claude and having it generate a skill from the book produced markedly cleaner charts. A nice worked example of turning a reference text into a reusable skill rather than re-prompting style preferences each time. github.com/gnurio/tufte-vdqi-plugin
-  posted 2026-05-23 · @nurijanian · 151.3K views · url: https://x.com/nurijanian/status/2058259663238631890 · links: https://github.com/gnurio/tufte-vdqi-plugin
+  posted 2026-05-23 · @nurijanian · 151.3K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/nurijanian/status/2058259663238631890 · links: https://github.com/gnurio/tufte-vdqi-plugin
 
 - [Charly Wargnier](https://x.com/datachaz/status/2057787509728522463) — 2026-05-23: Repo pointer to addyosmani/agent-skills, a collection of production-grade engineering skills for AI coding agents. github.com/addyosmani/agent-skills
   posted 2026-05-22 · @DataChaz · 1,504 views · concept: Anthropic Skilljar — free AI academy & courses · url: https://x.com/datachaz/status/2057787509728522463 · links: https://github.com/addyosmani/agent-skills
@@ -4952,7 +4967,7 @@
   posted 2026-06-27 · @zostaff · 176.6K views · concept: managing agent teams · url: https://x.com/zostaff/status/2070852153594290195
 
 - [Movez](https://x.com/0xmovez/status/2068763235587694769) — 2026-06-23: Movez highlights an Andrew Ng talk on building self-improving agentic systems from scratch, quoting Ng that AI agents now handle 100% of his tasks and that self-improving loops will replace prompting within 3-6 months. Quote-tweets his own article on a 300-agent swarm running on Kimi K2.6 verified by Opus 4.8. Heavy promotional framing.
-  posted 2026-06-21 · @0xMovez · 922.4K views · concept: loop engineering · url: https://x.com/0xmovez/status/2068763235587694769
+  posted 2026-06-21 · @0xMovez · 922.4K views · concept: persistent always-on agents — bot mode & agent desktops · url: https://x.com/0xmovez/status/2068763235587694769
 
 - [Codez](https://x.com/0xcodez/status/2064374643729773029) — 2026-06-23: A long-form Loop engineering roadmap arguing the leverage point in agentic coding has moved from writing prompts to designing self-running loops. Covers the 4-condition test for when a loop is worth building (task repeats, automated verification, token budget, senior-engineer tooling), the five building blocks (automations like /loop and /goal, git worktrees, skills, MCP connectors, sub-agents), the maker/checker split, the Ralph Wiggum quiet-failure mode, comprehension debt and cognitive surrender, and the security tax of unattended loops. Cites Anthropic engineering docs and Addy Osmani.
   posted 2026-06-09 · @0xCodez · 4M views · concept: loop engineering · url: https://x.com/0xcodez/status/2064374643729773029
@@ -5000,7 +5015,7 @@
   posted 2026-05-27 · @dharmikpawar13 · 2,084 views · concept: agent identity files (SOUL.md, CLAUDE.md, persona scaffolds) · url: https://x.com/dharmikpawar13/status/2059571098484675051
 
 - [George Nurijanian](https://x.com/nurijanian/status/2058259663238631890) — 2026-05-24: Feeding Tufte's Visual Display of Quantitative Information to Claude and having it generate a skill from the book produced markedly cleaner charts. A nice worked example of turning a reference text into a reusable skill rather than re-prompting style preferences each time. github.com/gnurio/tufte-vdqi-plugin
-  posted 2026-05-23 · @nurijanian · 151.3K views · url: https://x.com/nurijanian/status/2058259663238631890 · links: https://github.com/gnurio/tufte-vdqi-plugin
+  posted 2026-05-23 · @nurijanian · 151.3K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/nurijanian/status/2058259663238631890 · links: https://github.com/gnurio/tufte-vdqi-plugin
 
 - [Viv](https://x.com/vtrivedy10/status/2057673225702937059) — 2026-05-22: Ranks three verification patterns from experience: a supervisor persona orchestrating worker agents beats a fresh external judge, which in turn beats self-reflection. The mechanism proposed is that the main agent must sit in the distribution of judging rather than doing — if it believes it is doing the work, it loses the critical stance needed to correct its workers. Explicitly anecdotal; the author notes evals are still needed.
   posted 2026-05-22 · @Vtrivedy10 · 3,553 views · concept: Claude skills craft · url: https://x.com/vtrivedy10/status/2057673225702937059
@@ -5221,7 +5236,10 @@
 - [Tom Dörr](https://github.com/tom-doerr/dotfiles/blob/master/instruction.md) — 2025-01-04: Tom Dörr's AI-coding-agent instruction file (an AGENTS.md-style rules doc): single-letter command aliases (c=continue, rc=reduce complexity, acp=add/commit/push, t=add tests), strict engineering rules (no fallbacks, don't swallow exceptions, TDD with many asserts, uv over pip, work on git branches, keep complexity low, don't weaken the linter), and ready-to-paste DSPy optimizer snippets (BootstrapFewShotWithRandomSearch, MIPROv2, SIMBA).
   @tom-doerr · concept: agent identity files (SOUL.md, CLAUDE.md, persona scaffolds) · url: https://github.com/tom-doerr/dotfiles/blob/master/instruction.md
 
-### Research (287)
+### Research (288)
+
+- [Viv](https://x.com/vtrivedy10/status/2122089550529151126) — 2026-11-16: Viv (LangChain) on an easy win for eval-building: agents design far more reliable evals and benchmarks when seeded with examples of good and bad eval design (Terminal Bench, HLE, Harvey LAB, internal evals) rather than starting from scratch, because agents amplify whatever patterns are in their context. He lists the design space (verifier design, environment fidelity, synthetic data, task-description vagueness), says his team embeds liked examples into skills as concrete references, and warns about overfitting to existing evals.
+  posted 2026-11-15 · @vtrivedy10 · 8,645 views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/vtrivedy10/status/2122089550529151126
 
 - [elvis](https://x.com/omarsar0/status/2120888604402815485) — 2026-11-13: elvis (DAIR.AI) highlights SoMem (arxiv.org/abs/2611.11929), a paper where the agent self-organizes memory as ordinary linked documents — choosing what to summarize, which topics to create and when to revise — with every summary linking back to the source interaction and the runtime adding time/relation/recency views. Beats the strongest baseline on LoCoMo (+2.66), BEAM-100K (+3.10) and LongMemEval-S (+2.00), and memory built by one model transfers to another; takeaway: try linked-notes memory before reaching for a vector store.
   posted 2026-11-12 · @omarsar0 · concept: vector / hybrid databases as agent-memory infrastructure · url: https://x.com/omarsar0/status/2120888604402815485 · links: https://arxiv.org/abs/2611.11929
@@ -5236,7 +5254,7 @@
   posted 2026-11-09 · @mr_buzzoni · 104.6K views · concept: agent harness engineering · url: https://x.com/mr_buzzoni/status/2119730968437432423
 
 - [Garry Tan](https://x.com/garrytan/status/2119624260675350605) — 2026-11-09: Garry Tan says his gstack-evals project replicated Mr_Buzzoni's article on cutting agent cost ~90% by routing easy decisions to a cheap system-one model and escalating hard cases to Kimi K3, and that 'particle-1' did even better. Useful as an eval-driven cost-routing pattern for agents.
-  posted 2026-11-09 · @garrytan · 31.2K views · concept: elite-skill masterclass content · url: https://x.com/garrytan/status/2119624260675350605
+  posted 2026-11-09 · @garrytan · 31.2K views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/garrytan/status/2119624260675350605
 
 - [Rudraj Mehta](https://x.com/rudrajmehta/status/2119589472115515407) — 2026-11-09: TLDR of a paper on agent memory 'dreaming': wiki alone 48%, search alone 53%, both 61%, with an implied build order of transcripts, notes, a small injected layer (Claude Code loads only the first 200 lines/25 KB of MEMORY.md), then a wiki last. Practical evidence for designing agent memory stacks.
   posted 2026-11-09 · @rudrajmehta · concept: vector / hybrid databases as agent-memory infrastructure · url: https://x.com/rudrajmehta/status/2119589472115515407
@@ -5470,7 +5488,7 @@
   posted 2026-08-24 · @omarsar0 · 29.4K views · concept: self-improving skills (autoresearch pattern) · url: https://x.com/omarsar0/status/2091869893339812222
 
 - [Shubham Saboo](https://x.com/saboo_shubham_/status/2091713863368802322) — 2026-08-25: Reports a Stanford 'LLM-as-a-Verifier' result: sample five swe-agent trajectories, rank them with the same model, keep the winner — taking deepseek-v4-flash from 78.7% to 88% on terminal-bench with no fine-tuning, and open source. The underlying technique is best-of-N with self-ranking rather than anything exotic; the ALL-CAPS 'WILD...' framing is engagement packaging around a real and cheap inference-time win.
-  posted 2026-08-24 · @saboo_shubham_ · 28.1K views · concept: local model serving on consumer GPUs — quantization & throughput · url: https://x.com/saboo_shubham_/status/2091713863368802322
+  posted 2026-08-24 · @saboo_shubham_ · 28.1K views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/saboo_shubham_/status/2091713863368802322
 
 - [Aaron Levie](https://x.com/levie/status/2090664811185205722) — 2026-08-21: Levie on when domain-specific post-training beats a general frontier model for applied AI: once you understand a domain well enough and have enough volume on similar tasks, purpose-designing a model for that work starts to pay. Quotes the underlying post - 'we incentivized efficient tool use and reasoning through reward shaping, preferring trajectories that would reduce tokens consumed at inference-time given equivalent performance' - i.e. co-optimizing cost and quality rather than trading one for the other. Caveat included: this won't make sense in every domain, since general models are often good enough or necessary out of the box.
   posted 2026-08-21 · @levie · concept: vibecode-to-production via agent skills · url: https://x.com/levie/status/2090664811185205722
@@ -6084,7 +6102,10 @@
 - [Santiago](https://x.com/svpino/status/1800151091461652740) — 2024-06-11: A 15-part thread giving an intuitive explanation of matrix multiplication as the crucial idea underlying modern machine learning.
   posted 2024-06-10 · @svpino · 1M views · url: https://x.com/svpino/status/1800151091461652740
 
-### Industry (164)
+### Industry (165)
+
+- [Steve Yegge](https://x.com/steve_yegge/status/2121671447810888185) — 2026-11-16: Steve Yegge distills three hot takes from his two conference talks on software factories: (1) slow down and pace AI output to human speeds, since his agents have overwhelmed players, his accountant, his merge queue and his machines; (2) you probably don't need a software factory, they are bespoke, upkeep-heavy 'garbage mountains' (he burned down five), so build rather than buy and only if you really need one; (3) next year brings personal chief-of-staff agents and agent entourages that people bring to work, with human/agent office drama and negotiation protocols to follow.
+  posted 2026-11-14 · @steve_yegge · 318.4K views · concept: elite-skill masterclass content · url: https://x.com/steve_yegge/status/2121671447810888185
 
 - [Lupin](https://x.com/0xlupin/status/2120570349775622242) — 2026-11-12: Security researcher Lupin reports that his team found a way to backdoor the next release of OpenAI Codex by chaining GitHub Actions pipeline exploits, calling it the best exploit chain he has seen; the write-up is on depi.security ("Backdooring the next release of Codex through GitHub Action pipeline exploit chaining"). A concrete CI/CD supply-chain case study worth reading for anyone hardening GitHub Actions workflows around agent tooling.
   posted 2026-11-11 · @0xlupin · 64K views · url: https://x.com/0xlupin/status/2120570349775622242 · links: https://depi.security
@@ -6578,7 +6599,10 @@
 - [Santiago](https://x.com/svpino/status/1881336934418755862) — 2025-01-21: Walks through GroundX, an open-source, self-hostable/air-gapped enterprise RAG system. Two services: Ingest (a pretrained vision model that 'understands' documents instead of feeding raw docs to the LLM) and Search (text+vector search with a fine-tuned re-ranker). Santiago's thesis: most teams need better ingestion, not better retrieval; includes a video demo and the free X-Ray inspection tool.
   posted 2025-01-20 · @svpino · 89.6K views · url: https://x.com/svpino/status/1881336934418755862
 
-### Management (150)
+### Management (151)
+
+- [Steve Yegge](https://x.com/steve_yegge/status/2121671447810888185) — 2026-11-16: Steve Yegge distills three hot takes from his two conference talks on software factories: (1) slow down and pace AI output to human speeds, since his agents have overwhelmed players, his accountant, his merge queue and his machines; (2) you probably don't need a software factory, they are bespoke, upkeep-heavy 'garbage mountains' (he burned down five), so build rather than buy and only if you really need one; (3) next year brings personal chief-of-staff agents and agent entourages that people bring to work, with human/agent office drama and negotiation protocols to follow.
+  posted 2026-11-14 · @steve_yegge · 318.4K views · concept: elite-skill masterclass content · url: https://x.com/steve_yegge/status/2121671447810888185
 
 - [Kevin S Lin](https://x.com/kevins8/status/2120962631788114377) — 2026-11-13: OpenAI's Kevin S Lin shares 'Securing persistent agents like OpenClaw at OpenAI' (developers.openai.com) — how OpenAI's IT manages fleets of always-on background agents, framed as contractors rather than SaaS since they act proactively and can write arbitrary code. Replies call out concrete config practices from the guide: env-var scrubbing (with an honest note that excluding GH_TOKEN doesn't hide credentials in readable files), denying ~/.ssh, and blocking the 169.254.169.254 metadata endpoint — a useful reference for enterprise agent-security policy.
   posted 2026-11-12 · @kevins8 · 140.3K views · concept: agents as constrained software — making bad shapes unexpressible · url: https://x.com/kevins8/status/2120962631788114377
@@ -7409,7 +7433,7 @@
   posted 2026-08-24 · @divyansht91162 · 17.5K views · concept: self-improving skills (autoresearch pattern) · url: https://x.com/divyansht91162/status/2091879586045018406 · links: https://github.com/volcengine/OpenViking https://github.com/rohitg00/agentmemory https://github.com/anthropics/skills https://github.com/cathrynlavery/diagram-design https://github.com/K-Dense-AI/scientific-agent-skills
 
 - [Shubham Saboo](https://x.com/saboo_shubham_/status/2091713863368802322) — 2026-08-25: Reports a Stanford 'LLM-as-a-Verifier' result: sample five swe-agent trajectories, rank them with the same model, keep the winner — taking deepseek-v4-flash from 78.7% to 88% on terminal-bench with no fine-tuning, and open source. The underlying technique is best-of-N with self-ranking rather than anything exotic; the ALL-CAPS 'WILD...' framing is engagement packaging around a real and cheap inference-time win.
-  posted 2026-08-24 · @saboo_shubham_ · 28.1K views · concept: local model serving on consumer GPUs — quantization & throughput · url: https://x.com/saboo_shubham_/status/2091713863368802322
+  posted 2026-08-24 · @saboo_shubham_ · 28.1K views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/saboo_shubham_/status/2091713863368802322
 
 - [CyrilXBT](https://x.com/cyrilxbt/status/2091331618979905582) — 2026-08-25: X article walking hour-by-hour through shipping a live product that takes real payments (ranknow.lol — a pay-to-rank leaderboard with outbidding) end to end with Claude Code in a single day, starting from not considering himself a developer. The transferable lesson is scope discipline: pick one narrow mechanic with a single core loop, small enough that finishing it is realistic. The '24 hours' transformation framing is hype, but it is a real solo-build account with a shipped, paying product behind it.
   posted 2026-08-23 · @cyrilxbt · 559.6K views · concept: managing agent teams · url: https://x.com/cyrilxbt/status/2091331618979905582 · links: https://ranknow.lol
@@ -7514,7 +7538,7 @@
   posted 2026-06-24 · @HuggingModels · 206.1K views · concept: local model serving on consumer GPUs — quantization & throughput · url: https://x.com/huggingmodels/status/2069750892287721960
 
 - [Movez](https://x.com/0xmovez/status/2068763235587694769) — 2026-06-23: Movez highlights an Andrew Ng talk on building self-improving agentic systems from scratch, quoting Ng that AI agents now handle 100% of his tasks and that self-improving loops will replace prompting within 3-6 months. Quote-tweets his own article on a 300-agent swarm running on Kimi K2.6 verified by Opus 4.8. Heavy promotional framing.
-  posted 2026-06-21 · @0xMovez · 922.4K views · concept: loop engineering · url: https://x.com/0xmovez/status/2068763235587694769
+  posted 2026-06-21 · @0xMovez · 922.4K views · concept: persistent always-on agents — bot mode & agent desktops · url: https://x.com/0xmovez/status/2068763235587694769
 
 - [How To Prompt](https://x.com/howtoprompt__/status/2067176008445513800) — 2026-06-17: Engagement-farmed post claiming an open-source repo compresses 60M text chunks from 201GB to ~6GB (97% smaller) with no accuracy loss, running fully private on a standard laptop with no cloud or GPU — pitched as making vector databases obsolete. No repo link was surfaced in the post or visible replies, so the project would need to be located before the claim can be evaluated.
   posted 2026-06-17 · @howtoprompt__ · 90.1K views · concept: vector / hybrid databases as agent-memory infrastructure · url: https://x.com/howtoprompt__/status/2067176008445513800
@@ -7568,7 +7592,7 @@
   posted 2026-05-27 · @l1vsun · 375.9K views · concept: elite-skill masterclass content · url: https://x.com/l1vsun/status/2059707097583906917
 
 - [Rahul](https://x.com/sairahul1/status/2059632149716942923) — 2026-05-28: Frames an Anthropic guide as a blueprint for a one-human company with AI employees dividing tasks autonomously, and links the author's own walkthrough of building a SaaS MVP in an afternoon with seven agents. The role-switching observation underneath — that the first week of a product is painful because one person cycles through founder, researcher and product roles all day — is the real claim; 'work is literally dying' and the bookmark hook are not.
-  posted 2026-05-27 · @sairahul1 · 569.1K views · concept: managing agent teams · url: https://x.com/sairahul1/status/2059632149716942923
+  posted 2026-05-27 · @sairahul1 · 569.1K views · concept: Forward Deployed Engineers — the durable AI-era role · url: https://x.com/sairahul1/status/2059632149716942923
 
 - [Atenov int.](https://x.com/atenov_d/status/2058868770257416239) — 2026-05-25: MoneyPrinterTurbo (13k+ stars) takes a topic or keyword and produces a finished short video: script via any LLM you already have access to, HD copyright-free footage, subtitles, background music and voiceover, with batch generation and both 9:16 and 16:9 output. Runs locally with Web UI, API, Docker and Colab paths. github.com/harry0703/MoneyPrinterTurbo
   posted 2026-05-25 · @Atenov_D · 585.1K views · url: https://x.com/atenov_d/status/2058868770257416239 · links: https://github.com/harry0703/MoneyPrinterTurbo
@@ -7904,6 +7928,14 @@
 
 ### Nov 2026
 
+- **2026-11-16** | [Viv](https://x.com/vtrivedy10/status/2122089550529151126) | dev-practices, agent-design, skills-mcp, research
+  Viv (LangChain) on an easy win for eval-building: agents design far more reliable evals and benchmarks when seeded with examples of good and bad eval design (Terminal Bench, HLE, Harvey LAB, internal evals) rather than starting from scratch, because agents amplify whatever patterns are in their context. He lists the design space (verifier design, environment fidelity, synthetic data, task-description vagueness), says his team embeds liked examples into skills as concrete references, and warns about overfitting to existing evals.
+  posted 2026-11-15 · @vtrivedy10 · 8,645 views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/vtrivedy10/status/2122089550529151126
+
+- **2026-11-16** | [Steve Yegge](https://x.com/steve_yegge/status/2121671447810888185) | agent-design, management, dev-practices, industry
+  Steve Yegge distills three hot takes from his two conference talks on software factories: (1) slow down and pace AI output to human speeds, since his agents have overwhelmed players, his accountant, his merge queue and his machines; (2) you probably don't need a software factory, they are bespoke, upkeep-heavy 'garbage mountains' (he burned down five), so build rather than buy and only if you really need one; (3) next year brings personal chief-of-staff agents and agent entourages that people bring to work, with human/agent office drama and negotiation protocols to follow.
+  posted 2026-11-14 · @steve_yegge · 318.4K views · concept: elite-skill masterclass content · url: https://x.com/steve_yegge/status/2121671447810888185
+
 - **2026-11-13** | [Lorwen Harris Nagle, PhD](https://x.com/lorwen108/status/2121234985328034061) | adjacent, questionable
   Psychologist Lorwen Harris Nagle's thread framing a Jung-inspired 10-day practice for anxiety and self-direction: admit what you actually want ('what would I want if I stopped pretending I didn't?'), work through concrete imagery rather than abstract goals since the unconscious 'speaks in pictures before plans', and name the buried wish underneath the anxiety. Viral-thread packaging, but a usable reflective/visualization exercise for personal clarity — Jeremy flagged it with '(Jung)'.
   posted 2026-11-13 · @lorwen108 · 89.6K views · concept: mindset & self-motivation — imagination, self-talk, inner drive · url: https://x.com/lorwen108/status/2121234985328034061
@@ -7954,7 +7986,7 @@
 
 - **2026-11-09** | [Garry Tan](https://x.com/garrytan/status/2119624260675350605) | agent-design, dev-practices, research
   Garry Tan says his gstack-evals project replicated Mr_Buzzoni's article on cutting agent cost ~90% by routing easy decisions to a cheap system-one model and escalating hard cases to Kimi K3, and that 'particle-1' did even better. Useful as an eval-driven cost-routing pattern for agents.
-  posted 2026-11-09 · @garrytan · 31.2K views · concept: elite-skill masterclass content · url: https://x.com/garrytan/status/2119624260675350605
+  posted 2026-11-09 · @garrytan · 31.2K views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/garrytan/status/2119624260675350605
 
 - **2026-11-09** | [Rudraj Mehta](https://x.com/rudrajmehta/status/2119589472115515407) | agent-design, research, claude-code
   TLDR of a paper on agent memory 'dreaming': wiki alone 48%, search alone 53%, both 61%, with an implied build order of transcripts, notes, a small injected layer (Claude Code loads only the first 200 lines/25 KB of MEMORY.md), then a wiki last. Practical evidence for designing agent memory stacks.
@@ -8792,7 +8824,7 @@
 
 - **2026-08-25** | [Shubham Saboo](https://x.com/saboo_shubham_/status/2091713863368802322) | research, agent-design, questionable
   Reports a Stanford 'LLM-as-a-Verifier' result: sample five swe-agent trajectories, rank them with the same model, keep the winner — taking deepseek-v4-flash from 78.7% to 88% on terminal-bench with no fine-tuning, and open source. The underlying technique is best-of-N with self-ranking rather than anything exotic; the ALL-CAPS 'WILD...' framing is engagement packaging around a real and cheap inference-time win.
-  posted 2026-08-24 · @saboo_shubham_ · 28.1K views · concept: local model serving on consumer GPUs — quantization & throughput · url: https://x.com/saboo_shubham_/status/2091713863368802322
+  posted 2026-08-24 · @saboo_shubham_ · 28.1K views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/saboo_shubham_/status/2091713863368802322
 
 - **2026-08-25** | [CyrilXBT](https://x.com/cyrilxbt/status/2091331618979905582) | claude-code, solo-operator, adjacent, questionable
   X article walking hour-by-hour through shipping a live product that takes real payments (ranknow.lol — a pay-to-rank leaderboard with outbidding) end to end with Claude Code in a single day, starting from not considering himself a developer. The transferable lesson is scope discipline: pick one narrow mechanic with a single core loop, small enough that finishing it is realistic. The '24 hours' transformation framing is hype, but it is a real solo-build account with a shipped, paying product behind it.
@@ -9508,7 +9540,7 @@
 
 - **2026-06-23** | [Movez](https://x.com/0xmovez/status/2068763235587694769) | agent-design, prompting, questionable
   Movez highlights an Andrew Ng talk on building self-improving agentic systems from scratch, quoting Ng that AI agents now handle 100% of his tasks and that self-improving loops will replace prompting within 3-6 months. Quote-tweets his own article on a 300-agent swarm running on Kimi K2.6 verified by Opus 4.8. Heavy promotional framing.
-  posted 2026-06-21 · @0xMovez · 922.4K views · concept: loop engineering · url: https://x.com/0xmovez/status/2068763235587694769
+  posted 2026-06-21 · @0xMovez · 922.4K views · concept: persistent always-on agents — bot mode & agent desktops · url: https://x.com/0xmovez/status/2068763235587694769
 
 - **2026-06-23** | [Avi Chawla](https://x.com/_avichawla/status/2068657496936616314) | research, agent-design, dev-practices
   Avi Chawla explains why BM25, a 30-year-old keyword ranking algorithm with no training or embeddings, still powers Elasticsearch/OpenSearch and excels at exact-match retrieval where embeddings struggle, making hybrid (BM25 + vector) search the default in top RAG systems. He closes on the UX problem of highlighting which span actually drove a semantic match, pointing to his co-founder's article.
@@ -9782,7 +9814,7 @@
 
 - **2026-05-28** | [Rahul](https://x.com/sairahul1/status/2059632149716942923) | agent-design, claude-code, questionable
   Frames an Anthropic guide as a blueprint for a one-human company with AI employees dividing tasks autonomously, and links the author's own walkthrough of building a SaaS MVP in an afternoon with seven agents. The role-switching observation underneath — that the first week of a product is painful because one person cycles through founder, researcher and product roles all day — is the real claim; 'work is literally dying' and the bookmark hook are not.
-  posted 2026-05-27 · @sairahul1 · 569.1K views · concept: managing agent teams · url: https://x.com/sairahul1/status/2059632149716942923
+  posted 2026-05-27 · @sairahul1 · 569.1K views · concept: Forward Deployed Engineers — the durable AI-era role · url: https://x.com/sairahul1/status/2059632149716942923
 
 - **2026-05-28** | [Paul Iusztin](https://x.com/pauliusztin_/status/2059613089260003387) | agent-design, research
   Breaks down Neo4j's agent memory design as three connected layers inside one graph: short-term memory as a linear ordered chain of conversation turns that preserves extraction lineage, and long-term memory as a persistent knowledge graph storing entities, preferences, facts and relationships as nodes with embeddings attached. The consequence is that retrieval becomes traversal of connected knowledge rather than similarity search over isolated chunks.
@@ -9858,7 +9890,7 @@
 
 - **2026-05-24** | [George Nurijanian](https://x.com/nurijanian/status/2058259663238631890) | dev-practices, prompting, skills-mcp
   Feeding Tufte's Visual Display of Quantitative Information to Claude and having it generate a skill from the book produced markedly cleaner charts. A nice worked example of turning a reference text into a reusable skill rather than re-prompting style preferences each time. github.com/gnurio/tufte-vdqi-plugin
-  posted 2026-05-23 · @nurijanian · 151.3K views · url: https://x.com/nurijanian/status/2058259663238631890 · links: https://github.com/gnurio/tufte-vdqi-plugin
+  posted 2026-05-23 · @nurijanian · 151.3K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/nurijanian/status/2058259663238631890 · links: https://github.com/gnurio/tufte-vdqi-plugin
 
 - **2026-05-24** | [Garry Tan](https://x.com/garrytan/status/2057946119725080878) | claude-code, dev-practices, management
   Tan points at a Forbes profile of his own agentic coding practice, pitched around a 10,000-lines-a-day figure.
