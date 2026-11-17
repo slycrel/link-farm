@@ -1,5 +1,36 @@
 [
   {
+    "date": "2026-11-17",
+    "author": "ClaudeDevs",
+    "handle": "@claudedevs",
+    "subject": "Post by ClaudeDevs on X",
+    "url": "https://x.com/claudedevs/status/2122457608963395586",
+    "summary": "ClaudeDevs shares the claude.dev post \"How the Claude Code team thinks about verification\" by Addy Osmani (claude.dev/blog/how-the-claude-code-team-thinks-about-verification): with ~90% of the team's code written and reviewed by Claude, verification loops are what let them run many agents in parallel, and the three tests worth investing in are end-to-end, property (fast-check, Hypothesis, proptest) and differential tests. Concrete practices to borrow: a `verify` skill in .claude/skills/ that smoke-tests the running app, escalation to a human after three failed fix rounds, a 39-item reliability checklist triggered from the diff, one tuned reviewer driven by a REVIEW.md read from the base branch so a change can't edit its own checks, commit gates rolled out in observe mode before enforce, and evals of the reviewer built from past incidents and reverts. Misses become rules, flaky tests get root-caused or deleted, and rule files are pruned on a routine.",
+    "topics": [
+      "claude-code",
+      "dev-practices",
+      "agent-design"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "now",
+    "sourceType": "tweet",
+    "views": "1.2M",
+    "notes": "",
+    "enriched": true,
+    "content": "Claude writes better code when it can verify its work. Checks that used to be expensive, like tests, benchmarks, and end-to-end runs, are now cheap.\n\nHere’s how the Claude Code team thinks about verification:\n\nclaude.dev blog — \"How the Claude Code team thinks about verification\" by Addy Osmani (Nov 16, 2026, ~10 min read). Digest: about 90% of the Claude Code team's code is written and reviewed by Claude, so verification loops are what make running dozens or hundreds of parallel agents possible; a separate rubric grader improved task success by up to 10 points in internal structured-file-generation tests. Three test types worth investing in: end-to-end tests (hard to fool, clear done criteria; give the agent hands and eyes on the running system via a skill using CDP, simulators or API harnesses), property tests (round-trip, invariants, idempotency, equivalence via fast-check / Hypothesis / proptest), and differential tests (old system as oracle for migrations, with random or production-sampled inputs and an approved-changes list). Avoid flaky and slow tests. Team practices: verification means running the change — codify it as a `verify` skill in .claude/skills/ and make it fast and reliable; Claude tries to fix failing checks and escalates to a human after three rounds; code owners write their own checks; a 39-item reliability checklist where each item has a diff-readable trigger (usually 3-10 match per diff); one tuned reviewer with a REVIEW.md and rounds that build on earlier context rather than stacked reviewers; changes can't modify their own checks (REVIEW.md is read from the base branch, reviews are pinned to commits, cheap checks like tests/build/lint run before the PR via a hook or /goal); new gates start in observe mode (commits are stamped with how they were verified, a commit gate requires /code-review or /verify with off/observe/enforce modes and an escape after two blocks); review the reviewers (reverts, maintainer rejections, an eval built from past incidents with one-sentence answer keys, stable changes as a control, separate tuning and test sets, recall measured at raw/post-verification/final stages, Important / Nit / Pre-existing severity tags); turn misses into rules (patterns seen in at least two PRs and visible in a diff, three agents try to disprove, human approves; replay three bug finders on incident PRs); flaky tests can't be skipped, slept or retried — root-cause or delete with a written reason; prune rules and .md files routinely.",
+    "posted_at": "2026-11-16T22:31:41",
+    "links": [
+      "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification"
+    ],
+    "concept": "Claude Code setup & usage",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-11-16",
     "author": "Viv",
     "handle": "@vtrivedy10",

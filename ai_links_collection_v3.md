@@ -1,14 +1,16 @@
 # AI Links Collection
-**Total Posts**: 972  
-**Date Range**: 2024-06-11 – 2026-11-16  
-**Enriched**: 972/972 (100%)
+**Total Posts**: 973  
+**Date Range**: 2024-06-11 – 2026-11-17  
+**Enriched**: 973/973 (100%)
 
 ---
 ## Morning view
 
-*Generated 2026-11-16T21:41:37Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-11-17T17:10:55Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
+- **2026-11-17** — [ClaudeDevs](https://x.com/claudedevs/status/2122457608963395586) — *now • Claude Code • 1.2M views • v1 enriched*  
+  ClaudeDevs shares the claude.dev post "How the Claude Code team thinks about verification" by Addy Osmani (claude.dev/blog/how-the-claude-code-team-thinks-about-verification): with ~90% of the team's code written and reviewed by Claude, verification loops are what let them run many agents in parallel, and the three tests worth investing in are end-to-end, property (fast-check, Hypothesis, proptest) and differential tests. Concrete practices to borrow: a `verify` skill in .claude/skills/ that smoke-tests the running app, escalation to a human after three failed fix rounds, a 39-item reliability checklist triggered from the diff, one tuned reviewer driven by a REVIEW.md read from the base branch so a change can't edit its own checks, commit gates rolled out in observe mode before enforce, and evals of the reviewer built from past incidents and reverts. Misses become rules, flaky tests get root-caused or deleted, and rule files are pruned on a routine.
 - **2026-11-13** — [Kevin S Lin](https://x.com/kevins8/status/2120962631788114377) — *now • Agent Design • 140.3K views • v1 enriched*  
   OpenAI's Kevin S Lin shares 'Securing persistent agents like OpenClaw at OpenAI' (developers.openai.com) — how OpenAI's IT manages fleets of always-on background agents, framed as contractors rather than SaaS since they act proactively and can write arbitrary code. Replies call out concrete config practices from the guide: env-var scrubbing (with an honest note that excluding GH_TOKEN doesn't hide credentials in readable files), denying ~/.ssh, and blocking the 169.254.169.254 metadata endpoint — a useful reference for enterprise agent-security policy.
 - **2026-11-13** — [distort](https://x.com/distortgeekin/status/2120856919359258814) — *now • Agent Design • 38.3K views • v1 enriched*  
@@ -17,8 +19,6 @@
   Vox flags Anthropic's new model-selection guide (claude.dev/blog/which-claude-model-should-you-build-with) and a practical cost gotcha: Claude Code's built-in Explore subagent now runs on your main model rather than Haiku, so define your own subagent named Explore with model: haiku. Includes a ready-made prompt that has Claude audit your settings, subagents and CLAUDE.md against the guide for wrong-model subagents, mismatched model/effort levels (flags opusplan and effort above high), and missing self-verification, then recommend per-work-type model and effort without changing anything.
 - **2026-11-16** — [Viv](https://x.com/vtrivedy10/status/2122089550529151126) — *near-term • Dev Practices • 8,645 views • v1 enriched*  
   Viv (LangChain) on an easy win for eval-building: agents design far more reliable evals and benchmarks when seeded with examples of good and bad eval design (Terminal Bench, HLE, Harvey LAB, internal evals) rather than starting from scratch, and his team embeds liked examples into skills as concrete references. In replies he gives worked examples: a Terminal Bench task with tight goal/files/constraints instructions (hub.harborframework.com/tasks/terminal-bench/photonic-waveguide-routing) versus the long, fluffy, strategy-leaking instructions agents write unaided, and a Frontier SWE autoresearch task (frontierswe.com/tasks/optimizer-design-v2) showing compute budgets, repeated runs in a separate verifier container to beat noise, and anti-tampering. He also flags model-judged verifiers over brittle string matches, harnesses that force the behaviour under test, and warns about overfitting to existing evals.
-- **2026-11-16** — [Steve Yegge](https://x.com/steve_yegge/status/2121671447810888185) — *near-term • Agent Design • 318.4K views • v1 enriched*  
-  Steve Yegge distills three hot takes from his two conference talks on software factories: (1) slow down and pace AI output to human speeds, since his agents have overwhelmed players, his accountant, his merge queue and his machines; (2) you probably don't need a software factory, they are bespoke, upkeep-heavy 'garbage mountains' (he burned down five), so build rather than buy and only if you really need one; (3) next year brings personal chief-of-staff agents and agent entourages that people bring to work, with human/agent office drama and negotiation protocols to follow.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
@@ -35,6 +35,11 @@
     - 2026-11-13 — [Kevin S Lin](https://x.com/kevins8/status/2120962631788114377): OpenAI's Kevin S Lin shares 'Securing persistent agents like OpenClaw at OpenAI' (developers.openai.com) — how OpenAI's IT manages fleets of…
     - 2026-11-08 — [Sergii Makarevych](https://x.com/sermakarevich/status/2119024563086397503): Article mapping eight failure modes of multi-step agents to structural architecture fixes (planner/worker/reviewer/guard nodes, context poli…
 
+- **Claude Code setup & usage** (40 posts, +3 this week)  
+  Claude Code setup guides, cheatsheets, starter packs, and day-to-day usage / steering practices.
+    - 2026-11-17 — [ClaudeDevs](https://x.com/claudedevs/status/2122457608963395586): ClaudeDevs shares the claude.dev post "How the Claude Code team thinks about verification" by Addy Osmani (claude.dev/blog/how-the-claude-co…
+    - 2026-11-11 — [damkin](https://x.com/damkina7/status/2119897805343117476): damkin pitches a nine-step Claude Code harness recipe: an immutable task_contract.json, ephemeral git worktrees, fast Haiku hooks that block…
+
 - **Claude Code session workflows — handoffs, messaging & retention** (29 posts, +3 this week)  
   Discovered by orphan clustering on 2026-10-08 from 6 posts with no prior concept (cohesion 0.66). Rename or archive if this isn't a real theme.
     - 2026-11-13 — [Zephyr](https://x.com/zephyr_hg/status/2120869482575073410): Zephyr pitches a learn-Claude-Code-in-a-weekend path aimed at non-coders: build seven small personal tools (e.g. a file renamer that preview…
@@ -44,11 +49,6 @@
   HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
     - 2026-11-13 — [elvis](https://x.com/omarsar0/status/2120888604402815485): elvis (DAIR.AI) highlights SoMem (arxiv.org/abs/2611.11929), a paper where the agent self-organizes memory as ordinary linked documents — ch…
     - 2026-11-09 — [Rudraj Mehta](https://x.com/rudrajmehta/status/2119589472115515407): TLDR of a paper on agent memory 'dreaming': wiki alone 48%, search alone 53%, both 61%, with an implied build order of transcripts, notes, a…
-
-- **applied decision-model routing — gating agents with Jev** (40 posts, +2 this week)  
-  Discovered by orphan clustering on 2026-09-28 (6 posts, cohesion 0.66); renamed in-session. The *applied* side of System One / decision models: putting a non-generative decision model in front of an agent as a gate, router, verifier or judge, plus the libraries and framework integrations that make that practical (AnyJev, DSPy, LangGraph, Claude Code hooks). Deliberately distinct from #74 'System One models — bounded decisions as a primitive', which holds the concept itself and was frozen out of centroid scoring after the 2026-09-25 magnet rollback; because #74 can no longer recruit by cosine, the live Jev conversation could not reach it and formed this cluster instead. On 2026-09-28 #74's 11 canonical edges were demoted to weak so it became a secondary-only grouping tag, releasing its members to re-home here or elsewhere. NOTE: do not write the centroid-scoring opt-out marker as a literal string in this description — the eligibility check is a plain substring match over the whole description, so merely mentioning it silently disables semantic scoring for this concept (hit for real on 2026-09-28).
-    - 2026-11-16 — [Viv](https://x.com/vtrivedy10/status/2122089550529151126): Viv (LangChain) on an easy win for eval-building: agents design far more reliable evals and benchmarks when seeded with examples of good and…
-    - 2026-11-09 — [Garry Tan](https://x.com/garrytan/status/2119624260675350605): Garry Tan says his gstack-evals project replicated Mr_Buzzoni's article on cutting agent cost ~90% by routing easy decisions to a cheap syst…
 
 
 ### Revisit from last month
@@ -61,9 +61,9 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 624 | 64.2% |
-| claude-code | 235 | 24.2% |
-| dev-practices | 463 | 47.6% |
+| agent-design | 625 | 64.2% |
+| claude-code | 236 | 24.3% |
+| dev-practices | 464 | 47.7% |
 | skills-mcp | 221 | 22.7% |
 | prompting | 155 | 15.9% |
 | research | 288 | 29.6% |
@@ -78,6 +78,7 @@
 ## Quick Reference (50 Most Recent)
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
+| 2026-11-17 | ClaudeDevs | claude-code | ClaudeDevs shares the claude.dev post "How the Claude Code team thinks... |
 | 2026-11-16 | Viv | dev-practices | Viv (LangChain) on an easy win for eval-building: agents design far mo... |
 | 2026-11-16 | Steve Yegge | agent-design | Steve Yegge distills three hot takes from his two conference talks on... |
 | 2026-11-13 | Lorwen Harris Nagle, PhD | adjacent | Psychologist Lorwen Harris Nagle's thread framing a Jung-inspired 10-d... |
@@ -127,12 +128,14 @@
 | 2026-10-28 | Tony | dev-practices | Tony's 'Build Your Eval Harness' (Part 2 of an evals and tracing guide... |
 | 2026-10-28 | Ryan Hart | dev-practices | Ryan Hart on Alibaba's open-sourced 'Open Code Review' (link via t.co)... |
 | 2026-10-28 | m4lka | agent-design | m4lka's long article 'Harness, Loops, Graphs: What Each Layer Fixes an... |
-| 2026-10-25 | How To Prompt | agent-design | Viral thread claiming researchers 'killed vector databases' with Reson... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (624)
+### Agent Design (625)
+
+- [ClaudeDevs](https://x.com/claudedevs/status/2122457608963395586) — 2026-11-17: ClaudeDevs shares the claude.dev post "How the Claude Code team thinks about verification" by Addy Osmani (claude.dev/blog/how-the-claude-code-team-thinks-about-verification): with ~90% of the team's code written and reviewed by Claude, verification loops are what let them run many agents in parallel, and the three tests worth investing in are end-to-end, property (fast-check, Hypothesis, proptest) and differential tests. Concrete practices to borrow: a `verify` skill in .claude/skills/ that smoke-tests the running app, escalation to a human after three failed fix rounds, a 39-item reliability checklist triggered from the diff, one tuned reviewer driven by a REVIEW.md read from the base branch so a change can't edit its own checks, commit gates rolled out in observe mode before enforce, and evals of the reviewer built from past incidents and reverts. Misses become rules, flaky tests get root-caused or deleted, and rule files are pruned on a routine.
+  posted 2026-11-16 · @claudedevs · 1.2M views · concept: Claude Code setup & usage · url: https://x.com/claudedevs/status/2122457608963395586 · links: https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification
 
 - [Viv](https://x.com/vtrivedy10/status/2122089550529151126) — 2026-11-16: Viv (LangChain) on an easy win for eval-building: agents design far more reliable evals and benchmarks when seeded with examples of good and bad eval design (Terminal Bench, HLE, Harvey LAB, internal evals) rather than starting from scratch, and his team embeds liked examples into skills as concrete references. In replies he gives worked examples: a Terminal Bench task with tight goal/files/constraints instructions (hub.harborframework.com/tasks/terminal-bench/photonic-waveguide-routing) versus the long, fluffy, strategy-leaking instructions agents write unaided, and a Frontier SWE autoresearch task (frontierswe.com/tasks/optimizer-design-v2) showing compute budgets, repeated runs in a separate verifier container to beat noise, and anti-tampering. He also flags model-judged verifiers over brittle string matches, harnesses that force the behaviour under test, and warns about overfitting to existing evals.
   posted 2026-11-15 · @vtrivedy10 · 8,645 views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/vtrivedy10/status/2122089550529151126 · links: https://x.com/vtrivedy10/status/2122098232314794088 https://x.com/vtrivedy10/status/2122099839525671086 https://hub.harborframework.com/tasks/terminal-bench/photonic-waveguide-routing/latest/files/instruction.md https://frontierswe.com/tasks/optimizer-design-v2
@@ -2006,7 +2009,10 @@
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
   @curvedinf · url: https://github.com/curvedinf/dir-assistant
 
-### Claude Code (235)
+### Claude Code (236)
+
+- [ClaudeDevs](https://x.com/claudedevs/status/2122457608963395586) — 2026-11-17: ClaudeDevs shares the claude.dev post "How the Claude Code team thinks about verification" by Addy Osmani (claude.dev/blog/how-the-claude-code-team-thinks-about-verification): with ~90% of the team's code written and reviewed by Claude, verification loops are what let them run many agents in parallel, and the three tests worth investing in are end-to-end, property (fast-check, Hypothesis, proptest) and differential tests. Concrete practices to borrow: a `verify` skill in .claude/skills/ that smoke-tests the running app, escalation to a human after three failed fix rounds, a 39-item reliability checklist triggered from the diff, one tuned reviewer driven by a REVIEW.md read from the base branch so a change can't edit its own checks, commit gates rolled out in observe mode before enforce, and evals of the reviewer built from past incidents and reverts. Misses become rules, flaky tests get root-caused or deleted, and rule files are pruned on a routine.
+  posted 2026-11-16 · @claudedevs · 1.2M views · concept: Claude Code setup & usage · url: https://x.com/claudedevs/status/2122457608963395586 · links: https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification
 
 - [Zephyr](https://x.com/zephyr_hg/status/2120869482575073410) — 2026-11-13: Zephyr pitches a learn-Claude-Code-in-a-weekend path aimed at non-coders: build seven small personal tools (e.g. a file renamer that previews changes before running) and then use them on real work, with a self-reply funneling to his free daily newsletter (zephyr-hq.com). Hype-packaged and the linked guide itself wasn't captured, but the 'small tools you'll actually use' learning order is a reasonable onboarding pattern to borrow for teammates new to Claude Code.
   posted 2026-11-12 · @zephyr_hg · 246.5K views · concept: Claude Code session workflows — handoffs, messaging & retention · url: https://x.com/zephyr_hg/status/2120869482575073410
@@ -2713,7 +2719,10 @@
 - [curvedinf](https://github.com/curvedinf/dir-assistant) — 2024-06-18: dir-assistant is a pip-installable CLI that recursively indexes the text files in your directory so you can chat with them via a local or API LLM, auto-injecting the most contextually relevant files. It uses CGRAG (Contextually Guided RAG) for file selection, supports interactive and single-prompt modes (including auto file edits + git commits), many local acceleration backends and all major LLM APIs via LiteLLM, and optimizes prompt/context caching (50-90% cache hits).
   @curvedinf · url: https://github.com/curvedinf/dir-assistant
 
-### Dev Practices (463)
+### Dev Practices (464)
+
+- [ClaudeDevs](https://x.com/claudedevs/status/2122457608963395586) — 2026-11-17: ClaudeDevs shares the claude.dev post "How the Claude Code team thinks about verification" by Addy Osmani (claude.dev/blog/how-the-claude-code-team-thinks-about-verification): with ~90% of the team's code written and reviewed by Claude, verification loops are what let them run many agents in parallel, and the three tests worth investing in are end-to-end, property (fast-check, Hypothesis, proptest) and differential tests. Concrete practices to borrow: a `verify` skill in .claude/skills/ that smoke-tests the running app, escalation to a human after three failed fix rounds, a 39-item reliability checklist triggered from the diff, one tuned reviewer driven by a REVIEW.md read from the base branch so a change can't edit its own checks, commit gates rolled out in observe mode before enforce, and evals of the reviewer built from past incidents and reverts. Misses become rules, flaky tests get root-caused or deleted, and rule files are pruned on a routine.
+  posted 2026-11-16 · @claudedevs · 1.2M views · concept: Claude Code setup & usage · url: https://x.com/claudedevs/status/2122457608963395586 · links: https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification
 
 - [Viv](https://x.com/vtrivedy10/status/2122089550529151126) — 2026-11-16: Viv (LangChain) on an easy win for eval-building: agents design far more reliable evals and benchmarks when seeded with examples of good and bad eval design (Terminal Bench, HLE, Harvey LAB, internal evals) rather than starting from scratch, and his team embeds liked examples into skills as concrete references. In replies he gives worked examples: a Terminal Bench task with tight goal/files/constraints instructions (hub.harborframework.com/tasks/terminal-bench/photonic-waveguide-routing) versus the long, fluffy, strategy-leaking instructions agents write unaided, and a Frontier SWE autoresearch task (frontierswe.com/tasks/optimizer-design-v2) showing compute budgets, repeated runs in a separate verifier container to beat noise, and anti-tampering. He also flags model-judged verifiers over brittle string matches, harnesses that force the behaviour under test, and warns about overfitting to existing evals.
   posted 2026-11-15 · @vtrivedy10 · 8,645 views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/vtrivedy10/status/2122089550529151126 · links: https://x.com/vtrivedy10/status/2122098232314794088 https://x.com/vtrivedy10/status/2122099839525671086 https://hub.harborframework.com/tasks/terminal-bench/photonic-waveguide-routing/latest/files/instruction.md https://frontierswe.com/tasks/optimizer-design-v2
@@ -7927,6 +7936,10 @@
 ## Full Chronological List
 
 ### Nov 2026
+
+- **2026-11-17** | [ClaudeDevs](https://x.com/claudedevs/status/2122457608963395586) | claude-code, dev-practices, agent-design
+  ClaudeDevs shares the claude.dev post "How the Claude Code team thinks about verification" by Addy Osmani (claude.dev/blog/how-the-claude-code-team-thinks-about-verification): with ~90% of the team's code written and reviewed by Claude, verification loops are what let them run many agents in parallel, and the three tests worth investing in are end-to-end, property (fast-check, Hypothesis, proptest) and differential tests. Concrete practices to borrow: a `verify` skill in .claude/skills/ that smoke-tests the running app, escalation to a human after three failed fix rounds, a 39-item reliability checklist triggered from the diff, one tuned reviewer driven by a REVIEW.md read from the base branch so a change can't edit its own checks, commit gates rolled out in observe mode before enforce, and evals of the reviewer built from past incidents and reverts. Misses become rules, flaky tests get root-caused or deleted, and rule files are pruned on a routine.
+  posted 2026-11-16 · @claudedevs · 1.2M views · concept: Claude Code setup & usage · url: https://x.com/claudedevs/status/2122457608963395586 · links: https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification
 
 - **2026-11-16** | [Viv](https://x.com/vtrivedy10/status/2122089550529151126) | dev-practices, agent-design, skills-mcp, research
   Viv (LangChain) on an easy win for eval-building: agents design far more reliable evals and benchmarks when seeded with examples of good and bad eval design (Terminal Bench, HLE, Harvey LAB, internal evals) rather than starting from scratch, and his team embeds liked examples into skills as concrete references. In replies he gives worked examples: a Terminal Bench task with tight goal/files/constraints instructions (hub.harborframework.com/tasks/terminal-bench/photonic-waveguide-routing) versus the long, fluffy, strategy-leaking instructions agents write unaided, and a Frontier SWE autoresearch task (frontierswe.com/tasks/optimizer-design-v2) showing compute budgets, repeated runs in a separate verifier container to beat noise, and anti-tampering. He also flags model-judged verifiers over brittle string matches, harnesses that force the behaviour under test, and warns about overfitting to existing evals.
