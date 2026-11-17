@@ -1,12 +1,12 @@
 # AI Links Collection
-**Total Posts**: 973  
+**Total Posts**: 974  
 **Date Range**: 2024-06-11 – 2026-11-17  
-**Enriched**: 973/973 (100%)
+**Enriched**: 974/974 (100%)
 
 ---
 ## Morning view
 
-*Generated 2026-11-17T17:10:55Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-11-17T18:10:37Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-11-17** — [ClaudeDevs](https://x.com/claudedevs/status/2122457608963395586) — *now • Claude Code • 1.2M views • v1 enriched*  
@@ -17,8 +17,8 @@
   X Article 'Verification Engineering' (third in distort's harness → graph → verification series): treat an agent's 'done' as a claim and build checks once so you stop being the check. Lays out 6 levels of done (says so → runs → passes others' checks → real result tested → proof attached → you only approve irreversible actions), 5 parts of a trustworthy check (pre-written pass/fail criteria, separate default-no checker that can't edit, ground truth over reading, proof on every pass, 3-round limit), and a 'one rule per mistake' CHECKS.md habit, citing Anthropic's skeptical-evaluator harness work and Boris Cherny's 2-3x claim — directly applicable to our own sync/curation agents.
 - **2026-11-11** — [Vox](https://x.com/voxyz_ai/status/2119943123250078141) — *now • Claude Code • 373.9K views • v1 enriched*  
   Vox flags Anthropic's new model-selection guide (claude.dev/blog/which-claude-model-should-you-build-with) and a practical cost gotcha: Claude Code's built-in Explore subagent now runs on your main model rather than Haiku, so define your own subagent named Explore with model: haiku. Includes a ready-made prompt that has Claude audit your settings, subagents and CLAUDE.md against the guide for wrong-model subagents, mismatched model/effort levels (flags opusplan and effort above high), and missing self-verification, then recommend per-work-type model and effort without changing anything.
-- **2026-11-16** — [Viv](https://x.com/vtrivedy10/status/2122089550529151126) — *near-term • Dev Practices • 8,645 views • v1 enriched*  
-  Viv (LangChain) on an easy win for eval-building: agents design far more reliable evals and benchmarks when seeded with examples of good and bad eval design (Terminal Bench, HLE, Harvey LAB, internal evals) rather than starting from scratch, and his team embeds liked examples into skills as concrete references. In replies he gives worked examples: a Terminal Bench task with tight goal/files/constraints instructions (hub.harborframework.com/tasks/terminal-bench/photonic-waveguide-routing) versus the long, fluffy, strategy-leaking instructions agents write unaided, and a Frontier SWE autoresearch task (frontierswe.com/tasks/optimizer-design-v2) showing compute budgets, repeated runs in a separate verifier container to beat noise, and anti-tampering. He also flags model-judged verifiers over brittle string matches, harnesses that force the behaviour under test, and warns about overfitting to existing evals.
+- **2026-11-17** — [Viv](https://x.com/vtrivedy10/status/2122395548208762905) — *near-term • Agent Design • 4,332 views • v1 enriched*  
+  Viv (LangChain) argues that being more ambitious with agents means putting them in charge of persistent goals rather than one-off tasks: not "go research agent benchmarks" but "you're in charge of our benchmarks — research daily and orchestrate work so we keep building better ones." He names the tension between how well agents fill in nuance and how well we specify goals (any room for agent choice often turns to slop), and says the systems to build are ones that accept somewhat fuzzy goals while giving agents the tooling and context to self-verify. Quotes Harrison Chase's X Article "From tasks to goals" on how that shift changes what an agent does, needs, and how it's built.
 
 ### Recurring this week
 *Concepts with new evidence in the last 14 days. Ranked by recent post count.*
@@ -40,15 +40,15 @@
     - 2026-11-17 — [ClaudeDevs](https://x.com/claudedevs/status/2122457608963395586): ClaudeDevs shares the claude.dev post "How the Claude Code team thinks about verification" by Addy Osmani (claude.dev/blog/how-the-claude-co…
     - 2026-11-11 — [damkin](https://x.com/damkina7/status/2119897805343117476): damkin pitches a nine-step Claude Code harness recipe: an immutable task_contract.json, ephemeral git worktrees, fast Haiku hooks that block…
 
+- **Forward Deployed Engineers — the durable AI-era role** (29 posts, +3 this week)  
+  Argument that FDEs are the right shape of role for the AI rollout era. Touches every employee's workflow.
+    - 2026-11-17 — [Viv](https://x.com/vtrivedy10/status/2122395548208762905): Viv (LangChain) argues that being more ambitious with agents means putting them in charge of persistent goals rather than one-off tasks: not…
+    - 2026-11-08 — [Matt Stockton](https://x.com/mstockton/status/2119129806084210844): Matt Stockton reacts to Brian Armstrong's post on changing how he works with AI, arguing autonomous human-in-the-loop-on-demand systems now …
+
 - **Claude Code session workflows — handoffs, messaging & retention** (29 posts, +3 this week)  
   Discovered by orphan clustering on 2026-10-08 from 6 posts with no prior concept (cohesion 0.66). Rename or archive if this isn't a real theme.
     - 2026-11-13 — [Zephyr](https://x.com/zephyr_hg/status/2120869482575073410): Zephyr pitches a learn-Claude-Code-in-a-weekend path aimed at non-coders: build seven small personal tools (e.g. a file renamer that preview…
     - 2026-11-04 — [Blum](https://x.com/blum_og/status/2117722452457586810): Blum (@Blum_OG) shares an 8-step single prompt for Claude Code that adds hooks requiring proof of work (commands plus output), a fresh revie…
-
-- **vector / hybrid databases as agent-memory infrastructure** (46 posts, +2 this week)  
-  HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
-    - 2026-11-13 — [elvis](https://x.com/omarsar0/status/2120888604402815485): elvis (DAIR.AI) highlights SoMem (arxiv.org/abs/2611.11929), a paper where the agent self-organizes memory as ordinary linked documents — ch…
-    - 2026-11-09 — [Rudraj Mehta](https://x.com/rudrajmehta/status/2119589472115515407): TLDR of a paper on agent memory 'dreaming': wiki alone 48%, search alone 53%, both 61%, with an implied build order of transcripts, notes, a…
 
 
 ### Revisit from last month
@@ -61,15 +61,15 @@
 ## Topic Distribution
 | Topic | Count | % |
 |-------|-------|---|
-| agent-design | 625 | 64.2% |
-| claude-code | 236 | 24.3% |
-| dev-practices | 464 | 47.7% |
+| agent-design | 626 | 64.3% |
+| claude-code | 236 | 24.2% |
+| dev-practices | 464 | 47.6% |
 | skills-mcp | 221 | 22.7% |
-| prompting | 155 | 15.9% |
+| prompting | 156 | 16.0% |
 | research | 288 | 29.6% |
-| industry | 165 | 17.0% |
+| industry | 165 | 16.9% |
 | management | 151 | 15.5% |
-| adjacent | 56 | 5.8% |
+| adjacent | 56 | 5.7% |
 | solo-operator | 17 | 1.7% |
 | questionable | 169 | 17.4% |
 | general | 45 | 4.6% |
@@ -79,6 +79,7 @@
 | Date | Author | Topic | Summary |
 |------|--------|-------|--------|
 | 2026-11-17 | ClaudeDevs | claude-code | ClaudeDevs shares the claude.dev post "How the Claude Code team thinks... |
+| 2026-11-17 | Viv | agent-design | Viv (LangChain) argues that being more ambitious with agents means put... |
 | 2026-11-16 | Viv | dev-practices | Viv (LangChain) on an easy win for eval-building: agents design far mo... |
 | 2026-11-16 | Steve Yegge | agent-design | Steve Yegge distills three hot takes from his two conference talks on... |
 | 2026-11-13 | Lorwen Harris Nagle, PhD | adjacent | Psychologist Lorwen Harris Nagle's thread framing a Jung-inspired 10-d... |
@@ -127,15 +128,17 @@
 | 2026-10-28 | Noctus | industry | Noctus marvels that Liquid AI's 1.7B model reportedly beats models 2-5... |
 | 2026-10-28 | Tony | dev-practices | Tony's 'Build Your Eval Harness' (Part 2 of an evals and tracing guide... |
 | 2026-10-28 | Ryan Hart | dev-practices | Ryan Hart on Alibaba's open-sourced 'Open Code Review' (link via t.co)... |
-| 2026-10-28 | m4lka | agent-design | m4lka's long article 'Harness, Loops, Graphs: What Each Layer Fixes an... |
 
 ---
 ## Posts by Topic
 
-### Agent Design (625)
+### Agent Design (626)
 
 - [ClaudeDevs](https://x.com/claudedevs/status/2122457608963395586) — 2026-11-17: ClaudeDevs shares the claude.dev post "How the Claude Code team thinks about verification" by Addy Osmani (claude.dev/blog/how-the-claude-code-team-thinks-about-verification): with ~90% of the team's code written and reviewed by Claude, verification loops are what let them run many agents in parallel, and the three tests worth investing in are end-to-end, property (fast-check, Hypothesis, proptest) and differential tests. Concrete practices to borrow: a `verify` skill in .claude/skills/ that smoke-tests the running app, escalation to a human after three failed fix rounds, a 39-item reliability checklist triggered from the diff, one tuned reviewer driven by a REVIEW.md read from the base branch so a change can't edit its own checks, commit gates rolled out in observe mode before enforce, and evals of the reviewer built from past incidents and reverts. Misses become rules, flaky tests get root-caused or deleted, and rule files are pruned on a routine.
   posted 2026-11-16 · @claudedevs · 1.2M views · concept: Claude Code setup & usage · url: https://x.com/claudedevs/status/2122457608963395586 · links: https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification
+
+- [Viv](https://x.com/vtrivedy10/status/2122395548208762905) — 2026-11-17: Viv (LangChain) argues that being more ambitious with agents means putting them in charge of persistent goals rather than one-off tasks: not "go research agent benchmarks" but "you're in charge of our benchmarks — research daily and orchestrate work so we keep building better ones." He names the tension between how well agents fill in nuance and how well we specify goals (any room for agent choice often turns to slop), and says the systems to build are ones that accept somewhat fuzzy goals while giving agents the tooling and context to self-verify. Quotes Harrison Chase's X Article "From tasks to goals" on how that shift changes what an agent does, needs, and how it's built.
+  posted 2026-11-16 · @vtrivedy10 · 4,332 views · concept: Forward Deployed Engineers — the durable AI-era role · url: https://x.com/vtrivedy10/status/2122395548208762905
 
 - [Viv](https://x.com/vtrivedy10/status/2122089550529151126) — 2026-11-16: Viv (LangChain) on an easy win for eval-building: agents design far more reliable evals and benchmarks when seeded with examples of good and bad eval design (Terminal Bench, HLE, Harvey LAB, internal evals) rather than starting from scratch, and his team embeds liked examples into skills as concrete references. In replies he gives worked examples: a Terminal Bench task with tight goal/files/constraints instructions (hub.harborframework.com/tasks/terminal-bench/photonic-waveguide-routing) versus the long, fluffy, strategy-leaking instructions agents write unaided, and a Frontier SWE autoresearch task (frontierswe.com/tasks/optimizer-design-v2) showing compute budgets, repeated runs in a separate verifier container to beat noise, and anti-tampering. He also flags model-judged verifiers over brittle string matches, harnesses that force the behaviour under test, and warns about overfitting to existing evals.
   posted 2026-11-15 · @vtrivedy10 · 8,645 views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/vtrivedy10/status/2122089550529151126 · links: https://x.com/vtrivedy10/status/2122098232314794088 https://x.com/vtrivedy10/status/2122099839525671086 https://hub.harborframework.com/tasks/terminal-bench/photonic-waveguide-routing/latest/files/instruction.md https://frontierswe.com/tasks/optimizer-design-v2
@@ -855,7 +858,7 @@
   posted 2026-07-17 · @twostraws · 33.4K views · concept: agentic code review at production scale · url: https://x.com/twostraws/status/2078039730759811369
 
 - [Bryan](https://x.com/so_sthbryan/status/2077972561464611136) — 2026-07-17: Stripe open-sourced its internal AI toolkit at github.com/stripe/ai — a multi-IDE agent setup shipping Claude, Codex, and Cursor plugins plus providers, evals, and reusable skills; TypeScript-first, ~1.7k stars. Positioned as a production starting point for building AI-powered payments products.
-  posted 2026-07-17 · @so_sthbryan · 1,075 views · concept: Claude skills craft · url: https://x.com/so_sthbryan/status/2077972561464611136 · links: https://github.com/stripe/ai
+  posted 2026-07-17 · @so_sthbryan · 1,075 views · concept: prediction-market & crypto trading bots · url: https://x.com/so_sthbryan/status/2077972561464611136 · links: https://github.com/stripe/ai
 
 - [Boris Cherny](https://x.com/bcherny/status/2077929379661844559) — 2026-07-17: Boris Cherny (Claude Code) on AI adoption: everywhere he looks, one engineer is 10x'ing output with Claude while the rest of the org hasn't caught up. Maps the recurring pattern into 4 steps of AI adoption, shared as a 'Steps of AI Adoption' claude.ai artifact.
   posted 2026-07-17 · @bcherny · 692K views · concept: managing agent teams · url: https://x.com/bcherny/status/2077929379661844559
@@ -1860,7 +1863,7 @@
   posted 2026-02-20 · @DataChaz · 54.1K views · concept: context economy — routing tables beat big context · url: https://x.com/datachaz/status/2024803152730423685
 
 - [Adam](https://x.com/adamdotdev/status/2024525246993506346) — 2026-02-20: Adam (working on OpenCode since early 2025) offers an honest, ambivalent reflection on agentic programming: the models are an incredible tool and a real productivity boost, but the shift is confusing and emotionally mixed. He misses the flow of banging out mundane code by hand and notes the growing distance between the developer and the code.
-  posted 2026-02-19 · @adamdotdev · concept: founder philosophy & life-design essays · url: https://x.com/adamdotdev/status/2024525246993506346
+  posted 2026-02-19 · @adamdotdev · concept: Claude skills craft · url: https://x.com/adamdotdev/status/2024525246993506346
 
 - [Tech with Mak](https://x.com/technmak/status/2023990222027915746) — 2026-02-18: Tech with Mak boosts Matthew Berman's 'OpenClaw masterclass' video, in which Berman claims to have spent 2.54 billion tokens perfecting the OpenClaw coding agent and walks through 21 daily use cases (markdown files, memory system, CRM, and more). Quoted post had ~1.3M views.
   posted 2026-02-18 · @techNmak · 1.3M views · url: https://x.com/technmak/status/2023990222027915746
@@ -3226,7 +3229,7 @@
   posted 2026-07-17 · @twostraws · 33.4K views · concept: agentic code review at production scale · url: https://x.com/twostraws/status/2078039730759811369
 
 - [Bryan](https://x.com/so_sthbryan/status/2077972561464611136) — 2026-07-17: Stripe open-sourced its internal AI toolkit at github.com/stripe/ai — a multi-IDE agent setup shipping Claude, Codex, and Cursor plugins plus providers, evals, and reusable skills; TypeScript-first, ~1.7k stars. Positioned as a production starting point for building AI-powered payments products.
-  posted 2026-07-17 · @so_sthbryan · 1,075 views · concept: Claude skills craft · url: https://x.com/so_sthbryan/status/2077972561464611136 · links: https://github.com/stripe/ai
+  posted 2026-07-17 · @so_sthbryan · 1,075 views · concept: prediction-market & crypto trading bots · url: https://x.com/so_sthbryan/status/2077972561464611136 · links: https://github.com/stripe/ai
 
 - [Modal](https://x.com/modal/status/2077855275046838720) — 2026-07-17: Modal engineering post on scaling to 1 million concurrent sandboxes, creating all of them in under a minute. They rebuilt the sandbox control plane to remove central coordination: horizontally-scaled scheduling servers run a fast in-memory load-balancing algorithm, each worker is its own source of truth publishing state to a Redis stream, and no datastore sits in the sandbox-creation critical path (two network hops + one CPU op). Contrasts with Kubernetes/etcd O(nodes) and O(pods) bottlenecks; median sandbox start stays under 0.5s at scale.
   posted 2026-07-16 · @modal · 104.7K views · url: https://x.com/modal/status/2077855275046838720
@@ -3940,7 +3943,7 @@
   posted 2026-02-20 · @DataChaz · 54.1K views · concept: context economy — routing tables beat big context · url: https://x.com/datachaz/status/2024803152730423685
 
 - [Adam](https://x.com/adamdotdev/status/2024525246993506346) — 2026-02-20: Adam (working on OpenCode since early 2025) offers an honest, ambivalent reflection on agentic programming: the models are an incredible tool and a real productivity boost, but the shift is confusing and emotionally mixed. He misses the flow of banging out mundane code by hand and notes the growing distance between the developer and the code.
-  posted 2026-02-19 · @adamdotdev · concept: founder philosophy & life-design essays · url: https://x.com/adamdotdev/status/2024525246993506346
+  posted 2026-02-19 · @adamdotdev · concept: Claude skills craft · url: https://x.com/adamdotdev/status/2024525246993506346
 
 - [Aman](https://x.com/amank1412/status/2023754885473394918) — 2026-02-19: Aman shares Garry Tan's (CEO of Y Combinator) CLAUDE.md prompt for Claude Code, which he uses to ship 4,000+ line features with full tests in about an hour. The prompt makes Claude act like a senior engineer: judge whether a plan is over/under-engineered before coding, do a structured review (architecture -> code quality -> tests -> performance), present tradeoffs with opinionated recommendations, and pause for feedback before implementing.
   posted 2026-02-17 · @Amank1412 · concept: Claude Code setup & usage · url: https://x.com/amank1412/status/2023754885473394918
@@ -4296,7 +4299,7 @@
   posted 2026-07-17 · @pauliusztin_ · 1,554 views · concept: vector / hybrid databases as agent-memory infrastructure · url: https://x.com/pauliusztin_/status/2078094872717017107
 
 - [Bryan](https://x.com/so_sthbryan/status/2077972561464611136) — 2026-07-17: Stripe open-sourced its internal AI toolkit at github.com/stripe/ai — a multi-IDE agent setup shipping Claude, Codex, and Cursor plugins plus providers, evals, and reusable skills; TypeScript-first, ~1.7k stars. Positioned as a production starting point for building AI-powered payments products.
-  posted 2026-07-17 · @so_sthbryan · 1,075 views · concept: Claude skills craft · url: https://x.com/so_sthbryan/status/2077972561464611136 · links: https://github.com/stripe/ai
+  posted 2026-07-17 · @so_sthbryan · 1,075 views · concept: prediction-market & crypto trading bots · url: https://x.com/so_sthbryan/status/2077972561464611136 · links: https://github.com/stripe/ai
 
 - [Harrison Chase](https://x.com/hwchase17/status/2077806939074081259) — 2026-07-17: Harrison Chase (co-founder of LangChain) argues there needs to be an OPEN standard for agent memory and points to OKF (Open Knowledge Format), which they're now using in OpenWiki. Quotes Brace Sproul announcing OpenWiki 0.2 adopting the OKF spec — OpenWiki is an open-source CLI that generates and maintains a wiki for your codebase, connects it to your coding agent, and keeps the docs up to date.
   posted 2026-07-16 · @hwchase17 · 56.5K views · url: https://x.com/hwchase17/status/2077806939074081259
@@ -4778,7 +4781,10 @@
 - [Mervin Praison](https://x.com/mervinpraison/status/1881788246684013011) — 2025-01-22: Shows a 100% local RAG AI agent with reasoning: DeepSeek via Ollama for the LLM, PraisonAI to build the agent in a few lines, Nomic embeddings, and a Streamlit UI—code included in the thread.
   posted 2025-01-21 · @MervinPraison · 59.8K views · url: https://x.com/mervinpraison/status/1881788246684013011
 
-### Prompting (155)
+### Prompting (156)
+
+- [Viv](https://x.com/vtrivedy10/status/2122395548208762905) — 2026-11-17: Viv (LangChain) argues that being more ambitious with agents means putting them in charge of persistent goals rather than one-off tasks: not "go research agent benchmarks" but "you're in charge of our benchmarks — research daily and orchestrate work so we keep building better ones." He names the tension between how well agents fill in nuance and how well we specify goals (any room for agent choice often turns to slop), and says the systems to build are ones that accept somewhat fuzzy goals while giving agents the tooling and context to self-verify. Quotes Harrison Chase's X Article "From tasks to goals" on how that shift changes what an agent does, needs, and how it's built.
+  posted 2026-11-16 · @vtrivedy10 · 4,332 views · concept: Forward Deployed Engineers — the durable AI-era role · url: https://x.com/vtrivedy10/status/2122395548208762905
 
 - [Vox](https://x.com/voxyz_ai/status/2119943123250078141) — 2026-11-11: Vox flags Anthropic's new model-selection guide (claude.dev/blog/which-claude-model-should-you-build-with) and a practical cost gotcha: Claude Code's built-in Explore subagent now runs on your main model rather than Haiku, so define your own subagent named Explore with model: haiku. Includes a ready-made prompt that has Claude audit your settings, subagents and CLAUDE.md against the guide for wrong-model subagents, mismatched model/effort levels (flags opusplan and effort above high), and missing self-verification, then recommend per-work-type model and effort without changing anything.
   posted 2026-11-10 · @voxyz_ai · 373.9K views · concept: Fable 5 access & usage · url: https://x.com/voxyz_ai/status/2119943123250078141 · links: https://claude.dev/blog/which-claude-model-should-you-build-with
@@ -6315,7 +6321,7 @@
   concept: agents as constrained software — making bad shapes unexpressible · url: https://cursor.com/blog/agent-swarm-model-economics · links: https://github.com/cursor/minisqlite
 
 - [Bryan](https://x.com/so_sthbryan/status/2077972561464611136) — 2026-07-17: Stripe open-sourced its internal AI toolkit at github.com/stripe/ai — a multi-IDE agent setup shipping Claude, Codex, and Cursor plugins plus providers, evals, and reusable skills; TypeScript-first, ~1.7k stars. Positioned as a production starting point for building AI-powered payments products.
-  posted 2026-07-17 · @so_sthbryan · 1,075 views · concept: Claude skills craft · url: https://x.com/so_sthbryan/status/2077972561464611136 · links: https://github.com/stripe/ai
+  posted 2026-07-17 · @so_sthbryan · 1,075 views · concept: prediction-market & crypto trading bots · url: https://x.com/so_sthbryan/status/2077972561464611136 · links: https://github.com/stripe/ai
 
 - [Modal](https://x.com/modal/status/2077855275046838720) — 2026-07-17: Modal engineering post on scaling to 1 million concurrent sandboxes, creating all of them in under a minute. They rebuilt the sandbox control plane to remove central coordination: horizontally-scaled scheduling servers run a fast in-memory load-balancing algorithm, each worker is its own source of truth publishing state to a Redis stream, and no datastore sits in the sandbox-creation critical path (two network hops + one CPU op). Contrasts with Kubernetes/etcd O(nodes) and O(pods) bottlenecks; median sandbox start stays under 0.5s at scale.
   posted 2026-07-16 · @modal · 104.7K views · url: https://x.com/modal/status/2077855275046838720
@@ -7941,6 +7947,10 @@
   ClaudeDevs shares the claude.dev post "How the Claude Code team thinks about verification" by Addy Osmani (claude.dev/blog/how-the-claude-code-team-thinks-about-verification): with ~90% of the team's code written and reviewed by Claude, verification loops are what let them run many agents in parallel, and the three tests worth investing in are end-to-end, property (fast-check, Hypothesis, proptest) and differential tests. Concrete practices to borrow: a `verify` skill in .claude/skills/ that smoke-tests the running app, escalation to a human after three failed fix rounds, a 39-item reliability checklist triggered from the diff, one tuned reviewer driven by a REVIEW.md read from the base branch so a change can't edit its own checks, commit gates rolled out in observe mode before enforce, and evals of the reviewer built from past incidents and reverts. Misses become rules, flaky tests get root-caused or deleted, and rule files are pruned on a routine.
   posted 2026-11-16 · @claudedevs · 1.2M views · concept: Claude Code setup & usage · url: https://x.com/claudedevs/status/2122457608963395586 · links: https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification
 
+- **2026-11-17** | [Viv](https://x.com/vtrivedy10/status/2122395548208762905) | agent-design, prompting
+  Viv (LangChain) argues that being more ambitious with agents means putting them in charge of persistent goals rather than one-off tasks: not "go research agent benchmarks" but "you're in charge of our benchmarks — research daily and orchestrate work so we keep building better ones." He names the tension between how well agents fill in nuance and how well we specify goals (any room for agent choice often turns to slop), and says the systems to build are ones that accept somewhat fuzzy goals while giving agents the tooling and context to self-verify. Quotes Harrison Chase's X Article "From tasks to goals" on how that shift changes what an agent does, needs, and how it's built.
+  posted 2026-11-16 · @vtrivedy10 · 4,332 views · concept: Forward Deployed Engineers — the durable AI-era role · url: https://x.com/vtrivedy10/status/2122395548208762905
+
 - **2026-11-16** | [Viv](https://x.com/vtrivedy10/status/2122089550529151126) | dev-practices, agent-design, skills-mcp, research
   Viv (LangChain) on an easy win for eval-building: agents design far more reliable evals and benchmarks when seeded with examples of good and bad eval design (Terminal Bench, HLE, Harvey LAB, internal evals) rather than starting from scratch, and his team embeds liked examples into skills as concrete references. In replies he gives worked examples: a Terminal Bench task with tight goal/files/constraints instructions (hub.harborframework.com/tasks/terminal-bench/photonic-waveguide-routing) versus the long, fluffy, strategy-leaking instructions agents write unaided, and a Frontier SWE autoresearch task (frontierswe.com/tasks/optimizer-design-v2) showing compute budgets, repeated runs in a separate verifier container to beat noise, and anti-tampering. He also flags model-judged verifiers over brittle string matches, harnesses that force the behaviour under test, and warns about overfitting to existing evals.
   posted 2026-11-15 · @vtrivedy10 · 8,645 views · concept: applied decision-model routing — gating agents with Jev · url: https://x.com/vtrivedy10/status/2122089550529151126 · links: https://x.com/vtrivedy10/status/2122098232314794088 https://x.com/vtrivedy10/status/2122099839525671086 https://hub.harborframework.com/tasks/terminal-bench/photonic-waveguide-routing/latest/files/instruction.md https://frontierswe.com/tasks/optimizer-design-v2
@@ -9267,7 +9277,7 @@
 
 - **2026-07-17** | [Bryan](https://x.com/so_sthbryan/status/2077972561464611136) | skills-mcp, dev-practices, agent-design, industry
   Stripe open-sourced its internal AI toolkit at github.com/stripe/ai — a multi-IDE agent setup shipping Claude, Codex, and Cursor plugins plus providers, evals, and reusable skills; TypeScript-first, ~1.7k stars. Positioned as a production starting point for building AI-powered payments products.
-  posted 2026-07-17 · @so_sthbryan · 1,075 views · concept: Claude skills craft · url: https://x.com/so_sthbryan/status/2077972561464611136 · links: https://github.com/stripe/ai
+  posted 2026-07-17 · @so_sthbryan · 1,075 views · concept: prediction-market & crypto trading bots · url: https://x.com/so_sthbryan/status/2077972561464611136 · links: https://github.com/stripe/ai
 
 - **2026-07-17** | [Boris Cherny](https://x.com/bcherny/status/2077929379661844559) | management, claude-code, agent-design
   Boris Cherny (Claude Code) on AI adoption: everywhere he looks, one engineer is 10x'ing output with Claude while the rest of the org hasn't caught up. Maps the recurring pattern into 4 steps of AI adoption, shared as a 'Steps of AI Adoption' claude.ai artifact.
@@ -11397,7 +11407,7 @@
 
 - **2026-02-20** | [Adam](https://x.com/adamdotdev/status/2024525246993506346) | agent-design, dev-practices
   Adam (working on OpenCode since early 2025) offers an honest, ambivalent reflection on agentic programming: the models are an incredible tool and a real productivity boost, but the shift is confusing and emotionally mixed. He misses the flow of banging out mundane code by hand and notes the growing distance between the developer and the code.
-  posted 2026-02-19 · @adamdotdev · concept: founder philosophy & life-design essays · url: https://x.com/adamdotdev/status/2024525246993506346
+  posted 2026-02-19 · @adamdotdev · concept: Claude skills craft · url: https://x.com/adamdotdev/status/2024525246993506346
 
 - **2026-02-19** | [Aman](https://x.com/amank1412/status/2023754885473394918) | claude-code, prompting, dev-practices
   Aman shares Garry Tan's (CEO of Y Combinator) CLAUDE.md prompt for Claude Code, which he uses to ship 4,000+ line features with full tests in about an hour. The prompt makes Claude act like a senior engineer: judge whether a plan is over/under-engineered before coding, do a structured review (architecture -> code quality -> tests -> performance), present tradeoffs with opinionated recommendations, and pause for feedback before implementing.

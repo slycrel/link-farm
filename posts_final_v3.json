@@ -31,6 +31,34 @@
     "enrichment_attempts": 1
   },
   {
+    "date": "2026-11-17",
+    "author": "Viv",
+    "handle": "@vtrivedy10",
+    "subject": "Post by Viv on X",
+    "url": "https://x.com/vtrivedy10/status/2122395548208762905",
+    "summary": "Viv (LangChain) argues that being more ambitious with agents means putting them in charge of persistent goals rather than one-off tasks: not \"go research agent benchmarks\" but \"you're in charge of our benchmarks — research daily and orchestrate work so we keep building better ones.\" He names the tension between how well agents fill in nuance and how well we specify goals (any room for agent choice often turns to slop), and says the systems to build are ones that accept somewhat fuzzy goals while giving agents the tooling and context to self-verify. Quotes Harrison Chase's X Article \"From tasks to goals\" on how that shift changes what an agent does, needs, and how it's built.",
+    "topics": [
+      "agent-design",
+      "prompting"
+    ],
+    "audience": [
+      "me",
+      "dev-team"
+    ],
+    "priority": "near-term",
+    "sourceType": "tweet",
+    "views": "4,332",
+    "notes": "",
+    "enriched": true,
+    "content": "big part of “being more ambitious with agents” is putting them in charge of goals\n\nmy quick view on this shift is\n“i want the world/my life to look like this” -> let’s go achieve this\n\nthis should persist over time\n- go research agent benchmarks ❌\n- you’re in charge of our benchmarks - this means daily research covering everything about new AI benchmarks, our goal is to consistently build better benchmarks so orchestrate work to achieve this ✅\n\nthere’s a clear tension here between how good agents are at filling in nuance with useful decisions vs how good we are at specifying goals\n\nin many domains, any room for agent choice is often slop -> but we need to build systems that allow us to specify goals which are somewhat fuzzy and agents have the tooling and context to achieve them in a way where they can self verify work\n\nit’s worth thinking about Task vs Goal in prompting, especially as we move to a world of persistent agents\n\nas models get more capable, we see them moving from doing tasks towards pursuing goals\n\nthis is changes what an agent does, what it needs, how its built, and we interact with it\n\nthis blog covers what we see happening\n\n[X Article: \"From tasks to goals\" — as agents become more powerful, we're moving from giving them tasks (write this email, draft this blog, fix this bug) to giving them goals (e.g. reduce my coordination burden...). Preview only; article body not captured.]",
+    "source": "manual",
+    "posted_at": "2026-11-16T18:25:05",
+    "concept": "Forward Deployed Engineers — the durable AI-era role",
+    "enrichment_status": "ok",
+    "enrichment_version": 1,
+    "enrichment_attempts": 1
+  },
+  {
     "date": "2026-11-16",
     "author": "Viv",
     "handle": "@vtrivedy10",
@@ -9508,7 +9536,7 @@
     "links": [
       "https://github.com/stripe/ai"
     ],
-    "concept": "Claude skills craft",
+    "concept": "prediction-market & crypto trading bots",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
@@ -24459,7 +24487,7 @@
     "enriched": true,
     "content": "I find it funny when anyone feels confident they've figured out agentic programming. I've worked on OpenCode since last May and still have days where I'm not sure any of this is a good idea. I land on 'these models are an incredible tool' but it's confusing. I miss the mundane coding tasks; replacing hours with minutes of waiting on an agent is worth being excited about despite mixed emotions. There's a distance that can creep in between you and the code.",
     "posted_at": "2026-02-19T16:43:27",
-    "concept": "founder philosophy & life-design essays",
+    "concept": "Claude skills craft",
     "enrichment_status": "ok",
     "enrichment_version": 1,
     "enrichment_attempts": 1
