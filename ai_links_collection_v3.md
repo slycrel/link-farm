@@ -6,7 +6,7 @@
 ---
 ## Morning view
 
-*Generated 2026-11-17T18:10:37Z. Hard-capped surface — see CURATION_DESIGN.md.*
+*Generated 2026-11-18T16:12:54Z. Hard-capped surface — see CURATION_DESIGN.md.*
 
 ### Read now
 - **2026-11-17** — [ClaudeDevs](https://x.com/claudedevs/status/2122457608963395586) — *now • Claude Code • 1.2M views • v1 enriched*  
@@ -45,10 +45,10 @@
     - 2026-11-17 — [Viv](https://x.com/vtrivedy10/status/2122395548208762905): Viv (LangChain) argues that being more ambitious with agents means putting them in charge of persistent goals rather than one-off tasks: not…
     - 2026-11-08 — [Matt Stockton](https://x.com/mstockton/status/2119129806084210844): Matt Stockton reacts to Brian Armstrong's post on changing how he works with AI, arguing autonomous human-in-the-loop-on-demand systems now …
 
-- **Claude Code session workflows — handoffs, messaging & retention** (29 posts, +3 this week)  
-  Discovered by orphan clustering on 2026-10-08 from 6 posts with no prior concept (cohesion 0.66). Rename or archive if this isn't a real theme.
-    - 2026-11-13 — [Zephyr](https://x.com/zephyr_hg/status/2120869482575073410): Zephyr pitches a learn-Claude-Code-in-a-weekend path aimed at non-coders: build seven small personal tools (e.g. a file renamer that preview…
-    - 2026-11-04 — [Blum](https://x.com/blum_og/status/2117722452457586810): Blum (@Blum_OG) shares an 8-step single prompt for Claude Code that adds hooks requiring proof of work (commands plus output), a fresh revie…
+- **vector / hybrid databases as agent-memory infrastructure** (46 posts, +2 this week)  
+  HelixDB, turbovec, agentmemory — substrate AI agents need to scale beyond context windows.
+    - 2026-11-13 — [elvis](https://x.com/omarsar0/status/2120888604402815485): elvis (DAIR.AI) highlights SoMem (arxiv.org/abs/2611.11929), a paper where the agent self-organizes memory as ordinary linked documents — ch…
+    - 2026-11-09 — [Rudraj Mehta](https://x.com/rudrajmehta/status/2119589472115515407): TLDR of a paper on agent memory 'dreaming': wiki alone 48%, search alone 53%, both 61%, with an implied build order of transcripts, notes, a…
 
 
 ### Revisit from last month
